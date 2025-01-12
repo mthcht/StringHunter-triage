@@ -1,0 +1,17 @@
+            if (logonType != LOGON32_LOGON_NEW_CREDENTIALS && !forceUserProfileCreation && !userProfileExists)
+            than the user's current logon provides using explicit credentials.
+        // setup proper logon provider for new credentials (9) logons
+        // this should be avoided with the LOGON32_LOGON_NEW_CREDENTIALS logon type or some bug can happen in LookupAccountName()
+        if (logonType == LOGON32_LOGON_NEW_CREDENTIALS)
+        if (logonType == LOGON32_LOGON_NEW_CREDENTIALS) logonProvider = LOGON32_PROVIDER_WINNT50;
+        if (logonType == LOGON32_LOGON_NEW_CREDENTIALS) {
+    by specifying explicit credentials. In contrast to the default runas.exe command
+    private const UInt32 LOGON_NETCREDENTIALS_ONLY = 2;
+    private const int LOGON32_LOGON_NEW_CREDENTIALS = 9;
+"            if (!CreateProcessWithLogonW(username, domainName, password, LOGON_NETCREDENTIALS_ONLY, null, commandLine, CREATE_NO_WINDOW, (UInt32)0, null, ref startupInfo, out processInfo))"
+"            if (domainName == """") // fixing bugs in seclogon when using LOGON32_LOGON_NEW_CREDENTIALS..."
+"            result = CreateProcessWithLogonW(username, domainName, password, logonFlags | LOGON_NETCREDENTIALS_ONLY, processPath, commandLine, CREATE_NO_WINDOW, (UInt32)0, null, ref startupInfo, out processInfo"
+"        logonTypes.Add(9, ""NewCredentials"");"
+" authentications over the Network as it stores credentials in the authentication package. If you holds enough privileges, try to always specify this logon typ"
+* Allows explicit credentials
+specific processes with different permissions than the user's current logon provides using explicit credentials.

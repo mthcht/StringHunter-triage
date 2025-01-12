@@ -1,0 +1,4 @@
+"wprintf(logFile, L""%ls\n"", message.c_str()"
+"wprintf(logFile, L""[DEBUG] %ls\n"", message.c_str()"
+"wprintf(logFile, L""[INFO] %ls\n"", message.c_str()"
+"wprintf(logFile, L""[WARNING] %ls\n"", message.c_str()"

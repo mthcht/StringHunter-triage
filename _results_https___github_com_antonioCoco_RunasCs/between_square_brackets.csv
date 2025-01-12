@@ -1,0 +1,96 @@
+"[DllImport(""Kernel32.dll"", SetLastError = true)"
+"[DllImport(""Kernel32.dll"", SetLastError=true)"
+"[DllImport(""advapi32"", SetLastError = true, CharSet = CharSet.Unicode)"
+"[DllImport(""advapi32.dll"")"
+"[DllImport(""advapi32.dll"", CharSet = CharSet.Unicode, SetLastError = true)"
+"[DllImport(""advapi32.dll"", CharSet=CharSet.Unicode, SetLastError = true)"
+"[DllImport(""advapi32.dll"", EntryPoint=""DuplicateTokenEx"", SetLastError = true)"
+"[DllImport(""advapi32.dll"", SetLastError = true)"
+"[DllImport(""advapi32.dll"", SetLastError = true, BestFitMapping = false, ThrowOnUnmappableChar = true)"
+"[DllImport(""advapi32.dll"", SetLastError = true, CharSet=CharSet.Unicode)"
+"[DllImport(""advapi32.dll"", SetLastError=true)"
+"[DllImport(""advapi32.dll"", SetLastError=true, CharSet=CharSet.Unicode)"
+"[DllImport(""kernel32.dll"")"
+"[DllImport(""kernel32.dll"", CharSet = CharSet.Unicode, SetLastError = true)"
+"[DllImport(""kernel32.dll"", SetLastError = true)"
+"[DllImport(""kernel32.dll"", SetLastError = true, CharSet = CharSet.Auto, EntryPoint = ""CreateProcess"")"
+"[DllImport(""kernel32.dll"", SetLastError=true)"
+"[DllImport(""user32"", CharSet = CharSet.Unicode, SetLastError = true)"
+"[DllImport(""user32.dll"")"
+"[DllImport(""user32.dll"", SetLastError = true)"
+"[DllImport(""user32.dll"", SetLastError=true)"
+"[DllImport(""userenv.dll"", SetLastError = true, CharSet = CharSet.Auto)"
+"[DllImport(""userenv.dll"", SetLastError=true, CharSet = CharSet.Auto)"
+"[DllImport(""ws2_32.dll"", CharSet = CharSet.Ansi, SetLastError = true)"
+"[DllImport(""ws2_32.dll"", CharSet = CharSet.Auto)"
+"[DllImport(""ws2_32.dll"", CharSet = CharSet.Auto, SetLastError=true)"
+"[DllImport(""ws2_32.dll"", CharSet = CharSet.Unicode, SetLastError = true)"
+"[DllImport(""ws2_32.dll"", SetLastError = true)"
+"[MarshalAs(UnmanagedType.ByValArray, SizeConst = 6)"
+"[MarshalAs(UnmanagedType.ByValArray, SizeConst = 6, ArraySubType = UnmanagedType.I1)"
+"[MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)"
+"[MarshalAs(UnmanagedType.ByValTStr, SizeConst = 129)"
+"[MarshalAs(UnmanagedType.ByValTStr, SizeConst = 257)"
+"[Parameter(Position = 0, Mandatory = $True)"
+"[Parameter(Position = 1, Mandatory = $True)"
+"[Parameter(Position = 2, Mandatory = $True)"
+"[StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)"
+"[StructLayout(LayoutKind.Sequential, Pack = 4)"
+"[What is up with ""The application failed to initialize properly (0xc0000142)"" error?"
+[!
+[*
+[+
+[++ctr
+[-
+[--bypass-uac
+[--force-profile
+[--remote-impersonation
+[-d domain
+[-f create_process_function
+[-l logon_type
+[-r host:port
+[-t process_timeout
+[0
+[1
+[2
+[@decoder
+[@qtc-de
+[@winlogon0
+[Convert
+[Creating a Child Process with Redirected Input and Output
+[Flags
+[Getting an Interactive Service Account Shell
+[IO.File
+[In
+[Interactive Services
+[MarshalAs(UnmanagedType.Bool)
+[MarshalAs(UnmanagedType.LPArray)
+[MarshalAs(UnmanagedType.LPStr)
+[MarshalAs(UnmanagedType.LPTStr)
+[MarshalAs(UnmanagedType.Struct)
+[Out
+[Parameter()
+[Potatoes and tokens
+[Reading Your Way Around UAC (Part 1)
+[Reading Your Way Around UAC (Part 2)
+[Reading Your Way Around UAC (Part 3)
+[Reflection.Assembly
+[RunasCsMainClass
+[Starting an Interactive Client Process in C++
+[String
+[StructLayout(LayoutKind.Sequential)
+[Switch
+[System.Convert
+[Vanara - A set of .NET libraries for Windows implementing PInvoke calls to many native Windows APIs with supporting wrappers
+[] MANDATORY_LABEL_AUTHORITY = new byte[
+[] buffer = new byte[BUFFER_SIZE_PIPE
+[] logonTypeTryOrder = new int[
+[] privilegeStatus = new string[2
+[] stationNameBytes = new byte[256
+[]> privileges = new List<string[
+[]> privs = new List<string[
+[cbSid
+[ctr
+[i
+[return: MarshalAs(UnmanagedType.Bool)
+[string

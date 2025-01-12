@@ -1,0 +1,4 @@
+"printf(logFile, L""%ls\n"", message.c_str());"
+"printf(logFile, L""[DEBUG] %ls\n"", message.c_str());"
+"printf(logFile, L""[INFO] %ls\n"", message.c_str());"
+"printf(logFile, L""[WARNING] %ls\n"", message.c_str());"

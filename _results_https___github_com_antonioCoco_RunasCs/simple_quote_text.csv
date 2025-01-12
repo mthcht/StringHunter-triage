@@ -1,0 +1,25 @@
+"'"" + commandLine + """
+"'"" + logonType.ToString() + """
+' 
+' and `show c
+' and authors
+' is limited. Use the --logon-type value 
+' is limited. Use the flag combination --bypass-uac and --logon-type 
+' is not granted to the user 
+'. Reverting to the Interactive logon type 
+'. Reverting to the NetworkCleartext logon type 
+'. Use available logon type 
+'2
+'8
+':
+'BypassUac
+'CreateProcessFunction
+'ForceProfile
+'Remote
+'Remote Impersonation
+'RemoteImpersonation
+'host:port
+'t be inherited and the output won
+'{0}
+'{1}
+'{2}

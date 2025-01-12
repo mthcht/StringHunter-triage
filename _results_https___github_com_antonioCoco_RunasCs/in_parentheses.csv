@@ -1,0 +1,557 @@
+"( TokenInformation , typeof( TOKEN_PRIVILEGES "
+"( WSAStartup(2 << 8 | 2, out data"
+"( connect(socket, ref sockinfo, Marshal.SizeOf(sockinfo"
+"(!AddAccessAllowedAce(pNewDacl, ACL_REVISION, ACCESS_MASK.DESKTOP_ALL, this.userSid"
+"(!AddAce(pDacl, ACL_REVISION, MAXDWORD, pNewAcePtr, aceSize"
+"(!AddAce(pNewDacl, ACL_REVISION, MAXDWORD, pTempAce, (uint"
+"(!AdjustTokenPrivileges(token, false, ref tokenp, 0, 0, 0"
+"(!CreateAnonymousPipeEveryoneAccess(ref hOutputReadTmpLocal, ref hOutputWriteLocal"
+"(!CreateProcess(null, commandLine, IntPtr.Zero, IntPtr.Zero, true, CREATE_NO_WINDOW | CREATE_SUSPENDED | CREATE_UNICODE_ENVIRONMENT, lpEnvironment, Environment.GetEnvironmentVariable(""SystemRoot"""
+"(!CreateProcessAsUser(hTokenDuplicate, null, commandLine, IntPtr.Zero, IntPtr.Zero, true, CREATE_NO_WINDOW | CREATE_UNICODE_ENVIRONMENT, lpEnvironment, Environment.GetEnvironmentVariable(""SystemRoot"""
+"(!CreateProcessWithLogonW(username, domainName, password, LOGON_NETCREDENTIALS_ONLY, null, commandLine, CREATE_NO_WINDOW, (UInt32"
+"(!CreateProcessWithLogonW(username, domainName, password, logonFlags, null, commandLine, CREATE_NO_WINDOW, (UInt32"
+"(!CreateProcessWithLogonWUacBypass(logonTypeBypassUac, logonFlags, username, domainName, password, null, commandLine, ref startupInfo, out processInfo"
+"(!CreateProcessWithTokenW(hTokenDuplicate, logonFlags, null, commandLine, CREATE_NO_WINDOW, IntPtr.Zero, null, ref startupInfo, out processInfo"
+"(!DuplicateHandle(hCurrentProcess, hOutputReadTmpLocal, hCurrentProcess, out hOutputReadLocal, 0, false, DUPLICATE_SAME_ACCESS"
+"(!DuplicateHandle(hCurrentProcess, hOutputWriteLocal, hCurrentProcess, out hErrorWriteLocal, 0, true, DUPLICATE_SAME_ACCESS"
+"(!DuplicateTokenEx(hToken, AccessToken.TOKEN_ALL_ACCESS, IntPtr.Zero, SECURITY_IMPERSONATION_LEVEL.SecurityImpersonation, TokenImpersonation, ref hTokenDupImpersonation"
+"(!DuplicateTokenEx(hToken, AccessToken.TOKEN_ALL_ACCESS, IntPtr.Zero, SECURITY_IMPERSONATION_LEVEL.SecurityImpersonation, TokenImpersonation, ref hTokenDuplicateLocal"
+"(!DuplicateTokenEx(hToken, AccessToken.TOKEN_ALL_ACCESS, IntPtr.Zero, SECURITY_IMPERSONATION_LEVEL.SecurityImpersonation, TokenPrimary, ref hTokenDuplicate"
+"(!GetAce(pDacl, dwIndex, out pTempAce"
+"(!GetAclInformation(pDacl, ref aclSizeInfo, (uint"
+"(!GetSecurityDescriptorDacl(pSd, out fDaclPresent, ref pDacl, out fDaclExist"
+"(!GetTokenInformation(hToken, TOKEN_INFORMATION_CLASS.TokenElevation, tokenElevationPtr, tokenInfLength, out tokenInfLength"
+"(!GetTokenInformation(hToken, TOKEN_INFORMATION_CLASS.TokenElevationType, tokenElevationTypePtr, tokenInfLength, out tokenInfLength"
+"(!GetUserObjectInformation(hWinstaSave, UOI_NAME, stationNameBytes, 256, out lengthNeeded"
+"(!GetUserObjectSecurity(this.hDesktop, ref si, pSd, 0, out cbSd"
+"(!GetUserObjectSecurity(this.hDesktop, ref si, pSd, cbSd, out cbSd"
+"(!GetUserObjectSecurity(this.hWinsta, ref si, pSd, 0, out cbSd"
+"(!GetUserObjectSecurity(this.hWinsta, ref si, pSd, cbSd, out cbSd"
+"(!InitializeAcl(pNewDacl, cbNewDacl, ACL_REVISION"
+"(!InitializeSecurityDescriptor(pNewSd, SECURITY_DESCRIPTOR_REVISION"
+"(!LogonUser(username, domainName, password, LOGON32_LOGON_INTERACTIVE, LOGON32_PROVIDER_DEFAULT, ref hTokenUacCheck"
+"(!LogonUser(username, domainName, password, logonType, LOGON32_PROVIDER_DEFAULT, ref hToken"
+"(!LogonUser(username, domainName, password, logonType, logonProvider, ref hToken"
+"(!LogonUser(username, domainName, password, logonType, logonProvider, ref hTokenCheck1"
+"(!LookupAccountName(null,fqan,Sid,ref cbSid,referencedDomainName,ref cchReferencedDomainName,out sidUse"
+"(!OpenProcessToken(processInfo.process, AccessToken.TOKEN_ALL_ACCESS, out hTokenProcess"
+"(!ReadFile(hReadPipe, buffer, BUFFER_SIZE_PIPE, out dwBytesRead, IntPtr.Zero"
+"(!SetNamedPipeHandleState(hOutputReadLocal, ref PIPE_NOWAIT, IntPtr.Zero, IntPtr.Zero"
+"(!SetSecurityDescriptorDacl(pNewSd, true, pNewDacl, false"
+"(!SetThreadToken(ref processInfo.thread, hTokenDupImpersonation"
+"(!SetUserObjectSecurity(this.hDesktop, ref si, pNewSd"
+"(!SetUserObjectSecurity(this.hWinsta, ref si, pNewSd"
+"(!isLimitedUserLogon && LogonUser(username, domainName, password, LOGON32_LOGON_BATCH, LOGON32_PROVIDER_DEFAULT, ref hTokenBatch"
+"(!isLimitedUserLogon && LogonUser(username, domainName, password, LOGON32_LOGON_SERVICE, LOGON32_PROVIDER_DEFAULT, ref hTokenService"
+"("" "", args"
+"("""""
+"(""-b"""
+"(""-d"""
+"(""-f"""
+"(""-i"""
+"(""-l"""
+"(""-p"""
+"(""-r"""
+"(""-t"""
+"(""AddAccessAllowedAce"", true"
+"(""AddAce"", true"
+"(""AdjustTokenPrivileges on privilege "" + privilege, true"
+"(""COMSPEC"""
+"(""CopySid"", true"
+"(""CreatePipe"", true"
+"(""CreateProcess"", true"
+"(""CreateProcessAsUser"", true"
+"(""CreateProcessWithLogonW logon type 2"", true"
+"(""CreateProcessWithLogonW logon type 9"", true"
+"(""CreateProcessWithLogonWUacBypass"", true"
+"(""CreateProcessWithLogonWUacBypass: LogonUser"", true"
+"(""CreateProcessWithTokenW"", true"
+"(""Default"", 0, false, ACCESS_MASK.READ_CONTROL | ACCESS_MASK.WRITE_DAC | ACCESS_MASK.DESKTOP_WRITEOBJECTS | ACCESS_MASK.DESKTOP_READOBJECTS"
+"(""DuplicateHandle stderr write pipe"", true"
+"(""DuplicateHandle stdout read pipe"", true"
+"(""DuplicateTokenEx"", true"
+"(""GetAce"", true"
+"(""GetAclInformation"", true"
+"(""GetProcessWindowStation"", true"
+"(""GetSecurityDescriptorDacl"", true"
+"(""GetTokenInformation TokenElevation"", true"
+"(""GetTokenInformation TokenElevationType"", true"
+"(""GetTokenInformation"", true"
+"(""GetUserObjectInformation"", true"
+"(""GetUserObjectSecurity 1 size"", true"
+"(""GetUserObjectSecurity 2"", true"
+"(""InitializeAcl"", true"
+"(""InitializeSecurityDescriptor"", true"
+"(""Invalid process_timeout value: "" + timeout"
+"(""Kernel32.dll"", SetLastError = true"
+"(""Kernel32.dll"", SetLastError=true"
+"(""LogonUser"", true"
+"(""LookupPrivilegeName"", true"
+"(""OpenDesktop"", true"
+"(""OpenProcessToken"", true"
+"(""OpenWindowStation"", true"
+"(""SeAssignPrimaryTokenPrivilege"", WindowsIdentity.GetCurrent("
+"(""SeImpersonatePrivilege"", WindowsIdentity.GetCurrent("
+"(""SetNamedPipeHandleState"", true"
+"(""SetProcessWindowStation hWinsta"", true"
+"(""SetProcessWindowStation hWinstaSave"", true"
+"(""SetSecurityDescriptorDacl"", true"
+"(""SetThreadToken"", true"
+"(""SetUserObjectSecurity"", true"
+"(""Specified port is invalid: "" + remote[1]"
+"(""WINDIR"""
+"(""[!] Failed to set the token's Integrity Level: "" + integrity.ToString("
+"(""[*] Warning: LoadUserProfile failed due to insufficient permissions"""
+"(""[*] Warning: The function CreateProcessWithLogonW is not compatible with the requested logon type '"" + logonType.ToString("
+"(""[*] Warning: UAC Bypass is not compatible with logon type '"" + logonType.ToString("
+"(""[*] Warning: User profile directory for user "" + username + "" does not exists. Use --force-profile if you want to force the creation."""
+"(""[-]     {0}\t{1}\r\n"", item.Key, item.Value"
+"(""advapi32"", SetLastError = true, CharSet = CharSet.Unicode"
+"(""advapi32.dll"""
+"(""advapi32.dll"", CharSet = CharSet.Unicode, SetLastError = true"
+"(""advapi32.dll"", CharSet=CharSet.Unicode, SetLastError = true"
+"(""advapi32.dll"", EntryPoint=""DuplicateTokenEx"", SetLastError = true"
+"(""advapi32.dll"", SetLastError = true"
+"(""advapi32.dll"", SetLastError = true, BestFitMapping = false, ThrowOnUnmappableChar = true"
+"(""advapi32.dll"", SetLastError = true, CharSet=CharSet.Unicode"
+"(""advapi32.dll"", SetLastError=true"
+"(""advapi32.dll"", SetLastError=true, CharSet=CharSet.Unicode"
+"(""kernel32.dll"""
+"(""kernel32.dll"", CharSet = CharSet.Unicode, SetLastError = true"
+"(""kernel32.dll"", SetLastError = true"
+"(""kernel32.dll"", SetLastError = true, CharSet = CharSet.Auto, EntryPoint = ""CreateProcess"""
+"(""kernel32.dll"", SetLastError=true"
+"(""user32"", CharSet = CharSet.Unicode, SetLastError = true"
+"(""user32.dll"""
+"(""user32.dll"", SetLastError = true"
+"(""user32.dll"", SetLastError=true"
+"(""userenv.dll"", SetLastError = true, CharSet = CharSet.Auto"
+"(""userenv.dll"", SetLastError=true, CharSet = CharSet.Auto"
+"(""ws2_32.dll"", CharSet = CharSet.Ansi, SetLastError = true"
+"(""ws2_32.dll"", CharSet = CharSet.Auto"
+"(""ws2_32.dll"", CharSet = CharSet.Auto, SetLastError=true"
+"(""ws2_32.dll"", CharSet = CharSet.Unicode, SetLastError = true"
+"(""ws2_32.dll"", SetLastError = true"
+"(""{0}"", e.Message"
+"() + "" with process function "" + GetProcessFunction(createProcessFunction"
+"() == ""cmd.exe"""
+"() == ""powershell.exe"""
+"(0, ""CreateProcessAsUserW"""
+"(0, (int"
+"(1, ""CreateProcessWithTokenW"""
+"(10,""RemoteInteractive"""
+"(11,""CachedInteractive"""
+"(2, ""CreateProcessWithLogonW"""
+"(2, ""Interactive"""
+"(3, ""Network"""
+"(4, ""Batch"""
+"(5, ""Service"""
+"(7, ""Unlock"""
+"(8, ""NetworkCleartext"""
+"(9, ""NewCredentials"""
+"(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP, IntPtr.Zero, 0, 0"
+"(CreatePipe(out hReadPipe, out hWritePipe, ref sa, (uint"
+"(GetSidSubAuthority(pSid, (Marshal.ReadByte(GetSidSubAuthorityCount(pSid"
+"(GetTokenInformation(hToken, TOKEN_INFORMATION_CLASS.TokenIntegrityLevel, pb, cb, out cb"
+"(Int16 wVersionRequested, out WSAData wsaData"
+"(IntPtr ExistingTokenHandle, uint dwDesiredAccess, IntPtr lpThreadAttributes, SECURITY_IMPERSONATION_LEVEL ImpersonationLevel, int TokenType, ref IntPtr DuplicateTokenHandle"
+"(IntPtr ProcessHandle, uint DesiredAccess, out IntPtr TokenHandle"
+"(IntPtr SecurityDescriptor, uint dwRevision"
+"(IntPtr TokenHandle, TOKEN_INFORMATION_CLASS TokenInformationClass, IntPtr TokenInformation, int TokenInformationLength"
+"(IntPtr TokenHandle, TOKEN_INFORMATION_CLASS TokenInformationClass, IntPtr TokenInformation, int TokenInformationLength, out int ReturnLength"
+"(IntPtr TokenHandle, TOKEN_INFORMATION_CLASS TokenInformationClass, IntPtr TokenInformation,uint TokenInformationLength,out uint ReturnLength"
+"(IntPtr aclPtr, int aceIndex, out IntPtr acePtr"
+"(IntPtr hFile, [Out] byte[] lpBuffer, uint nNumberOfBytesToRead, out uint lpNumberOfBytesRead, IntPtr lpOverlapped"
+"(IntPtr hNamedPipe, ref UInt32 lpMode, IntPtr lpMaxCollectionCount, IntPtr lpCollectDataTimeout"
+"(IntPtr hObj, int nIndex,[Out] byte [] pvInfo, uint nLength, out uint lpnLengthNeeded"
+"(IntPtr hObj, ref SECURITY_INFORMATION pSIRequested, IntPtr pSD"
+"(IntPtr hObj, ref SECURITY_INFORMATION pSIRequested, IntPtr pSID, uint nLength, out uint lpnLengthNeeded"
+"(IntPtr hSourceProcessHandle, IntPtr hSourceHandle, IntPtr hTargetProcessHandle, out IntPtr lpTargetHandle, uint dwDesiredAccess, [MarshalAs(UnmanagedType.Bool"
+"(IntPtr hToken, IntPtr hProfile"
+"(IntPtr hToken, IntegrityLevel integrity"
+"(IntPtr hToken, StringBuilder path, ref int dwSize"
+"(IntPtr hToken, out IntPtr hTokenDuplicate"
+"(IntPtr hToken, ref PROFILEINFO lpProfileInfo"
+"(IntPtr hToken, string username, bool forceProfileCreation, bool userProfileExists, out IntPtr lpEnvironment"
+"(IntPtr hToken, string username, string domainName, string password, out int logonTypeNotFiltered"
+"(IntPtr hToken, uint dwLogonFlags, string lpApplicationName, string lpCommandLine, uint dwCreationFlags, IntPtr lpEnvironment, string lpCurrentDirectory, [In] ref STARTUPINFO lpStartupInfo, out ProcessInformation lpProcessInformation"
+"(IntPtr hToken,string lpApplicationName,string lpCommandLine, IntPtr lpProcessAttributes, IntPtr lpThreadAttributes,bool bInheritHandles,uint dwCreationFlags,IntPtr lpEnvironment,string lpCurrentDirectory,ref STARTUPINFO lpStartupInfo,out ProcessInformation lpProcessInformation"
+"(IntPtr handle, SE_OBJECT_TYPE ObjectType, uint SecurityInfo, IntPtr psidOwner, IntPtr psidGroup, IntPtr pDacl, IntPtr pSacl"
+"(IntPtr handle, UInt32 milliseconds"
+"(IntPtr pAcl, ref ACL_SIZE_INFORMATION pAclInformation, uint nAclInformationLength, ACL_INFORMATION_CLASS dwAclInformationClass"
+"(IntPtr pAcl, uint dwAceRevision, ACCESS_MASK AccessMask, IntPtr pSid"
+"(IntPtr pAcl, uint dwAceRevision, uint dwStartingAceIndex, IntPtr pAceList, uint nAceListLength"
+"(IntPtr pAcl, uint nAclLength, uint dwAclRevision"
+"(IntPtr pDacl, ACCESS_MASK mask, byte aceFlags, uint aceSize"
+"(IntPtr pIdentifierAuthority, byte nSubAuthorityCount, int dwSubAuthority0, int dwSubAuthority1, int dwSubAuthority2, int dwSubAuthority3, int dwSubAuthority4, int dwSubAuthority5,  int dwSubAuthority6, int dwSubAuthority7, out IntPtr pSid"
+"(IntPtr pSecurityDescriptor, [MarshalAs(UnmanagedType.Bool"
+"(IntPtr s, ref SOCKADDR_IN addr, int addrsize"
+"(IntPtr sd, bool daclPresent, IntPtr dacl, bool daclDefaulted"
+"(IntPtr sid, UInt32 subAuthorityIndex"
+"(IntPtr tokenhandle, bool disableprivs, [MarshalAs(UnmanagedType.Struct"
+"(IsLimitedUserLogon(hToken, username, domainName, password, out logonTypeNotFiltered"
+"(IsLimitedUserLogon(hTokenDuplicate, username, domainName, password, out logonTypeNotFiltered"
+"(IsLimitedUserLogon(hTokenUacCheck, username, domainName, password, out logonTypeNotFiltered"
+"(KeyValuePair<int,string> item in createProcessFunctions"
+"(KeyValuePair<int,string> item in logonTypes"
+"(LayoutKind.Sequential, CharSet = CharSet.Unicode"
+"(LayoutKind.Sequential, Pack = 4"
+"(LogonUser(username, domainName, password, LOGON32_LOGON_NETWORK_CLEARTEXT, LOGON32_PROVIDER_DEFAULT, ref hTokenNetwork"
+"(LogonUser(username, domainName, password, logonTypeTry, logonProvider, ref hTokenCheck2"
+"(Network, Batch, Service"
+"(Position = 0, Mandatory = $True"
+"(Position = 1, Mandatory = $True"
+"(Position = 2, Mandatory = $True"
+"(Sid, 0, userSid, (int"
+"(String userName,String domain,String password,UInt32 logonFlags,String applicationName,String commandLine,uint creationFlags,UInt32 environment,String currentDirectory,ref STARTUPINFO startupInfo,out  ProcessInformation processInformation"
+"(String.Format(""Selected logon type '{0}' is not granted to the user '{1}'. Use available logon type '{2}'."", logonType, username, availableLogonType.ToString("
+"(String.Format(""The flag --bypass-uac is not compatible with {0} but only with --function '2' (CreateProcessWithLogonW"
+"(String.Format(""WSAConnect failed with error code: {0}"", error"
+"(String.Format(""WSAStartup failed with error code: {0}"", error"
+"(String.Format(""[*] Warning: Logon for user '{0}' is limited. Use the --logon-type value '{1}' to obtain a more privileged token"", username, logonTypeNotFiltered"
+"(String.Format(""[*] Warning: The logon for user '{0}' is limited. Use the flag combination --bypass-uac and --logon-type '{1}' to obtain a more privileged token."", username, logonTypeNotFiltered"
+"(UnmanagedType.ByValArray, SizeConst = 6"
+"(UnmanagedType.ByValArray, SizeConst = 6, ArraySubType = UnmanagedType.I1"
+"(UnmanagedType.ByValArray, SizeConst = 64"
+"(UnmanagedType.ByValTStr, SizeConst = 129"
+"(UnmanagedType.ByValTStr, SizeConst = 257"
+"([In] AddressFamily addressFamily, [In] SocketType socketType, [In] ProtocolType protocolType, [In] IntPtr protocolInfo, [In] uint group, [In] int flags"
+"(authoritySid, pLabelAuthorityStruct, false"
+"(buffer, 0, (int"
+"(domain != """" && domain != ""."""
+"(domain, username"
+"(domainName == """""
+"(domainName, username, logonType"
+"(error + ""LookupAccountName"", true"
+"(error_string + win32FunctionName + "" failed with error code: "" + GetWin32ErrorString("
+"(hToken, AccessToken.GetTokenIntegrityLevel(WindowsIdentity.GetCurrent("
+"(hToken, TOKEN_INFORMATION_CLASS.TokenElevation, IntPtr.Zero, tokenInfLength, out tokenInfLength"
+"(hToken, TOKEN_INFORMATION_CLASS.TokenElevationType, IntPtr.Zero, tokenInfLength, out tokenInfLength"
+"(hToken, TOKEN_INFORMATION_CLASS.TokenIntegrityLevel, pLabel, labelSize"
+"(hToken, null, ref dwSize"
+"(hToken, out hTokenDuplicate"
+"(hToken, profileDir, ref dwSize"
+"(hToken, profileInfo.hProfile"
+"(hToken, ref profileInfo"
+"(hTokenDupImpersonation, AccessToken.GetTokenIntegrityLevel(WindowsIdentity.GetCurrent("
+"(hTokenDuplicate, username, forceUserProfileCreation, userProfileExists, out lpEnvironment"
+"(hTokenDuplicateLocal, AccessToken.GetTokenIntegrityLevel(WindowsIdentity.GetCurrent("
+"(hTokenProcess, AccessToken.GetTokenIntegrityLevel(hTokenDupImpersonation"
+"(hTokenProcess, SE_OBJECT_TYPE.SE_KERNEL_OBJECT, DACL_SECURITY_INFORMATION, IntPtr.Zero, IntPtr.Zero, IntPtr.Zero, IntPtr.Zero"
+"(int logonType, uint logonFlags, string username, string domainName, string password, string processPath, string commandLine, ref STARTUPINFO startupInfo, out ProcessInformation processInfo"
+"(kernel, window system, and so on"
+"(luid, ptrLuid, true"
+"(null, privilege, ref sebLuid"
+"(null, ptrLuid, null, ref luidNameLen"
+"(null, ptrLuid, sb, ref luidNameLen"
+"(out IntPtr hReadPipe, out IntPtr hWritePipe, ref SECURITY_ATTRIBUTES lpPipeAttributes, uint nSize"
+"(out IntPtr lpEnvironment, IntPtr hToken, bool bInherit "
+"(out lpEnvironment, hToken, false"
+"(pLabelAuthorityStruct, 1, (int"
+"(pNewAceStruct, pNewAcePtr, false"
+"(pNewDacl, ACCESS_MASK.GENERIC_ACCESS, CONTAINER_INHERIT_ACE | INHERIT_ONLY_ACE | OBJECT_INHERIT_ACE, cbNewAce"
+"(pNewDacl, ACCESS_MASK.WINSTA_ALL, NO_PROPAGATE_INHERIT_ACE, cbNewAce"
+"(pTempAce, typeof(ACE_HEADER"
+"(privilege == ""SeAssignPrimaryTokenPrivilege"" && AccessToken.GetTokenIntegrityLevel(currentTokenHandle"
+"(privilege == ""SeImpersonatePrivilege"" && AccessToken.GetTokenIntegrityLevel(currentTokenHandle"
+"(privilege, token"
+"(processInfo.process, SE_OBJECT_TYPE.SE_KERNEL_OBJECT, DACL_SECURITY_INFORMATION, IntPtr.Zero, IntPtr.Zero, IntPtr.Zero, IntPtr.Zero"
+"(processInfo.process, processTimeout"
+"(processTimeout, remote, ref startupInfo, out this.hOutputWrite, out this.hErrorWrite, out this.hOutputRead, out socket"
+"(ref IntPtr hReadPipe, ref IntPtr hWritePipe"
+"(ref IntPtr pHandle, IntPtr hToken"
+"(stationName, false, ACCESS_MASK.READ_CONTROL | ACCESS_MASK.WRITE_DAC"
+"(string domain, string username"
+"(string domain, string username, int logonType"
+"(string lpApplicationName, string lpCommandLine, IntPtr lpProcessAttributes, IntPtr lpThreadAttributes, bool bInheritHandles, uint dwCreationFlags, IntPtr lpEnvironment, string lpCurrentDirectory, [In] ref STARTUPINFO lpStartupInfo, out ProcessInformation lpProcessInformation"
+"(string lpSystemName, IntPtr lpLuid, StringBuilder lpName, ref int cchName "
+"(string lpSystemName, string lpAccountName, [MarshalAs(UnmanagedType.LPArray"
+"(string lpsystemname, string lpname, [MarshalAs(UnmanagedType.Struct"
+"(string lpszDesktop, uint dwFlags, bool fInherit, ACCESS_MASK dwDesiredAccess"
+"(string privilege, IntPtr token"
+"(string username, string domainName, string password, int logonType, int logonProvider, string commandLine, bool forceUserProfileCreation, bool userProfileExists, ref STARTUPINFO startupInfo, ref ProcessInformation processInfo, ref int logonTypeNotFiltered"
+"(string username, string domainName, string password, int logonType, int logonProvider, string commandLine, ref STARTUPINFO startupInfo, ref ProcessInformation processInfo, ref int logonTypeNotFiltered"
+"(string username, string domainName, string password, int logonType, uint logonFlags, string commandLine, bool bypassUac, ref STARTUPINFO startupInfo, ref ProcessInformation processInfo, ref int logonTypeNotFiltered"
+"(string username, string domainName, string password, string commandLine, int logonType, uint logonFlags, int logonProvider, ref STARTUPINFO startupInfo, ref ProcessInformation processInfo, ref int logonTypeNotFiltered"
+"(string username, string password, string cmd, string domainName, uint processTimeout, int logonType, int createProcessFunction, string[] remote, bool forceUserProfileCreation, bool bypassUac, bool remoteImpersonation"
+"(string username, string password, string domainName, int logonType"
+"(string username, string password, string domainName, int logonType, int logonProvider"
+"(string win32FunctionName, bool returnWin32Error"
+"(tHandle, TOKEN_INFORMATION_CLASS.TokenPrivileges, IntPtr.Zero, TokenInfLength, out TokenInfLength"
+"(tHandle, TOKEN_INFORMATION_CLASS.TokenPrivileges, TokenInformation, TokenInfLength, out TokenInfLength"
+"(tokenElevationPtr, typeof(TOKEN_ELEVATION"
+"(tokenElevationTypePtr, typeof(TOKEN_ELEVATION_TYPE"
+"(tokenLabel, pLabel, false"
+"(uint nDestinationSidLength, IntPtr pDestinationSid, IntPtr pSourceSid"
+"(uint processTimeout, string[] remote, ref STARTUPINFO startupInfo, out IntPtr hOutputWrite, out IntPtr hErrorWrite, out IntPtr hOutputRead, out IntPtr socket"
+"(username, domainName, password, commandLine, logonType, logonFlags, logonProvider, ref startupInfo, ref processInfo, ref logonTypeNotFiltered"
+"(username, domainName, password, logonFlags | LOGON_NETCREDENTIALS_ONLY, processPath, commandLine, CREATE_NO_WINDOW, (UInt32"
+"(username, domainName, password, logonType, logonFlags, commandLine, bypassUac, ref startupInfo, ref processInfo, ref logonTypeNotFiltered"
+"(username, domainName, password, logonType, logonProvider, commandLine, forceUserProfileCreation, userProfileExists, ref startupInfo, ref processInfo, ref logonTypeNotFiltered"
+"(username, domainName, password, logonType, logonProvider, commandLine, ref startupInfo, ref processInfo, ref logonTypeNotFiltered"
+"(username, domainName, password, logonType, logonProvider, ref hToken"
+"(username, password, cmd, domain, processTimeout, logonType, createProcessFunction, remote, forceUserProfileCreation, bypassUac, remoteImpersonation"
+"(username, password, domainName, LOGON32_LOGON_INTERACTIVE, LOGON32_PROVIDER_DEFAULT"
+"(username, password, domainName, logonType"
+"(username, password, domainName, logonType, logonProvider"
+( !logonTypes.ContainsKey(logonType
+( $PSBoundParameters.ContainsKey('BypassUac'
+( $PSBoundParameters.ContainsKey('CreateProcessFunction'
+( $PSBoundParameters.ContainsKey('ForceProfile'
+( $PSBoundParameters.ContainsKey('Remote'
+( $PSBoundParameters.ContainsKey('RemoteImpersonation'
+( createProcessFunction < 0 || createProcessFunction > 2 
+( positionals.Count < 3 
+( remote != null 
+( split.Length != 2 
+(!CopySid((uint
+(!SetProcessWindowStation(hWinstaSave
+(!SetProcessWindowStation(this.hWinsta
+(!result
+($Command
+($CreateProcessFunction
+($Domain
+($LogonType
+($Password
+($ProcessTimeout
+($Remote
+($RunasCsBase64
+($RunasCsBytes
+($Username
+($parametersRunasCs.ToArray(
+(' '
+(':'
+(((IPAddress.Parse(host
+((IntPtr
+((int
+((ushort
+()
+()`` and ``CreateProcessWithTokenW(
+(*Interactive*
+(*RunasCs*
+(0
+(0xc0000142
+(1
+(1000
+(2
+(3
+(8
+(9
+(ACE_HEADER
+(ACL
+(AccessToken.GetTokenIntegrityLevel(WindowsIdentity.GetCurrent(
+(AccessToken.GetTokenIntegrityLevel(hTokenCheck2
+(C
+(Get-Location
+(GetTokenIntegrityLevel(hToken
+(IntPtr hDesktop
+(IntPtr hReadPipe
+(IntPtr hThread
+(IntPtr hToken
+(IntPtr hWinSta
+(IntPtr hWinsta
+(IntPtr handle
+(IntPtr lpEnvironment
+(IntPtr pSID
+(IntPtr pSid
+(IntPtr s
+(IntPtr sid
+(IntPtr tHandle
+(IntPtr token
+(LayoutKind.Sequential
+(Marshal.GetLastWin32Error(
+(Marshal.SizeOf(authoritySid
+(Marshal.SizeOf(luid
+(Part 1
+(Part 2
+(Part 3
+(Result == false
+(RunasCsException e
+(RunasCsMainClass.RunasCsMain(args
+(STANDARD_RIGHTS_READ | TOKEN_QUERY
+(SeAssignPrimaryTokenPrivilegeAssigned
+(SeImpersonatePrivilegeAssigned
+(System.IndexOutOfRangeException
+(TOKEN_ELEVATION
+(TOKEN_ELEVATION_TYPE
+(TOKEN_PRIVILEGES
+(TokenElevation
+(TokenPrivileges.Privileges[i].Attributes
+(UInt32 attribute
+(UnmanagedType.Bool
+(UnmanagedType.LPStr
+(UnmanagedType.LPTStr
+(WindowsIdentity.GetCurrent(true
+(WindowsImpersonationContext impersonatedUser = WindowsIdentity.Impersonate(hToken
+([IO.File]::ReadAllBytes($FileName
+([MarshalAs(UnmanagedType.LPStr
+([MarshalAs(UnmanagedType.LPTStr
+(a
+(args.Length == 1 && HelpRequired(args[0]
+(args[++ctr]
+(args[0].ToLower(
+(args[ctr]
+(at your option
+(attribute == 0
+(attribute == 1
+(attribute == 2
+(attribute == 3
+(automatic detection
+(availableLogonType != 0
+(b
+(both for *stdout* and *stderr*
+(bypassUac
+(calling and called
+(cbDacl == 0
+(cbNewAce*2
+(cmd
+(createProcessFunction
+(createProcessFunction == 0
+(createProcessFunction == 1
+(createProcessFunction == 2
+(currentTokenHandle
+(dwIntegrityLevel == SECURITY_MANDATORY_LOW_RID
+(dwIntegrityLevel >= SECURITY_MANDATORY_HIGH_RID
+(dwIntegrityLevel >= SECURITY_MANDATORY_MEDIUM_RID && dwIntegrityLevel < SECURITY_MANDATORY_HIGH_RID
+(dwIntegrityLevel >= SECURITY_MANDATORY_SYSTEM_RID
+(dwSize
+(err == 0
+(err == ERROR_INSUFFICIENT_BUFFER || err == ERROR_INVALID_FLAGS
+(error
+(error_string + message
+(fDaclPresent
+(flag --bypass-uac
+(flag --remote-impersonation
+(for any work
+(forceProfileCreation || userProfileExists
+(function
+(gratis or for a charge
+(hOutputReadTmpLocal
+(hToken
+(hTokenBatch
+(hTokenBatch != IntPtr.Zero
+(hTokenCheck1
+(hTokenCheck1 != IntPtr.Zero
+(hTokenCheck2
+(hTokenCheck2 != IntPtr.Zero
+(hTokenDupImpersonation
+(hTokenDuplicate
+(hTokenDuplicateLocal
+(hTokenNetwork
+(hTokenNetwork != IntPtr.Zero
+(hTokenProcess
+(hTokenService
+(hTokenService != IntPtr.Zero
+(hTokenUacCheck
+(hWinstaSave == IntPtr.Zero
+(help
+(https://blogs.msdn.microsoft.com/winsdk/2015/06/03/what-is-up-with-the-application-failed-to-initialize-properly-0xc0000142-error/
+(https://decoder.cloud/2018/01/13/potato-and-tokens/
+(https://docs.microsoft.com/en-us/previous-versions/aa379608(v=vs.85
+(https://github.com/dahall/Vanara
+(https://github.com/decoder-it
+(https://github.com/qtc-de
+(https://learn.microsoft.com/en-us/windows/win32/procthread/creating-a-child-process-with-redirected-input-and-output
+(https://learn.microsoft.com/en-us/windows/win32/services/interactive-services
+(https://twitter.com/winlogon0
+(https://www.tiraniddo.dev/2017/05/reading-your-way-around-uac-part-1.html
+(https://www.tiraniddo.dev/2017/05/reading-your-way-around-uac-part-2.html
+(https://www.tiraniddo.dev/2017/05/reading-your-way-around-uac-part-3.html
+(https://www.tiraniddo.dev/2020/02/getting-interactive-service-account.html
+(if any
+(if you work as a programmer
+(in ms
+(including a cross-claim or counterclaim in a lawsuit
+(including a physical distribution medium
+(int createProcessFunction
+(int ctr = 0; ctr < args.Length; ctr++
+(int dwIndex = 0; dwIndex < aclSizeInfo.AceCount; dwIndex++
+(int i=0;i<TokenPrivileges.PrivilegeCount;i++
+(int logonTypeTry in logonTypeTryOrder
+(integrity levels
+(isTokenUACFiltered
+(labelSize
+(logonType != 9
+(logonType != LOGON32_LOGON_INTERACTIVE
+(logonType != LOGON32_LOGON_NEW_CREDENTIALS && !forceUserProfileCreation && !userProfileExists
+(logonType == LOGON32_LOGON_NETWORK || logonType == LOGON32_LOGON_BATCH || logonType == LOGON32_LOGON_SERVICE || logonType == LOGON32_LOGON_NETWORK_CLEARTEXT
+(logonType == LOGON32_LOGON_NEW_CREDENTIALS
+(lpEnvironment
+(lpEnvironment != IntPtr.Zero
+(luidNameLen + 1
+(no *UAC* limitations
+(not filtered
+(operated by you or a third party
+(or copies made from those copies
+(pDacl == IntPtr.Zero
+(pLabel
+(pLabelAuthorityStruct
+(pNewAcePtr
+(pNewAcePtr.ToInt64(
+(pNewDacl
+(pNewSd
+(pSID
+(pSd
+(pb
+(privilegeStatus
+(processInfo.process
+(processInfo.thread
+(processTimeout > 0
+(profileInfo
+(regardless of how the transaction is characterized
+(remote
+(remote != null
+(remoteImpersonation
+(remote[1]
+(result && (forceProfileCreation || userProfileExists
+(result == false
+(result == false && Marshal.GetLastWin32Error(
+(sa
+(short
+(startupInfo
+(stationNameBytes
+(string commandline
+(string function
+(string message
+(string param
+(string privilege in privileges
+(string remote
+(string timeout
+(string type
+(string[] args
+(string[] remote
+(string[] s in privs
+(this.hDesktop
+(this.hDesktop != IntPtr.Zero
+(this.hErrorWrite
+(this.hErrorWrite != IntPtr.Zero
+(this.hOutputRead
+(this.hOutputRead != IntPtr.Zero
+(this.hOutputWrite
+(this.hOutputWrite != IntPtr.Zero
+(this.hTokenPreviousImpersonatingThread
+(this.hTokenPreviousImpersonatingThread != IntPtr.Zero
+(this.hWinsta
+(this.hWinsta != IntPtr.Zero
+(this.hWinsta == IntPtr.Zero
+(this.socket
+(this.socket != IntPtr.Zero
+(this.stationDaclObj != null
+(this.userSid
+(this.userSid != IntPtr.Zero
+(timeout
+(tokenElevation.TokenIsElevated > 0
+(tokenElevationPtr
+(tokenElevationType.TokenElevationType == 3
+(tokenElevationTypePtr
+(tokenInfLength
+(tokenLabel
+(true
+(type
+(typeof(ACCESS_ALLOWED_ACE
+(typeof(ACL_SIZE_INFORMATION
+(typeof(uint
+(uint
+(userProfileExists || forceUserProfileCreation
+(ushort hostshort
+(with or without modification

