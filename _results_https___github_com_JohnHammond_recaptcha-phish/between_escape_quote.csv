@@ -1,0 +1,10 @@
+"` function). This can be used as a standalone file and a run any local command, but to get a bit more flexibility with code execution, this repository includes a sample HTA file "
+"`, and have them paste in a malicious command with "
+"`. It includes the CSS and JavaScript in a single file for ease of use, but might need further customization to change the command that is ran (see the JavaScript at the end of the "
+`Ctrl+V
+`Win+R
+`iframe
+`index.html
+`python -m http.server 8000
+`recaptcha-verify
+`showVerifyWindow

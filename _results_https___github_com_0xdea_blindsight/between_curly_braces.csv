@@ -1,0 +1,17 @@
+"{ CreateFileMappingW(file_handle, None, PAGE_READONLY, 0, 0, None)? "
+"{ GetFileSize(file_handle, None) "
+"{ OpenProcess(PROCESS_ALL_ACCESS, false, pid)? "
+"{ level = ""warn"", priority = -1 "
+"{ slice::from_raw_parts_mut(ptr, size) "
+"{PCSTR, PCWSTR"
+"{Read, Write"
+{DUMP
+{LSASS
+{count
+{err
+{len
+{path
+{pid
+{proc_handle:?
+{prog
+{rand

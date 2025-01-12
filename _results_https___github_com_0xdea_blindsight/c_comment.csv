@@ -1,0 +1,25 @@
+// Cleanup
+// Create NTFS transaction object (TxF API)
+// Create intermediate output file as a transacted operation
+// Create output file with a random name
+// Dispatch to function implementing the selected action
+// Dump LSASS memory to intermediate output file
+// Dump LSASS memory to scrambled output file
+// Find LSASS process
+// Generate a random string
+// Get LSASS pid
+// Let's do it
+// Load system information
+// Map a view of the intermediate file into our address space
+// Open LSASS process
+// Open and read input file
+// Parse command line arguments
+// Print usage information and exit
+// Return pid
+// Scramble a slice of bytes in place
+// Scramble dump using a temporary vector to hold data
+// Unscramble a memory dump
+// Unscramble dump
+// Write scrambled dump to output file
+// Write unscrambled dump to output file
+// XOR a slice of bytes with a key in place

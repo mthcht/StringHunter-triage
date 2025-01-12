@@ -1,0 +1,22 @@
+"// 'jmp' - no jmp, no hook!"
+"// -a, --all --> Works on all active processes"
+"// -d, --disass --> Print disassembled code"
+"// -h, --help --> Print Usage"
+"// -p <PID>, --pid <pid> --> Work on specific PID"
+"// -v, --verbose --> Verbose output"
+// 15 byte max instruction length
+// DOS Header
+// Data Directory
+// Export Directory
+// Export Table
+// Get Function names array
+// Get Function ordinals array
+// Get Functions addresses array
+// NT Header
+// Read number of names
+// Reads a loader entry from the process memory
+// Reads the DLL image base from the file
+// Reads the loader data from the process memor
+// Retrieves the name of the DLL from the loader entry
+// Searches for hooks in the loaded DLLs
+// Skip this DLL and move to the next one

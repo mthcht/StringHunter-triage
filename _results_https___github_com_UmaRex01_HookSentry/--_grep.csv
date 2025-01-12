@@ -1,0 +1,17 @@
+ --all --> Works on all active processes
+ --all: Analyze all active processes
+ --disass --> Print disassembled code
+ --disass: Display disassembled code
+ --help --> Print Usage
+ --help: Show this message
+ --pid <PID>: Analyze the process with PID <PID>
+ --pid <pid> --> Work on specific PID
+ --verbose --> Verbose output
+ --verbose: Enable verbose output
+"
+" --all: Analyze all active processes\n"");"
+" --disass: Display disassembled code\n"");"
+" --help: Show this message\n"");"
+" --pid <PID>: Analyze the process with PID <PID>\n"");"
+" --verbose: Enable verbose output\n"");"
+---"

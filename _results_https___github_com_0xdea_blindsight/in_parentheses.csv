@@ -1,0 +1,87 @@
+"("".\\{prog} 29ABE9Hy.log"""
+"("".\\{prog} [dump | file_to_unscramble.log]"""
+"("".\\{prog}"""
+"("".\\{rand}.log"", rand = rand_str(8"
+"(""Copyright (c"
+"(""Process not found"""
+"(""Usage:"""
+"(""[!] Error: {err}"""
+"(""[*] Trying to dump to output file: {path}"""
+"(""[*] Trying to read from input file: {path}"""
+"(""[+] Done writing {count} bytes to disk!"""
+"(""[+] Dump successful!"""
+"(""[+] Found {LSASS} pid: {pid}"""
+"(""[+] Successfully created output file"""
+"(""[+] Successfully opened {LSASS} handle: {proc_handle:?}"""
+"(""[+] Successfully read from input file"""
+"(""\nExamples:"""
+"(""blindsight - Dump LSASS memory bypassing countermeasures"""
+"(&mut dump, KEY"
+"(PROCESS_ALL_ACCESS, false, pid"
+"(data, key"
+"(data: &mut [u8], key: &[u8]"
+"(e.g., TFTP, FTP, HTTP..."
+"(e.g., via PssCaptureSnapshot"
+"(file_handle, None"
+"(file_handle, None, PAGE_READONLY, 0, 0, None"
+"(map_handle, FILE_MAP_READ, 0, 0, 0"
+"(ptr, size"
+"(simply corrupt ""magic bytes"" instead of XORing?"
+"(the ""Software"""
+"(|(byte, key_byte"
+(&Alphanumeric
+(&args[0]
+(&buf
+(&dump
+(&mut buf
+('-'
+((
+()
+() -> Result<(
+().collect(
+(1
+(2006
+(ARM64
+(DUMP
+(LSASS.as_ref(
+(PROG
+(TxF API
+(action
+(action: &str
+(buf.as_mut_slice(
+(c
+(char::from
+(data
+(err
+(file_handle
+(file_ptr
+(https://attack.mitre.org/techniques/T1003/001/
+(https://github.com/0xdea/blindsight
+(https://github.com/Kudaes/Dumpy
+(https://github.com/anthemtotheego/CredBandit
+(https://github.com/fortra/nanodump
+(https://github.com/joaoviictorti/RustRedOps
+(https://github.com/w1u0u1/minidump
+(https://img.shields.io/badge/mastodon-%40raptor-purple.svg
+(https://img.shields.io/badge/twitter-%400xdea-blue.svg
+(https://img.shields.io/github/forks/0xdea/blindsight.svg?style=flat&color=green
+(https://img.shields.io/github/stars/0xdea/blindsight.svg?style=flat&color=yellow
+(https://img.shields.io/github/watchers/0xdea/blindsight.svg?style=flat&color=red
+(https://infosec.exchange/@raptor
+(https://twitter.com/0xdea
+(https://www.ired.team/offensive-security/credential-access-and-credential-dumping
+(https://www.synacktiv.com/en/publications/windows-secrets-extraction-a-summary
+(key.iter(
+(macOS example
+(map_handle
+(path
+(path: &str
+(proc.pid(
+(proc_handle
+(prog
+(prog: &str
+(ptr::null_mut(
+(size
+(size: usize
+(txf_handle
+(x64
