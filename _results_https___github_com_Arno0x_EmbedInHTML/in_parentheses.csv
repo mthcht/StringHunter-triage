@@ -1,0 +1,200 @@
+"(""${blobObjectNameEncrypted}"""
+"(""${blobShimEncrypted}"""
+"(""'"",""\\'"""
+"(""-f"", ""--file"", help=""Path to the file to embed into HTML"", dest=""fileName"""
+"(""-k"", ""--key"", help=""Encryption key"", dest=""key"""
+"(""-m"", ""--mime"", help=""Forced mime type for output file"", dest=""mimeType"""
+"(""-o"", ""--output"", help=""Ouput file name"", dest=""outFileName"""
+"(""-w"", ""--webserver"", help=""Starts a web server at the end of the script"", action=""store_true"", default=False, dest=""startWebServer"""
+"(""WScript.Shell"""
+"(""[!] Could not determine the mime type for the input file. Force it using the -m switch."""
+"(""[!] Could not open or read file [{}]"".format(args.fileName"
+"(""[!] Could not open or read template file [{}]"".format(templateFile"
+"(""[!] Could not open or write file [{}]"".format(htmlFile"
+"(""[*] File [{}] successfully created !"".format(htmlFile"
+"(""[*] File [{}] successfully loaded !"".format(args.fileName"
+"(""[+] Encrypted input file with key [{}]"".format(args.key"
+"(""[+] Starting a web server on port {} serving files from 'output' directory"".format(PORT"
+"(""\nExample: ./{} -k mysecretkey -f payloads_examples/calc.xll -o index.html\n"".format(os.path.basename(__file__"
+"(""a"""
+"(""calc.exe"""
+"(""output"""
+"(${varBlobShim}+'(${varBlob}, ""${fileName}"""
+"('[ERROR] Output file name is empty, please provide one'"
+"('dragover', function(e"
+"('drop', function(e"
+"('raw', key"
+"('raw', key, {name: 'AES-CTR'}, false, ['encrypt', 'decrypt']"
+"(("""", PORT"
+"().startswith(""[!]"""
+"().startswith(""[*]"""
+"().startswith(""[+]"""
+"().startswith(""[?]"""
+"([buildOutput(inputFileName,base64ArrayBuffer(encrypted"
+"([decrypted], {type: '"" + mimeType + ""'}"
+"([decrypted], {type: 'octet/stream'}"
+"(b, {type:""' + mimeType + '""}"
+"(b,fname"
+"(blob,fileName"
+"(blob,outputFileName"
+"(fileName, fileAsBase64"
+"(function(b,fname"
+"(hex.substring(i, i + 2"
+"(htmlFile, 'w'"
+"(kernel, window system, and so on"
+"(parameters, templateFile"
+"(params,""templates/html.tpl"""
+"(pentest, security audits"
+"(r,o"
+"(rc4Encryptor.stringEncrypt(""Blob"""
+"(self, data"
+"(self, key = None"
+"(self, key"
+"(string, color=None"
+"(var t,e=[],n=0,a="""",f=0;f<256;f++"
+"({name: ""AES-CTR"", length: 128}, true, [""encrypt"", ""decrypt""]"
+"({name: 'AES-CTR', counter: counter, length: 128}, key, data"
+"({name:'AES-CTR', counter: counter, length: 128}, key, data"
+( len 
+(!(outputFileNameObj && outputFileNameObj.value
+(${keyFunction}(
+('!'
+(''
+('.'
+('00' + x.toString(16
+('1'
+('31'
+('32'
+('33'
+('34'
+(';'.join(attr
+('[ERROR] WebCrypto API functions not available in this browser !'
+('a'
+('dropZone'
+('outputFileName'
+('result'
+('var ${varBlob} = new '+${varBlobObjectName}+'([${b64AndRC4Function}(${keyFunction}(
+((data[i] ^ self.state[(self.state[self.x] + self.state[self.y]
+().toLowerCase(
+();document.body.removeChild(a
+(*and not in a sandbox*
+(*any type of file*
+(*html.tpl file*
+(*key and counter*
+(*one can be optionnaly started for you with the `-w` flag*
+(*you can optionnaly change the output file name*
+(-2
+(/clr
+(1
+(2
+(256
+(2^6 - 1
+(3
+(8
+(C
+(S[i] + S[j]
+(XLL
+(a
+(and not in a sandbox
+(args.fileName
+(args.key
+(arrayBuffer
+(at your option
+(b
+(base64
+(blob
+(buffer
+(byteRemainder == 1
+(byteRemainder == 2
+(bytes[i + 1] << 8
+(bytes[i] << 16
+(bytes[mainLength] << 8
+(chr(ord(char
+(chunk & 1008
+(chunk & 15
+(chunk & 16515072
+(chunk & 252
+(chunk & 258048
+(chunk & 3
+(chunk & 4032
+(chunk & 64512
+(counter
+(crypto.subtle
+(data
+(description='Creates an HTML file containing an embedded RC4 encrypted file'
+(e[f]+e[n]
+(eg: intercepting proxy
+(even if some are fake
+(evt
+(f.read(
+(f=0;f<256;f++
+(file
+(fileExtension in mimeTypes
+(fileHandle.read(
+(for any work
+(from the XLL file
+(function(decrypted
+(function(encrypted
+(function(key
+(function(keyData
+(gratis or for a charge
+(hex
+(hex.length / 2
+(html.tpl file
+(http://twitter.com/Arno0x0x
+(http://www.gnu.org/copyleft/gpl.html
+(https://gist.github.com/Arno0x/f71a9db515ddea686ccdd77666bebbaa
+(https://gist.github.com/borismus/1032746
+(https://gist.github.com/farhadi/2185197
+(https://github.com/nccgroup/demiguise
+(i
+(i + 1
+(i+1
+(i=0;i<256;i++
+(if any
+(if you work as a programmer
+(including a cross-claim or counterclaim in a lawsuit
+(including a physical distribution medium
+(inputFile
+(j + S[i]
+(j + S[i] + ord(self.key[i % len(self.key
+(j+s[i]
+(j+s[i]+r.charCodeAt(i%r.length
+(key
+(keyData
+(len(data
+(n+e[f=(f+1
+(n+e[f]+r.charCodeAt(f%r.length
+(new ArrayBuffer(dataLength
+(new Uint8Array(16
+(new Uint8Array(buffer
+(o
+(o.charCodeAt(h
+(operated by you or a third party
+(or copies made from those copies
+(ord(key[i % len(key
+(out
+(output
+(parameters
+(params[0]
+(params[1]
+(random.choice(string.ascii_uppercase + string.ascii_lowercase
+(rc4Encryptor.binaryEncrypt(fileBytes
+(rc4Encryptor.stringEncrypt(blobShim
+(regardless of how the transaction is characterized
+(resultHTML
+(s
+(s[i]+s[j]
+(self.state[self.x] + self.y
+(self.x + 1
+(templateFile
+(url
+(var h=0;h<o.length;h++
+(var i = 0; i < hex.length; i += 2
+(var i = 0; i < len; i++
+(var i = 0; i < mainLength; i = i + 3
+(var i=0;i<256;i++
+(var y=0;y<dataLength;y++
+(window.navigator.msSaveOrOpenBlob
+(with or without modification
+(y

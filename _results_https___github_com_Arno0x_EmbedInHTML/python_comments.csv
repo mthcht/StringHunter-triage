@@ -1,0 +1,47 @@
+			# Write the HTML file
+			#------------------------------------------------------------------------
+		# Create the RC4 encryption object
+		# Determine the mime type to apply based on the file extension or from the
+		# Encrypt and base64 encode the XLL file
+		# Formating the HTML template with all parameters"
+		# Open XLL file and read all bytes from it
+		# Preparing all parameters for substitution in the HTML template
+		# blobShim borrowed from https://github.com/mholt/PapaParse/issues/175#issuecomment-75597039"
+		# mime type passed as an argument
+		#------------------------------------------------------------------------
+		#------------------------------------------------------------------------"
+	
+	# Encrypt binary input data"
+	# Encrypt string input data"
+	# Key schedule"
+	# Parse arguments
+	#------------------------------------------------------------------------"
+
+    	# bold
+"		
+"		# If it was requested to start a web server, let's do it !"
+"	
+"	           
+"
+#									MAIN FUNCTION
+#	 You should derive your key from the environment so that it only works on your intended target (and not in a sandbox).
+#	 https://gist.github.com/borismus/1032746 and https://gist.github.com/farhadi/2185197
+#	 of the 'keyFunction'.
+#
+# -*- coding: utf-8 -*-
+# 1) This tool was inspired and is derived from the great 'demiguise' tool : https://github.com/nccgroup/demiguise
+# 2) This tool creates an HTML file containing an embeded RC4 encrypted XLL payload which is automatically delivered to the end-user
+# 3) The b64AndRC4 function used on the binary input (from the XLL file) is a mix Mix of:
+# 4) Check https://gist.github.com/Arno0x/f71a9db515ddea686ccdd77666bebbaa for an easy malicious XLL creation
+# 5) In the HTML template (html.tpl file) it is advisable to insert your own key environmental derivation function below in place
+# Author: Arno0x0x - https://twitter.com/Arno0x0x
+# Class providing RC4 encryption functions
+# Distributed under the terms of the [GPLv3 licence](http://www.gnu.org/copyleft/gpl.html)
+# Helper functions
+# NOTES:
+# These are the MIME types that will be presented to the user (even if some are fake)
+#!/usr/bin/env python
+#----------------------------------------------------------------"
+#------------------------------------------------------------------------"
+#=====================================================================================
+#====================================================================================="

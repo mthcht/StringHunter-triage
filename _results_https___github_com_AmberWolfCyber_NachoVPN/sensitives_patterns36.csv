@@ -1,0 +1,10 @@
+        key_usage = x509.KeyUsage(
+"            key_path = os.path.join(self.cert_dir, 'apple.key')"
+"            key_path = os.path.join(self.cert_dir, 'codesign.key')"
+"        key_path = os.path.join('certs', 'sonicwall.key')"
+"        self.apple_key_path = os.path.join('certs', 'paloalto-apple.key')"
+"        self.ca_key_path = os.path.join(self.cert_dir, 'ca.key')"
+"        self.codesign_key_path = os.path.join('certs', 'paloalto-codesign.key')"
+"        self.dns_key_path = os.path.join(self.cert_dir, f""server-dns.key"")"
+"        self.ip_key_path = os.path.join(self.cert_dir, f""server-ip.key"")"
+"KEY_PATH=""/app/certs/server-dns.key"""

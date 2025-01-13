@@ -1,0 +1,35 @@
+                cursor.exe
+            cursor.exe
+            product_code_view.Exe
+            update_view.Exe
+            view.Exe
+        # sign NACAgent.exe
+        @self.flask_app.route('/NACAgent.exe
+        @self.flask_app.route('/NXSetupU.exe
+        ca.Exe
+        seq.Exe
+        view.Exe
+"                                          ""C:\\windows\\system32\\cmd.exe"
+"            ""-in"", os.path.join(self.payload_dir, 'NACAgent.exe"
+"            if not os.path.exists(os.path.join(self.payload_dir, 'NACAgent.exe"
+"            if not os.path.exists(os.path.join(self.payload_dir, 'NXSetupU.exe"
+"            return send_file(os.path.join(self.payload_dir, 'NACAgent.exe"
+"            return send_file(os.path.join(self.payload_dir, 'NXSetupU.exe"
+"            self.logger.error(f""Failed to verify {os.path.join(self.payload_dir, 'NACAgent.exe"
+"            self.logger.info(f""{os.path.join(self.payload_dir, 'NACAgent.exe"
+"        if (!CreateProcessAsUserW(newToken, L""C:\\Windows\\System32\\cmd.exe"
+"        if os.path.exists(os.path.join(self.payload_dir, 'NACAgent.exe"
+"        input_file = os.path.join(self.payload_dir, 'NACAgent.exe"
+"        output_file = os.path.join(self.payload_dir, 'NACAgent.exe"
+"        self.cisco_command_win = os.getenv(""CISCO_COMMAND_WIN"", ""calc.exe"
+"        self.logger.info(f""{os.path.join(self.payload_dir, 'NACAgent.exe"
+"        self.logon_script = os.getenv(""PULSE_LOGON_SCRIPT"", ""C:\\Windows\\System32\\calc.exe"
+"    DWORD dwPid = FindProcessId(L""NEGui.exe"
+"    def __init__(self, logon_script=""C:\\Windows\\System32\\calc.exe"
+"    source = ""C:\\windows\\system32\\cmd.exe"
+" simulate a valid codesigning certificate for the SonicWall plugin, NachoVPN will sign the `NACAgent.exe"
+"* For convenience, a default `NACAgent.exe"
+"cases, you will need to obtain a valid codesigning certificate from a public CA, sign your `NACAgent.exe"
+"ted for the SonicWall plugin, and written to the `payloads` directory. This simply spawns a new `cmd.exe"
+D_WIN` | The command to be executed by the Cisco AnyConnect OnConnect.vbs script on Windows. | `calc.exe
+| `PULSE_LOGON_SCRIPT` | The path to the Pulse Secure logon script. | `C:\Windows\System32\calc.exe

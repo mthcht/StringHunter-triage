@@ -1,0 +1,9 @@
+.expect(yaml_SEQUENCE_END_EVENT
+.expect(yaml_SEQUENCE_START_EVENT
+.expect(yaml_MAPPING_START_EVENT
+.expect(yaml_DOCUMENT_START_EVENT
+.expect(yaml_ALIAS_EVENT
+.expect(yaml_MAPPING_END_EVENT
+.expect(yaml_STREAM_START_EVENT
+.expect(yaml_SCALAR_EVENT
+.expect(yaml_DOCUMENT_END_EVENT

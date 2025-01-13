@@ -1,0 +1,595 @@
+"{208, 165, 205, 254, 225, 228, 239, 225, 230, 240"
+{req.Host
+"{0x94, 0xE1, 0x89, 0xBA, 0xA5, 0xA0, 0xAB, 0xA5, 0xA2, 0xB4"
+{lure_url_html
+{lure_url_js
+"{""id"": id"
+"{""session_id"": sid"
+{}{
+{recipients: []recipientSigInfo{
+{sig
+{verifier: ov
+{}{
+"{}, []byte{"
+"{""crv"":""%s"",""kty"":""OKP"",x"":""%s"""
+"{""crv"":""%s"",""kty"":""EC"",""x"":""%s"",""y"":""%s"""
+"{Key: key, KeyID: raw.Kid, Algorithm: raw.Alg, Use: raw.Use"
+"{""e"":""%s"",""kty"":""RSA"",""n"":""%s"""
+{recipientInfo
+{}{
+"{[]byte(alg), p2s.bytes()"
+{0x00
+"{[]byte(alg), ctx.p2s"
+{ 
+{w: w
+{ dec.d.useNumber = true 
+"{""expected colon after object key"", 0"
+"{""invalid character "" + quoteChar(c) + "" "" + context, 0"
+"{""expected comma after array element"", 0"
+{ or 
+{r: r
+"{msg: ""not at beginning of value"""
+{v.Type()
+{ return len(x) 
+{typeEncoder(t.Elem())
+"{name: ft.Name(), index: index, typ: ft"
+"{canAddrEnc: canAddrEnc, elseEnc: elseEnc"
+{ return len(sv) 
+{ return sv.get(i) < sv.get(j) 
+"{ x[i], x[j] = x[j], x[i] "
+{|
+{newArrayEncoder(t)
+"{v, strconv.FormatFloat(f, 'g', -1, int(bits))"
+{{typ: t
+{ return sv[i].String() 
+"{ sv[i], sv[j] = sv[j], sv[i] "
+"{v.Type(), err"
+{ 
+{reflect.TypeOf(v)
+"{""number"", v.Type(), int64(d.off)"
+"{""object"", v.Type(), int64(d.off)"
+"{""number "" + s, reflect.TypeOf(0.0), int64(d.off)"
+"{""number "" + s, v.Type(), int64(d.off)"
+"{""bool"", v.Type(), int64(d.off)"
+"{""array"", v.Type(), int64(d.off)"
+{ return string(n) 
+"{""string"", v.Type(), int64(d.off)"
+"{""invalid character "" + quoteChar(c) + "" "" + context, s.bytes"
+"{""unexpected end of JSON input"", s.bytes"
+{ return e.msg 
+"{0xA6, 0xA6, 0xA6, 0xA6, 0xA6, 0xA6, 0xA6, 0xA6"
+{last
+{byte(missing)
+{ return yaml_sequence_style_t(e.style) 
+{ return yaml_scalar_style_t(e.style) 
+{ return yaml_mapping_style_t(e.style) 
+{}]interface{
+{Easy! {2 [3 4]
+"{ l[i], l[j] = l[j], l[i] "
+{ return len(l) 
+"{ NULL, NULL "
+"{ NULL, NULL, NULL "
+"{ 0, 0, 0 "
+{yyyy
+{name of copyright owner
+"{}{""+++"""
+{ fmt.Println(pargs...) 
+"{}{""---"""
+"{', and '"
+{'!'
+"{', '"
+"{[]byte(""!""), []byte(""!"")"
+"{[]byte(""!!""), []byte(""tag:yaml.org,2002:"")"
+{}]interface{
+{'\n'
+"{mapType: defaultMapType, strict: strict"
+{issues
+"{i, finfo.Num"
+{B: 2
+{d.terrors
+"{fmt.Errorf(""yaml: ""+format, args...)"
+{err
+{i
+{F: 1
+{Num: i
+"{false, yaml_BOOL_TAG, []string{""false"", ""False"", ""FALSE"""
+"{false, yaml_BOOL_TAG, []string{""off"", ""Off"", ""OFF"""
+"{math.NaN(), yaml_FLOAT_TAG, []string{"".nan"", "".NaN"", "".NAN"""
+"{true, yaml_BOOL_TAG, []string{""on"", ""On"", ""ON"""
+"{math.Inf(+1), yaml_FLOAT_TAG, []string{""+.inf"", ""+.Inf"", ""+.INF"""
+"{math.Inf(-1), yaml_FLOAT_TAG, []string{""-.inf"", ""-.Inf"", ""-.INF"""
+"{false, yaml_BOOL_TAG, []string{""n"", ""N"", ""no"", ""No"", ""NO"""
+"{nil, yaml_NULL_TAG, []string{"""", ""~"", ""null"", ""Null"", ""NULL"""
+"{math.Inf(+1), yaml_FLOAT_TAG, []string{"".inf"", "".Inf"", "".INF"""
+"{true, yaml_BOOL_TAG, []string{""true"", ""True"", ""TRUE"""
+"{""<<"", yaml_MERGE_TAG, []string{""<<"""
+"{item.v, item.tag"
+"{true, yaml_BOOL_TAG, []string{""y"", ""Y"", ""yes"", ""Yes"", ""YES"""
+"{','"
+"{'""'"
+{'
+{'0' + byte(emitter.best_indent)
+{']'
+{'|'
+{'>'
+{'{'
+{'\''
+{'!'
+{'['
+{'?'
+{'&'
+{'-'
+{':'
+"{', '"
+"{item: item.(Item), dist: dist"
+{done: true
+"{node: child, isItem: node.leaf, dist: dist"
+"{min: min, max: max"
+"{min: bbox.min, max: bbox.max, item: item"
+"{min: min, max: max"
+"{node, newNode"
+"{min: mins[i], max: maxs[i], item: items[i]"
+"{Key: ""user:4"", Val: ""Andrea"""
+"{Key: ""user:1"", Val: ""Jane"""
+"{Key: ""user:2"", Val: ""Andy"""
+"{Key: ""user:5"", Val: ""Janet"""
+"{Key: ""user:3"", Val: ""Steve"""
+"{Key: ""user:6"", Val: ""Andy"""
+{freelist: f
+{t: t
+{n: n
+"{n: n, i: len(n.children) + len(n.items) - 1"
+"{n: n.children[i/2], i: -1"
+"{freelist: make([]*node, 0, size)"
+"{""name"":{""first"":""Melinda"",""last"":""Prichard"""
+"{""name"":{""first"":""Janet"",""last"":""Prichard"""
+"{Expires:true, TTL:time.Second"
+"{""age"":30"
+"{""name"":{""first"":""Tom"",""last"":""Johnson"""
+"{""name"":{""first"":""Sam"",""last"":""Anderson"""
+"{""age"":50"
+"{""name"":{""first"":""Carol"",""last"":""Anderson"""
+"{""name"":{""first"":""Alan"",""last"":""Cooper"""
+{key: key
+{db
+{ _ = aof.Close() 
+{key: start
+"{key: parts[1], val: parts[2]"
+"{min, max"
+{key: pivot
+{key: stop
+{val: start
+{val: stop
+{key: parts[1]
+"{ex: true, exat: time.Now().Add(opts.TTL)"
+"{key: key, val: value"
+"{ex: true, exat: time.Now()"
+"{ return less(b, a) "
+"{Min: min, Max: max"
+{tx.db
+{ term 
+"{""\x1B[96m"", ""\x1B[0m"""
+"{ return PrettyOptions(json, nil) "
+"{src[i], src[i] == '{'"
+"{""\x1B[93m"", ""\x1B[0m"""
+"{ return ugly(json, json) "
+"{""\x1B[91m"", ""\x1B[0m"""
+"{Width: 80, Prefix: """", Indent: ""  "", SortKeys: false"
+"{false, json, pairs"
+"{""\x1B[94m"", ""\x1B[0m"""
+"{""\x1B[92m"", ""\x1B[0m"""
+"{', '"
+"{""first"":""Janet"",""last"":""Murphy"",""age"":44"
+"{""first"": ""Janet"", ""last"": ""Murphy"", ""age"": 44"
+"{""name"":{""first"":""Tom"",""last"":""Anderson"""
+"{""name"":  {""first"":""Tom"",""last"":""Anderson"""
+"{Min: min, Max: max"
+"{""name"":{""first"":""Janet"",""last"":""Prichard"""
+"{""age"": 68, ""first"": ""Roger"", ""last"": ""Craig"""
+"{""first"": ""Tom"", ""last"": ""Anderson"""
+"{""sortKeys"":true"
+"{""first"": ""Jane"", ""last"": ""Murphy"", ""age"": 47, ""nets"": [""ig"", ""tw""]"
+"{""name"": ""Alexa"", ""age"": 34"
+"{""first"": ""Dale"", ""last"": ""Murphy"", ""age"": 44, ""nets"": [""ig"", ""fb"", ""tw""]"
+"{""name"": ""May"", ""age"": 57"
+"{""age"": 47, ""first"": ""Jane"", ""last"": ""Murphy"""
+"{""age"": 44, ""first"": ""Dale"", ""last"": ""Murphy"""
+"{""first"": ""Roger"", ""last"": ""Craig"", ""age"": 68, ""nets"": [""fb"", ""tw""]"
+"{""name"": ""Gilbert"", ""age"": 61"
+"{""name"": ""Deloise"", ""age"": 44"
+"{""age"": 68, ""first"": ""Roger"", ""last"": ""Craig"""
+{...
+"{""first"": ""Tom"", ""last"": ""Anderson"""
+"{""sortKeys"":true"
+"{""first"": ""Jane"", ""last"": ""Murphy"", ""age"": 47, ""nets"": [""ig"", ""tw""]"
+"{""first"": ""Jane"", ""last"": ""Murphy"", ""age"": 47"
+"{""first"": ""Dale"", ""last"": ""Murphy"", ""age"": 44, ""nets"": [""ig"", ""fb"", ""tw""]"
+"{""first"": ""Roger"", ""last"": ""Craig"", ""age"": 68"
+"{""age"": 47, ""first"": ""Jane"", ""last"": ""Murphy"""
+"{""first"":""Tom"",""age"":37,""the_murphys"":[""Dale"",""Jane""]"
+"{name.first,age,""the_murphys"":friends.#(last=""Murphy"")#.first"
+"{""age"": 44, ""first"": ""Dale"", ""last"": ""Murphy"""
+"{""first"": ""Dale"", ""last"": ""Murphy"", ""age"": 44"
+"{""first"": ""Roger"", ""last"": ""Craig"", ""age"": 68, ""nets"": [""fb"", ""tw""]"
+"{""first"": ""Tom"", ""last"": ""Anderson"""
+"{Raw: val, Type: JSON"
+"{""field1"":path1,""field2"":path2"
+{t
+"{""first"": ""James"", ""last"": ""Murphy"""
+"{""first"": ""Roger"", ""last"": ""Craig"""
+{json: json
+"{', '"
+"{Data: strhi.Data, Len: strhi.Len"
+"{Data: rawhi.Data, Len: rawhi.Len"
+{sharedConn: c
+{ return HTTP(c) 
+"{fmt.Errorf(""Host not found: %v"", host)"
+{err
+{ return TLS(c) 
+{mux
+"{fmt.Errorf(""Failed to extract vhost name: %v"", err)"
+"{conn: conn, err: err"
+{sharedConn: c
+"{print $2 "" "" $3 "" "" $4"
+{Name: name
+"{Name: name, Op: Create"
+{watchfd
+"{name: name, isDir: isDir"
+{Name: name
+"{wd: uint32(wd), flags: flags"
+{Name: name
+"{}) string { return colorString(format, FgBlue, a...) "
+"{}) { colorPrint(format, FgHiMagenta, a...) "
+"{params: make([]Attribute, 0)"
+"{}) { colorPrint(format, FgWhite, a...) "
+"{}) { colorPrint(format, FgGreen, a...) "
+"{}) { colorPrint(format, FgHiCyan, a...) "
+"{}) string { return colorString(format, FgCyan, a...) "
+"{}) string { return colorString(format, FgHiBlue, a...) "
+"{}) string { return colorString(format, FgBlack, a...) "
+"{}) { colorPrint(format, FgHiWhite, a...) "
+"{}) { colorPrint(format, FgBlack, a...) "
+"{}) { colorPrint(format, FgHiYellow, a...) "
+"{}) string { return colorString(format, FgHiCyan, a...) "
+"{}) { colorPrint(format, FgCyan, a...) "
+"{}) string { return colorString(format, FgHiRed, a...) "
+"{}) { colorPrint(format, FgMagenta, a...) "
+"{}) { colorPrint(format, FgBlue, a...) "
+"{}) string { return colorString(format, FgYellow, a...) "
+"{}) { colorPrint(format, FgHiBlack, a...) "
+"{}) string { return colorString(format, FgRed, a...) "
+"{}) { colorPrint(format, FgYellow, a...) "
+"{}) { colorPrint(format, FgRed, a...) "
+"{}) string { return colorString(format, FgGreen, a...) "
+"{}) { colorPrint(format, FgHiRed, a...) "
+"{}) { colorPrint(format, FgHiGreen, a...) "
+"{}) { colorPrint(format, FgHiBlue, a...) "
+"{}) string { return colorString(format, FgWhite, a...) "
+{ return string(*s) 
+"{ return strconv.FormatFloat(float64(*f), 'g', -1, 32) "
+"{ return strconv.FormatUint(uint64(*i), 10) "
+"{ return strconv.FormatUint(uint64(*i), 10) "
+"{ return strconv.FormatFloat(float64(*f), 'g', -1, 64) "
+"{ return strconv.FormatInt(int64(*i), 10) "
+"{ return strconv.FormatInt(int64(*i), 10) "
+"{ return strconv.FormatInt(int64(*i), 10) "
+"{}, error)) (interface{"
+{ return f.args 
+{ return CommandLine.args 
+{ return len(f.args) 
+{ return NormalizedName(name) 
+{ return len(CommandLine.actual) 
+{ return len(f.actual) 
+{ return len(CommandLine.args) 
+"{""-"", ""_"""
+{ return strconv.Itoa(int(*i)) 
+{ return strconv.Itoa(int(*i)) 
+"{ return strconv.FormatUint(uint64(*i), 10) "
+"{ return strconv.FormatUint(uint64(*i), 10) "
+{ return net.IP(*i).String() 
+{ return net.IPMask(*i).String() 
+"{""v1"", ""v2"", ""v3"""
+{ return true 
+{ return strconv.FormatBool(bool(*b)) 
+"{ return strconv.FormatInt(int64(*i), 10) "
+"{ return strconv.FormatUint(uint64(*i), 10) "
+{ return (*time.Duration)(d).String() 
+{val
+"{&n.TRACE, &n.DEBUG, &n.INFO, &n.WARN, &n.ERROR, &n.CRITICAL, &n.FATAL"
+"{out: log.New(outHandle, """", 0), log: n.LOG"
+{}]interface{
+{}) map[string]interface{
+{}) interface{
+"{}, path []string) map[string]interface{"
+{...
+{ return false 
+{myFlag{
+"{ return ""my-flag-value"" "
+"{""tag"": ""tags"", ""category"": ""categories"""
+"{ return ""string"" "
+{}
+"{ return ""my-flag-name"" "
+{flag
+{ v.SetConfigName(in) 
+"{}, itgt map[interface{"
+{ return v.SafeWriteConfig() 
+{ v.SetEnvPrefix(in) 
+{ return v.ConfigFileUsed() 
+{ return v.ReadInConfig() 
+{ v.WatchConfig() 
+{ return v.BindFlagValues(flags) 
+"{}) { v.SetDefault(key, value) "
+{ return v.GetInt32(key) 
+{err
+{ return v.GetUint64(key) 
+"{ return v.BindPFlag(key, flag) "
+{ v.SetTypeByDefaultValue(enable) 
+{ return v.WatchRemoteConfig() 
+{ return v.GetInt(key) 
+{}{
+{ return v.BindPFlags(flags) 
+{ v.SetConfigPermissions(perm) 
+{ v.SetConfigFile(in) 
+{ return v.GetSizeInBytes(key) 
+{} { return v.GetStringMap(key) 
+"{ return v.BindFlagValue(key, flag) "
+{} { return v.AllSettings() 
+{ v.SetConfigType(in) 
+"{}) { v.Set(key, value) "
+{ return v.GetString(key) 
+{}) error { return v.MergeConfigMap(cfg) 
+{ return v.MergeInConfig() 
+"{ return v.writeConfig(filename, force) "
+{ return v.WriteConfig() 
+{ return v.SafeWriteConfigAs(filename) 
+{ v.Debug() 
+{ return v.GetStringMapString(key) 
+{ return v.ReadConfig(in) 
+{ return v.WriteConfigAs(filename) 
+{ return v.GetStringMapStringSlice(key) 
+"{}, path []string) interface{"
+{ v.OnConfigChange(run) 
+{ return v.GetInt64(key) 
+{ return v.AllKeys() 
+"{""json"", ""toml"", ""yaml"", ""yml"", ""properties"", ""props"", ""prop"", ""hcl"""
+"{""etcd"", ""consul"""
+{ v.SetFs(fs) 
+{}]interface{
+{ return v.BindEnv(input...) 
+{ return v.configFile 
+{ return v.GetBool(key) 
+{ return v.IsSet(key) 
+{flags
+{flag
+{ return v.GetStringSlice(key) 
+{ return v.MergeConfig(in) 
+{} { return v.Get(key) 
+{ return v.ReadRemoteConfig() 
+{ return v.GetUint32(key) 
+{ return v.GetTime(key) 
+{ v.AddConfigPath(in) 
+{ v.AutomaticEnv() 
+{ return v.GetDuration(key) 
+{ return v.GetFloat64(key) 
+{ v.SetEnvKeyReplacer(r) 
+{ return v.Sub(key) 
+"{ v.RegisterAlias(alias, key) "
+"{v.configName, fmt.Sprintf(""%s"", v.configPaths)"
+"{""a"", ""b"", ""c"""
+{ return v.InConfig(key) 
+{ return v.GetUint(key) 
+{ v.AllowEmptyEnv(allowEmptyEnv) 
+{build
+{pattern
+"{Op: ""chtimes"", Path: name, Err: ErrFileNotFound"
+{FileData: x
+"{Op: ""mkdir"", Path: name, Err: ErrFileExists"
+"{Op: ""open"", Path: name, Err: ErrFileNotFound"
+"{Op: ""remove"", Path: name, Err: err"
+"{Op: ""chmod"", Path: name, Err: ErrFileNotFound"
+"{ return ""MemMapFS"" "
+"{Op: ""rename"", Path: oldname, Err: ErrFileNotFound"
+"{Op: ""remove"", Path: name, Err: os.ErrNotExist"
+{ f.off += c 
+{ return f[i].Name() < f[j].Name() 
+"{ f[i], f[j] = f[j], f[i] "
+{ return len(f) 
+"{ return ""h HttpFs"" "
+"{basePath: s, fs: h"
+{source: source
+{Fs: fs
+"{Base: bfile, Layer: lfile"
+"{base: base, layer: layer, cacheTime: cacheTime"
+"{Base: bfi, Layer: lfi"
+"{Base: bfh, Layer: lfh"
+"{base: base, layer: layer"
+"{Base: bfile, Layer: lfile"
+"{Op: ""open"", Path: name, Err: syscall.ENOTDIR"
+"{source: source, re: re"
+"{f: f, re: r.re"
+"{source: source, path: path"
+"{Op: ""chmod"", Path: name, Err: err"
+"{sourcef, b.path"
+"{Op: ""openfile"", Path: name, Err: err"
+"{Op: ""open"", Path: name, Err: err"
+"{Op: ""chtimes"", Path: name, Err: err"
+"{Op: ""remove_all"", Path: name, Err: err"
+"{Op: ""stat"", Path: name, Err: err"
+"{Op: ""mkdir"", Path: name, Err: err"
+"{Op: ""remove"", Path: name, Err: err"
+"{Op: ""lstat"", Path: name, Err: err"
+"{File: sourcef, path: b.path"
+"{Op: ""rename"", Path: oldname, Err: err"
+"{Op: ""rename"", Path: newname, Err: err"
+"{Op: ""create"", Path: name, Err: err"
+{source: source
+"{ return ""OsFs"" "
+"{ s[i], s[j] = s[j], s[i] "
+{ return len(s) 
+{ return len(m) 
+"{ delete(m, f.name) "
+{ m[f.name] = f 
+{ return s[i].name < s[j].name 
+{00
+{files[i]
+"{Op: ""readdir"", Path: f.fileData.name, Err: errors.New(""not a dir"")"
+"{Op: ""truncate"", Path: f.fileData.name, Err: errors.New(""file handle is read only"")"
+{} { return nil 
+"{Op: ""write"", Path: f.fileData.name, Err: errors.New(""file handle is read only"")"
+"{name: name, memDir: &DirMap{"
+"{fileData: data, readOnly: true"
+{f.fileData
+"{name: name, mode: os.ModeTemporary, modtime: time.Now()"
+{f
+{fileData: data
+{}) (map[string]interface{
+{}) ([]interface{
+{}][]interface{
+{}) interface{
+{str
+{}]interface{
+{val
+{}{
+{ToString(val)
+{}) map[string]interface{
+{}) []interface{
+"{FS = "":.*?## """
+"{printf ""\033[36m%-30s\033[0m %s\n"", $$1, $$2"
+{var
+{ return http.HandlerFunc(methodNotAllowed) 
+{namedRoutes: make(map[string]*Route)
+"{routeConf: copyRouteConf(r.routeConf), namedRoutes: r.namedRoutes"
+{}) interface{
+{subdomain:[a-z]+
+{filter
+"{""alive"": true"
+{subdomain
+"{""counters"", true"
+{id
+"{""heap"", true"
+"{""adhadaeqm3k"", false"
+"{""queries"", true"
+{type
+"{""goroutines"", true"
+{category
+{surname
+{name
+{id:[0-9]+
+{name:pattern
+{key
+{subdomain:[a-z]+
+{filter
+{sort:(?:asc|desc|new)
+{tokenUsers: make(map[string]string)
+{subdomain
+{sort:(?:asc|desc)
+{category
+{name
+{id:[0-9]+
+{name:pattern
+{sort:(asc|desc)
+{key
+{subdomain:[a-z]+
+"{routeConf: copyRouteConf(r.routeConf), namedRoutes: r.namedRoutes"
+{subdomain
+{category
+{name
+{id:[0-9]+
+{name:pattern
+{key
+{Opaque: address
+"{username: username, password: password"
+{}) (interface{
+"{}{f1, f2"
+{}]struct{
+"{}, output interface{"
+{}{data
+{errors
+{}) (interface{
+"{fieldType, structVal.Field(i)"
+{}{
+{4
+{'\b'
+{' '
+"{n, err"
+"{t, data"
+{}{
+{Prompt: prompt
+"{ret, err"
+{o: o
+{st
+{&dumpSegmentCompleter{f
+"{[]rune(""\t"")"
+{}{
+"{0, 0"
+{Source: s
+{remain
+"{target: o.GetConfig().Stdout, r: o, t: o.t"
+"{target: o.GetConfig().Stderr, r: o, t: o.t"
+{f: f
+{termios: *termios
+{s
+{'\n'
+"{r.buf, r.idx"
+{}{
+{}{
+"{KeyType: config.Certificate.KeyType, Timeout: config.Certificate.Timeout"
+{}{
+{Location: location
+{Status: acme.StatusDeactivated
+"{Account: account, Location: location"
+{Status: acme.StatusDeactivated
+"{doer: doer, nonceManager: nonceManager, jws: jws, directory: dir, HTTPClient: httpClient"
+"{Type: ""dns"", Value: domain"
+{Identifiers: identifiers
+"{Algorithm: jose.HS256, Key: hmac"
+{Key: publicKey
+"{Key: j.privKey, KeyID: j.kid"
+{Key: j.privKey
+{ProblemDetails: errorDetails
+"{""mailto:"" + r.user.GetEmail()"
+{OnlyReturnExisting: true
+"{URI: account.Location, Body: account.Account"
+"{URI: accountTransit.Location, Body: account"
+"{Type: ""CERTIFICATE"", Bytes: derBytes"
+"{Type: ""EC PRIVATE KEY"", Bytes: keyBytes"
+"{Type: ""CERTIFICATE REQUEST"", Bytes: key.Raw"
+"{Type: ""CERTIFICATE"", Bytes: []byte(data.(DERCertificateBytes))"
+{domain
+{csr.Subject.CommonName
+{cert.Subject.CommonName
+"{0x30, 0x03, 0x02, 0x01, 0x05"
+{CommonName: domain
+"{Type: ""RSA PRIVATE KEY"", Bytes: x509.MarshalPKCS1PrivateKey(key)"
+"{1, 3, 6, 1, 5, 5, 7, 1, 24"
+"{Domain: authz.Identifier.Value, Error: err"
+{commonName
+"{iface: iface, port: port, matcher: &hostMatcher{"
+{Handler: mux
+"{net.JoinHostPort(ns, ""53"")"
+"{Net: ""udp"", Timeout: dnsTimeout"
+"{Net: ""tcp"", Timeout: dnsTimeout"
+"{1, 3, 6, 1, 5, 5, 7, 1, 31"
+{*cert
+"{iface: iface, port: port"
+{ACMETLS1Protocol
+{ return a[i].Type > a[j].Type 
+"{ a[i], a[j] = a[j], a[i] "
+{ return len(a) 
+"{authz: authz, solver: solvr"
+"{TLSClientConfig: tlsClientSkipVerify, Proxy: http.ProxyFromEnvironment"
+"{Req: r, Session: atomic.AddInt64(&proxy.sess, 1), proxy: proxy"
+"{Req: req, Session: atomic.AddInt64(&proxy.sess, 1), proxy: proxy, UserData: ctx.UserData"
+"{Action: ConnectReject, TLSConfig: TLSConfigFromCA(&GoproxyCa)"
+"{Action: ConnectMitm, TLSConfig: TLSConfigFromCA(&GoproxyCa)"
+{hostname
+{Opaque: addr
+"{Action: ConnectHTTPMitm, TLSConfig: TLSConfigFromCA(&GoproxyCa)"
+"{Action: ConnectAccept, TLSConfig: TLSConfigFromCA(&GoproxyCa)"
+"{Req: r, Session: atomic.AddInt64(&proxy.sess, 1), proxy: proxy, certStore: proxy.CertStore"
+"{Action: ConnectHijack, Hijack: f"
+"{proxy, make([]ReqCondition, 0), conds"
+"{proxy, conds"
+"{derBytes, ca.Certificate[0]"
+{x509.ExtKeyUsageServerAuth
+"{""GoProxy untrusted MITM proxy Inc"""

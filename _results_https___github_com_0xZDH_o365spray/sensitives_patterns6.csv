@@ -1,0 +1,14 @@
+                for valid_creds in spray.VALID_CREDENTIALS:
+                self.VALID_CREDENTIALS.append(tested)
+        # Account for invalid credentials error code
+    VALID_CREDENTIALS = []  # Valid credentials storage
+  --paired PAIRED       File containing list of credentials in username:password
+"            # If a valid security token is returned, the credentials were"
+"            msg += f""\n[ * ] All sprayed credentials can be found at: '{self.tested_writer.output_file}'\n"""
+"            msg += f""\n[ * ] Writing valid credentials to: '{self.valid_writer.output_file}'""  # ignore"
+"        help=""File containing list of credentials in username:password format."","
+"        logging.info(""Valid Credentials: %d"" % (len(spray.VALID_CREDENTIALS)))"
+"    SPRAY_FILE = f""spray_valid_credentials.{F_TIME}.txt"""
+"    SPRAY_TESTED = f""spray_tested_credentials.{F_TIME}.txt"""
+"    credential_args = parser.add_argument_group(title=""Credentials"")"
+Credentials:

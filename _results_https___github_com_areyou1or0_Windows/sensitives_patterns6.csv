@@ -1,0 +1,6 @@
+"# In a trusted domain, you have target/global admin credentials."
+"# To/From a computer not part of a trusted domain, you have target/global admin credentials. "
+"# after credentials are found, use Psexec module"
+# Metasploit module to discover credentials via unattended installations
+# psexec using found credentials
+post/windows/gather/credentials/gpp

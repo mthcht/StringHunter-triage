@@ -1,0 +1,24 @@
+"// Get the input data, ie the raw content of the input file"
+// 1008  = (2^6 - 1) << 4
+// 15    = 2^4 - 1
+// 16515072 = (2^6 - 1) << 18
+// 252 = (2^6 - 1) << 2
+// 258048   = (2^6 - 1) << 12
+// 3   = 2^2 - 1
+// 4032     = (2^6 - 1) << 6
+// 63       = 2^6 - 1
+// 64512 = (2^6 - 1) << 10
+// Base64 encode an ArrayBuffer
+// Check the output file name is set
+// Combine the three bytes into a single integer
+// Convert the raw binary segments to the appropriate ASCII encoding
+// Deal with the remaining bytes and padding
+// Generating key
+// Helper functions
+// Main loop deals with bytes in chunks of 3
+// OUTPUT TEMPLATE
+// Process if crypto functions are available
+// Set the 2 least significant bits to zero
+// Set the 4 least significant bits to zero
+// Turns an ArrayBuffer into an hex string representation
+// Use bitmasks to extract 6-bit segments from the triplet

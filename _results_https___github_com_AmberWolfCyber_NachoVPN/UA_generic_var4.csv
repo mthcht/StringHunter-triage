@@ -1,0 +1,3 @@
+"user_agent = handler.headers.get('User-Agent', '')"
+USER_AGENT = 0xD70
+user_agent = request.headers.get('User-Agent')

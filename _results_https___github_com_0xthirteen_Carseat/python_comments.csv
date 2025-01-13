@@ -1,0 +1,73 @@
+                    # TODO: Test this to make sure it actually gets the GUID"
+                #             }
+                # Currently not correct
+                # Don't think there is a way to get user_type info unless using USER_INFO_3 struct"
+                # user_type = user_type_map.get(priv_level, ""Unknown"")"
+                # user_type_map = {"
+                #print()
+                #return VersionInfo(file_version, product_version)"
+                #uac_obj = user_info['UserAccountControl']
+            # Currently not correct
+        #     return
+        # BUILTIN groups
+        # Impacket bug needs to be fixed first
+        # Impacket has a bug getting MSFT_ScheduledTask Settings property so we have to get everything except that
+        # Regular expression to match ACE entries in SDDL"
+        # System and Well-Known SIDs"
+        # https://github.com/fortra/impacket/issues/1845
+        # if self.tid is None:
+        # the Settings property has a property named MaintenanceSetting which sometimes does not exist and that throws an error in the WMI library
+        #Needs to be updated for the settings"
+        #Prints a little bit differently than seatbelt, move to format_results"
+        #hashing_alg = SysmonHashAlgorithm(int(reg_hash_alg)).name
+        #lmstr = None
+        #settings = data['Settings']
+        #wmi_data = wmi_conn.wmi_get('SELECT * FROM MSFT_ScheduledTask')
+    # TODO: Maybe implement LSA enumeration? More data?
+    # This may be problematic"
+    #TODO: Fix getting comments"
+    #TODO: Fix getting some extra info"
+    #TODO: Look into collecting other data from non remote if possible
+    #WTSOpenServerA (wtsapi32.h)
+    #args = ''"
+    #client settings
+    #don't know if i can get this with samr
+    #if sysmon isnt installed this will likely throw an exception
+    #need LOCALGROUP_INFO_1 structure
+    #need USER_INFO_3 structure
+    #not a great way to catch the exception currently
+    #server settings"
+"
+"        
+"                
+"                            
+"                #                 0: ""Guest"","
+"                #                 1: ""User"","
+"                #                 2: ""Administrator"""
+"                #This needs to be revisited - do obj.SystemProperties[""__CLASS""].Value}"
+"                #raise Exception(f""File not found: {file_path}"")"
+"                #uac_value = getattr(uac_obj, 'fields', {}).get('Data', uac_obj)"
+"            # re.compile(r""(New-Object.*System.Management.Automation.PSCredential.*)"", re.IGNORECASE | re.MULTILINE),"
+"            #This needs to be revisited - do obj.SystemProperties[""__SUPERCLASS""].Value}"
+"            #VersionInfo = namedtuple('VersionInfo', ['FileVersion', 'ProductVersion'])"
+"            #return datetime.utcfromtimestamp(struct.unpack('<Q', value.data)[0] / 1e7 - 11644473600).isoformat()"
+"        #     print(""No share selected"")"
+"        #output = {key: parse_value(value['value']) for key, value in ordered_dict.items()}"
+"# This file contains code from Tivan, available at https://github.com/irtimmer/tivan."
+"# This program is distributed in the hope that it will be useful,"
+"# along with this program; if not, see <https://www.gnu.org/licenses/>."
+"# of the License, or (at your option) any later version."
+"#from impacket.structure import Structure, hexdump"
+#
+# Copyright (C) 2024 Steven F
+# Copyright (C) Iwan Timmer.
+# GNU General Public License for more details.
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# This file is part of Carseat.
+# This program is free software; you can redistribute it and/or
+# You should have received a copy of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# modify it under the terms of the GNU General Public License
+#from impacket.examples.utils import parse_target
+#https://github.com/irtimmer/tivan/blob/master/tivan/parser/binxml.py"

@@ -1,0 +1,5 @@
+"logging.debug(""End of password spraying user list reached."""
+"logging.debug(f""Sleeping for {throttle} seconds before sending request."""
+"logging.debug(f""o365spray executed in {elapsed:.2f} seconds."""
+"logging.debug(f""{email} -> Different Identity Provider"""
+logging.debug(e

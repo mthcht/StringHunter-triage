@@ -1,0 +1,258 @@
+
+                        # update our counter
+                    #       Autodiscover is currently showing invalid lockouts
+                    # Catch exit handler from within spray class"
+                    # Check if we reached the last password chunk
+                    # Flush the open files after each rotation"
+                    # If the email/user exists in the paired dict still, attempt"
+                    # Note: This currently only applies to the oauth2 spraying module as
+                    # Remove basic auth blocked user from being sprayed again
+                    # Stop if there are no more users to spray"
+                    # Stop if we hit our locked account limit"
+                    # to remove it from further iterations
+                #    of full list of agents - include number of random agents
+                #    the user specified validation only
+                # 1) Don't show `rate` if both enum and spray are disabled or
+                # 2) Don't show `enum_module` if enum is disabled
+                # 3) Don't show the following if spray is disabled:
+                # Add data meanings"
+                # Catch exit handler from within spray class"
+                # Check if the requests are being throttled and shutdown"
+                # Check if we have reached the end of our paired data set"
+                # Disable enumeration as all other modules currently return False
+                # Flush the open files after each rotation"
+                # Handle Basic Auth blocking
+                # Handle Microsoft AADSTS errors
+                # Handle Microsoft AADSTS errors"
+                # Handle conditions to not show certain data"
+                # Handle conditions to show custom values"
+                # Handle tenants that are not capable of this type of auth"
+                # If a token was returned, attempt to write the token"
+                # It appears that both 0 and 6 response codes indicate a valid user"
+                # Loop over the users in our data set and create a new userlist"
+                # Loop through each password individually so it's easier to keep track and"
+                # Only executed if the inner loop DID break"
+                # Only executed if the inner loop did NOT break
+                # Otherwise, valid user"
+                # Positives for ADFS
+                # Remove valid user from being sprayed again
+                # Since we are maintaining the list of users to test here and not"
+                # Stop if there are no more users to spray"
+                # Stop if we hit our locked account limit"
+                # This enumeration is only valid if the user has DesktopSSO
+                # This will not be added to our list of valid users as we want to avoid"
+                # Update headers"
+                # User not found error is an invalid user
+                # account for that.
+                # and passlist each time
+                # avoid duplicate scans once a removal condition is hit
+                # enabled
+                # hitting personal accounts
+                # https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops
+                # https://github.com/Gerenios/AADInternals/blob/master/KillChain_utils.ps1#L93
+                # https://stackoverflow.com/a/654002"
+                # https://warroom.rsmus.com/enumerating-emails-via-office-com/
+                # https://www.redsiege.com/blog/2020/03/user-enumeration-part-2-microsoft-office-365/
+                # if so
+                # to disk for future use
+                # whereas 5 indicates the use of a different identity provider -- let's
+            #      tenant.com
+            # Add custom User-Agent to appear from outlook
+            # Also account for expired passwords which only trigger
+            # Assume the domain/subdomain is the tenant"
+            # Assume the password is not an object like a dict or instance
+            # Attempt to parse an AADSTS error"
+            # Build email if not already built
+            # Build email if not already built"
+            # Build request data"
+            # Collect the pieces to build the One Drive URL"
+            # Default to valid if 200 or 302"
+            # Default to valid if 200"
+            # Fix the ADFS URL for each user since the AuthUrl was pulled during"
+            # Grab default headers"
+            # Grab external headers from config.py
+            # Grab external headers from config.py and add special header
+            # Grab prebuilt office headers"
+            # Handle Autodiscover errors that are returned by the server"
+            # Handle Federated realms differently than Managed
+            # Handle FireProx API URL"
+            # Handle accounts that appear valid, but could have another factor"
+            # Handle lockout tracking
+            # If a valid security token is returned, the credentials were"
+            # If the 'Vary' header exists, assume valid"
+            # It appears that valid browser User-Agents will return a 302 redirect"
+            # Loop over our paired data set until we have reached the end of"
+            # Note: 403 responses appear to indicate valid authentication again..."
+            # Otherwise, invalid"
+            # Remove email format from user if present
+            # Remove errored user from being sprayed again"
+            # Replace any `.` with `_` for use in the URL"
+            # Replace the `.` with `_` in the domain"
+            # Scope, resource, client_id must be valid for authentication"
+            # Since 404 responses are invalid and everything else is considered"
+            # TODO: Look into how to properly implement FireProx proxy URL here..."
+            # These error codes occur via oAuth2 only after a valid"
+            # Track the current password index"
+            # Unknown response -> invalid user"
+            # Update content type
+            # Update content type for SOAP XML"
+            # Use a valid scope, resource, and client_id"
+            # We will be directly spraying the federation servers via the
+            # Write the tested user"
+            # after valid authentication
+            # and keep the TLD
+            # and that a single string/int/value was passed
+            # assume that the user list and password list are the same
+            # authentication has been processed
+            # blocking full authentication
+            # for ActiveSync
+            # i.e. tenant.onmicrosoft.com
+            # instead of 401/403 on valid accounts
+            # length
+            # provided ADFS AuthURL
+            # the longest password list
+            # to complete
+            # valid
+            # validation using a bogus user
+        #       authentication will always fail
+        #       the target has enabled password synchronization - otherwise
+        # Account for an empty dict_
+        # Account for invalid credentials error code"
+        # Add timestamp for start of spray"
+        # Add version"
+        # Close the open file handles"
+        # Global locked account counter"
+        # Gracefully shutdown if it triggered internally"
+        # I don't think we need to worry about these headers"
+        # If proxy server provided, build HTTP proxies object for"
+        # If the user has specified to perform password spraying - prompt"
+        # Initialize writers"
+        # Internal exit handler"
+        # Note: The oAuth2 module will work for federated realms ONLY when
+        # Parse the XML response and find the NameSpaceType value in the"
+        # Perform domain validation
+        # Prompt the user if they would like to switch enumerations methods"
+        # Re-initialize the class userlist each run if a user provides
+        # Retrieve random user agent and overwrite"
+        # Send request"
+        # Shutdown ThreadPoolExecutor and do not wait for current work
+        # Skip domain validation and enforce ADFS enumeration/spraying
+        # Sleep before spraying when enumeration that uses authentication
+        # Sleep/Jitter to throttle subsequent request attempts"
+        # Start range at 1.0.0.0
+        # Support both username(s) and a username file being provided
+        # Unregister _python_exit while using asyncio
+        # Update the ADFS AuthURL parameter as the URL provided by Microsoft's"
+        # XML response
+        # `getuserrealm`
+        # a new list - otherwise use the current class list
+        # darwin/linux
+        # https://gist.github.com/yeraydiazdiaz/b8c059c6dcfaf3255c65806de39175a7
+        # https://stackoverflow.com/a/48351410"
+        # if not using a valid ADFS option
+        # paired spraying runs
+        # requests lib
+        # targeting Microsoft API's
+        # the existing value
+        # the user to ask if they would like to target ADFS or continue
+        # was used
+        # when the user provides an ADFS AuthURL
+        # windows
+    # ANSI escape code to clear line"
+    # Add signal handler to handle ctrl-c interrupts"
+    # Attempt to import the defined module"
+    # Create a type handler for asyncio loops based on operating system"
+    # Create enum directory
+    # Create spray directory
+    # Ensure a domain has been provided"
+    # General scan specifications"
+    # HTTP Header Configuration"
+    # HTTP configurations"
+    # Handle sleep randomization"
+    # Handle username:password files"
+    # If an output directory provided, get or create it"
+    # If no flags provided, print the tool help and exit"
+    # If no output provided, default to the current working directory"
+    # If not getting the tool version and flags have been provided, ensure"
+    # If running password spraying, make sure we have both username(s) and"
+    # If running user enumeration, make sure we have a username or username file"
+    # If the domain is invalid, notify the user, disable enum and spray"
+    # If we are in a Federated realm, ask the user if they want to update"
+    # If we are only validating, disable enum and spray and return the"
+    # Initialize logging level and format"
+    # List of substrings that can be found when BasicAuth is blocked"
+    # List of valid AADSTS codes to check against"
+    # Log and valid output files"
+    # Misc configurations"
+    # Misc. files"
+    # Notify the user of the results"
+    # Parse command line arguments"
+    # Password spraying lockout policy"
+    # Perform user enumeration"
+    # Print banner with config settings"
+    # Print the tool version and exit"
+    # Support both password(s) and a password file being provided"
+    # Support both username(s) and a username file being provided"
+    # Tested files"
+    # Type of action(s) to run"
+    # Update log level names with colorized output"
+    # Use validated users if enumeration was run"
+    # Username(s)/Password(s) for enum/spray"
+    # Valid requests.request methods to work with"
+    # Valid scopes, resources, and client IDs for OAuth authentication and enumeration"
+    # Validate user agent file and load data set"
+    # Validate we have a scope of users to spray"
+    # Validate/Spray/Enum action specifications"
+    # all required flags and valid flag combinations are present
+    # and return the args namespace
+    # args namespace
+    # fmt: off
+    # fmt: on
+    # https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-aadsts-error-codes"
+    # https://github.com/secureworks/TokenMan#foci-application-client-id-map"
+    # password(s)
+    # their enum/spray options
+"
+"                        # If we found new creds and updated our spraying dict, let's"
+"                #    spray_module, count, lockout, safe"
+"                # 1) If a user agents file is provided, show 'random' instead"
+"                # Otherwise, valid user"
+"                # in the spray class, we need to handle found valid creds here"
+"            #       Based on testing, 403 indicates valid and 401 indicates invalid"
+"            # 'unknown', we will just handle them all as 'invalid'"
+"            # Check if we hit our locked account limit, and stop"
+"            # Since we assume this is our --paired handling, we will also"
+"        # Set this to the paired usernames, this will be reset when"
+"        # headers[""X-Forwarded-Port""] = 443"
+"        # headers[""X-Forwarded-Proto""] = ""https"""
+"""""""ADFS Sprayer module class"""""""
+"""""""ActiveSync Sprayer module class"""""""
+"""""""Autodiscover Enumeration module class"""""""
+"""""""Autodiscover Sprayer module class"""""""
+"""""""Autologon Enumeration module class"""""""
+"""""""Autologon Sprayer module class"""""""
+"""""""Close the file handle"""""""
+"""""""Color codes for colorized terminal output"""""""
+"""""""Custom class to write data to a file accross threads"""""""
+"""""""Flush the file buffer"""""""
+"""""""GetUserRealm Validation module class"""""""
+"""""""Global default values"""""""
+"""""""Global output file name defaults"""""""
+"""""""Helper functions"""""""
+"""""""Initialize the parent base class"""""""
+"""""""Main entry point for o365spray"""""""
+"""""""Module Base"""""""
+"""""""Office Enumeration module class"""""""
+"""""""OneDrive Enumeration module class"""""""
+"""""""Parent implementation of module child method"""""""
+"""""""Perform user enumeration against Microsoft O365."""""""
+"""""""RST Sprayer module class"""""""
+"""""""Reporting Sprayer module class"""""""
+"""""""oAuth2 Enumeration module class"""""""
+"""""""oAuth2 Sprayer module class"""""""
+# -*- coding: utf-8 -*-
+# Get the current time in YYMMDDHHMM format to append"
+# Init colorama to switch between Windows and Linux"
+# fmt: off
+# to file names to keep each run distinct
+#!/usr/bin/env python3

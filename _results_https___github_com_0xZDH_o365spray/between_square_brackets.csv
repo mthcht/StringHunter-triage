@@ -1,0 +1,146 @@
+"[""Accept"""
+"[""Content-Type"""
+"[""DISABLED"",         ""User disabled"""
+"[""DesktopSsoEnabled"""
+"[""EXPIRED_PASS"",     ""Password expired"""
+"[""EstsProperties"""
+"[""INVALID_APPID"",    ""Invalid application client ID"""
+"[""INVALID_CREDS"",    ""Invalid username or password"""
+"[""INVALID_DOMAIN"",   ""Tenant for account doesn't exist"""
+"[""INVALID_RESOURCE"", ""Invalid resource name"""
+"[""IfExistsResult"""
+"[""LOCKED"",           ""Account locked"""
+"[""MISSING_TENANT"",   ""Tenant for account doesn't exist"""
+"[""MS-ASProtocolVersion"""
+"[""SEC_CHAL"",         ""Response indicates conditional access (MFA: DUO or other)"""
+"[""ThrottleStatus"""
+"[""USER_NOT_FOUND"",   ""User does not exist"""
+"[""User-Agent"""
+"[""VALID_CAP"",        ""Access blocked via Conditional Access Policies"""
+"[""VALID_MFA"",        ""Response indicates MFA (Microsoft) must be onboarded"""
+"[""VALID_MFA"",        ""Response indicates MFA (Microsoft)"""
+"[""X-AutoDiscovery-Error"""
+"[""X-Forwarded-Port"""
+"[""X-Forwarded-Proto"""
+"[""X-My-X-Amzn-Trace-Id"""
+"[""X-My-X-Forwarded-For"""
+"[""activesync"", ""oauth2"""
+"[""error_description"""
+"[""get"", ""options"", ""head"", ""post"", ""put"", ""patch"", ""delete"""
+"[""x-amzn-apigateway-api-id"""
+"[""y"", ""n"""
+"[-1, 0-120"
+"[0, 6"
+"[200, 403"
+"[302, 401, 403"
+"[MFA, Locked, etc."
+"[], ["
+"[bool, str"
+"[f""AADSTS{code}"" for code in body[""error_codes"""
+"[f""{k}:{v}"" for k, v in creds.items()"
+"[int, float"
+"[line.strip() for line in f if line.strip() not in [None, """""
+"[str, Dict[Any, Any"
+"[str, Dict[str, str"
+"[str, List[str"
+"[str, str"
+"[valid_email, valid_user"
+[ ! 
+[ * 
+[ ? 
+[%(asctime)s
+[%s
+[*
+[-1
+[0
+[0-100
+[1
+[@Macmod
+[@parispjones
+[AADInternals
+[ADFSpray
+[Acknowledgments
+[Any
+[Bugs
+[Daniel Chronlund
+[Daniel Chronlund's blog post
+[Enumeration
+[FireProx
+[FireProx URLs
+[Gist
+[Go365
+[Invoke-AzureAdPasswordSprayAttack
+[List[str
+[MSOLSpray
+[Modules
+[Mr-Un1k0d3r
+[Nestori Syynimaa
+[Omnispray
+[Optiv
+[Previous Versions
+[Raikia
+[Ruler
+[Spraying
+[SprayingToolkit
+[UhOh365
+[Usage
+[User Agent Randomization
+[Validation
+[Y/n
+[adfs-spray
+[arg
+[blog post
+[byt3bl33d3r
+[ca
+[cod
+[code
+[count - 1
+[dafthack
+[de
+[en
+[en-GB
+[en_US
+[et
+[fi
+[flags
+[fr
+[future
+[gremwell
+[grimhacker
+[i
+[i : i + n
+[it
+[ja
+[k
+[max_
+[metadata
+[nl
+[nyxgeek
+[o365enum
+[oc
+[office.com
+[office365userenum
+[onedrive_user_enum
+[options
+[options.entry_points
+[options.packages.find
+[password
+[passwords
+[pl
+[resc/user-agents.txt
+[ro
+[ru
+[section below
+[sensepost
+[str
+[the ADFSpray tool
+[username
+[xFreed0m
+[zh-cn
+[{text_colors.FAIL}BLOCKED{text_colors.ENDC}
+[{text_colors.FAIL}FAILED{text_colors.ENDC}
+[{text_colors.FAIL}INVALID{text_colors.ENDC}
+[{text_colors.FAIL}{err}{text_colors.ENDC}
+[{text_colors.OKGREEN}VALID{text_colors.ENDC}
+[{text_colors.WARNING}DIFFIDP{text_colors.ENDC}
+[{text_colors.WARNING}WARNING{text_colors.ENDC}

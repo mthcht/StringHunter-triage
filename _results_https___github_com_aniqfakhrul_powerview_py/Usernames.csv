@@ -1,0 +1,71 @@
+"UserName"": None,"
+"UserName"": user[2],"
+"UserName""] = username"
+"UserName', action='store', default=None, const=None, dest='username')"
+"UserName': user_san,"
+"Username"": userName,"
+"userName = Principal(self.__user, type=constants.PrincipalNameType.NT_PRINCIPAL.value)"
+"userName = Principal(self.__username, type=constants.PrincipalNameType.NT_PRINCIPAL.value)"
+"userName = Principal(user, type=constants.PrincipalNameType.NT_PRINCIPAL.value)"
+"userName = Principal(username, type=constants.PrincipalNameType.NT_PRINCIPAL.value)"
+"userName = userDn.split(',')[0][3:]"
+"userName[:-1] == ""$"":"
+"username = ""ANONYMOUS"""
+"username = self.username,"
+"username = username.split(""\\"")"
+"username"" class=""block mb-2 text-sm font-medium text-gray-900 dark:text-white"">Username</label>"
+"username"" id=""new-username"" class=""w-full px-3 py-2 bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-600 rounded-md text-sm text-neutral-900 dark:text-white placeholder-neutral-400"" placeholder=""Enter username"" required />"
+"username': self.powerview.conn.get_username(),"
+"username'][:-1], i['wkui1_oth_domains'][:-1], i['wkui1_logon_server'][:-1]))"
+"username, decodedTGS['ticket']['realm'], spn.replace(':', '~'),"
+"username, password = utils.parse_credentials(args.account)"
+"username, password, address = parse_target(args.target)"
+"username, password, domain, lmhash, nthash, aesKey='', TGT = None, TGS = None, targetName='',"
+"username, password, domain, lmhash, nthash, self.auth_aes_key, kdcHost=self.kdcHost, useCache=self.no_pass)"
+"username, password, lmhash, nthash, auth_method=ldap3.SIMPLE)"
+"username, password, lmhash, nthash, ldap_address = parse_identity(args)"
+"username, password, lmhash, nthash, seal_and_sign=True, auth_method=self.auth_method)"
+"username, password, lmhash, nthash, tls_channel_binding=True, auth_method=self.auth_method)"
+"username, password, user_domain, target_domain, cmdLineOptions, identity=None, options=None, encType=None, TGT=None):"
+"username, properties=[""adminCount"",""memberOf""])[0]"
+"username, pv_args.userpass, args=pv_args)"
+"username, root_dn, args=None):"
+"username, self.password, self.domain, lmhash=self.lmhash, nthash=self.nthash, aesKey=self.auth_aes_key, TGT=self.TGT, TGS=self.TGS)"
+"username, self.password, self.domain, self.lmhash, self.nthash, TGT=self.TGT)"
+"username, self.password, self.domain, target_domain, self.args, identity=args.identity, options=kdc_options, encType=enctype, TGT=self.conn.get_TGT())"
+"username, self.password, self.lmhash, self.nthash, auth_method=self.auth_method)"
+"username, spn, fd=None):"
+"username, userpass, basedn=None, args=None):"
+"username: %s and password: %s result: OK' % (newComputer, newPassword))"
+"username: %s and password: %s result: OK' % (newUser, newPassword))"
+"username=None, password=None, domain=None, cmdLineOptions=None, computer_name=None, computer_pass=None, base_dn=None, ldap_session=None):"
+"username=None, password=None, lmhash=None, nthash=None, seal_and_sign=False, tls_channel_binding=False, auth_method=ldap3.NTLM):"
+"username=self.username, password=self.password,"
+"username=self.username,"
+"username} has adminCount attribute set to 1. Might be admin somewhere somehow :)"")"
+Username retrieved from CCache: %s' % self.username)
+Username retrieved from CCache: %s' % user)
+Username retrieved from CCache: %s' % username)
+userName = session['sesi10_username'][:-1]
+userName'] = user_info['UserName']
+username != '' and args.hashes is None and args.no_pass is False and args.auth_aes_key is None:
+username != user_sid:
+username = args.username
+username = args.username if args.username else self.conn.get_username()
+username = ccache.principal.components[0]['data'].decode('utf-8')
+username = creds['client'].prettyPrint().split(b'@')[0].decode('utf-8')
+username = document.getElementById('new-username')?.value;
+username = entry['sAMAccountName'].value
+username = sanitize_component(username.lower())
+username = self.convertfrom_sid(user_sid)
+username = username
+username = who_am_i[-1]
+username == '' and creds is not None:
+username == '' and len(ccache.principal.components) > 0:
+username'][-2] == '$':
+usernameElement = profileMenu.querySelector('#username-display');
+usernameElement.textContent = '';
+usernameElement.textContent = `${data.username}@${data.domain}`;
+usernameInput = document.getElementById('new-username');
+username[-1] == '$':
+username[:password]@]<targetName or address>')

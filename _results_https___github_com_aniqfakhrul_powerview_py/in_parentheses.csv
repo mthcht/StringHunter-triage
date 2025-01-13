@@ -1,0 +1,4591 @@
+"( ""HTTPD(%s"
+"( (vals[1], vals[0]"
+"( decodedTGT, 'crealm', 'cname'"
+"( self, error = 0, packet=0"
+"( self, message, asRep, cipher, key, cipherText"
+"( struct.pack('B', ASN1_OID"
+"(""    %-26s: %s"" % (attribute, parsed_ace[attribute]"
+"(""  %-28s"" % ""ACE[%d] info"" % i"
+"("" "","""""
+"("" * %s"" % domain['Name']"
+"("""""
+"(""%m/%d/%Y %H:%M:%S %p"""
+"(""%s exists ""%(pv_args.outfile"
+"(""%s key not found"" % (sort_option"
+"(""%s key not found"" % str(e"
+"(""%s"" % (ldap_session.result['message']"
+"(""%s"" % identity"
+"(""'"""
+"(""'"","""""
+"(""*"","""""
+"("", "".join(self.parsePerms(ace['Ace']['Mask']['Mask']"
+"("","""
+"(""--dc-ip"", action='store', metavar='IP address', help='IP Address of the domain controller or KDC (Key Distribution Center"
+"(""--pfx"", dest=""pfx"", action=""store"", help='Supply .pfx formatted certificate. Use --cert and --key if no pfx'"
+"(""--simple-auth"", dest=""simple_auth"", action=""store_true"", help='Authenticate with SIMPLE authentication'"
+"(""--use-channel-binding"", action='store_true', default=False, help='[Optional] Use channel binding if channel binding is required on LDAP server'"
+"(""--use-sign-and-seal"", action='store_true', default=False, help='[Optional] Use sign and seal if LDAP signing is required on ldap server'"
+"(""-DisplayName flag is required"""
+"(""-GUID and -TargetIdentity flags are required"""
+"(""-Identity flag is required"""
+"(""-Identity is required"""
+"(""-ObjectSID flag is required"""
+"(""-RecordName and -RecordAddress flags are required"""
+"(""-RecordName flag is required"""
+"(""-ResolveIP can only be used with -Identity"""
+"(""-Value flag is required"""
+"(""-k"", ""--kerberos"", dest=""use_kerberos"", action=""store_true"", help='Use Kerberos authentication. Grabs credentials from .ccache file (KRB5CCNAME"
+"(""."""
+"("":"""
+"(""<q"", filetime"
+"(""="""
+"(""@"""
+"(""A TGT can now be obtained with https://github.com/dirkjanm/PKINITtools"""
+"(""ACE Type (%s"
+"(""ANONYMOUS access not allowed for %s"" % (self.domain"
+"(""Account %s already exists! If you just want to set a password, use -no-add."" % self.__computerName"
+"(""Account %s not found in %s!"" % (self.__computerName, self.__baseDN"
+"(""Account %s not found in domain %s!"" % (self.__computerName, selectedDomain"
+"(""Adding %s (%s"
+"(""Attempting to del a computer with the name: %s"" % domainComputer"
+"(""Attempting to dump ADCS certificate templates enrollment rights, for templates allowing for client authentication and not requiring manager approval"""
+"(""Attempting to dump ADCS enrollment services info"""
+"(""Attempting to dump LAPS passwords"""
+"(""Attempting to dump gMSA passwords"""
+"(""Authentication: {}, User: {}"".format(auth_method, user"
+"(""Available domain(s"
+"(""Bind SUCCESS!"""
+"(""Bind not successful - %s [%s]"" % (ldap_session.result['description'], error_status"
+"(""C$"""
+"(""Can't reach %s"" % (self.target"
+"(""Can't reach %s"" % (target"
+"(""Cannot start kerberos signing/sealing when using TLS/SSL"""
+"(""Cannot use 'clear', 'set', and 'append' options simultaneously. Choose one operation."""
+"(""Certificate generated"""
+"(""Certificate requires password. Supply password"""
+"(""Channel binding is enforced!"""
+"(""Computer container is {}"".format(computerscontainer"
+"(""Computer deleted successfully"""
+"(""Connecting to %s:%d"" % (self.target, port"
+"(""Connecting to %s:80"" % target"
+"(""Connection error (%s:%s"
+"(""Consider using -domain-netbios argument to specify which one you meant."""
+"(""Couldn't resolve %s"" % args.ldap_address"
+"(""Credentials supplied with relay option. Ignoring relay flag..."""
+"(""CurrentPassword"", "":"""
+"(""CurrentPasswordOffset"", ""<H"""
+"(""DEBUG"""
+"(""Default timeout is set to 15. Expect a delay"""
+"(""Default timeout is set to 5"""
+"(""Delegated object not found. Ignoring..."""
+"(""Domain Admins"""
+"(""Domain resolution timed out"""
+"(""Done dumping ADCS info"""
+"(""Error during schannel authentication with error: %s"", str(e"
+"(""Error filtering ACE, probably because of ACE type unsupported for parsing yet (%s"
+"(""Error resolving address with unknown error"""
+"(""Exception:"", exc_info=True"
+"(""Exiting..."""
+"(""Failed sort to with unknown error"""
+"(""Failed to bind with error: %s"" % (str(e"
+"(""Failed to bind"""
+"(""Failed to check user admin status"""
+"(""Failed to connect to %s"" % (ip_address"
+"(""Failed to delete computer. Check logs"""
+"(""Failed to delete user. Check logs"""
+"(""Failed to sort. Probably value is not a string. Skipping..."""
+"(""Falling back to SIMPLE authentication"""
+"(""Filtering results for SID (%s"
+"(""Found principal SID to write in ACE(s"
+"(""Generating KeyCredential"""
+"(""Generating certificate"""
+"(""Got error: %s"" % e"
+"(""HTTPD(%s"
+"(""Host {} not found.."".format(domainComputer"
+"(""Invalid command"""
+"(""Invalid server address. Must be either an FQDN or IP address."""
+"(""Keberos authentication requires FQDN instead of IP"""
+"(""Kerberos auth requires DNS name of the target DC. Use -dc-host."""
+"(""Kerberos authentication requires a valid FQDN, not an IP address."""
+"(""Kerberos option cannot be used in relay mode. Exiting..."""
+"(""KeyCredential generated with DeviceID: %s"" % keyCredential.DeviceId.toFormatD("
+"(""KeyCredential: %s"" % keyCredential.toDNWithBinary("
+"(""LDAP Signing is enforced!"""
+"(""LDAPSessionTerminatedByServerError: Server connection terminated. Trying to reconnect"""
+"(""LDAPSocketSendError: Connection dead"""
+"(""Length"", ""<L"""
+"(""Loading certificate without password"""
+"(""Logging directory is set to %s"" % (self.logs_folder"
+"(""Malformed LDAP filter: unmatched parentheses"""
+"(""Member identity not found. Try to use DN"""
+"(""Modifying %s OwnerSid to %s"" % (self.__target_dn, self.new_owner_sid"
+"(""More than one delegated object found. Ignoring..."""
+"(""Must be used with password: %s"" % password"
+"(""No ADCS enrollment service found"""
+"(""No KRB5CCNAME environment present."""
+"(""No RIDs found. Skipping..."""
+"(""No credentials supplied. Using ANONYMOUS access"""
+"(""No entries found!"""
+"(""No ldap_session. Exiting"""
+"(""No outfile path was provided. The certificate(s"
+"(""No target found"""
+"(""No templates offered by the enrollment services"""
+"(""No valid credentials found in cache. """
+"(""Not a valid key file"""
+"(""Nothing to remove..."""
+"(""Objects with adminCount=1 will not inherit ACEs from their parent container/OU"""
+"(""Opening domain %s..."" % selectedDomain"
+"(""Parsing DACL"""
+"(""Password:"""
+"(""PreviousPassword"", "":"""
+"(""PreviousPasswordOffset"", ""<H"""
+"(""Principal DC not found, querying other record"""
+"(""Printing parsed DACL"""
+"(""QueryPasswordInterval"", "":"""
+"(""QueryPasswordIntervalOffset"", ""<H"""
+"(""Querying all DCs"""
+"(""RELAY"""
+"(""Re-authenticate with channel binding"""
+"(""Re-authenticate with seal and sign"""
+"(""Reserved"", ""<H"""
+"(""Resolved Failed: %s"" % e"
+"(""Run the following command to obtain a TGT"""
+"(""S-1-5-21-"""
+"(""Saved PEM certificate at path: %s"" % path + ""_cert.pem"""
+"(""Saved PEM private key at path: %s"" % path + ""_priv.pem"""
+"(""Saved PFX (#PKCS12"
+"(""Searching for the target account"""
+"(""See https://pypi.org/project/pycryptodomex/"""
+"(""Server allows ANONYMOUS access!"""
+"(""Server returns LDAPStrongerAuthRequiredResult"""
+"(""Server returns invalidCredentials"""
+"(""Succesfully deleted %s."" % self.__computerName"
+"(""Succesfully set password of %s to %s."" % (self.__computerName, self.__computerPassword"
+"(""Success! Relayed to the LDAP server. Closing HTTP Server"""
+"(""Successfully added machine account %s with password %s."" % (self.__computerName, self.__computerPassword"
+"(""Successfully deleted %s."" % self.__computerName"
+"(""Successfully dumped %d LAPS passwords through relayed account %s"" % (count, self.username"
+"(""Successfully dumped %d gMSA passwords through relayed account %s"" % (count, self.username"
+"(""Successfully set password of %s to %s."" % (self.__computerName, self.__computerPassword"
+"(""Target user found: %s"" % target_dn"
+"(""The certificate will be store with the password: %s"" % password"
+"(""The relayed user %s does not have permissions to read any LAPS passwords"" % self.username"
+"(""The relayed user %s does not have permissions to read any gMSA passwords"" % self.username"
+"(""This ACE will be removed"""
+"(""This server provides multiple domains and '%s' isn't one of them."", self.__domainNetbios"
+"(""Trying to check web enrollment with IP"""
+"(""Trying to start the Remote Registry..."""
+"(""UnchangedPasswordInterval"", "":"""
+"(""UnchangedPasswordIntervalOffset"", ""<H"""
+"(""Unsupported method %s"" % self.__method"
+"(""Updated the msDS-KeyCredentialLink attribute of the target object"""
+"(""Updating the msDS-KeyCredentialLink attribute of %s"" % self.targetidentity_dn"
+"(""User %s doesn't have right to %s %s!"" % (self.__username, message, self.__computerName"
+"(""User %s doesn't have right to create a machine account!"" % self.__username"
+"(""User %s machine quota exceeded!"" % self.__username"
+"(""User deleted successfully"""
+"(""Using KDC Options ("" + ','.join(kdc_opts"
+"(""Using Kerberos Cache: %s"" % os.getenv('KRB5CCNAME'"
+"(""Using Schannel, trying to authenticate with provided certificate"""
+"(""Using channel binding"""
+"(""Using seal and sign"""
+"(""Value is not a string"""
+"(""Value not compatible for sorting. Skipping..."""
+"(""Value"", ""admin"", ""modifiedSamAccountName"""
+"(""Version"", ""<H"""
+"(""Warning: You don't have any crypto installed. You need pycryptodomex"""
+"(""Web interface dependencies not installed. Web interface will not be available."""
+"(""You have to provide a computer name when using -delete."""
+"(""You have to provide a computer name when using -no-add."""
+"(""[ACLEnum] Parsing DACL"""
+"(""[Add-DomainCATemplateAcl] More than one target identity found"""
+"(""[Add-DomainCATemplateAcl] Multiple templates found"""
+"(""[Add-DomainCATemplateAcl] Target identity not found in domain"""
+"(""[Add-DomainCATemplate] Failed to issue template"""
+"(""[Add-DomainCATemplate] Failed to modify template ACL. Skipping..."""
+"(""[Add-DomainCATemplate] Modifying template ACL for current user"""
+"(""[Add-DomainCATemplate] More than one certificate templates found"""
+"(""[Add-DomainCATemplate] No Forest OID found in domain"""
+"(""[Add-DomainCATemplate] No certificate name given, using DisplayName instead"""
+"(""[Add-DomainCATemplate] No certificate template found"""
+"(""[Add-DomainComputer] Adding computer via LDAPS"""
+"(""[Add-DomainComputer] Adding computer via SAMR"""
+"(""[Add-DomainComputer] More then one computer found in domain"""
+"(""[Add-DomainDNSRecord] Creating DNS record structure"""
+"(""[Add-DomainDNSRecord] Using current domain %s as zone name"" % zonename"
+"(""[Add-DomainDNSRecord] Zone %s not found"" % zonename"
+"(""[Add-DomainGPO] Creating directories in %s"" % (policy_path"
+"(""[Add-DomainGPO] Failed to connect to SYSVOL share"""
+"(""[Add-DomainGPO] Failed to create gpt.ini file in %s"" % (policy_path"
+"(""[Add-DomainGPO] Failed to create policy directory in SYSVOL"""
+"(""[Add-DomainGPO] Failed to write gpt.ini file in %s"" % (policy_path"
+"(""[Add-DomainGPO] Found %d domain controller(s"
+"(""[Add-DomainGPO] No domain controller found in ldap. Using domain as address"""
+"(""[Add-DomainGPO] Resolving hostname to IP"""
+"(""[Add-DomainGPO] SYSVOL policy folder successfully created!"""
+"(""[Add-DomainGPO] Writing default GPT.INI file"""
+"(""[Add-DomainGroup] More than one group found in domain"""
+"(""[Add-DomainOU] Protect accidental deletion enabled"""
+"(""[Add-DomainObjectACL] More then one principal identity found"""
+"(""[Add-DomainObjectACL] More then one target identity found"""
+"(""[Add-DomainObjectAcl] Found in well known SID: %s"" % principal_SID"
+"(""[Add-DomainUser] Adding password to account"""
+"(""[Add-DomainUser] Adding user through LDAP"""
+"(""[Add-DomainUser] Adding user through LDAPS"""
+"(""[Add-DomainUser] More than one group found in domain"""
+"(""[Add-GPLink] GPO not found in domain"""
+"(""[Add-GPLink] More than one GPO found"""
+"(""[Add-GPLink] More than one principal identity found"""
+"(""[Add-GPLink] Principal identity not found in domain"""
+"(""[Add-GPLink] gPLink attribute already exists"""
+"(""[Add-GPLink] gPLink attribute already populated. Appending new gPLink..."""
+"(""[Clear-Cache] Clearing cache"""
+"(""[ConnectRPCTransport] Connecting to %s"" % stringBindings"
+"(""[CustomStandardExtendedOperations] Modified Attributes: {}"".format(modified_attributes"
+"(""[CustomStandardExtendedOperations] Modified DN: {}"".format(modified_dn"
+"(""[CustomStandardExtendedOperations] Modified Filter: {}"".format(modified_filter"
+"(""[CustomStandardExtendedOperations] Returning cached results for query"""
+"(""[Disable-DomainDNSRecord] Failed to disable dns record"""
+"(""[Find-LocalAdminAccess] There are more than 100 computers in the domain. This might take some time"""
+"(""[Get-DomainComputerPassword] Computer %s not found in domain"" % (identity"
+"(""[Get-DomainComputerPassword] Multiple computers found in domain"""
+"(""[Get-DomainComputer] Excluding domain controllers"""
+"(""[Get-DomainComputer] Search for Pre-Created Windows 2000 computer"""
+"(""[Get-DomainComputer] Searching for computers that are configured to allow resource-based constrained delegation"""
+"(""[Get-DomainComputer] Searching for computers that are configured to have msDS-KeyCredentialLink attribute set"""
+"(""[Get-DomainComputer] Searching for computers that are trusted to authenticate for other principals"""
+"(""[Get-DomainComputer] Searching for computers with BitLocker keys"""
+"(""[Get-DomainComputer] Searching for computers with GSMA password stored"""
+"(""[Get-DomainComputer] Searching for computers with LAPS enabled"""
+"(""[Get-DomainComputer] Searching for computers with unconstrained delegation"""
+"(""[Get-DomainComputer] Searching for disabled computer"""
+"(""[Get-DomainComputer] Searching for enabled computer"""
+"(""[Get-DomainComputer] Searching for printers"""
+"(""[Get-DomainForeignGroupMember] No group members found"""
+"(""[Get-DomainForeignUser] Failed ldap query"""
+"(""[Get-DomainGMSA] Found %d object(s"
+"(""[Get-DomainGPOLocalGroup] No GPO object found"""
+"(""[Get-DomainGroupMember] Multiple group found. Probably try searching with distinguishedName"""
+"(""[Get-DomainGroupMember] No group found"""
+"(""[Get-DomainOU] More than one gPLink found for %s. Ignoring..."" % (guid"
+"(""[Get-DomainOU] gPLink not found. Cant resolve %s"" % (guid"
+"(""[Get-DomainObjectAcl] Found in well known SID: %s"" % principal_SID"
+"(""[Get-DomainObjectOwner] Identity not found in domain"""
+"(""[Get-DomainObjectOwner] Recursing all domain objects. This might take a while"""
+"(""[Get-DomainRBCD] Found %d object(s"
+"(""[Get-DomainSCCMDatalib] Parsing SCCM Datalib HTTP endpoint"""
+"(""[Get-DomainSCCM] Datalib endpoint not accessible. Skipping..."""
+"(""[Get-DomainSCCM] Failed to check with hostname, resolving dnsHostName attribute to IP and retrying..."""
+"(""[Get-DomainSCCM] No server found in domain. Skipping..."""
+"(""[Get-DomainSCCM] Verifying SCCM HTTP endpoint"""
+"(""[Get-DomainUser] Searching for disabled user"""
+"(""[Get-DomainUser] Searching for enabled user"""
+"(""[Get-DomainUser] Searching for user accounts that do not require kerberos preauthenticate"""
+"(""[Get-DomainUser] Searching for user accounts that have PASSWD_NOTREQD set"""
+"(""[Get-DomainUser] Searching for user with expired password"""
+"(""[Get-DomainUser] Searching for users configured for unconstrained delegation"""
+"(""[Get-DomainUser] Searching for users that are configured to have msDS-KeyCredentialLink attribute set"""
+"(""[Get-DomainUser] Searching for users that have SPN attribute set"""
+"(""[Get-ExchangeServer] Exchange Servers group found in domain"""
+"(""[Get-ExchangeServer] Exchange Servers group not found in domain"""
+"(""[Get-ExchangeServer] Failed to get Exchange Servers group dn"""
+"(""[Get-GPOSettings] No GPO object found"""
+"(""[Get-LocalAccount] Found RIDs {}"".format(rids"
+"(""[Get-NamedPipes] Pipe not found"""
+"(""[Get-NetLoggedOn] Failed to connect to %s"" % (computer_name"
+"(""[Get-NetLoggedOn] Use FQDN when using kerberos"""
+"(""[Get-NetService] Error enumerating service"""
+"(""[Get-NetService] Total services found: %d"" % len(resp"
+"(""[Get-NetSession] Failed to connect to %s"" % (identity"
+"(""[Get-NetSession] Use FQDN when using kerberos"""
+"(""[Get-RegLoggedOn] Failed to connect to %s"" % (computer_name"
+"(""[Get-RegLoggedOn] Found {} logged on user(s"
+"(""[Invoke-Kerberoast] No identity found"""
+"(""[RBCD] Creating SDDL manually"""
+"(""[RBCD] msDS-AllowedToActOnBehalfOfOtherIdentity not found in object"""
+"(""[Remove-DomainCATemplate] Multiple OIDs found. Ignoring.."""
+"(""[Remove-DomainCATemplate] Template OID not found in domain. Ignoring..."""
+"(""[Remove-DomainDNSRecord] More than one record found"""
+"(""[Remove-DomainDNSRecord] No record found"""
+"(""[Remove-DomainDNSRecord] Success! Deleted the record"""
+"(""[Remove-DomainDNSRecord] Using current domain %s as zone name"" % zonename"
+"(""[Remove-DomainDNSRecord] Zone %s not found"" % zonename"
+"(""[Remove-DomainOU] Success! Deleted the OU"""
+"(""[Remove-DomainObjectACL] More then one principal identity found"""
+"(""[Remove-DomainObjectACL] More then one target identity found"""
+"(""[Remove-DomainObjectAcl] Found in well known SID: %s"" % principal_SID"
+"(""[Remove-GPLink] GPO not found in domain"""
+"(""[Remove-GPLink] More than one GPO found"""
+"(""[Remove-GPLink] More than one principal identity found"""
+"(""[Remove-GPLink] Principal identity doesn't have any linked GPO"""
+"(""[Remove-GPLink] Principal identity not found in domain"""
+"(""[SAMR] No object found for {}"".format(object_name"
+"(""[Set-DomainCATemplate] Attribute %s not found in template"" % attrs['attribute']"
+"(""[Set-DomainCATemplate] No identity or args supplied"""
+"(""[Set-DomainCATemplate] No template found"""
+"(""[Set-DomainComputerPassword] Using LDAPS to change %s password"" % (entries[0][""attributes""][""sAMAccountName""]"
+"(""[Set-DomainComputerPassword] Using SAMR to change %s password"" % (entries[0][""attributes""][""sAMAccountName""]"
+"(""[Set-DomainDNSRecord] More than one record found"""
+"(""[Set-DomainDNSRecord] No A record exists yet. Nothing to modify"""
+"(""[Set-DomainDNSRecord] No record found"""
+"(""[Set-DomainDNSRecord] Using current domain %s as zone name"" % zonename"
+"(""[Set-DomainObjectOwner] %s is already the owner of the %s"" % (principal_identity[0][""attributes""][""sAMAccountName""], target_identity[0][""attributes""][""distinguishedName""]"
+"(""[Set-DomainObjectOwner] Changing current owner %s to %s"" % (target_identity_owner, principal_identity[0][""attributes""][""objectSid""]"
+"(""[Set-DomainObjectOwner] More than one principal identity found"""
+"(""[Set-DomainObjectOwner] More than one target identity found"""
+"(""[Set-DomainObject] %s"" % str(e"
+"(""[Set-DomainObject] Reading from file"""
+"(""[Set-DomainRBCD] Failed to write to {delegatefrom} object"""
+"(""[Set-DomainRBCD] More then one identity found"""
+"(""[Set-DomainUserPassword] Using LDAPS to change %s password"" % (entries[0][""attributes""][""sAMAccountName""]"
+"(""[Set-DomainUserPassword] Using SAMR to change %s password"" % (entries[0][""attributes""][""sAMAccountName""]"
+"(""[Unlock-ADAccount] Modifying lockoutTime attribute"""
+"(""[connectRPCTransport:Exception] %s"" % str(e"
+"(""[connectRPCTransport:SessionError] %s"" % str(e"
+"(""[connectRPCTransport] Binding to UUID %s"" % interface_uuid"
+"(""\\"""
+"(""\n"""
+"(""^S-1-5-21-.+-(498|500|502|512|516|518|519|521"
+"(""_"""
+"(""__memberof"","""""
+"(""__members"","""""
+"(""aad3b435b51404eeaad3b435b51404ee:"".upper("
+"(""attributes"""
+"(""data"","""""
+"(""details-panel"""
+"(""displayName"""
+"(""distinguishedName"""
+"(""dn"""
+"(""dnsHostName"""
+"(""dnsHostname"""
+"(""encoded"" in i.keys("
+"(""gPLink"""
+"(""general-content"""
+"(""headers"""
+"(""ldap://%s:%s"" % (self.targetHost, self.targetPort"
+"(""ldaps://%s:%s"" % (self.targetHost, self.targetPort"
+"(""lockoutTime"""
+"(""memberOf"""
+"(""msDS-GroupMSAMembership"""
+"(""msDS-ManagedPassword"""
+"(""msDS-OIDToGroupLink"""
+"(""msPKI-Cert-Template-OID"""
+"(""nTSecurityDescriptor"""
+"(""objectSid"""
+"(""python3 PKINITtools/gettgtpkinit.py -cert-pem %s_cert.pem -key-pem %s_priv.pem %s/%s %s.ccache"" % (path, path, domain, self.targetidentity_dn, path"
+"(""python3 PKINITtools/gettgtpkinit.py -cert-pfx %s.pfx -pfx-pass %s %s/%s %s.ccache"" % (path, password, domain, self.targetidentity_dn, path"
+"(""raw_attributes"""
+"(""sAMAccountName"""
+"(""sAMAccountType"""
+"(""servicePrincipalName"""
+"(""tab: complete"""
+"(""userAccountControl"""
+"(""utf-8"""
+"(""{"""
+"(""{} ({}"
+"(""|"","","""
+"(""}"""
+"(&, |, !"
+"(' ', 1"
+"(' ', 3"
+"(' con | cont | conta | contai | contain | contains | eq | equ | equa | equal | match | mat | matc | not | != |!=| = |=C|=D', cond, flags=re.IGNORECASE"
+"(' con | cont | conta | contai | contain | contains | eq | equ | equa | equal | match | mat | matc | not | != |!=| = |=C|=D', cond, re.IGNORECASE"
+"('!i', len(data"
+"('!i', s.recv(4"
+"('""%s""' % self.__computerPassword"
+"('""'"
+"('""',''"
+"('#gpo-content [role=""tabpanel""]'"
+"('#gpo-tabs [role=""tab""]'"
+"('#ldap-attributes-modal [role=""tab""]'"
+"('#ldap-attributes-modal [role=""tabpanel""]'"
+"('#ldap-attributes-modal [role=""tabpanel""]:not([style*=""display: none""]"
+"('#ou-content [role=""tabpanel""]'"
+"('#ou-tabs [role=""tab""]'"
+"('$krb5asrep$%d$%s@%s:%s$%s' % (asRep['enc-part']['etype'],clientName, domain, hexlify(asRep['enc-part']['cipher'].asOctets("
+"('%s can now impersonate users on %s via S4U2Proxy', self.principalidentity_dn, target_entries[0]['sAMAccountName'].values[0]"
+"('', ''"
+"('*', True"
+"(', '"
+"(','"
+"(',DC=', '.', domaindn[domaindn.find('DC='"
+"('-', '_'"
+"('--aes-key', dest=""auth_aes_key"", action=""store"", metavar = ""hex key"", help='AES key to use for Kerberos Authentication \'(128 or 256 bits"
+"('--no-admin-check', dest='no_admin_check', action='store_true', help='Skip admin check when first logging in'"
+"('--no-cache', dest='no_cache', action='store_true', help='Disable caching of LDAP queries'"
+"('--no-pass', action=""store_true"", help=""don't ask for password (useful for -k"
+"('--obfuscate', dest='obfuscate', action='store_true', help='Obfuscate search filter'"
+"('--relay', dest='relay', action='store_true', help='Enable relay mode'"
+"('--relay-host', dest='relay_host', action='store', default=""0.0.0.0"", help='Bind interface to expose HTTP server (Default: 0.0.0.0"
+"('--relay-port', dest='relay_port', action='store', type=int, default=80, help='Relay mode custom HTTP port (Default: 80"
+"('--stack-trace', dest='stack_trace', action='store_true', help='raise exceptions and exit if unhandled errors'"
+"('--use-gc', dest='use_gc', action='store_true', help='[Optional] Use GlobalCatalog (GC"
+"('--use-gc-ldaps', dest='use_gc_ldaps', action='store_true', help='[Optional] Use GlobalCatalog (GC"
+"('--use-ldap', dest='use_ldap', action='store_true', help='[Optional] Use LDAP instead of LDAPS'"
+"('--use-ldaps', dest='use_ldaps', action='store_true', help='[Optional] Use LDAPS instead of LDAP'"
+"('--use-system-nameserver', action='store_true', default=False, dest='use_system_ns', help='Use system nameserver to resolve hostname/domain'"
+"('--web', dest='web', action='store_true', help='Enable web interface for LDAP queries'"
+"('--web-host', dest='web_host', action='store', default='127.0.0.1', help='Specify custom bind interface (Default: 127.0.0.1"
+"('--web-port', dest='web_port', action='store', type=int, default=5000, help='Specify custom port for web interface (Default: 5000"
+"('-ACEType', action='store', dest='ace_type', choices=['allowed', 'denied'], nargs='?', default='allowed', type = str.lower"
+"('-AccountPassword', action='store', dest='accountpassword'"
+"('-AdminCount', action='store_true', default=False, dest='admincount'"
+"('-AllowDelegation', action='store_true', default=False, dest='allowdelegation'"
+"('-Append', dest='append'"
+"('-BaseDN', action='store', const=None, dest='basedn', help=""[Optional] (Default: root DN"
+"('-BaseDN', action='store', default=None, const=None, dest='basedn', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-BitLocker', action='store_true', default=False, dest='bitlocker'"
+"('-CheckDatalib', action='store_true', default=False, dest='check_datalib'"
+"('-CheckWebEnrollment', action='store_true', dest='check_web_enrollment'"
+"('-Clear',action='store', dest='clear'"
+"('-Computer', action='store', const=None, dest='computer', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-Computer', action='store', dest='computer', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-ComputerName', action='store', const=None, dest='computername', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-ComputerName', action='store', dest='computername', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-ComputerName',action='store', const=None, dest='computername', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-ComputerPass', action='store', const=None, dest='computerpass'"
+"('-Count', action='store_true', dest='count'"
+"('-DelegateFrom', action='store', const=None, dest='delegatefrom'"
+"('-Description', action='store', dest='description', type=str"
+"('-DestinationDN', action='store', dest='destination_dn', required=True"
+"('-Disabled', action='store_true', default=False, dest='disabled'"
+"('-DisallowDelegation', action='store_true', default=False, dest='disallowdelegation'"
+"('-DisplayName', action='store', dest='displayname', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-DistinguishedName', action='store', const=None, dest='distinguishedname'"
+"('-Duplicate', action='store', dest='duplicate'"
+"('-Enabled', action='store_true', default=False, dest='enabled'"
+"('-Enabled', action='store_true', dest='enabled'"
+"('-Enforced', action='store', dest='enforced', default=""No"", choices=[""Yes"",""No""]"
+"('-ExcludeDCs', action='store_true', default=False, dest='excludedcs'"
+"('-GMSAPassword', action='store_true', default=False, dest='gmsapassword'"
+"('-GPLink', action='store', dest='gplink'"
+"('-GUID', action='store', const=None, dest='guid'"
+"('-H','--hashes', action=""store"", metavar = ""LMHASH:NTHASH"", help='NTLM hashes, format is LMHASH:NTHASH'"
+"('-Identity', action='store', const=None, dest='identity'"
+"('-Identity', action='store', const=None, dest='identity', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-Identity', action='store', const=None, dest='identity', type=str"
+"('-Identity', action='store', default='*', dest='identity', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-Identity', action='store', default=None, const=None, dest='identity'"
+"('-Identity', action='store', dest='identity'"
+"('-Identity', action='store', dest='identity', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-Identity', action='store',default='*', dest='identity', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-Inheritance', action='store_true', dest='inheritance', default=False"
+"('-IsRunning', action='store_true', default=False, dest='isrunning'"
+"('-IsStopped', action='store_true', default=False, dest='isstopped'"
+"('-LAPS', action='store_true', default=False, dest='laps'"
+"('-LDAPFilter', action='store', dest='ldapfilter'"
+"('-LinkEnabled', action='store', dest='link_enabled', default=""Yes"", choices=[""Yes"",""No""]"
+"('-LinkTo', action='store', dest='linkto', type=str"
+"('-Lockout', action='store_true', default=False, dest='lockout'"
+"('-MemberIdentity', action='store', dest='memberidentity'"
+"('-Members', action='store', const=None, dest='members'"
+"('-Members', action='store', const=None, dest='members', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-Name', action='store', dest='name'"
+"('-Name', action='store', dest='name', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-NoCache', action='store_true', default=False, dest='no_cache'"
+"('-NoWrap', action='store_true', default=False, dest='nowrap'"
+"('-NoWrap', action='store_true', dest='nowrap'"
+"('-ObjectSID', action='store', dest='objectsid'"
+"('-OldPassword', action='store', dest='oldpassword'"
+"('-Opsec', action='store_true', default=False, dest='opsec'"
+"('-OutFile', action='store', dest='outfile'"
+"('-PassExpired', action='store_true', default=False, dest='password_expired'"
+"('-PassNotRequired', action='store_true', default=False, dest='passnotrequired'"
+"('-Pre2K', action='store_true', default=False, dest='pre2k'"
+"('-PreAuthNotRequired', action='store_true', default=False, dest='preauthnotrequired'"
+"('-PrincipalIdentity', action='store', const=None, dest='principalidentity'"
+"('-PrincipalIdentity', action='store', const=None, dest='principalidentity', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-PrincipalIdentity', action='store', required=True, const=None, dest='principalidentity', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-Printers', action='store_true', default=False, dest='printers'"
+"('-Properties', action='store' , dest='properties', type=Helper.parse_properties"
+"('-Properties', action='store', dest='properties', type=Helper.parse_properties"
+"('-Properties',action='store', dest='properties', type=Helper.parse_properties"
+"('-ProtectedFromAccidentalDeletion', action='store_true', default=False, dest='protectedfromaccidentaldeletion'"
+"('-RBCD', action='store_true', default=False, dest='rbcd'"
+"('-RecordAddress', action='store', dest='recordaddress'"
+"('-RecordName', action='store', dest='recordname'"
+"('-RecordName', action='store', dest='recordname', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-ResolveGPLink', action='store_true', default=False, dest='resolve_gplink'"
+"('-ResolveGUIDs', action='store_true',default=False, dest='resolveguids'"
+"('-ResolveIP', action='store_true', default=False, dest='resolveip'"
+"('-ResolveSIDs', action='store_true', default=False, dest='resolvesids'"
+"('-ResolveSIDs', action='store_true', dest='resolve_sids'"
+"('-RightGUID', action='store', dest='rights_guid', type = str.lower"
+"('-Rights', action='store',  dest='rights', choices=['immutable', 'resetpassword', 'writemembers', 'dcsync'], nargs='?', default='fullcontrol', type=str.lower"
+"('-Rights', action='store',  dest='rights', choices=['immutable','fullcontrol', 'resetpassword', 'writemembers', 'dcsync'], nargs='?', default='fullcontrol', type=str.lower"
+"('-Rights', action='store', const=None, dest='rights', choices=['all', 'enroll','write'], type = str.lower"
+"('-SPN', action='store_true', default=False, dest='spn'"
+"('-SPN', action='store_true', dest='spn'"
+"('-SearchBase', action='store', dest='searchbase'"
+"('-SearchBase', action='store', dest='searchbase', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-SecurityIdentifier', action='store', dest='security_identifier'"
+"('-Select', action='store', dest='select', type=Helper.parse_select"
+"('-Select',action='store', dest='select'"
+"('-Server', action='store', dest='server'"
+"('-Set', dest='set'"
+"('-ShadowCred', action='store_true', default=False, dest='shadowcred'"
+"('-SortBy', action='store', dest='sort_by'"
+"('-TableView', nargs='?', const='default', default='', dest='tableview',help=""Format the output as a table. Options: 'md', 'csv'. Defaults to standard table if no value is provided."""
+"('-TargetIdentity , -PrincipalIdentity and -Rights flags are required'"
+"('-TargetIdentity , -PrincipalIdentity flags are required'"
+"('-TargetIdentity', action='store', const=None, dest='targetidentity'"
+"('-TargetIdentity', action='store', required=True, const=None, dest='targetidentity', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-Template', action='store', const=None, dest='template', type=lambda value: escape_filter_chars_except_asterisk(value"
+"('-TrustedToAuth', action='store_true', default=False, dest='trustedtoauth'"
+"('-Unconstrained', action='store_true', default=False, dest='unconstrained'"
+"('-UserName', action='store', default=None, const=None, dest='username'"
+"('-UserPass', action='store', default=None, const=None, dest='userpass'"
+"('-Value', action='store', dest='value'"
+"('-Vulnerable', action='store_true', dest='vulnerable'"
+"('-Where', action='store', dest='where'"
+"('-ZoneName', action='store', dest='zonename'"
+"('-d','--debug', dest='debug', action='store_true', help='Enable debug output'"
+"('-ns','--nameserver', dest='nameserver', action='store', help='Specify custom nameserver. If not specified, domain controller will be used instead'"
+"('-p','--port', dest='port', action='store', help='LDAP server port. (Default: 389|636"
+"('-q','--query', dest='query', action='store', help='PowerView query to be executed one-time'"
+"('-v','--version', dest='version', action='version',version=BANNER"
+"('.record-name-section tr.bg-neutral-200, .record-name-section tr.dark\\:bg-neutral-800'"
+"('.zone-item.bg-neutral-200, .zone-item.dark\\:bg-neutral-800'"
+"('/', 'index', self.render_index, methods=['GET']"
+"('/api/add/<method_name>', 'add_operation', self.handle_add_operation, methods=['POST']"
+"('/api/clear-cache', 'clear_cache', self.handle_clear_cache, methods=['GET']"
+"('/api/connectioninfo', 'connectioninfo', self.handle_connection_info, methods=['GET']"
+"('/api/constants', 'constants', self.handle_constants, methods=['GET']"
+"('/api/convertfrom/<method_name>', 'convert_from_operation', self.handle_convert_from_operation, methods=['POST']"
+"('/api/convertto/<method_name>', 'convert_to_operation', self.handle_convert_to_operation, methods=['POST']"
+"('/api/execute', 'execute_command', self.execute_command, methods=['POST']"
+"('/api/get/<method_name>', 'get_operation', self.handle_get_operation, methods=['GET', 'POST']"
+"('/api/get/domaininfo', 'domaininfo', self.handle_domaininfo, methods=['GET']"
+"('/api/history', 'history', self.render_history, methods=['GET']"
+"('/api/invoke/<method_name>', 'invoke_operation', self.handle_invoke_operation, methods=['POST']"
+"('/api/ldap/close', 'ldap_close', self.handle_ldap_close, methods=['GET']"
+"('/api/ldap/rebind', 'ldap_rebind', self.handle_ldap_rebind, methods=['GET']"
+"('/api/logs', 'logs', self.generate_log_stream, methods=['GET']"
+"('/api/remove/<method_name>', 'remove_operation', self.handle_remove_operation, methods=['POST']"
+"('/api/set/<method_name>', 'set_operation', self.handle_set_operation, methods=['POST']"
+"('/api/set/settings', 'set_settings', self.handle_set_settings, methods=['POST']"
+"('/api/settings', 'settings', self.handle_settings, methods=['GET']"
+"('/ca', 'ca', self.render_ca, methods=['GET']"
+"('/computers', 'computers', self.render_computers, methods=['GET']"
+"('/dashboard', 'dashboard', self.render_dashboard, methods=['GET']"
+"('/dns', 'dns', self.render_dns, methods=['GET']"
+"('/gpo', 'gpo', self.render_gpo, methods=['GET']"
+"('/groups', 'groups', self.render_groups, methods=['GET']"
+"('/health', 'health', self.handle_health, methods=['GET']"
+"('/ou', 'ou', self.render_ou, methods=['GET']"
+"('/users', 'users', self.render_users, methods=['GET']"
+"('/utils', 'utils', self.render_utils, methods=['GET']"
+"(':', '~'"
+"('<L', eData['data-value'].asOctets("
+"('=', 1"
+"('ACE does not apply, only to %s', objectType"
+"('Access to security descriptor was denied for DN %s', dn"
+"('Add member to group:', item.attributes.name"
+"('Add-DomainCATemplate', aliases=['Add-CATemplate'], exit_on_error=False"
+"('Add-DomainCATemplateAcl', aliases=['Add-CATemplateAcl'], exit_on_error=False"
+"('Add-DomainComputer', aliases=['Add-ADComputer'], exit_on_error=False"
+"('Add-DomainDNSRecord', exit_on_error=False"
+"('Add-DomainGPO', aliases=['Add-GPO'], exit_on_error=False"
+"('Add-DomainGroup', aliases=['Add-ADGroup'], exit_on_error=False"
+"('Add-DomainGroupMember',aliases=['Add-GroupMember'], exit_on_error=False"
+"('Add-DomainOU', aliases=['Add-OU'], exit_on_error=False"
+"('Add-DomainObjectAcl', aliases=['Add-ObjectAcl'], exit_on_error=False"
+"('Add-DomainUser', aliases=['Add-ADUser'], exit_on_error=False"
+"('Add-GPLink', exit_on_error=False"
+"('Adding new computer with username: %s and password: %s result: OK' % (newComputer, newPassword"
+"('Adding new user with username: %s and password: %s result: OK' % (newUser, newPassword"
+"('Adding user: %s to group %s result: OK' % (userName, groupName"
+"('AlignmentPadding',':'"
+"('Attempting to create computer in: %s', parent"
+"('Attempting to create user in: %s', self.__parent"
+"('B', ASN1_AID"
+"('B', authenticateMessageBlob[:1]"
+"('B', self['RawName'][ind:ind+1]"
+"('Built GUID: %s', _rights_guids"
+"('CN=%s,%s' % (computerHostname, parent"
+"('CN=%s,%s' % (computerHostname, self.__computerGroup"
+"('CN=', ''"
+"('Clear-Cache', exit_on_error=False"
+"('Command execution result:', result"
+"('Computer Configuration', gpo.attributes.machineConfig"
+"('Computer added:', result"
+"('Computer deleted:', result"
+"('ConvertFrom-SID' ,exit_on_error=False"
+"('ConvertFrom-UACValue' ,exit_on_error=False"
+"('Could not modify object, the server reports a constrained violation: %s' % self.client.result['message']"
+"('Could not modify object, the server reports a constrained violation: %s', self.client.result['message']"
+"('Could not modify object, the server reports a constrained violation: %s', self.ldap_session.result['message']"
+"('Could not modify object, the server reports insufficient rights: %s' % self.client.result['message']"
+"('Could not modify object, the server reports insufficient rights: %s', self.client.result['message']"
+"('Could not modify object, the server reports insufficient rights: %s', self.ldap_session.result['message']"
+"('Create group in container:', containerDn"
+"('Create user in container:', containerDn"
+"('CurrentPassword',':'"
+"('CurrentPasswordOffset','<H'"
+"('DNS record deleted:', data"
+"('DOMContentLoaded', ("
+"('DOMContentLoaded', async ("
+"('DOMContentLoaded', function("
+"('Data', ':'"
+"('DataLength', '<H-Data'"
+"('Disable-DomainDNSRecord', exit_on_error=False"
+"('Error adding ACL:', error"
+"('Error adding DNS record:', error"
+"('Error adding group member:', error"
+"('Error adding group:', error"
+"('Error adding user:', error"
+"('Error appending value:', error"
+"('Error bind to GS ssl, trying GC'"
+"('Error bind to LDAPS, trying LDAP'"
+"('Error checking connection status:', error"
+"('Error checking distinguished name:', error"
+"('Error clearing cache:', error"
+"('Error converting SID:', error"
+"('Error converting UAC:', error"
+"('Error converting to Base64:', error"
+"('Error deleting DNS record:', error"
+"('Error deleting LDAP attribute:', error"
+"('Error deleting computer:', error"
+"('Error deleting domain object:', error"
+"('Error deleting user:', error"
+"('Error disconnecting from LDAP server:', error"
+"('Error displaying GPO details:', error"
+"('Error displaying trusts:', error"
+"('Error during initialization:', error"
+"('Error executing command:', error"
+"('Error fetching CA servers:', error"
+"('Error fetching DACL data:', error"
+"('Error fetching DNS record details:', error"
+"('Error fetching DNS records:', error"
+"('Error fetching DNS zones:', error"
+"('Error fetching GPO data:', error"
+"('Error fetching LDAP attributes:', error"
+"('Error fetching OU data:', error"
+"('Error fetching command logs:', error"
+"('Error fetching critical items:', error"
+"('Error fetching domain OUs:', error"
+"('Error fetching domain admins:', error"
+"('Error fetching domain controllers:', error"
+"('Error fetching domain info:', error"
+"('Error fetching domain trusts:', error"
+"('Error fetching group members:', error"
+"('Error fetching groups:', error"
+"('Error fetching item data:', error"
+"('Error fetching items data:', error"
+"('Error fetching logon users data:', error"
+"('Error fetching sessions data:', error"
+"('Error fetching settings data:', error"
+"('Error fetching settings:', error"
+"('Error fetching single command log:', error"
+"('Error fetching subtree:', error"
+"('Error format retrieve, (e.g. {dnsHostName=temppc.contoso.local}"
+"('Error handling GPO node click:', error"
+"('Error handling OU node click:', error"
+"('Error initializing Add Group Member Modal:', error"
+"('Error initializing Add Group Modal:', error"
+"('Error initializing Add User Modal:', error"
+"('Error initializing GPO view:', error"
+"('Error initializing OU view:', error"
+"('Error initializing Remove Group Member Modal:', error"
+"('Error initializing search base:', error"
+"('Error loading GPOs:', error"
+"('Error loading dashboard:', error"
+"('Error loading descendants:', error"
+"('Error loading domain content:', error"
+"('Error refreshing subtree:', error"
+"('Error removing group member:', error"
+"('Error response:', errorResponse.error"
+"('Error searching computers:', error"
+"('Error searching users:', error"
+"('Error toggling OU subtree:', error"
+"('Error updating LDAP attribute:', error"
+"('Error updating settings:', error"
+"('Failed to add user to %s group: %s' % (groupName, str(self.client.result"
+"('Failed to copy text: ', err"
+"('Failed to fetch command logs:', logsData.error || 'Unknown error'"
+"('Failed to fetch single command log:', logsData.error || 'Unknown error'"
+"('Fallback: Oops, unable to copy', err"
+"('Find-LocalAdminAccess', exit_on_error=False"
+"('Flags', '<H=0'"
+"('Found sid for user %s: %s' % (username, usersid"
+"('Get-Domain', aliases=['Get-NetDomain'], exit_on_error=False"
+"('Get-DomainCA', aliases=['Get-CA'], exit_on_error=False"
+"('Get-DomainCATemplate', aliases=['Get-CATemplate'], exit_on_error=False"
+"('Get-DomainComputer', aliases=['Get-NetComputer'], exit_on_error=False"
+"('Get-DomainController', aliases=['Get-NetDomainController'], exit_on_error=False"
+"('Get-DomainDNSRecord', exit_on_error=False"
+"('Get-DomainDNSZone', exit_on_error=False"
+"('Get-DomainForeignGroupMember', aliases=['Find-ForeignGroup'], exit_on_error=False"
+"('Get-DomainForeignUser', aliases=['Find-ForeignUser'], exit_on_error=False"
+"('Get-DomainGMSA', aliases=['Get-GMSA'], exit_on_error=False"
+"('Get-DomainGPO', aliases=['Get-NetGPO'], exit_on_error=False"
+"('Get-DomainGPOLocalGroup', aliases=['Get-GPOLocalGroup'], exit_on_error=False"
+"('Get-DomainGPOSettings', aliases=['Get-GPOSettings'], exit_on_error=False"
+"('Get-DomainGroup', aliases=['Get-NetGroup'], exit_on_error=False"
+"('Get-DomainGroupMember', aliases=['Get-NetGroupMember'], exit_on_error=False"
+"('Get-DomainOU', aliases=['Get-NetOU'], exit_on_error=False"
+"('Get-DomainObject', aliases=['Get-ADObject'] ,exit_on_error=False"
+"('Get-DomainObjectAcl', aliases=['Get-ObjectAcl'] ,exit_on_error=False"
+"('Get-DomainObjectOwner', aliases=['Get-ObjectOwner'] ,exit_on_error=False"
+"('Get-DomainRBCD', aliases=['Get-RBCD'], exit_on_error=False"
+"('Get-DomainSCCM', aliases=['Get-SCCM'], exit_on_error=False"
+"('Get-DomainTrust', aliases=['Get-NetTrust'], exit_on_error=False"
+"('Get-DomainUser', aliases=['Get-NetUser'], exit_on_error=False"
+"('Get-ExchangeServer',aliases=['Get-Exchange'], exit_on_error=False"
+"('Get-LocalUser', exit_on_error=False"
+"('Get-NamedPipes', exit_on_error=False"
+"('Get-NetLoggedOn', exit_on_error=False"
+"('Get-NetService', exit_on_error=False"
+"('Get-NetSession', exit_on_error=False"
+"('Get-NetShare', exit_on_error=False"
+"('Get-RegLoggedOn', exit_on_error=False"
+"('Got KDC_ERR_ETYPE_NOSUPP, fallback to RC4'"
+"('Group Members:', data"
+"('Inheritance is set. Adding CONTAINER_INHERIT_ACE, OBJECT_INFERIT_ACE'"
+"('Invoke-Kerberoast', exit_on_error=False"
+"('LDAP sign and seal are not supported. Install with ""pip install ldap3-bleeding-edge""'"
+"('LabelCount', 'B'"
+"('Length', 'B-RawName'"
+"('Length','<L'"
+"('New computer info %s', ucd"
+"('Permission found: Add member to %s; Reason: Granted to %s' % (dn, sidmapping[sid]"
+"('Permission found: Create users in %s; Reason: Granted to %s' % (dn, sidmapping[sid]"
+"('Permission found: Full Control on %s; Reason: GENERIC_ALL via %s' % (dn, sidmapping[sid]"
+"('Permission found: Full Control on %s; Reason: Owner via %s' % (dn, sidmapping[sid]"
+"('Permission found: Write Dacl of %s; Reason: Granted to %s' % (dn, sidmapping[sid]"
+"('Pre-Windows 2000', 'Pre2k'"
+"('PreviousPassword',':'"
+"('PreviousPasswordOffset','<H'"
+"('Principal: %s - %s' % (downLevelLogonName, str(e"
+"('Principal: %s - %s' % (username, str(e"
+"('Privilege escalation succesful, shutting down...'"
+"('QueryPasswordInterval',':'"
+"('QueryPasswordIntervalOffset','<H'"
+"('Rank', 'B'"
+"('RawName', ':'"
+"('Remove member from group:', item.attributes.name"
+"('Remove-DomainCATemplate', aliases=['Remove-CATemplate'], exit_on_error=False"
+"('Remove-DomainComputer', aliases=['Remove-ADComputer'], exit_on_error=False"
+"('Remove-DomainDNSRecord', exit_on_error=False"
+"('Remove-DomainGroupMember',aliases=['Remove-GroupMember'], exit_on_error=False"
+"('Remove-DomainOU', aliases=['Remove-OU'], exit_on_error=False"
+"('Remove-DomainObject',aliases=['Remove-ADObject'], exit_on_error=False"
+"('Remove-DomainObjectAcl', aliases=['Remove-ObjectAcl'], exit_on_error=False"
+"('Remove-DomainUser', aliases=['Remove-ADUser'], exit_on_error=False"
+"('Remove-GPLink', exit_on_error=False"
+"('Reserved', '<L=0'"
+"('Reserved','<H'"
+"('Serial', '<L'"
+"('Set-DomainCATemplate', aliases=['Set-CATemplate'], exit_on_error=False"
+"('Set-DomainComputerPassword', exit_on_error=False"
+"('Set-DomainDNSRecord', exit_on_error=False"
+"('Set-DomainObject', aliases=['Set-ADObject'], exit_on_error=False"
+"('Set-DomainObjectDN', aliases=['Set-ADObjectDN'], exit_on_error=False"
+"('Set-DomainObjectOwner', aliases=['Set-ObjectOwner'], exit_on_error=False"
+"('Set-DomainRBCD', aliases=['Set-RBCD'], exit_on_error=False"
+"('Set-DomainUserPassword', exit_on_error=False"
+"('Skipping item, cannot process due to error %s' % str(e"
+"('Success! GenericAll privileges restored for %s', username"
+"('Success! GenericWrite privileges restored for %s', username"
+"('Success! Replication-Get-Changes-All privileges restored for %s', username"
+"('Success! Reset Password privileges restored for %s', username"
+"('Success! User %s now has ""Add/Remove Self as Member"" privileges on %s', username, self.args.targetidentity"
+"('Success! User %s now has GenericAll privileges on %s', username, self.args.targetidentity"
+"('Success! User %s now has Replication-Get-Changes-All privileges on the domain', username"
+"('Success! User %s now has Reset Password privileges on %s', username, self.args.targetidentity"
+"('Success:', message"
+"('TLS channel binding is not supported Install with ""pip install ldap3-bleeding-edge""'"
+"('The server returned an error: %s', self.client.result['message']"
+"('The server returned an error: %s', self.ldap_session.result['message']"
+"('TimeStamp', '<L=0'"
+"('TtlSeconds', '>L'"
+"('Type', '<H'"
+"('Unable to escalate without a valid user, aborting.'"
+"('UnchangedPasswordInterval',':'"
+"('UnchangedPasswordIntervalOffset','<H'"
+"('Unexpected data format:', data"
+"('Unlock-ADAccount',aliases=['Unlock-ADAccount'], exit_on_error=False"
+"('User Configuration', gpo.attributes.userConfig"
+"('User deleted:', result"
+"('Version', 'B=5'"
+"('Version','<H'"
+"('Where argument format error. (e.g. ""samaccountname contains admin"""
+"('[aria-controls=""tabpanelDescendants""]'"
+"('[aria-controls=""tabpanelLinkedGpo""]'"
+"('[aria-controls=""tabpanelLoggedon""]'"
+"('[aria-controls=""tabpanelMemberof""]'"
+"('[aria-controls=""tabpanelMembers""]'"
+"('[aria-controls=""tabpanelSessions""]'"
+"('[aria-controls=""tabpanelTrusts""]'"
+"('[data-modal-hide=""add-object-acl-modal""]'"
+"('[data-modal-hide=""ldap-attributes-modal""]'"
+"('[data-modal-hide=""remove-group-member-modal""]'"
+"('[data-modal-target=""delete-record-modal""]'"
+"('[data-modal-toggle=""add-computer-modal""]'"
+"('[data-modal-toggle=""add-dns-record-modal""]'"
+"('[data-modal-toggle=""add-user-modal""]'"
+"('[onclick=""document.getElementById(\'add-object-acl-modal\'"
+"('[role=""tab""]'"
+"('[role=""tab""][aria-selected=""true""]'"
+"('[role=""tablist""]'"
+"('[role=""tabpanel""]'"
+"('address', ':'"
+"('afterend', cancelButton"
+"('afterend', subtreeContainer"
+"('aria-hidden', 'true'"
+"('aria-selected', 'false'"
+"('aria-selected', 'true'"
+"('aria-selected', isSelected"
+"('aria-selected', tab === clickedTab ? 'true' : 'false'"
+"('attributes', {}"
+"('bData', ':'"
+"('beforeend', spinnerSVG"
+"('bg-blue-100', 'text-blue-800', 'dark:bg-blue-900/50', 'dark:text-blue-300'"
+"('bg-blue-500', 'dark:bg-blue-700', 'text-white'"
+"('bg-gray-100', 'text-gray-800', 'dark:bg-gray-900/50', 'dark:text-gray-300'"
+"('bg-green-100', 'text-green-800', 'dark:bg-green-900/50', 'dark:text-green-300'"
+"('bg-green-600', 'text-white', 'hover:bg-green-700'"
+"('bg-neutral-100', 'dark:bg-neutral-700'"
+"('bg-neutral-200', 'dark:bg-neutral-700'"
+"('bg-neutral-200', 'dark:bg-neutral-800'"
+"('bg-red-100', 'text-red-800', 'dark:bg-red-900/50', 'dark:text-red-300'"
+"('bg-yellow-100', 'text-yellow-800', 'dark:bg-yellow-900/50', 'dark:text-yellow-300'"
+"('capage.html', **context"
+"('cchNameLength', 'B-dnsName'"
+"('change', ("
+"('change', async (e"
+"('class', 'w-5 h-5 text-blue-500'"
+"('clear', exit_on_error=False"
+"('click', ("
+"('click', (e"
+"('click', (event"
+"('click', async ("
+"('click', async (event"
+"('click', closeAddObjectAclModal"
+"('click', closeExplorerAddObjectAclModal"
+"('click', function("
+"('click', handleDisconnect"
+"('click', searchComputers"
+"('click', searchUsers"
+"('click', showAddComputerModal"
+"('click', showAddDnsRecordModal"
+"('click', showAddUserModal"
+"('command', ''"
+"('computerpage.html', **context"
+"('dark:bg-neutral-900', 'dark:text-white'"
+"('dark:bg-neutral-900', 'dark:text-white', 'dark:focus-visible:outline-neutral-900'"
+"('dark:hover:bg-white/5', 'dark:hover:text-white', 'cursor-pointer'"
+"('dashboardpage.html', **context"
+"('data-cn', gpo.attributes.cn"
+"('data-dn', dn"
+"('data-dn', gpo.dn"
+"('data-dn', ou.dn"
+"('data-dn', rootDn"
+"('data-identifier', node.dn"
+"('data-identifier', obj.dn"
+"('dc=vulnerable,dc=contoso,dc=com', '(objectclass=person"
+"('div[role=""alert-error""]'"
+"('div[role=""alert-success""]'"
+"('dnsName', ':'"
+"('dnsNodeName', ':'"
+"('dnspage.html', **context"
+"('dummy_section', k"
+"('dwChildCount', '>L'"
+"('dwExpire', '>L'"
+"('dwFlags', '>L'"
+"('dwMinimumTtl', '>L'"
+"('dwRefresh', '>L'"
+"('dwRetry', '>L'"
+"('dwSerialNo', '>L'"
+"('entombedTime', '<Q'"
+"('exit', exit_on_error=False"
+"('explorerpage.html', **context"
+"('fill', 'none'"
+"('font-bold', 'text-black', 'border-b-2', 'border-black', 'dark:border-yellow-500', 'dark:text-yellow-500'"
+"('get', ''"
+"('gpopage.html', **context"
+"('grouppage.html', **context"
+"('hidden', !shouldShow"
+"('hidden', true"
+"('host/%s' % targetName, type=constants.PrincipalNameType.NT_SRV_INST.value"
+"('http://www.w3.org/2000/svg', 'svg'"
+"('input', ("
+"('input', (e"
+"('input', debounce(("
+"('input', filterContent"
+"('input', function("
+"('input[name=""object-search""]'"
+"('ipv6Address', '16s'"
+"('keydown', (e"
+"('keydown', (event"
+"('keydown', handleEscape"
+"('keypress', (e"
+"('krbtgt/%s'%domain, type=constants.PrincipalNameType.NT_PRINCIPAL.value"
+"('ldap-link', 'hover:bg-gray-100'"
+"('ldap/%s' % target, type=constants.PrincipalNameType.NT_SRV_INST.value"
+"('ldap3 library doesn\'t support CB. Install with ""pip install \""git+https://github.com/H0j3n/ldap3.git@powerview.py_match-requirements\""""'"
+"('my-4', 'border-t', 'border-neutral-200', 'dark:border-neutral-700'"
+"('nameExchange', ':', DNS_COUNT_NAME"
+"('nameNode', ':', DNS_COUNT_NAME"
+"('namePrimaryServer', ':', DNS_COUNT_NAME"
+"('nameTarget', ':', DNS_COUNT_NAME"
+"('no_cache', False"
+"('obfuscate', False"
+"('onclick', 'openAddObjectAclModal("
+"('oupage.html', **context"
+"('records-container', 'ml-4', 'mt-2', 'hidden'"
+"('static', filename='css/style.css'"
+"('static', filename='images/apple-touch-icon.png'"
+"('static', filename='images/favicon-16x16.png'"
+"('static', filename='images/favicon-32x32.png'"
+"('static', filename='js/adcs.js'"
+"('static', filename='js/ca.js'"
+"('static', filename='js/computer.js'"
+"('static', filename='js/dashboard.js'"
+"('static', filename='js/dns.js'"
+"('static', filename='js/explorer.js'"
+"('static', filename='js/gpo.js'"
+"('static', filename='js/group.js'"
+"('static', filename='js/icon.js'"
+"('static', filename='js/main.js'"
+"('static', filename='js/modules.js'"
+"('static', filename='js/ou.js'"
+"('static', filename='js/static.js'"
+"('static', filename='js/tree.js'"
+"('static', filename='js/users.js'"
+"('static', filename='js/utils.js'"
+"('static', filename='site.webmanifest'"
+"('stroke', 'currentColor'"
+"('submit', (event"
+"('submit', async (e"
+"('submit', async (event"
+"('submit', handleExplorerAclSubmit"
+"('subtree', 'ml-6', 'space-y-1'"
+"('tabindex', '-1'"
+"('tabindex', '0'"
+"('tabindex', isSelected ? '0' : '-1'"
+"('target', action='store', metavar='target', help='[[domain/]username[:password]@]<targetName or address>'"
+"('text-blue-500', 'hover:text-blue-600', 'dark:text-blue-400', 'dark:hover:text-blue-300'"
+"('text-neutral-600', 'dark:text-neutral-400', 'px-3', 'py-2'"
+"('text-neutral-600', 'font-medium'"
+"('text-neutral-900', 'dark:text-white', 'mr-2','text-left'"
+"('text-neutral-900', 'dark:text-white', 'px-3', 'py-2'"
+"('text-neutral-900', 'dark:text-white', 'py-2'"
+"('title', 'Add Group'"
+"('title', 'Add User to Group'"
+"('title', 'Add User'"
+"('title', 'Delete'"
+"('title', 'Edit'"
+"('title', objectClassLabel"
+"('translate-x-full', 'hidden'"
+"('userspage.html', **context"
+"('utf-8', errors='ignore'"
+"('utilspage.html', **context"
+"('viewBox', '0 0 24 24'"
+"('w-full', 'text-left'"
+"('w-full', 'text-left', 'border-collapse'"
+"('wLength', '>H'"
+"('wPort', '>H'"
+"('wPreference', '>H'"
+"('wPriority', '>H'"
+"('wRecordCount', '>H'"
+"('wWeight', '>H'"
+"('zoneAdminEmail', ':', DNS_COUNT_NAME"
+"((""(name="" + escape_filter_chars(tpl"
+"((""`"" + sid_map[principal] + ""`"" for principal in enrollment_principals"
+"((""`"" + tpl + ""`"" for tpl in entry[""attributes""][""certificateTemplates""]"
+"((DC=[^,]+,?"
+"(([key, value]"
+"(([label, value]"
+"(([name, value]"
+"(([section, settings]"
+"(([subsection, values]"
+"(([type, button]"
+"((a, b"
+"((eku for eku in entry[""raw_attributes""][""pKIExtendedKeyUsage""] if eku in authentication_ekus"
+"((gpo, index"
+"((headerText, index"
+"((host2ip(computer_name, self.nameserver, 3, True, use_system_ns=self.use_system_nameserver"
+"((part, index"
+"((record, index"
+"((self.target, port"
+"((target, 80"
+"((zoneName, index"
+"() == ""No"".casefold("
+"() == ""Yes"".casefold("
+"() == ""null"""
+"() => handleLdapLinkClick(event, dn"
+"() => handleLdapLinkClick(event, member.attributes.MemberDistinguishedName"
+"() and int(self.template[""msPKI-Template-Schema-Version""].raw_values[0]"
+"() if hasattr(pv_args, 'identity'"
+"() if len(parts[3].split(' ', 1"
+"() if not is_admin else ""%s%s%s"" % (bcolors.WARNING, conn.who_am_i("
+"() if not skip_random_spacing and self.enable_spacing else ''}"""
+"() if self.enable_spacing else ''}"""
+"() or not isinstance(value, str"
+"(), 16"
+"(), 5000"
+"(), self.powerview.args.username.lower("
+"().lstrip(""u:"""
+"().removeprefix(""_ldap._tcp.pdc._msdcs."""
+"().split(','"
+"(*args, **kwargs"
+"(/([!""#$%&'("
+"(/CN=([^,]+"
+"(/[,=]/g, '_'"
+"(/[{}]/g, ''"
+"(/\./g, '-'"
+"(/\\/g, ''"
+"(/^\w/, c => c.toUpperCase("
+"(0, 3"
+"(0, MAX_RAND"
+"(0,len(infobject"
+"(0,len(strs"
+"(0,len(strs[i]"
+"(0,self.create_ace(ACCESS_MASK.Delete.value + ACCESS_MASK.DeleteTree.value, self.principal_SID, ace_type=""denied"""
+"(0,self.create_ace(ACCESS_MASK.DeleteChild.value, self.principal_SID, ace_type=""denied"""
+"(0x0, ""SAM_DOMAIN_OBJECT"""
+"(0x00000001, ""DES-CBC-CRC"""
+"(0x00000001, ""SCRIPT"""
+"(0x00000002, ""ACCOUNTDISABLE"""
+"(0x00000002, ""DES-CBC-MD5"""
+"(0x00000004, ""RC4-HMAC"""
+"(0x00000008, ""AES128"""
+"(0x00000008, ""HOMEDIR_REQUIRED"""
+"(0x00000010, ""AES256"""
+"(0x00000010, ""LOCKOUT"""
+"(0x00000020, ""PASSWD_NOTREQD"""
+"(0x00000040, ""PASSWD_CANT_CHANGE"""
+"(0x00000080, ""ENCRYPTED_TEXT_PWD_ALLOWED"""
+"(0x00000100, ""TEMP_DUPLICATE_ACCOUNT"""
+"(0x00000200, ""NORMAL_ACCOUNT"""
+"(0x00000800, ""INTERDOMAIN_TRUST_ACCOUNT"""
+"(0x00001000, ""WORKSTATION_TRUST_ACCOUNT"""
+"(0x00002000, ""SERVER_TRUST_ACCOUNT"""
+"(0x00010000, ""DONT_EXPIRE_PASSWORD"""
+"(0x00020000, ""MNS_LOGON_ACCOUNT"""
+"(0x00040000, ""SMARTCARD_REQUIRED"""
+"(0x00080000, ""TRUSTED_FOR_DELEGATION"""
+"(0x00100000, ""NOT_DELEGATED"""
+"(0x00200000, ""USE_DES_KEY_ONLY"""
+"(0x00400000, ""DONT_REQ_PREAUTH"""
+"(0x00800000, ""PASSWORD_EXPIRED"""
+"(0x01000000, ""TRUSTED_TO_AUTH_FOR_DELEGATION"""
+"(0x04000000, ""PARTIAL_SECRETS_ACCOUNT"""
+"(0x10000000, ""SAM_GROUP_OBJECT"""
+"(0x10000001, ""SAM_NON_SECURITY_GROUP_OBJECT"""
+"(0x20000000, ""SAM_ALIAS_OBJECT"""
+"(0x20000001, ""SAM_NON_SECURITY_ALIAS_OBJECT"""
+"(0x30000000, ""SAM_USER_OBJECT"""
+"(0x30000001, ""SAM_MACHINE_ACCOUNT"""
+"(0x30000002, ""SAM_TRUST_ACCOUNT"""
+"(0x40000000, ""SAM_APP_BASIC_GROUP"""
+"(0x40000001, ""SAM_APP_QUERY_GROUP"""
+"(0x7fffffff, ""SAM_ACCOUNT_TYPE_MAX"""
+"(1, MAX_RAND"
+"(10000000,99999999"
+"(1601, 1, 1"
+"(1601,1,1"
+"(2, MAX_RAND"
+"(CERTIFICATE_RIGHTS.GENERIC_ALL, [], ""Full Control Principals"""
+"(CERTIFICATE_RIGHTS.WRITE_DACL, [], ""Write Dacl Principals"""
+"(CERTIFICATE_RIGHTS.WRITE_OWNER, [], ""Write Owner Principals"""
+"(CN=Extended-Rights,CN=Configuration,DC=..."
+"(DACLedit, self"
+"(Flags, Access Mask, Trustee, ObjectType, InheritedObjectType"
+"(IDict, self"
+"(IOError, FileNotFoundError, PermissionError"
+"(IndexError, KeyError"
+"(JSON.stringify(data, null, 2"
+"(KeyError, IndexError"
+"(LdapToken(attribute, 'Attribute'"
+"(LdapToken(char, 'BooleanOperator'"
+"(LdapToken(char, 'GroupEnd'"
+"(LdapToken(char, 'GroupStart'"
+"(LdapToken(comparison, 'ComparisonOperator'"
+"(LdapToken(oid, 'ExtensibleMatchFilter'"
+"(LdapToken(value, 'Value'"
+"(OBJECT_TYPES_GUID[inh_obj_type], inh_obj_type"
+"(OBJECT_TYPES_GUID[obj_type], obj_type"
+"(['name', 'distinguishedName']"
+"(['{%d:%ds} ' % (num, width"
+"([Operators.AND, Operators.OR, Operators.NOT]"
+"([True, False]"
+"([^,]+"
+"([data], parentElement"
+"([f""{item['attribute']}={item['value']}"" for item in parsed_structure]"
+"([i+"" - ""+vulns[i] for i in vulns.keys("
+"([pipe, binding_params[pipe]['protocol'], binding_params[pipe]['description'], f'{bcolors.OKGREEN}Yes{bcolors.ENDC}']"
+"([pipe, binding_params[pipe]['protocol'], binding_params[pipe]['description'], f'{bcolors.WARNING}No{bcolors.ENDC}']"
+"([spn, sAMAccountName, memberOf, delegation]"
+"([value, key]"
+"(\s*,\s*[A-Za-z]+=[^,]+"
+"(^(\s*[A-Za-z]+=[^,]+"
+"(__name__, static_folder='../../web/front-end/static', template_folder='../../web/front-end/templates'"
+"(__version__, __year__, "", "".join(__author__"
+"(_entries[""attributes""], properties"
+"(_entries[""attributes""].keys("
+"(_entries[""attributes""][""msDS-GroupMSAMembership""]"
+"(_entries['attributes']['dnsHostName'], list"
+"(_entries['attributes']['dnsHostName'], self.nameserver, 3, True, use_system_ns=self.use_system_nameserver, type=list"
+"(_input, list"
+"(`Error fetching ${constantType} constants:`, error"
+"(`Error loading ${tabName} tab content:`, error"
+"(`[data-modal-hide=""${modalId}""]`"
+"(`[data-modal-target=""${modalId}""]`"
+"(`[data-name=""${part}""]`"
+"(`button[aria-controls=""tabpanel${tab.charAt(0"
+"(a for a in sd[""Dacl""][""Data""] if a[""AceType""] == ldaptypes.ACCESS_ALLOWED_OBJECT_ACE.ACE_TYPE"
+"(abspath, ""a"""
+"(abspath,""a"""
+"(access_mask, sid, ace_type, aceflags=0x00"
+"(ace[""Ace""][""InheritedObjectType""]"
+"(ace[""Ace""][""Mask""][""Mask""]"
+"(ace[""Ace""][""ObjectType""]"
+"(ace[""Ace""][""Sid""].getData("
+"(ace_guid, object_class"
+"(addtype, DNS_UTIL.get_next_serial(self.dc_ip, zonename, True"
+"(aesKey, str"
+"(af, socktype, proto"
+"(an extended right, a property, etc, to add"
+"(apReq, 'ticket', ticket.to_asn1"
+"(apReq,'ticket', ticket.to_asn1"
+"(args, ""ldapfilter"", ""(&(objectClass=msDS-GroupManagedServiceAccount"
+"(args, ""ldapfilter"", ""(msDS-AllowedToActOnBehalfOfOtherIdentity=*"
+"(args, 'admincount'"
+"(args, 'allowdelegation'"
+"(args, 'append'"
+"(args, 'basedn'"
+"(args, 'bitlocker'"
+"(args, 'check_web_enrollment'"
+"(args, 'disabled'"
+"(args, 'disallowdelegation'"
+"(args, 'enabled'"
+"(args, 'excludedcs'"
+"(args, 'gmsapassword'"
+"(args, 'identity'"
+"(args, 'identity', None"
+"(args, 'laps'"
+"(args, 'ldap_address', ldap_address"
+"(args, 'ldapfilter'"
+"(args, 'lockout'"
+"(args, 'no_cache'"
+"(args, 'objectsid'"
+"(args, 'passnotrequired'"
+"(args, 'password_expired'"
+"(args, 'pre2k'"
+"(args, 'preauthnotrequired'"
+"(args, 'printers'"
+"(args, 'properties'"
+"(args, 'rbcd'"
+"(args, 'resolve_sids'"
+"(args, 'rights'"
+"(args, 'searchbase'"
+"(args, 'searchbase', self.root_dn"
+"(args, 'security_identifier', None"
+"(args, 'set'"
+"(args, 'shadowcred'"
+"(args, 'spn'"
+"(args, 'trustedtoauth'"
+"(args, 'unconstrained'"
+"(args, 'value'"
+"(args, 'vulnerable'"
+"(args,'clear'"
+"(args,'domain',domain"
+"(args,'lmhash',lmhash"
+"(args,'nthash', nthash"
+"(args,'password',password"
+"(args,'username',username"
+"(args.ldap_address, args.dc_ip"
+"(args.ldap_address, nameserver=self.nameserver, dns_timeout=5, use_system_ns = self.use_system_ns"
+"(asRep['e-data'], asn1Spec=METHOD_DATA("
+"(asReq, 'req-body'"
+"(attr, bytes"
+"(attr, datetime.datetime"
+"(attr, int"
+"(attr_append, dict"
+"(attr_set, dict"
+"(attribute, operator, value, parsed_structure[i]"
+"(attributeName, attributeValue, identity"
+"(attributes = {}, identity"
+"(attributes, identity"
+"(attrs['value'], list"
+"(attrs['value'][0], bytes"
+"(attrs['value'][0], str"
+"(authenticator, 'cname', clientName.components_to_asn1"
+"(authenticator, 'cname', userName.components_to_asn1"
+"(b""\r\n"""
+"(b'NTLM', proxy=proxy"
+"(b'SystemLibraryDTC', accountpassword"
+"(base_dn,'(objectclass=*"
+"(base_path, conn, share"
+"(basedn, ""(objectclass=*"
+"(basequery, 'SRV', tcp=dns_tcp"
+"(basequery.replace('pdc','dc'"
+"(blob[""CurrentPassword""][:-2]"
+"(ca[""distinguishedName""].value, {'certificateTemplates':[(ldap3.MODIFY_DELETE,[templates[0][""name""].value]"
+"(ca_search_base, enroll_filter, attributes=list(properties"
+"(cache_data, f, indent=4"
+"(cache_file, 'r'"
+"(cache_file, 'w'"
+"(certificate=certificate, deviceId=Guid("
+"(checkConnectionStatus, 300000"
+"(cipher, sessionKey, auth_data"
+"(cipher.enctype, aesKey"
+"(cipher.enctype, encAPRepPart['subkey']['keyvalue'].asOctets("
+"(cipher.enctype, nthash"
+"(cipher.enctype,encASRepPart['key']['keyvalue'].asOctets("
+"(clientName, password, domain, lmhash, nthash, aesKey, kdcHost, requestPAC"
+"(clientName, password, domain, lmhash, nthash, aesKey='', kdcHost=None, requestPAC=True, encType=None"
+"(cls, keys, val=None"
+"(cls, self._value_"
+"(computer, self.nameserver, 3, True, use_system_ns=self.use_system_nameserver"
+"(computer,self.domain"
+"(computer.dn, tr"
+"(computer.entry_dn, {'unicodePwd': [(ldap3.MODIFY_REPLACE, ['""{}""'.format(self.__computerPassword"
+"(computerDn, ['top','person','organizationalPerson','user','computer'], ucd"
+"(computerHostname, domain"
+"(computerHostname, self.__domain"
+"(computer_name, computer_pass, basedn"
+"(computer_name, self.nameserver, 3, True, use_system_ns=self.use_system_nameserver"
+"(computer_name=computername, args=pv_args"
+"(computer_name=computername, identity=pv_args.identity, properties=properties, args=pv_args"
+"(computerscontainer, domainDumper"
+"(confirm(`Are you sure you want to delete the attribute ""${name}""?`"
+"(conn, args"
+"(conn, args, target_domain=pv_args.server"
+"(connection.send('bindRequest', request, None"
+"(connection.version, ldap3.SASL, user, None, 'GSS-SPNEGO', blob.getData("
+"(const [key, value] of Object.entries(attributes"
+"(constants.EncryptionTypes.aes128_cts_hmac_sha1_96.value, constants.EncryptionTypes.aes256_cts_hmac_sha1_96.value"
+"(createPropertyCheckbox(prop.name, prop.label, prop.default"
+"(create_ace(SIMPLE_PERMISSIONS.FullControl.value, usersid, aceflags"
+"(create_object_ace(guid, usersid, aceflags"
+"(curUserDetails[""attributes""][""adminCount""]"
+"(current[-1], list"
+"(current[0], list"
+"(data, abc.Mapping"
+"(data, bytes"
+"(data, host, kdcHost"
+"(data, list"
+"(data, null, 2"
+"(data, parentElement"
+"(data, timedelta"
+"(dataArray, parentElement"
+"(dc, nameserver, 3, dns_tcp, use_system_ns"
+"(dc, self.nameserver, 3, True, use_system_ns=self.use_system_nameserver"
+"(dce, '\x00', NULL, 10"
+"(dce, builtin=True"
+"(dce, domainHandle"
+"(dce, domainHandle, [self.__computerName]"
+"(dce, domainHandle, access, userRID"
+"(dce, domainHandle, samr.MAXIMUM_ALLOWED, userRID"
+"(dce, domainHandle, self.__computerName, samr.USER_WORKSTATION_TRUST_ACCOUNT, samr.USER_FORCE_PASSWORD_CHANGE,"
+"(dce, domain_handle"
+"(dce, domain_handle, (entries[0]['attributes']['sAMAccountName'],"
+"(dce, domain_handle, (object_name,"
+"(dce, domain_handle, alias_id_list"
+"(dce, domain_handle, gid"
+"(dce, domain_handle, groupId=gid"
+"(dce, domain_handle, group_id_list"
+"(dce, domain_handle, samr.MAXIMUM_ALLOWED, user_rid"
+"(dce, domain_handle, samr.USER_NORMAL_ACCOUNT"
+"(dce, domain_handle, sidArray"
+"(dce, domain_handle, userId=userRID"
+"(dce, domain_handle, user_rid"
+"(dce, group_handle"
+"(dce, group_handle, gid"
+"(dce, hKey"
+"(dce, hKey, index"
+"(dce, handle"
+"(dce, samrh"
+"(dce, samrh, identity"
+"(dce, samrh, rid"
+"(dce, scManagerHandle"
+"(dce, self.dc_ip + '\x00'"
+"(dce, servHandle"
+"(dce, servHandle, samr.DOMAIN_LOOKUP | samr.DOMAIN_CREATE_USER , domainSID"
+"(dce, servHandle, selectedDomain"
+"(dce, server_handle"
+"(dce, server_handle, domainId=domainSID"
+"(dce, server_handle, domainId=domain_id"
+"(dce, server_handle, domain_name"
+"(dce, server_handle, self.domain"
+"(dce, userHandle"
+"(dce, userHandle, req"
+"(dce, userHandle, self.__computerPassword"
+"(dce, user_handle"
+"(dce, user_handle, samr.USER_INFORMATION_CLASS.UserAllInformation"
+"(dce,1"
+"(def_prop,searchbase,identity"
+"(default_naming_context, ""(&(objectSid=%s"
+"(description = f""Python alternative to SharpSploit's PowerView script, version {bcolors.OKBLUE + __version__ + bcolors.ENDC}"""
+"(dirname, p"
+"(display_name, list"
+"(displayname, name, args=pv_args"
+"(distinguishedName, rowElement"
+"(dn, 'BASE'"
+"(dn, 'BASE', ['*']"
+"(dn, ['top','container','groupPolicyContainer'], gpo_data"
+"(dn, ['top','organizationalUnit'], ou_data"
+"(dn, div"
+"(dn, icon"
+"(dn, name"
+"(dn, ouname='', isRoot = false"
+"(dn, parentDiv, no_cache=true"
+"(dn, sid"
+"(dn, {'nTSecurityDescriptor': (ldap3.MODIFY_REPLACE, [data]"
+"(dn, {'nTSecurityDescriptor':(ldap3.MODIFY_REPLACE, [data]"
+"(dns_name, dns_address, selected_zone"
+"(domain, 'A', tcp=True"
+"(domain, args=None"
+"(domain, domain"
+"(domain, nameserver"
+"(domain, nameserver=None, dns_tcp=True, use_system_ns=True"
+"(domain, user, targetName"
+"(domain, username"
+"(domainDumper, self.config.escalateuser"
+"(domainDumper.root, ""(ObjectClass=domain"
+"(domainDumper.root, '(&(ObjectClass=msDS-GroupManagedServiceAccount"
+"(domainDumper.root, '(&(cn=Users"
+"(domainDumper.root, '(&(objectCategory=computer"
+"(domainDumper.root, '(member:1.2.840.113556.1.4.1941:=%s"
+"(domainDumper.root, '(objectClass=domain"
+"(domainDumper.root, '(objectSid=%s"
+"(domainDumper.root, '(objectSid=%s-%d"
+"(domainDumper.root, '(sAMAccountName=%s"
+"(domainDumper.root, '(|(objectClass=domain"
+"(domain_dumper.root, '(&(objectCategory=Computer"
+"(domain_dumper.root, '(sAMAccountName=%s"
+"(domain_dumper.root, search_filter, attributes=[""sAMAccountName""]"
+"(domain_sid, objectsid, ldap_session=None"
+"(domainsid, 512"
+"(domainsid, 519"
+"(domainsid, gid"
+"(e, dn"
+"(e.g., ""4,0"""
+"(e.g., Get-DomainUser -Identity *admin*"
+"(e.g., in showLdapAttributesModal or a separate init function"
+"(edr[""name""]"
+"(eku, list"
+"(encTGSRepPart['key']['keytype'], encTGSRepPart['key']['keyvalue'].asOctets("
+"(enc_type, bytes"
+"(enc_type, list"
+"(ent,properties"
+"(ent['attributes'],properties"
+"(entries, dict"
+"(entries, key=sort_key"
+"(entries, privs, membersids, sidmapping, domainDumper"
+"(entries, tableView"
+"(entries,pv_args.sort_by"
+"(entries,pv_args.where"
+"(entries=rows, headers=headers"
+"(entries[""rows""], entries[""headers""]"
+"(entries['attributes']['dnsHostName'], self.nameserver, 3, True, use_system_ns=self.use_system_nameserver"
+"(entries[0][""attributes""], dict"
+"(entries[0][""attributes""], ldap3.utils.ciDict.CaseInsensitiveDict"
+"(entries[0][""attributes""], list"
+"(entry, ldap3.abstract.entry.Entry"
+"(entry, new_attributes=[], remove=[]"
+"(entry, properties"
+"(entry, str"
+"(entry,ldap3.abstract.entry.Entry"
+"(entry.attributes.cn, tr"
+"(entryDiv, commandHistoryEntries.firstChild"
+"(entry[""attributes""]"
+"(entry[""attributes""], ldap3.utils.ciDict.CaseInsensitiveDict"
+"(entry[""attributes""].keys("
+"(entry[""attributes""][""certificateTemplates""]"
+"(entry[""attributes""][""distinguishedName""], list"
+"(entry[""attributes""][""msDS-AllowedToActOnBehalfOfOtherIdentity""], list"
+"(entry[""attributes""][""msDS-SupportedEncryptionTypes""]"
+"(entry[""attributes""][""msDS-SupportedEncryptionTypes""][0]"
+"(entry[""attributes""][""nTSecurityDescriptor""], list"
+"(entry[""attributes""][""objectSid""], list"
+"(entry[""attributes""][""sAMAccountName""], list"
+"(entry[""attributes""][""sAMAccountName""],list"
+"(entry[""attributes""][""userAccountControl""]"
+"(entry[""raw_attributes""][""nTSecurityDescriptor""][0]"
+"(entry[""raw_attributes""][""pKIExtendedKeyUsage""]"
+"(entry['attributes'], dict"
+"(entry['attributes'], ldap3.utils.ciDict.CaseInsensitiveDict"
+"(entry['attributes'], list"
+"(entry['attributes'],list"
+"(entry['attributes']['dnsHostName'], self.nameserver, 3, True, use_system_ns=self.use_system_nameserver"
+"(entry['attributes']['msDS-SupportedEncryptionTypes'], list"
+"(entry['attributes']['userAccountcontrol'], list"
+"(entry['attributes'][key], list"
+"(entry[0]['attributes']['distinguishedName'], {'dnsRecord': [(ldap3.MODIFY_REPLACE, records"
+"(error => console.error('Error fetching certificate templates:', error"
+"(error => console.error('Error:', error"
+"(error_msg, asRep, cipher, key, cipherText"
+"(event, '${Array.isArray(value"
+"(event, '${admin.attributes.MemberDistinguishedName}'"
+"(event, '${computer.dn}'"
+"(event, '${gpo.dn}'"
+"(event, '${member.attributes.MemberDistinguishedName}'"
+"(event, '${ou.dn}'"
+"(event, '${right}'"
+"(event, '${template.attributes.Enabled ? 'Enabled' : 'Disabled'}'"
+"(event, '${template.attributes['Certificate Authorities']}'"
+"(event, '${user.dn}'"
+"(event, '${value}'"
+"(event, '${v}'"
+"(event, computer.dn"
+"(event, gpo.dn"
+"(event, identity"
+"(event, item.attributes.distinguishedName"
+"(event, item.dn"
+"(event, member.attributes.MemberDistinguishedName"
+"(event, text"
+"(event, user.dn"
+"(event, v"
+"(event, value"
+"(f"":{token['content']}:"""
+"(f""Adding Delete and DeleteTree to %s"" % (self.target_SID if self.target_SID else self.target_DN"
+"(f""Adding DeleteChild to %s"" % (self.target_SID if self.target_SID else self.target_DN"
+"(f""Adding FullControl to %s"" % (self.target_SID if self.target_SID else self.target_DN"
+"(f""AuthError: {str(ldap_session.result['message']"
+"(f""CN=Extended-Rights,CN=Configuration,{self.root_dn}"", ""(rightsGuid=*"
+"(f""Cert File: {cert_file.name}"""
+"(f""Command parsing error: {str(e"
+"(f""Connecting as ANONYMOUS to %s, Port: %s, SSL: %s"" % (ldap_server_kwargs[""host""], ldap_server_kwargs[""port""], ldap_server_kwargs[""use_ssl""]"
+"(f""Connecting to %s, Port: %s, SSL: %s"" % (ldap_server_kwargs[""host""], ldap_server_kwargs[""port""], ldap_server_kwargs[""use_ssl""]"
+"(f""Connection is not alive: {e}"""
+"(f""Error binding to {self.proto}"""
+"(f""Error caching results: {e}"""
+"(f""Error clearing cache: {e}"""
+"(f""Error executing command: {str(e"
+"(f""Error initializing storage: {e}"""
+"(f""Error reading history file {histfile}: {e}"""
+"(f""Error setting settings: {str(e"
+"(f""Error writing history file {histfile}: {e}"""
+"(f""Failed to get computer hostname. The domain probably does not support NTLM authentication. Skipping..."""
+"(f""Failed to get group memberships: {str(e"
+"(f""File {path} not found"""
+"(f""Found named pipe: {pipe}"""
+"(f""History file not found: {histfile}"""
+"(f""Key File: {key_file.name}"""
+"(f""LDAP Filter: {search_filter}"""
+"(f""LDAPInvalidDnError: {str(e"
+"(f""Limit of {limit} exceeds the maximum allowed value of {max_limit}"""
+"(f""Malformed LDAP filter: value missing after {attribute}"""
+"(f""Method {method_name} not found in PowerView"""
+"(f""Parsing {'-Set' if args.set else '-Append'} value failed"""
+"(f""Powerview API Error: {full_method_name}: {str(e"
+"(f""Powerview web listening on {self.host}:{self.port}"""
+"(f""Querying {hostname} from DNS server {nameserver}"""
+"(f""Removing Delete and DeleteTree to %s"" % (self.target_SID if self.target_SID else self.target_DN"
+"(f""Removing DeleteChild to %s"" % (self.target_SID if self.target_SID else self.target_DN"
+"(f""Targeting {target}"""
+"(f""Unexpected Error: {str(ldap_session.result['message']"
+"(f""Unknown error: {str(e"
+"(f""Unrecognized argument: {unk}"""
+"(f""User {principalName} does not support AES encryption"""
+"(f""User {self.username} has adminCount attribute set to 1. Might be admin somewhere somehow :"
+"(f""User {self.username} is a Domain Admin"""
+"(f""Using host's resolver to resolve {hostname}"""
+"(f""[Add-DomainCATemplateAcl] Failed to modify {name} template ACL"""
+"(f""[Add-DomainCATemplateAcl] Found target identity {principal_identity[0].get('attributes'"
+"(f""[Add-DomainCATemplateAcl] Successfully modified {name} template acl"""
+"(f""[Add-DomainCATemplateAcl] {name} template not found in domain"""
+"(f""[Add-DomainCATemplateAcle] Template {name} exists"""
+"(f""[Add-DomainCATemplate] Added new certificate template {name}"""
+"(f""[Add-DomainCATemplate] Added new template OID {oidpath}"""
+"(f""[Add-DomainCATemplate] Duplicating existing template {args.duplicate} properties"""
+"(f""[Add-DomainCATemplate] Error adding new template OID ({self.ldap_session.result['description']}"
+"(f""[Add-DomainCATemplate] Failed to create certiciate template {name} ({self.ldap_session.result['description']}"
+"(f""[Add-DomainCATemplate] Issuing certificate template to {ca_name}"""
+"(f""[Add-DomainCATemplate] Template {name} already exists"""
+"(f""[Add-DomainCATemplate] Template {name} issued!"""
+"(f""[Add-DomainCATemplate] msPKI-Cert-Template-OID: {template_oid}"""
+"(f""[Add-DomainComputer] {args.basedn} could not be found in the domain"""
+"(f""[Add-DomainGPO] Added new {identity} GPO object"""
+"(f""[Add-DomainGPO] Adding GPO with dn: {dn}"""
+"(f""[Add-DomainGPO] DN {basedn} not found in domain"""
+"(f""[Add-DomainGPO] Failed to create {identity} GPO ({self.ldap_session.result['description']}"
+"(f""[Add-DomainGroupMember] {str(e"
+"(f""[Add-DomainGroup] Adding group in {parent_dn_entries}"""
+"(f""[Add-DomainGroup] Failed adding {groupname} to domain ({self.ldap_session.result['description']}"
+"(f""[Add-DomainGroup] {parent_dn_entries} could not be found in the domain"""
+"(f""[Add-DomainOU] Added new {identity} OU"""
+"(f""[Add-DomainOU] DN {basedn} not found in domain"""
+"(f""[Add-DomainOU] Failed to create {identity} OU ({self.ldap_session.result['description']}"
+"(f""[Add-DomainOU] OU distinguishedName: {dn}"""
+"(f""[Add-DomainUser] Adding user in {parent_dn_entries}"""
+"(f""[Add-DomainUser] {parent_dn_entries} could not be found in the domain"""
+"(f""[Add-GPLink] Adding new GPLink to {targetidentity_dn}"""
+"(f""[Add-GPLink] Failed to add gPLink to {targetidentity_dn} OU"""
+"(f""[Add-GPLink] Found GPO with GUID {gpidentity_dn}"""
+"(f""[Add-GPLink] Found target identity {targetidentity_dn}"""
+"(f""[Add-GPLink] Successfully added gPLink to {targetidentity_dn} OU"""
+"(f""[Add-GPLink] gPLink value: {gpidentity}"""
+"(f""[ConvertFrom-SID] LDAP search filter: {ldap_filter}"""
+"(f""[ConvertFrom-SID] Multiple objects found for {objectsid}"""
+"(f""[ConvertFrom-SID] No objects found for {objectsid}"""
+"(f""[ConvertFrom-SID] Using previously stored SID: {known_sid}"""
+"(f""[ConvertTo-UACValue] Converting UAC name to value: {value}"""
+"(f""[Disable-DomainDNSRecord] {recordname} dns record disabled"""
+"(f""[Find-LocaAdminAccess] Found {len(entries"
+"(f""[Get-DomainCATemplate] Found {len(cas"
+"(f""[Get-DomainCATemplate] No certificate authority found"""
+"(f""[Get-DomainComputer] Searching for computers with SPN attribute: {args.spn}"""
+"(f""[Get-DomainComputer] Using search base: {searchbase}"""
+"(f""[Get-DomainController] LDAP search filter: {ldap_filter}"""
+"(f""[Get-DomainController] Using search base: {searchbase}"""
+"(f""[Get-DomainDNSRecord] LDAP Filter string: {ldap_filter}"""
+"(f""[Get-DomainDNSRecord] Search base: {zone['attributes']['distinguishedName']}"""
+"(f""[Get-DomainDNSRecord] Zone {zonename} not found"""
+"(f""[Get-DomainDNSZone] LDAP Filter string: {ldap_filter}"""
+"(f""[Get-DomainDNSZone] Search base: {searchbase}"""
+"(f""[Get-DomainGroupMember] Failed to query for {member_dn}"""
+"(f""[Get-DomainGroup] Using search base: {searchbase}"""
+"(f""[Get-DomainObjectAcl] Searching for GUIDs in {self.root_dn}"""
+"(f""[Get-DomainObjectAcl] Searching for identity %s"" % (identity"
+"(f""[Get-DomainObject] Using search base: {searchbase}"""
+"(f""[Get-DomainUser] Using search base: {searchbase}"""
+"(f""[Get-ExchangeServer] Using search base: {searchbase}"""
+"(f""[Get-GPOPolicy] Error listing preferences: {str(e"
+"(f""[Get-GPOSettings] Error processing GPO: {str(e"
+"(f""[Get-GPOSettings] Error processing {section}: {str(e"
+"(f""[Get-GPOSettings] File not found or access denied: {file_path}"""
+"(f""[Get-LocalUser] Invalid properties: {', '.join(invalid_properties"
+"(f""[Get-NamedPipes] Using FQDN: {host}"""
+"(f""[Get-NetShare] Host not found"""
+"(f""[Get-NetShare] Using FQDN: {host}"""
+"(f""[IndexError] No object found for {sid}"""
+"(f""[RBCD] Appended {objectsid} to SDDL"""
+"(f""[Remove-DomainCATemplate] Deleting {oid_dn}"""
+"(f""[Remove-DomainCATemplate] Failed to remove template from CA. Skipping..."""
+"(f""[Remove-DomainCATemplate] Failed to remove template oid {oid}. Ignoring..."""
+"(f""[Remove-DomainCATemplate] Found template oid {oid_dn}"""
+"(f""[Remove-DomainCATemplate] Multiple certificates found with name {identity}"""
+"(f""[Remove-DomainCATemplate] Success! {identity} template deleted"""
+"(f""[Remove-DomainCATemplate] Template oid {oid} removed"""
+"(f""[Remove-DomainCATemplate] Template {identity} not found in domain"""
+"(f""[Remove-DomainCATemplate] Template {templates[0]['name'].value} is no longer issued"""
+"(f""[Remove-DomainOU] Failed to delete OU ({self.ldap_session.result['message']}"
+"(f""[Remove-DomainOU] More than one object found"""
+"(f""[Remove-DomainOU] Removing {targetobject_dn}"""
+"(f""[Remove-DomainOU] {identity} not found in domain"""
+"(f""[Remove-DomainObject] Found {targetobject_dn} in domain"""
+"(f""[Remove-DomainObject] More than one object found"""
+"(f""[Remove-DomainObject] Removing object from domain"""
+"(f""[Remove-DomainObject] {identity} not found in domain"""
+"(f""[Remove-GPLink] Failed to modify gPLink on {targetidentity_dn} OU"""
+"(f""[Remove-GPLink] Found GPO with GUID {gpidentity}"""
+"(f""[Remove-GPLink] Found target identity {targetidentity_dn}"""
+"(f""[Remove-GPLink] Successfully modified gPLink on {targetidentity_dn} OU"""
+"(f""[Set-DomainCATemplate] Key {attrs['attribute']} not found in template attribute. Adding anyway..."""
+"(f""[Set-DomainCATemplate] Value {val} already set in the attribute ""+attrs['attribute']"
+"(f""[Set-DomainCATemplate] {str(e"
+"(f""[Set-DomainDNSRecord] Updating dns record {recordname} to {recordaddress}"""
+"(f""[Set-DomainObjectDN] Modifying {targetobject_dn} object dn to {destination_dn}"""
+"(f""[Set-DomainObjectDN] More than one {identity} object found in domain. Try using distinguishedName instead"""
+"(f""[Set-DomainObjectDN] Object {destination_dn} not found in domain"""
+"(f""[Set-DomainObjectDN] {identity} not found in domain"""
+"(f""[Set-DomainObjectOwner] Error modifying object owner ({self.ldap_session.result['description']}"
+"(f""[Set-DomainObjectOwner] {principalidentity} identity found"""
+"(f""[Set-DomainObjectOwner] {principalidentity} identity not found in domain"""
+"(f""[Set-DomainObjectOwner] {targetidentity} identity found"""
+"(f""[Set-DomainObjectOwner] {targetidentity} identity not found in domain"""
+"(f""[Set-DomainObject] Attempting to force add attribute {attrs['attribute']} to target object"""
+"(f""[Set-DomainObject] Attribute {attrs['attribute']} not exists in object. Modifying anyway..."""
+"(f""[Set-DomainObject] Failed to modify attribute {attr_key} for {targetobject[0]['attributes']['distinguishedName']}"""
+"(f""[Set-DomainObject] Identity {identity} not found in domain"""
+"(f""[Set-DomainObject] Insufficient access rights to modify {attr_key}: {str(e"
+"(f""[Set-DomainObject] Invalid value for {attr_key}: {str(e"
+"(f""[Set-DomainObject] Key {attrs['attribute']} not found in template attribute. Adding anyway..."""
+"(f""[Set-DomainObject] More than one identity found. Use distinguishedName instead"""
+"(f""[Set-DomainObject] Parsing {'-Set' if args.set else '-Append'} value failed"""
+"(f""[Set-DomainObject] Value {val} already set in the attribute ""+attrs['attribute']"
+"(f""[Set-DomainObject] {attrs['attribute']} property not found in target identity"""
+"(f""[Set-DomainRBCD] Success! {delegatefrom} is now in {identity}'s msDS-AllowedToActOnBehalfOfOtherIdentity attribute"""
+"(f""[Set-DomainRBCD] {delegatefrom} identity found"""
+"(f""[Set-DomainRBCD] {delegatefrom} identity not found in domain"""
+"(f""[Set-DomainRBCD] {identity} identity found"""
+"(f""[Set-DomainRBCD] {identity} identity not found in domain"""
+"(f""[Storage] Error reading cache: {e}"""
+"(f""[Unlock-ADAccount] Account {identity_san} is not in locked state."""
+"(f""[Unlock-ADAccount] Account {identity_san} unlocked"""
+"(f""[Unlock-ADAccount] Failed to unlock {identity_san}"""
+"(f""[Unlock-ADAccount] Identity {identity_san} found in domain"""
+"(f""[Unlock-ADAccount] Identity {identity} not found in domain"""
+"(f""[Unlock-ADAccount] More then one identity found. Use distinguishedName instead."""
+"(f""\033[38;2;0;{green};255m{line}\033[0m\n"""
+"(f""\033[38;2;255;{green};0m{line}\033[0m\n"""
+"(f""add_{method_name}"""
+"(f""convertfrom_{method_name}"""
+"(f""convertto_{method_name}"""
+"(f""get_{method_name}"""
+"(f""invoke_{method_name}"""
+"(f""obfuscate: {obfuscate}, no_cache: {no_cache}"""
+"(f""remove_{method_name}"""
+"(f""set_{method_name}"""
+"(f""{LdapObfuscate.random_spaces("
+"(f""{cnt}: {name}"""
+"(f'No nameserver provided, using system\'s dns to resolve {domain}'"
+"(f'[ACLEnum] Error parsing security descriptor for {entry.get(""dn"""
+"(f'[ACLEnum] ntSecurityDescriptor attribute not found for {entry.get(""dn"""
+"(f'[Get-DomainObjectAcl] Target identity found in domain {"""".join(identity_entries[0][""attributes""][""distinguishedName""]"
+"(f'[Remove-DomainGroupMember] User {members} not found in domain, Try to use DN'"
+"(f'[Set-DomainComputerPassword] Failed to change password for {"""".join(entries[0][""attributes""][""sAMAccountName""]"
+"(f'[Set-DomainComputerPassword] Failed to change password for {entries[0][""attributes""][""sAMAccountName""]}'"
+"(f'[Set-DomainComputerPassword] Password has been successfully changed for user {"""".join(entries[0][""attributes""][""sAMAccountName""]"
+"(f'[Set-DomainComputerPassword] Password has been successfully changed for user {entries[0][""attributes""][""sAMAccountName""]}'"
+"(f'[Set-DomainObjectOwner] Success! modified owner for {target_identity[0][""attributes""][""distinguishedName""]}'"
+"(f'[Set-DomainObject] Success! modified attribute {attr_key} for {targetobject[0][""attributes""][""distinguishedName""]}'"
+"(f'[Set-DomainUserPassword] Failed to change password for {"""".join(entries[0][""attributes""][""sAMAccountName""]"
+"(f'[Set-DomainUserPassword] Password has been successfully changed for user {"""".join(entries[0][""attributes""][""sAMAccountName""]"
+"(f'[Set-DomainUserPassword] Principal {"""".join(entries[0][""attributes""][""distinguishedName""]"
+"(fetchSingleCommandLogs, 10000"
+"(file_name, text"
+"(file_path, 'a'"
+"(file_path, conn, share"
+"(filecontent=None, filepath=None"
+"(filename, ""a+"""
+"(filetime_to_str(self.template[""pKIExpirationPeriod""].raw_values[0]"
+"(filetime_to_str(self.template[""pKIOverlapPeriod""].raw_values[0]"
+"(filter(None, components"
+"(filterComputers, 300"
+"(filterUsers, 300"
+"(folder, exist_ok=True"
+"(func, wait"
+"(get_prompt(init_proto,server_dns,cur_user"
+"(gpidentity_dn, attr"
+"(gpo, gpoSubtree, false"
+"(gpo, list"
+"(gpo, parentElement, isEnforced"
+"(gpo, subtree, link.IsEnforced"
+"(gpoData[0], subtree, link.IsEnforced"
+"(group_dn, ['top', 'group'], ucd"
+"(group_members, str"
+"(group_root_dn, ldap_filter, attributes='*'"
+"(groupdata, privs, membersids, sidmapping, domainDumper"
+"(groupname, basedn"
+"(groupname, member"
+"(guid, gpo[0].get(""attributes"""
+"(guid=name, targetidentity=args.linkto"
+"(guid=pv_args.guid, targetidentity=pv_args.targetidentity, args=pv_args"
+"(guid=pv_args.guid, targetidentity=pv_args.targetidentity, link_enabled=pv_args.link_enabled, enforced=pv_args.enforced, args=pv_args"
+"(hasattr(self.args, ""properties"""
+"(hasattr(self.args, ""select"""
+"(here, os.name is 'posix'"
+"(host, binding_params[pipe]['stringBinding'], auth=False, set_authn=True"
+"(host, binding_params[pipe]['stringBinding'], set_authn=True"
+"(host, host, sess_port=445, timeout=timeout"
+"(host, samr.MSRPC_UUID_SAMR, protocol ='ncacn_ip_tcp'"
+"(host, self.nameserver, 3, True, use_system_ns=self.use_system_nameserver"
+"(host2ip(self.dc_ip, self.nameserver, 3, True, use_system_ns=self.use_system_nameserver"
+"(host=computer_name, stringBindings=stringBinding, interface_uuid = wkst.MSRPC_UUID_WKST"
+"(host=host, pipe=pipe"
+"(host=identity, stringBindings=stringBinding, interface_uuid = srvs.MSRPC_UUID_SRVS"
+"(host=ip_address, stringBindings=stringBinding"
+"(host=target, stringBindings=stringBinding, interface_uuid=rrp.MSRPC_UUID_RRP, raise_exceptions=True"
+"(hostname, 'A', tcp=dns_tcp"
+"(hostname, nameserver=None, dns_timeout=10, dns_tcp=True, use_system_ns=True, type=str"
+"(hostname, rowElement"
+"(i,int"
+"(i[""encoded""]"
+"(id, size = 'size-4'"
+"(identity, ""Everyone"", rights=""immutable"", ace_type=""denied"""
+"(identity, 'BASE', ['gPLink']"
+"(identity, 'SUBTREE', apiProperties"
+"(identity, 'SUBTREE', properties"
+"(identity, ['name', 'distinguishedName']"
+"(identity, args=pv_args"
+"(identity, attributeName"
+"(identity, attributeName, attributeValue"
+"(identity, attributeName, newValue"
+"(identity, basedn"
+"(identity, identity"
+"(identity, member"
+"(identity, name"
+"(identity, name, newValue"
+"(identity, newValue"
+"(identity, no_cache = false"
+"(identity, properties"
+"(identity, properties, args=pv_args"
+"(identity, pv_args"
+"(identity, rowElement"
+"(identity, search_scope = 'LEVEL'"
+"(identity, search_scope = 'SUBTREE', properties = ['name', 'objectClass', 'distinguishedName']"
+"(identity, search_scope='BASE', properties=['*']"
+"(identity, searchbase"
+"(identity, selectedProperties"
+"(identity, self.nameserver, 3, True, use_system_ns=self.use_system_nameserver"
+"(identity, true"
+"(identity, zoneName"
+"(identity, zonename, properties, args=pv_args"
+"(identity=""Exchange Servers"", searchbase=searchbase"
+"(identity=computername, port=445, args=pv_args"
+"(identity=destination_dn, searchbase=searchbase, properties=['*']"
+"(identity=guid, properties=[""displayName""]"
+"(identity=identity, args=pv_args"
+"(identity=identity, ca_search_base=searchbase"
+"(identity=identity, properties=['*']"
+"(identity=identity, properties=['distinguishedName','sAMAccountName']"
+"(identity=identity, properties=['objectSid', 'distinguishedName'], searchbase=searchbase, no_cache=no_cache"
+"(identity=identity, properties=properties, args=pv_args"
+"(identity=identity, properties=properties, searchbase=searchbase, args=args"
+"(identity=identity, properties=properties, searchbase=searchbase, args=args, sd_flag=0x04"
+"(identity=identity, properties=properties, searchbase=searchbase, ldapfilter=exc_ldapfilter, search_scope=search_scope"
+"(identity=identity, searchbase=searchbase, properties=[""distinguishedName"",""sAMAccountName"",""lockoutTime""]"
+"(identity=identity, searchbase=searchbase, properties=['*'], sd_flag=sd_flag"
+"(identity=identity, searchbase=searchbase, properties=['distinguishedName'], sd_flag=sd_flag"
+"(identity=identity,properties=['distinguishedName']"
+"(identity=members,properties=['distinguishedName']"
+"(identity=principalidentity, properties=['objectSid', 'distinguishedName', 'sAMAccountName']"
+"(identity=pv_args.identity, args=pv_args"
+"(identity=pv_args.identity, basedn=pv_args.basedn, args=pv_args"
+"(identity=pv_args.identity, description=pv_args.description, basedn=pv_args.basedn, args=pv_args"
+"(identity=recordname, zonename=zonename"
+"(identity=recordname, zonename=zonename, properties=['dnsRecord', 'distinguishedName', 'name']"
+"(identity=security_identifier, properties=['objectSid'], no_cache=no_cache, searchbase=searchbase"
+"(identity=self.username, properties=[""adminCount"",""memberOf""]"
+"(identity=sid, properties=properties, searchbase=searchbase"
+"(identity=targetidentity, properties=['objectSid', 'distinguishedName', 'sAMAccountName','nTSecurityDescriptor'], sd_flag=0x04"
+"(identity=zonename, properties=['distinguishedName'], searchbase=searchbase, no_cache=no_cache"
+"(identityToDelete, rowToDelete"
+"(identity_lockouttime, list"
+"(index, 1"
+"(inh_obj_type, ""UNKNOWN (%s"
+"(inheritedObjectType, entry['raw_attributes']['objectClass'][-1]"
+"(init_proto, server_dns, cur_user"
+"(input("">>> Your choice: """
+"(int(kdcopt, scale"
+"(isinstance(i,dict"
+"(isinstance(nthash, bytes"
+"(issuance_policies, list"
+"(items, header"
+"(k, str"
+"(k, v"
+"(key, *args, **kwargs"
+"(key, 1, encodedTimeStamp, None"
+"(key, 3, cipherText"
+"(key, val"
+"(key: guid, value: name"
+"(lambda x: OID_TO_STR_MAP[x] if x in OID_TO_STR_MAP else x, eku"
+"(later, wait"
+"(ldap3.MODIFY_ADD, [userDn]"
+"(ldap3.MODIFY_REPLACE,attr_val"
+"(ldap3.core.exceptions.LDAPSocketOpenError, ConnectionResetError"
+"(ldapConn, self.__computerName"
+"(ldap_address, nameserver=self.nameserver, use_system_ns=self.use_system_ns"
+"(ldap_server, **ldap_connection_kwargs"
+"(ldap_server, auto_referrals=False"
+"(ldap_server, raise_exceptions=True, **ldap_connection_kwargs"
+"(ldap_session, domain_dumper"
+"(ldap_session, domain_dumper, domainComputer"
+"(ldap_session, domain_dumper, options"
+"(ldap_session, target, username, password, domain, lmhash, nthash, self.auth_aes_key, kdcHost=self.kdcHost, useCache=self.no_pass"
+"(ldap_time, ""%Y%m%d%H%M%S.%fZ"""
+"(ldap_time, bytes"
+"(ldap_time, datetime.datetime"
+"(len(source.get(""msDS-GroupMSAMembership"""
+"(link.GUID, 'SUBTREE', properties"
+"(lmhash, nthash"
+"(lmhash, str"
+"(log_fmt, ""%Y-%m-%d %H:%M:%S"""
+"(map(lambda a: a['Data'], alias_membership['Membership']['Element']"
+"(map(lambda a: a['Data'], global_lookup_ids['Names']['Element']"
+"(map(lambda a: a['Data'], local_lookup_ids['Names']['Element']"
+"(map(lambda g: g['RelativeId'], groups"
+"(match, p1"
+"(max(lst,key=len"
+"(max(rowMaxLen, len(col"
+"(member_root_dn, ldap_filter, attributes='*'"
+"(message, domain, kdcHost"
+"(method['padata-value'], asn1Spec = ETYPE_INFO("
+"(method['padata-value'], asn1Spec = ETYPE_INFO2("
+"(min_spaces, max_spaces"
+"(min_spaces=0, max_spaces=3"
+"(minimum,maximum"
+"(name, basedn"
+"(name, list"
+"(name, record"
+"(name, value, identity"
+"(name, zoneDiv"
+"(name,cur_user,ca_fetch=ca_fetch"
+"(negTokenResp['ResponseToken'], asn1Spec=AP_REP("
+"(negTokenResp['ResponseToken'][16:], asn1Spec=AP_REP("
+"(newUser, self.__parent"
+"(newUserDn, ['top', 'person', 'organizationalPerson', 'user'], ucd"
+"(node.dn, node.icon"
+"(node.dn, treeNode"
+"(now, past_date"
+"(nthash, str"
+"(obj, (tuple, set"
+"(obj, CaseInsensitiveDict"
+"(obj, bytes"
+"(obj, datetime"
+"(obj, dict"
+"(obj, list"
+"(obj, timedelta"
+"(obj.dn, 'BASE'"
+"(obj.dn, objDiv"
+"(obj_type, ""UNKNOWN (%s"
+"(objectType, entry['raw_attributes']['objectClass'][-1]"
+"(objectsid, list"
+"(objectsid.split(""-"""
+"(objectsid=objectsid, output=True, no_cache=pv_args.no_cache"
+"(oidpath, ['top','msPKI-Enterprise-Oid'], oa"
+"(operator == ""="""
+"(operator in ""contains"""
+"(operator in ""equal"""
+"(operator in ""match"""
+"(ori_val, str"
+"(os.path.join(self.cache_path, file"
+"(other, str"
+"(ou, parentElement"
+"(ou, subtree"
+"(ou.dn, 'BASE', ['gPLink']"
+"(ou.dn, ou.attributes.name"
+"(output,quoting=csv.QUOTE_ALL"
+"(packet = decoder.decode(negTokenResp['ResponseToken'][15:], asn1Spec = KRB_ERROR("
+"(packet = decoder.decode(r, asn1Spec = KRB_ERROR("
+"(parsed_structure[i], list"
+"(parsed_structure[i][""attribute""]"
+"(parsed_structure[i][""type""] == ""Attribute"" and in_exception(parsed_structure[i][""content""]"
+"(parsed_structure[i][""type""] == ""Value"" and parsed_structure[i][""content""] == WILDCARD"
+"(parsed_structure[i][""value""]"
+"(password, encryptionTypesData[enctype], None"
+"(password=password, path_to_file=path"
+"(path, mode =""rb"""
+"(path, mode"
+"(path, mode=""r"""
+"(path, p"
+"(pattern, targetidentity_gplink"
+"(pfx, password"
+"(pfx, self.pfx_pass"
+"(plainText, asn1Spec = EncAPRepPart("
+"(plainText, asn1Spec = EncASRepPart("
+"(plainText, asn1Spec = EncTGSRepPart("
+"(privguid, sid, aceflags=0x00"
+"(privs['createIn'], domainDumper"
+"(properties, search_scope=search_scope"
+"(propertyName, labelText, isChecked"
+"(pv_args, ""count"""
+"(pv_args, ""select"""
+"(pv_args, ""tableview"""
+"(pv_args, 'sort_by'"
+"(pv_args, 'where'"
+"(pv_args, args.use_kerberos"
+"(pv_args, identity"
+"(pv_args, properties"
+"(pv_args, properties, identity"
+"(pv_args, properties, identity, no_cache=pv_args.no_cache"
+"(pv_args, properties, identity, resolve_gplink=pv_args.resolve_gplink"
+"(pv_args, properties, identity, resolveip=pv_args.resolveip, resolvesids=pv_args.resolvesids"
+"(pv_args, properties, identity, searchbase=pv_args.searchbase"
+"(pv_args.computername, args=pv_args"
+"(pv_args.computername, pv_args.computerpass, basedn=pv_args.basedn"
+"(pv_args.identity, args=pv_args"
+"(pv_args.identity, basedn=pv_args.basedn, args=pv_args"
+"(pv_args.identity, destination_dn=pv_args.destination_dn, args=pv_args"
+"(pv_args.identity, pv_args"
+"(pv_args.identity, pv_args.accountpassword, oldpassword=pv_args.oldpassword, args=pv_args"
+"(pv_args.identity, pv_args.delegatefrom, args=pv_args"
+"(pv_args.identity, pv_args.members, pv_args"
+"(pv_args.select, int"
+"(pv_args.targetidentity, pv_args.principalidentity, args=pv_args"
+"(pv_args.template, pv_args.principalidentity, args=pv_args"
+"(pv_args.username, pv_args.userpass, args=pv_args"
+"(r""(\{{0,1}([0-9a-fA-F]"
+"(r'.*\s+$', re.M"
+"(r'[<>:""/\\|?*]', '', component"
+"(r'^((CN=([^,]*"
+"(r, asn1Spec = KRB_ERROR("
+"(r, asn1Spec = TGS_REP("
+"(r, asn1Spec=AS_REP("
+"(random.choice(['z', 'Z']"
+"(random.choice([chars[i], WILDCARD + chars[i]]"
+"(random.choice(list(string.ascii_letters + string.digits + ""!@#$%^&*("
+"(random.choice(string.ascii_letters + string.digits + '.,;:!$-_+/*("
+"(random.randint(0, 99999"
+"(random.randint(1, 3"
+"(random.randint(1, MAX_RAND"
+"(random.randint(5, MAX_RAND"
+"(random_index + 1, new_token"
+"(re.findall(r""(DC=[\w-]+"
+"(record, bytes"
+"(record.attributes.name, zoneName"
+"(recordName, recordAddress, zoneName"
+"(record_dn, ['top', 'dnsNode'], node_data"
+"(recordname, search_base"
+"(recordname=pv_args.recordname, recordaddress=pv_args.recordaddress, zonename=pv_args.zonename"
+"(recordname=pv_args.recordname, zonename=pv_args.zonename"
+"(regex,obj"
+"(reqBody, 'cname', clientName.components_to_asn1"
+"(reqBody, 'etype', ( (int(cipher.enctype"
+"(reqBody, 'etype', ( (int(encType"
+"(reqBody, 'etype', supportedCiphers"
+"(reqBody, 'sname', serverName.components_to_asn1"
+"(request.args.get('limit', 10"
+"(request.args.get('page', 1"
+"(res['ticket'], 'realm', 'sname'"
+"(result.result, tableView"
+"(right, principal_list, _"
+"(rights_guid, list"
+"(root, name"
+"(rootDn, 'BASE'"
+"(rootDn, 'BASE', ['gPLink']"
+"(rootDn, domain, true"
+"(rpctransport, 'set_credentials'"
+"(rpctransport, 'set_kerberos'"
+"(rtype, serial, recordaddress"
+"(sam_account_name, list"
+"(samname, ldap_session, domain_dumper"
+"(sd[""OwnerSid""].getData("
+"(search_base, search_filter, search_scope, attributes"
+"(search_base, search_filter, search_scope, attributes, results"
+"(search_base='', search_filter='(objectClass=*"
+"(searchbase, enroll_filter, attributes=list(properties"
+"(searchbase, f'(distinguishedName={identity}"
+"(searchbase, ldap_filter, attributes=properties, paged_size = 1000, generator=True, search_scope=search_scope"
+"(searchbase, ldap_filter, attributes=properties, paged_size = 1000, generator=True, search_scope=search_scope, no_cache=no_cache"
+"(searchbase, ldap_filter,attributes=list(properties"
+"(searchbase, parentElement"
+"(searchbase, parentElement, no_cache=false"
+"(searchbase, search_scope = 'LEVEL'"
+"(searchbase,ldap_filter,attributes=list(properties"
+"(searchbase,ldap_filter,attributes=properties, paged_size = 1000, generator=True, search_scope=search_scope, no_cache=no_cache"
+"(secDesc, guid, usersid, accesstype"
+"(secDescData, list"
+"(section, settings"
+"(self, *args, **kwargs"
+"(self, ShadowCredentialsExportType=""PFX"""
+"(self, TGS"
+"(self, TGT"
+"(self, access_mask, sid, ace_type"
+"(self, ace"
+"(self, any_purpose"
+"(self, args"
+"(self, args, properties=[]"
+"(self, args=None"
+"(self, args=None, identity=None"
+"(self, args=None, identity=None, check_web_enrollment=False, properties=None, search_scope=ldap3.SUBTREE"
+"(self, args=None, properties=[], identity=None, identity_filter=None, ldap_filter=None, searchbase=None, sd_flag=None, search_scope=ldap3.SUBTREE, no_cache=False"
+"(self, args=None, properties=[], identity=None, searchbase=None, resolve_gplink=False, search_scope=ldap3.SUBTREE"
+"(self, args=None, properties=[], identity=None, searchbase=None, resolveip=False, resolvesids=False, ldapfilter=None, search_scope=ldap3.SUBTREE, no_cache=False"
+"(self, args=None, properties=[], identity=None, searchbase=None, search_scope=ldap3.SUBTREE"
+"(self, args=None, properties=[], identity=None, searchbase=None, search_scope=ldap3.SUBTREE, no_cache=False"
+"(self, args=None, properties=[], identity=None, vulnerable=False, searchbase=None, resolve_sids=False"
+"(self, attribute, operator, value, parsed_structure=None"
+"(self, attributes"
+"(self, authenticateMessageBlob, serverChallenge=None"
+"(self, authorized_signatures_required"
+"(self, canonical"
+"(self, certificate_name_flag"
+"(self, client, root_dn, parent=None"
+"(self, client_authentication"
+"(self, computer_name, args=None"
+"(self, computer_name, computer_pass, basedn=None, args=None"
+"(self, computer_name, identity=None, properties=[], port=445, args=None"
+"(self, computer_name, port=445, args=None"
+"(self, config, LDAPClient, username"
+"(self, config, LDAPClient, username, root_dn, args=None"
+"(self, conn, args, target_server=None, target_domain=None"
+"(self, connection, computerName"
+"(self, connection, obfuscate=False, no_cache=False"
+"(self, connection, port=445"
+"(self, connection, target, user, password, domain='', lmhash='', nthash='', aesKey='', kdcHost=None, TGT=None, TGS=None, useCache=True"
+"(self, content, token_type"
+"(self, dacl"
+"(self, data = None"
+"(self, data = data"
+"(self, data"
+"(self, data=None"
+"(self, data=data"
+"(self, dc_ip"
+"(self, dce"
+"(self, dce, builtin=False"
+"(self, dce, domain_handle"
+"(self, dce, domain_handle, gid"
+"(self, dce, domain_handle, object_name"
+"(self, dce, domain_handle, user_rid"
+"(self, dce, handle"
+"(self, displayname, name=None, args=None"
+"(self, dn"
+"(self, dn, secDesc"
+"(self, domain"
+"(self, encType"
+"(self, enrollee_supplies_subject"
+"(self, enrollment_agent"
+"(self, enrollment_flag"
+"(self, entries"
+"(self, entries, privs, membersids, sidmapping, domainDumper"
+"(self, entries, searchbase, resolveguids=resolveguids, targetidentity=identity, principalidentity=security_identifier, guids_map_dict=guids_dict"
+"(self, entries, sort_option"
+"(self, entries: list, headers: list, align: str = None"
+"(self, entry"
+"(self, entry, ldap_session=None"
+"(self, extended_key_usage"
+"(self, file_name, text"
+"(self, flatname"
+"(self, fmt"
+"(self, folder=None"
+"(self, folder_name, root_folder=None"
+"(self, fsr"
+"(self, full_method_name"
+"(self, groupname, basedn=None, args=None"
+"(self, guid, targetidentity, link_enabled=""Yes"", enforced=""No"", searchbase=None, sd_flag=None, args=None"
+"(self, guid, targetidentity, searchbase=None, sd_flag=None, args=None"
+"(self, histfile=""~/.powerview/.powerview_history"""
+"(self, histfile=None"
+"(self, host, pipe"
+"(self, host, pipe=r'\srvsvc'"
+"(self, host, timeout=10, useCache=True"
+"(self, host=None, stringBindings=None, interface_uuid=None, port=445, auth=True, set_authn=False, raise_exceptions=False"
+"(self, host=self.args.web_host, port=self.args.web_port"
+"(self, i: int"
+"(self, identity"
+"(self, identity, accountpassword, oldpassword=None, args=None"
+"(self, identity, args=None"
+"(self, identity, args=None, multiple=False"
+"(self, identity, basedn=None, args=None"
+"(self, identity, clear=None, _set=None, append=None, searchbase=None, sd_flag=None, args=None"
+"(self, identity, delegatefrom, searchbase=None, args=None"
+"(self, identity, description=None, basedn=None, args=None"
+"(self, identity, destination_dn, searchbase=None, sd_flag=None, args=None"
+"(self, identity, members, args=None"
+"(self, identity, properties=[], searchbase=None, args=None, search_scope=ldap3.SUBTREE"
+"(self, identity, searchbase=None, args=None"
+"(self, identity, searchbase=None, args=None, search_scope=ldap3.SUBTREE"
+"(self, identity, searchbase=None, sd_flag=None, args=None"
+"(self, identity=None, args=None"
+"(self, identity=None, port=445, args=None"
+"(self, identity=None, properties=[], searchbase=None, args=None, search_scope=ldap3.SUBTREE, no_cache=False"
+"(self, identity=None, searchbase=None, resolve_sid=True, args=None, search_scope=ldap3.SUBTREE"
+"(self, identity=None, security_identifier=None, resolveguids=False, targetidentity=None, principalidentity=None, guids_map_dict=None, searchbase=None, args=None, search_scope=ldap3.SUBTREE, no_cache=False"
+"(self, identity=None, zonename=None, properties=[], searchbase=None, args=None, search_scope=ldap3.SUBTREE, no_cache=False"
+"(self, key"
+"(self, key, *args, **kwargs"
+"(self, key, val"
+"(self, key, val=None"
+"(self, keys"
+"(self, keys=None"
+"(self, ldap_address"
+"(self, ldap_address=None, use_ldap=False, use_gc_ldap=False"
+"(self, ldap_filter"
+"(self, ldap_server, ldap_session, base_dn, target_sAMAccountName, target_SID, target_DN, target_sd, principal_sAMAccountName, principal_SID, principal_DN, ace_type, rights, rights_guid, inheritance"
+"(self, ldap_session, root_dn"
+"(self, level=logging.INFO"
+"(self, lst"
+"(self, message"
+"(self, messageType, token, proxy, content = None"
+"(self, method_name"
+"(self, method_name, None"
+"(self, name, principalidentity, rights=None, ca_fetch=None, args=None"
+"(self, nameserver"
+"(self, newUser=None, newPassword=None"
+"(self, new_token, parsed_structure=None"
+"(self, no_security_extension"
+"(self, obj"
+"(self, obj=None"
+"(self, objectsid"
+"(self, objectsid, args=None, output=False, no_cache=False"
+"(self, other"
+"(self, other: str"
+"(self, owner_sid"
+"(self, parent, domainDumper"
+"(self, parsed_ace"
+"(self, parsed_dacl"
+"(self, parsed_structure=None"
+"(self, password"
+"(self, path=None"
+"(self, port=80"
+"(self, powerview, entries, root_dn, resolveguids=None, targetidentity=None, principalidentity=None, guids_map_dict=None"
+"(self, powerview, host=""127.0.0.1"", port=5000"
+"(self, privguid, sid, ace_type"
+"(self, product"
+"(self, properties=None"
+"(self, properties=None, ca_search_base=None, identity=None"
+"(self, properties=['*']"
+"(self, properties=['*'], searchbase=None, search_scope=SUBTREE"
+"(self, proto"
+"(self, pv_args, use_kerberos=False"
+"(self, record"
+"(self, recordname, recordaddress, zonename=None"
+"(self, recordname, zonename=None"
+"(self, recordname=None, zonename=None"
+"(self, renewal_period"
+"(self, requires_manager_approval"
+"(self, root"
+"(self, rpctransport"
+"(self, samname"
+"(self, search_base, search_filter, search_scope, attributes"
+"(self, search_base, search_filter, search_scope, attributes, cache_ttl=300"
+"(self, search_base, search_filter, search_scope, attributes, results"
+"(self, server"
+"(self, serverConfig, target, targetPort = 636, extendedSecurity=True "
+"(self, serverConfig, target, targetPort, extendedSecurity"
+"(self, sid"
+"(self, sid, right_opt"
+"(self, strs,lens"
+"(self, target"
+"(self, target, interface=""0.0.0.0"", port=80, args=None"
+"(self, target, nameserver=None, timeout=5, use_ip=False, use_system_ns=True"
+"(self, target, password, domain, options"
+"(self, target, tls, domain=None, username=None, password=None, lmhash=None, nthash=None, seal_and_sign=False, tls_channel_binding=False, auth_method=ldap3.NTLM"
+"(self, target, tls, seal_and_sign=False, tls_channel_binding=False"
+"(self, target, tls=None"
+"(self, targetDomain"
+"(self, targetidentity, principalidentity, rights=""fullcontrol"", rights_guid=None, ace_type=""allowed"", inheritance=False"
+"(self, targetidentity, principalidentity, searchbase=None, args=None"
+"(self, template, current_user_sid=None, linked_group=None, ldap_session=None"
+"(self, text, state"
+"(self, tgs, oldSessionKey, sessionKey, username, spn, fd=None"
+"(self, ticket, sessionKey"
+"(self, token_type, old_value, new_value, parsed_structure=None"
+"(self, uname, domainDumper"
+"(self, userDn, domainDumper, groupDn"
+"(self, user_dn"
+"(self, username"
+"(self, username, password, user_domain, target_domain, cmdLineOptions, identity=None, options=None, encType=None, TGT=None"
+"(self, username, userpass, basedn=None, args=None"
+"(self, username=None, password=None, domain=None, cmdLineOptions=None, computer_name=None, computer_pass=None, base_dn=None, ldap_session=None"
+"(self, usernames"
+"(self, validity_period"
+"(self, value"
+"(self, value, args=None, output=False"
+"(self,data"
+"(self,entries"
+"(self,entries,cond"
+"(self,entry"
+"(self,privguid,sid, mask=983551"
+"(self,secdesc, guid, usersid, accesstype"
+"(self.__baseDN, '(|(sAMAccountName={computerName}"
+"(self.__doKerberos, self.__kdcHost"
+"(self.__kdcHost, self.__kdcHost"
+"(self.__target, samr.MSRPC_UUID_SAMR, protocol = 'ncacn_np'"
+"(self.__targetDomain, self.__targetDomain"
+"(self.__targetIp, samr.MSRPC_UUID_SAMR, protocol = 'ncacn_np'"
+"(self.__user, type=constants.PrincipalNameType.NT_PRINCIPAL.value"
+"(self.__username, type=constants.PrincipalNameType.NT_PRINCIPAL.value"
+"(self._connection, obfuscate, no_cache"
+"(self.args, ""TGS"", self.conn.get_TGS("
+"(self.args, ""TGT"", self.conn.get_TGT("
+"(self.args, ""dc_host"", self.dc_dnshostname"
+"(self.args, ""delete"", False"
+"(self.args, ""delete"", True"
+"(self.args, ""inheritance"""
+"(self.args, ""method"", ""LDAPS"""
+"(self.args, ""method"", ""SAMR"""
+"(self.args.outfile, """""
+"(self.args.outfile, _stdout"
+"(self.args.outfile, ace[key]"
+"(self.args.outfile, entry"
+"(self.args.outfile, table_res"
+"(self.args.outfile, value"
+"(self.args.tableview, ""simple"""
+"(self.base_dn, '(distinguishedName=%s"
+"(self.base_dn, '(objectSid=%s"
+"(self.base_dn, '(sAMAccountName=%s"
+"(self.cache_path, exist_ok=True"
+"(self.cache_path, f""{cache_key}.json"""
+"(self.client.server, self.client, domainDumpConfig"
+"(self.config.escalateuser, self.username, domainDumper, self.config.sid"
+"(self.create_ace(ACCESS_MASK.Delete.value + ACCESS_MASK.DeleteTree.value, self.principal_SID, ace_type=""denied"""
+"(self.create_ace(ACCESS_MASK.DeleteChild.value, self.principal_SID, ace_type=""denied"""
+"(self.create_ace(SIMPLE_PERMISSIONS.FullControl.value, self.principal_SID, self.ace_type"
+"(self.create_object_ace(guid, sid, mask=permissions.get(right_opt"
+"(self.create_object_ace(rights_guid, self.principal_SID, self.ace_type"
+"(self.dc_ip, filename=r'\samr'"
+"(self.dc_ip, zonename, True"
+"(self.domain, policy_path.replace(""/"",""\\"""
+"(self.domain_sid, self.current_user_sid, self.ldap_session"
+"(self.history_file_path, 'r'"
+"(self.ldap_server, self.ldap_session, cnf"
+"(self.ldap_server.info.other[""dnsHostName""], list"
+"(self.ldap_session, entries[0][""attributes""][""distinguishedName""], accountpassword, old_password=oldpassword"
+"(self.ldap_session, obfuscate=self.args.obfuscate, no_cache=self.args.no_cache"
+"(self.ldap_session, self.root_dn"
+"(self.ldap_session, self.root_dn, parent = parent_dn_entries"
+"(self.ldap_session.result if self.args.debug else ""[Set-DomainCATemplate] Failed to modify template"""
+"(self.ldap_session.result['message'] if self.args.debug else ""[Remove-DomainDNSRecord] Failed to delete record"""
+"(self.ldap_session.result['message'] if self.args.debug else f""[Add-DomainDNSRecord] Failed adding DNS record to domain ({self.ldap_session.result['description']}"
+"(self.ldap_session.result['message'] if self.args.debug else f""[Add-DomainGroupMember] Failed to add {members} to group {identity}"""
+"(self.ldap_session.result['message'] if self.args.debug else f""[Add-DomainUser] Failed adding {username} to domain ({self.ldap_session.result['description']}"
+"(self.ldap_session.result['message'] if self.args.debug else f""[Remove-DomainCATemplate] Failed to delete template {identity} from certificate store"""
+"(self.ldap_session.result['message'] if self.args.debug else f""[Remove-DomainObject] Failed to modify, view debug message with --debug"""
+"(self.ldap_session.result['message'] if self.args.debug else f""[Set-DomainObjectDN] Failed to modify, view debug message with --debug"""
+"(self.log_file_path, 'r'"
+"(self.logs_folder, "".powerview_history"""
+"(self.logs_folder, self.file_name"
+"(self.owner_sid.split(""-"""
+"(self.packet['e-data'], asn1Spec = KERB_ERROR_DATA("
+"(self.parsePerms(ace[""Ace""][""Mask""][""Mask""]"
+"(self.pfx, ""rb"""
+"(self.powerview, full_method_name, None"
+"(self.powerview.ldap_session, obfuscate=obfuscate, no_cache=no_cache"
+"(self.principal_SID, rights_guid, format_sid(self.target_SID"
+"(self.principalidentity_dn, '(objectClass=user"
+"(self.rootDN, '(&(objectCategory=domain"
+"(self.rootDN, '(sAMAccountName=%s"
+"(self.rootDN, f'(distinguishedName={self.targetidentity_dn}"
+"(self.root_dn, ldap_filter, attributes='*'"
+"(self.root_dn, ldap_filter, attributes=['sAMAccountName','name'], paged_size=1000, generator=True, no_cache=no_cache"
+"(self.root_dn, ldap_filter, attributes=['servicePrincipalName', 'sAMAccountName','pwdLastSet', 'MemberOf', 'userAccountControl', 'lastLogon']"
+"(self.root_dn,ldap_filter,attributes=properties"
+"(self.root_folder, ""logs"", self.folder_name"
+"(self.root_folder, file_name"
+"(self.root_folder, self.cache_folder"
+"(self.server, user=""a"", password=""b"", authentication=ldap3.NTLM"
+"(self.server.server_address[1], self.authUser, self.client_address[0]"
+"(self.session.send('bindRequest', request, None"
+"(self.session.version, 'SICILY_RESPONSE_NTLM', self, None"
+"(self.target.scheme, self.authUser.replace(""/"", '\\'"
+"(self.target_DN, self.principal_security_descriptor"
+"(self.targetidentity_dn, '(objectClass=*"
+"(self.tcp_shell, domainDumper, self.client"
+"(self.template[""msPKI-Certificate-Name-Flag""].raw_values[0]"
+"(self.template[""msPKI-Enrollment-Flag""].raw_values[0]"
+"(self.template[""msPKI-RA-Signature""].raw_values[0]"
+"(self.template[""nTSecurityDescriptor""].raw_values[0]"
+"(self.use_kerberos, kdcHost=self.kdcHost"
+"(self.username, domainDumper"
+"(self.username, self.password"
+"(self.username, self.password, self.domain, lmhash=self.lmhash, nthash=self.nthash, aesKey=self.auth_aes_key, TGT=self.TGT, TGS=self.TGS"
+"(self.username, self.password, self.domain, self.lmhash, self.nthash, TGT=self.TGT"
+"(self.username, self.password, self.domain, target_domain, self.args, identity=args.identity, options=kdc_options, encType=enctype, TGT=self.conn.get_TGT("
+"(self.username,self.password,self.domain, self.lmhash, self.nthash"
+"(self.username,self.password,self.domain, self.lmhash, self.nthash, self.auth_aes_key, self.dc_ip, self.TGT, self.TGS"
+"(server, self.nameserver, use_system_ns=self.use_system_ns"
+"(server, zone, tcp"
+"(serverName, domain, kdcHost, r, cipher, newSessionKey"
+"(serverName, domain, kdcHost, tgt, cipher, sessionKey"
+"(serverName, domain, kdcHost, tgt, cipher, sessionKey, options, encType"
+"(sessionKey, 11, encodedAuthenticator, None"
+"(sessionKey, 12, cipherText"
+"(sessionKey, 12, encodedAuthenticator, None"
+"(sessionKey, 7, encodedAuthenticator, None"
+"(sessionKey, 8, cipherText"
+"(session_key, password"
+"(settings, null, 2"
+"(share, base_path"
+"(share, file_path, fh.write"
+"(share, filepath, fh.write"
+"(share, policy_path + ""/Machine"""
+"(share, policy_path + ""/User"""
+"(share, policy_path"
+"(sid, aceflags=0x00"
+"(sidRegex, userSid"
+"(socket.AF_INET, socket.SOCK_STREAM"
+"(source.get(""msDS-GroupMSAMembership"""
+"(source[""msDS-GroupMSAMembership""]"
+"(source[""msDS-GroupMSAMembership""][i]"
+"(span,"
+"(str(random.randrange(-random.randint(1, 100000"
+"(str(random.randrange(value + 1, value + random.randint(1, 100000"
+"(strs, bytes"
+"(strs, list"
+"(strs,str"
+"(strs[i], bytes"
+"(strs[i], datetime.datetime"
+"(subject=target_sid, keySize=2048, notBefore=(-40 * 365"
+"(svc[""name""]"
+"(target, None, self.domain, self.username, self.password, self.lmhash, self.nthash, auth_method=self.auth_method"
+"(target, nameserver, 3, True, use_system_ns"
+"(target, self.relay_host, self.relay_port, self.args"
+"(target, tls"
+"(target, tls, auth_method=ldap3.SASL"
+"(target, tls, domain, username, password, lmhash, nthash, auth_method=ldap3.SIMPLE"
+"(target, tls, domain, username, password, lmhash, nthash, seal_and_sign=True, auth_method=self.auth_method"
+"(target, tls, domain, username, password, lmhash, nthash, tls_channel_binding=True, auth_method=self.auth_method"
+"(target, tls, seal_and_sign=True"
+"(target, tls, self.domain, self.username, self.password, self.lmhash, self.nthash, auth_method=self.auth_method"
+"(target, tls, tls_channel_binding=True"
+"(targetHost, 88"
+"(targetHost, 88, 0, socket.SOCK_STREAM"
+"(targetIdentity, principalIdentity, rights, aceType, inheritance"
+"(targetIdentity, principalIdentity, rights, aceType, inheritance, refreshCallback = null"
+"(targetIdentity, true"
+"(targetName, type=constants.PrincipalNameType.NT_SRV_INST.value"
+"(target_dn, '(objectClass=*"
+"(target_dn, {'msDS-KeyCredentialLink': [ldap3.MODIFY_REPLACE, new_values]}"
+"(target_identity, list"
+"(target_name,self.nameserver, use_ip=True, use_system_ns=self.use_system_nameserver"
+"(target_name,self.nameserver, use_system_ns=self.use_system_nameserver"
+"(target_template[0][attrs['attribute']].value, int"
+"(target_template[0][attrs['attribute']].value, list"
+"(target_template[0][attrs['attribute']].value, str"
+"(targetidentity, self.ldap_session"
+"(targetobject, list"
+"(targetobject[""attributes""][""distinguishedName""], list"
+"(targetobject[0][""attributes""][attrs['attribute']]"
+"(targetobject[0][""attributes""][attrs['attribute']], int"
+"(targetobject[0][""attributes""][attrs['attribute']], list"
+"(targetobject[0][""attributes""][attrs['attribute']], str"
+"(targetobject[0][""attributes""][attrs['attribute']].strip("
+"(targetobject_dn, relative_dn, new_superior=destination_dn"
+"(targetobject_dn,{'member': [(ldap3.MODIFY_ADD, [userobject_dn]"
+"(targetobject_dn,{'member': [(ldap3.MODIFY_DELETE, [userobject_dn]"
+"(targetuser['dn'], {'msDS-AllowedToActOnBehalfOfOtherIdentity':[ldap3.MODIFY_REPLACE, [sd.getData("
+"(template, current_user_sid=self.current_user_sid, linked_group=linked_group, ldap_session=self.ldap_session"
+"(template[""objectGUID""]"
+"(template[0],current_user_sid=self.current_user_sid,ldap_session = self.ldap_session"
+"(template_base, ['top','pKICertificateTemplate'], default_template"
+"(text + ""\n"""
+"(text+""\n"""
+"(tgs, asn1Spec = TGS_REP("
+"(tgs, asn1Spec=TGS_REP("
+"(tgs, oldSessionKey, sessionKey, sAMAccountName, self.__targetDomain + ""/"" + sAMAccountName"
+"(tgs, oldSessionKey, sessionKey, username, username"
+"(tgsReq, 'req-body'"
+"(tgt, asn1Spec = AS_REP("
+"(tgt, asn1Spec = TGS_REP("
+"(tgt,oldSessionKey"
+"(the ""Software"""
+"(ticket, sessionKey, sessionKey"
+"(tid, fid"
+"(tid, fid, gpt_ini_content"
+"(tid, policy_path + ""/GPT.ini"""
+"(title, config"
+"(token, authenticateMessage"
+"(token, dict"
+"(token, list"
+"(token, proxy=proxy"
+"(token[""content""]"
+"(token[""type""] == ""Attribute"" and in_exception(token[""content""]"
+"(token[""type""] == ""Value"" and token[""content""] == WILDCARD"
+"(token_type, old_value, new_value, token"
+"(ts, datetime.datetime"
+"(typeof value === 'string' && value.includes(','"
+"(uac_names, delimiter=','"
+"(uac_val, bytes"
+"(uac_val, list"
+"(udn, ['top', 'person', 'organizationalPerson', 'user'], ucd"
+"(udn, userpass"
+"(unk,COMMANDS[cmd[0]][indexs]"
+"(user, type=constants.PrincipalNameType.NT_PRINCIPAL.value"
+"(user.dn, tr"
+"(userDn, domainDumper"
+"(userDn, domainDumper, privs['escalateGroup']"
+"(userGroup, list"
+"(userGroup, str"
+"(userName, password, domain, lmhash, nthash, aesKey, kdcHost"
+"(user_memberof, str"
+"(usernama, password"
+"(username, domain"
+"(username, password"
+"(username, password, basedn"
+"(username, type=constants.PrincipalNameType.NT_PRINCIPAL.value"
+"(username, userpass"
+"(userobject[""attributes""][""distinguishedName""], list"
+"(usersid, privs"
+"(v => `<a href=""#"" class=""text-blue-400 hover:text-blue-600"" data-identity=""${v}"" onclick=""handleLdapLinkClick(event, '${v}'"
+"(v, list"
+"(v[0], str"
+"(val, bytes"
+"(val, datetime.datetime"
+"(val, int"
+"(val, str"
+"(val,list"
+"(value, list"
+"(value, str"
+"(value,list"
+"(value,self.get_max_len(list(entry['attributes'].keys("
+"(value=value, output=True"
+"(value[i], list"
+"(values, list"
+"(values, str"
+"(y+"" - ""+list_sids(vulns[y]"
+"(y+"" - ""+vulns[y]"
+"(zone, 'SOA',tcp=tcp"
+"(zoneName, parentElement"
+"(zone['attributes']['distinguishedName'], ldap_filter, attributes=def_prop, paged_size = 1000, generator=True, search_scope=search_scope, no_cache=no_cache"
+"({ computer_name: computer_name, computer_pass: computer_pass, basedn: basedn }"
+"({ identity: identity, searchbase: identity, search_scope: 'BASE' }"
+"({ identity: identity, searchbase: identity, search_scope: 'BASE', no_cache: no_cache }"
+"({ properties: ['*'], searchbase, search_scope }"
+"({ searchbase: identity, properties: ['*'], search_scope: search_scope }"
+"({ searchbase: identity, search_scope: 'BASE' }"
+"({ searchbase: searchbase, search_scope: 'LEVEL', no_cache: no_cache }"
+"({ zonename: zoneName, identity: identity }"
+"({ zonename: zoneName, properties: ['name', 'Address'] }"
+"({""Linked Groups"": linked_group} if linked_group is not None else {}"
+"({'logs': formatted_logs, 'total': total_logs, 'page': page, 'limit': limit}"
+"({'result': serializable_result, 'pv_args': vars(pv_args"
+( constants.KDCOptions.canonicalize.value 
+( constants.KDCOptions.forwardable.value 
+( constants.KDCOptions.proxiable.value 
+( constants.KDCOptions.renewable.value 
+( constants.KDCOptions.renewable_ok.value 
+( self
+( self 
+( some of the flags are changed 
+(!(UserAccountControl:1.2.840.113556.1.4.803:=2
+(!(objectCategory=computer
+(!(userAccountControl:1.2.840.113556.1.4.803:=1048574
+(!(userAccountControl:1.2.840.113556.1.4.803:=2
+(!(userAccountControl:1.2.840.113556.1.4.803:=8192
+(!Array.isArray(result
+(!activeFilters.has(filter
+(!activeTabButton
+(!activeTabId
+(!alert.classList.contains('hidden'
+(!attributeName || !attributeValue
+(!clickedTab
+(!command
+(!commandInput
+(!config || Object.keys(config
+(!container
+(!container || !newPropertyInput
+(!contentDiv
+(!contentLoaded
+(!currentRecord || (!currentRecord.attributes.Address && record.attributes.Address
+(!currentZoneName && index === 0
+(!daclData || !Array.isArray(daclData
+(!daclRows
+(!data || data.length === 0
+(!detailsContainer
+(!domainData.length
+(!dropdownButton.contains(event.target
+(!dropdownButton?.contains(event.target
+(!dropdownMenu
+(!entry.attributes
+(!event.target.closest('button'
+(!gpLinkStr
+(!gpoData || gpoData.length === 0
+(!gposLoaded
+(!groupContent
+(!groupname || !basedn
+(!groupname || !member
+(!groupsContainer
+(!item.attributes
+(!ldapAttributeModal
+(!logExists
+(!logonData || !Array.isArray(logonData
+(!logonUsersRows
+(!member
+(!memberOf || !Array.isArray(memberOf
+(!members || !Array.isArray(members
+(!membersContainer
+(!membersContent
+(!newProp
+(!newValue
+(!parentNode
+(!recordNameSection
+(!recordsContainer.classList.contains('hidden'
+(!response.ok
+(!searchBaseDropdown.contains(e.target
+(!selectedNode
+(!selectedProperties.includes(newProp
+(!selected_zone
+(!sessionsData || !Array.isArray(sessionsData
+(!sessionsRows
+(!settingsData || settingsData.length === 0
+(!subtreeContainer
+(!tabList
+(!tbody
+(!textContent.includes(currentSearchQuery
+(!timestampElement || !debugMessageElement
+(!treeView
+(!username || !password
+(!zoneName
+(!zoneNameContainer
+(#basic-usage
+(#empty-placeholder
+(#initial-state
+(#installation
+(#loading-placeholder
+(#logging
+(#module-available-so-far
+(${adminUsers.length}
+(${constrainedDelegation.length}
+(${domainAdmins.length}
+(${inactiveUsers.length}
+(${kerberoastable.length}
+(${kerberoastableAdmins.length}
+(${unconstrainedComputers.length}
+(%s
+(&(objectCategory=*
+(&(objectCategory=group
+(&(objectCategory=groupPolicyContainer
+(&(objectCategory=organizationalUnit
+(&(objectCategory=person
+(&(objectClass=*
+(&(objectClass=computer
+(&(objectClass=dnsNode
+(&(objectClass=dnsZone
+(&(objectClass=domain
+(&(objectClass=mSSMSManagementPoint
+(&(objectClass=pKICertificateTemplate
+(&(objectClass=person
+(&(objectClass=trustedDomain
+(&(objectSid=%s
+(&(objectSid={objectsid}
+(&(objectclass=pkicertificatetemplate
+(&(samAccountType=805306368
+(&(userAccountControl:1.2.840.113556.1.4.803:=8192
+(&{ldap_filter}
+('    %s' % ace['Ace']['Sid'].formatCanonical(
+('  '.join(['-' * itemLen for itemLen in colLen]
+(' '
+(' - '
+(' \t\n;'
+('#box-overlay-spinner'
+('#computer-properties span'
+('#computers-result-table tbody'
+('#connection-address-display'
+('#connection-domain-display'
+('#connection-status-display'
+('#dNSHostName-wrapper input'
+('#descendants-rows tr'
+('#existing-attributes > div'
+('#footer-year'
+('#gpo-content > .flex.items-center.justify-center'
+('#gpo-tree-view > div'
+('#ldap-attributes-modal h3'
+('#logonusers-rows tr'
+('#modal-dacl-rows tr'
+('#modal-members-content tr'
+('#nameserver-address-display'
+('#sessions-rows tr'
+('#tree-view > div'
+('#username-display'
+('#users-result-table tbody'
+('$'
+('${filter}'
+('${ou.dn}'
+('${prop}'
+('%d/%m/%Y %H:%M:%S'
+('%m/%d/%Y'
+('%s/%s' % (authenticateMessage['domain_name'].decode('ascii'
+('%s/%s' % (authenticateMessage['domain_name'].decode('utf-16le'
+(''
+(''.join(random.choice(string.ascii_letters
+(''.join(random.choice(string.ascii_uppercase + string.digits
+(''.join(temp_entry['attributes'][left]
+('-'
+('-Computer or -ComputerName is required'
+('-ComputerName is required'
+('-Identity and -AccountPassword flags are required'
+('-Identity and -DelegateFrom flags are required'
+('-Identity and -DestinationDN flags required'
+('-Identity and -Members flags required'
+('-Identity and [-Clear][-Set][-Append] flags required'
+('-Identity and [-Clear][-Set|-Append] flags required'
+('-Identity flag is required'
+('-Name flag is required'
+('-TargetIdentity and -PrincipalIdentity flags are required'
+('.'
+('.alert'
+('.bg-green-100'
+('.bg-red-100'
+('.ca-servers-container > div'
+('.ca-servers-container'
+('.cert-templates-container > div'
+('.cert-templates-container'
+('.clear-input'
+('.custom-toggle-switch'
+('.dns-record-details-container'
+('.dropdown-toggle'
+('.fixed:not(.hidden
+('.flex.items-center.justify-center'
+('.groups-container table tbody'
+('.groups-container'
+('.json'
+('.member-header'
+('.members-container table tbody'
+('.members-container'
+('.ml-6 > div'
+('.property-checkbox'
+('.record-name-section'
+('.records-container'
+('.relative'
+('.result-item'
+('.search-base-option'
+('.selected'
+('.subtree'
+('.template-details-container'
+('.zone-item'
+('.zone-name-container'
+('/api/get/domainca'
+('/api/get/domaindnszone'
+('/api/get/domaintrust'
+('/api/logs'
+('/api/logs?limit=1'
+('/api/settings'
+('0x' + p1
+(':'
+(':scope > div'
+(';'
+('<br>'
+('ACE created.'
+('ALLOWED'
+('Access denied - you must be admin to enumerate sessions this way'
+('Access denied while enumerating Sessions on %s' % (identity
+('Adding a machine account to the domain requires TLS but ldap:// scheme provided. Switching target to LDAPS via StartTLS'
+('Adding a user account to the domain requires TLS but ldap:// scheme provided. Switching target to LDAPS via StartTLS'
+('An unknown error occurred.'
+('Assuming relayed user has privileges to escalate a user via ACL attack'
+('At least one property must be selected'
+('Attempts to modify the Security Descriptor.'
+('Attribute msDS-KeyCredentialLink does not exist'
+('Both attribute name and value are required'
+('Broken pipe'
+('Bypassing disabled account %s ' % sAMAccountName
+('Cache cleared successfully'
+('Channel binding is not supported. Ignoring flag'
+('Channel binding not supported with LDAP. Proceed with LDAPS'
+('Computer'
+('Connection failed - skipping host!'
+('Copy failed'
+('Could not determine the zone name'
+('Could not query target user properties'
+('Could not retrieve infos for user: %s' % self.principalidentity_dn
+('Currently allowed sids:'
+('DACL modified successfully!'
+('DC ip will be ignored because of cross-domain targeting.'
+('DNS Hostname not found for this computer'
+('DNS record added successfully'
+('DNS record deleted successfully'
+('DNS record details container not found'
+('Delegation rights modified succesfully!'
+('Delete computer {} Failed! Maybe the current user does not have permission.'.format(domainComputer
+('Delete computer {} successfully!'.format(domainComputer
+('Domain info dumped into lootdir!'
+('Domain retrieved from CCache: %s' % domain
+('Dumping domain info for first time'
+('Dumping gMSA password requires TLS but ldap:// scheme provided. Switching target to LDAPS via StartTLS'
+('Empty Domain not allowed in Kerberos'
+('Enumerating relayed user\'s privileges. This may take a while on large domains'
+('Error binding with SAMR'
+('Error regex parsing'
+('Error when creating RPC connection'
+('Error when updating ACL: %s' % self.client.result
+('Error while anonymous logging into %s' % domain
+('Failed to add ACL'
+('Failed to add DNS record'
+('Failed to add a new computer. The server denied the operation. Try relaying to LDAP with TLS enabled (ldaps
+('Failed to add a new computer: %s' % str(self.client.result
+('Failed to add a new user. The server denied the operation. Try relaying to LDAP with TLS enabled (ldaps
+('Failed to add a new user: %s' % str(self.__client.result['message']
+('Failed to add group member'
+('Failed to add group member. Please try again.'
+('Failed to add group'
+('Failed to add group. Please try again.'
+('Failed to add user. Please try again.'
+('Failed to clear cache'
+('Failed to copy to clipboard'
+('Failed to delete DNS record'
+('Failed to delete object'
+('Failed to disconnect from LDAP server'
+('Failed to execute command. Please check the console for more details.'
+('Failed to fetch DACL data'
+('Failed to fetch LDAP attributes'
+('Failed to fetch domain groups'
+('Failed to fetch group members'
+('Failed to fetch logon users data'
+('Failed to fetch sessions data'
+('Failed to fetch settings'
+('Failed to fetch status'
+('Failed to initialize Add Group Member Modal'
+('Failed to initialize Add Group Modal'
+('Failed to initialize Add User Modal'
+('Failed to initialize GPO view'
+('Failed to initialize Remove Group Member Modal'
+('Failed to load GPO details'
+('Failed to load GPOs'
+('Failed to load descendants'
+('Failed to load domain content'
+('Failed to load domain trusts'
+('Failed to load linked GPOs'
+('Failed to load organizational units'
+('Failed to load some dashboard components'
+('Failed to remove group member'
+('Failed to remove group member. Please try again.'
+('Failed to search computers. Please try again.'
+('Failed to search users. Please try again.'
+('Failed to update settings'
+('Found AD Domain: %s' % dc
+('Found AD domain: %s' % ad_domain
+('HTTPD(%s
+('Invalid response format'
+('KDC_ERR_ETYPE_NOSUPP'
+('KRB5CCNAME'
+('LDAP sign and seal are not supported. Ignoring flag'
+('LDAP sign and seal are supported'
+('New computer already added. Refusing to add another'
+('No DC host set and \'%s\' doesn\'t look like a FQDN. DNS resolution of short names will probably fail.' % self.__domain
+('No Encryption Data Available!'
+('No GPO data found'
+('No domain data found'
+('No parent node found'
+('No parent subtree found'
+('No records available to delete'
+('No valid credentials found in cache'
+('Object-specific ACE created.'
+('Performing ACL attack'
+('Performing Group attack'
+('Please enter a PowerView command.'
+('Please enter a value to append'
+('Please fill in all fields'
+('Please select a DNS zone'
+('Please select a member to remove'
+('Principal not found in LDAP (%s
+('Property already exists'
+('Querying domain security descriptor'
+('README.md'
+('Record Name section not found'
+('Required elements not found'
+('S-1-5-32-544'
+('SID not found in LDAP: %s' % sid
+('STATUS_MORE_ENTRIES'
+('STATUS_PIPE_NOT_AVAILABLE'
+('Saving ticket in %s' % (self.__user + '.ccache'
+('Server rejected authentication because LDAP signing is enabled. Try connecting with TLS enabled (specify target as ldaps://hostname 
+('Settings updated successfully'
+('Sign and seal not supported with LDAPS'
+('Sign and seal not supported with LDAPS. Falling back to LDAP'
+('Skipping WRITE_DACL since it has an ObjectType set'
+('StartTLS failed'
+('Started interactive Ldap shell via TCP on 127.0.0.1:%d' % self.tcp_shell.port
+('Successfully added ACL'
+('Successfully deleted object'
+('Successfully disconnected from LDAP server'
+('TGT: %s' % str(e
+('TLS channel binding is supported'
+('TLS channel binding not supported with LDAP'
+('Target account does not exist! (wrong domain?
+('The server returned an error: %s' % self.client.result['message']
+('Total of records returned %d' % len(entries
+('Trying to connect to KDC at %s' % targetHost
+('Unable to escalate without a valid user.'
+('User distinguishedName is required'
+('User is a member of: %s' % self.client.entries
+('User not found in LDAP: %s' % samname
+('User privileges found: Adding user to a privileged group (%s
+('User privileges found: Create user'
+('User privileges found: Modifying domain ACL'
+('Username retrieved from CCache: %s' % self.username
+('Username retrieved from CCache: %s' % user
+('Username retrieved from CCache: %s' % username
+('Using Kerberos Cache: %s' % os.getenv('KRB5CCNAME'
+('Using TGS from cache'
+('Using TGT from cache'
+('We have more than one ip. Please choose one that is reachable'
+('Zone name container not found'
+('[%(asctime
+('['
+('[Add-DomainDNSRecord] Success! Created new record with dn %s' % record_dn
+('[Add-DomainGroup] Success! Created new group'
+('[Add-DomainObjectACL] Principal Identity object not found in domain'
+('[Add-DomainObjectACL] Target Identity object not found in domain'
+('[Add-DomainObjectAcl] Principal not found. Searching in Well Known SIDs...'
+('[Add-DomainUser] Success! Created new user'
+('[Find-LocaAdminAccess] FQDN must be used for kerberos authentication'
+('[Get-DomainObjectAcl] Principal not found. Searching in Well Known SIDs...'
+('[Get-DomainObjectAcl] Recursing all domain objects. This might take a while'
+('[Get-DomainUser] Searching for adminCount=1'
+('[Get-DomainUser] Searching for locked out user'
+('[Get-DomainUser] Searching for users that are configured to allow resource-based constrained delegation'
+('[Get-DomainUser] Searching for users that are trusted to authenticate for other principals'
+('[Get-DomainUser] Searching for users who are sensitive and not trusted for delegation'
+('[Get-DomainUser] Searching for users who can be delegated'
+('[Get-NamedPipes] FQDN must be used for kerberos authentication'
+('[Get-NamedPipes] Host not found'
+('[Get-NetLoggedOn] Access denied - you must be admin to enumerate sessions this way'
+('[Get-NetLoggedOn] Broken pipe'
+('[Get-NetLoggedOn] Connection failed - skipping host!'
+('[Get-NetLoggedOn] No sessions found!'
+('[Get-NetShare] FQDN must be used for kerberos authentication'
+('[Remove-DomainObjectACL] Principal Identity object not found in domain'
+('[Remove-DomainObjectACL] Target Identity object not found in domain'
+('[Remove-DomainObjectAcl] Principal not found. Searching in Well Known SIDs...'
+('[Remove-DomainUser] Identity is required'
+('[Remove-DomainUser] Identity not found in domain'
+('[Set-DomainCATemplate] More than one template found'
+('[Set-DomainDNSRecord] Success! modified attribute for target record %s' % entry[0]['attributes']['distinguishedName']
+('[]'
+('[data-dismiss-target]'
+('[data-modal-hide]'
+('\'%s\' doesn\'t look like a FQDN. Generating baseDN will probably fail.' % self.__domain
+('\\'
+('\\n'
+('\n'
+('\u0000'
+('\u0001'
+(']'
+('a'
+('ace-type'
+('acl-rights'
+('add-computer-form'
+('add-computer-modal'
+('add-dns-record-form'
+('add-dns-record-modal'
+('add-group-form'
+('add-group-member-form'
+('add-group-member-modal'
+('add-group-modal'
+('add-new-attribute'
+('add-object-acl-form'
+('add-object-acl-modal'
+('add-user-form'
+('add-user-modal'
+('alert-message-error'
+('alert-message-success'
+('aria-controls'
+('aria-hidden'
+('ascii'
+('attributes'
+('authentication'
+('box-overlay-spinner'
+('box-overlay-spinner-init'
+('button'
+('ca-servers'
+('cache-toggle'
+('certificateTemplates'
+('clear'
+('clear-cache-button'
+('close-command-history-panel'
+('close-settings-panel'
+('cls'
+('cn=domain admins'
+('code'
+('command-history-entries'
+('command-history-panel'
+('computer'
+('computer-base-dn'
+('computer-identity'
+('computer-properties'
+('computer-search'
+('computer-search-base'
+('computer-search-button'
+('computers-counter'
+('computers-result-table'
+('confirm-delete'
+('content-area'
+('copy'
+('critical-items'
+('custom-ldap-filter'
+('dacl'
+('dacl-rows'
+('data-cn'
+('data-dismiss-target'
+('data-dn'
+('data-identifier'
+('data-modal-hide'
+('dd'
+('delegation'
+('descendants'
+('descendants-header'
+('descendants-rows'
+('details-panel'
+('disconnect-button'
+('displayName'
+('div'
+('dl'
+('dn'
+('dns-zone'
+('dns-zones'
+('dnsHostName'
+('domain-admins'
+('domain-info'
+('domain-stats'
+('domain-trusts'
+('dt'
+('existing-attributes'
+('expanded'
+('filter-all'
+('filter-disabled'
+('filter-dropdown-button'
+('filter-dropdown-menu'
+('filter-enabled'
+('filter-vulnerable'
+('general'
+('gpo-search'
+('gpo-tabs'
+('gpo-tree-view'
+('group'
+('group-base-dn'
+('group-name'
+('group-search'
+('h2'
+('h3'
+('hidden'
+('i'
+('identity-to-delete'
+('info'
+('inheritance'
+('input'
+('label'
+('ldap-attributes-modal'
+('ldap-filter'
+('linkedGpo'
+('loggedon'
+('logonusers-rows'
+('mask'
+('member-search'
+('memberOf'
+('memberof'
+('memberof-rows'
+('members'
+('members-content'
+('modal-dacl-rows'
+('modal-members-content'
+('modal-overlay'
+('modal-tab-search'
+('msDS-AllowedToActOnBehalfOfOtherIdentity'
+('msDS-GroupMSAMembership'
+('msDS-KeyCredentialLink'
+('msDS-ManagedPassword'
+('msDS-ManagedPasswordId'
+('msDS-ManagedPasswordInterval'
+('msFVE-KeyPackage'
+('msFVE-RecoveryGuid'
+('msFVE-RecoveryPassword'
+('msFVE-VolumeGuid'
+('msds-AllowedToDelegateTo'
+('nTSecurityDescriptor'
+('name'
+('new-attribute-name'
+('new-attribute-value'
+('new-computer-property'
+('new-computername'
+('new-computerpass'
+('new-dns-address'
+('new-dns-name'
+('new-groupname'
+('new-member'
+('new-password'
+('new-property'
+('new-user-property'
+('new-username'
+('obfuscate-toggle'
+('object-tree-search'
+('objectClass'
+('objectSid'
+('option'
+('organizationalUnit'
+('ou-content'
+('ou-tab-search'
+('ou-tabs'
+('ou-tree-view'
+('p'
+('popup-modal'
+('principal-identity'
+('profile-menu'
+('properties-container'
+('property-dropdown-button'
+('property-dropdown-menu'
+('protocol'
+('relay'
+('remove-group-member-form'
+('remove-group-member-modal'
+('remove-group-name'
+('remove-member'
+('rights'
+('rightsGuid'
+('sAMAccountName'
+('search-base-dropdown'
+('search-base-input'
+('search-base-options'
+('search-filter'
+('search-spinner'
+('searchbase-input'
+('selected'
+('selected-filters'
+('selected-properties'
+('selected-user-filters'
+('sessions'
+('sessions-rows'
+('settings'
+('settings-panel'
+('span#domain-name'
+('span'
+('span.text-sm.text-neutral-500'
+('svg'
+('tab-search'
+('table'
+('tableview'
+('tabpanelDelegation'
+('tabpanelInfo'
+('tabpanelLinkedGpo'
+('tabpanelSettings'
+('target-identity'
+('tbody tr'
+('tbody'
+('td'
+('td:nth-child(1
+('td:nth-child(2
+('td:nth-child(3
+('template-filter'
+('text-green-400'
+('text-red-400'
+('textarea'
+('th'
+('thead'
+('toggle-command-history'
+('toggle-settings'
+('tr'
+('tr:not(#initial-state
+('tr:not(.hidden
+('translate-x-full'
+('tree-view'
+('trusts'
+('trusts-content'
+('user'
+('user-base-dn'
+('user-filter-dropdown-button'
+('user-filter-dropdown-menu'
+('user-identity'
+('user-properties'
+('user-search'
+('user-search-base'
+('user-search-button'
+('users-counter'
+('users-result-table'
+('utf-16-le'
+('utf-16le'
+('utf-8'
+('web'
+('werkzeug'
+((
+((((?:CN|OU
+((currentZoneName && zoneName === currentZoneName
+(({ value }
+()
+() != args.domain.casefold(
+() != self.domain.casefold(
+() != str(ace[left]
+() != str(right
+() !== identity.toLowerCase(
+() + datetime.timedelta(days=1
+() + prop.slice(1
+() + tab.slice(1
+() + tabName.slice(1
+() - cache_time < timedelta(seconds=cache_ttl
+() < other.lower(
+() == 'add-domaincatemplate' or pv_args.module.casefold(
+() == 'add-domaincatemplateacl' or pv_args.module.casefold(
+() == 'add-domaincomputer' or pv_args.module.casefold(
+() == 'add-domaingpo' or pv_args.module.casefold(
+() == 'add-domaingroup' or pv_args.module.casefold(
+() == 'add-domaingroupmember' or pv_args.module.casefold(
+() == 'add-domainobjectacl' or pv_args.module.casefold(
+() == 'add-domainou' or pv_args.module.casefold(
+() == 'add-domainuser' or pv_args.module.casefold(
+() == 'get-domain' or pv_args.module.casefold(
+() == 'get-domainca' or pv_args.module.casefold(
+() == 'get-domaincatemplate' or pv_args.module.casefold(
+() == 'get-domaincomputer' or pv_args.module.casefold(
+() == 'get-domaincontroller' or pv_args.module.casefold(
+() == 'get-domainforeigngroupmember' or pv_args.module.casefold(
+() == 'get-domainforeignuser' or pv_args.module.casefold(
+() == 'get-domaingmsa' or pv_args.module.casefold(
+() == 'get-domaingpo' or pv_args.module.casefold(
+() == 'get-domaingpolocalgroup' or pv_args.module.casefold(
+() == 'get-domaingposettings' or pv_args.module.casefold(
+() == 'get-domaingroup' or pv_args.module.casefold(
+() == 'get-domaingroupmember' or pv_args.module.casefold(
+() == 'get-domainobject' or pv_args.module.casefold(
+() == 'get-domainobjectacl' or pv_args.module.casefold(
+() == 'get-domainobjectowner' or pv_args.module.casefold(
+() == 'get-domainou' or pv_args.module.casefold(
+() == 'get-domainrbcd' or pv_args.module.casefold(
+() == 'get-domainsccm' or pv_args.module.casefold(
+() == 'get-domaintrust' or pv_args.module.casefold(
+() == 'get-domainuser' or pv_args.module.casefold(
+() == 'get-exchangeserver' or pv_args.module.casefold(
+() == 'remove-domaincatemplate' or pv_args.module.casefold(
+() == 'remove-domaincomputer' or pv_args.module.casefold(
+() == 'remove-domaingroupmember' or pv_args.module.casefold(
+() == 'remove-domainobject' or pv_args.module.casefold(
+() == 'remove-domainobjectacl' or pv_args.module.casefold(
+() == 'remove-domainou' or pv_args.module.casefold(
+() == 'remove-domainuser' or pv_args.module.casefold(
+() == 'set-domaincatemplate' or pv_args.module.casefold(
+() == 'set-domainobject' or pv_args.module.casefold(
+() == 'set-domainobjectdn' or pv_args.module.casefold(
+() == 'set-domainobjectowner' or pv_args.module.casefold(
+() == 'set-domainrbcd' or pv_args.module.casefold(
+() == attribute.lower(
+() == i.casefold(
+() == operator.lower(
+() == ori_val.casefold(
+() == other.lower(
+() == str(ace[left]
+() == str(key
+() == str(left
+() == str(temp_entry['attributes'][left]
+() == value.casefold(
+() == value.lower(
+() == values.casefold(
+() => handleAddGroupMember(item
+() => handleCreateGroup(item.dn
+() => handleCreateUser(item.dn
+() => handleRemoveGroupMember(item
+() => showDeleteModal(item.dn
+() > other.lower(
+() and 'ObjectType' in compare_ace['Ace'].fields.keys(
+() and not self.get_authorized_signatures_required(
+() else i.strip(
+() for item in COMMANDS[cmd[0]]].index(unk.lower(
+() for name in self.get_domaindnszone(properties=['name']
+() for name in uac_names.split(delimiter
+() in [ item.casefold(
+() in group.casefold(
+() in list(rights.keys(
+() in self.lower(
+() in str(ace[left]
+() in str(temp_entry['attributes'][left]
+() not in [v.lower(
+() not in [x.lower(
+() not in link.lower(
+() not in name.lower(
+() with case-insensitive capabilities :
+().__init__(
+().__init__(connection
+().__init__(message
+().casefold(
+().endswith(zonename.lower(
+().filter(Boolean
+().find('ACCESS_DENIED'
+().getFullYear(
+().includes('cn=domain admins'
+().includes(searchTerm
+().isoformat(
+().localeCompare(b[0].toLowerCase(
+().map(part => part.split('='
+().next(
+().previous(
+().split('\\'
+().split(b'@'
+().startswith('_ldap._tcp.pdc._msdcs'
+().startswith(args.casefold(
+().startswith(cmd
+().toString(
+()]
+()] = value.strip(
+()].filter(Boolean
+()}|{search_filter.lower(
+()}|{str(sorted(attributes
+(**ldap_server_kwargs
+(**method_args
+(**params
+(**params['args']
+(**request_kwargs
+(-1
+(-242.236 -198.986
+(.*?
+(...args
+(/%([0-9A-F]{2}
+(/(?=[A-Z]
+(0
+(0.1
+(0x%x
+(1
+(1 1
+(10
+(12
+(15
+(2/5 width
+(20
+(242.236 209.835
+(242.236 229.835
+(242.236 249.835
+(244.868 212.466
+(250.983 209.835
+(250.983 229.835
+(250.983 249.835
+(256
+(28
+(3
+(3/5 width
+(31
+(32
+(36 characters
+(40 * 365
+(512 - plen
+(8
+(90deg
+(?<=\[
+(?=\]
+(@BlWasp_
+(@Wlayzz
+(@_dirkjan
+(@_nwodtuhs
+(@agsolino
+(@jagotu
+(@timmedin
+(ACCESS_ALLOWED_OBJECT_ACE.ACE_INHERITED_OBJECT_TYPE_PRESENT
+(ACCESS_ALLOWED_OBJECT_ACE.ACE_OBJECT_TYPE_PRESENT
+(ACCESS_ALLOWED_OBJECT_ACE.ADS_RIGHT_DS_CREATE_CHILD
+(ACCESS_ALLOWED_OBJECT_ACE.ADS_RIGHT_DS_WRITE_PROP
+(ACCESS_MASK.WRITE_DACL
+(ACE.INHERITED_ACE
+(ACE.INHERIT_ONLY_ACE
+(AES128 CTS HMAC-SHA1 96 and AES256 CTS HMAC-SHA1 96
+(ATTRIBUTE_OID
+(ActiveDirectorySecurity
+(Array.isArray(attributes.memberOf
+(Array.isArray(attributes.objectClass
+(Array.isArray(data
+(Array.isArray(member
+(Array.isArray(memberOf
+(Array.isArray(obj.attributes.objectClass
+(Array.isArray(ous
+(Array.isArray(value
+(C
+(CA
+(CN|OU|DC
+(COMMANDS.keys(
+(CentOS
+(CustomFormatter(fmt
+(DFS
+(DWORD
+(Debian/Ubuntu
+(EFSRPC
+(EXTENDED_RIGHTS
+(EXTENDED_RIGHTS_MAP
+(Encoding.PEM
+(Enum
+(Exception
+(ExtendedOperationsRoot
+(FLAG.name
+(FLAG.value
+(FQDN
+(False
+(GUID
+(GptTmpl.inf
+(HTTPRelayServer
+(HTTPRelayServer.HTTPHandler
+(IntFlag
+(LDAPRelayClient
+(LDAPRelayServer
+(Left Side
+(MS_PKI_CERTIFICATE_NAME_FLAG(0
+(MS_PKI_ENROLLMENT_FLAG(0
+(MS_PKI_ENROLLMENT_FLAG(int(self.enrollment_flag
+(N
+(N=10
+(None
+(OID with colons
+(PERM.name
+(ProtocolAttack
+(RC4-HMAC
+(RPC_C_AUTHN_GSS_NEGOTIATE
+(RPC_C_AUTHN_LEVEL_PKT_PRIVACY
+(RPC_C_AUTHN_WINNT
+(Right Side
+(SAM
+(SCHEMA_OBJECTS
+(SID
+(SPN
+(STORED_ADDR.keys(
+(Section 5.2.7.2
+(Section 5.4.2
+(Section 5.5.1
+(Section 5.5.2
+(SessionError
+(StandardExtendedOperations
+(Structure
+(True
+(UAC_DICT
+(UserAccountControl:1.2.840.113556.1.4.803:=512
+(WELL_KNOWN_SIDS.keys(
+(With resolvesids
+(Without resolvesids
+([0-9a-fA-F]
+([len(row[i]
+([random.choice(hex_string
+(\'hidden\'
+(_access_mask_flags
+(_ace_flags
+(_entries
+(_identity
+(_input
+(_lookedup_principal
+(_object_flags
+(_stdout
+(`Added ${member} to ${groupname}`
+(`Added group ${groupname} to ${basedn}`
+(`Added user ${username} to ${basedn}`
+(`Failed to append value to ${name}`
+(`Failed to delete ${attributeName}`
+(`Failed to delete ${identity}`
+(`Failed to fetch ${constantType} constants`
+(`Failed to load ${tabName} tab content`
+(`Failed to update ${attributeName}`
+(`HTTP error! status: ${response.status}`
+(`No data found for ${identity}`
+(`Removed ${member} from ${identity}`
+(`Successfully added attribute: ${attributeName}`
+(`Successfully appended value to ${name}`
+(`Successfully deleted ${attributeName}`
+(`Successfully deleted ${identity}`
+(`Successfully updated ${attributeName}`
+(`Successfully updated attribute: ${name}`
+(`button-${convertZoneToId(name
+(`spinner-${convertDnToId(searchbase
+(`spinner-button-${convertZoneToId(zoneName
+(`tabpanel${tab.charAt(0
+(a.attributes.member
+(a.timestamp
+(ace
+(ace.keys(
+(ace['Ace']['InheritedObjectType']
+(ace['Ace']['ObjectType']
+(ace['Ace']['Sid'].formatCanonical(
+(ace[key]
+(actionTd
+(actionTh
+(activeFilters
+(activePanel
+(activePanelId
+(activeTabId
+(addButton
+(addGroupButton
+(addUserButton
+(addUserToGroupButton
+(addr
+(address
+(addressCell
+(addressHeader
+(admincount=1
+(aesKey
+(aesKey == b'' or aesKey is None
+(alert
+(alert.contains(event.target
+(all_logs
+(allow_no_value=True
+(allowed or denied
+(an Extended Right here
+(answers
+(anything not a closing parenthesis
+(apReq
+(ap_rep
+(appendInput
+(appendWrapper
+(argparse.ArgumentParser
+(args
+(args.account
+(args.append
+(args.computer
+(args.computername
+(args.hashes
+(args.ldap_address
+(args.principalidentity_sid
+(args.properties
+(args.relay
+(args.server
+(args.set
+(args.target
+(args.targetidentity_sid
+(args[-1]
+(arrow
+(arrowIcon
+(asRep['enc-part']['cipher'].asOctets(
+(asReq
+(asctime
+(attr
+(attr.copy(
+(attr.strftime('%m/%d/%Y'
+(attr_append
+(attr_set
+(attribute
+(attributeDiv
+(attributeEntry
+(attributes
+(attributes.memberOf
+(attributes.objectClass
+(attributes.objectClass.includes('container'
+(attributes.objectClass.includes('group'
+(attributesDiv
+(attrs['attribute']
+(attrs['value']
+(auth_data
+(authenticateMessageBlob
+(authenticator
+(b
+(b.attributes.member
+(b.timestamp
+(based on object classes
+(basednInput
+(binascii.hexlify(chars[i].encode('utf-8'
+(binding_params.keys(
+(binding_strings[pipe[1:]]
+(blob
+(blob['CurrentPassword'][:-2]
+(boxOverlaySpinner
+(buffer
+(buttonsDiv
+(by parsing the simple permissions
+(c
+(c => c.toLowerCase(
+(c if c == '*' else escape_filter_chars(c
+(c.casefold(
+(ca
+(ca.attributes.cn
+(caElement
+(caName
+(cache_file
+(cache_string.encode(
+(cached_data['results']
+(cached_data['timestamp']
+(cancelButton
+(cancelButton && cancelButton.innerHTML.includes('fa-times'
+(canonical
+(cas
+(case-insensitive
+(ccache.principal.components
+(cellText.includes(searchInput
+(cert: x509.Certificate
+(cert_to_pem(self.cert
+(char
+(chars
+(chars[i]
+(chars[i] + spaces
+(checkbox
+(checkbox.checked
+(checkbox.value
+(childSubtreeContainer && childSubtreeContainer.classList.contains('subtree'
+(childText.includes(searchTerm
+(cipher.enctype
+(classes.includes('builtindomain'
+(classes.includes('computer'
+(classes.includes('container'
+(classes.includes('group'
+(classes.includes('organizationalunit'
+(classes.includes('user'
+(clearCacheButton
+(closeButton
+(closeCommandHistoryButton
+(cmd
+(cn
+(colLen
+(collectQueryParams(
+(command
+(commandCode
+(commandDiv
+(commandHistoryEntries.children
+(commandHistoryPanel
+(commandHistoryPanel.classList.contains('hidden'
+(comparison
+(component
+(computer
+(computer.attributes || {}
+(computer.entry_dn
+(computerName=computerName
+(computerNameInput
+(computer_name
+(computers
+(computers.length > 0
+(config
+(config.addcomputer
+(config.keys(
+(config_string
+(configure=False
+(confirmDeleteButton.cloneNode(true
+(connection.entries
+(const link of gpoLinks
+(const node of rootNodes
+(const ou of data
+(const ou of ous
+(constantType
+(constants.APOptions.mutual_required.value
+(constants.ApplicationTagNumbers.AP_REQ.value
+(constants.ApplicationTagNumbers.AS_REQ.value
+(constants.ApplicationTagNumbers.TGS_REQ.value
+(constants.ERROR_MESSAGES[self.error]
+(constants.EncryptionTypes.des3_cbc_sha1_kd.value
+(constants.EncryptionTypes.des_cbc_md5.value
+(constants.EncryptionTypes.rc4_hmac.value
+(constants.KDCOptions(idx
+(constants.PreAuthenticationDataTypes.PA_ENC_TIMESTAMP.value
+(constants.PreAuthenticationDataTypes.PA_PAC_REQUEST.value
+(constants.PreAuthenticationDataTypes.PA_TGS_REQ.value
+(container
+(container.children
+(containerDn
+(containerId
+(content
+(content.style.display === 'none' || content.style.display === ''
+(contentDiv
+(converters={'list': lambda x: [int(i
+(copyButton
+(countCell
+(create_allow_ace(objectsid
+(create_allow_ace(self.principalidentity_sid
+(currentFilter
+(currentSearchQuery
+(currentSearchText
+(currentZoneName
+(currentZoneName === zoneName
+(current_filter
+(daclData
+(daclIdentity
+(dacl['Ace']['Sid'].formatCanonical(
+(dacl_dict
+(data
+(data && Array.isArray(data
+(data && data.length > 0
+(data && typeof data === 'object'
+(data => { resultUac = data.map(item => `${item.attributes.Name}: ${item.attributes.Value}`
+(data.length === 0
+(data.status === 'OK'
+(data=secDesc
+(data=secDescData
+(data=self.__target_msds_allowedtoactonbehalfofotheridentity
+(data=self.__target_secdesc
+(data=self.principal_raw_security_descriptor
+(data=targetuser['raw_attributes']['msDS-AllowedToActOnBehalfOfOtherIdentity'][0]
+(dc
+(dce
+(dcs
+(dd
+(debounceTimeout
+(decodedTGS['ticket']['enc-part']['cipher'][-12:].asOctets(
+(decodedTGS['ticket']['enc-part']['cipher'][16:].asOctets(
+(decodedTGS['ticket']['enc-part']['cipher'][:-12:].asOctets(
+(decodedTGS['ticket']['enc-part']['cipher'][:16].asOctets(
+(decodedTGT['ticket']
+(defaultProperties
+(delegateObj
+(delegationPanel
+(delegfrom_identity
+(delegfrom_sid
+(delete=False
+(deleteButton
+(descendantsTab?.getAttribute('aria-selected'
+(dest='module'
+(detailElement
+(detailsButton
+(detailsContainer
+(dict
+(disconnectButton
+(displayName={identity}
+(displayname={identity}
+(distinguishedName
+(distinguishedName={args.identity}
+(distinguishedName={computerName}
+(distinguishedName={group}
+(distinguishedName={identity}
+(div
+(dl
+(dn
+(dnB
+(dnCell
+(dnContainer
+(dnSpan
+(dn_pattern.match(dn
+(dnsHostName={args.identity}
+(dnsHostName={identity}
+(dnsHostname
+(dnsHostnameLogonUsers
+(dnsHostnameSessions
+(dns_timeout
+(dnshostname={identity}
+(domain
+(domain.upper(
+(domainComputer
+(domainContainer
+(domainData && domainData.length > 0 && domainData[0].attributes.gPLink
+(domainData[0].attributes.gPLink
+(domainDiv
+(domainDumper
+(domainInfoResponse
+(domainResponse
+(domainSpan
+(domain_info
+(domainsWithoutBuiltin
+(dr
+(dropdownContent
+(dt
+(e
+(e == '' for e in entry
+(e for e in self.client.response if is_template_for_authentification(e
+(e.casefold(
+(e.key === 'Enter'
+(e.key === 'Enter' && e.target.value.trim(
+(e.key === 'Escape'
+(e.target
+(e.target === modal
+(editButton
+(el => el.classList.remove('selected'
+(element
+(emptyMessage
+(encAPRepPart
+(encAPRepPart['seq-number']
+(encAPRepPart['subkey']['keytype']
+(enc_type
+(enc_type.decode(
+(enc_type[0]
+(enc_value
+(encodeURIComponent(inputString
+(encoded_pass
+(encoder.encode(asReq
+(encoding
+(encryptedData
+(enctype
+(enforcementCell
+(enrollment_flag
+(ent
+(ent['address']
+(ent['hostname']
+(entries
+(entries.length > 0
+(entries[0].attributes
+(entries[0]['msPKI-Certificate-Name-Flag'].value
+(entries[0]['msPKI-Enrollment-Flag'].value
+(entries[0]['msPKI-Minimal-Key-Size'].value
+(entries[0]['msPKI-Private-Key-Flag'].value
+(entries[0]['msPKI-RA-Signature'].value
+(entries[0]['msPKI-Template-Minor-Revision'].value
+(entries[0]['msPKI-Template-Schema-Version'].value
+(entries[0]['pKIDefaultKeySpec'].value
+(entries[0]['pKIMaxIssuingDepth'].value
+(entries[0]['revision'].value
+(entry
+(entry for entry in cached_results
+(entry.entry_to_json(
+(entry.keys(
+(entryDiv
+(entry['attributes']['dnsHostName']
+(entry['attributes']['userAccountControl'][0]
+(entry['attributes'][key]
+(entry['objectSid'].value
+(entry_out.copy(
+(enum.IntFlag
+(env_krb5ccname
+(err
+(err => { errorUac = 'Error converting UAC'; resultUac = ''; }
+(error
+(errorResponse.error
+(error_code
+(error_status
+(escapedDn
+(event
+(event.key === 'Escape'
+(event.target
+(event.target.closest('button'
+(ex_templates
+(exc_group
+(exc_group_dn
+(existingSubtree && existingSubtree.classList.contains('subtree'
+(exists
+(exit_on_error=False
+(extensible_match.group(0
+(f
+(f'-ComputerName and -ComputerPass are required'
+(f'ACE not found in {self.args.targetidentity}'
+(f'Domain {pv_args.server} not found or probably not alive'
+(f'Failed password change attempt for {pv_args.identity}'
+(f'Invalid operator'
+(f'Key not available'
+(f'LDAP Base: {ca_search_base}'
+(f'LDAP Filter: {enroll_filter}'
+(f'Password changed for {pv_args.identity}'
+(f'Querying domain controller information from DNS server {nameserver}'
+(f'Records not found'
+(f'Successfully removed {user_dn} from domain'
+(f'User {pv_args.members} successfully added to {pv_args.identity}'
+(f'User {pv_args.members} successfully removed from {pv_args.identity}'
+(f'[Add-DomainGroupMember] Group {identity} not found in domain'
+(f'[Add-DomainGroupMember] User {members} not found in domain. Try to use DN'
+(f'[Add-DomainObjectACL] Found principal identity: {principal_dn if principal_dn else principal_sAMAccountName}'
+(f'[Add-DomainObjectACL] Found target identity: {target_dn if target_dn else target_sAMAccountName}'
+(f'[Get-DomainComputer] LDAP search filter: {ldap_filter}'
+(f'[Get-DomainComputer] Using additional LDAP filter: {args.ldapfilter}'
+(f'[Get-DomainController] Using additional LDAP filter: {args.ldapfilter}'
+(f'[Get-DomainGPO] LDAP search filter: {ldap_filter}'
+(f'[Get-DomainGPO] Using additional LDAP filter: {args.ldapfilter}'
+(f'[Get-DomainGroup] Filter is based on member property {ldap_filter}'
+(f'[Get-DomainGroup] LDAP search filter: {ldap_filter}'
+(f'[Get-DomainGroup] Using additional LDAP filter: {args.ldapfilter}'
+(f'[Get-DomainOU] LDAP search filter: {ldap_filter}'
+(f'[Get-DomainOU] Using additional LDAP filter: {args.ldapfilter}'
+(f'[Get-DomainObjectAcl] Identity not found in domain'
+(f'[Get-DomainObjectAcl] Identity {identity} not found. Try to use DN'
+(f'[Get-DomainObjectAcl] Multiple identities found. Use exact match'
+(f'[Get-DomainObjectAcl] Principal {security_identifier} not found. Try to use DN'
+(f'[Get-DomainObject] LDAP search filter: {ldap_filter}'
+(f'[Get-DomainObject] Using additional LDAP filter from args: {args.ldapfilter}'
+(f'[Get-DomainSCCM] LDAP search filter: {ldap_filter}'
+(f'[Get-DomainSCCM] Using additional LDAP filter: {args.ldapfilter}'
+(f'[Get-DomainTrust] LDAP search filter: {ldap_filter}'
+(f'[Get-DomainUser] LDAP search filter: {ldap_filter}'
+(f'[Get-DomainUser] Using additional LDAP filter: {args.ldapfilter}'
+(f'[Get-Domain] LDAP search filter: {ldap_filter}'
+(f'[Get-Domain] Using additional LDAP filter: {args.ldapfilter}'
+(f'[Invoke-Kerberoast] LDAP Filter string: {ldap_filter}'
+(f'[Remove-DomainGroupmember] Group {identity} not found in domain'
+(f'[Remove-DomainObjectACL] Found principal identity: {principal_dn if principal_dn else principal_sAMAccountName}'
+(f'[Remove-DomainObjectACL] Found target identity: {target_dn if target_dn else target_sAMAccountName}'
+(f'[Remove-DomainObject] Success! {targetobject_dn} removed'
+(f'[Set-DomainCATempalte] Found template dn {target_template[0].entry_dn}'
+(f'[Set-DomainCATemplate] Success! modified attribute for {identity} template'
+(f'[Set-DomainObject] Success! modified new dn for {targetobject_dn}'
+(f'[Set-DomainUserPassword] Multiple principal objects found in domain. Use specific identifier'
+(f'[Set-DomainUserPassword] No principal object found in domain'
+(f'{self.args.rights} right is not valid'
+(f'{self.args.targetidentity} not found in domain. Ensure to use valid object distinguishedName property'
+(file.get_longname(
+(file_name
+(filecontent
+(filecontent=data_content
+(fileh
+(filetime: str
+(filetime_to_span(filetime
+(filter
+(filter(lambda x : x['Name'].lower(
+(filterButtons
+(filter_str
+(filtered_entries
+(firstButton
+(flag
+(flat_domain.lower(
+(flexDiv
+(folder_name
+(footerYear
+(forest_oid
+(form
+(formattedValue
+(formattedValue.join('\n'
+(formatter
+(found
+(fsr & PERM.value
+(gPLink
+(getUnixTime(time
+(gpcfilesyspath.lower(
+(gplink=*{args.gplink}*
+(gplink_list
+(gpo
+(gpo.attributes.cn
+(gpoArrow
+(gpoContainer
+(gpoData
+(gpoData && gpoData.length > 0
+(gpoDiv
+(gpoGUID
+(gpoIcon
+(gpoIds
+(gpoIds && gpoIds.length > 0
+(gpoLinks
+(gpoLinks && gpoLinks.length > 0
+(gpoName.includes(searchTerm
+(gpoNameSpan
+(gpoSubtree
+(group
+(group => group.toLowerCase(
+(group.attributes.member
+(group.attributes.name
+(groupDn
+(groupName
+(groupNameInput
+(group['objectSid'].value
+(group_entry
+(groupnameInput
+(guid
+(guidRegex
+(guids_map_dict
+(hasMemberOf
+(hash.digest(
+(head
+(header
+(headerContent
+(headerContentDiv
+(headerDiv
+(headerH3
+(headerRow
+(headerTitle
+(headers
+(histfile
+(host
+(host['dNSHostName']
+(host['name']
+(host_inp
+(hostname
+(hostname: str
+(hosts
+(hosts.copy(
+(https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1
+(https://github.com/ThePirateWhoSmellsOfSunflowers/ldap3/tree/tls_cb_and_seal_for_ntlm
+(https://github.com/aniqfakhrul/powerview.py/wiki
+(https://github.com/sigmaris/python-gssapi
+(https://github.com/user-attachments/assets/15bcd3e3-0693-4b0c-9c58-c8f36d899486
+(https://github.com/user-attachments/assets/286de18a-d0a4-4211-87c2-3736bb1e3005
+(https://github.com/user-attachments/assets/4f219920-0cb0-4e81-ab6f-b6c94381a95f
+(https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/c79a383c-2b3f-4655-abe7-dcbb7ce0cfbe
+(https://www.fox-it.com
+(i
+(icon
+(iconTd
+(iconTh
+(identifier
+(identity
+(identity=args.basedn
+(identity=args.memberidentity
+(identity=basedn
+(identity=computer_name
+(identity=identity
+(identity=name
+(identity=parent_dn_entries
+(identity=principalidentity
+(identity=self.authUser
+(identity=self.whoami.split('\\'
+(identityToDelete && rowToDelete
+(identity_dn
+(identity_entries
+(identity_entries[0]['attributes']['distinguishedName']
+(identity_filter=f'(|(msPKI-Cert-Template-OID={oid}
+(identity_lockouttime
+(identity_object
+(index === parts.length - 1
+(index > -1
+(index > -1 && selectedProperties.length > 1
+(index > 0
+(infdict.copy(
+(infoPanel
+(infobject
+(infobject[0]['sids']
+(inherited case
+(init_ldap_address
+(initialContent
+(initialProperties
+(initially hidden
+(input
+(inputString
+(inputsContainer
+(int(constants.EncryptionTypes.aes128_cts_hmac_sha1_96.value
+(int(constants.EncryptionTypes.aes256_cts_hmac_sha1_96.value
+(int(constants.EncryptionTypes.rc4_hmac.value
+(int(encType
+(int(flag
+(int(self.authorized_signatures_required
+(int(value
+(interface
+(interface_uuid
+(io.StringIO(
+(isAllButton
+(isDistinguishedName
+(isEditing
+(isRoot
+(isSelected
+(isValidDistinguishedName
+(it needs to resolve tho
+(item
+(item.attributes.member
+(item.attributes.name
+(item.attributes.objectClass
+(item.attributes.objectClass && Array.isArray(item.attributes.objectClass
+(item.attributes.objectClass.includes('group'
+(item.attributes.objectClass.includes('user'
+(item.attributes.objectClass?.includes('group'
+(item.attributes.objectClass?.includes('user'
+(itemData
+(itemData.attributes.objectClass && itemData.attributes.objectClass.includes('domain'
+(itemData.attributes.objectClass && itemData.attributes.objectClass.includes('group'
+(js
+(k
+(k => k.toLowerCase(
+(keeping original ID
+(keeping original ID and structure
+(keeping original IDs and structure
+(keeping original structure
+(key
+(key === 'adminCount'
+(key === 'dnsRecord'
+(key => key.toLowerCase(
+(key: rsa.RSAPrivateKey
+(keySpan
+(key_to_pem(self.key
+(known_sids
+(label
+(labelDiv
+(labels
+(large_integer
+(large_integer['HighPart'] << 32
+(lastLogonTimestamp=-1
+(last_filter
+(ldapConn.result['message'].split(':'
+(ldapFilter
+(ldap_address
+(ldap_address.lower(
+(ldap_address=group_domain
+(ldap_address=member_domain
+(ldap_server.info.other.get('rootDomainNamingContext'
+(ldap_session.entries
+(ldap_session.result
+(ldap_string
+(ldap_time
+(left to right
+(len(addr
+(len(chars
+(len(entries
+(len(objects
+(len(parsed_dacl['Enrollment Rights']
+(len(parsed_dacl['Extended Rights']
+(len(parsed_dacl['Write Dacl']
+(len(parsed_dacl['Write Owner']
+(len(parsed_dacl['Write Property']
+(len(parsed_structure
+(len(resp
+(len(self
+(len(self.attributes
+(len(shares
+(len(sids
+(len(sourceObj
+(len(str(''.join(temp_entry['attributes'][left]
+(len(strs
+(len(users
+(len(value
+(len(zonename
+(length
+(lens
+(let i = 0; i < guids.length; i++
+(level
+(levelname
+(line
+(link
+(linkedGpoTab
+(linkedGpoTab.getAttribute('aria-selected'
+(lmhash
+(log
+(log.log_type
+(logging.DEBUG
+(logging.Formatter
+(logonCount=0
+(logonData
+(mainInputWrapper
+(managedPassword
+(map(lambda x: str(x
+(map(lambda x: x.decode(
+(mask => mask.trim(
+(match => match[0]
+(member
+(member.value
+(member={memberidentity_dn}
+(memberHeader
+(memberIdentity
+(memberInput
+(memberOf
+(memberOf:1.2.840.113556.1.4.1941:={dn}
+(memberOf=%s
+(memberOfArray
+(memberOfTab
+(memberSearchInput
+(member_dn
+(member_domain
+(memberof:1.2.840.113556.1.4.1941:={group_identity_dn}
+(members
+(membersTab
+(members[0]._value_
+(message
+(messageLen + data
+(method
+(microseconds=microseconds
+(modal
+(modal && overlay
+(modalId
+(modalTitle
+(modified_dn
+(ms-Mcs-AdmPwd=*
+(msDS-KeyCredentialLink=*
+(msds-allowedtoactonbehalfofotheridentity=*
+(msds-allowedtodelegateto=*
+(multiRelay=False
+(multiple=True
+(name
+(name.includes(searchInput
+(name.includes(searchTerm
+(name.toLowerCase(
+(name={identity}
+(nameB
+(nameCell
+(nameHeader
+(nameSpan
+(navigator.clipboard && window.isSecureContext
+(nested_boolean_count
+(newComputerDn.decode('utf-8'
+(newEntry
+(newPassword
+(newProp
+(newValue !== originalValue
+(new_dict
+(new_dict.copy(
+(new_token
+(no_cache=false
+(no_cache=true
+(node
+(node.dn
+(node.dn === rootDn
+(not PERM.value
+(not self.password or not self.nthash or not self.lmhash
+(now
+(nt_errors.ERROR_MESSAGES[nt_error]
+(nthash
+(obj
+(obj => obj.attributes.name
+(obj.attributes.adminCount === 1
+(obj.attributes.objectClass && obj.attributes.objectClass.includes('domain'
+(obj.attributes.objectClass && obj.attributes.objectClass.includes('group'
+(obj.attributes.objectClass.includes('builtinDomain'
+(obj.attributes.objectClass.includes('computer'
+(obj.attributes.objectClass.includes('container'
+(obj.attributes.objectClass.includes('group'
+(obj.attributes.objectClass.includes('organizationalUnit'
+(obj.attributes.objectClass.includes('user'
+(obj.dn
+(objDiv
+(obj['__bytes__'].encode('ascii'
+(obj['__datetime__']
+(object
+(objectCategory=pKIEnrollmentService
+(objectCategory=printQueue
+(objectClass
+(objectClass=*
+(objectClass=container
+(objectClass=foreignSecurityPrincipal
+(objectClass=group
+(objectClass=msDS-GroupManagedServiceAccount
+(objectClass=msFVE-RecoveryInformation
+(objectClass=organizationalUnit
+(objectClass=pKIEnrollmentService
+(objectClass=user
+(objectClasses
+(objectClasses.includes('computer'
+(objectClasses.includes('container'
+(objectClasses.includes('group'
+(objectClasses.includes('organizationalunit'
+(objectClasses.includes('user'
+(objectSid={identity}
+(objectclass=certificationAuthority
+(objectclass=msPKI-Enterprise-Oid
+(objects
+(objects[i]
+(objectsid
+(offered_templates
+(oid_dn
+(oid_forest
+(operator.lower(
+(option
+(optional
+(opts
+(os.getenv('KRB5CCNAME'
+(os.path.expanduser('~'
+(os.path.expanduser('~/.powerview/logs/'
+(otherButton !== toggleButton
+(ou
+(ou.attributes
+(ou.attributes.gPLink
+(ouContainer
+(ouData && ouData.length > 0
+(ouData && ouData.length > 0 && ouData[0].attributes.gPLink
+(ouData[0]
+(ouData[0].attributes.gPLink
+(ouDiv
+(ouNode
+(output
+(outputFormat.format(*header
+(outputFormat.format(*row
+(overlay
+(pacRequest
+(page * limit
+(parsed_ace
+(parsed_ace.keys(
+(parsed_dacl
+(parsed_dacl['Enrollment Rights'][i]
+(parsed_dacl['Extended Rights'][i]
+(parsed_dacl['Write Dacl'][j]
+(parsed_dacl['Write Owner'][k]
+(parsed_dacl['Write Property'][y]
+(parsed_structure[i]
+(parser.get_parsed_structure(
+(part => part.startsWith('OU='
+(parts
+(parts.length > 1
+(passwd
+(password
+(password is not used
+(past_date
+(path
+(path_to_files=path
+(pc_attr.copy(
+(permitting to specify extended rights in the ObjectType field for example
+(pfx
+(play with userAccountControl
+(policy_data
+(port
+(prefers-color-scheme: dark
+(principal
+(principal_entries
+(principal_identity
+(principal_identity[0]
+(principal_identity[0].get('attributes'
+(principalidentity
+(principalsid_entry
+(privguid
+(profileMenu
+(prop
+(prop !== 'objectClass'
+(prop.lower(
+(properties
+(properties or def_prop
+(properties or default_properties
+(properties=['dnsHostName']
+(propertyElements
+(propertyName
+(pv_args
+(pv_args.clear or pv_args.set or pv_args.append
+(pv_args.identity
+(pv_args.outfile
+(pv_args.server
+(pwdBuff
+(q.qname
+(query
+(r
+(r'(?i
+(r'([<>]?=|:=
+(r'([A-Za-z]+
+(r'([^\
+(r'([a-zA-Z0-9-]+
+(r':([0-9.]+
+(r'[&|!]'
+(r'\
+(r'\('
+(r.address
+(r.target
+(random.choice([chars[i].lower(
+(random.choice(characters
+(random.choice(string.ascii_letters
+(random.choice(string.ascii_letters + string.digits
+(random.choice(string.ascii_uppercase + string.digits
+(re.findall(r'DC=([\w-]+
+(read_server_info=False
+(record
+(record.levelno
+(recordCounter
+(recordName
+(recordSection
+(record['Data']
+(record['Type']
+(record_dn
+(recordaddress
+(recordname
+(recordnameToDelete
+(records.length > 0
+(recordsContainer
+(recordsResponse
+(records[0].attributes.name
+(recvDataLen
+(recvDataLen-len(r
+(refreshCallback
+(removeUserButton
+(req
+(required
+(required=False
+(res
+(res.content
+(response
+(response => response.json(
+(response.ok
+(response.status === 400
+(rest
+(result
+(result === false
+(results
+(rid
+(right
+(right_opt
+(rights
+(root
+(rootDnData
+(rootNode
+(row
+(rpctransport
+(s
+(s.getServerName(
+(sAMAccountName or DN
+(sAMAccountName=*
+(sAMAccountName={args.identity}
+(sAMAccountName={identity}
+(sa
+(salt
+(samname
+(samr.MSRPC_UUID_SAMR
+(saveButton
+(scmr.MSRPC_UUID_SCMR
+(sdData
+(sd['Dacl'].aces
+(sdflags=0x01
+(sdflags=0x04
+(sdflags=0x05
+(sdflags=0x5
+(sdflags=sd_flag
+(searchBase
+(searchInput
+(searchSpinner
+(searchTerm
+(search_base
+(search_filter
+(searchbase
+(secDesc
+(secDesc['Dacl']
+(second_last_list
+(seconds=obj['__timedelta__']
+(seconds=ts / 10000000
+(seconds=ts/10000000
+(section === 'Security'
+(security_descriptor
+(security_identifier
+(select_attributes
+(selectedGPO
+(selectedNode
+(selectedOU
+(selectedProperties
+(selectedProperties.includes(newProp
+(selectedProperties.length <= 1
+(selectedRow
+(selector
+(self
+(self < other
+(self == other
+(self > other
+(self.GENERIC_ALL
+(self.__computerName
+(self.__domain
+(self.__lmhash
+(self.__lmhash == '' and self.__nthash == ''
+(self.__nthash
+(self.__password
+(self.__port
+(self.__target
+(self.__targetIp
+(self.__target_securitydescriptor['OwnerSid']
+(self.__user + '.ccache'
+(self.attributes[i]
+(self.cache_path
+(self.certificate_name_flag
+(self.client.entries
+(self.client.entries[0]['objectSid']
+(self.client.response
+(self.complete
+(self.convertfrom_sid(ownersid
+(self.convertfrom_sid(sid
+(self.dn
+(self.domain
+(self.domain.upper(
+(self.extended_key_usage
+(self.get_domain(
+(self.get_domainobject(identity=computer_name
+(self.get_max_len(list(entry['attributes'].keys(
+(self.get_max_len(select_attributes
+(self.get_server_dns(
+(self.history_file
+(self.items(
+(self.keys(
+(self.ldap_address
+(self.ldap_filter
+(self.ldap_filter[cursor:]
+(self.ldap_server
+(self.ldap_server.info.other.get('defaultNamingContext'
+(self.ldap_server.info.other['defaultNamingContext'][0]
+(self.ldap_session.entries
+(self.ldap_session.entries[0]['objectSid'].raw_values[0]
+(self.ldap_session.result['message']
+(self.ldap_session.result['message'] 
+(self.logs_folder
+(self.lower(
+(self.new_owner_sid
+(self.objectsid
+(self.parseACE(ace
+(self.parsePerms(ace['Ace']['Mask']['Mask']
+(self.principal_security_descriptor['Dacl']
+(self.resolveSID(ace['Ace']['Sid'].formatCanonical(
+(self.root_dn
+(self.root_folder
+(self.server.config.serve_image
+(self.target
+(self.targetIp.upper(
+(self.targetidentity_dn
+(self.use_ldaps or self.use_gc_ldaps
+(self.values(
+(self['LabelCount']
+(self['RawName'][ind+1:ind+1+nextlen].decode('utf-8'
+(self['address']
+(separator
+(serializable_result
+(server
+(servicePrincipalName=*
+(session_key
+(sessionsData
+(sessionsTab && loggedonTab
+(set(attrs['value']
+(set(attrs['value'] + temp_list
+(set(list(attrs['value'].split('\n'
+(settings
+(settingsPanel
+(settingsPanel.classList.contains('hidden'
+(share
+(shouldShow && currentSearchText
+(si
+(sid
+(sid: str
+(sidCell
+(sidInput
+(sid_map.keys(
+(sids
+(sids: List[str]
+(sids[i]
+(sids_mapping
+(sids_mapping[:-1]
+(similar structure to Machine Configuration
+(snake_str: str
+(so far?
+(sort_option
+(source
+(span
+(span % 2592000 == 0
+(span % 31536000 == 0
+(span % 3600 == 0
+(span % 604800 == 0
+(span % 86400 == 0
+(span / 31536000
+(span / 3600
+(span / 604800
+(span // 2592000
+(span // 31536000
+(span // 3600
+(span // 604800
+(span // 86400
+(span: int
+(spinner
+(statusCell
+(statusElement
+(statusRegex
+(statusSpan
+(statusTd
+(stdout_handler
+(str
+(str(attr
+(str(attributes.get('objectSid'
+(str(e
+(str(host['dNSHostName']
+(str(ldapConn.result
+(str(m._name_ or m._value_
+(str(right
+(str(spn
+(str(u['sAMAccountName']
+(stringBinding
+(stringBindings
+(string_binding
+(strs
+(strs[i:index]
+(strs[i]
+(strs[i][j:index]
+(subsection === 'Unicode' || subsection === 'Version'
+(subtree
+(subtreeContainer && subtreeContainer.classList.contains('subtree'
+(subtreeContainer.children.length > 0
+(success
+(success && parentDn
+(success.message
+(svgIcon
+(sys.argv
+(t
+(tab === 'dacl'
+(tab === 'members'
+(tab === 'trusts'
+(tab === tabName
+(tabName
+(tabName === 'delegation'
+(tabName === 'descendants'
+(tabName === 'linkedGpo'
+(tabName === 'settings'
+(table
+(tableContainer
+(tableView
+(table_res
+(take if from schemaNamingContext to be sure
+(target
+(target.upper(
+(targetId
+(targetIdentityInput && currentIdentity
+(targetName.upper(
+(target_dn
+(target_entries
+(target_identity
+(target_identity[0]
+(target_template
+(target_template[0][attrs['attribute']].value
+(targetobject
+(targetobject_dn
+(targetrecord.getData(
+(tbody
+(tbody.getElementsByTagName('tr'
+(td
+(temp_entry['attributes'].keys(
+(template
+(template.attributes.Vulnerable && template.attributes.Vulnerable.length > 0
+(template.attributes['Certificate Authorities'] === caName
+(templateElement
+(template_oid
+(template_ops.get_owner_sid(
+(templates
+(templates[0].entry_dn
+(text
+(text.includes(query
+(textArea
+(textSpan
+(textToCopy
+(tgsReq
+(tgs['ticket']
+(th
+(that will force to use RC4 for the TGT
+(the ObjectType GUID will identify an extended access right
+(the div before the subtree container
+(the object that has the right over the DACL bearer
+(the principal who obtains the right
+(thead
+(timeStamp
+(timeout
+(timeoutId
+(timestampSpan
+(tmp
+(to_pascal_case(self._name_
+(to_remove
+(toggleButton.dataset.active === 'false'
+(toggleButton.dataset.active === 'true'
+(token
+(tokenized_filter
+(tr
+(translate_sids(unknwown_sids
+(treePath
+(treeView
+(triggerElement
+(trustTag
+(trusts && trusts.length > 0
+(trustsTab
+(ts
+(type === '4'
+(typeCell
+(typeof member === 'string'
+(typeof memberOf === 'string'
+(typo
+(uacInput
+(uac_val
+(uac_val.decode(
+(uac_val[0]
+(uac_value
+(uname
+(uniqueRecords.values(
+(unk
+(updatedData
+(upper=False
+(upper=True
+(user
+(user => user.attributes.adminCount === 1
+(user.entry_dn
+(userAccountControl
+(userAccountControl:1.2.840.113556.1.4.803:=1048576
+(userAccountControl:1.2.840.113556.1.4.803:=16
+(userAccountControl:1.2.840.113556.1.4.803:=16777216
+(userAccountControl:1.2.840.113556.1.4.803:=2
+(userAccountControl:1.2.840.113556.1.4.803:=32
+(userAccountControl:1.2.840.113556.1.4.803:=4194304
+(userAccountControl:1.2.840.113556.1.4.803:=524288
+(userAccountControl:1.2.840.113556.1.4.803:=8192
+(userAccountControl:1.2.840.113556.1.4.803:=8388608
+(userAccountControl=4128
+(userGroup
+(userSid
+(user['attributes']['distinguishedName']
+(user_can_enroll and self.get_enrollee_supplies_subject(
+(user_dn
+(user_entry
+(user_info['LastLogon']
+(user_info['PasswordLastSet']
+(user_info['PasswordMustChange']
+(user_sid
+(user_sids
+(username.lower(
+(usernameInput
+(usernames
+(userpass
+(users
+(users.length > 0
+(users[0].attributes
+(usersid
+(uuid
+(uuid.uuid4(
+(v
+(v => convertToBase64(v
+(v => isByteData(v
+(v=ws.10
+(val
+(val.casefold(
+(val.strftime('%m/%d/%Y'
+(valid_indices
+(value
+(value && value.length > 100
+(value === 1
+(value === undefined || value === null
+(value || ''
+(value.length === 0
+(value: int
+(valueSpan
+(value[0]
+(value[i]
+(values
+(vars(self.powerview.args
+(via the flag
+(vulnerable_acl_sids
+(vulns[y]
+(wrapper
+(x.title(
+(zoneDiv
+(zoneDropdown
+(zoneDropdown.options.length > 0
+(zoneName
+(zoneSpan
+(zoneSpinner
+({ command: command }
+({ computer_name: distinguishedName }
+({ identity: cn }
+({ identity: distinguishedName }
+({ identity: gpoGUID }
+({ identity: groupDn }
+({ identity: groupName }
+({ identity: identity }
+({ identity: link.GUID }
+({ identity: searchInput }
+({ objectsid: sidInput }
+({ properties: ['name'] }
+({ searchbase: searchbase }
+({ value: uacInput }
+({ zonename: zoneName }
+({'error': 'Invalid command or arguments'}
+({'error': 'No command provided'}
+({'error': 'No module specified in the command'}
+({'error': f'Command parsing error: {str(e
+({'error': f'Method {full_method_name} not found'}
+({'error': str(e
+({'result': history}
+({'status': 'OK' if success else 'KO'}
+({'status': 'OK'}
+({'status': 'ok'}
+({...collectQueryParams(
+({LDAP.human_readable_time_diff(dt
+({flag.decode(
+({key: val}
+({self.convert_to_ldap(token
+({str(e
+({}
+(|%s
+(|(cn=*{identity}*
+(|(cn={identity}
+(|(distinguishedName={member_dn}
+(|(name={args.identity}
+(|(name={identity}
+(|(objectClass=group
+(|(objectClass=user
+(|(sAMAccountName={args.identity}
+(|(sAMAccountName={identity}
+(|(samAccountName={identity}
+(|(|(objectSid={objectsid}
+(|(|(samAccountName={identity}
+(~

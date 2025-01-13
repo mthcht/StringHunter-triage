@@ -1,0 +1,193 @@
+    
+        
+                
+                     
+                        $found = $true
+                        MissingDLL = $dllName
+                        ProcessId = $Process.Id
+                        ProcessName = $Process.ProcessName
+                        ProcessPath = $processPath
+                        SearchedPaths = $searchPaths -join '
+                        break
+                    $results 
+                    $searchPaths 
+                    if (Test-Path $path -ErrorAction SilentlyContinue) {
+                    }
+                 by @ajm4n
+                $dllName = $module.ModuleName
+                $found = $false
+                $searchPaths = Get-DllSearchPaths -ProcessPath $processPath -DllName $dllName
+                foreach ($path in $searchPaths) {
+                if ($script:VerboseOutput) {
+                if (-not $found) {
+                }
+            $results 
+            $searchPaths 
+            try {
+            }
+            } catch {
+        $_.MainModule -and ($script:StandardWindowsProcesses -notcontains $_.ProcessName) 
+        $modules = $Process.Modules 
+        $processPath = $Process.MainModule.FileName
+        $processResults = Analyze-Process -Process $process
+        $results 
+        $script:CustomSearchPaths 
+        $searchPaths 
+        Add-CustomSearchPath $path
+        [string]$DllName
+        foreach ($module in $modules) {
+        if ($_) {
+        if ($exportChoice -eq 'y') {
+        if ($processResults) {
+        if ([string]::IsNullOrWhiteSpace($path)) { break }
+        return
+        }
+    $env:Path -split '
+    $processDir = Split-Path -Parent $ProcessPath
+    $processes = Get-Process 
+    $results = @()
+    $script:VerboseOutput = $verboseChoice -eq 'y'
+    $searchPaths 
+    $searchPaths = @()
+    )
+    foreach ($path in $script:CustomSearchPaths) {
+    foreach ($process in $processes) {
+    if ($processDir) {
+    if ($results.Count -gt 0) {
+    if ($script:VerboseOutput) {
+    if (Test-Path $Path) {
+    param(
+    param([System.Diagnostics.Process]$Process)
+    param([string]$Path)
+    return $results
+    return $searchPaths
+    try {
+    while ($true) {
+    }
+    } catch {
+    } else {
+   .
+   Ensure you
+   Required to access process and module details.
+   This script is designed for Windows environments only.
+  Add your own directories to the DLL search order for more tailored analysis.
+  Displays results in a clean table format directly in the terminal.
+  Open the directory of affected executables directly from the script.
+  Save the results to a CSV file for further review and reporting.
+  Scans all running processes and their loaded DLLs to detect missing or unresolved libraries.
+  Set your own size limits for executables and the maximum number of DLL dependencies.
+  __ 
+  __  
+ '_ 
+ (_) 
+ / _  
+ 1. Process directory
+ 2. Custom search paths
+ 3. System directories
+ 4. Current directory
+ 5. PATH directories
+ ASCII art title
+ Configuration
+ DLL Sideloading Scanner 
+ DLLHound
+ Display results
+ Enable/Disable Verbose Mode
+ Export option
+ Export-Csv -Path $csvPath -NoTypeInformation
+ Features 
+ ForEach-Object {
+ ForEach-Object { 
+ Format-Table -AutoSize -Wrap
+ Get custom search paths
+ Global verbose flag
+ Installation 
+ Requirements 
+ Requires running with administrator privileges
+ Scan processes
+ Start the scan
+ Usage 
+ Where-Object { 
+ Where-Object { $_.ModuleName -match '
+ ___  _   _ _ __   __
+ _____  _      _      _    _                       _ 
+"                        Write-LogMessage ""  $_"" -Type ""VERBOSE"" -Color DarkGray "
+"                    Write-LogMessage ""Checking paths for $dllName"" -Type ""VERBOSE"" -Color DarkGray"
+"                    Write-LogMessage ""DLL Not Found: $dllName (Process: $($Process.ProcessName))"" -Type ""MISSING"" -Color Red"
+"                Write-LogMessage ""Error analyzing module $($module.ModuleName): $($_.Exception.Message)"" -Type ""ERROR"" -Color Yellow"
+"            $csvPath = Join-Path $desktopLocation """
+"            $desktopLocation = [Environment]::GetFolderPath(""Desktop"")"
+"            $timestamp = Get-Date -Format ""yyyyMMdd_HHmmss"""
+"            Write-LogMessage ""Results exported to: $csvPath"" -Type ""INFO"" -Color Green"
+"        $exportChoice = Read-Host ""Export results to CSV"
+"        $path = Read-Host ""Enter path"""
+"        Write-LogMessage ""Added custom search path: $Path"" -Type ""INFO"" -Color Green"
+"        Write-LogMessage ""Error accessing process $($Process.ProcessName): $($_.Exception.Message)"" -Type ""ERROR"" -Color Red"
+"        Write-LogMessage ""Found $($results.Count) potential DLL sideloading vulnerabilities:"" -Type ""INFO"" -Color Green"
+"        Write-LogMessage ""Invalid path: $Path"" -Type ""ERROR"" -Color Red"
+"        Write-LogMessage ""No DLL sideloading vulnerabilities detected."" -Type ""INFO"" -Color Green"
+"        Write-LogMessage ""Verbose mode enabled"" -Type ""INFO"" -Color Yellow"
+"        [ConsoleColor]$Color = ""White"""
+"        [string]$Message,"
+"        [string]$ProcessPath,"
+"        [string]$Type = ""INFO"","
+"    $verboseChoice = Read-Host ""Enable verbose mode"
+"    'explorer.exe', 'svchost.exe', 'lsass.exe', 'csrss.exe', 'wininit.exe',"
+"    'kernel32.dll', 'user32.dll', 'gdi32.dll', 'advapi32.dll', 'shell32.dll',"
+"    'ole32.dll', 'oleaut32.dll', 'ntdll.dll', 'msvcrt.dll', 'ws2_32.dll'"
+"    'services.exe', 'winlogon.exe', 'taskhostw.exe', 'spoolsv.exe', 'dwm.exe'"
+"    Write-Host """
+"    Write-Host ""[$Type] $Message"" -ForegroundColor $Color"
+"    Write-LogMessage ""Analyzing process: $($Process.ProcessName) (PID: $($Process.Id))"" -Type ""VERBOSE"" -Color DarkGray"
+"    Write-LogMessage ""Starting DLL sideloading vulnerability scan..."" -Type ""INFO"" -Color Green"
+"    if ($Type -eq ""VERBOSE"" -and -not $script:VerboseOutput) {"
+" (y/n)"""
+" Select-Object MissingDLL, ProcessPath "
+"""@ -ForegroundColor Cyan"
+"$DllName"""
+"= Join-Path $env:SystemRoot ""System32"
+"A lightweight PowerShell-based scanner designed to identify missing or unresolved DLLs, helping you detect potential DLL sideloading vulnerabilities on your Windows system."
+"Clear, Organized Output"
+"DLLScan_$timestamp.csv"""
+"Write-Host @"""
+"__,_"
+"nEnter custom search paths (press Enter without input to continue):"""
+$script:CommonSystemDlls = @(
+$script:CustomSearchPaths = @()
+$script:StandardWindowsProcesses = @(
+$script:VerboseOutput = $false
+.dll$' }
+/ _ 
+1. Clone or download this repository to your local system.
+1. Run the script with:
+2. Open PowerShell as an administrator.
+3. Navigate to the script's directory.
+= $Path
+= $processResults
+= Join-Path $_ $DllName
+= Join-Path $env:SystemRoot $DllName
+= Join-Path $path $DllName
+= Join-Path $processDir $DllName
+= Join-Path (Get-Location) $DllName
+= [PSCustomObject]@{
+Administrator Privileges
+CSV Export
+Custom Scans
+Customizable Search Paths
+DLLHound.ps1
+Dynamic Process Analysis
+PowerShell 5.1 or Later
+Quick Access to Affected Files
+Requires -RunAsAdministrator
+Start-DLLScan
+Windows Operating System
+___/ 
+____
+_____/
+______
+function Add-CustomSearchPath {
+function Analyze-Process {
+function Get-DllSearchPaths {
+function Start-DLLScan {
+function Write-LogMessage {
+powershell
+re running an updated version of PowerShell.

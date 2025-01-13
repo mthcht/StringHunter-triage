@@ -1,0 +1,925 @@
+"[""$($CharIndex % 64)"""
+"[""$Byte"""
+"[""Blue"""
+"[""Finding"""
+"[""Green"""
+"[""Hint"""
+"[""Info"""
+"[""LightGrey"""
+"[""Note"""
+"[""Red"""
+"[""RedYellow"""
+"[""Reset"""
+"[""Secure"""
+"[""X-OWA-Version"""
+"[""Yellow"""
+"[""domain"""
+"[""keyword"""
+"[""password"""
+"[""username"""
+"[$(($ExSrvBuild.split(""."")[0,1"
+"['w', 'E', 'B'"
+"[(New-Object Guid (,$Prop.schemaidguid[0"
+"[1,2"
+"[2,9,0"
+"[Alias(""c"")"
+"[Alias(""d"")"
+"[Alias(""h"")"
+"[Alias(""s"")"
+"[Alias(""v"")"
+"[Alias('ComputerName', 'Computer', 'DistinguishedName', 'SamAccountName', 'Name')"
+"[Alias('ComputerName', 'ComputerIdentity', 'Computer')"
+"[Alias('ComputerName', 'SamAccountName')"
+"[Alias('DNSHostName', 'Name', 'Server')"
+"[Alias('DistinguishedName', 'SamAccountName', 'Name')"
+"[Alias('DistinguishedName', 'SamAccountName', 'Name', 'MemberDistinguishedName', 'MemberName')"
+"[Alias('DomainName', 'Name')"
+"[Alias('FullName', 'Name')"
+"[Alias('GroupName', 'Group')"
+"[Alias('GroupName', 'GroupIdentity')"
+"[Alias('HostName', 'dnshostname', 'name')"
+"[Alias('KerberosPreauthNotRequired', 'NoPreauth')"
+"[Alias('MemberIdentity', 'Member', 'DistinguishedName')"
+"[Alias('Name', 'Identity')"
+"[Alias('Name', 'ObjectName')"
+"[Alias('SamAccountName', 'Name', 'DNSHostName')"
+"[Alias('SearchTerms', 'Terms')"
+"[Alias('Source', 'Name')"
+"[Alias('UAC', 'useraccountcontrol')"
+"[Alias('UserName', 'UserIdentity', 'User')"
+"[Alias('dnshostname', 'HostName', 'name')"
+"[Alias('gpcfilesyspath', 'Path')"
+"[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSAvoidUsingPlainTextForPassword', '')"
+"[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSAvoidUsingPositionalParameters', Scope='Function', Target='psenum')"
+"[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSShouldProcess', '')"
+"[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseApprovedVerbs', '')"
+"[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseDeclaredVarsMoreThanAssignments', '')"
+"[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseOutputTypeCorrectly', '')"
+"[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUsePSCredentialType', '')"
+"[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseShouldProcessForStateChangingFunctions', '')"
+"[Parameter( ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True)"
+"[Parameter(Mandatory = $False, ParameterSetName='AccessRuleType')"
+"[Parameter(Mandatory = $False, ParameterSetName='AuditRuleType')"
+"[Parameter(Mandatory = $False, ParameterSetName='ObjectGuidLookup')"
+"[Parameter(Mandatory = $True, ParameterSetName = 'Credential')"
+"[Parameter(Mandatory = $True, ParameterSetName = 'OUIdentity')"
+"[Parameter(Mandatory = $True, ParameterSetName = 'TokenHandle')"
+"[Parameter(Mandatory = $True, ParameterSetName='AccessRuleType')"
+"[Parameter(Mandatory = $True, ParameterSetName='AuditRuleType')"
+"[Parameter(Mandatory = $True, Position = 1)"
+"[Parameter(Mandatory = $True, ValueFromPipeline = $True)"
+"[Parameter(Mandatory = $True, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True)"
+"[Parameter(Mandatory = $false,HelpMessage=""Enter a Active Directory domain name here, e.g. 'contoso.com'"")"
+"[Parameter(Mandatory = $false,HelpMessage=""Enter a FQDN or IP address of a domain controller here, e.g. 'dc1.contoso.com' or '192.168.1.1'"")"
+"[Parameter(Mandatory = $false,HelpMessage=""Enter a file name where output should be written to, e.g. 'adPEAS_out.txt'"")"
+"[Parameter(Mandatory = $false,HelpMessage=""Enter the password of the User you want to impersonate, e.g. 'Passw0rd123!'"")"
+"[Parameter(Mandatory = $false,HelpMessage=""Enter the username you want to impersonate, e.g. 'CONTOSO\administrator'"")"
+"[Parameter(Mandatory = $false,HelpMessage=""Force enumeration, even if first domain detection fails"")"
+"[Parameter(Mandatory = $false,HelpMessage=""Provide a PSCredential Object for impersonation usage"")"
+"[Parameter(Mandatory = $false,HelpMessage=""Select the modules you want to run, e.g. Delegation"")"
+"[Parameter(Mandatory = $false,HelpMessage=""Switch SharpHound enumeration mode, e.g. ALL"")"
+"[Parameter(Mandatory = $false,HelpMessage=""Switch to TLS encrypted LDAPS over tcp/636"")"
+"[Parameter(Mandatory = $false,HelpMessage=""Switch to avoid obvious OPSEC fails"")"
+"[Parameter(Mandatory = $false,HelpMessage=""Writes the output file without ANSI color codes"")"
+"[Parameter(Mandatory = $true, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, ParameterSetName = 'DynamicParameter')"
+"[Parameter(Mandatory = $true, ValueFromPipeline=$true)"
+"[Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true, ParameterSetName = 'CreateVariables')"
+"[Parameter(Mandatory=$True, ValueFromPipelineByPropertyName=$True)"
+"[Parameter(ParameterSetName = 'ComputerName', Position = 0, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True)"
+"[Parameter(Position = 0,  Mandatory = $True, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True)"
+"[Parameter(Position = 0, Mandatory = $True)"
+"[Parameter(Position = 0, Mandatory = $True, ParameterSetName = 'ClassName')"
+"[Parameter(Position = 0, Mandatory = $True, ParameterSetName = 'ComputerName', ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True)"
+"[Parameter(Position = 0, Mandatory = $True, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True)"
+"[Parameter(Position = 0, Mandatory = $True, ValueFromPipelineByPropertyName = $True)"
+"[Parameter(Position = 0, Mandatory = $false, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True)"
+"[Parameter(Position = 0, Mandatory=$True)"
+"[Parameter(Position = 0, ParameterSetName = 'ComputerIdentity', Mandatory = $True, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True)"
+"[Parameter(Position = 0, ParameterSetName = 'Path', Mandatory = $True)"
+"[Parameter(Position = 0, ParameterSetName = 'RawSPN', Mandatory = $True, ValueFromPipeline = $True)"
+"[Parameter(Position = 0, ParameterSetName = 'User', Mandatory = $True, ValueFromPipeline = $True)"
+"[Parameter(Position = 0, ValueFromPipeline = $True)"
+"[Parameter(Position = 0, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True)"
+"[Parameter(Position = 0, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True, Mandatory = $True)"
+"[Parameter(Position = 0, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True, Mandatory = $false)"
+"[Parameter(Position = 0, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True, Mandatory= $True)"
+"[Parameter(Position = 1, Mandatory = $True)"
+"[Parameter(Position = 1, Mandatory=$True)"
+"[Parameter(Position = 2, Mandatory = $True)"
+"[Parameter(Position = 2, Mandatory=$True)"
+"[Parameter(Position = 3, Mandatory=$True)"
+"[Parameter(ValueFromPipeline = $True, Mandatory = $True, ParameterSetName = 'ReferenceObject')"
+"[Parameter(ValueFromPipelineByPropertyName = $true, ParameterSetName = 'DynamicParameter')"
+"[ValidateCount(2,2)"
+"[ValidateLength(0, 256)"
+"[ValidateLength(1, 65535)"
+"[ValidateRange(0, 100)"
+"[ValidateRange(0, 5)"
+"[ValidateRange(0, 65535)"
+"[ValidateRange(0.0, 1.0)"
+"[ValidateRange(1,  100)"
+"[ValidateRange(1, 100)"
+"[ValidateRange(1, 10000)"
+"[ValidateRange(1, 1000000)"
+"[ValidateRange(1,10000)"
+"[ValidateRange(50, 5000)"
+"[ValidateRange(500, 60000)"
+"[ValidateSet(""AdminACEs"",""DefaultACEs"")"
+"[ValidateSet(""Default"", ""All"", ""DCOnly"", ""ComputerOnly"", ""Session"", ""LoggedOn"",""Group"",""ACL"",""GPOLocalGroup"",""Trusts"",""Container"",""LocalGroup"",""LocalAdmin"",""RDP"",""DCOM"",""PSRemote"")"
+"[ValidateSet(""Domain"",""Rights"",""GPO"",""ADCS"",""Creds"",""Delegation"",""Accounts"",""Computer"",""Bloodhound"")"
+"[ValidateSet(""Info"", ""Finding"", ""Hint"", ""Note"", ""Secure"", ""Standard"")"
+"[ValidateSet(""mspki-enrollment-flag"",""mspki-certificate-name-flag"",""mspki-private-key-flag"",""pkiextendedkeyusage-oid"")"
+"[ValidateSet('API', 'WinNT')"
+"[ValidateSet('AccessSystemSecurity', 'CreateChild','Delete','DeleteChild','DeleteTree','ExtendedRight','GenericAll','GenericExecute','GenericRead','GenericWrite','ListChildren','ListObject','ReadControl','ReadProperty','Self','Synchronize','WriteDacl','WriteOwner','WriteProperty')"
+"[ValidateSet('Administrators', 'S-1-5-32-544', 'RDP', 'Remote Desktop Users', 'S-1-5-32-555')"
+"[ValidateSet('All', 'Children','Descendents','None','SelfAndChildren')"
+"[ValidateSet('All', 'ResetPassword', 'WriteMembers')"
+"[ValidateSet('All', 'ResetPassword', 'WriteMembers', 'DCSync')"
+"[ValidateSet('All', 'ResetPassword', 'WriteMembers', 'DCSync', 'AllExtended', 'GenericWrite', 'WriteProperty')"
+"[ValidateSet('All', 'ResetPassword', 'WriteMembers', 'DCSync', 'AllExtended', 'ReadLAPS')"
+"[ValidateSet('All', 'V1', '1', 'V2', '2')"
+"[ValidateSet('Allow', 'Deny')"
+"[ValidateSet('Base', 'OneLevel', 'Subtree')"
+"[ValidateSet('Certificate', 'Kerberos')"
+"[ValidateSet('DFS', 'DC', 'File', 'All')"
+"[ValidateSet('DN', 'Canonical', 'NT4', 'Display', 'DomainSimple', 'EnterpriseSimple', 'GUID', 'Unknown', 'UPN', 'CanonicalEx', 'SPN')"
+"[ValidateSet('Dacl', 'Group', 'None', 'Owner', 'Sacl')"
+"[ValidateSet('DomainLocal', 'NotDomainLocal', 'Global', 'NotGlobal', 'Universal', 'NotUniversal')"
+"[ValidateSet('John', 'Hashcat')"
+"[ValidateSet('Security', 'Distribution', 'CreatedBySystem', 'NotCreatedBySystem')"
+"[ValidateSet('Success', 'Failure')"
+"[ValidateSet('User', 'Group', 'Computer')"
+"[parameter(Position=0, ValueFromPipeline=$True, ValueFromPipelineByPropertyName=$True)"
+[!
+[#
+[$($LogonTime.Day + $i)
+[$CombinationNumber
+[$DayCounter
+[$DllName
+[$Field
+[$Group
+[$HostComputer
+[$Index
+[$Index++
+[$Key
+[$LogonTime.Day
+[$Name
+[$Offset+0
+[$Offset+1
+[$Offset+2
+[$Offset+3
+[$Offset+4
+[$Offset+5
+[$Offset+6
+[$Offset+7
+[$OutputType
+[$Prop.rightsguid[0
+[$PropertyName
+[$Section
+[$Start..($End-1)
+[$SysVolPath
+[$_
+[$_.Name
+[$_.SecurityIdentifier.Value
+[$_.Value.toString()
+[$a
+[$adPEAS_Domain.DomainModeLevel
+[$bit
+[$blob_data_size_start..$blob_data_size_end
+[$blob_data_start..$blob_data_end
+[$blob_name_size_start..$blob_name_size_end
+[$blob_name_start..$blob_name_end
+[$c
+[$comment_size_start..$comment_size_end
+[$comment_start..$comment_end
+[$comment_timestamp_start..$comment_timestamp_end
+[$dfs_targetlist_blob_size_start..$dfs_targetlist_blob_size_end
+[$dfs_targetlist_blob_start..$dfs_targetlist_blob_end
+[$hour
+[$i
+[$index++
+[$prefix_size_start..$prefix_size_end
+[$prefix_start..$prefix_end
+[$prefix_timestamp_start..$prefix_timestamp_end
+[$referral_ttl_start..$referral_ttl_end
+[$reserved_blob_size_start..$reserved_blob_size_end
+[$reserved_blob_start..$reserved_blob_end
+[$root_or_link_guid_start..$root_or_link_guid_end
+[$server_name_size_start..$server_name_size_end
+[$server_name_start..$server_name_end
+[$share_name_size_start..$share_name_size_end
+[$share_name_start..$share_name_end
+[$short_prefix_size_start..$short_prefix_size_end
+[$short_prefix_start..$short_prefix_end
+[$state_start..$state_end
+[$state_timestamp_start..$state_timestamp_end
+[$target_count_start..$target_count_end
+[$target_entry_size_start..$target_entry_size_end
+[$target_state_start..$target_state_end
+[$target_time_stamp_start..$target_time_stamp_end
+[$target_type_start..$target_type_end
+[$type_start..$type_end
+[$version_start..$version_end
+['API'
+['Account'
+['AdminCount'
+['AllowDelegation'
+['Append'
+['AutoEnrollment'
+['CanReadLAPS'
+['CertPassword'
+['Certificate'
+['Charset'
+['Check'
+['CheckWriteAccess'
+['Class'
+['ClassName'
+['Clear'
+['Collectionmethods'
+['ComputerDomain'
+['ComputerIdentity'
+['ComputerLDAPFilter'
+['ComputerName'
+['ComputerOperatingSystem'
+['ComputerSearchBase'
+['ComputerServicePack'
+['ComputerSiteName'
+['Computers'
+['CreationTime'
+['Credential'
+['Delay'
+['DelegateFrom'
+['Description'
+['Disabled'
+['DisallowDelegation'
+['DiscretionaryAcl'
+['DisplayName'
+['Domain'
+['DomainController'
+['DomainSimple'
+['Enabled'
+['EndTime'
+['EnrolleeSuppliesSubject'
+['EntryPoint'
+['ExcludeDCs'
+['ExcludeFolders'
+['ExcludeHidden'
+['Extension'
+['FieldName'
+['Filter'
+['FindOne'
+['Force'
+['Forest'
+['FreshEXEs'
+['GPLink'
+['Group'
+['GroupProperty'
+['GroupScope'
+['Groups'
+['HasLAPS'
+['Identity'
+['Include'
+['InputFile'
+['Issuer'
+['LDAP'
+['LDAPFilter'
+['LastAccessTime'
+['LastLogon'
+['LastWriteTime'
+['Locked'
+['Logo'
+['MachineType'
+['MarshalAs'
+['MaxEvents'
+['MemberIdentity'
+['Mpr'
+['NET'
+['NT4'
+['Name'
+['NativeCallingConvention'
+['NoColor'
+['NoLAPS'
+['NoPassExpiry'
+['NoSecurityExtension'
+['OPSEC'
+['Obfuscate'
+['OfficeDocs'
+['Offset'
+['OperatingSystem'
+['OutFile'
+['OutputObject'
+['OutputType'
+['Outputfile'
+['Owner'
+['OwnerName'
+['OwnerSID'
+['ParameterTypes'
+['PassExpired'
+['PassLastSet'
+['PassNotExpire'
+['PassNotExpired'
+['PassNotRequired'
+['Password'
+['Path'
+['Pattern'
+['Ping'
+['Position'
+['PreauthNotRequired'
+['PrincipalDomain'
+['Printers'
+['ProcessName'
+['Properties'
+['PropertyName'
+['Quiet'
+['RBCD'
+['Raw'
+['Recurse'
+['RecurseUsingMatchingRule'
+['ReferenceObject'
+['ReferencePropertySet'
+['ResolveGUIDs'
+['ResolveMembersToSIDs'
+['ResultPageSize'
+['RightsFilter'
+['RootDSE'
+['SPN'
+['SSL'
+['Sacl'
+['Scope'
+['SearchBase'
+['SearchBasePrefix'
+['SearchScope'
+['SecureLDAP'
+['SecurityMasks'
+['Server'
+['ServerTimeLimit'
+['ServicePack'
+['Set'
+['SetLastError'
+['ShowAll'
+['SiteName'
+['StartTime'
+['Stealth'
+['StopOnSuccess'
+['Subject'
+['SubjectAltRequireDns'
+['SystemAcl'
+['TLS'
+['TargetDomain'
+['TargetLDAPFilter'
+['TargetSearchBase'
+['TokenHandle'
+['Tombstone'
+['TrustedToAuth'
+['Type'
+['Unconstrained'
+['Unlocked'
+['User'
+['UserAdminCount'
+['UserAllowDelegation'
+['UserDomain'
+['UserGroupIdentity'
+['UserIdentity'
+['UserLDAPFilter'
+['UserSearchBase'
+['Username'
+['Users'
+['Value'
+['XOR'
+['advapi32'
+['altsecurityidentities'
+['distinguishedname'
+['homedirectory'
+['kernel32'
+['msds-allowedtoactonbehalfofotheridentity'
+['msds-replattributemetadata'
+['msds-replvaluemetadata'
+['netapi32'
+['ntdll'
+['ntsecuritydescriptor'
+['profilepath'
+['samaccountname'
+['scriptpath'
+['wtsapi32'
+[(.+)\
+[(Get-Random -Maximum $Nops.Length)
+[*
+[+
+[-1
+[0
+[0-9
+[0-9.
+[0-9A-F
+[0-9a-fA-F
+[0..$($Parts.length-2)
+[0..2
+[0..3
+[1
+[1-9
+[1..($ObjectCSV.Length-1)
+[1..2
+[10
+[11
+[12
+[12..14
+[12..15
+[13
+[14
+[15
+[15..17
+[16
+[17
+[18
+[18..20
+[19
+[2
+[2..($target_list.Length-1)
+[20
+[21
+[22
+[23
+[24
+[24..$DNSRecord.length
+[25
+[26
+[27
+[3
+[3..5
+[4
+[4..$($BytesReceived-1)
+[4..7
+[5
+[6
+[6..8
+[7
+[8
+[9
+[9..11
+[?
+[@Name='LogonType'
+[@Name='TargetUserName'
+[@Name='TargetUserSID'
+[A-Za-z
+[A-Za-z 
+[ADSI
+[APPLICATION 10
+[APPLICATION 11
+[APPLICATION 12
+[APPLICATION 13
+[APPLICATION 25[25
+[APPLICATION 26
+[APPLICATION 30
+[Aa
+[Activator
+[Add-DomainAltSecurityIdentity
+[Add-DomainGroupMember
+[Add-DomainObjectAcl
+[Add-RemoteConnection
+[Alias('ADSPath')
+[Alias('AdminCount')
+[Alias('AllowDelegation')
+[Alias('CheckAccess')
+[Alias('Class')
+[Alias('CollectionMethod')
+[Alias('ComputerName')
+[Alias('DNSHostName')
+[Alias('Domain')
+[Alias('DomainController')
+[Alias('Filter')
+[Alias('Format')
+[Alias('FullName')
+[Alias('GUID')
+[Alias('Name')
+[Alias('OU')
+[Alias('OperatingSystem')
+[Alias('Owner')
+[Alias('Password')
+[Alias('Path')
+[Alias('Replace')
+[Alias('ReturnOne')
+[Alias('Rights')
+[Alias('SID')
+[Alias('Scope')
+[Alias('ServicePack')
+[Alias('ServicePrincipalName')
+[Alias('Share')
+[Alias('SiteName')
+[Alias('Unconstrained')
+[Alias('User')
+[Alias('UserName')
+[Array
+[BLANK
+[BitConverter
+[Bitconverter
+[BloodHound Community Edition
+[Bool
+[Byte[
+[Cc
+[Char
+[CmdletBinding()
+[CmdletBinding(DefaultParameterSetName = 'AllowDelegation')
+[CmdletBinding(DefaultParameterSetName = 'ClassName')
+[CmdletBinding(DefaultParameterSetName = 'ComputerIdentity')
+[CmdletBinding(DefaultParameterSetName = 'ComputerName')
+[CmdletBinding(DefaultParameterSetName = 'Credential')
+[CmdletBinding(DefaultParameterSetName = 'Domain')
+[CmdletBinding(DefaultParameterSetName = 'DynamicParameter')
+[CmdletBinding(DefaultParameterSetName = 'Enabled')
+[CmdletBinding(DefaultParameterSetName = 'FileSpecification')
+[CmdletBinding(DefaultParameterSetName = 'LDAP')
+[CmdletBinding(DefaultParameterSetName = 'None')
+[CmdletBinding(DefaultParameterSetName = 'RawSPN')
+[CmdletBinding(DefaultParameterSetName = 'UserGroupIdentity')
+[CmdletBinding(PositionalBinding = $false)
+[ComponentModel.Win32Exception
+[Convert
+[Convert-ADCSExtendedKeyFlag
+[Convert-ADName
+[Convert-LDAPProperty
+[ConvertFrom-SID
+[ConvertTo-SID
+[DateTime
+[Dd
+[DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass
+[DllImport(DllName)
+[DomainDN
+[Double
+[Ee
+[Enum
+[Environment
+[EventData[Data[@Name='TargetUserName'
+[Find-DomainLocalGroupMember
+[Find-DomainObjectPropertyOutlier
+[Find-DomainProcess
+[Find-DomainShare
+[Find-DomainUserEvent
+[Find-DomainUserLocation
+[Find-HighValueAccounts
+[Find-InterestingDomainAcl
+[Find-InterestingDomainShareFile
+[Find-LocalAdminAccess
+[FlagsAttribute
+[GUID
+[Get-ADCSTemplate
+[Get-ADCSTemplateACL
+[Get-ASREPHash
+[Get-DecodedVBE
+[Get-Domain
+[Get-DomainCACertificates
+[Get-DomainComputer
+[Get-DomainDCSync
+[Get-DomainDFSShare
+[Get-DomainDN
+[Get-DomainDNSRecord
+[Get-DomainDNSZone
+[Get-DomainEnrollmentServers
+[Get-DomainGPO
+[Get-DomainGPOComputerLocalGroupMapping
+[Get-DomainGPOUserLocalGroupMapping
+[Get-DomainGUIDMap
+[Get-DomainGroup
+[Get-DomainGroupMember
+[Get-DomainGroupMemberDeleted
+[Get-DomainLAPSReaders
+[Get-DomainOU
+[Get-DomainObject
+[Get-DomainObjectAcl
+[Get-DomainObjectAttributeHistory
+[Get-DomainObjectLinkedAttributeHistory
+[Get-DomainObjectSD
+[Get-DomainRBCD
+[Get-DomainSID
+[Get-DomainSPNTicket
+[Get-DomainSearcher
+[Get-DomainSite
+[Get-DomainSubnet
+[Get-DomainTrust
+[Get-DomainTrustMapping
+[Get-DomainUser
+[Get-Forest
+[Get-GPPInnerField
+[Get-GPPPassword
+[Get-GptTmpl
+[Get-GroupsXML
+[Get-IdentityFilterString
+[Get-LogoffTime
+[Get-NetComputerSiteName
+[Get-NetLocalGroup
+[Get-NetLocalGroupMember
+[Get-NetLoggedon
+[Get-NetRDPSession
+[Get-NetSession
+[Get-NetShare
+[Get-NetlogonFile
+[Get-ObfuscatedFilterString
+[Get-PathAcl
+[Get-PrincipalContext
+[Get-RegLoggedOn
+[Get-RubeusForgeryArgs
+[Get-TargetDomainName
+[Get-WMIProcess
+[Get-WMIRegCachedRDPConnection
+[Get-WMIRegLastLoggedOn
+[Get-WMIRegMountedDrive
+[Get-WMIRegProxy
+[Get-adPEASAccounts
+[Get-adPEASBloodhound
+[Get-adPEASCA
+[Get-adPEASComputer
+[Get-adPEASCreds
+[Get-adPEASDelegation
+[Get-adPEASDomain
+[Get-adPEASGPO
+[Get-adPEASRights
+[Guid
+[Hashtable
+[IO.Compression.CompressionMode
+[IO.Directory
+[IO.File
+[IO.FileShare
+[IO.MemoryStream
+[IO.Path
+[IU
+[Ii
+[Int
+[Int32
+[Int64
+[IntPtr
+[Intptr
+[Invoke-ASREPRoast
+[Invoke-CheckADCS
+[Invoke-CheckExchange
+[Invoke-LDAPQuery
+[Invoke-PortCheck
+[Invoke-RevertToSelf
+[Invoke-UserImpersonation
+[Invoke-adPEAS
+[Invoke-adPEASAccounts
+[Invoke-adPEASDelegation
+[Ll
+[Management.Automation.CredentialAttribute()
+[Management.Automation.PSCredential
+[Management.Automation.PSDataCollection[Object
+[Microsoft.Win32.RegistryHive
+[Microsoft.Win32.RegistryKey
+[Net.Dns
+[Net.SecurityProtocolType
+[Net.ServicePointManager
+[New-DomainComputer
+[New-DomainGroup
+[New-DomainUser
+[New-ThreadedFunction
+[Nn
+[Object
+[Object[
+[Ordered
+[OutputType('DirectoryServices.AccountManagement.ComputerPrincipal')
+[OutputType('DirectoryServices.AccountManagement.GroupPrincipal')
+[OutputType('DirectoryServices.AccountManagement.UserPrincipal')
+[OutputType('Hashtable')
+[OutputType('PowerView.ACL')
+[OutputType('PowerView.ADObject')
+[OutputType('PowerView.ADObject.Raw')
+[OutputType('PowerView.ADObjectAttributeHistory')
+[OutputType('PowerView.ADObjectLinkedAttributeHistory')
+[OutputType('PowerView.AdminAccess')
+[OutputType('PowerView.CachedRDPConnection')
+[OutputType('PowerView.Computer')
+[OutputType('PowerView.Computer.Raw')
+[OutputType('PowerView.ComputerSite')
+[OutputType('PowerView.DNSRecord')
+[OutputType('PowerView.DNSZone')
+[OutputType('PowerView.DomainGroupMemberDeleted')
+[OutputType('PowerView.DomainTrust.API')
+[OutputType('PowerView.DomainTrust.LDAP')
+[OutputType('PowerView.DomainTrust.NET')
+[OutputType('PowerView.ExplicitCredentialLogon')
+[OutputType('PowerView.ExplicitCredentialLogonEvent')
+[OutputType('PowerView.FileACL')
+[OutputType('PowerView.ForeignGroupMember')
+[OutputType('PowerView.ForeignUser')
+[OutputType('PowerView.ForestTrust.NET')
+[OutputType('PowerView.FoundFile')
+[OutputType('PowerView.GGPOComputerLocalGroupMember')
+[OutputType('PowerView.GPO')
+[OutputType('PowerView.GPO.Raw')
+[OutputType('PowerView.GPOGroup')
+[OutputType('PowerView.GPOUserLocalGroupMapping')
+[OutputType('PowerView.Group')
+[OutputType('PowerView.GroupMember')
+[OutputType('PowerView.GroupsXML')
+[OutputType('PowerView.LastLoggedOnUser')
+[OutputType('PowerView.LocalGroup.API')
+[OutputType('PowerView.LocalGroup.WinNT')
+[OutputType('PowerView.LocalGroupMember.API')
+[OutputType('PowerView.LocalGroupMember.WinNT')
+[OutputType('PowerView.LoggedOnUserInfo')
+[OutputType('PowerView.LogonEvent')
+[OutputType('PowerView.LogonHours')
+[OutputType('PowerView.ManagedSecurityGroup')
+[OutputType('PowerView.OU')
+[OutputType('PowerView.PropertyOutlier')
+[OutputType('PowerView.ProxySettings')
+[OutputType('PowerView.RDPSessionInfo')
+[OutputType('PowerView.RegLoggedOnUser')
+[OutputType('PowerView.RegMountedDrive')
+[OutputType('PowerView.SPNTicket')
+[OutputType('PowerView.SessionInfo')
+[OutputType('PowerView.ShareInfo')
+[OutputType('PowerView.Site')
+[OutputType('PowerView.Subnet')
+[OutputType('PowerView.User')
+[OutputType('PowerView.User.Raw')
+[OutputType('PowerView.UserLocation')
+[OutputType('PowerView.UserProcess')
+[OutputType('String')
+[OutputType('System.Collections.Specialized.OrderedDictionary')
+[OutputType('System.DirectoryServices.ActiveDirectory.Domain')
+[OutputType('System.DirectoryServices.ActiveDirectory.DomainController')
+[OutputType('System.DirectoryServices.ActiveDirectory.GlobalCatalog')
+[OutputType('System.DirectoryServices.DirectorySearcher')
+[OutputType('System.Management.Automation.PSCustomObject')
+[OutputType('System.Security.AccessControl.AuthorizationRule')
+[OutputType([DateTime
+[OutputType([Hashtable
+[OutputType([IntPtr
+[OutputType([PSObject
+[OutputType([String
+[OutputType([System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass
+[OutputType([System.DirectoryServices.ActiveDirectory.Domain
+[OutputType([Type
+[OutputType([bool
+[PSCustomObject
+[Parameter (Mandatory= $True)
+[Parameter()
+[Parameter(Mandatory = $True)
+[Parameter(Mandatory = $false)
+[Parameter(Mandatory = $true)
+[Parameter(Mandatory= $True)
+[Parameter(Mandatory=$True)
+[Parameter(ParameterSetName = 'API')
+[Parameter(ParameterSetName = 'AllowDelegation')
+[Parameter(ParameterSetName = 'ComputerIdentity')
+[Parameter(ParameterSetName = 'Disabled')
+[Parameter(ParameterSetName = 'DisallowDelegation')
+[Parameter(ParameterSetName = 'Domain')
+[Parameter(ParameterSetName = 'Enabled')
+[Parameter(ParameterSetName = 'FileSpecification')
+[Parameter(ParameterSetName = 'FreshEXEs')
+[Parameter(ParameterSetName = 'LDAP')
+[Parameter(ParameterSetName = 'ManualRecurse')
+[Parameter(ParameterSetName = 'NET')
+[Parameter(ParameterSetName = 'OfficeDocs')
+[Parameter(ParameterSetName = 'RecurseUsingMatchingRule')
+[Parameter(ParameterSetName = 'ShowAll')
+[Parameter(ParameterSetName = 'TargetProcess')
+[Parameter(ParameterSetName = 'TargetUser')
+[Parameter(ParameterSetName = 'UserGroupIdentity')
+[Parameter(ParameterSetName = 'UserIdentity')
+[Parameter(Position = 0)
+[Parameter(Position = 2)
+[Parameter(Position = 3)
+[Parameter(Position = 4)
+[Parameter(Position = 5)
+[Parameter(ValueFromPipeline = $True)
+[Parameter(ValueFromPipelineByPropertyName = $True)
+[Parameter(ValueFromPipelineByPropertyName=$True)
+[PowerShell
+[Pp
+[Reflection.Assembly
+[Reflection.BindingFlags
+[Reflection.Emit.OpCodes
+[Reflection.Emit.PackingSize
+[Reflection.FieldInfo[
+[Reflection.PropertyInfo[
+[Reflection.TypeAttributes
+[Regex
+[Remove-DomainGroupMember
+[Remove-DomainObjectAcl
+[Remove-RemoteConnection
+[Resolve-IPAddress
+[Rr
+[RunspaceFactory
+[Runtime.InteropServices.CallingConvention
+[Runtime.InteropServices.CharSet
+[Runtime.InteropServices.DllImportAttribute
+[Runtime.InteropServices.Marshal
+[Runtime.InteropServices.MarshalAsAttribute
+[Runtime.InteropServices.UnmanagedType
+[Security.SecureString
+[Set-DomainComputerPassword
+[Set-DomainObject
+[Set-DomainObjectOwner
+[Set-DomainObjectSD
+[Set-DomainRBCD
+[Set-DomainUserPassword
+[Ss
+[String
+[String[
+[Switch
+[System.Array
+[System.Attribute
+[System.BitConverter
+[System.Convert
+[System.DirectoryServices.AccountManagement.ComputerPrincipal
+[System.DirectoryServices.AccountManagement.ContextType
+[System.DirectoryServices.AccountManagement.GroupPrincipal
+[System.DirectoryServices.AccountManagement.Principal
+[System.DirectoryServices.AccountManagement.UserPrincipal
+[System.DirectoryServices.ActiveDirectory.Domain
+[System.DirectoryServices.ActiveDirectory.Forest
+[System.DirectoryServices.ActiveDirectoryRights
+[System.DirectoryServices.ActiveDirectorySecurityInheritance
+[System.DirectoryServices.Protocols.AuthType
+[System.DirectoryServices.Protocols.DirectoryAttributeOperation
+[System.DirectoryServices.ReferralChasingOption
+[System.DirectoryServices.ResultPropertyValueCollection
+[System.DirectoryServices.SecurityMasks
+[System.Globalization.DateTimeStyles
+[System.IO.File
+[System.IO.FileAccess
+[System.IO.FileMode
+[System.Management.Automation.MethodInvocationException
+[System.Management.Automation.PSObject[
+[System.Management.Automation.Runspaces.InitialSessionState
+[System.Management.Automation.RuntimeDefinedParameterDictionary
+[System.Management.Automation.ScriptBlock
+[System.MarshalByRefObject
+[System.Net.Dns
+[System.Net.IPAddress
+[System.Net.ServicePointManager
+[System.Net.Sockets.AddressFamily
+[System.Net.Sockets.ProtocolType
+[System.Net.Sockets.SocketType
+[System.Object
+[System.Reflection.Assembly
+[System.Reflection.BindingFlags
+[System.Runtime.InteropServices.Marshal
+[System.Security.AccessControl.AccessControlType
+[System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+[System.Security.Principal.IdentityReference
+[System.Security.Principal.NTAccount
+[System.Security.Principal.SecurityIdentifier
+[System.Security.Principal.WellKnownSidType
+[System.StringSplitOptions
+[System.Text.Encoding
+[System.Text.UnicodeEncoding
+[System.Threading.ApartmentState
+[System.Threading.Thread
+[System.Type
+[Test-AdminAccess
+[Tt
+[Type
+[Type[
+[UInt16
+[UInt32
+[ValidateNotNull()
+[ValidateNotNullOrEmpty()
+[ValidateNotNullorEmpty()
+[ValidatePattern('.*/.*')
+[ValidatePattern('\\\\')
+[ValidatePattern('\\\\.*\\.*')
+[ValidatePattern('^S-1-.*')
+[ValidateScript({ $_.PSObject.TypeNames[0
+[ValidateScript({ Test-Path -Path $_ })
+[ValidateScript({($_ -is [Reflection.Emit.ModuleBuilder
+[ValueType
+[Void
+[XML
+[Xx
+[\w.
+[__ComObject
+[aA
+[array
+[at
+[bitconverter
+[bool
+[byte
+[byte[
+[char
+[convert
+[dD
+[datetime
+[f
+[int
+[int32
+[int[
+[io.file
+[no results returned
+[oO
+[pscustomobject
+[rR
+[ref
+[regex
+[s
+[sS
+[scriptblock
+[static
+[string
+[string[
+[switch
+[tT
+[uint32
+[void
+[wW
+[xml

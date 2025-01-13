@@ -1,0 +1,653 @@
+
+    
+                                                # Find unbound parameters in the current parameter set
+                                        # Find parameters that are belong to the current parameter set
+                                        # inheritance not marked as disabled yet
+                                    # and all clauses
+                                    # check if the user has access to this path
+                                    # see if we're checking to see if we have local admin access on this machine"
+                                # If identity is member in foreign domain
+                                # check if the user has access to this path
+                                # if the resulting member is username and not a SID, attempt to resolve it"
+                                # save so we don't look up more than once"
+                                # see if we're checking to see if we have local admin access on this machine"
+                                # skip this share if it's in the exclude list
+                                # try to resolve the DNS hostname of $Cname"
+                            #   and rebuild the domain searcher
+                            # DOMAIN\machine\user
+                            # DOMAIN\user
+                            # FILETIME again or special if priority rank and priority class 0
+                            # If a folder doesn't have a redirection it will have a target like
+                            # Searching for Exchange version
+                            # UAC value references- https://support.microsoft.com/en-us/kb/305144"
+                            # \\null\TestNameSpace\folder\.DFSFolderLink so we do actually want to match
+                            # build full path to share
+                            # extract any GPO links for this particular site the computer is a part of
+                            # extract the FQDN from the Distinguished Name
+                            # free up the memory buffer"
+                            # if a domain isn't returned just use the username
+                            # if identity is member is in local domain
+                            # if there's a problem contacting the domain to resolve the SID
+                            # make sure this key is a cached connection
+                            # make sure we get a real share name back
+                            # make sure we process the target
+                            # make sure wet have a result"
+                            # on 'null' rather than $Null
+                            # see if we want to check access to this share
+                        #             $Member | Add-Member Noteproperty 'LastLogin' $LocalUser.InvokeGet('LastLogin')
+                        #             $Member | Add-Member Noteproperty 'LastLogin' ''
+                        #             $Member | Add-Member Noteproperty 'LastLogin' ( $LocalUser.LastLogin[0])
+                        #         # UAC flags of 0x2 mean the account is disabled
+                        #         $Member | Add-Member Noteproperty 'Disabled' $(($LocalUser.UserFlags.value -band 2) -eq 2)
+                        #         $Member | Add-Member Noteproperty 'Disabled' ''
+                        #         $Member | Add-Member Noteproperty 'LastLogin' ''
+                        #         $Member | Add-Member Noteproperty 'PwdExpired' ''
+                        #         $Member | Add-Member Noteproperty 'PwdExpired' ( $LocalUser.PasswordExpired[0] -eq '1')
+                        #         $Member | Add-Member Noteproperty 'PwdLastSet' ''
+                        #         $Member | Add-Member Noteproperty 'PwdLastSet' ( (Get-Date).AddSeconds(-$LocalUser.PasswordAge[0]))
+                        #         $Member | Add-Member Noteproperty 'UserFlags' ''
+                        #         $Member | Add-Member Noteproperty 'UserFlags' ( $LocalUser.UserFlags[0] )
+                        #         catch {
+                        #         try {
+                        #         }
+                        #     # translate the binary sid to a string
+                        #     $Member | Add-Member Noteproperty 'Description' ''
+                        #     $Member | Add-Member Noteproperty 'Description' ($LocalUser.Description)
+                        #     $Member | Add-Member Noteproperty 'Disabled' ''
+                        #     $Member | Add-Member Noteproperty 'PwdExpired' ''
+                        #     $Member | Add-Member Noteproperty 'PwdLastSet' ''
+                        #     $Member | Add-Member Noteproperty 'UserFlags' ''
+                        #     else {
+                        #     if ($IsGroup) {"
+                        #     }
+                        #   and rebuild the domain searcher
+                        #   https://msdn.microsoft.com/en-us/library/aa383861(v=vs.85).aspx
+                        # $Remark = $Share.Remark
+                        # DFSRootOrLinkIDBlob
+                        # Parse DFSNamespaceRootOrLinkBlob object. Starts with variable length DFSRootOrLinkIDBlob which we parse first...
+                        # Parse rest of DFSNamespaceRootOrLinkBlob here"
+                        # TODO: handle multiple nested records properly?
+                        # check if member is a group
+                        # check if member is a user or computer
+                        # create a new int ptr at the given offset and cast the pointer as our result structure
+                        # create a new int ptr at the given offset and cast the pointer as our result structure"
+                        # deault to GenericAll rights
+                        # else {
+                        # extract any GPO links for this particular OU the computer is a part of
+                        # forest users have the samAccountName set
+                        # get the shares for this host and display what we find
+                        # hashcat output format - $krb5tgs$23$*user$realm$test/spn*$63386d22d359fe..."
+                        # https://msdn.microsoft.com/en-us/library/cc230324.aspx FILETIME
+                        # if ($MemberIsDomain) {"
+                        # if ($Values -isnot [System.Array]) { $Values = @($Values) }"
+                        # if the SID is already resolved (i.e. begins with *) try to resolve SID to a name
+                        # if this OU has GPO inheritence disabled, break so additional OUs aren't processed"
+                        # if we're hunting for a process name or comma-separated names
+                        # make sure we have a result, and ignore computer$ sessions"
+                        # map IPC$ to this computer if it's not already
+                        # pull out all the cached RDP connections"
+                        # pull out all the cached server info with username hints"
+                        # query for the source client IP with WTSQuerySessionInformation"
+                        # request all attributes of a single Enterprise CA server by its dns hostname
+                        # }
+                        #$object_rights_identity = $($user_object.objectSid) | Get-DomainObject @SearcherArguments #-SecurityMasks Owner
+                        #Parse DFSTargetListBlob"
+                    #   and rebuild the domain searcher
+                    #   wildcards for 'siteobject' :(
+                    # # TODO: fix the passed parameters to Get-DomainDFSShare
+                    # $ComputerName += Get-DomainDFSShare -Domain $Domain -Server $DomainController | ForEach-Object {$_.RemoteServerName}
+                    # 'DS-Replication-Get-Changes' = 1131f6aa-9c07-11d1-f79f-00c04fc2dcd2
+                    # 'DS-Replication-Get-Changes-All' = 1131f6ad-9c07-11d1-f79f-00c04fc2dcd2
+                    # 'DS-Replication-Get-Changes-In-Filtered-Set' = 89e95b76-444d-4c62-991a-0facbeda640c
+                    # Build Raw SD"
+                    # Check ACL/ACE of template"
+                    # Check flag 'ENROLLEE_SUPPLIES_SUBJECT'"
+                    # JTR jumbo output format - $krb5tgs$SPN/machine.testlab.local:63386d22d359fe...
+                    # Make sure the next field matches the beginning of the KRB_AP_REQ.Authenticator object"
+                    # ResetPassword doesn't need to know the user's current password
+                    # Search for non-default AD accounts with SID greater -1000
+                    # Work out how much to increment the pointer by finding out the size of the structure"
+                    # add all the new ACEs to the specified object directory entry"
+                    # allows for the modification of group membership
+                    # and search for a specific process name
+                    # check if the current user has local admin access to this server
+                    # convert the record and extract the properties"
+                    # convert the token group sid
+                    # create a new int ptr at the given offset and cast the pointer as our result structure
+                    # enumerate each trust found"
+                    # extract any GPO links for this particular domain the computer is a part of
+                    # extract out ALL members
+                    # extract out any/all filters...I hate you GPP
+                    # free up the memory result buffer
+                    # free up the result buffer
+                    # free up the result buffer"
+                    # get the shares for this host and check what we find
+                    # get user information
+                    # have to do the filtering after the LDAP query as LDAP doesn't let you specify
+                    # if a share is passed as the server
+                    # if we have a System.__ComObject
+                    # if we're doing manual recursion"
+                    # ignore the built in groups"
+                    # logon event
+                    # logon with explicit credential"
+                    # map IPC$ to this computer if it's not already
+                    # otherwise just a string
+                    # parse all the result structures"
+                    # remove all the specified ACEs from the specified object directory entry"
+                    # return all the sections of the structure - have to do it this way for V2"
+                    # return raw result objects
+                    # try to enumerate all active processes on the remote host
+                    # try to extract out the machine SID by using the -500 account as a reference"
+                    # work out how much to increment the pointer by finding out the size of the structure"
+                    #$SearcherArguments['Domain'] = $IdentityDomain
+                    #$SearcherArguments['Domain'] = $ObjectDomain
+                    #if (-not $ObjectSearcher) {
+                    #}
+                #   or if the DN doesn't end with the proper DN for the queried domain
+                # 0 = success"
+                # 8 = Unknown name type -> let the server do the work for us
+                # DOMAIN\groupname
+                # HKEY_CURRENT_USER"
+                # Search for non-default AD accounts with SID greater -1000
+                # Suppress outdated OS that have not been active for 2 months
+                # TicketHexStream == GSS-API Frame (see https://tools.ietf.org/html/rfc4121#section-4.1)"
+                # Work out how much to increment the pointer by finding out the size of the structure"
+                # arguments for NetLocalGroupEnum"
+                # arguments for NetLocalGroupGetMembers"
+                # arguments for WTSEnumerateSessionsEx"
+                # bind to the inital object using the current credentials
+                # bind to the inital search object using alternate credentials
+                # build the domain name a group member is part of
+                # cause the cache to calculate the token groups for the user/group"
+                # check if a user belongs to the local domain, root domain or foreign domain"
+                # check if we're excluding folders
+                # close off the service handle
+                # convert all listed sids (i.e. if multiple are listed in sidHistory)
+                # convert the GUID to a string
+                # convert the user/group to a directory entry
+                # convert timestamps
+                # extract any GPOs linked to this computer's OU through gpLink"
+                # extract any GPOs linked to this computer's site through gpLink"
+                # extract out members added to this group"
+                # extract out the SIDs of domain users in this hive"
+                # extract the localgroup sid for memberof"
+                # filter out some default identities with write rights like
+                # find all the GPOs linked to the computer's site
+                # find all the GPOs linked to the user/computer's OUs
+                # free up the result buffer
+                # free up the result buffer"
+                # get all results w/o the pipeline and uniquify them (I know it's not pretty)
+                # get all the trusts for this domain
+                # get any forest trusts, if they exist"
+                # get information on all current sessions"
+                # get the local user information"
+                # handle an array of properties to load w/ the possibility of comma-separated strings
+                # https://github.com/vletoux/pingcastle/blob/master/Scanners/LAPSBitLocker.cs
+                # if we're using the Netapi32 NetLocalGroupEnum API call to get the local group information
+                # if we're using the Netapi32 NetLocalGroupGetMembers API call to get the local group information
+                # impersonate the the token produced by LogonUser()/Invoke-UserImpersonation
+                # locate the offset of the initial intPtr"
+                # only output object field data
+                # only process SIDs > 1000
+                # otherwise we're using the WinNT service provider
+                # output the object field names as well
+                # parse all the result structures"
+                # parse the members/memberof fields for each entry"
+                # process any GPO local group settings from the GPO GUID set"
+                # read parameter groupmsamembership, build descriptor, request groups and users and convert SID to name"
+                # retrieve HKU remote registry values
+                # return raw result objects
+                # see https://msdn.microsoft.com/en-us/library/ms675976(v=vs.85).aspx for default NULL behavior
+                # see if we can grab the user DNS logon domain from environment variables
+                # sleep for our semi-randomized interval"
+                # sort out bogus sid's like _class"
+                # transform the target domain name into a distinguishedName if an ADS search base is not specified
+                # try to convert misc com objects
+                # try to resolve any built-in SIDs first - https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-identifiers
+                # use the gplink as an ADS path to enumerate all GPOs for the computer
+                # work out how much to increment the pointer by finding out the size of the structure"
+            #     $ManagedGroup | Add-Member Noteproperty 'ManagerCanWrite' $False
+            #     $ManagedGroup | Add-Member Noteproperty 'ManagerCanWrite' $True
+            #   CONNECT_TEMPORARY = 4
+            #   http://msdn.microsoft.com/en-us/library/windows/desktop/ms685981(v=vs.85).aspx
+            # # $ACLArguments
+            # # TODO: correct!"
+            # # double-check that the manager
+            # # find the ACLs that relate to the ability to write to the group
+            # $SearcherArguments"
+            # $xacl = Get-DomainObjectAcl @ACLArguments -Verbose
+            # 0 = success"
+            # 0xF003F - SC_MANAGER_ALL_ACCESS
+            # 63 = DS_DOMAIN_IN_FOREST + DS_DOMAIN_DIRECT_OUTBOUND + DS_DOMAIN_TREE_ROOT + DS_DOMAIN_PRIMARY + DS_DOMAIN_NATIVE_MODE + DS_DOMAIN_DIRECT_INBOUND"
+            # Add check if user defaults to/selects ""Administrators"""
+            # Define one type for each DLL
+            # Equivalent to C# version of [DllImport(DllName)]"
+            # Even if parameter is not bound, corresponding variable is created with parameter's default value (if specified)"
+            # From Ansgar Wiechers at http://stackoverflow.com/questions/28029872/retrieving-security-descriptor-and-getting-number-for-filesystemrights
+            # HKEY_LOCAL_MACHINE
+            # HKEY_USERS
+            # Locate the offset of the initial intPtr"
+            # Make each ByRef parameter an Out parameter"
+            # RDP
+            # Search for non-default AD accounts with SID greater -1000
+            # Shortcut for getting local variables"
+            # Since we rely solely on $PSBoundParameters, we don't have access to default values for unbound parameters"
+            # Strings to match attributes and validation arguments"
+            # TODO: how to implement properly? nested object?
+            # UAC specification for domain controllers
+            # add Functions from current runspace to the InitialSessionState"
+            # add Variables from Parent Scope (current runspace) into the InitialSessionState"
+            # add the script block + arguments with the given computer partition"
+            # always chase all referrals"
+            # arguments for DsEnumerateDomainTrusts"
+            # arguments for NetSessionEnum
+            # arguments for NetShareEnum
+            # check for the AutoAdminLogon"
+            # check for the cpassword field"
+            # check if printable character and do the decoding"
+            # create the output queue"
+            # declare the reference variables
+            # determine whether the manager is a user or a group"
+            # discover potential sysvol files not complaining in case of denied access to a directory or a file
+            # else {
+            # extract all OUs the target user/computer is a part of"
+            # extract the account id and domain sid"
+            # find .exe's accessed within the last 7 days
+            # find any GPOs linked to the user/computer's domain"
+            # find any OUs that have this GPO linked through gpLink"
+            # find any sites that have this GPO linked through gpLink"
+            # first parse the 'Restricted Groups' file (GptTmpl.inf) if it exists"
+            # for returning ntsecuritydescriptor"
+            # form SDDL string and resulting SD bytes"
+            # free up the result buffer"
+            # get groups"
+            # get hex value of character"
+            # get logged on user information"
+            # get netbios name"
+            # get remaining extended permissions"
+            # get session information"
+            # get simple permission"
+            # get the ASREPHash for this user
+            # get the SID of the forest root
+            # get the raw share information"
+            # get the trust information from the target server"
+            # get time now for logontime and logofftime"
+            # grab all the current variables for this runspace
+            # grab the GptTmpl.inf file and parse it
+            # https://msdn.microsoft.com/en-us/library/windows/desktop/aa385413(v=vs.85).aspx"
+            # if ($xacl.ObjectType -eq 'bf9679c0-0de6-11d0-a285-00aa003049e2' -and $xacl.AceType -eq 'AccessAllowed' -and ($xacl.ObjectSid -eq $GroupManager.objectsid)) {
+            # if a user has multiple SPNs we only take the first one otherwise the service ticket request fails miserably :) -@st3r30byt3"
+            # if we get a non-zero handle back, everything was successful"
+            # if we're searching for domain trusts through .NET methods
+            # if we're searching for domain trusts through LDAP/ADSI
+            # if we're searching for domain trusts through Win32 API functions
+            # if we're using threading, kick off the script block with New-ThreadedFunction using the $HostEnumBlock + params"
+            # if we're using threading, kick off the script block with New-ThreadedFunction"
+            # in Protected Users group with time endtime and renewtill of 240 minutes
+            # increase $index to change modulo result each run"
+            # kick off execution using the BeginInvok() method that allows queues"
+            # locate the offset of the initial intPtr"
+            # mark it as seen in our list"
+            # need to get the lockout duration from the domain policy
+            # no filtering/match all
+            # now try to the parse group policy preferences file (Groups.xml) if it exists"
+            # only set PasswordMustChange if policy is set to expire password and user isn't configured so password doesn't expire
+            # open up a handle to the Remote Desktop Session host"
+            # otherwise use the current forest
+            # otherwise we're querying a specific group
+            # parse the GptTmpl.inf"
+            # process all group properties in the XML"
+            # restore the old properites to return, if set"
+            # retrieve the object that the managedBy DN refers to
+            # see if we can grab the user DNS logon domain from environment variables
+            # short helper to check is the current user can write to a file
+            # short internal helper to split UNC server paths
+            # so one can't use PowerShell's '-is' operator to validate type.
+            # splat the appropriate arguments to Get-DomainObject
+            # splat the appropriate arguments to Get-DomainObject"
+            # supress some tab and new line character if write to a file
+            # these Variables are added by Runspace.Open() Method and produce Stop errors if you add them twice"
+            # try to open up the remote registry key to grab the last logged on user"
+            # we have everything we can start to build the arguments"
+            # }
+            #$Results = $Searcher.FindAll()"
+            #Get-adPEASBloodhound @SearcherArguments -Scope $Scope
+            #https://msdn.microsoft.com/en-us/library/cc227147.aspx
+        #   Thanks Carlos!
+        #   functionality can be used by the threaded blocks
+        #   http://powershell.org/wp/forums/topic/invpke-parallel-need-help-to-clone-the-current-runspace/
+        # # $SessionState.ApartmentState = [System.Threading.Thread]::CurrentThread.GetApartmentState()"
+        # Adapted from:
+        # Add Values to Searcher Argument
+        # Additional filters"
+        # Apply the specified enum type to each element
+        # Are any type filters set?"
+        # Build logo"
+        # Build output format"
+        # Building searcher arguments for the following PowerView requests
+        # Defining different Exchange major versions"
+        # Domain / Credential"
+        # Filter AdminACEs --> will remove ACEs that match to default admin groups (e.g. Domain Admins)"
+        # Filter DefaultACEs --> will remove ACEs that match to default domain groups including admin groups (e.g. Domain Admins, Authenticated Users,...)"
+        # Get Domain Object
+        # Get Templates"
+        # Get list of all domain controllers
+        # Get list of all outdated operating systems
+        # Gets Template ACL"
+        # Getting 'add computer to domain' permissions"
+        # Getting DCSync permissions
+        # Getting LAPS permissions
+        # Getting machine account quota
+        # Getting password and kerberos policy
+        # Hash Table for storing DCSync privileges"
+        # Initial account type filter"
+        # Keep track of SIDs that have been added"
+        # LOGON32_LOGON_NEW_CREDENTIALS = 9, LOGON32_PROVIDER_WINNT50 = 3"
+        # Loop through ACL on the domain head"
+        # Make sure System.Core is loaded"
+        # Parsing the object and search for interesting attributes
+        # Put one last empty line to the screen"
+        # Set ANSI escape sequence for colored output"
+        # accessor functions from Bill Stewart to simplify calls to NameTranslate"
+        # add in the negations
+        # adjustment to get the hash working with hashcat
+        # array of high privileged groups from https://stealthbits.com/blog/fun-with-active-directorys-admincount-attribute/"
+        # build the LDAP filter for the dynamic UAC filter value
+        # build the LDAP filter for the dynamic UAC filter value"
+        # build the set of computers to enumerate"
+        # cleanup- make sure we didn't miss anything"
+        # connect to the KDC and send the appropriate packet
+        # continuously loop through each job queue, consuming output as appropriate"
+        # create a pool of maxThread runspaces"
+        # create new dynamic parameter
+        # do some trickery to get the proper BeginInvoke() method that allows for an output queue"
+        # find all users without kerberos preauthentication enabled"
+        # first, build the set of computers to enumerate"
+        # force a single-threaded apartment state (for token-impersonation stuffz)
+        # get a GUID -> name mapping"
+        # get all GPO's of the domain
+        # get all OU's of the domain
+        # get policy objects first
+        # get the current user so we can ignore it in the results"
+        # go through the list of security groups on the domain and identify those who have a manager"
+        # grab the response"
+        # https://github.com/darkoperator/Posh-SecMod/blob/master/Discovery/Discovery.psm1#L407
+        # https://msdn.microsoft.com/en-us/library/aa772266%28v=vs.85%29.aspx"
+        # if we haven't seen this domain before"
+        # import the current session state's variables and functions so the chained PowerView"
+        # initialize dict with static hex values as a list of three characters each, e.g. 65: ['w', 'E', 'B']"
+        # initialize dict with static int values as a static key to choose the character of the list above, therefore the values are from 0 to 2"
+        # mutex so threaded code doesn't stomp on the output file"
+        # now build the user target set"
+        # ongoing list of built-up SIDs"
+        # only ignore threading if -Delay is passed
+        # partition all hosts from -ComputerName into $Threads number of groups"
+        # remove start and stop pattern
+        # remove the IPC$ mappings
+        # remove the SYSVOL mappings
+        # replace special characters"
+        # reverse for big endian"
+        # set all the appropriate computer parameters"
+        # set all the appropriate group parameters"
+        # set all the appropriate user parameters"
+        # standard group names to ignore
+        # the XML filter we're passing to Get-WinEvent
+        # the host enumeration block we're using to enumerate all servers"
+        # threading adapted from"
+        # values from https://support.microsoft.com/en-us/kb/305144
+        # variables"
+        # write output to file if requested"
+        #'pkiexpirationperiod'
+        #'pkioverlapperiod'
+        #Append appropriate padding based on string length
+        #Build logo text"
+        #Create a new AES .NET Crypto Object"
+        #Set IV to all nulls to prevent dynamic generation of IV value"
+        #[Microsoft.Win32.RegistryHive]::Users
+        #bind dynamic parameter to a friendly variable
+    #
+    # 1 = kRB5-NT-PRINCIPAL
+    # 2 = kRB5-NT-SRV-INST"
+    # 23 = eTYPE-ARCFOUR-HMAC-MD5"
+    # AS-REQ header fields
+    # Allow for explicit casting from an IntPtr"
+    # Building searcher arguments for the following Invoke-ScreenPrinter requests"
+    # Building searcher arguments for the following PowerView requests"
+    # Building searcher arguments for the following requests"
+    # Check if outputfile is writable and set color"
+    # Checking Powershell version"
+    # Define a date in the past which is considered very old for a set password"
+    # Defining Active Directory domain mode levels"
+    # Defining when a krbtgt password is an old one, age +5 years"
+    # Get base CA information"
+    # Get domain trusts"
+    # Get forest trusts"
+    # Getting sites and IP subnets"
+    # Helper used by any threaded host enumeration functions
+    # Make the struct aware of its own size."
+    # No more having to call [Runtime.InteropServices.Marshal]::PtrToStructure!
+    # No more having to call [Runtime.InteropServices.Marshal]::SizeOf!
+    # Print the adPEAS logo"
+    # Search for domain SID and Root domain SID"
+    # Set some variables we need later on"
+    # Setup searcher arguments for Root domain
+    # Setup searcher arguments for Root domain"
+    # Sort each field according to the orders specified"
+    # Starting to impersonate with given credentials"
+    # Stop to impersonate with given credentials"
+    # Trying to get target domain name"
+    # actually impersonate the token from LogonUser()"
+    # add the app tag"
+    # build the pdaata structure"
+    # build the req-body structure"
+    # bytes indicate include pac == true"
+    # cname"
+    # deals with the $ at the end of the SamAccountName"
+    # defining members of high privileged domain groups"
+    # get the current domain and push it onto the stack"
+    # hashtable [Ordered] accelerator.
+    # https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/81d92bba-d22b-4a8c-908a-554ab29148ab
+    # kRB5-PADATA-PA-PAC-REQUEST"
+    # keep track of domains seen so we don't hit infinite recursion"
+    # kerberos protocol version number, must be 5 for windows"
+    # mimikatz nonce ;)"
+    # msgtype = 10 -> krb-as-req
+    # options -> forwardable, renewable, renewable-ok"
+    # our domain status tracker"
+    # padata section
+    # prefix with the total length"
+    # put everything together for the final AS-REQ ASN.1 structure"
+    # req-body section
+    # timestamp from kekeo ;)"
+    ###############################################
+    ###############################################"
+    #>
+"
+"   
+"    
+"        
+"            
+"                                        #   then add it, otherwise ignore it"
+"                                        # if inheritance has already been disabled and this GPO is set as ""enforced"""
+"                                    # if we're resolving GUIDs, map them them to the resolved hash table"
+"                                # If object doesn't has Equals (e.g. $null), fallback to the PowerShell's -ne operator"
+"                                # If object has Equals, compare bound key and variable using it"
+"                            # ""IdentityReferenceDN: $IdentityReferenceDN"""
+"                            # ""IdentityReferenceDomain: $IdentityReferenceDomain"""
+"                            # check if the member is a group and if yes, request group members recursive"
+"                            # if a -Domain isn't explicitly set, extract the object domain out of the distinguishedname"
+"                            # if no hostname returned, use the specified hostname"
+"                        #     $Member | Add-Member Noteproperty 'SID' ((New-Object System.Security.Principal.SecurityIdentifier($LocalUser.InvokeGet('ObjectSID'),0)).Value)"
+"                        # ""IdentityReferenceDN: $IdentityReferenceDN"""
+"                        # external trust users have a SID, so convert it"
+"                        # if a -Domain isn't explicitly set, extract the object domain out of the distinguishedname"
+"                        # if a domain isn't passed, try to extract it from the found group distinguished name"
+"                        # if the group domain doesn't match the user domain, display it"
+"                        # if the resulting member is username and not a SID, attempt to resolve it"
+"                        # if the session user is in the target list, display some output"
+"                        # if we're not 'stealthy', enumerate loggedon users as well"
+"                        # ranged searching, thanks @meatballs__ !"
+"                        # skip computer logons, for now..."
+"                        #Write-Warning ""[Get-IdentityFilterString] Unable to retrieve domain searcher for '$IdentityDomain'"""
+"                    #   when applied to a domain's ACL, allows for the use of DCSync"
+"                    # If LAPS is not installed at all, set the default property"
+"                    # if a -Domain isn't explicitly set, extract the object domain out of the distinguishedname"
+"                    # if we're searching the global catalog, get the path in the right format"
+"                    # read parameter, build descriptor and convert SID to name"
+"                # $DomainTrust | Add-Member Noteproperty 'TargetGuid' ""{$ObjectGuid}"""
+"                # $ObjectProperties[$_] = New-Object Security.AccessControl.RawSecurityDescriptor -ArgumentList $Properties[$_][0], 0"
+"                # '^S-1-3-0' # Creater/Owner '^S-1-5-18' # System, '^S-1-5-21-\d+-\d+\-\d+\-512' # DOMAIN_ADMINS, '^S-1-5-21-\d+-\d+\-\d+\-519' # ENTERPRISE_ADMINS, '^S-1-5-32-544' # BUILTIN_ADMINISTRATORS"
+"                # No easy way to parse ASN1, so we'll try some janky regex to parse the embedded KRB_AP_REQ.Ticket object"
+"                # Searching for attribute name, which can differ as per pingcastle by @vletoux"
+"                # filter for foreign SIDs in the cn field for users in another domain,"
+"                # if no domain is supplied, extract the logon domain from the PSCredential passed"
+"                # if the * wildcard was used, set the targets to all GPO members so everything it output"
+"            # Find computer with Windows Server 2003, 2008, 2008 R2"
+"            # If no domain is supplied, extract the logon domain from the PSCredentials/Credentials passed"
+"            # If no domain related parameter is supplied, try to get the Active Directory domain the computer is connected to"
+"            # If no specific $class is set, this standard is used"
+"            # System.Management.Automation.PSBoundParametersDictionary is an internal sealed class,"
+"            # Write-Host ""GroupManager: $GroupManager"""
+"            # create a ""powershell pipeline runner"""
+"            # if no -Domain is specified, but -Credential is, try to retrieve the current domain name with Get-Domain"
+"            # if no domain or server is specified, default to GC initialization"
+"            # if not -ComputerName is passed, query the current (or target) domain for domain controllers"
+"            # if not -Domain is specified, but -Credential is, try to retrieve the current domain name with Get-Domain"
+"            # if the group is a 'memberof' the group we're looking for, check GroupSID against the targt SIDs"
+"            # if the locally set group is what we're looking for, check the GroupMembers ('members') for our target SID"
+"            # if there's not a specified server to bind to, try to pull a logon server from ENV variables"
+"            # if we get an IP address, try to resolve the IP to a hostname"
+"            # inclusion of ""Accounts that are disabled"""
+"            # negation of ""Accounts that are disabled"""
+"            # negation of ""Accounts that are sensitive and not trusted for delegation"""
+"            # otherwise, resort to Get-Domain to retrieve the current domain object"
+"            # otherwise, resort to GetCurrentDomain to retrieve the current domain object"
+"            # search for older Exchange versions than Exchange 2019 and 2016, based on the build number 15.2.x and 15.1.x "
+"        #   this is to simulate ""runas.exe /netonly"" functionality"
+"        # $RDataLen = [BitConverter]::ToUInt16($DNSRecord, 0)"
+"        # Write-Verbose ""[Get-ASREPHash] Bytes sent to '$TargetDCIP': $BytesSent"""
+"        # discover potential domain GPP files containing passwords, not complaining in case of denied access to a directory"
+"        # otherwise check if the machine is currently part of a domain, and if so use the current domain"
+"        #""Bloodhound"" {Get-adPEASBloodhound @SearcherArguments -Scope $Scope}"
+"        #""`$krb5asrep`$$($UserName)@$($TargetDomainName):$($Hash)"""
+"        #[Parameter(Position = 0, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True)]"
+"    # Defining when a krbtgt password is an new one, age -1 year"
+"    # Thanks for the help, Jason Shirk!"
+"    # Unfortunately, PSv2 doesn't have the luxury of the"
+"# ""net *"" replacements and other fun start below"
+"# Author: Chris Campbell (@obscuresec), adjusted by Alexander Sturz (@_61106960_)"
+"# Functions that enumerate a single host, either through"
+"# Warning: Once these are executed, they are baked in"
+"# WinNT, WMI, remote registry, or API calls"
+"# load up the slightly-stripped BouncyCastle library, adapted from https://github.com/bcgit/bc-csharp"
+"### Commit from Jan 10,2023"
+"<# +++++ Checking Domain Controller, Sites and Subnets +++++ #>"
+#
+#   https://raw.githubusercontent.com/mattifestation/PSReflect/master/PSReflect.psm1
+# 'Meta'-functions start below
+# (with PSReflect).
+# A helper function used to reduce typing while defining function"
+# A helper function used to reduce typing while defining struct"
+# Author: @mattifestation
+# Based on 2.26 msPKI-Enrollment-Flag Attribute"
+# Based on 2.27 msPKI-Private-Key-Flag Attribute"
+# Based on 2.28 msPKI-Certificate-Name-Flag Attribute"
+# Copyright (c) 2000 - 2015 The Legion of the Bouncy Castle Inc. (http://www.bouncycastle.org)
+# Domain info functions below.
+# Domain trust functions below.
+# Example of using an explicit layout in order to create a union."
+# Expose the Win32API functions and datastructures below
+# GPO related functions.
+# Kerberos-specific functions using BouncyCastle
+# Misc. helpers
+# PSReflect code for Windows API access
+# SharpHound collector from https://github.com/BloodHoundAD/SharpHound
+# Stuff by Alexander Sturz (@_61106960_)
+# Stuff by Chris Campbell (@obscuresec)
+# Stuff by Christoph Falta (@cfalta)
+# Stuff by Will Schroeder (@harmj0y) 
+# Version 2.3.0 - Supporting BloodHound Community Edition only
+# [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSAvoidUsingPositionalParameters', Scope='Function', Target='psenum')]"
+# all of the Win32 API functions we need"
+# and can't be changed while the script is running!
+# deactivation of certificate checks and allow all ssl/tls versions"
+# enum used by $LOCALGROUP_MEMBERS_INFO_2 below"
+# enum used by $WTS_SESSION_INFO_1 below"
+# enums used in DS_DOMAIN_TRUSTS"
+# fields.
+# helper function that decodes and decrypts password for Get-GPPPassword
+# helper function to parse fields from xml files for Get-GPPPassword
+# https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-crtd/1192823c-d839-4bc3-9b6b-fa8c53507ae1
+# https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-crtd/ec71fd43-61c2-407b-83c9-b52272dec8a1
+# https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-crtd/f6122d87-b999-4b92-bff8-f465e8949667
+# prototypes for Add-Win32Type.
+# see LICENSE_Bouncy_Castles for license information
+# the DsEnumerateDomainTrusts result structure"
+# the NetLocalGroupEnum result structure"
+# the NetLocalGroupGetMembers result structure"
+# the NetSessionEnum result structure"
+# the NetShareEnum result structure"
+# the NetWkstaUserEnum result structure"
+# the WTSEnumerateSessionsEx result structure"
+# the particular WTSQuerySessionInformation result structure"
+# used by WNetAddConnection2W"
+# used to parse the 'flags' property for certificate templates"
+# used to parse the 'grouptype' property for groups"
+# used to parse the 'instanceType' property for domain objects"
+# used to parse the 'mspki-certificate-name-flag' property for certificate templates"
+# used to parse the 'mspki-enrollment-flag' property for certificate templates"
+# used to parse the 'mspki-private-key-flag' property for certificate templates"
+# used to parse the 'samAccountType' property for users/computers/groups"
+# used to parse the 'schemaFlagsEx' property for schema attributes"
+# used to parse the 'searchflags' property for schema attributes"
+# used to parse the 'systemflags' property for schema objects"
+# used to parse the 'userAccountControl' property for users/groups"
+# using PSReflect.
+### Down here is the Poverview version of 0xe7
+### https://github.com/0xe7/PowerSploit/tree/master/Recon/PowerView.ps1
+########################################################
+######################################################## "
+########################################################"
+#>
+#>"
+#requires -version 2"
+<# +++++ Checking Domain +++++ #>
+<# +++++ Checking Forest and Domain Trusts +++++ #>
+<# +++++ Checking Permissions +++++ #>
+<# +++++ Checking Policies +++++ #>
+<# +++++ Searching Domain Controllers  +++++ #>
+<# +++++ Searching for ASREPRoast User +++++ #>
+<# +++++ Searching for Active Directory Certificate Services +++++ #>
+<# +++++ Searching for Azure AD Connect +++++ #>
+<# +++++ Searching for Computer with Constrained Delegation Rights +++++ #>
+<# +++++ Searching for Computer with Resource-Based Constrained Delegation Rights +++++ #>
+<# +++++ Searching for Computer with Unconstrained Delegation Rights +++++ #>
+<# +++++ Searching for Computer with enabled and readable LAPS native and legacy attributes +++++ #>
+<# +++++ Searching for Credentials in Group Policy Files +++++ #>
+<# +++++ Searching for Enterprise CA Servers +++++ #>
+<# +++++ Searching for Exchange Servers +++++ #>
+<# +++++ Searching for GPO local group membership information +++++ #>
+<# +++++ Searching for Group Managed Service Account (gMSA) +++++ #>
+<# +++++ Searching for High Privileged User which may not require a Password +++++ #>
+<# +++++ Searching for High Privileged Users with a very old password +++++ #>
+<# +++++ Searching for Kerberoastable User +++++ #>
+<# +++++ Searching for Outdated Operating Systems +++++ #>
+<# +++++ Searching for Sensitive Information in SYSVOL/NETLOGON Share +++++ #>
+<# +++++ Searching for User with 'Linux/Unix Password' attribute +++++ #>
+<# +++++ Searching for User with 'extensionData' attribute +++++ #>
+<# +++++ Searching for User with Constrained Delegation Rights +++++ #>
+<# +++++ Searching for User with Resource-Based Constrained Delegation Rights +++++ #>
+<# +++++ Searching for Users in High Privileged Groups +++++ #>
+<# +++++ Searching for Vulnerable Certificate Templates +++++ #>
+<# +++++ Starting Account Enumeration +++++ #>
+<# +++++ Starting BloodHound Enumeration +++++ #>
+<# +++++ Starting Computer Enumeration +++++ #>
+<# +++++ Starting Enumeration +++++ #>
+<# +++++ Starting adPEAS +++++ #>
+<# +++++ Starting adPEAS ADCS Enumeration +++++ #>
+<# +++++ Starting adPEAS Credentials+++++ #>
+<# +++++ Starting adPEAS Delegation +++++ #>
+<# +++++ Starting adPEAS Domain Enumeration +++++ #>
+<# +++++ Starting adPEAS GPO Enumeration +++++ #>
+<# +++++ Starting adPEAS Rights & Permission Enumeration +++++ #>
+<# -SecurityMasks Owner #>

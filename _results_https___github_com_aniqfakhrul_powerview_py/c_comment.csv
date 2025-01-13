@@ -1,0 +1,420 @@
+"// Add ""Add User to Group"" button only if object is a group"
+"// Add ""Group Policy Objects"" container node"
+"// Add other property columns, excluding objectClass"
+"// Add other property headers, excluding objectClass"
+"// Add this to your initialization code (e.g., in showLdapAttributesModal or a separate init function)"
+"// Check if gPLink is an array and use the first element, or use the string directly"
+"// Deduplicate records, prioritizing those with addresses"
+"// First, check if domain has any directly linked GPOs"
+"// Handle registry values (e.g., ""4,0"")"
+"// If a refresh callback is provided, use it"
+"// If item is a group, fill in group name"
+"// If item is a user, fill in member name"
+"// If no zone is selected, select the first option"
+"// If the GPO tab was selected, switch to info tab"
+"// If we're viewing the same zone, refresh the records list"
+"// No changes made, just switch back to view mode"
+"// Replace ""Pre-Windows 2000"" with ""Pre2k"" in SecurityIdentifier"
+"// Reset to the ""General"" tab"
+"// Set ""All"" filter as active by default"
+// 2592000)
+// 2592000) == 1:
+// 2592000) >= 1:
+// 31536000)
+// 31536000) >= 1:
+// 3600)
+// 3600) == 1:
+// 604800)
+// 604800) >= 1:
+// 86400)
+// 86400) == 1:
+// 86400) >= 1:
+// Active tab styling
+// Add 'objectClass' to the properties as it's needed for the icon
+// Add Action column header
+// Add GPO container icon and name
+// Add GPO icon
+// Add GPO name with enforcement status
+// Add Group button
+// Add OU icon and name
+// Add User button
+// Add a separator before each record except the first one
+// Add a success alert function if you don't have one
+// Add action buttons
+// Add action column
+// Add an event listener for the close button
+// Add an extra header for actions
+// Add at the beginning of the file
+// Add button click handler
+// Add cells
+// Add change event listeners
+// Add classes to make long content span full width
+// Add click handler
+// Add click handler for GPO container
+// Add click handler for copy button
+// Add click handlers for filter buttons
+// Add copyToClipboard function
+// Add debounce to search filter
+// Add domain icon and name
+// Add event listener for Escape key
+// Add event listener for confirm delete button
+// Add event listener for form submission
+// Add event listener for the Add DNS Record button
+// Add event listener for the checkbox
+// Add event listener to close the modal
+// Add event listeners
+// Add event listeners for all clear buttons
+// Add event listeners for modal close buttons
+// Add event listeners for search inputs
+// Add expand/collapse arrow
+// Add form submit handler
+// Add helper function to calculate member count
+// Add new function to handle members display
+// Add other property columns with copy buttons
+// Add record counter
+// Add record if name doesn't exist or if new record has an address and current doesn't
+// Add records
+// Add search filter functionality
+// Add search functionality
+// Add selected classes to clicked row
+// Add selected classes to clicked zone
+// Add table headers
+// Add the copyToClipboard function to window scope
+// Add the node to the tree view if it's the root node
+// Add these functions
+// Add these functions to handle property filtering
+// Add these functions to handle user and group creation
+// Add this function to display the Member Of content
+// Add this function to fetch domain OUs
+// Add this function to handle closing the Add Object ACL modal
+// Add this function to handle filtering
+// Add this function to handle modal tab switching
+// Add this function to handle opening the Add Object ACL modal
+// Add this function to handle the API request for adding ACL
+// Add this function to handle the new attribute addition
+// Add this new function
+// Add this new function to clear tab panels
+// Add this new function to handle attribute deletion
+// Add this new function to handle the API call
+// Add to initialization
+// Add trust tag
+// Add type column with icon
+// Adjust threshold as needed
+// Also refresh the tree view
+// Always add icon column
+// Always add icon column header
+// Always show parent nodes to maintain structure
+// Append new log entries
+// Apply appropriate styling based on selection state
+// Apply initial visibility based on current search
+// Apply text filter
+// Apply type filter
+// Assemble the header
+// Assign a data-identifier attribute to each tree node
+// Assuming 'expanded' is a class that shows the node
+// Assuming result.users contains the user data
+// Assuming you have a function to expand the tree based on the path
+// Attempting to save
+// Auto-expand function
+// Auto-expand the domain node
+// Automatically expand root node
+// Automatically expand the rootDn node
+// Call this function after the DOM is fully loaded
+// Capitalize first letter of each word for display
+// Change to save icon
+// Changed from 'identity' to 'computer_name'
+// Check for adminCount attribute if needed
+// Check for domain trusts
+// Check for existing subtree
+// Check if item has objectClass array
+// Check if the currently selected zone matches the zone we added the record to
+// Check if the log already exists to avoid redundancy
+// Clear Delegation panel
+// Clear Info panel
+// Clear Settings panel
+// Clear all tab panels
+// Clear and repopulate the records table
+// Clear button functionality
+// Clear connection info
+// Clear existing content
+// Clear existing content and append new
+// Clear existing entries
+// Clear existing headers
+// Clear existing options
+// Clear form fields
+// Clear previous values
+// Clear search when switching tabs
+// Clear the details panel
+// Clear the form
+// Clear the input fields
+// Clear the panel first
+// Close dropdown when clicking outside
+// Close the modal
+// Convert array to newline-separated string if needed
+// Convert single object to array if necessary
+// Convert single string to array if needed
+// Convert to array if it's a single string
+// Create Delete button
+// Create Details button
+// Create GPO subtree container
+// Create and add cancel button
+// Create and add root node
+// Create and add the new attribute entry to the existing list
+// Create and append new zone names as dropdowns
+// Create and populate the groups table
+// Create array of GPO objects with GUID and enforcement status
+// Create buttons container
+// Create buttons container inside input
+// Create cells for each attribute
+// Create cells with copy buttons
+// Create checkboxes for all properties
+// Create container
+// Create content
+// Create copy button
+// Create data rows
+// Create domain root node
+// Create flex container for header content
+// Create header
+// Create header row with icon column
+// Create nodes for each GPO
+// Create subtree container
+// Create subtree container (initially hidden)
+// Create table
+// Create table body
+// Create table header
+// Create table headers
+// Create tbody
+// Create text content span
+// Create the content div
+// Create the header div with buttons
+// Create title
+// Create tree nodes for each OU
+// Create wrapper div for content and copy button
+// DN cell with copy button
+// Default icon
+// Default label
+// Default modal refresh behavior
+// Define all properties
+// Descending order
+// Determine Allow or Deny based on ACEType
+// Edit button click handler with visibility toggle
+// Empty header for icon column
+// Enable toggles
+// Enforcement cell
+// Ensure obj.attributes.objectClass is an array before using includes
+// Ensure objectClass is included in the API request
+// Ensure objectClasses is an array and convert to lowercase for comparison
+// Ensure the details panel is visible
+// Example logic to expand the tree
+// Example: You might want to show a toast notification or some other UI feedback
+// Existing delete functionality
+// Exit the function to prevent fetching data again
+// Extract CN from DN
+// Fallback for older browsers or non-HTTPS
+// Fetch GPO details for each linked GPO
+// Fetch OU details to get gPLink attribute
+// Fetch all GPOs
+// Fetch and display OU details first
+// Fetch and display the rootDn details in the results panel
+// Fetch and display updated records for the current zone
+// Fetch data for all GPO IDs
+// Fetch every 10 seconds
+// Fetch updated data and refresh the results panel
+// Fill in the base DN modal for search base input
+// Filter DACL table rows without affecting the header
+// Filter attributes
+// Filter descendants table rows without affecting the header
+// Filter kerberoastable users to find those with adminCount=1
+// Filter logon users table rows
+// Filter members table rows
+// Filter sessions table rows
+// Find and remove the existing subtree
+// Find the active tab by checking which tab panel is currently visible
+// Find the actual key in the attributes object (case-insensitive)
+// Find the subtree container
+// Flatten and filter out any null results
+// Focus on appropriate input based on object type
+// Focus on the computer name input instead of the first input
+// Focus on the groupname input
+// Focus on the username input
+// Focus on the username input instead of the first input
+// Format AccessMask to handle commas
+// Get all OUs
+// Get all unique attribute keys from all computers and normalize them
+// Get attribute keys from the first user to create table headers
+// Get currently selected zone
+// Get domain info
+// Get domain info first
+// Get domain info for root DN
+// Get objectClass array and convert to lowercase for comparison
+// Get the currently selected node's DN
+// Get the parent node (the div before the subtree container)
+// Get the parent subtree container
+// Get vulnerability type if exists
+// Handle GPO selection
+// Handle all alert close buttons
+// Handle both array and string cases for memberOf
+// Handle both string and array cases
+// Handle click on select to show custom dropdown
+// Handle clicking outside
+// Handle clicking outside alerts (optional)
+// Handle clicking outside the modal to close it
+// Handle close button click
+// Handle different value types
+// Handle option selection
+// Handle property selection
+// Handle search input
+// Handle selection
+// Handle specific tab content
+// Helper function to create DN link
+// Helper function to create copy button
+// Helper function to detect byte data
+// Hide add and delete buttons
+// Hide other panels if they're open
+// Hide the delete button
+// Hide the initial content
+// Hide the modal
+// Hide the spinner
+// Hide the spinner after processing
+// Hide the spinner if subtree is removed
+// Implementation depends on your alert system
+// Inactive tab styling
+// Initial render of select
+// Initialize alert handlers
+// Initialize close handlers
+// Initialize close handlers if not already initialized
+// Initialize counter
+// Initialize filter buttons
+// Initialize search functionality
+// Initialize settings
+// Initialize tabs
+// Initialize the GPO tree view
+// Initialize the Member Of tab content
+// Initialize the add new attribute functionality
+// Initialize the page
+// Invert the cache toggle value
+// Keep toggles disabled if we can't fetch settings
+// Load specific tab content
+// Mark the root node as selected
+// Mark this node as selected
+// Modal event listeners
+// Modern clipboard API
+// Move selectOUTab to global scope
+// Name cell
+// Note: You'll need to modify this if you want to check adminCount
+// Note: we invert no_cache since the toggle is for enabling cache
+// Only append if there are child nodes
+// Only handle click if not clicking copy button
+// Optional: Handle clicking outside the modal to close it
+// Or implement a more elegant refresh
+// Populate property dropdown with hardcoded properties
+// Populate table rows
+// Populate the member dropdown if members exist
+// Populate the modal with existing attributes
+// Populate the zone names in the modal dropdown
+// Pre-fill the target identity if it exists
+// Prevent row click
+// Prevent row click event
+// REG_DWORD
+// Re-fetch and display the subtree
+// Re-throw to handle in Alpine.js
+// Refresh both the tree view and results panel
+// Refresh the current subtree to show the new group
+// Refresh the current subtree to show the new user
+// Refresh the descendants view if we're on that tab
+// Refresh the parent's subtree
+// Refresh the user list
+// Regular expression to match GUIDs (36 characters)
+// Regular expression to match enforcement status
+// Remove all styling classes first
+// Remove cancel button
+// Remove event listeners when closing
+// Remove selected classes from all rows
+// Remove selected classes from all zone items
+// Remove the attribute entry from the DOM
+// Remove the selected row from the table
+// Replace commas and equal signs with underscores
+// Reset to Info tab
+// Revert the toggle if the API call failed
+// Run fetchSingleCommandLogs in the background
+// Select the parent node
+// Select the spinner element
+// Set as selected if it matches the current zone or if it's the first item and no zone is selected
+// Set expanded state
+// Set initial state to expanded
+// Set initial states based on API response
+// Set only buttons under the properties card to inactive
+// Set the dropdown's selected value
+// Set the title attribute to show the object class on hover
+// Set timeout to 5 seconds
+// Show CA details first
+// Show Trusts tab
+// Show add and delete buttons again
+// Show empty state if no GPOs are linked
+// Show info tab by default
+// Show initial state
+// Show loading indicator
+// Show only the CN part
+// Show success feedback
+// Show success message
+// Show tabs
+// Show the modal
+// Show the modal and overlay
+// Show the spinner
+// Show the spinner on the right side of the node
+// Show/hide Linked GPO tab based on gPLink attribute
+// Show/hide Member Of tab based on memberOf attribute
+// Show/hide Members tab based on objectClass
+// Show/hide Members tab for groups
+// Show/hide Sessions and Logon Users tabs based on objectClass
+// Show/hide Trusts tab for domains
+// Show/hide subtree based on whether it has visible children
+// Simple pattern to identify a DN
+// Small delay to ensure modal is fully visible
+// Sort GPOs by displayName
+// Sort OUs by DN
+// Sort attributes alphabetically
+// Sort data by member count in descending order
+// Sort logs by timestamp
+// Special handling for distinguishedName
+// Split the registry path into parts for better readability
+// Status cell
+// Store all groups
+// Store all groups for filtering
+// Store all members for filtering
+// Store the current filter state
+// Store the original value for reset
+// Switching to edit mode
+// Tab selection function
+// Take first value for array properties
+// Then fetch and show templates
+// Then get and add all OUs
+// Toggle dropdown
+// Toggle expansion
+// Unhide the tableview and populate the table
+// Update active state of buttons
+// Update connection status UI
+// Update counter
+// Update counter to show filtered results
+// Update info panel
+// Update loadDescendants to use the new function
+// Update modal title to show identity
+// Update showLdapAttributesModal to initialize the search functionality
+// Update tab buttons
+// Update tab panels
+// Update table headers
+// Update the DACL tab panel button to use this function
+// Update the active state of tabs
+// Update the main input value to include the new value
+// Update the search functionality
+// Update the visibility of tab panels
+// Updated selector to match new theme colors
+// Use fa-box-open for containers
+// Use fa-building for organizational units
+// Use fa-desktop for computers
+// Utility function for debouncing
+// as it's not part of the objectClass array
+// clear the inputs
+// hideLoadingIndicator();
+// scheme provided. Switching target to LDAPS via StartTLS')
+// showLoadingIndicator();

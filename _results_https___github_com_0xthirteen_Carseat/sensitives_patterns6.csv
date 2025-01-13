@@ -1,0 +1,26 @@
+                       help='Use Kerberos authentication. Grabs credentials from ccache file '
+                aws_key = f'{path}\\{directories}\\.aws\\credentials'
+        for cc in get_cloud_credentials(smb_conn):
+    + CloudCredentials       - AWS/Google/Azure/Bluemix cloud credential files
+    CachedInteractive = 11        # attempt to use the cached credentials without going out across the network
+    NetworkCleartext = 8          # network logon with cleartext credentials
+    NewCredentials = 9
+    NewCredentials = 9            # caller can clone its current token and specify new credentials for outbound connections
+    command = 'CloudCredentials'
+    print(f'Listing 4648 Explicit Credential Events - A process logged on using plaintext credentials over last {last_days} days')
+"                            '(KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the '"
+"                        yield CloudCredentials('Azure', azure_base, a_last_accessed, a_last_modified, a_cred_size)"
+"                        yield CloudCredentials('Bluemix', bluemix_base, b_last_accessed, b_last_modified, b_cred_size)"
+"                        yield CloudCredentials('Google', google_base, g_last_accessed, g_last_modified, g_cred_size)"
+"                    yield CloudCredentials('AWS', aws_base, last_accessed, last_modified, cred_size)"
+"                rpctransport.set_credentials(self.username, self.password, self.domain, self.lmhash, self.nthash, self.aesKey)"
+"            if hasattr(rpctransport, 'set_credentials'):"
+"            re.compile(r""(bitsadmin(.exe)?.*(/RemoveCredentials|/SetCredentials) .*)"", re.IGNORECASE | re.MULTILINE),"
+"        ""AppData\\Roaming\\gcloud\\credentials.db"","
+"        ""AppData\\Roaming\\gcloud\\legacy_credentials"","
+"        print(f""    'key3.db'        ({firefox.CredentialFile3LastModified})  :  Credentials file, run SharpWeb (https://github.com/djhohnstein/SharpWeb)"")"
+"        print(f""    'key4.db'        ({firefox.CredentialFile4LastModified})  :  Credentials file, run SharpWeb (https://github.com/djhohnstein/SharpWeb)"")"
+"    restricted_admin = wmi_conn.get_dword_value('HKLM', 'Software\\Policies\\Microsoft\\Windows\\CredentialsDelegation', 'RestrictedRemoteAdministration')"
+"  restricted_admin_type = wmi_conn.get_dword_value('HKLM', 'Software\\Policies\\Microsoft\\Windows\\CredentialsDelegation', 'RestrictedRemoteAdministrationType')"
+class CloudCredentials:
+def get_cloud_credentials(smb_conn):

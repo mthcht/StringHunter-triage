@@ -1,0 +1,14 @@
+"logging.error(""ProductVersion property not found in MSI"""
+"logging.error(f""Certificate for {cert_common_name} is not valid for {common_name}"""
+"logging.error(f""Certificate for {common_name} is expired"""
+"logging.error(f""Database initialization error: {e}"""
+"logging.error(f""Error getting thumbprint from server {server_address}: {e}"""
+"logging.error(f""Error in SNI callback: {e}"""
+"logging.error(f""Error in plugin {plugin.__class__.__name__}: {e}"""
+"logging.error(f""Error logging credentials: {e}"""
+"logging.error(f""Error parsing packet: {e}"""
+"logging.error(f""Error processing request from {self.client_address[0]}: {e}"""
+logging.error(f'Error appending to PCAP: {e}'
+logging.error(f'Unable to get signature with key: {key_file}'
+logging.error(f'Unable to import {cert_file}: {e}'
+logging.error(traceback.format_exc(

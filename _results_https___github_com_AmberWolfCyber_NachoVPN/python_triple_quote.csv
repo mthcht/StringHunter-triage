@@ -1,0 +1,21 @@
+Calculate the certificate thumbprint
+Check if the certificate is valid
+Check if this plugin can handle the given data
+Close the database connection.
+Create SSL context with SNI support and proper TLS configuration
+Determine if this plugin can handle the HTTP request
+Generate a server certificate
+Generate an Apple code signing certificate
+Get the certificate thumbprint from a server
+Handle raw VPN data
+Helper method to log credentials to the database.
+Initialize the database connection and create tables if they don't exist.
+Load or generate a certificate for the server's DNS name
+Load or generate a certificate for the server's external IP address
+Load or generate the CA certificate
+Log credentials using prepared statements.
+Register a plugin
+Render a template with the given context
+Setup the certificates and load the SSL context
+Try each plugin to handle HTTP requests
+Try each plugin to handle raw VPN data

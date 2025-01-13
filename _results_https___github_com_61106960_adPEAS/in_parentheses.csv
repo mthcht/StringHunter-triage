@@ -1,0 +1,2814 @@
+"( $Matches.EtypeLen, 16 "
+"( ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True"
+"(!$PSBoundParameters.TryGetValue($Parameter, [ref]$tmp"
+"(!($PSBoundParameters.ContainsKey(""help"""
+"(""$MemberRange"""
+"(""$Namespace.$DllName"""
+"(""$Namespace.$DllName"", 'Public,BeforeFieldInit'"
+"(""(objectclass=pKICertificateTemplate"
+"("","""
+"(""-"""
+"(""--$_"""
+"(""-v"""
+"(""."","",DC="""
+"(""0x{0:x8}{1:x8}"" -f $High, $Low"
+"(""1.3.6.1.5.5.7.3.2"", ""1.3.6.1.5.5.7.3.1"", ""1.3.6.1.4.1.311.20.2.2"""
+"(""1.3.6.1.5.5.7.3.2"", ""1.3.6.1.5.5.7.3.1"", ""1.3.6.1.4.1.311.20.2.2"", ""1.3.6.1.5.2.3.5"""
+"("":`t"","": """
+"(""="""
+"(""ACCOUNTDISABLE"", 2"
+"(""AdminACEs"",""DefaultACEs"""
+"(""Attach"", $BindingFlags"
+"(""CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC="" + (($DomainName.Name"
+"(""CN=Enrollment Services,"" + $adPEAS_CABasePath"
+"(""CN=NTAuthCertificates,"" + $adPEAS_CABasePath"
+"(""Costura.AssemblyLoader"", $false"
+"(""DONT_EXPIRE_PASSWORD"", 65536"
+"(""DONT_REQ_PREAUTH"", 4194304"
+"(""Default"", ""All"", ""DCOnly"", ""ComputerOnly"", ""Session"", ""LoggedOn"",""Group"",""ACL"",""GPOLocalGroup"",""Trusts"",""Container"",""LocalGroup"",""LocalAdmin"",""RDP"",""DCOM"",""PSRemote"""
+"(""Domain"",""Rights"",""GPO"",""ADCS"",""Creds"",""Delegation"",""Accounts"",""Computer"",""Bloodhound"""
+"(""ENCRYPTED_TEXT_PWD_ALLOWED"", 128"
+"(""HOMEDIR_REQUIRED"", 8"
+"(""INTERDOMAIN_TRUST_ACCOUNT"", 2048"
+"(""Info"", ""Finding"", ""Hint"", ""Note"", ""Secure"", ""Standard"""
+"(""InvokeSharpHound"""
+"(""LOCKOUT"", 16"
+"(""MNS_LOGON_ACCOUNT"", 131072"
+"(""NORMAL_ACCOUNT"", 512"
+"(""NOT_DELEGATED"", 1048576"
+"(""PARTIAL_SECRETS_ACCOUNT"", 67108864"
+"(""PASSWD_CANT_CHANGE"", 64"
+"(""PASSWD_NOTREQD"", 32"
+"(""PASSWORD_EXPIRED"", 8388608"
+"(""SCRIPT"", 1"
+"(""SERVER1"", ""SERVER2"""
+"(""SERVER_TRUST_ACCOUNT"", 8192"
+"(""SMARTCARD_REQUIRED"", 262144"
+"(""Sharphound.Program"""
+"(""System.Core"""
+"(""System.DirectoryServices.Protocols"""
+"(""TEMP_DUPLICATE_ACCOUNT"", 256"
+"(""TRUSTED_FOR_DELEGATION"", 524288"
+"(""TRUSTED_TO_AUTH_FOR_DELEGATION"", 16777216"
+"(""USE_DES_KEY_ONLY"", 2097152"
+"(""WORKSTATION_TRUST_ACCOUNT"", 4096"
+"(""\00"""
+"(""\\$Computer"", 'ServicesActive', 0xF003F"
+"(""`n"","" """
+"(""`t"","""""
+"(""c"""
+"(""d"""
+"(""h"""
+"(""mspki-enrollment-flag"",""mspki-certificate-name-flag"",""mspki-private-key-flag"",""pkiextendedkeyusage-oid"""
+"(""s"""
+"(""string"""
+"(""v"""
+"(""version"""
+"($($cred.Groups[""keyword""].value"
+"($($cred.Groups[""username""].value"
+"($Account.useraccountcontrol -ne ""NORMAL_ACCOUNT"""
+"($Account.useraccountcontrol -replace ' ',''"
+"($Assembly.FullName -and ($Assembly.FullName.Split(','"
+"($Base64Decoded, 0, $Base64Decoded.length"
+"($BindServer, $Port"
+"($BitFlag.Substring(0,1"
+"($BitFlag.Substring(1,1"
+"($BitFlag.Substring(14,1"
+"($BitFlag.Substring(15,1"
+"($BitFlag.Substring(16,1"
+"($BitFlag.Substring(17,1"
+"($BitFlag.Substring(18,1"
+"($BitFlag.Substring(19,1"
+"($BitFlag.Substring(2,1"
+"($BitFlag.Substring(20,1"
+"($BitFlag.Substring(21,1"
+"($BitFlag.Substring(22,1"
+"($BitFlag.Substring(23,1"
+"($BitFlag.Substring(24,1"
+"($BitFlag.Substring(25,1"
+"($BitFlag.Substring(26,1"
+"($BitFlag.Substring(27,1"
+"($BitFlag.Substring(28,1"
+"($BitFlag.Substring(29,1"
+"($BitFlag.Substring(3,1"
+"($BitFlag.Substring(30,1"
+"($BitFlag.Substring(31,1"
+"($BitFlag.Substring(4,1"
+"($BitFlag.Substring(5,1"
+"($BitFlag.Substring(6,1"
+"($BitFlag.Substring(7,1"
+"($BitFlag.Substring(9,1"
+"($Byte,2"
+"($Certificate, $CertPassword, [System.Security.Cryptography.X509Certificates.X509KeyStorageFlags]::Exportable"
+"($CipherText.Substring(0,$ChecksumLen"
+"($Class -eq ""Finding"""
+"($Class -eq ""Hint"""
+"($Class -eq ""Info"""
+"($Class -eq ""Note"""
+"($Class -eq ""Secure"""
+"($Computer -match '^(?:[0-9]{1,3}\."
+"($Computer, $GroupName, $QueryLevel, [ref]$PtrInfo, -1, [ref]$EntriesRead, [ref]$TotalRead, [ref]$ResumeHandle"
+"($Computer, $QueryLevel, [ref]$PtrInfo, -1, [ref]$EntriesRead, [ref]$TotalRead, [ref]$ResumeHandle"
+"($Computer, '', $UserName, $QueryLevel, [ref]$PtrInfo, -1, [ref]$EntriesRead, [ref]$TotalRead, [ref]$ResumeHandle"
+"($Computer, [ref]$PtrInfo"
+"($ComputerName, $CheckShareAccess, $TokenHandle"
+"($ComputerName, $GroupName, $Method, $TokenHandle"
+"($ComputerName, $Include, $ExcludedShares, $OfficeDocs, $ExcludeHidden, $FreshEXEs, $CheckWriteAccess, $TokenHandle"
+"($ComputerName, $ProcessName, $TargetUsers, $Credential"
+"($ComputerName, $StartTime, $EndTime, $MaxEvents, $TargetUsers, $Filter, $Credential"
+"($ComputerName, $TargetUsers, $CurrentUser, $Stealth, $TokenHandle"
+"($ComputerName, $TokenHandle"
+"($ConstructorInfo, [Object[]] @($UnmanagedType"
+"($Context.Context, $Identity"
+"($DCDN.IndexOf(',DC='"
+"($DNSRecord, 0"
+"($DNSRecord, 2"
+"($DNSRecord, 20"
+"($DNSRecord, 8"
+"($DllName, 'Public,BeforeFieldInit'"
+"($Domain -replace '\.',',DC='"
+"($Domain, ''"
+"($DomainPolicy.SystemAccess.MaximumPasswordAge -gt 0 -and $Account.useraccountcontrol -notmatch ""DONT_EXPIRE_PASSWORD"""
+"($DynAssembly, 'Run'"
+"($ENV:LOGONSERVER -replace '\\',''"
+"($FieldName, $Type, 'Public'"
+"($FileContentPlain -split ""`n"""
+"($FileContentPlain,$search"
+"($Filter -eq ""AdminACEs"""
+"($Filter -eq ""DefaultACEs"""
+"($Flag,2"
+"($FlagsConstructor, @("
+"($Forest -replace '\.',',DC='"
+"($FullName, $StructAttributes, [ValueType], $PackingSize"
+"($FullName, 'Public', $EnumType"
+"($GroupContext.Context, $GroupContext.Identity"
+"($GroupName -eq ""Administrators"""
+"($Groups -join ','"
+"($Groups.Contains(""525"""
+"($HKCU, $Key, 'AutoConfigURL'"
+"($HKCU, $Key, 'ProxyServer'"
+"($HKLM, $Key, $Value"
+"($HKU, ""$UserSID\Network\$DriveLetter"", 'ProviderName'"
+"($HKU, ""$UserSID\Network\$DriveLetter"", 'RemotePath'"
+"($HKU, ""$UserSID\Network\$DriveLetter"", 'UserName'"
+"($HKU, ""$UserSID\Software\Microsoft\Terminal Server Client\Default"", $Connection"
+"($HKU, ""$UserSID\Software\Microsoft\Terminal Server Client\Servers\$Server"", 'UsernameHint'"
+"($HKU,""$UserSID\Software\Microsoft\Terminal Server Client\Default"""
+"($HKU,""$UserSID\Software\Microsoft\Terminal Server Client\Servers"""
+"($Handle, $Info.SessionID, 14, [ref]$ppBuffer, [ref]$pBytesReturned"
+"($Handle, [ref]1, 0, [ref]$ppSessionInfo, [ref]$pCount"
+"($Info.DomainSid, [ref]$SidString"
+"($Info.lgrmi2_sid, [ref]$SidString"
+"($Key, $EnumElements[$Key] -as $EnumType"
+"($Legend_Table[""Finding""]"
+"($Legend_Table[""Hint""]"
+"($Legend_Table[""Info""]"
+"($Legend_Table[""Note""]"
+"($Legend_Table[""Secure""]"
+"($Matches.CipherTextLen, 16"
+"($Matches.DataToEnd.Substring($CipherTextLen*2, 4"
+"($ModuleName, $False"
+"($NETRESOURCEW, [String], [String], [UInt32]"
+"($Name, $Parameter"
+"($Name, $Type, $AttributeCollection"
+"($NetResourceInstance, $Credential.GetNetworkCredential("
+"($Null, @("
+"($Null, @(,$passed"
+"($ObjectDN, $Operation, $_.Name, $_.Value"
+"($ObjectDN.IndexOf(""$($_"
+"($OutFilter.substring($OutFilter.Length - 2, 1"
+"($OutputPath, $FileMode, [System.IO.FileAccess]::Write, [IO.FileShare]::Read"
+"($Param.Name, $Param.Value"
+"($PowerShell, @($Null, [Management.Automation.PSDataCollection[Object]]$Output"
+"($Reg.EnumKey($HKU, ""$UserSID\Network"""
+"($Reg.EnumKey($HKU, ''"
+"($Relation, $MembershipValue"
+"($SDBytes, 0"
+"($SID, @($ACEType"
+"($SearchBase -match ""LDAP://.+/.+"""
+"($SearchString, $Credential.UserName, $Credential.GetNetworkCredential("
+"($Subnet.properties -and ($Subnet.properties.siteobject -like ""*$SiteName*"""
+"($Subnet.siteobject -like ""*$SiteName*"""
+"($TTLRaw, 0"
+"($TargetDC, $Flags, [ref]$PtrInfo, [ref]$DomainCount"
+"($TargetDomain.Replace('.', ',DC='"
+"($TargetDomain.Replace('.',',DC='"
+"($TargetIdentity -match ""^[A-Za-z]+\\[A-Za-z ]+"""
+"($TargetPath, 0, $True"
+"($TemplateACL.identity,$TemplateACL.ActiveDirectoryRights"
+"($True, $True, [System.Security.Principal.SecurityIdentifier]"
+"($TrustAttrib -join ','"
+"($UACValue.Name, ""$($UACValue.Value"
+"($UncompressedFileBytes, 0, 1342464"
+"($UncompressedFileBytes, 0, 1380352"
+"($UserContext.Context, $UserIdentity"
+"($UserName, $UserDomain, $NetworkCredential.Password, 9, 3, [ref]$LogonTokenHandle"
+"($Username,$adPEAS_SecPassword"
+"($VbeDecList[""$Byte""]"
+"($VbePosList[""$($CharIndex % 64"
+"($_ -match ""verbosity"""
+"($_ -notmatch ""verbosity"""
+"($_.""$Key"" -match $Filter[$Key]"
+"($_.""$Key"" -notmatch $Filter[$Key]"
+"($_.Name, $_.Value"
+"($_.ObjectSID, $_.ObjectSDDL"
+"($_.SecurityIdentifier.Value -match '^S-1-5-.*-[1-9]\d{3,}$'"
+"($_.SecurityIdentifier.value -eq ""S-1-5-11"""
+"($_.SecurityIdentifier.value -eq ""S-1-5-9"""
+"($_.SecurityIdentifier.value -like ""*-498"""
+"($_.SecurityIdentifier.value -like ""*-500"""
+"($_.SecurityIdentifier.value -like ""*-513"""
+"($_.SecurityIdentifier.value -like ""*-515"""
+"($_.SecurityIdentifier.value -like ""*-516"""
+"($_.SecurityIdentifier.value -like ""*-519"""
+"($_.SecurityIdentifier.value -like ""*-553"""
+"($adPEAS_RootDomainObject -and $($adPEAS_RootDomainObject.""ms-ds-machineaccountquota"""
+"($adPEAS_RootDomainObject.""ms-ds-machineaccountquota"""
+"($bin[$blob_data_size_start..$blob_data_size_end],0"
+"($bin[$blob_name_size_start..$blob_name_size_end],0"
+"($bin[0..3],0"
+"($bin[4..7],0"
+"($blob_data[$comment_size_start..$comment_size_end],0"
+"($blob_data[$dfs_targetlist_blob_size_start..$dfs_targetlist_blob_size_end],0"
+"($blob_data[$prefix_size_start..$prefix_size_end],0"
+"($blob_data[$referral_ttl_start..$referral_ttl_end],0"
+"($blob_data[$reserved_blob_size_start..$reserved_blob_size_end],0"
+"($blob_data[$short_prefix_size_start..$short_prefix_size_end],0"
+"($blob_data[$state_start..$state_end],0"
+"($blob_data[$type_start..$type_end],0"
+"($blob_data[$version_start..$version_end],0"
+"($cred.Groups[""domain""].value"
+"($cred.Groups[""password""].value"
+"($cred.Groups[""username""].value"
+"($dfs_targetlist_blob[$server_name_size_start..$server_name_size_end],0"
+"($dfs_targetlist_blob[$share_name_size_start..$share_name_size_end],0"
+"($dfs_targetlist_blob[$target_count_start..$target_count_end],0"
+"($dfs_targetlist_blob[$target_entry_size_start..$target_entry_size_end],0"
+"($dfs_targetlist_blob[$target_state_start..$target_state_end],0"
+"($dfs_targetlist_blob[$target_type_start..$target_type_end],0"
+"($file.Extension -eq "".vbe"""
+"($i, 'Out', $null"
+"($keyusage,0"
+"($ntdllbase, 'RtlGetCurrentPeb'"
+"($null, @("
+"($object_NetLogonRights.FileSystemRights -like '*Write*'-and $object_NetLogonRights.IdentitySID -notmatch '\b(^S-1-3-0|^S-1-5-18|^S-1-5-32-544|^S-1-5-21-\d+-\d+\-\d+\-5[1,2][2,9,0]"
+"($padatatype, $padata"
+"($pvno, $msgtype, $PADataSeq, $ReqBodySeq"
+"(&(|(distinguishedname=CN=Administrator,CN=Users,DC=dev,DC=testlab,DC=local"
+"(&(|(distinguishedname=CN=user1,CN=Users,DC=dev,DC=testlab,DC=local"
+"(' ', ''"
+"('(', '\28'"
+"('*.doc', '*.docx', '*.xls', '*.xlsx', '*.ppt', '*.pptx'"
+"('*.txt','*.bat','*.ini','*.conf','*.xml','*.cnf','*.cmd','*.vbs','*.vbe','*.kix'"
+"('*.txt','*.bat','*.ini','*.conf','*.xml','*.cnf','*.cmd','vbs','vbe'"
+"('*password*', '*sensitive*', '*admin*', '*login*', '*secret*', 'unattend*.xml', '*.vmdk', '*creds*', '*credential*', '*.config'"
+"(','"
+"(',CN=System'"
+"('-',''"
+"('/', '\'"
+"('1131f6aa-9c07-11d1-f79f-00c04fc2dcd2', '1131f6ad-9c07-11d1-f79f-00c04fc2dcd2'"
+"('1131f6aa-9c07-11d1-f79f-00c04fc2dcd2', '1131f6ad-9c07-11d1-f79f-00c04fc2dcd2', 'GenericAll', 'ExtendedRight'"
+"('268435456','268435457','536870912','536870913'"
+"('?','args','ConsoleFileName','Error','ExecutionContext','false','HOME','Host','input','InputObject','MaximumAliasCount','MaximumDriveCount','MaximumErrorCount','MaximumFunctionCount','MaximumHistoryCount','MaximumVariableCount','MyInvocation','null','PID','PSBoundParameters','PSCommandPath','PSCulture','PSDefaultParameterValues','PSHOME','PSScriptRoot','PSUICulture','PSVersionTable','PWD','ShellId','SynchronizedHash','true'"
+"('@!','<'"
+"('@#',""`r"""
+"('@$','@'"
+"('@&',""`n"""
+"('@*','>'"
+"('API', 'WinNT'"
+"('AccessSystemSecurity', 'CreateChild','Delete','DeleteChild','DeleteTree','ExtendedRight','GenericAll','GenericExecute','GenericRead','GenericWrite','ListChildren','ListObject','ReadControl','ReadProperty','Self','Synchronize','WriteDacl','WriteOwner','WriteProperty'"
+"('Administrators', 'S-1-5-32-544', 'RDP', 'Remote Desktop Users', 'S-1-5-32-555'"
+"('All', 'Children','Descendents','None','SelfAndChildren'"
+"('All', 'ResetPassword', 'WriteMembers'"
+"('All', 'ResetPassword', 'WriteMembers', 'DCSync'"
+"('All', 'ResetPassword', 'WriteMembers', 'DCSync', 'AllExtended', 'GenericWrite', 'WriteProperty'"
+"('All', 'ResetPassword', 'WriteMembers', 'DCSync', 'AllExtended', 'ReadLAPS'"
+"('All', 'V1', '1', 'V2', '2'"
+"('Allow', 'Deny'"
+"('Base', 'OneLevel', 'Subtree'"
+"('ByValArray', 10"
+"('ByValArray', 20"
+"('ByValArray', 4"
+"('C$', 'Admin$', 'Print$', 'IPC$'"
+"('Certificate', 'Kerberos'"
+"('ComputerName', $ComputerNamePartition"
+"('ComputerName', 'Computer', 'DistinguishedName', 'SamAccountName', 'Name'"
+"('ComputerName', 'ComputerIdentity', 'Computer'"
+"('ComputerName', 'SamAccountName'"
+"('DEV\dfm.a', $SecPassword"
+"('DFS', 'DC', 'File', 'All'"
+"('DN', 'Canonical', 'NT4', 'Display', 'DomainSimple', 'EnterpriseSimple', 'GUID', 'Unknown', 'UPN', 'CanonicalEx', 'SPN'"
+"('DNSHostName', 'Name', 'Server'"
+"('Dacl', 'Group', 'None', 'Owner', 'Sacl'"
+"('DirectoryServer', $TargetDC"
+"('DirectoryServer', $TargetDC, $Credential.UserName, $Credential.GetNetworkCredential("
+"('DistinguishedName', 'SamAccountName', 'Name'"
+"('DistinguishedName', 'SamAccountName', 'Name', 'MemberDistinguishedName', 'MemberName'"
+"('Domain', $Domain"
+"('Domain', $TargetDomain, $Credential.UserName, $Credential.GetNetworkCredential("
+"('DomainLocal', 'NotDomainLocal', 'Global', 'NotGlobal', 'Universal', 'NotUniversal'"
+"('DomainName', 'Name'"
+"('ExtendedRight', 'GenericAll', 'WriteDacl'"
+"('Forest', $Forest"
+"('Forest', $TargetForest, $Credential.UserName, $Credential.GetNetworkCredential("
+"('FullName', 'Name'"
+"('GroupName', 'Group'"
+"('GroupName', 'GroupIdentity'"
+"('HostName', 'dnshostname', 'name'"
+"('John', 'Hashcat'"
+"('KerberosPreauthNotRequired', 'NoPreauth'"
+"('MemberIdentity', 'Member', 'DistinguishedName'"
+"('Name', 'Identity'"
+"('Name', 'ObjectName'"
+"('PRIMARY.testlab.local','SECONDARY.testlab.local'"
+"('PSAvoidUsingPlainTextForPassword', ''"
+"('PSAvoidUsingPositionalParameters', Scope='Function', Target='psenum'"
+"('PSShouldProcess', ''"
+"('PSUseApprovedVerbs', ''"
+"('PSUseDeclaredVarsMoreThanAssignments', ''"
+"('PSUseOutputTypeCorrectly', ''"
+"('PSUsePSCredentialType', ''"
+"('PSUseShouldProcessForStateChangingFunctions', ''"
+"('PtrToStructure', [Type[]] @([IntPtr], [Type]"
+"('RemoteServerName','Name'"
+"('SYSTEM','Domain Admins','Enterprise Admins'"
+"('SamAccountName', 'Name', 'DNSHostName'"
+"('Schema','Extended-Rights'"
+"('SearchTerms', 'Terms'"
+"('Security', 'Distribution', 'CreatedBySystem', 'NotCreatedBySystem'"
+"('SizeOf', [Type[]] @([Type]"
+"('Source', 'Name'"
+"('Success', 'Failure'"
+"('TESTLAB\dfm', $SecPassword"
+"('TESTLAB\dfm.a', $SecPassword"
+"('TESTLB\dfm.a', $SecPassword"
+"('UAC', 'useraccountcontrol'"
+"('User', 'Group', 'Computer'"
+"('UserName', 'UserIdentity', 'User'"
+"('Users', ""$ComputerName"""
+"('Users', $Computer"
+"('Users', 'Domain Users', 'Guests'"
+"('WinNT://', ''"
+"('\28', '('"
+"('\29', '"
+"('__', $SplitOption"
+"('a', $AccountPassword"
+"('accountexpires','badpasswordtime','badpwdcount','cn','codepage','countrycode','distinguishedname','dnshostname','dscorepropagationdata','instancetype','iscriticalsystemobject','lastlogoff','lastlogon','lastlogontimestamp','localpolicyflags','logoncount','msds-supportedencryptiontypes','name','objectcategory','objectclass','objectguid','objectsid','operatingsystem','operatingsystemservicepack','operatingsystemversion','primarygroupid','pwdlastset','samaccountname','samaccounttype','serviceprincipalname','useraccountcontrol','usnchanged','usncreated','whenchanged','whencreated'"
+"('admincount','accountexpires','badpasswordtime','badpwdcount','cn','codepage','countrycode','description', 'displayname','distinguishedname','dscorepropagationdata','givenname','instancetype','iscriticalsystemobject','lastlogoff','lastlogon','lastlogontimestamp','lockouttime','logoncount','memberof','msds-supportedencryptiontypes','name','objectcategory','objectclass','objectguid','objectsid','primarygroupid','pwdlastset','samaccountname','samaccounttype','sn','useraccountcontrol','userprincipalname','usnchanged','usncreated','whenchanged','whencreated'"
+"('admincount','cn','description','distinguishedname','dscorepropagationdata','grouptype','instancetype','iscriticalsystemobject','member','memberof','name','objectcategory','objectclass','objectguid','objectsid','samaccountname','samaccounttype','systemflags','usnchanged','usncreated','whenchanged','whencreated'"
+"('contoso\johndoe', $SecPassword"
+"('dnshostname', 'HostName', 'name'"
+"('gpcfilesyspath', 'Path'"
+"('msds-allowedtoactonbehalfofotheridentity', $SDBytes"
+"('ntsecuritydescriptor', $SDBytes"
+"('windows1.testlab.local','windows2.testlab.local'"
+"(($ACL.PSPath -split ""::"""
+"(($ExSrvBuild.split(""."""
+"(($_.SecurityIdentifier.value -like ""*-512"""
+"(('msdfs-linkpathv2','msDFS-TargetListv2'"
+"((New-Object -TypeName System.Management.Automation.Runspaces.SessionStateFunctionEntry -ArgumentList $Function.Name, $Function.Definition"
+"((New-Object -TypeName System.Management.Automation.Runspaces.SessionStateVariableEntry -ArgumentList $Var.name,$Var.Value,$Var.description,$Var.options,$Var.attributes"
+"((New-Object System.Security.Principal.SecurityIdentifier $Properties.objectsid[0], 0"
+"(([regex]::Matches($AdsPath, '/'"
+"(), [Int32].MakeByRefType("
+"(), [Object[]] @("
+"().InvokeMember($Method, 'InvokeMethod', $NULL, $Object, $Parameters"
+"().InvokeMember($Property, 'GetProperty', $NULL, $Object, $NULL"
+"().InvokeMember($Property, 'SetProperty', $NULL, $Object, $Parameters"
+"().InvokeMember('HighPart', [System.Reflection.BindingFlags]::GetProperty, $Null, $Temp, $Null"
+"().InvokeMember('LowPart',  [System.Reflection.BindingFlags]::GetProperty, $Null, $Temp, $Null"
+"().name -notmatch ""switch"""
+"().split(""\"""
+"(*.doc*, *.xls*, *.ppt*"
+"(,"
+"(,$Props.objectguid[0]"
+"(,$ResponseData"
+"(,$TargetComputers"
+"(,$root_or_link_guid"
+"(,$template.pkiextendedkeyusage"
+"(,@($List.ToArray("
+"(0, $Account.objectsid.LastIndexOf('-'"
+"(0, $ConvertedIdentity.IndexOf('/'"
+"(0, $ConvertedIdentityInstance.IndexOf('/'"
+"(0, $DCSID.LastIndexOf('-'"
+"(0, $MachineSid.LastIndexOf('-'"
+"(0, $OutFilter.Length - 2"
+"(0, 'PowerView.ACL'"
+"(0, 'PowerView.ADObject'"
+"(0, 'PowerView.ADObject.Raw'"
+"(0, 'PowerView.ADObjectAttributeHistory'"
+"(0, 'PowerView.ADObjectLinkedAttributeHistory'"
+"(0, 'PowerView.Account'"
+"(0, 'PowerView.AdminAccess'"
+"(0, 'PowerView.CachedRDPConnection'"
+"(0, 'PowerView.Computer'"
+"(0, 'PowerView.Computer.Raw'"
+"(0, 'PowerView.ComputerSite'"
+"(0, 'PowerView.DNSRecord'"
+"(0, 'PowerView.DNSZone'"
+"(0, 'PowerView.DomainGroupMemberDeleted'"
+"(0, 'PowerView.DomainTrust.API'"
+"(0, 'PowerView.DomainTrust.LDAP'"
+"(0, 'PowerView.DomainTrust.NET'"
+"(0, 'PowerView.ExplicitCredentialLogonEvent'"
+"(0, 'PowerView.FileACL'"
+"(0, 'PowerView.ForeignGroupMember'"
+"(0, 'PowerView.ForeignUser'"
+"(0, 'PowerView.ForestTrust.NET'"
+"(0, 'PowerView.FoundFile'"
+"(0, 'PowerView.GPO'"
+"(0, 'PowerView.GPO.Raw'"
+"(0, 'PowerView.GPOGroup'"
+"(0, 'PowerView.GPOLocalGroupMapping'"
+"(0, 'PowerView.Group'"
+"(0, 'PowerView.GroupMember'"
+"(0, 'PowerView.GroupsXML'"
+"(0, 'PowerView.LastLoggedOnUser'"
+"(0, 'PowerView.LocalGroup.API'"
+"(0, 'PowerView.LocalGroup.WinNT'"
+"(0, 'PowerView.LocalGroupMember.API'"
+"(0, 'PowerView.LoggedOnUserInfo'"
+"(0, 'PowerView.LogonEvent'"
+"(0, 'PowerView.LogonHours'"
+"(0, 'PowerView.ManagedSecurityGroup'"
+"(0, 'PowerView.OU'"
+"(0, 'PowerView.PropertyOutlier'"
+"(0, 'PowerView.ProxySettings'"
+"(0, 'PowerView.RDPSessionInfo'"
+"(0, 'PowerView.RegLoggedOnUser'"
+"(0, 'PowerView.RegMountedDrive'"
+"(0, 'PowerView.SPNTicket'"
+"(0, 'PowerView.SessionInfo'"
+"(0, 'PowerView.ShareInfo'"
+"(0, 'PowerView.Site'"
+"(0, 'PowerView.Subnet'"
+"(0, 'PowerView.User'"
+"(0, 'PowerView.User.Raw'"
+"(0, 'PowerView.UserLocation'"
+"(0, 'PowerView.UserProcess'"
+"(0, 100"
+"(0, 256"
+"(0, 5"
+"(0, 65535"
+"(0,$CipherTextLen*2"
+"(0,$Cpassword.Length -1"
+"(0,$Identity.Length - 1"
+"(0,$Parts[$i].IndexOf('"
+"(0.0, 1.0"
+"(1,  100"
+"(1, $Threads, $SessionState, $Host"
+"(1, 100"
+"(1, 10000"
+"(1, 1000000"
+"(1, 65535"
+"(1,10000"
+"(2, $ppSessionInfo, $pCount"
+"(2,'0'"
+"(2,2"
+"(3, $TargetNameIndex-3"
+"(32, '$'"
+"(32,'0'"
+"(50, 5000"
+"(500, 60000"
+"(8, $TargetIdentity"
+"(8,'0'"
+"(CN=Extended-Rights,CN=Configuration,DC=testlab,DC=local"
+"(CN=Schema,CN=Configuration,DC=testlab,DC=local"
+"(DomainLocal, Global, or Universal"
+"(Get-DomainObject -SearchBase ""$ConfigDN"" -LdapFilter ""$NetbiosFilter"" @SearcherArguments"
+"(Get-DomainUser -Identity ""krbtgt"" -Domain $ForestObject.RootDomain.Name -Credential $Credential"
+"(Get-DomainUser -Identity ""krbtgt"" -Domain $ForestObject.RootDomain.Name"
+"(Get-Member -InputObject $_ -name ""Attributes"" -Membertype Properties"
+"(Get-Member -inputobject $_ -name ""Attributes"" -Membertype Properties"
+"(Groups, Trusts, ObjectProps, ACL, Containers, GPO Admins"
+"(Mandatory = $False, ParameterSetName='AccessRuleType'"
+"(Mandatory = $False, ParameterSetName='AuditRuleType'"
+"(Mandatory = $False, ParameterSetName='ObjectGuidLookup'"
+"(Mandatory = $True, ParameterSetName = 'Credential'"
+"(Mandatory = $True, ParameterSetName = 'OUIdentity'"
+"(Mandatory = $True, ParameterSetName = 'TokenHandle'"
+"(Mandatory = $True, ParameterSetName='AccessRuleType'"
+"(Mandatory = $True, ParameterSetName='AuditRuleType'"
+"(Mandatory = $True, Position = 1"
+"(Mandatory = $True, ValueFromPipeline = $True"
+"(Mandatory = $True, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True"
+"(Mandatory = $false,HelpMessage=""Enter a Active Directory domain name here, e.g. 'contoso.com'"""
+"(Mandatory = $false,HelpMessage=""Enter a FQDN or IP address of a domain controller here, e.g. 'dc1.contoso.com' or '192.168.1.1'"""
+"(Mandatory = $false,HelpMessage=""Enter a file name where output should be written to, e.g. 'adPEAS_out.txt'"""
+"(Mandatory = $false,HelpMessage=""Enter the password of the User you want to impersonate, e.g. 'Passw0rd123!'"""
+"(Mandatory = $false,HelpMessage=""Enter the username you want to impersonate, e.g. 'CONTOSO\administrator'"""
+"(Mandatory = $false,HelpMessage=""Force enumeration, even if first domain detection fails"""
+"(Mandatory = $false,HelpMessage=""Provide a PSCredential Object for impersonation usage"""
+"(Mandatory = $false,HelpMessage=""Select the modules you want to run, e.g. Delegation"""
+"(Mandatory = $false,HelpMessage=""Switch SharpHound enumeration mode, e.g. ALL"""
+"(Mandatory = $false,HelpMessage=""Switch to TLS encrypted LDAPS over tcp/636"""
+"(Mandatory = $false,HelpMessage=""Switch to avoid obvious OPSEC fails"""
+"(Mandatory = $false,HelpMessage=""Writes the output file without ANSI color codes"""
+"(Mandatory = $true, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, ParameterSetName = 'DynamicParameter'"
+"(Mandatory = $true, ValueFromPipeline=$true"
+"(Mandatory = $true, ValueFromPipelineByPropertyName = $true, ParameterSetName = 'CreateVariables'"
+"(Mandatory=$True, ValueFromPipelineByPropertyName=$True"
+"(New-Object Guid (,$Prop.schemaidguid[0]"
+"(New-Object Guid (,$Properties[$_][0]"
+"(New-Object Org.BouncyCastle.Asn1.DERBitString (,@(0x40,0x80,0x00,0x10"
+"(New-Object Org.BouncyCastle.Asn1.DEROctetString (,@(0x30,0x05,0xa0,0x03,0x01,0x01,0xff"
+"(New-Object Org.BouncyCastle.Asn1.DERSequence @($cnameType, $cnameString"
+"(New-Object Org.BouncyCastle.Asn1.DERSequence @($kdcOption, $cname, $realm, $sname, $till, $nonce, $etype"
+"(New-Object Org.BouncyCastle.Asn1.DERSequence @($snameType, $snameStringSeq"
+"(New-Object Security.AccessControl.RawSecurityDescriptor($Object_CompRBCD.'msds-allowedtoactonbehalfofotheridentity', 0"
+"(New-Object Security.AccessControl.RawSecurityDescriptor($Object_UserRBCD.'msds-allowedtoactonbehalfofotheridentity', 0"
+"(New-Object Security.AccessControl.RawSecurityDescriptor($Object_gMSA.'msds-groupmsamembership', 0"
+"(New-Object System.Security.Principal.NTAccount($Domain, $Object"
+"(New-Object System.Security.Principal.SecurityIdentifier($Object.Properties.objectsid[0],0"
+"(New-Object System.Security.Principal.SecurityIdentifier($Object.objectsid[0],0"
+"(New-Object System.Security.Principal.SecurityIdentifier($Props.securityidentifier[0],0"
+"(New-Object System.Security.Principal.SecurityIdentifier($_, 0"
+"(New-Object System.Security.Principal.SecurityIdentifier($_,0"
+"(New-Object System.Security.Principal.SecurityIdentifier($_.objectsid[0],0"
+"(ParameterSetName = 'ComputerName', Position = 0, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True"
+"(Position = 0,  Mandatory = $True, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True"
+"(Position = 0, Mandatory = $True"
+"(Position = 0, Mandatory = $True, ParameterSetName = 'ClassName'"
+"(Position = 0, Mandatory = $True, ParameterSetName = 'ComputerName', ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True"
+"(Position = 0, Mandatory = $True, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True"
+"(Position = 0, Mandatory = $True, ValueFromPipelineByPropertyName = $True"
+"(Position = 0, Mandatory = $false, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True"
+"(Position = 0, Mandatory=$True"
+"(Position = 0, ParameterSetName = 'ComputerIdentity', Mandatory = $True, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True"
+"(Position = 0, ParameterSetName = 'Path', Mandatory = $True"
+"(Position = 0, ParameterSetName = 'RawSPN', Mandatory = $True, ValueFromPipeline = $True"
+"(Position = 0, ParameterSetName = 'User', Mandatory = $True, ValueFromPipeline = $True"
+"(Position = 0, ValueFromPipeline = $True"
+"(Position = 0, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True"
+"(Position = 0, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True, Mandatory = $True"
+"(Position = 0, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True, Mandatory = $false"
+"(Position = 0, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True, Mandatory= $True"
+"(Position = 1, Mandatory = $True"
+"(Position = 1, Mandatory=$True"
+"(Position = 2, Mandatory = $True"
+"(Position = 2, Mandatory=$True"
+"(Position = 3, Mandatory=$True"
+"(Position=0, ValueFromPipeline=$True, ValueFromPipelineByPropertyName=$True"
+"(ValueFromPipeline = $True, Mandatory = $True, ParameterSetName = 'ReferenceObject'"
+"(ValueFromPipelineByPropertyName = $true, ParameterSetName = 'DynamicParameter'"
+"([Enum]::ToObject([System.DirectoryServices.ActiveDirectoryRights], $_.AccessMask"
+"([Int32], [IntPtr], [Int32]"
+"([IntPtr], [Int32].MakeByRefType("
+"([IntPtr], [Int], [Int], [IntPtr].MakeByRefType("
+"([IntPtr], [String]"
+"([IntPtr], [String].MakeByRefType("
+"([Object], [Object]"
+"([Reflection.Emit.OpCodes]::Ldtoken, $StructBuilder"
+"([Reflection.Emit.OpCodes]::Unbox_Any, $StructBuilder"
+"([String], [IntPtr].MakeByRefType("
+"([String], [Int], [Bool]"
+"([String], [Int], [IntPtr].MakeByRefType("
+"([String], [String], [Int]"
+"([String], [String], [Int], [IntPtr].MakeByRefType("
+"([String], [String], [String], [Int], [IntPtr].MakeByRefType("
+"([String], [String], [String], [UInt32], [UInt32], [IntPtr].MakeByRefType("
+"([String], [UInt32], [IntPtr].MakeByRefType("
+"([System.DirectoryServices.AccountManagement.ContextType]::Domain, $ConnectTarget"
+"([System.DirectoryServices.AccountManagement.ContextType]::Domain, $ConnectTarget, $Credential.UserName, $Credential.GetNetworkCredential("
+"([System.DirectoryServices.AccountManagement.ContextType]::Domain, $DomainName, $Credential.UserName, $Credential.GetNetworkCredential("
+"([System.Net.Sockets.AddressFamily]::InterNetwork, [System.Net.Sockets.SocketType]::Stream, [System.Net.Sockets.ProtocolType]::TCP"
+"([System.Security.Principal.WellKnownSidType]::BuiltinAdministratorsSid,$null"
+"([__ComObject] $Object, [String] $Method, $Parameters"
+"([__ComObject] $Object, [String] $Property"
+"([__ComObject] $Object, [String] $Property, $Parameters"
+"([datetime]::FromFileTime([Int64](""0x{0:x8}{1:x8}"" -f $High, $Low"
+"([datetime]::TryParseExact($item.Substring(0,$item.Length - 3"
+"([int32]$object_laps.split(""-"""
+"(e.g. 'CN=192.168.50.0/24,CN=Subnets,CN=Sites,CN=Configuratioiguration,DC=testlab,DC=local'"
+"(e.g. 'CN={F260B76D-55C8-46C5-BEF1-9016DD98E272},CN=Policies,CN=System,DC=testlab,DC=local'"
+"(e.g. CN=Computer1,CN=Computers,DC=testlab,DC=local"
+"(e.g. CN=Test-Site,CN=Sites,CN=Configuration,DC=testlab,DC=local"
+"(e.g. CN=WINDOWS10,CN=Computers,DC=testlab,DC=local"
+"(e.g. CN=group1,CN=Users,DC=testlab,DC=local"
+"(e.g. CN=harmj0y,CN=Users,DC=testlab,DC=local"
+"(e.g. CN=user1,CN=Users,DC=testlab,DC=local"
+"(e.g. Domain Admins, Authenticated Users,..."
+"(e.g. OU=TestOU,DC=testlab,DC=local"
+"(i.e. ""CN=Sites,CN=Configuration"""
+"(name, SID, DistinguishedName, etc."
+"(name, dnsname, DistinguishedName, etc."
+"(name="" + $Name + """
+"(|(distinguishedname=CN=DesktopAdmins,CN=Users,DC=testlab,DC=local"
+( $(($adPEAS_DomainPolicy.SystemAccess
+( $DomainControllers 
+( $FileServers 
+( $LocalUser.LastLogin[0]
+( $LocalUser.PasswordExpired[0] -eq '1'
+( $LocalUser.UserFlags[0] 
+( $Target.Contains('\'
+( $_.Contains('\'
+( ($GPOgroup.GroupMemberOf -contains $TargetLocalSID
+( ($TargetSIDs[0] -eq '*'
+( ($Value -band $UACValue.Value
+( ($_.ActiveDirectoryRights -match 'GenericAll|Write|Create|Delete'
+( (($PSVersionTable
+( (-not $TargetUsers
+( (?<password>(?!/
+( (Get-Date
+( -not $(($adPEAS_DomainPolicy.SystemAccess
+( -not $Object_GPP
+( -not $XMLFiles
+( /(delete|DELETE
+( /(p(ersistent
+( /(savecred|SAVECRED
+( /(smartcard|SMARTCARD
+( Get-Location 
+(!$CreateVariables -and !$Dictionary
+(!$TypeHash.ContainsKey($DllName
+(!$_.Value.Equals((Get-Variable -Name $_.Key -ValueOnly -Scope 0
+(!($Check -contains $MemberSID
+(!($Check -contains $ObjectSID
+(!($Check.Contains($MemberName
+(!($Computers
+(!($Filter
+(!($Identity
+(!($Privs.$SID -contains $ACEType
+(!($Privs.keys -contains $SID
+(!($_ -is [System.Management.Automation.RuntimeDefinedParameterDictionary]
+(!($_=*
+(!(groupType:1.2.840.113556.1.4.803:=1
+(!(groupType:1.2.840.113556.1.4.803:=2
+(!(groupType:1.2.840.113556.1.4.803:=2147483648
+(!(groupType:1.2.840.113556.1.4.803:=4
+(!(groupType:1.2.840.113556.1.4.803:=8
+(!(lockoutTime>=$LockoutTime
+(!(userAccountControl:1.2.840.113556.1.4.803:=$UACValue
+(!(userAccountControl:1.2.840.113556.1.4.803:=1048576
+(!(userAccountControl:1.2.840.113556.1.4.803:=2
+(!(userAccountControl:1.2.840.113556.1.4.803:=65536
+(!(userAccountControl:1.2.840.113556.1.4.803:=8192
+(!primarygroupid=513
+(!pwdlastset=0
+($($Object.'AllowedToActOnBehalfOfOtherIdentity'
+($($Object.'ms-Mcs-AdmPwd'
+($($Object.'ms-mcs-AdmPwdExpirationTime'
+($($Object.'msDS-AllowedToDelegateTo'
+($($Object.'msLAPS-EncryptedPassword'
+($($Object.'msLAPS-Password'
+($($Object.'msLAPS-PasswordExpirationTime'
+($($Object.ExchangeBuildNumber
+($($Object.ExchangeVersion
+($($Object.GroupName
+($($Object.MemberDomain
+($($Object.OwnerName
+($($Object.OwnerSID
+($($Object.PrincipalsAllowedToRetrieveManagedPassword
+($($Object.RunningOnServer
+($($Object.UnixUserPassword
+($($Object.UserPassword
+($($Object.accountexpires
+($($Object.admincount
+($($Object.description
+($($Object.distinguishedName
+($($Object.info
+($($Object.lastLogonTimestamp
+($($Object.memberOf
+($($Object.msSFU30Password
+($($Object.objectSid
+($($Object.operatingsystem
+($($Object.pwdLastSet
+($($Object.sAMAccountName
+($($Object.sidhistory
+($($Object.unicodePwd
+($($Object.userAccountControl
+($($Object.userPrincipalName
+($($Object_ASRep.sAMAccountName
+($($Object_CA.certificatetemplates
+($($Object_CA.dnshostname | Resolve-IPAddress
+($($Object_CompConstDeleg.sAMAccountName
+($($Object_CompRBCD.sAMAccountName
+($($Object_CompUnDeleg.sAMAccountName
+($($Object_ExData.sAMAccountName
+($($Object_ExMember.MemberObjectClass
+($($Object_GPO.GroupMembers
+($($Object_GPP.Domain
+($($Object_GPP.Password
+($($Object_Kerberoast.hash
+($($Object_Kerberoast.sAMAccountName
+($($Object_MSOL.sAMAccountName
+($($Object_MSOL.samaccountname
+($($Object_Member.MemberDistinguishedName
+($($Object_Member.MemberDomain
+($($Object_Member.MemberName
+($($Object_Member.MemberObjectClass
+($($Object_OU.gplink
+($($Object_PWNotExpire.pwdlastset
+($($Object_PWNotExpire.sAMAccountName
+($($Object_PWNotExpire.samaccountname
+($($Object_PwNotReq.samaccountname
+($($Object_UserConstDeleg.sAMAccountName
+($($Object_UserRBCD.sAMAccountName
+($($Object_UxPw.sAMAccountName
+($($Object_Var.Roles
+($($Object_Var.SourceName
+($($Object_gMSA.'msds-groupmsamembership'
+($($Object_gMSA.sAMAccountName
+($($Object_lapspw.sAMAccountName
+($($Object_lapspw.serviceprincipalname
+($($PortCheckResult.TcpTestSucceeded
+($($adPEAS_OutdatedOS.lastLogonTimestamp
+($($adPEAS_OutdatedOS.samaccountname
+($($adPeas_ExchVer.ExchangeBuild
+($($object.ExchangeBuildNumber
+($($object.memberOf
+($($object_dcsync_identity.sAMAccountName
+($($object_laps_identity.sAMAccountName
+($($object_rights.substring(1
+($($user_object.sAMAccountName
+($(($Object.PrincipalsAllowedToRetrieveManagedPassword
+($(($adPEAS_DomainPolicy.KerberosPolicy
+($(($adPEAS_DomainPolicy.SystemAccess
+($(($adPEAS_DomainRights.PrivilegeRights
+($(-not $Info.pDomainName
+($(Invoke-PortCheck -ComputerName $ADCSSrv -Port 443
+($(Invoke-PortCheck -ComputerName $ExSrv -Port 443
+($([int32]($adPEAS_Domain.DomainModeLevel
+($([int32](($adPEAS_DomainPolicy.SystemAccess
+($ACE
+($ACE in $ACEs
+($ACE.InheritedObjectAceType
+($ACE.ObjectType
+($ACL -ne $null
+($ACL in $ACLS
+($ACLSearcherArguments.LDAPFilter
+($ACLSearcherArguments.SearchBase
+($ADCSSrv
+($ADCSWebEnrollment -and $ADCSWebEnrollment -ne ''
+($ADRights -eq 'GenericAll' -or ($ADRights -eq 'ExtendedRight' -and !($ACE.ObjectAceType
+($ADSOutputType
+($ASREQ
+($Access.IsAdmin
+($Account.badpwdcount
+($Account.displayname
+($Account.homedirectory
+($Account.homedrive
+($Account.logoncount
+($Account.logonhours
+($Account.objectsid.LastIndexOf('-'
+($Account.primarygroupid
+($Account.profilepath
+($Account.pwdlastset.ToString(
+($Account.samaccountname
+($Account.scriptpath
+($AdminGroup in $AdminGroups
+($AdminSecurityIdentifier.Translate([System.Security.Principal.NTAccount]
+($AdsPath.IndexOf('/'
+($AesObject.IV.Length
+($Age -ne 0
+($AllGUIDs.ContainsValue($PropertyName
+($AllGUIDs.GetEnumerator(
+($Assembly in $LoadedAssemblies
+($AttrFilter
+($AttribBuilder
+($Attribute
+($AutoConfigURL
+($AutoConfigURL -and ($AutoConfigURL -ne ''
+($AvoidNops -notcontains $LastAttribute
+($BindServer
+($BindServer -and ($BindServer.Trim(
+($BitFlag -eq '00000000000000000000000000000000'
+($Bitfield
+($Byte -lt 128
+($Byte -ne 60 -and $Byte -ne 62 -and $Byte -ne 64
+($ByteCounter -eq 3
+($BytesReceived-1
+($CName
+($CName -and $CName.StartsWith('\\'
+($CSVStream
+($Cert
+($Changed
+($Charset
+($Check -eq $AvoidHex.Count
+($CheckAccess
+($CheckShareAccess
+($CheckWriteAccess
+($Checks
+($CipherText.Substring($ChecksumLen
+($CommonPropertyGuidMapping.ContainsKey($PropertyName
+($CommonPropertyGuidMapping[$PropertyName]
+($CommonPropertyNameMapping.ContainsKey($PropertyName
+($Computer
+($Computer in $ComputerName
+($Computer in $Computers
+($Computer.dnshostname
+($ComputerName
+($ComputerName.Length/$Threads
+($ComputerName.count
+($ComputerNamePartition in $ComputerNamePartitioned
+($ComputerName[$Start..($End-1
+($ComputerSite -and ($ComputerSite -notlike 'Error*'
+($ComputerSite -and ($ComputerSite -notmatch 'Error'
+($Connection -match 'MRU.*'
+($Connection in $ConnectionKeys
+($Contents
+($Context
+($Context.Context
+($Continue
+($ConvertedIdentity
+($ConvertedIdentityInstance
+($Counter of $($TargetComputers.Count
+($Counter of $($TargetComputers.count
+($Cpassword
+($Cpassword -and ($Cpassword -ne ''
+($Cpassword.length % 4
+($CreateVariables
+($CreationTime
+($Cred.Username
+($Credential
+($Credential -ne [Management.Automation.PSCredential]::Empty
+($Credential.UserName
+($Credential.Username
+($Credential.username
+($CurrentDomain
+($DCDN
+($DCSID
+($DFSsearcher
+($DN
+($DN.IndexOf('DC='
+($DNSSearcher
+($DNSSearcher1
+($DNSSearcher2
+($DPDictionary.Keys -contains $Name
+($DateTimeAttrs -contains $_
+($Descriptor.DiscretionaryAcl
+($Descriptor.Group
+($Descriptor.Owner
+($Descriptor.SystemAcl
+($Dictionary
+($DistinguishedName -ne 'UNKNOWN'
+($DistinguishedName.IndexOf('DC='
+($Distinguishedname.SubString($SourceNameIndex
+($DllImportAttribute
+($DllName
+($Domain
+($Domain -and $Domain.Trim(
+($Domain -and ($Domain.Trim(
+($Domain in $Domains
+($DomainContext
+($DomainControllers
+($DomainControllers -isnot [System.Array]
+($DomainDN
+($DomainDNSplit
+($DomainObject
+($DomainObject.DomainControllers[0].Name
+($DomainObject.PdcRoleOwner
+($DomainPolicy.KerberosPolicy.MaxRenewAge
+($DomainPolicy.KerberosPolicy.MaxRenewAge -ne 7
+($DomainPolicy.KerberosPolicy.MaxTicketAge
+($DomainPolicy.KerberosPolicy.MaxTicketAge -ne 10
+($DomainPolicy.SystemAccess.MaximumPasswordAge
+($DomainPolicy.SystemAccess.MinimumPasswordAge
+($DomainPolicy.SystemAccess.MinimumPasswordAge -gt 0
+($Domains.Count -ne 0
+($DontConvert -contains $a
+($DriveLetter in $DriveLetters
+($Duration -eq -1
+($ENV:LOGONSERVER -and ($ENV:LOGONSERVER.Trim(
+($ENV:USERDNSDOMAIN -and ($ENV:USERDNSDOMAIN.Trim(
+($Encoded.Length
+($EndPoint
+($EndTime
+($EndTime.ToUniversalTime(
+($Enforced -eq 2
+($Entry in $Domain
+($Entry in $InputObject
+($Entry in $Server
+($Entry.$PropertyName
+($EntryPoint
+($Env:USERDNSDOMAIN -or (Get-WmiObject Win32_ComputerSystem
+($Etype
+($Etype -eq 17 -or $Etype -eq 18
+($Event.Id
+($ExSrv
+($ExSrvBuild -and $ExSrvBuild -ne ''
+($ExcludedShares -NotContains $ShareName
+($ExplicitLayout
+($ExtensionEntry in $Extension
+($Field in $Fields
+($Field in $StructFields.Keys
+($File
+($File in $Files
+($File in $XMLFiles
+($FileServers
+($FileServers -isnot [System.Array]
+($Filecount -eq '1' 
+($Filter
+($Filter -and $Filter -ne ''
+($Filter -notmatch $_.ObjectSID
+($Filter -notmatch $_.SecurityIdentifier
+($Filter -or $TargetUsers
+($Filter[$_] -eq 'and'
+($Filters
+($Filters.Value
+($FlagsCustomAttribute
+($Forest.Domains
+($ForestContext
+($ForestObject
+($FoundDomain
+($FoundForest
+($FoundLogoff
+($FreshEXEs
+($Function in (Get-ChildItem Function:
+($GPO in $GPOResults
+($GPO.cn
+($GPO.distinguishedname
+($GPODN.IndexOf('DC='
+($GPOGroup.GroupMembers
+($GPOgroup.GroupSID -match $TargetLocalSID
+($GUID in $GUIDs
+($GUIDs
+($GUIDs -and !($GUIDs -eq 'ExtendedRight'
+($GUIDs -eq 'ExtendedRight'
+($GUIDs -eq 'GenericWrite'
+($GUIDs -eq 'WriteProperty'
+($GUIDs -eq 'WriteProperty' 
+($Group
+($GroupContext
+($GroupDistinguishedName.IndexOf('DC='
+($GroupDomain -ne $MemberDomain
+($GroupDomain -ne $UserDomain
+($GroupFilter
+($GroupFoundDN
+($GroupFoundDN.IndexOf('DC='
+($GroupManager.samaccounttype -eq 0x10000000
+($GroupManager.samaccounttype -eq 0x30000000
+($GroupName -and ($GroupName.Trim(
+($GroupName.Trim(
+($GroupObject.objectsid.LastIndexOf('-'
+($GroupPropertyValue
+($GroupSID -and ($GroupSID.Trim(
+($GroupScopeValue
+($GroupSearcher
+($GroupSearcher.filter
+($GroupSid -notmatch '^S-1-5-32-.*'
+($Groupname -match 'Administrators'
+($Groupname -match 'Guests'
+($Groupname -match 'Remote Desktop'
+($Groups.Length -gt 0
+($Guid in $GuidFilter
+($GuidFilter -contains $_.ActiveDirectoryRights
+($Handle
+($Handle -ne 0
+($Hash
+($Identity
+($Identity -and $SDDLString
+($Identity -match '.+\\.+'
+($Identity.EndsWith('$'
+($IdentityFilter -and ($IdentityFilter.Trim(
+($IdentityInstance -imatch '^[0-9A-F]{8}-([0-9A-F]{4}-
+($IdentityInstance -match 'LDAP://|^CN=.*'
+($IdentityInstance -match '^(CN|OU|DC
+($IdentityInstance -match '^CN='
+($IdentityInstance -match '^CN=.*'
+($IdentityInstance -match '^OU=.*'
+($IdentityInstance -match '^S-1-'
+($IdentityInstance -match '^S-1-.*'
+($IdentityInstance -match '{.*}'
+($IdentityInstance.Contains('.'
+($IdentityInstance.Contains('\'
+($IdentityInstance.IndexOf('DC='
+($IdentityParts.length -gt 1
+($IdentityReferenceDN
+($IdentityReferenceDN.IndexOf('DC='
+($Include
+($Include -notmatch '<'
+($Include -notmatch '>'
+($IncludeACL
+($Index
+($Inf -and ($Inf.psbase.Keys -contains 'Group Membership'
+($Info.lgrmi2_sidusage -eq 'SidTypeGroup'
+($Info.pDomainName
+($Info.pDomainName -eq ''
+($Info.pHostName
+($Info.pUserName
+($InheritanceDisabled
+($InvokeadPEAS_LogonToken
+($IsGroup
+($Item in $AvoidHex
+($Job in $Jobs
+($Key in $EnumElements.Keys
+($Key in $Keys
+($Key in $TypeHash.Keys
+($LDAPFilter
+($LastAccessTime
+($LastAccessTime -and ($_.LastAccessTime -lt $LastAccessTime
+($LastAttribute -notmatch $Item
+($LastWriteTime
+($LdapFilter -and $LdapFilter -ne ''
+($LengthBytes
+($LocalGroup -match 'Admin'
+($LocalGroup -match 'S-1-5'
+($LocalGroup.InvokeGet('Description'
+($LocalGroup.InvokeGet('Name'
+($LocalUser.Description
+($LocalUser.SchemaClassName -like 'group'
+($Logo -eq $True
+($LogoffTime -and $LogoffTime -ne $Now
+($LogoffTime -eq $Now
+($LogoffTime.AddMinutes(-$LogoffTime.Minute
+($LogonHoursArray.Count -ne 21
+($LogonTime.Day + $i
+($LogonToken
+($LogonTokenHandle
+($M in [PowerShell].GetMethods(
+($MachineSid
+($MarshalAs
+($MarshalAs[1]
+($MaxEvents
+($MaximumAge -gt 0
+($MaximumAge -lt 1
+($Member
+($Member -and ($Member.Trim(
+($Member -match '.+\\.+'
+($Member -notmatch '^S-1-.*'
+($Member -split '\\'
+($Member in $Members
+($Member in $MembershipValue
+($Member in $_.GroupMembers
+($Member.MemberObjectClass -ne 'group'
+($MemberDN -match 'ForeignSecurityPrincipals|S-1-5-21'
+($MemberDN.IndexOf('DC='
+($MemberIsDomain
+($MemberSID
+($MemberSimpleName
+($Members
+($Members -isnot [System.Array]
+($Members.count -eq 0
+($Membership -and $Membership.Key -and ($Membership.Key -match '^\*'
+($Membership in $Inf.'Group Membership'.GetEnumerator(
+($Membership in $Memberships.GetEnumerator(
+($Membership in $_.memberof
+($Membership.SubString($Index
+($MembershipValue
+($MembershipValue -isnot [System.Array]
+($Method -eq 'API'
+($Mod
+($ModifyRequest
+($Module
+($Module -is [Reflection.Assembly]
+($Module.GetType($FullName
+($ModuleName
+($NETRESOURCEW
+($Namespace
+($NativeCallingConvention
+($NewGUID -eq $null
+($NewGUID -ne $null
+($NewGUID.Guid
+($Next
+($Next.IndexOf('('
+($Next.ToLower(
+($Now.AddSeconds(-$(Get-Random -Maximum 10
+($OUComputers
+($OUComputers -isnot [System.Array]
+($OUIndex
+($OUIndex -gt 0
+($OUName
+($OUSearcher
+($OUSearcher.filter
+($Object
+($Object in $ObjectName
+($Object in $Objects
+($Object in $RawObject
+($Object in $TargetObject
+($Object.'AllowedToActOnBehalfOfOtherIdentity'
+($Object.'ms-MCS-AdmPwdExpirationTime'
+($Object.'ms-Mcs-AdmPwd'
+($Object.'ms-mcs-AdmPwdExpirationTime'
+($Object.'msDS-AllowedToDelegateTo'
+($Object.'msLAPS-EncryptedPassword'
+($Object.'msLAPS-Password'
+($Object.'msLAPS-PasswordExpirationTime'
+($Object.Contains('\'
+($Object.ExchangeBuildNumber
+($Object.ExchangeVersion
+($Object.GroupName
+($Object.MemberDomain
+($Object.OwnerName
+($Object.OwnerSID
+($Object.OwnerSID.Value
+($Object.PrincipalsAllowedToRetrieveManagedPassword
+($Object.Properties.objectclass -match 'computer'
+($Object.Properties.objectclass -match 'group'
+($Object.Properties.objectclass -match 'user'
+($Object.Properties.objectsid -and $Object.Properties.objectsid[0]
+($Object.Properties.samaccountname
+($Object.RunningOnServer
+($Object.UnixUserPassword
+($Object.UsedForAzureAD
+($Object.UserPassword
+($Object.accountexpires
+($Object.admincount
+($Object.description
+($Object.distinguishedName
+($Object.extensiondata
+($Object.extensiondata -and $Object.extensiondata -ne ''
+($Object.info
+($Object.lastLogonTimestamp
+($Object.memberOf
+($Object.msSFU30Password
+($Object.objectSid
+($Object.objectclass -contains 'group'
+($Object.objectsid -and $Object.objectsid[0]
+($Object.operatingsystem
+($Object.pwdLastSet
+($Object.sAMAccountName
+($Object.samaccountname
+($Object.samaccounttype -eq 'MACHINE_ACCOUNT'
+($Object.samaccounttype -eq 'USER_OBJECT'
+($Object.samaccounttype[0] -as $SamAccountTypeEnum
+($Object.sidhistory
+($Object.unicodePwd
+($Object.userAccountControl
+($Object.userPrincipalName
+($ObjectCSV.Length-1
+($ObjectDN
+($ObjectDN.IndexOf('DC='
+($ObjectOU in $ObjectOUs
+($ObjectOUs
+($ObjectProperty in $ObjectProperties
+($ObjectSearcher.filter
+($ObjectType -eq $null -and $InheritanceType -eq [String]::Empty -and $InheritedObjectType -eq $null
+($ObjectType -eq $null -and $InheritanceType -ne [String]::Empty -and $InheritedObjectType -eq $null
+($ObjectType -eq $null -and $InheritanceType -ne [String]::Empty -and $InheritedObjectType -ne $null
+($ObjectType -ne $null -and $InheritanceType -eq [String]::Empty -and $InheritedObjectType -eq $null
+($ObjectType -ne $null -and $InheritanceType -ne [String]::Empty -and $InheritedObjectType -eq $null
+($ObjectType -ne $null -and $InheritanceType -ne [String]::Empty -and $InheritedObjectType -ne $null
+($Object_ADCS -and $Object_ADCS -ne ''
+($Object_ADCS in $adPEAS_CAEnterpriseCA
+($Object_ADCS.dnshostname
+($Object_ASRep in $adPEAS_UsersASREP
+($Object_ASRep.accountexpires
+($Object_ASRep.distinguishedName
+($Object_ASRep.pwdLastSet
+($Object_ASRep.sAMAccountName
+($Object_ASRep.samaccountname
+($Object_ASRep.useraccountcontrol
+($Object_ASRepTGT
+($Object_CA in $adPEAS_CAEnterpriseCA
+($Object_CA.certificatetemplates
+($Object_CA.cn
+($Object_CA.distinguishedName
+($Object_CA.dnshostname
+($Object_CA.name
+($Object_CA.whencreated
+($Object_CompConstDeleg in $adPEAS_CompConstrDelegate
+($Object_CompConstDeleg.sAMAccountName
+($Object_CompConstDeleg.samaccountname
+($Object_CompRBCD in $adPEAS_CompRBCDelegate
+($Object_CompRBCD.sAMAccountName
+($Object_CompRBCD.samaccountname
+($Object_CompRBCDIdentityName -and $Object_CompRBCDIdentityName -ne ''
+($Object_CompUnDeleg in $adPEAS_CompUnconstrDelegate
+($Object_CompUnDeleg.sAMAccountName
+($Object_CompUnDeleg.samaccountname
+($Object_DC -and $Object_DCs -ne ''
+($Object_DC in $adPEAS_ListDC
+($Object_DCInfo.samaccountname
+($Object_DomainDN
+($Object_DomainDN -eq $adPEAS_Dom
+($Object_DomainDN -eq $adPEAS_RootDom
+($Object_ExData in $adPEAS_ExtData
+($Object_ExData.distinguishedName
+($Object_ExData.sAMAccountName
+($Object_ExData.samaccountname
+($Object_ExData.useraccountcontrol
+($Object_ExMember in $adPEAS_ExServerGroup
+($Object_ExMember.MemberObjectClass
+($Object_GPO in $adPEAS_GPO
+($Object_GPO.GPODisplayName
+($Object_GPO.GPOName
+($Object_GPO.GroupMembers
+($Object_GPO.GroupMembers -ne '' -and $Object_GPO.GroupName -ne ''
+($Object_GPO.GroupName
+($Object_GPO.GroupSID
+($Object_GPP in $adPEAS_Cpassword
+($Object_GPP.Domain
+($Object_GPP.File
+($Object_GPP.Password
+($Object_GPP.username
+($Object_Kerberoast in $adPEAS_UsersROAST
+($Object_Kerberoast.'useraccountcontrol' -like '*ACCOUNTDISABLE*'
+($Object_Kerberoast.distinguishedName
+($Object_Kerberoast.hash
+($Object_Kerberoast.sAMAccountName
+($Object_Kerberoast.samaccountname
+($Object_MSOL in $adPEAS_UserMSOL
+($Object_MSOL.description
+($Object_MSOL.description | select-string -pattern 'running on computer (\S*
+($Object_MSOL.distinguishedName
+($Object_MSOL.sAMAccountName
+($Object_MSOL.samaccountname
+($Object_MSOL.useraccountcontrol
+($Object_MSOLDetails[1]
+($Object_MSOLDetails[2]
+($Object_Member in $adPEAS_GroupMembers
+($Object_Member.MemberDistinguishedName
+($Object_Member.MemberName
+($Object_Member.MemberObjectClass
+($Object_MemberDN.substring($Object_MemberDN.indexOf('DC='
+($Object_MemberDetail.useraccountcontrol
+($Object_NetLogonFile -and $Object_NetLogonFile -ne ''
+($Object_NetLogonFile in $adPEAS_NetlogonFiles
+($Object_NetLogonFile.FilePath
+($Object_NetLogonFile.FilePath -and $Object_NetLogonFile.FilePath -ne ''
+($Object_NetLogonFile.FoundValue
+($Object_NetLogonFile.Password
+($Object_NetLogonFile.Password -and $Object_NetLogonFile.Password -ne ''
+($Object_NetLogonFile.Username
+($Object_OU in $adPEAS_OU
+($Object_OU.distinguishedname
+($Object_PWNotExpire in $adPEAS_UserPwNotExpire
+($Object_PWNotExpire.distinguishedName
+($Object_PWNotExpire.sAMAccountName
+($Object_PWNotExpire.samaccountname
+($Object_PWNotExpire.useraccountcontrol
+($Object_PwNotReq in $adPEAS_UserNoPw
+($Object_PwNotReq.distinguishedName
+($Object_PwNotReq.sAMAccountName
+($Object_PwNotReq.samaccountname
+($Object_PwNotReq.useraccountcontrol
+($Object_Template in $($Object_CA.certificatetemplates
+($Object_Template_Vuln -eq $true
+($Object_Template_VulnFlag
+($Object_UserConstDeleg in $adPEAS_UserConstrDelegate
+($Object_UserConstDeleg.'useraccountcontrol'
+($Object_UserConstDeleg.distinguishedName
+($Object_UserConstDeleg.sAMAccountName
+($Object_UserConstDeleg.samaccountname
+($Object_UserRBCD in $adPEAS_UserRBCDelegate
+($Object_UserRBCD.distinguishedName
+($Object_UserRBCD.sAMAccountName
+($Object_UserRBCD.samaccountname
+($Object_UserRBCD.useraccountcontrol
+($Object_UserRBCDIdentityName -and $Object_UserRBCDIdentityName -ne ''
+($Object_UxPw in $adPEAS_UnixUserPassword
+($Object_UxPw.distinguishedName
+($Object_UxPw.sAMAccountName
+($Object_UxPw.samaccountname
+($Object_UxPw.useraccountcontrol
+($Object_Var in $adPEAS_DomainController
+($Object_Var in $adPEAS_DomainSubnets
+($Object_Var in $adPEAS_DomainTrust
+($Object_Var in $adPEAS_ForestTrust
+($Object_Var.Flags
+($Object_Var.IPAddress
+($Object_Var.Name
+($Object_Var.Roles
+($Object_Var.SiteName
+($Object_Var.TargetName
+($Object_Var.TargetSid
+($Object_Var.TopLevelNames
+($Object_Var.TrustAttributes
+($Object_Var.TrustAttributes -ne 0
+($Object_Var.TrustDirection
+($Object_Var.TrustedDomainInformation
+($Object_Var.name
+($Object_VarGroup -match $adPEAS_DomSID -or $Object_VarGroup -match 'S-1-5-32'
+($Object_VarGroup -match $adPEAS_RootDomSID
+($Object_VarGroup in $adPEAS_Groups
+($Object_Var_Template.CertificateNameFlag -and $Object_Var_Template.CertificateNameFlag -like '*ENROLLEE_SUPPLIES_SUBJECT*' -and $Object_Var_Template.CertificateNameFlag -notcontains 'SUBJECT_REQUIRE_DIRECTORY_PATH'
+($Object_Var_Template.PrivateKeyFlag -and $Object_Var_Template.PrivateKeyFlag -eq 'CT_FLAG_EXPORTABLE_KEY'
+($Object_Var_Template.name
+($Object_ca
+($Object_ca.sAMAccountName
+($Object_gMSA in $adPEAS_gMSA
+($Object_gMSA.distinguishedName
+($Object_gMSA.sAMAccountName
+($Object_gMSA.samaccountname
+($Object_gMSA.useraccountcontrol
+($Object_gMSAMember in $Object_gMSAMembers
+($Object_gMSAMemberArray | Get-DomainObject @SearcherArguments
+($Object_gMSAMemberType -eq 'GROUP_OBJECT' -or $Object_gMSAMemberType -eq 'ALIAS_OBJECT'
+($Object_lapspw in $adPEAS_CompLAPS
+($Object_lapspw in $adPEAS_CompLAPS2
+($Object_lapspw.sAMAccountName
+($Object_lapspw.samaccountname
+($Object_lapspw.serviceprincipalname
+($Object_screen.CertificateNameFlag
+($Object_screen.DateOfCreation
+($Object_screen.EnrollmentAllowedFor
+($Object_screen.EnrollmentFlag
+($Object_screen.ExtendedKeyUsage
+($Object_screen.ExtendedKeyUsage -and $Object_screen.ExtendedKeyUsage -like '*Client Authentication*'
+($Object_screen.IdentityACL
+($Object_screen.PrivateKeyExportable
+($Object_screen.TemplateDistinguishedname
+($Object_screen.TemplateName
+($Object_single_Identity in $($Object_screen.IdentityACL
+($Object_single_Identity.Name
+($Object_single_Identity.Value
+($OfficeDocs
+($Offset
+($Offset -gt 0
+($OldProperties
+($Operator -eq 'or'
+($Out.dnsrecord -is [System.DirectoryServices.ResultPropertyValueCollection]
+($OutBlock
+($OutFilter
+($OutObject.PrincipalType -eq 'GROUP_OBJECT' -or $OutObject.PrincipalType -eq 'ALIAS_OBJECT'
+($OutValueHash.keys -contains $Index
+($OutValueHash.keys -contains $c
+($OutValueHash[$c]
+($OutputFormat -match 'John'
+($OutputPath
+($Outputfile
+($OwnerIdentityReference
+($OwnerSid
+($PSBoundParameters -and ($PSBoundParameters.Count -ne 0
+($PSBoundParameters.Keys
+($PSBoundParameters.item($_
+($PSBoundParameters['API']
+($PSBoundParameters['Account']
+($PSBoundParameters['AdminCount']
+($PSBoundParameters['AllowDelegation']
+($PSBoundParameters['Append']
+($PSBoundParameters['AutoEnrollment']
+($PSBoundParameters['CanReadLAPS']
+($PSBoundParameters['CertPassword']
+($PSBoundParameters['Certificate']
+($PSBoundParameters['Check']
+($PSBoundParameters['Check'] -and $Check -eq $SDDLObject.ObjectSDDL
+($PSBoundParameters['Check'] -and $subkeys.Length -gt 0
+($PSBoundParameters['CheckWriteAccess'] -and (-not (Test-Write -Path $_.FullName
+($PSBoundParameters['Class']
+($PSBoundParameters['ClassName']
+($PSBoundParameters['Clear']
+($PSBoundParameters['ComputerDomain']
+($PSBoundParameters['ComputerIdentity']
+($PSBoundParameters['ComputerIdentity'] -or $PSBoundParameters['UserIdentity']
+($PSBoundParameters['ComputerLDAPFilter']
+($PSBoundParameters['ComputerName']
+($PSBoundParameters['ComputerOperatingSystem']
+($PSBoundParameters['ComputerSearchBase']
+($PSBoundParameters['ComputerServicePack']
+($PSBoundParameters['ComputerSiteName']
+($PSBoundParameters['Computers']
+($PSBoundParameters['CreationTime'] -and ($_.CreationTime -lt $CreationTime
+($PSBoundParameters['Credential']
+($PSBoundParameters['Credential'] -and -not $PSBoundParameters['Certificate']
+($PSBoundParameters['Credential'] -or $($PSBoundParameters['Username'] -and $PSBoundParameters['Password']
+($PSBoundParameters['Delay'] -or $PSBoundParameters['StopOnSuccess']
+($PSBoundParameters['DelegateFrom']
+($PSBoundParameters['Description']
+($PSBoundParameters['Disabled']
+($PSBoundParameters['DisallowDelegation']
+($PSBoundParameters['DisplayName']
+($PSBoundParameters['Domain']
+($PSBoundParameters['Domain'] -or $Domain
+($PSBoundParameters['Domain'] -or ($Identity -match '.+\\.+'
+($PSBoundParameters['Enabled']
+($PSBoundParameters['EnrolleeSuppliesSubject']
+($PSBoundParameters['EntryPoint']
+($PSBoundParameters['ExcludeDCs']
+($PSBoundParameters['ExcludeFolders'] -and ($_.PSIsContainer
+($PSBoundParameters['Extension']
+($PSBoundParameters['FindOne']
+($PSBoundParameters['Forest']
+($PSBoundParameters['FreshEXEs']
+($PSBoundParameters['GPLink']
+($PSBoundParameters['GroupProperty']
+($PSBoundParameters['GroupScope']
+($PSBoundParameters['Groups']
+($PSBoundParameters['Groups'] -and !($Check -contains $ObjectSID
+($PSBoundParameters['HasLAPS']
+($PSBoundParameters['Identity']
+($PSBoundParameters['InputFile']
+($PSBoundParameters['Issuer']
+($PSBoundParameters['LDAP'] -and $PSBoundParameters['Server']
+($PSBoundParameters['LDAPFilter']
+($PSBoundParameters['LastLogon']
+($PSBoundParameters['LastWriteTime'] -and ($_.LastWriteTime -lt $LastWriteTime
+($PSBoundParameters['Locked']
+($PSBoundParameters['Logo']
+($PSBoundParameters['MachineType']
+($PSBoundParameters['MemberIdentity']
+($PSBoundParameters['NET']
+($PSBoundParameters['Name']
+($PSBoundParameters['NoColor']
+($PSBoundParameters['NoLAPS']
+($PSBoundParameters['NoPassExpiry']
+($PSBoundParameters['NoSecurityExtension']
+($PSBoundParameters['OPSEC']
+($PSBoundParameters['Obfuscate']
+($PSBoundParameters['OfficeDocs']
+($PSBoundParameters['OperatingSystem']
+($PSBoundParameters['OutFile']
+($PSBoundParameters['OutputObject']
+($PSBoundParameters['Outputfile']
+($PSBoundParameters['Owner']
+($PSBoundParameters['PassExpired']
+($PSBoundParameters['PassLastSet']
+($PSBoundParameters['PassNotExpire']
+($PSBoundParameters['PassNotExpired']
+($PSBoundParameters['PassNotExpired'] -and (($Prop.useraccountcontrol[0] -band 65536
+($PSBoundParameters['PassNotRequired']
+($PSBoundParameters['Path']
+($PSBoundParameters['Pattern']
+($PSBoundParameters['Ping']
+($PSBoundParameters['PreauthNotRequired']
+($PSBoundParameters['PrincipalDomain']
+($PSBoundParameters['Printers']
+($PSBoundParameters['ProcessName']
+($PSBoundParameters['Properties']
+($PSBoundParameters['PropertyName']
+($PSBoundParameters['RBCD']
+($PSBoundParameters['Raw']
+($PSBoundParameters['Recurse'] -and $MemberDN -and ($MemberObjectClass -match 'group'
+($PSBoundParameters['RecurseUsingMatchingRule']
+($PSBoundParameters['ReferenceObject']
+($PSBoundParameters['ReferencePropertySet']
+($PSBoundParameters['ResolveGUIDs']
+($PSBoundParameters['ResolveMembersToSIDs']
+($PSBoundParameters['ResultPageSize']
+($PSBoundParameters['RightsFilter']
+($PSBoundParameters['SPN']
+($PSBoundParameters['SSL']
+($PSBoundParameters['SSL'] -or $PSBoundParameters['Certificate']
+($PSBoundParameters['SSL'] -or $PSBoundParameters['Certificate'] -or $PSBoundParameters['RootDSE']
+($PSBoundParameters['Sacl']
+($PSBoundParameters['Scope']
+($PSBoundParameters['SearchBase']
+($PSBoundParameters['SearchBase'] -and ($SearchBase -Match '^GC://'
+($PSBoundParameters['SearchBasePrefix']
+($PSBoundParameters['SearchScope']
+($PSBoundParameters['SecurityMasks']
+($PSBoundParameters['Server']
+($PSBoundParameters['ServerTimeLimit']
+($PSBoundParameters['ServicePack']
+($PSBoundParameters['Set']
+($PSBoundParameters['ShowAll']
+($PSBoundParameters['SiteName']
+($PSBoundParameters['Stealth']
+($PSBoundParameters['Subject']
+($PSBoundParameters['SubjectAltRequireDns']
+($PSBoundParameters['TLS']
+($PSBoundParameters['TargetDomain']
+($PSBoundParameters['TargetLDAPFilter']
+($PSBoundParameters['TargetSearchBase']
+($PSBoundParameters['TokenHandle']
+($PSBoundParameters['Tombstone']
+($PSBoundParameters['TrustedToAuth']
+($PSBoundParameters['Type'] -eq 'Certificate'
+($PSBoundParameters['Unconstrained']
+($PSBoundParameters['Unlocked']
+($PSBoundParameters['User']
+($PSBoundParameters['UserAdminCount']
+($PSBoundParameters['UserAllowDelegation']
+($PSBoundParameters['UserDomain']
+($PSBoundParameters['UserGroupIdentity'] -or (-not $PSBoundParameters['Filter']
+($PSBoundParameters['UserIdentity']
+($PSBoundParameters['UserIdentity'] -or $PSBoundParameters['UserLDAPFilter'] -or $PSBoundParameters['UserSearchBase'] -or $PSBoundParameters['UserAdminCount']
+($PSBoundParameters['UserIdentity'] -or $PSBoundParameters['UserLDAPFilter'] -or $PSBoundParameters['UserSearchBase'] -or $PSBoundParameters['UserAdminCount'] -or $PSBoundParameters['UserAllowDelegation']
+($PSBoundParameters['UserLDAPFilter']
+($PSBoundParameters['UserSearchBase']
+($PSBoundParameters['Users']
+($PSBoundParameters['Users'] -or $PSBoundParameters['Computers'] -or $PSBoundParameters['Groups']
+($PSBoundParameters['Value']
+($PSBoundParameters['XOR']
+($PSCmdlet.ParameterSetName -eq 'AuditRuleType'
+($PageRequestControl
+($PageResponseControl.Cookie.Length -eq 0
+($Param in $ScriptParameters.GetEnumerator(
+($Parameter
+($Parameter in $BoundKeys
+($Parameter in $ParameterTypes
+($Parameter in $UnboundParameters
+($Parameter.IsByRef
+($ParameterAlias
+($ParameterAttribute
+($ParameterOptions
+($ParameterTypes
+($Parts.length-2
+($Parts[$i]
+($Parts[$i].IndexOf('
+($Parts[$i].IndexOf('('
+($Parts[0].IndexOf('('
+($Parts[0].ToLower(
+($PasswordExpirationTime
+($Path
+($Path -and ($Path.split('\\'
+($PatternEntry in $Pattern
+($Permissions | Where-Object {$_}
+($Policy -eq 'All'
+($Policy -eq 'DC'
+($Policy -eq 'Domain'
+($Port
+($PortCheckResult.RemoteAddress
+($PortCheckResult.TcpTestSucceeded
+($Principal
+($Principal.Count -gt 1
+($Principal.samaccounttype[0] -as $SamAccountTypeEnum
+($PrincipalIdentity -notmatch '^S-1-.*'
+($PrincipalObject in $Principals
+($PrincipalObject.distinguishedname
+($Privs.$_.Contains('1131f6aa-9c07-11d1-f79f-00c04fc2dcd2'
+($Process in $Processes
+($ProcessName
+($ProcessName -Contains $Process.ProcessName
+($Properties
+($Properties.objectclass -match 'computer'
+($Properties.objectclass -match 'group'
+($Properties.objectclass -match 'user'
+($Properties.objectsid
+($Properties.samaccountname
+($Properties[$_].count -eq 1
+($Properties[$_][0]
+($Properties[$_][0] -eq 0 -or $Properties[$_][0] -gt [DateTime]::MaxValue.Ticks
+($Properties[$_][0] -gt [DateTime]::MaxValue.Ticks
+($Properties[$_][0] -is [System.MarshalByRefObject]
+($Properties[11].Value -match 'taskhost\.exe'
+($PropertyName
+($Props.keys -contains 'altsecurityidentities'
+($Props.trustdirection
+($Props.trusttype
+($ProxyServer -or $AutoConfigUrl
+($PsCmdlet.ParameterSetName -eq 'API'
+($PsCmdlet.ParameterSetName -eq 'LDAP'
+($PsCmdlet.ParameterSetName -eq 'NET'
+($PsCmdlet.ParameterSetName -ne 'API'
+($PsCmdlet.ParameterSetName -ne 'NET'
+($PtrInfo
+($PwdLastSet -eq 0
+($PwdLastSet -gt $ExpireTime
+($PwdLastSet -le $ExpireTime
+($RBCDSearcher
+($RBCDSearcher.filter
+($RDataType -eq 1
+($RDataType -eq 12
+($RDataType -eq 13
+($RDataType -eq 15
+($RDataType -eq 16
+($RDataType -eq 2
+($RDataType -eq 28
+($RDataType -eq 33
+($RDataType -eq 5
+($RDataType -eq 6
+($RangedProperty
+($RawObject.Properties.samaccountname
+($Record
+($Recurse
+($Recurse -and $UseMatchingRule
+($ReferenceObjectClass -eq 'Computer'
+($ReferenceObjectClass -eq 'Group'
+($ReferenceObjectClass -eq 'User'
+($ReferenceObjectProperties -NotContains $ObjectProperty
+($RemotePath -and ($RemotePath -ne ''
+($Request
+($ResolveFlags
+($ResolveSID
+($ResolvedSIDs[$_.SecurityIdentifier.Value]
+($Response.Entries.Count -gt 0
+($ResponseBuffer
+($Result
+($Result -and $StopOnSuccess
+($Result -eq 0
+($Result in $Results
+($Result2 -eq 0
+($Results
+($Results -and -not $PSBoundParameters['SSL'] -and -not $PSBoundParameters['Certificate']
+($Rights
+($RightsFilter
+($RightsGUID
+($SD.BinaryLength
+($SDBytes
+($SDDLtoCheck.ObjectSDDL -eq $SDDLObject.ObjectSDDL
+($SDFlagsControl
+($Script:adPEAS_OutputColor
+($Script:adPEAS_OutputColor -eq $True
+($Script:adPEAS_Outputfile
+($ScriptBlock
+($ScriptParameters
+($SearchBase
+($SearchBase -Match '^GC://'
+($SearchBase -match '^LDAP://'
+($SearchResults -and $SearchResults -ne ''
+($Searcher
+($Searcher.filter
+($SearcherArguments['Properties']
+($SecurityMasks
+($SegmentLength-- -gt 0
+($Segments-- -gt 0
+($Server
+($Server in $ServerKeys
+($Session in $Sessions
+($SetLastError
+($Share in $SearchShares
+($Share in $Shares
+($Share.name -and $CheckShareAccess
+($ShareName.Trim(
+($ShareName.trim(
+($ShowAll
+($SiteSearcher
+($SiteSearcher.filter
+($Size
+($Skip
+($SourceIP[2] -ne 0
+($SourceNameIndex
+($StaleKeys
+($StartTime
+($StartTime.ToUniversalTime(
+($StealthSource -match 'DC|All'
+($StealthSource -match 'DFS|All'
+($StealthSource -match 'File|All'
+($StructFields.Count
+($SubnetSearcher
+($SubnetSearcher.filter
+($T in $ProcessName
+($TTLRaw
+($Tag -eq 11
+($Tag -eq 30
+($Target
+($Target in $Targets
+($TargetClass
+($TargetClass in $ClassName
+($TargetComputer in $ComputerName
+($TargetComputer in $TargetComputers
+($TargetComputer.StartsWith('\\'
+($TargetComputerName
+($TargetComputerName in $ComputerName
+($TargetComputers -and ($TargetComputers -isnot [System.Array]
+($TargetComputers.Length
+($TargetComputers.Length -eq 0
+($TargetComputers.count
+($TargetDC
+($TargetDCIP
+($TargetDomain
+($TargetDomain -and ($TargetDomain.Trim(
+($TargetDomain in $Domain
+($TargetDomainName
+($TargetForest
+($TargetIdentity in $Identity
+($TargetObject in $Targets
+($TargetObject.Properties.distinguishedname
+($TargetPath in $Path
+($TargetPath in $Paths
+($TargetProcessName
+($TargetProcessName -isnot [System.Array]
+($TargetSIDs -Contains $GPOgroup.GroupSID
+($TargetSIDs -Contains $_
+($TargetSIDs[0] -eq '*'
+($TargetSIDs[0] -ne '*'
+($TargetSid
+($TargetSid in $ObjectSid
+($TargetSid in $TargetObjectSIDs
+($TargetSid in $TargetSids
+($TargetUsers
+($TargetUsers -Contains $Process.User
+($TargetUsers -contains $UserName
+($TargetUsers.Length
+($TargetUsers.Length -eq 0
+($Temp -and ($Temp -ne ''
+($TempCred.GetNetworkCredential(
+($TempObject
+($TempObject.dwVersion / 2
+($TempObject.pszAttributeName -Match $PropertyFilter
+($TemplateACL in $Object_Var_TemplateACL
+($TemplateACL.ActiveDirectoryRights
+($TemplateACL.ActiveDirectoryRights -and $TemplateACL.ActiveDirectoryRights -like '*WriteDacl*' -or $TemplateACL.ActiveDirectoryRights -like '*WriteOwner*' -or $TemplateACL.ActiveDirectoryRights -like '*GenericAll*'
+($TemplateACL.ObjectAceType -and $TemplateACL.ObjectAceType -like '*Certificate-Enrollment*'
+($TemplateACL.identity
+($TemplateACL.identity -and $TemplateACL.identity -ne ''
+($Threads -ge $ComputerName.Length
+($Ticket
+($Ticket.ServicePrincipalName
+($TicketByteStream
+($TicketHexStream -match 'a382....3082....A0030201(?<EtypeLen>..
+($TokenHandle
+($Trust in $Trusts
+($Trust.SourceName -and $Trust.TargetName
+($Trust.TargetName
+($Trusts
+($Trusts -isnot [System.Array]
+($TypeFilter -and ($TypeFilter.Trim(
+($UACEnum
+($UACEnum::$UACField
+($UACEnum::$_
+($UACValue in $UACValues.GetEnumerator(
+($UncompressedFileBytes
+($Up
+($User
+($User in $LoggedOn
+($UserContext
+($UserDomain
+($UserName
+($UserName -notmatch $CurrentUser
+($UserName -notmatch '\$$'
+($UserName.Trim(
+($UserName.trim(
+($UserPassword
+($UserResult.Properties['homedirectory']
+($UserResult.Properties['profilepath']
+($UserResult.Properties['scriptpath']
+($UserSID in $UserSIDs
+($UserSPN -is [System.DirectoryServices.ResultPropertyValueCollection]
+($UserSearcher.filter
+($Value
+($Value.Length - 1
+($Value.Length -gt 1
+($Value[$Index]
+($Value[$Index] -ne '*'
+($Value[$c]
+($Values
+($Values -isnot [System.Array]
+($Var in $MyVars
+($VbeData -eq $true
+($Version -match 'all|1'
+($Version -match 'all|2'
+($VorbiddenVars -NotContains $Var.Name
+($XMLNode in $_.Properties['msds-replattributemetadata']
+($XMLNode in $_.Properties['msds-replvaluemetadata']
+($Xml.innerxml -match 'cpassword'
+($YearCheck -gt 1
+($ZoneName
+($_
+($_ -eq 'Operation'
+($_ -eq 'Operator'
+($_ -eq 'accountexpires'
+($_ -eq 'defaultsecuritydescriptor'
+($_ -eq 'flags'
+($_ -eq 'grouptype'
+($_ -eq 'instancetype'
+($_ -eq 'lockouttime'
+($_ -eq 'logonhours'
+($_ -eq 'mspki-certificate-name-flag'
+($_ -eq 'mspki-enrollment-flag'
+($_ -eq 'mspki-private-key-flag'
+($_ -eq 'ntsecuritydescriptor'
+($_ -eq 'samaccounttype'
+($_ -eq 'schemaflagsex'
+($_ -eq 'searchflags'
+($_ -eq 'securityidentifier'
+($_ -eq 'sidhistory'
+($_ -eq 'systemflags'
+($_ -eq 'trustattributes'
+($_ -eq 'trustdirection'
+($_ -eq 'trusttype'
+($_ -eq 'useraccountcontrol'
+($_ -is [Reflection.Assembly]
+($_ -match 'NOT_.*'
+($_ -match 'guid'
+($_ -ne ''
+($_ -ne 'Op'
+($_ -ne 'Operation'
+($_ -ne 'Operator'
+($_ -ne 'adspath'
+($_ -ne 'null'
+($_ -split '/'
+($_.AceQualifier -eq 'AccessAllowed' -and !($_.ObjectAceType
+($_.AceQualifier -eq 'AccessAllowed' -and (($_.ObjectAceType -and $GuidFilter -contains $_.ObjectAceType
+($_.AceQualifier -match 'Allow'
+($_.ActiveDirectoryRights -match $Guid
+($_.AddressFamily -eq 'InterNetwork'
+($_.Exception.InnerException.Message
+($_.FullName
+($_.GetType(
+($_.GroupMembers
+($_.IndexOf('DC='
+($_.InheritedObjectAceType
+($_.InheritedObjectAceType -and $GuidFilter -contains $_.InheritedObjectAceType
+($_.MemberObjectClass -eq 'computer'
+($_.MemberObjectClass -eq 'user'
+($_.MemberObjectClass -ne 'group' -and !($Check -contains $MemberSID
+($_.Name
+($_.Name -match 'ObjectType|InheritedObjectType|ObjectAceType|InheritedObjectAceType'
+($_.ObjectAceType
+($_.ObjectSID
+($_.SID -match $MachineSid
+($_.SID -match '.*-501'
+($_.SID -notmatch 'S-1-5-21'
+($_.SecurityIdentifier
+($_.SecurityIdentifier.Value 
+($_.TargetList
+($_.Value
+($_.Value -ne (Get-Variable -Name $_.Key -ValueOnly -Scope 0
+($_.Value.PSobject.Methods.Name -match '^Equals$'
+($_.accountName
+($_.cpassword
+($_.distinguishedname.SubString($UserIndex
+($_.filters
+($_.gplink
+($_.gpoptions -eq 1
+($_.name -match 'DefaultDomainName'
+($_.name -match 'DefaultPassword'
+($_.name -match 'DefaultUserName'
+($_.newName
+($_.runAs
+($_.sid
+($_.startswith('LDAP'
+($_.startswith('OU='
+($_.userName
+($_=*
+($a -eq 'logonhours'
+($a -eq 'ntsecuritydescriptor'
+($a -eq 'objectguid'
+($a -eq 'securityidentifier'
+($a -eq 'sidhistory'
+($a -eq 'usercertificate'
+($a -eq 'whenchanged' -or $a -eq 'whencreated' -or $a -eq 'dscorepropagationdata' -or $a -eq 'currenttime'
+($a in $Attributes.Keys | Sort-Object
+($a in $_.Attributes.Keys | Sort-Object
+($acl in $TemplatesACL
+($adPEAS_CAEnterpriseCA -and $adPEAS_CAEnterpriseCA -ne ''
+($adPEAS_DCSyncRights -and $adPEAS_DCSyncRights -ne ''
+($adPEAS_DomSID + '-512'
+($adPEAS_DomSID + '-517'
+($adPEAS_DomSID + '-520'
+($adPEAS_Domain -and $adPEAS_Domain -ne ''
+($adPEAS_Domain.Children
+($adPEAS_Domain.Children -ne ''
+($adPEAS_Domain.Forest
+($adPEAS_Domain.Name
+($adPEAS_Domain.Name -ne $(((get-domain @SearcherArguments
+($adPEAS_DomainController -and $adPEAS_DomainController -ne ''
+($adPEAS_DomainMode[$adPEAS_Domain.DomainModeLevel]
+($adPEAS_DomainPolicy -and $($adPEAS_DomainPolicy.KerberosPolicy
+($adPEAS_DomainPolicy -and $($adPEAS_DomainPolicy.SystemAccess
+($adPEAS_DomainRights -and $(($adPEAS_DomainRights.PrivilegeRights
+($adPEAS_DomainSubnets -and $adPEAS_DomainSubnets -ne ''
+($adPEAS_DomainTrust -and $adPEAS_DomainTrust -ne ''
+($adPEAS_ExServerGroup -and $adPEAS_ExServerGroup -ne ''
+($adPEAS_ForestTrust -and $adPEAS_ForestTrust -ne ''
+($adPEAS_GroupMembers -and $adPEAS_GroupMembers -ne ''
+($adPEAS_LAPSRights -and $adPEAS_LAPSRights -ne ''
+($adPEAS_NetLogonRights -and $adPEAS_NetLogonRights -ne ''
+($adPEAS_OutdatedOS in $adPEAS_Outdated
+($adPEAS_OutdatedOS.distinguishedName
+($adPEAS_OutdatedOS.operatingsystem
+($adPEAS_OutdatedOS.samaccountname
+($adPEAS_OutdatedOS.useraccountcontrol
+($adPEAS_RootDomSID + '-519'
+($adPEAS_krbtgt -and $($adPEAS_krbtgt.pwdlastset
+($adPEAS_krbtgt.pwdlastset
+($adPeas_ExchVer.ExchangeBuild
+($age
+($bin[$blob_name_start..$blob_name_end]
+($bit in $Hours.Keys
+($blob_data[$comment_start..$comment_end]
+($blob_data[$prefix_start..$prefix_end]
+($blob_data[$short_prefix_start..$short_prefix_end]
+($blob_name
+($byte -band $Hours[$bit]
+($byte in $LogonHours
+($c -in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.ToCharArray(
+($c -in 'abcdefghijklmnopqrstuvwxyz'.ToCharArray(
+($c in $InputString.ToCharArray(
+($c=0; $c -lt $Value.Length; $c++
+($c=0; $c -lt (Get-Random -Maximum $($Value.Length
+($character in $VbeData.ToCharArray(
+($comment_size -gt 0
+($counter -lt 24
+($cred in $SearchResults
+($dfs_targetlist_blob[$server_name_start..$server_name_end]
+($dfs_targetlist_blob[$share_name_start..$share_name_end]
+($entry in $response.Entries
+($file
+($filename -match 'Registry.xml' -and $xml.InnerXml -match 'AutoAdminLogon'
+($gpo in $listGPO
+($group in $Account.memberof
+($i -eq $Parts.Length - 1
+($i -eq $Threads
+($i -eq 0
+($i = 0; ($i -lt $DomainCount
+($i = 0; ($i -lt $EntriesRead
+($i = 0; ($i -lt $pCount
+($i = 1; $i -le $Threads; $i++
+($i in 128..255
+($i=0; $i -lt $Hour; $i++
+($i=0; $i -lt $SleepSeconds; $i++
+($i=0; $i -lt 3; $i++
+($i=0; $i -lt 7; $i++
+($i=1; $i -le $blob_element_count; $i++
+($i=1; $i -lt $Parts.Length; $i++
+($item -eq '1.3.6.1.4.1.311.10.3.1'
+($item -eq '1.3.6.1.4.1.311.10.3.10'
+($item -eq '1.3.6.1.4.1.311.10.3.11'
+($item -eq '1.3.6.1.4.1.311.10.3.12'
+($item -eq '1.3.6.1.4.1.311.10.3.13'
+($item -eq '1.3.6.1.4.1.311.10.3.4'
+($item -eq '1.3.6.1.4.1.311.10.3.4.1'
+($item -eq '1.3.6.1.4.1.311.10.3.9'
+($item -eq '1.3.6.1.4.1.311.20.2.1'
+($item -eq '1.3.6.1.4.1.311.20.2.2'
+($item -eq '1.3.6.1.4.1.311.21.5'
+($item -eq '1.3.6.1.4.1.311.54.1.2'
+($item -eq '1.3.6.1.4.1.311.80.1'
+($item -eq '1.3.6.1.5.2.3.5'
+($item -eq '1.3.6.1.5.5.7.3.1'
+($item -eq '1.3.6.1.5.5.7.3.2'
+($item -eq '1.3.6.1.5.5.7.3.21'
+($item -eq '1.3.6.1.5.5.7.3.22'
+($item -eq '1.3.6.1.5.5.7.3.3'
+($item -eq '1.3.6.1.5.5.7.3.4'
+($item -eq '1.3.6.1.5.5.7.3.5'
+($item -eq '1.3.6.1.5.5.7.3.6'
+($item -eq '1.3.6.1.5.5.7.3.7'
+($item -eq '1.3.6.1.5.5.7.3.8'
+($item -eq '1.3.6.1.5.5.7.3.9'
+($item in $OIDList
+($item in $timeAttr
+($j=1; $j -le $target_count; $j++
+($msLAPSObject.n
+($msLAPSObject.p
+($null
+($object.ExchangeBuildNumber
+($object.ExchangeVersion
+($object.GroupName
+($object.MemberDomain
+($object.description
+($object.distinguishedName
+($object.info
+($object.lastLogonTimestamp
+($object.objectSid
+($object.operatingsystem
+($object.pwdLastSet
+($object.sAMAccountName
+($object.sidhistory
+($object.userAccountControl
+($object.userPrincipalName
+($object_ExSrv.sAMAccountName
+($object_NetLogonRights in $adPEAS_NetLogonRights
+($object_NetLogonRights.IdentitySID | ConvertFrom-SID @SearcherArguments
+($object_NetLogonRights.Path
+($object_NetLogonRights.sAMAccountName
+($object_dcsync in $adPEAS_DCSyncRights
+($object_dcsync.objectSid
+($object_dcsync_identity.distinguishedName
+($object_dcsync_identity.sAMAccountName
+($object_dcsync_identity.useraccountcontrol
+($object_laps -ne 'S-1-5-18'
+($object_laps in $($adPEAS_LAPSRights.PrincipalSID.Value
+($object_laps_identity.distinguishedName
+($object_laps_identity.sAMAccountName
+($object_laps_identity.useraccountcontrol
+($object_rights in $(($adPEAS_DomainRights.PrivilegeRights
+($object_rights.substring(1
+($pkt -and $pkt[0]
+($ppBuffer
+($pwd
+($r in $Right
+($search in $SearchKeyWords
+($subkey in $subkeys
+($subkeys.Length -gt 0
+($target in $Identity
+($target_list[2..($target_list.Length-1
+($template in $Templates
+($template.pKIExtendedKeyUsage
+($template.pkiextendedkeyusage
+($template.pkiextendedkeyusage.gettype(
+($true
+($user_object.distinguishedName
+($user_object.objectSid
+($user_object.sAMAccountName
+($user_object.useraccountcontrol
+($v
+($v in $_.Attributes[$a].GetValues([byte[]]
+($xacl.ObjectType -eq 'bf9679c0-0de6-11d0-a285-00aa003049e2' -and $xacl.AceType -eq 'AccessAllowed' -and ($xacl.ObjectSid -eq $GroupManager.objectsid
+(&$AttrFilter
+(&$Filter
+(&(ObjectClass=msDS-GroupManagedServiceAccount
+(&(managedBy=*
+(&(netbiosname=*
+(&(objectCategory=group
+(&(objectCategory=groupPolicyContainer
+(&(objectCategory=organizationalUnit
+(&(objectCategory=site
+(&(objectCategory=subnet
+(&(objectClass=fTDfs
+(&(objectClass=msDFS-Linkv2
+(&(objectclass=pkicertificatetemplate
+(&(pwdlastset<=$DatePwdLastSet
+(&(samAccountType=805306368
+(&(samAccountType=805306369
+(&(|(objectsid=S-1-5-21-890171859-3433809279-3366196753-1108
+(&(|(samAccountName=Domain Admins
+(&(|(samAccountName=dfm.a
+(&(|(samAccountName=harmj0y
+(&(|(samAccountName=testuser
+(&(|(|(samAccountName=harmj0y
+(&(|(|(samAccountName=testuser
+('
+(' '
+('$Identity'
+('(userAccountControl:1.2.840.113556.1.4.803:=4194304
+('*'
+('*.exe'
+('*.xml'
+('.*/.*'
+('00299570-246d-11d0-a768-00aa006e0529'
+('1131f6ad-9c07-11d1-f79f-00c04fc2dcd2'
+(';'
+('<'
+('='
+('=' * (4 - $Mod
+('>'
+('@'
+('ADSPath'
+('AdminCount'
+('AdsPath'
+('AllowDelegation'
+('CallingConvention'
+('CharSet'
+('CheckAccess'
+('Class'
+('CollectionMethod'
+('ComputerName'
+('CurrentDomain'
+('DC='
+('DCOnly'
+('DNSHostName'
+('Default'
+('DirectoryServices.AccountManagement.ComputerPrincipal'
+('DirectoryServices.AccountManagement.GroupPrincipal'
+('DirectoryServices.AccountManagement.UserPrincipal'
+('Domain'
+('DomainController'
+('EntryPoint'
+('Filter'
+('Format'
+('FullName'
+('GUID'
+('GetTypeFromHandle'
+('Hashtable'
+('Identity'
+('LDAPFilter'
+('LPWStr'
+('LastLogin'
+('MM/dd/yyyy'
+('Members'
+('Name'
+('OU'
+('OU='
+('OperatingSystem'
+('Owner'
+('Password'
+('Path'
+('PowerView.ACL'
+('PowerView.ADObject'
+('PowerView.ADObject.Raw'
+('PowerView.ADObjectAttributeHistory'
+('PowerView.ADObjectLinkedAttributeHistory'
+('PowerView.AdminAccess'
+('PowerView.CachedRDPConnection'
+('PowerView.Computer'
+('PowerView.Computer.Raw'
+('PowerView.ComputerSite'
+('PowerView.DNSRecord'
+('PowerView.DNSZone'
+('PowerView.DomainGroupMemberDeleted'
+('PowerView.DomainTrust.API'
+('PowerView.DomainTrust.LDAP'
+('PowerView.DomainTrust.NET'
+('PowerView.ExplicitCredentialLogon'
+('PowerView.ExplicitCredentialLogonEvent'
+('PowerView.FileACL'
+('PowerView.ForeignGroupMember'
+('PowerView.ForeignUser'
+('PowerView.ForestTrust.NET'
+('PowerView.FoundFile'
+('PowerView.GGPOComputerLocalGroupMember'
+('PowerView.GPO'
+('PowerView.GPO.Raw'
+('PowerView.GPOComputerLocalGroupMember'
+('PowerView.GPOGroup'
+('PowerView.GPOLocalGroupMapping'
+('PowerView.GPOUserLocalGroupMapping'
+('PowerView.Group'
+('PowerView.GroupMember'
+('PowerView.GroupsXML'
+('PowerView.LastLoggedOnUser'
+('PowerView.LocalGroup.API'
+('PowerView.LocalGroup.WinNT'
+('PowerView.LocalGroupMember.API'
+('PowerView.LocalGroupMember.WinNT'
+('PowerView.LoggedOnUserInfo'
+('PowerView.LogonEvent'
+('PowerView.LogonHours'
+('PowerView.ManagedSecurityGroup'
+('PowerView.OU'
+('PowerView.PropertyOutlier'
+('PowerView.ProxySettings'
+('PowerView.RDPSessionInfo'
+('PowerView.RegLoggedOnUser'
+('PowerView.RegMountedDrive'
+('PowerView.SPNTicket'
+('PowerView.SessionInfo'
+('PowerView.ShareInfo'
+('PowerView.Site'
+('PowerView.Subnet'
+('PowerView.User'
+('PowerView.User.Raw'
+('PowerView.UserLocation'
+('PowerView.UserProcess'
+('Process' for advanced functions
+('Properties'
+('Raw'
+('Replace'
+('ReturnOne'
+('Rights'
+('SID'
+('Scope'
+('ServicePack'
+('ServicePrincipalName'
+('SetLastError'
+('Share'
+('SiteName'
+('String'
+('System.AppDomain'
+('System.Collections.Specialized.OrderedDictionary'
+('System.DirectoryServices.ActiveDirectory.Domain'
+('System.DirectoryServices.ActiveDirectory.DomainController'
+('System.DirectoryServices.ActiveDirectory.GlobalCatalog'
+('System.DirectoryServices.DirectorySearcher'
+('System.IdentityModel'
+('System.Management.Automation.PSCustomObject'
+('System.Security.AccessControl.AuthorizationRule'
+('Unconstrained'
+('User'
+('UserName'
+('\ '
+('\'
+('\\'
+('\\\\'
+('\\\\.*\\.*'
+(']['
+('^S-1-.*'
+('bf9679c0-0de6-11d0-a285-00aa003049e2'
+('distinguishedname'
+('domain users'
+('https://raw.githubusercontent.com/61106960/adPEAS/main/adPEAS.ps1'
+('member'
+('members'
+('ntdll'
+('s'
+('samaccountname'
+('tokenGroups'
+('|'
+(( (?<user>/user:((?<domain>[\w.]*
+(($Byte -eq 9 -or $Byte -gt 31 -and $Byte -lt 128
+(($Check.Count -eq 0 
+(($ClassName -eq 'Computer'
+(($ClassName -eq 'Group'
+(($ClassName -eq 'User'
+(($Computers
+(($FSR -band $_
+(($Filter[$_] -match '&'
+(($GptTmplPath -Match '\\\\.*\\.*'
+(($GroupsXMLPath -Match '\\\\.*\\.*'
+(($Include -notmatch ':'
+(($Jobs | Where-Object { -not $_.Result.IsCompleted }
+(($LocalUser.UserFlags.value -band 2
+(($MemberName
+(($MethodParameters.Count -eq 2
+(($NoType
+(($Object_CA.certificatetemplates
+(($Object_GPO.GroupMembers | ConvertFrom-SID @SearcherArguments
+(($Object_Var.Roles
+(($Object_screen.EnrollmentAllowedFor
+(($Object_screen.ExtendedKeyUsage
+(($OutValueHash.keys | Measure-Object
+(($PSBoundParameters['Computers']
+(($PSBoundParameters['HasLAPS']
+(($PSVersionTable
+(($Policy -eq 'DomainController'
+(($PropertiesToLoad
+(($Result -eq 0
+(($Result -ne 0
+(($ShareName
+(($TargetPath -Match '\\\\.*\\.*'
+(($TempObject.dwVersion % 2
+(($TempObject.pszAttributeName -Match 'member'
+(($UserName
+(($Value -eq '*'
+(($Value -match '\*'
+(($_ -eq 'Op'
+(($_ -eq 'objectsid'
+(($_ -match 'CN=S-1-5-21.*-.*'
+(($_.AceQualifier -eq 'AccessAllowed'
+(($_.ActiveDirectoryRights -match $GuidFilter
+(($_.ActiveDirectoryRights -match 'ExtendedRight'
+(($a -eq 'objectsid'
+(($adPEAS_Domain.DomainControllers
+(($adPEAS_Domain.Forest
+(($adPEAS_DomainPolicy.KerberosPolicy
+(($adPEAS_DomainPolicy.SystemAccess
+(($adPEAS_DomainRights.PrivilegeRights
+(('distinguishedName'
+(((!($Users
+((($PSBoundParameters['Users']
+((($PSVersionTable
+((($Users
+((($adPEAS_Domain.Forest
+(((get-domain @SearcherArguments
+((-not $PSBoundParameters['Domain']
+((-not $Properties[5].Value.EndsWith('$'
+((-not $ShowAll
+((-not (compare-object $keyusage $RefOidDCAuthTemplate
+((1-$Jitter
+((Get-Acl $_.FullName
+((Get-Date
+((Get-Date -Year 1601 -Month 1 -Day 1 -Hour 0 -Minute 0 -Second 0
+((Get-DomainPolicy -Policy Domain @PolicyArguments
+((Get-Random -Maximum 2
+((New-Object System.Security.Principal.SecurityIdentifier($LocalGroup.InvokeGet('objectsid'
+((New-Object System.Security.Principal.SecurityIdentifier($LocalUser.InvokeGet('ObjectSID'
+((New-Object System.Uri($GptTmplPath
+((New-Object System.Uri($GroupsXMLPath
+(([ComponentModel.Win32Exception] $LastError
+(([ComponentModel.Win32Exception] $LastError2
+(([ComponentModel.Win32Exception] $Result
+(([ComponentModel.Win32Exception]$Result
+(([Guid]$IdentityInstance
+(([Net.Dns]::GetHostEntry($Computer
+(([System.DirectoryServices.ActiveDirectoryRights]$r
+(([System.Threading.Thread]::CurrentThread.GetApartmentState(
+((get-domain @SearcherArguments
+((invoke-webrequest -Uri $ADCSSrvUri -TimeoutSec 3 -UseBasicParsing
+((invoke-webrequest -Uri $ExSrvUri -TimeoutSec 3 -UseBasicParsing
+()
+() -SetLastError
+() -eq 0
+() -ne 0
+() Error: $(([ComponentModel.Win32Exception] $LastError
+() is skipped and only ImpersonateLoggedOnUser(
+() with user: $($UserDomain
+() | ForEach-Object { '\' + $_.ToString('X2'
+() | ForEach-Object {$_.ToString('X'
+().GetObjects(
+().Parser.ToString(
+().Split('('
+().ToLower(
+().ToString(
+().ToUpper(
+().Trim('/'
+().Trim('<'
+();$LastError = [System.Runtime.InteropServices.Marshal]::GetLastWin32Error(
+()] Param(
+()]Param([String]$Path
+(-$Duration
+(-$LocalUser.PasswordAge[0]
+(-$LogoffTime.Second
+(-$MaximumAge
+(-$PSBoundParameters['LastLogon']
+(-$PSBoundParameters['PassLastSet']
+(-$YearCheck
+(-1
+(-10
+(-2
+(-3
+(-5
+(-7
+(-Credential support
+(-Join (([Guid]$IdentityInstance
+(-bnot $_
+(-not $($PortCheckResult.TcpTestSucceeded
+(-not $ADCSWebEnrollment
+(-not $CompSearcher
+(-not $Computer
+(-not $Computers
+(-not $ExSrvBuild
+(-not $Exists
+(-not $Files
+(-not $Filter -or $Filter -eq ''
+(-not $Finished
+(-not $FoundLogoff -and $Hour -gt 0
+(-not $GPOSearcher
+(-not $Group
+(-not $GroupSID
+(-not $GroupSearcher
+(-not $LogonHours.$Day.$Hour
+(-not $LogonHours.$Day.$counter
+(-not $LogonHours.$Day.$i
+(-not $MappedComputers[$HostComputer]
+(-not $MappedPaths[$SysVolPath]
+(-not $MemberSID
+(-not $Memberships[$Group]
+(-not $NoImports
+(-not $OUSearcher
+(-not $ObjectSearcher
+(-not $PSBoundParameters['CertPassword']
+(-not $PSBoundParameters['Credential'] -and $PSBoundParameters['Username'] -and $PSBoundParameters['Password']
+(-not $PSBoundParameters['Domain']
+(-not $PSBoundParameters['Force']
+(-not $PSBoundParameters['OutputType']
+(-not $PSBoundParameters['Pattern']
+(-not $PSBoundParameters['Quiet']
+(-not $PSBoundParameters['SearchBase']
+(-not $Principal
+(-not $Principals
+(-not $Properties[5].Value.EndsWith('$'
+(-not $Raw
+(-not $ReferenceObjectProperties
+(-not $Result
+(-not $SchemaPath
+(-not $Searcher
+(-not $SeenDomains.ContainsKey($Domain
+(-not $SiteSearcher
+(-not $Stealth
+(-not $SubnetSearcher
+(-not $TargetDCIP
+(-not $TargetGptTmplPath.EndsWith('.inf'
+(-not $TargetSIDs
+(-not $User
+(-not $UserName
+(-not (Compare-Object $keyusage $RefOidKerbAuthTemplate
+(. $GetVar
+(.*
+(.+
+(.+?
+(..
+(0%(
+(0-1.0
+(0x60
+(1
+(1+$Jitter
+(12 Byte as hexascii = 24 Byte
+(1342464
+(1380352
+(15
+(16 Byte as hexascii = 32 Byte
+(4
+(7
+(;.*
+(?<CipherTextLen>....
+(?<DataToEnd>.+
+(?<devicename>(\w|\*|LPT\d
+(?<keyword>[Cc][Rr][Ee][Dd][Ee][Nn][Tt][Ii][Aa][Ll]
+(?<keyword>[Pp][Ss][Ee][Xx][Ee][Cc]
+(?<keyword>[Pp][aA][sS][sS][wW][dD]
+(?<keyword>[Pp][aA][sS][sS][wW][oO][rR]([dD]|[tT]
+(?<keyword>[Pp][wW][dD]
+(?<path>\\\\?.*?
+(?<username>\S*
+(?<version>[0-9.]+
+(@(
+(@61106960
+(@BreakersAll
+(@MrAnde7son
+(@_61106960
+(@_61106960_
+(@cfalta
+(@exploitph
+(@harmj0y
+(@mattifestation
+(@meatballs__
+(@obscuresec
+(@pyrotek3
+(@sixdub
+(@tifkin_
+(@ukstufus
+(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;$($Object.objectsid
+(ACCOUNTDISABLE|SMARTCARD_REQUIRED|NOT_DELEGATED
+(ACE
+(AS-REP
+(Access Control List
+(AdminCount = 1
+(AllowNull|AllowEmptyString|AllowEmptyCollection|ValidateCount|ValidateLength|ValidatePattern|ValidateRange|ValidateScript|ValidateSet|ValidateNotNull|ValidateNotNullOrEmpty
+(BloodHound-Old
+(CSV
+(Certificate or Kerberos
+(Class Finding
+(Class Hint
+(Class Info
+(Convert-FileRight -FSR $_.FileSystemRights.value__
+(Convert-SidToName @SearcherArguments -ObjectSid $acl.SecurityIdentifier
+(ConvertFrom-SID $subkey
+(ConvertFrom-SID -ObjectSID $SID @ConvertArguments
+(ConvertTo-SID @SearcherArguments -ObjectName DnsAdmins
+(DC
+(DONT_REQ_PREAUTH|ENCRYPTED_TEXT_PWD_ALLOWED
+(Data[@Name='LogonType']='5' or Data[@Name='LogonType']='0'
+(Default 00:05:00
+(Default 02:00:00
+(Default: 50
+(DefaultParameterSetName = 'AllowDelegation'
+(DefaultParameterSetName = 'ClassName'
+(DefaultParameterSetName = 'ComputerIdentity'
+(DefaultParameterSetName = 'ComputerName'
+(DefaultParameterSetName = 'Credential'
+(DefaultParameterSetName = 'Domain'
+(DefaultParameterSetName = 'DynamicParameter'
+(DefaultParameterSetName = 'Enabled'
+(DefaultParameterSetName = 'FileSpecification'
+(DefaultParameterSetName = 'LDAP'
+(DefaultParameterSetName = 'None'
+(DefaultParameterSetName = 'RawSPN'
+(DefaultParameterSetName = 'UserGroupIdentity'
+(DllName
+(DsEnumerateDomainTrusts
+(ERSISTENT
+(EventID=4624
+(EventID=4624 or EventID=4625 or EventID=4634
+(EventID=4648
+(ForEach($UserResult in $UserSearcher.FindAll(
+(Get-Command -Name ($PSCmdlet.MyInvocation.InvocationName
+(Get-Command _temp
+(Get-Date
+(Get-DecodedVBE -EncodedData $(Get-Content $file
+(Get-Domain
+(Get-Domain -Credential $Credential
+(Get-Domain @DomainSearcherArguments
+(Get-DomainComputer -HasLAPS @SearcherArguments
+(Get-DomainDN @DNSearcherArguments
+(Get-DomainDN @RootDomSearcherArguments
+(Get-DomainDN @SearcherArguments
+(Get-DomainGroupMember @SearcherArguments -Identity $Object_gMSAMember -Recurse
+(Get-DomainObject @SearcherArguments -Identity $Object_gMSAMember
+(Get-DomainSID @RootDomSearcherArguments
+(Get-DomainSID @SearcherArguments
+(Get-DomainUser -LDAPFilter 'userworkstations=*'
+(Get-Forest @ForestArguments
+(Get-GppInnerField $File.Fullname
+(Get-IPAddress -ComputerName $ADCSSrv
+(Get-IPAddress -ComputerName $ExSrv
+(Get-NetComputerSiteName -ComputerName $Computer.dnshostname
+(Get-NetComputerSiteName -ComputerName $TargetComputerName
+(Get-NetLoggedon
+(Get-Random -Maximum $Nops.Length
+(Get-Random -Maximum 2
+(GptTmpl.inf
+(Group Policy Objects
+(Groups.xml
+(I know it's not pretty
+(ID 4624
+(ID 4648
+(Identity is likely not online anymore!
+(Invoke-WebRequest -uri $ADCSSrvUri -TimeoutSec 3 -UseBasicParsing -MaximumRedirection 0 -ErrorAction Ignore
+(Invoke-WebRequest -uri $ExSrvUri -TimeoutSec 3 -UseBasicParsing -MaximumRedirection 0 -ErrorAction Ignore
+(LDAP SSL
+(Level=4 or Level=0
+(Mandatory = $True
+(Mandatory = $false
+(Mandatory = $true
+(Mandatory= $True
+(Mandatory=$True
+(Mandatory|Position|ParameterSetName|DontShow|HelpMessage|ValueFromPipeline|ValueFromPipelineByPropertyName|ValueFromRemainingArguments
+(MbQ.UB?6GX
+(Ms-PL
+(NetWkstaUserEnum requires remote admin access
+(New-Object Net.WebClient
+(New-Object Org.BouncyCastle.Asn1.DERGeneralString $Domain
+(New-Object Org.BouncyCastle.Asn1.DERGeneralizedTime '20370913024805Z'
+(New-Object Org.BouncyCastle.Asn1.DERInteger 1
+(New-Object Org.BouncyCastle.Asn1.DERInteger 10
+(New-Object Org.BouncyCastle.Asn1.DERInteger 12381973
+(New-Object Org.BouncyCastle.Asn1.DERInteger 128
+(New-Object Org.BouncyCastle.Asn1.DERInteger 2
+(New-Object Org.BouncyCastle.Asn1.DERInteger 5
+(New-Object Org.BouncyCastle.Asn1.DERSequence $PAElementDataSeq
+(New-Object Org.BouncyCastle.Asn1.DERSequence (New-Object Org.BouncyCastle.Asn1.DERGeneralString $UserName
+(New-Object Org.BouncyCastle.Asn1.DERSequence (New-Object Org.BouncyCastle.Asn1.DERInteger 23
+(New-Object Org.BouncyCastle.Asn1.DERSequence @((New-Object Org.BouncyCastle.Asn1.DERGeneralString 'krbtgt'
+(New-Object System.Uri($TargetPath
+(OUs
+(Opsec!
+(PASSWD_NOTREQD|TRUSTED_FOR_DELEGATION
+(ParameterSetName = 'API'
+(ParameterSetName = 'AllowDelegation'
+(ParameterSetName = 'ComputerIdentity'
+(ParameterSetName = 'Disabled'
+(ParameterSetName = 'DisallowDelegation'
+(ParameterSetName = 'Domain'
+(ParameterSetName = 'Enabled'
+(ParameterSetName = 'FileSpecification'
+(ParameterSetName = 'FreshEXEs'
+(ParameterSetName = 'LDAP'
+(ParameterSetName = 'ManualRecurse'
+(ParameterSetName = 'NET'
+(ParameterSetName = 'OfficeDocs'
+(ParameterSetName = 'RecurseUsingMatchingRule'
+(ParameterSetName = 'ShowAll'
+(ParameterSetName = 'TargetProcess'
+(ParameterSetName = 'TargetUser'
+(ParameterSetName = 'UserGroupIdentity'
+(ParameterSetName = 'UserIdentity'
+(Position = 0
+(Position = 2
+(Position = 3
+(Position = 4
+(Position = 5
+(PositionalBinding = $false
+(RD Session Host
+(Resolve-IPAddress -ComputerName $Computer
+(Resolve-IPAddress -ComputerName $TargetComputer
+(S%K~k'
+(S-1-5-32-544
+(S-1-5-32-555
+(SAM
+(SID
+(SPN
+(SPNs
+(Site: $((($Object_Var.siteobject
+(Test-AdminAccess -ComputerName $CName
+(Test-Connection $computer -Count 2 -Quiet
+(Test-Path -Path $Check -PathType Leaf
+(Test-Path -Path $TargetPath
+(UAC
+(UnixUserPassword=*
+(VS.85
+(ValueFromPipeline = $True
+(ValueFromPipelineByPropertyName = $True
+(ValueFromPipelineByPropertyName=$True
+(Verb-Domain*
+([ADSI]$SearchString
+([ADSI]$_
+([ADSI]$gpo.path
+([Bitconverter]::ToString($TicketByteStream
+([DateTime]
+([DateTime]::Now.AddDays(-3
+([Environment]::UserName
+([Hashtable]
+([IO.MemoryStream][Convert]::FromBase64String($EncodedCompressedFile
+([IntPtr]
+([PSObject]
+([Reflection.Emit.OpCodes]::Ldarg_0
+([Reflection.Emit.OpCodes]::Nop
+([Reflection.Emit.OpCodes]::Ret
+([Runtime.InteropServices.CallingConvention] $NativeCallingConvention
+([Runtime.InteropServices.CharSet] $Charset
+([Runtime.InteropServices.MarshalAsAttribute].GetField('SizeConst'
+([Runtime.InteropServices.UnmanagedType]
+([String]
+([String]$Path
+([System.Convert]::ToBase64String($DNSRecord[24..$DNSRecord.length]
+([System.DirectoryServices.AccountManagement.ContextType]::Domain
+([System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass]
+([System.DirectoryServices.ActiveDirectory.Domain]
+([System.DirectoryServices.ActiveDirectorySecurityInheritance]$InheritanceType
+([System.Security.Principal.SecurityIdentifier]
+([System.Security.Principal.SecurityIdentifier]$ObjectSid
+([System.Security.Principal.SecurityIdentifier]$PrincipalObject.objectsid
+([System.Text.Encoding]::ASCII.GetString($Object.UnixUserPassword
+([System.Text.Encoding]::ASCII.GetString($Object.UserPassword
+([System.Text.Encoding]::ASCII.GetString($Object.msSFU30Password
+([System.Text.Encoding]::ASCII.GetString($Object.unicodePwd
+([Type]
+([array]
+([bool]
+([datetime]::FromFileTime(($Properties[$_][0]
+([int32]$($object_dcsync.objectSid
+([int32]$($user_object.objectSid
+([string]$Str[0]
+([string]$Str[1]
+([string]$Str[2]
+([string]$Str[3]
+([string]$Str[4]
+([string]$Str[5]
+([string]$Str[6]
+([string]$Str[7]
+([string]::IsNullOrEmpty($BindServer
+(\S*
+(\\UNC\share
+(\{
+(\}
+(_| | (_| | |    | |____ / ____ \ ____
+(admin
+(adminCount=1
+(admincount=1
+(allow or deny
+(also accepts IP addresses
+(assuming appropriate permissions
+(built-in
+(c
+(cn=msol_*
+(current runspace
+(currently only MSSQL
+(d/t
+(deafult of Hashcat
+(default
+(default 'Domain Admins'
+(default administrators
+(default behavior
+(default of 5000
+(default of Administrators
+(default of Subtree
+(default of now
+(default of now-1 day
+(default of the local domain
+(default of the localhost
+(default: unique hash generated per machine
+(depending on determined class
+(displayname=$GPOName
+(displayname=$IdentityInstance
+(distinguishedname=$IdentityInstance
+(distinguishedname=$ObjectDomainDN
+(distinguishedname=$group
+(distributed file servers
+(dnshostname=$IdentityInstance
+(dnsroot=$Domain
+(domain controller
+(domain controllers
+(dt
+(e.g. $null
+(e.g. '10ec320d-3111-4ef4-8faf-8f14f4adc789'
+(e.g. '192.168.50.0/24'
+(e.g. 'Test GPO'
+(e.g. '{F260B76D-55C8-46C5-BEF1-9016DD98E272}'
+(e.g. 4c435dd7-dc58-4b14-9a5e-1fdb0e80d201
+(e.g. 4c435dd7-dc58-4b14-9a5e-1fdb0e80d202
+(e.g. 4f16b6bc-7010-4cbf-b628-f3cfe20f6994
+(e.g. 8a9ba22a-8977-47e6-84ce-8c26af4e1e6a
+(e.g. Computer1
+(e.g. Domain Admins
+(e.g. Group1
+(e.g. S-1-5-21-890171859-3433809279-3366196753-1108
+(e.g. S-1-5-21-890171859-3433809279-3366196753-1113
+(e.g. S-1-5-21-890171859-3433809279-3366196753-1114
+(e.g. S-1-5-21-890171859-3433809279-3366196753-1124
+(e.g. Test-Site
+(e.g. TestOU
+(e.g. User1
+(e.g. WINDOWS10$
+(e.g. c37726ef-2b64-4524-b85b-6a9700c234dd
+(e.g. harmj0y
+(e.g. windows10.testlab.local
+(eTYPE-ARCFOUR-HMAC-MD5 / RC4
+(extensionData=*
+(file servers
+(flags:1.2.840.113556.1.4.804:=32
+(flags:1.2.840.113556.1.4.804:=64
+(for speed
+(for token-impersonation stuffz
+(from PowerView
+(func Mpr WNetAddConnection2W ([Int]
+(func Mpr WNetCancelConnection2 ([Int]
+(func advapi32 CloseServiceHandle ([Int]
+(func advapi32 ConvertSidToStringSid ([Int]
+(func advapi32 ImpersonateLoggedOnUser ([Bool]
+(func advapi32 LogonUser ([Bool]
+(func advapi32 OpenSCManagerW ([IntPtr]
+(func advapi32 RevertToSelf ([Bool]
+(func kernel32 CloseHandle ([Bool]
+(func kernel32 GetModuleHandle ([Intptr]
+(func kernel32 GetProcAddress ([IntPtr]
+(func netapi32 DsEnumerateDomainTrusts ([Int]
+(func netapi32 DsGetSiteName ([Int]
+(func netapi32 NetApiBufferFree ([Int]
+(func netapi32 NetLocalGroupEnum ([Int]
+(func netapi32 NetLocalGroupGetMembers ([Int]
+(func netapi32 NetSessionEnum ([Int]
+(func netapi32 NetShareEnum ([Int]
+(func netapi32 NetWkstaUserEnum ([Int]
+(func ntdll RtlGetCurrentPeb ([IntPtr]
+(func wtsapi32 WTSCloseServer ([Int]
+(func wtsapi32 WTSEnumerateSessionsEx ([Int]
+(func wtsapi32 WTSFreeMemory ([Int]
+(func wtsapi32 WTSFreeMemoryEx ([Int]
+(func wtsapi32 WTSOpenServerEx ([IntPtr]
+(func wtsapi32 WTSQuerySessionInformation ([Int]
+(gMSA
+(gplink=*
+(gplink=*$GPLink*
+(groupType:1.2.840.113556.1.4.803:=1
+(groupType:1.2.840.113556.1.4.803:=2
+(groupType:1.2.840.113556.1.4.803:=2147483648
+(groupType:1.2.840.113556.1.4.803:=4
+(groupType:1.2.840.113556.1.4.803:=8
+(http://www.bouncycastle.org
+(https://github.com/61106960/adPEAS/raw/main/images/adPEAS_large.jpg
+(https://github.com/SpecterOps/BloodHound
+(https://technet.microsoft.com/en-us/library/ee617253.aspx
+(https://www.specterops.io/assets/resources/Certified_Pre-Owned.pdf
+(i.e. OU
+(i.e. begins with *
+(i.e. csc.exe is never called like with Add-Type
+(i.e. if multiple are listed in sidHistory
+(i.e. not saved
+(if ($adPEAS_CANTAuthStore
+(if specified
+(if your account has the rights to read it
+(in LINK
+(in UTC
+(in milliseconds
+(in seconds
+(in the form of a hashtable
+(lastlogon>=$LogonDate
+(legacy
+(lockoutTime>=$LockoutTime
+(logon events
+(lower is more
+(meaning a property not held by the reference set
+(meaning are/were privileged
+(meaning the account is not built in
+(member=*
+(memberof:1.2.840.113556.1.4.1941:=$GroupFoundDN
+(memberof=*
+(ms-Mcs-AdmPwd=*
+(msLAPS-EncryptedPassword=*
+(msLAPS-PasswordExpirationTime
+(msSFU30Password=*
+(msds-allowedtoactonbehalfofotheridentity=*
+(msds-allowedtodelegateto=*
+(mspki-certificate-name-flag:1.2.840.113556.1.4.804:=1
+(mspki-certificate-name-flag:1.2.840.113556.1.4.804:=134217728
+(mspki-enrollment-flag:1.2.840.113556.1.4.804:=32768
+(name=$($Name
+(name=$IdentityInstance
+(name=harmj0y
+(name=ms-LAPS*
+(name=ms-LAPS-EncryptedPassword
+(name=ms-LAPS-Password
+(name=testuser
+(native
+(needs admin!
+(netbios or FQDN
+(no nested group objects themselves
+(no|NO|yes|YES
+(objectCategory=certificationAuthority
+(objectCategory=group
+(objectCategory=groupPolicyContainer
+(objectCategory=pKIEnrollmentService
+(objectCategory=printQueue
+(objectClass=*
+(objectClass=controlAccessRight
+(objectClass=dnsNode
+(objectClass=dnsZone
+(objectClass=fTDfs
+(objectClass=msDFS-Linkv2
+(objectClass=trustedDomain
+(objectclass=certificationAuthority
+(objectclass=domain
+(objectclass=pKIEnrollmentService
+(objectguid=$GuidByteString
+(objectsid=$($_.ObjectSID
+(objectsid=$($_.SecurityIdentifier
+(objectsid=$IdentityInstance
+(objectsid=$MemberSID
+(objectsid=$ObjectSID
+(on success or failure
+(operatingsystem=$OperatingSystem
+(operatingsystem=Windows *7*
+(operatingsystem=Windows Vista*
+(operatingsystemservicepack=$ServicePack
+(or GPO
+(or RDP
+(or a remote
+(or group
+(or pass -Domain
+(or remote
+(or remote domain
+(or specified
+(or specified -Domain
+(or target
+(per host
+(profilepath=*
+(pwdlastset<=$PwdDate
+(result of Get-DomainUser
+(s
+(samAccountName=$GroupName
+(samAccountName=$IdentityInstance
+(samAccountName=$ObjectName
+(samAccountName=$UserName
+(samAccountType=805306368
+(samAccountType=805306369
+(samaccountname=$MemberName
+(samaccounttype=805306368
+(schemaIDGUID=*
+(scriptpath=*
+(see https://tools.ietf.org/html/rfc4121#section-4.1
+(serverreferencebl=$SiteName
+(servicePrincipalName=$SPN
+(servicePrincipalName=*
+(serviceprincipalname=MSSQLSvc*
+(the default
+(the output from Get-DomainUser
+(the token handle returned by Invoke-UserImpersonation
+(unicodePwd=*
+(usefult o avoid Microsoft ATP/ATA
+(userAccountControl:1.2.840.113556.1.4.803:=$UACValue
+(userAccountControl:1.2.840.113556.1.4.803:=1048576
+(userAccountControl:1.2.840.113556.1.4.803:=2
+(userAccountControl:1.2.840.113556.1.4.803:=32
+(userAccountControl:1.2.840.113556.1.4.803:=4194304
+(userAccountControl:1.2.840.113556.1.4.803:=524288
+(userAccountControl:1.2.840.113556.1.4.803:=65536
+(userAccountControl:1.2.840.113556.1.4.803:=8192
+(v=vs.85
+(which can be enumearted with Get-DomainDNSZone
+(with PSReflect
+({ $_.PSObject.TypeNames[0] -eq 'PowerView.User' }
+({ Test-Path -Path $_ }
+({($_ -is [Reflection.Emit.ModuleBuilder]
+(|$AttrFilter
+(|$DelegateFilter
+(|$Filter
+(|$GroupFilter
+(|$IdentityFilter
+(|$TypeFilter
+(|(UserPassword=*
+(|(homedirectory=*
+(|(ms-Mcs-AdmPwdExpirationTime=*
+(|(msLAPS-Password=*
+(|(name=$IdentityInstance
+(|(name=ms-*-admpwd
+(|(name=ms-*-admpwd*
+(|(operatingsystem=Windows Server 200*
+(|(samAccountName=$IdentityInstance
+(|(samAccountName=Domain Admins
+(|(samAccountName=domain admins
+(|(samAccountName=user1
+(|(samAccountType=805306368

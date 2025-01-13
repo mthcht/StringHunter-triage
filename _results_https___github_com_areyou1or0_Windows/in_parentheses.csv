@@ -1,0 +1,49 @@
+"(""http://<targetip>:<port>/CodeExecution/Invoke-Shellcode.ps1"""
+"(""net localgroup administrators kalisa /add"""
+"($url,$file"
+"(/t: type, /v:value or name of entry, /f: add without prompting for confirmation, /d: data"
+"(5,6 or 7"
+"(AD domain name, DC name, internal IP, DA account"
+"(again you can set ""-d /root/ftphome/bob/"" if you wish"
+('http://<ip>:<port>/PowerUp.ps1'
+('http://<ip>:<port>/Sherlock.ps1'
+('http://<ip>:<port>/powerup.ps1'
+('http://<targetip>/file.ps1'
+(AFD Driver
+(AFD.sys
+(Application log
+(F
+(GUI
+(Get-Content <list of servers> 
+(Hot Potato
+(Kernel Driver
+(Kernel Mode Driver
+(KiTrap0D
+(NDISTAPI
+(NDProxy
+(New Object Net.WebClient
+(New-Object Net.WebClient
+(RPC
+(Secondary Logon Handle
+(Security log
+(Task Scheduler
+(WebDAV
+(Win32k.sys
+(Windows Kernel
+(Windows Kernel Mode Drivers
+(and all it's sub-direcotries
+(dns entries
+(for 32 bit
+(https://web.archive.org/web/20080530012252/http://live.sysinternals.com/accesschk.exe 
+(in LM hash and NTLM hash
+(list all the services that an authenticated user can modify.
+(network settings
+(one of them given below can be used
+(only really useful if you have access to the files while the machine is off
+(pureftpd client on Kali
+(pyftpdlib client on Kali
+(s
+(see Everyone:(CI
+(use command tasklist to check process ids
+(v3
+(you can also specify a specific user e.g.: /root/ftphome/bob

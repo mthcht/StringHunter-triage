@@ -1,0 +1,9 @@
+            # now try to the parse group policy preferences file (Groups.xml) if it exists
+    3.  pulling all GPOs that set 'Restricted Groups' or Groups.xml by calling
+"                'GroupsXMLpath' = ""$GPOPath\MACHINE\Preferences\Groups\Groups.xml"""
+"Parses a groups.xml into a custom object. If -Credential is passed,"
+DEMO.LAB\SYSVOL\demo.lab\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Preferences\Groups\Groups.xml
+Helper to parse a groups.xml file path into a custom object.
+Specifies the groups.xml file path name to parse.
+group membership is set through Group Policy Preferences groups.xml files. For any
+section data is processed if present. Any found Groups.xml files are parsed with

@@ -1,0 +1,145 @@
+			h.KeyID = s
+		return newVerifier(verificationKey.Key)
+"		err := signer.addRecipient(sig.Algorithm, sig.Key)"
+"	recipient, err := makeJWSRecipient(alg, signingKey.Key)"
+				protected[headerKeyID] = recipient.publicKey().KeyID
+		publicKey.Key = recipient.publicKey().Key
+"	return josecipher.KeyUnwrap(block, recipient.encryptedKey)"
+"		return deriveKey(string(headers.getEncryption()), generator.keySize()), nil"
+"	publicKey, ok := epk.Key.(*ecdsa.PublicKey)"
+"	jek, err := josecipher.KeyWrap(block, cek)"
+	switch key := k.Key.(type) {
+	if k.Key == nil {
+		ret.Key = key.Public()
+		if key.KeyID == kid {
+	raw.Kid = k.KeyID
+	switch k.Key.(type) {
+"	for _, key := range s.Keys {"
+			recipientInfo.keyID = rcpt.KeyID
+"		err = recipient.header.set(headerAlgorithm, info.keyAlg)"
+"			err = recipient.header.set(headerKeyID, info.keyID)"
+		encrypter.keyGenerator = ecKeyGenerator{
+"		recipient, err := makeJWERecipient(alg, encryptionKey.Key)"
+"		if sr, ok := recipientInfo.keyEncrypter.(*symmetricKeyCipher); ok {"
+"			size: cipher.keySize(),"
+"	cek, headers, err := ctx.keyGenerator.genKey()"
+		encrypter.keyGenerator = staticKeyGenerator{
+"	if recipient.KeyID != """" {"
+		return newDecrypter(decryptionKey.Key)
+"	recipientInfo, err = makeJWERecipient(recipient.Algorithm, recipient.Key)"
+"			size: encrypter.cipher.keySize(),"
+"		if rcpt.KeyID != """" {"
+"			size:      encrypter.cipher.keySize(),"
+	switch encryptionKey := rcpt.Key.(type) {
+		recipientInfo.keyID = recipient.KeyID
+"		recipient, err := info.keyEncrypter.encryptKey(cek, info.keyAlg)"
+		if encrypter.cipher.keySize() != len(rawKey.([]byte)) {
+"		keyID, rawKey = encryptionKey.KeyID, encryptionKey.Key"
+		encrypter.keyGenerator = randomKeyGenerator{
+		recipient.keyID = encryptionKey.KeyID
+		recipientInfo.keyID = keyID
+"		size: cipher.keySize(),"
+"		if info.keyID != """" {"
+"		copy(cek, ctx.key)"
+		aead := newAESGCM(len(ctx.key))
+"		parts, err := aead.encrypt(ctx.key, []byte{}, cek)"
+"		cek, err := aead.decrypt(ctx.key, []byte{}, parts)"
+	return len(ctx.key)
+"	copy(cek, ctx.key)"
+"		key := pbkdf2.Key(ctx.key, salt, ctx.p2c, keyLen, h)"
+"		cek, err := josecipher.KeyUnwrap(block, recipient.encryptedKey)"
+// pbkdf2.Key.
+"		block, err := aes.NewCipher(ctx.key)"
+"	hmac := hmac.New(hash, ctx.key)"
+	return ctx.keyBytes
+"	cek := make([]byte, len(ctx.key))"
+"		key := pbkdf2.Key(ctx.key, salt, p2c, keyLen, h)"
+"		cek := make([]byte, len(ctx.key))"
+"		jek, err := josecipher.KeyWrap(block, cek)"
+	if t.Key().Kind() != reflect.String {
+			kv := reflect.ValueOf(key).Convert(v.Type().Key())
+		if t.Key().Kind() != reflect.String {
+"	return ""json: cannot unmarshal object key "" + strconv.Quote(e.Key) + "" into unexported field "" + e.Field.Name + "" of type "" + e.Type.String()"
+//    pair.key = key
+"			e.marshal("""", reflect.ValueOf(item.Key))"
+"			e.marshal("""", reflect.ValueOf(info.Key))"
+		k := reflect.ValueOf(&item.Key).Elem()
+	kt := outt.Key()
+	if outt.Key() == ifaceType && outt.Elem() == ifaceType {
+					fieldsMap[finfo.Key] = finfo
+		fieldsMap[info.Key] = info
+"				if field.Type.Key() != reflect.TypeOf("""") {"
+			info.Key = strings.ToLower(field.Name)
+"			msg := ""Duplicated key '"" + info.Key + ""' in struct "" + st.String()"
+"					if _, found := fieldsMap[finfo.Key]; found {"
+"						msg := ""Duplicated key '"" + finfo.Key + ""' in struct "" + st.String()"
+			info.Key = tag
+"		if _, found = fieldsMap[info.Key]; found {"
+	return i1.Key < i2.Key
+"		fmt.Printf(""%s %s\n"", kvi.Key, kvi.Val)"
+	if dbi.keyless {
+"	db.keys = btree.New(btreeDegrees, nil)"
+	item := db.keys.Get(&dbItem{key: key})
+						pivot = dbi.key
+"	tx.db.keys = btree.New(btreeDegrees, nil)"
+	} else if dbi2.keyless {
+	idx.db.keys.Ascend(func(item btree.Item) bool {
+	prev := db.keys.Delete(item)
+"		return iterator(dbi.key, dbi.val)"
+"					if err := onExpiredSync(itm.key, itm.val, tx); err != nil {"
+"		return iterator(dbi.key, dbi.val, dist)"
+"			db.keys.AscendGreaterOrEqual(&dbItem{key: pivot},"
+"	db.keys, db.exps, db.idxs, db.file = nil, nil, nil, nil"
+		if !idx.match(dbi.key) {
+"	return tx.db.keys.Len(), nil"
+"			db.keys = btree.New(btreeDegrees, nil)"
+				itemB.keyless = true
+"					if _, err := tx.Delete(itm.key); err != nil {"
+		if !idx.match(item.key) {
+		tx.wc.rbkeys = tx.db.keys
+	return dbi.key < dbi2.key
+				itemA.keyless = true
+"				keys = append(keys, itm.key)"
+	prev := db.keys.ReplaceOrInsert(item)
+	db.keys.Ascend(func(item btree.Item) bool {
+"		buf = appendBulkString(buf, dbi.key)"
+		tr = tx.db.keys
+"	buf = appendBulkString(buf, dbi.key)"
+		tx.db.keys = tx.wc.rbkeys
+"				dst = append(dst, style.Key[1]...)"
+			key := len(stack) > 0 && stack[len(stack)-1].key
+"				dst = append(dst, style.Key[0]...)"
+			stack[len(stack)-1].key = !stack[len(stack)-1].key
+		if goval.Type().Key().Kind() == reflect.String &&
+"		parentKey = strings.Join(path[0:i], v.keyDelim)"
+"			parentKey = strings.Join(path[0:i], v.keyDelim)"
+"		path := strings.Split(lcaseKey, v.keyDelim)"
+"// - each path is merged into a single key string, delimited with v.keyDelim (= ""."")"
+"		path := strings.Split(k, v.keyDelim)"
+"			return strings.Join(path[0:i], v.keyDelim)"
+"		path   = strings.Split(lcaseKey, v.keyDelim)"
+"	path := strings.Split(key, v.keyDelim)"
+"// Nested keys are returned with a v.keyDelim (= ""."") separator"
+"		for _, key := range v.properties.Keys() {"
+"		prefixKey := strings.ToLower(strings.Join(path[0:i], v.keyDelim))"
+		prefix += v.keyDelim
+"	v.keyDelim = ""."""
+"	path = strings.Split(lcaseKey, v.keyDelim)"
+		if config.Metadata.Keys == nil {
+"		d.config.Metadata.Keys = append(d.config.Metadata.Keys, name)"
+"			d.config.Metadata.Keys = append(d.config.Metadata.Keys, name)"
+	if kind := dataValType.Key().Kind(); kind != reflect.String && kind != reflect.Interface {
+"			name, dataValType.Key().Kind())"
+"				d.config.Metadata.Keys = append(d.config.Metadata.Keys, name)"
+	valKeyType := valType.Key()
+"			config.Metadata.Keys = make([]string, 0)"
+			vKeyType := vType.Key()
+"r := certificate.NewCertifier(core, prober, certificate.CertifierOptions{KeyType: config.Certificate.KeyType, Timeout: config.Certificate.Timeout})"
+	KeyType certcrypto.KeyType
+"		KeyUsage:              x509.KeyUsageKeyEncipherment,"
+"		privateKey, err = certcrypto.GeneratePrivateKey(c.options.KeyType)"
+	KeyType certcrypto.KeyType
+	chlng.KeyAuthorization = keyAuth
+	chlng.KeyAuthorization = keyAuth
+	chlng.KeyAuthorization = keyAuth
+"		KeyUsage:              x509.KeyUsageKeyEncipherment | x509.KeyUsageDigitalSignature,"

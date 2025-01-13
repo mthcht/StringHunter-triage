@@ -1,0 +1,6 @@
+"// @Note, check legcy UI warning hide flag"
+// Create process for user with desktop
+// Duplicate our token to &newToken
+// Enable SeDebugPrivilege
+// This happens if the opener was not the SSL-VPN; nothing to worry about
+// URI handler must use the external IP address and NOT the DNS name

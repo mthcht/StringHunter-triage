@@ -1,0 +1,39 @@
+"UserName = $DN.Split(',')[0].split('=')[1]"
+"UserName = $Reg.GetStringValue($HKU, ""$UserSID\Network\$DriveLetter"", 'UserName').sValue"
+"UserName)@$($TargetDomainName): $Tag'"""
+"UserName)@$($TargetDomainName):$($Hash)"""
+"UserName, $UserDomain = $UserName.Split('@')"
+"UserName, $UserDomain, $NetworkCredential.Password, 9, 3, [ref]$LogonTokenHandle);$LastError = [System.Runtime.InteropServices.Marshal]::GetLastWin32Error();"
+"UserNames : {Administrator (built-in), DummyAccount, dummy2}"
+"UserNames : {DEMO\Administrator, admin}"
+"UserNames : {administrator, admin}"
+"Username"" = $($cred.Groups[""domain""].value)+""\""+$($cred.Groups[""username""].value)"
+"Username:`t`t`t$($msLAPSObject.n)"""
+"UsernameHint = $Reg.GetStringValue($HKU, ""$UserSID\Software\Microsoft\Terminal Server Client\Servers\$Server"", 'UsernameHint').sValue"
+"username = $($Object_GPP.Domain) + ""\"" + $($Object_GPP.username)}"
+"username>\S*)))|( /(p(ersistent)?|P(ERSISTENT)?):(no|NO|yes|YES))|( (?<password>(?!/)\S*))|( /(delete|DELETE))|( /(savecred|SAVECRED))|( /(smartcard|SMARTCARD)))+"" # try to find the password in net use syntax if used..."
+UserName            = $Properties[5].Value
+UserName           = $Properties[1].Value
+UserName    = $Properties[22].Value
+UserName    = $Properties[5].Value
+UserName   = $Properties[1].Value
+UserName = $IdentityInstance.Split('\')[1]
+UserName = $NetworkCredential.UserName
+UserName = $Session.UserName
+UserName = $User.UserName
+UserName = $_
+UserName = $_.accountName
+UserName = $_.newName
+UserName = $_.runAs
+UserName = $_.userName
+UserName = $_.value
+UserName = ConvertFrom-SID -ObjectSID $_ -OutputType 'DomainSimple'
+UserName = ConvertFrom-SID -ObjectSid $UserSID
+UserName = ConvertFrom-SID -ObjectSid $UserSID -Credential $Credential
+UserName = field 0 String -MarshalAs @('LPWStr')
+UserName = field 1 String -MarshalAs @('LPWStr')
+UserName = field 5 String -MarshalAs @('LPWStr')
+UserName'] != 'ANONYMOUS LOGON']]
+UserName']='ANONYMOUS LOGON'
+UserName) { $UserName = '' }
+UserNames : {test1}

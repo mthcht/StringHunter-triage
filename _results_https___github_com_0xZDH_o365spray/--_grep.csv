@@ -1,0 +1,45 @@
+ -- let's
+ -- v3.0.4
+ ---          | ---      |
+ ---    | ---           | ---  |
+ --adfs-url ADFS_URL   AuthURL of the target domain's ADFS login page for password
+ --count COUNT
+ --debug               Enable debug output.
+ --domain DOMAIN
+ --enum
+ --enum                Run username enumeration.
+ --enum -U usernames.txt --domain test.com`
+ --enum-module ENUM_MODULE
+ --help            show this help message and exit
+ --jitter [0-100]      Jitter extends --sleep period by percentage given (0-100).
+ --lockout LOCKOUT
+ --output OUTPUT       Output directory for results and test case files.
+ --paired PAIRED       File containing list of credentials in username:password
+ --passfile PASSFILE
+ --password PASSWORD
+ --poolsize POOLSIZE   Maximum size of the ThreadPoolExecutor.
+ --proxy PROXY         HTTP/S proxy to pass traffic through
+ --proxy-url PROXY_URL
+ --rate RATE           Number of concurrent connections (attempts) during
+ --safe SAFE           Terminate password spraying run if `N` locked accounts
+ --spray
+ --spray               Run password spraying.
+ --spray -U usernames.txt -P passwords.txt --count 2 --lockout 5 --domain test.com`
+ --spray-module SPRAY_MODULE
+ --timeout TIMEOUT     HTTP request timeout in seconds. Default: 25
+ --useragents USERAGENTS
+ --userfile USERFILE
+ --username USERNAME
+ --validate            Run domain validation only.
+ --validate --domain test.com`
+ --validate-module VALIDATE_MODULE
+ --version         Print the tool version.
+" -- if enumeration is run alone, the user should be aware of how many and when each authentication attempt was made and manually reset the lockout timer before performing any password spraying."
+" -- v{__version__}"""
+" -- {__version__}"")"
+" --enum."""
+" --paired handling, we will also"
+" --paired is required."""
+" --sleep [-1, 0-120]   Throttle HTTP requests every `N` seconds. This can be randomized"
+" --sleep period by percentage given (0-100). Default: 0"","
+" --spray, the following flags are required: """

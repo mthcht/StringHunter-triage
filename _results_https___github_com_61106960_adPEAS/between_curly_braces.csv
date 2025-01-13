@@ -1,0 +1,564 @@
+"{ $Filter += ""(&$AttrFilter)"" "
+"{ $Filter += ""(|$AttrFilter)"" "
+"{ $Result += ""Certificate Request Agent"" "
+"{ $Result += ""Client Authentication"" "
+"{ $Result += ""Code Signing"" "
+"{ $Result += ""Document Encryption"" "
+"{ $Result += ""Document Signing"" "
+"{ $Result += ""Encrypting File System"" "
+"{ $Result += ""File Recovery"" "
+"{ $Result += ""IP Security End System"" "
+"{ $Result += ""IP Security Tunnel Endpoint"" "
+"{ $Result += ""IP Security User"" "
+"{ $Result += ""KDC Authentication"" "
+"{ $Result += ""Key Recovery"" "
+"{ $Result += ""Lifetime Signing"" "
+"{ $Result += ""Microsoft Trust List Signing"" "
+"{ $Result += ""OCSP Signing"" "
+"{ $Result += ""Private Key Archival"" "
+"{ $Result += ""Qualified Subordination"" "
+"{ $Result += ""Remote Desktop Authentication"" "
+"{ $Result += ""Root List Signer"" "
+"{ $Result += ""SSH Client"" "
+"{ $Result += ""SSH Server"" "
+"{ $Result += ""Secure E-mail"" "
+"{ $Result += ""Server Authentication"" "
+"{ $Result += ""Smartcard Logon"" "
+"{ $Result += ""Time Stamping"" "
+"{ $_.Split(',') "
+"{ '1131f6aa-9c07-11d1-f79f-00c04fc2dcd2', '1131f6ad-9c07-11d1-f79f-00c04fc2dcd2', '89e95b76-444d-4c62-991a-0facbeda640c'"
+"{ 'GptTmplPath' = ""$GPOPath\MACHINE\Microsoft\Windows NT\SecEdit\GptTmpl.inf"" "
+"{ (New-Object System.Security.Principal.SecurityIdentifier($_, 0)).Value "
+"{ -not (($_.SecurityIdentifier.value -like ""*-512"") -or ($_.SecurityIdentifier.value -like ""*-519"") -or ($_.SecurityIdentifier.value -like ""*-516"") -or ($_.SecurityIdentifier.value -like ""*-500"") -or ($_.SecurityIdentifier.value -like ""*-498"") -or ($_.SecurityIdentifier.value -eq ""S-1-5-9"") -or ($_.SecurityIdentifier.value -eq ""S-1-5-11"") -or ($_.SecurityIdentifier.value -like ""*-513"") -or ($_.SecurityIdentifier.value -like ""*-515"") -or ($_.SecurityIdentifier.value -like ""*-553"")) "
+"{ -not (($_.SecurityIdentifier.value -like ""*-512"") -or ($_.SecurityIdentifier.value -like ""*-519"") -or ($_.SecurityIdentifier.value -like ""*-516"") -or ($_.SecurityIdentifier.value -like ""*-500"") -or ($_.SecurityIdentifier.value -like ""*-498"") -or ($_.SecurityIdentifier.value -eq ""S-1-5-9"")) "
+"{ @('1131f6aa-9c07-11d1-f79f-00c04fc2dcd2', '1131f6ad-9c07-11d1-f79f-00c04fc2dcd2', 'GenericAll', 'ExtendedRight') "
+"{ @('ExtendedRight', 'GenericAll', 'WriteDacl') "
+"{$Cpassword = $Cpassword.Substring(0,$Cpassword.Length -1)"
+"{$Object_GPP.username = $($Object_GPP.Domain) + ""\"" + $($Object_GPP.username)"
+"{$Value = ""[!] $Value"""
+"{$Value = ""[*] $Value"""
+"{$Value = ""[+] $Value"""
+"{$Value = $ANSI_Table[""Blue""]+$Value+$ANSI_Table[""Reset""]"
+"{$Value = $ANSI_Table[""Green""]+$Value+$ANSI_Table[""Reset""]"
+"{$Value = $ANSI_Table[""LightGrey""]+$Value+$ANSI_Table[""Reset""]"
+"{$Value = $ANSI_Table[""Red""]+$Value+$ANSI_Table[""Reset""]"
+"{$Value = $ANSI_Table[""RedYellow""]+$Value+$ANSI_Table[""Reset""]"
+"{$Value = $ANSI_Table[""Yellow""]+$Value+$ANSI_Table[""Reset""]"
+"{$Value =""[#] $Value"""
+"{$YearSpelling = ""year"""
+"{$YearSpelling = ""years"""
+"{$_ -match ""help"" -or $_ -match ""version"""
+"{$_.ActiveDirectoryRights -match ""Write"" -and $_.AccessControlType -eq ""Allow"" -and  $Exclusions -notcontains $_.IdentityReference.toString().split(""\"")[1] -and $_.IdentityReference -ne ""CREATOR OWNER"""
+"{$_.ToString('X').PadLeft(2,'0')"
+"{$_.Type -eq ""1.2.840.113556.1.4.319"""
+"{$_; ""NOT_$_"""
+"{'Name'=""$DFSroot$ShareName"";'RemoteServerName'=$Target.split('\')[2]"
+"{(New-Object System.Security.Principal.SecurityIdentifier($_.objectsid[0],0)).Value -eq $ObjectSID"
+"{(New-Object System.Security.Principal.SecurityIdentifier($_.objectsid[0],0)).Value -eq $PrincipalSID"
+"{){0,1"
+"{0,1"
+"{1,3"
+"{1,4"
+"{2013-07-02 05:43:21, 2014-02-21 03:33:07, 2014-02-21 03:33:48"
+"{2014-02-21 05:29:53, 2014-02-21 05:29:52"
+"{2014-02-21 05:30:14, 2014-02-21 05:30:36"
+"{3,"
+"{Administrator (built-in), DummyAccount, dummy2"
+"{DEMO\Administrator, admin"
+"{Recycling*3ftw!, password123, password1234"
+"{administrator, admin"
+"{password, password1234$"
+"{password, read123"
+"{top, group"
+"{}, XORs any values from -XOR @{"
+{  
+{ $ACLArguments['Credential'] = $Credential 
+{ $ACLArguments['LDAPFilter'] = $LDAPFilter 
+{ $ACLArguments['ResolveGUIDs'] = $ResolveGUIDs 
+{ $ACLArguments['ResultPageSize'] = $ResultPageSize 
+{ $ACLArguments['RightsFilter'] = $RightsFilter 
+{ $ACLArguments['SearchBase'] = $SearchBase 
+{ $ACLArguments['SearchScope'] = $SearchScope 
+{ $ACLArguments['Server'] = $Server 
+{ $ACLArguments['ServerTimeLimit'] = $ServerTimeLimit 
+{ $ACLArguments['Tombstone'] = $Tombstone 
+{ $ADNameArguments['Credential'] = $Credential 
+{ $ADNameArguments['Domain'] = $Domain 
+{ $ADNameArguments['Server'] = $Server 
+{ $AccessMask[$_] 
+{ $Arguments['Credential'] = $Credential 
+{ $Arguments['Domain'] = $Domain 
+{ $Arguments['Forest'] = $Forest 
+{ $Arguments['SSL'] = $SSL 
+{ $Arguments['Server'] = $Server 
+{ $CSVWriter.WriteLine($_) 
+{ $Cert 
+{ $CommonArguments['Credential'] = $Credential 
+{ $CommonArguments['Domain'] = $Domain 
+{ $CommonArguments['ResultPageSize'] = $ResultPageSize 
+{ $CommonArguments['SearchScope'] = $SearchScope 
+{ $CommonArguments['Server'] = $Server 
+{ $CommonArguments['ServerTimeLimit'] = $ServerTimeLimit 
+{ $CommonArguments['Tombstone'] = $Tombstone 
+{ $CommonParameters -notcontains $_ 
+{ $ComputerSearcherArguments['Credential'] = $Credential 
+{ $ComputerSearcherArguments['Domain'] = $ComputerDomain 
+{ $ComputerSearcherArguments['Domain'] = $Domain 
+{ $ComputerSearcherArguments['LDAPFilter'] = $ComputerLDAPFilter 
+{ $ComputerSearcherArguments['OperatingSystem'] = $OperatingSystem 
+{ $ComputerSearcherArguments['ResultPageSize'] = $ResultPageSize 
+{ $ComputerSearcherArguments['SearchBase'] = $ComputerSearchBase 
+{ $ComputerSearcherArguments['SearchScope'] = $SearchScope 
+{ $ComputerSearcherArguments['Server'] = $Server 
+{ $ComputerSearcherArguments['ServerTimeLimit'] = $ServerTimeLimit 
+{ $ComputerSearcherArguments['ServicePack'] = $ServicePack 
+{ $ComputerSearcherArguments['SiteName'] = $SiteName 
+{ $ComputerSearcherArguments['Tombstone'] = $Tombstone 
+{ $ComputerSearcherArguments['Unconstrained'] = $Unconstrained 
+{ $ContextArguments['Credential'] = $Credential 
+{ $ContextArguments['Domain'] = $Domain 
+{ $ConvertArguments['Credential'] = $Credential 
+{ $ConvertArguments['Domain'] = $Domain 
+{ $ConvertArguments['Server'] = $Server 
+{ $ConvertToArguments['Domain'] = $Domain 
+{ $DCSearcherArguments['Credential'] = $Credential 
+{ $DCSearcherArguments['Domain'] = $ComputerDomain 
+{ $DCSearcherArguments['Domain'] = $Domain 
+{ $DCSearcherArguments['Server'] = $Server 
+{ $DNArguments['Credential'] = $Credential 
+{ $DNArguments['Domain'] = $Domain 
+{ $DNArguments['Obfuscate'] = $Obfuscate 
+{ $DNArguments['SSL'] = $SSL 
+{ $DNArguments['Server'] = $Server 
+{ $DNSearcherArguments['Domain'] = $Domain 
+{ $DNSearcherArguments['SSL'] = $SSL 
+{ $DNSearcherArguments['Server'] = $Server 
+{ $DomainControllers = @($DomainControllers) 
+{ $DomainDNArguments['Credential'] = $Credential 
+{ $DomainDNArguments['Domain'] = $Domain 
+{ $DomainDNArguments['SSL'] = $SSL 
+{ $DomainDNArguments['Server'] = $Server 
+{ $DomainGUIDMapArguments['Credential'] = $Credential 
+{ $DomainGUIDMapArguments['Domain'] = $Domain 
+{ $DomainGUIDMapArguments['ResultPageSize'] = $ResultPageSize 
+{ $DomainGUIDMapArguments['SSL'] = $SSL 
+{ $DomainGUIDMapArguments['Server'] = $Server 
+{ $DomainGUIDMapArguments['ServerTimeLimit'] = $ServerTimeLimit 
+{ $DomainNameArguments['Credential'] = $Credential 
+{ $DomainNameArguments['Domain'] = $Domain 
+{ $DomainSearcherArguments['Credential'] = $Credential 
+{ $DomainSearcherArguments['Domain'] = $Domain 
+{ $DomainSearcherArguments['Server'] = $Server 
+{ $DomainTrustArguments['API'] = $API 
+{ $DomainTrustArguments['Credential'] = $Credential 
+{ $DomainTrustArguments['LDAPFilter'] = $LDAPFilter 
+{ $DomainTrustArguments['NET'] = $NET 
+{ $DomainTrustArguments['Properties'] = $Properties 
+{ $DomainTrustArguments['ResultPageSize'] = $ResultPageSize 
+{ $DomainTrustArguments['SearchBase'] = $SearchBase 
+{ $DomainTrustArguments['SearchScope'] = $SearchScope 
+{ $DomainTrustArguments['Server'] = $Server 
+{ $DomainTrustArguments['ServerTimeLimit'] = $ServerTimeLimit 
+{ $DomainTrustArguments['Tombstone'] = $Tombstone 
+{ $DomainUserEventArgs['Credential'] = $Credential 
+{ $DomainUserEventArgs['EndTime'] = $EndTime 
+{ $DomainUserEventArgs['MaxEvents'] = $MaxEvents 
+{ $DomainUserEventArgs['StartTime'] = $StartTime 
+{ $EventArguments['Credential'] = $Credential 
+{ $ExcludeGroups -notcontains $_.samaccountname 
+{ $ExportedFuncName = $EntryPoint 
+{ $ExportedFuncName = $FunctionName 
+{ $FSR -band $_ 
+{ $FileServerSearcherArguments['Credential'] = $Credential 
+{ $FileServerSearcherArguments['Domain'] = $ComputerDomain 
+{ $FileServerSearcherArguments['Domain'] = $Domain 
+{ $FileServerSearcherArguments['ResultPageSize'] = $ResultPageSize 
+{ $FileServerSearcherArguments['SearchBase'] = $ComputerSearchBase 
+{ $FileServerSearcherArguments['SearchScope'] = $SearchScope 
+{ $FileServerSearcherArguments['Server'] = $Server 
+{ $FileServerSearcherArguments['ServerTimeLimit'] = $ServerTimeLimit 
+{ $FileServerSearcherArguments['Tombstone'] = $Tombstone 
+{ $FileServers = @($FileServers) 
+{ $ForestArguments['Credential'] = $Credential 
+{ $ForestArguments['Domain'] = $Domain 
+{ $ForestArguments['Server'] = $Server 
+{ $ForestTrustArguments['Credential'] = $Credential 
+{ $ForestTrustArguments['Forest'] = $Forest 
+{ $GroupSearcherArguments['Credential'] = $Credential 
+{ $GroupSearcherArguments['Domain'] = $UserDomain 
+{ $GroupSearcherArguments['ResultPageSize'] = $ResultPageSize 
+{ $GroupSearcherArguments['SearchBase'] = $UserSearchBase 
+{ $GroupSearcherArguments['SearchScope'] = $SearchScope 
+{ $GroupSearcherArguments['Server'] = $Server 
+{ $GroupSearcherArguments['ServerTimeLimit'] = $ServerTimeLimit 
+{ $GroupSearcherArguments['Tombstone'] = $Tombstone 
+{ $GuidMapperArguments['Credential'] = $Credential 
+{ $GuidMapperArguments['Domain'] = $TargetDomain 
+{ $GuidMapperArguments['Server'] = $Server 
+{ $LdapSearcherArguments['Credential'] = $Credential 
+{ $LdapSearcherArguments['Domain'] = $Domain 
+{ $LdapSearcherArguments['LDAPFilter'] = $LDAPFilter 
+{ $LdapSearcherArguments['Properties'] = $Properties 
+{ $LdapSearcherArguments['ResultPageSize'] = $ResultPageSize 
+{ $LdapSearcherArguments['SSL'] = $SSL 
+{ $LdapSearcherArguments['SearchBase'] = $SearchBase 
+{ $LdapSearcherArguments['SearchScope'] = $SearchScope 
+{ $LdapSearcherArguments['Server'] = $Server 
+{ $LdapSearcherArguments['ServerTimeLimit'] = $ServerTimeLimit 
+{ $LdapSearcherArguments['Tombstone'] = $Tombstone 
+{ $Members = @($Members) 
+{ $NetForestArguments['Credential'] = $Credential 
+{ $NetForestArguments['Forest'] = $Forest 
+{ $NetSearcherArguments['SSL'] = $SSL 
+{ $NewField.SetOffset($Offset) 
+{ $Object | Add-Member Noteproperty 'PrivateKeyExportable' $true 
+{ $ObjectArguments['Identity'] = $Identity 
+{ $ObjectArguments['Obfuscate'] = $Obfuscate 
+{ $ObjectSearcherArguments['Credential'] = $Credential 
+{ $ObjectSearcherArguments['ResultPageSize'] = $ResultPageSize 
+{ $ObjectSearcherArguments['SearchScope'] = $SearchScope 
+{ $ObjectSearcherArguments['Server'] = $Server 
+{ $ObjectSearcherArguments['ServerTimeLimit'] = $ServerTimeLimit 
+{ $ObjectSearcherArguments['Tombstone'] = $Tombstone 
+{ $Object_MSOL | Add-Member Noteproperty 'RunningOnServer' $Object_MSOLDetails[1] 
+{ $Object_MSOL | Add-Member Noteproperty 'UsedForAzureAD' $Object_MSOLDetails[2] 
+{ $PSBoundParameters.Keys -notcontains $_ 
+{ $ParseArgs['Credential'] = $Credential 
+{ $PolicyArguments['Credential'] = $Credential 
+{ $PolicyArguments['Domain'] = $Domain 
+{ $PolicyArguments['Server'] = $Server 
+{ $PolicyArguments['ServerTimeLimit'] = $ServerTimeLimit 
+{ $PrincipalSearcherArguments['Credential'] = $Credential 
+{ $PrincipalSearcherArguments['Domain'] = $PrincipalDomain 
+{ $PrincipalSearcherArguments['ResultPageSize'] = $ResultPageSize 
+{ $PrincipalSearcherArguments['SearchScope'] = $SearchScope 
+{ $PrincipalSearcherArguments['Server'] = $Server 
+{ $PrincipalSearcherArguments['ServerTimeLimit'] = $ServerTimeLimit 
+{ $PrincipalSearcherArguments['Tombstone'] = $Tombstone 
+{ $Properties['Charset'] = $Charset 
+{ $Properties['EntryPoint'] = $EntryPoint 
+{ $Properties['NativeCallingConvention'] = $NativeCallingConvention 
+{ $Properties['ParameterTypes'] = $ParameterTypes 
+{ $Properties['SetLastError'] = $SetLastError 
+{ $Props.trustattributes[0] -band $_ 
+{ $Result += $item 
+{ $Results = $DNSSearcher.FindAll() 
+{ $Results = $DNSSearcher.FindOne() 
+{ $Results = $DNSSearcher1.FindAll() 
+{ $Results = $DNSSearcher1.FindOne()  
+{ $Results = $DNSSearcher2.FindAll() 
+{ $Results = $DNSSearcher2.FindOne() 
+{ $Results = $IdentitySearcher.FindAll() 
+{ $Results = $OUSearcher.FindAll() 
+{ $Results = $OUSearcher.FindOne() 
+{ $Results = $ObjectSearcher.FindAll() 
+{ $Results = $ObjectSearcher.FindOne() 
+{ $Results = $RBCDSearcher.FindAll() 
+{ $Results = $RBCDSearcher.FindOne() 
+{ $Results = $Searcher.FindAll() 
+{ $Results = $Searcher.FindOne() 
+{ $Results = $SiteSearcher.FindAll() 
+{ $Results = $SubnetSearcher.FindAll() 
+{ $Results = $SubnetSearcher.FindOne() 
+{ $Results.dispose() 
+{ $SLEValue = $False 
+{ $SLEValue = $True 
+{ $SchemaArguments['Credential'] = $Credential 
+{ $ScreenPrinterArguments['Class'] = $Class 
+{ $ScreenPrinterArguments['Logo'] = $Logo 
+{ $ScreenPrinterArguments['Raw'] = $True 
+{ $ScreenPrinterArguments['Value'] = $Value 
+{ $SearcherArguments.Remove('Properties') 
+{ $SearcherArguments['CertPassword'] = $CertPassword 
+{ $SearcherArguments['Certificate'] = $Certificate 
+{ $SearcherArguments['Credential'] = $Credential 
+{ $SearcherArguments['Domain'] = $Domain 
+{ $SearcherArguments['Domain'] = $Domain; $DNSearcherArguments['Domain'] = $Domain 
+{ $SearcherArguments['FindOne'] = $FindOne 
+{ $SearcherArguments['Identity'] = $Identity 
+{ $SearcherArguments['LDAPFilter'] = $Domain 
+{ $SearcherArguments['LDAPFilter'] = $LDAPFilter 
+{ $SearcherArguments['Obfuscate'] = $Obfuscate 
+{ $SearcherArguments['Properties'] = $OldProperties 
+{ $SearcherArguments['Properties'] = $Properties 
+{ $SearcherArguments['Properties'] = '*' 
+{ $SearcherArguments['Raw'] = $Raw 
+{ $SearcherArguments['ResultPageSize'] = $ResultPageSize 
+{ $SearcherArguments['SSL'] = $SSL 
+{ $SearcherArguments['SSL'] = $True; $DNSearcherArguments['SSL'] = $True 
+{ $SearcherArguments['SearchBase'] = $SearchBase 
+{ $SearcherArguments['SearchScope'] = $SearchScope 
+{ $SearcherArguments['SecurityMasks'] = $SecurityMasks 
+{ $SearcherArguments['SecurityMasks'] = 'Owner' 
+{ $SearcherArguments['Server'] = $Server 
+{ $SearcherArguments['Server'] = $Server; $DNSearcherArguments['Server'] = $Server 
+{ $SearcherArguments['ServerTimeLimit'] = $ServerTimeLimit 
+{ $SearcherArguments['TLS'] = $True 
+{ $SearcherArguments['Tombstone'] = $Tombstone 
+{ $TargetSearcherArguments['Credential'] = $Credential 
+{ $TargetSearcherArguments['Domain'] = $TargetDomain 
+{ $TargetSearcherArguments['LDAPFilter'] = $TargetLDAPFilter 
+{ $TargetSearcherArguments['ResultPageSize'] = $ResultPageSize 
+{ $TargetSearcherArguments['SearchBase'] = $TargetSearchBase 
+{ $TargetSearcherArguments['SearchScope'] = $SearchScope 
+{ $TargetSearcherArguments['Server'] = $Server 
+{ $TargetSearcherArguments['ServerTimeLimit'] = $ServerTimeLimit 
+{ $TargetSearcherArguments['Tombstone'] = $Tombstone 
+{ $TrustAttributes[$_] 
+{ $UserName = '' 
+{ $UserSearcherArguments['AdminCount'] = $UserAdminCount 
+{ $UserSearcherArguments['AllowDelegation'] = $UserAllowDelegation 
+{ $UserSearcherArguments['Credential'] = $Credential 
+{ $UserSearcherArguments['Domain'] = $Domain 
+{ $UserSearcherArguments['Domain'] = $UserDomain 
+{ $UserSearcherArguments['Identity'] = $Identity 
+{ $UserSearcherArguments['Identity'] = $UserIdentity 
+{ $UserSearcherArguments['LDAPFilter'] = $LDAPFilter 
+{ $UserSearcherArguments['LDAPFilter'] = $UserLDAPFilter 
+{ $UserSearcherArguments['ResultPageSize'] = $ResultPageSize 
+{ $UserSearcherArguments['SearchBase'] = $SearchBase 
+{ $UserSearcherArguments['SearchBase'] = $UserSearchBase 
+{ $UserSearcherArguments['SearchScope'] = $SearchScope 
+{ $UserSearcherArguments['Server'] = $Server 
+{ $UserSearcherArguments['ServerTimeLimit'] = $ServerTimeLimit 
+{ $UserSearcherArguments['Tombstone'] = $Tombstone 
+{ $Values = @($Values) 
+{ $WmiArguments['Credential'] = $Credential 
+{ $_ 
+{ $_ -match 'S-1-5-21-[0-9]+-[0-9]+-[0-9]+-[0-9]+$' 
+{ $_.GetDirectoryEntry() 
+{ $_.Name -eq 'BeginInvoke' 
+{ $_.PSObject.TypeNames[0] -eq 'PowerView.User' 
+{ $_.Trim('*') 
+{ $_.Trim() 
+{ $_.Value.ParameterSets.Keys -contains $PsCmdlet.ParameterSetName 
+{ $_.action -match 'ADD' 
+{ $_.name 
+{ $_.psbase.schemaClassName -eq 'group' 
+{ $_.sid 
+{ $adPEAS_NetLogonTarget = $Server 
+{ $adPEAS_NetLogonTarget = $adPEAS_Domain 
+{ $true 
+{ '(!(groupType:1.2.840.113556.1.4.803:=1))' 
+{ '(!(groupType:1.2.840.113556.1.4.803:=2))' 
+{ '(!(groupType:1.2.840.113556.1.4.803:=2147483648))' 
+{ '(!(groupType:1.2.840.113556.1.4.803:=4))' 
+{ '(!(groupType:1.2.840.113556.1.4.803:=8))' 
+{ '(groupType:1.2.840.113556.1.4.803:=1)' 
+{ '(groupType:1.2.840.113556.1.4.803:=2)' 
+{ '(groupType:1.2.840.113556.1.4.803:=2147483648)' 
+{ '(groupType:1.2.840.113556.1.4.803:=4)' 
+{ '(groupType:1.2.840.113556.1.4.803:=8)' 
+{ '00000000-0000-0000-0000-000000000000' 
+{ '00299570-246d-11d0-a768-00aa006e0529' 
+{ 'All Services' 
+{ 'Anonymous Logon' 
+{ 'Authenticated Users' 
+{ 'BUILTIN\Access Control Assistance Operators' 
+{ 'BUILTIN\Account Operators' 
+{ 'BUILTIN\Administrators' 
+{ 'BUILTIN\Backup Operators' 
+{ 'BUILTIN\Certificate Service DCOM Access' 
+{ 'BUILTIN\Cryptographic Operators' 
+{ 'BUILTIN\Distributed COM Users' 
+{ 'BUILTIN\Event Log Readers' 
+{ 'BUILTIN\Guests' 
+{ 'BUILTIN\Hyper-V Administrators' 
+{ 'BUILTIN\Incoming Forest Trust Builders' 
+{ 'BUILTIN\Network Configuration Operators' 
+{ 'BUILTIN\Performance Log Users' 
+{ 'BUILTIN\Performance Monitor Users' 
+{ 'BUILTIN\Power Users' 
+{ 'BUILTIN\Pre-Windows 2000 Compatible Access' 
+{ 'BUILTIN\Print Operators' 
+{ 'BUILTIN\RDS Endpoint Servers' 
+{ 'BUILTIN\RDS Management Servers' 
+{ 'BUILTIN\RDS Remote Access Servers' 
+{ 'BUILTIN\Remote Desktop Users' 
+{ 'BUILTIN\Remote Management Users' 
+{ 'BUILTIN\Replicators' 
+{ 'BUILTIN\Server Operators' 
+{ 'BUILTIN\Terminal Server License Servers' 
+{ 'BUILTIN\Users' 
+{ 'BUILTIN\Windows Authorization Access Group' 
+{ 'Batch' 
+{ 'Bidirectional' 
+{ 'Console Logon' 
+{ 'Creator Authority' 
+{ 'Creator Group Server' 
+{ 'Creator Group' 
+{ 'Creator Owner Server' 
+{ 'Creator Owner' 
+{ 'Dialup' 
+{ 'Digest Authentication' 
+{ 'Disabled' 
+{ 'Enterprise Domain Controllers' 
+{ 'Everyone' 
+{ 'ExtendedRight' 
+{ 'GenericAll' 
+{ 'GenericWrite' 
+{ 'IUSR' 
+{ 'Identity' = $Identity 
+{ 'Inbound' 
+{ 'Interactive' 
+{ 'Local Authority' 
+{ 'Local System' 
+{ 'Local account and member of Administrators group' 
+{ 'Local account' 
+{ 'Local' 
+{ 'MIT' 
+{ 'NT Authority' 
+{ 'NT Service' 
+{ 'NT VIRTUAL MACHINE\Virtual Machines' 
+{ 'NTLM Authentication' 
+{ 'Network Service' 
+{ 'Network' 
+{ 'Nobody' 
+{ 'Non-unique Authority' 
+{ 'Null Authority' 
+{ 'Outbound' 
+{ 'Owner Rights' 
+{ 'Principal Self' 
+{ 'Proxy' 
+{ 'Remote Interactive Logon' 
+{ 'Restricted Code' 
+{ 'SChannel Authentication' 
+{ 'Service' 
+{ 'Terminal Server User' 
+{ 'This Organization' 
+{ 'WINDOWS_ACTIVE_DIRECTORY' 
+{ 'WINDOWS_NON_ACTIVE_DIRECTORY' 
+{ 'World Authority' 
+{ 'WriteProperty' 
+{ '\' + $_.ToString('X2') 
+{ 'bf9679c0-0de6-11d0-a285-00aa003049e2' 
+{ -not $_.Result.IsCompleted 
+{ @('00299570-246d-11d0-a768-00aa006e0529') 
+{ @('bf9679c0-0de6-11d0-a285-00aa003049e2') 
+{ Convert-ADCSEnrollmentFlag -Flag $Value 
+{ Convert-ADCSExtendedKeyFlag -OID $Value 
+{ Convert-ADCSNameFlag -Flag $Value 
+{ Convert-ADCSPrivateKeyFlag -Flag $Value 
+{ Export-Csv -InputObject $_ -Path $OutFile -Append 
+{ Invoke-RevertToSelf -TokenHandle $InvokeadPEAS_LogonToken
+{ Remove-RemoteConnection -Path $_ 
+{ Test-Path -Path $_ 
+{ [CmdletBinding()] Param() 
+{ [System.DirectoryServices.SecurityMasks]::Dacl 
+{ [System.DirectoryServices.SecurityMasks]::Group 
+{ [System.DirectoryServices.SecurityMasks]::None 
+{ [System.DirectoryServices.SecurityMasks]::Owner 
+{ [System.DirectoryServices.SecurityMasks]::Sacl 
+{ if ($PSBoundParameters['Sacl']) {$_.SystemAcl
+{$Cpassword += ('=' * (4 - $Mod))
+{$DNArguments['CertPassword'] = $CertPassword 
+{$DNArguments['Certificate'] = $Certificate 
+{$DNSearcherArguments['Obfuscate'] = $Obfuscate 
+{$Filter += Get-IdentityFilterString $_.ObjectSID
+{$GPPPassword | Add-Member Noteproperty 'Changed' $Changed
+{$GPPPassword | Add-Member Noteproperty 'Domain' $UserDomain
+{$GPPPassword | Add-Member Noteproperty 'File' $File
+{$GPPPassword | Add-Member Noteproperty 'Password' $UserPassword
+{$GPPPassword | Add-Member Noteproperty 'UserName' $UserName
+{$LdapSearcherArguments['Obfuscate'] = $Obfuscate 
+{$LogonToken = Invoke-UserImpersonation -Credential $Credential
+{$MembershipValue = @($MembershipValue)
+{$NetSearcherArguments['Obfuscate'] = $Obfuscate 
+{$Nops += '\{0:x
+{$OUComputers = @($OUComputers)
+{$ObjectGuid
+{$Out | Add-Member Noteproperty 'IdentityReference' $(ConvertFrom-SID -ObjectSID $SID @ConvertArguments)
+{$SearcherArguments['CertPassword'] = $CertPassword 
+{$SearcherArguments['Certificate'] = $Certificate 
+{$SearcherArguments['Obfuscate'] = $Obfuscate 
+{$TargetUsers -contains $_.TargetUserName
+{$_
+{$_ -and $_.Trim()
+{$_ -and ($_ -ne '')
+{$_ -notmatch '.DEFAULT' -and $_ -notmatch '_Classes'
+{$_.AddressFamily -eq 'InterNetwork'
+{$_.DiscretionaryAcl
+{$_.Matches | Select-Object -ExpandProperty Value 
+{$_.MemberObjectClass -ne 'group'
+{$_.ObjectDN -eq $template.distinguishedname
+{$_.ObjectSID -eq $ObjectSid
+{$_.Properties.distinguishedname[0]
+{$_.RemoteServerName
+{$_.SID -match '.*-500' -or ($_.SID -match '.*-501')
+{$_.TagNo -eq 2
+{$_.TagNo -eq 6
+{$_.Trim()
+{$_.Value -eq $PropertyName
+{$_.distinguishedname -match ($Filters.Value)
+{$_.password
+{$_.samaccountname -ne 'krbtgt'
+{$_.securityidentifier -eq $Harmj0ySid
+{$_.securityidentifier -eq $Harmj0ySid 
+{$_.securityidentifier -eq $UserSID
+{$_.securityidentifier -eq $UserSID 
+{$_.value -eq 'Computer'
+{$_.value -eq 'ms-Mcs-AdmPwd'
+{$false
+{$true
+{$varFile = 'file'
+{$varFile = 'files'
+{'00000000-0000-0000-0000-000000000000' = 'All'
+{'IpAddress'='192.168.52.200|192.168.52.201'
+{'LogonGuid'='b8458aa9-b36e-eaa1-96e0-4551000fdb19'; 'TargetLogonId' = '10238128'; 'op'='&'
+{'Name'=$Properties.name[0];'RemoteServerName'=$_
+{'Name'=$Properties.name[0];'RemoteServerName'=$_.split('\')[2]
+{'ObjectName' = $Groupname
+{'ObjectName' = $Member
+{'Type' = $_.LocalName;'Value' = $_.name
+{'altsecurityidentities'=$AltIDs
+{'countrycode'=1234; 'mstsinitialprogram'='\\EVIL\program2.exe'
+{'mstsinitialprogram'='\\EVIL\program.exe'
+{'scriptpath'='\\EVIL\program2.exe'
+{($_ -is [Reflection.Emit.ModuleBuilder]) -or ($_ -is [Reflection.Assembly])
+{($_ -ne 'Op') -and ($_ -ne 'Operator') -and ($_ -ne 'Operation')
+{.*
+{0
+{0847C615-6C4E-4D45-A064-6001040CC21C
+{0:x
+{0:x8
+{1
+{12
+{1:x8
+{2
+{2014-02-21 05:28:53
+{3
+{31B2F340-016D-11D2-945F-00C04FB982DA
+{31B2F340-016D-11D2-945F-00C04FB984F9
+{4
+{6AC1786C-016F-11D2-945F-00C04FB984F9
+{8
+{95ee9fff-3436-11d1-b2b0-d15ae3ac8436
+{F260B76D-55C8-46C5-BEF1-9016DD98E272
+{FieldName = $Field; Properties = $StructFields[$Field]
+{Get-Acl -Path $_.FullName
+{Get-Variable -Name $_ -ValueOnly -Scope 0
+{Get-adPEASADCS @SearcherArguments
+{Get-adPEASAccounts @SearcherArguments
+{Get-adPEASBloodhound @SearcherArguments -Scope $Scope
+{Get-adPEASComputer @SearcherArguments
+{Get-adPEASCreds @SearcherArguments
+{Get-adPEASDelegation @SearcherArguments
+{Get-adPEASDomain @SearcherArguments
+{Get-adPEASGPO @SearcherArguments
+{Get-adPEASRights @SearcherArguments
+{Invoke-RevertToSelf -TokenHandle $LogonToken
+{Split-Path($UserResult.Properties['profilepath'])
+{Split-Path($UserResult.Properties['scriptpath'])
+{[System.Text.Encoding]::ASCII.GetString($_)
+{[void]$PSBoundParameters.Remove($_)
+{_
+{if ($LastAttribute -notmatch $Item) {$Check += 1
+{if ($Next.ToLower() -match $Item) {$Skip = $True
+{if ($Parts[0].ToLower() -match $Item) {$Skip = $True
+{if ($UserResult.Properties['homedirectory']) {Split-Path($UserResult.Properties['homedirectory'])
+{mspresenters
+{n
+{password12
+{test1
+{useraccountcontrol=65536
+{{J

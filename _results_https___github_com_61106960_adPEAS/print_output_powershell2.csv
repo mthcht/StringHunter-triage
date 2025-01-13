@@ -1,0 +1,7 @@
+"Write-Error ""$Computer not reachable"
+"Write-Error ""[Add-DomainAltSecurityIdentity] A -Type must be set"
+"Write-Error ""[Add-DomainAltSecurityIdentity] Certificate altSecurityIdentity requires a Subject"
+"Write-Error ""[Get-RubeusForgeryArgs] Identity argument is required!"
+"Write-Error ""[Invoke-CheckADCS] Could not connect to web enrollment of ADCS: $_"
+"Write-Error ""[Invoke-CheckADCS] Exchange build number could not be determined: $_"
+"Write-Error ""[Invoke-CheckExchange] Exchange build number could not be determined: $_"

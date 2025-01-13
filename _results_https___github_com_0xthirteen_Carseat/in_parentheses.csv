@@ -1,0 +1,1523 @@
+"(""        [!] NTLM clients support NTLMv1!"""
+"(""        [!] NTLM services on this machine support NTLMv1!"""
+"(""        [!] Version 2.0.50727 of the CLR is not installed - PowerShell v2.0 won't be able to run."""
+"(""      ------------------------------"""
+"(""      Logged Module Names :"""
+"(""    [*] Applocker is not running because the AppIDSvc is not running\n"""
+"(""    [*] Default Windows settings - Only the RID-500 local admin account can be used for lateral movement."""
+"(""    [*] LocalAccountTokenFilterPolicy == 1. Any administrative local account can be used for lateral movement."""
+"(""    [*] LocalAccountTokenFilterPolicy set to 0 and FilterAdministratorToken == 1.\n    [*] Local accounts cannot be used for lateral movement."""
+"(""    [*] UAC is disabled.\n    [*] Any administrative local account can be used for lateral movement."""
+"(""  --- TargetUser,ProcessResults,SubjectUser,IpAddress ---"""
+"(""  ----------                         ------------"""
+"(""  <Dates the credential was used to logon>\n\n"""
+"(""  NTLM v1 authentication is 100 percent broken!\n"""
+"(""  RemoteHost                         UsernameHint"""
+"(""  TimeCreated,TargetUser,LogonType,IpAddress,SubjectUsername,AuthenticationPackageName,LmPackageName,TargetOutboundUser"""
+"(""  You can obtain NetNTLMv2 for these accounts by sniffing NTLM challenge/responses."""
+"(""  You can obtain these accounts' **NTLM** hashes by sniffing NTLM challenge/responses and then cracking them!"""
+"(""  You can then try and crack their passwords.\n"""
+"(""  [*] AppLocker not configured"""
+"(""  [X] 'MSFT_DNSClientCache' WMI class unavailable (minimum supported versions of Windows: 8/2012"
+"(""  [X] 'MSFT_ScheduledTask' WMI class unavailable (minimum supported versions of Windows: 8/2012"
+"(""%a %d %b %Y %H:%M:%S"""
+"(""%m/%d/%Y %I:%M:%S %p"""
+"("".//RecentServers"""
+"("".//Servers"""
+"("".//SessionData"""
+"(""1"", laps_admin_account_name, laps_password_complexity, laps_password_length, laps_pwd_expiration_protection_enabled"
+"(""8"""
+"(""@"""
+"(""ALL APPLICATION PACKAGES"", ""S-1-15-2-1"""
+"(""Allow"" in action_args and rule.Action == ""Allow"""
+"(""BUILTIN\\Account Operators"", ""S-1-5-32-548"""
+"(""BUILTIN\\Administrators"", ""S-1-5-32-544"""
+"(""BUILTIN\\Backup Operators"", ""S-1-5-32-551"""
+"(""BUILTIN\\Cryptographic Operators"", ""S-1-5-32-569"""
+"(""BUILTIN\\Device Owners"", ""S-1-5-32-583"""
+"(""BUILTIN\\Guests"", ""S-1-5-32-546"""
+"(""BUILTIN\\Network Configuration Operators"", ""S-1-5-32-556"""
+"(""BUILTIN\\Power Users"", ""S-1-5-32-547"""
+"(""BUILTIN\\Pre-Windows 2000 Compatible Access"", ""S-1-5-32-554"""
+"(""BUILTIN\\Print Operators"", ""S-1-5-32-550"""
+"(""BUILTIN\\Remote Desktop Users"", ""S-1-5-32-555"""
+"(""BUILTIN\\Remote Management Users"", ""S-1-5-32-580"""
+"(""BUILTIN\\Replicator"", ""S-1-5-32-552"""
+"(""BUILTIN\\Server Operators"", ""S-1-5-32-549"""
+"(""BUILTIN\\Users"", ""S-1-5-32-545"""
+"(""Block"" in action_args and rule.Action == ""Block"""
+"(""Certificate Publishers"", ""S-1-5-21domain-517"""
+"(""Creator Group"", ""S-1-3-1"""
+"(""Creator Owner"", ""S-1-3-0"""
+"(""Domain Admins"", ""S-1-5-21domain-512"""
+"(""Domain Computers"", ""S-1-5-21domain-515"""
+"(""Domain Users"", ""S-1-5-21domain-513"""
+"(""Domain"" in profile_args and rule.Profiles.strip("
+"(""Enterprise Admins"", ""S-1-5-21root domain-519"""
+"(""Enterprise Domain Controllers"", ""S-1-5-9"""
+"(""Enumerating Windows Hotfixes. For *all* Microsoft updates, use the 'MicrosoftUpdates' command.\r\n"""
+"(""Everyone"", ""S-1-1-0"""
+"(""ExtraArgs"""
+"(""Host"""
+"(""In"" in direction_args and rule.Direction == ""In"""
+"(""Logon Sessions (via WMI"
+"(""Mapped Drives (via WMI"
+"(""Microsoft"", str(data[""Author""]"
+"(""NT AUTHORITY\\ANONYMOUS LOGON"", ""S-1-5-7"""
+"(""NT AUTHORITY\\Account Operators"", ""S-1-5-32-548"""
+"(""NT AUTHORITY\\Authenticated Users"", ""S-1-5-11"""
+"(""NT AUTHORITY\\INTERACTIVE"", ""S-1-5-4"""
+"(""NT AUTHORITY\\LOCAL SERVICE"", ""S-1-5-19"""
+"(""NT AUTHORITY\\NETWORK SERVICE"", ""S-1-5-20"""
+"(""NT AUTHORITY\\RESTRICTED"", ""S-1-5-12"""
+"(""NT AUTHORITY\\SYSTEM"", ""S-1-5-18"""
+"(""Name"""
+"(""Network"", ""S-1-5-2"""
+"(""No share selected"""
+"(""Not connected to SMB server. Call connect("
+"(""OWNER RIGHTS"", ""S-1-3-4"""
+"(""Out"" in direction_args and rule.Direction == ""Out"""
+"(""Output Format:"""
+"(""Pass"""
+"(""Port"""
+"(""Powered On Events (Time is local time"
+"(""Principal Self"", ""S-1-5-10"""
+"(""Private"" in profile_args and rule.Profiles.strip("
+"(""Proto"""
+"(""Protocol"""
+"(""Public"" in profile_args and rule.Profiles.strip("
+"(""RAS and IAS Servers"", ""S-1-5-21domain-553"""
+"(""RESTRICTED APPLICATION PACKAGES"", ""S-1-15-2-2"""
+"(""S-1-"""
+"(""SELECT Name, State FROM win32_service WHERE Name = 'AppIDSvc'"""
+"(""SessionName"""
+"(""TCP"" in protocol_args and rule.Protocol == ""TCP"""
+"(""UDP"" in protocol_args and rule.Protocol == ""UDP"""
+"(""Unknown attribute next_token"", hex(next_token[0]"
+"(""Unknown binxml token"", hex(next_token"
+"(""Unknown element next_token"", hex(next_token"
+"(""Unknown intern next_token"", hex(next_token"
+"(""Unknown template token"", hex(next_token"
+"(""Unknown value type"", hex(value.type"
+"(""User"""
+"(""Username"""
+"(""Version information not found in the file."""
+"(""WMI service not initialized. Call connect("
+"(""[-] File is not a valid JSON"""
+"(""\n  Accounts authenticate to this machine using NTLM v1!"""
+"(""\n  Accounts authenticate to this machine using NTLM v2!"""
+"(""\n  Module Logging Settings"""
+"(""\n  NTLM Auditing and Restrictions"""
+"(""\n  NTLM Signing Settings"""
+"(""\n  Session Security"""
+"(""\n  Transcription Logging Settings"""
+"(""encoding"""
+"(""find must be either 'lowest' or 'highest'"""
+"(""url"", ""(Bookmark Folder?"
+"(""utf16"""
+"('         Version is 80+, new DPAPI scheme must be used'"
+"('        [!] Module logging is configured. Logging will not occur, however, because it requires PSv3.'"
+"('        [!] Script block logging is configured. Logging will not occur, however, because it requires PSv5.""'"
+"('  [*] You can also extract many DPAPI masterkeys from memory with the Mimikatz ""sekurlsa::dpapi"" module'"
+"(','"
+"('-group', action='store', help='group commands together'"
+"('-hashes', action=""store"", metavar=""LMHASH:NTHASH"", help='NTLM hashes, format is LMHASH:NTHASH'"
+"('-no-pass', action=""store_true"", help='don\'t ask for password (useful for -k"
+"('.//ns:EventData/ns:Data', ns"
+"('.//ns:System//*', ns"
+"('.//pc:Security', namespaces"
+"('/','\\'"
+"('<B', buf, offset + 1 + self._name.length"
+"('<B', buf, offset"
+"('<BB', value.data"
+"('<BB16sIB', buf, offset"
+"('<BBBBB', buf, offset"
+"('<BBH', buf, offset"
+"('<BHB', buf, offset"
+"('<BHI', buf, offset"
+"('<BI', buf, offset + 22 + self._xml.length"
+"('<HBB', buf, offset"
+"('<HH', buf, offset"
+"('<I', buf, ofs"
+"('<I', value.data[8 + 4 * i:12 + 4 * i]"
+"('<IIIII', buf"
+"('<Q', shutdown_bytes"
+"('<Q', time_bytes"
+"('<Q', value.data"
+"('>Q', value.data, 2"
+"('AWS', aws_base, last_accessed, last_modified, cred_size"
+"('Azure', azure_base, a_last_accessed, a_last_modified, a_cred_size"
+"('Bluemix', bluemix_base, b_last_accessed, b_last_modified, b_cred_size"
+"('Data', uac_obj"
+"('False', None, None, None, None"
+"('Google', google_base, g_last_accessed, g_last_modified, g_cred_size"
+"('HKLM ', r'SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5', 'Version'"
+"('HKLM ', r'SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full', 'Version'"
+"('HKLM', 'SOFTWARE\\Microsoft\\AMSI\\Providers'"
+"('HKLM', 'SOFTWARE\\Microsoft\\CCMSetup', 'LastValidMP'"
+"('HKLM', 'SOFTWARE\\Microsoft\\Cryptography', 'MachineGuid'"
+"('HKLM', 'SOFTWARE\\Microsoft\\PowerShell\\1\\PowerShellEngine', 'PowerShellVersion'"
+"('HKLM', 'SOFTWARE\\Microsoft\\PowerShell\\3\\PowerShellEngine', 'PowerShellVersion'"
+"('HKLM', 'SOFTWARE\\Microsoft\\SMS\\Mobile Client', 'AssignedSiteCode'"
+"('HKLM', 'SOFTWARE\\Microsoft\\SMS\\Mobile Client', 'LastSuccessfulInstallParams'"
+"('HKLM', 'SOFTWARE\\Microsoft\\SMS\\Mobile Client', 'ProductVersion'"
+"('HKLM', 'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\NetworkList\\Profiles\\'"
+"('HKLM', 'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon', 'AltDefaultDomainName'"
+"('HKLM', 'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon', 'AltDefaultPassword'"
+"('HKLM', 'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon', 'AltDefaultUserName'"
+"('HKLM', 'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon', 'DefaultDomainName'"
+"('HKLM', 'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon', 'DefaultPassword'"
+"('HKLM', 'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon', 'DefaultUserName'"
+"('HKLM', 'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\chrome.exe', ''"
+"('HKLM', 'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System' , 'EnableLUA'"
+"('HKLM', 'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System', 'ConsentPromptBehaviorAdmin'"
+"('HKLM', 'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System', 'FilterAdministratorToken'"
+"('HKLM', 'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System', 'LocalAccountTokenFilterPolicy'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services', 'AuthenticationLevel'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services', 'DisablePasswordSaving'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services', 'UserAuthentication'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services', 'fDisableCcm'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services', 'fDisableCdm'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services', 'fDisableClip'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services', 'fDisableCpm'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services', 'fDisableLPT'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services', 'fDisablePNPRedir'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services', 'fEnableSmartCard'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\ModuleLogging', 'EnableModuleLogging'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\ModuleLogging\\ModuleNames'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\ScriptBlockLogging', 'EnableScriptBlockInvocationLogging'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\ScriptBlockLogging', 'EnableScriptBlockLogging'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\Transcription', 'EnableInvocationHeader'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\Transcription', 'EnableTranscripting'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\Transcription', 'OutputDirectory'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate', 'UpdateServiceUrlAlternate'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate', 'WUServer'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate', 'WUStatusServer'"
+"('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU', 'UseWUServer'"
+"('HKLM', 'SYSTEM\\ControlSet001\\Control\\Windows', 'ShutdownTime'"
+"('HKLM', 'SYSTEM\\CurrentControlSet\\Control\\Lsa'"
+"('HKLM', 'SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0', 'AuditReceivingNTLMTraffic'"
+"('HKLM', 'SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0', 'ClientAllowedNTLMServers'"
+"('HKLM', 'SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0', 'NtlmMinClientSec'"
+"('HKLM', 'SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0', 'NtlmMinServerSec'"
+"('HKLM', 'SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0', 'RestrictReceivingNTLMTraffic'"
+"('HKLM', 'SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0', 'RestrictSendingNTLMTraffic'"
+"('HKLM', 'SYSTEM\\CurrentControlSet\\Control\\SecureBoot\\State', 'PolicyPublisher'"
+"('HKLM', 'SYSTEM\\CurrentControlSet\\Control\\SecureBoot\\State', 'PolicyVersion'"
+"('HKLM', 'SYSTEM\\CurrentControlSet\\Control\\SecureBoot\\State', 'UEFISecureBootEnabled'"
+"('HKLM', 'SYSTEM\\CurrentControlSet\\Services\\SysmonDrv\\Parameters', 'HashingAlgorithm'"
+"('HKLM', 'SYSTEM\\CurrentControlSet\\Services\\SysmonDrv\\Parameters', 'Options'"
+"('HKLM', 'SYSTEM\\CurrentControlSet\\Services\\SysmonDrv\\Parameters', 'Rules'"
+"('HKLM', 'Software\\Microsoft\\Windows NT\\CurrentVersion', 'BuildBranch'"
+"('HKLM', 'Software\\Microsoft\\Windows NT\\CurrentVersion', 'CurrentBuildNumber'"
+"('HKLM', 'Software\\Microsoft\\Windows NT\\CurrentVersion', 'CurrentMajorVersionNumber'"
+"('HKLM', 'Software\\Microsoft\\Windows NT\\CurrentVersion', 'CurrentVersion'"
+"('HKLM', 'Software\\Microsoft\\Windows NT\\CurrentVersion', 'EditionID'"
+"('HKLM', 'Software\\Microsoft\\Windows NT\\CurrentVersion', 'ProductName'"
+"('HKLM', 'Software\\Microsoft\\Windows NT\\CurrentVersion', 'ReleaseId'"
+"('HKLM', 'Software\\Microsoft\\Windows NT\\CurrentVersion', 'UBR'"
+"('HKLM', 'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\Audit'"
+"('HKLM', 'Software\\Policies\\Microsoft Services\\AdmPwd', 'AdmPwdEnabled'"
+"('HKLM', 'Software\\Policies\\Microsoft Services\\AdmPwd', 'AdminAccountName'"
+"('HKLM', 'Software\\Policies\\Microsoft Services\\AdmPwd', 'PasswordComplexity'"
+"('HKLM', 'Software\\Policies\\Microsoft Services\\AdmPwd', 'PasswordLength'"
+"('HKLM', 'Software\\Policies\\Microsoft Services\\AdmPwd', 'PwdExpirationProtectionEnabled'"
+"('HKLM', 'Software\\Policies\\Microsoft\\Windows\\CredentialsDelegation', 'RestrictedRemoteAdministration'"
+"('HKLM', 'Software\\Policies\\Microsoft\\Windows\\CredentialsDelegation', 'RestrictedRemoteAdministrationType'"
+"('HKLM', 'Software\\Policies\\Microsoft\\Windows\\EventLog\\EventForwarding\\SubscriptionManager'"
+"('HKLM', 'Software\\Policies\\Microsoft\\Windows\\SrpV2'"
+"('HKLM', 'System\\CurrentControlSet\\Control\\Lsa', 'LmCompatibilityLevel'"
+"('HKLM', 'System\\CurrentControlSet\\Services\\LDAP', 'LDAPClientIntegrity'"
+"('HKLM', 'System\\CurrentControlSet\\Services\\LanmanServer\\Parameters', 'EnableSecuritySignature'"
+"('HKLM', 'System\\CurrentControlSet\\Services\\LanmanServer\\Parameters', 'RequireSecuritySignature'"
+"('HKLM', 'System\\CurrentControlSet\\Services\\LanmanWorkstation\\Parameters', 'EnableSecuritySignature'"
+"('HKLM', 'System\\CurrentControlSet\\Services\\LanmanWorkstation\\Parameters', 'RequireSecuritySignature'"
+"('HKLM', f""Software\\Policies\\Microsoft\\Windows\\SrpV2\\{k}\\{i}"", ""Value"""
+"('HKLM', f'SOFTWARE\\Microsoft\\PowerShellCore\\InstalledVersions\\{key}', 'SemanticVersion'"
+"('HKLM', f'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\NetworkList\\Profiles\\{pguid}', 'Category'"
+"('HKLM', f'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\NetworkList\\Profiles\\{pguid}', 'DateCreated'"
+"('HKLM', f'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\NetworkList\\Profiles\\{pguid}', 'Description'"
+"('HKLM', f'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\NetworkList\\Profiles\\{pguid}', 'Managed'"
+"('HKLM', f'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\NetworkList\\Profiles\\{pguid}', 'NameType'"
+"('HKLM', f'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\NetworkList\\Profiles\\{pguid}', 'ProfileName'"
+"('HKLM', f'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\WSMAN\\Plugin\\{plugin}', 'ConfigXML'"
+"('HKLM', f'Software\\Policies\\Microsoft\\Windows\\SrpV2\\{k}'"
+"('HKLM', f'Software\\Policies\\Microsoft\\Windows\\SrpV2\\{k}', 'EnforcementMode'"
+"('HKLM', f'{prod}\\{sub_key}', 'DisplayName'"
+"('HKLM', f'{prod}\\{sub_key}', 'DisplayVersion'"
+"('HKLM', f'{prod}\\{sub_key}', 'InstallDate'"
+"('HKLM', f'{prod}\\{sub_key}', 'Publisher'"
+"('HKLM', f'{reg_key}\\Exclusions\\Extensions'"
+"('HKLM', f'{reg_key}\\Exclusions\\Paths'"
+"('HKLM', f'{reg_key}\\Exclusions\\Processes'"
+"('HKLM', f'{reg_key}\\Policy Manager', 'ExcludedPaths'"
+"('HKLM', f'{reg_key}\\Windows Defender Exploit Guard\\ASR', 'ExploitGuard_ASR_Rules'"
+"('HKLM', f'{reg_key}\\Windows Defender Exploit Guard\\ASR\\ASROnlyExclusions'"
+"('HKLM', f'{reg_key}\\Windows Defender Exploit Guard\\ASR\\Rules'"
+"('HKLM', f'{rule_location}\\DomainProfile', 'DefaultInboundAction'"
+"('HKLM', f'{rule_location}\\DomainProfile', 'DefaultOutboundAction'"
+"('HKLM', f'{rule_location}\\DomainProfile', 'DisableNotifications'"
+"('HKLM', f'{rule_location}\\DomainProfile', 'EnableFirewall'"
+"('HKLM', f'{rule_location}\\FirewallRules'"
+"('HKLM', f'{rule_location}\\PrivateProfile', 'DefaultInboundAction'"
+"('HKLM', f'{rule_location}\\PrivateProfile', 'DefaultOutboundAction'"
+"('HKLM', f'{rule_location}\\PrivateProfile', 'DisableNotifications'"
+"('HKLM', f'{rule_location}\\PrivateProfile', 'EnableFirewall'"
+"('HKLM', f'{rule_location}\\PublicProfile', 'DefaultInboundAction'"
+"('HKLM', f'{rule_location}\\PublicProfile', 'DefaultOutboundAction'"
+"('HKLM', f'{rule_location}\\PublicProfile', 'DisableNotifications'"
+"('HKLM', f'{rule_location}\\PublicProfile', 'EnableFirewall'"
+"('HKLM', f'{rule_location}\\StandardProfile', 'DefaultInboundAction'"
+"('HKLM', f'{rule_location}\\StandardProfile', 'DefaultOutboundAction'"
+"('HKLM', f'{rule_location}\\StandardProfile', 'DisableNotifications'"
+"('HKLM', f'{rule_location}\\StandardProfile', 'EnableFirewall'"
+"('HKLM', i"
+"('HKLM', prod"
+"('HKLM', provider_path_key, """""
+"('HKLM','SOFTWARE\\Microsoft\\PowerShellCore\\InstalledVersions\\'"
+"('HKU', ''"
+"('HKU', f'{sid}\\SOFTWARE\\Microsoft\\Internet Explorer\\TypedURLs'"
+"('HKU', f'{sid}\\SOFTWARE\\Microsoft\\Internet Explorer\\TypedURLsTime', k"
+"('HKU', f'{sid}\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU'"
+"('HKU', f'{sid}\\Software\\Microsoft\\OneDrive\\Accounts'"
+"('HKU', f'{sid}\\Software\\Microsoft\\OneDrive\\Accounts\\{acc}', x"
+"('HKU', f'{sid}\\Software\\Microsoft\\OneDrive\\Accounts\\{acc}\\ScopeIdToMountPointPathCache'"
+"('HKU', f'{sid}\\Software\\Microsoft\\Terminal Server Client\\Servers'"
+"('HKU', f'{sid}\\Software\\Microsoft\\Terminal Server Client\\Servers\\{host}', 'UsernameHint'"
+"('HKU', f'{sid}\\Software\\SimonTatham\\PuTTY\\Sessions\\'"
+"('HKU', f'{sid}\\Software\\SimonTatham\\PuTTY\\SshHostKeys\\'"
+"('HKU', f'{sid}\\Software\\SyncEngines\\Providers\\OneDrive'"
+"('HKU', f'{sid}\\Software\\SyncEngines\\Providers\\OneDrive\\{rname}', x"
+"('HKU', f'{sid}\\\\Software\\SimonTatham\\PuTTY\\Sessions\\{session_name}', key"
+"('SELECT Actions, Author, Date, Description, Documentation, Principal, SecurityDescriptor, Source, State, TaskName, TaskPath, Triggers, URI, Version FROM MSFT_ScheduledTask'"
+"('SELECT Name,Caption,InstallState FROM Win32_OptionalFeature'"
+"('Select UserName,Name,VariableValue from win32_environment'"
+"('VersionInfo', ['FileVersion', 'ProductVersion']"
+"('WMI', user_name, domain, logon_id, logon_type, data_two['AuthenticationPackage'], start_time, '', '', '', '', ''"
+"('\n  [*] Use the Mimikatz ""dpapi::masterkey"" module with appropriate arguments (/pvk or /rpc"
+"('command', nargs='*', default=' ', help='carseat command/module to run'"
+"('target', action='store', help='[[domain/]username[:password]@]<targetName or address>'"
+"('utf-8', errors='replace'"
+"('value', None"
+"(('E1AF8308-5D1F-11C9-91A4-08002B14A0FA', '3.0'"
+"(('F6BEAFF7-1E19-4FBB-9F8F-B89E2018337C', '1.0'"
+"() for cmd in command_string.split(','"
+"().strftime(""%m/%d/%Y %I:%M %p"""
+"().strftime(""%m/%d/%Y %I:%M:%S %p"""
+"()}"""
+"(0, len(string"
+"(0, num_values"
+"(0xffffffff, 1"
+"(0xffffffff,1"
+"(1, i + 1"
+"(1, len(script_block_parts"
+"(1601, 1, 1, tzinfo=timezone.utc"
+"(1970, 1, 1, tzinfo=timezone.utc"
+"(Exception: if the Program itself is interactive but does not normally print such an announcement, your work based on the Program is not required to print an announcement."
+"(False, appIdSvcState, key_name, enforcementModeStr, rules"
+"(Hereinafter, translation is included without limitation in the term ""modification""."
+"(PluginAccess(principal, sid, access_str"
+"(This alternative is allowed only for noncommercial distribution and only if you received the program in object code or executable form with such an offer, in accord with Subsection b above."
+"(True if uefi_state == 1 else False, policy_publisher, policy_version"
+"(True, appIdSvcState, key_name, enforcementModeStr, rules"
+"(TypeError, ValueError"
+"(TypedURL(url_time, v.strip("
+"([\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]"
+"(ace_pattern, sddl_string"
+"(ace_pattern, sddl_value"
+"(ace_type, ""Unknown"""
+"(add_help=True, description=""Carseat: A junior Seatbelt"""
+"(address, username, password, domain, options.hashes, options.aesKey, options.k, options.dc_ip"
+"(address, wmi_namespace, username, password, domain, options.hashes, options.aesKey, options.k, options.dc_ip"
+"(all_args, re.IGNORECASE | re.MULTILINE"
+"(buf, 0x14"
+"(buf, offset + 0x16"
+"(buf, offset + 1 + self._name.length"
+"(buf, offset + 1"
+"(buf, offset + 22 + self._xml.length + 5 + x * 4, offset + 22 + self._xml.length + 5 + num_values * 4 + values_length"
+"(buf, offset + 4"
+"(buf, offset + 7"
+"(buf, ofs"
+"(buf, value_offset"
+"(category, data['Name'], product, data['ProcessId'], owner, data['CommandLine']"
+"(chrome_base, history, cookies, login_data, chrome_version"
+"(commands, str"
+"(compiler, kernel, and so on"
+"(computer_name, group['name'], group['comment'], members"
+"(computername, user['name'], user['enabled'], user['rid'], user['user_type'], user['comment'], user['pwd_last_set'], user['last_logon'], user['num_logins']"
+"(content_prompt, enable_lua, filter_admin_token, local_account_token_filter"
+"(data['Entry'], data['Name'], data['Data']"
+"(data['HotFixID'], data['InstalledOn'], data['Description'], data['InstalledBy']"
+"(data['LocalName'], data['RemoteName'], data['RemotePath'], data['Status'], data['ConnectionState'], data['Persistent'], data['UserName'], data['Description']"
+"(data['Name'], data['Caption'], state"
+"(data['Name'], data['Path'], data['Description'], types"
+"(data['Name'], data['ProcessId'], owner"
+"(data['TaskName'], principal, data['Author'], data['Description'], data['Source'], state, data['SecurityDescriptor'], actions_list, trigger_objects, None, data['TaskPath'], None, data['Date'], None, None, None, None, None"
+"(data['TimeCreated.SystemTime'], data['EventID'], data['Security.UserID'], match.group("
+"(data['TimeCreated.SystemTime'], data['EventId'], user_name, m.group("
+"(data['TimeCreated.SystemTime'], target_username, target_domainname, logon_type, ip_address, subject_username, subject_domainname, authentication_package, lm_package, target_outbound_user, target_outbound_domain"
+"(data['UserName'], data['Name'], data['VariableValue']"
+"(data['displayName'], data['pathToSignedProductExe'], data['pathToSignedReportingExe']"
+"(data_two[""LogonId""]"
+"(data_two[""StartTime""]"
+"(date, ""%Y-%m-%d"""
+"(datetime(1970, 1, 1, tzinfo=timezone.utc"
+"(default_domain_name, default_user_name, default_password, alt_domain_name, alt_user_name, alt_password"
+"(destHost=self.target, remoteIf=EVEN6_UUID, protocol = 'ncacn_ip_tcp'"
+"(display_name, display_version, publisher, install_date, arch"
+"(dl[""domain""]"
+"(dl[""downloadPath""]"
+"(dl[""id""]"
+"(dl[""name""]"
+"(dl[""teamId""]"
+"(dl[""userId""]"
+"(domain_ignore_regex, target_domainname, re.IGNORECASE"
+"(dotnet_obj.InstalledDotNetVersions, find='highest'"
+"(dotnet_obj.InstalledDotNetVersions, find='lowest'"
+"(even_conn, args"
+"(event['TimeCreated.SystemTime'], action"
+"(f""      ClientNegotiateSigning  : {ntlm.ClientNegotiateSigning}"""
+"(f""      ClientRequireSigning    : {ntlm.ClientRequireSigning}"""
+"(f""      Enabled             : {powershell.ModuleLogging}"""
+"(f""      Enabled            : {powershell.TranscriptionLogging}"""
+"(f""      InboundAuditing         : {ntlm.InboundAuditing}({inbound_audit_str}"
+"(f""      InboundRestrictions     : {ntlm.InboundRestrictions}({inbound_rest_str}"
+"(f""      Invocation Logging : {powershell.TranscriptionInvocationLogging}"""
+"(f""      LdapSigning             : {ntlm.LdapSigning} ({ldap_signing_str}"
+"(f""      Log Directory      : {powershell.TranscriptionDirectory}"""
+"(f""      NTLMMinClientSec        : {ntlm.NTLMMinClientSec} ({client_sess_sec}"
+"(f""      NTLMMinServerSec        : {ntlm.NTLMMinServerSec} ({server_sess_sec}"
+"(f""      OutboundExceptions      : {ntlm.OutboundExceptions}"""
+"(f""      OutboundRestrictions    : {ntlm.OutboundRestrictions}({oubound_rest_str}"
+"(f""      ServerNegotiateSigning  : {ntlm.ServerNegotiateSigning}"""
+"(f""      ServerRequireSigning    : {ntlm.ServerRequireSigning}"""
+"(f""      {'Duration':<30}:   {trigger.Duration}"""
+"(f""      {'Enabled':<30}:   {trigger.Enabled}"""
+"(f""      {'EndBoundary':<30}:   {trigger.EndBoundary}"""
+"(f""      {'ExecutionTimeLimit':<30}:   {trigger.ExecutionTimeLimit}"""
+"(f""      {'GroupId':<30}:   {schtask.Principal.GroupId}"""
+"(f""      {'Id':<30}:   {schtask.Principal.Id}"""
+"(f""      {'Interval':<30}:   {trigger.Interval}"""
+"(f""      {'LogonType':<30}:   {schtask.Principal.LogonType}"""
+"(f""      {'RunLevel':<30}:   {schtask.Principal.RunLevel}"""
+"(f""      {'StartBoundary':<30}:   {trigger.StartBoundary}"""
+"(f""      {'StopAtDurationEnd':<30}:   {trigger.StopAtDurationEnd}"""
+"(f""      {'Type':<30}:   {action.Type}"""
+"(f""      {'Type':<30}:   {trigger.Type}"""
+"(f""      {'UserId':<30}:   {schtask.Principal.UserId}"""
+"(f""      {key:<30}:   {val}"""
+"(f""      {s}"""
+"(f""      | {key} : {value} ({formatted_date}"
+"(f""      | {key} : {value}"""
+"(f""      | {mp_key} : {mp_val} ({formatted_date}"
+"(f""      | {mp_key} : {mp_val}"""
+"(f""    'Cookies'                   ({slack.CookiesLastModified}"
+"(f""    '\\storage\\slack-downloads'  ({slack.DownloadsLastModified}"
+"(f""    '\\storage\\slack-workspaces' ({slack.WorkspacesLastModified}"
+"(f""    'key3.db'        ({firefox.CredentialFile3LastModified}"
+"(f""    'key4.db'        ({firefox.CredentialFile4LastModified}"
+"(f""    'places.sqlite'  ({firefox.HistoryLastModified}"
+"(f""    Domain : {workspace.Domain}"""
+"(f""    DownloadPath : {download.DownloadPath}"""
+"(f""    FilePath    : {config.FilePath}"""
+"(f""    Host        : {config.Host}"""
+"(f""    ID     : {workspace.ID}"""
+"(f""    Name   : {workspace.Name}"""
+"(f""    Name : {b.Name}"""
+"(f""    Port        : {config.Port}"""
+"(f""    Protocol    : {config.Protocol}"""
+"(f""    SessionID   : {config.SessionID}"""
+"(f""    SessionName : {config.SessionName}"""
+"(f""    StartTime    : {download.StartTime}\n"""
+"(f""    TeamID       : {download.TeamID}"""
+"(f""    URL  : {b.Url}\n"""
+"(f""    UserId       : {download.UserID}"""
+"(f""    Username    : {config.UserName}"""
+"(f""    {d.LastAccessed:<22}    {d.LastModified:<22}    {d.FileName}"""
+"(f""    {item}"""
+"(f""  ** {group.ComputerName}\\{group.GroupName} ** ({group.GroupComment}"
+"(f""  Action               : {rule.Action}"""
+"(f""  AllowSmartCardRedirection:  {server.AllowSmartCardRedirection}"""
+"(f""  ApplicationName      : {rule.ApplicationName}"""
+"(f""  BlockClipboardRedirection:  {server.BlockClipboardRedirection}"""
+"(f""  BlockComPortRedirection:    {server.BlockComPortRedirection}"""
+"(f""  BlockDriveRedirection:      {server.BlockDriveRedirection}"""
+"(f""  BlockLptPortRedirection:    {server.BlockLptPortRedirection}"""
+"(f""  BlockPnPDeviceRedirection:  {server.BlockPnPDeviceRedirection}"""
+"(f""  BlockPrinterRedirection:    {server.BlockPrinterRedirection}"""
+"(f""  Description          : {rule.Description}"""
+"(f""  Direction            : {rule.Direction}"""
+"(f""  DisablePasswordSaving: {client.DisablePasswordSaving}"""
+"(f""  Folder : {downloads.Folder}\n"""
+"(f""  LanmanCompatibilityLevel    : {ntlm.LanmanCompatabilityLevel}({lmstr}"
+"(f""  Local Addr:Port      : {rule.LocalAddresses}:{rule.LocalPorts}"""
+"(f""  Name                 : {rule.Name}"""
+"(f""  NetworkLevelAuthentication: {server.NetworkLevelAuthentication}"""
+"(f""  Profiles             : {rule.Profiles}"""
+"(f""  Protocol             : {rule.Protocol}"""
+"(f""  Remote Addr:Port     : {rule.RemoteAddresses}:{rule.RemotePorts}\n"""
+"(f""  RestrictedRemoteAdministration: {client.RestrictedRemoteAdministration}"""
+"(f""  [*] AppIDSvc service is {applocker.AppIdSvcState}\n"""
+"(f""  {'Actions':<30}    :"""
+"(f""  {'AllowDemandStart':<30}    :   {schtask.AllowDemandStart}"""
+"(f""  {'Author':<30}    :   {schtask.Author}"""
+"(f""  {'ConsentPromptBehaviorAdmin':<30} : PromptForNonWindowsBinaries"""
+"(f""  {'ConsentPromptBehaviorAdmin':<30} : {uac.ConsentPromptBehaviorAdmin} - No prompting"""
+"(f""  {'ConsentPromptBehaviorAdmin':<30} : {uac.ConsentPromptBehaviorAdmin} - PromptForCredsNotOnSecureDesktop"""
+"(f""  {'ConsentPromptBehaviorAdmin':<30} : {uac.ConsentPromptBehaviorAdmin} - PromptForNonWindowsBinaries"""
+"(f""  {'ConsentPromptBehaviorAdmin':<30} : {uac.ConsentPromptBehaviorAdmin} - PromptForPermitDenyNotOnSecureDesktop"""
+"(f""  {'ConsentPromptBehaviorAdmin':<30} : {uac.ConsentPromptBehaviorAdmin} - PromptOnSecureDesktop"""
+"(f""  {'ConsentPromptBehaviorAdmin':<30} : {uac.ConsentPromptBehaviorAdmin} - PromptPermitDenyOnSecureDesktop"""
+"(f""  {'Date':<30}    :   {schtask.Date}"""
+"(f""  {'Description':<30}    :   {schtask.Description}"""
+"(f""  {'DisallowStartIfOnBatteries':<30}    :   {schtask.DisallowStartIfOnBatteries}"""
+"(f""  {'EnableLUA (Is UAC enabled?"
+"(f""  {'Enabled':<30}    :   {schtask.Enabled}"""
+"(f""  {'ExecutionTimeLimit':<30}    :   {schtask.ExecutionTimeLimit}"""
+"(f""  {'FilterAdministratorToken':<30} : {uac.FilterAdministratorToken}"""
+"(f""  {'LAPS Admin Account Name':<37} : {laps.LAPSAdminAccountName}"""
+"(f""  {'LAPS Enabled':<37} : {laps.AdmPwdEnabled}"""
+"(f""  {'LAPS Expiration Protection Enable':<37} : {laps.LapsPwdExpirationProtectionEnabled}"""
+"(f""  {'LAPS Password Complexity':<37} : {laps.LAPSPasswordComplexity}"""
+"(f""  {'LAPS Password Length':<37} : {laps.LAPSPasswordLength}"""
+"(f""  {'LocalAccountTokenFilterPolicy':<30} : {uac.LocalAccountTokenFilterPolicy}"""
+"(f""  {'Name':<30}    :   {schtask.Name}"""
+"(f""  {'Principal':<30}    :"""
+"(f""  {'SDDL':<30}    :   {schtask.SDDL}"""
+"(f""  {'Source':<30}    :   {schtask.Source}"""
+"(f""  {'State':<30}    :   {schtask.State}"""
+"(f""  {'StopIfGoingOnBatteries':<30}    :   {schtask.StopIfGoingOnBatteries}"""
+"(f""  {'Triggers':<30}    :"""
+"(f""  {attr:<30} : {'' if value is None else value}"""
+"(f""  {env_obj.UserName:<35} {env_obj.Name:<35} {env_obj.Value}"""
+"(f""  {event.DateUtc:<23} :  {event.Description}"""
+"(f""  {name:<30}: {v}"""
+"(f""  {name:<30}:"""
+"(f""  {obj.Key:<25} : {obj.Value}"""
+"(f""  {value_name:<30}: {value['value']}"""
+"(f""  {value} :"""
+"(f"" {process.ProcessName:<50} {process.ProcessID:<10} {process.Owner}"""
+"(f""Collecting kernel boot (EID 12"
+"(f""Couldn't connect {self.target}. Error: {str(e"
+"(f""Error during connection: {str(e"
+"(f""Error executing WMI query: {e}"""
+"(f""Error executing {module.__name__}: {e}"""
+"(f""Error getting file size for {file_path}: {str(e"
+"(f""Error getting properties from ClassPart: {str(e"
+"(f""Error getting values: {str(e"
+"(f""Error getting version info for {file_path}: {str(e"
+"(f""Error parsing event: {str(e"
+"(f""Error: Command '{module_name}' not found"""
+"(f""Error: No commands found for group '{options.group}'"""
+"(f""Error: Not a valid PE file. {str(e"
+"(f""Error: {e}"""
+"(f""Error: {str(e"
+"(f""Error: {target_command} does not have a command_base function"""
+"(f""Event data (first 50 bytes"
+"(f""Failed to connect to {self.server}"""
+"(f""Failed to connect to {self.target}: {str(e"
+"(f""Failed to enumerate local groups: {str(e"
+"(f""Failed to enumerate local users: {str(e"
+"(f""Failed to get group members: {str(e"
+"(f""File not found: {file_path}"""
+"(f""IO exception, history file likely in use (i.e. browser is likely running"
+"(f""Invalid hex string: {str(e"
+"(f""Invalid object: {obj}"""
+"(f""WMI query iteration error: {e}"""
+"(f""Warning: Could not import {module_name}"""
+"(f""Warning: Error processing {module_name}: {e}"""
+"(f""[-] Error processing bookmarks: {str(e"
+"(f""[-] Expected key not found in JSON structure: {e}"""
+"(f""\n\n====== {banner} ======\n"""
+"(f""\n\n[*] Completed collection in {elapsed_time:.2f} seconds\n"""
+"(f""commands.{module_name}"""
+"(f""commands.{target_command}"""
+"(f""{'State':<8} {'Name':<50} {'Caption'}"""
+"(f""{bytes_data[11]:02X}{bytes_data[10]:02X}"", 16"
+"(f""{bytes_data[13]:02X}{bytes_data[12]:02X}"", 16"
+"(f""{bytes_data[1]:02X}{bytes_data[0]:02X}"", 16"
+"(f""{bytes_data[3]:02X}{bytes_data[2]:02X}"", 16"
+"(f""{bytes_data[5]:02X}{bytes_data[4]:02X}"", 16"
+"(f""{bytes_data[7]:02X}{bytes_data[6]:02X}"", 16"
+"(f""{bytes_data[9]:02X}{bytes_data[8]:02X}"", 16"
+"(f""{features.State:<8} {features.Name:<50} {features.Caption}"""
+"(f'     {""SessionName"":<20} : {sessions[""SessionName""]}'"
+"(f'    {""State"":<10} Rule\n'"
+"(f'  {""BootTimeUtc (approx"
+"(f'  {formatted_time},{target_user},{logon.LogonType},{logon.IpAddress},{subject_user},{logon.AuthenticationPackage},{logon.LmPackage},{target_outbound_user}'"
+"(f'{formatted_time},{unique_cred}'"
+"(file_path, session_id, session_name, host, port, protocol, username, extra_args"
+"(file_version, product_version"
+"(filetime: Dict[str, int]"
+"(filter_results and re.match(data['Computer'], target_username"
+"(fix_dir, downloads"
+"(fix_path, history_last_mod, credential_three_last_mod, credential_four_last_mod"
+"(fixed_dir, keys"
+"(fixed_path, name, host, port, protocol, user, password"
+"(fn, la ,la"
+"(found_file, last_accessed, last_modified, '', conf_size"
+"(found_file, last_accessed, last_modified, guid_string, key_size"
+"(full_reg_key, autoruns"
+"(hive, 0x80000002"
+"(hive_num, ''"
+"(hive_num, key_path"
+"(hive_num, key_path, name"
+"(hive_num, key_path, value_name"
+"(host, user_hint"
+"(host_name, domain, '', product_name, edition_id, release_id, build_number, build_branch, str(current_major_version"
+"(i.e. architecture, OS version, etc."
+"(installed, hashing_alg, sysmon_options, base64_rules"
+"(installed_clr, installed_versions, transcription_logging, transcription_invo_log, transcription_directory, module_logging, module_names, script_block_logging, script_block_invocation_log, os_sup_amsi"
+"(installed_clr_versions, installed_dotnet_versions, os_amsi"
+"(instance_type, 'getValues'"
+"(int(data_two[""LogonType""]"
+"(int(dl[""startTime""]"
+"(isinstance(item, str"
+"(isinstance(value, list"
+"(isinstance(x, bytes"
+"(isinstance(x, str"
+"(item, 'Description'"
+"(k, result"
+"(k, v"
+"(key, result"
+"(key, str(value"
+"(key, value"
+"(lambda x: x != None, map(lambda x: x.xml(template"
+"(lanman_compat_level, client_req_signing, client_nego_signing, server_req_signing, server_nego_siging, ldap_signing, ntlm_min_client_sec, ntlm_min_server_sec, inbound_restrict, outbound_restrict, inbound_audit, outbound_except"
+"(last 7 days, argument == last X days"
+"(last_access_time, tz=timezone.utc"
+"(last_valid, site_code, prod_ver, successful_install_param"
+"(last_write_time, tz=timezone.utc"
+"(local_settings, group_settings"
+"(log_name, query"
+"(map(int, version.split('.'"
+"(mk_name, mk_lastaccessed, mk_lastaccessed"
+"(module, ""command_base"""
+"(mp_val, ""%Y-%m-%d %H:%M:%S"""
+"(name=entry[""name""].strip("
+"(nla, block_clipboard, block_com_port, block_drives, block_lpt_port, block_smart_card, block_pnp, block_printers"
+"(obj, 'Key'"
+"(obj, 'Value'"
+"(obj_or_list, list"
+"(options, 'group'"
+"(or a work based on it, under Section 2"
+"(or else, saying that you provide a warranty"
+"(parsed, str"
+"(path,'*'"
+"(path,filename"
+"(pattern, k"
+"(pe, 'VS_FIXEDFILEINFO'"
+"(plugin, access"
+"(priv_level, ""Unknown"""
+"(profile_name, description, network_category, network_type, managed, date_created, date_lastconnected"
+"(provider_clsid, provider_path"
+"(r""(ConvertTo-SecureString.*AsPlainText.*"
+"(r""(New-Object.*System.Management.Automation.PSCredential.*"
+"(r""(bitsadmin(.exe"
+"(r""(bootcfg(.exe"
+"(r""(certreq(.exe"
+"(r""(certutil(.exe"
+"(r""(cmdkey(.exe"
+"(r""(cscript.*-w .*"
+"(r""(driverquery(.exe"
+"(r""(eventcreate(.exe"
+"(r""(getmac(.exe"
+"(r""(gpfixup(.exe"
+"(r""(gpresult(.exe"
+"(r""(kitty(.exe"
+"(r""(mapadmin(.exe"
+"(r""(mount(.exe"
+"(r""(net(.exe"
+"(r""(nfsadmin(.exe"
+"(r""(openfiles(.exe"
+"(r""(pscp(.exe"
+"(r""(psexec(.exe"
+"(r""(psexec64(.exe"
+"(r""(putty(.exe"
+"(r""(schtasks(.exe"
+"(r""(setx(.exe"
+"(r""(ssh(.exe"
+"(r""(systeminfo(.exe"
+"(r""(takeown(.exe"
+"(r""(taskkill(.exe"
+"(r""(tscon(.exe"
+"(r""(wecutil(.exe"
+"(r""(winrm(.vbs"
+"(r""(winrs(.exe"
+"(r""(wmic(.exe"
+"(r'Domain=""(.*"
+"(r'LogonId=""(\d+"
+"(restricted_admin != None and restricted_admin != 0, restricted_admin_type, server_auth_level, disable_pw_saving != None or disable_pw_saving != 0 "
+"(results, key=lambda x: x.Name"
+"(ret_vals, 'ReturnValue'"
+"(ret_vals, 'uValue'"
+"(revision, iav, '-'.join([str(sub_id"
+"(rpctransport, 'set_credentials'"
+"(s_time, ""%Y%m%d%H%M%S"""
+"(samr_conn, address"
+"(samr_conn, args, address"
+"(samr_conn, args, computer"
+"(samr_conn, computer"
+"(self, admpwdenabled: str, lapsadminaccountname: str, lapspasswordcomplexity:str, lapspasswordlength: str, lapspwdexpirationprotectionenabled: str"
+"(self, buf"
+"(self, buf, offset"
+"(self, buf, offset, value_offset"
+"(self, builtin: bool = False"
+"(self, category: str, process: str, product: str, processid: str, owner: str, commandline: str"
+"(self, clientsettings: ClientSettings, serversettings: ServerSettings"
+"(self, computername: str, groupname: str, groupcomment: str, members: list"
+"(self, computername: str, username: str, enabled: bool, rid: int, usertype: str, comment: str, pwdlastset: datetime, lastlogon: str, numlogins: str"
+"(self, configured: bool, appidsvcstate: str, keyname: str, enforcementmode: str, rules: str"
+"(self, consentpromptbehavioradmin: int, enablelua: int, filteradministratortoken: int, localaccounttokenfilterpolicy: int"
+"(self, credtype: str, filename: str, lastaccessed: str, lastmodified: str, size: str"
+"(self, dateutc: datetime, description: str"
+"(self, defaultdomainname: str, defaultusername: str, defaultpassword: str, altdomainname: str, altusername: str, altpassword: str"
+"(self, displayname: str, displayversion: str, publisher: str, installdate: str, architecture: str"
+"(self, enabled: bool"
+"(self, enabled: bool, publisher: str, version: str"
+"(self, engine: str, productexe: str, reportingexe: str"
+"(self, entry: str, name :str, data: str"
+"(self, enumerationmethod: str, username: str, domain: str, logonid: str, logontype: str, authenticationpackage: str, starttime: str, logontime: str, logonserver: str, logonserverdnsdomain: str, userprincipalname: str, usersid: str"
+"(self, event_data"
+"(self, file_data"
+"(self, filename: str, lastaccessed: str, lastmodified: str"
+"(self, filename: str, lastaccessed: str, lastmodified: str, masterkeyguid: str, size: str"
+"(self, filepath: str, name: str, host: str, port: str, protocol: str, username: str, password: str"
+"(self, filepath: str, sessionid: str, sessionname: str, host: str, port: str, protocol: str, username: str, extraargs: str"
+"(self, folder: str, cookieslastmodified: datetime, workspaceslastmodified: datetime, downloadslastmodified: datetime"
+"(self, folder: str, downloads: list"
+"(self, folder: str, historylastmodified: datetime, credentialfile3lastmodified: datetime, credentialfile4lastmodified: datetime"
+"(self, folder: str, historylastmodified: str, cookieslastmodified: str, logindatalastmodified: str, chromeversion: str"
+"(self, folder: str, masterkeys: list"
+"(self, group_name: str"
+"(self, guid: str, providerpath: str"
+"(self, hex_string"
+"(self, hive"
+"(self, hive, key_path"
+"(self, hive, key_path, value_name"
+"(self, hostname: str, domain: str, username: str, productname: str, editionid: str, releaseid: str, build: str, buildbranch: str, currentmajorversionnumber: str, currentversion: str, architecture: str, processorcount: str, isvirtualmachine: bool, boottimeutc: str, ishighintegrity: bool, islocaladmin: bool, currenttimeutc: str, timezone: str, timezoneutcoffset: str, locale: str, inputlanguage: str, installedinputlanguages: str, machineguid: str"
+"(self, hotfixid: str, installedonutc: str, description: str, installedby: str"
+"(self, iEnum"
+"(self, installed: bool, hashingalgorithm: SysmonHashAlgorithm, options: SysmonOptions, rules: str"
+"(self, installedclrversions: list, installedversions: list, transcriptionlogging: str, transcriptioninvocationlogging: str, transcriptiondirectory: str, modulelogging: str, modulenames: str, scriptblocklogging: str, scriptblockinvocationlogging: str, ossupportamsi: str"
+"(self, installedclrversions: str, installeddotnetversions: str, ossupportsamsi: str"
+"(self, key: str, entries: list"
+"(self, key: str, value: str"
+"(self, lanmancompatabilitylevel: str, clientrequiresigning: bool, clientnegotiatesigning: bool, serverrequiresigning: bool, servernegotiatesigning: bool, ldapsigning: str, ntlmminclientsec: str, ntlmminserversec: str, inboundrestrictions: str, outboundrestrictions: str, inboundauditing: str, outboundexceptions: str"
+"(self, lastshutdown: str"
+"(self, localname: str, remotename: str, remotepath: str, status: str, connectionstate: str, persistent: str, username: str, description: str"
+"(self, localsettings: WindowsDefendersettings, grouppolicysettings: WindowsDefendersettings"
+"(self, location: str"
+"(self, log_name, query"
+"(self, name: str = None, description: str = None, applicationname: str = None, protocol: str = None, action: str = None, direction: str = None, profiles: str = None, localaddress: str = None, localports: str = None, remoteaddress: str = None, remoteports: str = None"
+"(self, name: str = None, domain: str = None, id: str = None"
+"(self, name: str, caption: str, state: str"
+"(self, name: str, path: str, description: str, type: str"
+"(self, name: str, principal: ScheduledTaskPrincipal, author: str, description: str, source: str, state: str, sddl: str, actions: ScheduledTaskAction, triggers: ScheduledTaskTrigger, enabled: str, taskpath: str, hidden: str, date: str, allowdemandstart: str, allowhardterminate: str, disallowstartifonbatteries: str, executiontimelimit: str, stopifgoingonbatteries: str"
+"(self, name: str, url: str"
+"(self, nla: int, blockclipboardredirection: int, blockcomportredirection: int, blockdriveredirection: int, blocklptportredirection: int, allowsmartcardredirection: int, blockpnpdeviceredirection: int, blockprinterredirection: int"
+"(self, ordered_dict"
+"(self, ordered_dict, wmi_keys"
+"(self, plugin: str, permission: list"
+"(self, present: bool = False, enabled: bool = False, defaultinboundaction: FirewallAction = None, defaultoutboundaction: FirewallAction = None, disablenotifications: bool = None"
+"(self, principal: str, sid: str, permission: str"
+"(self, processname: str, processid: str, owner: str"
+"(self, profilename: str, description: str, networkcategory: str, networktype: str, managed: str, datecreated: str, datelastconnected: str"
+"(self, queryresults: dict"
+"(self, remotehost: str, usernamehint: str"
+"(self, restrictedadmin: bool, restrictedadmintype: int, serverauthlevel: int, disablepasswordsaving: bool"
+"(self, rule: uuid, state: int"
+"(self, server: str, sitecode: str, productversion: str, lastsuccessfulinstallparams: str"
+"(self, share, file_path"
+"(self, share, path"
+"(self, share, path, filename"
+"(self, sid: str, commands :str"
+"(self, sid: str, connections: list"
+"(self, sid: str, hostkeys: list"
+"(self, sid: str, odsp: OneDriveSyncProvider"
+"(self, sid: str, sessions: list"
+"(self, sid: str, urls: list"
+"(self, subjectuser: str, subjectdomain :str, targetuser: str, targetdomain: str, process: str, ipaddress: str, timecreatedutc: datetime"
+"(self, target, namespace, username='', password='', domain='', hashes=None, aesKey=None, doKerberos=False, kdcHost=None"
+"(self, target, username='', password='', domain='', hashes=None, aesKey=None, doKerberos=False, kdcHost=None"
+"(self, target: str, username: str = '', password: str = '', domain: str = '', hashes: str = None, aesKey: str = None, doKerberos: bool = False, kdcHost: str = None"
+"(self, teamid: str = None, userid: str = None, downloadpath: str = None, datetime: datetime = None"
+"(self, template = None"
+"(self, time: str, url: str"
+"(self, timecreated: datetime, eventid: int, userid: str, match: str, context: str"
+"(self, timecreated: datetime, eventid: int, username: str, match: str"
+"(self, timecreatedutc: datetime, eventid: int, user: str, match: str"
+"(self, timecreatedutc: datetime, targetusername :str, targetdomainname: str, logontype: str, ipaddress: str, subjectusername: str, subjectdomainname: str, authenticationpackage: str, lmpackage: str, targetoutboundusername: str, targetoutbounddomainname: str"
+"(self, username: str, configs: FileZillaConfig"
+"(self, username: str, configs: list"
+"(self, username: str, consolehistorypath: str, match: str, contextjoined: str"
+"(self, username: str, downloads: list"
+"(self, username: str, favorites: list"
+"(self, username: str, filepath: str, bookmarks: list"
+"(self, username: str, filepath: str, urls: list"
+"(self, username: str, history: list"
+"(self, username: str, name :str, value: str"
+"(self, username: str, workspaces: list"
+"(self, usewuserver: str, server: str, alternateserver: str, statisticsserver: str"
+"(self, variable"
+"(self, version_str: str"
+"(self, virtualizationbasedsecuritystatus: VBS, configured: bool, running: bool"
+"(self, wmi_conn, reg_key"
+"(self, wql"
+"(self, xml_content"
+"(self._lsat_dce, policy_handle"
+"(self._lsat_dce, policy_handle, sids"
+"(self._name.val, attrs"
+"(self._name.val, attrs, """".join(children"
+"(self._name.val, val"
+"(self._samr_dce, alias_handle"
+"(self._samr_dce, domain_handle"
+"(self._samr_dce, domain_handle, (group_name,"
+"(self._samr_dce, domain_handle, samr.MAXIMUM_ALLOWED, group_rid"
+"(self._samr_dce, domain_handle, samr.MAXIMUM_ALLOWED, user_rid"
+"(self._samr_dce, domain_handle, samr.USER_NORMAL_ACCOUNT"
+"(self._samr_dce, self._domain_handle"
+"(self._samr_dce, self._server_handle"
+"(self._samr_dce, user_handle"
+"(self._samr_dce, user_handle, samr.USER_INFORMATION_CLASS.UserAllInformation"
+"(self.doKerberos, kdcHost=self.target"
+"(self.namespace, NULL, NULL"
+"(self.target, self.target"
+"(self.target, self.target, sess_port=self.port"
+"(self.target, self.username, self.password, self.domain, self.lmhash, self.nthash, self.aesKey, oxidResolver=True, doKerberos=self.doKerberos, kdcHost=self.kdcHost"
+"(self.username, self.password, self.domain, self.lmhash, self.nthash"
+"(self.username, self.password, self.domain, self.lmhash, self.nthash, self.aesKey"
+"(self.username, self.password, self.domain, self.lmhash, self.nthash, self.aesKey, self.kdcHost"
+"(settings, list"
+"(share, acred_location"
+"(share, aws_key"
+"(share, bcred_location"
+"(share, bm"
+"(share, ch_bm_path, 'Bookmarks'"
+"(share, ch_hist_path"
+"(share, chrome_cookies"
+"(share, chrome_history"
+"(share, chrome_logindata"
+"(share, chrome_path"
+"(share, cookie_base"
+"(share, dl_location"
+"(share, downloads_base"
+"(share, dpapi_basepath"
+"(share, f'{ch_hist_path}\\History'"
+"(share, f'{dl_location}\\{fn}'"
+"(share, f'{path}\\System.dll'"
+"(share, f'{path}\\{xml_file}'"
+"(share, f'{slack_downloads_base}\\{sd}'"
+"(share, f'{slack_workspace_base}\\{sw}'"
+"(share, favorites_base"
+"(share, favorites_base, u.get_longname("
+"(share, ff_cred_four"
+"(share, ff_cred_three"
+"(share, ff_history_file"
+"(share, file_path"
+"(share, file_path, file_obj.write"
+"(share, file_path, file_obj.write, shareAccessMode=0x7"
+"(share, firefox_base_path"
+"(share, firefox_hist_path"
+"(share, fz_path, f"
+"(share, gcred_location"
+"(share, key_path"
+"(share, kp_config"
+"(share, mk_dir"
+"(share, net_path"
+"(share, outlook_base"
+"(share, partial_path, 'ConsoleHost_history.txt'"
+"(share, path"
+"(share, path, xml_file"
+"(share, pathname, fh.write"
+"(share, proc_key"
+"(share, ps_con_hist_path"
+"(share, pwd"
+"(share, slack_base"
+"(share, slack_downloads_base, sd"
+"(share, slack_workspace_base, sw"
+"(share, sysdll"
+"(share, user_path"
+"(share, workspace_base"
+"(sid, commands"
+"(sid, connections"
+"(sid, keys"
+"(sid, o"
+"(sid, sessions"
+"(sid, sid"
+"(sid, urls"
+"(sid_type, 'Unknown'"
+"(slack_base, cookies_last_write_time, workspace_last_write_time, downloads_last_write_time"
+"(smb_conn, args"
+"(str(data[""Antecedent""]"
+"(str(data[""Dependent""]"
+"(string, length"
+"(struct.unpack('<B', value.data"
+"(struct.unpack('<H', value.data"
+"(struct.unpack('<I', value.data"
+"(struct.unpack('<Q', value.data"
+"(struct.unpack('<i', value.data"
+"(sub_token, sub_id, sub_type"
+"(subject_username, subject_domainname, target_username, target_domainname, process_name, ip_address, data['TimeCreated.SystemTime']"
+"(sysmon.Rules, 100"
+"(time_created, event_detail['EventID'], user, m"
+"(timestamp, tz=timezone.utc"
+"(uac_obj, 'fields', {}"
+"(use_wsus, wuserver, us_serv, st_serv"
+"(user, ch_hist_path, urls"
+"(user, configs"
+"(user, downloads"
+"(user, fix_path, bookmarks"
+"(user, history"
+"(user, workspace"
+"(user_ignore_regex, target_username, re.IGNORECASE"
+"(user_info, 'AdminComment'"
+"(user_name, fixed_path, m.group("
+"(user_regex, target_username"
+"(user_regex, target_username, re.IGNORECASE"
+"(username, configs"
+"(username, favorites"
+"(value, ""%Y-%m-%d %H:%M:%S"""
+"(value, 'sValue'"
+"(value, 'uValue'"
+"(value, (list, tuple"
+"(value, bytes"
+"(value, dict"
+"(value, list"
+"(value, wmi.ENCODING_UNIT"
+"(value_names, value_types"
+"(value_type, value_name, value"
+"(vbs_setting , configured, running"
+"(versions, find='lowest'"
+"(versions, key=lambda v: (v.major, v.minor, v.build"
+"(versions, key=parse_version"
+"(whether by court order, agreement or otherwise"
+"(wmi.CLSID_WbemLevel1Login, wmi.IID_IWbemLevel1Login"
+"(wmi_conn ,args"
+"(wmi_conn, 'SOFTWARE\\Microsoft\\Windows Defender'"
+"(wmi_conn, 'SOFTWARE\\Policies\\Microsoft\\Windows Defender'"
+"(wmi_conn, address"
+"(wmi_conn, args"
+"(wmi_conn, query"
+"(wmi_conn, smb_conn"
+"(wmi_conn, target"
+"(wmi_conn, wmi_query"
+"(year, month, day, hour, minute, second"
+('        [!] The highest .NET version is enrolled in AMSI!'
+('        [!] You can do a PowerShell version downgrade to bypass AMSI.'
+('        [!] You can do a PowerShell version downgrade to bypass the logging.'
+('      [*] No rules'
+('    ------------              ------------              --------'
+('    LastAccessed              LastModified              FileName'
+('  Installed CLR Versions'
+('  [*] LAPS not installed'
+('  [*] You can also use SharpDPAPI for masterkey retrieval.'
+(' [X] Cannot enumerate antivirus. root\\SecurityCenter2 WMI namespace is not available on Windows Servers'
+('%Y-%m-%dT%H:%M:%S.%fZ'
+('-'
+('.'
+(':'
+('='
+('All Local Groups (and memberships
+('Allow'
+('Block'
+('Collecting Windows Firewall Non-standard Rules\n\n'
+('Collecting all Windows Firewall Rules\n\n'
+('Command not implemented'
+('Domain Profile'
+('Domain'
+('ERROR: Argument is not an integer'
+('Format: Date(Local time
+('HKU'
+('In'
+('Locally-defined Settings:'
+('NUMBER_OF_PROCESSORS'
+('Name'
+('Non-empty Local Groups (and memberships
+('Out'
+('PROCESSOR_ARCHITECTURE'
+('Private Profile'
+('Private'
+('Public Profile'
+('Public'
+('RDP Server Settings:'
+('Rules:'
+('Rules:\n'
+('S-1-5'
+('SELECT * FROM MSFT_DNSClientCache'
+('SELECT * FROM MSFT_ScheduledTask'
+('SELECT * FROM Win32_DeviceGuard'
+('SELECT * FROM Win32_LoggedOnUser'
+('SELECT * FROM Win32_LogonSession'
+('SELECT * FROM Win32_Process WHERE SessionID != 0'
+('SELECT * FROM Win32_Process'
+('SELECT * FROM Win32_QuickFixEngineering'
+('SELECT * FROM Win32_Share'
+('SELECT * FROM win32_networkconnection'
+('SELECT * from AntiVirusProduct'
+('SELECT Version FROM Win32_OperatingSystem'
+('STATUS_MORE_ENTRIES'
+('S_FALSE'
+('Sddl'
+('Searching Sysmon process creation logs (Sysmon ID 1
+('Searching process creation logs (EID 4688
+('Searching script block logs (EID 4104
+('Select * from Win32_ComputerSystem'
+('Select Domain from Win32_ComputerSystem'
+('SessionId'
+('Standard Profile'
+('StdRegProv'
+('TCP'
+('UDP'
+('URL='
+('\n  ASR Exclusions:'
+('\n  Anti-Malware Scan Interface (AMSI
+('\n  Attack Surface Reduction Rules:\n'
+('\n  Extension Exclusions'
+('\n  Installed .NET Versions'
+('\n  Installed CLR Versions'
+('\n  Installed PowerShell Versions'
+('\n  Other accounts authenticate to this machine using NTLM! NTLM-relay may be possible'
+('\n  Path Exclusions:'
+('\n  PolicyManagerPathExclusions:'
+('\n  Process Exclusions'
+('\n  Script Block Logging Settings'
+('\n  The following users have authenticated to this machine using Kerberos.\n'
+('\n'
+('\nRDP Client Settings:'
+('\n\n\nGPO-defined Settings:'
+('\r\n    Orphaned :'
+('_Classes'
+('_command.py'
+('authentication'
+('utf-8'
+('utf16'
+('v'
+('|'
+('}'
+((*[System[(EventID=12 or EventID=13
+((A|D|AU|OA|OD|AL
+()
+() - timedelta(days=days
+() - timedelta(days=last_days
+() == '.' or d.get_longname(
+() == '.' or dir.get_longname(
+() == '.' or dirs.get_longname(
+() == '.' or f.get_longname(
+() == 'Default User' or f.get_longname(
+() == 'Public' or f.get_longname(
+() == 'deny' or arg.lower(
+() in [x.lower(
+().endswith('.url'
+().get(str(rule.Rule
+().strip(
+()___(
+(*[System/EventID=1] and *[System[Provider[@Name='Microsoft-Windows-Power-Troubleshooter']]]
+(*[System/EventID=6008]
+(-pw|-pass
+(.*
+(/RemoveCredentials|/SetCredentials
+(/p|/rp
+(/up|/cup|/p
+(0
+(1
+(128 or 256 bits
+(2
+(4104
+(4688
+(AsrRule(uuid.UUID(val['Key']
+(A|D
+(C
+(EID 13
+(EVEN6_UUID
+(Event ID 4624
+(Event ID 4648
+(FQDN
+(Forensics tool
+(HX
+(INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS
+(IntEnum
+(KRB5CCNAME
+(NT VIRTUAL MACHINE
+(RPC_C_AUTHN_LEVEL_PKT_INTEGRITY
+(RPC_C_AUTHN_LEVEL_PKT_PRIVACY
+(SCCM
+(SYSTEM|LOCAL SERVICE|NETWORK SERVICE|UMFD-[0-9]+|DWM-[0-9]+|ANONYMOUS LOGON|{data['Computer']}\\$
+(Some other Free Software Foundation software is covered by the GNU Lesser General Public License instead.
+(Total uptime: {boot_time_str}
+(UnexpectedShutdown
+(WEF
+(WSUS
+([@harmj0y](http://twitter.com/harmj0y
+([@tifkin_](http://twitter.com/tifkin_
+([\w_-]+(?:(?:\.[\w_-]+
+([^;(\r\n
+([^;]*
+([^;]+
+(_\\___/_
+(acc
+(account_name
+(action
+(alg.name
+(algorithms
+(all minus one technically
+(and charge for this service if you wish
+(applocker
+(applocker.Rules
+(aps
+(args
+(args[0]
+(argument == computername to enumerate
+(arguments == allow/deny/tcp/udp/in/out/domain/private/public
+(asr_enabled is not None and asr_enabled != 0
+(asr_settings.Exclusions
+(assword
+(at your option
+(attr
+(attrs
+(autologon
+(autoruns
+(av
+(avs
+(banner: str
+(binding
+(bookmark
+(bookmark.Bookmarks
+(boot
+(builtin=False
+(builtin=True
+(bytes_data
+(bytes_le=guid_masterkey_bytes
+(c
+(cache
+(cc
+(cg
+(chrome
+(chrome_path
+(chrome_presence
+(client_sess_sec & SessionSecurity.NTLMv2
+(command
+(command_line
+(commands
+(commands_dir
+(conf
+(config
+(configs
+(connection
+(conns
+(content
+(contents
+(context_lines
+(d
+(d.get_longname(
+(data
+(data=file_data
+(data['CommandLine']
+(data['InstallState']
+(data['Name']
+(data['User']
+(data['VirtualizationBasedSecurityStatus']
+(date_connected_bytes
+(date_created_bytes
+(datetime.timezone.utc
+(defender
+(defender.GroupPolicySettings
+(defender.LocalSettings
+(delta.total_seconds(
+(direction_args
+(doc
+(domain_profile_inbound
+(domain_profile_outbound
+(dot_net_four
+(dot_net_threefive
+(dotnet_info
+(dotnet_obj
+(down
+(download
+(downloads
+(dpapi
+(drives
+(e
+(element
+(encoding
+(encoding_unit_bytes
+(env_obj
+(env_vars
+(event
+(event_bytes
+(event_data
+(event_detail['CommandLine']
+(event_detail['TargetUserName']
+(events
+(extension_exclusions
+(f'          {m}'
+(f'        [*] You can invoke .NET version {lowest_version.split('.'
+(f'       {history}'
+(f'      Enabled            : {powershell.ScriptBlockLogging}'
+(f'      Invocation Logging : {powershell.ScriptBlockInvocationLogging}'
+(f'      OS Supports AMSI: {powershell.OsSupportsAmsi}'
+(f'      OS supports AMSI           : {dotnet_obj.OsSupportsAmsi}'
+(f'      [*] {r}'
+(f'      {sub_key} : {sub_val}'
+(f'      {var}'
+(f'      {vv}'
+(f'      {v}'
+(f'     .NET version support AMSI   : {dn_support_amsi}'
+(f'     Chrome Version                         :  {chrome.ChromeVersion}'
+(f'     {key:<20} : {sessions[key]}'
+(f'    DefaultInboundAction     : {firewall.Domain.DefaultInboundAction}'
+(f'    DefaultInboundAction     : {firewall.Private.DefaultInboundAction}'
+(f'    DefaultInboundAction     : {firewall.Public.DefaultInboundAction}'
+(f'    DefaultInboundAction     : {firewall.Standard.DefaultInboundAction}'
+(f'    DefaultOutboundAction    : {firewall.Domain.DefaultOutboundAction}\n'
+(f'    DefaultOutboundAction    : {firewall.Private.DefaultOutboundAction}\n'
+(f'    DefaultOutboundAction    : {firewall.Public.DefaultOutboundAction}\n'
+(f'    DefaultOutboundAction    : {firewall.Standard.DefaultOutboundAction}\n'
+(f'    DisableNotifications     : {firewall.Domain.DisableNotifications}'
+(f'    DisableNotifications     : {firewall.Private.DisableNotifications}'
+(f'    DisableNotifications     : {firewall.Public.DisableNotifications}'
+(f'    DisableNotifications     : {firewall.Standard.DisableNotifications}'
+(f'    Enabled                  : {firewall.Domain.Enabled}'
+(f'    Enabled                  : {firewall.Private.Enabled}'
+(f'    Enabled                  : {firewall.Public.Enabled}'
+(f'    Enabled                  : {firewall.Standard.Enabled}'
+(f'    ExtraArgs   : {config.ExtraArgs}'
+(f'    FilePath  : {conf.FilePath}'
+(f'    Host      : {conf.Host}'
+(f'    Name      : {conf.Name}'
+(f'    Password  : {conf.Password}\n'
+(f'    Port      : {conf.Port}'
+(f'    Protocol  : {conf.Protocol}'
+(f'    Username  : {conf.UserName}'
+(f'    [*] {applocker.KeyName} not configured'
+(f'    \'Cookies\'     ({chrome.CookiesLastModified}
+(f'    \'History\'     ({chrome.HistoryLastModified}
+(f'    \'Login Data\'  ({chrome.LoginDataLastModified}
+(f'    {access.Principal:<35}    {access.Permissions:<22}'
+(f'    {exclusion}'
+(f'    {ext}'
+(f'    {k.LastAccessed}    {k.LastModified}    {k.FileName}'
+(f'    {key}'
+(f'    {line}'
+(f'    {path}'
+(f'    {proc}'
+(f'    {rc.Key:<10} :  {rc.Value}'
+(f'    {state:<10} {asr_rule}'
+(f'    {str(url.Time
+(f'  Downloads ({s_downloads.UserName}
+(f'  FileZilla Configs ({filezilla.UserName}
+(f'  Folder : {dpapi.Folder}\n'
+(f'  Name : {settings.Plugin}'
+(f'  RestrictedRemoteAdministrationType: {l}'
+(f'  RestrictedRemoteAdministrationType: {t}'
+(f'  SuperPutty Configs ({super_putty.UserName}
+(f'  Workspaces ({slack.UserName}
+(f'  {'Architecture':<30}:  {info.Architecture}'
+(f'  {'Build':<30}:  {info.Build}'
+(f'  {'BuildBranch':<30}:  {info.BuildBranch}'
+(f'  {'CurrentMajorVersionNumber':<30}:  {info.CurrentMajorVersionNumber}'
+(f'  {'CurrentTimeUtc':<30}:  {current_utc_formatted} (Local time: {local_time_formatted}
+(f'  {'CurrentVersion':<30}:  {info.CurrentVersion}'
+(f'  {'Domain Name':<30}:  {info.Domain}'
+(f'  {'EditionID':<30}:  {info.EditionId}'
+(f'  {'HighIntegrity':<30}:  {info.IsHighIntegrity}'
+(f'  {'Hostname':<30}:  {info.Hostname}'
+(f'  {'InputLanguage':<30}:  {info.InputLanguage}'
+(f'  {'InstalledInputLanguages':<30}:  {info.InstalledInputLanguages}'
+(f'  {'IsLocalAdmin':<30}:  {info.IsLocalAdmin}'
+(f'  {'IsVirtualMachine':<30}:  {info.IsVirtualMachine}'
+(f'  {'MachineGuid':<30}:  {info.MachineGuid}'
+(f'  {'ProcessorCount':<30}:  {info.ProcessorCount}'
+(f'  {'ProductName':<30}:  {info.ProductName}'
+(f'  {'ReleaseID':<30}:  {info.ReleaseId}'
+(f'  {'TimeZone':<30}:  {info.TimeZone}'
+(f'  {'TimeZoneOffset':<30}:  {info.TimeZoneUtcOffset}'
+(f'  {'Username':<30}:  {info.Username}'
+(f'  {conn.RemoteHost:<34} {conn.UserNameHint}'
+(f'  {event.TimeCreatedUtc:<22}  {event.User:<30} {event.Match}'
+(f'  {firefox.Folder}\\\n'
+(f'  {f}'
+(f'  {hotfix.HotFixID:<10} {hotfix.InstalledOnUTC:<22} {hotfix.Description:<30} {hotfix.InstalledBy}'
+(f'  {key:<30} : {result}'
+(f'  {key:<30} : {value}'
+(f'  {member['class']:<15} {member['domain']}\\{member['name']:<40} {member['sid']}'
+(f'  {phk.Sid} :'
+(f'  {provider.Sid} :'
+(f'  {puttysessions.Sid} :\n'
+(f'  {slack.Folder}\n'
+(f'  {url}'
+(f'Bookmarks ({bookmark.FilePath}
+(f'Error obtaining owner: {e}'
+(f'Exception {e}'
+(f'HashingAlgorithm: {sysmon.HashingAlgorithm}'
+(f'History ({history.FilePath}
+(f'Installed:        {sysmon.Installed}'
+(f'Internet Explorer typed URLs for the last {days} days\n'
+(f'Listing 4624 Account Logon Events for the last {last_days} days.\n'
+(f'Listing 4648 Explicit Credential Events - A process logged on using plaintext credentials over last {last_days} days'
+(f'Location                     : {firewall.Location}\n'
+(f'Options:          {sysmon.Options}'
+(f'Saved RDP Connection Information ({rdp.Sid}
+(f'Username Filter: {user_regex}'
+(f'\n    History ({history.UserName}
+(f'\n    [*] {applocker.KeyName} is in {applocker.EnforcementMode}'
+(f'\n  {run_commands.Sid} :'
+(f'\n {ie.Sid}'
+(f'\nFavorites ({iefav.UserName}
+(f'\r\n    {accName} :'
+(f'\r\n {chrome.Folder}\n'
+(f'error: {e}'
+(f'ncacn_np:{self.target}[\\pipe\\lsarpc]'
+(f'ncacn_np:{self.target}[\\pipe\\samr]'
+(f.get_longname(
+(favorites
+(feature
+(features
+(file_data
+(file_time
+(file_time - unix_epoch_offset
+(filetime['HighPart'] << 32
+(filezilla
+(firefox
+(firewall
+(firewall.Rules
+(fixes
+(formatted_time
+(fw
+(get_clr_versions(smb_conn
+(get_powershell_versions(wmi_conn
+(get_pscore_versions(wmi_conn
+(group
+(group['name']
+(groups
+(guid_masterkey
+(hex_string
+(highest_version.split('.'
+(hist_data
+(history
+(hive
+(host_keys
+(hotfix
+(https://github.com/GhostPack/Seatbelt/
+(https://github.com/GhostPack/Seatbelt?tab=readme-ov-file#acknowledgments
+(https://github.com/djhohnstein/SharpWeb
+(https://github.com/irtimmer/tivan
+(i
+(iInterface
+(ie
+(iefav
+(ieurls
+(in either source or binary form
+(including auth packages
+(including exclusion locations
+(independent of having been made by running the Program
+(info
+(instance_data['Properties']
+(int(data['LogonType']
+(int(data['State']
+(int(data['Type']
+(int(networkcategory
+(int(networktype
+(int(ntlm.NTLMMinClientSec
+(int(ntlm.NTLMMinServerSec
+(int(reg_hash_alg
+(int(temp_logon_type
+(int(temp_run_level
+(interesting fields
+(item
+(item_val
+(json_data
+(k
+(kerberos_users
+(key
+(keys
+(kp
+(kvp
+(lambda x: x.xml(template
+(laps
+(len(action_args
+(len(script_block_parts
+(len(sorted_users
+(length + 1
+(line
+(location.strip('v'
+(logged
+(logon
+(logon.TimeCreatedUtc
+(lowest_version.split('.'
+(lsass.exe
+(lsat.MSRPC_UUID_LSAT
+(m.group(
+(manufacturer == 'microsoft corporation' and 'VIRTUAL' in model.upper(
+(masterkey
+(match.group(
+(microseconds=microseconds
+(mks
+(module
+(module.command_base
+(mp_key
+(names['TranslatedNames']['Names']
+(next_token
+(not limited to patent issues
+(ntlm
+(ntlm.LanmanCompatabilityLevel
+(ntlm_v1_users
+(ntlm_v2_users
+(number_of_sub_ids
+(o
+(obj
+(obj_or_list
+(objects
+(od
+(od_value
+(offset + 1 + self._name.length
+(ofs
+(onv
+(options
+(options.command
+(options.target
+(or any work based on the Program
+(or with a work based on the Program
+(os_ver_major
+(os_version
+(output
+(parsed
+(parts
+(parts[0]
+(parts[1:]
+(parts[1]
+(parts[2]
+(path.rstrip(os.path.sep
+(path_exclusions
+(phk
+(po
+(powershell
+(private_profile_inbound
+(private_profile_outbound
+(proc
+(process
+(process_exclusions
+(product
+(profile_args
+(profiles
+(properties
+(protocol_args
+(provider
+(provider.Odsp.mpList.keys(
+(providers
+(ps
+(ps_hist
+(ps_v2
+(ps_v4p
+(public_profile_inbound
+(public_profile_outbound
+(puttysessions
+(pwd
+(query
+(query_result.items(
+(r'[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}'
+(r'^(Font Driver Host|Window Manager
+(rb'(http|ftp|https|file
+(rcs
+(rdp
+(rdp.Connections
+(rdp_settings
+(rdpsettings
+(recent_commands
+(reg_options
+(reg_sysmon_rules
+(request
+(res
+(resp['NumActualRecords']
+(result
+(ret_vals.uValue
+(rule
+(rule_location
+(run_commands
+(s
+(s_downloads
+(samr.MSRPC_UUID_SAMR
+(sccm
+(sch_task
+(schtask
+(scope_ids
+(script_block
+(script_block_parts
+(script_block_parts[i + j].strip(
+(script_block_parts[i - j].strip(
+(sddl
+(sddl_string
+(sddl_value: str
+(searcher
+(seconds=delta
+(self
+(self._lsat_dce
+(self._samr_dce
+(self._smb_conn
+(self.full_query(wql
+(self.kdcHost
+(self.target
+(server_sess_sec & SessionSecurity.NTLMv2
+(servers[0]
+(sess
+(sessions
+(settings
+(settings.values(
+(shares
+(shutdown
+(shutdown_int
+(slack
+(smb_conn
+(standard_profile_inbound
+(standard_profile_outbound
+(str(file.get_longname(
+(str(value
+(str_values
+(subkeys
+(super_putty
+(sys.argv
+(sysmon
+(temp_password.text
+(template
+(tenants and teamsites
+(time_long
+(timezone.utc
+(total
+(trigger
+(tzinfo=timezone.utc
+(uac
+(uptime.seconds//60
+(url
+(url.strip(' '
+(user_info['LastLogon']
+(user_info['PasswordLastSet']
+(user_info['UserAccountControl'] & samr.USER_ACCOUNT_DISABLED
+(user_info['UserAccountControl'] & samr.USER_PASSWORD_EXPIRED
+(users
+(uuid.UUID(bytes_le=value.data
+(v
+(val.key
+(val['Value']
+(value
+(value.uValue
+(value['value']
+(value[0]
+(ver
+(version
+(version_str
+(via WMI
+(via the registry
+(w
+(wef
+(wmi
+(wmi_conn
+(wmi_data
+(wmi_obj
+(workspace
+(workspaces
+(wql
+(wsus
+(wtsapi32.h
+(x
+(xml_content
+({value_type.__name__}

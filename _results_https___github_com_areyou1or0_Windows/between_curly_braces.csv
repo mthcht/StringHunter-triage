@@ -1,0 +1,3 @@
+{Import-Module .\PowerUp.ps1; Invoke-AllChecks
+{Import-Module .\Sherlock.ps1; Find-AllVulns
+{Start-Process -FilePath powershell_ise.exe

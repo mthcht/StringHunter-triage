@@ -1,0 +1,770 @@
+									# 'Vulnerable': "",\n"".join([i+"" - ""+vulns[i] for i in vulns.keys()]),"
+									# Parse Group Policy Preferences
+									# Parse Registry Settings
+									# Parse Security Settings (GptTmpl.inf)
+									# Parse Startup/Shutdown Scripts
+									#'Description': vulns['ESC1']
+							# And answer 404 not found"
+							# Let's try for the TGT and go from there
+							# Match the value"
+							# Return Multi-Status status code to WebDAV servers"
+							# Serve image and return 200 if --serve-image option has been set by user"
+						# Handle regular attributes with = or similar comparison operator
+						# Let's grab our next target
+						# Match comparison operator for regular attributes"
+						# Match the comparison operator"
+						# We have the next target, let's keep relaying..."
+						# retrieve domain information from CCache file if needed
+						# retrieve user information from CCache file if needed"
+					   # No cache present
+					# Check if there's an extensible match filter (OID with colons)"
+					# Connection failed
+					# Let's try for the TGT and go from there
+					# Resolve Vulnerable (With resolvesids)"
+					# Return a generator that yields each cached result
+					# only import if used
+					# which we don't want
+				# Check if memberOf is in attributes
+				# Check if objectSid is in attributes
+				# Connect to SYSVOL share"
+				# Handle attributes with potential extensible match
+				# No cache present
+				# Oid"
+				# Parse Machine Configuration"
+				# Parse User Configuration"
+				# Process Machine Configuration"
+				# Process User Configuration (similar structure to Machine Configuration)"
+				# Resolve Vulnerable (Without resolvesids)"
+				# Schema is in the root domain (take if from schemaNamingContext to be sure)
+				# TODO: Return entries
+				# The connection timed-out. Let's try to bring it back next round
+				# avoid dupes"
+				# check if domain is empty"
+				# get enrollment rights"
+				# havent support kerberos authentication yet
+				# print(enrollment_flag)
+				# resolve sid from delegateObj
+				# retrieve domain information from CCache file if needed
+				# retrieve user information from CCache file if needed"
+				# setting back to default"
+				#In case the value a Distinguished Name we retransform it into a list to append it"
+				#In case the value is a Distinguished Name
+				#template = template.entry_writable()
+			#    continue
+			#    dnshostname = _entries['attributes']['dnsHostName']
+			#    dnshostname = _entries['attributes']['dnsHostName'][0]
+			# Check if the command was parsed successfully"
+			# Check if the module is specified"
+			# Create new CustomExtendedOperationsRoot instance with updated settings"
+			# Enabled
+			# Execute the command using PowerView"
+			# Get groups that user is member of"
+			# Get the command from the request
+			# Get user DN and search for nested groups in one LDAP query
+			# Let's build a NegTokenInit with a Kerberos REQ_AP"
+			# Make the result serializable"
+			# Match the end of a group
+			# Match the start of a group"
+			# Parse the command arguments using PowerView's argument parser"
+			# Parse the command using shlex"
+			# Return the result along with pv_args"
+			# Search for direct group memberships"
+			# Search for user DN and nested groups in one query"
+			# Update powerview args"
+			# Vulnerable"
+			# check for web enrollment
+			# check if domain is empty"
+			# check if value is a file"
+			# open service handle
+			# query for other cert template
+			# resolve msDS-AllowedToActOnBehalfOfOtherIdentity
+			# resolve msDS-AllowedToActOnBehalfOfOtherIdentity"
+			# resolve msDS-GroupMSAMembership"
+			# resolve sid"
+			#dn_parser.dn_random_oid()
+			#else:
+			#if not dnshostname:
+			#pprint(modified_dn)
+			#pprint(parser.get_parsed_structure())
+			#pprint(tokenized_filter)
+		# (Section 5.5.1)
+		# AP-REQ Authenticator (includes application authenticator
+		# API server"
+		# Convert bytes to string
+		# Convert datetime to string
+		# Create reverse mapping of name->value"
+		# Creating Machine Account"
+		# Define routes"
+		# Done with the Kerberos saga, now let's get into LDAP"
+		# Enabled + Vulnerable only"
+		# Entries only
+		# Enumerate available GUIDs"
+		# Filter out unsupported arguments
+		# First of all, we need to get a TGT for the user"
+		# Get current user's SID from the LDAP connection"
+		# Get issuance policies for each template"
+		# Get the method's signature
+		# Importing down here so pyasn1 is not required if kerberos is not used."
+		# Kerberos"
+		# Key Usage 11"
+		# Let's extract the ticket from the TGS"
+		# Now let's build the AP_REQ"
+		# TODO: fix target when using kerberos"
+		# TODO: try to fallback to TCP/139 if tcp/445 is closed"
+		# Use args to set defaults if not provided directly
+		# Use the provided searchbase or default to the root DN"
+		# adding new folder policy folder in sysvol share"
+		# adding new gplink"
+		# addtype is A record = 1"
+		# auth method"
+		# check if domain is empty"
+		# check if identity exists"
+		# check if its really locked"
+		# check if template exists"
+		# check sign and cb is supported
+		# create a new entry structure"
+		# create certiciate template"
+		# create changeowner object"
+		# create oid
+		# delete operation"
+		# delete template from Certificate Templates
+		# delete template oid"
+		# delete template"
+		# get source identity"
+		# get the identity group information
+		# in case need more then 1000 entries"
+		# issue certificate"
+		# look for users with SPN set
+		# now time to modify"
+		# parse datalib"
+		# parsing gPLink attribute and remove selected gpo"
+		# previous ldap filter, need to changed to filter based on objectClass instead because i couldn't get the trust account"
+		# properly formatted for output"
+		# query if Exchange Servers group exists"
+		# relay option"
+		# request TGS for each accounts"
+		# resolve userAccountControl
+		# return all self.powerview.args in json
+		# set acl for the template"
+		# set args to have rbcd attribute"
+		# set the object new dn"
+		# stolen from https://github.com/the-useless-one/pywerview/blob/master/pywerview/requester.py#L90"
+		# then break it into string
+		# unissue the template
+		# verify if principalidentity exists"
+		# verify if target identity exists
+		# verify if the destination_dn exists"
+		# verify if the identity exists"
+		# verify if the ou exists"
+		# verify that delegate identity exists"
+		# verify that the gpidentity exists"
+		# verify that the identity exists"
+		# verify that the principalidentity exists"
+		# verify that the target identity exists"
+		# verify that the targetidentity exists"
+		#In case the value is a Distinguished Name
+		#ldap_filter = f'(&(samAccountType=805306368){identity_filter}{ldap_filter})'
+		#resolve ip for principal dc
+		#return self.ldap_session.entries
+	# Add object SID if RID > 1000"
+	# Add well-known SIDs first"
+	# Find CA Templates"
+	# Find CAs"
+	# Find DNS Zone"
+	# Get DNS Record"
+	# Get SCCM"
+	# Get-DomainGMSA"
+	# Get-DomainRBCD"
+	# OU"
+	# TODO: FIX kerberos auth
+	# TODO: FIX kerberos auth"
+	# add ca certificate template"
+	# add dns record"
+	# add domain ca template acl"
+	# add domain computer"
+	# add domain gpo"
+	# add domain group members"
+	# add domain group"
+	# add domain object acl"
+	# add domain ou"
+	# add domain user"
+	# check for mutually exclusive"
+	# convert from sid"
+	# convert from uac value"
+	# disable dns record"
+	# foreigngroupmember"
+	# foreignuser"
+	# from https://github.com/venaxyt/fade
+	# get exchange server"
+	# get named pipes"
+	# get-localuser"
+	# get-netloggedon"
+	# get-netservice"
+	# get-netsession"
+	# get-regloggedon"
+	# gposettings"
+	# invoke kerberoast"
+	# new gp link"
+	# remove dns record"
+	# remove domain computer"
+	# remove domain group members"
+	# remove domain object acl"
+	# remove domain object"
+	# remove domain ou"
+	# remove domain user"
+	# set dns record"
+	# set domain ca template properties"
+	# set domain computer password"
+	# set domain object distinguishednam"
+	# set domain object owner"
+	# set domain object properties"
+	# set domain rbcd"
+	# set domain user password"
+	# shares"
+	# stole from PetitPotam.py"
+	# stolen from pywerview"
+	# unlock_adaccount"
+	#clear cache"
+	#computers"
+	#domain
+	#domain controller"
+	#domainobject"
+	#domainobjectacl"
+	#domainobjectowner"
+	#gpo local group / restricted groups"
+	#gpo"
+	#group"
+	#groupmember"
+	#return s.getServerName()
+	#trust"
+	#user"
+
+    
+                            # Check dictionary in a list
+                            # Could be a different OU where we have access
+                            # LOG.debug('Skipping WRITE_DACL since it has an ObjectType set')
+                            # We can add members to a group
+                            # store it until we find a better place
+                        # We can modify the domain Dacl
+                        # We might face this if the target does not support AES 
+                        # the password to lm/nt hashes and hope for the best. If that's already
+                    #        delegation = 'constrained'
+                    #        delegation = 'unconstrained'
+                    #    elif int(userAccountControl) & UF_TRUSTED_TO_AUTHENTICATE_FOR_DELEGATION:
+                    #    if int(userAccountControl) & UF_TRUSTED_FOR_DELEGATION:
+                    #    userAccountControl = str(value[0])
+                    # Check dictionary in a list
+                    # Check if this applies to our objecttype
+                    # Generic all
+                    # Let's try for the TGT and go from there
+                    # Perform the ACL attack
+                    # Verify if the ACE applies to this object type
+                    # We might face this if the target does not support AES 
+                    # the password to lm/nt hashes and hope for the best. If that's already
+                    #elif str(attribute) == 'userAccountControl':
+                #   - ACE flags
+                #   - ACE type
+                #   - Access masks
+                #   - IdentifierAuthority value
+                #   - Revision
+                #   - SubAuthority
+                #   - SubAuthorityCount
+                # Check for forced encryption"
+                # Check for non-extended rights that may not apply to us
+                # Check if the ACE has restrictions on object type (inherited case)"
+                # Create a nice shiny new user for the escalation
+                # Extract the Trustee SID (the object that has the right over the DACL bearer)
+                # Extracts the ACE flag values and the trusted SID
+                # Extracts the InheritedObjectType GUID values
+                # Extracts the ObjectType GUID values
+                # Extracts the mask values. These values will indicate the ObjectType purpose
+                # Let's get unique user names and a SPN to request a TGS for
+                # No cache present
+                # Parse Access Mask Flags
+                # Parse InheritedObjectType GUID"
+                # Parse Object Flags"
+                # Parse ObjectType GUID"
+                # Parse Trustee SID"
+                # Perform the ACL attack
+                # Perform the Group attack
+                # Start listening and launch interactive shell.
+                # Unless that account does not exist of course
+                # We can escalate an existing user
+                # We don't care about exceptions here as we already have the required
+                # We don't have the privileges to read this security descriptor
+                # We have a result - exit the loop
+                # convert hex to binary"
+                # enable options based on binary (left to right)"
+                # information. This also works around the current SMB3 bug
+                # retrieve domain information from CCache file if needed
+                # retrieve user information from CCache file if needed"
+            #     continue
+            # Adding computers requires LDAPS
+            # Adding users requires LDAPS
+            # Computer well-known GUID
+            # Create DACL manually
+            # Default computer SPNs"
+            # Do this before the dump is complete because of the time this can take
+            # Does it apply to the correct property?
+            # Does it have the correct mask?
+            # ESC1
+            # ESC13"
+            # ESC15"
+            # ESC2"
+            # ESC3"
+            # ESC9"
+            # Extracts the access mask (by parsing the simple permissions) and the principal's SID
+            # For object-specific ACE"
+            # For standard ACE"
+            # Found! Remove
+            # If the ACE is not an access allowed
+            # Ignore templates requiring manager approval"
+            # Is it the correct ACE type?
+            # Is it the correct SID?
+            # Iterate over all the ACEs
+            # Launch locally listening interactive shell.
+            # Let's build a NegTokenInit with a Kerberos REQ_AP"
+            # Mostly taken from github.com/ly4k/Certipy/certipy/security.py
+            # No EKU = works for client authentication"
+            # Not found
+            # Parse ACE Flags"
+            # Query the SD again to see what AD made of it"
+            # Random computername
+            # Random password
+            # Retrieves ACE's flags
+            # Return the DN"
+            # Return the SAM name
+            # TODO: Fix Logic here
+            # TODO: add another user_can_enroll logic
+            # This method exists only for selected protocol sequences.
+            # This would need XML parsing for various preference types
+            # This would need a proper PReg file parser
+            # We are still here -> this is the correct ACE
+            # https://social.technet.microsoft.com/Forums/windowsserver/en-US/d028952f-a25a-42e6-99c5-28beae2d3ac3/how-can-i-know-the-default-computer-container?forum=winservergen
+            # if sid in list(WELL_KNOWN_SIDS.keys()):
+            #accesstype = ldaptypes.ACCESS_ALLOWED_OBJECT_ACE.ADS_RIGHT_DS_CONTROL_ACCESS
+            #self.targetidentity_sid = format_sid(args.targetidentity_sid)
+        #
+        #                else:
+        #               OCTET Checksum[16];
+        #               OCTET Confounder[8];
+        #            pass
+        #        # resolve userAccountControl"
+        #        else:
+        #        except:
+        #        try:
+        #       OCTET Data[0];
+        #       struct HEADER {
+        #       } Header;
+        #    LOG.error(f'{self.args.targetidentity} not found in domain. Ensure to use valid object distinguishedName property')
+        #    pass
+        #    return
+        # (Section 5.5.1)
+        # AP-REQ Authenticator (includes application authenticator
+        # According to RFC4757 (RC4-HMAC) the cipher part is like:"
+        # Add EXTENDED_RIGHTS_MAP (key: guid, value: name)"
+        # Add a new computer if that is requested"
+        # Add guids_map_dict if provided
+        # Add reverse mapping from EXTENDED_RIGHTS_NAME_MAP (key: guid, value: name)"
+        # Add the group sid of the primary group to the list
+        # Also get the privileges on the default Users container
+        # Also search by primarygroupid
+        # And now the rows"
+        # Append the ACEs in the DACL locally
+        # Attempts to retrieve the principal's SID if it's a write action
+        # Backups current DACL before add the new one
+        # Change the output directory to configured rootdir"
+        # Combine the GUID maps"
+        # Create a resolver object
+        # Create new dumper object"
+        # Create reverse mapping for lookups by name"
+        # Create the baseDN"
+        # Default computer SPNs"
+        # Done with the Kerberos saga, now let's get into LDAP"
+        # Dump LAPS Passwords"
+        # ESC4"
+        # Effectively push the DACL with the new ACE
+        # Encrypt the shyte"
+        # Find the user's DN
+        # First get domain SID
+        # First of all, we need to get a TGT for the user"
+        # For display only
+        # For the final dot
+        # Get a TGT for the current user
+        # Get target computer DN"
+        # Get the domain we are in"
+        # If at least one ACE must been removed
+        # If specified validate the user's privileges. This might take a while on large domains but will"
+        # If validation of privileges is not desired, we assumed that the user has permissions to escalate"
+        # If we can't ACL escalate, try adding us to a privileged group"
+        # Importing down here so pyasn1 is not required if kerberos is not used."
+        # In order to maximize the probability of getting session tickets with RC4 etype, we will convert the"
+        # Interesting groups we'd like to be a member of, in order of preference"
+        # Is our host an IP? In that case make sure the server IP is used
+        # Kerberos"
+        # Key Usage 1"
+        # Key Usage 11"
+        # Last attack, dump the domain if no special privileges are present"
+        # Let's build the timestamp"
+        # Let's extract the ticket from the TGS"
+        # Now add the user as a member to this group
+        # Now let's build the AP_REQ"
+        # Now prepare the new AS_REQ again with the PADATA"
+        # Now search for this group by SID
+        # Now that we have the TGT, we should ask for a TGS for cifs"
+        # Other rights in this script are extended rights and need the DS_CONTROL_ACCESS mask
+        # Perform the Delegate attack if it is enabled and we relayed a computer account"
+        # Perform the Shadow Credentials attack if it is enabled"
+        # Print header"
+        # Query for the sid of our user"
+        # Random password"
+        # Random username"
+        # Regarding AES encryption type (AES128 CTS HMAC-SHA1 96 and AES256 CTS HMAC-SHA1 96)
+        # Set SD flags to only query for DACL"
+        # Set up a default config
+        # The groups the user is a member of
+        # These ACEs will be used as comparison templates
+        # This ACE flag verifes if the ObjectType is valid
+        # ToDo: cannot we reuse the previous one?
+        # Tries to resolve the SID from the LDAP domain dump
+        # Tries to resolve the SID from the well known SIDs
+        # We can't set the KDC to a custom IP when requesting things cross-domain
+        # We prefer ACL escalation since it is more quiet"
+        # Yes
+        # Yes.. bye bye
+        # acl
+        # an existing user via ACL attacks.
+        # because then the KDC host will be used for both
+        # cleartext password.
+        # client key (Section 5.2.7.2)
+        # exact file match terminates this completion
+        # identify the proper containers for escalating via the different techniques.
+        # if not assume lookups are working already
+        # last 12 bytes of the encrypted ticket represent the checksum of the decrypted 
+        # probably bad password if preauth is disabled
+        # resolve authorized signature"
+        # resolve certificate name flag
+        # resolve enrollment flag"
+        # resolve msDS-SupportedEncryptionTypes
+        # resolve no_security_extension"
+        # resolve pKIExtendedKeyUsage"
+        # resolve renewal_period"
+        # resolve validity period"
+        # since most of the systems would accept it. If we're lucky and 
+        # struct EDATA {
+        # ticket
+        # treat the last arg as a path and complete it
+        # try to open connection if closed
+        # when requesting subsequent TGS :(. More research needed.
+        # } edata;
+        #Dump gMSA Passwords"
+        #LOG.info('Querying domain security descriptor')"
+        #except:
+        #if len(self.client.entries) == 0:"
+        #opsec options"
+        #opts.append( constants.KDCOptions.forwardable.value )
+        #opts.append( constants.KDCOptions.renewable.value )
+        #print self.client.entries
+        #result = self.getUserInfo(self.targetidentity_dn)
+        #try:
+    #   - access_mask : the allowed access mask
+    #   - ace : the ACE to parse
+    #   - ace_type : the ACE type (allowed or denied)
+    #   - dn : the principal's Distinguished Name to modify
+    #   - fsr : the access mask to parse
+    #   - parsed_ace : a parsed ACE from parseACE()
+    #   - parsed_dacl : a parsed DACL from parseDACL()
+    #   - privguid : the ObjectType (an Extended Right here)
+    #   - samname : a sAMAccountName
+    #   - secDesc : the Security Descriptor with the new DACL to push
+    #   - sid : the SID to resolve
+    #   - sid : the principal's SID
+    # 'Do not require Kerberos preauthentication' set
+    # (Section 5.4.2)
+    # (Section 5.5.1)
+    # (Section 5.5.2)
+    # ACL constants"
+    # AP-REP encrypted part (includes application session
+    # AP-REQ Authenticator (includes application authenticator
+    # AS-REP encrypted part (includes TGS session key or
+    # Access System Acl access type"
+    # Attempts to add a new ACE to a DACL
+    # Attempts to push the locally built DACL to the remote server into the security descriptor of the specified principal"
+    # Attempts to remove an ACE from the DACL"
+    # Attempts to resolve a SID and return the corresponding samaccountname"
+    # Attempts to retieve the SID and Distinguisehd Name from the sAMAccountName"
+    # BUILTIN\Administrators
+    # Builds a standard ACE for a specified access mask (rights) and a specified SID (the principal who obtains the right)"
+    # Builds an object-specific for a specified ObjectType (an extended right, a property, etc, to add) for a specified SID (the principal who obtains the right)"
+    # Check we've got what we asked for"
+    # Convert to binary form, just in case we're receiving strings"
+    # Creating new cipher based on received keytype
+    # Decode the TGT"
+    # Extract the ticket from the TGT
+    # First of all, we need to get a TGT for the user"
+    # Generic Rights
+    # Get the session key and the ticket"
+    # Get the session key"
+    # If DCE_STYLE = FALSE
+    # Kerberos"
+    # Key Usage 11"
+    # Key Usage 12"
+    # Key Usage 3
+    # Key Usage 7"
+    # Key Usage 8"
+    # Let's build a NegTokenInit with a Kerberos REQ_AP"
+    # Let's extract the ticket from the TGS"
+    # Main read funtion"
+    # Main write function"
+    # Maximum Allowed access type"
+    # Not used for the moment
+    # Now let's build the AP_REQ"
+    # Parses a full DACL"
+    # Parses a specified ACE and extract the different values (Flags, Access Mask, Trustee, ObjectType, InheritedObjectType)"
+    # Parses an access mask to extract the different values from a simple permission"
+    # Pass the hash/aes key :P"
+    # Prints a full DACL by printing each parsed ACE"
+    # Prints properly a parsed ACE"
+    # Prints the parsed DACL
+    # Reference: https://docs.microsoft.com/en-us/dotnet/api/system.directoryservices.activedirectoryrights?view=netframework-4.7.2
+    # Retrieves the GUIDs for the specified rights"
+    # So, we have the TGT, now extract the new session key and finish"
+    # Specific rights"
+    # Standard access types"
+    # TGS-REP encrypted part (includes application session
+    # TGS-REQ PA-TGS-REQ padata AP-REQ Authenticator (includes
+    # The target principal is specified with its Distinguished Name
+    # This should be the PREAUTH_FAILED packet or the actual TGT if the target principal has the"
+    # ToDo: Check Nonces!    "
+    # We use a print statement because the logger is not initialized yet here
+    # Yes.. this shouldn't happen but it's inherited from the past"
+    # for mac and linux(here, os.name is 'posix')"
+    # for windows"
+    # https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/72e7c7ea-bc02-4c74-a619-818a16bf6adb
+    # https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/c79a383c-2b3f-4655-abe7-dcbb7ce0cfbe
+    # https://github.com/ly4k/Certipy/blob/main/certipy/commands/find.py#L688"
+    # https://stackoverflow.com/questions/28029872/retrieving-security-descriptor-and-getting-number-for-filesystemrights
+    # key (Section 5.5.1)
+    # the following for Active Directory specific Access Masks
+    #acedata['Mask']['Mask'] = 983551 # Full control
+    #acedata['Mask']['Mask'] = ldaptypes.ACCESS_ALLOWED_OBJECT_ACE.ADS_RIGHT_DS_CONTROL_ACCESS
+    #chkField['Flags'] = GSS_C_INTEG_FLAG | GSS_C_SEQUENCE_FLAG | GSS_C_REPLAY_FLAG | GSS_C_MUTUAL_FLAG | GSS_C_DCE_STYLE
+    #opts.append( constants.KDCOptions.canonicalize.value )
+    #opts.append( constants.KDCOptions.forwardable.value )
+    #opts.append( constants.KDCOptions.renewable.value )
+    #opts.append( constants.KDCOptions.renewable_ok.value )
+"									
+"						# If it was an anonymous login, send 401"
+"						# No anonymous login, go to next host and avoid triggering a popup"
+"						# We won't use the redirect trick, closing connection..."
+"					# Only skip to next if the login actually failed, not if it was just anonymous login or a system account"
+"					# Relay worked, do whatever we want here..."
+"					#logging.debug(f""Found named pipe: {pipe}"")"
+"					#result[""rows""].append([pipe, binding_params[pipe]['protocol'], binding_params[pipe]['description'], f'{bcolors.OKGREEN}Yes{bcolors.ENDC}'])"
+"					#result[""rows""].append([pipe, binding_params[pipe]['protocol'], binding_params[pipe]['description'], f'{bcolors.WARNING}No{bcolors.ENDC}'])"
+"				
+"				# We're not admin, bye"
+"				#conn.kerberosLogin(self.username,self.password,self.domain, self.lmhash, self.nthash, self.auth_aes_key, self.dc_ip, self.TGT, self.TGS)"
+"			
+"			# Match boolean operators (&, |, !)"
+"			#computer_name = host2ip(self.get_server_dns(), self.nameserver, 3, True, use_system_ns=self.use_system_nameserver, type=list)"
+"			#if (_entries['attributes']['dnsHostName'], list):"
+"			#infdict = {'sid':left.replace(""*"","""").replace(""__memberof"",""""), 'memberof': right.replace(""*"","""").replace(""__members"","""")}"
+"			#parser.modify_token(""Value"", ""admin"", ""modifiedSamAccountName"")"
+"			#self.ldap_server, self.ldap_session = self.init_ldap_connection(target, tls, auth_method=ldap3.SASL)"
+"		
+"		# ('AlignmentPadding',':'),"
+"		# When exploiting CVE-2019-1040, remove flags"
+"		# check if its only have 1 index,"
+"		# subkey), encrypted with the application session key"
+"		#return datetime.datetime(1601, 1, 1) + datetime.timedelta(seconds=ts/10000000)"
+"		#self.ldap_session.search(self.root_dn,ldap_filter,attributes=properties)"
+"	
+"	#domain, username, password = utils.parse_credentials(args.account)"
+"	#return sections, comments, keys"
+"
+"    
+"        
+"            
+"                
+"                            # LOG.debug('ACE does not apply, only to %s', objectType)"
+"                            # We can create users in the default container, this is preferred"
+"                        # Check if the ACE is an OBJECT ACE, if so the WRITE_DACL is applied to"
+"                        # So, if that's the case we'll force using RC4 by converting"
+"                        # a property, which is both weird and useless, so we skip it"
+"                        # done, byebye."
+"                    # ACE is set on this object, but only inherited, so not applicable to us"
+"                    # If the ACE has an ObjectType, the GUIDs must match"
+"                    # So, if that's the case we'll force using RC4 by converting"
+"                    # done, byebye."
+"                # To be sure the good ACEs are removed, multiple fields are compared between the templates and the ACEs in the DACL"
+"                #'all':[EXTENDED_RIGHTS_NAME_MAP['DS-Replication-Get-Changes'],EXTENDED_RIGHTS_NAME_MAP['DS-Replication-Get-Changes-All'], EXTENDED_RIGHTS_NAME_MAP['User-Force-Change-Password'], EXTENDED_RIGHTS_NAME_MAP['Self-Membership']],"
+"            # For now, return a list of available preference files"
+"            # For now, return raw data"
+"            # If the ACE doesn't match any ACEs from the template list, it is added to the DACL that will be pushed"
+"            # Let's try to get the NT ERROR, if not, we quit and give the general one"
+"        #                    entry[""attributes""][""userAccountControl""] = UAC.parse_value(entry[""attributes""][""userAccountControl""])"
+"        #                    entry[""attributes""][""userAccountControl""] = UAC.parse_value(entry['attributes']['userAccountControl'][0])"
+"        #                if isinstance(entry['attributes']['userAccountcontrol'], list):"
+"        #            entry[""attributes""][""msDS-SupportedEncryptionTypes""] = ENCRYPTION_TYPE.parse_value(entry[""attributes""][""msDS-SupportedEncryptionTypes""])"
+"        #            entry[""attributes""][""msDS-SupportedEncryptionTypes""] = ENCRYPTION_TYPE.parse_value(entry[""attributes""][""msDS-SupportedEncryptionTypes""][0])"
+"        #            if ""userAccountControl"" in list(entry[""attributes""].keys()):"
+"        #        if isinstance(entry['attributes']['msDS-SupportedEncryptionTypes'], list):"
+"        #    if ""msDS-SupportedEncryptionTypes"" in list(entry[""attributes""].keys()):"
+"        # AS-REQ PA-ENC-TIMESTAMP padata timestamp, encrypted with the"
+"        # Creates ACEs with the specified GUIDs and the SID, or FullControl if no GUID is specified"
+"        # For the moment, only the Allowed and Denied Access ACE are supported"
+"        # If a principal has been specified, only the ACE where he is the trustee will be printed"
+"        # If no clear text password is provided, we just go with the defaults."
+"        # If none of these match, the ACE does not apply to this object"
+"        # In short, we're interested in splitting the checksum and the rest of the encrypted data"
+"        # In theory, we should have the right credentials for the etype specified before."
+"        # KDC_ERR_ETYPE_NOSUPP is returned, we will later try rc4."
+"        # Let's extract the Ticket, change the domain and keep asking"
+"        # Let's output the TGT enc-part/cipher in John format, in case somebody wants to use it."
+"        # Most of the times we shouldn't be here, is this a TGT?"
+"        # No TGT in cache, request it"
+"        # Now we have all the SIDs applicable to this user, now enumerate the privileges of domains and OUs"
+"        # Remove last ','"
+"        # So, in order to support more than one cypher, I'm setting aes first"
+"        # This is already the reverse of EXTENDED_RIGHTS_MAP, so we don't need to add it"
+"        # This is still confusing. I thought KDC_ERR_ETYPE_NOSUPP was enough, "
+"        # We have hashes to try, only way is to request RC4 only"
+"        # WriteMembers not an extended right, we need read and write mask on the attribute (https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/c79a383c-2b3f-4655-abe7-dcbb7ce0cfbe)"
+"        # but I found some systems that accepts all ciphers, and trigger an error "
+"        # more than one match, or single match which does not exist (typo)"
+"        # password to ntlm hashes (that will force to use RC4 for the TGT). If that doesn't work, we use the"
+"        # privileges required are not yet enumerated, neither is ms-ds-MachineAccountQuota"
+"        # resolved to a single directory, so return list of files below it"
+"        # subkey), encrypted with the application session key"
+"        # the initial and the referral ticket, which breaks stuff."
+"        #('AlignmentPadding',':'),"
+"        #self.client.search('dc=vulnerable,dc=contoso,dc=com', '(objectclass=person)')"
+"    #   - dacl : the DACL to parse, submitted in a Security Desciptor format"
+"    # TGS authenticator subkey), encrypted with the TGS session"
+"    # The Mask is ""ADS_RIGHT_DS_CONTROL_ACCESS"" (the ObjectType GUID will identify an extended access right)"
+"    # To do it, a new DACL is built locally with all the ACEs that must NOT BE removed, and this new DACL is pushed on the server"
+"    # When reading, these constants are actually represented by"
+"    # application session key), encrypted with the client key"
+"    # key), encrypted with the TGS session key (Section 5.4.2)"
+"    # subkey), encrypted with the application session key"
+"    #ap_rep = decoder.decode(negTokenResp['ResponseToken'][16:], asn1Spec=AP_REP())[0]"
+"""""""Cache LDAP query results"""""""
+"""""""Clear all cached LDAP results"""""""
+"""""""Deserialize complex types like datetime, bytes, timedelta, and others."""""""
+"""""""Generate a unique cache key based on search parameters"""""""
+"""""""Parse GptTmpl.inf security settings file"""""""
+"""""""Parse Group Policy Preferences"""""""
+"""""""Parse Registry.pol files"""""""
+"""""""Parse scripts.ini files"""""""
+"""""""Parse the properties argument into a list."""""""
+"""""""Parse the select argument into a list or return the digit if value is a digit."""""""
+"""""""Retrieve cached LDAP query results if they exist and are not expired"""""""
+"""""""Serialize complex types like datetime, bytes, timedelta, and others."""""""
+"""""""docstring for setrbcd"""""""
+"#   Also, disabled accounts won't be shown."
+"#   In fact, make it easier"
+"#   Just starting, TONS of things to do"
+"#   Plain LDAP is not supported, as it doesn't allow setting the password."
+"#   SMB, SAMR, LDAP"
+"#   Since normal account's password tend to be shorter than machine accounts, and knowing that a TGS request"
+"#   This module provides a Python implementation for this attack, adding also the ability to PtH/Ticket/Key."
+"#   [X] Improve the search filter, we have to specify we don't want machine accounts in the answer"
+"#   will encrypt the ticket with the account the SPN is running under, this could be used for an offline"
+"# For an ACE, flags that indicate if the ObjectType and the InheritedObjecType are set with a GUID"
+"# Since these flags are the same for Allowed and Denied access, the same class will be used from 'ldaptypes'"
+"# Since these two flags are the same for Allowed and Denied access, the same class will be used from 'ldaptypes'"
+#
+#       (play with userAccountControl)
+#   - access_mask : the allowed access mask
+#   - ace_type : the ACE type (allowed or denied)
+#   - sid : the principal's SID
+#   Alberto Solino (@agsolino)
+#   Allows to use SAMR over SMB (this way is used by modern Windows computer when
+#   Charlie BROMBERG (@_nwodtuhs)
+#   Dirk-jan Mollema (@_dirkjan) / Fox-IT (https://www.fox-it.com)
+#   Guillaume DAUMAS (@BlWasp_)
+#   Helper functions for kerberos
+#   JaGoTu (@jagotu)
+#   LDAP Attack Class
+#   LDAP(s) protocol relay attack
+#   Lucien DOUSTALY (@Wlayzz)
+#   Original idea of implementing this in Python belongs to @skelsec and his
+#   Python script to read and manage the Discretionary Access Control List of an object
+#   This is part of the kerberoast attack researched by Tim Medin (@timmedin) and detailed at
+#   This module will try to find Service Principal Names that are associated with normal user account.
+#   This script will add a computer account to the domain and set its password.
+#   [ ]: Complete the process of joining a client computer to a domain via the SAMR protocol
+#   [X] Add the capability for requesting TGS and output them in JtR/hashcat format
+#   adding machines through the GUI) and LDAPS.
+#   bruteforcing attack of the SPNs account NTLM hash if we can gather valid TGS for those SPNs.
+#   https://files.sans.org/summit/hackfest2014/PDFs/Kicking%20the%20Guard%20Dog%20of%20Hades%20-%20Attacking%20Microsoft%20Kerberos%20%20-%20Tim%20Medin(1).pdf
+#   https://github.com/skelsec/PyKerberoast project
+# ACE flags enum"
+# Access Mask enum"
+# Access mask permits to encode principal's rights to an object. This is the rights the principal behind the specified SID has
+# Author:
+# Author: Alberto Solino (@agsolino)
+# Authors:
+# Builds a standard ACE for a specified access mask (rights) and a specified SID (the principal who obtains the right)"
+# Check if an ACE allows for adding members"
+# Check if an ACE allows for creation of users"
+# Create an ALLOW ACE with the specified sid"
+# Create an object ACE with the specified privguid and our sid"
+# DCE RPC Helpers
+# Define global variables to prevent dumping the domain twice"
+# Del computer if we have rights."
+# Description:
+# GPO"
+# GUID rights enum"
+# GUID thats permits to identify extended rights in an ACE
+# Impacket - Collection of Python classes for working with network protocols.
+# Mask ObjectType field enum"
+# New ACE at the end of SACL for inheritance and access return system-audit
+# Our random number generator"
+# Possible values for the Mask field in object-specific ACE (permitting to specify extended rights in the ObjectType field for example)
+# Reference for:
+# Retrieved from Windows 2022 server via LDAP (CN=Extended-Rights,CN=Configuration,DC=...)"
+# SECUREAUTH LABS. Copyright (C) 2021 SecureAuth Corporation. All rights reserved.
+# SECUREAUTH LABS. Copyright (C) 2022 SecureAuth Corporation. All rights reserved.
+# SECUREAUTH LABS. Copyright 2019 SecureAuth Corporation. All rights reserved.
+# Simple permissions are combinaisons of extended permissions
+# Simple permissions enum"
+# Some missing structures here that I skipped"
+# This is new from ldap3 v2.5"
+# This software is provided under a slightly modified version
+# This software is provided under under a slightly modified version
+# ToDo:
+# Universal SIDs"
+# and to prevent privilege escalating more than once
+# codes taken from https://github.com/ly4k/Certipy/blob/main/certipy/lib/certificate.py
+# define our clear function"
+# for more information.
+# for relay used
+# https://docs.microsoft.com/en-us/dotnet/api/system.directoryservices.activedirectoryrights?view=net-5.0"
+# https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-crtd/ec71fd43-61c2-407b-83c9-b52272dec8a1"
+# https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-crtd/f6122d87-b999-4b92-bff8-f465e8949667"
+# https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/72e7c7ea-bc02-4c74-a619-818a16bf6adb
+# https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/7a53f60e-e730-4dfe-bbe9-b21b62eb790b
+# https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/c79a383c-2b3f-4655-abe7-dcbb7ce0cfbe
+# https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc783530(v=ws.10)?redirectedfrom=MSDN
+# https://docs.microsoft.com/en-us/windows/win32/adschema/a-rightsguid
+# https://docs.microsoft.com/en-us/windows/win32/api/iads/ne-iads-ads_rights_enum?redirectedfrom=MSDN
+# https://docs.microsoft.com/en-us/windows/win32/api/securitybaseapi/nf-securitybaseapi-addauditaccessobjectace
+# https://docs.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-access_allowed_object_ace
+# https://github.com/GhostPack/Certify/blob/2b1530309c0c5eaf41b2505dfd5a68c83403d031/Certify/Domain/CertificateAuthority.cs#L11"
+# https://github.com/GhostPack/Certify/blob/2b1530309c0c5eaf41b2505dfd5a68c83403d031/Certify/Domain/CertificateAuthority.cs#L23"
+# https://github.com/dirkjanm/krbrelayx/blob/master/dnstool.py"
+# https://ldapwiki.com/wiki/Common%20Active%20Directory%20Bind%20Errors"
+# https://stackoverflow.com/questions/14591168/argparse-dont-show-usage-on-h"
+# https://www.pkisolutions.com/object-identifiers-oid-in-pki/"
+# of the Apache Software License. See the accompanying LICENSE file
+# original script: https://gist.github.com/GeisericII/6849bc86620c7a764d88502df5187bd0
+# store discovered sids"
+#!/usr/bin/env python
+#!/usr/bin/env python3
+################################################################################
+################################################################################"
+#gMSA structure"
+#stolen from https://github.com/ly4k/Certipy"
+'''{self.__newline.ljust(self.get_max_len(list(entry['attributes'].keys()))+3)}'''

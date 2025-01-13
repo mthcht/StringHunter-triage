@@ -1,0 +1,6 @@
+        self.CredentialFile3LastModified = credentialfile3lastmodified
+        self.CredentialFile4LastModified = credentialfile4lastmodified
+    if firefox.CredentialFile3LastModified != datetime.min:
+    if firefox.CredentialFile4LastModified != datetime.min:
+"        print(f""    'key3.db'        ({firefox.CredentialFile3LastModified})  :  Credentials file, run SharpWeb (https://github.com/djhohnstein/SharpWe"
+"        print(f""    'key4.db'        ({firefox.CredentialFile4LastModified})  :  Credentials file, run SharpWeb (https://github.com/djhohnstein/SharpWe"

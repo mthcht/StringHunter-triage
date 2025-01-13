@@ -1,0 +1,120 @@
+"( `X-Gophish-Contact` , `X-Gophish-Signature`"
+"(""Referrer-Policy"", ""no-referrer"""
+"(""text/javascript"", js.Minify"
+"(""text/javascript"", script"
+"($http_user_agent != ""iamdevil"""
+"(CSS, JS"
+"(CSS,JS"
+"(Favicon, form title font or style, or anything which seems relevant"
+"(You have to configure the SSL Settings correctly, change it to Full in cloudflare settings"
+"(limit proxy host in phishlet to 1 or find a way , may be create multiple azure sub domains and try with that"
+"(w http.ResponseWriter, r *http.Request"
+"(w, ""Try again!"", http.StatusNotFound"
+"(w, ""User-agent: *\nDisallow: /*/*\nDisallow: /.git/*"""
+"(w, r"
+( [https://github.com/kgretzky/evilginx2/issues/1042#issuecomment-2052073864](https://github.com/kgretzky/evilginx2/issues/1042#issuecomment-2052073864
+($http_user_agent ~* (bot|Bot
+(<\s*/body\s*>
+(Analysts may look for older DNS Records of the domain
+(As mentioned in Kuba's blog
+(By Andre Rosario - From **BreakDev Red** Discord
+(Check all the code lines with `req.Header.Set` and comment relevant functions
+(Click Submit a Sample -> Web Address
+(Content security Policy
+(For cookie-Name
+(For cookie-Value
+(From BreakDev Red Community
+(Improve Evilginx email delivery trust
+(JA3 and JA3S
+(PWA
+(Post Exploitation
+(Technical people can easily figure this out though
+(X-Evilginx header and Default Cert Details
+([https://support.microsoft.com/en-us/office/encrypt-email-messages-373339cb-bf1a-4509-b296-802a39d801dc](https://support.microsoft.com/en-us/office/encrypt-email-messages-373339cb-bf1a-4509-b296-802a39d801dc
+([https://www.microsoft.com/en-us/microsoft-365/enterprise/office365-plans-and-pricing](https://www.microsoft.com/en-us/microsoft-365/enterprise/office365-plans-and-pricing
+(`(?i
+(avoid common phishing email words
+(by @[rad9800](https://x.com/rad9800/status/1858242066356019317?s=46&t=mlJvZy0Zrkrxzuvtt7m2cQ
+(by Kuba
+(http://github.com/tdewolff/minify/js
+(https://academy.breakdev.org/evilginx-mastery
+(https://adepts.of0x.cc/novnc-phishing/
+(https://an0nud4y.notion.site/Phishing-Red-Team-Engagement-Infra-1c6fba8f2d854a14ba76320284161c5e?pvs=4
+(https://aws.amazon.com/ses/
+(https://badoption.eu/blog/2023/07/12/entra_phish.html
+(https://badoption.eu/blog/2023/12/03/PhishingInfra.html
+(https://bleekseeks.com/blog/how-to-protect-against-modern-phishing-attacks
+(https://blog.shared-video.mov/systematic-destruction-hacking-the-scammers-pt.-2
+(https://breakdev.org/evilqr-phishing/
+(https://csi.forcepoint.com/
+(https://cybercx.co.nz/blog/identifying-gophish-servers/
+(https://cyberwarfare.live/wp-content/uploads/2023/08/Certified-Red-Team-CredOps-Infiltrator-CRT-COI-1.pdf
+(https://cyberwarfare.live/wp-content/uploads/2023/08/OPSEC-on-the-High-Seas_-A-Gophish-Adventure.pdf
+(https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare/
+(https://edermi.github.io/post/2021/modding_gophish/
+(https://exchange.xforce.ibmcloud.com/
+(https://expireddomains.net/
+(https://fortbridge.co.uk/research/add-spf-dmarc-dkim-mx-records-evilginx/
+(https://gist.github.com/RedTeamOperations/33f245a777c9b322b0466b59d6687f15
+(https://gist.github.com/dunderhay/d5fcded54cc88a1b7e12599839b6badb
+(https://github.com/An0nUD4Y/Evilginx2-Phishlets
+(https://github.com/An0nUD4Y/Evilginx2-Phishlets#securing-evilginx-infra-tips
+(https://github.com/An0nUD4Y/Evilginx2-Phishlets?tab=readme-ov-file#some-less-known-techniques
+(https://github.com/Flangvik/Bobber
+(https://github.com/Flangvik/QRucible
+(https://github.com/aalex954/evilginx2-TTPs#ip-blacklist
+(https://github.com/dazzyddos/HSC24RedTeamInfra/blob/main/RedTeamInfraAutomation.pdf
+(https://github.com/fin3ss3g0d/evilgophish
+(https://github.com/gophish/gophish/issues/1553#issuecomment-523969887
+(https://github.com/kgretzky/evilginx2/blob/55579600ca826a94b328d5e0cb35740045a35b2e/core/http_proxy.go#L887
+(https://github.com/kgretzky/evilqr
+(https://github.com/kgretzky/talks/blob/main/2024/x33fcon/a-smooth-sea-never-made-a-skilled-phisherman.pdf
+(https://github.com/mgeeky/Penetration-Testing-Tools/blob/master/phishing/phishing-HTML-linter.py
+(https://github.com/mgeeky/Penetration-Testing-Tools/tree/master/phishing
+(https://github.com/powerseb/NoPhish
+(https://github.com/puzzlepeaches/sneaky_gophish
+(https://github.com/swagkarna/EvilJack
+(https://github.com/zolderio/AITMWorker
+(https://global.sitesafety.trendmicro.com/
+(https://googleweblight.com/i?u=m4lici0u5.com
+(https://help.evilginx.com/
+(https://insights.spotit.be/2024/06/03/clipping-the-canarys-wings-bypassing-aitm-phishing-detections/
+(https://ja4db.com/
+(https://janbakker.tech/evilginx-resources-for-microsoft-365/
+(https://lots-project.com/
+(https://m.youtube.com/watch?si=YTjMa8XBusj_tPdc&v=VglCgoIjztE&feature=youtu.be
+(https://m3rcer.netlify.app/redteaming/spamfilterbypass/
+(https://medium.com/@yudasm/bypassing-windows-hello-for-business-for-phishing-181f2271dc02
+(https://mgeeky.tech/uploads/WarCon22%20-%20Modern%20Initial%20Access%20and%20Evasion%20Tactics.pdf
+(https://mrd0x.com/browser-in-the-browser-phishing-attack/
+(https://mrd0x.com/progressive-web-apps-pwa-phishing/
+(https://posts.specterops.io/drink-like-a-phish-b9e91d0b5677?source=collection_home---6------0-----------------------
+(https://powerseb.github.io/posts/Another-phishing-tool/
+(https://redsiege.com/blog/2024/01/you-cant-see-me-protecting-your-phishing-infrastructure/
+(https://research.aurainfosec.io/pentest/hook-line-and-phishlet/
+(https://sitereview.bluecoat.com/#/
+(https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/hunting-for-qr-code-aitm-phishing-and-user-compromise/bc-p/4054850
+(https://trustedsec.com/blog/the-triforce-of-initial-access
+(https://untrustednetwork.net/en/2024/02/26/google-open-redirect/
+(https://urlfiltering.paloaltonetworks.com/
+(https://www.checkpoint.com/urlcat/main.htm
+(https://www.cyren.com/security-center/url-category-check-gate
+(https://www.fortiguard.com/webfilter
+(https://www.jackphilipbutton.com/post/how-to-protect-evilginx-using-cloudflare-and-html-obfuscation
+(https://www.sprocketsecurity.com/resources/never-had-a-bad-day-phishing-how-to-set-up-gophish-to-evade-security-controls
+(https://www.trustedsource.org/
+(https://www.websense.com/content/SiteLookup.aspx
+(https://www.youtube.com/watch?v=luJjxpEwVHI&feature=youtu.be
+(https://www.youtube.com/watch?v=wTLB0Yh70_0
+(https://youtu.be/-W-LxcbUxI4?feature=shared
+(https://youtu.be/Nh99d3YnpI4?si=Ltwus2PS0z97gf2R
+(https://youtu.be/p1opa2wnRvg
+(https://youtu.be/tNh_sYkmurI?si=qcb917IB5zHU1fQk
+(https://zolder.io/using-honeytokens-to-detect-aitm-phishing-attacks-on-your-microsoft-365-tenant/
+(img/Untitled%201.png
+(img/Untitled.png
+(needs registration
+(or higher
+(ps *PhishingServer
+(submission only; no checking
+(x33fc0n 2024

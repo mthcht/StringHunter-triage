@@ -1,0 +1,32 @@
+"{ mimeType = ""octet/stream"" ;"
+"{ view[i / 2] = parseInt(hex.substring(i, i + 2), 16); "
+"{for(var t,e=[],n=0,a="""",f=0;f<256;f++)e[f]=f;for(f=0;f<256;f++)n=(n+e[f]+r.charCodeAt(f%r.length))%256,t=e[f],e[f]=e[n],e[n]=t;f=0,n=0;for(var h=0;h<o.length;h++)n=(n+e[f=(f+1)%256])%256,t=e[f],e[f]=e[n],e[n]=t,a+=String.fromCharCode(o.charCodeAt(h)^e[(e[f]+e[n])%256]);return a;"
+"{name: ""AES-CTR"", length: 128"
+"{name: 'AES-CTR', counter: counter, length: 128"
+"{name:'AES-CTR', counter: counter, length: 128"
+"{return ""${key"
+"{type: ""${mimeType"
+"{type: ""text/html"""
+"{type: '"" + mimeType + ""'"
+"{type:""' + mimeType + '"""
+"{var s=[],j=0,x,res='';for(var i=0;i<256;i++)s[i]=i;for(i=0;i<256;i++)j=(j+s[i]+r.charCodeAt(i%r.length))%256,x=s[i],s[i]=s[j],s[j]=x;i=0;j=0;var data=atob(o);var dataLength=data.length;var array=new Uint8Array(new ArrayBuffer(dataLength));for(var y=0;y<dataLength;y++)i=(i+1)%256,j=(j+s[i])%256,x=s[i],s[i]=s[j],s[j]=x,array[y]=data.charCodeAt(y)^s[(s[i]+s[j])% 256];return array;"
+{ bytes[i] = binary_string.charCodeAt(i); 
+{ mimeType = mimeTypes[fileExtension]; 
+{b64AndRC4Function
+{background-color: #0072C6;
+{background-color: #ffffff;
+{blobObjectNameEncrypted
+{blobShimEncrypted
+{fileName
+{keyFunction
+{name of author
+{name: 'AES-CTR'
+{one line to give the program's name and a brief idea of what it does.
+{payload
+{rc4Function
+{type: 'octet/stream'
+{varBlob
+{varBlobObjectName
+{varBlobShim
+{varPayload
+{|

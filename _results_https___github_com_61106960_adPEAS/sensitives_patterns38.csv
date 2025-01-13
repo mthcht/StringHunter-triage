@@ -1,0 +1,4 @@
+    [OutputType('PowerView.RDPSessionInfo')]
+"                            $RDPSession.PSObject.TypeNames.Insert(0, 'PowerView.RDPSessionInfo')"
+$WTS_SESSION_INFO_1 = struct $Mod PowerView.RDPSessionInfo @{
+PowerView.RDPSessionInfo

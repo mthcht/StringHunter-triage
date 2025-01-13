@@ -1,0 +1,41 @@
+"logging.warning(""ANONYMOUS access not allowed for %s"" % (self.domain"
+"logging.warning(""Certificate requires password. Supply password"""
+"logging.warning(""Channel binding is enforced!"""
+"logging.warning(""Credentials supplied with relay option. Ignoring relay flag..."""
+"logging.warning(""Delegated object not found. Ignoring..."""
+"logging.warning(""Failed sort to with unknown error"""
+"logging.warning(""Failed to sort. Probably value is not a string. Skipping..."""
+"logging.warning(""LDAP Signing is enforced!"""
+"logging.warning(""LDAPSessionTerminatedByServerError: Server connection terminated. Trying to reconnect"""
+"logging.warning(""More than one delegated object found. Ignoring..."""
+"logging.warning(""Objects with adminCount=1 will not inherit ACEs from their parent container/OU"""
+"logging.warning(""Trying to start the Remote Registry..."""
+"logging.warning(""Value not compatible for sorting. Skipping..."""
+"logging.warning(""Web interface dependencies not installed. Web interface will not be available."""
+"logging.warning(""[Add-DomainGPO] No domain controller found in ldap. Using domain as address"""
+"logging.warning(""[Add-DomainUser] Adding user through LDAP"""
+"logging.warning(""[Add-DomainUser] Adding user through LDAPS"""
+"logging.warning(""[Get-DomainGroupMember] Multiple group found. Probably try searching with distinguishedName"""
+"logging.warning(""[Get-DomainGroupMember] No group found"""
+"logging.warning(""[Get-DomainSCCM] Datalib endpoint not accessible. Skipping..."""
+"logging.warning(""[Set-DomainObjectOwner] %s is already the owner of the %s"" % (principal_identity[0][""attributes""][""sAMAccountName""], target_identity[0][""attributes""][""distinguishedName""]"
+"logging.warning('ldap3 library doesn\'t support CB. Install with ""pip install \""git+https://github.com/H0j3n/ldap3.git@powerview.py_match-requirements\""""'"
+"logging.warning(f""Adding FullControl to %s"" % (self.target_SID if self.target_SID else self.target_DN"
+"logging.warning(f""Failed to get computer hostname. The domain probably does not support NTLM authentication. Skipping..."""
+"logging.warning(f""Failed to get group memberships: {str(e"
+"logging.warning(f""[Add-GPLink] Adding new GPLink to {targetidentity_dn}"""
+"logging.warning(f""[ConvertFrom-SID] Multiple objects found for {objectsid}"""
+"logging.warning(f""[Remove-DomainCATemplate] Failed to remove template from CA. Skipping..."""
+"logging.warning(f""[Remove-DomainCATemplate] Failed to remove template oid {oid}. Ignoring..."""
+"logging.warning(f""[Remove-DomainObject] Removing object from domain"""
+"logging.warning(f""[Set-DomainObject] Attempting to force add attribute {attrs['attribute']} to target object"""
+"logging.warning(f""[Set-DomainObject] Attribute {attrs['attribute']} not exists in object. Modifying anyway..."""
+"logging.warning(f""[Set-DomainObject] {attrs['attribute']} property not found in target identity"""
+"logging.warning(f""[Unlock-ADAccount] Account {identity_san} is not in locked state."""
+logging.warning('Channel binding is not supported. Ignoring flag'
+logging.warning('Channel binding not supported with LDAP. Proceed with LDAPS'
+logging.warning('DC ip will be ignored because of cross-domain targeting.'
+logging.warning('LDAP sign and seal are not supported. Ignoring flag'
+logging.warning('No DC host set and \'%s\' doesn\'t look like a FQDN. DNS resolution of short names will probably fail.' % self.__domain
+logging.warning('Sign and seal not supported with LDAPS. Falling back to LDAP'
+logging.warning('\'%s\' doesn\'t look like a FQDN. Generating baseDN will probably fail.' % self.__domain

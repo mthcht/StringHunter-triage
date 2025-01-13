@@ -1,0 +1,42 @@
+                                                Where-Object { $PSBoundParameters.Keys -notcontains $_ }
+                                        Where-Object { $_.Value.ParameterSets.Keys -contains $PsCmdlet.ParameterSetName } |
+                                    $_.Key
+                                if(!$_.Value.Equals((Get-Variable -Name $_.Key -ValueOnly -Scope 0))) {
+                                if($_.Value -ne (Get-Variable -Name $_.Key -ValueOnly -Scope 0)) {
+                            $Filter.Keys | ForEach-Object {
+                            $Keys = $Filter.Keys | Where-Object {($_ -ne 'Op') -and ($_ -ne 'Operator') -and ($_ -ne 'Operation')}
+                            } While ($OutValueHash.keys -contains $Index)
+                        $GroupName = $Membership.Key
+                        $GroupSID = $Membership.Key.Trim('*')
+                        foreach ($a in $_.Attributes.Keys | Sort-Object) {
+                        if ($OutValueHash.keys -contains $Index) {
+                    foreach ($a in $_.Attributes.Keys | Sort-Object) {
+                    if ($Membership -and $Membership.Key -and ($Membership.Key -match '^\*')) {
+                    if ($OutValueHash.keys -contains $c) {
+                    if (($OutValueHash.keys | Measure-Object).Count -ne 0) {
+                $RestoreTargets.keys | Get-IdentityFilterString | ForEach-Object {
+                $TrustAttrib += $TrustAttributes.Keys | Where-Object { $Props.trustattributes[0] -band $_ } | ForEach-Object { $TrustAttributes[$_] }
+                foreach ($a in $_.Attributes.Keys | Sort-Object) {
+                if (!($Privs.keys -contains $SID)) {
+                if ($Props.keys -contains 'altsecurityidentities') {
+                switch -regex ($PSBoundParameters.Keys) {
+            $BoundKeys = $BoundParameters.Keys | Where-Object { $CommonParameters -notcontains $_ }
+            $Permissions += $AccessMask.Keys | Where-Object { $FSR -band $_ } | ForEach-Object { $AccessMask[$_] }
+            $Permissions += $SimplePermissions.Keys | ForEach-Object {
+            foreach ($bit in $Hours.Keys) {
+            if ($Inf -and ($Inf.psbase.Keys -contains 'Group Membership')) {
+            if($DPDictionary.Keys -contains $Name) {
+            switch -regex ($PSBoundParameters.Keys) {
+        $AesObject.Key = $AesKey
+        $CommonParameters = (Get-Command _temp).Parameters.Keys
+        $MappedComputers.Keys | Remove-RemoteConnection
+        $MappedPaths.Keys | ForEach-Object { Remove-RemoteConnection -Path $_ }
+        $PSBoundParameters.Keys | % {
+        $Privs.keys | ForEach-Object {
+        foreach ($Key in $TypeHash.Keys)
+        foreach ($a in $Attributes.Keys | Sort-Object) {
+    $Properties.keys | Sort-Object | ForEach-Object {
+    foreach ($Field in $StructFields.Keys)
+    foreach ($Key in $EnumElements.Keys)
+"                    $Group, $Relation = $Membership.Key.Split('__', $SplitOption) | ForEach-Object {$_.Trim()}"
+"        $PSBoundParameters.Keys |? {$_ -match ""help"" -or $_ -match ""version""}| % {"

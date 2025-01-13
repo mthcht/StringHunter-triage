@@ -1,0 +1,5 @@
+"useragents: List[str] = None,"
+"useragents=args.useragents,"
+useragents = Helper.get_list_from_file(args.useragents)
+useragents = useragents
+useragentstring.com/pages/useragentstring.php?name=<browser>

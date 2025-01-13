@@ -1,0 +1,1084 @@
+"'         Version is 80+, new DPAPI scheme must be used"
+"'        [!] Module logging is configured. Logging will not occur, however, because it requires PSv3."
+"'        [!] Script block logging is configured. Logging will not occur, however, because it requires PSv5."""
+"'     ({chrome.CookiesLastModified})  :  Run SharpDPAPI/SharpChrome or the Mimikatz ""dpapi::chrome"" module"
+"'     {""SessionName"":<20} : {sessions[""SessionName""]}"
+"'    {""State"":<10} Rule\n"
+"'  ({chrome.LoginDataLastModified})  :  Run SharpDPAPI/SharpChrome or the Mimikatz ""dpapi::chrome"" module"
+"'  ({firefox.HistoryLastModified})  :  History file, run the "
+"'  [*] You can also extract many DPAPI masterkeys from memory with the Mimikatz ""sekurlsa::dpapi"" module"
+"'  {""BootTimeUtc (approx)"":<30}:  {boot_formatted} (Total uptime: {boot_time_str})"
+"'  {formatted_time},{target_user},{logon.LogonType},{logon.IpAddress},{subject_user},{logon.AuthenticationPackage},{logon.LmPackage},{target_outbound_user}"
+"' , "
+"' in instance_data and hasattr(instance_type, "
+"'"" in source or f"
+"'""Interesting"" processes - defensive products and admin tools"
+"'""{options.group}"""
+"'', "
+"'', domain: str = "
+"'', domain="
+"'', password: str = "
+"'', password="
+"'', product_name, edition_id, release_id, build_number, build_branch, str(current_major_version), current_version, arch, proc_count, isvm, boot_time, high_int, local_admin, datetime.now(timezone.utc), "
+"'(KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the "
+"'(http|ftp|https|file)://([\w_-]+(?:(?:\.[\w_-]+)+))([\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])?"
+"') and hasattr(obj, "
+"', "
+"', ""-full"" dumps all Scheduled tasks"
+"', ["
+"', action="
+"', action=""store"", metavar=""LMHASH:NTHASH"", help="
+"', action=""store"", metavar=""hex key"", help="
+"', action=""store_true"", help="
+"', default="
+"', errors="
+"', f"
+"', help="
+"', metavar=""ip address"", help="
+"', nargs="
+"', r"
+"', user_name, domain, logon_id, logon_type, data_two["
+"', {}).get("
+"',"
+"'.format(revision, iav, "
+"'AppLocker settings, if installed"
+"'Basic OS info (i.e. architecture, OS version, etc.)"
+"'Domain=""(.*)"",Name=""(.*)"""
+"'Explicit Logon events (Event ID 4648) from the security event log. Default of 7 days, argument == last X days"
+"'Format: Date(Local time),User,Command line.\n"
+"'Internet Explorer typed URLs (last 7 days, argument == last X days)"
+"'LAPS settings, if installed"
+"'Local users, whether they\"
+"'Logon events (Event ID 4624) from the security event log. Default of 10 days, argument == last X days."
+"'LogonId=""(\d+)"""
+"'NTLM hashes, format is LMHASH:NTHASH"
+"'Non-empty local groups, ""-full"" displays all groups (argument == computername to enumerate)"
+"'Non-standard firewall rules, ""-full"" dumps all (arguments == allow/deny/tcp/udp/in/out/domain/private/public)"
+"'Reboot and sleep schedule based on the System event log EIDs 1, 12, 13, 42, and 6008. Default of 7 days, argument == last X days."
+"'Recent Explorer ""run"" commands"
+"'SELECT Actions, Author, Date, Description, Documentation, Principal, SecurityDescriptor, Source, State, TaskName, TaskPath, Triggers, URI, Version FROM MSFT_ScheduledTask"
+"'SELECT Name,Caption,InstallState FROM Win32_OptionalFeature"
+"'Select UserName,Name,VariableValue from win32_environment"
+"'SuperPutty configuration files"""
+"'System Center Configuration Manager (SCCM) settings, if applicable"
+"'Windows Server Update Services (WSUS) settings, if applicable"
+"'\n  [*] Use the Mimikatz ""dpapi::masterkey"" module with appropriate arguments (/pvk or /rpc) to decrypt"
+"'] if hasattr(item, "
+"'] if hasattr(user_info, "
+"']), int(val["
+"'], None, data["
+"'], actions_list, trigger_objects, None, data["
+"'], data["
+"'], group["
+"'], owner, data["
+"'], principal, data["
+"'], product, data["
+"'], start_time, "
+"'], state, data["
+"'], target_username) or re.match(r"
+"'], user["
+"'re active/disabled, and pwd last set (argument == computername to enumerate)"
+"'s protection and ours, we want to make certain that everyone understands that there is no warranty for this free software. If the software is modified by someone else and passed on, we want its recipients to know that what they have is not the original, so that any problems introduced by others will not reflect on the original authors"
+"'{formatted_time},{unique_cred}"
+"'{level} - Unknown, please report this"
+"'{rra_type} - Unknown, please report this"
+"'{target_user},{logon.Process},{subject_user},{logon.IpAddress}"
+"'{}=""{}"""
+' 
+'                   ({slack.CookiesLastModified})  :  Download the 
+'          {m}
+'        [!] The highest .NET version is enrolled in AMSI!
+'        [!] You can do a PowerShell version downgrade to bypass AMSI.
+'        [!] You can do a PowerShell version downgrade to bypass the logging.
+'        [*] You can invoke .NET version {lowest_version.split(
+'       {history}
+'      Enabled            : {powershell.ScriptBlockLogging}
+'      Invocation Logging : {powershell.ScriptBlockInvocationLogging}
+'      OS Supports AMSI: {powershell.OsSupportsAmsi}
+'      OS supports AMSI           : {dotnet_obj.OsSupportsAmsi}
+'      [*] No rules
+'      [*] {r}
+'      {sub_key} : {sub_val}
+'      {var}
+'      {vv}
+'      {v}
+'     ({chrome.HistoryLastModified})  :  Run the \
+'     .NET version support AMSI   : {dn_support_amsi}
+'     Chrome Version                         :  {chrome.ChromeVersion}
+'     {key:<20} : {sessions[key]}
+'    ------------              ------------              --------
+'    DefaultInboundAction     : {firewall.Domain.DefaultInboundAction}
+'    DefaultInboundAction     : {firewall.Private.DefaultInboundAction}
+'    DefaultInboundAction     : {firewall.Public.DefaultInboundAction}
+'    DefaultInboundAction     : {firewall.Standard.DefaultInboundAction}
+'    DefaultOutboundAction    : {firewall.Domain.DefaultOutboundAction}\n
+'    DefaultOutboundAction    : {firewall.Private.DefaultOutboundAction}\n
+'    DefaultOutboundAction    : {firewall.Public.DefaultOutboundAction}\n
+'    DefaultOutboundAction    : {firewall.Standard.DefaultOutboundAction}\n
+'    DisableNotifications     : {firewall.Domain.DisableNotifications}
+'    DisableNotifications     : {firewall.Private.DisableNotifications}
+'    DisableNotifications     : {firewall.Public.DisableNotifications}
+'    DisableNotifications     : {firewall.Standard.DisableNotifications}
+'    Enabled                  : {firewall.Domain.Enabled}
+'    Enabled                  : {firewall.Private.Enabled}
+'    Enabled                  : {firewall.Public.Enabled}
+'    Enabled                  : {firewall.Standard.Enabled}
+'    ExtraArgs   : {config.ExtraArgs}
+'    FilePath  : {conf.FilePath}
+'    Host      : {conf.Host}
+'    LastAccessed              LastModified              FileName
+'    Name      : {conf.Name}
+'    Password  : {conf.Password}\n
+'    Port      : {conf.Port}
+'    Protocol  : {conf.Protocol}
+'    Username  : {conf.UserName}
+'    [*] {applocker.KeyName} not configured
+'    \
+'    {access.Principal:<35}    {access.Permissions:<22}
+'    {exclusion}
+'    {ext}
+'    {k.LastAccessed}    {k.LastModified}    {k.FileName}
+'    {key}
+'    {line}
+'    {path}
+'    {proc}
+'    {rc.Key:<10} :  {rc.Value}
+'    {state:<10} {asr_rule}
+'    {str(url.Time):<23} :  {url.Url}
+'  ({slack.DownloadsLastModified})  :  Run the 
+'  Downloads ({s_downloads.UserName}):\n
+'  FileZilla Configs ({filezilla.UserName}):\n
+'  Folder : {dpapi.Folder}\n
+'  Installed CLR Versions
+'  Name : {settings.Plugin}
+'  RestrictedRemoteAdministrationType: {l}
+'  RestrictedRemoteAdministrationType: {t}
+'  SuperPutty Configs ({super_putty.UserName}):\n
+'  Workspaces ({slack.UserName}):\n
+'  [*] LAPS not installed
+'  [*] You can also use SharpDPAPI for masterkey retrieval.
+'  {
+'  {conn.RemoteHost:<34} {conn.UserNameHint}
+'  {event.TimeCreatedUtc:<22}  {event.User:<30} {event.Match}
+'  {firefox.Folder}\\\n
+'  {f}
+'  {hotfix.HotFixID:<10} {hotfix.InstalledOnUTC:<22} {hotfix.Description:<30} {hotfix.InstalledBy}
+'  {key:<30} : {result}
+'  {key:<30} : {value}
+'  {member[
+'  {phk.Sid} :
+'  {provider.Sid} :
+'  {puttysessions.Sid} :\n
+'  {slack.Folder}\n
+'  {url}
+' ({slack.WorkspacesLastModified})  :  Run the 
+' AND UserName=
+' [X] Cannot enumerate antivirus. root\\SecurityCenter2 WMI namespace is not available on Windows Servers
+' and 
+' and chrome_path[2] == 
+' and not 
+' command
+' files
+' in manufacturer or 
+' in manufacturer or model == 
+' in model.upper()) or 
+' in str(e) or 
+' or 
+' or arg.lower() == 
+' or d.get_longname() == 
+' or dir.get_longname() == 
+' or dirs.get_longname() == 
+' or f.get_longname() == 
+' or key == 
+'%Y-%m-%dT%H:%M:%S.%fZ
+'(128 or 256 bits)
+'(A|D);([^;]+);([^;]+);([^;]+);([^;]+);([^;(\r\n)]+)
+') == 
+') else 
+') or sid.endswith(
+')[0]) == 3 or int(lowest_version.split(
+')[0]) == 4 and int(highest_version.split(
+')[0]) == 4 and int(lowest_version.split(
+')[0]) >= 4 and int(highest_version.split(
+')[0]}.{lowest_version.split(
+')[1]} to bypass AMSI.
+'*
+'-
+'-aesKey
+'-dc-ip
+'-group
+'-hashes
+'-k
+'-no-pass
+'-target-ip
+'.
+'..
+'.//ns:EventData/ns:Data
+'.//ns:System//*
+'.//pc:Security
+'.url
+'.{ubr}
+'/
+'1
+'1.0
+'2.0
+'2.0.50727
+'3.0
+'4624
+'4648
+':
+': 
+': bool(user_info[
+': encoding_unit[
+': instance_type[
+': item[
+': name[
+': not bool(user_info[
+': self._filetime_to_datetime(user_info[
+': user[
+': user_info[
+':<30}:  {current_utc_formatted} (Local time: {local_time_formatted})
+':<30}:  {info.Architecture}
+':<30}:  {info.BuildBranch}
+':<30}:  {info.Build}
+':<30}:  {info.CurrentMajorVersionNumber}
+':<30}:  {info.CurrentVersion}
+':<30}:  {info.Domain}
+':<30}:  {info.EditionId}
+':<30}:  {info.Hostname}
+':<30}:  {info.InputLanguage}
+':<30}:  {info.InstalledInputLanguages}
+':<30}:  {info.IsHighIntegrity}
+':<30}:  {info.IsLocalAdmin}
+':<30}:  {info.IsVirtualMachine}
+':<30}:  {info.MachineGuid}
+':<30}:  {info.ProcessorCount}
+':<30}:  {info.ProductName}
+':<30}:  {info.ReleaseId}
+':<30}:  {info.TimeZoneUtcOffset}
+':<30}:  {info.TimeZone}
+':<30}:  {info.Username}
+':<50} {
+':<8} {
+'<B
+'<BB
+'<BB16sIB
+'<BBBBB
+'<BBH
+'<BHB
+'<BHI
+'<BI
+'<H
+'<HBB
+'<HH
+'<I
+'<IIIII
+'<Q
+'<SYSTEM>
+'<i
+'=
+'>Q
+'AES key to use for Kerberos Authentication 
+'AMSIProviders
+'AWS
+'AWS/Google/Azure/Bluemix cloud credential files
+'Action
+'Actions
+'Active
+'AdmPwdEnabled
+'AdminAccountName
+'AdminComment
+'AgentFwd
+'Alias
+'AliasHandle
+'All
+'All Local Groups (and memberships)\n\n
+'All Users
+'All configured Office 365 endpoints (tenants and teamsites) which are synchronised by OneDrive.
+'Allow
+'Allow All
+'Allow all
+'AllowDemandStart
+'AltDefaultDomainName
+'AltDefaultPassword
+'AltDefaultUserName
+'AntiVirus
+'App
+'AppIDSvc
+'AppLocker
+'Architecture
+'AssignedSiteCode
+'Audit All
+'Audit Mode
+'Audit settings via the registry
+'AuditPolicyRegistry
+'AuditReceivingNTLMTraffic
+'Audited
+'AuthenticationLevel
+'AuthenticationPackage
+'AuthenticationPackageName
+'Author
+'Auto run executables/scripts/programs
+'Autoruns
+'Azure
+'Block
+'Blocked
+'Bluemix
+'Bookmarks
+'Bookmarks ({bookmark.FilePath})\n
+'Buffer
+'Build
+'BuildBranch
+'Business
+'C:\\{user}\\AppData\\Roaming\\KeePass\\KeePass.config.xml
+'C:\\{user}\\AppData\\Roaming\\KeePass\\ProtectedUserKey.bin
+'C:{acred_location}
+'C:{aws_key}
+'C:{bcred_location}
+'C:{ch_bm_path}
+'C:{dl_location}
+'C:{file_path}
+'C:{firefox_base_path}\\{directory.get_longname()}
+'C:{gcred_location}
+'C:{mk_dir}
+'C:{ps_con_hist_path}
+'Caption
+'Category
+'Checks if interesting Chrome/Edge/Brave/Opera files exist
+'Checks if interesting Firefox files exist
+'Checks if interesting Slack files exist
+'ChromiumBookmarks
+'ChromiumHistory
+'ChromiumHistory\
+'ChromiumPresence
+'ClassPart
+'ClientAllowedNTLMServers
+'CloudCredentials
+'CloudSyncProviders
+'Collecting Windows Firewall Non-standard Rules\n\n
+'Collecting all Windows Firewall Rules\n\n
+'Command not implemented
+'CommandLine
+'Computer
+'ConfigXML
+'ConnectionSharing
+'ConnectionState
+'ConsentPromptBehaviorAdmin
+'ConsoleHost_history.txt
+'Cookies
+'Cookies\
+'CredGuard
+'CredentialGuard configuration
+'Current incoming RDP sessions (argument == computername to enumerate)
+'CurrentBuildNumber
+'CurrentClass
+'CurrentMajorVersionNumber
+'CurrentTimeUtc
+'CurrentVersion
+'DNS Cache Entries
+'DNSCache
+'Data
+'Date
+'DateCreated
+'Default
+'Default User
+'DefaultDomainName
+'DefaultInboundAction
+'DefaultOutboundAction
+'DefaultPassword
+'DefaultUserName
+'DeletedAccount
+'Deny All
+'Deny all accounts
+'Deny all domain accounts
+'Desc
+'Description
+'Dir
+'Disable
+'DisableNotifications
+'DisablePasswordSaving
+'Disabled
+'DisallowStartIfOnBatteries
+'DisplayName
+'DisplayVersion
+'Domain
+'Domain Name
+'Domain Profile
+'DomainHandle
+'DomainId
+'DomainIndex
+'Domains
+'DotNet
+'DotNet versions
+'DpapiMasterKeys
+'Duration
+'E1AF8308-5D1F-11C9-91A4-08002B14A0FA
+'ERROR: Argument is not an integer
+'ERROR_NO_MORE_ITEMS
+'EditionID
+'Element
+'EmbeddedInstance
+'Enable auditing for all accounts
+'Enable auditing for domain accounts
+'EnableFirewall
+'EnableInvocationHeader
+'EnableLUA
+'EnableLUA (Is UAC enabled?)
+'EnableModuleLogging
+'EnableScriptBlockInvocationLogging
+'EnableScriptBlockLogging
+'EnableSecuritySignature
+'EnableTranscripting
+'Enabled
+'EncodingLength
+'EndBoundary
+'Enforce Mode
+'EnforcementMode
+'Entry
+'Enumerates PS Session Settings from the registry
+'EnvironmentVariables
+'Error obtaining owner: {e}
+'EventDataIndices
+'EventDataSizes
+'EventID
+'EventId
+'Exception {e}
+'ExcludedPaths
+'ExecutionTimeLimit
+'ExplicitLogonEvents
+'ExploitGuard_ASR_Rules
+'ExplorerRunCommands
+'F6BEAFF7-1E19-4FBB-9F8F-B89E2018337C
+'False
+'FileVersion
+'FileZilla
+'FileZilla configuration files
+'FilterAdministratorToken
+'Finds KeePass configuration files
+'FirefoxHistory
+'FirefoxPresence
+'FirefoxTriage
+'Flags
+'Google
+'Group
+'GroupId
+'HKCC
+'HKCR
+'HKCU
+'HKLM
+'HKLM 
+'HKU
+'Handle
+'HashingAlgorithm
+'HashingAlgorithm: {sysmon.HashingAlgorithm}
+'HighIntegrity
+'HighPart
+'History ({history.FilePath}):\n
+'History\
+'Hostname
+'HotFixID
+'Hotfixes
+'IEFavorites
+'IEUrls
+'IP Address of the domain controller. If 
+'IP Address of the target machine. If omitted it will use whatever was specified as target. 
+'Id
+'In
+'InputLanguage
+'InstallDate
+'InstallState
+'Installed products via the registry
+'Installed:        {sysmon.Installed}
+'InstalledBy
+'InstalledInputLanguages
+'InstalledOn
+'InstalledProducts
+'InstanceClassName
+'InstanceFlags
+'InstanceType
+'InterestingProcesses
+'Internet Explorer favorites
+'Internet Explorer typed URLs for the last {days} days\n
+'Interval
+'Invalid
+'IpAddress
+'IsLocalAdmin
+'IsVirtualMachine
+'KeePass
+'Kerberos
+'Key
+'LA4
+'LAPS
+'LAPS Admin Account Name
+'LAPS Enabled
+'LAPS Expiration Protection Enable
+'LAPS Password Complexity
+'LAPS Password Length
+'LDAPClientIntegrity
+'LPort
+'LSA settings (including auth packages)
+'LSASettings
+'Label
+'LastLogon
+'LastModifiedTime
+'LastShutdown
+'LastSuccessfulInstallParams
+'LastValidMP
+'List DPAPI master keys
+'List Optional Features/Roles (via WMI)
+'List files downloaded by Outlook
+'Listing 4624 Account Logon Events for the last {last_days} days.\n
+'Listing 4648 Explicit Credential Events - A process logged on using plaintext credentials over last {last_days} days
+'LmCompatibilityLevel
+'LmPackageName
+'LocalAccountTokenFilterPolicy
+'LocalGroups
+'LocalName
+'LocalUsers
+'Locally-defined Settings:
+'Location                     : {firewall.Location}\n
+'LogQuery
+'Login Data\
+'LogonCount
+'LogonEvents
+'LogonSessions
+'LogonType
+'LowPart
+'MSFT_DNSClientCache
+'MSFT_ScheduledTask
+'MachineGuid
+'Managed
+'Manufacturer
+'MappedDrives
+'Members
+'Microsoft
+'Microsoft-Windows-Kernel-General
+'Microsoft-Windows-Power-Troubleshooter
+'Microsoft-Windows-Sysmon/Operational
+'MicrosoftUpdates
+'Microsoft\
+'Model
+'NTLM
+'NTLM V1
+'NTLM V2
+'NTLM authentication settings
+'NTLMSettings
+'NUMBER_OF_PROCESSORS
+'Name
+'NameType
+'Names
+'Negotiate signing
+'Network
+'Network shares exposed by the machine (via WMI)
+'NetworkProfiles
+'NetworkShares
+'No signing
+'Non-empty Local Groups (and memberships)\n\n
+'Not defined
+'NtlmMinClientSec
+'NtlmMinServerSec
+'NumActualRecords
+'NumRequestedRecords
+'OSInfo
+'ObjectBlock
+'ObjectEncodingLength
+'ObjectFlags
+'OptionalFeatures
+'Options
+'Options:          {sysmon.Options}
+'Out
+'OutlookDownloads
+'OutputDirectory
+'PROCESSOR_ARCHITECTURE
+'PSSessionSettings
+'Parses any found Chrome/Edge/Brave/Opera bookmark files
+'Parses any found Chrome/Edge/Brave/Opera history files
+'Parses any found FireFox history files
+'Parses any found \
+'PasswordComplexity
+'PasswordLastSet
+'PasswordLength
+'Path
+'Persistent
+'PolicyHandle
+'PolicyPublisher
+'PolicyVersion
+'PowerShell
+'PowerShell script block logs (4104) with sensitive data
+'PowerShell versions and security settings
+'PowerShellEvents
+'PowerShellHistory
+'PowerShellVersion
+'PoweredOnEvents
+'Principal
+'Private
+'Private Profile
+'Process creation logs (4688) with sensitive data
+'ProcessCreationEvents
+'ProcessId
+'ProcessName
+'ProcessOwners
+'ProcessorCount
+'ProductName
+'ProductVersion
+'Profile
+'ProfileName
+'Properties
+'Protocol
+'Providers registered for AMSI
+'Public
+'Public Profile
+'Publisher
+'PuttyHostKeys
+'PuttySessions
+'PwdExpirationProtectionEnabled
+'Query
+'RA4
+'RDP Server Settings:
+'RDPSavedConnections
+'RDPSessions
+'RDPsettings
+'RPC_X_BAD_STUB_DATA
+'RPort
+'ReferencedDomains
+'Registered antivirus
+'Registry autologon information
+'RelativeId
+'RelativeIds
+'ReleaseID
+'ReleaseId
+'Remote Desktop Server/Client Settings
+'RemoteName
+'RemotePath
+'Repetition
+'Require Remote Credential Guard
+'Require Restricted Admin Mode
+'Require Restricted Admin or Remote Credential Guard
+'Require Signing
+'RequireSecuritySignature
+'RestrictReceivingNTLMTraffic
+'RestrictSendingNTLMTraffic
+'RestrictedRemoteAdministration
+'RestrictedRemoteAdministrationType
+'ResultBuffer
+'ReturnValue
+'Returns the DateTime of the last system shutdown (via the registry).
+'Rules
+'Rules:
+'Rules:\n
+'RunLevel
+'Running
+'Running non-session 0 process list with owners. For remote use.
+'Runs a specified WMI query
+'S-1-5
+'S-{0}-{1}-{2}
+'SCCM
+'SDDL
+'SELECT * FROM MSFT_DNSClientCache
+'SELECT * FROM MSFT_ScheduledTask
+'SELECT * FROM Win32_DeviceGuard
+'SELECT * FROM Win32_LoggedOnUser
+'SELECT * FROM Win32_LogonSession
+'SELECT * FROM Win32_Process
+'SELECT * FROM Win32_Process WHERE SessionID != 0
+'SELECT * FROM Win32_QuickFixEngineering
+'SELECT * FROM Win32_Share
+'SELECT * FROM win32_networkconnection
+'SELECT * from AntiVirusProduct
+'SELECT Version FROM Win32_OperatingSystem
+'SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5
+'SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full
+'SOFTWARE\\Microsoft\\AMSI\\Providers
+'SOFTWARE\\Microsoft\\CCMSetup
+'SOFTWARE\\Microsoft\\Cryptography
+'SOFTWARE\\Microsoft\\PowerShellCore\\InstalledVersions\\
+'SOFTWARE\\Microsoft\\PowerShellCore\\InstalledVersions\\{key}
+'SOFTWARE\\Microsoft\\PowerShell\\1\\PowerShellEngine
+'SOFTWARE\\Microsoft\\PowerShell\\3\\PowerShellEngine
+'SOFTWARE\\Microsoft\\SMS\\Mobile Client
+'SOFTWARE\\Microsoft\\Windows Defender
+'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\NetworkList\\Profiles\\
+'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\NetworkList\\Profiles\\{pguid}
+'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon
+'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\chrome.exe
+'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System
+'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall
+'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\WSMAN\\Plugin\\{plugin}
+'SOFTWARE\\Policies\\Microsoft\\Windows Defender
+'SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services
+'SOFTWARE\\Policies\\Microsoft\\WindowsFirewall
+'SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\ModuleLogging
+'SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\ModuleLogging\\ModuleNames
+'SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\ScriptBlockLogging
+'SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\Transcription
+'SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate
+'SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU
+'STATUS_MORE_ENTRIES
+'SYSTEM\\ControlSet001\\Control\\Windows
+'SYSTEM\\CurrentControlSet\\Control\\Lsa
+'SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0
+'SYSTEM\\CurrentControlSet\\Control\\SecureBoot\\State
+'SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy
+'SYSTEM\\CurrentControlSet\\Services\\SysmonDrv\\Parameters
+'S_FALSE
+'Saved Putty SSH host keys
+'Saved Putty configuration (interesting fields) and SSH host keys
+'Saved RDP Connection Information ({rdp.Sid})\n
+'Saved RDP connections stored in the registry
+'Scheduled tasks (via WMI) that aren\
+'ScheduledTasks
+'ScriptBlockText
+'Sddl
+'Searches PowerShell console history files for sensitive regex matches.
+'Searching Sysmon process creation logs (Sysmon ID 1) for sensitive data.\n
+'Searching process creation logs (EID 4688) for sensitive data
+'Searching script block logs (EID 4104) for sensitive data.\n
+'Secure Boot configuration
+'SecureBoot
+'Security
+'Security.UserID
+'SecurityDescriptor
+'SecurityServicesConfigured
+'SecurityServicesRunning
+'Select * from Win32_ComputerSystem
+'Select Domain from Win32_ComputerSystem
+'SemanticVersion
+'Send LM & NTLM - Use NTLMv2 session security if negotiated
+'Send LM & NTLM responses
+'Send NTLM response only
+'Send NTLMv2 response only - Win7+ default
+'Send NTLMv2 response only. DC: Refuse LM
+'Send NTLMv2 response only. DC: Refuse LM & NTLM
+'ServerHandle
+'SessionId
+'SessionName
+'Sessions.xml
+'Settings
+'ShutdownTime
+'SidPointer
+'Sids
+'Signature
+'SlackDownloads
+'SlackPresence
+'SlackWorkspaces
+'Software\\Microsoft\\Windows NT\\CurrentVersion
+'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\Audit
+'Software\\Policies\\Microsoft Services\\AdmPwd
+'Software\\Policies\\Microsoft\\Windows\\CredentialsDelegation
+'Software\\Policies\\Microsoft\\Windows\\EventLog\\EventForwarding\\SubscriptionManager
+'Software\\Policies\\Microsoft\\Windows\\SrpV2
+'Software\\Policies\\Microsoft\\Windows\\SrpV2\\{k}
+'Source
+'Standard Profile
+'StartBoundary
+'State
+'Status
+'StdRegProv
+'StopAtDurationEnd
+'StopIfGoingOnBatteries
+'SubjectDomainName
+'SubjectUserName
+'SuperPutty
+'Sysmon
+'Sysmon configuration from the registry
+'Sysmon process creation logs (1) with sensitive data
+'SysmonEvents
+'System
+'System\\CurrentControlSet\\Control\\Lsa
+'System\\CurrentControlSet\\Services\\LDAP
+'System\\CurrentControlSet\\Services\\LanmanServer\\Parameters
+'System\\CurrentControlSet\\Services\\LanmanWorkstation\\Parameters
+'TCP
+'TargetDomainName
+'TargetOutboundDomainName
+'TargetOutboundUserName
+'TargetUserName
+'TaskName
+'TaskPath
+'This is useful when target is the NetBIOS name and you cannot resolve it
+'TimeCreated.SystemTime
+'TimeOutEnd
+'TimeZone
+'TimeZoneOffset
+'TranslatedNames
+'Triggers
+'Type
+'UAC
+'UAC system policies via the registry
+'UBR
+'UDP
+'UEFISecureBootEnabled
+'URL=
+'Unknown
+'Unknown value {enforcement_mode}
+'UpdateServiceUrlAlternate
+'Use
+'Use Kerberos authentication. Grabs credentials from ccache file 
+'UseWUServer
+'User
+'UserAccountControl
+'UserAuthentication
+'UserHandle
+'UserId
+'UserName
+'Username
+'Username Filter: {user_regex}
+'UsernameHint
+'Users mapped drives (via WMI)
+'VIRTUAL
+'VS_FIXEDFILEINFO
+'Value
+'Values
+'VariableValue
+'Version
+'VersionInfo
+'VirtualBox
+'VirtualizationBasedSecurityStatus
+'WMI
+'WSUS
+'WUServer
+'WUStatusServer
+'WellKnownGroup
+'Windows Defender settings (including exclusion locations)
+'Windows Event Forwarding (WEF) settings via the registry
+'Windows logon sessions
+'Windows network profiles
+'WindowsAutoLogon
+'WindowsDefender
+'WindowsEventForwarding
+'WindowsFirewall
+'[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}
+'[[domain/]username[:password]@]<targetName or address>
+'\((A|D|AU|OA|OD|AL);([^;]*);([^;]*);([^;]*);([^;]*);([^;(\r\n)]+)\)
+'\\
+'\\Users
+'\\Users\\{directories}{path}
+'\\Users\\{user}\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles
+'\\Windows\\Microsoft.Net\\Framework\\
+'\\storage\\slack-downloads
+'\\storage\\slack-workspaces
+'\n
+'\n    History ({history.UserName}):\n
+'\n    [*] {applocker.KeyName} is in {applocker.EnforcementMode}
+'\n  ASR Exclusions:
+'\n  Anti-Malware Scan Interface (AMSI)
+'\n  Attack Surface Reduction Rules:\n
+'\n  Extension Exclusions
+'\n  Installed .NET Versions
+'\n  Installed CLR Versions
+'\n  Installed PowerShell Versions
+'\n  Other accounts authenticate to this machine using NTLM! NTLM-relay may be possible
+'\n  Path Exclusions:
+'\n  PolicyManagerPathExclusions:
+'\n  Process Exclusions
+'\n  Script Block Logging Settings
+'\n  The following users have authenticated to this machine using Kerberos.\n
+'\n  {run_commands.Sid} :
+'\n {ie.Sid}
+'\nFavorites ({iefav.UserName})\n
+'\nRDP Client Settings:
+'\n\n\nGPO-defined Settings:
+'\r\n    Orphaned :
+'\r\n    {accName} :
+'\r\n {chrome.Folder}\n
+'] << 32) + filetime[
+'] = f
+'] = object_block[
+'] == 0 and filetime[
+'] if domain_index != -1 else 
+'].formatCanonical() for member in members[
+']:<15} {member[
+']:<40} {member[
+'][
+'][0][
+'][1 if builtin else 0][
+'][i][
+']]] and *[System[TimeCreated[@SystemTime <= 
+']]] or *[System/EventID=42]) or (*[System/EventID=6008]) or (*[System/EventID=1] and *[System[Provider[@Name=
+']]])) and *[System[TimeCreated[@SystemTime >= 
+']}
+']}\\{member[
+'^(Font Driver Host|Window Manager)$
+'_Classes
+'_command.py
+'allow
+'authentication
+'awake
+'block
+'browser
+'carseat command/module to run
+'chromium
+'class
+'command
+'comment
+'deny
+'displayName
+'domain
+'don\
+'enabled
+'error: {e}
+'fDisableCcm
+'fDisableCdm
+'fDisableClip
+'fDisableCpm
+'fDisableLPT
+'fDisablePNPRedir
+'fEnableSmartCard
+'fields
+'filter
+'getValues
+'group
+'group commands together
+'highest
+'http://schemas.microsoft.com/wbem/wsman/1/config/PluginConfiguration
+'http://schemas.microsoft.com/win/2004/08/events/event
+'in
+'interesting
+'key3.db
+'key4.db
+'last_logon
+'lowest
+'microsoft corporation
+'misc
+'name
+'ncacn_ip_tcp
+'ncacn_np:{self.target}[\\pipe\\lsarpc]
+'ncacn_np:{self.target}[\\pipe\\samr]
+'not configured
+'ns
+'num_logins
+'ommited it use the domain part (FQDN) specified in the target parameter
+'ones specified in the command line
+'out
+'password_expired
+'pathToSignedProductExe
+'pathToSignedReportingExe
+'pc
+'places.sqlite
+'policy_handle
+'private
+'public
+'pwd_last_set
+'qualifiers
+'recentservers.xml
+'remote
+'replace
+'rid
+'sValue
+'set_credentials
+'shutdown
+'shutdown(UnexpectedShutdown)
+'sid
+'sid_type
+'sitemanager.xml
+'slack-downloads
+'slack-downloads\
+'slack-workspaces
+'slack-workspaces\
+'sleep
+'startup
+'storage\\slack-workspaces
+'store
+'system
+'t ask for password (useful for -k)
+'t authored by 
+'t authored by \
+'target
+'tcp
+'test
+'uValue
+'udp
+'user
+'user_type
+'utf-8
+'utf16
+'v
+'value
+'vmware
+'x64
+'x86
+'xen
+'xml_content
+'{ch_bm_path}Cookies
+'{ch_bm_path}History
+'{ch_bm_path}LoginData
+'{ch_bm_path}\\Bookmarks
+'{ch_hist_path}\\History
+'{dl_location}\\{fn}
+'{domain}\\{user}
+'{dpapi_basepath}{dirs.get_longname()}
+'{end_time_utc}
+'{firefox_base_path}\\{directory.get_longname()}\\key3.db
+'{firefox_base_path}\\{directory.get_longname()}\\key4.db
+'{firefox_base_path}\\{directory.get_longname()}\\places.sqlite
+'{firefox_hist_path}\\{directory.get_longname()}\\places.sqlite
+'{fz_path}{f}
+'{log_name}\x00
+'{logon.SubjectDomainName}\\{logon.SubjectUserName}
+'{logon.SubjectDomain}\\{logon.SubjectUser}
+'{logon.TargetDomainName}\\{logon.TargetUserName}
+'{logon.TargetDomain}\\{logon.TargetUser}
+'{logon.TargetOutboundDomainName}\\{logon.TargetOutboundUserName}
+'{mk_dir}\\{mk_name}
+'{module_name}
+'{module_name}_command
+'{net_path}{dir.get_longname()}
+'{options.group}
+'{outlook_base}{dir.get_longname()}
+'{owner_info.Domain}\\{owner_info.User}
+'{path}\\System.dll
+'{path}\\{d.get_longname()}\\System.dll
+'{path}\\{directories}\\.aws\\credentials
+'{path}\\{directories}\\{a_location}
+'{path}\\{directories}\\{b_location}
+'{path}\\{directories}\\{g_location}
+'{path}\\{username}\\AppData\\Roaming\\Microsoft\\Protect\\
+'{path}\\{username}\\Favorites\\
+'{path}\\{user}\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Outlook\\
+'{path}\\{user}\\AppData\\Roaming\\KeePass\\KeePass.config.xml
+'{path}\\{user}\\AppData\\Roaming\\KeePass\\ProtectedUserKey.bin
+'{path}\\{xml_file}
+'{prod}\\{sub_key}
+'{query}\x00
+'{reg_key}\\Exclusions\\Extensions
+'{reg_key}\\Exclusions\\Paths
+'{reg_key}\\Exclusions\\Processes
+'{reg_key}\\Policy Manager
+'{reg_key}\\Windows Defender Exploit Guard\\ASR
+'{reg_key}\\Windows Defender Exploit Guard\\ASR\\ASROnlyExclusions
+'{reg_key}\\Windows Defender Exploit Guard\\ASR\\Rules
+'{rule.State} - Unknown
+'{rule_location}\\DomainProfile
+'{rule_location}\\FirewallRules
+'{rule_location}\\PrivateProfile
+'{rule_location}\\PublicProfile
+'{rule_location}\\StandardProfile
+'{sid}\\SOFTWARE\\Microsoft\\Internet Explorer\\TypedURLs
+'{sid}\\SOFTWARE\\Microsoft\\Internet Explorer\\TypedURLsTime
+'{sid}\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU
+'{sid}\\Software\\Microsoft\\OneDrive\\Accounts
+'{sid}\\Software\\Microsoft\\OneDrive\\Accounts\\{acc}
+'{sid}\\Software\\Microsoft\\OneDrive\\Accounts\\{acc}\\ScopeIdToMountPointPathCache
+'{sid}\\Software\\Microsoft\\Terminal Server Client\\Servers
+'{sid}\\Software\\Microsoft\\Terminal Server Client\\Servers\\{host}
+'{sid}\\Software\\SimonTatham\\PuTTY\\Sessions\\
+'{sid}\\Software\\SimonTatham\\PuTTY\\SshHostKeys\\
+'{sid}\\Software\\SyncEngines\\Providers\\OneDrive
+'{sid}\\Software\\SyncEngines\\Providers\\OneDrive\\{rname}
+'{sid}\\\\Software\\SimonTatham\\PuTTY\\Sessions\\{session_name}
+'{slack_downloads_base}\\{sd}
+'{slack_workspace_base}\\{sw}
+'{start_time_utc}
+'{target_domainname}\\{target_username}
+'{user_path}\\{user_name}\\AppData\\Roaming\\Microsoft\\Windows\\PowerShell\\PSReadline
+'{user_path}\\{user_name}\\AppData\\Roaming\\Microsoft\\Windows\\PowerShell\\PSReadline\\ConsoleHost_history.txt
+'{user_path}\\{user}\\AppData\\Roaming\\Slack
+'{user_path}\\{user}\\AppData\\Roaming\\Slack\\Cookies
+'{user_path}\\{user}\\AppData\\Roaming\\Slack\\storage
+'{user_path}\\{user}\\AppData\\Roaming\\Slack\\storage\\slack-downloads
+'{user_path}\\{user}\\AppData\\Roaming\\Slack\\storage\\slack-workspaces
+'{user_path}\\{user}\\Documents\\SuperPuTTY
+'{user_path}\\{user}{path}
+'{variable}
+'|
+'}

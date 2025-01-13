@@ -1,0 +1,19 @@
+        headers['X-Amz-Security-Token'] = this.credentials.sessionToken
+      if (this.credentials.sessionToken && !headers['X-Amz-Security-Token'] && !headers['x-amz-security-token'])
+      query['X-Amz-Security-Token'] = this.credentials.sessionToken
+    if (this.credentials.sessionToken)
+    query['X-Amz-Credential'] = this.credentials.accessKeyId + '/' + this.credentialString()
+  this.credentials = credentials || this.defaultCredentials()
+  var credentials = opts.credentials
+"      cacheKey = [this.credentials.secretAccessKey, date, this.region, this.service].join(),"
+"    'AWS4-HMAC-SHA256 Credential=' + this.credentials.accessKeyId + '/' + this.credentialString(),"
+"    kDate = hmac('AWS4' + this.credentials.secretAccessKey, date)"
+"    this.credentialString(),"
+"95""}i.icon.bookmark.outline:before{content:""\f097""}i.icon.phone.square:before{content:""\f098""}i.icon.credit.card:before{content:""\f09d""}i.icon.hdd.outline:before{content:""\f0a0""}i.icon.bullhorn:before{cont"
+":""\f1f3""}i.icon.paypal.card:before{content:""\f1f4""}i.icon.stripe:before{content:""\f1f5""}i.icon.japan.credit.bureau:before{content:""\f24b""}i.icon.diners.club:before{content:""\f24c""}i.icon.credit.card.altern"
+"ontent:""\f244""}i.icon.i.cursor:before{content:""\f246""}i.icon.jcb:before{content:""\f24b""}i.icon.japan.credit.bureau.card:before{content:""\f24b""}i.icon.diners.club.card:before{content:""\f24c""}i.icon.balance:"
+RequestSigner.prototype.credentialString = function() {
+i.icon.credit.card.alternative:before {
+i.icon.credit.card:before {
+i.icon.japan.credit.bureau.card:before {
+i.icon.japan.credit.bureau:before {

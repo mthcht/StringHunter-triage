@@ -1,0 +1,20 @@
+"[ ! -d ""output"" "
+"[ ""$silen"" = ""Y"" "
+"[ ""$silent"" = ""y"" "
+"[[ -f ""$html_file"" "
+[ `grep '<body>' $html_file` 
+[${Green}*$White
+[${Red}!$White
+[${Yellow}*$White
+[1;97m[\e[1;92m*\e[1;97m
+[3xplotGuy
+[Blog
+[GNU General Public License v3.0
+[Gmail
+[Instagram
+[License
+[PasteJacking GitHub repo
+[Version
+[Watch tutorial on youtube
+[Website
+[YouTube

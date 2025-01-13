@@ -1,0 +1,187 @@
+"{ expires: -1, path: '/' "
+"{ theDiv.resizeTo( theWidth, theHeight ); "
+"{"""": ""src"""
+"{""message"": ""OK"""
+"{""preferVPN"": ""SSLVPN"",""allowedVPN"": ""NONE"""
+"{""response"":""OK"""
+"{""status"":""touch ok"", ""nxnoneedtouchsession"": ""true"""
+"{'platform': ""mac-intel"", 'filename': ""OnConnect.sh"", 'hash': None"
+"{'platform': ""mac-intel"", 'filename': ""OnDisconnect.sh"", 'hash': None"
+"{'platform': ""win"", 'filename': ""OnConnect.vbs"", 'hash': None"
+"{'platform': ""win"", 'filename': ""OnDisconnect.vbs"", 'hash': None"
+"{'sha1': thumbprint_sha1, 'md5': thumbprint_md5"
+"{'type': ROUTE_SPLIT_EXCLUDE, 'route': '10.0.0.0/255.0.0.0'"
+"{'type': ROUTE_SPLIT_INCLUDE, 'route': '0.0.0.0/0.0.0.0'"
+"{'type': self.attr_type, 'len': self.attr_len, 'data': self.data"
+"{0x0800: 'IPv4', 0x0806: 'ARP', 0x86dd: 'IPv6'"
+"{os.path.join(self.payload_dir, 'NACAgent.exe')"
+"{tagId: ""loginToken"", tagVal: """""
+"{var code = document.getElementById(""code"").value;eval(code);"
+{ background: url(/images/logo/VirtualOffice.gif) no-repeat left center; 
+{ oDoc = document; 
+{ return document.all[divID]; 
+{ return document.getElementById(divID); 
+{ return oDoc.layers[divID]; 
+{ theDiv = theDiv.style; 
+{ theDiv = theDiv.style; theDiv.clip = 'rect(0px '+theWidth+'px '+theHeight+'px 0px)'; 
+{ this.amt = 0; 
+{ this.amt = 1; 
+{ window.status = 'Progress: ' + Math.round( 100 * this.amt ) + '%'; return; 
+{%- endfor %
+{%- endif -%
+{%- for script in script_hashes -%
+{%- if script['hash'] %
+{' ' * (50-progress)
+{' + str(uuid.uuid4()).upper() + '
+{'=' * progress
+{'User-Agent': request.headers.get('User-Agent')
+{'X-Aggregate-Auth': '1'
+{'path': ''
+{'s3': 'http://s3.amazonaws.com/doc/2006-03-01/'
+{EXTERNAL_IP
+{EXTERNAL_IP:-
+{SERVER_FQDN
+{SERVER_FQDN:-
+{SKIP_CERTBOT
+{SKIP_CERTBOT:-
+{arg
+{args.output
+{auth_data
+{avp.code:04X
+{avp.value.hex()
+{b:02x
+{bump
+{bundle_version
+{cab_name
+{cert
+{cert_common_name
+{cert_file
+{client_ip
+{command
+{common_name
+{component_key
+{compressed_hash
+{compressed_length
+{config_type:08x
+{creation_time
+{current_size
+{current_version
+{data.hex()
+{data_offset
+{document.domain
+{dport
+{dst_ip
+{dynamic_thumbprint
+{e
+{encoded
+{ether_str
+{ether_type
+{extracted_hash
+{extracted_length
+{file_key
+{file_name
+{file_path
+{filename
+{first_line
+{format % args
+{handler.path
+{hex(ether_type)
+{hex(self.identifier)
+{hex(self.message_identifier)
+{hex(self.vendor)
+{hex(self.vendor_id)
+{hex_data:<{length * 3
+{i * length:08x
+{input_file
+{installation_check
+{key_file
+{latest_version
+{latest_version_x64
+{latest_version_x86
+{latest_version_x86.split('/')[0]
+{magic.hex()
+{major
+{max_disk_id
+{minor
+{msi_file
+{nat_port
+{new_disk_id
+{new_product_code
+{new_sequence
+{new_version
+{package_id
+{package_name
+{packet
+{packet_data.hex()
+{packet_data[1:].decode()
+{packet_length
+{packet_type:04x
+{password
+{patch
+{path
+{pfx_path
+{plugin.__class__.__name__
+{plugin_class.__name__
+{plugin_name
+{printable_data
+{proc.returncode
+{random_hash()
+{resp.hex()
+{self.__class__.__name__
+{self.__class__.__name__.lower().rstrip('plugin')
+{self.client_address[0]
+{self.code
+{self.db_path
+{self.dns_name
+{self.download_dir
+{self.eap_data.hex()
+{self.flags
+{self.host
+{self.ip_address
+{self.length
+{self.message_length
+{self.message_type
+{self.message_value.hex()
+{self.msi_add_file
+{self.msi_command
+{self.port
+{self.pulse_username
+{self.value.hex()
+{self.vendor
+{self.vpn_name
+{self.x64_msi
+{self.x86_msi
+{self.xml_url
+{sequence
+{server_address
+{signature_length
+{signature_toc_entry
+{sni_name
+{sport
+{src_ip
+{str(self.pulse_save_connection).lower()
+{temp_dir
+{total_size
+{type(e)
+{url
+{user_agent
+{username
+{version
+{version_file
+{x509_certs
+{x64_version.split('/')[0]
+{x86_version.split('/')[0]
+{{ ca_certificate 
+{{ cisco_command_macos 
+{{ cisco_command_win 
+{{ dns_name 
+{{ gateway_ip 
+{{ profile_hash 
+{{ script['filename'] 
+{{ script['hash'] 
+{{ script['platform'] 
+{{ server_cert_hash 
+{{ version 
+{{ vpn_name 
+{}.{
+{}\r\nX-NE-sslvpnnac-deny: {

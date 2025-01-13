@@ -1,0 +1,8 @@
+"Invoke-Kerberoast', exit_on_error=False)"
+"Invoke-Kerberoast':['-Identity', '-Properties', '-Opsec','-LDAPFilter','-Server', '-Select', '-NoWrap', '-OutFile', '-TableView', '-SortBy'],"
+"Invoke-Kerberoast] No identity found"")"
+Invoke-Kerberoast              Set-ObjectOwner 
+Invoke-Kerberoast] LDAP Filter string: {ldap_filter}')
+Invoke-Kerberoast||Requests kerberos ticket for a specified service principal name (SPN)|
+Invoke-Maldaptive
+invoke-kerberoast':

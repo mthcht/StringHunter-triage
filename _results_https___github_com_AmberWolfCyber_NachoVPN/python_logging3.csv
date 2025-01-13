@@ -1,0 +1,6 @@
+"logging.warning(f""Certificate is not validly signed by the current CA: {e}. Will re-generate."""
+"logging.warning(f""Certificate was not issued by our CA. Will not re-generate."""
+"logging.warning(f""Packet data: {packet_data.hex("
+"logging.warning(f""Unhandled HTTP request from {self.client_address[0]}"""
+"logging.warning(f""Unhandled raw VPN data from {self.client_address[0]}: {first_line}"""
+"logging.warning(f""Unknown packet type: {packet_type:04x}"""

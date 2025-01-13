@@ -1,0 +1,16 @@
+"            Console.WriteLine(""    SharpMove.exe"
+"            Console.WriteLine(""\n  SharpMove.exe"
+" action=create computername=remote.host.local command=\""C:\\windows\\temp\\file.exe"
+" action=dcom computername=remote.host.local command=\""C:\\windows\\temp\\file.exe"
+" action=scm computername=remote.host.local command=\""C:\\windows\\temp\\file.exe"
+" action=taskscheduler computername=remote.host.local command=\""C:\\windows\\temp\\file.exe"
+"SharpMove.exe action=create computername=remote.host.local command=""C:\windows\temp\payload.exe"
+"SharpMove.exe action=dcom computername=remote.host.local command=""C:\windows\temp\payload.exe"
+"SharpMove.exe action=modschtask computername=remote.host.local command=""C:\windows\temp\payload.exe"
+"SharpMove.exe action=modsvc computername=remote.host.local command=""C:\windows\temp\payload.exe"
+"SharpMove.exe action=scm computername=remote.host.local command=""C:\windows\temp\payload.exe"
+"SharpMove.exe action=taskscheduler computername=remote.host.local command=""C:\windows\temp\payload.exe"
+"\"" throw=wmi location=local droplocation=C:\\Windows\\Temp filename=file.exe"
+.paket/paket.exe
+SharpMove.exe
+computername=remote.host.local throw=wmi location=local droplocation=C:\\Windows\\Temp filename=file.exe

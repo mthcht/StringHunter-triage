@@ -1,0 +1,269 @@
+"["""", """""
+"[""Antecedent"""
+"[""Author"""
+"[""Dependent"""
+"[""DisplayName"", ""Business"", ""ServiceEndpointUri"", ""SPOResourceId"", ""UserEmail"", ""UserFolder"", ""UserName"", ""WebServiceUrl"""
+"[""LibraryType"", ""LastModifiedTime"", ""MountPoint"", ""UrlNamespace"""
+"[""LogonType"""
+"[""Microsoft.PowerShell"", ""Microsoft.PowerShell.Workflow"", ""Microsoft.PowerShell32"""
+"[""SessionName"""
+"[""StartTime"""
+"[""__CLASS"""
+"[""__SUPERCLASS"""
+"[""bookmark_bar"""
+"[""children"""
+"[""domain"""
+"[""downloadPath"""
+"[""encoding"""
+"[""id"""
+"[""name"""
+"[""roots"""
+"[""startTime"""
+"[""teamId"""
+"[""userId"""
+"['FileVersion', 'ProductVersion'"
+"['misc', 'chromium', 'remote'"
+"['misc', 'remote'"
+"['misc', 'remote', 'test'"
+"['sitemanager.xml', 'recentservers.xml'"
+"['system', 'remote'"
+"['user', 'chromium', 'remote'"
+"['user', 'remote'"
+"[\w.,@?^=%&:/~+#-"
+"[cmd.strip() for cmd in command_string.split(',')"
+"[domain, user"
+"[f""{elem.tag.split('}')[1"
+"[re.compile(all_args, re.IGNORECASE | re.MULTILINE)"
+"[str(data_two[""LogonId"""
+"[str, int"
+"[struct.unpack('<I', value.data[8 + 4 * i:12 + 4 * i"
+[!
+['Actions'
+['AdminComment'
+['AliasHandle'
+['All'
+['AuthenticationPackage'
+['AuthenticationPackageName'
+['Author'
+['Buffer'
+['Caption'
+['ClassPart'
+['CommandLine'
+['Computer'
+['ConnectionState'
+['CurrentClass'
+['Data'
+['Date'
+['Description'
+['DisplayName'
+['Domain'
+['DomainHandle'
+['DomainId'
+['DomainIndex'
+['Domains'
+['Duration'
+['Element'
+['EmbeddedInstance'
+['Enabled'
+['EncodingLength'
+['EndBoundary'
+['Entry'
+['EventDataIndices'
+['EventDataSizes'
+['EventID'
+['EventId'
+['ExecutionTimeLimit'
+['Flags'
+['GroupId'
+['Handle'
+['HighPart'
+['HotFixID'
+['Id'
+['InstallState'
+['InstalledBy'
+['InstalledOn'
+['InstanceClassName'
+['InstanceFlags'
+['InstanceType'
+['Interval'
+['IpAddress'
+['Key'
+['LastLogon'
+['LmPackageName'
+['LocalName'
+['LogQuery'
+['LogonCount'
+['LogonType'
+['LowPart'
+['Manufacturer'
+['Members'
+['Model'
+['Name'
+['Names'
+['NumActualRecords'
+['NumRequestedRecords'
+['ObjectBlock'
+['ObjectEncodingLength'
+['ObjectFlags'
+['PasswordLastSet'
+['Path'
+['Persistent'
+['PolicyHandle'
+['Principal'
+['ProcessId'
+['ProcessName'
+['Properties'
+['Query'
+['ReferencedDomains'
+['RelativeId'
+['RelativeIds'
+['RemoteName'
+['RemotePath'
+['Repetition'
+['ResultBuffer'
+['RunLevel'
+['ScriptBlockText'
+['Security.UserID'
+['SecurityDescriptor'
+['SecurityServicesConfigured'
+['SecurityServicesRunning'
+['ServerHandle'
+['Settings'
+['SidPointer'
+['Sids'
+['Signature'
+['Source'
+['StartBoundary'
+['State'
+['Status'
+['StopAtDurationEnd'
+['SubjectDomainName'
+['SubjectUserName'
+['TargetDomainName'
+['TargetOutboundDomainName'
+['TargetOutboundUserName'
+['TargetUserName'
+['TaskName'
+['TaskPath'
+['TimeCreated.SystemTime'
+['TimeOutEnd'
+['TranslatedNames'
+['Triggers'
+['Type'
+['Use'
+['User'
+['UserAccountControl'
+['UserHandle'
+['UserId'
+['UserName'
+['Value'
+['Values'
+['VariableValue'
+['Version'
+['VirtualizationBasedSecurityStatus'
+['class'
+['comment'
+['displayName'
+['domain'
+['enabled'
+['last_logon'
+['name'
+['num_logins'
+['pathToSignedProductExe'
+['pathToSignedReportingExe'
+['pwd_last_set'
+['qualifiers'
+['rid'
+['sid'
+['user_type'
+['value'
+['xml_content'
+[*
+[-
+[0
+[0-9
+[0-9A-Fa-f
+[0:4
+[1
+[1 if builtin else 0
+[10
+[11
+[12
+[13
+[1:
+[2
+[3
+[3:
+[4
+[4:
+[4:6
+[5
+[6
+[6:8
+[7
+[8
+[9
+[:-3
+[:14
+[:50
+[:password
+[@harmj0y
+[@tifkin_
+[Seatbelt
+[System/EventID=1
+[System/EventID=4104
+[System/EventID=42
+[System/EventID=4688
+[System/EventID=6008
+[System/EventID={eid}
+[System[(EventID=12 or EventID=13) and Provider[@Name='Microsoft-Windows-Kernel-General'
+[System[Provider[@Name='Microsoft-Windows-Power-Troubleshooter'
+[System[TimeCreated[@SystemTime <= '{end_time_utc}'
+[System[TimeCreated[@SystemTime >= '{start_time_utc}'
+[X
+[[domain/
+[\\pipe\\lsarpc
+[\\pipe\\samr
+[\w@?^=%&/~+#-
+[\w_-
+[^;
+[^;(\r\n)
+[acc
+[accName
+[command.lower()
+[commands
+[contributors
+[datetime
+[domain_index
+[elem.tag.split('}')[1
+[event_offset:event_offset + event_size
+[get_version_from_string(v) for v in powershell.InstalledVersions
+[i
+[i + j
+[i - j
+[k
+[key
+[logon_id
+[member['Data'
+[module_name
+[mp
+[name
+[offset + 4:offset + 4 + length * 2
+[offset:offset+16
+[ofs
+[parse_value(item) for item in value
+[process_name
+[rname
+[scope_id
+[self._dependency
+[self._id
+[str(sub_id) for sub_id in sub_ids
+[str(x) for x in value
+[string[i:i+length
+[tivan project
+[trustee
+[v
+[value_offset:value_offset + self.length
+[x
+[x.lower() for x in browser_processes.keys()
+[x.lower() for x in interesting_processes.keys()

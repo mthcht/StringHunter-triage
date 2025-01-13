@@ -1,0 +1,87 @@
+"Println(""yaml_insert_token"", ""pos:"", pos, ""typ:"", token.typ, ""head:"", parser.tokens_head, ""len:"", len(parser.tokens"
+Println(pargs...
+println(val
+"Println(""Order by age"""
+"Println(""Order by age range 30-50"""
+"Println(""Order by last name"""
+println(line.String(
+"println(""has a last name"""
+"println(""no last name"""
+println(value.String(
+println(name.String(
+"println(""value exists"""
+"Println(""All text will now be bold magenta."""
+"Println(""This is printed without any color"""
+"Println(""Red text with white background."""
+"Println(""This"", color.RedString(""warning"""
+"Println(""Existing text will now be in yellow"""
+"Println(""This prints again cyan..."""
+"Println(""Prints cyan text"""
+"Println(""Prints cyan text with an underline."""
+"Println(""This will print text in bold red."""
+"println(myWriter, ""blue color!"""
+"println(Output, a..."
+"println(w io.Writer, a ...interface{}"
+Println(a...
+Println(a ...interface{}
+"println(w, a..."
+println(a...
+println(a ...interface{}
+"Println(""This is printed without any color"""
+"Println(""Existing text will be now in Yellow"""
+"Println(""This prints again cyan..."""
+"Println(""Prints cyan text"""
+"Println(""Prints cyan text with an underline."""
+"Println(""All text will be now bold magenta."""
+"Println(""This will print text in bold red."""
+"println(myWriter, ""blue color!"""
+"Println(""Red text with White background."""
+Println(err
+"println(buf, line[:sidx], spacing, wrap(maxlen+2, cols, line[sidx+1:]"
+"Println(""ip has value "", *ip"
+"Println(""flagvar has value "", flagvar"
+println(f.out(
+"Println(""ip has value "", *ip"
+"Println(""flagvar has value "", flagvar"
+"Println(""Some warning"""""
+Println(err2
+Println(err
+println(v...
+Println(v ...interface{}
+"Println(""Trying to resolve absolute path to"", inPath"
+Println(err
+"Println(""Couldn't discover absolute path"""
+"Println(""Config file changed:"", e.Name"
+"Println(viper.Get(""hostname"""
+"Println(""verbose enabled"""
+"Println(viper.Get(""port"""
+"Println(""Alias"", key, ""to"", newkey"
+"Println(""Reading file: "", filename"
+"Println(""Creating circular reference alias"", alias, key, v.realKey(key"
+"Println(""Searching for config in "", in"
+"Println(""Found: "", filepath.Join(in, v.configName+"".""+ext"
+"Println(""Attempting to merge in config file"""
+"Println(""Attempting to write configuration to file."""
+"Println(""Searching for config in "", v.configPaths"
+"Println(""Checking for"", filepath.Join(in, v.configName+"".""+ext"
+"Println(""adding"", absin, ""to paths to search"""
+"Println(""Attempting to read in config file"""
+"Println(""Mkdir error:"", err"
+"Println(""Open after Mkdir error:"", err"
+Println(x.Name(
+"Println(""Queries templates:"", strings.Join(queriesTemplates, "","""
+"Println(""Methods:"", strings.Join(methods, "","""
+Println(err
+"Println(""ROUTE:"", pathTemplate"
+"Println(""shutting down"""
+Println(r.RequestURI
+"Println(""Path regexp:"", pathRegexp"
+"Println(""Queries regexps:"", strings.Join(queriesRegexps, "","""
+Println(r.RequestURI
+println(line
+"println(f, o..."
+Println(args ...interface{}
+Println(args...
+Println(err
+Println(err
+"println(ctx.Req.Host,""->"",r.Header.Get(""Content-Type"""

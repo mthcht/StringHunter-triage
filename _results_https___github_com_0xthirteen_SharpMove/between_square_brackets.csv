@@ -1,0 +1,83 @@
+"[""CommandLine"""
+"[""Consumer"""
+"[""DisplayName"""
+"[""EventNameSpace"""
+"[""Filter"""
+"[""IntervalBetweenEvents"""
+"[""KillTimeout"""
+"[""Name"""
+"[""PathName"""
+"[""Query"""
+"[""QueryLanguage"""
+"[""ScriptText"""
+"[""ScriptingEngine"""
+"[""SkipIfPassed"""
+"[""State"""
+"[""TimerId"""
+"[""action"""
+"[""amsi"""
+"[""clsid"""
+"[""command"""
+"[""droplocation"""
+"[""eventname"""
+"[""filename"""
+"[""folder"""
+"[""hDefKey"""
+"[""location"""
+"[""method"""
+"[""namespace"""
+"[""password"""
+"[""processId"""
+"[""query"""
+"[""returnValue"""
+"[""sNames"""
+"[""sSubKeyName"""
+"[""sValueName"""
+"[""servicename"""
+"[""taskname"""
+"[""uValue"""
+"[""username"""
+"[DllImport(""Advapi32.dll"")"
+"[DllImport(""advapi32.dll"")"
+"[DllImport(""advapi32.dll"", CharSet = CharSet.Auto, SetLastError = true)"
+"[DllImport(""advapi32.dll"", CharSet = CharSet.Unicode, SetLastError = true)"
+"[DllImport(""advapi32.dll"", EntryPoint = ""CloseServiceHandle"")"
+"[] computerNames = arguments[""computername"""
+"[argument.Substring(0, idx)"
+"[assembly: AssemblyCompany("""")"
+"[assembly: AssemblyConfiguration("""")"
+"[assembly: AssemblyCulture("""")"
+"[assembly: AssemblyDescription("""")"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")"
+"[assembly: AssemblyProduct(""SharpMove"")"
+"[assembly: AssemblyTitle(""SharpMove"")"
+"[assembly: AssemblyTrademark("""")"
+"[assembly: AssemblyVersion(""1.0.*"")"
+"[assembly: AssemblyVersion(""1.0.0.0"")"
+"[assembly: Guid(""8bf82bbe-909c-4777-a2fc-ea7c070ff43e"")"
+[*
+[+
+[-
+[0
+[0-9
+[1
+[2
+[Aa
+[Bb
+[Cc
+[Dd
+[Ee
+[Flags
+[In
+[Ll
+[Mm
+[MoveKit
+[Oo
+[Pp
+[Rr
+[Ss
+[Tt
+[X
+[] casplit = new string[2
+[] logininfo = new string[2
+[assembly: ComVisible(false)

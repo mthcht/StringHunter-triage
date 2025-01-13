@@ -1,0 +1,1035 @@
+"[ ""ACCESS_ALLOWED_ACE"", ""ACCESS_ALLOWED_OBJECT_ACE"", ""ACCESS_DENIED_ACE"", ""ACCESS_DENIED_OBJECT_ACE"" "
+"[ ""ACCESS_ALLOWED_ACE"", ""ACCESS_DENIED_ACE"" "
+"[ ""ACCESS_ALLOWED_OBJECT_ACE"", ""ACCESS_DENIED_OBJECT_ACE"" "
+"[ $PKG_MGR == ""apt"" "
+"[ $PKG_MGR == ""yum"" "
+"[!""#$%&'()*+,.\/:;<=>?@[\\\"
+"[""1.3.6.1.4.1.311.10.3.4"",""1.3.6.1.5.5.7.3.4"",""1.3.6.1.5.5.7.3.2"""
+"[""2.5.29.19"", ""2.5.29.15"""
+"[""ACCESS_ALLOWED_ACE"", ""ACCESS_ALLOWED_OBJECT_ACE"", ""ACCESS_DENIED_ACE"", ""ACCESS_DENIED_OBJECT_ACE"""
+"[""ACCESS_ALLOWED_ACE"", ""ACCESS_DENIED_ACE"""
+"[""ACCESS_ALLOWED_OBJECT_ACE"", ""ACCESS_DENIED_OBJECT_ACE"""
+"[""Ace"""
+"[""AceFlags"""
+"[""AceType"""
+"[""Address"""
+"[""All-Extended-Rights"""
+"[""Aniq Fakhrul <aniqfakhrull@gmail.com>"""
+"[""Authenticated"""
+"[""AutoEnroll"""
+"[""CurrentPassword"""
+"[""CurrentPasswordOffset"""
+"[""Dacl"""
+"[""Data"""
+"[""DelegatedAccountControl"""
+"[""DelegatedDistinguishedName"""
+"[""DelegatedName"""
+"[""DelegatedSID"""
+"[""DelegatedType"""
+"[""Description"""
+"[""ESC1"""
+"[""ESC13"""
+"[""ESC15"""
+"[""ESC2"""
+"[""ESC3"""
+"[""ESC4"""
+"[""ESC9"""
+"[""Enabled"""
+"[""Enroll"""
+"[""Enrollment Rights"""
+"[""Flags"""
+"[""HEAD /SMS_DP_SMSPKG$/Datalib HTTP/1.1"", ""Host: %s"" % self.target, ""\r\n"""
+"[""HEAD /certsrv/ HTTP/1.1"", ""Host: %s"" % target, ""\r\n"""
+"[""InheritedObjectType"""
+"[""LDAP"", ""LDAPS"""
+"[""Mask"""
+"[""Name"""
+"[""Name"", ""Protocol"", ""Description"", ""Authenticated"""
+"[""ObjectType"""
+"[""ObjectTypeLen"""
+"[""OwnerSid"""
+"[""PreviousPassword"""
+"[""PreviousPasswordOffset"""
+"[""Protocol"""
+"[""QueryPasswordInterval"""
+"[""QueryPasswordIntervalOffset"""
+"[""Remark"""
+"[""Serial"""
+"[""ServicePrincipalName"""
+"[""Sid"""
+"[""SourceAccountControl"""
+"[""SourceDistinguishedName"""
+"[""SourceName"""
+"[""SourceSID"""
+"[""SourceType"""
+"[""Status"""
+"[""Type"""
+"[""UnchangedPasswordInterval"""
+"[""UnchangedPasswordIntervalOffset"""
+"[""UserDomain"""
+"[""UserName"""
+"[""UserSID"""
+"[""Vulnerable"""
+"[""Yes"",""No"""
+"[""adminCount"""
+"[""adminCount"",""memberOf"""
+"[""attribute"""
+"[""attributes"""
+"[""badpasswordtime"", ""lastlogoff"", ""lastlogon"", ""pwdlastset"", ""lastlogontimestamp"""
+"[""certificateTemplates"""
+"[""certificateTemplates"", ""displayName"", ""dNSHostName"", ""msPKI-Enrollment-Servers"", ""nTSecurityDescriptor"""
+"[""channel_binding"""
+"[""cn"""
+"[""content"""
+"[""dNSHostName"""
+"[""defaultNamingContext"""
+"[""displayName"""
+"[""distinguishedName"""
+"[""distinguishedName"",""sAMAccountName"",""lockoutTime"""
+"[""dnsHostName"""
+"[""dnsRecord"""
+"[""encoded"""
+"[""encoding"""
+"[""extended_rights"""
+"[""gPLink"""
+"[""greater"""
+"[""headers"""
+"[""host"""
+"[""ldapServiceName"""
+"[""lower"""
+"[""msDS-AllowedToActOnBehalfOfOtherIdentity"""
+"[""msDS-GroupMSAMembership"""
+"[""msDS-SupportedEncryptionTypes"""
+"[""msPKI-Cert-Template-OID"""
+"[""msPKI-Certificate-Name-Flag"""
+"[""msPKI-Certificate-Policy"""
+"[""msPKI-Enrollment-Flag"""
+"[""msPKI-Enrollment-Flag"", ""name"", ""nTSecurityDescriptor"", ""pKIExtendedKeyUsage"""
+"[""msPKI-RA-Signature"""
+"[""msPKI-Template-Schema-Version"""
+"[""nTSecurityDescriptor"""
+"[""name"""
+"[""name"", ""objectSid"""
+"[""objectGUID"""
+"[""objectSid"""
+"[""pKIExpirationPeriod"""
+"[""pKIExtendedKeyUsage"""
+"[""pKIOverlapPeriod"""
+"[""password"""
+"[""poetry-core>=1.0.0"""
+"[""port"""
+"[""raw_attributes"""
+"[""rights"""
+"[""rows"""
+"[""sAMAccountName"""
+"[""services"""
+"[""session_security"""
+"[""type"""
+"[""use_ssl"""
+"[""userAccountControl"""
+"[""value"""
+"[""wellKnownObjects"""
+"['-CheckWebEnrollment','-SearchBase','-Properties','-Server','-Select', '-Where', '-Count', '-NoWrap', '-TableView', '-SortBy', '-OutFile'"
+"['-CheckWebEnrollment','-SearchBase','-Properties','-Server','-Select','-Where', '-Count', '-NoWrap', '-TableView', '-SortBy','-OutFile'"
+"['-Computer','-ComputerName', '-Identity', '-Properties', '-Select','-Enabled','-Disabled', '-Server', '-Count', '-OutFile', '-TableView', '-SortBy'"
+"['-Computer','-ComputerName','-Server', '-Count', '-OutFile'"
+"['-Computer','-ComputerName','-Server', '-Count', '-OutFile', '-TableView', '-SortBy'"
+"['-Computer','-ComputerName','-TableView','-Server', '-NoWrap', '-Count', '-OutFile'"
+"['-ComputerName','-BaseDN','-Server', '-OutFile'"
+"['-ComputerName','-ComputerPass','-BaseDN','-Server', '-OutFile'"
+"['-ComputerName','-ComputerPass','-Server', '-OutFile'"
+"['-ComputerName','-Server','-OutFile'"
+"['-DisplayName','-Name','-Duplicate','-Server','-NoWrap'"
+"['-GUID','-TargetIdentity','-LinkEnabled','-Enforced','-SearchBase','-Server','-OutFile'"
+"['-GUID','-TargetIdentity','-SearchBase','-Server','-OutFile'"
+"['-Identity', '-Properties', '-Opsec','-LDAPFilter','-Server', '-Select', '-NoWrap', '-OutFile', '-TableView', '-SortBy'"
+"['-Identity','-AccountPassword', '-OldPassword','-Server','-OutFile'"
+"['-Identity','-BaseDN','-Server', '-OutFile'"
+"['-Identity','-CheckDatalib','-Properties','-LDAPFilter','-SearchBase','-Server','-Select','-Where','-Count','-NoWrap','-TableView', '-SortBy','-OutFile'"
+"['-Identity','-Clear','-Set','-Append','-SearchBase','-Server','-OutFile'"
+"['-Identity','-Clear','-Set','-Append','-Server', '-OutFile'"
+"['-Identity','-DelegateFrom','-SearchBase','-Server','-OutFile'"
+"['-Identity','-Description','-LinkTo','-BaseDN','-Server','-OutFile'"
+"['-Identity','-Description','-ProtectedFromAccidentalDeletion','-BaseDN','-Server','-OutFile'"
+"['-Identity','-DestinationDN','-SearchBase','-Server','-OutFile'"
+"['-Identity','-DistinguishedName','-SearchBase','-Server','-OutFile'"
+"['-Identity','-DistinguishedName','-Server','-OutFile'"
+"['-Identity','-LDAPFilter','-SearchBase','-Server','-Select','-Where','-Count','-NoWrap','-TableView', '-SortBy','-OutFile'"
+"['-Identity','-LDAPFilter','-Server','-Select', '-Where', '-Count', '-NoWrap', '-TableView', '-SortBy', '-OutFile'"
+"['-Identity','-Members','-Server', '-OutFile'"
+"['-Identity','-Members','-Server','-OutFile'"
+"['-Identity','-Properties', '-LDAPFilter','-SearchBase','-Server','-Select', '-Where', '-Count', '-NoWrap', '-TableView', '-SortBy', '-OutFile', '-NoCache'"
+"['-Identity','-Properties','-LDAPFilter','-SearchBase','-MemberIdentity','-AdminCount','-Server','-Select', '-Where', '-Count', '-NoWrap', '-TableView', '-SortBy','-OutFile', '-NoCache'"
+"['-Identity','-Properties','-LDAPFilter','-SearchBase','-Server','-Select', '-Where', '-Count', '-NoWrap', '-NoCache', '-TableView', '-SortBy','-OutFile'"
+"['-Identity','-Properties','-LDAPFilter','-SearchBase','-Server','-Select', '-Where', '-Count', '-NoWrap', '-TableView', '-SortBy', '-OutFile'"
+"['-Identity','-Properties','-LDAPFilter','-SearchBase','-Server','-Select', '-Where', '-Count', '-NoWrap', '-TableView', '-SortBy', '-OutFile', '-NoCache'"
+"['-Identity','-Properties','-LDAPFilter','-SearchBase','-Server','-Select','-Enabled','-Disabled','-RBCD', '-ShadowCred', '-Unconstrained','-PassNotRequired','-PreAuthNotRequired','-AllowDelegation','-DisallowDelegation','-AdminCount','-Lockout','-PassExpired','-TrustedToAuth','-SPN', '-Where', '-Count', '-NoWrap', '-TableView', '-SortBy', '-OutFile', '-NoCache'"
+"['-Identity','-Properties','-LDAPFilter','-SearchBase','-Server','-Select','-RBCD','-ShadowCred','-Unconstrained','-PassNotRequired','-PreAuthNotRequired','-AllowDelegation','-DisallowDelegation','-AdminCount','-Lockout','-PassExpired','-TrustedToAuth','-SPN', '-Where', '-Count', '-NoWrap', '-TableView', '-SortBy', '-OutFile', '-NoCache'"
+"['-Identity','-Properties','-LDAPFilter','-SearchBase','-TableView', '-SortBy','-Server','-Select','-Count','-OutFile'"
+"['-Identity','-Properties','-ResolveIP','-ResolveSIDs','-LDAPFilter','-SearchBase','-Server','-Select','-Enabled','-Disabled','-Unconstrained','-TrustedToAuth', '-LAPS', '-BitLocker', '-RBCD', '-ShadowCred','-SPN','-GMSAPassword','-Pre2K','-Printers','-ExcludeDCs','-Where', '-Count', '-NoWrap', '-TableView', '-SortBy', '-OutFile', '-NoCache'"
+"['-Identity','-Properties','-SearchBase','-LDAPFilter','-Server','-Select','-GPLink', '-ResolveGPLink', '-Where', '-Count', '-NoWrap', '-TableView', '-SortBy', '-OutFile'"
+"['-Identity','-Properties','-SearchBase','-Server','-Select', '-Where', '-Count', '-NoWrap', '-OutFile'"
+"['-Identity','-Properties','-SearchBase','-Server','-Select', '-Where', '-Count', '-NoWrap', '-TableView', '-SortBy', '-OutFile', '-NoCache'"
+"['-Identity','-Properties','-SearchBase','-Server','-Select', '-Where', '-Count', '-NoWrap', '-TableView', '-SortBy','-OutFile', '-NoCache'"
+"['-Identity','-Properties','-SearchBase','-Server','-Select','-Where', '-Count', '-NoWrap', '-OutFile'"
+"['-Identity','-Properties','-SearchBase','-Server','-Select','-Where', '-Count', '-NoWrap', '-TableView', '-SortBy','-OutFile', '-NoCache'"
+"['-Identity','-ProtectedFromAccidentalDeletion','-BaseDN','-Server','-OutFile'"
+"['-Identity','-ResolveSID','-SearchBase','-Server','-Select', '-Where', '-Count', '-NoWrap', '-TableView', '-SortBy','-OutFile'"
+"['-Identity','-ResolveSIDs','-SearchBase','-LDAPFilter','-Properties','-Server','-Select', '-Where', '-Count', '-NoWrap', '-TableView', '-SortBy', '-OutFile', '-NoCache'"
+"['-Identity','-SearchBase', '-Server', '-Outfile'"
+"['-Identity','-SearchBase','-Server','-OutFile'"
+"['-Identity','-SearchBase','-Server','-ResolveGUIDs','-SecurityIdentifier','-Select', '-Where', '-Count', '-NoWrap', '-TableView', '-OutFile', '-NoCache'"
+"['-Identity','-SearchBase','-Server','-SecurityIdentifier','-ResolveGUIDs','-Select', '-Where', '-Count', '-NoWrap', '-TableView', '-OutFile', '-NoCache'"
+"['-Identity','-SearchBase','-Server','-Select', '-Where', '-Count', '-NoWrap', '-TableView', '-SortBy', '-OutFile'"
+"['-Identity','-Server', '-OutFile'"
+"['-Identity','-Vulnerable','-Enabled','-ResolveSIDs','-Properties','-SearchBase','-Server','-Select', '-Where', '-TableView', '-SortBy', '-Count', '-NoWrap', '-OutFile'"
+"['-Identity','-Vulnerable','-Enabled','-ResolveSIDs','-Properties','-SearchBase','-Server','-Select','-Where', '-TableView', '-SortBy', '-Count', '-NoWrap', '-OutFile'"
+"['-LDAPFilter','-Server','-Select', '-Where', '-Count', '-NoWrap', '-TableView', '-SortBy', '-OutFile'"
+"['-LDAPFilter','-Server','-Select', '-Where', '-Count', '-NoWrap','-OutFile'"
+"['-Name','-Computer','-ComputerName','-IsRunning','-IsStopped','-Server', '-Count', '-OutFile', '-TableView', '-SortBy'"
+"['-Name','-Computer','-ComputerName','-Server', '-NoWrap', '-Count', '-TableView', '-OutFile'"
+"['-ObjectSID','-Server', '-Outfile', '-NoCache'"
+"['-PrincipalIdentity','-TargetIdentity','-Rights','-RightsGUID','-Inheritance','-ACEType','-Server','-OutFile'"
+"['-TargetIdentity','-PrincipalIdentity','-SearchBase','-Server','-OutFile'"
+"['-Template','-PrincipalIdentity','-Rights','-Server', '-OutFile'"
+"['-UserName','-UserPass','-BaseDN','-Server', '-OutFile'"
+"['-Value','-TableView','-Outfile'"
+"['-ZoneName','-Identity','-Properties','-SearchBase','-Server','-Select','-Where', '-Count', '-NoWrap', '-TableView', '-SortBy', '-OutFile', '-NoCache'"
+"['-ZoneName','-RecordName','-RecordAddress','-Server', '-OutFile'"
+"['-ZoneName','-RecordName','-Server', '-OutFile'"
+"['.', '..'"
+"['DistinguishedName','ms-MCS-AdmPwd'"
+"['GET', 'POST'"
+"['Member Name', 'Member Domain', 'Distinguished Name'"
+"['Name', 'Address'"
+"['Name', 'Member Count'"
+"['Name', 'Status', 'Enforcement', 'Distinguished Name'"
+"['SAMAccountName', 'objectSid', 'msDS-KeyCredentialLink'"
+"['SAMAccountName','nTSecurityDescriptor'"
+"['SAMAccountName','objectSid', 'msDS-AllowedToActOnBehalfOfOtherIdentity'"
+"['SAMR', 'LDAPS'"
+"['all', 'enroll','write'"
+"['allowed', 'denied'"
+"['dNSHostName', 'operatingSystem'"
+"['displayName', 'rightsGuid'"
+"['distinguishedName', 'memberOf', 'objectSid'"
+"['distinguishedName','sAMAccountName'"
+"['dnsHostName', 'operatingSystem', 'description'"
+"['dnsRecord', 'distinguishedName', 'name'"
+"['general', 'members', 'dacl', 'trusts'"
+"['immutable', 'resetpassword', 'writemembers', 'dcsync'"
+"['immutable','fullcontrol', 'resetpassword', 'writemembers', 'dcsync'"
+"['ms-MCS-AdmPwd','ms-Mcs-AdmPwdExpirationTime'"
+"['nTSecurityDescriptor', 'objectClass'"
+"['nTSecurityDescriptor', 'sAMAccountName', 'distinguishedName', 'objectSid'"
+"['name', 'Address'"
+"['name', 'distinguishedName'"
+"['name', 'objectClass', 'distinguishedName'"
+"['name', 'objectSid'"
+"['name', 'objectSid', 'distinguishedName'"
+"['name', 'sAMAccountName', 'mail'"
+"['name','dNSHostName'"
+"['objectClass', 'displayName', 'distinguishedName', 'gPCFileSysPath'"
+"['objectClass', ...properties"
+"['objectClass', ...selectedProperties"
+"['objectSid', 'distinguishedName'"
+"['objectSid', 'distinguishedName', 'sAMAccountName'"
+"['objectSid', 'distinguishedName', 'sAMAccountName','nTSecurityDescriptor'"
+"['objectSid', 'primaryGroupId'"
+"['objectSid','ms-DS-MachineAccountQuota'"
+"['objectSid','sAMAccountName'"
+"['sAMAccountName', 'lastLogonTimestamp'"
+"['sAMAccountName', 'objectSid'"
+"['sAMAccountName','msDS-ManagedPassword'"
+"['sAMAccountName','name'"
+"['samAccountName', 'adminCount'"
+"['samAccountName', 'memberOf'"
+"['servicePrincipalName', 'sAMAccountName','pwdLastSet', 'MemberOf', 'userAccountControl', 'lastLogon'"
+"['top', 'dnsNode'"
+"['top', 'group'"
+"['top', 'person', 'organizationalPerson', 'user'"
+"['top','container','groupPolicyContainer'"
+"['top','msPKI-Enterprise-Oid'"
+"['top','organizationalUnit'"
+"['top','pKICertificateTemplate'"
+"['top','person','organizationalPerson','user','computer'"
+"['z', 'Z'"
+"['{%d:%ds} ' % (num, width) for num, width in enumerate(colLen)"
+"[('*', True)"
+"[(ldap3.MODIFY_ADD, [userDn"
+"[(ldap3.MODIFY_ADD, [userobject_dn"
+"[(ldap3.MODIFY_DELETE, [userobject_dn"
+"[(ldap3.MODIFY_DELETE,[templates[0"
+"[(ldap3.MODIFY_REPLACE, ['""{}""'.format(self.__computerPassword).encode('utf-16-le')"
+"[(ldap3.MODIFY_REPLACE, records)"
+"[,="
+"[<>:""/\\|?*"
+"[EXTENDED_RIGHTS_NAME_MAP[""Enroll"""
+"[Operators.AND, Operators.OR, Operators.NOT"
+"[RIGHTS_GUID.DS_Replication_Get_Changes.value, RIGHTS_GUID.DS_Replication_Get_Changes_All.value"
+"[True, False"
+"[], remove=["
+"[^,"
+"[adminUsers, kerberoastable, unconstrainedComputers, constrainedDelegation, inactiveUsers"
+"[adminUsersResponse, kerberoastableResponse, computersResponse, constrainedDelegationResponse, inactiveUsersResponse"
+"[aria-controls=""tabpanel${tab.charAt(0).toUpperCase() + tab.slice(1)}"""
+"[aria-controls=""tabpanelDescendants"""
+"[aria-controls=""tabpanelLinkedGpo"""
+"[aria-controls=""tabpanelLoggedon"""
+"[aria-controls=""tabpanelMemberof"""
+"[aria-controls=""tabpanelMembers"""
+"[aria-controls=""tabpanelSessions"""
+"[aria-controls=""tabpanelTrusts"""
+"[aria-selected=""true"""
+"[b""1.3.6.1.5.5.7.3.2"", b""1.3.6.1.5.2.3.4"", b""1.3.6.1.4.1.311.20.2.2"", b""2.5.29.37.0"""
+"[c.replace(unk,COMMANDS[cmd[0"
+"[csv,md,html,latex"
+"[data-modal-hide=""${modalId}"""
+"[data-modal-hide=""add-object-acl-modal"""
+"[data-modal-hide=""ldap-attributes-modal"""
+"[data-modal-hide=""remove-group-member-modal"""
+"[data-modal-target=""${modalId}"""
+"[data-modal-target=""delete-record-modal"""
+"[data-modal-toggle=""add-computer-modal"""
+"[data-modal-toggle=""add-dns-record-modal"""
+"[data-modal-toggle=""add-user-modal"""
+"[data-name=""${part}"""
+"[domainResponse, dcResponse"
+"[f""{item['attribute'"
+"[flat_domain, username, ldap_address"
+"[i for i, token in enumerate(second_last_list) if isinstance(token, dict) and token['type'"
+"[i+"" - ""+vulns[i"
+"[int(i) if i.isnumeric() else i.strip() for i in x.replace(""|"","","").split(',')"
+"[key, value"
+"[label, value"
+"[ldap3.MODIFY_REPLACE, [sd.getData()"
+"[ldap3.MODIFY_REPLACE, new_values"
+"[name, value"
+"[name=""object-search"""
+"[onclick=""document.getElementById(\'add-object-acl-modal\').classList.remove(\'hidden\')"""
+"[os.path.join(path, p) for p in self._listdir(path)"
+"[pipe, binding_params[pipe"
+"[role=""alert-error"""
+"[role=""alert-success"""
+"[role=""tab"""
+"[role=""tablist"""
+"[role=""tabpanel"""
+"[rsa.RSAPrivateKey, x509.Certificate, None"
+"[section, settings"
+"[self.powerview.flatName.lower(), self.powerview.args.username.lower(), self.powerview.args.ldap_address.lower()"
+"[self[""CurrentPasswordOffset"""
+"[self[""PreviousPasswordOffset"""
+"[spn, sAMAccountName, memberOf, delegation"
+"[str, list[int"
+"[style*=""display: none"""
+"[subsection, values"
+"[type, button"
+"[type, val"
+"[v.lower() for v in entry[""attributes"""
+"[value, key"
+"[{""attribute"": attr, ""value"": val} for attr, val in matches"
+"[{""src"":""/android-chrome-192x192.png"",""sizes"":""192x192"",""type"":""image/png""},{""src"":""/android-chrome-512x512.png"",""sizes"":""512x512"",""type"":""image/png""}"
+"[{'type': 'BooleanOperator', 'content': Operators.NOT}, new_structure"
+"[{'type': 'BooleanOperator', 'content': random_operator}, new_structure"
+[ 
+[ item.casefold() for item in COMMANDS[cmd[0
+[!NOTE
+[%(asctime)s
+[%d
+[%s
+[&|!
+[''
+[') and line.endswith('
+['*'
+['-' * itemLen for itemLen in colLen
+['66080'
+['ACE Type'
+['ACE flags'
+['ACE type'
+['ACEFlags'
+['ACEType'
+['Access mask'
+['AccessMask'
+['Ace'
+['AceFlags'
+['AceType'
+['AclRevision'
+['ActiveDirectoryRights'
+['Add-ADComputer'
+['Add-ADGroup'
+['Add-ADUser'
+['Add-CATemplate'
+['Add-CATemplateAcl'
+['Add-GPO'
+['Add-GroupMember'
+['Add-OU'
+['Add-ObjectAcl'
+['Address'
+['AdminComment'
+['All'
+['Any Purpose'
+['Buffer'
+['Certificate Authorities'
+['Client Authentication'
+['Control'
+['CurrentPassword'
+['DEBUG'
+['DS-Replication-Get-Changes-All'
+['Dacl'
+['Data'
+['DomainHandle'
+['DomainId'
+['ESC1'
+['Element'
+['Enrollment Agent'
+['Enrollment Rights'
+['Expire'
+['Extended Rights'
+['Find-ForeignGroup'
+['Find-ForeignUser'
+['Flags'
+['FullName'
+['GET'
+['Get-ADObject'
+['Get-CA'
+['Get-CATemplate'
+['Get-Exchange'
+['Get-GMSA'
+['Get-GPOLocalGroup'
+['Get-GPOSettings'
+['Get-NetComputer'
+['Get-NetDomain'
+['Get-NetDomainController'
+['Get-NetGPO'
+['Get-NetGroup'
+['Get-NetGroupMember'
+['Get-NetOU'
+['Get-NetTrust'
+['Get-NetUser'
+['Get-ObjectAcl'
+['Get-ObjectOwner'
+['Get-RBCD'
+['Get-SCCM'
+['GlobalGroups'
+['Group Membership'
+['GroupDistinguishedName'
+['GroupDomainName'
+['GroupHandle'
+['GroupSid'
+['Groups'
+['HighPart'
+['HomeDirectory'
+['HostIP'
+['IdentifierAuthority'
+['Idle Time'
+['InfoStruct'
+['InheritanceType'
+['Inherited type (GUID)'
+['InheritedObjectType'
+['InheritedObjectTypeLen'
+['Internal5'
+['KDC_REP'
+['KRB5 - Kerberos 5'
+['LabelCount'
+['LastLogon'
+['Length'
+['Level1'
+['Level10'
+['Lgth'
+['LocalGroups'
+['LogonCount'
+['LowPart'
+['MIC'
+['MICLen'
+['Mask'
+['MechToken'
+['MechTypes'
+['MemberDistinguishedName'
+['MemberDomain'
+['MemberName'
+['MemberSID'
+['Membership'
+['Minimum'
+['Name'
+['Names'
+['Object type (GUID)'
+['ObjectAceFlags'
+['ObjectAceType'
+['ObjectDN'
+['ObjectSID'
+['ObjectType'
+['ObjectTypeLen'
+['OwnerSid'
+['POST'
+['PasswordExpired'
+['PasswordLastSet'
+['PasswordMustChange'
+['Port'
+['Preferences'
+['PreviousPassword'
+['PreviousPasswordOffset'
+['Primary Server'
+['Priority'
+['QueryPasswordInterval'
+['QueryPasswordIntervalOffset'
+['Rank'
+['RawName'
+['RecordType'
+['Refresh'
+['Registry'
+['RelativeId'
+['RelativeIds'
+['Remove-ADComputer'
+['Remove-ADObject'
+['Remove-ADUser'
+['Remove-CATemplate'
+['Remove-GroupMember'
+['Remove-OU'
+['Remove-ObjectAcl'
+['ResponseToken'
+['Retry'
+['Revision'
+['Sacl'
+['Sbz1'
+['Sbz2'
+['Scripts'
+['Security'
+['SecurityIdentifier'
+['Self-Membership'
+['Serial'
+['ServerHandle'
+['ServiceStatus'
+['SessionInfo'
+['Set-ADObject'
+['Set-ADObjectDN'
+['Set-CATemplate'
+['Set-ObjectOwner'
+['Set-RBCD'
+['Sid'
+['SidPointer'
+['Sids'
+['SubAuthority'
+['SubAuthorityCount'
+['TimeStamp'
+['Trustee (SID)'
+['TtlSeconds'
+['Type'
+['TypeName'
+['UnchangedPasswordInterval'
+['Unlock-ADAccount'
+['User-Force-Change-Password'
+['UserAccountControl'
+['UserHandle'
+['UserInfo'
+['UserInformationClass'
+['UserName'
+['UserPassword'
+['Value'
+['Version'
+['VersionLen'
+['Weight'
+['WkstaUserInfo'
+['WorkStations'
+['Write Dacl Principals'
+['Write Dacl'
+['Write Owner Principals'
+['Write Owner'
+['Write Property Principals'
+['Write Property'
+['Zone Admin Email'
+['__bytes__'
+['__datetime__'
+['__timedelta__'
+['accountActive'
+['aclEscalate'
+['aclEscalateIn'
+['address'
+['allowedWorkstation'
+['ap-options'
+['args'
+['attr'
+['attribute'
+['attributes'
+['authenticator'
+['authenticator-vno'
+['bindstr'
+['boolean_operator'
+['checksum'
+['cipher'
+['cksum'
+['cksumtype'
+['client'
+['comment'
+['comparison_operator'
+['configurationNamingContext'
+['content'
+['crealm'
+['create'
+['createIn'
+['ctime'
+['cusec'
+['dNSHostName'
+['data'
+['data-value'
+['defaultNamingContext'
+['description'
+['displayName'
+['distinguishedName'
+['distinguishedname'
+['dn'
+['dnsHostName'
+['dnsHostname'
+['dnsRecord'
+['domain_name'
+['drsuapi'
+['dummy_section'
+['dwCurrentState'
+['dwExpire'
+['dwMinimumTtl'
+['dwRefresh'
+['dwRetry'
+['dwSerialNo'
+['e-data'
+['enc-part'
+['entombedTime'
+['error-code'
+['escalateGroup'
+['escalateViaGroup'
+['etype'
+['extensible_match'
+['flags'
+['flask.cli'
+['fullName'
+['gPCFileSysPath'
+['gPLink'
+['globalGroupMemberships'
+['group_end'
+['group_start'
+['homeDirectory'
+['hostname'
+['include-pac'
+['kdc-options'
+['key'
+['keytype'
+['keyvalue'
+['lastLogon'
+['localGroupMemberships'
+['logonCount'
+['lpDisplayName'
+['lpNameOut'
+['lpScHandle'
+['lpServiceName'
+['machineConfig'
+['member'
+['memberOf'
+['memberof'
+['members'
+['message'
+['ms-DS-MachineAccountQuota'
+['ms-MCS-AdmPwd'
+['msDS-AllowedToActOnBehalfOfOtherIdentity'
+['msDS-KeyCredentialLink'
+['msDS-ManagedPassword'
+['msDS-SupportedEncryptionTypes'
+['msPKI-Cert-Template-OID'
+['msPKI-Certificate-Name-Flag'
+['msPKI-Enrollment-Flag'
+['msPKI-Minimal-Key-Size'
+['msPKI-Private-Key-Flag'
+['msPKI-RA-Signature'
+['msPKI-Template-Minor-Revision'
+['msPKI-Template-Schema-Version'
+['msg-type'
+['nTSecurityDescriptor'
+['name'
+['name-string'
+['nameNode'
+['namePrimaryServer'
+['nameTarget'
+['namingContexts'
+['nonce'
+['objectClass'
+['objectSid'
+['oldSessionKey'
+['pKICriticalExtensions'
+['pKIDefaultCSPs'
+['pKIDefaultKeySpec'
+['pKIExpirationPeriod'
+['pKIExtendedKeyUsage'
+['pKIMaxIssuingDepth'
+['pKIOverlapPeriod'
+['padata'
+['padata-type'
+['padata-value'
+['passwordExpires'
+['passwordLastSet'
+['patimestamp'
+['pausec'
+['phKey'
+['powerview=powerview:main'
+['primaryGroupId'
+['protocol'
+['pvno'
+['raw_attributes'
+['realm'
+['result'
+['results'
+['revision'
+['rtime'
+['sAMAccountName'
+['salt'
+['samAccountName'
+['samaccountname'
+['samr'
+['seq-number'
+['sesi10_cname'
+['sesi10_idle_time'
+['sesi10_time'
+['sesi10_username'
+['sessionKey'
+['shi1_netname'
+['shi1_remark'
+['sids'
+['sname'
+['srvsvc'
+['stringBinding'
+['subkey'
+['svcctl'
+['tag'
+['ticket'
+['till'
+['timestamp'
+['tstime'
+['type'
+['userAccountControl'
+['userAccountcontrol'
+['userConfig'
+['userName'
+['userPrincipalName'
+['userRID'
+['user_name'
+['val'
+['value'
+['wPort'
+['wPriority'
+['wWeight'
+['wellKnownObjects'
+['wkssvc'
+['wkui1_logon_domain'
+['wkui1_logon_server'
+['wkui1_oth_domains'
+['wkui1_username'
+['zoneAdminEmail'
+[).*?(?=\
+[-
+[--dc-ip 192.168.86.192
+[--obfuscate
+[--relay-host
+[--relay-port
+[--use-channel-binding | --use-sign-and-seal | --use-simple-auth
+[--use-ldap | --use-ldaps
+[--web-host 0.0.0.0
+[--web-port 3000
+[-1
+[-12:
+[-2
+[-50:
+[-Append
+[-Clear
+[-Set
+[-Set|-Append
+[-k
+[...gpLinkStr.matchAll(guidRegex)
+[...gpLinkStr.matchAll(statusRegex)
+[...initialProperties
+[0
+[0-4
+[0-9
+[0-9.
+[0-9A-F
+[0-9a-fA-F
+[0.6rem
+[0:i
+[1
+[15:
+[16
+[16:
+[1:
+[1:-1
+[2
+[2:
+[2px
+[3
+[3:
+[4
+[8
+[90vh
+[:-(len(zonename)+1)
+[:-1
+[:-12:
+[:-2
+[:1
+[:16
+[:4
+[::-1
+[:endData - self['CurrentPasswordOffset'
+[:password
+[:self['QueryPasswordIntervalOffset'
+[:self['UnchangedPasswordIntervalOffset'
+[;
+[<>
+[A-Z
+[A-Za-z
+[ACLEnum
+[Add-DomainCATemplate
+[Add-DomainCATemplateAcl
+[Add-DomainCATemplateAcle
+[Add-DomainComputer
+[Add-DomainDNSRecord
+[Add-DomainGPO
+[Add-DomainGroup
+[Add-DomainGroupMember
+[Add-DomainOU
+[Add-DomainObjectACL
+[Add-DomainObjectAcl
+[Add-DomainUser
+[Add-GPLink
+[Basic Usage
+[CERTIFICATE_RIGHTS(self.GENERIC_ALL)
+[Clear-Cache
+[ConnectRPCTransport
+[ConvertFrom-SID
+[ConvertTo-UACValue
+[CustomStandardExtendedOperations
+[Disable-DomainDNSRecord
+[EXTENDED_RIGHTS_NAME_MAP['DS-Replication-Get-Changes'
+[EXTENDED_RIGHTS_NAME_MAP['Self-Membership'
+[EXTENDED_RIGHTS_NAME_MAP['User-Force-Change-Password'
+[FLAG.name for FLAG in ACE_FLAGS if ace.hasFlag(FLAG.value)
+[FLAG.name for FLAG in ALLOWED_OBJECT_ACE_MASK_FLAGS if ace['Ace'
+[FLAG.name for FLAG in OBJECT_ACE_FLAGS if ace['Ace'
+[Find-LocaAdminAccess
+[Find-LocalAdminAccess
+[General
+[Get-Domain
+[Get-DomainCATemplate
+[Get-DomainComputer
+[Get-DomainComputerPassword
+[Get-DomainController
+[Get-DomainDNSRecord
+[Get-DomainDNSZone
+[Get-DomainForeignGroupMember
+[Get-DomainForeignUser
+[Get-DomainGMSA
+[Get-DomainGPO
+[Get-DomainGPOLocalGroup
+[Get-DomainGroup
+[Get-DomainGroupMember
+[Get-DomainOU
+[Get-DomainObject
+[Get-DomainObjectAcl
+[Get-DomainObjectOwner
+[Get-DomainRBCD
+[Get-DomainSCCM
+[Get-DomainSCCMDatalib
+[Get-DomainTrust
+[Get-DomainUser
+[Get-ExchangeServer
+[Get-GPOPolicy
+[Get-GPOSettings
+[Get-LocalAccount
+[Get-LocalUser
+[Get-NamedPipes
+[Get-NetLoggedOn
+[Get-NetService
+[Get-NetSession
+[Get-NetShare
+[Get-RegLoggedOn
+[IMG_4602
+[IndexError
+[Installation
+[Invoke-Kerberoast
+[LDAP://%s;%s
+[Logging
+[MS-DNSP
+[Modules
+[None
+[Optional
+[PowerView.ps1
+[RBCD
+[RIGHTS_GUID.ResetPassword.value
+[RIGHTS_GUID.WriteMembers.value
+[Remove-DomainCATemplate
+[Remove-DomainDNSRecord
+[Remove-DomainGroupMember
+[Remove-DomainGroupmember
+[Remove-DomainOU
+[Remove-DomainObject
+[Remove-DomainObjectACL
+[Remove-DomainObjectAcl
+[Remove-DomainUser
+[Remove-GPLink
+[SAMR
+[SIMPLE_PERMISSIONS.FullControl.value
+[Set-DomainCATempalte
+[Set-DomainCATemplate
+[Set-DomainComputerPassword
+[Set-DomainDNSRecord
+[Set-DomainObject
+[Set-DomainObjectDN
+[Set-DomainObjectOwner
+[Set-DomainRBCD
+[Set-DomainUserPassword
+[Storage
+[TypesMech['MS KRB5 - Microsoft Kerberos 5'
+[Unlock-ADAccount
+[Wiki
+[X
+[[domain/
+[\PIPE\DAV RPC SERVICE
+[\PIPE\atsvc
+[\PIPE\efsrpc
+[\PIPE\lsarpc
+[\PIPE\lsass
+[\PIPE\netdfs
+[\PIPE\netlogon
+[\PIPE\samr
+[\PIPE\spoolss
+[\pipe\samr
+[\pipe\srvsvc
+[\pipe\svcctl
+[\pipe\winreg
+[\pipe\wkssvc
+[\w-
+[^\)
+[a-zA-Z0-9-
+[actualKey
+[arg + ' ' for arg in COMMANDS[full_cmd
+[aria-hidden
+[attr
+[attribute
+[attributes.memberOf
+[attrs['attribute'
+[branch
+[build-system
+[c + ' ' for c in list(COMMANDS.keys())
+[c + ' ' for c in list(COMMANDS.keys()) if c.casefold().startswith(cmd)
+[c for c in list(COMMANDS.keys()) if c.casefold() == cmd
+[c_key
+[chars[i
+[condition
+[connectRPCTransport
+[connectRPCTransport:Exception
+[connectRPCTransport:SessionError
+[contains
+[current_section
+[cursor
+[cursor:
+[data
+[data-dismiss-target
+[data-modal-hide
+[domaindn.find('DC='):
+[downLevelLogonName
+[dummy_section
+[eku
+[encASRepPart['key'
+[encTGSRepPart['key'
+[enc_value
+[enctype
+[entry for entry in entries if not all(e == '' for e in entry)
+[entry['objectSid'
+[eq
+[etype2['etype'
+[etype['etype'
+[filter
+[group['objectSid'
+[group_members
+[gssapi
+[guids[0
+[hostname
+[i
+[i+1
+[i+2
+[i-1
+[i:index
+[in
+[ind+1:ind+1+nextlen
+[ind:ind+1
+[index
+[indexs
+[inh_obj_type
+[int(encAPRepPart['subkey'
+[intro
+[issuance_policies
+[item.attributes.member
+[item.attributes.objectClass?.toLowerCase()
+[item.lower() for item in COMMANDS[cmd[0
+[j
+[j:index
+[k
+[key
+[key.strip()
+[keyCredential.toDNWithBinary().toString()
+[left
+[len(row[i
+[line.strip() for line in last_50_lines
+[make_serializable(element) for element in data
+[name
+[name.strip() for name in uac_names.split(delimiter)
+[name['attributes'
+[nameserver
+[new_gplink
+[new_structure
+[nt_error
+[obj.attributes.objectClass.length - 1
+[obj_type
+[objectClasses?.toLowerCase()
+[object_class
+[objectsid
+[owner_sid
+[path + ' '
+[pipe
+[pipe[1:
+[port
+[principal
+[prop
+[random.choice(hex_string) for x in range(length)
+[record.getData()
+[relay
+[rights_guid
+[secDesc
+[self.__computerName
+[self._deserialize_complex_types(item) for item in obj
+[self._serialize_complex_types(item) for item in obj
+[self.args.rights
+[self.args.rights.lower()
+[self.error
+[self.get(i) for i in keys
+[self.port
+[self.rights_guid
+[self['CurrentPasswordOffset'
+[self['PreviousPasswordOffset'
+[self['QueryPasswordIntervalOffset'
+[self['UnchangedPasswordIntervalOffset'
+[server
+[sid
+[start:end
+[state
+[str
+[str(host['name'
+[supportedCiphers[0
+[targetidentity_gplink
+[to_pascal_case(str(m._name_ or m._value_)) for m in members
+[tool.poetry
+[tool.poetry.dependencies
+[tool.poetry.scripts
+[user['RelativeId'
+[user_memberof
+[username
+[usersid
+[x
+[x.lower() for x in ori_list
+[y
+[{bcolors.ENDC}{server_dns}{bcolors.OKBLUE}
+[{uac_val.decode()}
+[{}

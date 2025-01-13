@@ -1,0 +1,219 @@
+"logging.error("" * %s"" % domain['Name']"
+"logging.error(""%s exists ""%(pv_args.outfile"
+"logging.error(""-DisplayName flag is required"""
+"logging.error(""-GUID and -TargetIdentity flags are required"""
+"logging.error(""-Identity flag is required"""
+"logging.error(""-Identity is required"""
+"logging.error(""-ObjectSID flag is required"""
+"logging.error(""-RecordName and -RecordAddress flags are required"""
+"logging.error(""-RecordName flag is required"""
+"logging.error(""-ResolveIP can only be used with -Identity"""
+"logging.error(""-Value flag is required"""
+"logging.error(""Bind not successful - %s [%s]"" % (ldap_session.result['description'], error_status"
+"logging.error(""Cannot start kerberos signing/sealing when using TLS/SSL"""
+"logging.error(""Couldn't resolve %s"" % args.ldap_address"
+"logging.error(""Error during schannel authentication with error: %s"", str(e"
+"logging.error(""Error filtering ACE, probably because of ACE type unsupported for parsing yet (%s"
+"logging.error(""Error resolving address with unknown error"""
+"logging.error(""Failed to bind with error: %s"" % (str(e"
+"logging.error(""Failed to bind"""
+"logging.error(""Failed to connect to %s"" % (ip_address"
+"logging.error(""Got error: %s"" % e"
+"logging.error(""Host {} not found.."".format(domainComputer"
+"logging.error(""Invalid server address. Must be either an FQDN or IP address."""
+"logging.error(""Keberos authentication requires FQDN instead of IP"""
+"logging.error(""Kerberos authentication requires a valid FQDN, not an IP address."""
+"logging.error(""Kerberos option cannot be used in relay mode. Exiting..."""
+"logging.error(""No KRB5CCNAME environment present."""
+"logging.error(""No RIDs found. Skipping..."""
+"logging.error(""No entries found!"""
+"logging.error(""Not a valid key file"""
+"logging.error(""[Add-DomainCATemplateAcl] More than one target identity found"""
+"logging.error(""[Add-DomainCATemplateAcl] Multiple templates found"""
+"logging.error(""[Add-DomainCATemplateAcl] Target identity not found in domain"""
+"logging.error(""[Add-DomainCATemplate] Failed to issue template"""
+"logging.error(""[Add-DomainCATemplate] More than one certificate templates found"""
+"logging.error(""[Add-DomainCATemplate] No Forest OID found in domain"""
+"logging.error(""[Add-DomainCATemplate] No certificate template found"""
+"logging.error(""[Add-DomainComputer] More then one computer found in domain"""
+"logging.error(""[Add-DomainGPO] Failed to connect to SYSVOL share"""
+"logging.error(""[Add-DomainGPO] Failed to create gpt.ini file in %s"" % (policy_path"
+"logging.error(""[Add-DomainGPO] Failed to create policy directory in SYSVOL"""
+"logging.error(""[Add-DomainGPO] Failed to write gpt.ini file in %s"" % (policy_path"
+"logging.error(""[Add-DomainGroup] More than one group found in domain"""
+"logging.error(""[Add-DomainObjectACL] More then one principal identity found"""
+"logging.error(""[Add-DomainObjectACL] More then one target identity found"""
+"logging.error(""[Add-DomainUser] More than one group found in domain"""
+"logging.error(""[Add-GPLink] GPO not found in domain"""
+"logging.error(""[Add-GPLink] More than one GPO found"""
+"logging.error(""[Add-GPLink] More than one principal identity found"""
+"logging.error(""[Add-GPLink] Principal identity not found in domain"""
+"logging.error(""[Add-GPLink] gPLink attribute already exists"""
+"logging.error(""[Disable-DomainDNSRecord] Failed to disable dns record"""
+"logging.error(""[Get-DomainComputerPassword] Computer %s not found in domain"" % (identity"
+"logging.error(""[Get-DomainComputerPassword] Multiple computers found in domain"""
+"logging.error(""[Get-DomainForeignUser] Failed ldap query"""
+"logging.error(""[Get-DomainGPOLocalGroup] No GPO object found"""
+"logging.error(""[Get-DomainObjectOwner] Identity not found in domain"""
+"logging.error(""[Get-ExchangeServer] Failed to get Exchange Servers group dn"""
+"logging.error(""[Get-GPOSettings] No GPO object found"""
+"logging.error(""[Get-NamedPipes] Pipe not found"""
+"logging.error(""[Get-NetLoggedOn] Failed to connect to %s"" % (computer_name"
+"logging.error(""[Get-NetLoggedOn] Use FQDN when using kerberos"""
+"logging.error(""[Get-NetService] Error enumerating service"""
+"logging.error(""[Get-NetSession] Failed to connect to %s"" % (identity"
+"logging.error(""[Get-NetSession] Use FQDN when using kerberos"""
+"logging.error(""[Get-RegLoggedOn] Failed to connect to %s"" % (computer_name"
+"logging.error(""[RBCD] msDS-AllowedToActOnBehalfOfOtherIdentity not found in object"""
+"logging.error(""[Remove-DomainCATemplate] Multiple OIDs found. Ignoring.."""
+"logging.error(""[Remove-DomainCATemplate] Template OID not found in domain. Ignoring..."""
+"logging.error(""[Remove-DomainDNSRecord] More than one record found"""
+"logging.error(""[Remove-DomainObjectACL] More then one principal identity found"""
+"logging.error(""[Remove-DomainObjectACL] More then one target identity found"""
+"logging.error(""[Remove-GPLink] GPO not found in domain"""
+"logging.error(""[Remove-GPLink] More than one GPO found"""
+"logging.error(""[Remove-GPLink] More than one principal identity found"""
+"logging.error(""[Remove-GPLink] Principal identity doesn't have any linked GPO"""
+"logging.error(""[Remove-GPLink] Principal identity not found in domain"""
+"logging.error(""[SAMR] No object found for {}"".format(object_name"
+"logging.error(""[Set-DomainCATemplate] No identity or args supplied"""
+"logging.error(""[Set-DomainCATemplate] No template found"""
+"logging.error(""[Set-DomainDNSRecord] No A record exists yet. Nothing to modify"""
+"logging.error(""[Set-DomainObjectOwner] More than one principal identity found"""
+"logging.error(""[Set-DomainObjectOwner] More than one target identity found"""
+"logging.error(""[Set-DomainObject] %s"" % str(e"
+"logging.error(""[Set-DomainRBCD] Failed to write to {delegatefrom} object"""
+"logging.error(""[Set-DomainRBCD] More then one identity found"""
+"logging.error('-TargetIdentity , -PrincipalIdentity and -Rights flags are required'"
+"logging.error('-TargetIdentity , -PrincipalIdentity flags are required'"
+"logging.error('Could not modify object, the server reports a constrained violation: %s', self.ldap_session.result['message']"
+"logging.error('Could not modify object, the server reports insufficient rights: %s', self.ldap_session.result['message']"
+"logging.error('Error format retrieve, (e.g. {dnsHostName=temppc.contoso.local}"
+"logging.error('Principal: %s - %s' % (downLevelLogonName, str(e"
+"logging.error('Principal: %s - %s' % (username, str(e"
+"logging.error('Skipping item, cannot process due to error %s' % str(e"
+"logging.error('The server returned an error: %s', self.ldap_session.result['message']"
+"logging.error('Where argument format error. (e.g. ""samaccountname contains admin"""
+"logging.error(f""AuthError: {str(ldap_session.result['message']"
+"logging.error(f""Command parsing error: {str(e"
+"logging.error(f""Error caching results: {e}"""
+"logging.error(f""Error clearing cache: {e}"""
+"logging.error(f""Error executing command: {str(e"
+"logging.error(f""Error initializing storage: {e}"""
+"logging.error(f""Error reading history file {histfile}: {e}"""
+"logging.error(f""Error setting settings: {str(e"
+"logging.error(f""Error writing history file {histfile}: {e}"""
+"logging.error(f""History file not found: {histfile}"""
+"logging.error(f""LDAPInvalidDnError: {str(e"
+"logging.error(f""Parsing {'-Set' if args.set else '-Append'} value failed"""
+"logging.error(f""Powerview API Error: {full_method_name}: {str(e"
+"logging.error(f""Unexpected Error: {str(ldap_session.result['message']"
+"logging.error(f""Unknown error: {str(e"
+"logging.error(f""User {principalName} does not support AES encryption"""
+"logging.error(f""[Add-DomainCATemplateAcl] Failed to modify {name} template ACL"""
+"logging.error(f""[Add-DomainCATemplateAcl] {name} template not found in domain"""
+"logging.error(f""[Add-DomainCATemplate] Error adding new template OID ({self.ldap_session.result['description']}"
+"logging.error(f""[Add-DomainCATemplate] Failed to create certiciate template {name} ({self.ldap_session.result['description']}"
+"logging.error(f""[Add-DomainCATemplate] Template {name} already exists"""
+"logging.error(f""[Add-DomainComputer] {args.basedn} could not be found in the domain"""
+"logging.error(f""[Add-DomainGPO] DN {basedn} not found in domain"""
+"logging.error(f""[Add-DomainGPO] Failed to create {identity} GPO ({self.ldap_session.result['description']}"
+"logging.error(f""[Add-DomainGroupMember] {str(e"
+"logging.error(f""[Add-DomainGroup] Failed adding {groupname} to domain ({self.ldap_session.result['description']}"
+"logging.error(f""[Add-DomainGroup] {parent_dn_entries} could not be found in the domain"""
+"logging.error(f""[Add-DomainOU] DN {basedn} not found in domain"""
+"logging.error(f""[Add-DomainOU] Failed to create {identity} OU ({self.ldap_session.result['description']}"
+"logging.error(f""[Add-DomainUser] {parent_dn_entries} could not be found in the domain"""
+"logging.error(f""[Add-GPLink] Failed to add gPLink to {targetidentity_dn} OU"""
+"logging.error(f""[Get-DomainCATemplate] No certificate authority found"""
+"logging.error(f""[Get-DomainDNSRecord] Zone {zonename} not found"""
+"logging.error(f""[Get-DomainGroupMember] Failed to query for {member_dn}"""
+"logging.error(f""[Get-GPOSettings] Error processing GPO: {str(e"
+"logging.error(f""[Get-LocalUser] Invalid properties: {', '.join(invalid_properties"
+"logging.error(f""[Get-NetShare] Host not found"""
+"logging.error(f""[IndexError] No object found for {sid}"""
+"logging.error(f""[Remove-DomainCATemplate] Multiple certificates found with name {identity}"""
+"logging.error(f""[Remove-DomainCATemplate] Template {identity} not found in domain"""
+"logging.error(f""[Remove-DomainOU] Failed to delete OU ({self.ldap_session.result['message']}"
+"logging.error(f""[Remove-DomainOU] More than one object found"""
+"logging.error(f""[Remove-DomainOU] {identity} not found in domain"""
+"logging.error(f""[Remove-DomainObject] More than one object found"""
+"logging.error(f""[Remove-DomainObject] {identity} not found in domain"""
+"logging.error(f""[Remove-GPLink] Failed to modify gPLink on {targetidentity_dn} OU"""
+"logging.error(f""[Set-DomainCATemplate] Key {attrs['attribute']} not found in template attribute. Adding anyway..."""
+"logging.error(f""[Set-DomainCATemplate] Value {val} already set in the attribute ""+attrs['attribute']"
+"logging.error(f""[Set-DomainCATemplate] {str(e"
+"logging.error(f""[Set-DomainObjectDN] More than one {identity} object found in domain. Try using distinguishedName instead"""
+"logging.error(f""[Set-DomainObjectDN] Object {destination_dn} not found in domain"""
+"logging.error(f""[Set-DomainObjectDN] {identity} not found in domain"""
+"logging.error(f""[Set-DomainObjectOwner] Error modifying object owner ({self.ldap_session.result['description']}"
+"logging.error(f""[Set-DomainObjectOwner] {principalidentity} identity not found in domain"""
+"logging.error(f""[Set-DomainObjectOwner] {targetidentity} identity not found in domain"""
+"logging.error(f""[Set-DomainObject] Failed to modify attribute {attr_key} for {targetobject[0]['attributes']['distinguishedName']}"""
+"logging.error(f""[Set-DomainObject] Identity {identity} not found in domain"""
+"logging.error(f""[Set-DomainObject] Key {attrs['attribute']} not found in template attribute. Adding anyway..."""
+"logging.error(f""[Set-DomainObject] More than one identity found. Use distinguishedName instead"""
+"logging.error(f""[Set-DomainRBCD] {delegatefrom} identity not found in domain"""
+"logging.error(f""[Set-DomainRBCD] {identity} identity not found in domain"""
+"logging.error(f""[Storage] Error reading cache: {e}"""
+"logging.error(f""[Unlock-ADAccount] Identity {identity} not found in domain"""
+"logging.error(f""[Unlock-ADAccount] More then one identity found. Use distinguishedName instead."""
+"logging.error(f'[Remove-DomainGroupMember] User {members} not found in domain, Try to use DN'"
+"logging.error(f'[Set-DomainComputerPassword] Failed to change password for {"""".join(entries[0][""attributes""][""sAMAccountName""]"
+"logging.error(f'[Set-DomainComputerPassword] Failed to change password for {entries[0][""attributes""][""sAMAccountName""]}'"
+"logging.error(f'[Set-DomainUserPassword] Failed to change password for {"""".join(entries[0][""attributes""][""sAMAccountName""]"
+"logging.error(self.ldap_session.result if self.args.debug else ""[Set-DomainCATemplate] Failed to modify template"""
+"logging.error(self.ldap_session.result['message'] if self.args.debug else ""[Remove-DomainDNSRecord] Failed to delete record"""
+"logging.error(self.ldap_session.result['message'] if self.args.debug else f""[Add-DomainDNSRecord] Failed adding DNS record to domain ({self.ldap_session.result['description']}"
+"logging.error(self.ldap_session.result['message'] if self.args.debug else f""[Add-DomainUser] Failed adding {username} to domain ({self.ldap_session.result['description']}"
+"logging.error(self.ldap_session.result['message'] if self.args.debug else f""[Remove-DomainCATemplate] Failed to delete template {identity} from certificate store"""
+"logging.error(self.ldap_session.result['message'] if self.args.debug else f""[Remove-DomainObject] Failed to modify, view debug message with --debug"""
+"logging.error(self.ldap_session.result['message'] if self.args.debug else f""[Set-DomainObjectDN] Failed to modify, view debug message with --debug"""
+logging.error('-Computer or -ComputerName is required'
+logging.error('-ComputerName is required'
+logging.error('-Identity and -AccountPassword flags are required'
+logging.error('-Identity and -DelegateFrom flags are required'
+logging.error('-Identity and -DestinationDN flags required'
+logging.error('-Identity and -Members flags required'
+logging.error('-Identity and [-Clear][-Set][-Append] flags required'
+logging.error('-Identity and [-Clear][-Set|-Append] flags required'
+logging.error('-Identity flag is required'
+logging.error('-Name flag is required'
+logging.error('-TargetIdentity and -PrincipalIdentity flags are required'
+logging.error('Access denied - you must be admin to enumerate sessions this way'
+logging.error('Connection failed - skipping host!'
+logging.error('Error binding with SAMR'
+logging.error('HTTPD(%s
+logging.error('Principal not found in LDAP (%s
+logging.error('Server rejected authentication because LDAP signing is enabled. Try connecting with TLS enabled (specify target as ldaps://hostname 
+logging.error('Sign and seal not supported with LDAPS'
+logging.error('TLS channel binding not supported with LDAP'
+logging.error('User not found in LDAP: %s' % samname
+logging.error('[Add-DomainObjectACL] Principal Identity object not found in domain'
+logging.error('[Add-DomainObjectACL] Target Identity object not found in domain'
+logging.error('[Find-LocaAdminAccess] FQDN must be used for kerberos authentication'
+logging.error('[Get-NamedPipes] FQDN must be used for kerberos authentication'
+logging.error('[Get-NamedPipes] Host not found'
+logging.error('[Get-NetLoggedOn] Access denied - you must be admin to enumerate sessions this way'
+logging.error('[Get-NetLoggedOn] Connection failed - skipping host!'
+logging.error('[Get-NetShare] FQDN must be used for kerberos authentication'
+logging.error('[Remove-DomainObjectACL] Principal Identity object not found in domain'
+logging.error('[Remove-DomainObjectACL] Target Identity object not found in domain'
+logging.error('[Remove-DomainUser] Identity is required'
+logging.error('[Remove-DomainUser] Identity not found in domain'
+logging.error('[Set-DomainCATemplate] More than one template found'
+logging.error(f'-ComputerName and -ComputerPass are required'
+logging.error(f'Domain {pv_args.server} not found or probably not alive'
+logging.error(f'Failed password change attempt for {pv_args.identity}'
+logging.error(f'Invalid operator'
+logging.error(f'Key not available'
+logging.error(f'[Get-DomainObjectAcl] Identity not found in domain'
+logging.error(f'[Get-DomainObjectAcl] Identity {identity} not found. Try to use DN'
+logging.error(f'[Get-DomainObjectAcl] Multiple identities found. Use exact match'
+logging.error(f'[Get-DomainObjectAcl] Principal {security_identifier} not found. Try to use DN'
+logging.error(f'[Remove-DomainGroupmember] Group {identity} not found in domain'
+logging.error(f'[Set-DomainUserPassword] Multiple principal objects found in domain. Use specific identifier'
+logging.error(f'[Set-DomainUserPassword] No principal object found in domain'
+logging.error(self.ldap_session.result['message']
+logging.error(self.ldap_session.result['message'] 
+logging.error(str(e

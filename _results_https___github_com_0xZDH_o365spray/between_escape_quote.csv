@@ -1,0 +1,26 @@
+` or 
+` with 
+`--domain
+`--enum-module
+`--proxy-url
+`--spray-module
+`--useragents
+`-1
+`.
+`N
+`_
+``
+`black
+`enum_module
+`getuserrealm
+`https://<tenant>-my.sharepoint.com/
+`https://autodiscover-s.outlook.com/
+`https://autologon.microsoftazuread-sso.com/
+`https://login.microsoftonline.com/
+`https://outlook.office365.com/
+`https://reports.office365.com/
+`o365spray --enum -U usernames.txt --domain test.com
+`o365spray --spray -U usernames.txt -P passwords.txt --count 2 --lockout 5 --domain test.com
+`o365spray --validate --domain test.com
+`oauth2
+`rate

@@ -1,0 +1,66 @@
+                # bind to the inital object using the current credentials
+                # bind to the inital search object using alternate credentials
+                Write-Verbose '[Get-PrincipalContext] Using alternate credentials'
+            Write-Verbose '[Get-Domain] Using alternate credentials for Get-Domain'
+    # Starting to impersonate with given credentials
+    # Stop to impersonate with given credentials
+    <# +++++ Searching for Credentials in Group Policy Files +++++ #>
+    <# +++++ Starting adPEAS Credentials+++++ #>
+    http://ramblingcookiemonster.wordpress.com/2014/11/27/quick-hits-credentials-and-dynamic-parameters/
+"                        Invoke-Logger -Class Finding -Value ""Credentials: Password '$($Object_NetLogonFile.Password)' for user '$($Object_NetLogonFile.Username)' has been f"
+"                        Invoke-Logger -Class Finding -Value ""Found credentials in NETLOGON file '$($Object_NetLogonFile.FilePath)':"""
+"                $Value = ""LAPSCredentials:`t`t`tAccessible but encrypted"""
+"                Invoke-Logger -Class Hint -Value ""Found credentials in SYSVOL group policy file '$($Object_GPP.File)':"""
+"                Write-Verbose ""[Get-DomainSearcher] Using alternate credentials for LDAP connection"""
+"                Write-Verbose ""[Get-Domain] Extracted domain '$TargetDomain' from PSCredentials"""
+"               throw ""[Invoke-adPEAS] Could not connect to domain '$TargetDomain' with the provided credentials. Please check your credentials or consider to start 'Invoke-adPEAS' with -Domain"""
+"            # If no domain is supplied, extract the logon domain from the PSCredentials/Credentials passed"
+"            Write-Verbose ""[Get-Forest] Using alternate credentials for Get-Forest"""
+"            Write-Verbose ""[Invoke-adPEAS] Using alternative credentials '$($Credential.UserName)' to get domain name"""
+"            Write-Verbose ""[Invoke-adPEAS] Using domain '$TargetDomain' from provided alternative credentials for further enumeration"""
+"            write-verbose write-verbose ""[Get-GPPPassword] Using provided credentials $($Credential.username) to search for encrypted passwords"""
+"            write-verbose write-verbose ""[Get-NetlogonFile] Using provided credentials '$Credential.username' to search for sensitive information"""
+"        # LOGON32_LOGON_NEW_CREDENTIALS = 9, LOGON32_PROVIDER_WINNT50 = 3"
+"        Write-Warning ""[Invoke-adPEAS] Using supplied PSCredentials '$($Credential.Username)' for authentication"""
+"        Write-Warning ""[Invoke-adPEAS] Using supplied credentials '$($Credential.Username)' for authentication"""
+"     Write-Verbose ""[Convert-ADName] Error initializing translation for '$Identity' using alternate credentials : $_"""
+"    Invoke-Logger -Class Info -Value ""Searching for Credentials Exposure"""
+"    Invoke-Logger -Class Info -Value ""Searching for Credentials in Group Policy Files"""
+"    Write-Verbose ""[Invoke-UserImpersonation] Alternate credentials successfully impersonated"""
+" you want to enumerate another domain, use a certain domain controller to connect to, use different credentials or just to enumerate for credential exposure only, you can do it by using defined parameters."
+"alternate credentials, and adds the user to 'domain admins' using Add-DomainGroupMember"
+"credentials are supplied, then Get-ADObject is used to try to map the name"
+"dPEAS] The specified domain '$TargetDomain' does not exist, could not be contacted or the specified credentials are invalid: $_"""
+"omain] The specified domain '$TargetDomain' does not exist, could not be contacted or the specified credentials are invalid: $_"""
+"queries, and using the specified alternate credentials."
+"rgetForest' does not exist, could not be contacted, there isn't an existing trust, or the specified credentials are invalid: $_"""
+"the 'computer1' computer with the specified description and password, using the specified alternate credentials."
+"using the specified alternate credentials, and output everything to a .csv file."
+A [Management.Automation.PSCredential] object of alternate credentials
+A [Management.Automation.PSCredential] object of alternate credentials for authentication to the target domain.
+A [Management.Automation.PSCredential] object of alternate credentials for connection to the target domain.
+A [Management.Automation.PSCredential] object of alternate credentials for connection to the target path.
+A [Management.Automation.PSCredential] object with alternate credentials
+Adds harmj0y to 'Domain Admins' in the current domain using the alternate credentials.
+Creates the 'TestGroup' group with the specified description using the specified alternate credentials.
+Credentials being used.
+Kerberoasts all found SPNs for the testlab.local domain using alternate credentials.
+Parse the default domain policy .inf for dev.testlab.local using alternate credentials.
+Removes harmj0y from 'Domain Admins' in the current domain using the alternate credentials.
+Resets the password for 'andy' usering the alternate credentials specified.
+Resets the password for 'computer1' usering the alternate credentials specified.
+Return a max of 1000 logon events from the specified machine using the specified alternate credentials.
+Searches for domain admin locations in the testlab.local using the specified alternate credentials.
+Searches for domain shares in the testlab.local domain using the specified alternate credentials.
+Searches interesting files in the testlab.local domain using the specified alternate credentials.
+Searches processes being run by 'domain admins' in the testlab.local using the specified alternate credentials.
+Set the owner of 'dfm' in the current domain to 'harmj0y' using the alternate credentials.
+This function uses LogonUser() with the LOGON32_LOGON_NEW_CREDENTIALS LogonType
+VERBOSE: [Get-DomainSearcher] Using alternate credentials for LDAP connection
+VERBOSE: [Get-Domain] Using alternate credentials for Get-Domain
+alternate credentials.
+and the alternate credentials.
+domain using the alternate credentials.
+the specified alternate credentials.
+to the specified remote -Path (\\UNC\share) with the alternate credentials specified in the
+using the specified alternate credentials.

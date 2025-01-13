@@ -1,0 +1,30 @@
+"(""Desktop"""
+"($Type -eq ""VERBOSE"" -and -not $script:VerboseOutput"
+($Process.ProcessName
+($_
+($_.Exception.Message
+($exportChoice -eq 'y'
+($module in $modules
+($module.ModuleName
+($path in $script:CustomSearchPaths
+($path in $searchPaths
+($process in $processes
+($processDir
+($processResults
+($results.Count
+($results.Count -gt 0
+($script:StandardWindowsProcesses -notcontains $_.ProcessName
+($script:VerboseOutput
+($true
+(-not $found
+(Get-Location
+(PID: $($Process.Id
+(Process: $($Process.ProcessName
+(Test-Path $Path
+(Test-Path $path -ErrorAction SilentlyContinue
+([System.Diagnostics.Process]$Process
+([string]$Path
+([string]::IsNullOrWhiteSpace($path
+(_
+(press Enter without input to continue
+(y/n

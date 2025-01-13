@@ -1,0 +1,2 @@
+{ $_.ModuleName -match '\.dll$' 
+{ break 

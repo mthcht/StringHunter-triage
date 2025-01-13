@@ -1,0 +1,7 @@
+"logging.critical(""Available domain(s"
+"logging.critical(""Consider using -domain-netbios argument to specify which one you meant."""
+"logging.critical(""This server provides multiple domains and '%s' isn't one of them."", self.__domainNetbios"
+logging.critical('Delete computer {} Failed! Maybe the current user does not have permission.'.format(domainComputer
+logging.critical('Error when creating RPC connection'
+logging.critical(e
+logging.critical(str(e

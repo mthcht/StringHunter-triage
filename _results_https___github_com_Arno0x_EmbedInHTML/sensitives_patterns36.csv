@@ -1,0 +1,6 @@
+			j = (j + S[i] + ord(self.key[i % len(self.key)])) % 256
+			self.key = key
+		rc4Encryptor = RC4(args.key)
+	if args.key and args.fileName and args.outFileName:
+"		print color(""[+] Encrypted input file with key [{}]"".format(args.key))"
+"tion"": rc4Function, ""b64AndRC4Function"": b64AndRC4Function , ""keyFunction"": keyFunction, ""key"": args.key, \"

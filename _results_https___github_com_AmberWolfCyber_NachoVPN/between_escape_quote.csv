@@ -1,0 +1,122 @@
+"` before triggering the exploit. For production use-cases, you will need to obtain a valid codesigning certificate from a public CA, sign your "
+"` directory. Either add these manually, or run the "
+"` payload is generated for the SonicWall plugin, and written to the "
+"` payload with a self-signed certificate. For testing purposes, you can download and install this CA certificate from "
+"` payload, and place it in the "
+"` process on the current user's desktop, running as "
+"` using certbot, and save it to the "
+"` | The name of the VPN profile, which is presented to the client for Cisco AnyConnect. | "
+"`"" + sequence + """
+"`, "
+"`, the user will not be prompted for a username or password. | "
+` (
+` = ? WHERE 
+` FROM 
+` SET 
+` WHERE 
+` and 
+` directory (or volume mount it into 
+` directory. This simply spawns a new 
+` file are present in the 
+` or 
+` via pip. You can then run the 
+` with the 
+` | The DNS suffix to be used for Pulse Secure connections. | 
+` | The command to be executed by the Cisco AnyConnect OnConnect.sh script on macOS. | 
+` | The command to be executed by the Cisco AnyConnect OnConnect.vbs script on Windows. | 
+` | The command to be executed by the Palo Alto installer MSI. | 
+` | The command to be executed by the Palo Alto installer PKG on macOS. | 
+` | The external IP address of the server. | 
+` | The fully qualified domain name of the server. | 
+` | The path to the Pulse Secure logon script. | 
+` | Whether to calculate the server certificate thumbprint dynamically from the server (useful if behind a proxy). | 
+` | Whether to force the patching of the MSI installer if it already exists in the payloads directory. | 
+` | Whether to save the Pulse Secure connection in the user's client. | 
+` | Whether to use anonymous authentication for Pulse Secure connections. If set to 
+` | Whether to write captured PCAP files to disk. | 
+`--debug
+`--quiet
+`-d
+`/app/payloads
+`/pulse
+`/sonicwall
+`/sonicwall/ca.crt
+`127.0.0.1
+`Action
+`Attributes
+`C:\Windows\System32\calc.exe
+`CISCO_COMMAND_MACOS
+`CISCO_COMMAND_WIN
+`Cabinet
+`Component
+`ComponentId
+`Component_
+`Condition
+`CustomAction
+`DISABLED_PLUGINS
+`Description
+`Directory_
+`DiskId
+`DiskPrompt
+`Display
+`EXTERNAL_IP
+`Feature
+`FeatureComponents
+`Feature_
+`Feature_Parent
+`File
+`FileName
+`FileSize
+`KeyPath
+`Language
+`LastSequence
+`Level
+`Media
+`NACAgent.exe
+`NachoVPN
+`PALO_ALTO_FORCE_PATCH
+`PALO_ALTO_MSI_ADD_FILE
+`PALO_ALTO_MSI_COMMAND
+`PALO_ALTO_PKG_COMMAND
+`PULSE_ANONYMOUS_AUTH
+`PULSE_DNS_SUFFIX
+`PULSE_LOGON_SCRIPT
+`PULSE_LOGON_SCRIPT_MACOS
+`PULSE_SAVE_CONNECTION
+`PULSE_USERNAME
+`Property
+`SERVER_FQDN
+`SERVER_MD5_THUMBPRINT
+`SERVER_SHA1_THUMBPRINT
+`SKIP_CERTBOT
+`SYSTEM
+`Sequence
+`Source
+`Target
+`Title
+`Type
+`USE_DYNAMIC_SERVER_THUMBPRINT
+`VPN_NAME
+`Value
+`Version
+`WRITE_PCAP
+``
+`calc.exe
+`certs
+`cmd.exe
+`connect.nachovpn.local
+`dist
+`downloads
+`false
+`msi_downloader.py
+`msi_version.txt
+`nachovpn
+`nachovpn.local
+`net user pwnd Passw0rd123! /add && net localgroup administrators pwnd /add
+`payloads
+`q
+`setup.py
+`setuptools
+`touch /tmp/pwnd
+`true
+`wheel

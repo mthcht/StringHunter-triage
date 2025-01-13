@@ -1,0 +1,10 @@
+"Invoke-AnyDeskInstall -InstallPath ""C:\Users\Alex\AppData\Local\AnyDesk"" -Password ""Unattended123!"" "
+"Invoke-FodHelperBypass -program ""calc.exe"""
+"Invoke-Screenshot -Path ""C:\Windows\Tasks\"""
+Invoke-AnyDeskInstall {
+Invoke-Clipboard
+Invoke-Clipboard {
+Invoke-FodHelperBypass {
+Invoke-KeyStrokeCapture -DurationInSeconds 30 -OutputPath C:\Users\Vlex\Desktop\keystrokes.txt
+Invoke-KeyStrokeCapture {
+Invoke-Screenshot {

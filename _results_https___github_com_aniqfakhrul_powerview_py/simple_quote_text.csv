@@ -1,0 +1,6753 @@
+"' % (computerHostname, parent)).encode("
+"' % (domainsid, gid), attributes=["
+"' % (self.target.scheme, self.authUser.replace(""/"", "
+"' % _lookedup_principal, attributes=["
+"' % escape_filter_chars(_lookedup_principal), attributes=["
+"' % escape_filter_chars(domainComputer), attributes=["
+"' % escape_filter_chars(samname), attributes=["
+"' % escape_filter_chars(uname), attributes=["
+"' % escape_filter_chars(user.entry_dn), attributes=["
+"' % group, attributes=["
+"' % sid, attributes=["
+"' * random.randint(2, MAX_RAND) + "
+"' , dest="
+"'"""
+"'""%s"""
+"'"").strip("
+"'"","""").replace("
+"'""{}"""
+"'#gpo-content [role=""tabpanel""]"
+"'#gpo-tabs [role=""tab""]"
+"'#ldap-attributes-modal [role=""tab""]"
+"'#ldap-attributes-modal [role=""tabpanel""]"
+"'#ldap-attributes-modal [role=""tabpanel""]:not([style*=""display: none""])"
+"'#ou-content [role=""tabpanel""]"
+"'#ou-tabs [role=""tab""]"
+"'' and (isinstance(nthash, bytes) and nthash != b"
+"'', "
+"'', TGT = None, TGS = None, targetName="
+"'', aesKey="
+"'', dest="
+"'', errorSid: "
+"'', errorUac: "
+"'', lmhash="
+"'', nthash="
+"'', resultSid: "
+"'', resultUac: "
+"'', search_filter="
+"''}"">${domain["
+"''}, {diff.days} day{"
+"''}, {diff.months} month{"
+"'()*+,.\/:;<=>?@[\\\]^`{|}~])/g, "
+"'(?i)(^(\s*[A-Za-z]+=[^,]+)(\s*,\s*[A-Za-z]+=[^,]+)*\s*$)"
+"'([A-Za-z]+)=([^,]+)"
+"')"">${v}</a>`).join("
+"')""]"
+"'), "
+"'), ["
+"'), folder_name, "
+"')[1], properties=["
+"',  dest="
+"', "
+"', () => closeModal("
+"', 1)) > 1 else "
+"', 1)[1].strip() if len(parts[3].split("
+"', ASN1_AID) + asn1encode( struct.pack("
+"', ["
+"', action="
+"', action=""store"", metavar = ""LMHASH:NTHASH"", help="
+"', action=""store_true"", help=""don"
+"', aliases=["
+"', and "
+"', attributes=["
+"', choices=["
+"', const="
+"', const=None, dest="
+"', default="
+"', default=""0.0.0.0"", help="
+"', default=False, dest="
+"', default=False, help="
+"', default=None, const=None, dest="
+"', dest="
+"', dest=""auth_aes_key"", action=""store"", metavar = ""hex key"", help="
+"', domaindn[domaindn.find("
+"', eData["
+"', errors="
+"', filename="
+"', help="
+"', isSelected ? "
+"', label: "
+"', logsData.error || "
+"', metavar="
+"', nargs="
+"', properties = ["
+"', properties=["
+"', required=True, const=None, dest="
+"', search_scope="
+"', search_scope=ldap3.BASE, attributes=["
+"', search_scope=ldap3.SUBTREE, attributes=["
+"', self.client.result["
+"', self.execute_command, methods=["
+"', self.generate_log_stream, methods=["
+"', self.handle_add_operation, methods=["
+"', self.handle_clear_cache, methods=["
+"', self.handle_connection_info, methods=["
+"', self.handle_constants, methods=["
+"', self.handle_convert_from_operation, methods=["
+"', self.handle_convert_to_operation, methods=["
+"', self.handle_domaininfo, methods=["
+"', self.handle_get_operation, methods=["
+"', self.handle_health, methods=["
+"', self.handle_invoke_operation, methods=["
+"', self.handle_ldap_close, methods=["
+"', self.handle_ldap_rebind, methods=["
+"', self.handle_remove_operation, methods=["
+"', self.handle_set_operation, methods=["
+"', self.handle_set_settings, methods=["
+"', self.handle_settings, methods=["
+"', self.ldap_session.result["
+"', self.principalidentity_dn, target_entries[0]["
+"', self.render_ca, methods=["
+"', self.render_computers, methods=["
+"', self.render_dashboard, methods=["
+"', self.render_dns, methods=["
+"', self.render_gpo, methods=["
+"', self.render_groups, methods=["
+"', self.render_history, methods=["
+"', self.render_index, methods=["
+"', self.render_ou, methods=["
+"', self.render_users, methods=["
+"', self.render_utils, methods=["
+"', self["
+"', str(attrs["
+"', t.get("
+"', tab === clickedTab ? "
+"', template_folder="
+"', type=int, default=5000, help="
+"', type=int, default=80, help="
+"', {}).get("
+"',"
+"',DC="
+"',action="
+"',aliases=["
+"',default="
+"',default=False, dest="
+"',help=""Format the output as a table. Options: "
+"',searchbase=f""CN=OID,CN=Public Key Services,CN=Services,CN=Configuration,{self.root_dn}"", properties=["
+"'-TargetIdentity , -PrincipalIdentity and -Rights flags are required"
+"'-TargetIdentity , -PrincipalIdentity flags are required"
+"'.,;:!$-_+/*(){}#@<>^"
+"'.join([f""{item["
+"'.record-name-section tr.bg-neutral-200, .record-name-section tr.dark\\:bg-neutral-800"
+"'.zone-item.bg-neutral-200, .zone-item.dark\\:bg-neutral-800"
+"': "", "".join(_ace_flags) or ""None"", "
+"': [(ldap3.MODIFY_REPLACE, ["
+"': attribute, "
+"': f""{infobject[0]["
+"': f""{infobject[1]["
+"': f""{infobject[i+1]["
+"': f""{infobject[i]["
+"': formatted_logs, "
+"': lambda x: [int(i) if i.isnumeric() else i.strip() for i in x.replace(""|"","","").split("
+"': number, "
+"': page, "
+"': self.host, "
+"': self.port, "
+"': serializable_result, "
+"': total_logs, "
+"':left.replace(""*"","""").replace(""__memberof"",""""), "
+"'<i class=""fa-solid fa-pen-to-square""></i>"
+"'<i class=""fa-solid fa-trash-can""></i>"
+"'<i class=""fa-solid fa-user-plus""></i>"
+"'<i class=""fas fa-check fa-xs""></i>"
+"'<i class=""fas fa-copy fa-xs""></i>"
+"'<i class=""fas fa-edit fa-xs""></i>"
+"'<i class=""fas fa-plus fa-xs""></i>"
+"'<i class=""fas fa-save fa-xs""></i>"
+"'<i class=""fas fa-times fa-xs""></i>"
+"'<i class=""fas fa-trash-alt""></i>"
+"'<i class=""fas fa-user-minus""></i>"
+"'<li class=""text-sm text-neutral-500 dark:text-neutral-400"">None specified</li>"
+"'<p class=""text-neutral-500 dark:text-neutral-400"">No CA servers found</p>"
+"'<p class=""text-neutral-500 dark:text-neutral-400"">No DNS zones found</p>"
+"'<p class=""text-neutral-500 dark:text-neutral-400"">No domain admins found</p>"
+"'<p class=""text-neutral-500 dark:text-neutral-400"">No domain controllers found</p>"
+"'<p class=""text-neutral-500 dark:text-neutral-400"">No domain trusts found.</p>"
+"'<p class=""text-neutral-500 dark:text-neutral-400"">No domain trusts found</p>"
+"'<p class=""text-neutral-600 dark:text-neutral-400"">No members found</p>"
+"'<path d=""M12 8v4l3 3""></path><circle cx=""12"" cy=""12"" r=""10""></circle>"
+"'<path stroke-linecap=""round"" stroke-linejoin=""round"" stroke-width=""2"" d=""M9 5l7 7-7 7""></path>"
+"'<span class=""text-xs bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 px-2 py-0.5 rounded"">Enforced</span>"
+"'<svg class=""w-4 h-4"" fill=""none"" stroke=""currentColor"" viewBox=""0 0 24 24"" xmlns=""http://www.w3.org/2000/svg""><path stroke-linecap=""round"" stroke-linejoin=""round"" stroke-width=""2"" d=""M6 18L18 6M6 6l12 12""></path></svg>"
+"'ACE does not apply, only to %s"
+"'AcceptSecurityContext error, data 80090346"
+"'CN=%s,%s"
+"'CN=Dns-Node,CN=Schema,CN=Configuration,%s"
+"'CN=Group,CN=Schema,CN=Configuration,%s"
+"'CN=Organizational-Unit,CN=Schema,CN=Configuration,%s"
+"'CN=Person,CN=Schema,CN=Configuration,%s"
+"'CN=Users,%s"
+"'Could not modify object, the server reports a constrained violation: %s"
+"'Could not modify object, the server reports insufficient rights: %s"
+"'DC=%s,%s"
+"'Error bind to GS ssl, trying GC"
+"'Error bind to LDAPS, trying LDAP"
+"'Error format retrieve, (e.g. {dnsHostName=temppc.contoso.local})"
+"'Fallback: Oops, unable to copy"
+"'Got KDC_ERR_ETYPE_NOSUPP, fallback to RC4"
+"'Inheritance is set. Adding CONTAINER_INHERIT_ACE, OBJECT_INFERIT_ACE"
+"'LDAP sign and seal are not supported. Install with ""pip install ldap3-bleeding-edge"""
+"'NTLM hashes, format is LMHASH:NTHASH"
+"'No nameserver provided, using system\"
+"'Privilege escalation succesful, shutting down..."
+"'Skipping item, cannot process due to error %s"
+"'Specify custom nameserver. If not specified, domain controller will be used instead"
+"'Success! User %s now has ""Add/Remove Self as Member"" privileges on %s"
+"'TLS channel binding is not supported Install with ""pip install ldap3-bleeding-edge"""
+"'Unable to escalate without a valid user, aborting."
+"'Use Kerberos authentication. Grabs credentials from .ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+"'Where argument format error. (e.g. ""samaccountname contains admin"")"
+"'[<>:""/\\|?*]"
+"'[ACLEnum] Error parsing security descriptor for {entry.get(""dn"")}: {str(e)}"
+"'[ACLEnum] ntSecurityDescriptor attribute not found for {entry.get(""dn"")}"
+"'[Get-DomainObjectAcl] Target identity found in domain {"""".join(identity_entries[0][""attributes""][""distinguishedName""])}"
+"'[Remove-DomainGroupMember] User {members} not found in domain, Try to use DN"
+"'[Set-DomainComputerPassword] Failed to change password for {"""".join(entries[0][""attributes""][""sAMAccountName""])}"
+"'[Set-DomainComputerPassword] Failed to change password for {entries[0][""attributes""][""sAMAccountName""]}"
+"'[Set-DomainComputerPassword] Password has been successfully changed for user {"""".join(entries[0][""attributes""][""sAMAccountName""])}"
+"'[Set-DomainComputerPassword] Password has been successfully changed for user {entries[0][""attributes""][""sAMAccountName""]}"
+"'[Set-DomainObjectOwner] Success! modified owner for {target_identity[0][""attributes""][""distinguishedName""]}"
+"'[Set-DomainObject] Success! modified attribute {attr_key} for {targetobject[0][""attributes""][""distinguishedName""]}"
+"'[Set-DomainUserPassword] Failed to change password for {"""".join(entries[0][""attributes""][""sAMAccountName""])}"
+"'[Set-DomainUserPassword] Password has been successfully changed for user {"""".join(entries[0][""attributes""][""sAMAccountName""])}"
+"'[Set-DomainUserPassword] Principal {"""".join(entries[0][""attributes""][""distinguishedName""])} found in domain"
+"'[aria-controls=""tabpanelDescendants""]"
+"'[aria-controls=""tabpanelLinkedGpo""]"
+"'[aria-controls=""tabpanelLoggedon""]"
+"'[aria-controls=""tabpanelMemberof""]"
+"'[aria-controls=""tabpanelMembers""]"
+"'[aria-controls=""tabpanelSessions""]"
+"'[aria-controls=""tabpanelTrusts""]"
+"'[data-modal-hide=""add-object-acl-modal""]"
+"'[data-modal-hide=""ldap-attributes-modal""]"
+"'[data-modal-hide=""remove-group-member-modal""]"
+"'[data-modal-target=""delete-record-modal""]"
+"'[data-modal-toggle=""add-computer-modal""]"
+"'[data-modal-toggle=""add-dns-record-modal""]"
+"'[data-modal-toggle=""add-user-modal""]"
+"'[onclick=""document.getElementById(\"
+"'[role=""tab""]"
+"'[role=""tab""][aria-selected=""true""]"
+"'[role=""tablist""]"
+"'[role=""tabpanel""]"
+"'] = ""%s (%s)"" % (self.resolveSID(ace["
+"'] = ""%s (0x%x)"" % ("", "".join(self.parsePerms(ace["
+"'] = "","".join(self.parsePerms(ace["
+"'] = ""All"" if not user_info["
+"'] else ""{}"", "
+"'] if self.args.debug else f""[Add-DomainDNSRecord] Failed adding DNS record to domain ({self.ldap_session.result["
+"'] if self.args.debug else f""[Add-DomainUser] Failed adding {username} to domain ({self.ldap_session.result["
+"']) ,"
+"']) for _ in range(random.randint(1, MAX_RAND))) + "
+"'])), ace["
+"']),"
+"'], "
+"'], EXTENDED_RIGHTS_NAME_MAP["
+"'], TGT["
+"'], alias_membership["
+"'], binding_params[pipe]["
+"'], dict) or isinstance(entry["
+"'], encTGSRepPart["
+"'], f"
+"'], global_lookup_ids["
+"'], local_lookup_ids["
+"'], nargs="
+"'], spn.replace("
+"'], {"
+"'],"
+"'],))["
+"'],EXTENDED_RIGHTS_NAME_MAP["
+"'],clientName, domain, hexlify(asRep["
+"'].append(self.create_object_ace(guid, sid, mask=permissions.get(right_opt).get("
+"'].formatCanonical()) or ""UNKNOWN"", ace["
+"'][0], bytes) and attrs["
+"'][0], decodedTGS["
+"'][0], str) and not isinstance(attrs["
+"'][:-1], i["
+"']}"" if infobject[0]["
+"']}"" if infobject[1]["
+"']}"" if infobject[i+1]["
+"']}"" if infobject[i]["
+"'^((CN=([^,]*)),)?((((?:CN|OU)=[^,]+,?)+),)?((DC=[^,]+,?)+)$"
+"'dc=%s,"
+"'dc=vulnerable,dc=contoso,dc=com"
+"'div[role=""alert-error""]"
+"'div[role=""alert-success""]"
+"'input[name=""object-search""]"
+"'t support CB. Install with ""pip install \""git+https://github.com/H0j3n/ldap3.git@powerview.py_match-requirements\"""""
+' 
+'  
+'    %s
+' % (asRep[
+' % (authenticateMessage[
+' % (self.__user + 
+' % ace[
+' % domainDumper.root and b
+' % entry[0][
+' % os.getenv(
+' % self.__computerPassword).encode(
+' % self.client.result[
+' % str(self.__client.result[
+' && value.includes(
+' + 
+' + (
+' - 
+' : 
+' : int(entries[0][
+' \t\n;
+' and not 
+' con | cont | conta | contai | contain | contains | eq | equ | equa | equal | match | mat | matc | not | != |!=| = |=C|=D
+' doesn\
+' if args.set else 
+' if diff.days > 1 else 
+' if diff.months > 1 else 
+' if diff.years > 1 else 
+' if self.powerview.is_connection_alive() else 
+' if success else 
+' in ace[
+' in compare_ace[
+' in entry[
+' isn
+' not in obj and 
+' or pv_args.module.casefold() == 
+' to 
+' to the properties as it
+' || content.style.display === 
+' || statuses[i] === 
+' || subsection === 
+'!
+'!i
+'#
+'#box-overlay-spinner
+'#computer-properties span
+'#computers-result-table tbody
+'#connection-address-display
+'#connection-domain-display
+'#connection-status-display
+'#dNSHostName-wrapper input
+'#descendants-rows tr
+'#existing-attributes > div
+'#footer-year
+'#gpo-content > .flex.items-center.justify-center
+'#gpo-tree-view > div
+'#ldap-attributes-modal h3
+'#logonusers-rows tr
+'#modal-dacl-rows tr
+'#modal-members-content tr
+'#nameserver-address-display
+'#sessions-rows tr
+'#tree-view > div
+'#username-display
+'#users-result-table tbody
+'$
+'$krb5asrep$%d$%s@%s:%s$%s
+'$krb5tgs$%d$%s$%s$*%s*$%s$%s
+'$krb5tgs$%d$*%s$%s$%s*$%s$%s
+'${Array.isArray(value) ? value.join(
+'${admin.attributes.MemberDistinguishedName}
+'${computer.dn}
+'${filter}
+'${gpo.dn}
+'${member.attributes.MemberDistinguishedName}
+'${ou.dn}
+'${prop}
+'${right}
+'${template.attributes.Enabled ? 
+'${template.attributes[
+'${user.dn}
+'${value}
+'${v}
+'%d/%m/%Y %H:%M:%S
+'%m/%d/%Y
+'%s
+'%s can now impersonate users on %s via S4U2Proxy
+'%s-%d
+'%s.%s
+'%s/%s
+'%s://%s@%s
+'%s\
+'%s\\%s
+'&
+''
+'' : 
+'' ? 
+'' and (aesKey == b
+'' and (self.__lmhash == 
+'' and nthash == b
+'' and secDesc[
+'' and self.__nthash == 
+'' and username != 
+'' or nthash != 
+'') : 
+''.join(c if c == 
+''.join(random.choice([
+''.join(random.choice(string.ascii_letters + string.digits + 
+''.join(random.choice(string.ascii_letters) for _ in range(8)) + 
+''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(8)) + 
+''.join(temp_entry[
+'':  # and authenticateMessage[
+''; }).catch(err => { errorUac = 
+''}({self.convert_to_ldap(token)}){LdapObfuscate.random_spaces() if not skip_random_spacing and self.enable_spacing else 
+''}{token[
+'(!(userAccountControl:1.2.840.113556.1.4.803:=1048574))
+'(!(userAccountControl:1.2.840.113556.1.4.803:=2))
+'(!(userAccountControl:1.2.840.113556.1.4.803:=8192))
+'(&(ObjectClass=msDS-GroupManagedServiceAccount))
+'(&(cn=Users)(objectClass=container))
+'(&(objectCategory=Computer)(userAccountControl:1.2.840.113556.1.4.803:=8192))
+'(&(objectCategory=computer))
+'(&(objectCategory=domain))
+'(&(objectCategory=group){identity_filter}{ldap_filter})
+'(&(objectCategory=groupPolicyContainer){identity_filter}{ldap_filter})
+'(&(objectCategory=organizationalUnit){identity_filter}{ldap_filter})
+'(&(objectCategory=person)(objectClass=user){identity_filter}{ldap_filter})
+'(&(objectClass=*){identity_filter}{ldap_filter})
+'(&(objectClass=computer){identity_filter}{ldap_filter})
+'(&(objectClass=dnsNode){identity_filter})
+'(&(objectClass=domain){identity_filter}{ldap_filter})
+'(&(objectClass=mSSMSManagementPoint){identity_filter}{ldap_filter})
+'(&(objectClass=trustedDomain){identity_filter})
+'(&(samAccountType=805306368){identity_filter}{ldap_filter})
+'(128 or 256 bits)\
+'([<>]?=|:=)
+'([^\)]*)
+'([a-zA-Z0-9-]+)
+'(admincount=1)
+'(distinguishedName=%s)
+'(distinguishedName={identity})
+'(distinguishedName={self.targetidentity_dn})
+'(lastLogonTimestamp=-1)
+'(member:1.2.840.113556.1.4.1941:=%s)
+'(ms-Mcs-AdmPwd=*)
+'(msDS-KeyCredentialLink=*)
+'(msds-allowedtoactonbehalfofotheridentity=*)
+'(msds-allowedtodelegateto=*)
+'(objectCategory=printQueue)
+'(objectClass=*)
+'(objectClass=domain)
+'(objectClass=msDS-GroupManagedServiceAccount)
+'(objectClass=msFVE-RecoveryInformation)
+'(objectClass=user)
+'(objectSid=%s)
+'(objectSid=%s-%d)
+'(objectclass=*)
+'(objectclass=person)
+'(sAMAccountName=%s)
+'(servicePrincipalName=*)
+'(userAccountControl:1.2.840.113556.1.4.803:=1048576)
+'(userAccountControl:1.2.840.113556.1.4.803:=16)
+'(userAccountControl:1.2.840.113556.1.4.803:=16777216)
+'(userAccountControl:1.2.840.113556.1.4.803:=2)
+'(userAccountControl:1.2.840.113556.1.4.803:=32)
+'(userAccountControl:1.2.840.113556.1.4.803:=4194304)
+'(userAccountControl:1.2.840.113556.1.4.803:=524288)
+'(userAccountControl:1.2.840.113556.1.4.803:=8388608)
+'(userAccountControl=4128)(logonCount=0)
+'(|(msPKI-Cert-Template-OID={oid}))
+'(|(objectClass=domain)(objectClass=organizationalUnit))
+'(|(sAMAccountName={computerName})(distinguishedName={computerName}))
+') : 
+') : (value || 
+') : value}
+') === 
+') ? 
+') and line.endswith(
+') else computerName + 
+') return 
+') || attributes.objectClass.includes(
+')).decode(
+').addEventListener(
+').classList.add(
+').classList.remove(\
+').find(part => part.startsWith(
+').forEach(el => el.classList.remove(
+').get(
+').querySelector(
+').style.display = 
+'); // Assuming 
+'); errorUac = 
+')?.addEventListener(
+')?.classList.add(
+')?.textContent.toLowerCase() || 
+')?.value.toLowerCase() || 
+')?.value.trim() || 
+')[
+')[0] if 
+')[0].decode(
+')[0].replace(
+'*
+'-
+'--aes-key
+'--debug
+'--hashes
+'--nameserver
+'--no-admin-check
+'--no-cache
+'--no-pass
+'--obfuscate
+'--port
+'--query
+'--relay
+'--relay-host
+'--relay-port
+'--stack-trace
+'--use-gc
+'--use-gc-ldaps
+'--use-ldap
+'--use-ldaps
+'--use-system-nameserver
+'--version
+'--web
+'--web-host
+'--web-port
+'-1
+'-999999px
+'-ACEType
+'-AccountPassword
+'-AdminCount
+'-AllowDelegation
+'-Append
+'-BaseDN
+'-BitLocker
+'-CheckDatalib
+'-CheckWebEnrollment
+'-Clear
+'-Computer
+'-Computer or -ComputerName is required
+'-ComputerName
+'-ComputerName and -ComputerPass are required
+'-ComputerName is required
+'-ComputerPass
+'-Count
+'-DelegateFrom
+'-Description
+'-DestinationDN
+'-Disabled
+'-DisallowDelegation
+'-DisplayName
+'-DistinguishedName
+'-Duplicate
+'-Enabled
+'-Enforced
+'-ExcludeDCs
+'-GMSAPassword
+'-GPLink
+'-GUID
+'-H
+'-Identity
+'-Identity and -AccountPassword flags are required
+'-Identity and -DelegateFrom flags are required
+'-Identity and -DestinationDN flags required
+'-Identity and -Members flags required
+'-Identity and [-Clear][-Set][-Append] flags required
+'-Identity and [-Clear][-Set|-Append] flags required
+'-Identity flag is required
+'-Inheritance
+'-IsRunning
+'-IsStopped
+'-LAPS
+'-LDAPFilter
+'-LinkEnabled
+'-LinkTo
+'-Lockout
+'-MemberIdentity
+'-Members
+'-Name
+'-Name flag is required
+'-NoCache
+'-NoWrap
+'-ObjectSID
+'-OldPassword
+'-Opsec
+'-OutFile
+'-Outfile
+'-PassExpired
+'-PassNotRequired
+'-Pre2K
+'-PreAuthNotRequired
+'-PrincipalIdentity
+'-Printers
+'-Properties
+'-ProtectedFromAccidentalDeletion
+'-RBCD
+'-RecordAddress
+'-RecordName
+'-ResolveGPLink
+'-ResolveGUIDs
+'-ResolveIP
+'-ResolveSID
+'-ResolveSIDs
+'-RightGUID
+'-Rights
+'-RightsGUID
+'-SPN
+'-SearchBase
+'-SecurityIdentifier
+'-Select
+'-Server
+'-Set
+'-ShadowCred
+'-SortBy
+'-TableView
+'-TargetIdentity
+'-TargetIdentity and -PrincipalIdentity flags are required
+'-Template
+'-TrustedToAuth
+'-Unconstrained
+'-UserName
+'-UserPass
+'-Value
+'-Vulnerable
+'-Where
+'-ZoneName
+'-d
+'-ns
+'-p
+'-q
+'-translate-x-60
+'-v
+'.
+'.*\s+$
+'..
+'../../web/front-end/static
+'../../web/front-end/templates
+'.alert
+'.bg-green-100
+'.bg-red-100
+'.ca-servers-container
+'.ca-servers-container > div
+'.ccache
+'.cert-templates-container
+'.cert-templates-container > div
+'.clear-input
+'.custom-toggle-switch
+'.dns-record-details-container
+'.dropdown-toggle
+'.fixed:not(.hidden)[aria-hidden]
+'.flex.items-center.justify-center
+'.format(newPassword).encode(
+'.format(self.__computerPassword).encode(
+'.groups-container
+'.groups-container table tbody
+'.join([
+'.join(re.findall(r
+'.json
+'.member-header
+'.members-container
+'.members-container table tbody
+'.ml-6 > div
+'.powerview_history
+'.property-checkbox
+'.record-name-section
+'.records-container
+'.relative
+'.result-item
+'.search-base-option
+'.selected
+'.subtree
+'.template-details-container
+'.zone-item
+'.zone-name-container
+'/
+'/api/add/<method_name>
+'/api/add/domaincomputer
+'/api/add/domaindnsrecord
+'/api/add/domaingroup
+'/api/add/domaingroupmember
+'/api/add/domainobjectacl
+'/api/add/domainuser
+'/api/clear-cache
+'/api/connectioninfo
+'/api/constants
+'/api/convertfrom/<method_name>
+'/api/convertfrom/sid
+'/api/convertfrom/uacvalue
+'/api/convertto/<method_name>
+'/api/execute
+'/api/get/<method_name>
+'/api/get/domain
+'/api/get/domainca
+'/api/get/domaincatemplate
+'/api/get/domaincomputer
+'/api/get/domaincontroller
+'/api/get/domaindnsrecord
+'/api/get/domaindnszone
+'/api/get/domaingpo
+'/api/get/domaingposettings
+'/api/get/domaingroup
+'/api/get/domaingroupmember
+'/api/get/domaininfo
+'/api/get/domainobject
+'/api/get/domainobjectacl
+'/api/get/domainou
+'/api/get/domaintrust
+'/api/get/domainuser
+'/api/get/netloggedon
+'/api/get/netsession
+'/api/history
+'/api/invoke/<method_name>
+'/api/ldap/close
+'/api/ldap/rebind
+'/api/logs
+'/api/logs?limit=1
+'/api/remove/<method_name>
+'/api/remove/domaincomputer
+'/api/remove/domaindnsrecord
+'/api/remove/domaingroupmember
+'/api/remove/domainobject
+'/api/remove/domainou
+'/api/remove/domainuser
+'/api/set/<method_name>
+'/api/set/domainobject
+'/api/set/settings
+'/api/settings
+'/ca
+'/computers
+'/dashboard
+'/dns
+'/gpo
+'/groups
+'/health
+'/ou
+'/users
+'/utils
+'0
+'0 0 24 24
+'00000000-0000-0000-0000-000000000000
+'0003508e-9c42-4a76-a8f4-38bf64bab0de
+'00299570-246d-11d0-a768-00aa006e0529
+'00fbf30c-91fe-11d1-aebc-0000f80367c1
+'00fbf30d-91fe-11d1-aebc-0000f80367c1
+'01072d9a-98ad-4a53-9744-e83e287278fb
+'011929e6-8b5d-4258-b64a-00b0b4949747
+'0123456789ABCDEF
+'013a7277-5c2d-49ef-a7de-b765b36a3f6f
+'014bf69c-7b3b-11d1-85f6-08002be74fab
+'01e9a98a-ccef-11d2-9993-0000f87a57d4
+'02625f05-d1ee-4f9f-b366-55266becb95c
+'0296c11c-40da-11d1-a9c0-0000f80367c1
+'0296c11d-40da-11d1-a9c0-0000f80367c1
+'0296c11e-40da-11d1-a9c0-0000f80367c1
+'0296c11f-40da-11d1-a9c0-0000f80367c1
+'0296c120-40da-11d1-a9c0-0000f80367c1
+'0296c121-40da-11d1-a9c0-0000f80367c1
+'0296c122-40da-11d1-a9c0-0000f80367c1
+'0296c123-40da-11d1-a9c0-0000f80367c1
+'0296c124-40da-11d1-a9c0-0000f80367c1
+'0310a911-93a3-4e21-a7a3-55d85ab2c48b
+'031952ec-3b72-11d2-90cc-00c04fd91ab1
+'032160be-9824-11d1-aec0-0000f80367c1
+'032160bf-9824-11d1-aec0-0000f80367c1
+'0353c4b5-d199-40b0-b3c5-deb32fd9ec06
+'037088f8-0ae1-11d2-b422-00a0c968f939
+'03726ae7-8e7d-4446-8aae-a91657c00993
+'037651e2-441d-11d1-a9c3-0000f80367c1
+'037651e3-441d-11d1-a9c3-0000f80367c1
+'037651e4-441d-11d1-a9c3-0000f80367c1
+'037651e5-441d-11d1-a9c3-0000f80367c1
+'03d4c32e-e217-4a61-9699-7bbc4729a026
+'03dab236-672e-4f61-ab64-f77d2dc2ffab
+'040fc392-33df-11d2-98b2-0000f87a57d4
+'041570d2-3b9e-11d2-90cc-00c04fd91ab1
+'0449160c-5a8e-4fc8-b052-01c0f6e48f02
+'04828aa9-6e42-4e80-b962-e2fe00754d17
+'048b4692-6227-4b67-a074-c4437083e14b
+'04c4da7a-e114-4e69-88de-e293f2d3b395
+'04d2d114-f799-4e9b-bcdc-90e8f5ba7ebe
+'04ee6aa6-f83b-469a-bf5a-3c00d3634669
+'05308983-7688-11d1-aded-00c04fd8d5cd
+'05630000-3927-4ede-bf27-ca91f275c26f
+'05c74c5e-4deb-43b4-bd9f-86664c2a7fd5
+'05f6c878-ccef-11d2-9993-0000f87a57d4
+'06bd3200-df3e-11d1-9c86-006008764d0e
+'06bd3201-df3e-11d1-9c86-006008764d0e
+'06bd3202-df3e-11d1-9c86-006008764d0e
+'06bd3203-df3e-11d1-9c86-006008764d0e
+'07383074-91df-11d1-aebc-0000f80367c1
+'07383075-91df-11d1-aebc-0000f80367c1
+'07383076-91df-11d1-aebc-0000f80367c1
+'07383077-91df-11d1-aebc-0000f80367c1
+'07383078-91df-11d1-aebc-0000f80367c1
+'07383079-91df-11d1-aebc-0000f80367c1
+'0738307a-91df-11d1-aebc-0000f80367c1
+'0738307b-91df-11d1-aebc-0000f80367c1
+'0738307c-91df-11d1-aebc-0000f80367c1
+'0738307d-91df-11d1-aebc-0000f80367c1
+'0738307e-91df-11d1-aebc-0000f80367c1
+'0738307f-91df-11d1-aebc-0000f80367c1
+'07383080-91df-11d1-aebc-0000f80367c1
+'07383081-91df-11d1-aebc-0000f80367c1
+'07383082-91df-11d1-aebc-0000f80367c1
+'07383083-91df-11d1-aebc-0000f80367c1
+'07383084-91df-11d1-aebc-0000f80367c1
+'07383085-91df-11d1-aebc-0000f80367c1
+'07383086-91df-11d1-aebc-0000f80367c1
+'07502414-fdca-4851-b04a-13645b11d226
+'075a42c9-c55a-45b1-ac93-eb086b31f610
+'07831919-8f94-4fb6-8a42-91545dccdad3
+'084a944b-e150-4bfe-9345-40e1aedaebba
+'084c93a2-620d-4879-a836-f0ae47de0e89
+'08e3aa79-eb1c-45b5-af7b-8f94246c8e41
+'0965a062-b1e1-403b-b48d-5c0eb0e952cc
+'0975fe99-9607-468a-8e18-c800d3387395
+'098f368e-4812-48cd-afb7-a136b96807ed
+'09abac62-043f-4702-ac2b-6ca15eee5754
+'09b10f14-6f93-11d2-9905-0000f87a57d4
+'09dcb79f-165f-11d0-a064-00aa006c33ed
+'09dcb7a0-165f-11d0-a064-00aa006c33ed
+'09f0506a-cd28-11d2-9993-0000f87a57d4
+'0a5caa39-05e6-49ca-b808-025b936610e7
+'0a63e12c-3040-4441-ae26-cd95af0d247e
+'0ae94a89-372f-4df2-ae8a-c64a2bc47278
+'0b21ce82-ff63-46d9-90fb-c8b9f24e97b9
+'0bb0fca0-1e89-429f-901a-1413894d9f59
+'0bb49a10-536b-bc4d-a273-0bab0dd4bd10
+'0bc1554e-0a99-11d1-adbb-00c04fd8d5cd
+'0bc579a2-1da7-4cea-b699-807f3b9d63a4
+'0be0dd3b-041a-418c-ace9-2f17d23e9d42
+'0c15e9f5-491d-4594-918f-32813a091da9
+'0c2ce4c7-f1c3-4482-8578-c60d4bb74422
+'0c3e5bc5-eb0e-40f5-9b53-334e958dffdb
+'0c7e18ea-ccef-11d2-9993-0000f87a57d4
+'0cd8711f-0afc-4926-a4b1-09b08d3d436c
+'0dc063c1-52d9-4456-9e15-9c2434aafd94
+'0dea42f5-278d-4157-b4a7-49b59664915b
+'0e0d0938-2658-4580-a9f6-7a0ac7b566cb
+'0e10c968-78fb-11d2-90d4-00c04f79dc55
+'0e1b47d7-40a3-4b48-8d1b-4cac0c1cdf21
+'0e78295a-c6d3-0a40-b491-d62251ffa0a6
+'0ea12b84-08b3-11d3-91bc-0000f87a57d4
+'0f69c62e-088e-4ff5-a53a-e923cec07c0a
+'0f6a17dc-53e5-4be8-9442-8f3ce2f9012a
+'0f71d8e0-da3b-11d1-90a5-00c04fd91ab1
+'0x
+'100e454d-f3bb-4dcb-845f-8d5edc471c59
+'103519a9-c002-441b-981a-b0b3e012c803
+'1035a8e1-67a8-4c21-b7bb-031cdf99d7a0
+'105babe9-077e-4793-b974-ef0410b62573
+'1075b3a1-bbaf-49d2-ae8d-c4f25c823303
+'1131f6aa-9c07-11d1-f79f-00c04fc2dcd2
+'1131f6ab-9c07-11d1-f79f-00c04fc2dcd2
+'1131f6ac-9c07-11d1-f79f-00c04fc2dcd2
+'1131f6ad-9c07-11d1-f79f-00c04fc2dcd2
+'1131f6ae-9c07-11d1-f79f-00c04fc2dcd2
+'11732a8a-e14d-4cc5-b92f-d93f51c6d8e4
+'11b6cc7c-48c4-11d1-a9c3-0000f80367c1
+'11b6cc7d-48c4-11d1-a9c3-0000f80367c1
+'11b6cc7e-48c4-11d1-a9c3-0000f80367c1
+'11b6cc7f-48c4-11d1-a9c3-0000f80367c1
+'11b6cc80-48c4-11d1-a9c3-0000f80367c1
+'11b6cc81-48c4-11d1-a9c3-0000f80367c1
+'11b6cc82-48c4-11d1-a9c3-0000f80367c1
+'11b6cc83-48c4-11d1-a9c3-0000f80367c1
+'11b6cc84-48c4-11d1-a9c3-0000f80367c1
+'11b6cc85-48c4-11d1-a9c3-0000f80367c1
+'11b6cc86-48c4-11d1-a9c3-0000f80367c1
+'11b6cc87-48c4-11d1-a9c3-0000f80367c1
+'11b6cc88-48c4-11d1-a9c3-0000f80367c1
+'11b6cc89-48c4-11d1-a9c3-0000f80367c1
+'11b6cc8a-48c4-11d1-a9c3-0000f80367c1
+'11b6cc8b-48c4-11d1-a9c3-0000f80367c1
+'11b6cc8c-48c4-11d1-a9c3-0000f80367c1
+'11b6cc8d-48c4-11d1-a9c3-0000f80367c1
+'11b6cc8e-48c4-11d1-a9c3-0000f80367c1
+'11b6cc8f-48c4-11d1-a9c3-0000f80367c1
+'11b6cc90-48c4-11d1-a9c3-0000f80367c1
+'11b6cc91-48c4-11d1-a9c3-0000f80367c1
+'11b6cc92-48c4-11d1-a9c3-0000f80367c1
+'11b6cc93-48c4-11d1-a9c3-0000f80367c1
+'11b6cc94-48c4-11d1-a9c3-0000f80367c1
+'11d43c5c-ccef-11d2-9993-0000f87a57d4
+'11e24318-4ca6-4f49-9afe-e5eb1afa3473
+'11e9a5bc-4517-4049-af9c-51554fb0fc09
+'11f95545-d712-4c50-b847-d2781537c633
+'11fccbc7-fbe4-4951-b4b7-addf6f9efd44
+'1219a3ec-3b9e-11d2-90cc-00c04fd91ab1
+'127.0.0.1
+'13361665-916c-4de7-a59d-b1ebbd0de129
+'135eb00e-4846-458b-8ea2-a37559afd405
+'13f5236c-1884-46b1-b5d0-484e38990d58
+'146eb639-bb9f-4fc1-a825-e29e00c77920
+'14fa84c9-8ecd-4348-bc91-6d3ced472ab7
+'15177226-8642-468b-8c48-03ddfd004982
+'152e42b6-37c5-4f55-ab48-1606384a9aea
+'15585999-fd49-4d66-b25d-eeb96aba8174
+'1562a632-44b9-4a7e-a2d3-e426c96a3acc
+'16378906-4ea5-49be-a8d1-bfd41dff4f65
+'164d1e05-48a6-4886-a8e9-77a2006e3c77
+'16775781-47f3-11d1-a9c3-0000f80367c1
+'1677578d-47f3-11d1-a9c3-0000f80367c1
+'1677579f-47f3-11d1-a9c3-0000f80367c1
+'167757b2-47f3-11d1-a9c3-0000f80367c1
+'167757b5-47f3-11d1-a9c3-0000f80367c1
+'167757b9-47f3-11d1-a9c3-0000f80367c1
+'167757bc-47f3-11d1-a9c3-0000f80367c1
+'16775804-47f3-11d1-a9c3-0000f80367c1
+'1677581f-47f3-11d1-a9c3-0000f80367c1
+'16775848-47f3-11d1-a9c3-0000f80367c1
+'16775858-47f3-11d1-a9c3-0000f80367c1
+'1677588f-47f3-11d1-a9c3-0000f80367c1
+'167758ad-47f3-11d1-a9c3-0000f80367c1
+'167758ca-47f3-11d1-a9c3-0000f80367c1
+'16c3a860-1273-11d0-a060-00aa006c33ed
+'16c5d1d3-35c2-4061-a870-a5cefda804f0
+'16f3a4c2-7e79-11d2-9921-0000f87a57d4
+'16s
+'1702975d-225e-cb4a-b15d-0daea8b5e990
+'170f09d7-eb69-448a-9a30-f1afecfd32d7
+'178b7bc2-b63a-11d2-90e1-00c04fd91ab1
+'17c2f64e-ccef-11d2-9993-0000f87a57d4
+'17eb4278-d167-11d0-b002-0000f80367c1
+'18120de8-f4c4-4341-bd95-32eb5bcf7c80
+'185c7821-3749-443a-bd6a-288899071adb
+'18976af6-3b9e-11d2-90cc-00c04fd91ab1
+'18e006b9-6445-48e3-9dcf-b5ecfbc4df8e
+'18f9b67d-5ac6-4b3b-97db-d0a406afb7ba
+'19195a53-6da0-11d0-afd3-00c04fd930c9
+'19195a55-6da0-11d0-afd3-00c04fd930c9
+'19195a56-6da0-11d0-afd3-00c04fd930c9
+'19195a5a-6da0-11d0-afd3-00c04fd930c9
+'19195a5b-6da0-11d0-afd3-00c04fd930c9
+'19195a5c-6da0-11d0-afd3-00c04fd930c9
+'19195a5d-6da0-11d0-afd3-00c04fd930c9
+'19195a5f-6da0-11d0-afd3-00c04fd930c9
+'19195a60-6da0-11d0-afd3-00c04fd930c9
+'19405b96-3cfa-11d1-a9c0-0000f80367c1
+'19405b97-3cfa-11d1-a9c0-0000f80367c1
+'19405b98-3cfa-11d1-a9c0-0000f80367c1
+'19405b99-3cfa-11d1-a9c0-0000f80367c1
+'19405b9a-3cfa-11d1-a9c0-0000f80367c1
+'19405b9b-3cfa-11d1-a9c0-0000f80367c1
+'19405b9c-3cfa-11d1-a9c0-0000f80367c1
+'19405b9d-3cfa-11d1-a9c0-0000f80367c1
+'19405b9e-3cfa-11d1-a9c0-0000f80367c1
+'19d706eb-4d76-44a2-85d6-1c342be3be37
+'1a1aa5b5-262e-4df6-af04-2cf6b0d80048
+'1a3d0d20-5844-4199-ad25-0f5039a76ada
+'1a60ea8d-58a6-4b20-bcdc-fb71eb8a9ff8
+'1a861408-38c3-49ea-ba75-85481a77c655
+'1aacb436-2e9d-44a9-9298-ce4debeb6ebf
+'1abd7cf8-0a99-11d1-adbb-00c04fd8d5cd
+'1b0c07f8-76dd-4060-a1e1-70084619dc90
+'1be8f170-a9ff-11d0-afe2-00c04fd930c9
+'1be8f171-a9ff-11d0-afe2-00c04fd930c9
+'1be8f172-a9ff-11d0-afe2-00c04fd930c9
+'1be8f173-a9ff-11d0-afe2-00c04fd930c9
+'1be8f174-a9ff-11d0-afe2-00c04fd930c9
+'1be8f175-a9ff-11d0-afe2-00c04fd930c9
+'1be8f177-a9ff-11d0-afe2-00c04fd930c9
+'1be8f178-a9ff-11d0-afe2-00c04fd930c9
+'1be8f17c-a9ff-11d0-afe2-00c04fd930c9
+'1be8f17d-a9ff-11d0-afe2-00c04fd930c9
+'1c332fe0-0c2a-4f32-afca-23c5e45a9e77
+'1c4ab61f-3420-44e5-849d-8b5dbf60feb7
+'1cb3559a-56d0-11d1-a9c6-0000f80367c1
+'1cb3559b-56d0-11d1-a9c6-0000f80367c1
+'1cb3559c-56d0-11d1-a9c6-0000f80367c1
+'1cb3559d-56d0-11d1-a9c6-0000f80367c1
+'1cb3559e-56d0-11d1-a9c6-0000f80367c1
+'1cb3559f-56d0-11d1-a9c6-0000f80367c1
+'1cb355a0-56d0-11d1-a9c6-0000f80367c1
+'1cb355a1-56d0-11d1-a9c6-0000f80367c1
+'1cb355a2-56d0-11d1-a9c6-0000f80367c1
+'1cb81863-b822-4379-9ea2-5ff7bdc6386d
+'1cf41bba-5604-463e-94d6-1a1287b72ca3
+'1d08694a-ccef-11d2-9993-0000f87a57d4
+'1d2f4412-f10d-4337-9b48-6e5b125cd265
+'1d3c2d18-42d0-4868-99fe-0eca1e6fa9f3
+'1d960ee2-6464-4e95-a781-e3b5cd5f9588
+'1dcc0722-aab0-4fef-956f-276fe19de107
+'1df5cf33-0fe5-499e-90e1-e94b42718a46
+'1e02d2ef-44ad-46b2-a67d-9fd18d780bca
+'1e2d06b4-ac8f-11d0-afe3-00c04fd930c9
+'1e5d393d-8cb7-4b4f-840a-973b36cc09c3
+'1ea64e5d-ac0f-11d2-90df-00c04fd91ab1
+'1ed3a473-9b1b-418a-bfa0-3a37b95a5306
+'1ef6336e-3b9e-11d2-90cc-00c04fd91ab1
+'1f0075f9-7e40-11d0-afd6-00c04fd930c9
+'1f0075fa-7e40-11d0-afd6-00c04fd930c9
+'1f0075fb-7e40-11d0-afd6-00c04fd930c9
+'1f0075fc-7e40-11d0-afd6-00c04fd930c9
+'1f0075fd-7e40-11d0-afd6-00c04fd930c9
+'1f0075fe-7e40-11d0-afd6-00c04fd930c9
+'1f2ac2c8-3b71-11d2-90cc-00c04fd91ab1
+'1f7c257c-b8a3-4525-82f8-11ccc7bee36e
+'1fbb0be8-ba63-11d0-afef-0000f80367c1
+'1fd55ea8-88a7-47dc-8129-0daa97186a54
+'200432ce-ec5f-4931-a525-d7f4afe34e68
+'20119867-1d04-4ab7-9371-cfc3d5df0afd
+'20af031a-ccef-11d2-9993-0000f87a57d4
+'20ebf171-c69a-4c31-b29d-dcb837d8912d
+'2143acca-eead-4d29-b591-85fa49ce9173
+'21cb8628-f3c3-4bbf-bff6-060b2d8f299a
+'22a95c0e-1f83-4c82-94ce-bea688cfc871
+'234fcbd8-fb52-4908-a328-fd9f6e58e403
+'23572aaf-29dd-44ea-b0fa-7e8438b9a4a3
+'23773dc2-b63a-11d2-90e1-00c04fd91ab1
+'23998ab5-70f8-4007-a4c1-a84a38311f9a
+'23e35d4c-e324-4861-a22f-e199140dae00
+'244b296e-5abd-11d0-afd2-00c04fd930c9
+'244b296f-5abd-11d0-afd2-00c04fd930c9
+'244b2970-5abd-11d0-afd2-00c04fd930c9
+'24977c8c-c1b7-3340-b4f6-2b375eb711d7
+'250464ab-c417-497a-975a-9e0d459a7ca1
+'250a8f20-f6fc-4559-ae65-e4b24c67aebe
+'25173408-04ca-40e8-865e-3f9ce9bf1bd3
+'2517fadf-fa97-48ad-9de6-79ac5721f864
+'261337aa-f1c3-44b2-bbea-c88d49e6f0c7
+'2628a46a-a6ad-4ae0-b854-2b12d9fe6f9e
+'2629f66a-1f95-4bf3-a296-8e9d7b9e30c8
+'26627c27-08a2-0a40-a1b1-8dce85b42993
+'26ccf238-a08e-4b86-9a82-a8c9ac7ee5cb
+'26d97367-6070-11d1-a9c6-0000f80367c1
+'26d97369-6070-11d1-a9c6-0000f80367c1
+'26d9736b-6070-11d1-a9c6-0000f80367c1
+'26d9736c-6070-11d1-a9c6-0000f80367c1
+'26d9736d-6070-11d1-a9c6-0000f80367c1
+'26d9736e-6070-11d1-a9c6-0000f80367c1
+'26d9736f-6070-11d1-a9c6-0000f80367c1
+'26d97372-6070-11d1-a9c6-0000f80367c1
+'26d97374-6070-11d1-a9c6-0000f80367c1
+'26d97375-6070-11d1-a9c6-0000f80367c1
+'26d97376-6070-11d1-a9c6-0000f80367c1
+'278947b9-5222-435e-96b7-1503858c2b48
+'27d93c40-065a-43c0-bdd8-cdf2c7d120aa
+'27e81485-b1b0-4a8b-bedd-ce19a837e26e
+'27eebfa2-fbeb-4f8e-aad6-c50247994291
+'280f369c-67c7-438e-ae98-1d46f3c6f541
+'281416c0-1968-11d0-a28f-00aa003049e2
+'281416c4-1968-11d0-a28f-00aa003049e2
+'281416c5-1968-11d0-a28f-00aa003049e2
+'281416c6-1968-11d0-a28f-00aa003049e2
+'281416c7-1968-11d0-a28f-00aa003049e2
+'281416c8-1968-11d0-a28f-00aa003049e2
+'281416c9-1968-11d0-a28f-00aa003049e2
+'281416ca-1968-11d0-a28f-00aa003049e2
+'281416cb-1968-11d0-a28f-00aa003049e2
+'281416cc-1968-11d0-a28f-00aa003049e2
+'281416cd-1968-11d0-a28f-00aa003049e2
+'281416cf-1968-11d0-a28f-00aa003049e2
+'281416d0-1968-11d0-a28f-00aa003049e2
+'281416d1-1968-11d0-a28f-00aa003049e2
+'281416d2-1968-11d0-a28f-00aa003049e2
+'281416d3-1968-11d0-a28f-00aa003049e2
+'281416d6-1968-11d0-a28f-00aa003049e2
+'281416d7-1968-11d0-a28f-00aa003049e2
+'281416d9-1968-11d0-a28f-00aa003049e2
+'281416da-1968-11d0-a28f-00aa003049e2
+'281416db-1968-11d0-a28f-00aa003049e2
+'281416dd-1968-11d0-a28f-00aa003049e2
+'281416de-1968-11d0-a28f-00aa003049e2
+'281416df-1968-11d0-a28f-00aa003049e2
+'281416e2-1968-11d0-a28f-00aa003049e2
+'28596019-7349-4d2f-adff-5a629961f942
+'285c6964-c11a-499e-96d8-bf7c75a223c6
+'28630eb8-41d5-11d1-a9c1-0000f80367c1
+'28630eba-41d5-11d1-a9c1-0000f80367c1
+'28630ebb-41d5-11d1-a9c1-0000f80367c1
+'28630ebd-41d5-11d1-a9c1-0000f80367c1
+'28630ebe-41d5-11d1-a9c1-0000f80367c1
+'28630ebf-41d5-11d1-a9c1-0000f80367c1
+'28630ec0-41d5-11d1-a9c1-0000f80367c1
+'28630ec1-41d5-11d1-a9c1-0000f80367c1
+'28be464b-ab90-4b79-a6b0-df437431d036
+'28c458f5-602d-4ac9-a77c-b3f1be503a7e
+'2915e85b-e347-4852-aabb-22e5a651c864
+'29259694-09e4-4237-9f72-9306ebe63ab2
+'292f0d9a-cf76-42b0-841f-b650f331df62
+'29401c48-7a27-11d0-afd6-00c04fd930c9
+'29401c4a-7a27-11d0-afd6-00c04fd930c9
+'29869b7c-64c4-42fe-97d5-fbc2fa124160
+'29cc866e-49d3-4969-942e-1dbc0925d183
+'2a132578-9373-11d1-aebc-0000f80367c1
+'2a132579-9373-11d1-aebc-0000f80367c1
+'2a13257a-9373-11d1-aebc-0000f80367c1
+'2a13257b-9373-11d1-aebc-0000f80367c1
+'2a13257c-9373-11d1-aebc-0000f80367c1
+'2a13257d-9373-11d1-aebc-0000f80367c1
+'2a13257e-9373-11d1-aebc-0000f80367c1
+'2a13257f-9373-11d1-aebc-0000f80367c1
+'2a132580-9373-11d1-aebc-0000f80367c1
+'2a132581-9373-11d1-aebc-0000f80367c1
+'2a132582-9373-11d1-aebc-0000f80367c1
+'2a132583-9373-11d1-aebc-0000f80367c1
+'2a132584-9373-11d1-aebc-0000f80367c1
+'2a132585-9373-11d1-aebc-0000f80367c1
+'2a132586-9373-11d1-aebc-0000f80367c1
+'2a132587-9373-11d1-aebc-0000f80367c1
+'2a132588-9373-11d1-aebc-0000f80367c1
+'2a39c5b0-8960-11d1-aebc-0000f80367c1
+'2a39c5b1-8960-11d1-aebc-0000f80367c1
+'2a39c5b2-8960-11d1-aebc-0000f80367c1
+'2a39c5b3-8960-11d1-aebc-0000f80367c1
+'2a39c5bd-8960-11d1-aebc-0000f80367c1
+'2a39c5be-8960-11d1-aebc-0000f80367c1
+'2a6a6d95-28ce-49ee-bb24-6d1fc01e3111
+'2a74f878-4d9c-49f9-97b3-6767d1cbd9a3
+'2a7827a4-1483-49a5-9d84-52e3812156b4
+'2a8c68fc-3a7a-4e87-8720-fe77c51cbe74
+'2a9350b8-062c-4ed0-9903-dde10d06deba
+'2ab0e48d-ac4e-4afc-83e5-a34240db6198
+'2ab0e76c-7041-11d2-9905-0000f87a57d4
+'2ae80fe2-47b4-11d0-a1a4-00c04fd930c9
+'2b09958a-8931-11d1-aebc-0000f80367c1
+'2b09958b-8931-11d1-aebc-0000f80367c1
+'2b702515-c1f7-4b3b-b148-c0e4c6ceecb4
+'2b9c0ebc-c272-45cb-99d2-4d0e691632e0
+'2bef6232-30a1-457e-8604-7af6dbf131b8
+'2c1128ec-5aa2-42a3-b32d-f0979ca9fcd2
+'2c4c9600-b0e1-447d-8dda-74902257bdb5
+'2cc4b836-b63f-4940-8d23-ea7acf06af56
+'2cc903e2-398c-443b-ac86-ff6b01eac7ba
+'2d131b3c-d39f-4aee-815e-8db4bc1ce7ac
+'2d7826f0-4cf7-42e9-a039-1110e0d9ca99
+'2dad8796-7619-4ff8-966e-0a5cc67b287f
+'2de144fc-1f52-486f-bdf4-16fcc3084e54
+'2df90d73-009f-11d2-aa4c-00c04fd7d83a
+'2df90d74-009f-11d2-aa4c-00c04fd7d83a
+'2df90d75-009f-11d2-aa4c-00c04fd7d83a
+'2df90d76-009f-11d2-aa4c-00c04fd7d83a
+'2df90d77-009f-11d2-aa4c-00c04fd7d83a
+'2df90d78-009f-11d2-aa4c-00c04fd7d83a
+'2df90d81-009f-11d2-aa4c-00c04fd7d83a
+'2df90d82-009f-11d2-aa4c-00c04fd7d83a
+'2df90d83-009f-11d2-aa4c-00c04fd7d83a
+'2df90d84-009f-11d2-aa4c-00c04fd7d83a
+'2df90d85-009f-11d2-aa4c-00c04fd7d83a
+'2df90d86-009f-11d2-aa4c-00c04fd7d83a
+'2df90d87-009f-11d2-aa4c-00c04fd7d83a
+'2df90d89-009f-11d2-aa4c-00c04fd7d83a
+'2e28edee-ed7c-453f-afe4-93bd86f2174f
+'2e899b04-2834-11d3-91d4-0000f87a57d4
+'2e937524-dfb9-4cac-a436-a5b7da64fd66
+'2eeb62b3-1373-fe45-8101-387f1676edc7
+'2f16c4a5-b98e-432c-952a-cb388ba33f2e
+'2f17faa9-5d47-4b1f-977e-aa52fabe65c8
+'2f5c8145-e1bd-410b-8957-8bfa81d5acfd
+'303d9f4a-1dd6-4b38-8fc5-33afe8c988ad
+'30b099d9-edfe-7549-b807-eba444da79e9
+'310b55ce-3dcd-4392-a96d-c9e35397c24f
+'3164c36a-ba26-468c-8bda-c1e5cc256728
+'31f7b8b6-c9f8-4f2d-a37b-58a823030331
+'326f7089-53d8-4784-b814-46d8535110d2
+'32ecd698-ce9e-4894-a134-7ad76b082e83
+'32ff8ecc-783f-11d2-9916-0000f87a57d4
+'33140514-f57a-47d2-8ec4-04c4666600c7
+'3320fc38-c379-4c17-a510-1bdf6133c5da
+'33d41ea8-c0c9-4c92-9494-f104878413fd
+'3417ab48-df24-4fb1-80b0-0fcb367e25e3
+'3443d8cd-e5b6-4f3b-b098-659a0214a079
+'349f0757-51bd-4fc8-9d66-3eceea8a25be
+'34aaa216-b699-11d0-afee-0000f80367c1
+'34aaa217-b699-11d0-afee-0000f80367c1
+'34b107af-a00a-455a-b139-dd1a1b12d8af
+'34f6bdf5-2e79-4c3b-8e14-3d93b75aab89
+'34f7ed6c-615d-418d-aa00-549a7d7be03e
+'35319082-8c4a-4646-9386-c2949d49894d
+'3532dfd8-ccee-11d2-9993-0000f87a57d4
+'3566bf1f-beee-4dcb-8abe-ef89fcfec6c1
+'35697062-1eaf-448b-ac1e-388e0be4fdee
+'3586f6ac-51b7-4978-ab42-f936463198e7
+'35b8b3d9-c58f-43d6-930e-5040f2f1a781
+'36093235-c715-4821-ab6a-b56fb2805a58
+'36297dce-656b-4423-ab65-dabb2770819e
+'366ed7ca-3e18-4c7f-abae-351a01e4b4f7
+'37609d31-a2bf-4b58-8f53-2b64e57a076d
+'377ade80-e2d8-46c5-9bcd-6d9dec93b35e
+'37830235-e5e9-46f2-922b-d8d44f03e7ae
+'37c94ff6-c6d4-498f-b2f9-c6f7f8647809
+'37cfd85c-6719-4ad8-8f9e-8678ba627563
+'3800d5a3-f1ce-4b82-a59a-1528ea795f59
+'3860949f-f6a8-4b38-9950-81ecb6bc2982
+'387d9432-a6d1-4474-82cd-0a89aae084ae
+'3881b8ea-da3b-11d1-90a5-00c04fd91ab1
+'38942346-cc5b-424b-a7d8-6ffd12029c5f
+'398f63c0-ca60-11d1-bbd1-0000f81f10c0
+'39bad96d-c2d6-4baf-88ab-7e4207600117
+'3a0cd464-bc54-40e7-93ae-a646a6ecc4b4
+'3a9adf5d-7b97-4f7e-abb4-e5b55c1c06b4
+'3bcbfcf4-4d3d-11d0-a1a6-00c04fd930c9
+'3bcbfcf5-4d3d-11d0-a1a6-00c04fd930c9
+'3bcd9db8-f84b-451c-952f-6c52b81f9ec6
+'3bfe6748-b544-485a-b067-1b310c4334bf
+'3c01c43d-e10b-4fca-92b2-4cf615d5b09a
+'3c08b569-801f-4158-b17b-e363d6ae696a
+'3c095e8a-314e-465b-83f5-ab8277bcf29b
+'3c7e6f83-dd0e-481b-a0c2-74cd96ef2a66
+'3c91fbbf-4773-4ccd-a87b-85d53e7bcf6a
+'3cd1c514-8449-44ca-81c0-021781800d2a
+'3ced1465-7b71-2541-8780-1e1ea6243a82
+'3d3c6dda-6be8-4229-967e-2ff5bb93b4ce
+'3df793df-9858-4417-a701-735a1ecebf74
+'3e0abfd0-126a-11d0-a060-00aa006c33ed
+'3e0f7e18-2c7a-4c10-ba82-4d926db99a3e
+'3e10944c-c354-11d0-aff8-0000f80367c1
+'3e10944d-c354-11d0-aff8-0000f80367c1
+'3e1ee99c-6604-4489-89d9-84798a89515a
+'3e74f60e-3e73-11d1-a9c0-0000f80367c1
+'3e74f60f-3e73-11d1-a9c0-0000f80367c1
+'3e97891e-8c01-11d0-afda-00c04fd930c9
+'3e97891f-8c01-11d0-afda-00c04fd930c9
+'3e978920-8c01-11d0-afda-00c04fd930c9
+'3e978921-8c01-11d0-afda-00c04fd930c9
+'3e978923-8c01-11d0-afda-00c04fd930c9
+'3e978924-8c01-11d0-afda-00c04fd930c9
+'3e978925-8c01-11d0-afda-00c04fd930c9
+'3e978926-8c01-11d0-afda-00c04fd930c9
+'3e978927-8c01-11d0-afda-00c04fd930c9
+'3f6b8e12-d57f-11d1-90a2-00c04fd91ab1
+'3f78c3e5-f79a-46bd-a0b8-9d18116ddc79
+'3fdfee4f-47f4-11d1-a9c3-0000f80367c1
+'3fdfee50-47f4-11d1-a9c3-0000f80367c1
+'3fdfee52-47f4-11d1-a9c3-0000f80367c1
+'4
+'40e1c407-4344-40f3-ab43-3625a34a63a2
+'4125c71f-7fac-4ff0-bcb7-f09a41325286
+'41bc7f04-be72-4930-bd10-1f3439412387
+'421f889a-472e-4fe4-8eb9-e1d0bc6071b2
+'422144fa-c17f-4649-94d6-9731ed2784ed
+'4229c897-c211-437c-a5ae-dbf705b696e5
+'426cae6e-3b9d-11d2-90cc-00c04fd91ab1
+'42a75fc6-783f-11d2-9916-0000f87a57d4
+'43061ac1-c8ad-4ccc-b785-2bfac20fc60a
+'430f678b-889f-41f2-9843-203b5a65572f
+'440820ad-65b4-11d1-a3da-0000f875ae0d
+'44f00041-35af-468b-b20a-6ce8737c580b
+'4503d2a3-3d70-41b8-b077-dff123c15865
+'456374ac-1f0a-4617-93cf-bc55a7c9d341
+'4580ad25-d407-48d2-ad24-43e6e56793d7
+'45958fb6-52bd-48ce-9f9f-c2712d9f2bfc
+'45b01500-c419-11d1-bbc9-0080c76670c0
+'45b01501-c419-11d1-bbc9-0080c76670c0
+'45ba9d1a-56fa-11d2-90d0-00c04fd91ab1
+'45ec5156-db7e-47bb-b53f-dbeb2d03c40f
+'45fb5a57-5018-4d0f-9056-997c8c9122d9
+'461744d7-f3b6-45ba-8753-fb9552a5df32
+'4699f15f-a71f-48e2-9ff5-5897c0759205
+'46a9b11d-60ae-405a-b7e8-ff8a58d456d2
+'46b27aac-aafa-4ffb-b773-e5bf621ee87b
+'47c77bb0-316e-4e2f-97f1-0d4c48fca9dd
+'4828cc14-1437-45bc-9b07-ad6f015e5f28
+'4898f63d-4112-477c-8826-3ca00bd8277d
+'48fd44ea-ccee-11d2-9993-0000f87a57d4
+'4937f40d-a6dc-4d48-97ca-06e5fbfd3f16
+'49b7560b-4707-4aa0-a27c-e17a09ca3f97
+'4a7c1319-e34e-40c2-9d00-60ff7890f207
+'4a95216e-fcc0-402e-b57f-5971626148a9
+'4ad6016b-b0d2-4c9b-93b6-5964b17b968c
+'4b0df103-8d97-45d9-ad69-85c3080ba4e7
+'4b1cba4e-302f-4134-ac7c-f01f6c797843
+'4b6e08c0-df3c-11d1-9c86-006008764d0e
+'4b6e08c1-df3c-11d1-9c86-006008764d0e
+'4b6e08c2-df3c-11d1-9c86-006008764d0e
+'4b6e08c3-df3c-11d1-9c86-006008764d0e
+'4bcb2477-4bb3-4545-a9fc-fb66e136b435
+'4beca2e8-a653-41b2-8fee-721575474bec
+'4c164200-20c0-11d0-a768-00aa006e0529
+'4c51e316-f628-43a5-b06b-ffb695fcb4f3
+'4c5d607a-ce49-444a-9862-82a95f5d1fcc
+'4c9928d7-d725-4fa6-a109-aba3ad8790e5
+'4cc4601e-7201-4141-abc8-3e529ae88863
+'4cc908a2-9e18-410e-8459-f17cc422020a
+'4d146e4a-48d4-11d1-a9c3-0000f80367c1
+'4d146e4b-48d4-11d1-a9c3-0000f80367c1
+'4d2fa380-7f54-11d2-992a-0000f87a57d4
+'4d371c11-4cad-4c41-8ad2-b180ab2bd13c
+'4d8601ed-ac85-11d0-afe3-00c04fd930c9
+'4d8601ee-ac85-11d0-afe3-00c04fd930c9
+'4e3854f4-3087-42a4-a813-bb0c528958d3
+'4ecc03fe-ffc0-4947-b630-eb672a8a9dbc
+'4f146ae8-a4fe-4801-a731-f51848a4f4e4
+'4f6cbdd8-ccee-11d2-9993-0000f87a57d4
+'4feae054-ce55-47bb-860e-5b12063a51de
+'5006a79a-6bfe-4561-9f52-13cf4dd3e560
+'503fc3e8-1cc6-461a-99a3-9eee04f402a7
+'50776997-3c3d-11d2-90cc-00c04fd91ab1
+'508ca374-a511-4e4e-9f4f-856f61a6b7e4
+'50950839-cc4c-4491-863a-fcf942d684b7
+'50c8673a-8f56-4614-9308-9e1340fb9af3
+'50ca5d7d-5c8b-4ef3-b9df-5b66d491e526
+'51583ce9-94fa-4b12-b990-304c35b18595
+'515a6b06-2617-4173-8099-d5605df043c6
+'516e67cf-fedd-4494-bb3a-bc506a948891
+'51928e94-2cd8-4abe-b552-e50412444370
+'51a0e68c-0dc5-43ca-935d-c1c911bf2ee5
+'51c9f89d-4730-468d-a2b5-1d493212d17e
+'523fc6c8-9af4-4a02-9cd7-3dea129eeb27
+'52458018-ca6a-11d0-afff-0000f80367c1
+'52458019-ca6a-11d0-afff-0000f80367c1
+'5245801a-ca6a-11d0-afff-0000f80367c1
+'5245801b-ca6a-11d0-afff-0000f80367c1
+'5245801d-ca6a-11d0-afff-0000f80367c1
+'5245801e-ca6a-11d0-afff-0000f80367c1
+'5245801f-ca6a-11d0-afff-0000f80367c1
+'52458020-ca6a-11d0-afff-0000f80367c1
+'52458021-ca6a-11d0-afff-0000f80367c1
+'52458022-ca6a-11d0-afff-0000f80367c1
+'52458023-ca6a-11d0-afff-0000f80367c1
+'52458024-ca6a-11d0-afff-0000f80367c1
+'52458038-ca6a-11d0-afff-0000f80367c1
+'52458039-ca6a-11d0-afff-0000f80367c1
+'5245803a-ca6a-11d0-afff-0000f80367c1
+'52994b56-0e6c-4e07-aa5c-ef9d7f5a0e25
+'52ab8670-5709-11d1-a9c6-0000f80367c1
+'52ab8671-5709-11d1-a9c6-0000f80367c1
+'52c8d13a-ce0b-4f57-892b-18f5a43a2400
+'5315ba8e-958f-4b52-bd38-1349a304dd63
+'532570bd-3d77-424f-822f-0d636dc6daad
+'53ea1cb5-b704-4df9-818f-5cb4ec86cac1
+'53ed9ad1-9975-41f4-83f5-0c061a12553a
+'548e1c22-dea6-11d0-b010-0000f80367c1
+'54d522db-ec95-48f5-9bbd-1880ebbb2180
+'54dfcf71-bc3f-4f0b-9d5a-4b2476bb8925
+'553fd038-f32e-11d0-b0bc-00c04fd8dca6
+'553fd039-f32e-11d0-b0bc-00c04fd8dca6
+'555c21c3-a136-455a-9397-796bbd358e25
+'55872b71-c4b2-3b48-ae51-4095f91ec600
+'55dd81c9-c312-41f9-a84d-c6adbdf1e8e1
+'561c9644-ccee-11d2-9993-0000f87a57d4
+'5643ff81-35b6-4ca9-9512-baf0bd0a2772
+'564e9325-d057-c143-9e3b-4f9e5ef46f93
+'5706aeaf-b940-4fb2-bcfc-5268683ad9fe
+'57cf87f7-3426-4841-b322-02b3b6e9eba8
+'57f22f7a-377e-42c3-9872-cec6f21d2e3e
+'5805bc62-bdc9-4428-a5e2-856a0f4c185e
+'585c9d5e-f599-4f07-9cf9-4373af4b89d3
+'59527d0f-b7c0-4ce2-a1dd-71cef6963292
+'595b2613-4109-4e77-9013-a3bb4ef277c7
+'59ba2f42-79a2-11d0-9020-00c04fc2d3cf
+'5a2eacd7-cc2b-48cf-9d9a-b6f1a0024de9
+'5a5661a1-97c6-544b-8056-e430fe7bc554
+'5a5aa804-3083-4863-94e5-018a79a22ec0
+'5a8b3261-c38d-11d1-bbc9-0080c76670c0
+'5ac48021-e447-46e7-9d23-92c0c6a90dfb
+'5b06b06a-4cf3-44c0-bd16-43bc10a987da
+'5b283d5e-8404-4195-9339-8450188c501a
+'5b47d60f-6090-40b2-9f37-2a4de88f3063
+'5b4a06dc-251c-4edb-8813-0bdd71327226
+'5b5d448c-ccee-11d2-9993-0000f87a57d4
+'5b6d8467-1a18-4174-b350-9cc6e7b4ac8d
+'5bd5208d-e5f4-46ae-a514-543bc9c47659
+'5c5b7ad2-20fa-44bb-beb3-34b9c0f65579
+'5cb41ecf-0e4c-11d0-a286-00aa003049e2
+'5cb41ed0-0e4c-11d0-a286-00aa003049e2
+'5cf0bcc8-60f7-4bff-bda6-aea0344eb151
+'5d3510f0-c4e7-4122-b91f-a20add90e246
+'5dd68c41-bfdf-438b-9b5d-39d9618bf260
+'5df2b673-6d41-4774-b3e8-d52e8ee9ff99
+'5dfe3c20-ca29-407d-9bab-8421e55eb75c
+'5e11dc43-204a-4faf-a008-6863621c6f5f
+'5e53368b-fc94-45c8-9d7d-daf31ee7112d
+'5e6cf031-bda8-43c8-aca4-8fee4127005b
+'5eb526d7-d71b-44ae-8cc6-95460052e6ac
+'5ef243a8-2a25-45a6-8b73-08a71ae677ce
+'5f0a24d9-dffa-4cd9-acbf-a0680c03731e
+'5f202010-79a5-11d0-9020-00c04fc2d4cf
+'5f49940e-a79f-4a51-bb6f-3d446a54dc6b
+'5fd42461-1262-11d0-a060-00aa006c33ed
+'5fd42462-1262-11d0-a060-00aa006c33ed
+'5fd42463-1262-11d0-a060-00aa006c33ed
+'5fd42464-1262-11d0-a060-00aa006c33ed
+'5fd42471-1262-11d0-a060-00aa006c33ed
+'5fd424a1-1262-11d0-a060-00aa006c33ed
+'5fd424a7-1262-11d0-a060-00aa006c33ed
+'5fd424a8-1262-11d0-a060-00aa006c33ed
+'5fd424a9-1262-11d0-a060-00aa006c33ed
+'5fd424ce-1262-11d0-a060-00aa006c33ed
+'5fd424cf-1262-11d0-a060-00aa006c33ed
+'5fd424d3-1262-11d0-a060-00aa006c33ed
+'5fd424d4-1262-11d0-a060-00aa006c33ed
+'5fd424d6-1262-11d0-a060-00aa006c33ed
+'5fd4250a-1262-11d0-a060-00aa006c33ed
+'5fd4250b-1262-11d0-a060-00aa006c33ed
+'5fd4250c-1262-11d0-a060-00aa006c33ed
+'5fe69b0b-e146-4f15-b0ab-c1e5d488e094
+'60234769-4819-4615-a1b2-49d2f119acb5
+'603e94c4-ccee-11d2-9993-0000f87a57d4
+'6043df71-fa48-46cf-ab7c-cbd54644b22d
+'60452679-28e1-4bec-ace3-712833361456
+'604877cd-9cdb-47c7-b03d-3daadb044910
+'6055f766-202e-49cd-a8be-e52bb159edfb
+'60686ace-6c27-43de-a4e5-f00c2f8d3309
+'612cb747-c0e8-4f92-9221-fdd5f15b550d
+'615f42a1-37e7-1148-a0dd-3007e09cfc81
+'617626e9-01eb-42cf-991f-ce617982237e
+'62dd28a8-7f46-11d2-b9ad-00c04f79f805
+'62f29b60-be74-4630-9456-2f6691993a86
+'6366c0c1-6972-4e66-b3a5-1d52ad0c0547
+'638ec2e8-22e7-409c-85d2-11b21bee72de
+'641e87a4-8326-4771-ba2d-c706df35e35a
+'642c1129-3899-4721-8e21-4839e3988ce5
+'6448f56a-ca70-4e2e-b0af-d20e4ce653d0
+'64759b35-d3a1-42e4-b5f1-a3de162109b3
+'64933a3e-ccee-11d2-9993-0000f87a57d4
+'649ac98d-9b9a-4d41-af6b-f616f2a62e4a
+'64c80f48-cdd2-4881-a86d-4e97b6f561fc
+'6558b180-35da-4efe-beed-521f8f48cafb
+'65650576-4699-4fc9-8d18-26e0cd0137a6
+'65fff93e-35e3-45a3-85ae-876c6718297f
+'66080
+'66171886-8f3c-11d0-afda-00c04fd930c9
+'66171887-8f3c-11d0-afda-00c04fd930c9
+'66171888-8f3c-11d0-afda-00c04fd930c9
+'66171889-8f3c-11d0-afda-00c04fd930c9
+'6617188a-8f3c-11d0-afda-00c04fd930c9
+'6617188b-8f3c-11d0-afda-00c04fd930c9
+'6617188c-8f3c-11d0-afda-00c04fd930c9
+'6617188d-8f3c-11d0-afda-00c04fd930c9
+'6617e4ac-a2f1-43ab-b60c-11fbd1facf05
+'6655b152-101c-48b4-b347-e1fcebc60157
+'665acb5c-bb92-4dbc-8c59-b3638eab09b3
+'66d51249-3355-4c1f-b24e-81f252aca23b
+'670afcb3-13bd-47fc-90b3-0a527ed81ab7
+'67212414-7bcc-4609-87e0-088dad8abdee
+'6736809f-2064-443e-a145-81262b1f1366
+'675a15fe-3b70-11d2-90cc-00c04fd91ab1
+'67e4d912-f362-4052-8c79-42f45ba7b221
+'67f121dc-7d02-4c7d-82f5-9ad4c950ac34
+'6818f726-674b-441b-8a3a-f40596374cea
+'68b1d179-0d15-4d4f-ab71-46152e79a7bc
+'68c2e3ba-9837-4c70-98e0-f0c33695d023
+'693f2006-5764-3d4a-8439-58f04aab4b59
+'696177a6-ccee-11d2-9993-0000f87a57d4
+'696f8a61-2d3f-40ce-a4b3-e275dfcc49c5
+'69ae6200-7f46-11d2-b9ad-00c04f79f805
+'69bfb114-407b-4739-a213-c663802b3e37
+'69cab008-cdd4-4bc9-bab8-0ff37efe1b20
+'6a84ede5-741e-43fd-9dd6-aa0f61578621
+'6ab126c6-fa41-4b36-809e-7ca91610d48f
+'6af565f6-a749-4b72-9634-3c5d47e6b4e0
+'6afb0e4c-d876-437c-aeb6-c3e41454c272
+'6afe8fe2-70bc-4cce-b166-a96f7359c514
+'6b3d6fda-0893-43c4-89fb-1fb52a6616a9
+'6c7b5785-3d21-41bf-8a8a-627941544d5a
+'6cc8b2b5-12df-44f6-8307-e74f5cdee369
+'6cd53daf-003e-49e7-a702-6fa896e7a6ef
+'6cdc047f-f522-b74a-9a9c-d95ac8cdfda2
+'6d05fb41-246b-11d0-a9c8-00aa006c33ed
+'6da8a4fc-0e52-11d0-a286-00aa003049e2
+'6da8a4fe-0e52-11d0-a286-00aa003049e2
+'6db69a1c-9422-11d1-aebd-0000f80367c1
+'6ddc42c0-ccee-11d2-9993-0000f87a57d4
+'6e7b626c-64f2-11d0-afd2-00c04fd930c9
+'6e8797c4-acda-4a49-8740-b0bd05a9b831
+'6f17e347-a842-4498-b8b3-15e007da4fed
+'6f914be6-d57e-11d1-90a2-00c04fd91ab1
+'6fabdcda-8c53-204f-b1a4-9df0c67c1eb4
+'6ff64fcd-462e-4f62-b44a-9a5347659eb9
+'70004ef5-25c3-446a-97c8-996ae8566776
+'70a4e7ea-b3b9-4643-8918-e6dd2471bfd4
+'70ca5d97-2304-490a-8a27-52678c8d2095
+'70fb8c63-5fab-4504-ab9d-14b329a8a7f8
+'7184a120-3ac4-47ae-848f-fe0ab20784d4
+'720bc4e2-a54a-11d0-afdf-00c04fd930c9
+'72dc918a-ccee-11d2-9993-0000f87a57d4
+'72e39547-7b18-11d1-adef-00c04fd8d5cd
+'72e3d47a-b342-4d45-8f56-baff803cabf9
+'72efbf84-6e7b-4a5c-a8db-8a75a7cad254
+'7359a352-90f7-11d1-aebc-0000f80367c1
+'7359a353-90f7-11d1-aebc-0000f80367c1
+'7469b704-edb0-4568-a5a5-59f4862c75a7
+'748b0a2e-3351-4b3f-b171-2f17414ea779
+'75159a00-1fff-4cf4-8bff-4ef2695cf643
+'75ccdd8f-af6c-4487-bb4b-69e4d38a959c
+'7672666c-02c1-4f33-9ecf-f649c1dd9b7c
+'770f4cb3-1643-469c-b766-edd77aa75e14
+'7726b9d5-a4b4-4288-a6b2-dce952e80a7f
+'773e93af-d3b4-48d4-b3f9-06457602d3d0
+'7769fb7a-1159-4e96-9ccd-68bc487073eb
+'7778bd90-ccee-11d2-9993-0000f87a57d4
+'778ff5c9-6f4e-4b74-856a-d68383313910
+'77b5b886-944a-11d1-aebd-0000f80367c1
+'78565e80-03d4-4fe3-afac-8c3bca2f3653
+'7860e5d2-c8b0-4cbb-bd45-d9455beb9206
+'789ee1eb-8c8e-4e4c-8cec-79b31b7617b5
+'78f011ec-a766-4b19-adcf-7b81ed781a4d
+'78fc5d84-c1dc-3148-8984-58f792d41d3e
+'79abe4eb-88f3-48e7-89d6-f4bc7e98c331
+'79d2f34c-9d7d-42bb-838f-866b3e4400e2
+'7a0ba0e0-8e98-11d0-afda-00c04fd930c9
+'7a2be07c-302f-4b96-bc90-0795d66885f8
+'7a4117da-cd67-11d0-afff-0000f80367c1
+'7a4a4584-b350-478f-acd6-b4b852d82cc0
+'7a560cc2-ec45-44ba-b2d7-21236ad59fd5
+'7ae89c9c-2976-4a46-bb8a-340f88560117
+'7b078544-6c82-4fe9-872f-ff48ad2b2e26
+'7b35dbad-b3ec-486a-aad4-2fec9d6ea6f6
+'7b6760ae-d6ed-44a6-b6be-9de62c09ec67
+'7b7cce4f-f1f5-4bb6-b7eb-23504af19e75
+'7b8b558a-93a5-4af7-adca-c017e67f1057
+'7b91c840-ccee-11d2-9993-0000f87a57d4
+'7b9a2d92-b7eb-4382-9772-c3e0f9baaf94
+'7bc64cea-c04e-4318-b102-3e0729371a65
+'7bd4c7a6-1add-4436-8c04-3999a880154c
+'7bd76b92-3244-438a-ada6-24f5ea34381e
+'7bea2088-8ce2-423c-b191-66ec506b1595
+'7bfdcb7a-4807-11d1-a9c3-0000f80367c1
+'7bfdcb7b-4807-11d1-a9c3-0000f80367c1
+'7bfdcb7d-4807-11d1-a9c3-0000f80367c1
+'7bfdcb7e-4807-11d1-a9c3-0000f80367c1
+'7bfdcb7f-4807-11d1-a9c3-0000f80367c1
+'7bfdcb80-4807-11d1-a9c3-0000f80367c1
+'7bfdcb81-4807-11d1-a9c3-0000f80367c1
+'7bfdcb83-4807-11d1-a9c3-0000f80367c1
+'7bfdcb85-4807-11d1-a9c3-0000f80367c1
+'7bfdcb86-4807-11d1-a9c3-0000f80367c1
+'7bfdcb87-4807-11d1-a9c3-0000f80367c1
+'7bfdcb88-4807-11d1-a9c3-0000f80367c1
+'7bfdcb89-4807-11d1-a9c3-0000f80367c1
+'7bfdcb8a-4807-11d1-a9c3-0000f80367c1
+'7c0e2a7c-a419-48e4-a995-10180aad54dd
+'7c9e8c58-901b-4ea8-b6ec-4eb9e9fc0e11
+'7cbd59a5-3b90-11d2-90cc-00c04fd91ab1
+'7d3cfa98-c17b-4254-8bd7-4de9b932a345
+'7d523aff-9012-49b2-9925-f922a0018656
+'7d59a816-bb05-4a72-971f-5c1331f67559
+'7d6c0e92-7e20-11d0-afd6-00c04fd930c9
+'7d6c0e93-7e20-11d0-afd6-00c04fd930c9
+'7d6c0e94-7e20-11d0-afd6-00c04fd930c9
+'7d6c0e96-7e20-11d0-afd6-00c04fd930c9
+'7d6c0e97-7e20-11d0-afd6-00c04fd930c9
+'7d6c0e98-7e20-11d0-afd6-00c04fd930c9
+'7d6c0e99-7e20-11d0-afd6-00c04fd930c9
+'7d6c0e9a-7e20-11d0-afd6-00c04fd930c9
+'7d6c0e9b-7e20-11d0-afd6-00c04fd930c9
+'7d6c0e9c-7e20-11d0-afd6-00c04fd930c9
+'7d6c0e9d-7e20-11d0-afd6-00c04fd930c9
+'7ece040f-9327-4cdc-aad3-037adfe62639
+'7f561278-5301-11d1-a9c5-0000f80367c1
+'7f561279-5301-11d1-a9c5-0000f80367c1
+'7f56127a-5301-11d1-a9c5-0000f80367c1
+'7f56127b-5301-11d1-a9c5-0000f80367c1
+'7f56127c-5301-11d1-a9c5-0000f80367c1
+'7f56127d-5301-11d1-a9c5-0000f80367c1
+'7f56127e-5301-11d1-a9c5-0000f80367c1
+'7f56127f-5301-11d1-a9c5-0000f80367c1
+'7f561280-5301-11d1-a9c5-0000f80367c1
+'7f561281-5301-11d1-a9c5-0000f80367c1
+'7f561282-5301-11d1-a9c5-0000f80367c1
+'7f561283-5301-11d1-a9c5-0000f80367c1
+'7f561284-5301-11d1-a9c5-0000f80367c1
+'7f561285-5301-11d1-a9c5-0000f80367c1
+'7f561286-5301-11d1-a9c5-0000f80367c1
+'7f561287-5301-11d1-a9c5-0000f80367c1
+'7f561288-5301-11d1-a9c5-0000f80367c1
+'7f561289-5301-11d1-a9c5-0000f80367c1
+'7f73ef75-14c9-4c23-81de-dd07a06f9e8b
+'800d94d7-b7a1-42a1-b14d-7cae1423d07f
+'80212840-4bdc-11d1-a9c4-0000f80367c1
+'80212841-4bdc-11d1-a9c4-0000f80367c1
+'80212842-4bdc-11d1-a9c4-0000f80367c1
+'80641043-15a2-40e1-92a2-8ca866f70776
+'807a6d30-1669-11d0-a064-00aa006c33ed
+'80863791-dbe9-4eb8-837e-7f0ab55d9ac7
+'80997877-f874-4c68-864d-6e508a83bdbd
+'80a67e28-9f22-11d0-afdd-00c04fd930c9
+'80a67e29-9f22-11d0-afdd-00c04fd930c9
+'80a67e2a-9f22-11d0-afdd-00c04fd930c9
+'80a67e4d-9f22-11d0-afdd-00c04fd930c9
+'80a67e4e-9f22-11d0-afdd-00c04fd930c9
+'80a67e4f-9f22-11d0-afdd-00c04fd930c9
+'80a67e5a-9f22-11d0-afdd-00c04fd930c9
+'80b70aab-8959-4ec0-8e93-126e76df3aca
+'8157fa38-ccee-11d2-9993-0000f87a57d4
+'817cf0b8-db95-4914-b833-5a079ef65764
+'81a3857c-5469-4d8f-aae6-c27699762604
+'81d7f8c2-e327-4a0d-91c6-b42d4009115f
+'81f6e0df-3b90-11d2-90cc-00c04fd91ab1
+'8213eac9-9d55-44dc-925c-e9a52b927644
+'8297931c-86d3-11d0-afda-00c04fd930c9
+'8297931d-86d3-11d0-afda-00c04fd930c9
+'8297931e-86d3-11d0-afda-00c04fd930c9
+'82f6c81a-fada-4a0d-b0f7-706d46838eb5
+'8386603c-ccef-11d2-9993-0000f87a57d4
+'8398948b-7457-4d91-bd4d-8d7ed669c9f7
+'83cc7075-cca7-11d0-afff-0000f80367c1
+'8447f9f0-1027-11d0-a05f-00aa006c33ed
+'8447f9f1-1027-11d0-a05f-00aa006c33ed
+'8447f9f2-1027-11d0-a05f-00aa006c33ed
+'8447f9f3-1027-11d0-a05f-00aa006c33ed
+'8469441b-9ac4-4e45-8205-bd219dbf672d
+'8491e548-6c38-4365-a732-af041569b02c
+'85045b6a-47a6-4243-a7cc-6890701f662c
+'850fcc8f-9c6b-47e1-b671-7c654be4d5b3
+'8521c983-f599-420f-b9ab-b1222bdf95c1
+'855f2ef5-a1c5-4cc4-ba6d-32522848b61f
+'856be0d0-18e7-46e1-8f5f-7ee4d9020e0d
+'85abd4f4-0a89-4e49-bdec-6f35bb2562ba
+'85d16ec1-0791-4bc8-8ab3-70980602ff8c
+'85e5a5cf-dcee-4075-9cfd-ac9db6a2f245
+'860abe37-9a9b-4fa4-b3d2-b8ace5df9ec5
+'862166b6-c941-4727-9565-48bfff2941de
+'86284c08-0c6e-1540-8b15-75147d23d20d
+'86871d1f-3310-4312-8efd-af49dcfb2671
+'86b021f6-10ab-40a2-a252-1dc0cc3be6a9
+'86b08004-ccee-11d2-9993-0000f87a57d4
+'86b9a69e-f0a6-405d-99bb-77d977992c2a
+'876d6817-35cc-436c-acea-5ef7174dd9be
+'87811bd5-cd8b-45cb-9f5d-980f3a9e0c97
+'87a2d8f9-3b90-11d2-90cc-00c04fd91ab1
+'87b78d51-405f-4b7f-80ed-2bd28786f48d
+'87d0fb41-2c8b-41f6-b972-11fdfd50d6b0
+'87e53590-971d-4a52-955b-4794d15a84ae
+'88611bde-8cf4-11d0-afda-00c04fd930c9
+'88611bdf-8cf4-11d0-afda-00c04fd930c9
+'88611be0-8cf4-11d0-afda-00c04fd930c9
+'88611be1-8cf4-11d0-afda-00c04fd930c9
+'888eedd6-ce04-df40-b462-b8a50e41ba38
+'88a9933e-e5c8-4f2a-9dd7-2527416b8092
+'88e73b34-0aa6-4469-9842-6eb01b32a5b5
+'89848328-7c4e-4f6f-a013-28ce3ad282dc
+'89c1ebcf-7a5f-41fd-99ca-c900b32299ab
+'89e31c12-8530-11d0-afda-00c04fd930c9
+'89e95b76-444d-4c62-991a-0facbeda640c
+'8a0560c1-97b9-4811-9db7-dc061598965b
+'8a167ce4-f9e8-47eb-8d78-f7fe80abb2cc
+'8a5c99e9-2230-46eb-b8e8-e59d712eb9ee
+'8a800772-f4b8-154f-b41c-2e4271eff7a7
+'8ab15858-683e-466d-877f-d640e1f9a611
+'8ac263a6-ccee-11d2-9993-0000f87a57d4
+'8ae70db5-6406-4196-92fe-f3bb557520a7
+'8b70a6c6-50f9-4fa3-a71e-1ce03040449b
+'8bf0221b-7a06-4d63-91f0-1499941813d3
+'8bfd2d3d-efda-4549-852c-f85e137aedc6
+'8c9e1288-5028-4f4f-a704-76d026f246ef
+'8ce6a937-871b-4c92-b285-d99d4036681c
+'8d0e7195-3b90-11d2-90cc-00c04fd91ab1
+'8d3bca50-1d7e-11d0-a081-00aa006c33ed
+'8dfeb70d-c5db-46b6-b15e-a4389e6cee9b
+'8e1685c6-3e2f-48a2-a58d-5af0ea789fa0
+'8e441266-d57f-11d1-90a2-00c04fd91ab1
+'8e4eb2ec-4712-11d0-a1a0-00c04fd930c9
+'8e4eb2ed-4712-11d0-a1a0-00c04fd930c9
+'8e940c8a-e477-4367-b08d-ff2ff942dcd7
+'8ea825aa-3b7b-11d2-90cc-00c04fd91ab1
+'8f4beb31-4e19-46f5-932e-5fa03c339b1d
+'8f4e317f-28d7-442c-a6df-1f491f97b326
+'8f888726-f80a-44d7-b1ee-cb9df21392c8
+'8f905f24-a413-435a-8ed1-35385ec179f7
+'8fb59256-55f1-444b-aacb-f5b482fe3459
+'8fd044e3-771f-11d1-aeae-0000f80367c1
+'8fda89f4-ccee-11d2-9993-0000f87a57d4
+'904f8a93-4954-4c5f-b1e1-53c097a31e13
+'90615414-a2a0-4447-a993-53409599b74e
+'90b769ac-4413-43cf-ad7a-867142e740a3
+'90c1925f-4a24-4b07-b202-be32eb3c8b74
+'90df3c3e-1854-4455-a5d7-cad40d56657a
+'91d67418-0135-4acc-8d79-c08e857cfbec
+'91e647de-d96f-4b70-9557-d63ff4f3ccd8
+'9201ac6f-1d69-4dfb-802e-d95510109599
+'926be278-56f9-11d2-90d0-00c04fd91ab1
+'92aa27e0-5c50-402d-9ec1-ee847def9788
+'92f19c05-8dfa-4222-bbd1-2c4f01487754
+'93095ed3-6f30-4bdd-b734-65d569f5f7c9
+'9339a803-94b8-47f7-9123-a853b9ff7e45
+'936eac41-d257-4bb9-bd55-f310a3cf09ad
+'938ad788-225f-4eee-93b9-ad24a159e1db
+'93c7b477-1f2e-4b40-b7bf-007e8d038ccf
+'93f701be-fa4c-43b6-bc2f-4dbea718ffab
+'9432c620-033c-4db7-8b58-14ef6d0bf477
+'94825a8d-b171-4116-8146-1e34d8f54401
+'94a7b05a-b8b2-4f59-9c25-39e69baa1684
+'94b3a8a9-d613-4cec-9aad-5fbcc1046b43
+'94c42110-bae4-4cea-8577-af813af5da25
+'94c56394-ccee-11d2-9993-0000f87a57d4
+'94f2800c-531f-4aeb-975d-48ac39fd8ca4
+'94f6f2ac-c76d-4b5e-b71f-f332c3e93c22
+'9517fefb-3b90-11d2-90cc-00c04fd91ab1
+'9581215b-5196-4053-a11e-6ffcafc62c4d
+'95b2aef0-27e4-4cb9-880a-a2d9a9ea23b8
+'95b6d8d6-c9e8-4661-a2bc-6a5cabc04c62
+'963d2731-48be-11d1-a9c3-0000f80367c1
+'963d2732-48be-11d1-a9c3-0000f80367c1
+'963d2733-48be-11d1-a9c3-0000f80367c1
+'963d2734-48be-11d1-a9c3-0000f80367c1
+'963d2735-48be-11d1-a9c3-0000f80367c1
+'963d2736-48be-11d1-a9c3-0000f80367c1
+'963d2737-48be-11d1-a9c3-0000f80367c1
+'963d2738-48be-11d1-a9c3-0000f80367c1
+'963d2739-48be-11d1-a9c3-0000f80367c1
+'963d273a-48be-11d1-a9c3-0000f80367c1
+'963d273b-48be-11d1-a9c3-0000f80367c1
+'963d273c-48be-11d1-a9c3-0000f80367c1
+'963d273d-48be-11d1-a9c3-0000f80367c1
+'963d273e-48be-11d1-a9c3-0000f80367c1
+'963d273f-48be-11d1-a9c3-0000f80367c1
+'963d2740-48be-11d1-a9c3-0000f80367c1
+'963d2741-48be-11d1-a9c3-0000f80367c1
+'963d2742-48be-11d1-a9c3-0000f80367c1
+'963d2743-48be-11d1-a9c3-0000f80367c1
+'963d2744-48be-11d1-a9c3-0000f80367c1
+'963d2745-48be-11d1-a9c3-0000f80367c1
+'963d2746-48be-11d1-a9c3-0000f80367c1
+'963d2747-48be-11d1-a9c3-0000f80367c1
+'963d2748-48be-11d1-a9c3-0000f80367c1
+'963d2749-48be-11d1-a9c3-0000f80367c1
+'963d274a-48be-11d1-a9c3-0000f80367c1
+'963d274b-48be-11d1-a9c3-0000f80367c1
+'963d274c-48be-11d1-a9c3-0000f80367c1
+'963d274d-48be-11d1-a9c3-0000f80367c1
+'963d274e-48be-11d1-a9c3-0000f80367c1
+'963d274f-48be-11d1-a9c3-0000f80367c1
+'963d2750-48be-11d1-a9c3-0000f80367c1
+'963d2751-48be-11d1-a9c3-0000f80367c1
+'963d2752-48be-11d1-a9c3-0000f80367c1
+'963d2753-48be-11d1-a9c3-0000f80367c1
+'963d2754-48be-11d1-a9c3-0000f80367c1
+'963d2755-48be-11d1-a9c3-0000f80367c1
+'963d2756-48be-11d1-a9c3-0000f80367c1
+'96400482-cf07-e94c-90e8-f2efc4f0495e
+'9666bb5c-df9d-4d41-b437-2eec7e27c9b3
+'966825f5-01d9-4a5c-a011-d15ae84efa55
+'9684f739-7b78-476d-8d74-31ad7692eef4
+'969d3c79-0e9a-4d95-b0ac-bdde7ff8f3a1
+'96a7dd62-9118-11d1-aebc-0000f80367c1
+'96a7dd63-9118-11d1-aebc-0000f80367c1
+'96a7dd64-9118-11d1-aebc-0000f80367c1
+'96a7dd65-9118-11d1-aebc-0000f80367c1
+'96bc3a1a-e3d2-49d3-af11-7b0df79d67f5
+'9709eaaf-49da-4db2-908a-0446e5eab844
+'974c9a02-33fc-11d3-aa6e-00c04f8eedd8
+'975571df-a4d5-429a-9f59-cdc6581d91e6
+'97d2bf65-0466-4852-a25a-ec20f57ee36c
+'97da709a-3716-4966-b1d1-838ba53c3d89
+'97de9615-b537-46bc-ac0f-10720f3909f3
+'98a7f36d-3595-448a-9e6f-6b8965baed9c
+'9923a32a-3607-11d2-b9be-0000f87a36b2
+'998b10f7-aa1a-4364-b867-753d197fe670
+'998c06ac-3f87-444e-a5df-11b03dc8a50c
+'99a03a6a-ab19-4446-9350-0cb878ed2d9b
+'99b88f52-3b7b-11d2-90cc-00c04fd91ab1
+'99bb1b7a-606d-4f8b-800e-e15be554ca8d
+'9a0dc320-c100-11d1-bbc5-0080c76670c0
+'9a0dc321-c100-11d1-bbc5-0080c76670c0
+'9a0dc322-c100-11d1-bbc5-0080c76670c0
+'9a0dc323-c100-11d1-bbc5-0080c76670c0
+'9a0dc324-c100-11d1-bbc5-0080c76670c0
+'9a0dc325-c100-11d1-bbc5-0080c76670c0
+'9a0dc326-c100-11d1-bbc5-0080c76670c0
+'9a0dc327-c100-11d1-bbc5-0080c76670c0
+'9a0dc328-c100-11d1-bbc5-0080c76670c0
+'9a0dc329-c100-11d1-bbc5-0080c76670c0
+'9a0dc32a-c100-11d1-bbc5-0080c76670c0
+'9a0dc32b-c100-11d1-bbc5-0080c76670c0
+'9a0dc32c-c100-11d1-bbc5-0080c76670c0
+'9a0dc32d-c100-11d1-bbc5-0080c76670c0
+'9a0dc32e-c100-11d1-bbc5-0080c76670c0
+'9a0dc32f-c100-11d1-bbc5-0080c76670c0
+'9a0dc330-c100-11d1-bbc5-0080c76670c0
+'9a0dc331-c100-11d1-bbc5-0080c76670c0
+'9a0dc332-c100-11d1-bbc5-0080c76670c0
+'9a0dc333-c100-11d1-bbc5-0080c76670c0
+'9a0dc334-c100-11d1-bbc5-0080c76670c0
+'9a0dc335-c100-11d1-bbc5-0080c76670c0
+'9a0dc336-c100-11d1-bbc5-0080c76670c0
+'9a0dc337-c100-11d1-bbc5-0080c76670c0
+'9a0dc338-c100-11d1-bbc5-0080c76670c0
+'9a0dc339-c100-11d1-bbc5-0080c76670c0
+'9a0dc33a-c100-11d1-bbc5-0080c76670c0
+'9a0dc33b-c100-11d1-bbc5-0080c76670c0
+'9a0dc33c-c100-11d1-bbc5-0080c76670c0
+'9a0dc33d-c100-11d1-bbc5-0080c76670c0
+'9a0dc33e-c100-11d1-bbc5-0080c76670c0
+'9a0dc33f-c100-11d1-bbc5-0080c76670c0
+'9a0dc340-c100-11d1-bbc5-0080c76670c0
+'9a0dc343-c100-11d1-bbc5-0080c76670c0
+'9a0dc344-c100-11d1-bbc5-0080c76670c0
+'9a0dc345-c100-11d1-bbc5-0080c76670c0
+'9a0dc346-c100-11d1-bbc5-0080c76670c0
+'9a0dc347-c100-11d1-bbc5-0080c76670c0
+'9a7ad940-ca53-11d1-bbd0-0080c76670c0
+'9a7ad941-ca53-11d1-bbd0-0080c76670c0
+'9a7ad942-ca53-11d1-bbd0-0080c76670c0
+'9a7ad943-ca53-11d1-bbd0-0080c76670c0
+'9a7ad944-ca53-11d1-bbd0-0080c76670c0
+'9a7ad945-ca53-11d1-bbd0-0080c76670c0
+'9a7ad946-ca53-11d1-bbd0-0080c76670c0
+'9a7ad947-ca53-11d1-bbd0-0080c76670c0
+'9a7ad948-ca53-11d1-bbd0-0080c76670c0
+'9a7ad949-ca53-11d1-bbd0-0080c76670c0
+'9a7ad94a-ca53-11d1-bbd0-0080c76670c0
+'9a7ad94b-ca53-11d1-bbd0-0080c76670c0
+'9a7ad94c-ca53-11d1-bbd0-0080c76670c0
+'9a7ad94d-ca53-11d1-bbd0-0080c76670c0
+'9a7d4770-ccee-11d2-9993-0000f87a57d4
+'9a9a021e-4a5b-11d1-a9c3-0000f80367c1
+'9a9a021f-4a5b-11d1-a9c3-0000f80367c1
+'9a9a0220-4a5b-11d1-a9c3-0000f80367c1
+'9a9a0221-4a5b-11d1-a9c3-0000f80367c1
+'9ad33fc9-aacf-4299-bb3e-d1fc6ea88e49
+'9b026da6-0d3c-465c-8bee-5199d7165cba
+'9b663eda-3542-46d6-9df0-314025af2bac
+'9b88bda8-dd82-4998-a91d-5f2d2baf1927
+'9c1495a5-4d76-468e-991e-1433b0a67855
+'9c2dcbd2-fbf0-4dc7-ace0-8356dcd0f013
+'9c65329b-3b90-11d2-90cc-00c04fd91ab1
+'9c8ef177-41cf-45c9-9673-7716c0c8901b
+'9c979768-ba1a-4c08-9632-c6a5c1ed649a
+'9cbf3437-4e6e-485b-b291-22b02554273f
+'9cdfdbc5-0304-4569-95f6-c4f663fe5ae6
+'9d054a5a-d187-46c1-9d85-42dfc44a56dd
+'9daadc18-40d1-4ed1-a2bf-6b9bf47d3daa
+'9de8ae7d-7a5b-421d-b5e4-061f79dfd5d7
+'9e67d761-e327-4d55-bc95-682f875e2f8e
+'9e6f3a4d-242c-4f37-b068-36b57f9fc852
+'9e9ebbc8-7da5-42a6-8925-244e12a56e24
+'9edba85a-3e9e-431b-9b1a-a5b6e9eda796
+'9ee3b2e3-c7f3-45f8-8c9f-1382be4984d2
+'9fcc43d4-ccee-11d2-9993-0000f87a57d4
+':
+': 
+': (
+': [
+': ace[
+': attrs[
+': base64.b64encode(obj).decode(
+': ca.get(
+': dn2domain(user[
+': dr[
+': ent[
+': entries[0][
+': entry[
+': f
+': filter_entry(ent[
+': int(entries[0][
+': parsed_dacl[
+': r
+': re.compile(r
+': self.convertfrom_sid(infobject[0][
+': template.attributes[
+': timestamp.strip(
+': user[
+': vulns[
+':([0-9.]+):
+':::
+':[
+':[EXTENDED_RIGHTS_NAME_MAP[
+':infobject[0][
+':infobject[i][
+':scope > div
+':self.convertfrom_sid(infobject[0][
+';
+'; resultUac = 
+';2
+';3
+'<=
+'<H
+'<H-Data
+'<H=0
+'<L
+'<L=0
+'<Q
+'<br>
+'=
+'>
+'>=
+'>H
+'>L
+'?
+'@
+'A
+'ACCESS_DENIED
+'ACE Type
+'ACE created.
+'ACE flags
+'ACE not found in {self.args.targetidentity}
+'ACE type
+'ACEFlags
+'ACEType
+'ACS-Aggregate-Token-Rate-Per-User
+'ACS-Allocable-RSVP-Bandwidth
+'ACS-Cache-Timeout
+'ACS-DSBM-DeadTime
+'ACS-DSBM-Priority
+'ACS-DSBM-Refresh
+'ACS-Direction
+'ACS-Enable-ACS-Service
+'ACS-Enable-RSVP-Accounting
+'ACS-Enable-RSVP-Message-Logging
+'ACS-Event-Log-Level
+'ACS-Identity-Name
+'ACS-Max-Aggregate-Peak-Rate-Per-User
+'ACS-Max-Duration-Per-Flow
+'ACS-Max-No-Of-Account-Files
+'ACS-Max-No-Of-Log-Files
+'ACS-Max-Peak-Bandwidth
+'ACS-Max-Peak-Bandwidth-Per-Flow
+'ACS-Max-Size-Of-RSVP-Account-File
+'ACS-Max-Size-Of-RSVP-Log-File
+'ACS-Max-Token-Bucket-Per-Flow
+'ACS-Max-Token-Rate-Per-Flow
+'ACS-Maximum-SDU-Size
+'ACS-Minimum-Delay-Variation
+'ACS-Minimum-Latency
+'ACS-Minimum-Policed-Size
+'ACS-Non-Reserved-Max-SDU-Size
+'ACS-Non-Reserved-Min-Policed-Size
+'ACS-Non-Reserved-Peak-Rate
+'ACS-Non-Reserved-Token-Size
+'ACS-Non-Reserved-Tx-Limit
+'ACS-Non-Reserved-Tx-Size
+'ACS-Permission-Bits
+'ACS-Policy
+'ACS-Policy-Name
+'ACS-Priority
+'ACS-RSVP-Account-Files-Location
+'ACS-RSVP-Log-Files-Location
+'ACS-Resource-Limits
+'ACS-Server-List
+'ACS-Service-Type
+'ACS-Subnet
+'ACS-Time-Of-Day
+'ACS-Total-No-Of-Flows
+'AES key to use for Kerberos Authentication \
+'ALL:@SECLEVEL=0
+'ALLOWED
+'ANR
+'ATSvc
+'Access denied - you must be admin to enumerate sessions this way
+'Access denied while enumerating Sessions on %s
+'Access mask
+'Access to security descriptor was denied for DN %s
+'AccessMask
+'Account Operators
+'Account-Expires
+'Account-Name-History
+'Ace
+'AceFlags
+'AceType
+'AclRevision
+'Action
+'ActiveDirectoryRights
+'Add Group
+'Add User
+'Add User to Group
+'Add member to group:
+'Add-ADComputer
+'Add-ADGroup
+'Add-ADUser
+'Add-CATemplate
+'Add-CATemplateAcl
+'Add-DomainCATemplate
+'Add-DomainCATemplateAcl
+'Add-DomainComputer
+'Add-DomainDNSRecord
+'Add-DomainGPO
+'Add-DomainGroup
+'Add-DomainGroupMember
+'Add-DomainOU
+'Add-DomainObjectAcl
+'Add-DomainUser
+'Add-GPLink
+'Add-GPO
+'Add-GUID
+'Add-GroupMember
+'Add-OU
+'Add-ObjectAcl
+'Adding a machine account to the domain requires TLS but ldap:// scheme provided. Switching target to LDAPS via StartTLS
+'Adding a user account to the domain requires TLS but ldap:// scheme provided. Switching target to LDAPS via StartTLS
+'Adding new computer with username: %s and password: %s result: OK
+'Adding new user with username: %s and password: %s result: OK
+'Adding user: %s to group %s result: OK
+'Additional-Information
+'Additional-Trusted-Service-Names
+'Address
+'Address-Book-Container
+'Address-Book-Roots
+'Address-Book-Roots2
+'Address-Entry-Display-Table
+'Address-Entry-Display-Table-MSDOS
+'Address-Home
+'Address-Syntax
+'Address-Template
+'Address-Type
+'Admin-Context-Menu
+'Admin-Count
+'Admin-Description
+'Admin-Display-Name
+'Admin-Multiselect-Property-Pages
+'Admin-Property-Pages
+'AdminComment
+'AdminCount
+'Administrators
+'AlignmentPadding
+'All
+'All Services
+'Allocate-Rids
+'Allowed-Attributes
+'Allowed-Attributes-Effective
+'Allowed-Child-Classes
+'Allowed-Child-Classes-Effective
+'Allowed-To-Authenticate
+'Alt-Security-Identities
+'An unknown error occurred.
+'Aniq Fakhrul
+'Anonymous
+'Any Purpose
+'App-Schema-Version
+'Application-Entity
+'Application-Name
+'Application-Process
+'Application-Settings
+'Application-Site-Settings
+'Application-Version
+'Applies-To
+'Apply-Group-Policy
+'Asset-Number
+'Assistant
+'Assoc-NT-Account
+'Assuming relayed user has privileges to escalate a user via ACL attack
+'At least one property must be selected
+'Attempting to create computer in: %s
+'Attempting to create user in: %s
+'Attempts to modify the Security Descriptor.
+'Attribute
+'Attribute msDS-KeyCredentialLink does not exist
+'Attribute-Display-Names
+'Attribute-ID
+'Attribute-Schema
+'Attribute-Security-GUID
+'Attribute-Syntax
+'Attribute-Types
+'Auditing-Policy
+'Authenticate with SIMPLE authentication
+'Authenticated Users
+'Authentication-Options
+'Authority-Revocation-List
+'Auxiliary-Class
+'B
+'B-RawName
+'B-dnsName
+'B=5
+'BASE
+'BUILTIN\\Access Control Assistance Operators
+'BUILTIN\\Certificate Service DCOM Access
+'BUILTIN\\Cryptographic Operators
+'BUILTIN\\Distributed COM Users
+'BUILTIN\\Event Log Readers
+'BUILTIN\\Hyper-V Administrators
+'BUILTIN\\Incoming Forest Trust Builders
+'BUILTIN\\Network Configuration Operators
+'BUILTIN\\Performance Log Users
+'BUILTIN\\Performance Monitor Users
+'BUILTIN\\Pre-Windows 2000 Compatible Access
+'BUILTIN\\RDS Endpoint Servers
+'BUILTIN\\RDS Management Servers
+'BUILTIN\\RDS Remote Access Servers
+'BUILTIN\\Remote Desktop Users
+'BUILTIN\\Remote Management Users
+'BUILTIN\\Terminal Server License Servers
+'BUILTIN\\Windows Authorization Access Group
+'Backup Operators
+'Bad-Password-Time
+'Bad-Pwd-Count
+'Batch
+'Bind interface to expose HTTP server (Default: 0.0.0.0)
+'Birth-Location
+'Bitlocker
+'BooleanOperator
+'BootFile
+'BootParameter
+'BootableDevice
+'Both attribute name and value are required
+'Bridgehead-Server-List-BL
+'Bridgehead-Transport-List
+'Broken pipe
+'Buffer
+'Built GUID: %s
+'Builtin
+'Builtin-Creation-Time
+'Builtin-Domain
+'Builtin-Modified-Count
+'Business-Category
+'Bypassing disabled account %s 
+'Bytes-Per-Minute
+'CA-Certificate
+'CA-Certificate-DN
+'CA-Connect
+'CA-Usages
+'CA-WEB-URL
+'CN=
+'CNAME
+'COM-CLSID
+'COM-ClassID
+'COM-InterfaceID
+'COM-Other-Prog-Id
+'COM-ProgID
+'COM-Treat-As-Class-Id
+'COM-Typelib-Id
+'COM-Unique-LIBID
+'CRL-Distribution-Point
+'CRL-Object
+'CRL-Partitioned-Revocation-List
+'Cache cleared successfully
+'Can-Upgrade-Script
+'Cancel
+'Cannot perform ACL escalation because we do not have create user 
+'Canonical-Name
+'Catalogs
+'Categories
+'Category-Id
+'Category-Registration
+'Certificate Authorities
+'Certificate-Authority-Object
+'Certificate-AutoEnrollment
+'Certificate-Enrollment
+'Certificate-Revocation-List
+'Certificate-Templates
+'Certification-Authority
+'Change-Domain-Master
+'Change-Infrastructure-Master
+'Change-PDC
+'Change-Rid-Master
+'Change-Schema-Master
+'Channel binding is not supported. Ignoring flag
+'Channel binding not supported with LDAP. Proceed with LDAPS
+'Class-Display-Name
+'Class-Registration
+'Class-Schema
+'Class-Store
+'Clear-Cache
+'Client Authentication
+'Code-Page
+'Com-Connection-Point
+'Command execution result:
+'Command parsing error: {str(e)}
+'Comment
+'Common-Name
+'Company
+'ComparisonOperator
+'Computer
+'Computer Configuration
+'Computer added:
+'Computer deleted:
+'Configuration
+'Connected
+'Connection failed - skipping host!
+'Connection-Point
+'Console Logon
+'Contact
+'Container
+'Content-Indexing-Allowed
+'Content-Type
+'Context-Menu
+'Control
+'Control-Access-Right
+'Control-Access-Rights
+'ConvertFrom-SID
+'ConvertFrom-UACValue
+'Copy failed
+'Copy to clipboard
+'Cost
+'Could not determine the zone name
+'Could not query target user properties
+'Could not retrieve infos for user: %s
+'Country
+'Country-Code
+'Country-Name
+'Create group in container:
+'Create user in container:
+'Create-Dialog
+'Create-Inbound-Forest-Trust
+'Create-Time-Stamp
+'Create-Wizard-Ext
+'Creation-Time
+'Creation-Wizard
+'Creator
+'Creator Authority
+'Creator Group
+'Creator Group Server
+'Creator Owner
+'Creator Owner Server
+'Cross-Certificate-Pair
+'Cross-Ref
+'Cross-Ref-Container
+'Curr-Machine-Id
+'Current-Location
+'Current-Parent-CA
+'Current-Value
+'CurrentPassword
+'CurrentPasswordOffset
+'Currently allowed sids:
+'DACL modified successfully!
+'DAV RPC SERVICE
+'DBCS-Pwd
+'DC ip will be ignored because of cross-domain targeting.
+'DC=
+'DC=([\w-]+)
+'DEBUG
+'DESKTOP-
+'DHCP-Class
+'DIT-Content-Rules
+'DMD
+'DMD-Location
+'DMD-Name
+'DN-Reference-Update
+'DNS Hostname not found for this computer
+'DNS record added successfully
+'DNS record deleted successfully
+'DNS record deleted:
+'DNS record details container not found
+'DNS-Host-Name
+'DNS-Property
+'DNS-Tombstoned
+'DOMContentLoaded
+'DS-Bypass-Quota
+'DS-Check-Stale-Phantoms
+'DS-Clone-Domain-Controller
+'DS-Core-Propagation-Data
+'DS-Execute-Intentions-Script
+'DS-Heuristics
+'DS-Install-Replica
+'DS-Query-Self-Quota
+'DS-Read-Partition-Secrets
+'DS-Replication-Get-Changes
+'DS-Replication-Get-Changes-All
+'DS-Replication-Get-Changes-In-Filtered-Set
+'DS-Replication-Manage-Topology
+'DS-Replication-Monitor-Topology
+'DS-Replication-Synchronize
+'DS-Set-Owner
+'DS-UI-Admin-Maximum
+'DS-UI-Admin-Notification
+'DS-UI-Settings
+'DS-UI-Shell-Maximum
+'DS-Validated-Write-Computer
+'DS-Write-Partition-Secrets
+'DSA
+'DSA-Signature
+'Dacl
+'Data
+'DataLength
+'Default-Class-Store
+'Default-Group
+'Default-Hiding-Value
+'Default-Local-Policy-Object
+'Default-Object-Category
+'Default-Priority
+'Default-Security-Descriptor
+'Delegation rights modified succesfully!
+'Delete
+'Delete Computer
+'Delete User
+'Delete computer {} Failed! Maybe the current user does not have permission.
+'Delete computer {} successfully!
+'Delete user from group
+'Delta-Revocation-List
+'Department
+'Description
+'Desktop-Profile
+'Destination-Indicator
+'Details
+'Device
+'Dfs-Configuration
+'Dialup
+'Digest Authority
+'Disable caching of LDAP queries
+'Disable-DomainDNSRecord
+'Disabled
+'Disconnected
+'Display-Name
+'Display-Name-Printable
+'Display-Specifier
+'Display-Template
+'DisplayName
+'Distinguished Name
+'DistinguishedName
+'Distributed File System (DFS)
+'Division
+'Dns-Allow-Dynamic
+'Dns-Allow-XFR
+'Dns-Node
+'Dns-Notify-Secondaries
+'Dns-Record
+'Dns-Root
+'Dns-Secure-Secondaries
+'Dns-Zone
+'Dns-Zone-Scope
+'Dns-Zone-Scope-Container
+'Do not require Kerberos preauthentication
+'Do-Garbage-Collection
+'Domain
+'Domain Admins
+'Domain info dumped into lootdir!
+'Domain retrieved from CCache: %s
+'Domain {pv_args.server} not found or probably not alive
+'Domain-Administer-Server
+'Domain-Certificate-Authorities
+'Domain-Component
+'Domain-Cross-Ref
+'Domain-DNS
+'Domain-ID
+'Domain-Identifier
+'Domain-Other-Parameters
+'Domain-Password
+'Domain-Policy
+'Domain-Policy-Object
+'Domain-Policy-Reference
+'Domain-Replica
+'Domain-Wide-Policy
+'DomainHandle
+'DomainId
+'Driver-Name
+'Driver-Version
+'Dumping domain info for first time
+'Dumping gMSA password requires TLS but ldap:// scheme provided. Switching target to LDAPS via StartTLS
+'Dynamic-LDAP-Server
+'Dynamic-Object
+'E-mail-Addresses
+'EFSPolicy
+'ERROR
+'ESC1
+'Edit
+'Element
+'Email-Information
+'Employee-ID
+'Employee-Number
+'Employee-Type
+'Empty Domain not allowed in Kerberos
+'Enable debug output
+'Enable relay mode
+'Enable web interface for LDAP queries
+'Enable-Per-User-Reversibly-Encrypted-Password
+'Enabled
+'Enabled-Connection
+'Encrypting File System Remote (EFSRPC) Protocol
+'Enforced
+'Enforcement
+'Enrollment Agent
+'Enrollment Rights
+'Enrollment-Providers
+'Enter
+'Enter value to append
+'Enterprise Domain Controllers
+'Entry-TTL
+'Enumerating relayed user\
+'Error adding ACL:
+'Error adding DNS record:
+'Error adding group member:
+'Error adding group:
+'Error adding user:
+'Error appending value:
+'Error binding with SAMR
+'Error checking connection status:
+'Error checking distinguished name:
+'Error clearing cache:
+'Error converting SID
+'Error converting SID:
+'Error converting UAC
+'Error converting UAC:
+'Error converting to Base64:
+'Error deleting DNS record:
+'Error deleting LDAP attribute:
+'Error deleting computer:
+'Error deleting domain object:
+'Error deleting user:
+'Error disconnecting from LDAP server:
+'Error displaying GPO details:
+'Error displaying trusts:
+'Error during initialization:
+'Error executing command:
+'Error fetching CA servers:
+'Error fetching DACL data:
+'Error fetching DNS record details:
+'Error fetching DNS records:
+'Error fetching DNS zones:
+'Error fetching GPO data:
+'Error fetching LDAP attributes:
+'Error fetching OU data:
+'Error fetching certificate templates:
+'Error fetching command logs:
+'Error fetching critical items:
+'Error fetching domain OUs:
+'Error fetching domain admins:
+'Error fetching domain controllers:
+'Error fetching domain info:
+'Error fetching domain trusts:
+'Error fetching group members:
+'Error fetching groups:
+'Error fetching item data:
+'Error fetching items data:
+'Error fetching logon users data:
+'Error fetching sessions data:
+'Error fetching settings data:
+'Error fetching settings:
+'Error fetching single command log:
+'Error fetching subtree:
+'Error handling GPO node click:
+'Error handling OU node click:
+'Error initializing Add Group Member Modal:
+'Error initializing Add Group Modal:
+'Error initializing Add User Modal:
+'Error initializing GPO view:
+'Error initializing OU view:
+'Error initializing Remove Group Member Modal:
+'Error initializing search base:
+'Error loading GPOs:
+'Error loading dashboard:
+'Error loading descendants:
+'Error loading domain content:
+'Error refreshing subtree:
+'Error regex parsing
+'Error removing group member:
+'Error response:
+'Error searching computers:
+'Error searching users:
+'Error toggling OU subtree:
+'Error updating LDAP attribute:
+'Error updating settings:
+'Error when creating RPC connection
+'Error when updating ACL: %s
+'Error while anonymous logging into %s
+'Error:
+'Escape
+'Everyone
+'Exclude DC
+'Expiration Period
+'Expire
+'Extended Rights
+'Extended-Attribute-Info
+'Extended-Chars-Allowed
+'Extended-Class-Info
+'ExtensibleMatchFilter
+'Extension-Name
+'Extra-Columns
+'FRS-Control-Data-Creation
+'FRS-Control-Inbound-Backlog
+'FRS-Control-Outbound-Backlog
+'FRS-DS-Poll
+'FRS-Directory-Filter
+'FRS-Extensions
+'FRS-Fault-Condition
+'FRS-File-Filter
+'FRS-Flags
+'FRS-Level-Limit
+'FRS-Member-Reference
+'FRS-Member-Reference-BL
+'FRS-Partner-Auth-Level
+'FRS-Primary-Member
+'FRS-Replica-Set-GUID
+'FRS-Replica-Set-Type
+'FRS-Root-Path
+'FRS-Root-Security
+'FRS-Service-Command
+'FRS-Service-Command-Status
+'FRS-Staging-Path
+'FRS-Time-Last-Command
+'FRS-Time-Last-Config-Change
+'FRS-Update-Timeout
+'FRS-Version
+'FRS-Version-GUID
+'FRS-Working-Path
+'FSMO-Role-Owner
+'FT-Dfs
+'Facsimile-Telephone-Number
+'Failed password change attempt for {pv_args.identity}
+'Failed to add ACL
+'Failed to add DNS record
+'Failed to add a new computer. The server denied the operation. Try relaying to LDAP with TLS enabled (ldaps) or escalating an existing account.
+'Failed to add a new computer: %s
+'Failed to add a new user. The server denied the operation. Try relaying to LDAP with TLS enabled (ldaps) or escalating an existing user.
+'Failed to add a new user: %s
+'Failed to add group
+'Failed to add group member
+'Failed to add group member. Please try again.
+'Failed to add group. Please try again.
+'Failed to add user to %s group: %s
+'Failed to add user. Please try again.
+'Failed to clear cache
+'Failed to copy text: 
+'Failed to copy to clipboard
+'Failed to delete DNS record
+'Failed to delete object
+'Failed to disconnect from LDAP server
+'Failed to execute command. Please check the console for more details.
+'Failed to fetch DACL data
+'Failed to fetch LDAP attributes
+'Failed to fetch command logs:
+'Failed to fetch domain groups
+'Failed to fetch group members
+'Failed to fetch logon users data
+'Failed to fetch sessions data
+'Failed to fetch settings
+'Failed to fetch single command log:
+'Failed to fetch status
+'Failed to initialize Add Group Member Modal
+'Failed to initialize Add Group Modal
+'Failed to initialize Add User Modal
+'Failed to initialize GPO view
+'Failed to initialize Remove Group Member Modal
+'Failed to load GPO details
+'Failed to load GPOs
+'Failed to load descendants
+'Failed to load domain content
+'Failed to load domain trusts
+'Failed to load linked GPOs
+'Failed to load organizational units
+'Failed to load some dashboard components
+'Failed to remove group member
+'Failed to remove group member. Please try again.
+'Failed to search computers. Please try again.
+'Failed to search users. Please try again.
+'Failed to update settings
+'File-Ext-Priority
+'File-Link-Tracking
+'File-Link-Tracking-Entry
+'Find-ForeignGroup
+'Find-ForeignUser
+'Find-LocalAdminAccess
+'Flags
+'Flat-Name
+'Force-Logoff
+'Foreign-Identifier
+'Foreign-Security-Principal
+'Found AD Domain: %s
+'Found AD domain: %s
+'Found sid for user %s: %s
+'Friendly-Names
+'From-Entry
+'From-Server
+'Frs-Computer-Reference
+'Frs-Computer-Reference-BL
+'FullName
+'GET
+'GMSA Password
+'GP-Link
+'GP-Options
+'GPC-File-Sys-Path
+'GPC-Functionality-Version
+'GPC-Machine-Extension-Names
+'GPC-User-Extension-Names
+'GPC-WQL-Filter
+'GPO Details
+'GPODisplayName
+'GPOName
+'GPOPath
+'GSS-SPNEGO
+'Garbage-Coll-Period
+'Gecos
+'General-Information
+'Generate-RSoP-Logging
+'Generate-RSoP-Planning
+'Generated-Connection
+'Generation-Qualifier
+'Get-ADObject
+'Get-CA
+'Get-CATemplate
+'Get-Domain
+'Get-DomainCA
+'Get-DomainCATemplate
+'Get-DomainComputer
+'Get-DomainController
+'Get-DomainDNSRecord
+'Get-DomainDNSZone
+'Get-DomainForeignGroupMember
+'Get-DomainForeignUser
+'Get-DomainGMSA
+'Get-DomainGPO
+'Get-DomainGPOLocalGroup
+'Get-DomainGPOSettings
+'Get-DomainGroup
+'Get-DomainGroupMember
+'Get-DomainOU
+'Get-DomainObject
+'Get-DomainObjectAcl
+'Get-DomainObjectOwner
+'Get-DomainRBCD
+'Get-DomainSCCM
+'Get-DomainTrust
+'Get-DomainUser
+'Get-Exchange
+'Get-ExchangeServer
+'Get-GMSA
+'Get-GPOLocalGroup
+'Get-GPOSettings
+'Get-LocalUser
+'Get-NamedPipes
+'Get-NetComputer
+'Get-NetDomain
+'Get-NetDomainController
+'Get-NetGPO
+'Get-NetGroup
+'Get-NetGroupMember
+'Get-NetGroupmember
+'Get-NetLoggedOn
+'Get-NetOU
+'Get-NetService
+'Get-NetSession
+'Get-NetShare
+'Get-NetTrust
+'Get-NetUser
+'Get-ObjectAcl
+'Get-ObjectOwner
+'Get-RBCD
+'Get-RegLoggedOn
+'Get-SCCM
+'GidNumber
+'Given-Name
+'Global-Address-List
+'Global-Address-List2
+'GlobalGroups
+'Governs-ID
+'Group
+'Group Members:
+'Group Membership
+'Group Policy Objects
+'Group-Attributes
+'Group-Membership-SAM
+'Group-Of-Names
+'Group-Policy-Container
+'Group-Priority
+'Group-Type
+'GroupDistinguishedName
+'GroupDomain
+'GroupDomainName
+'GroupEnd
+'GroupHandle
+'GroupMemberOf
+'GroupMembers
+'GroupName
+'GroupSID
+'GroupSid
+'GroupStart
+'Groups
+'Groups-to-Ignore
+'Guests
+'HOST/%s
+'HOST/%s.%s
+'HTTPD(%s): Negotiating NTLM with %s://%s failed
+'HTTPD(%s): Negotiating NTLM with %s://%s failed. Skipping to next target
+'Has-Master-NCs
+'Has-Partial-Replica-NCs
+'Hash
+'Help-Data16
+'Help-Data32
+'Help-File-Name
+'Hide-From-AB
+'High Mandatory Level
+'HighPart
+'Home-Directory
+'Home-Drive
+'HomeDirectory
+'HostIP
+'Hostname
+'IEEE802Device
+'INFO
+'IP Address of the domain controller or KDC (Key Distribution Center) for Kerberos. If omitted it will use the domain part (FQDN) specified in the identity parameter
+'IP address
+'IPAddress
+'IPSEC-Negotiation-Policy-Action
+'IPSEC-Negotiation-Policy-Type
+'Icon-Path
+'IdentifierAuthority
+'Idle Time
+'Implemented-Categories
+'Index-Server-Catalog
+'IndexedScopes
+'InfoStruct
+'Infrastructure-Update
+'InheritanceType
+'Inherited type (GUID)
+'InheritedObjectType
+'InheritedObjectTypeLen
+'Initial-Auth-Incoming
+'Initial-Auth-Outgoing
+'Initials
+'Install-Ui-Level
+'Instance-Type
+'Intellimirror-Group
+'Intellimirror-SCP
+'Intended Audience :: Information Technology
+'Inter-Site-Topology-Failover
+'Inter-Site-Topology-Generator
+'Inter-Site-Topology-Renew
+'Inter-Site-Transport
+'Inter-Site-Transport-Container
+'Interactive
+'Internal5
+'International-ISDN-Number
+'Invalid command or arguments
+'Invalid operator
+'Invalid response format
+'Invocation-Id
+'Invoke-Kerberoast
+'IpHost
+'IpHostNumber
+'IpNetmaskNumber
+'IpNetwork
+'IpNetworkNumber
+'IpProtocol
+'IpProtocolNumber
+'IpService
+'IpServicePort
+'IpServiceProtocol
+'Ipsec-Base
+'Ipsec-Data
+'Ipsec-Data-Type
+'Ipsec-Filter
+'Ipsec-Filter-Reference
+'Ipsec-ID
+'Ipsec-ISAKMP-Policy
+'Ipsec-ISAKMP-Reference
+'Ipsec-NFA
+'Ipsec-NFA-Reference
+'Ipsec-Name
+'Ipsec-Negotiation-Policy
+'Ipsec-Negotiation-Policy-Reference
+'Ipsec-Owners-Reference
+'Ipsec-Policy
+'Ipsec-Policy-Reference
+'Is-Critical-System-Object
+'Is-Defunct
+'Is-Deleted
+'Is-Ephemeral
+'Is-Member-Of-DL
+'Is-Member-Of-Partial-Attribute-Set
+'Is-Privilege-Holder
+'Is-Recycled
+'Is-Single-Valued
+'KDC_ERR_ETYPE_NOSUPP
+'KDC_REP
+'KO
+'KRB5 - Kerberos 5
+'KRB5CCNAME
+'Kerberos SessionError: %s(%s)
+'Key not available
+'Keywords
+'Knowledge-Information
+'LAPS
+'LDAP Base: {ca_search_base}
+'LDAP Filter: {enroll_filter}
+'LDAP server port. (Default: 389|636)
+'LDAP sign and seal are not supported. Ignoring flag
+'LDAP sign and seal are supported
+'LDAP-Admin-Limits
+'LDAP-Display-Name
+'LDAP-IPDeny-List
+'LDAPS
+'LEVEL
+'LSA-Creation-Time
+'LSA-Modified-Count
+'LabelCount
+'Last-Backup-Restoration-Time
+'Last-Content-Indexed
+'Last-Known-Parent
+'Last-Logoff
+'Last-Logon
+'Last-Logon-Timestamp
+'Last-Set-Time
+'Last-Update-Sequence
+'LastLogon
+'Leaf
+'Length
+'Level1
+'Level10
+'Lgth
+'License :: OSI Approved :: MIT License
+'Licensing-Site-Settings
+'Link-ID
+'Link-Track-OMT-Entry
+'Link-Track-Object-Move-Table
+'Link-Track-Secret
+'Link-Track-Vol-Entry
+'Link-Track-Volume-Table
+'Lm-Pwd-History
+'Local
+'Local Authority
+'Local System
+'Local-Policy-Flags
+'Local-Policy-Reference
+'LocalGroups
+'Locale-ID
+'Locality
+'Locality-Name
+'Localization-Display-Id
+'Localized-Description
+'Location
+'Lock-Out-Observation-Window
+'Lockout
+'Lockout-Duration
+'Lockout-Threshold
+'Lockout-Time
+'LoginShell
+'Logo
+'Logon-Count
+'Logon-Hours
+'Logon-Workstation
+'LogonCount
+'Lost-And-Found
+'Low Mandatory Level
+'LowPart
+'MAPI-ID
+'MHS-OR-Address
+'MIC
+'MICLen
+'MIT
+'MS KRB5 - Microsoft Kerberos 5
+'MS-DFSNM
+'MS-DRM-Identity-Certificate
+'MS-DS-All-Users-Trust-Quota
+'MS-DS-Consistency-Child-Count
+'MS-DS-Consistency-Guid
+'MS-DS-Creator-SID
+'MS-DS-Machine-Account-Quota
+'MS-DS-Per-User-Trust-Quota
+'MS-DS-Per-User-Trust-Tombstones-Quota
+'MS-DS-Replicates-NC-Reason
+'MS-EFSR
+'MS-EFSRPC
+'MS-NRPC
+'MS-RPRN
+'MS-SAMR
+'MS-SQL-Alias
+'MS-SQL-AllowAnonymousSubscription
+'MS-SQL-AllowImmediateUpdatingSubscription
+'MS-SQL-AllowKnownPullSubscription
+'MS-SQL-AllowQueuedUpdatingSubscription
+'MS-SQL-AllowSnapshotFilesFTPDownloading
+'MS-SQL-AppleTalk
+'MS-SQL-Applications
+'MS-SQL-Build
+'MS-SQL-CharacterSet
+'MS-SQL-Clustered
+'MS-SQL-ConnectionURL
+'MS-SQL-Contact
+'MS-SQL-CreationDate
+'MS-SQL-Database
+'MS-SQL-Description
+'MS-SQL-GPSHeight
+'MS-SQL-GPSLatitude
+'MS-SQL-GPSLongitude
+'MS-SQL-InformationDirectory
+'MS-SQL-InformationURL
+'MS-SQL-Keywords
+'MS-SQL-Language
+'MS-SQL-LastBackupDate
+'MS-SQL-LastDiagnosticDate
+'MS-SQL-LastUpdatedDate
+'MS-SQL-Location
+'MS-SQL-Memory
+'MS-SQL-MultiProtocol
+'MS-SQL-Name
+'MS-SQL-NamedPipe
+'MS-SQL-OLAPCube
+'MS-SQL-OLAPDatabase
+'MS-SQL-OLAPServer
+'MS-SQL-PublicationURL
+'MS-SQL-Publisher
+'MS-SQL-RegisteredOwner
+'MS-SQL-SPX
+'MS-SQL-SQLDatabase
+'MS-SQL-SQLPublication
+'MS-SQL-SQLRepository
+'MS-SQL-SQLServer
+'MS-SQL-ServiceAccount
+'MS-SQL-Size
+'MS-SQL-SortOrder
+'MS-SQL-Status
+'MS-SQL-TCPIP
+'MS-SQL-ThirdParty
+'MS-SQL-Type
+'MS-SQL-UnicodeSortOrder
+'MS-SQL-Version
+'MS-SQL-Vines
+'MS-TS-ExpireDate
+'MS-TS-ExpireDate2
+'MS-TS-ExpireDate3
+'MS-TS-ExpireDate4
+'MS-TS-GatewayAccess
+'MS-TS-LicenseVersion
+'MS-TS-LicenseVersion2
+'MS-TS-LicenseVersion3
+'MS-TS-LicenseVersion4
+'MS-TS-ManagingLS
+'MS-TS-ManagingLS2
+'MS-TS-ManagingLS3
+'MS-TS-ManagingLS4
+'MS-TS-Property01
+'MS-TS-Property02
+'MS-TSLS-Property01
+'MS-TSLS-Property02
+'MSMQ-Authenticate
+'MSMQ-Base-Priority
+'MSMQ-CSP-Name
+'MSMQ-Computer-Type
+'MSMQ-Computer-Type-Ex
+'MSMQ-Configuration
+'MSMQ-Cost
+'MSMQ-Custom-Recipient
+'MSMQ-Dependent-Client-Service
+'MSMQ-Dependent-Client-Services
+'MSMQ-Digests
+'MSMQ-Digests-Mig
+'MSMQ-Ds-Service
+'MSMQ-Ds-Services
+'MSMQ-Encrypt-Key
+'MSMQ-Enterprise-Settings
+'MSMQ-Foreign
+'MSMQ-Group
+'MSMQ-In-Routing-Servers
+'MSMQ-Interval1
+'MSMQ-Interval2
+'MSMQ-Journal
+'MSMQ-Journal-Quota
+'MSMQ-Label
+'MSMQ-Label-Ex
+'MSMQ-Long-Lived
+'MSMQ-Migrated
+'MSMQ-Migrated-User
+'MSMQ-Multicast-Address
+'MSMQ-Name-Style
+'MSMQ-Nt4-Flags
+'MSMQ-Nt4-Stub
+'MSMQ-OS-Type
+'MSMQ-Out-Routing-Servers
+'MSMQ-Owner-ID
+'MSMQ-Prev-Site-Gates
+'MSMQ-Privacy-Level
+'MSMQ-QM-ID
+'MSMQ-Queue
+'MSMQ-Queue-Journal-Quota
+'MSMQ-Queue-Name-Ext
+'MSMQ-Queue-Quota
+'MSMQ-Queue-Type
+'MSMQ-Quota
+'MSMQ-Recipient-FormatName
+'MSMQ-Routing-Service
+'MSMQ-Routing-Services
+'MSMQ-Secured-Source
+'MSMQ-Service-Type
+'MSMQ-Services
+'MSMQ-Settings
+'MSMQ-Sign-Certificates
+'MSMQ-Sign-Certificates-Mig
+'MSMQ-Sign-Key
+'MSMQ-Site-1
+'MSMQ-Site-2
+'MSMQ-Site-Foreign
+'MSMQ-Site-Gates
+'MSMQ-Site-Gates-Mig
+'MSMQ-Site-ID
+'MSMQ-Site-Link
+'MSMQ-Site-Name
+'MSMQ-Site-Name-Ex
+'MSMQ-Sites
+'MSMQ-Transactional
+'MSMQ-User-Sid
+'MSMQ-Version
+'MacAddress
+'Machine-Architecture
+'Machine-Password-Change-Interval
+'Machine-Role
+'Machine-Wide-Policy
+'Mail-Recipient
+'Manage-Optional-Features
+'Managed-By
+'Managed-Objects
+'Manager
+'ManagerApproval
+'Marshalled-Interface
+'Mask
+'Mastered-By
+'Max-Pwd-Age
+'Max-Renew-Age
+'Max-Storage
+'Max-Ticket-Age
+'May-Contain
+'MechToken
+'MechTypes
+'Medium Mandatory Level
+'Medium Plus Mandatory Level
+'Meeting
+'Member
+'Member Count
+'Member Domain
+'Member Name
+'Member Of
+'MemberDistinguishedName
+'MemberDomain
+'MemberName
+'MemberNisNetgroup
+'MemberOf
+'MemberSID
+'MemberUid
+'Members
+'Membership
+'Method {full_method_name} not found
+'Microsoft AT-Scheduler Service
+'Migrate-SID-History
+'Min-Pwd-Age
+'Min-Pwd-Length
+'Min-Ticket-Age
+'Minimum
+'Modified-Count
+'Modified-Count-At-Last-Prom
+'Modify-Time-Stamp
+'Moniker
+'Moniker-Display-Name
+'Move-Tree-State
+'Mscope-Id
+'Msi-File-List
+'Msi-Script
+'Msi-Script-Name
+'Msi-Script-Path
+'Msi-Script-Size
+'Must-Contain
+'N/A
+'NC-Name
+'NETBIOS-Name
+'NS
+'NT Authority
+'NT Service
+'NT VIRTUAL MACHINE\\Virtual Machines
+'NT-Group-Members
+'NT-Mixed-Domain
+'NT-Security-Descriptor
+'NTDS-Connection
+'NTDS-DSA
+'NTDS-DSA-RO
+'NTDS-Service
+'NTDS-Site-Settings
+'NTFRS-Member
+'NTFRS-Replica-Set
+'NTFRS-Settings
+'NTFRS-Subscriber
+'NTFRS-Subscriptions
+'NTLM
+'NTLM Authentication
+'Name
+'Name-Service-Flags
+'Names
+'Netboot-DUID
+'Netboot-GUID
+'Netboot-Initialization
+'Netboot-Machine-File-Path
+'Netboot-Mirror-Data-File
+'Netboot-SIF-File
+'Netlogon Remote Protocol
+'Network
+'Network-Address
+'Never
+'New computer already added. Refusing to add another
+'New computer info %s
+'Next-Level-Store
+'Next-Rid
+'NisMap
+'NisMapEntry
+'NisMapName
+'NisNetgroup
+'NisNetgroupTriple
+'NisObject
+'No DC host set and \
+'No Encryption Data Available!
+'No GPO data found
+'No GPOs linked to this OU
+'No command provided
+'No domain data found
+'No module specified in the command
+'No parent node found
+'No parent subtree found
+'No records available to delete
+'No valid credentials found in cache
+'Nobody
+'Non-Security-Member
+'Non-Security-Member-BL
+'Non-unique Authority
+'None
+'Not Enforced
+'Not found
+'Notification-List
+'Nt-Pwd-History
+'Null Authority
+'OEM-Information
+'OK
+'OM-Object-Class
+'OM-Syntax
+'OMT-Guid
+'OMT-Indx-Guid
+'OU=
+'Obfuscate search filter
+'Obj-Dist-Name
+'Object
+'Object type (GUID)
+'Object-Category
+'Object-Class
+'Object-Class-Category
+'Object-Classes
+'Object-Count
+'Object-Guid
+'Object-Sid
+'Object-Version
+'Object-specific ACE created.
+'ObjectAceFlags
+'ObjectAceType
+'ObjectDN
+'ObjectSID
+'ObjectType
+'ObjectTypeLen
+'OncRpc
+'OncRpcNumber
+'Open-Address-Book
+'Operating-System
+'Operating-System-Hotfix
+'Operating-System-Service-Pack
+'Operating-System-Version
+'Operator-Count
+'Option-Description
+'Options
+'Options-Location
+'Organization
+'Organization-Name
+'Organizational Unit
+'Organizational-Person
+'Organizational-Role
+'Organizational-Unit
+'Organizational-Unit-Name
+'Original-Display-Table
+'Original-Display-Table-MSDOS
+'Other-Login-Workstations
+'Other-Mailbox
+'Other-Name
+'Other-Well-Known-Objects
+'Overlap Period
+'Owner
+'Owner Rights
+'OwnerSid
+'PKI-Certificate-Template
+'PKI-Critical-Extensions
+'PKI-Default-CSPs
+'PKI-Default-Key-Spec
+'PKI-Enrollment-Access
+'PKI-Enrollment-Service
+'PKI-Expiration-Period
+'PKI-Extended-Key-Usage
+'PKI-Key-Usage
+'PKI-Max-Issuing-Depth
+'PKI-Overlap-Period
+'PKT
+'PKT-Guid
+'POST
+'Package-Flags
+'Package-Name
+'Package-Registration
+'Package-Type
+'Parent-CA
+'Parent-CA-Certificate-Chain
+'Parent-GUID
+'Partial-Attribute-Deletion-List
+'Partial-Attribute-Set
+'PasswdNotReq
+'Password Expired
+'Password changed for {pv_args.identity}
+'PasswordExpired
+'PasswordLastSet
+'PasswordMustChange
+'Pek-Key-Change-Interval
+'Pek-List
+'Pending-CA-Certificates
+'Pending-Parent-CA
+'Per-Msg-Dialog-Display-Table
+'Per-Recip-Dialog-Display-Table
+'Performing ACL attack
+'Performing Group attack
+'Permission found: Add member to %s; Reason: Granted to %s
+'Permission found: Create users in %s; Reason: Granted to %s
+'Permission found: Full Control on %s; Reason: GENERIC_ALL via %s
+'Permission found: Full Control on %s; Reason: Owner via %s
+'Permission found: Write Dacl of %s; Reason: Granted to %s
+'Person
+'Personal-Information
+'Personal-Title
+'Phone-Fax-Other
+'Phone-Home-Other
+'Phone-Home-Primary
+'Phone-ISDN-Primary
+'Phone-Ip-Other
+'Phone-Ip-Primary
+'Phone-Mobile-Other
+'Phone-Mobile-Primary
+'Phone-Office-Other
+'Phone-Pager-Other
+'Phone-Pager-Primary
+'Physical-Delivery-Office-Name
+'Physical-Location
+'Physical-Location-Object
+'Picture
+'Please enter a PowerView command.
+'Please enter a value to append
+'Please fill in all fields
+'Please select a DNS zone
+'Please select a member to remove
+'Policy-Replication-Flags
+'Port
+'Port-Name
+'PosixAccount
+'PosixGroup
+'Poss-Superiors
+'Possible-Inferiors
+'Post-Office-Box
+'Postal-Address
+'Postal-Code
+'Power Users
+'PowerView query to be executed one-time
+'PowerView.py
+'Powerview.py
+'Powerview.py - CA
+'Powerview.py - Computers
+'Powerview.py - DNS
+'Powerview.py - Dashboard
+'Powerview.py - GPOs
+'Powerview.py - Groups
+'Powerview.py - OUs
+'Powerview.py - Users
+'Powerview.py - Utils
+'Pre-2k
+'Pre-Windows 2000
+'Pre2k
+'PreauthNotReq
+'Preferences
+'Preferred-Delivery-Method
+'Preferred-OU
+'Prefix-Map
+'Presentation-Address
+'Previous-CA-Certificates
+'Previous-Parent-CA
+'PreviousPassword
+'PreviousPasswordOffset
+'Primary Server
+'Primary-Group-ID
+'Primary-Group-Token
+'Principal Self
+'Principal not found in LDAP (%s)
+'Principal: %s - %s
+'Print Operators
+'Print System Remote Protocol
+'Print-Attributes
+'Print-Bin-Names
+'Print-Collate
+'Print-Color
+'Print-Duplex-Supported
+'Print-End-Time
+'Print-Form-Name
+'Print-Keep-Printed-Jobs
+'Print-Language
+'Print-MAC-Address
+'Print-Max-Copies
+'Print-Max-Resolution-Supported
+'Print-Max-X-Extent
+'Print-Max-Y-Extent
+'Print-Media-Ready
+'Print-Media-Supported
+'Print-Memory
+'Print-Min-X-Extent
+'Print-Min-Y-Extent
+'Print-Network-Address
+'Print-Notify
+'Print-Number-Up
+'Print-Orientations-Supported
+'Print-Owner
+'Print-Pages-Per-Minute
+'Print-Queue
+'Print-Rate
+'Print-Rate-Unit
+'Print-Separator-File
+'Print-Share-Name
+'Print-Spooling
+'Print-Stapling-Supported
+'Print-Start-Time
+'Print-Status
+'Printer-Name
+'Printers
+'Prior-Set-Time
+'Prior-Value
+'Priority
+'Private-Information
+'Private-Key
+'Privilege-Attributes
+'Privilege-Display-Name
+'Privilege-Holder
+'Privilege-Value
+'Product-Code
+'Profile-Path
+'Programming Language :: Python :: 3.10
+'Programming Language :: Python :: 3.11
+'Programming Language :: Python :: 3.5
+'Programming Language :: Python :: 3.6
+'Programming Language :: Python :: 3.7
+'Programming Language :: Python :: 3.8
+'Programming Language :: Python :: 3.9
+'Property already exists
+'Protected Process Mandatory Level
+'Proxied-Object-Name
+'Proxy
+'Proxy-Addresses
+'Proxy-Generation-Enabled
+'Proxy-Lifetime
+'Public-Information
+'Public-Key-Policy
+'Purported-Search
+'Pwd-History-Length
+'Pwd-Last-Set
+'Pwd-Properties
+'Python based PowerView script
+'Quality-Of-Service
+'Query-Filter
+'Query-Policy
+'Query-Policy-BL
+'Query-Policy-Object
+'QueryPasswordInterval
+'QueryPasswordIntervalOffset
+'QueryPoint
+'Querying domain controller information from DNS server {nameserver}
+'Querying domain security descriptor
+'RAS-Information
+'RBCD
+'RDN
+'RDN-Att-ID
+'README.md
+'RID-Allocation-Pool
+'RID-Available-Pool
+'RID-Manager
+'RID-Manager-Reference
+'RID-Next-RID
+'RID-Previous-Allocation-Pool
+'RID-Set
+'RID-Set-References
+'RID-Used-Pool
+'RRAS-Administration-Connection-Point
+'RRAS-Administration-Dictionary
+'Range-Lower
+'Range-Upper
+'Rank
+'RawName
+'Read-Only-Replication-Secret-Synchronization
+'Reanimate-Tombstones
+'Recalculate-Hierarchy
+'Recalculate-Security-Inheritance
+'Receive-As
+'Record Name section not found
+'RecordType
+'Records not found
+'Refresh
+'Refresh-Group-Cache
+'Registered-Address
+'Registry
+'RelativeId
+'RelativeIds
+'Relay mode custom HTTP port (Default: 80)
+'Reload-SSL-Certificate
+'Remote Interactive Logon
+'Remote-Mail-Recipient
+'Remote-Server-Name
+'Remote-Source
+'Remote-Source-Type
+'Remote-Storage-GUID
+'Remote-Storage-Service-Point
+'Remove member from group:
+'Remove-ADComputer
+'Remove-ADObject
+'Remove-ADUser
+'Remove-CATemplate
+'Remove-DomainCATemplate
+'Remove-DomainComputer
+'Remove-DomainDNSRecord
+'Remove-DomainGroupMember
+'Remove-DomainOU
+'Remove-DomainObject
+'Remove-DomainObjectAcl
+'Remove-DomainUser
+'Remove-GPLink
+'Remove-GroupMember
+'Remove-OU
+'Remove-ObjectAcl
+'Repl-Interval
+'Repl-Property-Meta-Data
+'Repl-Topology-Stay-Of-Execution
+'Repl-UpToDate-Vector
+'Replica-Source
+'Replicators
+'Reports
+'Reps-From
+'Reps-To
+'Required elements not found
+'Required-Categories
+'Reserved
+'Residential-Person
+'ResponseToken
+'Restricted Code
+'RestrictedKrbHost/%s
+'RestrictedKrbHost/%s.%s
+'Retired-Repl-DSA-Signatures
+'Retry
+'Revision
+'Rid
+'Rights-Guid
+'Role-Occupant
+'Root DN
+'Root-Trust
+'Rpc-Container
+'Run-Protect-Admin-Groups-Task
+'S-1-0
+'S-1-0-0
+'S-1-1
+'S-1-1-0
+'S-1-16-0
+'S-1-16-12288
+'S-1-16-16384
+'S-1-16-20480
+'S-1-16-28672
+'S-1-16-4096
+'S-1-16-8192
+'S-1-16-8448
+'S-1-2
+'S-1-2-0
+'S-1-2-1
+'S-1-3
+'S-1-3-0
+'S-1-3-1
+'S-1-3-2
+'S-1-3-3
+'S-1-3-4
+'S-1-4
+'S-1-5
+'S-1-5-1
+'S-1-5-10
+'S-1-5-11
+'S-1-5-12
+'S-1-5-13
+'S-1-5-14
+'S-1-5-15
+'S-1-5-17
+'S-1-5-18
+'S-1-5-19
+'S-1-5-2
+'S-1-5-20
+'S-1-5-3
+'S-1-5-32-544
+'S-1-5-32-545
+'S-1-5-32-546
+'S-1-5-32-547
+'S-1-5-32-548
+'S-1-5-32-549
+'S-1-5-32-550
+'S-1-5-32-551
+'S-1-5-32-552
+'S-1-5-32-554
+'S-1-5-32-555
+'S-1-5-32-556
+'S-1-5-32-557
+'S-1-5-32-558
+'S-1-5-32-559
+'S-1-5-32-560
+'S-1-5-32-561
+'S-1-5-32-562
+'S-1-5-32-569
+'S-1-5-32-573
+'S-1-5-32-574
+'S-1-5-32-575
+'S-1-5-32-576
+'S-1-5-32-577
+'S-1-5-32-578
+'S-1-5-32-579
+'S-1-5-32-580
+'S-1-5-4
+'S-1-5-6
+'S-1-5-64-10
+'S-1-5-64-14
+'S-1-5-64-21
+'S-1-5-7
+'S-1-5-8
+'S-1-5-80
+'S-1-5-80-0
+'S-1-5-83-0
+'S-1-5-9
+'SAM Account Name
+'SAM-Account-Name
+'SAM-Account-Type
+'SAM-Domain-Updates
+'SAM-Enumerate-Entire-Domain
+'SAMAccountName
+'SAMR
+'SChannel Authentication
+'SD-Rights-Effective
+'SICILY_RESPONSE_NTLM
+'SID not found in LDAP: %s
+'SID-History
+'SMTP-Mail-Address
+'SOA
+'SPN
+'SPN-Mappings
+'SRV
+'STATUS_MORE_ENTRIES
+'STATUS_PIPE_NOT_AVAILABLE
+'SUBTREE
+'SUCCESS
+'Sacl
+'Sam-Domain
+'Sam-Domain-Base
+'Sam-Server
+'Save
+'Saving ticket in %s
+'Sbz1
+'Sbz2
+'Schedule
+'Schema-Flags-Ex
+'Schema-ID-GUID
+'Schema-Info
+'Schema-Update
+'Schema-Version
+'Scope-Flags
+'Script-Path
+'Scripts
+'Search-Flags
+'Search-Guide
+'Secret
+'Secure Process Mandatory Level
+'Security
+'Security Account Manager (SAM) Remote Protocol
+'Security-Identifier
+'Security-Object
+'Security-Principal
+'SecurityIdentifier
+'See-Also
+'Self-Membership
+'Send-As
+'Send-To
+'Seq-Notification
+'Serial
+'Serial-Number
+'Server
+'Server Operators
+'Server rejected authentication because LDAP signing is enabled. Try connecting with TLS enabled (specify target as ldaps://hostname )
+'Server-Name
+'Server-Reference
+'Server-Reference-BL
+'Server-Role
+'Server-State
+'ServerHandle
+'Servers-Container
+'Service
+'Service-Administration-Point
+'Service-Binding-Information
+'Service-Class
+'Service-Class-ID
+'Service-Class-Info
+'Service-Class-Name
+'Service-Connection-Point
+'Service-DNS-Name
+'Service-DNS-Name-Type
+'Service-Instance
+'Service-Instance-Version
+'Service-Principal-Name
+'ServiceStatus
+'SessionInfo
+'Set-ADObject
+'Set-ADObjectDN
+'Set-CATemplate
+'Set-DomainCATemplate
+'Set-DomainComputerPassword
+'Set-DomainDNSRecord
+'Set-DomainObject
+'Set-DomainObjectDN
+'Set-DomainObjectOwner
+'Set-DomainRBCD
+'Set-DomainUserPassword
+'Set-ObjectOwner
+'Set-RBCD
+'Settings updated successfully
+'Setup-Command
+'Shadow Cred
+'ShadowAccount
+'ShadowExpire
+'ShadowFlag
+'ShadowInactive
+'ShadowLastChange
+'ShadowMax
+'ShadowMin
+'ShadowWarning
+'Shell-Context-Menu
+'Shell-Property-Pages
+'Short-Server-Name
+'Show-In-Address-Book
+'Show-In-Advanced-View-Only
+'Sid
+'SidPointer
+'Sids
+'Sign and seal not supported with LDAPS
+'Sign and seal not supported with LDAPS. Falling back to LDAP
+'Signature-Algorithms
+'Site
+'Site-GUID
+'Site-Link
+'Site-Link-Bridge
+'Site-Link-List
+'Site-List
+'Site-Object
+'Site-Object-BL
+'Site-Server
+'Sites-Container
+'Skip admin check when first logging in
+'Skipping %s/%s due to incompatible e-type %d
+'Skipping WRITE_DACL since it has an ObjectType set
+'Specify custom bind interface (Default: 127.0.0.1)
+'Specify custom port for web interface (Default: 5000)
+'StartTLS failed
+'Started interactive Ldap shell via TCP on 127.0.0.1:%d
+'State-Or-Province-Name
+'Status
+'Storage
+'Street-Address
+'Structural-Object-Class
+'Sub-Class-Of
+'Sub-Refs
+'SubAuthority
+'SubAuthorityCount
+'SubSchema
+'SubSchemaSubEntry
+'Subnet
+'Subnet-Container
+'Success! GenericAll privileges restored for %s
+'Success! GenericWrite privileges restored for %s
+'Success! Replication-Get-Changes-All privileges restored for %s
+'Success! Reset Password privileges restored for %s
+'Success! User %s now has GenericAll privileges on %s
+'Success! User %s now has Replication-Get-Changes-All privileges on the domain
+'Success! User %s now has Reset Password privileges on %s
+'Success:
+'Successfully added ACL
+'Successfully deleted object
+'Successfully disconnected from LDAP server
+'Successfully removed {user_dn} from domain
+'Super-Scope-Description
+'Super-Scopes
+'Superior-DNS-Root
+'Supplemental-Credentials
+'Supply .pfx formatted certificate. Use --cert and --key if no pfx
+'Supported-Application-Context
+'Surname
+'Sync-Attributes
+'Sync-Membership
+'Sync-With-Object
+'Sync-With-SID
+'System Mandatory Level
+'System-Auxiliary-Class
+'System-Flags
+'System-May-Contain
+'System-Must-Contain
+'System-Only
+'System-Poss-Superiors
+'SystemLibraryDTC
+'TGT: %s
+'TLS channel binding is supported
+'TLS channel binding not supported with LDAP
+'TTL
+'Target account does not exist! (wrong domain?)
+'Telephone-Number
+'Teletex-Terminal-Identifier
+'Telex-Number
+'Telex-Primary
+'Template OID
+'Template-Roots
+'Template-Roots2
+'Terminal Server Users
+'Terminal-Server
+'Terminal-Server-License-Server
+'Text-Country
+'Text-Encoded-OR-Address
+'The server returned an error: %s
+'This Organization
+'Time-Refresh
+'Time-Vol-Change
+'TimeStamp
+'Title
+'Token-Groups
+'Token-Groups-Global-And-Universal
+'Token-Groups-No-GC-Acceptable
+'Tombstone-Lifetime
+'Top
+'Total Computers Found: 0
+'Total Users Found: 0
+'Total of records returned %d
+'Transport-Address-Attribute
+'Transport-DLL-Name
+'Transport-Type
+'Treat-As-Leaf
+'Tree-Name
+'True
+'Trust
+'Trust-Attributes
+'Trust-Auth-Incoming
+'Trust-Auth-Outgoing
+'Trust-Direction
+'Trust-Parent
+'Trust-Partner
+'Trust-Posix-Offset
+'Trust-Type
+'Trusted To Auth
+'Trusted-Domain
+'TrustedToAuth
+'Trustee (SID)
+'Trying to connect to KDC at %s
+'TtlSeconds
+'Type
+'Type-Library
+'TypeName
+'UAS-Compat
+'UNC-Name
+'UPN-Suffixes
+'USN-Changed
+'USN-Created
+'USN-DSA-Last-Obj-Removed
+'USN-Intersite
+'USN-Last-Obj-Rem
+'USN-Source
+'UidNumber
+'Unable to escalate without a valid user.
+'UnchangedPasswordInterval
+'UnchangedPasswordIntervalOffset
+'Unconstrained
+'Unexpected data format:
+'Unexpire-Password
+'Unicode
+'Unicode-Pwd
+'UnixHomeDirectory
+'UnixUserPassword
+'Unknown error
+'Unlock-ADAccount
+'Unnamed GPO
+'Unnamed OU
+'Untrusted Mandatory Level
+'Update-Password-Not-Required-Bit
+'Update-Schema-Cache
+'UpdatedAtSerial
+'Upgrade-Product-Code
+'Use system nameserver to resolve hostname/domain
+'User
+'User Configuration
+'User deleted:
+'User distinguishedName is required
+'User is a member of: %s
+'User not found in LDAP: %s
+'User privileges found: Adding user to a privileged group (%s)
+'User privileges found: Create user
+'User privileges found: Modifying domain ACL
+'User {pv_args.members} successfully added to {pv_args.identity}
+'User {pv_args.members} successfully removed from {pv_args.identity}
+'User-Account-Control
+'User-Account-Restrictions
+'User-Cert
+'User-Change-Password
+'User-Comment
+'User-Force-Change-Password
+'User-Logon
+'User-Parameters
+'User-Password
+'User-Principal-Name
+'User-SMIME-Certificate
+'User-Shared-Folder
+'User-Shared-Folder-Other
+'User-Workstations
+'UserAccountControl
+'UserDistinguishedName
+'UserDomain
+'UserHandle
+'UserInfo
+'UserInformationClass
+'UserName
+'UserPassword
+'Username retrieved from CCache: %s
+'Users
+'Using Kerberos Cache: %s
+'Using TGS from cache
+'Using TGT from cache
+'Valid-Accesses
+'Validated-DNS-Host-Name
+'Validated-MS-DS-Additional-DNS-Host-Name
+'Validated-MS-DS-Behavior-Version
+'Validated-SPN
+'Value
+'Vendor
+'Version
+'Version-Number
+'Version-Number-Hi
+'Version-Number-Lo
+'VersionLen
+'Vol-Table-GUID
+'Vol-Table-Idx-GUID
+'Volume
+'Volume-Count
+'Vulnerable
+'WARNING
+'WINS
+'WWW-Home-Page
+'WWW-Page-Other
+'Wbem-Path
+'We have more than one ip. Please choose one that is reachable
+'Web-Information
+'WebClient
+'WebDAV WebClient Service
+'Weight
+'Well-Known-Objects
+'When-Changed
+'When-Created
+'Winsock-Addresses
+'WkstaUserInfo
+'WorkStations
+'World Authority
+'Write Dacl
+'Write Dacl Principals
+'Write Owner
+'Write Owner Principals
+'Write Property
+'Write Property Principals
+'X121-Address
+'X509-Cert
+'Z
+'ZERO
+'Zone Admin Email
+'Zone name container not found
+'[
+'[%(asctime)s] %(message)s
+'[%(asctime)s] %(name)s %(levelname)s %(message)s
+'[&|!]
+'[Add-DomainDNSRecord] Success! Created new record with dn %s
+'[Add-DomainGroupMember] Group {identity} not found in domain
+'[Add-DomainGroupMember] User {members} not found in domain. Try to use DN
+'[Add-DomainGroup] Success! Created new group
+'[Add-DomainObjectACL] Found principal identity: {principal_dn if principal_dn else principal_sAMAccountName}
+'[Add-DomainObjectACL] Found target identity: {target_dn if target_dn else target_sAMAccountName}
+'[Add-DomainObjectACL] Principal Identity object not found in domain
+'[Add-DomainObjectACL] Target Identity object not found in domain
+'[Add-DomainObjectAcl] Principal not found. Searching in Well Known SIDs...
+'[Add-DomainUser] Success! Created new user
+'[Find-LocaAdminAccess] FQDN must be used for kerberos authentication
+'[Get-DomainComputer] LDAP search filter: {ldap_filter}
+'[Get-DomainComputer] Using additional LDAP filter: {args.ldapfilter}
+'[Get-DomainController] Using additional LDAP filter: {args.ldapfilter}
+'[Get-DomainGPO] LDAP search filter: {ldap_filter}
+'[Get-DomainGPO] Using additional LDAP filter: {args.ldapfilter}
+'[Get-DomainGroup] Filter is based on member property {ldap_filter}
+'[Get-DomainGroup] LDAP search filter: {ldap_filter}
+'[Get-DomainGroup] Using additional LDAP filter: {args.ldapfilter}
+'[Get-DomainOU] LDAP search filter: {ldap_filter}
+'[Get-DomainOU] Using additional LDAP filter: {args.ldapfilter}
+'[Get-DomainObjectAcl] Identity not found in domain
+'[Get-DomainObjectAcl] Identity {identity} not found. Try to use DN
+'[Get-DomainObjectAcl] Multiple identities found. Use exact match
+'[Get-DomainObjectAcl] Principal not found. Searching in Well Known SIDs...
+'[Get-DomainObjectAcl] Principal {security_identifier} not found. Try to use DN
+'[Get-DomainObjectAcl] Recursing all domain objects. This might take a while
+'[Get-DomainObject] LDAP search filter: {ldap_filter}
+'[Get-DomainObject] Using additional LDAP filter from args: {args.ldapfilter}
+'[Get-DomainSCCM] LDAP search filter: {ldap_filter}
+'[Get-DomainSCCM] Using additional LDAP filter: {args.ldapfilter}
+'[Get-DomainTrust] LDAP search filter: {ldap_filter}
+'[Get-DomainUser] LDAP search filter: {ldap_filter}
+'[Get-DomainUser] Searching for adminCount=1
+'[Get-DomainUser] Searching for locked out user
+'[Get-DomainUser] Searching for users that are configured to allow resource-based constrained delegation
+'[Get-DomainUser] Searching for users that are trusted to authenticate for other principals
+'[Get-DomainUser] Searching for users who are sensitive and not trusted for delegation
+'[Get-DomainUser] Searching for users who can be delegated
+'[Get-DomainUser] Using additional LDAP filter: {args.ldapfilter}
+'[Get-Domain] LDAP search filter: {ldap_filter}
+'[Get-Domain] Using additional LDAP filter: {args.ldapfilter}
+'[Get-NamedPipes] FQDN must be used for kerberos authentication
+'[Get-NamedPipes] Host not found
+'[Get-NetLoggedOn] Access denied - you must be admin to enumerate sessions this way
+'[Get-NetLoggedOn] Broken pipe
+'[Get-NetLoggedOn] Connection failed - skipping host!
+'[Get-NetLoggedOn] No sessions found!
+'[Get-NetShare] FQDN must be used for kerberos authentication
+'[Invoke-Kerberoast] LDAP Filter string: {ldap_filter}
+'[Optional] Use GlobalCatalog (GC) protocol
+'[Optional] Use GlobalCatalog (GC) protocol for LDAPS
+'[Optional] Use LDAP instead of LDAPS
+'[Optional] Use LDAPS instead of LDAP
+'[Optional] Use channel binding if channel binding is required on LDAP server
+'[Optional] Use sign and seal if LDAP signing is required on ldap server
+'[Remove-DomainGroupmember] Group {identity} not found in domain
+'[Remove-DomainObjectACL] Found principal identity: {principal_dn if principal_dn else principal_sAMAccountName}
+'[Remove-DomainObjectACL] Found target identity: {target_dn if target_dn else target_sAMAccountName}
+'[Remove-DomainObjectACL] Principal Identity object not found in domain
+'[Remove-DomainObjectACL] Target Identity object not found in domain
+'[Remove-DomainObjectAcl] Principal not found. Searching in Well Known SIDs...
+'[Remove-DomainObject] Success! {targetobject_dn} removed
+'[Remove-DomainUser] Identity is required
+'[Remove-DomainUser] Identity not found in domain
+'[Set-DomainCATempalte] Found template dn {target_template[0].entry_dn}
+'[Set-DomainCATemplate] More than one template found
+'[Set-DomainCATemplate] Success! modified attribute for {identity} template
+'[Set-DomainDNSRecord] Success! modified attribute for target record %s
+'[Set-DomainObject] Success! modified new dn for {targetobject_dn}
+'[Set-DomainUserPassword] Multiple principal objects found in domain. Use specific identifier
+'[Set-DomainUserPassword] No principal object found in domain
+'[[domain/]username[:password]@]<targetName or address>
+'[]
+'[data-dismiss-target]
+'[data-modal-hide]
+'[dummy_section]\n
+'\
+'\(
+'\)
+'\033[0m
+'\033[1m
+'\033[2;37m
+'\033[4m
+'\033[91m
+'\033[92m
+'\033[93m
+'\033[94m
+'\033[95m
+'\033[96m
+'\\
+'\\$1
+'\\MACHINE\\Microsoft\\Windows NT\\SecEdit\\GptTmpl.inf
+'\\MACHINE\\Preferences
+'\\MACHINE\\Registry.pol
+'\\MACHINE\\Scripts\\scripts.ini
+'\\USER\\Preferences
+'\\USER\\Registry.pol
+'\\USER\\Scripts\\scripts.ini
+'\\\\%s\x00
+'\\n
+'\drsuapi
+'\n
+'\nNT ERROR: %s(%s)
+'\samr
+'\srvsvc
+'\u0000
+'\u0001
+'\x00
+'\x01
+'\x1b[31;1m
+'\{(.*?)\}
+']
+'] != 
+'] != ACCESS_ALLOWED_OBJECT_ACE.ACE_TYPE and ace[
+'] != ACCESS_ALLOWED_OBJECT_ACE.ACE_TYPE or ace[
+'] << 32) + large_integer[
+'] = 
+'] = Namespace(**params[
+'] = [TypesMech[
+'] = ace[
+'] = b
+'] = cryptPassword(b
+'] = decodedTGT[
+'] = ent[
+'] = entry[
+'] = get_time_string(user_info[
+'] = host2ip(entry[
+'] = list(map(lambda a: a[
+'] = list(set(attrs[
+'] = list(set(list(attrs[
+'] = object_control_permissions[
+'] = opened_user[
+'] = record_data[
+'] = self.powerview.convertfrom_sid(ace[
+'] = self.rawData[self[
+'] = str(host[
+'] = struct.pack(
+'] = t.get(
+'] = t.getlist(
+'] = user_info[
+'] = {
+'] == 
+'] == 2 or record[
+'] == ACCESS_ALLOWED_OBJECT_ACE.ACE_TYPE  and ace[
+'] == RESULT_STRONGER_AUTH_REQUIRED and self.PLUGIN_NAME != 
+'] == b
+'] == compare_ace[
+'] > 0 ? 
+'] ? 
+'] ? `${attrs[
+'] else user_info[
+'] in standardrights or ace[
+'] is None or etype2[
+'] is None or etype[
+']) == 1 and isinstance(attrs[
+']).lower() == 
+'])[
+'])][
+']-self[
+'].decode(
+'].encode(
+'].fields.keys() and 
+'].fromCanonical(
+'].get(
+'].keys())))}: {f
+'].keys()))+3)}
+'].lower() != 
+'].lower() for name in self.get_domaindnszone(properties=[
+'].prettyPrint().split(b
+'].split(
+'].value if entries[0][
+'].value) if entries[0][
+'].values if entries[0][
+']:][:endData - self[
+']:][:self[
+'][
+'][-1] != 
+'][-2] == 
+'][0][
+'][1][
+'][i] = self.convertfrom_sid(parsed_dacl[
+'][ind+1:ind+1+nextlen].decode(
+'][index][
+'][j] = self.convertfrom_sid(parsed_dacl[
+'][k] = self.convertfrom_sid(parsed_dacl[
+'][key] = self.clean_value(entry[
+'][y] = self.convertfrom_sid(parsed_dacl[
+']}
+']} minutes` : 
+']}={item[
+']}{LdapObfuscate.random_spaces() if not skip_random_spacing and self.enable_spacing else 
+']}{LdapObfuscate.random_spaces() if self.enable_spacing else 
+'_
+'__bytes__
+'__datetime__
+'__main__
+'__timedelta__
+'_ldap._tcp.pdc._msdcs
+'_ldap._tcp.pdc._msdcs.{domain}
+'a
+'a05b8cc2-17bc-4802-a710-e7c15ab866a2
+'a0dcd536-5158-42fe-8c40-c00a7ad37959
+'a0ed2ac1-970c-4777-848e-ec63a0ec44fc
+'a11703b7-5641-4d9c-863e-5fb3325e74e0
+'a12e0e9f-dedb-4f31-8f21-1311b958182f
+'a13df4e2-dbb0-4ceb-828b-8b2e143e9e81
+'a16f33c7-7fd6-4828-9364-435138fda08d
+'a1990816-4298-11d1-ade2-00c04fd8d5cd
+'a1e8b54f-4bd6-4fd2-98e2-bcee92a55497
+'a2e11a42-e781-4ca1-a7fa-ec307f62b6a1
+'a331a73f-3b90-11d2-90cc-00c04fd91ab1
+'a34f983b-84c6-4f0c-9050-a3a14a1d35a4
+'a3e03f1f-1d55-4253-a0af-30c2a784e46e
+'a42cd510-ccee-11d2-9993-0000f87a57d4
+'a45398b7-c44a-4eb6-82d3-13c10946dbfe
+'a4da7289-92a3-42e5-b6b6-dad16d280ac9
+'a553d12c-3231-4c5e-8adf-8d189697721e
+'a5679cb0-6f9d-432c-8b75-1e3e834f02aa
+'a5f3b553-5d76-4cbe-ba3f-4312152cab18
+'a601b091-8652-453a-b386-87ad239b7c08
+'a637d211-5739-4ed1-89b2-88974548bc59
+'a68359dc-a581-4ee6-9015-5382c60f0fb4
+'a699e529-a637-4b7d-a0fb-5dc466a0b8a7
+'a6f24a23-d65c-4d65-a64f-35fb6873c2b9
+'a744f666-3d3c-4cc8-834b-9d4f6f687b8b
+'a746f0d1-78d0-11d2-9916-0000f87a57d4
+'a76b8737-e5a1-4568-b057-dc12e04be4b2
+'a8032e74-30ef-4ff5-affc-0fc217783fec
+'a8df73ef-c5ea-11d1-bbcb-0080c76670c0
+'a8df73f0-c5ea-11d1-bbcb-0080c76670c0
+'a8df73f2-c5ea-11d1-bbcb-0080c76670c0
+'a8df744b-c5ea-11d1-bbcb-0080c76670c0
+'a8df7465-c5ea-11d1-bbcb-0080c76670c0
+'a8df7489-c5ea-11d1-bbcb-0080c76670c0
+'a8df7498-c5ea-11d1-bbcb-0080c76670c0
+'a8df74bf-c5ea-11d1-bbcb-0080c76670c0
+'a8df74d6-c5ea-11d1-bbcb-0080c76670c0
+'a8e8aa23-3e67-4af1-9d7a-2f1a1d633ac9
+'a916d7c9-3b90-11d2-90cc-00c04fd91ab1
+'a92d23da-ccee-11d2-9993-0000f87a57d4
+'a9b38cb6-189a-4def-8a70-0fcfa158148e
+'a9e84eed-e630-4b67-b4b3-cad2a82d345e
+'aa02fd41-17e0-4f18-8687-b2239649736b
+'aa12854c-d8fc-4d5e-91ca-368b8d829bee
+'aa156612-2396-467e-ad6a-28d23fdb1865
+'aa1c88fd-b0f6-429f-b2ca-9d902266e808
+'aa4e1a6d-550d-4e05-8c35-4afcb917a9fe
+'aacd2170-482a-44c6-b66e-42c2f66a285c
+'aae4d537-8af0-4daa-9cc6-62eadb84ff03
+'ab5543ad-23a1-3b45-b937-9b313d5474a8
+'ab6a1156-4dc7-40f5-9180-8e4ce42fe5cd
+'ab721a52-1e2f-11d0-9819-00aa0040529b
+'ab721a53-1e2f-11d0-9819-00aa0040529b
+'ab721a54-1e2f-11d0-9819-00aa0040529b
+'ab721a55-1e2f-11d0-9819-00aa0040529b
+'ab721a56-1e2f-11d0-9819-00aa0040529b
+'ab857078-0142-4406-945b-34c9b6b13372
+'ab911646-8827-4f95-8780-5a8f008eb68f
+'ab920883-e7f8-4d72-b4a0-c0449897509d
+'absolute right-2 top-1/2 -translate-y-1/2 flex gap-3 items-center
+'account
+'accountActive
+'accountExpires
+'accountactive
+'accountexpires-toggle
+'accountpassword
+'ace-type
+'ace_type
+'acl-rights
+'aclEscalate
+'aclEscalateIn
+'active
+'ad44bb41-67d5-4d88-b575-7b20674e76d8
+'ad7940f8-e43a-4a42-83bc-d688e59ea605
+'add-adcomputer
+'add-adgroup
+'add-aduser
+'add-catemplate
+'add-catemplateacl
+'add-computer-form
+'add-computer-modal
+'add-dns-record-form
+'add-dns-record-modal
+'add-domaincatemplate
+'add-domaincatemplateacl
+'add-domaincomputer
+'add-domaindnsrecord
+'add-domaingpo
+'add-domaingroup
+'add-domaingroupmember
+'add-domainobjectacl
+'add-domainou
+'add-domainuser
+'add-gplink
+'add-gpo
+'add-group-form
+'add-group-member-form
+'add-group-member-modal
+'add-group-modal
+'add-groupmember
+'add-new-attribute
+'add-object-acl-form
+'add-object-acl-modal
+'add-object-acl-modal\
+'add-objectacl
+'add-ou
+'add-user-form
+'add-user-modal
+'add5cf10-7b09-4449-9ae6-2534148f8a72
+'add_operation
+'adde62c6-1880-41ed-bd3c-30b7d25e14f0
+'address
+'admin-count-toggle
+'adminCount
+'admincount
+'admincount-toggle
+'ae0c11b8-ccee-11d2-9993-0000f87a57d4
+'ae18119f-6390-0045-b32d-97dbc701aef7
+'ae2de0e2-59d7-4d47-8d47-ed4dfe4357ad
+'aec2cfe3-3b90-11d2-90cc-00c04fd91ab1
+'afa58eed-a698-417e-9f56-fad54252c5f4
+'afb863c9-bea3-440f-a9f3-6153cc668929
+'aff16770-9622-4fbc-a128-3088777605b9
+'afterend
+'alert-message-error
+'alert-message-success
+'all
+'all-toggle
+'allowdelegation
+'allowed
+'allowedWorkstation
+'allowedworkstation
+'aniqfakhrull@gmail.com
+'ap-options
+'append
+'application/json
+'argparse
+'args
+'aria-controls
+'aria-hidden
+'aria-selected
+'ascii
+'associatedDomain
+'associatedName
+'atsvc
+'attr
+'attribute
+'attributeCertificateAttribute
+'attributes
+'audio
+'authentication
+'authenticator
+'authenticator-vno
+'b000ea7a-a086-11d0-afdd-00c04fd930c9
+'b000ea7b-a086-11d0-afdd-00c04fd930c9
+'b002f407-1340-41eb-bca0-bd7d938e25a9
+'b05bda89-76af-468a-b892-1be55558ecc8
+'b11c8ee2-5fcd-46a7-95f0-f38333f096cf
+'b1cba91a-0682-4362-a659-153e201ef069
+'b21b3439-4c3a-441c-bb5f-08f20e9b315e
+'b222ba0e-ccee-11d2-9993-0000f87a57d4
+'b23fc141-0df5-4aea-b33d-6cf493077b3f
+'b39a61be-ed07-4cab-9a4a-4963ed0141e1
+'b3f93023-9239-4f7c-b99c-6745d87adbc2
+'b40ff81c-427a-11d1-a9c2-0000f80367c1
+'b40ff81d-427a-11d1-a9c2-0000f80367c1
+'b40ff81e-427a-11d1-a9c2-0000f80367c1
+'b40ff81f-427a-11d1-a9c2-0000f80367c1
+'b40ff820-427a-11d1-a9c2-0000f80367c1
+'b40ff821-427a-11d1-a9c2-0000f80367c1
+'b40ff822-427a-11d1-a9c2-0000f80367c1
+'b40ff823-427a-11d1-a9c2-0000f80367c1
+'b40ff824-427a-11d1-a9c2-0000f80367c1
+'b40ff825-427a-11d1-a9c2-0000f80367c1
+'b40ff826-427a-11d1-a9c2-0000f80367c1
+'b40ff827-427a-11d1-a9c2-0000f80367c1
+'b40ff828-427a-11d1-a9c2-0000f80367c1
+'b40ff829-427a-11d1-a9c2-0000f80367c1
+'b47f510d-6b50-47e1-b556-772c79e4ffc4
+'b4b54e50-943a-11d1-aebd-0000f80367c1
+'b4e60130-df3f-11d1-9c86-006008764d0e
+'b5a84308-615d-4bb7-b05f-2f1746aa439f
+'b5f1edfe-b4d2-4076-ab0f-6148342b0bf6
+'b5f7e349-7a5b-407c-a334-a31c3f538b98
+'b6873917-3b90-11d2-90cc-00c04fd91ab1
+'b6e5e988-e5e4-4c86-a2ae-0dacb970a0e1
+'b72f862b-bb25-4d5d-aa51-62c59bdf90ae
+'b7577c94-ccee-11d2-9993-0000f87a57d4
+'b7673e6d-cad9-4e9e-b31a-63e8098fdd63
+'b77ea093-88d0-4780-9a98-911f8e8b1dca
+'b786cec9-61fd-4523-b2c1-5ceb3860bb32
+'b7acc3d2-2a74-4fa4-ac25-e63fe8b61218
+'b7b13116-b82e-11d0-afee-0000f80367c1
+'b7b13117-b82e-11d0-afee-0000f80367c1
+'b7b13118-b82e-11d0-afee-0000f80367c1
+'b7b13119-b82e-11d0-afee-0000f80367c1
+'b7b1311c-b82e-11d0-afee-0000f80367c1
+'b7b1311d-b82e-11d0-afee-0000f80367c1
+'b7b13121-b82e-11d0-afee-0000f80367c1
+'b7b13122-b82e-11d0-afee-0000f80367c1
+'b7b13123-b82e-11d0-afee-0000f80367c1
+'b7b13124-b82e-11d0-afee-0000f80367c1
+'b7b13125-b82e-11d0-afee-0000f80367c1
+'b7b16e01-024f-4e23-ad0d-71f1a406b684
+'b7b1b3dd-ab09-4242-9e30-9980e5d322f7
+'b7b1b3de-ab09-4242-9e30-9980e5d322f7
+'b7c69e5e-2cc7-11d2-854e-00a0c983f608
+'b7c69e5f-2cc7-11d2-854e-00a0c983f608
+'b7c69e60-2cc7-11d2-854e-00a0c983f608
+'b7c69e6d-2cc7-11d2-854e-00a0c983f608
+'b7ff5a38-0818-42b0-8110-d3d154c97f24
+'b8119fd0-04f6-4762-ab7a-4986c76b3f9a
+'b82ac26b-c6db-4098-92c6-49c18a3336e1
+'b8442f58-c490-4487-8a9d-d80b883271ad
+'b87a0ad8-54f7-49c1-84a0-e64d12853588
+'b8c8c35e-4a19-4a95-99d0-69fe4446286f
+'b8dfa744-31dc-4ef1-ac7c-84baf7ef9da7
+'b918fe7d-971a-f404-9e21-9261abec970b
+'b92fd528-38ac-40d4-818d-0433380837c1
+'b93e3a78-cbae-485e-a07b-5ef4ae505686
+'b946bece-09b5-4b6a-b25a-4b63a330e80e
+'b958b14e-ac6d-4ec4-8892-be70b69f7281
+'bData
+'ba0184c7-38c5-4bed-a526-75421470580c
+'ba305f68-47e3-11d0-a1a6-00c04fd930c9
+'ba305f69-47e3-11d0-a1a6-00c04fd930c9
+'ba305f6a-47e3-11d0-a1a6-00c04fd930c9
+'ba305f6b-47e3-11d0-a1a6-00c04fd930c9
+'ba305f6c-47e3-11d0-a1a6-00c04fd930c9
+'ba305f6d-47e3-11d0-a1a6-00c04fd930c9
+'ba305f6e-47e3-11d0-a1a6-00c04fd930c9
+'ba305f6f-47e3-11d0-a1a6-00c04fd930c9
+'ba305f70-47e3-11d0-a1a6-00c04fd930c9
+'ba305f71-47e3-11d0-a1a6-00c04fd930c9
+'ba305f72-47e3-11d0-a1a6-00c04fd930c9
+'ba305f73-47e3-11d0-a1a6-00c04fd930c9
+'ba305f74-47e3-11d0-a1a6-00c04fd930c9
+'ba305f75-47e3-11d0-a1a6-00c04fd930c9
+'ba305f76-47e3-11d0-a1a6-00c04fd930c9
+'ba305f77-47e3-11d0-a1a6-00c04fd930c9
+'ba305f78-47e3-11d0-a1a6-00c04fd930c9
+'ba305f79-47e3-11d0-a1a6-00c04fd930c9
+'ba305f7a-47e3-11d0-a1a6-00c04fd930c9
+'ba33815a-4f93-4c76-87f3-57574bff8109
+'ba340d47-2181-4ca0-a2f6-fae4479dab2a
+'bab04ac2-0435-4709-9307-28380e7c7001
+'bac80572-09c4-4fa9-9ae6-7628d7adbe0e
+'badPasswordTime
+'badPwdCount
+'bae50096-4752-11d1-9052-00c04fc2d4cf
+'base/header.html
+'base/searchbar.html
+'basedn
+'bc0ac240-79a9-11d0-9020-00c04fc2d4cf
+'bc2dba12-000f-464d-bf1d-0808465d8843
+'bc60096a-1b47-4b30-8877-602c93f56532
+'bcdd4f0e-ccee-11d2-9993-0000f87a57d4
+'bd29bf90-66ad-40e1-887b-10df070419a6
+'bd61253b-9401-4139-a693-356fc400f3ea
+'bd74a7ac-c493-4c9c-bdfa-5c7b119ca6b2
+'bd951b3c-9c96-11d0-afdd-00c04fd930c9
+'be2bb760-7f46-11d2-b9ad-00c04f79f805
+'be9ef6ee-cbc7-4f22-b27b-96967e7ee585
+'beforeend
+'bf967915-0de6-11d0-a285-00aa003049e2
+'bf967918-0de6-11d0-a285-00aa003049e2
+'bf967919-0de6-11d0-a285-00aa003049e2
+'bf96791a-0de6-11d0-a285-00aa003049e2
+'bf967922-0de6-11d0-a285-00aa003049e2
+'bf967923-0de6-11d0-a285-00aa003049e2
+'bf967924-0de6-11d0-a285-00aa003049e2
+'bf967925-0de6-11d0-a285-00aa003049e2
+'bf967928-0de6-11d0-a285-00aa003049e2
+'bf96792c-0de6-11d0-a285-00aa003049e2
+'bf96792d-0de6-11d0-a285-00aa003049e2
+'bf96792e-0de6-11d0-a285-00aa003049e2
+'bf96792f-0de6-11d0-a285-00aa003049e2
+'bf967930-0de6-11d0-a285-00aa003049e2
+'bf967931-0de6-11d0-a285-00aa003049e2
+'bf967932-0de6-11d0-a285-00aa003049e2
+'bf967937-0de6-11d0-a285-00aa003049e2
+'bf967938-0de6-11d0-a285-00aa003049e2
+'bf96793b-0de6-11d0-a285-00aa003049e2
+'bf96793c-0de6-11d0-a285-00aa003049e2
+'bf96793d-0de6-11d0-a285-00aa003049e2
+'bf96793e-0de6-11d0-a285-00aa003049e2
+'bf96793f-0de6-11d0-a285-00aa003049e2
+'bf967943-0de6-11d0-a285-00aa003049e2
+'bf967944-0de6-11d0-a285-00aa003049e2
+'bf967945-0de6-11d0-a285-00aa003049e2
+'bf967946-0de6-11d0-a285-00aa003049e2
+'bf967947-0de6-11d0-a285-00aa003049e2
+'bf967948-0de6-11d0-a285-00aa003049e2
+'bf96794f-0de6-11d0-a285-00aa003049e2
+'bf967950-0de6-11d0-a285-00aa003049e2
+'bf967951-0de6-11d0-a285-00aa003049e2
+'bf967953-0de6-11d0-a285-00aa003049e2
+'bf967954-0de6-11d0-a285-00aa003049e2
+'bf967959-0de6-11d0-a285-00aa003049e2
+'bf96795d-0de6-11d0-a285-00aa003049e2
+'bf96795e-0de6-11d0-a285-00aa003049e2
+'bf967961-0de6-11d0-a285-00aa003049e2
+'bf967962-0de6-11d0-a285-00aa003049e2
+'bf967963-0de6-11d0-a285-00aa003049e2
+'bf967966-0de6-11d0-a285-00aa003049e2
+'bf967972-0de6-11d0-a285-00aa003049e2
+'bf967974-0de6-11d0-a285-00aa003049e2
+'bf967976-0de6-11d0-a285-00aa003049e2
+'bf967977-0de6-11d0-a285-00aa003049e2
+'bf967979-0de6-11d0-a285-00aa003049e2
+'bf96797a-0de6-11d0-a285-00aa003049e2
+'bf96797d-0de6-11d0-a285-00aa003049e2
+'bf96797e-0de6-11d0-a285-00aa003049e2
+'bf967980-0de6-11d0-a285-00aa003049e2
+'bf967981-0de6-11d0-a285-00aa003049e2
+'bf967982-0de6-11d0-a285-00aa003049e2
+'bf967984-0de6-11d0-a285-00aa003049e2
+'bf967985-0de6-11d0-a285-00aa003049e2
+'bf967986-0de6-11d0-a285-00aa003049e2
+'bf96798c-0de6-11d0-a285-00aa003049e2
+'bf96798d-0de6-11d0-a285-00aa003049e2
+'bf96798e-0de6-11d0-a285-00aa003049e2
+'bf96798f-0de6-11d0-a285-00aa003049e2
+'bf967991-0de6-11d0-a285-00aa003049e2
+'bf967992-0de6-11d0-a285-00aa003049e2
+'bf967993-0de6-11d0-a285-00aa003049e2
+'bf967995-0de6-11d0-a285-00aa003049e2
+'bf967996-0de6-11d0-a285-00aa003049e2
+'bf967997-0de6-11d0-a285-00aa003049e2
+'bf967998-0de6-11d0-a285-00aa003049e2
+'bf96799a-0de6-11d0-a285-00aa003049e2
+'bf96799b-0de6-11d0-a285-00aa003049e2
+'bf96799c-0de6-11d0-a285-00aa003049e2
+'bf96799d-0de6-11d0-a285-00aa003049e2
+'bf96799e-0de6-11d0-a285-00aa003049e2
+'bf96799f-0de6-11d0-a285-00aa003049e2
+'bf9679a1-0de6-11d0-a285-00aa003049e2
+'bf9679a2-0de6-11d0-a285-00aa003049e2
+'bf9679a4-0de6-11d0-a285-00aa003049e2
+'bf9679a5-0de6-11d0-a285-00aa003049e2
+'bf9679a6-0de6-11d0-a285-00aa003049e2
+'bf9679a8-0de6-11d0-a285-00aa003049e2
+'bf9679a9-0de6-11d0-a285-00aa003049e2
+'bf9679aa-0de6-11d0-a285-00aa003049e2
+'bf9679ab-0de6-11d0-a285-00aa003049e2
+'bf9679ac-0de6-11d0-a285-00aa003049e2
+'bf9679ad-0de6-11d0-a285-00aa003049e2
+'bf9679ae-0de6-11d0-a285-00aa003049e2
+'bf9679af-0de6-11d0-a285-00aa003049e2
+'bf9679b2-0de6-11d0-a285-00aa003049e2
+'bf9679b5-0de6-11d0-a285-00aa003049e2
+'bf9679b7-0de6-11d0-a285-00aa003049e2
+'bf9679b9-0de6-11d0-a285-00aa003049e2
+'bf9679bb-0de6-11d0-a285-00aa003049e2
+'bf9679bc-0de6-11d0-a285-00aa003049e2
+'bf9679bd-0de6-11d0-a285-00aa003049e2
+'bf9679be-0de6-11d0-a285-00aa003049e2
+'bf9679bf-0de6-11d0-a285-00aa003049e2
+'bf9679c0-0de6-11d0-a285-00aa003049e2
+'bf9679c2-0de6-11d0-a285-00aa003049e2
+'bf9679c3-0de6-11d0-a285-00aa003049e2
+'bf9679c4-0de6-11d0-a285-00aa003049e2
+'bf9679c5-0de6-11d0-a285-00aa003049e2
+'bf9679c6-0de6-11d0-a285-00aa003049e2
+'bf9679c7-0de6-11d0-a285-00aa003049e2
+'bf9679c8-0de6-11d0-a285-00aa003049e2
+'bf9679d3-0de6-11d0-a285-00aa003049e2
+'bf9679d6-0de6-11d0-a285-00aa003049e2
+'bf9679d7-0de6-11d0-a285-00aa003049e2
+'bf9679d8-0de6-11d0-a285-00aa003049e2
+'bf9679d9-0de6-11d0-a285-00aa003049e2
+'bf9679da-0de6-11d0-a285-00aa003049e2
+'bf9679db-0de6-11d0-a285-00aa003049e2
+'bf9679df-0de6-11d0-a285-00aa003049e2
+'bf9679e1-0de6-11d0-a285-00aa003049e2
+'bf9679e2-0de6-11d0-a285-00aa003049e2
+'bf9679e3-0de6-11d0-a285-00aa003049e2
+'bf9679e4-0de6-11d0-a285-00aa003049e2
+'bf9679e5-0de6-11d0-a285-00aa003049e2
+'bf9679e6-0de6-11d0-a285-00aa003049e2
+'bf9679e7-0de6-11d0-a285-00aa003049e2
+'bf9679e8-0de6-11d0-a285-00aa003049e2
+'bf9679ea-0de6-11d0-a285-00aa003049e2
+'bf9679ec-0de6-11d0-a285-00aa003049e2
+'bf9679ed-0de6-11d0-a285-00aa003049e2
+'bf9679ee-0de6-11d0-a285-00aa003049e2
+'bf9679ef-0de6-11d0-a285-00aa003049e2
+'bf9679f0-0de6-11d0-a285-00aa003049e2
+'bf9679f1-0de6-11d0-a285-00aa003049e2
+'bf9679f2-0de6-11d0-a285-00aa003049e2
+'bf9679f3-0de6-11d0-a285-00aa003049e2
+'bf9679f7-0de6-11d0-a285-00aa003049e2
+'bf9679fa-0de6-11d0-a285-00aa003049e2
+'bf9679fb-0de6-11d0-a285-00aa003049e2
+'bf9679fc-0de6-11d0-a285-00aa003049e2
+'bf9679fd-0de6-11d0-a285-00aa003049e2
+'bf9679fe-0de6-11d0-a285-00aa003049e2
+'bf9679ff-0de6-11d0-a285-00aa003049e2
+'bf967a00-0de6-11d0-a285-00aa003049e2
+'bf967a01-0de6-11d0-a285-00aa003049e2
+'bf967a02-0de6-11d0-a285-00aa003049e2
+'bf967a03-0de6-11d0-a285-00aa003049e2
+'bf967a05-0de6-11d0-a285-00aa003049e2
+'bf967a06-0de6-11d0-a285-00aa003049e2
+'bf967a07-0de6-11d0-a285-00aa003049e2
+'bf967a09-0de6-11d0-a285-00aa003049e2
+'bf967a0a-0de6-11d0-a285-00aa003049e2
+'bf967a0b-0de6-11d0-a285-00aa003049e2
+'bf967a0c-0de6-11d0-a285-00aa003049e2
+'bf967a0d-0de6-11d0-a285-00aa003049e2
+'bf967a0e-0de6-11d0-a285-00aa003049e2
+'bf967a0f-0de6-11d0-a285-00aa003049e2
+'bf967a10-0de6-11d0-a285-00aa003049e2
+'bf967a12-0de6-11d0-a285-00aa003049e2
+'bf967a14-0de6-11d0-a285-00aa003049e2
+'bf967a15-0de6-11d0-a285-00aa003049e2
+'bf967a16-0de6-11d0-a285-00aa003049e2
+'bf967a18-0de6-11d0-a285-00aa003049e2
+'bf967a1c-0de6-11d0-a285-00aa003049e2
+'bf967a1d-0de6-11d0-a285-00aa003049e2
+'bf967a1e-0de6-11d0-a285-00aa003049e2
+'bf967a21-0de6-11d0-a285-00aa003049e2
+'bf967a22-0de6-11d0-a285-00aa003049e2
+'bf967a23-0de6-11d0-a285-00aa003049e2
+'bf967a24-0de6-11d0-a285-00aa003049e2
+'bf967a25-0de6-11d0-a285-00aa003049e2
+'bf967a27-0de6-11d0-a285-00aa003049e2
+'bf967a28-0de6-11d0-a285-00aa003049e2
+'bf967a2b-0de6-11d0-a285-00aa003049e2
+'bf967a2c-0de6-11d0-a285-00aa003049e2
+'bf967a2d-0de6-11d0-a285-00aa003049e2
+'bf967a2e-0de6-11d0-a285-00aa003049e2
+'bf967a2f-0de6-11d0-a285-00aa003049e2
+'bf967a31-0de6-11d0-a285-00aa003049e2
+'bf967a32-0de6-11d0-a285-00aa003049e2
+'bf967a33-0de6-11d0-a285-00aa003049e2
+'bf967a34-0de6-11d0-a285-00aa003049e2
+'bf967a35-0de6-11d0-a285-00aa003049e2
+'bf967a36-0de6-11d0-a285-00aa003049e2
+'bf967a37-0de6-11d0-a285-00aa003049e2
+'bf967a39-0de6-11d0-a285-00aa003049e2
+'bf967a3a-0de6-11d0-a285-00aa003049e2
+'bf967a3b-0de6-11d0-a285-00aa003049e2
+'bf967a3c-0de6-11d0-a285-00aa003049e2
+'bf967a3f-0de6-11d0-a285-00aa003049e2
+'bf967a41-0de6-11d0-a285-00aa003049e2
+'bf967a43-0de6-11d0-a285-00aa003049e2
+'bf967a44-0de6-11d0-a285-00aa003049e2
+'bf967a45-0de6-11d0-a285-00aa003049e2
+'bf967a46-0de6-11d0-a285-00aa003049e2
+'bf967a47-0de6-11d0-a285-00aa003049e2
+'bf967a49-0de6-11d0-a285-00aa003049e2
+'bf967a4a-0de6-11d0-a285-00aa003049e2
+'bf967a4b-0de6-11d0-a285-00aa003049e2
+'bf967a55-0de6-11d0-a285-00aa003049e2
+'bf967a59-0de6-11d0-a285-00aa003049e2
+'bf967a5c-0de6-11d0-a285-00aa003049e2
+'bf967a5d-0de6-11d0-a285-00aa003049e2
+'bf967a5e-0de6-11d0-a285-00aa003049e2
+'bf967a5f-0de6-11d0-a285-00aa003049e2
+'bf967a60-0de6-11d0-a285-00aa003049e2
+'bf967a61-0de6-11d0-a285-00aa003049e2
+'bf967a64-0de6-11d0-a285-00aa003049e2
+'bf967a68-0de6-11d0-a285-00aa003049e2
+'bf967a69-0de6-11d0-a285-00aa003049e2
+'bf967a6a-0de6-11d0-a285-00aa003049e2
+'bf967a6d-0de6-11d0-a285-00aa003049e2
+'bf967a6e-0de6-11d0-a285-00aa003049e2
+'bf967a6f-0de6-11d0-a285-00aa003049e2
+'bf967a70-0de6-11d0-a285-00aa003049e2
+'bf967a71-0de6-11d0-a285-00aa003049e2
+'bf967a73-0de6-11d0-a285-00aa003049e2
+'bf967a76-0de6-11d0-a285-00aa003049e2
+'bf967a77-0de6-11d0-a285-00aa003049e2
+'bf967a78-0de6-11d0-a285-00aa003049e2
+'bf967a79-0de6-11d0-a285-00aa003049e2
+'bf967a7a-0de6-11d0-a285-00aa003049e2
+'bf967a7b-0de6-11d0-a285-00aa003049e2
+'bf967a7f-0de6-11d0-a285-00aa003049e2
+'bf967a80-0de6-11d0-a285-00aa003049e2
+'bf967a81-0de6-11d0-a285-00aa003049e2
+'bf967a82-0de6-11d0-a285-00aa003049e2
+'bf967a83-0de6-11d0-a285-00aa003049e2
+'bf967a84-0de6-11d0-a285-00aa003049e2
+'bf967a85-0de6-11d0-a285-00aa003049e2
+'bf967a86-0de6-11d0-a285-00aa003049e2
+'bf967a87-0de6-11d0-a285-00aa003049e2
+'bf967a8b-0de6-11d0-a285-00aa003049e2
+'bf967a8c-0de6-11d0-a285-00aa003049e2
+'bf967a8d-0de6-11d0-a285-00aa003049e2
+'bf967a8e-0de6-11d0-a285-00aa003049e2
+'bf967a8f-0de6-11d0-a285-00aa003049e2
+'bf967a90-0de6-11d0-a285-00aa003049e2
+'bf967a91-0de6-11d0-a285-00aa003049e2
+'bf967a92-0de6-11d0-a285-00aa003049e2
+'bf967a99-0de6-11d0-a285-00aa003049e2
+'bf967a9c-0de6-11d0-a285-00aa003049e2
+'bf967a9d-0de6-11d0-a285-00aa003049e2
+'bf967a9e-0de6-11d0-a285-00aa003049e2
+'bf967aa0-0de6-11d0-a285-00aa003049e2
+'bf967aa1-0de6-11d0-a285-00aa003049e2
+'bf967aa3-0de6-11d0-a285-00aa003049e2
+'bf967aa4-0de6-11d0-a285-00aa003049e2
+'bf967aa5-0de6-11d0-a285-00aa003049e2
+'bf967aa6-0de6-11d0-a285-00aa003049e2
+'bf967aa7-0de6-11d0-a285-00aa003049e2
+'bf967aa8-0de6-11d0-a285-00aa003049e2
+'bf967aa9-0de6-11d0-a285-00aa003049e2
+'bf967aac-0de6-11d0-a285-00aa003049e2
+'bf967aad-0de6-11d0-a285-00aa003049e2
+'bf967aae-0de6-11d0-a285-00aa003049e2
+'bf967aaf-0de6-11d0-a285-00aa003049e2
+'bf967ab0-0de6-11d0-a285-00aa003049e2
+'bf967ab1-0de6-11d0-a285-00aa003049e2
+'bf967ab2-0de6-11d0-a285-00aa003049e2
+'bf967ab3-0de6-11d0-a285-00aa003049e2
+'bf967ab5-0de6-11d0-a285-00aa003049e2
+'bf967ab7-0de6-11d0-a285-00aa003049e2
+'bf967ab8-0de6-11d0-a285-00aa003049e2
+'bf967aba-0de6-11d0-a285-00aa003049e2
+'bf967abb-0de6-11d0-a285-00aa003049e2
+'bg-black/10 dark:bg-white/10
+'bg-blue-100
+'bg-blue-500
+'bg-gray-100
+'bg-green-100
+'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300
+'bg-green-600
+'bg-neutral-100
+'bg-neutral-100 text-neutral-800 dark:bg-neutral-700 dark:text-neutral-300
+'bg-neutral-200
+'bg-red-100
+'bg-white dark:bg-neutral-800 rounded-lg
+'bg-white dark:bg-neutral-800 text-sm text-neutral-900 dark:text-white px-4 py-1 border-b border-neutral-200 dark:border-neutral-700 sticky top-0 z-10
+'bg-yellow-100
+'bindRequest
+'bindstr
+'bitlocker
+'bitlocker-toggle
+'block
+'block text-sm font-medium text-gray-900 dark:text-white
+'boolean_operator
+'border-b
+'border-b border-neutral-200 dark:border-neutral-700 hover:bg-neutral-50 dark:hover:bg-neutral-700 cursor-pointer result-item
+'border-b-2
+'border-black
+'border-blue-600
+'border-collapse
+'border-neutral-200
+'border-t
+'box-overlay-spinner
+'box-overlay-spinner-init
+'break-all
+'buildingName
+'builtin
+'builtinDomain
+'builtindomain
+'button
+'c07cc1d0-ccee-11d2-9993-0000f87a57d4
+'c0e20a04-0e5a-4ff3-9482-5efeaecd7060
+'c0ed8738-7efd-4481-84d9-66d2db8be369
+'c0ffe2bd-cacf-4dc7-88d5-61e9e95766f6
+'c137427e-9a73-b040-9190-1b095bb43288
+'c1676858-d34b-11d2-999a-0000f87a57d4
+'c17c5602-bcb7-46f0-9656-6370ca884b72
+'c1dc867c-a261-11d1-b606-0000f80367c1
+'c294f84b-2fad-4b71-be4c-9fc5701f60ba
+'c30181c7-6342-41fb-b279-f7c566cbe0a7
+'c3bb7054-d34b-11d2-999a-0000f87a57d4
+'c3dbafa6-33df-11d2-98b2-0000f87a57d4
+'c4186b6e-d34b-11d2-999a-0000f87a57d4
+'c44f67a5-7de5-4a1f-92d9-662b57364b77
+'c458ca80-d34b-11d2-999a-0000f87a57d4
+'c498f152-dc6b-474a-9f52-7cdba3d7d351
+'c49b8be8-d34b-11d2-999a-0000f87a57d4
+'c4a46807-6adc-4bbb-97de-6bed181a1bfe
+'c4af1073-ee50-4be0-b8c0-89a41fe99abe
+'c4e311fc-d34b-11d2-999a-0000f87a57d4
+'c523e9c0-33b5-4ac8-8923-b57b927f42f6
+'c569bb46-c680-44bc-a273-e6c227d71b45
+'c57f72f4-ccee-11d2-9993-0000f87a57d4
+'c58aae32-56f9-11d2-90d0-00c04fd91ab1
+'c5b95f0c-ec9e-41c4-849c-b46597ed6696
+'c5d234e5-644a-4403-a665-e26e0aef5e98
+'c5e60132-1480-11d3-91c1-0000f87a57d4
+'c66217b9-e48e-47f7-b7d5-6552b8afd619
+'c6c8ace5-7e81-42af-ad72-77412c5941c4
+'c7407360-20bf-11d0-a768-00aa006e0529
+'c79f2199-6da1-46ff-923c-1f3f800c721e
+'c7e7dafa-10c3-4b8b-9acd-54f11063742e
+'c875d82d-2848-4cec-bb50-3c5486d09d57
+'c881b4e2-43c0-4ebe-b9bb-5250aa9b434c
+'c894809d-b513-4ff8-8811-f4f43f5ac7bc
+'c8bc72e0-a6b4-48f0-94a5-fd76a88c9987
+'c8fca9b1-7d88-bb4f-827a-448927710762
+'c9010e74-4e58-49f7-8a89-5e3e2340fcf8
+'c9b6358e-bb38-11d0-afef-0000f80367c1
+'ca
+'ca-servers
+'ca2a281e-262b-4ff7-b419-bc123352a4e9
+'ca3286c2-1f64-4079-96bc-e62b610e730f
+'ca48eba8-ccee-11d2-9993-0000f87a57d4
+'ca7b9735-4b2a-4e49-89c3-99025334dc94
+'cache-toggle
+'cadd1e5e-fefc-4f3f-b5a9-70e994204303
+'cafcb1de-f23c-46b5-adf7-1e64957bd5db
+'capage.html
+'carLicense
+'cb843f80-48d9-11d1-a9c3-0000f80367c1
+'cbdad11c-7fec-387b-6219-3a0627d9af81
+'cbf70a26-7e78-11d2-9921-0000f87a57d4
+'cbf7e6cd-85a4-4314-8939-8bfe80597835
+'cc17b1fb-33d9-11d2-97d4-00c04fd8d5cd
+'ccc2dc7d-a6ad-4a7a-8846-c04e3cc53501
+'cchNameLength
+'cd26b9f3-d415-442a-8f78-7c61523ee95b
+'cd789fb9-96b4-4648-8219-ca378161af38
+'cd96ec0b-1ed6-43b4-b26b-f170b645883f
+'ce206244-5827-4a86-ba1c-1c0c386c1b64
+'ce5b01bc-17c6-44b8-9dc1-a9668b00901b
+'cebcb6ba-6e80-4927-8560-98feca086a9f
+'certificateTemplates
+'cfb9adb7-c4b7-4059-9568-1ed9db6b7248
+'cfee1051-5f28-4bae-a863-5d0cc18a8ed1
+'change
+'chardet
+'check text-green-500
+'check_datalib
+'check_web_enrollment
+'checkbox
+'checksum
+'cifs/%s@%s
+'cipher
+'cksum
+'cksumtype
+'class
+'clear
+'clear-cache
+'clear-cache-button
+'clear_cache
+'click
+'client
+'close-command-history-panel
+'close-details-panel
+'close-settings-panel
+'cls
+'cn
+'cn-toggle
+'cn=domain admins
+'cname
+'code
+'col
+'col-span-full flex flex-col space-y-2
+'command
+'command-history-entries
+'command-history-panel
+'comment
+'company
+'company-toggle
+'comparison_operator
+'computer
+'computer-base-dn
+'computer-identity
+'computer-properties
+'computer-search
+'computer-search-base
+'computer-search-button
+'computer_name
+'computername
+'computerpage.html
+'computerpass
+'computers
+'computers-counter
+'computers-result-table
+'configurationNamingContext
+'confirm-delete
+'connectioninfo
+'console_scripts
+'constants
+'constrained
+'container
+'content
+'content-area
+'convert_from_operation
+'convert_to_operation
+'convertfrom-sid
+'convertfrom-uacvalue
+'copy
+'count
+'crealm
+'create
+'createIn
+'critical-items
+'css/style.css
+'csv
+'ctime
+'currentColor
+'cursor-pointer
+'cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-800
+'cusec
+'custom-ldap-filter
+'d064fb68-1480-11d3-91c1-0000f87a57d4
+'d07da11f-8a3d-42b6-b0aa-76c962be719a
+'d0aedb2e-ccee-11d2-9993-0000f87a57d4
+'d0d62131-2d4a-d04f-99d9-1c63646229a4
+'d0e1d224-e1a0-42ce-a2da-793ba5244f35
+'d1328fbc-8574-4150-881d-0b1088827878
+'d15ef7d8-f226-46db-ae79-b34e560bd12c
+'d161adf0-ca24-4993-a3aa-8b2c981302e8
+'d167aa4b-8b08-11d2-9939-0000f87a57d4
+'d1e169a4-ebe9-49bf-8fcb-8aef3874592d
+'d213decc-d81a-4384-aac2-dcfcfd631cf8
+'d24e2846-1dd9-4bcf-99d7-a6227cc86da7
+'d2b1470a-8f84-491e-a752-b401ee00fe5c
+'d31a8757-2447-4545-8081-3bb610cacbf2
+'d3aa4a5c-4e03-4810-97aa-2b339e7a434b
+'d3c527c7-2606-4deb-8cfd-18426feec8ce
+'d4159c92-957d-4a87-8a67-8d2934e01649
+'d5006229-9913-2242-8b17-83761d1e0e5b
+'d50c2cda-8951-11d1-aebc-0000f80367c1
+'d50c2cdb-8951-11d1-aebc-0000f80367c1
+'d50c2cdc-8951-11d1-aebc-0000f80367c1
+'d50c2cdd-8951-11d1-aebc-0000f80367c1
+'d50c2cde-8951-11d1-aebc-0000f80367c1
+'d50c2cdf-8951-11d1-aebc-0000f80367c1
+'d546ae22-0951-4d47-817e-1c9f96faad46
+'d58d5f36-0a98-11d1-adbb-00c04fd8d5cd
+'d5a0dbdc-ccee-11d2-9993-0000f87a57d4
+'d5b35506-19d6-4d26-9afb-11357ac99b5e
+'d5eb2eb7-be4e-463b-a214-634a44d7392e
+'d5f07340-e6b0-1e4a-97be-0d3318bd9db1
+'d63db385-dd92-4b52-b1d8-0d3ecc0e86b6
+'d64b9c23-e1fa-467b-b317-6964d744d633
+'d6710785-86ff-44b7-85b5-f1f8689522ce
+'d68270ac-a5dc-4841-a6ac-cd68be38c181
+'d6d67084-c720-417d-8647-b696237a114c
+'d72a0750-8c7c-416e-8714-e65f11e908be
+'d7c53242-724e-4c39-9d4c-2df8c9d66c7a
+'d7d5e8c1-e61f-464f-9fcf-20bbe0a2ec54
+'d921b50a-0ab2-42cd-87f6-09cf83a91854
+'d95836c3-143e-43fb-992a-b057f1ecadf9
+'d9a799b2-cef3-48b3-b5ad-fb85f8dd3214
+'d9e18312-8939-11d1-aebc-0000f80367c1
+'d9e18313-8939-11d1-aebc-0000f80367c1
+'d9e18314-8939-11d1-aebc-0000f80367c1
+'d9e18315-8939-11d1-aebc-0000f80367c1
+'d9e18316-8939-11d1-aebc-0000f80367c1
+'d9e18317-8939-11d1-aebc-0000f80367c1
+'dNSHostName
+'dNSTombstoned
+'dSCorePropagationData
+'da73a085-6e64-4d61-b064-015d04164795
+'da83fc4f-076f-4aea-b4dc-8f4dab9b5993
+'dab029b6-ddf7-11d1-90a5-00c04fd91ab1
+'dacl
+'dacl-rows
+'dark:bg-blue-700
+'dark:bg-blue-900/50
+'dark:bg-gray-900/50
+'dark:bg-green-900/50
+'dark:bg-neutral-700
+'dark:bg-neutral-800
+'dark:bg-neutral-900
+'dark:bg-red-900/50
+'dark:bg-yellow-900/50
+'dark:border-neutral-700
+'dark:border-yellow-500
+'dark:focus-visible:outline-neutral-900
+'dark:hover:bg-neutral-700
+'dark:hover:bg-neutral-800
+'dark:hover:bg-white/5
+'dark:hover:text-blue-300
+'dark:hover:text-white
+'dark:text-blue-300
+'dark:text-blue-400
+'dark:text-gray-300
+'dark:text-green-300
+'dark:text-neutral-200
+'dark:text-neutral-300
+'dark:text-neutral-400
+'dark:text-red-300
+'dark:text-white
+'dark:text-yellow-300
+'dark:text-yellow-500
+'dashboard
+'dashboardpage.html
+'data
+'data-cn
+'data-dismiss-target
+'data-dn
+'data-identifier
+'data-modal-hide
+'data-value
+'db0c9085-c1f2-11d1-bbc5-0080c76670c0
+'db0c9089-c1f2-11d1-bbc5-0080c76670c0
+'db0c908a-c1f2-11d1-bbc5-0080c76670c0
+'db0c908e-c1f2-11d1-bbc5-0080c76670c0
+'db0c909c-c1f2-11d1-bbc5-0080c76670c0
+'db0c90a4-c1f2-11d1-bbc5-0080c76670c0
+'db0c90a9-c1f2-11d1-bbc5-0080c76670c0
+'db0c90b6-c1f2-11d1-bbc5-0080c76670c0
+'db0c90c5-c1f2-11d1-bbc5-0080c76670c0
+'db0c90c6-c1f2-11d1-bbc5-0080c76670c0
+'db0c90c7-c1f2-11d1-bbc5-0080c76670c0
+'db2c48b2-d14d-ec4e-9f58-ad579d8b440e
+'db5b0728-6208-4876-83b7-95d3e5695275
+'db68054b-c9c3-4bf0-b15b-0fb52552a610
+'db77be4a-ccee-11d2-9993-0000f87a57d4
+'db7a08e7-fc76-4569-a45f-f5ecb66a88b5
+'dbd90548-aa37-4202-9966-8c537ba5ce32
+'dc
+'dc3ca86f-70ad-4960-8425-a4d6313d93dd
+'dc66d44e-3d43-40f5-85c5-3c12e169927e
+'dc_dnshostname
+'dcsync
+'dd
+'dd712224-10e4-11d0-a05f-00aa006c33ed
+'dd712226-10e4-11d0-a05f-00aa006c33ed
+'dd712229-10e4-11d0-a05f-00aa006c33ed
+'ddac0cee-af8f-11d0-afeb-00c04fd930c9
+'ddac0cf0-af8f-11d0-afeb-00c04fd930c9
+'ddac0cf1-af8f-11d0-afeb-00c04fd930c9
+'ddac0cf2-af8f-11d0-afeb-00c04fd930c9
+'ddac0cf3-af8f-11d0-afeb-00c04fd930c9
+'ddac0cf4-af8f-11d0-afeb-00c04fd930c9
+'ddac0cf5-af8f-11d0-afeb-00c04fd930c9
+'ddac0cf6-af8f-11d0-afeb-00c04fd930c9
+'ddac0cf7-af8f-11d0-afeb-00c04fd930c9
+'ddc790ac-af4d-442a-8f0f-a1d4caa7dd92
+'ddf8de9b-cba5-4e12-842e-28d8b66f75ec
+'de0caa7f-724e-4286-b179-192671efc664
+'de265a9c-ff2c-47b9-91dc-6e6fe2c43062
+'de71b44c-29ba-4597-9eca-c3348ace1917
+'de8bb721-85dc-4fde-b687-9657688e667e
+'de91fc26-bd02-4b52-ae26-795999e96fc7
+'debug
+'debug_message
+'def449f1-fd3b-4045-98cf-d9658da788b5
+'default
+'defaultNamingContext
+'delegatefrom
+'delegation
+'denied
+'department
+'department-toggle
+'departmentNumber
+'descendants
+'descendants-header
+'descendants-rows
+'description
+'description-toggle
+'destination_dn
+'details-panel
+'df446e52-b5fa-4ca2-a42f-13f98a526c8f
+'dffbd720-0872-402e-9940-fcd78db049ba
+'dhcp-Classes
+'dhcp-Flags
+'dhcp-Identification
+'dhcp-Mask
+'dhcp-MaxKey
+'dhcp-Obj-Description
+'dhcp-Obj-Name
+'dhcp-Options
+'dhcp-Properties
+'dhcp-Ranges
+'dhcp-Reservations
+'dhcp-Servers
+'dhcp-Sites
+'dhcp-State
+'dhcp-Subnets
+'dhcp-Type
+'dhcp-Unique-Key
+'dhcp-Update-Time
+'disable-domaindnsrecord
+'disabled
+'disabled-computers-toggle
+'disabled-users-toggle
+'disallowdelegation
+'disconnect-button
+'displayName
+'displayname
+'distinguishedName
+'distinguishedname
+'distinguishedname-toggle
+'div
+'divide-y
+'divide-y divide-neutral-200 dark:divide-neutral-700
+'dl
+'dn
+'dns
+'dns-zone
+'dns-zones
+'dnsHostName
+'dnsHostname
+'dnsName
+'dnsNode
+'dnsNodeName
+'dnsRecord
+'dnspage.html
+'dnspython
+'dnsrecord
+'document
+'documentAuthor
+'documentIdentifier
+'documentLocation
+'documentPublisher
+'documentSeries
+'documentTitle
+'documentVersion
+'domain
+'domain-admins
+'domain-info
+'domain-stats
+'domain-trusts
+'domainRelatedObject
+'domain_name
+'domaininfo
+'drink
+'drsuapi
+'dsinternals
+'dt
+'dummy_section
+'duplicate
+'dwChildCount
+'dwCurrentState
+'dwExpire
+'dwFlags
+'dwMinimumTtl
+'dwRefresh
+'dwRetry
+'dwSerialNo
+'e-data
+'e027a8bd-6456-45de-90a3-38593877ee74
+'e0c6baae-ccee-11d2-9993-0000f87a57d4
+'e0fa1e62-9b45-11d0-afdd-00c04fd930c9
+'e0fa1e65-9b45-11d0-afdd-00c04fd930c9
+'e0fa1e66-9b45-11d0-afdd-00c04fd930c9
+'e0fa1e67-9b45-11d0-afdd-00c04fd930c9
+'e0fa1e68-9b45-11d0-afdd-00c04fd930c9
+'e0fa1e69-9b45-11d0-afdd-00c04fd930c9
+'e0fa1e8a-9b45-11d0-afdd-00c04fd930c9
+'e0fa1e8b-9b45-11d0-afdd-00c04fd930c9
+'e0fa1e8c-9b45-11d0-afdd-00c04fd930c9
+'e11505d7-92c4-43e7-bf5c-295832ffc896
+'e12b56b6-0a95-11d1-adbb-00c04fd8d5cd
+'e15334a3-0bf0-4427-b672-11f5d84acc92
+'e167b0b6-4045-4433-ac35-53f972d45cba
+'e16a9db2-403c-11d1-a9c0-0000f80367c1
+'e185d243-f6ce-4adb-b496-b0c005d7823c
+'e1aea402-cd5b-11d0-afff-0000f80367c1
+'e1aea403-cd5b-11d0-afff-0000f80367c1
+'e1aea404-cd5b-11d0-afff-0000f80367c1
+'e1e9bad7-c6dd-4101-a843-794cec85b038
+'e215395b-9104-44d9-b894-399ec9e21dfc
+'e21a94e4-2d66-4ce5-b30d-0ef87a776ff0
+'e263192c-2a02-48df-9792-94f2328781a0
+'e2704852-3b7b-11d2-90cc-00c04fd91ab1
+'e2a36dc9-ae17-47c3-b58b-be34c55ba633
+'e2bc80f1-244a-4d59-acc6-ca5c4f82e6e1
+'e338f470-39cd-4549-ab5b-f69f9e583fe0
+'e362ed86-b728-0842-b27d-2dea7a9df218
+'e3b44e05-f4a7-4078-a730-f48670a743f8
+'e3c27fdf-b01d-4f4e-87e7-056eef0eb922
+'e3d8b547-003d-4946-a32b-dc7cedc96b74
+'e3f3cb4e-0f20-42eb-9703-d2ff26e52667
+'e3fb56c8-5de8-45f5-b1b1-d2b6cd31e762
+'e45795b2-9455-11d1-aebd-0000f80367c1
+'e45795b3-9455-11d1-aebd-0000f80367c1
+'e48d0154-bcf8-11d1-8702-00c04fb96050
+'e48e64e0-12c9-11d3-9102-00c04fd91ab1
+'e5209ca2-3bba-11d2-90cc-00c04fd91ab1
+'e58f972e-64b5-46ef-8d8b-bbc3e1897eab
+'e65c30db-316c-4060-a3a0-387b083f09cd
+'e6a522dd-9770-43e1-89de-1de5044328f7
+'e85e1204-3434-41ad-9b56-e2901228fff0
+'e8b2c971-a6df-47bc-8d6f-62770d527aa5
+'e9098084-ccee-11d2-9993-0000f87a57d4
+'e96a63f5-417f-46d3-be52-db7703c503df
+'e9b0a87e-3b9d-11d2-90cc-00c04fd91ab1
+'ea1b7b93-5e48-46d5-bc6c-4df4fda78a35
+'ea1dddc4-60ff-416e-8cc0-17cee534bce7
+'ea715d30-8f53-40d0-bd1e-6109186d782c
+'ea944d31-864a-4349-ada5-062e2c614f5e
+'eaba628f-eb8e-4fe9-83fc-693be695559b
+'eadd3dfe-ae0e-4cc2-b9b9-5fe5b6ed2dd2
+'eb20e7d6-32ad-42de-b141-16ad2631b01b
+'eb38a158-d57f-11d1-90a2-00c04fd91ab1
+'ebf5c6eb-0e2d-4415-9670-1081993b4211
+'ec05b750-a977-4efe-8e8d-ba6c1a6e33a8
+'ec6d7855-704a-4f61-9aa6-c49a7c1d54c7
+'ec998437-d944-4a28-8500-217588adfc75
+'ececcd20-a7e0-4688-9ccf-02ece5e287f5
+'ed1489d1-54cc-4066-b368-a00daa2664f1
+'ed9de9a0-7041-11d2-9905-0000f87a57d4
+'edacfd8f-ffb3-11d1-b41d-00a0c968f939
+'edb027f3-5726-4dee-8d4e-dbf07e1ad1f1
+'ede14754-ccee-11d2-9993-0000f87a57d4
+'eded5844-b3c3-41c3-a9e6-8984b52b7f98
+'ee1f5543-7c2e-476a-8b3f-e11f4af6c498
+'ee4aa692-3bba-11d2-90cc-00c04fd91ab1
+'ee5b6790-3358-41a8-93f2-134ce21f3813
+'ee85ed93-b209-4788-8165-e702f51bfbf3
+'ee8d0ae0-6f91-11d2-9905-0000f87a57d4
+'eea65904-8ac6-11d0-afda-00c04fd930c9
+'eea65905-8ac6-11d0-afda-00c04fd930c9
+'eea65906-8ac6-11d0-afda-00c04fd930c9
+'eebc123e-bae6-4166-9e5b-29884a8b76b0
+'eeed0fc8-1001-45ed-80cc-bbf744930720
+'ef2fc3ed-6e18-415b-99e4-3114a8cb124b
+'ef65695a-f179-4e6a-93de-b01e06681cfb
+'ef9a2df0-2e57-48c8-8950-0cc674004733
+'ef9e60e0-56f7-11d1-a9c6-0000f80367c1
+'efd7d7f7-178e-4767-87fa-f8a16b840544
+'efsr
+'enabled
+'enabled-computers-toggle
+'enabled-users-toggle
+'enc-part
+'enforced
+'enroll
+'entombedTime
+'error
+'error-code
+'escalateGroup
+'escalateViaGroup
+'etype
+'excludeDC
+'excludedcs
+'excludedcs-toggle
+'execute_command
+'existing-attributes
+'exit
+'expanded
+'explorerpage.html
+'extensible_match
+'extra
+'f072230c-aef5-11d1-bdcf-0000f80367c1
+'f072230d-aef5-11d1-bdcf-0000f80367c1
+'f072230e-aef5-11d1-bdcf-0000f80367c1
+'f072230f-aef5-11d1-bdcf-0000f80367c1
+'f0722310-aef5-11d1-bdcf-0000f80367c1
+'f0722311-aef5-11d1-bdcf-0000f80367c1
+'f0bfdefa-3b9d-11d2-90cc-00c04fd91ab1
+'f0d8972e-dd5b-40e5-a51d-044c7c17ece7
+'f0f8ff83-1191-11d0-a060-00aa006c33ed
+'f0f8ff84-1191-11d0-a060-00aa006c33ed
+'f0f8ff86-1191-11d0-a060-00aa006c33ed
+'f0f8ff88-1191-11d0-a060-00aa006c33ed
+'f0f8ff8b-1191-11d0-a060-00aa006c33ed
+'f0f8ff8e-1191-11d0-a060-00aa006c33ed
+'f0f8ff90-1191-11d0-a060-00aa006c33ed
+'f0f8ffa1-1191-11d0-a060-00aa006c33ed
+'f0f8ffa2-1191-11d0-a060-00aa006c33ed
+'f0f8ffa3-1191-11d0-a060-00aa006c33ed
+'f0f8ffa4-1191-11d0-a060-00aa006c33ed
+'f0f8ffa5-1191-11d0-a060-00aa006c33ed
+'f0f8ffa6-1191-11d0-a060-00aa006c33ed
+'f0f8ffa7-1191-11d0-a060-00aa006c33ed
+'f0f8ffab-1191-11d0-a060-00aa006c33ed
+'f18a8e19-af5f-4478-b096-6f35c27eb83f
+'f1e44bdf-8dd3-4235-9c86-f91f31f5b569
+'f217e4ec-0836-4b90-88af-2f5d4bbda2bc
+'f22bd38f-a1d0-4832-8b28-0331438886a6
+'f2699093-f25a-4220-9deb-03df4cc4a9c5
+'f285c952-50dd-449e-9160-3b880d99988d
+'f29653cf-7ad0-11d0-afd6-00c04fd930c9
+'f29653d0-7ad0-11d0-afd6-00c04fd930c9
+'f2973131-9b4d-4820-b4de-0474ef3b849f
+'f29fa736-de09-4be4-b23a-e734c124bacc
+'f2b6abca-ccee-11d2-9993-0000f87a57d4
+'f2f51102-6be0-493d-8726-1546cdbc8771
+'f30e3bbe-9ff0-11d1-b603-0000f80367c1
+'f30e3bbf-9ff0-11d1-b603-0000f80367c1
+'f30e3bc0-9ff0-11d1-b603-0000f80367c1
+'f30e3bc1-9ff0-11d1-b603-0000f80367c1
+'f30e3bc2-9ff0-11d1-b603-0000f80367c1
+'f34ee0ac-c0c1-4ba9-82c9-1a90752f16a5
+'f39b98ac-938d-11d1-aebd-0000f80367c1
+'f39b98ad-938d-11d1-aebd-0000f80367c1
+'f39b98ae-938d-11d1-aebd-0000f80367c1
+'f3a64788-5306-11d1-a9c5-0000f80367c1
+'f3bcc547-85b0-432c-9ac0-304506bf2c83
+'f402a330-ace5-4dc1-8cc9-74d900bf8ae0
+'f4c453f0-c5f1-11d1-bbcb-0080c76670c0
+'f4d8085a-8c5b-4785-959b-dc585566e445
+'f5446328-8b6e-498d-95a8-211748d5acdc
+'f547511c-5b2a-44cc-8358-992a88258164
+'f60a8f96-57c4-422c-a3ad-9e2fa09ce6f7
+'f63aa29a-bb31-48e1-bfab-0a6c5a1d39c2
+'f63ed610-d67c-494d-87be-cd1e24359a38
+'f6b0f0be-a8e4-4468-8fd9-c3c47b8722f9
+'f6d6dd88-ccee-11d2-9993-0000f87a57d4
+'f6ea0a94-6f91-11d2-9905-0000f87a57d4
+'f70b6e48-06f4-11d2-aa53-00c04fd7d83a
+'f754c748-06f4-11d2-aa53-00c04fd7d83a
+'f76909bc-e678-47a0-b0b3-f86a0044c06d
+'f780acc0-56f0-11d1-a9c6-0000f80367c1
+'f780acc1-56f0-11d1-a9c6-0000f80367c1
+'f780acc2-56f0-11d1-a9c6-0000f80367c1
+'f7a3b6a0-2107-4140-b306-75cb521731e5
+'f7b85ba9-3bf9-428f-aab4-2eee6d56f063
+'f7fbfc45-85ab-42a4-a435-780e62f7858b
+'f85b6228-3734-4525-b6b7-3f3bb220902c
+'f8758ef7-ac76-8843-a2ee-a26b4dcaf409
+'f87fa54b-b2c5-4fd7-88c0-daccb21d93c5
+'f8ba8f81-4cab-4973-a3c8-3a6da62a5e31
+'f8f2689c-29e8-4843-8177-e8b98e15eeac
+'f90abab0-186c-4418-bb85-88447c87222a
+'f98340fb-7c5b-4cdb-a00b-2ebdfa115a96
+'f9c9a57c-3941-438d-bebf-0edaf2aca187
+'f9cdf7a0-ec44-4937-a79b-cd91522b3aa8
+'f9f0461e-697d-4689-9299-37e61d617b0d
+'f9fb64ae-93b4-11d2-9945-0000f87a57d4
+'fa-desktop
+'fa-solid fa-building text-neutral-500 dark:text-neutral-400
+'fa-solid fa-chevron-right text-neutral-400 transition-transform text-xs w-3
+'fa-solid fa-network-wired text-neutral-500 dark:text-neutral-400
+'fa-times
+'fa-user
+'fa06d1f4-7922-4aad-b79c-b2201f54417c
+'fa32f2a6-f28b-47d0-bf91-663e8f910a72
+'fa4693bb-7bc2-4cb9-81a8-c99c43b7905e
+'fa85c591-197f-477e-83bd-ea5a43df2239
+'faaea977-9655-49d7-853d-f27bb7aaca0f
+'fad5dcc1-2130-4c87-a118-75322cd67050
+'faf733d0-f8eb-4dcf-8d75-f1753af6a50b
+'false
+'fb00dcdf-ac37-483a-9c12-ac53a6603033
+'fb920c2c-f294-4426-8ac1-d24b42aa2bce
+'fbb9a00d-3a8c-4233-9cf9-7189264903a1
+'fbcda2ea-ccee-11d2-9993-0000f87a57d4
+'fc5a9106-3b9d-11d2-90cc-00c04fd91ab1
+'fcca766a-6f91-11d2-9905-0000f87a57d4
+'fd129d8a-d57e-11d1-90a2-00c04fd91ab1
+'fdd337f5-4999-4fce-b252-8ff9c9b43875
+'fe01245a-341f-4556-951f-48c033a89050
+'fe17e04b-937d-4f7e-8e0e-9292c8d5683e
+'fe515695-3f61-45c8-9bfa-19c148c57b09
+'fe6136a0-2073-11d0-a9c2-00aa006c33ed
+'fe7afe45-3d14-43a7-afa7-3a1b144642af
+'fec364e0-0a98-11d1-adbb-00c04fd8d5cd
+'fed81bb7-768c-4c2f-9641-2245de34794d
+'fef9a725-e8f1-43ab-bd86-6a0115ce9e38
+'ff155a2a-44e5-4de0-8318-13a58988de4f
+'ff2daebf-f463-495a-8405-3e483641eaa2
+'ff739e9c-6bb7-460e-b221-e250f3de0f95
+'ff9e5552-7db7-4138-8888-05ce320a0323
+'ffa6f046-ca4b-4feb-b40d-04dfee722543
+'ffadb4b2-de39-11d1-90a5-00c04fd91ab1
+'fill
+'filter-all
+'filter-disabled
+'filter-dropdown-button
+'filter-dropdown-menu
+'filter-enabled
+'filter-vulnerable
+'find-foreigngroup
+'find-foreignuser
+'find-localadminaccess
+'fixed
+'flags
+'flask
+'flask.cli
+'flatName
+'flex
+'flex flex-col gap-2
+'flex flex-col space-y-2
+'flex gap-2
+'flex items-center gap-2
+'flex items-center gap-2 group
+'flex items-center justify-between gap-2 p-4 border-b sticky top-0 bg-white z-10
+'flex items-center justify-between mb-1
+'flex items-center justify-center gap-2
+'flex items-center px-2 py-1 rounded hover:bg-neutral-100 dark:hover:bg-neutral-700
+'flex justify-between items-center
+'flex result-item hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded
+'font-bold
+'font-medium
+'font-semibold
+'friendlyCountry
+'fullName
+'fullcontrol
+'fullname
+'future
+'gPCFileSysPath
+'gPCFunctionalityVersion
+'gPCMachineExtensionNames
+'gPLink
+'gap-1
+'gap-2
+'general
+'get
+'get-adobject
+'get-ca
+'get-catemplate
+'get-domain
+'get-domainca
+'get-domaincatemplate
+'get-domaincomputer
+'get-domaincontroller
+'get-domaindnsrecord
+'get-domaindnszone
+'get-domainforeigngroupmember
+'get-domainforeignuser
+'get-domaingmsa
+'get-domaingpo
+'get-domaingpolocalgroup
+'get-domaingposettings
+'get-domaingroup
+'get-domaingroupmember
+'get-domainobject
+'get-domainobjectacl
+'get-domainobjectowner
+'get-domainou
+'get-domainrbcd
+'get-domainsccm
+'get-domaintrust
+'get-domainuser
+'get-exchange
+'get-exchangeserver
+'get-gmsa
+'get-gpolocalgroup
+'get-gposettings
+'get-localuser
+'get-namedpipes
+'get-netcomputer
+'get-netdomain
+'get-netdomaincontroller
+'get-netgpo
+'get-netgroup
+'get-netgroupmember
+'get-netloggedon
+'get-netou
+'get-netservice
+'get-netsession
+'get-netshare
+'get-nettrust
+'get-netuser
+'get-objectacl
+'get-objectowner
+'get-rbcd
+'get-regloggedon
+'get-sccm
+'get_operation
+'givenName
+'globalGroupMemberships
+'globalgroupmemberships
+'gmsaPassword
+'gmsapassword
+'gmsapassword-toggle
+'gnureadline
+'gplink
+'gpo
+'gpo-search
+'gpo-tabs
+'gpo-tree-view
+'gpopage.html
+'grid grid-cols-1 gap-1
+'grid grid-cols-1 md:grid-cols-2 gap-4 auto-rows-auto
+'group
+'group-base-dn
+'group-name
+'group-search
+'groupOfUniqueNames
+'groupPolicyContainer
+'groupType
+'group_end
+'group_start
+'grouppage.html
+'groups
+'guid
+'h-8
+'h-min px-4 py-2 text-sm font-bold text-black border-b-2 border-black dark:border-yellow-500 dark:text-yellow-500
+'h-min px-4 py-2 text-sm text-neutral-600 font-medium dark:text-neutral-300 dark:hover:border-b-neutral-300 dark:hover:text-white hover:border-b-2 hover:border-b-neutral-800 hover:text-neutral-900
+'h2
+'h3
+'health
+'hidden
+'hidden ml-6 mt-2 space-y-2
+'hidden\
+'history
+'homeDirectory
+'homedirectory
+'host
+'host/%s
+'host/%s@%s
+'hostname
+'houseIdentifier
+'hover:bg-gray-100
+'hover:bg-green-700
+'hover:bg-neutral-100
+'hover:bg-neutral-100 dark:hover:bg-neutral-800 cursor-pointer group
+'hover:bg-neutral-50
+'hover:bg-neutral-50 dark:hover:bg-neutral-800 cursor-pointer
+'hover:text-blue-600
+'http://www.w3.org/2000/svg
+'https://github.com/aniqfakhrul/powerview.py
+'i
+'id
+'identity
+'identity-to-delete
+'ignore
+'images/apple-touch-icon.png
+'images/favicon-16x16.png
+'images/favicon-32x32.png
+'immutable
+'impacket
+'include-pac
+'index
+'inetOrgPerson
+'info
+'inheritance
+'input
+'instanceType
+'invoke-kerberoast
+'invoke_operation
+'ipv6Address
+'isCriticalSystemObject
+'is_admin
+'isrunning
+'isstopped
+'items-center
+'jpegPhoto
+'js/adcs.js
+'js/ca.js
+'js/computer.js
+'js/dashboard.js
+'js/dns.js
+'js/explorer.js
+'js/gpo.js
+'js/group.js
+'js/icon.js
+'js/main.js
+'js/modules.js
+'js/ou.js
+'js/static.js
+'js/tree.js
+'js/users.js
+'js/utils.js
+'kdc-options
+'key
+'keydown
+'keypress
+'keytype
+'keyvalue
+'krbtgt/%s
+'krbtgt/%s@%s
+'label
+'labeledURI
+'laps
+'laps-toggle
+'lastLogoff
+'lastLogon
+'lastLogonTimestamp
+'lastlogon
+'ldap-attributes-modal
+'ldap-filter
+'ldap-link
+'ldap/%s
+'ldap/%s@%s
+'ldap3 library doesn\
+'ldap3-bleeding-edge
+'ldap_address
+'ldap_close
+'ldap_properties
+'ldap_rebind
+'ldapfilter
+'ldaptypes
+'limit
+'link_enabled
+'linkedGpo
+'linkto
+'list
+'lmhash
+'localGroupMemberships
+'localgroupmemberships
+'lockout
+'lockout-toggle
+'lockoutDuration
+'lockoutThreshold
+'lockoutTime
+'log_type
+'loggedon
+'logonCount
+'logoncount
+'logonusers-rows
+'logs
+'lpDisplayName
+'lpNameOut
+'lpScHandle
+'lpServiceName
+'lsarpc
+'lsass
+'machineConfig
+'mail
+'mail-toggle
+'mask
+'maxPwdAge
+'mb-2
+'mb-4
+'md
+'meetingAdvertiseScope
+'meetingApplication
+'meetingBandwidth
+'meetingBlob
+'meetingContactInfo
+'meetingDescription
+'meetingEndTime
+'meetingID
+'meetingIP
+'meetingIsEncrypted
+'meetingKeyword
+'meetingLanguage
+'meetingLocation
+'meetingMaxParticipants
+'meetingName
+'meetingOriginator
+'meetingOwner
+'meetingProtocol
+'meetingRating
+'meetingRecurrence
+'meetingScope
+'meetingStartTime
+'meetingType
+'meetingURL
+'member
+'member-search
+'memberOf
+'memberidentity
+'memberof
+'memberof-rows
+'memberof-toggle
+'members
+'members-content
+'message
+'min-w-full text-sm text-neutral-600 dark:text-neutral-300
+'ml-1 px-1 py-0.5 text-xs font-medium text-white bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:shadow-outline-red active:bg-red-600 transition duration-150 ease-in-out
+'ml-2 text-xs font-medium px-2 py-0.5 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300
+'ml-4
+'ml-6
+'ml-6 mt-2 space-y-2
+'modal-dacl-rows
+'modal-members-content
+'modal-overlay
+'modal-tab-search
+'module
+'mr-2
+'ms-Authz-Central-Access-Policies
+'ms-Authz-Central-Access-Policy
+'ms-Authz-Central-Access-Policy-ID
+'ms-Authz-Central-Access-Rule
+'ms-Authz-Central-Access-Rules
+'ms-Authz-Effective-Security-Policy
+'ms-Authz-Last-Effective-Security-Policy
+'ms-Authz-Member-Rules-In-Central-Access-Policy
+'ms-Authz-Member-Rules-In-Central-Access-Policy-BL
+'ms-Authz-Proposed-Security-Policy
+'ms-Authz-Resource-Condition
+'ms-COM-DefaultPartitionLink
+'ms-COM-ObjectId
+'ms-COM-Partition
+'ms-COM-PartitionLink
+'ms-COM-PartitionSet
+'ms-COM-PartitionSetLink
+'ms-COM-UserLink
+'ms-COM-UserPartitionSetLink
+'ms-DFS-Comment-v2
+'ms-DFS-Deleted-Link-v2
+'ms-DFS-Generation-GUID-v2
+'ms-DFS-Last-Modified-v2
+'ms-DFS-Link-Identity-GUID-v2
+'ms-DFS-Link-Path-v2
+'ms-DFS-Link-Security-Descriptor-v2
+'ms-DFS-Link-v2
+'ms-DFS-Namespace-Anchor
+'ms-DFS-Namespace-Identity-GUID-v2
+'ms-DFS-Namespace-v2
+'ms-DFS-Properties-v2
+'ms-DFS-Schema-Major-Version
+'ms-DFS-Schema-Minor-Version
+'ms-DFS-Short-Name-Link-Path-v2
+'ms-DFS-Target-List-v2
+'ms-DFS-Ttl-v2
+'ms-DFSR-CachePolicy
+'ms-DFSR-CommonStagingPath
+'ms-DFSR-CommonStagingSizeInMb
+'ms-DFSR-ComputerReference
+'ms-DFSR-ComputerReferenceBL
+'ms-DFSR-ConflictPath
+'ms-DFSR-ConflictSizeInMb
+'ms-DFSR-Connection
+'ms-DFSR-Content
+'ms-DFSR-ContentSet
+'ms-DFSR-ContentSetGuid
+'ms-DFSR-DefaultCompressionExclusionFilter
+'ms-DFSR-DeletedPath
+'ms-DFSR-DeletedSizeInMb
+'ms-DFSR-DfsLinkTarget
+'ms-DFSR-DfsPath
+'ms-DFSR-DirectoryFilter
+'ms-DFSR-DisablePacketPrivacy
+'ms-DFSR-Enabled
+'ms-DFSR-Extension
+'ms-DFSR-FileFilter
+'ms-DFSR-Flags
+'ms-DFSR-GlobalSettings
+'ms-DFSR-Keywords
+'ms-DFSR-LocalSettings
+'ms-DFSR-MaxAgeInCacheInMin
+'ms-DFSR-Member
+'ms-DFSR-MemberReference
+'ms-DFSR-MemberReferenceBL
+'ms-DFSR-MinDurationCacheInMin
+'ms-DFSR-OnDemandExclusionDirectoryFilter
+'ms-DFSR-OnDemandExclusionFileFilter
+'ms-DFSR-Options
+'ms-DFSR-Options2
+'ms-DFSR-Priority
+'ms-DFSR-RdcEnabled
+'ms-DFSR-RdcMinFileSizeInKb
+'ms-DFSR-ReadOnly
+'ms-DFSR-ReplicationGroup
+'ms-DFSR-ReplicationGroupGuid
+'ms-DFSR-ReplicationGroupType
+'ms-DFSR-RootFence
+'ms-DFSR-RootPath
+'ms-DFSR-RootSizeInMb
+'ms-DFSR-Schedule
+'ms-DFSR-StagingCleanupTriggerInPercent
+'ms-DFSR-StagingPath
+'ms-DFSR-StagingSizeInMb
+'ms-DFSR-Subscriber
+'ms-DFSR-Subscription
+'ms-DFSR-TombstoneExpiryInMin
+'ms-DFSR-Topology
+'ms-DFSR-Version
+'ms-DNS-DNSKEY-Record-Set-TTL
+'ms-DNS-DNSKEY-Records
+'ms-DNS-DS-Record-Algorithms
+'ms-DNS-DS-Record-Set-TTL
+'ms-DNS-Is-Signed
+'ms-DNS-Keymaster-Zones
+'ms-DNS-Maintain-Trust-Anchor
+'ms-DNS-NSEC3-Current-Salt
+'ms-DNS-NSEC3-Hash-Algorithm
+'ms-DNS-NSEC3-Iterations
+'ms-DNS-NSEC3-OptOut
+'ms-DNS-NSEC3-Random-Salt-Length
+'ms-DNS-NSEC3-User-Salt
+'ms-DNS-Parent-Has-Secure-Delegation
+'ms-DNS-Propagation-Time
+'ms-DNS-RFC5011-Key-Rollovers
+'ms-DNS-Secure-Delegation-Polling-Period
+'ms-DNS-Server-Settings
+'ms-DNS-Sign-With-NSEC3
+'ms-DNS-Signature-Inception-Offset
+'ms-DNS-Signing-Key-Descriptors
+'ms-DNS-Signing-Keys
+'ms-DS-Additional-Dns-Host-Name
+'ms-DS-Additional-Sam-Account-Name
+'ms-DS-Allowed-DNS-Suffixes
+'ms-DS-Allowed-To-Act-On-Behalf-Of-Other-Identity
+'ms-DS-Allowed-To-Delegate-To
+'ms-DS-App-Configuration
+'ms-DS-App-Data
+'ms-DS-Applies-To-Resource-Types
+'ms-DS-Approx-Immed-Subordinates
+'ms-DS-Approximate-Last-Logon-Time-Stamp
+'ms-DS-Assigned-AuthN-Policy
+'ms-DS-Assigned-AuthN-Policy-BL
+'ms-DS-Assigned-AuthN-Policy-Silo
+'ms-DS-Assigned-AuthN-Policy-Silo-BL
+'ms-DS-AuthN-Policies
+'ms-DS-AuthN-Policy
+'ms-DS-AuthN-Policy-Enforced
+'ms-DS-AuthN-Policy-Silo
+'ms-DS-AuthN-Policy-Silo-Enforced
+'ms-DS-AuthN-Policy-Silo-Members
+'ms-DS-AuthN-Policy-Silo-Members-BL
+'ms-DS-AuthN-Policy-Silos
+'ms-DS-AuthenticatedAt-DC
+'ms-DS-AuthenticatedTo-Accountlist
+'ms-DS-Auxiliary-Classes
+'ms-DS-Az-Admin-Manager
+'ms-DS-Az-Application
+'ms-DS-Az-Application-Data
+'ms-DS-Az-Application-Name
+'ms-DS-Az-Application-Version
+'ms-DS-Az-Biz-Rule
+'ms-DS-Az-Biz-Rule-Language
+'ms-DS-Az-Class-ID
+'ms-DS-Az-Domain-Timeout
+'ms-DS-Az-Generate-Audits
+'ms-DS-Az-Generic-Data
+'ms-DS-Az-LDAP-Query
+'ms-DS-Az-Last-Imported-Biz-Rule-Path
+'ms-DS-Az-Major-Version
+'ms-DS-Az-Minor-Version
+'ms-DS-Az-Object-Guid
+'ms-DS-Az-Operation
+'ms-DS-Az-Operation-ID
+'ms-DS-Az-Role
+'ms-DS-Az-Scope
+'ms-DS-Az-Scope-Name
+'ms-DS-Az-Script-Engine-Cache-Max
+'ms-DS-Az-Script-Timeout
+'ms-DS-Az-Task
+'ms-DS-Az-Task-Is-Role-Definition
+'ms-DS-Behavior-Version
+'ms-DS-BridgeHead-Servers-Used
+'ms-DS-Byte-Array
+'ms-DS-Cached-Membership
+'ms-DS-Cached-Membership-Time-Stamp
+'ms-DS-Claim-Attribute-Source
+'ms-DS-Claim-Is-Single-Valued
+'ms-DS-Claim-Is-Value-Space-Restricted
+'ms-DS-Claim-Possible-Values
+'ms-DS-Claim-Shares-Possible-Values-With
+'ms-DS-Claim-Shares-Possible-Values-With-BL
+'ms-DS-Claim-Source
+'ms-DS-Claim-Source-Type
+'ms-DS-Claim-Type
+'ms-DS-Claim-Type-Applies-To-Class
+'ms-DS-Claim-Type-Property-Base
+'ms-DS-Claim-Types
+'ms-DS-Claim-Value-Type
+'ms-DS-Claims-Transformation-Policies
+'ms-DS-Claims-Transformation-Policy-Type
+'ms-DS-Cloud-Anchor
+'ms-DS-Cloud-Extensions
+'ms-DS-Cloud-IsEnabled
+'ms-DS-Cloud-IsManaged
+'ms-DS-Cloud-Issuer-Public-Certificates
+'ms-DS-Computer-Allowed-To-Authenticate-To
+'ms-DS-Computer-AuthN-Policy
+'ms-DS-Computer-AuthN-Policy-BL
+'ms-DS-Computer-SID
+'ms-DS-Computer-TGT-Lifetime
+'ms-DS-Custom-Key-Information
+'ms-DS-Date-Time
+'ms-DS-Default-Quota
+'ms-DS-Deleted-Object-Lifetime
+'ms-DS-Device
+'ms-DS-Device-Container
+'ms-DS-Device-DN
+'ms-DS-Device-ID
+'ms-DS-Device-Location
+'ms-DS-Device-MDMStatus
+'ms-DS-Device-OS-Type
+'ms-DS-Device-OS-Version
+'ms-DS-Device-Object-Version
+'ms-DS-Device-Physical-IDs
+'ms-DS-Device-Registration-Service
+'ms-DS-Device-Registration-Service-Container
+'ms-DS-Device-Trust-Type
+'ms-DS-DnsRootAlias
+'ms-DS-Drs-Farm-ID
+'ms-DS-Egress-Claims-Transformation-Policy
+'ms-DS-Enabled-Feature
+'ms-DS-Enabled-Feature-BL
+'ms-DS-Entry-Time-To-Die
+'ms-DS-ExecuteScriptPassword
+'ms-DS-Expire-Passwords-On-Smart-Card-Only-Accounts
+'ms-DS-External-Directory-Object-Id
+'ms-DS-External-Key
+'ms-DS-External-Store
+'ms-DS-Failed-Interactive-Logon-Count
+'ms-DS-Failed-Interactive-Logon-Count-At-Last-Successful-Logon
+'ms-DS-Filter-Containers
+'ms-DS-Generation-Id
+'ms-DS-GeoCoordinates-Altitude
+'ms-DS-GeoCoordinates-Latitude
+'ms-DS-GeoCoordinates-Longitude
+'ms-DS-Group-Managed-Service-Account
+'ms-DS-GroupMSAMembership
+'ms-DS-HAB-Seniority-Index
+'ms-DS-Has-Domain-NCs
+'ms-DS-Has-Full-Replica-NCs
+'ms-DS-Has-Instantiated-NCs
+'ms-DS-Has-Master-NCs
+'ms-DS-Host-Service-Account
+'ms-DS-Host-Service-Account-BL
+'ms-DS-Ingress-Claims-Transformation-Policy
+'ms-DS-IntId
+'ms-DS-Integer
+'ms-DS-Is-Compliant
+'ms-DS-Is-Domain-For
+'ms-DS-Is-Enabled
+'ms-DS-Is-Full-Replica-For
+'ms-DS-Is-Member-Of-DL-Transitive
+'ms-DS-Is-Partial-Replica-For
+'ms-DS-Is-Possible-Values-Present
+'ms-DS-Is-Primary-Computer-For
+'ms-DS-Is-Used-As-Resource-Security-Attribute
+'ms-DS-Is-User-Cachable-At-Rodc
+'ms-DS-IsManaged
+'ms-DS-Issuer-Certificates
+'ms-DS-Issuer-Public-Certificates
+'ms-DS-Key-Approximate-Last-Logon-Time-Stamp
+'ms-DS-Key-Credential
+'ms-DS-Key-Credential-Link
+'ms-DS-Key-Credential-Link-BL
+'ms-DS-Key-Id
+'ms-DS-Key-Material
+'ms-DS-Key-Principal
+'ms-DS-Key-Principal-BL
+'ms-DS-Key-Usage
+'ms-DS-KeyVersionNumber
+'ms-DS-KrbTgt-Link
+'ms-DS-KrbTgt-Link-BL
+'ms-DS-Last-Failed-Interactive-Logon-Time
+'ms-DS-Last-Known-RDN
+'ms-DS-Last-Successful-Interactive-Logon-Time
+'ms-DS-Local-Effective-Deletion-Time
+'ms-DS-Local-Effective-Recycle-Time
+'ms-DS-Lockout-Duration
+'ms-DS-Lockout-Observation-Window
+'ms-DS-Lockout-Threshold
+'ms-DS-Logon-Time-Sync-Interval
+'ms-DS-MachineAccountQuota
+'ms-DS-Managed-Service-Account
+'ms-DS-ManagedPassword
+'ms-DS-ManagedPasswordId
+'ms-DS-ManagedPasswordInterval
+'ms-DS-ManagedPasswordPreviousId
+'ms-DS-Mastered-By
+'ms-DS-Max-Values
+'ms-DS-Maximum-Password-Age
+'ms-DS-Maximum-Registration-Inactivity-Period
+'ms-DS-Member-Transitive
+'ms-DS-Members-For-Az-Role
+'ms-DS-Members-For-Az-Role-BL
+'ms-DS-Members-Of-Resource-Property-List
+'ms-DS-Members-Of-Resource-Property-List-BL
+'ms-DS-Minimum-Password-Age
+'ms-DS-Minimum-Password-Length
+'ms-DS-NC-RO-Replica-Locations
+'ms-DS-NC-RO-Replica-Locations-BL
+'ms-DS-NC-Repl-Cursors
+'ms-DS-NC-Repl-Inbound-Neighbors
+'ms-DS-NC-Repl-Outbound-Neighbors
+'ms-DS-NC-Replica-Locations
+'ms-DS-NC-Type
+'ms-DS-Never-Reveal-Group
+'ms-DS-Non-Members
+'ms-DS-Non-Members-BL
+'ms-DS-Non-Security-Group-Extra-Classes
+'ms-DS-OIDToGroup-Link
+'ms-DS-OIDToGroup-Link-BL
+'ms-DS-Object-Reference
+'ms-DS-Object-Reference-BL
+'ms-DS-Object-SOA
+'ms-DS-Operations-For-Az-Role
+'ms-DS-Operations-For-Az-Role-BL
+'ms-DS-Operations-For-Az-Task
+'ms-DS-Operations-For-Az-Task-BL
+'ms-DS-Optional-Feature
+'ms-DS-Optional-Feature-Flags
+'ms-DS-Optional-Feature-GUID
+'ms-DS-Other-Settings
+'ms-DS-PSO-Applied
+'ms-DS-PSO-Applies-To
+'ms-DS-Parent-Dist-Name
+'ms-DS-Password-Complexity-Enabled
+'ms-DS-Password-History-Length
+'ms-DS-Password-Reversible-Encryption-Enabled
+'ms-DS-Password-Settings
+'ms-DS-Password-Settings-Container
+'ms-DS-Password-Settings-Precedence
+'ms-DS-Phonetic-Company-Name
+'ms-DS-Phonetic-Department
+'ms-DS-Phonetic-Display-Name
+'ms-DS-Phonetic-First-Name
+'ms-DS-Phonetic-Last-Name
+'ms-DS-Preferred-GC-Site
+'ms-DS-Primary-Computer
+'ms-DS-Principal-Name
+'ms-DS-Promotion-Settings
+'ms-DS-Quota-Amount
+'ms-DS-Quota-Container
+'ms-DS-Quota-Control
+'ms-DS-Quota-Effective
+'ms-DS-Quota-Trustee
+'ms-DS-Quota-Used
+'ms-DS-RID-Pool-Allocation-Enabled
+'ms-DS-Registered-Owner
+'ms-DS-Registered-Users
+'ms-DS-Registration-Quota
+'ms-DS-Repl-Attribute-Meta-Data
+'ms-DS-Repl-Value-Meta-Data
+'ms-DS-Repl-Value-Meta-Data-Ext
+'ms-DS-Replication-Notify-First-DSA-Delay
+'ms-DS-Replication-Notify-Subsequent-DSA-Delay
+'ms-DS-ReplicationEpoch
+'ms-DS-Required-Domain-Behavior-Version
+'ms-DS-Required-Forest-Behavior-Version
+'ms-DS-Resource-Properties
+'ms-DS-Resource-Property
+'ms-DS-Resource-Property-List
+'ms-DS-Resultant-PSO
+'ms-DS-Retired-Repl-NC-Signatures
+'ms-DS-Reveal-OnDemand-Group
+'ms-DS-Revealed-DSAs
+'ms-DS-Revealed-List
+'ms-DS-Revealed-List-BL
+'ms-DS-Revealed-Users
+'ms-DS-SD-Reference-Domain
+'ms-DS-SPN-Suffixes
+'ms-DS-Secondary-KrbTgt-Number
+'ms-DS-Security-Group-Extra-Classes
+'ms-DS-Service-Allowed-NTLM-Network-Authentication
+'ms-DS-Service-Allowed-To-Authenticate-From
+'ms-DS-Service-Allowed-To-Authenticate-To
+'ms-DS-Service-AuthN-Policy
+'ms-DS-Service-AuthN-Policy-BL
+'ms-DS-Service-TGT-Lifetime
+'ms-DS-Settings
+'ms-DS-Shadow-Principal
+'ms-DS-Shadow-Principal-Container
+'ms-DS-Shadow-Principal-Sid
+'ms-DS-Site-Affinity
+'ms-DS-SiteName
+'ms-DS-Source-Anchor
+'ms-DS-Source-Object-DN
+'ms-DS-Strong-NTLM-Policy
+'ms-DS-Supported-Encryption-Types
+'ms-DS-SyncServerUrl
+'ms-DS-TDO-Egress-BL
+'ms-DS-TDO-Ingress-BL
+'ms-DS-Tasks-For-Az-Role
+'ms-DS-Tasks-For-Az-Role-BL
+'ms-DS-Tasks-For-Az-Task
+'ms-DS-Tasks-For-Az-Task-BL
+'ms-DS-Token-Group-Names
+'ms-DS-Token-Group-Names-Global-And-Universal
+'ms-DS-Token-Group-Names-No-GC-Acceptable
+'ms-DS-Tombstone-Quota-Factor
+'ms-DS-Top-Quota-Usage
+'ms-DS-Transformation-Rules
+'ms-DS-Transformation-Rules-Compiled
+'ms-DS-Trust-Forest-Trust-Info
+'ms-DS-USN-Last-Sync-Success
+'ms-DS-UpdateScript
+'ms-DS-User-Account-Control-Computed
+'ms-DS-User-Allowed-NTLM-Network-Authentication
+'ms-DS-User-Allowed-To-Authenticate-From
+'ms-DS-User-Allowed-To-Authenticate-To
+'ms-DS-User-AuthN-Policy
+'ms-DS-User-AuthN-Policy-BL
+'ms-DS-User-Password-Expiry-Time-Computed
+'ms-DS-User-TGT-Lifetime
+'ms-DS-Value-Type
+'ms-DS-Value-Type-Reference
+'ms-DS-Value-Type-Reference-BL
+'ms-DS-cloudExtensionAttribute1
+'ms-DS-cloudExtensionAttribute10
+'ms-DS-cloudExtensionAttribute11
+'ms-DS-cloudExtensionAttribute12
+'ms-DS-cloudExtensionAttribute13
+'ms-DS-cloudExtensionAttribute14
+'ms-DS-cloudExtensionAttribute15
+'ms-DS-cloudExtensionAttribute16
+'ms-DS-cloudExtensionAttribute17
+'ms-DS-cloudExtensionAttribute18
+'ms-DS-cloudExtensionAttribute19
+'ms-DS-cloudExtensionAttribute2
+'ms-DS-cloudExtensionAttribute20
+'ms-DS-cloudExtensionAttribute3
+'ms-DS-cloudExtensionAttribute4
+'ms-DS-cloudExtensionAttribute5
+'ms-DS-cloudExtensionAttribute6
+'ms-DS-cloudExtensionAttribute7
+'ms-DS-cloudExtensionAttribute8
+'ms-DS-cloudExtensionAttribute9
+'ms-DS-isGC
+'ms-DS-isRODC
+'ms-FRS-Hub-Member
+'ms-FRS-Topology-Pref
+'ms-FVE-KeyPackage
+'ms-FVE-RecoveryGuid
+'ms-FVE-RecoveryInformation
+'ms-FVE-RecoveryPassword
+'ms-FVE-VolumeGuid
+'ms-IIS-FTP-Dir
+'ms-IIS-FTP-Root
+'ms-Imaging-Hash-Algorithm
+'ms-Imaging-PSP-Identifier
+'ms-Imaging-PSP-String
+'ms-Imaging-PSPs
+'ms-Imaging-PostScanProcess
+'ms-Imaging-Thumbprint-Hash
+'ms-Kds-CreateTime
+'ms-Kds-DomainID
+'ms-Kds-KDF-AlgorithmID
+'ms-Kds-KDF-Param
+'ms-Kds-PrivateKey-Length
+'ms-Kds-Prov-RootKey
+'ms-Kds-Prov-ServerConfiguration
+'ms-Kds-PublicKey-Length
+'ms-Kds-RootKeyData
+'ms-Kds-SecretAgreement-AlgorithmID
+'ms-Kds-SecretAgreement-Param
+'ms-Kds-UseStartTime
+'ms-Kds-Version
+'ms-MCS-AdmPwd
+'ms-Mcs-AdmPwd
+'ms-Mcs-AdmPwdExpirationTime
+'ms-Org-Group-Subtype-Name
+'ms-Org-Is-Organizational-Group
+'ms-Org-Leaders
+'ms-Org-Leaders-BL
+'ms-Org-Other-Display-Names
+'ms-PKI-AccountCredentials
+'ms-PKI-Cert-Template-OID
+'ms-PKI-Certificate-Application-Policy
+'ms-PKI-Certificate-Name-Flag
+'ms-PKI-Certificate-Policy
+'ms-PKI-Credential-Roaming-Tokens
+'ms-PKI-DPAPIMasterKeys
+'ms-PKI-Enrollment-Flag
+'ms-PKI-Enrollment-Servers
+'ms-PKI-Enterprise-Oid
+'ms-PKI-Key-Recovery-Agent
+'ms-PKI-Minimal-Key-Size
+'ms-PKI-OID-Attribute
+'ms-PKI-OID-CPS
+'ms-PKI-OID-LocalizedName
+'ms-PKI-OID-User-Notice
+'ms-PKI-Private-Key-Flag
+'ms-PKI-Private-Key-Recovery-Agent
+'ms-PKI-RA-Application-Policies
+'ms-PKI-RA-Policies
+'ms-PKI-RA-Signature
+'ms-PKI-RoamingTimeStamp
+'ms-PKI-Site-Name
+'ms-PKI-Supersede-Templates
+'ms-PKI-Template-Minor-Revision
+'ms-PKI-Template-Schema-Version
+'ms-Print-ConnectionPolicy
+'ms-RADIUS-FramedInterfaceId
+'ms-RADIUS-FramedIpv6Prefix
+'ms-RADIUS-FramedIpv6Route
+'ms-RADIUS-SavedFramedInterfaceId
+'ms-RADIUS-SavedFramedIpv6Prefix
+'ms-RADIUS-SavedFramedIpv6Route
+'ms-RRAS-Attribute
+'ms-RRAS-Vendor-Attribute-Entry
+'ms-SPP-Activation-Object
+'ms-SPP-Activation-Objects-Container
+'ms-SPP-CSVLK-Partial-Product-Key
+'ms-SPP-CSVLK-Pid
+'ms-SPP-CSVLK-Sku-Id
+'ms-SPP-Config-License
+'ms-SPP-Confirmation-Id
+'ms-SPP-Installation-Id
+'ms-SPP-Issuance-License
+'ms-SPP-KMS-Ids
+'ms-SPP-Online-License
+'ms-SPP-Phone-License
+'ms-TAPI-Conference-Blob
+'ms-TAPI-Ip-Address
+'ms-TAPI-Protocol-Id
+'ms-TAPI-Rt-Conference
+'ms-TAPI-Rt-Person
+'ms-TAPI-Unique-Identifier
+'ms-TPM-Information-Object
+'ms-TPM-Information-Objects-Container
+'ms-TPM-Owner-Information-Temp
+'ms-TPM-OwnerInformation
+'ms-TPM-Srk-Pub-Thumbprint
+'ms-TPM-Tpm-Information-For-Computer
+'ms-TPM-Tpm-Information-For-Computer-BL
+'ms-TS-Allow-Logon
+'ms-TS-Broken-Connection-Action
+'ms-TS-Connect-Client-Drives
+'ms-TS-Connect-Printer-Drives
+'ms-TS-Default-To-Main-Printer
+'ms-TS-Endpoint-Data
+'ms-TS-Endpoint-Plugin
+'ms-TS-Endpoint-Type
+'ms-TS-Home-Directory
+'ms-TS-Home-Drive
+'ms-TS-Initial-Program
+'ms-TS-Max-Connection-Time
+'ms-TS-Max-Disconnection-Time
+'ms-TS-Max-Idle-Time
+'ms-TS-Primary-Desktop
+'ms-TS-Primary-Desktop-BL
+'ms-TS-Profile-Path
+'ms-TS-Reconnection-Action
+'ms-TS-Remote-Control
+'ms-TS-Secondary-Desktop-BL
+'ms-TS-Secondary-Desktops
+'ms-TS-Work-Directory
+'ms-WMI-Author
+'ms-WMI-ChangeDate
+'ms-WMI-Class
+'ms-WMI-ClassDefinition
+'ms-WMI-CreationDate
+'ms-WMI-Genus
+'ms-WMI-ID
+'ms-WMI-IntRangeParam
+'ms-WMI-IntSetParam
+'ms-WMI-MergeablePolicyTemplate
+'ms-WMI-Mof
+'ms-WMI-Name
+'ms-WMI-NormalizedClass
+'ms-WMI-ObjectEncoding
+'ms-WMI-Parm1
+'ms-WMI-Parm2
+'ms-WMI-Parm3
+'ms-WMI-Parm4
+'ms-WMI-PolicyTemplate
+'ms-WMI-PolicyType
+'ms-WMI-PropertyName
+'ms-WMI-Query
+'ms-WMI-QueryLanguage
+'ms-WMI-RangeParam
+'ms-WMI-RealRangeParam
+'ms-WMI-Rule
+'ms-WMI-ScopeGuid
+'ms-WMI-ShadowObject
+'ms-WMI-SimplePolicyTemplate
+'ms-WMI-Som
+'ms-WMI-SourceOrganization
+'ms-WMI-StringSetParam
+'ms-WMI-TargetClass
+'ms-WMI-TargetNameSpace
+'ms-WMI-TargetObject
+'ms-WMI-TargetPath
+'ms-WMI-TargetType
+'ms-WMI-UintRangeParam
+'ms-WMI-UintSetParam
+'ms-WMI-UnknownRangeParam
+'ms-WMI-WMIGPO
+'ms-WMI-int8Default
+'ms-WMI-int8Max
+'ms-WMI-int8Min
+'ms-WMI-int8ValidValues
+'ms-WMI-intDefault
+'ms-WMI-intFlags1
+'ms-WMI-intFlags2
+'ms-WMI-intFlags3
+'ms-WMI-intFlags4
+'ms-WMI-intMax
+'ms-WMI-intMin
+'ms-WMI-intValidValues
+'ms-WMI-stringDefault
+'ms-WMI-stringValidValues
+'ms-ds-Schema-Extensions
+'ms-ieee-80211-Data
+'ms-ieee-80211-Data-Type
+'ms-ieee-80211-ID
+'ms-ieee-80211-Policy
+'ms-net-ieee-80211-GP-PolicyData
+'ms-net-ieee-80211-GP-PolicyGUID
+'ms-net-ieee-80211-GP-PolicyReserved
+'ms-net-ieee-80211-GroupPolicy
+'ms-net-ieee-8023-GP-PolicyData
+'ms-net-ieee-8023-GP-PolicyGUID
+'ms-net-ieee-8023-GP-PolicyReserved
+'ms-net-ieee-8023-GroupPolicy
+'msDS-AllowedToActOnBehalfOfOtherIdentity
+'msDS-GroupMSAMembership
+'msDS-KeyCredentialLink
+'msDS-ManagedPassword
+'msDS-ManagedPasswordId
+'msDS-ManagedPasswordInterval
+'msDS-SupportedEncryptionTypes
+'msExch-Proxy-Gen-Options
+'msFVE-KeyPackage
+'msFVE-RecoveryGuid
+'msFVE-RecoveryPassword
+'msFVE-VolumeGuid
+'msNPAllowDialin
+'msNPCalledStationID
+'msNPCallingStationID
+'msNPSavedCallingStationID
+'msPKI-Cert-Template-OID
+'msPKI-Certificate-Name-Flag
+'msPKI-Enrollment-Flag
+'msPKI-Enterprise-Oid
+'msPKI-Minimal-Key-Size
+'msPKI-Private-Key-Flag
+'msPKI-RA-Signature
+'msPKI-Template-Minor-Revision
+'msPKI-Template-Schema-Version
+'msRADIUSCallbackNumber
+'msRADIUSFramedIPAddress
+'msRADIUSFramedRoute
+'msRADIUSServiceType
+'msRASSavedCallbackNumber
+'msRASSavedFramedIPAddress
+'msRASSavedFramedRoute
+'msSFU-30-Aliases
+'msSFU-30-Crypt-Method
+'msSFU-30-Domain-Info
+'msSFU-30-Domains
+'msSFU-30-Field-Separator
+'msSFU-30-Intra-Field-Separator
+'msSFU-30-Is-Valid-Container
+'msSFU-30-Key-Attributes
+'msSFU-30-Key-Values
+'msSFU-30-Mail-Aliases
+'msSFU-30-Map-Filter
+'msSFU-30-Master-Server-Name
+'msSFU-30-Max-Gid-Number
+'msSFU-30-Max-Uid-Number
+'msSFU-30-NIS-Map-Config
+'msSFU-30-NSMAP-Field-Position
+'msSFU-30-Name
+'msSFU-30-Net-Id
+'msSFU-30-Netgroup-Host-At-Domain
+'msSFU-30-Netgroup-User-At-Domain
+'msSFU-30-Network-User
+'msSFU-30-Nis-Domain
+'msSFU-30-Order-Number
+'msSFU-30-Posix-Member
+'msSFU-30-Posix-Member-Of
+'msSFU-30-Result-Attributes
+'msSFU-30-Search-Attributes
+'msSFU-30-Search-Container
+'msSFU-30-Yp-Servers
+'msds-AllowedToDelegateTo
+'msg-type
+'msmq-Open-Connector
+'msmq-Peek
+'msmq-Peek-Dead-Letter
+'msmq-Peek-computer-Journal
+'msmq-Receive
+'msmq-Receive-Dead-Letter
+'msmq-Receive-computer-Journal
+'msmq-Receive-journal
+'msmq-Send
+'mt-2
+'mt-4
+'my-4
+'nTSecurityDescriptor
+'name
+'name-string
+'name-toggle
+'nameExchange
+'nameNode
+'namePrimaryServer
+'nameTarget
+'nameserver
+'namingContexts
+'nav_items
+'ncacn_ip_tcp
+'ncacn_np
+'ncacn_np:%s[\PIPE\DAV RPC SERVICE]
+'ncacn_np:%s[\PIPE\atsvc]
+'ncacn_np:%s[\PIPE\efsrpc]
+'ncacn_np:%s[\PIPE\lsarpc]
+'ncacn_np:%s[\PIPE\lsass]
+'ncacn_np:%s[\PIPE\netdfs]
+'ncacn_np:%s[\PIPE\netlogon]
+'ncacn_np:%s[\PIPE\samr]
+'ncacn_np:%s[\PIPE\spoolss]
+'ncacn_np:%s[\pipe\samr]
+'ncacn_np:%s[\pipe\srvsvc]
+'ncacn_np:%s[\pipe\svcctl]
+'ncacn_np:%s[\pipe\winreg]
+'ncacn_np:%s[\pipe\wkssvc]
+'netboot-Allow-New-Clients
+'netboot-Answer-Only-Valid-Clients
+'netboot-Answer-Requests
+'netboot-Current-Client-Count
+'netboot-IntelliMirror-OSes
+'netboot-Limit-Clients
+'netboot-Locally-Installed-OSes
+'netboot-Max-Clients
+'netboot-New-Machine-Naming-Policy
+'netboot-New-Machine-OU
+'netboot-SCP-BL
+'netboot-Server
+'netboot-Tools
+'netdfs
+'netlogon
+'new-attribute-name
+'new-attribute-value
+'new-computer-property
+'new-computername
+'new-computerpass
+'new-dns-address
+'new-dns-name
+'new-groupname
+'new-member
+'new-password
+'new-property
+'new-user-property
+'new-username
+'no_admin_check
+'no_cache
+'nonce
+'none
+'nowrap
+'nt
+'nthash
+'obfuscate
+'obfuscate-toggle
+'object
+'object-tree-search
+'objectCategory
+'objectClass
+'objectGUID
+'objectSid
+'objectclass-toggle
+'objectguid-toggle
+'objectsid
+'objectsid-toggle
+'ok
+'oldSessionKey
+'oldpassword
+'onclick
+'opacity-0 group-hover:opacity-100 text-neutral-400 hover:text-neutral-600 dark:text-neutral-500 dark:hover:text-neutral-300 transition-opacity p-1 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-800
+'openAddObjectAclModal()
+'operatingSystem
+'operatingsystem-toggle
+'opsec
+'option
+'organizationalPerson
+'organizationalStatus
+'organizationalUnit
+'organizationalunit
+'ou
+'ou-content
+'ou-tab-search
+'ou-tabs
+'ou-tree-view
+'oupage.html
+'outfile
+'overflow-x-auto
+'p
+'p-1
+'p-1 whitespace-nowrap
+'p-1 whitespace-nowrap relative group
+'p-2
+'p-2 space-y-1
+'p-2 whitespace-nowrap
+'p-3 hover:bg-neutral-100 dark:hover:bg-neutral-700 rounded-lg cursor-pointer mb-2
+'p-4
+'p-4 hover:bg-neutral-50 dark:hover:bg-neutral-800 cursor-pointer group
+'p-4 space-y-2
+'pKICertificateTemplate
+'pKICriticalExtensions
+'pKIDefaultCSPs
+'pKIDefaultKeySpec
+'pKIExpirationPeriod
+'pKIExtendedKeyUsage
+'pKIMaxIssuingDepth
+'pKIOverlapPeriod
+'padata
+'padata-type
+'padata-value
+'page
+'pass-not-required-toggle
+'passnotrequired
+'password
+'password-expired-toggle
+'passwordExpired
+'passwordExpires
+'passwordLastSet
+'passwordNotRequired
+'password_expired
+'passwordexpires
+'passwordlastset
+'patimestamp
+'pausec
+'pdc
+'person
+'phKey
+'photo
+'popup-modal
+'port
+'posix
+'powerview
+'powerview.lib
+'powerview.modules
+'powerview.utils
+'powerview.web
+'powerview:main
+'powerview=powerview:main
+'powerview_flags
+'pre2k
+'pre2k-toggle
+'preauth-not-required-toggle
+'preauthNotRequired
+'preauthnotrequired
+'preferredLanguage
+'primaryGroupID
+'primaryGroupId
+'principal-identity
+'principalidentity
+'printers
+'printers-toggle
+'privileges. Specify a user to assign privileges to with --escalate-user
+'profile-menu
+'properties
+'properties-container
+'property-checkbox mr-2
+'property-dropdown-button
+'property-dropdown-menu
+'protectedfromaccidentaldeletion
+'protocol
+'pv_args
+'pvno
+'pwdLastSet
+'px-1 inline-flex text-xs leading-4 font-semibold rounded-md bg-green-100 text-green-800
+'px-1 py-0.5 text-xs font-medium text-white bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue active:bg-blue-600 transition duration-150 ease-in-out
+'px-2 py-1 text-sm text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300
+'px-2 py-1.5 text-sm font-medium rounded-md text-blue-600 hover:text-blue-700 hover:bg-blue-50 dark:text-yellow-500 dark:hover:text-yellow-400 dark:hover:bg-yellow-900/20 transition-colors
+'px-2 py-1.5 text-sm font-medium rounded-md text-neutral-700 hover:text-neutral-900 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:text-white dark:hover:bg-neutral-800 transition-colors
+'px-2 py-1.5 text-sm font-medium rounded-md text-red-600 hover:text-red-700 hover:bg-red-50 dark:text-red-400 dark:hover:text-red-300 dark:hover:bg-red-900/20 transition-colors
+'px-3
+'px-3 py-2
+'px-3 py-2 bg-gray-400 text-white text-sm font-medium rounded-lg hover:bg-gray-500
+'px-3 py-2 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700
+'px-3 py-2 relative group
+'px-4 py-2
+'px-4 py-3
+'px-4 py-3 font-medium text-center
+'px-4 py-3 text-center
+'px-4 py-3 text-center relative
+'py-1
+'py-2
+'python -m pip install ldap3 --upgrade
+'python-dateutil
+'query
+'r
+'rFC822LocalPart
+'raise exceptions and exit if unhandled errors
+'raw_attributes
+'rbcd
+'rbcd-toggle
+'realm
+'recordaddress
+'recordname
+'records-container
+'relative flex gap-2
+'relay
+'relay_host
+'relay_port
+'remove-adcomputer
+'remove-adobject
+'remove-aduser
+'remove-catemplate
+'remove-domaincatemplate
+'remove-domaincomputer
+'remove-domaindnsrecord
+'remove-domaingroupmember
+'remove-domainobject
+'remove-domainobjectacl
+'remove-domainou
+'remove-domainuser
+'remove-gplink
+'remove-group-member-form
+'remove-group-member-modal
+'remove-group-name
+'remove-groupmember
+'remove-member
+'remove-objectacl
+'remove-ou
+'remove_operation
+'req-body
+'requests_ntlm
+'resetpassword
+'resolve_gplink
+'resolve_sids
+'resolveguids
+'resolveip
+'resolvesids
+'result
+'result-item
+'results
+'revision
+'rights
+'rightsGuid
+'rights_guid
+'room
+'roomNumber
+'root
+'rootDomainNamingContext
+'root_dn
+'rotate(90deg)
+'rounded
+'rounded-md border border-neutral-300 bg-neutral-50 px-2 py-2 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black disabled:cursor-not-allowed disabled:opacity-75 dark:border-neutral-700 dark:bg-neutral-900/50 dark:focus-visible:outline-yellow-500 w-full whitespace-pre
+'rounded-md border border-neutral-300 bg-neutral-50 px-2 py-2 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black disabled:cursor-not-allowed disabled:opacity-75 dark:border-neutral-700 dark:bg-neutral-900/50 dark:focus-visible:outline-yellow-500 w-full whitespace-pre pr-24
+'rpc-Entry
+'rpc-Group
+'rpc-Ns-Annotation
+'rpc-Ns-Bindings
+'rpc-Ns-Codeset
+'rpc-Ns-Entry-Flags
+'rpc-Ns-Group
+'rpc-Ns-Interface-ID
+'rpc-Ns-Object-ID
+'rpc-Ns-Priority
+'rpc-Ns-Profile-Entry
+'rpc-Ns-Transfer-Syntax
+'rpc-Profile
+'rpc-Profile-Element
+'rpc-Server
+'rpc-Server-Element
+'rpc_s_access_denied
+'rtime
+'s
+'s SID if it
+'s dns to resolve {domain}
+'s privileges. This may take a while on large domains
+'s the case we
+'sAMAccountName
+'sAMAccountType
+'sAMAccountname
+'salt
+'samAccountName
+'samaccountname
+'samaccountname [contains][in][eq] admins
+'samaccountname-toggle
+'samr
+'search-base-dropdown
+'search-base-input
+'search-base-options
+'search-filter
+'search-spinner
+'searchResEntry
+'search_base
+'search_filter
+'search_scope
+'searchbase
+'searchbase-input
+'secretary
+'securityIdentifier
+'security_identifier
+'select
+'selected
+'selected-filters
+'selected-properties
+'selected-user-filters
+'seq-number
+'server
+'servicePrincipalName
+'servicePrincipalname
+'servicePrincipalname=@/path/to/local/file
+'servicePrincipalname=http/web.ws.local
+'serviceprincipalname-toggle
+'sesi10_cname
+'sesi10_idle_time
+'sesi10_time
+'sesi10_username
+'sessionKey
+'sessions
+'sessions-rows
+'set
+'set-adobject
+'set-adobjectdn
+'set-catemplate
+'set-domaincatemplate
+'set-domaincomputerpassword
+'set-domaindnsrecord
+'set-domainobject
+'set-domainobjectdn
+'set-domainobjectowner
+'set-domainrbcd
+'set-domainuserpassword
+'set-objectowner
+'set-rbcd
+'set_credentials
+'set_host
+'set_kerberos
+'set_operation
+'set_settings
+'settings
+'settings-panel
+'shadow-cred-toggle
+'shadowCred
+'shadowcred
+'shi1_netname
+'shi1_remark
+'showInAdvancedViewOnly
+'sid
+'sids
+'simpleSecurityObject
+'site.webmanifest
+'size-4
+'sn
+'sname
+'sort_by
+'space-y-1
+'span
+'span#domain-name
+'span.text-sm.text-neutral-500
+'spn
+'spn-toggle
+'spoolss
+'srvsvc
+'stack_trace
+'static
+'status
+'sticky top-0 border-b border-neutral-300 bg-neutral-50 text-sm text-neutral-900 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white
+'store
+'store_true
+'string
+'stringBinding
+'stroke
+'subkey
+'submit
+'subtree
+'svcctl
+'svg
+'systemFlags
+'sysvol
+'t exist or if new record has an address and current doesn
+'t happen but it
+'t look like a FQDN. DNS resolution of short names will probably fail.
+'t look like a FQDN. Generating baseDN will probably fail.
+'tab-search
+'tabindex
+'table
+'tableview
+'tabpanelDacl
+'tabpanelDelegation
+'tabpanelDescendants
+'tabpanelInfo
+'tabpanelLinkedGpo
+'tabpanelLoggedon
+'tabpanelMembers
+'tabpanelSessions
+'tabpanelSettings
+'tabulate
+'tag
+'target
+'target-identity
+'targetidentity
+'tbody
+'tbody tr
+'td
+'td:nth-child(1)
+'td:nth-child(2)
+'td:nth-child(3)
+'template
+'template-filter
+'text
+'text-black
+'text-blue-400 hover:text-blue-600 block
+'text-blue-500
+'text-blue-600
+'text-blue-600 hover:text-blue-700
+'text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300
+'text-blue-800
+'text-center
+'text-gray-500 hover:text-gray-700
+'text-gray-600 hover:text-gray-700
+'text-gray-800
+'text-green-400
+'text-green-600 hover:text-green-700
+'text-green-800
+'text-left
+'text-left border-b border-neutral-200 dark:border-neutral-700
+'text-left w-8
+'text-lg font-semibold
+'text-neutral-500 dark:text-neutral-400 text-sm pl-2
+'text-neutral-600
+'text-neutral-700
+'text-neutral-900
+'text-neutral-900 dark:text-white
+'text-neutral-900 dark:text-white flex items-center gap-2
+'text-red-400
+'text-red-600 hover:text-red-700
+'text-red-600 hover:text-red-700 dark:text-red-500 dark:hover:text-red-400 p-1 rounded-md hover:bg-red-50 dark:hover:bg-red-950/50 transition-colors
+'text-red-800
+'text-sm
+'text-sm font-medium text-gray-500 block
+'text-sm font-medium text-neutral-600 dark:text-neutral-400 w-1/3
+'text-sm font-mono text-neutral-700 dark:text-neutral-300 flex-1
+'text-sm px-2 py-0.5 rounded-full
+'text-sm text-gray-900 block
+'text-sm text-neutral-500 dark:text-neutral-400
+'text-sm text-neutral-700 dark:text-neutral-300
+'text-sm text-neutral-900 dark:text-white w-2/3 break-all
+'text-white
+'text-yellow-500
+'text-yellow-800
+'text/markdown
+'textarea
+'th
+'thead
+'ticket
+'till
+'times text-red-500
+'timestamp
+'title
+'title-toggle
+'toggle-command-history
+'toggle-settings
+'top
+'total
+'tr
+'tr:not(#initial-state):not(#loading-placeholder):not(#empty-placeholder)
+'tr:not(.hidden):not(#initial-state):not(#loading-placeholder):not(#empty-placeholder)
+'translate-x-0
+'translate-x-full
+'tree-view
+'true
+'trustAttributes
+'trustDirection
+'trustPartner
+'trustType
+'trusted-to-auth-toggle
+'trustedToAuth
+'trustedtoauth
+'trusts
+'trusts-content
+'tstime
+'type
+'uSNChanged
+'uSNCreated
+'uac
+'uid
+'unconstrained
+'unconstrained-delegation-toggle
+'unconstrainedDelegation
+'unicodePwd
+'uniqueIdentifier
+'uniqueMember
+'unlock-adaccount
+'unstructuredAddress
+'unstructuredName
+'use_gc
+'use_gc_ldaps
+'use_ldap
+'use_ldaps
+'use_system_ns
+'user
+'user-base-dn
+'user-filter-dropdown-button
+'user-filter-dropdown-menu
+'user-identity
+'user-properties
+'user-search
+'user-search-base
+'user-search-button
+'userAccountControl
+'userAccountcontrol
+'userClass
+'userConfig
+'userName
+'userPKCS12
+'userPrincipalName
+'userRID
+'user_name
+'useraccountcontrol-toggle
+'username
+'userpass
+'userprincipalname-toggle
+'userrid
+'users
+'users-counter
+'users-result-table
+'userspage.html
+'utf-16-le
+'utf-16le
+'utf-8
+'utils
+'utilspage.html
+'val
+'validators
+'value
+'version
+'versionNumber
+'viewBox
+'views/alert.html
+'views/commandhistory.html
+'views/detailspanel.html
+'views/modal.html
+'views/settings.html
+'views/spinner.html
+'views/tableview.html
+'vulnerable
+'w
+'w-4 h-4 text-blue-500 dark:text-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity
+'w-5 h-5 text-blue-500
+'w-full
+'w-full text-sm border-collapse
+'w-full text-sm text-neutral-600 dark:text-neutral-300
+'wLength
+'wPort
+'wPreference
+'wPriority
+'wRecordCount
+'wWeight
+'web
+'web_host
+'web_port
+'wellKnownObjects
+'werkzeug
+'whenChanged
+'whenCreated
+'where
+'wkssvc
+'wkui1_logon_domain
+'wkui1_logon_server
+'wkui1_oth_domains
+'wkui1_username
+'write
+'writemembers
+'x500uniqueIdentifier
+'z
+'zone-item
+'zoneAdminEmail
+'zonename
+'{
+'{%d:%ds} 
+'{%s}
+'{args.ldapfilter}
+'{bcolors.OKBLUE}({bcolors.ENDC}{bcolors.WARNING}{bcolors.BOLD}{init_proto}{bcolors.ENDC}
+'{bcolors.OKBLUE})-[{bcolors.ENDC}{server_dns}{bcolors.OKBLUE}]-[{bcolors.ENDC}{cur_user}
+'{bcolors.OKBLUE}]{bcolors.ENDC}\n{bcolors.OKBLUE}PV > {bcolors.ENDC}
+'{bcolors.OKGREEN}Yes{bcolors.ENDC}
+'{bcolors.WARNING}No{bcolors.ENDC}
+'{k.ljust(28)}: {v}
+'{self.__newline.ljust(self.get_max_len(list(entry[
+'{self.args.rights} right is not valid
+'{self.args.targetidentity} not found in domain. Ensure to use valid object distinguishedName property
+'{}:{}
+'{}@{}
+'|
+'}
+'~
+'~/.powerview/logs/

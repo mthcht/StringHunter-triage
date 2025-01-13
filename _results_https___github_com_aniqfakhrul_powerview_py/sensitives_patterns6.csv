@@ -1,0 +1,33 @@
+								logging.debug('No valid credentials found in cache')
+						logging.debug('No valid credentials found in cache')
+			except ldap3.core.exceptions.LDAPInvalidCredentialsResult as e:
+		:param bool useCache: whether or not we should use the ccache for credentials lookup. If TGT or TGS are specified this is False
+		except ldap3.core.exceptions.LDAPInvalidCredentialsResult as e:
+            self.shadowCredentialsAttack(domainDumper)
+        # Perform the Shadow Credentials attack if it is enabled
+        :param bool useCache: whether or not we should use the ccache for credentials lookup. If TGT or TGS are specified this is False
+        if self.config.IsShadowCredentialsAttack:
+"				logging.debug(""No credentials supplied. Using ANONYMOUS access"")"
+"				logging.debug(""Server returns invalidCredentials"")"
+"				logging.warning(""Credentials supplied with relay option. Ignoring relay flag..."")"
+"			logging.debug(""Server returns invalidCredentials"")"
+"			rpctransport.set_credentials(self.username, self.password, self.domain, lmhash=self.lmhash, nthash=self.nthash, aesKey=self.auth"
+"			rpctransport.set_credentials(self.username, self.password, self.domain, self.lmhash, self.nthash, TGT=self.TGT)"
+"			rpctransport.set_credentials(username=self.username, password=self.password,"
+"		if hasattr(rpctransport, 'set_credentials') and auth:"
+"		if hasattr(rpctransport, 'set_credentials'):"
+"	""msPKIAccountCredentials"": ""1.2.840.113556.1.4.1894"","
+"	""supplementalCredentials"": ""1.2.840.113556.1.4.125"","
+"	#domain, username, password = utils.parse_credentials(args.account)"
+"	'b8dfa744-31dc-4ef1-ac7c-84baf7ef9da7': 'ms-PKI-AccountCredentials',"
+"	'bf967a3f-0de6-11d0-a285-00aa003049e2': 'Supplemental-Credentials',"
+"                        LOG.debug(""No valid credentials found in cache. "")"
+"                elif ShadowCredentialsExportType == ""PFX"":"
+"                if ShadowCredentialsExportType == ""PEM"":"
+"            rpctransport.set_credentials(self.__username, self.__password, self.__domain, self.__lmhash,"
+"        # In theory, we should have the right credentials for the etype specified before."
+"        if hasattr(rpctransport, 'set_credentials'):"
+"    def shadowCredentialsAttack(self, ShadowCredentialsExportType=""PFX""):"
+""", ""--kerberos"", dest=""use_kerberos"", action=""store_true"", help='Use Kerberos authentication. Grabs credentials from .ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it"
+"from impacket.examples.utils import parse_credentials, parse_target"
+from impacket.examples.utils import parse_credentials

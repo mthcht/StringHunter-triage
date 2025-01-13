@@ -1,0 +1,26 @@
+"LOG.error(""See https://pypi.org/project/pycryptodomex/"""
+"LOG.error(""Warning: You don't have any crypto installed. You need pycryptodomex"""
+"LOG.error('Could not modify object, the server reports a constrained violation: %s' % self.client.result['message']"
+"LOG.error('Could not modify object, the server reports a constrained violation: %s', self.client.result['message']"
+"LOG.error('Could not modify object, the server reports insufficient rights: %s' % self.client.result['message']"
+"LOG.error('Could not modify object, the server reports insufficient rights: %s', self.client.result['message']"
+"LOG.error('Failed to add user to %s group: %s' % (groupName, str(self.client.result"
+"LOG.error('The server returned an error: %s', self.client.result['message']"
+"LOG.error('Unable to escalate without a valid user, aborting.'"
+LOG.error('Could not query target user properties'
+LOG.error('Could not retrieve infos for user: %s' % self.principalidentity_dn
+LOG.error('Error when updating ACL: %s' % self.client.result
+LOG.error('Failed to add a new computer. The server denied the operation. Try relaying to LDAP with TLS enabled (ldaps
+LOG.error('Failed to add a new computer: %s' % str(self.client.result
+LOG.error('Failed to add a new user. The server denied the operation. Try relaying to LDAP with TLS enabled (ldaps
+LOG.error('Failed to add a new user: %s' % str(self.__client.result['message']
+LOG.error('New computer already added. Refusing to add another'
+LOG.error('StartTLS failed'
+LOG.error('Target account does not exist! (wrong domain?
+LOG.error('The server returned an error: %s' % self.client.result['message']
+LOG.error('Unable to escalate without a valid user.'
+LOG.error('User distinguishedName is required'
+LOG.error('User not found in LDAP: %s' % samname
+LOG.error(f'ACE not found in {self.args.targetidentity}'
+LOG.error(f'{self.args.rights} right is not valid'
+LOG.error(f'{self.args.targetidentity} not found in domain. Ensure to use valid object distinguishedName property'

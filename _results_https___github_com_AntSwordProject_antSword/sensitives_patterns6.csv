@@ -1,0 +1,76 @@
+	            xhr.withCredentials = true;
+            <dt>should not throw an error when using the client-side &#x22;withCredentials&#x22; method</dt>
+          <h1>.withCredentials()</h1>
+          <h1>when credentials are present in url</h1>
+        headers['X-Amz-Security-Token'] = this.credentials.sessionToken
+      .withCredentials()
+      flag.withCredentials = val;
+      if (this.credentials.sessionToken && !headers['X-Amz-Security-Token'] && !headers['x-amz-security-token'])
+      query['X-Amz-Security-Token'] = this.credentials.sessionToken
+      return this[xhrSymbols.flag].withCredentials;
+    // These are the test tasks we run regardless of Sauce Labs credentials.
+    // available Sauce Labs credentials. Use `grunt test:local` to skip
+    credentialsCache = lru(1000)
+    get withCredentials() {
+    if (this.credentials.sessionToken)
+    query['X-Amz-Credential'] = this.credentials.accessKeyId + '/' + this.credentialString()
+    set withCredentials(val) {
+  .withCredentials()
+  if (!credentials || !credentials.id || !credentials.key || !credentials.algorithm) {
+  if (!kCredentials) {
+  if (this._withCredentials) xhr.withCredentials = true; // body
+  this._withCredentials = on;
+  this.credentials = credentials || this.defaultCredentials()
+  var credentials = opts.credentials
+ [#2463](https://github.com/request/request/pull/2463) AWS support for session tokens for temporary credentials (@simov)
+"        withCredentials: false,"
+"      cacheKey = [this.credentials.secretAccessKey, date, this.region, this.service].join(),"
+"      kDate, kRegion, kService, kCredentials = credentialsCache.get(cacheKey)"
+"    'AWS4-HMAC-SHA256 Credential=' + this.credentials.accessKeyId + '/' + this.credentialString(),"
+"    artifacts.hash = calculatePayloadHash(opts.payload, credentials.algorithm, opts.contentType)"
+"    credentials := ""Signature"" params"
+"    credentialsCache.set(cacheKey, kCredentials)"
+"    kCredentials = hmac(kService, 'aws4_request')"
+"    kDate = hmac('AWS4' + this.credentials.secretAccessKey, date)"
+"    this.credentialString(),"
+"  if (['sha1', 'sha256'].indexOf(credentials.algorithm) === -1) {"
+"  return hmac(kCredentials, this.stringToSign(), 'hex')"
+"  return new RequestSigner(request, credentials).sign()"
+"  var header = 'Hawk id=""' + credentials.id +"
+"  var hmac = crypto.createHmac(credentials.algorithm, credentials.key).update(normalized)"
+"  var mac = exports.calculateMac(credentials, artifacts)"
+" * and also must set ""Access-Control-Allow-Credentials"""
+"### aws4.sign(requestOptions, [credentials])"
+");a.ActiveXObject&&m(a).on(""unload"",function(){for(var a in Xc)Xc[a](void 0,!0)}),k.cors=!!Yc&&""withCredentials""in Yc,Yc=k.ajax=!!Yc,Yc&&m.ajaxTransport(function(a){if(!a.crossDomain||k.cors){var b;return{send:f"
+");return c}function l(a){return new ja(function(b,c){var d=new XMLHttpRequest;d.open(""GET"",a),d.withCredentials=!0,d.responseType=""arraybuffer"",d.onreadystatechange=function(){return 4===d.readyState?200===d.sta"
+"- `hawk` - options for [Hawk signing](https://github.com/hueniverse/hawk). The `credentials` key must contain the necessary signing info, [see hawk docs for details](https://github.com/hueniv"
+"// credentials: { accessKeyId, secretAccessKey, [sessionToken] }"
+"// or it can get credentials from process.env.AWS_ACCESS_KEY_ID, etc"
+"<p>The <code>.withCredentials()</code> method enables the ability to send cookies from the origin, however only when <code>Access"
+"For edge cases, like POST request to URL with query string or to pass HTTP auth credentials, object can be passed to `form.submit()` as first parameter:"
+"The `.withCredentials()` method enables the ability to send cookies from the origin, however only when `Access-Control-Al"
+"['use', 'on', 'once', 'set', 'query', 'type', 'accept', 'auth', 'withCredentials', 'sortQuery', 'retry', 'ok', 'redirects', 'timeout', 'buffer', 'serialize', 'parse', 'ca', 'key', "
+"aws4.sign = function(request, credentials) {"
+"ct?function(){return!this.isLocal&&In()||zn()}:In,Rn=b.ajaxSettings.xhr(),b.support.cors=!!Rn&&""withCredentials""in Rn,Rn=b.support.ajax=!!Rn,Rn&&b.ajaxTransport(function(n){if(!n.crossDomain||b.support.cors){var"
+"ent can use to set defaults is: `use`, `on`, `once`, `set`, `query`, `type`, `accept`, `auth`, `withCredentials`, `sortQuery`, `retry`, `ok`, `redirects`, `timeout`, `buffer`, `serialize`, `parse`, `ca`, `key`, "
+"ername,this.password):e.open(this.method,this.url,!0)}catch(u){return this.callback(u)}if(this._withCredentials&&(e.withCredentials=!0),!this._formData&&""GET""!==this.method&&""HEAD""!==this.method&&""string""!=typeo"
+"et</code>, <code>query</code>, <code>type</code>, <code>accept</code>, <code>auth</code>, <code>withCredentials</code>, <code>sortQuery</code>, <code>retry</code>, <code>ok</code>, <code>redirects</code>, <code>"
+"eturn o}function Q(){this._defaults=[]}[""use"",""on"",""once"",""set"",""query"",""type"",""accept"",""auth"",""withCredentials"",""sortQuery"",""retry"",""ok"",""redirects"",""timeout"",""buffer"",""serialize"",""parse"",""ca"",""key"",""pfx"",""cert"
+"exports.calculateMac = function (credentials, opts) {"
+"function RequestSigner(request, credentials) {"
+"hr();a.attachEvent&&a.attachEvent(""onunload"",function(){for(var a in Cc)Cc[a]()}),k.cors=!!Ec&&""withCredentials""in Ec,k.ajax=Ec=!!Ec,n.ajaxTransport(function(a){var b;return k.cors||Ec&&!a.crossDomain?{send:func"
+"low-Origin` is _not_ a wildcard (""*""), and `Access-Control-Allow-Credentials` is ""true""."
+"ord=e;break;case""bearer"":this.set(""Authorization"",""Bearer "".concat(t))}return this},q.prototype.withCredentials=function(t){return void 0===t&&(t=!0),this._withCredentials=t,this},q.prototype.redirects=function("
+"support.cors = !!xhrSupported && ( ""withCredentials"" in xhrSupported );"
+"trol-Allow-Origin</code> is <em>not</em> a wildcard (&quot;*&quot;), and <code>Access-Control-Allow-Credentials</code> is &quot;true&quot;.</p>"
+"urn n}function r(t){return new Promise(function(e,n){var r=new XMLHttpRequest;r.open(""GET"",t),r.withCredentials=!0,r.responseType=""arraybuffer"",r.onreadystatechange=function(){return 4===r.readyState?200===r.sta"
+* Add no-op `withCredentials` to Node API (markdalgleish)
+* `withCredentials(false)` (Andy Woods)
+* fix CORS withCredentials (wejendorp)
+RequestBase.prototype.withCredentials = function (on) {
+RequestSigner.prototype.credentialString = function() {
+RequestSigner.prototype.defaultCredentials = function() {
+Your AWS credentials (which can be found in your
+[AWS console](https://portal.aws.amazon.com/gp/aws/securityCredentials))
+up|between|binary|blanksasnull|both|bytedict|bzip2|case|cast|check|collate|column|constraint|create|credentials|cross|current_date|current_time|current_timestamp|current_user|current_user_id|default|deferrable|d
+with [IAM STS temporary credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html).

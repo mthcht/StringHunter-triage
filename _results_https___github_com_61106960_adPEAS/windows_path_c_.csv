@@ -1,0 +1,11 @@
+"C:\Backup\"""
+"C:\Windows\example.ini"" | Get-IniContent -OutputObject"
+"C:\Windows\example.ini"" | Get-IniContent"
+"c:\encodedfile.vbe"" | Get-DecodedVBE"
+C:\> Invoke-BloodHound
+C:\> Invoke-BloodHound -CollectionMethods All
+C:\> Invoke-BloodHound -CollectionMethods DCOnly -NoSaveCache -RandomizeFilenames -EncryptZip
+C:\> Invoke-BloodHound -Loop -LoopInterval 00:01:00 -LoopDuration 00:10:00
+C:\Backup\ that have the default
+C:\Windows\example.ini
+C:\temp\adPEAS_outputfile' -NoColor

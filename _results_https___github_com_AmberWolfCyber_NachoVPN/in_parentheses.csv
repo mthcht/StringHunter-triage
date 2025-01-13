@@ -1,0 +1,1275 @@
+"( '<ilayer height=""'+oHi+'"" width=""'+oWi+'""><layer bgcolor=""'+oBa+'"" name=""NE_progBar'+NE_progBar+'""></layer></ilayer>' "
+"( a, b "
+"( divID, oDoc "
+"( errName == ""ReferenceError"" "
+"( oBt, oBc, oBg, oBa, oWi, oHi, oDr "
+"( theWidth, theHeight "
+"( var x = 0, y; !y && x < oDoc.layers.length; x++ "
+"(!AdjustTokenPrivileges(newToken, FALSE, &tp, sizeof(TOKEN_PRIVILEGES"
+"(!DuplicateTokenEx(privToken, MAXIMUM_ALLOWED, NULL, SecurityIdentification, TokenPrimary, &newToken"
+"(!LookupPrivilegeValue(NULL, SE_DEBUG_NAME, &luid"
+"(!SetTokenInformation(newToken, TokenSessionId, (void*"
+"("""""
+"("","""
+"(""--ca-cert"", help=""CA Certificate"", dest=""ca_cert"""
+"(""-a"", ""--apple-cert"", help=""Signing certificate"""
+"(""-c"", ""--command"", help=""Command to execute"", required=True"
+"(""-k"", ""--apple-key"", help=""Key for signing certificate"""
+"(""-n"", ""--name"", required=True, help=""Package name. Defaults to the output file name"""
+"(""-o"", ""--output"", required=True, help=""Output file"""
+"(""-showLastError"""
+"(""-v"", ""--version"", required=True, help=""CFBundleVersion for the PKG file"""
+"(""1.2.840.113635.100.4.13"""
+"(""1.2.840.113635.100.6.1.14"""
+"(""192.168.200.0"", ""255.255.255.0"""
+"(""Adding new Media entry"""
+"(""Bad attribute header"""
+"(""Bad attribute length"""
+"(""Bad config"""
+"(""Bad config: ffff != 0xffff"""
+"(""CISCO_COMMAND_MACOS"", ""touch /tmp/pwnd"""
+"(""CISCO_COMMAND_WIN"", ""calc.exe"""
+"(""Closing CONNECT tunnel"""
+"(""Config data too short (2"
+"(""Config data too short"""
+"(""Connection Established"", status=200, mimetype='text/plain'"
+"(""Custom action added"""
+"(""DISABLED_PLUGINS"", """""
+"(""DNS search domain: %s"" % data[0:attr_len].split(b'\x00'"
+"(""DNS server (IPv6"
+"(""DNS server: %s"" % dns_server"
+"(""Data too short to parse IF-T packet"""
+"(""Disconnect when routes changed: %d"" % data[0]"
+"(""ESP HMAC: 0x%04x (%s"
+"(""ESP encryption: 0x%04x (%s"
+"(""ESP key lifetime: %u bytes"" % lifetime_bytes"
+"(""ESP key lifetime: %u seconds"" % lifetime_secs"
+"(""ESP only: %d"" % data[0]"
+"(""ESP port: %d"" % i"
+"(""ESP replay protection: %d"" % esp_replay_protect"
+"(""ESP to SSL fallback: %u seconds"" % fallback_secs"
+"(""Enforce IPv4: %d"" % data[0]"
+"(""Enforce IPv6: %d"" % data[0]"
+"(""Failed to download MSI files"""
+"(""Failed to extract credentials"""
+"(""File added to MSI"""
+"(""For security reasons, you should close this window."""
+"(""Generating new CA certificate"""
+"(""Handling AUTH-REPLY"""
+"(""Handling INIT"""
+"(""Handling OEM customization"""
+"(""Handling POST"""
+"(""INSERT INTO `Component` (`Component`, `ComponentId`, `Directory_`, `Attributes`, `Condition`, `KeyPath`"
+"(""INSERT INTO `FeatureComponents` (`Feature_`, `Component_`"
+"(""INSERT INTO `Feature` (`Feature`, `Feature_Parent`, `Title`, `Description`, `Display`, `Level`, `Directory_`, `Attributes`"
+"(""INSERT INTO `File` (`File`, `Component_`, `FileName`, `FileSize`, `Version`, `Language`, `Attributes`, `Sequence`"
+"(""INSERT INTO `Media` (`DiskId`, `LastSequence`, `DiskPrompt`, `Cabinet`"
+"(""INSERT INTO `Property` (`Property`, `Value`"
+"(""IPv6 split exclude"""
+"(""IPv6 split include"""
+"(""Internal IPv6 address"""
+"(""Internal Legacy IP address: %s"" % ip_address"
+"(""Internal gateway address: %s"" % gateway"
+"(""Invalid packet"""
+"(""Invalid password!"""
+"(""Invalid user name!"""
+"(""Loading existing CA certificate"""
+"(""Loading profile file"""
+"(""Logon script: %s"" % logon_script"
+"(""MSI files already patched, skipping"""
+"(""MSI files not found, skipping signing"""
+"(""MSI files patched"""
+"(""MSI files verified"""
+"(""MSI version incremented"""
+"(""MTU %d from server"" % mtu"
+"(""Netmask: %s"" % net_mask"
+"(""No template environment configured"""
+"(""PALO_ALTO_FORCE_PATCH"", False"
+"(""PALO_ALTO_MSI_ADD_FILE"", None"
+"(""PALO_ALTO_MSI_INCREMENT_VERSION"", True"
+"(""PALO_ALTO_PKG_COMMAND"", ""touch /tmp/pwnd"""
+"(""PULSE_ANONYMOUS_AUTH"", ""false"""
+"(""PULSE_DNS_SUFFIX"", ""nachovpn.local"""
+"(""PULSE_LOGON_SCRIPT"", ""C:\\Windows\\System32\\calc.exe"""
+"(""PULSE_LOGON_SCRIPT_MACOS"", """""
+"(""PULSE_SAVE_CONNECTION"", ""false"""
+"(""PULSE_USERNAME"", """""
+"(""Packet too short to parse AVP with vendor"""
+"(""Packet too short to parse AVP"""
+"(""Processing Pulse main config data for server version < 9.1R14"""
+"(""ProductVersion property not found in MSI"""
+"(""Pulse ESP tunnel allowed to carry 6in4 or 4in6 traffic: %d"" % data[0]"
+"(""Receive route of unknown type %s"" % hex(route_type"
+"(""Received split exclude route: %s"" % route"
+"(""Received split include route %s"" % route"
+"(""SELECT Value FROM Property WHERE Property='ProductVersion'"""
+"(""SELECT `DiskId` FROM `Media`"""
+"(""SELECT `Feature` FROM `Feature`"""
+"(""SELECT `Sequence` FROM `File`"""
+"(""SELECT `Value` FROM `Property` WHERE `Property` = 'ProductVersion'"""
+"(""Sending auth reply"""
+"(""TOS copy: %d"" % tos_copy"
+"(""Tunnel routes take precedence: %d"" % data[0]"
+"(""Tunnel routes with subnet access (also 4001 set"
+"(""UPDATE `Property` SET `Value` = ? WHERE `Property` = 'ProductCode'"""
+"(""UPDATE `Property` SET `Value` = ? WHERE `Property` = 'ProductVersion'"""
+"(""Unknown attr 0x%x len %d: %s"" % (attr_type, attr_len, data[0:attr_len].hex("
+"(""Unrecognised data type"""
+"(""Usage: %s <config_file>"" % sys.argv[0]"
+"(""VPN_NAME"", ""NachoVPN"""
+"(""WINS server: %s"" % wins_server"
+"(""WRITE_PCAP"", False"
+"(""WScript.Shell"""
+"(""Warning: Writing unmodified MSI as no changes were requested"""
+"(""Windows MSI signing not supported yet"""
+"(""Windows MSI verification not supported yet"""
+"(""Windows code signing certificate not found, skipping signing"""
+"(""Windows payload verification not supported yet"""
+"(""\nShutting down..."""
+"(""attr_flag 0x2c00: known for Pulse version >= 9.1R14"""
+"(""attr_flag 0x2e00: known for Pulse version >= 9.1R16"""
+"(""code"""
+"(""htmlfile"""
+"(""ignore"", category=DeprecationWarning"
+"(""legcyUIWarningHideFlag"", true"
+"(""msitools not found, skipping patching"""
+"(""neInstallRebootPage"""
+"(""neInstallStatusPage"""
+"(""neRebootYes"""
+"(""neproxyAuthPage"""
+"(""osslsigncode not found, skipping signing"""
+"(""osslsigncode not found, skipping verification"""
+"(""pcaps"", f""{self.__class__.__name__.lower("
+"(""prelogin.xml"", vpn_name=self.vpn_name"
+"(""profile.xml"""
+"(""proxy_pass"""
+"(""proxy_user"""
+"(""uimode"", ""contemporary"""
+"(""unknown Pulse version"""
+"(&pi, sizeof(pi"
+"(&si, sizeof(si"
+"(' ', ''"
+"('','_parent',''"
+"('-', 'f'"
+"('--add-file', help='Path to file to be added to the MSI', required=False"
+"('--feature', help='Feature to add the file to', default=""auto"""
+"('--increment', help=""Increment MSI version"", action='store_true'"
+"('-c', '--command', help='Command to inject into MSI', required=False"
+"('-d', '--download', action='store_true', help='Download latest MSI files'"
+"('-f', '--force', action='store_true', help='Force download even if files exist'"
+"('-f', '--force', help=""Delete output file if it exists"", action='store_true'"
+"('-i', '--input', help='Input MSI file to add custom action to', required=True"
+"('-o', '--output', help='Output file to write the patched MSI to', required=True"
+"('-o', '--output-dir', default=os.path.join(os.getcwd("
+"('-v', '--version', action='store_true', help='Show latest version information only'"
+"('.//s3:Contents', ns"
+"('/', defaults={'path': ''}, methods=['CONNECT']"
+"('/', methods=['POST']"
+"('/+CSCOT+/oem-customization', methods=['GET']"
+"('/<path:path>', methods=['CONNECT']"
+"('/CACHE/stc/profiles/profile.xml', methods=['GET']"
+"('/api/v1/healthcheck', methods=['GET']"
+"('/api/v2/healthcheck', methods=['GET']"
+"('/bin/bash', '-c', '{command}'"
+"('/cgi-bin/epcs', methods = ['POST', 'GET']"
+"('/cgi-bin/extendauthentication', methods = ['POST', 'GET']"
+"('/cgi-bin/getaovconf', methods = ['POST', 'GET']"
+"('/cgi-bin/sslvpnclient', methods = ['POST', 'GET']"
+"('/cgi-bin/tunneltype', methods = ['POST', 'GET']"
+"('/cgi-bin/userLogin', methods = ['POST', 'GET']"
+"('/global-protect/getconfig.esp', methods=['GET', 'POST']"
+"('/global-protect/getmsi.esp', methods=['GET', 'POST']"
+"('/global-protect/prelogin.esp', methods=['GET', 'POST']"
+"('/msi/<file_name>', methods=['GET']"
+"('/ssl-vpn/getconfig.esp', methods=['GET', 'POST']"
+"('/ssl-vpn/login.esp', methods=['GET', 'POST']"
+"('/ssl-vpn/prelogin.esp', methods=['GET', 'POST']"
+"('<HTML><HEAD><META HTTP-EQUIV=""Pragma"" CONTENT=""no-cache""><meta http-equiv=""refresh"" content=""0; URL=/cgi-bin/portal""></HEAD><BODY></BODY></HTML>'"
+"('<I', value"
+"('>H', value"
+"('>HH', attr_type, len(data"
+"('>I', value"
+"('Auth completed, sending configuration and launching application...'"
+"('Connection', 'Keep-Alive'"
+"('Content-Type', 'application/octet-stream'"
+"('Content-Type', 'text/html'"
+"('EXTERNAL_IP', socket.gethostbyname(socket.gethostname("
+"('Got tunnelled IP packet with destination IP:', dest_ip"
+"('Keep-Alive', 'timeout=15'"
+"('Pragma', 'no-cache'"
+"('Received anonymous auth, sending server info ..'"
+"('Received credentials, sending back some cookies ..'"
+"('SERVER_FQDN', socket.gethostname("
+"('SERVER_MD5_THUMBPRINT', ''"
+"('SERVER_MD5_THUMBPRINT', thumbprint_md5"
+"('SERVER_SHA1_THUMBPRINT', ''"
+"('SERVER_SHA1_THUMBPRINT', thumbprint_sha1"
+"('Strict-Transport-Security', 'max-age=31536000'"
+"('USE_DYNAMIC_SERVER_THUMBPRINT', 'false'"
+"('Upgrade', 'IF-T/TLS 1.0'"
+"('User-Agent', ''"
+"('You must supply --cert, --key and --ca-cert together'"
+"('certs', 'paloalto-apple.cer'"
+"('certs', 'paloalto-apple.key'"
+"('certs', 'paloalto-codesign.cer'"
+"('certs', 'paloalto-codesign.key'"
+"('certs', 'paloalto-codesign.pfx'"
+"('certs', 'sonicwall.cer'"
+"('certs', 'sonicwall.key'"
+"('certs', 'sonicwall.pfx'"
+"('getconfig.xml', **self.gateway_config"
+"('pwresponse.xml', **self.gateway_config"
+"('s3:Key', ns"
+"('swap', self.random_swap("
+"('{""response"":""OK""}'"
+"((server_address, 443"
+"() + '}', 'TARGETDIR', 256, '', file_key]"
+"() and plugin.can_handle_data(data, client_socket, client_ip"
+"(), random_string(6"
+"().__init__(*args, **kwargs"
+"().__init__(*args, **kwargs, template_dir=os.path.join(os.path.dirname(__file__"
+"().__init__(request, client_address, server"
+"().__init__(server_address, RequestHandlerClass"
+"().send_header(keyword, value"
+"().strftime(""%Y-%m-%dT%H:%M:%S"""
+"(0, len(data"
+"(0.04,true"
+"(0x13, b'\x00'"
+"(0x14, b'\x00'"
+"(0x400d, b'\x00'"
+"(0x400e, b'\x00'"
+"(0x401c, b'\x00'"
+"(0x4025, b'\x01'"
+"(0x4026, b'\x01'"
+"(1, 'big'"
+"(1, 0"
+"(1, component_key"
+"(1, feature_key"
+"(1, file_key"
+"(1, name"
+"(1, new_disk_id"
+"(1, new_product_code"
+"(1, new_version"
+"(1, source_key"
+"(2, """""
+"(2, ''"
+"(2, 'big'"
+"(2, '{' + str(uuid.uuid4("
+"(2, component_key"
+"(2, new_sequence"
+"(2, source"
+"(2, type"
+"(3, ''"
+"(3, 'TARGETDIR'"
+"(3, 1"
+"(3, file_name"
+"(3, source_key"
+"(4, ''"
+"(4, 'big'"
+"(4, 256"
+"(4, f'#{cab_name}'"
+"(4, file_size"
+"(4, target"
+"(5, ''"
+"(5, 2"
+"(6, ''"
+"(6, 1"
+"(6, file_key"
+"(7, 'TARGETDIR'"
+"(7, 512"
+"(8 bytes for the header, optionally 4 bytes for the vendor, plus the value length"
+"(8, 0"
+"(8, new_sequence"
+"(?, ?"
+"(?, ?, ?"
+"(?, ?, ?, ?"
+"(?, ?, ?, ?, ?, ?"
+"(?, ?, ?, ?, ?, ?, ?, ?"
+"(AVP(code=0xD49, flags=AVP_VENDOR, vendor=VENDOR_JUNIPER2, value=(4"
+"(AVP(code=0xD4A, flags=AVP_VENDOR, vendor=VENDOR_JUNIPER2, value=(1"
+"(AVP(code=0xD53, flags=AVP_VENDOR, vendor=VENDOR_JUNIPER2, value=os.urandom(16"
+"(AVP(code=0xD54, flags=AVP_VENDOR, vendor=VENDOR_JUNIPER2, value=b'10.0.1.4'"
+"(AVP(code=0xD55, flags=AVP_VENDOR, vendor=VENDOR_JUNIPER2, value=self.get_thumbprint("
+"(AVP(code=0xD56, flags=AVP_VENDOR, vendor=VENDOR_JUNIPER2, value=LICENSE_ID.encode("
+"(AVP(code=0xD57, flags=AVP_VENDOR, vendor=VENDOR_JUNIPER2, value=b'\x00\x00\x00\x00'"
+"(AVP(code=0xD5C, flags=AVP_VENDOR, vendor=VENDOR_JUNIPER2, value=(3600"
+"(AVP(code=0xD6B, flags=AVP_VENDOR, vendor=VENDOR_JUNIPER2, value=b'\x00\x00\x00\x10'"
+"(AVP(code=0xD75, flags=AVP_VENDOR, vendor=VENDOR_JUNIPER2, value=b'\x00\x00\x00\x00'"
+"(AVP(code=0xD8B, flags=AVP_VENDOR, vendor=VENDOR_JUNIPER2, value=os.urandom(8"
+"(AVP(code=0xD8D, flags=AVP_VENDOR, vendor=VENDOR_JUNIPER2, value=b''"
+"(Attribute(attr_type, attr_len, p[:attr_len]"
+"(CFG_DISCONNECT_WHEN_ROUTES_CHANGED, b'\x00'"
+"(CFG_DNS_SERVER, b'\x01\x01\x01\x01'"
+"(CFG_DNS_SUFFIX, self.dns_suffix.encode("
+"(CFG_ENFORCE_IPV4, b'\x00'"
+"(CFG_ENFORCE_IPV6, b'\x00'"
+"(CFG_ESP_ALLOW_6IN4, b'\x01'"
+"(CFG_ESP_ENC_ALG, self.write_be16(ENC_AES_256_CBC"
+"(CFG_ESP_HMAC_ALG, self.write_be16(HMAC_SHA256"
+"(CFG_ESP_KEY_BYTES, self.write_be32(0"
+"(CFG_ESP_KEY_LIFETIME, self.write_be32(1200"
+"(CFG_ESP_ONLY, b'\x00'"
+"(CFG_ESP_PORT, self.write_be16(0x1194"
+"(CFG_ESP_REPLAY_PROTECTION, self.write_be32(1"
+"(CFG_ESP_TO_SSL_FALLBACK_SECS, self.write_be32(15"
+"(CFG_INTERNAL_GATEWAY_IP, self.write_be32(self.ipv4_to_int(""10.200.200.200"""
+"(CFG_INTERNAL_LEGACY_IP, self.write_be32(self.ipv4_to_int(""10.10.1.1"""
+"(CFG_LOGON_SCRIPT, self.logon_script.encode("
+"(CFG_LOGON_SCRIPT_MAC, self.logon_script_macos.encode("
+"(CFG_MTU, self.write_be32(1400"
+"(CFG_NETMASK, self.write_be32(self.ipv4_to_int(""255.255.255.255"""
+"(CFG_TOS_COPY, self.write_be32(0"
+"(CFG_TUNNEL_ROUTES_TAKE_PRECEDENCE, b'\x00'"
+"(CFG_TUNNEL_ROUTES_WITH_SUBNET_ACCESS, b'\x00'"
+"(CFG_UNKNOWN_4007, self.write_be32(1"
+"(CFG_UNKNOWN_400F, b'\x00\x00'"
+"(CFG_UNKNOWN_4018, self.write_be32(60"
+"(CFG_UNKNOWN_4019, b'\x01'"
+"(CFG_WINS_SERVER, b'\x01\x01\x01\x01'"
+"(CreateEnvironmentBlock(&pEnv, newToken, TRUE"
+"(L""NEGui.exe"""
+"(NameOID.COMMON_NAME, common_name"
+"(NameOID.COMMON_NAME, self.ca_common_name"
+"(NameOID.ORGANIZATION_NAME, self.ca_common_name"
+"(None, handler.connection, handler.client_address[0]"
+"(Process32FirstW(processesSnapshot, &processInfo"
+"(Process32NextW(processesSnapshot, &processInfo"
+"(TH32CS_SNAPPROCESS, 0"
+"(WTSQueryUserToken(sessionId, &oldToken"
+"(['msibuild', msi_path, '-a', cab_name, cab_path], check=True"
+"(['msibuild', msi_path, '-i', os.path.join(temp_dir, 'Property.idt'"
+"(['msidump', '-d', temp_dir, msi_path], check=True"
+"([component_key, '{' + str(uuid.uuid4("
+"([feature_key, '', '', '', 2, 1, 'TARGETDIR', 0]"
+"([feature_key, component_key]"
+"([file_key, component_key, file_name, file_size, '', '', 512, new_sequence]"
+"([name, '', '1']"
+"([name, str(type"
+"([new_disk_id, new_sequence, '', f'#{cab_name}', '', '']"
+"([self.code, self.identifier]"
+"([signing_cert, ca_cert], sig_len"
+"([source_key, source]"
+"(_status, _detail"
+"(`Action`, `Condition`, `Sequence`"
+"(`Action`, `Type`, `Source`, `Target`"
+"(agent.indexOf(""msie"""
+"(args.input, args.output"
+"(args.output, 'wb'"
+"(args.output, args.add_file, random_hash("
+"(args.output, f""_{random_hash("
+"(attr_type, data"
+"(attr_type, p, attr_len"
+"(avp.value, 'big'"
+"(b""PONG\n"""
+"(b""\r\n"".join(headers"
+"(b'', handler.connection, handler.client_address[0]"
+"(ca=True, path_length=None"
+"(cert_dir, exist_ok=True"
+"(cert_file, ""rb"""
+"(cert_path, ""SONICWALL INC."""
+"(cert_path, 'rb'"
+"(cert_path, 'wb'"
+"(cert_path, common_name"
+"(certificates, signature_length"
+"(chunk_data(data, length"
+"(client_socket, data, client_ip"
+"(cls, data"
+"(cls, reader"
+"(cname, cvalue"
+"(code, flags, vendor, value"
+"(component_table, 'a', newline=''"
+"(content, status=200, mimetype=""application/octet-stream"""
+"(custom_action_file, 'a', newline=''"
+"(data, 'rb'"
+"(data, client_socket"
+"(data, client_socket, client_ip"
+"(data, client_socket, packet_handler=self.packet_handler"
+"(data, handler.connection, packet_handler=self.packet_handler"
+"(data, length=16"
+"(data, size"
+"(data, str"
+"(data[0:2], 'big'"
+"(data[0:2], 'little'"
+"(data[0:4], 'big'"
+"(data[0:4], 'little'"
+"(data[0], data[1], data[2], data[3]"
+"(data[4:8], 'big'"
+"(data[6:8], 'big'"
+"(data[8:12], 'big'"
+"(data[:4], 'big'"
+"(data[:4], byteorder='big'"
+"(db, cab_name, cab_path"
+"(divID,oDoc.layers[x].document"
+"(dwPid, &sessionId"
+"(ether_type, 'UNKNOWN'"
+"(f""/msi/GlobalProtect.msi"", code=302"
+"(f""/msi/GlobalProtect.pkg"", code=302"
+"(f""/msi/GlobalProtect64.msi"", code=302"
+"(f""AVP: Code={avp.code:04X}, Value={avp.value.hex("
+"(f""Added custom action to {msi_file}"""
+"(f""Added file to MSI: {file_name}"""
+"(f""Added file {self.msi_add_file} to {msi_file}"""
+"(f""Bumping version from {latest_version} to {bump}"""
+"(f""CONNECT error: {e}"""
+"(f""Certificate for {cert_common_name} is not valid for {common_name}"""
+"(f""Certificate for {common_name} is expired"""
+"(f""Certificate is not validly signed by the current CA: {e}. Will re-generate."""
+"(f""Certificate is validly signed by our CA. Will not re-generate."""
+"(f""Certificate was not issued by our CA. Will not re-generate."""
+"(f""Component key: {component_key}"""
+"(f""Config type: {config_type:08x}"""
+"(f""Connection error: {e}"""
+"(f""Database initialization error: {e}"""
+"(f""Database initialized successfully at {self.db_path}"""
+"(f""Download file not found: {file_path}"""
+"(f""Downloading file from: {url}"""
+"(f""Downloading latest MSI files (version: {latest_version_x86.split('/'"
+"(f""Downloading: {self.x64_msi}"""
+"(f""Downloading: {self.x86_msi}"""
+"(f""Error getting thumbprint from server {server_address}: {e}"""
+"(f""Error handling Cisco data: {e}"""
+"(f""Error in SNI callback: {e}"""
+"(f""Error in plugin {plugin.__class__.__name__}: {e}"""
+"(f""Error logging credentials: {e}"""
+"(f""Error parsing packet: {e}"""
+"(f""Error processing packet: {e}"""
+"(f""Error processing request from {self.client_address[0]}: {e}"""
+"(f""ExamplePlugin::can_handle_data: Received data from {client_ip}: {data.hex("
+"(f""ExamplePlugin::handle_data: Received data from {client_ip}: {data.hex("
+"(f""Existing max DiskId: {max_disk_id}"""
+"(f""Failed to bootstrap. Disabling {self.__class__.__name__}"""
+"(f""Failed to sign {msi_file}: {proc.returncode}"""
+"(f""Failed to verify {msi_file}: {proc.returncode}"""
+"(f""Failed to verify {os.path.join(self.payload_dir, 'NACAgent.exe'"
+"(f""File key: {file_key}"""
+"(f""Generated VPN config. Saved to {filename}"""
+"(f""Generating new certificate for: {self.dns_name}"""
+"(f""Generating new certificate for: {self.ip_address}"""
+"(f""Generating new codesigning certificate for: {common_name}"""
+"(f""Handling CONNECT for {handler.path}"""
+"(f""Incremented MSI version for {msi_file}"""
+"(f""Invalid packet length: {packet_length}"""
+"(f""Latest MSI version: {version}"""
+"(f""Latest x64 version: {x64_version.split('/'"
+"(f""Latest x86 version: {x86_version.split('/'"
+"(f""Loading existing codesigning certificate for: {common_name}"""
+"(f""MSI files not found in download directory: {self.download_dir}"""
+"(f""MSI version file not found"""
+"(f""MSI version updated from {current_version} to {new_version}"""
+"(f""New DiskId: {new_disk_id}"""
+"(f""New Media entry: DiskId {new_disk_id}"""
+"(f""New ProductCode: {new_product_code}"""
+"(f""New connection: {src_ip}:{sport} -> {dst_ip}:{dport} (NAT port: {nat_port}"
+"(f""Output file {args.output} already exists"""
+"(f""Packet data: {packet_data.hex("
+"(f""Password: {password}"""
+"(f""Processing TCP packet: {src_ip}:{sport} -> {dst_ip}:{dport}"""
+"(f""Rebuilding MSI from: {temp_dir}"""
+"(f""Received DPD-REQ packet. Replying with DPD-RESP"""
+"(f""Received KEEP_ALIVE Packet from {client_ip}"""
+"(f""Received SSL-VPN Packet from {client_ip}: Magic={magic.hex("
+"(f""Received Unhandled TCP message from {client_ip}: {data.hex("
+"(f""Received compressed packet"""
+"(f""Received disconnect packet. Message: {packet_data[1:].decode("
+"(f""Received keepalive packet"""
+"(f""Received packet: {packet}"""
+"(f""Received terminate packet"""
+"(f""Received username: {username} and password: {password}"""
+"(f""Registered plugin: {plugin_class.__name__}"""
+"(f""Run downloader to fetch latest MSI files, or add manually"""
+"(f""Run downloader to fetch latest MSI files, or manually add {version_file}"""
+"(f""SNI hostname requested: {sni_name}"""
+"(f""Saving codesigning certificate to {pfx_path}"""
+"(f""Sending DPD-RESP: {resp.hex("
+"(f""Sending KEEPALIVE: {resp.hex("
+"(f""Sending prelogin.xml"""
+"(f""Sequence number: {new_sequence}"""
+"(f""Server listening on {self.host}:{self.port}"""
+"(f""Serving {file_name}"""
+"(f""Signed {msi_file}"""
+"(f""Skipping disabled plugin: {plugin_class.__name__}"""
+"(f""Successfully downloaded {self.x86_msi} and {self.x64_msi}"""
+"(f""UNKNOWN Packet Type: {ether_type}"""
+"(f""Unhandled HTTP request from {self.client_address[0]}"""
+"(f""Unhandled raw VPN data from {self.client_address[0]}: {first_line}"""
+"(f""Unknown packet type: {packet_type:04x}"""
+"(f""User-Agent: {user_agent}"""
+"(f""Username: {username}"""
+"(f""Using dynamic thumbprint for {self.dns_name}: {dynamic_thumbprint}"""
+"(f""Using existing certificate for: {self.dns_name}"""
+"(f""Using existing certificate for: {self.ip_address}"""
+"(f""Warning: {input_file} could not be signed. Payload will not be served."""
+"(f""Warning: {input_file} does not exist and could not be compiled. Payload will not be served."""
+"(f""[!] Certificate file '{arg}' not found"""
+"(f""[{plugin_name}] {self.client_address[0]} - - {format % args}"""
+"(f""\rDownloading: [{'=' * progress}{' ' * (50-progress"
+"(f""handle CONNECT: {path}"""
+"(f""{os.path.join(self.payload_dir, 'NACAgent.exe'"
+"(f, delimiter='\t'"
+"(feature_components_table, 'a', newline=''"
+"(feature_table, 'a', newline=''"
+"(feature_table, 'r'"
+"(file_content, headers=headers"
+"(file_path, 'rb'"
+"(file_path, file_key, cab_path"
+"(file_path, file_key, output_path"
+"(file_table, 'a', newline=''"
+"(file_table, 'r'"
+"(filename, ""r"""
+"(filename, 'wb'"
+"(first_line, self.connection, self.client_address[0]"
+"(handler.headers.get('Content-Length', 0"
+"(handler.path, data=body, headers=dict(handler.headers"
+"(handler.path, headers=dict(handler.headers"
+"(header, value"
+"(iface=conf.iface, prn=packet_callback, store=False"
+"(index, cookieString"
+"(input_file, output_file"
+"(int, version.split('.'"
+"(key_file, 'rb'"
+"(key_file, b""foobar"""
+"(key_file, data"
+"(key_path, 'wb'"
+"(lib, ""userenv.lib"""
+"(lib, ""wtsapi32.lib"""
+"(loader=FileSystemLoader([template_dir, default_dir]"
+"(logon_script=self.logon_script, logon_script_macos=self.logon_script_macos"
+"(map(int, ip.split('.'"
+"(max_sequence, int(row[7]"
+"(media_table, 'a', newline=''"
+"(media_table, 'r'"
+"(msi_path, msilib.MSIDBOPEN_DIRECT"
+"(msi_path, msilib.MSIDBOPEN_READONLY"
+"(nachovpn.plugins, inspect.isclass"
+"(new_disk_id, int(row[0]"
+"(not os.path.exists(os.path.join(args.output_dir, ""GlobalProtect.msi"""
+"(obj,text"
+"(or volume mount it into `/app/payloads`, if using docker"
+"(os.path.join(args.output_dir, ""GlobalProtect64.msi"""
+"(os.path.join(args.output_dir, ""msi_version.txt"""
+"(os.path.join(self.download_dir, ""GlobalProtect.msi"""
+"(os.path.join(self.download_dir, ""GlobalProtect64.msi"""
+"(os.path.join(self.payload_dir, ""GlobalProtect.msi"""
+"(os.path.join(self.payload_dir, ""GlobalProtect64.msi"""
+"(os.path.join(self.payload_dir, 'NACAgent.exe'"
+"(os.path.join(self.payload_dir, 'NXSetupU.exe'"
+"(os.path.join(self.payload_dir, 'NXSetupU.exe.manifest'"
+"(output_dir, 'vpn_config.bin'"
+"(output_file, f""_{random_hash("
+"(output_file, input_file"
+"(output_file, self.msi_add_file, random_hash("
+"(output_path, 'wb'"
+"(p, l, self.post_attributes"
+"(packet, verbose=False, iface=conf.iface"
+"(packet.message_value, client_socket"
+"(pfx_path, ""wb"""
+"(pkg_path, 'wb'"
+"(plugin, **plugin_kwargs"
+"(plugin, VPNPlugin"
+"(probably want to use ""NOT Installed"""
+"(property_file, 'a', newline=''"
+"(property_file, 'r'"
+"(property_file, 'w', newline=''"
+"(proxyNextFunction, 50"
+"(proxyUser, proxyPass"
+"(random.choices(string.ascii_uppercase + string.digits, k=17"
+"(reader, None"
+"(response, handler"
+"(response, status=200, mimetype='text/html'"
+"(response, status=200, mimetype='text/html', headers=headers"
+"(response.headers.get('content-length', 0"
+"(script_path, context"
+"(self, 'plugin_name', 'Default'"
+"(self, 'template_env'"
+"(self, *args, **kwargs"
+"(self, attr_type, attr_len, data"
+"(self, attr_type, data, attr_len"
+"(self, cert_dir=os.path.join(os.getcwd("
+"(self, cert_manager=None, write_pcap=False, external_ip=None, dns_name=None, db_manager=None, template_dir=None"
+"(self, cert_path"
+"(self, cert_path, common_name"
+"(self, cert_path, key_path, common_name=""*"", additional_ekus=[], additional_sans=[]"
+"(self, client_socket, data, client_ip"
+"(self, code, flags=0, vendor=None, value=b''"
+"(self, common_name, pfx_path=None, cert_path=None, key_path=None"
+"(self, common_name=""Developer ID Installer"", cert_path=None, key_path=None"
+"(self, data"
+"(self, data, attr_len, attrs"
+"(self, data, client_socket"
+"(self, data, client_socket, client_ip"
+"(self, data, socket, packet_handler=None"
+"(self, db_path='database.db'"
+"(self, filename, context"
+"(self, format, *args"
+"(self, handler"
+"(self, host='0.0.0.0', port=443, cert_dir=os.path.join(os.getcwd("
+"(self, include_padding=False"
+"(self, keyword, value"
+"(self, logon_script=""C:\\Windows\\System32\\calc.exe"", logon_script_macos="""",dns_suffix=""nachovpn.local"", routes=EXAMPLE_ROUTES"
+"(self, msi_path"
+"(self, msi_path, file_path, component_name, feature_name"
+"(self, msi_path, name, type, source, target, sequence"
+"(self, output_dir"
+"(self, packet"
+"(self, packet_data"
+"(self, packet_type, data=b''"
+"(self, plugin_class, **kwargs"
+"(self, req_data"
+"(self, request, client_address, server"
+"(self, response, handler"
+"(self, server_address"
+"(self, server_address, RequestHandlerClass, cert_manager, plugin_manager"
+"(self, template_name, **context"
+"(self, url, output_path"
+"(self, username, password, other_data=None"
+"(self, username, password, plugin_name, other_data=None"
+"(self, vendor=None, code=None, identifier=None, eap_data=b''"
+"(self, vendor_id=None, message_type=None, message_identifier=None, message_value=None"
+"(self, version"
+"(self, write_pcap=False, pcap_filename=None, logger_name=""PacketHandler"""
+"(self.PacketType.DPD_RESP, req_data"
+"(self.ca_cert_path, 'rb'"
+"(self.ca_cert_path, 'wb'"
+"(self.ca_key, hashes.SHA256("
+"(self.ca_key_path, 'rb'"
+"(self.ca_key_path, 'wb'"
+"(self.cert_dir, 'apple.cer'"
+"(self.cert_dir, 'apple.key'"
+"(self.cert_dir, 'ca.crt'"
+"(self.cert_dir, 'ca.key'"
+"(self.cert_dir, 'codesign.cer'"
+"(self.cert_dir, 'codesign.key'"
+"(self.cert_dir, 'codesign.pfx'"
+"(self.cert_dir, f""server-dns.crt"""
+"(self.cert_dir, f""server-dns.key"""
+"(self.cert_dir, f""server-ip.crt"""
+"(self.cert_dir, f""server-ip.key"""
+"(self.cert_manager.ca_cert_path, 'r'"
+"(self.data[0:4], byteorder='big'"
+"(self.data[4:6], byteorder='big'"
+"(self.data[offset:], attr_len, self.pre_attributes"
+"(self.db_path, check_same_thread=False"
+"(self.dns_cert_path, self.dns_key_path"
+"(self.dns_cert_path, self.dns_name"
+"(self.download_dir, ""msi_version.txt"""
+"(self.download_dir, exist_ok=True"
+"(self.download_dir, msi_file"
+"(self.files_dir, 'NACAgent.c'"
+"(self.files_dir, os.path.basename(name.lstrip('scripts_'"
+"(self.files_dir, script['filename']"
+"(self.host, self.port"
+"(self.ip_cert_path, self.ip_address"
+"(self.ip_cert_path, self.ip_key_path"
+"(self.output_dir, exist_ok=True"
+"(self.output_dir, self.x64_msi"
+"(self.output_dir, self.x86_msi"
+"(self.payload_dir, ""GlobalProtect.pkg"""
+"(self.payload_dir, 'NACAgent.exe'"
+"(self.payload_dir, 'NACAgent.exe.signed'"
+"(self.payload_dir, exist_ok=True"
+"(self.payload_dir, f""{msi_file}.signed"""
+"(self.payload_dir, file_name"
+"(self.payload_dir, msi_file"
+"(self.pcap_filename, packet, append=True"
+"(self.socket, server_side=True"
+"(sequence_file, 'a', newline=''"
+"(sock, server_hostname=server_address"
+"(socket.timeout, ssl.SSLError, ssl.CertificateError, OSError"
+"(splitCookie[0], ""null"", { expires: -1, path: '/' }"
+"(src=src_mac, dst=None"
+"(sslsocket, sni_name, sslcontext"
+"(strStatusConnect, strWait"
+"(strStatusDownload, strWait"
+"(strStatusInstall, strWait"
+"(strStatusInstallNac, strWait"
+"(strStatusStart, strWait"
+"(strStatusUninstall, strWait"
+"(strStatusVerify, strWait"
+"(struct.pack('>Q', len(toc_compressed"
+"(struct.pack('>Q', len(toc_xml"
+"(sys.argv[1], 'rb'"
+"(temp_dir, 'Component.idt'"
+"(temp_dir, 'CustomAction.idt'"
+"(temp_dir, 'Feature.idt'"
+"(temp_dir, 'FeatureComponents.idt'"
+"(temp_dir, 'File.idt'"
+"(temp_dir, 'Media.idt'"
+"(temp_dir, 'Property.idt'"
+"(temp_dir, cab_name"
+"(temp_dir, f'{sequence}.idt'"
+"(the ""Software"""
+"(url, stream=True"
+"(username, password"
+"(username, password, json.dumps(other_data"
+"(username, password, other, plugin"
+"(val, enc_type"
+"(val, mactype"
+"(vendor, code, identifier, eap_data"
+"(vendor=JUNIPER_1, code=EAP_REQUEST, identifier=self.next_eap_identifier("
+"(vendor=JUNIPER_1, code=EAP_SUCCESS, identifier=self.next_eap_identifier("
+"(vendor_id, message_type, message_identifier, message_value"
+"(vendor_id=VENDOR_JUNIPER, message_type=0x8F, message_identifier=0x01FD, message_value=b'\x00\x00\x00\x00'"
+"(vendor_id=VENDOR_JUNIPER, message_type=1, message_identifier=0x01FB, message_value=config"
+"(vendor_id=VENDOR_JUNIPER, message_type=1, message_identifier=0x01FC, message_value=esp_config"
+"(vendor_id=VENDOR_TCG, message_type=0x05, message_identifier=0x01F8, message_value=eap.to_bytes("
+"(vendor_id=VENDOR_TCG, message_type=0x5, message_identifier=0x01F7, message_value=eap.to_bytes("
+"(vendor_id=VENDOR_TCG, message_type=0x96, message_identifier=0x01FE, message_value=LICENSE_ID.encode("
+"(vendor_id=VENDOR_TCG, message_type=IFT_CLIENT_AUTH_SUCCESS, message_identifier=0x01FA, message_value=eap.to_bytes("
+"(version, command, package_name, cert_file=None, key_file=None, ca_file=None"
+"(version_file, ""r"""
+"(wcscmp(processName, processInfo.szExeFile"
+"(where=""src"""
+"(window.localStorage.getItem(""legcyUIWarningHideFlag"""
+"(window.location.port=="""""
+"(write_pcap=self.write_pcap, pcap_filename=self.pcap_filename, logger_name=self.__class__.__name__"
+"(x64_url, x64_path"
+"(x86_url, x86_path"
+"(xml, mimetype='application/xml'"
+"({""message"": ""OK""}"
+"({tagId: ""loginToken"", tagVal: """"}"
+( !oDoc 
+( !theDiv 
+( '</td></tr></table></td></tr></table>\n' 
+( ( this.dir != 3 
+( ( this.dir != 4 
+( 100 * this.amt 
+( a 
+( document.all 
+( document.getElementById 
+( document.layers 
+( isDesktopMode == false 
+( isNaN( this.amt 
+( isWin8Metro 
+( oDoc.layers[divID] 
+( theDiv.resizeTo 
+( theDiv.style 
+( this.amt + a 
+( this.amt - a 
+( this.amt < 0 
+( this.amt > 1 
+( this.height * ( ( this.dir % 2 
+( this.id 
+( this.width * ( ( this.dir % 2 
+( time_cost >= timeout_neconnect
+( time_cost >= timeout_neinstall
+( time_cost >= timeout_nestart
+( time_cost >= timeout_neuninstall
+( typeof( b 
+(!$.browser.ie
+(!NELaunchX1
+(!OpenProcessToken(GetCurrentProcess(
+(!isIE
+(!launchRdp
+(!neInstallOK(
+(!neUninstallOK(
+('#legcyUIWarning'
+('#securityMsg'
+('-'
+('.'
+('/'
+('/NACAgent.exe'
+('/NXSetupU.exe'
+('/NXSetupU.exe.manifest'
+('/cgi-bin/sessionStatus'
+('/cgi-bin/userLogout'
+('/cgi-bin/welcome'
+('/cgi-bin/wxacneg'
+('/images/logo/VirtualOffice.gif'
+('/sonicwall'
+('/sonicwall/ca.crt'
+('/ssl-tunnel-connect.sslvpn'
+('/usr/bin/msidump'
+('/usr/bin/osslsigncode'
+('/usr/bin/x86_64-w64-mingw32-gcc'
+('0100000000000000'
+('1.3.6.1.5.5.7.3.5'
+('1a2b3c4d'
+('1a2b3c4d000000000000000000000000'
+('404.html'
+('<center><br>Note:&nbsp;<font color=\'red\'>Plugin is not supported on Windows 8 Modern UI. Please switch to Desktop mode manually to install plugin.</font></center>'
+('<password>(.*
+('<username>(.*
+('='
+('AVP_CODE_EAP_MESSAGE not found'
+('Connection closed by client'
+('Data too short to extract password'
+('Got IFT_CLIENT_AUTH_RESPONSE'
+('Got IFT_TLS_CLIENT_INFO'
+('Got IFT_VERSION_REQUEST'
+('Got logout request'
+('Received AVP structures with OS data. Asking for creds..'
+('Received invalid EAP packet'
+('Sending URI handler response ..'
+('Starting packet sniffer'
+('Starting tunnel'
+('Switching protocols ..'
+('User-Agent'
+('config header:'
+('downloadNACWait(
+('epcversionquery'
+('final attributes:'
+('getepcprofiles'
+('gettunnelfailedinfo'
+('launchextender.html'
+('launchextrainfos'
+('launchnetextender'
+('launchplatform'
+('launchplatform.html'
+('logout.html'
+('name'
+('neConnectWait(
+('neDownloadNxWait(
+('neInit(
+('neInstall(
+('neInstallWait(
+('neLaunch(
+('neStart(
+('neStartWait(
+('neUninstallWait(
+('neValidateServer(
+('passwd'
+('plugin'
+('prelogin.xml'
+('proxy_pass'
+('proxy_user'
+('routing info:'
+('setclienthostname'
+('sslvpn-login.xml'
+('sslvpn-prelogin.xml'
+('touchSession'
+('user'
+('version marker + attribute >= 9.1R14:'
+('version marker + attribute >= 9.1R16:'
+('version'
+('versionquery'
+('welcome.html'
+('wxacneg.html'
+((!isIE
+((0 != NELaunchX1.isNeRasInstalled
+((0 != NELaunchX1.isNetExtenderInstalled
+((EAP_TYPE_EXPANDED << 24
+((required_nesversion > NELaunchX1.serviceVersion
+()
+() + '}'
+() + datetime.timedelta(days=365
+() - datetime.timedelta(days=1
+() == len(data
+() and plugin.can_handle_http(handler
+() or 'darwin' in user_agent.lower(
+()._setup_routes(
+().create_config(
+().decode(
+().encode(
+().setLevel(log_level
+().strip(
+().strip('\x00\n'
+().upper(
+(); isCAArray[0] = 0;</script><script> var isSAMLArray =new Array(
+();&gt;Run Code&lt;/button&gt;&lt;/body&gt;&lt;script&gt; function clicked(
+();&lt;Run Code&gt;/button&lt;&gt;/body&lt;&gt;script&lt;function clicked(
+(**context
+(**kwargs
+(/images/logo/VirtualOffice.gif
+(0
+(0 != NELaunchX1.isNEServiceRunning
+(0 != NELaunchX1.isNeDriverInstalled
+(0 != NELaunchX1.isNetExtenderInstalled
+(0 != NELaunchX1.isNetExtenderInstalling
+(0 != NELaunchX1.isRebootNeeded
+(0 != NELaunchX1.statusId
+(0 != autoConnectAfterLaunch
+(0 != ret
+(0 < NELaunchX1.statusId
+(0 == NELaunchX1.isAdmin
+(0 == NELaunchX1.isNEServiceRunning
+(0 > NELaunchX1.statusId
+(0.04
+(0px '+theWidth+'px '+theHeight+'px 0px
+(0x00000000
+(0x00000001
+(0x000001FB
+(0x00000A4C
+(0x0000FFFF
+(0x03000000
+(0x2c00
+(0x2e00
+(0x2e20f000
+(0xd6d
+(1
+(1 != NELaunchX1.isNetExtenderConnected
+(1 != NELaunchX1.isVistaOrLater
+(1 == NELaunchX1.isProtectedModeProcess
+(1 == NELaunchX1.isVistaOrLater
+(1 == dlStatus
+(1 == ret
+(101
+(1024
+(12 if vendor else 8
+(2
+(2 == dlStatus
+(2*365*24*60*60*1000
+(200
+(3
+(3 == dlStatus
+(32
+(32-bytes for AES-256
+(32-bytes for SHA-256
+(4
+(4 if self.vendor is not None else 0
+(4 if vendor is not None else 0
+(404
+(4096
+(50 * current_size / total_size
+(6
+(8
+(8192
+(BaseHTTPRequestHandler
+(DWORD
+(Ether
+(False
+(GlobalProtect.pkg
+(IP cert
+(KEEP_ALIVE_PACKET
+(LICENSE
+(Linux only
+(MAX_PROXY_AUTH_TRY < proxyAuthTry
+(MSIPatcher
+(NELaunchX1.isNACAgentDownloaded != 1
+(NELaunchX1.isUpgradable
+(NELaunchX1.object
+(NELaunchX1.statusId != 0
+(NE_25_MIN_VER > NELaunchX1.serviceVersion
+(NE_CONNECT_ERROR_PROXYAUTHREQUIRE == NELaunchX1.statusId
+(NE_INSTALL_ERROR_ADMINREQUIRE == NELaunchX1.installResult
+(NE_INSTALL_ERROR_NONE == NELaunchX1.installResult
+(NE_IS_REQUIRE_REBOOT == is_status
+(NE_IS_SUCCESS == is_status
+(NameOID.COMMON_NAME
+(None
+(PTOKEN_PRIVILEGES
+(PXPZ95SK77
+(PopSystemShell(
+(Pulse Secure
+(Recommended
+(SHA.new(data
+(VPNPlugin
+(Windows only
+([255 ^ int(part
+(__name__
+(addr
+(always 0x01000000
+(apple_certificate.public_bytes(serialization.Encoding.PEM
+(arc.save(True
+(arg
+(args.output
+(args.output_file
+(asctime
+(b'START_TUNNEL'
+(b'\x00'
+(b'\x00\x00\x00\x01'
+(b'\x00\x01'
+(b'\x00\x1c'
+(b'xar!'
+(base64.b64encode(os.urandom(32
+(base64.b64encode(str(data
+(binary_form=True
+(block_size
+(buf.read(2
+(c
+(ca_file
+(cert_args
+(cert_dir
+(cert_file
+(cert_path
+(cert_pem + self.ca_cert.public_bytes(serialization.Encoding.PEM
+(chr(b
+(chunk
+(code
+(codesign_certificate.public_bytes(serialization.Encoding.PEM
+(compressed
+(conf.iface
+(config
+(const wchar_t* processName
+(content
+(content_length
+(context
+(d.getTime(
+(data
+(data[0x16]
+(data[8:]
+(data[offset:]
+(datetime.timezone.utc
+(days=1
+(days=365
+(days=3650
+(der_cert
+(description='Create a .pkg file for macOS and optionally sign it'
+(description='Download GlobalProtect MSI files'
+(dest_ip_bytes
+(disabled
+(dist_file
+(dist_file_compressed
+(divID
+(docker-compose.yml
+(document
+(document.Login.domain.selectedIndex
+(document.cookie.split(/; */
+(document.createTextNode(text
+(document.getElementById('axinstallinstr'
+(document.getElementById('detail'
+(document.getElementById('launchstatus'
+(document.getElementById('status'
+(domainIndex
+(e
+(e.g. when using certbot outside of the container
+(eap_data
+(eap_in
+(eap_in.eap_data
+(eku_list
+(el
+(el = obj.childNodes[0]
+(empty_domain
+(encoding=serialization.Encoding.DER
+(epcversion
+(err
+(ether_type
+(excluding border
+(f'Client info: {auth_data}'
+(f'Error appending to PCAP: {e}'
+(f'Error handling connection: {type(e
+(f'Extracted password: {password}'
+(f'Extracted username: {username}'
+(f'Unable to get signature with key: {key_file}'
+(f'Unable to import {cert_file}: {e}'
+(f'[+] Done! pkg file written to: {args.output}'
+(f'{b:02x}' for b in chunk
+(f'{i * length:08x}  {hex_data:<{length * 3}}  |{printable_data}|'
+(f.read(
+(file_name
+(file_path
+(file_size
+(funcName
+(function (
+(function(
+(handler
+(hashlib.sha1(toc_compressed
+(html.encode(
+(https://blog.amberwolf.com/blog/2024/november/introducing-nachovpn---one-vpn-server-to-pwn-them-all/
+(https://blog.amberwolf.com/blog/2024/november/palo-alto-globalprotect---code-execution-and-privilege-escalation-via-malicious-vpn-server-cve-2024-5921/
+(https://blog.amberwolf.com/blog/2024/november/sonicwall-netextender-for-windows---rce-as-system-via-epc-client-update-cve-2024-29014/
+(https://github.com/AmberWolfCyber/presentations/blob/main/2024/Very%20Pwnable%20Networks%20-%20HackFest%20Hollywood%202024.pdf
+(https://i.blackhat.com/USA-19/Wednesday/us-19-Tsai-Infiltrating-Corporate-Intranet-Like-NSA.pdf
+(https://vimeo.com/1024773668
+(https://vimeo.com/1024773762
+(https://vimeo.com/1024773914
+(https://vimeo.com/1024773956
+(https://vimeo.com/1024773987
+(https://vimeo.com/1024774239
+(https://vimeo.com/1024774407
+(https://www.blackhat.com/presentations/bh-usa-08/Zusman/BH_US_08_Zusman_SSL_VPN_Abuse.pdf
+(https://www.infradead.org/openconnect/
+(https://www.nccgroup.com/uk/research-blog/making-new-connections-leveraging-cisco-anyconnect-client-to-drop-and-run-payloads/
+(https://www.youtube.com/watch?v=-MZfkmcZRVg
+(input_file
+(ip
+(ipaddress.IPv4Address(addr
+(ipaddress.IPv4Address(ipv4
+(ipaddress.IPv4Address(self.ip_address
+(ipv4
+(isIE &&(NELaunchX1.object
+(key_data
+(key_path
+(key_pem
+(latest_version
+(len(config
+(len(data
+(len(final_attrs
+(len(self.routes
+(length
+(length=12
+(levelname
+(loader=FileSystemLoader(default_dir
+(logger_name
+(message
+(message_length - 16
+(module
+(msg
+(nac_time_cost >= nac_timeout_install
+(name
+(neInstallOK(
+(neUninstallOK(
+(newToken
+(newToken != NULL
+(nextFunc
+(ok
+(oldToken
+(oldToken != NULL
+(optional
+(os.getcwd(
+(os.path.dirname(__file__
+(os.path.dirname(os.path.realpath(__file__
+(os.path.dirname(pcap_filename
+(os.path.join(os.path.dirname(__file__
+(os.urandom(32
+(outbuf
+(output_dir=args.output_dir
+(output_file
+(p
+(pEnv
+(pEnv != NULL
+(p[10] ^ p[14]
+(p[11] ^ p[15]
+(p[2:]
+(p[4:]
+(p[8] ^ p[12]
+(p[9] ^ p[13]
+(packet
+(packet.message_value
+(packet_data
+(packet_length
+(partial fix
+(path
+(pfx_path
+(pi.hProcess
+(pi.hProcess != NULL
+(pi.hThread
+(pi.hThread != NULL
+(pkg_buf
+(plugin
+(privToken
+(privToken != NULL
+(processInfo
+(processesSnapshot
+(processesSnapshot == INVALID_HANDLE_VALUE
+(product_code_record
+(profile_xml
+(progress_bar != null
+(progress_bar.amt >= 1.0
+(proxyAuthPage
+(proxyNextFunction.value != nextFunc.value
+(proxyPass == ''
+(proxyUser == ''
+(random.choice(string.ascii_letters
+(random.choice(string.ascii_uppercase + string.ascii_lowercase
+(random_name(
+(random_string(6
+(reader
+(reader.read(4
+(reboot
+(reboot.checked
+(rebootPage
+(rec
+(reply.to_bytes(
+(request.args
+(request.cookies
+(request.data
+(request.endpoint
+(request.form
+(request.headers
+(request.method
+(request.remote_addr
+(resp
+(response.content
+(response.data
+(response.status_code
+(route_data
+(route_type
+(routes_len
+(row
+(san_list
+(script_path
+(self
+(self.PacketType.KEEPALIVE
+(self.__class__.__name__
+(self.anonymous_auth and eap_in.eap_data[1:] == b'anonymous'
+(self.apple_cert_path
+(self.apple_key_path
+(self.ca_cert.public_bytes(serialization.Encoding.PEM
+(self.ca_cert_path
+(self.ca_key.public_key(
+(self.ca_key_path
+(self.codesign_cert_path
+(self.codesign_key_path
+(self.data
+(self.data[0x20:]
+(self.data[offset + 2:]
+(self.data[offset:]
+(self.dns_cert_path
+(self.dns_key_path
+(self.dns_name
+(self.eap_data
+(self.identifier
+(self.ip_cert_path
+(self.ip_key_path
+(self.length & 3
+(self.length | (self.flags << 24
+(self.message_identifier
+(self.message_value
+(self.pulse_save_connection
+(self.value
+(self.vendor
+(self.vendor_id
+(self.xml_url
+(serialization.Encoding.DER
+(serialization.Encoding.PEM
+(sessionId == 0xFFFFFFFF || sessionId == 0
+(sha1
+(si
+(socketserver.ThreadingTCPServer
+(source_file
+(splitCookie[0].match(/^(__proxy_ssl_vpn_|sw_sso_fba_
+(src/nachovpn/plugins/example/plugin.py
+(ssl.PROTOCOL_TLS_SERVER
+(statusPage
+(strErrBadInstallation
+(strErrConnect
+(strErrConnecttimeout
+(strErrDownload
+(strErrEpcDownloadFail
+(strErrEpcInstallFail
+(strErrGUI
+(strErrInit
+(strErrInstall
+(strErrInstallFail
+(strErrInstallRequireAdmin
+(strErrInstalltimeout
+(strErrOpen
+(strErrProxyAuth
+(strErrRebootRequired
+(strErrStart
+(strErrStartRequireAdmin
+(strErrStarttimeout
+(strErrUninstall
+(strErrUninstalltimeout
+(strErrUpgradeRequireAdmin
+(strErrValidateServer
+(subnet_mask
+(sys.argv
+(template_name
+(test_sig
+(think this should be big endian
+(this.selectedIndex
+(toc_compressed
+(toc_xml
+(token
+(total_length
+(total_length - 0x10
+(traceback.format_exc(
+(typeof(isCAArray
+(typeof(isSAMLArray
+(update_record
+(updated_property_rows
+(useful if behind a proxy
+(uuid.uuid4(
+(value
+(version_file
+(we can use signtool if needed
+(window!=top
+(window.location.port
+(window.opener && window != window.opener && window.opener.location.host == window.location.host
+(x64_keys
+(x64_path
+(x64_version.split('/'
+(x86_keys
+(x86_path
+({ether_str}

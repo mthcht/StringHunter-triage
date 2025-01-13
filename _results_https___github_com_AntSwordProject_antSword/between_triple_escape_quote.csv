@@ -1,0 +1,96 @@
+"``` method DOESN'T calculate length for streams, use "
+"```"")break}return new s(u,i,n,0)}while(n-->0){r=e.getLine(n);if(r[0]==""`""&r.substring(0,3)=="""
+"```""multipart/form-data"""
+"```+[^`]*|~~~+[^~]*)$/,onMatch:function(e,t,n,i){var s=e.match(/^(\s*)([`~]+)(.*)/),o=/[\w-]+|$/.exec(s[3])[0];return r[o]||(o=""""),n.unshift(""githubblock"",[],[s[1],s[2],o],t),this.token},next:""githubblock""},t=[{token:""support.function"",regex:"".*"",onMatch:function(e,t,n,i){var s=n[1],o=n[2][0],u=n[2][1],a=n[2][2],f=/^(\s*)(`+|~+)\s*$/.exec(e);if(f&&f[1].length<o.length+3&&f[2].length>=u.length&&f[2][0]==u[0])return n.splice(0,3),this.next=n.shift(),this.token;this.next="""";if(a&&r[a]){var l=r[a].getTokenizer().getLineTokens(e,s.slice(0));return n[1]=l.state,l.tokens}return this.token}}];this.$rules.start.unshift({token:""empty_line"",regex:""^$"",next:""allowBlock""},{token:""markup.heading.1"",regex:""^=+(?=\\s*$)""},{token:""markup.heading.2"",regex:""^\\-+(?=\\s*$)""},{token:function(e){return""markup.heading.""+e.length},regex:/^#{1,6}(?=\s|$)/,next:""header""},e,{token:""string.blockquote"",regex:""^\\s*>\\s*(?:[*+-]|\\d+\\.)?\\s+"",next:""blockquote""},{token:""constant"",regex:""^ {0,2}(?:(?: ?\\* ?){3,}|(?: ?\\- ?){3,}|(?: ?\\_ ?){3,})\\s*$"",next:""allowBlock""},{token:""markup.list"",regex:""^\\s{0,3}(?:[*+-]|\\d+\\.)\\s+"",next:""listblock-start""},{include:""basic""}),this.addRules({basic:[{token:""constant.language.escape"",regex:/\\[\\`*_{}\[\]()#+\-.!]/},{token:""support.function"",regex:""(`+)(.*?[^`])(\\1)""},{token:[""text"",""constant"",""text"",""url"",""string"",""text""],regex:'^([ ]{0,3}\\[)([^\\]]+)(\\]:\\s*)([^ ]+)(\\s*(?:[""][^""]+[""])?(\\s*))$'},{token:[""text"",""string"",""text"",""constant"",""text""],regex:""(\\[)(""+a(""]"")+"")(\\]\\s*\\[)(""+a(""]"")+"")(\\])""},{token:[""text"",""string"",""text"",""markup.underline"",""string"",""text""],regex:""(\\!?\\[)(""+a(""]"")+"")(\\]\\()""+'((?:[^\\)\\s\\\\]|\\\\.|\\s(?=[^""]))*)'+'(\\s*""'+a('""')+'""\\s*)?'+""(\\))""},{token:""string.strong"",regex:""([*]{2}|[_]{2}(?=\\S))(.*?\\S[*_]*)(\\1)""},{token:""string.emphasis"",regex:""([*]|[_](?=\\S))(.*?\\S[*_]*)(\\1)""},{token:[""text"",""url"",""text""],regex:""(<)((?:https?|ftp|dict):[^'\"">\\s]+|(?:mailto:)?[-.\\w]+\\@[-a-z0-9]+(?:\\.[-a-z0-9]+)*\\.[a-z]+)(>)""}],allowBlock:[{token:""support.function"",regex:""^ {4}.+"",next:""allowBlock""},{token:""empty_line"",regex:""^$"",next:""allowBlock""},{token:""empty"",regex:"""",next:""start""}],header:[{regex:""$"",next:""start""},{include:""basic""},{defaultToken:""heading""}],""listblock-start"":[{token:""support.variable"",regex:/(?:\[[ x]\])?/,next:""listblock""}],listblock:[{token:""empty_line"",regex:""^$"",next:""start""},{token:""markup.list"",regex:""^\\s{0,3}(?:[*+-]|\\d+\\.)\\s+"",next:""listblock-start""},{include:""basic"",noEscape:!0},e,{defaultToken:""list""}],blockquote:[{token:""empty_line"",regex:""^\\s*$"",next:""start""},{token:""string.blockquote"",regex:""^\\s*>\\s*(?:[*+-]|\\d+\\.)?\\s+"",next:""blockquote""},{include:""basic"",noEscape:!0},{defaultToken:""string.blockquote""}],githubblock:t}),this.normalizeRules()};i.inherits(f,o),t.MarkdownHighlightRules=f}),ace.define(""ace/mode/folding/markdown"",[""require"",""exports"",""module"",""ace/lib/oop"",""ace/mode/folding/fold_mode"",""ace/range""],function(e,t,n){""use strict"";var r=e(""../../lib/oop""),i=e(""./fold_mode"").FoldMode,s=e(""../../range"").Range,o=t.FoldMode=function(){};r.inherits(o,i),function(){this.foldingStartMarker=/^(?:[=-]+\s*$|#{1,6} |`{3})/,this.getFoldWidget=function(e,t,n){var r=e.getLine(n);return this.foldingStartMarker.test(r)?r[0]==""`""?e.bgTokenizer.getState(n)==""start""?""end"":""start"":""start"":""""},this.getFoldWidgetRange=function(e,t,n){function l(t){return f=e.getTokens(t)[0],f&&f.type.lastIndexOf(c,0)===0}function h(){var e=f.value[0];return e==""=""?6:e==""-""?5:7-f.value.search(/[^#]|$/)}var r=e.getLine(n),i=r.length,o=e.getLength(),u=n,a=n;if(!r.match(this.foldingStartMarker))return;if(r[0]==""`""){if(e.bgTokenizer.getState(n)!==""start""){while(++n<o){r=e.getLine(n);if(r[0]==""`""&r.substring(0,3)=="""
+"```, "
+"```submit(url, [callback])"
+``` ${1:language} ${2:title} ${3:URL} ${4:link_text}\n	${5:code_snippet}\n	
+``` *{number}* An optional offset to write the value to. **Default:** 
+``` *{number}* An optional offset to write this value to. **Default:** 
+``` *{number}* Optional position to start reading data from. **Default**: 
+``` *{number}* The number of bytes to read into a Buffer. **Default:** 
+``` *{number}* The number of bytes to read. **Default:** 
+``` *{number}* The offset to write this value to. **Default:** 
+``` *{string}* An optional string encoding to use. **Default:** 
+``` *{string}* The string encoding to use when converting to a string. **Default:** 
+``` *{string}* The string encoding to use. 
+``` *{string}* The string encoding to use. **Default:** 
+``` and 
+``` method returns 
+```((?:[^`\\]|\\[\s\S]|`(?!``))*)
+```Auto managed offset
+```Default: 'utf8'
+```Reads to the end of the Buffer
+```Reads to the end of the Buffer.
+```Remaining data left to be read
+```The current read offset
+```The current string encoding
+```The current write offset
+```\n	${1:code_snippet}\n	
+```\n\nsnippet bt-codeblock-full\n	
+````
+```buffer
+```callback
+```crypto-js/aes
+```crypto-js/core
+```crypto-js/enc-base64
+```crypto-js/enc-hex
+```crypto-js/enc-latin1
+```crypto-js/enc-utf16
+```crypto-js/enc-utf8
+```crypto-js/evpkdf
+```crypto-js/format-hex
+```crypto-js/format-openssl
+```crypto-js/hmac-md5
+```crypto-js/hmac-ripemd160
+```crypto-js/hmac-sha1
+```crypto-js/hmac-sha224
+```crypto-js/hmac-sha256
+```crypto-js/hmac-sha3
+```crypto-js/hmac-sha384
+```crypto-js/hmac-sha512
+```crypto-js/lib-typedarrays
+```crypto-js/md5
+```crypto-js/mode-cfb
+```crypto-js/mode-ctr
+```crypto-js/mode-ctr-gladman
+```crypto-js/mode-ecb
+```crypto-js/mode-ofb
+```crypto-js/pad-ansix923
+```crypto-js/pad-iso10126
+```crypto-js/pad-iso97971
+```crypto-js/pad-nopadding
+```crypto-js/pad-pkcs7
+```crypto-js/pad-zeropadding
+```crypto-js/pbkdf2
+```crypto-js/rabbit
+```crypto-js/rabbit-legacy
+```crypto-js/rc4
+```crypto-js/ripemd160
+```crypto-js/sha1
+```crypto-js/sha224
+```crypto-js/sha256
+```crypto-js/sha3
+```crypto-js/sha384
+```crypto-js/sha512
+```crypto-js/tripledes
+```crypto-js/x64-core
+```data
+```details
+```encoding
+```err
+```fs.readStream
+```getLengthSync()
+```http.ClientRequest
+```http.response
+```info
+```knownLength
+```length
+```mikeal's request
+```offset
+```options
+```returns
+```size
+```submit()
+```utf8
+```value

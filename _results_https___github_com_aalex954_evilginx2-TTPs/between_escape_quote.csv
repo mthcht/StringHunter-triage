@@ -1,0 +1,735 @@
+`(\w+\s)+[\u0020\u00A0\u1680\u180E\u2000-\u200A\u200B-\u200D\u2028-\u2029\u202F\u205F\u3000\u2800]+\sTo:\w+<\w+@\w+\.\w+>
+`(\w+\s)+[\u0020\u00A0\u1680\u180E\u2000-\u200A\u200B-\u200D\u2028-\u2029\u202F\u205F\u3000\u2800]+.*
+`https://www.google.com/amp/s/
+`[\u0020\u00A0\u1680\u180E\u2000-\u200A\u200B-\u200D\u2028-\u2029\u202F\u205F\u3000\u2800]
+`phishlets unhide outlook
+` / 
+`phishlets hide outlook
+` or 
+`~/.evilginx/
+`https://www.google.co.uk/amp/s/
+`evilginx2-tuned/core/http_proxy.go
+`phish_url
+`Custom/blacklist.txt
+``
+` and 
+`show w
+`show c
+`([a-zA-Z0-9\-\.]*)\.yaml
+`text/html
+`lures edit <id> hostname <hostname>
+`landing_path
+`lures get-url <id> import <params_file>
+`{lure_url_html}
+`sub_filters
+` in code to manage redirection to the phishing page with any form of user interaction. Command: 
+` and replaced it with 
+`auth_urls
+`with_params
+`custom
+`{lure_url_js}
+`lures edit <id> ua_filter <regexp>
+` or 
+`blacklist
+`sub_filter
+`lures edit <id> template <template>
+`credentials
+` was not correctly activated when set under 
+"`lures get-url <id> param1=value1 param2=""value2 with spaces"""
+`<id>
+` with value 
+`lures edit
+`proxy
+` field under 
+`type
+`login
+`json
+`lures get-url <id> import <params_file> export <export_file> <text|csv|json>
+` commands and switched positions of 
+`help lures
+` option to 
+"`json:""useragent"""
+"`json:""password"""
+"`json:""session_id"""
+"`json:""update_time"""
+"`json:""tokens"""
+"`json:""remote_addr"""
+"`json:""create_time"""
+"`json:""id"""
+"`json:""landing_url"""
+"`json:""phishlet"""
+"`json:""username"""
+"`json:""custom"""
+` and 
+`errcheck
+`go fmt
+"`, and format your code with "
+`go test
+`golint
+"`json:""ciphertext,omitempty"""
+"`json:""protected,omitempty"""
+"`json:""iv,omitempty"""
+"`json:""aad,omitempty"""
+"`json:""tag,omitempty"""
+"`json:""encrypted_key,omitempty"""
+"`json:""unprotected,omitempty"""
+"`json:""header,omitempty"""
+"`json:""recipients,omitempty"""
+`v2
+`NewSigner
+`NewEncrypter
+`jose-util
+`encoding/json
+`v1
+"`json:""protected,omitempty"""
+"`json:""payload,omitempty"""
+"`json:""signature,omitempty"""
+"`json:""header,omitempty"""
+"`json:""signatures,omitempty"""
+"`json:""dp,omitempty"""
+"`json:""keys"""
+"`json:""q,omitempty"""
+"`json:""kid,omitempty"""
+"`json:""qi,omitempty"""
+"`json:""y,omitempty"""
+"`json:""alg,omitempty"""
+"`json:""n,omitempty"""
+"`json:""k,omitempty"""
+"`json:""dq,omitempty"""
+"`{""e"":""%s"",""kty"":""RSA"",""n"":""%s""}"
+"`json:""crv,omitempty"""
+"`{""crv"":""%s"",""kty"":""EC"",""x"":""%s"",""y"":""%s""}"
+"`json:""d,omitempty"""
+"`json:""x5c,omitempty"""
+"`json:""e,omitempty"""
+"`{""crv"":""%s"",""kty"":""OKP"",x"":""%s""}"
+"`json:""x,omitempty"""
+"`json:""use,omitempty"""
+"`json:""kty,omitempty"""
+"`json:""p,omitempty"""
+`encoding/json
+"`json:""myName,omitempty"""
+"`json:"",omitempty"""
+`\u202
+`\u00
+`\ufffd
+"`json:""myName"""
+"`json:"",string"""
+"`json:""-"""
+`\u202
+`\u00
+`{}
+`100
+`true
+`3.14e0
+`0.314e+
+`n
+`314e-2
+"`""\"
+"`""\u123"
+`{
+"`""\u12"
+`0.314e
+`tr
+"`""\u1"
+"`'""'"
+`'\''
+` or 
+`[1}
+`t
+`5.1.2
+`3.14
+`314e-
+`1.
+`fa
+"`[""x"""
+"`""\u"
+`[
+`nul
+`tru
+`0
+`fal
+`1
+`f
+"`[1,2,3]"
+`0.314e+1
+`nu
+` but not 
+`-
+`fals
+"`{""key"": value,"
+"`"""
+`314e
+``
+"`yaml:""c"""
+"`yaml:"",flow"""
+`^[-+]?[0-9][0-9_]*(?::[0-5]?[0-9])+(?:\.[0-9_]*)?$
+"`"" + value + """
+"`"" + value[:7] + ""..."
+"`yaml:""a,omitempty"""
+"`(...) yaml:""[<key>][,<flag1>[,<flag2>]]"" (...)"
+`%s
+`^[-+]?[0-9]*\.?[0-9]+([eE][-+][0-9]+)?$
+`length
+``
+` between 2-4 by calling 
+` followed by 
+`go get
+` function to set a 
+"`{""name"":{""first"":""Melinda"",""last"":""Prichard""},""age"":44}"
+`names
+``
+"`{""age"":50}"
+`Shrink()
+`DescendGreaterThan
+`Nearby
+`DB
+`AscendGreaterOrEqual
+`DescendEqual
+`+inf
+` which can be set to 
+` object in the 
+"`{""name"":{""first"":""Sam"",""last"":""Anderson""},""age"":51}"
+`EverySecond
+"`[-117 30],[-112 36]"
+`IndexUint
+`[-112.2693 33.5123]
+`*
+`ReadConfig
+`fsync
+` which stores and sorts all values. The second parameter is a pattern that is used to filter on keys. A 
+`:memory:
+`Delete()
+`SetConfig
+` will be added to the 
+`DescendLessOrEqual
+`Infinity
+"` object, which represents the transaction state. While inside a transaction, all database operations should be performed using this object. You should never access the origin "
+` and 
+`[X Y M]
+`IndexFloat
+`Set()
+"`{""name"":{""first"":""Carol"",""last"":""Anderson""},""age"":52}"
+`M
+"`[-112.26 33.51],[-112.18 33.67]"
+`ErrNotFound
+`Tx
+`Never
+`TTL
+`AscendEqual
+"`, "
+"`{""age"":30}"
+`user:
+`-inf
+`SetOptions
+`mykey
+` wildcard argument means that we want to accept all keys. 
+`IndexString
+`buntdb.Desc
+`IndexRect
+`Intersects
+`fleet
+`AscendRange
+"`{""name"":{""first"":""Alan"",""last"":""Cooper""},""age"":28}"
+"`[10 15],[20 25]"
+`Always
+"` is unique to BuntDB, and it's how the built-in rectangles are processed. But, you are not limited to this syntax. Whatever Rect function you choose to use during "
+`[10 15]
+"`{""name"":{""first"":""Tom"",""last"":""Johnson""},""age"":38}"
+`Descend
+"`, and "
+"`, there is also "
+"`{""name"":{""first"":""Janet"",""last"":""Prichard""},""age"":47}"
+`IndexInt
+"`[10 15 12],[20 25 18]"
+`Set
+` by using 
+`DescendRange
+"` will be used to process the parameter, in this case it's "
+` once every second on the [aof file](#append-only-file). Which simply means that there's a chance that up to one second of data might be lost. If you need higher durability then there's an optional database config setting 
+`cloc
+`Config.SyncPolicy
+`buntdb.Open()
+`CreateSpatialIndex
+`AscendLessThan
+`maxTime
+`opts.ex
+``
+"`PrettyOptions(json, opts)"
+`pretty.TerminalStyle
+`go get
+`encoding/json
+``
+``
+` (like) and 
+`prefix
+`ForEachLines
+"`Get(string(data), path)"
+`<
+`result.Uint()
+`>=
+`go get
+`..
+`map[string]interface{}
+"`, and "
+"`{""name"":{""first"":""Janet"",""last"":""Prichard""},""age"":47}"
+`Parse(json)
+`#(...)#
+`#[...]
+`%
+"`, "
+`==
+`interface{}
+"` field, which is the position of the raw data in the original json. It's possible that the value of "
+`result.Value()
+`@ugly
+`ForEach
+`#(...)
+`. Queries support the 
+`indent
+`result.Raw
+`>
+``
+"` equals zero, in which case the "
+`width
+`bool
+` function and you want to avoid converting 
+` function returns an 
+`<=
+`result.Get(path)
+`Result
+`sortKeys
+`null
+` to a 
+`result.Index
+"`programmers.#(lastName=""Hunter"").firstName"
+`false
+`!%
+`@pretty
+`result.Int()
+`@reverse
+`GetMany
+`[]Result
+`number
+`!=
+`string
+` and 
+"` function that will do a simple parse, and "
+`Get*
+`[]byte
+"`gjson.GetBytes(json, path)"
+`result.Array()
+`children
+` options are 
+"` slice, there's the [GetBytes](https://godoc.org/github.com/tidwall/gjson#GetBytes) function. This is preferred over "
+`Parse*
+` is converted to a 
+` (like) and 
+`prefix
+` differs from 
+`<
+`[...]
+`#
+`>=
+"`, and "
+"` character, there are a few more that have special meaning, including "
+`#(...)#
+`#[...]
+`%
+"`, "
+`==
+`?
+`@ugly
+`first
+"` will match on any zero+ characters, and "
+`#(...)
+`indent
+` suffix actually processes the 
+`>
+"`, or find all matches with "
+``
+`|0
+`*
+`width
+` suffix will process the 
+`<=
+` can be escaped with 
+`sortKeys
+`.first
+`!%
+`@pretty
+` modifier on the above JSON payload will reverse the 
+`\
+`0
+`@reverse
+`!=
+` and 
+`@
+`|
+`children
+`|first
+` options are 
+`{...}
+"`friends.#(last=""Murphy"")#"
+` is when it's used after the 
+"` is standard separator, but it's also possible to use a "
+`.
+``
+` from the project folder. You can also setup just one box with 
+`git checkout -b my-new-feature
+`git commit -am 'Add some feature'
+`git push fork my-new-feature
+`vagrant up
+`go get -u github.com/fsnotify/fsnotify
+`vagrant up linux
+` or 
+`src
+`go get
+`vagrant up bsd
+`vagrant ssh linux -c 'cd fsnotify/fsnotify; go test'
+`git remote add fork git@github.com:mycompany/repo.git
+"` within your project, and likewise for "
+`syscall
+`vendor/github.com/fsnotify/fsnotify
+`vendor/
+`golang.org/x/sys
+"` folder. Unless you are creating a library, it is recommended that you copy fsnotify into "
+``
+`code.google.com/p/go.exp/fsnotify
+`IN_MOVED_TO
+`DELETE_SELF
+`ERROR_MORE_DATA
+`IN_IGNORED
+`Color
+`--no-color
+`go-isatty
+`less
+``
+`LICENSE.md
+`vendor
+`Color
+`--no-color
+"`, """", "
+`'
+"`, """", """
+"`"""
+` and 
+`--v
+`--verbose
+`-v
+`) it will only be accessible via 
+`verbose
+`v
+`s
+` over 
+`cols
+` to a maximum width 
+` runes in length and the remainder. Will go 
+`i
+`slop
+`name
+`w
+"`Flag --badflag has been deprecated, please use --good-flag instead"
+`godoc -http=:6060
+"`Flag shorthand -n has been deprecated, please use --noshorthandflag only"
+`golang/glog
+`flag
+`go get
+`CommandLine
+"` package, they must be added to the "
+`pflag
+``
+"`, """", "
+`'
+"`, """", """
+"`"""
+"`"""
+`io.Writer
+``
+`SetEnvKeyReplacer
+`Pflags
+`FlagValue
+`datastore.metric
+`BindEnv(string...) : error
+`BindEnv
+`BindPFlag()
+`Get()
+`viper/remote
+`MY_CONSUL_KEY
+`_
+`SetEnvPrefix(string)
+`init()
+"`import _ ""github.com/spf13/viper/remote"""
+`AllowEmptyEnv
+`GetFloat64(key string) : float64
+`strings.Replacer
+`GetStringMap(key string) : map[string]interface{}
+`GetStringMapString(key string) : map[string]string
+`AllSettings() : map[string]interface{}
+`viper_test.go
+`EnvPrefix
+`AllSettings()
+``
+`FlagValueSet
+`WatchConfig()
+`datastore.metric.protocol
+`SetEnvPrefix
+`datastore.metric.host
+`AllowEmptyEnvVar(bool)
+`AutomaticEnv()
+`SetEnvKeyReplacer(string...) *strings.Replacer
+`GetTime(key string) : time.Time
+`datastore.metric.port
+`Unmarshal(rawVal interface{}) : error
+` and 
+` allows you to use a 
+`GetInt(key string) : int
+`viper
+`viper.Get
+`subv
+`GetString(key string) : string
+`-
+`GetStringSlice(key string) : []string
+`GetDuration(key string) : time.Duration
+`AutomaticEnv
+"` calls, but want your environmental variables to use "
+`GetBool(key string) : bool
+`IsSet(key string) : bool
+`crypt
+`Get(key string) : interface{}
+`Set()
+"`mapstructure:""path_map"""
+"`UnmarshalKey(key string, rawVal interface{}) : error"
+`.
+`IsSet()
+`/vendor
+`string
+`map[interface{}]interface{}
+`itgt
+`next
+`map[string]interface{}
+`appFS = afero.NewOsFs()
+`\.txt$
+`git checkout -b my-new-feature
+`git commit -am 'Add some feature'
+`Afero
+`Write()
+` or 
+`AppFs
+``
+`Truncate()
+`git push origin my-new-feature
+`golint $$d | tee /dev/stderr
+`gofmt -l -s $$GOPATH/src/$$d | tee /dev/stderr
+`go list
+`go vet | tee /dev/stderr
+`routeConf
+`Router
+`Route
+` and 
+`gorilla/mux
+`http.ResponseWriter
+`*http.Server
+"` works: if an incoming request URL matches one of the paths, the corresponding handler is called passing ("
+`{name:pattern}
+`mux.Router
+`endpoints.go
+"` if they _are_ going to terminate the request, and they _should not_ write to "
+`next.ServeHTTP()
+`www.example.com
+` along with a custom 
+`Name()
+` as well as 
+"`, "
+`CORSMethodMiddleware
+`mux.Vars()
+` or 
+`application/text
+`Access-Control-Allow-Origin
+`*http.Request
+``
+`http.Handler
+"`Access-Control-Allow-Methods: GET,PUT,OPTIONS"
+`OPTIONS
+`URLHost()
+`url.URL
+"`PathPrefix(""/static/"").Handler(...)"
+`Access-Control-Allow-Methods
+` function on 
+`http.ServeMux
+`routeVariables
+`http.HandleFunc()
+`{name}
+`URLPath()
+` with the corresponding parameters. This can be used to abort a request if the middleware writer wants to. Middlewares _should_ write to 
+`Walk
+`URL()
+` -> 
+`/foo
+`ResponseWriter
+` interface so it is compatible with the standard 
+` header to all the method matchers (e.g. 
+` and 
+`endpoints_test.go
+`Router.Use()
+"`{""alive"": true}"
+`application/json
+`PathPrefix()
+`mux
+"`r.Methods(http.MethodGet, http.MethodPut, http.MethodOptions)"
+`. Here's how to do that alongside 
+`next.ServeHTTP()
+`Router.Use()
+`application/text
+`application/json
+`Router
+`Basic
+`Proxy-Authenticate
+`go-http-dialer
+`http://proxy.example.com:3128
+`) to pass through the proxy using the [
+`net.Dialer
+"` method is basically a HTTP-negotiated ""end-to-end"" TCP stream... which is exactly what ["
+`CONNECT
+`https://proxy.example.com
+`net.Conn
+`](https://tools.ietf.org/html/rfc2616#section-9.9) method. The 
+`... if your proxy allows you to 
+`:443
+`RemoteAddr
+`¯\(ツ)/¯
+`map[string]interface{}
+``
+`go get
+`Decode
+`string
+` and 
+` to convert 
+`net.IP
+`StringToIPHookFunc
+`decodePtr
+`net.IPNet
+` to 
+`i.GenPasswordConfig()
+`Windows
+`Solaris
+`macOS
+`Linux
+` 
+`InitHistory()
+`r (replace character)
+` instead of 
+`readline
+`Ctrl+C
+`Readline()
+`Config
+"`, "
+"`), program will receive signal(e.g. Ctrl+C) if not interact with "
+`ErrInterrupt
+` in empty line will cause 
+`<End>
+`/
+`d
+`UniqueEditLine
+` to 
+`c
+`x (delete character)
+`io.EOF
+`<Delete>
+`Ctrl+D
+`PrefixCompleter
+` in anytime will cause 
+`<Home>
+"` in error, Press "
+`readline.ReadPasswordEx()
+`SetHistoryPath
+`AddHistory
+`initCertPool
+"`json:""keyChange"""
+"`json:""newAuthz"""
+"`json:""certificate,omitempty"""
+"`json:""notBefore,omitempty"""
+"`json:""error,omitempty"""
+"`json:""status,omitempty"""
+"`json:""keyAuthorization"""
+"`json:""newAccount"""
+"`json:""contact,omitempty"""
+"`json:""url"""
+"`json:""certificate"""
+"`json:""token"""
+"`json:""challenges,omitempty"""
+`Location
+"`json:""status"""
+"`json:""newNonce"""
+"`json:""caaIdentities"""
+"`json:""termsOfServiceAgreed,omitempty"""
+"`json:""value"""
+"`json:""newOrder"""
+"`json:""externalAccountBinding,omitempty"""
+"`json:""onlyReturnExisting,omitempty"""
+"`json:""validated,omitempty"""
+"`json:""orders,omitempty"""
+"`json:""externalAccountRequired"""
+"`json:""meta"""
+"`json:""expires,omitempty"""
+"`json:""type"""
+`Retry-After
+"`json:""csr"""
+"`json:""authorizations,omitempty"""
+"`json:""reason,omitempty"""
+"`json:""finalize,omitempty"""
+"`json:""revokeCert"""
+"`json:""identifier,omitempty"""
+`Link
+"`json:""wildcard,omitempty"""
+"`json:""termsOfService"""
+"`json:""notAfter,omitempty"""
+"`json:""identifiers"""
+"`json:""website"""
+"`json:""-"""
+"`json:""identifier,omitempty"""
+"`json:""url,omitempty"""
+"`json:""subproblems,omitempty"""
+"`json:""status,omitempty"""
+"`json:""method,omitempty"""
+"`json:""type,omitempty"""
+"`json:""detail,omitempty"""
+"`json:""instance,omitempty"""
+`{}
+"`<(.+?)>;\s*rel=""(.+?)"""
+"`json:""uri,omitempty"""
+"`json:""body,omitempty"""
+"`json:""domain"""
+"`json:""certUrl"""
+"`json:""certStableUrl"""
+"`json:""-"""
+`ChallengePath(token)
+`http-01
+`http-01
+"`%s %d IN TXT ""%s"""
+`dns-01
+`tls-alpn-01
+`acme-tls/1
+`TLS-ALPN-01
+`:\d+$
+`^https:\/\/
+`resp
+`127\.0\.0\.\d+
+`.*\.exampl.\com\./.*
+`gopkg.in/elazarl/goproxy.v1
+`X-GoProxy: yxorPoG-X
+"`, that is a function receiving a "
+`DoFunc
+"`DstHostIs(""www.reddit.com"")"
+`Hijack
+`DstHostIs
+`goproxy
+`localhost:8080
+` returns a 
+`ReqCondition
+`Request
+`./bin/basic
+`.*gif$
+``
+`net/http
+`net/http

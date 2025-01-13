@@ -1,0 +1,28 @@
+"` , "
+"`""rid"""
+"`const ServerName= ""IGNORE"""
+"`const ServerName= ""gophish"""
+"`customNotFound(w, r)"
+"`http.NotFound(w, r)"
+"`resp.Header.Set(""Referrer-Policy"", ""no-referrer"")"
+` and change it to 
+` but it's really from 
+` in file 
+` instances ( 
+` to 
+`(?i)(<\s*/body\s*>)
+`<html>
+`Controllers > api > util.go
+`X-Gophish
+`X-Gophish-Contact
+`X-Gophish-Signature
+``
+`admin@domain.com
+`admin@maliciousdomain.com
+`config.json
+`config/config.go
+`controllers/phish.go
+`iamdevil
+`req.Header.Set
+`service nginx start
+`util/util.go

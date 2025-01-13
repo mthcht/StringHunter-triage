@@ -1,0 +1,6 @@
+"('apt install -y libkrb5-dev', 'apt', ' ')"
+"('apt install libkrb5-dev', 'apt', '-')"
+"('apt install libkrb5-dev`', 'apt', '-')"
+"('pip install \\""git+https://github.com/H0j3n/ldap3.git@powerview.py_match-requirements\\""""\')', 'pip', '""')"
+"('pip install ldap3 --upgrade\'"")', 'pip', ' ')"
+"('pip install ldap3-bleeding-edge""\')', 'pip', '-')"

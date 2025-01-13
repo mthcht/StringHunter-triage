@@ -1,0 +1,88 @@
+"logging.info( ""HTTPD(%s"
+"logging.info(""    %-26s: %s"" % (attribute, parsed_ace[attribute]"
+"logging.info(""  %-28s"" % ""ACE[%d] info"" % i"
+"logging.info(""Attempting to del a computer with the name: %s"" % domainComputer"
+"logging.info(""Exiting..."""
+"logging.info(""Falling back to SIMPLE authentication"""
+"logging.info(""Filtering results for SID (%s"
+"logging.info(""HTTPD(%s"
+"logging.info(""LDAPSocketSendError: Connection dead"""
+"logging.info(""Member identity not found. Try to use DN"""
+"logging.info(""Nothing to remove..."""
+"logging.info(""Opening domain %s..."" % selectedDomain"
+"logging.info(""Parsing DACL"""
+"logging.info(""Printing parsed DACL"""
+"logging.info(""Server allows ANONYMOUS access!"""
+"logging.info(""Succesfully deleted %s."" % self.__computerName"
+"logging.info(""Succesfully set password of %s to %s."" % (self.__computerName, self.__computerPassword"
+"logging.info(""Successfully added machine account %s with password %s."" % (self.__computerName, self.__computerPassword"
+"logging.info(""Successfully deleted %s."" % self.__computerName"
+"logging.info(""Successfully set password of %s to %s."" % (self.__computerName, self.__computerPassword"
+"logging.info(""[Add-DomainDNSRecord] Zone %s not found"" % zonename"
+"logging.info(""[Add-DomainGPO] SYSVOL policy folder successfully created!"""
+"logging.info(""[Add-DomainOU] Protect accidental deletion enabled"""
+"logging.info(""[Add-DomainUser] Adding password to account"""
+"logging.info(""[Clear-Cache] Clearing cache"""
+"logging.info(""[Find-LocalAdminAccess] There are more than 100 computers in the domain. This might take some time"""
+"logging.info(""[Get-DomainForeignGroupMember] No group members found"""
+"logging.info(""[Get-DomainObjectOwner] Recursing all domain objects. This might take a while"""
+"logging.info(""[Get-DomainSCCM] Failed to check with hostname, resolving dnsHostName attribute to IP and retrying..."""
+"logging.info(""[Get-DomainSCCM] No server found in domain. Skipping..."""
+"logging.info(""[Remove-DomainDNSRecord] No record found"""
+"logging.info(""[Remove-DomainDNSRecord] Success! Deleted the record"""
+"logging.info(""[Remove-DomainDNSRecord] Zone %s not found"" % zonename"
+"logging.info(""[Remove-DomainOU] Success! Deleted the OU"""
+"logging.info(""[Set-DomainDNSRecord] More than one record found"""
+"logging.info(""[Set-DomainDNSRecord] No record found"""
+"logging.info(""[Set-DomainObjectOwner] Changing current owner %s to %s"" % (target_identity_owner, principal_identity[0][""attributes""][""objectSid""]"
+"logging.info(f""Error binding to {self.proto}"""
+"logging.info(f""Powerview web listening on {self.host}:{self.port}"""
+"logging.info(f""Targeting {target}"""
+"logging.info(f""User {self.username} has adminCount attribute set to 1. Might be admin somewhere somehow :"
+"logging.info(f""User {self.username} is a Domain Admin"""
+"logging.info(f""[Add-DomainCATemplateAcl] Successfully modified {name} template acl"""
+"logging.info(f""[Add-DomainCATemplate] Added new certificate template {name}"""
+"logging.info(f""[Add-DomainCATemplate] Duplicating existing template {args.duplicate} properties"""
+"logging.info(f""[Add-DomainCATemplate] Template {name} issued!"""
+"logging.info(f""[Add-DomainGPO] Added new {identity} GPO object"""
+"logging.info(f""[Add-DomainOU] Added new {identity} OU"""
+"logging.info(f""[Add-GPLink] Successfully added gPLink to {targetidentity_dn} OU"""
+"logging.info(f""[Disable-DomainDNSRecord] {recordname} dns record disabled"""
+"logging.info(f""[Find-LocaAdminAccess] Found {len(entries"
+"logging.info(f""[Remove-DomainCATemplate] Success! {identity} template deleted"""
+"logging.info(f""[Remove-DomainObject] Found {targetobject_dn} in domain"""
+"logging.info(f""[Remove-GPLink] Successfully modified gPLink on {targetidentity_dn} OU"""
+"logging.info(f""[Set-DomainRBCD] Success! {delegatefrom} is now in {identity}'s msDS-AllowedToActOnBehalfOfOtherIdentity attribute"""
+"logging.info(f""[Unlock-ADAccount] Account {identity_san} unlocked"""
+"logging.info(f""[Unlock-ADAccount] Failed to unlock {identity_san}"""
+"logging.info(f""obfuscate: {obfuscate}, no_cache: {no_cache}"""
+"logging.info(f'[Set-DomainComputerPassword] Password has been successfully changed for user {"""".join(entries[0][""attributes""][""sAMAccountName""]"
+"logging.info(f'[Set-DomainComputerPassword] Password has been successfully changed for user {entries[0][""attributes""][""sAMAccountName""]}'"
+"logging.info(f'[Set-DomainObjectOwner] Success! modified owner for {target_identity[0][""attributes""][""distinguishedName""]}'"
+"logging.info(f'[Set-DomainObject] Success! modified attribute {attr_key} for {targetobject[0][""attributes""][""distinguishedName""]}'"
+"logging.info(f'[Set-DomainUserPassword] Password has been successfully changed for user {"""".join(entries[0][""attributes""][""sAMAccountName""]"
+"logging.info(f'[Set-DomainUserPassword] Principal {"""".join(entries[0][""attributes""][""distinguishedName""]"
+logging.info('Access denied while enumerating Sessions on %s' % (identity
+logging.info('DACL modified successfully!'
+logging.info('Delete computer {} successfully!'.format(domainComputer
+logging.info('Saving ticket in %s' % (self.__user + '.ccache'
+logging.info('We have more than one ip. Please choose one that is reachable'
+logging.info('[Add-DomainDNSRecord] Success! Created new record with dn %s' % record_dn
+logging.info('[Add-DomainGroup] Success! Created new group'
+logging.info('[Add-DomainUser] Success! Created new user'
+logging.info('[Get-DomainObjectAcl] Recursing all domain objects. This might take a while'
+logging.info('[Get-NetLoggedOn] No sessions found!'
+logging.info('[Set-DomainDNSRecord] Success! modified attribute for target record %s' % entry[0]['attributes']['distinguishedName']
+logging.info(f'Password changed for {pv_args.identity}'
+logging.info(f'Records not found'
+logging.info(f'User {pv_args.members} successfully added to {pv_args.identity}'
+logging.info(f'User {pv_args.members} successfully removed from {pv_args.identity}'
+logging.info(f'[Add-DomainObjectACL] Found principal identity: {principal_dn if principal_dn else principal_sAMAccountName}'
+logging.info(f'[Add-DomainObjectACL] Found target identity: {target_dn if target_dn else target_sAMAccountName}'
+logging.info(f'[Remove-DomainObjectACL] Found principal identity: {principal_dn if principal_dn else principal_sAMAccountName}'
+logging.info(f'[Remove-DomainObjectACL] Found target identity: {target_dn if target_dn else target_sAMAccountName}'
+logging.info(f'[Remove-DomainObject] Success! {targetobject_dn} removed'
+logging.info(f'[Set-DomainCATempalte] Found template dn {target_template[0].entry_dn}'
+logging.info(f'[Set-DomainCATemplate] Success! modified attribute for {identity} template'
+logging.info(f'[Set-DomainObject] Success! modified new dn for {targetobject_dn}'
+logging.info(str(e

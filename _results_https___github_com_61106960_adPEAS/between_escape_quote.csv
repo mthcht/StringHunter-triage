@@ -1,0 +1,26 @@
+"`n"").Replace('@#',"""
+"`t"","""").Replace("""
+"`t"","": "").Replace("""
+"`t$($($Object.'msDS-AllowedToDelegateTo') -join """
+"`t$($($object.memberOf) -join """
+"`t$($(($Object.PrincipalsAllowedToRetrieveManagedPassword).samaccountname) -join """
+"`t$(($Object_CA.certificatetemplates) -join """
+"`t$(($Object_GPO.GroupMembers | ConvertFrom-SID @SearcherArguments) -join """
+"`t$(($Object_screen.EnrollmentAllowedFor) -join """
+"`t$(($adPEAS_Domain.DomainControllers) -join """
+`$$($Etype)
+`$$($Ticket.ServicePrincipalName)*
+`$$UserDomain
+`$*$SamAccountName
+`$krb5asrep
+`$krb5asrep$tag23
+`$krb5tgs
+`C9?i
+`Q
+``
+`f9
+`n
+`t
+`t$($Object_Var.SiteName)
+`t$($Object_Var.TrustedDomainInformation)
+`t$($Object_Var.name)

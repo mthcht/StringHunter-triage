@@ -1,0 +1,2 @@
+- Fixed: `type` with value `json` was not correctly activated when set under `credentials`.
+- Added option to capture custom POST arguments additionally to credentials. Check `custom` field under `credentials`.

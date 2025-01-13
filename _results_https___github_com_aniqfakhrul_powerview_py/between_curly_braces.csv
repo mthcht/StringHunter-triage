@@ -1,0 +1,539 @@
+"{ computer_name: computer_name, computer_pass: computer_pass, basedn: basedn "
+"{ dn: `CN=Configuration,${rootDn"
+"{ dn: `CN=Schema,CN=Configuration,${rootDn"
+"{ dn: `CN=System,${rootDn"
+"{ dn: `DC=DomainDnsZones,${rootDn"
+"{ dn: `DC=ForestDnsZones,${rootDn"
+"{ dn: rootDN, name: 'Root DN' "
+"{ dn: rootDn, icon: icons.adIcon "
+"{ identity: identity, searchbase: identity, search_scope: 'BASE' "
+"{ identity: identity, searchbase: identity, search_scope: 'BASE', no_cache: no_cache "
+"{ include = ""powerview"" "
+"{ name: 'department', label: 'Department', default: false "
+"{ name: 'description', label: 'Description', default: false "
+"{ name: 'distinguishedName', label: 'Distinguished Name', default: true "
+"{ name: 'member', label: 'Members', default: false "
+"{ name: 'memberOf', label: 'Member Of', default: false "
+"{ name: 'name', label: 'Name', default: true "
+"{ name: 'sAMAccountName', label: 'SAM Account Name', default: false "
+"{ name: 'title', label: 'Title', default: false "
+"{ properties: ['*'], searchbase, search_scope "
+"{ searchbase: identity, properties: ['*'], search_scope: search_scope "
+"{ searchbase: identity, search_scope: 'BASE' "
+"{ searchbase: searchbase, search_scope: 'LEVEL', no_cache: no_cache "
+"{ sidInput: '', resultSid: '', errorSid: '' "
+"{ uacInput: '', resultUac: '', errorUac: '' "
+"{ zonename: zoneName, identity: identity "
+"{ zonename: zoneName, properties: ['name', 'Address'] "
+"{"""".join(entries[0][""attributes""][""distinguishedName""])"
+"{"""".join(entries[0][""attributes""][""sAMAccountName""])"
+"{"""".join(identity_entries[0][""attributes""][""distinguishedName""])"
+"{"").rstrip("""
+"{""Linked Groups"": linked_group"
+"{""attribute"": attr, ""value"": val"
+"{""attributes"": entries"
+"{""name"": ""CA"", ""icon"": ""fas fa-certificate"", ""link"": ""/ca"""
+"{""name"": ""Computers"", ""icon"": ""fas fa-display"", ""link"": ""/computers"""
+"{""name"": ""DNS"", ""icon"": ""fas fa-globe"", ""link"": ""/dns"""
+"{""name"": ""Dashboard"", ""icon"": ""fas fa-chart-line"", ""link"": ""/dashboard"""
+"{""name"": ""Explorer"", ""icon"": ""fas fa-folder-tree"", ""link"": ""/"""
+"{""name"": ""GPOs"", ""icon"": ""fas fa-building"", ""link"": ""/gpo"""
+"{""name"": ""Groups"", ""icon"": ""fas fa-users"", ""link"": ""/groups"""
+"{""name"": ""Logs"", ""icon"": ""far fa-file-alt"", ""button_id"": ""toggle-command-history"""
+"{""name"": ""OUs"", ""icon"": ""fas fa-building"", ""link"": ""/ou"""
+"{""name"": ""Settings"", ""icon"": ""fas fa-cog"", ""button_id"": ""toggle-settings"""
+"{""name"": ""Users"", ""icon"": ""far fa-user"", ""link"": ""/users"""
+"{""name"": ""Utils"", ""icon"": ""fas fa-toolbox"", ""link"": ""/utils"""
+"{""name"":"""",""short_name"":"""",""icons"":[{""src"":""/android-chrome-192x192.png"",""sizes"":""192x192"",""type"":""image/png"""
+"{""raw"": content.hex()"
+"{""src"":""/android-chrome-512x512.png"",""sizes"":""512x512"",""type"":""image/png"""
+"{""type"":""Attribute"", ""content"": attribute"
+"{""type"":""ComparisonOperator"", ""content"": operator"
+"{""type"":""Value"", ""content"": LdapObfuscate.random_string()"
+"{% extends ""base/layouts.html"" %"
+"{% if item.name == ""Modules"" %"
+"{% include ""views/initspinner.html"" %"
+"{% include ""views/spinner.html"" %"
+"{', '.join(invalid_properties)"
+"{'ACEType': ace['TypeName'], 'ACEFlags': "", "".join(_ace_flags) or ""None"", 'DEBUG': ""ACE type not supported for parsing by dacleditor.py, feel free to contribute"""
+"{'GPODisplayName': entry['attributes']['displayName'], 'GPOName': entry['attributes']['name'], 'GPOPath': entry['attributes']['gPCFileSysPath'], 'GroupName': self.convertfrom_sid(infobject[0]['sids']),'GroupSID':infobject[0]['sids'],'GroupMemberOf': f""{infobject[0]['memberof']"
+"{'GPODisplayName': entry['attributes']['displayName'], 'GPOName': entry['attributes']['name'], 'GPOPath': entry['attributes']['gPCFileSysPath'], 'GroupName':self.convertfrom_sid(infobject[0]['sids']) ,'GroupSID':infobject[i]['sids'],'GroupMemberOf': f""{infobject[i]['memberof']"
+"{'Name': ent['address'], 'Hostname': ent['hostname']"
+"{'bindstr': r'ncacn_np:%s[\pipe\samr]', 'set_host': True"
+"{'bindstr': r'ncacn_np:%s[\pipe\srvsvc]', 'set_host': True"
+"{'bindstr': r'ncacn_np:%s[\pipe\svcctl]', 'set_host': True"
+"{'bindstr': r'ncacn_np:%s[\pipe\winreg]', 'set_host': True"
+"{'bindstr': r'ncacn_np:%s[\pipe\wkssvc]', 'set_host': True"
+"{'certificateTemplates':[(ldap3.MODIFY_DELETE,[templates[0][""name""].value])]"
+"{'content': '<=', 'type': 'ComparisonOperator'"
+"{'content': '>=', 'type': 'ComparisonOperator'"
+"{'content': 'objectCategory', 'type': 'Attribute'"
+"{'content': 'person', 'type': 'Value'"
+"{'content': attribute, 'type': 'Attribute'"
+"{'content': number, 'type': 'Value'"
+"{'dnsRecord': [(ldap3.MODIFY_REPLACE, records)]"
+"{'host': self.host, 'port': self.port, 'debug': False"
+"{'id': 'accountexpires-toggle', 'name': 'accountExpires', 'active': 'false', 'attribute': 'accountExpires'"
+"{'id': 'admin-count-toggle', 'name': 'AdminCount', 'active': 'false', 'attribute': 'adminCount'"
+"{'id': 'admincount-toggle', 'name': 'adminCount', 'active': 'true', 'attribute': 'adminCount'"
+"{'id': 'all-toggle', 'name': 'All', 'active': 'false', 'attribute': '*'"
+"{'id': 'bitlocker-toggle', 'name': 'Bitlocker', 'active': 'false', 'attribute': 'bitlocker'"
+"{'id': 'cn-toggle', 'name': 'cn', 'active': 'true', 'attribute': 'cn'"
+"{'id': 'company-toggle', 'name': 'company', 'active': 'false', 'attribute': 'company'"
+"{'id': 'department-toggle', 'name': 'department', 'active': 'false', 'attribute': 'department'"
+"{'id': 'description-toggle', 'name': 'description', 'active': 'false', 'attribute': 'description'"
+"{'id': 'disabled-computers-toggle', 'name': 'Disabled', 'active': 'false', 'attribute': 'disabled'"
+"{'id': 'disabled-users-toggle', 'name': 'Disabled', 'active': 'false', 'attribute': 'disabled'"
+"{'id': 'distinguishedname-toggle', 'name': 'distinguishedName', 'active': 'false', 'attribute': 'distinguishedName'"
+"{'id': 'enabled-computers-toggle', 'name': 'Enabled', 'active': 'false', 'attribute': 'enabled'"
+"{'id': 'enabled-users-toggle', 'name': 'Enabled', 'active': 'false', 'attribute': 'enabled'"
+"{'id': 'excludedcs-toggle', 'name': 'Exclude DC', 'active': 'false', 'attribute': 'excludeDC'"
+"{'id': 'gmsapassword-toggle', 'name': 'GMSA Password', 'active': 'false', 'attribute': 'gmsaPassword'"
+"{'id': 'laps-toggle', 'name': 'LAPS', 'active': 'false', 'attribute': 'laps'"
+"{'id': 'lockout-toggle', 'name': 'Lockout', 'active': 'false', 'attribute': 'lockout'"
+"{'id': 'mail-toggle', 'name': 'mail', 'active': 'true', 'attribute': 'mail'"
+"{'id': 'memberof-toggle', 'name': 'memberOf', 'active': 'false', 'attribute': 'memberOf'"
+"{'id': 'name-toggle', 'name': 'name', 'active': 'false', 'attribute': 'name'"
+"{'id': 'objectclass-toggle', 'name': 'objectClass', 'active': 'false', 'attribute': 'objectClass'"
+"{'id': 'objectguid-toggle', 'name': 'objectGUID', 'active': 'false', 'attribute': 'objectGUID'"
+"{'id': 'objectsid-toggle', 'name': 'objectSid', 'active': 'false', 'attribute': 'objectSid'"
+"{'id': 'operatingsystem-toggle', 'name': 'operatingSystem', 'active': 'true', 'attribute': 'operatingSystem'"
+"{'id': 'pass-not-required-toggle', 'name': 'PasswdNotReq', 'active': 'false', 'attribute': 'passwordNotRequired'"
+"{'id': 'password-expired-toggle', 'name': 'Password Expired', 'active': 'false', 'attribute': 'passwordExpired'"
+"{'id': 'pre2k-toggle', 'name': 'Pre-2k', 'active': 'false', 'attribute': 'pre2k'"
+"{'id': 'preauth-not-required-toggle', 'name': 'PreauthNotReq', 'active': 'false', 'attribute': 'preauthNotRequired'"
+"{'id': 'printers-toggle', 'name': 'Printers', 'active': 'false', 'attribute': 'printers'"
+"{'id': 'rbcd-toggle', 'name': 'RBCD', 'active': 'false', 'attribute': 'rbcd'"
+"{'id': 'samaccountname-toggle', 'name': 'sAMAccountname', 'active': 'true', 'attribute': 'sAMAccountName'"
+"{'id': 'serviceprincipalname-toggle', 'name': 'servicePrincipalName', 'active': 'false', 'attribute': 'servicePrincipalName'"
+"{'id': 'shadow-cred-toggle', 'name': 'Shadow Cred', 'active': 'false', 'attribute': 'shadowCred'"
+"{'id': 'spn-toggle', 'name': 'SPN', 'active': 'false', 'attribute': 'servicePrincipalName'"
+"{'id': 'title-toggle', 'name': 'title', 'active': 'false', 'attribute': 'title'"
+"{'id': 'trusted-to-auth-toggle', 'name': 'Trusted To Auth', 'active': 'false', 'attribute': 'trustedToAuth'"
+"{'id': 'trusted-to-auth-toggle', 'name': 'TrustedToAuth', 'active': 'false', 'attribute': 'trustedToAuth'"
+"{'id': 'unconstrained-delegation-toggle', 'name': 'Unconstrained', 'active': 'false', 'attribute': 'unconstrainedDelegation'"
+"{'id': 'useraccountcontrol-toggle', 'name': 'userAccountControl', 'active': 'false', 'attribute': 'userAccountControl'"
+"{'id': 'userprincipalname-toggle', 'name': 'userPrincipalName', 'active': 'false', 'attribute': 'userPrincipalName'"
+"{'list': lambda x: [int(i) if i.isnumeric() else i.strip() for i in x.replace(""|"","","").split(',')]"
+"{'logs': formatted_logs, 'total': total_logs, 'page': page, 'limit': limit"
+"{'member': [(ldap3.MODIFY_ADD, [userobject_dn])]"
+"{'member': [(ldap3.MODIFY_DELETE, [userobject_dn])]"
+"{'msDS-AllowedToActOnBehalfOfOtherIdentity':[ldap3.MODIFY_REPLACE, [sd.getData()]]"
+"{'msDS-KeyCredentialLink': [ldap3.MODIFY_REPLACE, new_values]"
+"{'nTSecurityDescriptor': (ldap3.MODIFY_REPLACE, [data])"
+"{'nTSecurityDescriptor':(ldap3.MODIFY_REPLACE, [data])"
+"{'result': serializable_result, 'pv_args': vars(pv_args)"
+"{'sid':left.replace(""*"","""").replace(""__memberof"",""""), 'memberof': right.replace(""*"","""").replace(""__members"","""")"
+"{'type': 'BooleanOperator', 'content': Operators.NOT"
+"{'type': 'BooleanOperator', 'content': random_operator"
+"{'unicodePwd': [(ldap3.MODIFY_REPLACE, ['""{"
+"{...collectQueryParams(), no_cache: no_cache"
+"{0,1"
+"{JSON.stringify(settings, null, 2)"
+"{Object.entries(config).map(([section, settings]) => renderSection(section, settings)).join('')"
+"{attrs.IP ? attrs.IP.replace(/\\/g, '') : ''"
+"{entries[0][""attributes""][""sAMAccountName""]"
+"{entry.get(""dn"")"
+"{isEnforced ? '<span class=""text-xs bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 px-2 py-0.5 rounded"">Enforced</span>' : ''"
+"{k: v for k, v in vars(args).items() if k in method_params"
+"{k: v for v, k in EXTENDED_RIGHTS_MAP.items()"
+"{key: make_serializable(value) for key, value in data.items()"
+"{key: self._deserialize_complex_types(value) for key, value in obj.items()"
+"{key: self._serialize_complex_types(value) for key, value in obj.items()"
+"{renderConfigSection('Computer Configuration', gpo.attributes.machineConfig)"
+"{renderConfigSection('User Configuration', gpo.attributes.userConfig)"
+"{target_identity[0][""attributes""][""distinguishedName""]"
+"{targetobject[0][""attributes""][""distinguishedName""]"
+"{trust.attributes.trustDirection.join(', ')"
+"{trust.attributes.trustType.join(', ')"
+"{v: k for k, v in self.__guids_map_dict.items()"
+"{value: key for key, value in UAC_DICT.items()"
+"{{ url_for('static', filename='css/style.css') "
+"{{ url_for('static', filename='images/apple-touch-icon.png') "
+"{{ url_for('static', filename='images/favicon-16x16.png') "
+"{{ url_for('static', filename='images/favicon-32x32.png') "
+"{{ url_for('static', filename='js/adcs.js') "
+"{{ url_for('static', filename='js/ca.js') "
+"{{ url_for('static', filename='js/computer.js') "
+"{{ url_for('static', filename='js/dashboard.js') "
+"{{ url_for('static', filename='js/dns.js') "
+"{{ url_for('static', filename='js/explorer.js') "
+"{{ url_for('static', filename='js/gpo.js') "
+"{{ url_for('static', filename='js/group.js') "
+"{{ url_for('static', filename='js/icon.js') "
+"{{ url_for('static', filename='js/main.js') "
+"{{ url_for('static', filename='js/modules.js') "
+"{{ url_for('static', filename='js/ou.js') "
+"{{ url_for('static', filename='js/static.js') "
+"{{ url_for('static', filename='js/tree.js') "
+"{{ url_for('static', filename='js/users.js') "
+"{{ url_for('static', filename='js/utils.js') "
+"{{ url_for('static', filename='site.webmanifest') "
+"{{0,1"
+"{}"""
+"{}"", 'GroupMembers': f""{infobject[1]['members']"
+"{}"", 'GroupMembers': f""{infobject[i+1]['members']"
+"{}, User: {"
+{ command: command 
+{ computer_name: distinguishedName 
+{ errorUac = 'Error converting UAC'; resultUac = ''; 
+{ identity: cn 
+{ identity: distinguishedName 
+{ identity: gpoGUID 
+{ identity: groupDn 
+{ identity: groupName 
+{ identity: identity 
+{ identity: link.GUID 
+{ identity: searchInput 
+{ menuIsOpen: false 
+{ objectsid: sidInput 
+{ properties: ['name'] 
+{ resultUac = data.map(item => `${item.attributes.Name
+{ searchbase: searchbase 
+{ showSidebar: false 
+{ value 
+{ value: member.attributes.MemberDistinguishedName 
+{ value: member.attributes.MemberDomain 
+{ value: member.attributes.MemberName 
+{ value: uacInput 
+{ zonename: zoneName 
+{% block content %
+{% block head %
+{% block scripts %
+{% elif item.link %
+{% else %
+{% endblock %
+{% endfor %
+{% endif %
+{% for item in nav_items %
+{% for subitem in item.subitems %
+{% include 'base/header.html' %
+{% include 'base/searchbar.html' %
+{% include 'views/alert.html' %
+{% include 'views/commandhistory.html' %
+{% include 'views/detailspanel.html' %
+{% include 'views/modal.html' %
+{% include 'views/settings.html' %
+{% include 'views/spinner.html' %
+{% include 'views/tableview.html' %
+{%d:%ds
+{%s
+{' not in obj and '
+{'-Set' if args.set else '-Append'
+{'__bytes__': base64.b64encode(obj).decode('ascii')
+{'__datetime__': obj.isoformat()
+{'__timedelta__': obj.total_seconds()
+{'distinguishedName':dn
+{'error': 'Invalid command or arguments'
+{'error': 'No command provided'
+{'error': 'No module specified in the command'
+{'error': f'Command parsing error: {str(e)
+{'error': f'Method {full_method_name
+{'error': str(e)
+{'result': history
+{'s' if diff.days > 1 else ''
+{'s' if diff.months > 1 else ''
+{'s' if diff.years > 1 else ''
+{'status': 'OK'
+{'status': 'OK' if success else 'KO'
+{'status': 'ok'
+{(.*?)\
+{1
+{12
+{2
+{36
+{4
+{8
+{Array.isArray(value) ? value.join(' ') : value
+{Array.isArray(value) ? value.join('<br>') : value
+{Array.isArray(value) ? value.join('\\n') : value
+{LDAP.human_readable_time_diff(dt)
+{LdapObfuscate.random_spaces() if not skip_random_spacing and self.enable_spacing else ''
+{LdapObfuscate.random_spaces() if self.enable_spacing else ''
+{__year__
+{abspath
+{aceType
+{ace[key]
+{admin.attributes.MemberDistinguishedName
+{admin.attributes.MemberDomain
+{admin.attributes.MemberName
+{adminUsers.length
+{args.basedn
+{args.duplicate
+{args.gplink
+{args.identity
+{args.ldapfilter
+{args.server
+{args.spn
+{attr.ljust(28)
+{attr.ljust(self.get_max_len(list(entry['attributes'].keys())))
+{attr_key
+{attribute
+{attribute.InheritanceType || ''
+{attribute.ObjectAceType || ''
+{attributeName
+{attributes.displayName || 'GPO Details'
+{attrs.AuthDomains || ''
+{attrs.LogonDomain || ''
+{attrs.LogonServer || ''
+{attrs.Time ? `${attrs.Time
+{attrs.UserName || ''
+{attrs.Username || ''
+{attrs['Idle Time'] ? `${attrs['Idle Time']
+{attrs['attribute']
+{basedn
+{bcolors.BOLD
+{bcolors.ENDC
+{bcolors.FAIL
+{bcolors.OKBLUE
+{bcolors.OKBLUE + __version__ + bcolors.ENDC
+{bcolors.OKGREEN
+{bcolors.WARNING
+{ca.attributes.cACertificateDN
+{ca.attributes.cn
+{ca.attributes.dNSHostName
+{ca.attributes.displayName
+{ca.attributes.distinguishedName
+{ca.attributes.objectGUID
+{ca_name
+{ca_search_base
+{cache_key
+{cert_file.name
+{cnt
+{computer.attributes.sAMAccountName
+{computer.dn
+{computerName
+{computers.length
+{constantType
+{constrainedDelegation.length
+{convertDnToId(searchbase)
+{convertZoneToId(name)
+{convertZoneToId(zoneName)
+{cur_user
+{currentValue
+{data.domain
+{data.ldap_address
+{data.length - 3
+{data.nameserver
+{data.protocol
+{data.username
+{dc.attributes.dNSHostName
+{dc.attributes.operatingSystem
+{delegatefrom
+{destination_dn
+{diff.days
+{diff.months
+{diff.years
+{displayname
+{dn
+{dnsHostName=temppc.contoso.local
+{domain
+{domain.distinguishedName
+{domain.lockoutDuration
+{domain.lockoutThreshold
+{domain.maxPwdAge
+{domain.objectSid
+{domainAdmins.length
+{domain['ms-DS-MachineAccountQuota']
+{domain['ms-DS-MachineAccountQuota'] > 0 ? 'text-yellow-500' : ''
+{domain_sid
+{dt.strftime('%d/%m/%Y %H:%M:%S')
+{e
+{enroll_filter
+{entry['attributes']['gPCFileSysPath']
+{f'''{self.__newline.ljust(self.get_max_len(list(entry['attributes'].keys()))+3)
+{file_path
+{filter
+{flag.decode()
+{formatRegistryKey(key)
+{formatValue(value)
+{formattedAccessMask
+{full_method_name
+{getSpinnerSVG(escapedDn)
+{gpidentity
+{gpidentity_dn
+{gpo.attributes.displayName
+{gpo.attributes.displayName || 'Unnamed GPO'
+{gpo.dn
+{gpoIsExpanded ? '' : 'hidden'
+{green
+{group
+{groupName
+{group_identity_dn
+{groupname
+{histfile
+{host
+{host_inp
+{hostname
+{icon
+{iconSVG
+{id
+{identity
+{identity_filter
+{identity_san
+{inactiveUsers.length
+{index === 1 ? 'text-center' : ''
+{init_proto
+{isExpanded ? '' : 'hidden'
+{item.attributes.Value
+{item['attribute']
+{item['value']
+{k.ljust(28)
+{kerberoastable.length
+{kerberoastableAdmins.length
+{key
+{key.ljust(28)
+{key.ljust(self.get_max_len(select_attributes))
+{key: val
+{key_file.name
+{known_sid
+{label
+{ldap_filter
+{len(cas)
+{len(entries)
+{limit
+{line
+{max_limit
+{member
+{member.attributes.MemberDistinguishedName
+{member.attributes.MemberDistinguishedName || ''
+{member.attributes.MemberName || ''
+{member.attributes.MemberSID || ''
+{member_dn
+{memberidentity_dn
+{members
+{method_name
+{modalId
+{name
+{nameserver
+{newValue
+{no_cache
+{obfuscate
+{obj.attributes.name || obj.dn
+{objectsid
+{oid
+{oid_dn
+{oid_forest
+{oid_part_1
+{oid_part_2
+{oid_part_3
+{oidpath
+{ou.attributes.name || 'Details'
+{ou.dn
+{ou.name
+{ouname || dn
+{parent_dn_entries
+{part
+{path
+{pipe
+{principalName
+{principal_dn if principal_dn else principal_sAMAccountName
+{principal_identity[0].get('attributes').get('sAMAccountName')
+{principalidentity
+{prop
+{prop.charAt(0).toUpperCase() + prop.slice(1)
+{pv_args.identity
+{pv_args.members
+{pv_args.server
+{recordaddress
+{recordname
+{response.status
+{right
+{rootDN
+{sam_account_name
+{search_base.lower()
+{search_filter
+{search_filter.lower()
+{search_scope.lower()
+{searchbase
+{section
+{securityIdentifier
+{security_identifier
+{self.args.rights
+{self.args.targetidentity
+{self.content
+{self.convert_to_ldap(token)
+{self.domain
+{self.flatName
+{self.host
+{self.ldap_session.result['description']
+{self.ldap_session.result['message']
+{self.port
+{self.proto
+{self.root_dn
+{self.targetidentity_dn
+{self.type
+{self.username
+{server_dns
+{sid
+{size
+{str(e)
+{str(ldap_session.result['message'])
+{str(sorted(attributes) if attributes else 'None')
+{str(strs).ljust(lens)
+{str(strs[i:index])
+{str(strs[i]).ljust(lens)
+{str(strs[i][j:index])
+{str(value)
+{subsection
+{tab.charAt(0).toUpperCase() + tab.slice(1)
+{tabName
+{tabName.charAt(0).toUpperCase() + tabName.slice(1)
+{target
+{target_dn if target_dn else target_sAMAccountName
+{target_template[0].entry_dn
+{targetidentity
+{targetidentity_dn
+{targetobject[0]['attributes']['distinguishedName']
+{targetobject_dn
+{template
+{template.attributes.Enabled ? 'Enabled' : 'Disabled'
+{template.attributes.displayName
+{template.attributes['Any Purpose'] ? 'check text-green-500' : 'times text-red-500'
+{template.attributes['Certificate Authorities']
+{template.attributes['Client Authentication'] ? 'check text-green-500' : 'times text-red-500'
+{template.attributes['Enrollment Agent'] ? 'check text-green-500' : 'times text-red-500'
+{template_name
+{template_oid
+{templates[0]['name'].value
+{title
+{title.includes('Computer') ? 'fa-desktop' : 'fa-user'
+{token['content']
+{totalRows
+{trust.attributes.flatName
+{trust.attributes.name
+{trust.attributes.securityIdentifier
+{trust.attributes.trustAttributes
+{uac_val.decode()
+{unconstrainedComputers.length
+{unk
+{usage
+{user.attributes.sAMAccountName
+{user.dn
+{user_dn
+{username
+{users.length
+{v
+{val
+{val[0]
+{value
+{visibleRows
+{vuln
+{vulnType
+{zone.attributes.name
+{zone.attributes.whenChanged
+{zone['attributes']['distinguishedName']
+{zonename
+{{ item.button_id 
+{{ item.icon 
+{{ item.link 
+{{ item.name 
+{{ subitem.icon 
+{{ subitem.link 
+{{ subitem.name 
+{{ title or 'PowerView.py' 
+{{ version 
+{|
+{} ({
+{}:{
+{}@{

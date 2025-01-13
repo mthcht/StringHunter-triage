@@ -1,0 +1,81 @@
+"(""."""
+"(""Base64 encoded JWT access_token:"""
+"(""Code field not found within 10 seconds"""
+"(""Decoded JWT payload:"""
+"(""Error:"", details.get(""error"""
+"(""Exiting..."""
+"(""Login field not found within 10 seconds"""
+"(""Password field not found within 10 seconds"""
+"(""Password will be prompted if not supplied directly!\n"""
+"(""Usage:"""
+"(""[*] Device code:"""
+"(""[*] Fireprox URL:"", fireprox_url"
+"(""[*] Getting code via fireprox:"""
+"(""[*] Password:"", ""*"" * len(password"
+"(""[*] Storing token..."""
+"(""[*] Successful authentication. Access token expires at:"", token_expire"
+"(""[*] Username:"", user"
+"(""error"""
+"(""https://login.microsoftonline.com/common/oauth2/deviceauth"""
+"(""https://login.microsoftonline.com/common/oauth2/devicecode?api-version=1.0"", headers=headers, data=device_code_body"
+"(""https://login.microsoftonline.com/common/oauth2/token?api-version=1.0"", headers=headers, data=token_body"
+"(""python3 m365-fatigue.py --user <username> [--password <password>] [--interval <seconds> (default: 60"
+"(""style"""
+"((4 - len(access_token.split(""."""
+"().strftime(""%Y%m%d%H%M%S"""
+"(1970, 1, 1"
+"(By.ID, ""idSIButton9"""
+"(EC.visibility_of_element_located((By.NAME, ""loginfmt"""
+"(EC.visibility_of_element_located((By.NAME, ""otc"""
+"(EC.visibility_of_element_located((By.NAME, ""passwd"""
+"(KHTML, like Gecko"
+"(client_id, resource, headers, fireprox_url"
+"(client_id, resource, headers, fireprox_url=None"
+"(device_code_response[""message""]"
+"(driver, 10"
+"(driver, client_id, user_code, user, interval, device_code, headers, fireprox_url"
+"(driver, client_id, user_code, username, interval, device_code, headers, fireprox_url=None"
+"(driver, code=None, user=None, password=None, fireprox_url=None"
+"(driver, user_code, user, password, fireprox_url"
+"(f""Remaining time: {remaining_time} seconds"", end=""\r"""
+"(f""Stored Base64 encoded access token as '{txt_filename}'"""
+"(f""Stored decoded access token as '{json_filename}'"""
+"(fireprox_url+""common/oauth2/deviceauth"""
+"(fireprox_url+""common/oauth2/devicecode?api-version=1.0"", headers=headers, data=device_code_body"
+"(fireprox_url+""oauth2/devicecode?api-version=1.0"""
+"(fireprox_url+""oauth2/token?api-version=1.0"", headers=headers, data=token_body"
+"(in this case, Chrome WebDriver... but you can change it towards something else if you need to"
+"(json.dumps(token_array, indent=4"
+"(json_filename, ""w"""
+"(prompt=""Enter your password: """
+"(seconds=token_array[""exp""]"
+"(the ""Software"""
+"(token_array, file_b, indent=4"
+"(txt_filename, ""w"""
+"(user, password, fireprox_url"
+"(user, password, fireprox_url=None"
+('utf-8'
+(3
+(Keys.RETURN
+(TOTP
+(Windows NT 10.0; Win64; x64
+([@dafthack](https://github.com/dafthack
+([@rvrsh3ll](https://github.com/rvrsh3ll
+(access_token
+(args
+(base64.b64decode(token_payload
+(c
+(code
+(default is 60 seconds
+(default: 60
+(driver.current_url
+(driver.title
+(https://chat.openai.com/c/LICENSE
+(https://github.com/dafthack/GraphRunner
+(https://github.com/f-bader/TokenTacticsV2
+(interval
+(now called Entra ID
+(password
+(sys.argv[1:]
+(time.time(
+(user

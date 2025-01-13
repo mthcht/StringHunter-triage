@@ -1,0 +1,28 @@
+ -- Also client's in AS-REQ
+ -- Correct name
+ -- Correct realm
+ -- Encrypted AuthorizationData encoding
+ -- Server's realm
+ -- Used only in AS-REQ
+ -- in preference order
+ -- might be encoded AP-REQ
+ -->
+ --> will remove ACEs that match to default admin groups (e.g. Domain Admins)
+ --username -m 18200'
+"
+" -- EncryptionType,"
+" --> will remove ACEs that match to default domain groups including admin groups (e.g. Domain Admins, Authenticated Users,...)"
+----                           -----"
+----- ----                      -----"
+----- ----"
+--------      ----------    ------------ ------------ -------      ------------"
+----------                                   --------------"
+----------"
+-----------"
+------------                  ---------                     -------"
+------------            -----------            -------------         ----"
+------------           ---------              --------              -------"
+------------           -----------            -------------         ----"
+------------   ---------      ----------     ---                   -------       --------"
+--------------"
+-----------------"

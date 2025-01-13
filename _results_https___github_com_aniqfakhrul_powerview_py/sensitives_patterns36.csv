@@ -1,0 +1,57 @@
+					for condition in numbers.keys():
+					for y in vulns.keys():
+				key_file.write(key_to_pem(self.key))
+			for i in list(COMMANDS.keys()):
+			for k in list(self.keys()):
+			for pipe in binding_params.keys():
+			if args.name in list(binding_params.keys()):
+		if self.keys():
+		k = list(self.keys())[i]
+		key = list(self.keys())[i]
+		return list(self.keys()).index(k)
+	for k in t['dummy_section'].keys():
+	if hostname in list(STORED_ADDR.keys()):
+	ori_list = list(entry.keys())
+                        for c in list(ace.keys()):
+                    Object.keys(computer.attributes || {}).map(key => key.toLowerCase())
+                    const actualKey = Object.keys(computer.attributes || {})
+                    for c in list(temp_entry['attributes'].keys()):
+                    for key in list(ace.keys()):
+                    iconSVG += icons.keyIcon;
+                    if 'ObjectType' in ace['Ace'].fields.keys() and 'ObjectType' in compare_ace['Ace'].fields.keys():
+            # if sid in list(WELL_KNOWN_SIDS.keys()):
+            const attributeKeys = Object.keys(users[0].attributes);
+            full_cmd = [c for c in list(COMMANDS.keys()) if c.casefold() == cmd][0]  # Resolve exact case-sensitive match
+            if (e.key === 'Enter') {
+            if (e.key === 'Escape') {
+            if self.args.rights.lower() in list(rights.keys()):
+            known_sids = set(sid_map.keys())
+            results = [c + ' ' for c in list(COMMANDS.keys()) if c.casefold().startswith(cmd)] + [None]
+            return [c + ' ' for c in list(COMMANDS.keys())][state]
+        const attributeKeys = Object.keys(entries[0].attributes);
+        elements_name = list(parsed_ace.keys())
+        if (e.key === 'Enter' && e.target.value.trim()) {
+        if (event.key === 'Escape') {
+        if cmd in (c.casefold() for c in COMMANDS.keys()):
+        if sid in WELL_KNOWN_SIDS.keys():
+        self.key = key
+    if (!config || Object.keys(config).length === 0) {
+"									# 'Vulnerable': "",\n"".join([i+"" - ""+vulns[i] for i in vulns.keys()]),"
+"					self.key, self.cert = load_pfx(pfx, self.pfx_pass)"
+"				if ""msDS-AllowedToActOnBehalfOfOtherIdentity"" in list(_entries[""attributes""].keys()):"
+"				if ""msDS-GroupMSAMembership"" in list(_entries[""attributes""].keys()):"
+"				self.key, self.cert = load_pfx(pfx)"
+"	if ""Group Membership"" in list(config.keys()):"
+"                                    if (isinstance(i,dict)) and (""encoded"" in i.keys()):"
+"                            _stdout = f""{attr.ljust(self.get_max_len(list(entry['attributes'].keys())))}: {f'''{self.__newline.ljust(self.get_max_len(list(entry['attributes'].keys()))+3)}'''.join(v"
+"                            if (isinstance(i,dict)) and (""encoded"" in i.keys()):"
+"                        _stdout = f""{attr.ljust(self.get_max_len(list(entry['attributes'].keys())))}: {str(value)}"""
+"                        _stdout = f""{attr.ljust(self.get_max_len(list(entry['attributes'].keys())))}: {value}"""
+"                    value = self.beautify(value,self.get_max_len(list(entry['attributes'].keys()))+2)"
+"                for key in list(entry[""attributes""].keys()):"
+"                headers = entries[0][""attributes""].keys()"
+"                headers = entries[0][""attributes""][0].keys()"
+"                if sort_option.lower() not in [v.lower() for v in entry[""attributes""].keys()]:"
+"        #            if ""userAccountControl"" in list(entry[""attributes""].keys()):"
+"        #    if ""msDS-SupportedEncryptionTypes"" in list(entry[""attributes""].keys()):"
+from dsinternals.common.data.hello.KeyCredential import KeyCredential

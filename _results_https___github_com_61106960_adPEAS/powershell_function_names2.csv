@@ -1,0 +1,13 @@
+Function in 
+function Get-Property
+function Invoke-Method
+function Set-Property
+function _temp { [CmdletBinding
+function enumerates all machines on the current 
+function first enumerates the domain controller for the current 
+function is heavily based on Bill Stewart's code and Pasquale Lantella's code 
+function searches for all distributed file systems 
+function uses LogonUser
+function uses RevertToSelf
+function uses WNetAddConnection2W to make a 'temporary' 
+function will enumerate domain trust relationships for the current 

