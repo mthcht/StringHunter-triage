@@ -1,0 +1,76 @@
+"(""C:\Windows\WinSxS\FileMaps\wow64_windows-defender*.manifest"" ""C:\Windows\WinSxS\FileMaps\x86_windows-defender*.manifest"" ""C:\Windows\WinSxS\FileMaps\amd64_windows-defender*.manifest"" ""C:\Windows\System32\SecurityAndMaintenance_Error.png"" ""C:\Windows\System32\SecurityAndMaintenance.png"" ""C:\Windows\System32\SecurityHealthSystray.exe"" ""C:\Windows\System32\SecurityHealthService.exe"" ""C:\Windows\System32\SecurityHealthHost.exe"" ""C:\Windows\System32\drivers\SgrmAgent.sys"" ""C:\Windows\System32\drivers\WdDevFlt.sys"" ""C:\Windows\System32\drivers\WdBoot.sys"" ""C:\Windows\System32\drivers\WdFilter.sys"" ""C:\Windows\System32\wscsvc.dll"" ""C:\Windows\System32\drivers\WdNisDrv.sys"" ""C:\Windows\System32\wscsvc.dll"" ""C:\Windows\System32\wscproxystub.dll"" ""C:\Windows\System32\wscisvif.dll"" ""C:\Windows\System32\SecurityHealthProxyStub.dll"" ""C:\Windows\System32\smartscreen.dll"" ""C:\Windows\SysWOW64\smartscreen.dll"" ""C:\Windows\System32\smartscreen.exe"" ""C:\Windows\SysWOW64\smartscreen.exe"" ""C:\Windows\System32\DWWIN.EXE"" ""C:\Windows\SysWOW64\smartscreenps.dll"" ""C:\Windows\System32\smartscreenps.dll"" ""C:\Windows\System32\SecurityHealthCore.dll"" ""C:\Windows\System32\SecurityHealthSsoUdk.dll"" ""C:\Windows\System32\SecurityHealthUdk.dll"" ""C:\Windows\System32\SecurityHealthAgent.dll"" ""C:\Windows\System32\wscapi.dll"" ""C:\Windows\System32\wscadminui.exe"" ""C:\Windows\SysWOW64\GameBarPresenceWriter.exe"" ""C:\Windows\System32\GameBarPresenceWriter.exe"" ""C:\Windows\SysWOW64\DeviceCensus.exe"" ""C:\Windows\SysWOW64\CompatTelRunner.exe"" ""C:\Windows\system32\drivers\msseccore.sys"" ""C:\Windows\system32\drivers\MsSecFltWfp.sys"" ""C:\Windows\system32\drivers\MsSecFlt.sys"""
+"(""C:\Windows\WinSxS\amd64_security-octagon*"" ""C:\Windows\WinSxS\x86_windows-defender*"" ""C:\Windows\WinSxS\wow64_windows-defender*"" ""C:\Windows\WinSxS\amd64_windows-defender*"" ""C:\Windows\SystemApps\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy"" ""C:\ProgramData\Microsoft\Windows Defender"" ""C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection"" ""C:\Program Files (x86"
+"(""SecHealthUI"""
+"($appx in $($appxpackage |where {$_.PackageFullName -like ""*$choice*""}"
+"($appx in $($provisioned |where {$_.PackageName -like ""*$choice*""}"
+"($appx.PackageFullName -like ""*$no*"""
+"($appx.PackageName -like ""*$no*"""
+"(SgrmBroker, Sgrm Drivers"
+"(disables File Virtualization and User Account Control, which will run all apps as administrator priviliges (also fixes old app errors"
+"(for now the script can't do this automaticly, but it will do in next version"
+"(its a bug from me, so do not file for this"
+"(search on admx.help for more informations, its policy"
+"(this fixes disablation of Virtualization Based Security, this will auto enable if you use Hyper-V and/or WSL (Windows Subsystem for Linux"
+(#%
+($appxpackage |where {$_.Name -eq $appx.DisplayName}
+($choice in $remove_appx
+($content.Length - 1
+($file in $regFiles
+($file.FullName
+($next
+($no in $skip
+($sid in $users
+(%V`
+('' -eq $choice.Trim(
+('S-1-5-18'
+((Get-Partition | ? IsSystem
+((^~]
+((dir $store -ea 0 |where {$_ -like '*S-1-5-21*'}
+(*VERB
+(*extremely rare*
+(.zip
+(/clr
+(/r
+(2
+(?(0
+(A;}
+(Context Menu
+(DL;
+(HL$HHL$8HD$P
+(J_}/
+(NE
+(Q;+mVTo!
+(Remove_SecurityComp\*.reg
+(Remove_defender\*.reg
+(TY
+(This script removes the integration of Pluton Chip Support and Processing from Windows.
+(UAC
+(VBS
+(Windows Security UWP App
+(Windows Subsystem for Android
+(advanced
+(b
+(by dragging to the executable
+(for Windows 11 21H2 or earlier
+(for get +30% performance on old Intel CPUs
+(https://github.com/drunkwinter/windows-defender-remover/assets/38593134/46007191-0a65-43c2-b451-a993ff90e00e
+(https://github.com/ionuttbara/windows-defender-remover/issues
+(https://github.com/ionuttbara/windows-defender-remover/releases
+(https://github.com/jbara2002/windows-defender-remover/releases
+(if you don't know what are you doing
+(maximum 10000
+(maximum 32 characters
+(mj3/_
+(m}
+(not in UTF-8 mode
+(null
+(prefers-color-scheme: dark
+(s
+(something about Exploits
+(t
+(test-path $store
+(tf
+(this is needed to run the DefenderRemover part in OOBE
+(this will disable updating definitions of Defender because its removed
+(wscsvc
+(x86

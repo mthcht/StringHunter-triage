@@ -1,0 +1,17407 @@
+    
+                          
+            - Exploit Guard (something about Exploits)
+            - Tamper Protection (for Windows 11 21H2 or earlier)
+            - Windows Smart Control
+          - Spectre and Meltdown Mitigation (for get 
+        - Pluton Support and Pluton Services Support
+        - SecHealthUI (Windows Security UWP App)
+        - SmartScreen
+        - System Mitigations
+        - Windows Security Section from Settings App.
+        - virtualization support.
+      - Antivirus Scanning Tasks
+      - Antivirus Service
+      - Hides Antivirus Protection section from Windows Security App.
+      - Shell Associations (Context Menu)
+      - Windows Defender Antivirus filter and windows defender rootkit scanner drivers
+      - Windows Defender Definition Update List (this will disable updating definitions of Defender because its removed)
+      - Windows Defender SpyNet Telemetry
+    $PackageFullName = $appx.PackageFullName
+    $PackageName = $appx.PackageName
+    $combinedContent 
+    $content = Get-Content -Path $file.FullName
+    $next = !1
+    </picture>
+    <picture>
+    This script forcily removes following antivirus components:
+    This script removes/disables following security components:
+    dism /online /set-nonremovableapppolicy /packagefamily:$PackageFamilyName /nonremovable:0 >''
+    remove-appxpackage -package $PackageFullName -allusers >''
+    remove-appxprovisionedpackage -packagename $PackageName -online -allusers >''
+   The path it shown like to
+  foreach ($appx in $($appxpackage 
+  foreach ($appx in $($provisioned 
+  t9E
+ $PackageFamilyName  
+ $PackageFamilyName = ($appxpackage 
+ $PackageFullName
+ $appxpackage = get-appxpackage -allusers
+ $eol 
+ $eol = @()
+ $provisioned = get-appxprovisionedpackage -online
+ $zh@
+ %na=>
+ 'Dq
+ (advanced)
+ )_Z
+ -FPl
+ -Recurse
+ 0C:
+ 3B$>
+ 5GQ
+ 6Cy
+ 8H=}s
+ =Rk
+ =VT
+ >$'<>F(
+ >Vp
+ @ _bOA[5
+ AHL$@
+ AUAVAWH
+ AUAVAWHPEEH
+ AUAVAWHPHH$
+ AUH E3IHL9l$Pu
+ AUH HcLI
+ AUH0AH
+ AUH0IMHLMtrMtmH
+ AUH@HZ
+ AUHPHZ
+ After this you'll need to reboot.
+ Automation of the script
+ B3/
+ BTpHL$0
+ Base Class Array'
+ Base Class Descriptor at (
+ C=Xd
+ Class Hierarchy Descriptor'
+ Complete Object Locator'
+ Configure App Install Control
+ Creating an ISO with Windows Defender and Services disabled
+ D$h
+ DXE
+ Ddh
+ Defender Loggers
+ Defender Remover / Defender Disabler
+ Define the folder containing the .reg files and the output file
+ Disable All Security Mitigations
+ Disable SmartScreen for Microsoft Edge
+ Disable SmartScreen for Microsoft Store Apps
+ Disable SmartScreen in File Explorer and Windows Shell
+ Disable Spectre 
+ Disable UAC
+ Disable Virtualization Based Security
+ Disable Windows Defender Security Center Notifications
+ Disable Windows Security Center Notifications
+ Disable or Remove Windows Defender 
+ E3H$
+ EHLEEEfD9:u
+ Enforce Disabling of Windows Defender Antivirus Policy
+ F%vg
+ F9Xo6
+ Fd2CL>
+ File: E:
+ Fix mouse cursor dissapeiring
+ Fo>
+ Frequently Asked Questions
+ From Disabler
+ HH [H
+ HL$08Dt$8Dt$0
+ HL$H
+ HOHO
+ How to disable VBS if the removal script does not work
+ How to remove Windows Security Center / Windows SecurityApp from PC without downloading Script
+ How to use the package remover without downloading the executable from the release
+ In-kernel Mitigations
+ Instructions
+ IsSystem).AccessPaths[0])Microsoft
+ JF$
+ JHE
+ KFjXs
+ L4x
+ LD$
+ LL$@HL$LL
+ MHI
+ Meltdown Mitigations
+ Modify this with your source folder path
+ NHLS0bnh[
+ NPI
+ OeH
+ PVpih)=
+ Pvf
+ Removal
+ Remove Defender and Windows Security Services
+ Remove Defender's Startup Entries
+ Remove Defender's Tamper Protection
+ Removing
+ Removing Antivirus Components
+ Removing Security Components
+ Reset values for Virtualization Settings
+ Runtime Library
+ Services Mitigations
+ Set-Content -Path $outputFile -Encoding UTF8
+ Specify the output file path
+ Type Descriptor'
+ UJO[
+ VOr_lN
+ What components are removing
+ What does the app do
+ Why is the downloaded executable being flagged as a virus
+ Why is the patch not working when Windows is updated
+ YdO8
+ ZE=
+ aID$
+ aqh1Vp
+ at end of pattern
+ bRZ
+ da1Aa9
+ delete
+ delete[]
+ disable overwriting real time protection settings
+ disables reporting of things from Maintenance Task in Windows Security App
+ disabling Antivirus
+ fCo
+ folder and create the 
+ folder and create the folder with 
+ folder.
+ folder. (this is needed to run the DefenderRemover part in OOBE).
+ from last version and download it.
+ gte4$Xoe-
+ h2o-b
+ hj8
+ if ($next) {continue}
+ if (test-path $store) {$users 
+ jHqA}
+ name.
+ new
+ new[]
+ ngc15y}
+ or (
+ or /R 
+ or source code .zip will indicate virus-free.
+ p)JUm
+ pGN8
+ qehPE
+ s.WrG7jeZ(n
+ sg}{S
+ this file disables Signature Updates in Windows Defender
+ u9LC
+ uWH
+ u{j
+ v)9
+ wXWswnt
+ which blocks certain actions and modifies Windows Defender/Security policies.
+ x{HL$8n{HL$xd{H
+ y1}bdNh
+ yhl>g[.
+ {A H-F
+ }yD
+!!{R
+!'[FIt
+!(dr7KJnc
+!/1}W
+!0.[O
+!2}s
+!4RH
+!:DH
+!<[p=s
+!A-Hdv
+!AH$
+!CZE
+!D$hL$ LD$hHT$0LHu
+!DCU{d
+!FqJ
+!H ]@UH H
+!H$W'5L0n:Gj.h
+!HI@Ht
+!HL$H
+!HL$X
+!HL$XL$
+!HmjV
+!IoR
+!Jp9f
+!KD$$
+!KL=zJA@
+!L$0L$(L$ Dk
+!NbHBz
+!P )hR
+!QNjS
+!TITI:
+!U4-
+!W7e
+!ZMyj
+![cli](https://github.com/drunkwinter/windows-defender-remover/assets/38593134/46007191-0a65-43c2-b451-a993ff90e00e)
+!]8(b
+!_CJGZB:O
+!a))5XkP2nk
+!f9w 
+!f9w<L
+!fD9d$0t
+!fJr8
+!hQAT
+!iWHs-ECn
+!l@AP
+!mKkC 4(
+!mVKExK
+!oH$
+!oSw
+!q%vB
+!q'v{
+!qLD$0HT$xH
+!rGe9
+!t4$
+!tU9
+!tvQ
+!}cPc
+"            - Hypervisor startup (this fixes disablation of Virtualization Based Security, this will auto enable if you use Hyper-V and/or WSL (Windows Subsystem for Linux), WSA (Windows Subsystem for Android))"
+"            - LUA (disables File Virtualization and User Account Control, which will run all apps as administrator priviliges (also fixes old app errors))"
+"          - ""Services Mitigations"" (search on admx.help for more informations, its policy)"
+"        - support for Windows Security Center including Windows Security Center Service (wscsvc), Windows Security Service (SgrmBroker, Sgrm Drivers) which are needed to run Windows Security App."
+"        <img alt=""Defender Remover"" src=""https://user-images.githubusercontent.com/79479952/239704528-c017473e-1d2a-4d4a-a215-bf71d137b86a.png"">"
+"        <source media=""(prefers-color-scheme: dark)"" srcset=""https://github.com/drunkwinter/windows-defender-remover/assets/38593134/8072a566-5bf0-4f05-9994-808145406bdc"">"
+"    foreach ($sid in $users) {ni ""$store"
+"    ni ""$store"
+" !l5SlfQ!,5"
+" ""[0"
+" @T""[z"
+" File: $($file.FullName)"""
+" Remove ""Scan with Defender"" Context Menu"
+" foreach ($no in $skip) {if ($appx.PackageFullName -like """
+" foreach ($no in $skip) {if ($appx.PackageName -like """
+" t,A"
+"!""(qU{"
+"!Cw,)U"
+"!HQ@!""-"
+"!X,:t"
+"!cEC,Ts"
+"!dP""y%"
+""" ""C:"
+"""""5r"
+"""""HgHH [@SH HHI"
+"""""S2Lk"
+"""""lc="
+"""'PA2t"
+"""(RHSWn"
+""") {$next = !0}} "
+""")ht"
+"""-Id"
+"""21VY:e"
+"""26g"
+"""4("""
+"""4M"""""
+"""5W5ch"
+"""6>zG/"
+"""6_3"
+"""72e33e44-dc4c-40c5-a688-a77b6e988c69""=-"
+"""7Hw"
+"""9cZN4wFN"
+""":G<_3U"
+""":[""bl"
+"""<hq"
+"""<t@$"
+"""<tA"
+"""<u)H$"
+"""=]("
+"""=yy"
+"""A8_"
+"""AIcH"
+"""ALt"
+"""AllowFastServiceStartup""=dword:00000000"
+"""AntiVirusOverride""=dword:00000001"
+"""AutoEndTasks""=""1"""
+"""CachedDrtmAuthIndex""=dword:00000000"
+"""ConfigureAppInstallControl""=""Anywhere"""
+"""ConfigureAppInstallControlEnabled""=dword:00000001"
+"""ConfigureSystemGuardLaunch""=dword:00000002"
+"""ConsentPromptBehaviorAdmin""=dword:00000000"
+"""ConsentPromptBehaviorUser""=dword:00000000"
+"""CriticalMaintenance_DefenderCleanup""=-"
+"""CriticalMaintenance_DefenderVerification""=-"
+"""D$@D$@C "
+"""DAH"
+"""DelayedDesktopSwitchTimemout""=dword:00000000"
+"""DeployConfigCIPolicy""=dword:00000000"
+"""DisableAntiSpyware""=dword:00000001"
+"""DisableAntiVirus""=dword:00000001"
+"""DisableArchiveScanning""=dword:00000000"
+"""DisableAsyncScanOnOpen""=dword:00000001"
+"""DisableAutoExclusions""=dword:00000001"
+"""DisableBehaviorMonitoring""=dword:00000001"
+"""DisableBlockAtFirstSeen""=dword:00000001"
+"""DisableCatchupFullScan""=dword:00000000"
+"""DisableCatchupQuickScan""=dword:00000001"
+"""DisableEmailScanning""=dword:00000000"
+"""DisableEnhancedNotifications""=dword:00000001"
+"""DisableGenericRePorts""=dword:00000001"
+"""DisableHeuristics""=dword:00000001"
+"""DisableIOAVProtection""=dword:00000001"
+"""DisableInformationProtectionControl""=dword:00000001"
+"""DisableIntrusionPreventionSystem""=dword:00000001"
+"""DisableLocalAdminMerge""=dword:00000001"
+"""DisableNotifications""=dword:00000001"
+"""DisableOnAccessProtection""=dword:00000001"
+"""DisableProtocolRecognition""=dword:00000001"
+"""DisableRawWriteNotification""=dword:00000001"
+"""DisableRealtimeMonitoring""=dword:00000001"
+"""DisableRemoteScmEndpoints""=dword:00000000"
+"""DisableRemoteScmEndpoints""dword:00000000"
+"""DisableReparsePointScanning""=dword:00000001"
+"""DisableRestorePoint""=dword:00000001"
+"""DisableRoutinelyTakingAction""=dword:00000001"
+"""DisableScanOnRealtimeEnable""=dword:00000001"
+"""DisableScanOnUpdate""=dword:00000001"
+"""DisableScanningNetworkFiles""=dword:00000000"
+"""DisableScanningNetworkFiles""=dword:00000001"
+"""DisableScheduledSignatureUpdateOnBattery""=dword:00000001"
+"""DisableSignatureRetirement""=dword:00000001"
+"""DisableUpdateOnStartupWithoutEngine""=dword:00000001"
+"""Disabled""=dword:00000001"
+"""DisallowExploitProtectionOverride""=dword:00000001"
+"""EnableASRConsumers""=dword:00000000"
+"""EnableControlledFolderAccess""=dword:00000000"
+"""EnableCursorSuppression""=dword:00000000"
+"""EnableFileHashComputation""=dword:00000000"
+"""EnableLUA""=dword:00000000"
+"""EnableNetworkProtection""=-"
+"""EnableNetworkProtection""=dword:00000000"
+"""EnableSecureUIAPaths""=dword:00000000"
+"""EnableSmartScreen""=dword:00000000"
+"""EnableSvchostMitigationPolicy""=hex(b):00,00,00,00,00,00,00,00"
+"""EnableUIADesktopToggle""=dword:00000000"
+"""EnableVirtualizationBasedSecurity""=dword:00000000"
+"""EnableWebContentEvaluation""=dword:00000000"
+"""Enabled""=dword:00000000"
+"""EnabledV9""=dword:00000000"
+"""ExploitGuard_ASR_Rules""=dword:00000000"
+"""FeatureSettings""=dword:00000001"
+"""FeatureSettingsOverride""=dword:00000003"
+"""FeatureSettingsOverrideMask""=dword:00000003"
+"""FiiK9"
+"""FilterAdministratorToken""=dword:00000001"
+"""FirewallOverride""=dword:00000001"
+"""FirstRunDisabled""=dword:00000001"
+"""ForceUpdateFromMU""=dword:00000000"
+"""ForegroundLockTimeout""=dword:00000000"
+"""H)f!"
+"""HIXH"
+"""HL$"
+"""HL$0"
+"""HL$8Ht$8Ht$H"
+"""HL$@"
+"""HL$hHL$HH$"
+"""HVCIMATRequired""=dword:00000000"
+"""HandlerTimeout""=dword:7FFFFFFF"
+"""HeartbeatTrackingIndex""=dword:00000000"
+"""Hl3f[V)D_"
+"""HtH"
+"""HungAppTimeout""=""1000"""
+"""HypervisorEnforcedCodeIntegrity""=dword:00000000"
+"""ID$"
+"""IOAVMaxSize""=dword:00000512"
+"""IoEG"
+"""J2'To<(]NP"
+"""Jgh3("
+"""KernelSEHOPEnabled""=dword:00000000"
+"""L$ "
+"""L$A"
+"""L$BA"
+"""L$xHC"
+"""LD$ H"
+"""LmCompatibilityLevel""=-"
+"""LocalAccountTokenFilterPolicy""=dword:00000001"
+"""LocalSettingOverrideDisableBehaviorMonitoring""=dword:00000000"
+"""LocalSettingOverrideDisableIOAVProtection""=dword:00000000"
+"""LocalSettingOverrideDisableIntrusionPreventionSystem""=dword:00000000"
+"""LocalSettingOverrideDisableOnAccessProtection""=dword:00000000"
+"""LocalSettingOverrideDisableRealtimeMonitoring""=dword:00000000"
+"""LocalSettingOverrideRealtimeScanDirection""=dword:00000000"
+"""LocalSettingOverrideSpyNetReporting""=dword:00000000"
+"""LocalSettingOverrideSpynetReporting""=dword:00000000"
+"""Locked""=dword:00000000"
+"""LowCpuPriority""=dword:00000001"
+"""LowLevelHooksTimeout""=dword:00000001"
+"""LsaCfgFlags""=dword:00000000"
+"""LsaConfigFlags""=dword:00000000"
+"""Lspq"
+"""MenuShowDelay""=""1"""
+"""MitigationAuditOptions""=hex:00,00,00,00,00,00,20,22,00,00,00,00,00,00,00,20,00,00,00,00,00,00,00,00"
+"""MitigationOptions""=hex:00,22,22,20,22,20,22,22,20,00,00,00,00,20,00,20,00,00,00,00,00,00,00,00"
+"""MpBafsExtendedTimeout""=dword:00000000"
+"""MpCapability""=hex:00,00,00,00,00,00,00,00"
+"""MpCloudBlockLevel""=dword:00000000"
+"""MpEnablePus""=dword:00000000"
+"""MpPlatformKillbitsFromEngine""=hex:00,00,00,00,00,00,00,00"
+"""N($"
+"""NotifyMalicious""=dword:00000000"
+"""NotifyPasswordReuse""=dword:00000000"
+"""NrGn0"
+"""OuG"
+"""PUAProtection""=dword:00000000"
+"""Pj.3B{-x4"
+"""PollBootPartitionTimeout""=dword:00000001"
+"""PreventOverride""=dword:00000000"
+"""PromptOnSecureDesktop""=dword:00000000"
+"""QsC{h6"
+"""RandomizeScheduleTaskTimes""=dword:00000000"
+"""RealtimeScanDirection""=dword:00000002"
+"""RealtimeSignatureDelivery""=dword:00000000"
+"""Registered""=dword:00000000"
+"""RequireMicrosoftSignedBootChain""=dword:00000001"
+"""RequirePlatformSecurityFeature""=dword:00000000"
+"""RequirePlatformSecurityFeatures""=dword:00000000"
+"""RunAsPPL""=dword:00000000"
+"""RunAsPPLBoot""=dword:00000000"
+"""S""."
+"""SCENoApplyLegacyAuditPolicy""=dword:00000000"
+"""ScheduleTime""=dword:00001440"
+"""SecurityHealth""=-"
+"""ServiceKeepAlive""=dword:00000000"
+"""ServicesPipeTimeout""=dword:00240000"
+"""SettingsPageVisibility""=""hide:windowsdefender"
+"""ShellSmartScreenLevel""=-"
+"""ShutdownReasonOn""=dword:00000000"
+"""ShutdownWarningDialogTimeout""=dword:00000001"
+"""SignatureDisableNotification""=dword:00000001"
+"""SignatureUpdateCatchupInterval""=dword:00000002"
+"""SmartScreenEnabled""=""off"""
+"""SmartScreenEnabled""=dword:00000000"
+"""SpyNetReporting""=dword:00000000"
+"""SpyNetReportingLocation""=""0"""
+"""SpynetReporting""=dword:00000000"
+"""SubmitSamplesConsent""=dword:00000002"
+"""SuppressRebootNotification""=dword:00000001"
+"""TamperProtection""=dword:00000000"
+"""TamperProtectionSource""=dword:00000000"
+"""ThrottleDetectionEventsRate""=dword:00000000"
+"""ThumbnailLivePreviewHoverTime""=dword:00000001"
+"""UpdateOnStartUp""=dword:00000000"
+"""UserPreference""=dword:00000002"
+"""VL%S"
+"""ValidateAdminCodeSignatures""=dword:00000001"
+"""VerboseStatus""=dword:00000000"
+"""VerifiedAndReputablePolicyState""=dword:00000000"
+"""VulnerableDriverBlocklistEnable""=dword:00000000"
+"""Vywocc)u"
+"""WaitToKillAppTimeout""=""1"""
+"""WaitToKillServiceTimeout""=""1"""
+"""WaitToKillServiceTimeout""=dword:00000001"
+"""WasEnabledBy""=-"
+"""WebThreatDefSvc_Allow_In""=-"
+"""WebThreatDefSvc_Allow_Out""=-"
+"""WebThreatDefSvc_Block_In""=-"
+"""WebThreatDefSvc_Block_Out""=-"
+"""WebThreatDefense""=-"
+"""Windows Defender""=-"
+"""WindowsDefender""=-"
+"""WindowsDefender-1""=-"
+"""WindowsDefender-2""=-"
+"""WindowsDefender-3""=-"
+"""WppTracingComponents""=dword:00000000"
+"""WppTracingLevel""=dword:00000000"
+"""Xc]"
+"""Zd,"
+"""_n ."
+"""a""gB"
+"""amA"
+"""b23879b5-1ef3-45b7-8933-554a4303d2f3""=-"
+"""c 5"
+"""e4g,"
+"""everyoneincludesanonymous""=dword:00000000"
+"""gPqL/c"
+"""h=xeuG,>)"
+"""hXd"
+"""h}%"
+"""kDv"
+"""l2V"
+"""lH$"
+"""mS5"
+"""mq%"
+"""nDtIQ4 "
+"""r_Z"
+"""restrictanonymous""=dword:00000001"
+"""restrictanonymoussam""=dword:00000001"
+"""sjUH"
+"""tA:t"
+"""uC}ALG."
+"""uFZi<!"
+"""up="
+"""value""=dword:00000000"
+"""value""=dword:00000001"
+"""value""=dword:00000002"
+"""value""=dword:00000018"
+"""value""=dword:00000032"
+"""wD>"
+"""yOS"
+"""{2A5FE97D-01A4-4A9C-8241-BB3755B65EE0}""=-"
+"""{zD=IT"
+"""})) {"
+"$ D$HD$,D$L"
+"$ G"""
+"$ H,"
+"$ Ht$@Hl$8M3H8H3r3,HF"
+"$""http://crl.certum.pl/ctsca2021.crl0o"
+"$'fD9,ht"
+"$(D$,"
+"$,D$("
+"$,Dl$0EAD"
+"$,IL$"
+"$0D$("""
+"$0G,HH _@SH HrH"
+"$8H,D_"
+"$:),,"
+"$@,f"
+"$Gc0"""
+"$H""t"
+"$H0,"
+"$Hp"""
+"$M,$HC"
+"$PHl$HfD,HLl$ HH0"
+"$PLd$XH0A]H8LL$ MLH,H8ff"
+"$PackageFamilyName"" -force >''"
+"$PackageFullName"" -force >''} "
+"$PackageName"" -force >''} "
+"$SpAk""{"
+"$appx.PackageFamilyName"" -force >''"
+"$outputFile = ""../Output.reg"" "
+"$p-tQJtAUt6Xt,it""mt"
+"$regFiles = Get-ChildItem -Path $sourceFolder -Recurse -Filter """
+"$remove_appx = @(""SecHealthUI"")"
+"$sourceFolder = ""../Remove_defender_moduled""     "
+"%""zSIV"
+"%E,)e"
+"%G2p.<,u{P"
+"%KV,,,33/7!"
+"%XQPQU-x""3"
+"')5"""
+"'E6m/ai,S"
+"'HT$PDH""HL$8HaHL$PVH"
+"'m:_""'V/=L}]"
+"(""HHcH"
+"()I,L"
+"(-[xvAU_Md,]J"
+"(Kcw,"
+"(L(@,"
+") and get the message ""The app can not run because Device Guard"" or ""Windows Defender Application Guard Blocked this app"", you have to remove 4 files with the same name, from different locations."
+")""J=Jt{16"
+")'01G38""W"
+")4}R}d""p"
+")<0t!."""
+")='"""
+")G""0"
+")iO""PH"
+")x/u,B9"
+",!C1J!"
+",!w/"
+",$XA"
+",%""m7L"
+",%I-64OSk%Y"
+",'o%D"
+",'rz"
+",(%I"
+",(=Y"
+",(k$Fy"
+",)(G"
+",-./0123456789:"
+",-K4("
+",-ghA@ZT"
+",./Y"
+",/8p"
+",/RIr"
+",/f."
+",0(S"
+",0b.tzujih"
+",1PcpFn"
+",:aC"
+",:ojv"
+",<7 t"
+",<ct.y"
+",>,Ef"
+",@k>"
+",A:t"
+",D$ "
+",D8{!u"
+",G82"
+",H= >$"
+",HD$0 HD$0"
+",HD$XL$P"
+",HL$"
+",HL$0,HL$x.3"
+",HL$@HD$pA"
+",HR><y59n><y59n>TUUUU"
+",HT$@HL$ -A:t"
+",HT$PHL$0"
+",HiCUW"
+",Jo8"
+",K'}"
+",KYB"
+",LL$DLD$HHH$"
+",LcH"
+",PF$Nl/"
+",Pee"
+",Px,%l"
+",ShD!qd<"
+",Tdxn5vq,"
+",U(fI<DOMH"
+",VM/"
+",WjeU"
+",Wl$"
+",WyQ"
+",]8yUN_"
+",]:J3Wzv"
+",]:gL"
+",]w@Fp"
+",_KZncD"
+",aOaWp"
+",b-f@H"
+",cw="
+",d)u"
+",e3n70"
+",eCW"
+",f9]"
+",fCc1LYAZZfhk"
+",fD98"
+",flBz"
+",hA0HG"
+",i'm"
+",j6_"
+",nD:u(E3D3H"
+",nON"
+",oEv"
+",p""W2,a"
+",pnnu"
+",u(/R'"
+",uA8"
+",vb6"
+",xzz"
+",}ec"
+"-""vx0VR"
+"-,04"
+"-,GQJbP$AM"
+"-,H$"
+"-,IGr "
+"-1A,ImU16"
+"-90-""t"
+"-aJz,=Q"
+".""]K75l2"
+".)q""]"
+".,IN"
+".A@.,{KD"
+".A@W:zE,"
+".]]=y,x-T"
+".b""O"
+".manifest"" ""C:"
+".pi,9"
+".reg"""
+".reg) DO PowerRun.exe regedit.exe /s ""%%f"""
+".reg) DO regedit.exe /s ""%%f"""
+".v{"")!"
+"/""/b"
+"/(z<SJU"""
+"/.M"""
+"//g8,"
+"/<g,{Mr"
+"/EQ)J=""FaHX]"
+"/Qfq,Uh5'e"
+"/rfg,"
+"0$"" "
+"0$0"""
+"0(""xV$"
+"0,D="
+"0D$,Dl$0A"
+"0K,n"
+"0Z[J"""
+"1$u}]>Dg,"
+"1%s""y"
+"1(ug"""
+"1,x ="
+"15""m{>"
+"16B.E/$Y.wB"""
+"1E_,{,h"
+"1W""BT"
+"1jM7s,yRg.T("
+"2,Au"
+"2. Run the "".exe"" as administrator"
+"28Q"""
+"2CYzqpShjM,D1"
+"2H@[@SH H""sHHH [HHX"
+"2R2n1F,"
+"2b""s"
+"3""Ht"
+"3""[d7"
+"3""x<e"
+"3,H6"
+"3,Iz"
+"3.,Dz"
+"3GfD9.u"":U"
+"3HL$Tt$PDB,"
+"3I,A:"
+"3IAA$,"
+"3III$"""
+"3Ko,Q8-{"
+"3[w@0,jd"
+"3bO]Ktt=Y)k{""/QH2KCzPL <"
+"3l>.1,"
+"4%"",9"
+"4,B}"
+"4{tm""9"
+"4}u1,eNvMV"
+"5"">C"
+"5)8"":"
+"52vi,"
+"5>,'9}c.3"
+"5mM,o"
+"6,@-5"
+"6PFJEU""Rl"
+"6eUS""DE"
+"6qc Ryli,7"
+"7""%O"
+"7,$A"
+"7,L$"
+"7. Save this as bootable ISO. (for now the script can't do this automaticly, but it will do in next version)."
+"7Dv""W3H'f"
+"7E7o""pW15X"
+"7Lih(j_z,,"""
+"7W>$w""L>,6"
+"7v""HD/"
+"8 ""JrEqStLOGn"
+"8,.y."
+"8,3.@]"
+"8,Sk"
+"83uM""KZw"
+"8[lU,"
+"9""HRHzyZ"
+"9$, "
+"98.Se""u-""""h"
+"9pYDZ/Y,"
+"9xG""<M"
+":""!ZU"
+":,(T"
+":>XvLw=xO,9>p"
+":AE,.cG%"
+":muWb""W"
+":r!5th,"
+":u,H"
+"<5s"""
+"<D4yA,S QT"
+"<a href=""https://github.com/ionuttbara/windows-defender-remover"">"
+"<assembly xmlns=""urn:schemas-microsoft-com:asm.v1"" manifestVersion=""1.0"">"
+"<compatibility xmlns=""urn:schemas-microsoft-com:compatibility.v1"">"
+"<pp><,"
+"<supportedOS Id=""{35138b9a-5d96-4fbd-8e2d-a2440225f93a}""/>"
+"<supportedOS Id=""{e2011457-1546-43c5-a5fe-008deee3d3f0}""/>"
+"<trustInfo xmlns=""urn:schemas-microsoft-com:asm.v2"">"
+"<vyr/,oJd'A"
+"<{K,2"
+"= ""Windows Registry Editor Version 5.00"""
+"= Mqa=,:"
+"=!6!""fZ""9p"
+"=""S)p"
+"=""h5MqsZ2fRql{5o[u7"
+"=,HL$03,HL$xL$"
+"=1-I""mn3"
+"=2,)"
+"=2,i"
+"=@{5""wHR"
+"=]b$D,"
+"=t"">t"
+"> h,}"
+">,B2Y>Fa>6"
+">/T,"
+">38,>1@1=.."
+">@>""J"
+">@xj rOrxbG[A""A"
+">G0O"""
+">R,:b"
+">W/""FmvG"
+">Y""p}'"
+">m>[a>"""
+">q.swmrV"""
+">{',Rexp"
+"@""5XVK"
+"@""9lEr"
+"@""BHd$ "
+"@""Z>"
+"@,_j"
+"@8w""u"
+"@8y""t"
+"@8{""u"
+"@:t""HK I"
+"@<""W"
+"@@@=<4,:$"
+"@HT$@z,"
+"@I,Hl$XfD9u"
+"@K,z"
+"@SH H"""
+"@l$,@l$-@l$.D$/FD$09"
+"@s,COM"
+"@u""@"
+"A""A:tA"
+"A""P(TqH"
+"A,D1"
+"A8t""F"
+"A9P,"
+"A:Et""H"
+"A:t,H$P"
+"A:u""$p"
+"A:u""H"
+"A=""8o"
+"A@ib/x,h"
+"AA3LcHL$ I,"
+"AC AK,"
+"AI""IHt""AID"
+"AIH,Ht"
+"AL,yB"
+"AP2qJ"""
+"AS""T!ef"
+"Ah""9LQm"
+"Asseco Data Systems S.A.1$0"""
+"At,H"
+"B""%0q"
+"B=,7.e"
+"BC!"""
+"BKL4,]M"
+"BT7432311000//.--..-,"
+"BmR""]"
+"Bw"":Xtm"
+"BwP""e"
+"C),NTI0u5 C"
+"C,F="
+"C,W}ec"
+"C,kv6/"
+"C,mdLOZ7l%("
+"C,w%vX"
+"C8Ii,"
+"C@[,"
+"CD /D ""%"
+"CHCHHc,H$"
+"C]7,"
+"Certum Certification Authority1""0 "
+"Certum Certification Authority1$0"""
+"CompatTelRunner.exe"" ""C:"
+"D x""k"
+"D"")A"
+"D""=yv4"
+"D""Ht"
+"D$ ,"
+"D$(DDD$,s3:u"
+"D$,<"
+"D$,B"
+"D$,EHT$ HL$"
+"D$,F"
+"D$,K"
+"D$,f"
+"D$,fAD"
+"D$,yHK"
+"D$0,"
+"D, H"
+"D,dE,xGi"
+"D2Y"""
+"D8{"""
+"DBLZ,$"
+"DD$,D"
+"DD3,"
+"DG0W,3"
+"DHL$pA,"
+"DH{t""H"
+"DIIAn"""
+"DN,DD$xLV"
+"DN,L"
+"DWWIN.EXE"" ""C:"
+"Defender"" ""C:"
+"DefenderPerformance"" ""C:"
+"DeviceCensus.exe"" ""C:"
+"Dqp,"
+"Dsq(3W"""
+"Dt$ NA:t'D9=,"
+"DtE,"
+"D{""q"
+"E,$H"
+"E3A""M"
+"E3E!,$AD$"
+"E3E333Ld$ ""C"
+"E3HH"""
+"E3HH,Ht$8HH"
+"E3{,]"
+"EDd$0EDd$(Dd$,]D$"
+"EGt,"
+"ET9,"
+"Emj,$O"
+"EtP""!S@!N"
+"F""u=HV"
+"F'zfi(ESF08Y)""{j"
+"F,W=w("
+"F>f"""
+"Fr""1lk)9"
+"G""Q["
+"G""Yg"
+"G""skn"
+"G%jAU8"""
+"G3},e[en"
+"G7O""h:Lv"
+"GC""R"
+"GSt,"
+"G[v6"""
+"G_.,"
+"GameBarPresenceWriter"" ""C:"
+"GameBarPresenceWriter.exe"" ""C:"
+"Gl3,7"
+"Gz,!"
+"H [@SH H"""
+"H"")De"
+"H""CLL$"
+"H""XH"
+"H""aHHD$0"
+"H(H HMHwfUD3"""
+"H)rD(,"
+"H,8H"
+"H,HH"
+"H,joY"
+"H9,u"
+"H@uQHL$ $IH3""HL$ LHE3H"
+"HD$ """
+"HD$8HcT$ Hk8D,"
+"HH ""@"
+"HH 4>IHL""H"
+"HH Y""HT$XHD"
+"HH0$""DH"
+"HH>HL$P3HL$038Hv,LHHht"
+"HH@[H%,"
+"HHL$pH3,"
+"HHt""L"
+"HHt2Ht,HcH"
+"HHtX""6"
+"HHu,9"
+"HHu,HV"
+"HL$ """
+"HL$ HT$ HL$81""HL$ RHT$8LHHL$XkHL$8"
+"HL$(H3""H8@USVWATAUAVAWH"
+"HL$,HM"
+"HL$0""HL$p""H$"
+"HL$0,HT$0DDIDd$ "
+"HL$8Lt,HG"
+"HL$H,HL$"
+"HL$XHHT$XHL$ HT$ HL$8[""HL$ RH"
+"HL$hH7t,HD$hH"
+"HL$pHcG,H"
+"HL$xLL$xHT$0MH3HL$HG,HL$"
+"HT$ DA'DL$,L$ fD$"
+"HT$ HHL$ ""J"
+"HT$ HL$8H8,HH1H"
+"HT$8IcL,C"
+"HT$@HL$0"""
+"HUHwfUD3"""
+"HcG,AH"
+"HcH""L_"
+"HcIHLHGAH@,"
+"HcILFfE,"
+"HcfA,OIn"
+"HealthAttestationClient"" ""C:"
+"HhZ J"""
+"HmHT$xE3LH""tH"
+"Ho,U!wH$"
+"Hq""n]@"
+"Ht""$"
+"Ht""A"
+"Ht$P,H$"
+"Ht,AHHH"
+"Ht,Et"
+"Ht3HHA,"
+"Ht8,"
+"Hu""HB"
+"Hu,H[YHx"
+"Hu,I"
+"HwfUD3"""
+"Hx ATH HIAMHC2p3x8IbNt,"
+"Hz8!G,8')a@eN"
+"I!iP4,zis"
+"I""3H(H(L4t"
+"I,,C"
+"I,AD"
+"I,lp"
+"I:""3H(H"
+"IDqaV!""("
+"IF ""%1""== ""A"" GOTO :removeantivirus"
+"IF ""%1""== ""S"" GOTO :disablemitigations"
+"IF ""%1""== ""Y"" GOTO :removedef"
+"IF ""%1""== ""a"" GOTO :removeantivirus"
+"IF ""%1""== ""s"" GOTO :disablemitigations"
+"IF ""%1""== ""y"" GOTO :removedef"
+"IHHu,HZ"
+"If the script is not working for you, check if you have the Windows Security Intelligence Update installed. If you do, disable tamper protection, and re-run the script."
+"Ii>VFK>{,"
+"Ijt""M"
+"Il,Y3s/0"
+"Ix'""Gf"
+"J""BPXK  "
+"J) V""r"
+"J1u,"
+"J8TA=>J9mb=11,/"
+"JA,m,9"
+"JC{%bMCT]dYQ,,"
+"JpH""Ach "
+"J{=,VN"
+"K""q)2"
+"K,I$"
+"K,Qnd"
+"KAB ,"
+"KFP,7H"
+"L""D8"
+"L""UYJffP"
+"L""_K"
+"L""g0"
+"L$(L$,9"
+"L$,F"
+"L$BHL$0""$"
+"L15(,"
+"L9O""gqtLgk j"
+"LD$ HL$PDHL$$D$,"
+"LD$0H,HC"
+"LHI,"
+"LHL$ 3"""
+"LHu""5"
+"LHu,O"
+"LUty"""
+"Lt$ ,D8t$HtHD$@"
+"M""$<"
+"MH4BH,3H$"
+"MI<J""o4."
+"MSd""ah1"
+"MZ,x"
+"M_u,$"
+"Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy"" ""C:"
+"MsSecFlt.sys"") DO PowerRun cmd.exe /c del /f ""%%d"""
+"MsSecFltWfp.sys"" ""C:"
+"Mt,A"
+"Mu,D"
+"N""GPASIu"
+"N""c0R"
+"N.QirH_,Wh>"
+"Nu,LL$0L$"
+"O,>N "
+"O,G_"
+"Ojr,H"
+"P%Q,P,L"
+"PL1""0 "
+"Powershell -noprofile -executionpolicy bypass -file ""%"
+"Q5.<_""m:B"
+"QO,<"
+"Qg""P"
+"R-""Uh%Xbc,"
+"R6""(Q"
+"R9""=-"
+"R:,bu"
+"RWVn,"
+"Remove-Item -LiteralPath ""$((Get-Partition "
+"Remove-Item -LiteralPath ""$env:windir"
+"Remove-Item -Path ""$env:windir"
+"RemoveSecHealthApp.ps1"""
+"Rq4K,"
+"Run the desired "".bat"" file from cmd with PowerRun (by dragging to the executable). You must reboot for the changes to take effect."
+"S, pjo"
+"S,$mTM"
+"SP]a$,8P9uz"
+"SecurityAndMaintenance.png"" ""C:"
+"SecurityAndMaintenance_Error.png"" ""C:"
+"SecurityHealth"" ""C:"
+"SecurityHealthAgent.dll"" ""C:"
+"SecurityHealthCore.dll"" ""C:"
+"SecurityHealthHost.exe"" ""C:"
+"SecurityHealthProxyStub.dll"" ""C:"
+"SecurityHealthService.exe"" ""C:"
+"SecurityHealthSsoUdk.dll"" ""C:"
+"SecurityHealthSystray.exe"" ""C:"
+"SecurityHealthUdk.dll"" ""C:"
+"Sgrm"" ""C:"
+"SgrmAgent.sys"" ""C:"
+"Some security apps flag this app as a virus because of the way the "".exe"" files are created. Download with "
+"Starting with Defender 12.6.x , some versions are considered as virus, some are not (its a bug from me, so do not file for this)."
+"Storage Health"" ""C:"
+"T$,E3E3HHD$ "
+"T$,H"
+"T-9kC"""
+"TG,R"
+"TW-T7,qg"
+"This application removes / disables Windows Defender, including the Windows Security App, Windows Virtualization-Based Security (VBS), Windows SmartScreen, Windows Security Services, Windows Web-Threat Service, Windows File Virtualization (UAC), Microsoft Defender App Guard, Microsoft Driver Block List, System Mitigations and the Windows Defender page in the Settings App on Windows 10 or later."
+"This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."
+"Ty_T3LdY""<a/F_"
+"U, or "
+"U,> >"
+"U,LYu"
+"UC5z,G7"
+"U[x"""
+"Ue:>""Ah"
+"Un""B"
+"Un,m5z:lp"
+"V""T "
+"V,-""cd"
+"V,6Bx"
+"V,PV"
+"V4u[,a"
+"VjRs4'-PV"""
+"Vl2}APG"""
+"W(G""O"
+"W.""_u)'UY"
+"W28,I"
+"W>x,"
+"WBy0/1,"
+"WH H,"
+"WH HHD[ D_ C$G$C(G(C,H"
+"WH ILH(t""H"
+"WH0HHtF,qHHH"
+"WQcL"""
+"WVW,"
+"WXXHdC3G,"
+"WXf,"
+"WbvF,"
+"WdBoot.sys"" ""C:"
+"WdDevFlt.sys"" ""C:"
+"WdFilter.sys"" ""C:"
+"WdNisDrv.sys"" ""C:"
+"WebThreatDefSvc"" ""C:"
+"WiSiPolicy.p7b"""
+"WinSxS"" -Include "
+"Windows Defender Advanced Threat Protection"" ""C:"
+"Windows Defender"" ""C:"
+"Windows Security Health"" ""C:"
+"WindowsDefenderApplicationGuard.wim"" ""C:"
+"WindowsDefenderApplicationGuard.wim"") do PowerRun cmd.exe /c rmdir ""%%"
+"Wp,="
+"Write-Host ""Combined registry file created at: $outputFile"""
+"WsW""8j"
+"Wuxp"""
+"WzC2""2"
+"X""CH"
+"XR/"""
+"Y$""p"
+"Yilkg'xtp4,p-"
+"You can create an ISO with Windoows Defender and Security Services Disabled. It's easy, so this is a fiie which it can helps you."
+"Z""6Rk"
+"Z""H$0"
+"Z""z"""
+"Z%Fl,!"
+"Z,9O,"
+"Z:""f"
+"ZF@"""
+"ZW<P"""
+"Zli""q"
+"Zpk"""
+"[""==6"
+"[""COo"
+"[""L])I5["
+"[>h, a<ndM=O%nIpi"
+"[Ay=, "
+"[Jc"""
+"[r9MK,{QIJ"
+"[sO"""
+"])],"
+"],Wu"
+"]3'Ku,"
+"]H,f"
+"]L""}"
+"]a,8"
+"]}m,"
+"_$VK,X'"
+"_.(.,"
+"_..)"""
+"_6i,<"
+"_=<m"""
+"_@SH H"""
+"_D""sd"
+"_XD$,"
+"a!G zm)0,I"
+"a""Jg%"
+"a""K8b,"
+"a""c%tv!ZE"
+"a,XeRy"""
+"a@>z,c"
+"aF,n"
+"af,{w"
+"b,oJ"
+"b/F"""
+"bB!5(j!,RDb,!oQ@3"
+"bC!!u"""
+"bVZlZ"""
+"bcastdvr"" ""C:"
+"b{q,w-cw>"
+"c23:)Z("""
+"cBkR%6,@P"
+"cJ,@"
+"cPq"""
+"cR!vX,EV"
+"cb>,>6"
+"ckQ< """
+"cp7i""Vq"
+"d"" /s /q"
+"d""8R"
+"d""KI"
+"d$0D$("""
+"d)!Qr,gn!"
+"d)6u{Atx""0'l"
+"d,=("
+"d,>oA@"
+"d,Fs1ut_9"
+"d,IY"
+"dA!b""V<"
+"dX r' 2,y6]so"
+"dddd, MMMM dd, yyyy"
+"dp0"""
+"dr],"
+"eMNGQLLF=<zp<,"
+"ePHt,H0"
+"eW0i"""
+"eX""mfB}>>A)"
+"e]z,uIW"
+"echo ------ Defender Remover Script , version %defenderremoverver% ------"
+"echo After confirmation of Removal, your Device will RESTART!!"
+"echo If you PC have a Microsoft Pluton Chip, you can disable from BIOS anytime. (This script removes the integration of Pluton Chip Support and Processing from Windows.)"
+"echo [A] Remove Windows Defender only, but keep UAC Enabled"
+"ep,RO':32Y8}DDvd"
+"er5,"
+"eu.rm"""
+"f,Xv"
+"f-""v"
+"fD9,"
+"fD9,Gt7Hc"
+"fD9,Ou"
+"fDLD}"""
+"fDt@HHcIf8"""
+"fHiT9Kf,uT$ejt"
+"fKn"""
+"fNt2fGt,fOt!fHt"
+"fd7u=OW"""
+"fe8,dnY"
+"for %%d in (""C:"
+"g is not followed by a braced, angle-bracketed, or quoted name/number or by a plain number"
+"g/TV"""
+"ggG,FFF"
+"gu>""u"
+"h)HJh[8"""
+"h,%L"
+"h/pc9J,<d"
+"hY:,qp,"
+"ht""Gk1B>"
+"i,oV"
+"i-S""F"
+"i26V""@"
+"iI,QW("
+"j""d2e"
+"jV,HdG"
+"jaw$K""pP"
+"jt!,YcK"
+"k""suk"
+"kMs)""TDW5"
+"kdD,NMU"
+"kggo"""
+"kj,U"
+"kr,B"
+"l,1("
+"l,XCE9"
+"l,hu"
+"l,mUHiV"
+"l=sm"""
+"lX("""
+"language="""
+"level=""requireAdministrator"""
+"li,)3c"
+"lo,Y'"
+"m.,exyR"
+"mH""$$"
+"mPf:ybt, T"
+"mU""/MA"
+"mfn""1@"
+"mg""rD"
+"mq""r,0"
+"msseccore.sys"" ""C:"
+"n""n[.FMi6Cx8"
+"n=:qL-TXEI""X5"
+"nA,g"
+"nI""r"
+"name=""Microsoft.Windows.Common-Controls"""
+"nhU,"
+"o,SSwnuaeB"
+"o0vRHcG,HM"
+"o0vbHcG,HM"
+"o2X"""
+"oAkD"""
+"oI](S,B"
+"oLB!"""
+"oh8""i6z[4"
+"or70""c"
+"p, and "
+"p,.x"
+"p,HL$PH"
+"p,MVzw"
+"pG.4j("""
+"pK8q "":Q{"
+"pf]Vv""$"
+"pmo,u(X"""
+"pqrstuvwxyz{$--%""!' "
+"processorArchitecture="""
+"publicKeyToken=""6595b64144ccf1df"""
+"pushd ""%CD%"""
+"q!,%"
+"q,eoPI"
+"q2c8""{="
+"qMk.,(m})Ux"
+"q_""NLX$"
+"qe""%"
+"qq""h"
+"qw0"""
+"r""LL$P"
+"r""QENz)RDs6"
+"r,B<Vm"
+"r,Dt$0T$(DD$ A"
+"r9D$,"
+"rr,5"
+"ru3,diULAx"
+"s""D$"
+"s""D{"
+"s%68h[KB""gOq"
+"sHzA:t,H"
+"sK[h"".dU"
+"sWn,I"
+"smartscreen.dll"" ""C:"
+"smartscreen.exe"" ""C:"
+"smartscreenps.dll"" ""C:"
+"t!f9""u"
+"t""@-t"
+"t""AHou"
+"t""D DD@"
+"t""H9A8t"
+"t""HHc"
+"t""Lk"
+"t,-t'C"
+"t,5$"
+"t,E@"
+"t,HL$"
+"t,HL$8H"
+"t,HT$HHCHL$PH"
+"t,L$"
+"t,L9-n"
+"t,fAOt fAHt"
+"t,t!Hc"
+"t1f""t"
+"t6H,HT$@Ht"
+"t=Z,}C"
+"t@L$@t""LHKpHRL$@H"
+"t@fD3q"""
+"tFLD$ HI3HT$ E3Ht""IM"
+"tWu5,8"
+"tX<tT<tP<_tL<tH<tD<t@<t<<t8<t4<t0<t,<t(<t$<t <t"
+"tYHL$ G,ID$"
+"t_5,"
+"tf,tf=tf(tf)tf]tftp"
+"thB,Qt"
+"to,KxlYybD"
+"tp,_"
+"type=""win32"""
+"t{""N$"
+"u""=q"
+"u""AG"
+"u""D$"
+"u""HG"
+"u""HM"
+"u,9X"
+"u,D9'"
+"u,E:t""LF"
+"u,H$"
+"u,HI"
+"u,eD8>D"
+"u3_o,,"
+"udMN,"
+"uiAccess=""false"""
+"ujHK,"
+"v""3HG8HH"
+"v""EN"
+"v""]b"""
+"v""{("
+"v,Hl$hDE3HBHU"
+"v0""bR_K0"
+"veYJ""t m"
+"version=""6.0.0.0"""
+"w""<g"
+"w""E:"
+"w""Lh,B"
+"w""UI%A1"
+"w""ny"
+"w,LL$hHH!Hu:Ht"
+"w2{lPXw,"
+"w<P!"""
+"wd"" ""C:"
+"where {$_.PackageFullName -like """
+"where {$_.PackageName -like """
+"wisipolicy.p7b"""
+"wscadminui.exe"" ""C:"
+"wscapi.dll"" ""C:"
+"wscisvif.dll"" ""C:"
+"wscproxystub.dll"" ""C:"
+"wscsvc.dll"" ""C:"
+"wzQLMZx,f"
+"x""Jzup"
+"x""lvm"
+"x,HK"
+"x9l,5"
+"x>a""7"
+"xOyw_q""4"
+"xT""I"
+"xYe5,"
+"xml version=""1.0"" encoding=""UTF-8"" standalone=""yes"""
+"xq{,21@t5"
+"xu""IF"
+"y""3 ."
+"y""PS)"
+"y1mI"""
+"y6){@N,)"
+"yI""7Lv"
+"y{l8)v,N"
+"y}$x@""-"
+"z"">hKb"
+"z""u "
+"z1,>VaCCi9"
+"z<I,"
+"zJn%5vI"""
+"zdd"""
+"zi,:"
+"zpcj"""
+"{""TUB"
+"{""X4"
+"{.J"""
+"{:'""B"
+"{@RJ:e,Ag"
+"{H,1/'eTz("
+"{p,Cw8u"
+"{t'WB"""
+"{t]xn""K!"
+"}""HL$8DE)HL$"
+"}'b9"""
+"},Hw@H"
+"},ON"
+"}=,<"
+"}B/,"
+"}E%f/"""
+"}H%[,"
+"}K""Z"
+"}UVVARCeTj7""Xr [p"
+"}ZA,a8grXDi"
+"}u""Ex"
+$ $a
+$ %3
+$ 'H
+$ 'I
+$ .LH
+$ .]
+$ 1q
+$ 33
+$ 33H</
+$ 8$
+$ :i
+$ <}
+$ =MHHL$h
+$ =SA
+$ @:
+$ ADXE
+$ AT 
+$ AT0
+$ ATAVAWH 
+$ ATH Hy
+$ ATH YHi
+$ ATH0z
+$ ATH@HH
+$ At
+$ B$
+$ D$$
+$ D$$D
+$ D$$D)
+$ D$$H
+$ D$(
+$ D$0D$tD$4D$xD$8D$
+$ D=
+$ DD$4H
+$ DM
+$ E3E333
+$ E3E333>
+$ E3E333AH
+$ E3E333BHH
+$ E3E333Mm]K
+$ E3E333TCHqczK
+$ E3E333m
+$ E3E3IJH$0
+$ EuIH
+$ H$
+$ H$ 
+$ H(
+$ H(2
+$ H(@SH Hr
+$ H(H
+$ H(H$P 
+$ H(H(H
+$ H(H(HcA0
+$ H(H(y
+$ H(HI
+$ H)H
+$ H8HL$8D
+$ H@[H
+$ HAC
+$ HD
+$ HDA
+$ HE3L$ 
+$ HH
+$ HH/DN
+$ HHA
+$ HHH
+$ HHIt
+$ HHL$0x
+$ HHX
+$ HHt
+$ HLISIKE3
+$ HM 
+$ HT$
+$ HT$(D
+$ HY
+$ HYH
+$ HcHH
+$ Hl$(Ht$0H
+$ Ht$0Ht$8Ld$(E3'IW
+$ Ht$8H
+$ Ht$@H
+$ I!{I!{I!{HH
+$ ID$
+$ IE
+$ IH
+$ IM
+$ It
+$ L$
+$ LD$
+$ LHI{I{HI{LD$8
+$ LL$HEI
+$ LMHI
+$ MM
+$ MtU
+$ Muf
+$ NH
+$ OA
+$ P(A
+$ QIM
+$ RQ
+$ UATAUAVAWHPHB
+$ UVWATAUAVAW0
+$ UVWATAUAVAWH03LLHL$xMMHH$
+$ UVWHPAAH
+$ WH0D$hIH
+$ YHH
+$ [uhH
+$ _D
+$ _L
+$ gH$
+$ hH
+$ jt
+$ lT{
+$ s2
+$ s3f9$
+$ tt
+$ ue
+$ xHcX
+$ y9$
+$!7_@M
+$!HI
+$$(D
+$$3Hf
+$$A:u
+$$HH
+$$HHA
+$$HHXDN
+$$HL$0IA
+$%c_E
+$((3
+$(AAH
+$(ADDAL
+$(ALD$0D
+$(D!L$ L$0H
+$(D$
+$(D$ 
+$(D$ >H
+$(D$ X
+$(D$ kDG
+$(D$0
+$(D$<
+$(D$@
+$(DD$ 
+$(DD$ A$D
+$(DL$ E
+$(DT$ 
+$(DT$ <Z
+$(Dd$ D3A9
+$(Dt$ DHHu
+$(E3fE94
+$(HD
+$(HD$ 
+$(HD$ H
+$(HD$ p@:u
+$(HD$ tH
+$(HH
+$(HHD$ 
+$(HHD$ >H
+$(HHD$ H
+$(HHD$ KH
+$(HHT$8D
+$(HL$ HT
+$(Ht$ 
+$(Ht$ )TLE
+$(Ht$ 8
+$(Ht$ J5HDt$(H
+$(Ht$ g
+$(Ht$ mE3A
+$(L$ H
+$(L$X
+$(LD$ 
+$(LD$ >3
+$(LH
+$(LL$0LD$8HHD$ u
+$(LcD
+$(Ld$ 
+$(Ld$ TL$
+$(Ld$XH
+$(d$ 
+$(l$ 
+$(rIA
+$(t$ 
+$-Jg
+$-qdY.
+$0 -HI
+$0-H
+$0.u
+$0/7u
+$03DT$
+$03DT$XD$0
+$03H
+$03H _@S 
+$03H _@SH@HB
+$03H _H
+$03H _H8Ht
+$03H _HHX
+$03HK
+$03HO
+$03IA3A
+$03Ld$HLH9Y
+$04H
+$04I
+$05T
+$0:tl9
+$0:u
+$0>F
+$0@4
+$0@@
+$0@A
+$0@H _H
+$0@H _HHX
+$0@p
+$0@p Ht$8H _Mt
+$0A9k
+$0AC
+$0AQ
+$0D$(!
+$0D$(A
+$0D$(AHHl$ D
+$0D$(D
+$0D$(DL3ALt$ 
+$0D$(E3D
+$0D$(H
+$0D$4
+$0D$4H
+$0D$8
+$0D$8D
+$0D$8H
+$0DAA
+$0DADl$(Dt$ 
+$0DD$PHt$(H
+$0DL
+$0DL$8E
+$0DL3A
+$0DL3AD
+$0DT$(D
+$0D_0HH _H
+$0D_@HH _H
+$0E33
+$0E3E3
+$0E3H3D$( 
+$0E8
+$0E9c
+$0G<HH _H
+$0H 
+$0H A
+$0H [
+$0H [H
+$0H [HG0H{8HC03HG0H
+$0H _
+$0H _3H
+$0H _3H9
+$0H _@SH 3Hpt
+$0H _@SH AHH
+$0H _@SH H
+$0H _@SH HA
+$0H _@SH HB
+$0H _@SH HEHH [HHX
+$0H _@SH HH
+$0H _@SH HHHHH [H
+$0H _@SH HHI
+$0H _@SH HHu
+$0H _@SH HHz
+$0H _@SH HrHJZHH [H
+$0H _@SH H{H[HH [H
+$0H _@SH LHt
+$0H _@SH a
+$0H _@SH qHHu
+$0H _@SH y
+$0H _@SH0ID3DD$ DB
+$0H _@WH HH
+$0H _A8
+$0H _AH
+$0H _H
+$0H _H%(
+$0H _H%/:
+$0H _H%0
+$0H _H(
+$0H _H(73
+$0H _H(7bt
+$0H _H(==
+$0H _H(H
+$0H _H(HHH
+$0H _H(Hz
+$0H _H(Mt
+$0H _H(y
+$0H _H8
+$0H _H8HL$ HT$ H
+$0H _HA
+$0H _HG
+$0H _HH9Q
+$0H _HHH=d<
+$0H _HHX
+$0H _HI
+$0H _HLH L@
+$0H _HMZ
+$0H _HO
+$0H _Ht
+$0H _I3H _
+$0H _KH
+$0H _LA
+$0H _LD$
+$0H _LHHd$
+$0H _LI[
+$0H _X
+$0H _f0
+$0H _rE
+$0H$
+$0H(
+$0H(@SVWATAUH0HB
+$0H(H
+$0H(HF
+$0H(Ht$
+$0H(I3u
+$0HA
+$0HB
+$0HBb
+$0HD$(H$
+$0HD$(LL$pA
+$0HD$(LL$pD3
+$0HD$8
+$0HFHt$8H _H(H
+$0HG
+$0HH
+$0HH 
+$0HH [3HB8HB0HH [@SH HHI
+$0HH _H
+$0HH _HHX
+$0HHHt$@
+$0HHR0H
+$0HHt$88
+$0HHt$8H _H
+$0HHt$8H _HHX
+$0HK
+$0HL$ H
+$0HL$H$
+$0HO
+$0HT$(H$
+$0HT$(HL$
+$0HT$0H
+$0HT$0HL$p
+$0HW
+$0HY
+$0Hl$83H _H
+$0Hl$83HH9h
+$0Hl$8>Ht$@H
+$0Hl$8H
+$0Hl$8H _H
+$0Hl$8H _H8u
+$0Hl$8HHt$@H _H
+$0Hl$8HHt$@H _H(HI8HHt
+$0Hl$8Ht$@
+$0Hl$8Ht$@3H _@SH HB
+$0Hl$8Ht$@3H _H
+$0Hl$8Ht$@3H _H(HB
+$0Hl$8Ht$@3H _HHX
+$0Hl$8Ht$@H
+$0Hl$8Ht$@H _
+$0Hl$8Ht$@H _3HHX
+$0Hl$8Ht$@H _@SH
+$0Hl$8Ht$@H _@SH =M
+$0Hl$8Ht$@H _@SH0HyX
+$0Hl$8Ht$@H _A{
+$0Hl$8Ht$@H _H
+$0Hl$8Ht$@H _H%%
+$0Hl$8Ht$@H _HHX
+$0Hl$8Ht$@H _HcH
+$0Hl$8Ht$@IHHHH
+$0Hl$8Ht$@Ld$HE38
+$0Hl$@Ht$H3H _H
+$0Ht
+$0Ht$(H8y
+$0Ht$8
+$0Ht$82H _3
+$0Ht$82H _LHX3MCISICIC
+$0Ht$83G
+$0Ht$83H _@SH HB
+$0Ht$83H _@SH HJ
+$0Ht$83H _DB
+$0Ht$83H _H
+$0Ht$83H _H(H
+$0Ht$83H _HHX
+$0Ht$83HG
+$0Ht$83f:
+$0Ht$8@
+$0Ht$8H
+$0Ht$8H _
+$0Ht$8H _(
+$0Ht$8H _3G
+$0Ht$8H _3H
+$0Ht$8H _@SH HHHH [H
+$0Ht$8H _A
+$0Ht$8H _H
+$0Ht$8H _H%
+$0Ht$8H _H(
+$0Ht$8H _H(-p
+$0Ht$8H _H(HI
+$0Ht$8H _H(Ht
+$0Ht$8H _HHX
+$0Ht$8H _HI
+$0Ht$8H _Ht$
+$0Ht$8H _LE
+$0Ht$8H _McE3I
+$0Ht$8H _ff
+$0Ht$8H _qSH
+$0Ht$8HH _@SH H
+$0Ht$8HH _HHX
+$0Ht$8L
+$0Ht$@3H _H
+$0Ht$@@h@Hl$8H _H
+$0Ht$@H
+$0Ht$@H _@SH HHL$0
+$0Ht$@HcHl$8fD$GH
+$0Ht$PHl$HH
+$0Ht.IHD$8H<Ht
+$0I(
+$0IE3E33AD$(
+$0IH
+$0ILL$@EHH
+$0IM
+$0JLHxH
+$0K]:
+$0L$
+$0LA
+$0LD$
+$0LD$@H
+$0LD$h$
+$0LE
+$0LG
+$0LHD$8HHD$ H
+$0LL$
+$0LLHHL
+$0Lt$(Lt$pIM
+$0Lt$8A
+$0MIL
+$0MK
+$0P(3H(HHH
+$0THBHW
+$0_H
+$0d$(
+$0dH
+$0f8H _
+$0f9
+$0f95y
+$0fy
+$0l$8Hl$@Dt$aD$H
+$0l0u8HL$xHHT$xH
+$0nH
+$0rH
+$0tuL
+$1tGAWrD
+$2fA
+$2k/ZtmV
+$3H D
+$3H$p
+$3pC
+$4$A:t
+$4D$0
+$4D$<
+$4HT$0L$
+$4L$p
+$7Fu0
+$8'40
+$82thHT$HHL$0-HL$H5-d$H
+$83AE2DL$4
+$83H _
+$83H _H
+$8D$0
+$8D$0$
+$8D$0AD$0
+$8D$0DL$(DH
+$8D$0H$
+$8D$0L$(T$ H
+$8D$D
+$8DD
+$8Dl$0)H
+$8Dl$0D$(Lt$ H
+$8Dt$0DDl$(Dd$ iH
+$8Dt$p1L
+$8H 
+$8H A
+$8H [Hy
+$8H _
+$8H _@SH 
+$8H _@SH H
+$8H _@SH@HL$ 3
+$8H _H
+$8H _HA
+$8H _HHX
+$8H _Ht$
+$8H$
+$8H$h
+$8H/Hl$@H _H
+$8HD$0H$H
+$8HL
+$8Hl$0HN
+$8Hl$@>HL$0HD$8
+$8Hl$@H _f0
+$8Hl$@Ht$HH _@SH B
+$8Ht$0HC
+$8Ht$0HH [A
+$8Ht$@H
+$8Ht$@H _H
+$8Ht$@H _H%
+$8Ht$HH _H
+$8Ht$HH _qH
+$8Ic
+$8L3H
+$8LD$0HT$PDH
+$8LD$<H
+$8SHH
+$8T$0H
+$8T$4L$<
+$8d$0
+$8fA
+$8fA0
+$8fD$@D$(
+$8l$0D$(H
+$8tCL$8YDD$83HH
+$8vA
+$:bu{m
+$<50DL$0
+$<D$@H HH
+$<DL$4D
+$<DL$8E
+$<DL$8H
+$<L$ D
+$<tDH$
+$<tH
+$<tH$
+$<tL$
+$<u1EA
+$<uAE
+$>8%de
+$>ArBi!
+$@)D$DH
+$@-DF
+$@-H
+$@2@SH@HH
+$@3H A]A
+$@3I[0Ik@IsHIA_A
+$@9l$L
+$@@8=
+$@@I[0Ik@IsHIA_A
+$@A9k
+$@A@
+$@AAHH
+$@ACILI
+$@AHH
+$@AS
+$@Au
+$@D$8
+$@D$8$
+$@D$8d
+$@D$DID$
+$@D$H
+$@D8t$
+$@EtD[
+$@H 
+$@H A
+$@H A]A
+$@H A]H
+$@H _
+$@H _H
+$@H0A
+$@H0_@SH HH
+$@H0_@SH y
+$@H0_H
+$@H0_H%7
+$@H0_H(H:
+$@H0_HHX
+$@H0_LA
+$@H0_LHH
+$@H0_LLIu
+$@HD$PHC
+$@HD$Xq@:u
+$@HE
+$@HG
+$@HH
+$@HH0_
+$@HH>
+$@HHCA
+$@HHDD3H
+$@HHDv
+$@HHl$HHHt$PHH
+$@HI
+$@HL$0H
+$@HL$0H9
+$@HL$8M
+$@HQ0Ht$
+$@HT$
+$@HT$0HL$X
+$@HT$@HL$ @8=>F
+$@HcH
+$@Hl$8Ld$HH
+$@Hl$HH
+$@Hl$HH A
+$@Hl$HH A]_
+$@Hl$HHc
+$@Hl$HHt$P
+$@Hl$HHt$P3H A]A
+$@Hl$HHt$P3H0_@SH HxHH [H(HB
+$@Hl$HHt$P3H0_H
+$@Hl$HHt$P3H0_HHX
+$@Hl$HHt$P@H
+$@Hl$HHt$PH
+$@Hl$HHt$PH A
+$@Hl$HHt$PH A]A
+$@Hl$HHt$PH A_A
+$@Hl$HHt$PH0_
+$@Hl$HHt$PH0_H
+$@Hl$HHt$PH0_H(7qH
+$@Hl$HHt$PH0_H8A
+$@Hl$HHt$PH0_HH
+$@Hl$HHt$PH0_HHX
+$@Hl$HHt$PH0_L
+$@Hl$P3H A
+$@Hl$PH A
+$@Hl$PHt$XH A]A
+$@Ht HC
+$@Ht$H
+$@Ht$H3H _H
+$@Ht$H3H0_H
+$@Ht$HH
+$@Ht$HH _@SH HN
+$@Ht$HH _H
+$@Ht$HH0A
+$@Ht$HH0_
+$@Ht$HH0_@SH HtHt
+$@Ht$HH0_DL$ UATAUAVAWH@Hl$0H]@HuHH}PH
+$@Ht$HH0_H
+$@Ht$HH0_H(Hu
+$@Ht$HH0_H(LL$@LD$HH
+$@Ht$HH0_HHX
+$@Ht$HH0_HHX D@
+$@Ht$HH0_HT$
+$@Ht$HH0_ff
+$@Ht$PH
+$@Ht%
+$@Ht<
+$@I[0Ik8Is@IA_A
+$@I[0Ik@IsHIA_A
+$@I[8Ik@IsHIA_A
+$@I[8Is@IA_A
+$@Ik8Is@A
+$@LD$0HT$PH
+$@Ld$HH A]H
+$@Ld$HH A]HcH
+$@Ld$XL
+$@Ll$ H8M
+$@fHt$PA
+$@ri'A
+$@u8@
+$A@8s
+$AD$
+$AHD$@L$
+$AIcH
+$B@8s
+$D0H$
+$D39D$Ptu
+$D8$
+$DH$
+$DHHuw
+$DHS
+$DL$4DD$0
+$DL$4DD$03H
+$DT$4Lc
+$DT$@Lc
+$E3AHcI
+$E3E333
+$E3E3AQ
+$E3HcH
+$E3HcI
+$E3IcK
+$E=N
+$ED$$A
+$Et$
+$G$1
+$H$ 
+$H$X
+$H0 
+$H0'
+$H0.
+$H05
+$H0<
+$H0=
+$H0C
+$H3H A
+$H=3
+$HD$ EL
+$HD$L
+$HD$LD)
+$HD$LH
+$HDt$@
+$HE3D3IkHH$
+$HH A
+$HH$
+$HH$ 
+$HH$HH$LL$ LHH
+$HH0_H
+$HH0_HI
+$HHD$ Ht$PHt$XHt$
+$HHD$0
+$HHD$0GTH
+$HHD$0HD$
+$HHD$@D$82
+$HHD$@Dl$8
+$HHD$LL
+$HHD$P
+$HHD$pHD$XH
+$HHD$xfDT$bH
+$HHH
+$HHH0_HS
+$HHHl$8H A
+$HHL$@A
+$HHT$@HL$p
+$HHcH
+$HHl$8H A
+$HHl$@3
+$HHl$P3H A
+$HHl$PH A
+$HHt$PH
+$HHt$PH0_@SH H=
+$HHt$PH0_H
+$HIzT$PAD$
+$HL$
+$HL$ _HL$ uHL$ L
+$HL$@TL
+$HL$LB
+$HL$P
+$HL$XL$
+$HL$h
+$HLF
+$HLH
+$HLd$PLd$xL$
+$HP-
+$HP1
+$HP8
+$HP=
+$HQE
+$HT$ H
+$HT$0HDTL[
+$HT$H
+$HT$P
+$HT$Ph
+$HT$p
+$HT$py
+$HcH
+$Hd$(
+$Hft$
+$Hp4
+$HpB
+$HrH
+$Ht$@!
+$Ht$THl$h
+$Ht>H2
+$HtGI
+$HtH
+$HtOvKHL$XLD$0
+$Hu!@
+$HvI
+$I$I
+$IAA
+$J513H[
+$JE3H
+$JH$
+$Kac
+$LDDI3
+$LE3
+$LLt$Pl$@
+$Ld$ L
+$McHcA
+$Muh[
+$O9XiB
+$OEM$
+$OV p{5msO
+$Oq}Q
+$Own
+$P)y
+$P0Ht$H
+$P3H@_H
+$P3I[ Ik(Is0E
+$P3I[ Ik(Is0IA
+$P3I[ Ik0IA
+$P3I[0Ik@IsHIA_A
+$P3I[@IkHIA
+$P:t
+$P@0
+$PAE
+$PAH
+$PBHF
+$PD$0D$(D$ x
+$PD$H$
+$PD$THT$PHDt
+$PD$X
+$PDD$LfL$0P
+$PDt$H
+$PH A
+$PH A]A
+$PH _
+$PH$
+$PH0
+$PH0A
+$PH0A]H8Hu'
+$PH0_
+$PH9
+$PH=6
+$PH@A
+$PH@_H
+$PH@_H(AD
+$PH@_L
+$PHD$
+$PHD$ LH
+$PHD$8
+$PHD$@H
+$PHD$H$
+$PHH2EE3HDg
+$PHHEL$
+$PHJ8HHf9
+$PHK
+$PHl$
+$PHl$X3H A
+$PHl$X3H0A
+$PHl$XH A
+$PHl$XH0A
+$PHl$XHt$
+$PHl$XHt$hH0A]A
+$PHl$XHt$hH@_H
+$PHp[I
+$PHp_D$@
+$PHp_HxH
+$PHt HC
+$PHt$
+$PHt$X3H@_@SH 3IH9B
+$PHt$X3H@_H
+$PHt$X3H@_HHX
+$PHt$X3H@_LH7H
+$PHt$XH@_@SH0
+$PHt$XH@_E3EA
+$PHt$XH@_H
+$PHxH
+$PIKI{I{I
+$PI[ Ik(Is0IA
+$PI[ Ik(Is0I{8IA
+$PI[ Ik(Is0I{8IA_A]A
+$PI[ Ik(Is0Mc8IA_A
+$PI[ Ik(I{0Mc8IA_A
+$PI[ Ik0IA
+$PI[0Ik8IA_A]A
+$PI[0Ik8Is@IA_A
+$PIc
+$PIf
+$PL$
+$PL$4
+$PL1J
+$PLd$(Ll$ LII
+$PLd$XH0A]H(=
+$PLl$XH0A
+$PMAHHHt{HI
+$PM{IDB
+$PT$H$
+$PT$HDL$@D$8$
+$Pd$H
+$PfD3fA
+$Pf}
+$Pl$Hl$@M D
+$PqKYmH
+$QqV0myN$9]hTtoZe
+$Ssfe
+$TAAA
+$TAE
+$TDL$Pu
+$TfE
+$Tku
+$V:$
+$VfA
+$WJ8
+$WPx
+$X$@
+$X3H
+$X3H A
+$X3H0A
+$XAc
+$XD9$ 
+$XD9K
+$XE3HT$
+$XH A
+$XH A]A
+$XH A_A
+$XH A_A]A
+$XH$
+$XH$h
+$XH0A
+$XH0_@WH HH
+$XH@_yC
+$XHD$8H
+$XHD$@HD$pH
+$XHD$PH
+$XHHEL$
+$XHL$0
+$XHL$PAH$
+$XHf
+$XHl$
+$XHt$
+$XHt$PH A
+$XHt.L%
+$XL$
+$XLcIc
+$XLd$
+$XfA
+$XfD3fA
+$Xs6H$
+$X}$H
+$]HF
+$_al>lx
+$b(W
+$bfE
+$choice
+$co7G
+$combinedContent 
+$combinedContent = @()
+$dAA
+$dAD
+$dAE
+$dDD$
+$dDT$
+$dH$x
+$dHc
+$dL$
+$f -O
+$fN]=Q
+$gMv
+$h$H
+$h)D$lA
+$h-4wY
+$h3H0A
+$h3H@A
+$h3H@A]H
+$h<==
+$hEE2f
+$hH$
+$hH0A
+$hH@A
+$hHD$
+$hHD$8
+$hHH
+$hHH@VH HH
+$hHI
+$hHP_H
+$hHl$pH@A
+$hHl$pHt$xH0A_A
+$hHl$pHt$xH@A]A
+$hHl$xH0A
+$hHt$pH0A_A
+$hHt$pH@A]A
+$hHt$pHP_H
+$hIH
+$hIHL
+$hIIL
+$hII{HI{I{I{
+$hIc
+$hLH
+$hLd$pH@A_A
+$hMILH9
+$hd$
+$hfD$r
+$hgHT$@AH
+$ht$@
+$icB.
+$lHH
+$mf)[
+$n7NL
+$oH_
+$p3$
+$p3A
+$p3I[0Ik@IsHIA_A
+$p8A
+$p<)
+$p@I[ Ik(Is0IA]A
+$pA)
+$pA9kXISPD
+$pAA
+$pAC
+$pACXHH
+$pAH
+$pAHK
+$pD$
+$pD8
+$pD9
+$pDD$
+$pDHo
+$pE2<<u
+$pE3A
+$pE3IHG
+$pE_
+$pH$
+$pH0A_A
+$pHD$X
+$pHDL$x
+$pHH
+$pHP_
+$pHcA
+$pHcH
+$pHl$x@HPA
+$pHl$xH@A
+$pHt$xH
+$pHt$xH@A_A
+$pHxHH
+$pID$8IE8HE0H
+$pIK
+$pI[
+$pI[ Ik(Is0IA]A
+$pI[ Ik(Is0I{8IA
+$pI[ Ik(Is0I{8IA_A
+$pI[0Ik8Is@IA_A
+$pI[0IkHIA
+$pI[8Ik@IA
+$pI[8Ik@IsHIA_A
+$pL$
+$pL$8
+$pLH$
+$pLT$hA$@
+$pLcJ
+$pkLI
+$pl$xH5<
+$puHHu
+$q<dX
+$sid
+$store = 'HKLM:
+$s}n
+$tIE]
+$users = @('S-1-5-18')
+$vn[
+$v{o!C[Z9WZ
+$x%H
+$x3A
+$x3H@A
+$x3HPA
+$xD$l
+$xDk
+$xDl$
+$xH$ 
+$xH0A_A
+$xH@A
+$xHD$
+$xHD$pH
+$xHHt$pH@A
+$xHI
+$xHPA
+$xHl$hf
+$xrO2H
+$xt$
+$y[)
+$zfDd$pDl$H
+${]o
+${kY
+%$TU
+%%)N
+%%t_x6c
+%'wll
+%)Lq]
+%.DfN
+%02X
+%0ba
+%14yRxX7T
+%3n @sGw
+%6})
+%9E=
+%9Pp
+%9V74T
+%<:f
+%<c]
+%=6I1
+%>g3ii0
+%@ea
+%A9H
+%AIcH
+%C7K.3U
+%GO:W
+%HD$pM
+%HHq%H
+%HT$ HUHL$ U
+%L$ 
+%L$p$IAA
+%LC=
+%N)$j
+%N-u
+%NCD
+%NHc
+%O(T
+%R5<
+%RDp
+%SAt
+%Sty{-Iy
+%W$fQ
+%X4Ux
+%Yh72Zp
+%[8PD
+%[Xf'
+%cIGFc_
+%dR %TQ %4P %
+%dV %TU %4T %
+%defo
+%eiM
+%f3!
+%fy:9-
+%hWo 
+%http://repository.certum.pl/ctnca.cer09
+%jHG
+%kljL
+%location of extracted ISO%
+%q $
+%q'bSxH
+%rLI
+%t5:/M%
+%tBQ
+%tsHT$H
+%uHHZC
+%wVEN1
+%x.Jg@J
+%}:<Q
+'%x7
+''$Ila18
+''d>
+'(]}j
+')_O
+'-V8
+'.8/>o.d9%hW
+'/8m
+'07LD2
+'0Ut
+'2Iff
+'2Sf
+'3@=s
+'5GH
+'5K7
+'62n
+'6U7 
+'6UzD
+'7Wu
+'7_a..
+'8@/
+'8pWf
+'9J-.../7!
+'<=C
+'<aWmT
+'=G=
+'>A7_B
+'>P)y
+'ADT$@EAL$
+'AHOD91u
+'AtG$:
+'DGl
+'E33Q
+'E3E3AQ
+'HK(H
+'HL$ 
+'HL$ NH
+'HcHfD9<Ft%H
+'J>$
+'JLHD$(H
+'Jfu
+'Ka0
+'L$ T$$
+'LL$ E3HH
+'O z
+'PGcW[2
+'QV-/113!
+'R3=I
+'WBJW
+'XR %s
+'ZjT
+'[DHrdU
+'a-@0
+'b7Or!7!
+'c)V
+'dXs<$<
+'dw$
+'f8$tcHHM'
+'fHt
+'gVaDOt8uPX
+'g[z
+'jVR
+'mHX
+'mra1
+'nEb7
+'pA8
+'q:g9P
+'tc56
+'ug{
+'vOM
+'vhF
+'xlX 
+'}).PSChildName)}
+( 'I0P
+( 8PX
+($2q
+(%D$THH
+('8PW
+('[6
+((A[wb
+()nB
+(.qa:m9fo
+(0Y@G
+(1NS
+(28HD$0H
+(3LcD
+(3p)
+(4$H
+(4.s@ZMUFI
+(9:o
+(9HL$@f
+(9Q[ykG
+(9e>
+(<On
+(>BInug6}@K8J
+(@8t$HtHD$@
+(@9O0
+(@[K
+(AD$
+(AK%e[
+(CI{8IA
+(DUa
+(Dt$ 
+(Dt$0Dl$(HL$ H
+(E3HO
+(F5w$
+(H8gf
+(H@L
+(HD$AH
+(HD$X:u
+(HDDo
+(HG0f
+(HGH$
+(HL$
+(HL$0X
+(HL$@HL$0LD$0HD$H
+(HL$HHL$8HD$P)H8
+(HL$HHL$8HD$PKH
+(HL$xHH
+(HT$LH
+(HXHXH
+(Hd$ 
+(Hl{nz
+(I%z
+(KT@=
+(L$(
+(LL$
+(LcL$
+(Ll(
+(Miq
+(NE)pv<t=9
+(OWpZ!
+(Ogvyg
+(PT3
+(QVB
+(RY]lQ8vcIL
+(SPC
+(W05z
+(WH$
+(WTSSHDG>@@@@H$
+(X@f
+(XZbY2
+(Xwe4
+(Zs_
+([wz
+(]Fy[
+(bhH
+(bs6-
+(dU_7M
+(gvf
+(hh-yaFX
+(jAK
+(j]Z
+(l<C!
+(lGg6O
+(mHT$(HmHL$ Hpt2HD$ f
+(mYmWF
+(mj3/_)f
+(null)
+(o{t
+(sIA
+(sIA]A
+(sIA_A
+(sI_HHX
+(sfF
+(t$ 
+(t$ 3H
+(t$ 3H0_@SH HJ
+(t$ 3H0_@SH0HB
+(t$ 3H0_H
+(t$ 3H0_HHX
+(t$ @
+(t$ G
+(t$ H
+(t$ H0[@SH0HB
+(t$ H0[H
+(t$ H0[HHX
+(t$ H0_H
+(t$ HA
+(t$ I
+(t$0
+(t$0H@[LSVWH
+(t$0H@_HH
+(t$@
+(t$@HH
+(t$@HPA_A
+(t$@HP_
+(t$@HP_H
+(t$@L
+(t$@OHU
+(t$PHL$0H
+(t$PHhH
+(t$PHhHhf
+(u!f
+(wHt
+(x@:
+(yHG@H
+(z(v4iPZU0
+(zu3O!
+({ei
+(}m-
+)!$}
+)$ Zt3O
+)$Ja
+)$oNk
+)%tn
+))[k
+))xF
+)0'0%
+)3IH
+)4$f
+)6X-
+)7KphK
+)7n@r
+)8MH@
+)9dG1V
+):MM<00l.
+)<=P]LK
+)@L9j
+)@LA
+)B'x
+)CxD$0G
+)D8$
+)D8%
+)GH41k@
+)HH'
+)HHDe
+)HHHH
+)HHX
+)HLHG
+)He<i
+)JKX
+)Mu)Q
+)Ogi
+)PGES
+)U_-
+)WTg
+)X!-b88
+)Xxfv79
+)Z}wY8
+)]BH4U
+)_a=lZmi
+)bHt
+)c)JB59
+)c@1
+)ce5
+)eApR@
+)eXI(
+)f1q'
+)f@T
+)h24P
+)http://repository.certum.pl/ctsca2021.cer0@
+)iMmbSlf)
+)kjJz()
+)l>Y
+)oDMS
+)pH$
+)pHB
+)pHHEf
+)pIH
+)pIHAh/HEEt$
+)pILLt$8
+)pL3fD-H$
+)pLrSvD
+)pno
+)qr8{Z
+)t$ 
+)t$ DB
+)t$ Hf
+)t$ Ht
+)t$ IAf
+)t$ IH
+)t$ d@Hf
+)t$ e
+)t$ f
+)t$0
+)t$0If
+)t$0f
+)t$@HL$ HHHL$ 
+)t$@IH
+)t$@If
+)t$@MMUHC
+)t$PL$
+)t$PLD$pf
+)t$PcHL$0H
+)t0xmcY
+)u-ss
+)uD$
+)xIHHD
+)ykYg
+){H/)
+)}1ITz</
+)}@nzoo
+)}O-:
+)}r@f
+- Attempt to initialize the CRT more than once.
+- Attempt to use MSIL code from this assembly during native code initialization
+- CRT not initialized
+- In Code Integrity Folder
+- In EFI Partition
+- In WinSxS Folder
+- In Windows Folder
+- f7
+- floating point support not loaded
+- not enough space for _onexit/atexit table
+- not enough space for arguments
+- not enough space for environment
+- not enough space for locale information
+- not enough space for lowio initialization
+- not enough space for stdio initialization
+- not enough space for thread data
+- pure virtual function call
+- unable to initialize heap
+- unable to open console device
+- unexpected heap error
+- unexpected multithread lock error
+-!xn
+-(A.1/
+-.Zh}DC6E
+-3WVShe
+-4_[
+-6BkPH{
+-9(7%8%4 =
+-@F%O-
+-@QpA!i
+-@SH HH0
+-@f@Sk
+-@i:3A
+-BG<
+-BS(Q
+-D3{
+-D8t$Ht
+-D9-j
+-DT!
+-DT!asin
+-DXp
+-DZI)7
+-EqwH
+-F%s]
+-HD$
+-HT$0H{t
+-HT$HH-HL$@H
+-IDD}
+-KKH6
+-L$P
+-M/AH5!
+-Md8Vg:LP
+-MkL
+-NekoV}!=
+-SOzH]
+-T>ra
+-TWcD57n!m
+-UwT
+-XHC
+-X}R$3CuxoVC
+-ZFM(wQJT
+-Zp!.rZ!nXA
+-[=0<!
+-[VvS
+-]digits must be followed by )
+-_[n
+-ay$TDXc
+-bH!
+-c_fhbQy%hc
+-dX'
+-eHx <
+-g>hO
+-n)O
+-n2E
+-n=n{!=Wi}
+-nQ1i
+-pGL6
+-pVT)j
+-u2/ C=
+-ub{R
+-wH$
+-xwf
+-zD$
+-}(S
+-}ZhD
+. 7%7
+. rW
+.'VS{_J
+.)M34@
+.0Sq
+.26ck
+.3Okdc
+.44S6
+.4kC
+.5]5
+.5bZ
+.5{6
+.9Y{gkY
+.=U[
+.>B>:D>n
+.C3H$
+.E3jHL$0HH
+.HHD
+.HH_HK(H
+.HL$0w
+.HL$x
+.HLI
+.HT$0HL$p
+.HT$@HL$P
+.HgG0i{
+.IcE3A
+.JHL$
+.KHH
+.Kbn
+.M=g
+.MX(el
+.PQ-ys
+.R8R
+.ROM>
+.RP)
+.SSzNjw
+.T31
+.T@]
+.W<zcT
+.WRW:
+.XxJ'm
+.b$wd
+.c2z2
+.cjSt
+.ebJ
+.gi}9
+.j1%
+.klI8U
+.nfGk
+.o.$(N
+.oLoVTM
+.okY
+.pT)
+.pdata
+.rP8<
+.rdata
+.s7mbR-PR8f>'{di
+.text
+.u%L$xHC
+.uZL
+.wZJl>
+.x$)
+.xCey
+.x]mLh
+.xldUs
+.xxf
+.zfJa
+.zr$!U2j[
+.{IlUYc{7/<
+/(8O
+//D%=
+/0ci5{yf
+/1(0
+/1rW%OS
+/3HY%vt
+/3Ht
+/3VV
+/4<j
+/4Z{
+/5<2No_:Y
+/6H8
+/8Y1
+/:HxH
+/:dFM]% 
+/=!(n
+/=r_l
+/@<1
+/@><'i
+/@lsC
+/AAA
+/D8s
+/E8$
+/FiQ$
+/Fwl
+/H$0
+/HD$X
+/HL$@HS
+/HLH
+/Hc$
+/Hd$ 
+/Hl$H
+/Ht$0H1Ht
+/LL$XDI
+/L[M
+/Lg.]M
+/MWO
+/NFg
+/OeT
+/Q[(
+/TPw
+/U=O
+/U}[
+/VIYk
+/Vo:
+/Yz2o
+/ZuxqyD7ifgR
+/cY)
+/dCiR-4
+/eRr
+/hWm
+/ilE
+/kb5b}qA4F
+/ngr8'<$1
+/ooY{
+/p'{K/.
+/pj@
+/q2gV_a6
+/s/T)
+/t>'>CG
+/v6f
+/xYHcIo
+/z4I
+/}ZoD
+0!HB
+0$HS
+0(L$
+0)<z
+0.Fu
+02METdP4
+02P:Xo
+06cAKy
+06t:
+085J]e
+08Cm3
+0:tg
+0A@8
+0BAD
+0BHG
+0B]/X
+0DA0
+0DE3D$0
+0E 9
+0E3A:
+0E3E33HHD$ 7H
+0EDT$D
+0E[m)
+0H ]@UH H
+0HD$0Ht$XD
+0HGH
+0HL$0
+0HL$HHL$8HD$P
+0HT$ .uLL$ HL$PL
+0Hc/H
+0HcG$H
+0I>$
+0Ie'
+0JJA%
+0L$P
+0LD$
+0LL$0LD$@HHD$@
+0LL$8LD$HID$ 
+0LL$PHt$ Ht$ IDAQ
+0LO$Ic
+0MB_
+0Q@2
+0QXH$@
+0U7WW 
+0VHH
+0Xw9cQ
+0Z= $
+0ZAKgIRuL
+0['9W
+0[2t%
+0cCb]F-M
+0h- =
+0jz8s
+0k0V1
+0k@Zx
+0o0ZX0V1
+0oHL$x
+0qyT
+0tB<
+0tH(
+0u82D=GX
+0ug!eSaFou:bK
+0xSg9wRz  
+0{L>
+0}o.Tm
+1 bu
+1!32Zdx
+1!rGj7L
+1$ Q
+1$s!
+1%GiWk
+1'blt
+1($M
+1((r
+1(5%=!cH$m
+1(:v
+1(t21
+1-79
+1. Download the packed script from [Releases](https://github.com/ionuttbara/windows-defender-remover/releases)
+1. Download the source code from [Releases](https://github.com/jbara2002/windows-defender-remover/releases).
+1. Mount the ISO and extract it into location.
+1/RQ
+1/gy5
+1000
+10H@
+11TC
+11rhUlv
+12<-
+12h'
+15F-HIT
+15S8E
+15]aAcyT
+16kDJu
+17yfnj
+18'3
+1=/=.
+1=XIA.=t 
+1>Gi
+1@[i
+1A6yuf{
+1Bs/m
+1Cu9}
+1D/-
+1DD$P
+1E9$1
+1F7v
+1FOg
+1Gw9
+1HL$0HHH-C
+1HT$xH3g
+1Hc-HU
+1J$j
+1J2)7
+1Ml$8ML.HH
+1N9d
+1QrOkKgO
+1RoH4
+1Rp2dQ
+1SF2
+1Us'K
+1XGAbBJ
+1Z1:=_x
+1ZJ)
+1b1Pr
+1b{H
+1d1Th
+1eO%(X
+1g[vt
+1ju0{[
+1k83g8cUi
+1ky)>4
+1lb[H
+1nmFSK
+1oTPmB/q-j
+1t<x
+1vHT$hHK
+1vy$0
+1xQB
+1y5x
+1zlu
+2 0'C6ZLH
+2 n[}
+2!O8hqG
+2%HL$ 
+2'D$1L$0D$0L$1
+2'Hd$ 
+2'zp
+2(sfmA[
+2)eA'g4!
+2-6a
+2. Choose the file 
+2. Open the 
+2.K!d
+2/l%m
+2000.
+200=_5pUOBoRu
+200d3
+20lE
+210519053207Z
+210519054246Z
+210531064306Z
+210815210000Z
+21A:t
+220202104127Z07
+24Ld$03H
+24eQ@o
+25Y!P
+26p 
+28!5(
+28cy
+290917064306Z01
+2:1(n
+2:Lo
+2<tVFd}9z
+2=5A9
+2@SH HH
+2C2JC
+2ClE2
+2DSX
+2EL$
+2FY9
+2GcMr5
+2H [H
+2H$@
+2H$E
+2H(@SHp
+2H(H
+2H(y
+2H0[HHHD$
+2H8H
+2HAHHv
+2HD$@H
+2HHH
+2HHX
+2HIhHt
+2HL$ 
+2HL$ 76HP
+2HL$0<
+2HL$8
+2HcF
+2Hl$@Ht$HH0_LL$ LD$
+2Htf
+2IZ9W
+2Ihi
+2J5S/
+2JrkawH
+2K>/Y_
+2L$ 
+2L$0
+2L$P
+2L9l$@
+2LHt
+2Li2H(IH
+2Mo6
+2N)L
+2NUT]
+2Ne)Fa
+2OON
+2T$0H
+2THB
+2T_9
+2WR]
+2XMkq
+2X_X9
+2XjD
+2YE3E3
+2Z6!SyW
+2ZPX
+2[.b
+2]>Ml_
+2]fQ
+2_UF
+2b'7
+2b(}8k[t
+2c(Rq
+2cE3IcI
+2cL$
+2d$h
+2dx$u
+2dx4a
+2dx@x
+2dxDp.
+2eHL$
+2gb3RfvnB
+2j/y
+2kH$
+2k}j
+2lC<-
+2nDH
+2nE=WF
+2oHL$P
+2pub
+2qQHH:QHBA:
+2u$J
+2x/aXq
+2xtGI
+2yx6>s w
+2{03
+2}rn
+3$6d4
+3%2_
+3%Q3H
+3( UV
+3-IC
+3-qR>
+3-ubHc
+3. Follow the instructions displayed
+3. Open the 
+3. Unarchive the file into a folder and run the Script_Run.bat.
+3.:.%:
+3.ba_.P
+3/$D4<O
+30% performance on old Intel CPUs)
+30.HK
+303DI9$
+30R{v
+320518054246Z0P1
+320731210000Z0
+33A9X
+33DB
+33DE
+33Dd$(HHD$ 
+33ELHc
+33GE3
+33HDB
+33Ht
+35d!
+36-<
+360518053207Z0V1
+36u}/0N-Y
+377 (not in UTF-8 mode)
+37[.
+37c(m
+39HcH
+39L$0
+39PE
+3:1H
+3:HcH
+3:t2H(
+3<MA
+3=Bl(
+3=Bz
+3=H8fL$
+3=bF
+3>KoN
+3@%Hx
+3@:t
+3@:u
+3@SH Hy
+3@SH I 
+3@SH0IHMH
+3@SH0MMu
+3A9X
+3A<$-Hc
+3A@@DB@n$
+3AAH@
+3ADB
+3AILL@=L
+3BHc
+3D$ 
+3D$ H8H
+3D$(
+3D$(!
+3D$('
+3D$0
+3D$@
+3D$P8
+3D$PH
+3D$THF
+3D$pIE
+3D=@SH ab
+3DAH
+3DB(
+3DD$8DT$0
+3DD3DB
+3DDt$(
+3DH$ 
+3DHDt$(
+3DHH
+3DJDB
+3DL$8DK
+3DMA
+3DT$0
+3Dd$(HHD$ 
+3Dl$ 
+3E3B
+3E3E333
+3E3E3HT$xE3E3
+3E3E3d$ 
+3E3IHLH
+3EE@OH$p
+3EEDd$(!t$ 39s
+3EF!$
+3ELHD
+3H [
+3H [@SH H!
+3H [@SH HB
+3H [@SH HH
+3H [@SH HJ
+3H [@SH Ht
+3H [@SH yH
+3H [H
+3H [H8t
+3H [HA
+3H [HHX
+3H [Ht$
+3H _@SH HB
+3H _@SH Iau
+3H _H
+3H _HHX
+3H!3
+3H!x
+3H$ 
+3H$0
+3H$@
+3H$x
+3H(@SH H
+3H(@SH HH
+3H(@SH HJ
+3H(@SH HboHHH [HA
+3H(H
+3H(H(A
+3H(H(H 3H(@SVWH HB
+3H(H(L$HMH
+3H(H(sH
+3H(HA
+3H(HHX
+3H(Hl$
+3H(Q
+3H.HGH
+3H0A]A
+3H0[HA
+3H0[HHX
+3H0]@UH HH
+3H0_@SH0HB
+3H0_H
+3H4AK
+3H8@SH0HI
+3H8H
+3H8H8Hu'uHd$ 
+3H9A
+3H9A(P
+3H9GX
+3H9Z
+3H9{@
+3H=@
+3H@8:t
+3H@[H
+3H@_H
+3H@_H(Hz
+3H@_LI[
+3HBHH
+3HC8HK(H
+3HD$
+3HD$ 
+3HD$ W
+3HD$(
+3HD$0
+3HD$0Ht$8Ht$@Ht$H
+3HD$8
+3HD$@
+3HD$@HD$0D$0
+3HD$H
+3HD$P
+3HD$PHd$ 
+3HD$PL
+3HD$X
+3HD$XHD$8H
+3HD$h
+3HD$p
+3HD$rHD$z$
+3HD$x
+3HD$xH
+3HDB
+3HDf
+3HE3
+3HH [H
+3HH$
+3HH3H
+3HH95
+3HH>H
+3HH@2@r
+3HH@82u
+3HHD$pA9/
+3HHF
+3HHH
+3HHHDBLI@P
+3HHL$hHHL$xIMD$
+3HHL$hHHL$xIMD$tD$PDD$HD$LD$
+3HHL$p
+3HHL@9>
+3HHX
+3HHd$ 
+3HHuIC
+3HI(DB
+3HIA
+3HIC!
+3HIL
+3HL$ 
+3HL$ 3nH
+3HL$ f
+3HL$$DBLD$ P
+3HL$0Ae<N
+3HL$8DB8
+3HL$8DB8D$ q
+3HL$8DLHL$0
+3HL$8H3
+3HL$@E3L
+3HL$@H
+3HL$@cHL$
+3HL$DD$@P
+3HL$PC
+3HL$xH3cH$
+3HL$xH3gH$
+3HO4DB
+3HOLDB@w-
+3HPA_A
+3HP_H
+3HT$XH
+3HT$p
+3HTjb>
+3HV H
+3HXHL$ H
+3HXKo
+3H]N
+3HaH
+3Hc 
+3HcH
+3HcH<H
+3HcP
+3HcW$H
+3HcfD
+3Hf8
+3HkbHL$@
+3Hl$X
+3Hp[H
+3Ht$8C
+3Ht$8H
+3Ht$@Hl$8H
+3Ht%fC
+3HtLc3HM
+3HxA_A
+3I9$
+3I9z9
+3IA_A
+3IB4N
+3IC 
+3ICMIICMKMC
+3ID@
+3IDB2
+3IGtG
+3IHH
+3IHHH
+3IHL
+3III$
+3IILcLL$ LD$0H
+3IIcHLB09
+3ILHHHDE83IHl$hLLLHxH$
+3IMLH
+3I[ Ik(IA]_
+3I[ Ik(Is0IA]A
+3I[ Ik(Is0I{8IA
+3I[ Ik0IA
+3I[ Ik0IA]_
+3I[ Ik0Is8A
+3I[ Ik0Is8IA]A
+3I[0A
+3I[0Ik8Is@IA_A
+3I[0Ik@IA
+3I[0Ik@IA_A]A
+3I[0Ik@IsHIA_A
+3I[@A
+3IcA
+3If$
+3If80uVHIf8xt
+3IfD$ HB
+3Ifff
+3Ik Is(I{0Mc8IA_A
+3KHT$XI
+3L%s
+3LD$pE3
+3LHH
+3LHHDs
+3LHt!H
+3LLLH9Y
+3LMp
+3LMt<E
+3LSRrV
+3LcD
+3Lf9
+3Lt$(Ld$ 
+3Lvc_
+3MDE
+3MDLw
+3MHDH
+3MHLDDH
+3MH[
+3MLD{
+3MLM
+3MMHLH]
+3Mc3HK6D]
+3Mkh
+3OD$(
+3Ovj
+3P(HK
+3P)@
+3P8H@[H
+3PA)I
+3Q3H
+3Q6l
+3QH tHK8
+3QH8HHHd$0
+3R 2
+3R6]'jMxD
+3R:t
+3RrsA2
+3UHM(HE
+3XM<!{e!
+3XOZ
+3YIFv2z $(Pwr//
+3Yd=qy
+3[%r
+3[<<
+3[lOlHH
+3]pER/.RvY
+3_oc=
+3b5DM]
+3b79i=C
+3bXvl
+3c/C
+3c4y-2
+3c71
+3d$6_fZ
+3eYi
+3ez>Z
+3f0H
+3f9Z
+3f9t$@t
+3fA9
+3fE9
+3fHu%
+3fL$8HL$8fD$:
+3gfffA
+3kdq
+3lBF
+3mH(H
+3mvy-7U
+3pY>7H!6
+3qHH
+3qY%)H
+3sHH [@SH HcH
+3t3A
+3t6Z
+3tHHC
+3uEH
+3ujD$
+3v9N--Et
+3xLcL$XL
+3y17.h
+3zH8H8LD$ LE33ZH8HHX
+3{Ap@49
+3{cE
+3}}H$
+4%Lap]$A>
+4%Rk
+4(MXYQ<2dNKM%
+4)Ks
+4. Open the 
+4/lW%Es
+42CDO.$vN
+4437!
+443eUeV
+46%{
+47[[1
+49B8V
+49HP
+4:d/ b{kS}N9A.DO0
+4<pf
+4==oTIH[F
+4>2D
+4@FN<1S9(
+4AHD
+4Bs5
+4CBR79
+4ChOY>
+4D{!HT$0H
+4EvC=
+4HL$@
+4IH/v
+4Kg5
+4MJb-
+4NNm2X
+4Nzce
+4QLU=
+4RfE9X
+4Tr%:$UF0j
+4T}A
+4W_3
+4XP0
+4XadddXH
+4[_1-<GxQ%
+4[p$ 531
+4_=g
+4_bmX
+4_fZv!far
+4a3x
+4aBL:x
+4h/v
+4h::(k
+4hAj
+4iaL}G_O
+4mM@:
+4o>w
+4pPzvD
+4t{>f5D
+4uUH
+4vHHiA
+4vW'(i
+4x)u
+5 tS
+5$!]R
+5$]R
+5%cE
+5'}0
+5(4u/ 
+5(IQ
+5-%dF]
+5. Open the 
+5.Na
+5/=W
+50<E
+50]:]H3@NbJ
+51pL
+52l8X
+53:t
+559Xo
+592At<
+59qTzZCF
+5:L$
+5<51
+5=so
+5>WRT
+5@<d
+5AHA
+5AIA
+5B2BYkXt!V
+5DHL$0H3HL$DDBLD$@P
+5ECG
+5FHnd
+5GMt
+5H)H$
+5HHK
+5HL$ /L$
+5HL$0E3HH$
+5HcIF
+5IB>
+5IHHHI
+5J0BCK
+5K[p
+5KzmLLL!
+5LHHHu
+5NA>
+5NLK
+5Ns5U%
+5OW/
+5PA/r
+5PH0[H
+5QD_
+5Rt-
+5SM]=]
+5W3D
+5WVJ@@@@@@@=B$
+5ZD$)
+5ZTwL
+5[)RU
+5[>y.
+5aucf
+5di'
+5kol4
+5m%mXJ
+5nO4F@
+5r2hk97
+5r@-i
+5ro9
+5sfF
+5s{C
+5t!fy
+5tH$
+5uCrw6/
+5v@KVlj4Bmc>D
+5yW:]P
+5yqn-
+6 10
+6!$@
+6$Be
+6%vs
+6'C91
+6):d
+6)EEEe7HKz
+6. Download the unnatended.xml file from repo in ISO_Maker folder and put it in Panther folder.
+6/.Bz1
+6/=CH@
+6/fBhJ
+6/q:T
+6/uK
+61%>t
+62%>M1-/R_
+64eN5
+68qD
+69rFNb
+6=X{-FL
+6>P[
+6@$ViHI<
+6@G4u
+6@mE
+6AA3Q=C
+6BXg
+6CHT$ HEg3
+6DHc
+6EL_
+6Fp77@
+6HL$pHL$@
+6HT$P
+6Hr%dy
+6I7Z
+6Jst
+6MLHLd$(Lt$ 6
+6NM[%nioEjl=DGU
+6QQx
+6Unor9
+6VJ0
+6VUUU$
+6VX[Y
+6WSrDB
+6X(Gi
+6_LyR/R7
+6b3p$.M=RPN
+6bFfd
+6bRK)>R
+6cCE[x
+6eMXJxpt
+6fahK
+6jHa
+6k$y
+6lH$
+6m6R
+6nhXp
+6qAA
+6rBHG
+6rfc
+6ry<
+6s5u>PT
+6tBHG
+6tWD
+6uZVZ
+6yfFq_l
+7%{OF
+7'C8lAg<O
+7't.)t-Xt
+7)Gz
+7-mW4
+7.w l
+7/_2
+700PP
+700WP
+706teIJN
+72tr9te
+73H@_
+76QG
+778Gy
+78epnB
+79k)w
+7:>[
+7:BoP8Z)B
+7:ba8'T
+7>cT
+7>uPLsASr)z
+7@!@
+7CSOri
+7D$X
+7DAjyp_U=
+7DlA%Wz
+7DqSr
+7DxF.
+7GVQ
+7H!Jhrx'q
+7HL$0L$(
+7HL$H
+7HM Ht
+7HS0HO0
+7HT$8I1HL$8H
+7HYF)T
+7I>1Iw
+7J}B
+7LHk
+7NV:
+7Nh/Rc)
+7P=p
+7S[S:H3q
+7Tky
+7Ugn
+7V)j-DkzB
+7_MBL5
+7dA>
+7dR{
+7dUu!9k
+7eDugFLJ
+7g:U)4
+7j6w
+7j8xP
+7jRw2[N
+7k1:x
+7l!n
+7l2ezk
+7l68X
+7mF82
+7ngdze46
+7noz
+7pm6
+7r3HD$88
+7s0_t
+7uFy
+7ur:
+7uy-
+7x=-
+7xHT$ H
+7xweEn5Vlp%
+7x}ij
+7{e}
+8 MM8
+8 sJ
+8!'cx
+8!HB
+8$%HYW
+8%PVr
+8'VT_ B[z)
+8'WoY9
+8/<%2cmMZ E
+80Ba%
+80tWDE
+82_q
+85dA.B
+86/O8
+8888766666433331114
+8888889!
+88iP
+89nl
+8:4M
+8<Z-p
+8<y@}
+8=f@v=
+8=gxj
+8@2HL$PlHL$0lH$
+8@6P
+8@SH HHI
+8@]w
+8A$HD$H
+8C$h
+8C-8
+8D$0t
+8D$0u
+8D$1u
+8D$2u
+8D$Xt
+8D${
+8D<mbyR
+8DHHHF
+8E8t$
+8FVTw
+8G<p
+8H8H
+8HD$H
+8HL$0HL$ HD$8
+8HL$P8HL$p8L$
+8HL$PHHD$XJtQHE
+8HL$PHL$@HD$X
+8Hd$ 
+8Iv!8K
+8K)5_
+8K:ZX5
+8KNj
+8KVG
+8M'u
+8MP=v}
+8OOOMMMM8882J
+8Pvf
+8Q_V5yye
+8ROggW
+8U)zj
+8UOv5'
+8W>RJ>
+8X8O[>6vA
+8XO@2(
+8_'GK0Y
+8c-$u-B3
+8csmu
+8gI<w
+8h%rLA
+8j82
+8kXuP
+8q'y3
+8t8q
+8tEA
+8tIv7()3d4os
+8vqRm _wNuB[
+8w:%Y_
+8xCH5CkP_/
+8xI!B
+8}Jc07
+9 5yJG
+9 My
+9(uY9i
+9-A1
+9.vTH
+90705
+90L!
+90Sn
+90qG
+91ABU
+930q
+94wMK
+96GlK
+97vDH
+9888777666544332224
+988886666663336
+988886666666
+988886669
+988888766666433334
+98<@Zn
+9:>$
+9:bgl
+9<1ZeKc0_
+9<@=]
+9<awX[(
+9=DS9
+9>x=
+9@}}ssJ
+9BB5r
+9CAw
+9D8{
+9DD$0H$h-
+9EkA
+9GJ}iH
+9H)w
+9HH9E3HH
+9HK H
+9HR3
+9HT$
+9HT$pH
+9IG8
+9IH){
+9LcE3
+9MY]
+9Olt
+9QaMR
+9R<N
+9R]9O
+9RlY
+9S u
+9S6Na_
+9SHO
+9SlU
+9T$X
+9Uwg
+9V[eg8
+9W'v:U
+9Wu(
+9YWQ
+9[-P!d
+9]mZ<
+9cQ=
+9e9T
+9fsk
+9j0BBkQ3v
+9l$$t
+9mFY
+9oji
+9pT4
+9q >
+9q<w/
+9t$P
+9vezgQ<(
+9wHT$@HlLD$@H$P
+9zCoN
+9{l5W
+: $H
+: w=
+:%S7!
+:%ew
+:%xq
+:'uYv1
+:(HL$
+:- JK
+:--------------------------------------
+:-Fdj_=2
+:-u]z(cc
+:.KY
+:26P
+:5G(
+:6<PG}{
+:98887779 
+:99887776664446
+:: Arguments Section
+:: part 2
+::pIS
+::{qJ
+:<HH/<A
+:<ea
+:>><:
+:@}c2.-
+:AN<
+:C]t
+:D$(
+:D4>)LN
+:DHS
+:DLIH
+:E01n)z_
+:E3H
+:E3HH
+:ED$
+:FH 8t
+:FQpt
+:H$K
+:HHH
+:Hd$8
+:Ht5Eu0H@
+:ID$
+:K>u(>jei
+:Lj W6NCM'
+:MHT$
+:P4R
+:QHP
+:RJBN
+:SDWv
+:SKsrvhcoeaFx
+:T/qQ
+:TtI
+:TtLR
+:UjXZ
+:VZo
+:W F
+:[WFm
+:[]n)f
+:[dW
+:]5P%
+:]tG]C
+:_H{
+:aHNyPv
+:a{Idc
+:b: 
+:bg04:rZ[
+:cXX
+:disablemitigations
+:d{NE
+:ffr
+:h3M8]$R
+:h>PF6>
+:jTq=%
+:jh}
+:kt[{5
+:lEQ
+:mtRn
+:q>7W8wbQ
+:qa2X8ZY
+:removeantivirus
+:removedef
+:t!Bt
+:tPYS
+:tpH
+:u)U
+:u2HHbn
+:uVHtWH
+:ulHHn
+:wCRIL
+:wDHA
+:yMN
+:zb>
+:{cLz
+:{ezfs>{C
+<!-- Identify the application dependencies. -->
+<!-- Identify the application security requirements. -->
+<!--The ID below indicates application support for Windows 7 -->
+<!--The ID below indicates application support for Windows Vista -->
+<!0o
+<$%j}
+<%tx<'tt<$tp<
+<'tR
+<(ms@'f
+<)ce
+<)ps]q
+<-@Q
+<.71=1MA
+</a>
+</application>
+</assembly>
+</compatibility>
+</dependency>
+</dependentAssembly>
+</requestedPrivileges>
+</security>
+</trustInfo>
+<4uCL
+<5cQ0
+<5jxw
+<6''D
+<6Kui>
+<9=u
+<9ae
+<<5 jv%_4oj
+<<98
+<<LADiV<p
+<<hY
+<=!O
+<=u(H$8
+<>=oD
+<>_6{d
+<@F1F>Y0
+<BG(
+<D'H
+<H$P
+<HH<A
+<HcI9
+<HcIF
+<Hz/
+<I<K
+<IYEV]U
+<KvE<M
+<KvG<M
+<KvJ<M
+<M:>j
+<N-u-
+<Nf!
+<NxSzM<Z.
+<O(/p
+<OAm0LHl
+<PC@
+<Qu-ILT$8A
+<Qx-
+<TCu4:
+<Tu<$
+<Yr0f
+<ZiY(V
+<[2t
+<[O>IT
+<]upt'<
+<application>
+<assemblyIdentity
+<bE2f
+<d!@
+<dZZTB
+<dependency>
+<dependentAssembly>
+<eSjto
+<eqJ
+<f]d
+<fbH
+<gmT
+<hvSH
+<lO%y
+<m0_
+<oOU}4Yi
+<program name unknown>
+<qm(w
+<requestedExecutionLevel
+<requestedPrivileges>
+<sNFUR6
+<security>
+<w%[5T
+<w16c
+<x/Kd
+<y'2IF
+<ylm>-
+<}1}
+<}GO
+= $((dir $store -ea 0 
+= $PackageFullName
+= $PackageName
+= $content[1..($content.Length - 1)]
+=%nH
+='_f/i
+=(cj
+=-7x
+=.7'
+=/_ca
+=1/'
+=2%oLN:
+=3O{
+=4yZe
+=6XQM
+=72Y
+=89C
+=9YU
+=<<<
+====<<
+==k0R6
+==yp
+=@Cl>
+=@p.
+=C$m>
+=D(@
+=DH{
+=E<$
+=Eir_lzz(p
+=FJH
+=FL[
+=Go0
+=HH [@SH H
+=HHt
+=HeJ
+=Ht$@H
+=K.]o5
+=KG4A
+=KU>{
+=LLD$xHHd
+=Q'5m
+=Q'v
+=SqY/Tx
+=UUUUUU
+=UY$
+=X9Xds
+=X]f
+=Xyf=.
+=_i!EN
+=a$a
+=bDEAHD$ 
+=cm('
+=cnI6)t4}l(}
+=f/_.
+=fj2
+=gHc 
+=h9N
+=hdAq
+=hoX]y]tG
+=ij4NQ
+=izf
+=mjI=
+=mtYH}
+=n(M
+=o$<
+=oXN $/ }2W%Ly
+=sin
+=stKmw
+=uF.6xTY
+=vD$
+=wC]j:f
+=xcUz
+=xpmeD
+=zHT$pHH
+={!Be%
+={b$Do3<_=g
+> A system restore point is recommended before you run the script. (if you don't know what are you doing)
+> [!NOTE]
+>!rjbc>m}Pa>
+>$0Q
+>$N6
+>$hkDh$h>@Kb
+>'NKe
+>(2)9
+>(SO
+>(kF
+>0!0
+>0AvVL>3/c>v
+>0EU%
+>28V
+>2T>xS
+>4't
+>6R]
+>783
+>93Ow
+>9Aq]
+>=-w
+>AHE
+>AR8
+>D$HF
+>DH{
+>E3H
+>E3M=2H(H
+>G[%_f>PHI
+>H$0
+>H1m
+>HL$ K
+>HL$h
+>HT$PH
+>HcO
+>ID$
+>K'$
+>LS@A
+>Lr@
+>O$Ee
+>OYo!C
+>P' o
+>TtLV
+>Ua>h
+>Z{:
+>]uH
+>d$h
+>dgU{r(A
+>eW2
+>er.6
+>exp
+>g>B!
+>gNdlFPy
+>go.
+>h%s
+>h<I
+>hvW
+>i[]nH
+>j/1c
+>jk9r
+>kVQt
+>k}e
+>lgdF
+>lqtWkNB
+>rYH>WJBIq
+>s)yC
+>sj>3fIy 3I
+>tHE
+>tn7Oyk
+>uZ>
+>x%tW
+>x']lBN
+>xc[
+>xllh
+>yHK05yHH [H
+>zFo
+>zK}
+>{n3a
+>}61)t
+@ A@E
+@!$Kp
+@!9]q
+@$AK(
+@%@/
+@(cl7
+@-9 (o
+@-H$
+@.data
+@.rsrc
+@/A:
+@/Kf
+@/}z(XNP
+@0D$h
+@2!h-t3
+@2E2
+@2H$
+@2HL$ HHL$@
+@2HL$PBgHL$08g@H
+@2Hc
+@2Hz
+@2H{
+@2L:u
+@2u:
+@3)9G-L
+@3LN
+@5TqZfC
+@6.KIN
+@6aq-
+@81A}
+@81t
+@83t
+@83u
+@85}
+@88t
+@8=P-
+@8H$
+@8PJ
+@8l$H
+@8l$Ht
+@8l$X
+@8l$Xt
+@8p3
+@8rht
+@8sht
+@8t$Ht
+@8t$HtHL$@
+@8w u
+@8w!u
+@8w>
+@8y 
+@8y t
+@8y!t
+@8{ u
+@8{!u
+@8{]t
+@:@j
+@:Db
+@:S2
+@:t7HL$@
+@:t=L$
+@:tDHL$ A
+@:tH
+@:tHT$pH$
+@:tHt$0E3E3
+@:tI@8s
+@:tL@8s
+@:tU3
+@:u1
+@:u@8
+@:uL$
+@=6Svn-
+@=CY
+@=I@Se
+@=YX
+@=_X
+@=dword:00000000
+@>L-n>4b>
+@@.Ez
+@@Aq
+@@SH HHL$0
+@@u 
+@A) 
+@ABCDEFGHIJKLMNOPQRSTUVWXYZ[
+@AHD
+@Bf2
+@DA:uHHT$
+@DD$ 
+@DiqSu
+@F@/H
+@H [@SH Ht
+@H!H
+@H!LHO
+@H$H
+@H$x
+@H%E3H3D$DM
+@H)S{
+@H07
+@H3HC
+@H3HIM
+@H3KL
+@H4H
+@H6N
+@H8I
+@H9H
+@H<IM
+@H=F
+@H@LA@/
+@HD$ H$
+@HD$(
+@HD$(H
+@HDHT$8HI
+@HEHT$PHHCHDHt3Mt.Ht)Hk
+@HFH
+@HGLG
+@HHH
+@HHIE
+@HHN
+@HHcIH
+@HHi
+@HHt
+@HJBLG
+@HL$0H
+@HNH
+@HPLG
+@HQq
+@HT@!A
+@HTQ
+@HVLHW
+@H[IM
+@HasDL
+@HbH
+@HcB
+@HpA]A
+@H}PLE
+@I4H
+@IDISH
+@IIHt
+@I[0Ik8Is@IA_A
+@J8kH
+@LD$8H
+@LEt$
+@LdPfA<$duEL$
+@O8BL4
+@OzBl
+@RHZ
+@SH 
+@SH 3H
+@SH 3HA
+@SH E
+@SH H
+@SH H.
+@SH HA
+@SH HB
+@SH HDHoHH [H
+@SH HE3HK D[DD[HHHK
+@SH HH
+@SH HH(HH [@SH HH
+@SH HHFHH [H
+@SH HHH
+@SH HHJVHH [@SH HH
+@SH HHK(y
+@SH HHL$0}H
+@SH HHt
+@SH HHz_HH [H
+@SH HLD$0E33
+@SH HMtpLD$@LD$@H
+@SH HYL
+@SH HZ
+@SH HrHH [H
+@SH Hz
+@SH y
+@SH03HLQ
+@SH03L9
+@SH0ALL$ H
+@SH0D3
+@SH0H
+@SH0ILL$XH
+@SH@E3E3HAQ
+@SH@H
+@SH@HHA
+@SH@HHIHHt
+@SH@HL$ HD$ D
+@SH@Hd$ 
+@SHP3ML
+@SHPIE3D$8
+@SHpH
+@SUVWATAUAVH
+@SUWATH
+@SVWATH
+@SVWATHxH
+@SVWH
+@U3R
+@UATAUAVAWH@Hl$0H]@HuHH}PH
+@UATAUAVAWHpHl$@H]
+@UH HbH ]@UH H
+@UH0HI
+@UjB
+@VH0HM
+@VHH
+@VSvDJv'BaXv4zH@
+@VWATAUAWH
+@VaW
+@WH Hy
+@WH IcH
+@[)bwIul
+@]8No
+@abcdefghijklmnopqrstuvwxyz[
+@b_u>
+@cH2
+@cS>
+@cx/Dh
+@dE n
+@d]4
+@echo off
+@g%w
+@gRL
+@gXHT$XHjV
+@guAA
+@h'!
+@hDxW0!-
+@iMcHcM
+@ixtL2o
+@k3H$
+@k>/1a{
+@kh@kiCj
+@l$0@t$(H
+@l$Iq
+@l'[
+@l2u
+@log
+@og'
+@pML
+@rE0Z
+@rHN0
+@sQST
+@set defenderremoverver=12.8.2
+@setlocal DisableDelayedExpansion
+@skr
+@t$(Dt$ iI
+@t$HV
+@t$Pt
+@t/H
+@t2fD9a
+@t5H$p
+@t9DD$DH$
+@tAC
+@tzH
+@u0H$
+@u2@SH HeH
+@u2L
+@uLd$(H
+@uXH
+@usB
+@w!!IG
+@w@t
+@w@u
+@wWYnF5
+@wuA
+@xHHuL$Ps
+@y(7s2
+@y/u
+@y1[
+@yPm
+@yTA
+@ydfQfD
+@zUB
+@{!P
+@{fS%
+@}%e8
+@}fWfpX
+A 8nJw
+A A(HA8A0
+A A@
+A HD$PH
+A f9
+A uMA@uGEy
+A!5t
+A%7Dnd
+A%S%
+A%vQ
+A)EA
+A)H$
+A-%(
+A-Hd$8
+A-t$AC
+A.LD$03I
+A/H$
+A0Iv
+A1-h
+A1Ha!
+A1iMry!
+A2D0$
+A3!H
+A3A3
+A3A3A
+A3A9X
+A3HEA
+A3HHX
+A3MILEDt$hHt
+A3h>i
+A3t3A
+A4$H$
+A45_
+A4z7
+A6/D5D6D4
+A8)u
+A8A9Y
+A8UuA
+A8t$
+A8}'LHA
+A9KXI[PD
+A:'uB
+A:(LT$8u8E8B
+A:9u
+A:HcI/
+A:Pu
+A:Tt
+A:Tt'E
+A:TtA:UD
+A:TtD
+A:TtI
+A:Tu
+A:UDL$xED$
+A:WD$@
+A:WD$@H$
+A:]t
+A:t H
+A:t$
+A:t%HL$XH
+A:t'
+A:t-HrLl$ D@HA
+A:t2HN8n
+A:t6fDl$PHG
+A:t<H$
+A:tGD8{
+A:tNH$
+A:tPHL$@
+A:tT
+A:tVHL$0
+A:tgHA:t
+A:twH$
+A:u Az
+A:u-H
+A:u=HG
+A:u>H
+A:}u
+A:}wMA
+A<$-u
+A<$f9
+A<LC4
+A>HA
+A>h(g2/W>J
+A@ E
+A@2D$
+A@4A
+A@8A@<
+A@DjHH [E3
+A@E3H
+A@HH
+A@HcHcHi
+A@t1A
+AA3AA3
+AA9i
+AA@4D
+AAA33
+AAD$
+AAD$0
+AAEA D$ 
+AAEIcf9
+AAFA
+AAH9$
+AAH9t$x
+AAHC
+AAHH
+AAHH8A
+AAHt!HP
+AAHtf@
+AAILM
+AAMcBD u
+AAPjH
+AAPo
+AAPwI
+AAQLcB
+AAT$
+AAWtH
+AAf9A
+AAl$
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ{
+ABEDT$xD$
+ABT 
+ABT A
+AC H
+AC I
+AC'em
+ACACACACACACACACACACACAC
+ACCEPT
+ACHH
+ACL%gj
+AD$ 
+AD$(
+AD$0
+AD$@E
+AD$T
+AD$xHcI
+AD3H
+AD=8
+ADD$
+ADL$0ED
+ADL$TI
+ADL$v
+ADT$pDT$
+ADT$r
+ADVAPI32.dll
+ADd$(H
+ADd$<Dl$HA
+ADd$@HT$@HL$HA
+ADl$(
+ADl$H
+ADl$PDl$QDl$RDl$SDl$TDl$Uu
+ADoA<o$
+ADxLN
+AE fD
+AE3@
+AE3DA
+AE3E3D$ 
+AE3EA
+AE3VE3DH
+AED$D
+AEEFH5
+AEL$
+AETrUZ
+AE]H
+AE}T$@
+AF$C/ /
+AFDThE
+AGA)
+AH A_A
+AH$(
+AH(AAH
+AH(E
+AH3A
+AH@A_A
+AH@[H
+AHA:t<
+AHAL
+AHAMA
+AHBHA
+AHBHAHBHAHBHAHBHA
+AHBHAk
+AHD$ 
+AHE3E3H
+AHEA
+AHERE3E3H
+AHHA
+AHHD$
+AHHH
+AHHHH
+AHHL$ L3
+AHHT$ H
+AHK@8HKH/HKP
+AHL$ @L$ 
+AHL$0H
+AHL$0f
+AHL$8
+AHL$@AHcHYEHL$@LE3HUHT$@I]H
+AHL$H-HL$8
+AHL$HA
+AHL$HHL$
+AHL$X@3H
+AHL$p
+AHL$pfD
+AHLL
+AHLSL]
+AHLT$ H
+AHLX
+AHM H3
+AHMw
+AHPA_A
+AHPHcH
+AHT$
+AHWH$
+AHYFH
+AH[u
+AHa/
+AHc$
+AHcE3E3H
+AHcH
+AHcHL$HH
+AHcHcH
+AHcI
+AHcII
+AHf9)t
+AHfDl$8fDd$:D$<
+AHfDt$8ft$:D$<
+AHl$@fD9m
+AHp H
+AHp(Hu
+AHt.H
+AHtL$x
+AHtN
+AHtYAMt
+AI EA!
+AI/ IH
+AIBE3HI
+AICEKELHHH
+AICIC
+AID$0L
+AIDH
+AIDv I
+AIE8L
+AIH$
+AIH3Et$
+AIHD
+AIHD$
+AIHLL$HL$
+AII:uE
+AILcLL$0L0H
+AI[@A
+AIcC
+AIcD
+AIcD$
+AIcH
+AIeHt
+AK3W
+AL$ 
+AL$(-
+AL$P
+AL$PHtI
+AL$t Uu
+AL%L
+ALL$HH
+ALLL5
+ALd$P
+ALfD
+ALt$xH
+AMHDHT$(HcH
+AMOd
+ANY)
+ANYCRLF)
+ANz5
+AP(HL$HH
+AP(fD9$
+APVe
+APsOj8
+APv6A
+APyA
+AQ A
+AQ E3H
+AQ f
+AQ'L
+AQfD$
+AQfZ
+AQsF
+ARiD(V
+AS E3I
+AS$E3I
+ASR]
+ASyn
+AT$@D$8$
+ATAUAVH L
+ATH AHHQkE3A
+ATH H3AQ
+ATH HH=
+ATH Hz5
+ATH L%
+ATH q
+ATH03N
+ATH0E3IIHHHtQMtQHt
+ATH0H
+AU Fo
+AU)Hh
+AU/MLHH
+AU3_FreeVar
+AU3_GetPluginDetails
+AUAVAWH0DE33N
+AUAVAWH@IEE3AL$
+AUH Hc
+AUH03HHHu'xH!
+AVUUU
+AVbad_alloc@std@@
+AVexception@std@@
+AVnqcb]>6z<P
+AVry'4h47WyD
+AVtype_info@@
+AW)Hh
+AXt:]t59t
+A[ug}
+A]@SH0ALL$XH
+A]E3A:u
+A]HHX
+A]_H
+A_A]A
+AaE3E3I
+Ac.X:BpJ
+Ac8AC9
+AcE0.8X
+AcL[t0
+AcWT
+ActivatableClassId
+AcyE
+AddAce
+AdjustTokenPrivileges
+AdjustWindowRectEx
+Advanced]
+Ae>USY>kX>
+Af3fA
+Af9lr
+AfD9
+AfE94$t/HT$0E3A
+Afl$
+AgfD9DN
+AhDD0
+AhLK/
+Ai0BEu
+Ai@Txpq
+AllowArchiveScanning]
+AllowBehaviorMonitoring]
+AllowCloudProtection]
+AllowEmailScanning]
+AllowFullScanOnMappedNetworkDrives]
+AllowFullScanRemovableDriveScanning]
+AllowIOAVProtection]
+AllowIntrusionPreventionSystem]
+AllowOnAccessProtection]
+AllowRealtimeMonitoring]
+AllowScanningNetworkFiles]
+AllowScriptScanning]
+AllowSmartScreen]
+AllowUserUIAccess]
+AmhA
+An HrP
+An application has made an attempt to load the C runtime library incorrectly.
+AnAC
+AnHA
+AngleArc
+AoH$
+App and Browser protection]
+AppContainer
+AppHost]
+AppUserModelId
+AppX9kvz3rdv8t7twanaezbwfcdgrbg3bck0]
+Application Guard Policies
+Appx
+AppxAllUserStore'
+April
+Arabic
+Armenian
+As E3H:HHoDc
+AsHT$
+Asseco Data Systems S.A.1
+Associations
+At!H
+At$P
+At$z
+At3HL$p
+AtPD
+Atan
+Atif
+AttachThreadInput
+AtwA
+AtxH
+Au%L$ B
+Au)HD
+Au/A
+Au3n3A9X
+AuHeH_d
+AuK@
+AuT3LD$
+Au]$
+AuditMode]
+August
+Autologger
+AvgCPULoadFactor]
+Ax2Ng
+AxFOG
+AxLH$
+AySJab''
+A}Vq:
+A}mHK
+A}tA
+B A B!A!B$A$B(A(HH
+B II
+B t%H
+B vf
+B$H$
+B$rv7
+B)Yp I2
+B.lw
+B/I R
+B/z)
+B1hVCj9
+B3H8H
+B6yn0Z
+B7'9w
+B7}@E)Lh
+B88GxMt3JV}6
+B8tA
+B99$
+B9AA3
+B<9@
+B=91
+B@L$
+B@]M
+B@t%H
+BAuH
+BB8k5
+BB:e%
+BBa=f]
+BD AB
+BDA$8c
+BDE3
+BE3AfD9
+BEHHH
+BEQvJ)
+BEbC.h)mj
+BExZE
+BFH$
+BG_yH}
+BH ]@UH0HM
+BH@28
+BHC3H
+BHCIH
+BHHNL
+BHHX
+BHL$
+BHL$ H
+BHL$0hHL$h
+BHL$@HQ>LL$
+BHT$PHL$0CH
+BH[)qp
+BHcO
+BI V
+BILL$ 
+BIMkdDhmg(A
+BL D
+BL IcH
+BLfE
+BLl$@$HL$@
+BLp4U
+BN{HP
+BO94
+BOJ>
+BOSB
+BQ>{v
+BRHHuH
+BSR_ANYCRLF)
+BSR_UNICODE)
+BS{Nm
+BT AA
+BT IcH
+BT L
+BT9}x
+BUQ)E
+BVHt
+BWm 1
+B[/v
+B[<OI
+B[RaNN
+BajO0dFbe
+Balinese
+BbSUmvQ
+Bc766663333211111/..../
+Beep
+BeginPaint
+BeginPath
+Bengali
+Bf9 t
+Bh9876665443332221110/1
+Bj@F
+Bjv.
+BkZ<j8
+Bl5IcHcH
+BlXSK
+BlockInput
+BnKIofVq
+Bo4q
+Boot
+Bopomofo
+Braille
+Browser
+Bt8HcH
+BtNDtBWtIbt
+BuE9
+Buginese
+Buhid
+Bw6-
+Bz%@
+B{3>
+B}T@{
+B}Z/T
+B}]cy
+C G 
+C G 8
+C expected
+C is > 255
+C not allowed in lookbehind assertion
+C r8J
+C$HE
+C$z)o
+C'-o
+C(/r)Bd
+C(EuKt
+C(Hs
+C(s$Hc[ 
+C/qA
+C0@o
+C0H$
+C1C{eM
+C1H [H
+C1Q8vc(qVl$
+C1VQAP
+C4$4u
+C5CZ%69v
+C5Ec-km
+C9{lZO
+C:%5CWindows%5CSystemApps%5CMicrosoft.Windows.AppRep.ChxApp_cw5n1h2txyewy%5Cresources.pri]
+C:4pi
+C<VC
+C> [x
+C@vT2
+CCMO
+CD@:uEHT$8H$
+CE/X
+CE3H
+CE:t
+CF>WN@
+CGhR4 vV
+CHHHHHt
+CHHP
+CHL$ 
+CHL$ HtHT$ HL$ A
+CHT$ H
+CHT$ HCs
+CHc$
+CHt$@DE3I)mHH
+CHuc-n
+CIL$
+CL9$
+CL>$
+CLSID
+CLSIDFromProgID
+CLSIDFromString
+CN!N5p:S6b
+COMCTL32.dll
+COMDLG32.dll
+COMMIT
+CONOUT$
+COr]D
+CPAH
+CPS%
+CPq8:kcm
+CRLF)
+CTHoV
+CTxb!a[<
+CVi@
+CX4D
+C]oU
+C_tyI 
+Canadian_Aboriginal
+Carian
+Catan
+Cc93U[w
+Certum Timestamp 20210
+Certum Timestamping 2021 CA
+Certum Timestamping 2021 CA0
+Certum Trusted Network CA 20
+Certum Trusted Network CA0
+Cf90t$HC
+Cf986666433333211111/.1
+CfD9
+Cham
+CharLowerBuffW
+CharNextW
+CharUpperBuffW
+CheckForSignaturesBeforeRunningScan]
+CheckMenuRadioItem
+Cherokee
+Classes
+ClientToScreen
+CloseClipboard
+CloseDesktop
+CloseFigure
+CloseHandle
+CloseServiceHandle
+CloseWindowStation
+CloudBlockLevel]
+CloudExtendedTimeout]
+CmVmW>s]
+CoCreateInstance
+CoCreateInstanceEx
+CoInitialize
+CoInitializeSecurity
+CoSetProxyBlanket
+CoTaskMemAlloc
+CoTaskMemFree
+CoUninitialize
+CodeIntegrity
+Command]
+Common
+CompareStringA
+CompareStringW
+Components]
+Config]
+Configurable
+ConfigureSystemGuardLaunch]
+Consumers
+Containers
+Control
+Control Panel
+ControlPanel
+Control]
+Controlled Folder Access]
+Coptic
+CopyFileW
+CopyImage
+CopyRect
+CopySid
+CorExitProcess
+CountClipboardFormats
+Cr2_
+Cr2wG$
+CreateAcceleratorTableW
+CreateBindCtx
+CreateCompatibleBitmap
+CreateCompatibleDC
+CreateDCW
+CreateDirectoryW
+CreateEnvironmentBlock
+CreateEventW
+CreateFileA
+CreateFileW
+CreateFontW
+CreateHardLinkW
+CreateIconFromResourceEx
+CreateMenu
+CreatePen
+CreatePipe
+CreatePopupMenu
+CreateProcessAsUserW
+CreateProcessW
+CreateProcessWithLogonW
+CreateSolidBrush
+CreateStreamOnHGlobal
+CreateThread
+CreateToolhelp32Snapshot
+CreateWindowExW
+CredentialGuard]
+Ct:H
+CtP=
+CtZ:
+Cugd
+Cuneiform
+CurrentControlSet
+CurrentVersion
+CuvK9
+Cx=R
+CyXxO!T
+Cypriot
+Cyrillic
+CzeHvIo
+C{J(
+C}{P[
+D (<jB.@
+D :t3@
+D HD$
+D!'D
+D!D$(D!D$ E3H
+D$  
+D$ 4U
+D$ <u$
+D$ @u
+D$ A
+D$ AD
+D$ B
+D$ D
+D$ D$(!
+D$ Et
+D$ H
+D$ H$
+D$ H9
+D$ HL$ 
+D$ Hp
+D$ L
+D$ LL$pLD$0H:tz@
+D$ O
+D$ [xE3A
+D$ d
+D$ f
+D$ f}$
+D$ h
+D$ r
+D$ t$
+D$ u
+D$ v
+D$ xg
+D$ y
+D$ yT
+D$$2
+D$$CD
+D$$D
+D$$D$(HT$HD
+D$$DB
+D$$f
+D$(!
+D$($
+D$(3
+D$(:
+D$(A
+D$(ADl$ _ 
+D$(AL
+D$(B
+D$(C
+D$(D
+D$(D$pD$ IHHH
+D$(D$pE3D$ (HHHHX
+D$(D$pE3D$ UHHHHD$xd$0
+D$(D$xDE3
+D$(DT$THH
+D$(E
+D$(H
+D$(H$
+D$(H$p
+D$(HD$
+D$(HD$0H
+D$(HD$xHD$ 
+D$(HExELAHD$ 
+D$(HExHD$ A
+D$(HH
+D$(HHH
+D$(HL$ HLHj
+D$(Hd$ 
+D$(L$ IA
+D$(LD$ M
+D$(LT$ 
+D$(MIHH
+D$(f
+D$(fD$6@l$)@l$
+D$(yHK
+D$0$
+D$0'
+D$0@
+D$0A
+D$0B
+D$0D
+D$0D$(!
+D$0D$(D$ H
+D$0D$4
+D$0D$8
+D$0D$8D$0
+D$0D$@H
+D$0DC
+D$0F
+D$0H
+D$0H$
+D$0H(3H(
+D$0H(H(
+D$0H(H(cif
+D$0HD$@L$
+D$0HD$pD$(D$
+D$0HH
+D$0HT$0
+D$0L
+D$0L$(H
+D$0L$@i
+D$0P
+D$0f
+D$4A
+D$4H
+D$4i
+D$4t$Df
+D$5C
+D$8$
+D$8@u
+D$8A
+D$8B
+D$8C
+D$8D$0A
+D$8D$0E3A@D$(AH
+D$8D$0H
+D$8D$d
+D$8DD$0DL$(MDH
+D$8DD$0E33H
+D$8E
+D$8F
+D$8H$
+D$8H$p
+D$8HCX3HD$0CpD$(d$ 
+D$8HG
+D$8HL$0E3I
+D$8HL$H
+D$8Hl$0DD$(MI
+D$8L$
+D$8L$0D
+D$8L$4DD$<A
+D$8LD$PA
+D$8McE3AP
+D$8fA@
+D$8u
+D$<$
+D$<A
+D$<D$8
+D$<D$=D$>nD$
+D$<HG
+D$<L$
+D$<LL$$X
+D$<d$(
+D$<fA@
+D$@$
+D$@9
+D$@=
+D$@@8s
+D$@A
+D$@A@83t
+D$@D
+D$@D$0
+D$@D$8L$0T$(H
+D$@D$@D$D
+D$@H
+D$@H$
+D$@HP[H
+D$@Ht$P
+D$@LD$XBl
+D$@M
+D$@P
+D$@d$8
+D$@f
+D$@t
+D$@tBHL$@D
+D$@u
+D$BH5k
+D$D9
+D$D@
+D$DD
+D$DD$8
+D$DD9T$X
+D$DIH
+D$DiE3I
+D$DuxD$@A
+D$FHL$XHHHT$XH
+D$H$
+D$H$H
+D$H=
+D$HB
+D$HC
+D$HD$8L$0D$
+D$HDL$@DD$8
+D$HH
+D$HH$
+D$HHL$XHHrHT$XH
+D$HI
+D$Hf
+D$HfG
+D$JD
+D$JHL$XHH<HT$XH
+D$L 
+D$L-
+D$LB
+D$LD
+D$LDD$DH$
+D$LF
+D$LHFDX
+D$LHL$
+D$LHL$XHH
+D$P 
+D$P$
+D$PAH
+D$PD$XR
+D$PDH
+D$PG
+D$PHL$ 
+D$PHT$@
+D$PL$
+D$PL$HT$@3DD$8DG
+D$PL$HT$@Af9
+D$PL$hC 
+D$PLLO$H
+D$PfD$bHD
+D$PfG@Ht
+D$Pi
+D$Pt
+D$P}
+D$RH
+D$RfE
+D$T3
+D$T:@ tA@
+D$TD$
+D$TD$PE
+D$TDL$PLH
+D$TDT$XDL$P
+D$TDt$XD$P
+D$TE
+D$TH
+D$THD$xDT$ULc
+D$TILD$
+D$TJ
+D$TL
+D$TfDD$jD$b
+D$VDT$X
+D$VH
+D$X$
+D$XD
+D$XE
+D$XF
+D$XFtE$
+D$XH
+D$XL
+D$Xd$P
+D$XfA
+D$ZfE
+D$Zl$4A
+D$_FI
+D$bA
+D$bDT$vfD$pD$dD$rfD$2DD$tT$pfD
+D$bfE
+D$d@t
+D$dD
+D$dDD$hDT$
+D$dDT$hDD$
+D$dGx
+D$dHV
+D$dHcHcO
+D$dh Dl$PHl$XL
+D$drHT$
+D$fDD$h
+D$fDT$h
+D$hA
+D$hB
+D$hD$p
+D$hH
+D$hHT$xH$
+D$hI
+D$hIHTE
+D$hfE
+D$hfT$
+D$hn
+D$hrj
+D$ht
+D$jD
+D$jDd$ff
+D$jDd$ffA
+D$lD
+D$lE
+D$pA
+D$pD$0 
+D$pHLD$
+D$pHV
+D$pHXHXE3H
+D$pL
+D$pfE
+D$pfT$hL$j
+D$pt
+D$rD
+D$tA
+D$tf
+D$x-
+D$xAEA
+D$xAEDd$tT$pALL$8E
+D$xDT$@[
+D$xH
+D$xHD$xWKHD$(H$
+D$xHG
+D$xHHE
+D$xHcLcfDD
+D$xL
+D$xf
+D$xfE
+D$zA
+D'AD$
+D'A]FSCPSF)F
+D'H$
+D'HE
+D()9TZ/
+D(H$
+D)=(
+D)trflHthHF
+D-A:t
+D-xbdkT
+D.D}
+D/!Y
+D/hGU 6
+D19K
+D33HV
+D38D
+D3D$(7
+D3H$
+D3H>IN
+D3H@jD
+D3HL$ MHD]
+D3HjD
+D3HvjD
+D3Hw
+D3f97
+D3fD
+D57O
+D6E3
+D6H$
+D6n3
+D7D8t$H
+D7HF
+D7HHt
+D7HUH
+D7HcH
+D7lw$
+D8$8
+D8-/
+D8-n
+D8=!
+D8=C
+D8=h
+D8HzH
+D8L$@t
+D8L$At
+D8Rju
+D8T$H
+D8chtKs0L$
+D8d$Ht
+D8i!
+D8k u
+D8k!u
+D8l$Ht
+D8p>t2HL$HLt$HLt$XOH$
+D8pBH
+D8s u
+D8s!u
+D8t$
+D8t$H
+D8t$Ht
+D8{ 
+D8{!
+D8{!uSHL$0
+D9!D
+D9!u
+D9$(
+D9%Qe
+D9%i
+D9%s
+D9%wf
+D9%y
+D9-)
+D9-u
+D93HK(
+D95'q
+D957
+D95vn
+D95x
+D95{
+D9Cy
+D9D$
+D9D$X
+D9L$
+D9L$P
+D9L$X
+D9L$h
+D9T$
+D9T$dt
+D9T$dtU
+D9d$ 
+D9gDu$H=
+D9l$x
+D9t$
+D9t$@
+D9t$@u
+D:t@I
+D:tD$
+D:tbK
+D<3H
+D<pdcH
+D= X
+D>!m6
+D>IF
+D>fF
+D@'a(e
+D@(HA
+D@@t
+D@D$
+D@E3
+D@l$ :t%H
+DA t
+DA:t
+DADD$XL$xA
+DADYH
+DAHE
+DAHL
+DB L
+DB0HT$8HL$xD$
+DBA@ 
+DBLHL$DH$
+DBLgD$$
+DBhH
+DCDID$ 
+DCEAID$ 
+DCuB
+DD H
+DD f
+DD$ 
+DD$ D
+DD$ DAA
+DD$ LHDA8
+DD$ y
+DD$$T$ HH
+DD$(DD$
+DD$(IR
+DD$(LA
+DD$(f
+DD$0DH/
+DD$0DM
+DD$0HC
+DD$0yH{
+DD$4
+DD$43LL$0D
+DD$4T$0D
+DD$4r)HK
+DD$8AA
+DD$8D$0E33H
+DD$8DD$0E3HH
+DD$8H
+DD$8HD$0D$xLv
+DD$8HD$0H$
+DD$<T$0D$
+DD$@
+DD$@DD$8T$$L$ LL$@
+DD$@L$8H
+DD$DH$
+DD$H
+DD$H3
+DD$HLL$@HHH
+DD$P
+DD$PD
+DD$PH
+DD$PMML
+DD$T)HcG$H
+DD$TDD$HD$XD$P=E3I
+DD$TL$
+DD$X
+DD$X$ 
+DD$X3
+DD$XEu
+DD$XL$
+DD$d3D$h
+DD$dEu
+DD$du
+DD$hDT$
+DD$hT$
+DD$tD$x
+DD$tT$pAITA
+DD$tT$pD$xA
+DD$tT$pDL$xn
+DD$tT$pDL$x}
+DD$vfD$pD$dfDL$zD$rDD$tT$p fA
+DD$x$
+DD$xEAID$ 
+DD$xLV
+DD.DHL$0
+DD0:K
+DD3H
+DD3I
+DD:A
+DD:t4HC
+DD<-t
+DDADt$(
+DDADt$(Dd$ 
+DDD H
+DDD$ HL$pE33
+DDD32
+DDEpL$4HC
+DDH]
+DDIIA
+DDNpE@(YY
+DDT$x
+DDd$Hl$@
+DDl$@
+DDl$L@@t
+DDt$(Lt$ 
+DDt$8AD
+DE2<E24A
+DE3AMsEKE
+DE3H
+DE3HHD$ 
+DE3HLD$ H$
+DE3HXHT$0HBrED3HD$ 
+DE3I
+DE:t/$
+DEFINE
+DEFINE group contains more than one branch
+DEH5
+DEHE
+DEHHDd$(l$ 
+DF!D$ 
+DFE3
+DFfG
+DG0D
+DG0E3
+DG1D
+DG1E3
+DG3D
+DG3E3
+DG4D
+DG4E3
+DG5D
+DG5E3
+DGDD$
+DGDw
+DGE3
+DGEHL$43D$0P
+DH A]A
+DH L@
+DH UVWATAUAVAWH@
+DH UVWATAUAVAWHp
+DH WATAUAVAWH0
+DH _H
+DH$h
+DH2u
+DHD$ 
+DHD$ :
+DHD$ A
+DHD$0HD$@HHD$(
+DHD$@H
+DHD$HHD$PDHD$@HD$THD$8H$ 
+DHD$PH$
+DHH$
+DHH$mH
+DHH9A:uUI
+DHHA 3Lf
+DHHBDO
+DHHH
+DHHL
+DHHn
+DHHvH
+DHIxLHIeLHI
+DHKD91u(
+DHL$
+DHL$ H
+DHL$(HL$0AHL$ 
+DHL$8HL$
+DHL$@T$8L$
+DHL$HHL$(
+DHL$TDV
+DHL$xDHL$0L$pL
+DHLd$ H
+DHT$0DH
+DHcL$ HD$hH
+DHd$X
+DHg'
+DHk_y
+DHl$ 
+DHt$PH
+DHtFHT$HH
+DI(A
+DIHD
+DIHLl$ 
+DIHu
+DIw$
+DIx$
+DJAH
+DJLL$ H$H
+DJLt$H
+DJzEe
+DKPA
+DKPL
+DL$ AH
+DL$ HL$
+DL$ LD$XL$
+DL$ WH H
+DL$ z
+DL$0AH
+DL$0HT$(E3H
+DL$0LL$@HD$hLL$0LD$xHHHD$ D$8
+DL$0LL$@LL$0D$ DHL$0
+DL$4DD$0T$<L$8Dl$ 
+DL$4HT$@MSf
+DL$@
+DL$@HT$8HN E3
+DL$@I
+DL$@L
+DL$PHT$HHN@E3
+DL$PL
+DL$T
+DL$T)HcG$H
+DL$T3HcG$H
+DL$TA
+DL$TDD$dD$
+DL$TEB
+DL$TID$h
+DL$X
+DL$X3
+DL$Xu
+DL$pD
+DL$pH
+DL$pL
+DL$x
+DL$x3L$
+DL$xD
+DL$xG
+DL$xH
+DL$xLM
+DL$xx
+DL33
+DL3L
+DL:t
+DL@HH
+DLHHL
+DLHHLT$ %
+DLHHo
+DLIiyL$
+DLL$ LH
+DLL$PL
+DLL]IA
+DLOAQ
+DLt$(Dt$ A
+DMIH
+DMIHH
+DMXMAAHD$ 
+DMcHZHMHI
+DMpD
+DMpLE
+DMpU
+DNL$
+DO$HIHDL$pLt$xH$
+DO%AO=)Bd
+DOMAIN error
+DP0A
+DP@EE3HpHT$pH
+DP@MGG
+DPLG
+DPLK
+DPPDE3HvpH$
+DPU1kai_
+DQ8Y<DY@LHT$ A@
+DSRD
+DT$ 
+DT$ .
+DT$(H
+DT$8
+DT$@DT$8LT$0D$(H$
+DT$P
+DT$P@3
+DT$PDT$LADl$HDT$D
+DT$T)HcG$H
+DT$TD
+DT$X
+DT$XDL$P
+DT$dHT$hLD$@A
+DT$ffD$
+DT$hDD$
+DT$nfD$hD$
+DT$pDT$XDT$TDT$HEEDT$PZE3E333Ht$ 
+DTH$
+DTHIK
+DUAW
+DVLH
+DWpA
+DWsHT$0DHyLc3HT$0H$@
+DXcIH
+DY.Q
+DZ:u
+DZTW0
+D[0H
+D[@H
+D[PH [L@SH HH
+D[dD[hCl
+D]X@O
+D_M:Pz
+D_o}w
+D_tD$l
+DaDDaH
+DaysToRetainCleanedMalware]
+DbH$p
+DbHD$
+DbHT$ DDH
+DcDDcH!HI
+Dd$ A:t_9
+Dd$ D
+Dd$ DO
+Dd$(D$ 
+Dd$(H
+Dd$(HHD$ 
+Dd$(l$ 
+Dd$0
+Dd$0Dl$4D
+Dd$0G
+Dd$0H
+Dd$0L9%vh
+Dd$0[W
+Dd$0fD$l 
+Dd$4
+Dd$4L$
+Dd$8
+Dd$8$
+Dd$8HP
+Dd$8l$<DwtDox
+Dd$@D
+Dd$@HT$@AH$
+Dd$@HT$@H$
+Dd$@HT$@HL$xAAoL$
+Dd$D
+Dd$DH
+Dd$H-LL$0LD$HHHD$8
+Dd$HD$8
+Dd$HDd$@
+Dd$Hl$@
+Dd$Hl$@t$8Dl$0D$(H
+Dd$XD$PD$H
+Dd$XHD$p
+Dd$Xt
+Dd$dDd$hD
+Dd$dE3E3
+Dd$dH
+Dd$dfD3f
+Dd$hfE
+Dd$x
+Dd${
+Dd@B@=<>:68:
+DdL2HH
+December
+DecodePointer
+DefDlgProcW
+DefWindowProcW
+Defender
+Defender.Remover.exe /r <
+DefenderApiLogger]
+DefenderAuditLogger]
+DeleteCriticalSection
+DeleteDC
+DeleteFileW
+DeleteMenu
+DeleteObject
+DepHD
+Deprovisioned
+Deseret
+DesktopBackground
+Desktop]
+DestroyAcceleratorTable
+DestroyEnvironmentBlock
+DestroyIcon
+DestroyMenu
+DestroyWindow
+Devanagari
+Development
+DeviceGuard
+DeviceGuard]
+DeviceIoControl
+Df0r
+Df9 w
+DfDG
+DfET
+DfGF
+DfH$
+DgHGD
+DgHHKH$8
+DgHHc@
+Dh0Hp8p(@@
+DhLhFHL$x<HL$X2HL$P(HL$8
+DialogBoxParamW
+Disable with this command and reboot.
+DisableAntivirusProtection.reg
+DisableCatchupFullScan]
+DisableCatchupQuickScan]
+DisableDefenderPolicies.reg
+DisableDefenderandSecurityCenterNotifications.reg
+DisableDevDriveProtection.reg
+DisableEnhancedNotifications]
+DisableLSAProtection.reg
+DisableMaintenanceTaskreportinginSecurityHealthUI.reg
+DisableMicrosoftVulnerabileDriverBlocklist.reg
+DisableNotifications]
+DisableSmartScreen.reg
+DisableSpyNetTelemetry.reg
+DisableSystemMitigations.reg
+DisableTamperProtection.reg
+DisableUAC.reg
+DisableVBS.reg
+DispatchMessageW
+Dl$ 
+Dl$ 'H$
+Dl$ L
+Dl$(A
+Dl$0ED$
+Dl$0EDt$(
+Dl$0H
+Dl$:E:
+Dl$@DL$8DD$0DT$(E3E3D$ 
+Dl$@Ll$H
+Dl$D$
+Dl$H
+Dl$HE
+Dl$HI
+Dl$L@ t
+Dl$LIR
+Dl$LL$D
+Dl$Ls
+Dl$PHt$hE
+Dl$XD$
+DlADl$DE3HlH
+DlHDl$H
+Dlj>
+DmWomX
+Do x
+DpNL2
+Dr!HM
+DrH$
+DragFinish
+DragQueryFileW
+DragQueryPoint
+DrawFocusRect
+DrawFrameControl
+DrawMenuBar
+DrawTextW
+Dt$ 
+Dt$ LLHI
+Dt$ muH$
+Dt$$D
+Dt$(
+Dt$(D$ 
+Dt$(Dl$ A
+Dt$(H
+Dt$0L
+Dt$8
+Dt$8Lt$HDd$@wEH
+Dt$<
+Dt$@H$ 
+Dt$@L
+Dt$@Lt$H
+Dt$@Lt$PLL$HH$ 
+Dt$DD$LIM
+Dt$P
+Dt$P3
+Dt$X
+Dt$]Dt$
+Dt$aHt$X
+Dt$aHt$XHoHL$0I
+Dt$p
+Dt$p9
+Dt$pg
+Dt$tH$
+Dt$xHHD$h
+Dt0H
+DtH}Eu@
+DthH
+DtnM
+Du @
+Du A
+DuBA
+DuG7s
+DuIcI
+Duhpq
+DuplicateHandle
+DuplicateTokenEx
+Duri>
+Dv@USVWATAUAVAWHhHl$0H
+DvOm3
+Dvob8
+DvzTas=5
+Dw9EHz
+DwQFOt/@z
+Dw{{V
+Dz4a
+DzHH
+D{ D8{ 
+D{Nt
+D}B!WJ@0
+D}vN
+E!3IH}
+E!HL$ 
+E$X.jp
+E)2u
+E.g:
+E0zC
+E2.Dt$aHL$@I
+E2D(D9o
+E2E2$ 
+E2HC
+E2HH
+E2Hx
+E2IHL%
+E2MHHD$8
+E2ccrb0C
+E3!Dq:w.jW[7}j
+E3%AD$
+E3)H
+E3/I
+E31f't1H$0
+E33A
+E33AP
+E33D$ d
+E33Dd$(LD$ 
+E33EA
+E33H
+E33HC
+E33HD$ 
+E33HH
+E33HH$0
+E33HHHU
+E33HP 
+E33HaHt
+E33HcH
+E33L
+E33M
+E33MLHD$pAkD$dD$hD$
+E33UH
+E33sHu8D$@
+E33y
+E34H
+E35H0[
+E36HO
+E37HE
+E39p
+E3<X
+E3>NHL$@KXHL$ A
+E3@IDI_3
+E3A 
+E3A:
+E3A@SH H2S
+E3AA
+E3AAo
+E3ACHfD
+E3AD
+E3AD$7L=w{
+E3AE
+E3AE:
+E3AH$
+E3AH(H
+E3AH@
+E3AHH$
+E3AHcH
+E3AI
+E3AL
+E3AMD
+E3AP
+E3APHG
+E3AQ
+E3AQ1E3H
+E3AY
+E3Aq
+E3A{
+E3D$
+E3D$ 
+E3D$8
+E3D$8D$0D$(AH
+E3D$@
+E3D3
+E3D3H
+E3D3H)YHH
+E3D3H8HHm
+E3D3HVkD
+E3D3Hh
+E3D3Hx$ 
+E3D8
+E3D8%W
+E3D85A
+E3D88
+E3D9
+E3D9$
+E3D9c
+E3DD$PA
+E3DD9T$(t
+E3DE9
+E3DH
+E3DK
+E3DL$d
+E3DLLd$8Ld$033Dd$(Ld$ 
+E3Dd$0D$8
+E3Dg
+E3Dl$ 
+E3Dl$8D$@
+E3E2D!$0
+E3E3
+E3E3.HG
+E3E32
+E3E33
+E3E333
+E3E333!
+E3E333(LcIHM
+E3E333.
+E3E3334K
+E3E333D ..A
+E3E333D 5'AkHtHH
+E3E333H
+E3E333Hl$ 
+E3E333Ld$ 
+E3E333Ld$ Z
+E3E333Ll$ 
+E3E333Ll$ HHI
+E3E333Lt$ 
+E3E333Lt$ Q
+E3E333R
+E3E333SL
+E3E333ZL
+E3E333_
+E3E333dz
+E3E333f
+E3E333}_
+E3E33AQ
+E3E33D$
+E3E33D$ 
+E3E33Dt$(Dt$ 
+E3E33H
+E3E33HD$ 
+E3E33HDd$(Dd$ 
+E3E33I
+E3E3@
+E3E3AQ
+E3E3B
+E3E3E
+E3E3G
+E3E3H
+E3E3HA:tNAQ
+E3E3HAQ
+E3E3HD$ 
+E3E3HD$03D$(
+E3E3HD$pH
+E3E3HDD$ glLD$@H$
+E3E3HH$
+E3E3HYvHHL$ E
+E3E3HpH$
+E3E3Ht$xD$p
+E3E3I
+E3E3IAQ
+E3E3IDo
+E3E3IWmHHA
+E3E3N
+E3E3P
+E3E3g
+E3E3s
+E3E3zHH
+E3E4
+E3E4$IE
+E3EA
+E3EH3D$(P
+E3EHD$(HD$0HHHD$ HctH
+E3EHH
+E3EHL$x
+E3EZ0E8
+E3EfD9
+E3En
+E3FH
+E3FHO
+E3GH
+E3H!3
+E3H$
+E3H)J
+E3H-
+E3H.3H
+E3H8HL$
+E3H9
+E3H9d$ 
+E3H:
+E3H:pH$
+E3H@/AsxH
+E3H@H
+E3HA
+E3HAQ
+E3HAQ0L
+E3HAQH
+E3HAQW
+E3HC
+E3HD
+E3HD$
+E3HD$ 
+E3HD$ L
+E3HD$ k
+E3HD$(
+E3HD$(H
+E3HD$(H$
+E3HD$(HD$@HD$ 
+E3HD$(HD$pE33
+E3HD$(HIH
+E3HD$(Lt$ 
+E3HD$(T$ ARXDHy 
+E3HD$0
+E3HD$h3D
+E3HDL$xH
+E3HD[DD[HH [H
+E3HDc
+E3HDg
+E3HD{
+E3HE
+E3HEs
+E3HG
+E3HH
+E3HH$
+E3HH9
+E3HHD$ 
+E3HHE
+E3HHH
+E3HHJ
+E3HHL9i(
+E3HHL9q(
+E3HHLc
+E3HHLcHE5H
+E3HHp
+E3HHt H
+E3HI
+E3HIcA
+E3HIxNy%%I
+E3HKpI
+E3HL$0CHL$ 9AH
+E3HL$0E33HD$(
+E3HL$@3ED$pMIE
+E3HL$@Ht$8Lt$0I3Dl$(D$ 
+E3HL$HH$
+E3HLc
+E3HLcH
+E3HLcHp
+E3HLcIwH
+E3HNH
+E3HO
+E3HO9
+E3HT$
+E3Hc
+E3HcA
+E3HcB
+E3HcH
+E3HcI
+E3HcJ
+E3Hl$pLn
+E3Ho$
+E3HoH$
+E3Hu
+E3Hz
+E3H{
+E3I2
+E3I9
+E3IAAH
+E3IDHuH
+E3IE
+E3IE:t
+E3IH
+E3IHF8I7HF8I
+E3IHG0I
+E3IHcH
+E3IHt$ 
+E3IIHMkfE9(
+E3IK
+E3IL=
+E3ILL
+E3IS
+E3IcK
+E3IcL
+E3IfDzLDd$$aL$
+E3Is
+E3It
+E3I{HL$ 
+E3KAD
+E3L$
+E3L9
+E3L9d$x
+E3L9r
+E3L9s0v
+E3LA
+E3LAH
+E3LAQ
+E3LAQ0
+E3LD$
+E3LD$0
+E3LD$8H
+E3LD$@HHuHNHL$ H
+E3LH
+E3LHA
+E3LHD$XI
+E3LHEA
+E3LI
+E3LL$
+E3LL$0AP
+E3LL$PI
+E3L[HL[XD[
+E3Lc
+E3LcE
+E3Ll$@
+E3Lt$8Lt$@Lt$HMMLL=i
+E3LypH
+E3MAL=
+E3MALHL9yH
+E3MDt$ HL$8DD55
+E3MHA
+E3MHE
+E3MHH
+E3MIDHL$P
+E3THHX
+E3WD$
+E3YA
+E3ZA
+E3cHL$0aH$
+E3fD$H
+E3fD$nHD$
+E3fD9
+E3fDXfD9
+E3fH
+E3fYH
+E3oHH [H
+E3pDL$pHT$hH
+E3uIcH
+E3x:A(
+E3xpHL$8A@
+E3y}Hu
+E4$A
+E5$a2Eir.R
+E58ew.uFy9LJGZ
+E5FU
+E6s''
+E:t0@
+E:tKHL$0
+E:uQHE
+E<(u
+E<Xw
+E@0mX
+E@HL$h
+E@HL$hN
+EA AA
+EA!AA
+EA:t
+EAIH
+EAInHd$ 
+EALD
+EALHL@I
+EALK
+EAPD
+EA_L
+EAitH$
+EB At
+EBff=
+ED$ 
+ED$(
+ED3zHT$HD
+ED8$
+EDBD
+EDD33
+EDHDl$(D$ 
+EDHEt
+EDHID$(
+EDT$H
+EDd$0DHHD$
+EDl$ EHL$PAVH
+EDl$ HL$P
+EE-E3I
+EE333
+EE33Dl$ 
+EE3A@t5fA
+EE3H
+EE3HDg
+EE3IDv
+EEA@t
+EEH$
+EEH.
+EEHHu
+EEHp
+EEHyHH
+EEN3HDs
+EEiH
+EF!H$
+EG$HL$
+EG@@t
+EGHrD[4(-
+EH$p 
+EH-u
+EH1.
+EH6H
+EH8AHHp}A
+EH>H
+EHD$(HH
+EHD$(HHt$ 
+EHD$0
+EHD$@$
+EHD$X$
+EHDL$(3DL$ 
+EHH$
+EHL$ E
+EHL$@Ll$
+EHT$@HL$ 
+EHT$HHP
+EHcU
+EIHHkXH
+EIHXHXDpDpXHX59HL$0Dt$PDt$H!9HL$
+EIHtHcH
+EIL$
+EILLD$(L
+EK IC McLMK
+EKK$h7=]q]L
+EKL$p
+EK_H
+EL$0HHHHX
+EL$4
+EL$AT$.LHH
+EL3HLD$ u
+ELD$
+ELD$(
+ELDd$(H
+ELHDT$ R
+ELHDd$(H
+ELHIr=
+ELHL
+ELIH
+EMAA
+EMIDt$PVM
+ENE3HD{
+ENZs
+EPSo
+EPTJ
+EP}zVT:
+EQ3H
+EQK7Yh
+ERCP$
+ESpIAA3
+ET<[=
+ETIHi
+EULj0%
+EWy_X7s
+EY3O@_-Q
+EY<w
+EZ A
+E['et
+E[w=
+E]7>6{O
+E_we]
+Ec!U/K2
+Edge
+Edge]
+Edo3[
+Ef$P
+EfD9
+EfD9Q
+EgC8C<
+Eh7Oq
+EhBb
+Ei 9ERCPH$
+EiH$
+Ej(-tGRQ
+Ek H$
+Ek:88766666433333211111
+EkD$H
+El$%HfA
+El<Xz
+ElS'
+ElS@t9
+Ellipse
+EmptyClipboard
+EnableAppInstallControl]
+EnableControlledFolderAccess]
+EnableLowCPUPriority]
+EnableNetworkProtection]
+EnableSmartScreenInShell]
+EnableVirtualizationBasedSecurity]
+EnableWindow
+EncodePointer
+EndDialog
+EndOfLife
+EndPaint
+EndPath
+EnterCriticalSection
+EnumChildWindows
+EnumProcessModules
+EnumProcesses
+EnumResourceNamesW
+EnumThreadWindows
+EnumWindows
+Eo0LLA
+EqBnm
+ErsNjyLtPY4!
+EsE{MsEsICE{MsMsMsMsAD854
+EslT
+Et AA
+Et.A
+Et2Et-E3HAP
+Et6HK
+Et@D
+EtDFH
+EtIf3u-I
+EtVD
+EtbE3EEO
+Ethiopic
+EtmE
+EtomhT
+EtpE2A
+EttH$
+Eu HK
+Eu(@0t
+Eu2Hl$pH0A]A
+Eu3H
+Eu7H
+EukEufub
+EwzQ4
+Ex8Qi
+ExAAAoEG
+Exclusions]
+ExitProcess
+ExitThread
+ExitWindowsEx
+ExploitGuard_d.reg
+Explorer
+Explorer]
+ExtCreatePen
+ExtractIconExW
+Ey)A
+EyDA
+EyJD$0
+Ez[Tc
+E{8AC9
+E{PE{LIXH
+E{PE{LIXI
+F IHc 
+F$0tyPoM
+F'It
+F03MF>
+F0fG
+F2059U-
+F22:
+F33DHB
+F3Au)
+F4J.
+F6c{%%q
+F7DMN
+F84't!HH
+F:Uk{
+F<:!36mJ2
+F>wD
+F@'yg'
+F@7RRL
+F@g%%F
+F@u'HT$HHL$xLD$@
+FAIL
+FD$0 
+FE3DHHu
+FE3H
+FEHH)
+FG0.rccyD
+FHAD
+FHLM
+FHd$ 
+FJRHt
+FKk0I
+FK}_
+FM6b>
+FNKOe
+FOAH
+FOR /R %%f IN (Remove_SecurityComp
+FOR /R %%f IN (Remove_defender
+FPjK8
+FQ H_@
+FRCz@OOUSf)BIF
+FTH]
+FU>c{
+FVR@N4H{
+FXM3H
+FYCm_>9
+FZNLC
+F[2 
+F[H18
+F]XB
+F_34
+F_HO@-
+Features]
+February
+FgHK
+FgrWu1
+FiHf
+FileMaps
+FileTimeToLocalFileTime
+FileTimeToSystemTime
+FillRect
+FindClose
+FindFirstFileW
+FindNextFileW
+FindResourceW
+FindWindowExW
+FindWindowW
+FipE
+FirewallPolicy
+FkK1H
+Fl4v
+FlQJMXY
+FlashWindow
+FlsAlloc
+FlsFree
+FlsGetValue
+FlsSetValue
+FlushFileBuffers
+Fmv7
+FnF>
+Fnt9Fu
+Folder
+FormatMessageW
+Fqv!3.
+FrMPbZhM/T
+FrameRect
+FreeEnvironmentStringsW
+FreeLibrary
+Friday
+FsLD$0HH
+Ft7U}
+FtpGetFileSize
+FtpOpenFileW
+Fu.H
+Fu5!Kq0VH
+Fz_F:mEE49
+F}!-
+F}AaBrB
+G$Le
+G(D$
+G(Mj
+G-NH
+G/@e
+G0HO(
+G0HO(A
+G0Zzp44tn11
+G1G3G2%
+G2HO(
+G2HO(A
+G3Et
+G3rrFKu
+G4RG
+G4YS 
+G5HO(
+G5HO(A[
+G7G9G
+G8HH
+G98A
+G98C
+G:3HL$ Ht$ Ht$0A
+G:fA
+G:t$Hc$ 
+G<.5
+G<kh
+G=3H
+G=OH.9
+G>NBOD
+G@ecQ
+G@iQ3<
+GAAHt/
+GAczC
+GBG>
+GC= 
+GCJyxF5(N
+GD$h
+GDD$
+GDI32.dll
+GE3D3HK0
+GE3D8
+GE3HS
+GELJJpG)
+GFR0tF
+GFiIXjZ
+GG'J<_(
+GG4O=q
+GH$H
+GH7A
+GHHGHL
+GHL$ Hc
+GHL$ LHL$HT$ IHL$ H
+GHL$XGHL$xGH$
+GHO L
+GHT$p
+GHZ=B%
+GHcH
+GHcHc$ 
+GHt H
+GL9D
+GLcH
+GLcM
+GOOw
+GPjYiFy
+GQIHR
+GQud]3H
+GSPdNGe
+GU _V8
+GUmz!@
+GVnv
+GX09/-oBCj[
+GXQj
+G]QJ
+G]i95wyx
+Gb]k!
+Gc35:
+GctK{Z
+Georgian
+GepY
+GetACP
+GetAce
+GetAclInformation
+GetActiveWindow
+GetAsyncKeyState
+GetCPInfo
+GetCaretPos
+GetClassLongPtrW
+GetClassNameW
+GetClientRect
+GetClipboardData
+GetCommandLineW
+GetComputerNameW
+GetConsoleCP
+GetConsoleMode
+GetConsoleOutputCP
+GetCurrentDirectoryW
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThread
+GetCurrentThreadId
+GetCursorInfo
+GetCursorPos
+GetDC
+GetDIBits
+GetDateFormatA
+GetDesktopWindow
+GetDeviceCaps
+GetDiskFreeSpaceExW
+GetDiskFreeSpaceW
+GetDlgCtrlID
+GetDlgItem
+GetDriveTypeW
+GetEnvironmentStringsW
+GetEnvironmentVariableW
+GetExitCodeProcess
+GetFileAttributesW
+GetFileSize
+GetFileType
+GetFileVersionInfoSizeW
+GetFileVersionInfoW
+GetFocus
+GetForegroundWindow
+GetFullPathNameW
+GetKeyState
+GetKeyboardLayoutNameW
+GetKeyboardState
+GetLastActivePopup
+GetLastError
+GetLengthSid
+GetLocalTime
+GetLocaleInfoA
+GetMenu
+GetMenuItemCount
+GetMenuItemID
+GetMenuItemInfoW
+GetMenuStringW
+GetMessageW
+GetModuleBaseNameW
+GetModuleFileNameA
+GetModuleFileNameW
+GetModuleHandleW
+GetMonitorInfoW
+GetNativeSystemInfo
+GetOEMCP
+GetObjectW
+GetOpenFileNameW
+GetParent
+GetPixel
+GetPrivateProfileSectionNamesW
+GetPrivateProfileSectionW
+GetPrivateProfileStringW
+GetProcAddress
+GetProcessHeap
+GetProcessIoCounters
+GetProcessMemoryInfo
+GetProcessWindowStation
+GetSaveFileNameW
+GetSecurityDescriptorDacl
+GetShortPathNameW
+GetStartupInfoA
+GetStartupInfoW
+GetStdHandle
+GetStockObject
+GetStringTypeA
+GetStringTypeW
+GetSubMenu
+GetSysColor
+GetSysColorBrush
+GetSystemDirectoryW
+GetSystemInfo
+GetSystemMetrics
+GetSystemTimeAsFileTime
+GetSystemWow64DirectoryW
+GetTempFileNameW
+GetTempPathW
+GetTextExtentPoint32W
+GetTextFaceW
+GetTickCount
+GetTimeFormatA
+GetTimeZoneInformation
+GetTokenInformation
+GetUserNameW
+GetUserObjectInformationA
+GetUserObjectSecurity
+GetVersionExW
+GetVolumeInformationW
+GetWindowDC
+GetWindowLongPtrW
+GetWindowLongW
+GetWindowRect
+GetWindowTextLengthW
+GetWindowTextW
+GetWindowThreadProcessId
+GetWindowsDirectoryW
+Gf-4Z
+Ghz6 i=
+GitHub Repos
+GlDgpH
+Glagolitic
+GlobalAlloc
+GlobalFree
+GlobalLock
+GlobalMemoryStatusEx
+GlobalUnlock
+Gmti
+GnHr9
+Gothic
+GqZq
+Greek
+GrpN
+GsBn]O
+Gt!Xp{
+GtQB
+GtY1so
+Gt_Kt{4
+Gti)
+Gu5LL$HLHHVN
+Gujarati
+Gurmukhi
+GuutEX
+GwZ 
+Gwu2yh@N
+GwvJ
+Gxi3A
+GyO'
+G{(eHGlaX
+H $6A
+H A4
+H A_A
+H FA
+H H 
+H H/H13
+H H@(
+H HA
+H HALQHD
+H HK
+H L-CMo@n
+H LeLmLuL}H]H]%h
+H P0H
+H [ 
+H [1@SH HHuHH [H
+H [3
+H [5
+H [@
+H [@S 
+H [@SH
+H [@SH 
+H [@SH 3H9
+H [@SH =g
+H [@SH H
+H [@SH H2E3L9[
+H [@SH HE3L9[
+H [@SH HHP
+H [@SH HHh
+H [@SH HRE3L9[
+H [@SH HZ
+H [@SH Ha
+H [@SH Hc
+H [@SH HrE3L9[
+H [@SH Ht
+H [@SH Hy
+H [@SH Hy8
+H [@SH I
+H [@SH Lc
+H [@SH a
+H [@SH y
+H [@SH03I
+H [@SH@=k
+H [@SH@A
+H [@SVWH
+H [Et=HJ
+H [H
+H [H%
+H [H%U
+H [H%[
+H [H(
+H [H(3
+H [H(39A
+H [H(7
+H [H(8H
+H [H(A
+H [H(H
+H [H(HI
+H [H(Hy
+H [H8HD$@L
+H [H8u
+H [H@SH H
+H [HA
+H [HHX
+H [HY0
+H [Ht$
+H [HtBSH HH
+H [Hu
+H [LI[
+H [LL$ H8y
+H [VHHX
+H [e@SH HHUHH [@SH a
+H [jH
+H [r
+H ]@UH H
+H ]@UH HH
+H ]@UH HHM0
+H ]@UH0HHM
+H ]@UH0H}p
+H ]@UH@H
+H ]@UH@H}@
+H _@SH A
+H _@SH H
+H _@SH H(
+H _@SH HA
+H _@SH HH
+H _@SH Hy
+H _@SH y 
+H _@WH HH
+H _H
+H _H(HB
+H _H(HH
+H _H(HI
+H _H(L
+H _HHX
+H _HSUVWH
+H _Ht$
+H _LI[
+H bHK@YH
+H!KHL$@HWH
+H!_8H_t
+H!t$ E3E333
+H!tvZ
+H!u-HcH$
+H$.E
+H$78=
+H$@ 
+H$HHt
+H$HN(Ht
+H$HT$ HL$
+H$P 
+H$P-
+H$X 
+H$X-
+H$iLH$
+H$p-
+H%7N
+H%8R
+H%B%
+H%CE
+H%HM
+H%I$8
+H%et
+H'HH
+H( H
+H(2H(f=
+H(38
+H(3H
+H(<ZH(H
+H(=e
+H(@SH 
+H(@SH 3H9
+H(@SH H
+H(@SH H2
+H(@SH H3 H
+H(@SH H5
+H(@SH HA
+H(@SH HHI
+H(@SH HHI8Ht
+H(@SH HHZHH [H
+H(@SH HHwHH [H
+H(@SH HHzVHH [
+H(@SH HO
+H(@SH HrHK8Ht
+H(@SH IM
+H(@SH0H
+H(@SH0LHt
+H(@SH@Hd$X
+H(@SUVWATAVAWHP
+H(@VH0D$
+H(@WH HH
+H(A0
+H(E3
+H(H!
+H(H%gE
+H(H(
+H(H(--p
+H(H(H
+H(H(Q
+H(H(Wu
+H(H(_Hu
+H(H8D$
+H(H8HH
+H(H9
+H(HA
+H(HB
+H(HG
+H(HH9Q
+H(HHX
+H(HI
+H(HL$
+H(HP
+H(Hc
+H(Hl$
+H(Ht
+H(Ht$
+H(HxHL$0
+H(Hy
+H(K7
+H(Lt
+H(MA8HI
+H(Mt
+H(TA
+H(X/
+H(YH
+H(ZH(H
+H(_[H(y
+H(gu
+H)3H _H
+H)3HL$$DBLD$ P
+H)H5HL]HHDH
+H)H7
+H)H8
+H)HH5HL=5HHrDH
+H)HcL$ H
+H)Hi
+H)[LH
+H)gD
+H)pnO[
+H)uGH
+H-$c
+H-%)
+H--HL$0u
+H-H$p
+H-Zg'
+H-_L$
+H-c%
+H-tlP
+H.Dp
+H.Y@t3$8
+H.c 
+H.ct
+H.fu AHd$ 
+H.tG
+H/2=c
+H/<]k:CnS
+H/BL]
+H/H$
+H/HH
+H/HH$
+H/HtHE
+H/L$@
+H0A]A
+H0A_A
+H0HL$hHH
+H0Hi.L
+H0L$
+H0THL$ :)HL$ t
+H0[@SH HH
+H0[E33u3HHX
+H0[H
+H0[HHX
+H0[f9
+H0]@UH HH
+H0]@UH0HMP0
+H0_H
+H0_LI[
+H0v0f
+H1Au
+H1Bu
+H1HL$
+H1Ht
+H1Hu
+H1IM
+H1JW:
+H1u9HL$xHHT$xH
+H20!rh6
+H25H
+H2EH$
+H2HT$0DLH
+H2bWju.A0
+H2tzH
+H3%hj
+H3.H$
+H3:zH$
+H3<L]
+H3AB
+H3D$xI!sn
+H3H$
+H3H$ 
+H3H$p
+H3H9A
+H3HD$
+H3HD$(LD$ A
+H3HD$0B
+H3HD$8HI3
+H3HD$P=
+H3HD$pE3IHLIDt$@I
+H3HD$pH
+H3HD$pHHL$0HT$0HL$@IIHL$@L
+H3HD$xHHHL$@I
+H3HD$xHHHL$@IL
+H3HE
+H3HE L
+H3HE(H
+H3HE0L
+H3HS8H
+H3H]@HuHH}PHe
+H3HxA
+H3H}
+H3I.
+H3IAH
+H3IDB
+H3IHHDBLA@P
+H3IHh
+H3ILE
+H3LE3
+H3LH
+H3LHt
+H3LJ
+H3Lc
+H3M$
+H3MLM
+H3bL@8
+H3f-9
+H3f9A
+H3ffft't
+H3hE3D3HP
+H3uqHS
+H4H$
+H4HD$x
+H4HL$0E3HH$
+H4Ht
+H4II
+H4LL$PLD$pHH$
+H4M6'z
+H4bE3E333Lt$ 
+H4qH$
+H57Q
+H5@fW
+H5A'
+H5G!
+H5H$
+H5HL$0E3HH$
+H5f=
+H5m(B
+H6HL$0E3HH$
+H7H$
+H7HO
+H7O9 
+H7t3
+H7tE
+H8.E
+H83EL
+H8@SH H
+H8@SH HHKhH
+H8DA
+H8H8
+H8H8DJ
+H8H8H
+H8HHH
+H8HHX
+H8HXH
+H8HpitB9o
+H8Hu'
+H8LL$ MDHH
+H8MIHD$(HD$4LL$0LD$XHHD$ B3:
+H8OuRy
+H8_[@SHpHHL$HHu
+H8dA
+H8ff
+H8x 
+H8{V/]
+H9(u
+H91tYH
+H93IHcL$XH
+H94H
+H94toH
+H99t
+H9:H
+H9:t
+H9B.@H
+H9D$X
+H9DwtwxL9
+H9GP
+H9Gt
+H9H9
+H9HDd$
+H9HI
+H9HL$0
+H9HL$pH7D
+H9L$@H/@
+H9O 
+H9Pt
+H9YH
+H9l$
+H9n8
+H9pL
+H9q(tgHL$ 
+H9t$0t
+H9uZHS
+H9y(
+H:DODA
+H:HT$0dHHyHH
+H:R3H
+H:pI
+H:uWItNtJH
+H<Ht
+H<{A:t}HL$
+H=%M
+H=8n
+H=9Z
+H=:Z
+H=>d
+H=K3
+H=N!
+H=QX
+H=RX
+H=UX
+H=VX
+H=YX
+H=Z@t3$8
+H=ZX
+H=[X
+H=_Z
+H=aX
+H=bX
+H=eX
+H=fX
+H=gX
+H=hL
+H=lX
+H=pX
+H=qX
+H=rX
+H=t%
+H=x$(
+H=yX
+H={X
+H=}X
+H>:t4A:t
+H>r1
+H>rH
+H>rH$
+H>tkH>teAE
+H@(L
+H@/H
+H@83t
+H@:t
+H@AS
+H@A]A
+H@A_A
+H@DG$HW
+H@HK
+H@HQHQIHQHQHQuf
+H@Ht$8HH
+H@LL$XLD$xHH$
+H@SH 
+H@SH A
+H@SH HHtAHt<L
+H@SH Ht
+H@SH I
+H@SHPHHu
+H@WH A
+H@[3Mt%LA
+H@[@SH IH
+H@[@SH@HHL$ 
+H@[@SH@HL$ 3HD$ D
+H@[@SHPA
+H@[H
+H@[HHX
+H@]@UH H
+H@]H(H
+H@_@SH HH
+H@_H
+H@_H(
+H@_HHX
+H@_HL$P
+H@_ML
+H@aHL$PH
+H@u>H
+HA HA(HA0HA8HA@fA
+HA(A0HA@A8
+HA(Ic
+HA0I
+HA8@
+HA8B
+HA:t7HG
+HA:uHI
+HAAt
+HAD$
+HADH
+HAEHH
+HAH0HH
+HAHD
+HAHH
+HAHT$pHAHL$
+HAII{s=ERCPt
+HAIcH
+HAIfA
+HALHN
+HAXA
+HAhA
+HAhDD09A
+HAmI
+HAt@M
+HAxH
+HB HA 
+HB HA H
+HB(HA(HB0HA0HB8HA8HB@HA@
+HB0H
+HB0I
+HB3H [HHX
+HB8H
+HB8HA8Ht
+HB8I
+HB@HA@Ht
+HBGteH$
+HBHA
+HBHAA
+HBHE
+HBHH
+HBHHAHHBPHAPHBXHAXHB
+HBHO
+HBHT$ H5H
+HBa'O
+HC C$
+HC HC
+HC HD$0HC
+HC Ht
+HC!8Fr/8G
+HC(H
+HC(HA(I
+HC(HD$xHO8HC0$
+HC(Hc0
+HC(H{0H{8HH{@H
+HC0H
+HC8H
+HC8HL$
+HC8HT$ H
+HC8Ht
+HC@H
+HC@H$
+HC@H$H
+HC@H$P
+HC@HL$
+HCHH
+HCH{
+HCMHD
+HCPL
+HCQHHcLL
+HCXH0[H
+HCbH
+HD (
+HD$ 
+HD$ $
+HD$ (H8H
+HD$ .
+HD$ 4qE3A
+HD$ @$
+HD$ A:
+HD$ D
+HD$ D$(
+HD$ EL
+HD$ H
+HD$ H$ 
+HD$ H<
+HD$ HL$pH3H
+HD$ Hl$p
+HD$ I
+HD$ J
+HD$ LL$PLD$XHT$
+HD$ LcD$L
+HD$ S
+HD$ XH8H8H
+HD$ ZH
+HD$ ZHH
+HD$ dAat$AAt
+HD$ f
+HD$ lH$
+HD$ lHT$0HL$@H$
+HD$ mH$P
+HD$ o
+HD$ tH
+HD$ uu-HQ'
+HD$ wD
+HD$(
+HD$(!
+HD$($
+HD$(3MIA
+HD$(D$ 
+HD$(D$hD$ HH8HHD$xHd$0
+HD$(D$hD$ h:HD$pDL$
+HD$(D$hD$ r
+HD$(DB
+HD$(DHH
+HD$(DO
+HD$(Dd$ uH
+HD$(E33D$ 
+HD$(H
+HD$(H$
+HD$(H$P
+HD$(HB
+HD$(HD$
+HD$(HD$0HHD$ 
+HD$(HD$@HHD$ 
+HD$(HD$HLD$83D$
+HD$(HD$pE3E3
+HD$(I
+HD$(IF(I
+HD$(LL$ MLH
+HD$(LL$HLl$ 7
+HD$(T$ Q
+HD$(d$ 
+HD$(f
+HD$(fL$ IAS0HDBE
+HD$0
+HD$0 HD$0
+HD$0 HD$0D
+HD$0!P
+HD$0$
+HD$0A
+HD$0AL$
+HD$0D
+HD$0D$lD$(D$hD$ 
+HD$0DD$(HMH
+HD$0DD$(IR
+HD$0DD$(L$
+HD$0DD$(MIHH
+HD$0DL$(D$
+HD$0EH
+HD$0H
+HD$0H$
+HD$0H$ 
+HD$0H(
+HD$0H9t$0
+HD$0HD$@L$
+HD$0HD$hA
+HD$0HD$hHD$(fDt$ AS0=
+HD$0HD$pHD$(Dd$ 9A
+HD$0HE
+HD$0HH
+HD$0HH(
+HD$0HHD$0
+HD$0HttHcL
+HD$0I
+HD$0L
+HD$0L$
+HD$0L$(HH
+HD$0LL$HHHD$ 
+HD$0LL$XLD$pH
+HD$0l$8
+HD$0n
+HD$4
+HD$8
+HD$8A
+HD$8C
+HD$8F
+HD$8G
+HD$8H
+HD$8H$
+HD$8H(H(
+HD$8HL$HB
+HD$8Hl$0L$
+HD$8I
+HD$8IA
+HD$8ID$
+HD$8L$0D$
+HD$8L$0HL$hE3L3
+HD$8Ld$0LD$pLd$(Ld$ 
+HD$8Lt$0
+HD$8Lt$0t$(ID$
+HD$8fA<
+HD$8t
+HD$8wAE
+HD$8x@
+HD$@
+HD$@A
+HD$@D$8
+HD$@DHD$8Lt$0L3
+HD$@Dl$8l$0D
+HD$@GDl$8
+HD$@H
+HD$@H$
+HD$@H@
+HD$@HCHl$HHl$PHl$XL
+HD$@HD$(HD$HH$ 
+HD$@HHD$8Lt$0DL3
+HD$@HI
+HD$@HL
+HD$@Hx
+HD$@I
+HD$@L
+HD$@L$
+HD$@LH
+HD$@LL$0L$
+HD$@LL$H3MH
+HD$@d$8
+HD$@t$8H$h
+HD$D
+HD$H
+HD$H$
+HD$HA
+HD$HD9p
+HD$HH
+HD$HH$
+HD$HHD$0HD$@HD$(H
+HD$HHD$pHD$PHD$xL$
+HD$HHD$x
+HD$HHD$xL$
+HD$HHF
+HD$HHT$@HD$(H$P
+HD$HHX
+HD$HHt$X
+HD$HI
+HD$HLD$@A
+HD$HLL$xHT$0MHD$ 
+HD$HLcHH
+HD$IH
+HD$P
+HD$PA
+HD$PD
+HD$PH
+HD$PH$
+HD$PHT$8HL$
+HD$PHd$ 
+HD$PHd$H
+HD$PHtzHd$8
+HD$PI
+HD$PL
+HD$PL$T
+HD$PLcB
+HD$PRHo
+HD$X
+HD$XD$
+HD$XE3HD$(E3HH
+HD$XH
+HD$XH$
+HD$XH0[H8HA(LI0
+HD$XHD$PHD$HH
+HD$XHHD$P
+HD$XHt$PHD$
+HD$XHu
+HD$XI
+HD$XL$
+HD$XL$P
+HD$XL$PL$
+HD$XLL$PHHHD$ D
+HD$XLL$hH
+HD$Xy
+HD$XyH$
+HD$dD$
+HD$h
+HD$hD
+HD$hD$8
+HD$hD$P
+HD$hH
+HD$hH$
+HD$hHB
+HD$hHF
+HD$hHH
+HD$hHI
+HD$hI
+HD$hLL$D
+HD$htqHQLD$hHHLu
+HD$p
+HD$pA
+HD$pDL$
+HD$pH
+HD$pH$
+HD$pHB
+HD$pHD$8HD$hHD$0HD$
+HD$pHD$XD
+HD$pHG
+HD$pHH
+HD$pL
+HD$pL$
+HD$pV
+HD$px
+HD$x
+HD$x3HD$(HD$pHD$ 9$
+HD$xAB$(
+HD$xD$p
+HD$xD7
+HD$xH
+HD$xH$
+HD$xHB
+HD$xHC
+HD$xHD$
+HD$xHD$(HD$pHD$ HHH
+HD$xHE
+HD$xHH
+HD$xHL$@H
+HD$xHT8HL$p
+HD$xHTpHL$p
+HD$xL$
+HD$xMILHD$hHHD$ V
+HD$xQHHD$(HD$pHD$ H
+HD-<Hu
+HD5 U/:T
+HD6i
+HD8t$
+HD8t$Ht
+HD8u
+HD8y
+HD:tDD
+HD@HT
+HDADt.HT$0!
+HDA{
+HDDDD$
+HDE H
+HDGh
+HDH@:t
+HDHL$0H
+HDHt
+HDID
+HDIE
+HDLII
+HDND
+HDT$ 
+HDT$ 3y$
+HDT$XA
+HDd$ y$
+HDd$(D:t
+HDd$hD$ 
+HDgDDgHH
+HDl$ AL$
+HDnD
+HDt$ A3
+HDt$(H
+HD{HHG
+HE2I
+HE3A
+HE3E3
+HE3EH$
+HE3H
+HE3H EIHD$
+HE3HL$XIIHLd$0L
+HE3HL$pMH@
+HE3I
+HE3LHIHLvtI(H
+HE3hdp$
+HEAAQSD$ 
+HED9t$@
+HED}
+HEF@IK3IPMDt$
+HEH0ILHtcP
+HEwDd$
+HF6X
+HF8H
+HF@:u
+HFH$ 
+HFHHuj$
+HFHM
+HFHc
+HFXL
+HG(H
+HG(HA(H
+HG0I
+HG8H{0HC83HG8HH
+HG@E
+HG@F
+HG@H
+HG@I
+HGH$T
+HGH8
+HGH@4
+HGHA
+HGHH
+HGHH{
+HGH_
+HGXA
+HGfu
+HH -BE3HHD
+HH -LD$XI
+HH ./I
+HH .HO
+HH 4t
+HH :.HO
+HH :HH9
+HH <
+HH ADAA
+HH BHHRH
+HH BLD$XHHHT$XHDuZ
+HH CD
+HH CE3ZH
+HH CHH:
+HH H
+HH HD$@H
+HH HH H$ 
+HH HO
+HH [
+HH [(LD$XH
+HH [@SH 
+HH [@SH H
+HH [@SH HHA
+HH [@SH ]
+HH [@SH@H
+HH [A
+HH [H
+HH [H%
+HH [H9
+HH [HHX
+HH [Y{
+HH [l
+HH _@SH H
+HH _H
+HH _H(H
+HH eH
+HH m9HHBJ
+HH pCDHH>
+HH raDH}
+HH tD
+HH ucDEt
+HH!HH0
+HH$8
+HH$@
+HH$@ 
+HH$P 
+HH$p
+HH%HHt$8H
+HH%I
+HH'L
+HH(!y
+HH(3:
+HH(3H
+HH(A
+HH(AI
+HH(H
+HH(H%
+HH(H%6
+HH(HD$@H
+HH(HT$PIC
+HH(HX -H
+HH(HX /H
+HH(LA
+HH(St
+HH(j:DH
+HH(jt@
+HH(ueDE
+HH(xLA
+HH)I
+HH-0H
+HH-8
+HH-9HL$@
+HH-f
+HH.@
+HH.HcH
+HH0%HM
+HH04>DH{
+HH0@yD
+HH0H
+HH0HN8I
+HH0Ry
+HH0[
+HH0]
+HH0aDH}
+HH0f
+HH0fA
+HH2HHHL$ 82jH
+HH3%
+HH3H
+HH3L
+HH7HHH(
+HH7Ht
+HH8G
+HH8H8Hd$ 
+HH8HHX
+HH8HO0I
+HH8HcA
+HH8Hd$(
+HH8Hx(HD$@H0
+HH8O>$
+HH8bH
+HH8l1HD$PH
+HH9$
+HH9O
+HH9Q
+HH:mm:ss
+HH<vFH
+HH=PLHHH
+HH>EE3IDv
+HH@3I
+HH@@
+HH@H
+HH@HD$@H
+HH@i
+HH@iA
+HHA0
+HHAD$
+HHAM
+HHAxH
+HHBHT$pHKBHL$
+HHCH
+HHCHH
+HHD$
+HHD$ 
+HHD$ B
+HHD$ H
+HHD$ H$
+HHD$ Hu
+HHD$ LHt$(LHD$8H
+HHD$ T
+HHD$ ]xHD$hL
+HHD$ iHD$XL
+HHD$ sHD$hL
+HHD$ uHD$
+HHD$ z
+HHD$ zuL$P
+HHD$(H$
+HHD$(HE
+HHD$(ID$
+HHD$0
+HHD$0$
+HHD$0H
+HHD$0L$(HH
+HHD$0LHD$(HD$ 
+HHD$8H
+HHD$8I
+HHD$8t$(I
+HHD$@
+HHD$@$
+HHD$@I
+HHD$@SM
+HHD$H
+HHD$HH$
+HHD$HHHD$(HD$LHD$ 
+HHD$HL$
+HHD$PH
+HHD$PLD$(
+HHD$X
+HHD$XLL$PE33HHD$ 
+HHD$p
+HHD$pI
+HHD$xD$0
+HHD$xD$p
+HHD%
+HHD8
+HHDAH
+HHDB
+HHDD3H
+HHDH$
+HHDL$XH
+HHDd$ t
+HHDg
+HHDk
+HHDl$0D$8
+HHDl$0HD$ D$8
+HHDn
+HHE3L$
+HHEAHOD3-
+HHED3H
+HHEDc
+HHEE3HDc
+HHEL$
+HHG%
+HHGD{
+HHH [@SH Hbe3:t
+HHH [H
+HHH _H
+HHH _Hl$
+HHH$ 
+HHH$@
+HHH(H
+HHH(}HC0
+HHH3ILHl$0
+HHH8)
+HHH9A
+HHH9Y
+HHHA
+HHHA(
+HHHA(E3{
+HHHCH
+HHHD$ q
+HHHD$@L
+HHHD$P
+HHHDHH
+HHHE
+HHHE3IMLAuA
+HHHEIcfE3I
+HHHF
+HHHF>H
+HHHG
+HHHH
+HHHH$
+HHHHC
+HHHHG
+HHHHH
+HHHHH{
+HHHHIII
+HHHHL$
+HHHHf9(t6Hf90u
+HHHHt$8H
+HHHI
+HHHI8
+HHHIHjL[
+HHHII
+HHHIt
+HHHJD
+HHHL$ 
+HHHL$ H
+HHHL$@H=UH
+HHHL$@IIeHu
+HHHM
+HHHMA
+HHHN
+HHHO
+HHHR
+HHHSiD
+HHHT$ HA
+HHHa
+HHHcH
+HHHd$0
+HHHf
+HHHpHC
+HHHpHHFqHf
+HHHt
+HHHu%
+HHHu'3!
+HHHu(
+HHHuH
+HHHzHr
+HHI@H
+HHIA
+HHIH
+HHIItH
+HHIM
+HHIPHH
+HHIcXHT$ E3HHL$ 'at
+HHKHHKHO
+HHL$
+HHL$ 
+HHL$ @
+HHL$ @N
+HHL$ A
+HHL$ AID
+HHL$ H>GHL$@4GH
+HHL$ HK
+HHL$ HL
+HHL$ I
+HHL$ IHN'L[
+HHL$ IHc
+HHL$(3A
+HHL$0
+HHL$0E3H
+HHL$0H$
+HHL$0HH
+HHL$0IH(E3MAm
+HHL$0IHD$ 
+HHL$0IL.EHL$P$EHLkt
+HHL$0LE3@2E2E2c
+HHL$0MH
+HHL$0t%HD$PDLHD$(
+HHL$@
+HHL$@AI$
+HHL$@H
+HHL$@H$
+HHL$@HLHL$8H
+HHL$@IADfD$
+HHL$@MH
+HHL$Dh
+HHL$HE3H
+HHL$P
+HHL$PAH
+HHL$PE3
+HHL$XD$L
+HHL$XHM
+HHL$XS
+HHL$pE3
+HHL$pH3H
+HHL$x
+HHL$xIH@ 
+HHL9A
+HHL@
+HHLAH$0
+HHLC
+HHLE3HH
+HHLH$
+HHLHD$x
+HHLHiE3Al$
+HHLc@
+HHMC
+HHMH
+HHN(
+HHNHHC
+HHOGE3
+HHOHD$@H
+HHOHHt$8H
+HHPA_A
+HHP[H
+HHQ(HHI
+HHRHHG
+HHS(E3HH
+HHT$
+HHT$ 
+HHT$ <HL$ 
+HHT$ A
+HHT$ HL$
+HHT$ fLD Hs
+HHT$03A@
+HHT$0HL$p
+HHT$P
+HHT$X
+HHTA
+HHWF
+HHX 
+HHYH
+HHYHT$ E3HHL$ Zbt
+HHZHT$ E3H=HL$ c3@:t
+HH[HcH
+HH_D3LHL
+HHbEH
+HHc'f%
+HHc1H
+HHcB
+HHcH
+HHcH$ 
+HHcI
+HHcJxLI@t(t
+HHcO
+HHcP
+HHcR
+HHcdvHL$ LHE3AH$
+HHce
+HHcfD9$Gt
+HHcuHL$ LHE3
+HHd$ 
+HHd$0
+HHf0
+HHf3H
+HHfAy
+HHfH
+HHfHcH
+HHfffff
+HHgH
+HHgH$
+HHh3HL$
+HHh[
+HHk:H
+HHk<H
+HHkHH
+HHkHT$0HL$x
+HHl$ }H
+HHl$8Ld$H3
+HHl$XHt$
+HHl$hHl$pl$xl$
+HHo@
+HHoH
+HHoxLHHao
+HHqA
+HHt!
+HHt$ 
+HHt$ 0
+HHt$ L
+HHt$8H
+HHt$8HG0
+HHt($
+HHt1
+HHt3
+HHt8
+HHt=H
+HHt>H
+HHtA
+HHtE$
+HHtHD$
+HHtHHYH1H
+HHtJI
+HHtXH
+HHtgHI
+HHth
+HHthH
+HHthHT$0H
+HHts@
+HHtyH
+HHu(
+HHu-HH
+HHu/Ht
+HHu3
+HHuD_E3H
+HHuDd$PE
+HHuH
+HHuH [@SH HH
+HHuH [H
+HHuHH
+HHuLK
+HHu[
+HHuo9
+HHv7H6EHw
+HHvHC
+HHxHHL$(A
+HHxHd$0
+HHxI
+HHyHHt$8H
+HH{HH
+HH{PHK@H
+HH{st$@Dd$DDE3@
+HH}!
+HH}H
+HI !DH
+HI H
+HI HD$
+HI MnDA
+HI a
+HI hHHS
+HI i$
+HI tD
+HI(.D
+HI(7n
+HI(DA
+HI(DAA
+HI(H
+HI(I
+HI(I.EII
+HI(YH
+HI(t
+HI0K>
+HI3I
+HI8H
+HI8HH
+HI8a
+HI@Ht
+HIA 
+HIBZ.f5EAr
+HICG
+HID$
+HIE0L
+HIEu
+HIH(HH_u
+HIH0H
+HIH8HH
+HIHH
+HIHH [LI[
+HIHHt
+HIHL$PH
+HIHgi=
+HIHhLC
+HIICHB
+HIIHA
+HIIHr
+HIIIH/H
+HIKMK MCH
+HILL$0IS MHD$ sL$P
+HIML 
+HIT0
+HIXV
+HI[(Ik0IA
+HIcH
+HIcHL@
+HIcK
+HIfD1 H
+HIfD9 t
+HIfH
+HIuH3
+HIuIfffffff
+HIxHt
+HJDw
+HJHl$hH
+HJaHH [H(y
+HK 9
+HK C(
+HK H [H
+HK H!
+HK ISQzHK C@
+HK Vc 
+HK oL 
+HK('
+HK(C 
+HK(H
+HK(H [
+HK(HI
+HK(HK(H
+HK(Ht
+HK(ML
+HK0H
+HK8H
+HK8Ht
+HK@H
+HK@HL$pA
+HK@Ht
+HK@V
+HKD91u
+HKHH
+HKHH [
+HKHHT$ H
+HKHHt
+HKHy_u
+HKMNY9
+HKP0
+HKPC(
+HKPH$@
+HKPH{
+HKVtdHG
+HKX3H{HH
+HKXDd$
+HKXH
+HKXHt
+HKhI
+HKpHKxH
+HKrHHG
+HKxH
+HKxI
+HL A
+HL$ 
+HL$  H
+HL$  t
+HL$ $
+HL$ %HL$ E3E33
+HL$ '
+HL$ )HL$ L$
+HL$ -H
+HL$ -HL$ H
+HL$ .
+HL$ .3
+HL$ 2
+HL$ 2%H
+HL$ 3
+HL$ 3(NHT$ HKsHL$ 1hy=
+HL$ 3A
+HL$ 3H
+HL$ 4
+HL$ 5
+HL$ 9
+HL$ :%HL$ E3E33
+HL$ :t
+HL$ >XEt%@t
+HL$ @
+HL$ @HL$ X3D$(
+HL$ A
+HL$ A@
+HL$ A@<A@@
+HL$ AAH
+HL$ AD50
+HL$ C
+HL$ D
+HL$ D$ @
+HL$ D$(
+HL$ D3
+HL$ DAIH8H
+HL$ DB
+HL$ DD$h
+HL$ DHf
+HL$ DgL$
+HL$ E3
+HL$ E3E33
+HL$ E3IHDH
+HL$ EH
+HL$ EL
+HL$ Et
+HL$ F
+HL$ G$HL$ D$(
+HL$ GHT$ LcJL@A
+HL$ H
+HL$ H$
+HL$ H8@SH HH
+HL$ HD$8
+HL$ HD$8D
+HL$ HD$xH
+HL$ HE2HcI2
+HL$ HH
+HL$ HHL$@
+HL$ HI
+HL$ HL
+HL$ HL$@L$
+HL$ HM
+HL$ HR
+HL$ HT$0H
+HL$ Hf
+HL$ Hf8
+HL$ Ht
+HL$ HtHL$ tHHHdH
+HL$ HyHL$ fDd$({f
+HL$ H}HL$@x}H
+HL$ I
+HL$ IpHT$ LIHL$ 
+HL$ IqHL$ 
+HL$ J
+HL$ J{H
+HL$ L$P
+HL$ LE3
+HL$ LH$
+HL$ LHE3HQH
+HL$ LHE3HT$ HHL$ 
+HL$ LHH
+HL$ LM
+HL$ Lc
+HL$ LcIH7vHT$ I]HL$@p
+HL$ M
+HL$ M$
+HL$ MH1yHL$ fDd$$zfG
+HL$ MHE
+HL$ N
+HL$ O>HL$(
+HL$ PH
+HL$ TH
+HL$ U
+HL$ U_u
+HL$ VHT$ E3H
+HL$ VHT$ E3HJHL$ _t
+HL$ WHL$ X
+HL$ WHT$ E3HHL$ n
+HL$ X3@8$
+HL$ YYHT$ E3HHL$ 
+HL$ Z3 t
+HL$ ZHT$ E3HHL$ oc@:
+HL$ [HT$ E3H9HL$ d
+HL$ [wHT$ HsL$0
+HL$ ]L$P 
+HL$ _
+HL$ _3
+HL$ _t
+HL$ agH$
+HL$ bu
+HL$ byHT$
+HL$ cz
+HL$ du
+HL$ f
+HL$ fI
+HL$ j
+HL$ jH$
+HL$ lHK0H$P
+HL$ lHL$ HI
+HL$ m(HL$ L$
+HL$ nHV
+HL$ qA
+HL$ qHL$ 
+HL$ qi
+HL$ rHu
+HL$ rWHT$ E3HHL$ 6
+HL$ ru
+HL$ t
+HL$ t/HG
+HL$ u
+HL$ x3
+HL$ xHT$ Ht
+HL$ yTH
+HL$ z
+HL$ {Ht$XH
+HL$$
+HL$$LI.HT$$AEfDHyH
+HL$(
+HL$('
+HL$(2=
+HL$(3
+HL$(3A
+HL$(:/HT$(LI
+HL$(H
+HL$(HH
+HL$(HHLH
+HL$(HL$HHd$ 
+HL$(IH%
+HL$(U
+HL$(b/L$ HV
+HL$(fA$
+HL$(jE3E333Ll$Ht$
+HL$0
+HL$0 H
+HL$0!3H$
+HL$0$
+HL$0'BHT$PHL$0
+HL$0'HT$PHL$0
+HL$0'T
+HL$0(HL$H(2HL$0I
+HL$0(HL$h
+HL$0(L$
+HL$0(N
+HL$0-
+HL$0.u
+HL$0/
+HL$00
+HL$003
+HL$00hH
+HL$02
+HL$02HL$0HI
+HL$02L$
+HL$03
+HL$03A
+HL$03A:
+HL$03A:u_HL$0IL]HT$0Io
+HL$03H
+HL$03b
+HL$03f8@
+HL$04
+HL$05
+HL$06nH
+HL$08
+HL$09E:
+HL$0<
+HL$0=
+HL$0>HL$03
+HL$0@
+HL$0@2HT$0H$
+HL$0@H$
+HL$0A
+HL$0A:
+HL$0AA
+HL$0AD$
+HL$0AH
+HL$0B
+HL$0C
+HL$0D
+HL$0D$$
+HL$0D$8
+HL$0D$X
+HL$0DD$<H
+HL$0DHD$(
+HL$0Dl$0H
+HL$0Dr
+HL$0E
+HL$0E3
+HL$0E3D$8
+HL$0E3D$HB
+HL$0E3E33
+HL$0E3H
+HL$0F
+HL$0G
+HL$0H
+HL$0H$
+HL$0H$0
+HL$0H$l
+HL$0H(HL$0
+HL$0H3HH
+HL$0H95G
+HL$0H=LHHLLd$ 
+HL$0H>HL$0I>H
+HL$0H@
+HL$0HD$ H$@
+HL$0HD$pH
+HL$0HE3Y
+HL$0HHD$8Hu(H
+HL$0HHL$0
+HL$0HHT$@H
+HL$0HI
+HL$0HL$ HD$8
+HL$0HL$ HD$8HT$ H
+HL$0HL$ x3L$
+HL$0HL$0HH
+HL$0HL$8HL$PHL$XHL$xHL$pH$
+HL$0HL$@
+HL$0HL$Hq{
+HL$0HL$XLHL$(H$
+HL$0HL$hC2H$0
+HL$0HM
+HL$0HR
+HL$0HT$8x
+HL$0HT$@H
+HL$0HT$PHL$0(H
+HL$0HT$pHL$0)=a
+HL$0H]
+HL$0Hd$(
+HL$0HfH
+HL$0HrtKHD$0H
+HL$0Ht
+HL$0Ht$
+HL$0Ht$hHD$
+HL$0I
+HL$0I3HD$0I
+HL$0I[HL$0MILH$@
+HL$0IaHL$0MILH
+HL$0J
+HL$0JS
+HL$0K
+HL$0L
+HL$0L$
+HL$0LC
+HL$0LD$PHT$0A
+HL$0LHH
+HL$0LHL$hH_HL$he
+HL$0Lc
+HL$0M
+HL$0MH.
+HL$0MHA
+HL$0Mc8kH
+HL$0N
+HL$0P
+HL$0P0u
+HL$0Plt
+HL$0Q
+HL$0S
+HL$0S3H
+HL$0T
+HL$0TE:t
+HL$0UHL$PkxOHL$PHHL$PHI
+HL$0V
+HL$0VD$
+HL$0WHL$P=L$
+HL$0X
+HL$0[
+HL$0[G
+HL$0dHL$PZL$p 
+HL$0e-d$0
+HL$0eJf
+HL$0fA3HL$hHL$(f
+HL$0fAC
+HL$0hH
+HL$0jDd$0t$4l$8
+HL$0kt
+HL$0l
+HL$0l$0
+HL$0l$8
+HL$0lt
+HL$0lu(
+HL$0m:t
+HL$0mt
+HL$0mtc
+HL$0n5u
+HL$0o
+HL$0pm
+HL$0r3L$P
+HL$0rL$X
+HL$0s
+HL$0tHL$0
+HL$0tJHt
+HL$0u
+HL$0vHT$0H$
+HL$0xD$8
+HL$0y0
+HL$0{
+HL$0{L
+HL$0}
+HL$0}H
+HL$4DPMA
+HL$8
+HL$8 Lt7HG
+HL$8$Gt
+HL$8)8
+HL$87LD$8H8
+HL$89LD$8HT$PH
+HL$8<Ht
+HL$8DI3
+HL$8Ft
+HL$8Ft/HE
+HL$8GQt
+HL$8Gt
+HL$8H
+HL$8H!HL$8E3EAhHH
+HL$8H$
+HL$8HD$P
+HL$8HFt
+HL$8HH
+HL$8HHHD$0Hu
+HL$8HL$@)
+HL$8HT$8I
+HL$8HT$@H
+HL$8Hd$0
+HL$8HhH
+HL$8Ht
+HL$8Ht-HE
+HL$8Id
+HL$8It
+HL$8JA
+HL$8JHL$XJL$
+HL$8KGt
+HL$8Kt
+HL$8Kt:HG
+HL$8L$
+HL$8LD$0H
+HL$8LD$8HT$pH
+HL$8LL$8E3ID$ 
+HL$8LfD$02
+HL$8Lt
+HL$8Mt
+HL$8Mt2HG
+HL$8NHL$XNL$
+HL$8Ot
+HL$8PIt
+HL$8Pt
+HL$8Pt HC
+HL$8T$hLD$0H
+HL$8ZPt
+HL$8[
+HL$8_Mt=HG
+HL$8dH
+HL$8fH$
+HL$8kLt6HG
+HL$8mHt
+HL$8p
+HL$8rGt
+HL$8v7>HHX
+HL$8xQt
+HL$8zEHL$XpEHL$ 
+HL$8zIt
+HL$@
+HL$@ HL$
+HL$@ IE
+HL$@(
+HL$@.
+HL$@.HL$@H$p
+HL$@2
+HL$@2HL$
+HL$@2sH
+HL$@3:u
+HL$@3D$ 
+HL$@3LHD$ 
+HL$@3S
+HL$@5WL
+HL$@6Eu
+HL$@9LO
+HL$@:
+HL$@=4:
+HL$@>
+HL$@A
+HL$@AI
+HL$@AL
+HL$@BA
+HL$@CHL$XC3L$
+HL$@D
+HL$@D$(HD$pHD$ 
+HL$@D$8
+HL$@Dd$8DL$0D$(LL$p
+HL$@Dl$$fA<
+HL$@Dn
+HL$@E3HDA:
+HL$@ED
+HL$@EE3IU
+HL$@GHL$@H
+HL$@H
+HL$@H$
+HL$@H@tH
+HL$@HCHT$
+HL$@HD
+HL$@HD$X
+HL$@HD$hL$
+HL$@HE
+HL$@HE3
+HL$@HH
+HL$@HHC
+HL$@HI
+HL$@HL$
+HL$@HL$0H
+HL$@HL$@H
+HL$@HM
+HL$@HO
+HL$@HS8I
+HL$@HSHI
+HL$@HSX
+HL$@HT$
+HL$@HT$HE3H
+HL$@HVHH
+HL$@HYkHG
+HL$@HbL]
+HL$@HkA
+HL$@Ht)HD$@H
+HL$@HtHL$@H
+HL$@H{
+HL$@I
+HL$@I$HL$@ME3H_
+HL$@L
+HL$@L$
+HL$@LD$X 
+HL$@LLI
+HL$@LcwLL$@A
+HL$@Ll$0
+HL$@M
+HL$@MH
+HL$@N:t
+HL$@O
+HL$@OLD$@H$H
+HL$@PHT$@H
+HL$@R
+HL$@R4:u
+HL$@SxHL$@LD$PH
+HL$@T$HHL$@
+HL$@T'HV
+HL$@THHHL$
+HL$@VH
+HL$@YH$P
+HL$@YHL$@IXu
+HL$@]
+HL$@_
+HL$@a
+HL$@a-HL$@H$p
+HL$@d
+HL$@f
+HL$@fA
+HL$@jHT$ HrHL$ gHL$@TL$
+HL$@kH
+HL$@kH$
+HL$@mA
+HL$@nLn H
+HL$@oL$
+HL$@q
+HL$@rkL_
+HL$@tIL
+HL$@u
+HL$@w
+HL$@x9
+HL$@yL
+HL$@z43:t
+HL$@zXH$
+HL$@{
+HL$DA
+HL$DMH
+HL$DMs
+HL$H
+HL$H$
+HL$H$0
+HL$H(HL$h
+HL$H1
+HL$H3
+HL$H3EHL$XD$L
+HL$H5xHL$Hn@:u1I.A
+HL$H8D
+HL$HA8
+HL$HB
+HL$HD$
+HL$HDHL$0D$P
+HL$HDL$DH$
+HL$HE3LcIHHT$HH$
+HL$HE3LcIhE3D3HXHmA
+HL$HH
+HL$HH$
+HL$HH5
+HL$HH@
+HL$HHD$@$
+HL$HHD$@H
+HL$HHD$pH
+HL$HHH
+HL$HHHD$@Hu
+HL$HHL$0D$P
+HL$HHL$0HL$
+HL$HHL$h
+HL$HHLcHl$@
+HL$HHN
+HL$HHP
+HL$HHR
+HL$HHZ
+HL$HHe
+HL$HHw
+HL$HI
+HL$HIH.
+HL$HIM
+HL$HJ3H
+HL$HLLIED3H
+HL$HLMSf
+HL$HLcE3HX
+HL$HLmHL$ Bm@=>V
+HL$HMH
+HL$HMHl$(HD$ A
+HL$HR(
+HL$HRD
+HL$HTEEHL$H
+HL$HTHL$0JHL$
+HL$Hf
+HL$Hf$
+HL$HfDdDp
+HL$Hh
+HL$HtT
+HL$L
+HL$LHh
+HL$LMH
+HL$P
+HL$P 
+HL$P$
+HL$P%HL$0%HL$p%H$
+HL$P1D$PHt$8B
+HL$P5L
+HL$P@H
+HL$PA
+HL$PD
+HL$PD$@
+HL$PDDHD$ H$ 
+HL$PDHD$(
+HL$PDMzE
+HL$PDd$@l$8MLD$8HT$PH
+HL$PDrtHT$@HL$P
+HL$PH
+HL$PH 
+HL$PH$
+HL$PH3HhH
+HL$PH@
+HL$PHD$0IA
+HL$PHD$H
+HL$PHE3t$(H
+HL$PHI
+HL$PHL
+HL$PHL$8
+HL$PHL$@HD$X2H
+HL$PHT$8H
+HL$PHT$@
+HL$PHd$(
+HL$PHl
+HL$PHt
+HL$PHt>H
+HL$PI
+HL$PL
+HL$PL$
+HL$PL$(
+HL$PLD$0HT$PDH
+HL$PLL$ 
+HL$PLd$P
+HL$PM}ftDN3H
+HL$PU
+HL$PW
+HL$Pb
+HL$PbxOHL$PH
+HL$PgHHC
+HL$PkXHL$ aXH$
+HL$Pl
+HL$Pq}f
+HL$Ps
+HL$Pt$@l$8LD$8HT$PH
+HL$PuL
+HL$X
+HL$X(HC
+HL$X3
+HL$X3D$H
+HL$X4
+HL$X5i
+HL$X7@8s 
+HL$X<%HG
+HL$XA
+HL$XD$
+HL$XD$H
+HL$XDHL$p
+HL$XDT$ ZHO
+HL$XG
+HL$XH
+HL$XHD$pD
+HL$XHE
+HL$XHHHT$XHuA
+HL$XHL$09
+HL$XHL$XH
+HL$XHt
+HL$XI
+HL$XL
+HL$XNHS8H
+HL$XO
+HL$XbA
+HL$XlHL$@lHL$p
+HL$Xt
+HL$XtE3
+HL$h
+HL$h.
+HL$h2L
+HL$h3
+HL$h3HL$P3HL$83H$
+HL$h8
+HL$hA
+HL$hD
+HL$hD$DHL$HHD$@AW LL$hMHHD$ 
+HL$hE3L
+HL$hEDID$ 
+HL$hFH
+HL$hG
+HL$hGHL$0GHL$H
+HL$hH
+HL$hH$
+HL$hH$7
+HL$hH@
+HL$hHH
+HL$hHL$0
+HL$hHL$0I
+HL$hHe7H
+HL$hHt
+HL$hJ
+HL$hL
+HL$hLAp
+HL$hLL$tLD$XHT$
+HL$hME
+HL$hRH
+HL$p
+HL$p(FHT$pH$
+HL$p0HL$ VJHL$PHL$8BJL$
+HL$p3
+HL$p3H
+HL$p3IH$8
+HL$p9<DHu
+HL$p:
+HL$p=:DA:uCHT$HHL$pLD$8
+HL$pA
+HL$pD
+HL$pD@
+HL$pDD$ 
+HL$pDE3A
+HL$pDFf9$
+HL$pEE3
+HL$pH
+HL$pH$
+HL$pHH
+HL$pHL$xH$
+HL$pHu
+HL$pI
+HL$pL
+HL$pLD$xH$
+HL$pN
+HL$pOHL$PEHL$0
+HL$pVFH$
+HL$pfD
+HL$pq
+HL$ptLH
+HL$px
+HL$t3A
+HL$x
+HL$x2H$
+HL$x9HL$0
+HL$xA
+HL$xA:
+HL$xD$0D$8
+HL$xH
+HL$xH$
+HL$xH4
+HL$xHD$0D$8
+HL$xHJ
+HL$xHL$X
+HL$xHO
+HL$xHR
+HL$xHU
+HL$xHV
+HL$xI
+HL$xJHL$03
+HL$xJHL$8@HL$X6L$
+HL$xUHL$0[
+HL$xeH$
+HL$xi(
+HL$xuyHL$0H$
+HL$xwT$
+HL$xyHL$0H$
+HL%D
+HL.E
+HL1LD
+HL1LDH
+HL3E3H}
+HL5HH
+HL8A
+HL9l
+HL=7
+HL@%
+HL@8{HHL$ HL
+HL@c
+HLAA
+HLD$
+HLD$XHT$HH
+HLD$xAIHuL9$
+HLH$
+HLH'
+HLH3D
+HLH9
+HLH9HF
+HLHG
+HLHH
+HLHHH
+HLHHHHX
+HLHL$ >L
+HLHL$PHL$8
+HLHt
+HLHtNAL
+HLL$0LD$8HHD$hHHD$(HD$xHD$ 
+HLL$0LD$8HHD$xHHD$(H$
+HLL$XLD$P
+HLL[
+HLT$ A
+HLT$P
+HLc2HT$(HL$Hc
+HLcI
+HLcS
+HLl$(HD$ 
+HLrG
+HLt$XL
+HLt3H9l$x
+HLyH$
+HL}H$P
+HM$(
+HM(L
+HMD$ 
+HMEC3H!t$0G
+HMHD]
+HMHH
+HMHH$R
+HMI[u
+HMKH
+HML3A
+HML9$
+HMhH
+HMkD$ 
+HN([-
+HN0Ht=LI
+HN8H
+HN8Ht
+HN8K@
+HN@Ht
+HNHH
+HNPH
+HNXF
+HNXUA:t9F
+HNu%L
+HO H
+HO HS E3
+HO yLG
+HO(A
+HO(HS(E3
+HO(L_
+HO(tZHlZHJ
+HO0H
+HO0HS0E3HH
+HO0X
+HO@D$PD
+HO@DT$
+HOD9)u
+HOG@
+HOHH [>H
+HOLEADHW
+HOPH
+HOPHd$ 
+HOX5
+HOuH
+HP(H$
+HP(y
+HP0R
+HP8A
+HP8t
+HPAE
+HPA]A
+HPA_A
+HPDE3ID$ 
+HPHH
+HPH]
+HPHwHA
+HPIAM@H
+HPNHL$0AA A
+HP[@SH@=O
+HP[H
+HP[{7H
+HP_H
+HP_H8ADL$
+HQ LHHD$ qHu
+HQ73@:t/HC
+HQHHu
+HQL$
+HQM2
+HQoKM
+HR D$(HL$ HK
+HR HI
+HR-E
+HRH$
+HRHI-=-
+HRHL$0H
+HRHP
+HRnH
+HS H
+HS H0
+HS HM
+HS(E3H
+HS(H
+HS(HO(D_
+HS.zAEzB
+HS0H
+HS0HB8HC0I
+HS0HO0
+HS0Ht
+HS8H
+HS8HB0HC8I
+HSHE
+HSHH
+HSPH
+HSPJD[XHS
+HSVWATAUAVAWHPE3EADp
+HShH
+HT$ 
+HT$ %H
+HT$ 3E3P
+HT$ 7Au
+HT$ <u
+HT$ A
+HT$ D
+HT$ DD
+HT$ DHLu
+HT$ DILu
+HT$ D_
+HT$ DrH@:
+HT$ E3
+HT$ E3HvHL$ dt
+HT$ EHL2E3HE
+HT$ H
+HT$ H n
+HT$ H9$
+HT$ HA
+HT$ HA$
+HT$ HCL@H
+HT$ HH
+HT$ HH 
+HT$ HHD$xu
+HT$ HHH{
+HT$ HHL$ H
+HT$ HHL$ u3H@[@SH@HB
+HT$ HHL$@HL$ 
+HT$ HL
+HT$ HL$
+HT$ HL$ 
+HT$ HL$ ABLIHHH
+HT$ HL$ u<
+HT$ HL$@
+HT$ HL$@9HT$@H
+HT$ HL$@A
+HT$ HL$@E3
+HT$ HL$@LL]HT$@HL$ H
+HT$ HL$PLDH
+HT$ HL$h
+HT$ HL$hL_
+HT$ HLHL$ 
+HT$ HN-HC
+HT$ HP
+HT$ HT$0L
+HT$ HV
+HT$ HVv
+HT$ HYHL$ NH
+HT$ HZPu)8
+HT$ HdKHL$ J@H
+HT$ HiHL$ 
+HT$ HkH
+HT$ HnHL$@nHL$ nL$
+HT$ HtH{
+HT$ Hu
+HT$ Hv
+HT$ Hw2H
+HT$ H}mH}
+HT$ I
+HT$ L
+HT$ L$ 
+HT$ LH
+HT$ LHh
+HT$ MHD$ HE
+HT$ fD$ IE
+HT$ n
+HT$!HHS
+HT$$HL$ D
+HT$(
+HT$(H
+HT$(H$
+HT$(H0f8
+HT$(H1f8
+HT$(H2f8
+HT$(H8f8
+HT$(HH
+HT$(HL$H
+HT$0
+HT$0$
+HT$01
+HT$03
+HT$03)<
+HT$03@
+HT$03F<
+HT$03Wc
+HT$03a
+HT$03y
+HT$0A
+HT$0B
+HT$0C8$
+HT$0D
+HT$0D$$3D:
+HT$0D$0
+HT$0D$T
+HT$0E
+HT$0E3HcH
+HT$0H
+HT$0H$
+HT$0H$@
+HT$0H0A
+HT$0H0HH
+HT$0H2HL$H
+HT$0HA
+HT$0HA 
+HT$0HA:tJL9{(t
+HT$0HD$(H
+HT$0HD$8Hu
+HT$0HH
+HT$0HI
+HT$0HL
+HT$0HL$ MH
+HT$0HL$ qH
+HT$0HL$PEL
+HT$0HL$PU
+HT$0HL$p
+HT$0HL$pHT$0H
+HT$0HL$pHT$0IsJ
+HT$0HL$pKHX1D
+HT$0HL$xRx$
+HT$0HNXRH
+HT$0HO
+HT$0HP
+HT$0HT$@HT$(H$(
+HT$0HUHT$HH$
+HT$0H_
+HT$0HcH
+HT$0Hf
+HT$0Hp
+HT$0HsuHT$0H@bHT$0H
+HT$0Hu/
+HT$0Hx
+HT$0Hx$
+HT$0H}Q
+HT$0I
+HT$0I$
+HT$0IDd$0fl$:fD
+HT$0IDl$0D$8
+HT$0IF
+HT$0IP
+HT$0IU
+HT$0Is
+HT$0IvH$
+HT$0K
+HT$0LDE
+HT$0LHDd$(D$ 
+HT$0Lc
+HT$0McH
+HT$0Uf
+HT$0f
+HT$0fH
+HT$0x
+HT$2HL$0Faf$P
+HT$8
+HT$8A
+HT$8D9$
+HT$8E3A)
+HT$8E3H
+HT$8E3HcH
+HT$8EHLL$8
+HT$8H
+HT$8H$
+HT$8HD$
+HT$8HL$
+HT$8HL$0.
+HT$8HL$0_
+HT$8HL$0s
+HT$8HL$0y
+HT$8HL$P_
+HT$8HL$PbE3A:uMT$0HC
+HT$8HL$h
+HT$8HL$xI}H
+HT$8HP
+HT$8I
+HT$8IHD$ AhHT$8H$
+HT$8I[
+HT$8Li
+HT$@
+HT$@3HD$8H$
+HT$@A
+HT$@AfD
+HT$@DI@t$ -A:u
+HT$@E3E3B
+HT$@EH
+HT$@EH>
+HT$@H
+HT$@H$
+HT$@H$h
+HT$@H(O
+HT$@HA 
+HT$@HD$HHG
+HT$@HD$HP
+HT$@HE3
+HT$@HEA
+HT$@HH
+HT$@HHL$HH
+HT$@HK4f8
+HT$@HL$
+HT$@HL$ 
+HT$@HL$ H
+HT$@HL$ HHu=HL$@[2HL$ Q2L
+HT$@HL$ HT$ HNXHHL$ n
+HT$@HL$ K
+HT$@HL$ LH
+HT$@HL$ [TH
+HT$@HL$0
+HT$@HL$0ft$8Ld$0@
+HT$@HL$8H
+HT$@HL$8HF
+HT$@HL$pJ
+HT$@HLH
+HT$@HP
+HT$@HT$P
+HT$@HV
+HT$@HcH
+HT$@H}
+HT$@I
+HT$@IE
+HT$@L$
+HT$@Lc
+HT$@LcIH8
+HT$@MHDA:u
+HT$@P
+HT$@UA
+HT$@]
+HT$H
+HT$HD
+HT$HD$L
+HT$HDfDd$HJ
+HT$HH
+HT$HH$
+HT$HH6f8
+HT$HH7f8
+HT$HHD$@Dl$0L$
+HT$HHDd$ 
+HT$HHH
+HT$HHL$0
+HT$HHL$0n
+HT$HHdHL$PH
+HT$HHi5f8
+HT$HI7HL$(L
+HT$HI7LD$hIH'HT$hID
+HT$HICHL$H)HL$h
+HT$HL$
+HT$HLLHL
+HT$Hu
+HT$L
+HT$P
+HT$PA
+HT$PD'
+HT$PE3E3H
+HT$PH
+HT$PH$
+HT$PH$p
+HT$PHBu
+HT$PHD
+HT$PHL
+HT$PHL$0
+HT$PHL$0A:t
+HT$PHL$0GH
+HT$PHL$8
+HT$PHL$@1
+HT$PHL$HH
+HT$PHL$P
+HT$PHL$pHL$p
+HT$PHL$p}HL$p
+HT$PHL3H$
+HT$PHP
+HT$PMHf
+HT$PfD$HH
+HT$PjH
+HT$X
+HT$XH
+HT$XH$
+HT$XH@
+HT$XHL$0H$
+HT$XHL$xH$
+HT$XHN
+HT$XHPEH
+HT$XHQV
+HT$XIxP
+HT$h
+HT$hE3LHu
+HT$hE3LHztH
+HT$hH
+HT$hH$
+HT$hHD$ 
+HT$hHD$@HD$0H$
+HT$hHDl$ 
+HT$hHL$
+HT$hHL$0h
+HT$hHL$HHT$@HL$H$
+HT$hHL$Hr
+HT$hHx
+HT$hHzHT$xHzHL$hHUtCHE
+HT$hJ
+HT$hL$
+HT$hLD$@@
+HT$hLH
+HT$hT$pT$qHPHPPPHT$HHT$PT$XT$YHPHPPPHxHPPPE3dIC
+HT$p
+HT$p$
+HT$p)
+HT$p@
+HT$pA
+HT$pC
+HT$pD
+HT$pG
+HT$pH
+HT$pH$
+HT$pH@B
+HT$pHD$ 
+HT$pHH
+HT$pHHNt
+HT$pHL$0
+HT$pHL$0D=0R
+HT$pHL$H
+HT$pHL$PV{
+HT$pHb
+HT$pI
+HT$pL$
+HT$pL$p
+HT$pLHZ
+HT$pfL$pI/QI@
+HT$tU
+HT$x
+HT$x@
+HT$xA
+HT$xH
+HT$xH%
+HT$xH3@gu
+HT$xHK
+HT$xHL$
+HT$xHL$ 
+HT$xHL$8MH
+HT$xHL$P
+HT$xI
+HT$xL$(
+HT$xLD-
+HT$xsE3A
+HT$x}7LL$@A
+HT7HL$PH
+HT>z
+HTLE
+HTpHV
+HTu-H
+HU H$
+HU3H(H(HI8HHt
+HUHJ
+HUHL$0LL$8L$
+HUHt
+HV H$
+HV HN
+HV I
+HV(A
+HV(HL$8$
+HV8H
+HVDe
+HVHH [H(H
+HVHL$ vqHnpHL$ H
+HVHL$8
+HVHT$hHL$H7
+HVKH$
+HVLH
+HVN{
+HVzH$
+HW(LD$ H-u
+HW0H
+HWH>H
+HWHHL$ 
+HWIf8
+HWPE3HH
+HWT$8LD$<DH
+HWc98>D6
+HX H
+HX-H$p
+HX0H
+HX3H9A(P
+HX4H
+HXA_A
+HXHA:t
+HXHAF
+HXHD$0
+HXHXDp8
+HXHXE3H
+HXLD$
+HXtPHG
+HY%H
+HY(LL$XH
+HY-HC
+HYA:t
+HYHH
+HYLH
+HYYu
+HYlL]
+HZHH [LI[
+HZHL$0)2HHX
+HZL$
+HZLC
+H[$A:
+H[0HuH3H
+H[HH$
+H[teHG
+H]!>Dv
+H]).
+H]@HuHH}PHe
+H]E3L$
+H]HHD$0
+H]HK
+H]IH]HH]H
+H]PHuXH}
+H]toHcH
+H_(Ho8Ho0M/M
+H_AL
+H_D$
+H_yHL$HH$
+Ha-Y
+Ha:LL$hL$
+HaHHD$0
+HaHPA
+Hangul
+Hanunoo
+Hb E3A
+Hb$H
+Hb3H$
+HbPA
+Hbt5HUt(HHHHcH
+Hc$ 
+Hc$(
+Hc$p
+Hc%H$
+Hc0I
+Hc3HD$2D$:fD$>H
+Hc3HHH
+HcAD
+HcAF
+HcAH
+HcAO
+HcB<((
+HcD$@
+HcD$HH
+HcD$PHc
+HcD$dI
+HcD$hHT$0HH)D$0
+HcD$p
+HcD$xH_
+HcDH
+HcDHG
+HcDHL
+HcDT$(H
+HcDdHF
+HcE3
+HcE3H
+HcE3H$
+HcEHT
+HcES
+HcFD
+HcG$H
+HcH$
+HcH(
+HcH@
+HcHCHH
+HcHD3
+HcHG
+HcHH
+HcHHH
+HcHHI
+HcHHo'f8
+HcHI
+HcHL
+HcHL$@I
+HcHL$PI
+HcHL@
+HcHT$ H
+HcHT$@HL$ 3ftD@HT$ IW
+HcH]
+HcHcH
+HcHcHH
+HcHcHL$ LLHHT$ HdHL$ JH
+HcHk8H
+HcHmHT$
+HcHt
+HcHvL]
+HcI<
+HcID$
+HcIF
+HcIH
+HcIHHH
+HcIMI
+HcIMN<(M
+HcL$
+HcL$ H
+HcL$ LL$
+HcL$ T$pH
+HcL$$H
+HcL$0$
+HcL$0A
+HcL$0H
+HcL$0IH
+HcL$4H
+HcL$8H
+HcL$@H
+HcL$@Lc
+HcL$HH
+HcL$PH
+HcL$TD$
+HcL$TH
+HcL$XHH
+HcL$XHcT$ H
+HcL$h
+HcL$hH
+HcL$pH
+HcL$xH
+HcL(
+HcLH
+HcMcH
+HcNIL$
+HcQHE39
+HcRE3HI
+HcSHE3H
+HcT$ H
+HcT$0
+HcT$0Hc$
+HcT$8HH
+HcT$@
+HcT$Pu6EX
+HcT$h
+HcT$pH
+HcTA
+HcZH$
+Hcl$
+Hct$
+Hct$@IcH
+Hct$PH
+Hct4Njr$9
+Hd$ 
+Hd$(
+Hd$0
+Hd$8
+Hd$@
+Hd$H
+Hd$P
+Hd$X
+Hd$h
+Hd$p
+HdE3
+HdH$
+HdHH)
+HdMH
+He A_A
+He E3A
+He>DI
+HeHA_A
+HeHHC
+HeHM
+HeHT$XHL$@13He3H _
+HeII.3L$
+HeapAlloc
+HeapCreate
+HeapFree
+HeapReAlloc
+HeapSetInformation
+HeapSize
+Hebrew
+Here are the rules:
+Hf-E
+Hf0l$LH$
+HfAB
+HfAy
+HfD$4B
+HfD9$p
+HfD90u
+HfDd$
+HfDt>
+HfE3
+HfE9 
+HfGLS
+HfHH
+HfHT$ H
+HflFpHV
+HfuMt
+HgatJH
+HgfffffffHH
+Hh D@
+Hh H
+Hh VWATAUAVH
+Hh(H
+Hh0HVA:t
+Hh2L
+Hh2t
+Hh3Hl$
+Hh8H
+Hh:t
+HhKH$
+HhQI
+Hh_[H
+HhaoB! -H
+HhkH$P
+HhmH
+Hhte
+HhzH
+Hi E
+Hi H
+Hi(H
+Hi3L
+Hi@====
+Hi@H
+HiHK
+HideWindowsSecurityNotificationAreaControl]
+Hiragana
+HjHu
+Hk3H[y
+Hk8D
+Hk8H
+Hk8Hc
+Hk<H
+HkE3D3HT
+HkH [H
+HkHH
+HkHL$0E3H
+HkHhH
+HkXD
+HkXD1
+HkXDt
+HkXH
+HkXHD
+HkXI
+HkXID
+HkXIL
+HkXK
+HkXKD
+HkXKt
+HkXL
+HkXd
+Hl$ 
+Hl$ $
+Hl$ Es
+Hl$ HL$(
+Hl$ HM
+Hl$ VWATAUAVH HB
+Hl$ VWATAUAVHPHHH
+Hl$ VWATH
+Hl$ VWATH HIIH'
+Hl$ VWATH@H
+Hl$ e @8l$X
+Hl$ }
+Hl$$G
+Hl$(Dd$ 
+Hl$(HD$ A
+Hl$0
+Hl$0DD$(HMH
+Hl$0DD$(MH
+Hl$0H0It$
+Hl$0Hc 
+Hl$0L$
+Hl$8
+Hl$83H _H
+Hl$83H _HHX
+Hl$8D$
+Hl$8H A
+Hl$8H(H(y
+Hl$8HC
+Hl$8HH
+Hl$8HI
+Hl$8HcH
+Hl$8Ht$@
+Hl$8Ht$@3f
+Hl$8Ht$@H
+Hl$8Ht$@HH
+Hl$8Ld$H
+Hl$8Ld$HH7
+Hl$@
+Hl$@H
+Hl$@H$
+Hl$@H]PHuXH}
+Hl$@Hl$
+Hl$@Ht$HH
+Hl$@I
+Hl$@y
+Hl$HH
+Hl$HH A]A
+Hl$HHt$PH
+Hl$HHt$PH A]A
+Hl$PH A
+Hl$PHl$Xl$
+Hl$PHt$XH
+Hl$PHt$XHc
+Hl$Pu
+Hl$X
+Hl$X3H@_H
+Hl$XE3A
+Hl$XH
+Hl$XH$
+Hl$XHHH
+Hl$XHt$
+Hl$XIU8H
+Hl$Xt$PD$H$
+Hl$h3H A
+Hl$hA
+Hl$hH
+Hl$hH0A_A
+Hl$hHP_H
+Hl$hHt$p
+Hl$hHt$p3H0A_A
+Hl$hHt$p3H@A]A
+Hl$hHt$p=/L
+Hl$hHt$pH
+Hl$hHt$pH@A
+Hl$hHt$pH@A]A
+Hl$hHt$pHH@A]A
+Hl$hHt$pHP_@SH03L9
+Hl$hHt$pHP_@UATAUAVAWH
+Hl$hHt$pHP_H
+Hl$hHt$pHP_H8Hd$ 
+Hl$hHt$pHP_HL$0I
+Hl$hHt$pLd$x3HPA]H
+Hl$hHt$x3H@A]A
+Hl$hHt$xHP_H
+Hl$p3HP
+Hl$pH$
+Hl$pH0A]A
+Hl$pH@A
+Hl$pHP
+Hl$pHt$x3H0A_A
+Hl$pHt$x3H@A]A
+Hl$pHt$xH0A_A
+Hl$x
+Hl$xHHH
+Hl3u
+HlHL$ 7
+HlUH
+Hl}H
+Hm9H
+HmLHcHC
+HmOHL$P
+HmxH
+Hn!H
+Hn3H
+HnFHH
+Ho0E3AD
+Ho0E3D
+HoHH
+HoaHH
+Hp H
+Hp HH
+Hp HP
+Hp WATAUAVAWH
+Hp WATAUAVAWH@3IMMHHp
+Hp WATAUAVAWHPLI
+Hp WATAUH
+Hp WATAUH E3LHIH3At$
+Hp WATAUH@
+Hp WATAUH@MAHA
+Hp WHpH
+Hp(V@
+Hp8I
+HpA]A
+HpA_A
+HpC$@
+HpHAHB
+HpHAHBHABABAHBHAHBHAHBHAHBHA
+HpI$
+Hp[3E@SH
+Hp_H
+Hp_H(=
+Hp_HH
+HpxH
+Hq(9s u4HB
+Hq.Du
+HqU9D
+HrHT$
+Hrq.HH
+Hs(H
+Hs0HS
+Hs0Lk8LL9>
+Hs8H
+Hs8Lk0LL9>
+HsHu
+HshHspHsxH
+Hsp]
+Ht A
+Ht!@t
+Ht!H
+Ht!LG
+Ht!SH H
+Ht!d$(
+Ht$ 
+Ht$ DD$PDL$T3
+Ht$ HL$
+Ht$ L$
+Ht$ W0
+Ht$ WATAUAVAW 
+Ht$ WATAUAVAWH
+Ht$ WATAUAVAWH0-
+Ht$ WATAUAVAWH0IMLLHt
+Ht$ WATAUAVAWH0Ix
+Ht$ WATAUAVAWH@E3IHD8zj
+Ht$ WATAUAVAWH@LHH
+Ht$ WATAUAVAWHP
+Ht$ WATAUAVAWHPHB
+Ht$ WATAUAVAWHpHB
+Ht$ WATAUAVAWP 
+Ht$ WATAUH
+Ht$ WATAUH EHHHu
+Ht$ WATAUH03IIDLMu$@d
+Ht$ WATAUH@HB
+Ht$ WATAUH@Q
+Ht$ WATAUX
+Ht$ WH
+Ht$ WH HB
+Ht$ WH HH
+Ht$ WH Hz
+Ht$ WH LADHT$8A
+Ht$ WH0y
+Ht$ WH@
+Ht$ WH@3Hz
+Ht$ WHPAHHEt
+Ht$ WHp
+Ht$ f
+Ht$(AIL
+Ht$(l$ D
+Ht$0
+Ht$0@:
+Ht$0C
+Ht$0H
+Ht$0H/f
+Ht$0Hw
+Ht$0HwHHt
+Ht$0Ld$(%$
+Ht$8
+Ht$83
+Ht$83H _@S 
+Ht$83H _H
+Ht$83H _HHX
+Ht$83f
+Ht$8H
+Ht$8H _H
+Ht$8HD$@HD$0E
+Ht$8HH
+Ht$8HL$H
+Ht$8H{
+Ht$8L
+Ht$8f
+Ht$@
+Ht$@3H _H
+Ht$@C
+Ht$@Dl$8Ll$hL
+Ht$@HC
+Ht$@HD$H
+Ht$@Hl$8fF$
+Ht$@I
+Ht$@IH
+Ht$@]
+Ht$@l$8
+Ht$HA
+Ht$HHL$8
+Ht$HLd$P
+Ht$HLd$PE3L
+Ht$Hl$4
+Ht$I
+Ht$PH0_@SH A
+Ht$PHd$H
+Ht$X
+Ht$X3H@_H
+Ht$XA
+Ht$XD$THD$PHE
+Ht$XDL$PT$HD$@$
+Ht$XH
+Ht$XHD$P
+Ht$XHHl$PH
+Ht$XLd$0fA
+Ht$h3H@_HHh
+Ht$h3HP_HHX
+Ht$hD
+Ht$hE
+Ht$hH0A]A
+Ht$hH@_H
+Ht$hHP_H
+Ht$hHP_H8=i
+Ht$hHP_HT$89r
+Ht$hHP_LE3
+Ht$hHt$pHt$
+Ht$hL
+Ht$pH@A]A
+Ht$pL
+Ht%H
+Ht)HA
+Ht-AH
+Ht-H
+Ht-M
+Ht/HL$0E33
+Ht0H
+Ht0Hd$ 
+Ht1HL$xD
+Ht3E
+Ht4HUH
+Ht6Hx 
+Ht6LE3I
+Ht83H
+Ht9LM
+Ht:Eu5H@
+Ht:Ht-H$
+Ht=3HDB
+Ht=HH
+HtCf
+HtDH
+HtDd$D3A
+HtG8
+HtH$
+HtH@[
+HtHH
+HtHHH$
+HtHL$@HL$0L$
+HtIH
+HtIl$8
+HtJA
+HtJHtEH
+HtL$
+HtMH
+HtNH
+HtNH$
+HtNf
+HtQMt
+HtSD9N
+HtTHX
+HtUH9(uPx
+HtWA
+HtYH
+HtYu
+HtZH
+Hta8
+HtbMt
+Htf8
+HtfA HI(%
+HthHHc<
+Htk3H
+HtlH>H
+HtmHLHC
+HtmHu
+HtrP
+HttHl$8H
+HttpOpenRequestW
+HttpQueryInfoW
+HttpSendRequestW
+HtwHs
+Ht{h
+Hu 3
+Hu H
+Hu r
+Hu$P
+Hu$d$(
+Hu%(f
+Hu%O
+Hu%q
+Hu'H
+Hu'HD$@LL
+Hu($
+Hu(H
+Hu)H
+Hu-=
+Hu.!8kH!
+Hu/HI
+Hu3)H!t$ 
+Hu3L
+Hu4Ht
+Hu5HG
+Hu7HT$XH
+Hu8)H!
+Hu:x
+Hu=Hd$ 
+Hu=f
+HuC9
+HuH [
+HuH$
+HuH5
+HuHL$ t$H
+HuHcEt
+HuHcH
+HuImH.HL$0u
+HuNH
+HuSH
+HuUH
+HuhH}pH
+HuhH}pHe0A_A
+HujH
+HuwHE
+Hux33
+Hu}H
+Hv9H
+HvCd
+HvHcS
+HvL9s
+Hw Hw($
+HwCH
+HwHD
+HwHH
+HwHK
+HwIHt7SH LH
+HwL$
+HwkHL$
+Hx 2
+Hx AT
+Hx AT 
+Hx ATAUAV
+Hx ATAUAV0
+Hx ATAUAVH
+Hx ATAUAVH @2Hz
+Hx ATAUAVH H
+Hx ATAUAVH Hb(
+Hx ATAUAVH Hz
+Hx ATAUAVH LHL
+Hx ATAUAVH0D
+Hx ATAUAVH0H
+Hx ATAUAVH0HB
+Hx ATAUAVH0HHu'
+Hx ATAUAVH0HJ
+Hx ATAUAVH@HB
+Hx ATAUAVH@HH
+Hx ATAUAVH@HHH
+Hx ATAUAVH@LHHIHE23H
+Hx ATAUAVHP
+Hx ATAUAVHPE3ILHII
+Hx ATAUAVHPLHHHEMFMt
+Hx ATAUAVHp3MMDs
+Hx ATAUAVHpE3AIHL9
+Hx ATAUAVHpHz
+Hx ATAUAVL
+Hx ATAUAWH
+Hx ATAUAWH H33DG
+Hx ATAUAWHPLH$
+Hx ATAVAWHpH
+Hx ATH
+Hx ATH 3Ax
+Hx ATH 3HHAE3HHq
+Hx ATH 3HHAHH
+Hx ATH 3HHHy
+Hx ATH @2Hz
+Hx ATH AILH
+Hx ATH E3HAAI
+Hx ATH H
+Hx ATH HH(AL
+Hx ATH HH(HMHHMhE3H
+Hx ATH HHMIHst9'
+Hx ATH HLHu
+Hx ATH HZ
+Hx ATH HcLH5
+Hx ATH Hy
+Hx ATH Hz
+Hx ATH I
+Hx ATH IHL
+Hx ATH IHL@2Fu
+Hx ATH y
+Hx ATH0
+Hx ATH03IDHHu$VJ
+Hx ATH0H
+Hx ATH0Hz
+Hx ATH0z
+Hx ATH@
+Hx ATH@AALA
+Hx ATH@D%
+Hx ATH@H
+Hx ATH@HB
+Hx ATH@HH
+Hx ATH@Hr
+Hx ATHPAY
+Hx ATHPE3IHHAM
+Hx ATHPIL:
+Hx ATHPLb
+Hx ATHpH
+Hx ATHpH$
+Hx ATL$0AA
+Hx AUH@
+Hx D
+Hx L$(AA
+Hx0C
+Hx@VHp
+HxCk%e
+HxEt
+HxHHX
+HxHHt>HfLHLI
+HxHT$pHXH$0
+HxHnLG0LL$ HQ
+HxuD
+HxxH
+Hy H@:u$HA$
+Hy3H
+HyHHt
+HyHK8HKXb
+HyHT$pH
+HyLK
+HyLL
+HypervisorEnforcedCodeIntegrity]
+Hz HDD
+Hz HDILA
+Hz-E
+Hz-HS
+HzH3H}
+HzUA:
+HztrH
+H{(HC0
+H{@HKHH
+H{X{
+H}HH
+H}HHH
+I %{9
+I %{9@
+I %{9m0_
+I 3H
+I HP8HL$0H
+I }(
+I!:L$ 
+I!zd5u0'bcUvQnLvq
+I!{H
+I!{ICIH
+I%A:
+I(H$0
+I(It
+I(ItPIF
+I(MILHt
+I-A:
+I.GpykND
+I/t$(
+I0v0f
+I1zwU.]h[
+I2[x
+I35u
+I3D$(
+I3HpJDHQXH
+I3It
+I3uH
+I3vH
+I4p[
+I5E3HL$8Ef
+I5va
+I7A_z
+I7B3
+I9CH
+I9T$
+I:Eu5H$
+I:gw/
+I<D5
+I=HG
+I=WAIV1
+I@0H
+I@D%H
+I@QA
+I@W}
+IA$$
+IA2U
+IAHH
+IAHc(HL$ HAD$
+IAIH
+IAdH
+IAi1
+ICE{M{M{M{X
+ICH@A
+ICHH
+ICHN
+ICIC H
+ICMIC MK
+ICMP.DLL
+ICMkIkH95
+ICPH
+ICd9uZIe
+ID$ 
+ID$(
+ID$(H
+ID$08
+ID$0H
+ID$0HD$@D$ 
+ID$0P
+ID$8
+ID$@
+ID$@FD$8H$
+ID$X3A
+ID9$
+IDAL_
+IDATx
+IDHH [[@SH HHZHH [@SH HI
+IDHHaNu
+IDT$ )
+IDT$ X
+IDl$ -D
+IDl$ A
+IDsHLA
+IDt$ 
+IDzEE33IHL$ LHL$@L3D
+IE0H
+IE3EX
+IE3H@[H
+IE3HHD
+IE3IH@
+IE3LLfD9
+IE3McAj/MxZB
+IE8H
+IE8LG
+IEDHEt
+IEHL$ 
+IEHt
+IEI==BD%
+IENDB
+IEhALEE3IL$4H
+IEt$
+IEtA
+IF@S
+IH ]@UH H
+IH$L
+IH't
+IH(I
+IH0H
+IH0I
+IH3H
+IH3I8
+IH8HD$
+IH=l
+IH@HT$pH
+IHA:t
+IHAA
+IHALQuI
+IHCEt
+IHD$ 
+IHD$ .
+IHD$ H$
+IHD$ oHD$pL
+IHD$ w<
+IHD$8H$
+IHD$@IA
+IHD$PHG
+IHDH D@
+IHDR
+IHDd$ H$
+IHDhu!H]
+IHDt$0D$8
+IHDt$4@$(
+IHH$
+IHH)HH
+IHH@
+IHHA
+IHHBH
+IHHC
+IHHD$@33HD$HHD$PHD$XD
+IHHGH
+IHHH
+IHHL$
+IHHX
+IHHXL
+IHHc
+IHHm
+IHHoH
+IHHr
+IHHt
+IHHt5Ht09ERCPt
+IHHtEL
+IHHu
+IHHusHT$hH
+IHHv-HB
+IHHv1HB
+IHK@Ht
+IHKpcHKP
+IHL$
+IHL$0/L$
+IHL7u-H
+IHLDDD$
+IHLDt
+IHLe
+IHLkHt
+IHLr)HB
+IHLs.H
+IHLt
+IHMI HI
+IHT$ A
+IHT$ H
+IHT$8L
+IHT$pr
+IHWu
+IHZtVHH
+IHcH
+IHcP_
+IHcU
+IHcfA
+IHf8
+IHl$(Hd$ 
+IHp0I
+IHt$HH
+IHt/
+IHtkH
+IHx0
+II f8
+II5SH
+II9GHHpHt
+IIAYHA
+IIB:
+IID$ 
+IIDD
+IIDFromString
+IIEHL$0
+IIH$
+IIH(A
+IIHD
+IIHH
+IIHHHu
+IIHHt
+IIHHt>
+IIHK
+IIHLt2HL$
+IIHgH
+IIHt
+IIIAEA(
+IIIE
+IIII
+IIIzE3I
+IILI
+IILM
+IIRFH
+IIVH{
+IIcHF 
+IIoHH{
+II{1u
+IJHcLcHI
+IK(DaHH
+IK8H
+IKD$(
+IKD$p
+IKHH
+IKIICHYH
+IKIICIL%j
+IKIIHICZH
+IL$$A
+IL3D
+IL3H
+IL4Y
+IL9$
+IL9l$8t
+IL=0}o
+ILAA
+ILD$ H$0
+ILD$ L
+ILEAfHu%H
+ILG(
+ILG(I
+ILH H
+ILH:
+ILHG
+ILHHH
+ILHI
+ILH[qHL$@H
+ILHl$P
+ILL$ E3H3
+ILL$(MHLIH%mS
+ILLL$
+ILT$8
+ILT$8A
+ILT$8A:<u
+ILT$8A:EuH
+ILT$8A:EuILT$8A
+ILY4:
+IL]/nbA)7
+ILc3HS
+ILcLHC
+ILd$XI
+ILdL$
+ILt-
+ILtW==
+IM3H
+IM3J
+IM3kL[
+IM>V
+IMH4H
+IMLA
+IMLHL@
+IMMLL$0LD$PH
+IMc2
+IMcE3E3M
+IN8H
+IOH9
+IOqR%gP!
+IPS]
+IQLt
+IR:XkM
+ISMK
+IT$8HWI
+IT$pHH
+ITL$8
+IU HL$0HX
+IW)Q
+IX3HL$xhH$
+IX3MI
+IXNZ3}-
+IYfK
+IZA:
+IZGbEoJ
+I[ Ik(A
+I[ Ik(IA
+I[ Ik(Is0A
+I[ Ik(Is0IA]A
+I[ Ik(Is0I{8IA
+I[ Ik(Is0I{8IA_A]A
+I[ Ik(Is8IA]A
+I[ Ik0IA
+I[ Ik0Is8IA]A
+I[ Is(I{0Mc8IA_A
+I[(H
+I[(HT$@
+I[(Ik0IA
+I[(Ik8IA
+I[(LH$
+I[0AG
+I[0Ik8IA_A]A
+I[0Ik8Is@IA_A
+I[0Ik8IsHIA_A
+I[0Ik@IA
+I[0Ik@IsHAIA_A
+I[0Ik@IsHIA_A
+I[0IkHIA
+I[8Ik@IA
+I[8Ik@IsHIA_A
+I[8IsHH%
+I[H$
+I[P3LcA9CX
+I]8Iu8H
+I]S]u
+I_95
+I_@SH HH0N
+I_@SH y
+I_H(A
+I_H(LA
+I_H(yH
+I_HHX
+I_HLHH_H8HB
+I_HSHP
+I_HXHT$ tL3L
+Ic3HHLL
+IcAXb
+IcD$
+IcD$ 
+IcDH
+IcEL
+IcH4H
+IcHL$(
+IcHL$0H
+IcHT$XH
+IcHfDtE
+IcHk
+IcIH
+IcILL$ LD$$H
+IcLD$(H
+IcLH
+IcMLL$(LD$ H
+IceIfA
+IcfD94Bt
+IcmpCloseHandle
+IcmpCreateFile
+IcmpSendEcho
+Id1{
+IdJ3S
+IdfA$
+IeU0
+If you have any problems when opening an app (
+IfDZ
+IfEuHt
+Ig-b M
+IgQfA
+Ig[S
+IhBS6
+IhIpIx1
+Ii>0
+IiTS
+IjL$
+Ik Is(I_@SH H2Hz[HH [@SH HHZ[HH [H
+Ik Is(I_H
+Ik Is(I_HHX
+Ik VWATAUAVHpHB
+Ik VWATHPE
+Ik8=
+Ik<9jab
+Ik@A
+IkXf3
+IlL$
+Ilo)Y93
+ImageList_BeginDrag
+ImageList_Create
+ImageList_Destroy
+ImageList_DragEnter
+ImageList_DragLeave
+ImageList_DragMove
+ImageList_EndDrag
+ImageList_Remove
+ImageList_ReplaceIcon
+ImageList_SetDragCursorImage
+ImcHsnHHHC
+Imuue1!.T':T
+InflateRect
+Inherited
+InitCommonControlsEx
+InitializeAcl
+InitializeCriticalSectionAndSpinCount
+InitializeSecurityDescriptor
+InitiateSystemShutdownExW
+InsertMenuItemW
+Intelligence Update
+InternetCloseHandle
+InternetConnectW
+InternetCrackUrlW
+InternetOpenUrlW
+InternetOpenW
+InternetQueryDataAvailable
+InternetQueryOptionW
+InternetReadFile
+InternetSetOptionW
+InvalidateRect
+IoQHL$P)t
+Ioc0NT3
+Ios7 0 <Pv
+IoyS
+Is A
+Is IK
+Is I[
+Is I_
+Is I_@SH 3HHDDB
+Is I_@SH H
+Is I_@SH HBH4HH [Hu
+Is I_@SH HJ
+Is I_@SH y
+Is I_@WH y
+Is I_E3H
+Is I_H
+Is I_HHX
+Is I_HT$
+Is I{(IA
+Is WATAUAVAWH 
+Is WATAUH
+Is WH HB
+Is WH@HA0d$P
+Is WHp
+IsCharAlphaNumericW
+IsCharAlphaW
+IsCharLowerW
+IsCharUpperW
+IsClipboardFormatAvailable
+IsDebuggerPresent
+IsDialogMessageW
+IsDlgButtonChecked
+IsHH
+IsIconic
+IsMenu
+IsP3LcA9CX
+IsThemeActive
+IsValidCodePage
+IsWindow
+IsWindowEnabled
+IsWindowVisible
+IsWow64Process
+IsZoomed
+Isp%P9
+Is{LL$h3LD
+It HG
+It/H
+It2A
+It7$
+ItBgn
+ItLht
+ItOf
+Iu=Mt8H
+Iu@:
+IuC@H
+IuFH
+IuIc}
+IuMt
+IvHL$ H
+IvHL$x6
+IxRtjH$P
+IyyLOH
+IzE3EX
+IzHH
+I{ ATAUAVH 
+I{ ATAUAVHp$
+I{ ATH
+I{ IK
+I{$ 
+I{(IA
+I{3D$(
+I{A:u
+I}!L
+I}ILF
+J!c9
+J%f6
+J)$!b
+J)XW
+J.A.S4m
+J.tx
+J.v-y
+J/W0n/d
+J2I'bH
+J2jV'
+J37Fv
+J3XQ
+J6A!Rk
+J7<966665444442103530/2
+J7AWr>
+J8_B-/SZWsk
+J8wr
+J9rf
+J9yV
+J:HH
+J:x2
+J<A7
+J>eg
+JAHc
+JA__
+JBh]
+JCRi
+JDJHC
+JDqv
+JEdyYdu
+JEh[
+JE}J
+JGo-5
+JH0[LA
+JH0[LLIu
+JHHHH
+JHT$ HzL_
+JHcf
+JHz I
+JImO
+JI}hHHT$ HHD
+JLG-9
+JLHt
+JO_n
+JRWq HcR
+JSYz
+JSxt
+JV8f
+JWO(
+JXKT(f
+JY:855:
+J[F7(_ME
+J_O_of
+J_Q7y
+J_aAXsI$
+J_sJ
+JanFebMarAprMayJunJulAugSepOctNovDec
+January
+Jas-
+Jb<i
+Jd57E
+Je-{V
+Jf 8Gp$Z{
+JjE8
+Jn@!
+Jt$HUH
+JtAHC
+Jtz8
+Ju.AF
+JuHHIHL$(L
+July
+June
+JwVs
+JxGDe
+JxGOR
+Jylq
+Jy}q>
+Jz%l9=
+JzdM
+J{T0
+J{bg
+K RHH
+K iH
+K l(/0
+K$/i
+K(ICHI
+K(rG(HH
+K)HWLp
+K/j>M
+K/vSo
+K0BHu
+K4kkQ
+K613 
+K<ar
+K@233HC
+KA9H
+KAgb
+KE3HE
+KERNEL32.dll
+KH0[
+KH3u
+KHHH
+KHH{8H
+KHcH
+KHgb
+KHmI
+KHnA
+KJ5ep
+KLHH
+KLHt
+KMN-Lc
+KOFp$H
+KON/985cM'
+KP>{IQ
+KQ0rg
+KQ]MHMW<
+KQo=U
+KSB8
+KTHH
+KVl=V
+KVvdg
+KXIx:
+KXy>DrLJ
+KYd[RqLN
+KYlB
+KZl4
+K]I@
+K_s[
+KaNru
+KacQ<4M9[!
+Kannada
+Katakana
+Kayah_Li
+Kc$.4
+Kf$<
+KfIA=
+Kfo>]
+KhD$8HCXHD$0L$(HKHT$ 3
+Kharoshthi
+Khmer
+KillTimer
+Kj04
+KjYsr
+KkAz(
+KkMHa
+Kmbs
+Kp8%g)
+KpHH
+Kr.$@B
+Kr.%gyk<i
+Ks77hL
+KuS/
+KvHk
+KxFc5-
+Kykd
+K{HL$ 3HX
+K{Pt
+K{hTYo
+K}n/buMVY
+L HB
+L I]0Iu0H
+L LH
+L!!LD$
+L!HC
+L!HcL$ H
+L!L9
+L!M8A$
+L!Q(
+L!This program cannot be run in DOS mode.
+L!]_>
+L!d$ E3E333
+L$ -
+L$ AH
+L$ At
+L$ B
+L$ D
+L$ DB
+L$ DH
+L$ DLH
+L$ DM
+L$ DMDH
+L$ DT$$D
+L$ E
+L$ F
+L$ H
+L$ H$
+L$ HD$8I
+L$ HG
+L$ HH$
+L$ I
+L$ I2
+L$ IH
+L$ J
+L$ LL$
+L$ LL$ LD$
+L$ LL$0
+L$ LL$0LD$xD$8
+L$ LL$0LHH
+L$ LL$8
+L$ LL$8LD$4AHD$
+L$ LL$8LHHE3A
+L$ LL$HL$
+L$ LL$PLD$0HH
+L$ T$$
+L$ W
+L$ w
+L$$D
+L$$F
+L$(-
+L$(<
+L$(D
+L$(E
+L$(E3HE33L
+L$(F
+L$(H
+L$(H$
+L$(HL$ 
+L$(HL$ M
+L$(LA
+L$0 
+L$0-
+L$0=
+L$0B
+L$0D
+L$0D$(!
+L$0D$4D
+L$0DL$(DT$ DHHL$@
+L$0EM
+L$0H
+L$0H$
+L$0HD$8
+L$0HL$@H$
+L$0I
+L$2H3H
+L$4A3
+L$4AE
+L$4D
+L$4DD$<d$(
+L$4H@
+L$4HL$P
+L$8 
+L$8D
+L$8F
+L$8HD$0DL$(D$
+L$8HH@
+L$8L$4DD$<A
+L$@ HG
+L$@@
+L$@D$8$
+L$@D$8$ 
+L$@D$8Hl$0DD$(MI
+L$@DD$8I
+L$@F
+L$@L$DHT$@MH
+L$@LD$@H
+L$BD
+L$D$
+L$DA
+L$DD
+L$DF
+L$DfD9}
+L$HAAA
+L$HD$@DD$8T$0E3E3IL
+L$HDc
+L$HHG
+L$LAAA
+L$LB
+L$LD
+L$LF
+L$OXRJ)=
+L$PA
+L$PDD$XA
+L$PE3
+L$PHH
+L$PHL$p
+L$PL
+L$PL$
+L$PT$L
+L$Pt$
+L$VH
+L$X9A
+L$XHD$
+L$XLD$@
+L$YHL$XD$X<HHH.oH
+L$dA
+L$dDL$
+L$dL
+L$h-
+L$hA
+L$hDH
+L$lE3J
+L$p 
+L$pA
+L$pH
+L$pH H
+L$tL$
+L$xD8
+L$xDD$XL$
+L$xE
+L$xH
+L$xHC
+L$xI
+L$xL$ MK
+L%II
+L%L$
+L%a=
+L'$l
+L']H
+L(Lp
+L)vrFE
+L-<0
+L-II
+L-fg
+L.Ln HF
+L/MD$
+L09A:tQ
+L0:A:t
+L1)Q<
+L1:in4MFaU
+L1H$
+L1kE
+L3 HtH
+L3%s'u
+L33L
+L3Dd$(HH
+L3HHHDBL@P
+L3HIHIX
+L3IH [5
+L3IQ
+L3IiHH
+L3fD$
+L3u2H
+L5pk
+L5qHL$hHs
+L6HLv
+L7QxP!aa ]!
+L9 t/H
+L9!t
+L9!t2H
+L9!tRH
+L9$ 
+L9.u
+L9/)
+L91t
+L91uH
+L98t
+L9Y H
+L9sPv
+L9spv
+L9t$@v
+L9tHDd$@HHT$@E3LIcC
+L9uH
+L9z0
+L9z8
+L<M'A
+L=43
+L=@J
+L=yZ
+L>!t
+L>$H
+L>EL-
+L@ H'E3A:u
+L@73@:u
+L@8gu
+L@U3$
+L@l$ uIHT$0HxgH
+LA3D
+LA3Ht$(
+LAC8$
+LAHL
+LAt$@E3Dl$HA 
+LBH]v
+LBmmJ
+LC0H0
+LC8H8I
+LCHHW
+LCMapStringA
+LCMapStringW
+LCvOoH
+LD fA
+LD$ 
+LD$ AiE3A:u
+LD$ H
+LD$ H$
+LD$ HHD$0
+LD$ HHE3A
+LD$ HLD$ 
+LD$ I
+LD$ L3H8H
+LD$ LD$8P8xL$
+LD$ LHlxD
+LD$ fA
+LD$ u
+LD$$HIA
+LD$(D$<
+LD$(HHE2
+LD$(HT$pH
+LD$(IH HcH
+LD$0
+LD$06
+LD$0@
+LD$0A
+LD$0C
+LD$0E3
+LD$0E3H
+LD$0E3I
+LD$0H
+LD$0H$
+LD$0H$@
+LD$0HH
+LD$0HL$ AQHA
+LD$0HL$PEH
+LD$0HL$PEHD$8@t
+LD$0HT$
+LD$0HT$4HD$ 3
+LD$0HT$HE3
+LD$0HT$PH
+LD$0HT$PHD
+LD$0HT$PHz
+LD$0HT$hA
+LD$0HT$pH
+LD$0II
+LD$0M
+LD$0S'H
+LD$4H
+LD$8A
+LD$8D$9D$:D$
+LD$8H
+LD$8H$
+LD$8HIU
+LD$8HT$@HL
+LD$8HT$HD$8
+LD$8HT$HH
+LD$8HT$PH
+LD$8I
+LD$<H
+LD$@
+LD$@AQ
+LD$@E3H
+LD$@E3HHHMH0u
+LD$@H
+LD$@H$H
+LD$@HT$HH
+LD$@HT$XH
+LD$@HV
+LD$@IHH
+LD$@LI
+LD$DA
+LD$DHT$HHHL$H3
+LD$DHT$PHD$ 
+LD$H
+LD$H3H
+LD$HH$
+LD$HHL4UD
+LD$HHT$0M!
+LD$HIDD$0
+LD$HLHHvSH{
+LD$Hf
+LD$Ht-HcD$H
+LD$LH$
+LD$LHT$xHD$ 
+LD$P
+LD$PD$0
+LD$PH
+LD$PH$
+LD$PHHD$ !
+LD$PHT$0A
+LD$PHoHT$PHcH
+LD$PHpHT$PHL$@
+LD$Pf
+LD$PfD$HH
+LD$TH
+LD$THAHD$ U
+LD$X
+LD$XA
+LD$XA@
+LD$XH
+LD$XH$
+LD$XHL$(HD$XI
+LD$XHT$ H
+LD$XHT$@L 
+LD$XHT$@M(
+LD$Xqvu
+LD$h
+LD$hLL$@H$
+LD$pA
+LD$pD$(U
+LD$pD$0F
+LD$pH
+LD$pHHD$ 
+LD$pHL
+LD$pHL$@D$0AC
+LD$pt
+LD$x
+LD$xH$
+LD$xHD$0HD$DH
+LD$xLHHDd$xDd$
+LD/t
+LD<f
+LDHA
+LDHH
+LDt$(Dl$ 
+LE3>
+LE3H
+LE3HH
+LE3HIHx
+LE3HILK
+LE3HT$PHH0}
+LE3I
+LE3IHL$@HHIH
+LED$ 
+LEDL$0
+LEHH
+LEHT$@H
+LEHT$pHL$0H$ 
+LF HN
+LF(HD$@HG
+LF[v
+LG0H0H
+LG4A
+LH ATH0IIHLHt_MtZ3H
+LH D@
+LH H(L@
+LH HH
+LH L@
+LH SVWATH8H3
+LH SWH83H
+LH$MH
+LH%HHX D@
+LH(IHgAE
+LH-H
+LH8E3ILL
+LH9{
+LHAhH
+LHB HR(LHHD$ 
+LHD$($
+LHD$(H$ 
+LHD$0$
+LHD$0A
+LHD$0L
+LHD$8
+LHD$8Hu
+LHD$8IB
+LHD$@H
+LHD$@H$
+LHD$PH$
+LHD$pHD$XHt
+LHDH
+LHDH$
+LHDt$(Dl$ 
+LHH IHA
+LHH2
+LHH3
+LHH<H
+LHHAIA
+LHHD
+LHHD$ 
+LHHD$PLHD$0HD$(
+LHHE3MIA
+LHHH
+LHHHD$ L3H
+LHHHH
+LHHHl$8Ht$@H _=H
+LHHIH
+LHHIHH
+LHHKnH
+LHHL
+LHHXrHT$
+LHHau
+LHHc
+LHHq
+LHH{
+LHIH
+LHIe
+LHIp
+LHI{
+LHL$
+LHL$ 
+LHL$ @H
+LHL$ HH
+LHL$0L
+LHL$8
+LHL$PML]
+LHL$XAoZ
+LHL$hMH
+LHL@
+LHL@ Ixu
+LHL@3
+LHL@9ku
+LHL@Vu
+LHL@hu
+LHLH$
+LHT$ A
+LHT$0H
+LHcH
+LHfd$ 
+LHt$pHS0H
+LHtPDG
+LHtT 
+LHz])H8
+LI HQ
+LI(H
+LI(HL$0
+LI0Hx
+LIAH
+LIH$
+LIHH
+LIHH$
+LIHHD$
+LIHHKL
+LIHIL
+LIHLc
+LIKQ
+LIM3I
+LIcC
+LIcn[
+LIk9
+LJ@D
+LK P
+LK.H$
+LK8HC E3ICHB(WICL$ ARX@8{]u
+LK8Hl$0HD$(E3T$ ARX
+LK8L
+LKPCg
+LKl$y
+LL$ A
+LL$ DD$
+LL$ E3
+LL$ E3(
+LL$ E333
+LL$ E3HD$$
+LL$ H
+LL$ H(
+LL$ HL$
+LL$ HL$@DIvHT$ I
+LL$ HT$PE3mHu
+LL$ L$
+LL$ LD$$:fE3A:u
+LL$ LD$$Zeu
+LL$ LH
+LL$ MDH
+LL$ ME3H8H(
+LL$ SH
+LL$ SWH(y
+LL$ SWHhMHMu((
+LL$ UVWATAUAVAW 
+LL$ UVWATAUAVAWH
+LL$ UVWH@HA
+LL$ VWATAVAWH H
+LL$ WH0Hl$
+LL$(LD$0MLT$ HL$0lHP[HHX
+LL$(LH
+LL$0A
+LL$0D$0H$
+LL$0DH
+LL$0DHD$(HHD$ 
+LL$0E3
+LL$0E33HP HL$0L$
+LL$0E3A
+LL$0E3D$4
+LL$0E3HI
+LL$0E3ID
+LL$0E3ID$4
+LL$0H
+LL$0H$
+LL$0HD$pLHHD$(
+LL$0HHD$PL$
+LL$0IH
+LL$0ILD$xHHH
+LL$0L$
+LL$0L$@
+LL$0LD
+LL$0LD$4HHD$hIHD$(HD$xHD$ @:u
+LL$0LD$PH$
+LL$0LD$THT$xD$ HF
+LL$0LHI
+LL$0S'HE3
+LL$0}
+LL$4H
+LL$8DT$@A
+LL$8E3
+LL$8E3ID$ 
+LL$8E3K
+LL$8H
+LL$8LD$HH
+LL$8LD$HID$ 
+LL$8Mc
+LL$8W
+LL$@
+LL$@ 
+LL$@0
+LL$@A
+LL$@DH
+LL$@DHD$(HHD$ 
+LL$@E3
+LL$@E3D$D
+LL$@EHH
+LL$@H
+LL$@I
+LL$@L
+LL$@L$
+LL$@L$p
+LL$@LAH
+LL$@LALL$@HL$
+LL$@LD$0H
+LL$@LH
+LL$@LHHj>@
+LL$DHT$@A
+LL$DHT$HD
+LL$HD
+LL$HH
+LL$HHD$(H$
+LL$HLD$@IH3H$h
+LL$HLH
+LL$LDEH
+LL$LHT$
+LL$PD$0HD$0H
+LL$PDT$pH$
+LL$PE3
+LL$PE3D$PP
+LL$PE3HT$ 3P
+LL$PH$
+LL$PHD$XHT$@L$
+LL$PHLc
+LL$PLD$0HHLl$(HD$ 
+LL$P{
+LL$TLD$PH
+LL$XD$8
+LL$XHAH
+LL$XL$
+LL$XL@
+LL$XLD$4HHD$hHHD$(HD$0HD$ u/H
+LL$XLD$PS
+LL$]A
+LL$h
+LL$hA
+LL$hD$
+LL$hL$
+LL$hLD$
+LL$hLD$ H
+LL$hLD$xHT$0H
+LL$p
+LL$p=
+LL$pDH
+LL$pE3
+LL$pE3>
+LL$pHD$XH
+LL$pHL$@D$8H$
+LL$pIDHD$PS
+LL$pL
+LL$pMII@l$p@l$qD$t
+LL$pMII@l$pD$q
+LL$pfG
+LL$xHT$TH$
+LL$xLD$HH
+LL$xLD$p
+LL$xLHH2
+LLHD$@I
+LLHH
+LLHH%
+LLHH@l$ XH
+LLHHH
+LLHI
+LLHIHH
+LLILd$(HL$ 
+LLL$
+LLL%Y
+LLO$H'
+LLO$H>
+LLO$HM
+LMIH
+LNDbOH
+LNu.Hb4'
+LP0Q
+LPA:(T$0
+LQ%z
+LRHT$0L$
+LRT$0LL$8LD$HA
+LRnu/Hf
+LRrIE0Lo8HG03IE0
+LSHp
+LT$0LL$(I
+LT$8
+LT$8L$
+LT$8L$0HD$(Hd$ 
+LT$8u
+LT$PA
+LT$hH$
+LT$p 
+LT$pHr
+LT5c$e
+LT>l
+LUVHhA
+LVfZ}
+LVzH
+LW@AG
+LY2009!
+LY55
+LZHL$Hl
+LZno
+L[(L_(HC0HG0C8G8C<H
+L[@(
+L_83L
+L_I@@@@@@=:A$
+La I=HG
+La]qd
+Latin
+Lc!H$
+Lc$0
+Lc$H
+Lc/IE3
+Lc3D
+LcA<E3LL
+LcAH
+LcAtGL
+LcB$
+LcBt
+LcD$ 
+LcD$ Hc$
+LcD$ J
+LcD$LLL$HAH
+LcD$h/Hc$
+LcD$hL$
+LcDM
+LcE3A
+LcE3HMIH3Hf8
+LcE3J
+LcE3M
+LcF(HF
+LcF(HV I
+LcG HcF
+LcH$ 
+LcHI
+LcHI'f8
+LcHL$(
+LcHM
+LcHT$hHL$HI
+LcHt
+LcIC
+LcImHH
+LcL$
+LcL$hH
+LcL$pE3
+LcL2A
+LcLHI=
+LcMA
+Lct$(HcL$ H
+Ld$ 
+Ld$ Dd$p
+Ld$ I
+Ld$ MLHY
+Ld$(H
+Ld$(Ll$ HH
+Ld$8HJ0H
+Ld$8Hl$0YxI
+Ld$8Ld$0DL33
+Ld$@Dd$HD$P
+Ld$@Ht
+Ld$@IHHI
+Ld$HH
+Ld$PLL$X
+Ld$Pl$XD8=
+Ld$X
+Ld$XD$dHG
+Ld$XH
+Ld$Xl$PA
+Ld$Xt$P
+Ld$h3H@A]HHX
+Ld$hDd$@
+Ld$p
+Ld$p5
+Ld$xHA0
+LdfH_8
+LeXM
+LeaveCriticalSection
+Lepcha
+LfD$XHt$HA
+Lh AVL
+Lh D
+Lh(3A
+LhLpLx
+LhhLxpL
+Lhpq$0
+LiHL$(r
+Lidw
+Limbu
+LineTo
+Linear_B
+Listed Repos
+LjH.r
+Ljet
+Lk!zObgDV
+LkH$
+LknHL$0D$(
+Ll$ 
+Ll$ 0D8l$Ht
+Ll$ AVH0L5
+Ll$ D
+Ll$ E3E333
+Ll$ E3E333T
+Ll$ H0D8l$HtHD$@
+Ll$(A
+Ll$(L
+Ll$0H$
+Ll$0HQ8ALt$(IT$0H
+Ll$0Hd$(
+Ll$0Ld$(Ht$ L
+Ll$@
+Ll$@D$8
+Ll$@HD$0LcI
+Ll$@I
+Ll$@IM
+Ll$@L92t
+Ll$@U$
+Ll$@W$
+Ll$@mH
+Ll$@pu
+Ll$@s7IM
+Ll$HDh
+Ll$HE9u
+Ll$HH
+Ll$HHA
+Ll$Ht
+Ll$PAE
+Ll$PD$H
+Ll$PE3D
+Ll$PH
+Ll$PLd$XHh
+Ll$X
+Ll$XLl$PLl$HLl$@C
+Ll$hD$
+Ll$p
+Ll$xLd$p3Ll$(Ld$ 9$
+LlD0[
+LlLE
+Ln H$
+Lo0HG83IE8H$
+LoC6C{]D-fVwf
+LoadCursorW
+LoadIconW
+LoadImageW
+LoadLibraryA
+LoadLibraryExW
+LoadLibraryW
+LoadResource
+LoadStringW
+LoadUserProfileW
+Local Settings
+LocalFileTimeToFileTime
+LockResource
+LockServiceDatabase
+LockWindowUpdate
+LogonUserW
+LookupPrivilegeValueW
+Lou/H
+Lq(HHIyLc
+Lq1qU
+LrH$P
+Ls HD$8Lk
+LsTFA
+LsaCfgFlags]
+Lsa]
+Lt$ 
+Lt$ 8qD8t$HtHD$@
+Lt$ E3E333
+Lt$ E3E333H$
+Lt$ pD8t$H
+Lt$ q0
+Lt$0D$(HD$hL3HD$ 
+Lt$0D3Dt$(Lt$ 
+Lt$8zt
+Lt$@D$ 
+Lt$PJL
+Lt$PM
+Lt$PMkXAt
+Lt$X
+Lt$XDl$P
+Lt$Xt$P$
+Lt$hLt$pDt$xDt$
+Lt$xEI
+LtHHA
+LuG6C
+LuQK
+Lv HF
+Lv(H
+Lv.HK
+Lw3%
+LxoH$
+Lycian
+Lydian
+LyqA
+Lzmgv 
+L{)e
+L{D59fX
+L}xLE
+M!Iq8M
+M$$L$
+M$<Oy
+M$m:O
+M%ua.G
+M'Mw=
+M)ICIA
+M)]H
+M.]E
+M/e@o M
+M0H2
+M1}ss
+M25Pb
+M2Je Tjpy7u
+M2]s
+M3HH
+M3HM
+M3LT$
+M3M3Hd$ LD$(
+M4DE3A
+M62DSJ
+M9iU>f!j>a
+M9l$
+M<<5=kt
+M=Apz$
+M>YfXX
+M@vk=
+MA:u
+MAADt$(Ht$ 
+MAHD$ 
+MAHc
+MAVH
+MAfDD$8Ld$HHI
+MB63
+MC8I
+MCIC
+MDA'
+MDHv
+ME33C
+ME36
+ME3A
+ME3HT$hH
+ME3LHM
+MEKIF
+MEOGD
+MFpL
+MGHB5ZSrt
+MGiIwn>Jj
+MH [@SH H3HH
+MH.zdn9w
+MHD$ tbt
+MHD$(I
+MHDD}
+MHDd$(l$ 
+MHH$p
+MHH<H
+MHHA:u
+MHHD$ 
+MHHD$ A:u0{
+MHHl$PHl$Xl$
+MHHt
+MHHv
+MHIC
+MHLA
+MHLHuGH
+MHT$HHA:t
+MHc(
+MHf:
+MI3H
+MI@H3Ld$(HD$ 
+MIHH
+MIIK
+MIlH
+MIpA
+MJvVIs
+MK UVWATAUAVAWH
+MK WH
+MKI[
+MKMC
+MKYD
+ML!H
+ML$ LO$LHe
+ML$@
+ML3ML
+MLAH
+MLAW=I
+MLHHD$(
+MLHIdXHT$hHL$
+MLHL$HH}3A
+MLL$0H
+MLT$pt$
+MLl$@H
+MM/dd/yy
+MMag
+MMlf
+MMt1IcI
+MPR.dll
+MRJA
+MSydl
+M[!L<Dw
+M[F/$.c7DU
+M]>0]
+M]u%
+Ma:cA}
+Malayalam
+MapVirtualKeyW
+March
+McBD 
+McBD AB
+McD$x
+McE3E3M
+McEI
+McHH
+McHI
+McHT$(
+McHT$(HIH
+McI3
+McIH
+McMc
+McfBD]
+MdHL$ LD$hHT$ Hu
+Mdzr@pV
+Memory Management]
+MessageBeep
+MessageBoxA
+MessageBoxW
+Mh_I
+Mhjm
+Microsoft
+Microsoft Antimalware
+Microsoft Antimalware]
+Microsoft Visual C
+Microsoft.OneCore.WebThreatDefense.Configuration.WTDUserSettings]
+Microsoft.OneCore.WebThreatDefense.Service.UserSessionServiceManager]
+Microsoft.OneCore.WebThreatDefense.ThreatExperienceManager.ThreatExperienceManager]
+Microsoft.OneCore.WebThreatDefense.ThreatResponseEngine.ThreatDecisionEngine]
+Microsoft.Windows.Defender]
+MicrosoftEdge
+MitigationofFaultTorelantHeap.reg
+MkACHu
+MkEkE3E3
+MkParseDisplayName
+MkXAD
+MkXBD
+MkXID
+MkXJ
+MkXK
+MkXL
+MkXM
+Mkn5
+Ml$ HH
+Ml>:==
+MoUHcD$p
+Modules
+Monday
+Mongolian
+MonitorFromPoint
+MonitorFromRect
+MoveFileW
+MoveToEx
+MoveWindow
+MowTTY
+MpEngine]
+MpGears]
+Mq)2
+MqOGX9:/w)
+Mq[OYM
+MrtCache
+MsSecCore]
+MsSecFlt]
+MsSecWfp]
+Mt u
+Mt$H
+Mt$HM
+Mt$PI
+Mt%Mu
+MtrA
+MtuH
+MulDiv
+MultiByteToWideChar
+Mvdjd!aQ
+Mx!g>(
+Myanmar
+Mz= 
+Mz}l
+M}]_
+M}a(G
+N-b8
+N1%au
+N1cua
+N2gG%
+N3)M
+N7KjZ6frIwA
+N=[y
+N@ p
+NAD$
+NAt-LL$h
+NC]4R
+ND$ 
+NDkyZ
+NE1)
+NEu2l
+NHH3H
+NHL$ H
+NHL$ x
+NHa<zN
+NIIHd$8
+NIcH
+NIi}
+NJt}
+NKeb
+NL$8L$0H
+NLHH
+NLl$@E3
+NM5S
+NOnZI[
+NQ<=q!w
+NRza
+NTHJ@@@@@@@H$
+NUNPKL>whOA
+NW]q
+NY6a2
+NY[rc
+NZwJ8
+N]:hd
+N]TUUU
+N_9}_7
+N_dFXqn
+N_w}oIk(Vj
+NakM!)L
+NameSpace
+Nb/P}q
+NbEbhy5S5X
+NcHHC8H{@
+NejOE
+Network Protection]
+New_Tai_Lue
+Nf@(ZQF
+Niz/
+NjnTea
+Nk })y
+Nl8V
+NlH$
+Nl{FX
+Nmq:j-
+NoHH [@SH@HHL$ 
+Noi{Am
+NomoreDelayandTimeouts.reg
+Notifications
+Notifications]
+NotifyUnsafeOrReusedPassword]
+November
+Npm>6/EiU>[
+NpqR
+NqBCKA3A_
+NrWD
+Nsqw(
+Nt0f
+Nu7H$
+NuL$
+NvK2:>j
+Nwm%ufa(
+NyKv
+NzL.H
+N{jOlSK
+O oeE
+O {<
+O$0kq
+O$2L$
+O(7fCh0
+O(DL$
+O)FuF1
+O-MD
+O.s2u5F
+O1lR7A
+O2L$0
+O3DB
+O4[=
+O4oH
+O:fu=k@
+O<3u
+O=02Z:
+O=MB
+OA[HLcJ
+OBY_4
+OBe$
+OC-H
+OC=q
+OCOnrsyqr
+OD$h
+OD8$
+ODD$ LHDAU9
+ODL$T3HcG$H
+ODT$pMtQHcM
+ODsfEe
+OE5q
+OEo]}g
+OH3H
+OHD$(
+OHH [H
+OHHM0H3
+OHL$ I3LvG
+OHL$@
+OHT$ H2E3HH
+OHT$0H
+OHT$0Hz
+OHT$p3DD$
+OHc.HL$ LE3H
+OHc2LHII
+OI.p
+OIf'6
+OJ c
+OJ89{je>j
+OK$>
+OKTs
+OLEAUT32.dll
+OMWn
+ONu$
+OO%U
+OPMVeka
+OPQJ
+OQF3 
+ORt4IH
+OSs=Mw
+OVU:u3w
+OXZz
+OZ3P
+ObChu
+Oc3x
+October
+Od-C
+Od1@s
+OdjW@
+Oehm(44KS1O
+OfD9-KT
+OfxZMU
+Ogham
+OiAUmP
+Ok5@F
+Ol_Chiki
+Old_Italic
+Old_Persian
+OleInitialize
+OleSetContainedObject
+OleSetMenuDescriptor
+OleUninitialize
+On$H
+On-5
+Ona.
+Oneb/
+OpS>2L6
+OpenClipboard
+OpenDesktopW
+OpenProcess
+OpenProcessToken
+OpenSCManagerW
+OpenThreadToken
+OpenWindowStationW
+OrGm}
+Oriya
+Osmanya
+Ot HC
+Ot$tIH$
+Oug0<q$a
+OutputDebugStringW
+OvXm
+OvYn
+Owylz
+Oy!p
+Oz<lVmck
+O}h$
+O}{siW}e[<Pe
+P or 
+P%Zi.0<
+P(HK
+P(TY))TmRZ
+P(tIH
+P)dh
+P.}e1
+P/3][S4
+P/p]jEnVA
+P0HK
+P0HL$0H
+P0HL$X@8{
+P0HL$XH
+P3IU
+P4lQVOXIWGPCQBHBKFVAM@UU
+P5{):
+P6HL$0
+P79J
+P8H$
+P8HK
+P8HL$PH
+P8nL
+P>'F
+PA) 
+PB0Z)Gv(
+PBP9>
+PC-<
+PCRE does not support 
+PE33
+PE33D
+PE3E333H
+PFH'
+PGD{
+PGI0{.6
+PGZ1!L
+PHC(Lk8Lk0LE
+PHHE
+PHL$0
+PHL[
+PHuHT$ I(XHL$ 
+PJdi
+PKiP
+PL$P
+PL1!0
+PLHt
+PLk}
+PMPnyk8
+PM[E
+PNh-Q
+PNi0b!
+POSIX collating elements are not supported
+POSIX named classes are supported only within a class
+PQ@']!T
+PQR5
+PREJE
+PRUNE
+PSAPI.DLL
+PSSSSFEGJ@@@D%
+PT'J
+PUAProtection]
+PUW3 
+PWQ4f-kk%b
+PXZ/(xs(V
+PXfDpPfD
+PYGT
+PZn<G})B
+P[=h>[6>pl>E{
+P_':be
+P_Ru
+Paj1]
+Panther
+Parameters
+Paste this code into a powershell file and after 
+PbdyHyy
+PeekMessageW
+Pgs/
+Ph%I3@r[vbo
+Ph@v
+Phags_Pa
+PhishingFilter]
+Phoenician
+PiEHZ
+PjH$
+Platform]
+Please contact the application's support team for more information.
+PlutonHeci]
+PlutonHsp2]
+Pm>y
+Pm_lpg
+Pn z
+PnP]
+PnT44
+Policies
+Policy Manager]
+PolicyManager
+Policy]
+PolyDraw
+PostMessageW
+PostQuitMessage
+PowerShell
+PreventOverrideForFilesInShell]
+Process32FirstW
+Process32NextW
+Program Files
+Program Files (x86)
+Program: 
+ProgramData
+Projects
+PsCnh
+Pt2HC
+PtInRect
+PtxRt
+PvM}'X
+PzKV8$H
+Q Ek
+Q$(s
+Q(BSdlP2DX
+Q.L}!
+Q/mei
+Q0$M
+Q1t 
+Q2F 
+Q3IL
+Q:m'G
+Q<1c>
+Q=Q8zP
+QAAQf9
+QAL$0 
+QBa]
+QCHfcqk
+QCv)/
+QD$L0AQD$MSA
+QD9t$
+QE3HH]u
+QE3LD}
+QG%0
+QGVj
+QH [@SH HH
+QH$p
+QHH6
+QHHQHA:uHHQH
+QHNc(0_f
+QHT$
+QHT$0HHQI
+QIcH
+QLL$0H
+QM_L
+QM_h'p($
+QNAN
+QNm)Jtf)
+QO8 !
+QQ0Kq
+QU:N
+QUG%4pU:
+QXBb
+Q[/[s
+Q[kMQ:
+QcOuno
+Qf9tP
+QfA(I
+Qho6A.
+QjU1
+Qk@rK
+QkLl
+QkVV/
+Qle2
+QmVtB(
+Qo1R{GG
+Qp!:s]
+Qq]H{
+QrES
+QrdGk{
+Qt/%O/SM
+QtgabBl
+Qu-H
+QueryPerformanceCounter
+QueryPerformanceFrequency
+QwhR
+R D}
+R or (
+R!=Nw
+R)SH
+R)mNWKWHYFSDNEMCK>H
+R)z]x
+R3H$
+R5 .=Dn
+R5/AG
+R5TO
+R5uggF=
+R6002
+R6008
+R6009
+R6016
+R6017
+R6018
+R6019
+R6024
+R6025
+R6026
+R6027
+R6028
+R6030
+R6031
+R6032
+R6033
+R6034
+R9O>1
+R9Tr
+R:fN
+R<0g
+R=/Y
+R>/J=G9@/>2D7HH
+R>Z_
+RB4-
+RDE3H
+RE<{Ae
+REH18
+RET6Y5
+RFfwTaK
+RGAM4
+RGvq
+RH$ 
+RH5 
+RHt'=NY
+RIcEL
+RJxXX
+RLL$pL$
+RN=SCS
+RNq>
+ROtsi
+RPE5K
+RSr!
+RTTI
+RUwYo
+RVu{A
+RWHHuH
+RWxk5bv@U
+RYRi
+RZNc
+R]nHa=
+R_UV}
+RaiseException
+RbRNM
+Rcyns
+ReadFile
+ReadProcessMemory
+Real-Time Protection]
+RealTimeScanDirection]
+Rectangle
+RedrawWindow
+RegCloseKey
+RegConnectRegistryW
+RegCreateKeyExW
+RegDeleteKeyExW
+RegDeleteKeyW
+RegDeleteValueW
+RegEnumKeyExW
+RegEnumValueW
+RegOpenKeyExW
+RegQueryValueExW
+RegSetValueExW
+RegisterClassExW
+RegisterHotKey
+RegisterWindowMessageW
+Rejang
+ReleaseCapture
+ReleaseDC
+Reliability]
+RemovalTools
+RemovalofAnti-PhishingServices.reg
+RemovalofWindowsDefenderAntivirus.reg
+Remove and Disable Microsoft Pluton.reg
+RemoveDefenderTasks.reg
+RemoveDirectoryW
+RemoveSecurityandMaintenance.reg
+RemoveServices.reg
+RemoveShellAssociation.reg
+RemoveSignatureUpdates.reg
+RemoveStartupEntries.reg
+RemoveWindowsDefenderFirewallRules.reg
+RemoveWindowsWebThreat.reg
+Remove_SecurityComp_moduled
+Remove_defender_moduled
+RemoverofDefenderContextMenu.reg
+Reporting]
+RequirePlatformSecurityFeatures]
+RequireUEFIMemoryAttributesTable]
+RestrictedServices
+ResumeThread
+RfU<80>}028pfV
+Rfshb
+Rga>
+RiKh1
+Rich
+Ricxv
+RjZc5
+Rkf/
+RoundRect
+RppF20
+RqM}Q3pJ0pJh
+RrgT
+RsWog
+RtlCaptureContext
+RtlLookupFunctionEntry
+RtlPcToFileHeader
+RtlUnwindEx
+RtlVirtualUnwind
+Run as Administrator
+Run]
+Runic
+Runtime Error!
+Rw72
+Ry$C
+R{Ut
+S px'.)
+S!9n
+S!sIm'
+S'XJ
+S-1-5-21
+S0AjL
+S0Ht
+S3]H
+S4VY
+S=4S7
+SCMConfig]
+SD$8
+SDOmB
+SDS-
+SF]BXV
+SGx/
+SH H
+SH HHI
+SH Hd$0
+SHBrowseForFolderW
+SHELL32.dll
+SHEmptyRecycleBinW
+SHFileOperationW
+SHGetDesktopFolder
+SHGetFolderPathW
+SHGetMalloc
+SHGetPathFromIDListW
+SHIH
+SHL$H)
+SHL$x6MLIIE
+SHPL
+SHmK%o
+SHr(
+SING error
+SJLd
+SKIP
+SLE@
+SLHD$XH
+SLP@5
+SNAN
+SNp!
+SOFTWARE
+SQ!Oo1>f79
+SRXV
+SUVWATAUAVAWH
+SUVWATAUAVAWHH
+SUVWATAUAVAWHX
+SUVWATAUAVAWHXAHcADd$4
+SUVWATAUAVAWHx
+SUVWATAUAVAWHxHB
+SUVWH
+SUVWHHL
+SVWATAUAVAWH
+SVWATAUAVAWH@
+SW5itHddH
+SYSTEM
+SYgplJ
+S[Z-'
+Saturday
+Saurashtra
+Sb$HW
+ScanParameter]
+Scan]
+Scenarios
+Schedule
+ScheduleScanDay]
+ScheduleScanTime]
+ScreenToClient
+Script_Run.bat
+Se<f
+Security Center]
+SecurityHealthService]
+SelectObject
+SendDlgItemMessageW
+SendInput
+SendMessageTimeoutW
+SendMessageW
+September
+Server
+ServiceEnabled]
+Services
+Session Manager
+SetActiveWindow
+SetBkColor
+SetBkMode
+SetCapture
+SetClipboardData
+SetCurrentDirectoryW
+SetCursor
+SetEndOfFile
+SetEnvironmentVariableA
+SetEnvironmentVariableW
+SetErrorMode
+SetEvent
+SetFileAttributesW
+SetFilePointer
+SetFilePointerEx
+SetFileTime
+SetFocus
+SetForegroundWindow
+SetHandleCount
+SetKeyboardState
+SetLastError
+SetLayeredWindowAttributes
+SetMenu
+SetMenuDefaultItem
+SetMenuItemInfoW
+SetPixel
+SetPriorityClass
+SetProcessWindowStation
+SetRect
+SetSecurityDescriptorDacl
+SetStdHandle
+SetSystemPowerState
+SetTextColor
+SetTimer
+SetUnhandledExceptionFilter
+SetUserObjectSecurity
+SetViewportOrgEx
+SetVolumeLabelW
+SetWindowLongPtrW
+SetWindowLongW
+SetWindowPos
+SetWindowTextW
+Settings
+SfD9
+SgrmAgent]
+SgrmBroker]
+SharedAccess
+Shavian
+Shell
+ShellExecuteExW
+ShellExecuteW
+ShellServiceObjects
+Shell_NotifyIconW
+ShowWindow
+Signature Updates]
+SignatureUpdateInterval]
+Sinhala
+SizeofResource
+Sleep
+SmartScreen
+SmartScreenEnabled]
+SmartScreen]
+Sn8>lL
+SnHW<!Fz
+Software
+Sol9W
+Sordum Software
+Sordum Software0
+Sordum Software00
+Source Code(.zip)
+SpZAxtW
+SpyNet]
+Spynet]
+StVf
+StartupApproved
+State]
+Static
+StmX
+Storage
+StretchBlt
+StringFromCLSID
+StringFromIID
+StrokeAndFillPath
+StrokePath
+SuHT$0H
+SubmitSamplesConsent]
+SunMonTueWedThuFriSat
+Sundanese
+Sunday
+Svchost
+Svchost]
+SwLo'u7m
+Syloti_Nagri
+Syriac
+SysWOW64
+System32
+SystemApps
+SystemParametersInfoW
+SystemTimeToFileTime
+System]
+S{-yZvIS
+S}sdP
+T jh}X_D8'
+T$ 3
+T$ 4L$
+T$ EAD
+T$ EQ
+T$ H
+T$ L
+T$ f
+T$$3
+T$$9U
+T$$I
+T$$s
+T$(IL
+T$(L$
+T$(T$ 3E3E3I
+T$08
+T$0:H
+T$0D
+T$0H
+T$0HP
+T$0L$
+T$4H
+T$4L$0
+T$8$
+T$8A
+T$8D
+T$8D$0AD
+T$@$
+T$@D$8
+T$@D$8$
+T$@IcK
+T$DH
+T$DHT$
+T$FD
+T$HA
+T$LH
+T$LHT$(HD$@
+T$LL
+T$LPhI
+T$P$P
+T$PD
+T$PDK
+T$PH@
+T$PIcK
+T$T@ 
+T$TDD$d
+T$TH
+T$TIcK
+T$TL$
+T$XA
+T$XC
+T$XH$
+T$XL
+T$dA
+T$dD
+T$hA
+T$hG
+T$hH
+T$hIcK
+T$hL$p
+T$pA
+T$pBf
+T$pD
+T$pHH
+T$pHL$ fH$
+T$pt9H
+T$tIcK
+T$xA
+T$xHD$x
+T$xf
+T%Ph$
+T'NM
+T'lI
+T'u]}
+T({Y9
+T/=AER
+T0:WI
+T2W_d
+T4JhpglMGB=
+T4gk:
+T4nA
+T5O<
+T6$VjR
+T78_9!k5
+T:28
+T:=93xeavW
+TA(b
+TA0$H
+TA1W
+TB6Z
+TBhYi50
+TC(T2Z
+TCq$
+TDA0
+TDD3331
+TDKDm
+TDdKN
+THEN
+THL$HH.HL$0H!HL$HH
+TI0}!j2r
+TIgp.cRqaN
+TJ<d
+TKQow
+TLOSS error
+TT!q
+TU589
+TUUU
+TV{3
+TX=/
+TZ5bv
+T[IzJKC
+Tagalog
+Tagbanwa
+Tai_Le
+Tamil
+Taqv8v
+TaskCache
+Tasks
+Tasks_Migrated
+TbNIOXG
+Tc1o
+Tcco
+TdXv
+Telugu
+TerminateProcess
+TerminateThread
+Thaana
+Thai
+That is a false positive.
+This application has requested the Runtime to terminate it in an unusual way.
+This indicates a bug in your application.
+This indicates a bug in your application. It is most likely the result of calling an MSIL-compiled (/clr) function from a native constructor or from DllMain.
+Thursday
+Tibetan
+Tifinagh
+TjD$
+Tn=g
+Tq$O
+TqkD
+Tr39'3vz
+TrackPopupMenuEx
+TranslateAcceleratorW
+TranslateMessage
+Tsgx
+Tt1HK
+Tt>HK
+Tt@A
+TtDT$PLL$XH
+TtHK
+Tuesday
+Tv9@Xdh>
+Tw=:
+Ty:}
+Tyz]
+TzzmFzu
+T{agw(/]b
+U Bv
+U DE
+U X0
+U fkA
+U!obc
+U$){S0
+U((t
+U-K8!6<NK1
+U-MQ=:680.
+U1wcn8
+U3d:t(
+U86kVW
+U8WxO
+U8el
+U=$=E)]UjX0
+U=4dL_JJ
+UA) 
+UANt
+UAPXp
+UDd$
+UFmUlWO$
+UFn_v
+UH. 
+UHH@LeLmLuL}HM
+UHK H [G@SH0d$X
+UHL$ 
+UHtHL$@HL$0L$
+UIo$HL$H-
+UM2No. eyJbs:
+UMJt
+UNICODE
+UOccT
+UROT
+US82
+USER32.DLL
+USER32.dll
+USERENV.dll
+UTF-16LE
+UTF-8
+UTF8)
+UTtJb(
+UUUUUU
+UUZ@o4[3
+UUgN
+UVWATAU
+UVWATAUAVAW
+UVWATAUAVAW 
+UVWATAUAVAWH
+UVWATAUAVAWH 
+UVWATAUAVAWH03
+UVWATAUAVAWH0E3LAI
+UVWATAUAVAWH0Hr
+UVWATAUAVAWH0Ic
+UVWATAUAVAWH0L$
+UVWATAUAVAWH@D$
+UVWATAUAVAWH@E3E2IAoHD$
+UVWATAUAVAWH@HB
+UVWATAUAVAWH@LHH
+UVWATAUAVAWHP$
+UVWATAUAVAWHP3MLX
+UVWATAUAVAWHPE3HIDp
+UVWATAUAVAWHPH$
+UVWATAUAVAWHPLHHL$0EM1sE3M
+UVWATAUAVAWHPLHHL$0EMpE3M
+UVWATAUAVAWHPLz
+UVWATAUAVAWHp
+UVWATAUAVAWHpHB
+UVWATAUAVAWHpLb
+UVWATAUAVAWHpr
+UVWATAUAVAWP
+UVWATAUH
+UVWATAUH ILA
+UVWATAUH LH
+UVWATAUH0Hz
+UVWATAUH@H
+UVWATAUHPH!
+UVWATAUHPILA
+UVWATAUHp
+UVWATAWH
+UVWH
+UVWH E
+UVWH HH
+UVWH HHL$@IH
+UVWH I3Hk
+UVWH0H=E
+UVWH0LHL@ H
+UVWH@3IH9
+UVWH@HB
+UVWHP
+UVWHPH
+UVWHPHB
+UVWHp
+UVWHpH
+UWATH@HZ
+UWP'QB.
+UX Configuration]
+UYwn
+UZ]A0/U0O/
+U]11wPPvjlc.
+U]sXH 
+Ubpm]
+Udhv!]
+Ue-R
+Ue>!c
+UeyGV
+Ugaritic
+Ugi4F
+Ugn1yiFa
+UhJ/w
+UhL='
+Uk(vGv
+UnhandledExceptionFilter
+Unizeto Technologies S.A.1'0%
+Unknown exception
+UnloadUserProfile
+UnlockServiceDatabase
+UnregisterHotKey
+UoE0T1B
+UoQm
+UrlAssociations
+Us$fg
+UtTYbe $PL
+UteHG
+UyZ6q)Xv
+UzKC
+U}]E3H
+V%@SH H
+V)Hh
+V)Xe
+V)br
+V.yu
+V2mk
+V2ror
+V3=zd eNG
+V44uP4
+V4Gv
+V4T )_
+V5uY7N
+V6jwb
+V8Kb
+V9_/-Sm
+V<6y
+V>Tu
+VDH$
+VDqR W)'$C
+VE3A:t(HT$hHL$8S
+VE3I
+VEFv3{
+VERB) not recognized
+VERB) with an argument is not supported
+VERSION.dll
+VG a
+VGZm
+VH 3HA
+VH H
+VH y
+VH$@
+VH8Hd$ 
+VHHLDH
+VHL$ 
+VHL$ 3HD$ 
+VHL$0
+VHL$@HL$
+VI-l
+VIDO>/4H{D
+VJ5yz
+VKjZ
+VL1.4/4=8tmxl
+VMf@2
+VQ1K
+VSa_
+VT$:G
+VT@o
+VTzE5)
+VWATAUAVH
+VWATAUAVH LHjL
+VWATAUAVH0HH$
+VWATAUAVH@ALL43HH9
+VWATAUAVHP
+VWATAUAVHpHH$
+VWATAUAWH
+VWATAUAWHPLHT$0IH%W3
+VWATAVAWH0L=
+VWATH
+VWATH DHH
+VWATH HB
+VWATH HHHcP
+VWATH Hz
+VWATH L@
+VWATH LHIHM'3@2H9
+VWATH LHIHmz3@2H9
+VWATH MLAHH
+VWATH0E3IIIE!HD$
+VWATH0H
+VWATH0HHM
+VWATH0Hcu
+VWATH0IA
+VWATH0IH
+VWATH0d$P
+VWATH@3IC IICDC
+VWATH@3IHHH9yH
+VWATH@AHHAH{H
+VWATH@H
+VWATH@HB
+VWATH@HH
+VWATHPHB
+VWATHPHIMIHjF3H$
+VWATHPI3HHDe
+VWAUH
+VWAUH H
+VWAVH
+VWe[
+VYqd
+V[ zaw
+V]l0
+V_$8
+VaMLW
+Vb5-
+Vc>L
+VcA[
+VcDF
+VerQueryValueW
+VirtualAlloc
+VirtualAllocEx
+VirtualFree
+VirtualFreeEx
+VirtualizationBasedTechnology
+VirtualizationBasedTechnology]
+VjVwz
+VkKeyScanW
+Vm@PRR
+Vmnd!<JuKr
+Vn/M
+Vn<b
+Vt3HK
+VtD$
+Vtc(U
+Vu$Gw
+VvFnt
+VvwG]qsV'
+VzE:xVY
+V{%0
+V}H/B
+W F8
+W t.L
+W t:H
+W$LXA!
+W$wsaIK
+W(H$
+W)SS1
+W-[ 
+W.0%@n3LwW
+W.:0
+W/pm
+W0E<XoZlFb$Uz:/C
+W0wL$
+W3t'u
+W5<F]K
+W7>wg
+W7}4B2
+W9(X
+W:f8
+W<}>5$fc
+W>b3wa>
+WATAU
+WATAU 
+WATAUAVAW
+WATAUAVAW!
+WATAUAVAWH
+WATAUAVAWH 
+WATAUAVAWH Dz
+WATAUAVAWH E3LLAW
+WATAUAVAWH H
+WATAUAVAWH0
+WATAUAVAWH0$
+WATAUAVAWH0ALHcu
+WATAUAVAWH0E3HIEg
+WATAUAVAWH0EDHc
+WATAUAVAWH0ELHc
+WATAUAVAWH0HB
+WATAUAVAWH0IHLu
+WATAUAVAWH0LH
+WATAUAVAWH@
+WATAUAVAWH@3
+WATAUAVAWH@ALHH
+WATAUAVAWH@ED
+WATAUAVAWH@H
+WATAUAVAWH@Hz
+WATAUAVAWH@My
+WATAUAVAWHP
+WATAUAVAWHP=mw
+WATAUAVAWHPMcAH
+WATAUAVAWHpAMD
+WATAUAVAWHpH$
+WATAUAVAWHpH-6
+WATAUAVAWP
+WATAUAVAWp
+WATAUAVAWp 
+WATAUH
+WATAUH 
+WATAUH 3IHALLHI
+WATAUH E3IHH
+WATAUH E3IILHM
+WATAUH H
+WATAUH HB
+WATAUH HL$
+WATAUH HLExTE
+WATAUH HLH
+WATAUH Hl$
+WATAUH I
+WATAUH IIM
+WATAUH0
+WATAUH0HHIcAH
+WATAUH0Hc
+WATAUH0Hz
+WATAUH@$
+WATAUH@H
+WATAUH@HB
+WATAUH@HHA
+WATAUH@HHAIHfD
+WATAUH@Hd$0EHHE3AI
+WATAUH@L-
+WATAUH@LH
+WATAUH@MMHH
+WATAUHp
+WATAUHpE3IMLP$
+WATAUHpH$
+WATAUHpI
+WATAVH E3ILEHf8 t
+WATAVH@IcHcMt
+WATAVHP@2Hz
+WATAWH z
+WAUAVHPE3MIHHAI
+WB7{YSj
+WBHT$ H
+WCF@>:>@:9
+WD$(
+WD$@
+WD>H
+WEDD
+WF.: v2
+WGv-=_
+WH 333DC
+WH 3@Hfq
+WH 3H
+WH 3H9q
+WH 3H@8y@tyHP
+WH 3HH
+WH 3HH9
+WH 3HH9y
+WH 3HH@8y
+WH 3HHH
+WH 3HHH9
+WH 3HHH9y
+WH 3HHHQ
+WH 3HHHy
+WH 3HHf91t
+WH 3HHtHHu(9
+WH 3HL
+WH 3HS
+WH 3Hf99
+WH 3Hfj
+WH 3Hz
+WH 3IH8A
+WH 3IH9B
+WH :Hq
+WH =
+WH @2Hz
+WH @HFH
+WH A
+WH A@
+WH AAHH
+WH ADHAF
+WH AH
+WH AHH3
+WH AHH3E3
+WH AHHA
+WH AHMt
+WH AIHHMt HK
+WH B
+WH E3A3EA
+WH E3HHA
+WH H
+WH H 
+WH H!
+WH H$
+WH H$tAHG
+WH H(
+WH H3
+WH H3H
+WH H3H f
+WH H3H=u
+WH H3LLO
+WH H=>-
+WH H=m
+WH H>
+WH HA
+WH HB
+WH HD
+WH HE3HI
+WH HH
+WH HH(
+WH HH(H
+WH HH8H
+WH HHH
+WH HHH'2HT$@H
+WH HHH(mLHHH
+WH HHH35
+WH HHHHtOH3
+WH HHHL
+WH HHHP E3E3H@
+WH HHH]HHP
+WH HHHt
+WH HHHt0H
+WH HHHu
+WH HHHwR
+WH HHHyLHHH
+WH HHI
+WH HHI83@2Ht)@t
+WH HHI8Ht
+WH HHIHH
+WH HHIIHL]
+WH HHJ
+WH HHK
+WH HHKHHH
+WH HHL 
+WH HHN
+WH HHQ
+WH HHR
+WH HHUO3
+WH HH[
+WH HHb3@:t
+WH HHcI
+WH HHk[(
+WH HHt
+WH HHu
+WH HHw
+WH HHxu-HW
+WH HH{H
+WH HH{HShHOhnH
+WH HI
+WH HJ
+WH HL
+WH HLv
+WH HT$XAAHt
+WH HY
+WH HY(HH
+WH HY8L
+WH HZ
+WH Ha
+WH Hc
+WH HcA
+WH HcAHT$8
+WH HcH3H(
+WH HcH=
+WH Hd
+WH Hh3:u
+WH Hl
+WH Hp
+WH Hq
+WH Hu3:u
+WH Hy
+WH Hy3
+WH HyX
+WH Hz
+WH IDB
+WH IDD$PIHEu
+WH IH
+WH IHAy
+WH IHH
+WH IHHHtn@
+WH IHHMtcIt]HtXc
+WH IHHy
+WH IHH}
+WH IHK
+WH IHKxHS
+WH IHK}
+WH IHMt
+WH IHku
+WH IHu
+WH IHv
+WH IHwH3S
+WH IH{t
+WH IH{u'H
+WH II
+WH II@LH@
+WH IIH8
+WH IIHHMtzL
+WH IIHN3:tMH
+WH IMt
+WH Ic
+WH IcHCLco3fD_H
+WH L
+WH L$PAI
+WH L$PAIHt%
+WH LA
+WH Mt
+WH mH
+WH xs
+WH y
+WH y 
+WH(HA
+WH03
+WH03AML
+WH03H
+WH03H8
+WH03HH
+WH03HHHt13HGHI
+WH03HcHE3HA
+WH03IHE3LQ
+WH03ML
+WH0A
+WH0AH
+WH0AIH
+WH0AIcH
+WH0D$
+WH0D$p
+WH0DJ
+WH0E3HH
+WH0H
+WH0H-%'
+WH0H3H
+WH0HA
+WH0HB
+WH0HD$pMD
+WH0HH
+WH0HHI
+WH0HHL$ AHL$ gvHL$ -@t
+WH0HHL$ AQHL$ wHT$@HD$@
+WH0HHL$HA
+WH0HHL$XI
+WH0HHL$XIH
+WH0HHT$ H
+WH0HHu
+WH0HHu$(H!
+WH0HIII
+WH0HT$
+WH0HT$p
+WH0HZ
+WH0HcA
+WH0Hy
+WH0Hy(
+WH0Hz
+WH0I
+WH0IAH
+WH0IH
+WH0IH1H)
+WH0IHAu
+WH0IHHH
+WH0IHHHtDHt
+WH0IHHt23HBHH
+WH0IIHMu
+WH0ILD$ A
+WH0ILD$ LE3
+WH0ILH H
+WH0ILL$XLD$ HHD$ 
+WH0MQ
+WH0d$ 
+WH0zi
+WH3H
+WH3HH4-
+WH@3HHI
+WH@3Hz
+WH@3IHH@8i
+WH@3IHHH9YHt_8Y tZI
+WH@AD
+WH@AHHHu
+WH@H
+WH@HB
+WH@HHH
+WH@HHH3u
+WH@HHL$ AI}
+WH@HHL$ H
+WH@HHL$ HEHT$ HYoH
+WH@HHL$ HpHT$ H
+WH@HHL$ IH
+WH@HHL$ II>H
+WH@HIIH
+WH@HL$ IHQHC
+WH@HL$ IHa1H{
+WH@HcHH
+WH@Hd$P
+WH@Hz
+WH@IE3HD$hHD$0HL
+WH@IHHS
+WH@IHk
+WH@IcAH
+WH@f
+WHH<
+WHHH
+WHL$0P
+WHL$8HT$@H
+WHP3IHHH
+WHPELd$@
+WHPH
+WHPH3H-u
+WHPHB
+WHPHH$
+WHPHHHHI.3H
+WHPHHHIA1D$
+WHPHHHL$0IHu:
+WHPHHIcHL$ H
+WHPHHL$ Iv
+WHPHHT$ I
+WHPHIcHL$ H
+WHPIHA
+WHPIHHM
+WHPIc
+WHPy
+WHZHLX
+WHcAAIH
+WHcE
+WHp$
+WHpH
+WHpH$
+WHpHHL$ I
+WHpHHL$PIA
+WHpHcHL$P
+WHpLcQ
+WINDOWS
+WININET.dll
+WINMM.dll
+WKPh
+WLDM
+WLH_
+WM X
+WN1z}X
+WNetAddConnection2W
+WNetCancelConnection2W
+WNetGetConnectionW
+WNetUseConnectionW
+WO'3
+WO7i
+WO9-y>r
+WOKs
+WOW6432Node
+WPzXdX_G
+WQCv_
+WQPgO
+WR>:D
+WSMM
+WSOCK32.dll
+WTC9.)k<'Q
+WTDS
+WTDS]
+WTSCSR
+WTh4
+WUUUUU
+WVT/!$/!
+WXtO]tJ
+WY}Zw 
+WZ3E
+WZAa
+Waaj
+WaitForSingleObject
+Wb4pX
+Wb[yc
+WcSHcw
+WdBoot]
+WdFilter]
+WdNisDrv]
+WdNisSvc]
+WebThreatDefSvc]
+WebThreatDefense
+WebThreatDefense]
+Wednesday
+Wev4
+Wg1o9
+WgXvke@
+Wid3
+WideCharToMultiByte
+WinDefend]
+WinSxS
+WindowFromPoint
+Windows
+Windows Defender
+Windows Defender Exploit Guard
+Windows Defender Security Center
+Windows Defender]
+Windows NT
+Windows Registry Editor Version 5.00
+Windows Security Health
+Windows Security Health]
+Windows Update includes a 
+Windows.Defender]
+Windows.SystemToast.SecurityAndMaintenance]
+WindowsDefender
+WindowsDefenderSecurityCenter
+WindowsDefender]
+WindowsMitigation]
+WindowsPowerShell
+WindowsRuntime
+WindowsSecurity]
+WindowsSettingsPageVisibility.reg
+Windows]
+WjFU/
+WlBE
+WlTKK
+Wm/{
+Wns>
+WpqR
+WriteConsoleA
+WriteConsoleW
+WriteFile
+WritePrivateProfileSectionW
+WritePrivateProfileStringW
+WriteProcessMemory
+Wrw7
+WsRXjnhc
+WszX$
+Wt!6
+WwHD$@Hx
+WwHHLwH
+Wwcy
+WzR8U=d
+W}@R
+X HDe
+X has not been compiled
+X!SK
+X$W/'U
+X%pE
+X(J_}/)
+X-XCn
+X/V$35T]
+X0HI
+X0zzt
+X2%s@
+X7hCtO
+X9}yr
+X:8X
+X<1V
+X>0S
+XCgd
+XDLm
+XDTC
+XEX2r
+XEt-
+XH(@WHpH
+XHKxHt
+XHL$8H
+XHL$@H
+XHT$ E3H{HL$ 
+XHTI345k
+XHXHhH
+XHcL$Ll
+XIgZd
+XJHD$0D$D
+XJyq
+XK7k(
+XKpC
+XL$p
+XLD$PH$
+XLL$(LD$
+XLSUVWAUH
+XN 7=[
+XN Q
+XNJH
+XNLL{=%
+XPU8
+XQJm
+XT3(Iq[
+XY}F
+Xad-5Ym
+XbkoB=[@m
+XcCgs8
+Xd$p
+XgF/z=S![Da
+XidUq
+XkmC
+XlAB
+XmL$p
+XomEJwCc
+Xr(%V
+Xr9{Y
+Xs= 
+XtOdtJA
+XtfrJ
+Xtxx
+XyyR(((
+XzODa
+XzU}}
+XzZ6
+X{.I
+X{ec
+X}@=
+Y!Ta
+Y![-
+Y$2C64
+Y%LqwX
+Y.0ix
+Y/Jw
+Y1[7=
+Y1{!
+Y3H$
+Y3HC
+Y3UtH
+Y420
+Y4H}
+Y585
+Y5FC!Wv@_
+Y5_6
+Y9Ut0wJ
+Y9_1V
+Y9r)
+Y:LYx
+Y<Bki2
+Y>5WT
+Y@Uf
+YAIA
+YB>R0F_Bu
+YC@:
+YDLcA
+YE8t
+YE<o
+YH( 
+YHCKH
+YHD$PHL$8D$(
+YHK(HyfHG
+YHKHHGfH
+YHL$0I
+YH{X
+YI$P
+YKBRJB3j'
+YQJ(0
+YSkl
+YU)m
+YV Hf4(]kN
+YV9GU
+YW2V
+YX5$
+YXVi971yZ
+YYlo!
+YYvk
+YZ)]zm
+Y[eA
+Y]3jBFxQD6
+Y]sofm
+Y]y4
+YatW6 !
+YdFU=o
+YdKGmt
+Yg3 
+Ymw02
+YnUF
+YnxRBvi
+You can file an [issue](https://github.com/ionuttbara/windows-defender-remover/issues) if you experience any problems.
+You can remove Defender with arguments.
+Yp9=
+Ypjv
+Yt$8H
+Yu3'
+YuHHH [
+YvD-2
+Yvr_
+YvzsT
+YwUX
+Yxei:fRP7v
+Y}9d
+Z 7Y
+Z$2x%q
+Z$Sn
+Z$yWTX
+Z%y8
+Z(jq
+Z0S%
+Z0X03
+Z381
+Z7f7>:p
+Z8(]-
+Z8HK@Q8HK H8HH [
+Z98CEt$Z
+Z9eR=:[
+Z:Kx
+Z:d5
+Z>gi
+Z>w_FGm>
+ZAi>
+ZBD=r6
+ZBuq
+ZCVEL
+ZD  v
+ZDA9
+ZF0uw
+ZFZ[
+ZF[w
+ZH(H
+ZHH [H
+ZHHADd$0H
+ZHuG
+ZI:G
+ZJSAcN
+ZLL$0LD$PHT$pH
+ZMLDQHT
+ZQsf2QtYvL-
+ZULL$0LD$4HHD$XHHD$(HD$hHD$ qu
+ZY@_y
+ZYP0
+ZYXSN1{3
+Z[g1y{
+Z[s/
+Z] T7aZ%]g']
+Z_mX
+Zb>=U7G>AD8
+ZcAl
+Zd_t
+Ze95B
+ZhIM
+ZiDP]
+Zimxkl@
+Zj7qpK
+ZjEABj
+Zjbf
+Zl8/
+Zpf5]
+ZqP>
+Zqy[bZ_y
+Zs1cF
+ZtSE90ezK
+ZuRAc:
+ZzPc
+Z{(G
+Z}un
+[ Ej
+[!7}
+[(_GU@oG
+[)5D5.
+[)nN( 4
+[-HKEY_CLASSES_ROOT
+[-HKEY_CURRENT_USER
+[-HKEY_LOCAL_MACHINE
+[-L$0
+[-[ng
+[0@o
+[0DW
+[3H8
+[3HBIH
+[3cM
+[51T
+[6Du
+[70y
+[7cAQ09R3x!
+[:%_J2N
+[:A[(
+[@.OV=ff
+[@SH H
+[@SH@HHL$ !
+[@SUVWATH
+[@UV8-
+[A3Ae
+[AHL$pMHL$@@HL$X@MLHH
+[B3P
+[DpX
+[EH$
+[FylgN]c
+[G98C
+[H$p-
+[H(3L
+[H(H
+[H(HB
+[HD$8
+[HHX
+[HHt$ 
+[HKEY_CURRENT_USER
+[HKEY_LOCAL_MACHINE
+[HL$0U
+[HL$@
+[HT$
+[HT$ A
+[HfQ
+[IcH
+[K2OI>
+[KxW2
+[ME3I@SH H=n
+[MVVr
+[N7d
+[QqpsR
+[S@g9
+[TsnW
+[UtQ
+[V%!5i
+[YW9
+[Z/w
+[Z8uYH/C
+[]HHX
+[_5wjT
+[bpzM
+[cnn}
+[fJSmh
+[fL$
+[ffW
+[hHL$hQhL$
+[iEH$
+[jAMKLT:p/
+[lVgb
+[n!u3
+[p)s)
+[pjc
+[qJ/R
+[r _
+[s!pB${88%0p'IUDIt
+[s2i@
+[u uvG7
+[w'Q
+[wq0
+[yS7Q}/
+] )a'x
+] VQ
+] is an invalid data character in JavaScript compatibility mode
+]'X'
+](n1C/<Y_
+])vK.3bm
+]. -
+]/a6
+]1Y}oP
+]5<'{UsiT
+]5ql
+]8-3lq[U
+]:GA$vc
+]=r}'/3
+]@It:@ht
+]@SH
+]@SH H
+]@SH HH
+]@SH HR
+]@SH HrsHK isHK@
+]@SH0y
+]@SHPIDAdA
+]@SUVWATH
+]A:0u
+]DD$xz
+]DTf
+]EHl3
+]G5aLp
+]H(A
+]H83EL
+]H8LD$ LA
+]HGHA
+]HH [@SH H
+]HHX
+]HH{HHK8H
+]HL$ 
+]HL$ G
+]HL$H
+]HT$ A !rA
+]HcML$
+]Hl$
+]Ht$
+]IUi5
+]ImDWP
+]L2j:Kjb
+]LI[
+]MHL$ HYHC
+]RXC G=tNI
+]TS9'
+]V !
+]VvKU4F(
+]W t6H
+]W'%d
+]X5X
+]XnYYd
+]Z/cJ=
+][3H[0H
+][H(L
+][H8AetjAEtdAfu
+][HH
+][HHF
+][HHX
+][HHe
+][HHi
+][Hdu
+][IH
+][L$
+]]BHHt/H
+]a: 
+]ao0
+]bQsKnfy_0
+]f$Qg
+]g>>[
+]h$Gtt
+]ikCR12qP5)K8!cw
+]k>YWm>bj
+]lgU
+]moT
+]n@8U
+]oGp>vM
+]q[4a
+]raa
+]rbl
+]rmHvyTMs
+]rpfc
+]u>H$
+]upU
+]wv}CK
+]xDMXM
+]zVh
+]zh!05jg
+]{>LGtGdM'lJ
+]{htY
+_!Gq.
+_%3LL$ E3H
+_(Jtq_kU
+_03<M
+_0:vnCU
+_0M}ndlPd
+_0]0(
+_1:)
+_1HF
+_1bxy.6W
+_1f0VH
+_2H$
+_3HHX
+_4U])GL
+_8q=
+_9XFZn
+_:<H
+_:HEB
+_=J$
+_=rvM
+_>(C
+_>h_=N>q
+_>yb
+_@:t
+_@S 
+_@SH 
+_@SH  
+_@SH A
+_@SH B
+_@SH D3IDB
+_@SH HH
+_@SH HH01HK
+_@SH HHHHI
+_@SH HJ
+_@SH y
+_@SH0A
+_@SHp3
+_A)>
+_AHL$pHL$@ZCHL$XPCHLH L@
+_BFr>
+_BL>NE
+_D$(
+_DP3LE
+_E33jE3AP
+_E3A
+_E3LA
+_H%D
+_H(B
+_H(HA
+_H(l3:
+_H0]@UH0HHMXH0]@UH HHcM HH
+_H2p
+_H8DJ
+_H8DL$(MLD$ 
+_H8E3
+_H8Hu
+_H8Hu%_
+_HDH L@
+_HF)
+_HHP
+_HHX
+_HHf
+_HL$
+_HL$ %u
+_HL$@
+_HO8{
+_HSUVWATAUAVHPH
+_HV(HVlHN(Hd$ 
+_HXA
+_Hl$ VATAUAVAWH
+_Hl$8Ht$@H
+_Hl$XHt$
+_Ht$
+_Ht3HIL
+_I}%)
+_K@SH HHjHH [H
+_LI[
+_L[@HP
+_N<B_
+_NXAa
+_RCCCBBA
+_S91
+_W t2H
+_WSSp
+_Y$$
+_ZYI
+_[}I9O
+_]HHX
+__based(
+__cdecl
+__clrcall
+__dPCa@w
+__fastcall
+__pascal
+__ptr64
+__restrict
+__stdcall
+__thiscall
+__unaligned
+_a!lY
+_a:iT!
+_aoXok]r
+_cabs
+_eFq[%g
+_eMxh
+_gPn
+_hJNG
+_hypot
+_k78
+_logb
+_nextafter
+_o'iV(
+_o@s
+_r/@)hA:o
+_rwh
+_x%:O
+_xN.>.
+_zHHX
+_{cm$
+_}9lRv
+a numbered reference must not be zero
+a%R@
+a(wZA
+a-Pk
+a/>C
+a/H]
+a0d[
+a13H
+a36xo
+a67I5=D.
+a6KD
+a89%n
+a:D'u
+a<'%a
+a=-fAv
+a=sp
+a>qz9
+aAp0
+aB})
+aD$0u
+aD8t$
+aDNOZa
+aGEg
+aH3(
+aHL$@H
+aHT$HHL$0
+aHcH
+aLL$
+aPepM.a3JM%
+aQZF
+aRkc
+aU6g 
+aUa:EHyL_Jq
+aW6EL
+aX{1!Pf
+aZX6
+aZrX
+a[n@
+a][V
+aaI 
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz{
+abcdefghijkmno]
+acI2li_}i
+acos
+advapi32.dll
+advg
+aeN$
+aex/uY3
+aex@3[
+af4A
+ah67
+ahbhd1
+ajF$
+aja{
+ak h
+alnum
+alpha
+am/pm
+amd64_security-octagon
+amd64_windows-defender
+amiONe
+amz_IS
+anj}
+aoU$j8
+apUBo
+aq:tHL$
+aqH$@
+asPV
+ascii
+assertion expected after (
+atan2
+atcf
+avD!g6
+axh{
+az@Mtv
+b Ndw
+b!:7l@T e
+b!JN=n
+b$DHL$0I
+b$Dj
+b%B<
+b)M=
+b)Ns%Ilku0P
+b)jZ5.l!
+b.IU
+b/HQ
+b0QN
+b3A$yI
+b3H(H(H
+b5I!
+b8/qbzN
+b9UO9
+b>8r
+b@m4
+bDIj
+bDLH
+bE3E
+bEJDR2dYmmYm
+bH [H
+bH ]@UH H
+bHGHA
+bHH [H
+bHT$ DDHP
+bHT$HH
+bHT$P
+bIIwYH
+bLD$8H
+bM7P
+bN<>
+bOl<
+bP4mv0
+bQ]jTk
+bV91
+bVpv
+bXa$Q
+bY[j
+bYrR
+bZmqX37qRsJbO
+b['h
+bad allocation
+bbcM)
+bcVDqa
+bcdedit /set hypervisorlaunchtype off
+bg$OX5F7EAVG
+bgWD7Ojl
+bhEW
+bhxi
+bjR>
+bk.lT
+blank
+bo(G
+bo)>!
+boL't
+bu9HL$03%q
+bu<Y@
+bv20
+bw6B
+bw7Zl
+bwQbg3ScO3Y
+c ]ag
+c at end of pattern
+c%E >:]
+c%qW
+c)C@B
+c0a0(
+c1CnOC
+c2Wj
+c2]R_8.p[8
+c376{
+c7I9y!4[
+c8(P0R
+c8HK
+c95ls2Z
+c9jo$
+c9qE
+c:/'kJ
+c:l4
+cAdg
+cBy%H
+cCSV
+cD8t$
+cDyWbp
+cGxK>_
+cG{!
+cHHC@QH [@SH HeHK
+cHT$XIv
+cIaNA
+cJ'@r
+cJT7
+cLD$ H
+cO9o
+cOYb
+cOdny
+cQkkbal
+cR-a<
+cX0@
+cX}'
+cY{Tx
+cZNat
+caRog
+cb'r
+cb8K3
+cbOma>
+cd windows-defender-remover
+ce!)
+ce)e
+ceil
+cfk7
+cf{T
+cg{XF
+character value in 
+choice /C:yas /N
+cj-U
+cko-
+closing ) for (
+cm9(
+cnmWHEz[@-
+cntrl
+cnumbz
+conditional group contains more than two branches
+copy constructor closure'
+cosh
+cp1=a
+cp84u
+cqZX1
+csmu(H=
+cs{9C
+ct@HK
+cu8H
+cx/HcH
+cxFf
+cxaE
+cxe3{Tx7w6
+d!=t
+d$0D$(!
+d$0L
+d$1vA
+d$8I
+d$pf
+d'8IA
+d)<{d
+d/BQkKv
+d0i0H
+d3HBIH
+d3QV
+d3vL!
+d6bt}Z
+d7U_ZSoaP
+d7l/(:
+d8Gct
+d:cg6
+d>jm
+d@8!{x1
+d@:tIH$
+dAz-Y
+dCr$T
+dD9t$@
+dDT$ H@
+dEfYQ/
+dH(H
+dHK [HK(RHK0IH
+dHcHHdMM
+dIcDt$(I
+dKk5LMgPpP]!N
+dL!>K3:d
+dLL$8LD$HH
+dN%akK
+dOzD-iA
+dPbu9Q
+dQER
+dQVTF4
+dRd:
+dRl8
+dT$(HMLD$(HT$ H
+dTtP
+dXUgL
+dZHAaS
+d[Ac1
+d]SR
+dc_{
+default
+default constructor closure'
+dgZ_F5
+dgtv[x-
+different names for subpatterns of the same number are not allowed
+digit
+digit expected after (
+dkdW
+dl)DsC5QI
+dlyK_8>
+dn-mUXo
+dnNP_f
+doD$
+doG:3LTMm
+dpHO
+dq)>/<
+dqQ8h
+drivers
+ds12 
+ds=Y
+dsC.ub}
+dsrC
+dt3wt:He
+duWW7KJ
+dvdL
+dw-:/Y
+dw-Ei
+dxdAg
+dynamic atexit destructor for '
+dynamic initializer for '
+e$r4
+e%_[zk
+e'Do
+e)LQhOZEw8
+e/V}p
+e0QM
+e2vPE
+e4hB
+e7Xo
+e8]XHiDj
+e9dN
+e<<I_e
+e=AP
+e={b$Do3<_=g
+e>B!
+e>zNR.
+e@:tFH$
+eA-]
+eAv Z
+eBPs
+eBl<
+eClf
+eD>Jnt6
+eDHF
+eEUb[PK{
+eF3HcH
+eHAHD$xLL$xHL$XLc
+eHL$8HL$8
+eHL$@
+eHT$ Hsu!I
+eHT$8A
+eI:-
+eL= 
+eLXaMQ:t
+eLeLmLuL}H]UHH@LeLmLuL}H]LM(LE HU
+eMlipZ
+eP1cH(
+ePt4
+eQH$
+eTITH$
+eUOV=
+eVSX
+eWGX[t
+eWVgQ
+eXHy_qasEk
+eY$D/
+eY'r
+e_J4
+e_LLh
+eb8T-v63i8
+echo A backup and/or System Restore point is recommended.
+echo Disabling Security Mitigations...
+echo Do you want to remove Windows Defender and alongside components
+echo Removing Windows Security UWP App...
+echo Select an option:
+echo Unregister Windows Defender Security Components...
+echo Your PC will reboot in 10 seconds..
+echo [S] Disable All Security Mitigations
+echo [Y] Remove Windows Defender Antivirus 
+echo.
+ecj_H2B
+ef_Pv8Q
+eh vector constructor iterator'
+eh vector copy constructor iterator'
+eh vector destructor iterator'
+eh vector vbase constructor iterator'
+eh vector vbase copy constructor iterator'
+eibkaEl
+ejH$
+embs6
+epB'
+epLD$0HT$xH
+erroffset passed as NULL
+esrV
+esuf
+et$@E3fA
+etd6)K5
+ev[q5
+ew=i/
+ex38
+excy}='R
+exit
+extremely rare
+ez%)N
+ezX$OKw{b%]W
+e{v/6<2
+e}[oR
+f le
+f t$f
+f t7f
+f%r/
+f'>fr
+f'OV
+f'k{$
+f(%vz
+f(HH
+f)3H
+f-H=
+f.vb-/PgP
+f0fA
+f1l>
+f1z ncz
+f3Ht$
+f3u%I
+f4AH
+f4GfAsf0
+f4HHG
+f517QT 
+f56U9
+f5ty
+f7Qj=bir
+f8 t
+f8!t
+f8!u
+f8$u'L$
+f80DH
+f8:t0f8
+f8Cq
+f8Xu4A}
+f8Xus3HL$HDB
+f8]t$H
+f8xt
+f8{u
+f8}u
+f9 t
+f9$R
+f9$p
+f9(t
+f9(uHT$
+f9/u
+f90t
+f90tP
+f90u)fy
+f90u-
+f90u4
+f93t
+f93tOHL$ E3E33
+f93u
+f94G
+f99uHL$hH
+f99uIB
+f9LCuLHD$ LcL$
+f9lr
+f:H'HE
+f<B<
+f<]m
+f=0f%LW
+f>9B.@Q0-
+f>Df
+f>Ib>Yef
+f@/n
+fA0I
+fA3IA
+fA3u
+fA8 t
+fA9)t%E3C
+fA9.
+fA99ufAy/t 
+fA9At
+fA9U
+fA9n
+fA:L
+fA<$D
+fA<F
+fA<n=
+fA@u
+fADM
+fAEA
+fAHhE
+fANt7G
+fB3]
+fBL]4
+fD HD$@5
+fD$ AR0E3A
+fD$(
+fD$(A
+fD$0H
+fD$0H$
+fD$0HD$ HcH
+fD$0HcH
+fD$0HtH
+fD$8H
+fD$@
+fD$@ID$
+fD$DA
+fD$P
+fD$PDL$P
+fD$PHt$@A
+fD$X
+fD$XDL$X
+fD$XDd$DAt
+fD$XmHt$
+fD$Z
+fD$b
+fD$bfDl$dA:tI
+fD$j
+fD$x
+fD$x8L$Xt
+fD'4
+fD'fE
+fD1I
+fD1fDq
+fD2I
+fD3DIA
+fD3q
+fD4C$
+fD4CHH@(H
+fD8fC<t0Ll$P
+fD9 t
+fD9 t1HC
+fD9 u
+fD9(t
+fD9(u
+fD9(u1HL$ A
+fD9)tfD91u:Au
+fD90u
+fD91u
+fD92r
+fD94K
+fD95
+fD95g
+fD98t.HL$HH
+fD98uHcfD
+fD9DC
+fD9H
+fD9I
+fD9J
+fD9P
+fD9a
+fD9b
+fD9d$@u!HL$@IyjH
+fD9i
+fD9j
+fD9l$0 
+fD9s t
+fD9y
+fD9z
+fD:t
+fDD$rD$j
+fDL$ UVWH
+fDL$zf
+fDT@
+fDd$z
+fDd$zDL$x
+fDdDpHT$
+fDdDpf
+fDe :A
+fDl$8H
+fDl$:
+fDl$BfDd$@UHT$hD$
+fDl$jfE
+fDt$TfDt$VD$XDt$YDt$ZDt$[Dt$
+fDt$ZfE
+fDt$jfE
+fDtCI
+fDtTD
+fDt[D
+fDt}
+fE(I
+fE3u
+fE91t%E3
+fE97
+fE9<$u
+fED$(
+fEfD
+fE{E{
+fH=2
+fHFWTns3%@
+fHGHA
+fHKpHt
+fHL$ _et HHL$ 3A
+fHXH
+fIC(H
+fIcE
+fIt%H$
+fIvf
+fJ8!
+fKL@NFO
+fL$ HT$ IHD$(9(H
+fL$@tfH
+fL$PHG
+fL$ZHT$XHfD$X
+fL$ZHT$XHfD$XSo
+fL$x
+fMHL
+fNFg
+fNt1fGt
+fNtEfGt
+fON8
+fOt fHt
+fOt4fHt.f@u
+fP=}T
+fPS}
+fPVY
+fPl<Q
+fQh0
+fSUB
+fXu$HT$0H
+fXu'H$
+f_tH
+f_tHU
+fabs
+failed to get memory
+far=ffw7
+farFffw@
+farUffwO
+fatZ -
+fc$[VRH
+fffH
+ffff
+fffff
+fffffI
+fffffffI
+fh3E>0
+fhw$>
+fkD$
+fl$$fl$
+fl$:f0
+fl$D%
+fln0[X
+floor
+fmod
+fn7D-
+fng2n/S/@
+fo%6hRw
+foo{R7]
+foreach ($choice in $remove_appx) { if ('' -eq $choice.Trim()) {continue}
+foreach ($file in $regFiles) {
+fq9Zf
+fr_Plhg
+frexp
+ft$PHT$PH 
+ft4fD
+ftXfD
+fu9!u3H(H
+fu:}
+fuHH
+fuHL
+fvCe
+fx'HK
+f{//
+f{HL$0Ht
+g!@U
+g'!_
+g(Q[Li
+g(nY5l
+g)@.%3
+g.Wab
+g1/<ui
+g2ki
+g38@N
+g3HBIH
+g3HP[H(A
+g3_E
+g5x6
+g63(Q(
+g6ie
+g9kn
+g>nU1
+g@am
+gA:u
+gAMA
+gBfn
+gCcm
+gCe0q
+gD$@
+gD$PLLO$H
+gDQH!
+gH8EZ{
+gHD$P
+gHH/H
+gHHA
+gHHps3H [@SH HJ
+gHL$@tHL$ t
+gHcD$PHT$0H
+gID$
+gIJM
+gK:-s
+gLjN-
+gQ)b3
+gS9[
+gSYd}{
+gT$p
+gUl[
+gW3YS
+g[:YN{l
+g_PSgHC
+g_o:.9
+gaK8e)
+gab)
+gd-z
+gf5-Smc
+gfffA
+gfffE
+gfqB
+gh Jw
+ghhq
+git clone https://github.com/ionuttbara/windows-defender-remover.git
+gj8j_
+gjn>V
+gkV=
+gnFZ
+gnMT{
+gngp
+goto :eof
+gp9%
+gqD$
+graph
+gs1r
+gsrj
+gtPjO
+gtignKei
+gtqOH
+gyj%
+gykJn 
+g{-F
+g}vz5
+h$__ddhi4
+h%e'BL
+h-O<
+h.OAyf
+h.['
+h/@z7f3
+h1 u_Gmd
+h6nqOp
+h7Oq8
+h9dEcjIPrAN
+h:-Jb
+h=8k9b
+h=Z@
+h=sf]r
+h>JddO
+h>N'@
+h@:t
+h@hO%
+hC((n{
+hDed
+hE2H
+hE=!o@tQwuQ/pF
+hG(e
+hH%%
+hHL$0
+hITB
+hJZ<0[af8
+hNtFeJ.
+hQPS$
+hQgkt'
+hR8@H-)[uxnK
+hS'Q
+hU/{U
+hU1RPQt
+hVl}_h]4kdI4g
+hXBB
+hXH$p
+hZ'gY
+h[wmd
+h_.HO@Ht%xt
+h_njoAK
+hakh=N
+hd$8
+hf-i
+hgm@O(7X
+hj>>du
+hkCCwH
+hkiW%
+hlj)
+hpAJD0
+hrt-
+ht=f
+htW{:
+htpCa-Jt
+htqxe
+http://crl.certum.pl/ctnca.crl0k
+http://crl.certum.pl/ctnca2.crl0l
+http://repository.certum.pl/ctnca2.cer09
+http://subca.ocsp-certum.com01
+http://subca.ocsp-certum.com02
+http://subca.ocsp-certum.com05
+http://www.certum.pl/CPS0
+hvVkb(@2i
+hwBl]/
+hwewl
+i !w
+i Hi(Hi8Hi@HHq}H
+i$DC
+i%Fq)
+i((M
+i0]I
+i1Ht
+i4}k<
+i7 m
+i7D=
+i7cu.o
+i:aPwQq
+i@]%
+iA=JY
+iA@)z
+iBGG3l
+iCd{wUf8
+iE3A
+iG-<
+iH ]@UH H
+iHD$XA
+iHH [H
+iHH [H('3
+iHHP(M2
+iHL$H
+iI>dsZ
+iLT$8<)tF<
+iMi=}B
+iO>c
+iPR7grHCIYX
+iTZuKK
+iX@e
+iX]U
+i]:4bX:o
+i]Wbgeq6l
+ibZ9m[L<4
+ica1p
+if errorlevel==1 goto removedef
+if errorlevel==2 goto removeantivirus
+if errorlevel==3 goto disablemitigations
+ih3h
+ihnX
+ijO/NT
+ijuvZEB
+in-T!
+inG20
+inconsistent NEWLINE options
+internal error: code overflow
+internal error: overran compiling workspace
+internal error: previously-checked referenced subpattern not found
+internal error: unexpected repeat
+invalid UTF-8 string
+invalid condition (
+invalid escape sequence in character class
+ioa!C
+iocf
+iqwf
+irnoc
+ir{P 
+is}p
+itD{87g
+ivfZ
+iwkq)
+ixg!
+i{>jA
+i{Dl
+i{M8826V
+i}Vv:
+j!Ht
+j$UY
+j$[y
+j$gD
+j%M>zz[>
+j%Y3
+j%lLc <
+j0@P
+j20Bph
+j2Qf
+j4T}
+j5g4$
+j:Bi
+j:M!N4cpN
+j:dL
+j<fS9
+j@WH HMtzIttHtoHA
+jA) 
+jD$@
+jD-p
+jDHH_DDHH
+jDik
+jG88
+jH$tZHz
+jHHH!Y2>@3fLC.
+jHL$0I
+jHT$@H$P
+jHt$@]
+jOVvG
+jPvf
+jRKb
+jT IX
+jTpk7Vi
+jVLL$0LD$4HHD$XHHD$(HD$hHD$ 
+jVY[a(
+jX%w89n
+jYHk
+j[$!
+j[DG
+j]M_
+jbW>
+jd3_
+je/I.AXrr8
+jf1-Gg
+ji2zB%kEC_g
+jiCn4Fg
+jkFk
+jkWi
+jkb4
+jkcLJ
+jm-]FFR
+jmBr
+joH$
+joiK9
+jp5c
+jq/a
+jtXlJ
+ju6l
+jvW[ax
+jw(p
+jwdH)
+jwwR
+jyfFrCI0
+jyz5q/fIL
+jz3.
+jzYr/
+j{upWogzs
+k lw%D
+k!oI
+k!}<RtO
+k%ap
+k%x0
+k)LWasm
+k)c_
+k)ki)
+k-gndM7Pb
+k/$HmYM
+k/BJus
+k/Iu1R
+k0wt
+k1[Lm'
+k29E
+k4K4
+k4i4
+k553
+k6P}
+k6U_g
+k7ekFO
+k8IL$8HT$@C<
+k:l=
+k<D$
+kAHD
+kApW_]o2r/
+kB K
+kB'.T
+kB6bS<
+kFy!
+kGHK(
+kIib
+kMRxJZ
+kMtH
+kN(NI]
+kO{%
+kPoU
+kRoi$P7]
+kRrWO
+kT$x
+kTdU>zX37 aF
+kV!p
+kVMVRs
+kVq3UdZs
+kWwii
+kZu%sE
+k]xIyR
+k]yP@42
+k_V:
+ka>zzk>RUWk>q9a>d
+kdzbeO
+keSodaG
+keU=
+kernel32.dll
+kernel]
+keybd_event
+kh!Fa.Ff)
+khg2
+kiQ1
+kj!0<
+kkCu
+kkj$
+klM.
+klPV
+klkps
+klmU
+kmRP4tc
+ko=<K
+kpHl$hH
+kqP>
+ks$a
+ks'g
+ksm0
+ktPS
+kt}zP
+kuzGi(
+kx8p
+k{V}
+l$ )L$
+l$ 3>LL$8Mc
+l$ @h2
+l$ AH$
+l$ HDA9/
+l$ LL$0LD$PHT$pH
+l$ UL9l$0
+l$ [Lt$P
+l$ vI
+l$$fCPHL$(Lc
+l$(D$ }
+l$(HHD$ 
+l$(Ll$ aH
+l$(d$ 
+l$0D$8
+l$0H
+l$0HD$0H 
+l$8A
+l$8EH
+l$<IE
+l$@$
+l$@Eu
+l$@HD$h
+l$@d$8
+l$Ht$@EcEkD$(H
+l$LD
+l$LDt$PHHH
+l$LDt$PI
+l$LH
+l$PDt$Tt$XA
+l$Pl$@l$0$
+l$XLd$PLl$H2d$ 
+l$dl$hHl$xH$
+l$dl$hl$ll$pHl$xH$
+l$ll$p
+l$pDHL$Ty
+l$pl$
+l$tE3D9$x
+l$xD$
+l$xH
+l'd)
+l'zT
+l))/
+l-K:/
+l.dZ
+l0YHUU(
+l1nI
+l38g!g
+l43'c/n9v{%
+l5p[
+l:tq
+l<yXg
+l=Nj
+l>XL
+l@8t$Ht
+lAAA
+lAEIAV_
+lBE}
+lCLn
+lF9{0
+lH ]@UH0HtH0H
+lHHJQH
+lHI.gw
+lHL$0
+lHL$@rsIH
+lHT$
+lHrA
+lHy=<m
+lI/{{
+lI0.mX
+lL$xL$
+lLMC
+lRxy
+lWC)jL
+lXk]Oi
+lXphcFo
+lYcJ
+lZ m
+l[$6
+l[hNZ
+l[{3
+l_<$
+l_w$
+l_xQI57Lk
+laaZe
+lbwp
+lc6R
+ldexp
+ldhU
+leYC
+lhKTB
+li9x
+ljV(G
+lk/m 
+lla5l
+lnW]T
+local static guard'
+local static thread guard'
+local vftable constructor closure'
+local vftable'
+log10
+lookbehind assertion is not fixed length
+lower
+lr:k
+lrLL$
+lrs3
+lsTy:G1yC%1>
+lstrcmpiW
+lts$
+luIM
+lzl(
+l{%lE
+l{/yI
+l{g_
+l}mB
+m fYI
+m!FhD
+m!eZ
+m$RwX
+m%)5}
+m(HEY
+m(XZ$
+m(f2
+m)R0
+m.KQ
+m.}rt756
+m/j-
+m0Lb
+m3oAm
+m4A%
+m6a-}O
+m8o]f
+m8o{qR%
+m9JB10X
+m9hvI
+m=Uk[ZC
+m@:u
+m@SH0Ht
+mA:u
+mAH$
+mBMX<
+mEsH
+mF<qGi
+mGMTlJu t
+mHD8
+mHH{
+mHL$
+mHT$0HnHL$0tHL$
+mI.AH@
+mIAL
+mIbT(]3/s
+mJyuLuBPlRHi
+mKN'u@
+mKW S
+mL$0
+mLHX _HHTLLH$
+mM2b
+mM5F-ru
+mOAR
+mP@d
+mRU5]
+mT O
+mVTo!)
+mZbeth]
+malformed 
+malformed number or name after (
+managed vector constructor iterator'
+managed vector copy constructor iterator'
+managed vector destructor iterator'
+manu
+mc7_
+mciSendStringW
+mdkA[US
+mg0YB
+microsoft.microsoftedge_8wekyb3d8bbwe
+missing )
+missing ) after comment
+missing terminating ] for character class
+mjq%jW
+mkIgm
+mlTTZ
+moF[
+modf
+mouse_event
+mr9ayL
+mrU!
+mrUoic0
+mrYSY
+mrYl
+ms-cxh]
+mslv7L
+muJ>
+muhL$@
+mwc-/N
+m}o%
+n!)%
+n(Pv:/Ef
+n(yuw!XuE'
+n)Gk
+n.!R-}KMlx!O
+n.Y'2
+n.mTKt_
+n.{/
+n0vXB
+n1gI$hy3>_
+n2Mwo{
+n3H(@SH HcHH [H
+n53V
+n6TpO
+n7[-
+n8Y-
+n:]aq% I'{F
+n<rHO
+n=-9
+n=Cb
+n>G2k>
+nAAAD
+nABC]
+nCLwD
+nD$h
+nD@8
+nDDI
+nDfA
+nDfZw
+nE3WH@H
+nFH{zu
+nGaO/DL8seIhl
+nHK(eHKH
+nHL$@ImL
+nHT$xH
+nK/H'8
+nL$p
+nLUR_a)
+nO/<
+nQyp.G
+nRej
+nRx5
+nS=t
+nUJ=
+nWb}
+n]0J9
+naad)
+ncd>TQ
+nd}b
+ne'ZJT
+ne<j
+nf85
+ng!5 e
+ngd>Z=@pn>6
+ngjW
+niTJ
+nnZrCBOJF ImL9k-m
+no error
+nojd
+nothing to repeat
+npS4<
+nrVVV
+nrrhhhbfeeZZ[
+nslllkc]
+nt$ 
+ntlHF
+ntsollkd]]]]X
+number after (
+number is too big
+number too big in {} quantifier
+numbers out of order in {} quantifier
+nvr/1
+nwH [0.
+nwy4
+nx5rusEw1@
+nxbQN
+nytlh
+n{!Eh0
+o!IARo
+o'qUuRu
+o(HL$He(
+o-!z7n.[
+o-nt
+o.>Fm
+o1bS
+o3vNq
+o6vFR
+o:LgE
+o<LE3
+o<xb
+o=RB
+o@:t
+o@:t.D:
+oD$(HD$@H
+oD$(HL$XD
+oD$4
+oD$h
+oE(3
+oE(AM
+oE(HD$8
+oE(HL$@
+oE)C
+oE3E333H
+oEHD 3
+oGQm
+oH'a7 
+oHL$
+oHL$ HcaHT$ H
+oHT$ H
+oHT$@HwnHT$@HL$ (-H
+oHY'
+oI>b
+oKo2k
+oLD$0HT$xH
+oML$
+oN!2
+oO_K}d
+oVjpq
+oX95
+oYX[n
+oZ9}M
+oZyc'n
+o[S-Rs>
+o]48zP(
+o_ZiRNz}hIw
+o_n8
+octal value is greater than 
+ofA<n=
+ojHL$@ejH
+ol/zen
+ole32.dll
+omni callsig'
+oneHk
+operand of unlimited repeat could match the empty string
+operator
+ope}$HC
+orPN8
+orbM
+oy1O(w_nvP
+oz'X
+o}Z>
+p $A
+p sequence
+p!H0
+p!Y1W
+p$e6
+p%E5VW
+p-is%2ti
+p.=6
+p.Z!G E
+p0lf
+p1vn
+p3L}M!RB
+p49E
+p4:A
+p4EHQ
+p7-3
+p:1'$'AAh
+p:FHHX
+p@6iB
+p@8$
+p@:t
+pC</
+pDD$x$
+pDMXM
+pE2X
+pEe:
+pFCVUe
+pG/P.y6
+pGHHeGEDHH
+pH%x(
+pHL$0H
+pHL$0u
+pHT$ LH3:t
+pHd$ 
+pHtH
+pItQf
+pKD8$
+pL$0
+pLD$0HT$xH
+pMJVA81
+pMMci(bX.
+pPyXD
+pRQ.
+pSsUX.
+pT7:p
+pToZ
+pUBo
+pUHHU<LL$ H
+pWE}
+pWFs$O@
+pWI<{b=N
+pWh_D=zT
+pXQP0}'u
+pZbyLv
+p]Yd
+p_pWf
+parentheses nested too deeply
+pcRJ
+pi6o{(
+pkOQZ
+placement delete closure'
+placement delete[] closure'
+pn$e
+ppZ 
+ppwB
+prL/ 
+prfBjk$akqx
+print
+ptbs
+ptes
+ptg3
+pu0H$
+punct
+pyCD
+pyGl
+pyK>
+pyxtsollkkc]a
+p}aeDjM
+q F-
+q izVJI
+q$FqcWk:j
+q-m'
+q.2cNjmn)h5Q
+q.n9bd8
+q00-
+q2J)v
+q3DrF
+q3HC
+q3Iw
+q4:C-%N
+q4fjC1QG
+q5HD$P@
+q7Gz
+q:HpTBRa0
+q:Q)_
+q:y%z
+q=Q 
+q>G}w4
+qDHL$pTru
+qDOb
+qDt$aHt$X
+qF4K$7D
+qGTi 
+qH$(
+qH(H
+qHD$0H
+qHD$X
+qHHf=<HX
+qHHt-HV
+qHHt3H
+qHL$ =
+qHL$PD
+qHo8Ho0U
+qHt$@H
+qHtHD$0x
+qJAqd
+qKW'uT
+qLL$x
+qLc$
+qLt$ E@H<
+qN!Q
+qN.(B
+qPs}
+qPux
+qQP@E
+qT-A
+qUi}
+qV7W-[h@nSx{4V
+qY=7nV
+q[eS2
+qbIR
+qfCplHXj
+qfff
+qios
+qk-vzs
+qn@@Y
+qnEDHq
+qnf$
+qo3:
+qoG=
+qqXBv!
+qqox
+qrRCS
+qrXi
+qrw1sJR
+qsMb
+qt !3 }
+qu8C
+qwHL$@
+qwr 
+qxdxd)
+qxtbb
+qzHHL$DA
+r!HF
+r$HC
+r$IE
+r%HK
+r'HG
+r'pfvE
+r(@8o
+r(HG
+r(HO
+r(i('
+r)HL$ MHxHL$ fDd$$hzfDg
+r)HM
+r)IL$
+r)aD
+r.1_Y
+r.E3L
+r.fD$2AEfDd$tT$p
+r.p7
+r0/]xx
+r3B}Jq
+r3HH(LL
+r3HK
+r3HW
+r3RuY
+r5Gb
+r5HL$ 
+r5Q7h
+r5T%
+r5mx
+r5w0
+r6IHH
+r7Ag
+r8HE
+r8HN
+r9HL$ MH{yHL$ fDd$$
+r9Hc$t
+r9M=
+r<HG
+r<m>T$Oe
+r=_Z
+r=i4nUyr<7
+r=vY
+r>CL
+r>HG
+r>HK
+rAHv
+rAfD9
+rCHN
+rD$@
+rD$VD$p H
+rD$p
+rD.j:()X
+rD8t$Ht!HD$@
+rDHK
+rDl$PH$
+rE3H
+rE3HE
+rE3Me
+rE4 
+rEAH
+rEDHH
+rEoQBM3=O
+rFIn
+rFRMV
+rGIGL
+rH$p
+rH=)
+rHAH
+rHH2$
+rHHl$HHt$PC
+rHJHl$HHt$PC
+rHL$ KHL$@AL
+rHL$0O
+rHL$8Lt$@
+rHL$@E3LA
+rHL$@aUHL$
+rHT$ HHL$ 
+rHT$@<
+rHT$@A
+rHT$@HL$
+rHT$@HL$ !HT$ H4HL$@
+rHc$
+rHd$8
+rHsN
+rHt$8H
+rHtdH
+rHzHl$HHt$PC
+rI$8
+rIAH
+rID$
+rIHxH
+rIcLD
+rJAI}E3A
+rJD9
+rK !i{
+rKHL$ 
+rKkoW1E]
+rL$ LL$0LHH
+rLAH
+rLD$ HIHHt
+rLHIHH
+rLKL
+rLL$P$x
+rLcD$h$
+rLf7
+rLm0IL.HHH]
+rLt$PE3Lc$
+rLt$PL$ LL$8LHH
+rMAH
+rMamDg
+rO<%Tf
+rPAH
+rPvf
+rQHL6
+rRC6
+rS14- 
+rUKL6
+rV./fPC
+rWHN
+rXAL
+rXHO
+rXKL$
+rYde
+rZHcI
+rZpgZI
+r]62Vu
+r]HL$ MHxHL$ fDd$$zH
+r]jC
+ra3Q
+range out of order in character class
+rbWu2
+rc(Ue
+rdQ$hi2sDV
+re>/
+recursive call could loop indefinitely
+reference to non-existent subpattern
+regular expression is too large
+repeated subpattern is too long
+repeating a DEFINE group is not allowed
+rhEt 3I
+rlJB(L
+rm5HP7
+rmHB
+rn3Hf8
+rp)'SRB
+rpe>D
+rr43H
+rrX>
+rt$H
+rt2wt
+rtHG
+rtHL$ MHyHL$ fDd$$
+rtvf
+runtime error 
+rv%W
+rxkt0{dfu-/Y
+ryZ'{i
+ryml:_
+r}$YFiv
+r})zDR
+s HV0HB8HF0H
+s HV8HB0HF8H
+s H[(
+s!HGH
+s!Rb
+s$1 '
+s$THd$ 
+s$ujx
+s%M Qg
+s'.gRN@ZhlL9]XX
+s'I75)'p
+s'LD$
+s)HcH
+s-D$0
+s/fA
+s1LD$@
+s1sIMw
+s3HW@L$
+s3L$
+s3eRbw/
+s4E3
+s5SO
+s6EIL$
+s8N[fPo0
+s8Uz
+s:']Rh
+s:G[5
+s=b98
+sAE{
+sAL5
+sBD4-Y8
+sBHD
+sCE{
+sDkV
+sEE3IM
+sF0.
+sGCE3A
+sH3H
+sH5o
+sHKP
+sHL$ H
+sHL$0R
+sHmI
+sI:'
+sIR)<
+sJMHD$@L
+sK{<x
+sL$xrHL$ H
+sLD$ H$
+sLI[
+sLZQ
+sMoATc:
+sOHL$h
+sOHcZ
+sQb{0J
+sRGB
+sRL$ LO$H
+sSS/%9
+sSW t
+sS[89=_
+sScnR
+sT1!J
+sV/o6[
+sVWna
+sW t
+sYKD1
+sZ>t
+sZ}y
+s[KJ
+saHcH-Ci
+sbHL$@
+sbHT$P
+sbOy$
+sbi(F
+scalar deleting destructor'
+scyF6rI>h)ub[0
+seee
+serviced
+se{b]
+sfD9l$0 
+sfHt
+sffff
+shHcD$XH
+shW t
+shell
+shutdown /r /f /t 10
+siZP
+sinh
+skHcH-h
+sl%kg
+sl>x
+sliU
+smYeU
+snZ:
+soo!
+sources
+spHGH
+spIN
+spLjRf
+space
+spare error
+sq$p
+sqS145I
+sqrt
+stHt
+stPf
+string'
+stt2H
+subpattern name expected
+subpattern name is too long (maximum 32 characters)
+support for 
+syntax error in subpattern name (missing terminator)
+system32
+s{Op
+s}G:uCv4
+s}H$
+s}HF
+s}Lt
+t 3IIcHLB09
+t AD
+t AHTI:mQx
+t D D@
+t H$
+t HF
+t HH.
+t HH1A
+t HK(H
+t Hh
+t Hx
+t L$
+t LD$@HT$8I
+t LH
+t f9w 
+t!A5
+t!AB
+t!H$
+t!HD$
+t!HL$88
+t!HT$hLD$@@<@/H@:
+t!zr
+t$ D
+t$ G
+t$ HL$POd$ 
+t$ HcW8H
+t$ MM
+t$ ]
+t$ af
+t$ fHL$PHL$0
+t$$H
+t$(D
+t$(D$ 
+t$(D$ A
+t$(D$ ]t$
+t$(D$ t$
+t$(DL$ 
+t$(H
+t$(HHD$ 
+t$(Hd$ 
+t$(Hl$ 
+t$(I
+t$(L$ DEHI
+t$(fD$d
+t$(}:HT$(H
+t$0A
+t$0D$(!
+t$0Hd$(
+t$0Ht
+t$0t$(HD$ s
+t$8$
+t$8Dt$@Ht$Ht$PDt$XHt$
+t$8waH
+t$@A
+t$@A_ LcII f9
+t$@Ad$8
+t$@D$D
+t$@Dd$D-
+t$@H
+t$@H$
+t$@HD$ Ht$HH
+t$@Hl$P
+t$@T$
+t$@d$8
+t$@t$DH
+t$D)
+t$DHL$
+t$H$
+t$HD
+t$HH
+t$HHHcH
+t$HL$@
+t$Hu
+t$ID$
+t$LL
+t$LMXM
+t$PvH95'G
+t$TD$
+t$TE3IH
+t$VA
+t$X%cC
+t$XH
+t$XL$
+t$aHt$XL
+t$d$D
+t$hD
+t$hDL$TH
+t$hDt$pHt$xH
+t$pL$
+t$tH$H
+t%=J
+t%@t 1s
+t%ADd$$
+t%HA
+t%HL$0HLA
+t%HLD
+t%HcHH
+t%IG
+t%Ul
+t'HO
+t'HP
+t'Ic
+t'Y!!
+t(D$
+t(H$
+t(HC
+t(HD$PLL$pH
+t(HG
+t(HL$ A
+t(LL
+t(LL$0E333
+t(XHcH
+t(h$H
+t(q5n8}0
+t)H=
+t)HL$H
+t)HT$ H
+t)IA
+t)IL
+t-8X
+t-AD8u
+t-HH
+t-HXHL$ Hf8
+t-He
+t.-t
+t.A]<
+t.H$P
+t.HD$@HV A
+t.HL$0
+t.Ht)Mt$Hd$ 
+t/-t
+t/A-t
+t/H$
+t/HH
+t/HH HH
+t/HX
+t/LC
+t/LcE3AH
+t/d$ 
+t/{s
+t0H$
+t0HL$P
+t0HT$@A
+t0Ht)H
+t0IN
+t0ML
+t0SH 
+t18Y
+t1D:t
+t1HHH
+t1HT$0H
+t1HT$0Hp
+t1OP4j<
+t1p2
+t2!t(
+t23H
+t2@SH 3y
+t2O3Ht(HHt
+t3<}t
+t3@VWAUH
+t3HIL
+t3HcH
+t3J1
+t3L /
+t3L$
+t3LD$XHHkxt
+t3lj
+t4HL$8LD$hH
+t4Hw
+t4IcH
+t4[Yec
+t4dTe
+t55vT
+t5H$p
+t5HCA
+t5Ht(HHHcH
+t5L$
+t5fy
+t5t(
+t6:t2H
+t6C0H
+t6HI
+t6L$
+t73H
+t7@t2
+t7H$
+t7H3
+t7HA@IH8HHHt
+t7HH
+t7HO
+t7HcS
+t7Hz
+t8D8{
+t8Eu3H@
+t8HD$@H
+t8L$
+t8MF8M
+t8gfffAA
+t90t
+t9=7
+t9Gw
+t9HD$0!P HD$P
+t9HG
+t9L$
+t9L9-<
+t9T$Pt9T$Xt9T$
+t9T$ht
+t9]kA
+t9t/H
+t:D$
+t:HT$ A
+t:LD$@HH
+t<)t
+t<<o
+t<HJ
+t<HK
+t<HL$0
+t<IIH
+t<LL$0L$
+t=f99t8.
+t=y0
+t>HF
+t>HI
+t>HL$@
+t>HX
+t>H{
+t>f9U
+t>}D
+t@/ADT$@DT$DAL$
+t@:u<s
+t@<Stc<Xv
+t@HT$ LH$.<
+t@Hc$
+t@LL$0E3I
+t@MF8M
+t@xe
+tAHD
+tAHD$8
+tAHG
+tAHL$
+tAHT$d
+tAI6HHX
+tAL$
+tALD$dAA
+tAoM
+tBHt
+tBL9$
+tCE8ep
+tCH=
+tCHL$hHD$pDM
+tCHc
+tCLL$
+tCfA
+tDH@
+tDHt
+tDIc
+tDL3
+tDLL
+tDMpU
+tDl$8D$0X
+tE t@
+tE9t5:t0Bt
+tEH$
+tF tA
+tFDBT7
+tG0I
+tG:%%Apqp%
+tGE3D3wHHL$HD
+tGH$
+tGH%BQ
+tGH<
+tGHJ
+tGHL$P3/
+tGIAE3EX
+tGJa8nr
+tGL!T$
+tGfD
+tGfOt<fHt6f@u
+tH3Lc
+tH<_tD<]t@<
+tHD$09h
+tHD$HFI
+tHD$HHG
+tHD$P
+tHD$X
+tHH8
+tHH9_(uB
+tHHH0[TH
+tHKhHt
+tHL$ LHLQHT$ I
+tHL$0Dl$0D$8
+tHL$0HGH
+tHL$0IL
+tHL$@DA
+tHL$@H HT$
+tHLE3IE
+tHPtQtGH
+tHT$@HL$ 3f
+tHt$8D
+tHtHL$@HL$0HL$0D$HB
+tHuQHL$ C
+tI3H
+tI@{n:CG
+tIAp
+tILL$pHt
+tILcIH
+tISHNI
+tJ@8xAtD1
+tJmO
+tJw]
+tK$@
+tL(H5T<
+tL(L9-<
+tL3HL$$D$ P
+tLA:tGLL$8E3K
+tLD$
+tLD$hH$
+tLHE
+tLHT$ H
+tLHt
+tLHt)H
+tM$Y1l
+tM.H
+tM.I
+tMA tGA
+tMLE3g
+tMVUHM
+tMsMrC
+tOD$
+tOHH
+tOHK
+tOHL$@
+tP3A
+tPHut
+tPa3Q9dv
+tPfA99tJIL
+tQ'J
+tQ0$
+tRHA
+tSHL$0
+tSHL$H
+tSNHSFSHPFM>NDH=C<B=E<D7J7M:
+tStH
+tTHtMHH
+tUEsA
+tUH$0
+tUHT$@A
+tULAIBH
+tUM_
+tURLA
+tV33
+tVHT$ HcH
+tVHtQH
+tW@t
+tW@tNHvHHtB
+tWHA
+tWHc
+tWz>G)
+tX tS
+tXHiH$8
+tYHH<
+tYHtT3Ht!HL$ H
+tZ7tN
+tZH$p
+tZH(
+tZHL$@
+tZIE
+tZS4
+tZo3
+t[=tQ
+t[ED$
+t[KW
+t[t>
+t]'E3
+t]:(
+t]HT$0H
+t]LL$8W
+t]LL$pE3W
+t]m.
+t_@8
+t_H$
+t_LL$HLD$0H
+ta@{
+taHF
+taHM
+taIHf
+taLcw
+ta_u
+tanh
+tbHK1h
+tbJ>
+tdH$
+teHC
+tfD93
+tfGYFM
+tfL9l
+tgHI
+tgd[
+tgvW/_
+thHK
+thHf
+this version of PCRE is not compiled with PCRE_UTF8 support
+tiAX
+ti]1
+timeGetTime
+timeout 3
+tiw70{Csr
+tj8$(s
+tjDD$H3
+tjH$
+tjH@
+tjnF
+tk tf
+tkD9V<
+tkEt
+tkLT$hH$
+tl<!th<otd<]t
+tlHT$ A
+tlIqMHHP
+tm tIA
+tm:MiMLaLLA0E
+tm<J)p
+tn'VVa{n
+tn3H$
+tnH$
+tnHL9$
+toD$TDL$PLH
+tof9
+too many named subpatterns (maximum 10000)
+tpeQewCF
+tq tE
+trHT$XH$
+trILISI
+trfNtSAG
+trrmcP
+trx-< lM8 N
+tt($
+ttHCXLcH
+ttHH
+ttLH8
+tvHT$ I
+tvHtqHL$@I32@23HtHHL$ H
+twHH_=
+twHHb=
+two named subpatterns have the same name
+txLHHtK
+tyD9L$
+tyH$
+ty_u A
+tyea[
+tyew
+typeof'
+tyyo'5
+ty{u
+tz3ADB
+tzbj
+t{laW
+t}H{
+u (D
+u 3>H
+u Al
+u H$
+u HHH
+u HK
+u L9y
+u t@@t=@
+u!E:
+u!HC
+u!HI
+u!HK
+u!HL$0
+u!HL$P_}f
+u!L$
+u$E3E333L
+u$E3E333Ll$ 
+u$MI
+u%9Oh
+u%@ = 
+u%EM
+u%HI
+u%HT$PIr
+u%Hc
+u%L$
+u'(]
+u'1_dC'2l
+u'D$
+u'c )6X
+u(E/I
+u(HG
+u(HT$p
+u(N(
+u(aE3E333Lt$ 
+u(t$
+u({tE3E333Lt$ 
+u)HD!
+u)Hg
+u-DH9
+u-MA
+u.6!LV
+u.D8-n
+u.H IuI
+u.HL$
+u.HX((HfD9
+u.t)L$
+u/'H0H
+u/AA
+u/HL$ 
+u/HL$ D@HL$ 3NHT$ HsHL$ hE=
+u/HV A
+u/OH0H
+u/PH
+u/SH HH
+u/f8
+u03H
+u0E3
+u0f9
+u1HE
+u29v-I
+u2= 
+u2AH
+u2DL$ HC
+u2E3I3Eq
+u2G1G3G5G
+u2HT$p)P
+u2L$0
+u2MU
+u3Al
+u3Gi
+u3H [H(/=T
+u3H@SH Hy
+u3HD$8H
+u3Isff
+u4H$
+u4Lc
+u4dR
+u5l(
+u6HD$0
+u6HHL$@HL$
+u6S:g
+u6t2D
+u7.:3q
+u74)
+u8 uHR
+u83H
+u8D$8t
+u8E3E33@:t
+u8HT$HHL$0
+u8HT$p
+u8Hu'-
+u8]b
+u93E3E333L
+u9DHH}L
+u9DXnH
+u9H$h
+u9MI
+u9q1A]
+u:-A
+u:HT$0H$
+u<@:t0HT$
+u<AA
+u<DGSE3
+u<HH
+u<Tq
+u<t8HD$@
+u=AHL$8A-
+u=HA
+u=HL$0H
+u=LM
+u=Q6xS$
+u=d$(
+u>3LD$
+u>DHIMH
+u>HH
+u@!D$0$
+u@@H
+u@D$
+u@D:u!
+u@H$
+u@HH
+uA3E3E333
+uA<$]
+uA@SH HHI
+uAB8L.
+uAD$V
+uAD$fDd$b
+uAH(
+uAHD
+uAL$
+uAL9t$@w:b
+uAfD
+uAuE3I
+uB-7
+uBD$fDd$b
+uBH$
+uBH8
+uBHt
+uBI9
+uBPH
+uBi6
+uCH$
+uCHHZOL$0
+uD$0P
+uD$h
+uDD$hE
+uDDHI
+uDE3E333Ht$ 
+uDED
+uDEt
+uDHL$@
+uDILT$8A
+uDT$hA
+uE(qL29
+uE3HE
+uE:uD$0
+uE@Hu
+uEIK
+uExA
+uFAHL$@AHcHEHL$@LE3H:VHT$@IM
+uFD$
+uFHcD$
+uGwMAH
+uH$0
+uH(HfD9
+uH3H%
+uH@Hv
+uHBL
+uHDD$TD
+uHH)
+uHHD$hE3E3HD$03D$(
+uHHD{
+uHHHH
+uHHHX
+uHHL$0E3LHD$HHHD$(d$ 
+uHHX
+uHHtfH
+uHL$
+uHL$xDHL$0H$
+uHT$(H
+uHT$0H
+uHcH
+uHcHu
+uHcfD9<F
+uHh8'Vxp
+uHl$8Ht$@H
+uHl$8Ht$@HH
+uHl$8Ht$@_
+uHl$HHt$PHH
+uHl$h
+uHrL
+uI)]HHH9_
+uIDD$
+uIDHD$0Ht
+uIE3D$ 
+uIH$
+uIH{
+uIIL
+uIcf9
+uIfffffff
+uJBr
+uJID
+uJLL$ H$0
+uK3HDB
+uKHG
+uKHL$@}Dl$@6HL$@mDDd$@%HL$@
+uL/H
+uL3Ht
+uLD9p
+uLE=
+uLEL$D3HfxHHL$TEL$
+uLHA
+uLLN
+uMD8-
+uMHc
+uMIHgV
+uMILT$8A
+uM[Gf
+uMt6IMcH
+uNHL$@-BLd$@5HL$@
+uNHz
+uNjI$
+uO0k$nS{'
+uOLg
+uP2H
+uPAt
+uPE3D$ 
+uPHf(
+uPMI
+uQID$
+uQMI
+uRD$Z
+uRL$ ALL$hDD$0LD$0HHq
+uSD$b
+uSW t
+uT%]
+uTD$b
+uTHL$@H
+uTHT$HID$
+uU3Z
+uV19
+uVIQ
+uVW t
+uWHL$ zGHH
+uW]y
+uX@tSHE
+uXDHt$(H
+uXYyvLb
+uZE3M
+uZHH
+u[(pCx
+u[DD
+u[HA
+u[Ht
+u]D$RAA
+u]E:
+u]L$
+u]f9]
+u_H@t<H@t/H@HH5K>
+uaHCL
+uaqHD$XL$
+ub_B
+ucEA
+ucL%:
+ucd$ 
+udt returning'
+ueIE
+uf t
+ufD3
+ufD3I
+ufD9
+ufD9$
+ufH$
+uh89bZE
+uhL$
+uhgphWs[8
+ukGx
+ukIP
+uktj
+um$@
+umAi
+umH{(HtdHl$8Ht$@Hw
+un3I[
+unknown POSIX class name
+unknown option bit(s) set
+unknown property name after 
+unmatched parentheses
+unrecognized character after (
+unrecognized character follows 
+uoI:
+uoLL$(L
+up3f
+upHAI
+upHt
+upZXHG
+upper
+uqBjjqd
+uqL!
+uso3
+utLr-
+uuvHMXB
+uuxjQ_
+uvMu
+uvVxSz
+uw%Yy
+uwH$h
+uxH{(HtoHw
+uxtheme.dll
+uyHA
+uzHG
+u}H$
+u}HI 3H
+u}HM
+v 7uY
+v HC
+v IE
+v!2H
+v!Fa
+v!HC
+v!HE
+v$HC
+v$HTH$
+v$Zp[
+v%$'_6)
+v%LLHI
+v%NbcEX
+v'GJ
+v(HT$PIgt/T$PH@
+v(WHESc
+v(ra
+v)HT$PIft0
+v)Ht
+v-HC
+v-HG
+v-HHfD90t
+v-HO
+v.W<
+v0Ic_
+v1.0
+v1Vo
+v2HG8ft
+v2IIE
+v3D8s
+v4HfA9
+v4IE
+v4IHf
+v5L$
+v7Lp
+v8IL$
+v8LD$
+v9LE3InHL$ HH
+v9La
+v<IF
+vAHC
+vAIcH
+vA_ 
+vC@K(:ul
+vCHl$0H
+vCrgzL
+vDGpA
+vE3D3H
+vE3E3H
+vE3H
+vGLIHM
+vH-W2JyNx'h
+vH0]@UH0HHM@
+vHAL
+vHH@ENE3HDs
+vHL$$DI4
+vHL$0
+vHL$xuH$
+vHT$ A
+vHd$ 
+vHl$8Ld$0Lt
+vHl$HDE3HHU
+vI2r
+vIO{vwYx
+vJPA
+vK'@cJ
+vKHC
+vLL$
+vMNyvi7[
+vNLLHI
+vNTM
+vO'=3
+vO4Es(
+vO:TMCg8o@ucuR@
+vODj!S
+vOZb
+vRd 
+vSH$
+vU3!v
+vUR31NR'
+vUozVZe
+vZ5s}iH
+v[iQ
+v_)xLgAW$
+v_{.)
+vaHL$HLD$8L
+vaTEdSVr8
+vbase destructor'
+vbtable'
+vcL$
+vcall'
+vd8]p
+ve <Oe
+vector constructor iterator'
+vector copy constructor iterator'
+vector deleting destructor'
+vector destructor iterator'
+vector vbase constructor iterator'
+vector vbase copy constructor iterator'
+ves5a-Gq
+vfHW
+vfaA
+vfg 
+vftable'
+vg  US
+vgL$H
+virtual displacement map'
+vjH@8$
+vmD--X
+vnLL
+voL$
+vpI%H
+vpV1
+vqrj
+vsa9
+vtLHI
+vtS'
+vu D
+vu-D
+vuHLH$H
+vugP}F
+vvax
+vv}v
+vxHT$ Hit
+vxLl$0LL$@H
+v}(QW
+v}aL
+v}cQ
+w tSA
+w zu7A
+w!$m/0
+w!HF
+w'G88
+w)wGe
+w-j'
+w.Ff
+w.HA
+w.HH
+w/HcH
+w/It
+w0RbBcBa)h
+w1HA
+w2Ff
+w2K}i
+w4HY
+w531
+w5HA
+w5tk
+w66n{
+w6XX
+w7zBY
+w:D$(
+w<A_
+w<HO
+w>Wy
+w>]b4C
+w>hNN
+w@SH H
+w@r($k:NB1
+wA n
+wA_f
+wB<4
+wCgUI{Y6ImNCsPxIH
+wEpI
+wGC333
+wH$@
+wH97
+wHD$0x
+wHD$@P
+wHHAt
+wHHL$Xk
+wHHX
+wHHu
+wHL$Hy
+wHcH
+wHt$h
+wIu%M
+wJtp
+wK<t
+wLL$
+wMEj
+wNhd
+wO<//
+wOGhA[w i
+wQ3kwi
+wQs[ao
+wSHL$HLE3HHL$HIeM
+wSKL$
+wULP
+wV'KPA
+wVktlp
+wXLIH
+wXW/
+wYKL$
+wY{Z
+w_b)
+wa/.'
+wa:)dq[c
+waf9
+waveOutSetVolume
+wcHo
+wd$0
+wdIF
+webthreatdefsvc]
+webthreatdefusersvc]
+wf9$
+wfp2XQt
+wgHbBxS
+where {$_ -like '
+where {$_.Name -eq $appx.DisplayName}).PackageFamilyName 
+wiHL6
+wid- 1j
+wikoO
+windows-defender-remover
+windowsdefender]
+winsipolicy.p7b
+wktq5
+wlHA
+wn)1!_MAN .(<-
+wn:S
+word
+wow64_windows-defender
+wowG
+wqR@xU
+wscsvc]
+wsprintfW
+wu HL$0qu
+wuH_ELt$xI
+www.sordum.org0
+wy$)Fv
+wyNg
+w{Ka/Qt
+x!p(
+x$3H
+x$9v
+x']h
+x'zOO
+x'{qn
+x(WQVG9B
+x)H$
+x-Ix
+x.LL$@A
+x.r(VbIV
+x277
+x3isZ
+x4HL$PHT$XEH
+x4U7
+x7!>B
+x86_windows-defender
+x9DL$h
+x>Fm
+x@89H
+x@:u
+x@WCdpt
+x@oGAkU'9p
+xA t
+xC=]w
+xD=q=
+xE1!yd
+xE3E3HHH2C
+xE3Ll0
+xExY<
+xFu.I-hJ
+xHH [H(H
+xHL$pH8
+xHT$HE3LHA:tH
+xHj=0Jsyl7G
+xJeQ!r53Pt
+xLHT$ I{]HL$ aRHL$@WRL
+xLL$ E3I-HL$@L3pG
+xMUg
+xODHID$(
+xP0rdT
+xPvrzu4
+xSm=
+xTy:=H
+xVwK
+xWH$
+xZSKf
+xZn=>
+x[ 2-k02Y$0
+x]_58N>
+xa9G
+xarwr
+xayd!
+xb:]
+xbQE
+xdHcIF
+xdigit
+xe/A<
+xf u63I
+xl3M
+xl6oZ
+xlkU@
+xo6c
+xo<g!
+xppwpp
+xpxxxx
+xqDM@N5
+xrTl
+xst-W
+xu}%-
+xwVXHBD1>
+xy}M
+x{...} sequence is too large
+x{/!
+y 5E$
+y :'_smMb
+y%UNY1
+y'y.
+y)B$
+y-qt
+y.C9TW 
+y155
+y9d{.xW
+y<TG!Bjfe
+y<{'
+y=_<
+y=o!_
+y>aRel
+y@SH HH
+y@f=%O
+yAAB!D AB
+yAAB!D AC
+yAE9t$xvIIT$pHH
+yAWG@
+yD$(
+yEC1%s
+yEyAy
+yFdT
+yG98C
+yHBp
+yHL$0
+yHL$PD
+yHL$xHTHT$@t:HL$xH
+yHT$8
+yHT$xH
+yHc$
+yHcflF
+yHt$@Hl$8H
+yL$8
+yLcHT$03IfB
+yM.'
+yML3yH
+yM[mEz69
+yNj6@
+yPCf('HN@
+yPqA
+yR:L
+yRCFSt/11TvS
+yS.kak
+ySG9[
+yT$pE3A
+yVpV[
+yVq@
+yXHL$
+y[']
+y[AI3
+y_%T)
+y_4T
+ybth
+ydRo7vRwXA
+yeXX
+yg6ZD
+yhbR)
+yjHL$
+yj[Y5
+ykeM
+you can use download entire source code
+you can use git
+yqtGr_
+yqyVa00pipLOZ
+yrqH.3
+ytE3E3I3D$(
+ytZHcH
+yuVB
+yvBRS
+yvSQ
+yy[qq)
+z!!kg
+z$>J
+z%3Ff}Xc
+z(XPBX
+z)j5
+z-19S
+z-R 2K
+z-XX
+z1Vz
+z3H9
+z7-G
+z:nB6 hR_
+z:s1
+z<Oa
+z<qm
+z=<t-
+z>1n
+z>Ji
+zA:u
+zA@L$$L$
+zAP_p
+zBmE%Fu
+zD$DDd$@HT$@HL$
+zDtHE
+zFF-
+zH ]@UH H
+zH(H
+zHD$0LL$@E3HD$D
+zHDH L@
+zHGHA
+zHH$
+zHHL$@A
+zHHw
+zHKC
+zHL$H
+zHN9
+zHT$
+zK<2
+zLL$0LD$4HHD$XHHD$(HD$hHD$ u
+zLL$hLD$xHT$ H
+zL[xWqn
+zLkSJ
+zMCcR
+zN7C6Y
+zNn8O
+zPRJM
+zPa/9i
+zQv$]
+zR:3FU6L-
+zR>>ve(@
+zUyxtAs
+zW23] 1$KAKI7z
+zY g
+zYK9
+zYu1A
+zc%C1<!8G
+zd5Mb
+zdKis_cP]
+zf]1
+zg%cgbBa(Y
+zhyt
+zi/}E
+zkOG
+zlHL$8PsD$
+zmNtP
+ztttsllkia
+zvAl
+zw}!9'L
+zyttsolia
+zyutsvj
+zyxtsollkdga
+zz)n-
+zzZ0
+{ LE
+{(N0K
+{)hKo.UgD
+{.>uN)
+{0!Iq
+{0ACC9108-2000-46C0-8407-5FD9F89521E8}]
+{0U/wYY
+{195B4D07-3DE2-4744-BBF2-D90121AE785B}]
+{1D77BCC8-1D07-42D0-8C89-3A98674DFB6F}]
+{2781761E-28E0-4109-99FE-B9D127C57AFE}]
+{2781761E-28E2-4109-99FE-B9D127C57AFE}]
+{361290c0-cb1b-49ae-9f3e-ba1cbe5dab35}]
+{45F2C32F-ED16-4C94-8493-D72EF93A051B}]
+{4A9233DB-A7D3-45D6-B476-8C7D8DF73EB5}]
+{6CED0DAA-4CDE-49C9-BA3A-AE163DC3D7AF}]
+{6hv
+{8C9C0DB7-2CBA-40F1-AFE0-C55740DD91A0}]
+{8a696d12-576b-422e-9712-01b9dd84b446}]
+{900c0763-5cad-4a34-bc1f-40cd513679d5}]
+{<{d
+{@)Si
+{@DC@HH
+{@D[DD[H@
+{A2D75874-6750-4931-94C1-C99D3BC9D0C7}]
+{A7C452EF-8E9F-42EB-9F2B-245613CA0DC9}]
+{AIU
+{B05F34EE-83F2-413D-BC1D-7D5BD6E98300}]
+{BB64F8A7-BEE7-4E1A-AB8D-7D8273F7FDB6}]
+{BoX3
+{CL]
+{CbS
+{D$@
+{D$@e@
+{DACA056E-216A-4FD1-84A6-C306A017ECEC}]
+{DL$0LL$@LD$xLL$0HHD$8
+{E3C9166D-1D39-4D4E-A45D-BC7BE9B00578}]
+{E48B2549-D510-4A76-8A5F-FC126A6215F0}]
+{ESgYL-
+{El$
+{F-NqDt
+{F1}Rf
+{F6976CF5-68A8-436C-975A-40BE53616D59}]
+{FXg6
+{Gyv
+{H ]@UH H
+{HHX
+{I'J
+{IQC
+{IVvH]
+{Q$D
+{Q.fd
+{Ri3h
+{Rys
+{Sqx
+{T$pH
+{Tb!
+{[o=EGM@
+{c!mQ
+{cW[@:
+{cdebsIwLZ
+{dKU
+{d{h@{ H
+{f90uHadH
+{fE$npWjpr
+{je)
+{kGet5<
+{kuD
+{m-)
+{mF1sZ
+{tM2QH)1
+{uVp{
+{w/QGsnh>{
+{w=C0h!NS6h
+{wVR7
+{w_JR2
+{x1L.CD(o_
+{xS)m
+{ykH
+{zF1
+}!lW
+}%)y
+}(ysh
+})HcH
+}.4lE=7GH
+}.HcH
+}._PnR%
+}0CT
+}0vWkk]
+}39Shs
+}3AL
+}3Zp[ ]
+}4Sob
+}4TMU0e
+}6H$x
+}7]]
+}=D4uG
+}=HA
+}>RE4W5[0@
+}@as3V.Lt
+}AHe@k
+}B$@
+}BHc
+}Bxr
+}EDELt$ -gHtDE
+}Et$
+}FWXJ
+}H8H
+}HHHD$
+}HO0
+}HcDL$D
+}HcID$
+}Hco3
+}Ht$hfDT
+}HudY
+}JD9L$
+}L$$AA
+}LD$ 
+}LL$8E3M
+}Lr[4jy6D
+}MD$
+}MH$
+}Mfo
+}QEB
+}Qy]
+}U1Q
+}UQoV
+}WHcH
+}[SR
+}]HL$ 
+}_J)4k0
+}dW0[s
+}fTn
+}g<UG
+}g]v>
+}h-I
+}hHL$pL$
+}iLcH
+}jH[c
+}lPd
+}nIW2Bvk
+}p/TPev
+}pI=V
+}pom 
+}qMta
+}r3@:u
+}rdqhdw0daVm(0C
+}rl8
+}sTH%
+}t:rdn@
+}t[i
+}vWFK7
+}zDELt$ fH:t
+}}ezW

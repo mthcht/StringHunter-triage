@@ -1,0 +1,4 @@
+'); if (test-path $store) {$users += $((dir $store -ea 0 |where {$_ -like 
+'*S-1-5-21*
+'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore
+'S-1-5-18

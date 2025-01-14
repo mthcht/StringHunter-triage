@@ -1,0 +1,15 @@
+""" ""C:\Windows\SysWOW64\DeviceCensus.exe"" ""C:\Windows\SysWOW64\CompatTelRunner.exe"
+""" ""C:\Windows\SysWOW64\GameBarPresenceWriter.exe"" ""C:\Windows\System32\GameBarPresenceWriter.exe"
+""" ""C:\Windows\SysWOW64\smartscreen.exe"" ""C:\Windows\System32\DWWIN.EXE"
+""" ""C:\Windows\System32\SecurityHealthService.exe"" ""C:\Windows\System32\SecurityHealthHost.exe"
+"2. Run the "".exe"
+"Some security apps flag this app as a virus because of the way the "".exe"
+"dows\bcastdvr"" ""C:\Windows\Containers\serviced\WindowsDefenderApplicationGuard.wim"") do PowerRun cmd.exe"
+"indows\system32\drivers\MsSecFltWfp.sys"" ""C:\Windows\system32\drivers\MsSecFlt.sys"") DO PowerRun cmd.exe"
+"ows\System32\smartscreen.dll"" ""C:\Windows\SysWOW64\smartscreen.dll"" ""C:\Windows\System32\smartscreen.exe"
+"ror.png"" ""C:\Windows\System32\SecurityAndMaintenance.png"" ""C:\Windows\System32\SecurityHealthSystray.exe"
+"s\System32\SecurityHealthAgent.dll"" ""C:\Windows\System32\wscapi.dll"" ""C:\Windows\System32\wscadminui.exe"
+Defender.Remover.exe
+FOR /R %%f IN (Remove_SecurityComp\*.reg) DO PowerRun.exe regedit.exe
+FOR /R %%f IN (Remove_defender\*.reg) DO PowerRun.exe regedit.exe
+FOR /R %%f IN (Remove_defender\*.reg) DO regedit.exe
