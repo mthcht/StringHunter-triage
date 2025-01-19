@@ -1,0 +1,89 @@
+ -- Bail if client did not send an Origin
+ -- add the generic scheme to the beginning of the pattern
+ -- an asterisk for the port means allow all ports
+ -- append end character
+ -- escape dots and dashes in pattern
+ -- remove spaces
+ ---------------- by @JoelGMSec --------------
+ ------^-------
+ ------v------*/
+ ---accessToken---
+ ---adminPass---
+ ---certandkey---:/etc/certandkey.pem \
+ ---cookieKey---
+ ---val--- will get replaced by setup.sh
+ -->
+ --all #--force
+ --break-system-packages &
+ --config-file=/usr/share/dbus-1/system.conf --print-address
+ --depth=1 https://github.com/novnc/noVNC.git /home/user/noVNC && \
+ --depth=1 https://github.com/novnc/websockify /home/user/noVNC/utils/websockify && \
+ --load-extension=/home/user/kiosk/ --kiosk $URL --fast ---fast-start &
+ --name evil$SID evilnovnc
+ --rm --name hap --network evil -p ---victimPort---:443 -p ---adminPort---:1300 \
+ --rm --network evil --name controller \
+ --rm --network evil \
+ --rm -t evilnovnc .
+ --rm -t haproxy .
+ --rm -t webdevops/php-nginx .
+ --rm if no modifications to image
+ --vnc localhost:5900 --listen 5980
+"
+" -- for example, it may be a regular OPTIONS request that is not a CORS preflight request"
+" -- if there is no scheme and the pattern does not begin with a dot, "
+" -- if wildcard (*) is allowed, return it, which allows all origins"
+" ---------------- by @JoelGMSec --------------\n\e[1;0m"" "
+" --> ./run.sh"""
+" --load-extension=""."" --no-first-run --auto-open-devtools-for-tabs <URL>"
+" --no-sandbox --disable-crash-reporter --password-store=basic &"" > /dev/null 2>&1 &"
+" --rm -p 127.0.0.1:21212:80 -v ""/tmp:/tmp"" -v ""${PWD}/Downloads"":""/home/user/Downloads"" -e ""WEBPAGE=$WEBPAGE"" -e ""SNAME=$SNAME"" --name evilnovnc joelgmsec/evilnovnc > /dev/null 2>&1"
+" --user-agent=""$1"" $URL &"
+" --user-data-dir=/home/user/Chrome#"" /etc/chromium/chromium.conf"
+" --window-position=0,0 --no-first-run --enable-experimental-extension-apis --disable-gpu --disable-software-rasterizer --disable-dev-shm-usage --kiosk --no-sandbox --password-store=basic --start-fullscreen --noerrdialogs --load-extension=/home/user/extension/,/home/user/kiosk/ --ignore-certificate-errors --guest""' >> /etc/chromium/chromium.conf"
+" --window-position=0,0 --no-first-run --enable-experimental-extension-apis --disable-gpu --disable-software-rasterizer --disable-dev-shm-usage --no-sandbox --password-store=basic --noerrdialogs --load-extension=/home/user/extension/,/home/user/kiosk/ --ignore-certificate-errors --auto-open-devtools-for-tabs --guest""' >> /etc/chromium/chromium.conf"
+--    "
+--    all HTTP and HTTPS connections from ALL source port for localhost"
+--    allows all subdomains and main domain of mydomain.com only for HTTPS from default HTTPS port and allows "
+--   e.g. .mydomain.com            : allow ALL subdomains of mydomain.com from ALL source ports"
+--   e.g. .mydomain.com:443        : allow ALL subdomains of mydomain.com from default HTTPS source port"
+--   e.g. //localhost              : allow http(s)://localhost"
+--   e.g. //mydomain.com           : allow only http(s)://mydomain.com"
+--   e.g. http://mydomain.com      : allow only HTTP of mydomain.com"
+--   e.g. http://mydomain.com:8080 : allow only HTTP of mydomain.com from port 8080"
+--   e.g. https://mydomain.com     : allow only HTTPS of mydomain.com"
+--   e.g. localhost                : allow http(s)://localhost"
+--  e.g. "".mydomain.com:443, //mydomain.com:443, //localhost"""
+-- "
+-- Add headers for CORS preflight request and then returns a 204 response."
+-- Adds headers for CORS preflight request and then attaches them to the response"
+-- CORS RFC:"
+-- Copyright (c) 2019. HAProxy Technologies, LLC."
+-- Copyright (c) 2019. Nick Ramirez <nramirez@haproxy.com>"
+-- Cross-origin Request Sharing (CORS) implementation for HAProxy Lua host"
+-- If the given origin is found within the allowed_origins string, it is returned. Otherwise, nil is returned."
+-- If the request is OPTIONS and it is a supported version of HAProxy, returns a preflight request reply."
+-- Loops through array to find the given string."
+-- Otherwise, the preflight request header is added to the response after it has returned from the server."
+-- Register the actions with HAProxy"
+-- The 'reply' function used here is available in HAProxy 2.2+. It allows HAProxy to return"
+-- The downside is that the OPTIONS request must be sent to the backend server first and can't "
+-- When invoked during a request, captures the origin header if present and stores it in a private variable."
+-- When invoked during a response, sets CORS headers so that the browser can read the response from permitted domains."
+-- a reply without contacting the server."
+-- after it comes back from the server. This works with versions of HAProxy prior to 2.2."
+-- allowed_headers: Comma-delimited list of allowed headers. (e.g. X-Header1,X-Header2)"
+-- allowed_methods: Comma-delimited list of allowed HTTP methods. (e.g. GET,POST,PUT,DELETE)"
+-- allowed_origins: Comma-delimited list of allowed origins. (e.g. localhost,https://localhost:8080,//test.com)"
+-- allowed_origins: Comma-delimited list of allowed origins. (e.g. localhost,localhost:8080,test.com)"
+-- be intercepted and returned immediately."
+-- https://www.w3.org/TR/cors/"
+-- items: array of strings"
+-- origin: The value from the 'origin' request header"
+-- test_str: string to search for"
+-- txn: The current transaction object that gives access to response properties"
+-- txn: The current transaction object that gives access to response properties."
+--"
+---------------------------------------------------------------"""""")"
+-----BEGIN PRIVATE KEY-----"
+-----END CERTIFICATE-----"
+-----END PRIVATE KEY-----"

@@ -1,0 +1,23 @@
+"'re not presented with another problem: given a ""leaked""/held open logon session, how do we get a usable token from it? **WTSQueryUserToken()** only works with desktop sessions, and there"
+"'s [Internal-Monologue](https://github.com/eladshamir/Internal-Monologue) project (no license), as well as [KB180548](https://mskb.pkisolutions.com/kb/180548). For why this is possible and Koh"
+' 
+' == 
+' or 
+' token which isn
+'$(Configuration)
+'$(Configuration)|$(Platform)
+'$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props
+'$(Platform)
+'$0 $1 $2 $3 $bid $barch $BOFPath $bofArgs $command $handle $bofData
+'*
+'.csproj
+'Debug|AnyCPU
+'Release|AnyCPU
+'\0
+'release LUID
+'release all
+'release allbut LUID
+'t create additional event logs on the DC outside of normal system ticket renewal behavior (I don
+'ve been coding for a decent amount of time. This is one of the weirder and frustrating-to-track-down bugs I
+'ve been warned that we
+'{parts[3]}

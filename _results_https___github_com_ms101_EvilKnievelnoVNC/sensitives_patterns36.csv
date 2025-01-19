@@ -1,0 +1,46 @@
+		if(e.keyCode == 17)
+	ssl_certificate_key key.key;
+                return 'Platform' + e.keyCode;
+                return e.keyIdentifier;
+            UI.keyboardinputReset();
+            f.write('{}'.format(event.Key))
+            if (e.keyCode !== 229) {
+        UI.keyboardinputReset();
+        UI.touchKeyboard.onkeyevent = UI.keyEvent;
+        elif event.Key == '@':
+        elif event.Key == 'Alt_L':
+        elif event.Key == 'BackSpace':
+        elif event.Key == 'Caps_Lock':
+        elif event.Key == 'Control_L':
+        elif event.Key == 'Control_R':
+        elif event.Key == 'Delete':
+        elif event.Key == 'Shift_L':
+        elif event.Key == 'Shift_R':
+        elif event.Key == 'Super_L':
+        elif event.Key == 'Super_R':
+        elif event.Key == '[65027]':
+        elif event.Key == 'at':
+        elif event.Key == 'colon':
+        elif event.Key == 'comma':
+        elif event.Key == 'equal':
+        elif event.Key == 'exclam':
+        elif event.Key == 'parenleft':
+        elif event.Key == 'parenright':
+        elif event.Key == 'period':
+        elif event.Key == 'semicolon':
+        elif event.Key == 'space':
+        if (e.keyCode) {
+        if (e.keyIdentifier) {
+        if event.Key == 'Return':
+        let formatKeys = Object.keys(formats);
+"			if(event.ctrlKey && (event.key === ""v"" || event.key === ""V"")) {"
+"	-v ""./key.key:/etc/nginx/key.key:ro"" \"
+"            .addEventListener('input', UI.keyInput);"
+"            RFB.messages.keyEvent(this._sock, keysym, down ? 1 : 0);"
+"            const codepoint = parseInt(e.keyIdentifier.substr(2), 16);"
+"            if (e.keyIdentifier.substr(0, 2) !== 'U+') {"
+"        this._target.addEventListener('keydown', this._eventHandlers.keydown);"
+"        this._target.addEventListener('keyup', this._eventHandlers.keyup);"
+"        this._target.removeEventListener('keydown', this._eventHandlers.keydown);"
+"        this._target.removeEventListener('keyup', this._eventHandlers.keyup);"
+new_hook.KeyDown = OnKeyPress

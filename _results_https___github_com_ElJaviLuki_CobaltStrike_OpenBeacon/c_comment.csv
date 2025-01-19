@@ -1,0 +1,124 @@
+"// Calculate the results and store them in ""out"""
+"// Call the entry point whose signature is void go(char* buff, int len)"
+"// Extract the upper and lower nibbles from ""in"""
+"// Format the username in the format ""domain\username"" and store it in the buffer."
+"// Function added, return its pointer"
+"// Function found, return its pointer"
+"// If gJobs is not empty, iterate through the list"
+"// If no empty slot was found, return NULL"
+"// If the file is not found, wait for it to be created"
+"// If there an already stolen token, close its handle."
+"// Information: Computer name, user name, executable name"
+"// Revert to the self security context (that is, drop the stolen token from the current thread)"
+"// This forces the programmer to not use 'auto' keyword ever, otherwise the compiler will throw an error."
+"// if the size of the buffer is too small, return 0"
+"// look for the substring ""sysnative"" in cmd"
+"// retrieve the original item, not the cache"
+// 1 = non-blocking
+// 1. Sections; 2. Relocations; 3. Symbols (hierarchy)
+// AES random
+// ANSI code page
+// Add the new function to the found empty slot
+// Add to the end of the list
+// Allocate a buffer to store user information
+// Allocate and initialize a security identifier (SID) for the built-in administrators group.
+// BOF Dynamic function
+// BOF Internal function
+// Beacon ID
+// Calculate the number of bytes to be written in the current iteration
+// Call the NtQueueApcThread function in the target process
+// Check if size is greater than 0
+// Check if snapshot creation failed or there are no threads in the process
+// Check if the current function matches the one we're looking for
+// Check if the current token (security context) is a member of the specified group SID.
+// Check if the difference is too big to fit in a 32-bit signed integer
+// Check if the thread is in the process we want to inject into
+// Check if the write operation was successful
+// Check if we found an empty slot for a new function
+// Clear the buffer and free the allocated memory
+// Close handles associated with completed jobs
+// Close the snapshot handle
+// Close the thread
+// Copy the file
+// Create a new entry for the new argument
+// Create a toolhelp snapshot of the process
+// Create the directory
+// Define the SID_IDENTIFIER_AUTHORITY structure and initialize it with the SECURITY_NT_AUTHORITY constant.
+// Duplicate the token with maximum allowed access rights
+// FIXME: DNS Settings here...
+// FIXME: I do not understand why is this freed just only when an error occurs... I'm not sure if this is purposeful or not. Maybe a memory leak?
+// Flags
+// For each active argument
+// Free the allocated SID and return the result.
+// Free the memory allocated for the credentials format.
+// Get host by name
+// Get the token information for the given token handle.
+// Get user information from the token and store it in the buffer
+// GetModuleHandleA address
+// GetProcAddress address
+// GetProcAddress high part for x64 addressing
+// IPv4 address
+// Impersonate the logged-on user using the duplicated token
+// Impersonate the logged-on user using the specified token
+// Indicate the attributes of the process to be created.
+// Initialize the process attribute list
+// Inject the payload into the spawned process using InjectProcess.
+// Iterate through the dynamic function array
+// Iterate through the threads in the snapshot
+// Localhost for little endian
+// Lookup the account SID to retrieve the username and domain.
+// Magic number for metadata
+// Mark the thread as executed and write it back to the allocated memory
+// Move the file
+// Now this truncates to 32-bit safely
+// OEM code page
+// OS build number
+// OS major version
+// OS minor version
+// Open the parent process with full access
+// Open the thread
+// PID
+// PROC_THREAD_ATTRIBUTE_PARENT_PROCESS
+// Placeholder for packet size
+// Port
+// Read the APC thread data from the allocated memory
+// Relocate a 32-bit absolute reference
+// Relocate a 32-bit relative reference
+// Report the new token to the user
+// Reset the token.
+// Restore the error mode
+// Return TRUE if the thread was executed
+// Reuse this entry for the new argument
+// Set the error mode to prevent error dialogs
+// Set the process attribute for the child process
+// Sleep to give the thread time to execute
+// Spawn a temporary process.
+// Store the current slot as a potential location for the new function
+// Store the handle to the parent process
+// TODO: Implement
+// This is for the BOF to be able to call Win32 APIs
+// Update the process attribute list
+// Use EBX
+// Use RDX
+// call NtMapViewOfSection to map the file into the target process
+// check if the file was mapped
+// clear the standard input
+// close the file mapping object
+// copy the payload into the mapped file
+// copy the rest of the string
+// determine the size of the buffer required to store the expanded string
+// don't add this to the IE cache
+// expand the string
+// ignore common name invalid cert errors
+// ignore date invalid cert errors
+// map a view of the file into the process's address space (use MapViewOfFile)
+// means: don't show the window
+// means: use the following handles and show the window
+// no cookie popup
+// null terminate
+// relocation type - r_type
+// the newline is \r\n
+// this should never happen
+// unmap the file from the current process
+// use PCT/SSL if applicable (HTTP)
+// use keep-alive semantics

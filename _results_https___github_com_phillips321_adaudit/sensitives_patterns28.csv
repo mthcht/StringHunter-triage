@@ -1,0 +1,9 @@
+"    #Dumps NTDS.dit, SYSTEM and SAM for password cracking"
+"    $outputdirntds = '\""' + $outputdir + '\ntds.dit\""'"
+"    Write-Both ""    -ntds dumps the NTDS.dit file using ntdsutil"""
+"    Write-Both ""    [+] NTDS.dit, SYSTEM & SAM saved to output folder"""
+"    Write-Both ""    [+] Use secretsdump.py -system registry/SYSTEM -ntds Active\ Directory/ntds.dit LOCAL -outputfile customer"""
+"    if (Test-Path ""$outputdir\ntds.dit"") { Remove-Item ""$outputdir\ntds.dit"" -Recurse }"
+"notin $exclude) -or 'ntds' -in $selectedChecks) { $running = $true ; Write-Both ""[*] Trying to save NTDS.dit, please wait..."" ; Get-NTDSdit }"
+* -ntds dumps the NTDS.dit file using ntdsutil
+* Dumps NTDS.dit

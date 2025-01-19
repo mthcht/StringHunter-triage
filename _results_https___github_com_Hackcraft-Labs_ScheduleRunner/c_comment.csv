@@ -1,0 +1,38 @@
+"//
+"// COM, set the ComVisible attribute to true on that type."
+"// Check if current user is ""NT AUTHOIRTY\SYSTEM"""
+"// [assembly: AssemblyVersion(""1.0.*"")]"
+//      Build Number
+//      Major Version"
+//      Minor Version
+//      Revision
+// API used to avoid redirecting to SYSWOW64 folder
+// Add command line argument
+// Avoid redirecting to syswow64
+// Check if the folder exists
+// Check if the newly created scheduled task exists
+// Check if the task exists
+// Check key parameters
+// Check key paramters
+// Check technique - hiding scheduled task
+// Define trigger
+// Delete hidden scheduled task
+// Execute the task if exists
+// General Information about an assembly is controlled through the following
+// Register the task in the root folder
+// Setting ComVisible to false makes the types in this assembly not visible
+// Setting for the scheduled task
+// Specific user who executes the scheduled task
+// Start deleting the task
+// Technique - hidding scheduled task
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// Validate remote access
+// Validate setup for removing hidden scheduled task
+// Validate the scheduled task is using 'hide' technique before deletion
+// Version information for an assembly consists of the following four values:
+// You can specify all the values or you can default the Build and Revision Numbers"
+// associated with an assembly.
+// by using the '*' as shown below:
+// https://www.microsoft.com/security/blog/2022/04/12/tarrask-malware-uses-scheduled-tasks-for-defense-evasion/
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from

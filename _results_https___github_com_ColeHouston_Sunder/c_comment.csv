@@ -1,0 +1,222 @@
+	// R/W primitive functions from main exploit must be functional to perform the steps from here onward	//"
+"//			Especially with ACL editing shellcode, ACL offset is volatile and currently set for winlogon.exe"
+"//	(first 4 bits = SIGNER, 5th bit = AUDIT (boolean), 6-8 bits = TYPE (light/1, normal/2, max/3)"
+"//	Once running as LOCAL SERVICE open a handle to appid driver. If this fails, revert token and try with new PID"
+"//	Set any addresses resolved with GetProcAddress in advance, to avoid BSOD in PreviousMode exploits"
+"//	address at offset +0x30 containing 0x0. If this fails, a BSOD may occur"
+"//
+"// (if EPROCESS pid is equal to 4 again, entire process loop has completed without finding targets)"
+"// Attempt to open thread token first, followed by process token"
+"// Calculate pointer by subtracting user-mode base address of ntoskrnl, then adding its kernel-mode base address"
+"// Check for xor instruction against r8d, r8d"
+"// Check if running as SYSTEM or LOCAL SERVICE. If not, steal system token and impersonate LOCAL SERVICE"
+"// Construct input buffer TODO: add code to make length 0x20 for windows 11 (MAYBE, test it)"
+"// Enable privileges on a token, such as SeDebugPrivilege"
+"// Find process for token stealing, check if it belongs to target user, then duplicate its token"
+"// If driver name is correct, return its base address"
+"// If not LOCAL SERVICE, elevate privileges and steal token from svchost"
+"// If not correct token, clean up and continue to next process"
+"// Initialize struct for rootkit functionality, will be populated throughout exploit"
+"// Iterate through the list, checking each driver's name"
+"// Leak kernel memory to bypass kASLR, impersonate LOCAL SERVICE, exploit Appid driver callback"
+"// NtWriteVirtualMemory global var, initialized in main()"
+"// Shift protected signer 4 bits to the left, then add 1 (0b0001, Audit=0 and ProtectedType = 1 (light))"
+"// if targeting self, start cmd.exe to check privileges after this process closes"
+"// shift off 1 byte, then apply 32-bit mask"
+"// shift off 2 bytes, then apply 32-bit mask"
+//	Cast this to _readqword in rootk()
+//	Cast this to _writeqword in rootk()
+//	NOTE: the ExpProfileDelete gadget is contingent on the inputbuffer's kernelmode 
+//	Some of these are set before exploitation (such as myprocId) to avoid calling win32 APIs 
+//	while in a potentially 'unstable' state (ex: previousmode = kernelmode)
+// Add RVA to NT kernel base
+// Add offset from call instruction to get nt!PsSetLoadImageNotifyRoutineEx address
+// Add offset from call instruction to get nt!PspSetCreateProcessNotifyRoutine address
+// Add offset from call instruction to get nt!PspSetCreateThreadNotifyRoutine address
+// Add offset from mov instruction to KeInsertQueueApcAddr to get EtwThreatIntProvRegHandleAddr
+// Adjusting one privilege (one element of the 'Privileges' structure array)
+// Allocate TOKEN_USER struct large enough to store data
+// Allocate buffer to store LPWSTR
+// Allow IO to complete before continuing exploit (will crash if you don't)
+// Ask user for level of PS_PROTECTION to use 
+// Attempt to get handle to appid.sys to call vulnerable IOCTL
+// Attempt to obtain handle to appid.sys with LOCAL SERVICE account
+// Attempt to read IsEnabled byte from offset +0x80
+// BEGIN KASLR BYPASS FUNCTIONS /////
+// BEGIN TOKEN STEALING FUNCTIONS /////
+// Begin scanning process list
+// Break loop if list has been completely looped through (starting PID shows up again)
+// Break the loop if it goes on too long
+// CLEAN UP AND EXIT /////
+// CREATE INPUTBUFFER AND CALL IOCTL TO EXPLOIT CALLBACK OVERWRITE /////
+// Calculate length of LPWSTR needed to store user and domain names
+// Calculate the relative offset
+// Call rootkit 
+// Call rootkit functionality for post-exploitation
+// Call vulnerable IOCTL
+// Call vulnerable appid IOCTL
+// Check current user context
+// Check for mov instruction for qword pointer ending in null byte
+// Check for other errors (privilege not available for process)
+// Check if current EPROCESS is correct (read PID at +0x440)
+// Check input parameters
+// Check process name
+// Check that nt!KeInsertQueueApc isn't null
+// Check that nt!PsSetCreateProcessNotifyRoutine isn't null
+// Check that nt!PsSetCreateThreadNotifyRoutine isn't null
+// Check that nt!PsSetLoadImageNotifyRoutine isn't null
+// Check username against expected username
+// Choose payload and check for invalid input/requests to exit
+// Clean up and exit //
+// Clean up data and return
+// Clear bytes in buffers
+// Clear out all kernel callbacks
+// Close handles and revert token
+// Commented out for now in case it decrements object count too far
+// Confirm PreviousMode has been set to kernel mode (=0x0)
+// Construct input buffer
+// Construct output buffer
+// Counter to skip each invalid svchost.exe process
+// Create extra handle to increase reference count (helps avoid BSOD)
+// Define handle vars
+// Define read and write primitive functions (hDriver can be NULL in some exploits)
+// Define struct passed in from exploit (Add additional parameters if necessary)
+// Dell dbutil_2_3.sys vulnerable IOCTLs
+// Dereference pointer from PsInitialSystemProcess
+// Disable PPL on LSASS process
+// ENTER ROOTKIT POST-EXPLOITATION FUNCTIONALITY ////
+// Edit PPL by setting byte at EPROCESS+0x87a
+// Edit _SEP_TOKEN_PRIVILEGES and _SEP_AUDIT_POLICY to -1 to grant full privs
+// Elevate to SYSTEM
+// Enable SeDebugPrivilege for current token
+// Enable privilege
+// Enumerate loaded kernel drivers
+// Execute LookupAccountSidW to obtain length values of username and domain name
+// Execute NtQuerySystemInformation until there is no more data to return (0xc0000004)
+// Execute payloads until user enters 'q' command
+// Exhaust 'skips' counter 
+// Exported function to call from exploit
+// Extract parameters from exploit struct 
+// Find PsInitialSystemProcess in ntoskrnl to get pointer to SYSTEM EPROCESS (dereference with read primitive)
+// Find addresses
+// Find offset to KeInsertQueueApc in ntoskrnl.exe to disable ETWti
+// Find offset to call instruction that leads to nt!PsSetLoadImageNotifyRoutineEx
+// Find offset to call instruction that leads to nt!PspSetCreateThreadNotifyRoutine
+// Find offset to instruction that leads to thread callbacks
+// Find offset to lea instruction that leads to process callbacks
+// Find offset to mov instruction that leads to nt!EtwThreatIntProvRegHandle
+// Find offset to mov instruction that leads to nt!PspSetCreateProcessNotifyRoutine
+// For use in cases where IOCTLs must be called for every read/write 
+// Free memory
+// Get address of nt!PsSetCreateProcessNotifyRoutine 
+// Get address of nt!PsSetCreateThreadNotifyRoutine 
+// Get address of nt!PsSetLoadImageNotifyRoutine 
+// Get address of nt!PspSetCreateProcessNotifyRoutine
+// Get address of nt!PspSetCreateThreadNotifyRoutine
+// Get address of nt!PspSetLoadImageNotifyRoutine
+// Get base address of a kernel driver 
+// Get current token
+// IMPERSONATE LOCAL SERVICE USER AND OBTAIN HANDLE TO APPID.SYS /////
+// INITIALIZE EXPLOIT AND ROOTKIT STRUCT ////
+// Impersonate LOCAL SERVICE account and obtain handle to appid.sys
+// In cases like IOCTLs exposing RW
+// Include rootkit tools
+// Init variables for IOCTL call
+// Initialize NtWriteVirtualMemory function (used for write primitive)
+// Initialize global variables
+// Initialize rootkit struct
+// Iterate through names of loaded drivers
+// Iterate through returned handles to find kernel mode address for the associated object
+// LEAK KERNEL MODE ADDRESSES FOR ROOTKIT POST EX /////
+// LEAK KERNEL MODE ADDRESSES FOR ROOTKIT POST EXPLOITATION /////
+// LEAK KERNEL MODE OBJECT AND FUNCTION ADDRESSES FOR EXPLOIT /////
+// Last member of read array contains leaked bytes
+// Leak KTHREAD for current process (used to find address of PreviousMode bit)
+// Leak kernel-mode address of handle associated with given PID
+// Leak valid file handle (used to avoid BSOD in FsRtlSetKernelEaFile function)
+// List types of PS_PROTECTION
+// Load ntoskrnl into memory to find offset to nt!ExpProfileDelete function 
+// Load ntoskrnl into usermode memory to search for offsets to useful pointers
+// Lookup domain\username associated with token SID
+// Move to next EPROCESS
+// OR values together to fill least significant byte
+// Obtain LUID value for target privilege name
+// Obtain a handle to the vulnerable driver
+// Obtain base address for ntoskrnl
+// Obtain current PID to filter handles (and copy into rootkit struct)
+// Obtain current process's PID
+// Obtain current token for this thread/process
+// Obtain handle to target process
+// Obtain kernel-mode base address of ntoskrnl.exe
+// Obtain the kernel base and driver base (Requires medium integrity or higher)
+// Obtain username associated with stolen token
+// Open a handle to the primary access token from the specified process handle 
+// Open a handle to the process id to steal the primary token from
+// Open handle to token from target PID
+// POST EXPLOITATION WITH PREVIOUSMODE SET TO KERNELMODE /////
+// Pass vulnerable driver's handle to struct
+// Payload options
+// Populate struct with newly obtained addresses
+// Print user associated with token
+// Procentry vars
+// Process loop to find valid target
+// Prompt for input
+// Query info again to populate TOKEN_USER struct (pTokenInfo)
+// Query info for current token to get length
+// READ AND WRITE PRIMITIVE FUNCTIONS /////
+// Read MandatoryPolicy value of current process
+// Read next PID from EPROCESS +0x440
+// Read primitive function
+// Read qword from nt! EtwThreatIntProvRegHandle to get _ETW_REG_ENTRY
+// Read section of memory into buffer and search for opcode pattern
+// Resolve NtQuerySystemInformation API
+// Resolve kernel-mode address of ExpProfileDelete
+// Resolve kernel-mode address of out-of-context call gadget
+// Restore PreviousMode to usermode
+// Retrieve kernel base address for supplied driver name
+// Retrieve list of drivers with EnumDeviceDrivers
+// Return stolen token
+// Return to main exploit for cleanup and exit
+// Revert token and clean up handles before trying again
+// Run payload according to user input
+// Scan for supplied pattern of bytes 
+// Scan sections of supplied driver for PAGE section
+// Search sections of supplied PE to find RVA of target opcode sequence
+// Set MandatoryPolicy to 0 (zero out lowest byte)
+// Set Out-of-Context call addr to nt!ExpProfileDelete for PreviousMode decrement 
+// Set SYSTEM EPROCESS pointer
+// Set addresses for kernel callback overwrite
+// Set and read from offset to DLL image load offsets
+// Set and read from offset to process creation offsets
+// Set and read from offset to thread creation offsets
+// Set pointers for domain and user strings inside allocated memory
+// Set read and write primitive functions
+// Set target PID (only needed for some payloads)
+// Setup TOKEN_PRIVILEGES struct
+// Steal LOCAL SERVICE token from svchost.exe
+// Steal token from target PID
+// TODO: Where applicable remove hardcoded offsets in structs with instances of the legitimate structure //
+// TOKEN STEALING //////
+// To avoid using GetCurrentProcessId() in post-ex code
+// To clear DLL (image load) callbacks
+// To clear process callbacks
+// To clear thread callbacks
+// To find set ETWti bit and disable it
+// To iterate through EPROCESS list
+// Token steal vars
+// Track starting PID of process list
+// Update if new functionality added
+// Write primitive function
+// callback overwrite function ptr
+// if not turning OFF
+// increment 'skips' counter every time Appid.sys handle fails
+// just for spacing
+// offset more volatile than others
+// placeholder offset to call instruction containing addr offset
+// placeholder offset to mov instruction containing addr offset
+// previousMode at offset +0x30 passed as arg to callback func
+// read primitive
+// updated each loop
+// valid kernel ptr to file object
+// write primitive
+// zero out least significant byte

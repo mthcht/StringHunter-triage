@@ -1,0 +1,1034 @@
+    
+        
+            
+                
+                    
+                        AccessControlType.Allow)
+                       LPVOID lpReserved
+                     )
+                    // create it
+                    // ignore
+                    // set new permissions on file
+                    // simulate some other work
+                    _ = bf.Deserialize(ms)
+                    fs.Dispose()
+                    security.AddAccessRule(rule)
+                    using var ms = new MemoryStream(File.ReadAllBytes(file))
+                    var bf = new BinaryFormatter()
+                    var fs = File.Create(file)
+                    var rule = new FileSystemAccessRule(
+                    var security = new FileSecurity()
+                // execute it
+                // get func address
+                // ignore
+                // load module
+                // marshal function pointer
+                AccessControlType.Allow)
+                AccessControlType.Allow))
+                InheritanceFlags.ContainerInherit 
+                catch
+                components.Dispose()
+                if (!File.Exists(file))
+                if (badFunc() == false)
+                if (hFunc == IntPtr.Zero)
+                if (hModule == IntPtr.Zero)
+                try
+                var badFunc = Marshal.GetDelegateForFunctionPointer<BadFunc>(hFunc)
+                var hModule = Win32.LoadLibraryA(moduleName)
+                {
+                }
+              </xsd:sequence>
+              <xsd:sequence>
+            // 
+            // BadWindowsService
+            // ProjectInstaller
+            // grant full control
+            // grant full control over the service's registry key
+            // modify service binpath to be an unquoted path
+            // modify service permissions
+            // serviceInstaller1
+            // serviceProcessInstaller1
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+            : using a System.ComponentModel.TypeConverter
+            </xsd:complexType>
+            <xsd:complexType>
+            AccessControlType.Allow)
+            Directory.CreateDirectory(temp)
+            InheritanceFlags.ContainerInherit 
+            base.Dispose(disposing)
+            catch
+            if (File.Exists(file))
+            if (disposing 
+            return
+            rk.SetAccessControl(rs)
+            rs.AddAccessRule(new RegistryAccessRule(
+            security.AddAccessRule(rule)
+            this.Installers.AddRange(new System.Configuration.Install.Installer[] {
+            this.serviceInstaller1 = new System.ServiceProcess.ServiceInstaller()
+            this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic
+            this.serviceInstaller1})
+            this.serviceProcessInstaller1 = new System.ServiceProcess.ServiceProcessInstaller()
+            this.serviceProcessInstaller1.Account = System.ServiceProcess.ServiceAccount.LocalSystem
+            this.serviceProcessInstaller1.Password = null
+            this.serviceProcessInstaller1.Username = null
+            try
+            var rs = new RegistrySecurity()
+            var rule = new FileSystemAccessRule(
+            var security = new FileSecurity()
+            {
+            }
+          </xsd:element>
+        // Run installer
+        // Synchronously read the standard output of the spawned process.
+        // Verify elevation
+        // Write the redirected output to this application's window.
+        // add C:
+        // add directory to path variable
+        // copy DLL to destination
+        // copy executable to destination
+        // create C:
+        // create parent directory
+        // create service directory with full control
+        // run the loops
+        // set working directory to C:
+        // start the service
+        /// </summary>
+        /// <summary>
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// Required designer variable.
+        /// Required method for Designer support - do not modify
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        </xsd:choice>
+        <comment>This is a comment</comment>
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        Console.WriteLine(output)
+        CreateDirectoryWithFullControl(childDirectory)
+        Directory.CreateDirectory(parentDirectory)
+        InitializeComponent()
+        ServiceBase.Run(services)
+        ServiceBase[] services = [ new BadWindowsService() ]
+        Thread.Sleep(3000)
+        _cts = new CancellationTokenSource()
+        _cts.Cancel()
+        break
+        catch (Exception ex)
+        else
+        if (!Directory.Exists(temp)) 
+        if (!File.Exists(installUtilPath))
+        if (!IsElevated())
+        if (File.Exists(dll))
+        if (File.Exists(executable))
+        if (service.Status == ServiceControllerStatus.Running)
+        private System.ComponentModel.IContainer components = null
+        private System.ServiceProcess.ServiceInstaller serviceInstaller1
+        private System.ServiceProcess.ServiceProcessInstaller serviceProcessInstaller1
+        private void InitializeComponent()
+        process.Start()
+        process.StartInfo.Arguments = arguments
+        process.StartInfo.FileName = program
+        process.StartInfo.RedirectStandardOutput = true
+        process.StartInfo.UseShellExecute = false
+        process.WaitForExit()
+        protected override void Dispose(bool disposing)
+        return new WindowsPrincipal(WindowsIdentity.GetCurrent()).IsInRole(WindowsBuiltInRole.Administrator)
+        security.AddAccessRule(rule)
+        service.Start()
+        t1.Start()
+        t2.Start()
+        t3.Start()
+        t4.Start()
+        try
+        using var process = new Process()
+        var installUtilPath = RuntimeEnvironment.GetRuntimeDirectory() 
+        var output = reader.ReadToEnd()
+        var reader = process.StandardOutput
+        var rule = new FileSystemAccessRule(
+        var security = new DirectorySecurity()
+        var service = new ServiceController(svcName)
+        var t1 = new Thread(LoadDll)
+        var t2 = new Thread(RunExecutable)
+        var t3 = new Thread(DeserializeFile)
+        var t4 = new Thread(Race)
+        while (!_cts.IsCancellationRequested)
+        {
+        }
+        } 
+      </PrecompiledHeaderFile>
+      </xsd:complexType>
+      <Configuration>Debug</Configuration>
+      <Configuration>Release</Configuration>
+      <ConformanceMode>true</ConformanceMode>
+      <DependentUpon>BadWindowsService.cs</DependentUpon>
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EnableUAC>false</EnableUAC>
+      <Extensions>cpp
+      <Extensions>h
+      <Extensions>rc
+      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ModuleDefinitionFile>bad.def</ModuleDefinitionFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Platform>Win32</Platform>
+      <Platform>x64</Platform>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>NDEBUG
+      <PreprocessorDefinitions>WIN32
+      <PreprocessorDefinitions>_DEBUG
+      <SDLCheck>true</SDLCheck>
+      <SubSystem>Windows</SubSystem>
+      <SubType>Component</SubType>
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <WarningLevel>Level3</WarningLevel>
+      <xsd:complexType>
+    -->
+    ... ado.net/XML headers 
+    /// </summary>
+    /// <summary>
+    /// The main entry point for the application.
+    <!-- existing property declarations are here -->
+    </ClCompile>
+    </ClInclude>
+    </Compile>
+    </EmbeddedResource>
+    </Filter>
+    </Link>
+    </None>
+    </ProjectConfiguration>
+    </data>
+    </startup>
+    </xsd:element>
+    <AssemblyName>BadWindowsService</AssemblyName>
+    <AssemblyName>Installer</AssemblyName>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <CharacterSet>Unicode</CharacterSet>
+    <ClCompile>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>DEBUG
+    <DefineConstants>TRACE</DefineConstants>
+    <Deterministic>true</Deterministic>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <Keyword>Win32Proj</Keyword>
+    <LangVersion>12</LangVersion>
+    <Link>
+    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
+    <OutDir>..
+    <OutputPath>..
+    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformToolset>v143</PlatformToolset>
+    <Prefer32bit>false</Prefer32bit>
+    <ProjectGuid>{43A031B0-E040-4D5E-B477-02651F5E3D62}</ProjectGuid>
+    <ProjectGuid>{B474B962-A46B-4D35-86F3-E8BA120C88C0}</ProjectGuid>
+    <ProjectGuid>{af1eaeb7-74ed-4bf8-b6af-9347d81689de}</ProjectGuid>
+    <RootNamespace>BadDll</RootNamespace>
+    <RootNamespace>BadWindowsService</RootNamespace>
+    <RootNamespace>Installer</RootNamespace>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <WarningLevel>4</WarningLevel>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <attachedFolders />
+    <explicitExcludes />
+    <explicitIncludes />
+    <startup> 
+    <value>2.0</value>
+    <value>False</value>
+    <value>text/microsoft-resx</value>
+    Classes that don't support this are serialized and stored with the 
+    Example:
+    Microsoft ResX Schema 
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    ResXResourceReader how to depersist the object. This is currently not 
+    The primary goals of this format is to allow a simple XML format 
+    Version 2.0
+    [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+    associated with the data types.
+    case DLL_PROCESS_ATTACH:
+    case DLL_PROCESS_DETACH:
+    case DLL_THREAD_ATTACH:
+    case DLL_THREAD_DETACH:
+    extensible. For a given mimetype the value must be set accordingly:
+    mimetype set.
+    mimetype: application/x-microsoft.net.object.binary.base64
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    mimetype: application/x-microsoft.net.object.soap.base64
+    name/value pairs.
+    partial class BadWindowsService
+    partial class ProjectInstaller
+    private CancellationTokenSource _cts
+    private delegate bool BadFunc()
+    private static bool IsElevated()
+    private static void CreateDirectoryWithFullControl(string path)
+    private void DeserializeFile()
+    private void LoadDll()
+    private void Race()
+    private void RunExecutable()
+    protected override void OnStart(string[] args)
+    protected override void OnStop()
+    public BadWindowsService()
+    public ProjectInstaller()
+    public static extern IntPtr LoadLibraryA(string lpFileName)
+    public static void Main()
+    public static void Main(string[] args)
+    read any of the formats listed below.
+    return TRUE
+    switch (ul_reason_for_call)
+    text/value conversion through the TypeConverter architecture. 
+    that is mostly human readable. The generation and parsing of the 
+    type or mimetype. Type corresponds to a .NET class that support 
+    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized with 
+    various data types are done through the TypeConverter classes 
+    {
+    }
+   BadFunc
+  <!-- 
+  </ImportGroup>
+  </ItemDefinitionGroup>
+  </ItemGroup>
+  </PropertyGroup>
+  </component>
+  </metadata>
+  </resheader>
+  </xsd:schema>
+  <ItemGroup>
+  <PropertyGroup>
+ !tools/packages.config
+ (components != null))
+ (https://github.com/github/gitignore/pull/1529
+ (https://github.com/github/gitignore/pull/2483
+ .NET Core
+ ASP.NET Scaffolding
+ AxoCover is a Code Coverage Tool
+ Azure Stream Analytics local run output
+ Backup 
+ Backup folder for Package Reference Convert tool in Visual Studio 2017
+ Bad Windows Service
+ BeatPulse healthcheck temp database
+ Benchmark Results
+ BizTalk build output
+ Build Results of an ATL Project
+ Build results
+ Business Intelligence projects
+ Cake - Uncomment if you are using it
+ Chutzpah Test files
+ Click-Once directory
+ CodeRush personal settings
+ DocProject is a documentation generator add-in
+ DotCover is a Code Coverage Tool
+ FAKE - F
+ Files built by Visual Studio
+ Files/
+ Fody - auto-generated XML schema
+ Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+ GhostDoc plugin setting file
+ Guidance Automation Toolkit
+ Hijack Execution Flow: DLL Search Order Hijacking ([T1574.001](https://attack.mitre.org/techniques/T1574/001/)).
+ Hijack Execution Flow: Path Interception by PATH Environment Variable ([T1574.007](https://attack.mitre.org/techniques/T1574/007/)).
+ Hijack Execution Flow: Path Interception by Search Order Hijacking ([T1574.008](https://attack.mitre.org/techniques/T1574/008/)).
+ Hijack Execution Flow: Path Interception by Unquoted Path ([T1574.009](https://attack.mitre.org/techniques/T1574/009/)).
+ Hijack Execution Flow: Services File Permissions Weakness ([T1574.010](https://attack.mitre.org/techniques/T1574/010/)).
+ Hijack Execution Flow: Services Registry Permissions Weakness ([T1574.011](https://attack.mitre.org/techniques/T1574/011/)).
+ Including strong name files can present a security risk
+ Installshield output folder
+ Ionide (cross platform F
+ JetBrains Rider
+ Local History for Visual Studio
+ Local History for Visual Studio Code
+ MFractors (Xamarin productivity tool) working folder
+ MSBuild Binary and Structured Log
+ MSTest test Results
+ Make
+ Microsoft Azure Build Output
+ Microsoft Azure Emulator
+ Microsoft Azure Web App publish settings. Comment the next line if you want to
+ Microsoft Fakes
+ MightyMoose
+ Mono auto generated files
+ NCrunch
+ NUnit
+ NVidia Nsight GPU debugger configuration file
+ Node.js Tools for Visual Studio
+ NuGet Packages
+ NuGet Symbol Packages
+ NuGet v3's project.json files produces more ignorable files
+ OpenCover UI analysis results
+ Others
+ Paket dependency manager
+ Publish Web Output
+ Python Tools for Visual Studio (PTVS)
+ RIA/Silverlight projects
+ ReSharper is a .NET coding add-in
+ SQL Server files
+ StyleCop
+ TFS 2012 Local Workspace
+ Tabs Studio
+ TeamCity is a build add-in
+ Telerik's JustMock configuration file
+ The packages folder can be ignored because of Package Restore
+ Uncomment if necessary however generally it will be regenerated when needed
+ Uncomment if you have tasks that create the project's static files in wwwroot
+ User-specific files
+ User-specific files (MonoDevelop/Xamarin Studio)
+ VS Code files for those working on multiple tools
+ VS Code tools) working folder
+ Visual C
+ Visual Studio 2015/2017 cache/options directory
+ Visual Studio 2017 auto generated files
+ Visual Studio 6 auto-generated project file (contains which files were open etc.)
+ Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+ Visual Studio 6 build log
+ Visual Studio 6 technical files
+ Visual Studio 6 workspace and project file (working project files containing files to include in project)
+ Visual Studio 6 workspace options file
+ Visual Studio History (VSHistory) files
+ Visual Studio LightSwitch build output
+ Visual Studio Trace Files
+ Visual Studio Version 17
+ Visual Studio cache files
+ Visual Studio code coverage results
+ Visual Studio profiler
+ Web workbench (sass)
+ Windows Installer files from build outputs
+ Windows Store app package directories and files
+ because we have git 
+ but database connection strings (with potential passwords) will be unencrypted
+ but keep track of directories ending in .cache
+ cache files
+ files ending in .cache can be ignored
+ files generated by popular Visual Studio add-ons.
+ in these scripts will be unencrypted
+ report files from converting an old project file
+ schema ...
+ tools/
+!.axoCover/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!Directory.Build.rsp
+"                        FileSystemRights.FullControl, "
+"                        new SecurityIdentifier(WellKnownSidType.AuthenticatedUserSid, null),"
+"                       DWORD  ul_reason_for_call,"
+"                    File.SetAccessControl(file, security)"
+"                    Thread.Sleep(new TimeSpan(0, 0, 0, 0, 500))"
+"                    throw new ApplicationException(""Result from BadFunc was false."")"
+"                    throw new ApplicationException($""{funcName} not found."")"
+"                    throw new DllNotFoundException($""{moduleName} not found."")"
+"                <xsd:element name=""comment"" type=""xsd:string"" minOccurs=""0"" msdata:Ordinal=""2"" />"
+"                <xsd:element name=""value"" type=""xsd:string"" minOccurs=""0"" />"
+"                <xsd:element name=""value"" type=""xsd:string"" minOccurs=""0"" msdata:Ordinal=""1"" />"
+"                FileSystemRights.FullControl, "
+"                Process.Start(""cmd.exe"", ""/c exit"")"
+"                PropagationFlags.None,"
+"                RegistryRights.FullControl,"
+"                new SecurityIdentifier(WellKnownSidType.AuthenticatedUserSid, null),"
+"                var hFunc = Win32.GetProcAddress(hModule, funcName)"
+"              <xsd:attribute name=""alias"" type=""xsd:string"" />"
+"              <xsd:attribute name=""mimetype"" type=""xsd:string"" />"
+"              <xsd:attribute name=""mimetype"" type=""xsd:string"" msdata:Ordinal=""4"" />"
+"              <xsd:attribute name=""name"" type=""xsd:string"" />"
+"              <xsd:attribute name=""name"" type=""xsd:string"" use=""required"" />"
+"              <xsd:attribute name=""name"" type=""xsd:string"" use=""required"" msdata:Ordinal=""1"" />"
+"              <xsd:attribute name=""name"" use=""required"" type=""xsd:string"" />"
+"              <xsd:attribute name=""type"" type=""xsd:string"" />"
+"              <xsd:attribute name=""type"" type=""xsd:string"" msdata:Ordinal=""3"" />"
+"              <xsd:attribute ref=""xml:space"" />"
+"            Console.Error.WriteLine(""[!] Service binpath modification failed: {0}"", ex.Message)"
+"            Console.Error.WriteLine(""[!] Service permissions modification failed: {0}"", ex.Message)"
+"            Console.Error.WriteLine(""[!] Service registry permissions modification failed: {0}"", ex.Message)"
+"            Console.Error.WriteLine(""[X] Could not locate InstallUtil.exe"")"
+"            Console.Error.WriteLine(""[X] Dll not found in current working directory"")"
+"            Console.Error.WriteLine(""[X] Service executable not found in current working directory"")"
+"            Console.Error.WriteLine(""[X] Service failed to start"")"
+"            Console.Error.WriteLine(""[X] Service installation failed: {0}"", ex.Message)"
+"            Console.Error.WriteLine(""[X] The installer must be launched in an elevated context"")"
+"            Console.WriteLine(""["
+"            File.Copy(dll, dllPath, true)"
+"            File.Copy(executable, exePath, true)"
+"            File.SetAccessControl(exePath, security)"
+"            FileSystemRights.FullControl, "
+"            PropagationFlags.None, "
+"            RunCommandWriteOutput(""sc.exe"", $""config {svcName} binpath= "
+"            RunCommandWriteOutput(""sc.exe"", $""sdset {svcName} "
+"            RunCommandWriteOutput(installUtilPath, $"""
+"            Thread.Sleep(new TimeSpan(0, 0, 30))"
+"            Thread.Sleep(new TimeSpan(0, 1, 0))"
+"            new SecurityIdentifier(WellKnownSidType.AuthenticatedUserSid, null), "
+"            this.ServiceName = ""BadWindowsService"""
+"            this.serviceInstaller1.Description = ""This service is vulnerable to several privilege escalation attacks"""
+"            this.serviceInstaller1.DisplayName = ""BadWindowsService"""
+"            this.serviceInstaller1.ServiceName = ""BadWindowsService"""
+"            this.serviceProcessInstaller1,"
+"            var rk = Registry.LocalMachine.OpenSubKey($@""SYSTEM"
+"          <xsd:element name=""assembly"">"
+"          <xsd:element name=""data"">"
+"          <xsd:element name=""metadata"">"
+"          <xsd:element name=""resheader"">"
+"        /// <param name=""disposing"">true if managed resources should be disposed"
+"        <supportedRuntime version=""v4.0"" sku="".NETFramework,Version=v4.8.1"" />"
+"        <xsd:choice maxOccurs=""unbounded"">"
+"        Console.WriteLine(""["
+"        Console.WriteLine($""["
+"        Directory.CreateDirectory(path, security)"
+"        Directory.SetCurrentDirectory(@""C:"
+"        Environment.SetEnvironmentVariable(""PATH"", $""{path}"
+"        Environment.SetEnvironmentVariable(""PATH"", newPath)"
+"        const string childDirectory = $@""{parentDirectory}"
+"        const string dll = ""BadDll.dll"""
+"        const string dllPath = $@""{parentDirectory}"
+"        const string exePath = $@""{childDirectory}"
+"        const string executable = ""BadWindowsService.exe"""
+"        const string file = ""data.bin"""
+"        const string funcName = ""BadFunc"""
+"        const string moduleName = ""BadDll.dll"""
+"        const string parentDirectory = @""C:"
+"        const string svcName = ""BadWindowsService"""
+"        const string temp = @""C:"
+"        var currentPath = Environment.GetEnvironmentVariable(""PATH"")"
+"        var newPath = $@""C:"
+"        var path = Environment.GetEnvironmentVariable(""PATH"", EnvironmentVariableTarget.Machine)"
+"    <ClCompile Include=""bad.cpp"" />"
+"    <ClCompile Include=""bad.cpp"">"
+"    <ClCompile Include=""dllmain.cpp"" />"
+"    <ClCompile Include=""dllmain.cpp"">"
+"    <ClInclude Include=""bad.h"" />"
+"    <ClInclude Include=""bad.h"">"
+"    <Compile Include=""BadWindowsService.Designer.cs"">"
+"    <Compile Include=""BadWindowsService.cs"">"
+"    <Compile Include=""Program.cs"" />"
+"    <Compile Include=""ProjectInstaller.Designer.cs"">"
+"    <Compile Include=""ProjectInstaller.cs"">"
+"    <Compile Include=""Properties"
+"    <Compile Include=""Win32.cs"" />"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <EmbeddedResource Include=""BadWindowsService.resx"">"
+"    <EmbeddedResource Include=""ProjectInstaller.resx"">"
+"    <Filter Include=""Header Files"">"
+"    <Filter Include=""Resource Files"">"
+"    <Filter Include=""Source Files"">"
+"    <Import Project=""$(UserRootDir)"
+"    <None Include=""App.config"" />"
+"    <None Include=""bad.def"" />"
+"    <None Include=""bad.def"">"
+"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>"
+"    <ProjectConfiguration Include=""Debug"
+"    <ProjectConfiguration Include=""Release"
+"    <Reference Include=""Microsoft.CSharp"" />"
+"    <Reference Include=""System"" />"
+"    <Reference Include=""System.Configuration.Install"" />"
+"    <Reference Include=""System.Core"" />"
+"    <Reference Include=""System.Data"" />"
+"    <Reference Include=""System.Data.DataSetExtensions"" />"
+"    <Reference Include=""System.Management"" />"
+"    <Reference Include=""System.Net.Http"" />"
+"    <Reference Include=""System.ServiceProcess"" />"
+"    <Reference Include=""System.Xml"" />"
+"    <Reference Include=""System.Xml.Linq"" />"
+"    <data name=""Bitmap1"" mimetype=""application/x-microsoft.net.object.binary.base64"">"
+"    <data name=""Color1"" type=""System.Drawing.Color, System.Drawing"">Blue</data>"
+"    <data name=""Icon1"" type=""System.Drawing.Icon, System.Drawing"" mimetype=""application/x-microsoft.net.object.bytearray.base64"">"
+"    <data name=""Name1""><value>this is my long string</value><comment>this is a comment</comment></data>"
+"    <resheader name=""reader"">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>"
+"    <resheader name=""resmimetype"">text/microsoft-resx</resheader>"
+"    <resheader name=""version"">2.0</resheader>"
+"    <resheader name=""writer"">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>"
+"    <value>17, 17</value>"
+"    <value>196, 17</value>"
+"    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>"
+"    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>"
+"    <xsd:element name=""root"" msdata:IsDataSet=""true"">"
+"    <xsd:import namespace=""http://www.w3.org/XML/1998/namespace"" />"
+"    Each data row contains a name, and value. The row also contains a "
+"    The mimetype is used for serialized objects, and tells the "
+"    There are any number of ""resheader"" rows that contain simple "
+"    [DllImport(""kernel32"", CharSet = CharSet.Ansi)]"
+"    private static void RunCommandWriteOutput(string program, string arguments)"
+"    public static extern IntPtr GetProcAddress(IntPtr hModule, string lpProcName)"
+"    that the ResXResourceWriter will generate, however the reader can "
+"  2022"")]"
+"  <Import Project=""$(MSBuildExtensionsPath)"
+"  <Import Project=""$(MSBuildToolsPath)"
+"  <Import Project=""$(VCTargetsPath)"
+"  <ImportGroup Label=""ExtensionSettings"">"
+"  <ImportGroup Label=""ExtensionTargets"">"
+"  <ImportGroup Label=""PropertySheets"" Condition=""'$(Configuration)"
+"  <ImportGroup Label=""Shared"">"
+"  <ItemDefinitionGroup Condition=""'$(Configuration)"
+"  <ItemGroup Label=""ProjectConfigurations"">"
+"  <PropertyGroup Condition="" '$(Configuration)"
+"  <PropertyGroup Condition=""'$(Configuration)"
+"  <PropertyGroup Label=""Globals"">"
+"  <PropertyGroup Label=""UserMacros"" />"
+"  <component name=""UserContentModel"">"
+"  <metadata name=""$this.TrayLargeIcon"" type=""System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"">"
+"  <metadata name=""serviceInstaller1.TrayLocation"" type=""System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"">"
+"  <metadata name=""serviceProcessInstaller1.TrayLocation"" type=""System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"">"
+"  <resheader name=""reader"">"
+"  <resheader name=""resmimetype"">"
+"  <resheader name=""version"">"
+"  <resheader name=""writer"">"
+"  <xsd:schema id=""root"" xmlns="""" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:msdata=""urn:schemas-microsoft-com:xml-msdata"">"
+" ""InstallUtil.exe"""
+" Coverlet is a free, cross platform Code Coverage Tool"
+" Ignore Visual Studio temporary files, build results, and"
+" InheritanceFlags.ObjectInherit,"
+" Note: Comment the next line if you want to checkin your web deploy settings,"
+" Since there are multiple workflows, uncomment next line to ignore bower_components"
+" but not Directory.Build.rsp, as it configures directory-level build defaults"
+" checkin your Azure Web App publish settings, but sensitive information contained"
+" except build/, which is used as an MSBuild target."
+" otherwise, false.</param>"
+" to a newer Visual Studio version. Backup files are not needed,"
+"""D:PAI(A"
+"""{exePath}"
+"// COM, set the ComVisible attribute to true on that type."
+"// [assembly: AssemblyVersion(""1.0."
+"<Project DefaultTargets=""Build"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Project ToolsVersion=""15.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Project ToolsVersion=""4.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<project version=""4"">"
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+"AnyCPU' "">"
+"AssemblyInfo.cs"" />"
+"BOOL APIENTRY DllMain( HMODULE hModule,"
+"Bad Windows Service"""
+"BadDll.vcxproj"", ""{AF1EAEB7-74ED-4BF8-B6AF-9347D81689DE}"""
+"BadWindowsService.csproj"", ""{43A031B0-E040-4D5E-B477-02651F5E3D62}"""
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,"
+"Installer.csproj"", ""{B474B962-A46B-4D35-86F3-E8BA120C88C0}"""
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.CSharp.targets"" />"
+"Microsoft.Common.props"" Condition=""Exists('$(MSBuildExtensionsPath)"
+"Microsoft.Common.props')"" />"
+"Microsoft.Cpp.$(Platform).user.props"" Condition=""exists('$(UserRootDir)"
+"Microsoft.Cpp.$(Platform).user.props')"" Label=""LocalAppDataPlatform"" />"
+"Microsoft.Cpp.Default.props"" />"
+"Microsoft.Cpp.props"" />"
+"Microsoft.Cpp.targets"" />"
+"Permission is hereby granted, free of charge, to any person obtaining a copy"
+"Project(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"") = ""BadDll"", ""BadDll"
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""BadWindowsService"", ""BadWindowsService"
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""Installer"", ""Installer"
+"Service Executable"""
+"THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+"Temp"""
+"Temp"")"
+"The Installer project installs the service in the designated path with some of the above misconfigurations, and must be launched in an elevated context."
+"This project is an insecurely implemented and configured Windows service, vulnerable to the following attacks:"
+"Win32"">"
+"Win32'"" Label=""Configuration"">"
+"Win32'"">"
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""Copyright "
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")]"
+"[assembly: AssemblyProduct(""BadWindowsService"")]"
+"[assembly: AssemblyProduct(""Installer"")]"
+"[assembly: AssemblyTitle(""BadWindowsService"")]"
+"[assembly: AssemblyTitle(""Installer"")]"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0.0.0"")]"
+"[assembly: Guid(""43a031b0-e040-4d5e-b477-02651f5e3d62"")]"
+"[assembly: Guid(""b474b962-a46b-4d35-86f3-e8ba120c88c0"")]"
+"] Added {parentDirectory} to machine PATH variable"")"
+"] Copied {0} to {1}"", dll, dllPath)"
+"] Copied {0} to {1}"", executable, exePath)"
+"] Created folder {0}"", childDirectory)"
+"] Created folder {0}"", parentDirectory)"
+"] Granted AuthenticatedUserSid Full Control on the service's Registry key"")"
+"] Granted AuthenticatedUserSid Full Control"")"
+"] Granted AuthenticatedUserSid control on the service"")"
+"] Service binpath is now unquoted"")"
+"] Service installed"")"
+"] Service started!"")"
+"copies of the Software, and to permit persons to whom the Software is"
+"furnished to do so, subject to the following conditions:"
+"in the Software without restriction, including without limitation the rights"
+"include ""bad.h"""
+"of this software and associated documentation files (the ""Software""), to deal"
+"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"
+"x64"">"
+"x64'"" Label=""Configuration"">"
+"x64'"">"
+"xml version=""1.0"" encoding=""UTF-8"""
+"xml version=""1.0"" encoding=""utf-8"" "
+"xml version=""1.0"" encoding=""utf-8"""
+"{currentPath}"""
+"{dll}"""
+"{executable}"""
+"{parentDirectory}"", EnvironmentVariableTarget.Machine)"
+"{svcName}"", true)"
+$(MSBuildToolsVersion)
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+$(Platform)'=='Debug
+$(Platform)'=='Release
+$tf/
+%(PreprocessorDefinitions)</PreprocessorDefinitions>
+' as shown below:
+- [Bb]ackup ([0-9]).rdl
+- [Bb]ackup ([0-9][0-9]).rdl
+- [Bb]ackup.rdl
+.DesktopClient/GeneratedArtifacts
+.DesktopClient/ModelManifest.xml
+.DotSettings.user
+.GhostDoc.xml
+.HTMLClient/GeneratedArtifacts
+.HxC
+.HxT
+.Server/GeneratedArtifacts
+.Server/ModelManifest.xml
+.VC.VC.opendb
+.VC.db
+.VisualState.xml
+.XML
+.[Cc]ache
+.[Cc]ache/
+.[Pp]ublish.xml
+.[Rr]e[Ss]harper
+.appx
+.appxbundle
+.appxupload
+.aps
+.axoCover/
+.azurePubxml
+.bim.layout
+.bim_
+.binlog
+.btm.cs
+.btp.cs
+.build.csdef
+.builds
+.cab
+.cachefile
+.code-workspace
+.coverage
+.coveragexml
+.cr/personal
+.dbmdl
+.dbproj.schemaview
+.dotCover
+.dsp
+.dsw
+.e2e
+.fake/
+.gpState
+.hhc
+.hhk
+.hhp
+.history/
+.htm
+.ilk
+.info
+.iobj
+.ionide/
+.ipdb
+.jfm
+.jmconfig
+.json
+.ldf
+.local.xml
+.localhistory/
+.log
+.mdf
+.meta
+.mfractor/
+.mm.
+.msi
+.msix
+.msm
+.msp
+.ncb
+.ndf
+.ntvs_analysis.dat
+.nuget.props
+.nuget.targets
+.nupkg
+.nvuser
+.obj
+.odx.cs
+.opendb
+.opensdf
+.opt
+.paket/paket.exe
+.pch
+.pdb
+.pfx
+.pgc
+.pgd
+.pidb
+.plg
+.psess
+.publishproj
+.publishsettings
+.pubxml
+.pyc
+.rdl.data
+.rptproj.bak
+.rptproj.rsuser
+.rsp
+.rsuser
+.sap
+.sass-cache/
+.sbr
+.scc
+.sdf
+.settings
+.sln.docstates
+.sln.iml
+.snk
+.snupkg
+.suo
+.svclog
+.tlb
+.tlh
+.tli
+.tlog
+.tmp
+.tmp_proj
+.tss
+.user
+.userosscache
+.userprefs
+.vbp
+.vbw
+.vs/
+.vscode/
+.vshistory/
+.vsp
+.vspscc
+.vspx
+.vssscc
+.xml
+.xsd.cs
+//      Build Number
+//      Major Version
+//      Minor Version
+//      Revision
+// General Information about an assembly is controlled through the following
+// Setting ComVisible to false makes the types in this assembly not visible
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// Version information for an assembly consists of the following four values:
+// You can specify all the values or you can default the Build and Revision Numbers
+// associated with an assembly.
+// by using the '
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from
+/[Pp]ackages/
+/[Pp]ackages/build/
+/[Pp]ackages/repositories.config
+</OutputPath>
+</Project>
+</configuration>
+</project>
+</root>
+<configuration>
+<root>
+ASALocalRun/
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+AppPackages/
+AutoTest.Net/
+BADDLL_EXPORTS
+Backup
+BenchmarkDotNet.Artifacts/
+BundleArtifacts/
+ClientBin/
+Copyright (c) 2022 Elad Shamir
+CurrentControlSet
+Debug
+Debug</OutDir>
+DocProject/Help/
+DocProject/Help/Html2
+DocProject/Help/html
+DocProject/buildhelp/
+EXPORTS
+EndGlobal
+EndGlobalSection
+EndProject
+Exploitation of this service results in local elevation of privileges to the security context of LocalSystem.
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+FakesAssemblies/
+FodyWeavers.xsd
+Generated
+Generated_Code/
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+HideSolutionNode = FALSE
+LIBRARY
+MIT License
+MigrationBackup/
+MinimumVisualStudioVersion = 10.0.40219.1
+NDEBUG
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+OpenCover/
+Package.StoreAssociation.xml
+Program Files
+PublishScripts/
+Release
+Release</OutDir>
+SOFTWARE.
+ScaffoldingReadMe.txt
+ServiceFabricBackup/
+Services
+SolutionGuid = {7C91872E-15DA-4DE2-80CF-7107A600FF59}
+StyleCopReport.xml
+TEMP
+TRACE</DefineConstants>
+Temp
+Temp to the start of the PATH environment variable
+TestResult.xml
+The BadWindowsService project is implements a a service with some of the above vulnerabilities.
+The above copyright notice and this permission notice shall be included in all
+UpgradeLog
+VisualStudioVersion = 17.2.32630.192
+Win32
+Windows
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Bb]uild[Ll]og.
+[Dd]ebug/
+[Dd]ebugPS/
+[Dd]ebugPublic/
+[Ee]xpress/
+[Ll]og/
+[Ll]ogs/
+[Oo]bj/
+[Rr]elease/
+[Rr]eleasePS/
+[Rr]eleases/
+[RunInstaller(true)]
+[Tt]est[Rr]esult
+[Ww][Ii][Nn]32/
+[assembly: ComVisible(false)]
+_Chutzpah
+_DEBUG
+_NCrunch_
+_Pvt_Extensions
+_ReSharper
+_TeamCity
+_USRDLL
+_UpgradeReport_Files/
+_WINDOWS
+__pycache__/
+_h.h
+_i.c
+_p.c
+_pkginfo.txt
+_wpftmp.csproj
+artifacts/
+asmx</Extensions>
+bld/
+bool BadFunc() {
+bool BadFunc(void)
+bower_components/
+copies or substantial portions of the Software.
+coverage
+cppm
+crunch
+csx/
+define WIN32_LEAN_AND_MEAN
+dlldata.c
+ecf/
+endregion
+healthchecksdb
+include <windows.h>
+internal static class Program
+ipch/
+issue-259490424)
+issuecomment-104372622)
+jpeg
+mfcribbon-ms</Extensions>
+mono_crash.
+nCrunchTemp_
+namespace BadWindowsService
+namespace Installer
+node_modules/
+nunit-
+orleans.codegen.cs
+paket-files/
+pragma once
+project.fragment.lock.json
+project.lock.json
+public partial class BadWindowsService : ServiceBase
+public partial class ProjectInstaller : Installer
+public static class Win32
+publish/
+rcf/
+region Component Designer generated code
+resx
+return true
+tiff
+using Microsoft.Win32
+using System
+using System.ComponentModel
+using System.Configuration.Install
+using System.Diagnostics
+using System.IO
+using System.Reflection
+using System.Runtime.CompilerServices
+using System.Runtime.InteropServices
+using System.Runtime.Serialization.Formatters.Binary
+using System.Security.AccessControl
+using System.Security.Principal
+using System.ServiceProcess
+using System.Threading
+wwwroot/
+x64 = Debug
+x64 = Release
+x64.ActiveCfg = Debug
+x64.ActiveCfg = Release
+x64.Build.0 = Debug
+x64.Build.0 = Release
+x64/
+x86 = Debug
+x86 = Release
+x86.ActiveCfg = Debug
+x86.ActiveCfg = Release
+x86.Build.0 = Debug
+x86.Build.0 = Release
+x86/
+xsd</Extensions>
+{43A031B0-E040-4D5E-B477-02651F5E3D62}.Debug
+{43A031B0-E040-4D5E-B477-02651F5E3D62}.Release
+{AF1EAEB7-74ED-4BF8-B6AF-9347D81689DE}.Debug
+{AF1EAEB7-74ED-4BF8-B6AF-9347D81689DE}.Release
+{B474B962-A46B-4D35-86F3-E8BA120C88C0}.Debug
+{B474B962-A46B-4D35-86F3-E8BA120C88C0}.Release

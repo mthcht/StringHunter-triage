@@ -1,0 +1,3 @@
+"                        Console.WriteLine(""[!] For alternative credentials a username and password must be specified"");"
+"        LOGON32_LOGON_NEW_CREDENTIALS = 9,"
+"        bool logon = Interop.LogonUser(username, domain, password, (int)LogonType.LOGON32_LOGON_NEW_CREDENTIALS, (int)LogonProvider.LOGON32_PROVIDER_DEFAULT, ref intPtr);"

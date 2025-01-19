@@ -1,0 +1,152 @@
+"{ $_.DoesNotRequirePreAuth -eq ""True"" -and $_.Enabled -eq ""True"" "
+"{ $_.ObjectClass -eq ""group"" "
+"{ $_.ObjectClass -eq ""user"" "
+"{ $running = $true ; Write-Both ""[*] Accounts Audit"" ; Get-InactiveAccounts ; Get-DisabledAccounts ; Get-LockedAccounts ; Get-AdminAccountChecks ; Get-NULLSessions ; Get-PrivilegedGroupAccounts ; Get-ProtectedUsers "
+"{ $running = $true ; Write-Both ""[*] Check For Existence DNS Zones allowing insecure updates"" ; Get-DNSZoneInsecure "
+"{ $running = $true ; Write-Both ""[*] Check For Existence of Authentication Polices and Silos"" ; Get-AuthenticationPoliciesAndSilos "
+"{ $running = $true ; Write-Both ""[*] Check For Existence of LAPS in domain"" ; Get-LAPSStatus "
+"{ $running = $true ; Write-Both ""[*] Check For newly created users and groups""                ; Get-RecentChanges "
+"{ $running = $true ; Write-Both ""[*] Check Generic Group AD Permissions"" ; Get-OUPerms "
+"{ $running = $true ; Write-Both ""[*] Check for ADCS Vulnerabilities""                          ; Get-ADCSVulns "
+"{ $running = $true ; Write-Both ""[*] Check for LDAP Security Issues""                          ; Get-LDAPSecurity "
+"{ $running = $true ; Write-Both ""[*] Check for accounts with kerberos pre-auth""               ; Get-ADUsersWithoutPreAuth "
+"{ $running = $true ; Write-Both ""[*] Check for dangerous ACL permissions on Computers, Users and Groups""  ; Find-DangerousACLPermissions "
+"{ $running = $true ; Write-Both ""[*] Check high value kerberoastable user accounts""           ; Get-SPNs "
+"{ $running = $true ; Write-Both ""[*] Computer Objects Audit"" ; Get-OldBoxes "
+"{ $running = $true ; Write-Both ""[*] Device Information"" ; Get-HostDetails "
+"{ $running = $true ; Write-Both ""[*] Domain Audit"" ; Get-LastWUDate ; Get-DCEval ; Get-TimeSource ; Get-PrivilegedGroupMembership ; Get-MachineAccountQuota; Get-DefaultDomainControllersPolicy ; Get-SMB1Support ; Get-FunctionalLevel ; Get-DCsNotOwnedByDA ; Get-ReplicationType ; Check-Shares ; Get-RecycleBinState ; Get-CriticalServicesStatus ; Get-RODC "
+"{ $running = $true ; Write-Both ""[*] Domain Trust Audit"" ; Get-DomainTrusts "
+"{ $running = $true ; Write-Both ""[*] GPO audit (and checking SYSVOL for passwords)"" ; Get-GPOtoFile ; Get-GPOsPerOU ; Get-SYSVOLXMLS; Get-GPOEnum "
+"{ $running = $true ; Write-Both ""[*] Installing optionnal features""                           ; Install-Dependencies "
+"{ $running = $true ; Write-Both ""[*] Password Information Audit"" ; Get-AccountPassDontExpire ; Get-UserPasswordNotChangedRecently ; Get-PasswordPolicy ; Get-PasswordQuality "
+"{ $running = $true ; Write-Both ""[*] Trying to save NTDS.dit, please wait..."" ; Get-NTDSdit "
+"{ $selectedChecks = $select.Split(',') "
+"{ ($_.ActiveDirectoryRights -ne 'GenericRead') -and ($_.ActiveDirectoryRights -ne 'GenericExecute') -and ($_.ActiveDirectoryRights -ne 'ExtendedRight') -and ($_.ActiveDirectoryRights -ne 'ReadControl') -and ($_.ActiveDirectoryRights -ne 'ReadProperty') -and ($_.ActiveDirectoryRights -ne 'ListObject') -and ($_.ActiveDirectoryRights -ne 'ListChildren') -and ($_.ActiveDirectoryRights -ne 'ListChildren, ReadProperty, ListObject') -and ($_.ActiveDirectoryRights -ne 'ReadProperty, GenericExecute') -and ($_.AccessControlType -ne 'Deny') "
+"{ ($_.IdentityReference -eq ""$AuthenticatedUsers"") -or ($_.IdentityReference -eq ""$EveryOne"") -or ($_.IdentityReference -like ""*\$DomainUsers"") -or ($_.IdentityReference -eq ""BUILTIN\$Users"") "
+"{ Add-Content -Path ""$outputdir\new_groups.txt"" -Value ""Group $($newGroup.SamAccountName) was created $($newGroup.whenCreated)"" "
+"{ Add-Content -Path ""$outputdir\new_users.txt"" -Value ""Account $($newUser.SamAccountName) was created $($newUser.whenCreated)"" "
+"{ Label = ""Allowed Group""; Expression = { $_.IdentityReference "
+"{ Label = ""Computer Name""; Expression = { $_.ObjectName "
+"{ Label = ""Group Name""; Expression = { $_.ObjectName "
+"{ Label = ""Type""; Expression = { ""Computer"" "
+"{ Label = ""Type""; Expression = { ""Group"" "
+"{ Label = ""Type""; Expression = { ""User"" "
+"{ Label = ""User""; Expression = { $_.ObjectName "
+"{ Name = ""Groups""; Expression = { $groups.Name -join ',' "
+"{ New-Item -ItemType Directory -Path ""$outputdir\sysvol"" | Out-Null "
+"{ OperatingSystem -Like ""*2003*"" -and Enabled -eq ""true"" -or OperatingSystem -Like ""*XP*"" -and Enabled -eq ""true"" -or OperatingSystem -Like ""*2000*"" -and Enabled -eq ""true"" -or OperatingSystem -like '*Windows 7*' -and Enabled -eq ""true"" -or OperatingSystem -like '*vista*' -and Enabled -eq ""true"" -or OperatingSystem -like '*2008*' -and Enabled -eq ""true"" -or OperatingSystem -like '*2012*' -and Enabled -eq ""true"""
+"{ PwdLastSet -lt $DaysAgo -and Enabled -eq ""true"" "
+"{ Remove-Item ""$outputdir\GPOReport.html"" -Recurse "
+"{ Remove-Item ""$outputdir\GPOReport.xml"" -Recurse "
+"{ Remove-Item ""$outputdir\ntds.dit"" -Recurse "
+"{ Remove-Item -recurse ""$outputdir\adaudit.nessus"" | Out-Null "
+"{ SamAccountName -eq ""krbtgt"" "
+"{ Set-PSRepository -Name ""PSGallery"" -InstallationPolicy Trusted "
+"{ Site -like ""*"" "
+"{ Write-Both ""            [-] $($_.Name) has $($_.OperatingSystem)"" "
+"{ Write-Both ""        [!] NETLOGON share is missing on $DC!"" "
+"{ Write-Both ""        [!] SYSVOL share is missing on $DC!"" "
+"{ Write-Both ""        [+] Domain controllers with WS 2003""    ; $ADs | Where-Object { $_.OperatingSystem -Match '2003' "
+"{ Write-Both ""        [+] Domain controllers with WS 2008 R2"" ; $ADs | Where-Object { $_.OperatingSystem -Match '2008 R2' "
+"{ Write-Both ""        [+] Domain controllers with WS 2008""    ; $ADs | Where-Object { $_.OperatingSystem -Match '2008 !(R2)' "
+"{ Write-Both ""        [+] Domain controllers with WS 2012 R2"" ; $ADs | Where-Object { $_.OperatingSystem -Match '2012 R2' "
+"{ Write-Both ""        [+] Domain controllers with WS 2012""    ; $ADs | Where-Object { $_.OperatingSystem -Match '2012 !(R2)' "
+"{ Write-Both ""        [+] Domain controllers with WS 2016""    ; $ADs | Where-Object { $_.OperatingSystem -Match '2016' "
+"{ Write-Both ""        [+] Domain controllers with WS 2019""    ; $ADs | Where-Object { $_.OperatingSystem -Match '2019' "
+"{ Write-Both ""        [+] Domain controllers with WS 2022""    ; $ADs | Where-Object { $_.OperatingSystem -Match '2022' "
+"{ Write-Both ""    [!] AES128_HMAC_SHA1 not enabled for Kerberos!"" "
+"{ Write-Both ""    [!] AES256_HMAC_SHA1 not enabled for Kerberos!"" "
+"{ Write-Both ""    [!] DomainLevel is reduced for backwards compatibility to $DomainLevel!"" ; Write-Nessus-Finding ""FunctionalLevel"" ""KB546"" ""DomainLevel is reduced for backwards compatibility to $DomainLevel"" "
+"{ Write-Both ""    [!] ForestLevel is reduced for backwards compatibility to $ForestLevel!"" ; Write-Nessus-Finding ""FunctionalLevel"" ""KB546"" ""ForestLevel is reduced for backwards compatibility to $ForestLevel"" "
+"{ Write-Both ""    [!] Future encryption types not enabled for Kerberos!"" "
+"{ Write-Both ""    [!] GPO [$($GPO.DisplayName)] enabled DES_CBC_CRC for Kerberos!"" "
+"{ Write-Both ""    [!] GPO [$($GPO.DisplayName)] enabled DES_CBC_MD5 for Kerberos!"" "
+"{ Write-Both ""    [!] GPO [$($GPO.DisplayName)] enabled RC4_HMAC_MD5 for Kerberos!"" "
+"{ Write-Both ""    [!] Migration from FRS to DFSR is not finished. Current state: prepared!"" "
+"{ Write-Both ""    [!] Migration from FRS to DFSR is not finished. Current state: redirected!"" "
+"{ Write-Both ""    [!] Migration from FRS to DFSR is not finished. Current state: started!"" "
+"{ Write-Both ""    [+] DFSR mechanism is used to replicate across domain controllers."" "
+"{ Write-Both ""    [-] Not Windows 2012 Domain Functional level or above, skipping Get-ProtectedUsers check."" "
+"{ Write-Both ""[!] ActiveDirectory module not installed, exiting..."" ; exit "
+"{ Write-Both ""[!] DSInternals module not installed, use -installdeps to force install"" "
+"{ Write-Both ""[!] GroupPolicy module not installed, exiting...""     ; exit "
+"{ Write-Both ""[!] ServerManager module not installed, exiting...""   ; exit "
+"{ ms-Mcs-AdmPwd -notlike ""*"" "
+"{ ms-Mcs-AdmPwdExpirationTime -like ""*"" "
+"{ objectClass -eq ""trustedDomain"" "
+"{ objectClass -like ""site"" "
+"{ serviceprincipalname -like ""*"" "
+{ $_ -match 'NETLOGON' 
+{ $_ -match 'SYSVOL' 
+{ $_ -ne $group 
+{ $_.ActiveDirectoryRights -in $dangerousAces -and $_.IdentityReference -in $groupsToCheck 
+{ $_.AllowWriteCheck -or $_.AllowFullControl 
+{ $_.AnyPurposeCheck -and $_.AllowEnrollCheck 
+{ $_.CertificateRequestAgentCheck -and $_.AllowEnrollCheck 
+{ $_.DisplayName 
+{ $_.DynamicUpdate -like '*nonsecure*' 
+{ $_.Enabled -eq $true 
+{ $_.InstalledOn -ne $null 
+{ $_.IsGlobalCatalog -eq $true 
+{ $_.KeyName -Match 'AuditNTLMInDomain' 
+{ $_.KeyName -Match 'AuditReceivingNTLMTraffic' 
+{ $_.KeyName -Match 'DCAllowedNTLMServers' 
+{ $_.KeyName -Match 'LmCompatibilityLevel' 
+{ $_.KeyName -Match 'NoLMHash' 
+{ $_.KeyName -Match 'RestrictNTLMInDomain' 
+{ $_.LockedOut -eq $true 
+{ $_.Name -eq 'AES128_HMAC_SHA1' 
+{ $_.Name -eq 'AES256_HMAC_SHA1' 
+{ $_.Name -eq 'DES_CBC_CRC' 
+{ $_.Name -eq 'DES_CBC_MD5' 
+{ $_.Name -eq 'Future encryption types' 
+{ $_.Name -eq 'RC4_HMAC_MD5' 
+{ $_.Name -eq 'SeBackupPrivilege' 
+{ $_.Name -eq 'SeBatchLogonRight' 
+{ $_.Name -eq 'SeDenyInteractiveLogonRight' 
+{ $_.Name -eq 'SeDenyNetworkLogonRight' 
+{ $_.Name -eq 'SeDenyRemoteInteractiveLogonRight' 
+{ $_.Name -eq 'SeInteractiveLogonRight' 
+{ $_.Name -eq 'SeLoadDriverPrivilege' 
+{ $_.Name -eq 'SeMachineAccountPrivilege' 
+{ $_.Name -eq 'SeRemoteInteractiveLogonRight' 
+{ $_.Name -eq 'SeRemoteShutdownPrivilege' 
+{ $_.Name -eq 'SeRestorePrivilege' 
+{ $_.Name -eq 'SeShutdownPrivilege' 
+{ $_.Name -eq 'SeSystemTimePrivilege' 
+{ $_.OperatingSystem -Match '2003' 
+{ $_.OperatingSystem -Match '2008 !(R2)' 
+{ $_.OperatingSystem -Match '2008 R2' 
+{ $_.OperatingSystem -Match '2012 !(R2)' 
+{ $_.OperatingSystem -Match '2012 R2' 
+{ $_.OperatingSystem -Match '2016' 
+{ $_.OperatingSystem -Match '2019' 
+{ $_.OperatingSystem -Match '2022' 
+{ $_.OperationMasterRoles -ne $null 
+{ $_.Site -eq $Site.Name 
+{ $_.SuppliesSubjectCheck -and $_.ClientAuthCheck -and $_.AllowEnrollCheck 
+{ $_.SuppliesSubjectCheck -and $_.ClientAuthCheck -and $_.AllowFullControl 
+{ $_.SuppliesSubjectCheck -and $_.ClientAuthCheck -and $_.AllowWriteCheck 
+{ $count++ 
+{ $dcList += $_.Name 
+{ $osList += $_.OperatingSystem 
+{ Get-ADComputer $_.Name -Properties msDS-SupportedEncryptionTypes 
+{ Import-Module ActiveDirectory 
+{ Import-Module DSInternals 
+{ Import-Module GroupPolicy 
+{ Import-Module ServerManager 
+{ Install-Module -Name DSInternals -Force 
+{ Install-PackageProvider -Name NuGet -Force | Out-Null 
+{ New-Item -ItemType Directory -Path $outputdir | Out-Null 
+{ PrimaryGroupID -eq 516 -or PrimaryGroupID -eq 521 
+{ SID -eq $AdministratorSID 
+{ SamAccountName -eq $AdminName 
+{ break 
+{ objectClass -eq 'computer' -and objectCategory -eq 'computer' 
+{ objectClass -eq 'group' -and objectCategory -eq 'group' 
+{ objectClass -eq 'user' -and objectCategory -eq 'person' 
+{ whenCreated -ge $DateCutOff 
+{$_.OperatingSystemHotfix
+{$_.OperatingSystemServicePack
+{$_.OperatingSystemVersion
+{$_.OperationMasterRoles -ne $null

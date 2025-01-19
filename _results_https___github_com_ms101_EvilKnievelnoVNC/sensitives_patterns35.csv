@@ -1,0 +1,2 @@
+        this._rfbCredentials = options.credentials || {};
+"        UI.rfb.addEventListener(""credentialsrequired"", UI.credentials);"

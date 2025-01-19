@@ -1,0 +1,105 @@
+"(""Patched lsass memory"""
+"(""Process lsass.exe not found"""
+"(""Restored lsass memory"""
+"(""advapi32.dll"", CharSet = CharSet.Unicode, SetLastError = true"
+"(""advapi32.dll"", SetLastError = true"
+"(""kernel32.dll"""
+"(""kernel32.dll"", CharSet = CharSet.Unicode, SetLastError = true"
+"(""kernel32.dll"", SetLastError = true"
+"(""lsass"""
+"(""{0} (running as {1}\\{2}"
+"($Certificate, $Domain, $Password, $Command, $PatchLsass.IsPresent, $DbgHelpPath"
+"(@""C:\Windows\System32\kerberos.dll"", ""KerbCheckKdcCertificate"", dbghelp"
+"(CRED_MARSHAL_TYPE.CertCredential, pCertInfo, out marshaledCredential"
+"(CallingConvention.Winapi, CharSet = CharSet.Unicode, SetLastError = true"
+"(CallingConvention.Winapi, SetLastError = true"
+"(LayoutKind.Sequential, CharSet = CharSet.Unicode"
+"(Position = 0, Mandatory = $True"
+"(String.Format(""Retrieving symbols for {0}..."", library"
+"(String.Format(""{0} offset: 0x{1:X}"", functionName, symbolInfo.Address"
+"(UnmanagedType.ByValArray, SizeConst = 20"
+"(X509NameType.DnsName, false"
+"(X509NameType.UpnName, false"
+"(address, typeof(FnSymCleanup"
+"(address, typeof(FnSymFromName"
+"(address, typeof(FnSymInitialize"
+"(address, typeof(FnSymLoadModuleEx"
+"(certInfo, pCertInfo, false"
+"(certificate, password, X509KeyStorageFlags.PersistKeySet"
+"(hProcess, IntPtr.Zero, library, null, 0, 0, IntPtr.Zero, 0"
+"(hProcess, functionName, out symbolInfo"
+"(hProcess, null, false"
+"(pDll, ""SymCleanup"""
+"(pDll, ""SymFromNameW"""
+"(pDll, ""SymInitializeW"""
+"(pDll, ""SymLoadModuleExW"""
+"(string certificate, string domain, string password, string command, bool patchLsass, string dbghelp"
+"(string library, string functionName, string dbghelp"
+"(string.Format(""Base address: 0x{0:X}"", (UInt64"
+"(string.Format(""CreateProcessWithLogonW failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error("
+"(string.Format(""CredMarshalCredential failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error("
+"(string.Format(""GetProcAddress failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error("
+"(string.Format(""ImageBase: 0x{0:X}"", imageBase"
+"(string.Format(""LoadLibrary failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error("
+"(string.Format(""OpenProcess failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error("
+"(string.Format(""ReadProcessMemory failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error("
+"(string.Format(""SymFromName failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error("
+"(string.Format(""SymInitialize failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error("
+"(string.Format(""SymLoadModuleEx failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error("
+"(string.Format(""WriteProcessMemory failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error("
+"(string.Format(""{0} address: 0x{1:X}"", functionName, functionAddress"
+(!$PatchLsass.IsPresent
+(!result
+(!status
+($standaloneKdcValidation -eq $null
+($standaloneKdcValidation -ne 0
+($useCachedCRLOnlyAndIgnoreRevocationUnknownErrors -eq $null
+($useCachedCRLOnlyAndIgnoreRevocationUnknownErrors -ne 1
+('.'
+('@'
+().SafeHandle.DangerousGetHandle(
+(-PatchLsass
+(FnSymCleanup
+(FnSymFromName
+(FnSymInitialize
+(FnSymLoadModuleEx
+(Get-ItemProperty -Path $paramPath
+(IntPtr
+(LayoutKind.Sequential
+(Mandatory = $True
+(Marshal.SizeOf(certInfo
+(OpenFlags.ReadWrite
+(String.IsNullOrEmpty(name
+(X509Certificate2 cert
+(X509Store store = new X509Store(StoreName.My
+(`-PatchLsass`
+(`dbghelp.dll` and `symsrv.dll`
+(address == IntPtr.Zero
+(and restore them at the end
+(baseAddress
+(baseAddress == IntPtr.Zero
+(cert
+(dbghelp
+(dbghelp.dll and symsrv.dll
+(e.g. SRV*c:\symbols*https://msdl.microsoft.com/download/symbols
+(e.g. `SRV*c:\symbols*https://msdl.microsoft.com/download/symbols`
+(hProcess
+(hProcess == IntPtr.Zero
+(https://www.synacktiv.com/publications/understanding-and-evading-microsoft-defender-for-identity-pkinit-detection
+(imageBase == 0
+(library
+(marshaledCredential
+(pCertInfo
+(pDll
+(pDll == IntPtr.Zero
+(patchLsass
+(pi.hProcess
+(pi.hThread
+(processes.Length == 0
+(si
+(the default
+(typeof(CERT_CREDENTIAL_INFO
+(typeof(SYMBOL_INFO
+(uint
+(ulong
+(x86

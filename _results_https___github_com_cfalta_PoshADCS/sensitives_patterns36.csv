@@ -1,0 +1,4 @@
+                $value = $entry.Get($_.Key)
+"            $Global:ADCSTEMPLATESETTINGS.Add($_.Key,$value)"
+"es,"" + $BasePath) -LDAPFilter (""(objectclass=pKICertificateTemplate)(name="" + $Name + "")"") -Clear $p.Key"
+"es,"" + $BasePath) -LDAPFilter (""(objectclass=pKICertificateTemplate)(name="" + $Name + "")"") -Set @{$p.Key=$p.Value}"

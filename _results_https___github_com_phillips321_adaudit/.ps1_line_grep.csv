@@ -1,0 +1,6 @@
+        PS> ADAudit.ps1
+        Script Name  : ADAudit.ps1
+ (thanks --> https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Get-GPPPassword.ps1
+"* -all runs all checks, e.g. AdAudit.ps1"
+* -exclude allows you to exclude specific checks when using adaudit.ps1
+* -select allows you to exclude specific checks when using adaudit.ps1

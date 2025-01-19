@@ -1,0 +1,33 @@
+"[DllImport(""advapi32.dll"", ExactSpelling = true, SetLastError = true)"
+"[DllImport(""advapi32.dll"", SetLastError = true)"
+"[DllImport(""kernel32.dll"")"
+"[DllImport(""kernel32.dll"", ExactSpelling = true)"
+"[DllImport(""wtsapi32.dll"")"
+"[DllImport(""wtsapi32.dll"", CharSet = CharSet.Auto, SetLastError = true)"
+"[DllImport(""wtsapi32.dll"", SetLastError = true)"
+"[MarshalAs(UnmanagedType.ByValArray, SizeConst = ANYSIZE_ARRAY)"
+"[StructLayout(LayoutKind.Sequential, Pack = 1)"
+"[] { ""--password="" }, StringSplitOptions.None)[1"
+"[] { ""--session="" }, StringSplitOptions.None)[1"
+"[] { ""--tsquery="" }, StringSplitOptions.None)[1"
+"[https://gallery.technet.microsoft.com/scriptcenter/Enable-TSDuplicateToken-6f485980 and Goude 2012, TreuSec (http://www.truesec.com )"
+[*
+[-
+[0
+[Benjamin Delpy - RDP Session Tradecraft
+[Console
+[Enable-TSDuplicateToken
+[James Forshaw - COM Session Moniker EoP Exploit
+[MarshalAs(UnmanagedType.LPStr)
+[Mimikatz
+[Mitre ATT&CK T1563.002 - Remote Service Session Hijacking: RDP Hijacking
+[Nick Landers - StealToken Trick
+[PInvoke
+[Red Team Experiments | T1076: RDP Hijacking for Lateral Movement with tscon
+[StructLayout(LayoutKind.Sequential)
+[TScon
+[WTSConnectSession
+[WTSDisconnectSession
+[https://twitter.com/monoxgas/status/1109892490566336512
+[https://www.exploit-db.com/exploits/41607
+[return: MarshalAs(UnmanagedType.Bool)

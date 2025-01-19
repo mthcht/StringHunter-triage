@@ -1,0 +1,23 @@
+"UserName              : {session.UserName}"");"
+"UserName   : {session.CredentialUserName}"");"
+"UserName = Creds.GetCredentialUserName(new LUID(logonID), DEBUG);"
+"UserName(LUID luid, bool DEBUG = false)"
+"Username     : {sess.UserName} ({sess.SID})\nLUID         : {sess.Luid}\nCaptureTime  : {sess.CaptureTime}\nLogonType    : {sess.LogonType}\nAuthPackage  : {sess.AuthPackage}\nCredUserName : {sess.CredUser}\nOrigin LUID  : {sess.OriginLUID}\n"";"
+UserName              : THESHIRE\DA
+UserName              : THESHIRE\harmj0y
+UserName              : THESHIRE\testuser
+UserName    : THESHIRE\DA
+UserName    : THESHIRE\harmj0y
+UserName    : THESHIRE\testuser
+UserName   : da@THESHIRE.LOCAL
+UserName   : harmj0y@THESHIRE.LOCAL
+UserName   : testuser@THESHIRE.LOCAL
+UserName : da@THESHIRE.LOCAL
+UserName : harmj0y@THESHIRE.LOCAL
+UserName : localadmin@THESHIRE.LOCAL
+UserName = credentialUserName;
+UserName = userName;
+Username     : THESHIRE\da (S-1-5-21-937929760-3187473010-80948926-1145)
+Username     : THESHIRE\harmj0y (S-1-5-21-937929760-3187473010-80948926-1104)
+Username     : THESHIRE\localadmin (S-1-5-21-937929760-3187473010-80948926-1000)
+username = Marshal.PtrToStringUni(data.Username.Buffer).Trim();

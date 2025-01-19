@@ -1,0 +1,151 @@
+"' -and Enabled -eq ""true"" -or OperatingSystem -like "
+"' -match ""$DomainAdmins"" -or $member.Name."
+"' -match ""$SchemaAdmins"" -or $member.Name."
+"' -ne ""BUILTIN\$Administrators"" -and $member.Name."
+"' }) -ne $null) { Write-Both ""        [+] Domain controllers with WS 2003""    ; $ADs | Where-Object { $_.OperatingSystem -Match "
+"' }) -ne $null) { Write-Both ""        [+] Domain controllers with WS 2008 R2"" ; $ADs | Where-Object { $_.OperatingSystem -Match "
+"' }) -ne $null) { Write-Both ""        [+] Domain controllers with WS 2008""    ; $ADs | Where-Object { $_.OperatingSystem -Match "
+"' }) -ne $null) { Write-Both ""        [+] Domain controllers with WS 2012 R2"" ; $ADs | Where-Object { $_.OperatingSystem -Match "
+"' }) -ne $null) { Write-Both ""        [+] Domain controllers with WS 2012""    ; $ADs | Where-Object { $_.OperatingSystem -Match "
+"' }) -ne $null) { Write-Both ""        [+] Domain controllers with WS 2016""    ; $ADs | Where-Object { $_.OperatingSystem -Match "
+"' }) -ne $null) { Write-Both ""        [+] Domain controllers with WS 2019""    ; $ADs | Where-Object { $_.OperatingSystem -Match "
+"' }) -ne $null) { Write-Both ""        [+] Domain controllers with WS 2022""    ; $ADs | Where-Object { $_.OperatingSystem -Match "
+"'"""
+"'*cpassword=""""*"
+"', "
+"',"
+"'ListChildren, ReadProperty, ListObject"
+"'Name -eq ""Recycle Bin Feature"""
+"'ReadProperty, GenericExecute"
+"'\"""
+"'\ntds.dit\"""
+'    [!]
+'    [!] AS-REP Roastable user: 
+'    [!] High value kerberoastable user: 
+' + $outputdir + 
+' + $user.Name + 
+' -and objectCategory -eq 
+' -notin $exclude) -or 
+' in groups: 
+' | Select-Object -First 1).ToString().Split(
+' }             | select -ExpandProperty value) -eq 
+' }            | select -ExpandProperty value) -eq 
+' }        | select -ExpandProperty value) -eq 
+' } | select -ExpandProperty value) -eq 
+'#text
+') -and ($_.AccessControlType -ne 
+') -and ($_.ActiveDirectoryRights -ne 
+')[1].Trim().Replace(
+'*0x800706BA*
+'*2008*
+'*2012*
+'*Windows 7*
+'*nonsecure*
+'*vista*
+'1.3.6.1.5.5.7.3.1
+'2003
+'2008 !(R2)
+'2008 R2
+'2012 !(R2)
+'2012 R2
+'2016
+'2019
+'2022
+':
+'<q1:Name>SeMachineAccountPrivilege</q1:Name>
+'AES128_HMAC_SHA1
+'AES256_HMAC_SHA1
+'Administrator
+'AuditNTLMInDomain
+'AuditNTLMInDomain</q1:KeyName>
+'AuditReceivingNTLMTraffic
+'AuditReceivingNTLMTraffic</q1:KeyName>
+'Computer
+'DCAllowedNTLMServers
+'DCAllowedNTLMServers</q1:KeyName>
+'DES_CBC_CRC
+'DES_CBC_MD5
+'DOMAIN\Domain Users
+'DataSources.xml
+'Default Domain Controllers Policy
+'Delete
+'Deny
+'Drives.xml
+'Everyone
+'ExtendedRight
+'ForceChangePassword
+'Future encryption types
+'GenericAll
+'GenericExecute
+'GenericRead
+'GenericWrite
+'Group
+'Groups.xml
+'ListChildren
+'ListObject
+'LmCompatibilityLevel
+'LmCompatibilityLevel</q1:KeyName>
+'MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters\SupportedEncryptionTypes
+'NETLOGON
+'NT AUTHORITY\Authenticated Users
+'NoLMHash
+'NoLMHash</q1:KeyName>
+'Printers.xml
+'Protected Users
+'RC4_HMAC_MD5
+'ReadControl
+'ReadProperty
+'RestrictNTLMInDomain
+'RestrictNTLMInDomain</q1:KeyName>
+'SYSVOL
+'Scheduledtasks.xml
+'SeBackupPrivilege
+'SeBatchLogonRight
+'SeDenyInteractiveLogonRight
+'SeDenyNetworkLogonRight
+'SeDenyRemoteInteractiveLogonRight
+'SeInteractiveLogonRight
+'SeLoadDriverPrivilege
+'SeMachineAccountPrivilege
+'SeRemoteInteractiveLogonRight
+'SeRemoteShutdownPrivilege
+'SeRestorePrivilege
+'SeShutdownPrivilege
+'SeSystemTimePrivilege
+'Server:
+'Services.xml
+'User
+'WriteDacl
+'WriteOwner
+'accounts
+'acl
+'adcs
+'asrep
+'authpolsilos
+'computer
+'domainaudit
+'false
+'gpo
+'group
+'hostdetails
+'insecurednszone
+'laps
+'ldapecurity
+'ll see it
+'ms-DS-MachineAccountQuota
+'ms-Mcs-AdmPwdExpirationTime
+'msDFSR-Flags
+'ntds
+'oldboxes
+'ouperms
+'passwordpolicy
+'person
+'recentchanges
+'s all harmless! (But shouldn
+'spn
+'t trust the code I suggest reading it first and you
+'true
+'trusts
+'user
+'wuauserv
+'}

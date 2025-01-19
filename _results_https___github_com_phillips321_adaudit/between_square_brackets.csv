@@ -1,0 +1,38 @@
+[ 
+[!
+[$($ADs | Select-Object OperatingSystemHotFix -Unique | ForEach-Object {$_.OperatingSystemHotfix})
+[$($ADs | Select-Object OperatingSystemServicePack -Unique | ForEach-Object {$_.OperatingSystemServicePack})
+[$($ADs | Select-Object OperatingSystemVersion -Unique | ForEach-Object {$_.OperatingSystemVersion})
+[$($GPO.DisplayName)
+[$($_.OperatingSystemHotfix)
+[$($_.OperatingSystemServicePack)
+[$($_.OperatingSystemVersion)
+[$($record.GPO)
+[$($record.Name)
+[$($record.gpo)
+[$($record.value)
+[*
+[+
+[-
+[1
+[ADSISearcher
+[CmdletBinding()
+[Net.SecurityProtocolType
+[Net.ServicePointManager
+[PSCustomObject
+[System.DirectoryServices.ActiveDirectory.Forest
+[System.DirectoryServices.Protocols.LdapException
+[System.IO.File
+[System.Security.Principal.NTAccount
+[System.TimeSpan
+[Text.Encoding
+[array
+[datetime
+[environment
+[net.dns
+[single
+[string
+[string[
+[switch
+[x
+[xml

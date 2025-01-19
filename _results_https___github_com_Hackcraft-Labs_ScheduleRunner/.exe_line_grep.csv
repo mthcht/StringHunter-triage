@@ -1,0 +1,21 @@
+ /method:create /taskname:Cleanup /trigger:daily /starttime:23:30 /program:calc.exe
+ /method:create /taskname:Cleanup /trigger:hourly /modifier:4 /program:rundll32.exe
+ /method:move /taskname:Demo /remoteserver:TARGET-PC01 /program:rundll32.exe
+"                    Console.WriteLine(""Command to check for task details: ScheduleRunner.exe"
+"                Console.WriteLine(""Command to check for sub folder details: ScheduleRunner.exe"
+"            Console.WriteLine(@""    ScheduleRunner.exe"
+" /argument:""-m 1"" /oldaction:""C:\Windows\notepad.exe"
+" /method:edit /taskname:Cleanup /program:""""C:\Payload\agent.exe"
+" /method:edit /taskname:Cleanup /program:""""C:\Payload\backdoor.exe"
+" /method:edit /taskname:Cleanup /program:""""C:\Payload\backdoor.exe"""" /oldaction:""""C:\Windows\notepad.exe"
+" called """"Cleanup"""" with multiple execution actions by replacing the old action """"C:\Windows\notepad.exe"
+""""" to """"C:\Payload\backdoor.exe"
+"@""Edit a scheduled task called """"Cleanup"""" by changing its execution action to """"C:\Payload\backdoor.exe"
+"`ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe /oldaction:""C:\Windows\notepad.exe"
+"sk called """"Cleanup"""" with multiple execution actions by inserting the new action """"C:\Payload\agent.exe"
+.paket/paket.exe
+`ScheduleRunner.exe
+`ScheduleRunner.exe /method:create /taskname:Cleanup /trigger:daily /starttime:23:30 /program:calc.exe
+`ScheduleRunner.exe /method:create /taskname:Cleanup /trigger:hourly /modifier:4 /program:rundll32.exe
+`ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe
+`ScheduleRunner.exe /method:move /taskname:Demo /remoteserver:TARGET-PC01 /program:rundll32.exe

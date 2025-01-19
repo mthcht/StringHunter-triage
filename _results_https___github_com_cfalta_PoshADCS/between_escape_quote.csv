@@ -1,0 +1,2 @@
+"`CN=Public Key Services, CN=Services, CN=Configuration, DC=domain, dc=com"
+`tpmvscmgr.exe /create /name VSC01 /pin default /adminkey random /generate

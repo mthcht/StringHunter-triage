@@ -1,0 +1,200 @@
+"//
+"// ""release all"" -> release all tokens except the on for the specific LUID"
+"// ""release all"" -> release all tokens"
+"// <param name=""buffer"">Data</param>"
+"// <param name=""bufferSize"">Size of the buffer to allocate</param>"
+"// <param name=""size"">Size of the buffer to allocate</param>"
+"// COM, set the ComVisible attribute to true on that type."
+"// Returns true if the current context is ""NT AUTHORITY\SYSTEM"""
+"// Step 2 -> call AcceptSecurityContext() with the client token, using the same credential"
+"// Step 2 -> call InitializeSecurityContext() with the cred handle to start the ""client"" side of negotiation"
+"// Takes a token pointer and a group SID string, and returns if the given token has that specific group present"
+"// [assembly: AssemblyVersion(""1.0.*"")]"
+"// find all ""Negotiate"" logon session packages so we can prefer to use these"
+"// get the credential username (i.e., for NewCredentials)"
+"// get the username for the credential (i.e., for NewCredentials)"
+"// if the token does not match any filtering, add it to the exclude list"
+"// if we haven't captured any sessions and we have more than one error for AcquireCredentialsHandle, signal for exit"
+"// if we're capturing sessions, check every 500ms"
+"// if we're capturing, ensure we only capture the negotiate session for a SID+LogonType if a negotiate session is present"
+"// if we're doing ""capture"""
+"// if we're doing ""list"" or monitor"" close the token off to free it up"
+"// if we're doing ""list"" or monitor"""
+"// if we're doing ""monitor"" add the observed session to the list"
+"// if we're doing ""monitor"""
+"// lists, adds, or resets the SIDs tofilter"
+"// monitor a host for new logon sessions and ""capture"" all sessions by negotiating a new token for each"
+"// password used for communications, super securez I know :)"
+"// releases all tokens/sessions, or a token for a specified LUID"
+"// same as RemoteInteractive, except used internally for auditing purposes"
+"// thread safe dictionary for metadata, i.e., signaling we're exiting"
+//      - logonType != Network
+//      - user SID is domain formatted
+//      1           - list captured tokens
+//      100         - list group SIDs currently used for capture filtering
+//      101 SID     - adds group SID for capture filtering
+//      102 SID     - removes a group SID for capture filtering
+//      103         - resets all group SIDs for capture filtering
+//      2 LUID      - list groups for a captured token
+//      200 LUID    - lists the groups for the specified LUID/captured token
+//      300 LUID    - impersonate a captured token
+//      400         - release all tokens
+//      401 LUID    - release a token for the specifed LUID
+//      57005       - signal Koh to exit
+//      Build Number
+//      Major Version"
+//      Minor Version
+//      Revision
+//  MIT license
+//  Used for group SID filtering
+//  ref - https://mskb.pkisolutions.com/kb/180548
+// // TODO: try to decipher the clientLifeTime struct
+// 0x80000000 | 0x40000000 -> GENERIC_READ | GENERIC_WRITE
+// 0xDEAD == 57005
+// 2 == SecurityImpersonation
+// 3 -> OPEN_EXISTING
+// </summary>
+// <summary>
+// Acquires a credential handle for the specified logon session ID (LUID)
+// Allocate a native chunk of memory for security buffer
+// Allocate a security buffer of the requested size
+// Allocate buffer
+// Allocate byte buffer
+// Allocate native memory for managed block
+// Allocate security buffer
+// Allocate unmanaged memory for the buffer
+// Calculate pointer to the buffer
+// Check buffer pointer validity
+// Check if we have a buffer
+// Check if we have a security buffer
+// Convert the byte array to hexadecimal string
+// Convert to byte array
+// Copy data from the native space
+// Copy data into the unmanaged memory
+// Copy managed data into the native memory
+// Debug mode outputs additional output on the command line for the server
+// Delete native memory
+// Dispose it
+// Dispose object
+// Dispose security buffer
+// Dispose security buffer descriptor
+// Extract raw byte data from the security buffer
+// From https://github.com/mono/linux-packaging-mono/blob/bc64aa5907f74087a6adabcff5ff79cfd2904040/external/corefx/src/System.Data.SqlClient/tests/Tools/TDS/TDS.EndPoint/SSPI/SecBuffer.cs
+// From https://github.com/mono/linux-packaging-mono/blob/d356d2b7db91d62b80a61eeb6fbc70a402ac3cac/external/corefx/src/System.Data.SqlClient/tests/Tools/TDS/TDS.EndPoint/SSPI/SecBufferDesc.cs
+// General Information about an assembly is controlled through the following
+// Get the byte buffer
+// Initialization constructor
+// Initialization constructor for byte array
+// Initialization constructor for existing buffer
+// Initialization constructor that allocates a new security buffer
+// Iterate through each buffer and write the data into the stream
+// Iterate through each buffer than we manage
+// Koh commands:
+// Main worker function that handles listing/monitoring/capturing new logon sessions
+// Network logon types aren't going to have any credentials
+// Not supported.
+// Open winlogon's token with TOKEN_DUPLICATE accesss so we can make a copy of the token with DuplicateToken
+// Prepare a memory stream to contain all the buffers
+// Project the buffer into the managed world
+// Re-throw exception
+// Release memory associated with it
+// Release native memory block
+// Reset buffer pointer
+// Reset native buffer pointer
+// Return the true username for a credential in case we have a NewCredentials/Type 9 situation
+// Returns true if the SID string matches a domain SID pattern
+// Returns true if the current process is running with administrative privs in a high integrity context
+// SECPKG_CRED_ATTR_NAMES = 1
+// Save buffer size
+// SecBufferDesc structure - https://docs.microsoft.com/en-us/windows/win32/api/sspi/ns-sspi-secbufferdesc
+// Set buffer type (2 = Token)
+// Set the number of buffers
+// Set version to SECBUFFER_VERSION
+// Setting ComVisible to false makes the types in this assembly not visible
+// Spawn a new thread for each request and continue waiting
+// Step 1 => acquire a credential handle to the specified logon session ID/LUID
+// Step 3 -> call InitializeSecurityContext() with the server token
+// Step 4 -> call AcceptSecurityContext() with the client token
+// Step 4 -> turn the server context into a usable token
+// TOKEN_DUPLICATE = 0x0002
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// The main namedpipe logic that handles commands for the Koh server
+// Use input string to calculate MD5 hash
+// Version information for an assembly consists of the following four values:
+// We don't have a buffer
+// We have only one buffer
+// Wrapper that uses GetTokenInformation to retrieve the specified TOKEN_INFORMATION_CLASS
+// Write buffer to the stream
+// You can specify all the values or you can default the Build and Revision Numbers"
+// any additional arguments -> assume they're domain group SIDs for filtering
+// associated with an assembly.
+// attempt to unlock a workstation
+// attempt to use the cached credentials without going out across the network
+// authentication package
+// based on https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipe-client
+// by using the '*' as shown below:
+// caller can clone its current token and specify new credentials for outbound connections
+// check if we've been signaled to exit
+// clean up so there's not an additional token leak
+// clean up the handles we created
+// command 300 == impersonation
+// connect to the Koh communication named pipe
+// convert the security identifier of the user
+// datetime the session was logged in
+// domain for this account
+// domain users only (or NewCredentials/Type 9)
+// enable casting to a ulong
+// enumerate current logon sessions
+// finds all logon sessions that match our specific criteria:
+// first call gets length of TokenInformation
+// get an array of pointers to LUIDs
+// get the account username
+// gets the origin LUID for the specified token
+// grab the current computer NETBIOS name
+// grabs a credential handle for a specified LUID and negotiates a usable token
+// helper to elevate to SYSTEM so we can get SeTcbPrivilege
+// hit our token limit
+// if the passed LUID string is a decimal form
+// if the passed LUID string is of form 0xABC123
+// if we have a valid logon
+// if we're filtering for specific group SIDs
+// impersonate LUID PipeName
+// list all current logon sessions
+// lists currently captured sessions/tokens
+// lists the domain group SIDs for a specified token
+// logging on interactively.
+// logging using a network.
+// logon for a batch process.
+// logon for a service account.
+// logon server's DNS domain
+// logon type
+// make a copy of the NT AUTHORITY\SYSTEM token from winlogon
+// monitor a host for new logon sessions
+// move the pointer forward
+// negotiate a new token for this particular LUID
+// network logon with cleartext credentials
+// null security descriptor for the impersonation named pipe
+// only add a new session if an equivalent Negotiate logon session is not present
+// parse packed Beacon commands
+// perform the named pipe impersonation of the target token
+// read 1 byte to satisfy the requirement that data is read from the pipe before it's used for impersonation
+// read any output from the server
+// register the token with the current beacon session
+// release LUID -> release token for specific LUID
+// represents a captured logon session
+// represents a found/enumerated logon session
+// returns an arraylist of all of the group SIDs present for a specified token
+// send the Koh command to the named pipe server
+// set of attributes. Change these attribute values to modify the information
+// terminal server session that is both remote and interactive
+// the maximum number of unique tokens/logon sessions to capture
+// thread safe dictionary for session capture
+// thread safe dictionary for sid filtering/updating
+// thread safe dictionary for sids to exclude from capture
+// to COM components.  If you need to access a type in this assembly from
+// user principalname
+// user's logon server
+// whether we've been warned that we've hit max captured tokens
+// win32 systemdate
+// workstation unlock
+// write a single byte out so we can fulfil the ReadFile() requirement on the other side of the pipe

@@ -1,0 +1,46 @@
+"[crate_type = ""cdylib"""
+"[derive(Copy, Clone, Default)"
+"[derive(Copy, Clone, Default, PartialEq, Debug, Eq)"
+"[derive(Copy, Clone,Default)"
+[!
+[+
+[0
+[0;dump_size as usize + 1
+[0u8; *ret_lenght as usize
+[0u8; bytes as usize
+[0u8; len
+[0u8; size_of::<IO_STATUS_BLOCK>()
+[0u8;size_of::<STARTUPINFOW>()
+[1..
+[Antonio Cocomazzi
+[DInvoke_rs
+[IMAGE_DATA_DIRECTORY; 16
+[allow(invalid_reference_casting)
+[arguments
+[build
+[build-dependencies
+[default: 1234abcd
+[default: c:\temp\input.txt
+[default: c:\temp\output.txt
+[dependencies
+[derive(Clone)
+[macro_export
+[macro_use
+[no_mangle
+[options
+[package
+[profile.dev
+[profile.dev.package.bindings
+[profile.dev.package.data
+[profile.dev.package.dinvoke
+[profile.dev.package.dumper
+[profile.dev.package.dumpy
+[profile.release
+[repr(C)
+[this post
+[this simple HTTP server
+[u8; 8
+[u8;12
+[u8;4
+[usize;1
+[x

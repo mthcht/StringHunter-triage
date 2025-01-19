@@ -1,0 +1,6 @@
+"                                          Console.WriteLine($""      Credential UserName   : {session.CredentialUserName}"");"
+"                                        Console.WriteLine($""      Credential UserName   : {session.CredentialUserName}"");"
+"                                    Console.WriteLine($""      Credential UserName   : {session.CredentialUserName}"");"
+"ptureTime}\nLogonType    : {sess.LogonType}\nAuthPackage  : {sess.AuthPackage}\nCredUserName : {sess.CredUser}\nOrigin LUID  : {sess.OriginLUID}\n"";"
+"ssion.UserName, luid, session.SID, $""{session.LogonType}"", session.AuthPackage, session.SID, session.CredentialUserName, $""{(ulong)tokenOrigin}"", IntPtr.Zero);"
+"ssion.UserName, luid, session.SID, $""{session.LogonType}"", session.AuthPackage, session.SID, session.CredentialUserName, $""{(ulong)tokenOrigin}"", hToken);"

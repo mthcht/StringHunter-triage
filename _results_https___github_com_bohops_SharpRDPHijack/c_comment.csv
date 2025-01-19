@@ -1,0 +1,23 @@
+"// ---------------------------------------- Token Duplication P-Invoke Definitions [https://gallery.technet.microsoft.com/scriptcenter/Enable-TSDuplicateToken-6f485980 and Goude 2012, TreuSec (http://www.truesec.com )]"
+// ------ RDP / TS Session Query...
+// ------ RDP Session Hijack...
+// --------------------------------------------------------------------------
+// ----------------------------------------WTS P-Invoke Definitions
+// Don't need length as these are null terminated strings
+// In the process of connecting to client
+// Prepend domain name
+// RDP / TS Session Hijack Functions
+// RDP / TS Session Query Functions
+// Shadowing another WinStation
+// User logged on to WinStation
+// Value exists - change it
+// Waiting for client to connect
+// WinStation connected to client
+// WinStation in initialization
+// WinStation is being reset
+// WinStation is down due to error
+// WinStation is listening for connection
+// WinStation logged on without client
+// https://docs.microsoft.com/en-us/dotnet/api/system.security.principal.windowsprincipal.isinrole?view=dotnet-plat-ext-3.1
+// https://gallery.technet.microsoft.com/scriptcenter/Enable-TSDuplicateToken-6f485980
+// https://www.pinvoke.net/default.aspx/advapi32.adjusttokenprivileges

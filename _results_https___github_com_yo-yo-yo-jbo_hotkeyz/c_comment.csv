@@ -1,0 +1,19 @@
+// Continously read messages
+// Expand environment strings for the input file path
+// Flush the file (best-effort)
+// Free resources
+// Get the key from the message
+// Get the keylogging time in milliseconds
+// Get the message in a non-blocking manner and poll if necessary
+// Only handle hotkeys (should not really happen)
+// Open the file for writing
+// Register all relevant virtual keys
+// Return result
+// Return the result
+// Run the keylogging functionality
+// Send the key to the OS and re-register
+// Success
+// Unregister all registered hotkeys
+// Validate everything was properly written
+// Validate number of arguments
+// Write to the file

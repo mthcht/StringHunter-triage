@@ -1,0 +1,13 @@
+"username = encodeUTF8(this._rfbCredentials.username).substring(0, 255);"
+"username = encodeUTF8(this._rfbCredentials.username).substring(0, 63);"
+"username"") === -1) {"
+"username: username, password: password });"
+"usernameBytes = legacyCrypto.encrypt({ name: ""DES-CBC"", iv: secret }, key, usernameBytes);"
+"username_input"" : inputFocus;"
+Username = document.getElementById('noVNC_username_input');
+username = inputElemUsername.value;
+username === undefined ||
+username.length] = 0;
+usernameBytes = new Uint8Array(256);
+usernameBytes[i] = username.charCodeAt(i);
+usernameBytes[username.length] = 0;

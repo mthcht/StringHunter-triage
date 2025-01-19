@@ -1,0 +1,13 @@
+"logging.debug(""Task is stopped"""
+"logging.debug('Executing assembly: %s, args: %s' % (prog, args"
+logging.debug('Calling SchRpcGetTaskInfoResponse for \\%s' % tmpName
+logging.debug('Calling SchRpcRetrieveTask to get result for \\%s' % tmpName
+logging.debug('Creating task \\%s' % tmpName
+logging.debug('Deleting task \\%s' % tmpName
+logging.debug('Executing cmd command: %s' % command
+logging.debug('Executing ps command: %s' % s
+logging.debug('Running task \\%s' % tmpName
+logging.debug('Task XML for \\%s' % tmpName
+logging.debug('Task xml size: %d' % len(xml
+logging.debug('task xml: %s' % xml
+logging.debug(ps_script

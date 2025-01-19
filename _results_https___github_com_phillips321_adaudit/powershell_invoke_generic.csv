@@ -1,0 +1,2 @@
+"Invoke-AuditGPOReport -Path C:\GPOReport.xml -Level 3"""
+"Invoke-WebRequest -Uri (""http://$serverName/certsrv/"") -ErrorAction Stop"

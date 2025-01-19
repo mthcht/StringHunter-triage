@@ -1,0 +1,21 @@
+"{ ""d|DestinationFolder="", ""--DestinationFolder C:\\Windows\\System32\\"", value => DestinationFolder =value "
+"{ ""h|?|help"", ""Show available options"", value => showhelp = value != null "
+"{ ""m|Method="", ""--Method FoxPro, SchedulePlus, Project"", value => Method = value "
+"{ ""o|opsec"", ""Removes the uploaded file"", value=> OpSec= value != null "
+"{ ""p|Payload="", ""--Payload C:\\windows\\system32\\calc.exe"", value => Payload = value "
+"{ ""t|ComputerName="", ""--ComputerName host.example.local, 192.168.1.10"", value => ComputerName = value "
+"{Registry:Software\Microsoft\.NETFramework,v4.5,AssemblyFoldersEx"
+{'5
+{13C84182-2F5F-4EE8-A37A-4483E7E57154
+{4604B793-28C5-4C8C-9208-7B4BC5E959C6
+{A6C744A8-0E4A-4FC6-886A-064283054674
+{CandidateAssemblyFiles
+{ComputerName
+{DestinationFolder
+{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC
+{HintPathFromItem
+{ISA'=O
+{RawFileName
+{TargetFrameworkDirectory
+{nq
+{wcnL

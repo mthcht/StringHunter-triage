@@ -1,0 +1,4 @@
+"username = """";"
+"username = GetUsernameBySessionId(serverHandle, si.SessionId);"
+"username = Marshal.PtrToStringAnsi(buffer) + ""\\"" + username; // Prepend domain name"
+username = Marshal.PtrToStringAnsi(buffer); // Don't need length as these are null terminated strings

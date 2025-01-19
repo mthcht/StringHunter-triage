@@ -1,0 +1,182 @@
+"("" + "","".join(column_names"
+"(""$"""
+"(""$LM$"""
+"(""$NT$"""
+"("":"""
+"(""<a href=\"""" + filename + ""\"">Details</a>"","
+"(""CREATE INDEX index_lm_hash_left ON hash_infos (lm_hash_left"
+"(""CREATE INDEX index_lm_hash_right ON hash_infos (lm_hash_right"
+"(""CREATE INDEX index_nt_hash ON hash_infos (nt_hash"
+"(""CREATE INDEX lm_hash ON hash_infos (lm_hash"
+"(""CREATE INDEX username ON hash_infos (username"
+"(""Count"", ""Description"", ""More Info"""
+"(""Cracking %d NT Hashes where only LM Hash was cracked (aka lm2ntcrack functionality"
+"(""Doesn't look like the Group Files are in the form output by PowerView, assuming the files are already in domain\\username list form"""
+"(""Hash"" in headers[col_num]"
+"(""History "" + str(i"
+"(""History"" in headers[col_num]"
+"(""INSERT INTO hash_infos (username_full, username, lm_hash , lm_hash_left , lm_hash_right , nt_hash, history_index, history_base_username"
+"(""No"","
+"(""Please respond with y or n"""
+"(""SELECT username_full, LENGTH(password"
+"(""There was no history contained in the password files.  If you would like to get the password history, run secretsdump.py with the flag \""-history\"". <br><br> Sample secretsdump.py command: secretsdump.py -system registry/SYSTEM -ntds \""Active Directory/ntds.dit\"" LOCAL -outputfile customer -history"""
+"(""Too Many to List"","
+"(""UPDATE hash_infos SET lm_pass_left = ? WHERE lm_hash_left = ?"", (password, hash"
+"(""UPDATE hash_infos SET lm_pass_right = ? WHERE lm_hash_right = ?"", (password, hash"
+"(""UPDATE hash_infos SET password = ? WHERE nt_hash = ?"", (password, hash"
+"(""Yes"","
+"(""\n"""
+"(""all hashes.html"""
+"(""cp"""
+"(""h"" + str(i"
+"(""lm_noncracked.html"""
+"(""password_history.html"""
+"(""password_length_stats.html"""
+"(""password_reuse_stats.html"""
+"(""top_password_stats.html"""
+"(""users_only_cracked_through_lm.html"""
+"(', '.join(''.join(elems"
+"(', MIN(CASE WHEN history_index = ' + str(i"
+"('-g', '--grouplists', help='The name of one or multiple files that contain lists of usernames in particular groups. The group names will be taken from the file name itself. The username list must be in the same format as found in the NTDS file such as some.ad.domain.com\\username or it can be in the format output by using the PowerView Get-NetGroupMember function. Example: -g ""Domain Admins.txt"" ""Enterprise Admins.txt""', nargs='*', required=False"
+"('-k', '--krbtgt', help='Include the krbtgt account', default=False, required=False, action='store_true'"
+"('SELECT lm_hash, lm_pass_left, lm_pass_right, nt_hash FROM hash_infos WHERE (lm_pass_left is not """" or lm_pass_right is not """""
+"('SELECT nt_hash, COUNT(nt_hash"
+"('SELECT nt_hash,lm_pass_left,lm_pass_right FROM hash_infos WHERE (lm_pass_left is not NULL or lm_pass_right is not NULL"
+"('SELECT password,COUNT(password"
+"('SELECT username_full,password,LENGTH(password"
+"('UPDATE hash_infos SET only_lm_cracked = 1, password = \'' + password.replace(""'"", ""''"""
+"('md4', pwd_guess.encode('utf-16le'"
+"(((""Password"""
+"((num_unique_nt_hashes, ""Unique Password Hashes"", None"
+"((response == """""
+"(-1,max_password_history + 1"
+"(-g ""Domain Admins.txt"" ""Enterprise Admins.txt"""
+"(0,0,0,.12"
+"(0,0,0,.14"
+"(0,0,0,.2"
+"(?,?,?,?,?,?,?,?"
+"(binascii.unhexlify(re.findall(r""\$HEX\[([^\]]+"
+"(dpatSummary.png ""DPAT Summary Table"""
+"(folder_for_html_report, ""report.css"""
+"(group[0] + "" cracked passwords.html"""
+"(group[0] + "" members.html"""
+"(group[1], encoding='utf-16'"
+"(group_cracked_list, headers"
+"(history.png ""DPAT Summary Table"""
+"(line.rstrip(""\n"""
+"(line.split("":"""
+"(list, headers"
+"(list, headers, 2"
+"(list, headers, 3"
+"(list, headers, 8"
+"(new_list, headers"
+"(nt_hash, lm_pass"
+"(num_passwords_cracked, ""Passwords Discovered Through Cracking"", None"
+"(os.path.join(""file://"" + os.getcwd("
+"(os.path.join(folder_for_html_report, filename"
+"(pair[0], lm_pwd"
+"(r""\$HEX\[([^\]]+"
+"(result[0],"
+"(self, filename"
+"(self, list, headers=[], col_to_not_escape=None"
+"(self, str"
+"(string_of_users,"
+"(summary_table, summary_table_headers, 2"
+"(the ""Software"""
+"(user_domain + ""\\"" + user_name"
+"(usernameFull, username, lm_hash, lm_hash_left, lm_hash_right, nt_hash, history_index, history_base_username"
+"(username_full text collate nocase, username text collate nocase, lm_hash text, lm_hash_left text, lm_hash_right text, nt_hash text, password text, lm_pass_left text, lm_pass_right text, only_lm_cracked boolean, history_index int, history_base_username text"
+"(username_full, nt_hash, lm_hash"
+"(username_info,usernameFull"
+"(usernames, headers"
+(' FROM hash_infos GROUP BY history_base_username
+('$LM$'
+('$NT$'
+(':'
+(':memory:'
+('SELECT COUNT(DISTINCT nt_hash
+('SELECT COUNT(password
+('SELECT LENGTH(password
+('SELECT MAX(history_index
+('SELECT count(*
+('SELECT count(DISTINCT lm_hash
+('SELECT count(DISTINCT nt_hash
+('SELECT username FROM hash_infos WHERE history_index = -1 AND LENGTH(password
+('Would you like to open the report now? [Y/n]'
+('\\'
+('\r'
+('\r\n'
+((c.fetchone(
+((len(list
+() == first.upper(
+() == hash.lower(
+().lower(
+(.*\\*.*
+(1
+(2
+(?i
+(DPAT
+(Distinct password
+(Non-blank
+([0-9]+
+(based only on NT hash
+(c
+(c.fetchone(
+(case sensitive
+(chr(x
+(column
+(command
+(commit
+(cracked_file
+(even
+(filename_for_db_on_disk
+(filename_for_html_report
+(folder_for_html_report
+(group[1]
+(group_cracked_list
+(hash
+(header
+(hex2
+(html
+(http://www.blackhillsinfosec.com
+(http://www.blackhillsinfosec.com/?p=5527
+(https://gist.githubusercontent.com/joswr1ght/c557f8627832d54458c810e43be9c055/raw/b46e5e976196a20e7ecfe88da7d7a22c747d64e0/groupenumeration.ps1
+(https://github.com/CoreSecurity/impacket/blob/master/examples/secretsdump.py
+(https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon
+(https://github.com/SecureAuthCorp/impacket/issues/656
+(https://medium.com/@airman604/installing-impacket-on-windows-ded7ba8bec9a
+(https://www.blackhillsinfosec.com/wp-content/uploads/2018/12/BHIS-logo-L-1024x1024-221x221.png
+(input_string
+(input_string[1:]
+(l
+(len(users_list
+(lenp-2
+(lenp-8
+(line
+(list
+(lm_pass
+(new_tuple
+(note that name of the other domain and the domain controller can be obtained with Get-NetForestDomain
+(ntds_file
+(num_hashes
+(num_unique_nt_hashes
+(os.path.join(os.path.dirname(__file__
+(os.path.splitext(os.path.basename(groupfile
+(output from SecretsDump.py
+(output2
+(pass_or_hash
+(password
+(same format as hashcat.potfile but prepended with $NT$ or $LM$
+(self
+(self.get_html(
+(sql
+(str(col_data
+(str(counter
+(strtobool(response
+(tuple[0]
+(users
+(users_list
+(vals
+(where account name ends in $
+(which is the default output of the Hashcat tool
+(x

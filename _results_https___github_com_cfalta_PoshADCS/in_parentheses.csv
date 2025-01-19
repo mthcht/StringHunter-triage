@@ -1,0 +1,155 @@
+"(""(objectclass=pKICertificateTemplate"
+"(""."","",DC="""
+"(""1.3.6.1.5.5.7.3.2"", ""1.3.6.1.5.5.7.3.1"", ""1.3.6.1.4.1.311.20.2.2"""
+"(""1.3.6.1.5.5.7.3.2"", ""1.3.6.1.5.5.7.3.1"", ""1.3.6.1.4.1.311.20.2.2"", ""1.3.6.1.5.2.3.5"""
+"(""AdminACEs"",""DefaultACEs"""
+"(""CN=Certificate Templates,"" + $BasePath"
+"(""CN=Certification Authorities,"" + $BasePath"
+"(""CN=Enrollment Services,"" + $BasePath"
+"(""CN=NTAuthCertificates,"" + $BasePath"
+"(""LDAPFilter"",""(objectclass=pKICertificateTemplate"
+"(""mspki-enrollment-flag"",""mspki-certificate-name-flag"",""mspki-private-key-flag"""
+"($BitFlag.Substring(0,1"
+"($BitFlag.Substring(1,1"
+"($BitFlag.Substring(14,1"
+"($BitFlag.Substring(15,1"
+"($BitFlag.Substring(16,1"
+"($BitFlag.Substring(17,1"
+"($BitFlag.Substring(18,1"
+"($BitFlag.Substring(19,1"
+"($BitFlag.Substring(2,1"
+"($BitFlag.Substring(20,1"
+"($BitFlag.Substring(21,1"
+"($BitFlag.Substring(22,1"
+"($BitFlag.Substring(23,1"
+"($BitFlag.Substring(24,1"
+"($BitFlag.Substring(25,1"
+"($BitFlag.Substring(26,1"
+"($BitFlag.Substring(27,1"
+"($BitFlag.Substring(28,1"
+"($BitFlag.Substring(29,1"
+"($BitFlag.Substring(3,1"
+"($BitFlag.Substring(30,1"
+"($BitFlag.Substring(31,1"
+"($BitFlag.Substring(4,1"
+"($BitFlag.Substring(5,1"
+"($BitFlag.Substring(6,1"
+"($BitFlag.Substring(7,1"
+"($BitFlag.Substring(9,1"
+"($CACerts,0"
+"($Filter -eq ""AdminACEs"""
+"($Filter -eq ""DefaultACEs"""
+"($Flag,2"
+"($RefCerts,0"
+"($_.Key,$value"
+"($_.SecurityIdentifier.value -eq ""S-1-5-11"""
+"($_.SecurityIdentifier.value -eq ""S-1-5-9"""
+"($_.SecurityIdentifier.value -like ""*-498"""
+"($_.SecurityIdentifier.value -like ""*-500"""
+"($_.SecurityIdentifier.value -like ""*-513"""
+"($_.SecurityIdentifier.value -like ""*-515"""
+"($_.SecurityIdentifier.value -like ""*-516"""
+"($_.SecurityIdentifier.value -like ""*-519"""
+"($_.SecurityIdentifier.value -like ""*-553"""
+"($keyusage,0"
+"($p.Value -eq ""CLEAR"""
+"('flags','CLEAR'"
+"('msPKI-Certificate-Application-Policy',@('1.3.6.1.4.1.311.20.2.2','1.3.6.1.5.5.7.3.2'"
+"('mspki-certificate-name-flag',1"
+"('mspki-enrollment-flag',0"
+"('mspki-private-key-flag',256"
+"('pKIDefaultCSPs','1,Microsoft Base Smart Card Crypto Provider'"
+"('pKIDefaultCSPs','1,Microsoft RSA SChannel Cryptographic Provider'"
+"('pkidefaultkeyspec',1"
+"('pkiextendedkeyusage',@('1.3.6.1.4.1.311.20.2.2','1.3.6.1.5.5.7.3.2'"
+"(($_.SecurityIdentifier.value -like ""*-512"""
+"(,$CA.cacertificate"
+"(,$NTAuthStore.cacertificate"
+"(,$t.pkiextendedkeyusage"
+"(0x1,$TemplateName"
+"(0xB,$TargetUPN"
+"(32,'0'"
+"(Mandatory = $true, ValueFromPipeline=$true"
+"(Position = 0, Mandatory = $false, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True"
+"(Position = 0, Mandatory = $true"
+"(Position = 1, Mandatory = $true"
+"(Position = 2, Mandatory = $false"
+"(e.g. Domain Admins, Authenticated Users,..."
+"(name="" + $Name + """
+($Attribute
+($BitFlag -eq '00000000000000000000000000000000'
+($CA in $EnterpriseCA
+($CA.cacertificate.gettype(
+($CertificateNameFlag
+($EnrollmentFlag
+($Global:ADCSTEMPLATESETTINGS -and -not $Force
+($IAN
+($IANs
+($Identity
+($IncludeACL
+($NTAuthStore.cacertificate.gettype(
+($PSBoundParameters['DeviceID']
+($PSBoundParameters['Name']
+($PSBoundParameters['NoSmartcard']
+($PSBoundParameters['Raw']
+($PrivateKeyFlag
+($ResolveFlags
+($SAN
+($TargetUPN
+($TemplateName
+($VSCName
+($_.Key
+($acl in $TemplatesACL
+($cert in $CACerts
+($p in $Properties.GetEnumerator(
+($refcert in $RefCerts
+($stderr
+($t in $Templates
+($t.pkiextendedkeyusage
+($t.pkiextendedkeyusage.gettype(
+($v in $VSC
+($v.DeviceID
+($value.gettype(
+(((Get-Domain
+((-not (compare-object $keyusage $RefOidDCAuthTemplate
+(([Convert]::ToBase64String($cert
+(-not $Global:ADCSTEMPLATESETTINGS
+(-not $STOPERROR
+(-not $TargetUPN
+(-not $VSC
+(-not $user
+(-not (Compare-Object $keyusage $RefOidKerbAuthTemplate
+(-not (Get-ADCSTemplate -Name $TemplateName
+(12345678
+(@cfalta
+(Active Directory Certificate Services
+(Convert-SidToName $acl.SecurityIdentifier
+(Enterprise CAs
+(Get-Domain
+(INCLUDING NEGLIGENCE OR OTHERWISE
+(Mandatory = $false
+(Mandatory = $true
+(Permission = Auto Enrollment
+(Permission = Enroll
+(Public Key Infrastructure
+(Write and Enroll or WriteDACL
+(Write/Enroll or WriteDACL
+([Convert]::ToBase64String($refcert
+(because in can be offline or disconnected
+(c
+(e.g. Domain Admins
+(e.g. domain admin
+(e.g. for an SMIME certificate
+(e.g. for authentication using 802.1x
+(e.g. through a service account
+(get-random -Minimum 1000 -Maximum 9999
+(https://user-images.githubusercontent.com/7213829/66890766-758a6a00-efe7-11e9-845a-4c38616b9e09.PNG
+(https://user-images.githubusercontent.com/7213829/66890878-db76f180-efe7-11e9-8639-87ebe0826dba.PNG
+(https://user-images.githubusercontent.com/7213829/66890940-16792500-efe8-11e9-818e-33314b60c72f.PNG
+(https://user-images.githubusercontent.com/7213829/66890953-20028d00-efe8-11e9-94ad-991d4da76d7f.PNG
+(https://user-images.githubusercontent.com/7213829/66891292-07df3d80-efe9-11e9-8f51-d6e36af42b60.png
+(objectclass=certificationAuthority
+(objectclass=pKIEnrollmentService
+(s
+(see above
+(think domain admin

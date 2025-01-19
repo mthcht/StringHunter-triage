@@ -1,0 +1,6 @@
+"<br> Sample secretsdump.py command: secretsdump.py -system registry/SYSTEM -ntds \""Active Directory/ntds.dit\"" LOCAL -outputfile customer -history"")"
+"The ntdsutil command will create the two files, `Active Directory\ntds.dit` and `registry\SYSTEM`, that are needed. You can then turn this output into the format expected by "
+"secretsdump.py -system registry/SYSTEM -ntds ""Active Directory/ntds.dit"" LOCAL -outputfile customer -history"
+"secretsdump.py -system registry/SYSTEM -ntds ""Active Directory/ntds.dit"" LOCAL -outputfile customer"
+"tore the output in c:\temp. The amount of space needed will be slightly larger than the size of the ntds.dit file that is currently on the disk, as this performs a backup of that file and some registry settin"
+wn below. Note: Jan/2020 Josh Wright reported that the history hashes are not exported correctly on ntds.dit files from Win2K16 TP4 and later. See this [issue](https://github.com/SecureAuthCorp/impacket/issue

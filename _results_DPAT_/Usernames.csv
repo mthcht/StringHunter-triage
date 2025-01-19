@@ -1,0 +1,17 @@
+"username FROM hash_infos WHERE nt_hash = \""' + tuple[0] + '\"" AND history_index = -1')"
+"username.endswith(""$"") and args.krbtgt or not username == ""krbtgt"":"
+"username_full = \"""" + user + ""\"""""
+"username_full FROM hash_infos WHERE nt_hash = \"""" + tuple[1] + ""\"" AND history_index = -1"")"
+"username_full,nt_hash FROM hash_infos WHERE \"""" + group[0] + ""\"" = 1 AND history_index = -1"")"
+"username_full,password,LENGTH(password) as plen,nt_hash,only_lm_cracked FROM hash_infos WHERE history_index = -1 ORDER BY plen DESC, password')"
+"username_full,password,LENGTH(password) as plen,only_lm_cracked FROM hash_infos WHERE only_lm_cracked = 1 ORDER BY plen AND history_index = -1')"
+"username_info = r""(?i)(.*\\*.*)_history([0-9]+)$"""
+"usernames in particular groups. The group names will be taken from the file name itself. The username list must be in the same format as found in the NTDS file such as some.ad.domain.com\\username or it can be in the format output by using the PowerView Get-NetGroupMember function. Example: -g ""Domain Admins.txt"" ""Enterprise Admins.txt""', nargs='*', required=False)"
+username = results.group(1)
+username = usernameFull
+username = usernameFull.split('\\')[-1]
+username FROM hash_infos WHERE history_index = -1 AND LENGTH(password) = ' + length)
+username. Example: -g
+username:RID:lmhash:nthash:::
+usernameFull = vals[0]
+usernames = c.fetchall()

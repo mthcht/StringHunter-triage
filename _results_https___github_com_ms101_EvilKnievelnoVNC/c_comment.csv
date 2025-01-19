@@ -1,0 +1,605 @@
+        // In the cases when releaseCapture comes first, the code above is"
+        // In the cases when the mouseup comes first, we need wait for the"
+        // The spec is unclear on this ""initial cursor"" issue. Many other"
+"//	if found in the HTML source of a page of the victim, it is assumed there is a successful login"
+"//
+"//        explicit ""cursor: none;""?"
+"//        isn't allowed this early, but I'm not sure that can"
+"//        key to ""AltGraph""."
+"// && $s[""state""] < 3"
+"// (i.e. are we over the target, or a child of the target without a"
+"// 0: idle, 1: clicked, 2: submitted, 3: authorized"
+"// 0: not blocked, 1: blocked"
+"// Add a call to save settings when the element changes,"
+"// All prepared, kick off the connection"
+"// Alt behaves more like AltGraph on macOS, so shuffle the"
+"// At this point, we know that the cursor is fully transparent, and"
+"// Can't use ""display"" because of Firefox bug #1445997"
+"// FIXME: _socketOpen() can in theory call _fail(), which"
+"// FIXME: if we're in view-only and not dragging,"
+"// If 'for' isn't set, use the first input element child"
+"// If no time was specified, show the status for 1.5 seconds"
+"// In TightVNC mode, ServerInit message is extended"
+"// Is this key already pressed? If so, then we must use the"
+"// Mouse events might be emulated, this allows"
+"// Scaling trumps clipping, so we may need to adjust"
+"// Send the button down event here, as the button up"
+"// Server sends supported list, client decides"
+"// Set the new value, update and disable form control setting"
+"// Siemens touch panels have a VNC server that supports NOTUNNEL,"
+"// Since the control bar is fixed on the viewport and not the page,"
+"// So, if a capture is active - look at the captured element instead."
+"// Temporarily disable animation, if bar is displayed, to avoid weird"
+"// The dot should not be shown if the cursor is already visible,"
+"// The exception is when a virtual keyboard is used, because"
+"// Therefor, if we get a lot of small mouse wheel events we combine them."
+"// This event could be because we're entering the target, or"
+"// This variable is ideally set when disconnection starts, but"
+"// Too soon since the latest move, wait the remaining time"
+"// Unstable, but we don't have anything else to go on"
+"// Update cookie and form control setting. If value is not set, then"
+"// Update state of clipping in Display object, and make sure the"
+"// User does not want to see the dot, so..."
+"// VeNCrypt authentication, currently only supports version 0.2 and only Plain subtype"
+"// View only, skip mouse events"
+"// We can't get a release in the middle of an AltGr sequence, so"
+"// We cannot handle keys we cannot track, but we also need"
+"// We don't send unsolicited clipboard, so we"
+"// We use setTimeout() so it's run in its own context, just like"
+"// When clipping is enabled, the screen is limited to"
+"// When normal keyboard events are left uncought, use the input events from"
+"// Windows doesn't have a proper AltGr, but handles it using"
+"// before this point, since this can throw an exception"
+"// browser smaller, despite remote resize being enabled. So to fix it"
+"// but our position is relative the _layout viewport_,"
+"// check every x milliseconds, for dynamic sites"
+"// check if state already set and blocked, assuming admin access"
+"// check if user id already exists, then skip"
+"// clean up, set focus to canvas"
+"// clientX/clientY are relative the _visual viewport_,"
+"// create array, generate request id per user (user id is the mail address)"
+"// echo statt cat, nur resolution.txt"
+"// fake Ctrl+Alt. However the remote end might not be Windows,"
+"// first pass, do the tunnel negotiation"
+"// hit the same spot, so slightly adjust coordinates"
+"// if a victim is connected, try to find its user id via the most recent entry in accesslog"
+"// if no state found, create one"
+"// if reconnect has been disabled in the meantime, do nothing."
+"// is not layout independent, so it is as bad as using keyCode"
+"// macOS doesn't send proper key events for modifiers, only"
+"// must fall through here (i.e. no ""else if""), beacause we may have already received"
+"// novnc stopped, but admin backend running -> blink!"
+"// read state if any, append new entries"
+"// reason, e.g. waiting for a password from the user"
+"// removing quotation marks, do not even try to escape!"
+"// reset chrome extension variables (reqid+sid), better be safe..."
+"// retrieve client identifier, store and add to chromium extension code"
+"// retrieve user agent, store it"
+"// second pass, do the sub-auth negotiation"
+"// successfully logged in -> close connection, block user and write state"
+"// tbd, one needs to differentiate unauth vs auth..."
+"// test with google-chrome --load-extension=""."" --no-first-run --auto-open-devtools-for-tabs <URL>"
+"// the server, we need to do it here as well since"
+"// to use in our case, so we always use our own panning"
+"// viewers (TigerVNC, RealVNC, Remmina) display an arrow as the"
+"// we don't actually do anything with the capability information that TIGHT sends,"
+"// we're past the point where we could backtrack, so it's safe to call this"
+"// which toggles on each press, but not on release. So pretend"
+//	https://developer.chrome.com/docs/extensions/reference/cookies/#method-getAll
+//	not working directly (httpOnly)
+//                   *after* we're past the point where we could backtrack
+//                   if we backtrack
+//        browsers detect this for us though and set the
+//        does however happily send real Ctrl events
+//        even when AltGr is already down. Some
+//        first manually pressed as Windows then no
+//        happen without a bug messing up our state variables
+//        longer sends the fake Ctrl down event. It
+//        should we stop events?
+// '?'
+// (even if they are happy)
+// * Safari doesn't support alphanumerical input while in fullscreen
+// 0 is NoSymbol
+// 229 is used for composition events
+// <timestamp> s<sid> <reqid> <userid> <ip> <agent>
+// ===== EVENT HANDLERS =====
+// ===== PRIVATE METHODS =====
+// ===== PROPERTIES =====
+// ===== PUBLIC METHODS =====
+// =====================================================
+// @JoelGMSec
+// A precursor to the final DOM3 standard. Unfortunately it
+// Actions
+// Adapt the interface for touch screen devices
+// Adds a link to the label elements on the corresponding input elements
+// Adjust the visible viewport based on the new dimensions
+// Always grab focus on some kind of click event
+// Always scroll in the same position.
+// Apple Remote Desktop
+// Apply remote resizing or local scaling
+// Assumed pixels for one line step
+// Avoid getting in to a loop
+// Bell
+// BlockBefore and BlockAfter are automatically handled by
+// Bootstrap fallback input handler
+// Bound event handlers
+// Build data  to send
+// CONTROLLER
+// COOKIE DETECTION (tbd)
+// Called when this._cursorImage is updated
+// Can't be clipping if viewport is scaled to fit
+// Captures end with a mouseup but we can't know the event order of
+// Change lone \r or \n into \r\n as defined in rfbproto
+// Changing the viewport may change the state of
+// Check Query string followed by cookie
+// Check if format flag is set.
+// Check if it already has \0
+// Check if server has told us it can handle Provide and there is clipboard data to send.
+// Check if the coordinates are outside the control bar
+// Check if we should show the cursor on the element we are leaving to
+// Class Methods
+// Clear the input after reading the password
+// ClientInitialisation
+// Close power panel if open
+// Compare the old string with the new to account for
+// Connection details
+// Consider this a movement of the handle
+// Control the text content length in the keyboardinput element
+// Corner case: control bar too small for stable position
+// Create DOM elements
+// Cursor
+// DASHBOARD
+// DH base generator value
+// Decode from BGRX pixels + bit mask to RGBA
+// Decoder states
+// Deflate incomming data and their sizes
+// Delete reference to raw channel to allow cleanup.
+// Disable automatic reconnecting
+// Disable viewport clipping if we are scaling
+// Disable/enable controls depending on connection state
+// Disable/enable power button
+// Display flushing state
+// Display object
+// Display the desktop name in the document title
+// Do this last because it can only be used on rendered elements
+// Do we really think this key is down?
+// Don't change anything if the client size is already as expected
+// Don't display the connection settings until we're actually disconnected
+// Don't fade if a child of the control bar has focus
+// Don't overwrite more severe visible statuses and never
+// Easy case
+// EndOfContinuousUpdates
+// Ensure proper transitions before doing anything
+// Error messages do not timeout
+// Extended clipboard pseudo-encoding actions
+// Extended clipboard pseudo-encoding formats
+// FIXME: How can we tell that a sub element has an
+// FIXME: Should probably verify that this data was actually requested
+// FIXME: This gets hidden when connecting
+// FIXME: We fail to detect this if either Ctrl key is
+// FIXME: We need to send a framebufferupdaterequest here
+// FIXME: handle more types
+// FIXME: support syncNext
+// Filter out unsupported flags
+// Flush waiting move event first
+// Force Safari to recalculate the layout by asking for
+// Force coordinates to be above the bottom of the control bar
+// Force coordinates to be below the top of the control bar
+// Formats
+// FramebufferUpdate
+// Generate a mouse wheel step event when the accumulated delta
+// Gesture events
+// Gesture input handler object
+// Gesture state
+// Gesture thresholds
+// Gets the the size of the available screen
+// HOOKING FORMS FOR LOGGING
+// Handle disconnects that were initiated server-side
+// Handler for key press/release
+// Has the child its own cursor?
+// Hide input related buttons in view only mode
+// Hide the controlbar after 2 seconds
+// How many seconds to wait for a disconnect to finish
+// IF NO INTERACTIVE SESSION IS INTENDED
+// If it's a virtual keyboard then it should be
+// If reconnecting is allowed process it now
+// If the user quickly taps multiple times we assume they meant to
+// If the window resized then our screen element might have
+// If we actually performed a drag then we are done
+// Ignore what we had in our clipboard client side.
+// Ignore when rfb already exists
+// Ignore when the browser doesn't let us play audio.
+// In order to not send multiple requests before the browser-resize
+// In preference order
+// In this case we focus our special virtual keyboard input
+// Initial page load read/initialization of settings
+// Intel AMT KVM
+// Internal objects
+// Internal state
+// It is common that the browsers require audio to be
+// Japanese IM keys so we have to fake the release right away
+// Keep this size until browser client size changes
+// Keyboard event handler"
+// Keyboard input handler object
+// Limit many mouse move events to one every MOUSE_MOVE_DELAY ms
+// List of depressed keys
+// Logging selection dropdown
+// Look for a matching security type in the order that the
+// MANIPULATE CONTENT
+// Make our elements part of the page
+// Make sure the previous frame is fully rendered first
+// Message Handlers
+// Minimum wait (ms) between two mouse moves
+// Monitor size changes of the screen element
+// Mouse events
+// Mouse state
+// Mouse wheel events are sent in steps over VNC. This means that the VNC
+// Move focus to the screen in order to be able to use the
+// Move the caret to the end
+// Move the handle but don't allow any position outside the bounds
+// NB(directxman12): these are down here so that we don't run them multiple times
+// NB(directxman12): we don't want to call any callbacks or print messages until
+// NB: nothing that needs explicit teardown should be done
+// Non-character key?
+// Normal disconnection path
+// Normally we only apply the current resize mode after a
+// Note that if deltamode is line or page won't matter since we aren't
+// OK
+// On security failures we might get a string with a reason
+// Only allow focus to move to other elements that need
+// Only prevent focus change if the virtual keyboard is active
+// Only show the button if fullscreen is properly supported
+// Only supported with full depth support
+// Other part of the DOM?
+// Otherwise we treat this as a mouse click event.
+// Padding
+// Pixel units unless it's non-zero.
+// Pixels needed for one step
+// Possible start of AltGr sequence? (see above)
+// Prevent actually submitting the form
+// Prevent middle-click pasting (see handler for why we bind to document)
+// Psuedo-encoding settings
+// REDIRECT if window.location differs from target domain
+// Read form control compatible setting from cookie
+// RealVNC 4.6
+// RealVNC 5.3
+// Refresh UI elements from saved cookies
+// Refresh the target from elementFromPoint since queued events
+// Release (key up) all keys that are in a down state
+// Release (key up) if window loses focus
+// Remove the address bar
+// Render default UI and initialize settings menu
+// Request changing the resolution of the remote display to
+// Requests a change of remote desktop size. This message is an extension
+// Reserved
+// Resize observer object
+// Restore control bar position
+// Resume authentication handshake after it was paused for some
+// Resume processing
+// STRING DETECTION
+// Save control setting to cookie
+// Save the id and flags of the first screen
+// Security types
+// See below
+// See comment in _handleKeyDown()
+// Send a key press. If 'down' is not specified then send a down key
+// Send the key events
+// Server capabilities
+// Server decides
+// ServerCutText
+// ServerFence
+// Set to null to indicate unknown/unsupported instead.
+// Set up translations
+// SetColorMapEntries
+// Settings with immediate effects
+// Setup event handlers
+// Should we currently display the cursor?
+// Show the connect panel on first load unless autoconnecting
+// Skip sending mouse events
+// So iterate through all alpha bytes in rgba and stop at the
+// Some browsers add an outline on focus
+// Some cases where the initial connection fails
+// Some platforms have scrollbars that are difficult
+// Special Tight security types
+// State change actions
+// State change closes dialogs as they may not be relevant
+// TIGHT client message capabilities
+// TIGHT encoding capabilities
+// TIGHT server message capabilities
+// TODO(directxman12): make genDES not require an Array
+// The 'disconnected' state is permanent for each RFB object
+// The difference between pixel and line can be important however since
+// The same fingerprint format as RealVNC
+// The standards disagree on the return value here
+// The transform needs coordinates that are relative to the parent
+// The y-position indicates the status code from the server
+// There always have to be some text in the keyboardinput
+// These heights need to be non-zero for the below logic to work
+// These helpers compensate for the lack of parent-selectors and
+// This causes the expected client dimensions to change.
+// This code is required since some browsers on Android are inconsistent in
+// This has to be ran outside of the input handler in order to work
+// This is a hack because Safari on macOS screws up the calculation
+// This sometimes causes the keyboard to disappear for a second
+// Timers
+// Touch events have implicit capture
+// Transition to disconnected without waiting for socket to close
+// Translate the DOM
+// Try to check caret position since whitespace at the end
+// Try to fetch version number
+// UI.disconnect() won't be used in those cases.
+// UltraVNC
+// UltraVNC repeater
+// Update our format flags
+// Update our server capabilities for Actions
+// Update our server capabilities for Formats
+// Update the settings control
+// Update viewport clipping property for the connection. The normal
+// Used to build Notify and Request data.
+// VeNCrypt security types
+// We are no longer clipping the viewport. Make sure
+// We don't know if the mouse was moved so we need to move it
+// We finished this FBU
+// We manipulate the anchor instead of the actual control
+// We might get this event because of a drag operation that
+// We might have detached at this point
+// We need to handle errors when we requested the resize.
+// We only support the format Text at this time
+// We rely on modern APIs which might not be available in an
+// Websock object
+// Wheel events
+// Wheel thresholds
+// When changing clipping we might show or hide scrollbars.
+// When the cursor target has capture we want to show the cursor.
+// Will be decreased when we return
+// Windows AltGr detection
+// Windows doesn't send proper key releases for a bunch of
+// Windows has a rather nasty bug where it won't send key
+// XVP
+// XVP_FAIL
+// XVP_INIT
+// XXX: TightVNC 2.8.11 sends no cursor at all until Windows changes
+// abort that detection
+// add entry to log file
+// add fields to state file
+// add reqid to haproxy whitelist (persistent)
+// add request id to blacklist acl via runtime API
+// add to blacklist on file system for persistence
+// addtargets.php
+// after each other
+// alternative standard method
+// an element's dimensions
+// and may only be sent if we have received an ExtendedDesktopSize message
+// anymore
+// as well. Update the viewport dimensions.
+// assuming admin access
+// authentication
+// bar in order to avoid creating new a stacking group
+// block user via button                                                                                                                                                                                                                       
+// block user/victim
+// blue-max
+// blue-shift
+// break
+// browser to flush all events and then check again if the cursor
+// but forgets to advertise it. Try to detect such servers by
+// but it is required for the android keyboard to recognize that
+// can disconnect before the _screen is created
+// capNum
+// case is to get the value from the setting. There are special cases
+// check color scheme pref
+// check if line is an email address
+// check if someone is connected to server instance (novnc/sXX)
+// check if there is a proper json state file
+// choose the notunnel type
+// clear errorlog.txt
+// clear log files
+// clear loot directory
+// clear state file
+// clipping when enabling or disabling scaling
+// configured viewport matches the current screen size
+// connect
+// continue
+// copy Downloads dir
+// currently working methods
+// decrypt cookie explicitely
+// define at least one search string
+// deleting collected chromium data
+// detect this case by seeing the two key events directly after
+// different cursor set)
+// directly from the server. Note that we can't control if
+// disable the labels that belong to disabled input elements.
+// disconnection timer
+// display content behind canvas after time
+// each other with a very short time between them (<50ms).
+// element instead.
+// element with which backspace can interact.
+// empty sub-auth list received means 'no auth' subtype selected
+// enough.
+// errors. Only shows the first error.
+// eslint-disable-next-line no-unused-vars
+// event is sent at the end of this function.
+// every update.
+// fade out the controlbar to highlight that
+// first non-zero.
+// flags
+// focus to function properly
+// followed by an up key.
+// for one of the axes is large enough.
+// for when scrollbars are needed. We get scrollbars when making the
+// for when the viewport is scaled or when a touch device is used.
+// get client IP
+// get form data from submit via Chromium extension
+// get input data
+// get state as php nested array
+// getModifierState for NumLock is not supported on mac and ios and always returns false.
+// green-max
+// green-shift
+// height
+// here and should not send any mouse events
+// hotspot-x
+// hotspot-y
+// htmlspecialchars!
+// https://textkool.com/en/ascii-art-generator?hl=default&vl=default&font=DOS%20Rebel&text=MultiEvilnoVNC ?>
+// i.e. contains at least one not-fully-transparent pixel.
+// id
+// if port == 80 (or 443) then it won't be present and should be
+// if the async web crypto is done return the results
+// if we add support for turning off continuous updates
+// if we focus the screen the virtual keyboard would be closed.
+// ignore the size
+// in minutes
+// in the framebuffer and don't send the empty local cursor. There is
+// initial connect. And we don't know if the server supports
+// initial cursor instead.
+// initiated from a user action.
+// insecure context
+// is finished we wait 0.5 seconds before sending the request.
+// is hit blindly. But there are also VNC servers that draw the cursor
+// it originally did via the WebSocket's event handler
+// it was a quick press and release of the button.
+// it. Result: no cursor at all until a window border or an edit field
+// keep these here so we can refer to them later
+// keyboard right after these extra keys.
+// keys around a bit to make things more sane for the remote
+// kill victim connection after successfull login
+// little-endian
+// logging to central acccess log via controller
+// looking for their custom tunnel type.
+// lookup user id via request id
+// macOS doesn't send proper key releases if a key is pressed
+// main setup
+// make sure we don't get a double event
+// might have altered the DOM
+// mouseup and mousedown on the same place toggles the controlbar
+// mouseup vs releaseCapture.
+// moved outside of the target. Check what's under the cursor
+// movement. The transitionend-event will not fire when display=none.
+// moving around amongst its sub elements. Let the move handler
+// moving the cursor in such cases
+// msg-type
+// no auth
+// no way to satisfy both sides.
+// novnc or admin backend available -> green
+// now and adjust visibility based on that.
+// number-of-screens
+// other party's public key
+// padding
+// part of paste mechanism by EK-noVNC
+// populate decoder array with objects
+// possibly others).
+// predetermined prime modulus
+// pressed
+// preventDefault() on mousedown doesn't stop this event for some
+// previous-sibling-selectors in CSS which are needed when we want to
+// protocol can't handle a wheel event with specific distance or speed.
+// put user on blacklist
+// read the server values
+// reason so we have to explicitly block it
+// receive data with targets (list of mail addresses one per line)
+// receive pasted input from victims
+// receive resolution by js and store in fs
+// receive tunnel capabilities
+// red-max
+// red-shift
+// refresh every x seconds
+// refresh page every few seconds if checkbox is checked
+// release events for a Shift button if the other Shift is still
+// release left Ctrl key on server
+// release v key on server
+// remove formerly found resolution and reqid
+// remove key auth option for Windows Live login
+// requires UI.rfb
+// reset
+// reset EvilnoVNC instance: restart docker container
+// reset specific EvilnoVNC instance via button
+// resize events aren't available for elements
+// resize rate limiting
+// resizing until we've gotten here.
+// resolve user id by lookup table reqid<>email
+// restart server
+// retrieve server instance ID via env
+// same keysym or we'll confuse the server
+// save collected data to central directory
+// screen array
+// sed uses same dir for temp file... -> copy
+// selectionStart is undefined in Google Chrome
+// send block request to controller                                                                                                                                                                                                    
+// send data base64 encoded to controller
+// send paste if Ctrl released
+// send reset request to controller
+// send reset signal
+// send signal to block user                                                                                                                                                                                                                   
+// send signal to close all connections and shut server
+// sending keyCodes in the normal keyboard events when using on screen keyboards.
+// sending the mouse wheel delta to the server anyway.
+// server prefers
+// server. This method is used by RealVNC and TigerVNC (and
+// set access time
+// set backend server to state ready (up)
+// set blocked
+// set manually
+// set server instance in maintenance mode
+// set state to authorized
+// set state to clicked 
+// set state to submitted
+// setSelectionRange is undefined in Google Chrome
+// should be visible.
+// so try to compensate when we can
+// so we just skip the all of this.
+// so we need to merge those in to a single AltGr event. We
+// sort things out.
+// starting -> orange
+// state < 3 should not happen (blacklist!)
+// state change events. That gets extra confusing for CapsLock
+// stop and restart server s<num>
+// stopped -> gray
+// stopping -> dark red
+// sub msg-type
+// substituded by index.php and reset by controller
+// substituted by index.php and reset by controller
+// sufficient to just send press and release right
+// synchronuosly.
+// text has been added to the field
+// text-corrections or other input that modify existing text
+// the dragging button
+// the fact that we process each incoming message
+// the focus has been moved to the screen
+// the keyboardinput element instead and generate the corresponding key events.
+// the move function expects coordinates relative the the viewport.
+// the size of the container.
+// the size of the local browser viewport.
+// the subtypes length and won't be called again
+// the user wants to see the dot instead of this.
+// this is a fake page for getting the victim's resolution (dynamic)
+// this string is translated or not.
+// to avoid building up an excessive queue
+// to deal with virtual keyboards which omit key info
+// unkown
+// unless the optional parameter changeFunc is used instead.
+// update state in statefile
+// update targets.json
+// updates from control to current cookie setting.
+// use NOTUNNEL
+// used by admins via dashboard
+// used by chrome extension
+// used by preload page to get resolution TODO
+// user clicked the phishing link
+// user submitted some data
+// user successfully logged in
+// viewport drag isn't active when it can't be used.
+// wait for RFB initialisation
+// wait until we receive the sub auth count to continue
+// wait until we receive the sub auth to continue
+// waiting for ACK
+// waiting for VeNCrypt version
+// waiting for subtypes length
+// waiting for subtypes list
+// we have a threshold that can be smaller than the line height.
+// we temporarily toggle them off and on.
+// when the disconnection isn't clean or if it is initiated by
+// while meta is held down
+// width
+// will not be considered by value.length in some browsers
+// window resize event. However there is no such trigger on the
+// x-position
+// y-position

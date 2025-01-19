@@ -1,0 +1,5 @@
+"Username: {}"","
+"Username::new(String::from(""?""), String::from(""?"")))"
+"Username::new(name_string, domain_string))"
+"username: Option<TokenUsername>,"
+username = logon_sid.to_username();

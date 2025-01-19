@@ -1,0 +1,498 @@
+"( [string]$pluginname, [string]$pluginid, [string]$pluginexample"
+"(!(Test-Path ""$outputdir"""
+"(!(Test-Path ""$outputdir\sysvol"""
+"("""""
+"("""", """""
+"(""$Server`:$Port"""
+"("","""
+"(""="""
+"(""Administrator"", ""Administrateur"", ""Administrador"""
+"(""Domain Admins"", ""Domain Admins"", ""Enterprise Admins"", ""Schema Admins"", ""Domain Controllers"", ""Backup Operators"", ""Account Operators"", ""Server Operators"", ""Print Operators"", ""Remote Desktop Users"", ""Network Configuration Operators"", ""Exchange Organization Admins"", ""Exchange View-Only Admins"", ""Exchange Recipient Admins"", ""Exchange Servers"", ""Exchange Trusted Subsystem"", ""Exchange Public Folder Admins"", ""Exchange UM Management"""
+"(""dns"", ""netlogon"", ""kdc"", ""w32time"", ""ntds"", ""dfsr"""
+"(""dns"", ""netlogon"", ""kdc"", ""w32time"", ""ntds"", ""ntfrs"""
+"(""http://$serverName/certsrv/"""
+"($DC.""msDS-SupportedEncryptionTypes"" -ne 8 -and $DC.""msDS-SupportedEncryptionTypes"" -ne 16 -and $DC.""msDS-SupportedEncryptionTypes"" -ne 24"
+"($DomainLevel -eq ""Windows2000Domain"" -and [single](Get-WinVersion"
+"($DomainLevel -eq ""Windows2003Domain"" -and [single](Get-WinVersion"
+"($DomainLevel -eq ""Windows2003InterimDomain"" -and [single](Get-WinVersion"
+"($DomainLevel -eq ""Windows2008Domain"" -and [single](Get-WinVersion"
+"($DomainLevel -eq ""Windows2008R2Domain"" -and [single](Get-WinVersion"
+"($DomainLevel -eq ""Windows2012Domain"" -and [single](Get-WinVersion"
+"($DomainLevel -eq ""Windows2012Domain"" -or $DomainLevel -eq ""Windows2012R2Domain"" -or $DomainLevel -eq ""Windows2016Domain"""
+"($DomainLevel -eq ""Windows2012R2Domain"" -and [single](Get-WinVersion"
+"($DomainLevel -eq ""Windows2016Domain"" -and [single](Get-WinVersion"
+"($ForestLevel -eq ""Windows2000Forest"" -and [single](Get-WinVersion"
+"($ForestLevel -eq ""Windows2003Forest"" -and [single](Get-WinVersion"
+"($ForestLevel -eq ""Windows2003InterimForest"" -and [single](Get-WinVersion"
+"($ForestLevel -eq ""Windows2008Forest"" -and [single](Get-WinVersion"
+"($ForestLevel -eq ""Windows2008R2Forest"" -and [single](Get-WinVersion"
+"($ForestLevel -eq ""Windows2012Forest"" -and [single](Get-WinVersion"
+"($ForestLevel -eq ""Windows2012R2Forest"" -and [single](Get-WinVersion"
+"($ForestLevel -eq ""Windows2016Forest"" -and [single](Get-WinVersion"
+"($OSVersion -like ""Windows Server 2019*"" -or $OSVersion -like ""Windows Server 2022*"""
+"($OSVersion -notlike ""Windows Server 2008*"""
+"($Xml.innerxml -like ""*cpassword*"" -and $Xml.innerxml -notlike '*cpassword=""""*'"
+"($_.ActiveDirectoryRights -ne 'ListChildren, ReadProperty, ListObject'"
+"($_.ActiveDirectoryRights -ne 'ReadProperty, GenericExecute'"
+"($_.IdentityReference -eq ""$AuthenticatedUsers"""
+"($_.IdentityReference -eq ""$EveryOne"""
+"($_.IdentityReference -eq ""BUILTIN\$Users"""
+"($_.IdentityReference -like ""*\$DomainUsers"""
+"($dc.""msDS-SupportedEncryptionTypes"""
+"($detail -like ""*CT_FLAG_ENROLLEE_SUPPLIES_SUBJECT -- 1*"""
+"($detail -like ""*Client Authentication*"""
+"($detail -like ""*TemplatePropCommonName =*"""
+"($detail -like ""2.5.29.37.0 Any Purpose"""
+"($detail -like ""Certificate Request Agent (1.3.6.1.4.1.311.20.2.1"
+"($detail -match ""^\s*Allow Enroll\s+.*\\Authenticated Users\s*$|^\s*Allow Enroll\s+.*\\Domain Users\s*$"""
+"($detail -match ""^\s*Allow Full Control\s+.*\\Authenticated Users\s*$|^\s*Allow Full Control\s+.*\\Domain Users\s*$"""
+"($detail -match ""^\s*Allow Write\s+.*\\Authenticated Users\s*$|^\s*Allow Write\s+.*\\Domain Users\s*$"""
+"($ip -ne ""::1"""
+"($line.StartsWith(""Template["""
+"($machine.ntsecuritydescriptor.Owner -ne ""$env:UserDomain\$DomainAdmins"""
+"($member.Name.'#text' -match ""$SchemaAdmins"" -or $member.Name.'#text' -match ""$DomainAdmins"" -or $member.Name.'#text' -match ""$EnterpriseAdmins"""
+"($member.Name.'#text' -ne ""BUILTIN\$Administrators"" -and $member.Name.'#text' -ne ""$EntrepriseDomainControllers"""
+"($member.Name.'#text' -ne ""BUILTIN\$Administrators"" -and $member.Name.'#text' -ne ""$LocalService"""
+"($member.Name.'#text' -ne ""BUILTIN\$Administrators"""
+"($serviceStatus -ne ""Running"""
+"($startMode -eq ""Disabled"""
+"($trust in (Get-ADObject -Filter { objectClass -eq ""trustedDomain"" } -Properties TrustPartner, TrustDirection, trustType, trustAttributes"
+"(','"
+"('GenericAll', 'GenericWrite', 'ForceChangePassword', 'WriteDacl', 'WriteOwner', 'Delete'"
+"('NT AUTHORITY\Authenticated Users', 'DOMAIN\Domain Users', 'Everyone'"
+"((Get-ADOptionalFeature -Filter 'Name -eq ""Recycle Bin Feature""'"
+"().Replace('""', ''"
+"().Split(""`n"""
+"(-not (Test-Path ""$outputdir\ASREP.txt"""
+"(Get-ADComputer -Filter { ms-Mcs-AdmPwd -notlike ""*"" }"
+"(Get-ADComputer -Filter { ms-Mcs-AdmPwdExpirationTime -like ""*"" } -Properties ms-Mcs-AdmPwdExpirationTime | select Name, ms-Mcs-AdmPwdExpirationTime"
+"(Get-ADObject -Filter { objectClass -like ""site"" } -SearchBase (Get-ADRootDSE"
+"(Get-ADObject -Identity ""CN=DFSR-GlobalSettings,$((Get-ADDomain"
+"(Get-ADUser -Filter { SamAccountName -eq ""krbtgt"" } -Properties PasswordLastSet"
+"(Get-Acl -Path ""Microsoft.ActiveDirectory.Management.dll\ActiveDirectory:://RootDSE/$object"""
+"(Get-Content ""$outputdir\ASREP.txt"""
+"(Get-Content ""$outputdir\sysvol\*.xml"" -ErrorAction SilentlyContinue"
+"(Get-Item -Path "".\"""
+"(Get-ItemProperty ""HKLM:\System\CurrentControlSet\Services\NTDS\Parameters"" -Name ""LdapEnforceChannelBinding"" -ErrorAction Stop"
+"(Get-ItemProperty HKLM:\SYSTEM\CurrentControlSet\Services\NTDS\Parameters -Name ""LDAPServerIntegrity"" -ErrorAction Stop"
+"(Get-Itemproperty -Path ""HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion"" -Name ProductName"
+"(Get-WmiObject -ComputerName $DC -Class Win32_Service -Property StartMode -Filter ""Name='wuauserv'"" -ErrorAction SilentlyContinue"
+"(Signing, null sessions etc "
+"(Test-Path ""$outputdir\GPOReport.html"""
+"(Test-Path ""$outputdir\GPOReport.xml"""
+"(Test-Path ""$outputdir\adaudit.nessus"""
+"(Test-Path ""$outputdir\ntds.dit"""
+"(Test-Path ""$outputdir\vulnerable_templates.txt"""
+"(Test-Path ""$outputdir\web_enrollment.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\ASREP.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\SPNs.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\accounts_disabled.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\accounts_inactive.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\accounts_passdontexpire.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\accounts_protectedusers.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\accounts_userPrivileged.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\accounts_with_old_passwords.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\dangerousACLUsers.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\dangerousACL_Computer.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\dangerousACL_Groups.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\dcs_not_owned_by_da.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\dcs_weak_kerberos_ciphersuite.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\insecure_dns_zones.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\laps_expired-passwords.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\laps_missing-computers.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\laps_read-extendedrights.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\machines_old.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\ou_permissions.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\vulnerable_templates.txt"""
+"([System.IO.File]::ReadAllText(""$outputdir\web_enrollment.txt"""
+"([Text.Encoding]::GetEncoding(""Cyrillic"""
+"([string][environment]::OSVersion.Version.Major + ""."" + [string][environment]::OSVersion.Version.Minor"
+( $ADs | Select-Object OperatingSystemHotfix -Unique 
+( (( $ADs | Select-Object OperatingSystemHotfix -Unique 
+( enroll or full control 
+(!$running
+(!($finegrainedpolicy
+(!($serviceStatus
+(!($shareList
+(!($startMode
+(!(Get-ADDefaultDomainPasswordPolicy
+(!(Get-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters
+(!(Get-Module -ListAvailable -Name DSInternals
+(!(Get-PackageProvider -ListAvailable -Name Nuget -ErrorAction SilentlyContinue
+($($AdministratorName
+($($account.Name
+($($insecurezone.DynamicUpdate
+($(((Get-GPInheritance -Target $ouobject
+($ADs | Select-Object OperatingSystemHotFix -Unique | ForEach-Object {$_.OperatingSystemHotfix}
+($ADs | Select-Object OperatingSystemServicePack -Unique
+($ADs | Select-Object OperatingSystemServicePack -Unique | ForEach-Object {$_.OperatingSystemServicePack}
+($ADs | Select-Object OperatingSystemVersion -Unique
+($ADs | Select-Object OperatingSystemVersion -Unique | ForEach-Object {$_.OperatingSystemVersion}
+($ADs | Where-Object {$_.OperationMasterRoles -ne $null} | select -ExpandProperty Hostname
+($AdminLocalLogonAllowed
+($AdminName in $AdministratorTranslation
+($AdminNetworkLogonAllowed
+($AdminRPDLogonAllowed
+($AdministratorLastLogonDate -gt (Get-Date
+($AdministratorTranslation -contains $AdministratorSAMAccountName
+($AuditNTLM.count -eq 0
+($DC in $ADcomputers
+($DC in $dcList
+($DC.DNSHostName
+($DFSRFlags
+($DenyNTLM.count -eq 0
+($EncryptionTypesNotConfigured
+($ExcessiveDCInteractiveLogon -or $ExcessiveDCBackupPermissions -or $ExcessiveDCRestorePermissions -or $ExcessiveDCDriverPermissions -or $ExcessiveDCLocalShutdownPermissions -or $ExcessiveDCRemoteShutdownPermissions -or $ExcessiveDCTimePermissions -or $ExcessiveDCBatchLogonPermissions -or $ExcessiveDCRDPLogonPermissions
+($File
+($File in $XMLFiles
+($GPO in $AllGPOs
+($GPO.DisplayName
+($HardenNTLM.count -eq 0
+($MachineAccountQuota -gt 0
+($NTLMAuthExceptions.count -ne 0
+($Ou.ObjectDN
+($PSVersionTable.PSVersion.Major -ge 5
+($Site in $Forest.Sites
+($Site.Name
+($SitesWithNoGC -eq $true
+($String
+($WeakKerberos
+($XMLFiles
+($XMLFiles | Measure-Object | Select-Object Count
+($XMLFiles.count
+($_ -ne $System
+($_.AccessControlType -ne 'Deny'
+($_.ActiveDirectoryRights -ne 'ExtendedRight'
+($_.ActiveDirectoryRights -ne 'GenericExecute'
+($_.ActiveDirectoryRights -ne 'GenericRead'
+($_.ActiveDirectoryRights -ne 'ListChildren'
+($_.ActiveDirectoryRights -ne 'ListObject'
+($_.ActiveDirectoryRights -ne 'ReadControl'
+($_.ActiveDirectoryRights -ne 'ReadProperty'
+($_.Exception.Response.StatusCode -eq 401
+($_.IsReadOnly
+($_.Name
+($_.Name -eq $(Remove-StringLatinCharacters $_.Name
+($_.OperatingSystem
+($_.OperatingSystemHotfix
+($_.OperatingSystemServicePack
+($_.OperatingSystemVersion
+($account in $accountsoldpasswords
+($account in $disabledaccounts
+($account in $inactiveaccounts
+($account in $lockedAccounts
+($account in $nonexpiringpasswords
+($account in $privusersunique
+($account.Enabled
+($account.LastLogonDate
+($account.PasswordLastSet
+($account.SamAccountName
+($accounts -or ($all -and 'accounts' -notin $exclude
+($accountsoldpasswords | Measure-Object | Select-Object Count
+($acl
+($acl -or ($all -and 'acl' -notin $exclude
+($adcs -or ($all -and 'adcs' -notin $exclude
+($all_groups -contains $spn_group
+($anonymousCredential
+($asrep -or ($all -and 'asrep' -notin $exclude
+($authpolsilos -or ($all -and 'authpolsilos' -notin $exclude
+($base_groups.count -gt 0
+($certInfo | Select-String 'Server:' | Select-Object -First 1
+($computer in $computers
+($computer in $computersList 
+($computer.'ms-Mcs-AdmPwdExpirationTime'
+($computer.DistinguishedName
+($computer.Name
+($computerResults
+($computers.Count
+($computers.IndexOf($computer
+($count -eq 0
+($count -gt 0
+($count -lt 1
+($count -ne $totalSite
+($count / $totalcount * 100
+($dangerousRules
+($dcList | Measure-Object | Select-Object Count
+($detail in $template_unparsed
+($disabledaccounts | Measure-Object | Select-Object Count
+($domainaudit -or ($all -and 'domainaudit' -notin $exclude
+($domaincontrollers | Measure-Object | Select-Object Count
+($expiration -lt $today
+($finegrainedpolicy
+($finegrainedpolicy in Get-ADFineGrainedPasswordPolicy -Filter *
+($finegrainedpolicyappliesto
+($gpo -or ($all -and 'gpo' -notin $exclude
+($group in $base_groups
+($group in $default_groups
+($group in $groups
+($group.DistinguishedName
+($groupResults
+($groups.Count
+($groups.IndexOf($group
+($high_value_users.Name -notcontains $name
+($hostdetails -or ($all -and 'hostdetails' -notin $exclude
+($inactiveaccounts | Measure-Object | Select-Object Count
+($insecurednszone -or ($all -and 'insecurednszone' -notin $exclude
+($insecurezone in $insecurezones 
+($insecurezone.ZoneName
+($insecurezones | Measure-Object | Select-Object Count
+($installdeps
+($ip in $IPAddresses
+($krbtgtPasswordDate -lt (Get-Date
+($laps -or ($all -and 'laps' -notin $exclude
+($lastHotfix
+($lastHotfix -lt $lastMonth
+($ldapSigning -eq 2
+($ldapsBinding -eq 2
+($ldapsCert
+($ldapsecurity -or ($all -and 'ldapecurity' -notin $exclude
+($line in $certutil_lines
+($lockedAccounts | Measure-Object | Select-Object Count
+($machine in $domaincontrollers
+($machine in $oldboxes
+($machine.IPv4Address
+($machine.Name
+($machine.OperatingSystem
+($machine.OperatingSystemServicePack
+($machine.OperatingSystemVersio
+($machine.ntsecuritydescriptor.Owner
+($member in $DomainAdminsMembers
+($member in $EnterpriseMembers
+($member in $SchemaMembers
+($member in (($xmlreport.GPO.Computer.ExtensionData.Extension.SecurityOptions | Where-Object { $_.KeyName -Match 'DCAllowedNTLMServers' }
+($member in (($xmlreport.GPO.Computer.ExtensionData.Extension.UserRightsAssignment | Where-Object { $_.Name -eq 'SeBackupPrivilege' }
+($member in (($xmlreport.GPO.Computer.ExtensionData.Extension.UserRightsAssignment | Where-Object { $_.Name -eq 'SeBatchLogonRight' }
+($member in (($xmlreport.GPO.Computer.ExtensionData.Extension.UserRightsAssignment | Where-Object { $_.Name -eq 'SeDenyInteractiveLogonRight' }
+($member in (($xmlreport.GPO.Computer.ExtensionData.Extension.UserRightsAssignment | Where-Object { $_.Name -eq 'SeDenyNetworkLogonRight' }
+($member in (($xmlreport.GPO.Computer.ExtensionData.Extension.UserRightsAssignment | Where-Object { $_.Name -eq 'SeDenyRemoteInteractiveLogonRight' }
+($member in (($xmlreport.GPO.Computer.ExtensionData.Extension.UserRightsAssignment | Where-Object { $_.Name -eq 'SeInteractiveLogonRight' }
+($member in (($xmlreport.GPO.Computer.ExtensionData.Extension.UserRightsAssignment | Where-Object { $_.Name -eq 'SeLoadDriverPrivilege' }
+($member in (($xmlreport.GPO.Computer.ExtensionData.Extension.UserRightsAssignment | Where-Object { $_.Name -eq 'SeMachineAccountPrivilege' }
+($member in (($xmlreport.GPO.Computer.ExtensionData.Extension.UserRightsAssignment | Where-Object { $_.Name -eq 'SeRemoteInteractiveLogonRight' }
+($member in (($xmlreport.GPO.Computer.ExtensionData.Extension.UserRightsAssignment | Where-Object { $_.Name -eq 'SeRemoteShutdownPrivilege' }
+($member in (($xmlreport.GPO.Computer.ExtensionData.Extension.UserRightsAssignment | Where-Object { $_.Name -eq 'SeRestorePrivilege' }
+($member in (($xmlreport.GPO.Computer.ExtensionData.Extension.UserRightsAssignment | Where-Object { $_.Name -eq 'SeShutdownPrivilege' }
+($member in (($xmlreport.GPO.Computer.ExtensionData.Extension.UserRightsAssignment | Where-Object { $_.Name -eq 'SeSystemTimePrivilege' }
+($member.Name
+($member.Name.'#text'
+($member.SamAccountName
+($member.objectClass
+($members in $protectedaccounts
+($missingComputers | Measure-Object | Select-Object Count
+($netlogonShare -eq 0
+($newGroup in $newGroups 
+($newGroup.SamAccountName
+($newGroup.whenCreated
+($newGroups | Measure-Object | Select-Object Count
+($newUser in $newUsers 
+($newUser.SamAccountName
+($newUser.whenCreated
+($newUsers  | Measure-Object | Select-Object Count
+($nonexpiringpasswords | Measure-Object | Select-Object Count
+($ntds -or ($all -and 'ntds' -notin $exclude
+($ntpSource -like '*0x800706BA*'
+($object in $objects
+($objectExists
+($objects | Measure-Object | Select-Object Count
+($oldboxes -or ($all -and 'oldboxes' -notin $exclude
+($oldboxes | Measure-Object | Select-Object Count
+($osList | sort -Unique
+($ouobject in $ousgpos
+($ouobject.Name
+($ouperms -or ($all -and 'ouperms' -notin $exclude
+($ousgpos | Measure-Object | Select-Object Count
+($output -ne $null
+($output.AccessControlType
+($output.ActiveDirectoryRights
+($output.IdentityReference
+($passwordpolicy -or ($all -and 'passwordpolicy' -notin $exclude
+($permissionindex -gt 0
+($permissionindex -gt 0 -and $GPO.DisplayName -eq 'Default Domain Controllers Policy'
+($policy in Get-ADAuthenticationPolicy -Filter *
+($policysilo in Get-ADAuthenticationPolicySilo -Filter *
+($privilegedusers | Measure-Object | Select-Object Count
+($progresscount / $totalcount * 100
+($protectedaccounts | Measure-Object | Select-Object Count
+($recentchanges -or ($all -and 'recentchanges' -notin $exclude
+($record
+($record in $AllowedJoin
+($record in $DenyNTLM
+($record in $HardenNTLM
+($record in $NTLMAuthExceptions
+($record.GPO
+($record.Name
+($record.gpo
+($record.value
+($result in $QueryResult
+($rule in $dangerousRules
+($select
+($service
+($service in $services
+($shareList | ? { $_ -match 'NETLOGON' } | measure
+($shareList | ? { $_ -match 'SYSVOL' }   | measure
+($spn -or ($all -and 'spn' -notin $exclude
+($spn in $SPNs
+($spn_group in $spn_groups
+($sysvolShare -eq 0
+($template in $ESC1
+($template in $ESC2
+($template in $ESC3
+($template in $ESC4
+($totalcount -eq 0
+($totalcount -gt 0
+($totalcountGroups -gt 0
+($totalcountUsers -gt 0
+($trust.Name
+($trust.TrustAttributes -eq 1 -or $trust.TrustAttributes -eq 4
+($trust.TrustDirection -eq 2
+($trust.TrustDirection -eq 3
+($trusts -or ($all -and 'trusts' -notin $exclude
+($user in $ASREP
+($user in $high_value_users
+($user in $users
+($user.DistinguishedName
+($userResults
+($users.Count
+($users.IndexOf($user
+($value.Display.DisplayBoolean
+($value.Display.DisplayString
+(&(objectCategory=group
+('<q1:Name>SeMachineAccountPrivilege</q1:Name>'
+('AuditNTLMInDomain</q1:KeyName>'
+('AuditReceivingNTLMTraffic</q1:KeyName>'
+('DCAllowedNTLMServers</q1:KeyName>'
+('LmCompatibilityLevel</q1:KeyName>'
+('MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters\SupportedEncryptionTypes'
+('NoLMHash</q1:KeyName>'
+('RestrictNTLMInDomain</q1:KeyName>'
+('SeBackupPrivilege'
+('SeBatchLogonRight'
+('SeDenyInteractiveLogonRight'
+('SeDenyNetworkLogonRight'
+('SeDenyRemoteInteractiveLogonRight'
+('SeInteractiveLogonRight'
+('SeLoadDriverPrivilege'
+('SeRemoteInteractiveLogonRight'
+('SeRemoteShutdownPrivilege'
+('SeRestorePrivilege'
+('SeShutdownPrivilege'
+('SeSystemTimePrivilege'
+('}'
+(($ADs | Where-Object { $_.OperatingSystem -Match '2003' }
+(($ADs | Where-Object { $_.OperatingSystem -Match '2008 !(R2
+(($ADs | Where-Object { $_.OperatingSystem -Match '2008 R2' }
+(($ADs | Where-Object { $_.OperatingSystem -Match '2012 !(R2
+(($ADs | Where-Object { $_.OperatingSystem -Match '2012 R2' }
+(($ADs | Where-Object { $_.OperatingSystem -Match '2016' }
+(($ADs | Where-Object { $_.OperatingSystem -Match '2019' }
+(($ADs | Where-Object { $_.OperatingSystem -Match '2022' }
+(($ADs | Where-Object { $_.OperationMasterRoles -ne $null } | measure
+(($ADs | Where-Object { $_.Site -eq $Site.Name } | Where-Object { $_.IsGlobalCatalog -eq $true }
+(($EncryptionTypes     | Where-Object { $_.Name -eq 'DES_CBC_CRC' }             | select -ExpandProperty value
+(($EncryptionTypes | Where-Object { $_.Name -eq 'AES128_HMAC_SHA1' }        | select -ExpandProperty value
+(($EncryptionTypes | Where-Object { $_.Name -eq 'AES256_HMAC_SHA1' }        | select -ExpandProperty value
+(($EncryptionTypes | Where-Object { $_.Name -eq 'DES_CBC_MD5' }             | select -ExpandProperty value
+(($EncryptionTypes | Where-Object { $_.Name -eq 'Future encryption types' } | select -ExpandProperty value
+(($EncryptionTypes | Where-Object { $_.Name -eq 'RC4_HMAC_MD5' }            | select -ExpandProperty value
+(($EnterpriseMembers | measure
+(($SchemaMembers | measure
+(($computers.IndexOf($computer
+(($finegrainedpolicy
+(($groups.IndexOf($group
+(($osList | sort -Unique | measure
+(($users.IndexOf($user
+((($ADs | Select-Object OperatingSystemServicePack -Unique
+((($ADs | Select-Object OperatingSystemVersion -Unique 
+((Get-ADDefaultDomainPasswordPolicy
+((Get-ADDomain
+((Get-ADDomain -Current LoggedOnUser
+((Get-ADUser -Filter { SamAccountName -eq $AdminName }
+((Get-Date
+((Get-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Control\Lsa
+((Get-PSRepository -Name PSGallery
+((Get-SmbServerConfiguration
+().Split(':'
+(*CH* Changed below to look for msDS-SupportedEncryptionTypes to work with 2008R2
+(-180
+(-30
+(-90
+(1
+(180days
+(2012R2 and above
+(5
+(AD services + Windows Update + NTP source + Computer/User container + RODC + Locked accounts + Password Quality + SYSVOL & NETLOGON share presence
+(But shouldn't you be doing that anyway with code you download off the net and then run as DA??
+(Cheers DK
+(DSInternals
+(FRS or DFSR
+(Get-ADDomain
+(Get-ADDomain | select -ExpandProperty DistinguishedName
+(Get-ADDomain | select -ExpandProperty DistinguishedName | Get-ADObject -Property 'ms-DS-MachineAccountQuota' | select -ExpandProperty ms-DS-MachineAccountQuota
+(Get-ADDomainController -Discover
+(Get-ADDomainController -Filter *
+(Get-ADForest
+(Get-ADGroup $ProtectedUsers -Properties members
+(Get-ADGroup -Identity $DomainAdminsSID
+(Get-ADGroup -Identity $DomainControllersSID
+(Get-ADGroup -Identity $DomainUsersSID
+(Get-ADGroup -Identity $EnterpriseAdminsSID
+(Get-ADGroup -Identity $ProtectedUsersSID
+(Get-ADGroup -Identity $SchemaAdminsSID
+(Get-ADGroup -Identity S-1-5-32-544
+(Get-ADGroup -Identity S-1-5-32-545
+(Get-ADObject -Filter *
+(Get-ADOrganizationalUnit -Filter *
+(Get-ADRootDSE
+(Get-ADUser -Filter { SID -eq $AdministratorSID } -Properties LastLogonDate
+(Get-ADUser -Filter { SID -eq $AdministratorSID } -Properties SamAccountName
+(Get-Acl AD:$object
+(Get-Date
+(Get-HotFix -ComputerName $DC | Where-Object { $_.InstalledOn -ne $null } | Sort-Object -Descending InstalledOn  | Select-Object -First 1
+(Get-Module -ListAvailable -Name ActiveDirectory
+(Get-Module -ListAvailable -Name AdmPwd.PS
+(Get-Module -ListAvailable -Name DSInternals
+(Get-Module -ListAvailable -Name GroupPolicy
+(Get-Module -ListAvailable -Name ServerManager
+(Get-WinVersion
+(Get-WmiObject -Class Win32_Share -ComputerName $DC -ErrorAction SilentlyContinue
+(KB250
+(KB251
+(KB253
+(KB254
+(KB258
+(KB262
+(KB263
+(KB290
+(KB3/37/38/KB259
+(KB309
+(KB329
+(KB426
+(KB499
+(KB500
+(KB501
+(KB510
+(KB550
+(KB81
+(KB842
+(LocalAdmini
+(LocalAdministrator
+(New-TimeSpan -Days 180
+(PowerShell 5.0 needed if you intend to use DSInternals PowerShell module
+(R2
+(SMBv1 currently
+(Split-Path (Split-Path (Split-Path( Split-Path (Split-Path $File -Parent
+(UID500
+([System.Security.Principal.NTAccount]
+([single](Get-WinVersion
+([string]$String
+(and checking SYSVOL for passwords
+(but do not install external modules
+(for offline processing using grouper https://github.com/l0ss/Grouper/blob/master/grouper.psm1
+(last 30 days
+(memberof=$($ADGrp.DistinguishedName
+(objectClass=msDFSR-GlobalSettings
+(other than ntdsutil and cmd.exe
+(thanks --> https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Get-GPPPassword.ps1
+(thanks exceedio
+(will do this properly or as a function later. Will need more characters adding here...
+(you may need to adjust $AdministratorTranslation variable

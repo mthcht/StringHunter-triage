@@ -1,0 +1,31 @@
+"// decrypt ""amsi.dll"""
+"// decrypt ""kernel32.dll"""
+//   PEB* pPeb = (PEB*)__readgsqword(0x60);
+// Check if all required system functions were loaded successfully
+// Display error message
+// Example shellcode array in 0x format
+// Function to reverse a shellcode array in 0x format
+// Hardware components checker
+// It lacks the ability to effectively hide from a user manually
+// PEB* pPeb = (PEB*)__readgsqword(0x30);
+// Reverse the shellcode
+// check NUMA
+// check RAM
+// check number of processors
+// checking if this is the DLL we are looking for
+// custom implementation
+// for x86
+// getting the address of current LDR_DATA_TABLE_ENTRY (which represents the DLL).
+// https://cocomelonc.github.io/malware/2023/04/08/malware-av-evasion-15.html
+// https://cocomelonc.github.io/malware/2023/04/16/malware-av-evasion-16.html
+// iterating through the linked list.
+// iterating to the next node. this will be our starting point.
+// obtaining the address of the head node in a linked list 
+// obtaining the offset of PPEB from the beginning of TEB
+// puting the comma after the byte then when go to last byte delete the comma
+// returning the DLL base address.
+// scanning encoded content with a hex editor.     
+// the needed DLL wasn't found
+// try to prevent particular weakness of single-byte encoding: 
+// which represents all the models that are loaded into the process.
+// will be 1048576

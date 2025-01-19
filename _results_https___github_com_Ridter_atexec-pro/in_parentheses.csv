@@ -1,0 +1,231 @@
+"("" """
+"("" "", 1"
+"("""", script, save=True, save_path=local"
+"(""-i"",""--interface"", action=""store"", help=""Interface to use."", default=""TSCH"", choices=(""TSCH"",""ATSVC"""
+"(""Connect error, error is {}"".format(e"
+"(""Example: execute_assembly /tmp/Rubeus.exe hash /password:X"""
+"(""Invalid value. Use true or false."""
+"(""Local Command"", fg=Fg.WHITE, bg=Bg.LIGHT_BLUE, bold=True"
+"(""Password:"""
+"(""Post Exploitation"", fg=Fg.WHITE, bg=Bg.LIGHT_GREEN, bold=True"
+"(""Run Command"", fg=Fg.WHITE, bg=Bg.LIGHT_RED, bold=True"
+"(""Successfully bound."""
+"(""Task is stopped"""
+"(""This will work ONLY on Windows >= Vista"""
+"(""Usage: set <option> <value>"""
+"(""{key_b64}"""
+"(""{taskname}"""
+"($encryptedDataBytes, 0, $encryptedDataBytes.Length"
+"($key, $data"
+"($key, $encryptedData"
+"($null, [object[]](,$ARGS_NAME"
+"($task.Name, $definition, 6, $user, $null, $task.Definition.Principal.LogonType"
+"($utf8Bytes, 0, $utf8Bytes.Length"
+"('-codec', action='store', help='Sets encoding used (codec"
+"('-debug', action='store_true', help='Turn DEBUG output ON'"
+"('-hashes', action=""store"", metavar = ""LMHASH:NTHASH"", help='NTLM hashes, format is LMHASH:NTHASH'"
+"('-keytab', action=""store"", help='Read keys for SPN from keytab file'"
+"('-l','--local', type=str, help='Local file to download', default=""./"", required=False"
+"('-no-pass', action=""store_true"", help='don\'t ask for password (useful for -k"
+"('-session-id', action='store', type=int, help='an existed logon session to use (no output, no cmd.exe"
+"('-ts', action='store_true', help='adds timestamp to every logging output'"
+"('./libs/powershells/cmd.ps1', 'r'"
+"('./libs/powershells/common.ps1', 'r'"
+"('./libs/powershells/download.ps1', 'r'"
+"('./libs/powershells/net.ps1', 'r'"
+"('./libs/powershells/upload.ps1', 'r'"
+"('Downloading %s to %s' % (remote, local"
+"('Executing assembly: %s, args: %s' % (prog, args"
+"('Execution failed, no output returned or the ps killed by AV.'"
+"('File size is too big, please consider using a smaller file'"
+"('REPLACE_ARGS', encode_args"
+"('REPLACE_FILE_PATH', remote"
+"('Uploading %s to %s' % (local, remote"
+"('When STATUS_OBJECT_NAME_NOT_FOUND is received, try running again. It might work'"
+"('[+] Type help for list of commands.', fg=Fg.WHITE, bg=Bg.DARK_GRAY, bold=True"
+"('command', type=str, help='Command to execute'"
+"('local', type=str, help='Local file to upload'"
+"('remote', type=str, help='Remote file to download'"
+"('remote', type=str, help='Remote file to upload'"
+"('target', action='store', help='[[domain/]username[:password]@]<targetName or address>'"
+"('task.xml', 'w'"
+"((do_ps_exec, do_cmd_exec"
+"((do_shell, do_lcd"
+"((do_upload, do_download, do_execute_assembly"
+"().__init__(allow_cli_args=False, include_ipy=False"
+"().do_set("" "".join(args"
+"(addr, tsch.MSRPC_UUID_TSCHS, protocol=""ncacn_ip_tcp"""
+"(address, interface"
+"(cmd2.Cmd, 'do_edit'"
+"(cmd2.Cmd, 'do_macro'"
+"(cmd2.Cmd, 'do_py'"
+"(cmd2.Cmd, 'do_quit'"
+"(cmd2.Cmd, 'do_run_pyscript'"
+"(cmd2.Cmd, 'do_run_script'"
+"(cmd2.Cmd, 'do_shortcuts'"
+"(command, script"
+"(data.decode(self.__codec, errors='replace'"
+"(dce, '\\%s' % tmpName"
+"(dce, '\\%s' % tmpName, flags=tsch.TASK_RUN_USE_SESSION_ID, sessionId=self.sessionId"
+"(dce, '\\%s' % tmpName, xml, tsch.TASK_CREATE, NULL, tsch.TASK_LOGON_NONE"
+"(dce, guid"
+"(default ""utf-8"""
+"(f""Connecting to DCE/RPC as {as_user}"""
+"(file_data, script"
+"(file_data, script, randomkey=key"
+"(key, AES.MODE_CBC"
+"(key, AES.MODE_CBC, iv"
+"(key, args.lstrip("
+"(local, 'rb'"
+"(local, remote"
+"(no output, no cmd.exe"
+"(options.keytab, username, domain, options"
+"(padded_data, AES.block_size"
+"(prog, 'rb'"
+"(prog, args"
+"(ps_script, 'utf-16le'"
+"(randomkey, description"
+"(randomkey, output"
+"(remote, local"
+"(replace_table.get(c, c"
+"(rpctransport, 'set_credentials'"
+"(rpctransport, interface"
+"(save_path, 'wb'"
+"(self, addr, interface"
+"(self, args"
+"(self, cmdline"
+"(self, command"
+"(self, data"
+"(self, description, script, randomkey="""",tmpName="""", save=False, save_path="""""
+"(self, key, data"
+"(self, key, encrypted_data"
+"(self, line"
+"(self, local, remote"
+"(self, prog, args"
+"(self, remote, local"
+"(self, rpctransport, intercate"
+"(self, rpctransport, randomkey="""", tmpName="""",description="""", script="""", save=False, save_path="""""
+"(self, s"
+"(self, statement: Statement"
+"(self, text, line, begidx, endidx"
+"(self, username, password, domain, hashes, aesKey, k, dc_ip, session_id, address, interface,CODEC"
+"(self, username='', password='', domain='', hashes=None, aesKey=None, doKerberos=False, kdcHost=None, sessionId=None, codec=""utf-8"""
+"(self,data"
+"(self.__doKerberos, self.__kdcHost"
+"(self.__rpctransport, randomkey=randomkey, tmpName=tmpName, description=description, script=script, save=save, save_path=save_path"
+"(text, line, begidx, endidx, self.settables"
+"(username, address"
+"(username, password, domain, hashes, aesKey, k, dc_ip, session_id, CODEC"
+"(username, password, domain, options.hashes, options.aesKey, options.k, options.dc_ip, options.session_id, address, options.interface, CODEC"
+(!(Test-Path -Path $dir
+($args
+($base64String
+($byteArray
+($consoleOutput
+($data
+($decryptedDataBytes
+($entryPoint -ne $null
+($fileInfo.Length -gt 1048576
+($oldOut
+($scheduler
+($streamWriter
+($taskPath
+($taskname
+(%s@%s
+('/'
+(':'
+('</Description>'
+('<Description>'
+('Bye!\n'
+('Calling SchRpcGetTaskInfoResponse for \\%s' % tmpName
+('Calling SchRpcRetrieveTask to get result for \\%s' % tmpName
+('Creating task \\%s' % tmpName
+('Deleting task \\%s' % tmpName
+('ERROR_FILE_NOT_FOUND'
+('E_INVALIDARG'
+('Executing cmd command: %s' % command
+('Executing ps command: %s' % s
+('File %s not found!' % prog
+('Local File %s not found!' % local
+('Running task \\%s' % tmpName
+('STATUS_OBJECT_NAME_NOT_FOUND'
+('Task XML for \\%s' % tmpName
+('Task xml size: %d' % len(xml
+('The specified session doesn\'t exist!'
+('\\'
+('ascii'
+('authentication'
+('task xml: %s' % xml
+('utf-8'
+().dump(
+().setLevel(logging.DEBUG
+().setLevel(logging.INFO
+(*rpctransport.get_credentials(
+(0
+(1
+(128 or 256 bits
+(16
+(8
+(FQDN
+(KRB5CCNAME
+(RPC_C_AUTHN_GSS_NEGOTIATE
+(RPC_C_AUTHN_LEVEL_PKT_PRIVACY
+(Test-Path -Path $target_file
+(Test-Path -Path $target_path
+([System.Convert]::FromBase64String($decryptedDescription
+([random.choice(string.ascii_letters
+(and this session
+(args
+(assets/image-1.png
+(assets/image-2.png
+(assets/image-3.png
+(assets/image.png
+(byte_string
+(cipher.iv + encrypted
+(cmd2.Cmd
+(cmd_parse
+(cmdline
+(codec
+(command
+(data
+(data.decode(self.__codec
+(data.encode(
+(dce=dce
+(description=self.xml_escape(description
+(down_parse
+(e
+(encoded_string
+(encrypted
+(encrypted_data
+(file_data
+(https://github.com/fortra/impacket
+(https://github.com/fortra/impacket/blob/master/examples/atexec.py
+(https://github.com/zcgonvh
+(https://www.zcgonvh.com/post/Advanced_Windows_Task_Scheduler_Playbook-Part.3_from_RPC_to_lateral_movement.html
+(input
+(input[1:]
+(key_b64=base64.b64encode(randomkey
+(line
+(local
+(need port 135 a dynamic high port
+(not recommended
+(options.target
+(options.ts
+(os.getcwd(
+(output
+(output.encode(self.__codec
+(padded_data
+(prog
+(ps_parse
+(ps_script
+(s
+(self
+(statement.command_and_args
+(str(e
+(stringbinding
+(sys.argv
+(text
+(tsch.MSRPC_UUID_TSCHS
+(up_parse
+(useful for -k
+(xml

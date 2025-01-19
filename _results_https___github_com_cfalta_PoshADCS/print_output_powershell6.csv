@@ -1,0 +1,8 @@
+"Write-Warning ""An error occurred during VSC generation."
+"Write-Warning ""An error occurred."
+"Write-Warning ""Global state variable exists. If you go on, you may loose old data. Use -Force to override"
+"Write-Warning ""No state variable found. Nothing to reset."
+"Write-Warning ""Template $($TemplateName) does not exist."
+"Write-Warning ""User $($Identity) does not exist."
+"Write-Warning ""User $($Identity) does not have a UPN."
+"Write-Warning ""Virtual Smartcard not found."

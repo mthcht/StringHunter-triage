@@ -1,0 +1,5 @@
+Invoke-RunAsWithCert
+Invoke-RunAsWithCert user.pfx -Domain CORP.LOCAL
+Invoke-RunAsWithCert user.pfx -Domain CORP.LOCAL -Command cmd.exe
+Invoke-RunAsWithCert user.pfx -Domain CORP.LOCAL -Password password123
+Invoke-RunAsWithCert user.pfx -Domain CORP.LOCAL -PatchLsass

@@ -1,0 +1,7 @@
+            Create a new logon session with the specified certificate and run cmd.exe
+            Create a new logon session with the specified certificate and run powershell.exe
+            Invoke-RunAsWithCert user.pfx -Domain CORP.LOCAL -Command cmd.exe
+     Create a new logon session with the specified password protected certificate and run powershell.exe
+"                throw new Exception(""Process lsass.exe"
+"            Default: ""powershell.exe"
+"        $Command = ""powershell.exe"

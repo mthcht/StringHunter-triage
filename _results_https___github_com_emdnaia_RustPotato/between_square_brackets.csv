@@ -1,0 +1,125 @@
+"[ $( ($syscall:expr, $hash:expr, $f:ty) ),* "
+"[""safedv <https://github.com/safedv>"""
+"[cfg(feature = ""verbose"")"
+"[cfg(target_arch = ""x86_64"")"
+"[derive(Clone, Copy)"
+"[derive(Clone, Copy, Debug)"
+"[derive(Clone, Copy, Debug, Eq, PartialEq)"
+"[derive(Clone, Default)"
+"[derive(Copy, Clone)"
+"[derive(Copy, Clone, Default)"
+"[derive(Debug, Clone)"
+"[derive(Debug, Clone, Copy)"
+"[derive(Debug, Clone, Copy, PartialEq, Eq)"
+"[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord)"
+"[derive(Default, Debug, Clone)"
+"[in, opt"
+"[in, out"
+"[out, opt"
+[!
+[*mut c_void; 54
+[+
+[-
+[-c <cmd>
+[..2
+[..bytes_read as usize
+[..domain_size as usize
+[..name_size as usize
+[0
+[0..4
+[0; buffer_size as usize
+[0isize; Self::ALPHA_BET
+[0u16; 256
+[0u8; 1024
+[0u8; 16
+[0u8; 4096
+[0u8; size
+[0usize; 64
+[0x30
+[0x60
+[0xAA
+[1
+[10..16
+[2
+[2..8
+[3
+[4
+[4..6
+[5
+[6..8
+[7
+[8..10
+[BeichenDream
+[GodPotato
+[ImageDataDirectory; 16
+[Resolving System Service Numbers Using The Exception Directory by MDsec
+[Rustic64Shell
+[SOCKET; 64
+[SidAndAttributes; 1
+[SystemHandleTableEntryInfoEx; 1
+[UnicodeString; 32
+[[package
+[\\pipe\\epmapper
+[a
+[allow(dead_code)
+[allow(non_camel_case_types)
+[allow(non_snake_case)
+[allow(unsafe_op_in_unsafe_fn)
+[allow(unused)
+[byte as usize
+[bytes[0
+[bytes[4
+[bytes[6
+[c_ulong; 2
+[c_ulong; 22
+[cfg(test)
+[command line
+[dependencies
+[derive(Clone)
+[derive(Default)
+[features
+[i
+[i + 1
+[i + j
+[i as usize
+[i8; 129
+[i8; 14
+[i8; 257
+[i8; 8
+[implement()
+[in
+[isize; 512
+[isize; Self::ALPHA_BET
+[iter
+[j
+[macro_export
+[offset..offset + 4
+[options
+[ordinal
+[out
+[package
+[profile.release
+[repr(C)
+[repr(u16)
+[repr(u32)
+[rsp + 0x28
+[rsp + 0x30
+[rsp + 0x38
+[rsp + 0x40
+[rsp - 0x10
+[rsp - 0x18
+[rsp - 0x8
+[test
+[text[i
+[u16; 10
+[u16; 4
+[u32; 0x200
+[u32; 0x3d
+[u32; 26
+[u32; 5
+[u8
+[u8; 16
+[u8; 24
+[u8; 4
+[u8; 40
+[u8; 80

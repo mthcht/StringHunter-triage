@@ -1,0 +1,92 @@
+"' <a href="""
+"'"""
+"'"", """
+"'"">Details</a>"
+"'' + password.replace("""
+"''"") + "
+"', "
+"', MIN(CASE WHEN history_index = "
+"', default=False, required=False, action="
+"', help="
+"', nargs="
+"', pwd_guess.encode("
+"'<table border=""1"">\n"
+"'Folder containing the output HTML files, defaults to "
+"'Password Cracking output in the default form output by Hashcat, such as hashcat.potfile"
+"'SELECT COUNT(password) as count, LENGTH(password) as plen FROM hash_infos WHERE plen is not NULL AND history_index = -1 and plen is not 0 GROUP BY plen ORDER BY count DESC"
+"'SELECT LENGTH(password) as plen,COUNT(password) FROM hash_infos WHERE plen is not NULL AND history_index = -1 AND plen is not 0 GROUP BY plen ORDER BY plen"
+"'SELECT count(*) FROM hash_infos WHERE lm_hash is not ""aad3b435b51404eeaad3b435b51404ee"" AND history_index = -1"
+"'SELECT count(DISTINCT lm_hash) FROM hash_infos WHERE lm_hash is not ""aad3b435b51404eeaad3b435b51404ee"" AND history_index = -1"
+"'SELECT lm_hash, lm_pass_left, lm_pass_right, nt_hash FROM hash_infos WHERE (lm_pass_left is not """" or lm_pass_right is not """") AND history_index = -1 and password is NULL and lm_hash is not ""aad3b435b51404eeaad3b435b51404ee"" group by lm_hash"
+"'SELECT nt_hash, COUNT(nt_hash) as count, password FROM hash_infos WHERE nt_hash is not ""31d6cfe0d16ae931b73c59d7e0c089c0"" AND history_index = -1 GROUP BY nt_hash ORDER BY count DESC LIMIT 20"
+"'SELECT nt_hash,lm_pass_left,lm_pass_right FROM hash_infos WHERE (lm_pass_left is not NULL or lm_pass_right is not NULL) and password is NULL and lm_hash is not ""aad3b435b51404eeaad3b435b51404ee"" group by nt_hash"
+"'SELECT password,COUNT(password) as count FROM hash_infos WHERE password is not NULL AND history_index = -1 and password is not """" GROUP BY password ORDER BY count DESC LIMIT 20"
+"'SELECT username FROM hash_infos WHERE nt_hash = \"""
+"'SELECT username_full,password,LENGTH(password) as plen,nt_hash,only_lm_cracked FROM hash_infos WHERE history_index = -1 ORDER BY plen DESC, password"
+"'SELECT username_full,password,LENGTH(password) as plen,only_lm_cracked FROM hash_infos WHERE only_lm_cracked = 1 ORDER BY plen AND history_index = -1"
+"'Sanitize the report by partially redacting passwords and hashes. Prepends the report directory with \""Sanitized - \"""
+"'The name of one or multiple files that contain lists of usernames in particular groups. The group names will be taken from the file name itself. The username list must be in the same format as found in the NTDS file such as some.ad.domain.com\\username or it can be in the format output by using the PowerView Get-NetGroupMember function. Example: -g ""Domain Admins.txt"" ""Enterprise Admins.txt"""
+"'The name of the HTML report output file, defaults to "
+"'UPDATE hash_infos SET only_lm_cracked = 1, password = \"
+"'Write the SQLite database info to disk for offline inspection instead of just in memory. Filename will be """
+"'\"" AND history_index = -1"
+' + filename + 
+' + str(i) + 
+' + tuple[0] + 
+' FROM hash_infos GROUP BY history_base_username) 
+' THEN password END) 
+' WHERE nt_hash = \
+' href=
+' or 
+'$LM$
+'$NT$
+''
+'' + pair[0] + 
+') or hash.startswith(
+'*
+'--crackfile
+'--grouplists
+'--help
+'--krbtgt
+'--machineaccts
+'--ntdsfile
+'--outputfile
+'--reportdirectory
+'--sanitize
+'--writedb
+'-c
+'-d
+'-g
+'-h
+'-k
+'-m
+'-n
+'-o
+'-s
+'-w
+'.join(
+':
+':memory:
+'Include machine accounts when calculating statistics
+'Include the krbtgt account
+'NTDS file name (output from SecretsDump.py)
+'SELECT * FROM ( 
+'SELECT COUNT(DISTINCT nt_hash) FROM hash_infos WHERE only_lm_cracked = 1 AND history_index = -1
+'SELECT MAX(history_index) FROM hash_infos;
+'SELECT count(*) FROM hash_infos WHERE password is not NULL AND history_index = -1
+'SELECT count(DISTINCT nt_hash) FROM hash_infos WHERE history_index = -1
+'SELECT count(Distinct password) FROM hash_infos where password is not NULL AND history_index = -1 
+'SELECT history_base_username
+'SELECT username FROM hash_infos WHERE history_index = -1 AND LENGTH(password) = 
+'This script will perform a domain password audit based on an extracted NTDS file and password cracking output such as Hashcat.
+'Would you like to open the report now? [Y/n]
+'\
+'\\
+'\r
+'\r\n
+'md4
+'report.css
+'store_true
+'stylesheet
+'utf-16
+'utf-16le

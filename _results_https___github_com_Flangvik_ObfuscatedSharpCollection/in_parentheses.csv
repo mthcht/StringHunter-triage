@@ -1,0 +1,1980 @@
+"( -  <  >  m=%25%: '""'"
+"("""
+"(""'!*'"
+"() (*hpack.Encoder, *bytes.Buffer"
+"() (*multipart.Part, error"
+"() (*multipart.Reader, error"
+"() (*net.TCPConn, error"
+"() (*net.UnixConn, error"
+"() (*os.File, error"
+"() (*template.Template, error"
+"() (*url.URL, error"
+"() ([]net.Addr, error"
+"() ([]string, error"
+"() ([]uint8, bool, error"
+"() ([]uint8, error"
+"() (float32, big.Accuracy"
+"() (float32, bool"
+"() (float64, big.Accuracy"
+"() (float64, bool"
+"() (float64, error"
+"() (http.http2Frame, error"
+"() (http.http2FrameWriteRequest, bool"
+"() (int, []uint8, error"
+"() (int, int"
+"() (int, int, int"
+"() (int, io.Reader, error"
+"() (int, time.Month, int"
+"() (int32, int, error"
+"() (int64, big.Accuracy"
+"() (int64, error"
+"() (interface {}, error"
+"() (io.ReadCloser, error"
+"() (json.Token, error"
+"() (multipart.File, error"
+"() (net.Conn, *bufio.ReadWriter, error"
+"() (net.Conn, error"
+"() (os.FileInfo, error"
+"() (reflect.Value, bool"
+"() (runtime.Frame, bool"
+"() (string, bool"
+"() (string, error"
+"() (string, int"
+"() (string, string, bool"
+"() (syscall.Handle, error"
+"() (syscall.RawConn, error"
+"() (syscall.Sockaddr, error"
+"() (textproto.MIMEHeader, error"
+"() (time.Time, bool"
+"() (uint32, error"
+"() (uint64, big.Accuracy"
+"() (uint8, error"
+"() (unsafe.Pointer, int32, error"
+"() func(int, string"
+"() syscallcrypto/rsa: key size too small for PSS signaturedivision of zero by zero or infinity by infinityfailed to parse certificate #%d in the chain: %winternal error: should have a body in this statenet/http: Hijack called after ServeHTTP finishedout points to big.Int, but defaultValue does notparsing/packing of this type isn't available yetproxy: failed to read port from SOCKS5 proxy at reflect: CallSlice with too many input argumentsruntime: waitforsingleobject unexpected; result=runtime: waitforsingleobject wait_failed; errno=slice bounds out of range [:%x] with capacity %yssh: unexpected response to channel request: %#vstrconv: illegal AppendFloat/FormatFloat bitSizesyscall: string with NUL passed to StringToUTF16tls: CloseWrite called before handshake completetls: CurvePreferences includes unsupported curvex509: IP constraint contained value of length %dx509: internal error: URI SAN %q failed to parsex509: internal error: cannot parse constraint %qx509: only RSA, ECDSA and Ed25519 keys supportedx509: trailing data after X.509 BasicConstraintsx509: trailing data after X.509 ExtendedKeyUsagex509: trailing data after X.509 authority key-idECDSA signature contained zero or negative valuescasgstatus: waiting for Gwaiting but is Grunnablechacha20poly1305: bad nonce length passed to Openchacha20poly1305: bad nonce length passed to Sealcrypto/tls: ExportKeyingMaterial context too longhttp2: request body closed due to handler exitinghttp: wrote more than the declared Content-Lengthinternal error: fillWindow called with stale datainvalid memory address or nil pointer dereferenceinvalid or incomplete multibyte or wide characternet/http: Transport.Dial hook returned (nil, nil"
+"(): %qoversized record received with length %dquotedprintable: invalid hex byte 0x%02xrefill of span with free space remainingreflect.Value.Call: call of nil functionreflect.Value.Call: wrong argument countreflect.Value.SetBytes of non-byte slicereflect.Value.setRunes of non-rune slicereflect: FieldByName of non-struct type request header %q is not valid in HTTP/2runtime.SetFinalizer: first argument is runtime: out of memory: cannot allocate runtime: typeBitsBulkBarrier with type  ssh: can call Accept or Reject only oncessh: unexpected response to request: %#vtime: Stop called on uninitialized Timertls: client didn't provide a certificatetls: received empty certificates messagewriteData(stream=%d, p=%d, endStream=%v"
+"(*[]uint8, *bool, asn1.Tag"
+"(*[]uint8, asn1.Tag"
+"(*[]uint8, int"
+"(*big.Float, bool"
+"(*big.Float, int, error"
+"(*big.Int, *big.Int"
+"(*big.Int, *big.Int, *big.Int"
+"(*big.Int, *big.Int, *big.Int, *big.Int"
+"(*big.Int, *big.Int, []uint8, []uint8"
+"(*big.Int, big.Accuracy"
+"(*big.Int, bool"
+"(*big.Int, int, uint"
+"(*big.Int, uint"
+"(*big.Rat, *big.Rat"
+"(*big.Rat, big.Accuracy"
+"(*big.Rat, bool"
+"(*bool, bool"
+"(*bool, string, bool, string"
+"(*chshare.User, bool"
+"(*cryptobyte.String, *asn1.Tag"
+"(*cryptobyte.String, *bool, asn1.Tag"
+"(*flate.compressor, []uint8"
+"(*func(*big.Float, *big.Float"
+"(*func(*cryptobyte.String, asn1.Tag"
+"(*func(*float64, string, float64, string"
+"(*func([]uint8, *net.IPAddr"
+"(*func(int, int, *syscall.IPv6Mreq"
+"(*func(int, runtime.addrRange"
+"(*func(int32, int32, *uint8, int32"
+"(*func(ssh.RejectionReason, string"
+"(*func(string, string"
+"(*http.Cookie, error"
+"(*http.Request, http.http2RoundTripOpt"
+"(*http.Request, int, time.Duration, int64"
+"(*http.Request, string"
+"(*http.Response, error"
+"(*http.Server, *tls.Conn, http.Handler"
+"(*http.Server, net.Listener"
+"(*http.http2ClientConn, error"
+"(*http.http2serverConn, interface {}"
+"(*idna.Profile, string"
+"(*int, string, int, string"
+"(*int64, asn1.Tag"
+"(*int64, string, int64, string"
+"(*json.encodeState, reflect.Value, json.encOpts"
+"(*json.scanner, uint8"
+"(*list.Element, *list.Element"
+"(*multipart.Form, error"
+"(*net.TCPConn, error"
+"(*parse.Tree, error"
+"(*poll.operation, func(*poll.operation"
+"(*rand.Rand, *big.Int"
+"(*regexp.Regexp, int"
+"(*runtime.g, unsafe.Pointer"
+"(*runtime.hchan, unsafe.Pointer, bool"
+"(*runtime.hchan, unsafe.Pointer, bool, uintptr"
+"(*sha512.digest, []uint8"
+"(*socks5.AuthContext, error"
+"(*ssh.Permissions, error"
+"(*ssh.Signature, error"
+"(*ssh.algorithms, *ssh.kexResult"
+"(*ssh.kexResult, error"
+"(*strconv.decimalSlice, *strconv.extFloat, *strconv.extFloat"
+"(*strconv.decimalSlice, int"
+"(*string, string, string, string"
+"(*syscall.Proc, error"
+"(*template.Template, error"
+"(*time.Duration, string, time.Duration, string"
+"(*tls.Certificate, error"
+"(*tls.ClientSessionState, bool"
+"(*tls.Config, *tls.Certificate, *tls.clientHelloMsg, *tls.serverHelloMsg"
+"(*tls.Config, *tls.clientHelloMsg, *tls.serverHelloMsg, *x509.Certificate, *tls.serverKeyExchangeMsg"
+"(*tls.Config, error"
+"(*tls.serverKeyExchangeMsg, error"
+"(*uint, string, uint, string"
+"(*uint64, string, uint64, string"
+"(*url.URL, []*http.Cookie"
+"(*url.URL, error"
+"(*url.URL, websocket.proxy_Dialer"
+"(*websocket.Conn, *http.Response, error"
+"(*websocket.Conn, error"
+"(+B,"
+"(,"
+"(,/Q	{LpGyc"
+"(,KV"
+"(,jmath/big.(*Int"
+"(,rZ/-PM"
+"(,v"
+"(.doc, .docx, .xls, .xlsx"
+"(0jz[~"""
+"(323R38$9:::;&<O<y<<<	=6=|=====,>{>>>>"
+"(4H""7A"
+"(;,"
+"(<'""*:"
+"(<-chan singleflight.Result, bool"
+"(D$,"
+"(L$,"
+"(L$,\$0t$4"
+"(L$LL$,L$PD$T"
+"(Q,Q<Q@A8"
+"(Q,Q<Q@^"
+"(S""a"
+"([]*net.MX, error"
+"([]*net.NS, error"
+"([][]*x509.Certificate, error"
+"([][]uint8, [][]*x509.Certificate"
+"([]hpack.HeaderField, error"
+"([]interface {}, bool, error"
+"([]net.IPAddr, error"
+"([]os.FileInfo, error"
+"([]string, error"
+"([]uint8, *net.UDPAddr"
+"([]uint8, *net.UnixAddr"
+"([]uint8, *ssh.Signature"
+"([]uint8, *tls.clientKeyExchangeMsg, error"
+"([]uint8, ...uint8"
+"([]uint8, []uint32"
+"([]uint8, []uint8"
+"([]uint8, []uint8, *net.IPAddr"
+"([]uint8, []uint8, *net.UDPAddr"
+"([]uint8, []uint8, *net.UnixAddr"
+"([]uint8, []uint8, []uint8, []int"
+"([]uint8, []uint8, []uint8, []uint8"
+"([]uint8, []uint8, []uint8, ssh.directionAlgorithms"
+"([]uint8, []uint8, bool"
+"([]uint8, []uint8, syscall.Sockaddr"
+"([]uint8, bool"
+"([]uint8, error"
+"([]uint8, func([]uint8"
+"([]uint8, int"
+"([]uint8, int64"
+"([]uint8, net.Addr"
+"([]uint8, string"
+"([]uint8, string, bool, error"
+"([]uint8, string, ssh.packetConn, io.Reader"
+"([]uint8, string, string, []int"
+"([]uint8, syscall.Sockaddr"
+"([]uint8, uint16"
+"([]uint8, uint32"
+"([]uint8, uint64"
+"([]uint8, uint8, int"
+"(\\s|\\'|\\\""|$"
+"(\\s|\\'|\\\""|\\^|="
+"(^:("""
+"(^Iu:\%YE""i`"
+"(asn1.Tag, cryptobyte.BuilderContinuation"
+"(bool, [8]uint8"
+"(bool, []uint8"
+"(bool, []uint8, error"
+"(bool, bool"
+"(bool, error"
+"(bool, func(int32"
+"(cipher.AEAD, error"
+"(cipher.Stream, error"
+"(command -v netpgp || echo_not_found ""netpgp"""
+"(contacts, emails, history, cookies and credentials"
+"(context.Context, *socks5.AddrSpec"
+"(context.Context, *socks5.Request"
+"(context.Context, bool"
+"(context.Context, io.ReadWriter, http.socksAuthMethod"
+"(context.Context, io.ReadWriter, socks.AuthMethod"
+"(context.Context, net.Conn"
+"(context.Context, net.Conn, string, string"
+"(context.Context, net.IP, error"
+"(context.Context, string"
+"(context.Context, string, *net.TCPAddr, *net.TCPAddr"
+"(context.Context, string, http.Header"
+"(context.Context, string, string"
+"(context.Context, string, string, string"
+"(e.g --header ""Foo: Bar"" --header ""Hello: World"""
+"(eF,C/qj"
+"(echo -e ""peass{STORAGE_PARAMS_HERE}"" peass{STORAGE_PARAMS_EXTRA_HERE} | sort | uniq | head -n 70"
+"(errno= ssh: unexpected trailing data after certificate option valuetls: initial handshake had non-empty renegotiation extensiontls: no supported versions satisfy MinVersion and MaxVersionviolation of WriteScheduler interface: cannot close stream 0net/http: invalid Cookie.Domain %q; dropping domain attributessh: GSSAPI authentication must use the Kerberos V5 mechanismtls: client certificate used with invalid signature algorithmtls: server sent a ServerHello extension forbidden in TLS 1.3tls: unsupported certificate: private key is %T, expected *%Twebsocket: request origin not allowed by Upgrader.CheckOriginx509: failed to parse URI constraint %q: cannot be IP addressx509: internal error: system verifier returned an empty chain0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZURI with empty host (%q"
+"(f,"
+"(file, not dir"
+"(flag.Value, string, string"
+"(fmt.ScanState, int32"
+"(fmt.State, int32"
+"(forSingleUse=%v, maxStream=%v"
+"(func(int, string"
+"(func(interface {}, interface {}"
+"(http.Handler, string"
+"(http.ResponseWriter, *http.Request"
+"(http.ResponseWriter, *http.Request, error"
+"(http.ResponseWriter, *http.Request, http.Header"
+"(http.ResponseWriter, *http.Request, int, error"
+"(http.http2FrameType, http.http2Flags, uint32, []uint8"
+"(http.http2FrameWriteRequest, http.http2FrameWriteRequest, int"
+"(in this case ""*"" will get all the files, but more specific regex can be used"
+"(int, *net.IPAddr, error"
+"(int, *net.UDPAddr, error"
+"(int, *net.UnixAddr, error"
+"(int, []uint8"
+"(int, []uint8, time.Time"
+"(int, bool"
+"(int, error"
+"(int, func(int, int"
+"(int, int"
+"(int, int, *syscall.IPMreq"
+"(int, int, *syscall.Linger"
+"(int, int, [4]uint8"
+"(int, int, error"
+"(int, int, int"
+"(int, int, int, *net.IPAddr, error"
+"(int, int, int, *net.UDPAddr, error"
+"(int, int, int, *net.UnixAddr, error"
+"(int, int, int, syscall.Sockaddr, error"
+"(int, net.Addr, error"
+"(int, runtime.addrRange"
+"(int, string"
+"(int, string, error"
+"(int, syscall.Sockaddr, error"
+"(int, textproto.MIMEHeader"
+"(int32, int"
+"(int32, int32"
+"(int32, int32, int32, *syscall.WSAProtocolInfo, uint32, uint32"
+"(int64, asn1.Tag"
+"(int64, error"
+"(int64, int"
+"(int64, int64"
+"(interface {}, *list.Element"
+"(interface {}, asn1.Tag, interface {}"
+"(interface {}, bool"
+"(interface {}, error"
+"(interface {}, error, bool"
+"(interface {}, interface {}"
+"(interface {}, uintptr"
+"(io.Reader, []uint8"
+"(io.Reader, []uint8, crypto.DecrypterOpts"
+"(io.Reader, []uint8, crypto.SignerOpts"
+"(io.Reader, []uint8, string"
+"(io.Reader, io.Writer"
+"(io.Reader, ssh.Signer"
+"(io.WriteCloser, error"
+"(io.WriteCloser, int"
+"(io.Writer, interface {}"
+"(io.Writer, map[string]bool"
+"(io.Writer, string"
+"(io.Writer, string, interface {}"
+"(j`""jejPAjjp~jmime/multipart.(*Reader"
+"(multipart.File, *multipart.FileHeader, error"
+"(net.Addr, error"
+"(net.Conn, *http.http2ServeConnOpts"
+"(net.Conn, error"
+"(net.Conn, http.ConnState"
+"(net.Listener, error"
+"(net.Listener, string, string"
+"(net.PacketConn, error"
+"(nil, nil"
+"(norm.Form, []uint8"
+"(norm.Form, string"
+"(reflect.Method, bool"
+"(reflect.StructField, bool"
+"(reflect.Value, ...reflect.Value"
+"(reflect.Value, error"
+"(reflect.Value, reflect.Value"
+"(runtime: impossible type kind socket operation on non-socketsquare root of negative numberssh: DSA signature parse errorssh: algorithm %q not acceptedssh: disconnect, reason %d: %sssh: failed to parse DSA key: ssh: got bogus newkeys messagessh: unknown key algorithm: %vstream error: stream ID %d; %vsync: inconsistent mutex statesync: unlock of unlocked mutextext/javascript; charset=utf-8transform: short source bufferunterminated raw quoted stringwebsocket: read limit exceededx509: DSA verification failure looking for beginning of value%s: Close (sent %s received %s"
+"(ssh.Channel, <-chan *ssh.Request, error"
+"(ssh.ConnMetadata, []uint8"
+"(ssh.ConnMetadata, ssh.KeyboardInteractiveChallenge"
+"(ssh.ConnMetadata, ssh.PublicKey"
+"(ssh.ConnMetadata, string"
+"(ssh.ConnMetadata, string, error"
+"(ssh.authResult, []string, error"
+"(ssh.packetCipher, error"
+"(ssh.packetConn, io.Reader, *ssh.handshakeMagics"
+"(ssh.packetConn, io.Reader, *ssh.handshakeMagics, ssh.Signer"
+"(strconv.extFloat, strconv.extFloat"
+"(string, *chshare.User"
+"(string, *http.PushOptions"
+"(string, *parse.Tree"
+"(string, *poll.FD, error"
+"(string, *tls.ClientSessionState"
+"(string, *tls.Conn"
+"(string, ...interface {}"
+"(string, []*net.SRV, error"
+"(string, []string"
+"(string, []uint8"
+"(string, []uint8, int"
+"(string, bool"
+"(string, bool, []uint8"
+"(string, bool, error"
+"(string, bool, string"
+"(string, error"
+"(string, flag.ErrorHandling"
+"(string, float64, string"
+"(string, func("
+"(string, func(http.ResponseWriter, *http.Request"
+"(string, func(string"
+"(string, http.Handler"
+"(string, http.Header"
+"(string, http.RoundTripper"
+"(string, int"
+"(string, int, string"
+"(string, int64, string"
+"(string, string"
+"(string, string, *tls.Config"
+"(string, string, ...string"
+"(string, string, []string, []bool"
+"(string, string, error"
+"(string, string, net.IP"
+"(string, string, string"
+"(string, string, string, map[string]*parse.Tree, ...map[string]interface {}"
+"(string, string, syscall.RawConn"
+"(string, time.Duration, string"
+"(string, uint, string"
+"(string, uint64, string"
+"(syscall.Handle, *uint16, uint32, *uint32, *uint8"
+"(syscall.Handle, []syscall.RawSockaddrAny, uint32, string, error"
+"(syscall.Handle, error"
+"(syscall.Handle, int"
+"(syscall.Handle, syscall.Handle, *uint8, uint32, uint32, uint32, *uint32, *syscall.Overlapped"
+"(syscall.Handle, syscall.Sockaddr"
+"(syscall.Handle, syscall.Sockaddr, *uint8, uint32, *uint32, *syscall.Overlapped"
+"(syscall.Sockaddr, error"
+"(targetpc= ErrCode=%v KiB work,  gcwaiting= heap_live= idleprocs= in status  m->mcache= mallocing= ms clock,  nBSSRoots= p->mcache= p->status= s.nelems=  schedtick= span.list= timerslen=%!(BADPREC"
+"(targetpc= ErrCode=%v KiB work,  gcwaiting= heap_live= idleprocs= in status  m->mcache= mallocing= ms clock,  nBSSRoots= p->mcache= p->status= s.nelems=  schedtick= span.list= timerslen=, npages = , settings:.WithCancel/dev/stderr/dev/stdout/index.html0123456789_127.0.0.1/830517578125: frame.sp=<invalid opBad GatewayBad RequestClassHESIODCloseHandleCookie.PathCreateFileWDeleteFileWENABLE_PUSHEND_HEADERSEarly HintsExitProcessFreeLibraryGOTRACEBACKGetFileTypeHTTPS_PROXYIdeographicIn-Reply-ToInstCaptureInstRuneAnyMarshalJSONMarshalTextMedefaidrinMoveFileExWNandinagariNetShareAddNetShareDelNew_Tai_LueOld_PersianOld_SogdianOpenProcessPRIVATE KEYPau_Cin_HauRegCloseKeyReturn-PathSetFileTimeSignWritingSoft_DottedTESTING KEYTTL expiredVirtualLockWSARecvFromWarang_CitiWhite_Space[:^xdigit:]alarm clockaudio/basicbad addressbad m valuebad messagebad timedivbad verb '%broken pipecall of nilcgocall nilclobberfreeclosesocketcreated by crypt32.dlldnsmessage.ecdsa-sha2-empty fielden_US.UTF-8expected :=file existsfinal tokenfingerprintfloat32nan2float64nan2float64nan3gccheckmarkgetpeernamegetsocknamehttp-serverhttps_proxyi/o timeoutlocal errorlost mcachemSpanManualmethodargs(mswsock.dllnil contextnot reachedparse errorproxy#%d:%sraw-controlreflect.Setretry-afterruntime: P runtime: p scheddetailsecur32.dllshell32.dllshort writessh-ed25519stack tracetls: alert(tracealloc(traffic updunreachableuserenv.dllwebsocket: wsarecvfrom (sensitive"
+"(tls.ConnectionState, error"
+"(uint16, []uint8"
+"(uint32, *uint8, uint32, *uint8, uint32, *uint32, *syscall.Overlapped, uintptr"
+"(uint32, []bool"
+"(uint32, []uint8"
+"(uint32, bool"
+"(uint32, bool, []uint8"
+"(uint32, bool, []uint8, []uint8"
+"(uint32, http.http2ErrCode"
+"(uint32, http.http2ErrCode, []uint8"
+"(uint32, http.http2OpenStreamOptions"
+"(uint32, http.http2PriorityParam"
+"(uint32, io.Reader"
+"(uint32, io.Writer, io.Reader, []uint8"
+"(uint32, uint32"
+"(uint64, int, bool, *strconv.floatInfo"
+"(uint64, int, bool, bool, *strconv.floatInfo"
+"(uint8, int"
+"(uintptr, uint32, uintptr"
+"(uintptr, uintptr, error"
+"(unsafe.Pointer, uintptr"
+"(unsafe.Pointer, unsafe.Pointer"
+"(websocket.proxy_Dialer, error"
+"(x509.SignatureAlgorithm, []uint8, []uint8"
+(	
+(	O\2
+(	y8
+( 
+( !	
+( 'Mou0[~g>
+( + - / @ P [ 	%%%T%q%s%v&;
+( +]
+( BLOCK
+( RSA| OPENSSH| DSA| EC| PGP
+( https://github.com/Flangvik/DeployPrinterNightmare
+( https://github.com/FortyNorthSecurity/EDD
+( in panicwrap: no 
+(!
+(!'.*!
+(!'F*!
+(!/@A:WeoHqAg0Sz
+(#
+(#j(#j(#jnet/http.(*Transport
+(#j(#j(#jnet/http.(*http2writeGoAway
+(#j(#j(#jruntime.(*TypeAssertionError
+(#j(#j(#jsync.(*noCopy
+(#j(#j@fjcrypto/tls.(*Conn
+(#j(#jBjnet.(*UnixListener
+(#j(#jCjnet/http.(*http2Transport
+(#j(#jcrypto/aes.(*aesCipher
+(#j(#jcrypto/des.(*desCipher
+(#j(#jcrypto/des.(*tripleDESCipher
+(#j(#jcrypto/md5.(*digest
+(#j(#jcrypto/sha1.(*digest
+(#j(#jcrypto/sha512.(*digest
+(#j(#jcrypto/tls.(*prefixNonceAEAD
+(#j(#jcrypto/tls.(*x25519Parameters
+(#j(#jcrypto/tls.(*xorNonceAEAD
+(#j(#jflag.(*boolValue
+(#j(#jinternal/poll.(*TimeoutError
+(#j(#jnet.(*AddrError
+(#j(#jnet.(*UnixAddr
+(#j(#jnet/http.(*http2Framer
+(#j(#jnet/http.(*http2httpError
+(#j(#jnet/http.(*http2randomWriteScheduler
+(#j(#jnet/http.(*http2writePushPromise
+(#j(#jnet/http.(*http2writeResHeaders
+(#j(#jnet/http.(*httpError
+(#j(#jregexp.(*inputBytes
+(#j(#jregexp.(*inputReader
+(#j(#jregexp.(*inputString
+(#j(#jruntime.(*_type
+(#j(#jruntime.(*addrRanges
+(#j(#jruntime.(*gcBitsArena
+(#j(#jruntime.(*gcControllerState
+(#j(#jruntime.(*gcWork
+(#j(#jruntime.(*mcache
+(#j(#jruntime.(*mspan
+(#j(#jruntime.(*pageAlloc
+(#j(#jruntime.(*pageBits
+(#j(#jruntime.(*stackScanState
+(#j(#jruntime.(*traceBuf
+(#j(#jtext/template/parse.(*NilNode
+(#j(#jtext/template/parse.(*elseNode
+(#j(#jvendor/golang.org/x/crypto/chacha20poly1305.(*chacha20poly1305
+(#jKjjruntime.(*mspan
+(#jNjgithub.com/jpillora/chisel/client.(*Client
+(#jPGjnet/http.(*conn
+(#j\2jnet/http.(*http2Framer
+(#jcontext.(*emptyCtx
+(#jcrypto/tls.(*endOfEarlyDataMsg
+(#jcrypto/tls.(*helloRequestMsg
+(#jcrypto/tls.(*serverHelloDoneMsg
+(#jgithub.com/gorilla/websocket.(*Conn
+(#jgithub.com/gorilla/websocket.(*prepareConn
+(#jgithub.com/jpillora/chisel/share.(*rwcConn
+(#jnet.(*netFD
+(#jpajnet/textproto.(*Reader
+(#jruntime.(*addrRanges
+(#jruntime.(*boundsError
+(#jruntime.(*errorString
+(#jruntime.(*fixalloc
+(#jruntime.(*gcControllerState
+(#jruntime.(*gcSweepBuf
+(#jruntime.(*gcWork
+(#jruntime.(*itabTableType
+(#jruntime.(*mSpanList
+(#jruntime.(*mcache
+(#jruntime.(*mcentral
+(#jruntime.(*mheap
+(#jruntime.(*mspan
+(#jruntime.(*p
+(#jruntime.(*pageAlloc
+(#jruntime.(*pallocBits
+(#jruntime.(*pallocData
+(#jruntime.(*plainError
+(#jruntime.(*pollCache
+(#jruntime.(*semaRoot
+(#jruntime.(*stackScanState
+(#jruntime.(*traceStackTable
+(#jruntime.(*wbBuf
+(#jruntime.(*workbuf
+($
+($ o
+($'f*$
+($jencoding/json.(*encodeState
+(%
+(%!Nr
+(%#04x
+(%+v
+(%T
+(%d
+(%d bits
+(%d vs %+v
+(%q
+(%s
+(%s (%s
+(%s:%d
+(%v
+(&
+(&(objectClass=user
+(&.
+('
+(''2*'
+(''_*'
+('=> halt'
+((
+(((
+((( 
+(((J
+((2
+((8j
+((DiuN#CA
+((command -v gpg && gpg --list-keys
+((command -v netpgpkeys && netpgpkeys --list-keys
+((j>jHjinternal/poll.(*ioSrv
+((v
+()
+() func(string
+()&
+()5(S_bis
+()T$$
+()i(i
+()j
+()shrinking stack in libcallsk-ssh-ed25519@openssh.comssh: derived k is not safessh: garbage after DSA keyssh: invalid packet lengthssh: malformed OpenSSH keyssh: signature parse errorstartlockedm: locked to metoo many colons in addresstoo many slice indexes: %dtruncated base 128 integerunexpected . after term %qunexpected right paren %#Uunexpected type in connectunterminated quoted stringx509: invalid simple chain is not assignable to type  rejected username/password!#$%&(
+(*
+(*/ME
+(*Accuracy
+(*ActionNode
+(*Addr
+(*AddrError
+(*AddrSpec
+(*Backoff
+(*BitString
+(*BoolNode
+(*BranchNode
+(*Buffer
+(*Buffers
+(*Builder
+(*CertPool
+(*Certificate
+(*CertificateInvalidError
+(*CertificateList
+(*CertificateRequestInfo
+(*ChainNode
+(*ChanDir
+(*Cipher
+(*Class
+(*Client
+(*ClientConfig
+(*ClientHelloInfo
+(*CloseError
+(*Command
+(*CommandNode
+(*CompletedGroupElement
+(*Cond
+(*Config
+(*Conn
+(*ConnState
+(*ConnStats
+(*ConnectionState
+(*ConstraintViolationError
+(*Cookie
+(*CorruptInputError
+(*CurveParams
+(*DLL
+(*DLLError
+(*DNSError
+(*DNSResolver
+(*Decoder
+(*DecodingError
+(*Delim
+(*DetermRand
+(*Dialer
+(*DotNode
+(*Duration
+(*Element
+(*Encoder
+(*Encoding
+(*ErrNaN
+(*Errno
+(*Error
+(*ErrorCode
+(*EscapeError
+(*Event
+(*ExecError
+(*ExtendedGroupElement
+(*FD
+(*FieldNode
+(*File
+(*FileHeader
+(*FileMode
+(*Filetime
+(*FlagSet
+(*Flags
+(*Float
+(*FlushAfterChunkWriter
+(*Form
+(*Frames
+(*Func
+(*Group
+(*HTTPServer
+(*HandlerFunc
+(*HandshakeError
+(*HardwareAddr
+(*Hash
+(*Header
+(*HeaderField
+(*HostnameError
+(*IP
+(*IPAddr
+(*IPConn
+(*IPMask
+(*IPNet
+(*IdentifierNode
+(*IfNode
+(*InsecureAlgorithmError
+(*Inst
+(*InstOp
+(*Int
+(*Interface
+(*InternalError
+(*InvalidHostError
+(*InvalidIndexError
+(*InvalidUnmarshalError
+(*Iter
+(*KeySizeError
+(*KeyboardInteractiveChallenge
+(*Kind
+(*L	
+(*LazyDLL
+(*LazyProc
+(*LimitedReader
+(*LinkError
+(*List
+(*ListNode
+(*ListenConfig
+(*Location
+(*Logger
+(*MAC
+(*MIMEHeader
+(*Map
+(*MapIter
+(*MarshalerError
+(*Month
+(*Mutex
+(*Name
+(*NilNode
+(*NoAuthAuthenticator
+(*NodeType
+(*NumError
+(*Number
+(*NumberNode
+(*ObjectIdentifier
+(*Once
+(*Op
+(*OpError
+(*OpenChannelError
+(*PSSOptions
+(*ParseError
+(*Part
+(*PassphraseMissingError
+(*PathError
+(*PermitCommand
+(*PipeNode
+(*Pool
+(*Pos
+(*PreComputedGroupElement
+(*PreparedMessage
+(*PrivateKey
+(*Proc
+(*Profile
+(*Prog
+(*ProjectiveGroupElement
+(*Properties
+(*ProtocolError
+(*PublicKey
+(*PublicKeyAlgorithm
+(*RCode
+(*RDNSequence
+(*RWMutex
+(*Rand
+(*RangeNode
+(*Rat
+(*RawSockaddrAny
+(*ReadWriter
+(*Reader
+(*RecordHeaderError
+(*Regexp
+(*RejectionReason
+(*Remote
+(*Replacer
+(*Request
+(*Resolver
+(*Response
+(*ReverseProxy
+(*RoundingMode
+(*SectionReader
+(*ServeMux
+(*Server
+(*ServerAuthError
+(*ServerConfig
+(*ServerConn
+(*Signal
+(*SignatureAlgorithm
+(*SockaddrInet4
+(*SockaddrInet6
+(*SockaddrUnix
+(*SortedMap
+(*StreamReader
+(*String
+(*StringNode
+(*StringSlice
+(*StructTag
+(*StructuralError
+(*SyntaxError
+(*SyscallError
+(*TCPAddr
+(*TCPConn
+(*TCPListener
+(*TCPProxy
+(*Tag
+(*Template
+(*TemplateNode
+(*TextNode
+(*Ticker
+(*Time
+(*TimeoutError
+(*Timer
+(*Transformer
+(*Transport
+(*Tree
+(*Type
+(*TypeAssertionError
+(*UDPAddr
+(*UDPConn
+(*URL
+(*UnhandledCriticalExtension
+(*UnixAddr
+(*UnixConn
+(*UnixListener
+(*UnknownAuthorityError
+(*UnknownNetworkError
+(*UnmarshalTypeError
+(*UnsupportedTypeError
+(*UnsupportedValueError
+(*Upgrader
+(*User
+(*UserIndex
+(*UserPassAuthenticator
+(*Userinfo
+(*UsernamePassword
+(*Users
+(*Value
+(*ValueError
+(*Values
+(*VariableNode
+(*WaitGroup
+(*Watcher
+(*Weekday
+(*WithNode
+(*Writer
+(*[][]uint8
+(*_type
+(*addrRanges
+(*aesCipher
+(*aesCipherAsm
+(*aesCipherGCM
+(*alert
+(*allMatch
+(*appendSliceWriter
+(*asciiSet
+(*asn1.BitString
+(*asn1.ObjectIdentifier
+(*atLeastReader
+(*atomicBool
+(*badRequestError
+(*badStringError
+(*bidiTrie
+(*big.Float=%s
+(*big.Int
+(*big.Rat
+(*bigEndian
+(*bitState
+(*bitStringEncoder
+(*bitVector
+(*bmap
+(*body
+(*bodyEOFSignal
+(*bodyLocked
+(*bool
+(*boolValue
+(*boundsError
+(*bucket
+(*buffer
+(*bufioFlushWriter
+(*byFreq
+(*byIndex
+(*byLiteral
+(*byPref
+(*byPriorityWeight
+(*byteEncoder
+(*byteReader
+(*byteReplacer
+(*byteStringReplacer
+(*bytesEncoder
+(*cancelCtx
+(*cbcCipher
+(*cbcDecrypter
+(*cbcEncrypter
+(*cbcError
+(*certificateMsg
+(*certificateMsgTLS13
+(*certificateRequestMsg
+(*certificateRequestMsgTLS13
+(*certificateStatusMsg
+(*certificateVerifyMsg
+(*chacha20Poly1305Cipher
+(*chacha20poly1305
+(*chanList
+(*channel
+(*checkConnErrorWriter
+(*chshare.User
+(*chunkWriter
+(*chunkedReader
+(*chunkedWriter
+(*cidrMatch
+(*cipherSuiteTLS13
+(*clientHandshakeState
+(*clientHandshakeStateTLS13
+(*clientHelloMsg
+(*clientKeyExchangeMsg
+(*compiler
+(*compressor
+(*config
+(*conn
+(*connLRU
+(*connReader
+(*connectMethod
+(*connectMethodKey
+(*connection
+(*connectionState
+(*context
+(*contextKey
+(*copyChecker
+(*cryptobyte.Builder
+(*cryptobyte.String
+(*cthWrapper
+(*ctr
+(*curve25519KeyPair
+(*curve25519sha256
+(*deadlineExceededError
+(*decimal
+(*decodeState
+(*decompressor
+(*deflateFast
+(*desCipher
+(*devNull
+(*dhGEXSHA
+(*dhGroup
+(*dictDecoder
+(*dictWriter
+(*digest
+(*direct
+(*directionAlgorithms
+(*disconnectMsg
+(*domainMatch
+(*dotReader
+(*dsaPrivateKey
+(*dsaPublicKey
+(*durationValue
+(*dynamicTable
+(*ecdh
+(*ecdheKeyAgreement
+(*ecdsaPublicKey
+(*ed25519PublicKey
+(*elseNode
+(*emptyCtx
+(*encodeState
+(*encoder
+(*encryptedExtensionsMsg
+(*endNode
+(*endOfEarlyDataMsg
+(*entry
+(*eofReader
+(*errorReader
+(*errorString
+(*exactSig
+(*expectContinueReader
+(*extChannel
+(*extFloat
+(*fakeLocker
+(*fdMutex
+(*file
+(*fileStat
+(*finishAsyncByteRead
+(*finishedHash
+(*finishedMsg
+(*fixalloc
+(*flag.Flag
+(*flate.compressor
+(*flate.decompressor
+(*flateReadWrapper
+(*flateWriteWrapper
+(*float64Value
+(*fmt
+(*formInfo
+(*func(*big.Int
+(*func(*big.Rat
+(*func(*parse.Tree
+(*func([]uint8
+(*func(http.http2HeadersFrameParam
+(*func(interface {}
+(*funcType
+(*funcTypeFixed128
+(*funcTypeFixed16
+(*funcTypeFixed32
+(*funcTypeFixed4
+(*funcTypeFixed64
+(*funcTypeFixed8
+(*functype
+(*gList
+(*gQueue
+(*gcBits
+(*gcBitsArena
+(*gcControllerState
+(*gcSweepBuf
+(*gcWork
+(*gcm
+(*gcmAsm
+(*gcmCipher
+(*genericReplacer
+(*globalOptionsHandler
+(*guintptr
+(*gzipReader
+(*halfConn
+(*handler
+(*handshakeMagics
+(*handshakeTransport
+(*hchan
+(*hcode
+(*headerFieldTable
+(*headerFlags
+(*headerSorter
+(*helloRequestMsg
+(*hkdf
+(*hmac
+(*hmap
+(*htmlSig
+(*http.Cookie
+(*http.Request
+(*http.Response
+(*http.http2ClientConn
+(*http.http2serverConn
+(*http2ClientConn
+(*http2ConnectionError
+(*http2ContinuationFrame
+(*http2DataFrame
+(*http2ErrCode
+(*http2Flags
+(*http2FrameHeader
+(*http2FrameType
+(*http2FrameWriteRequest
+(*http2Framer
+(*http2GoAwayError
+(*http2GoAwayFrame
+(*http2HeadersFrame
+(*http2MetaHeadersFrame
+(*http2PingFrame
+(*http2PriorityFrame
+(*http2PriorityParam
+(*http2PushPromiseFrame
+(*http2RSTStreamFrame
+(*http2ServeConnOpts
+(*http2Server
+(*http2Setting
+(*http2SettingID
+(*http2SettingsFrame
+(*http2StreamError
+(*http2Transport
+(*http2UnknownFrame
+(*http2WindowUpdateFrame
+(*http2addConnCall
+(*http2badStringError
+(*http2bufferedWriter
+(*http2chunkWriter
+(*http2clientConnPool
+(*http2clientConnReadLoop
+(*http2clientStream
+(*http2closeWaiter
+(*http2connError
+(*http2dataBuffer
+(*http2dialCall
+(*http2duplicatePseudoHeaderError
+(*http2erringRoundTripper
+(*http2flow
+(*http2flushFrameWriter
+(*http2frameCache
+(*http2gate
+(*http2goAwayFlowError
+(*http2gzipReader
+(*http2handlerPanicRST
+(*http2headerFieldNameError
+(*http2headerFieldValueError
+(*http2httpError
+(*http2noCachedConnError
+(*http2noDialClientConnPool
+(*http2noDialH2RoundTripper
+(*http2pipe
+(*http2priorityNode
+(*http2priorityWriteScheduler
+(*http2pseudoHeaderError
+(*http2randomWriteScheduler
+(*http2requestBody
+(*http2responseWriter
+(*http2responseWriterState
+(*http2serverConn
+(*http2serverInternalState
+(*http2sortPriorityNodeSiblings
+(*http2sorter
+(*http2stickyErrWriter
+(*http2stream
+(*http2streamState
+(*http2transportResponseBody
+(*http2write100ContinueHeadersFrame
+(*http2writeData
+(*http2writeGoAway
+(*http2writePingAck
+(*http2writePushPromise
+(*http2writeQueue
+(*http2writeQueuePool
+(*http2writeResHeaders
+(*http2writeSettings
+(*http2writeSettingsAck
+(*http2writeWindowUpdate
+(*httpError
+(*httpProxyDialer
+(*huffmanBitWriter
+(*huffmanDecoder
+(*huffmanEncoder
+(*idnaTrie
+(*initALPNRequest
+(*input
+(*inputBytes
+(*inputReader
+(*inputString
+(*inputs
+(*int64Encoder
+(*int64Value
+(*intValue
+(*interfaceType
+(*ioSrv
+(*ipMatch
+(*ipStackCapabilities
+(*ipv6ZoneCache
+(*itab
+(*itabTableType
+(*item
+(*jnet/http.(*persistConn
+(*jsonError
+(*keyUpdateMsg
+(*labelError
+(*labelIter
+(*lazybuf
+(*lexer
+(*lfstack
+(*lineBreaker
+(*linearAlloc
+(*list.Element
+(*list.List
+(*listener
+(*lockedSource
+(*mSpanList
+(*mSpanStateBox
+(*mac
+(*macGeneric
+(*machine
+(*maptype
+(*markBits
+(*marshalingFunction
+(*maskedSig
+(*maxBytesReader
+(*maxLatencyWriter
+(*mcache
+(*mcentral
+(*memRecordCycle
+(*messageReader
+(*messageWriter
+(*mheap
+(*monitorableWriter
+(*mp4Sig
+(*mspan
+(*muintptr
+(*multiEncoder
+(*multiReader
+(*mux
+(*net.Buffers
+(*net.netFD
+(*netDialerFunc
+(*netError
+(*netFD
+(*newSessionTicketMsg
+(*newSessionTicketMsgTLS13
+(*nfcTrie
+(*nfkcTrie
+(*nistParameters
+(*noBody
+(*noCopy
+(*noneAuth
+(*noneCipher
+(*nopCloser
+(*norm.reorderBuffer
+(*normReader
+(*normWriter
+(*notInHeap
+(*nothingWrittenError
+(*oidEncoder
+(*onceCloseListener
+(*onePassInst
+(*onlyValuesCtx
+(*operation
+(*os.file
+(*p
+(*p224Curve
+(*p256Curve
+(*p256Point
+(*pageAlloc
+(*pageBits
+(*pageCache
+(*pallocBits
+(*pallocData
+(*parser
+(*partReader
+(*passwordCallback
+(*persistConn
+(*persistConnWriter
+(*pkix.CertificateList
+(*pkix.RDNSequence
+(*plainError
+(*poll.operation
+(*pollCache
+(*pollDesc
+(*poolChain
+(*poolDequeue
+(*pp
+(*prefixNonceAEAD
+(*prepareConn
+(*proxy_socks5
+(*ptrType
+(*pubKeyCache
+(*queueOnePass
+(*randomEnum
+(*randomOrder
+(*ranges
+(*rawConn
+(*rawListener
+(*readRune
+(*readWriteCloserBody
+(*redirectHandler
+(*reflectWithString
+(*regexp.Regexp
+(*reorderBuffer
+(*requestBodyReadError
+(*response
+(*rlocker
+(*rngReader
+(*rngSource
+(*rsaKeyAgreement
+(*rsaPublicKey
+(*rtype
+(*runeError
+(*runeSlice
+(*runtime.p
+(*rwcConn
+(*rwmutex
+(*scanner
+(*sectionReadCloser
+(*semaRoot
+(*serverHandler
+(*serverHandshakeState
+(*serverHandshakeStateTLS13
+(*serverHelloDoneMsg
+(*serverHelloMsg
+(*serverKeyExchangeMsg
+(*sessionState
+(*sessionStateTLS13
+(*singleStringReplacer
+(*skECDSAPublicKey
+(*skEd25519PublicKey
+(*socksAddr
+(*socksCommand
+(*socksConn
+(*socksDialer
+(*socksUsernamePassword
+(*sparseBlocks
+(*ss
+(*sshClientKeyboardInteractive
+(*sshConn
+(*stackObject
+(*stackScanState
+(*state
+(*stickyErrorReader
+(*streamPacketCipher
+(*streamSafe
+(*stringEncoder
+(*stringFinder
+(*stringReader
+(*stringValue
+(*stringWriter
+(*strings.Builder
+(*struct { io.Reader; io.Closer }
+(*struct { sync.Mutex; math/big.table [64]math/big.divisor }
+(*struct { sync.Mutex; os/signal.m map[chan<- os.Signal]*os/signal.handler; os/signal.ref [65]int64; os/signal.stopping []os/signal.stopping }
+(*struct { sync.Mutex; reflect.m sync.Map }
+(*struct { sync.Once; net.val int }
+(*structField
+(*structType
+(*structfield
+(*syntax.Regexp
+(*sysDialer
+(*sysListener
+(*syscall.ByHandleFileInformation
+(*syscall.Win32finddata
+(*taggedEncoder
+(*textSig
+(*time.Location
+(*timeoutError
+(*timerCtx
+(*tls.CertificateRequestInfo
+(*tls.ClientHelloInfo
+(*tls10MAC
+(*tlsHandshakeTimeoutError
+(*traceAlloc
+(*traceAllocBlockPtr
+(*traceBuf
+(*traceBufPtr
+(*traceStack
+(*traceStackTable
+(*transferReader
+(*transferWriter
+(*transport
+(*transportReadFromServerError
+(*transportRequest
+(*trieNode
+(*tripleDESCipher
+(*truncWriter
+(*truncatingMAC
+(*uint16
+(*uint32
+(*uint64Value
+(*uintValue
+(*uncommonType
+(*unsupportedTEError
+(*url.URL
+(*valueCtx
+(*waitReason
+(*waitq
+(*wantConn
+(*wantConnQueue
+(*wbBuf
+(*websocket.PreparedMessage
+(*window
+(*workbuf
+(*wrapError
+(*wrappedSigner
+(*writeHook
+(*writerOnly
+(*wsConn
+(*x25519Parameters
+(*x509.Certificate
+(*xorNonceAEAD
+(*zr
+(+
+(+$&GY
+(+(
+(+2
+(+3v
+(+=
+(+e
+(+p
+(-
+(-I param in grep
+(-Xi
+(-]
+(-j@#j(#jruntime.(*plainError
+(-j@#j.jcontext.(*timerCtx
+(-j@#j.jencoding/json.(*encodeState
+(-j@#j.jgithub.com/jpillora/chisel/client.(*Client
+(-j@#j.jgithub.com/jpillora/chisel/server.(*Server
+(-j@#j.jgithub.com/jpillora/chisel/share.(*TCPProxy
+(-j@#j.jgithub.com/jpillora/chisel/share.(*wsConn
+(-j@#j.jgolang.org/x/crypto/ssh.(*connection
+(-j@#j.jgolang.org/x/crypto/ssh.(*sshClientKeyboardInteractive
+(-j@#j.jnet/http.(*http2MetaHeadersFrame
+(-j@#j.jnet/http.(*transportRequest
+(-j@#j.jreflect.(*funcType
+(-j@#j.jreflect.(*funcTypeFixed128
+(-j@#j.jreflect.(*funcTypeFixed16
+(-j@#j.jreflect.(*funcTypeFixed32
+(-j@#j.jreflect.(*funcTypeFixed4
+(-j@#j.jreflect.(*funcTypeFixed64
+(-j@#j.jreflect.(*funcTypeFixed8
+(-j@#j.jreflect.(*ptrType
+(-j@#j.jreflect.(*structType
+(-j@#j.jregexp.(*onePassInst
+(-j@#j.jtext/template.(*Template
+(-j@#j.jtext/template/parse.(*IfNode
+(-j@#j.jtext/template/parse.(*RangeNode
+(-j@#j.jtext/template/parse.(*WithNode
+(-j@#j.jvendor/golang.org/x/net/http/httpproxy.(*config
+(.
+(.((+/
+(.*\\$.*\\
+(.-
+(...http.http2Setting
+(...interface {}
+(...string
+(...uintptr
+(.G
+(.T
+(.in-addr.arpa.169.254.0.0/1619073486328125192.168.0.0/1695367431640625: extra text: ; SameSite=Lax<not Stringer>Accept-CharsetAlready closedCertCloseStoreContent-LengthCreateProcessWCryptGenRandomDkim-SignatureEC PRIVATE KEYFindFirstFileWFingerprint %sFormatMessageWGC assist waitGC worker initGetConsoleModeGetProcAddressGetUserNameExWHandshaking...INTERNAL_ERRORInstEmptyWidthInvalid JSON: Invalid remoteMAX_FRAME_SIZEMB; allocated NetUserGetInfoNot AcceptableOther_ID_StartPROTOCOL_ERRORPattern_SyntaxProcess32NextWQuotation_MarkRCodeNameErrorREFUSED_STREAMREQUEST_METHODRegSetValueExWSending configSetFilePointerTranslateNameW\.+*?(
+(.in-addr.arpa.169.254.0.0/1619073486328125192.168.0.0/1695367431640625: extra text: <not Stringer>Accept-CharsetAlready closedCertCloseStoreContent-LengthCreateProcessWCryptGenRandomDkim-SignatureEC PRIVATE KEYFindFirstFileWFingerprint %sFormatMessageWGC assist waitGC worker initGetConsoleModeGetProcAddressGetUserNameExWHandshaking...INTERNAL_ERRORInstEmptyWidthInvalid JSON: Invalid remoteMAX_FRAME_SIZEMB; allocated NetUserGetInfoNot AcceptableOther_ID_StartPROTOCOL_ERRORPattern_SyntaxProcess32NextWQuotation_MarkRCodeNameErrorREFUSED_STREAMREQUEST_METHODRegSetValueExWSending configSetFilePointerTranslateNameW\.+*?(
+(/
+(/(/_EyIy
+(/rp\\s|/p\\s
+(0
+(0 2
+(0123456789abcdefghijklmnopqrstuvwxyz444089209850062616169452667236328125Go pointer stored into non-Go memoryHeader called after Handler finishedHijack failed on protocol switch: %vIA5String contains invalid characterJanFebMarAprMayJunJulAugSepOctNovDecMStats vs MemStatsType size mismatchTime.UnmarshalBinary: invalid lengthUnable to determine system directoryaccessing a corrupted shared librarybytes.Reader.ReadAt: negative offsetbytes.Reader.Seek: negative positionchacha20: wrong HChaCha20 nonce sizecompressed name in SRV resource datacrypto/cipher: input not full blockscrypto/rand: argument to Int is <= 0crypto/sha1: invalid hash state sizecrypto/sha512: invalid hash functiondiffie-hellman-group-exchange-sha256exceeded maximum template depth (%v
+(09?
+(0O
+(0_
+(0b
+(0c|0n|3n|R
+(0j@#j(#jcontext.(*emptyCtx
+(0j@#j(#jgithub.com/gorilla/websocket.(*messageReader
+(0jencoding/json.(*Encoder
+(0jflag.(*FlagSet
+(0jvendor/golang.org/x/crypto/cryptobyte.(*Builder
+(1
+(10
+(1080
+(11
+(12
+(13
+(14
+(15
+(16
+(17
+(18
+(19
+(1I*d
+(1Tk
+(1_6
+(1l$01D$|1D$#\$8l$<1*\$4
+(2
+(20
+(20Ip@
+(2220446049250313080847263336181640625No supported authentication mechanism_cgo_notify_runtime_init_done missingall goroutines are asleep - deadlock!bytes.Buffer: truncation out of rangecannot exec a shared library directlycannot index slice/array with type %schacha20poly1305: plaintext too largecipher: message authentication failedcomment ends before closing delimitercrypto/cipher: incorrect GCM tag sizecrypto/cipher: invalid buffer overlapcrypto/rsa: public exponent too largecrypto/rsa: public exponent too smallcrypto/rsa: unsupported hash functioncrypto: Size of unknown hash functiondereference of nil pointer of type %sexplicitly tagged member didn't matchfailed to reserve page summary memoryhttp2: server encoding header %q = %qhttp: TLS handshake error from %s: %vinternal error: unknown network type out does not point to an integer typereflect.Value.Bytes of non-byte slicereflect.Value.Bytes of non-rune slicereflect.Value.Convert: value of type reflect: Bits of non-arithmetic Type reflect: IsVariadic of non-func type reflect: NumField of non-struct type reflect: funcLayout of non-func type runtime: allocation size out of rangeruntime: failed mSpanList.insertBack setprofilebucket: profile already setslice of unknown type in field %d: %TstartTheWorld: inconsistent mp->nextpsubtle: slices have different lengthstls: unsupported certificate key (%T
+(255
+(28*EQfK
+(3
+(37ou~
+(3B
+(3K
+(3d
+(3gPg=
+(3jHjTTjj.jcrypto/tls.(*serverHandshakeStateTLS13
+(3jP#j.jmath/big.(*Float
+(3jP#j.jos.(*File
+(3jP#j<jmath/big.(*byteReader
+(3jP#jDjmath/big.(*Float
+(3jP#jDjstrings.(*Reader
+(3jP#jPjmath/big.(*Int
+(3jP#jRjgolang.org/x/crypto/ssh.(*channel
+(3jP#jSjbytes.(*Reader
+(3jP#j\2jfmt.(*ss
+(3jP#jjcrypto/tls.(*Conn
+(3jP#jjmath/big.(*Int
+(3ve
+(4
+(4$
+(4FTr_i
+(4f
+(4mSMi/w
+(4oF
+(5
+(51d
+(5_e9Y#
+(6
+(6B^
+(6vHD$hH#D$0HL$xHT$PHH
+(7
+(7B/uFn
+(8
+(8!b
+(8'(<I
+(8(_(i(|(((((((D
+(8[
+(8gn
+(9
+(9*t
+(9XJSj
+(9jnet/http.(*body
+(9vKl
+(9w>9w1
+(9wD
+(9wq
+(9~
+(:	
+(:/By
+(:S
+(:jtext/template.(*state
+(;|
+(;|4%=5
+(<=
+(<k}pj
+(<uhK+CE0{0Wb(
+(> 
+(>%k
+(>65535
+(>=
+(>O
+(?!.+Integrated Security
+(?5
+(?:
+(?Z
+(?i
+(?s
+(@
+(@EJ
+(@_Mayyhem
+(A
+(A3T[A-Z0-9]|AKIA|AGPA|AROA|AIPA|ANPA|ANVA|ASIA
+(AD CS
+(Attempt: %d (default %q
+(Auth
+(B
+(BADINDEX
+(BADWIDTH
+(BP 
+(C
+(C@
+(C@:
+(C]!>
+(C_f5
+(D
+(D$
+(D$89wD
+(D$8;
+(D/n
+(DPt
+(DT<t&JH_M(1fQ
+(Defaults to a machine specific identifier
+(E
+(EG&'B
+(F
+(G
+(G:
+(GPO
+(H
+(H0
+(H0H
+(H0HSHHSLHSHHSHHS$
+(H0r
+(H4$H
+(H9wrH
+(H9|H
+(H<$H
+(H=
+(HD$0H
+(HH
+(HL$0H
+(HL$8H
+(HL$@HH0=+
+(HQH\$@HH
+(HT$0HD$`HL$hHT$pHl$8H@HL$XH
+(HT$0HD$xHL$pH
+(HT$8H9w\HD$0HD$HHL$PH
+(H\$hHH
+(Hostname/IP
+(Ht$PH\$HMM
+(Ht$`HFh=M
+(I
+(I8+;8
+(ID>
+(IDENTIFIED BY|WITH PASSWORD
+(IH
+(IL
+(IS8
+(I}
+(J
+(J+_^
+(K
+(KH|
+(KaTv-
+(L
+(L$$
+(L'?*
+(LD$0H|$8Ht$@
+(Latency %s
+(Li
+(M
+(MISSING
+(Mexico
+(N
+(N@
+(NOVERB
+(NaN
+(Ni
+(Nj#j.jmain.(*headerFlags
+(Nj#j.jmath/big.(*Float
+(Nj#j.jregexp.(*Regexp
+(Nj#j3jfmt.(*fmt
+(Nj#j<:jflag.(*FlagSet
+(Nj#j<:jtext/template.(*Template
+(Nj#jPGjnet/http.(*Request
+(Nj#j\2jnet/textproto.(*MIMEHeader
+(Nj#j\2jreflect.(*StructTag
+(Nj#j\2jvendor/golang.org/x/text/unicode/norm.(*Form
+(Nj#jxUjsyscall.(*DLL
+(O
+(O#k[
+(Object identity: '{1}'
+(OjY3a/r
+(Only NET 4.7
+(Oq]be
+(P
+(PAr_PE
+(Pr[
+(Prefer DCOnly whenever possible!
+(Q
+(Q4MRMs
+(Q9
+(Qgd
+(Qjcrypto/tls.(*finishedHash
+(Qjcrypto/x509/pkix.(*Name
+(Qx_
+(R
+(Remote Desktop
+(Rp
+(S
+(SSL
+(SSPI|true
+(SY
+(T
+(T$ \$$10
+(TF
+(TLS handshake error
+(T]o
+(Tjcrypto/tls.(*newSessionTicketMsgTLS13
+(Tjgithub.com/jpillora/chisel/client.(*Client
+(Tjgolang.org/x/net/internal/socks.(*UsernamePassword
+(Tjnet/http.(*http2serverConn
+(Tjnet/http.(*http2writePushPromise
+(Tjnet/http.(*http2writeResHeaders
+(Tjnet/http.(*socksUsernamePassword
+(U
+(USER|LOGIN
+(UTSC9u^
+(UTSCu^
+(Usage: '--Cleanup true'
+(V
+(W
+(WB
+(X
+(X1P6Cfh]zFDx
+(Y
+(YQsKa
+(Yf
+(Z	4Z
+(Z
+(ZUss
+([C2
+([P-
+([][32]uint8
+([]big.Word
+([]int
+([]reflect.Value
+([]string
+([]uint8
+([^a-zA-Z]*
+([u+
+(\
+(\$\
+(\S
+(\d+(\.(\d+
+(\n
+(]Mx
+(]t@XYiN
+(]v=
+(^
+(^'9*2
+(^Q^M
+(^Wo
+(^^
+(_
+(_#8D]E%bU
+(`
+(`#/M%*
+(`iV
+(a
+(abnormal closure
+(all interfaces
+(anK
+(asn1.ObjectIdentifier
+(asn1.Tag
+(automatically loads from AD otherwise
+(b
+(b?
+(b@
+(big.Int=%s
+(big.RoundingMode
+(blocked
+(bnEgEyvr~y1
+(bool
+(bu
+(by default set it always to True
+(b||o6a.}2
+(c
+(c0
+(can't happen
+(client authentication
+(cnotaining bad_regex
+(complex128
+(conn
+(context.Context
+(cryptobyte.BuilderContinuation
+(cryptobyte.MarshalingValue
+(curl -X GET '127.0.0.1:9200' 2>/dev/null | grep number | cut -d ':' -f 2
+(d
+(dN(l0~V<I
+(default %v
+(defaults the environment variable HOST and falls back to 0.0.0.0
+(den<<shift
+(devel
+(dir
+(disabled
+(dsHk
+(e
+(e(
+(e-#
+(e-$\
+(e:LdLILI
+(elem
+(errno= runtime: unable to acquire - semaphore out of synctls: invalid signature by the client certificate: tls: invalid signature by the server certificate: tls: received unexpected CertificateStatus messagex509: RSA public exponent is not a positive numberx509: missing ASN.1 contents; use ParseCertificateJSON decoder out of sync - data changing underfoot?ScanState's Read should not be called. Use ReadRunecrypto/tls: reserved ExportKeyingMaterial label: %sfatal: systemstack called from unexpected goroutinehttp2: invalid Transfer-Encoding request header: %qpotentially overlapping in-use allocations detectedprotocol error: received %T before a SETTINGS frameproxy: failed to read address from SOCKS5 proxy at proxy: failed to write greeting to SOCKS5 proxy at runtime: netpoll: PostQueuedCompletionStatus failedssh: peer's curve25519 public value has wrong ordertls: VerifyHostname called on TLS server connectiontls: server selected unsupported compression formattls: server's identity changed during renegotiationx509: certificate has expired or is not yet valid: Client version (%s
+(error
+(error: %s
+(expected %d
+(expected one of %v
+(expecting 'a'
+(expecting 'e'
+(expecting 'l'
+(expecting 'r'
+(expecting 's'
+(expecting 'u'
+(f
+(f:
+(fHVrg]9
+(float64
+(fp
+(func(
+(func(*flag.Flag
+(func(hpack.HeaderField
+(func(http.http2Setting
+(func(string
+(func(uintptr
+(g
+(gS
+(giM
+(going away
+(gr0D+
+(h
+(hV
+(hh:mm:ss - 00:03:00 is 3 minutes
+(hjtL5R@Tz$tmueX?-=
+(hpack.HeaderField
+(http.Header
+(http.http2Flags
+(http.http2FrameWriteRequest
+(http.http2PushPromiseParam
+(http.http2Setting
+(http.http2SettingID
+(http.http2writeContext
+(https://github.com/0xb11a1/yetAnotherObfuscator
+(https://github.com/0xthirteen/SharpMove
+(https://github.com/0xthirteen/SharpRDP
+(https://github.com/0xthirteen/SharpStay
+(https://github.com/AlmondOffSec/PassTheCert
+(https://github.com/BloodHoundAD/SharpHound
+(https://github.com/CCob/SharpBlock
+(https://github.com/CCob/SweetPotato
+(https://github.com/Dec0ne/KrbRelayUp
+(https://github.com/FSecureLABS/SharpGPOAbuse
+(https://github.com/FatRodzianko/SharpBypassUAC
+(https://github.com/Flangvik/BetterSafetyKatz
+(https://github.com/Flangvik/SharpAppLocker
+(https://github.com/Flangvik/SharpCollection
+(https://github.com/FortyNorthSecurity/SqlClient
+(https://github.com/FuzzySecurity/StandIn
+(https://github.com/G0ldenGunSec/SharpSecDump
+(https://github.com/GhostPack/Certify
+(https://github.com/GhostPack/ForgeCert
+(https://github.com/GhostPack/LockLess
+(https://github.com/GhostPack/Rubeus
+(https://github.com/GhostPack/SafetyKatz
+(https://github.com/GhostPack/Seatbelt
+(https://github.com/GhostPack/SharpDPAPI
+(https://github.com/GhostPack/SharpDump
+(https://github.com/GhostPack/SharpUp
+(https://github.com/GhostPack/SharpWMI
+(https://github.com/Group3r/Group3r
+(https://github.com/HunnicCyber/SharpSniper
+(https://github.com/JamesCooteUK/SharpSphere
+(https://github.com/MartinIngesen/TokenStomp
+(https://github.com/Mayyhem/SharpSCCM
+(https://github.com/PwnDexter/SharpEDRChecker
+(https://github.com/RedLectroid/SearchOutlook
+(https://github.com/SnaffCon/Snaffler
+(https://github.com/V1V1/SharpScribbles
+(https://github.com/airzero24/WMIReg
+(https://github.com/anthemtotheego/SharpExec
+(https://github.com/b4rtik/SharpKatz
+(https://github.com/b4rtik/SharpMiniDump
+(https://github.com/bats3c/ADCSPwn
+(https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite
+(https://github.com/checkymander/Sharp-SMBExec
+(https://github.com/chrismaddalena/SharpCloud
+(https://github.com/cube0x0/KrbRelay
+(https://github.com/cube0x0/SharpMapExec
+(https://github.com/dev-2null/ADCollector
+(https://github.com/djhohnstein/SharpChromium
+(https://github.com/djhohnstein/SharpSearch
+(https://github.com/djhohnstein/SharpShares
+(https://github.com/dsnezhkov/TruffleSnout
+(https://github.com/eladshamir/Whisker
+(https://github.com/fireeye/ADFSDump
+(https://github.com/fireeye/SharPersist
+(https://github.com/fullmetalcache/SharpFiles
+(https://github.com/infosecn1nja/SharpDoor
+(https://github.com/jaredhaight/scout
+(https://github.com/jfmaes/SharpHandler
+(https://github.com/jnqpblc/SharpDir
+(https://github.com/jnqpblc/SharpReg
+(https://github.com/jnqpblc/SharpSpray
+(https://github.com/jnqpblc/SharpSvc
+(https://github.com/jnqpblc/SharpTask
+(https://github.com/juliourena/SharpNoPSExec
+(https://github.com/l0ss/Grouper2
+(https://github.com/lefayjey/SharpSQLPwn
+(https://github.com/matterpreter/Shhmon
+(https://github.com/mgeeky/SharpWebServer
+(https://github.com/mitchmoser/AtYourService
+(https://github.com/mvelazc0/PurpleSharp
+(https://github.com/nccgroup/nccfsas/tree/main/Tools/SharpZeroLogon
+(https://github.com/pkb1s/SharpAllowedToAct
+(https://github.com/r3nhat/SharpWifiGrabber
+(https://github.com/rasta-mouse/Watson
+(https://github.com/rvrsh3ll/SharpCOM
+(https://github.com/rvrsh3ll/SharpPrinter
+(https://github.com/shantanu561993/SharpChisel
+(https://github.com/slyd0g/SharpCrashEventLog
+(https://github.com/swisskyrepo/SharpLAPS
+(https://github.com/tevora-threat/SharpView
+(https://github.com/tomcarver16/ADSearch
+(https://github.com/ustayready/SharpHose
+(https://github.com/vivami/SauronEye
+(https://twitter.com/0xcc00
+(httptrace.DNSDoneInfo
+(httptrace.DNSStartInfo
+(httptrace.GotConnInfo
+(httptrace.WroteRequestInfo
+(i
+(i?
+(iP414
+(i\
+(idle
+(incorrect use of unsafe or cgo?
+(int
+(int32
+(int64
+(interface {}
+(internal server error
+(invalid payload data
+(io.Reader
+(io.RuneReader
+(io.Writer
+(it must end with a .
+(itO
+(j
+(j%jgolang.org/x/crypto/ssh.(*handshakeTransport
+(j(jgithub.com/jpillora/chisel/server.(*Server
+(j0hjfmt.(*ss
+(j8|jcrypto/tls.(*clientHelloMsg
+(j<-j\jjXjmath/big.(*Float
+(jD:jRjoj=jnet/http.(*http2serverConn
+(jS
+(j`
+(jbytes.(*Buffer
+(jcrypto/tls.(*Conn
+(jflag.(*FlagSet
+(jfmt.(*fmt
+(jgithub.com/armon/go-socks5.(*Server
+(jgithub.com/jpillora/chisel/share.(*Logger
+(jgolang.org/x/crypto/ssh.(*connection
+(jgolang.org/x/crypto/ssh.(*handshakeTransport
+(jh~jcrypto/tls.(*serverHelloMsg
+(jjcrypto/tls.(*certificateStatusMsg
+(jjgolang.org/x/crypto/ssh.(*dsaPrivateKey
+(jjnet/http.(*Server
+(jmath/big.(*Float
+(jmath/rand.(*Rand
+(jnet.(*netFD
+(jnet/http.(*Server
+(jnet/http.(*Transport
+(jnet/http.(*body
+(jnet/http.(*bodyEOFSignal
+(jnet/http.(*conn
+(jnet/http.(*connReader
+(jnet/http.(*http2ClientConn
+(jnet/http.(*persistConn
+(jp
+(jreflect.(*Value
+(jtime.(*Duration
+(jtime.(*Time
+(jtwjcrypto/ecdsa.(*PrivateKey
+(jvendor/golang.org/x/crypto/hkdf.(*hkdf
+(jvendor/golang.org/x/text/unicode/norm.(*input
+(k
+(k|m|g|t|p|x
+(l
+(l<Put
+(lKWjR
+(m
+(mS
+(m^As
+(main called runtime.Goexit
+(mandatory extension missing
+(max 1048575
+(message too big
+(mostly for ATA/ATP
+(msDS-AllowedToActOnBehalfOfOtherIdentity
+(mswsock.dllnil contextnot reachedparse errorproxy#%d:%sraw-controlreflect.Setretry-afterruntime: P runtime: p scheddetailsecur32.dllshell32.dllshort writessh-ed25519stack tracetls: alert(tracealloc(traffic updunreachableuserenv.dllwebsocket: wsarecvfrom{{template  (no status
+(m{H>2q
+(n
+(n:A
+(n?X
+(need at least one of TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 or TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+(net.Conn
+(net.IP
+(net.IPMask
+(net.Listener
+(nil
+(nil chan
+(nil json: Unmarshal(nil
+(nmoOR
+(no cases
+(non-pointer malformed MIME header line: mheap.freeSpanLocked - span missing required Host headermissing stack in shrinkstackmspan.sweep: m is not lockedmultipart: boundary is emptymultipart: message too largeneed padding in bucket (key
+(normal
+(not DER
+(not Gdead
+(o
+(o4
+(ojSjHjvendor/golang.org/x/net/http/httpproxy.(*config
+(on
+(only 1GB is allowed
+(only linpeas
+(only socks5h:// or socks:// is supported
+(os.FileMode
+(p
+(parse.Node
+(parse.Pos
+(percent
+(policy violation
+(possibly because of %q while trying to verify candidate authority certificate %q
+(p|
+(q
+(q3
+(qo:
+(r
+(reflect.Type
+(reflect.Value
+(reflectlite.Type
+(reflectlite.Value
+(s
+(sSl|
+(sUqVP
+(scan  (scan
+(see examples
+(sensitive
+(sent %s received %s
+(server localhost
+(so no passwords
+(ssh.ConnMetadata
+(ssh.Signer
+(stackalloc
+(status != _Pgcstop
+(stopwait != 0
+(strconv.extFloat
+(string
+(syscall.Handle
+(syscall.Sockaddr
+(t
+(t$4
+(t$l
+(t9i_Wi_
+(tQl$84
+(tdm64-1
+(template %q not definedtext/css; charset=utf-8text/xml; charset=utf-8time: invalid duration tls: invalid PSK bindertoo many pointers (>10
+(template.FuncMap
+(time.Duration
+(time.Time
+(tracebackancestorstruncated sequenceunexpected messageunexpected newlineunexpected type %Tuse of closed fileuserAuthFailureMsguserAuthRequestMsguserAuthSuccessMsgvalue out of range (%d bytes omitted
+(tracegc(
+(types from different packages
+(types from different scopes
+(u
+(uJn#uj\
+(uM}+=^PFyg
+(uZ*]$?[1
+(uint
+(uint16
+(uint32
+(uint64
+(uint8
+(uintptr
+(unknown
+(unsafe.Pointer
+(unsupported data
+(use ParseECPrivateKey instead for this key format
+(use ParsePKCS1PrivateKey instead for this key format
+(use ParsePKCS8PrivateKey instead for this key format
+(u~B+P
+(v
+(va\
+(w
+(wP
+(warn_exec apache2 -v 2>/dev/null; warn_exec httpd -v 2>/dev/null
+(warn_exec mongo --version 2>/dev/null; warn_exec mongod --version 2>/dev/null
+(warn_exec psql -V 2>/dev/null
+(winPEAS
+(with -LDAPS flag
+(with DistinguishedName
+(x
+(x509.VerifyOptions
+(xC
+(xQ
+(xox[pboa]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-z0-9]{32}
+(y
+(y3&V
+(y5
+(ycdC[BJL
+(z
+(zL_SZ]0pI`
+(zN
+(zU
+({:jy'
+({<T
+({{ .IP }}
+(|
+(|$<
+(|0
+(|=B
+(|i
+(|x
+(}
+(}T:o\*;L
+(}cegG
+(~x

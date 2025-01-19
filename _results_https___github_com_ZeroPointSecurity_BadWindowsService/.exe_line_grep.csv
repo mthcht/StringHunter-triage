@@ -1,0 +1,6 @@
+"                Process.Start(""cmd.exe"
+"            Console.Error.WriteLine(""[X] Could not locate InstallUtil.exe"
+"            RunCommandWriteOutput(""sc.exe"
+"        const string executable = ""BadWindowsService.exe"
+"        var installUtilPath = RuntimeEnvironment.GetRuntimeDirectory() + ""InstallUtil.exe"
+.paket/paket.exe

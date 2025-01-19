@@ -1,0 +1,33 @@
+ ------ RDP / TS Session Query...
+ ------ RDP Session Hijack...
+ --------------------------------------------------------------------------
+ ----------------------------------------WTS P-Invoke Definitions
+ --console : Redirect session to console session instead of current (active) session
+ --console is specified)
+ --disconnect : Disconnect an active (remote) session
+ --password=<User's Password> : Session password if known (otherwise optional - not required for disconnect switch)
+ --session=2 --console
+ --session=2 --shadow --console
+ --session=3 --disconnect
+ --session=3 --shadow
+ --session=4 --password=P@ssw0rd
+ --session=6
+ --session=<ID> : Target session identifier
+ --shadow : Shadow an active session (experimental)
+ --shadow option with the --console option to attempt to connect to the session via RDP shadowing.
+ --tsquery=<host> : Query a host to identify RDP/TS session information (not required for other switches)
+ --tsquery=localhost
+" ---------------------------------------- Token Duplication P-Invoke Definitions [https://gallery.technet.microsoft.com/scriptcenter/Enable-TSDuplicateToken-6f485980 and Goude 2012, TreuSec (http://www.truesec.com )]"
+" --console : Redirect session to console session instead of current (active) session"");"
+" --disconnect : Disconnect an active (remote) session\n"");"
+" --password=<User's Password> : Session password if known (otherwise optional - not required for disconnect switch)"");"
+" --session=2 --console\n"");"
+" --session=2 --shadow --console\n"");"
+" --session=3 --disconnect\n"");"
+" --session=3 --shadow\n"");"
+" --session=4 --password=P@ssw0rd\n"");"
+" --session=6\n"");"
+" --session=<ID> : Target session identifier"");"
+" --shadow : Shadow an active session (experimental)"");"
+" --tsquery=<host> : Query a host to identify RDP/TS session information (not required for other switches)"");"
+" --tsquery=localhost\n"");"

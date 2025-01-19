@@ -1,0 +1,2 @@
+"wprintf(L""[*] Current token user: %s\n"", curTokenUser"
+"wprintf(L""[+] Obtained token for %s from PID %d\n"", targetTokenUser, pe32.th32ProcessID"

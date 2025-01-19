@@ -1,0 +1,4 @@
+    $aesManaged.Key = $key
+    if options.keytab is not None:
+"        Keytab.loadKeysFromKeytab (options.keytab, username, domain, options)"
+from impacket.krb5.keytab import Keytab

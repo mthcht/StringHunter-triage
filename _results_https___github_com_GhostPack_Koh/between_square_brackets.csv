@@ -1,0 +1,123 @@
+"[""AcquireCredentialsHandleError"""
+"[""Protected Users Security Group"""
+"[""SignalExit"""
+"[DllImport(""Secur32.dll"", SetLastError = false)"
+"[DllImport(""Secur32.dll"", SetLastError = true)"
+"[DllImport(""advapi32"", CharSet = CharSet.Auto, SetLastError = true)"
+"[DllImport(""advapi32.dll"")"
+"[DllImport(""advapi32.dll"", SetLastError = true)"
+"[DllImport(""kernel32"", EntryPoint = ""GetComputerNameA"", CharSet = CharSet.Ansi, SetLastError = true)"
+"[DllImport(""kernel32.dll"")"
+"[DllImport(""kernel32.dll"", SetLastError = true)"
+"[DllImport(""secur32.dll"", CharSet = CharSet.Auto)"
+"[DllImport(""secur32.dll"", SetLastError = false)"
+"[DllImport(""secur32.dll"", SetLastError = true)"
+"[MarshalAs(UnmanagedType.ByValArray, SizeConst = 35)"
+"[assembly: AssemblyCompany("""")"
+"[assembly: AssemblyConfiguration("""")"
+"[assembly: AssemblyCulture("""")"
+"[assembly: AssemblyDescription("""")"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")"
+"[assembly: AssemblyProduct(""Koh"")"
+"[assembly: AssemblyTitle(""Koh"")"
+"[assembly: AssemblyTrademark("""")"
+"[assembly: AssemblyVersion(""1.0.*"")"
+"[assembly: AssemblyVersion(""1.0.0.0"")"
+"[assembly: Guid(""4d5350c8-7f8c-47cf-8cde-c752018af17e"")"
+[!
+[(Is0IA^_
+[*
+[+
+[0
+[0-59
+[0-9A-Fa-f
+[0Ik8Is@IA_A^A
+[0Ik@IsHIA_A^A
+[0Is8I{HIA_A^A
+[0Is@IA_A^A\_
+[1
+[1-9
+[1.0.0
+[2
+[3
+[4
+[@SteveSyfuhs
+[@cnotin
+[@harmj0y
+[@tifkin_
+[AL}
+[AcceptSecurityContext()
+[AcquireCredentialsHandle
+[AcquireCredentialsHandle()
+[Advantages
+[Advantages/Disadvantages Versus Traditional Credential Extraction
+[Approach
+[Bb
+[BufferSize
+[Byte[
+[CheckTokenMembership()
+[Compilation
+[Dd
+[Disadvantages
+[Donut
+[Donut-built
+[Elad Shamir
+[Example - Capture
+[Example - Listing Logon Sessions
+[Example - Monitoring for Logon Sessions (with group SID filtering)
+[Flags
+[GetTokenInformation()
+[Group SID Filtering
+[GroupSID... GroupSID2 ...
+[IOCs
+[InitializeSecurityContext()
+[Inject-Assembly
+[Inline Shenanigans Bug
+[InlineExecute-Assembly
+[Internal-Monologue
+[KB180548
+[KB2871997
+[Keep a Changelog
+[Koh
+[Koh Client
+[Koh Server
+[Koh: The Token Stealer
+[LsaEnumerateLogonSessions
+[LsaEnumerateLogonSessions()
+[MS16-111
+[MarshalAs(UnmanagedType.ByValArray)
+[Mitigations
+[Oo
+[Our Approach
+[Possible Approaches
+[QuerySecurityContextToken()
+[Rr
+[Semantic Versioning
+[Steve mentions:
+[StructLayout(LayoutKind.Sequential)
+[TODO
+[Table of Contents
+[Technical Background
+[The Inline Shenanigans Bug
+[Usage
+[Why This Is Possible
+[X
+[\
+[] bytes = new byte[1
+[] bytes = new byte[8
+[] inBuffer = new byte[4096
+[] my_buf = new byte[%d
+[] userSIDS = new string[groups.GroupCount
+[assembly: ComVisible(false)
+[demonstrated by Ryan
+[entry.Key
+[exchange
+[i
+[identifier
+[increases the ReferenceCount
+[list | add SID | remove SID | reset
+[mirrored by PKISolutions here
+[options
+[return: MarshalAs(UnmanagedType.Bool)
+[so we can free it
+[to this post by a Microsoft engineer

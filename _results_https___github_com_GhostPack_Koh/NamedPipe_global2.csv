@@ -1,0 +1,3 @@
+"\\.\pipe\imposecost` that stays open as long as Koh is running. The default password used for Koh communication is `password`, so sending `password list` to any `\\.\pipe\imposecost` pipe will let you confirm if Koh is indeed running. The default impersonation pipe used is `\\.pipe\imposingcost`."
+\\.\pipe\imposecost
+\\.\pipe\imposingcost

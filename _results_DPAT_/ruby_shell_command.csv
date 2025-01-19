@@ -1,0 +1,24 @@
+"execute(""CREATE INDEX index_lm_hash_left ON hash_infos (lm_hash_left"
+"execute(""CREATE INDEX index_lm_hash_right ON hash_infos (lm_hash_right"
+"execute(""CREATE INDEX index_nt_hash ON hash_infos (nt_hash"
+"execute(""CREATE INDEX lm_hash ON hash_infos (lm_hash"
+"execute(""CREATE INDEX username ON hash_infos (username"
+"execute(""INSERT INTO hash_infos (username_full, username, lm_hash , lm_hash_left , lm_hash_right , nt_hash, history_index, history_base_username"
+"execute(""SELECT username_full, LENGTH(password"
+"execute(""UPDATE hash_infos SET lm_pass_left = ? WHERE lm_hash_left = ?"", (password, hash"
+"execute(""UPDATE hash_infos SET lm_pass_right = ? WHERE lm_hash_right = ?"", (password, hash"
+"execute(""UPDATE hash_infos SET password = ? WHERE nt_hash = ?"", (password, hash"
+"execute('SELECT lm_hash, lm_pass_left, lm_pass_right, nt_hash FROM hash_infos WHERE (lm_pass_left is not """" or lm_pass_right is not """""
+"execute('SELECT nt_hash, COUNT(nt_hash"
+"execute('SELECT nt_hash,lm_pass_left,lm_pass_right FROM hash_infos WHERE (lm_pass_left is not NULL or lm_pass_right is not NULL"
+"execute('SELECT password,COUNT(password"
+"execute('SELECT username_full,password,LENGTH(password"
+"execute('UPDATE hash_infos SET only_lm_cracked = 1, password = \'' + password.replace(""'"", ""''"""
+execute('SELECT COUNT(DISTINCT nt_hash
+execute('SELECT COUNT(password
+execute('SELECT LENGTH(password
+execute('SELECT MAX(history_index
+execute('SELECT count(*
+execute('SELECT count(DISTINCT lm_hash
+execute('SELECT count(DISTINCT nt_hash
+execute('SELECT username FROM hash_infos WHERE history_index = -1 AND LENGTH(password

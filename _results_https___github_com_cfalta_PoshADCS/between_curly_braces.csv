@@ -1,0 +1,12 @@
+"{ $SearcherArguments['LDAPFilter'] = (""(objectclass=pKICertificateTemplate)(name="" + $Name + "")"") "
+"{ -not (($_.SecurityIdentifier.value -like ""*-512"") -or ($_.SecurityIdentifier.value -like ""*-519"") -or ($_.SecurityIdentifier.value -like ""*-516"") -or ($_.SecurityIdentifier.value -like ""*-500"") -or ($_.SecurityIdentifier.value -like ""*-498"") -or ($_.SecurityIdentifier.value -eq ""S-1-5-9"") -or ($_.SecurityIdentifier.value -eq ""S-1-5-11"") -or ($_.SecurityIdentifier.value -like ""*-513"") -or ($_.SecurityIdentifier.value -like ""*-515"") -or ($_.SecurityIdentifier.value -like ""*-553"")) "
+"{ -not (($_.SecurityIdentifier.value -like ""*-512"") -or ($_.SecurityIdentifier.value -like ""*-519"") -or ($_.SecurityIdentifier.value -like ""*-516"") -or ($_.SecurityIdentifier.value -like ""*-500"") -or ($_.SecurityIdentifier.value -like ""*-498"") -or ($_.SecurityIdentifier.value -eq ""S-1-5-9"")) "
+"{""SearchBase""=(""CN=Certificate Templates,"" + $BasePath)"
+"{$_.ClassGuid -eq ""{50DD5230-BA8A-11D1-BF5D-0000F805F530"
+{ $SearcherArguments['Raw'] = $Raw 
+{ Convert-ADCSEnrollmentFlag -Flag $Value 
+{ Convert-ADCSNameFlag -Flag $Value 
+{ Convert-ADCSPrivateKeyFlag -Flag $Value 
+{$_.DeviceID -eq $DeviceID
+{$_.ObjectDN -eq $t.distinguishedname
+{$p.Key=$p.Value

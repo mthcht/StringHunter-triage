@@ -1,0 +1,270 @@
+"` The length, in bytes, of the buffer pointed to by the "
+"` The size, in bytes, of the buffer pointed to by "
+"` if no match is found. In this case, the "
+"` if the operation was successful, "
+"` trait, "
+"`), RustPotato connects to a listener and executes commands through "
+"`), a binding context ("
+"`, "
+"`, and "
+"`: A pointer to a variable that specifies the DLL characteristics (optional, can be "
+"`: Specifies which attributes to modify (e.g., "
+"`[in, opt]"
+"`[in, out]"
+"`[out, opt]"
+` (used for process creation) or 
+` - 
+` - A 
+` - A mutable pointer to 
+` A pointer to a 
+` A pointer to a caller-supplied variable to receive the I/O completion key. This parameter is ignored if 
+` A pointer to an 
+` A pointer to the byte offset in the file where the operation should begin. If this parameter is 
+` and 
+` and restores the original state in 
+` for host and 
+` is not 
+` library by loading 
+` or 
+` pointer to point to the appropriate function based on the number of parameters for 
+` specifying the target PID to filter tokens. If 
+` starting at 
+` that specifies the fully qualified path of the DLL to load. This can be 
+` to continue or 
+` to find the 
+` with the correct hash for 
+`$hash
+`$name
+`) and the server is not already running (
+`*mut u8
+`-1
+`-h
+`-p
+`. It receives a 
+`0
+`0x12345ABC
+`0xABCDE123
+`0xabcdef12
+`: A 
+`: A **process token** (
+`: A function or closure to process each 
+`: A mutable reference that will be updated with the address of the matched function in 
+`: A mutable reference to a vector of 
+`: A pointer to a 
+`: An optional 
+`: The 
+`: The standard COM object implementing 
+`AccessMask
+`Advapi32
+`Arc<Mutex<WindowsIdentity>>
+`CLIENT_ID
+`CoUnmarshalInterface
+`CreateProcessWithTokenW
+`Default
+`Delegation
+`DllCharacteristics
+`DllHandle
+`DllName
+`DllPath
+`DualStringArray
+`Err(String)
+`Err(std::io::Error)
+`Err(u32)
+`GLOBAL_CONTEXT
+`HANDLE
+`HANDLE_FLAG_INHERIT
+`HANDLE_FLAG_PROTECT_FROM_CLOSE
+`IBindCtx
+`IMoniker
+`IO_STATUS_BLOCK
+`IUnknown
+`ImageNtHeaders
+`ImpersonateNamedPipeClient
+`Impersonation
+`LARGE_INTEGER
+`NT AUTHORITY\SYSTEM
+`NTDLL
+`NULL
+`None
+`NtCreateNamedPipeFile
+`NtDll
+`NtDuplicateObject
+`NtGetLastError
+`NtOpenProcess
+`NtProcessHeap
+`NtQueryObject
+`NtQuerySystemInformation
+`NtSetInformationObject
+`NtSyscall
+`OBJECT_ATTRIBUTES
+`ObjRef
+`Ok(())
+`Ok(HANDLE)
+`Ok(String)
+`Option
+`PAGE_EXECUTE
+`PAGE_READWRITE
+`Primary
+`ProcessToken
+`RPC_DISPATCH_TABLE
+`RPC_SERVER_INTERFACE
+`RawHandle
+`RustPotatoContext
+`RustPotatoUnmarshalTrigger
+`SECURITY_DESCRIPTOR
+`STATUS_BUFFER_TOO_SMALL
+`SYSTEM_HANDLE_TABLE_ENTRY_INFO_EX
+`SecurityBinding
+`Send
+`Some(*mut c_void)
+`Some(IntegrityLevel)
+`Some(ProcessToken)
+`Some(RawHandle)
+`Some(RustPotatoUnmarshalTrigger)
+`Some(SecurityImpersonationLevel)
+`Some(Sid)
+`Some(TokenElevationType)
+`Some(TokenType)
+`Standard
+`String
+`StringBinding
+`Sync
+`TokenIntegrityLevel
+`TokenUsername
+`UNICODE_STRING
+`UnicodeString
+`UnmarshalDCOM
+`UseProtseq
+`UseProtseqFunction
+`Vec<SYSTEM_HANDLE_TABLE_ENTRY_INFO_EX>
+`Vec<u16>
+`Vec<u8>
+`WindowsIdentity
+`[in]
+`[isize; 512]
+`[out]
+`\\.\pipe\RustPotato
+`\\Device\\NamedPipe\\Win32Pipes.<process_id>.<pipe_id>
+`_IMAGE_RUNTIME_FUNCTION_ENTRY
+`_ppdsa_new_security
+``
+`addr
+`address
+`alertable
+`apc_context
+`apc_routine
+`base_addr
+`base_address
+`bind_ctx
+`buffer
+`byte_offset
+`c
+`callback
+`client_id
+`cmd
+`cmd.exe
+`cmd_line
+`cmdline
+`combase.dll
+`completion_mode
+`create_disposition
+`create_options
+`default_timeout
+`descriptor_string
+`desired_access
+`dwBytes
+`dwFlags
+`event
+`exit_status
+`false
+`file_handle
+`flags
+`function_hash
+`get_token
+`h
+`hHeap
+`handle
+`handle_attributes
+`hash
+`htoken
+`i32
+`inbound_quota
+`init_context
+`io_status_block
+`is_hook
+`is_start
+`is_start = false
+`key
+`length
+`libc_println
+`list_system_handles
+`mask
+`maximum_instances
+`module_base
+`module_hash
+`moniker
+`named_pipe_type
+`new_protect
+`ntdll.dll
+`null
+`null_mut()
+`number
+`object_attributes
+`object_information
+`object_information_class
+`object_information_length
+`old_protect
+`open_options
+`options
+`outbound_quota
+`p
+`p_iunknown
+`pattern
+`pid
+`pipe_id
+`powershell
+`powershell.exe
+`ppdsa_new_bindings
+`process
+`process_handle
+`process_id
+`process_information
+`process_information_class
+`process_information_length
+`process_token
+`read_mode
+`region_size
+`return_length
+`select
+`set_token
+`share_access
+`size
+`source_handle
+`source_process_handle
+`std::alloc
+`stream
+`system_information
+`system_information_class
+`system_information_length
+`target_handle
+`target_pid
+`target_process_handle
+`target_process_pid
+`target_process_token
+`text
+`timeout
+`token
+`token_handle
+`token_information
+`token_information_class
+`token_information_length
+`tokens
+`trigger
+`true
+`u16
+`u32
+`u8
+`unwrap
+`use_protseq_delegate
+`usize
+`verbose

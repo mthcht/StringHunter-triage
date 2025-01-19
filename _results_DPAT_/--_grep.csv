@@ -1,0 +1,11 @@
+ --crackfile CRACKFILE
+ --format=LM customer.ntds
+ --grouplists [GROUPLISTS [GROUPLISTS ...]]
+ --help            Show this help message and exit
+ --increment
+ --ntdsfile NTDSFILE
+ --outputfile OUTPUTFILE
+ --reportdirectory REPORTDIRECTORY
+ --sanitize        Sanitize the report by partially redacting passwords
+ --writedb         Write the SQLite database info to disk for offline
+" --increment</strong></br></br> Or for John, try this:</br> <strong>john --format=LM customer.ntds</strong></br>"""

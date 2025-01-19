@@ -1,0 +1,3 @@
+"Write-Verbose ""Changing template $TemplateName into a smartcard template"
+"Write-Verbose ""Requesting certificate for $($TargetUPN)"
+"Write-Verbose ""Rolling back changes to template. Nothing happend here..."

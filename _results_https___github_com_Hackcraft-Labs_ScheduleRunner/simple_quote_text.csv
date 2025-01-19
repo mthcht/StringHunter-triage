@@ -1,0 +1,29 @@
+"'"" + pathToDelete + """
+"'"" + treeKey + taskName + """
+"')"" Text=""$([System.String]::Format("
+"')[0].Remove(0, 1).ToLower(), args[i].Split(new[] { "
+"', "
+"',"
+' == 
+' value from 
+'$(Configuration)
+'$(Configuration)|$(Platform)
+'$(ErrorText)
+'$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props
+'$(Platform)
+'*
+'..\packages\Costura.Fody.5.6.0\build\Costura.Fody.props
+'..\packages\Costura.Fody.5.6.0\build\Costura.Fody.targets
+'..\packages\Fody.6.5.3\build\Fody.targets
+'/technique:hide
+':
+'Debug|AnyCPU
+'Release|AnyCPU
+'Remote Registry
+'SD
+'\\
+'false
+'hide
+'resources.dll
+'true
+'{order}

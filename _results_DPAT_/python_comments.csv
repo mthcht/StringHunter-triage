@@ -1,0 +1,40 @@
+            # You can list domain controllers for use in the above command with Get-NetForestDomain
+        # Exclude machine accounts (where account name ends in $) by default
+        # Is the LM Hash stored for this user?
+        # Stripping $NT$ and $LM$ that is included in John the Ripper output by default
+    # Create boolean column for each group"
+    # Create tables and indices
+    # Do additional LM cracking"
+    # Read in NTDS file"
+    # Read users from each group; groups_users is a dictionary with key = group name and value = list of users"
+    # read in POT file"
+    # this list contains the username_full and nt_hash of all users in this group
+    # update group membership flags"
+"
+"            # Get-NetGroupMember -GroupName ""Enterprise Admins"" -Domain ""some.domain.com"" -DomainController ""DC01.some.domain.com"" > Enterprise Admins.txt"
+"            # If the users array is empty, assume the file was not in the PowerView PowerShell script output format that you get from running:"
+"        # Exclude krbtgt account by default to protect this infrequently changing password from unnecesary disclosure, issue #10"
+# Count and List of passwords that were only able to be cracked because the LM hash was available, includes usernames"
+# Group Membership Details and number of passwords cracked for each group"
+# Number of LM hashes in the NTDS file, excluding the blank value"
+# Number of UNIQUE LM hashes in the NTDS, excluding the blank value"
+# Number of UNIQUE passwords that were cracked"
+# Number of passwords that are LM cracked for which you don't have the exact (case sensitive) password."
+# Number of users whose passwords were cracked"
+# Password History Stats"
+# Password Reuse Statistics (based only on NT hash)"
+# Password length statistics"
+# Percentage of current passwords cracked and percentage of unique passwords cracked"
+# Save (commit) the changes and close the database connection"
+# This should be False as it is only a shortcut used during development"
+# Top Ten Passwords Used"
+# Total number of UNIQUE hashes in the NTDS file"
+# Total number of hashes in the NTDS file"
+# Write out the main report page"
+# create report folder if it doesn't already exist"
+# nt2lmcrack functionality"
+# prompt user to open the report"
+# show only the first and last char of a password or a few more chars for a hash"
+# the all_casings functionality was taken from https://github.com/BBerastegui/foo/blob/master/casing.py
+# the code to prompt user to open the file was borrowed from the EyeWitness tool https://github.com/ChrisTruncer/EyeWitness
+#!/usr/bin/python

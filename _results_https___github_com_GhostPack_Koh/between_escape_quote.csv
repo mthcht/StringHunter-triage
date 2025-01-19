@@ -1,0 +1,42 @@
+"` [Donut-built](https://github.com/TheWover/donut) PIC will be output to the main directory. The Donut blob is both x86/x64 compatible, and is built with the following options using v0.9.3 of Donut at "
+"` setting, which triggers the ""_...clearing of any credentials of logged off users..._"". By default in fact, members of the [""Protected Users Security Group""](https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/protected-users-security-group) have this behavior enforced regardless of the registry setting. However, setting this to a non-zero value will clear ALL credentials out of memory when a user logs off. Specifically, as [Steve mentions:](https://twitter.com/SteveSyfuhs/status/1545822123926597632) "
+"`, so sending "
+"`If set, it'll start a timer on a sessions *interactive* logoff event, and on fire will purge anything still tied to it. Off by default. Protected Users always on, with a default of 30s."
+` assembly and 
+` is performed to perform a 
+` or 
+` pipe will let you confirm if Koh is indeed running. The default impersonation pipe used is 
+` script. The only requirement (on Debian at least) should be 
+` that stays open as long as Koh is running. The default password used for Koh communication is 
+` to any 
+`!3H\$
+`. Load the 
+`./Misc/Donut.exe
+`.\Clients\BOF\
+`.\Clients\BOF\KohClient.cna
+`.\Clients\BOF\build.sh
+`4d5350c8-7f8c-47cf-8cde-c752018af17e
+`H A_A^A]A\_H\$ UVWATAUAVAWHH
+`HD$
+`HMHIhzHMHIHmHMHIP
+`Hl$0H]
+`IHL$ HD$
+`Koh.bin
+`Koh.exe
+`Koh.exe Koh.exe <list | monitor | capture> [GroupSID... GroupSID2 ...]
+`SEC_E_NO_CREDENTIALS
+`TokenLeakDetectDelaySecs
+`Y4m?
+`\\.\pipe\imposecost
+`\\.pipe\imposingcost
+``
+`apt-get install gcc-mingw-w64
+`execute-assembly
+`getsystem
+`h
+`koh filter add S-1-5-21-<DOMAIN>-<RID>
+`password
+`password list
+`runas
+`runas /netonly
+`winlogon

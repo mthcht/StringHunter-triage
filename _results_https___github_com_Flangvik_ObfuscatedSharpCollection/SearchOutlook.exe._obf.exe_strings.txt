@@ -1,0 +1,188 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+_VtblGap1_10
+_VtblGap2_21
+_VtblGap1_31
+0xb11a1
+Int32
+_VtblGap1_2
+_VtblGap1_4
+get_UTF8
+_VtblGap1_8
+_VtblGap1_9
+<Module>
+TWFpbEl0ZW1B
+QXBwbGljYXRpb25B
+Rm9sZGVyc0V2ZW50c0FB
+Rm9sZGVyc0FB
+SXRlbUV2ZW50c18xMEFB
+Rm9sZGVyc0V2ZW50c19FdmVudEFB
+SXRlbUV2ZW50c18xMF9FdmVudEFB
+TUFQSUZvbGRlckV2ZW50c18xMl9FdmVudEFB
+QXBwbGljYXRpb25FdmVudHNfMTFB
+TmFtZVNwYWNlRXZlbnRzX0V2ZW50QUFB
+X1N0b3JlQUFB
+TmFtZVNwYWNlQUFB
+X01haWxJdGVtQUFB
+X0FwcGxpY2F0aW9uQUFB
+Rm9sZGVyQUFB
+X0l0ZW1zQUFB
+TmFtZVNwYWNlRXZlbnRzQUFB
+X05hbWVTcGFjZUFB
+UHJvZ3JhbUFB
+TUFQSUZvbGRlckV2ZW50c18xMkFB
+TUFQSUZvbGRlckFB
+SXRlbXNFdmVudHNB
+SXRlbXNB
+X0ZvbGRlcnNB
+QXBwbGljYXRpb25FdmVudHNfMTFfRXZlbnRB
+SXRlbXNFdmVudHNfRXZlbnRB
+U3RvcmVB
+GetTypeFromCLSID
+mscorlib
+Guid
+CreateInstance
+set_Mode
+PaddingMode
+CipherMode
+IEnumerable
+IDisposable
+Console
+WriteLine
+Type
+get_DefaultStore
+EnumerateFoldersInDefaultStore
+Dispose
+DispIdAttribute
+CompilerGeneratedAttribute
+GuidAttribute
+ComEventInterfaceAttribute
+DebuggableAttribute
+ComVisibleAttribute
+AssemblyTitleAttribute
+InterfaceTypeAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+AssemblyFileVersionAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+DefaultMemberAttribute
+TypeIdentifierAttribute
+CompilationRelaxationsAttribute
+CoClassAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+SearchOutlook.exe
+set_Padding
+Encoding
+System.Runtime.Versioning
+FromBase64String
+ToString
+GetString
+search
+ComputeHash
+get_FolderPath
+TransformFinalBlock
+Microsoft.Office.Interop.Outlook
+SearchOutlook
+Marshal
+System
+SymmetricAlgorithm
+HashAlgorithm
+ICryptoTransform
+Main
+get_Session
+System.Reflection
+Exception
+Clear
+MD5CryptoServiceProvider
+TripleDESCryptoServiceProvider
+GetRootFolder
+folder
+ToLower
+IEnumerator
+GetEnumerator
+Activator
+.ctor
+CreateDecryptor
+System.Diagnostics
+System.Runtime.InteropServices
+System.Runtime.CompilerServices
+DebuggingModes
+IterateMessages
+GetBytes
+args
+get_Items
+Contains
+System.Collections
+get_Folders
+EnumerateFolders
+Concat
+Object
+get_Current
+get_Count
+Convert
+MoveNext
+System.Text
+get_Body
+set_Body
+set_Key
+System.Security.Cryptography
+WrapNonExceptionThrows
+SearchOutlook
+Copyright 
+  2020
+u88-aab2-96fbdb1bbec8
+1.0.0.0
+.NETFramework,Version=v4.7
+FrameworkDisplayName
+.NET Framework 4.7
+ZSystem.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+$00063001-0000-0000-C000-000000000046
+$0006302C-0000-0000-C000-000000000046
+{Microsoft.Office.Interop.Outlook.ApplicationEvents_11, SearchOutlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null{Microsoft.Office.Interop.Outlook.ApplicationEvents_11, SearchOutlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+$00062fff-0000-0000-c000-000000000046;Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event
+$00063006-0000-0000-C000-000000000046
+$00063040-0000-0000-C000-000000000046
+$00063076-0000-0000-C000-000000000046
+tMicrosoft.Office.Interop.Outlook.FoldersEvents, SearchOutlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nulltMicrosoft.Office.Interop.Outlook.FoldersEvents, SearchOutlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+$00062fff-0000-0000-c000-0000000000464Microsoft.Office.Interop.Outlook.FoldersEvents_Event
+$0006302B-0000-0000-C000-000000000046
+tMicrosoft.Office.Interop.Outlook.ItemEvents_10, SearchOutlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nulltMicrosoft.Office.Interop.Outlook.ItemEvents_10, SearchOutlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+$00062fff-0000-0000-c000-0000000000464Microsoft.Office.Interop.Outlook.ItemEvents_10_Event
+$00063041-0000-0000-C000-000000000046
+$00063077-0000-0000-C000-000000000046
+rMicrosoft.Office.Interop.Outlook.ItemsEvents, SearchOutlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nullrMicrosoft.Office.Interop.Outlook.ItemsEvents, SearchOutlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+$00062fff-0000-0000-c000-0000000000462Microsoft.Office.Interop.Outlook.ItemsEvents_Event
+$000630F7-0000-0000-C000-000000000046
+zMicrosoft.Office.Interop.Outlook.MAPIFolderEvents_12, SearchOutlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nullzMicrosoft.Office.Interop.Outlook.MAPIFolderEvents_12, SearchOutlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+$00062fff-0000-0000-c000-000000000046:Microsoft.Office.Interop.Outlook.MAPIFolderEvents_12_Event
+$00063034-0000-0000-C000-000000000046
+$00063002-0000-0000-C000-000000000046
+$0006308C-0000-0000-C000-000000000046
+vMicrosoft.Office.Interop.Outlook.NameSpaceEvents, SearchOutlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nullvMicrosoft.Office.Interop.Outlook.NameSpaceEvents, SearchOutlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+$00062fff-0000-0000-c000-0000000000466Microsoft.Office.Interop.Outlook.NameSpaceEvents_Event
+$000630C7-0000-0000-C000-000000000046
+Item
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

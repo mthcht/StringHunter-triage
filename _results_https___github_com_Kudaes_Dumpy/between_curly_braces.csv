@@ -1,0 +1,44 @@
+"{ path = ""../bindings"" "
+"{ path = ""../data"" "
+"{ path = ""../dinvoke"" "
+"{ path = ""dumper"""
+"{ println!(""Entry point successfully called."");"
+"{CLIENT_ID, OBJECT_ATTRIBUTES, IO_STATUS_BLOCK"
+"{CloseHandle, DLL_PROCESS_ATTACH, EntryPoint, LdrGetProcedureAddress, LoadLibraryA, OpenProcess, PVOID, PeMetadata, GUID"
+"{Diagnostics::Debug::{IMAGE_DATA_DIRECTORY, IMAGE_OPTIONAL_HEADER32, IMAGE_SECTION_HEADER, MINIDUMP_CALLBACK_INFORMATION, MINIDUMP_EXCEPTION_INFORMATION, MINIDUMP_USER_STREAM_INFORMATION"
+"{Foundation::HANDLE, System::{Threading::GetCurrentProcess, WindowsProgramming::{CLIENT_ID, OBJECT_ATTRIBUTES, PUBLIC_OBJECT_TYPE_INFORMATION"
+"{Foundation::{BOOL, HANDLE, HINSTANCE, PSTR"
+"{Foundation::{HANDLE, HINSTANCE, PSTR, BOOL"
+"{GetCurrentProcess,GetCurrentThread,PROCESS_BASIC_INFORMATION,STARTUPINFOW,PROCESS_INFORMATION"
+"{GetCurrentThread, STARTUPINFOW, PROCESS_INFORMATION"
+"{HANDLE,HINSTANCE,PSTR,BOOL"
+"{IMAGE_BASE_RELOCATION,IMAGE_IMPORT_DESCRIPTOR,IMAGE_THUNK_DATA32,IMAGE_THUNK_DATA64"
+"{MINIDUMP_EXCEPTION_INFORMATION, MINIDUMP_USER_STREAM_INFORMATION, MINIDUMP_CALLBACK_INFORMATION"
+"{PAGE_READONLY, PVOID, SYSTEM_HANDLE_INFORMATION, SYSTEM_HANDLE_TABLE_ENTRY_INFO, THREAD_BASIC_INFORMATION, GENERIC_READ, OVERLAPPED, REQUEST_OPLOCK_INPUT_BUFFER, REQUEST_OPLOCK_OUTPUT_BUFFER, THREAD_ALL_ACCESS, FILE_PROCESS_IDS_USING_FILE_INFORMATION"
+"{PUBLIC_OBJECT_TYPE_INFORMATION,OBJECT_ATTRIBUTES,CLIENT_ID"
+"{Read, Write"
+"{STARTUPINFOW, PROCESS_INFORMATION"
+"{VIRTUAL_ALLOCATION_TYPE,PAGE_PROTECTION_FLAGS"
+"{WindowsProgramming::{OBJECT_ATTRIBUTES, CLIENT_ID, IO_STATUS_BLOCK"
+"{collections::BTreeMap, ffi::c_void"
+"{fs::{self, File"
+"{print!(""{"
+"{println!(""RtlDispatchAPC is located at the address: 0x{:X"
+"{println!(""ntdll base address is 0x{:X"
+"{println!(""ntdll.dll base address is 0x{:X"
+"{thread_rng, Rng"
+"{},{"
+{ 0: 0 
+{ 0: temp
+{ m 
+{0: (*shtei).handle_value as isize
+{0: 0
+{0: entry_point as isize
+{0: name.as_ptr() as *mut u8
+{:X
+{UniqueProcess: HANDLE{0:(*shtei).process_id as isize
+{UniqueProcess:HANDLE {0: spoofed_pid
+{env
+{error
+{} {
+{}{

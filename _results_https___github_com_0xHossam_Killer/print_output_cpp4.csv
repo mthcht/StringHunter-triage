@@ -1,0 +1,8 @@
+"PRINT_STATUS("" (different from """
+"PRINT_STATUS(""Copy ntdll to a fresh memory allocation and overwrite calls adresses, Detecting ntdll hooking : \n"""
+"PRINT_STATUS(""ETW patched !"""
+"PRINT_STATUS(""No hooked modules to unhook it!"""
+"PRINT_STATUS(""Restoring RX permission again"""
+"PRINT_STATUS(""Try to find .text section, sec name %s"", (const char*"
+"PRINT_STATUS(""amsi.dll .text address = 0x%p"", pHollowedDLL"
+"PRINT_STATUS(fmt, ..."

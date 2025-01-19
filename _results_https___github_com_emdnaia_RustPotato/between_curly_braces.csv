@@ -1,0 +1,113 @@
+"{ $crate::win32::macros::isyscall($ssn, $addr + 0x12, cnt, $($y), +) "
+"{ CoInitializeEx(None, COINIT_MULTITHREADED) "
+"{ ConvertStringSidToSidW(wide_sid.as_ptr(), &mut sid) "
+"{ ldr_function(ntdll.module_base, 0x3be94c5a) "
+"{ ldr_function(ntdll.module_base, 0x9e456a43) "
+"{ ldr_module(0x1edab0ed, None) "
+"{ name, domain "
+"{ nt_set_handle_information(child_stdout_read, HANDLE_FLAG_INHERIT, 0).ok() "
+"{ ntdll().nt_terminate_process.run(nt_current_process(), 0) "
+"{ ntdll().nt_terminate_process.run(nt_current_process(), 1) "
+"{Arc, Mutex, OnceLock"
+"{AtomicBool, Ordering"
+"{BAD_HANDLE, MidlServerInfo, RpcDispatchTable, RpcServerInterface"
+"{ClientId, ObjectAttributes, UnicodeString"
+"{ConnectNamedPipe, CreateNamedPipeW"
+"{Cursor, Read, Write"
+"{DualStringArray, ObjRef, SecurityBinding, Standard, StringBinding"
+"{Error, ErrorKind"
+"{FD_SET, FIONBIO, TIMEVAL, connect_socket, create_socket, init_winsock, winsock"
+"{GUID, WindowsIdentity"
+"{GetSidSubAuthority, GetSidSubAuthorityCount"
+"{IUnknown, Interface"
+"{IoStatusBlock, LargeInteger, nt_current_teb"
+"{Layout, alloc, dealloc"
+"{Layout, alloc_zeroed"
+"{OsStr, OsString"
+"{OsStrExt as _, OsStringExt as _"
+"{PSID, SECURITY_DESCRIPTOR"
+"{ProcessInformation, StartupInfoW"
+"{ReadBytesExt, WriteBytesExt"
+"{Sid, TokenUsername"
+"{Sunday, create_security_descriptor, read_memory"
+"{_print, def::TowerProtocol, utils::GUID"
+"{dbj2_hash, get_cstr_len"
+"{def::UnicodeString, ntdll::ntdll"
+"{ldr_function, ldr_module"
+"{nt_current_process, nt_get_last_error, ntdll"
+"{nt_current_process, ntdll"
+"{null, null_mut"
+"{resolve_functions, win32::ldr::ldr_module"
+"{}, Handle = 0x{:X"
+"{}, Token: 0x{:08X"
+{ &*(buffer.as_ptr() as *const TokenGroups) 
+{ &*(buffer.as_ptr() as *const TokenUser) 
+{ &*ADVAPI32_PTR 
+{ &*K32_PTR 
+{ &*NTDLL_PTR 
+{ &*WS32_PTR 
+{ (*ent).dll_base as *const u8 
+{ (*ent).in_memory_order_links.flink 
+{ (*export_directory).number_of_functions 
+{ (*export_directory).number_of_names == 0 
+{ (*ldr).in_memory_order_module_list 
+{ (*ldr).in_memory_order_module_list.flink 
+{ (*lp_pipe_attributes).b_inherit_handle 
+{ (*lp_pipe_attributes).lp_security_descriptor 
+{ (*nt_headers).optional_header.data_directory[0].virtual_address 
+{ (*nt_headers).optional_header.data_directory[3].virtual_address 
+{ (*peb).loader_data as *mut PebLoaderData 
+{ (*rtf.offset(i as isize)).begin_address 
+{ (next as *mut u8).offset(-(core::mem::size_of::<ListEntry>() as isize)) 
+{ *address_of_functions.offset(ordinal as isize) 
+{ *address_of_name_ordinals.offset(j as isize) 
+{ 0x1000 
+{ CreateBindCtx(0).ok() 
+{ CreateObjrefMoniker(&p_iunknown).ok() 
+{ NTDLL_PTR = Box::into_raw(Box::new(ntdll)) 
+{ alloc_zeroed(layout) as *mut u8 
+{ core::mem::transmute(core::ptr::null::<core::ffi::c_void>()) 
+{ core::mem::transmute(ldr_load_dll_addr) 
+{ core::mem::transmute(null_mut::<c_void>()) 
+{ core::mem::transmute(rtl_allocate_heap_addr) 
+{ dll_base.offset((*dos_header).e_lfanew as isize) 
+{ dll_base.offset((*export_directory).address_of_functions as isize) 
+{ dll_base.offset((*export_directory).address_of_name_ordinals as isize) 
+{ dll_base.offset((*export_directory).address_of_names as isize) 
+{ dll_base.offset((*export_directory).name as isize) 
+{ dll_base.offset(*address_of_names.offset(j as isize) as isize) 
+{ dll_base.offset(export_directory_rva as isize) 
+{ dll_base.offset(function_address as isize) 
+{ dll_base.offset(rva as isize) 
+{ ensure_initialized() 
+{ ensure_initialized_advapi32() 
+{ n_size 
+{ nt_current_teb().as_ref().unwrap().client_id.unique_process 
+{ nt_current_teb().as_ref().unwrap().last_error_value 
+{ ntdll().nt_close.run(child_stdout_read) 
+{ ntdll().nt_close.run(child_stdout_write) 
+{ ntdll().nt_close.run(dup_handle) 
+{ ntdll().nt_close.run(pi.h_process) 
+{ ntdll().nt_close.run(pi.h_thread) 
+{ ntdll().nt_close.run(process_handle.unwrap()) 
+{ ntdll().nt_close.run(read_pipe_handle) 
+{ ntdll().nt_close.run(token_handle) 
+{ status: 0 
+{ value 
+{ value: guid_string 
+{ value: value 
+{:#X
+{:016X
+{:02x
+{:04x
+{:08X
+{:08x
+{:<10
+{:<20
+{:<30
+{:?
+{:X
+{:x
+{}: 0x{:016X
+{}: {
+{}\\{

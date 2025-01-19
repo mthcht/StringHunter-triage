@@ -1,0 +1,133 @@
+"'"""
+"'""%s""). If errors are detected, run chcp.com at the target, "
+"'', domain="
+"'', password="
+"'(KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the "
+"', "
+"', action="
+"', action=""store"", help="
+"', action=""store"", metavar = ""LMHASH:NTHASH"", help="
+"', action=""store"", metavar = ""hex key"", help="
+"', action=""store_true"", help="
+"', fg=Fg.WHITE, bg=Bg.DARK_GRAY, bold=True) + "
+"', help="
+"', type=int, help="
+"', type=str, help="
+"',"
+"',metavar = ""ip address"",  help="
+"'Decoding error detected, consider running chcp.com at the target,\nmap the result with "
+"'Executing assembly: %s, args: %s"
+"'Execution failed, no output returned or the ps killed by AV."
+"'File size is too big, please consider using a smaller file"
+"'NTLM hashes, format is LMHASH:NTHASH"
+"'When STATUS_OBJECT_NAME_NOT_FOUND is received, try running again. It might work"
+"'an existed logon session to use (no output, no cmd.exe)"
+' 
+' or local[-1] == 
+' or remote[-1] == 
+'' and username != 
+'(128 or 256 bits)
+') >= 0 or str(e).find(
+')[1].split(
+'--local
+'-aesKey
+'-codec
+'-dc-ip
+'-debug
+'-hashes
+'-k
+'-keytab
+'-l
+'-no-pass
+'-session-id
+'-ts
+'./libs/powershells/cmd.ps1
+'./libs/powershells/common.ps1
+'./libs/powershells/download.ps1
+'./libs/powershells/net.ps1
+'./libs/powershells/upload.ps1
+'/
+':
+'</Description>
+'<Description>
+'AES key to use for Kerberos Authentication 
+'ATShell (%s@%s)> 
+'Bye!\n
+'Calling SchRpcGetTaskInfoResponse for \\%s
+'Calling SchRpcRetrieveTask to get result for \\%s
+'Command to execute
+'Creating task \\%s
+'Deleting task \\%s
+'Downloading %s to %s
+'ERROR_FILE_NOT_FOUND
+'E_INVALIDARG
+'Executing cmd command: %s
+'Executing ps command: %s
+'File %s not found!
+'IP Address of the domain controller. 
+'If omitted it will use the domain part (FQDN) specified in the target parameter
+'Local File %s not found!
+'Local file to download
+'Local file to upload
+'REPLACE_ARGS
+'REPLACE_FILE_PATH
+'Read keys for SPN from keytab file
+'Remote file to download
+'Remote file to upload
+'Running task \\%s
+'STATUS_OBJECT_NAME_NOT_FOUND
+'Sets encoding used (codec) from the target\
+'Task XML for \\%s
+'Task xml size: %d
+'The specified session doesn\
+'Turn DEBUG output ON
+'Uploading %s to %s
+'Use Kerberos authentication. Grabs credentials from ccache file 
+'[+] Type help for list of commands.
+'[[domain/]username[:password]@]<targetName or address>
+'\\
+'\\%s
+'__main__
+'adds timestamp to every logging output
+'again with -codec and the corresponding codec
+'again with -codec and the corresponding codec 
+'ascii
+'authentication
+'command
+'debug
+'do_edit
+'do_macro
+'do_py
+'do_quit
+'do_run_pyscript
+'do_run_script
+'do_shortcuts
+'don\
+'false
+'https://docs.python.org/3/library/codecs.html#standard-encodings and then execute wmiexec.py 
+'https://docs.python.org/3/library/codecs.html#standard-encodings\nand then execute atexec.py 
+'local
+'map the result with 
+'ncacn_np:%s[\pipe\atsvc]
+'ones specified in the command line
+'pGuid
+'pState
+'pXml
+'r
+'rb
+'remote
+'replace
+'s output (default 
+'set_credentials
+'store
+'store_true
+'t ask for password (useful for -k)
+'t exist!
+'target
+'task xml: %s
+'task.xml
+'true
+'utf-16le
+'utf-8
+'w
+'wb

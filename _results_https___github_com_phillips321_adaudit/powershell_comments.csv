@@ -1,0 +1,135 @@
+
+                # Add object to high_value_users if the user.name is not already in the list
+                # Check for Allow Full Control
+                # Create object with details. Objectg name is TemplatePropCommonName
+                # Create object with user and group
+        # Bind to the LDAP server anonymously"
+        # Create LDAP connection"
+        # Create an empty NetworkCredential for anonymous bind"
+        # Load required assemblies
+        # Set connection timeout"
+        #Checking for 2012 or above domain functional level
+        #Look for GPO that allows NTLM exclusions
+        #Look for GPO that allows join PC to domain
+        #Look for GPO that audits NTLM
+        #Look for GPO that denies NTLM
+        #Look for GPO that hardens NTLM
+        #NT6.1 or less detected so checking reg key
+        #NT6.2 or greater detected so running this script
+        #NT6.2 or greater detected so using powershell function
+        #See https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/decrypting-the-selection-of-supported-kerberos-encryption-types/ba-p/1628797
+        #Validate Kerberos Encryption algorithm
+        #Validates Admins RDP logon restrictions
+        #Validates Admins local logon restrictions
+        #Validates Admins network logon restrictions
+    # Check for ESC1"
+    # Check for LDAP null sessions"
+    # Check if LDAP signing is enabled
+    # Check if LDAP signing is enabled"
+    # Check if LDAPS Channel binding is enabled"
+    # Check if LDAPS is configured"
+    # ESC1 = CT_FLAG_ENROLLEE_SUPPLIES_SUBJECT = 1 and  Client Authentication and ( enroll or full control )
+    # Find dangerous permissions on Computers"
+    # Find dangerous permissions on groups"
+    # Find dangerous permissions on users
+    # Output results"
+    # Remove duplicates
+    # for spn in spns check if a group in spn.groups is in all_groups"
+    #Backup
+    #Basic validation of all DCs in forest
+    #Batch logon
+    #Change time
+    #Check AD services status
+    #Check DNS zones allowing insecure updates
+    #Check SYSVOL and NETLOGON share exists
+    #Check Windows update status and last install date
+    #Check for RODC
+    #Check for presence of LAPS in domain
+    #Check if recycle bin is enabled
+    #Check if server supports SMBv1
+    #Check where newly joined computers go
+    #Collect all DCs in forest
+    #Creates nessus XML file header
+    #DCs with weak Kerberos algorithm (*CH* Changed below to look for msDS-SupportedEncryptionTypes to work with 2008R2)
+    #Does one DC holds all FSMO
+    #Enumerates Default Domain Controllers Policy for default unsecure and excessive options
+    #Finds XML files in SYSVOL (thanks --> https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Get-GPPPassword.ps1)
+    #Get NTP sync source
+    #Get number of machines a user can add to a domain
+    #Gets basic information about the host
+    #Gets the functional level for domain and forest
+    #Install DSInternals
+    #Interactive local logon
+    #List sites without GC
+    #Lists 2000/2003/XP/Vista/7/2008 machines
+    #Lists accounts not used in past 180 days plus some checks for admin accounts
+    #Lists accounts who's passwords dont expire
+    #Lists all OUs and which GPOs apply to them
+    #Lists any authentication policies and silos (2012R2 and above)
+    #Lists disabled accounts
+    #Lists domain trusts if they are bad
+    #Lists locked accounts
+    #Load driver
+    #Local shutdown
+    #Loops GPOs for some important domain-wide settings
+    #Output for Admins RDP logon restrictions
+    #Output for Admins local logon restrictions
+    #Output for Admins network logon restrictions
+    #Output for Default Domain Controllers Policy
+    #Output for NTLM audit
+    #Output for NTLM exceptions
+    #Output for Validate Kerberos Encryption algorithm
+    #Output for deny NTLM
+    #Output for join PC to domain
+    #Outputs complete GPO report
+    #RDP logon
+    #Remote shutdown
+    #Removes latin characters
+    #Reports users that haven't changed passwords in more than 90 days
+    #Restore
+    #Retrieve group names and OS version
+    #Retrieve replication mechanism (FRS or DFSR)
+    #Retrieve users and groups that have been created during last 30 days
+    #Searches for DC objects not owned by the Domain Admins group
+    #Specify the ACLs and Groups to check against
+    #Use DSInternals to evaluate password quality
+    #Validate DCs OS Version
+    #Validate DCs Service Pack level
+    #Validate DCs hotfix level
+    #Validate OS version of DCs
+    #Writes to console screen and output file
+"
+"    
+"                #1 means trust is non-transitive, 4 is external so we check for anything but that"
+"        # If error and response is unauthorised, then vulnerable"
+"        #Value 8 stands for AES-128, value 16 stands for AES-256 and value 24 stands for AES-128 & AES-256"
+"        #Values 0 to 7, 9 to 15, 17 to 23 and 25 to 31 include RC4 and/or DES"
+"    # ESC8 Check, If error 401 and response is unauthorized, then vulnerable"
+"    #Check for ADCS Vulnerabiltiies, ESC1,2,3,4 and 8. ESC8 will output to a different issues mapped to Nessus. "
+"    #Check for non-standard perms for authenticated users, domain users, users and everyone groups"
+"    #Checks if Administrator account has been renamed, replaced and is no longer used."
+"    #Dumps NTDS.dit, SYSTEM and SAM for password cracking"
+"    #List Domain Admins, Enterprise Admins and Schema Admins members"
+"    #Lists users in ""Protected Users"" group (2012R2 and above)"
+"    #Lists users in Admininstrators, DA and EA groups"
+"#                $QueryResult = Get-ADGroup -LDAPFilter ""(&(objectCategory=group)(memberof=$($ADGrp.DistinguishedName)))"""
+#    
+#                    $all_groups += $result.Name
+#                    $new_groups += $result.Name
+#                # Remove group from all_groups
+#                $ADGrp = Get-ADGroup -Identity $group -ErrorAction SilentlyContinue
+#                $all_groups = $all_groups | Where-Object { $_ -ne $group }
+#                foreach ($result in $QueryResult) {
+#                }
+#            # I dont want to see errors if a group is not found
+#            catch {
+#            try {
+#            }
+#        $base_groups = $new_groups
+#        $new_groups = @()
+#        foreach ($group in $base_groups) {
+#        }
+#    while ($base_groups.count -gt 0) {"
+#    }
+#>
+#Dirty fix for .nessus characters (will do this properly or as a function later. Will need more characters adding here...)"

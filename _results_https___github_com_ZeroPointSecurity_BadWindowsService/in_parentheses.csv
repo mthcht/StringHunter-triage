@@ -1,0 +1,134 @@
+"("""""
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""43a031b0-e040-4d5e-b477-02651f5e3d62"""
+"(""BadWindowsService"""
+"(""Installer"""
+"(""PATH"""
+"(""PATH"", $""{path};{parentDirectory}"", EnvironmentVariableTarget.Machine"
+"(""PATH"", EnvironmentVariableTarget.Machine"
+"(""PATH"", newPath"
+"(""Result from BadFunc was false."""
+"(""[!] Service binpath modification failed: {0}"", ex.Message"
+"(""[!] Service permissions modification failed: {0}"", ex.Message"
+"(""[!] Service registry permissions modification failed: {0}"", ex.Message"
+"(""[+] Copied {0} to {1}"", dll, dllPath"
+"(""[+] Copied {0} to {1}"", executable, exePath"
+"(""[+] Created folder {0}"", childDirectory"
+"(""[+] Created folder {0}"", parentDirectory"
+"(""[+] Granted AuthenticatedUserSid Full Control on the service's Registry key"""
+"(""[+] Granted AuthenticatedUserSid Full Control"""
+"(""[+] Granted AuthenticatedUserSid control on the service"""
+"(""[+] Service binpath is now unquoted"""
+"(""[+] Service installed"""
+"(""[+] Service started!"""
+"(""[X] Could not locate InstallUtil.exe"""
+"(""[X] Dll not found in current working directory"""
+"(""[X] Service executable not found in current working directory"""
+"(""[X] Service failed to start"""
+"(""[X] Service installation failed: {0}"", ex.Message"
+"(""[X] The installer must be launched in an elevated context"""
+"(""b474b962-a46b-4d35-86f3-e8ba120c88c0"""
+"(""cmd.exe"", ""/c exit"""
+"(""kernel32"", CharSet = CharSet.Ansi"
+"(""sc.exe"", $""config {svcName} binpath= \""{exePath}\"""""
+"(""sc.exe"", $""sdset {svcName} \""D:PAI(A;;FA;;;AU"
+"(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"""
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"($""[+] Added {parentDirectory} to machine PATH variable"""
+"($""{funcName} not found."""
+"($""{moduleName} not found."""
+"($@""SYSTEM\CurrentControlSet\Services\{svcName}"", true"
+"(@""C:\Temp"""
+"(IntPtr hModule, string lpProcName"
+"(WellKnownSidType.AuthenticatedUserSid, null"
+"(dll, dllPath, true"
+"(exePath, security"
+"(executable, exePath, true"
+"(file, security"
+"(hModule, funcName"
+"(installUtilPath, $""\""{exePath}\"""""
+"(new TimeSpan(0, 0, 0, 0, 500"
+"(new TimeSpan(0, 0, 30"
+"(new TimeSpan(0, 1, 0"
+"(path, security"
+"(string program, string arguments"
+"(the ""Software"""
+(!Directory.Exists(temp
+(!File.Exists(file
+(!File.Exists(installUtilPath
+(!IsElevated(
+(!_cts.IsCancellationRequested
+('$(MSBuildExtensionsPath
+('$(UserRootDir
+(3000
+(CallingConvention.StdCall
+(Configuration
+(DeserializeFile
+(Exception ex
+(ExtensibilityGlobals
+(File.Exists(dll
+(File.Exists(executable
+(File.Exists(file
+(File.ReadAllBytes(file
+(LoadDll
+(MSBuildExtensionsPath
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(MonoDevelop/Xamarin Studio
+(PTVS
+(Platform
+(PreprocessorDefinitions
+(ProjectConfigurationPlatforms
+(Race
+(RunExecutable
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(UserRootDir
+(VCTargetsPath
+(VSHistory
+(WindowsBuiltInRole.Administrator
+(WindowsIdentity.GetCurrent(
+(Xamarin productivity tool
+([0-9]
+([0-9][0-9]
+([T1574.001](https://attack.mitre.org/techniques/T1574/001/
+([T1574.007](https://attack.mitre.org/techniques/T1574/007/
+([T1574.008](https://attack.mitre.org/techniques/T1574/008/
+([T1574.009](https://attack.mitre.org/techniques/T1574/009/
+([T1574.010](https://attack.mitre.org/techniques/T1574/010/
+([T1574.011](https://attack.mitre.org/techniques/T1574/011/
+(badFunc(
+(bool disposing
+(c
+(childDirectory
+(contains which files were open etc.
+(cross platform F# VS Code tools
+(disposing
+(disposing && (components != null
+(false
+(file
+(hFunc
+(hFunc == IntPtr.Zero
+(hModule == IntPtr.Zero
+(https://github.com/github/gitignore/pull/1529#issuecomment-104372622
+(https://github.com/github/gitignore/pull/2483#issue-259490424
+(moduleName
+(ms
+(output
+(parentDirectory
+(rs
+(rule
+(sass
+(service.Status == ServiceControllerStatus.Running
+(services
+(string lpFileName
+(string path
+(string[] args
+(svcName
+(temp
+(true
+(ul_reason_for_call
+(void
+(with potential passwords
+(working project files containing files to include in project

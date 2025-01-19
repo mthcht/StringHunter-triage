@@ -1,0 +1,60 @@
+		      { credentials: { password: password } });
+	    rfb.sendCredentials({ password: password });
+	function credentialsAreRequired(e) {
+                           credentials: { password: password } });
+            credentials[64 + i] = password.charCodeAt(i);
+            credentials[i] = username.charCodeAt(i);
+            this._rfbCredentials.ardCredentials != undefined) {
+            this._rfbCredentials.ardCredentials = null;
+            this._rfbCredentials.ardPublicKey = null;
+            this._rfbCredentials.password === undefined ||
+            this._rfbCredentials.password === undefined) {
+            this._rfbCredentials.target === undefined) {
+            this._sock.sQpushBytes(this._rfbCredentials.ardCredentials);
+            this._sock.sQpushBytes(this._rfbCredentials.ardPublicKey);
+        const credentials = window.crypto.getRandomValues(new Uint8Array(128));
+        const pass = encodeUTF8(this._rfbCredentials.password);
+        const user = encodeUTF8(this._rfbCredentials.username);
+        credentials[64 + password.length] = 0;
+        credentials[username.length] = 0;
+        document.getElementById('noVNC_credentials_dlg')
+        if (this._rfbCredentials.ardPublicKey != undefined &&
+        if (this._rfbCredentials.password === undefined) {
+        if (this._rfbCredentials.username === undefined ||
+        this._rfbCredentials = creds;
+        this._rfbCredentials = options.credentials || {};
+        this._rfbCredentials.ardCredentials = encrypted;
+        this._rfbCredentials.ardPublicKey = clientPublicKey;
+        this._sock.sQpush32(this._rfbCredentials.password.length);
+        this._sock.sQpush32(this._rfbCredentials.username.length);
+        this._sock.sQpush8(this._rfbCredentials.target.length);
+        this._sock.sQpush8(this._rfbCredentials.username.length);
+        this._sock.sQpushString(this._rfbCredentials.password);
+        this._sock.sQpushString(this._rfbCredentials.target);
+        this._sock.sQpushString(this._rfbCredentials.username);
+    * collected credentials
+    _handleRSAAESCredentialsRequired(event) {
+    credentials(e) {
+    sendCredentials(creds) {
+    setCredentials(e) {
+"	add_header Access-Control-Allow-Credentials ""true"";"
+"	rfb.addEventListener(""credentialsrequired"", credentialsAreRequired);"
+"                        ""credentialsrequired"", this._eventHandlers.handleRSAAESCredentialsRequired);"
+"                ""credentialsrequired"", this._eventHandlers.handleRSAAESCredentialsRequired);"
+"                ""credentialsrequired"","
+"            .addEventListener('click', UI.setCredentials);"
+"            handleRSAAESCredentialsRequired: this._handleRSAAESCredentialsRequired.bind(this),"
+"        Log.Warn(""Server asked for credentials"");"
+"        UI.rfb.addEventListener(""credentialsrequired"", UI.credentials);"
+"        UI.rfb.sendCredentials({ username: username, password: password });"
+"        UI.showStatus(_(""Credentials are required""), ""warning"");"
+"        const encrypted = await legacyCrypto.encrypt({ name: ""AES-ECB"" }, cipher, credentials);"
+"        const password = encodeUTF8(this._rfbCredentials.password).substring(0, 63);"
+"        const response = RFB.genDES(this._rfbCredentials.password, challenge);"
+"        const username = encodeUTF8(this._rfbCredentials.username).substring(0, 255);"
+"        const username = encodeUTF8(this._rfbCredentials.username).substring(0, 63);"
+"        document.getElementById(""noVNC_credentials_button"")"
+"      this._rfbRSAAESAuthenticationState = new RSAAESAuthenticationState(this._sock, () => this._rfbCredentials);"
+"# define admin interface credentials, change the password!"
+"</th><th>request id</th><th>user id</th><th>state</th><th>blocked</th><th>victim URL</th><th>latest credentials</th></tr>"" . PHP_EOL;"
+* when running EvilKnievelnoVNC the admin dashboard is reachable via the defined URL and basic auth credentials (<URL>/phishboard)

@@ -1,0 +1,53 @@
+"[""Authorization"""
+"[""Location"""
+"[""cmd"""
+"[""disable_defender"""
+"[""disable_exhaust"""
+"[""disable_spoof"""
+"[""ip"""
+"[""schedule_task"""
+"[""spoof_address"""
+"[""spoof_host"""
+"[""srv_port"""
+"[""wpad_exclude"""
+"[DllImport(""dnsapi.dll"", EntryPoint = ""DnsFlushResolverCache"")"
+"[NuGet.PackageManagement.UI.UserSettings, NuGet.PackageManagement.UI, Version=3.3.0.167, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"[System.Collections.Generic.List`1[[System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+"[System.Collections.Hashtable, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+"[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+"[[Microsoft.Build.Shared.AssemblyNameExtension, Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"[[System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+"[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+"[assembly: AssemblyCompany(""Microsoft"")"
+"[assembly: AssemblyConfiguration("""")"
+"[assembly: AssemblyCulture("""")"
+"[assembly: AssemblyDescription("""")"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")"
+"[assembly: AssemblyProduct(""Potato"")"
+"[assembly: AssemblyTitle(""Potato"")"
+"[assembly: AssemblyTrademark("""")"
+"[assembly: AssemblyVersion(""1.0.*"")"
+"[assembly: AssemblyVersion(""1.0.0.0"")"
+"[assembly: Guid(""b98c9d27-813b-4fba-8e80-76d23e63dc2f"")"
+[/#p
+[0
+[1
+[12
+[13+(i*2)
+[13+(i*2)+1
+[13+host.Length*2+j*2
+[13+host.Length*2+j*2+1
+[2
+[3
+[43
+[44
+[45
+[8
+[\\pipe\\svcctl
+[] ipFields = new byte[4
+[] packet = new byte[62
+[]> ntlmQueue = new Queue<byte[
+[assembly: ComVisible(false)
+[i
+[i + 1
+[key

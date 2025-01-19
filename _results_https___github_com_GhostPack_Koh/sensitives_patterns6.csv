@@ -1,0 +1,40 @@
+                            // Network logon types aren't going to have any credentials
+                        // domain users only (or NewCredentials/Type 9)
+                    bool delSuccess1 = Interop.FreeCredentialsHandle(ref cred);
+                    if (Helpers.IsDomainSid(userSID) || logonType == Interop.SECURITY_LOGON_TYPE.NewCredentials)
+                bool delSuccess2 = Interop.FreeCredentialsHandle(ref cred);
+            // Return the true username for a credential in case we have a NewCredentials/Type 9 situation
+            bool delSuccess = Interop.FreeCredentialsHandle(ref cred);
+            var res = Interop.AcquireCredentialsHandle(
+        public static extern bool FreeCredentialsHandle(
+        public static extern uint AcquireCredentialsHandle(
+        public static extern uint QueryCredentialsAttributes(
+"                        // get the credential username (i.e., for NewCredentials)"
+"                    Console.WriteLine(""\n[X] No sessions captured and error with AcquireCredentialsHandle, exiting..."");"
+"                    Console.WriteLine($""  [X] AcquireCredentialsHandle for LUID {luid} failed. Error: 0x{res:x8}"");"
+"                    Console.WriteLine($""  [X] AcquireCredentialsHandle for LUID {luid} failed. Error: SEC_E_NO_CREDENTIALS"");"
+"                    meta[""AcquireCredentialsHandleError""] = meta[""AcquireCredentialsHandleError""] + 1;"
+"                  // if we haven't captured any sessions and we have more than one error for AcquireCredentialsHandle, signal for exit"
+"                // get the username for the credential (i.e., for NewCredentials)"
+"                if (DEBUG) Console.WriteLine($""DEBUG Error running QueryCredentialsAttributes: {ret}"");"
+"                if((capturedSessions.Count == 0) && (meta[""AcquireCredentialsHandleError""] > 0))"
+"                meta[""AcquireCredentialsHandleError""] = 0;"
+"            CachedInteractive,      // attempt to use the cached credentials without going out across the network"
+"            NetworkCleartext,       // network logon with cleartext credentials"
+"            NewCredentials,         // caller can clone its current token and specify new credentials for outbound connections"
+"            uint ret = Interop.QueryCredentialsAttributes(ref cred, 1, out var credName);"
+" the registry setting. However, setting this to a non-zero value will clear ALL credentials out of memory when a user logs off. Specifically, as [Steve mentions:](https://twitter.com/SteveSyf"
+"**Note:** In order to utilize a logon session LUID with **AcquireCredentialsHandle()** you need **SeTcbPrivilege**, however this is usually easier to get than **SeCreateTokenPr"
+".com/en-us/windows/win32/api/ntsecapi/nf-ntsecapi-lsaenumeratelogonsessions) or the specific AcquireCredentialsHandle/InitializeSecurityContext/AcceptSecurityContext, specifically using a LUID in [AcquireCredent"
+"4. The **AcquireCredentialsHandle()**/**InitializeSecurityContext()**/**AcceptSecurityContext()** approach described below, whi"
+"For all intents and purposes, the thread context right before the call to AcquireCredentialsHandle works in this context, but the result errors out. **And we have no idea why.**"
+"a token, we can keep that logon session open and later impersonate that token to utilize any cached credentials it contains."
+"e let us know! And if you want to try playing around with a simpler assembly, check out the [AcquireCredentialsHandle](https://github.com/harmj0y/AcquireCredentialsHandle) repo on my GitHub for troubleshooting."
+"enLeakDetectDelaySecs` setting, which triggers the ""_...clearing of any credentials of logged off users..._"". By default in fact, members of the [""Protected Users Security Group""](htt"
+"ialsHandle](https://docs.microsoft.com/en-us/windows/win32/secauthn/acquirecredentialshandle--general)) could be explored for effectiveness, but alas, I am not an EDR."
+"non-zero, and the user actively logs off of an interactive or remote interactive (RDP) session, the credentials will be cleared. I need to program Koh to better deal with these specific types of situations."
+* Checking if we have the proper SeTcbPrivilege right before the AcquireCredentialsHandle call (we do).
+The SSPI [AcquireCredentialsHandle()](https://docs.microsoft.com/en-us/windows/win32/secauthn/acquirecredentialshandle--negotiat
+[KB2871997](https://support.microsoft.com/en-us/topic/microsoft-security-advisory-update-to-improve-credentials-protection-and-management-may-13-2014-93434251-04ac-b7f3-52aa-9f951c14b649) patch introduced a `Tok
+d a few ways to a) hold open logon sessions and b) abuse this for token impersonation/use of cached credentials.
+ps://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/protected-users-security-group) have this behavior enforced regardless of

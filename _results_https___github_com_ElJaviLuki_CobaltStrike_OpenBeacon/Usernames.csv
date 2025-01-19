@@ -1,0 +1,5 @@
+"Username = BeaconDataPtr(gIdentityCredentialsParser, IDENTITY_MAX_WCHARS_USERNAME * sizeof(WCHAR));"
+"Username = BeaconDataPtr(parser, 0x400);"
+"userName = BeaconDataPtr(parser, MAX_USER_NAME);"
+"username = BeaconDataPtr(locals, 0x400);"
+"username = BeaconDataPtr(locals, MAX_USERNAME);"

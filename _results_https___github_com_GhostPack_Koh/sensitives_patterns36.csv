@@ -1,0 +1,11 @@
+                                        foreach (var sidString in filterSids.Keys)
+                                foreach (var sidString in _filterSids.Keys)
+                                logonSessionsToProcess[entry.Key] = entry.Value;
+                            if (!logonSessionsToProcess.ContainsKey(entry.Key))
+                            if (_filterSids.Keys.Count == 0)
+                    string identifier = entry.Key;
+                foreach (var sidString in filterSids.Keys) {
+"                                                _capturedSessions.TryRemove(capturedSession.Key, out temp);"
+"                                        if (_capturedSessions.TryRemove(capturedSession.Key, out temp))"
+"                                logonSessionsToProcess.Add(entry.Key, entry.Value);"
+"                        logonSessionsToProcess.Add(entry.Key, entry.Value);"

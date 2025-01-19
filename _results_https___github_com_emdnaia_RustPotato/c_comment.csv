@@ -1,0 +1,1028 @@
+    /// # Arguments"
+    /// # Behavior"
+    /// # Notes"
+    /// # Parameters"
+    /// # Returns"
+    /// # Safety"
+    /// * `[in]` - `file_handle` A handle to the file or I/O device to be read from."
+    /// * `[in]` - `file_handle` A handle to the file or I/O device to be written to."
+    /// * `[in]` - `handle` A handle to an object. This is a required parameter that must be valid."
+    /// * `[in]` - `handle` A handle to the object to be modified."
+    /// * `[in]` - `handle` A handle to the object to be queried."
+    /// * `[in]` - `handle` A handle to the object."
+    /// * `[in]` - `process_handle` A handle to the process whose memory protection is to be changed."
+    /// * `[in]` - `process_handle` A handle to the process."
+    /// * `[in]` - `process_handle` The handle of the process whose token is to be opened."
+    /// * `[in]` - `source_process_handle` A handle to the process containing the source handle."
+    /// * `[in]` - `system_information_class` The system information class to be queried."
+    /// * `[in]` - `token_handle` The handle of the token to be queried."
+    /// * `[out]` - `file_handle` A mutable pointer to a handle that will receive the file handle."
+    /// * `[out]` - `file_handle` A pointer to a handle that receives the file handle."
+    /// * `[out]` - `process_handle` A mutable pointer to a handle that will receive the process"
+    /// * `i32` - The NTSTATUS code of the operation, indicating success or failure of the system call."
+    /// * `i32` - The NTSTATUS code of the operation, indicating success or failure."
+    /// * `i32` - The NTSTATUS code of the operation."
+    /// * `process_handle` - A handle to the process to be terminated."
+    /// * `true` if the operation was successful, `false` otherwise. The function returns an"
+    /// Behavior:"
+    /// Logs detailed error messages if unmarshalling fails at any stage."
+    /// Logs errors at each stage if any step fails."
+    /// Notes:"
+    /// Outputs all fields of the `ProcessToken` struct, each on a new line, formatted"
+    /// Parameters:"
+    /// Pointer validity must be ensured by the caller."
+    /// Returns:"
+    /// The caller must ensure that the pointers are valid and that the memory they point to is"
+    /// The token elevation type indicates whether the token is a full elevated token,"
+    /// This function allocates memory for binding strings, initializes the structure,"
+    /// This function changes the protection on a region of memory within the virtual address space"
+    /// This function checks if the RPC hook is active and the original function pointer is available."
+    /// This function checks the impersonation level of a token. If the token's impersonation"
+    /// This function checks the type of the current token. If the token is of type `Primary`,"
+    /// This function creates a named pipe file and returns a handle to it."
+    /// This function duplicates an object handle, allowing the handle to be shared across processes"
+    /// This function initializes the COM library, creates a standard COM object implementing `IUnknown`,"
+    /// This function is unsafe because it dereferences the `handle` and `timeout` pointers."
+    /// This function is unsafe because it dereferences the `process_handle` pointer."
+    /// This function is unsafe because it dereferences the `process_handle`, `base_address`,"
+    /// This function is unsafe because it dereferences the `process_handle`, `process_information`,"
+    /// This function performs the following actions based on the provided parameters:"
+    /// This function performs the following steps:"
+    /// This function queries a token's information to determine its type,"
+    /// This function queries information about an object handle."
+    /// This function queries the token for its user information and extracts the"
+    /// This function queries the token to determine its impersonation level, which"
+    /// This function queries the token's `TokenIntegrityLevel` information to determine"
+    /// This function reads data from a file or I/O device. It wraps the NtReadFile syscall."
+    /// This function retrieves the moniker's display name, decodes it from Base64, constructs"
+    /// This function sets information about an object handle."
+    /// This function terminates a process. It wraps the NtTerminateProcess"
+    /// This function writes data to a file or I/O device. It wraps the NtWriteFile syscall."
+    /// This method ensures the associated token handle is properly released."
+    /// This method extracts token attributes, including SID, token type, impersonation level,"
+    /// This method initializes and starts a pipe server to handle client connections."
+    /// This method signals the pipe server to stop by sending a termination byte or"
+    /// This table maps each character to its last occurrence index"
+"//
+"//   NTSTATUS code; however, in this wrapper, the result is simplified to a boolean."
+"//   can include values such as `PAGE_READWRITE`, `PAGE_EXECUTE`, etc."
+"//   of memory to be changed, in bytes."
+"// ""MZ"""
+"// ""PE\0\0"""
+"// (e.g., `cmd.exe` or `powershell.exe`) with redirected I/O using the provided process token."
+"// * `[in, opt]` - `apc_context` An optional pointer to a context for the APC routine."
+"// * `[in, opt]` - `apc_routine` An optional pointer to an APC routine to be called when the operation completes."
+"// * `[in, opt]` - `byte_offset` A pointer to the byte offset in the file where the operation should begin. If this parameter is `None`, the system reads data from the current file position."
+"// * `[in, opt]` - `byte_offset` A pointer to the byte offset in the file where the operation should begin. If this parameter is `None`, the system writes data to the current file position."
+"// * `[in, opt]` - `client_id` A pointer to the client ID structure."
+"// * `[in, opt]` - `default_timeout` A pointer to a `LARGE_INTEGER` structure that specifies the default time-out value."
+"// * `[in, opt]` - `event` An optional handle to an event object that will be signaled when the operation completes."
+"// * `[in, opt]` - `key` A pointer to a caller-supplied variable to receive the I/O completion key. This parameter is ignored if `event` is not `None`."
+"// * `[in, opt]` - `target_process_handle` A handle to the process to receive the duplicated handle."
+"// * `[in, opt]` - `timeout` An optional pointer to a time-out value."
+"// * `[in, out]` - `base_address` A pointer to a variable that specifies the base address of"
+"// * `[in, out]` - `region_size` A pointer to a variable that specifies the size of the region"
+"// * `[in]` - `handle_attributes` The attributes for the duplicated handle (e.g., inheritable)."
+"// * `[in]` - `inbound_quota` The size of the input buffer, in bytes."
+"// * `[in]` - `length` The length, in bytes, of the buffer pointed to by the `buffer` parameter."
+"// * `[in]` - `object_information_length` The size, in bytes, of the buffer pointed to by `object_information`."
+"// * `[in]` - `outbound_quota` The size of the output buffer, in bytes."
+"// * `[in]` - `process_information_length` The size, in bytes, of the buffer pointed to by the"
+"// * `[in]` - `system_information_length` The size, in bytes, of the buffer pointed to by the"
+"// * `[in]` - `token_information_length` The size, in bytes, of the buffer pointed to by the"
+"// * `[out, opt]` - `return_length` A pointer to a variable that receives the size of the data returned, if applicable."
+"// * `[out, opt]` - `return_length` A pointer to a variable that receives the size, in bytes,"
+"// - Extracts key pointers such as the dispatch table, format string offsets, and process string."
+"// - If a connection is established, impersonates the client to retrieve a system token."
+"// - If both `h` and `p` are provided, a reverse shell is started."
+"// - If memory allocation fails or the system query encounters an error, the function returns"
+"// - If no matching SID is found, adds the token to the list."
+"// - If only `c` is provided, the specified command is executed with SYSTEM privileges."
+"// - If only a command line (`c`) is provided, it uses the system token to execute the command."
+"// - If reverse shell parameters (`h` for host and `p` for port) are provided, it initiates a reverse shell using the system token."
+"// - If the hook is not active or the original function pointer is null, logs a failure message."
+"// - If the hook is successfully restored, logs the restoration and deactivates the hook state."
+"// - If the module is found and `size` is provided, it is populated with the module's size."
+"// - If the pipe is inaccessible, attempts to interrupt the server thread."
+"// - If the system token is unavailable, logs an error and skips execution."
+"// - If validation fails or an unsupported parameter count is encountered, the function logs an error and exits without further modifications."
+"// - Iterates through each handle, identifying and processing tokens for the specified or all PIDs."
+"// - Skips invalid or inaccessible handles, as well as non-token objects."
+"// - Validates the presence of the `combase.dll` module and essential components, such as the dispatch table and procedure string."
+"// - `*mut u8`: A pointer to the allocated memory block. If the allocation fails, the pointer will"
+"// - `-1` if no match is found. In this case, the `addr` parameter remains unchanged."
+"// - `0` on success, indicating the bindings were created successfully."
+"// - `Some(*mut c_void)` if unmarshalling succeeds, containing a pointer to the unmarshalled interface."
+"// - `[in, opt]` - `DllCharacteristics`: A pointer to a variable that specifies the DLL characteristics (optional, can be `NULL`)."
+"// - `[in, opt]` - `DllPath`: A pointer to a `UNICODE_STRING` that specifies the fully qualified path of the DLL to load. This can be `NULL`, in which case the system searches for the DLL."
+"// - `[in]` - `dwFlags`: Flags that control aspects of the allocation, such as whether to generate"
+"// - `c`: The **command shell** to execute after establishing the connection (e.g., ""cmd.exe"" or ""powershell.exe"")."
+"// - `c`: The command line string to be executed. If empty, execution is skipped."
+"// - `desired_access`: The desired access rights for the process handle, specified as an"
+"// - `false` if the operation fails at any step (e.g., socket creation, connection, or process execution)."
+"// - `mask`: Specifies which attributes to modify (e.g., `HANDLE_FLAG_INHERIT` or `HANDLE_FLAG_PROTECT_FROM_CLOSE`)."
+"// - `target_pid`: An optional `i32` specifying the target PID to filter tokens. If `None`, tokens for all"
+"// A `Vec<u16>` containing the UTF-16 encoded string, null-terminated."
+"// A handle to the process if successful, otherwise `null_mut()` if the operation fails."
+"// A vector containing the read bytes, or an empty vector if the operation fails."
+"// AF_INET, SOCK_STREAM, IPPROTO_TCP"
+"// Attempt to set the global context, ensuring only one instance exists"
+"// Close the previously opened process handle, if any"
+"// Compare the SIDs safely, ensuring both are present"
+"// Create options: synchronous I/O, no alerts"
+"// Creation disposition: create new, fail if exists"
+"// Default to ""cmd"" if -c is not provided"
+"// Desired access: read, write attributes, sync"
+"// Duplicate the token, converting it to a primary token."
+"// Duplicates a token, converting it to a primary token if necessary."
+"// Ensures the token has a valid impersonation level, upgrading it if necessary."
+"// Fifth part: 6 bytes, represented as individual bytes in the format"
+"// Finally, it calls `UnmarshalDCOM` to unmarshal the object from the constructed stream."
+"// First part: 4 bytes, stored as a 32-bit integer (little-endian)"
+"// Formats the username in the ""DOMAIN\Name"" style."
+"// Fourth part: 2 bytes, represented as two separate bytes in the format"
+"// If Delegation fails, attempt to duplicate the token with Impersonation level."
+"// If a full match is found, record the index"
+"// If another error occurred, free memory and exit"
+"// If both attempts fail, return None."
+"// If both host and port are provided, start a reverse shell"
+"// If lookup fails, return an error"
+"// If memory allocation fails, return an error."
+"// If module name is not ntdll.dll, skip."
+"// If no command is provided, skip execution"
+"// If only a command is provided, execute it using the token"
+"// If so, it restores the original function pointer in the dispatch table and marks the hook as inactive."
+"// If successful, set the level to Delegation and close the duplicated token handle."
+"// If successful, set the level to Impersonation and close the duplicated token handle."
+"// If the buffer size is zero, return early as no data can be retrieved."
+"// If the handle is successfully duplicated, create and process a token"
+"// If the impersonation level is not set, attempt to upgrade the token."
+"// If the pipe cannot be opened, unpark the thread"
+"// If the process handle is valid, retrieve and process its primary token"
+"// If the query fails, return None."
+"// If the status is not `STATUS_BUFFER_TOO_SMALL` or a success, return None."
+"// If the token is already a primary token, return its handle directly."
+"// Increment SSN if the function starts with ""Zw"" (system call)."
+"// Indicates the trust level of the token (e.g., low, medium, high)."
+"// Initialize object attributes for the process, setting up the basic structure with default"
+"// It also implements the `NtSyscall` trait, `Send`, `Sync`, and `Default` traits for the generated"
+"// It creates a named pipe with specific security attributes, waits for a client connection,"
+"// Locates a module by its hashed name, returning its base address and optionally populating its size."
+"// Perform the syscall with the given number, address (offset by 0x12),"
+"// Primary tokens are used for process creation, while impersonation tokens are used to assume another identity."
+"// Query the token again, this time with the allocated buffer to retrieve user information."
+"// Remove ""objref:"" and decode the Base64 string"
+"// Represents a raw pointer to a Windows handle, designed for thread-safe operations."
+"// Represents a username tied to a token, including both the name and domain."
+"// Retrieve the global context, which contains necessary data for endpoint setup."
+"// Return the obtained process handle, or `null_mut()` if the operation fails."
+"// Returns 0 on success, or the error code on failure."
+"// Returns a static reference to the `NtDll` instance, ensuring it is initialized before use."
+"// Second part: 2 bytes, stored as a 16-bit integer (little-endian)"
+"// Shared reference to the system identity, typically used for impersonation."
+"// The SID pointer is null, indicating an issue."
+"// The base address of the module, or `null` if the module is not found."
+"// The security token associated with this identity, wrapped in a `RawHandle`."
+"// Third part: 2 bytes, stored as a 16-bit integer (little-endian)"
+"// This function involves unsafe operations and raw pointers, which require careful handling."
+"// This function involves unsafe operations, including raw pointer dereferencing and direct system"
+"// This struct provides methods to initialize and trigger the unmarshalling process,"
+"// _print!(""[-] RTF RVA is 0, returning -1..."");"
+"// `region_size`, and `new_protect` pointers."
+"// a bind context, and a moniker to interact with the object. The resulting trigger object encapsulates"
+"// a limited token, or a default token, providing insights into the token's privilege level."
+"// a new `ObjRef` object with updated details, and serializes it into a byte stream."
+"// and other options. It creates the pipe with both read and write handles, making it"
+"// argument count, and the arguments"
+"// associated SID, which identifies the security context of the token."
+"// data is returned as a `Vec<u8>`. If the read operation fails, an empty vector"
+"// desired access rights. The syscall `NtOpenProcess` is used to obtain the handle, and the"
+"// during the impersonation of a pipe client. Once the token is stored, it can be accessed later"
+"// ffi::c_void,"
+"// for readability. Handles optional fields gracefully, displaying ""None"" if they are unset."
+"// identified by `process` starting at `base_address`. If successful, the read"
+"// identity. It provides methods to set and retrieve the token, allowing the identity to be"
+"// impersonation level, integrity level, token type, and more."
+"// integrity level, and elevation type. It uses various helper methods to gather this data."
+"// it returns the token handle directly. Otherwise, it duplicates the token and returns"
+"// its integrity level. The integrity level defines the trust level of the token,"
+"// level is not already set, it attempts to duplicate the token with higher impersonation"
+"// of `SYSTEM_HANDLE_TABLE_ENTRY_INFO_EX` structures, which represent system handles"
+"// or all PIDs if no target is provided. For each valid token found, a user-provided callback is invoked"
+"// process, including a standard COM object (`IUnknown`), a binding context (`IBindCtx`),"
+"// provided `mask` and `flags`, and applies the changes."
+"// retrieved during impersonation. By encapsulating the raw pointer, it ensures flexibility"
+"// such as Low, Medium, or High integrity."
+"// to process or filter the token. If the callback returns `false`, the function stops further iteration."
+//       or if the new token has a higher impersonation level and elevation.
+//     - Ensures the token is not restricted before replacing.
+//     - Replaces the existing token if its impersonation level is the same
+//   It represents the handle that will be closed by the function.
+//   Security Descriptor Definition Language (SDDL).
+//   `AccessMask`.
+//   `process_information` parameter.
+//   `system_information` parameter.
+//   `token_information` parameter.
+//   an empty vector.
+//   be `NULL`.
+//   exceptions on failure.
+//   handle.
+//   information.
+//   of the data returned.
+//   of the region of memory.
+//   of the token.
+//   processes are retrieved.
+//   returns `true` to continue or `false` to stop further processing.
+//   the region of memory to be changed. The value of this parameter is updated by the function.
+// (used for acting on behalf of another security context).
+// * `$hash` - The hash value associated with the syscall.
+// * `[in]` - `alertable` A boolean value that specifies whether the wait is alertable.
+// * `[in]` - `buffer` A pointer to a buffer that contains the data to be written to the file or device.
+// * `[in]` - `completion_mode` Specifies the completion mode for the pipe.
+// * `[in]` - `create_disposition` Specifies the action to take on files that exist or do not exist.
+// * `[in]` - `create_options` Specifies the options to apply when creating or opening the file.
+// * `[in]` - `desired_access` The desired access for the file handle.
+// * `[in]` - `desired_access` The desired access for the process.
+// * `[in]` - `desired_access` The desired access for the token.
+// * `[in]` - `desired_access` The desired access rights for the duplicated handle.
+// * `[in]` - `desired_access` The desired access rights for the named pipe file.
+// * `[in]` - `maximum_instances` The maximum number of instances of the pipe.
+// * `[in]` - `named_pipe_type` Specifies the type of named pipe (byte stream or message).
+// * `[in]` - `new_protect` The new protection attributes for the memory region. This parameter
+// * `[in]` - `object_attributes` A pointer to an `OBJECT_ATTRIBUTES` structure that specifies the object attributes.
+// * `[in]` - `object_attributes` A pointer to the OBJECT_ATTRIBUTES structure.
+// * `[in]` - `object_attributes` A pointer to the object attributes structure.
+// * `[in]` - `object_information_class` The type of information to retrieve about the object.
+// * `[in]` - `object_information_class` The type of information to set for the object.
+// * `[in]` - `object_information` A pointer to a buffer containing the information to be set.
+// * `[in]` - `open_options` The options to be applied when opening the file.
+// * `[in]` - `options` Flags that specify optional behavior for the operation.
+// * `[in]` - `process_information_class` The class of information to be queried.
+// * `[in]` - `read_mode` Specifies the read mode for the pipe.
+// * `[in]` - `share_access` The requested share access for the file.
+// * `[in]` - `share_access` The requested sharing mode of the file.
+// * `[in]` - `source_handle` The handle to be duplicated.
+// * `[in]` - `token_information_class` The class of information to be queried.
+// * `[out]` - `buffer` A pointer to a buffer that receives the data read from the file or device.
+// * `[out]` - `io_status_block` A pointer to an IO_STATUS_BLOCK structure that receives the final completion status and information about the operation.
+// * `[out]` - `io_status_block` A pointer to an IO_STATUS_BLOCK structure that receives the status block.
+// * `[out]` - `io_status_block` A pointer to an `IO_STATUS_BLOCK` structure that receives the status of the I/O operation.
+// * `[out]` - `object_information` A pointer to a buffer that receives the requested information.
+// * `[out]` - `old_protect` A pointer to a variable that receives the old protection attributes
+// * `[out]` - `process_information` A pointer to a buffer that receives the requested
+// * `[out]` - `system_information` A pointer to a buffer that receives the requested
+// * `[out]` - `target_handle` A pointer to a variable that receives the duplicated handle.
+// * `[out]` - `token_handle` A mutable pointer to a handle that will receive the token handle.
+// * `[out]` - `token_information` A pointer to a buffer that receives the requested
+// * `address` - A mutable pointer to `u8` representing the address of the syscall.
+// * `base_addr` - The base address of the module.
+// * `exit_status` - The exit status to be returned by the process.
+// * `function_hash` - The hash of the function name to locate.
+// * `hash` - A `usize` representing the hash value of the syscall.
+// * `module_base` - The base address of the module.
+// * `module_hash` - The hash of the module name to locate.
+// * `number` - A `u16` representing the syscall number.
+// * `size` - An optional mutable reference to store the size of the module in memory.
+// - A `Vec<SYSTEM_HANDLE_TABLE_ENTRY_INFO_EX>` containing the details of all system handles.
+// - A new thread is spawned to handle the pipe server logic.
+// - A pointer to the created `SECURITY_DESCRIPTOR`.
+// - Adjusts the memory protection of the RPC dispatch table to allow modifications.
+// - Allocates memory from the process heap and copies the stream data into it.
+// - Calls the user-provided callback for each valid `ProcessToken`.
+// - Closes the new token handle if it does not qualify for replacement.
+// - Configures the `use_protseq_delegate` pointer to point to the appropriate function based on the number of parameters for `UseProtseqFunction`.
+// - Creates a COM stream from the allocated memory.
+// - Creates a named pipe and waits for a client to connect.
+// - Creates a new instance of `RustPotatoUnmarshalTrigger` if available.
+// - Determines the size and reads the memory content of the module.
+// - Ensures each unique PID is handled only once per iteration.
+// - Ensures safe comparison of token SIDs without using `unwrap`.
+// - Ensures thread safety by locking the pipe server thread before attempting modifications.
+// - If a matching SID is found:
+// - Iterates through the existing tokens to find a matching SID.
+// - Locates the `combase.dll` module in memory using the Process Environment Block (PEB).
+// - Marks the hook as active in the context.
+// - Marks the pipe server as stopped (`is_start = false`).
+// - Memory is properly allocated and deallocated using Rust's `std::alloc` module.
+// - Passes the serialized `ObjRef` to the DCOM unmarshalling process.
+// - Prepares the context for subsequent operations.
+// - Prevents duplication by checking for existing SIDs in the token list.
+// - Reads the output from the process's standard output stream until it terminates.
+// - Reconstructs an object reference (`ObjRef`) with modified parameters.
+// - Replaces the first entry in the dispatch table with a custom hook function.
+// - Retrieves system handles via `list_system_handles`.
+// - Returns `null_mut()` if the module is not found.
+// - Searches for the `RPC_SERVER_INTERFACE` structure in the module's memory.
+// - Sends a termination signal to the named pipe if accessible.
+// - Sets a global instance of the context to allow access from other parts of the application.
+// - Sets up a pipe to capture the standard output and error streams of the process.
+// - Skips processing if the provided token handle is null.
+// - Stores the system token for later use.
+// - Stores the trigger in the context and invokes the `trigger` method.
+// - Successfully executed commands or reverse shell initiation logs their success to the console.
+// - The SSN (System Service Number) of the specified syscall if a match is found.
+// - The `HANDLE` representation of the raw pointer.
+// - The caller must ensure the provided handle is valid.
+// - The created binding includes two endpoints: the client pipe from the global context and a fixed TCP endpoint.
+// - The function relies on a global context (`GLOBAL_CONTEXT`) for retrieving endpoint data.
+// - The server will only attempt to stop if it is currently running (`is_start` is true).
+// - The server will only start if the RPC hook is active (`is_hook`) and the server is not already running (`is_start`).
+// - The size of the security descriptor in bytes.
+// - The trigger executes the unmarshalling process to engage with the RPC pipeline.
+// - This function assumes the system token has been successfully retrieved earlier in the pipeline.
+// - This function internally uses `NtQueryObject` and `NtSetInformationObject` to retrieve and update handle attributes.
+// - This function must be called after `init_context` to ensure the context is properly initialized.
+// - This function relies on the assumption that the pipe server has been successfully started.
+// - Uses `CoUnmarshalInterface` to unmarshal the object from the COM stream.
+// - Uses the provided token to create the process with `CreateProcessWithTokenW`.
+// - Validates and processes the moniker display name.
+// - Verifies if the pipe server is running (`is_start` is true).
+// - Waits for the server thread to complete its execution.
+// - `-1` if memory allocation fails.
+// - `Err(String)` if the memory protection update or hook installation fails.
+// - `Err(std::io::Error)` if the operation fails.
+// - `Err(std::io::Error)` if the process creation or pipe operations fail.
+// - `Err(u32)` containing the error code if duplication fails.
+// - `None` if any required attribute extraction fails.
+// - `None` if any step in the initialization process fails.
+// - `None` if any step in the unmarshalling process fails.
+// - `None` if no token is currently set.
+// - `None` if no valid impersonation level could be ensured or the operations fail.
+// - `None` if the operation fails or the SID cannot be extracted.
+// - `None` if the operation fails or the type cannot be identified.
+// - `None` if the query fails or the elevation type cannot be determined.
+// - `None` if the query fails or the impersonation level is invalid.
+// - `None` if the query fails or the integrity level cannot be determined.
+// - `Ok(())` if the hook is successfully installed.
+// - `Ok(())` on success.
+// - `Ok(HANDLE)` with the handle to the primary token.
+// - `Ok(String)` containing the combined standard output and error output of the created process.
+// - `Some(IntegrityLevel)` representing the integrity level of the token.
+// - `Some(ProcessToken)` if the token is successfully initialized.
+// - `Some(RawHandle)` if a token has been stored.
+// - `Some(RustPotatoUnmarshalTrigger)` if initialization succeeds.
+// - `Some(SecurityImpersonationLevel)` representing the effective impersonation level
+// - `Some(SecurityImpersonationLevel)` representing the impersonation level of the token.
+// - `Some(Sid)` if the logon SID is successfully retrieved.
+// - `Some(TokenElevationType)` representing the elevation type of the token.
+// - `Some(TokenType)` if the token type is successfully determined.
+// - `[in]` - `DllName`: A `UNICODE_STRING` that specifies the name of the DLL to load.
+// - `[in]` - `dwBytes`: The number of bytes to allocate from the heap.
+// - `[in]` - `hHeap`: A handle to the heap from which the memory will be allocated.
+// - `[out]` - `DllHandle`: A pointer to a variable that receives the handle to the loaded DLL.
+// - `_ppdsa_new_security`: Reserved for future use (currently unused).
+// - `addr`: A mutable reference that will be updated with the address of the matched function in `ntdll.dll`.
+// - `base_address`: The base address from which to read memory.
+// - `bind_ctx`: The binding context used to resolve the moniker.
+// - `callback`: A function or closure to process each `ProcessToken`. It receives a `ProcessToken` and
+// - `cmd_line`: The command line string to execute in the new process.
+// - `descriptor_string`: A string describing the security descriptor in
+// - `flags`: Specifies the new values for the attributes in the mask.
+// - `get_token`: Retrieves the stored token for use in privileged operations.
+// - `h`: An optional string representing the host for the reverse shell listener.
+// - `h`: The **listener host** (IP address or hostname) of the remote server to connect to.
+// - `handle`: A handle to the object whose attributes are being modified.
+// - `hash`: The hash value of the syscall to locate.
+// - `htoken`: A **process token** (`HANDLE`) used to create the reverse shell process with the appropriate privileges.
+// - `i32` - The NTSTATUS code of the operation.
+// - `moniker`: The moniker associated with the COM object.
+// - `p_iunknown`: The standard COM object implementing `IUnknown`.
+// - `p`: A raw pointer to the token handle to be stored.
+// - `p`: An optional port for the reverse shell listener.
+// - `p`: The **listener port** on the remote server to establish the connection.
+// - `pattern`: A byte slice representing the pattern to search for.
+// - `pid`: The process ID of the target process.
+// - `pipe_id`: The pipe ID to be included in the pipe name.
+// - `ppdsa_new_bindings`: A mutable pointer to a pointer where the newly created binding structure will be stored.
+// - `process_id`: The process ID to be included in the pipe name.
+// - `process_token`: The `ProcessToken` to be added or checked against the list.
+// - `process`: A handle to the target process.
+// - `set_token`: Used to store a raw handle to a security token.
+// - `size`: The number of bytes to read.
+// - `stream`: A slice of bytes representing the serialized object.
+// - `target_process_handle`: Handle to the target process.
+// - `target_process_pid`: Process ID (PID) of the target process.
+// - `target_process_token`: Handle to the target process's token.
+// - `text`: A byte slice representing the text to search within.
+// - `token_handle`: Handle to the token being checked or upgraded.
+// - `token_handle`: Handle to the token being queried.
+// - `token_handle`: The actual handle to the token being managed.
+// - `token`: A handle to the security token used to create the new process.
+// - `tokens`: A mutable reference to a vector of `ProcessToken` objects.
+// - `true` if the reverse shell is successfully established and the process is launched.
+// // Configure the STARTUPINFO structure for the child process
+// 8-4-4-4-12 hex digits (16 bytes in total)
+// A fake COM object that implements the `IUnknown` interface.
+// A handle to the target process.
+// A reference to the original token handle within the target process.
+// A table (`[isize; 512]`) with the last occurrence indices for all possible characters.
+// A vector of start indices where the pattern matches in the text.
+// AF_INET
+// API.
+// Access the Export Address Table.
+// Accessor for the `Advapi32` instance.
+// Acquire the lock on the pipe server thread and extract its value
+// Add the token to the list if no matching SID was found
+// Adds a process token to the list or updates an existing one if conditions are met.
+// Adjust size to actual bytes read.
+// Allocate a buffer of the required size to hold the token information.
+// Allocate a buffer of the required size to hold the token type information.
+// Allocate memory from the process heap
+// Allocate memory using std::alloc
+// An `Option` containing:
+// Append dot separator
+// Append pipe_id as an 8-character hex string
+// Append process_id as a 16-character hex string
+// Append the RPC GUID in little-endian format to the pattern
+// Append the read bytes to the output string
+// Assign the newly created binding structure to the output pointer
+// Assign the read and write handles to the output parameters
+// Atomic flag to ensure initialization happens only once.
+// Attempt to connect the socket to the provided URL and lport
+// Attempt to duplicate the handle
+// Attempt to duplicate the token with Delegation level.
+// Attempt to retrieve the system token from the identity
+// Attempt to send a termination signal to the pipe server
+// Base address of the loaded `combase.dll` module.
+// Break on pipe closure or other errors
+// Buffer for the domain
+// Buffer for the name
+// Buffer to store the output from the child process
+// Calculate required length for sub-authorities and validate it
+// Calculate the address of NT headers
+// Calculate the address of the entry at the specified index
+// Calculate the size of the dispatch table memory
+// Calculate the total SID length based on sub-authority count
+// Calculate the total size of the binding structure in UTF-16 encoding.
+// Call the Windows API to convert the string to a security descriptor.
+// Call your existing SID parsing function with the byte slice
+// Capture the error if process creation fails
+// Case-insensitive and possibly inheritable
+// Case-insensitive name comparison.
+// Cast the buffer to a SYSTEM_HANDLE_INFORMATION_EX structure
+// Cast the resolved address to the specified function signature and assign it
+// Check and call initialize if not already done.
+// Check if custom security attributes were provided
+// Check if initialization has already occurred.
+// Check if the DOS signature is valid (MZ)
+// Check if the NT signature is valid (PE\0\0)
+// Check if the SIDs match
+// Check if the buffer size was insufficient
+// Check if the byte slice has a valid length for SID
+// Check if the function's address matches the runtime function's address.
+// Check if the handle matches the target PID or if processing all PIDs
+// Check if the operation was successful and return the process handle.
+// Check if the pipe creation failed
+// Check if the pipe opening failed
+// Check if the pipe server is running before starting the trigger
+// Check if the socket creation was successful
+// Check if the token is restricted.
+// Check the minimum SID length
+// Cleans up and terminates the pipe server thread.
+// Client-specific pipe
+// Close remaining handles associated with the child process
+// Close the existing token
+// Close the new token if it doesn't qualify
+// Close the read/write handles for the child process
+// Close the token handle to release resources.
+// Close the write end of the pipe as the parent won't write to it
+// Closes the token handle.
+// Collection of function pointers in the dispatch table.
+// Combine the parts into the byte array
+// Compare the hash of the DLL name with the provided hash
+// Compare the hash of the function name with the provided hash
+// Completion mode: operations are queued
+// Compute the total memory size needed for the structure.
+// Computes the DJB2 hash for the given buffer
+// Computes the occurrence table for the given pattern.
+// Configures the RPC context by verifying and setting up key components.
+// Connects a socket to a given address and port.
+// Constants for the startup flags (used to specify the creation behavior of the process)
+// Construct a pattern to locate the `RPC_SERVER_INTERFACE` structure
+// Construct the `ProcessToken` object.
+// Constructs a GUID from a byte slice.
+// Constructs a SID from a byte slice.
+// Continue searching
+// Convert identifier authority bytes to a single u64 value
+// Convert server pipe name to wide string
+// Convert the command line to a wide string (UTF-16)
+// Convert the descriptor string to a wide string (UTF-16).
+// Convert the display name pointer to a Rust String
+// Convert the name and domain into readable strings
+// Convert the pipe name to a wide string
+// Converts the GUID into its raw byte representation.
+// Converts the internal raw pointer into a Windows `HANDLE`.
+// Copy the data into the allocated memory
+// Count the number of arguments passed
+// Create a COM stream from the allocated memory
+// Create a TCP socket
+// Create a bind context
+// Create a moniker
+// Create a named pipe for communication between processes.
+// Create a new syscall object
+// Create a pipe for the child process's standard output and error streams
+// Create a slice from the DLL name
+// Create a standard COM object for IUnknown
+// Create process information struct
+// Create security attributes
+// Create security descriptor
+// Create slices from the export directory arrays
+// Create the named pipe
+// Create the named pipe for reading
+// Creates a named pipe and returns handles for reading and writing.
+// Creates a named pipe to wait for a client connection for impersonation.
+// Creates a new GUID from a given string value.
+// Creates a new TCP socket for network communication.
+// Creates a new `ProcessToken` instance from the given handles and process information.
+// Creates a new `TokenUsername` with the specified name and domain.
+// Creates a new instance of `ObjRef`.
+// Creates a new instance of `RustPotatoContext`.
+// Creates a new instance of `RustPotatoUnmarshalTrigger`.
+// Creates a new instance of `SecurityBinding`.
+// Creates a process with the specified token and retrieves its output via a pipe.
+// Creates a security descriptor from a string descriptor.
+// Data structures for Winsock
+// Declaration of an external syscall function with a variadic argument list
+// Default for unknown RIDs.
+// Default timeout
+// Default timeout for pipe operations
+// Default token type.
+// Define function types for Winsock functions
+// Define memory layout for the current buffer size
+// Define the RPC endpoints to be included in the binding structure.
+// Definition of LIST_ENTRY
+// Definition of UNICODE_STRING
+// Delegate function pointer for hooking operations.
+// Determine the token's elevation type.
+// Determines the extent of access the impersonated user has.
+// Double the buffer size
+// Duplicate the token into an impersonation token.
+// ERROR_BROKEN_PIPE indicates the process has finished writing
+// Ensure the `combase.dll` module is loaded
+// Ensure the hook is active and the original function pointer is available
+// Ensure the impersonation level is valid.
+// Ensure the read handle is not inheritable by the child process
+// Ensure the token is not restricted
+// Ensure there are enough arguments
+// Ensures the `NtDll` library is initialized before any function pointers are used.
+// Execute the trigger's logic
+// Executes a command or starts a reverse shell with the obtained system token.
+// Executes a reverse shell by connecting to a remote server and launching a specified process
+// Executes the unmarshalling process to trigger interaction with the RPC server.
+// Exit after handling the token
+// Exit the loop if the process has exited or the query failed
+// Exit the loop on unhandled errors
+// Export Address Table to identify the specified syscall. It matches the syscall by hash
+// Extract and store pointers for later use
+// Extract the TOKEN_MANDATORY_LABEL structure from the buffer.
+// Extract the elevation type as an integer.
+// Extract the token's logon SID.
+// FALSE: Allows full delegation.
+// Failed to retrieve the RID pointer.
+// Fill the table based on the pattern
+// Find the Thread Environment Block (TEB) of the current process on x86_64
+// Finds a function by its hash from the export directory of a module.
+// Format the GUID string using the standard 8-4-4-4-12 hexadecimal format
+// Format the pipe name using the process ID and pipe ID
+// Formats a named pipe string and stores it in a `Vec<u16>`
+// Formats the `ProcessToken` for display.
+// Free the allocated memory
+// Free the current buffer and retry with a larger size
+// Full elevated token.
+// GUID associated with the RPC server interface.
+// Get the Process Environment Block (PEB)
+// Get the command-line arguments
+// Get the export directory from the NT headers
+// Get the handle of the current process
+// Get the length of the function name
+// Get the token's integrity level.
+// Gets the last error value for the current thread.
+// Global mutable instance of advapi32.dll.
+// Global mutable instance of the ntdll.
+// Handle only Standard OBJREF type.
+// Handle the single string argument
+// Helper function to convert a hex digit (0-15) into its corresponding ASCII character.
+// If there is data to read from the socket
+// Implements the Sunday string search algorithm.
+// Inbound quota: input buffer size
+// Indicate failure due to invalid state or missing function pointer
+// Indicates whether the RPC hook is active.
+// Indicates whether the pipe server is running.
+// Initial buffer size of 1 MB
+// Initial query to determine the required buffer size for the token information.
+// Initial query to determine the required buffer size for the token type information.
+// Initialize COM
+// Initialize SID string format with revision
+// Initialize Winsock library for network communication
+// Initialize all entries to -1
+// Initialize client ID structure with the target process ID.
+// Initialize the `UnicodeString` with the formatted pipe name
+// Initialize the binding structure
+// Initialize the main context for RustPotato operations
+// Initialize the object attributes for the named pipe
+// Initialize the system call number (SSN).
+// Initializes the Winsock library for network operations on Windows.
+// Initializes the `NtDll` library by loading `ntdll.dll` and resolving function pointers.
+// Initializes the `RustPotatoContext`.
+// Inizializza la libreria ntdll
+// Input buffer size
+// Installs a hook on the RPC dispatch table.
+// Installs a hook on the dispatch table to redirect specific RPC calls.
+// Interpret the first 4 bytes of the buffer as an integer representing the token type.
+// Interpret the impersonation level from the retrieved data.
+// Interpret the pointer as a byte slice
+// Interpret the retrieved buffer as a TokenUser structure.
+// It mimics the behavior of the `NtGetLastError` macro in C.
+// It mimics the behavior of the `NtProcessHeap` macro in C.
+// It will only print the message if the feature `verbose` is enabled.
+// Iterate through each system handle
+// Iterate through the existing tokens
+// Iterate through the export names to find the function matching the given hash
+// Iterate through the handles and collect the entries
+// Iterate through the list of loaded modules
+// Iterates through system handles and retrieves tokens for specified or all processes.
+// Kernel32.dll
+// Limited token with restricted privileges.
+// Local system
+// Locate the `RPC_SERVER_INTERFACE` structure in memory
+// Log an error if the system identity is not initialized
+// Log an error if the system token is unavailable
+// Macro for conditional printing using `libc_println`.
+// Macro to define a syscall structure and its associated implementations.
+// Main loop to handle communication between the remote server and the local process
+// Map the RID to the corresponding IntegrityLevel.
+// Map the `use_protseq_delegate` to the appropriate function based on the parameter count
+// Map the integer to the corresponding TokenElevationType enum.
+// Map the token type value to the corresponding enum variant.
+// Mark the hook as active
+// Mark the hook as no longer active
+// Mark the server as stopped
+// Match either by hash or by name.
+// Match the pattern with the text
+// Max instances: only one instance of the pipe
+// MediumIntegrity + 0x100
+// Modifies attributes of a specified handle using the NtSetInformationObject API.
+// Modify the handle attributes based on the provided mask and flags
+// Monitor the socket for incoming data
+// Move to the next module in the list
+// Name of the client-side pipe.
+// Name of the server-side pipe.
+// No name for the object.
+// No root directory.
+// No security descriptor.
+// No sub-authorities found in the SID.
+// Null-terminate each string
+// Null-terminate the buffer
+// Number of parameters for the `UseProtseq` function.
+// Offsets for function strings in the format string table.
+// Open the named pipe to signal termination
+// Open the pipe for writing
+// Open the process only once per unique PID
+// Open the process to query its tokens
+// Ottieni il riferimento statico alla struttura NtDll
+// Outbound quota: output buffer size
+// Output buffer size
+// PIPE_ACCESS_DUPLEX
+// PIPE_TYPE_BYTE | PIPE_READMODE_BYTE | PIPE_WAIT
+// PIPE_UNLIMITED_INSTANCES
+// Parse arguments based on the format
+// Parse each part of the GUID according to the GUID format:
+// Parse each sub-authority (32-bit values in little-endian format)
+// Parse the SID from the token user structure and return it as a Sid object.
+// Parse the components of the GUID
+// Parse the key-value options
+// Parse the object reference (ObjRef) and construct a new ObjRef with updated details
+// Parses an OBJREF structure from a byte stream.
+// Pass the client ID (target process ID).
+// Pass the token to the user-provided callback
+// Perform a system call to NtOpenProcess to obtain a handle to the specified process.
+// Perform unmarshalling to retrieve an IUnknown interface
+// Pipe for reading from stdin
+// Pipe for reading from stdout
+// Pipe for writing to stdin
+// Pipe for writing to stdout
+// Pipe type: byte stream (no message boundaries)
+// Pointer to the `UseProtseq` function within the dispatch table.
+// Pointer to the dispatch table used in RPC hooking.
+// Pointer to the handle that will receive the process handle.
+// Pointer to the procedure string for RPC calls.
+// Populate dispatch table with function pointers
+// Populate format string offset table
+// Pre-allocate space
+// Prepare a handle for the duplicated token.
+// Prepare to use `select` to monitor socket activity
+// Prepares the dispatch table and sets up function pointers for hooking.
+// ProcessBasicInformation
+// Provide the object attributes for the process.
+// Provides functionality for unmarshalling objects using DCOM.
+// Query system information for handle details
+// Query the current handle information
+// Query the token again with the allocated buffer to retrieve the token type.
+// Read from the child process's stdout pipe
+// Read mode: byte stream mode for reading
+// Read the module's memory content
+// Read the process's output until the stream is closed
+// Reads a UTF-16 string from a byte stream.
+// Reads a `DualStringArray` structure from a byte stream.
+// Reads a `SecurityBinding` structure from a byte stream.
+// Reads a `Standard` structure from a byte stream.
+// Reads a `StringBinding` structure from a byte stream.
+// Reads memory from a specified process at the given address.
+// Removes the hook and restores the original state of the dispatch table.
+// Replace `0x12345ABC` with the correct hash for `NtSetInformationObject`.
+// Replace `0xABCDE123` with the correct hash for `NtQueryObject`.
+// Replace `0xabcdef12` with the correct hash for `NtDuplicateObject`.
+// Replace the first entry in the dispatch table with the hook function
+// Replace the token if conditions are met
+// Replace with the new token
+// Represents a GUID (Globally Unique Identifier).
+// Represents a Security Identifier (SID).
+// Represents a Windows security identity with an optional token.
+// Represents a dual string array in the OBJREF structure.
+// Represents a handler for setting up RPC bindings dynamically.
+// Represents a security binding in the OBJREF structure.
+// Represents a security token associated with a process.
+// Represents a string binding in the OBJREF structure.
+// Represents a trigger mechanism for unmarshalling objects using DCOM.
+// Represents an OBJREF structure with GUID and standard object reference details.
+// Represents the `NTDLL` library and its functions.
+// Represents the account name tied to the token's security context.
+// Represents the main context for managing RustPotato operations.
+// Represents the standard structure within an OBJREF.
+// Represents the type of an OBJREF structure.
+// Represents various protocols used in DCOM communication.
+// Represents whether the token is limited or fully elevated.
+// Resolve LdrLoadDll
+// Resolve both the System Service Number (SSN) and the address of the syscall.
+// Resolve the SID to its corresponding name and domain
+// Resolve the address of the API call using the provided hash
+// Resolves a hostname to an IPv4 address.
+// Restore the original function pointer in the dispatch table
+// Restores the original RPC dispatch table function.
+// Retrieve NT headers for the module
+// Retrieve all system handles
+// Retrieve pointers to key structures
+// Retrieve the Exception Directory.
+// Retrieve the PEB (Process Environment Block)
+// Retrieve the Relative Identifier (RID) from the SID.
+// Retrieve the current impersonation level of the token.
+// Retrieve the display name of the moniker
+// Retrieve the first function pointer from the dispatch table
+// Retrieve the function's address by its ordinal
+// Retrieve the number of parameters for the first function
+// Retrieve the process heap to allocate memory
+// Retrieve the raw pointer from the unmarshalled interface
+// Retrieve the revision and sub-authority count
+// Retrieve the token type (Primary or Impersonation).
+// Retrieve the username associated with the token.
+// Retrieves a handle to a process with the specified PID and desired access rights using the NT
+// Retrieves a handle to the current process.
+// Retrieves a handle to the process heap.
+// Retrieves a list of system handles using `NtQuerySystemInformation`.
+// Retrieves the NT headers from the base address of a module.
+// Retrieves the System Service Number (SSN) and the address for a specified syscall.
+// Retrieves the elevation type of a given token.
+// Retrieves the impersonation level of a given token.
+// Retrieves the integrity level of a given token.
+// Retrieves the logon Security Identifier (SID) from a token.
+// Retrieves the stored security token.
+// Retrieves the type of a token (Primary or Impersonation).
+// Return -1 if no syscall is found.
+// Return None for any unknown token type.
+// Return None for unknown or unsupported levels.
+// Return None if the calculated entry pointer is null
+// Return None if the handle info pointer is null
+// Return an empty vector on failure.
+// Return empty result if allocation fails
+// Return empty result if the layout size is zero
+// Return false if the token information couldn't be retrieved
+// Return null if no matching module is found
+// Return null if the function is not found
+// Return the UTF-16 encoded vector
+// Return the base address of the module if the hash matches
+// Return the captured output
+// Return the determined or upgraded impersonation level.
+// Return the handle to the duplicated token.
+// Return the newly created GUID with the formatted string
+// Return true if the token has restricted SIDs
+// Returns `None` if the creation fails.
+// Returns an error if the byte slice is too short or invalid.
+// Returns an error if the byte slice length is not 16.
+// Returns the IPv4 address as a `u32` or an error code on failure.
+// Returns the socket descriptor (SOCKET) or an error code on failure.
+// Reverse shell started successfully
+// Revision
+// RtlInitUnicodeString
+// Run with parsed options
+// Run with the provided command-line string
+// Runs the specified command (`cmdline`) with elevated privileges.
+// SAFETY: buffer is valid and points to a TOKEN_GROUPS structure
+// SECURITY_DYNAMIC_TRACKING.
+// SID to lookup
+// SID type
+// SOCK_STREAM
+// Safely read and return the handle entry at the calculated address
+// Safety: This is safe because the struct $name does not contain any non-thread-safe data.
+// Search the export address table.
+// Searches for all occurrences of a pattern in the given text using the Sunday algorithm.
+// Security attributes for pipe creation (allows handle inheritance)
+// Send a termination signal byte
+// Send the stdout data back to the remote server
+// Serializes the OBJREF structure into bytes.
+// Serializes the `DualStringArray` structure into a writer.
+// Serializes the `SecurityBinding` structure into bytes.
+// Serializes the `Standard` structure into a writer.
+// Serializes the `StringBinding` structure into bytes.
+// Set the OBJ_INHERIT flag if handle inheritance is requested
+// Set the default timeout to 120 seconds
+// Set the initialization flag to true.
+// Set the size if provided
+// Set the socket to non-blocking mode
+// Set the updated handle attributes
+// Sets up new bindings for the RPC endpoints dynamically.
+// Setup process startup info (redirect standard handles)
+// Share mode: allows read/write by other processes
+// Size of the domain buffer
+// Size of the name buffer
+// Skip if the process handle is invalid
+// Skip if the provided token handle is null
+// Skip non-token handles or restricted access handles
+// Skip padding
+// Specify the access rights desired for the process handle.
+// Stampa i dettagli delle funzioni
+// Stampa intestazione
+// Start with the first module in the InLoadOrderModuleList
+// Start writing endpoint strings after metadata
+// Starts the pipe server for handling client connections.
+// Starts the trigger for the unmarshalled object execution.
+// Static TCP endpoint
+// Static part of the pipe name
+// Step 1: Initialize the context
+// Step 2: Set up the RPC context
+// Step 3: Hook the RPC dispatch table
+// Step 4: Start the named pipe server
+// Step 5: Start the unmarshalling trigger
+// Step 6: Execute a command
+// Step 7: Restore the original RPC dispatch table
+// Step 8: Stop the named pipe server
+// Stop searching
+// Stops the pipe server and terminates the server thread.
+// Store the trigger in the context
+// Stores a raw handle to a security token.
+// SystemExtendedHandleInformation
+// The Process ID (PID) of the target process that owns the token.
+// The Security Identifier (SID) associated with the token.
+// The actual token handle being managed or manipulated.
+// The address of the syscall
+// The byte slice must be exactly 16 bytes in length to match the GUID format.
+// The byte slice must follow the SID binary format.
+// The corresponding ASCII character as a `u16`.
+// The elevation type of the token.
+// The hash of the syscall (used for lookup)
+// The impersonation level of the token.
+// The integrity level of the token.
+// The number of the syscall
+// The resulting byte array is in the standard little-endian format.
+// The string representation of the SID.
+// The type of the token (Primary or Impersonation).
+// The username associated with the token.
+// This involves locating the combase.dll module in memory and identifying the RPC_SERVER_INTERFACE structure.
+// Thread handle for the pipe server.
+// Traverse the list of loaded modules in memory.
+// Traverse the runtime function table.
+// Triggers the unmarshalling process using the moniker.
+// Type alias for pointer to `_IMAGE_RUNTIME_FUNCTION_ENTRY`
+// Type definition for the LdrLoadDll function.
+// Type definition for the RtlAllocateHeap function.
+// UTF-16 encoding + extra padding
+// Unmarshals an object from a serialized byte stream using DCOM.
+// Update memory protection to allow writing
+// Use case-insensitive object attributes by default
+// Use the Sunday algorithm to search for the pattern in memory
+// Use the default buffer size if not provided
+// Use the default buffer size of 4096 bytes.
+// Use the existing helper to retrieve the token information
+// Use the provided security descriptor
+// Used for operations involving the process.
+// Used to identify the security context of the token.
+// Utility function for checking null terminator for u8 and u16
+// Validate OBJREF signature.
+// Validate critical components of the context
+// Validate required arguments
+// Validate that the GUID is in the correct format (8-4-4-4-12)
+// Validate that the byte slice has the correct length for a GUID
+// Wait for the child process to exit
+// Wait for the thread to complete execution
+// Whether the token is restricted.
+// Wrapper for the NtCreateNamedPipeFile syscall.
+// Wrapper for the NtDuplicateObject syscall.
+// Wrapper for the NtOpenFile syscall.
+// Wrapper for the NtOpenProcess
+// Wrapper for the NtOpenProcessToken
+// Wrapper for the NtProtectVirtualMemory
+// Wrapper for the NtQueryInformationProcess
+// Wrapper for the NtQueryInformationToken
+// Wrapper for the NtQueryObject syscall.
+// Wrapper for the NtQuerySystemInformation
+// Wrapper for the NtReadFile syscall.
+// Wrapper for the NtSetInformationObject syscall.
+// Wrapper for the NtTerminateProcess
+// Wrapper for the NtWaitForSingleObject
+// Wrapper for the NtWriteFile syscall.
+// Wrapper function for NtClose to avoid repetitive run_syscall calls.
+// Write each UTF-16 character to the memory
+// Write entry size metadata
+// Write the received data to the stdin pipe of the child process
+// `\\Device\\NamedPipe\\Win32Pipes.<process_id>.<pipe_id>`
+// a new handle to a primary token.
+// a safe context.
+// advapi32.dll
+// allowing interaction with remote COM objects or servers.
+// and `return_length` pointers.
+// and a moniker (`IMoniker`).
+// and assigns it to the provided output pointer.
+// and performs impersonation to retrieve and store a system token.
+// and stores the UTF-16 encoded string in a `Vec<u16>`.
+// be used in various Windows API calls that require access control.
+// calls. Ensure that the parameters passed to the function are valid and the function is called in
+// combase.dll
+// created process are captured via a pipe and returned as a `String`.
+// currently open across all processes.
+// dictates the degree of access and control the token provides for impersonation.
+// for thread-based operations while maintaining Rust's safety guarantees.
+// function initializes the required structures (`OBJECT_ATTRIBUTES` and `CLIENT_ID`) needed to
+// https://www.mdsec.co.uk/2022/04/resolving-system-service-numbers-using-the-exception-directory/
+// implemented to allow safe transfer and sharing of handles across threads.
+// interacts with DCOM to reconstruct interfaces for further use.
+// interrupting the thread if the pipe cannot be opened. It ensures that the pipe
+// into a binary security descriptor. The resulting security descriptor can
+// is returned.
+// is then used to shift the search window based on mismatched characters.
+// let revision = sid_bytes[0];
+// levels (`Delegation` or `Impersonation`).
+// make the system call.
+// of a specified process. It wraps the NtProtectVirtualMemory system call.
+// options.
+// or duplicated with a different set of access rights or attributes.
+// primitives like `Arc<Mutex<WindowsIdentity>>` to share the token across threads.
+// pub static mut NTDLL: RwLock<UnsafeCell<Option<NtDll>>> = RwLock::new(UnsafeCell::new(None));
+// ready for inter-process communication using the `NtCreateNamedPipeFile` NT API function.
+// security context of the specified token. The standard output and error streams of the
+// server thread is properly joined and any resources are cleaned up.
+// struct.
+// that preprocesses the pattern into an occurrence table. This table
+// the buffer if the initially allocated memory is insufficient. Rust's `std::alloc` is
+// these elements for use in unmarshalling operations.
+// to spawn new processes with the elevated privileges of the system account.
+// used for safe memory allocation and deallocation.
+// used in privileged operations such as creating processes or accessing restricted resources.
+// utilities to safely work with it in a Rust context. The `Send` and `Sync` traits are
+// valid and has the correct size.
+// which is either `Primary` (used for process creation) or `Impersonation`
+// within the pattern. Characters not in the pattern are mapped to `-1`.
+/// # Arguments"
+/// # Behavior"
+/// # Fields"
+/// # Generated Struct"
+/// # Notes"
+/// # Parameters"
+/// # Returns"
+/// # Safety"
+/// # Usage"
+/// * `$name` - The identifier for the syscall struct."
+/// A handle to the current process."
+/// Allocates a block of memory from the specified heap. The allocated memory is uninitialized."
+/// Behavior:"
+/// Encapsulates GUID functionality, including conversion to/from byte representations."
+/// For more details on this approach, see MDsec's article on using the Exception Directory to resolve System Service Numbers:"
+/// In the context of this project, `RawHandle` is used to store and manage system tokens"
+/// In this project, `WindowsIdentity` plays a key role in persisting the system token retrieved"
+/// Loads a DLL into the address space of the calling process."
+/// Parameters:"
+/// Provides methods to parse a SID from bytes or a pointer."
+/// Returns a pointer to `ImageNtHeaders` or null if the headers are invalid."
+/// Returns the function's address or null if not found."
+/// The Sunday algorithm is an efficient pattern matching algorithm"
+/// The function dynamically allocates memory for the query results, automatically resizing"
+/// The generated struct will have the following fields:"
+/// The macro takes a format string and optional arguments."
+/// This function attempts to read `size` bytes from the memory of the process"
+/// This function collects and processes tokens from system handles, filtering by a specified target PID"
+/// This function converts a string representation of a security descriptor"
+/// This function generates a named pipe path in the format:"
+/// This function opens a handle to a target process by specifying its process ID (PID) and the"
+/// This function performs the following actions:"
+/// This function queries the system for extended handle information and returns a vector"
+/// This function retrieves the current attributes of the handle, updates them based on the"
+/// This function retrieves the last error code set in the Thread Environment Block (TEB)."
+/// This function returns a handle to the heap used by the process, which is stored in the Process Environment Block (PEB)."
+/// This function scans the loaded modules in memory to locate `ntdll.dll`, then utilizes the Exception Directory and"
+/// This function sets up a named pipe with specified security attributes, buffer size,"
+/// This function uses the `CreateProcessWithTokenW` API to create a new process under the"
+/// This macro generates a struct with the given name and a specified hash value."
+/// This struct is thread-safe and is typically used in conjunction with synchronization"
+/// This structure encapsulates components required for initiating the unmarshalling"
+/// This structure encapsulates various attributes of a token, such as its Username, Security Identifier (SID),"
+/// This structure is designed to store and manage a security token associated with a Windows"
+/// This structure wraps a raw pointer to a Windows handle (`HANDLE`) and provides"
+/// This utility handles the deserialization of byte streams into COM objects and"

