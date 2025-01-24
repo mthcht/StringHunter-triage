@@ -1,0 +1,122 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+*~s,
+*Zr.
+BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+<>9__5_0
+<PPKParser>b__5_0
+<>9__6_0
+<RDPParser>b__6_0
+<>9__6_1
+<RDPParser>b__6_1
+IEnumerable`1
+Predicate`1
+List`1
+ToInt32
+<>9__6_2
+<RDPParser>b__6_2
+<Module>
+System.IO
+mscorlib
+System.Collections.Generic
+Replace
+Enumerable
+IDisposable
+File
+Console
+get_Name
+get_FullName
+WriteLine
+System.Core
+Dispose
+CompilerGeneratedAttribute
+DebuggableAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+SessionSearcher.exe
+System.Runtime.Versioning
+ToString
+RecursiveFileSearch
+Match
+path
+get_Item
+System
+Main
+get_Extension
+System.Reflection
+DirectoryNotFoundException
+UnauthorizedAccessException
+FileInfo
+DriveInfo
+FileSystemInfo
+DirectoryInfo
+Group
+System.Linq
+Char
+SessionSearcher
+PPKParser
+RDPParser
+GetEnumerator
+.ctor
+.cctor
+System.Diagnostics
+System.Runtime.CompilerServices
+DebuggingModes
+GetDirectories
+GetFiles
+ReadAllLines
+GetLogicalDrives
+Equals
+System.Text.RegularExpressions
+get_Success
+Concat
+Object
+Split
+Environment
+get_Current
+get_Count
+root
+Convert
+sdtidList
+ppkList
+ToList
+rdpList
+MoveNext
+FindIndex
+Regex
+get_IsReady
+get_RootDirectory
+Empty
+WrapNonExceptionThrows
+SessionSearcher
+${AuthorCopyright}
+.NETFramework,Version=v4.0
+FrameworkDisplayName
+.NET Framework 4
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

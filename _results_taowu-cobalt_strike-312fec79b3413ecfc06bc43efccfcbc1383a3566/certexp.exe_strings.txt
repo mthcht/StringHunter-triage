@@ -1,0 +1,96 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+X509Certificate2
+<Module>
+System.IO
+mscorlib
+Replace
+Console
+GetRandomFileName
+StoreName
+WriteLine
+X509ContentType
+X509Store
+store
+X509Certificate
+GuidAttribute
+DebuggableAttribute
+ComVisibleAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+AssemblyFileVersionAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+certexp.exe
+System.Runtime.Versioning
+ToBase64String
+Path
+Program
+System
+AsymmetricAlgorithm
+Open
+Main
+StoreLocation
+System.Reflection
+X509Certificate2Collection
+certexp
+X509Certificate2Enumerator
+GetEnumerator
+.ctor
+System.Diagnostics
+System.Runtime.InteropServices
+System.Runtime.CompilerServices
+DebuggingModes
+System.Security.Cryptography.X509Certificates
+get_Certificates
+OpenFlags
+args
+pass
+Concat
+Object
+get_Subject
+get_Current
+get_Thumbprint
+Convert
+Export
+try_export
+MoveNext
+get_PrivateKey
+System.Security.Cryptography
+WrapNonExceptionThrows
+certexp
+Certificate Export Utility
+mubix
+Copyright 
+  2019
+$e0f15dd4-34a2-4a61-8ed8-709f581799a8
+1.0.0.0
+.NETFramework,Version=v4.0
+FrameworkDisplayName
+.NET Framework 4
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

@@ -1,0 +1,6 @@
+ --host HOST [--port PORT] [--mode MODE] [--driver DRIVER ] [--instal DRIVER_PATH_ON_TARGET] [--label LABEL_FOR_MEMORY_DUMP]``` on the attacking machine
+ --mode dump --vmem /tmp/Win10-Snapshot1.vmem --label credential-guard-test```
+ --recurse-submodules https://github.com/FSecureLABS/physmem2profit.git`
+" --mode dump with --vmem switch"")"
+" --vmem specified but file %s does not exist"" % (args.vmem))"
+" --vmem switch"")"

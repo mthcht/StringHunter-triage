@@ -1,0 +1,4 @@
+ -->
+ --chrome-dir /path/to/chrome/config
+" --chrome-dir) CHROME_DIR=""$2""; shift ;;"
+" --chrome-dir\n\nTo find your Chrome config directory:\n1. Open Chrome/Chromium\n2. Go to chrome://version\n3. Look for 'Profile Path'\n4. Use the parent directory of that path\n\nExample:\nIf Profile Path is '/home/user/.config/google-chrome/Default'\nUse: --chrome-dir '/home/user/.config/google-chrome'"""

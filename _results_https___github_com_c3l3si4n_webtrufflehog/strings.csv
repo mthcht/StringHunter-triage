@@ -1,0 +1,596 @@
+    
+      
+        
+            
+                
+                        'findings': findings
+                    'url': message['url']
+                    findings = result_cache[content_hash]
+                    os.rmdir(temp_dir)
+                    result_cache[content_hash] = findings
+                    result_queue.put({
+                    })
+                break
+                content_hash = get_content_hash(content)
+                continue
+                else:
+                if content_hash in result_cache:
+                if findings:
+                if temp_dir and os.path.exists(temp_dir):
+                os.remove(temp_file)
+                send_message({'status': url_queue.qsize()})
+                url_cache.add(url_hash)
+                url_queue.put({
+                url_queue.task_done()
+                })
+            content = download_url(url)
+            except Exception as e:
+            f.write(content)
+            if 'status' in message:
+            if 'url' in message:
+            if content:
+            if job is None:  
+            if not message:
+            if os.path.exists(temp_file):
+            if result is None:  
+            if url_hash in url_cache:
+            job = url_queue.get()
+            job_id = job['id']
+            message = read_message()
+            result = result_queue.get()
+            result_queue.task_done()
+            return None
+            send_message(result)
+            temp_dir = tempfile.mkdtemp()
+            text=True
+            try:
+            url = job['url']
+            url_hash = get_url_hash(url)
+            url_queue.put(None)
+            url_queue.task_done()
+            w.join()
+          contentType.includes('application/')) {
+          contentType.includes('script/') 
+          type: details.type
+        )
+        [
+        connectNativeHost()
+        encoded_content = json.dumps(message).encode('utf-8')
+        except Exception as e:
+        f.write(json.dumps(result) 
+        finally:
+        findings = [json.loads(line) for line in result.stdout.splitlines() if line.strip()]
+        findings.push(...value)
+        for _ in workers:
+        for w in workers:
+        h.name.toLowerCase() === 'content-type'
+        if not raw_length:
+        message = sys.stdin.buffer.read(message_length).decode('utf-8')
+        port.postMessage({
+        raw_length = sys.stdin.buffer.read(4)
+        response.raise_for_status()
+        result = subprocess.run(
+        result_queue.put(None)
+        return None
+        return []
+        return findings
+        return json.loads(message)
+        return response.text
+        sender.join()
+        sys.stdout.buffer.flush()
+        sys.stdout.buffer.write(encoded_content)
+        t = threading.Thread(target=worker)
+        t.daemon = True
+        t.start()
+        temp_dir = None
+        totalFindings 
+        try:
+        url: response.url
+        while True:
+        workers.append(t)
+        })
+      )
+      // Add timestamp and URL to each finding
+      // Filter out binary formats and images
+      // Store queue size in storage
+      0% { opacity: 1
+      100% { opacity: 1
+      50% { opacity: 0.5
+      </div>
+      align-items: center
+      animation: pulse 1s infinite
+      background-color: 
+      background: 
+      background: white
+      border-bottom: 2px solid 
+      border-left: 4px solid 
+      border-radius: 4px
+      border-radius: 50%
+      border-radius: 8px
+      chrome.storage.local.set({
+      chrome.storage.local.set({ queueSize: response.status })
+      clearInterval(statusCheckInterval)
+      color: 
+      const contentType = details.responseHeaders
+      const findings = response.findings.map(finding => ({
+      const noFindings = document.createElement('div')
+      display: flex
+      display: inline-block
+      findingsList.appendChild(card)
+      findingsList.appendChild(noFindings)
+      font-family: monospace
+      font-size: 12px
+      font-size: 14px
+      font-size: 20px
+      font-weight: 600
+      font-weight: bold
+      gap: 16px
+      gap: 8px
+      height: 8px
+      if (!port) {
+      if (contentType.includes('text/')
+      if (key.startsWith('findings_')) {
+      justify-content: space-between
+      margin-bottom: 12px
+      margin-bottom: 16px
+      margin-bottom: 8px
+      margin-top: 8px
+      margin: 0
+      margin: 8px 0
+      max-height: 400px
+      noFindings.className = 'no-findings'
+      noFindings.textContent = 'No secrets found yet'
+      overflow-y: auto
+      padding-bottom: 8px
+      padding: 12px
+      padding: 16px
+      padding: 32px 16px
+      padding: 4px 8px
+      padding: 8px
+      port.postMessage({ status: 'check' })
+      return
+      text-align: center
+      updateQueueStatus(items.queueSize)
+      width: 400px
+      width: 8px
+      word-break: break-all
+      }
+      })
+      }))
+    (details) => {
+    .finding-card {
+    .finding-detail {
+    .finding-type {
+    .finding-url {
+    .findings-list {
+    .header {
+    .header-stats {
+    .no-findings {
+    .processing-indicator {
+    .queue-status {
+    .queue-status.active .processing-indicator {
+    .queue-status.active {
+    .stats {
+    .title {
+    /
+    // Collect all findings
+    // Create cards for each finding
+    // Sort findings by timestamp (newest first)
+    // Update queue status if available
+    // Update stats
+    ::-webkit-scrollbar {
+    ::-webkit-scrollbar-thumb {
+    ::-webkit-scrollbar-thumb:hover {
+    ::-webkit-scrollbar-track {
+    <!-- Findings will be inserted here -->
+    </div>
+    @keyframes pulse {
+    body {
+    card.appendChild(rawDetail)
+    case $1 in
+    const findings = []
+    const findingsList = document.getElementById('findingsList')
+    const rawDetail = document.createElement('div')
+    document.getElementById('findingsCount').textContent = 
+    esac
+    except Exception as e:
+    except Exception:
+    exit 1
+    fi
+    finally:
+    findings.forEach(finding => {
+    findingsList.innerHTML = ''
+    for _ in range(num_workers):
+    if ('queueSize' in items) {
+    if (findings.length === 0) {
+    if (port) {
+    if (response.findings 
+    if (statusCheckInterval) {
+    if not content:
+    let totalFindings = 0
+    main()
+    num_workers = 10
+    port = null
+    queueStatus.classList.add('active')
+    queueStatus.classList.remove('active')
+    rawDetail.className = 'finding-detail'
+    return hashlib.md5(content.encode()).hexdigest()
+    return hashlib.md5(url.encode()).hexdigest()
+    sender = threading.Thread(target=result_sender)
+    sender.daemon = True
+    sender.start()
+    shift
+    try:
+    verificationElement.style.backgroundColor = '
+    verificationElement.style.color = '
+    verificationElement.textContent = 'Unverified'
+    verificationElement.textContent = 'Verified'
+    while True:
+    workers = []
+    }
+    } else if (response.status !== undefined) {
+    })
+  // Start periodic status checks
+  </div>
+  </style>
+  <style>
+  <title>TruffleHog</title>
+  card.appendChild(typeElement)
+  card.appendChild(urlElement)
+  card.appendChild(verificationElement)
+  card.className = 'finding-card'
+  const card = document.createElement('div')
+  const queueSizeElement = document.getElementById('queueSize')
+  const queueStatus = document.getElementById('queueStatus')
+  const typeElement = document.createElement('div')
+  const urlElement = document.createElement('div')
+  const verificationElement = document.createElement('div')
+  if (finding.Raw) {
+  if (finding.Verified) {
+  if (queueSize > 0) {
+  if (str.length <= length) return str
+  port = chrome.runtime.connectNative('com.webtrufflehog')
+  port.onDisconnect.addListener(() => {
+  port.onMessage.addListener((response) => {
+  queueSizeElement.textContent = 
+  return card
+  return new Date(timestamp).toLocaleString()
+  statusCheckInterval = setInterval(() => {
+  typeElement.className = 'finding-type'
+  typeElement.textContent = finding.DetectorName 
+  urlElement.className = 'finding-url'
+  urlElement.textContent = url
+  verificationElement.style.borderRadius = '4px'
+  verificationElement.style.display = 'inline-block'
+  verificationElement.style.fontSize = '12px'
+  verificationElement.style.marginLeft = '8px'
+  verificationElement.style.marginTop = '8px'
+  verificationElement.style.padding = '4px 8px'
+  } else {
+  })
+ '...'
+ 'Unknown Type'
+ // Check every 2 seconds
+ Check URL cache
+ Check if chrome directory is provided
+ Check if trufflehog is installed
+ Check result cache
+ Clean shutdown
+ Colors for output
+ Copy files to installation directory
+ Create installation directories
+ Create results directory and file with correct permissions
+ Credits
+ Default paths
+ Exit on any error
+ Function to print error and exit
+ Function to print success
+ Function to print warning
+ Getting Started
+ Global queues and caches
+ Helper function to read messages from the extension
+ Helper function to send messages to the extension
+ How it works
+ Installation
+ Installation complete
+ Key Features
+ Make native host executable
+ No Color
+ Parse command line arguments
+ Poison pill
+ Prerequisites
+ Scrollbar styling 
+ Set correct permissions
+ Set installation directory for native messaging host
+ Start result sender thread
+ Start worker threads
+ Store URL hashes
+ Store content hash -> findings mapping
+ Troubleshooting
+ Update com.webtrufflehog.json with correct path
+ Usage
+ Verify installation
+ Warning
+ WebTruffleHog
+ check if native messaging hosts directory exists
+ make sure script is run as root
+ response.findings.length > 0) {
+ return number of queue items
+ save all stderr to a file
+ sed 's/
+ shift 
+ then
+!/bin/bash
+!/usr/bin/env python3
+![Extension Popup](popup.png)
+![WebTruffleHog Logo](icons/icon128.png)
+"                        'id': job_id,"
+"                        'url': url,"
+"                    'id': message.get('id'),"
+"                    findings = scan_with_trufflehog(content, temp_dir)"
+"                print(f""Error removing temp dir: {str(e)}"", file=sys.stderr)"
+"            ['trufflehog', 'filesystem', temp_file, '--json'],"
+"            append_result(result, '/tmp/results.json')"
+"            capture_output=True,"
+"            print(f""Error removing temp file: {str(e)}"", file=sys.stderr)"
+"            print(f""Result sender error: {str(e)}"", file=sys.stderr)"
+"            print(f""Worker error: {str(e)}"", file=sys.stderr)"
+"          id: details.requestId,"
+"          url: details.url,"
+"        --chrome-dir) CHROME_DIR=""$2"""
+"        ...finding,"
+"        <span class=""processing-indicator""></span>"
+"        <span id=""queueSize"">Queue: 0</span>"
+"        error_exit ""Native messaging hosts directory does not exist. Please create it first."""
+"        message_length = struct.unpack('I', raw_length)[0]"
+"        print(f""Error downloading {url}: {str(e)}"", file=sys.stderr)"
+"        print(f""Error scanning with trufflehog: {str(e)}"", file=sys.stderr)"
+"        print(f""Error sending message: {str(e)}"", file=sys.stderr)"
+"        response = requests.get(url, timeout=30)"
+"        sys.stdout.buffer.write(struct.pack('I', len(encoded_content)))"
+"        timestamp: Date.now(),"
+"        with open(temp_file, 'w') as f:"
+"      ""128"": ""icons/icon128.png"""
+"      ""48"": ""icons/icon48.png"","
+"      <div class=""queue-status"" id=""queueStatus"">"
+"      <span class=""stats"" id=""findingsCount""></span>"
+"      box-shadow: 0 2px 4px rgba(0,0,0,0.1)"
+"      console.log('Secrets found:', findings)"
+"      const card = createFindingCard(finding, finding.url)"
+"      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif"
+"    ""128"": ""icons/icon128.png"""
+"    ""48"": ""icons/icon48.png"","
+"    ""<all_urls>"""
+"    ""chrome-extension://akoofbljmjeodfmdpjndmmnifglppjdi/"""
+"    ""default_icon"": {"
+"    ""default_popup"": ""popup.html"","
+"    ""nativeMessaging"", "
+"    ""service_worker"": ""background.js"""
+"    ""storage"","
+"    ""tabs"""
+"    ""webRequest"","
+"    <div class=""header-stats"">"
+"    <h1 class=""title"">WebTruffleHog Results</h1>"
+"    CHROME_DIR=$(dirname ""$CHROME_DIR"")"
+"    Object.entries(items).forEach(([key, value]) => {"
+"    [""responseHeaders""]"
+"    console.error('Disconnected from native host:', chrome.runtime.lastError)"
+"    echo -e ""${GREEN}$1${NC}"""
+"    echo -e ""${RED}Error: $1${NC}"" >"
+"    echo -e ""${YELLOW}Warning: $1${NC}"""
+"    error_exit ""Native host is not executable"""
+"    error_exit ""Native messaging host configuration not found"""
+"    error_exit ""Native messaging hosts directory does not exist. Trying parent directory..."""
+"    error_exit ""Please provide your Chrome/Chromium config directory using --chrome-dir"
+"    error_exit ""Please run this script as root"""
+"    error_exit ""trufflehog is not installed. Please install it first and add it to your system PATH."""
+"    findings.sort((a, b) => b.timestamp - a.timestamp)"
+"    if [ ! -d ""$CHROME_DIR/NativeMessagingHosts"" ]"
+"    rawDetail.textContent = truncateString(finding.Raw, 200)"
+"    temp_file = os.path.join(temp_dir, 'scan_target.txt')"
+"    with open(filename, 'a') as f:"
+"    { urls: [""<all_urls>""] },"
+"    },"
+"  ""action"": {"
+"  ""allowed_origins"": ["
+"  ""background"": {"
+"  ""description"": ""Native messaging host for WebTruffleHog"","
+"  ""description"": ""Scans web traffic for exposed secrets using TruffleHog"","
+"  ""host_permissions"": ["
+"  ""icons"": {"
+"  ""manifest_version"": 3,"
+"  ""name"": ""WebTruffleHog"","
+"  ""name"": ""com.webtrufflehog"","
+"  ""path"": ""REPLACE_ME"","
+"  ""permissions"": ["
+"  ""type"": ""stdio"","
+"  ""version"": ""1.0"","
+"  <div class=""findings-list"" id=""findingsList"">"
+"  <div class=""header"">"
+"  <script src=""popup.js""></script>"
+"  ],"
+"  chrome.storage.local.get(null, (items) => {"
+"  return str.substring(0, length) "
+"  }, 2000)"
+"  },"
+" error_exit ""Failed to copy background.js"""
+" error_exit ""Failed to copy icons"""
+" error_exit ""Failed to copy manifest.json"""
+" error_exit ""Failed to copy native_host.py"""
+" error_exit ""Failed to copy popup.html"""
+" error_exit ""Failed to copy popup.js"""
+" error_exit ""Failed to create installation directory"""
+" error_exit ""Failed to create native messaging host configuration"""
+" error_exit ""Failed to create native messaging hosts directory"""
+" error_exit ""Failed to create results directory"""
+" error_exit ""Failed to create results file"""
+" error_exit ""Failed to make native_host.py executable"""
+" error_exit ""Failed to set permissions on native messaging host configuration"""
+" error_exit ""Failed to set permissions on results file"""
+""" -gt 0 ]]"
+") error_exit ""Unknown parameter: $1"" "
+"- If the tool is not working, you can check the logs in /opt/webtrufflehog/webtrufflehog.log"
+"- If you want to remove the tool, you can disable the extension in chrome://extensions and remove the native messaging host in your chrome directory."
+"/.config/google-chrome on Linux systems), which establishes the bridge between the extension and the TruffleHog scanner process. "
+"/native_host.py/g"" com.webtrufflehog.json > ""$INSTALL_NMH_DIR/com.webtrufflehog.json"" "
+"5. Enable ""Developer mode"""
+"6. Click ""Load unpacked"""
+"7. Select the ""/opt/webtrufflehog"" directory and load the extension"
+": UI showing detected secrets with found URL, secret contents, and verification status"
+"CHROME_DIR="""""
+"DEFAULT_INSTALL_DIR=""/opt/webtrufflehog"""
+"INSTALL_NMH_DIR=""$CHROME_DIR/NativeMessagingHosts"""
+"The native host functions as a wrapper for the TruffleHog scanner, executing in an isolated process for security and stability. When receiving a URL, it initiates a fresh HTTP request to fetch and analyze the content, as direct access to Chrome's cache or local storage is architecturally restricted. While this approach ensures accurate scanning, it introduces limitations for authenticated sessions and dynamically generated content."
+"WebTruffleHog is a Chrome/Chromium extension that scans web traffic in real-time for exposed secrets using TruffleHog. It helps security professionals, bug bounty hunters and developers identify potential security risks by detecting sensitive information like API keys, passwords, and tokens that might be accidentally exposed in web responses."
+"WebTruffleHog leverages Chrome's webRequest API, specifically the onCompleted event listener, to analyze completed HTTP requests. Upon event triggering, the extension establishes communication with a native host process through Chrome's Native Messaging protocol."
+"While I do this, I don't advise using this tool on your main browser. It probably takes quite a bit of performance overhead and could lag your browser, specially in high-traffic environments."
+"chmod 644 ""$INSTALL_NMH_DIR/com.webtrufflehog.json"" "
+"cp -r icons ""$DEFAULT_INSTALL_DIR/"" "
+"cp background.js ""$DEFAULT_INSTALL_DIR/"" "
+"cp manifest.json ""$DEFAULT_INSTALL_DIR/"" "
+"cp native_host.py ""$DEFAULT_INSTALL_DIR/"" "
+"cp popup.html ""$DEFAULT_INSTALL_DIR/"" "
+"cp popup.js ""$DEFAULT_INSTALL_DIR/"" "
+"def append_result(result,filename):"
+"def scan_with_trufflehog(content, temp_dir):"
+"document.addEventListener('DOMContentLoaded', updateFindings)"
+"echo ""- Click 'Load unpacked' and select: $DEFAULT_INSTALL_DIR"""
+"echo ""- Enable Developer mode"""
+"echo ""- Load the extension in Chrome/Chromium by going to chrome://extensions/"""
+"echo ""- Main files installed to: $DEFAULT_INSTALL_DIR"""
+"echo ""- Native messaging host configuration: $INSTALL_NMH_DIR/com.webtrufflehog.json"""
+"echo ""- Results file location: /tmp/results.json"""
+"echo ""Configuring native messaging host..."""
+"echo ""Copying files to installation directory..."""
+"echo ""Creating installation directories..."""
+"echo ""Installation details:"""
+"echo ""Usage:"""
+"echo ""Verifying installation..."""
+"function createFindingCard(finding, url) {"
+"function truncateString(str, length) {"
+"if [ ! -d ""$CHROME_DIR/NativeMessagingHosts"" ]"
+"if [ ! -f ""$INSTALL_NMH_DIR/com.webtrufflehog.json"" ]"
+"if [ ! -x ""$DEFAULT_INSTALL_DIR/native_host.py"" ]"
+"if [ ""$EUID"" -ne 0 ]"
+"if [ -z ""$CHROME_DIR"" ]"
+"if __name__ == ""__main__"":"
+"mkdir -p ""$DEFAULT_INSTALL_DIR"" "
+"mkdir -p ""$INSTALL_NMH_DIR"" "
+"nUse: --chrome-dir '/home/user/.config/google-chrome'"""
+"sed ""s/REPLACE_ME/$(echo -n $DEFAULT_INSTALL_DIR "
+"success ""Installation completed successfully!"""
+"sys.stderr = open('/tmp/webtrufflehog.log', 'w')"
+"warning ""Note: You may need to restart Chrome for the changes to take effect"""
+"while [[ ""$"
+"x ""$DEFAULT_INSTALL_DIR/native_host.py"" "
+${totalFindings} secrets found
+- Chrome or Chromium-based browser
+- Linux-based operating system
+- Python 3.x
+- Results are saved in /opt/webtrufflehog/results.json
+- TruffleHog (must be available in system PATH)
+- [TruffleHog](https://github.com/trufflesecurity/trufflehog) and Dylan from TruffleSec
+.find(h => 
+.value 
+// Listen for changes in storage
+// Listen for web requests
+// Update findings when popup opens
+//g')
+006400'
+033[0
+033[0m' 
+033[1
+1. Clone this repository: 
+2. Run the setup script pointing to your Chrome/Chromium config directory. (You can find that in chrome://version)
+3. Reload your browser
+31m'
+32m'
+33m'
+4. Open chrome://extensions
+696969'
+8. Now you should see the extension icon in the toolbar. The tool works passively and is always scanning all visited URLs on your browser. 
+90EE90'
+995200
+: Automatically scans all web traffic for exposed secrets as you browse
+: Leverages the secret detection capabilities of TruffleHog
+: Queue system and URL caching to handle large volumes of traffic without lagging your browser
+<!DOCTYPE html>
+</body>
+</head>
+</html> 
+<body>
+<head>
+<html>
+= value.length
+> /dev/null
+D3D3D3'
+FF8C1A
+FFB366
+FFE0B3
+FFF9F2
+GREEN='
+High Performance
+NC='
+Native TruffleHog Integration
+Queue: ${queueSize}
+RED='
+Real-time Scanning
+The implementation requires a Native Messaging Host manifest in Chrome's configuration directory (typically 
+The tool works passively and is always scanning all visited URLs on your browser. 
+User-friendly Interface
+YELLOW='
+You can view the results in the extension popup by clicking the icon in the toolbar.
+]: findings
+bash
+chmod 
+chmod 644 /tmp/results.json 
+chrome.storage.onChanged.addListener(updateFindings)
+chrome.webRequest.onCompleted.addListener(
+def download_url(url):
+def get_content_hash(content):
+def get_url_hash(url):
+def main():
+def read_message():
+def result_sender():
+def send_message(message):
+def worker():
+done
+echo
+error_exit() {
+findings_${response.id}
+from urllib.parse import urlparse
+function connectNativeHost() {
+function formatDate(timestamp) {
+function updateFindings() {
+function updateQueueStatus(queueSize) {
+git clone https://github.com/c3l3si4n/webtrufflehog.git
+if ! command -v trufflehog 
+import hashlib
+import json
+import os
+import queue
+import requests
+import struct
+import subprocess
+import sys
+import tempfile
+import threading
+let port = null
+let statusCheckInterval = null
+mkdir -p /tmp/webtrufflehog 
+n1. Open Chrome/Chromium
+n2. Go to chrome://version
+n3. Look for 'Profile Path'
+n4. Use the parent directory of that path
+nExample:
+nIf Profile Path is '/home/user/.config/google-chrome/Default'
+nTo find your Chrome config directory:
+result_cache = {} 
+result_queue = queue.Queue()
+set -e  
+success() {
+sudo ./setup.sh --chrome-dir /path/to/chrome/config
+touch /tmp/results.json 
+url_cache = set() 
+url_queue = queue.Queue()
+warning() {

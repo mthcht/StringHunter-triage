@@ -1,0 +1,457 @@
+!This program cannot be run in DOS mode.
+Rich
+.text
+`.rdata
+.data
+L$dQ
+D$(D
+t$8f
+t$\f
+PVVVj
+VVQV
+VVVVVj
+L$ QR
+D$$PQ
+mt*j
+L$$QR
+u#PPPPPj
+][_3
+D$4Vh
+\$,R
+u9SSSSSj
+PSVh
+L$$Q
+uDSSSSSj
+StWHtBHt*SSSSj
+~xUV;
+t$$t	
+D$(P
+t$09
+_^@]
+	PQh
+;D$$}
+_^][H
+_^][
+t$(t!
+QRhL
+;l$$uM9
+PRh$
+QRPh
+QRPf
+tmSh
+tFW3
+Vt#h
+PVh`
+PWh(
+L$ Q
+j@PQ
+u`UW
+j@RP
+BH_^]
+_^f3
+SVW3
+_^[]
+SVWf
+A< V
+ @Iu
+Q=tA
+.BENu
+^[]_Y
+$SUVW
+D$ 3
+D$(u
+tsf9=d
+D$8RP
+T$,Rj
+L$$Q
+|$8QW
+T$ R
+WUh,
+tJ@I
+T$8j
+L$8PQ
+T$8R
+_^]3
+D$8P
+_^]3
+D$ Ph
+D$ <
+u%j,
+T$$9
+T$ Q
+QRhh
+j-P3
+L$$Q
+f9|$(
+<8=u
+~'WP
+SVW3
+u,h,k@
+C =02CVu
+B 02CV
+B$Iu
+^_[3
+8MZu
+Y_^[
+VC20XC00U
+SVWU
+tYVU
+t?xH
+]_^[
+uiSj
+@_^[
+j?^;
+QQSV3
+VVVVj
+tLVV
+uMSW
+HHt`HHt\
+RPWS
+WVj0
+Yu+Vj
+YF;5
+SVWUj
+]_^[
+t.;t$$t(
+<Yv"
+0<=t
+>=Yt
+t7VP
+Y]_^[
+8"u&
+QQSVW3
+SUVW
+tyf9
+SSS+
+@PVSS
+t#SSUP
+t$$VSS
+_^][YY
+VWumhP
+t|h4
+j@h`
+PVPWW
+9} u	
+M 9}
+~+9]
+~>9]
+Wj@3
+ t6S
+    
+tSj=V
+uU9]
+Y|F9
+YYtC
+YYt8
+v	N+D$
+VWsr
+SUVW
+VWsR
+VWsU
+wHVSU
+FVSj
+^_][
+SVWse
+GWh\
+6PWS
+t WW
+WWWWVSW
+tCVj
+t2WWVPVSW
+LSVWj
+u8SS3
+FVh\
+9] u
+E SS
+t-9]
+t!SS9]
+9] u
+SUVW
+_^][
+VtTf
+t3;u
+/t(;
+s"95
+@}>j
+Failed to execute shell, error = %s
+SessionReadShellThreadFn exitted, error = %s
+exit
+Failed to execute shell
+Failed to create shell stdin pipe, error = %s
+Failed to create shell stdout pipe, error = %s
+WaitForMultipleObjects error: %s
+Failed to create ReadShell session thread, error = %s
+POSIXLY_CORRECT
+%s: invalid option -- %c
+%s: illegal option -- %c
+%s: option requires an argument -- %c
+%s: unrecognized option `%c%s'
+%s: unrecognized option `--%s'
+%s: option `%s' requires an argument
+%s: option `%c%s' doesn't allow an argument
+%s: option `--%s' doesn't allow an argument
+%s: option `%s' is ambiguous
+unknown socket error
+NO_DATA        
+NO_RECOVERY    
+TRY_AGAIN      
+HOST_NOT_FOUND 
+DISCON        
+NOTINITIALISED 
+VERNOTSUPPORTED
+SYSNOTREADY    
+REMOTE        
+STALE         
+DQUOT         
+USERS         
+PROCLIM       
+NOTEMPTY      
+HOSTUNREACH   
+HOSTDOWN      
+NAMETOOLONG   
+LOOP          
+connection refused
+TIMEDOUT      
+TOOMANYREFS   
+SHUTDOWN      
+NOTCONN       
+ISCONN        
+NOBUFS        
+CONNRESET     
+CONNABORTED   
+NETRESET      
+NETUNREACH    
+NETDOWN       
+ADDRNOTAVAIL  
+ADDRINUSE     
+AFNOSUPPORT   
+PFNOSUPPORT   
+OPNOTSUPP     
+SOCKTNOSUPPORT
+PROTONOSUPPORT
+NOPROTOOPT    
+PROTOTYPE     
+MSGSIZE       
+DESTADDRREQ   
+NOTSOCK       
+ALREADY       
+INPROGRESS    
+WOULDBLOCK    
+MFILE         
+INVAL         
+FAULT         
+ACCES         
+BADF          
+INTR          
+: %s
+Hmalloc %d failed
+DNS fwd/rev mismatch: %s != %s
+Warning: forward host lookup failed for %s: h_errno %d
+%s: inverse host lookup failed: h_errno %d
+Warning: inverse host lookup failed for %s: h_errno %d
+%s: forward host lookup failed: h_errno %d
+gethostpoop fuxored
+Can't parse %s as an IP address
+Warning: port-bynum mismatch, %d != %d
+loadports: bogus values %d, %d
+loadports: no block?!
+Warning: source routing unavailable on this machine, ignoring
+Can't grab %s:%d with bind
+retrying local %s:%d
+nnetfd reuseaddr failed
+Can't get socket
+connect to [%s] from %s [%s] %d
+invalid connection to [%s] from %s [%s] %d
+post-rcv getsockname failed
+] %d ...
+listening on [
+local getsockname failed
+local listen fuxored
+UDP listen needs -p arg
+udptest first write failed?! errno %d
+ofd write err
+%8.8x 
+oprint called with no open fd?!
+too many output retries
+net timeout
+select fuxored
+Preposterous Pointers: %d, %d
+port numbers can be individual or ranges: m-n [inclusive]
+	-u		UDP mode
+	-v		verbose [use twice to be more verbose]
+	-w secs		timeout for connects and final net reads
+	-z		zero-I/O mode [used for scanning]
+	-t		answer TELNET negotiation
+	-g gateway	source-routing hop point[s], up to 8
+	-G num		source-routing pointer: 4, 8, 12, ...
+	-h		this cruft
+	-i secs		delay interval for lines sent, ports scanned
+	-l		listen mode, for inbound connects
+	-L		listen harder, re-listen on socket close
+	-n		numeric-only IP addresses, no DNS
+	-o file		hex dump of traffic
+	-p port		local port number
+	-r		randomize local and remote ports
+	-s addr		local source address
+	-e prog		inbound program to exec [dangerous!!]
+	-d		detach from console, background mode
+[v1.10 NT]
+connect to somewhere:	nc [-options] hostname port[s] [ports] ... 
+listen for inbound:	nc -l -p port [options] [hostname] [port]
+options:
+no port[s] to connect to
+no destination
+no connection
+invalid port %s
+can't open %s
+nc -h for help
+invalid wait-time %s
+too many -g hops
+invalid hop pointer %d, must be multiple of 4 <= 28
+all-A-records NIY
+wrong
+sent %d, rcvd %d
+%s [%s] %d (%s)
+%s [%s] %d (%s) open
+invalid local port %s
+invalid interval time %s
+ade:g:G:hi:lLno:p:rs:tuvw:z
+Cmd line: 
+CorExitProcess
+mscoree.dll
+Microsoft Visual C++ Runtime Library
+Program: 
+<program name unknown>
+A buffer overrun has been detected which has corrupted the program's
+internal state.  The program cannot safely continue execution and must
+now be terminated.
+Buffer overrun detected!
+A security error of unknown cause has been detected which has
+corrupted the program's internal state.  The program cannot safely
+continue execution and must now be terminated.
+Unknown security failure detected!
+ (8PX
+700WP
+`h````
+ppxxxx
+(null)
+runtime error 
+TLOSS error
+SING error
+DOMAIN error
+R6029
+- This application cannot run using the active version of the Microsoft .NET Runtime
+Please contact the application's support team for more information.
+R6028
+- unable to initialize heap
+R6027
+- not enough space for lowio initialization
+R6026
+- not enough space for stdio initialization
+R6025
+- pure virtual function call
+R6024
+- not enough space for _onexit/atexit table
+R6019
+- unable to open console device
+R6018
+- unexpected heap error
+R6017
+- unexpected multithread lock error
+R6016
+- not enough space for thread data
+This application has requested the Runtime to terminate it in an unusual way.
+Please contact the application's support team for more information.
+R6009
+- not enough space for environment
+R6008
+- not enough space for arguments
+R6002
+- floating point not loaded
+Runtime Error!
+Program: 
+GetProcessWindowStation
+GetUserObjectInformationA
+GetLastActivePopup
+GetActiveWindow
+MessageBoxA
+user32.dll
+CONIN$
+RSDS
+c:\netcat\Release\netcat.pdb
+WS2_32.dll
+GetLastError
+CloseHandle
+CreateProcessA
+DuplicateHandle
+GetCurrentProcess
+ExitThread
+Sleep
+ReadFile
+PeekNamedPipe
+WriteFile
+CreatePipe
+DisconnectNamedPipe
+TerminateProcess
+WaitForMultipleObjects
+TerminateThread
+CreateThread
+GetStdHandle
+FreeConsole
+KERNEL32.dll
+ExitProcess
+HeapFree
+HeapAlloc
+GetProcAddress
+GetModuleHandleA
+GetSystemTimeAsFileTime
+GetCommandLineA
+GetVersionExA
+QueryPerformanceCounter
+GetTickCount
+GetCurrentThreadId
+GetCurrentProcessId
+GetModuleFileNameA
+HeapDestroy
+HeapCreate
+VirtualFree
+VirtualAlloc
+HeapReAlloc
+WideCharToMultiByte
+SetHandleCount
+GetFileType
+GetStartupInfoA
+FlushFileBuffers
+RtlUnwind
+UnhandledExceptionFilter
+FreeEnvironmentStringsA
+GetEnvironmentStrings
+FreeEnvironmentStringsW
+GetEnvironmentStringsW
+LoadLibraryA
+InterlockedExchange
+VirtualQuery
+CompareStringA
+MultiByteToWideChar
+GetCPInfo
+CompareStringW
+GetACP
+GetOEMCP
+SetEnvironmentVariableA
+SetFilePointer
+SetStdHandle
+HeapSize
+GetStringTypeA
+GetStringTypeW
+GetLocaleInfoA
+VirtualProtect
+GetSystemInfo
+LCMapStringA
+LCMapStringW
+PeekConsoleInputA
+GetNumberOfConsoleInputEvents
+CreateFileA
+SetEndOfFile
+(UNKNOWN)
+ sent %d, rcvd %d
+0123456789abcdef  

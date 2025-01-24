@@ -1,0 +1,6 @@
+"e:\n    NativeBypassCredGuard.exe <OPTION> <REMAPNTDLL>\n\n    OPTION:\n        - 'check': Read current values.\n        - 'patch': Write new values.\n\n    REMAPNTDLL:\n        - true: Remap the ntdll library.\n        - false (or omitted): Do not remap the ntdll library.\n\n    Examples:\n        1. NativeBypassCredGuard.exe check\n           - Reads current values without remapping the ntdll library.\n        2. NativeBypassCredGuard.exe patch true\n           - Writes new values and remaps the ntdll library."");"
+"e:\n    NativeBypassCredGuard.exe <OPTION> <REMAPNTDLL>\n\n    OPTION:\n        - 'check': Read current values.\n        - 'patch': Write new values.\n\n    REMAPNTDLL:\n        - true: Remap the ntdll library.\n        - false (or omitted): Do not remap the ntdll library.\n\n    Examples:\n        1. NativeBypassCredGuard.exe check\n           - Reads current values without remapping the ntdll library.\n        2. NativeBypassCredGuard.exe patch true\n           - Writes new values and remaps the ntdll library.\n"");"
+"e:\t\t%lld\n"", (intptr_t)fileHandle);"
+"e:\t\t%lld\n"", (long long)lsassHandle);"
+"e:\t\t{fileHandle}"");"
+"e:\t\t{lsassHandle}"");"

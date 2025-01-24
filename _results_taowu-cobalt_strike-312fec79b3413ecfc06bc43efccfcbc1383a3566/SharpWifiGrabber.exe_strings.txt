@@ -1,0 +1,139 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+jXs 
+jX( 
+ZjX( 
+BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+Int32
+ReadInt64
+ToInt64
+<Module>
+WLAN_INTERFACE_INFO
+WLAN_PROFILE_INFO
+WLAN_INTERFACE_INFO_LIST
+WLAN_PROFILE_INFO_LIST
+value__
+mscorlib
+pReserved
+InterfaceGuid
+interfaceGuid
+XmlNode
+get_Message
+IDisposable
+RuntimeTypeHandle
+WlanCloseHandle
+GetTypeFromHandle
+WlanOpenHandle
+hClientHandle
+clientHandle
+WlanGetProfile
+Console
+strProfileName
+profileName
+WriteLine
+ValueType
+PtrToStructure
+Dispose
+GuidAttribute
+DebuggableAttribute
+ComVisibleAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+AssemblyFileVersionAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+FlagsAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+SharpWifiGrabber.exe
+SizeOf
+System.Runtime.Versioning
+String
+Wlanapi
+Marshal
+Wlanapi.dll
+wlanapi.dll
+System.Xml
+LoadXml
+profileXml
+Program
+System
+Enum
+Main
+pdwNegotiatedVersion
+dwClientVersion
+System.Reflection
+Exception
+strInterfaceDescription
+InterfaceInfo
+ProfileInfo
+Zero
+SharpWifiGrabber
+Banner
+AllUser
+IEnumerator
+GetEnumerator
+.ctor
+IntPtr
+System.Diagnostics
+WlanEnumInterfaces
+System.Runtime.InteropServices
+System.Runtime.CompilerServices
+DebuggingModes
+SelectNodes
+ProfileFLags
+WlanProfileFlags
+flags
+args
+dwNumberOfItems
+dwNumberofItems
+System.Collections
+pdwGrantedAccess
+Concat
+Object
+XmlDocument
+get_Current
+ppInterfaceList
+XmlNodeList
+ppProfileList
+WlanGetProfileList
+profileList
+pList
+MoveNext
+get_InnerText
+dwIndex
+GroupPolicy
+WrapNonExceptionThrows
+SharpWifiGrabber
+Copyright 
+  2020
+$c0997698-2b73-4982-b25b-d0578d1323c2
+1.0.0.0
+.NETFramework,Version=v4.0
+FrameworkDisplayName
+.NET Framework 4
+RSDS
+C:\Users\XuanJian\Desktop\SharpWifiGrabber-master\SharpWifiGrabber-master\SharpWifiGrabber\obj\Release\SharpWifiGrabber.pdb
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

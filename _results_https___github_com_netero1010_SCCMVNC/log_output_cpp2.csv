@@ -1,0 +1,7 @@
+"('Error(""A management exception has occurred: "" + ex.Message)', 'Error')"
+"('Error(""A management exception occurred: "" + ex.Message)', 'Error')"
+"('Error(""An unexpected error has occurred: "" + e.Message)', 'Error')"
+"('Error(""An unexpected error occurred: "" + e.Message)', 'Error')"
+"('Error(""The specified WMI namespace is not valid."")', 'Error')"
+"('Error(""Unknown action."")', 'Error')"
+"('Error(""You do not have permission to access the remote computer."")', 'Error')"

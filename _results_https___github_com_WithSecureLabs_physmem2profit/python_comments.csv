@@ -1,0 +1,182 @@
+
+            # Add the stuff from extra anyway
+            # Attempt to read these anyway. Rekall will fill with zeros if the read fails
+            # We don't want to cache these
+            #data = b'\x00'*size
+            #self.gathered.append(self.cache[pagenum])
+            #size = os.stat(self.root).st_size
+        # Add data to cache"
+        # Build header, set offset to directory"
+        # Caching"
+        # Connect to server and send data
+        # Is there anything to read from network?
+        # Not implemented
+        # Receive map data from the server"
+        # Send command to unload the driver
+        # Send exit command"
+        # Set offsets, build streams"
+        # TODO: Figure out how to get the state..."
+        # TODO: Some of the constants are specific to building Mimikatz-compatible minidumps"
+        # TODO: Somehow identify MEM_IMAGE"
+        # What parts of the module are available?"
+        # Write the config to JSON file"
+        # self.queued_offset is guaranteed to be a multiple of self.PAGE_SIZE
+        # send first order to install driver."
+        # send map order.
+        #print(""Items in gathered before: %u"" % (len(self.gathered)))"
+        #print(""Reading %u bytes from 0x%x"" % (length, offset))"
+        #print(""Sent %u bytes. Receiving"" % (sent))"
+        #print(config)
+    #
+    #  Trigers fetching queued data.
+    # @exceptions Exception if server was unable to deliver basic data.
+    # @param BaseRva addres of data
+    # @param data dump
+    # @param data existing minidump
+    # @param driver driver class used by server to expose memory.
+    # @param extra data from Secure World
+    # @param filepath path to memory dump.
+    # @param installArguments additional data defined by driver class.
+    # @param m64_list memory64 list
+    # @param mi_list memory info list
+    # @param module_list module list
+    # @param mountpoint path to file with mounted memory.
+    # @param offset offset from file start.
+    # @param pagenum number of page to retrive.
+    # @param path path of file/directory.
+    # @param requsted_length requested size of data.
+    # @param rva address of data.
+    # @param si system info
+    # @param sock socket connection with server.
+    # Always successful. __init__ ensures data is accessible.
+    # Can triger fetching queued data from server.
+    # Enumerate modules, find ""holes"" that need zero filling"
+    # Fuse, open file."
+    # Get list of available address ranges for LSASS"
+    # Install driver and recover data necessary to read memory.
+    # Not implemented
+    # Not supported.
+    # Only one file is supported.
+    # Read & fill"
+    # Same as read_cached.
+    # The keys should match fsminidump"
+    # We don't want to use these, PsActiveProcessHead is faster"
+    # What to read, what to zero fill"
+    #""CSDVersion"" / Pointer(this.CSDVersionRVA, PascalString(Int32ul, ""utf-16""))"
+    #""ModuleName"" / Computed(lambda this: get_string(Pointer(this.ModuleNameRva, PascalString(Int32ul, ""utf-16"")))),"
+    #""ModuleName"" / Pointer(this.ModuleNameRva, PascalString(Int32ul, ""utf-16"")),"
+    ## Append Secure World data to an existing minidump"
+    ## Build memory64 stream."
+    ## Build memoryinfo list stream."
+    ## Build minidump"
+    ## Build systeminfo stream."
+    ## Class constructor
+    ## Class constructor."
+    ## Destructor closing connection."
+    ## Functions exposed by each driver class on server.
+    ## Fuse, provide directory content."
+    ## Fuse, read attributes of files/directories."
+    ## Fuse, read data."
+    ## Fuse, read uncached data."
+    ## Fuse, write data."
+    ## Internal, get all gathered data."
+    ## Internal, retrive page."
+    ## Internal, retrive queued data from server."
+    ## Memory info list info setter."
+    ## Module list setter."
+    ## Parse memory dump."
+    ## System info setter."
+    ## memory64 setter."
+    #MEM_IMAGE = 0x1000000
+"
+"                    #print(""We have extra"")"
+"            #print(""Appending cached"")"
+"            #print(""Appending zeros"")"
+"            #print(""Caching page %u"" % (self.queued_offset//self.PAGE_SIZE))"
+"            #print(""Fetching queued data (requested %x, queued %x-%x)"" % (pagenum*self.PAGE_SIZE, self.queued_offset, self.queued_offset+self.queued_size))"
+"            #print(""Fetching queued data"")"
+"            #print(""Read %u MB, cached reads %u MB"" % (self.read_total / (1024*1024), self.read_stat_cached / (1024*1024)))"
+"            #print(""Read %u megabytes"" % (self.read_total / (1024*1024)))"
+"            #print(""Returning page %u (offset %x) from cache"" % (pagenum, pagenum*self.PAGE_SIZE))"
+"            #print(""Returning zeros"")"
+"            #print(hex(start), size)"
+"        # Build directory, read stream data, set new offsets to streams"
+"        #data1 = self.read_uncached(path, requested_length, offset, fh)"
+"        #print(""DTB"", hex(dtb))"
+"        #print(""Gathering page %u (offset %x)"" % (pagenum, pagenum*self.PAGE_SIZE))"
+"        #print(""Image size: %u MB"" % (self.image_size/(1024*1024)))"
+"        #print(""Len buf %u"" % (len(buf)))"
+"        #print(""Len buf %u"" % (len(buf)), hex(offset % self.PAGE_SIZE), hex(self.PAGE_SIZE-((offset+requested_length) % self.PAGE_SIZE)))"
+"        #print(""Received %u bytes from offset %x"" % (len(data), self.queued_offset))"
+"        #print(""Received %u bytes"" % (len(data)))"
+"        #print(""Sending"")"
+"        #print(""[read] offset %x, length: %u"" % (offset, requested_length))"
+"        #print(""build"", build)"
+"        #print(""kernel_base"", hex(kernel_base))"
+"    # @exceptions FuseOSError if path was other than one supported file, or file dir."
+"    # @param fh flags, not used."
+"    # @param path path of file/directory, not used."
+"    # @param path path ot file. Not used, only one file is supported."
+"    # Function retrives page from cache, or adds page to queue."
+"    # Function will fetch data, without checking cache. New data will not be cached."
+"    # Function will first look in cache, missing data will be fetched. New data will be cached."
+"    #""CSDVersion"" / Rebuild(Computed(lambda this: get_string(Pointer(this.CSDVersionRVA, PascalString(Int32ul, ""utf-16"")))), 0)"
+"    #""CvRecordData"" / Computed(lambda this: get_string(Pointer(this.CvRecord.RVA, Byte[this.CvRecord.DataSize]))),"
+"    #""CvRecordData"" / Pointer(this.CvRecord.RVA, Byte[this.CvRecord.DataSize]),"
+"    #""MiscRecordData"" / Computed(lambda this: get_string(Pointer(this.MiscRecord.RVA, Byte[this.MiscRecord.DataSize])))"
+"#        Memory64ListStream: Computed(lambda this: get_string(Pointer(this.Location.RVA, minidump_memory64_list))),"
+"#        MemoryInfoListStream: Computed(lambda this: get_string(Pointer(this.Location.RVA, minidump_memory_info_list))),"
+"#        ModuleListStream: Computed(lambda this: get_string(Pointer(this.Location.RVA, minidump_module_list))),"
+"#        SystemInfoStream: Computed(lambda this: get_string(Pointer(this.Location.RVA, minidump_system_info))),"
+"#    ""Data"" / Switch(this.StreamType, {"
+"#    ""Directory"" / Computed(lambda this: get_string(Pointer(this.StreamDirectoryRva, minidump_directory[this.NumberOfStreams])))"
+"# @param build, build version retrived without using rekall."
+"# Reads file with remote machine memory, and starts rekall session on it."
+#
+#    })
+#  @exceptions Exception if arg was not provided.
+#  @exceptions Exception if connection was not created.
+#  @exceptions Exception if not all required parameter were provided.
+#  @param _frame unused parameter.
+#  @param _sig unused parameter.
+#  @param arg argument to check.
+#  @param driver name of driver to be used.
+#  @param host ip address of host to connect.
+#  @param installArguments data required by driver. Defined by driver Install function on server.
+#  @param port number of port to connect.
+#  @param removeOldConfig function will delate outdated config file.
+#  @param sock socket connection with server.
+#  @param str custom name for argument.
+#  @return object with all information required to start program.
+#  Use Fuse to create abstract file. File location and parameters are provided in config.json.
+# @exceptions Exception if file does not exist.
+# @param label created memory dump will be stored as 'output/label-date-lsass.dmp'
+# @param module_list list of loaded modules.
+# @param path path to file.
+# @param pid pid of process to read.
+# @param s rekall session.
+# Creates LSASS process memory dump.
+# Setup logging as required. Rekall will log to the standard logging service.
+# TODO: More meaningful defaults"
+# https://docs.microsoft.com/en-us/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_memory64_list"
+# https://docs.microsoft.com/en-us/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_memory_descriptor"
+# https://docs.microsoft.com/en-us/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_memory_info"
+# https://docs.microsoft.com/en-us/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_memory_info_list"
+# https://docs.microsoft.com/en-us/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_system_info"
+# https://docs.microsoft.com/en-us/windows/win32/api/verrsrc/ns-verrsrc-vs_fixedfileinfo"
+#!/usr/bin/env python3
+## Call main if file is used as entry point."
+## Check if required argument was provided."
+## Check ten times if file was created by other process, wait 1s on each check."
+## Class used to build Mimikatz-compatible minidump"
+## Class used to mimic file access to external memory."
+## Ensure correct close."
+## Get system info."
+## Main function of module."
+## Main function of package."
+## Mount external memory exposed by socket as file."
+## Open socket connection with server."
+## Parse command line. Ensure required parameters exist, generate optional."
+## Read list of modules."
+## Read memory info of process."
+## Read memory of process."

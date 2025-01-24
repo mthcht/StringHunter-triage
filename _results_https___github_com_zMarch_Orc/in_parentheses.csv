@@ -1,0 +1,315 @@
+"( ""The echo_arguments test program"" "
+"( ""This is a output line to stderr\n"", stderr "
+"( ""argument %2d is '%s'\n"", i, argv[i] "
+"( ""exit code of the test program is %d\n"", argc-2 "
+"( $1==ENVIRON[""our_pty""] "
+"( $url, $anon "
+"( /[^0-9]/, """", $1 "
+"( int argc, char** argv "
+"( orc_pingIP4localnet ""$addr"" ""$mask""  >> $HOME/ips "
+"(""$ORC_ECHO_FILE"""
+"($0,/([0-9][0-9]?[0-9]?\."
+"($0,/([A-F0-9]?[A-F0-9]?[A-F0-9]?[A-F0-9]?:"
+"($0,/([a-f0-9]?[a-f0-9]?[a-f0-9]?[a-f0-9]?:"
+"($0,/Bcast[: ]+([0-9][0-9]?[0-9]?\."
+"($0,/brd +([0-9][0-9]?[0-9]?\."
+"($0,/inet +[0-9\.]+ +netmask +[0-9\.]+ +broadcast/"
+"($0,/inet +[0-9\.]+\/[0-9]+ brd/"
+"($0,/inet +addr[: ]+[0-9\.*]+ +Bcast[: ]+[0-9\.]+ +Mask[: ]+[0-9\.]+/"
+"($0,/inet.* broadcast +([0-9][0-9]?[0-9]?\."
+"($0,RSTART,RLENGTH"
+"($0,a,""/"""
+"($0,index(tolower($0"
+"($syscallnr, $name, 1"
+"('#!' eq unpack 'a2', $bytes"
+"('supports only Linux, but found ' + platform.system("
+"(( $(echo ""$output""|wc -l"
+"((sys.argv[1],int(sys.argv[2]"
+"(/""/,"""",$2"
+"(NF==1 || $1==""tmpfs"""
+"(anon + ' ""' + '"" ""'.join(arguments"
+"(anon, 'wb'"
+"(anon, [name, ] + arguments"
+"(bash, dash, ksh, ash"
+"(because we can't hide arguments, but we can choose something that makes them relatively invisible in the noise"
+"(cat ""$ENV"""
+"(curl --head --silent --insecure --location ""$address"""
+"(echo ""$output""|wc -l"
+"(echo ""$output""|wc -w"
+"(echo ""$testinput"" | orc_filterIpAddress 2>&1"
+"(grep --ignore-case --only-matching --extended-regexp ""'https?://[^']+'"" o.rc"
+"(it does need an interactive shell, I'm afraid"
+"(ldd ""$(command -v id"
+"(match(tmp,/:.*:.*:.*:.*:/"
+"(match(tmp,/\..+\..+\./"
+"(orc_IP4toInteger ""$1"""
+"(orc_IP4toInteger ""$2"""
+"(orc_firstIP4integer ""$myaddr"" ""$mask"""
+"(orc_flatFileName ""$1"""
+"(orc_flatFileName ""/test"" 2>&1"
+"(orc_flatFileName ""/test/second"" 2>&1"
+"(orc_flatFileName ""/test/second/"" 2>&1"
+"(orc_flatFileName ""test second"" 2>&1"
+"(orc_flatFileName ""test"" 2>&1"
+"(orc_flatFileName ""test/second"" 2>&1"
+"(orc_homeOfUserID ""$userid"" 2>&1 > /dev/null"
+"(orc_homeOfUserID ""$userid"""
+"(orc_integerToIP4 ""$(orc_IP4toInteger $t"
+"(orc_integerToIP4 ""$(orc_firstIP4integer ""$(orc_IP4toInteger 172.17.2.15"
+"(orc_integerToIP4 ""$(orc_lastIP4integer ""$(orc_IP4toInteger 172.17.2.15"
+"(orc_integerToIP4 ""$value"""
+"(orc_lastIP4integer ""$myaddr"" ""$mask"""
+"(orc_lengthToIP4netmask ""$bits"""
+"(orc_loadURL ""$1"""
+"(pgrep -a sshd | grep $orc_colorNever ""$PTS_NAME"" | cut -d ' ' -f 1"
+"(readlink -e ""$runner"""
+"(readlink -f ""$ENV"""
+"(s,p,a"
+"(socket.AF_INET,socket.SOCK_STREAM"
+"(stat -c %B -- ""$file"""
+"(stat -c %b -- ""$file"""
+"(stat -c '%U' ""/dev/$PTS_NAME"""
+"(substr($0,RSTART,RLENGTH"
+"(sys_call_nr, '', 1"
+"(the ""Software"""
+"(tmp,/^..:..:..:..:..:..$/"
+"(verify_hostname => 0, SSL_verify_mode => 0"
+"(verify_hostname => 0,SSL_verify_mode => 0x00"
+( i = 0; i < argc; ++i
+($0
+($1
+($1 in users
+($2
+($Config{archname} =~ /(arm|armeb|aarch64
+($Config{archname} =~ /(sparc|sparc64
+($Config{archname} =~ /i386-linux/
+($Config{archname} =~ /ia64-linux/
+($Config{archname} =~ /power(pc|pc64|pc64le
+($Config{archname} =~ /x86_64-linux/
+($code != 200
+($fd == -1
+($nrbytes != 2
+($ua
+($ua get getstore
+($ua head get
+(%s
+('can not create anonymous file'
+('does not support architecture ' + platform.machine(
+('missing arguments: url and program name must be given'
+(( $1 & 255 
+(( $1 >> 8 
+(( ($1 & $2
+(( (value << 8
+(( (value >> 1
+(( 1 << 31 
+(( counter - 1 
+(( n_direct + 1 
+(( n_notfound + 1 
+(( n_outside + 1 
+(( n_total + 1 
+(( value & 255 
+(( value + 1 
+(( value >> 8 
+((65535<<16|65534
+() not in sys_call_numbers.keys(
+(.q
+(0
+(0.0 B
+(1
+(1048576
+(2
+(3
+(4
+(5
+(595.2 KB
+(6
+(63.5 KB
+(=1
+(Bionic Beaver
+(Ethernet
+(HTTP and DNS
+(Local Loopback
+(None
+(See function orc_flatFileName.
+(T1
+(T2
+(T3
+(Virtualbox
+(Without tmpfs
+([Wiki](https://github.com/zMarch/Orc/wiki/dropsuid
+([Wiki](https://github.com/zMarch/Orc/wiki/fpssh
+([Wiki](https://github.com/zMarch/Orc/wiki/getdbus
+([Wiki](https://github.com/zMarch/Orc/wiki/getdocker
+([Wiki](https://github.com/zMarch/Orc/wiki/getenum
+([Wiki](https://github.com/zMarch/Orc/wiki/getescape
+([Wiki](https://github.com/zMarch/Orc/wiki/getexploit
+([Wiki](https://github.com/zMarch/Orc/wiki/getgtfobins
+([Wiki](https://github.com/zMarch/Orc/wiki/getidle
+([Wiki](https://github.com/zMarch/Orc/wiki/getinfo
+([Wiki](https://github.com/zMarch/Orc/wiki/getip
+([Wiki](https://github.com/zMarch/Orc/wiki/getjail
+([Wiki](https://github.com/zMarch/Orc/wiki/getluks
+([Wiki](https://github.com/zMarch/Orc/wiki/getnet
+([Wiki](https://github.com/zMarch/Orc/wiki/getpty
+([Wiki](https://github.com/zMarch/Orc/wiki/getrel
+([Wiki](https://github.com/zMarch/Orc/wiki/getsctp
+([Wiki](https://github.com/zMarch/Orc/wiki/getsec
+([Wiki](https://github.com/zMarch/Orc/wiki/getsfiles
+([Wiki](https://github.com/zMarch/Orc/wiki/getspec
+([Wiki](https://github.com/zMarch/Orc/wiki/getsuspect
+([Wiki](https://github.com/zMarch/Orc/wiki/gettmp
+([Wiki](https://github.com/zMarch/Orc/wiki/getusers
+([Wiki](https://github.com/zMarch/Orc/wiki/getuservices
+([Wiki](https://github.com/zMarch/Orc/wiki/memexec
+([Wiki](https://github.com/zMarch/Orc/wiki/portscan
+([Wiki](https://github.com/zMarch/Orc/wiki/prochide
+([Wiki](https://github.com/zMarch/Orc/wiki/qssh
+([Wiki](https://github.com/zMarch/Orc/wiki/qsu
+([Wiki](https://github.com/zMarch/Orc/wiki/sourceurl
+([Wiki](https://github.com/zMarch/Orc/wiki/srm
+([Wiki](https://github.com/zMarch/Orc/wiki/stomp
+([Wiki](https://github.com/zMarch/Orc/wiki/tools
+([Wiki](https://github.com/zMarch/Orc/wiki/wiper
+([^\/]*
+(and in bash
+(buffer
+(c
+(cat 'testA.err'
+(cat 'testA.txt'
+(cat resources/memexec.pl.base64
+(cat resources/memexec.py.base64
+(command -v sh
+(could contain a path
+(date +%s
+(dropsuid 2>&1 > /dev/null
+(e.g. Linux
+(e.g. busybox
+(echo 'test' | grep $orc_colorNever 'no' 2>&1
+(echo 'test' | grep $orc_colorNever 'test' 2>&1
+(echo 'test' | grep $orc_colorNever -q 'test' 2>&1
+(echo 'test' | grep $orc_colorNeveri -q 'no' 2>&1
+(echo 'test' | grep -q 'no' 2>&1
+(echo 'test' | grep -q 'test' 2>&1
+(echo_function 2>&1 > /dev/null
+(echo_function argument_1 argument_2
+(error
+(fd
+(find / -executable -type f $find_args 2> /dev/null
+(getdbus 2>&1 > /dev/null
+(getdocker 2>&1 > /dev/null
+(getenum 2>&1 > /dev/null
+(getescape 2>&1 > /dev/null
+(getexploit 2>&1 > /dev/null
+(getgtfobins 2> /dev/null
+(getgtfobins 2>&1 > /dev/null
+(gethelp 2> /dev/null
+(gethelp 2>&1 > /dev/null
+(getidle 2>&1 > /dev/null
+(getinfo 2>&1 > /dev/null
+(getip 2>&1 > /dev/null
+(getjail 2>&1 > /dev/null
+(getluks 2>&1 > /dev/null
+(getnet 2>&1 > /dev/null
+(getrel 2>&1 > /dev/null
+(getsctp 2>&1 > /dev/null
+(getsec 2>&1 > /dev/null
+(getsfiles 2> /dev/null
+(getsfiles 2>&1 > /dev/null
+(getsfiles background 2>&1 > /dev/null
+(getspec 2>&1 > /dev/null
+(gettmp 2>&1 > /dev/null
+(getusers 2>&1 > /dev/null
+(getuservices 2>&1 > /dev/null
+(hostname
+(https://api.travis-ci.org/zMarch/Orc.svg?branch=master
+(https://github.com/kward/shunit2
+(https://travis-ci.org/
+(https://travis-ci.org/zMarch/Orc
+(https://www.shellcheck.net/
+(i in list
+(id -nu
+(id -u
+(including #!
+(needs arguments
+(orc_IP4toInteger $t 2>&1 > /dev/null
+(orc_IP4toInteger 0.0.0.1 2>&1
+(orc_IP4toInteger 0.0.1.1 2>&1
+(orc_IP4toInteger 0.1.1.1 2>&1
+(orc_IP4toInteger 1.1.1.1 2>&1
+(orc_IP4toInteger 255.255.240.0
+(orc_IP4toInteger 255.255.255.0
+(orc_IP4toInteger 255.255.255.192
+(orc_createEchoFile argument_A argument_BB 2>&1
+(orc_existsProg ' this is not a program ' 2>&1
+(orc_existsProg orc_noop 2>&1
+(orc_exportProxySettings 2>&1
+(orc_homeOfCurrentUser
+(orc_homeOfCurrentUser 2>&1 > /dev/null
+(orc_inetAddressAndMask
+(orc_inetAddressAndMask 2>&1 > /dev/null
+(orc_integerToIP4 1 2>&1
+(orc_integerToIP4 16843009 2>&1
+(orc_integerToIP4 257 2>&1
+(orc_integerToIP4 65793 2>&1
+(orc_isMinimalOsVersion Linux 1 0 2>&1
+(orc_isMinimalOsVersion Linux 1 120 2>&1
+(orc_isMinimalOsVersion Linux 123 0 2>&1
+(orc_isMinimalOsVersion ThisIsNotAnOsName 1 0 2>&1
+(orc_lengthToIP4netmask 1 2>&1
+(orc_lengthToIP4netmask 20 2>&1
+(orc_lengthToIP4netmask 24 2>&1
+(orc_lengthToIP4netmask 26 2>&1
+(orc_listArp
+(orc_listArp 2>&1 > /dev/null
+(orc_listBroadcastAddress
+(orc_listBroadcastAddress 2>&1 > /dev/null
+(orc_listHomes
+(orc_listHomes 2>&1 > /dev/null
+(orc_listTmp
+(orc_listTmp 2>&1 > /dev/null
+(orc_listUsers
+(orc_listUsers 2>&1 > /dev/null
+(orc_loadURL https://raw.githubusercontent.com/zMarch/Orc/master/resources/echo_arguments.sh
+(orc_loadURL https://raw.githubusercontent.com/zMarch/Orc/master/resources/echo_arguments.sh 2>&1 > /dev/null
+(orc_log2outp testA ' this is not a program name ' 2>&1
+(orc_makeHome 2>&1
+(orc_noop
+(orc_noop 2>&1 > /dev/null
+(orc_ourPts
+(orc_ourPts 2>&1 > /dev/null
+(orc_testAndCopy _test_source/f1 _test_destination 2>&1
+(orc_testAndCopy _test_source/f2 _test_destination 2>&1
+(orc_testAndCopy _test_source/f3 _test_destination 2>&1
+(orc_testAndCopy _test_source/ff _test_destination 2>&1
+(orc_tryTcpConnection 'raw.githubusercontent.com' 43 2>&1
+(orc_tryTcpConnection 'raw.githubusercontent.com' 80 2>&1
+(ord('!'
+(ord('#'
+(os.getpid(
+(portscan localhost 2>&1 > /dev/null
+(prochide 2>&1 > /dev/null
+(ps --no-header -wweo cmd | awk 'length(X
+(pts != exclude
+(request.read(
+(s
+(see https://magisterquis.github.io/2018/03/31/in-memory-only-elf-execution.html who I stole much of the basis of it for
+(sh -c 'echo $HTTPS_PROXY'
+(sh -c 'echo $HTTP_PROXY'
+(sh -c 'echo $http_proxy'
+(sh -c 'echo $https_proxy'
+(sourceurl https://raw.githubusercontent.com/zMarch/Orc/master/resources/echo_function.sh 2>&1
+(srm test_file1_for_srm test_file2_for_srm 2>&1
+(srm test_file_for_srm 2>&1
+(ss --all --sctp 2> /dev/null | wc -l
+(sys.argv
+(sys.argv[1]
+(tools 2>&1 > /dev/null
+(tty
+(uname -r
+(uname -s
+(url
+(used dig
+(used host
+(wc -l < sfiles
+(whoami
+(without file name

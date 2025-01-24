@@ -1,0 +1,10 @@
+"UserName == ""ALL"""
+"UserName == ""root"" || entry.AllUsers) && (hasPasswd || entry.NoPasswd) {"
+"UserNameEx(nameFormat uint32, nameBuffre *uint16, nSize *uint32) (err error) [failretval&0xff==0] = secur32.GetUserNameExW"
+"UserNameExW                                       = modsecur32.NewProc(""GetUserNameExW"")"
+"userName *uint16, level uint32, buf **byte) (neterr error) = netapi32.NetUserGetInfo"
+"userName *uint16, maxUserNameSize uint32) (err error) = GetNamedPipeHandleStateW"
+"username := fmt.Sprintf(""traitor%d"", rand.Intn(10000))"
+USERNAME                                                        syscall.Errno = 2202
+USERNAME                          = 0xf9
+UserName = strings.TrimSpace(bracketedParts[0])

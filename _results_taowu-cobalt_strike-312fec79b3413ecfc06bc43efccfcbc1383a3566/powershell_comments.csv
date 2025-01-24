@@ -1,0 +1,120 @@
+		# Free SystemModuleInformation array"
+
+                  # Populate session data based on the node name
+            # 2 lines added to hide window
+           # Step 2: Create a large SMB1 buffer
+          # Get all sessions"
+        # @jennamagius
+        # Aggregates all saved sessions from that user's PuTTY client"
+        # Aggregates all saved sessions from that user's RDP client"
+        # Aggregates all saved sessions from that user's WinSCP client"
+        # Construct tool registry/filesystem paths from SID or username"
+        # Created for each user found. Contains all sessions information for that user. "
+        # Extract just the name from the System.DirectoryServices.SearchResult object
+        # Get the username for SID we discovered has saved sessions"
+        # If any WinSCP saved sessions exist on this box..."
+        # If we find the FileZilla sitemanager.xml file where we would expect it"
+        # If we find the SuperPuTTY Sessions.xml file where we would expect it"
+        #>
+      # All drives found on system in one variable"
+      # Construct PuTTY, WinSCP, RDP, FileZilla session paths from base key"
+      # Contains raw i-node data for files with extension .ppk, .rdp, and sdtid respectively, found by Get-ChildItem"
+      # Created for each user found. Contains all PuTTY, WinSCP, FileZilla, RDP information. "
+      # Hashtable to store each session's data
+      # If the user is not using a master password, we can crack it:"
+      # Iterates over each child node under <Server> (aka session)"
+      # Requested Dialects"
+      #$pkt += 0x00 * 4096
+     # initialize_groom_threads(ip, port, payload, grooms)"
+    # Add the object we just created to the array of .ppk file objects"
+    # Aggregate all user hives in HKEY_USERS into a variable"
+    # ArrayList.Add() by default prints the index to which it adds the element. Casting to [void] silences this."
+    # Converts user SID in HKEY_USERS to username
+    # Create object from collected data, excluding some trivial information"
+    # Delete Old.evtx"
+    # For each SID beginning in S-15-21-. Loops through each user hive in HKEY_USERS."
+    # Get EventLog path"
+    # Get the username for SID we discovered has saved sessions
+    # If run in Thorough Mode"
+    # If the drive holds a filesystem
+    # Kill Eventlog Service
+    # Kill Eventlog Service"
+    # Neither Rex nor RubySMB appear to support Anon login?
+    # Private Key Encryption property identifies whether the private key in this file is encrypted or if it can be used as is"
+    # Rename New.evtx Old.evtx"
+    # Replace string"
+    # Save New.evtx"
+    # Start Eventlog Service"
+    # The next several lines use regex pattern matching to store relevant info from the .ppk file into our object"
+    # The next several lines use regex pattern matching to store relevant info from the .rdp file into our object"
+    # Whether we read from an input file or query active directory"
+    # Windows 2000 2195"
+    # Windows 2000 5.0"
+    # echo data"
+    # fill out the rest, this can be randomly generated"
+    # netbios[1] =$pkt +=0x00' + struct.pack('>H length)
+    # payload addreses"
+    # send NT Trans"
+    # undocumented"
+    #$pkt += 0x4c                   # Setup Count
+    #$pkt += 0x4f                   # Reserved
+    #$pkt += 0x74,0x70               # Parameter Offset"
+    #$pkt += 0xf0                   # Security Blob: <MISSING>
+    #initial trans2 request"
+    #padding"
+    #replace null bytes with your shellcode"
+    #send all but the last packet"
+  # Add the array of FileZilla session objects to the target user object"
+  # Add the array of PuTTY session objects to UserObject"
+  # Add the array of RDP session objects to UserObject"
+  # Add the array of SuperPuTTY session objects to the target user object"
+  # Add the array of WinSCP session objects to the target user object"
+  # Creates an object with flag and remainingPass properties"
+  # Else, we run SessionGopher locally"
+  # Extracting the filepath from the i-node information stored in PPKExtensionFilesINodes"
+  # Extracting the filepath from the i-node information stored in RDPExtensionFilesINodes"
+  # For each PuTTY saved session, extract the information we want "
+  # For each RDP saved session, extract the information we want"
+  # For each WinSCP saved session, extract the information we want"
+  # Grab file from remote system's registry"
+  # If getting SID from remote computer"
+  # Locate all <Server> nodes (aka session nodes), iterate over them"
+  # On remote system, save file to registry"
+  # Removing Registry value from remote system"
+  # Shift left 4 bits equivalent for backwards compatibility with older PowerShell versions"
+  # Sleeping to let remote system read and store file"
+  # The following code is taken from Christopher Truncer's WMIOps script on GitHub. It gets file contents through WMI by
+  # Value for HKEY_LOCAL_MACHINE hive
+  # Value for HKEY_USERS hive"
+  # base64_decode the stored encoded session passwords, and decode protocol"
+"
+" 
+"  
+"    
+"          
+"           # Step 3: Groom the pool with payload packets, and open/close SMB1 packets"
+"          # If value exists, make a key-value pair for it in the hash table"
+"        # @zerosum0x0 'Dylan Davis <dylan.davis@risksense.com>',  "
+"      # Each object we create for the file extension found from a -Thorough search will have the same properties (Source, Path to File)"
+"      # Else, the user is using a master password. We can't retrieve plaintext credentials for it."
+"    # this is an existing IDS signature, and can be nulled out"
+"    #$pkt += 0x00,0x00               # Native LAN manager"
+"    #$pkt += 0x00,0x00               # Primary domain"
+"    #$pkt += 0x00,0x00               # Reserved"
+"    #$pkt += 0x45,0x6f               # Data Offset"
+"    #$pkt += 0x47,0x46               # Data Count"
+"    #$pkt += 0x4a,0x6c,0x4a,0x6d,0x49,0x68,0x43,0x6c,0x42,0x73,0x72,0x00"
+"    #$pkt += 0xff,0x00,0x00,0x00       # Native OS"
+"  # Else, get local SIDs"
+"  # downloading the file's contents to the remote computer's registry, and then extracting the value from that registry location"
+# Gets all domain-joined computer names and properties in one object"
+# KI_USER_SHARED_DATA addresses"
+# Maps the SID from HKEY_USERS to a username through the HKEY_LOCAL_MACHINE hive"
+## File Processing Helper Functions
+## Registry Querying Helper Functions
+## WinSCP Deobfuscation Helper Functions
+####################################################################################
+####################################################################################"
+#==============================================================[Banner]"
+#>
+#>"

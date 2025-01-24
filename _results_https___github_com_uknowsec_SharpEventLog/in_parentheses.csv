@@ -1,0 +1,48 @@
+"(""       SharpEventLog.exe -4625"""
+"("" "", """""
+"("""""
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""4ed4f849-4ed7-4f81-8ea8-1cac11dfcf3c"""
+"(""Author: Uknow"""
+"(""Github: https://github.com/uknowsec/SharpEventLog"""
+"(""Remote ip: "" + ipaddress.Replace(""\n"", """""
+"(""Security"""
+"(""SharpEventLog"""
+"(""Status: Flase"""
+"(""Status: True"""
+"(""Time: "" + Time"
+"(""Usage: SharpEventLog.exe -4624"""
+"(""Username: "" + username.Replace(""\n"", """""
+"(""\r"", """""
+"(""\r\n-----------------------------------"""
+"(""\r\n========== SharpEventLog -> 4624 ==========\r\n"""
+"(""\r\n========== SharpEventLog -> 4625 ==========\r\n"""
+"(""\t"", """""
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"(args.Length == 1 && (args[0] == ""-4624"""
+"(args.Length == 1 && (args[0] == ""-4625"""
+"(string sourse, string startstr, string endstr"
+('$(MSBuildExtensionsPath
+().Where(x => x.InstanceId == 4624
+().Where(x => x.InstanceId == 4625
+(Configuration
+(EventLogEntry log1 in entries
+(MSBuildExtensionsPath
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(Platform
+(ProjectConfigurationPlatforms
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(args.Length == 0
+(endindex
+(endindex == -1
+(endstr
+(false
+(https://github.com/uknowsec/SharpEventLog/blob/master/images.png
+(ipaddress.Length >= 7
+(startindex + startstr.Length
+(startindex == -1
+(startstr
+(string[] args

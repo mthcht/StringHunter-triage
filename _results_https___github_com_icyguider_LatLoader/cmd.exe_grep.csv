@@ -1,0 +1,9 @@
+"cmd.exe /c C:\\Windows\\DiskSnapShot.exe && echo --path C:\\Windows\\CCMCache\\cache"")"
+"cmd.exe /c C:\\Windows\\load.exe"")"
+"cmd.exe /c \""whoami > c:\\wmi2.txt\"""");"
+"cmd.exe /c copy C:\\Windows\\System32\\DiskSnapShot.exe C:\\Windows\\DiskSnapShot.exe && echo --path C:\\Windows\\CCMCache\\cache"")"
+"cmd.exe /c copy C:\\Windows\\cryptbase.png C:\\Windows\\cryptbase.dll && echo --path C:\\Windows\\CCMCache\\cache"")"
+"cmd.exe /c whoami > C:\\poc3.txt\"""" )"
+"cmd.exe /c whoami > C:\poc.txt"""
+"cmd.exe /c. This evades the rule because the file is not executed directly, but instead by a trusted binary."
+cmd.exe /c whoami > c:\test.txt'

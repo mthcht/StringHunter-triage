@@ -1,0 +1,36 @@
+"{ tar -cf ""$1.tar"" ""$2"" && xz -9 ""$1.tar"" && ORC_ARCHIVE_FILE=""$1.tar.xz""; "
+"{""env"""
+"{gsub(/""/,"""",$2); print $2"
+"{print $1"" ""$2"
+"{split($0,a,""/""); print a[3]"
+{ orc_listUsers; ps --no-header -weFH; 
+{ print $2 
+{ print $8 
+{$anon
+{1#*.
+{1%.*.*.*
+{BASH_SOURCE[0]
+{X=$0
+{\
+{address#\'
+{address%\'
+{archname
+{for(i in list) print list[i]
+{hit[$6]=1; print $6
+{hit[$NF]=1; print $NF
+{mytty#/dev/pts/
+{n
+{print
+{print $1
+{print $2
+{print $3
+{print $4
+{print $6
+{print X
+{rest#*.
+{rest%%.*
+{shells[$1]=1
+{str#*.
+{str%.*
+{str%.*.*
+{users[$1]=1

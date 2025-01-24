@@ -1,0 +1,9 @@
+       - Reads current values without remapping the ntdll library.\n        2. NativeBypassCredGuard.exe
+"            Console.WriteLine(""[+] Usage:\n    NativeBypassCredGuard.exe"
+"            string proc_name = ""c:\\windows\\system32\\lsass.exe"
+"            string process_path = ""c:\\windows\\system32\\calc.exe"
+"    const char* proc_name = ""c:\\windows\\system32\\lsass.exe"
+"    const char* proc_path = ""c:\\Windows\\System32\\calc.exe"
+"    printf(""[+] Usage:\n    NativeBypassCredGuard.exe"
+NativeBypassCredGuard.exe
+lse (or omitted): Do not remap the ntdll library.\n\n    Examples:\n        1. NativeBypassCredGuard.exe

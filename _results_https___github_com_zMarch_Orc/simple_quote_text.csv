@@ -1,0 +1,376 @@
+"' """
+"' ""$(sh -c "
+"' ""$output"" "
+"' ""[ -f "
+"' -v userid=""$1"" "
+"' | grep ""^$(id -u)""i | awk "
+"'"" """
+"'"""
+"'""@$(hostname):"""
+"'$1==""1"" {print $2}"
+"'(NF==1 || $1==""tmpfs"") && hit[$NF]==0 {hit[$NF]=1; print $NF}"
+"'), "
+"'),"
+"'/<a href=""\/gtfobins\/([^\/]*)\/"" class=""bin-name"">/ {split($0,a,""/""); print a[3]}"
+"'ERROR: invalid argument, must be a shell name"
+"'ERROR: script needs shell (bash, dash, ksh, ash) as argument"
+"'Error: missing arguments: name, version1, version2"
+"'Error: missing find, need to implement other search"
+"'Error: need base64, can not decode tool"
+"'Error: need type, other check methods not yet implemented"
+"'Error: no limit/ulimit - coredumps left enabled, careful"
+"'Error: no ssh-keyscan program, can not get public keys"
+"'Info: connection problem, https_proxy could be needed"
+"'Warinng: need perl or python, go in fallback mode"
+"'Warning: found no good home directory, some functions may fail"
+"'Warning: need Linux >= 3.17, go in fallback mode"
+"'Warning: need base64, go into fallback mode"
+"'Warning: need gzip, go inti fallback mode"
+"'re usually the ones you want. It also prints the init system, because it"
+"'s likely to be a large number of bugs, but you can find the vast majority of them by running the command "
+"'s part of a larger bundle of scripts and tools, but I"
+"'supports only Linux, but found "
+"'t present, we"
+"'toupper($1)~/PRETTY/ {gsub(/""/,"""",$2); print $2}"
+"'{print $1"" ""$2}"
+' 
+' + 
+' + str(os.getpid()) + 
+' eq unpack 
+' not a program 
+' permission denied
+' readable
+' searchable
+' this is not a program 
+' this is not a program name 
+' writeable
+' | awk 
+' | grep $orc_colorNever 
+' | grep $orc_colorNever -q 
+' | grep $orc_colorNeveri -q 
+' | grep --color=never -q 
+' | grep -q 
+' | tr 
+' | tr -d 
+'!
+'#
+'#!
+'#!/bin/sh
+'$*
+'$3 == userid {print $6}
+'$Config{archname}
+'$PWD
+'$USER
+'$address
+'$arg
+'$file
+'$runner
+'%U
+'%a   %A      %U      %N
+'%i
+'%n %X %U
+'%s
+'(used dig)
+'(used host)
+') and signature[1] in (ord(
+'-
+'--
+'--color=never
+'.join(arguments) + 
+'/
+'/bin/echo
+'/dev/shm
+'/fd/
+'/open/tcp/
+'/proc/
+'/root
+'/tmp
+'/var/tmp
+'1
+':
+'<:raw
+'=
+'Attempting to get IP...
+'Broadcast ping is done.
+'Can not download shunit2 testframework
+'Check - memexec.py is included
+'DNS says: 
+'Doing some basic listing of the usual suspects...
+'ERROR: encode_perl_script memexec failed
+'ERROR: encode_python_script memexec failed
+'ERROR: memexec.pl is not included
+'ERROR: memexec.py is not included
+'ERROR: no http/https addresses found
+'Error: Can not list ARP content. Found no tool
+'Error: ENV not defined. Can not start script
+'Error: HOME variable is empty
+'Error: IPv4 address must be given as argument
+'Error: You have got a tty. You can not use qssh
+'Error: address and netmask must be given
+'Error: archiver needs two arguments
+'Error: argument must be one URL to load
+'Error: argument user-id must be given
+'Error: bash needed but not found
+'Error: call must getsfile [background]
+'Error: can not create echo file
+'Error: can not find a home directory
+'Error: can not find a tool for program exist checks
+'Error: can not list broadcast addresses. Found no tool
+'Error: fixed length size must be given
+'Error: fpssh needs host name as argument
+'Error: hangup functions needs argument: ID number of PTS
+'Error: length out of range
+'Error: memexec needs URL as argument
+'Error: missing basename of the output files
+'Error: missing command to execute
+'Error: missing getcap
+'Error: missing host name
+'Error: missing program name to check
+'Error: missing text to echo
+'Error: missing the shunit2 script
+'Error: need host and TCP port as arguments
+'Error: need two arguments: file and destination
+'Error: no IPv4 address given
+'Error: no download tool found
+'Error: no tool to open TCP connection found
+'Error: no working archive tool found
+'Error: number must given as argument
+'Error: output directory not defined or prepared
+'Error: portscan needs one host name or host address
+'Error: psgrep needs grep pattern as argument
+'Error: qssh needs at least password and command as arguments
+'Error: qsu needs at least password and command as arguments
+'Error: srm needs a file name(s) as argument
+'Error: wiper needs grep pattern as argument
+'FAILED
+'GTFOBins:
+'Get current shunit2 framework from github
+'HOME
+'HTTP says: 
+'IPv4 and IPv6 addresses in the ARP table:
+'Init system is: 
+'Kernel: 
+'LESSHISTFILE=/dev/null less
+'Linux
+'MYSQL_HISTFILE=/dev/null mysql
+'ORC_ECHO_FILE
+'Orc
+'PSQL_HISTORY=/dev/null psql
+'Pinging broadcast.
+'Please wait...
+'SCTP enabled and withsctp callable
+'SCTP enabled but withsctp is not callable
+'SCTP kernel module exists but is not loaded
+'SCTP kernel module loaded
+'SCTP sockets in use
+'SCTP supported
+'Segmentation Fault.
+'TCP sockets in use
+'The echo_arguments test script
+'The echo_function
+'This is a output line to stderr
+'This is seriously rude...
+'Typical directories for tmp files:
+'Use existing shunit2 framework
+'Warning: backup variable with script file is not available
+'Warning: ignore HTTPS_PROXY value and use https_proxy value
+'Warning: ignore HTTP_PROXY value and use http_proxy value
+'\n
+']+
+'^ *#
+'^ *use *strict *; *$
+'^ *use *warnings *; *$
+'^$
+'^sctp
+'^sctp 
+'_
+'_path_name
+'a2
+'aarch64
+'always
+'argument_1
+'argument_2
+'argument_A
+'argument_BB
+'arm
+'armeb
+'background
+'can not create anonymous file
+'check (1)
+'check (2)
+'check (3)
+'check (4)
+'check (5)
+'check (6)
+'check - memexec.pl is included
+'collect all readable .ssh/known_hosts files
+'coredumps disabled by limit
+'coredumps disabled by ulimit
+'crypt
+'dbus: 
+'does not support architecture 
+'echo
+'echo $HTTPS_PROXY
+'echo $HTTP_PROXY
+'echo $http_proxy
+'echo $https_proxy
+'error file
+'error file (T2)
+'error file (T3)
+'error message
+'error message (1)
+'error message (2)
+'error message in background mode
+'existing (2)
+'existing (4)
+'fallback
+'files with capabilities; name = caps
+'flat name
+'getent passwd
+'gethelp
+'getp
+'glibc: 
+'grep
+'hash
+'hit[$6] == 0 {hit[$6]=1; print $6}
+'home must be a dir
+'http-test
+'http2-test
+'http_proxy 1
+'http_proxy 2
+'http_proxy 3
+'http_proxy 4
+'http_proxy 5
+'http_proxy 6
+'https-test
+'https2-test
+'https://gtfobins.github.io/
+'https://raw.githubusercontent.com/bcoles/linux-exploit-suggester/master/linux-exploit-suggester.sh
+'https://raw.githubusercontent.com/zMarch/suspect/master/suspect.sh
+'https://whatismyip.akamai.com
+'https?://[^
+'https_proxy 1
+'https_proxy 2
+'https_proxy 3
+'https_proxy 4
+'https_proxy 5
+'https_proxy 6
+'hypervisor
+'i386
+'ia64
+'in download
+'in output
+'in return
+'incomplete
+'length(X)<length {X=$0}; END {print X}
+'less
+'less than 1 line
+'less than 10 lines
+'less than 3 lines
+'less than 5 lines
+'less than 5 lines in sfiles
+'less than 50 words
+'lines and words
+'listener
+'local
+'message (1)
+'message (2)
+'message (3)
+'message (4)
+'missing  (1)
+'missing  (3)
+'missing arguments: url and program name must be given
+'missing sfiles
+'missing the o.rc script in the cwd
+'must be 1 line
+'must not negative number
+'mysql
+'need address and netmask as arguments
+'netgrep
+'netstat -peanuto
+'netstat -peanuto | grep
+'no
+'not
+'not directory
+'not file
+'orc_local var
+'orc_local var=value
+'orc_noop
+'outp
+'output (1)
+'output (2)
+'output (3)
+'output (4)
+'output file
+'output file (T1)
+'output file (T2)
+'output file (T3)
+'output invalid
+'output is not null
+'output is null
+'output not null
+'output not null (1)
+'output not null (2)
+'output not null (3)
+'output not null (4)
+'perl
+'powerpc
+'powerpc64
+'powerpc64le
+'ps -weFH
+'psfull
+'psql
+'python
+'python2
+'python3
+'pythonX
+'raw.githubusercontent.com
+'rd.luks.uuid
+'re gonna look less dodgy in SOC
+'re not much of a threat unless you
+'returned false
+'returned false (1)
+'returned false (2)
+'returned false (3)
+'returned false (4)
+'returned false (5)
+'returned false (6)
+'returned falsei (2)
+'returned not false
+'returned not false (3)
+'returned not false (4)
+'returned not grep
+'rm -rf $HOME
+'root
+'setuid flagged files list; attribute user name
+'shunit2
+'sparc
+'sparc64
+'ssh
+'ssh -T -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+'stomp
+'test
+'test file 1 not removed
+'test file 2 not removed
+'test file not removed
+'testA.err
+'testA.txt
+'touch -r
+'try /etc/hosts
+'try /etc/lmhosts
+'try /etc/ssh/known_hosts file
+'type
+'typeset
+'vboxvideo
+'vim
+'vim -ni NONE
+'wb
+'wget
+'wget --no-hsts
+'x86_64
+'{ print $2 }
+'{ print $8 }
+'{print $2}
+'{print $3}
+'{print $4}
+'{print $6}

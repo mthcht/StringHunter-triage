@@ -1,0 +1,9 @@
+            https://github.com/FuzzySecurity/PowerShell-Suite/blob/master/Invoke-MS16-032.ps1
+  https://github.com/FuzzySecurity/PSKernel-Primitives/blob/master/Sample-Exploits/MS16-135/MS16-135.ps1
+"	$source = script_resource(""/script/Invoke-MS16135.ps1"
+"	bpowershell_import!($bid, script_resource(""/script/Invoke-MS16032.ps1"
+"	bpowershell_import!($bid, script_resource(""/script/ListAllUsers.ps1"
+"	bpowershell_import!($bid, script_resource(""/script/ListLogged-inUsers.ps1"
+"	bpowershell_import($bid,script_resource(""/script/SessionGopher.ps1"
+"                    bpowershell_import($bid, script_resource(""/script/LocalSessionManager.ps1"
+"                bpowershell_import($bid, script_resource(""/script/RegRdpPort.ps1"

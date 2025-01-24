@@ -1,0 +1,4 @@
+"printf( ""argument %2d is '%s'\n"", i, argv[i] );"
+"printf( ""exit code of the test program is %d\n"", argc-2 );"
+"puts( ""The echo_arguments test program"" );"
+"puts( ""This is a output line to stderr\n"", stderr );"

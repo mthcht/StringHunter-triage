@@ -1,0 +1,25 @@
+	foreach %cred (credentials()) {
+      $optionalCreds['Credential'] = $Credentials
+    if ($Credentials) {
+"		item ""Mimikatz Kerberos Credentials""{"
+"		item ""Mimikatz WDigest Credentials""{"
+"	""Extracts credential manager and vault credentials using SharpDPAPI.  Extracts DPAPI master keys using Mimikatz."""
+"      # Else, the user is using a master password. We can't retrieve plaintext credentials for it."
+"      $RDPFileObject.""Prompts for Credentials"" = ""No"""
+"      $RDPFileObject.""Prompts for Credentials"" = ""Yes"""
+"    ""Extracts credential manager and vault credentials using SharpDPAPI."","
+"    $Credentials = New-Object -Typename System.Management.Automation.PSCredential -ArgumentList $u, $Password"
+"    $RDPFileObject = """" | Select-Object -Property ""Source"",""Path"",""Hostname"",""Gateway"",""Prompts for Credentials"",""Administrative Session"""
+"    $RDPFileObject.""Prompts for Credentials"" = try { (Select-String -Path $Path -Pattern ""prompt for credentials:[a-z]:(.*)"").Matches.Groups[1]"
+"    if (!$RDPFileObject.""Prompts for Credentials"" -or $RDPFileObject.""Prompts for Credentials"" -eq 0) {"
+"  Must either provide credentials (-u and -p for username and password) of an admin on target boxes, or run script in the context of"
+"  a privileged user on the target boxes, in which case no credentials are needed."
+"""))},l.onabort=function(){r(new E(""Aborted"",""AbortError""))},l.open(n.method,n.url,!0),""include""===n.credentials?l.withCredentials=!0:""omit""===n.credentials&&(l.withCredentials=!1),""responseType""in l&&y.blob&&(l."
+"oid e.$message({type:""warning"",message:""Configure content can not be empty!""});fetch(""/api/config"",{credentials:""include"",method:""PUT"",body:e.textarea}).then(function(){fetch(""/api/reload"",{credentials:""include"""
+"r o=t.body;if(e instanceof m){if(e.bodyUsed)throw new TypeError(""Already read"");this.url=e.url,this.credentials=e.credentials,t.headers||(this.headers=new a(e.headers)),this.method=e.method,this.mode=e.mode,this"
+"signal=e.signal,o||null==e._bodyInit||(o=e._bodyInit,e.bodyUsed=!0)}else this.url=String(e);if(this.credentials=t.credentials||this.credentials||""same-origin"",!t.headers&&this.headers||(this.headers=new a(t.head"
+"tchData()},watch:{$route:""fetchData""},methods:{fetchData:function(){var e=this;fetch(""/api/config"",{credentials:""include""}).then(function(e){return e.text()}).then(function(t){e.textarea=t}).catch(function(t){e."
+"tchData()},watch:{$route:""fetchData""},methods:{fetchData:function(){var e=this;fetch(""/api/status"",{credentials:""include""}).then(function(e){return e.json()}).then(function(t){e.status=new Array;var o=!0,r=!1,i="
+[*] Enumerating credentials form Credential Manager...
+entapplication/x-gzipbad Content-Lengthbad manualFreeListbufio: buffer fullcleantimers: bad pclient_credentialsconnection is idleconnection refusedcontext.Backgrounddecoding error: %velem align too bigerror payl
+zipbad Content-Lengthbad lfnode addressbad manualFreeListbufio: buffer fullcleantimers: bad pclient_credentialsconnection is idleconnection refusedcontext.Backgrounddecoding error: %velem align too bigerror payl

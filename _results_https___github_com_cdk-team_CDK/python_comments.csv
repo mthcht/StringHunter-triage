@@ -1,0 +1,81 @@
+        # for --full
+        # print('invoke UnexpectedExit')
+        # print(e)
+        # return
+    #     black_list = black_list
+    # )
+    # 1.1 exploit privileged container with mount device"
+    # 1.2 exploit privileged container with cgroup"
+    # 2. shim-pwn"
+    # 3. docker.sock"
+    # BASE CDK
+    # EVALUATE"
+    # EXPLOIT"
+    # KUBE_CONFIG = '/Users/xy/.kube/config'
+    # Master node SSH
+    # TOOL"
+    # binary after build
+    # build
+    # build command
+    # check if upload success
+    # clear the crontab
+    # clear_all_env()
+    # container-based evaluate"
+    # cover crontab with backup file
+    # cp cdk from master node to target pod via (kubectl in master node)."
+    # evaluate in K8s
+    # exploit: --list"
+    # exploit: ak-leakage"
+    # exploit: docker-sock-check (will leave a container with image alpine:latest)"
+    # exploit: docker-sock-check"
+    # exploit: docker-sock-pwn"
+    # exploit: k8s-configmap-dump"
+    # exploit: k8s-secret-dump"
+    # exploit: mount-disk"
+    # exploit: mount-procfs"
+    # exploit: reverse-shell"
+    # exploit: service-probe"
+    # exploit: shim-pwn"
+    # exploit: webshell-deploy"
+    # host based evaluate"
+    # http://docs.paramiko.org/en/stable/api/client.html
+    # inside_container_cmd(
+    # k8s_pod_upload()
+    # local source-code dir to run `go build`
+    # make sure bind system:default:default to cluster-admin first (test/k8s_exploit_yaml/default_to_admin.yaml)
+    # print('done')
+    # run: check-ptrace"
+    # run: cronjob"
+    # run: docker-api-pwn"
+    # run: istio-check"
+    # run: k8s-backdoor-daemonset"
+    # run: k8s-mitm-clusterip"
+    # run: k8s-shadow-apiserver
+    # run: k8s-shadow-apiserver"
+    # run: rewrite-cgroup-devices"
+    # test evaluate in selfbuild k8s"
+    # test"
+    # test_auto_pwn()
+    # test_container()
+    # test_pod()
+    # tool: dcurl"
+    # tool: ifconfig"
+    # tool: kcurl"
+    # tool: nc"
+    # tool: probe"
+    # tool: ps"
+    # tool: ucurl"
+    # tool: vi"
+    # upload cdk to master node via ssh
+    # upload cdk to target pod then check command output using kubectl
+    # upload"
+    # you can keep it unchanged
+"
+"    #     cmd = 'evaluate --full',"
+"    #     docker_args = '--net=host',"
+"    #     image = 'centos:latest',"
+"    #     white_list = white_list,"
+"    # OCI runtime exec failed: exec failed: container_linux.go:344: starting container process caused ""text file busy"""
+"    # check_host_exec(r'cp -f /etc/crontab_bak /etc/crontab', [], ['cp'], False)"
+"    # docker run -v /root/cdk_linux_amd64:/cdk_linux_amd64 --rm --net=host ubuntu /bin/bash -c ""/cdk_linux_amd64 cmd"""
+"    # print('[TEST] [{}] {}'.format('Selfbuild K8s Pod', cmd_parsed))"

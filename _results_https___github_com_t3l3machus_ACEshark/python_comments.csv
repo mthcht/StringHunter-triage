@@ -1,0 +1,26 @@
+				# Check if hostname is resolvable
+				# Check if user has any rights on the service"
+			# Check if valid IP address
+			# Check if valid hostname"
+			# Highlight interesting"
+		# Initialize the ACE parser"
+		# Standard accounts
+	# ACE object types"
+	# Check if both cert and key files were provided"
+	# Extract service config values"
+	# Extractor Script Templates"
+	# Global"
+	# Mode selection control"
+	# Services config source control"
+	# Using Get-ChildItem to list services (default - More likely to work with a low-privileged account).
+	# Using Get-Service to list services (Cleaner, but won't work with a low-privileged account)."
+
+"				
+"	
+"
+# 
+# -------------- Arguments -------------- #"
+# Author: Panagiotis Chartas (t3l3machus)
+# https://github.com/t3l3machus
+#!/usr/bin/env python3
+''' Colors '''

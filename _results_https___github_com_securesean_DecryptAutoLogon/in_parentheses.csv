@@ -1,0 +1,75 @@
+"("""""
+"(""015a37fc-53d0-499b-bffe-ab88c5086040"""
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""AutoLogon Password: "" + result"
+"(""CCC Cleanup Managed Data"""
+"(""CCC Cleanup Native Data"""
+"(""Clean Length: {0} Max: {1}"", Length, MaximumLength"
+"(""DecryptAutoLogon"""
+"(""DefaultPassword"", policy"
+"(""MarshalManagedToNative"""
+"(""OpenPolicy Error: "" + winErrorCode"
+"(""OpenPolicy failed: "" + resultPolicy"
+"(""RetreivePrivateData failed: "" + winErrorCode"
+"(""SetTo: {2} ({3}"
+"(""ToString: {2} ({3}"
+"(""advapi32.dll"""
+"(""advapi32.dll"", SetLastError = true, PreserveSig = true"
+"(""user32.dll"", CharSet = CharSet.Unicode, SetLastError = true"
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"(Buffer, Length / UnicodeEncoding.CharSize"
+"(IntPtr hWnd, string lpText, string lpCaption, uint uType"
+"(MSDN: ""the structure members are not used, initalize them to NULL or zero"""
+"(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(LSAStringMarshaler"
+"(lus, memory, true"
+"(pNativeData, typeof(LSA_UNICODE_STRING"
+"(policy, key, ref result"
+"(ref aSystemName, ref ObjectAttributes, access, out policy"
+"(string key, IntPtr policy"
+('$(MSBuildExtensionsPath
+((string
+(7
+(8U
+(Buffer
+(Buffer != IntPtr.Zero
+(Configuration
+(ExtensibilityGlobals
+(LSA_UNICODE_STRING
+(LayoutKind.Sequential
+(Length + UnicodeEncoding.CharSize
+(MSBuildExtensionsPath
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(Platform
+(ProjectConfigurationPlatforms
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(System.IntPtr pNativeData
+(UInt16
+(UInt32 status
+(Windows Vista's default
+(aT^
+(bU	b
+(false
+(https://blog.cobaltstrike.com/2018/04/09/cobalt-strike-3-11-the-snake-that-eats-its-tail/
+(https://docs.microsoft.com/en-us/sysinternals/downloads/autologon
+(https://github.com/securesean/DecryptAutoLogon/blob/main/DecryptAutoLogon/bin/Release/DecryptAutoLogon.exe
+(https://github.com/securesean/DecryptAutoLogon/blob/main/DecryptAutoLogon/exe-assm.jpg
+(https://keithga.wordpress.com/2013/12/19/sysinternals-autologon-and-securely-encrypting-passwords/
+(myAllocated.ContainsKey(pNativeData
+(nativeSize
+(ntstatus
+(object ManagedObj
+(pNativeData
+(pNativeData != IntPtr.Zero
+(resultPolicy
+(resultPolicy != 0
+(str
+(str.Length * UnicodeEncoding.CharSize
+(string cookie
+(string str
+(string[] args
+(which I originally found on code project
+(winErrorCode != 0
+(x86

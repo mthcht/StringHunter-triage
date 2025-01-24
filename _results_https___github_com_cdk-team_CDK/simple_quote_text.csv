@@ -1,0 +1,391 @@
+"' * 10, "
+"'"""
+"'""ID"""
+"') ] && tag_pkg_num=$(echo ""$tag_distro_num_all"" | cut -d"
+"')"",""reason"":""Invalid"",""details"":{""name"":""kube-apiserver-10.206.0.11-shadow"",""kind"":""Pod"",""causes"":[{""reason"":""FieldValueInvalid"",""message"":""Invalid value: \""-shadow\"": a valid label must be an empty string or consist of alphanumeric characters, "
+"',  or "
+"', "
+"', ["
+"', [], ["
+"', and must start and end with an alphanumeric character (e.g. "
+"', cmd_parsed, pattern, "
+"', regex used for validation is "
+"', white_list, ["
+"',"
+"'/# github.com/,/has been explicitly marked deprecated here$/d"
+"'/root/cdk-fabric dcurl get http://127.0.0.1:2375/info """""
+"'/root/cdk-fabric run docker-api-pwn http://127.0.0.1:2375 ""touch /host/tmp/docker-api-pwn"""
+"'\""\\s][0-9a-f]{32}["
+"'\""\\s][0-9a-zA-Z]{32,45}["
+"'\""\\s][0-9a-zA-Z]{35,40}["
+"'\""\\s][0-9a-zA-Z]{35,44}["
+"'all exploits are finished, auto exploit success!"
+"'auto-escape \""touch /tmp/auto-docker-sock\"""
+"'auto-escape \""touch /tmp/auto-priv-cgroup\"""
+"'auto-escape \""touch /tmp/auto-priv-mountdir\"""
+"'auto-escape \""touch /tmp/auto-shimpwn\"""
+"'curl,wget,nc"
+"'echo ""AKIA99999999999999AB"" > /tmp/ak-leakage"
+"'find,ps"
+"'run docker-sock-pwn /var/run/docker.sock ""touch /tmp/docker-sock-pwn"""
+"'run k8s-cronjob default min alpine ""echo helloworld"""
+"'run mount-cgroup \""touch /tmp/mount-cgroup-success\"""
+"'run mount-procfs /host_proc \""touch /tmp/mount-procfs-success\"""
+"'run shim-pwn \""touch /tmp/shim-pwn-success\"""
+"'s/.*\perdir=\([^,]*\).*/\1/p"
+"'ucurl get /var/run/docker.sock http://127.0.0.1/info \""\"""
+"'upload CDK to ECS, ACK, Selfbuild-K8s"
+"'{""apiVersion"":""v1"",""kind"":""Pod"",""metadata"":{""annotations"":{""kubectl.kubernetes.io/last-applied-configuration"":""{\""apiVersion\"":\""v1\"",\""kind\"":\""Pod\"",\""metadata\"":{\""annotations\"":{},\""name\"":\""cdxy-test-2021\"",\""namespace\"":\""default\""},\""spec\"":{\""containers\"":[{\""image\"":\""ubuntu:latest\"",\""name\"":\""container\""}]}}\n""},""name"":""cdxy-test-2021"",""namespace"":""default""},""spec"":{""containers"":[{""image"":""ubuntu:latest"",""name"":""container""}]}}"
+"'{""apiVersion"":""v1"",...}"
+"'{print $1""-""$2}"
+"'{print $1"":""$2}"
+"'{print $2""-""$3}"
+'	sshd
+' 
+' ()/
+' -F 
+' -e 
+' -f 2 | tr -d 
+' -f 2- | tr -d 
+' -f1 | tr -d 
+' -f2 | cut -d 
+' -f2 | head -1 | tr -d 
+' -f2 | sed 
+' / 
+' /etc/*-release | cut -d
+' Konovalov (orginal exploit author); Brendan Coles (author of exploit update at 
+' Wojtczuk & Adam 
+' entries are all empty for 
+' instead of 
+' listing or 
+' mode and there
+' or 
+' output doesn
+' to 
+' | cut -d
+' | cut -d 
+' | cut -d/ -f2- | awk 
+' | sed 
+'#!/bin/sh
+'$!ba
+'$1
+'$NAME
+'$SECRET_PARAM
+'$name:$version
+'%s
+''
+'(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?
+'*
+'-
+'--cap-add=SYS_PTRACE
+'--help
+'--net=host
+'--privileged=true
+'--uname
+'-[\.0-9\+:p]+[-\+]
+'-r
+'-v
+'-v /proc:/host_proc
+'-v /tmp/ak-leakage:/tmp/ak-leakage
+'-v /var/run/docker.sock:/var/run/docker.sock
+'.
+'.*\[.*\].*
+'.format(
+'.replace(
+'/.dockerenv
+'/Users/xy/.kube/cdk.config
+'/Users/xy/.kube/config
+'/Users/xy/.ssh/id_rsa
+'/Users/xy/Desktop/lezhen-test-case/k8s/kubectl
+'/Users/xy/go/CDK/cmd/cdk
+'/Users/xy/go/CDK/cmd/cdk/cdk
+'/Users/xy/go/go1.16beta1/bin/go
+'/^Name:/d
+'/^Reqs:/d
+'/^Tags:/d
+'/api/v1
+'/cdk-fabric
+'/containerd-shim/
+'/kubernetes.io/serviceaccount/token
+'/root/.bashrc
+'/root/.ssh/authorized_keys
+'/root/cdk-fabric
+'/tmp/auto-priv-cgroup
+'/tmp/auto-shimpwn
+'/usr/bin
+'00000000a80425fb
+'1
+'118.195.140.100
+'12345
+'127.0
+'172.16.252.1
+'443
+':
+':a
+'<
+'=
+'>
+'AKIA99999999999999AB
+'Alibaba Cloud Metadata API available
+'CDK auto exploit via docker.sock
+'CDK auto exploit via mounted device in privileged container
+'CapEff:	00000000a80425fb
+'CapEff:	0000003fffffffff
+'Cloud Provider Metadata API
+'Commands and Capabilities
+'Containers
+'ContainersRunning
+'Desired=Unknown/Install/Remove/Purge/Hold
+'Discovery - K8s API Server
+'ECS
+'Execute Shell
+'Filesystem:ext4
+'Invalid
+'Invalid IP Range
+'K8s API Server
+'K8s Pod
+'K8s Service Account
+'MyValue
+'N
+'Name:
+'No such file or directory
+'OCI 
+'Options:
+'Possible Privileged Container
+'Pulling
+'SYS_PTRACE capability was disabled
+'SYS_PTRACE capability was enabled
+'Selfbuild K8s Master Node
+'Selfbuild K8s Pod
+'Selfbuild k8s master node
+'Sensitive Files
+'Services
+'System Info
+'Usage
+'[
+'[ERROR] {} while running cmd: {}\nexcepted {} pattern:\n{}
+'[Local]
+'[TEST] [{}] {}
+'[upload to host]
+'[upload] CDK binary to K8s pod:{}
+'[upload] CDK binary to self-build k8s master node
+'\ [0-9]+\.
+'\-ARCH
+'\-MANJARO
+'\-deepin
+'\.el
+'\.el[1-9]+[\._]
+'\.fc
+'\.fc[1-9]+
+'\.mga
+'\.mga[1-9]+
+'\033
+'\e[0;36m
+'\e[0;93m
+'\e[1;34m
+'\e[1;37m
+'\e[1;93m
+'\n
+'\spti
+']
+'^DISTRIB_RELEASE=|^VERSION_ID=
+'_
+'__main__
+'alpine:latest
+'api-server allows anonymous request
+'api-server response
+'apiVersion
+'atomic_t
+'available commands
+'bin-url
+'black
+'build CDK binary
+'cannot find kubernetes api host in ENV
+'cat /etc/crontab
+'cd {} && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 {} build cdk.go
+'cdk 
+'cdk evaluate
+'cdk run cap-dac-read-search
+'cdk run rewrite-cgroup-devices/mount-cgroup/...
+'cdk-backdoor-daemonset
+'cdk_mknod_result
+'cdk_v0.10
+'centos:latest
+'chmod a+x {}
+'containerd-shim
+'core dumped
+'cp
+'cp -f /etc/crontab_bak /etc/crontab
+'cred
+'current dir: /
+'current dir: /root
+'current user: root
+'deb
+'debugfs
+'debugfs -w cdk_mknod_result
+'docker stop $(docker ps -q) & docker rm $(docker ps -aq)
+'docker-api-pwn
+'docker-sock-pwn
+'done
+'dpkg -l
+'ed: 
+'empty
+'errors while update cdk binary.
+'evaluate
+'evaluate --full
+'exploit failed
+'exploit success
+'exploit-db
+'ext-url
+'failed
+'failed to dial Azure API
+'failed to dial Google Cloud API
+'finished
+'finished with output
+'forbidden this request
+'generate cronjob with
+'happy escaping
+'host unix-socket found
+'http://100.100.100.200/latest/meta-data/
+'https://172.21.0.1:443/api/v1/namespaces/default/pods?fieldManager=kubectl-client-side-apply
+'https://192.168.0.234:6443/api/v1/nodes
+'i@cdxy.me
+'ifconfig
+'input arg
+'input args
+'invalid
+'invalid input args
+'invoke UnexpectedExit
+'k8s_configmaps.json
+'k8s_secrets.json
+'kcurl
+'kcurl anonymous get https://172.21.0.1:443/api/v1/nodes
+'kcurl default get https://172.21.0.1:443/api/v1/nodes
+'key_filename
+'kubectl cp {} {}:{}
+'kubectl delete cronjob cdk-backdoor-cronjob -n kube-system
+'kubectl delete deployment mitm-payload-deploy
+'kubectl delete pod kube-apiserver-10.206.0.11-shadow -n kube-system
+'kubectl delete service mitm-externalip
+'kubectl exec myappnew -- curl 10.206.0.11:9443
+'kubectl exec {} -- {} {}
+'kubectl exec {} ls {}
+'listening insecure-port: 0.0.0.0:9443
+'lo
+'ls /tmp/auto-priv-cgroup
+'ls /tmp/auto-shimpwn
+'ls /tmp/docker-api-pwn
+'ls /tmp/docker-sock-pwn
+'m
+'my_value
+'myappnew
+'n3rgal
+'nc
+'net namespace isolated
+'no such file or directory
+'nodes is forbidden
+'options
+'pacman -Q
+'page_poison=1
+'panic:
+'password
+'pi3
+'probe
+'probe 1.1.1.1 22 10 1000
+'probe 1.1.1.1 22 50-999999 1000
+'ps
+'re in 
+'refcount_t
+'rm /tmp/ak-leakage
+'rm /tmp/auto-priv-cgroup
+'rm /tmp/auto-shimpwn
+'rm /tmp/docker-api-pwn
+'rm /tmp/docker-sock-pwn
+'rm /tmp/mount-cgroup-success
+'rm /tmp/mount-procfs-success
+'rm /tmp/shim-pwn-success
+'root
+'rpm -qa
+'run --list
+'run ak-leakage
+'run ak-leakage /tmp
+'run check-ptrace
+'run docker-sock-check
+'run docker-sock-check /var/run/docker.sock
+'run docker-sock-pwn
+'run istio-check
+'run k8s-backdoor-daemonset 1
+'run k8s-backdoor-daemonset default ubuntu whoami
+'run k8s-configmap-dump
+'run k8s-configmap-dump /tmp/jkdhahdjfka2
+'run k8s-configmap-dump auto
+'run k8s-mitm-clusterip default ubuntu 9.9.9.9 99
+'run k8s-secret-dump
+'run k8s-secret-dump auto
+'run k8s-shadow-apiserver anonymous
+'run k8s-shadow-apiserver default
+'run mount-cgroup
+'run mount-disk
+'run mount-procfs
+'run reverse-shell
+'run rewrite-cgroup-devices
+'run service-probe
+'run service-probe 127.0.0.1
+'run service-probe 192.168.1.1-^^10
+'run webshell-deploy js1p /tmp/1.jsp
+'run webshell-deploy jsp /tmp/1.jsp
+'run webshell-deploy php
+'run webshell-deploy php /var/www/html212/1.php
+'s 
+'s rank by 2 for distro match (and not in 
+'s/:amd64//g
+'s/D3L1m/\n/g
+'s/[\+-]//g
+'s/\n/D3L1m/g
+'s/^[0-9]//g
+'s/p[0-9]//g
+'scanning
+'schedule
+'selfLink
+'sensitive env found
+'service found in process
+'service-account is available
+'shell script saved to
+'slub_debug=-
+'sorbo
+'src-url
+'starting
+'starting container:
+'stderr\n
+'stdout\n
+'success
+'system:anonymous
+'system:serviceaccount:default
+'target container is not privileged
+'test-poc
+'the service-account have a high authority
+'the shell is not in a istio
+'to K8s api-server
+'ubuntu
+'ubuntu:latest
+'ucurl
+'uname -a
+'upload all done
+'vi
+'vnik
+'was mounted to
+'webshell saved in
+'white
+'www.exploit-db.com
+'xairy
+'{
+'{print $(NF-1)}
+'{print $1}
+'{print $2}
+'{print $3}
+'{print \$2}
+'{} --kubeconfig={} cp {} {}:{}
+'{} --kubeconfig={} exec {} -- ls {}
+'{} --kubeconfig={} exec {} -- {} {}
+'|
+'}

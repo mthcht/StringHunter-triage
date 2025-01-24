@@ -1,0 +1,3 @@
+        # If we find the SuperPuTTY Sessions.xml file where we would expect it
+"          $File = ""C:\Users\$MappedUserName\Documents\SuperPuTTY\Sessions.xml"""
+"   $SuperPuTTYPath = ""C:\Users\"" + (Split-Path -Leaf $UserObject.""Source"") + ""\Documents\SuperPuTTY\Sessions.xml"""

@@ -1,0 +1,109 @@
+"//
+"// 0x0009, //0x00120089,"
+"// 0x103 is Status Pending, it seems it works ok :S"
+"// COM, set the ComVisible attribute to true on that type."
+"// Console.WriteLine(""[+] InInitializationOrderModuleList:\t\t0x"" + InInitializationOrderModuleList.ToString(""X""));"
+"// Console.WriteLine(""[+] PEB Address: \t\t0x"" + pbi_addr.ToString(""X""));"
+"// Create debug process, map its ntdl.dll .text section and copy it to a new buffer, return the buffer address"
+"// LookupPrivilegeValue(NULL, ""SeDebugPrivilege"", &luid) would normally be used to get this value"
+"// LookupPrivilegeValue(null, ""SeDebugPrivilege"", ref luid);"
+"// [assembly: AssemblyVersion(""1.0.*"")]"
+"// e_lfanew in offset 0x3C in _IMAGE_DOS_HEADER structure, its size is 4 bytes "
+"// if (!VirtualProtect(localNtdllTxt, localNtdllTxtSize, dwOldProtection, &dwOldProtection)) {"
+"// uintptr_t hModule = (uintptr_t)LoadLibraryA(""wdigest.dll"");"
+//      Build Number
+//      Major Version"
+//      Minor Version
+//      Revision
+// 1 MB
+// BaseOfCode
+// Call NtReadFile
+// Call NtReadVirtualMemory
+// Check MZ Signature
+// Check MZ Signature (2 bytes)
+// Check Optional Headers Magic field value
+// Check Optional Headers Magic field value (2 bytes)
+// Check PE Signature
+// Check PE Signature (2 bytes)
+// Check if the read was successful and all bytes were read
+// Check status: 0x103 (STATUS_PENDING) is allowed
+// Close the handle
+// Compare with DLL name we are searching
+// Convert each character to lowercase
+// Convert to lowercase
+// Copy from one address to the other
+// Create a PROCESS_BASIC_INFORMATION structure in the byte array
+// Create byte array with the size of the PROCESS_BASIC_INFORMATION structure
+// Create debugged process
+// CreateProcess in DEBUG mode
+// DOS header (IMAGE_DOS_HEADER)->e_lfanew
+// Each section header is 40 bytes
+// Extract values
+// General Information about an assembly is controlled through the following
+// Get DLL base address
+// Get Ldr 
+// Get PEB Base Address
+// Get PEB->ProcessParameters
+// Get ProcessParameters->CommandLine
+// Get SeDebugPrivilege privilege
+// Get offsets
+// Get pointer to the buffer containing ntdll.dll
+// If 32-bit process these offsets change
+// Initialize UNICODE_STRING
+// IntPtr fileHandle;
+// Local DLL info
+// Marshal.SizeOf(typeof(UInt32)) + Marshal.SizeOf(typeof(IMAGE_FILE_HEADER)) = 24
+// NT Header (IMAGE_NT_HEADERS)->FileHeader(IMAGE_FILE_HEADER)->SizeOfOptionalHeader
+// NtCreateFile -> Get file handle
+// NtGetNextProcess + NtQueryInformationProcess -> Get lsass process handle 
+// NtOpenProcessToken + NtAdjustPrivilegesToken -> Enable SeDebugPrivilege privilege
+// NtQueryInformationProcess -> wdigest.dll address in lsass
+// NtReadFile -> Read DLL bytes
+// NtReadVirtualMemory -> Read values again
+// NtReadVirtualMemory to copy the bytes from ntdll.dll in the suspended process into a new buffer (ntdllBuffer)
+// NtWriteProcessMemory -> Write values
+// Ntdll .Text Section Address and Size from local process
+// Null-terminate
+// Open file
+// Open the process token
+// Optional Header(IMAGE_OPTIONAL_HEADER64)->DataDirectory(IMAGE_DATA_DIRECTORY)[0]->VirtualAddress
+// Other option is LoadLibrary: much simpler but there is not an equivalent in ntdll :(
+// Overwrite hooked ntdll .text section with a clean version
+// PE header location
+// Parse PE File
+// Query process information
+// Read
+// Read AddressOfFunctions: ExportTable(IMAGE_EXPORT_DIRECTORY)->AddressOfFunctions
+// Read AddressOfNameOrdinals: ExportTable(IMAGE_EXPORT_DIRECTORY)->AddressOfNameOrdinals
+// Read AddressOfNames: ExportTable(IMAGE_EXPORT_DIRECTORY)->AddressOfNames
+// Read BaseOfCode (4 bytes)
+// Read NumberOfNames: ExportTable(IMAGE_EXPORT_DIRECTORY)->NumberOfNames
+// Read SizeOfCode (4 bytes)
+// Read bytes
+// Read e_lfanew (4 bytes) at offset 0x3C
+// Read remote 16-bytes address
+// Read remote IntPtr (8-bytes)
+// Read remote Unicode string
+// Replace DLL
+// Return BaseOfCode and SizeOfCode as an array
+// Return the buffer
+// Search for pattern
+// Set the privilege
+// Set up OBJECT_ATTRIBUTES
+// Setting ComVisible to false makes the types in this assembly not visible
+// SizeOfCode
+// Terminate and close handles in debug process
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// Uint16 (2 bytes) + 2 Byte (1 byte) + 4 Uint32 (4 byte) - public UInt16 Magic; public Byte MajorLinkerVersion; public Byte MinorLinkerVersion; public UInt32 SizeOfCode; public UInt32 SizeOfInitializedData; public UInt32 SizeOfUninitializedData; public UInt32 AddressOfEntryPoint; public UInt32 BaseOfCode;
+// Uint16 (2 bytes) + Byte (1 byte) + Byte (1 byte) 
+// Version information for an assembly consists of the following four values:
+// VirtualProtect back to PAGE_EXECUTE_READ
+// VirtualProtect back to the original protection
+// VirtualProtect to PAGE_EXECUTE_WRITECOPY
+// Write
+// You can specify all the values or you can default the Build and Revision Numbers"
+// associated with an assembly.
+// by using the '*' as shown below:
+// debugged_process ntdll_handle = local ntdll_handle --> debugged_process .text section ntdll_handle = local .text section ntdll_handle
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from

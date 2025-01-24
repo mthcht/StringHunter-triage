@@ -1,0 +1,6816 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+ #&'(*,+
+ n;^
+Qkkbal
+i]Wb
+9a&g
+MGiI
+wn>Jj
+#.zf
++o*7
+!This program cannot be run in DOS mode.
+T?[:D_^
+?:%L1
+?|#nZa
+?>9Q
+ #&'(*,+02345
+1]M o
++&*r
+*ns,
+da}*
+jX*"
+ZY}D
+dX}K
+dY}K
+*z~L
+eja 
+*>~L
+*V~L
+_dX}P
+_dY}P
+_cX*j
+ X*~
+4X*"
+nX*j
+%rI)
+%r&*
+	rh*
+	r2-
+da}*
+ZnX}=
+bn}=
+nX}=
+nX}=
+dX}K
+nX}=
+dY}K
+dX}P
+dY}P
+_bj?
+_bj?
+_bY*
+dX}Z
+jXmY
+nYo,
+KYo{
+XYoz
+	Y(p
+_bn>
+?_b`
+lSystem.Resources.ResourceReader, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089#System.Resources.RuntimeResourceSet
+PADPADP
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "DiscardByFileExtension"
+MatchAction = "Discard"
+Description = "Skip any further scanning for files with these extensions."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.bmp",
+"\\.eps",
+"\\.gif",
+"\\.ico",
+"\\.jfi",
+"\\.jfif",
+"\\.jif",
+"\\.jpe",
+"\\.jpeg",
+"\\.jpg",
+"\\.png",
+"\\.psd",
+"\\.svg",
+"\\.tif",
+"\\.tiff",
+"\\.webp",
+"\\.xcf",
+"\\.ttf",
+"\\.otf",
+"\\.lock",
+"\\.css",
+"\\.less",
+"\\.admx",
+"\\.adml",
+"\\.xsd"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "DiscardByFileName"
+MatchAction = "Discard"
+Description = "Skip any further scanning for files with these names."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = [
+	"jmxremote\\.password\\.template",
+	"sceregvl\\.inf"
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepNameContainsGreen"
+MatchAction = "Snaffle"
+Description = "A description of what a rule does."
+MatchLocation = "FileName"
+WordListType = "Contains"
+MatchLength = 0
+WordList = ["passw",
+"secret",
+"credential",
+"thycotic",
+"cyberark"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepCmdCredentials"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["passwo?r?d\\s*=\\s*[\\'\\\"][^\\'\\\"]....",
+"schtasks.{1,300}(/rp\\s|/p\\s)",
+"net user ",
+"psexec .{0,100} -p ",
+"net use .{0,300} /user:",
+"cmdkey "
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayCmdByExtension"
+MatchAction = "Relay"
+RelayTargets = ["KeepCmdCredentials",
+"KeepAwsKeysInCode",
+"KeepInlinePrivateKey",
+"KeepPassOrKeyInCode",  "KeepSlackTokensInCode",
+"KeepSqlAccountCreation"]
+Description = "Files with these extensions will be searched for cmd.exe/batch file related strings."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.bat",
+"\\.cmd"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepCSharpDbConnStringsYellow"
+MatchAction = "Snaffle"
+Description = "Match SQL connection strings that appear to use integrated security (so no passwords)."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["Data Source=.+Integrated Security=(SSPI|true)","Integrated Security=(SSPI|true);.*Data Source=.+"]
+Triage = "Yellow"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepCSharpDbConnStringsRed"
+MatchAction = "Snaffle"
+Description = "Match SQL connection strings that appear to have a password."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["Data Source=.+(;|)Password=.+(;|)","Password=.+(;|)Data Source=.+(;|)"]  # ["(?!.+Integrated Security)Data Source=.+Password=.+"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepCSharpViewstateKeys"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["validationkey\\s*=\\s*[\\'\\\"][^\\'\\\"]....",
+"decryptionkey\\s*=\\s*[\\'\\\"][^\\'\\\"]...."]
+Triage = "Red" 
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayCSharpByExtension"
+MatchAction = "Relay"
+RelayTargets = ["KeepCSharpDbConnStringsYellow",
+"KeepCSharpDbConnStringsRed",
+"KeepCSharpViewstateKeys",
+"KeepAwsKeysInCode",
+"KeepInlinePrivateKey",
+"KeepPassOrKeyInCode",
+"KeepSlackTokensInCode",
+"KeepSqlAccountCreation",
+"KeepDbConnStringPw",
+"KeepCSharpDbConnStringsRed",
+"KeepCSharpDbConnStringsYellow"]
+Description = "Files with these extensions will be searched for CSharp and ASP.NET related strings."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.aspx",
+"\\.ashx",
+"\\.asmx",
+"\\.asp",
+"\\.cshtml",
+"\\.cs",
+"\\.ascx",
+"\\.config"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepConfigByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.htpasswd"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayConfigByExtension"
+MatchAction = "Relay"
+RelayTargets = [
+"KeepAwsKeysInCode",
+"KeepInlinePrivateKey",
+"KeepPassOrKeyInCode",  
+"KeepSlackTokensInCode",
+"KeepSqlAccountCreation",
+"KeepDbConnStringPw"]
+Description = "Files with these extensions will be subjected to a generic search for keys and such."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.yaml",
+"\\.yml",
+"\\.toml",
+"\\.xml",
+"\\.json",
+"\\.config",
+"\\.ini",
+"\\.inf",
+"\\.cnf",
+"\\.conf",
+"\\.properties",
+"\\.env",
+"\\.dist",
+"\\.txt",
+"\\.sql",
+"\\.log",
+"\\.sqlite",
+"\\.sqlite3",
+"\\.fdb",
+"\\.tfvars"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayJsByExtension"
+MatchAction = "Relay"
+RelayTargets = ["KeepAwsKeysInCode",
+"KeepInlinePrivateKey",
+"KeepPassOrKeyInCode",  "KeepSlackTokensInCode",
+"KeepSqlAccountCreation",
+"KeepDbConnStringPw" ]
+Description = "Files with these extensions will be searched for JavaScript related strings."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.js",
+"\\.cjs",
+"\\.mjs",
+"\\.cs",
+"\\.ts",
+"\\.tsx",
+"\\.ls",
+"\\.es6",
+"\\.es"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepJavaDbConnStrings"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["\\.getConnection\\(\\\"jdbc\\:",
+"passwo?r?d\\s*=\\s*[\\'\\\"][^\\'\\\"]...."]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayJavaByExtension"
+MatchAction = "Relay"
+RelayTargets = ["KeepJavaDbConnStrings",
+"KeepAwsKeysInCode",
+"KeepInlinePrivateKey",
+"KeepPassOrKeyInCode",  "KeepSlackTokensInCode",
+"KeepSqlAccountCreation",
+"KeepDbConnStringPw" ]
+Description = "Files with these extensions will be searched for Java and ColdFusion related strings."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.jsp",
+"\\.do",
+"\\.java",
+"\\.cfm"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepAwsKeysInCode"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["aws[_\\-\\.]?key",
+"(\\s|\\'|\\\"|\\^|=)(A3T[A-Z0-9]|AKIA|AGPA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}(\\s|\\'|\\\"|$)"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepDbConnStringPw"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["connectionstring.{1,200}passw"]
+Triage = "Yellow"~
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepInlinePrivateKey"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["-----BEGIN( RSA| OPENSSH| DSA| EC| PGP)? PRIVATE KEY( BLOCK)?-----"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepPassOrKeyInCode"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["passwo?r?d\\s*=\\s*[\\'\\\"][^\\'\\\"]....",
+"[_\\-\\.]?api[_\\-\\.]?key",
+"[_\\-\\.]oauth\\s*=",
+"client_secret"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepSlackTokensInCode"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["(xox[pboa]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-z0-9]{32})",
+"https://hooks.slack.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepSqlAccountCreation"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["CREATE (USER|LOGIN) .{0,200} (IDENTIFIED BY|WITH PASSWORD)"]
+Triage = "Red"P
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepPerlDbConnStrings"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["DBI\\-\\>connect\\("]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayPerlByExtension"
+MatchAction = "Relay"
+RelayTargets = ["KeepPerlDbConnStrings",
+"KeepAwsKeysInCode",
+"KeepInlinePrivateKey",
+"KeepPassOrKeyInCode",  "KeepSlackTokensInCode",
+"KeepSqlAccountCreation",
+"KeepDbConnStringPw" ]
+Description = "Files with these extensions will be searched for Perl related strings."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.pl"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepPhpByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["LocalSettings\\.php"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepPhpDbConnStrings"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["mysql_connect\\s*\\(.*\\$.*\\)",
+"mysql_pconnect\\s*\\(.*\\$.*\\)",
+"mysql_change_user\\s*\\(.*\\$.*\\)",
+"pg_connect\\s*\\(.*\\$.*\\)",
+"pg_pconnect\\s*\\(.*\\$.*\\)"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayPhpByExtension"
+MatchAction = "Relay"
+RelayTargets = ["KeepPhpDbConnStrings",
+"KeepAwsKeysInCode",
+"KeepInlinePrivateKey",
+"KeepPassOrKeyInCode",  "KeepSlackTokensInCode",
+"KeepSqlAccountCreation",
+"KeepDbConnStringPw" ]
+Description = "Files with these extensions will be searched for php related strings."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.php",
+"\\.phtml",
+"\\.inc",
+"\\.php3",
+"\\.php5",
+"\\.php7"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepPSHistoryByName"
+MatchAction = "Relay"
+RelayTargets = ["KeepPsCredentials",
+"KeepCmdCredentials",
+"KeepAwsKeysInCode",
+"KeepInlinePrivateKey",
+"KeepPassOrKeyInCode",  "KeepSlackTokensInCode",
+"KeepSqlAccountCreation",
+"KeepDbConnStringPw"]
+Description = "Files with these exact names will be searched for PowerShell related strings."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["ConsoleHost_history\\.txt"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepPsCredentials"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = [    "-SecureString",
+"-AsPlainText",
+"\\[Net.NetworkCredential\\]::new\\("]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayPsByExtension"
+MatchAction = "Relay"
+RelayTargets = ["KeepPsCredentials",
+"KeepCmdCredentials",
+"KeepAwsKeysInCode",
+"KeepInlinePrivateKey",
+"KeepPassOrKeyInCode",  "KeepSlackTokensInCode",
+"KeepSqlAccountCreation",
+"KeepDbConnStringPw"]
+Description = "Files with these extensions will be searched for PowerShell related strings."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.psd1",
+"\\.psm1",
+"\\.ps1"]
+Triage = "Green"s
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepPyDbConnStrings"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["mysql\\.connector\\.connect\\(",
+"psycopg2\\.connect\\("]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayPythonByExtension"
+MatchAction = "Relay"
+RelayTargets = ["KeepPyDbConnStrings",
+"KeepAwsKeysInCode",
+"KeepInlinePrivateKey",
+"KeepPassOrKeyInCode",  "KeepSlackTokensInCode",
+"KeepSqlAccountCreation",
+"KeepDbConnStringPw" ]
+Description = "Files with these extensions will be searched for python related strings."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.py"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepRubyByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["database\\.yml",
+"\\.secret_token\\.rb",
+"knife\\.rb",
+"carrierwave\\.rb",
+"omniauth\\.rb"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepRubyDbConnStrings"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["DBI\\.connect\\("]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayRubyByExtension"
+MatchAction = "Relay"
+RelayTargets = ["KeepRubyDbConnStrings",
+"KeepAwsKeysInCode",
+"KeepInlinePrivateKey",
+"KeepPassOrKeyInCode",  "KeepSlackTokensInCode",
+"KeepSqlAccountCreation",
+"KeepDbConnStringPw" ]
+Description = "Files with these extensions will be searched for Rubby related strings."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.rb"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayShellScriptByExtension"
+MatchAction = "Relay"
+RelayTargets = [
+#"KeepShellScriptCredentials",
+"KeepAwsKeysInCode",
+"KeepInlinePrivateKey",
+"KeepPassOrKeyInCode",  "KeepSlackTokensInCode",
+"KeepSqlAccountCreation" ]
+Description = "Files with these extensions will be searched for Bash related strings."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = [    "\\.netrc",
+"\\.exports",
+"\\.functions",
+"\\.extra",
+"\\.npmrc",
+"\\.env",
+"\\.bashrc",
+"\\.profile",
+"\\.zshrc",
+"\\.bash_history",
+"\\.zsh_history",
+"\\.sh_history",
+"zhistory",
+"\\.irb_history"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayVBScriptByExtension"
+MatchAction = "Relay"
+RelayTargets = ["KeepCmdCredentials",
+"KeepAwsKeysInCode",
+"KeepInlinePrivateKey",
+"KeepPassOrKeyInCode",  "KeepSlackTokensInCode",
+"KeepSqlAccountCreation",
+"KeepDbConnStringPw",
+"KeepCSharpDbConnStringsRed",
+"KeepCSharpDbConnStringsYellow" ]
+Description = "Files with these extensions will be searched for cmd.exe/batch file related strings."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.vbs",
+"\\.vbe",
+"\\.wsf",
+"\\.wsc",
+"\\.asp",
+"\\.hta"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayCertByExtension"
+MatchAction = "CheckForKeys"
+Description = "Files with these extensions will be parsed as x509 certificates to see if they have private keys."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.pem",
+"\\.der",
+"\\.pfx",
+"\\.pk12",
+"\\.p12",
+"\\.pkcs12"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepJenkinsByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["jenkins\\.plugins\\.publish_over_ssh\\.BapSshPublisherPlugin\\.xml",
+"credentials\\.xml"]
+Triage = "Red"\
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepDatabaseByExtension"
+MatchAction = "Snaffle"
+Description = "Files with these extensions are a little interesting."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = [
+"\\.mdf",
+"\\.sdf",
+"\\.sqldump",
+"\\.bak"]
+Triage = "Yellow"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepDefenderConfigByName"
+MatchAction = "Snaffle"
+Description = "Files containing Defender Configs are very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["SensorConfiguration.json"]
+Triage = "Yellow"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepDeployImageByExtension"
+MatchAction = "Snaffle"
+Description = "Files with these extensions are a little interesting."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = [
+"\\.wim",
+"\\.ova",
+"\\.ovf"]
+Triage = "Yellow"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepDomainJoinCredsByPath"
+MatchAction = "Snaffle"
+Description = "Files with a path containing these strings are very interesting."
+MatchLocation = "FilePath"
+WordListType = "Contains"
+MatchLength = 0
+WordList = ["control\\\\customsettings.ini"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepSCCMBootVarCredsByPath"
+MatchAction = "Snaffle"
+Description = "Files with a path containing these strings are very interesting."
+MatchLocation = "FilePath"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["REMINST\\\\SMSTemp\\\\.*\\.var",
+			"SMS\\\\data\\\\Variables.dat",
+			"SMS\\\\data\\\\Policy.xml"
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayUnattendXml"
+MatchAction = "Relay"
+RelayTargets = ["KeepUnattendXmlRegexRed"]
+Description = "Look inside unattend.xml files for actual values."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["unattend\\.xml",
+"Autounattend\\.xml"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepUnattendXmlRegexRed"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["(?s)<AdministratorPassword>.{0,30}<Value>.*<\\/Value>",
+"(?s)<AutoLogon>.{0,30}<Value>.*<\\/Value>"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepFtpServerConfigByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["proftpdpasswd",
+"filezilla\\.xml"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepInfraAsCodeByExtension"
+MatchAction = "Snaffle"
+Description = "Files with these extensions are very very interesting."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = [    "\\.cscfg",
+"\\.tfvars"]
+Triage = "Red"/
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepMemDumpByExtension"
+MatchAction = "Snaffle"
+Description = "Files with these extensions are a little interesting."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.dmp"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepMemDumpByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = [ "MEMORY\\.DMP",
+"hiberfil\\.sys",
+"lsass\\.dmp",
+"lsass\\.exe\\.dmp",     ]
+Triage = "Black"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepNetConfigCreds"
+MatchAction = "Snaffle"
+Description = "A description of what a rule does."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["NVRAM config last updated", 
+"enable password \\.", 
+"simple-bind authenticated encrypt",
+"pac key [0-7] ",
+"snmp-server community\\s.+\\sRW"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepNetConfigFileByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = [ "running-config\\.cfg",
+"startup-config\\.cfg",
+"running-config",
+"startup-config"]
+Triage = "Black"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayNetConfigByName"
+MatchAction = "Relay"
+RelayTargets = ["KeepNetConfigCreds"]
+Description = "Files with these name patterns will be searched for Cisco bits."
+MatchLocation = "FileName"
+WordListType = "Contains"
+MatchLength = 0
+WordList = ["cisco","router","firewall","switch"]
+Triage = "Green"I
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepNixLocalHashesByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = [ "shadow",
+"pwd\\.db",
+"passwd"]
+Triage = "Black"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepPcapByExtension"
+MatchAction = "Snaffle"
+Description = "Files with these extensions are a little interesting."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.pcap",
+"\\.cap",
+"\\.pcapng",
+Triage = "Yellow"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepCyberArkConfigsByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = [ 
+	"Psmapp\\.cred",
+	"psmgw\\.cred",
+	"backup\\.key",
+	"MasterReplicationUser\\.pass",
+	"RecPrv\\.key",
+	"ReplicationUser\\.pass",
+	"Server\\.key",
+	"VaultEmergency\\.pass",
+	"VaultUser\\.pass",
+	"Vault\\.ini",
+	"PADR\\.ini",
+	"PARAgent\\.ini",
+	"CACPMScanner\\.exe\\.config",
+	"PVConfiguration\\.xml"
+Triage = "Black"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepCyberArkByExtension"
+MatchAction = "Snaffle"
+Description = "Files with these extensions are QUITE interesting."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = [ 
+	"\\.cred",
+	"\\.pass"
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayInfraConfigByExtension"
+MatchAction = "Relay"
+RelayTargets = [
+"KeepNetConfigCreds"
+Description = "Files with these extensions will be subjected to a generic search for keys and such."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = [
+"\\.xml",
+"\\.json",
+"\\.config",
+"\\.ini",
+"\\.inf",
+"\\.cnf",
+"\\.conf",
+"\\.txt"
+Triage = "Green"N
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepWinHashesByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = [ "NTDS.DIT",
+"SYSTEM",
+"SAM",
+"SECURITY"]
+Triage = "Black"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepCloudApiKeysByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.tugboat"]
+Triage = "Black"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepCloudApiKeysByPath"
+MatchAction = "Snaffle"
+Description = "Files with a path containing these strings are very very interesting."
+MatchLocation = "FilePath"
+WordListType = "Contains"
+MatchLength = 0
+WordList = ["\\\\\\.aws\\\\",
+"doctl\\\\config.yaml"]
+Triage = "Black"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepFfLoginsJsonRelay"
+MatchAction = "Relay"
+RelayTargets = ["KeepFFRegexRed"]
+Description = "Files with these extensions will be searched for Firefox/Thunderbird backups related strings."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["logins\\.json"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepFFRegexRed"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexes are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["\"encryptedPassword\":\"[A-Za-z0-9+/=]+\""]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepDbMgtConfigByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["SqlStudio\\.bin",
+"\\.mysql_history",
+"\\.psql_history",
+"\\.pgpass",
+"\\.dbeaver-data-sources\\.xml",
+"credentials-config\\.json",
+"dbvis\\.xml",
+"robomongo\\.json"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepGitCredsByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.git-credentials"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepShellHistoryByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.bash_history",
+"\\.zsh_history",
+"\\.sh_history",
+"zhistory",
+"\\.irb_history",
+"ConsoleHost_History\\.txt"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepShellRcFilesByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.netrc",
+"_netrc",
+"\\.exports",
+"\\.functions",
+"\\.extra",
+"\\.npmrc",
+"\\.env",
+"\\.bashrc",
+"\\.profile",
+"\\.zshrc"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepPassMgrsByExtension"
+MatchAction = "Snaffle"
+Description = "Files with these extensions are very very interesting."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.kdbx",
+"\\.kdb",
+"\\.psafe3",
+"\\.kwallet",
+"\\.keychain",
+"\\.agilekeychain",
+"\\.cred"]
+Triage = "Black"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepPasswordFilesByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["passwords\\.txt",
+"pass\\.txt",
+"accounts\\.txt",
+"passwords\\.doc",
+"pass\\.doc",
+"accounts\\.doc",
+"passwords\\.xls",
+"pass\\.xls",
+"accounts\\.xls",
+"passwords\\.docx",
+"pass\\.docx",
+"accounts\\.docx",
+"passwords\\.xlsx",
+"pass\\.xlsx",
+"accounts\\.xlsx",
+"secrets\\.txt",
+"secrets\\.doc",
+"secrets\\.xls",
+"secrets\\.docx",
+"secrets\\.xlsx"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepFtpClientConfigConfigByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["recentservers\\.xml",
+"sftp-config\\.json"]
+Triage = "Red"G
+[[ClassifierRules]]
+EnumerationScope = "ContentsEnumeration"
+RuleName = "KeepRdpPasswords"
+MatchAction = "Snaffle"
+Description = "Files with contents matching these regexen are very interesting."
+MatchLocation = "FileContentAsString"
+WordListType = "Regex"
+MatchLength = 0
+WordList = ["password 51\\:b"]
+Triage = "Red"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepRemoteAccessConfByExtension"
+MatchAction = "Snaffle"
+Description = "Files with these extensions are a little interesting."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.rdg","\\.rtsz","\\.rtsx","\\.ovpn"]
+Triage = "Yellow"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepRemoteAccessConfByName"
+MatchAction = "Snaffle"
+Description = "Files with these exact names are very very interesting."
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = [ "mobaxterm\\.ini",
+"mobaxterm backup\\.zip",
+"confCons.xml"]
+Triage = "Black"K
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "RelayRdpByExtension"
+MatchAction = "Relay"
+RelayTargets = ["KeepRdpPasswords"]
+Description = "Look inside .rdp files for actual values."
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.rdp"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepSSHKeysByFileName"
+MatchAction = "Snaffle"
+Description = "SSHKeys"
+MatchLocation = "FileName"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["id_rsa",
+"id_dsa",
+"id_ecdsa",
+"id_ed25519"]
+Triage = "Black"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepSSHFilesByPath"
+MatchAction = "Snaffle"
+Description = "Files with a path containing these strings are very very interesting."
+MatchLocation = "FilePath"
+WordListType = "Contains"
+MatchLength = 0
+WordList = ["\\\\\\.ssh\\\\"]
+Triage = "Black"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "KeepSSHKeysByFileExtension"
+MatchAction = "Snaffle"
+Description = "SSHKeys"
+MatchLocation = "FileExtension"
+WordListType = "Exact"
+MatchLength = 0
+WordList = ["\\.ppk"]
+Triage = "Black"
+[[ClassifierRules]]
+EnumerationScope = "FileEnumeration"
+RuleName = "CertContentByEnding"
+MatchAction = "Relay"
+RelayTargets = ["KeepInlinePrivateKey"]
+Description = "Files ending like this will be grepped for private keys."
+MatchLocation = "FileName"
+WordListType = "EndsWith"
+MatchLength = 0
+WordList = ["_rsa",
+"_dsa",
+"_ed25519",
+"_ecdsa"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "DirectoryEnumeration"
+RuleName = "DiscardLargeFalsePosDirs"
+MatchAction = "Discard"
+Description = "File paths that will be skipped entirely."
+MatchLocation = "FilePath"
+WordListType = "Contains"
+MatchLength = 0
+WordList = [
+	"\\\\puppet\\\\share\\\\doc",
+	"\\\\lib\\\\ruby",
+	"\\\\lib\\\\site-packages",
+	"\\\\usr\\\\share\\\\doc",
+	"node_modules",
+	"vendor\\\\bundle",
+	"vendor\\\\cache",
+	"\\\\doc\\\\openssl",
+	"Anaconda3\\\\Lib\\\\test",
+	"WindowsPowerShell\\\\Modules",
+	"Python27\\\\Lib"
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "DirectoryEnumeration"
+RuleName = "DiscardWinSystemDirs"
+MatchAction = "Discard"
+Description = "File paths that will be skipped entirely."
+MatchLocation = "FilePath"
+WordListType = "Contains"
+MatchLength = 0
+WordList = ["\\\\winsxs",
+"\\\\syswow64",
+"\\\\system32",
+"\\\\systemapps",
+"\\\\windows\\\\servicing",
+"\\\\servicing",
+"\\\\Microsoft\\.NET\\\\Framework",
+"\\\\windows\\\\immersivecontrolpanel",
+"\\\\windows\\\\diagnostics",
+"\\\\windows\\\\debug",
+"\\\\locale",
+"\\\\chocolatey\\\\helpers",
+"\\\\sources\\\\sxs",
+"\\\\localization",
+"\\\\AppData\\\\Local\\\\Microsoft",
+"\\\\AppData\\\\Roaming\\\\Microsoft\\\\Windows",
+"\\\\AppData\\\\Roaming\\\\Microsoft\\\\Teams",
+"\\\\wsuscontent",
+"\\\\Application Data\\\\Microsoft\\\\CLR Security Config",
+"\\\\servicing\\\\LCU"]
+Triage = "Green"
+[[ClassifierRules]]
+EnumerationScope = "ShareEnumeration"
+RuleName = "DiscardNonFileShares"
+MatchAction = "Discard"
+Description = "Skips scanning inside shares ending with these words."
+MatchLocation = "ShareName"
+WordListType = "EndsWith"
+MatchLength = 0
+WordList = ["\\\\print\\$",
+"\\\\ipc\\$"]
+Triage = "Green"w
+[[ClassifierRules]]
+EnumerationScope = "ShareEnumeration"
+RuleName = "KeepDollarShares"
+MatchAction = "Snaffle"
+Description = "Notifies the user that they can read C$ or ADMIN$ or something fun/noisy, but doesn't actually scan inside it."
+MatchLocation = "ShareName"
+WordListType = "EndsWith"
+MatchLength = 0
+WordList = ["\\\\C\\$",
+"\\\\ADMIN\\$"]
+Triage = "Black"
+[[ClassifierRules]]
+EnumerationScope = "ShareEnumeration"
+RuleName = "KeepSCCMShares"
+MatchAction = "Snaffle"
+Description = "Notifies the user that they can read SCCMContentLib$ so they can take CMLoot for a spin."
+MatchLocation = "ShareName"
+WordListType = "EndsWith"
+MatchLength = 0
+WordList = ["\\\\SCCMContentLib\\$"]
+Triage = "Yellow"TL
+o:l^
+1g~5Q/(cI
+jDOx
+S	}&_
+G"):a
+23	I
+}[Fnu^*
++_wR0k
+x;p%
+LvGC
+n*p&
+bz%,
+s*Ps^0
+f`* G
+P6+7
+"xi]
+<%Qn
+cK0O
+,7 c
+z3)C}n
+2@fg
+ASRd
+c<U;3P
+xe~^
+dH7k]
+Xk,mr
+<1_{
+eNi^
+J`+@
+%f*1
+^]7l
+R5i;
+pdXx
+;w	t
+!Mq{
+5#*q
+	o@zQ
+KPUU
+}cA,
+nE1z
+pTr	8
+ uB>
+YfpSN~
+g0l"
+dm#l
++d1A
+VX>,
+ut65*ai
+j("9s}U)
+MB?H
+78mf
+^fqW
+@'v+
+f@o%
+?S@!D
+=A2Q
+s$^5
+J.U>_
+b>7N+
+pS{T
+LE\"
+\s!P
+oB5&F)
+G5<-
+WMUL
+ud).)f
+}1[G{
+;/T&
+aWno
+&V{V
+tDqN
+5DmP:W
+cff)lW
+@UfS
+zE+1
+qSO^
+![c|
+m#kE
+DL|o
+d, e
+_'Ks
+3Z;$}k
+hp&Hi
++q{x
+;I2c
+v.@Vt4
+'uY</*
+1ewr
+cFn1
+T9OPx
+VQlo
+~c+a
+dy!Af*
+Np0M|5j3
+Kbld#
+H\12
+"}Fz
+=an+
+)Ts	h
+`lnG
+v+|J[
+9N(=
+^ fjq*
+QwXLR
+g{eP
+s$qR6
+0_-/
+8>Lle
+.thV
+;]K([
+KJ1g
+@J~(
+'sSd
+I3I>
+(D\G
+DF'SS
+mE^o@ZmL
+*.1?
+{Une
+=7j?Mv\
+Uf8P
+_VG/C
+!'.S
++Yl!0
+V{el
+gX;(
+.#S:>
+(-nOM$
+,@ih
+8.AnI
+=nese
+70\W
+K.\jb2K
+uXGa
+A]Of,
+|H+F;
+y/yQ0
+y	b#+
+0U:v
+&`.C
+6RQ>=^
+2xeU
+vVBG
+SAj`
+q&ms
+ F\!
+fCC`U@
+er'm
+<7wb
+Ov[^
+>d2I5&
+BzQ9D
+&	K7w
+Q#p<k
+O"@i
+A"Hk
+9WO_J?
+L}%v
+QUrz
+~xcfo
+dzfLaV
+Mb("(
+t[kJ
+-ZR[
+{=HF
+kFeS
+Sbk%
+0Y]?]
+:Sa>
+9>d[
+Vj'<g
+#lV#
+29xJ
+C7P27w)
+!nfR
+I;Sp
+@<c`
+a>Lk
+BOXX@
+wK-;g
+m!x!
+f_rg
+'+8@
+q$rzOx
+\(R0f%>
+U:gpuI
+AcNY
+ooV7
+v=7Xoj^i
+S`<@
+Qc%5F
+k5oV
+	Z\)o*
+Ymp9
+eWw8J
+m<qM
+L?k.
+e4qq
+o\ZN6
+Mmd@%"
+dtQS
+Fb4F
+6gg2
+JC[6y
+QUegt
+s#	?
+(EDK
+_Et2y
+-|Mz
+1i	K
+aTcb
+#	G/
+X	_u
+sb]=
+;ig|
+IOaQc
+F0 "(6
+$G/+
+*-Wy]1
+|%t=
+o}0e
+@.zF
+:5,;
+u{!Q
+Z1:=
+}2Vmk
+[WeD
+6^wh
+]|wM
+BM%#
+xOCo7k
+@%hj1
+Ws:"
+v}0f
+1nTX
+/Onf
+=M}#
+q/z%
+Jf?:h
+Bdg$hT
+y+\H
+pX/7
+?	lw
+2j>(2C	l
+KF$F
+)W 1
+o:l^
+ay\#
+}qI`26
+#)"'
+ IRc
+,a}U
+*Cmn
+	0gm%q
+$QM~%Vd
+X@G8
+?ulm
+ZVS.G
+-*#{"&
+1UgsP
+4{f8Y
+%qU 
+`ic;K
+P?tY
+:lU3
+QC1z
+g3Ya
+AfXQm7b%
+%v Q+
+OHCZ
+9r63j
+_p{S
+*)$[
+Kub]
+u]%y
+r+hx
+(e#]
+^]R$
+ E9$\
+=p],
+[Gr(
+P&?D
+0	l71
+SH%Ls
+\\9\
+kD)?k%
+f.xt
+\6j\1r
+fu}vv&Z
+5`h%
+G'Mw
+\}{cR
+2JSlx
+<I!?c>
+_?=P
+~jN#
+z9{Qx
+DK)W
+~-%l
+Q\Nb~
+Y	',
+667,"J0
+e7Cjq
+N=FzF
+;mj2
+duE|
+=&}?b"-|
+,7nZ
+I`#V=
+N7qe$
+'D`y
++6GP
+mnr7BX:XQf
+%=e2
+G	]\
+A+=<)
+p&u@}$
+}&e[:
+v:0n^
+ (``
+/5/0<
+H6avezl
+/@j1
+PXJi
+g`aO
+Fm@{C;
+:O$t[$
+'3L>KC
+7NhA
+y;~t
+5=3]
+C3# 
+0e<)
+?0Z}1
+901o
+vT~9
+P&7qN
+unRkeU7vw[/
+id	5
+ l|^
+II<~
+_e(o
+VP]6G
+P*8m
+Sm;/@:9#
+q]^pf
+=`bf
+Ft9=
+'~7p
+|d\A|
+5gin
+D^c#
+=<\Y
+\^g$
+=::5t#>
+:D{!
+o{x:
+BK_o
+i]O.O$
+9r]g[
+\;BJ&
+AAnzby
+,X.+
+)S#c
+-(:t,;
+d6_}
+QeVb
+dc~I
+	o2H1
+[vL0
+p^T@
+<!9U
+H4//
+$>/(
+3t(A
+9WZD
+jA)_
+[Zk?
+F@6u
+/;"0
+;8VM
+UR#'T
+<fM}
+m? ^
+-z];x
+$*'7
+h~iE
+h4C}
+"1Gb
+%r;5
+sD}Hdf
+)|os
+l'/7
+	Z%A
+WI)aU
+e'I	
+_|)o&"u
+{}=I"O
+=&>/
+$%({(
+<r"g
+w>RhJ
+M],~+
+rv~t
+qi_U
+<I\mN-D
+#"Rw
+m}B)6D<
+bV,+
+CvSx
+5a)}
+AIf2
+I4aC$J
+EL"f
+Dxys
+wj[Jt
+ nbd
+]0cLW+
+EN>W
+qRNh
+qs y
+eHp;Nh=}
+5^z58
+i3Z@`[	
+tiLV
+aiv5
+S$D%+
+V!lv.4
+8]%2
+i#~-&4I
+r[D@
+es)v
+B;&~=rW
+Y%Pv
+jK:s
+VWkQ
+"\v0Z
+@Hfq
+-Tc:
+9x	"
+gj ~
+KAJ^}"n
+$~!v
+&/GP}B
+%>n9T=
+bMsC
+m?bM;Q
+}!yc
+I=`I
+b-!Mt
+O8r>
+-PUf
+P-.zT
+Jwbl
+h:1|F
+Fo:F
+*?Bni
+^_Sq
+X{DY
+{E2n
+Sj=5~
+4-(,
+Aiv8c
+l=@S
+?Mg$
+8POl
+}jTza
+dT<&
+io#E
+yD=9Ab
+m"eMsBT
+k\X5
+k@~^
+(dGD
+r{cF
+gXVG
+qFc0
+9\zJk
+0jVw
+RS^{
+ZM`E
+T7#$
+.#2[
+,nKR
+mMeY-/
+6>NK:/
+|ZaK
+j:b0H
+ghl(
+QU7C
+,aG;w
+@:{`
+#a74
+;.Yu
+#@}C
+Qkc4
+(zQ%_
+93/P*
+Z=gv
+o@ZE
+BG{]
+?WU=
+1SJ2
+V%bq
+<$~1!
+\uxy
+t7_?T2
+R`[e
+	DwN
+i$|`b]
+hIn:
+rdT*
+m`DR
+	9M[
+e6NcKG
+(Lz/
+@uE(u
+m?4<
+c V_
+U}gjH
+cckB]>
+p6]Tj
+")T>
+{K3^L
+rfitr
+p^9P
+9~gS
+)8F.2g
+wO#z
+&/@Yh\G
+oC%[
+$x8;2#
+sk7W
+@(sa
+jaS@
+G;F7
+.LcKj
+wE50
+	}x))Had5cgr\
+<}$h\
+:54iEO
+)KpMU
+.wxf
+A.5Y
+34# 
+Fy4L
+ZI3`
+xVG`
+E](K{"w2
+' XT_
+cmu\
+/kYQ
+ArsU.
+fG1\
+txpIY1
+))Ab(
+M0:2o
+`2tyGkS
+696J
+gLO|
+:\4Lk
+KR#?e
+a@mh
+STdT
+PJ+<
+_E5!
+9"hM
+Gx5x
+2Z`*<
+qz^!Jt
+BVGg
+-|.{
+<&$F
+jy\M
+)XRp
+wJ<s
+9Dq0:
+6m*t
++%&_
+@!5]
+??t?h
+OKQr
+#d`=
+UM	"X
+(Y^/Z
+T)%|X
+Uf41fw
+P!c=
+?<Uo
+v+st
+ff6U
+b("L~
+Z~9_/
+iba<z%
+NiLe
++PHr
+{Xg0
+>Gt-
+oslKN
+ZzlS
+xa(4D
+Y'b{
+Ck7	x
+!B5{1I
+e;#7
+?42;
+^ahi
+38$ v.;wv(
+MbVru
+]{UR
+zHc;
+-~lj47
+>S4y
+NVz+
+!Ke^
+ex:m
+>jI`
++%Cc
+g(,,
+"D$M
+}av^n
+,M`r
+MSN3
+C"|G8
+RRp6
+oFg&<5
+UX#g
+hDOO
+sD< 
+G\L{2w
+5y<=dJ
+G,@R
+Ty&Nv
+.d:{
+gi.k
+qleO
+ :I1PaJMRUW
+l.A0
+Z6!v
+]y6x
+8STy
+JT;&
+~M"-
+y*9G!
+TnR.
+XxTtf
+7ca!}
+]T	$
+}S$T
+s+L+)V
+MWD8
+ZWQg>$XXX
+'-}d
+AL*GC
+^im-
+W{]y
+}v0|
+=xQA
+W$J0d
+I.	(
+^d>*
+5`BY
+n{W~
+1WE 
+&$AV
+i(9u
+fnZ.
+Pv{)
+,DG|
+af>D
+E"Z<
+6nbB
+lYEUE
+j\>hi'
+X4(v
++ddO
+~:buI#
+0qd[j9	]Q
+-Fm|V
+;0P?
+B`x6
+Sx':&
+@_8:
+=\nG;
+iSEK
+JdMj
+Bzx 
+.oBak6
+s%7i
+ANAH
+ok.L
+$?$.Z
+tX[F
+*i(f
+Ew&@
+}\HX
+lRoj
+oAeql.9
+>z<1
+eOr	
+%:'*
+GKt@
+|te'Z
+NpI	
+upfX0
+XlC[h\
+V&kuD
+*KzU
+{k<\
+FD]o
+'S3nh
+b=s`
+	T2"U
+V$pp
+=moG
+f$\_
+O+O?
+<,nTEe
+a#&l
+Oyz`q.
+hTHu0
+KA+4
+>e!K
+-KB{
+\/e'
+{)/D
+@]r-
+ 2{K
+h00Z
+|-Xe'GJ
+nadL8g
+b<g-$
+F 6}i
+lTy*
+VBsb\
+07;0
+F{V1
+K=-5
+f\!j{F
+	__g
+(o.WpK
+Mnu	_up
+dz*7
+e;D	1
+<~;+
+<d45
+!j7;d
+{Q4`=
+4 _z
+byrfl
+a9~R
+K$!~
+=%Ss
+v&0^K
+Ks9q:di
+quZ7
+1B0%
+U^Y3
++lh%
+r8"y
+;:]o S
+yKsv
+!1n9
+T*OW
+]#c2%
+Gc@D
+2	u1
+f\,E+fiA
+\W@&e
+52SYV5#kgTe
+am{i
+/d(_
+Yx]G)
+r>h-
+ Mo[T
+u?T^
+$2IXnF0r
+c [-
+	awa]
+Z!5C
+R#KM?
+qNEn-.
+FI0Q
+VgBFq
+^Zt(
+^hV	_
+0=8F
+RpYq
+8y x
+o,v.
+6#6p
+BT);
+~5e/.
+|m4[t
+u"Ti
+&>M"
+Y'Lg2EL
+H6[s
+`m0tz4u
+0w.n
+<:/'>
+HgPBc
+Whv@
+[1|&
+_\9o
+RYh3M
+Uh	y
+ld|3
+&Utt
+'/J-
+j1!^
+cmm~>kS
++O^v!
+[7?#=
+"p?!c
+qB!R
+pJH 
+cK F3
+v8`S
+42eG
+If_J
+8#{'
+_FEDr
+#$U?
+/x<0[
+>`mdq
+ bk+
+]OrCa
+E3JNR
+ Bkh
+6@Ls
+bzA<
+>7jg
+/r4o
+#GsX4x
+KEVWx|
+e!l5G
+mb\@6
+ln-a,
+%yP(xdj(6
+.S0I
+<ivD
+zE?B
+B 8{K
+P9:*}^
+P#l^
+T;/y
+Clsc:z4T
+zXYI
+NgFL#
+	qE[
+mc)>
+AbS;
+	D>{
+k=PC
+.tP.
+qYM,
+lqC*
+jtM+
+WHj(
+Yw`"Q=
+=kll
+, U52**Qz9
+pk\i
+3}8|:
+U5<f
+.v#Y
+%Q-U@:
+7st*
+O:bo
+%a%~
+zgu(
+>BI`
+ez2J<
+(.\qP
+2+-T
+D-e3c
+7KG`T
+Q/-7
+SP2.
+BD2vu
+s'V.
+<&4`Po
+K&9	
+&3l[(Sb
+DVyryi
+Pw:u
+>{&$yT#:
+Z{T 
+r-(&
++WR=%`
+PO:s
+K/aC
+4t~eBL
+P'6!
+-gmU![_1
+;>~^h
+[=@Hz
+3pkP^,^
+Ux"5
+Ajdiy
+?DX1
+,caq
+ZH9b
+GQ@cxV
+Z+i-
+K=ry
+febue
+\Wj?
+p0+B
+/CUz1
+5^VK
+'"9b7
+7)NJ<
+;g"f
+!@6\
+.EC#/#W
+zL9tSv
+q*,A
+Xq2E
+n/g'3{N 
+IgD-RP=
+[4pT7
+aSsc
+s31)
+OIZ.
+iryj
+SR@/O
+b7^zxp'I
+Phy5
+\@,*
+39@/\x
+Qw"z
+Stc?u=
+BSys
+}jdj
+XJUU
+\|Hf
+sitP
+mx]cT
+*%|&
+'R-x
+G_e*
+e=7g
+HF@tc,
+p7l{<heU,
+4-bp
+P[~Z)0
+vzkcs
+yXa_
+8%)s
+"OdD
+ye:F
+u	La
+Pyxp
+Q e%C
+"A,-4;
+W=Ja^|E
+)n3AR
+\3wL
+fAxX
+hTw$8
+t~_Q
+TC{V7+q
+8nMg
+ViwX
+Q.+!
+f$er
+[aaFJ
+g= j
+U.y:
+_ygy
+/P~@4
+n6Gk
+.(B~G
+&h8f
+_&O@
+U",{u9
+PttB
+=Y)7d.
+2e{]p[
+/(>&
+	U2%+
+p<W P
+Zuu5
+l?z'x~
+*sq$
+PB4$
+ipR\
+'O$b
+0r5%
+t{O_
+3]>r
+gdTV
+] U2
+3({e
+O'92Tg
+eXe]
+yHOT
+GPt?i
+83'3
+	 TO
+:S~)
+P12Z_
+vGMG
+n.'h
+=xnP
+?juL
+\"$73
+a:UH
+8Fb2_
+pYON
+t1BS
+o:l^
+^$*7
+; =A
+XVvG
+*gG#m
+i$]4%8I
+mS B
+yr!A'
+cTy}
+6DMCS
+Z,CJ
+3Ru8
+7DE=>
+PejL
+r)rv
+^(me
+}Zhv7\
+V&d\B
+6,;A
+75)?e5
+O:dJ
+~.3b
+']0O
+g;5D
+gjx7
+Cejl
+ ~+w
+LAu"
+ABA@_
+Tkwu
+5yzo
+At#yl	
+8)~p
+AR.5
+`C`6j
+DueoA
+iXn#A
+*1^I
+-e9}_
+2ShG
+08!6
+w5L;L
+Ub=j
+q![l
+Py!~
+pERDi
+4Rk76
+,TVg
+<xQ/y
+OV?V
+	:)=
+U,J"y
+ |0*i
+c?_D
+`y$HF
+75px
+/[w)
+3e8,Z
+WH+[
+Qz5?$K
+ M_h
+9?/C
+ >Y)
+[^lE-
+;2RG
+(vkp
+=cp>V(E
+tt3bf
+ljSN
+p/1\,
+j?lD+2
+~"_b
+9*2|
+49[9
+:VPx
+fv7wY/
+#/A 
+zT"Z
+	wj0o
+nsWw
+Y{oPh
+HJMo'&t}J%C
+m;_.
+`(^l
+c4o*jU
+|~Ks
+(+cLv
+mh*`@
+hoc!
+0o_Q
+w@:0$7I
+YT	{
+~BUk[GG
+|fXN
+O[X 
+_^~[j
+k-:,g	
+J)%q
+M=G8
+`S1T
+G*RIJ
+r(M!
+d,i$
+^Yih
+\f!M
+@gCi
+e7-7
+-no 
+'|*3
+Gu`c
+(	`0
+bdk5AZ
+`jBb
+*T"r;
+511o
+p2x!
+`[K[
+4V ,
+YIg<
+7g<c
+la{0
+w'Mmm
+S^NQ
+JYA6
+7HH	BH
+=<)"T*
+Wwrj
+0"'q
+RL+g
+ohHy
+cO2:g
+ID1,<
+J Lu
+6{V*M
+<^F	
+Upu^
+QRD@n
+:ZTQ*
+16KP
+KLqnxqK
+E 1F
+FZw%
+ZzhN"
+1(,)
+x7Vo
+Ely~$
+f>}yD
+;P<5
+)z6U
+DWzu
+(b7.
+-3*:0
+~bSy
+tEn	
+Z	{!~)
+C75{b>
+CK.&
+9A y
+]$1i[
+Uu{Kj
+y6}dj\
+4KLRf
+:YDe
+2XTY
+EPj|
+\M-\
+cPo@u
+2T{nB
+}STR
+bb%]	
+eLhL4
+UMAc#
++G2U
+d<oC
+LL_F
+y='qA
+mKR0H
+uH7p
+7]-L
+I#$!
+!-^	
+[\Rs
++;5wR
+ES1k
+SHmY7
+9r+h5
+~5@v
+o@	a
+vs-?
+Q|**{
+].+5=
+;c/{
+4v.h
+758^C
+EQmF
+W6\g
+,)8s8
+Iv2~3
+za	->^t
+vB@P
+e;hK
+YRS1v
+y v>G
+;7S3
+)J?B
+HEZE
+[BfK
+TP`k
+'O,+
+rpc%
+xyf|
+\vM4
+p1t\'
+bJ5qV
+3U`9
+8hgo
+;mWdI3
+!}&ph!kh|
+XJg.
+GpH<
+]V$7
+/V@y
+K"Ptu:3d
+ZaKj
+_}a6
+a|Aq
+A#("kK
+?tk6
+[>nx
+0@H 
+MS4u
+_ F(
+|;t]
+ifw8Ny
+Rhe~
+hR.I9
+6@BW
+Ivu]
+sU< z
+POZL
+/6T!
+udf9@
+(o[x
+q4*u
+C~HR
+\<$Q
+.~cIW#A
+fGkL
+u#n;
+l0#:J
+?+sz
+hL^M
+7|7M
+	ao`n
+5N$,
+n>/3
+:x	M}
+MDh_
+X5NY
+wfG)
+ Hg.
+ CaR
+]*=y
+j:j1I
+t~eAE
+Thl~1=V
+W35msU~
+yffk'
+|.sCLa
+b;-:xy
+GWnQ
+?Mt;
+R,v)
+?(Xsl
+D'^/
+0C"jm,
+I@~<
+s?	U
+_LK7
+9|0Bt
+')qY
+~oC8
+9V#s
+A#ny=
+P#JB`
+$f4;
+pj<@
+BIFQ
+.~d;*
+~6Xi
+sf3UJ
+SIeY
+P7rC
+lK(KZZf
+HBWF
+p'P"
+8MSu!
+MZIO
+-`?W
+5{!eow
+@}]M
+Y;EN
+xRGD3
+KcsU1{
+m'SoGJfM
+LPmT
+S|Y"1
+f]%!eHC
+Cc2$
+bRmU
+3sxf
+UK&R!{
+1hc4
+s1p+d
+l|iYQ
+RZ''
+1&,YX
+#pU8
+ :cD
+hV+h
+N"+C
+qnxO
+fgqn
+1"DS
+e|dX7
+UIF.h
+Li[}
+7][/
+zGq~j
+_&?d
+UhTl
+OG$<0
+(#	'
+6hq,<
+iUq=WB
+H /c
++^SYC0
+{^Hc
+EmB	
+iD4s
+t^3t
+f!34
+1&"6
+0RZul}
+AV_y?e
+6bo.;
+#3%$
+T[lhG
+lS%5t
+IYEWY
+j<-e
+%+lx
+]<=+h
+udI~
+%|F%
+#Vz7
+bGkTG-
+\i|K
+[Pp:
+	@fZ
+u$X"
+ CVk
+K0.C
+I+-C
+el0#M
+7Wy5
+"^X	"aO
+z1nM"
+q9*\
+zoL/
+Yr-cP
+No}7
+qD6F
+lc;[
+LfDdw\
+HOt_
+FKkp
+U,Du)
+5*l|@
+oDg!
+6@}k
+W<WuA
+$Yhv
+A_4f2
+|6Fb
+y"2#
+sFB&
+nI77
+0U;3
+\8 O\
+.Q{Lj
+!LYl
+VS~L
+O		IM
+:t	G
+`_F !
+ox|Z`]eb
+m\6T
+?_[vh
+@XB`
+~v4*
+(B[5
+W2q2e
+$U=w
+	#RTdu
+Fc]E
+Xo?xe
+rwPB
+K3gS-
+YPAaA
+D^c^
+XoFb
+d[t**
+>|h_
+8oI6
+e?eZ
+	!3n
+5ACP
+o(u]
+A9pU
+(:5\
+f+)s1+
+y4h(
+I&o&
+Q8kn
+eM7::	
+C-+K
+}&uv
+DKl$
+aMMci
+).>;
+5z.a/o
+=XOf[
+p)N@
+Npa-]X
+2KoK]
+	S-[
+=3s+
+^6KdY
+`isXU
+]IwV
+.9Qk 
+q6KP
+	Jy(
+6;7Z
+n'D+8
+<HR8@
+]1]_
+$$>P"
+RBS6:
+1q"K,
+w;qy
+6U!t
+@r&/o
+},4-
+rGnq.|1eeK
+A=/5=
+@Y W
+0#un
+F-\O
+k.%dmu
+t&W1
+q]o:
+0pji?
+SA`&8
+C0sW
+0<\[
+UuB}
+EYQCk
+LA"O
+\5K %w/
+v,M{MC
+p^& 
+:T6R
+f */n
+{<sO.i`r
+I]w%
+Ojd=
+0tM2*
+_.7^bF*
+vT`PU
+#l&qs
+/)@"
+;X!V
+M[z3
+9,/P
+>F@uO
+Z&"Z
+""v[
+h,^A
+w>P&
+N_.M
+XPYW
+fK9ho
+8@$/L
+k$z	
+Z!/{
+w#@`
+wCMo
++RZG<
+HkOg]r
+]i\R
+[<+g5
+m/iX
+o`IV
+bOK+y
+ ~,,]-X
+NZJZ
++Ucl
+j[`'o
+lK&	5:
+Xt.(
+c3D^Sm
+cJcw
+](F(
+=TuB
+V[w4N
+D27:W
+X5\"
+9Pwe
+*.|@
+Gwir	H:4
+$`M:
+}5Y.#v
+7 /&
+=X0S
+S-v8
+"nqR@
+c"<\
+"6B(
+MVu$Y
+oMx:
+^=*o
+U%{n
+)*Ql
+{zj4U
+E0hqv
+t]v5
+:OtJ
+?^Wp
++adD'
+N\!%v}
+~m6jh
+j/a|
+b-sQ#
+15r-
+C%&5
+(feP
+H|`S
+	p*|[
+8_Fg
+5q$)
+V#qqGg
+}z7?
+gykw
+YjBW
+}(e8
+gN*Q
+u3e|
+;JQi
+6V]>
+S%#B
+JG0A
+}-[N
+qOo}
+)sY-
+{E|.
+d[DW%
+L>t*
+7xNt
+InPx
+:+n{
+|v(t
+,u0s
+7LNO
+iP[e
+v/XD}
+EU0ej
+MM<M
+U-{\G)
+cGy t
+V'._
+6RK+A
+PWLM
+5bde
+c`JN
+2wJ@
+nadY
+JJuCiod
+QE.[
+7avg
+s(N7
+|lX"
+AoRv
+cjcf
+UJ@"9
+e&eA
+7:`L
+S@*h
+.%sO
+Ql#[[.@
+78o](-]-
+~.ux
+nZi%'
+l(nO
+l}`>]
+%]IYo
+yQGl
+N{o1Du^K[
+Y@X;-
+9:EV
+GHcL
+7giQf
+[YD~
+36F+
+_A_q8
+EopW
+$K"X
+ yNT
+2I&u
+28`3
+3V~0
+[(tn
+=W_4
+CThn
+|^8*
+kgnEn
+GMg5
+5"s)W
+]YEM
+(<NK
+~,a9
+$kI?`[
+q,h0
+t+5#(NR3
+EEHM
+(;PD
+kM;\0U
+W,sA"(
+ #X0
+QKd#f
+tZL	>
+6y<x
+8Q/Dt
+k2_aH
+.8?9
+PESq
+xg=|-("
+s7F2
+/m-7p
+U?\?
+?Z	H
+>V:w}
+	&	%t:
+:CW(_
+T*YP<**"
+\~Ch
+mu67
+		l	
+N14X
+iHZ-
+#*;Y
+L1hNe
+-&,r
+ULtT
+XQS&
+w3OF
+K``V.
+q4'lg
+F@^+
+nSY^h
+xM7t
+o,{K
+8,S^[
+4U7c
+4w9aW
+P'ST
+Gr<qM
+#9=R
+FTsws
+-{\U'
+AIN:	
+"#b	B=$
+{Kw^
+#[a_.zB
+y8eD
+Y<N<
+/uxE
+np2Me
+`6{ZV
++!Rll
+DQgOC
+grz.3S
+=4Bn
+KSJ}
+6t,d
+,%X~
+nh]O
+of`~)
+-+-rM89
+~wXK
+b1[W
+Kns8
+ekC8
+PFfR
+}vdU<
+\kSEdZ
+Z;)HF
+8DMg
+`.nK
+R%=(
+OMJ6
+<q}Y
+Np\Q
+pse5
+FUA"
+G-EV
+_MLR
+P/>2
+/7qX{s
+jc&K
+U|Es
+Y5hnD .jb
+Vp'!
+r"Q,V4
+yVwP-J
+TNt:Y
+K@lt
+fEX4
+O4zu=
+^dC7w
+<wbtjb
+N#P[
+WTYQ
+7vE"
+rN{>
+q2{1
+AAY|
+-P}W$
+n}+pB
+b&Jw
+ fBC=QJ
+57##
+yZ4!:
+*>9t'q
++_J?vOX
+l _Z
+	!^C
+:Q9K
+U_%Y
+?)IY
+2QqW
+4^Ghi
+*`|o>
+Ne<D
+0-w}
+RM{%
+Ld?X8
+WIlb
+F2w,
+3v{5
+#oJt,B_U
++Z3w
+alJY
+)9&a
+:&"h
+,RELl-W
+mM8)
+7C#$t
+kTeT
+n' ~B
++)&F
+U18+
+.%KB
+4)inz
+QH'~
+-)O#
+t(pN
+e &y+
+]\3n"y(
+i\"S
+NMcZs
+W7y^
+ha1t8
+7'0_DA1
+DCN@)
+uEhQ
+v":m
+HPvU
+E<y*
++.c!
+*Jol
+{dnl
+@*v7
+D2z)
+rRV@
+}hNE
+.E/w3
+S=JyJ
+C=$}Tx7
+DZf.x
+<y$:
+8z: Ew
+K`[L%,
+/cSX
+9%?$
+je#3
+//P&Q
+sEk)
+VYr$
+:eS%O
+Ib\U
+=P%4
+q>mB
+Dg5r
+5O*'
+v,(N2
+b\Rz
+XxhWx
+a$fL0
+k182
+A6r+
+Ca`3
+}<oLK6
+~yKQYI
++e)*
+$GCp
+89nS
+@Jid|
+IH-1V|
+Q!Dt{
+CI4/N1
+^/e*6
+@nf~
+-9!/q
+LV,U
+2u% 
+i?)`
+"~2b
+,VKX
+WUz+
+HnmT
+U'GQ
+9YRT
+/ZJw:X
+X<sa2R
+c0S`K
+HG`L3
+Ai5)@[Y
+- 4}
+$0y>
+$1Ti
+GZ+M
+<0jJ
+m%}Qe[
+},y4
+h/*t[
+U}F!
+E&v](
+].{|c
+s>OS
+`cSZU
+R}$P
+T~c!
+;D~O
+'aMi
+->>]
+%j)Hu*
+,FWO
+wBE-t
+c$t/Hz
+Nse("
+P]ap
+1K_i(Z
+IM$c
+;hvnF5
+	dxF
+e4SYU91n
+9`$Vp
+%S1xb
+No _fju
+r)2uZ
+r/(xW
+G/U(
+^AiE
+ul~J
+O[A)L
+Ful?
+`zSA
+N?1SK
+(;~J
+a)[=-8
+X{1'
+ApD'x
+&x2\z
+k$}^
+Yo{W
+-3l]
+<n$h
+Cp#{<
+Ui6N
+ =B$\~
+\#C[
+ +) uB
+m]][
+V}Hz	
+eljz
+fuK~
+UfR`
+[Bg5Q;
+n)PY|
+,KUJ
+<mO~
+pVo2
+!MyA(<[}
+xE8C
+FwrGC
+J*$M
+0~{L
+n*Ta
+8#= 
+,d1G
+qG,,6
+JqHJq
+[ZR\
+")R0.KB
+n;6s
+mK^X,
+G{-~%
+oW?z
+Yuq#
+II+D
+TuO0
+Vd~{
+OY7)
+1:D$
+_yI8wX,
+o1AEJ
+V&~ 
+MY2?'
+09Xf
+o^g-
+BpU9
+a((#
+M,W^
+3-$yl
+hgDN
+ljZ'
+3B yo
+.V*I<?.
+[:}"|Dr3
+O=?R5
+_jV<
+l[nk
+eB<Y;Ws&
+'2	z
+ZruZ
+TmEMa]=
+p:Ke
+XY&.
+Xd(v@
+? (W
++(AJ
+]VrJ
+c]m.
+fF&/2k 
+q]@F
+?CVW*
+$"S.,
+:pSp0
+q~Jm
+L%[,
+8bc)?uU
+WP1GQXY2
+um-K
+|"tSe
+sMP]
+Vl:-
+v{sH
+0weA
+'e#k;
+tocm
+6mS93
+c^gc
+t:3v
+,Tim
+I4mACc
+C)#G
+;zj#
+CS){
+E^A1_
+QU"(
+k\TpK
+Iq Z
+eFpI
+.0dI
+!lDn:
+1	GI
+<>hG
+Fct)
+-7$F
+:Vn|
+xa{T
+=!"nU
+c\L(g
+!X%],U
+(xNj
+8A0#
+k*(U`
+sa7}
+>"/g3
+l9CXQvT
+|pJ#
+@$le
+X(Hh'
+rfwqow
+!Uf!H
+GvRD_
+Hf^M
+SC&]
+eZOu
+>3T@`
+,+Q(
+.76N
+zw:fA
+`kpA2
+>',_
+W	;3Q
+h)D)
+,7P}N
+""h=
+s7R.
+yy.Y
++%La
+IalJT]E
+MKmzmB
+5Gi9
+\5 ]7
+l;`F
+ZG'5
+4 ^8
+W9Ae
+2Q	=h
+,x6F
+3x75
+bW@d 
+|mHp
+dXab"4
+fG&ja
+7~/"Gqg/9
+|#1A
+(w1`
+&/^*
+6:_c
+-*ZY`
+b1/U
+/'/K
++	^{02
+%zS<
+5NIQ
+4f#HV=
+Dt?&
+Lm>=
+9OV{\
+zXX7s
+gn42
+MppnJ
+.A!G
+Q;/c
+ig=W"n$
+g{T7
+:6 LsJk
+&/s'
+\i0 4y
+k9Yr
+*JZ	
+j3XX
+@C2Q
+:_bj
+7.L]
+jO^2
+S0{?
+.5tS
+3u\%{Q
+J=2_;
+*sL:[
+HJyl
+|;x&
+ple<
+H#Da
+[T71
+6)>;A
+N	j3
+4f- q<
+"Ma8Rg
+e3M%CMw
+9=*Pw
+BQD{
+?xnd
+@bKS
+1GqCL2
+A.A'
+Dbk&
+kQ,:
+/nDN
+t]}?
+dZ)g
+? y_
+8J&FZv
+05`U}"
+7HEn8?5eZh
+/N]Y
+s|AY
+E/sw
+/O9.
+	-<~
+S-)H
+Igz7v
+;yd)
+wnU9
+}Nt)
+vj5ln
+"362
+(5}M
+6)+R
+wnZi
+dx`,;E8
+'S;#
+a8C|
+,UDP
+ylKw
+\)Ud>Za
+~.T]
+J&Kj4
+KW'`
+i:.d6
+;fst
+C&2o
+QR6BoN
+75E^
+'v?N
+y2+d
+|`[)?E
+5>mn
+!gqZ
+fh#O
+Mhps
+];5}
+16E2
+"Y)EFi+xj
+NUL%
+Cr<n
+\5KzJ
+@9M{
+7.p;
+w\\H
+bk9|
+rzO_;{
+@SN*w{TJ
+`+0.i
+|sA.
+*O_`
+rr[m
+*pES
+fi@B
+MwD8.
+a#s9H
+?XwP
+t@yw
+GuL(|
+Hc"2
+(QVi
+SU)b
+/^)f
+}djs
+s[Dr
+`Q@U
+_:Md\
+"8]F
+5x%,T<
+N!o|
+6stxo5
+a%B;H|
+Xwey
+<`69S
+zehyV
+D0bM
+S3;_]
+BEbo
+2`	c
+C.YH
+,\$V)U\$
+6in4Kns
+WrS0#
+:hqb
+U^hJ;
+[Akb
+uRS"
+x,ZK|
+*0<E
+!f2*Y`
+(899
+cEWY
+1}/t
+oGc %
+,{J@_
+Ii$~N-
+!9,j~3Y
+cwU#Z:?
+bxh:Y
+IQ7`
+JJE`
+B,rW
+4AL)^Dy~I
+K|cY
+V]!a
+|su'	
+G/QB
+$$hikl
+ET@T<
+u5+P!
+X.,Q)
+{,csnd
+V<8]
+:Px>
+,?ZS
+d+i(oS
+<?@rB
+}p)w
+@E+D
+H5cz0{v
+$m,	
+H4D5
+}BG/S^![[
+t{A|
+Mj	~
+$p2I6S:?
+kPF_
+t]ja 
+(]ka
+=*0Mx
+j5Ir
+&/7e
+)r>3a
+88,wb`
+`,Rj[
+}tE]
+Z\R#_
+hH_&
+E)~k-
+e>WYX
+MS\t
+>iX+
+tVx?e
+A!1X
+cdj7z
+WEUn
+}kYa
+cOrY
+.gCC
+,:9o
+;pH%
+I-qZ
+ZFM]#	
+ZW(r+
+e8L{
+F,qD/
+3Gs(!M
+zWN'	
+j$6}
+(rBt
+r&@G
+tb^pF
+y6lE
+rVxq
+w!~V
+XuR*u&zt
+nty@
+$KhO`
+wP>s\
+\wHz
+{5]"
+SD5/
+fPS1n
+OR H
+lU9t5ju
+={,R
+hD [t
+qgq<
+6}IMyj
+EkF2
+RiG	
+Ugrc
+"[yP1
+nH"l
+@b	w
+ir+e
+xl~8
+!I	>
+B@.2
+HYk0
+]$;F
+7Xx'#
+A!l]
+lS%/&
+V@><
+g3kW$
+^-_}
+,W7(
+a$|{
+/?{'
+)h\33
+bu,e
+wXoX
+}(7E
+NyW&
+/`V}
+-e-|y
+t!o:4Z
+}l';
+RuNP
+6kS=
+UF&[7
+>YZs
+MZ5Hz
+(|^Xt
+@WO^
+z\Y?s
+YP-a
+k!Bo
+_&b.
+U;}; D_!
+*2jVz{z
+|:DE
+L1,.
+q2M0
+89_k
+5 @<S
+pz-D'W
+2-am
+o|cFL
+mN+c
+{kaUf
+C~CB
+<[h9Vj
+SSI	
+wgb1mZ
+s^`Q
+Rg+'}
+54<]
+hu[N
+zG8`
+TtEt
+_,FZ
+j>wd
+Czzr
+#?WMly
+8S!y
+9}F	
+bs#|
+"K0p
+IJ*o
+WMS+Iu
+]caLx
+O7-V
+?VT/
+>b{7
+wVz3DG
+4oN@
+Z<*~
+I6.2$&
+dd/x
+F$/z{
+M.~4
+WRi`Ox
+1AQd
+-jDW
+zgQQ
+Sm?+
+&6`G
+%p?=
+x(+B
+s4?<^O
+P6XY
+dS&sn
+5u[Sv
+c`\_m
+{"VPa7
+sSQU
+b_:k
+Nu[E
+FiJg4
+]l=^
+d)',
+a=(FH=m
+HMY,
+p@I,
+QJ2N
+	[X)-
+S@XAV
+	H!F(
+*7#RF 
+X*SV
+p.Ab
+W4#C~
+K}sw
+TBI1
+*R'g
+9Ol@
+;0#\Y`+VU
+ ~"y
+]Q	[
+%BDx(
++c+e
+PT,?jK
+2 e3
+WR,3
+`v#t
+u(jD
+p>bXr%
+CP(t3
+,o3y
+3zYl.2g5
+ceuI
+h0)7
+"\4[D
+8 45
+MW9y
+`g!C
+Ngt4t
+nHTIF
+*PVc
+w6-S
+PD9o
+Un]Q
+ugfl
+auC7
+lt0%
+Nc"X
+ho]Jp
+yyVR
+Ak2KO
+8L{g-
+C~uJa
+y4:YN]
+9 *Cyg
+>HK"
+W+^L{R
+=Jb2#
+p-8/K
+^Q|>1P
++/-5
+cSkx
+hLlU
+u6;QB
++mBj
+S^dE
+`9J]
+csOV
+r?S@
+e]E9"
+?u{e
+7pwm:
+;8=<
+Z	bZ
+*c~E
+WA/2
+dx_5
+Oqh]
+(M-6
+x6rf
+MTzv|
+&v?2
+@LR5
+@ZOYZ(!~
+Q"EL
+"-Fk
+DnM($
+Y">Q
+{K.\
+s]f:6
+IS	'
+#jb,
+c[|`
+iS50a>
+[wwl
+u-S/
+gs%!
+N0Y|L
+$!.>y
+lPO:
+X`)Lkk
+HeSf
+FRvN
+Lq<-
+	{6M
++i	5
+||+&
+Km;!A
+IV	t
+IgZ9
+Fch:
+8@uk
++z"4
+y&Fn
+o0TEZ
+M)A?
+zbyH}
+#GH=
+_oR*
+F_;Ri
+Ns .w|
+Im-#
+O>X_	
+L~*HCrf[pw
+A#yg:
+]&7XQrMJ
+L_Y%
+z%Tanl
+Je"'dx
+>v}>
+y9}{
+Z7yN
+c%;	
+?`5*R+
+hCO&
+JiQo`
+dpW4
+i1k1c
+Y}(:3g/
+e@nH
+	6/X]o
+64jq
+ET~Cr
+|PFW
+Z#Z 
+ca j
+,:7_U
+M5?\
+sKheO*&
+Z645
+/V8#
+ZNuI
+D`n 
+BJ*q
+ b)>{
+s#=`
+v,#c
+%w4mw
+)q8Q
+,irL
+m+x^
+k 3/
+dZD.
+bYM)7
+~MXr
+A!geM
+j818
+P{4r
+,n#\
+^18$Z
+1jhN
+(^{.
+*(wQ
+(EkR
+1{?/xN
+Y)$u	D
+i\pB
+*pHL
+#[dv	
+N7%;
+cWDj:2_
+O\8'
+UoUE
+\"5M{g
+j`tr
+#GgMq
+!M<t
+t:+t
+[5A!
+1D"m
+VrZL
+bs)Q
+>V/DM3
+m 'SR
+$i0x+
+D)x{?E
+=%m7n
+Fsj6
+H0C-~
+\RyOF
+1!"P+=
+5/gb
+l)`c
+9 H^z
+Mthl
+xRve
+z/g+{
+[%koi2
+ewKYng
+wW+f
+)xLTRb
+@ob*
+'ZlX
+y'DJO
+6KoZ
+vh%L
+h:Rh
+]=,F>
+0}3P
+\((%"
+H!^0
+OTIe2
+HbFv
+IS]Ga
+"}|0
+QD&Y
+t^=&
+oI37e
+a;sv
+ f?s<S
+E"FZ
+(+pRN
+mbI=
+A0TE
+|r(,G
+%Vu]
+n>Y0
+G?/,
+#{^v1
+e!=*
+e&~<X
+I~ y
+u#_K
+od^&
+Vdu'
+.7SG
+2`!3
+^=u*"
+oC#:*~
+)r0H
+(=,0r
+/f!"
+a*(C>
+~	,]g
+2o	kI
+MzLC
+{bc@
+NW%G
+&b3M
+=,.o(
+"9Ym
+]R\&Y
+]`J	I
+Mqj<
+HI&r
+%iSvb
+oT4I
+6AW(
+4|W*0
+Pq:d/,>g\
+<2_e
+)GnL
+YOXVgkqtr
+{Kt,
+GH2_
+T	v/J
+.!8A
+Mx\1
+(G)L
+ >GbB
+j-!Bj
+oWOVC
+;	sQ
+Tj+W
+>&2$
+W)l<v
+x\s8m
+ YKf3OS
+]h]U
+5*f5
+\p'Cl
+$4D<v
+'t*J
+nw>1
+	Bn4
+~wd+
+!0A@
+vG+>&Y
+ukTT
+Fm?&QK
+]9RU
+APgf7
+Rt(4
+@1cC
+=WC(
+n+(;
+5@ey
+y.SA
+n{DD
+b $]bj
+g*`R:
+$(z5/CYD
+M>_!
+.*_|
+6kC#
+1`Z0J
+RMi(p
+L6Wu5
+4#F:
+L@|N
+Bffv
+/\Cx
+m$Ij
+>)6tY
+",7y
+DqGL
+1aQyC
+e%gL%
+'Ucd
+*F2v
+*E,)o
+;i-NlS
+{;#}
+>N%;k
+}u?O|
+1A@!
+)nY0H
+!]B5
+?)r]v
+EcCs
+Lg#/
+8Q &:
+m;d-
+qddqC
+[rnb
+P2}<
+ JO>w
+yZG:
+2Hqs
+J>za(`
+		}w
+xLti
+rT.x
++qis/
+c|'w
+i(}W
+unOD<
+YSB:
+sk&o
+XJ]6
+U6-<n
+Gz0?
+M	@f
+X3n<V
+e<H5
+q8_v
+i*5P
+EF7T
+9rGg
+PjY,Qt
+}I:`
+*OEE
+PQXL(
+V%!V
+oMdtW
+$*S:
+7lbq
+w^CD
+ilXp
+N)rI
+2K*B(	0
+n`M\
+"!Ps
+,Z|\
+76cG
+xD]x
+xr!B6,
+IqKm
+HHEH
+5N	)#
+;],L
+{|@u@
+Rt>k
+HD&z
+F(Yl
+.518
+a#%Q
+s ,p
+Zg5s
+<*S"Iux
+h![s~.
+6/V]AU!
+E5=k
+sV,l
+w	i2D
+<32i
+,Wplo
+&P\w
+emK[O
+/ph^
+Pz}1
+Oc$w
+qc'*
+nd-i
+;38	
+:Be_ 
+e` f
+RUmg
+Y1hl'T
+MK+wG(
+\,!h'q9d
+;iA[
+D;v9j
+zL62A
+PT1RF
+0qf|
+"_*49J
+s6]y
+s8b?
+xs?fw
+$=.x
+]j74i
+$\?G
+Vug` A
+Z]%\)R
+;+JN
+GEGp
+[~<N
+/{"%
+#()!
+fGU(
+& Ig3B
+M9W(,z
+IDgY
+	v7up
+fC'8P
+:zl~
+8(+~
+Qy;Fwk
+~'v#
+A%e=
+uMpG
+VdxE
+UlI-
+r6y%
+	enB
+Ictb%
+3G{A
+rMJ?{
+i}7	
+NW(6
+Dx*F
+pooH
+nWT^
+zRi>J
+=lUz
+Nq6!
+JtS7
+Uscy
+@jBD
+b'/4
+nxKa
+AN*z
+c`eq
+SxSY
+X|R"6
+3QIAc_
+-ey+
+qB]]d
+^?u ;f
+\(]x
+th[>
+E<#DA
+"k@y
+$6pF
+~[CE
+?O;UX'K
+Jfwi1
+;4Jh
+M=-#
+]`zt
+ iAw
+8yW|;
+?'6y{
+92}v:
+i=a*
+>`(5h
+[Ns,
+'vY~
+#f`B
+EWW~J
+j~2"
+gPe%
+HDYV
+%j`s
+v>rB
+_Og}
++<\ff
+C,Jb
++b\s
+?Nls
+h'X3
+c@#h
+,	fu"f
+:{f4
+k  ~
+R*L	
+"#m:W,
+zX0k
+XdrA
+sVq/
+AMOM
+]&iW
+%:t2
+fC:5/2
+R_e^sV
+n4R	<2
+jodj
+>v.1
+s+\0
+-VQ)
+qE`/
+t1Oc
+LM`SY
+B2olT
+A		S
+V*TSC+
+@*o+b
+!P Z
+$Phh
+Fos?
+&t.ZWr
+{)a-s
+Mg]!
+[.8%q
+GD\k
+VE'k
+]	^nv
+*&S 
+0DE`
+(0.(v
+jihU
+0JO$/
+$SZk#
+b@!Ru
+.Z||
+7:q+
+$>|ke
+f0_b
+{>K_i
+/o~s
+vTbx
+>a5_
+2FUXdj
+	51wN
+]v(!
+FKAC
+(6fI
+{*cM
+u<DV
+uFR&
+m=Td
+Z\4%Z
+|G|ll_T
+N\A'^o
+UCN6
+vyh%?j1
+6P8=
+,>mg
+:*@$
+]sLdI
+]P;|U
+"0%b|
+Usg~
+yd	FI
+Fz**
+iB@X
+,j7:(
+?"(|
+	 s~
+6=|up2
+{c]a]
+D*;c
+(pf^
+KCEu
+m6jp.
+$qwU
+|\Si
+7T]OM[
+l@<:
+\(p6
+*mC~
+I5:6
+k)-p
+N_Y"S
+8+awc
+XR30Q7
+	7{.0
+oze+
+rEQKy'
+LN&J
+w!RSMl
+2:7%
+du%l
+q g@
+)v%>
+b,6[
+_rp4
+e<BS
+FMoL
+"7f$
+aLb&
+_Qre
+7E9um
+o JB
+@(|{.
+_o3u
+fjcm0!
+|@-!|
+H,c'
+>hR:
+:'tn
+-xs0
+P+fg
+7|Rh
+o|2uQL
+k{O[Z
+w[u%
+/5H7b
+zW?SP[
+]|%"
+1nmu^~
+p?18y
+B28m
+&P"W]BrS
+W5}8
+c|O`
+zZE(
+oFW:
+_byk
+TvcB$)q
+*|~%|
+G^pp
+aOgd
+Y-t|
+mDx{
+4]6	_2U3<SH
+F?	u
+qE"h[;
+.^[&
+;u<=
+AN8P,
+h>@)ba
+i*,vYo
+UM&|
+5lLp
+cS'$
+[=CM%
+!OzQ3H"W
+S`I8<
+:nKh
+l7!2I:
+&VgS
+kn%:Z<hZ
+hS"b
+cO	(
+xNeW
+|_@r
+"?+eedN
+QR28
+p0.I
+WO/l
+ufJK
+deXF
+p@R=P
+?p#A
+_6ytT
+Wq10[
+Vw+f
+?I`d
+Q	X<
+u&	L
+NLaYX
+#9	f
+RNhS
+N+AM1G
+r	jB
+>FI	
+<]"Q()
+pjuG
+)2Za_
+lRPr
+`pAw
+jR*e)
+IUP<
+X}Wu|
+WViQ*
+3tlB]
+<f)n
+jj-km
+N;1>
+&0_b"B
+w.n9
+08<5
+&~4<
+f8'/
+"=ej'
+zWFH<
+QU0!.WI
+JrK#?
+W\z@GR
+&oqY
+UW7Mm%oc
+2 G0S
+Zl[f
+EVN%
+aLD7
+v<PXlc
+M{caK
+.#Z}s
+AfuS
+	:+C
+!B_V
+5eUJxI
+Behq
+>E^K
+3X1FE
+QdHp
+nF;"Wf&
+!6i9=
+2k}9
+~L2%tR
+oUb&I
+owb>
+M{gU
+/EtW\
+'<(Dc
+Jx K
+^<-H['L
+aqHR
+|Q5wg
+J2>6x
+Uy/)a
+f?1eFU0
+0"Of|
+kTI>
+&6IC6	
+23`@
+0\'lS[?*
+{$HS
+a3Wk
+,:3;
+3BJ9
+sz:M
+n(l1
+TgZm
+G+Y?!d
+19m5
+>ze`j
+hqo#
+$<US3
+38EdJ
+wF/2Qt
+w"}{
+N(Phh
+!YC8h*
+ff+A'E
+>U{a
+~8Zr
+ZQ+3y
+e\Lq=
+= wN
+	h/O
+(.p^
+"M`\
+0i'GQ
+]*F4
+l`,&(
+RM3M
+dY/3
+;*`S
+=E"9
+(wQc
+Z\GGK
+:K">
+RF4[
+XC{k
+4kBJIgs
+)7>X
+qvE_
+H%"m
+#-X0
+2p@(
+(V6~
+YM":BU
+zYg^
+i~se
+.eKb
+;46rj{
+g3h\3Sn
+@(uO
+gDH9
+n#vz
+/dQ$
+J]Pv8
+D"+DV
+Yj](
+Vp	]
+#\A]
+AqB&
+^n'"
+tXVlW
+oeD;n
+=B_Dm
+L}9m
+re@_2R
+L=sB
+v:l7r%'*
+DC8!$
+tFCo
+hT0]
+pgb%oGX
+U^d8@
+0tNT
+<%":
+t$K6
+ :Gl
+py|)w
+Mv!n
+<9!Do
+hi*;
+qOQ/
+NKglk
+]YeH
+C696
+6NkV
+y5{d
+py"<
+h:\3
+zE? 
+_m&r
+-Vy.
+3{am
+Me`px~
+yIg6
+E(g8
++;3q
+hI1Y
+$.~hG
+VGyQ
+^}zg.
+<hYV
+<lu!
+`&P~
+{e$.K
+hKj$
+quic
+58}(
+p6T!P
+pvIVwG
+r9c\u
+hX> 
+zEea!&
+{tl1Qe
+/K=s
+[1_8
+iFQ~
+Me[,dn
+eDVf
+BO9p
+>`rQ
+_	n8
+9XSg[
+9r+YQ
+`6#4
+pk1H=
+=<$1
+@(E-jz
+)kk3
+7(<J
+	Zyt
+`C[v4
+F)0:7X
+?,V/7
+N_>k
+IkVdm
+9B<9
+$=~ x
+G8i~
+)BNg
+ fead
+rU5$s
+p\_D
+eYDS
+D{lI-
+/[LE
+	BE1
+hVP{
+*(f{t<O
+"`I;
+F^*+
+8J;x
+%HGsC
+V@6|
+]PwB
+0_#d
+]q'c
+5F$	
+gw=W
+bkBr
+by6Fb
+xdc/
+En^&
+=OQ~
+3tI-
+3%G2b,
+\Xvk
+OqTL\
+YJt/
+r*9P
+8I c
+`;E0Z);N`!
+	KJ5
+,W=p
+P0YE.
++{uKI
+[-		\K
+)U+X
+3Ort0
+h\]&
+4'Y#
+U[wG*
+	G9A
+elzm
+O$-w=t
+K6oe
+9!m6p
+V(x$
+1Bt?
+.T!op
+Q&T&
+L9`@
+?0#q+
+Nb/E
+huR+*
+8Zuk
+vqg$0
+0E),=
+Y.'g'M
+M%,X
+a;1m]n
+ ow5?E
+&JSOm
+oT=P
+,Ohw$Hd
+m0l5
+dp1)&
+9a}&
+A0vM
+5'9iz
+N+l7
+&(uc
+T!vN
+2W!fq
+RL7m
+C@2=
+8AIf
+&6xq
+\@;t-o
+%HTf
+\=G$=
+IG/F
+4RJ3(jk
+p~;Ho
+Sgdjj
+"/K)
++PKX}
+7Zl3
+-W{g8,
+g;j0
+x@tK
+2(wO
+oob:Q
+rLbd
+E}d]
+Nc`z5
+V8Ys
+5TFd
+[~#`
+0BL>)
+pP}Q
+}pOW
+,Zyz
+p!P}
+5*fkRe#
+F&T]D
+:b4m31
+g%Zu
+@9\)k}
+^u}5%5
+^\Y?
+DvLT
+C(+-H{Lr,g'
+l2dDj1
+@b:BW<i
+-*zS
+4-KQ
+"'y0
+5Rh!r%
+IA_TlT9
+#[3r
+2]ne
+{6E~V
+gn1;
+!>y0
+7Hvo[t
+P7)&<-'
+{";j
+YHWx
+Y`$dO
+f2<K[)
+HOiv
+5RA$
+'iP,
+xcOp
+Yswx5d
+POf?d
+0ab@
+m!h\
+GvD/
+ 3bW}
+DRVRRMV
+{6tK]
+>h4D
+NNii
+QImB
+*+	`
+C]?g
+BIGp'
++J{6=I
+qMtC
+uZbIX#!
+a	uwa3
+wL_)
+W_0T
+g$6L
+;[7i
+$M:n
+KU>E
+[@?_h
+P>BbK
+>qE%
+<`1]
+4h52
+A XQ
+7<cXiqg
+qqq%H
+-nd_
+1bi-
+2.ZQtL
+-cuc
+G%6y
+y8>=z
+q2CT
+XG	/B	
+|8FSK
+t#Q4[kW
+#l(/V
+m(E3N\
+TS[ZCp
+<o0J
+kLfY
+08P#l
+OxU`
+;f|^
+CNFP
+4/D%Q+
+1jt~
+~3!u
+q5-33_7
+!n@X
+l|t(
+	8Yih
+J~V{1
+)r'T
+;a*`
+]\*S
+"i[y
+vsQM
+BQss
+hs"/5Z
+*+(t/
+Ao!`&
+M{$&
+TLZO
+=Yia
+)g8.
+4YN&
+t?Z 
+ocs9q`
+7rOn^
+a~BF[
+zRv$
+w{"8
+CXw	
+4!AuI
+Ml?JA
+/w<0
+k[y	
+L!&(
+H<!"
+ w~no
++:6Z
+A\aZg
+Fi(q
+*Th7
+7] +
+[1mLh
+EzRI
+O5^`gT
+xhrg
+.tO1
+MJj44
+TyHe
+7C82
+Bzu-
+JA:gSL
+ha|`
+=I5~
+ep*Q
+mbtevL/
+tMFU
+3evS8
+@)^8
+VCu+{
+H" x7
+,\~g
+DU!E
+CJ>;`x
+D7~lV
+{C+E
+QaVZi
+F-F}
+T#\x
+WIvq
+NekQ
+H	?-
+:D0<.
+q7Z;j
+!(>N
+y'=L
+HO(Y
+EPhL
+gO2]
++4+R
+pfYs
+*Akn
+EW0}
+(tJn
+5U=B
+1UDq
+m P(
+x=~\
+z9|Lr;
+5{bJ
+[F	R
+)50@
+v%H 
+P0S#=
+u8W"
+M$G1Z
+vkeJa
+".gyA
+Pe3G
+STt}O
+0B4j
+AHu}Ug
+|a+S8A
+>9/N
+v<Ql
+$S!f,
+<L8A.O
+H9&z
+Q`Yy
+@	Pq
+-@a.
+lq<?
+V:	E
+00`DjX
+P4WQv
++J1P~
+GYBO
+P~[]
+%|@4<
+LQoG
+4vvugA
+)ZSbF
+P?#=
+g|aO
+:&q`B%
+{	s3	
+;'4#Q
+B{Y|
+{3pbN
+%H.H
+!p\J
+-R7D
+`o7`0
+<?Qd
+NN2%
+<9t=2
+Y}5n
+RS0!3
+4r?7
+}b`S
+)-&4
+Ni($
+W:IJ
+GJ	i
+2tRX}
+tX:B
+==jE
+O#E=
+6EyT
+FbDb
+fUK$
+-9ym
+~[xM
+v&C=
+LdO8
+{$h,
+#cRU
+/%w#
+Z?ngs
+_Ai"
+hSiK
+7nWh%
+,?"wd
+	+iap
+Bwuo)	
+nCY~
+g!)@
+7K(Phi
+@,z`Y
+r"l~
+Xk4,
+B@]>
+h]*|
+P$XW]9
+o=0*
+56D~J,S
+4M>^
+W8wx
+4FG)W
+NMpH
+4=[/
+^	<[~3
+(`	n
+QEe7
+N**~.
+]XlZn
+sJy~5
+CX)K
+9&Skk 
+3x:w
+&4`f
+>]g0
+a`Y`9
+#pnZm
+ DfOx
+$1M0
+D#UDOD=
+IJ9Ed 
+YJjn
+X^`bG
+/l^|I@T
+cM7-
+oE9O/
+!SY2
+a	d:@
+4{Mrq
+=#v mZ
+^lc(
+,Zu_
+D~z=
+_`3'Y
+>sME
++7]6o
+JE$w
+fwYN
+2<iu
+w"Q[
+p$ o!-
+{YM+
+kq2*'
+uV}H#I
+C2?lR@C,
+BXD2j
+<b]q
+lsnm,5
+Hxbt{
+=fS1
+r8*ts
+28PRK
+U=nPm
+OY;V
+3K>5
+\F(k
+R0}8PZS
+xEp]
+Ev+l
+^M?Ec!w'
+@oA e
+IpIE
+MtOdr
+F7SV
+YV|\
+'3T_
+{bH31O
+,Em!
+C &V
+"b"V
+Z8R3J|
+zz\r
+/V-M
+H>3!Aq
+QON4
+a<@LE 
+,am6
+n9k)
+\\_&
+wJK6=
+Dz0oF
+Yod}T
+bjNP>>
+>	n 
+Cz2e
+#q}t
+x}..Y
+EH& T
+`P>/
+`;Av
+8$_Jw
+r@Xd
+TrOf`w
+?G+S
+nT	1m
++Gr=
+Yp%}
+7;}d~S
+jvXX
+mJk=
+%9q#
+q@#z"
+[	rW
+v%o}LK
+y=P{DL
+^=xw
+JM1zQT
+&;>me
+e;Q{
+WCRo
+FX>!U]
+K59^
+JMz2L9
+a1+}zr 
+%=JS
+jJ&:
+tE_b
+_pKn
+!Wpl
+.\pX
+0|7@
+YrCC
+NO;pjTE
+#Mzu
+="yh
+		SQ4	
+(NuO~
+|,G[
+mjHi
+Fm*q
+dZMy
+)IRk<"_"
+is,KB_
+%0wzm/0 ]
+$5R[
+)]$N
+!}4d
+(|c!
+2a5X~Vhim
+/~hp
+aP9%
+#r=Zt
+aql[
+@Lk"
+=/h7
+>gs"
+ykUlS
+)$h)
+T)9$@
+0Rm?T
+JU=$
+8dT?
+ID2g
+b>Pdtgt
+thn^
+9X9s
+HTS&
+%Lcq
+MusN
+!LItrV
+N/U 
+$l47
+JAt0
+,,R9
++2sV
+VtD[
+;]'^/
+Ad/6u
+#ve-7z
+=5o=A.
+]~Ig
+sc+o"
+=u2!
+5\}(e
+s5}z*
+>EONBY>
+HKY{
+55}6Z
+X}HmuRB
+Cf_X
+9\(V
+sXN 
+ee>P
+i^xY
+>aR<8
+m@%A
+&Q	2
+FQ8l7
+i)zt
+JM`0xv
+Q$tv
+xCM:
+*#~):sh
+1+N	)
+--.,
+&"Ac
+(KaTv
+~(}*
+2+ur
+a;/^
+M@ G
+2Zm{
+j{z)
+q.M<?
+G.6[`eC
+y1({`a
+UvO<U
+Vvzy
+,.RhO7
+#MG/e
+j?0.
+q83r_
+|Mt~
++R'd
+Z5',
+J%	i
+'vc[
+s<g~
++|qV
+ERbp
+5Z+G
+ez96
+7Y/N
+"\SU
+WXj4
+r2Z*
+R'YN
+I]&F
+GH5(
+%gQ#
+}s`}a
+duw.j
+ZYEZ
+PVZ2
+|U[~
+8M+S 4
+#^ h
+@"}s
+|._!Q
+C3o|
+Wgsa
+TKDL 
+v/Fy
+jiAT
+LvY=
+bhY9'4
+Q	Xu
+BNIbj
+SI&|
+\L3Q0
+kjau
+b	JK
+e+.<
+r}kW
+foF;A
+x(~e
+10VyWP6
+:`qlap~:
+auDO^
+)qUe
+r(aS<
+w`I]5X3
+n$.]
+/?3]}
+iO1eAc
+o)qE
+X'Dh+kvW
+_?TT
+2swZr
+qR	p
+$`+W
+&u2c
+e_"u
+)H!?O
+%<\*
+q~	r
+Ts4g
+.w	t
+qEG 
+jG"fM8
+CH@U]%vP
+avR!
+/f,|
+R5t2
+sGfG
+l>)*y"
+!Q&W
+nZOE`
+*v 5+T
+%f-+VD
++]pz
+/c]#
+0(ZWh
+T8y{|
+Sxm,^
+C;rFN
+,,p6
+{IVd
+C4U7
+qp`n<
+Pq%pJ
+q3d<
+A"\Z
+aK(cK
+jyp_	
+(cC6Z
+M1*A.B
+pFXt;y
+ytMG
+|81d
+y Lm\
+lR-x
+;~Q4}
+t.k>.
+cK^}
+Nw\F/5
+,Q%E
+-Q[yZ
+4s4*
+?/Z:
+pa,^
+OYRy
+|!ve
+0qguxA
+y:14
+KNFxb
+E=PI
+OBV,
+x,KW
+TJ:;
+qlrs|
+ib1/
+BqD?
+*F0!
+JGA-
+cXa~<
+t8Ea
+?8?F
+m#=-
+BZ4/8
+f@~t
+3<GY
+2E)6
+<u4}
+?a+0m
+Fc'C
+	.p%
+y&O{P
+e+N D@
+nGN,
+9 i|
+r38(@
+cWOW
+/EUT
+G%cy
+')Ps
+h1e`
+8Rvkg` @3
+34=h
+&9yrN
+kb|q9
+2~M4i
+"('v:
+=j+=
+$7Gt}
+6>Kb
+}q_I2
+66i$E
+WXdx;
+,X^th'}
+O=*|
+.J-{~
+l_H}
+K7i|
+,w;}YYM
+:	tMjr
+@y4B
+5=d:t
+yr4xt
+RrX2
+;Z, 
+ %1@
+l.611
+}XEX
+.r[| 
++/4~
+H[\"O
+Yw&`
+hDv;T
+{QpH
+`N&v
+9\Aa8N
+[aZ/,M\g
+V;p@w
+PpMwg|@.
+9<ZO
+x:7[
+BK^{
+ pZ[
+Z'<o
+Y]ft"_
+1KW6G@
+Au6{
+!Tr=
+<}1`
+'5;yb
+Bx6N
+aFYEj+
+5"`LwKO
+zTqu
+I2tCW
+'R~|
+0[];+
+8Fv.
+dP#W
+!aT9
+&&ch
+\&;h
+U&gkY
+6,)+}
+YMgt
+	d/tr
+2Syi?r
+)<CmZ
+5([<
+T8Zh
+_RBT$rgQ
+0`8)l
+6Z,w4
+I((w
+AEAvt
+gB=2t
+)_7>
+rnoGgiH
+7U^X
+d1t!`
+C:xs
+Pi26-pco
+z3HH@\
+U31E}
+#]&UmI
+*D}a@
+jVrH
+i4t7
+qG7e
+7>}jE
+R,R6
+[s{LCfp|
+5#&uUv
+0lW_|6
+1'N5']
+Kw[3
+G~z:
+2K(c
+yh]z!
+,zVP	E
+Ntt4
+5"fM
+-4 &
+5`!v
+c|zv[f
+P1.m
+-(}1
+=72"
+&\B(
+	HQV>
+.1v"
+Dx,4
+Q3XE,
+@]aj
+ gis
+u,c?
+Ii-@
+#f\y
+1LsC
+a2"4
+{tK3
+|`),
+r|`)
+5>lJ(
+.(`:1o
+8MTp
+.=yc
+^8q8
+z7.f
+@R	zB
++GWf
+46@Kvq~7p	
+Tnf&
+d[sw
+0PsNQF
+>al}
+wl2j
+CD12[L
+T~vq
+U&q<
+[-Cq
+PY%"
+=_%;
+/`_y
+cm<7
+c?BoS
+Q~pJtZ
+{Uu)
+7WQ>jz
+%E(!
+`>I{o
+"qc\LfC
+RK&0Y
+kAZK
+w+	-`f<&buk
+1c:$
+#</R
+i\g1
+rCe:
+uEIk
+xC:_
+WwkjO
+b,S>J'+
+T[ Wr
+!qg/
+SmGK
+C!:!
+2HiN
+`bgJ
+C$bqI
+MCgT
+vno0
+:Len
+TMW`h<.
+@tK0
+ne	eR
+2-'Z
+1F]3
+o:l^
+L9w<u
+uj#SK
+j+{=M
+wwCb
+$lmH
+0+<Pp
+)i.1:5
+0X`iV
+lX~n
+	8h(
+Sz~a
+o`|r
+M={%
+0/7z
+>pQ?d
+'{`iy
+[hME
+r!!0l
+'vP}H
+wrA#
+fvN66"p
+:.i`)tmU
+0qP`V
+{]m4
+SG?SO
+^@_H
+_PWk
+`[5u
+Q}8X
+p1SQ
+W|X>
+bl~:F
+ZXC9
+Mrnl
+HjK-2
+=}je
+z_MT
+U!^"
+GVc^
+7/jq
++w@E
+5,.)[Z
+\wrx
+wx@+K
+PT\'g
+t`{sA
+N2s~
+6p)dp
+s Xu|
+wMC!
+B)O"
+YQTj
+q@wO
+$q^"8
+LhrT
+xrOeX
+5O9^
+uez?pH?8
+ZdPd.
+jUA#]V
+po6C
+GwU5
+jDi  
+NY$*]z[
+= JK
+6tfi
+H^lgE
+UPoRb.=
+yKK^VK
+ao_.wK
+MbDU
+0H8j
+qrTW
+bHMN"
+qcd7C9
+[X2U
+bp]4
+6N'g
+X~~h
+X9Jd
+,hS?
+&eX,
+@({U
+ozZ&
+rG=nlb
+-.~\+q
+*8ftg
+?l)	aL
+)j =
+z:KQ
+tap	
+0@P~
+5E*h
+e\3!
+my_liW
+MEj#
+_9+$
+7qOl
+jG<d
+qy~_
+y&%=
+\UyE
+8G8N{
+Ccw?
+3_Qs
+Y|9)
+,n@{
+G60l
+ipb!f
+1WG2
+/YmP?2
+?$7$
+*Hia
+Wjv%.E
+W5F`r
+\7#J
+J}cme
+>QTGK
+b9A=
+A6+4
+ye4m
+/Iexti
+:m:sn
+Cz$R
+Y(~K
+Z#"^
+6scN
+Y[bH
+K1#I
+v$8~
+%>GEw
+%S&_
+nbn1t
+-M#!jZ
+yG)2
+P$ta|
+F"JM
+G~*t
+aD-[)rF
++9!sZ
+wR0 
+FB{GV
+n}{x
+\1B?
+C?G:
+M@z`
++27g
+ic!o
+%ov-m
+oECfO
+'k<'
+b'Ox
+/DRS.o
+6XdZ4e
+D&`x
+:i|'
+?c*My
+V]>-7Y
+"9d1
+D&3v$X
+dM9)n{
+@a@#
+sh-IU
+L Rh'
+c'P%Kh
+fHeer
+U{t92^un
+#5I/
+"F{P
+=UIH
+ny:PEG
+?	(b
+B#j0h'
+LYc@I
+1\=5/g`D^
+,A!_
+K}]2
++;k)
+XEXE
+3eOW.
+!*MX|
+D;sA
+rTnhr
+wfdg
+_d9a 
+p,9/
+>1!YC
+eeXn
+]uVz
+2mok
+/o+UL2
+jZnC
+}]VHDfQ
+	m~H
+/mO7Q%
+m.^a0
+4Ib5O
+NkOED
+X".#
+"tTU
+[$A?
+4z"*
+VmM,#~ 
+hxy	
+kqS{m
+e ZD
+28%i
+W~FQ;y
+@LeR'
+ZW%7
+_COM&*f
+N,:{d 
+4U.A
+xBJ>
+u4qxD^
+2!xx
+{F, 
+A1_}
+9/k%
+`"9C5=jc
+rZ[#Z
+Q[tkA
+U]8l
+	rYJi
+x?>2.\
+@Z[y
+iLaf
+@lJv6
+YXJw%
+e>0W-
+9y_n
+pLJ*u
+1<jf
+Wf2a}
+I;B|
+\wAd&
+ws=;j
+$(K$
+=`Ak
+HAYX
+Mw*hB_
+:Eyg
+`hf_
+10iuSA
+>j%=
+AhNO E
+C%rf
+@3LA
+x".r
+R`lV
+XRHp`
+3>sG
+H<jD
+I/4B1
+%3^BE
+Eny]
+Q8^-
+9`LuM?
+>ICjM
+Z-kX
+)Amh[f
+GZ5k
+27a	
+eC"8
+}c]b(
+aOP 
+@x<E
+h_!I$g[
+p}9~
+8|x,
+/ Z$0
+R_5]G
+uYh,uw
+tc$]Gqm
+7oF.
+]DQc
+8|"3
+=X]G
+-19@Z
+P!M+q
+Rch~u
+}_*4
+3SXV
+,&`y
+Nv-#
+_g1h
+d&9-
+7W>]
+a:\A
+vR<'m}
+q:X3(
+u6-h
+{~a`
+SAc k
+Ntb0
+{ 9.2
+:O[.
+,ne&
+[EI<
+Z$lt
+^+U,
+fjQ6Bs
+N(F3gj
+^LKeJ
+#R"<
+Je73\
+|n-Q
+f Vh
+2-`s4
+c=N]
+mc|+
+#^NP^
+wdz	
+xJH2T|I
+esy/
+eR#1>
+?4#?
+Ni&K
+&KUO
+,$F#
+e4^s
+za[FC3
+-:p?
+'>;3T
+xr{W
+/ViJj
+7Rb.7&
+xcl'>
+eyzi
+X[;9HA?
+%C83 
+40b 
+Mh2L
+2ma~
+Ba0B
+<uj*
+ xUv*Mo|z[
+@DG.
+oWofn
+;` .:(X
+"8o]&
+6OcJ
+</3]]
+mc[z@:J
+eKVZ
+~0I ;i
+yN	)
+jfpD
+jP,+P
+Miji
+~4+N
+V2{Gn\
+"Zb2
+yaS%d
+Vb)sQ=
++0N7
+rka$
+KXCS
+`J:p
+ w} \Se
+Cpl~a
+saF?-
+H{.@
+C1km
+\{mA
+\hvrr
+X^RH.
+)NHo
+[bS/
+{Ga@V_u
+N\Dx
+o'0#x
+44:c
+$~amFa
+>93c
+0"Auj
+{dkzQ
+6I+r
+LNbQ
+Gs.@p
+WXaZ
+v5-6
+XL.[
+{fIL
+pL+J
+EM}Y
+2<l6'
+	3ui3
+)xm\x
+'V,~
+/%uLZB$
+nu-,
+;~F#
+Y5los_o
+Y@|Oa
+G#we<B
+iBt2
+]{61:
+Y#K/
+1=`B
+vc5Nev
+`OzX
+BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+3FVM#
+a?QC
+D<f;
+QGVM
+eP%G
+<G`K
+vKJI
+kKJI
+%AJI
+wMJI
+/PeF
+ZOmG
+pE&	
+zA1	
+zAB	
+?;K	
+;PR	
+:Y	1
+#P_	A
++Ne	q
+_isRepG0
+<>9__2_0
+<ParseImpl>b__2_0
+<>c__DisplayClass27_0
+<Run>b__0
+GetPrice0
+size0
+Backs0
+6ED62981FEAD210B9EBF6F5DC0A47E64D4EFEFD609061AB6ED3492F71112F661
+BFDF5E72651B4EC588BD5FC6A9F17E9E0972248146BBACC10478F48D72F29B81
+_isRepG1
+<>9__2_1
+<ParseImpl>b__2_1
+IEnumerable`1
+TomlValue`1
+Action`1
+ICollection`1
+BlockingCollection`1
+ITypeSettingsBuilder`1
+IEnumerator`1
+ValueArgument`1
+IList`1
+0xb11a1
+GetPrice1
+Backs1
+UInt32
+ToInt32
+22E28E709DF793CE9C08BD5FD04302DD85EBBE5181309792D059E080BF5A2992
+_isRepG2
+<>9__2_2
+<ParseImpl>b__2_2
+Func`2
+IConversionSettingsBuilder`2
+Dictionary`2
+m_Choice2
+_choice2
+Normalize2
+Backs2
+GetPosSlot2
+BackPrev2
+PosPrev2
+<>9__2_3
+<ParseImpl>b__2_3
+Backs3
+nowPos64
+Int64
+<>9__2_4
+<ParseImpl>b__2_4
+FBED83E5688F001B49A3A132C6FE1BD098783C0D48577E9E168EA25043357625
+12F3E0576D447EB37B36D82BA0C1C5481B8F0D12FDC70347CE4A076B229D4C86
+6A89C905ED32A41500B95FEC33E37A5981A8EDB1F2280DF19159C7EF7D1084C6
+FD69C74376872B514649C64B0CDE4A6E3A664847950EA7B1B30286749B2BE117
+EE6DEB3DF1E98E6824EDD89F14CE988322C7C39B85661AA0C3E10ED379BC7D97
+A77401FC0BF7BF3DAC6B205E004909E685D45C43A903D9EB3C79BD8B1265D258
+get_UTF8
+C88A5FD712C368135DFC00B43FD6EB1D8EC948B243FA4ACE7BC0709A59863639
+CBD2E1988DD8E25CC565611BEFDA28B05F9DE698A498204EBB07991520DB49A9
+<Module>
+<PrivateImplementationDetails>
+FB8FBDFE5EBF3003F981857CF53FB1059E353B5E3769547249E8D7093FB3EC5A
+ABBD36C329536AC13FF1C1B5F3E814FB1D340EBC0C06CF3579FC6AE418FC3CAA
+3D9B507B4E8B3D8B2C853E5AFBEC4F9E74A112EFFE222CFB04B34326619DCBBA
+SevenZip.Compression.LZMA
+X19TdGF0aWNBcnJheUluaXRUeXBlU2l6ZT0yNDBB
+X19TdGF0aWNBcnJheUluaXRUeXBlU2l6ZT0xMjBB
+1B960802B155541DF3837ADE50790DA7E91762D14B8E011FA8223424FF75ACDB
+X19TdGF0aWNBcnJheUluaXRUeXBlU2l6ZT0yN0FB
+SVNldENvZGVyUHJvcGVydGllc0FB
+SUNvZGVQcm9ncmVzc0FB
+X19TdGF0aWNBcnJheUluaXRUeXBlU2l6ZT0yNEFB
+X19TdGF0aWNBcnJheUluaXRUeXBlU2l6ZT0yOEFB
+T3B0aW1hbEFB
+UnVsZVNldEFB
+X19TdGF0aWNBcnJheUluaXRUeXBlU2l6ZT0xMUFB
+X19TdGF0aWNBcnJheUluaXRUeXBlU2l6ZT0xMDI0QUFB
+X19TdGF0aWNBcnJheUluaXRUeXBlU2l6ZT01QUFB
+X19TdGF0aWNBcnJheUluaXRUeXBlU2l6ZT03QUFB
+T3V0V2luZG93QUFB
+Q1JDQUFB
+Q29uZmlnQUFB
+SUluV2luZG93U3RyZWFtQUFB
+SW52YWxpZFBhcmFtRXhjZXB0aW9uQUFB
+RGF0YUVycm9yRXhjZXB0aW9uQUFB
+TW9kdWxlTG9hZGVyQUFB
+SU1hdGNoRmluZGVyQUFB
+SUNvZGVyQUFB
+T3V0QnVmZmVyQUFB
+X19TdGF0aWNBcnJheUluaXRUeXBlU2l6ZT0zQUFB
+UmVzb3VyY2VzQUFB
+SVdyaXRlQ29kZXJQcm9wZXJ0aWVzQUFB
+SVNldERlY29kZXJQcm9wZXJ0aWVzQUFB
+QmluVHJlZUFB
+RU1hdGNoRmluZGVyVHlwZUFB
+QmFzZUFB
+X19TdGF0aWNBcnJheUluaXRUeXBlU2l6ZT0zMkFB
+X19TdGF0aWNBcnJheUluaXRUeXBlU2l6ZT0xNkFB
+U25hZmZsZVJ1bm5lckFB
+Qml0RW5jb2RlckFB
+TGVuRW5jb2RlckFB
+Qml0RGVjb2RlckFB
+TGVuRGVjb2RlckFB
+TGl0ZXJhbERlY29kZXJB
+Qml0VHJlZURlY29kZXJB
+TGl0ZXJhbEVuY29kZXJB
+Qml0VHJlZUVuY29kZXJB
+TGVuUHJpY2VUYWJsZUVuY29kZXJB
+SW5CdWZmZXJB
+U25hZmZsZXJB
+U2V2ZW5aaXBIZWxwZXJB
+RW5jb2RlcjJB
+RGVjb2RlcjJB
+Q29kZXJQcm9wSURB
+U3RhdGVB
+SW5XaW5kb3dB
+X19TdGF0aWNBcnJheUluaXRUeXBlU2l6ZT0xMjhB
+768E33C10368B83610534F464992D4C8A6A6B812EFA31CB4E9C6368E4E30D1FC
+0AB5D230FE59A712741A4C85AB9B0FE4FBAA8B352C4CB53B71CBEA32E2CE6AED
+971150DD73DC318E68A98CCE9B91AC7DEA2D43C562B4F5A9A2F4272C7E29477E
+738D99562EED8E3D24E03E90ABD33E44800967F797D4CD30D712664EA5AB6B9E
+ProcessMessageJSON
+System.IO
+get_Q
+get_LogTSV
+set_LogTSV
+HASH_ARRAY
+SevenZip.Compression.LZ
+value__
+FlushData
+data
+mscorlib
+Prob
+Degub
+set_TargetDc
+System.Collections.Generic
+get_CanRead
+Load
+GetProcessedSizeAdd
+_streamEndWasReached
+get_IsAttached
+isAttached
+EncodeMatched
+_finished
+Interlocked
+set_ShareFinderEnabled
+get_Parsed
+set_DetectOutputRedirected
+m_StreamWasExhausted
+_solid
+<fileResultTemplate>k__BackingField
+<shareResultTemplate>k__BackingField
+<dirResultTemplate>k__BackingField
+<LogLevel>k__BackingField
+<Mq>k__BackingField
+<ClassifierRules>k__BackingField
+<Options>k__BackingField
+GetThreshold
+TrimEnd
+ReadToEnd
+_longestMatchWasFound
+Round
+Backward
+Replace
+IsNullOrWhiteSpace
+Trace
+m_Choice
+_choice
+GetRepLen1Price
+GetPosLenPrice
+GetPureRepPrice
+GetRepPrice
+ReverseGetPrice
+kIfinityPrice
+distance
+CancellationTokenSource
+ReadResource
+ReadAssemblyFromResource
+Code
+set_Mode
+PaddingMode
+matchMode
+CipherMode
+SetWriteEndMarkerMode
+ReverseDecode
+ReverseEncode
+Free
+get_Triage
+ShowUsage
+get_Message
+FileResultLogFromMessage
+ShareResultLogFromMessage
+DirResultLogFromMessage
+SnafflerMessage
+ProcessMessage
+message
+Range
+Exchange
+nullCache
+_cache
+TryTake
+UpdateTable
+get_RootReadable
+GetConsumingEnumerable
+IDisposable
+get_RootWritable
+get_RootModifyable
+Double
+RuntimeFieldHandle
+RuntimeTypeHandle
+GetTypeFromHandle
+get_Snaffle
+set_Snaffle
+set_MaxSizeToSnaffle
+ReadFile
+WriteFile
+get_LogToFile
+set_LogToFile
+get_LogToConsole
+set_LogToConsole
+AddRule
+get_MatchedRule
+ConsoleWordHighlightingRule
+ClassifierRule
+get_Name
+set_FileName
+get_RuleName
+get_FullName
+GetName
+GetHostName
+AssemblyName
+assemblyName
+name
+get_DateTime
+get_LastWriteTime
+ToUniversalTime
+ParseCommandLine
+AppendLine
+WriteLine
+WriteColorLine
+get_Type
+SnafflerMessageType
+ConfigureType
+ValueType
+get_LogType
+set_LogType
+_matchFinderType
+SetType
+System.Core
+SnaffCore
+snaffcore
+_keepSizeBefore
+keepAddBufferBefore
+get_Culture
+set_Culture
+resourceCulture
+culture
+_bufferBase
+Close
+Dispose
+TryParse
+Update
+Create
+get_fileResultTemplate
+set_fileResultTemplate
+get_shareResultTemplate
+set_shareResultTemplate
+get_dirResultTemplate
+set_dirResultTemplate
+EditorBrowsableState
+IsCharState
+GetLenToPosState
+posState
+GetState
+_state
+Delete
+get_CanWrite
+textToWrite
+CompilerGeneratedAttribute
+GuidAttribute
+GeneratedCodeAttribute
+DebuggerNonUserCodeAttribute
+DebuggableAttribute
+EditorBrowsableAttribute
+ComVisibleAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+AssemblyFileVersionAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+JsonAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+Execute
+ReadByte
+UpdateByte
+WriteByte
+DecodeWithMatchByte
+matchByte
+_previousByte
+GetByte
+PutByte
+prevByte
+GetIndexByte
+DumpQueue
+get_Value
+subValue
+kEmptyHashValue
+kTopValue
+SetCutValue
+_cutValue
+_value
+add_AssemblyResolve
+CurrentDomain_AssemblyResolve
+Move
+Snaffler.exe
+kHash2Size
+kHash3Size
+m_ProcessedSize
+GetProcessedSize
+_cacheSize
+kAlignTableSize
+SetTableSize
+_distTableSize
+_tableSize
+kDefaultDictionaryLogSize
+kBT2HashSize
+kFixHashSize
+BlockSize
+_blockSize
+SetTrainSize
+_trainSize
+kPropSize
+m_BufferSize
+_cyclicBufferSize
+bufferSize
+outSize
+_windowSize
+m_DictionarySize
+SetDictionarySize
+_dictionarySize
+UsedMemorySize
+historySize
+kMaxValForNormalize
+size
+SnaffCore.Config
+NLog.Config
+System.Threading
+set_Padding
+Encoding
+System.Runtime.Versioning
+FromBase64String
+ReadString
+get_LogLevelString
+set_LogLevelString
+ParseLogLevelString
+logLevelString
+TomlString
+CultureToString
+BytesToString
+GetString
+_hostString
+_isRep0Long
+NLog
+nlog
+Debug
+Attach
+UpdateMatch
+_isMatch
+ComputeHash
+_hash
+Flush
+Math
+get_SnafflePath
+set_SnafflePath
+get_LogFilePath
+set_LogFilePath
+get_SharePath
+get_DirPath
+get_Length
+_longestMatchLength
+EndsWith
+m_DictionarySizeCheck
+kMinMatchCheck
+nullCacheLock
+ReadBlock
+CodeOneBlock
+MoveBlock
+TransformFinalBlock
+CopyBlock
+Seek
+_writeEndMark
+m_PosStateMask
+_posStateMask
+_hashMask
+kAlignMask
+m_PosMask
+Task
+DecodeNormal
+System.Security.Principal
+Fatal
+kBitModelTotal
+total
+UpdateModel
+System.ComponentModel
+get_LogLevel
+set_LogLevel
+get_InterestLevel
+set_InterestLevel
+FromToml
+ToToml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.KeepSlackTokensInCode.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.KeepAwsKeysInCode.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.KeepPassOrKeyInCode.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Discard.DiscardByFileName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.SSH.KeepSSHFilesByFileName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.NetworkDevice.KeepNetConfigFileByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.RemoteAccess.KeepRemoteAccessConfByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.GenericConfig.KeepConfigByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.DeploymentAutomation.KeepDefenderConfigByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.FTPServers.KeepFtpServerConfigByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.NetworkDevice.RelayNetConfigByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.DBMgmt.KeepDbMgtConfigByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.PHP.KeepPhpByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.MemDumps.KeepMemDumpByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.PowerShell.KeepPsByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.DotFiles.KeepGitCredsByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.NixLocalHashes.KeepNixLocalHashesByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.WinHashes.KeepWinHashesByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.DotFiles.KeepShellRcFilesByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.PassMgrs.KeepPasswordFilesByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.PAMAndPwVault.KeepCyberArkConfigsByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.CiCdStuff.KeepJenkinsByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.APIKeys.KeepCloudApiKeysByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.RemoteAccess.KeepFtpClientByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.Ruby.KeepRubyByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.DotFiles.KeepShellHistoryByName.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.SSH.RelayPrivKeyByEnding.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.DeploymentAutomation.KeepDomainJoinCredsByPath.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.DeploymentAutomation.KeepSCCMBootVarCredsByPath.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.SSH.KeepSSHFilesByPath.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.APIKeys.KeepCloudApiKeysByPath.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Discard.DiscardByFileExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.SSH.KeepSSHKeysByFileExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.Java.RelayJavaByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.Cmd.RelayCmdByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.DeploymentAutomation.KeepDeployImageByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.Databases.KeepDatabaseByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.RemoteAccess.KeepRemoteAccessConfByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.RelayInfraConfigByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.InfraAsCode.KeepInfraAsCodeConfigByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.GenericConfig.RelayConfigByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.PAMAndPwVault.RelayCyberArkByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.Perl.RelayPerlByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.Python.RelayPythonByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.PacketCapture.KeepPcapByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.RemoteAccess.RelayRdpByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.PHP.RelayPhpByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.MemDumps.KeepMemDumpByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.CSharpAndASP.RelayCSharpByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.JavaScript.RelayJsByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.PowerShell.RelayPsByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.PassMgrs.KeepPassMgrsByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.VBScript.RelayVBScriptByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.ShellScript.RelayShellScriptByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.Certificates.RelayCertByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.Ruby.RelayRubyByExtension.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.KeepSqlAccountCreation.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.NetworkDevice.KeepNetConfigCreds.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.RemoteAccess.KeepRdpPasswords.toml
+Snaffler.SnaffRules.DefaultRules.ShareRules.Keep.KeepSCCMShares.toml
+Snaffler.SnaffRules.DefaultRules.ShareRules.Discard.DiscardNonFileShares.toml
+Snaffler.SnaffRules.DefaultRules.ShareRules.Keep.KeepDollarShares.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.Java.KeepJavaDbConnStrings.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.Perl.KeepPerlDbConnStrings.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.PHP.KeepPhpDbConnStrings.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.CSharpAndASP.KeepCSharpDbConnStrings.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.Python.KeepPyDbConnStrings.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.Ruby.KeepRubyDbConnStrings.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.Cmd.KeepCmdCredentials.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.PowerShell.KeepPsCredentials.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.ShellScript.KeepShellScriptCredentials.toml
+Snaffler.SnaffRules.DefaultRules.PathRules.Discard.DiscardWinSystemDirs.toml
+Snaffler.SnaffRules.DefaultRules.PathRules.Discard.DiscardLargeFalsePosDirs.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.CSharpAndASP.KeepCSharpViewstateKeys.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.BusinessDocs.ByPartialName.KeepFilenameContainsPamOrPwdVault.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.KeepDbConnStringPw.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Infrastructure.DeploymentAutomation.KeepUnattendXmlRelay.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.UserFiles.BrowserCreds.KeepFfLoginsJsonRelay.toml
+Snaffler.SnaffRules.DefaultRules.FileRules.Keep.Code.KeepInlinePrivateKey.toml
+symbol
+ParseImpl
+_needReleaseMFStream
+m_Stream
+GetManifestResourceStream
+get_BaseStream
+ReleaseStream
+CloseStream
+FlushStream
+_inStream
+SetStream
+ReleaseOutStream
+SetOutStream
+outStream
+MemoryStream
+_stream
+get_Item
+set_Item
+System
+SymmetricAlgorithm
+HashAlgorithm
+ICryptoTransform
+_hashSizeSum
+GetOptimum
+_optimum
+Enum
+resourceMan
+Boolean
+GetMatchLen
+kMatchMinLen
+kMatchMaxLen
+_matchMaxLen
+kStartMaxLen
+get_Token
+CancellationToken
+Sign
+kDicLogSizeMin
+Main
+AppDomain
+set_TargetDomain
+get_CurrentDomain
+Train
+SeekOrigin
+SnaffCon
+set_Configuration
+LoggingConfiguration
+System.Globalization
+Action
+System.Reflection
+get_Position
+set_Position
+_pointerToLastSafePosition
+StartPosition
+position
+SearchOption
+ApplicationException
+ArgumentException
+_son
+StringComparison
+Warn
+get_FileInfo
+get_CultureInfo
+FileSystemInfo
+ConsoleKeyInfo
+DirectoryInfo
+UpdateRep
+_isRep
+UpdateShortRep
+MakeAsShortRep
+IsShortRep
+get_MaxSizeToGrep
+set_MaxSizeToGrep
+SevenZip
+Skip
+DefaultProp
+get_Mq
+set_Mq
+MakeMq
+BlockingMq
+GetMq
+System.Linq
+Clear
+UpdateChar
+MakeAsChar
+Prev1IsChar
+StreamReader
+TextReader
+BinaryReader
+MD5CryptoServiceProvider
+TripleDESCryptoServiceProvider
+StringBuilder
+ITomlSettingsBuilder
+sender
+FindMatchFinder
+_matchFinder
+GetSubCoder
+m_MidCoder
+_midCoder
+SevenZip.Compression.RangeCoder
+m_HighCoder
+_highCoder
+m_LowCoder
+_lowCoder
+m_RangeDecoder
+rangeDecoder
+m_LiteralDecoder
+m_LenDecoder
+m_RepLenDecoder
+m_PosAlignDecoder
+m_PosSlotDecoder
+_rangeEncoder
+_literalEncoder
+_repMatchLenEncoder
+_lenEncoder
+_posAlignEncoder
+_posSlotEncoder
+encoder
+Order
+SevenZip.Buffer
+m_Buffer
+_buffer
+get_ResourceManager
+LogManager
+GetCurrentClassLogger
+Debugger
+WriteEndMarker
+writeEndMarker
+ResolveEventHandler
+Snaffler
+System.CodeDom.Compiler
+controller
+PrintBanner
+ToUpper
+CommandLineParser
+CommandLineArgumentsParser
+commandlineargumentsparser
+_keepSizeAfter
+keepAddBufferAfter
+StreamWriter
+TextWriter
+Enter
+ToLower
+get_RuleDir
+set_RuleDir
+ChangePair
+WithConversionFor
+set_ForegroundColor
+set_BackgroundColor
+ConsoleColor
+WriteColor
+fgColor
+ResetColor
+ConsoleOutputColor
+Floor
+Error
+get_Separator
+set_Separator
+IEnumerator
+GetEnumerator
+.ctor
+.cctor
+Monitor
+CreateDecryptor
+propIDs
+kMatchFinderIDs
+System.Diagnostics
+set_TreeThreads
+set_FileThreads
+set_ShareThreads
+NumThreads
+get_MaxThreads
+set_MaxThreads
+backRes
+lenRes
+ProbPrices
+FillAlignPrices
+_alignPrices
+tempPrices
+FillDistancesPrices
+_distancesPrices
+SetPrices
+_posSlotPrices
+_prices
+System.Runtime.InteropServices
+System.Runtime.CompilerServices
+ReadMatchDistances
+_matchDistances
+kNumFullDistances
+kNumRepDistances
+_repDistances
+distances
+System.Resources
+Snaffler.Properties.Resources.resources
+DebuggingModes
+GetMatches
+GetAssemblies
+Snaffler.Properties
+SetLiteralProperties
+set_IncludeAllProperties
+WriteCoderProperties
+SetCoderProperties
+SetDecoderProperties
+SetPosBitsProperties
+properties
+UpdateTables
+MatchFinderCycles
+GetFiles
+get_WordHighlightingRules
+set_UseDefaultRowHighlightingRules
+get_ClassifierRules
+set_ClassifierRules
+set_DomainUserRules
+GetManifestResourceNames
+ReadAllLines
+set_ScanFoundShares
+NumPasses
+kNumStates
+m_NumPosStates
+numPosStates
+kNumLenToPosStates
+get_Attributes
+ReadBytes
+GetNumAvailableBytes
+numHashBytes
+kNumHashDirectBytes
+GetBytes
+NumFastBytes
+_numFastBytes
+inputBytes
+set_MatchContextBytes
+get_Flags
+AssemblyNameFlags
+get_MatchedStrings
+TomlSettings
+ResolveEventArgs
+args
+NormalizeLinks
+System.Threading.Tasks
+Equals
+kNumPosModels
+NumBitLevels
+numBitLevels
+kNumLenSpecSymbols
+numSymbols
+kNumMidLenSymbols
+kNumLenSymbols
+kNumLowLenSymbols
+ReleaseStreams
+SetStreams
+numItems
+items
+System.Security.Claims
+repLens
+Contains
+ConversionBuilderExtensions
+System.Text.RegularExpressions
+System.Collections
+get_Options
+set_Options
+m_Pos
+MovePos
+_streamPos
+_cyclicBufferPos
+g_FastPos
+nowPos
+_pos
+reps
+m_Coders
+m_IsRepG0Decoders
+m_IsRepG1Decoders
+m_IsRepG2Decoders
+m_Decoders
+m_IsRep0LongDecoders
+m_IsMatchDecoders
+m_IsRepDecoders
+m_PosDecoders
+m_Encoders
+_posEncoders
+SnaffCore.Classifiers
+PrepareClassifiers
+RuntimeHelpers
+_counters
+_numDistancePairs
+SnaffCore.Classifiers.EffectiveAccess
+SetProgress
+progress
+Compress
+Decompress
+NLog.Targets
+get_PathTargets
+set_ComputerTargets
+ReduceOffsets
+_numLiteralPosStateBits
+_posStateBits
+kNumMoveBits
+numMoveBits
+kNumMoveReducingBits
+kNumBitModelTotalBits
+numTotalBits
+kNumMidLenBits
+kNumHighLenBits
+kNumLowLenBits
+kNumAlignBits
+kNumLenToPosStatesBits
+m_NumPosBits
+numPosBits
+LitPosBits
+DecodeDirectBits
+EncodeDirectBits
+kNumBitPriceShiftBits
+kNumPosSlotBits
+_numLiteralContextBits
+LitContextBits
+m_NumPrevBits
+numPrevBits
+CommandLineParser.Arguments
+get_Arguments
+kNumOpts
+NLog.Layouts
+get_RwStatus
+Concat
+Format
+Object
+System.Net
+FileTarget
+ColoredConsoleTarget
+kHash3Offset
+_additionalOffset
+_bufferOffset
+offset
+DecodeBit
+EncodeBit
+op_Implicit
+Split
+m_Limit
+set_MaxRecursionLimit
+_posLimit
+limit
+BaseInit
+Exit
+kNumFastBytesDefault
+get_FileResult
+get_ShareResult
+get_DirResult
+get_TextResult
+get_ShareComment
+SwitchArgument
+get_Current
+GetCurrent
+System.Collections.Concurrent
+get_Count
+_matchPriceCount
+_alignPriceCount
+byteCount
+GetPosSlot
+start
+Convert
+CalculateDigest
+GetDigest
+VerifyDigest
+digest
+bigDist
+smallDist
+Nett
+nett
+set_TimeOut
+set_Layout
+TargetWithLayout
+JsonLayout
+FixJSONOutput
+HandleOutput
+MoveNext
+System.Text
+ReadAllText
+get_MatchContext
+_dictionarySizePrev
+BackPrev
+_numFastBytesPrev
+PosPrev
+conv
+keepSizeReserv
+StartNew
+ShiftLow
+m_OutWindow
+kNumPosStatesEncodingMax
+kNumPosStatesBitsEncodingMax
+kNumLitPosStatesBitsEncodingMax
+kNumPosStatesMax
+kNumPosStatesBitsMax
+kNumLitContextBitsMax
+_optimumEndIndex
+kEndPosModelIndex
+kStartPosModelIndex
+repIndex
+_optimumCurrentIndex
+startIndex
+index
+set_Regex
+set_CompileRegex
+InitializeArray
+ToArray
+SnaffCore.Concurrency
+set_Key
+ReadKey
+ContainsKey
+get_CanModify
+System.Security.Cryptography
+get_Assembly
+ReadExistingAssembly
+GetExecutingAssembly
+set_DfsOnly
+dictionary
+get_Factory
+TaskFactory
+CreateDirectory
+op_Equality
+op_Inequality
+ClaimsIdentity
+WindowsIdentity
+IsNullOrEmpty
+NMx>N
+,?0?
+				
+				
+			 
+WrapNonExceptionThrows
+Snaffler
+SnaffCon
+Copyright 
+  2020
+2a-a26a-760c1cefec3e
+1.0.0.0
+.NETFramework,Version=v4.7
+FrameworkDisplayName
+.NET Framework 4.7
+3System.Resources.Tools.StronglyTypedResourceBuilder
+16.0.0.0
+				
+																						
+																		
+				
+K					
+										
+				
+				
+				
+						
+				
+					
+				
+					
+					
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

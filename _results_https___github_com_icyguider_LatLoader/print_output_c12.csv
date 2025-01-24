@@ -1,0 +1,8 @@
+"std::cout << ""Connected to ROOT\\CIMV2 WMI namespace"" << std::endl;"
+"std::cout << ""Could not connect. Error code = 0x"" "
+"std::cout << ""Could not set proxy blanket. Error code = 0x"" "
+"std::cout << ""Failed to create IWbemLocator object."""
+"std::cout << ""Failed to initialize COM library. Error code = 0x"" "
+"std::cout << ""Failed to initialize security. Error code = 0x"" "
+"std::cout << ""[+] Cleaned up the exception handler."" << std::endl;"
+"std::cout << ""[+] NtAllocateVirtualMemory result: "" << status << std::endl;"

@@ -1,0 +1,23 @@
+        # Change
+        # Check Get-WinEvent cmdlet
+        # Search
+    # $HKEY_CURRENT_USER_PATH = ""Registry::HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default"""
+    # $HKEY_CURRENT_USER_SERVER_PATH = ""Registry::HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Servers\"""
+    # Change"
+    # Delete Old.evtx"
+    # Fix One EventLog"
+    # Get EventLog path"
+    # Kill Eventlog Service
+    # Kill Eventlog Service"
+    # Remove-Item $RdpDefault -Recurse -Force 2>&1 | Out-Null
+    # Rename New.evtx Old.evtx"
+    # Replace string"
+    # Save New.evtx"
+    # Search"
+    # Start Eventlog Service"
+"
+" 
+"    
+"    # %userprofile%\documents\ => $env:userprofile""\documents\"""
+"    # Remove-ItemProperty -Path ""Registry::$RegPathName"" -Name ""$RegPathValue"""
+"    #""Registry::HKEY_CURRENT_USER\Volatile Environment\"""

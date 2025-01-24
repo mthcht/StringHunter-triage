@@ -1,0 +1,59 @@
+ make_smb1_anonymous_login_packet 
+" make_smb1_free_hole_session_packet($flags2, $vcnum, $native_os) "
+"DecryptWinSCPPassword($SessionHostname, $SessionUsername, $Password) "
+"Invoke-EternalBlue($Target, $InitialGrooms, $MaxAttempts, $Shellcode)"
+"make_smb1_echo_packet($tree_id, $user_id) "
+"make_smb1_nt_trans_packet($tree_id, $user_id) "
+"make_smb1_trans2_exploit_packet($tree_id, $user_id, $type, $timeout) "
+"smb1_large_buffer($smbheader,$sock)"
+"smb2_grooms($Target, $grooms, $payload_hdr_pkt, $groom_socks)"
+"smb_eternalblue($Target, $grooms, $Shellcode) "
+"tree_connect_andx($sock, $Target, $userid)"
+"tree_connect_andx_request($Target, $userid) "
+Bitmap-Elevate 
+Bitmap-Read 
+Bitmap-Write 
+ClearnEventRecordID 
+ClearnIpAddress 
+ClearnTempLog 
+Create-AcceleratorTable 
+DecryptNextCharacterWinSCP($remainingPass) 
+Destroy-AcceleratorTable 
+Do-AltShiftEsc 
+Do-AltShiftTab 
+Do-OrAddress 
+DownloadAndExtractFromRemoteRegistry($File) 
+Get-LoadedModules 
+Get-SystemToken 
+Get-ThreadHandle 
+GetComputersFromActiveDirectory 
+GetMappedSID 
+Invoke-MS16032 
+Invoke-MS16135 
+Invoke-SessionGopher 
+KillEvenlogService 
+LocalSessionManager 
+ProcessFileZillaFile($FileZillaXML) 
+ProcessPPKFile($PPKExtensionFilesINodes) 
+ProcessPuTTYLocal($AllPuTTYSessions) 
+ProcessRDPFile($RDPExtensionFilesINodes) 
+ProcessRDPLocal($AllRDPSessions) 
+ProcessSuperPuTTYFile($SuperPuTTYXML) 
+ProcessThoroughLocal($AllDrives) 
+ProcessThoroughRemote($FilePathsFound) 
+ProcessWinSCPLocal($AllWinSCPSessions) 
+ProcesssdtidFile($sdtidExtensionFilesINodes) 
+RegRdpPort 
+Sim-KeyDown 
+Sim-KeyUp 
+Stage-gSharedInfoBitmap 
+Trigger-Write 
+client_negotiate($sock)
+make_kernel_shellcode 
+make_kernel_user_payload($ring3) 
+make_smb2_payload_body_packet($kernel_user_payload) 
+make_smb2_payload_headers_packet()
+smb1_anonymous_login($sock)
+smb1_free_hole($start) 
+smb1_get_response($sock)
+smb_header($smbheader) 

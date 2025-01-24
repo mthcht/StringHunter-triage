@@ -1,0 +1,100 @@
+"('/tmp/webtrufflehog.log', 'w'"
+"('DOMContentLoaded', updateFindings"
+"('Disconnected from native host:', chrome.runtime.lastError"
+"('I', raw_length"
+"('Secrets found:', findings"
+"(([key, value]"
+"((a, b"
+"(0, length"
+"(0,0,0,0.1"
+"(content, temp_dir"
+"(dirname ""$CHROME_DIR"""
+"(f""Error downloading {url}: {str(e"
+"(f""Error removing temp dir: {str(e"
+"(f""Error removing temp file: {str(e"
+"(f""Error scanning with trufflehog: {str(e"
+"(f""Error sending message: {str(e"
+"(f""Result sender error: {str(e"
+"(f""Worker error: {str(e"
+"(filename, 'a'"
+"(finding, finding.url"
+"(finding, url"
+"(finding.Raw, 200"
+"(null, (items"
+"(result, '/tmp/results.json'"
+"(result,filename"
+"(str, length"
+"(struct.pack('I', len(encoded_content"
+"(temp_dir, 'scan_target.txt'"
+"(temp_file, 'w'"
+"(url, timeout=30"
+(!port
+('active'
+('application/'
+('com.webtrufflehog'
+('div'
+('findingsCount'
+('findingsList'
+('id'
+('queueSize'
+('queueSize' in items
+('queueStatus'
+('script/'
+('utf-8'
+((
+((response
+() if line.strip(
+(...value
+(4
+(None
+(You can find that in chrome://version
+(card
+(content
+(content.encode(
+(contentType.includes('text/'
+(details
+(echo -n $DEFAULT_INSTALL_DIR | sed 's/\//\\\//g'
+(encoded_content
+(finding.Raw
+(finding.Verified
+(findings.length === 0
+(https://github.com/trufflesecurity/trufflehog
+(icons/icon128.png
+(items
+(items.queueSize
+(json.dumps(result
+(key.startsWith('findings_'
+(line
+(message
+(message_length
+(must be available in system PATH
+(newest first
+(noFindings
+(num_workers
+(popup.png
+(port
+(queueSize
+(queueSize > 0
+(rawDetail
+(response.findings && response.findings.length > 0
+(response.status !== undefined
+(result
+(statusCheckInterval
+(str.length <= length
+(t
+(target=result_sender
+(target=worker
+(temp_dir
+(temp_file
+(timestamp
+(typeElement
+(typically ~/.config/google-chrome on Linux systems
+(updateFindings
+(url
+(url.encode(
+(urlElement
+(url_hash
+(verificationElement
+({ queueSize: response.status }
+({ status: 'check' }
+({'status': url_queue.qsize(

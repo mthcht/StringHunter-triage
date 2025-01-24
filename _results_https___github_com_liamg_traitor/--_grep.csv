@@ -1,0 +1,158 @@
+	--flag    // boolean flags only
+	--flag=x
+ --
+ -- $split)
+ -- (commandline -ct))
+ -- -Wall -Werror -static -I/tmp/include -fsigned-char _const.go
+ -- -Wall -Werror -static -I/tmp/include -fsigned-char linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/include -m32 _const.go
+ -- -Wall -Werror -static -I/tmp/include -m32 linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/include -m64 _const.go
+ -- -Wall -Werror -static -I/tmp/include -m64 linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/include _const.go
+ -- -Wall -Werror -static -I/tmp/include linux/types.go | go run mkpost.go
+ -- -fsigned-char types_freebsd.go | go run mkpost.go
+ -- -fsigned-char types_openbsd.go | go run mkpost.go
+ -- -m32 _const.go
+ -- -m64 _const.go
+ -- -maix32 _const.go
+ -- -maix64 _const.go
+ -- -marm _const.go
+ -- PROV_RSA_*/
+ -- _const.go
+ -- and which came after.
+ -- bool Value
+ -- boolSlice Value
+ -- but
+ -- count Value
+ -- displays the status of the named release
+ -- durationSlice Value
+ -- float32 Value
+ -- float32Slice Value
+ -- float64 Value
+ -- float64Slice Value
+ -- following it
+ -- int Value
+ -- int16 Value
+ -- int32 Value
+ -- int32Slice Value
+ -- int64 Value
+ -- int64Slice Value
+ -- int8 Value
+ -- intSlice Value
+ -- ipSlice Value
+ -- is counted as arg.
+ -- is not counted as arg but
+ -- net.IP value
+ -- net.IPMask value
+ -- no zos semantics
+ -- search for a keyword in charts
+ -- show information of a chart
+ -- string Value
+ -- stringArray Value
+ -- stringSlice Value
+ -- stringToInt Value
+ -- stringToInt64 Value
+ -- stringToString Value
+ -- they are supposed
+ -- time.Duration Value
+ -- uint Value
+ -- uint16 value
+ -- uint32 value
+ -- uint64 Value
+ -- uint8 Value
+ -- uintSlice Value
+ -- was
+ -- was already set or interspersed is false and there is already one arg then
+ -- was found during args parsing.
+ -- was set on a previous arg.
+ -- zos golang only
+ --*= ]]; then
+ -------------    | -------------   |
+ -->
+ --ADJECTIVE.`
+ --FLAG`
+ --bare
+ --build-arg=GOVERSION=1.14 --build-arg=GOOS=darwin --build-arg=GOARCH=386 .
+ --build-arg=GOVERSION=1.14 --build-arg=GOOS=darwin --build-arg=GOARCH=arm .
+ --build-arg=GOVERSION=1.6 --build-arg=GOOS=linux --build-arg=GOARCH=amd64 .
+ --config string    config file (default is $HOME/.cobra.yaml)
+ --container=  -p            --pod=
+ --erase __%[1]s_comp_results
+ --flag and --flag= ?
+ --flag= prefix
+ --flag=abc
+ --flagname       | ip=4321         |
+ --flagname=1357  | ip=1357         |
+ --flags.
+ --global __%[1]s_comp_results $completions
+ --global __%[1]s_comp_results $results[1..-2]
+ --global __%[1]s_comp_results $split[1] $split[1].
+ --help             help for cobra
+ --help' for usage.
+ --illumos switch
+ --invalid
+ --license string   name of license for the project
+ --max 1 \t $__%[1]s_comp_results[1])
+ --my-flag == --my_flag == --my.flag
+ --next-flag ...
+ --next-flag ... (args will be --next-flag ...)
+ --old-flag-name == --new-flag-name
+ --output [tab][tab]
+ --port=1313
+ --prefix)/etc/bash_completion.d/%[1]s
+ --prefix)/share/zsh/site-functions/_%[1]s
+ --scale 0 $directive / $shellCompDirectiveError) %% 2)
+ --scale 0 $directive / $shellCompDirectiveFilterDirs) %% 2)
+ --scale 0 $directive / $shellCompDirectiveFilterFileExt) %% 2)
+ --scale 0 $directive / $shellCompDirectiveNoFileComp) %% 2)
+ --scale 0 $directive / $shellCompDirectiveNoSpace) %% 2)
+ --start 2 $results[-1])
+ --style=regex)
+ --tag generate:$GOOS $GOOS
+ --unknown=unknownval arg ...
+ --usefulflag int    sometimes it's very useful (default 777)
+ --v to work
+ --verbose           verbose output
+ --version 2.0.[tab]
+ --version 2.0.[tab][tab]
+ --version flag can be completed
+ --viper            use Viper for configuration (default true)
+"
+" -- ""$@"" _const.go >_error.out"
+" -- ""$cur"" ) )"
+" -- ""$cur"")"
+" -- ""$lastChar"""
+" -- ""^$prefix.*"" $__%[1]s_comp_results)"
+" -- $line) = """""
+" -- '-.*=' ""$lastArg"")"
+" -- -fsigned-char"""
+" -- HEAD"")"
+" --%s has been deprecated, %s\n"", flag.Name, flag.Deprecated)"
+" --%s"", flag.Name)"
+" --%s"", flag.Shorthand, flag.Name)"
+" --%s"", name)"
+" --author string    author name for copyright attribution (default ""YOUR NAME"")"
+" --badflag has been deprecated, please use --good-flag instead` when ""badflag"" is used."
+" --coolflag string   it's really cool flag (default ""yeaah"")"
+" --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts org.freedesktop.Accounts.CreateUser string:%s string:%s int32:1`,"
+" --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts/User%s org.freedesktop.Accounts.User.SetPassword string:%s string:lol`,"
+" --do-complete ""%[2]s "" > /dev/null 2>&1"
+" --good-flag instead"")"
+" --help"" for more information about a command."
+" --help"" for more information about a command.{{end}}"
+" --help' for usage.\n"", c.CommandPath())"
+" --interactive --tty --volume $(cd -- ""$(dirname -- ""$0"")/.."" && /bin/pwd):/build generate:$GOOS"
+" --namespace my-rook-ns [tab][tab]`, Cobra will call your registered `ValidArgsFunction` after having parsed the `--namespace` flag, as it would have done when calling the `RunE` function."
+" --no-headers ""$1"" 2>/dev/null); then"
+" --noshorthandflag only"")"
+" --noshorthandflag only` when the shorthand ""n"" is used."
+" --output """""
+" --print-reply --type=method_call --dest=org.freedesktop.PackageKit /org/freedesktop/PackageKit org.freedesktop.PackageKit.Modify.InstallPackageNames uint32:1 array:string:%s string:`,"
+" --ss=""v1,v2"" --ss=""v3"""
+" --tags`"" ./cmd/traitor"
+" --template=""${template}"" namespace 2>/dev/null); then"
+" --version flag can be completed""), cobra.ShellCompDirectiveNoFileComp"
+--flag    // boolean flags, or flags with no option default values"
+--flag x  // only on flags without a default value"
+--flag=x"

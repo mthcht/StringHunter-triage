@@ -1,0 +1,8 @@
+"std::cout << ""Dropping python script on machine"" << std::endl;"
+"std::cout << ""Getting pool information ..."" << std::endl;"
+"std::cout << ""Mining POOL: {id} = ""<< pool->id << "" {pool} = "" << pool->pool << std::endl;"
+"std::cout << ""Running persistence ... "" << std::endl;"
+"std::cout << ""Sending to server the miner ID ..."" << std::endl;"
+"std::cout << ""Starting thread to mine ..."" << std::endl;"
+"std::cout << ""false"" << std::endl;"
+"std::cout << ""true"" << std::endl;"

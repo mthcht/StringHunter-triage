@@ -1,0 +1,33 @@
+"` and then load the module into Havoc using the script manager. To view help in Havoc, run "
+"` call using hardware breakpoints. This is not effective against any EDRs that rely on kernel callbacks for detecting winapi usage (Elastic, MDE, etc). However, I have included it as a PoC to demonstrate how it could be used against other EDRs which still rely on hooking. If you would like to use a version of the sideloader without HWBP syscalls, simply modify the makefile to compile "
+"` installed. Additionally, you must have [osslsigncode](https://github.com/mtrojnar/osslsigncode) installed to provide cert signing for the DLL utilized by the "
+"` is one of these directories, which was appended to each wmi command like so: "
+"` subcommand. Once all dependencies are installed, simply type "
+"`, "
+"`, & "
+"`, serve as the main mechanism for executing the provided BOFs. The 3 other subcommands ("
+"`. To view help for subcommands, run "
+` and 
+` command can be used to upload a local file to a remote system via SMB using the 
+` instead of 
+` subcommand can be used to execute a command on a remote system via WMI using the 
+`&& echo --path C:\\Windows\\CCMCache\\cache
+`C:\\Windows\\CCMCache\\*
+`NtAllocateVirtualMemory
+``
+`exec
+`help LatLoader
+`help LatLoader [subcommand]
+`load
+`make
+`mingw-w64
+`rupload
+`show w' and 
+`sideload
+`sideloader.c
+`sideloader.cpp
+`wmiBOF.cpp
+`wmiexec.cpp
+`writefile.c
+`writefileBOF.c
+`xorload

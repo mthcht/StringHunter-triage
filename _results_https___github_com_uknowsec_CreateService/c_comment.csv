@@ -1,0 +1,153 @@
+"//
+"//     * Redistributions in binary form must reproduce the above copyright notice, this list of "
+"//     * Redistributions of source code must retain the above copyright notice, this list of "
+"// 2 elements, 0x8 bytes"
+"// 65 elements, 0x210 bytes"
+"// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR "
+"// CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
+"// IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND"
+"// Note 1: If you want to have your own DllMain, define REFLECTIVEDLLINJECTION_CUSTOM_DLLMAIN,  "
+"// Note 2: If you are injecting the DLL via LoadRemoteLibraryR, define REFLECTIVEDLLINJECTION_VIA_LOADREMOTELIBRARYR,"
+"// Note: On ARM, the compiler optimization /O2 seems to introduce an off by one issue, possibly a code gen bug. Using /O1 instead avoids this problem."
+"// OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE "
+"// Redistribution and use in source and binary forms, with or without modification, are permitted "
+"// SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY "
+"// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR "
+"// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"" AND ANY EXPRESS OR "
+"// call our respective entry point, fudging our hInstance value"
+"// itterate through all imported functions, importing by ordinal if no name present"
+"// itterate through all sections, loading them into memory."
+"// perform the relocation, skipping IMAGE_REL_BASED_ABSOLUTE as required."
+"// relocate the image. Also zeros all memory and marks it as READ, WRITE and EXECUTE to avoid any problems."
+"// some x64 dll's can trigger a bogus signature (IMAGE_DOS_SIGNATURE == 'POP r10'),"
+#define WIN32_LEAN_AND_MEAN"
+#endif"
+#ifndef REFLECTIVEDLLINJECTION_CUSTOM_DLLMAIN"
+#ifndef _REFLECTIVEDLLINJECTION_REFLECTIVEDLLINJECTION_H"
+#ifndef _REFLECTIVEDLLINJECTION_REFLECTIVELOADER_H"
+#include ""ReflectiveLoader.h"""
+#pragma intrinsic( _ReturnAddress )"
+#pragma intrinsic( _rotr )"
+//         otherwise it is assumed you are calling the ReflectiveLoader via a stub.
+//         otherwise the DllMain at the end of this file will be used.
+//     * Neither the name of Harmony Security nor the names of its contributors may be used to
+// All rights reserved.
+// As we search from PPEB_LDR_DATA->InMemoryOrderModuleList we dont use the first entry.
+// Copyright (c) 2012, Stephen Fewer of Harmony Security (www.harmonysecurity.com)"
+// DllMain and use the LoadRemoteLibraryR() API to inject this DLL.
+// FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR 
+// Note: REFLECTIVEDLLINJECTION_VIA_LOADREMOTELIBRARYR and REFLECTIVEDLLINJECTION_CUSTOM_DLLMAIN are
+// Our loader will set this to a pseudo correct HINSTANCE/HMODULE value"
+// POSSIBILITY OF SUCH DAMAGE.
+// RIP relative addressing in this instance but I dont believe we can do so with the compiler intrinsics 
+// STEP 0: calculate our images current base address
+// STEP 1: process the kernels exports for the functions our loader needs...
+// STEP 2: load our image into a new permanent location in memory...
+// STEP 3: load in all of our sections...
+// STEP 4: process our images import table...
+// STEP 5: process all of our images relocations...
+// STEP 6: call our images entry point
+// STEP 8: return our new entry point address so whatever called us can call DllMain() if needed.
+// This function can not be inlined by the compiler or we will not get the address we expect. Ideally 
+// This is a stub for the actuall functionality of the DLL."
+// This is our position independent reflective DLL loader/injector
+// We must flush the instruction cache to avoid stale code being used which was updated by our relocation processing.
+// WinDbg> dt -v ntdll!_LDR_DATA_TABLE_ENTRY
+// WinDbg> dt -v ntdll!_PEB
+// WinDbg> dt -v ntdll!_PEB_FREE_BLOCK
+// WinDbg> dt -v ntdll!_PEB_LDR_DATA
+// You can use this value as a pseudo hinstDLL value (defined and set via ReflectiveLoader.c)
+// allocate all the memory for the DLL to be loaded into. we can load at any address because we will  
+// and we itterate through all entries...
+// apply the relocation to the target address
+// available (and no inline asm available under x64).
+// break if we have found a valid MZ/PE header
+// calculate the base address delta and perform relocations (even if we load at desired image base)
+// check if their are any relocations present
+// clear uiValueC which will store the hash of the module name
+// compare the hash with that of kernel32.dll
+// compute the hash of the module name...
+// compute the hash values for this function name
+// conditions and the following disclaimer in the documentation and/or other materials provided 
+// conditions and the following disclaimer.
+// copy the section over
+// decrement our counter
+// defined in the project properties (Properties->C++->Preprocessor) so as we can specify our own 
+// endorse or promote products derived from this software without specific prior written permission.
+// flip the words to get the instruction as expected
+// get pointer to current modules name (unicode string)
+// get the MOV.T instructions DWORD value (We add 4 to the offset to go past the first MOV.W which handles the low word)
+// get the Process Enviroment Block
+// get the VA for the array of addresses
+// get the VA for the array of name ordinals
+// get the VA for the array of name pointers
+// get the VA of the NT Header for the PE to be loaded
+// get the VA of the export directory
+// get the VA of the modules NT Header
+// get the VA of the next section
+// get the VA of this functions import by name struct
+// get the first entry of the InMemoryOrder module list
+// get the next entry
+// get the next entry in the current relocation block
+// get the next entry in the relocation directory
+// get the next exported function name
+// get the next exported function name ordinal
+// get the next import
+// get the next imported function
+// get the processes loaded modules. ref: http://msdn.microsoft.com/en-us/library/aa813708(VS.85).aspx
+// get this modules base address
+// if we are injecting a DLL via LoadRemoteLibraryR we call DllMain and pass in our parameter (via the DllMain lpReserved parameter)
+// if we are injecting an DLL via a stub we call DllMain with no parameter
+// if we have found a function we want we get its virtual address
+// itterate through all imports
+// loop through memory backwards searching for our images base address
+// loop while we still have imports to find
+// normalize to uppercase if the madule name is in lowercase
+// now create a new instruction with the same opcode and register param.
+// now flip the instructions words and patch back into the code...
+// patch in the address for this imported function
+// patch in the relocated address...
+// provided that the following conditions are met:
+// pull out the encoded 16bit value (the high portion of the address-to-relocate)
+// sanity chack we are processing a MOV instruction...
+// sanity check uiValueD as some compilers only import by FirstThunk
+// set bCounter to the length for the loop
+// store this functions VA
+// struct _PEB is defined in Winternl.h but it is incomplete
+// the functions we need
+// the initial location of this image in memory
+// the kernels base address and later this images newly loaded base address
+// this code will be compiled with the /O2 and /Ob1 switches. Bonus points if we could take advantage of 
+// uiNameArray = the address of the modules export directory entry
+// uiValueA = VA of the IAT (via first thunk not origionalfirstthunk)
+// uiValueA = the VA for this relocation block
+// uiValueA = the VA of our newly loaded DLL/EXE's entry point
+// uiValueA = the VA of the first section
+// uiValueB = number of entries in this relocation block
+// uiValueB = the address of the import directory
+// uiValueB = the address of the relocation directory
+// uiValueB is the VA for this section
+// uiValueC if the VA for this sections data
+// uiValueC is now the first entry (IMAGE_BASE_RELOCATION)
+// uiValueC is the first entry in the import table
+// uiValueD = VA of the OriginalFirstThunk
+// uiValueD is now the first entry in the current relocation block
+// use GetProcAddress and patch in the address for this imported function
+// use LoadLibraryA to load the imported module into memory
+// use the import ordinal (- export ordinal base) as an index into the array of addresses
+// use this functions name ordinal as an index into the array of name pointers
+// variables for loading this image
+// variables for processing the kernels export table
+// we assume their is an import table to process
+// we declare some common stuff in here...
+// we dont need SEH style search as we shouldnt generate any access violations with this
+// we dont use a switch statement to avoid the compiler building a jump table
+// we itterate through all the entries in the current block...
+// we must now copy over the headers
+// we sanity check the e_lfanew with an upper threshold value of 1024 to avoid problems.
+// we stop searching when we have found everything we need.
+// we will start searching backwards from our callers return address.
+// which would not be very position independent!
+// with the distribution.
+BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD dwReason, LPVOID lpReserved)"
+typedef struct _UNICODE_STR"

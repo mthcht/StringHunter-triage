@@ -1,0 +1,8 @@
+ sdshow $_.Name; $x=(sc.exe
+ sdshow $_.PSChildName; $x=(sc.exe
+"User.Value)); Add-Content -Path $f -Value ((whoami /groups) + ""</groups>""); Get-Service | % {{ $c=sc.exe"
+"nt -Path $f -Value """"; Get-ChildItem -Path ""HKLM:\\SYSTEM\\CurrentControlSet\\Services"" | % {{ $c=sc.exe"
+"ows service configurations and Access Control Entries, eliminating the need for tools like accesschk.exe"
+"roups) + ""</groups>""); Get-ChildItem -Path ""HKLM:\\SYSTEM\\CurrentControlSet\\Services"" | % {{ $c=sc.exe"
+"v:ALLUSERSPROFILE, ""{SRVS_CONF_FILENAME}""); Set-Content -Path $f -Value """"; Get-Service | % {{ $c=sc.exe"
+"ws service configurations and Access Control Entries, eliminating the need for tools like `accesschk.exe"

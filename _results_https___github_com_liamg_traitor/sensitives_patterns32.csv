@@ -1,0 +1,10 @@
+	dockerfile := `FROM scratch
+"		Name:    ""Dockerfile"","
+"		Size:    int64(len(dockerfile)),"
+"	if _, err := io.Copy(tarWriter, strings.NewReader(dockerfile)); err != nil {"
+"the kernel or system library updates, modify the Dockerfile at"
+`${GOOS}/Dockerfile` to checkout the new release of the source.
+docker build -t creack-pty-test -f Dockerfile.golang --build-arg=GOVERSION=1.14 --build-arg=GOOS=darwin --build-arg=GOARCH=386 .
+docker build -t creack-pty-test -f Dockerfile.golang --build-arg=GOVERSION=1.14 --build-arg=GOOS=darwin --build-arg=GOARCH=arm .
+docker build -t creack-pty-test -f Dockerfile.golang --build-arg=GOVERSION=1.6 --build-arg=GOOS=linux --build-arg=GOARCH=amd64 .
+docker build -t creack-pty-test -f Dockerfile.riscv .

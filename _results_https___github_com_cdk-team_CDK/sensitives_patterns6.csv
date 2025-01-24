@@ -1,0 +1,7 @@
+"-file=/etc/kubernetes/pki/sa.key"",""--service-cluster-ip-range=172.21.0.0/20"",""--use-service-account-credentials=true""],""resources"":{""requests"":{""cpu"":""200m""}},""volumeMounts"":[{""name"":""ca-certs"",""readOnly"":true,"""
+"allow-untagged-cloud=true"",""--leader-elect=true"",""--cloud-provider=alicloud"",""--use-service-account-credentials=true"",""--cloud-config=/etc/kubernetes/config/cloud-config.conf"",""--feature-gates=ServiceNodeExclusi"
+/* Allow forged pids on socket credentials passing */
+/* Allows forged gids on socket credentials passing. */
+/* Allows forged pids on socket credentials passing. */
+analysis-url: https://github.com/mzet-/les-res/blob/master/features/debug_credentials.md
+available: CONFIG_DEBUG_CREDENTIALS=y

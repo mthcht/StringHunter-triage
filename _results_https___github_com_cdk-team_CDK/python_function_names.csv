@@ -1,0 +1,8 @@
+"('', 'check_host_evaluate(cmd, white_list, black_list, verbose=False)')"
+"('', 'check_host_exec(cmd_parsed, white_list, black_list, verbose=False)')"
+"('', 'check_pod_exec(cmd, white_list, black_list, verbose=False)')"
+"('', 'check_selfbuild_k8s_pod_exec(cmd, white_list, black_list, verbose=False)')"
+"('', 'inside_container_cmd(image, docker_args, cmd, white_list, black_list, verbose=False)')"
+"('', 'k8s_master_ssh_cmd(cmd_parsed, white_list, black_list, verbose=False)')"
+"('', 'output_err(env, cmd, pattern, type)')"
+"('SERVER', '')"

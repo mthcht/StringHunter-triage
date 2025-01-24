@@ -1,0 +1,164 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+p	o3
+p	o3
+p	o3
+,4r#
+l[(J
+*BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+<Split>d__1
+IEnumerable`1
+IEnumerator`1
+List`1
+ToInt32
+<partCount>5__2
+<i>5__3
+<Module>
+RootDSE
+GetUserSPN
+mscorlib
+System.Collections.Generic
+get_ManagedThreadId
+<>l__initialThreadId
+get_CurrentThread
+cred
+NewGuid
+Replace
+get_Message
+AddRange
+IEnumerable
+IDisposable
+Console
+distinguishedName
+userName
+WriteLine
+ReadOnlyCollectionBase
+System.IDisposable.Dispose
+<>1__state
+CompilerGeneratedAttribute
+GuidAttribute
+DebuggableAttribute
+ComVisibleAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+DebuggerHiddenAttribute
+AssemblyFileVersionAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+ToByte
+get_Value
+SPNSearcher.exe
+System.Threading
+Ceiling
+System.Runtime.Versioning
+ToString
+Substring
+Match
+Math
+get_Length
+<>3__partLength
+NetworkCredential
+System.Security.Principal
+System.IdentityModel
+TokenImpersonationLevel
+FindAll
+Program
+get_Item
+System
+KerberosRequestorSecurityToken
+Main
+GetCurrentDomain
+System.Reflection
+ResultPropertyValueCollection
+GroupCollection
+SearchResultCollection
+ResultPropertyCollection
+NotSupportedException
+ArgumentNullException
+get_InnerException
+ArgumentException
+Group
+SPNSearcher
+DirectorySearcher
+BitConverter
+GetSPNInfor
+IEnumerator
+System.Collections.Generic.IEnumerable<System.String>.GetEnumerator
+System.Collections.IEnumerable.GetEnumerator
+.ctor
+System.Diagnostics
+System.Runtime.InteropServices
+System.Runtime.CompilerServices
+System.DirectoryServices
+DebuggingModes
+get_Properties
+args
+System.IdentityModel.Tokens
+Contains
+System.Text.RegularExpressions
+System.Collections
+RegexOptions
+get_Groups
+get_Success
+Concat
+Format
+Object
+System.Net
+GetDomainSPNTicket
+System.Collections.IEnumerator.Reset
+Split
+SearchResult
+System.Collections.Generic.IEnumerator<System.String>.Current
+System.Collections.IEnumerator.Current
+System.Collections.Generic.IEnumerator<System.String>.get_Current
+System.Collections.IEnumerator.get_Current
+<>2__current
+get_Count
+Convert
+GetRequest
+MoveNext
+<>3__text
+Regex
+System.DirectoryServices.ActiveDirectory
+DirectoryEntry
+op_Inequality
+penc
+penc
+penc
+penc
+WrapNonExceptionThrows
+SPNSearcher
+Copyright 
+  2019
+$024740cc-1417-4ac0-b7bc-9bd5b4731241
+1.0.0.0
+.NETFramework,Version=v4.0
+FrameworkDisplayName
+.NET Framework 4
+RSDS
+C:\Users\XuanJian\Desktop\CSharp-Tools-master\SPNSearcher\SPNSearcher\obj\Release\SPNSearcher.pdb
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

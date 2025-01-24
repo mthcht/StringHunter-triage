@@ -1,0 +1,269 @@
+"[::System::Diagnostics::CodeAnalysis::SuppressMessage( category, id, __VA_ARGS__ )"
+"[M3^',"
+"[SAL_annotes(Name=#n, p1=_SA_SPECSTRIZE(pp1))"
+"[SAL_annotes(Name=#n, p1=_SA_SPECSTRIZE(pp1), p2=_SA_SPECSTRIZE(pp2))"
+"[SAL_annotes(Name=#n, p1=_SA_SPECSTRIZE(pp1), p2=_SA_SPECSTRIZE(pp2), p3=_SA_SPECSTRIZE(pp3))"
+"[SAL_at_buffer(p1=#target, p2=#iter, p3=#bound)"
+"[SAL_context(p1=""SAL_failed"")"
+"[SA_FormatString(Style=""printf"")"
+"[SA_FormatString(Style=""scanf"")"
+"[SA_FormatString(Style=""scanf_s"")"
+"[SA_Post(Deref=1,p1)"
+"[SA_Post(Deref=1,p1,p2)"
+"[SA_Post(Deref=1,p1,p2,p3)"
+"[SA_Post(Deref=2,Notref=1,p1)"
+"[SA_Post(p1,p2)"
+"[SA_Post(p1,p2,p3)"
+"[SA_Pre(Deref=1, Notref=1, Access=SA_Read)"
+"[SA_Pre(Deref=1,p1)"
+"[SA_Pre(Deref=1,p1,p2)"
+"[SA_Pre(Deref=1,p1,p2,p3)"
+"[SA_Pre(Deref=2,Notref=1,p1)"
+"[SA_Pre(p1,p2)"
+"[SA_Pre(p1,p2,p3)"
+"[], const DWORD rgcbValueData["
+"[], const PROPVARIANT rgpropvar["
+"[], element_type(*)["
+"[],LPCWSTR const rgpwszValueName["
+"[],_Ty(*)["
+"[string, unique"
+[ 
+[ Is(I{0IA_A^
+[ Is(I{0Mc8IA_A^
+[ Is(I{8IA_A^
+[((POLICY_AUDIT_SUBCATEGORY_COUNT)>> 1)+ 1
+[((fd_set FAR *)(set))->fd_count++
+[(Is0IA^_
+[(Is0I{8IA_A^
+[(_Size) - 1
+[(a)
+[(e)?1:-1
+[(expr) != 0
+[(unsigned char)(c)
+[*
+[+
+[-
+[0
+[0Ik8Is@IA_A^A
+[0Is8I{@IA_A^A
+[0Is8I{HIA_A^A
+[0Is@I{HIA_A^A
+[0x24
+[1
+[10
+[1024
+[1030
+[11
+[12
+[128
+[14
+[15
+[16
+[17
+[18
+[2
+[20
+[200
+[21
+[224
+[24
+[256
+[26
+[260
+[3
+[32
+[34
+[36
+[38
+[4
+[40
+[48
+[5
+[50
+[512
+[6
+[64
+[7
+[8
+[80
+[816
+[8Is@IA_A^A
+[8Is@IA_A^A\_
+[9
+[96
+[@
+[@UATAUAVAWH`Hl$PH
+[A
+[ANYSIZE_ARRAY
+[ARM_MAX_BREAKPOINTS
+[ARM_MAX_WATCHPOINTS
+[CCHDEVICENAME
+[CCHFORMNAME
+[CCHILDREN_SCROLLBAR + 1
+[CCHILDREN_TITLEBAR + 1
+[CDB_SIZE
+[CRYPT_ECC_CMS_SHARED_INFO_SUPPPUBINFO_BYTE_LENGTH
+[CRYPT_X942_COUNTER_BYTE_LENGTH
+[CRYPT_X942_KEY_LENGTH_BYTE_LENGTH
+[DEFAULT_BUFLEN
+[DEVICEDUMP_MAX_IDSTRING
+[ELF_VENDOR_SIZE
+[EXCEPTION_MAXIMUM_PARAMETERS
+[F
+[FD_MAX_EVENTS
+[FD_SETSIZE
+[FILE_STORAGE_TIER_NAME_LENGTH
+[H0H%
+[HW_PROFILE_GUIDLEN
+[I
+[IMAGE_NUMBEROF_DIRECTORY_ENTRIES
+[IMAGE_SIZEOF_SHORT_NAME
+[IMAGE_SIZEOF_SYMBOL
+[IMEMENUITEM_STRING_SIZE
+[LF_FACESIZE
+[LF_FULLFACESIZE
+[M3
+[M3Z
+[M3^@
+[M3}
+[MAXIMUM_SUPPORTED_EXTENSION
+[MAXIMUM_XSTATE_FEATURES
+[MAXLOGICALLOGNAMESIZE
+[MAXPNAMELEN
+[MAX_DEFAULTCHAR
+[MAX_FW_BUCKET_ID_LENGTH
+[MAX_HW_COUNTERS
+[MAX_JOYSTICKOEMVXDNAME
+[MAX_LANA + 1
+[MAX_LEADBYTES
+[MAX_PATH
+[MAX_PATH + 36
+[MAX_PROFILE_LEN
+[MAX_PROTOCOL_CHAIN
+[MAX_PROTOCOL_ID_SIZE
+[MAX_SUPPORTED_OS_NUM
+[MAX_TRANSACTION_DESCRIPTION_LENGTH
+[MAX_VOLUME_ID_SIZE
+[MAX_VOLUME_TEMPLATE_SIZE
+[MIDIPATCHSIZE
+[MIXER_LONG_NAME_CHARS
+[MIXER_SHORT_NAME_CHARS
+[MM_MAX_AXES_NAMELEN
+[MM_MAX_NUMAXES
+[M_3^
+[MaxNumberOfEEInfoParams
+[N
+[NCBNAMSZ
+[NI_MAXHOST
+[NUM_DISCHARGE_POLICIES
+[OFS_MAXPATHNAME
+[OnFieldOnly
+[OnParameterOnly
+[OnParameterOrReturnOnly
+[OnStructOnly
+[POINTER_DEVICE_PRODUCT_STRING_MAX
+[POWER_SYSTEM_MAXIMUM
+[PROCESSOR_IDLESTATE_POLICY_COUNT
+[PROC_IDLE_BUCKET_COUNT
+[PROC_IDLE_BUCKET_COUNT_EX
+[PRODUCT_ID_LENGTH
+[REVISION_LENGTH
+[SAFER_MAX_DESCRIPTION_SIZE
+[SAFER_MAX_FRIENDLYNAME_SIZE
+[SAFER_MAX_HASH_SIZE
+[SAL_BEGIN
+[SAL_END
+[SAL_at(p1=#target)
+[SAL_begin
+[SAL_deref
+[SAL_end
+[SAL_except
+[SAL_notref
+[SAL_post
+[SAL_pre
+[SAL_typefix(p1=_SA_SPECSTRIZE(ctype))
+[SAL_when(p1=#expr)
+[SA_Post(MustCheck=SA_Yes)
+[SA_Post(p1)
+[SA_PostBound(Deref=0)
+[SA_PostBound(Deref=1)
+[SA_Pre(Valid=SA_Yes)
+[SA_Pre(p1)
+[SA_PreBound(Deref=0)
+[SA_PreBound(Deref=1)
+[SA_Success(Condition=#expr)
+[SCH_CRED_MAX_STORE_NAME_SIZE
+[SERIAL_NUMBER_LENGTH
+[SID_HASH_SIZE
+[SIZE_OF_80387_REGISTERS
+[STORAGE_OFFLOAD_TOKEN_ID_LENGTH
+[STYLE_DESCRIPTION_SIZE
+[SZ_ALG_MAX_SIZE
+[System::Diagnostics::CodeAnalysis::SuppressMessage( __VA_ARGS__ )
+[TC_DEVICEDUMP_SUBSECTION_DESC_LENGTH
+[TC_PUBLIC_DEVICEDUMP_CONTENT_GPLOG_MAX
+[TELEMETRY_COMMAND_SIZE
+[TOKEN_SOURCE_LENGTH
+[UNWIND_HISTORY_TABLE_SIZE
+[VENDOR_ID_LENGTH
+[WIM_PROVIDER_HASH_SIZE
+[WOW64_MAXIMUM_SUPPORTED_EXTENSION
+[WOW64_SIZE_OF_80387_REGISTERS
+[WSADESCRIPTION_LEN + 1
+[WSAPROTOCOL_LEN + 1
+[WSASYS_STATUS_LEN + 1
+[X
+[\
+[]E3Ll$ E333
+[]UI 
+[]US
+[^
+[^M3_
+[^O
+[_
+[_BUF_SIZE
+[_Block
+[_D0_C
+[_DirSize
+[_DriveSize
+[_ExtSize
+[_F0_C
+[_InSize
+[_JBLEN
+[_L0_C
+[_Len
+[_MAX_BLOCKS
+[_N
+[_NameSize
+[_Num_ptrs
+[_OutSize
+[_OutSize1
+[_OutSize2
+[_SS_PAD1SIZE
+[_SS_PAD2SIZE
+[_Size
+[_Space_size
+[_^
+[__A_(__d_=0)
+[__F_(__d_=0)
+[__M_(__d_=0)
+[__P_impl(__d_=0)
+[__R_impl(__d_=0)
+[__i
+[__i+1
+[assembly:System::Diagnostics::CodeAnalysis::SuppressMessage( __VA_ARGS__ )
+[d
+[e
+[i
+[image-20210610201152538
+[image-20210701131739157
+[method: OnFunctionOnly
+[ntlmLoc + 8
+[pIdx
+[r
+[repeatable
+[returnvalue: OnReturnOnly
+[sizeof(IMAGE_SYMBOL_EX)
+[source_annotation_attribute( loc )
+[this
+[}

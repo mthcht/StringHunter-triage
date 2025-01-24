@@ -1,0 +1,72 @@
+"//
+"// 0:  49 89 ca                mov r10,rcx"
+"// 3:  b8 0f 00 00 00          mov eax,0x0f"
+"// 3:  b8 0f 00 00 00          mov eax,0x18"
+"// 3:  b8 0f 00 00 00          mov eax,0x1E"
+"// 3:  b8 0f 00 00 00          mov eax,0x36"
+"// 3:  b8 0f 00 00 00          mov eax,0x3A"
+"// 3:  b8 0f 00 00 00          mov eax,0x50"
+"// 3:  b8 0f 00 00 00          mov eax,0x55"
+"// <param name=""CanLoadFromDisk"">Optional, indicates if the function can try to load the DLL from disk if it is not found in the loaded module list.</param>"
+"// <param name=""DLLName"">The name of the DLL (e.g. ""ntdll.dll"" or ""C:\Windows\System32\ntdll.dll"").</param>"
+"// <param name=""DLLName"">The name of the DLL (e.g. ""ntdll.dll"").</param>"
+"// <param name=""DLLPath"">The path to the DLL on disk. Uses the LoadLibrary convention.</param>"
+"// <param name=""ExportName"">The name of the export to search for (e.g. ""NtAlertResumeThread"").</param>"
+"// <param name=""FunctionName"">Name of the exported procedure.</param>"
+"// <param name=""ModuleBase"">A pointer to the base address where the module is loaded in the current process.</param>"
+"// AX, BX, CX, DX, SI, DI"
+"// COM, impostare su true l'attributo ComVisible per tale tipo."
+"// DB 0-3,6,7"
+"// DS, ES, FS, GS"
+"// Given a module base address, resolve the address of a function by manually walking the module export table."
+"// SS:SP, CS:IP, FLAGS, BP"
+"// Se si imposta ComVisible su false, i tipi in questo assembly non saranno visibili"
+"// [assembly: AssemblyVersion(""1.0.*"")]"
+//      Numero di build
+//      Revisione
+//      Versione principale"
+//      Versione secondaria
+//  same as i386
+// 387 state
+// 8:  0f 05                   syscall
+// </summary>
+// <author>Ruben Boonen (@FuzzySec)</author>
+// <returns>IntPtr base address of the loaded module or IntPtr.Zero if the module is not found.</returns>
+// <returns>IntPtr base address of the loaded module or IntPtr.Zero if the module was not loaded successfully.</returns>
+// <returns>IntPtr for the desired function.</returns>
+// <summary>
+// Author: B4rtik (@b4rtik)"
+// Catch parser failure
+// Error
+// Export not found
+// HRESULT
+// Helper for getting the base address of a module loaded by the current process. This base address could be passed to GetProcAddress/LdrGetProcedureAddress or it could be used for manual export parsing.
+// Helper for getting the pointer to a function from a DLL loaded by the process.
+// If the FileType is VFT_DRV
+// If the FileType is VFT_FONT
+// Informational
+// IsProcessSnapshotCallback
+// Le informazioni generali relative a un assembly sono controllate dal seguente 
+// Le informazioni sulla versione di un assembly sono costituite dai seguenti quattro valori:
+// License: BSD 3-Clause
+// Loop the array of export name RVA's
+// Project: RedPeanut (https://github.com/b4rtik/RedPeanut)
+// Project: SharpMiniDump (https://github.com/b4rtik/SharpMiniDump)
+// Read -> IMAGE_EXPORT_DIRECTORY
+// Resolves LdrLoadDll and uses that function to load a DLL from disk.
+// Success
+// This is a PCWSTR
+// Traverse the PE header in memory
+// Warning
+// a:  c3                      ret
+// all
+// associate a un assembly.
+// cpu specific extensions
+// directory
+// file
+// file & directory
+// file & pipe
+// named pipe
+// set di attributi. Modificare i valori di questi attributi per modificare le informazioni
+// usando l'asterisco '*' come illustrato di seguito:
+// x64

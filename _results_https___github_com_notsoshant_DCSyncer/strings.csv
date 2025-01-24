@@ -1,0 +1,2482 @@
+    
+                  err contains the error number
+                  err is a bit set of occured events
+                )
+                ASN1error_e err
+                ASN1magic_t             nModuleName
+                ASN1octet_t        
+                ASN1uint32_t        cbBufSize
+                ASN1uint32_t        dwFlags
+                ASN1uint32_t        nPduNum
+                ASN1uint32_t size
+                int
+            ASN1octet_t    
+            ASN1uint32_t    cbBufSize
+            ASN1uint32_t val 
+        ASN1encodingrule_e              eRule
+        ASN1uint32_t                    cbRequiredDecodedBufSize
+        __field_bcount(length) 
+        struct
+        void           
+        {
+        }                               Buffer
+      </AdditionalLibraryDirectories>
+      </DelayLoadDLLs>
+      <AdditionalDependencies>kernel32.lib
+      <AdditionalLibraryDirectories>
+      <AssemblyDebug>false</AssemblyDebug>
+      <Configuration>Debug</Configuration>
+      <Configuration>Release</Configuration>
+      <ConformanceMode>true</ConformanceMode>
+      <DelayLoadDLLs>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ExceptionHandling>false</ExceptionHandling>
+      <Extensions>cpp
+      <Extensions>h
+      <Extensions>rc
+      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
+      <Filter>globals
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Platform>Win32</Platform>
+      <Platform>x64</Platform>
+      <PreprocessorDefinitions>NDEBUG
+      <PreprocessorDefinitions>WIN32
+      <PreprocessorDefinitions>_DEBUG
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+      <StringPooling>true</StringPooling>
+      <SubSystem>Console</SubSystem>
+      <UniqueIdentifier>{1401be28-5329-4a52-a475-cd09b99352fb}</UniqueIdentifier>
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <UniqueIdentifier>{5b8dbd36-d672-4586-9bdc-c940835dee23}</UniqueIdentifier>
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <UniqueIdentifier>{6fe91c5f-6b0d-452a-a3cd-95c70f6ae36b}</UniqueIdentifier>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <WarningLevel>Level3</WarningLevel>
+     // enumerated type
+    )
+    /
+    // New error codes
+    // Teles specific error codes
+    // Teles specific warning codes
+    // common get option
+    // common set option
+    // encoded
+    // get decoder option
+    // get encoder option
+    // set decoder option
+    // set encoder option
+    </ClCompile>
+    </ClInclude>
+    </Filter>
+    </Library>
+    </Link>
+    </ProjectConfiguration>
+    <CharacterSet>Unicode</CharacterSet>
+    <ClCompile>
+    <ConfigurationType>Application</ConfigurationType>
+    <IncludePath>$(SolutionDir)inc
+    <Keyword>Win32Proj</Keyword>
+    <LibraryPath>$(SolutionDir)lib
+    <Link>
+    <LinkIncremental>false</LinkIncremental>
+    <PlatformToolset>v142</PlatformToolset>
+    <ProjectGuid>{253e716a-ab96-4f87-88c7-052231ec2a12}</ProjectGuid>
+    <RootNamespace>DCSyncer</RootNamespace>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <UseOfMfc>Static</UseOfMfc>
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    ASN1BerFunArr_t         BER
+    ASN1_BER_RULE               = ASN1_BER_RULE_BER 
+    ASN1bool_t universal
+    ASN1char16_t 
+    ASN1char32_t 
+    ASN1char_t 
+    ASN1encodingrule_e      eRule
+    ASN1encodingrule_e  eRule
+    ASN1error_e         err
+    ASN1int16_t diff
+    ASN1magic_t             nModuleName
+    ASN1magic_t         magic
+    ASN1module_t        module
+    ASN1octet_t 
+    ASN1octet_t  
+    ASN1octet_t        
+    ASN1octet_t value[1]
+    ASN1option_e    eOption
+    ASN1uint16_t count
+    ASN1uint16_t length
+    ASN1uint16_t millisecond
+    ASN1uint16_t year
+    ASN1uint32_t
+    ASN1uint32_t            cPDUs
+    ASN1uint32_t            dwFlags
+    ASN1uint32_t        bit
+    ASN1uint32_t        cbExtraHeader
+    ASN1uint32_t        dwFlags
+    ASN1uint32_t        len
+    ASN1uint32_t        size
+    ASN1uint32_t        version
+    ASN1uint32_t    length
+    ASN1uint32_t length
+    ASN1uint32_t value
+    ASN1uint32_t value[16]
+    ASN1uint8_t day
+    ASN1uint8_t hour
+    ASN1uint8_t minute
+    ASN1uint8_t month
+    ASN1uint8_t second
+    ASN1uint8_t year
+    WCHAR 
+    __deref_out ASN1decoding_t     
+    __deref_out ASN1encoding_t     
+    __deref_out void              
+    __field_bcount(length) 
+    __field_bcount(size)
+    __field_ecount(length) 
+    __field_xcount(cPDUs)
+    __in        ASN1bitstring_t 
+    __in        ASN1char16string_t 
+    __in        ASN1char32string_t 
+    __in        ASN1charstring_t 
+    __in        ASN1decoding_t      pDecoderInfo
+    __in        ASN1encoding_t      pEncoderInfo
+    __in        ASN1generalizedtime_t 
+    __in        ASN1intx_t 
+    __in        ASN1module_t        pModule
+    __in        ASN1objectidentifier2_t 
+    __in        ASN1objectidentifier_t 
+    __in        ASN1octetstring_t 
+    __in        ASN1open_t 
+    __in        ASN1optionparam_t  
+    __in        ASN1utctime_t 
+    __in        LPVOID  ptr
+    __in        void               
+    __in ASN1bitstring_t 
+    __in ASN1char16string_t 
+    __in ASN1char32string_t 
+    __in ASN1charstring_t 
+    __in ASN1intx_t 
+    __in ASN1objectidentifier_t 
+    __in ASN1octetstring_t 
+    __in ASN1open_t 
+    __in ASN1wstring_t 
+    __in ASN1ztchar16string_t
+    __in ASN1ztchar32string_t
+    __in ASN1ztcharstring_t
+    __in_bcount(cbBufSize)
+    __in_bcount_opt( cbBufSize )
+    __in_bcount_opt(cbBufSize)
+    __in_opt    ASN1decoding_t      pParent
+    __in_opt    ASN1encoding_t      pParent
+    __in_z      ASN1ztchar16string_t
+    __in_z      ASN1ztchar32string_t
+    __in_z      ASN1ztcharstring_t
+    __inout     ASN1optionparam_t  
+    __out   ASN1intx_t 
+    __out_bcount_opt( cbBufSize )          
+    const ASN1BerDecFun_t 
+    const ASN1BerEncFun_t 
+    const ASN1FreeFun_t    
+    const ASN1uint32_t     
+    count octets for unsigned encoding of an uint32 value 
+    return (ULONG)NdrClientCall2((PMIDL_STUB_DESC)
+    struct ASN1iterator_s 
+    struct ASN1objectidentifier_s 
+    union
+    void 
+    {
+    }
+   - err == 0:    data has been successfully decoded
+   /
+   // choice
+   Error codes for decoding functions:
+  </ImportGroup>
+  </ItemDefinitionGroup>
+  </ItemGroup>
+  </PropertyGroup>
+  <ItemGroup>
+  ASN1DecAlloc
+  ASN1DecRealloc
+  ASN1EncSetError
+  ASN1Free
+  ASN1_CloseDecoder
+  ASN1_CloseEncoder
+  ASN1_CloseEncoder2
+  ASN1_CloseModule
+  ASN1_CreateDecoder
+  ASN1_CreateDecoderEx
+  ASN1_CreateEncoder
+  ASN1_CreateModule
+  ASN1_Decode
+  ASN1_Encode
+  ASN1_FreeDecoded
+  ASN1_FreeEncoded
+  ASN1_GetDecoderOption
+  ASN1_GetEncoderOption
+  ASN1_SetDecoderOption
+  ASN1_SetEncoderOption
+  Comparisson APIs
+  Options
+  XXX_free
+  intx conversions
+ !((i 
+ !(Guid 
+ !tools/packages.config
+ ((allData 
+ (DRS_EXT_GETCHGREQ_V8 
+ (GetLastError() == ERROR_INSUFFICIENT_BUFFER))
+ (ObjectGUIDfound 
+ (allData 
+ (https://github.com/github/gitignore/pull/1529
+ (https://github.com/github/gitignore/pull/2483
+ (minor))
+ (size = wcslen(src)))
+ --- flags for functions --- 
+ ------ Basic ASN.1 types ------ 
+ ------ Basic integer types ------ 
+ ------ Current version of this ASN.1 software ------ 
+ ------ Encoding rules ------ 
+ ------ Function modifiers ------ 
+ ------ public structures ------ 
+ .NET Core
+ // 10M
+ // for legacy
+ 0 : EXOP_REPL_OBJ)
+ 0x0000000f) == 2)
+ 0x0000000f]
+ 1 : 2
+ 1) 
+ 1) % sep))
+ 1))
+ 1)))
+ 1000 : 1)
+ 2) 
+ ALG_TYPE_ANY 
+ ARRAYSIZE(dcsync_oids_export) : ARRAYSIZE(dcsync_oids)) - 1))
+ ASN1FLAGS_NONE or ASN1FLAGS_NOASSERT 
+ ASN1_BER_RULE_CER 
+ ASN1dec
+ ASN1enc 
+ ASN1encoding_t
+ ASN1uint32_uoctets
+ Assume 8 byte packing throughout 
+ Assume responsibility for allocated buffer 
+ AxoCover is a Code Coverage Tool
+ Azure Stream Analytics local run output
+ Backup 
+ BeatPulse healthcheck temp database
+ Benchmark Results
+ BizTalk build output
+ Build Results of an ATL Project
+ Build results
+ Business Intelligence projects
+ Cake - Uncomment if you are using it
+ Chutzpah Test files
+ Click-Once directory
+ CodeRush personal settings
+ ComputerObjectName
+ Context)
+ Convert binary document formats to text before diffing them. This feature
+ CrackedDomain)
+ DCSyncer
+ DRS_EXT_STRONG_ENCRYPTION
+ DRS_EXT_STRONG_ENCRYPTION))
+ DRS_FULL_SYNC_NOW 
+ DRS_HANDLE
+ DRS_NEVER_SYNCED 
+ DRS_SYNC_URGENT
+ DRS_WRIT_REP 
+ DS_IS_DNS_NAME 
+ DnsHostName
+ DocProject is a documentation generator add-in
+ Domain
+ DotCover is a Code Coverage Tool
+ End 8-byte packing 
+ FAKE - F
+ Files built by Visual Studio
+ Files/
+ Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
+ GhostDoc plugin setting file
+ Guid)
+ Guidance Automation Toolkit
+ Including strong name files can present a security risk
+ Installshield output folder
+ JetBrains Rider
+ JustCode is a .NET coding add-in
+ Local History for Visual Studio
+ MFractors (Xamarin productivity tool) working folder
+ MSBuild Binary and Structured Log
+ MSTest test Results
+ Make
+ Merging from the command prompt will add diff markers to the files if there
+ Microsoft Azure Build Output
+ Microsoft Azure Emulator
+ Microsoft Azure Web App publish settings. Comment the next line if you want to
+ Microsoft Fakes
+ MightyMoose
+ NCrunch
+ NUNIT
+ NVidia Nsight GPU debugger configuration file
+ NetbiosName
+ Node.js Tools for Visual Studio
+ Note: This is only used by command line
+ NtdsDsaObjectName
+ NuGet Packages
+ NuGet v3's project.json files produces more ignorable files
+ OpenCover UI analysis results
+ Others
+ PCRYPTO_BUFFER
+ PCUNICODE_STRING
+ PDRS_EXTENSIONS_INT
+ PDRS_MSG_DCINFOREQ
+ PDS_NAME_RESULTW
+ PDS_NAME_RESULT_ITEMW
+ PENCRYPTED_PAYLOAD
+ PKERB_CHECKSUM
+ PKERB_CHECKSUM_FINISH) (PVOID
+ PMD5_CTX
+ PRPC_FCNSTRUCT
+ Paket dependency manager
+ Publish Web Output
+ Python Tools for Visual Studio (PTVS)
+ RIA/Silverlight projects
+ ReSharper is a .NET coding add-in
+ RpcSecurityCallback)(void
+ SQL Server files
+ ServerObjectName
+ Service if NULL
+ Service)
+ SessionKey : 
+ SessionKey)
+ Set default behavior for command prompt diff.
+ Set default behavior to automatically normalize line endings.
+ Set the merge driver for project and solution files
+ SiteName
+ SiteObjectName
+ StyleCop
+ TFS 2012 Local Workspace
+ Tabs Studio
+ TeamCity is a build add-in
+ Telerik's JustMock configuration file
+ The packages folder can be ignored because of Package Restore
+ This is need for earlier builds of msysgit that does not have it on by
+ UF_FLAG[32] = {
+ Uncomment if necessary however generally it will be regenerated when needed
+ Uncomment if you have tasks that create the project's static files in wwwroot
+ Usage
+ User)))
+ User-specific files
+ User-specific files (MonoDevelop/Xamarin Studio)
+ Visual C
+ Visual Studio 2015/2017 cache/options directory
+ Visual Studio 2017 auto generated files
+ Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+ Visual Studio 6 build log
+ Visual Studio 6 workspace options file
+ Visual Studio LightSwitch build output
+ Visual Studio Trace Files
+ Visual Studio Version 16
+ Visual Studio cache files
+ Visual Studio code coverage results
+ Visual Studio profiler
+ Web workbench (sass)
+ Windows Store app package directories and files
+ Write-up
+ __RPC_USER midl_user_allocate(size_t cBytes)
+ _pType)
+ append to current buffer
+ argv[])
+ attribut
+ attributes)
+ bad arguments to function call 
+ bad choice value 
+ bad encoding rule 
+ bad pdu type 
+ bad real value 
+ bad tag value met 
+ bad unicode (utf8) 
+ because we have git 
+ behavior for image files
+ buffer overflow 
+ buffer to decode from 
+ buffer to encode into 
+ but database connection strings (with potential passwords) will be unencrypted
+ but keep track of directories ending in .cache
+ cache files
+ constraint violated 
+ continue behind last pdu
+ corrupted data 
+ current size of buffer 
+ default for csharp files.
+ diff behavior for common document formats
+ do not free/reuse buffer 
+ dotOID 
+ dst 
+ elements
+ empty destination buffer 
+ encodedOID)
+ end of data expected 
+ entries
+ entries below.
+ error code for last decoding 
+ error code for last encoding 
+ file extensions to fail to load in VS. An alternative would be to treat
+ files ending in .cache can be ignored
+ files generated by popular Visual Studio add-ons.
+ findAttr(SCHEMA_PREFIX_TABLE
+ fullDCName)
+ fullServer)
+ function not supported for this pdu
+ getChRep.V6.cNumObjects == 1))
+ hBinding)
+ i < ARRAYSIZE(attSensitive)
+ i < attributes->attrCount
+ i < cbData
+ i < dcInfoRep.V2.cItems
+ i < encodedDataSize
+ i < getChRep.V6.cNumObjects
+ i < getChReq.V8.pPartialAttrSet->cAttrs
+ i < pReplentinflist->Entinf.AttrBlock.attrCount
+ i < prefixTable->PrefixCount
+ i < sids->valCount
+ image files are treated as binary by default.
+ in these scripts will be unencrypted
+ internal error 
+ is only available from the command line. Turn it on by uncommenting the 
+ j < ARRAYSIZE(attSensitive)
+ k < pReplentinflist->Entinf.AttrBlock.pAttr[i].AttrVal.valCount
+ len of decoded data in buffer 
+ len of encoded data in buffer 
+ magic for this structure 
+ module this decoding_t depends to 
+ module this encoding_t depends to 
+ no asertion 
+ no flags 
+ not yet implemented 
+ objects)
+ out of memory 
+ pAVal
+ pAttr
+ pBuf)
+ pContext)
+ pDomain
+ pDomainInfo)
+ pDrsExtensionsInt)
+ pDrsExtensionsOutput = NULL
+ pKey->SessionKeyLength)
+ pMetaDataExt
+ pNC
+ pName
+ pNextEntInf
+ pNextReplentinflist = objects
+ pObject
+ pObject = getChRep.V6.pObjects
+ pObjects
+ pParentGuid
+ pPartialAttrSet
+ pPartialAttrSetEx
+ pPrefixEntry
+ pResult
+ pSidNameUse : 
+ pSize)
+ pUpToDateVecDest
+ pUpToDateVecSrc
+ pVal
+ phDrs)
+ pmsgOut)
+ prefixTable)
+ ptr = NULL
+ rItems
+ reply)
+ report files from converting an old project file
+ rescan from buffer start
+ rgValues
+ rpNames
+ sids
+ size of buffer 
+ size)
+ sizeof(ATTRTYP) 
+ sizeof(wchar_t)
+ sizeof(wchar_t) 
+ sizeof(wchar_t)))
+ skipped unknown extension(s) 
+ success 
+ szPrefix 
+ szServer 
+ text=auto
+ the diff markers are never inserted). Diff markers may cause the following 
+ these files as binary and thus will always conflict and require user
+ toAdd)
+ tools/
+ unexpected end of data 
+ use a user-given destination buffer 
+ use a user-given src buffer 
+ val->pVal)
+ valblock
+ value
+ value too large 
+ version number of this library 
+!.axoCover/settings.json
+!<arch>
+"                ASN1encodingrule_e      eRule,"
+"                ASN1uint32_t            cPDU,"
+"                ASN1uint32_t            dwFlags, /"
+"                ASN1uint32_t            nVersion,"
+"                ASN1uint32_t        cbBufSize,"
+"                ASN1uint32_t        dwFlags,"
+"                ASN1uint32_t        nPduNum,"
+"                const ASN1FreeFun_t     apfnFreeMemory[],"
+"                const ASN1GenericFun_t  apfnDecoder[],"
+"                const ASN1GenericFun_t  apfnEncoder[],"
+"                const ASN1uint32_t      acbStructSize[],"
+"    <ClCompile Include=""DCSyncer.c"" />"
+"    <ClCompile Include=""DCSyncer.c"">"
+"    <ClCompile Include=""crypto.c"" />"
+"    <ClCompile Include=""crypto.c"">"
+"    <ClCompile Include=""drsr.c"" />"
+"    <ClCompile Include=""drsr.c"">"
+"    <ClCompile Include=""helper.c"" />"
+"    <ClCompile Include=""helper.c"">"
+"    <ClCompile Include=""rpc.c"" />"
+"    <ClCompile Include=""rpc.c"">"
+"    <ClInclude Include=""crypto.h"" />"
+"    <ClInclude Include=""crypto.h"">"
+"    <ClInclude Include=""drsr.h"" />"
+"    <ClInclude Include=""drsr.h"">"
+"    <ClInclude Include=""globals.h"" />"
+"    <ClInclude Include=""globals.h"">"
+"    <ClInclude Include=""helper.h"" />"
+"    <ClInclude Include=""helper.h"">"
+"    <ClInclude Include=""inc"
+"    <ClInclude Include=""rpc.h"" />"
+"    <ClInclude Include=""rpc.h"">"
+"    <Filter Include=""Header Files"">"
+"    <Filter Include=""Resource Files"">"
+"    <Filter Include=""Source Files"">"
+"    <Filter Include=""globals"
+"    <Filter Include=""globals"">"
+"    <Import Project=""$(UserRootDir)"
+"    <Library Include=""lib"
+"    <ProjectConfiguration Include=""Debug"
+"    <ProjectConfiguration Include=""Release"
+"    ASN1DECODE_APPENDED         = 0x00000001L, /"
+"    ASN1DECODE_AUTOFREEBUFFER   = 0x00000010L, /"
+"    ASN1DECODE_NOASSERT         = ASN1FLAGS_NOASSERT, /"
+"    ASN1DECODE_REWINDBUFFER     = 0x00000004L, /"
+"    ASN1DECODE_SETBUFFER        = 0x00000008L, /"
+"    ASN1ENCODE_ALLOCATEBUFFER   = 0x00000010L, /"
+"    ASN1ENCODE_APPEND           = 0x00000001L, /"
+"    ASN1ENCODE_NOASSERT         = ASN1FLAGS_NOASSERT, /"
+"    ASN1ENCODE_REUSEBUFFER      = 0x00000004L, /"
+"    ASN1ENCODE_SETBUFFER        = 0x00000008L, /"
+"    ASN1FLAGS_NOASSERT          = 0x00001000L, /"
+"    ASN1FLAGS_NONE              = 0x00000000L, /"
+"    ASN1OPT_CHANGE_RULE                 = 0x101,"
+"    ASN1OPT_DEL_DECODED_BUFFER          = 0x502,"
+"    ASN1OPT_GET_DECODED_BUFFER_SIZE     = 0x601,"
+"    ASN1OPT_GET_RULE                    = 0x201,"
+"    ASN1OPT_NOT_REUSE_BUFFER            = 0x301,"
+"    ASN1OPT_REWIND_BUFFER               = 0x302,"
+"    ASN1OPT_SET_DECODED_BUFFER          = 0x501,"
+"    ASN1_BER_RULE_BER           = 0x0100,"
+"    ASN1_BER_RULE_CER           = 0x0200,"
+"    ASN1_BER_RULE_DER           = 0x0400,"
+"    ASN1_CHOICE_BASE      = 1,"
+"    ASN1_CHOICE_EXTENSION = 0,      // extension choice"
+"    ASN1_CHOICE_INVALID   = -1,     // invalid choice"
+"    ASN1_DER_SET_OF_BLOCK,"
+"    ASN1_ERR_BADARGS    = (-1009),      /"
+"    ASN1_ERR_BADPDU     = (-1008),      /"
+"    ASN1_ERR_BADREAL    = (-1010),      /"
+"    ASN1_ERR_BADTAG     = (-1011),      /"
+"    ASN1_ERR_CHOICE     = (-1012),      /"
+"    ASN1_ERR_CONSTRAINT = (-1005),      /"
+"    ASN1_ERR_CORRUPT    = (-1003),      /"
+"    ASN1_ERR_EOD        = (-1002),      /"
+"    ASN1_ERR_INTERNAL   = (-1001),      /"
+"    ASN1_ERR_LARGE      = (-1004),      /"
+"    ASN1_ERR_MEMORY     = (-1006),      /"
+"    ASN1_ERR_NYI        = (-1052),      /"
+"    ASN1_ERR_OVERFLOW   = (-1007),      /"
+"    ASN1_ERR_PDU_TYPE   = (-1051),      /"
+"    ASN1_ERR_RULE       = (-1013),      /"
+"    ASN1_ERR_UTF8       = (-1014),      /"
+"    ASN1_SUCCESS        = 0,            /"
+"    ASN1_WRN_EXTENDED   = 1001,         /"
+"    ASN1_WRN_NOEOD      = 1002,         /"
+"    __in        ASN1decoding_t      pDecoderInfo,"
+"    __in        ASN1decoding_t dec, "
+"    __in        ASN1encoding_t      pEncoderInfo,"
+"    __in        ASN1encoding_t enc, "
+"    __in        ASN1module_t        pModule,"
+"    __in        LPVOID ptr, "
+"    __in_opt    ASN1decoding_t      pParent,"
+"    __in_z      ASN1ztchar16string_t, "
+"    __in_z      ASN1ztchar32string_t, "
+"    __in_z      ASN1ztcharstring_t, "
+"    __range(0, 16)"
+"   - err <  0:    fatal error has occured, no data has been generated"
+"   - err >  0:    non-fatal event has occured, data has been generated"
+"  <Import Project=""$(VCTargetsPath)"
+"  <ImportGroup Label=""ExtensionSettings"">"
+"  <ImportGroup Label=""ExtensionTargets"">"
+"  <ImportGroup Label=""PropertySheets"" Condition=""'$(Configuration)"
+"  <ImportGroup Label=""Shared"">"
+"  <ItemDefinitionGroup Condition=""'$(Configuration)"
+"  <ItemGroup Label=""ProjectConfigurations"">"
+"  <PropertyGroup Condition=""'$(Configuration)"
+"  <PropertyGroup Label=""Globals"">"
+"  <PropertyGroup Label=""UserMacros"" />"
+" ((_wcsicmp(ServerName, dcInfoRep.V2.rItems[i].DnsHostName) == 0) "
+" (_wcsicmp(ServerName, dcInfoRep.V2.rItems[i].NetbiosName) == 0)))"
+" 2, size)"
+" ASN1_BER_RULE_DER,"
+" Copyright (C) Boris Nikolaus, Germany, 1996-1997. All rights reserved. "
+" Copyright (C) Microsoft Corporation 1997-1998, All rights reserved. "
+" CrackNames_Error[] = { L""NO_ERROR"", L""ERROR_RESOLVING"", L""ERROR_NOT_FOUND"", L""ERROR_NOT_UNIQUE"", L""ERROR_NO_MAPPING"", L""ERROR_DOMAIN_ONLY"", L""ERROR_NO_SYNTACTICAL_MAPPING"", L""ERROR_TRUST_REFERRAL"" }"
+" CrackNames_Error[drsStatus] : L"""
+" CrackedName, LPWSTR"
+" DS_FQDN_1779_NAME : wcschr(User, L'@') "
+" DS_NT4_ACCOUNT_NAME : wcschr(User, L'=') "
+" DS_RETURN_DNS_NAME, "
+" DS_USER_PRINCIPAL_NAME : DS_NT4_ACCOUNT_NAME_SANS_DOMAIN, User, DS_UNIQUE_ID_NAME, "
+" DomainGUID, LPCWSTR User, LPCWSTR Guid, GUID"
+" Ignore Visual Studio temporary files, build results, and"
+" NT_SUCCESS(CDLocateCheckSum(KERB_CHECKSUM_REAL_CRC32, "
+" Note: Comment the next line if you want to checkin your web deploy settings,"
+" NtdsDsaObjectGuid, DRS_HANDLE"
+" PKERB_CHECKSUM_FINALIZE) (PVOID pContext, PVOID Buffer)"
+" PKERB_CHECKSUM_INITIALIZE) (DWORD unk0, PVOID"
+" PKERB_CHECKSUM_INITIALIZEEX) (LPCVOID Key, DWORD KeySize, DWORD KeyUsage, PVOID"
+" PKERB_CHECKSUM_SUM) (PVOID pContext, DWORD Size, LPCVOID Buffer)"
+" RPC_C_AUTHN_GSS_KERBEROS : RPC_C_AUTHN_GSS_NEGOTIATE, NULL, RPC_C_IMP_LEVEL_DEFAULT, "
+" Since there are multiple workflows, uncomment next line to ignore bower_components"
+" State, char"
+" UserGuid, DRS_EXTENSIONS_INT"
+" are conflicts (Merging from VS is not affected by the settings below, in VS"
+" att, BOOL toAdd)"
+" attributes, LPCSTR szOid)"
+" attributes, LPCSTR szOid, BOOL newLine)"
+" attributes, LPCSTR szOid, PVOID data, DWORD"
+" attributes, LPCWSTR szSrcDomain, BOOL someExport)"
+" checkin your Azure Web App publish settings, but sensitive information contained"
+" dotOID, __out OssEncodedOID"
+" dst, LPCWSTR src)"
+" except build/, which is used as an MSBuild target."
+" fullServer : Service), RPC_C_AUTHN_LEVEL_PKT_PRIVACY, AuthnSvc, hAuth, RPC_C_AUTHZ_NONE, "
+" hBinding, GUID"
+" hBinding, LPCWSTR ServerName, LPCWSTR Domain, GUID"
+" hBinding, void (RPC_ENTRY"
+" hDrs, DRS_EXTENSIONS_INT"
+" i < min(ARRAYSIZE(UF_FLAG), sizeof(DWORD) "
+" i, "
+" intervention with every merge. To do so, just uncomment the entries below"
+" ndx, BOOL toAdd)"
+" oidPrefix, DWORD"
+" pBuffer, unsigned int"
+" pDomain, PSID_NAME_USE pSidNameUse, LPCWSTR system)"
+" pReplentinflist, "
+" pSid, PWSTR"
+" pdwOutVersion, DRS_MSG_CRACKREPLY"
+" pdwOutVersion, DRS_MSG_DCINFOREPLY"
+" pdwOutVersion, DRS_MSG_GETCHGREPLY"
+" pextClient, DRS_EXTENSIONS"
+" pmsgIn, DWORD"
+" ppextServer, DRS_HANDLE"
+" prefix : L"""", sz / sizeof(wchar_t), (PWSTR)ptr, newLine "
+" prefixTable, ATTRBLOCK"
+" prefixTable, LPCSTR szOid, ATTRTYP"
+" prefixTable, OssEncodedOID"
+" prefixTable, REPLENTINFLIST"
+" puuidClientDsa, DRS_EXTENSIONS"
+" sizeof(wchar_t), NetworkAddr, szServer)"
+" to a newer Visual Studio version. Backup files are not needed,"
+" val, SecPkgContext_SessionKey"
+""", L""0x20000000 "
+""", L""0x40000000 "
+""", L""0x8000 "
+""", L""0x80000000 "
+""", L""HOMEDIR_REQUIRED"", L""LOCKOUT"", L""PASSWD_NOTREQD"", L""PASSWD_CANT_CHANGE"", L""ENCRYPTED_TEXT_PASSWORD_ALLOWED"","
+""", L""INTERDOMAIN_TRUST_ACCOUNT"", L""WORKSTATION_TRUST_ACCOUNT"", L""SERVER_TRUST_ACCOUNT"", L""0x4000 "
+"""1.2.840.113556.1.2.115"""
+"""1.2.840.113556.1.2.14"""
+"""1.2.840.113556.1.2.36"""
+"""1.2.840.113556.1.2.48"""
+"""1.2.840.113556.1.4.1"""
+"""1.2.840.113556.1.4.125"""
+"""1.2.840.113556.1.4.129"""
+"""1.2.840.113556.1.4.133"""
+"""1.2.840.113556.1.4.135"""
+"""1.2.840.113556.1.4.1459"""
+"""1.2.840.113556.1.4.146"""
+"""1.2.840.113556.1.4.159"""
+"""1.2.840.113556.1.4.160"""
+"""1.2.840.113556.1.4.1720"""
+"""1.2.840.113556.1.4.1820"""
+"""1.2.840.113556.1.4.1836"""
+"""1.2.840.113556.1.4.2"""
+"""1.2.840.113556.1.4.2058"""
+"""1.2.840.113556.1.4.221"""
+"""1.2.840.113556.1.4.27"""
+"""1.2.840.113556.1.4.302"""
+"""1.2.840.113556.1.4.307"""
+"""1.2.840.113556.1.4.375"""
+"""1.2.840.113556.1.4.417"""
+"""1.2.840.113556.1.4.515"""
+"""1.2.840.113556.1.4.55"""
+"""1.2.840.113556.1.4.609"""
+"""1.2.840.113556.1.4.656"""
+"""1.2.840.113556.1.4.771"""
+"""1.2.840.113556.1.4.8"""
+"""1.2.840.113556.1.4.90"""
+"""1.2.840.113556.1.4.94"""
+"""1.2.840.113556.1.4.96"""
+"""1.2.840.113556.1.5.7000.47"""
+"""2.5.4.0"""
+"(PDWORD)data, kuhl_m_lsadump_samAccountType_toString("
+"(print_msg(L""["
+"(print_msg(L""[i] "" TEXT(__FUNCTION__) L"": "" __VA_ARGS__))"
+"(print_msg(L""[x] "" TEXT(__FUNCTION__) L"": "" __VA_ARGS__))"
+")LocalAlloc(LPTR, size))"
+")encdecfreefntab, sizetab, 'iwik'))"
+")pDrsExtensionsInt, (DRS_EXTENSIONS"
+"0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x03, 0x00, 0x30, 0x00, 0x30, 0x40, 0x00, 0x00, 0x00, 0x00, 0x2c, 0x00, 0x24, 0x00, 0x47, 0x06, 0x0a, 0x07, 0x01, 0x00,"
+"0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x40, 0x00, 0x0a, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x0a, 0x00, 0x08, 0x00, 0x32, 0x00, 0x00, 0x00,"
+"0x00, 0x00, 0x00, 0x00, 0x10, 0x00, 0x15, 0x07, 0x18, 0x00, 0x4c, 0x00, 0x1c, 0xfc, 0x0b, 0x5b, 0x1b, 0x07, 0x18, 0x00, 0x09, 0x00, 0xf8, 0xff, 0x01, 0x00, 0x4c, 0x00, 0xea, 0xff, 0x5c, 0x5b,"
+"0x00, 0x00, 0x00, 0x00, 0x10, 0x00, 0xb7, 0x08, 0x00, 0x00, 0x00, 0x00, 0x10, 0x27, 0x00, 0x00, 0x1b, 0x00, 0x01, 0x00, 0x19, 0x00, 0x00, 0x00, 0x01, 0x00, 0x02, 0x5b, 0x1a, 0x03, 0x10, 0x00,"
+"0x00, 0x00, 0x00, 0x00, 0x40, 0x00, 0x0a, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x30, 0x00, 0x30, 0x40, 0x00, 0x00, 0x00, 0x00,"
+"0x00, 0x00, 0x00, 0x00, 0x40, 0x00, 0x0a, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x0b, 0x00, 0x08, 0x00, 0x32, 0x00, 0x00, 0x00, 0x00, 0x00,"
+"0x00, 0x00, 0x00, 0x00, 0x40, 0x00, 0x0a, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x0e, 0x00, 0x08, 0x00, 0x32, 0x00, 0x00, 0x00, 0x00, 0x00,"
+"0x00, 0x00, 0x01, 0x00, 0x10, 0x00, 0x30, 0xe0, 0x00, 0x00, 0x00, 0x00, 0x38, 0x00, 0x40, 0x00, 0x44, 0x02, 0x0a, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x18, 0x01, 0x00, 0x00,"
+"0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0xb8, 0x03, 0x48, 0x00, 0x08, 0x00, 0x08, 0x00, 0x0b, 0x01, 0x10, 0x00, 0xc2, 0x04, 0x70, 0x00, 0x18, 0x00, 0x08, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00,"
+"0x00, 0x00, 0x0a, 0x00, 0x4c, 0x00, 0xe0, 0xff, 0x40, 0x36, 0x5c, 0x5b, 0x12, 0x00, 0xe2, 0xff, 0x1a, 0x03, 0x18, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x40, 0x4c, 0x00, 0xe0, 0xff, 0x5c, 0x5b,"
+"0x00, 0x00, 0x1a, 0x03, 0x88, 0x00, 0x00, 0x00, 0x1e, 0x00, 0x36, 0x36, 0x36, 0x36, 0x36, 0x36, 0x36, 0x08, 0x08, 0x08, 0x4c, 0x00, 0x32, 0xfd, 0x4c, 0x00, 0x2e, 0xfd, 0x4c, 0x00, 0x2a, 0xfd,"
+"0x00, 0x00, 0x1d, 0x00, 0x08, 0x00, 0x01, 0x5b, 0x15, 0x03, 0x10, 0x00, 0x08, 0x06, 0x06, 0x4c, 0x00, 0xf1, 0xff, 0x5b, 0x15, 0x07, 0x18, 0x00, 0x0b, 0x0b, 0x0b, 0x5b, 0xb7, 0x08, 0x00, 0x00,"
+"0x00, 0x00, 0x40, 0x00, 0x0a, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x0c, 0x00, 0x30, 0x00, 0x30, 0x40, 0x00, 0x00, 0x00, 0x00, 0x2c, 0x00,"
+"0x00, 0x00, 0x40, 0x00, 0x0a, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x0f, 0x00, 0x08, 0x00, 0x32, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,"
+"0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x30, 0x00, 0x32, 0x00, 0x00, 0x00, 0x44, 0x00, 0x40, 0x00, 0x47, 0x05, 0x0a, 0x07, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x0a, 0x00,"
+"0x00, 0xd1, 0xff, 0x36, 0x5c, 0x5b, 0x12, 0x00, 0xd4, 0xff, 0x11, 0x04, 0x02, 0x00, 0x2b, 0x09, 0x29, 0x54, 0x18, 0x00, 0x01, 0x00, 0x02, 0x00, 0x08, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00,"
+"0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0xb8, 0x03, 0x48, 0x00, 0x08, 0x00, 0x08, 0x00, 0x0b, 0x01, 0x10, 0x00, 0xc0, 0x03, 0x50, 0x21, 0x18, 0x00, 0x08, 0x00, 0x13, 0x01,"
+"0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x24, 0x00, 0xff, 0xff, 0xb7, 0x08, 0x01, 0x00, 0x00, 0x00, 0x10, 0x27, 0x00, 0x00, 0x21, 0x03, 0x00, 0x00, 0x19, 0x00, 0x04, 0x00, 0x01, 0x00, 0xff, 0xff,"
+"0x01, 0x00, 0x06, 0x00, 0x00, 0x00, 0xaa, 0xfd, 0xff, 0xff, 0x11, 0x00, 0x02, 0x00, 0x2b, 0x09, 0x29, 0x00, 0x08, 0x00, 0x01, 0x00, 0x02, 0x00, 0x28, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00,"
+"0x01, 0x00, 0x4c, 0x00, 0xe8, 0xff, 0x5c, 0x5b, 0x1a, 0x07, 0x10, 0x00, 0xec, 0xff, 0x00, 0x00, 0x08, 0x08, 0x4c, 0x00, 0xce, 0xff, 0x08, 0x5b, 0xb7, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,"
+"0x02, 0x00, 0x00, 0x00, 0x94, 0xfc, 0xff, 0xff, 0x11, 0x00, 0x02, 0x00, 0x2b, 0x09, 0x29, 0x00, 0x08, 0x00, 0x01, 0x00, 0x02, 0x00, 0x28, 0x00, 0x01, 0x00, 0x02, 0x00, 0x00, 0x00, 0x16, 0x00,"
+"0x02, 0x00, 0x2b, 0x09, 0x29, 0x00, 0x08, 0x00, 0x01, 0x00, 0x02, 0x00, 0x68, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x14, 0x00, 0xff, 0xff, 0x1d, 0x00, 0x54, 0x00, 0x02, 0x5b, 0x15, 0x00,"
+"0x04, 0x00, 0xff, 0xff, 0x1a, 0x03, 0x28, 0x00, 0x00, 0x00, 0x0c, 0x00, 0x36, 0x36, 0x4c, 0x00, 0x58, 0xfb, 0x08, 0x40, 0x5c, 0x5b, 0x11, 0x00, 0xf8, 0xfb, 0x11, 0x08, 0x22, 0x5c, 0x11, 0x00,"
+"0x06, 0x00, 0x08, 0x40, 0x36, 0x5b, 0x12, 0x00, 0xdc, 0xff, 0x1a, 0x03, 0x08, 0x00, 0x00, 0x00, 0x04, 0x00, 0x36, 0x5b, 0x12, 0x00, 0xe4, 0xff, 0xb7, 0x08, 0x00, 0x00, 0x00, 0x00, 0x10, 0x27,"
+"0x06, 0x00, 0x20, 0x00, 0x30, 0x40, 0x00, 0x00, 0x00, 0x00, 0x2c, 0x00, 0x08, 0x00, 0x46, 0x04, 0x0a, 0x05, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0xb8, 0x03,"
+"0x08, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x05, 0x00, 0x20, 0x00, 0x30, 0x40, 0x00, 0x00, 0x00, 0x00, 0x2c, 0x00, 0x08, 0x00, 0x46, 0x04, 0x0a, 0x05, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00,"
+"0x08, 0x00, 0x01, 0x00, 0x02, 0x00, 0x20, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x24, 0x00, 0xff, 0xff, 0xb7, 0x08, 0x01, 0x00, 0x00, 0x00, 0x10, 0x27, 0x00, 0x00, 0x21, 0x03, 0x00, 0x00,"
+"0x08, 0x00, 0x36, 0x36, 0x08, 0x40, 0x5c, 0x5b, 0x11, 0x00, 0x86, 0xfb, 0x12, 0x08, 0x22, 0x5c, 0x11, 0x00, 0x02, 0x00, 0x2b, 0x09, 0x29, 0x00, 0x08, 0x00, 0x01, 0x00, 0x02, 0x00, 0x30, 0x00,"
+"0x08, 0x00, 0x78, 0x03, 0x0b, 0x00, 0x10, 0x00, 0x7c, 0x03, 0x13, 0x20, 0x18, 0x00, 0xa4, 0x03, 0x10, 0x01, 0x20, 0x00, 0xac, 0x03, 0x70, 0x00, 0x28, 0x00, 0x08, 0x00, 0x00, 0x48, 0x00, 0x00,"
+"0x08, 0x5b, 0xb7, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10, 0x00, 0x15, 0x07, 0x20, 0x00, 0x4c, 0x00, 0x36, 0xff, 0x0b, 0x0b, 0x5c, 0x5b, 0x1b, 0x07, 0x20, 0x00, 0x09, 0x00, 0xf8, 0xff,"
+"0x0a, 0x00, 0x4c, 0x00, 0x74, 0xff, 0x40, 0x36, 0x5c, 0x5b, 0x12, 0x00, 0xd8, 0xff, 0x1a, 0x03, 0x20, 0x00, 0x00, 0x00, 0x0a, 0x00, 0x36, 0x08, 0x40, 0x4c, 0x00, 0xdf, 0xff, 0x5b, 0x12, 0x00,"
+"0x0a, 0x05, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0xb8, 0x03, 0x48, 0x00, 0x08, 0x00, 0x08, 0x00, 0x0b, 0x01, 0x10, 0x00, 0x8e, 0x04, 0x70, 0x00, 0x18, 0x00,"
+"0x10, 0x00, 0x00, 0x00, 0x06, 0x00, 0x36, 0x08, 0x40, 0x5b, 0x12, 0x08, 0x25, 0x5c, 0x11, 0x04, 0x02, 0x00, 0x2b, 0x09, 0x29, 0x54, 0x18, 0x00, 0x01, 0x00, 0x02, 0x00, 0x10, 0x00, 0x01, 0x00,"
+"0x10, 0x00, 0x36, 0x08, 0x08, 0x08, 0x08, 0x06, 0x3e, 0x4c, 0x00, 0xc1, 0xff, 0x36, 0x5c, 0x5b, 0x12, 0x00, 0x3e, 0xfd, 0x12, 0x00, 0xce, 0xff, 0x12, 0x00, 0x8e, 0xfc, 0x12, 0x00, 0x18, 0x00,"
+"0x10, 0x00, 0xb7, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xa0, 0x00, 0xb7, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x90, 0x01, 0x1a, 0x03, 0x10, 0x00, 0x00, 0x00, 0x0a, 0x00, 0x4c, 0x00,"
+"0x10, 0xff, 0xb7, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10, 0x00, 0x15, 0x07, 0x28, 0x00, 0x08, 0x40, 0x0b, 0x4c, 0x00, 0x53, 0xfe, 0x0b, 0x5c, 0x5b, 0x1b, 0x07, 0x28, 0x00, 0x09, 0x00,"
+"0x11, 0x00, 0x02, 0x00, 0x2b, 0x09, 0x29, 0x00, 0x08, 0x00, 0x01, 0x00, 0x02, 0x00, 0x18, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x04, 0x00, 0xff, 0xff, 0x1a, 0x03, 0x18, 0x00, 0x00, 0x00,"
+"0x12, 0x00, 0x9e, 0xff, 0x12, 0x00, 0xc0, 0xff, 0x12, 0x00, 0xbc, 0xff, 0x11, 0x0c, 0x08, 0x5c, 0x11, 0x00, 0x02, 0x00, 0x2b, 0x09, 0x29, 0x54, 0x18, 0x00, 0x01, 0x00, 0x02, 0x00, 0xa8, 0x00,"
+"0x12, 0x08, 0x25, 0x5c, 0x21, 0x03, 0x00, 0x00, 0x19, 0x00, 0x00, 0x00, 0x01, 0x00, 0xff, 0xff, 0xff, 0xff, 0x00, 0x00, 0x4c, 0x00, 0xd8, 0xff, 0x5c, 0x5b, 0x1a, 0x03, 0x10, 0x00, 0x00, 0x00,"
+"0x18, 0x00, 0x08, 0x00, 0x13, 0x41, 0x20, 0x00, 0x72, 0x06, 0x70, 0x00, 0x28, 0x00, 0x08, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x11, 0x00, 0x30, 0x00, 0x30, 0x40, 0x00, 0x00, 0x00, 0x00,"
+"0x19, 0x00, 0x14, 0x00, 0x01, 0x00, 0xff, 0xff, 0xff, 0xff, 0x00, 0x00, 0x12, 0x08, 0x25, 0x5c, 0x5c, 0x5b, 0x1a, 0x03, 0x20, 0x00, 0x00, 0x00, 0x0e, 0x00, 0x08, 0x08, 0x08, 0x08, 0x08, 0x4c,"
+"0x1a, 0x03, 0x10, 0x00, 0x00, 0x00, 0x0a, 0x00, 0x4c, 0x00, 0xb8, 0xff, 0x40, 0x36, 0x5c, 0x5b, 0x12, 0x00, 0xd8, 0xff, 0x1a, 0x03, 0x18, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x40, 0x4c, 0x00,"
+"0x1a, 0x03, 0x20, 0x00, 0x00, 0x00, 0x0e, 0x00, 0x08, 0x4c, 0x00, 0xd5, 0xff, 0x36, 0x4c, 0x00, 0xa6, 0xfa, 0x5c, 0x5b, 0x12, 0x00, 0xd4, 0xff, 0x11, 0x00, 0x02, 0x00, 0x2b, 0x09, 0x29, 0x00,"
+"0x1a, 0x07, 0x10, 0x00, 0xec, 0xff, 0x00, 0x00, 0x08, 0x08, 0x4c, 0x00, 0xd0, 0xff, 0x08, 0x5b, 0xb7, 0x08, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10, 0x00, 0x1b, 0x03, 0x04, 0x00, 0x09, 0x00,"
+"0x1a, 0x07, 0x58, 0x00, 0x00, 0x00, 0x10, 0x00, 0x36, 0x08, 0x40, 0x4c, 0x00, 0x09, 0xff, 0x08, 0x40, 0x4c, 0x00, 0xe3, 0xff, 0x5b, 0x12, 0x00, 0x98, 0xfe, 0x21, 0x07, 0x00, 0x00, 0x19, 0x00,"
+"0x20, 0x00, 0x74, 0x04, 0x70, 0x00, 0x28, 0x00, 0x08, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x04, 0x00, 0x20, 0x00, 0x30, 0x40, 0x00, 0x00, 0x00, 0x00, 0x2c, 0x00, 0x08, 0x00, 0x46, 0x04,"
+"0x21, 0x03, 0x00, 0x00, 0x19, 0x00, 0x00, 0x00, 0x01, 0x00, 0xff, 0xff, 0xff, 0xff, 0x00, 0x00, 0x4c, 0x00, 0xde, 0xff, 0x5c, 0x5b, 0x1a, 0x03, 0x10, 0x00, 0x00, 0x00, 0x0a, 0x00, 0x4c, 0x00,"
+"0x24, 0x00, 0x47, 0x06, 0x0a, 0x07, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0xb8, 0x03, 0x48, 0x00, 0x08, 0x00, 0x08, 0x00, 0x0b, 0x01, 0x10, 0x00, 0xdc, 0x05,"
+"0x25, 0x5c, 0x21, 0x03, 0x00, 0x00, 0x19, 0x00, 0x00, 0x00, 0x01, 0x00, 0xff, 0xff, 0xff, 0xff, 0x00, 0x00, 0x4c, 0x00, 0xae, 0xff, 0x5c, 0x5b, 0x1a, 0x03, 0x10, 0x00, 0x00, 0x00, 0x0a, 0x00,"
+"0x2b, 0x09, 0x29, 0x00, 0x08, 0x00, 0x01, 0x00, 0x02, 0x00, 0x80, 0x00, 0x01, 0x00, 0x08, 0x00, 0x00, 0x00, 0x64, 0x00, 0xff, 0xff, 0x15, 0x07, 0x08, 0x00, 0x0b, 0x5b, 0xb7, 0x08, 0x00, 0x00,"
+"0x2c, 0x00, 0x24, 0x00, 0x47, 0x06, 0x0a, 0x07, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0xb8, 0x03, 0x48, 0x00, 0x08, 0x00, 0x08, 0x00, 0x0b, 0x01, 0x10, 0x00,"
+"0x34, 0x05, 0x50, 0x21, 0x18, 0x00, 0x08, 0x00, 0x13, 0x81, 0x20, 0x00, 0x8a, 0x05, 0x70, 0x00, 0x28, 0x00, 0x08, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x09, 0x00, 0x08, 0x00, 0x32, 0x00,"
+"0x36, 0x4c, 0x00, 0xab, 0xff, 0x08, 0x40, 0x36, 0x36, 0x5b, 0x12, 0x00, 0xec, 0xff, 0x12, 0x00, 0x18, 0xfe, 0x12, 0x00, 0xd6, 0xff, 0x15, 0x07, 0x30, 0x00, 0x0b, 0x4c, 0x00, 0xaf, 0xff, 0x5b,"
+"0x36, 0x4c, 0x00, 0xd1, 0xfd, 0x4c, 0x00, 0xcd, 0xfd, 0x36, 0x4c, 0x00, 0x2a, 0xfe, 0x08, 0x08, 0x08, 0x40, 0x36, 0x08, 0x08, 0x08, 0x4c, 0x00, 0x32, 0xfe, 0x36, 0x08, 0x40, 0x5b, 0x12, 0x00,"
+"0x40, 0x00, 0x0a, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x10, 0x00, 0x30, 0x00, 0x30, 0x40, 0x00, 0x00, 0x00, 0x00, 0x2c, 0x00, 0x24, 0x00,"
+"0x47, 0x06, 0x0a, 0x07, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0xb8, 0x03, 0x48, 0x00, 0x08, 0x00, 0x08, 0x00, 0x0b, 0x01, 0x10, 0x00, 0x48, 0x06, 0x50, 0x21,"
+"0x48, 0x00, 0x08, 0x00, 0x08, 0x00, 0x0b, 0x01, 0x10, 0x00, 0x04, 0x05, 0x70, 0x00, 0x18, 0x00, 0x08, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x07, 0x00, 0x08, 0x00, 0x32, 0x00, 0x00, 0x00,"
+"0x4c, 0x00, 0x26, 0xfd, 0x40, 0x5b, 0x12, 0x08, 0x25, 0x5c, 0x12, 0x08, 0x25, 0x5c, 0x12, 0x08, 0x25, 0x5c, 0x12, 0x08, 0x25, 0x5c, 0x12, 0x08, 0x25, 0x5c, 0x12, 0x08, 0x25, 0x5c, 0x12, 0x08,"
+"0x4c, 0x00, 0x96, 0xff, 0x40, 0x36, 0x5c, 0x5b, 0x12, 0x00, 0xd8, 0xff, 0xb7, 0x08, 0x00, 0x00, 0x00, 0x00, 0x10, 0x27, 0x00, 0x00, 0x15, 0x03, 0x2c, 0x00, 0x4c, 0x00, 0xcc, 0xfc, 0x4c, 0x00,"
+"0x50, 0x21, 0x18, 0x00, 0x08, 0x00, 0x13, 0x21, 0x20, 0x00, 0x2e, 0x06, 0x70, 0x00, 0x28, 0x00, 0x08, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x0d, 0x00, 0x08, 0x00, 0x32, 0x00, 0x00, 0x00,"
+"0x50, 0xfe, 0x12, 0x00, 0x84, 0xfe, 0x12, 0x00, 0x70, 0xff, 0x12, 0x00, 0xae, 0xff, 0x1a, 0x03, 0x18, 0x00, 0x00, 0x00, 0x08, 0x00, 0x08, 0x40, 0x36, 0x36, 0x5c, 0x5b, 0x12, 0x08, 0x25, 0x5c,"
+"0x54, 0x00, 0x4c, 0x00, 0xf4, 0xff, 0x5c, 0x5b, 0x1a, 0x03, 0x68, 0x00, 0x00, 0x00, 0x0a, 0x00, 0x36, 0x36, 0x4c, 0x00, 0xea, 0xff, 0x08, 0x5b, 0x11, 0x00, 0xb6, 0xfb, 0x11, 0x08, 0x22, 0x5c,"
+"0x5a, 0xfd, 0x5c, 0x5b, 0x21, 0x03, 0x00, 0x00, 0x19, 0x00, 0x1c, 0x00, 0x01, 0x00, 0xff, 0xff, 0xff, 0xff, 0x00, 0x00, 0x4c, 0x00, 0xe0, 0xff, 0x5c, 0x5b, 0x1a, 0x03, 0x28, 0x00, 0x00, 0x00,"
+"0x5c, 0x5b, 0x11, 0x04, 0x02, 0x00, 0x2b, 0x09, 0x29, 0x54, 0x18, 0x00, 0x01, 0x00, 0x02, 0x00, 0x28, 0x00, 0x01, 0x00, 0x02, 0x00, 0x00, 0x00, 0x82, 0xfc, 0xff, 0xff, 0x00,"
+"0x5c, 0x5b, 0x12, 0x00, 0xd0, 0xff, 0x11, 0x04, 0x02, 0x00, 0x2b, 0x09, 0x29, 0x54, 0x18, 0x00, 0x01, 0x00, 0x02, 0x00, 0x20, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x24, 0x00, 0xff, 0xff,"
+"0x6a, 0xfc, 0xff, 0xff, 0x11, 0x00, 0x02, 0x00, 0x2b, 0x09, 0x29, 0x00, 0x08, 0x00, 0x01, 0x00, 0x02, 0x00, 0x10, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x04, 0x00, 0xff, 0xff, 0x1a, 0x03,"
+"0x8c, 0x06, 0x50, 0x21, 0x18, 0x00, 0x08, 0x00, 0x13, 0xa1, 0x20, 0x00, 0xc6, 0x06, 0x70, 0x00, 0x28, 0x00, 0x08, 0x00, 0x00,"
+"0x94, 0x00, 0x01, 0x00, 0xff, 0xff, 0xff, 0xff, 0x00, 0x00, 0x4c, 0x00, 0xd4, 0xff, 0x5c, 0x5b, 0x1a, 0x07, 0xa8, 0x00, 0x00, 0x00, 0x28, 0x00, 0x4c, 0x00, 0xce, 0xfd, 0x4c, 0x00, 0xca, 0xfd,"
+"0x9c, 0xff, 0x40, 0x36, 0x5c, 0x5b, 0x12, 0x00, 0xd8, 0xff, 0xb7, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10, 0x00, 0x1d, 0x00, 0x1c, 0x00, 0x02, 0x5b, 0x15, 0x00, 0x1c, 0x00, 0x4c, 0x00,"
+"0xb4, 0x03, 0x70, 0x00, 0x08, 0x00, 0x08, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x00, 0x02, 0x00, 0x08, 0x00, 0x32, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x40, 0x00, 0x0a, 0x01, 0x00, 0x00,"
+"0xb7, 0x08, 0x00, 0x00, 0x00, 0x00, 0x10, 0x27, 0x00, 0x00, 0x21, 0x03, 0x00, 0x00, 0x19, 0x00, 0x04, 0x00, 0x01, 0x00, 0xff, 0xff, 0xff, 0xff, 0x00, 0x00, 0x4c, 0x00, 0xd2, 0xfb, 0x5c, 0x5b,"
+"0xb7, 0x08, 0x01, 0x00, 0x00, 0x00, 0x10, 0x27, 0x00, 0x00, 0x1b, 0x00, 0x01, 0x00, 0x09, 0x00, 0xfc, 0xff, 0x01, 0x00, 0x02, 0x5b, 0x1a, 0x03, 0x04, 0x00, 0xf0, 0xff, 0x00, 0x00, 0x4c, 0x00,"
+"0xc8, 0xfb, 0x4c, 0x00, 0xc4, 0xfb, 0x36, 0x4c, 0x00, 0xcb, 0xfb, 0x36, 0x08, 0x08, 0x08, 0x08, 0x4c, 0x00, 0x84, 0xff, 0x36, 0x36, 0x4c, 0x00, 0x1e, 0xfc, 0x5c, 0x5b, 0x11, 0x00, 0x52, 0xfc,"
+"0xe0, 0xff, 0x5c, 0x5b, 0x11, 0x14, 0xd6, 0xff, 0x11, 0x04, 0x02, 0x00, 0x30, 0xa0, 0x00, 0x00, 0x11, 0x04, 0x02, 0x00, 0x30, 0xe1, 0x00, 0x00, 0x30, 0x41, 0x00, 0x00, 0x11, 0x00, 0x02, 0x00,"
+"0xe0, 0xff, 0x5c, 0x5b, 0x21, 0x03, 0x00, 0x00, 0x19, 0x00, 0x00, 0x00, 0x01, 0x00, 0xff, 0xff, 0xff, 0xff, 0x00, 0x00, 0x4c, 0x00, 0xde, 0xff, 0x5c, 0x5b, 0x1a, 0x03, 0x10, 0x00, 0x00, 0x00,"
+"0xec, 0xff, 0x40, 0x36, 0x5c, 0x5b, 0x12, 0x00, 0x08, 0xff, 0x21, 0x03, 0x00, 0x00, 0x19, 0x00, 0x00, 0x00, 0x01, 0x00, 0xff, 0xff, 0xff, 0xff, 0x00, 0x00, 0x4c, 0x00, 0xda, 0xff, 0x5c, 0x5b,"
+"0xf4, 0xff, 0x5c, 0x5b, 0x1b, 0x01, 0x02, 0x00, 0x09, 0x57, 0xfc, 0xff, 0x01, 0x00, 0x05, 0x5b, 0x17, 0x03, 0x38, 0x00, 0xf0, 0xff, 0x08, 0x08, 0x4c, 0x00, 0x4e, 0xff, 0x4c, 0x00, 0xdc, 0xff,"
+"0xf8, 0xff, 0x01, 0x00, 0x4c, 0x00, 0xe6, 0xff, 0x5c, 0x5b, 0x1a, 0x07, 0x08, 0x00, 0xec, 0xff, 0x00, 0x00, 0x4c, 0x00, 0xce, 0xff, 0x40, 0x5b, 0x1a, 0x03, 0x40, 0x00, 0x00, 0x00, 0x0c, 0x00,"
+"0xfc, 0xff, 0x01, 0x00, 0x08, 0x5b, 0x1a, 0x03, 0x0c, 0x00, 0xf0, 0xff, 0x00, 0x00, 0x08, 0x08, 0x4c, 0x00, 0xde, 0xff, 0x5c, 0x5b, 0x1a, 0x07, 0x80, 0x00, 0x00, 0x00, 0x20, 0x00, 0x4c, 0x00,"
+"0xff, 0xff, 0x00, 0x00, 0x12, 0x00, 0x4a, 0xfb, 0x5c, 0x5b, 0x1a, 0x03, 0x30, 0x00, 0x00, 0x00, 0x12, 0x00, 0x08, 0x4c, 0x00, 0xd5, 0xff, 0x36, 0x4c, 0x00, 0x00, 0xfc, 0x4c, 0x00, 0xf8, 0xfa,"
+"0xff, 0xff, 0x1a, 0x03, 0x28, 0x00, 0x00, 0x00, 0x08, 0x00, 0x36, 0x4c, 0x00, 0xe1, 0xfa, 0x5b, 0x12, 0x00, 0xf0, 0xff, 0x1a, 0x03, 0x28, 0x00, 0x00, 0x00, 0x00, 0x00, 0x4c, 0x00, 0xe4, 0xff,"
+"<Project DefaultTargets=""Build"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Project ToolsVersion=""4.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"ASN1BerDecFun_t)( __in ASN1decoding_t enc, ASN1uint32_t tag, __out void "
+"ASN1BerEncFun_t)( __in ASN1encoding_t enc, ASN1uint32_t tag, __in void "
+"ASN1_FreeEncoded(ASN1enc, pBuf)"
+"ASN1dec, NULL, 0, NULL)"
+"ASN1enc, NULL, 0, NULL)"
+"ASN1optionparam_t, ASN1optionparam_s"
+"BOOL CrackName(DRS_HANDLE hDrs, DS_NAME_FORMAT NameFormat, LPCWSTR Name, DS_NAME_FORMAT FormatWanted, LPWSTR"
+"BOOL DomainGUIDfound = FALSE, ObjectGUIDfound = FALSE"
+"BOOL createBinding(LPCWSTR uuid, LPCWSTR ProtSeq, LPCWSTR NetworkAddr, LPCWSTR Endpoint, LPCWSTR Service, BOOL addServiceToNetworkAddr, DWORD AuthnSvc, RPC_AUTH_IDENTITY_HANDLE hAuth, DWORD ImpersonationType, RPC_BINDING_HANDLE"
+"BOOL crypto_hash(ALG_ID algid, LPCVOID data, DWORD dataLen, LPVOID hash, DWORD hashWanted)"
+"BOOL decrypt(PBYTE encodedData, DWORD encodedDataSize, DWORD rid, LPCWSTR prefix, BOOL isHistory)"
+"BOOL getDC(LPCWSTR fullDomainName, DWORD altFlags, LPWSTR"
+"BOOL getSidDomainFromName(PCWSTR pName, PSID"
+"CRYPTO_BUFFER cryptoKey = { MD5_DIGEST_LENGTH, MD5_DIGEST_LENGTH, md5ctx.digest }, cryptoData"
+"CryptReleaseContext(hProv, 0)"
+"Currently, this tool will dump hashes for all users, single user hash dump is not supported. Also, it is available only for 64-bit systems."
+"DCSyncer is a tool that performs DCSync operation. It is derived from mimikatz. This is first time I have worked with Windows Programming, plus first time going through the mimikatz code to understand its working. So, the code may look amateurish."
+"DRSUAPI_DS_BIND_GUID_Standard, "
+"DS_ALT_SECURITY_IDENTITIES_NAME = -11,"
+"DS_CANONICAL_NAME = 7,"
+"DS_CANONICAL_NAME_EX = 9,"
+"DS_DISPLAY_NAME = 3,"
+"DS_DNS_DOMAIN_NAME = 12,"
+"DS_FQDN_1779_NAME = 1,"
+"DS_LIST_DOMAINS = -9,"
+"DS_LIST_DOMAINS_IN_SITE = -3,"
+"DS_LIST_GLOBAL_CATALOG_SERVERS = -15,"
+"DS_LIST_INFO_FOR_SERVER = -5,"
+"DS_LIST_NCS = -10,"
+"DS_LIST_ROLES = -6,"
+"DS_LIST_SERVERS_FOR_DOMAIN_IN_SITE = -4,"
+"DS_LIST_SERVERS_IN_SITE = -2,"
+"DS_LIST_SERVERS_WITH_DCS_IN_SITE = -13,"
+"DS_LIST_SITES = -1,"
+"DS_MAP_SCHEMA_GUID = -8,"
+"DS_NAME_ERROR_DOMAIN_ONLY = 5,"
+"DS_NAME_ERROR_NOT_FOUND = 2,"
+"DS_NAME_ERROR_NOT_UNIQUE = 3,"
+"DS_NAME_ERROR_NO_MAPPING = 4,"
+"DS_NAME_ERROR_NO_SYNTACTICAL_MAPPING = 6,"
+"DS_NAME_ERROR_RESOLVING = 1,"
+"DS_NAME_NO_ERROR = 0,"
+"DS_NT4_ACCOUNT_NAME = 2,"
+"DS_NT4_ACCOUNT_NAME_SANS_DOMAIN = -7,"
+"DS_NT4_ACCOUNT_NAME_SANS_DOMAIN_EX = -16,"
+"DS_SERVICE_PRINCIPAL_NAME = 10,"
+"DS_SID_OR_SID_HISTORY_NAME = 11,"
+"DS_STRING_SID_NAME = -12,"
+"DS_UNIQUE_ID_NAME = 6,"
+"DS_UNKNOWN_NAME = 0,"
+"DS_USER_PRINCIPAL_NAME = 8,"
+"DS_USER_PRINCIPAL_NAME_AND_ALTSECID = -17,"
+"DS_USER_PRINCIPAL_NAME_FOR_LOGON = -14,"
+"DWORD cbSid = 0, cchReferencedDomainName = 0"
+"DWORD i, dwOutVersion = 0"
+"DWORD i, j, k"
+"DWORD i, sep = flags >> 16"
+"DWORD lastValue, ndx"
+"DWORD nameCrackOutVersion = 0, drsStatus"
+"DWORD realLen, calcChecksum"
+"DWORD ret, size"
+"DWORD rid = 0, i"
+"DWORD szServer, szPrefix"
+"EXOP_FSMO_ABANDON_ROLE = 5,"
+"EXOP_FSMO_REQ_PDC = 4,"
+"EXOP_FSMO_REQ_RID_ALLOC = 2,"
+"EXOP_FSMO_REQ_ROLE = 1,"
+"EXOP_FSMO_RID_REQ_ROLE = 3,"
+"EXOP_REPL_OBJ = 6,"
+"GUID DRSUAPI_DS_BIND_GUID_Standard = { 0xe24d201a, 0x4fd6, 0x11d1, {0xa3, 0xda, 0x00, 0x00, 0xf8, 0x75, 0xae, 0x0d} }"
+"GetSidSubAuthority(data, "
+"L""%02x "","
+"L""%02x"","
+"L""0x%02x, "","
+"L""DONT_EXPIRE_PASSWD"", L""MNS_LOGON_ACCOUNT"", L""SMARTCARD_REQUIRED"", L""TRUSTED_FOR_DELEGATION"", L""NOT_DELEGATED"", L""USE_DES_KEY_ONLY"", L""DONT_REQUIRE_PREAUTH"", L""PASSWORD_EXPIRED"","
+"L""SCRIPT"", L""ACCOUNTDISABLE"", L""0x4 "
+"L""TEMP_DUPLICATE_ACCOUNT"", L""NORMAL_ACCOUNT"", L""0x400 "
+"L""TRUSTED_TO_AUTHENTICATE_FOR_DELEGATION"", L""NO_AUTH_DATA_REQUIRED"", L""PARTIAL_SECRETS_ACCOUNT"", L""USE_AES_KEYS"", L""0x10000000 "
+"LPCWSTR szDomain = NULL, szDc = NULL, szService = NULL"
+"LPDWORD pMajor, pMinor, pBuild"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.Cpp.$(Platform).user.props"" Condition=""exists('$(UserRootDir)"
+"Microsoft.Cpp.$(Platform).user.props')"" Label=""LocalAppDataPlatform"" />"
+"Microsoft.Cpp.Default.props"" />"
+"Microsoft.Cpp.props"" />"
+"Microsoft.Cpp.targets"" />"
+"NdrMesTypeFree2(_MidlEsHandle, (PMIDL_TYPE_PICKLING_INFO)"
+"PGENERIC_RPC_FREE) (IN handle_t pHandle, IN PVOID pObject)"
+"PRINT_ERROR(L""ASN1_CreateDecoder: %i"
+"PRINT_ERROR(L""ASN1_CreateEncoder: %i"
+"PRINT_ERROR(L""DRSGetNCChanges, invalid dwOutVersion (%u) and/or cNumObjects (%u)"
+"PRINT_ERROR(L""DomainControllerInfo: DC "
+"PRINT_ERROR(L""Error in ProcessGetNCChangesReply"
+"PRINT_ERROR(L""GetNCChanges: 0x%08x (%u)"
+"PRINT_ERROR(L""QueryContextAttributes %08x"
+"PRINT_ERROR(L""RPC Exception 0x%08x (%u)"
+"PRINT_ERROR(L""RPC Exception: 0x%08x (%u)"
+"PRINT_ERROR(L""RpcBindingSetOption: 0x%08x (%u)"
+"PRINT_ERROR(L""Unable to MakeAttid for %S"
+"PRINT_ERROR(L""dcOutVersion not valid (0x%08x - %u)"
+"PRINT_ERROR(L""dwOutVersion not valid (0x%08x - %u)"
+"PRINT_ERROR(L""nameCrackOutVersion not valid (0x%08x - %u)"
+"PRINT_INFO(L""DC would be %s"
+"PRINT_INFO(L""DS Replication Epoch is %u"
+"PRINT_INFO(L""Domain would be %s"
+"PRINT_NORMAL(L""    %s-%2u: "", prefix, i / LM_NTLM_HASH_LENGTH)"
+"PRINT_NORMAL(L""  "")"
+"PRINT_NORMAL(L""  Hash %s: "", prefix)"
+"PRINT_NORMAL(L"""
+"PRINT_NORMAL(L""%s "", UF_FLAG[i])"
+"PRINT_NORMAL(L""%s%."
+"PRINT_NORMAL(L"")"
+"PRINT_NORMAL(L""Account Type         : %08x ( %s )"
+"PRINT_NORMAL(L""Account expiration   : "")"
+"PRINT_NORMAL(L""Object Relative ID   : %u"
+"PRINT_NORMAL(L""Object Security ID   : "")"
+"PRINT_NORMAL(L""Password last change : "")"
+"PRINT_NORMAL(L""SID history:"
+"PRINT_NORMAL(L""User Account Control : %08x ( "", "
+"PRINT_NORMAL(pType, ((LPCBYTE)lpData)[i])"
+"Project(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"") = ""DCSyncer"", ""DCSyncer.vcxproj"", ""{253E716A-AB96-4F87-88C7-052231EC2A12}"""
+"RPC_FCNSTRUCT UserState = { NULL, 0 }"
+"RPC_SECURITY_QOS SecurityQOS = { RPC_C_SECURITY_QOS_VERSION, RPC_C_QOS_CAPABILITIES_MUTUAL_AUTH, RPC_C_QOS_IDENTITY_STATIC, ImpersonationType }"
+"RtlCopyMemory(entries, prefixTable->pPrefixEntry, sizeof(PrefixTableEntry) "
+"RtlCopyMemory(fullServer, Service, szPrefix)"
+"RtlCopyMemory(hash, buffer, min(hashLen, hashWanted))"
+"RtlCopyMemory(val->pVal, encrypted->EncryptedData, realLen)"
+"RtlZeroMemory(pDrsExtensionsInt, sizeof(DRS_EXTENSIONS_INT))"
+"SecPkgContext_SessionKey kull_m_rpc_drsr_g_sKey = { 0, NULL }"
+"ULONG IDL_DRSBind(handle_t rpc_handle, UUID"
+"ULONG IDL_DRSCrackNames(DRS_HANDLE hDrs, DWORD dwInVersion, DRS_MSG_CRACKREQ"
+"ULONG IDL_DRSDomainControllerInfo(DRS_HANDLE hDrs, DWORD dwInVersion, DRS_MSG_DCINFOREQ"
+"ULONG IDL_DRSGetNCChanges(DRS_HANDLE hDrs, DWORD dwInVersion, DRS_MSG_GETCHGREQ"
+"UserState, ReadFcn, "
+"Win32"">"
+"Win32'"" Label=""Configuration"">"
+"Win32'"">"
+"] "" TEXT(__FUNCTION__) L"": "" __VA_ARGS__))"
+"__MIDL_TypePicklingInfo, "
+"attSensitive[i], FALSE))"
+"calcChecksum, sizeof(calcChecksum)))"
+"cbSid, "
+"cbSid, NULL, "
+"cchReferencedDomainName, peUse) "
+"cchReferencedDomainName, peUse)"
+"createBinding(NULL, L""ncacn_ip_tcp"", szDc, NULL, szService, TRUE, (pMajor < 6) "
+"cryptoData, "
+"cryptoData.Length = cryptoData.MaximumLength = val->valLen - FIELD_OFFSET(ENCRYPTED_PAYLOAD, CheckSum)"
+"data, NULL))"
+"dcInfoReq, "
+"dcOutVersion, "
+"dcsync(TRUE, NULL, NULL)"
+"decrypt(encodedData, encodedDataSize, rid, L""LM  "", FALSE)"
+"decrypt(encodedData, encodedDataSize, rid, L""NTLM"", FALSE)"
+"decrypt(encodedData, encodedDataSize, rid, L""lm  "", TRUE)"
+"decrypt(encodedData, encodedDataSize, rid, L""ntlm"", TRUE)"
+"define ASN1_MAKE_VERSION(major,minor)  (((major) << 16) "
+"define ASN1_THIS_VERSION               ASN1_MAKE_VERSION(1,0)"
+"define FreeDRS_MSG_CRACKREPLY_V1(pObject) Generic_Free(pObject, (PGENERIC_RPC_FREE) DRS_MSG_CRACKREPLY_V1_Free)"
+"define FreeDRS_MSG_DCINFOREPLY_V2(pObject) Generic_Free(pObject, (PGENERIC_RPC_FREE) DRS_MSG_DCINFOREPLY_V2_Free)"
+"define FreeDRS_MSG_GETCHGREPLY_V6(pObject) Generic_Free(pObject, (PGENERIC_RPC_FREE) DRS_MSG_GETCHGREPLY_V6_Free)"
+"descrUser(prefixTable, attributes)"
+"drsStatus = IDL_DRSCrackNames(hDrs, 1, "
+"drsStatus = IDL_DRSDomainControllerInfo(hDrs, 1, "
+"drsStatus = IDL_DRSGetNCChanges(hDrs, 8, "
+"drsuapi__MIDL_AutoBindHandle, 0, 0, 0, 0, ms2Ddrsr__MIDL_TypeFormatString.Format, 1, 0x60000, 0, 0x8000253, 0, 0, 0, 0x1, 0, 0, 0 }"
+"drsuapi___RpcClientInterface, MIDL_user_allocate, MIDL_user_free, "
+"drsuapi_c_StubDesc, (PFORMAT_STRING)"
+"dsName.Guid, "
+"dst = (LPWSTR)LocalAlloc(LPTR, size))"
+"dst, "
+"dst, src, size)"
+"dwOutVersion, "
+"else PRINT_ERROR(L""ASN1_CreateModule"
+"else PRINT_ERROR(L""Cannot add NetworkAddr "
+"else PRINT_ERROR(L""Checksums don"
+"else PRINT_ERROR(L""CrackNames (name status): 0x%08x (%u) - %s"
+"else PRINT_ERROR(L""CrackNames: 0x%08x (%u)"
+"else PRINT_ERROR(L""CrackNames: bad version (%u)"
+"else PRINT_ERROR(L""CrackNames: no item!"
+"else PRINT_ERROR(L""DomainControllerInfo: 0x%08x (%u)"
+"else PRINT_ERROR(L""DomainControllerInfo: bad version (%u)"
+"else PRINT_ERROR(L""DsGetDcName: %u"
+"else PRINT_ERROR(L""Error in MakeAttid_addPrefixToTable"
+"else PRINT_ERROR(L""Error in RtlDecryptDES2blocks1DWORD"")"
+"else PRINT_ERROR(L""IDL_DRSBind: %u"
+"else PRINT_ERROR(L""I_RpcBindingInqSecurityContext %08x"
+"else PRINT_ERROR(L""Incorrect DRS Extensions Output (%08x)"
+"else PRINT_ERROR(L""Incorrect DRS Extensions Output Size (%u)"
+"else PRINT_ERROR(L""MesDecodeIncrementalHandleCreate: %08x"
+"else PRINT_ERROR(L""No Binding!"
+"else PRINT_ERROR(L""No DRS Extensions Output"
+"else PRINT_ERROR(L""No Session Key"
+"else PRINT_ERROR(L""No valid data"
+"else PRINT_ERROR(L""RpcBindingFree: 0x%08x (%u)"
+"else PRINT_ERROR(L""RpcBindingFromStringBinding: 0x%08x (%u)"
+"else PRINT_ERROR(L""RpcBindingSetAuthInfoEx: 0x%08x (%u)"
+"else PRINT_ERROR(L""RpcStringBindingCompose: 0x%08x (%u)"
+"else PRINT_ERROR(L""RtlEncryptDecryptRC4"
+"else PRINT_ERROR(L""Unable to calculate CRC32"
+"else PRINT_ERROR(L""Unable to get an ATTRTYP for %S"
+"encodedData, "
+"extern ""C"" {"
+"extern ASN1_PUBLIC BOOL ASN1API ASN1BERDotVal2Eoid(__in ASN1encoding_t pEncoderInfo, __in const ASN1char_t"
+"extern NTSTATUS WINAPI RtlGUIDFromString(IN PCUNICODE_STRING GuidString, OUT GUID"
+"extern VOID WINAPI MD5Update(PMD5_CTX pCtx, LPCVOID data, DWORD cbData)"
+"extern VOID WINAPI RtlGetNtVersionNumbers(LPDWORD pMajor, LPDWORD pMinor, LPDWORD pBuild)"
+"extern VOID WINAPI RtlInitUnicodeString(OUT PUNICODE_STRING DestinationString, IN PCWSTR SourceString)"
+"fFree(pHandle, pObject)"
+"findPrintMonoAttr(L"""
+"findPrintMonoAttr(L""SAM Username         : "", prefixTable, attributes, szOID_ANSI_sAMAccountName, TRUE)"
+"findPrintMonoAttr(L""User Principal Name  : "", prefixTable, attributes, szOID_ANSI_userPrincipalName, TRUE)"
+"free_DRS_MSG_CRACKREPLY_data(nameCrackOutVersion, "
+"free_DRS_MSG_DCINFOREPLY_data(dcOutVersion, "
+"free_DRS_MSG_GETCHGREPLY_data(dwOutVersion, "
+"fullDCName, cInfo->DomainControllerName "
+"getChRep, sizeof(DRS_MSG_GETCHGREPLY))"
+"getChRep.V6.PrefixTableSrc, "
+"getChRep.V6.PrefixTableSrc, getChRep.V6.pObjects))"
+"getChRep.V6.usnvecTo, sizeof(USN_VECTOR))"
+"getChRep.V6.uuidInvocIdSrc, sizeof(UUID))"
+"getChReq, "
+"getChReq.V8.PrefixTableDest, dcsync_oids[i], "
+"getChReq.V8.PrefixTableDest, dcsync_oids_export[i], "
+"getChReq.V8.pPartialAttrSet->rgPartialAttr[i], TRUE)"
+"getChReq.V8.usnvecFrom, "
+"getChReq.V8.uuidDsaObjDest, "
+"getChReq.V8.uuidDsaObjDest, szUser, szGuid, "
+"getChReq.V8.uuidInvocIdSrc, "
+"getDC(szDomain, DS_DIRECTORY_SERVICE_REQUIRED, "
+"hBinding, "
+"hBinding, (RPC_WSTR)(fullServer "
+"hBinding, NtdsDsaObjectGuid, (DRS_EXTENSIONS"
+"hBinding, RPC_C_OPT_SECURITY_CALLBACK, (ULONG_PTR)RpcSecurityCallback)"
+"hBinding, RpcSecurityCallback)"
+"hBinding, szDc, szDomain, "
+"hDrs, "
+"hDrs, pDrsExtensionsInt))"
+"hProv, NULL, NULL, PROV_RSA_AES, CRYPT_VERIFYCONTEXT))"
+"hashLen, 0)"
+"hashLen, 0))"
+"if (!LookupAccountName(system, pName, NULL, "
+"if (!MakeAttid(prefixTable, encrypted_oids[i], "
+"if ((val->valLen >= (ULONG)FIELD_OFFSET(ENCRYPTED_PAYLOAD, EncryptedData)) "
+"if (ConvertSidToStringSid(pSid, "
+"if (ConvertSidToStringSidA(pSid, "
+"if (CrackName(hDrs, DS_SID_OR_SID_HISTORY_NAME, sSid,  DS_UNIQUE_ID_NAME, "
+"if (CrackName(hDrs, wcschr(User, L'"
+"if (CryptCreateHash(hProv, algid, 0, 0, "
+"if (CryptGetHashParam(hHash, HP_HASHVAL, NULL, "
+"if (CryptHashData(hHash, (LPCBYTE)data, dataLen, 0))"
+"if (DotVal2Eoid(szOid, "
+"if (MakeAttid(prefixTable, szOid, "
+"if (NT_SUCCESS(LsaOpenPolicy(NULL, "
+"if (NT_SUCCESS(pCheckSum->Initialize(0, "
+"if (RtlEqualMemory(prefixTable->pPrefixEntry[i].prefix.elements, oidPrefix->value, oidPrefix->length))"
+"if (buffer = (PBYTE)LocalAlloc(LPTR, hashLen))"
+"if (crypto_hash(CALG_CRC32, encrypted->EncryptedData, realLen, "
+"if (findMonoAttr(prefixTable, attributes, szOID_ANSI_accountExpires, "
+"if (findMonoAttr(prefixTable, attributes, szOID_ANSI_dBCSPwd, "
+"if (findMonoAttr(prefixTable, attributes, szOID_ANSI_lmPwdHistory, "
+"if (findMonoAttr(prefixTable, attributes, szOID_ANSI_ntPwdHistory, "
+"if (findMonoAttr(prefixTable, attributes, szOID_ANSI_objectSid, "
+"if (findMonoAttr(prefixTable, attributes, szOID_ANSI_pwdLastSet, "
+"if (findMonoAttr(prefixTable, attributes, szOID_ANSI_sAMAccountName, NULL, NULL))"
+"if (findMonoAttr(prefixTable, attributes, szOID_ANSI_sAMAccountType, "
+"if (findMonoAttr(prefixTable, attributes, szOID_ANSI_supplementalCredentials, "
+"if (findMonoAttr(prefixTable, attributes, szOID_ANSI_unicodePwd, "
+"if (findMonoAttr(prefixTable, attributes, szOID_ANSI_userAccountControl, "
+"if (findMonoAttr(prefixTable, attributes, szOid, "
+"if (fullServer = (LPWSTR)LocalAlloc(LPTR, szPrefix "
+"if (getDCBind(hBinding, "
+"if (getSidDomainFromName(Domain, "
+"if (hASN1Module = ASN1_CreateModule(ASN1_THIS_VERSION, ASN1_BER_RULE_DER, ASN1FLAGS_NOASSERT, 1, encdecfreefntab, encdecfreefntab, (const ASN1FreeFun_t"
+"if (lastValueString = strrchr(szOid, '.'))"
+"if (pDrsExtensionsOutput->cb >= FIELD_OFFSET(DRS_EXTENSIONS_INT, ConfigObjGUID) - sizeof(DWORD))"
+"if (pDrsExtensionsOutput->cb >= FIELD_OFFSET(DRS_EXTENSIONS_INT, Pid) - sizeof(DWORD))"
+"if (pDrsExtensionsOutput->cb >= FIELD_OFFSET(DRS_EXTENSIONS_INT, SiteObjGuid) - sizeof(DWORD))"
+"if (pDrsExtensionsOutput->cb >= FIELD_OFFSET(DRS_EXTENSIONS_INT, dwExtCaps) - sizeof(DWORD))"
+"if (pDrsExtensionsOutput->cb >= FIELD_OFFSET(DRS_EXTENSIONS_INT, dwFlagsExt) - sizeof(DWORD))"
+"if (sids = findAttr(prefixTable, attributes, szOID_ANSI_sIDHistory))"
+"if (status = MakeAttid_addPrefixToTable(prefixTable, "
+"if (valblock = findAttr(prefixTable, attributes, szOid))"
+"inc"">"
+"include ""crypto.h"""
+"include ""drsr.h"""
+"include ""globals.h"""
+"include ""helper.h"""
+"include ""rpc.h"""
+"int dcsync(BOOL allData, LPCWSTR szUser, LPCWSTR szGuid)"
+"int main(int argc, wchar_t"
+"lastValue = strtoul(lastValueString, NULL, 0)"
+"lib"">"
+"md5ctx, encrypted->Salt, sizeof(encrypted->Salt))"
+"md5ctx, pKey->SessionKey, pKey->SessionKeyLength)"
+"ms2Ddrsr__MIDL_ProcFormatString.Format[0], rpc_handle, puuidClientDsa, pextClient, ppextServer, phDrs).Simple"
+"ms2Ddrsr__MIDL_ProcFormatString.Format[134], hDrs, dwInVersion, pmsgIn, pdwOutVersion, pmsgOut).Simple"
+"ms2Ddrsr__MIDL_ProcFormatString.Format[558], hDrs, dwInVersion, pmsgIn, pdwOutVersion, pmsgOut).Simple"
+"ms2Ddrsr__MIDL_ProcFormatString.Format[60], phDrs).Simple"
+"ms2Ddrsr__MIDL_ProcFormatString.Format[716], hDrs, dwInVersion, pmsgIn, pdwOutVersion, pmsgOut).Simple"
+"ms2Ddrsr__MIDL_TypeFormatString.Format[560], _pType)"
+"ms2Ddrsr__MIDL_TypeFormatString.Format[682], _pType)"
+"ms2Ddrsr__MIDL_TypeFormatString.Format[792], _pType)"
+"msasn1.h"" />"
+"msasn1.h"">"
+"msasn1.min.lib"" />"
+"msasn1.min.lib"">"
+"n"" : L"""")"
+"n"", "
+"n"", DrsExtensionsInt.dwReplEpoch)"
+"n"", RpcExceptionCode(), RpcExceptionCode())"
+"n"", ServerName)"
+"n"", calcChecksum, encrypted->CheckSum)"
+"n"", dcOutVersion)"
+"n"", dcOutVersion, dcOutVersion)"
+"n"", drsStatus)"
+"n"", drsStatus, drsStatus)"
+"n"", drsStatus, drsStatus, (drsStatus < ARRAYSIZE(CrackNames_Error)) "
+"n"", dwOutVersion, dwOutVersion)"
+"n"", dwOutVersion, getChRep.V6.cNumObjects)"
+"n"", encrypted_oids[i])"
+"n"", nameCrackOutVersion)"
+"n"", nameCrackOutVersion, nameCrackOutVersion)"
+"n"", pDrsExtensionsOutput->cb)"
+"n"", pDrsExtensionsOutput->dwFlags)"
+"n"", ret)"
+"n"", rid)"
+"n"", rpcStatus)"
+"n"", rpcStatus, rpcStatus)"
+"n"", secStatus)"
+"n"", szDc)"
+"n"", szDomain)"
+"n"", szOid)"
+"nObject RDN           : "", prefixTable, attributes, szOID_ANSI_name, TRUE)"
+"nameCrackOutVersion, "
+"nameCrackReq, "
+"ndx, toAdd))"
+"ndx].prefix.elements, oidPrefix->value, oidPrefix->length)"
+"oaLsa, POLICY_VIEW_LOCAL_INFORMATION, "
+"oidPrefix, "
+"pCheckSum->Sum(Context, dataLen, data)"
+"pDataStruct,"
+"pDomain = (PWSTR)LocalAlloc(LPTR, cchReferencedDomainName "
+"pDomain, "
+"pDrsExtensionsOutput, hDrs)"
+"pMajor, "
+"pMinor, "
+"pObject[0].Entinf.AttrBlock, szDomain, NULL)"
+"pReplentinflist->Entinf.AttrBlock.pAttr[i].AttrVal.pAVal[k], NULL))"
+"pSid = (PSID)LocalAlloc(LPTR, cbSid "
+"pSid, "
+"pbBuf,"
+"ppDataStruct,"
+"ppDecoderInfo,"
+"ppEncoderInfo,"
+"printf(""%s"", stringSid)"
+"ptr, "
+"realLen = val->valLen - FIELD_OFFSET(ENCRYPTED_PAYLOAD, EncryptedData)"
+"result = LookupAccountName(system, pName, "
+"ret = ASN1_CreateDecoder(hASN1Module, "
+"ret = ASN1_CreateEncoder(hASN1Module, "
+"ret = DsGetDcName(NULL, fullDomainName, NULL, NULL, altFlags "
+"return LocalAlloc(LPTR, cBytes)"
+"rid, data))"
+"rpcStatus = I_RpcBindingInqSecurityContext(Context, (LPVOID"
+"rpcStatus = RpcBindingFromStringBinding(StringBinding, hBinding)"
+"rpcStatus = RpcStringBindingCompose((RPC_WSTR)uuid, (RPC_WSTR)ProtSeq, (RPC_WSTR)NetworkAddr, (RPC_WSTR)Endpoint, NULL, "
+"s%s"", prefix "
+"sGuid, NULL))"
+"sTempDomain, NULL, ServerName))"
+"secStatus = QueryContextAttributes(data, SECPKG_ATTR_SESSION_KEY, (LPVOID)"
+"static const MIDL_TYPE_PICKLING_INFO __MIDL_TypePicklingInfo = { 0x33205054, 0x3, 0, 0, 0, }"
+"static const RPC_CLIENT_INTERFACE drsuapi___RpcClientInterface = { sizeof(RPC_CLIENT_INTERFACE), {{0xe3514235, 0x4b06, 0x11d1, {0xab, 0x04, 0x00, 0xc0, 0x4f, 0xc2, 0xdc, 0xd2}}, {4, 0}}, {{0x8a885d04, 0x1ceb, 0x11c9, {0x9f, 0xe8, 0x08, 0x00, 0x2b, 0x10, 0x48, 0x60}}, {2, 0}}, 0, 0, 0, 0, 0, 0x00000000 }"
+"static const ms2Ddrsr_MIDL_PROC_FORMAT_STRING ms2Ddrsr__MIDL_ProcFormatString = { 0, {"
+"static const ms2Ddrsr_MIDL_TYPE_FORMAT_STRING ms2Ddrsr__MIDL_TypeFormatString = { 0, {"
+"status = ASN1BERDotVal2Eoid(ASN1enc, dotOID, encodedOID)"
+"status = CryptGetHashParam(hHash, HP_HASHVAL, buffer, "
+"status = NT_SUCCESS(LsaQueryInformationPolicy(hLSA, PolicyDnsDomainInformation, (PVOID"
+"status = NT_SUCCESS(pCheckSum->Finalize(Context, hash))"
+"string_copy(CrackedDomain, nameCrackRep.V1.pResult->rItems[0].pDomain)"
+"string_copy(CrackedName, nameCrackRep.V1.pResult->rItems[0].pName)"
+"szOID_ANSI_currentValue,"
+"szOID_ANSI_name,"
+"szOID_ANSI_objectSid, szOID_ANSI_sIDHistory,"
+"szOID_ANSI_sAMAccountName, szOID_ANSI_objectSid,"
+"szOID_ANSI_sAMAccountName, szOID_ANSI_userPrincipalName, szOID_ANSI_sAMAccountType,"
+"szOID_ANSI_trustAuthIncoming, szOID_ANSI_trustAuthOutgoing,"
+"szOID_ANSI_trustPartner, szOID_ANSI_trustAuthIncoming, szOID_ANSI_trustAuthOutgoing,"
+"szOID_ANSI_unicodePwd, szOID_ANSI_ntPwdHistory, szOID_ANSI_dBCSPwd, szOID_ANSI_lmPwdHistory, szOID_ANSI_supplementalCredentials,"
+"szOID_ANSI_unicodePwd,"
+"szOID_ANSI_userAccountControl, szOID_ANSI_accountExpires, szOID_ANSI_pwdLastSet,"
+"szOID_ANSI_userAccountControl,"
+"szOID_isDeleted,"
+"szService = L""ldap"""
+"type, FALSE))"
+"uGuid, Guid)"
+"uGuid, UserGuid))"
+"uGuid, sGuid)"
+"va_start(args, format)"
+"void DRS_MSG_CRACKREPLY_V1_Free(handle_t _MidlEsHandle, DRS_MSG_CRACKREPLY_V1"
+"void DRS_MSG_DCINFOREPLY_V2_Free(handle_t _MidlEsHandle, DRS_MSG_DCINFOREPLY_V2"
+"void DRS_MSG_GETCHGREPLY_V6_Free(handle_t _MidlEsHandle, DRS_MSG_GETCHGREPLY_V6"
+"void Generic_Free(PVOID data, PGENERIC_RPC_FREE fFree)"
+"void Generic_Free(PVOID pObject, PGENERIC_RPC_FREE fFree)"
+"void findPrintMonoAttr(LPCWSTR prefix, SCHEMA_PREFIX_TABLE"
+"void free_DRS_MSG_CRACKREPLY_data(DWORD nameCrackOutVersion, DRS_MSG_CRACKREPLY"
+"void free_DRS_MSG_DCINFOREPLY_data(DWORD dcOutVersion, DRS_MSG_DCINFOREPLY"
+"void free_DRS_MSG_GETCHGREPLY_data(DWORD dwOutVersion, DRS_MSG_GETCHGREPLY"
+"void print_msg(PCWCHAR format, ...)"
+"void wprintf_hex(LPCVOID lpData, DWORD cbData, DWORD flags)"
+"vwprintf(format, args)"
+"wprintf_hex(data, LM_NTLM_HASH_LENGTH, 0)"
+"x%02x"","
+"x64"">"
+"x64'"" Label=""Configuration"">"
+"x64'"">"
+"xml version=""1.0"" encoding=""utf-8"""
+"} CRYPTO_BUFFER, "
+"} DRS_EXTENSIONS_INT, "
+"} DRS_MSG_DCINFOREQ, "
+"} DS_NAME_RESULTW, "
+"} DS_NAME_RESULT_ITEMW, "
+"} ENCRYPTED_PAYLOAD, "
+"} KERB_CHECKSUM, "
+"} MD5_CTX, "
+"} RPC_FCNSTRUCT, "
+$(Platform)'=='Debug
+$(Platform)'=='Release
+$(VC_IncludePath)
+$(VC_LibraryPath_x64)
+$(VC_LibraryPath_x86)
+$(WindowsSDK_IncludePath)
+$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+$tf/
+%(AdditionalDependencies)</AdditionalDependencies>
+%(PreprocessorDefinitions)</PreprocessorDefinitions>
+' not found
+'t match (C:0x%08x - R:0x%08x)
+((PBYTE)fullServer)[szPrefix] = L'/'
+((PRPC_FCNSTRUCT)State)->addr = 
+((PRPC_FCNSTRUCT)State)->size -= 
+(ALG_CLASS_HASH 
+(PDWORD)data)
+(PDWORD)data))
+(PVOID
+(RpcExceptionCode() != STATUS_ASSERTION_FAILURE) 
+(RpcExceptionCode() != STATUS_BREAKPOINT) 
+(RpcExceptionCode() != STATUS_DATATYPE_MISALIGNMENT) 
+(RpcExceptionCode() != STATUS_GUARD_PAGE_VIOLATION)
+(RpcExceptionCode() != STATUS_ILLEGAL_INSTRUCTION) 
+(RpcExceptionCode() != STATUS_IN_PAGE_ERROR) 
+(RpcExceptionCode() != STATUS_PRIVILEGED_INSTRUCTION) 
+(RpcExceptionCode() != STATUS_STACK_BUFFER_OVERRUN) 
+(RpcExceptionCode() != STATUS_STACK_OVERFLOW) 
+(lastValueString 
+(print_msg(__VA_ARGS__))
+)((PRPC_FCNSTRUCT)State)->addr
+)MIDL_user_allocate(realLen))
+)MIDL_user_allocate(sizeof(PARTIAL_ATTR_VECTOR_V1_EXT) 
+)MIDL_user_allocate(sizeof(PrefixTableEntry) 
+)data = NULL
+)data = ptr
+)pDomainInfo))
+- Backup
+.DOC   diff=astextplain
+.DOCX  diff=astextplain
+.DOT   diff=astextplain
+.DesktopClient/GeneratedArtifacts
+.DesktopClient/ModelManifest.xml
+.DotSettings.user
+.GhostDoc.xml
+.HTMLClient/GeneratedArtifacts
+.HxC
+.HxT
+.JustCode
+.PDF   diff=astextplain
+.RTF   diff=astextplain
+.Server/GeneratedArtifacts
+.Server/ModelManifest.xml
+.VC.VC.opendb
+.VC.db
+.VisualState.xml
+.XML
+.[Cc]ache
+.[Cc]ache/
+.[Pp]ublish.xml
+.[Rr]e[Ss]harper
+.appx
+.aps
+.axoCover/
+.azurePubxml
+.bim.layout
+.bim_
+.binlog
+.btm.cs
+.btp.cs
+.build.csdef
+.builds
+.cachefile
+.coverage
+.coveragexml
+.cr/personal
+.cs     diff=csharp
+.csproj    merge=binary
+.dbmdl
+.dbproj    merge=binary
+.dbproj.schemaview
+.debug$S
+.doc   diff=astextplain
+.docx  diff=astextplain
+.dot   diff=astextplain
+.dotCover
+.e2e
+.fake/
+.fsproj    merge=binary
+.gif   binary
+.gpState
+.hhc
+.hhk
+.hhp
+.htm
+.idata$2@
+.idata$4@
+.idata$5@
+.idata$6
+.idea/
+.ilk
+.iobj
+.ipdb
+.jfm
+.jmconfig
+.jpg   binary
+.ldf
+.local.xml
+.localhistory/
+.log
+.lsproj    merge=binary
+.mdf
+.meta
+.mfractor/
+.mm.
+.modelproj merge=binary
+.ncb
+.ndf
+.ntvs_analysis.dat
+.nuget.props
+.nuget.targets
+.nupkg
+.nvuser
+.obj
+.odx.cs
+.opendb
+.opensdf
+.opt
+.paket/paket.exe
+.pch
+.pdb
+.pdf   diff=astextplain
+.pfx
+.pgc
+.pgd
+.pidb
+.plg
+.png   binary
+.psess
+.publishproj
+.publishsettings
+.pubxml
+.pyc
+.rdl
+.rdl.data
+.rptproj.bak
+.rptproj.rsuser
+.rsp
+.rsuser
+.rtf   diff=astextplain
+.sap
+.sass-cache/
+.sbr
+.scc
+.sdf
+.settings
+.sln       merge=binary
+.sln.docstates
+.sln.iml
+.snk
+.sqlproj   merge=binary
+.suo
+.svclog
+.tlb
+.tlh
+.tli
+.tmp
+.tmp_proj
+.tss
+.user
+.userosscache
+.userprefs
+.vbproj    merge=binary
+.vbw
+.vcproj    merge=binary
+.vcxproj   merge=binary
+.vs/
+.vsp
+.vspscc
+.vspx
+.vssscc
+.wixproj   merge=binary
+.wwaproj   merge=binary
+.xsd.cs
+/               1482954579              0       578       
+/               1482954579              0       588       
+// TODO: Implement these functions
+// WPRINTF_HEX_C
+// WPRINTF_HEX_PYTHON
+// WPRINTF_HEX_SHORT
+// WPRINTF_HEX_SPACE
+/[Pp]ackages/
+/[Pp]ackages/build/
+/[Pp]ackages/repositories.config
+0.idata$6
+0x00000010
+0x00000020
+0x00008000
+0x00080000
+0x00200000
+0x01000000
+0x04000000
+</IncludePath>
+</Project>
+= 0x8000
+= LM_NTLM_HASH_LENGTH)
+= ndx << 16
+@.idata$4
+@comp.idf
+ASALocalRun/
+ASN1API
+ASN1API 
+ASN1API ASN1EncSetError(
+ASN1BERDotVal2Eoid
+ASN1BEREoid2DotVal
+ASN1BerFunArr_t
+ASN1DecAlloc(
+ASN1DecRealloc(
+ASN1DecSetError(
+ASN1Free
+ASN1Free(
+ASN1FreeFun_t)( __in void 
+ASN1GenericFun_t)(void)
+ASN1_CloseDecoder
+ASN1_CloseDecoder(
+ASN1_CloseDecoder(ASN1dec)
+ASN1_CloseEncoder
+ASN1_CloseEncoder(
+ASN1_CloseEncoder(ASN1enc)
+ASN1_CloseEncoder2(
+ASN1_CloseModule
+ASN1_CloseModule(
+ASN1_CloseModule(hASN1Module)
+ASN1_CreateDecoder
+ASN1_CreateDecoder(
+ASN1_CreateDecoderEx(
+ASN1_CreateEncoder
+ASN1_CreateEncoder(
+ASN1_CreateModule
+ASN1_CreateModule(
+ASN1_Decode(
+ASN1_Encode(
+ASN1_FreeDecoded(
+ASN1_FreeEncoded
+ASN1_FreeEncoded(
+ASN1_GetDecoderOption(
+ASN1_GetEncoderOption(
+ASN1_PUBLIC 
+ASN1_SetDecoderOption(
+ASN1_SetEncoderOption(
+ASN1bitstring_cmp(
+ASN1bitstring_free(
+ASN1bitstring_t
+ASN1blocktype_e
+ASN1char16string_cmp(
+ASN1char16string_free(
+ASN1char16string_t
+ASN1char32string_cmp(
+ASN1char32string_free(
+ASN1char32string_t
+ASN1charstring_cmp(
+ASN1charstring_free(
+ASN1charstring_t
+ASN1dec = NULL
+ASN1decoding_t
+ASN1decoding_t ASN1dec = NULL
+ASN1enc = NULL
+ASN1encodedOID_t
+ASN1encoding_t
+ASN1encoding_t ASN1enc = NULL
+ASN1encodingrule_e
+ASN1error_e
+ASN1error_e 
+ASN1generalizedtime_cmp(
+ASN1generalizedtime_t
+ASN1int32_t  
+ASN1intx2int32(
+ASN1intx2uint32(
+ASN1intx_cmp(
+ASN1intx_free(
+ASN1intx_setuint32(
+ASN1intx_t
+ASN1intx_uoctets(
+ASN1intxisuint32(
+ASN1iterator_t
+ASN1module_t
+ASN1module_t 
+ASN1module_t hASN1Module = NULL
+ASN1objectidentifier2_cmp(
+ASN1objectidentifier2_t
+ASN1objectidentifier_cmp(
+ASN1objectidentifier_free(
+ASN1objectidentifier_t
+ASN1octetstring2_t
+ASN1octetstring_cmp(
+ASN1octetstring_free(
+ASN1octetstring_t
+ASN1open_cmp(
+ASN1open_free(
+ASN1open_t
+ASN1option_e
+ASN1uint32_t 
+ASN1uint32_uoctets(
+ASN1utctime_cmp(
+ASN1utctime_t
+ASN1utf8string_free(
+ASN1wstring_t
+ASN1ztchar16string_cmp(
+ASN1ztchar16string_free(
+ASN1ztchar16string_t
+ASN1ztchar32string_cmp(
+ASN1ztchar32string_free(
+ASN1ztchar32string_t
+ASN1ztcharstring_cmp(
+ASN1ztcharstring_free(
+ASN1ztcharstring_t
+ATTR
+ATTRBLOCK AttrBlock
+ATTRTYP attSensitive[ARRAYSIZE(encrypted_oids)]
+ATTRTYP attrTyp
+ATTRTYP rgPartialAttr[ANYSIZE_ARRAY]
+ATTRTYP type
+ATTRVAL
+ATTRVAL Aval
+ATTRVALBLOCK
+ATTRVALBLOCK AttrVal
+AppPackages/
+AutoTest.Net/
+B.idata$2
+B.idata$3
+B.idata$5
+BOOL DotVal2Eoid(__in const ASN1char_t
+BOOL MakeAttid(SCHEMA_PREFIX_TABLE
+BOOL ProcessGetNCChangesReply(SCHEMA_PREFIX_TABLE
+BOOL ProcessGetNCChangesReply_decrypt(ATTRVAL
+BOOL asn1_init()
+BOOL deleteBinding(RPC_BINDING_HANDLE
+BOOL fDsEnabled
+BOOL fIsGc
+BOOL fIsNCPrefix
+BOOL fIsPdc
+BOOL fIsPresent
+BOOL fMoreData
+BOOL getCurrentDomainInfo(PPOLICY_DNS_DOMAIN_INFO
+BOOL getDCBind(RPC_BINDING_HANDLE
+BOOL getDomainAndUserInfos(RPC_BINDING_HANDLE
+BOOL result = FALSE
+BOOL status = FALSE
+BOOL string_copy(LPWSTR
+BYTE
+BYTE buffer[64]
+BYTE data[LM_NTLM_HASH_LENGTH]
+BYTE digest[MD5_DIGEST_LENGTH]
+BYTE rgb[ANYSIZE_ARRAY]
+Backup
+BenchmarkDotNet.Artifacts/
+BundleArtifacts/
+ClientBin/
+Context)
+Context)))
+CryptDestroyHash(hHash)
+DRS_EXTENSIONS_INT
+DRS_EXTENSIONS_INT DrsExtensionsInt
+DRS_HANDLE hDrs = NULL
+DRS_MSG_CRACKREPLY nameCrackRep = { 0 }
+DRS_MSG_CRACKREPLY_V1 V1
+DRS_MSG_CRACKREQ nameCrackReq = { 0 }
+DRS_MSG_CRACKREQ_V1 V1
+DRS_MSG_DCINFOREPLY dcInfoRep = { 0 }
+DRS_MSG_DCINFOREPLY_V2 V2
+DRS_MSG_DCINFOREQ dcInfoReq = { 0 }
+DRS_MSG_DCINFOREQ_V1 V1
+DRS_MSG_GETCHGREPLY getChRep
+DRS_MSG_GETCHGREPLY_V6 V6
+DRS_MSG_GETCHGREQ getChReq = { 0 }
+DRS_MSG_GETCHGREQ_V8 V8
+DSNAME
+DSNAME dsName = { 0 }
+DSTIME timeChanged
+DSTIME timeCreated
+DSTIME timeLastSyncSuccess
+DS_DOMAIN_CONTROLLER_INFO_2W
+DS_NAME_ERROR_TRUST_REFERRAL = 7
+DS_NAME_RESULTW
+DWORD Flag
+DWORD InfoLevel
+DWORD Length
+DWORD MakeAttid_addPrefixToTable(SCHEMA_PREFIX_TABLE
+DWORD MaximumLength
+DWORD Pid
+DWORD PrefixCount
+DWORD Size
+DWORD cAttrs
+DWORD cItems
+DWORD cNames
+DWORD cNumCursors
+DWORD cNumProps
+DWORD cNumValues
+DWORD cb
+DWORD count[2]
+DWORD dcOutVersion = 0
+DWORD dwDRSError
+DWORD dwExtCaps
+DWORD dwFlags
+DWORD dwFlagsExt
+DWORD dwReplEpoch
+DWORD dwReserved1
+DWORD dwReserved2
+DWORD dwVersion
+DWORD encodedDataSize
+DWORD formatDesired
+DWORD formatOffered
+DWORD hashLen
+DWORD i
+DWORD state[4]
+DWORD status
+DWORD sz
+Debug
+DocProject/Help/
+DocProject/Help/Html2
+DocProject/Help/html
+DocProject/buildhelp/
+DomainGUID = dcInfoRep.V2.rItems[i].NtdsDsaObjectGuid
+DomainGUIDfound = TRUE
+DrsExtensionsInt)
+ENTINF Entinf
+EXOP_REPL_SECRETS = 7
+EndGlobal
+EndGlobalSection
+EndProject
+FakesAssemblies/
+FreeContextBuffer(kull_m_rpc_drsr_g_sKey.SessionKey)
+FreeDRS_MSG_CRACKREPLY_V1(
+FreeDRS_MSG_DCINFOREPLY_V2(
+FreeDRS_MSG_GETCHGREPLY_V6(
+Full write-up on working of this tool is available here:  
+GUID ComputerObjectGuid
+GUID ConfigObjGUID
+GUID Guid
+GUID NtdsDsaObjectGuid
+GUID ServerObjectGuid
+GUID SiteObjGuid
+GUID SiteObjectGuid
+Generated
+Generated_Code/
+GetSidSubAuthorityCount(data) - 1)
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+HCRYPTHASH hHash
+HCRYPTPROV hProv
+HideSolutionNode = FALSE
+IDL_DRSUnbind(
+IDL_DRSUnbind(hDrs)
+Just download the tool from releases and run it. It doesn't require any command line arguments.
+LONG Type
+LPCSTR dcsync_oids[] = {
+LPCSTR dcsync_oids_export[] = {
+LPCSTR encrypted_oids[] = {
+LPSTR stringSid
+LPVOID 
+LPWSTR fullServer = NULL
+LPWSTR sGuid
+LPWSTR sSid
+LPWSTR sTempDomain
+LSA_HANDLE hLSA
+LSA_OBJECT_ATTRIBUTES oaLsa = { 0 }
+LocalFree(buffer)
+LocalFree(p)
+LocalFree(pSid)
+LocalFree(sTempDomain)
+LocalFree(stringSid)
+LsaClose(hLSA)
+LsaFreeMemory(pDomainInfo)
+MD5Final(
+MD5Init(
+MD5Update(
+MD5_CTX md5ctx
+MD5_DIGEST_LENGTH
+MIDL_user_free(getChReq.V8.pPartialAttrSet)
+MIDL_user_free(pDrsExtensionsOutput)
+MIDL_user_free(prefixTable->pPrefixEntry)
+MIDL_user_free(prefixTable->pPrefixEntry[i].prefix.elements)
+MIDL_user_free(toFree)
+MakeAttid(
+MesHandleFree(pHandle)
+Microsoft (R) LINK
+MinimumVisualStudioVersion = 10.0.40219.1
+NDEBUG
+NT4SID Sid
+Name
+NetApiBufferFree(cInfo)
+OID_t prefix
+ObjectGUIDfound = NT_SUCCESS(RtlGUIDFromString(
+OpenCover/
+OssEncodedOID oidPrefix
+PARTIAL_ATTR_VECTOR_V1_EXT
+PBYTE Buffer
+PBYTE buffer
+PBYTE encodedData
+PCWCHAR WPRINTF_TYPES[] =
+PCWCHAR pType = WPRINTF_TYPES[flags 
+PCtxtHandle data = NULL
+PDOMAIN_CONTROLLER_INFO cInfo = NULL
+PDS_NAME_RESULT_ITEMW rItems
+PENCRYPTED_PAYLOAD encrypted = (PENCRYPTED_PAYLOAD)val->pVal
+PKERB_CHECKSUM pCheckSum
+PKERB_CHECKSUM_FINALIZE Finalize
+PKERB_CHECKSUM_FINISH Finish
+PKERB_CHECKSUM_INITIALIZE Initialize
+PKERB_CHECKSUM_INITIALIZEEX InitializeEx
+PKERB_CHECKSUM_SUM Sum
+PPOLICY_DNS_DOMAIN_INFO pDomainInfo = NULL
+PRINT_ERROR(...)
+PRINT_INFO(...)
+PRINT_NORMAL(...)
+PRINT_SUCCESS(...)
+PROPERTY_META_DATA_EXT MetaData
+PROPERTY_META_DATA_EXT rgMetaData[ANYSIZE_ARRAY]
+PROPERTY_META_DATA_EXT_VECTOR
+PSID pSid
+PSID_NAME_USE peUse = pSidNameUse 
+PSTR lastValueString
+PSecPkgContext_SessionKey pKey = SessionKey 
+PVOID Context
+PVOID addr
+PVOID data
+PVOID findMonoAttr(SCHEMA_PREFIX_TABLE
+PVOID ptr
+PVOID ptr = NULL
+PVOID toFree
+PVOID unk0_null
+Package.StoreAssociation.xml
+PrefixTableEntry
+PublishScripts/
+REPLENTINFLIST
+REPLVALINF_V1
+RPC_BINDING_HANDLE hBinding
+RPC_STATUS rpcStatus
+RPC_WSTR StringBinding = NULL
+Release
+RpcEndExcept
+RpcExcept(EXCEPTION_EXECUTE_HANDLER)
+RpcExcept(RPC_EXCEPTION)
+RpcStringFree(
+RpcTryExcept
+RtlCopyMemory(
+RtlCopyMemory((PBYTE)fullServer 
+RtlCopyMemory(entries[
+RtlGetNtVersionNumbers(
+RtlInitUnicodeString(
+RtlZeroMemory(
+SCHEMA_PREFIX_TABLE PrefixTableDest
+SCHEMA_PREFIX_TABLE PrefixTableSrc
+SECURITY_STATUS secStatus
+SHORT Pad
+SID_NAME_USE sidNameUse
+SecurityQOS)
+ServiceFabricBackup/
+SolutionGuid = {C95CE777-552F-41F1-8E7E-6A3F95F599BC}
+StringBinding)
+StyleCopReport.xml
+SystemFunction025
+SystemFunction032
+TestResult.xml
+UCHAR
+UCHAR Data[28]
+UCHAR EncryptedData[ANYSIZE_ARRAY]
+UCHAR Format[1757]
+UCHAR Format[853]
+UCHAR Salt[16]
+ULARGE_INTEGER liFsmoInfo
+ULONG CheckSum
+ULONG CodePage
+ULONG IDL_DRSUnbind(DRS_HANDLE
+ULONG LocaleId
+ULONG NameLen
+ULONG SidLen
+ULONG attrCount
+ULONG cMaxBytes
+ULONG cMaxObjects
+ULONG cNumBytes
+ULONG cNumNcSizeObjects
+ULONG cNumNcSizeValues
+ULONG cNumObjects
+ULONG drsStatus
+ULONG ndx
+ULONG structLen
+ULONG ulExtendedOp
+ULONG ulExtendedRet
+ULONG ulFlags
+ULONG valCount
+ULONG valLen
+UNICODE_STRING uGuid
+UPTODATE_CURSOR_V1 rgCursors[ANYSIZE_ARRAY]
+UPTODATE_CURSOR_V2 rgCursors[ANYSIZE_ARRAY]
+UPTODATE_VECTOR_V1_EXT
+UPTODATE_VECTOR_V2_EXT
+USN usnHighObjUpdate
+USN usnHighPropUpdate
+USN usnOriginating
+USN usnReserved
+USN_VECTOR usnvecFrom
+USN_VECTOR usnvecTo
+UUID
+UUID uuidDsa
+UUID uuidDsaObjDest
+UUID uuidDsaObjSrc
+UUID uuidDsaOriginating
+UUID uuidInvocIdSrc
+UpgradeLog
+VALUE_META_DATA_EXT_V1 MetaData
+VisualStudioVersion = 16.0.30128.74
+WCHAR
+WCHAR StringName[ANYSIZE_ARRAY]
+Win32
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Bb]uild[Ll]og.
+[Dd]ebug/
+[Dd]ebugPS/
+[Dd]ebugPublic/
+[Ee]xpress/
+[Ll]og/
+[Oo]bj/
+[Rr]elease/
+[Rr]eleasePS/
+[Rr]eleases/
+[Tt]est[Rr]esult
+[https://notsoshant.io/tools/dcsyncer/](https://www.notsoshant.io/tools/dcsyncer/)
+_CONSOLE
+_Chutzpah
+_DEBUG
+_NCrunch_
+_Pvt_Extensions
+_ReSharper
+_TeamCity
+_UpgradeReport_Files/
+__IMPORT_DESCRIPTOR_msasn1
+__NULL_IMPORT_DESCRIPTOR
+__imp_ASN1BERDotVal2Eoid
+__imp_ASN1BEREoid2DotVal
+__imp_ASN1Free
+__imp_ASN1_CloseDecoder
+__imp_ASN1_CloseEncoder
+__imp_ASN1_CloseModule
+__imp_ASN1_CreateDecoder
+__imp_ASN1_CreateEncoder
+__imp_ASN1_CreateModule
+__imp_ASN1_FreeEncoded
+__out_bcount_opt( size )
+__pycache__/
+__success( return >= 0 )
+_h.h
+_i.c
+_p.c
+_pkginfo.txt
+_wpftmp.csproj
+acbStructSize
+advapi32.lib
+apfnDecoder
+apfnEncoder
+apfnFreeMemory
+artifacts/
+asmx</Extensions>
+asn1_init()
+asn1_term()
+att 
+att = (WORD)lastValue % 0x4000
+att >= 0x4000)
+attribut = 
+attribut->AttrVal
+attributes->pAttr[i]
+bcrypt.lib
+bld/
+bower_components/
+break
+cInfo)
+case 1:
+case 2:
+case 6:
+comdlg32.lib
+const wchar_t
+crunch
+cryptdll.lib
+cryptoData.Buffer = (PBYTE)
+cryptoKey)))
+csx/
+data)
+dcInfoRep)
+dcInfoReq.V1.Domain = (LPWSTR)Domain
+dcInfoReq.V1.InfoLevel = 2
+default:
+define
+define ASN1API         __stdcall
+define ASN1API_INLINE  ASN1API
+define ASN1API_INLINE  __clrcall
+define ASN1CALL        __stdcall
+define ASN1DECFREE_NON_PDU_ID    ((ASN1uint32_t) -1)
+define ASN1_FAILED(ret)        (((int) (ret)) < 0)
+define ASN1_PUBLIC
+define ASN1_PUBLIC     __declspec(dllimport)
+define ASN1_SUCCEEDED(ret)     (((int) (ret)) >= 0)
+define CALG_CRC32
+define DRS_EXT_GETCHGREPLY_V6
+define DRS_EXT_GETCHGREQ_V8
+define DRS_EXT_STRONG_ENCRYPTION
+define DRS_FULL_SYNC_NOW
+define DRS_INIT_SYNC
+define DRS_NEVER_SYNCED
+define DRS_SYNC_URGENT
+define DRS_WRIT_REP
+define LM_NTLM_HASH_LENGTH
+define NT_SUCCESS(Status) ((NTSTATUS)(Status) >= 0)
+define RPC_EXCEPTION (RpcExceptionCode() != STATUS_ACCESS_VIOLATION) 
+define RtlDecryptDES2blocks1DWORD
+define RtlEncryptDecryptRC4
+define SECURITY_WIN32
+define __MS_ASN1_H__
+define szOID_ANSI_accountExpires
+define szOID_ANSI_currentValue
+define szOID_ANSI_dBCSPwd
+define szOID_ANSI_lmPwdHistory
+define szOID_ANSI_nTDSDSA
+define szOID_ANSI_name
+define szOID_ANSI_ntPwdHistory
+define szOID_ANSI_objectSid
+define szOID_ANSI_pwdLastSet
+define szOID_ANSI_sAMAccountName
+define szOID_ANSI_sAMAccountType
+define szOID_ANSI_sIDHistory
+define szOID_ANSI_servicePrincipalName
+define szOID_ANSI_supplementalCredentials
+define szOID_ANSI_trustAuthIncoming
+define szOID_ANSI_trustAuthOutgoing
+define szOID_ANSI_trustPartner
+define szOID_ANSI_unicodePwd
+define szOID_ANSI_userAccountControl
+define szOID_ANSI_userPrincipalName
+define szOID_dMDLocation
+define szOID_hasMasterNCs
+define szOID_invocationId
+define szOID_isDeleted
+define szOID_isRecycled
+define szOID_ldapServer_show_deleted
+define szOID_msDS_Behavior_Version
+define szOID_msDS_HasDomainNCs
+define szOID_msDS_ReplicationEpoch
+define szOID_msDS_hasMasterNCs
+define szOID_objectGUID
+define szOID_objectclass
+define szOID_options
+define szOID_serverReference
+define szOID_systemFlags
+deleteBinding(
+descrObject(
+descrUserProperties((PUSER_PROPERTIES)encodedData)
+displayLocalFileTime((LPFILETIME)data)
+displaySID(data)
+displaySID(sids->pAVal[i].pVal)
+dlldata.c
+drsStatus = IDL_DRSBind(
+drsStatus = nameCrackRep.V1.pResult->rItems[0].status
+dsName
+ecf/
+elif defined(ASN1C)
+else
+else if (CryptAcquireContext(
+else if (User)
+else status = TRUE
+encoded
+encodedDataSize))
+encodedOID->length = 0
+encodedOID->value = NULL
+encrypted->CheckSum
+endif
+endif // __MS_ASN1_H__
+entries[
+enum
+extern 
+extern ASN1_PUBLIC 
+extern DWORD WINAPI NetApiBufferFree(IN LPVOID Buffer)
+extern VOID WINAPI MD5Final(PMD5_CTX pCtx)
+extern VOID WINAPI MD5Init(PMD5_CTX pCtx)
+extern const ms2Ddrsr_MIDL_PROC_FORMAT_STRING ms2Ddrsr__MIDL_ProcFormatString
+extern const ms2Ddrsr_MIDL_TYPE_FORMAT_STRING ms2Ddrsr__MIDL_TypeFormatString
+fflush(stdout)
+for (i = 0
+for (j = 0
+for (k = 0
+freeEnc(oidPrefix.value)
+free_SCHEMA_PREFIX_TABLE_data(
+fullDCName = (wchar_t
+gdi32.lib
+getChRep)
+getChReq.V8.PrefixTableDest)
+getChReq.V8.cMaxBytes = 0x00a00000
+getChReq.V8.cMaxObjects = (allData 
+getChReq.V8.pNC = 
+getChReq.V8.pPartialAttrSet = (PARTIAL_ATTR_VECTOR_V1_EXT
+getChReq.V8.pPartialAttrSet->cAttrs = ARRAYSIZE(dcsync_oids)
+getChReq.V8.pPartialAttrSet->cAttrs = ARRAYSIZE(dcsync_oids_export)
+getChReq.V8.pPartialAttrSet->dwReserved1 = 0
+getChReq.V8.pPartialAttrSet->dwVersion = 1
+getChReq.V8.ulExtendedOp = (allData 
+getChReq.V8.ulFlags = DRS_INIT_SYNC 
+getCurrentDomainInfo(
+getDCBind(
+getDomainAndUserInfos(
+hASN1Module = NULL
+hBinding = NULL
+hBinding)
+hDrs)
+hHash))
+hLSA)))
+handle_t pHandle
+healthchecksdb
+if !defined(NT_SUCCESS)
+if (
+if (!DomainGUIDfound 
+if (!DomainGUIDfound)
+if (!ProcessGetNCChangesReply_decrypt(
+if (!addServiceToNetworkAddr 
+if (!result)
+if (!status 
+if (!status)
+if ((1 << i) 
+if ((flags 
+if ((hashWanted == sizeof(DWORD)) 
+if (ASN1_FAILED(ret))
+if (ASN1dec)
+if (ASN1enc 
+if (ASN1enc)
+if (AuthnSvc != RPC_C_AUTHN_NONE)
+if (DrsExtensionsInt.dwReplEpoch)
+if (Guid)
+if (NT_SUCCESS(RtlEncryptDecryptRC4(
+if (NT_SUCCESS(rpcStatus))
+if (NetworkAddr 
+if (ProcessGetNCChangesReply(
+if (RpcSecurityCallback)
+if (addServiceToNetworkAddr)
+if (algid == CALG_CRC32)
+if (allData)
+if (attSensitive[j] == pReplentinflist->Entinf.AttrBlock.pAttr[i].attrTyp)
+if (attribut->attrTyp == type)
+if (calcChecksum == encrypted->CheckSum)
+if (data)
+if (dcOutVersion == 2)
+if (drsStatus == 0)
+if (dwOutVersion == 6 
+if (entries = (PrefixTableEntry
+if (entries[
+if (hASN1Module)
+if (isHistory)
+if (kull_m_rpc_drsr_g_sKey.SessionKey)
+if (nameCrackOutVersion == 1)
+if (nameCrackRep.V1.pResult->cItems == 1)
+if (pDrsExtensionsOutput)
+if (pDrsExtensionsOutput->dwFlags 
+if (pKey->SessionKey 
+if (pReplentinflist->Entinf.AttrBlock.pAttr)
+if (pReplentinflist->Entinf.AttrBlock.pAttr[i].AttrVal.pAVal)
+if (pReplentinflist->Entinf.AttrBlock.pAttr[i].AttrVal.pAVal[k].pVal)
+if (prefixTable)
+if (prefixTable->pPrefixEntry)
+if (prefixTable->pPrefixEntry[i].prefix.elements)
+if (prefixTable->pPrefixEntry[i].prefix.length == oidPrefix->length)
+if (reply)
+if (ret == ERROR_SUCCESS)
+if (rpcStatus == RPC_S_OK)
+if (secStatus != SEC_E_OK)
+if (sep 
+if (size)
+if (src 
+if (status = (RpcBindingFree(hBinding) == RPC_S_OK))
+if (status = (drsStatus == DS_NAME_NO_ERROR))
+if (status)
+if (val->pVal = (UCHAR
+if (valblock->valCount == 1)
+ifdef ASN1LIB
+ifdef _M_CEE_PURE
+ifdef __cplusplus
+ifndef __MS_ASN1_H__
+inc</Filter>
+include <poppack.h> /
+include <pshpack8.h> /
+include<DsGetDC.h>
+include<Midles.h>
+include<NTSecAPI.h>
+include<Windows.h>
+include<msasn1.h>
+include<rpc.h>
+include<rpcndr.h>
+include<sddl.h>
+include<sspi.h>
+include<stdio.h>
+include<string.h>
+int 
+int          
+int ret
+ipch/
+issue-259490424)
+issuecomment-104372622)
+jpeg
+kull_m_rpc_drsr_g_sKey
+kull_m_rpc_drsr_g_sKey)
+kull_m_rpc_drsr_g_sKey.SessionKey = NULL
+kull_m_rpc_drsr_g_sKey.SessionKeyLength = 0
+lastValueString
+lib</Filter>
+md5ctx)
+mfcribbon-ms</Extensions>
+msasn1.dll
+msasn1.dll'
+msasn1.dll/     1482954579              0       249       
+msasn1.dll/     1482954579              0       284       
+msasn1.dll/     1482954579              0       40        
+msasn1.dll/     1482954579              0       48        
+msasn1.dll/     1482954579              0       49        
+msasn1.dll/     1482954579              0       490       
+msasn1.dll/     1482954579              0       50        
+msasn1.min.lib
+msasn1_NULL_THUNK_DATA
+nBYTE data[] = {
+nCredentials:
+nCrunchTemp_
+nSupplemental Credentials:
+nameCrackRep)
+nameCrackReq.V1.cNames = 1
+nameCrackReq.V1.formatDesired = FormatWanted
+nameCrackReq.V1.formatOffered = NameFormat
+nameCrackReq.V1.rpNames = (LPWSTR
+ncrypt.lib
+ndx = prefixTable->PrefixCount
+ndx = prefixTable->pPrefixEntry[i].ndx
+ndx) 
+ndx))
+ndx].ndx = 
+ndx].prefix.elements = (PBYTE)MIDL_user_allocate(oidPrefix->length))
+ndx].prefix.length = oidPrefix->length
+netapi32.lib
+next
+node_modules/
+ntdll.lib
+odbc32.lib
+odbccp32.lib
+oidPrefix))
+oidPrefix.length -= (lastValue < 0x80) 
+ole32.lib
+oleaut32.lib
+orleans.codegen.cs
+pBuf
+pBuffer 
+pBuffer = (char
+pBuild)
+pCheckSum)))
+pCheckSum->Finish(
+pDomain = (PWSTR)LocalFree(
+pDomain)
+pDomainInfo)
+pDrsExtensionsInt->ConfigObjGUID = pDrsExtensionsOutput->ConfigObjGUID
+pDrsExtensionsInt->SiteObjGuid = pDrsExtensionsOutput->SiteObjGuid
+pDrsExtensionsInt->cb = sizeof(DRS_EXTENSIONS_INT) - sizeof(DWORD)
+pDrsExtensionsInt->dwExtCaps = MAXDWORD32
+pDrsExtensionsInt->dwFlags = DRS_EXT_GETCHGREPLY_V6 
+pDrsExtensionsInt->dwReplEpoch = pDrsExtensionsOutput->dwReplEpoch
+pHandle)
+pNextReplentinflist = pReplentinflist->pNextEntInf
+pObject = pObject->pNextEntInf
+pOptParam
+pSid = (PSID)LocalFree(
+pSid)
+pSize
+paket-files/
+pbBuf
+pragma once
+prefixTable->PrefixCount
+prefixTable->pPrefixEntry = entries
+project.fragment.lock.json
+project.lock.json
+ptr = 
+ptr = valblock->pAVal[0].pVal
+publish/
+rcf/
+reply->V1)
+reply->V2)
+reply->V6)
+resx
+return (DomainGUIDfound 
+return (ULONG)NdrClientCall2((PMIDL_STUB_DESC)
+return 1
+return FALSE
+return TRUE
+return ptr
+return result
+return status
+rid = 
+rpcStatus = MesDecodeIncrementalHandleCreate(
+rpcStatus = RpcBindingFree(hBinding)
+rpcStatus = RpcBindingSetAuthInfoEx(
+rpcStatus = RpcBindingSetOption(
+rpcrt4.lib
+sSid))
+secur32.lib
+shell32.lib
+sidNameUse
+size = (DWORD)(wcslen(cInfo->DomainControllerName 
+size = (size 
+size = 0
+size = valblock->pAVal[0].valLen
+size_t size
+static RPC_BINDING_HANDLE drsuapi__MIDL_AutoBindHandle
+static const ASN1GenericFun_t encdecfreefntab[] = { NULL }
+static const ASN1uint32_t sizetab[] = { 0 }
+static const MIDL_STUB_DESC drsuapi_c_StubDesc = { (void
+status = (rpcStatus == RPC_S_OK)
+status = NT_SUCCESS(RtlDecryptDES2blocks1DWORD(encodedData 
+status = TRUE
+status = hASN1Module 
+stringSid))
+struct ASN1decoding_s
+struct ASN1encoding_s
+struct _REPLENTINFLIST
+switch (dcOutVersion)
+switch (dwOutVersion)
+switch (nameCrackOutVersion)
+sz))
+szDc)
+szDomain = pDomainInfo->DnsDomainName.Buffer
+szPrefix = lstrlen(Service) 
+szServer = lstrlen(NetworkAddr) 
+tiff
+toFree = val->pVal
+typedef ASN1char16_t 
+typedef ASN1char32_t 
+typedef ASN1char_t 
+typedef ASN1int32_t     ASN1enum_t
+typedef ASN1int32_t (ASN1CALL 
+typedef ASN1uint16_t    ASN1choice_t
+typedef ASN1uint16_t ASN1char16_t
+typedef ASN1uint32_t    ASN1magic_t
+typedef ASN1uint32_t ASN1char32_t
+typedef ASN1uint8_t ASN1bool_t
+typedef ASN1uint8_t ASN1octet_t
+typedef ASN1ztcharstring_t ASN1objectdescriptor_t
+typedef CONST UNICODE_STRING
+typedef LONGLONG DSTIME
+typedef LONGLONG USN
+typedef NTSTATUS(WINAPI
+typedef ULONG ATTRTYP
+typedef char ASN1char_t
+typedef enum
+typedef enum tagASN1blocktype_e
+typedef enum tagASN1error_e
+typedef enum {
+typedef signed char     ASN1int8_t
+typedef signed long     ASN1int32_t
+typedef signed short    ASN1int16_t
+typedef struct ASN1decoding_s   
+typedef struct ASN1encoding_s
+typedef struct ASN1encoding_s   
+typedef struct ASN1iterator_s
+typedef struct ASN1objectidentifier_s
+typedef struct RPC_FCNSTRUCT {
+typedef struct _ATTR {
+typedef struct _ATTRBLOCK {
+typedef struct _ATTRVAL {
+typedef struct _ATTRVALBLOCK {
+typedef struct _CRYPTO_BUFFER {
+typedef struct _DRS_EXTENSIONS {
+typedef struct _DRS_EXTENSIONS_INT {
+typedef struct _DRS_MSG_CRACKREPLY_V1 {
+typedef struct _DRS_MSG_CRACKREQ_V1 {
+typedef struct _DRS_MSG_DCINFOREPLY_V2 {
+typedef struct _DRS_MSG_DCINFOREQ_V1 {
+typedef struct _DRS_MSG_GETCHGREPLY_V6 {
+typedef struct _DRS_MSG_GETCHGREQ_V8 {
+typedef struct _DSNAME {
+typedef struct _DS_DOMAIN_CONTROLLER_INFO_2W {
+typedef struct _DS_NAME_RESULTW {
+typedef struct _DS_NAME_RESULT_ITEMW {
+typedef struct _ENCRYPTED_PAYLOAD {
+typedef struct _ENTINF {
+typedef struct _KERB_CHECKSUM {
+typedef struct _MD5_CTX {
+typedef struct _NT4SID {
+typedef struct _OID_t {
+typedef struct _PARTIAL_ATTR_VECTOR_V1_EXT {
+typedef struct _PROPERTY_META_DATA_EXT {
+typedef struct _PROPERTY_META_DATA_EXT_VECTOR {
+typedef struct _PrefixTableEntry {
+typedef struct _REPLENTINFLIST {
+typedef struct _REPLVALINF_V1 {
+typedef struct _SCHEMA_PREFIX_TABLE {
+typedef struct _UPTODATE_CURSOR_V1 {
+typedef struct _UPTODATE_CURSOR_V2 {
+typedef struct _UPTODATE_VECTOR_V1_EXT {
+typedef struct _UPTODATE_VECTOR_V2_EXT {
+typedef struct _USN_VECTOR {
+typedef struct _VALUE_META_DATA_EXT_V1 {
+typedef struct _ms2Ddrsr_MIDL_PROC_FORMAT_STRING {
+typedef struct _ms2Ddrsr_MIDL_TYPE_FORMAT_STRING {
+typedef struct tagASN1BerFunArr_t
+typedef struct tagASN1bitstring_t
+typedef struct tagASN1char16string_t
+typedef struct tagASN1char32string_t
+typedef struct tagASN1charstring_t
+typedef struct tagASN1encodedOID_t
+typedef struct tagASN1generalizedtime_t
+typedef struct tagASN1intx_t
+typedef struct tagASN1module_t
+typedef struct tagASN1objectidentifier2_t
+typedef struct tagASN1octetstring2_t
+typedef struct tagASN1octetstring_t
+typedef struct tagASN1open_t
+typedef struct tagASN1optionparam_t
+typedef struct tagASN1utctime_t
+typedef struct tagASN1wstring_t
+typedef struct {
+typedef union _DRS_MSG_CRACKREPLY {
+typedef union _DRS_MSG_CRACKREQ {
+typedef union _DRS_MSG_DCINFOREPLY {
+typedef union _DRS_MSG_DCINFOREQ {
+typedef union _DRS_MSG_GETCHGREPLY {
+typedef union _DRS_MSG_GETCHGREQ {
+typedef unsigned char   ASN1uint8_t
+typedef unsigned long   ASN1uint32_t
+typedef unsigned short  ASN1uint16_t
+typedef void
+typedef void (
+typedef void (ASN1CALL 
+unsigned char
+unsigned int length
+unsigned short length
+user32.lib
+uuid.lib
+va_end(args)
+va_list args
+val->valLen = realLen
+value
+void 
+void   
+void         
+void RPC_ENTRY RpcSecurityCallback(void
+void __RPC_FAR
+void __RPC_USER ReadFcn(void
+void __RPC_USER midl_user_free(void __RPC_FAR
+void asn1_term()
+void descrObject(SCHEMA_PREFIX_TABLE
+void descrUser(SCHEMA_PREFIX_TABLE
+void displaySID(IN PSID pSid)
+void freeEnc(void
+void free_SCHEMA_PREFIX_TABLE_data(SCHEMA_PREFIX_TABLE
+while (getChRep.V6.fMoreData)
+while (pReplentinflist = pNextReplentinflist)
+winspool.lib
+wwwroot/
+x64 = Debug
+x64 = Release
+x64.ActiveCfg = Debug
+x64.ActiveCfg = Release
+x64.Build.0 = Debug
+x64.Build.0 = Release
+x64/
+x86 = Debug
+x86 = Release
+x86.ActiveCfg = Debug
+x86.ActiveCfg = Release
+x86.Build.0 = Debug
+x86.Build.0 = Release
+x86/
+xsd</Extensions>
+{253E716A-AB96-4F87-88C7-052231EC2A12}.Debug
+{253E716A-AB96-4F87-88C7-052231EC2A12}.Release
+} ATTR
+} ATTRBLOCK
+} ATTRVAL
+} ATTRVALBLOCK
+} DRS_EXTENSIONS
+} DRS_MSG_CRACKREPLY
+} DRS_MSG_CRACKREPLY_V1
+} DRS_MSG_CRACKREQ
+} DRS_MSG_CRACKREQ_V1
+} DRS_MSG_DCINFOREPLY
+} DRS_MSG_DCINFOREPLY_V2
+} DRS_MSG_DCINFOREQ_V1
+} DRS_MSG_GETCHGREPLY
+} DRS_MSG_GETCHGREPLY_V6
+} DRS_MSG_GETCHGREQ
+} DRS_MSG_GETCHGREQ_V8
+} DSNAME
+} DS_DOMAIN_CONTROLLER_INFO_2W
+} DS_NAME_ERROR
+} DS_NAME_FORMAT
+} ENTINF
+} EXOP_REQ
+} NT4SID
+} OID_t
+} OssEncodedOID
+} PARTIAL_ATTR_VECTOR_V1_EXT
+} PROPERTY_META_DATA_EXT
+} PROPERTY_META_DATA_EXT_VECTOR
+} PrefixTableEntry
+} REPLENTINFLIST
+} REPLVALINF_V1
+} SCHEMA_PREFIX_TABLE
+} UPTODATE_CURSOR_V1
+} UPTODATE_CURSOR_V2
+} UPTODATE_VECTOR_V1_EXT
+} UPTODATE_VECTOR_V2_EXT
+} USN_VECTOR
+} VALUE_META_DATA_EXT_V1
+} ms2Ddrsr_MIDL_PROC_FORMAT_STRING
+} ms2Ddrsr_MIDL_TYPE_FORMAT_STRING

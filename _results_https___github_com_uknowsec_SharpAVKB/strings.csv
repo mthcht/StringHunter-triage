@@ -1,0 +1,777 @@
+                    Console.WriteLine(kvp.Key 
+                av()
+                if (!sys_kb.Contains(item))
+                if (resultStr.IndexOf(kvp.Key) > -1)
+                kb()
+                {
+                }
+            Cmd c = new Cmd()
+            MatchCollection mc = re.Matches(all)
+            foreach (Match ma in mc)
+            foreach (var item in kb_exp)
+            if (args.Length == 0)
+            if (args.Length == 1 
+            proc = new Process()
+            proc.Close()
+            proc.StandardInput.WriteLine(cmd)
+            proc.Start()
+            proc.StartInfo.CreateNoWindow = true
+            proc.StartInfo.RedirectStandardError = true
+            proc.StartInfo.RedirectStandardInput = true
+            proc.StartInfo.RedirectStandardOutput = true
+            proc.StartInfo.UseShellExecute = false
+            return outStr
+            string outStr = proc.StandardOutput.ReadToEnd()
+            var sys_kb = new List<string> { }
+            {
+            }
+        /// 
+        /// </summary>
+        /// <summary>
+        private Process proc = null
+        public Cmd()
+        public static void av()
+        public static void kb()
+        public string RunCmd(string cmd)
+        static void Main(string[] args)
+        {
+        }
+       SharpAVKB.exe -KB
+      </requestedPrivileges>
+      <HintPath>C:
+    /// </summary>
+    /// <summary>
+    /// Cmd 
+    </Reference>
+    </security>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>SharpAVKB</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>DEBUG
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
+    <OutputPath>bin
+    <OutputType>Exe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ProjectGuid>{99DDC600-3E6F-435E-89DF-74439FA68061}</ProjectGuid>
+    <RootNamespace>SharpAVKB</RootNamespace>
+    <StartupObject>SharpAVKB.Program</StartupObject>
+    <TargetFrameworkProfile />
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <security>
+    class Program
+    public class Cmd
+    {
+    }
+  -->
+  2019
+  </ItemGroup>
+  </PropertyGroup>
+  </Target>
+  </trustInfo>
+  <ItemGroup>
+  <PropertyGroup>
+ COM 
+ Cobalt Strike
+ ComVisible 
+ GUID 
+ MSF 7.00
+ Reference: 
+ SharpAVKB
+ Usage
+ Visual Studio 2012
+ cmd.exe
+ false 
+ findstr 
+ item 
+ kb_num[item])
+ kvp.Value)
+ true
+!Microsoft.Build.Tasks.SystemState
+![](https://github.com/uknowsec/SharpAVKB/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20191014205222.png)
+!ck(WS@goOo
+!ck(WSe
+"                    Console.WriteLine(""KB"
+"                Console.WriteLine(""       SharpAVKB.exe -KB"")"
+"                Console.WriteLine("""
+"                Console.WriteLine(""Github: https://github.com/uknowsec/SharpAVKB"")"
+"                Console.WriteLine(""Usage: SharpAVKB.exe -AV"")"
+"                sys_kb.Add(ma.ToString().Replace(""]: "", """"))"
+"            Console.WriteLine("""
+"            Dictionary<string, string> av_list = new Dictionary<string, string>()"
+"            Dictionary<string, string> kb_num = new Dictionary<string, string>()"
+"            Regex re = new Regex(@""]: (."
+"            av_list.Add(""1433.exe"", """
+"            av_list.Add(""360safe.exe"", ""360"
+"            av_list.Add(""360sd.exe"", ""360"
+"            av_list.Add(""360tray.exe"", ""360"
+"            av_list.Add(""AST.exe"", """
+"            av_list.Add(""AVK.exe"", ""GData"")"
+"            av_list.Add(""AVWatchService.exe"", ""VIRUSfighter"
+"            av_list.Add(""AYAgent.exe"", """
+"            av_list.Add(""ArcaTasksService.exe"", ""ArcaVir"
+"            av_list.Add(""AvastUI.exe"", ""Avast!5"
+"            av_list.Add(""BKavService.exe"", ""Bkav"
+"            av_list.Add(""BaiduSd.exe"", """
+"            av_list.Add(""BaiduSdSvc.exe"", """
+"            av_list.Add(""BaiduSdTray.exe"", """
+"            av_list.Add(""CKSoftShiedAntivirus4.exe"", ""Shield Antivirus"
+"            av_list.Add(""CMCTrayIcon.exe"", ""CMC"
+"            av_list.Add(""CorantiControlCenter32.exe"", ""Coranti2012"
+"            av_list.Add(""DUB.exe"", """
+"            av_list.Add(""D_Safe_Manage.exe"", ""D"
+"            av_list.Add(""F-PROT.exe"", ""F-Prot AntiVirus"")"
+"            av_list.Add(""FYFireWall.exe"", """
+"            av_list.Add(""FortiTray.exe"", """
+"            av_list.Add(""Frameworkservice.exe"", ""Mcafee"")"
+"            av_list.Add(""GG.exe"", """
+"            av_list.Add(""HwsPanel.exe"", """
+"            av_list.Add(""Iparmor.exe.exe"", """
+"            av_list.Add(""K7TSecurity.exe"", ""K7"
+"            av_list.Add(""KSWebShield.exe"", """
+"            av_list.Add(""KvMonXP.exe"", """
+"            av_list.Add(""MPMon.exe"", """
+"            av_list.Add(""Mcshield.exe"", ""Mcafee"")"
+"            av_list.Add(""Miner.exe"", """
+"            av_list.Add(""MongoosaGUI.exe"", ""Mongoosa"
+"            av_list.Add(""MsMpEng.exe"", ""Microsoft Security Essentials"")"
+"            av_list.Add(""NPFMntor.exe"", ""Norton"
+"            av_list.Add(""PSafeSysTray.exe"", ""PSafe"
+"            av_list.Add(""QQPCRTP.exe"", ""QQ"
+"            av_list.Add(""QUHLPSVC.exe"", ""QUICK HEAL"
+"            av_list.Add(""RavMonD.exe"", """
+"            av_list.Add(""SBAMSvc.exe"", ""VIPRE"")"
+"            av_list.Add(""SPHINX.EXE"", ""SPHINX"
+"            av_list.Add(""SafeDogGuardCenter.exe"", """
+"            av_list.Add(""SafeDogServerUI.exe"", """
+"            av_list.Add(""SafeDogSiteIIS.exe"", """
+"            av_list.Add(""SafeDogTray.exe"", """
+"            av_list.Add(""SavProgress.exe"", ""Sophos"
+"            av_list.Add(""ServUDaemon.exe"", """
+"            av_list.Add(""SpywareTerminatorShield.exe"", ""SpywareTerminator"
+"            av_list.Add(""TMBMSRV.exe"", """
+"            av_list.Add(""Tbmon.exe"", ""Mcafee"")"
+"            av_list.Add(""TrojanHunter.exe"", """
+"            av_list.Add(""UnThreat.exe"", ""UnThreat"
+"            av_list.Add(""V3Svc.exe"", """
+"            av_list.Add(""WEBSCANX.EXE"", """
+"            av_list.Add(""ZhuDongFangYu.exe"", ""360"
+"            av_list.Add(""a2guard.exe"", ""a-squared"
+"            av_list.Add(""ad-watch.exe"", ""Lavasoft"
+"            av_list.Add(""adam.exe"", """
+"            av_list.Add(""ananwidget.exe"", """
+"            av_list.Add(""ashDisp.exe"", ""Avast"
+"            av_list.Add(""avcenter.exe"", ""Avira("
+"            av_list.Add(""avg.exe"", ""AVG Anti-Virus"")"
+"            av_list.Add(""avgaurd.exe"", ""Avira Antivir"")"
+"            av_list.Add(""avgnt.exe"", ""Avira("
+"            av_list.Add(""avguard.exe"", ""Avira("
+"            av_list.Add(""avgwdsvc.exe"", ""AVG"
+"            av_list.Add(""avp.exe"", ""Kaspersky"")"
+"            av_list.Add(""baiduansvx.exe"", """
+"            av_list.Add(""bddownloader.exe"", """
+"            av_list.Add(""beikesan.exe"", """
+"            av_list.Add(""ccRegVfy.exe"", ""Norton"
+"            av_list.Add(""ccSetMgr.exe"", """
+"            av_list.Add(""ccSvcHst.exe"", ""Norton"
+"            av_list.Add(""ccapp.exe"", ""Symantec Norton"")"
+"            av_list.Add(""cleaner8.exe"", ""The Cleaner"
+"            av_list.Add(""cpf.exe"", ""Comodo"")"
+"            av_list.Add(""d_manage.exe"", ""D"
+"            av_list.Add(""egui.exe"", ""ESET NOD32"")"
+"            av_list.Add(""eguiProxy.exe"", ""ESET NOD32"")"
+"            av_list.Add(""ekrn.exe"", ""ESET NOD32"")"
+"            av_list.Add(""f-secure.exe"", """
+"            av_list.Add(""fsavgui.exe"", ""F-Secure"
+"            av_list.Add(""hipstray.exe"", """
+"            av_list.Add(""hws.exe"", """
+"            av_list.Add(""hws_ui.exe"", """
+"            av_list.Add(""hwsd.exe"", """
+"            av_list.Add(""iptray.exe"", ""Immunet"
+"            av_list.Add(""knsdtray.exe"", """
+"            av_list.Add(""kpfwtray.exe"", """
+"            av_list.Add(""ksafe.exe"", """
+"            av_list.Add(""kxetray.exe"", """
+"            av_list.Add(""mssecess.exe"", """
+"            av_list.Add(""nspupsvc.exe"", ""nProtect"
+"            av_list.Add(""outpost.exe"", ""Outpost Firewall"")"
+"            av_list.Add(""parmor.exe"", """
+"            av_list.Add(""patray.exe"", """
+"            av_list.Add(""pfw.exe"", """
+"            av_list.Add(""remupd.exe"", """
+"            av_list.Add(""rfwmain.exe"", """
+"            av_list.Add(""rtvscan.exe"", """
+"            av_list.Add(""safedog.exe"", """
+"            av_list.Add(""safedogguardcenter.exe"", """
+"            av_list.Add(""safedogupdatecenter.exe"", """
+"            av_list.Add(""sched.exe"", ""Avira("
+"            av_list.Add(""spidernt.exe"", ""Dr.web"")"
+"            av_list.Add(""usysdiag.exe"", """
+"            av_list.Add(""vba32lder.exe"", ""vb32"
+"            av_list.Add(""vptray.exe"", ""Norton"
+"            av_list.Add(""vsmon.exe"", ""ZoneAlarm"")"
+"            av_list.Add(""vsserv.exe"", """
+"            av_list.Add(""wsctrl.exe"", """
+"            av_list.Add(""yunsuo_agent_daemon.exe"", """
+"            av_list.Add(""yunsuo_agent_service.exe"", """
+"            foreach (KeyValuePair<string, string> kvp in av_list)"
+"            kb_num.Add(""K3134228"", ""MS16-014"")"
+"            kb_num.Add(""KB2160329"", ""MS10-048"")"
+"            kb_num.Add(""KB2267960"", ""MS10-065"")"
+"            kb_num.Add(""KB2305420"", ""MS10-092"")"
+"            kb_num.Add(""KB2393802"", ""MS11-011"")"
+"            kb_num.Add(""KB2503665"", ""MS11-046"")"
+"            kb_num.Add(""KB2566454"", ""MS11-062"")"
+"            kb_num.Add(""KB2592799"", ""MS11-080"")"
+"            kb_num.Add(""KB2671387"", ""MS12-020"")"
+"            kb_num.Add(""KB2778930"", ""MS13-005"")"
+"            kb_num.Add(""KB2840221"", ""MS13-046"")"
+"            kb_num.Add(""KB2850851"", ""MS13-053"")"
+"            kb_num.Add(""KB2914368"", ""MS14-002"")"
+"            kb_num.Add(""KB2972621"", ""MS12-042"")"
+"            kb_num.Add(""KB2975684"", ""MS14-040"")"
+"            kb_num.Add(""KB2989935"", ""MS14-070"")"
+"            kb_num.Add(""KB2992611"", ""MS14-066"")"
+"            kb_num.Add(""KB3000061"", ""MS14-058"")"
+"            kb_num.Add(""KB3011780"", ""MS14-068"")"
+"            kb_num.Add(""KB3023266"", ""MS15-001"")"
+"            kb_num.Add(""KB3031432"", ""MS15-015"")"
+"            kb_num.Add(""KB3036220"", ""MS15-010"")"
+"            kb_num.Add(""KB3057191"", ""MS15-051"")"
+"            kb_num.Add(""KB3057839"", ""MS15-061"")"
+"            kb_num.Add(""KB3067505"", ""MS15-076"")"
+"            kb_num.Add(""KB3077657"", ""MS15-077"")"
+"            kb_num.Add(""KB3089656"", ""MS15-097"")"
+"            kb_num.Add(""KB3136041"", ""MS16-016"")"
+"            kb_num.Add(""KB3143141"", ""MS16-032"")"
+"            kb_num.Add(""KB3143145"", ""MS16-034"")"
+"            kb_num.Add(""KB3164038"", ""MS16-075"")"
+"            kb_num.Add(""KB3178466"", ""MS16-098"")"
+"            kb_num.Add(""KB3186973"", ""MS16-111"")"
+"            kb_num.Add(""KB3199135"", ""MS16-135"")"
+"            kb_num.Add(""KB4013081"", ""MS17-017"")"
+"            kb_num.Add(""KB4013389"", ""MS17-010"")"
+"            kb_num.Add(""KB823980"", ""MS03-026"")"
+"            kb_num.Add(""KB899588"", ""MS05-039"")"
+"            kb_num.Add(""KB921883"", ""MS06-040"")"
+"            kb_num.Add(""KB941693"", ""MS08-025"")"
+"            kb_num.Add(""KB956803"", ""MS08-066"")"
+"            kb_num.Add(""KB957097"", ""MS08-068"")"
+"            kb_num.Add(""KB958644"", ""MS08-067"")"
+"            kb_num.Add(""KB959454"", ""MS09-012"")"
+"            kb_num.Add(""KB970483"", ""MS09-020"")"
+"            kb_num.Add(""KB971468"", ""MS10-012"")"
+"            kb_num.Add(""KB975517"", ""MS09-050"")"
+"            kb_num.Add(""KB977165"", ""MS10-015"")"
+"            kb_num.Add(""KB982799"", ""MS10-059"")"
+"            proc.StandardInput.WriteLine(""exit"")"
+"            proc.StartInfo.FileName = ""cmd.exe"""
+"            string all = c.RunCmd(""systeminfo "
+"            string resultStr = c.RunCmd(""tasklist /svc"")"
+"            var kb_exp = new List<string> { ""KB4013081"", ""KB4013389"", ""KB3199135"", ""KB3186973"", ""KB3178466"", ""KB3164038"", ""KB3143145"", ""KB3143141"", ""KB3136041"", ""K3134228"", ""KB3089656"", ""KB3067505"", ""KB3077657"", ""KB3057839"", ""KB3057191"", ""KB3031432"", ""KB3036220"", ""KB3023266"", ""KB2989935"", ""KB3011780"", ""KB3000061"", ""KB2992611"", ""KB2975684"", ""KB2914368"", ""KB2850851"", ""KB2840221"", ""KB2778930"", ""KB2972621"", ""KB2671387"", ""KB2592799"", ""KB2566454"", ""KB2503665"", ""KB2393802"", ""KB2305420"", ""KB2267960"", ""KB982799"", ""KB2160329"", ""KB977165"", ""KB971468"", ""KB975517"", ""KB970483"", ""KB959454"", ""KB957097"", ""KB958644"", ""KB956803"", ""KB941693"", ""KB921883"", ""KB899588"", ""KB823980"" }"
+"        /// <param name=""cmd"">"
+"        <requestedExecutionLevel level=""asInvoker"" uiAccess=""false""/>"
+"       Other similar extension points exist, see Microsoft.Common.targets."
+"      <requestedPrivileges xmlns=""urn:schemas-microsoft-com:asm.v3"">"
+"    <Compile Include=""Program.cs"" />"
+"    <Compile Include=""Properties"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <None Include=""app.config"" />"
+"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>"
+"    <Reference Include=""Newtonsoft.Json"">"
+"    <Reference Include=""System"" />"
+"    <Reference Include=""System.Core"" />"
+"    <Reference Include=""System.Data"" />"
+"    <Reference Include=""System.Data.DataSetExtensions"" />"
+"    <Reference Include=""System.Xml"" />"
+"    <Reference Include=""System.Xml.Linq"" />"
+"  2019"")]"
+"  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. "
+"  <Import Project=""$(MSBuildExtensionsPath)"
+"  <Import Project=""$(MSBuildToolsPath)"
+"  <PropertyGroup Condition="" '$(Configuration)"
+"  <Target Name=""AfterBuild"">"
+"  <Target Name=""BeforeBuild"">"
+"  <assemblyIdentity version=""1.0.0.0"" name=""MyApplication.app""/>"
+"  <trustInfo xmlns=""urn:schemas-microsoft-com:asm.v2"">"
+" ""    MS"
+" "":"" "
+" args[0] == ""-AV"")"
+" args[0] == ""-KB"")"
+")"", RegexOptions.Multiline)"
+",Microsoft.Build.Shared.AssemblyNameExtension"
+".NETFramework,Version=v2.0"
+".NETFramework,Version=v3.5"
+".NETFramework,Version=v4.0"
+".NETFramework,v2.0,AssemblyFoldersEx}"
+".NETFramework,v3.5,AssemblyFoldersEx}"
+"// [assembly: AssemblyVersion(""1.0."
+"1433"")"
+"1[[Microsoft.Build.Shared.AssemblyNameExtension, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"
+"1[[Microsoft.Build.Shared.AssemblyNameExtension, Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'"
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List"
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]][]"
+"2kpX"""
+"8n[hQv"""
+"<Project ToolsVersion=""4.0"" DefaultTargets=""Build"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<assembly xmlns=""urn:schemas-microsoft-com:asm.v1"" manifestVersion=""1.0"">"
+"<startup><supportedRuntime version=""v2.0.50727""/></startup></configuration>"
+"@gk"""
+"AnyCPU' "">"
+"AssemblyInfo.cs"" />"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.CSharp.targets"" />"
+"Microsoft.Common.props"" Condition=""Exists('$(MSBuildExtensionsPath)"
+"Microsoft.Common.props')"" />"
+"N2kpX"""
+"NR2_"""
+"NSystem.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""SharpAVKB"", ""SharpAVKB"
+"R@gk"""
+"S-U"")"
+"SNewtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed"
+"S[r@gk"""
+"SharpAVKB.csproj"", ""{99DDC600-3E6F-435E-89DF-74439FA68061}"""
+"V3"")"
+"XN[hQ"""
+"[KQ"""
+"[ZSX"""
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""Copyright "
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")]"
+"[assembly: AssemblyProduct(""SharpAVKB"")]"
+"[assembly: AssemblyTitle(""SharpAVKB"")]"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0.0.0"")]"
+"[assembly: Guid(""121a56be-6897-4f54-8b01-3df54fb62414"")]"
+"[eOb"""
+"[hQ"""
+"[hQr"""
+"]Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"_o@gk"""
+"dMicrosoft.VisualStudio.CommonIDE, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"f2kpX"""
+"f@gk"""
+"kSX"""
+"kyrh_"""
+"l@gk"""
+"r4x"""
+"rAuthor: Uknow"")"
+"sKb"""
+"skSX"""
+"v,Pe}Ne c0iZ"
+"xml version=""1.0"" encoding=""UTF-8"" standalone=""yes"""
+"xml version=""1.0"" encoding=""utf-8"""
+"xml version=""1.0"""
+$(MSBuildToolsVersion)
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+$121a56be-6897-4f54-8b01-3df54fb62414
+(Wkb1
+(glKQ
+)gQtNsErX
+.Microsoft.Build.Shared.AssemblyNameExtension[]
+.NET Framework 4
+.NETFramework
+.NETFramework v2.0
+.NETFramework v3.5
+.ctor
+.dll
+.exe
+.rsrc
+.text
+.winmd
+//      
+/LinkInfo
+/names
+/src/files/d:
+/src/headerblock
+06000001
+06000002
+06000003
+06000005
+06000006
+1.0.0.0
+1[[System.Collections.Generic.KeyValuePair
+26C92F12
+2CBFFAD2
+3System.Resources.Tools.StronglyTypedResourceBuilder
+4.0.0.0
+5System.Configuration.Assemblies.AssemblyHashAlgorithm
+8Microsoft.VisualStudio.Build.ComInteropWrapper.RarInputs
+8})3
+</OutputPath>
+</Project>
+</assembly>
+</param>
+<>g__initLocal0
+<Module>
+<System.Configuration.Assemblies.AssemblyVersionCompatibility
+<configuration>
+> SharpAVKB.exe
+>WE H
+>d )
+@.reloc
+@RE H
+@gk-
+@gkoN
+@gkoNvsQ
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+Assembly
+AssemblyCompanyAttribute
+AssemblyConfigurationAttribute
+AssemblyCopyrightAttribute
+AssemblyCultureAttribute
+AssemblyDescriptionAttribute
+AssemblyFileVersionAttribute
+AssemblyProductAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+AssemblyVersionAttribute
+Author: Uknow
+BSJB
+B[t@
+Blob
+B{Registry:Software
+CS$0$0000
+CS$0$0001
+CS$0$0002
+CS$1$0000
+CS$4$0000
+CS$4$0001
+CS$4$0002
+CS$5$0000
+CS$5$0001
+CS$5$0002
+CS$5$0003
+Capacity
+Children
+Close
+ComVisibleAttribute
+Comparer
+CompilationRelaxationsAttribute
+CompilerGeneratedAttribute
+Concat
+Console
+ConsoleApplication3
+Contains
+Copyright 
+Culture
+CultureInfo
+Debug
+DebuggableAttribute
+DebuggerNonUserCodeAttribute
+DebuggingModes
+DesignTimeResolveAssemblyReferences.cache
+Desktop
+Dictionary
+Dispose
+E'mPo<
+E'mPo<]
+EditorBrowsableAttribute
+EditorBrowsableState
+EndGlobal
+EndGlobalSection
+EndProject
+Enumerator
+FileState
+Framework
+FrameworkDisplayName
+Full
+GAC_MSIL
+GUID
+GeneratedCodeAttribute
+GetEnumerator
+GetTypeFromHandle
+Global
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+GuidAttribute
+HashCodeProvider
+HashSize
+HideSolutionNode = FALSE
+IDisposable
+IEnumerator
+IndexOf
+I}b2
+JEnumerable
+JObject
+JProperty
+JToken
+Keys
+L!This program cannot be run in DOS mode.
+List
+LoadFactor
+Main
+Match
+MatchCollection
+Matches
+Microsoft
+Microsoft C/C
+Microsoft.Build.Shared.AssemblyNameComparer
+Microsoft.Build.Tasks.SystemState
+Microsoft.CSharp
+Microsoft.CSharp.dll
+Microsoft.NET
+Microsoft.Net
+MoveNext
+Newtonsoft.Json
+Newtonsoft.Json.Linq
+Newtonsoft.Json.dll
+Newtonsoft.Json.dll</HintPath>
+Newtonsoft.Json.pdb
+Newtonsoft.Json.xml
+Object
+Parse
+Process
+ProcessStartInfo
+Program
+Program Files (x86)
+Program.cs
+Properties.Resources.Designer.cs
+Properties.Resources.Designer.cs.dll
+QU2J
+RSA1
+RSDS
+RSDS$5
+ReadToEnd
+Reference Assemblies
+ReferenceEquals
+Regex
+RegexOptions
+Release
+Replace
+ResourceManager
+Resources
+RunCmd
+RuntimeCompatibilityAttribute
+RuntimeTypeHandle
+SharpAVKB
+SharpAVKB.Cmd
+SharpAVKB.Program
+SharpAVKB.Properties
+SharpAVKB.csprojResolveAssemblyReference.cache
+SharpAVKB.exe
+SharpAVKB.exe.config
+SharpAVKB.pdb
+Start
+StreamReader
+StreamWriter
+String
+Strings
+System
+System.CodeDom.Compiler
+System.Collections
+System.Collections.Generic
+System.Collections.Generic.HashSet
+System.Collections.Generic.KeyValuePair
+System.Collections.Generic.List
+System.Collections.Hashtable
+System.Collections.IComparer$System.Collections.IHashCodeProvider
+System.ComponentModel
+System.Core
+System.Core.dll
+System.Data
+System.Data.DataSetExtensions.dll
+System.Data.dll
+System.Diagnostics
+System.Globalization
+System.IO
+System.Reflection
+System.Reflection.AssemblyName
+System.Reflection.AssemblyNameFlags
+System.Reflection.StrongNameKeyPair<System.Configuration.Assemblies.AssemblyVersionCompatibility
+System.Resources
+System.Runtime.CompilerServices
+System.Runtime.InteropServices
+System.Runtime.Serialization
+System.Runtime.Serialization.dll
+System.Runtime.Versioning
+System.Text.RegularExpressions
+System.Version
+System.Version5System.Configuration.Assemblies.AssemblyHashAlgorithm5System.Configuration.Assemblies.AssemblyHashAlgorithm
+System.Windows.Forms.dll
+System.Xml
+System.Xml.Linq
+System.Xml.Linq.dll
+System.Xml.dll
+System.dll
+TRACE</DefineConstants>
+TargetFrameworkAttribute
+TextReader
+TextWriter
+ToString
+Type
+UMicrosoft.Win32
+UNewtonsoft.Json.Linq
+USystem
+USystem.Collections.Generic
+USystem.Diagnostics
+USystem.Text
+USystem.Text.RegularExpressions
+Usage: SharpAVKB.exe -AV
+Users
+Values
+Version
+WINDOWS
+Wfile:///C:/Users/HP/Desktop/ConsoleApplication3/ConsoleApplication3/Newtonsoft.Json.dll
+Windows
+WrapNonExceptionThrows
+WriteLine
+X[(W@goOo
+X[(We
+[ZSXV
+[assembly: ComVisible(false)]
+[hQkSX-
+[te'
+_Build
+_CodeBase
+_CorDllMain
+_CorExeMain
+_CultureInfo
+_Entry_Point
+_Flags
+_HashAlgorithm
+_HashAlgorithmForControl
+_HashForControl
+_Major
+_Minor
+_Name
+_PublicKey
+_PublicKeyToken
+_Revision
+_StrongNameKeyPair
+_Version
+_VersionCompatibility
+_items
+_size
+_version
+allowedAssemblyExtensions
+app.config
+appConfigFile
+args
+asAssemblyName
+asString
+assembly
+assemblyName
+av_list
+c_test
+candidateAssemblyFiles
+child
+considerRetargetableFlag
+dependencies
+execute-assembly /path/to/SharpAVKB.exe
+fileState
+frameworkName
+fullFrameworkAssemblyTables
+fullFrameworkFolders
+fullTargetFrameworkSubsetNames$ignoreDefaultInstalledAssemblyTables
+gdtarSearchPaths
+get_Assembly
+get_Culture
+get_Current
+get_Item
+get_Name
+get_ResourceManager
+get_StandardInput
+get_StandardOutput
+get_StartInfo
+get_Value
+http://get-av.se7ensec.cn/
+https://github.com/Ch1ngg/GetWindowsKernelExploitsKB
+ignoreDefaultInstalledAssemblySubsetTables
+immutable
+installedAssemblySubsetTables latestTargetFrameworkDirectories
+installedAssemblyTables
+isSimpleName$hasProcessorArchitectureInFusionName
+item
+kSX-
+kb_exp
+kb_num
+lastModified
+mscoree.dll
+mscorlib
+mscorlib.dll
+msil
+n@dLB
+namespace SharpAVKB
+op_Equality
+outStr
+p[hQ
+pdtarSearchPaths
+prF 
+proc
+profileName
+program.cs
+property1
+r========== SharpAVKB --> GetWindowsAnti-VirusSoftware ==========
+r========== SharpAVKB --> GetWindowsKernelExploitsKB ==========
+registrySearchPath
+remappedFrom
+resourceCulture
+resourceMan
+resultStr
+runtimeVersion
+scatterFiles
+set_CreateNoWindow
+set_Culture
+set_FileName
+set_RedirectStandardError
+set_RedirectStandardInput
+set_RedirectStandardOutput
+set_UseShellExecute
+sharpavkb
+stateFile
+sys_kb
+targetFrameworkDirectories
+targetFrameworkMoniker!targetFrameworkMonikerDisplayName
+targetFrameworkSubsets
+targetFrameworkVersion
+targetProcessorArchitecture
+targetedRuntimeVersion
+uk2kpX-
+ukKQ
+using Microsoft.Win32
+using System
+using System.Collections.Generic
+using System.Diagnostics
+using System.Reflection
+using System.Runtime.CompilerServices
+using System.Runtime.InteropServices
+using System.Text
+using System.Text.RegularExpressions
+v2.0
+v2.0.50727
+v3.0
+v3.5
+v4.0
+v4.0.30319
+v4.0_4.0.0.0__b03f5f7f11d50a3a
+vLrV
+value
+value__
+vscode
+{99DDC600-3E6F-435E-89DF-74439FA68061}.Debug
+{99DDC600-3E6F-435E-89DF-74439FA68061}.Release
+{CandidateAssemblyFiles}
+{HintPathFromItem}
+{RawFileName}
+{TargetFrameworkDirectory}

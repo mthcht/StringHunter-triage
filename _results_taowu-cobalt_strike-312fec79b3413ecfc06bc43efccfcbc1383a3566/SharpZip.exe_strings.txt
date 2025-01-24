@@ -1,0 +1,92 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+*BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+List`1
+<Module>
+System.IO
+mscorlib
+System.Collections.Generic
+ZipArchiveMode
+get_Message
+IDisposable
+CreateEntryFromFile
+ZipFile
+Console
+destinationArchiveFileName
+GetFileName
+sourceDirectoryName
+WriteLine
+Dispose
+GuidAttribute
+DebuggableAttribute
+ComVisibleAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+AssemblyFileVersionAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+ZipArchive
+SharpZip.exe
+System.Runtime.Versioning
+Path
+zipnamepath
+Program
+System.IO.Compression.FileSystem
+Open
+Main
+HasExtension
+System.IO.Compression
+System.Reflection
+Exception
+SharpZip
+GetEnumerator
+.ctor
+System.Diagnostics
+System.Runtime.InteropServices
+System.Runtime.CompilerServices
+DebuggingModes
+Zipfiles
+args
+ZipFileExtensions
+Object
+get_Current
+filepathlist
+MoveNext
+CreateFromDirectory
+ZipArchiveEntry
+WrapNonExceptionThrows
+SharpZip
+Copyright 
+  2020
+$bcef7be5-837d-4eef-9dc4-35042c320702
+1.0.0.0
+.NETFramework,Version=v4.5
+FrameworkDisplayName
+.NET Framework 4.5
+RSDS
+D:\vscode\c_test\SharpZip\SharpZip\obj\Release\SharpZip.pdb
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

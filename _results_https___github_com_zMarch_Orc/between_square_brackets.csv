@@ -1,0 +1,137 @@
+"[ ! ""$correctoutput"" = ""$output"" "
+"[ ! -d ""$2"" "
+"[ ! -d ""$HOME"" "
+"[ ! -d ""$OUTP"" "
+"[ ! -r ""$2"" "
+"[ ! -r ""$ENV"" "
+"[ ! -r ""$ORC_ECHO_FILE"" "
+"[ ! -r ""$base"" "
+"[ ! -w ""$base"" "
+"[ ! -x ""$base"" "
+"[ ! -x ""$base/.q/.t"" "
+"[ ""$(ss --all --sctp 2> /dev/null | wc -l)"" -gt 1 "
+"[ ""$1"" != ""$(uname -s)"" "
+"[ ""$1"" -gt 31 "
+"[ ""$1"" -lt 1 "
+"[ ""$1"" = ""all"" "
+"[ ""$1"" = 'background' "
+"[ ""$2"" = ""other"" "
+"[ ""$EUID"" = ""0"" "
+"[ ""$HOME"" = """" "
+"[ ""$HTTPS_PROXY"" != ""$https_proxy"" "
+"[ ""$HTTP_PROXY"" != ""$http_proxy"" "
+"[ ""$OWNER"" = """" "
+"[ ""$SSHD_PID"" = """" "
+"[ ""$counter"" -gt 0 "
+"[ ""$first"" -gt ""$2"" "
+"[ ""$first"" -lt ""$2"" "
+"[ ""$first"" -lt ""$3"" "
+"[ ""$interpreter"" = 'fallback' "
+"[ ""$interpreter"" = 'perl' "
+"[ ""$n_notfound"" -eq 1 "
+"[ ""$n_notfound"" -gt 0 "
+"[ ""$value"" -eq ""$lastvalue"" "
+"[ ""$value"" = '' "
+"[ ""/dev/pts/$mypts"" = ""$mytty"" "
+"[ $(echo ""$output""|wc -l) -eq 1 "
+"[ $(echo ""$output""|wc -l) -ge 1 "
+"[ $(echo ""$output""|wc -l) -ge 10 "
+"[ $(echo ""$output""|wc -l) -ge 3 "
+"[ $(echo ""$output""|wc -l) -ge 5 "
+"[ $(echo ""$output""|wc -w) -ge 50 "
+"[ -O ""/root"" "
+"[ -S ""/var/run/docker.sock"" "
+"[ -d ""$base/.q"" "
+"[ -d ""$dir"" "
+"[ -d ""$i"" "
+"[ -f ""$file"" "
+"[ -n ""$BASH"" "
+"[ -n ""$HTTPS_PROXY"" "
+"[ -n ""$HTTP_PROXY"" "
+"[ -n ""$error"" "
+"[ -n ""$http_proxy"" "
+"[ -n ""$https_proxy"" "
+"[ -n ""$output"" "
+"[ -r ""$1"" "
+"[ -r ""$ENV"" "
+"[ -r ""$i"" "
+"[ -r ""${BASH_SOURCE[0"
+"[ -w ""$i"" "
+"[ -w ""/var/run/docker.sock"" "
+"[ -x ""$i"" "
+"[ -z ""$HTTPS_PROXY"" "
+"[ -z ""$ORC_ARCHIVE_FILE"" "
+"[ -z ""$backup"" "
+"[ -z ""$head"" "
+"[ -z ""$https_proxy"" "
+"[ -z ""$urls"" "
+"[""our_pty"""
+"[name, "
+[ ! -f ./o.rc 
+[ ! -f ./shunit2/shunit2 
+[ $# -eq 1 
+[ $# -lt 1 
+[ $# -lt 2 
+[ $# -ne 0 
+[ $# -ne 1 
+[ $# -ne 2 
+[ $# -ne 3 
+[ $(wc -l < sfiles) -ge 5 
+[ $TTT -eq 0 
+[ $output -ge 0 
+[ -d $HOME 
+[ -d $output 
+[ -d $t 
+[ -d 'shunit2' 
+[ -e test_file1_for_srm 
+[ -e test_file2_for_srm 
+[ -e test_file_for_srm 
+[ -f $ORC_ECHO_FILE 
+[ -f 'testA.err' 
+[ -f 'testA.txt' 
+[ -f /etc/machine-id 
+[ -f _test_destination/_test_source_f1 
+[ -f _test_destination/_test_source_f2 
+[ -f _test_destination/_test_source_f3 
+[ -f _test_destination/_test_source_ff 
+[ -f sfiles 
+[![Build Status
+[$1
+[$6
+[$NF
+[*
+[0
+[0-9
+[0-9\.
+[0-9\.*
+[0:2
+[1
+[2
+[3
+[3:
+[4
+[7
+[: 
+[A-F0-9
+[PTS NUMBER
+[ShellCheck
+[Travis CI
+[Wiki
+[YOUR KEY HERE
+[\/ 
+[^'
+[^0-9
+[^\/
+[a-f0-9
+[background
+[file
+[full URI
+[host
+[i
+[normal arguments
+[password
+[platform.machine()
+[program + args
+[program arguments
+[shunit2
+[string to grep out

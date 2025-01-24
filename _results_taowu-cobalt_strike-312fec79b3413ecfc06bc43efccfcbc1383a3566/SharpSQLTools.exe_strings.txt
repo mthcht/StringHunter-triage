@@ -1,0 +1,95 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+*BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+<Module>
+SharpSQLTools.exe
+Program
+SharpSQLTools
+mscorlib
+System
+Object
+Main
+exec
+.ctor
+args
+Server
+User
+Password
+Datebase
+System.Runtime.Versioning
+TargetFrameworkAttribute
+System.Reflection
+AssemblyTitleAttribute
+AssemblyDescriptionAttribute
+AssemblyConfigurationAttribute
+AssemblyCompanyAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyTrademarkAttribute
+AssemblyCultureAttribute
+System.Runtime.InteropServices
+ComVisibleAttribute
+GuidAttribute
+AssemblyVersionAttribute
+AssemblyFileVersionAttribute
+System.Diagnostics
+DebuggableAttribute
+DebuggingModes
+System.Runtime.CompilerServices
+CompilationRelaxationsAttribute
+RuntimeCompatibilityAttribute
+Console
+WriteLine
+String
+op_Equality
+Concat
+System.Data
+System.Data.SqlClient
+SqlConnection
+System.Data.Common
+DbConnection
+Open
+SqlCommand
+set_Connection
+DbCommand
+set_CommandText
+CommandType
+set_CommandType
+SqlDataReader
+ExecuteReader
+DbDataReader
+get_Item
+Read
+Close
+Exception
+get_Message
+.NETFramework,Version=v4.0
+FrameworkDisplayName
+.NET Framework 4
+SharpSQLTools
+Copyright 
+  2019
+$1a54c5fe-ffa6-43f1-a5eb-7a1897181076
+1.0.0.0
+WrapNonExceptionThrows
+RSDS
+d:\vscode\c_test\SharpSQLTools\SharpSQLTools\obj\Debug\SharpSQLTools.pdb
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

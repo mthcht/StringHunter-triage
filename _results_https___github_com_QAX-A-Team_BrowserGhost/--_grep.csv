@@ -1,0 +1,64 @@
+ --
+ --    sqlite3GlobalConfig.m.xFree(p);
+ --  Calls a function to dispose of output.
+ --  How to implement this?
+ --  Similar to sprintf.  Writes output to memory
+ --  sizeof( BtCursor );
+ -- && pMem.z != pMem.zMalloc )
+ -- 1
+ -- 2
+ -- 3
+ -- 4
+ -- Convert PENDING_BYTE_PAGE to inline
+ -- Convert back to inline for speed
+ -- Convert to inline for speed
+ -- Determine if the following Assert is needed under c#
+ -- EXISTS subquery
+ -- Fix This
+ -- IN operator with list on right-hand side
+ -- IN operator with subquery on the right
+ -- Needed for C# */
+ -- Not Running under NT
+ -- Replace allocation with individual Dims
+ -- What do we want to do about this routine?
+ -- always exists under C#
+ -- client
+ -- func_c
+ -- overloads ---------------------------------------
+ -- so only minor performance hit
+ -- string zExtra;              /* Extra memory used for etTCLESCAPE conversions */
+ -- subquery
+ -- which tables to scan */
+ ---------          ----------
+ ------------    -------------------------------------------
+ -------------  -----------------  --------------  -----------------
+ --------------     ---------------    ---------------
+ ---------------  ----------   ----------------------------------------
+ -----------------     --------------     ------------------------------
+ -----------------------
+ ----------------------------
+ ------------------------------
+ --------------------------------
+ ---------------------------------------
+ --------------------------------------------------------
+ ----------------------------------------------------------------
+ ------------------------------------------------------------------------
+ --;
+ -->
+ --aOp[pc + 1] ) > 0 ) nx = 0;
+ --bufpt )] = '0';
+ --bufpt )] = '0';                             /* Zero pad */
+ --n; }// z[n - 1] = '\0'; n--; }
+ --pMem.z = pMem.zMalloc;
+ --pOther.nChild ) == 0 )
+" --                      fprintf(yyTraceFILE,""%sDiscard input token %s\n"","
+" --            fprintf(yyTraceFILE, ""%sSyntax Error!\n"", yyTracePrompt);"
+" --        fprintf(yyTraceFILE, ""%sFail!\n"", yyTracePrompt);"
+" --  No output, but returns the number of characters"
+" -- *va_arg(ap, sqlite3_pcache_methods*) = sqlite3GlobalConfig.pcache;"
+" -- Need workaround for C#, since inline macros don't exist"
+" -- Works like sprintf, but has an extra argument"
+" ---"");"
+" --//va_arg(ap, sqlite3_mem_methods*) =  sqlite3GlobalConfig.m;"
+" --pNew =  sqlite3GlobalConfig.m.xRealloc(ref pOld, nBytes);"
+" --sqlite3GlobalConfig.pcache = (sqlite3_pcache_methods)va_arg(ap, ""sqlite3_pcache_methods"");"

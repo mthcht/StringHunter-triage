@@ -1,0 +1,44 @@
+                # File signature is the first two bytes:w
+        # Execute a binary program
+        # Execute a script
+    # Copy data from server to anonymous file"
+    # Create an anonymous file with name '' and close-on-exec (=1) flag"
+    # Figure out: Is it a binary file or script file?"
+    # Find the system call number of memfd_create on the current machine"
+    # The name of the anonymous file in the process memory
+    # URL to load the binary program or the script file
+    # optional arguments to pass thru the loaded program
+    # python 2 version
+    # python 3 version
+"
+"    # ""(ord('#'),'#')"" is used to support python3 and python2."
+"    # A script file must start with ""#!"""
+"    # Name of the program to used, because there is no filename"
+"# 2) Name of program to use for execution,"
+"# A script file must start with the two characters ""#!""."
+"# Typical this script with ""PYTHONHTTPSVERIFY=0 python"" to switch of"
+#
+#    But the name must be given in each case to use the same
+#    The name is only used to start the program.
+#    command line format.
+# -*- coding: utf-8 -*-
+# 1) URL to load the binary program or script file..
+# 3) optional: arguments passed thru to the program.
+# A binary program must be compiled for the architecture of
+# Execute the program or the script without touching the
+# In-Memory-Only ELF Execution (Without tmpfs)
+# Load binary program or script file from web server."
+# Multiarch Architecture Specifiers
+# Needs Linux kernel >= 3.17
+# Script arguments:
+# Stores the file in the process memory /proc/id.
+# System call number of memfd_create depends on the machine"
+# System call table
+# Uses http or https protocol.
+# file to a storage drive.
+# https://magisterquis.github.io/2018/03/31/in-memory-only-elf-execution.html
+# https://wiki.debian.org/Multiarch/Tuples
+# https://www.lurklurk.org/syscalls.html
+# the executing system.
+# the https certificate check.
+#!/usr/bin/env python3

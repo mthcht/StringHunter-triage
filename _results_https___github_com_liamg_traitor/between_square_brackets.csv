@@ -1,0 +1,734 @@
+"[ ""$?"" = 0 "
+"[ ""$GOOS"" == ""darwin"" "
+"[ ""$GOOS"" == ""illumos"" "
+"[ ""$GOOSARCH"" == ""aix_ppc64"" "
+"[ ""$funcstack[1"
+"[ ""${comp:0:endIndex}"" = ""$activeHelpMarker"" "
+"[ ""${comp[1,$endIndex"
+"[ ""${directive}"" = ""${out}"" "
+"[ ""${lastChar}"" != ""="" "
+"[ ""${lastChar}"" = """" "
+"[ ""${lastLine[1"
+"[ -n ""$comp"" "
+"[ -n ""$mkasm"" "
+"[ -n ""$mkerrors"" "
+"[ -n ""$mksyscall"" "
+"[ -n ""$mksysctl"" "
+"[ -n ""$mksysnum"" "
+"[ -n ""$mktypes"" "
+"[ -n ""$subdir"" "
+"[ -n ""${ZSH_VERSION:-}"" "
+"[ -n ""${flagvalue}"" "
+"[ -n ""${words[ $((c+1)) "
+"[ -z ""${cur}"" "
+"["" + buf.String() + """
+"["" + out + """
+"["" + str + """
+"["" + strings.Join(out, "","") + """
+"["" + strings.TrimSpace(buf.String()) + """
+"[""$key"""
+"[""+f.DefValue+"""
+"[""/pwn%s"", ""backdoor"", ""install"", ""/pwn%s"""
+"[""USER=go"", ""PWD=/tmp"""
+"[""ls"", ""-l"""
+"[$startIndex,-1"
+"[1,-$suffix"
+"[1,CURRENT"
+"[2,-1"
+"[=\""%s\"""
+"[@=/:.,"
+"[[ ""$GOLANG_SYS_BUILD"" != ""docker"" "
+"[[ ""$GOOS"" = ""aix"" "
+"[[ ""$GOOS"" = ""linux"" "
+"[[ ""$GOOS"" = ""solaris"" "
+"[[ ""$comp"" == *$tab* "
+"[[ ""$comp"" == *${char}* && ""$COMP_WORDBREAKS"" == *${char}* "
+"[[ ""${#COMPREPLY[@"
+"[[ ""${COMPREPLY[0"
+"[[ ""${completions[*"
+"[[ ""${cur}"" == -*=* "
+"[[ ""${lastParam}"" =~ '-.*=' "
+"[[ ""${words[c"
+"[[ $(type -t compopt) = ""builtin"" "
+"[[ $comp == ""$cur""* "
+"[[ $line =~ DEFINE_KNOWN_FOLDER\((FOLDERID_[^,"
+"[[ $w = ""$word"" "
+"[[ ${cur} != ""${words[cword"
+"[[ -n ""${has_completion_function}"" "
+"[[ -z ""${BASH_VERSION:-}"" || ""${BASH_VERSINFO[0"
+"[[ -z ""${flag_parsing_disabled}"" "
+"[[ -z ${errors[""$key"""
+"[]EXPLICIT_ACCESS, auditEntries ["
+"[]Iovec, remoteIov ["
+"[]_C_int{0, 3}, p, &n, &bytes[0"
+"[]bool, name string, value ["
+"[]bool, name, shorthand string, value ["
+"[]bool, p *["
+"[]bool, usage string) *["
+"[]byte) (*Cmsghdr, ["
+"[]byte) (string, ["
+"[]byte) (uint16, ["
+"[]byte) (uint32, ["
+"[]byte) (uint64, ["
+"[]byte) (uint8, ["
+"[]byte, absoluteSDSize)[0"
+"[]byte, daclSize)[0"
+"[]byte, data ["
+"[]byte, flags int32, from *RawSockaddrAny, fromlen *int32) (n int32, err error) [failretval==-1"
+"[]byte, flags int32, to unsafe.Pointer, tolen int32) (err error) [failretval==socket_error"
+"[]byte, groupSize)[0"
+"[]byte, max int, names ["
+"[]byte, name string, value ["
+"[]byte, name, shorthand string, value ["
+"[]byte, old ["
+"[]byte, ownerSize)[0"
+"[]byte, p *["
+"[]byte, pasteActive bool) (rune, ["
+"[]byte, retData ["
+"[]byte, s string) ["
+"[]byte, saclSize)[0"
+"[]byte, selfRelativeSDSize)[0"
+"[]byte, usage string) *["
+"[]byte, v uint16) ["
+"[]byte, v uint32) ["
+"[]byte, v uint64) ["
+"[]byte, v uint8) ["
+"[]float32, name string, value ["
+"[]float32, name, shorthand string, value ["
+"[]float32, p *["
+"[]float32, usage string) *["
+"[]float64, name string, value ["
+"[]float64, name, shorthand string, value ["
+"[]float64, p *["
+"[]float64, usage string) *["
+"[]int, name string, value ["
+"[]int, name, shorthand string, value ["
+"[]int, p *["
+"[]int, usage string) *["
+"[]int32, name string, value ["
+"[]int32, name, shorthand string, value ["
+"[]int32, p *["
+"[]int32, usage string) *["
+"[]int64, name string, value ["
+"[]int64, name, shorthand string, value ["
+"[]int64, p *["
+"[]int64, usage string) *["
+"[]net.IP, name string, value ["
+"[]net.IP, name, shorthand string, value ["
+"[]net.IP, p *["
+"[]net.IP, usage string) *["
+"[]rune(newLine), utf8.RuneCount(["
+"[]string) (*Command, ["
+"[]string, activeHelpStr string) ["
+"[]string, args ["
+"[]string, c *Command) ["
+"[]string, directive ShellCompDirective) func(cmd *Command, args ["
+"[]string, envv ["
+"[]string, fn parseFunc) (a ["
+"[]string, fn parseFunc) (outShorts string, outArgs ["
+"[]string, inputs ["
+"[]string, lastArg string) (*pflag.Flag, ["
+"[]string, name string, value ["
+"[]string, name, shorthand string, value ["
+"[]string, p *["
+"[]string, toComplete string) (["
+"[]string, usage string) *["
+"[]string, x string) ["
+"[]string{""-e"", ""require(\""child_process\"").spawn(\""/bin/sh\"", {stdio: [0, 1, 2"
+"[]string{fmt.Sprintf(""__%[1"
+"[]string{})` and similar used to turn on file completion|File completion by default; `cmd.MarkFlagFilename(flag, ["
+"[]time.Duration, name string, value ["
+"[]time.Duration, name, shorthand string, value ["
+"[]time.Duration, p *["
+"[]time.Duration, usage string) *["
+"[]uint, name string, value ["
+"[]uint, name, shorthand string, value ["
+"[]uint, p *["
+"[]uint, usage string) *["
+"[^,"
+"[{""Type"":""bind"",""Source"":""/"",""Target"": ""/pwn""}"
+[ 	
+[ 
+[ $((c+1)) 
+[ $((directive & shellCompDirectiveError)) -ne 0 
+[ $((directive & shellCompDirectiveFilterDirs)) -ne 0 
+[ $((directive & shellCompDirectiveFilterFileExt)) -ne 0 
+[ $((directive & shellCompDirectiveNoFileComp)) -eq 0 
+[ $((directive & shellCompDirectiveNoFileComp)) -ne 0 
+[ $((directive & shellCompDirectiveNoSpace)) -ne 0 
+[ $hasActiveHelp -eq 1 
+[ $maxdesclength -gt 0 
+[ ${#COMPREPLY[*
+[ ${#activeHelp} -ne 0 
+[ ${#completions} -ne 0 
+[ ${#desc} -gt $maxdesclength 
+[ ${#must_have_one_flag[@
+[ ${filter[1
+[ \t
+[![
+[![Build Status
+[![Go Reference
+[![Go Report Card
+[![GoDoc
+[![Slack
+[!failretval
+[#45
+[#53
+[#73
+[#85
+[#87
+[#88
+[#cobra Slack channel
+[#cobra slack channel
+[$((${#words[@
+[$idx
+[${#nouns[@
+[${flagname}
+[${index}
+[${words[c
+[%q
+[%v
+[&fCookie.cookie
+[' && b[2
+[(-o|--output=)json|yaml|template|...
+[(1 << 27) - 1
+[(1 << 28) - 1
+[(1 << 31) - 1
+[*
+[*byte
+[*interface{}
+[*pflag.Flag
+[-1
+[-1..1
+[-F file | -D dir
+[-f format
+[-n
+[...
+[._
+[0
+[0 : n-1
+[0 : n/siz
+[0-9
+[0-9A-Fa-f
+[0-9A-Za-z\-~
+[0-9\.\-
+[0-9_
+[0-9a-fA-F
+[0:
+[0:4
+[0:i
+[0:n
+[0:s
+[0x1e
+[0xffff
+[1
+[1 : len(sval)-1
+[1 << 30
+[1..-2
+[10
+[100
+[1012
+[1023
+[1024
+[104
+[108
+[10:
+[11
+[112
+[116
+[118
+[12
+[120
+[122
+[128
+[129
+[13
+[14
+[14:
+[14:18
+[14:i
+[15
+[16
+[160
+[17
+[18
+[19
+[19:23
+[1:
+[2
+[2*i:2*i+2
+[2..-1
+[20
+[2048
+[22
+[23
+[236
+[24
+[244
+[24:
+[256
+[257
+[26
+[28
+[2:
+[2:6
+[2:index
+[3
+[30
+[31
+[32
+[32-bit
+[336
+[34
+[36
+[36 + 9
+[38
+[3:
+[4
+[40
+[4096
+[44
+[45
+[46
+[49
+[4:
+[4:6
+[5
+[512
+[568
+[568vq
+[6
+[63
+[64
+[65
+[68
+[6:
+[6:8
+[7
+[72
+[8
+[80
+[8192
+[88
+[8:
+[8:10
+[8:14
+[9
+[90
+[92
+[928
+[96
+[9:
+[9:13
+[:
+[:0
+[:1
+[:2
+[:4
+[:4095
+[:6
+[:8
+[:9
+[:SizeofSockaddrInet4
+[:argc
+[:chars-1
+[:clp.Len
+[:d.Namlen
+[:datap.Len
+[:g.GroupCount:g.GroupCount
+[:i
+[:index
+[:j
+[:l
+[:len(aclBytes):len(aclBytes)
+[:len(args)-1
+[:len(bs)-1
+[:len(buf)-1
+[:len(ret)-1
+[:len(t.line)+1
+[:len(t.line)-n
+[:length-1
+[:n
+[:n+len(t.remainder)
+[:n/SizeofKinfoProc
+[:n:n
+[:needspace
+[:newPos
+[:nlPos
+[:nulli
+[:p.PrivilegeCount:p.PrivilegeCount
+[:pp.Service_name_len
+[:reclen
+[:reqSize
+[:sidx
+[:size
+[:srcDirent.Namlen
+[:t.pos
+[:todo
+[:vallen-1
+[:w
+[:wcslen(bufW)
+[</blue><red>%s</red><blue>
+[</blue><yellow>+</yellow><blue>
+[=%s
+[@
+[A-Z
+[A-Z0-9
+[A-Z0-9_
+[A-Z_
+[A-Za-z\-~
+[ABCD
+[Active Help
+[Arduino CLI
+[BIS
+[Bash Completions
+[BashCompCustom
+[BashCompFilenameExt
+[BashCompOneRequiredFlag
+[BashCompSubdirsInDir
+[Bleve
+[CFS
+[CNPFP
+[CNPFPL
+[COMMANDS
+[CTL_MAXNAME + 2
+[CockroachDB
+[Console 58
+[Contribution Guidelines
+[Contributor License Agreement
+[Cosmos SDK
+[Datree
+[Debug
+[Delve
+[Demo
+[Docker (distribution)
+[ERRMAX
+[ES
+[Error
+[Etcd
+[Example screenshot
+[GS
+[GTFOBins
+[Gardener
+[Giant Swarm's gsctl
+[Git Bump
+[GitHub Labeler
+[Github CLI
+[GoDoc
+[GoReleaser
+[Golangci-lint
+[GopherJS
+[Hacker News thread
+[Helm
+[Hugo
+[IFNAMSIZ
+[IO
+[Infracost
+[Intigriti Bug Bytes #120
+[Istio
+[Kool
+[Kubectl docs
+[Kubernetes
+[Kubescape
+[L
+[LICENSE.txt
+[LINE_LEN
+[LP
+[Levenshtein distance
+[Linkerd
+[MAXLEN_IFDESCR
+[MAXLEN_PHYSADDR
+[MAX_ADAPTER_ADDRESS_LENGTH
+[MAX_ADAPTER_DESCRIPTION_LENGTH + 4
+[MAX_ADAPTER_NAME_LENGTH + 4
+[MAX_CLASS_NAME_LEN
+[MAX_INTERFACE_NAME_LEN
+[MAX_MODULE_NAME32 + 1
+[MAX_PATH
+[MAX_PATH - 1
+[MAX_PROTOCOL_CHAIN
+[Mattermost-server
+[MaxHostNameLen
+[Mercure
+[Meroxa CLI
+[Metal Stack CLI
+[Moby (former Docker)
+[Moldy
+[More about cobra.Command
+[Multi-gitter
+[NAME
+[Nanobox
+[Nanopack
+[NormalizedName
+[NormalizedName(name)
+[OPTIONS
+[OpenShift
+[Ory Hydra
+[Ory Kratos
+[P
+[PathMax
+[Pixie
+[Polygon Edge
+[Pouch
+[ProjectAtomic (enterprise)
+[Prototool
+[Pulumi
+[QRcp
+[RFC 4122
+[Random
+[Rclone
+[SD
+[SP_MAX_MACHINENAME_LENGTH
+[Scaleway CLI
+[SemVer
+[Semantic Versioning
+[Shell Completions
+[SizeofPtr
+[SizeofPtr:
+[Skaffold
+[System.Management.Automation.CompletionResult
+[Tanzu Community Edition
+[Tanzu Framework
+[Tendermint
+[The Cobra Generator README
+[The Cobra User Guide
+[The Cobra-CLI Generator README
+[This list
+[Twitch CLI
+[UNIX_PATH_MAX
+[URL
+[Un
+[UpCloud CLI (`upctl`)
+[WSADESCRIPTION_LEN + 1
+[WSAPROTOCOL_LEN + 1
+[WSASYS_STATUS_LEN + 1
+[Werf
+[Zsh Completions
+[[ $((--idx)) -ge 0 
+[[ $? -eq 0 
+[[ $c -eq $cword 
+[[ $c -eq 0 
+[[ $c -ge $cword 
+[[ $cur == *=* 
+[[ $key == FACILITY_* || $key == NO_ERROR 
+[[ $last_vtype == Handle && $value == NO_ERROR 
+[[ $last_vtype == syscall.Errno && $value == NO_ERROR 
+[[ $line =~ ^#define\ (STATUS_[^\s
+[[ $line =~ ^#define\ +([A-Z0-9_
+[[ $maxdesclength -gt 8 
+[[ $vtype == *HANDLE* || $vtype == *HRESULT* 
+[[ ${#COMPREPLY[@
+[[ ${#must_have_one_flag[@
+[[ ${#must_have_one_noun[@
+[[ ${#nouns[@
+[[ ${index} -ge 0 
+[[ ${words[c
+[[ -n $key && -n $value 
+[[ -n $knownfolders 
+[[ -n $ntstatus 
+[[ -n $winerror 
+[[ -n ${BASH_COMP_DEBUG_FILE:-} 
+[[ -n ${file} 
+[[ -n ${last_command} 
+[[ -v vtype 
+[[ -z $comp 
+[[ -z $compline 
+[\t\ 
+[])`  used to turn on file completion **with glob filtering** (syntax of `[
+[][
+[]_C_int) (nodes [
+[]byte buffer as [
+[]byte(backup)[1:
+[]byte(rootLine[4:
+[]byte(s)[0
+[]byte(sa.Name[:
+[]byte(sa.UserID[:
+[]byte(string([
+[]byte) ([
+[]byte) [
+[]string) [
+[]string{string([
+[]uint16 as [
+[]uint16) [
+[^_
+[_HIDIOCGRAWNAME_LEN
+[_HIDIOCGRAWPHYS_LEN
+[_HIDIOCGRAWUNIQ_LEN
+[a-w
+[a-z
+[a-zA-Z~
+[addr%SizeofPtr:
+[annotation
+[arg1 arg2
+[at godoc.org
+[bash completion V2
+[bash|zsh|fish|powershell
+[build status
+[byte
+[c
+[cap(b)-1
+[cap(data)-1
+[ci
+[cmsgAlignOf(SizeofCmsghdr):h.Len
+[cobra logo
+[cobra-slack
+[cobra.BashCompCustom
+[command
+[command-line
+[completion V2 version
+[cookie
+[copied:
+[cpuSetSize
+[cs-1
+[data.PrintNameOffset/2 : (data.PrintNameLength-data.PrintNameOffset)/2
+[data.compatIDsOffset : data.compatIDsOffset+data.compatIDsLength
+[debugging shell completion
+[docs generation documentation
+[dstPos+fixedSize+int(dstDirent.Namlen) : dstPos+reclen
+[dstPos:
+[epfd
+[f.normalizeFlagName(name)
+[failretval == 0 || e1 == ERROR_ALREADY_EXISTS
+[failretval!=0
+[failretval&0xff==0
+[failretval<=32
+[failretval==-1
+[failretval==0
+[failretval==0xffffffff
+[failretval==DevInfo(InvalidHandle)
+[failretval==INVALID_FILE_ATTRIBUTES
+[failretval==InvalidHandle
+[failretval==nil
+[failretval==socket_error
+[fd
+[fd/NFDBITS
+[filing an issue
+[flag
+[flag package
+[flagList
+[flags
+[fname
+[from:i
+[golang-nuts mailing list
+[group
+[hdrSize:
+[http://localhost:6060/pkg/github.com/spf13/pflag
+[i
+[i*2
+[i*2+1
+[i+1
+[i+1 : j
+[i+1:
+[i+4
+[i+8
+[i-1
+[i/2
+[i:
+[i:j
+[idx
+[index
+[index+1:
+[index-1 : index
+[int
+[int16
+[j
+[j+1:
+[j-1
+[k
+[key
+[kv[0
+[l:
+[last:
+[last:i
+[len(args)-1
+[len(bits)-1
+[len(buf)-1
+[len(fields)-1
+[len(ifreq{}.Ifru) - SizeofPtr
+[len(parts)-1
+[len(pp.Path)
+[len(prevArg)-1:
+[len(s)
+[len(sa.Addr)-1-i
+[len(t)
+[len(t.remainder):
+[m
+[m : n-1
+[matches[1
+[mutuallyExclusive
+[mypod
+[n
+[n+t.pos:
+[n-1
+[n:
+[nFPM
+[name
+[namoff : namoff+namlen
+[nf
+[nlPos+1:
+[nname
+[no options!
+[normalName
+[normalizedFlagName
+[nothing
+[off:
+[offset
+[p
+[p:
+[p:i
+[path
+[path to command
+[peExt.Fd
+[peExt.Path
+[pflag.Name
+[poolPos:(poolPos+16)
+[pos
+[rand.Intn(len(filenameRunes))
+[rand.Intn(len(imageRunes))
+[randPoolSize
+[rare
+[reclen:
+[releases page
+[request.header.outputDesc.offset
+[requiredAsGroup
+[s
+[s+1:
+[s.head
+[sidx+1:
+[signal.name
+[spf13/cobra-cli
+[srcPos:
+[string
+[string to echo
+[string to print
+[sub
+[sudo
+[svc_EZBNMIF4
+[syscall.MAX_ADAPTER_ADDRESS_LENGTH
+[syscall.MAX_PATH
+[t.pos
+[t.pos+1:
+[t.pos:
+[tab
+[todo:
+[uint32
+[uint8
+[uintptr
+[unix.VMIN
+[unix.VTIME
+[unsafe.Sizeof(TIPCServiceName{})
+[unsafe.Sizeof(TIPCServiceRange{})
+[unsafe.Sizeof(TIPCSocketAddr{})
+[unsafe.Sizeof(dstDirent)
+[unsafe.Sizeof(srcDirent)
+[unsafe.Sizeof(uname.Machine)-1
+[unsafe.Sizeof(uname.Nodename)-1
+[unsafe.Sizeof(uname.Release)-1
+[unsafe.Sizeof(uname.Sysname)-1
+[viper
+[viper documentation
+[w+1:
+[x
+[x+1
+[x1
+[x2

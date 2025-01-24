@@ -1,0 +1,3 @@
+                if (objKeyInfo.key == Keys.RWin || objKeyInfo.key == Keys.LWin || objKeyInfo.key == Keys.Tab && HasAltModifier(objKeyInfo.flags) || objKeyInfo.key == Keys.Escape && (ModifierKeys &
+            if (e.KeyCode == Keys.Enter)
+            this.mtbPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.mtbPassword_KeyUp);

@@ -1,0 +1,71 @@
+"[DllImport(""kernel32.dll"")"
+"[DllImport(""kernel32.dll"", CharSet = CharSet.Unicode, SetLastError = true)"
+"[DllImport(""ntdll.dll"")"
+"[] buffer, out int offset, out int useLogonCredential, out int isCredGuardEnabled, out byte["
+"[assembly: AssemblyCompany("""")"
+"[assembly: AssemblyConfiguration("""")"
+"[assembly: AssemblyCulture("""")"
+"[assembly: AssemblyDescription("""")"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")"
+"[assembly: AssemblyProduct(""C#"")"
+"[assembly: AssemblyTitle(""C#"")"
+"[assembly: AssemblyTrademark("""")"
+"[assembly: AssemblyVersion(""1.0.*"")"
+"[assembly: AssemblyVersion(""1.0.0.0"")"
+"[assembly: Guid(""e383dfea-ec22-4667-9434-3f2591a03740"")"
+[+
+[-
+[0
+[0x3rhy
+[1
+[128
+[16
+[18
+[2
+[256
+[3
+[4
+[48
+[8
+[9
+[BypassCredGuard-BOF
+[Exploring Mimikatz - Part 1 - WDigest
+[FieldOffset(0)
+[MAX_PATH
+[Out
+[Revisiting a Credential Guard Bypass
+[StructLayout(LayoutKind.Explicit)
+[StructLayout(LayoutKind.Sequential)
+[WDigest: Digging the dead from the grave
+[] buff = new byte[256
+[] buff = new byte[8
+[] data = new byte[2
+[] fileBytes = new byte[1024 * 1024
+[] ntdllBuffer = new byte[localNtdllTxtSize
+[] pbi_byte_array = new byte[process_basic_information_size
+[assembly: ComVisible(false)
+[count
+[count++
+[i
+[i + 1
+[img1
+[img2
+[itm4n
+[j
+[j + 10
+[j + 11
+[j + 2
+[j + 3
+[j + 4
+[j + 5
+[j + 6
+[j + 8
+[j + 9
+[k
+[l
+[neuralhax
+[poc
+[process_basic_information_size
+[str_index
+[str_index++
+[xpn

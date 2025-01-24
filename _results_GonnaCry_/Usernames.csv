@@ -1,0 +1,5 @@
+"Username: "" + Variables.username);"
+username -> type = char * (String)
+username = Environment.UserName;
+username = environment.get_username()
+username = get_username();

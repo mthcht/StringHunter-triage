@@ -1,0 +1,5 @@
+"UserName = usernameBuf.ToString(),"
+"Username: "" + networkCredential.Domain + ""\\"" + networkCredential.UserName + ""\r\n"" +"
+UserName = 256;
+username = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+usernameBuf = new StringBuilder(256);

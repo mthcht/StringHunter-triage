@@ -1,0 +1,34 @@
+"Println(""  -""+f.Shorthand+"","", ""--""+f.Name, ""[""+f.DefValue+""]"", """", f.Value, ""  [LP]"""
+"Println(""  -""+f.Shorthand+"","", ""--""+f.Name, ""[""+f.DefValue+""]"", """", f.Value, ""  [L]"""
+"Println(""  -""+f.Shorthand+"","", ""--""+f.Name, ""[""+f.DefValue+""]"", """", f.Value, ""  [P]"""
+"Println("""""
+"Println(""Backdoor removed."""
+"Println(""DebugFlags called on"", c.Name("
+"Println(""Echo: "" + strings.Join(args, "" """
+"Println(""Hello, World!"""
+"Println(""Hugo Static Site Generator v0.9 -- HEAD"""
+"Println(""Press return to continue..."""
+"Println(""Print: "" + strings.Join(args, "" """
+"Println(""Using config file:"", viper.ConfigFileUsed("
+"Println(""\""help\"" flag declared as non-bool. Please correct your code"""
+"Println(""\""version\"" flag declared as non-bool. Please correct your code"""
+"Println(""\r"""
+"Println(""flagvar has value "", flagvar"
+"Println(""ip has value "", *ip"
+"println(buf, line[:sidx], spacing, wrap(maxlen+2, cols, line[sidx+1:]"
+"println(os.Stderr, ""Error:"", msg"
+"println(os.Stderr, err"
+"println(os.Stdout, input"
+"println(w io.Writer, input string"
+Println(*path
+Println(cmd.UsageString(
+Println(err
+Println(exploit.Name
+Println(hex.EncodeToString(b
+Println(i ...interface{}
+Println(input string
+Println(x.Name(
+Println(x.flagErrorBuf
+println(f.out(
+println(finalCmd.OutOrStdout(
+println(i...

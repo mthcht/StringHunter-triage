@@ -1,0 +1,169 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+,x(!
+,`(#
+,H(%
+,0('
+ )UU
+ )UU
+ )UU
+ )UU
+ )UU
+BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+<Module>
+SharpEventLog.exe
+Program
+SharpEventLog
+mscorlib
+System
+Object
+Main
+EventLog_4624
+EventLog_4625
+MidStrEx
+.ctor
+args
+sourse
+startstr
+endstr
+System.Runtime.Versioning
+TargetFrameworkAttribute
+System.Reflection
+AssemblyTitleAttribute
+AssemblyDescriptionAttribute
+AssemblyConfigurationAttribute
+AssemblyCompanyAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyTrademarkAttribute
+AssemblyCultureAttribute
+System.Runtime.InteropServices
+ComVisibleAttribute
+GuidAttribute
+AssemblyVersionAttribute
+AssemblyFileVersionAttribute
+System.Diagnostics
+DebuggableAttribute
+DebuggingModes
+System.Runtime.CompilerServices
+CompilationRelaxationsAttribute
+RuntimeCompatibilityAttribute
+Console
+WriteLine
+String
+op_Equality
+<>f__AnonymousType0`5
+<MachineName>j__TPar
+<Site>j__TPar
+<Source>j__TPar
+<Message>j__TPar
+<TimeGenerated>j__TPar
+<MachineName>i__Field
+get_MachineName
+<Site>i__Field
+get_Site
+<Source>i__Field
+get_Source
+<Message>i__Field
+get_Message
+<TimeGenerated>i__Field
+get_TimeGenerated
+ToString
+Equals
+GetHashCode
+MachineName
+Site
+Source
+Message
+TimeGenerated
+value
+DebuggerDisplayAttribute
+CompilerGeneratedAttribute
+DebuggerBrowsableAttribute
+DebuggerBrowsableState
+DebuggerHiddenAttribute
+System.Text
+StringBuilder
+Append
+System.Collections.Generic
+EqualityComparer`1
+get_Default
+EventLogEntry
+<EventLog_4624>b__0
+Func`2
+CS$<>9__CachedAnonymousMethodDelegate2
+System.ComponentModel
+ISite
+DateTime
+<EventLog_4624>b__1
+CS$<>9__CachedAnonymousMethodDelegate3
+get_InstanceId
+Component
+EventLog
+EventLogEntryCollection
+get_Entries
+System.Core
+System.Linq
+Enumerable
+IEnumerable`1
+System.Collections
+IEnumerable
+Cast
+Where
+Select
+List`1
+ToList
+IEnumerator`1
+GetEnumerator
+get_Current
+get_Length
+Concat
+Replace
+IEnumerator
+MoveNext
+IDisposable
+Dispose
+<EventLog_4625>b__4
+CS$<>9__CachedAnonymousMethodDelegate6
+<EventLog_4625>b__5
+CS$<>9__CachedAnonymousMethodDelegate7
+Empty
+IndexOf
+Substring
+Remove
+~0W@W:
+e{vU_:
+Oo`:
+x\{ MachineName = {MachineName}, Site = {Site}, Source = {Source}, Message = {Message}, TimeGenerated = {TimeGenerated} }
+Type
+<Anonymous Type>
+.NETFramework,Version=v4.0
+FrameworkDisplayName
+.NET Framework 4
+SharpEventLog
+Copyright 
+  2019
+$4ed4f849-4ed7-4f81-8ea8-1cac11dfcf3c
+1.0.0.0
+WrapNonExceptionThrows
+RSDS/
+d:\vscode\c_test\SharpEventLog\SharpEventLog\obj\Debug\SharpEventLog.pdb
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

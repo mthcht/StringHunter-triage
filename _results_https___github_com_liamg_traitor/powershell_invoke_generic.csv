@@ -1,0 +1,2 @@
+"Invoke-Expression -OutVariable out ""$RequestComp"" 2>&1 | Out-Null"
+Invoke-Expression

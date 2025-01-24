@@ -1,0 +1,94 @@
+"// 0 disable, 1 enable"
+"// @janoglezcampos, @idov31 - https://github.com/Idov31/Cronos/blob/master/src/Utils.c"
+"// Allocate memory according to size, and read contents of file into buffer"
+"// Dynamically search for a suitable ""ADD RSP,68;RET"" gadget in both kernel32 and kernelbase"
+"// Take formatted target, user and password from beacon"
+"// allocate RWX memory, copy decoded shellcode, and free heap memory"
+"// mov r10, rcx"
+"// mov rsp, REG_GADGET_ADDRESS"
+"// sideload options: compmgmtlauncher.exe, disksnapshot.exe, filehistory.exe, quickassist.exe"
+"// sub rsp, 70"
+"// x86_64-w64-mingw32-gcc loader.c -static -w -s -Wl,-subsystem,windows -o loader.exe"
+"// x86_64-w64-mingw32-gcc sideloader.c cryptbase.def -static -w -s -Wl,-subsystem,windows -shared -o /share/sideloader.dll"
+// .\write.exe .\goat.txt \\dc1\C$\oink.txt
+// ========
+// @sektor7 - RED TEAM Operator: Windows Evasion course - https://blog.sektor7.net/#!res/2021/halosgate.md
+// ADDED CODE TO EXECUTE
+// Additional capabilities 
+// Apply the modified context to the current thread
+// Authentication info
+// Authentication services
+// Authority        
+// COM authentication
+// Call function to load shellcode
+// Checking that the image is valid PE file.
+// Cleanup
+// Connect to WMI through the IWbemLocator::ConnectServer method
+// Connect to the remote root\cimv2 namespace
+// Context object 
+// Copy the stack arguments from the original stack
+// Create COAUTHIDENTITY that can be used for setting security on proxy
+// Create a new stack to spoof the kernel32 function address
+// Default Impersonation  
+// Default authentication 
+// DiskLoader writefile dc1 /root/demon.x64.exe C:\Windows\Temp\ok.exe
+// Doesnt currently work but should let you use current context
+// Dynamically find the GetThreadContext and SetThreadContext functions
+// Find the address of the syscall function in ntdll we got as the first argument of the PrepareSyscall function
+// Free Strings in mem
+// GET COMMAND FROM ARGV. Make sure you run via cmd if redirecting output
+// GET TARGET SERVER FROM CLI. MUST CONVERT INTO BSTR USING METHOD DESCRIBED BELOW
+// Get current thread context
+// Get size of raw shellcode file
+// Handle Cred material
+// IWbemServices proxy
+// Indicates the proxy to set
+// Initialize COM. ------------------------------------------
+// Iterating the export directory.
+// Load original DLL and get function pointer
+// Locale             
+// Move breakpoint back to PrepareSyscall to catch the next invoke
+// Move breakpoint to the NTAPI function;
+// Obtain the initial locator to WMI -------------------------
+// Program has failed.
+// Program successfully completed.
+// RPC_C_AUTHN_LEVEL_xxx 
+// RPC_C_AUTHN_xxx
+// RPC_C_AUTHZ_xxx
+// RPC_C_IMP_LEVEL_xxx
+// Register exception handler
+// Reserved
+// Security flags
+// Server principal name 
+// Set general COM security levels --------------------------
+// Set hardware breakpoint on PrepareSyscall function
+// Set security levels on a WMI connection ------------------
+// Step 1: --------------------------------------------------
+// Step 2: --------------------------------------------------
+// Step 3: ---------------------------------------------------
+// Step 4: -----------------------------------------------------
+// Step 6: --------------------------------------------------
+// Step 7: --------------------------------------------------
+// The stack size will be 0x70 which is compatible with the RET_GADGET we found.
+// Use make!
+// Use the IWbemServices pointer to make requests of WMI ----
+// User name
+// User password
+// XOR key. Make sure it matches the key used to encode shellcode
+// and obtain pointer pSvc to make IWbemServices calls.
+// check neighboring syscall down
+// check neighboring syscall up
+// client identity
+// commenting this out prevents the BOF from crashing
+// decode shellcode and free heap memory
+// https://stackoverflow.com/questions/606075/how-to-convert-char-to-bstr
+// proxy capabilities 
+// random crap... helps evade some signatures feel free to replace with whatever...
+// random crap... helps evade some signatures; feel free to replace with whatever...
+// sideload into DiskSnapShot.exe as cryptbase.dll
+// step 5: --------------------------------------------------
+// x86_64-w64-mingw32-g++ -c wmiBOF.cpp -w -o /share/ProcCreate.x64.o 
+// x86_64-w64-mingw32-g++ -o /share/test.exe wmiexec.cpp -I include -l oleaut32 -l ole32 -l wbemuuid -w -static
+// x86_64-w64-mingw32-g++ -static sideloader.cpp HWSyscalls.cpp cryptbase.def -s -w -shared -o /share/sideloader.dll -fpermissive
+// x86_64-w64-mingw32-gcc -c writefileBOF.c -w -o /share/writeFileBOF.x64.o
+// x86_64-w64-mingw32-gcc writefile.c -w -static -o /share/write.exe

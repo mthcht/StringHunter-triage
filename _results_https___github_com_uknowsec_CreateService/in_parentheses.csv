@@ -1,0 +1,258 @@
+"(!AddResource(argv[1], enName"
+"(!AddResource(szFileName, argv[1]"
+"(""    [+] EvilPathName: %s\n"", argv[1]"
+"(""    [+] EvilPathName: %s\n"", evilName"
+"(""    [+] ServiceName: %s\n"", szName"
+"(""    [+] Success! Service successfully Create and Start.\n"""
+"(""    [+] Success! Service successfully Stop and Delete.\n"""
+"(""    [+] TransitPathName: %s\n"", szFileName"
+"(""   [+] Wrong number of parameters!\n"""
+"(""   [+] eg: %s \""c:\\transit.exe\"" \""c:\\evil.exe\"" EvilService start/stop\n"", argv[0]"
+"(""   [+] eg: CreateService c:\\transit.exe c:\\evil.exe EvilService start/stop\n"""
+"(""   [+] usage: %s TransitPathName EvilPathName ServiceName start/stop\n"", argv[0]"
+"(""   [+] usage: CreateService TransitPathName EvilPathName ServiceName start/stop\n"""
+"(""   [-] Create Error!\n"""
+"(""   [-] Delete Error!\n"""
+"(""   [-] Start Error!\n"""
+"(""   [-] Stop Error!\n"""
+"(""PROCESSOR_REVISION"""
+"(""[*] CreateService by Uknow\n"""
+"(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"""
+"($0, 14"
+"($1, ""arguments are:"" . substr($0, 14"
+"($1, script_resource($dll"
+"(100, filename"
+"(HANDLE, PVOID, ULONG"
+"(HINSTANCE hinstDLL, DWORD dwReason, LPVOID lpReserved"
+"(HINSTANCE, DWORD, LPVOID"
+"(HMODULE, LPCSTR"
+"(LANG_NEUTRAL, SUBLANG_DEFAULT"
+"(LPVOID, SIZE_T, DWORD, DWORD"
+"(NULL, "" """
+"(NULL, ((PIMAGE_NT_HEADERS"
+"(NULL, FALSE, ""hello"""
+"(NULL, MAKEINTRESOURCE(resourceID"
+"(NULL, NULL, SC_MANAGER_ALL_ACCESS"
+"(NULL, hRsrc"
+"(Path, exepath"
+"(SetServiceStatus(g_ServiceStatusHandle, &ss"
+"(UpdateResource(hResource, RT_RCDATA, MAKEINTRESOURCE(100"
+"(char * Data, long Length, char * Key, int KeyLength"
+"(char* lpszDriverPath, int iOperateType"
+"(char* outpath, char* exepath"
+"(d, HASH_KEY"
+"(evilName, strlen(evilName"
+"(exepath, strlen(exepath"
+"(filename, NULL, NULL, NULL, false, 0, NULL, NULL, &si, &pi"
+"(fname, (char*"
+"(fname, strlen(fname"
+"(getenv(""PROCESSOR_REVISION"""
+"(hResource, FALSE"
+"(int argc, TCHAR* argv[]"
+"(int resourceID, char *fname"
+"(lib, ""Shlwapi.lib"""
+"(outpath, FALSE"
+"(shSCManager, szName, SERVICE_ALL_ACCESS"
+"(shService, 0, NULL"
+"(shService, SERVICE_CONTROL_STOP, &sStatus"
+"(strcmp(argv[3], ""start"""
+"(strcmp(argv[3], ""stop"""
+"(strcmp(argv[4], ""start"""
+"(strcmp(argv[4], ""stop"""
+"(szFileName, 0"
+"(szFileName, 1"
+"(szFileName, 2"
+"(szFileName, 3"
+"(szName, lpszDriverPath"
+"(szServiceName, LphandlerFunction"
+( _ReturnAddress 
+( _rotr 
+( align(8
+( dllexport 
+( name 
+(!shService
+('$(UserRootDir
+(((PIMAGE_BASE_RELOCATION
+(((PIMAGE_DATA_DIRECTORY
+(((PIMAGE_DOS_HEADER
+(((PIMAGE_IMPORT_DESCRIPTOR
+(((PIMAGE_NT_HEADERS
+(((PIMAGE_RELOC
+((BYTE*
+((DLLMAIN
+((DWORD
+((HANDLE
+((HINSTANCE
+((HMODULE
+((IMAGE_ORDINAL(((PIMAGE_THUNK_DATA
+((LPCSTR
+((PIMAGE_BASE_RELOCATION
+((PIMAGE_DOS_HEADER
+((PIMAGE_EXPORT_DIRECTORY
+((PIMAGE_IMPORT_BY_NAME
+((PIMAGE_NT_HEADERS
+((PIMAGE_SECTION_HEADER
+((PLDR_DATA_TABLE_ENTRY
+((PPEB_LDR_DATA
+((ULONG_PTR
+((WORD
+((_PPEB
+((char*
+((dwInstruction & 0x00007000
+((dwInstruction & 0x000F0000
+((dwInstruction & 0x04000000
+((dwInstruction & ARM_MOV_MASK
+(*((BYTE*
+(*++c
+(- export ordinal base
+(--usCounter
+(0
+(0 != iOperateType
+(0 == g_ServiceStatusHandle
+(0x30
+(0x60
+(0xFBF08000
+(0xFBF08F00
+(1
+(5000
+(@
+(BYTE *
+(BYTE*
+(Configuration
+(DEREF(uiValueA
+(DEREF_16(uiNameOrdinals
+(DWORD
+(DWORD *
+(DWORD d
+(DWORD dwControl
+(DWORD dwServiceCode
+(DWORD*
+(DWORD64 *
+(ExtensibilityGlobals
+(FALSE == bRet
+(GETPROCADDRESS
+(HIWORD(dwInstruction
+(HMODULE*
+(IMAGE_BASE_RELOCATION
+(IMAGE_DOS_SIGNATURE == 'POP r10'
+(IMAGE_IMPORT_DESCRIPTOR
+(IMAGE_RELOC
+(IMAGE_SECTION_HEADER
+(IND
+(LOADLIBRARYA
+(LPCSTR
+(LPVOID lpParameter
+(NTAPI* NTFLUSHINSTRUCTIONCACHE
+(NTFLUSHINSTRUCTIONCACHE
+(NULL != hResource
+(NULL == argv[c]
+(Path
+(Platform
+(PreprocessorDefinitions
+(ProjectConfigurationPlatforms
+(Properties->C++->Preprocessor
+(Reset == ERROR_ALREADY_EXISTS
+(SERVICE_CONTINUE_PENDING
+(SERVICE_PAUSED
+(SERVICE_PAUSE_PENDING
+(SERVICE_RUNNING
+(SERVICE_START_PENDING
+(SERVICE_STOPPED
+(SERVICE_STOP_PENDING
+(SNAN
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(TRUE
+(UINT_PTR *
+(ULONG_PTR
+(ULONG_PTR*
+(UserRootDir
+(VCTargetsPath
+(VIRTUALALLOC
+(VOID
+(VS.85
+(WINAPI* DLLMAIN
+(WINAPI* GETPROCADDRESS
+(WINAPI* LOADLIBRARYA
+(WINAPI* REFLECTIVELOADER
+(WINAPI* VIRTUALALLOC
+(WORD
+(WORD *
+(WORD*
+(We add 4 to the offset to go past the first MOV.W which handles the low word
+(and no inline asm available under x64
+(argc != 5
+(c
+(c >= 100
+(char* c
+(defined and set via ReflectiveLoader.c
+(dwAddress & 0x00FF
+(dwAddress & 0x0700
+(dwAddress & 0x0800
+(dwAddress & 0xF000
+(dwControl
+(dwHashValue == GETPROCADDRESS_HASH
+(dwHashValue == LOADLIBRARYA_HASH
+(dwHashValue == LOADLIBRARYA_HASH || dwHashValue == GETPROCADDRESS_HASH || dwHashValue == VIRTUALALLOC_HASH
+(dwHashValue == NTFLUSHINSTRUCTIONCACHE_HASH
+(dwHashValue == VIRTUALALLOC_HASH
+(dwInstruction
+(dwInstruction & 0x000000FF
+(dwInstruction & ARM_MOV_MASK2
+(dwReason
+(even if we load at desired image base
+(g_Handle
+(h
+(hGlobal
+(hGlobal == NULL
+(hRsrc == NULL
+(i + 1
+(i = 0; i < 256; i++
+(iOperateType
+(ind
+(j + s[i]
+(j + s[i] + k[i]
+(l = 0; l < Length; l++
+(lpReserved != NULL
+(name
+(noinline
+(pBuffer == NULL
+(pLoadLibraryA && pGetProcAddress && pVirtualAlloc && pNtFlushInstructionCache
+(s[i] + s[j]
+(shSCManager
+(shService
+(si
+(snan
+(stDispatchTable
+(stdout
+(szName
+(the high portion of the address-to-relocate
+(totalSize == 0
+(uiBaseAddress + ((PIMAGE_BASE_RELOCATION
+(uiBaseAddress + ((PIMAGE_DATA_DIRECTORY
+(uiBaseAddress + ((PIMAGE_EXPORT_DIRECTORY
+(uiBaseAddress + ((PIMAGE_IMPORT_DESCRIPTOR
+(uiBaseAddress + ((PIMAGE_NT_HEADERS
+(uiBaseAddress + ((PIMAGE_SECTION_HEADER
+(uiBaseAddress + DEREF(uiValueA
+(uiBaseAddress + DEREF_32(uiAddressArray
+(uiBaseAddress + DEREF_32(uiNameArray
+(uiHeaderValue >= sizeof(IMAGE_DOS_HEADER
+(uiLibraryAddress
+(uiLibraryAddress + ((PIMAGE_DATA_DIRECTORY
+(uiLibraryAddress + ((PIMAGE_EXPORT_DIRECTORY
+(uiLibraryAddress + ((PIMAGE_SECTION_HEADER
+(uiLibraryAddress + DEREF_32(uiAddressArray
+(uiValueA
+(uiValueA + ((PIMAGE_RELOC
+(uiValueA--
+(uiValueB--
+(uiValueD
+(uiValueD && ((PIMAGE_THUNK_DATA
+(uiValueD--
+(uiValueE--
+(unicode string
+(usCounter > 0
+(via first thunk not origionalfirstthunk
+(via the DllMain lpReserved parameter
+(www.harmonysecurity.com

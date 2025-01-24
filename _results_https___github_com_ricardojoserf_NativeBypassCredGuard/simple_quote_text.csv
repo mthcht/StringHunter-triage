@@ -1,0 +1,24 @@
+' == 
+' || signature_dos_header[1] != 
+' || signature_nt_header[1] != 
+'$(Configuration)
+'$(Configuration)|$(Platform)
+'$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props
+'$(Platform)
+'$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props
+'*
+': Read current values.\n        - 
+'==
+'Debug|AnyCPU
+'Debug|Win32
+'Debug|x64
+'E
+'M
+'P
+'Release|AnyCPU
+'Release|Win32
+'Release|x64
+'Z
+'\0
+'check
+'patch

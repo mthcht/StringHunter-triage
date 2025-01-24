@@ -1,0 +1,5 @@
+            // Acquire credentials handle for current user
+            AcquireCredentialsHandle(
+        static extern int AcquireCredentialsHandle(
+"SharpLocker helps get current user credentials by popping a fake Windows lock screen, all output is sent to Console which works perfect for Cobalt"
+* A password stealing tool that emails plain text credentials

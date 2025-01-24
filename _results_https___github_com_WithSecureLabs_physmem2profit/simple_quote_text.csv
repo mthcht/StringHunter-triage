@@ -1,0 +1,105 @@
+"' % (self.driver, self.order[0], self.installArguments)).encode("
+"' % (self.driver, self.order[1])).encode("
+"' % (self.driver, self.order[2])).encode("
+"' % (self.driver, self.order[3])).encode("
+"' : 1, "
+"' : stat.S_IFDIR | 0o555, "
+"' : stat.S_IFREG | 0o444,  "
+"'"" + command + """
+"', "
+"', choices=["
+"', default=("
+"'], default="
+"'].v(), dll["
+' == 
+' in dll and len(dll[
+' in x and x[
+' or args.mode == 
+'$(Configuration)
+'$(Configuration)|$(Platform)
+'$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props
+'$(Platform)
+'%s\n%s\n
+'%s\n%s\n%s
+').encode(
+'*
+'--driver
+'--host
+'--install
+'--label
+'--mode
+'--port
+'--vmem
+'.
+'..
+'.vmss
+'/
+'CSDVersionRva
+'DataSize
+'Debug|AnyCPU
+'File does not exist: 
+'Location
+'Mapped
+'NT Build
+'Private
+'PsActiveProcessHead
+'RVA
+'Release|AnyCPU
+'State
+'Type
+'\x00
+'\x00\x00
+'\x4d\x44\x4d\x50
+'\x93\xa7
+'] == 
+'] if 
+']).split(
+'].value-d[
+'][
+'_EPROCESS
+'__main__
+'all
+'arch
+'base
+'build
+'config.json
+'dll_path
+'dtb
+'dump
+'end
+'exit\n
+'fill
+'host
+'http://profiles.rekall-forensic.com
+'https://github.com/google/rekall-profiles/raw/master
+'image
+'install
+'kernel_base
+'key
+'lsass.exe
+'major
+'map
+'mem
+'minor
+'mount
+'output
+'output/%s-%s-lsass.dmp
+'output/%s-%s-secure-world.raw
+'output/label-date-lsass.dmp
+'pad
+'physmem2profit
+'pmem
+'protect
+'read
+'size
+'st_mode
+'st_nlink
+'st_size
+'start
+'type
+'uninstall
+'utf-8
+'value
+'w
+'wb
+'winpmem

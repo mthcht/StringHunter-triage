@@ -1,0 +1,106 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+0xb11a1
+get_UTF8
+<Module>
+UHJvZ3JhbUFB
+System.Data
+mscorlib
+Read
+SqlCommand
+set_Mode
+PaddingMode
+CipherMode
+get_Message
+IDisposable
+Console
+GetName
+WriteLine
+Close
+Dispose
+GuidAttribute
+DebuggableAttribute
+ComVisibleAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+AssemblyFileVersionAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+GetValue
+SqlClient.exe
+set_Padding
+Encoding
+System.Runtime.Versioning
+FromBase64String
+GetString
+ComputeHash
+TransformFinalBlock
+System
+SymmetricAlgorithm
+HashAlgorithm
+ICryptoTransform
+Open
+Main
+System.Reflection
+DbConnection
+SqlConnection
+Exception
+System.Data.Common
+Clear
+DbDataReader
+SqlDataReader
+ExecuteReader
+MD5CryptoServiceProvider
+TripleDESCryptoServiceProvider
+.ctor
+CreateDecryptor
+System.Diagnostics
+System.Runtime.InteropServices
+System.Runtime.CompilerServices
+DebuggingModes
+GetBytes
+args
+get_HasRows
+Concat
+Object
+System.Data.SqlClient
+get_FieldCount
+Convert
+System.Text
+set_Key
+System.Security.Cryptography
+WrapNonExceptionThrows
+	SqlClient
+Copyright 
+  2020
+ba-b836-2cb37208032a
+1.0.0.0
+.NETFramework,Version=v4.7
+FrameworkDisplayName
+.NET Framework 4.7
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

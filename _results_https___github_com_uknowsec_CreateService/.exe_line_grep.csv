@@ -1,0 +1,11 @@
+    [+] EvilPathName: C:\Users\Administrator\Desktop\beacon.exe
+    [+] EvilPathName: C:\Users\Administrator\Desktop\test.exe
+    [+] TransitPathName: C:\Users\Administrator\Desktop\TransitEXE.exe
+ C:\Users\Administrator\Desktop\beacon.exe
+"			printf(""   [+] eg: CreateService c:\\transit.exe c:\\evil.exe"
+"		printf(""   [+] eg: %s \""c:\\transit.exe\"" \""c:\\evil.exe"
+""" ""C:\Users\Administrator\Desktop\test.exe"
+"C:\Users\Administrator\Desktop>CreateService.exe ""C:\Users\Administrator\Desktop\TransitEXE.exe"
+"TCHAR szServiceName[MAX_PATH] = ""GoogleUpadates.exe"
+[+] arguments are:C:\Users\Administrator\Desktop\TransitEXE.exe
+beacon> CreateService C:\Users\Administrator\Desktop\TransitEXE.exe

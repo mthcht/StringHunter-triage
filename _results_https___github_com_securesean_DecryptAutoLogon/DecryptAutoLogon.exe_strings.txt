@@ -1,0 +1,124 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+BSJB
+v2.0.50727
+#Strings
+#GUID
+#Blob
+UInt32
+<Module>
+LSA_UNICODE_STRING
+LSA_OBJECT_ATTRIBUTES
+CleanUpManagedData
+LsaRetrievePrivateData
+CleanUpNativeData
+mscorlib
+MarshalNativeToManaged
+myAllocated
+hWnd
+SecurityQualityOfService
+GetInstance
+cookie
+Hashtable
+RuntimeTypeHandle
+GetTypeFromHandle
+PolicyHandle
+policyHandle
+Console
+SystemName
+ObjectName
+KeyName
+WriteLine
+ValueType
+uType
+PtrToStructure
+GuidAttribute
+DebuggableAttribute
+ComVisibleAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+AssemblyFileVersionAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+MarshalManagedToNative
+Remove
+DecryptAutoLogon.exe
+get_Size
+GetNativeDataSize
+nativeSize
+ToString
+get_Length
+MaximumLength
+PtrToStringUni
+StringToHGlobalUni
+ManagedObj
+AllocHGlobal
+FreeHGlobal
+Marshal
+advapi32.dll
+user32.dll
+Program
+set_Item
+System
+Clean
+Main
+DecryptAutoLogon
+System.Reflection
+lpCaption
+SetTo
+Zero
+Buffer
+LSAStringMarshaler
+ICustomMarshaler
+marshaler
+LsaNtStatusToWinError
+.ctor
+.cctor
+SecurityDescriptor
+StructureToPtr
+IntPtr
+System.Diagnostics
+System.Runtime.InteropServices
+System.Runtime.CompilerServices
+DebuggingModes
+ObjectAttributes
+args
+System.Collections
+DesiredAccess
+status
+Concat
+Object
+lpText
+MessageBox
+LsaOpenPolicy
+policy
+ContainsKey
+RootDirectory
+op_Inequality
++DecryptAutoLogon.Program+LSAStringMarshaler
+WrapNonExceptionThrows
+DecryptAutoLogon
+Copyright 
+  2020
+$015a37fc-53d0-499b-bffe-ab88c5086040
+1.0.0.0
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

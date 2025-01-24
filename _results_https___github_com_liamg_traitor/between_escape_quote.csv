@@ -1,0 +1,408 @@
+"`    if [[ -z ""${BASH_VERSION:-}"" || ""${BASH_VERSINFO[0]:-}"" -gt 3 ]]; then"
+"` (which will be a common case), the default value for the Active Help configuration returned by "
+"` command uses bash completion V2.  If for some reason you need to use bash completion V1, you will need to implement your own "
+"` command uses bash completion V2.  If you are currently using Cobra's legacy dynamic completion solution, you should not use the default "
+"` command, if you want to specify different Active Help configurations, you should use the active help environment variable.  That variable is named "
+"` environment variable is set to the string ""0"", Cobra will automatically disable all Active Help output (even if some output was specified by the program using the "
+"` flag to find potential vulnerabilities, attempting to exploit each, stopping if a root shell is gained. Again, add the "
+"` flag, as it would have done when calling the "
+"` function).  Using ""0"" can simplify your code in situations where you want to blindly disable Active Help without having to call "
+"` incompatible with bash)|Will continue to work, however, support for bash syntax is added and should be used instead so as to work for all shells ("
+"` on the target machine, remembering to "
+"` package, they must be added to the "
+"` solution, the legacy solution will only work for Bash shell-completion and not for other shells. This legacy solution can be used along-side "
+"` to ""0"".  In this case "
+"` will return ""0"" no matter what the variable "
+"` will run because the cobra.Command only understood ""kubectl"" and ""get."" "
+"` will see that the cobra.Command is ""kubectl_get"" and will thus call another helper "
+"`"""
+"`"", """
+"`$&'""+"
+"`+""        # We need to use "
+"`+""        $Name, $Description = $_.Split(\"""
+"`+""        $RequestComp=\""$RequestComp\"" + ' "
+"`+""    $_ -replace '\\s|#|@|\\$|;|,|''|\\{|\\}|\\(|\\)|\""|"
+"`, "
+"`, """", "
+"`, """", """
+"`, Cobra will call your registered "
+"`, Cobra will call your registered function after having parsed all flags and arguments provided in the command-line.  You therefore don't need to do this parsing yourself.  For example, when a user calls "
+"`, it defaults to "
+"`, strings.Join(missingFlagNames, "
+"`Flag --badflag has been deprecated, please use --good-flag instead"
+"`Flag shorthand -n has been deprecated, please use --noshorthandflag only"
+"`GOOS != ""linux"""
+"`GOOS == ""linux"""
+"`RangeArgs(min, max)"
+"`[]string{""*.yaml"", ""*.yml""}"
+"`[]string{""yaml"", ""yml""}"
+"`\"" to pass an empty argument a \""\"" or '' does not work!!!""+"
+"`\"""
+"`\""'""+"
+"`cmd.MarkFlagFilename(flag, []string{})"
+"`cmd.MarkFlagFilename(flag, glob[])"
+"`cmd.MarkZshCompPositionalArgumentFile(pos, []string{})"
+"`cmd.MarkZshCompPositionalArgumentFile(pos, glob[])"
+"`cmd.MarkZshCompPositionalArgumentWords(pos, words[])"
+"`json:""Id"""
+"`json:""RepoTags"""
+"`required flag(s) ""%s"" not set"
+"`t\"",2)""+"
+"`|\\||<|>|&','"
+`    fi
+`  used to turn on file completion **with glob filtering** (syntax of 
+` (
+` (including the use of the 
+` (not supported by bash)|Retained for 
+` (or 
+` + c.Name() + 
+` + s + 
+` - the command will report an error if there are any positional args that are not in the 
+` - the command will report an error if there are not exactly N positional args OR if there are any positional args that are not in the 
+` after having parsed the 
+` and 
+` and added to 
+` and similar used to turn on file completion|File completion by default; 
+` but not the root command's 
+` by doing 
+` completion V2 supports descriptions for completions. When calling 
+` environment variable. See 
+` field of 
+` field on the 
+` field to provide a Go function that Cobra will execute when it needs the list of completion choices for the nouns of a command.  Note that either 
+` flag they MUST provide the 
+` form (unlike bash)|Retained for 
+` function of your command. The 
+` functions or a combination of 
+` functions will be executed before 
+` functions. To include descriptions use 
+` has chosen to support three levels for Active Help: 
+` help [path to command] for full details.
+` implementation in the 
+` is **deprecated** and silently ignored; use 
+` is bound with 
+` is done through the 
+` is not supported and will be ignored for 
+` is replaced by an 
+` is undefined or 
+` method from panicking on 
+` of a command.  Please notice the use of 
+` on the 
+` option is really only valid/useful on the root command. Doing the above will cause 
+` or 
+` over 
+` package. You should update the help text of your completion command to show how to install the 
+` prefix having been typed|Flag names are only completed if the user has typed the first 
+` replaced by an 
+` runes in length and the remainder. Will go 
+` separator.  This technique applies to completions returned by 
+` sub-command. Let's assume the Helm releases on the cluster are: 
+` the 
+` to a maximum width 
+` used to provide completion choices on a per-argument position basis (zsh-specific)|
+` used to turn on file completion **with glob filtering** on a per-argument position basis (zsh-specific)|
+` used to turn on file completion on a per-argument position basis|File completion for all arguments by default; 
+` using 
+` where 
+` where any 
+` which are portable to the different shells (
+` will actually call out to kubernetes and get any pods.  It will then set 
+` will be executed after 
+` will look at the 'nouns' collected. In our example the only noun will be 
+` with 
+`#define
+`#if/#elif
+`#include <errno.h>
+`#include <signal.h>
+`$GOPATH/src/golang.org/x/term
+`$Profile
+`$fpath
+`${GOOS}
+`${GOOS}/Dockerfile
+`${GOOS}/mkall.go
+`${GOOS}/mksysnum.go
+`${GOOS}/types.go
+`'
+`(-([0-9]+[0-9A-Za-z\-~]*(\.[0-9A-Za-z\-~]+)*)|(-([A-Za-z\-~]+[0-9A-Za-z\-~]*(\.[0-9A-Za-z\-~]+)*)))?
+`(-([0-9]+[0-9A-Za-z\-~]*(\.[0-9A-Za-z\-~]+)*)|(-?([A-Za-z\-~]+[0-9A-Za-z\-~]*(\.[0-9A-Za-z\-~]+)*)))?
+`(\+([0-9A-Za-z\-~]+(\.[0-9A-Za-z\-~]+)*))?
+`) it will only be accessible via 
+`) to be called when the built in processor was unable to find a solution. In the case of kubernetes a valid command might look something like 
+`): 
+`*Array
+`*Slice
+`-
+`--any
+`--author
+`--exploit
+`--help
+`--json
+`--namespace
+`--no-descriptions
+`--password
+`--session --print-reply --type=method_call --dest=org.freedesktop.PackageKit /org/freedesktop/PackageKit org.freedesktop.PackageKit.Modify.InstallPackageNames uint32:1 array:string:%s string:
+`--system --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts org.freedesktop.Accounts.CreateUser string:%s string:%s int32:1
+`--system --dest=org.freedesktop.Accounts --type=method_call --print-reply /org/freedesktop/Accounts/User%s org.freedesktop.Accounts.User.SetPassword string:%s string:lol
+`--username
+`--v
+`--verbose
+`--version
+`--yaml
+`-a
+`-asd
+`-e
+`-h
+`-p
+`-v
+`. 
+`.  
+`.  So it will call 
+`.  The 
+`.  These directives are bit fields allowing to control some shell completion behaviors for your particular completion.  You can combine them with the bit-or operator such as 
+`.  You can use the 
+`. Descriptions are only displayed when using the 
+`. If you type 
+`. You can use the 
+`... did you mean 
+`/
+`//sys
+`//sysnb
+`/bin/sh 1>&0
+`: Introduce 
+`<PROGRAM>
+`<PROGRAM>_ACTIVE_HELP
+`<bg-black>
+`<bg-blue>
+`<bg-cyan>
+`<bg-darkgrey>
+`<bg-green>
+`<bg-lightblue>
+`<bg-lightcyan>
+`<bg-lightgreen>
+`<bg-lightgrey>
+`<bg-lightmagenta>
+`<bg-lightred>
+`<bg-lightyellow>
+`<bg-magenta>
+`<bg-red>
+`<bg-white>
+`<bg-yellow>
+`<black>
+`<blink>
+`<blue>
+`<bold>
+`<cyan>
+`<darkgrey>
+`<dim>
+`<green>
+`<hidden>
+`<italic>
+`<lightblue>
+`<lightcyan>
+`<lightgreen>
+`<lightgrey>
+`<lightmagenta>
+`<lightred>
+`<lightyellow>
+`<magenta>
+`<red>
+`<reverse>
+`<underline>
+`<white>
+`<yellow>
+`=
+`?
+`APPNAME COMMAND ARG --FLAG
+`APPNAME VERB NOUN --ADJECTIVE.
+`All software has versions. This is Hugo's
+`ArbitraryArgs
+`ArgAliases
+`Args
+`Bash
+`BashCompCustom
+`BashCompFilenameExt
+`BashCompSubdirsInDir
+`BashCompletionFunction
+`C:\Windows
+`C:\Windows\System32
+`COBRA_ACTIVE_HELP
+`COMPREPLY
+`Command
+`Command.TraverseChildren
+`CommandLine
+`Complete
+`CompletionOptions
+`Constraints
+`Core
+`Equals()
+`ExactArgs(int)
+`ExactValidArgs(int)
+`GenBashCompletion()
+`GenBashCompletionFile()
+`GenBashCompletionFileV2()
+`GenBashCompletionV2()
+`GenZshCompletionFileNoDesc()
+`GenZshCompletionNoDesc()
+`Get-Help about_Profiles
+`GreaterThanOrEqual
+`LessThanOrEqual
+`MarkFlagCustom()
+`MarkFlagDirname()
+`MarkFlagFilename()
+`MarkPersistentFlagDirname()
+`MarkPersistentFlagFilename()
+`MatchAll(pargs ...PositionalArgs)
+`MaximumNArgs(int)
+`MenuComplete
+`MinimumNArgs(int)
+`MustConstraints()
+`NewSemver
+`NoArgs
+`OnlyValidArgs
+`Persistent*Run
+`PersistentPostRun
+`PersistentPreRun
+`PostRun
+`PreRun
+`RegisterFlagCompletionFunc()
+`Run
+`RunE
+`Set-PSReadLineKeyHandler -Key Tab -Function <mode>
+`ShellCompDirectiveFilterDirs
+`ShellCompDirectiveFilterFileExt
+`ShellCompDirectiveNoFileComp
+`SuggestFor
+`ValidArgs
+`ValidArgsFunction
+`ValidArgsFunction(...)
+`Version.Equal
+`[0-9]+\.[0-9]+(\.[0-9]+)*
+`\t
+`^[0-9\.\-]+
+`^\s*(%s)\s*(%s)\s*$
+`_
+`_<yourProgram>
+`__<command-use>_custom_func()
+`__complete
+`__kubectl_custom_func()
+`__kubectl_customc_func()
+`__kubectl_get_namespaces
+`__kubectl_get_resource
+`__kubectl_get_resource()
+`__kubectl_parse_get
+`__kubectl_parse_get pod
+`_errors.c
+``
+`aliasname
+`app fetch
+`app server
+`app srver
+`asm_${GOOS}_${GOARCH}.s
+`attrs
+`author
+`bash
+`bash_completion
+`chmod +x
+`cmd.MarkFlagDirname(flag)
+`cmd.MarkZshCompPositionalArgumentFile()
+`cmd.MarkZshCompPositionalArgumentWords()
+`cmd.SetVersionTemplate(s string)
+`cmd.ValidArgsFunction(...)
+`cmd/completion.go
+`cobra-cli
+`cobra.AppendActiveHelp(...)
+`cobra.Command
+`cobra.GetActiveHelpConfig(cmd)
+`cobra.ShellCompDirective
+`cobra.ShellCompDirectiveNoSpace | cobra.ShellCompDirectiveNoFileComp
+`cols
+`command
+`command.GenFishCompletion()
+`command.GenFishCompletionFile()
+`command.GenPowerShellCompletion()
+`command.GenPowerShellCompletionFile()
+`command.GenPowerShellCompletionFileWithDesc()
+`command.GenPowerShellCompletionWithDesc()
+`command.RegisterFlagCompletionFunc()
+`completion
+`docker.sock
+`export HELM_ACTIVE_HELP=local
+`fish
+`flag
+`get
+`getReleasesFromCluster()
+`git
+`git add .
+`git checkout -b my-new-feature
+`git clone https://github.com/your_username/cobra && cd cobra
+`git commit -m 'Add some feature'
+`git describe --tags
+`git push origin my-new-feature
+`go doc
+`go get
+`go get -u golang.org/x/term
+`go get github.com/google/uuid
+`go test ./...
+`go version
+`godoc -http=:6060
+`golang/glog
+`harbor
+`hello
+`helm
+`helm repo add
+`helm status
+`helm status --namespace my-rook-ns [tab][tab]
+`help
+`i
+`includes_${uname}
+`kubectl
+`kubectl get
+`kubectl get [tab][tab]
+`kubectl get pod [mypod]
+`kubectl get pod [tab][tab]
+`linux/types.go
+`local
+`make all
+`make test
+`mkall.sh
+`mkall.sh -n
+`mkerrors.sh
+`mksyscall.go
+`mksysnum_${GOOS}.go
+`name
+`nil
+`notary
+`off
+`on
+`origcommand
+`pflag
+`pod
+`powershell
+`rc
+`rook
+`s
+`slop
+`sort.Interface
+`spf13/pflag
+`spf13/viper
+`status
+`sys/unix
+`syscall.go
+`syscall_${GOOS}.go
+`syscall_${GOOS}_${GOARCH}.go
+`thanos
+`types_${GOOS}.go
+`types_darwin.go
+`upctl
+`uuid: Parse(
+`v
+`v?([0-9]+(\.[0-9]+)*?)
+`verbose
+`viper
+`w
+`zerrors_${GOOS}_${GOARCH}.go
+`zsh
+`zsyscall_${GOOS}_${GOARCH}.go
+`zsysnum_${GOOS}_${GOARCH}.go
+`ztypes_${GOOS}_${GOARCH}.go
+`| base64 -d > /tmp/traitor

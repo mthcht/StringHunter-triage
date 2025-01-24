@@ -1,0 +1,212 @@
+"(""/"",""%4"""
+"(""20"",""50"", ""100"", ""200"",""1000"""
+"(""Change RDP fDenyTSConnections status"", %(fDenyTSConnections => ""fDenyTSConnections"""
+"(""Change Security EventLog MaxSize"", %(MaxSize => ""MaxSize"", ""EventLogType"" => ""EventLogType"""
+"(""Clearn All Eventlog"", %(EventType => ""AllEvent"""
+"(""Delete EventRecordID"", %(EventRecordID => ""1024"", EventType => ""Security"""
+"(""Delete IpAddress"", %(IpAddress => ""127.0.0.1"", EventType => ""Security"""
+"(""Delete Reg Path Value"", %(RegPath => ""HKEY_USERS"", RegValue => ""CLIENTNAME"""
+"(""PowerShell Get-WinEvent cmdlet not work(.net Version < 3.5"
+"(""Security.evtx"","""""
+"(""mydocuments"""
+"($1, ""All in One : Search"""
+"($1, ""Author: whoam1@QAX-A-TEAM"""
+"($1, ""Change PowerShell ExecutionPolicy to RemoteSigned(.Default:Restricted"
+"($1, ""Change PowerShell ExecutionPolicy to Restricted(.Default:Restricted"
+"($1, ""Change PowerShell ExecutionPolicy to Unrestricted(.Default:Restricted"
+"($1, ""Check PowerShell ExecutionPolicy(.Default:Restricted"
+"($1, ""Check Rdp Open Port"""
+"($1, ""CheckNetVersion for Powershell Get-WinEvent cmdlet."""
+"($1, ""Clearn DefaultRdp File"""
+"($1, ""Clearn TempLog File"""
+"($1, ""EventLogMaster Helper Info"""
+"($1, ""Get NT event log path %SystemRoot%+filename """
+"($1, ""Get RDC server:port & Credentials"""
+"($1, ""Get RDP Client HostName"""
+"($1, ""Get RDP Default.rdp File::full address"
+"($1, ""Get RDP Login Success Event (ID=4624&Type=10"
+"($1, ""Get RDP Login Success Event (ID=4648"
+"($1, ""Get RDP RemoteDesktopServices RdpCoreTS EventLog (ID=131&140"
+"($1, ""Get RDP TerminalServices ClientActiveXCore EventLog (ID=1024"
+"($1, ""Get RDP TerminalServices LocalSessionManager EventLog (ID=21&22&24&25"
+"($1, ""Get RDP TerminalServices RemoteConnectionManager EventLog (ID=1149"
+"($1, ""Start Eventlog Service"""
+"($1, ""Stop Eventlog Service to First Login RDP"""
+"($1, ""dir 'HKLM:\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP'"""
+"($1, ""if CheckNetVersion < 3.5, Please use 'wevtutil epl evtx' to xml."""
+"($1,""Set-Itemproperty -path 'Registry::HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\PowerShell\\1\\ShellIds\\Microsoft.PowerShell' -Name 'ExecutionPolicy' -value 'RemoteSigned'"""
+"($1,""Set-Itemproperty -path 'Registry::HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\PowerShell\\1\\ShellIds\\Microsoft.PowerShell' -Name 'ExecutionPolicy' -value 'Restricted'"""
+"($1,""Set-Itemproperty -path 'Registry::HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\PowerShell\\1\\ShellIds\\Microsoft.PowerShell' -Name 'ExecutionPolicy' -value 'Unrestricted'"""
+"($1,""\$PSVersionTable.CLRVersion.Major"""
+"($1,""for /f \""tokens=1* delims=:\"" %i in ('findstr/n .* RDPLoginFail.csv'"
+"($1,""wmic nteventlog get path\,filename\,writeable"""
+"($bid, ""Get RDP Login Failed Event (ID=4625&Type=10/3"
+"($bid, script_resource(""./logparser/LogParser.exe"""
+"($bid, script_resource(""./powershell/ClientActiveXCore.ps1"""
+"($bid, script_resource(""./powershell/EventLogCredentials.ps1"""
+"($bid, script_resource(""./powershell/EventLogSuccess.ps1"""
+"($bid, script_resource(""./powershell/FileDefaultRdp.ps1"""
+"($bid, script_resource(""./powershell/KillEvenlogService.ps1"""
+"($bid, script_resource(""./powershell/LocalSessionManager.ps1"""
+"($bid, script_resource(""./powershell/RdpCoreTS.ps1"""
+"($bid, script_resource(""./powershell/RegClientHostName.ps1"""
+"($bid, script_resource(""./powershell/RegRdcServer.ps1"""
+"($bid, script_resource(""./powershell/RegRdpPort.ps1"""
+"($bid, script_resource(""./powershell/RemoteConnectionManager.ps1"""
+"($bid, script_resource(""./powershell/SearchAllEventLog.ps1"""
+"($bid,""ClearnDefaultRdp"""
+"($bid,""ClearnTempLog"""
+"($bid,""ClientActiveXCore"""
+"($bid,""EventLogCredentials"""
+"($bid,""EventLogSuccess"""
+"($bid,""FileDefaultRdp"""
+"($bid,""KillEvenlogService"""
+"($bid,""LocalSessionManager"""
+"($bid,""LogParser.exe -stats:OFF -i:EVT \""SELECT EXTRACT_TOKEN(Strings, 19, '|'"
+"($bid,""LogParser.exe -stats:OFF -i:EVT \""SELECT TimeGenerated,EXTRACT_TOKEN(Strings, 5, '|'"
+"($bid,""LogParser.exe"""
+"($bid,""RDPLoginFail.csv"""
+"($bid,""RdpCoreTS"""
+"($bid,""RegClientHostName"""
+"($bid,""RegRdcServer"""
+"($bid,""RegRdpPort"""
+"($bid,""RemoteConnectionManager"""
+"($bid,""SearchAllEventLog"""
+"($bid,""get-Executionpolicy"""
+"($bid,""net start eventlog"""
+"($bid,""type RDPLoginFail.csv"""
+"($bid,""wevtutil cl \""Windows PowerShell\"""""
+"($bid,script_resource(""./powershell/ClearnDefaultRdp.ps1"""
+"($bid,script_resource(""./powershell/ClearnTempLog.ps1"""
+"($data[$i].name, $data[$i].'#text'"
+"($dialog, ""Delete EventLog with EventRecordID"""
+"($dialog, ""Delete EventLog with IpAddress"""
+"($dialog, ""EventLogType"", ""Select EventLogType:"", @(""Security"",""RemoteConnectionManager"", ""LocalSessionManager"""
+"($dialog, ""EventRecordID"",  ""EventRecordID:"""
+"($dialog, ""EventType"", ""EventLog Type:"", @(""AllEvent"",""Security"", ""Application"", ""Setup"",""System"",""RemoteConnectionManager"", ""LocalSessionManager"",""ClientActiveXCore"",""RdpCoreTS"""
+"($dialog, ""EventType"", ""EventLog Type:"", @(""Security"", ""RemoteConnectionManager"", ""LocalSessionManager"",""ClientActiveXCore"",""RdpCoreTS"""
+"($dialog, ""IpAddress"",  ""IpAddress:"""
+"($dialog, ""Launch"""
+"($dialog, ""MaxSize"", ""Change MaxSize (M"
+"($dialog, ""RegPath"",  ""RegPath:"",30"
+"($dialog, ""RegValue"",  ""RegValue:"",30"
+"($dialog, ""fDenyTSConnections"", ""Change RDP fDenyTSConnections: "", @(""open"",""close"""
+"(@ids, ""Change $EventLogType EventLog MaxSize to $MaxSize M"""
+"(@ids, ""Change RDP fDenyTSConnections status to $fDenyTSConnections (0 open / 1 close"
+"(@ids, ""Clearn All Eventlog"""
+"(@ids, ""Get RDP Login Failed Event (ID=4625&Type=10/3"
+"(@ids, ""Get RDP Login Success Event (ID=4624&Type=10"
+"(@ids, script_resource(""./powershell/EventLogFailed.ps1"""
+"(@ids, script_resource(""./powershell/EventLogSuccessWevtutil.ps1"""
+"(@ids, script_resource(""./powershell/RegSecMaxSize.ps1"""
+"(@ids, script_resource(""./powershell/RegfDenyTSConnections.ps1"""
+"(@ids,""Clearn $EventType Eventlog """
+"(@ids,""ClearnEventRecordID $EventType $EventTypeFlag $EventRecordID"""
+"(@ids,""ClearnIpAddress $EventType $EventTypeFlag $IpAddress"""
+"(@ids,""ClearnRegName \""$1\"""""
+"(@ids,""ClearnRegValue \""$RegPath\"" $RegValue"""
+"(@ids,""Delete EventLog where EventType = $EventType & EventRecordID = $EventRecordID"""
+"(@ids,""Delete EventLog where EventType = $EventType & IpAddress = $IpAddress"""
+"(@ids,""Delete Reg where RegPath = $RegPath & RegValue = $RegValue"""
+"(@ids,""EventLogFailed"""
+"(@ids,""EventLogSuccessWevtutil"""
+"(@ids,""Reg Delete with powershell"""
+"(@ids,""Reg Delete: $1 /f"""
+"(@ids,""RegSecMaxSize $EventLogType $MaxSize"""
+"(@ids,""RegfDenyTSConnections $fDenyTSConnections"""
+"(@ids,""Sec_.evtx"""
+"(@ids,""for /f %i in (\'wevtutil el\'"
+"(@ids,""reg add \""$1\"""""
+"(@ids,""reg delete \""$1\"" /f"""
+"(@ids,""wevtutil cl \""$EventType\"""""
+"(@ids,""wevtutil cl \""Windows PowerShell\"""""
+"(@ids,""wevtutil epl Security ./Sec_.evtx /ow:true"""
+"(@ids,script_resource(""./powershell/ClearnEventRecordID.ps1"""
+"(@ids,script_resource(""./powershell/ClearnIpAddress.ps1"""
+"(@ids,script_resource(""./powershell/ClearnRegName.ps1"""
+"(@ids,script_resource(""./powershell/ClearnRegValue.ps1"""
+"(Data[@Name='IpAddress']!='""$IpAddress""'"
+"(EventRecordID!='""$EventRecordID""'"
+"(Strings, 19, '|'"
+"(Strings, 20, '|'"
+"(wevtutil cl \""%i\"""
+($1
+($CertHash
+($ClientHostName
+($Event in $Events
+($EventLogRegValue/1024/1024
+($EventLogRegValueCheck/1024/1024
+($EventLogType -eq 'LocalSessionManager'
+($EventLogType -eq 'RemoteConnectionManager'
+($EventLogType -eq 'Security'
+($EventType -eq 'ClientActiveXCore'
+($EventType -eq 'LocalSessionManager'
+($EventType -eq 'RdpCoreTS'
+($EventType -eq 'RemoteConnectionManager'
+($EventType -eq 'Security'
+($EventType eq 'AllEvent'
+($EventType eq 'ClientActiveXCore'
+($EventType eq 'LocalSessionManager'
+($EventType eq 'RdpCoreTS'
+($EventType eq 'RemoteConnectionManager'
+($MaxSize -eq '100'
+($MaxSize -eq '1000'
+($MaxSize -eq '20'
+($MaxSize -eq '200'
+($MaxSize -eq '50'
+($Name in $UserSID
+($OutputFormat
+($OutputFormat='yyyy-MM-dd HH:mm:ss fff'
+($Server in $Servers
+($ServerName
+($ServerName in $ServerNames
+($ServerName in $ServerNames.Property
+($dialog
+($fDenyTSConnections eq 'close'
+($fDenyTSConnections eq 'open'
+($i=0; $i -lt $data.Count; $i++
+($i=0; $i -lt $eventXML.Event.EventData.Data.Count; $i++
+($i=0; $i -lt $xmlEvent.Count; $i++
+($j in $eventXML.Event.System.ChildNodes
+($null
+($xmlEvent.Count
+('$bid'
+('-'
+('4625'
+('\d+.\d+.\d+.\d+'
+((New-Object PSObject -Property $datas
+() -Value $eventXML.Event.System.($j.ToString(
+(0 open / 1 close
+(4>M 
+(Data[@Name='LogonType']='10'
+(Data[@Name='LogonType']='3'
+(EventID !='1024'
+(EventID !='1149'
+(EventID !='131'
+(EventID !='140'
+(EventID !='21'
+(EventID !='22'
+(EventID !='24'
+(EventID !='25'
+(EventID=131
+(EventID=140
+(EventID=21
+(EventID=22
+(EventID=24
+(EventID=25
+(EventID=4624
+(Get-Content $RdpDefault
+(Get-Item $evtx
+(Get-ItemProperty -Path $EventLogRegPath -ErrorAction Stop
+(Get-ItemProperty -Path $RegPath -ErrorAction Stop
+(Get-ItemProperty -Path $RegPath$Server -ErrorAction Stop
+(Get-ItemProperty -Path $SecurityRegPath -ErrorAction Stop
+(Get-ItemProperty -Path $ServerRegPath$ServerName
+(Get-ItemProperty -Path $ServerRegPath$ServerName -ErrorAction Stop
+(Get-ItemProperty -Path $TSConnectionRegPath -ErrorAction Stop
+(Qh
+(SourceIP
+([DateTime]$_
+(c
+(echo.%j
+(}

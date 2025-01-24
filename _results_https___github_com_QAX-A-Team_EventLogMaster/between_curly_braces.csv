@@ -1,0 +1,13 @@
+"{$_ -replace [Regex]('\d+.\d+.\d+.\d+'), ''"
+{ continue 
+{ return 'PowerShell Get-WinEvent cmdlet Error. Please Use EventLogSuccessWevtutil' 
+{ return 'PowerShell Get-WinEvent cmdlet Error.' 
+{ return 'Result: Null'
+{ return 'Result: Null. Pleace Use EventLogFailedLogParser. Maybe Wait a second.'
+{EH;
+{P
+{PdE|*[PtPE
+{continue
+{print $3
+{t9
+{~]

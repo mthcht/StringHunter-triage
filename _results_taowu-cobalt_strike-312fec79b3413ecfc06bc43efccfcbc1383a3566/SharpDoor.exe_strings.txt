@@ -1,0 +1,126 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+&rG	
+*BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+<Module>
+SharpDoor.exe
+Program
+SharpDoor
+mscorlib
+System
+Object
+PatchFind
+PatchReplace
+Main
+executeCommand
+GetMd5Hash
+isAdminRight
+TermsrvPatchVersion
+DetectPatch
+PatchFile
+.ctor
+args
+command
+input
+termsrvVersion
+sequence
+position
+originalFile
+patchedFile
+System.Runtime.CompilerServices
+CompilationRelaxationsAttribute
+RuntimeCompatibilityAttribute
+Console
+WriteLine
+Environment
+Exit
+System.Diagnostics
+FileVersionInfo
+GetVersionInfo
+get_ProductVersion
+String
+Concat
+System.Threading
+Thread
+Sleep
+Microsoft.Win32
+Registry
+RegistryKey
+LocalMachine
+CreateSubKey
+Int32
+RegistryValueKind
+SetValue
+Exception
+Process
+ProcessStartInfo
+get_StartInfo
+ProcessWindowStyle
+set_WindowStyle
+set_FileName
+set_Arguments
+Start
+System.Security.Cryptography
+Create
+System.Text
+Encoding
+get_UTF8
+GetBytes
+HashAlgorithm
+ComputeHash
+StringBuilder
+Byte
+ToString
+Append
+System.Security.Principal
+WindowsIdentity
+GetCurrent
+WindowsPrincipal
+WindowsBuiltInRole
+IsInRole
+IDisposable
+Dispose
+op_Equality
+<PrivateImplementationDetails>{1C88C4E3-DC49-40E3-9E0D-D09D6D2B2932}
+CompilerGeneratedAttribute
+ValueType
+__StaticArrayInitTypeSize=12
+$$method0x6000005-1
+RuntimeHelpers
+Array
+RuntimeFieldHandle
+InitializeArray
+$$method0x6000005-2
+$$method0x6000005-3
+$$method0x6000005-4
+$$method0x6000005-5
+$$method0x6000005-6
+System.IO
+Path
+GetDirectoryName
+File
+ReadAllBytes
+WriteAllBytes
+.cctor
+$$method0x6000009-1
+m+)2
+WrapNonExceptionThrows
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

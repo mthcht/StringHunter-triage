@@ -1,0 +1,89 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+GeoPosition`1
+EventHandler`1
+GeoPositionChangedEventArgs`1
+Microsoft.Win32
+<Module>
+mscorlib
+add_PositionChanged
+System.Device
+get_Longitude
+get_Latitude
+Double
+Console
+WriteLine
+LocalMachine
+GeoCoordinate
+DebuggableAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+GetValue
+GPSCoordinates.exe
+System.Runtime.Versioning
+ToString
+Program
+System
+TimeSpan
+Main
+System.Device.Location
+get_Location
+System.Reflection
+get_Position
+PrintPosition
+ConsoleKeyInfo
+sender
+GeoCoordinateWatcher
+tracker
+CurrentUser
+.ctor
+System.Diagnostics
+FromMilliseconds
+System.Runtime.CompilerServices
+DebuggingModes
+GPSCoordinates
+args
+Equals
+Contains
+Object
+coordinateCollect
+GetLocationEvent
+TryStart
+OpenSubKey
+ReadKey
+RegistryKey
+Registry
+WrapNonExceptionThrows
+GPSCoordinates
+${AuthorCopyright}
+.NETFramework,Version=v4.0
+FrameworkDisplayName
+.NET Framework 4
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

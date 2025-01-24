@@ -1,0 +1,1 @@
+"cmd /c start \"" $+ $Path\""\""&&sc config \"" $+ $Name\"" start= auto&&net start  $+ $Name"");"

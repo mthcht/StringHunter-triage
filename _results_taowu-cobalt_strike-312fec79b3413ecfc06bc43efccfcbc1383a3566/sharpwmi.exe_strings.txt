@@ -1,0 +1,109 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+**2s
+BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+UInt32
+<Module>
+System.IO
+mscorlib
+Thread
+ExecCmd
+InvokeMethod
+set_Password
+Base64Decode
+get_Unicode
+Base64Encode
+IDisposable
+File
+Console
+set_Username
+WriteLine
+ManagementScope
+scope
+Dispose
+GuidAttribute
+DebuggableAttribute
+ComVisibleAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+AssemblyFileVersionAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+sharpwmi.exe
+System.Threading
+Encoding
+System.Runtime.Versioning
+FromBase64String
+ToBase64String
+ToString
+GetString
+ManagementPath
+sharpwmi
+ImpersonationLevel
+get_Item
+set_Item
+System
+Main
+set_Impersonation
+System.Reflection
+Sleep
+.ctor
+System.Diagnostics
+System.Runtime.InteropServices
+System.Runtime.CompilerServices
+DebuggingModes
+set_EnablePrivileges
+ReadAllBytes
+GetBytes
+args
+get_Options
+InvokeMethodOptions
+ConnectionOptions
+ObjectGetOptions
+GetMethodParameters
+ManagementClass
+Concat
+Format
+ManagementBaseObject
+ManagementObject
+Connect
+System.Management
+content
+Convert
+System.Text
+op_Equality
+X-xF:d
+WrapNonExceptionThrows
+sharpwmi
+Copyright 
+  2020
+$bb357d38-6dc1-4f20-a54c-d664bd20677e
+1.0.0.0
+.NETFramework,Version=v4.0
+FrameworkDisplayName
+.NET Framework 4
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

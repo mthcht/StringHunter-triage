@@ -1,0 +1,3 @@
+"                              Program.Log(""Invoking Command "" + cmd.Name + "" for driver "" + receiver.Key.GetType().Name + ""."");"
+"                            var response = cmd.Invoke(receiver.Key, new object[] { SubArray(packet, methodEnd + 1, packet.Length - methodEnd - 1) }) as byte[];"
+"                if (String.Compare(receiver.Key.GetType().Name, commandReceiverName, StringComparison.OrdinalIgnoreCase) == 0)"

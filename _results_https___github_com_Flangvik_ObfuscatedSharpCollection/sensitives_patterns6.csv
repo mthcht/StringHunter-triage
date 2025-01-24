@@ -1,0 +1,17 @@
+    the credentials inside the server's --authfile. defaults to the
+  - name: Cloud Credentials
+"          - name: "".git-credentials"""
+"          - name: ""credentials"""
+"          - name: ""credentials.db"""
+"          - name: ""legacy_credentials.db"""
+"    in the form: ""<user>:<pass>"". These credentials are compared to"
+"""KeepCmdCredentials"","
+"""credentials-config\\.json"","
+"""credentials\\.xml""]"
+"#""KeepShellScriptCredentials"","
+"RelayTargets = [""KeepCmdCredentials"","
+"RelayTargets = [""KeepPsCredentials"","
+"RuleName = ""KeepCmdCredentials"""
+"RuleName = ""KeepPsCredentials"""
+"WordList = [""\\.git-credentials""]"
+"https://github.com/V1V1/SharpScribbles) - C# Retrieves data (contacts, emails, history, cookies and credentials) from Thunderbird and Firefox. @V1V1 "

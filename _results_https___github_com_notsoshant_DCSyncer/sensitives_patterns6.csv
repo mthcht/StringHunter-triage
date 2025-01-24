@@ -1,0 +1,5 @@
+"		PRINT_NORMAL(L""\nCredentials:\n"");"
+"		PRINT_NORMAL(L""\nSupplemental Credentials:\n"");"
+"	/*if (findMonoAttr(prefixTable, attributes, szOID_ANSI_supplementalCredentials, &encodedData, &encodedDataSize))"
+"#define szOID_ANSI_supplementalCredentials	""1.2.840.113556.1.4.125"""
+"dePwd, szOID_ANSI_ntPwdHistory, szOID_ANSI_dBCSPwd, szOID_ANSI_lmPwdHistory, szOID_ANSI_supplementalCredentials,"

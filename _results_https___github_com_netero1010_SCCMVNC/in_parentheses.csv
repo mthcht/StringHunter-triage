@@ -1,0 +1,98 @@
+"("" "", args"
+"("","", mObject[""PermittedViewers""] as string[]"
+"(""/target:"".Length"
+"(""/viewer:"".Length"
+"(""A management exception has occurred: "" + ex.Message"
+"(""A management exception occurred: "" + ex.Message"
+"(""An unexpected error has occurred: "" + e.Message"
+"(""An unexpected error occurred: "" + e.Message"
+"(""Current setting"""
+"(""Executing in the localhost..."""
+"(""New setting"""
+"(""SELECT * FROM Ccm_RemoteToolsConfig"""
+"(""The specified WMI namespace is not valid."""
+"(""Unknown action."""
+"(""You do not have permission to access the remote computer."""
+"(""[-] {0}"", message"
+"(""{0,-60}: {1}"", ""AccessLevel"", mObject[""AccessLevel""]"
+"(""{0,-60}: {1}"", ""AllowClientChange"", mObject[""AllowClientChange""]"
+"(""{0,-60}: {1}"", ""AllowLocalAdminToDoRemoteControl"", mObject[""AllowLocalAdminToDoRemoteControl""]"
+"(""{0,-60}: {1}"", ""AllowRAUnsolicitedControl"", mObject[""AllowRAUnsolicitedControl""]"
+"(""{0,-60}: {1}"", ""AllowRAUnsolicitedView"", mObject[""AllowRAUnsolicitedView""]"
+"(""{0,-60}: {1}"", ""AllowRemCtrlToUnattended"", mObject[""AllowRemCtrlToUnattended""]"
+"(""{0,-60}: {1}"", ""AudibleSignal"", mObject[""AudibleSignal""]"
+"(""{0,-60}: {1}"", ""ClipboardAccessPermissionRequired"", mObject[""ClipboardAccessPermissionRequired""]"
+"(""{0,-60}: {1}"", ""Current AccessLevel"", mObject[""AccessLevel""]"
+"(""{0,-60}: {1}"", ""Current AllowClientChange"", mObject[""AllowClientChange""]"
+"(""{0,-60}: {1}"", ""Current AllowLocalAdminToDoRemoteControl"", mObject[""AllowLocalAdminToDoRemoteControl""]"
+"(""{0,-60}: {1}"", ""Current AllowRAUnsolicitedControl"", mObject[""AllowRAUnsolicitedControl""]"
+"(""{0,-60}: {1}"", ""Current AllowRAUnsolicitedView"", mObject[""AllowRAUnsolicitedView""]"
+"(""{0,-60}: {1}"", ""Current AllowRemCtrlToUnattended"", mObject[""AllowRemCtrlToUnattended""]"
+"(""{0,-60}: {1}"", ""Current AudibleSignal"", mObject[""AudibleSignal""]"
+"(""{0,-60}: {1}"", ""Current ClipboardAccessPermissionRequired"", mObject[""ClipboardAccessPermissionRequired""]"
+"(""{0,-60}: {1}"", ""Current EnableRA"", mObject[""EnableRA""]"
+"(""{0,-60}: {1}"", ""Current EnableTS"", mObject[""EnableTS""]"
+"(""{0,-60}: {1}"", ""Current Enabled"", mObject[""Enabled""]"
+"(""{0,-60}: {1}"", ""Current PermissionRequired"", mObject[""PermissionRequired""]"
+"(""{0,-60}: {1}"", ""Current PermittedViewers"", currentPermittedViewers"
+"(""{0,-60}: {1}"", ""Current RemCtrlConnectionBar"", mObject[""RemCtrlConnectionBar""]"
+"(""{0,-60}: {1}"", ""Current RemCtrlTaskbarIcon"", mObject[""RemCtrlTaskbarIcon""]"
+"(""{0,-60}: {1}"", ""EnableRA"", mObject[""EnableRA""]"
+"(""{0,-60}: {1}"", ""EnableTS"", mObject[""EnableTS""]"
+"(""{0,-60}: {1}"", ""Enabled"", mObject[""Enabled""]"
+"(""{0,-60}: {1}"", ""New AccessLevel"", mObject[""AccessLevel""]"
+"(""{0,-60}: {1}"", ""New AllowClientChange"", mObject[""AllowClientChange""]"
+"(""{0,-60}: {1}"", ""New AllowLocalAdminToDoRemoteControl"", mObject[""AllowLocalAdminToDoRemoteControl""]"
+"(""{0,-60}: {1}"", ""New AllowRAUnsolicitedControl"", mObject[""AllowRAUnsolicitedControl""]"
+"(""{0,-60}: {1}"", ""New AllowRAUnsolicitedView"", mObject[""AllowRAUnsolicitedView""]"
+"(""{0,-60}: {1}"", ""New AllowRemCtrlToUnattended"", mObject[""AllowRemCtrlToUnattended""]"
+"(""{0,-60}: {1}"", ""New AudibleSignal"", mObject[""AudibleSignal""]"
+"(""{0,-60}: {1}"", ""New ClipboardAccessPermissionRequired"", mObject[""ClipboardAccessPermissionRequired""]"
+"(""{0,-60}: {1}"", ""New EnableRA"", mObject[""EnableRA""]"
+"(""{0,-60}: {1}"", ""New EnableTS"", mObject[""EnableTS""]"
+"(""{0,-60}: {1}"", ""New Enabled"", mObject[""Enabled""]"
+"(""{0,-60}: {1}"", ""New PermissionRequired"", mObject[""PermissionRequired""]"
+"(""{0,-60}: {1}"", ""New PermittedViewers"", String.IsNullOrEmpty(viewer"
+"(""{0,-60}: {1}"", ""New RemCtrlConnectionBar"", mObject[""RemCtrlConnectionBar""]"
+"(""{0,-60}: {1}"", ""New RemCtrlTaskbarIcon"", mObject[""RemCtrlTaskbarIcon""]"
+"(""{0,-60}: {1}"", ""PermissionRequired"", mObject[""PermissionRequired""]"
+"(""{0,-60}: {1}"", ""PermittedViewers"", currentPermittedViewers"
+"(""{0,-60}: {1}"", ""RemCtrlConnectionBar"", mObject[""RemCtrlConnectionBar""]"
+"(""{0,-60}: {1}"", ""RemCtrlTaskbarIcon"", mObject[""RemCtrlTaskbarIcon""]"
+"(' ', padding"
+"(','"
+"('-', totalWidth"
+"(@""\\{0}\root\ccm\policy\Machine\ActualConfig"", computerName"
+"(String.Format(""Connecting to {0}..."", computerName"
+"(computerName != ""."""
+"(computerName, viewOnly, viewer"
+"(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries"
+"(output.Length - 1, "" """
+"(processedArgs[i].Equals(""/viewonly"", StringComparison.OrdinalIgnoreCase"
+"(processedArgs[i].StartsWith(""/target:"", StringComparison.OrdinalIgnoreCase"
+"(processedArgs[i].StartsWith(""/viewer:"", StringComparison.OrdinalIgnoreCase"
+"(scope, query"
+"(string computerName, bool viewOnly, string viewer"
+"(the ""Software"""
+(Exception e
+(It is supposed to be just one
+(ManagementException ex
+(ManagementObject mObject in queryCollection
+(UnauthorizedAccessException
+(action
+(c
+(computerName
+(ex.ErrorCode == ManagementStatus.InvalidNamespace
+(int i = 1; i < processedArgs.Length; i++
+(output
+(output.Length < totalWidth
+(processedArgs.Length == 0
+(separatorLine
+(string computerName
+(string message
+(string[] args
+(totalWidth - message.Length
+(usually only one
+(viewer
+(wmiScopePath
+(x86

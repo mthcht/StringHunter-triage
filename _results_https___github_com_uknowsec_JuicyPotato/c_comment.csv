@@ -1,0 +1,39 @@
+"//	printf(""startCOMListener iResult ComLisetner:%d\n"", iResult);"
+"// Always set out parameter to NULL, validating it first."
+"// If you wish to build your application for a previous Windows platform, include WinSDKVer.h and"
+"// or project specific include files that are used frequently, but"
+"// printf(""[+] Listening on port:%s\n"", dcom_port);"
+"// stdafx.h : include file for standard system include files,"
+// Attempt to connect to an address
+// Connect to server
+// Create Suspended for APC Injection
+// Create a SOCKET for connecting to server
+// Decrement the object's internal counter.
+// Exclude rarely-used stuff from Windows headers
+// Fallback to default BITS CLSID
+// Get a token for this process. 
+// Including SDKDDKVer.h defines the highest available Windows platform.
+// Increment the reference count and return the pointer.
+// Initialize Winsock
+// MSFRottenPotato.pch will be the pre-compiled header
+// Marshalling Port & Ip address of COM Server
+// Resolve the server address and port
+// Send/Receive until the peer closes the connection
+// Setup the TCP listening socket
+// TODO: reference additional headers your program requires here
+// TODO: reference any additional headers you need in STDAFX.H
+// Windows Header Files:
+// Zero timeout (poll)
+// and not in this file
+// are changed infrequently
+// blocking pop
+// cleanup
+// non-blocking pop
+// push
+// queue is empty?
+// remove all items
+// set the _WIN32_WINNT macro to the platform you wish to support before including SDKDDKVer.h.
+// setup for NTAPI functions
+// shutdown the connection since we're done
+// stdafx.cpp : source file that includes just the standard includes
+// stdafx.obj will contain the pre-compiled type information

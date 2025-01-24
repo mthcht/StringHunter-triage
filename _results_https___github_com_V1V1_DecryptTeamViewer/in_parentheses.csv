@@ -1,0 +1,56 @@
+"("""""
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""Account name: "" + GetRegValue(""TeamViewerSettings"", ""OwningManagerAccountName"""
+"(""DecryptTeamViewer"""
+"(""Proxy IP: "" + GetRegValue(""TeamViewerSettings"", ""Proxy_IP"""
+"(""Proxy password: "" + DecryptAES(proxyPass"
+"(""Proxy username: "" + GetRegValue(""TeamViewerSettings"", ""ProxyUsername"""
+"(""TeamViewer exported security password: "" + DecryptAES(exportedSecurityPass"
+"(""TeamViewer license key: "" + DecryptAES(licenseKey"
+"(""TeamViewer options password: "" + DecryptAES(optionsPass"
+"(""TeamViewer security password: "" + DecryptAES(securityPass"
+"(""TeamViewer server password: "" + DecryptAES(serverPass"
+"(""TeamViewerSettings"", ""LicenseKeyAES"""
+"(""TeamViewerSettings"", ""OptionsPasswordAES"""
+"(""TeamViewerSettings"", ""ProxyPasswordAES"""
+"(""TeamViewerSettings"", ""SecurityPasswordAES"""
+"(""TeamViewerSettings"", ""SecurityPasswordExported"""
+"(""TeamViewerSettings"", ""ServerPasswordAES"""
+"(""User email: "" + GetRegValue(""TeamViewerUserSettings"", ""BuddyLoginName"""
+"(""\r\n=== Decrypted Credentials ===\r\n"""
+"(""\r\n=== Proxy Information ===\r\n"""
+"(""\r\n=== TeamViewer version ===\r\n"""
+"(""\r\n=== User Information ===\r\n"""
+"(""\r\n\r\n=== DecryptTeamViewer: Pillaging registry for TeamViewer information ===\r\n"""
+"(""d6aaed62-bbfc-4f2a-a2a4-35ec5b2a4e07"""
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"(@""SOFTWARE\TeamViewer"", false"
+"(@""SOFTWARE\WOW6432Node\TeamViewer"", false"
+"(GetRegValue(""TeamViewerSettings"", ""Version"""
+"(encryptedPass, 0, encryptedPass.Length"
+"(hive == ""TeamViewerSettings"""
+"(hive == ""TeamViewerUserSettings"""
+"(key, IV"
+"(string hive, string value"
+('$(MSBuildExtensionsPath
+(Configuration
+(Exception
+(ExtensibilityGlobals
+(MSBuildExtensionsPath
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(Platform
+(ProjectConfigurationPlatforms
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(byte[]
+(byte[] encryptedPass
+(decrytedPass
+(encryptedPass != null
+(false
+(https://securityonline.info/wp-content/uploads/2020/02/s.png
+(https://twitter.com/Blurbdust
+(regKey != null
+(string[] args
+(value

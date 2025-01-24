@@ -1,0 +1,5 @@
+"UserName"" = $entry.Event.UserData.EventXML.Param1"
+"Username, EXTRACT_TOKEN(Strings, 19, '|') AS SourceIP ,EXTRACT_TOKEN(Strings, 20, '|') AS Sport INTO RDPLoginFail.csv FROM Security WHERE EventID IN ('4625')\"" -o:CSV"");"
+"UsernameHint: ""$UsernameHint"
+"UsernameHint: ""$UsernameHint""    CertHash: ""$CertHash"
+UsernameHint = (Get-ItemProperty -Path $ServerRegPath$ServerName).UsernameHint

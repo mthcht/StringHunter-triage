@@ -1,0 +1,54 @@
+"{"" - Great Candidate"" if great_candidate else """""
+"{""http"" if not tls else ""https"""
+"{'--port': args.port, '--certfile': args.certfile, '--keyfile': args.keyfile"
+"{'status': 0, 'reason': stat.split('FAILED ')[1]"
+{'status': 1
+{ACEshark_logs_dir
+{BLUE
+{BOLD
+{DEBUG
+{DEBUG_ENDPOINT
+{DELIMITER
+{ERR
+{GREEN
+{IMP
+{INFO
+{LPURPLE
+{MAIN
+{OOPS
+{ORNG
+{PL
+{POST_DATA_ENDPOINT
+{RED
+{RST
+{SRVS_CONF_FILENAME
+{ace_type
+{active_template
+{args.server_address
+{binpath
+{client_addr
+{display_rights
+{e
+{file_path
+{generic_access_rights[r.value]
+{i
+{item
+{key
+{obj_name
+{port
+{r.value
+{reason
+{server_address
+{service
+{service_type
+{sid
+{sid_val
+{start_type
+{timestamp
+{user_account
+{user_groups
+{user_sid
+{val
+{{ $c=sc.exe sdshow $_.Name; $x=(sc.exe qc $_.Name | ForEach-Object {{ $_.Trim() 
+{{ $c=sc.exe sdshow $_.PSChildName; $x=(sc.exe qc $_.PSChildName | ForEach-Object {{ $_.Trim() 
+{{data=$d

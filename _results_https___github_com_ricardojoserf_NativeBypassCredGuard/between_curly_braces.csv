@@ -1,0 +1,54 @@
+"{ Console.Write("" ""); "
+"{ LowPart = 20, HighPart = 0 "
+"{ baseofcode, sizeofcode "
+"{status.ToString(""X"")"
+{ 0 
+{ BYTE data[16]; 
+{ DWORD PrivilegeCount; LUID Luid; DWORD Attributes; 
+{ ProcessBasicInformation = 0 
+{ QuadPart = 0 
+{ ULONG Length; HANDLE RootDirectory; PUNICODE_STRING ObjectName; ULONG Attributes; PVOID SecurityDescriptor; PVOID SecurityQualityOfService; 
+{ USHORT Length; USHORT MaximumLength; PWSTR Buffer; 
+{ [FieldOffset(0)] public long QuadPart; 
+{ break; 
+{ public IntPtr Status; public ulong Information; 
+{ public IntPtr hProcess; public IntPtr hThread; public int dwProcessId; public int dwThreadId; 
+{ public int Length; public IntPtr RootDirectory; public IntPtr ObjectName; public uint Attributes; public IntPtr SecurityDescriptor; public IntPtr SecurityQualityOfService; 
+{ public int cb; public IntPtr lpReserved; public IntPtr lpDesktop; public IntPtr lpTitle; public int dwX; public int dwY; public int dwXSize; public int dwYSize; public int dwXCountChars; public int dwYCountChars; public int dwFillAttribute; public int dwFlags; public short wShowWindow; public short cbReserved2; public IntPtr lpReserved2; public IntPtr hStdInput; public IntPtr hStdOutput; public IntPtr hStdError; 
+{ public uint LowPart; public int HighPart; 
+{ public uint PrivilegeCount; public LUID Luid; public uint Attributes; 
+{ public ushort Length; public ushort MaximumLength; public IntPtr Buffer; 
+{ union { NTSTATUS Status; PVOID Pointer; 
+{(isCredGuardEnabled + offset + 12):X6
+{(useLogonCredential + offset + 6):X6
+{4FC737F1-C7A5-4376-A066-2A32D752A2FF
+{67DA6AB6-F800-4c08-8B7A-83BB121AAD01
+{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942
+{93995380-89BD-4b04-88EB-625FBE52EBFB
+{C4D31433-5017-4B5E-956B-8A540520986C
+{E383DFEA-EC22-4667-9434-3F2591A03740
+{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC
+{FD121379-6CFF-4743-8A02-4151B0571711
+{Marshal.GetLastWin32Error()
+{c4d31433-5017-4b5e-956b-8a540520986c
+{debug
+{ex.Message
+{fileHandle
+{hModule.ToInt64():X
+{isCredGuardEnabled:X6
+{isCredGuardEnabled_Address.ToInt64():X
+{isCredGuardEnabled_Value
+{isCredGuardEnabled_buffer[0]:X2
+{isCredGuardEnabled_buffer[1]:X2
+{isCredGuardEnabled_buffer[2]:X2
+{isCredGuardEnabled_buffer[3]:X2
+{lsassHandle
+{matchedBytes[l]:X2
+{offset:X
+{useLogonCredential:X6
+{useLogonCredential_Address.ToInt64():X
+{useLogonCredential_Value
+{useLogonCredential_buffer[0]:X2
+{useLogonCredential_buffer[1]:X2
+{useLogonCredential_buffer[2]:X2
+{useLogonCredential_buffer[3]:X2

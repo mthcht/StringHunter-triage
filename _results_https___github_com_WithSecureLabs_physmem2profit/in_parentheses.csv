@@ -1,0 +1,579 @@
+"( cd ""$( dirname ""${BASH_SOURCE[0]}"" "
+"(!DeviceIoControl(_hDevice, INFO_IOCTRL, mode, (uint"
+"(!IPAddress.TryParse(commandLineArguments[i], out ListeningIp"
+"(!QueryServiceStatusEx(serviceHandle, 0, pData, sizeof(SERVICE_STATUS_PROCESS"
+"(!ReadFile(_hDevice, packet, (uint"
+"(!SetFilePointerEx(_hDevice, (long"
+"(!StartService(_handle.Handle, 0, null"
+"(!UInt16.TryParse(commandLineArguments[i], out ListeningPort"
+"(""   Registered command: "" + cmd.Name + ""."", Program.LogMessageSeverity.Success"
+"("""""
+"(""%Y-%m-%d"""
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""127.0.0.1"""
+"(""814708c9-2320-42d2-a45f-31e42da06a94"""
+"(""<I"", received"
+"(""<I%ds"" % len(order"
+"(""<I%dsQQ"" % len(order"
+"(""<QQ"", received"
+"(""<QQQQ"", received"
+"(""Advanced RVA %x bytes, tail length is %x"" % (rva-rva_before, len(tail"
+"(""Appending cached"""
+"(""Appending zeros"""
+"(""Building minidump"""
+"(""Caching page %u"" % (self.queued_offset//self.PAGE_SIZE"
+"(""Cannot start a service that was not open."""
+"(""Cannot stop a service that was not open."""
+"(""Command for driver '"" + command + ""' not recognized."", Program.LogMessageSeverity.Error"
+"(""Command/driver not recognized: "" + commandReceiverName, Program.LogMessageSeverity.Error"
+"(""Connected!"", Program.LogMessageSeverity.Success"
+"(""Couldn't move file pointer."""
+"(""Couldn't parse IP number for -i/--ip CL switch."""
+"(""Couldn't parse port number for -p/--port CL switch."""
+"(""Couldn't read from driver."""
+"(""Couldn't register driver bridge: "" + type.Name + "". "" + exception.Message, Program.LogMessageSeverity.Error"
+"(""Creating service "" + _serviceName + ""..."""
+"(""DTB"", hex(dtb"
+"(""Disconnecting... Component is still open for another connection."""
+"(""Done"""
+"(""Driver file does not exist."""
+"(""Driver service started."", Program.LogMessageSeverity.Success"
+"(""Exit command received. Terminating."", Program.LogMessageSeverity.Information"
+"(""Expected tail start: %x, got: %x"" % (expected_tail_start, len(output"
+"(""Failed to create service."""
+"(""Failed to delete service."""
+"(""Failed to get handle to SC Manager."""
+"(""Fetching queued data (requested %x, queued %x-%x"
+"(""Fetching queued data"""
+"(""Found driver bridge: "" + type.Name + ""."", Program.LogMessageSeverity.Success"
+"(""Gathering page %u (offset %x"
+"(""Image size: %u MB"" % (self.image_size/(1024*1024"
+"(""Installing service..."""
+"(""Invalid length of arguments."", Program.LogMessageSeverity.Error"
+"(""Invoking Command "" + cmd.Name + "" for driver "" + receiver.Key.GetType("
+"(""Items in gathered before: %u"" % (len(self.gathered"
+"(""Len buf %u"" % (len(buf"
+"(""Memory64ListStream should be at offset 0x%x"" % rva"
+"(""MemoryInfoListStream should be at offset 0x%x"" % rva"
+"(""MimikatzStream should be at offset 0x%x"" % rva"
+"(""MmPfnDatabase"""
+"(""ModuleListStream should be at offset 0x%x"" % rva"
+"(""New client is about to connect - aborting previous connection."", Program.LogMessageSeverity.Warning"
+"(""No IP number for -i/--ip CL switch provided."""
+"(""No port number for -p/--port CL switch provided."""
+"(""Not implemented yet"""
+"(""Physmem2profit2"""
+"(""QueryServiceStatusEx failed."""
+"(""RVA1: %x"" % (rva"
+"(""RVA2: %x"" % (rva"
+"(""Read %u MB, cached reads %u MB"" % (self.read_total / (1024*1024"
+"(""Read %u megabytes"" % (self.read_total / (1024*1024"
+"(""Reading %u bytes from 0x%x"" % (length, offset"
+"(""Received %u bytes from offset %x"" % (len(data"
+"(""Received %u bytes"" % (len(data"
+"(""Registering driver bridges."""
+"(""Returning page %u (offset %x"
+"(""Returning zeros"""
+"(""Run in a context of a non-elevated user."", LogMessageSeverity.Warning"
+"(""SampleCommand called."""
+"(""Sending ParseMemoryRuns control code failed, windows error code"""
+"(""Sending"""
+"(""Sent %u bytes. Receiving"" % (sent"
+"(""Server Started."", Program.LogMessageSeverity.Success"
+"(""Service "" + _serviceName + "" already exists."", Program.LogMessageSeverity.Warning"
+"(""Service Failed to start."""
+"(""Service Failed to stop."""
+"(""Service already opened."", Program.LogMessageSeverity.Warning"
+"(""Service already running."", Program.LogMessageSeverity.Warning"
+"(""Service already stopped."", Program.LogMessageSeverity.Warning"
+"(""Service created successfully."", Program.LogMessageSeverity.Success"
+"(""Service is in a continue-pending state. "", Program.LogMessageSeverity.Warning"
+"(""Service is in a continue-pending state. Trying to stop it..."", Program.LogMessageSeverity.Warning"
+"(""Service is in a pause-pending state. Trying to start it..."", Program.LogMessageSeverity.Warning"
+"(""Service is in a pause-pending state. Trying to stop it..."", Program.LogMessageSeverity.Warning"
+"(""Service is in a start-pending state. Trying to stop it..."", Program.LogMessageSeverity.Warning"
+"(""Service is in a start-pending state."", Program.LogMessageSeverity.Warning"
+"(""Service is in a stop-pending state. Trying to start it..."", Program.LogMessageSeverity.Warning"
+"(""Service is in a stop-pending state."", Program.LogMessageSeverity.Warning"
+"(""Service is paused. Trying to start it..."", Program.LogMessageSeverity.Warning"
+"(""Service is paused. Trying to stop it..."", Program.LogMessageSeverity.Warning"
+"(""Service is running. Trying to stop it..."""
+"(""Service is stopped. Trying to start it..."""
+"(""Setting memory64 list"""
+"(""Setting memoryinfo list"""
+"(""Setting module list"""
+"(""Setting systeminfo"", si"
+"(""Starting server on "" + ip.ToString("
+"(""Starting service..."""
+"(""Successfully installed the WinPMem driver."", Program.LogMessageSeverity.Success"
+"(""Successfully unloaded the WinPMem driver."", Program.LogMessageSeverity.Success"
+"(""SystemInfoStream should be at offset 0x%x"" % rva"
+"(""These should match: %u %u"" % (len(output"
+"(""Unable to get a handle to 'pmem' device object."""
+"(""Waiting for a connection..."""
+"(""We have extra"""
+"(""Writing %x bytes of Memory64ListStream to offset %x"" % (len(stream"
+"(""Writing MemoryInfoListStream to offset 0x%x"" % len(output"
+"(""Writing MimikatzStream to offset 0x%x"" % len(output"
+"(""Writing ModuleListStream to offset 0x%x"" % len(output"
+"(""Writing SystemInfoStream to offset 0x%x"" % len(output"
+"(""Wrong packet. Method not provided"""
+"(""Wrong packet. Receiver not provided."""
+"(""Wrong usage. Please provide the location of WinPMem driver."""
+"(""[!] .vmss file is most likely required. If you have a .vmsn file, please rename it to .vmss and try again"""
+"(""["" + severityCharacter + ""] "" + message"
+"(""[*] %u/%u MB analyzed"" % (count//1024//1024, image_size//1024//1024"
+"(""[*] Analyzing local image %s"" % (image_base"
+"(""[*] Analyzing physical memory"""
+"(""[*] Checking for Credential Guard..."""
+"(""[*] Collecting data for minidump: memory info and content"""
+"(""[*] Collecting data for minidump: module info"""
+"(""[*] Collecting data for minidump: system info"""
+"(""[*] Connected"""
+"(""[*] Connecting to %s on port %u"" % (host, port"
+"(""[*] Credential Guard detected!"""
+"(""[*] Driver installed"""
+"(""[*] Exposing the physical memory as a file"""
+"(""[*] Finding LSASS process"""
+"(""[*] Finding Secure World pages (this will take about %u minutes"
+"(""[*] Generating the minidump file"""
+"(""[*] Getting physical memory layout"""
+"(""[*] LSASS found"""
+"(""[*] Largest physical address is 0x%x (%u GB"
+"(""[*] Loading config from %s"" % (CONFIG_FILE"
+"(""[*] No Credential Guard detected"""
+"(""[*] Read %u MB, cached reads %u MB"" % (self.read_total / (1024*1024"
+"(""[*] Reading %u MB of Secure World data from .vmem"" % (len(secure_world_pages"
+"(""[*] Windows build number not known, collecting it with imageinfo plugin"""
+"(""[*] Writing Secure World data to %s"" % (filepath"
+"(""[*] Wrote LSASS minidump to %s"" % (filepath"
+"(""[*] Wrote config to config.json"""
+"(""[-] --vmem specified but file %s does not exist"" % (args.vmem"
+"(""[-] Failed to connect, quitting"""
+"(""[-] Image file must have .vmem file extension when using the --vmem switch"""
+"(""[-] No LSASS found"""
+"(""[-] Pleae use --mode dump with --vmem switch"""
+"(""[-] Required command line argument "" + str + "" not provided"""
+"(""[read] offset %x, length: %u"" % (offset, requested_length"
+"(""\nRVA before: %x"" % (rva_before"
+"(""advapi32"", EntryPoint = ""OpenSCManagerW"", SetLastError = true, ExactSpelling = true, CharSet = CharSet.Unicode"
+"(""advapi32"", SetLastError = true"
+"(""advapi32"", SetLastError = true, CharSet = CharSet.Auto"
+"(""advapi32"", SetLastError = true, CharSet = CharSet.Unicode"
+"(""advapi32.dll"", SetLastError = true"
+"(""advapi32.dll"", SetLastError = true, CharSet = CharSet.Unicode"
+"(""build"", build"
+"(""config.json"""
+"(""highest_usermode_address"""
+"(""kernel32"", ExactSpelling = true, SetLastError = true, CharSet = CharSet.Auto"
+"(""kernel32"", SetLastError = true"
+"(""kernel32.dll"""
+"(""kernel32.dll"", SetLastError = true"
+"(""kernel_base"", hex(kernel_base"
+"(""pslist_CSRSS"", set("
+"(""pslist_Handles"", set("
+"(""pslist_PspCidTable"", set("
+"(""pslist_Sessions"", set("
+"(""rva is now %x"" % (rva"
+"(""rva is now %x, output length is %x"" % (rva, len(output"
+"(""user32.dll"""
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"('%s\n%s\n%s' % (self.driver, self.order[0], self.installArguments"
+"('%s\n%s\n' % (self.driver, self.order[1]"
+"('%s\n%s\n' % (self.driver, self.order[2]"
+"('%s\n%s\n' % (self.driver, self.order[3]"
+"('--driver', choices=['winpmem'], default='winpmem', help=""Specifies class used by server to handle driver (use with mount"
+"('--host', help=""Target host (use with mount"
+"('--install', help=""Provides parameters needed for driver installation eg path (use with mount"
+"('--label', default=('dump'"
+"('--mode', choices=['mount', 'dump', 'all'], default='all', help=""Mode of operation."""
+"('--port', type=int, default=8080, help=""Target port (use with mount"
+"('--vmem', help=""Path to .vmem file (support Credential Guard"
+"('/', self.FILENAME"
+"('config.json', 'w'"
+"((host, port"
+"((start, end, 'mem'"
+"((start, size, data"
+"((start,size"
+"((x.lower, x.upper, 'pad'"
+"(), dll['size'].v("
+"(BaseOfImage=m[1], SizeOfImage=m[2], ModuleNameRva=rva"
+"(Computed(lambda this: get_string(Pointer(this.CSDVersionRVA, PascalString(Int32ul, ""utf-16"""
+"(Const(VS_FIXEFILEINFO_SIGNATURE, Int32ul"
+"(ControlService(_handle.Handle, ServiceControl.Stop, status"
+"(CreateService(_hScManager.Handle, _serviceName, _serviceName, (uint"
+"(IPAddress ip, UInt16 tcpPort, Dictionary<ICommandReceiver, List<MethodInfo>> receivers"
+"(Int16ul, 0"
+"(Int16ul, 6"
+"(Int16ul, 9"
+"(Int32ul, ""utf_16_le"""
+"(Int32ul, 0"
+"(Int32ul, 16"
+"(Int32ul, MINIDUMP_MEMORY_INFO.sizeof("
+"(Int32ul[6], [0,0,0,0,0,0]"
+"(Int64ul, 0"
+"(Int8ul, 0"
+"(Int8ul, 1"
+"(IntPtr hFile, [Out] byte[] lpBuffer, uint nNumberOfBytesToRead, out uint lpNumberOfBytesRead, IntPtr lpOverlapped"
+"(IntPtr hFile, long liDistanceToMove, IntPtr lpNewFilePointer, uint dwMoveMethod"
+"(IntPtr hSCManager, string lpServiceName, uint dwDesiredAccess"
+"(IntPtr hService, int dwNumServiceArgs, string[] lpServiceArgVectors"
+"(IntPtr serviceHandle, ServiceControl controlCode, SERVICE_STATUS lpServiceStatus"
+"(IntPtr serviceHandle, int infoLevel, IntPtr buffer, int bufferSize, out int bytesNeeded"
+"(LayoutKind.Sequential, CharSet = CharSet.Unicode"
+"(MajorVersion=major, MinorVersion=minor, BuildNumber=build"
+"(NetworkStream clientStream, byte[] _"
+"(NetworkStream stream, int length"
+"(OpenSCManager(null, null, (uint"
+"(OpenService(_hScManager.Handle, _serviceName, (uint"
+"(Physmem(sock, mountpoint, driver, installArguments"
+"(Process(target=lambda: mount.mount(socket, args.driver, args.install"
+"(Process(target=lambda: physmem2minidump.dump(args.label, args.vmem"
+"(ReadFixedNumberOfBytesFromStream(clientStream, 4"
+"(Settings.ListeningIp, Settings.ListeningPort, receivers"
+"(StreamType=t,Location={}"
+"(String message, LogMessageSeverity severity = LogMessageSeverity.Information"
+"(String.Compare(cmd.Name, command, StringComparison.OrdinalIgnoreCase"
+"(Tuple.Create(BitConverter.ToUInt64(buffer, offset"
+"([(run.start, run.end"
+"(_ServiceFileName, (uint"
+"(_sig = None, _frame = None"
+"(addr, PAGE_SIZE"
+"(arg, str"
+"(args, 0"
+"(args, 8"
+"(args.host, ""'host'"""
+"(args.host, args.port"
+"(args.install, ""'install'"""
+"(buffer, 0, _MappingParameters, 0, _MappingParameters.Length"
+"(buffer, offset + sizeof(UInt64"
+"(buffer, sizeof(UInt64"
+"(byte[] data, int index, int length"
+"(clientStream, packetLength"
+"(commandLineArguments[i] == ""-h"" || commandLineArguments[i] == ""--hidden"""
+"(commandLineArguments[i] == ""-i"" || commandLineArguments[i] == ""--ip"""
+"(commandLineArguments[i] == ""-p"" || commandLineArguments[i] == ""--port"""
+"(commandLineArguments[i] == ""-v"" || commandLineArguments[i] == ""--verbose"""
+"(commandReceiverName == ""exit"""
+"(config, f"
+"(data, index, result, 0, length"
+"(dict(NumberOfStreams=self.STREAM_COUNT, StreamDirectoryRva=self.MINIDUMP_HEADER_LEN"
+"(dict(StartOfMemoryRange=start, DataSize=size"
+"(dtb=dtb, kernel_base=kernel_base, build=build, image=os.path.join(mountpoint, self.FILENAME"
+"(exception.Message, LogMessageSeverity.Error"
+"(exception.Message, Program.LogMessageSeverity.Error"
+"(filepath, 'wb'"
+"(host, port, removeOldConfig = True"
+"(image_size, image_size//1024//1024//1024"
+"(int Handle, int showState"
+"(ip, tcpPort"
+"(label, datetime.datetime.now("
+"(label, vmem"
+"(lambda this: get_string(Pointer(this.CvRecord.RVA, Byte[this.CvRecord.DataSize]"
+"(lambda this: get_string(Pointer(this.Location.RVA, minidump_memory64_list"
+"(lambda this: get_string(Pointer(this.Location.RVA, minidump_memory_info_list"
+"(lambda this: get_string(Pointer(this.Location.RVA, minidump_module_list"
+"(lambda this: get_string(Pointer(this.Location.RVA, minidump_system_info"
+"(lambda this: get_string(Pointer(this.MiscRecord.RVA, Byte[this.MiscRecord.DataSize]"
+"(lambda this: get_string(Pointer(this.ModuleNameRva, PascalString(Int32ul, ""utf-16"""
+"(lambda this: get_string(Pointer(this.StreamDirectoryRva, minidump_directory[this.NumberOfStreams]"
+"(minidump_location_descriptor, dict(RVA=0, DataSize=0"
+"(mod_start, mod_start + size"
+"(offset // self.PAGE_SIZE, (offset+requested_length"
+"(operationDescription + "" "" + Marshal.GetLastWin32Error("
+"(or ""Your"""
+"(pData, typeof(SERVICE_STATUS_PROCESS"
+"(packet, (byte"
+"(packet, 0, nameEnd"
+"(packet, nameEnd + 1, methodEnd - nameEnd - 1"
+"(pagenum*self.PAGE_SIZE, self.queued_offset, self.queued_offset+self.queued_size"
+"(pagenum, pagenum*self.PAGE_SIZE"
+"(path, requested_length, offset, fh"
+"(receiver.Key, new object[] { SubArray(packet, methodEnd + 1, packet.Length - methodEnd - 1"
+"(removeOldConfig and os.path.exists(""config.json"""
+"(response, 0, response.Length"
+"(retBuffer, numBytesRead, length - numBytesRead"
+"(s, build"
+"(s, lsass_pid"
+"(s, module_list"
+"(s, pid"
+"(s, secure_world_pages"
+"(s, vmem, label"
+"(s, vmem_filepath, label"
+"(self, BaseRva"
+"(self, data"
+"(self, data, extra"
+"(self, filepath"
+"(self, m64_list"
+"(self, mi_list"
+"(self, module_list"
+"(self, pagenum"
+"(self, path, buf, offset, fh"
+"(self, path, fh"
+"(self, path, fh=None"
+"(self, path, flags"
+"(self, path, requested_length, offset, fh"
+"(self, path, requsted_length, offset, fh"
+"(self, rva"
+"(self, secure_world"
+"(self, si"
+"(self, sock, mountpoint, driver, installArguments"
+"(sock, driver, installArguments"
+"(socket.AF_INET, socket.SOCK_STREAM"
+"(start, end"
+"(start, size"
+"(string machineName, string databaseName, uint dwAccess"
+"(struct.unpack(""<%ds"" % response, self.socket.recv(response"
+"(the ""License"""
+"(this.CSDVersionRVA, PascalString(Int32ul, ""utf-16"""
+"(this.CvRecord.RVA, Byte[this.CvRecord.DataSize]"
+"(this.ModuleNameRva, PascalString(Int32ul, ""utf-16"""
+(!(new WindowsPrincipal(WindowsIdentity.GetCurrent(
+(!DeleteService(_handle.Handle
+(!File.Exists(pathToDriver
+(!PerformCommand(clientStream
+(!_hScManager.IsSet
+(!_handle.IsSet
+('$(MSBuildExtensionsPath
+('.'
+('File does not exist: ' + path
+('arch'
+('exit\n'
+('fill'
+('output'
+('utf-8'
+((dll['dll_path'].v(
+((self.queued_offset % self.PAGE_SIZE
+((self.queued_offset//self.PAGE_SIZE + i
+() : base(_ServiceName
+()*len(self.memory64
+()*len(self.memoryinfo
+()*len(self.modules
+().GetStream(
+().Where(y => y.GetCustomAttributes(typeof(Command
+().collect(
+():hdr.StreamDirectoryRva+(x+1
+(++i == commandLineArguments.Length
+(-1
+(.dmp
+(.vmem files
+(1
+(1024*1024
+(120
+(16
+(32
+(4
+(50%
+(Activator.CreateInstance(type
+(AttributeTargets.Method
+(BitConverter.GetBytes(Convert.ToUInt64(_MemoryRuns.Count
+(BitConverter.GetBytes(run.Item1
+(BitConverter.GetBytes(run.Item2
+(CONFIG_FILE
+(Configuration
+(Convert.ToUInt32(0
+(Convert.ToUInt32(exception.Message.Length
+(Credential Guard [does not protect](https://docs.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-protection-limits
+(Encoding.UTF8.GetBytes(exception.Message
+(Exception exception
+(ExtensibilityGlobals
+(FIELDS.Length - 1
+(GetConsoleWindow(
+(Handle
+(Hex(Int32ul
+(Hex(Int64ul
+(IOException exception
+(Int32ul
+(Int64ul
+(IntPtr hObject
+(IntPtr hSCObject
+(IntPtr hService
+(IntPtr handle
+(IntPtr serviceHandle
+(IsSet
+(LayoutKind.Sequential
+(MINIDUMP_SIGNATURE
+(MINIDUMP_VERSION
+(MSBuildExtensionsPath
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(Marshal.GetLastWin32Error(
+(MimikatzStream
+(NetworkStream clientStream
+(Operations
+(Platform
+(Program.Settings.VerboseMode
+(ProjectConfigurationPlatforms
+(QueryServiceStatus(_handle.Handle
+(SERVICE_STATUS_PROCESS
+(Settings.HideConsole
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(String.Compare(receiver.Key.GetType(
+(System.IntPtr
+(ThreadAbortException
+(Type type in AppDomain.CurrentDomain.GetAssemblies(
+(UInt64
+(UnmanagedType.Bool
+(Virtualization Based Security
+(Win32Exception exception
+(WindowsBuiltInRole.Administrator
+(_MappingParameters
+(_hDevice
+(_hDevice == INVALID_HANDLE_VALUE
+(_handle.IsSet
+(a
+(an example is provided in the Appendix below
+(arg is None
+(args
+(args.Length != 16
+(args.vmem
+(b
+(b'\x00'*length
+(b'\x00'*padlen
+(b'\x00\x00'
+(blob
+(blobs
+(by inheriting this interface
+(byte[] _
+(byte[] args
+(c
+(clientStream
+(config
+(config['build']
+(config['dtb'] if 'dtb' in config else None
+(config['image']
+(config['kernel_base'] if 'kernel_base' in config else None
+(count % STATUS_INTERVAL
+(d
+(d['protect'].value
+(data
+(data[:hdr.StreamDirectoryRva]
+(description='physmem2profit'
+(dict(NumberOfEntries=len(self.memoryinfo
+(dict(NumberOfMemoryRanges=len(self.memory64
+(dict(NumberOfModules=len(modules
+(dict(String=''
+(dict(String=module_name
+(dll['dll_path'].v(
+(docs/physmemlayout.png
+(drivers
+(e
+(end=max_memory
+(entry
+(errno.ENOENT
+(except as stated in this section
+(exception.ErrorCode.ToString(
+(extra
+(f
+(false
+(filling
+(hdr.NumberOfStreams
+(hex(expected_tail_start
+(hex(rva
+(hex(start
+(https://disobey.fi/2020/profile/lets_get_physical
+(https://en.wikipedia.org/wiki/Filesystem_in_Userspace
+(https://github.com/Velocidex/WinPmem/raw/master/kernel/binaries/winpmem_x64.sys
+(https://github.com/google/rekall
+(https://labs.f-secure.com/blog/rethinking-credential-theft/
+(https://twitter.com/TimoHirvonen
+(https://twitter.com/b3arr0
+(https://www.kb.cert.org/vuls/id/976132/
+(https://www.microsoft.com/en-us/download/details.aspx?id=53337
+(i
+(i+1
+(ii
+(iii
+(image_base + '.vmss'
+(image_size == 0 or image_size != os.path.getsize(vmem_filepath
+(image_size//1024//1024//1024
+(image_size//PAGE_SIZE
+(including negligence
+(int
+(int i = 0; i < commandLineArguments.Length; i++
+(int numBytesRead = 0; numBytesRead < length;
+(int offset = FIELDS.Length * sizeof(UInt64
+(len(data
+(level=logging.CRITICAL
+(ls -A rekall
+(memory64_list
+(memoryinfo_list
+(method='PsActiveProcessHead'
+(methodEnd == -1
+(mi
+(minidump_directory_entry.build(s
+(mod
+(module
+(module_list
+(msg
+(n
+(nameEnd == -1
+(new ThreadStart (delegate { this.HandleSingleClient(clientStream
+(not os.path.exists('output'
+(numberOfRuns
+(offset % self.PAGE_SIZE
+(offset + length
+(operations
+(or bind by name
+(or derived from
+(order
+(os.path.exists(path
+(output
+(p
+(p => typeof(ICommandReceiver
+(pData
+(pData != IntPtr.Zero
+(pagenum
+(path
+(pathToDriver
+(pathToDriver.Length == 0
+(pfn << PAGE_BITS
+(pids=[pid]
+(proc_regex='lsass.exe'
+(pslist.filter_processes(
+(pwd
+(response
+(response == null || response.Length != 0
+(row['_EPROCESS'].name
+(rva
+(s
+(s => s.GetTypes(
+(s.profile.metadata('major'
+(s.profile.metadata('minor'
+(secure_world
+(self
+(self.PAGE_SIZE-((offset+requested_length
+(self.cache[pagenum]
+(self.extra
+(self.gathered
+(self.queued_size != 0 and pagenum*self.PAGE_SIZE != self.queued_offset+self.queued_size
+(self.root
+(self.secure_world
+(self.systeminfo
+(severity
+(sizeof(SERVICE_STATUS_PROCESS
+(start + size
+(str(x['value']
+(stream_data
+(string operationDescription
+(string pathToDriver
+(string serviceName
+(string[] args
+(string[] commandLineArguments
+(systeminfo
+(tail
+(to_read
+(true
+(uint
+(ulong
+(use with dump
+(var cmd in commands
+(var cmd in receiver.Value
+(var receiver in _Receivers
+(var run in _MemoryRuns
+(vmem
+(vmem_filepath
+(wanted_streams
+(with a domain account

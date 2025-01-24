@@ -1,0 +1,111 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+BSJB
+v2.0.50727
+#Strings
+#GUID
+#Blob
+<Module>
+SharpNetCheck.exe
+NetCheck
+SharpNetCheck
+mscorlib
+System
+Object
+Main
+http
+System.Collections.Specialized
+NameValueCollection
+Post
+.ctor
+System.Diagnostics
+Process
+proc
+RunCmd
+args
+host
+postValues
+System.Reflection
+AssemblyTitleAttribute
+AssemblyDescriptionAttribute
+AssemblyConfigurationAttribute
+AssemblyCompanyAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyTrademarkAttribute
+AssemblyCultureAttribute
+System.Runtime.InteropServices
+ComVisibleAttribute
+GuidAttribute
+AssemblyVersionAttribute
+AssemblyFileVersionAttribute
+DebuggableAttribute
+DebuggingModes
+System.Runtime.CompilerServices
+CompilationRelaxationsAttribute
+RuntimeCompatibilityAttribute
+Console
+WriteLine
+String
+op_Equality
+Environment
+get_MachineName
+System.Net
+GetHostName
+IPAddress
+GetHostAddresses
+System.Net.Sockets
+AddressFamily
+get_AddressFamily
+ToString
+Concat
+Int32
+WebClient
+UploadValues
+System.Text
+Encoding
+get_ASCII
+GetString
+Exception
+get_Message
+ProcessStartInfo
+get_StartInfo
+set_CreateNoWindow
+set_FileName
+set_UseShellExecute
+set_RedirectStandardError
+set_RedirectStandardInput
+set_RedirectStandardOutput
+Start
+System.IO
+StreamWriter
+get_StandardInput
+TextWriter
+StreamReader
+get_StandardOutput
+TextReader
+ReadToEnd
+Close
+SharpNetCheck
+Copyright 
+  2020
+$525c5478-4267-4039-b46f-cb0920e9843b
+1.0.0.0
+WrapNonExceptionThrows
+RSDS
+d:\vscode\c_test\SharpNetCheck\SharpNetCheck\obj\Release\SharpNetCheck.pdb
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

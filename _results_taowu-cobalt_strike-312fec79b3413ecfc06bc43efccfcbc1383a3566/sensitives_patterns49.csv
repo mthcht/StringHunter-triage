@@ -1,0 +1,4 @@
+"          "".sdtid"" {[void]$sdtidExtensionFilesINodes.Add($Dir)}"
+"      } elseif ($Extension -eq "".sdtid"") {"
+"horough mode, identifies PuTTY private key (.ppk), Remote Desktop Connection (.rdp), and RSA token (.sdtid) files, and extracts private key and session information."
+"ject -Class 'CIM_DataFile' -Filter ""Drive='C:' AND extension='ppk' OR extension='rdp' OR extension='.sdtid'"" -ComputerName $RemoteComputer @optionalCreds | Select Name)"

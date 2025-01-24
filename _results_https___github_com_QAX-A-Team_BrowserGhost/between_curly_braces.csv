@@ -1,0 +1,647 @@
+"{    0,  0,     1,      2,      3,    1,       1,   1,  "
+"{    0,  0,     1, "
+"{    0,  1,     1,      1,      1,    1,       1,   1,  "
+"{    0,  1,     1, "
+"{    0,  2,     2,      1,      3,    1,       1,   1,  "
+"{    0,  3,     1,      1,      1,    3,       4,   1,  "
+"{    0,  6,     4,      4,      4,    4,       4,   4,  "
+"{    5,  4,     4,      4,      4,    4,       4,   4,  "
+"{    5,  5,     4,      4,      4,    4,       4,   6,  "
+"{ ""(X)"", ""(8)"", ""(16LE)"", ""(16BE)"" "
+"{ ""BEGIN"", ""RELEASE"", ""ROLLBACK"" "
+"{ (byte)'a', (byte)'a', (byte)'a' "
+"{ (u8*)"" "" "
+"{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 "
+"{ 0, 0, 0, 0, 1, 2, 0, 2, 2 "
+"{ 0, 1, 2, 1, 1, 1, 2, 1, 2 "
+"{ 0, 1, 2, 3, 4, 6, 8, 8, 0, 0, 0, 0 "
+"{ 0, 1, 2, 4, 9, 12, 16 "
+"{ 0, 1, 3, 8, 18, 33, 53, 78, 103, 128, 178, 228 "
+"{ 0x02, 0x00 "
+"{ 1, 0, 0, 0, 1, 1, 2 "
+"{ 1, 2, 5, 10, 15, 20, 25, 25, 25, 50, 50, 100 "
+"{ 2, 2, 3, 5, 3, 4, 4 "
+"{ Console.Out.Write( sqlite3_mprintf( zFormat, ap ) ); "
+"{ LastError = """"; "
+"{ Luid = luid, Attributes = LUID_AND_ATTRIBUTES.SE_PRIVILEGE_ENABLED "
+"{ OP_Next, OP_Prev "
+"{ OP_Rewind, OP_Last "
+"{ Privilege = new LUID_AND_ATTRIBUTES[1], Control = PRIVILEGE_SET.PRIVILEGE_SET_ALL_NECESSARY, PrivilegeCount = 1 "
+"{ PrivilegeCount = 1, Privileges = new LUID_AND_ATTRIBUTES[1] "
+"{ SQLITE_UTF16BE, SQLITE_UTF16LE, SQLITE_UTF8 "
+"{ TK_GE, TK_LE "
+"{ btreeParseCellPtr( pPage, pCell, 0, ref pInfo ); "
+"{ btreeParseCellPtr(pPage, pPage.aData, iCell, ref pInfo); "
+"{ if ( !Double.TryParse( z.Substring( 0, zDx ), out v1 ) ) v1 = 0; "
+"{ if ( SQLite3IoTrace ) { printf( X, ap ); "
+"{ if ( i == z.Length ) z.Append( '\0' ); z[i++] = '""'; "
+"{ if ( sqlite3OsTrace ) sqlite3DebugPrintf( X, Y ); "
+"{ if ( sqlite3OsTrace ) sqlite3DebugPrintf( X, Y, Z ); "
+"{ if ( sqlite3OsTrace ) sqlite3DebugPrintf( X, Y, Z, A ); "
+"{ if ( sqlite3OsTrace ) sqlite3DebugPrintf( X, Y, Z, A, B ); "
+"{ if ( sqlite3OsTrace ) sqlite3DebugPrintf( X, Y, Z, A, B, C ); "
+"{ if ( sqlite3OsTrace ) sqlite3DebugPrintf( X, Y, Z, A, B, C, D ); "
+"{ if ( sqlite3PagerTrace )sqlite3DebugPrintf( T, ap ); "
+"{ if ( sqlite3WhereTrace ) sqlite3DebugPrintf( X, ap ); "
+"{ if (sqlite3BtreeTrace)  printf(X, ap); "
+"{ new Db(), new Db() "
+"{ p.azVar[n] = """"; "
+"{ pIndex.zName = zName.Substring( 0, nName ); "
+"{ pMem.z = new byte[nAlloc]; Buffer.BlockCopy( z, 0, pMem.z, 0, (int)nAlloc ); "
+"{ return """"; "
+"{ return ( PTRMAP_PAGENO( ( pBt ), ( pgno ) ) == ( pgno ) ); "
+"{ return new FuncDef( zName, SQLITE_UTF8, nArg, arg, (u8)( nc * SQLITE_FUNC_NEEDCOLL ), xStep, xFinal ); "
+"{ return new FuncDef( zName, SQLITE_UTF8, nArg, arg, likeFunc, flags ); "
+"{ return new FuncDef( zName, SQLITE_UTF8, nArg, iArg, (u8)( bNC * SQLITE_FUNC_NEEDCOLL ), xFunc ); "
+"{ return ptrmapPageno( pBt, pgno ); "
+"{ return putVarint( p, offset, (u64)v ); "
+"{ return sqlite3GetVarint32( p, 0, ref v ); "
+"{ return sqlite3IdListAppend( db, null, pToken ); "
+"{ return sqlite3PutVarint( p, offset, (u64)v ); "
+"{ return sqlite3StrNICmp(  zLeft,  offsetLeft,  zRight,  N );"
+"{ return sqlite3TriggerInsertStep( db, pTableName, pColumn, null, null, orconf ); "
+"{ return sqlite3TriggerInsertStep( db, pTableName, pColumn, null, pSelect, orconf ); "
+"{ return sqlite3TriggerInsertStep( db, pTableName, pColumn, pEList, null, orconf ); "
+"{ spanBinaryExpr(yygotominor.yy346, pParse, yymsp[-1].major, yymsp[-2].minor.yy346, yymsp[0].minor.yy346); "
+"{ spanExpr(yygotominor.yy346, pParse, TK_ID, yymsp[0].minor.yy0); "
+"{ spanExpr(yygotominor.yy346, pParse, yymsp[0].major, yymsp[0].minor.yy0); "
+"{ spanUnaryPostfix(yygotominor.yy346, pParse, TK_ISNULL, yymsp[-2].minor.yy346, yymsp[0].minor.yy0); "
+"{ spanUnaryPostfix(yygotominor.yy346, pParse, TK_NOTNULL, yymsp[-2].minor.yy346, yymsp[0].minor.yy0); "
+"{ spanUnaryPostfix(yygotominor.yy346, pParse, TK_NOTNULL, yymsp[-3].minor.yy346, yymsp[0].minor.yy0); "
+"{ spanUnaryPostfix(yygotominor.yy346, pParse, yymsp[0].major, yymsp[-1].minor.yy346, yymsp[0].minor.yy0); "
+"{ spanUnaryPrefix(yygotominor.yy346, pParse, TK_UMINUS, yymsp[0].minor.yy346, yymsp[-1].minor.yy0); "
+"{ spanUnaryPrefix(yygotominor.yy346, pParse, TK_UPLUS, yymsp[0].minor.yy346, yymsp[-1].minor.yy0); "
+"{ spanUnaryPrefix(yygotominor.yy346, pParse, yymsp[-1].major, yymsp[0].minor.yy346, yymsp[-1].minor.yy0); "
+"{ sqlite3AddCheckConstraint(pParse, yymsp[-1].minor.yy346.pExpr); "
+"{ sqlite3AddCheckConstraint(pParse, yymsp[-2].minor.yy346.pExpr); "
+"{ sqlite3AddCollateType(pParse, yymsp[0].minor.yy0); "
+"{ sqlite3AddColumnType(pParse, yymsp[0].minor.yy0); "
+"{ sqlite3AddDefaultValue(pParse, yymsp[-1].minor.yy346); "
+"{ sqlite3AddDefaultValue(pParse, yymsp[0].minor.yy346); "
+"{ sqlite3AddNotNull(pParse, yymsp[0].minor.yy328); "
+"{ sqlite3AddPrimaryKey( pParse, null, onError, autoInc, sortOrder ); "
+"{ sqlite3AddPrimaryKey(pParse, 0, yymsp[-1].minor.yy328, yymsp[0].minor.yy328, yymsp[-2].minor.yy328); "
+"{ sqlite3AddPrimaryKey(pParse, yymsp[-3].minor.yy14, yymsp[0].minor.yy328, yymsp[-2].minor.yy328, 0); "
+"{ sqlite3Analyze( pParse, null, null ); "
+"{ sqlite3Analyze(pParse, 0, 0); "
+"{ sqlite3Analyze(pParse, yymsp[-1].minor.yy0, yymsp[0].minor.yy0); "
+"{ sqlite3BeginParse(pParse, 0); "
+"{ sqlite3BeginParse(pParse, 1); "
+"{ sqlite3BeginParse(pParse, 2); "
+"{ sqlite3BeginTransaction(pParse, yymsp[-1].minor.yy328); "
+"{ sqlite3CreateForeignKey( pParse, null, pTo, pToCol, flags ); "
+"{ sqlite3CreateForeignKey(pParse, 0, yymsp[-2].minor.yy0, yymsp[-1].minor.yy14, yymsp[0].minor.yy328); "
+"{ sqlite3CreateIndex( pParse, null, null, null, null, onError, null, null, sortOrder, ifNotExist ); "
+"{ sqlite3CreateIndex( pParse, null, null, null, pList, onError, null, null, sortOrder, ifNotExist ); "
+"{ sqlite3CreateIndex(pParse, 0, 0, 0, 0, yymsp[0].minor.yy328, 0, 0, 0, 0); "
+"{ sqlite3CreateIndex(pParse, 0, 0, 0, yymsp[-2].minor.yy14, yymsp[0].minor.yy328, 0, 0, 0, 0); "
+"{ sqlite3DbMallocRaw( D, N ); "
+"{ sqlite3DbMallocZero( D, N ); "
+"{ sqlite3DeferForeignKey(pParse, yymsp[0].minor.yy328); "
+"{ sqlite3DropIndex(pParse, yymsp[0].minor.yy65, yymsp[-1].minor.yy328); "
+"{ sqlite3EndTable( pParse, null, null, pSelect ); "
+"{ sqlite3EndTable( pParse, pCons, pEnd, null ); "
+"{ sqlite3Error( db, err_code, err_code == 0 ?null :""""); "
+"{ sqlite3Insert( pParse, pTabList, null, null, pColumn, onError ); "
+"{ sqlite3Insert( pParse, pTabList, null, pSelect, pColumn, onError ); "
+"{ sqlite3Insert( pParse, pTabList, pList, null, pColumn, onError ); "
+"{ sqlite3Insert(pParse, yymsp[-2].minor.yy65, 0, yymsp[0].minor.yy3, yymsp[-1].minor.yy408, yymsp[-4].minor.yy186); "
+"{ sqlite3Insert(pParse, yymsp[-3].minor.yy65, 0, 0, yymsp[-2].minor.yy408, yymsp[-5].minor.yy186); "
+"{ sqlite3Insert(pParse, yymsp[-5].minor.yy65, yymsp[-1].minor.yy14, 0, yymsp[-4].minor.yy408, yymsp[-7].minor.yy186); "
+"{ sqlite3Pragma( pParse, pId1, pId2, null, minusFlag ); "
+"{ sqlite3Pragma(pParse, yymsp[-1].minor.yy0, yymsp[0].minor.yy0, 0, 0); "
+"{ sqlite3Pragma(pParse, yymsp[-3].minor.yy0, yymsp[-2].minor.yy0, yymsp[0].minor.yy0, 0); "
+"{ sqlite3Pragma(pParse, yymsp[-3].minor.yy0, yymsp[-2].minor.yy0, yymsp[0].minor.yy0, 1); "
+"{ sqlite3Pragma(pParse, yymsp[-4].minor.yy0, yymsp[-3].minor.yy0, yymsp[-1].minor.yy0, 0); "
+"{ sqlite3Pragma(pParse, yymsp[-4].minor.yy0, yymsp[-3].minor.yy0, yymsp[-1].minor.yy0, 1); "
+"{ sqlite3Put4byte( ac, 0U, val ); "
+"{ sqlite3Put4byte( ac, offset, (u32)val ); "
+"{ sqlite3Put4byte( ac, offset, val ); "
+"{ sqlite3Reindex( pParse, null, null ); "
+"{ sqlite3Reindex(pParse, 0, 0); "
+"{ sqlite3Reindex(pParse, yymsp[-1].minor.yy0, yymsp[0].minor.yy0); "
+"{ sqlite3SetString( ref pz, db, zFormat, Encoding.UTF8.GetString( ap ) ); "
+"{ sqlite3VdbeComment( v, zFormat, ap ); "
+"{ sqlite3VdbeNoopComment( v, zFormat, ap ); "
+"{ sqlite3VtabArgExtend(pParse, yymsp[0].minor.yy0); "
+"{ sqlite3VtabFinishParse(pParse, 0); "
+"{ sqlite3VtabFinishParse(pParse, yymsp[0].minor.yy0); "
+"{ tagLengthsValue[4], tagLengthsValue[5], tagLengthsValue[6], tagLengthsValue[7] "
+"{ tw.Write( sqlite3_mprintf( zFormat, ap ) ); "
+"{ yygotominor.yy14 = sqlite3ExprListAppend(pParse, 0, yymsp[0].minor.yy346.pExpr); "
+"{ yygotominor.yy14 = sqlite3ExprListAppend(pParse, yymsp[-2].minor.yy14, yymsp[0].minor.yy346.pExpr); "
+"{ yygotominor.yy328 = sqlite3JoinType(pParse, yymsp[-1].minor.yy0, 0, 0); "
+"{ yygotominor.yy328 = sqlite3JoinType(pParse, yymsp[-2].minor.yy0, yymsp[-1].minor.yy0, 0); "
+"{ yygotominor.yy328 = sqlite3JoinType(pParse, yymsp[-3].minor.yy0, yymsp[-2].minor.yy0, yymsp[-1].minor.yy0); "
+"{ yygotominor.yy346.pExpr = yymsp[-1].minor.yy346.pExpr; spanSet(yygotominor.yy346, yymsp[-2].minor.yy0, yymsp[0].minor.yy0); "
+"{ yygotominor.yy408 = sqlite3IdListAppend(pParse.db, 0, yymsp[0].minor.yy0); "
+"{ yygotominor.yy408 = sqlite3IdListAppend(pParse.db, yymsp[-2].minor.yy408, yymsp[0].minor.yy0); "
+"{ yygotominor.yy473 = sqlite3TriggerDeleteStep(pParse.db, yymsp[-2].minor.yy0, yymsp[0].minor.yy132); "
+"{ yygotominor.yy473 = sqlite3TriggerInsertStep(pParse.db, yymsp[-2].minor.yy0, yymsp[-1].minor.yy408, 0, yymsp[0].minor.yy3, yymsp[-4].minor.yy186); "
+"{ yygotominor.yy473 = sqlite3TriggerInsertStep(pParse.db, yymsp[-5].minor.yy0, yymsp[-4].minor.yy408, yymsp[-1].minor.yy14, 0, yymsp[-7].minor.yy186); "
+"{ yygotominor.yy473 = sqlite3TriggerSelectStep(pParse.db, yymsp[0].minor.yy3); "
+"{ yygotominor.yy473 = sqlite3TriggerUpdateStep(pParse.db, yymsp[-4].minor.yy0, yymsp[-1].minor.yy14, yymsp[0].minor.yy132, yymsp[-5].minor.yy186); "
+"{ yygotominor.yy65 = sqlite3SrcListAppend(pParse.db, 0, yymsp[-1].minor.yy0, yymsp[0].minor.yy0); "
+"{ zSp = """"; "
+"{0,"" + N + """
+"{2, 0"
+"{OP_Close, 0, 0, 0"
+"{OP_Column, 0, 0, 1"
+"{OP_Halt, 0, 0, 0"
+"{OP_NotExists, 0, 9, 1"
+"{OP_OpenRead, 0, 0, 0"
+"{OP_OpenWrite, 0, 0, 0"
+"{OP_ResultRow, 1, 0, 0"
+"{OP_Transaction, 0, 0, 0"
+"{OP_Variable, 1, 1, 1"
+"{OP_VerifyCookie, 0, 0, 0"
+"{nArg, SQLITE_UTF8, flags, (void *)arg, 0, likeFunc, 0, 0, #zName, 0"
+"{nKey1, pKey1"
+"{sqlite3DbFree( D, P ); "
+"{} "" ); //memcpy( &sqlite3_query_plan[nQPlan], ""{"
+"{}"" ); //memcpy( &sqlite3_query_plan[nQPlan], ""{"
+{ 
+{  
+{      return pPg.pgno;    
+{  c = 0xFFFD; 
+{ (pPgno)++; 
+{ (u8)' ' 
+{ ... 
+{ /* Empty ELSE clause */
+{ 0 
+{ 1 
+{ A = sqlite3UpperToLower[A]; 
+{ D.aDb[I].pSchema.flags = (u16)( D.aDb[I].pSchema.flags & ~P ); 
+{ D.aDb[I].pSchema.flags = (u16)( D.aDb[I].pSchema.flags | P ); 
+{ Debug.Assert( x ); 
+{ E.flags = (ushort)( E.flags & ~P ); 
+{ E.flags = (ushort)( E.flags | P ); 
+{ E; 
+{ O = D; 
+{ O=(char*)D; 
+{ T t = A; A = B; B = t; 
+{ UNUSED_PARAMETER( x ); UNUSED_PARAMETER( y ); 
+{ V[I >> 3] &= (byte)~( 1 << ( I & 7 ) ); 
+{ V[I >> 3] |= (byte)( 1 << ( I & 7 ) ); 
+{ X.flags2 |= EP2_Irreducible; 
+{ _flags = value; 
+{ _i = value; 
+{ _n = value; 
+{ _op = value; 
+{ _p1 = value; 
+{ _p2 = value; 
+{ _p3 = value; 
+{ _z = value; 
+{ _zToken = value; 
+{ a++; b++; 
+{ argv1[i] = new sqlite3_value(); argv[i + 1].CopyTo( argv1[i] ); 
+{ assert( zNum[i]>='0' && zNum[i]<='9' ); 
+{ attr = FileAttributes.ReadOnly; 
+{ c = (byte)z[iOffset + i]; 
+{ c = 0xFFFD; 
+{ ct.zBLOB = (byte[])zBLOB.Clone(); 
+{ goto no_mem;
+{ goto no_mem; 
+{ i++; 
+{ i--; 
+{ if ( ( P.flags & MEM_Zero ) != 0 ) sqlite3VdbeMemExpandBlob( P ); 
+{ if ( X != 0 ) Debug.Assert( false ); return 0; 
+{ if ( X != null ) Debug.Assert( false ); return false; 
+{ if ( X != true ) Debug.Assert( false ); return true; 
+{ if ( X == 0 ) Debug.Assert( false ); return 1; 
+{ if ( X == null ) Debug.Assert( false ); return true; 
+{ if ( X == true ) Debug.Assert( false ); return false; 
+{ if ( sqlite3OsTrace ) sqlite3DebugPrintf( X ); 
+{ if ( zArg[i] == '\'' ) n++; 
+{ if( azResult[i] ) //sqlite3_free(azResult[i]); 
+{ iz++; 
+{ local_ioerr(); CODE; 
+{ mem0.aPageFree[i] = i; 
+{ mem0.aScratchFree[i] = i; 
+{ n++; 
+{ n--; 
+{ new WhereLevel() 
+{ p = null; 
+{ p = p.pNext; 
+{ p.aMem[n] = new Mem(); 
+{ p.aVar[n] = new Mem(); 
+{ p.flags = (u16)( p.flags & ~( MEM_TypeMask | MEM_Zero ) | f ); 
+{ pData[Offset + 0] = (byte)( v >> 8 ); pData[Offset + 1] = (byte)v; 
+{ pH.first = pNew; 
+{ pH.first.prev = pNew; 
+{ pHead.prev.next = pNew; 
+{ pInfo = pInfo.pNext; 
+{ pNew.flags &= (ushort)( ~( EP_Reduced | EP_TokenOnly | EP_Static ) ); 
+{ pRC = rc; return; 
+{ pSel = pSel.pPrior; 
+{ pSib = pSib.pPrev; 
+{ public int a; public IdList b; 
+{ public int type; public Token key; 
+{ public int value; public int mask;
+{ rc = 0; 
+{ rc = SQLITE_CORRUPT; goto balance_cleanup; 
+{ realvalue *= 0.1; exp++; 
+{ realvalue *= 10.0; exp--; 
+{ realvalue *= 1e-32; exp += 32; 
+{ realvalue *= 1e-8; exp += 8; 
+{ realvalue *= 1e8; exp -= 8; 
+{ return !!X; 
+{ return ( ( ( X ) * 1 ) % BITVEC_NINT ); 
+{ return ( ( OMIT_TEMPDB == 0 ) && ( x == 1 ) ? TEMP_MASTER_NAME : MASTER_NAME ); 
+{ return ( ( pBt.pageSize - 8 ) / 6 ); 
+{ return ( (Pgno)( ( PENDING_BYTE / ( ( x ).pageSize ) ) + 1 ) ); 
+{ return ( 5 * ( pgno - pgptrmap - 1 ) ); 
+{ return ( D.aDb[I].pSchema.flags & P ) == P; 
+{ return ( E.flags & P ) != 0; 
+{ return ( E.flags & P ) == P; 
+{ return ( P.flags & MEM_Zero ) != 0 ? sqlite3VdbeMemExpandBlob( P ) : 0; 
+{ return ( V[I >> 3] & ( 1 << ( I & 7 ) ) ) != 0 ? 1 : 0; 
+{ return ( db.nVTrans > 0 && db.aVTrans == 0 ); 
+{ return ( pBt.pageSize - 8 ); 
+{ return ( pPager.pageSize + 8 ); 
+{ return ( pPager.sectorSize ); 
+{ return ( sqlite3CtypeMap[( (byte)x )] & 0x04 ) != 0; 
+{ return ( sqlite3CtypeMap[( (byte)x )] & 0x08 ) != 0; 
+{ return ( sqlite3CtypeMap[(byte)( x )] & 0x01 ) != 0; 
+{ return ( sqlite3CtypeMap[(byte)( x )] & 0x06 ) != 0; 
+{ return ( x + 7 ) & ~7; 
+{ return ( x < y ) ? x : (int)y; 
+{ return ( x < y ) ? x : y; 
+{ return (X.tabFlags & TF_Virtual)!=0;
+{ return (sqlite3_mutex*)8; 
+{ return (sqlite_u3264)System.DateTime.Now.Ticks; 
+{ return (u32)PAGER_MJ_PGNO( pBt.pPager ); 
+{ return -1 - x; 
+{ return -1; 
+{ return 0; 
+{ return 1; 
+{ return 4; 
+{ return E.data; 
+{ return E.next; 
+{ return H.first; 
+{ return SQLITE_OK; 
+{ return SQLITE_THREADSAFE; 
+{ return SQLITE_VERSION_NUMBER; 
+{ return X.isHidden!=0;
+{ return X; 
+{ return _M; 
+{ return _flags; 
+{ return _i; 
+{ return _n; 
+{ return _op; 
+{ return _p1; 
+{ return _p2; 
+{ return _p3; 
+{ return _yyParser.yystack[_yyidx + offset]; 
+{ return _z; 
+{ return _zToken; 
+{ return atoi( Encoding.UTF8.GetString( inStr ) ); 
+{ return db.aDb[0].pSchema.enc; 
+{ return false; 
+{ return fd.GetHashCode(); 
+{ return n; 
+{ return new HANDLE(); 
+{ return new sqlite3_mutex(); 
+{ return null; 
+{ return p.GetHashCode(); 
+{ return p.pPgHdr1; 
+{ return p.pPgHdr; 
+{ return pFd.pMethods != null; 
+{ return pVfs.szOsFile; 
+{ return p[offset + 0] << 8 | p[offset + 1]; 
+{ return sqlite3_version; 
+{ return true; 
+{ return x & ~7; 
+{ return x < 256 && ( sqlite3CtypeMap[( (byte)x )] & 0x04 ) != 0; 
+{ return x < 256 && ( sqlite3CtypeMap[( (byte)x )] & 0x08 ) != 0; 
+{ return x < 256 && ( sqlite3CtypeMap[(byte)( x )] & 0x01 ) != 0; 
+{ return x < 256 && ( sqlite3CtypeMap[(byte)( x )] & 0x06 ) != 0; 
+{ return x.Length; 
+{ return; 
+{ sCheck.anRef[i] = 0; 
+{ sb.Append( (char)zBLOB[i] ); 
+{ scale *= 1.0e+16; eval -= 16; 
+{ scale *= 1.0e+1; eval -= 1; 
+{ scale *= 1.0e+4; eval -= 4; 
+{ scale *= 1.0e+64; eval -= 64; 
+{ size = SQLITE_DEFAULT_CACHE_SIZE; 
+{ sqlite3BeginBenignMalloc(); 
+{ sqlite3CommitTransaction(pParse); 
+{ sqlite3Coverage(__LINE__); 
+{ sqlite3DebugPrintf X; 
+{ sqlite3EndBenignMalloc(); 
+{ sqlite3FinishCoding(pParse); 
+{ sqlite3IoTrace A; 
+{ sqlite3RollbackTransaction(pParse); 
+{ sqlite3Vacuum(pParse); 
+{ sqlite3VtabArgInit(pParse); 
+{ sqlite3_io_error_benign = ( X ); 
+{ sqlite3_mutex_enter( pcache1.mutex ); 
+{ sqlite3_mutex_leave( pcache1.mutex ); 
+{ testcase(X); 
+{ this.aColCache[i] = new yColCache(); 
+{ this.nExt = nExt; this.aExt = aExt; 
+{ u8 c; return ( ( c = C ) & 0x80 ) != 0 || ( c > 0x1f && sqlite3IsAsciiIdChar[c - 0x20] ); 
+{ updateMaxBlobsize( P ); 
+{ v++; 
+{ x = null; 
+{ yygotominor.yy0 = yymsp[-1].minor.yy0; 
+{ yygotominor.yy0 = yymsp[0].minor.yy0; 
+{ yygotominor.yy0.n = 0; 
+{ yygotominor.yy0.n = 0; yygotominor.yy0.z = null; 
+{ yygotominor.yy0.z = null; yygotominor.yy0.n = 0; 
+{ yygotominor.yy0.z = null; yygotominor.yy0.n = 1; 
+{ yygotominor.yy132 = null; 
+{ yygotominor.yy132 = yymsp[0].minor.yy346.pExpr; 
+{ yygotominor.yy14 = null; 
+{ yygotominor.yy14 = yymsp[-1].minor.yy14; 
+{ yygotominor.yy14 = yymsp[0].minor.yy14; 
+{ yygotominor.yy186 = (u8)yymsp[0].minor.yy328; 
+{ yygotominor.yy186 = OE_Default; 
+{ yygotominor.yy186 = OE_Replace; 
+{ yygotominor.yy186 = yymsp[0].minor.yy186; 
+{ yygotominor.yy3 = yymsp[0].minor.yy3; 
+{ yygotominor.yy328 = (yymsp[-1].minor.yy328 & ~yymsp[0].minor.yy429.mask) | yymsp[0].minor.yy429.value; 
+{ yygotominor.yy328 = 0; 
+{ yygotominor.yy328 = 1; 
+{ yygotominor.yy328 = JT_INNER; 
+{ yygotominor.yy328 = OE_Abort; 
+{ yygotominor.yy328 = OE_Cascade; 
+{ yygotominor.yy328 = OE_Default; 
+{ yygotominor.yy328 = OE_Fail; 
+{ yygotominor.yy328 = OE_Ignore; 
+{ yygotominor.yy328 = OE_None; 
+{ yygotominor.yy328 = OE_Replace; 
+{ yygotominor.yy328 = OE_Restrict * 0x010101; 
+{ yygotominor.yy328 = OE_Restrict; 
+{ yygotominor.yy328 = OE_Rollback; 
+{ yygotominor.yy328 = OE_SetDflt; 
+{ yygotominor.yy328 = OE_SetNull; 
+{ yygotominor.yy328 = SQLITE_SO_ASC; 
+{ yygotominor.yy328 = SQLITE_SO_DESC; 
+{ yygotominor.yy328 = TK_AFTER; 
+{ yygotominor.yy328 = TK_ALL; 
+{ yygotominor.yy328 = TK_BEFORE; 
+{ yygotominor.yy328 = TK_DEFERRED; 
+{ yygotominor.yy328 = TK_INSTEAD; 
+{ yygotominor.yy328 = yymsp[0].major; 
+{ yygotominor.yy328 = yymsp[0].minor.yy328; 
+{ yygotominor.yy346 = new ExprSpan(); 
+{ yygotominor.yy346 = yymsp[0].minor.yy346; 
+{ yygotominor.yy378.a = TK_UPDATE; yygotominor.yy378.b = yymsp[0].minor.yy408; 
+{ yygotominor.yy378.a = yymsp[0].major; yygotominor.yy378.b = null; 
+{ yygotominor.yy408 = null; 
+{ yygotominor.yy408 = yymsp[-1].minor.yy408; 
+{ yygotominor.yy429.value = 0; yygotominor.yy429.mask = 0x000000; 
+{ yygotominor.yy429.value = yymsp[0].minor.yy328 << 16; yygotominor.yy429.mask = 0xff0000; 
+{ yygotominor.yy429.value = yymsp[0].minor.yy328 << 8; yygotominor.yy429.mask = 0x00ff00; 
+{ yygotominor.yy429.value = yymsp[0].minor.yy328; yygotominor.yy429.mask = 0x0000ff; 
+{ yygotominor.yy476.pLimit = null; yygotominor.yy476.pOffset = null; 
+{ yygotominor.yy476.pLimit = yymsp[-2].minor.yy346.pExpr; yygotominor.yy476.pOffset = yymsp[0].minor.yy346.pExpr; 
+{ yygotominor.yy476.pLimit = yymsp[0].minor.yy346.pExpr; yygotominor.yy476.pOffset = null; 
+{ yygotominor.yy476.pOffset = yymsp[-2].minor.yy346.pExpr; yygotominor.yy476.pLimit = yymsp[0].minor.yy346.pExpr; 
+{ yygotominor.yy65 = new SrcList(); 
+{ yygotominor.yy65 = null; 
+{ yygotominor.yy96.eOperator = yymsp[0].minor.yy0; yygotominor.yy96.not = false; 
+{ yygotominor.yy96.eOperator = yymsp[0].minor.yy0; yygotominor.yy96.not = true; 
+{ z.Length = --n; 
+{ z2++; 
+{ zDate++; 
+{ zIdx++; 
+{ zIn++; 
+{ zIndex += incr; 
+{ zIndex++; 
+{ zNum++; 
+{ zOut = zRelative; 
+{0
+{0F15F187-010C-49EB-9407-B24C4035BC38
+{1
+{2
+{A11308
+{A11309
+{A13751
+{A17021
+{A17022
+{A17028
+{A17032
+{A17087
+{BLOB handle
+{BLOB handles
+{END
+{F1653F20-D47D-4F29-8C55-3C835542AF5F
+{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC
+{H10010
+{H10020
+{H10100
+{H10130
+{H10155
+{H10160
+{H10170
+{H10200
+{H10210
+{H10220
+{H10230
+{H10240
+{H10250
+{H10260
+{H10265
+{H10266
+{H10267
+{H10280
+{H10310
+{H10330
+{H10510
+{H10530
+{H11110
+{H11120
+{H11140
+{H11190
+{H11200
+{H11300
+{H11301
+{H11302
+{H11303
+{H11304
+{H11305
+{H11306
+{H11307
+{H11310
+{H11332
+{H11334
+{H11336
+{H11338
+{H11400
+{H11410
+{H12000
+{H12010
+{H12100
+{H12200
+{H12220
+{H12240
+{H12260
+{H12270
+{H12280
+{H12310
+{H12340
+{H12343
+{H12370
+{H12500
+{H12550
+{H12590
+{H12600
+{H12601
+{H12602
+{H12603
+{H12604
+{H12605
+{H12606
+{H12620
+{H12621
+{H12622
+{H12640
+{H12641
+{H12642
+{H12643
+{H12644
+{H12660
+{H12661
+{H12662
+{H12700
+{H12760
+{H12790
+{H12800
+{H12850
+{H12910
+{H12930
+{H12950
+{H12970
+{H13000
+{H13010
+{H13100
+{H13120
+{H13140
+{H13200
+{H13300
+{H13330
+{H13500
+{H13600
+{H13620
+{H13640
+{H13660
+{H13710
+{H13720
+{H13740
+{H13760
+{H13770
+{H13800
+{H14100
+{H14200
+{H15000
+{H15100
+{H16001
+{H16100
+{H16210
+{H16240
+{H16250
+{H16270
+{H16400
+{H16600
+{H16700
+{H16703
+{H17000
+{H17001
+{H17002
+{H17003
+{H17011
+{H17012
+{H17013
+{H17014
+{H17015
+{H17016
+{H17017
+{H17018
+{H17019
+{H17020
+{H17023
+{H17024
+{H17025
+{H17026
+{H17027
+{H17029
+{H17030
+{H17031
+{H17033
+{H17034
+{H17080
+{H17081
+{H17082
+{H17083
+{H17085
+{H17086
+{H17110
+{H17120
+{H17200
+{H17250
+{H17300
+{H17340
+{H17350
+{H17370
+{H17382
+{H17390
+{H17400
+{H17500
+{H17520
+{H17550
+{H17570
+{H17800
+{H17810
+{H17830
+{H17840
+{H17850
+{H17870
+{H18000
+{H18010
+{H18020
+{H18100
+{H18200
+{H18210
+{H18280
+{H18300
+{SQL parameter
+{SQL parameters
+{SQL statement compiler
+{TYPE t=A; A=B; B=t;
+{X17084
+{application-defined SQL function
+{application-defined SQL functions
+{autocommit mode
+{column access functions
+{database connection
+{database connections
+{error code
+{error codes
+{extended error code
+{extended error codes
+{extended result code
+{extended result codes
+{function creation routines
+{host parameter
+{host parameter name
+{host parameters
+{limit categories
+{limit category
+{parameter binding
+{prepared statement
+{prepared statements
+{printf X;fflush(stdout);
+{protected sqlite3_value
+{result code
+{result codes
+{return false;
+{return null;
+{shared cache
+{unprotected sqlite3_value
+{virtual table cursor
+{virtual table module
+{{0
+{|

@@ -1,0 +1,9 @@
+!This program cannot be run in DOS mode.
+Rich
+.text
+`.rdata
+ExitProcess
+KERNEL32.dll
+NetUserAdd
+NetLocalGroupAddMembers
+NETAPI32.dll

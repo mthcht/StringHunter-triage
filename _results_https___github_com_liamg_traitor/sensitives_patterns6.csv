@@ -1,0 +1,15 @@
+	CAP_CREDENTIALS               = 0x7
+	PLA_E_CREDENTIALS_REQUIRED                                                Handle        = 0x80300103
+	SCM_CREDENTIALS                             = 0x2
+	SEC_E_INCOMPLETE_CREDENTIALS                                              Handle        = 0x80090320
+	SEC_E_NO_CREDENTIALS                                                      Handle        = 0x8009030E
+	SEC_E_UNKNOWN_CREDENTIALS                                                 Handle        = 0x8009030D
+	SEC_I_INCOMPLETE_CREDENTIALS                                              Handle        = 0x00090320
+	h.Type = SCM_CREDENTIALS
+	if m.Header.Type != SCM_CREDENTIALS {
+"// credentials in a Ucred structure. To receive such a message, the"
+"func ParseUnixCredentials(m *SocketControlMessage) (*Ucred, error) {"
+// ParseUnixCredentials decodes a socket control message that contains
+// UnixCredentials encodes credentials into a socket control message
+// http://blogs.msdn.com/b/drnick/archive/2007/12/19/windows-and-upn-format-credentials.aspx
+func UnixCredentials(ucred *Ucred) []byte {

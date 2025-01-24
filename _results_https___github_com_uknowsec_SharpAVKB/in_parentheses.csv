@@ -1,0 +1,110 @@
+"(""       SharpAVKB.exe -KB"""
+"("""""
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""121a56be-6897-4f54-8b01-3df54fb62414"""
+"(""AVK.exe"", ""GData"""
+"(""F-PROT.exe"", ""F-Prot AntiVirus"""
+"(""Frameworkservice.exe"", ""Mcafee"""
+"(""Github: https://github.com/uknowsec/SharpAVKB"""
+"(""K3134228"", ""MS16-014"""
+"(""KB2160329"", ""MS10-048"""
+"(""KB2267960"", ""MS10-065"""
+"(""KB2305420"", ""MS10-092"""
+"(""KB2393802"", ""MS11-011"""
+"(""KB2503665"", ""MS11-046"""
+"(""KB2566454"", ""MS11-062"""
+"(""KB2592799"", ""MS11-080"""
+"(""KB2671387"", ""MS12-020"""
+"(""KB2778930"", ""MS13-005"""
+"(""KB2840221"", ""MS13-046"""
+"(""KB2850851"", ""MS13-053"""
+"(""KB2914368"", ""MS14-002"""
+"(""KB2972621"", ""MS12-042"""
+"(""KB2975684"", ""MS14-040"""
+"(""KB2989935"", ""MS14-070"""
+"(""KB2992611"", ""MS14-066"""
+"(""KB3000061"", ""MS14-058"""
+"(""KB3011780"", ""MS14-068"""
+"(""KB3023266"", ""MS15-001"""
+"(""KB3031432"", ""MS15-015"""
+"(""KB3036220"", ""MS15-010"""
+"(""KB3057191"", ""MS15-051"""
+"(""KB3057839"", ""MS15-061"""
+"(""KB3067505"", ""MS15-076"""
+"(""KB3077657"", ""MS15-077"""
+"(""KB3089656"", ""MS15-097"""
+"(""KB3136041"", ""MS16-016"""
+"(""KB3143141"", ""MS16-032"""
+"(""KB3143145"", ""MS16-034"""
+"(""KB3164038"", ""MS16-075"""
+"(""KB3178466"", ""MS16-098"""
+"(""KB3186973"", ""MS16-111"""
+"(""KB3199135"", ""MS16-135"""
+"(""KB4013081"", ""MS17-017"""
+"(""KB4013389"", ""MS17-010"""
+"(""KB823980"", ""MS03-026"""
+"(""KB899588"", ""MS05-039"""
+"(""KB921883"", ""MS06-040"""
+"(""KB941693"", ""MS08-025"""
+"(""KB956803"", ""MS08-066"""
+"(""KB957097"", ""MS08-068"""
+"(""KB958644"", ""MS08-067"""
+"(""KB959454"", ""MS09-012"""
+"(""KB970483"", ""MS09-020"""
+"(""KB971468"", ""MS10-012"""
+"(""KB975517"", ""MS09-050"""
+"(""KB977165"", ""MS10-015"""
+"(""KB982799"", ""MS10-059"""
+"(""Mcshield.exe"", ""Mcafee"""
+"(""MsMpEng.exe"", ""Microsoft Security Essentials"""
+"(""SBAMSvc.exe"", ""VIPRE"""
+"(""SharpAVKB"""
+"(""Tbmon.exe"", ""Mcafee"""
+"(""Usage: SharpAVKB.exe -AV"""
+"(""\n\r========== SharpAVKB --> GetWindowsAnti-VirusSoftware ==========\n\r"""
+"(""\n\r========== SharpAVKB --> GetWindowsKernelExploitsKB ==========\n\r"""
+"(""\n\rAuthor: Uknow"""
+"(""]: "", """""
+"(""avg.exe"", ""AVG Anti-Virus"""
+"(""avgaurd.exe"", ""Avira Antivir"""
+"(""avp.exe"", ""Kaspersky"""
+"(""ccapp.exe"", ""Symantec Norton"""
+"(""cpf.exe"", ""Comodo"""
+"(""egui.exe"", ""ESET NOD32"""
+"(""eguiProxy.exe"", ""ESET NOD32"""
+"(""ekrn.exe"", ""ESET NOD32"""
+"(""exit"""
+"(""outpost.exe"", ""Outpost Firewall"""
+"(""spidernt.exe"", ""Dr.web"""
+"(""systeminfo | findstr \""KB\"""""
+"(""tasklist /svc"""
+"(""vsmon.exe"", ""ZoneAlarm"""
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"(@""]: (.*"
+"(KeyValuePair<string, string> kvp in av_list"
+"(args.Length == 1 && args[0] == ""-AV"""
+"(args.Length == 1 && args[0] == ""-KB"""
+"(kvp.Key + "":"" + kvp.Value"
+(!sys_kb.Contains(item
+('$(MSBuildExtensionsPath
+(Configuration
+(MSBuildExtensionsPath
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(Match ma in mc
+(Platform
+(ProjectConfigurationPlatforms
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(all
+(args.Length == 0
+(cmd
+(false
+(https://github.com/uknowsec/SharpAVKB/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20191014205222.png
+(ma.ToString(
+(resultStr.IndexOf(kvp.Key
+(string cmd
+(string[] args
+(var item in kb_exp
+(x86

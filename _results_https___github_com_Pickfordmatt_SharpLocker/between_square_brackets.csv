@@ -1,0 +1,92 @@
+"[DllImport(""advapi32"", CharSet = CharSet.Auto, SetLastError = true)"
+"[DllImport(""advapi32.dll"", SetLastError = true)"
+"[DllImport(""kernel32.dll"")"
+"[DllImport(""kernel32.dll"", SetLastError = true)"
+"[DllImport(""secur32.dll"", CharSet = CharSet.Auto)"
+"[DllImport(""secur32.dll"", CharSet = CharSet.Auto, SetLastError = true)"
+"[DllImport(""secur32.dll"", SetLastError = true)"
+"[DllImport(""user32.dll"")"
+"[MarshalAs(UnmanagedType.ByValArray, SizeConst = 1)"
+"[] getNTLMv2Response(string target, string user, string password, byte["
+"[assembly: AssemblyCompany("""")"
+"[assembly: AssemblyConfiguration("""")"
+"[assembly: AssemblyCulture("""")"
+"[assembly: AssemblyDescription("""")"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")"
+"[assembly: AssemblyProduct(""SharpLocker"")"
+"[assembly: AssemblyTitle(""SharpLocker"")"
+"[assembly: AssemblyTrademark("""")"
+"[assembly: AssemblyVersion(""1.0.*"")"
+"[assembly: AssemblyVersion(""1.0.0.0"")"
+"[assembly: Guid(""a6f8500f-68bc-4efc-962a-6c6e68d893af"")"
+"[global::System.CodeDom.Compiler.GeneratedCodeAttribute(""Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator"", ""16.0.0.0"")"
+"[global::System.CodeDom.Compiler.GeneratedCodeAttribute(""System.Resources.Tools.StronglyTypedResourceBuilder"", ""16.0.0.0"")"
+"[global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute(""Microsoft.Performance"", ""CA1811:AvoidUncalledPrivateCode"")"
+[(i << 1) + 1
+[0
+[1
+[10
+[11
+[12
+[13
+[14
+[15
+[16
+[2
+[22
+[3
+[4
+[5
+[6
+[7
+[8
+[9
+[Aa
+[Bb
+[BytesToAllocate
+[Cc
+[Dd
+[E[[\5\\
+[Ee
+[Ll
+[Mm
+[Oo
+[Pp
+[Rr
+[STAThread
+[Ss
+[StructLayout(LayoutKind.Sequential)
+[ThisSecBuffer.cbBuffer
+[Tt
+[Working SharpLocker
+[XWb
+[] GetByteHashFromBytes(byte[
+[] X = new uint[16
+[] arr = new byte[hex.Length >> 1
+[] buffer = new byte[BLOCK_LENGTH
+[] bytes = new byte[NumberChars / 2
+[] context = new uint[4
+[] domain = new byte[domain_len
+[] lm_resp = new byte[lm_resp_len
+[] nt_resp = new byte[nt_resp_len
+[] ntlmHash = new byte[16
+[] ntlmv2Hash = new byte[16
+[] ntlmv2Response = new byte[16
+[] ntlmv2ResponseHash = new byte[16
+[] targetInfomration = new byte[server_challenege.Length + blob.Length
+[] user = new byte[user_len
+[assembly: ComVisible(false)
+[base64 mime encoded serialized .NET Framework object
+[base64 mime encoded string representing a byte array form of the .NET Framework object
+[global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)
+[global::System.Diagnostics.DebuggerNonUserCodeAttribute()
+[global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()
+[i
+[i * 4 + j
+[i / 2
+[i << 1
+[offset++
+[opdsealey
+[padLen + 8
+[padLen + i
+[x

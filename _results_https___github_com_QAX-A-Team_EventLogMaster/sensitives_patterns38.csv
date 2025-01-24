@@ -1,0 +1,2 @@
+"                    blog($1, ""Get RDP Default.rdp File::full address)"");"
+"    $RdpDefault = [environment]::getfolderpath(""mydocuments"")+'./Default.rdp'"

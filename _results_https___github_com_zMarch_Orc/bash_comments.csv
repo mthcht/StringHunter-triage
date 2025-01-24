@@ -1,0 +1,154 @@
+
+  # Loads the orc at test setup
+  # One address = one word per line
+  # One address plus mask per line = two words per line
+  # One user per line = one word per line
+  # So the shellcheck 2086 must be disabled.
+  # So the shellcheck 2154 must be disabled.
+  # Some missing tools are normal. So $error could be contain messages
+  # TODO: add more checks
+  # Test the dropsuid function
+  # Test the getdocker function
+  # Test the getenum function
+  # Test the getescape function
+  # Test the getexploit function
+  # Test the getgtfobins function
+  # Test the gethelp function
+  # Test the getidle function
+  # Test the getip function
+  # Test the getjail function
+  # Test the getluks function
+  # Test the getrel function
+  # Test the getsctp function
+  # Test the getsec function
+  # Test the getsfiles function
+  # Test the getspec function
+  # Test the gettmp function
+  # Test the getusers function
+  # Test the getuservices function
+  # Test the orc_colorNever flag for the grep tool
+  # Test the orc_createEchoFile function
+  # Test the orc_existsProg function
+  # Test the orc_exportProxySettings function
+  # Test the orc_filterIpAddress function
+  # Test the orc_flatFileName function
+  # Test the orc_homeOfCurrentUser function
+  # Test the orc_homeOfUserID function
+  # Test the orc_inetAddressAndMask function
+  # Test the orc_isMinimalOsVersion function
+  # Test the orc_listArp function
+  # Test the orc_listBroadcastAddress function
+  # Test the orc_listHomes function
+  # Test the orc_listTmp function
+  # Test the orc_listUsers function
+  # Test the orc_loadURL function
+  # Test the orc_log2outp function
+  # Test the orc_makeHome function
+  # Test the orc_noop function
+  # Test the orc_ourPts function
+  # Test the orc_testAndCopy function.
+  # Test the orc_tryTcpConnection function
+  # Test the portscan function
+  # Test the prochide function
+  # Test the sourceurl function
+  # Test the srm function
+  # Test the tools function
+  # Tests the orc_IP4toInteger function.
+  # Tests the orc_firstIP4integer function
+  # Tests the orc_integerToIP4 function.
+  # Tests the orc_lengthToIP4netmask function
+  # The call before loads the script only in a subshell. Now load the script in the
+  # The orc_colorNever variable is defined in the o.rc.
+  # The varaible must not used with quotes because the
+  # clear http proxy settings for follwing tests
+  # current shell.
+  # empty string must not used as argument.
+  # remove one file
+  # remove two files
+  # shellcheck disable=SC1091
+"
+"  # assertNull 'error message' ""$error"""
+"  # shellcheck disable=SC2154,SC2086"
+"#  assertNull 'error message' ""$error"""
+"#  if [ -n ""$error"" ]; then echo ""--> $error""; fi"
+"# Failed to open connection to ""session"" message bus: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11"
+"# Name of the test functions are ""test_FKT"" where FKT is the name"
+"# TODO: suppress message ""Removing leading '/' from member names"
+"# so the call ""echo_argument a"" will return 1."
+"# strip ""use strict;""	"
+"# strip ""use warnings;"""
+#
+#      $ base64 -d FILE | gzip -d | perl - ARGUMENTS
+#      $ base64 -d FILE | gzip -d | python - ARGUMENTS
+#   and empty lines.
+#   included into the o.rc script.
+#  # TODO: add more checks
+#  # Test the getdbus function
+#  # Test the getinfo function
+#  # Test the getnet function
+#  assertEquals 'returned false' 0 $?
+#  error=$(getdbus 2>&1 > /dev/null)
+#  error=$(getinfo 2>&1 > /dev/null)
+#  error=$(getnet 2>&1 > /dev/null)
+# (possible way: replace ping with a function named ping
+# - Compress the striped file with gzip
+# - Downloads the shunit2 test framework
+# - Removes all comment lines (including #!)
+# - Removes use strict and use warnings.
+# - Starts the test script with o.rc
+# - The current scripts in the resources sub-directory must be
+# - The used quoated http and https addresses must be accessable.
+# - base64 encode the compressed file
+# ARGUMENTS are the arguments used by the Perl script.
+# ARGUMENTS are the arguments used by the Python script.
+# Activate colored output"
+# Argument: the shell to use.
+# Check the included http and https expressions."
+# Checks only the single-quated expression. Other strings could
+# Download the shunit2 test framework"
+# One text line will be written to stderr.
+# Path to the resources files"
+# Run the tests"
+# Run with Travis CI raises the error:
+# Shell script to test the memexec script.
+# Shell script to test the sourceurl function.
+# Simple Perl script obfuscation.
+# Simple Pyhon script obfuscation.
+# Starts a test with the shunit2 test framework.
+# TODO: add test of funtcion orc_pingBroadcast"
+# TODO: add test of orc_archive"
+# TODO: add test of orc_collectOtherHostsInfo"
+# TODO: add test of orc_httpsProxyReminder"
+# Tests
+# Tests of the internal functions are collecte here.
+# Tests of the user level functions are collecte here.
+# Tests with shunit2 test framework.
+# The Python script could be executed by
+# The error flag will be set to 1 if an test fail"
+# The exit code of the script is number of arguments.
+# The file defines one function.
+# The memexec.pl must be included as base64 blob in the Orc script."
+# The memexec.py must be included as bas64 blob in the Orc script."
+# The o.rc must be located in the cwd directory.
+# The perl script could be executed by
+# The script is designed for a start via start_shunit2.sh
+# The script writes the command line arguments to stdout.
+# The scrpt echo_arguments can be stored on a web server
+# The shunit2 framework must be loaded in the ./shunit2 directory."
+# are widley used linux tools.
+# base64 encode
+# compress
+# contain shell variables.
+# gzip and uuencode/uudecode are choosed because they
+# of the tested function.
+# shellcheck disable=SC1091"
+# strip comment lines"
+# strip empty lines
+# to load it with the memexec script.
+# where FILE is the file generated by this script and
+# which writes the addresses into a file.)
+#!/usr/bin/env sh
+#test_getdbus() {"
+#test_getinfo() {"
+#test_getnet() {"
+#}

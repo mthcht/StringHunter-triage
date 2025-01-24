@@ -1,0 +1,59 @@
+"("""""
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""blocketw"""
+"(""daedf7b3-8262-4892-adc4-425dd5f85bca"""
+"(""kernel32"""
+"(""kernel32.dll"""
+"(""kernel32.dll"", CharSet = CharSet.Auto, SetLastError = true"
+"(""kernel32.dll"", SetLastError = true"
+"(""ntdll.dll"""
+"(""{2150E333-8FDC-42A3-9474-1A3956D46DE8}"""
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"(IntPtr hModule, string procName"
+"(IntPtr hObject, HANDLE_FLAGS dwMask, HANDLE_FLAGS dwFlags"
+"(IntPtr hProcess, IntPtr lpAddress, UIntPtr dwSize, uint flNewProtect, out uint lpflOldProtect"
+"(IntPtr hProcess, IntPtr lpAddress, uint dwSize, int flAllocationType, int flProtect"
+"(IntPtr hProcess, IntPtr lpBaseAddress, IntPtr lpBuffer, UInt32 dwSize, ref UInt32 lpNumberOfBytesRead"
+"(IntPtr hProcess, IntPtr lpBaseAddress, byte[] lpBuffer, Int32 nSize, out IntPtr lpNumberOfBytesWritten"
+"(IntPtr hSourceProcessHandle, IntPtr hSourceHandle, IntPtr hTargetProcessHandle, ref IntPtr lpTargetHandle, uint dwDesiredAccess, [MarshalAs(UnmanagedType.Bool"
+"(IntPtr handle, IntPtr buffer, IntPtr nBufferSize, IntPtr bytesRead, ref uint bytesAvail, IntPtr BytesLeftThisMessage"
+"(IntPtr handle, uint milliseconds"
+"(IntPtr lpAttributeList, int dwAttributeCount, int dwFlags, ref IntPtr lpSize"
+"(IntPtr lpAttributeList, uint dwFlags, IntPtr Attribute, IntPtr lpValue, IntPtr cbSize, IntPtr lpPreviousValue, IntPtr lpReturnSize"
+"(IntPtr pBuffer, int length"
+"(IntPtr processHandle, UInt32 processInformationClass, ref ulong processInformation, int processInformationLength, ref UInt32 returnLength"
+"(LayoutKind.Sequential, CharSet = CharSet.Unicode"
+"(LayoutKind.Sequential, Pack = 0"
+"(ProcessAccessFlags processAccess, bool bInheritHandle, int processId"
+"(Win32.Kernel32.LoadLibrary(""ntdll.dll"""
+"([In]IntPtr hProcess, [In]int dwFlags, [Out]StringBuilder lpExeName, ref int lpdwSize"
+"(hProcess, address, (UIntPtr"
+"(hProcess, address, hook, hook.Length, out IntPtr bytesWritten"
+"(out IntPtr hReadPipe, out IntPtr hWritePipe, ref SECURITY_ATTRIBUTES lpPipeAttributes, uint nSize"
+"(ref IntPtr ProcessHandle, UInt32 DesiredAccess, ref OBJECT_ATTRIBUTES ObjectAttributes, ref CLIENT_ID ClientId"
+"(ref IntPtr pProcessParameters, IntPtr ImagePathName, IntPtr DllPath, IntPtr CurrentDirectory, IntPtr CommandLine, IntPtr Environment, IntPtr WindowTitle, IntPtr DesktopInfo, IntPtr ShellInfo, IntPtr RuntimeData, uint Flags"
+"(string lpApplicationName, string lpCommandLine, ref SECURITY_ATTRIBUTES lpProcessAttributes, ref SECURITY_ATTRIBUTES lpThreadAttributes, bool bInheritHandles, uint dwCreationFlags, IntPtr lpEnvironment, string lpCurrentDirectory, [In] ref STARTUPINFOEX lpStartupInfo, out PROCESS_INFORMATION lpProcessInformation"
+(!7U-
+('$(MSBuildExtensionsPath
+(33
+(Configuration
+(ExtensibilityGlobals
+(IntPtr hObject
+(IntPtr hThread
+(IntPtr lpAttributeList
+(LayoutKind.Sequential
+(MSBuildExtensionsPath
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(Platform
+(ProjectConfigurationPlatforms
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(UnmanagedType.Bool
+(UnmanagedType.LPWStr
+(but can be built for 3.5
+(false
+(string name
+(string[] args
+(x86

@@ -1,0 +1,24 @@
+ -------------- Arguments -------------- #
+ --certfile CERTFILE
+ --config-filename CONFIG_FILENAME
+ --custom-mode CUSTOM_MODE
+ --delimiter DELIMITER
+ --encode          Generate Base64-encoded services configuration extractor script instead of raw PowerShell.
+ --file-input FILE_INPUT
+ --great-candidates
+ --help            show this help message and exit
+ --interesting-only
+ --interesting-only but with stricter criteria. A service is labeled as a great candidate for privilege escalation if the service's START_TYPE == DEMAND_START AND TYPE ==
+ --keyfile KEYFILE
+ --list-generic   List all predefined generic access rights.
+ --port PORT  HTTP / HTTPS server port (default: 80 / 443).
+ --quiet           Do not print the banner on startup.
+ --server-address SERVER_ADDRESS
+ --verbose         Print the user's SID and group membership info as well (not applicable in Audit mode).
+ --{val}.')
+" --audit           Audit mode. Analyzes all service ACEs without searching for user-specific abusable services (Long output). This option also downgrades the extractor script, omitting the retrieval of"
+" --get-service    This option modifies the extractor script to use Get-Service for listing available services. While cleaner, it may not work with a low-privileged account. The default Get-ChildItem"
+" --interesting-only but with stricter criteria. A service is labeled as a great candidate for privilege escalation if the service's START_TYPE == DEMAND_START AND TYPE == WIN32_OWN_PROCESS AND your user has (WRITE_PROPERTY AND CONTROL_ACCESS) OR GENERIC_ALL privileges."")"
+" --interesting-only\n   -g, --great-candidates\n   -a, --audit\n   -x, --custom-mode')"
+" --server-address or -f, --file input')"
+" --server-address or -f, --file input.')"

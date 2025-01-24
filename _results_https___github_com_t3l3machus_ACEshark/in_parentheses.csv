@@ -1,0 +1,205 @@
+"(""-"""
+"(""-a"", ""--audit"", action=""store_true"", help = ""Audit mode. Analyzes all service ACEs without searching for user-specific abusable services (Long output"
+"(""-c"", ""--certfile"", action=""store"", help=""Optional: Path to the TLS certificate for enabling HTTPS."""
+"(""-d"", ""--delimiter"", action=""store"", default=""#~"", help = ""Change the delimiter value used for service config serialization (default: #~"
+"(""-e"", ""--encode"", action=""store_true"", help = ""Generate Base64-encoded services configuration extractor script instead of raw PowerShell."""
+"(""-f"", ""--file-input"", action=""store"", help = ""ACEshark creates log files every time you run the extractor script on a machine (stored in ~/.ACEshark"
+"(""-g"", ""--great-candidates"", action=""store_true"", help = ""Similar to --interesting-only but with stricter criteria. A service is labeled as a great candidate for privilege escalation if the service's START_TYPE == DEMAND_START AND TYPE == WIN32_OWN_PROCESS AND your user has (WRITE_PROPERTY AND CONTROL_ACCESS"
+"(""-gs"", ""--get-service"", action=""store_true"", help = ""This option modifies the extractor script to use Get-Service for listing available services. While cleaner, it may not work with a low-privileged account. The default Get-ChildItem approach, though less elegant, is more likely to succeed in most cases."""
+"(""-i"", ""--interesting-only"", action=""store_true"", help = ""List only those service ACEs that can potentially be abused by your user, based on their SID and group membership, with at least (WRITE_PROPERTY AND CONTROL_ACCESS"
+"(""-k"", ""--keyfile"", action=""store"", help=""Optional: Path to the private key for the TLS certificate."""
+"(""-lg"", ""--list-generic"", action=""store_true"", help = ""List all predefined generic access rights."""
+"(""-p"", ""--port"", action=""store"", help=""HTTP / HTTPS server port (default: 80 / 443"
+"(""-q"", ""--quiet"", action=""store_true"", help = ""Do not print the banner on startup."""
+"(""-s"", ""--server-address"", action=""store"", help = ""Your server IP or domain name. This option cannot be used with -f."", type = str"
+"(""-v"", ""--verbose"", action=""store_true"", help = ""Print the user's SID and group membership info as well (not applicable in Audit mode"
+"(""-x"", ""--custom-mode"", action=""store"", help = ""Provide a comma-separated list of integers representing the generic access rights to match. Only service ACEs that your user may be able to abuse, based on their SID and group membership matching the provided rights, will be listed. Use -lg to list all predefined generic access rights."", type = str"
+"(""-z"", ""--config-filename"", action=""store"", default=""sc.txt"", help = ""Change the temporary filename used to store the extracted services configuration before transferring the data via HTTP (default: sc.txt"
+"(""."""
+"("":"""
+"("":"", 1"
+"(""::"""
+"($env:ALLUSERSPROFILE, ""{SRVS_CONF_FILENAME}"""
+"(' ', 1"
+"('+', ' '"
+"(','"
+"('Access-Control-Allow-Origin', '*'"
+"('Content-Type', 'text/plain'"
+"('Content-type', 'text/javascript; charset=UTF-8'"
+"('OpenService FAILED', stat"
+"('\n', 1"
+"('utf-8', 'ignore'"
+"(('0.0.0.0', port"
+"().strftime(""%Y%m%d_%H%M%S"""
+"(0, '#!ACEshark_log'"
+"(0, 'audit' if args.audit else 'pe'"
+"(0, len(services_config"
+"(0, user_sid"
+"(ACEshark_logs_dir, file_name"
+"(Cleaner, but won't work with a low-privileged account"
+"(args, action.dest"
+"(bytes('It works! Who would have thought?', ""utf-8"""
+"(certfile = args.certfile, keyfile = args.keyfile"
+"(content, client_addr"
+"(f""Port number must be between 1 and 65535, got {port}."""
+"(f""{DELIMITER}"""
+"(f""{ERR} Failed to read file {file_path}: {e}"""
+"(f""{ERR} The file at {file_path} was not found."""
+"(f""{INFO} Configuration captured in {ORNG}{file_path}{RST} - You can use this file to regenerate the services config analysis if required (-f"
+"(f'          {ORNG}Potentially Abusable{"" - Great Candidate"" if great_candidate else """"}!{RST}'"
+"(f'\n{DEBUG} A single mode can be used at a time:\n   -i, --interesting-only\n   -g, --great-candidates\n   -a, --audit\n   -x, --custom-mode'"
+"(f'\n{DEBUG} Only one option can be used: -s, --server-address or -f, --file input'"
+"(f'\n{DEBUG} Select a mode:\n   -i, --interesting-only\n   -g, --great-candidates\n   -a, --audit\n   -x, --custom-mode'"
+"(f'\n{DEBUG} You must specify either -s, --server-address or -f, --file input.'"
+"(f'\n{INFO} Waiting for script execution on the target, be patient...'"
+"(f'{IMP} Even if a service\'s ACEs suggest it\'s a great PE candidate, other Windows security features may still block its abuse.'"
+"(f'{IMP} If your TLS certificate is untrusted, you\'ll have to bypass certificate validation for this to work.'"
+"(f'{INFO} Http server started. Try {ORNG}{""http"" if not tls else ""https""}://{args.server_address}:{port}/{DEBUG_ENDPOINT}{RST} if you wish to check if reachable.'"
+"(file_path, 'r'"
+"(file_path, 'w'"
+"(os.path.expanduser(""~"""
+"(r""[^A-Z\d-]"", re.IGNORECASE"
+"(r'\s+', ' ', name"
+"(r'\s+', ' ', val"
+"(re.search(f'{sid_val} ', user_groups"
+"(sid, str"
+"(sid, user_groups"
+"(sock = httpd.socket, server_side= True"
+"(target = httpd.serve_forever, args = ("
+"(url_decoded_data_l, client_addr = False"
+"(url_decoded_data_l, client_addr"
+($_.Name
+($_.PSChildName
+('(
+(';;;'
+('BASIC OPTIONS'
+('EXTRACTOR MODIFICATIONS'
+('FAILED '
+('MODES'
+('OUTPUT'
+('S'
+('\\([0-9A-Za-z;\\-]*\\
+('\n'
+('\n'.join(url_decoded_data_l
+(((member and interesting_or_abusable and (args.interesting_only or args.custom_mode
+(([System.Security.Principal.WindowsIdentity]::GetCurrent(
+((whoami /groups
+()
+() == user_sid.upper(
+() for r in custom_rights if r.strip(
+() if c == 0 else do_nothing(
+() if not args.quiet else do_nothing(
+() if not log else do_nothing(
+().splitlines(
+(--custom-mode
+(--great-candidates
+(0
+(1
+(200
+(443 if tls else 80
+(ACEshark_logs_dir
+(BaseHTTPRequestHandler
+(GC_audit_template if mode == 'audit' else GC_pe_template
+(GS_audit_template if mode == 'audit' else GS_pe_template
+(INCLUDING NEGLIGENCE OR OTHERWISE
+(Long output
+(WRITE_PROPERTY AND CONTROL_ACCESS
+(ace
+(active_template
+(addr
+(aka [Pri3st](https://www.github.com/Pri3st
+(args.certfile and not args.keyfile
+(args.file_input
+(args.great_candidates and great_candidate
+(args.interesting_only + args.audit + args.great_candidates + custom_mode
+(args.keyfile and not args.certfile
+(args.server_address
+(args.verbose and not args.audit
+(b'OK'
+(c
+(c_str
+(changing the `binpath` of a service and restarting it
+(config
+(content
+(content_len
+(data
+(decoded_data
+(default - More likely to work with a low-privileged account
+(default: #~
+(default: 80 / 443
+(default: sc.txt
+(f'          ACE Type: {BOLD}{ace_type}{RST}'
+(f'          Binary Path: {binpath}'
+(f'          Rights: {display_rights}'
+(f'          User / Group: {BOLD}{BLUE}{obj_name}{RST} ({sid_val}
+(f'          User / Group: {BOLD}{sid}{RST}' if sid_val == sid else f'          User / Group: {BOLD}{sid}{RST} ({sid_val}
+(f'          {RED}Running as SYSTEM{RST}'
+(f'      [{PL}] Analyzing ACE {item}'
+(f' {key} : {val}'
+(f'[{DEBUG}] TLS implementation failed: {e}.\n'
+(f'[{ORNG}User Groups{RST}]\n {user_groups}'
+(f'[{ORNG}User SID{RST}] {user_sid}'
+(f'{BOLD}[{LPURPLE}{service}{RST}][{service_type}][{start_type}] Running as user: {BOLD}{user_account}{RST}'
+(f'{BOLD}[{RED}{service}{RST}] Service config query failed. Error Code: {reason}'
+(f'{DEBUG} Hostname length greater than 255 characters.'
+(f'{DEBUG} Int value {i} not in predefined generic access rights. Feel free to submit a pull request if you believe something is missing.'
+(f'{DEBUG} Invalid generic access rights value. Please check your input and try again.'
+(f'{DEBUG} Server address is not resolvable. Check input and try again.'
+(f'{DEBUG} TLS support seems to be misconfigured (missing key or cert file
+(f'{DEBUG} This doesn\'t appear to be an ACEshark log file.'
+(f'{DEBUG} This log was generated in Audit mode and cannot be used for service analysis in -i (--interesting-only
+(f'{ERR} Failed to create logs dir {ACEshark_logs_dir}.'
+(f'{ERR} Failed to write services configuration to a file: {e} - Moving on.'
+(f'{ERR} Port {port} seems to already be in use.\n'
+(f'{ERR} {e}'
+(f'{GREEN}{active_template}{RST}'
+(f'{GREEN}{generic_access_rights[r.value]}{RST}'
+(f'{INFO} Data retrieved! Processing...'
+(f'{INFO} Done.'
+(f'{INFO} Ignoring argument --{val}.'
+(f'{INFO} Ignoring argument {key}.'
+(f'{INFO} Initiating services audit.'
+(f'{INFO} Run the following extractor script (or similar
+(f'{OOPS} Something went really wrong: {e}'
+(f'{ORNG}Copied to clipboard!{RST}'
+(f'{RED}Copy to clipboard failed. Please do it manually.{RST}'
+(f'{RED}{generic_access_rights[r.value]}{RST}'
+(f'{RED}{r.value}{RST}'
+(file_path
+(generic_access_rights[r.value]
+(https://github.com/t3l3machus/ACEshark/blob/main/LICENSE
+(https://github.com/user-attachments/assets/09789877-665d-476a-8c2c-a86000380614
+(https://github.com/user-attachments/assets/e292d618-1aa2-4431-953f-96c9a888e2a5
+(https://img.shields.io/badge/License-BSD-red.svg
+(https://img.shields.io/badge/Python-%E2%89%A5%203.12-yellow.svg
+(https://www.python.org/
+(https://x.com/TJ_Null
+(i
+(ip_address(addr
+(item
+(l
+(len(part
+(member and interesting_or_abusable and not args.custom_mode and service_type == 'WIN32_OWN_PROCESS' and start_type == 'DEMAND_START'
+(mode == 'pe' and log_mode == 'audit'
+(mode == log_mode
+(not applicable in Audit mode
+(obj_id
+(part
+(payload
+(payload.encode('utf16'
+(r
+(rights_detailed[0]
+(sc.exe qc $_.Name | ForEach-Object {{ $_.Trim(
+(sc.exe qc $_.PSChildName | ForEach-Object {{ $_.Trim(
+(self
+(self.headers.get('Content-Length'
+(service_type == 'WIN32_OWN_PROCESS' and start_type == 'DEMAND_START'
+(sid
+(ssl.PROTOCOL_TLS_SERVER
+(stored in ~/.ACEshark
+(t3l3machus
+(tmp[0]
+(url_decoded_data_l
+(used to indicate an absolute domain name and technically valid according to DNS standards
+(val
+(value

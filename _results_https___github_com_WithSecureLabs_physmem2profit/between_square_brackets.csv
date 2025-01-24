@@ -1,0 +1,128 @@
+"[ ""$(ls -A rekall)"" "
+"["" + severityCharacter + """
+"[""rsds"""
+"['.', '..', self.FILENAME"
+"['https://github.com/google/rekall-profiles/raw/master', 'http://profiles.rekall-forensic.com'"
+"['install', 'map', 'read', 'uninstall'"
+"['mount', 'dump', 'all'"
+"[(run.start, run.end) for run in addr_space.get_address_ranges(end=max_memory)"
+"[0,0,0,0,0,0"
+"[DllImport(""advapi32"", EntryPoint = ""OpenSCManagerW"", SetLastError = true, ExactSpelling = true, CharSet = CharSet.Unicode)"
+"[DllImport(""advapi32"", SetLastError = true)"
+"[DllImport(""advapi32"", SetLastError = true, CharSet = CharSet.Auto)"
+"[DllImport(""advapi32"", SetLastError = true, CharSet = CharSet.Unicode)"
+"[DllImport(""advapi32.dll"", SetLastError = true)"
+"[DllImport(""advapi32.dll"", SetLastError = true, CharSet = CharSet.Unicode)"
+"[DllImport(""kernel32"", ExactSpelling = true, SetLastError = true, CharSet = CharSet.Auto)"
+"[DllImport(""kernel32"", SetLastError = true)"
+"[DllImport(""kernel32.dll"")"
+"[DllImport(""kernel32.dll"", SetLastError = true)"
+"[DllImport(""user32.dll"")"
+"[Memory64ListStream, MemoryInfoListStream, SystemInfoStream, ModuleListStream"
+"[StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)"
+"[] inBuffer, uint nInBufferSize, byte["
+"[] packet = new byte[BitConverter.ToUInt64(args, 8)"
+"[] { SubArray(packet, methodEnd + 1, packet.Length - methodEnd - 1) }) as byte["
+"[assembly: AssemblyCompany("""")"
+"[assembly: AssemblyConfiguration("""")"
+"[assembly: AssemblyCulture("""")"
+"[assembly: AssemblyDescription("""")"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")"
+"[assembly: AssemblyProduct(""Physmem2profit2"")"
+"[assembly: AssemblyTitle(""Physmem2profit2"")"
+"[assembly: AssemblyTrademark("""")"
+"[assembly: AssemblyVersion(""1.0.*"")"
+"[assembly: AssemblyVersion(""1.0.0.0"")"
+"[assembly: Guid(""814708c9-2320-42d2-a45f-31e42da06a94"")"
+"[submodule ""rekall"""
+[!
+['CSDVersionRva'
+['DataSize'
+['Location'
+['RVA'
+['State'
+['Type'
+['_EPROCESS'
+['base'
+['build'
+['dll_path'
+['dtb'
+['end'
+['image'
+['kernel_base'
+['key'
+['protect'
+['size'
+['start'
+['type'
+['value'
+['winpmem'
+[*
+[-
+[--driver DRIVER 
+[--hidden
+[--instal DRIVER_PATH_ON_TARGET
+[--ip IP
+[--label LABEL_FOR_MEMORY_DUMP
+[--mode MODE
+[--port PORT
+[--verbose
+[-1
+[-p PORT
+[0
+[1
+[2
+[3
+[6
+[:hdr.StreamDirectoryRva
+[@TimoHirvonen
+[@b3arr0
+[AttributeUsage(AttributeTargets.Method)
+[Command
+[Device Guard and Credential Guard hardware readiness tool
+[Disobey talk
+[FUSE
+[Flags
+[Out
+[Overview of Physmem2profit
+[Rekall
+[Rethinking Credential Theft
+[S3 Resume firmware vulnerability
+[StructLayout(LayoutKind.Sequential)
+[] FIELDS = new String[327
+[] Install(byte[
+[] Map(byte[
+[] Read(byte[
+[] SubArray(byte[
+[] Uninstall(byte[
+[] _MappingParameters = new byte[3 * sizeof(UInt64)
+[] buffer = new byte[102400
+[] retBuffer = new Byte[length
+[assembly: ComVisible(false)
+[cod
+[date
+[does not protect
+[hdr.StreamDirectoryRva+x*minidump_directory_entry.sizeof():hdr.StreamDirectoryRva+(x+1)*minidump_directory_entry.sizeof()
+[here
+[i
+[i*self.PAGE_SIZE:(i+1)*self.PAGE_SIZE
+[label
+[len(mod):
+[length
+[mem
+[mod
+[name of copyright owner
+[offset % self.PAGE_SIZE:-(self.PAGE_SIZE-((offset+requested_length) % self.PAGE_SIZE))
+[pagenum
+[pfn
+[pid
+[read
+[return: MarshalAs(UnmanagedType.Bool)
+[self.queued_offset//self.PAGE_SIZE + i
+[this.CvRecord.DataSize
+[this.MiscRecord.DataSize
+[this.NumberOfEntries
+[this.NumberOfMemoryRanges
+[this.NumberOfModules
+[this.NumberOfStreams
+[yyyy

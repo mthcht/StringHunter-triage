@@ -1,0 +1,142 @@
+"//
+"//         Program.Log(""SampleCommand called."")"
+"//     void SampleCommand(NetworkStream clientStream, byte[] _)"
+"// <param name=""_"">Unused</param>"
+"// <param name=""args"">Application command-line arguments</param>"
+"// <param name=""args"">offset and length of memory to read</param>"
+"// <param name=""args"">relative or absolute path to the pmem driver file</param>"
+"// <param name=""clientStream"">Client's network stream.</param>"
+"// <param name=""clientStream"">NetworkStream of a connected TCP client</param>"
+"// <param name=""clientStream"">TCP client's NetworkStream object.</param>"
+"// <param name=""clientStream"">stream to read packet from.</param>"
+"// <param name=""commandLineArguments""></param>"
+"// <param name=""ip"">Address to listen for commands on.</param>"
+"// <param name=""length"">number of bytes to read</param>"
+"// <param name=""message"">message to log.</param>"
+"// <param name=""operationDescription"">Optional description of an action that resulted with exception being thrown.</param>"
+"// <param name=""pathToDriver"">Relative or absolute path to the driver.</param>"
+"// <param name=""receivers"">List of all commands receivers.</param>"
+"// <param name=""serviceHandle"">handle to service to query status of.</param>"
+"// <param name=""serviceName"">Name of the service. Used both as full name and display name.</param>"
+"// <param name=""severity"">type of the message.</param>"
+"// <param name=""stream"">stream to read bytes from</param>"
+"// <param name=""tcpPort"">TCP port used to listen for commands.</param>"
+"// A handy function that calls GetLastError then throws an Exception that contains that error code, description and an optional message."
+"// COM, set the ComVisible attribute to true on that type."
+"// Someone has joined. Create a new thread, but first, check if there is another client connected at the moment and disconnect him."
+"// [assembly: AssemblyVersion(""1.0.*"")]"
+"// self.PAGE_SIZE, (offset+requested_length) // self.PAGE_SIZE+1, 1):"
+//      Build Number
+//      Major Version"
+//      Minor Version
+//      Revision
+//     [Command]
+//     {
+//     }
+//   can be used as well).
+//   of the command) and return a byte[] that will be sent back to the connected TCP client or null if there's nothing to send back (to report progress or indicate and error Program.Log
+// </example>
+// </summary>
+// <example>
+// <returns>0 if no error occurred.</returns>
+// <returns></returns>
+// <returns>A buffer containing packet to send.</returns>
+// <returns>A dictionary of all receivers and their commands.</returns>
+// <returns>Buffer of bytes read.</returns>
+// <returns>Read packet.</returns>
+// <returns>Service status value.</returns>
+// <returns>false if program should be terminated</returns>
+// <summary>
+// A RAII wrapper for native service-related handles.
+// A few access rights for use throughout the code.
+// A simple TCP Server used for communication.
+// ACQUISITION_MODE_PTE_MMAP
+// Allocate memory for the call.
+// An attribute used to indicate a method in ICommandReceiver-inherited class that is a Command. Such methods need to take a single byte[] argument (a collective buffer of parameters
+// An import used to control visibility of the console window.
+// An interface used to indicate a type (by inheriting this interface) that is a processor of commands sent by our server.
+// Application class.
+// Application entry point.
+// Build the packet.
+// Calls native QueryServiceStatusEx function and returns service status.
+// Check and return status.
+// Check if it's a built-in command.
+// Check if service already exists.
+// Check if service handle is already set.
+// Check service status.
+// Choose the right style for provided severity.
+// Close handle to the device first so the service can be stopped
+// Container for all receivers (drivers) and their commands.
+// Create and pass a buffer to the driver. We'll be asking for 102400 / 8(ulong) = 12800 values.
+// Deallocate global memory.
+// Deletes the service.
+// Enumeration type used for logging runtime messages.
+// Find command receiver.
+// General Information about an assembly is controlled through the following
+// Global settings for the whole application.
+// Grab a handle to the service manager.
+// Include all runs.
+// Indicates success.
+// Installs the PMem driver.
+// Invoke command method.
+// It doesn't - create it. First check if provided driver file exists.
+// Listens for remote commands. Main loop of the application.
+// Log all registered commands.
+// Logs a single runtime message.
+// Main loop of the client's thread.
+// Memory runs pairs are listed after all fields in the buffer.
+// Opens driver service or creates one if it doesn't exist.
+// Parses CL into application settings.
+// Process CL arguments.
+// Process a single packet.
+// Public constructor
+// Public constructor.
+// Read and return the memory fragment.
+// Read and return the packet.
+// Read length of the packet.
+// Reads a fixed number of bytes from network stream.
+// Reads a memory fragment.
+// Reads a single packet from provided network stream.
+// Reads and processes a single command.
+// Register a handler that restores console colors back in case of Ctrl+C being hit.
+// Remember to initialize all settings with default values.
+// Retrieve all needed parameters.
+// Return everything we've found.
+// Sanity check.
+// Sanity checks.
+// Send buffer back to client.
+// Send everything what has been returned by the command.
+// Sends necessary data to map physical memory as a file system.
+// Set back the default console window style.
+// Set read pointer to specified memory fragment.
+// Setting ComVisible to false makes the types in this assembly not visible
+// Show console if requested.
+// Show error on screen and send it to the client.
+// Show the message.
+// Simply read in a loop until received requested number of bytes.
+// Sockets listener used for communication.
+// Start listening.
+// Starts the driver service.
+// Stops the driver service.
+// Store receivers.
+// Store unmodified console window style.
+// The driver sets up the device object and creates the symbolic link. We just need to grab a handle.
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// The server object.
+// Thread of a connected client.
+// Try and start the service.
+// Try and stop the service.
+// Uninstalls the PMem driver.
+// Use reflection to enlist all receivers and their commands.
+// Uses reflection to enumerates all commands receivers.
+// Version information for an assembly consists of the following four values:
+// Warn early if not elevated.
+// We expect args to be 16 bytes: 2 x ulong values.
+// You can specify all the values or you can default the Build and Revision Numbers"
+// associated with an assembly.
+// by using the '*' as shown below:
+// class MyCommandReceiver : public ICommandReceiver
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from
+// {
+// }

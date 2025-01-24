@@ -1,0 +1,80 @@
+"'""$EventRecordID"""
+"'""$IpAddress"""
+"') AS SourceIP ,EXTRACT_TOKEN(Strings, 20, "
+"') AS SourceIP,COUNT(SourceIP) AS Times INTO RDPLoginFail.csv FROM Security WHERE EventID IN ("
+"') as Username, EXTRACT_TOKEN(Strings, 19, "
+"'), "
+"'yyyy""/""MM""/""dd HH:mm:ss"
+' -Name 
+' -value 
+'#text
+'$bid
+') AND SourceIP NOT IN (
+') AS Sport INTO RDPLoginFail.csv FROM Security WHERE EventID IN (
+') and (EventID !=
+') or (Data[@Name=
+'-
+'./Default.rdp
+'10
+'100
+'1000
+'1024
+'104857600
+'1048576000
+'1149
+'131
+'140
+'20
+'200
+'209715200
+'21
+'22
+'24
+'25
+'3
+'4625
+'50
+'52428800
+'AllEvent
+'ClientActiveXCore
+'EventLogType
+'EventRecordID
+'EventType
+'ExecutionPolicy
+'HKLM:\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP
+'IpAddress
+'LocalSessionManager
+'LogonType
+'MaxSize
+'Microsoft-Windows-RemoteDesktopServices-RdpCoreTS/Operational
+'Microsoft-Windows-TerminalServices-LocalSessionManager/Operational
+'Microsoft-Windows-TerminalServices-LocalSessionManager/operational
+'Microsoft-Windows-TerminalServices-RDPClient/Operational
+'Microsoft-Windows-TerminalServices-RemoteConnectionManager/Operational
+'Microsoft-Windows-TerminalServices-RemoteConnectionManager/operational
+'PowerShell Get-WinEvent cmdlet Error.
+'PowerShell Get-WinEvent cmdlet Error. Please Use EventLogSuccessWevtutil
+'RdpCoreTS
+'RegPath
+'RegValue
+'Registry::HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\PowerShell\\1\\ShellIds\\Microsoft.PowerShell
+'RemoteConnectionManager
+'RemoteSigned
+'Restricted
+'Result: Null
+'Result: Null. Pleace Use EventLogFailedLogParser. Maybe Wait a second.
+'Security
+'Unrestricted
+'\d+.\d+.\d+.\d+
+']!=
+']=
+'close
+'eventlog
+'fDenyTSConnections
+'findstr/n .* RDPLoginFail.csv
+'open
+'wevtutil el\
+'wevtutil epl evtx
+'yyyy-MM-dd HH:mm:ss fff
+'{print $3}
+'|

@@ -1,0 +1,7 @@
+                        // Found lsass.exe
+                // Loop through processes until lsass.exe
+"                // Create unicode string for ""lsass.exe"
+"                RtlInitUnicodeString(&lsassString, L""lsass.exe"
+*.exe
+.paket/paket.exe
+// Description: Get PID for lsass.exe

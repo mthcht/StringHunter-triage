@@ -1,0 +1,14 @@
+    <LocalDebuggerCommand>$(ProjectDir)\..\Debug\MSFRottenPotatoTestHarness.exe
+    <LocalDebuggerCommand>$(ProjectDir)\..\x64\Debug\MSFRottenPotatoTestHarness.exe
+    <TargetExt>.exe
+    <TargetExt>_.exe
+    <TargetExt>_x32.exe
+    <TargetExt>_x64.exe
+ (default c:\windows\system32\cmd.exe
+"				if (processargs != NULL && processname != L""C:\\Windows\\System32\\cmd.exe"
+"		""-p <program>: program to launch (default werfault.exe"
+"		""-p <program>: program to launch\n (default c:\\windows\\system32\\cmd.exe"
+"		processname = L""C:\\Windows\\System32\\cmd.exe"
+"		processname = L""C:\\Windows\\System32\\werfault.exe"
+-p <program>: program to launch (default werfault.exe
+C:\Users\TEST\Documents\Visual Studio 2015\Projects\MSFRottenPotato\Debug\MSFRottenPotatoTestHarness.exe

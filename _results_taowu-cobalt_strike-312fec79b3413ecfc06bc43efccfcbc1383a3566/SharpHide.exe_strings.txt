@@ -1,0 +1,140 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+*BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+UInt32
+Dictionary`2
+<Module>
+REG_DWORD
+HKEY_LOCAL_MACHINE
+REG_NONE
+KEY_SET_VALUE
+KEY_QUERY_VALUE
+UNICODE_STRING
+REG_LINK
+REG_DWORD_LITTLE_ENDIAN
+REG_DWORD_BIG_ENDIAN
+HKEY_CURRENT_USER
+KEY_ENUMERATE_SUB_KEYS
+KEY_WOW64_32KEY
+KEY_WOW64_64KEY
+KEY_CREATE_SUB_KEY
+REG_BINARY
+REG_EXPAND_SZ
+REG_SZ
+REG_MULTI_SZ
+value__
+Data
+mscorlib
+System.Collections.Generic
+samDesired
+get_IsElevated
+SharpHide
+Usage
+IDisposable
+KeyHandle
+Console
+ValueName
+WriteLine
+WellKnownSidType
+ValueType
+RegistryKeyType
+Dispose
+GuidAttribute
+DebuggableAttribute
+ComVisibleAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+AssemblyFileVersionAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+SharpHide.exe
+DataSize
+SizeOf
+IndexOf
+System.Runtime.Versioning
+ToString
+Substring
+get_Length
+MaximumLength
+PtrToStringUni
+StringToHGlobalUni
+AllocHGlobal
+FreeHGlobal
+Marshal
+System.Security.Principal
+advapi32.dll
+ntdll.dll
+Program
+get_Item
+set_Item
+get_IsSystem
+Enum
+Main
+System.Reflection
+IsWellKnown
+Zero
+buffer
+SecurityIdentifier
+get_Owner
+.ctor
+.cctor
+StructureToPtr
+UIntPtr
+System.Diagnostics
+System.Runtime.InteropServices
+System.Runtime.CompilerServices
+DebuggingModes
+args
+Equals
+ulOptions
+Concat
+Object
+op_Explicit
+GetCurrent
+RegOpenKeyEx
+TitleIndex
+subKey
+RegCloseKey
+NtDeleteValueKey
+NtSetValueKey
+hKey
+ContainsKey
+op_Equality
+op_Inequality
+WindowsIdentity
+WrapNonExceptionThrows
+	SharpHide
+Copyright 
+  2019
+$443d8cbf-899c-4c22-b4f6-b7ac202d4e37
+1.0.0.0
+.NETFramework,Version=v4.6.1
+FrameworkDisplayName
+.NET Framework 4.6.1
+RSDS
+C:\Users\XuanJian\Desktop\SharpHide-master\SharpHide\obj\Release\SharpHide.pdb
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

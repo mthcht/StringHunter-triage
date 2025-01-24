@@ -1,0 +1,153 @@
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+*r{	
+BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+0xb11a1
+Microsoft.Win32
+UInt32
+get_UTF8
+<Module>
+UHJvZ3JhbUFB
+System.IO
+mscorlib
+get_Id
+processId
+GetProcessById
+set_Mode
+FileMode
+PaddingMode
+CompressionMode
+CipherMode
+get_Message
+GetEnvironmentVariable
+IDisposable
+get_Handle
+SafeHandle
+get_SafeFileHandle
+hFile
+inFile
+outFile
+IsInRole
+WindowsBuiltInRole
+Console
+get_ProcessName
+GetProcessesByName
+WriteLine
+LocalMachine
+dumpType
+FileShare
+Dispose
+TryParse
+Delete
+Write
+GuidAttribute
+DebuggableAttribute
+ComVisibleAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+AssemblyFileVersionAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+GetValue
+SharpDump.exe
+set_Padding
+Encoding
+System.Runtime.Versioning
+FromBase64String
+ToString
+GetString
+ComputeHash
+TransformFinalBlock
+System.Security.Principal
+WindowsPrincipal
+dbghelp.dll
+FileStream
+GZipStream
+callbackParam
+userStreamParam
+expParam
+System
+SymmetricAlgorithm
+HashAlgorithm
+ICryptoTransform
+Boolean
+Main
+System.IO.Compression
+System.Globalization
+System.Reflection
+Exception
+NumberFormatInfo
+get_InvariantInfo
+Zero
+MiniDumpWriteDump
+SharpDump
+Minidump
+Clear
+MD5CryptoServiceProvider
+TripleDESCryptoServiceProvider
+IFormatProvider
+.ctor
+CreateDecryptor
+IntPtr
+System.Diagnostics
+System.Runtime.InteropServices
+System.Runtime.CompilerServices
+DebuggingModes
+Microsoft.Win32.SafeHandles
+NumberStyles
+ReadAllBytes
+GetBytes
+args
+FileAccess
+hProcess
+Compress
+Exists
+Format
+Object
+Environment
+GetCurrent
+Convert
+System.Text
+set_Key
+OpenSubKey
+RegistryKey
+System.Security.Cryptography
+Directory
+Registry
+op_Equality
+IsHighIntegrity
+WindowsIdentity
+WrapNonExceptionThrows
+	SharpDump
+Copyright 
+  2018
+'1c-866c-77004802d8a0
+1.0.0.0
+.NETFramework,Version=v4.7
+FrameworkDisplayName
+.NET Framework 4.7
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

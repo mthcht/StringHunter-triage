@@ -1,0 +1,8 @@
+        EventLogCredentials
+    function EventLogCredentials {
+"                    blog($1, ""Get RDC server:port & Credentials"");"
+"                    bpowerpick($bid,""EventLogCredentials"");"
+"                    bpowershell_import($bid, script_resource(""./powershell/EventLogCredentials.ps1""));"
+"            item ""EventLogCredentials"" {"
+"        write-host ""SearchAll - EventLogCredentials"""
+function EventLogCredentials {
