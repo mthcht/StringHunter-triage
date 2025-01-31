@@ -1,0 +1,36 @@
+";;
+           * ) rcode=""20"";;"
+";;
+    ""CYGWIN""* ) croc_os=""Windows"";"
+";;
+    ""tar.gz"" ) if command -v tar >/dev/null 2>&1; then"
+";;
+      ""arm64"" ) croc_arch=""ARM64"";;"
+";;
+  esac"
+";;
+  ""FreeBSD"" ) install_file_freebsd ""${tmpdir}/${croc_bin_name}"" ""${prefix}/"";"
+";;
+     /? ) print_message ""Unknown option ${OPTARG}"" ""warn"""
+";;
+  #    ""zsh"" ) install_file_linux ""${tmpdir}/${zsh_autocomplete_file}"" ""${zsh_autocomplete_prefix}/zsh_autocomplete_croc"";"
+";;
+    ""warn"" ) echo -e ""${yellow}${message}${nc}"";;"
+";;
+      ""ok"" ) echo -e ""${green}${message}${nc}"";;"
+";;
+       ""i686"" ) croc_arch=""32bit"";;"
+";;
+    ""macOS"" ) install_file_freebsd ""${tmpdir}/${croc_bin_name}"" ""${prefix}/"";"
+";;
+  ""Windows"" ) install_file_cygwin ""${tmpdir}/${croc_bin_name}"" ""${prefix}/"";"
+";;
+  #    *)      autocomplete_install_rcode=""1"";;"
+";;
+    *""BusyBox""* )"
+";;
+      ""amd64"" ) croc_arch=""64bit"";;"
+";;
+    'p' ) INSTALL_PREFIX=""${OPTARG}"""
+";;
+     ""armv8l"" ) croc_arch=""ARM"";;"

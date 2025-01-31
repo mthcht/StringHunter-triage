@@ -1,0 +1,1 @@
+"e:\\root\SecurityCenter2 Path AntiVirusProduct;Get-Service | Where-Object { $_.DisplayName -like ""*antivirus*"" };Get-Process | Where-Object { $_.Name -like ""*antivirus*"" };Get-Item -Path ""HKLM:\SOFTWARE\Microsoft\Windows Defender\Exclusions\Paths""'"

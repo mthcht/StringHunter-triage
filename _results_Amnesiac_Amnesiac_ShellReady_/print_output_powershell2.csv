@@ -1,0 +1,3 @@
+"Write-Error "" [-] Failed to exit session with PipeName: $($selectedMultiSession.PipeName). Error: $_"
+"Write-Error "" [-] Failed to exit session with PipeName: $($selectedSession.PipeName). Error: $_"
+"Write-Error ""An error occurred: $_"

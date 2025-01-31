@@ -1,0 +1,12 @@
+   - ASSEMBLY_VERSION = // the value from `sigcheck.exe
+   `sn.exe
+ and ildasm.exe
+"	std::wcout << L""[+] Created an authenticated IMsiCustomAction hosted on MSIEXEC.exe"
+"	std::wcout << L""[+] Loaded "" << payload_gac_path << L"" to the remote MSIEXEC.exe"
+"constexpr LPCWSTR ASSEMBLY_PUBLIC_KEY = L""136e5fbf23bb401e"";	// sn.exe"
+"constexpr LPCWSTR ASSEMBLY_VERSION = L""1.0.0.0"";				// sigcheck.exe"
+- Load the DLL to a remote MSIEXEC.exe
+.paket/paket.exe
+DCOMUploadExec.exe
+`Local Usage: DCOMUploadExec.exe
+`Usage: DCOMUploadExec.exe

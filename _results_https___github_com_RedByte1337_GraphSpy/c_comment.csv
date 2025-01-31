@@ -1,0 +1,102 @@
+"// $('#graphspy_otp_table').DataTable().ajax.reload(null, false);"
+"// Dynamically set the max-height of the ""conversation_list_group"" and ""teams_message_container"" to whatever space is left below it"
+"// Enable/Disable ""Add Selected Rows"""" button when entries are selected"
+"// Files displayed in green can be downloaded anonymously, while orange require authentication"
+"// If ""Include membership count"" is checked, show the Groups and Roles columns."
+"// If a modal with the same ID already exists, delete it first"
+"// If the DataTable already exists, destroy it first and remove all event handlers"
+"// If the DataTable already exists, just reload it"
+"// If the URL contains a driveId parameter, it will automatically be filled in and the table will auto generate"
+"// If the URL contains a siteId parameter, it will automatically be filled in and the table will auto generate"
+"// If the message includes files, display them"
+"// If the property does not exist already in the columns array, then add it"
+"// Show the message box when the ""Send message"" switch is enabled"
+"// Show the time if the last message was sent today, otherwise show the date"
+"// Types: primary, secondary, success, danger, warning, info, light, dark"
+"// return '<i class=""fi fi-br-question"" style=""cursor: pointer""></i>'"
+// ========== Access Tokens ==========
+// ========== Cookies ==========
+// ========== Database ==========
+// ========== Device Codes ==========
+// ========== Entra ID ==========
+// ========== Graph ==========
+// ========== Helpers ==========
+// ========== MFA ==========
+// ========== Messages ==========
+// ========== Modals ==========
+// ========== Refresh Tokens ==========
+// ========== Settings ==========
+// ========== Teams ==========
+// ========== User Agent ==========
+// Activate the correct option in the dt-error-message-dropdown on page load
+// Activate the last Toast Message
+// Append header and body to toast wrapper
+// Append new Toast Message to the page
+// Auto Reload Messages
+// Auto refresh the table every 5 seconds
+// Catch datatable error messages and convert them to toast messages
+// Delay to ensure the file is uploaded
+// Download icon
+// Expand modals button
+// Fix bootstrap5 summernote dropdowns
+// Fix dropdowns not closing on click
+// Folder icon
+// Get a useful name for the conversation
+// Hide the columns with the default-hide class
+// Initialize datatable
+// Link icon
+// Make sure the last character of the path is a '/' before appending the folder name
+// Not sure if this type is correct? Not tested yet
+// Obtain access token info
+// Obtain refresh token info
+// Only allow delete if CanDelete is true and the method is configured
+// Only allow to add if CanAdd is true
+// Open conversation messages
+// Open this row
+// Populate the access_token_modal_table table
+// Populate the access_tokens table
+// Populate the available_auth_methods_table table
+// Populate the databases table
+// Populate the device_codes table
+// Populate the entra_id_users_table table
+// Populate the graphspy_otp_table table
+// Populate the refresh_token_modal_table table
+// Populate the refresh_tokens table
+// Populate the request_templates table
+// Populate the response_table table
+// Populate the user agent field
+// Question mark icon
+// Reload the conversations and try to open the last created conversation.
+// Remove potential trailing slashes in path
+// Replace AMSImage URLs with requests to the /api/get_teams_image GraphSpy endpoint
+// Reset the modal to its default state
+// Resolve it from the members list
+// Send request
+// Set correct height of teams_message_container and message_form
+// Show captcha
+// Show conversation info
+// Show conversation members
+// Show new conversation modal
+// Show teams message info
+// Show the resource field if the API version is 1 or show the scope field if the API version is 2
+// Skip empty or deleted messages
+// Skip streamofnotifications
+// This is a drive
+// This is a file
+// This is a folder
+// This is a site
+// This row is already open - close it
+// To Do: Reload button
+// To do: Use a MsGraph access token to download the files based on the SiteID and ItemID
+// To do: get the name of the last message sender if it is empty and if resolve_conversation_names is set
+// Toast body
+// Toast header
+// Update User Agent
+// Update teams_message_container height every time the message_form content changes
+// User Agent
+// Wrapper for new Toast Message
+// You can only have one value for these methods. So adding a new one will replace the existing one.
+// `d` is the original data object for the row
+// change to just text() to strip space in text nodes
+// describes how we want to modify the XML - indent everything
+// request_template_name

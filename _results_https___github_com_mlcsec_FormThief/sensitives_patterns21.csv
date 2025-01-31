@@ -1,0 +1,4 @@
+"beacon> bofnet_executeassembly KeePass ""C:\path\to\target\passwords.kdbx"""
+"ineExecuteAssembly --dotnetassembly C:\Tools\KeePass.exe --assemblyargs ""C:\path\to\target\passwords.kdbx"""
+new auth dialog with .kdbx file path|
+| KeePass              | KeePass.exe               | Identify any .kdbx files on the host (trying to dump the active .kdbx db with procsearch fails) | Kill process -> pop 

@@ -1,0 +1,12 @@
+"	err = message.Send(c.conn[0], c.Key, message.Message{"
+"							c.Key,"
+"	c.Key, _, err = crypt.New(key, salt)"
+	if m.Type != message.TypePAKE && c.Key == nil {
+"		err = message.Send(c.conn[0], c.Key, message.Message{"
+"		data, err = crypt.Decrypt(data, c.Key)"
+"		errStopTransfer := message.Send(c.conn[0], c.Key, message.Message{"
+"	m, err := message.Decode(c.Key, payload)"
+"				err = message.Send(c.conn[0], c.Key, message.Message{"
+"			err = message.Send(c.conn[0], c.Key, message.Message{"
+"	log.Debugf(""generated key = %+x with salt %x"", c.Key, salt)"
+"	key = pbkdf2.Key(passphrase, salt, 100, 32, sha256.New)"

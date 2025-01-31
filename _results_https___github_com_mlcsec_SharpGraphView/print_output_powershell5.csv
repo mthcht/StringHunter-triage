@@ -1,0 +1,7 @@
+"Write-Output """"[*] Application ID: {Config.id}"
+"Write-Output """"[*] Scope: https://management.azure.com/.default"
+"Write-Output """"[*] Tenant ID: {Config.tenant}"
+"Write-Output """"[*] access_token:"
+"Write-Output """"[-] Error: $_"
+"Write-Output """"`n[+] Azure Management token obtained"
+"Write-Output """"`n[+] Created signed JWT:"

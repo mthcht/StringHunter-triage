@@ -1,0 +1,16 @@
+"')"" Text=""$([System.String]::Format("
+"', "
+' 
+' == 
+'$(Configuration)
+'$(Configuration)|$(Platform)
+'$(ErrorText)
+'$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props
+'$(Platform)
+'*
+'.
+'Debug|AnyCPU
+'Release|AnyCPU
+'packages\Microsoft.Windows.CsWin32.0.3.106\build\net20\Microsoft.Windows.CsWin32.props
+'packages\Microsoft.Windows.SDK.Win32Metadata.60.0.34-preview\build\net20\Microsoft.Windows.SDK.Win32Metadata.props
+'packages\Microsoft.Windows.WDK.Win32Metadata.0.11.4-experimental\build\net20\Microsoft.Windows.WDK.Win32Metadata.props

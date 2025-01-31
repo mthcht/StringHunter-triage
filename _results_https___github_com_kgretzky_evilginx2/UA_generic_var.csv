@@ -1,0 +1,8 @@
+"UserAgent != """" {"
+"UserAgent = ""xenolf-acme/3.1.0"""
+"UserAgent = req.Header.Get(""User-Agent"")"
+"UserAgentComment = ""release"""
+"UserAgentFilter = """""
+"UserAgentKey       = http.CanonicalHeaderKey(""User-Agent"")"
+"UserAgentValue = ""go-resty/"" + Version + "" (https://github.com/go-resty/resty)"""
+UserAgentFilter = val

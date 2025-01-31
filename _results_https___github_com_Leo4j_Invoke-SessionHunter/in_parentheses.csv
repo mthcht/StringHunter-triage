@@ -1,0 +1,181 @@
+"(""CommandStatus"", [System.Management.CimType]::String, $false"
+"(""Key"", $true"
+"(""LDAP://$baseDN"""
+"(""OutputData"", [System.Management.CimType]::String, $false"
+"(""\\$ComputerName\root\cimv2"", $connectionOptions"
+"(""\\$ComputerName\root\cimv2"", [string]::Empty, $null"
+"(""adminCount"""
+"(""powershell.exe -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -WindowStyle Hidden -EncodedCommand "" + $finalCommandBase64"
+"($ADCompDomain -replace ""\."", "",DC="""
+"($Computer, $Domain, $InvokeWMIRemoting, $UserName, $Password, $CheckAsAdmin, $Timeout, $ShowAll"
+"($Domain -replace ""\."", "",DC="""
+"($KeyID, [System.Management.CimType]::String, $false"
+"($UserName,$SecPassword"
+"($_ -cmatch ""$env:computername"""
+"($_ -match ""$env:computername"""
+"($computer, 135, $null, $null"
+"($entry.Properties[""adminCount""].Value -eq 1"
+"($entry.Properties[""adminCount""].Value -ne $null"
+"($entry.Properties[""operatingSystem""].Value -ne $null"
+"($scope, [System.Management.ManagementPath]::new("
+"($splitEntry[0] -notlike ""* *"""
+"($splitEntry[1] -notlike ""*$TempHostname*"""
+"($splitEntry[1] -notlike ""*$UserNameSplit*"""
+"($target, $Timeout"
+"($userInfo, $domainInfo, $hostInfo, $dateTime, $ResultselapsedTime"
+"($wmiDataOutput.CommandStatus -eq ""Completed"""
+"('$UserName', (ConvertTo-SecureString -String '$Password' -AsPlainText -Force"
+"(($splitEntry[0] -notlike ""* *"""
+"((New-Object System.DirectoryServices.ActiveDirectory.DirectoryContext('Domain', $Domain"
+"(1, 10"
+"(Mandatory=$False, Position = 0, ValueFromPipeline=$true"
+"(Mandatory=$False, Position = 1, ValueFromPipeline=$true"
+"(Mandatory=$False, Position = 10, ValueFromPipeline=$true"
+"(Mandatory=$False, Position = 11, ValueFromPipeline=$true"
+"(Mandatory=$False, Position = 12, ValueFromPipeline=$true"
+"(Mandatory=$False, Position = 13, ValueFromPipeline=$true"
+"(Mandatory=$False, Position = 14, ValueFromPipeline=$true"
+"(Mandatory=$False, Position = 2, ValueFromPipeline=$true"
+"(Mandatory=$False, Position = 3, ValueFromPipeline=$true"
+"(Mandatory=$False, Position = 4, ValueFromPipeline=$true"
+"(Mandatory=$False, Position = 5, ValueFromPipeline=$true"
+"(Mandatory=$False, Position = 6, ValueFromPipeline=$true"
+"(Mandatory=$False, Position = 7, ValueFromPipeline=$true"
+"(Mandatory=$False, Position = 8, ValueFromPipeline=$true"
+"(Mandatory=$False, Position = 9, ValueFromPipeline=$true"
+"([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey('Users', '$Computer'"
+"([wmiclass]""\\$ComputerName\ROOT\CIMV2:$ClassID"""
+"(kernel, window system, and so on"
+(!$CheckAsAdmin
+(!$Domain
+(!$DomainController
+(!$IncludeLocalHost
+(!$NoPortScan
+(!$Result
+(!(operatingSystem=*Server*
+(!(userAccountControl:1.2.840.113556.1.4.803:=2
+($ADCompDomain
+($CheckAsAdmin
+($CheckSessionsAsAdmin | Out-String
+($CheckSessionsAsAdmin.Count -eq 0
+($Command
+($Computer
+($Computer in $Computers
+($Domain
+($ErrorCheckpoint
+($Hunt
+($InvokeWMIRemoting
+($Match
+($Password
+($Process.WaitForExit($Timeout
+($RawResults
+($Result
+($Servers
+($ShowAll
+($Targets
+($TestPath
+($Timeout
+($UserName
+($UserName -AND !$ShowAll
+($UserName -AND $Password
+($Workstations
+($_ -match $pattern
+($asyncResult
+($attributesToLoad
+($cimInstance
+($computer
+($computer in $Computers
+($cred
+($elapsedTime -lt $timeout
+($elapsedTime.Hours
+($elapsedTime.Milliseconds
+($elapsedTime.Minutes
+($elapsedTime.Seconds
+($entry in $filtered
+($env:COMPUTERNAME
+($env:USERDOMAIN
+($error[0]
+($inputFromUser
+($inputFromUser -eq 'exit'
+($key -match '^[Ss]-\d-\d+-(\d+-
+($key in $userKeys
+($ldapPath
+($remoteRegistry -ne $null
+($remoteRegistry | Out-String
+($result
+($result -ne $null
+($result in $allResults
+($result in $results
+($result | Where-Object { $_ -like '*svr hostname*' } | Select-Object -First 1
+($result.Domain
+($result.HostName
+($result.UserSession -split '\\'
+($runspace in $runspaces
+($runspace.PowerShell.EndInvoke($runspace.Status
+($runspace.Status
+($sid
+($sid in $userSIDs
+($splitEntry[0] -ne $TempHostname
+($splitEntry[1] -ne $TempCurrentUser
+($startProcess.ReturnValue
+($startProcess.ReturnValue -eq 0
+($startProcess.ReturnValue -ne 0
+($target
+($tempusername -like '*$'
+($true
+($wait
+($wmiData | Select-Object -Property $KeyID -ExpandProperty $KeyID
+(&(objectCategory=computer
+(&(sAMAccountType=805306369
+('='
+('https://raw.githubusercontent.com/Leo4j/Invoke-SessionHunter/main/Invoke-SessionHunter.ps1'
+('klist sessions' command is run on targets
+(($env:computerName
+((-not $CheckSessionsAsAdmin
+().AddScript($scriptBlock
+().DomainName.Trim(
+(-not $ErrorCheckpoint
+(-not $classExists
+(1
+(2
+(2 seconds
+(3
+(50
+(@L3o4j
+(C
+(Get-Date -Format 'dd/MM/yyyy HH:mm:ss'
+(Get-Random
+(Mandatory = $true
+(SIDs
+([System.Security.Principal.NTAccount]
+([System.Text.Encoding]::Unicode.GetBytes($CmdInput
+([System.Text.Encoding]::Unicode.GetBytes($finalCommand
+([\w\s-]+\\[\w\s-]+\$?
+([scriptblock]::Create($InvokeWMIRemoting
+([string]$CmdInput
+(a
+(and Sessions
+(at your option
+(b
+(for any work
+(gratis or for a charge
+(https://github.com/Leo4j/Invoke-SessionHunter/assets/61951374/0505d8d7-231a-4e3e-b157-58900e7bba85
+(https://github.com/Leo4j/Invoke-WMIRemoting
+(if any
+(if you work as a programmer
+(in milliseconds
+(including a cross-claim or counterclaim in a lawsuit
+(including a physical distribution medium
+(name=$HostName
+(new-object net.webclient
+(objectClass=computer
+(one per line
+(operated by you or a third party
+(operatingSystem=*Server*
+(or copies made from those copies
+(regardless of how the transaction is characterized
+(sAMAccountName=$UserName
+(this is native behavior
+(which most likely will retrieve more results
+(whoami
+(with or without modification

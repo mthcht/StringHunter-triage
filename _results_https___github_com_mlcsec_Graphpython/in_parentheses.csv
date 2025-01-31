@@ -1,0 +1,1266 @@
+"(""      Assigned to all devices"""
+"(""      Assigned to all users"""
+"(""    ---"""
+"("""""
+"(""%Y-%m-%dT%H:%M:%SZ"""
+"("", "".join(values"
+"(""- Assigned to all devices"""
+"(""- Assigned to all users"""
+"(""-"" * 80"
+"(""---"""
+"(""----                                       ---   ---   ----   -----   ----   -------  ----        ---"""
+"(""--browser"", choices=['Android', 'IE', 'Chrome', 'Firefox', 'Edge', 'Safari'], help=""Browser type for User-Agent forging"""
+"(""--cert"", help=""X509Certificate path (.pfx, .crt, .pem, .cer"
+"(""--command"", help=""Command to execute"""
+"(""--device"", choices=['Mac', 'Windows', 'AndroidMobile', 'iPhone'], help=""Device type for User-Agent forging"""
+"(""--domain"", help=""Target domain"""
+"(""--email"", help=""File containing OWA email message body content (spoof-owaemailmessage"
+"(""--entity"", choices=['driveItem', 'message', 'chatMessage', 'site', 'event'],help=""Search entity type: driveItem(OneDrive"
+"(""--estsauthcookie"", help=""'ESTSAuth' or 'ESTSAuthPersistent' cookie"""
+"(""--id"", help=""ID of target object"""
+"(""--list-commands"", action=""store_true"", help=""List available commands"""
+"(""--mail-folder"", choices=['Allitems', 'inbox', 'archive', 'drafts', 'sentitems', 'deleteditems', 'recoverableitemsdeletions'], help=""Mail folder to dump (dump-owamailbox"
+"(""--only-return-cookies"", action=""store_true"", help=""Only return cookies from the request (open-owamailboxinbrowser"
+"(""--query"", help=""Raw API query URL (GET only"
+"(""--script"", help=""File containing the script content (deploy-maliciousscript or backdoor-script"
+"(""--search"", help=""Search string"""
+"(""--secret"", help=""Enterprise application secretText (invoke-appsecrettoaccesstoken"
+"(""--select"", help=""Fields to select from output"""
+"(""--tenant"", help=""Target tenant ID"""
+"(""--token"", help=""Microsoft Graph access token or refresh token for FOCI abuse"""
+"(""--top"", type=int, help=""Number (int"
+"(""--use-cae"", action=""store_true"", help=""Flag to use Continuous Access Evaluation (CAE"
+"(""--username"", help=""Username or file containing usernames (invoke-userenumerationasoutsider"
+"(""1. Open a new BurpSuite Repeater tab & set the Target to 'https://substrate.office.com'"""
+"(""2. Paste the below request into Repeater & Send"""
+"(""3. Right click the response > 'Show response in browser', then open the response in Burp's embedded browser"""
+"(""4. Refresh the page to access the mailbox"""
+"(""="" * 80"
+"(""@"""
+"(""@odata.context"""
+"(""@odata.nextLink"""
+"(""AADSTS50034"""
+"(""AADSTS50053"""
+"(""AADSTS50059"""
+"(""AADSTS50076"""
+"(""AADSTS50126"""
+"(""AADSTS700016"""
+"(""AADSTS81016"""
+"(""Add group exclusion? (yes/no"
+"(""Assign to all users? (yes/no"
+"(""Assign to specific group? (yes/no"
+"(""AuthURL"""
+"(""Certificate not found."""
+"(""Custom Message Body: """
+"(""Description: """
+"(""Display Name: """
+"(""ESTSAUTH"", ests_auth_cookie.split(""="", 1"
+"(""ESTSAUTH="""
+"(""ESTSAUTHPERSISTENT"", ests_auth_cookie.split(""="", 1"
+"(""ESTSAUTHPERSISTENT="""
+"(""Enforce Signature Check? (true/false"
+"(""Enter Display Name: """
+"(""Enter Group ID to Exclude: """
+"(""Enter Group ID: """
+"(""Enter Invite Redirect URL (leave blank for default"
+"(""Enter Mail Nickname: """
+"(""Enter New Value: """
+"(""Enter Object ID (user/group id"
+"(""Enter Password: """
+"(""Enter Scope ID (enter '/' for tenant wide"
+"(""Enter Script Description: """
+"(""Enter User Principal Name: """
+"(""Enter ccRecipients (comma-separated"
+"(""Enter toRecipients (comma-separated"
+"(""FederationBrandName"", """""
+"(""GET /owa/ HTTP/1.1"""
+"(""Got Invalid STS request. The tenant may not have DesktopSSO or Directory Sync enabled."""
+"(""Invalid input for Company Portal. Defaulting to 'False'."""
+"(""Invalid input for Enforce Signature Check. Defaulting to 'false'."""
+"(""Invalid input for Run As 64-bit. Defaulting to 'false'."""
+"(""Invalid input for Run As Account. Defaulting to 'user."""
+"(""MDI instance:       Not found"""
+"(""Members:"""
+"(""NameSpaceType"", ""Unknown"""
+"(""Outsider"""
+"(""Publisher: """
+"(""Requests throttled!"""
+"(""Run As 64-bit? (true/false"
+"(""Run As Account (user/system"
+"(""Save To Sent Items (true/false"
+"(""Send Email Invitation? (true/false"
+"(""Show this as a featured app in the Company Portal? (true/false"
+"(""To open the OWA mailbox in a browser using a Substrate Access Token:"""
+"(""Use Admin Suffix '-admin' (yes/no"
+"(""Using Default Client: MSTeams"""
+"(""[*] Add-ApplicationCertificate"""
+"(""[*] Add-ApplicationPassword"""
+"(""[*] Add-ApplicationPermission"""
+"(""[*] Add-ExclusionGroupToPolicy"""
+"(""[*] Add-GroupMember"""
+"(""[*] Add-UserTAP"""
+"(""[*] Assign-PrivilegedRole"""
+"(""[*] Backdoor-Script"""
+"(""[*] Being throttled... sleeping for 5 seconds"""
+"(""[*] Create-Application"""
+"(""[*] Create-NewUser"""
+"(""[*] Decode-AccessToken"""
+"(""[*] Delete-Application"""
+"(""[*] Delete-Device"""
+"(""[*] Delete-Group"""
+"(""[*] Delete-User"""
+"(""[*] Deploy-MaliciousScript"""
+"(""[*] Deploy-MaliciousWebLink"""
+"(""[*] Display-ASRPolicyRules"""
+"(""[*] Display-AVPolicyRules"""
+"(""[*] Display-DiskEncryptionPolicyRules"""
+"(""[*] Display-EDRPolicyRules"""
+"(""[*] Display-FirewallConfigPolicyRules"""
+"(""[*] Display-FirewallRulePolicyRules"""
+"(""[*] Display-LAPSAccountProtectionPolicyRules"""
+"(""[*] Display-UserGroupAccountProtectionPolicyRules"""
+"(""[*] Dump-AndroidApps"""
+"(""[*] Dump-DeviceManagementScripts"""
+"(""[*] Dump-OWAMailbox"""
+"(""[*] Dump-WindowsApps"""
+"(""[*] Dump-iOSApps"""
+"(""[*] Dump-macOSApps"""
+"(""[*] Find-DynamicGroups"""
+"(""[*] Find-PrivilegedApplications"""
+"(""[*] Find-PrivilegedRoleUsers"""
+"(""[*] Find-SecurityGroups"""
+"(""[*] Find-UpdatableGroups"""
+"(""[*] Get-AdministrativeUnitMember"""
+"(""[*] Get-AppServicePrincipal"""
+"(""[*] Get-Application"""
+"(""[*] Get-CAPs"""
+"(""[*] Get-ConditionalAccessPolicy"""
+"(""[*] Get-CrossTenantAccessPolicy"""
+"(""[*] Get-CurrentUser"""
+"(""[*] Get-CurrentUserActivities"""
+"(""[*] Get-DeviceCategories"""
+"(""[*] Get-DeviceCompliancePolicies"""
+"(""[*] Get-DeviceComplianceSummary"""
+"(""[*] Get-DeviceConfigurationPolicies"""
+"(""[*] Get-DeviceConfigurationPolicySettings"""
+"(""[*] Get-DeviceConfigurations"""
+"(""[*] Get-DeviceEnrollmentConfigurations"""
+"(""[*] Get-DeviceGroupPolicyConfigurations"""
+"(""[*] Get-DeviceGroupPolicyDefinition"""
+"(""[*] Get-Domains"""
+"(""[*] Get-GraphTokens"""
+"(""[*] Get-Group"""
+"(""[*] Get-GroupMember"""
+"(""[*] Get-ManagedDevices"""
+"(""[*] Get-Messages"""
+"(""[*] Get-OneDriveFiles"""
+"(""[*] Get-OrgInfo"""
+"(""[*] Get-PartnerCrossTenantAccessPolicy"""
+"(""[*] Get-Password"""
+"(""[*] Get-PersonalContacts"""
+"(""[*] Get-RoleAssignments"""
+"(""[*] Get-RoleDefinitions"""
+"(""[*] Get-ScriptContent"""
+"(""[*] Get-ServicePrincipal"""
+"(""[*] Get-ServicePrincipalAppRoleAssignments"""
+"(""[*] Get-TemporaryAccessPassword"""
+"(""[*] Get-TenantID"""
+"(""[*] Get-TokenScope"""
+"(""[*] Get-User"""
+"(""[*] Get-UserAppRoleAssignments"""
+"(""[*] Get-UserChatMessages"""
+"(""[*] Get-UserDevices"""
+"(""[*] Get-UserPermissionGrants"""
+"(""[*] Get-UserPrivileges"""
+"(""[*] Get-UserProperties"""
+"(""[*] Get-UserTransitiveGroupMembership"""
+"(""[*] Get-oauth2PermissionGrants"""
+"(""[*] Grant-AppAdminConsent"""
+"(""[*] Invite-GuestUser"""
+"(""[*] Invoke-AppSecretToAccessToken"""
+"(""[*] Invoke-CertToAccessToken"""
+"(""[*] Invoke-CutstomQuery"""
+"(""[*] Invoke-ESTSCookieToAccessToken"""
+"(""[*] Invoke-ReconAsOutsider"""
+"(""[*] Invoke-RefreshToAzureManagementToken"""
+"(""[*] Invoke-RefreshToIntuneEnrollment"""
+"(""[*] Invoke-RefreshToMSGraphToken"""
+"(""[*] Invoke-RefreshToMSTeamsToken"""
+"(""[*] Invoke-RefreshToOfficeAppsToken"""
+"(""[*] Invoke-RefreshToOfficeManagementToken"""
+"(""[*] Invoke-RefreshToOneDriveToken"""
+"(""[*] Invoke-RefreshToOutlookToken"""
+"(""[*] Invoke-RefreshToSharePointToken"""
+"(""[*] Invoke-RefreshToSubstrateToken"""
+"(""[*] Invoke-RefreshToVaultToken"""
+"(""[*] Invoke-RefreshToYammerToken"""
+"(""[*] Invoke-Search"""
+"(""[*] Invoke-UserEnumerationAsOutsider"""
+"(""[*] List-AdministrativeUnits"""
+"(""[*] List-Applications"""
+"(""[*] List-AuthMethods"""
+"(""[*] List-ChatMessages"""
+"(""[*] List-Chats"""
+"(""[*] List-ConditionalAccessPolicies"""
+"(""[*] List-ConditionalAuthenticationContexts"""
+"(""[*] List-ConditionalNamedLocations"""
+"(""[*] List-Devices"""
+"(""[*] List-DirectoryRoles"""
+"(""[*] List-ExternalConnections"""
+"(""[*] List-JoinedTeams"""
+"(""[*] List-Notebooks"""
+"(""[*] List-OneDriveURLs"""
+"(""[*] List-OneDrives"""
+"(""[*] List-RecentOneDriveFiles"""
+"(""[*] List-ServicePrincipals"""
+"(""[*] List-SharePointRoot"""
+"(""[*] List-SharePointSites"""
+"(""[*] List-SharePointURLs"""
+"(""[*] List-SharedOneDriveFiles"""
+"(""[*] List-Tenants"""
+"(""[*] Locate-DirectoryRole"""
+"(""[*] Locate-ObjectID"""
+"(""[*] Locate-PermissionID"""
+"(""[*] Lock-Device"""
+"(""[*] New-SignedJWT"""
+"(""[*] Open-OWAMailboxInBrowser"""
+"(""[*] Reboot-Device"""
+"(""[*] Remove-GroupMember"""
+"(""[*] Requests throttled... sleeping 5 seconds"""
+"(""[*] Requests throttled... sleeping for 5 seconds"""
+"(""[*] Retire-Device"""
+"(""[*] Scope: https://management.azure.com/.default"""
+"(""[*] Shutdown-Device"""
+"(""[*] Spoof-OWAEmailMessage"""
+"(""[*] Update-DeviceConfig"""
+"(""[*] Update-UserPassword"""
+"(""[*] Update-UserProperties"""
+"(""[*] Wipe-Device"""
+"(""[+] Cookies:"""
+"(""[+] Token Obtained!\n"""
+"(""[+] User added to group"""
+"(""[+] User password profile updated"""
+"(""[-] Code not found in redirected URL path"""
+"(""[-] Directory role ID or name not found"""
+"(""[-] Error: --domain argument is required for Get-TenantID command"""
+"(""[-] Error: --domain argument is required for Invoke-ReconAsOutsider command"""
+"(""[-] Error: --email argument is required for Spoof-OWAEmailMessage command"""
+"(""[-] Error: --id <app id> argument is required for Get-AppServicePrincipal command"""
+"(""[-] Error: --id <appid> argument is required for Get-Application command"""
+"(""[-] Error: --id <appobjectid> and --cert required for Add-ApplicationCertificate command"""
+"(""[-] Error: --id <id> argument is required for Get-ServicePrincipal command"""
+"(""[-] Error: --id and --script required for Backdoor-Script command"""
+"(""[-] Error: --id argument is required for Add-ExclusionGroupToPolicy command"""
+"(""[-] Error: --id argument is required for Delete-Application command"""
+"(""[-] Error: --id argument is required for Delete-Device command"""
+"(""[-] Error: --id argument is required for Delete-Group command"""
+"(""[-] Error: --id argument is required for Delete-User command"""
+"(""[-] Error: --id argument is required for Display-ASRPolicyRules command"""
+"(""[-] Error: --id argument is required for Display-AVPolicyRules command"""
+"(""[-] Error: --id argument is required for Display-DiskEncryptionPolicyRules command"""
+"(""[-] Error: --id argument is required for Display-EDRPolicyRules command"""
+"(""[-] Error: --id argument is required for Display-FirewallRulePolicyRules command"""
+"(""[-] Error: --id argument is required for Display-LAPSAccountProtectionPolicyRules command"""
+"(""[-] Error: --id argument is required for Display-UserGroupAccountProtectionPolicyRules command"""
+"(""[-] Error: --id argument is required for Get-AdministrativeUnitMember command"""
+"(""[-] Error: --id argument is required for Get-ConditionalAccessPolicy command"""
+"(""[-] Error: --id argument is required for Get-DeviceConfigurationPolicySettings command"""
+"(""[-] Error: --id argument is required for Get-DeviceGroupPolicyDefinition command"""
+"(""[-] Error: --id argument is required for Get-GroupMember command"""
+"(""[-] Error: --id argument is required for Get-Password command"""
+"(""[-] Error: --id argument is required for Get-ScriptContent command"""
+"(""[-] Error: --id argument is required for Get-TemporaryAccessPassword command"""
+"(""[-] Error: --id argument is required for Get-UserChatMessages command"""
+"(""[-] Error: --id argument is required for Get-UserDevices command"""
+"(""[-] Error: --id argument is required for List-ChatMessages command"""
+"(""[-] Error: --id argument is required for Locate-DirectoryRole command"""
+"(""[-] Error: --id argument is required for Locate-PermissionID command"""
+"(""[-] Error: --id argument is required for Lock-Device command"""
+"(""[-] Error: --id argument is required for Reboot-Device command"""
+"(""[-] Error: --id argument is required for Retire-Device command"""
+"(""[-] Error: --id argument is required for Shutdown-Device command"""
+"(""[-] Error: --id argument is required for Wipe-Device command"""
+"(""[-] Error: --id argument is required for display-firewallconfigpolicyrules command"""
+"(""[-] Error: --id groupid,objectid required for Add-GroupMember command"""
+"(""[-] Error: --id groupid,objectid required for Remove-GroupMember command"""
+"(""[-] Error: --id required for Add-ApplicationPassword command"""
+"(""[-] Error: --id required for Add-ApplicationPermission command"""
+"(""[-] Error: --id required for Add-UserTAP command"""
+"(""[-] Error: --id required for Grant-AppAdminConsent command"""
+"(""[-] Error: --id required for Locate-ObjectID command"""
+"(""[-] Error: --id required for Update-DeviceConfig command"""
+"(""[-] Error: --id required for Update-UserPassword command"""
+"(""[-] Error: --id required for Update-UserProperties command"""
+"(""[-] Error: --query argument is required for Invoke-CutstomQuery command"""
+"(""[-] Error: --script argument is required for Deploy-MaliciousScript command"""
+"(""[-] Error: --search and --entity required for Invoke-Search command"""
+"(""[-] Error: --tenant and --estsauthcookie are required for Invoke-ESTSCookieToAccessToken command"""
+"(""[-] Error: --tenant and --id required for New-SignedJWT command"""
+"(""[-] Error: --tenant argument is required for Invoke-RefreshToAzureManagementToken command"""
+"(""[-] Error: --tenant argument is required for Invoke-RefreshToIntuneEnrollment command"""
+"(""[-] Error: --tenant argument is required for Invoke-RefreshToMSGraphToken command"""
+"(""[-] Error: --tenant argument is required for Invoke-RefreshToMSTeamsToken command"""
+"(""[-] Error: --tenant argument is required for Invoke-RefreshToOfficeAppsToken command"""
+"(""[-] Error: --tenant argument is required for Invoke-RefreshToOfficeManagementToken command"""
+"(""[-] Error: --tenant argument is required for Invoke-RefreshToOneDriveToken command"""
+"(""[-] Error: --tenant argument is required for Invoke-RefreshToOutlookToken command"""
+"(""[-] Error: --tenant argument is required for Invoke-RefreshToSharePointToken command"""
+"(""[-] Error: --tenant argument is required for Invoke-RefreshToSubstrateToken command"""
+"(""[-] Error: --tenant argument is required for Invoke-RefreshToYammerToken command"""
+"(""[-] Error: --tenant required for Invite-GuestUser command"""
+"(""[-] Error: --tenant, --cert, and --id <appid> arguments are required for Invoke-CertToAccessToken command"""
+"(""[-] Error: --tenant, --id, and --secret required for Invoke-AppSecretToAccessToken command"""
+"(""[-] Error: --username argument is required for Invoke-UserEnumerationAsOutsider command"""
+"(""[-] Error: No members found in this group"""
+"(""[-] Expected 302 redirect but received other status"""
+"(""[-] Failed to obtain access token."""
+"(""[-] Failed to retrieve tenant ID"""
+"(""[-] Failed to retrieve tenant info"""
+"(""[-] Failed to retrieve user realm information"""
+"(""[-] Invalid ESTS cookie format"""
+"(""[-] Invalid access token format"""
+"(""[-] Mail folder --mail-folder is required for this command."""
+"(""[-] No data found"""
+"(""[-] No dynamic groups found"""
+"(""[-] No results found in the response."""
+"(""[-] No role assignments"""
+"(""[-] No scopes found in the access token"""
+"(""[-] No security groups found"""
+"(""[-] No updatable groups found"""
+"(""[-] No users found or unexpected response format"""
+"(""[-] Permission ID or name not found"""
+"(""[-] Please provide two IDs separated by a comma (group ID, object ID"
+"(""[-] Polling expired. Token not obtained."""
+"(""[-] Refresh token is missing."""
+"(""[-] The request may require user interaction to complete, or the provided cookie is invalid"""
+"(""\033[34m[>] API Permissions: https://learn.microsoft.com/en-us/graph/permissions-reference\033[0m"""
+"(""\033[34m[>] Device Properties: https://learn.microsoft.com/en-us/graph/api/intune-devices-manageddevice-update\033[0m\n"""
+"(""\033[34m[>] Property Definitions: https://learn.microsoft.com/en-us/graph/api/user-update\033[0m"""
+"(""\n"""
+"(""\nApp URL: """
+"(""\nAssign to all devices? (yes/no"
+"(""\nAudit Settings"""
+"(""\nAuthentication"""
+"(""\nCleanup"""
+"(""\nEnter API Permission ID: """
+"(""\nEnter App Name: """
+"(""\nEnter Certificate Display Name: """
+"(""\nEnter Client (MSTeams, MSEdge, AzurePowerShell"
+"(""\nEnter Display Name: """
+"(""\nEnter Email Address: """
+"(""\nEnter Group ID To Exclude: """
+"(""\nEnter Key Vault Certificate Identifier URL: """
+"(""\nEnter Permission Names (comma-separated"
+"(""\nEnter Property: """
+"(""\nEnter Role Template ID: """
+"(""\nEnter Script Display Name: """
+"(""\nEnter SharePoint Tenant Name: """
+"(""\nEnter Subject: """
+"(""\nGlobal Settings"""
+"(""\nLocators"""
+"(""\nName                                       DNS   MX    SPF    DMARC   DKIM   MTA-STS  Type        STS"""
+"(""\nPost-Auth Enumeration"""
+"(""\nPost-Auth Exploitation"""
+"(""\nPost-Auth Intune Enumeration"""
+"(""\nPost-Auth Intune Exploitation"""
+"(""\n[+] Application created\n"""
+"(""\n[+] Application permissions updated successfully"""
+"(""\n[+] Azure Management Token Obtained!"""
+"(""\n[+] Certificate Details Obtained!"""
+"(""\n[+] Device config updated successfully"""
+"(""\n[+] Email sent successfully"""
+"(""\n[+] Forged JWT:"""
+"(""\n[+] Guest user invited\n"""
+"(""\n[+] Malicious web link app deployed successfully"""
+"(""\n[+] New user created\n"""
+"(""\n[+] Patched device management script successfully\n"""
+"(""\n[+] Role assigned\n"""
+"(""\n[+] Script assigned successfully"""
+"(""\n[+] Script created successfully"""
+"(""\n[+] Successfully added application certificate"""
+"(""\n[+] Token Obtained!\n"""
+"(""\n[+] User properties updated successfully"""
+"(""\n[+] Web link app assigned successfully"""
+"(""\n[-] Invalid permission ID. Not in graphpermissions.txt"""
+"(""\n[-] Operation cancelled by user"""
+"(""\n[-] Unexpected error"""
+"(""_"""
+"(""_0"""
+"(""_1"""
+"(""_action_type"""
+"(""_description"""
+"(""_direction"""
+"(""_enabled"""
+"(""_in"""
+"(""_interfacetypes"""
+"(""_localportranges"""
+"(""_name"""
+"(""_remoteportranges"""
+"(""_users"""
+"(""assignmentTarget: No assignments"""
+"(""assignmentTargets:"""
+"(""assignments: None"""
+"(""assignments:"""
+"(""authorization_pending..."""
+"(""children"", []"
+"(""choiceSettingValue"", {}"
+"(""device_vendor_msft_policy_config_defender_attacksurfacereductionrules_"", """""
+"(""groupSettingCollectionValue"", []"
+"(""https://login.microsoftonline.com/Common/oauth2/token?api-version=1.0"", data=token_body"
+"(""https://login.microsoftonline.com/common/oauth2/devicecode?api-version=1.0"", data=body, headers=headers"
+"(""https://substrate.office.com/owa/"", headers=headers, allow_redirects=False"
+"(""mx: *.mail.protection.outlook.com"" in line for line in mta_sts_lines"
+"(""scheduledActionsForRule: None"""
+"(""scheduledActionsForRule:"""
+"(""scp"""
+"(""scriptContent :\n"""
+"(""settingInstance"", {}"
+"(""tenant_region_sub_scope"", """""
+"(""value"", """""
+"(""version: STSv1"" in line for line in mta_sts_lines"
+"($select=id,classType,displayName,policyType,hasRelatedDefinitions,version,minUserCspVersion,minDeviceCspVersion"
+"(','"
+"(',', ':'"
+"('.//ns2:Domain', namespaces"
+"('/', 1"
+"('/certificates/', 1"
+"('@odata.context', None"
+"('@odata.type', ''"
+"('Application', permission_name, application_consent"
+"('Application', permission_name, application_description, application_consent"
+"('Delegated', permission_name, delegated_consent"
+"('Delegated', permission_name, delegated_description, delegated_consent"
+"('IfExistsResult', 0"
+"('README.md', 'r', encoding='utf-8'"
+"('appRoleId', 'N/A'"
+"('assignments@odata.context', None"
+"('children', []"
+"('choiceSettingCollectionValue', []"
+"('choiceSettingValue', {}"
+"('createdDateTime', None"
+"('description', child_def_id"
+"('description', setting_def_id"
+"('displayName', 'N/A'"
+"('groupId', 'N/A'"
+"('groupSettingCollectionValue', []"
+"('hits', []"
+"('hitsContainers', []"
+"('id', ''"
+"('id', None"
+"('keyCredentials', []"
+"('lastModifiedDateTime', None"
+"('lastSignInDateTime', 'N/A'"
+"('redirectUris', []"
+"('requiredResourceAccess', []"
+"('requirements.txt', 'r', encoding='utf-8'"
+"('resource', {}"
+"('scheduledActionConfigurations', []"
+"('scheduledActionsForRule', []"
+"('scriptContent', None"
+"('settingDefinitionId', ''"
+"('settingInstance', {}"
+"('simpleSettingCollectionValue', []"
+"('simpleSettingValue', {}"
+"('tenant_region_scope', ""Unknown"""
+"('userPrincipalName', 'N/A'"
+"('value', ''"
+"('value', []"
+"() if not key.startswith(""@odata"""
+"(), 'x5t': x5t}"
+"(), ids[1].strip("
+"().get(""error_description"", """""
+"().get('token_endpoint', ''"
+"().get('value', []"
+"().split(','"
+"()}} for email in ccrecipients.split(','"
+"()}} for email in torecipients.split(','"
+"(AV, ASR, DiskEnc, etc."
+"(Android, iOS, macOS, Windows, Linux, etc."
+"(Entra, o365, and Intune"
+"(KHTML, like Gecko"
+"(Outlook, SharePoint, OneDrive, Teams"
+"([[""Property"", ""Description""]] + [separator] + table, headers=""firstrow"", tablefmt=""plain"", colalign=(""left"", ""left"""
+"(access_token, url, args"
+"(api_url, headers=headers"
+"(api_url, headers=headers, data=json.dumps(json_body"
+"(api_url, headers=headers, json=body"
+"(api_url, headers=headers, json=data"
+"(api_url, headers=headers, json=data, timeout=30"
+"(api_url, headers=headers, json=json_body"
+"(api_url, headers=headers, json=json_data"
+"(api_url, json=json_body, headers=headers"
+"(app_role_url, headers=headers"
+"(application/delegated, description, admin consent required"
+"(args.username, 'r'"
+"(assign_api_url, headers=headers, json=body"
+"(assign_url, json=assign_body, headers=headers"
+"(assignments_api_url, headers=headers"
+"(auth, args.command.replace(""-"", ""_"""
+"(auth_url, data=data, headers=headers"
+"(auth_url, headers=headers, allow_redirects=False"
+"(autodiscover_url, data=autodiscover_body, headers=headers"
+"(cert_path, 'rb'"
+"(cert_uri_with_version, headers=headers"
+"(choice.get('value', ''"
+"(choice_value, choice_value"
+"(cleanup, args.command.replace(""-"", ""_"""
+"(content, 'html.parser'"
+"(device=None, browser=None"
+"(device=args.device, browser=args.browser"
+"(domain, 'MX'"
+"(domain, 'TXT'"
+"(driveItem, message, chatMessage, site, event"
+"(e, 'response'"
+"(e.g., name, picture, user name, email address"
+"(enum, args.command.replace(""-"", ""_"""
+"(estimate_access_endpoint, headers=headers, json=request_body"
+"(exe, msi, appx, msix, etc."
+"(exploit, args.command.replace(""-"", ""_"""
+"(f""      Assigned to Group ID: {group_id}"""
+"(f""      Excluded Group ID: {group_id}"""
+"(f""      {odata_type}: {target}"""
+"(f""    Admin Consent Required: {consent_required}"""
+"(f""    Application: {highlight(values['Application'], app_highlight"
+"(f""    Delegated: {highlight(values['Delegated'], delegated_highlight"
+"(f""    Description: {description}"""
+"(f""    Intent: {assignment['intent']}"""
+"(f""    Permission Type: {perm_type}"""
+"(f""    Requested URL: {auth_url}"""
+"(f""    Response Code: {response.status_code}"""
+"(f""    Response URI:  {location}"""
+"(f""    Role ID: {role_id} (Information not found"
+"(f""    Role ID: {role_id}"""
+"(f""    Role Name: {role_name}"""
+"(f""    Target:"""
+"(f""    Type: {role_type}"""
+"(f""   {odata_type}: {target}"""
+"(f""  - Action Type: {config.get('actionType'"
+"(f""  - Grace Period Hours: {config.get('gracePeriodHours'"
+"(f""  - ID: {assignment['id']}"""
+"(f""  - Notification Template Type: {config.get('notificationTemplateType'"
+"(f""  - {list_item}"""
+"(f""  Resource App ID: {resource['resourceAppId']}"""
+"(f""  {category}:"""
+"(f""  {sub_key} : {sub_value}"""
+"(f"" - {member}"""
+"(f""$select={args.select}"""
+"(f""$top={args.top}"""
+"(f""- Assigned to Group ID: {group_id}"""
+"(f""- Config ID: {action.get('id'"
+"(f""- Excluded Group ID: {group_id}"""
+"(f""- {odata_type}: {target}"""
+"(f""Account Enabled: {object_data.get('accountEnabled', 'N/A'"
+"(f""Action          : {rule_action}"""
+"(f""Admin Consent Required: {admin_consent_required}"""
+"(f""An error occurred while resolving {mdi_domain}: {str(e"
+"(f""An unexpected error occurred: {e}"""
+"(f""App Display Name: {object_data.get('appDisplayName', 'N/A'"
+"(f""App ID: {object_data.get('appId', 'N/A'"
+"(f""App Roles Count: {len(object_data.get('appRoles', []"
+"(f""Approximate Last Sign In DateTime: {object_data.get('approximateLastSignInDateTime', 'N/A'"
+"(f""Authorization: Bearer {get_access_token(args.token"
+"(f""Business Phones: {', '.join(object_data.get('businessPhones', []"
+"(f""Compliance State: {object_data.get('complianceState', 'N/A'"
+"(f""Created DateTime: {object_data.get('createdDateTime', 'N/A'"
+"(f""DISABLED  : {setting_text}"""
+"(f""Department: {object_data.get('department', 'N/A'"
+"(f""Description     : {rule_description}"""
+"(f""Description: \033[92m{role['description']}\033[0m"""
+"(f""Description: {object_data.get('description', 'N/A'"
+"(f""Description: {role['description']}"""
+"(f""DesktopSSO enabled: {tenant_sso}"""
+"(f""Device ID: {object_data.get('deviceId', 'N/A'"
+"(f""Direction       : {rule_direction}"""
+"(f""Display Name: {object_data.get('displayName', 'N/A'"
+"(f""Domains: {additional_domains_count}"""
+"(f""ENABLED   : {setting_text}"""
+"(f""Email {email_count}"""
+"(f""Enabled         : {rule_enabled}"""
+"(f""Enter New '{userproperty}' Value: """
+"(f""Error in Get-CredentialType: {e}"""
+"(f""Error in Get-RSTToken: {e}"""
+"(f""File {file_count}"""
+"(f""Group ID: {group['GroupId']}"""
+"(f""Group Name: {group['GroupName']}"""
+"(f""Group Types: {', '.join(object_data.get('groupTypes', []"
+"(f""Group and user action: {action}"""
+"(f""Homepage: {object_data.get('homepage', 'N/A'"
+"(f""Host: substrate.office.com"""
+"(f""ID: {object_data.get('id', 'N/A'"
+"(f""Interfaces      : {rule_interfaces}"""
+"(f""Is Assignable To Role: {object_data.get('isAssignableToRole', 'N/A'"
+"(f""Is Compliant: {object_data.get('isCompliant', 'N/A'"
+"(f""Is Managed: {object_data.get('isManaged', 'N/A'"
+"(f""Job Title: {object_data.get('jobTitle', 'N/A'"
+"(f""Last Sign-In DateTime: {object_data.get('signInActivity', {}"
+"(f""Local Ports     : {rule_local_ports}"""
+"(f""Local groups: {', '.join(local_groups"
+"(f""Login URL: {object_data.get('loginUrl', 'N/A'"
+"(f""MDI instance:       {tenant_mdi}"""
+"(f""Mail Enabled: {object_data.get('mailEnabled', 'N/A'"
+"(f""Mail: {object_data.get('mail', 'N/A'"
+"(f""Membership Rule: {object_data.get('membershipRule', 'N/A'"
+"(f""Mobile Phone: {object_data.get('mobilePhone', 'N/A'"
+"(f""OAuth2 Permissions Count: {len(object_data.get('oauth2Permissions', []"
+"(f""ONBOARD   : {setting_text}"""
+"(f""Object Type: {object_type}"""
+"(f""Office Location: {object_data.get('officeLocation', 'N/A'"
+"(f""Operating System Version: {object_data.get('operatingSystemVersion', 'N/A'"
+"(f""Operating System: {object_data.get('operatingSystem', 'N/A'"
+"(f""Privileged: \033[92m{'Yes' if role['privileged'] else 'No'}\033[0m"""
+"(f""Publisher Domain: {object_data.get('publisherDomain', 'N/A'"
+"(f""Publisher Name: {object_data.get('publisherName', 'N/A'"
+"(f""Registered Owner: {object_data.get('registeredOwners', [{}]"
+"(f""Remote Ports    : {rule_remote_ports}"""
+"(f""Required Resource Access Count: {len(object_data.get('requiredResourceAccess', []"
+"(f""Role: \033[92m{role['name']}\033[0m"""
+"(f""Rule Name       : {rule_name}"""
+"(f""Security Enabled: {object_data.get('securityEnabled', 'N/A'"
+"(f""Service Principal Type: {object_data.get('servicePrincipalType', 'N/A'"
+"(f""Sign In Audience: {object_data.get('signInAudience', 'N/A'"
+"(f""Tags: {', '.join(object_data.get('tags', []"
+"(f""Template ID: \033[92m{role['template_id']}\033[0m"""
+"(f""Tenant brand:       {tenant_brand}"""
+"(f""Tenant id:          {tenant_id}"""
+"(f""Tenant name:        {tenant_name}"""
+"(f""Tenant region:      {tenant_region}"""
+"(f""Trust Type: {object_data.get('trustType', 'N/A'"
+"(f""Unable to decode the file {token_input} with any of the tried encodings."""
+"(f""Unsupported setting type: {setting_type}"""
+"(f""User Principal Name: {object_data.get('userPrincipalName', 'N/A'"
+"(f""User selection type: {description}"""
+"(f""Uses cloud sync:    {uses_cloud_sync}"""
+"(f""Verified Publisher: {object_data.get('verifiedPublisher', {}"
+"(f""Visibility: {object_data.get('visibility', 'N/A'"
+"(f""Web Redirect URIs: {', '.join(object_data.get('web', {}"
+"(f""[*] Application ID: {args.id}"""
+"(f""[*] Found {len(groups_with_members"
+"(f""[*] Tenant ID: {args.tenant}"""
+"(f""[*] {key}: {value}"""
+"(f""[*] {key}: {value}\n"""
+"(f""[+] Admin Consent Required: {consent_required}"""
+"(f""[+] Admin consent granted for: '{permission_name}'"""
+"(f""[+] App Role ID: {app_role_id}"""
+"(f""[+] Application deleted"""
+"(f""[+] Description: {description}"""
+"(f""[+] Device deleted"""
+"(f""[+] Device lock initiated successfully"""
+"(f""[+] Device reboot initiated successfully"""
+"(f""[+] Device retire initiated successfully"""
+"(f""[+] Device shutdown initiated successfully"""
+"(f""[+] Device wipe initiated successfully"""
+"(f""[+] Found dynamic group: {group['displayName']}"""
+"(f""[+] Group deleted"""
+"(f""[+] Group member removed"""
+"(f""[+] Resource: {assignment.get('resourceDisplayName', 'N/A'"
+"(f""[+] Role Name: {role_name}"""
+"(f""[+] Role Type: {role_type}"""
+"(f""[+] Role: {role['displayName']}"""
+"(f""[+] Script ID: {script_id}"""
+"(f""[+] Token Obtained! ({datetime.now("
+"(f""[+] User deleted"""
+"(f""[+] {username:<16}"""
+"(f""[-] An error occurred while making the request: {str(e"
+"(f""[-] An error occurred while reading the file: {e}"""
+"(f""[-] An error occurred while retrieving members for group {group['displayName']}: {str(e"
+"(f""[-] An error occurred while retrieving object details: {str(e"
+"(f""[-] An error occurred while retrieving security groups: {str(e"
+"(f""[-] An error occurred: {e}"""
+"(f""[-] Domain {domain} is not registered to Azure AD"""
+"(f""[-] Error estimating access for group: {str(e"
+"(f""[-] Error fetching Group IDs: {str(e"
+"(f""[-] Error fetching Groups: {str(e"
+"(f""[-] Error loading .pfx file: {str(e"
+"(f""[-] Error making request: {str(e"
+"(f""[-] Error obtaining existing certificates {response.status_code}"""
+"(f""[-] Error patching device management script: {patch.status_code}"""
+"(f""[-] Error reading certificate: {str(e"
+"(f""[-] Error reading or encoding script file: {e}"""
+"(f""[-] Error retrieving OpenID configuration: {ex}"""
+"(f""[-] Error: --token is required for command"""
+"(f""[-] Error: API request failed with status code {response.status_code}"""
+"(f""[-] Error: API request for assignments failed with status code {assignments_response.status_code}"""
+"(f""[-] Error: App Role Assignments API request failed for Service Principal ID {sp['id']}: {app_role_response.status_code}"""
+"(f""[-] Error: Service Principal API request failed for appId {app_id} with status code {sp_response.status_code}"""
+"(f""[-] Error: Unknown command '{args.command}'. Use --list-commands to see available commands"""
+"(f""[-] Failed to add TAP: {response.status_code}"""
+"(f""[-] Failed to add group member: {response.status_code}"""
+"(f""[-] Failed to add password: {response.status_code}"""
+"(f""[-] Failed to assign script: {response.status_code}"""
+"(f""[-] Failed to create application: {response.status_code}"""
+"(f""[-] Failed to create new user: {response.status_code}"""
+"(f""[-] Failed to create script: {response.status_code}"""
+"(f""[-] Failed to create web link app: {response.status_code}"""
+"(f""[-] Failed to delete application: {response.status_code}"""
+"(f""[-] Failed to delete device: {response.status_code}"""
+"(f""[-] Failed to delete group: {response.status_code}"""
+"(f""[-] Failed to delete user: {response.status_code}"""
+"(f""[-] Failed to get Azure Management token: {response.status_code}"""
+"(f""[-] Failed to get Azure Vault token: {str(e"
+"(f""[-] Failed to get Intune Enrollment token: {str(e"
+"(f""[-] Failed to get MS Teams token: {str(e"
+"(f""[-] Failed to get Microsoft Graph token: {response.status_code}"""
+"(f""[-] Failed to get Office Apps token: {str(e"
+"(f""[-] Failed to get Office Management token: {str(e"
+"(f""[-] Failed to get OneDrive token: {str(e"
+"(f""[-] Failed to get Outlook token: {str(e"
+"(f""[-] Failed to get SharePoint token: {str(e"
+"(f""[-] Failed to get Substrate token: {str(e"
+"(f""[-] Failed to get Yammer token: {str(e"
+"(f""[-] Failed to get app secret token: {str(e"
+"(f""[-] Failed to get certificate access token: {str(e"
+"(f""[-] Failed to initiate device lock: {response.status_code}"""
+"(f""[-] Failed to initiate device reboot: {response.status_code}"""
+"(f""[-] Failed to initiate device retire: {response.status_code}"""
+"(f""[-] Failed to initiate device shutdown: {response.status_code}"""
+"(f""[-] Failed to initiate device wipe: {response.status_code}"""
+"(f""[-] Failed to invite guest user: {response.status_code}"""
+"(f""[-] Failed to parse device code response: {ex}"""
+"(f""[-] Failed to remove group member: {response.status_code}"""
+"(f""[-] Failed to retrieve Azure Application details: {response.status_code}"""
+"(f""[-] Failed to retrieve CAP: {response.status_code}"""
+"(f""[-] Failed to retrieve Service Principal details: {response.status_code}"""
+"(f""[-] Failed to retrieve current assignments: {response.status_code}"""
+"(f""[-] Failed to retrieve current user: {response.status_code}"""
+"(f""[-] Failed to retrieve group members: {response.status_code}"""
+"(f""[-] Failed to retrieve query: {response.status_code}"""
+"(f""[-] Failed to retrieve settings: {response.status_code}"""
+"(f""[-] Failed to retrieve user(s"
+"(f""[-] Failed to retrieve {p}: {response.status_code}"""
+"(f""[-] Failed to search data: {response.status_code}"""
+"(f""[-] Failed to search data: {str(e"
+"(f""[-] Failed to update user password: {response.status_code}"""
+"(f""[-] Group without 'id' found, skipping"""
+"(f""[-] HTTP Error: {ex}"""
+"(f""[-] HTTP Error: {response.status_code}"""
+"(f""[-] Invalid client: {client}"""
+"(f""[-] Object with ID {args.id} not found"""
+"(f""[-] Requested URL: {auth_url}"""
+"(f""[-] Response Code: {response.status_code}"""
+"(f""[-] Role information not found for App Role ID: {app_role_id}"""
+"(f""[-] Role: {role['displayName']}"""
+"(f""[-] The certificate file '{cert_path}' does not exist."""
+"(f""[-] The file {file_path} does not exist."""
+"(f""[-] {username:<16}"""
+"(f""\033[91m{message}\033[0m"""
+"(f""\033[92m{message}\033[0m"""
+"(f""\033[93m{message}\033[0m"""
+"(f""\nApp ID: {appid}"""
+"(f""\nApplication: {data['appDisplayName']}"""
+"(f""\nGrant Admin Consent For: {permission_name}? (yes/no"
+"(f""\nPermission ID: {permissionid} corresponds to '{permission_name}' with type '{permission_type}'"""
+"(f""\n[+] Admin consent granted for: '{', '.join(permission_names"
+"(f""\n[+] Excluded group added to policy rules"""
+"(f""\n[+] Token information written to '{file_path}'."""
+"(f""\n[-] An error occurred while executing '{args.command}': {str(e"
+"(f""\n[-] An error occurred: {e}"""
+"(f""\n[-] Error: '{userproperty}' is not a valid property."""
+"(f""\n[-] Error: {response.status_code} ({response.reason}"
+"(f""\n[-] Failed to add certificate: {response.status_code}"""
+"(f""\n[-] Failed to add excluded group to policy rules: {response.status_code}"""
+"(f""\n[-] Failed to assign role: {response.status_code}"""
+"(f""\n[-] Failed to assign web link app: {response.status_code}"""
+"(f""\n[-] Failed to grant admin consent: {grantreq.status_code}"""
+"(f""\n[-] Failed to grant admin consent: {request.status_code}"""
+"(f""\n[-] Failed to send OWA email message: {response.status_code}"""
+"(f""\n[-] Failed to update application permissions: {response.status_code}"""
+"(f""\n[-] Failed to update device config: {response.status_code}"""
+"(f""\n[-] Failed to update user properties: {response.status_code}"""
+"(f""\n[-] Invalid Graph permissions: {', '.join(invalid_permissions"
+"(f""\n[-] The file {file_path} does not exist."""
+"(f""\n\033[3mGraphpython v{version} - @mlcsec\033[0m\n"""
+"(f""\n{profile_type} Profile Settings"""
+"(f""https://login.microsoftonline.com/GetUserRealm.srf?login={username}"""
+"(f""https://login.microsoftonline.com/{args.domain}/.well-known/openid-configuration"", headers=headers"
+"(f""https://login.microsoftonline.com/{domain}/.well-known/openid-configuration"""
+"(f""https://login.microsoftonline.com/{tenant_id}/oauth2/v2.0/token"", headers=headers, data=data"
+"(f""kid: {kid or 'N/A'}"""
+"(f""template: {policy['templateReference']['templateDisplayName']}"""
+"(f""x5t: {x5t or 'N/A'}"""
+"(f""{action:<6}: {readable_rule}"""
+"(f""{auth_url}/oauth2/token?api-version=1.0"", data=body, headers=headers"
+"(f""{description} : {value}"""
+"(f""{description}: {value}"""
+"(f""{domain_info['Name']:<42} {str(domain_info['DNS']"
+"(f""{field} : {value}"""
+"(f""{indent}Setting: {setting_id} : "", end="""""
+"(f""{indent}{display_name} : "", end="""""
+"(f""{key:<35} : {value}"""
+"(f""{key:<{max_key_length}} : {value}"""
+"(f""{key} : No assignments"""
+"(f""{key} : {json.dumps(value, indent=2"
+"(f""{key} : {str(value"
+"(f""{key} : {value}"""
+"(f""{key} :"""
+"(f""{key}: {highlighted_value}"""
+"(f""{key}: {pretty_value}"""
+"(f""{key}: {value}"""
+"(f""{key}:"""
+"(f""{mapped_value:<10} : {description}"""
+"(f""{mapped_value}: {simple_value}"""
+"(f""{message}\n"""
+"(f""{permission}"""
+"(f""{p}: {response_json.get(p, 'N/A'"
+"(f""{setting_description}: {setting_value}"""
+"(f""{setting_text} - {value_field}"""
+"(f""{setting_text}: {choice_value}"""
+"(f""{settings_map[setting_id]['options'][value]}"""
+"(f""{value}"""
+"(f'_dmarc.{domain}', 'TXT'"
+"(f'{selector}._domainkey.{domain}', 'CNAME'"
+"(file_path, ""a"""
+"(file_path, 'a'"
+"(file_path, 'r'"
+"(file_path, 'r', encoding='utf-16'"
+"(file_path, 'r', encoding='utf-8'"
+"(granturl, headers=headers, json=admin_data"
+"(graph_api_endpoint, headers=headers"
+"(graph_api_url, headers=headers"
+"(groups_url, headers=headers"
+"(intune_enum, args.command.replace(""-"", ""_"""
+"(intune_exploit, args.command.replace(""-"", ""_"""
+"(json.dumps(response_json, indent=4"
+"(jwt_login, data=parameters"
+"(kv_uri, headers=headers"
+"(like subscriptions, resource groups, storage, compute"
+"(like your subscriptions, resource groups, storage, compute"
+"(locators, args.command.replace(""-"", ""_"""
+"(mapped_value, dict"
+"(members_url, headers=headers"
+"(new_uri, headers=headers, json=request_body"
+"(next_link, headers=headers, timeout=30"
+"(outsider, args.command.replace(""-"", ""_"""
+"(payload, private_key_pem, algorithm='RS256', headers={'kid': fingerprint.hex("
+"(permission, data, identifiers"
+"(pfx_data, None, default_backend("
+"(pretty_value, args.search"
+"(read, update and delete"
+"(read, update, update application secrets and delete"
+"(response_json, ""Domain"""
+"(response_json, ""Private"""
+"(response_json, ""Public"""
+"(response_json, profile_type"
+"(rule_name, rule_name"
+"(script_dir, 'directoryroles.txt'"
+"(script_dir, 'graphpermissions.txt'"
+"(search_term, colored(search_term, 'green'"
+"(setting, indent="""""
+"(setting_instance, indent"
+"(setting_text, dict"
+"(sp_api_url, headers=headers"
+"(tabulate([[""Display Name"", ""Role Template ID"", ""Description""]] + [separator] + table, headers=""firstrow"", tablefmt=""plain"", colalign=(""left"", ""left"", ""left"""
+"(tabulate(auth_commands, tablefmt=""plain"""
+"(tabulate(cleanup_commands, tablefmt=""plain"""
+"(tabulate(intune_enum, tablefmt=""plain"""
+"(tabulate(intune_exploit, tablefmt=""plain"""
+"(tabulate(locator_commands, tablefmt=""plain"""
+"(tabulate(outsider_commands, tablefmt=""plain"""
+"(tabulate(post_authenum_commands, tablefmt=""plain"""
+"(tabulate(post_authexploit_commands, tablefmt=""plain"""
+"(text, search_term"
+"(text, should_highlight"
+"(token_input, 'r', encoding=encoding"
+"(token_url, data=token_data, headers=headers"
+"(token_url, headers=headers, data=body"
+"(url, end_point, user, password"
+"(url, endpoint_address, username, password=""none"""
+"(url, headers=headers"
+"(url, headers=headers, json=admin_data"
+"(url, json=data"
+"(url_assign, headers=headers, json=assignment_payload"
+"(url_create, headers=headers, json=script_payload"
+"(user, method=""Normal"""
+"(username, flow_token=None, original_request=None"
+"(value, (str, int, float, bool"
+"(value, dict"
+"(value, indent=4"
+"(value, list"
+"({'response_type': 'code', 'client_id': client_id, 'resource': resource, 'redirect_uri': redirect_uri, 'state': state}"
+"({'settingInstance': child}, indent + ""  """
+(#Commands
+(#Demos
+(#Installation
+(#Usage
+($expand=scheduledActionConfigurations
+(%27microsoft.graph.androidLobApp%27
+(%27microsoft.graph.androidStoreApp%27
+(%27microsoft.graph.iOSiPadOSWebClip%27
+(%27microsoft.graph.iosLobApp%27
+(%27microsoft.graph.iosStoreApp%27
+(%27microsoft.graph.iosVppApp%27
+(%27microsoft.graph.macOSLobApp%27
+(%27microsoft.graph.macOSMicrosoftDefenderApp%27
+(%27microsoft.graph.macOSMicrosoftEdgeApp%27
+(%27microsoft.graph.macOSOfficeSuiteApp%27
+(%27microsoft.graph.macOSPkgApp%27
+(%27microsoft.graph.macOSWebClip%27
+(%27microsoft.graph.macOsVppApp%27
+(%27microsoft.graph.managedAndroidLobApp%27
+(%27microsoft.graph.managedIOSLobApp%27
+(%27microsoft.graph.microsoftStoreForBusinessApp%27
+(%27microsoft.graph.officeSuiteApp%27
+(%27microsoft.graph.webApp%27
+(%27microsoft.graph.winGetApp%27
+(%27microsoft.graph.windowsAppX%27
+(%27microsoft.graph.windowsMicrosoftEdgeApp%27
+(%27microsoft.graph.windowsMobileMSI%27
+(%27microsoft.graph.windowsPhone81AppX%27
+(%27microsoft.graph.windowsPhone81StoreApp%27
+(%27microsoft.graph.windowsPhoneXAP%27
+(%27microsoft.graph.windowsStoreApp%27
+(%27microsoft.graph.windowsUniversalAppX%27
+(%27microsoft.graph.windowsWebApp%27
+(' '
+('.'
+('/'
+('/certificates/'
+('='
+('?'
+('@odata.nextLink'
+('IfExistsResult'
+('ThrottleStatus'
+('_'
+('_0'
+('_01'
+('_01onboard'
+('_1'
+('_onboard'
+('access_token'
+('ascii'
+('createdDateTime'
+('description'
+('displayName'
+('h3'
+('id'
+('isAssignableToRole'
+('kid'
+('mail'
+('mail.protection.outlook.com' in str(mx.exchange
+('membershipRule'
+('membershipRuleProcessingState'
+('onPremisesSyncEnabled'
+('onmicrosoft.com' in str(record
+('requirements.txt'
+('scriptContent'
+('settingDefinitionId'
+('settingInstance'
+('table'
+('tbody'
+('td'
+('th'
+('thead'
+('tr'
+('userPrincipalName'
+('utf-8'
+('v=DMARC1' in str(record
+('v=spf1' in str(record
+('value'
+('visibility'
+('webUrl'
+('x5t'
+('{args.id}'
+('{policy_id}'
+((additional_domains
+((c for c in certs['value'] if keyName in c['id']
+((isof(%27microsoft.graph.androidManagedStoreApp%27
+((isof(%27microsoft.graph.managedIOSStoreApp%27
+((now + timedelta(minutes=2
+((resource for resource in existingperms if resource['resourceAppId'] == '00000003-0000-0000-c000-000000000000'
+()
+() - last_authorization_pending_time >= timedelta(minutes=1
+() for line in file if line.strip(
+() for x in f.readlines(
+() if len(rows
+() in setting_id.lower(
+() or identifier == role['template_id'].lower(
+().endswith('.onmicrosoft.com'
+().get('id'
+().lower(
+().rstrip('='
+().strip(
+(--id
+(-id
+(/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles
+(1
+(3
+(5
+(AAD
+(ASR
+(Android 4.4; Mobile; rv:70.0
+(Application perm - admin consent required
+(Azure AD
+(Azure Key Vault access token required
+(CA
+(Calenders
+(Chat.Read.All
+(DLP
+(ET.fromstring(autodiscover_xml
+(Endpoint Management
+(IEF
+(Killchain.ps1
+(Linux; Android 6.0; Nexus 5 Build/MRA58N
+(Linux; Android 8.1.0; Pixel Build/OPM4.171019.021.D1
+(Linux; U; Android 4.0.2; en-us; Galaxy Nexus Build/ICL53F
+(MSA
+(MSAL
+(Macintosh; Intel Mac OS X 10.14; rv:70.0
+(Macintosh; Intel Mac OS X 10_14_6
+(Mail
+(Mail.Send
+(NOT object
+(NewUserS3cret@Pass!
+(OIDC
+(PHS
+(PKI
+(PTA
+(Password
+(Preview
+(RBAC
+(Replace
+(SharePoint
+(TAP
+(Teams
+(Update
+(V2
+(Windows 10 [Version 1511] and later
+(Windows NT 10.0; WOW64
+(Windows NT 10.0; WOW64; Trident/7.0; rv:11.0
+(Windows NT 10.0; WOW64; rv:70.0
+(Windows NT 10.0; Win64; x64
+(X.509 cert SHA-1 thumbprint
+([port['value'] for port in child['simpleSettingCollectionValue']]
+(additional_domains
+(admin or non-admin
+(allows file/does none of the above actions
+(appId='{args.id}'
+(app_role_response.text
+(args
+(args.cert
+(args.email
+(args.estsauthcookie
+(args.script
+(args.token
+(args.username
+(authentication
+(b'='
+(blocks file execution
+(both declared properties and navigation properties
+(browser=args.browser
+(but not Company Administrator
+(but not administrators
+(but not whether admin consent is required or who is authorized to grant admin consent
+(calling plans
+(cells
+(cells[1]
+(cert_data
+(cert_path
+(choice_value.split('_'
+(conference rooms and room lists
+(content
+(create-update-terminate
+(data
+(data.encode('utf-8'
+(days=6*30
+(decoded_script_content
+(default
+(deprecated
+(device=args.device
+(device_code_response_content
+(disables scanning on mapped network drives
+(domain
+(domain_info
+(domain_info['DKIM']
+(domain_info['DMARC']
+(domain_info['MTA-STS']
+(domain_info['MX']
+(domain_info['SPF']
+(dump-owamailbox
+(e
+(e.g. a Company Administrator
+(e.g. customer content or system-generated logs
+(e.response.text
+(excludes responder-identifying information
+(excludes student-identifying information
+(file_path
+(filtered_data
+(fingerprint
+(found_domains
+(get_access_token(args.token
+(grantreq.text
+(group
+(group_info
+(group_out
+(hashes.SHA1(
+(https://github.com/Gerenios/AADInternals
+(https://github.com/dafthack/GraphRunner
+(https://github.com/f-bader/TokenTacticsV2
+(https://github.com/mlcsec/Graphpython/wiki/Commands
+(https://github.com/mlcsec/Graphpython/wiki/Demos
+(https://github.com/mlcsec/Graphpython/wiki/Demos#add-applicationcertificate
+(https://github.com/mlcsec/Graphpython/wiki/Demos#add-applicationpermission
+(https://github.com/mlcsec/Graphpython/wiki/Demos#add-exclusiongrouptopolicy
+(https://github.com/mlcsec/Graphpython/wiki/Demos#assign-privilegedrole
+(https://github.com/mlcsec/Graphpython/wiki/Demos#authentication
+(https://github.com/mlcsec/Graphpython/wiki/Demos#backdoor-script
+(https://github.com/mlcsec/Graphpython/wiki/Demos#cleanup
+(https://github.com/mlcsec/Graphpython/wiki/Demos#deploy-maliciousscript
+(https://github.com/mlcsec/Graphpython/wiki/Demos#deploy-maliciousweblink
+(https://github.com/mlcsec/Graphpython/wiki/Demos#display-avpolicyrules
+(https://github.com/mlcsec/Graphpython/wiki/Demos#find-dynamicgroups
+(https://github.com/mlcsec/Graphpython/wiki/Demos#find-privilegedapplications
+(https://github.com/mlcsec/Graphpython/wiki/Demos#find-privilegedroleusers
+(https://github.com/mlcsec/Graphpython/wiki/Demos#find-updatablegroups
+(https://github.com/mlcsec/Graphpython/wiki/Demos#get-application
+(https://github.com/mlcsec/Graphpython/wiki/Demos#get-currentuser
+(https://github.com/mlcsec/Graphpython/wiki/Demos#get-devicecompliancepolicies
+(https://github.com/mlcsec/Graphpython/wiki/Demos#get-deviceconfigurationpolicies
+(https://github.com/mlcsec/Graphpython/wiki/Demos#get-domains
+(https://github.com/mlcsec/Graphpython/wiki/Demos#get-graphtokens
+(https://github.com/mlcsec/Graphpython/wiki/Demos#get-group
+(https://github.com/mlcsec/Graphpython/wiki/Demos#get-manageddevices
+(https://github.com/mlcsec/Graphpython/wiki/Demos#get-scriptcontent
+(https://github.com/mlcsec/Graphpython/wiki/Demos#get-tenantid
+(https://github.com/mlcsec/Graphpython/wiki/Demos#get-user
+(https://github.com/mlcsec/Graphpython/wiki/Demos#get-userdevices
+(https://github.com/mlcsec/Graphpython/wiki/Demos#get-userprivileges
+(https://github.com/mlcsec/Graphpython/wiki/Demos#invite-guestuser
+(https://github.com/mlcsec/Graphpython/wiki/Demos#invoke-certtoaccesstoken
+(https://github.com/mlcsec/Graphpython/wiki/Demos#invoke-estscookietoaccesstoken
+(https://github.com/mlcsec/Graphpython/wiki/Demos#invoke-reconasoutsider
+(https://github.com/mlcsec/Graphpython/wiki/Demos#invoke-refreshtoazuremanagementtoken
+(https://github.com/mlcsec/Graphpython/wiki/Demos#invoke-refreshtomsgraphtoken
+(https://github.com/mlcsec/Graphpython/wiki/Demos#invoke-search
+(https://github.com/mlcsec/Graphpython/wiki/Demos#invoke-userenumerationasoutsider
+(https://github.com/mlcsec/Graphpython/wiki/Demos#list-recentonedrivefiles
+(https://github.com/mlcsec/Graphpython/wiki/Demos#locate-directoryrole
+(https://github.com/mlcsec/Graphpython/wiki/Demos#locate-objectid
+(https://github.com/mlcsec/Graphpython/wiki/Demos#locate-permissionid
+(https://github.com/mlcsec/Graphpython/wiki/Demos#locators
+(https://github.com/mlcsec/Graphpython/wiki/Demos#outsider
+(https://github.com/mlcsec/Graphpython/wiki/Demos#post-auth-enumeration
+(https://github.com/mlcsec/Graphpython/wiki/Demos#post-auth-exploitation
+(https://github.com/mlcsec/Graphpython/wiki/Demos#post-auth-intune-enumeration
+(https://github.com/mlcsec/Graphpython/wiki/Demos#post-auth-intune-exploitation
+(https://github.com/mlcsec/Graphpython/wiki/Demos#remove-groupmember
+(https://github.com/mlcsec/Graphpython/wiki/Demos#spoof-owaemailmessage
+(https://github.com/mlcsec/Graphpython/wiki/Usage
+(https://github.com/rvrsh3ll/TokenTactics
+(https://graphpermissions.merill.net/
+(https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference
+(https://learn.microsoft.com/en-us/graph/api/resources/intune-app-conceptual?view=graph-rest-1.0
+(https://learn.microsoft.com/en-us/graph/permissions-reference
+(iPhone; CPU iPhone OS 12_3_1 like Mac OS X
+(iPhone; CPU iPhone OS 13_2 like Mac OS X
+(iPhone; CPU iPhone OS 13_2_3 like Mac OS X
+(iPhone; CPU iPhone OS 8_3 like Mac OS X
+(ids
+(improved readability
+(including Microsoft Graph
+(including scheduled elevation
+(including users or groups
+(isof(%27microsoft.graph.androidManagedStoreApp%27
+(isof(%27microsoft.graph.macOSDmgApp%27
+(isof(%27microsoft.graph.managedAndroidStoreApp%27
+(isof(%27microsoft.graph.managedIOSStoreApp%27
+(isof(%27microsoft.graph.win32CatalogApp%27
+(isof(%27microsoft.graph.win32LobApp%27
+(json.dumps(jwt_header
+(json.dumps(jwt_payload
+(jwt_sha256_hash
+(k
+(len(key
+(location
+(mdi_domain
+(message
+(microsoft.graph.managedApp/appAvailability%20eq%20null%20or%20microsoft.graph.managedApp/appAvailability%20eq%20%27lineOfBusiness%27%20or%20isAssigned%20eq%20true
+(minutes=120
+(minutes=15
+(minutes=60
+(moves files to quarantine
+(new_key_credential
+(now + timedelta(minutes=10
+(now.timestamp(
+(openid_config_url
+(openssl
+(or a more prviliged permission
+(os.path.abspath(__file__
+(parsed_url.query
+(parts
+(parts[:-1]
+(password will not be backed up
+(patch.text
+(permission_info
+(preview
+(public key
+(query_params
+(range(5
+(record
+(register
+(registering
+(removes files from system
+(request.text
+(requires user to make a decision on which action to take
+(response.headers.get('Set-Cookie'
+(response.text
+(response_content
+(role
+(roleTemplateId='{role['roleTemplateId']}'
+(rule_interfaces
+(s
+(saved to appsecret_tokens.txt
+(saved to az_tokens.txt
+(saved to cert_tokens.txt
+(saved to estscookie_tokens.txt
+(saved to graph_tokens.txt
+(saved to intune_tokens.txt
+(saved to new_graph_tokens.txt
+(saved to officeapps_tokens.txt
+(saved to officemanagement_tokens.txt
+(saved to onedrive_tokens.txt
+(saved to outlook_tokens.txt
+(saved to sharepoint_tokens.txt
+(saved to substrate_tokens.txt
+(saved to teams_tokens.txt
+(saved to vault_tokens.txt
+(saved to yammer_tokens.txt
+(scans mapped network drives
+(scans removable drives
+(scans the archive files
+(script_content
+(script_content.encode('utf-8'
+(seamless SSO
+(select_fields
+(service tries to recover files and try to disinfect
+(setting
+(setting_id
+(settings_map[setting_id]['options'][value]
+(shows available admin consent permissions that are already granted
+(signed_jwt
+(str(simple_value
+(such as email and Skype
+(sys.argv
+(tablenew
+(tenant_id
+(that includes roles
+(timezone.utc
+(token_input
+(token_response.text
+(token_response_content
+(turns off Cloud Protection
+(turns off behavior monitoring
+(turns off email scanning
+(turns off scanning on archived files
+(turns off scanning on removable drives
+(turns on email scanning
+(turns on real-time behavior monitoring
+(unregister
+(unregistering
+(unsigned_jwt.encode(
+(url
+(user
+(uuid.uuid4(
+(v1.0
+(value
+(value_list
+(via their service principal
+(web_url

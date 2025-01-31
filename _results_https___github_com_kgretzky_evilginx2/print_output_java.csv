@@ -1,0 +1,136 @@
+"Println(""  Body       :\n"", resp"
+"Println(""  ConnIdleTime  :"", ti.ConnIdleTime"
+"Println(""  ConnTime      :"", ti.ConnTime"
+"Println(""  DNSLookup     :"", ti.DNSLookup"
+"Println(""  Error      :"", err"
+"Println(""  IsConnReused  :"", ti.IsConnReused"
+"Println(""  IsConnWasIdle :"", ti.IsConnWasIdle"
+"Println(""  Proto      :"", resp.Proto("
+"Println(""  Received At:"", resp.ReceivedAt("
+"Println(""  RemoteAddr    :"", ti.RemoteAddr.String("
+"Println(""  RequestAttempt:"", ti.RequestAttempt"
+"Println(""  ResponseTime  :"", ti.ResponseTime"
+"Println(""  ServerTime    :"", ti.ServerTime"
+"Println(""  Status     :"", resp.Status("
+"Println(""  Status Code:"", resp.StatusCode("
+"Println(""  TCPConnTime   :"", ti.TCPConnTime"
+"Println(""  TLSHandshake  :"", ti.TLSHandshake"
+"Println(""  Time       :"", resp.Time("
+"Println(""  TotalTime     :"", ti.TotalTime"
+"Println(""APA"""
+"Println(""API"""
+"Println(""All text will be now bold magenta."""
+"Println(""All text will now be bold magenta."""
+"Println(""Cacheline bytes:"", CPU.CacheLine"
+"Println(""Config file changed:"", e.Name"
+"Println(""DEBUG ----------------"""
+"Println(""DIT"""
+"Println(""Error:"", err"
+"Println(""Existing text will be now in Yellow"""
+"Println(""Existing text will now be in yellow"""
+"Println(""FHM"""
+"Println(""Family"", CPU.Family, ""Model:"", CPU.Model, ""Vendor ID:"", CPU.VendorID"
+"Println(""Features:"", strings.Join(CPU.FeatureSet("
+"Println(""Frequency"", CPU.Hz, ""hz"""
+"Println(""GPI"""
+"Println(""Is Cygwin/MSYS2 Terminal"""
+"Println(""Is Not Terminal"""
+"Println(""Is Terminal"""
+"Println(""L1 Data Cache:"", CPU.Cache.L1D, ""bytes"""
+"Println(""L1 Instruction Cache:"", CPU.Cache.L1I, ""bytes"""
+"Println(""L2 Cache:"", CPU.Cache.L2, ""bytes"""
+"Println(""L3 Cache:"", CPU.Cache.L3, ""bytes"""
+"Println(""LogicalCores:"", CPU.LogicalCores"
+"Println(""Methods:"", strings.Join(methods, "","""
+"Println(""Mkdir error:"", err"
+"Println(""Name:"", CPU.BrandName"
+"Println(""Open after Mkdir error:"", err"
+"Println(""Order by age range 30-50"""
+"Println(""Order by age"""
+"Println(""Order by last name"""
+"Println(""Path regexp:"", pathRegexp"
+"Println(""PhysicalCores:"", CPU.PhysicalCores"
+"Println(""Please enter your email address to signify agreement and to be notified"""
+"Println(""Prints cyan text with an underline."""
+"Println(""Prints cyan text"""
+"Println(""Queries regexps:"", strings.Join(queriesRegexps, "","""
+"Println(""Queries templates:"", strings.Join(queriesTemplates, "","""
+"Println(""ROUTE:"", pathTemplate"
+"Println(""Red text with White background."""
+"Println(""Red text with white background."""
+"Println(""Request Trace Info:"""
+"Println(""Response Info:"""
+"Println(""Some warning"""""
+"Println(""TS"""
+"Println(""The following errors occurred:"", errors"
+"Println(""This is printed without any color"""
+"Println(""This prints again cyan..."""
+"Println(""This will print text in bold red."""
+"Println(""This"", color.RedString(""warning"""
+"Println(""ThreadsPerCore:"", CPU.ThreadsPerCore"
+"Println(""Trace Info:"", resp.Request.TraceInfo("
+"Println(""We have Streaming SIMD 2 Extensions"""
+"Println(""cpu features:"", strings.Join(CPU.FeatureSet("
+"Println(""error"", err"
+"Println(""error:"", err"
+"Println(""event:"", event"
+"Println(""flagvar has value "", flagvar"
+"Println(""in case of issues. You can leave it blank, but we don't recommend it."""
+"Println(""ip has value "", *ip"
+"Println(""modified file:"", event.Name"
+"Println(""shutting down"""
+"Println(""user="", config.Postgres.User"
+"Println(""verbose enabled"""
+"Println(""yaml_insert_token"", ""pos:"", pos, ""typ:"", token.typ, ""head:"", parser.tokens_head, ""len:"", len(parser.tokens"
+"Println(os.Getenv(""APP_ID"""
+"Println(os.Getenv(""APP_SECRET"""
+"Println(os.Getenv(""HELLO"""
+"Println(viper.Get(""hostname"""
+"Println(viper.Get(""port"""
+"println(""1"""
+"println(""One"""
+"println(""dns: ExchangeConn: this function is deprecated"""
+"println(""dns: extra bytes in dns packet"", off, ""<"", len(msg"
+"println(""has a last name"""
+"println(""no last name"""
+"println(""one"""
+"println(""value exists"""
+"println(Output, a..."
+"println(buf, line[:sidx], spacing, wrap(maxlen+2, cols, line[sidx+1:]"
+"println(ctx.Req.Host,""->"",r.Header.Get(""Content-Type"""
+"println(f, o..."
+"println(k, v"
+"println(myWriter, ""blue color!"""
+"println(os.Stderr, ""-----"""
+"println(os.Stderr, ""-------------------------"""
+"println(os.Stderr, ""\n""+listFiles+"":"""
+"println(os.Stderr, ""\nps axo ppid,pid,command:"""
+"println(os.Stderr, err"
+"println(w io.Writer, a ...interface{}"
+"println(w, a..."
+Println(a ...interface{}
+Println(a...
+Println(args ...interface{}
+Println(args...
+Println(dns.Version.String(
+Println(err
+Println(err2
+Println(f.Name(
+Println(hex.EncodeToString(b
+Println(pargs...
+Println(r.RequestURI
+Println(v ...interface{}
+Println(x.Name(
+println(a
+println(a ...interface{}
+println(a...
+println(f.out(
+println(fmtArgs...
+println(j
+println(line
+println(line.String(
+println(name.String(
+println(v...
+println(val
+println(value.String(
+println(w

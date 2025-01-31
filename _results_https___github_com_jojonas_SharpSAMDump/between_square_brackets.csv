@@ -1,0 +1,123 @@
+"[] a1, T["
+"[] iv, byte["
+"[], byte["
+"[assembly: AssemblyCompany("""")"
+"[assembly: AssemblyConfiguration("""")"
+"[assembly: AssemblyCulture("""")"
+"[assembly: AssemblyDescription("""")"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")"
+"[assembly: AssemblyProduct(""SharpSAMDump"")"
+"[assembly: AssemblyTitle(""SharpSAMDump"")"
+"[assembly: AssemblyTrademark("""")"
+"[assembly: AssemblyVersion(""1.0.*"")"
+"[assembly: AssemblyVersion(""1.0.0.0"")"
+"[assembly: Guid(""4feab888-f514-4f2e-a4f7-5989a86a69de"")"
+[(S[i
+[(b >> 4) & 0xF
+[(i << 1) + 1
+[(i >> 0) & 0xF
+[(i >> 12) & 0xF
+[(i >> 16) & 0xF
+[(i >> 20) & 0xF
+[(i >> 24) & 0xF
+[(i >> 28) & 0xF
+[(i >> 4) & 0xF
+[(i >> 8) & 0xF
+[0
+[0-9
+[1
+[2
+[3
+[4
+[5
+[6
+[7
+[Aa
+[Bb
+[Cc
+[Dd
+[Ee
+[FieldOffset(0x0c)
+[FieldOffset(0x10)
+[FieldOffset(0x18)
+[FieldOffset(0x1c)
+[FieldOffset(0x24)
+[FieldOffset(0x28)
+[FieldOffset(0x48)
+[FieldOffset(0x4c)
+[FieldOffset(0x60)
+[FieldOffset(0x64)
+[FieldOffset(0x9c)
+[FieldOffset(0xa0)
+[FieldOffset(0xa8)
+[FieldOffset(0xac)
+[FieldOffset(0xc4)
+[GitHub Repository tyranid/windows-security-internals
+[Ii
+[Ll
+[Mm
+[Nn
+[Oo
+[Pp
+[Rr
+[Ss
+[StructLayout(LayoutKind.Explicit)
+[System.String
+[Tt
+[Ww
+[] Apply(byte[
+[] ConcatArrays<T>(params T[
+[] DeriveDESKey(byte[
+[] S = new int[256
+[] T = new int[256
+[] UnprotectAES(byte[
+[] UnprotectDES(byte[
+[] UnprotectLMHash(byte[
+[] UnprotectNTHash(byte[
+[] UnprotectPasswordEncryptionKey(byte[
+[] UnprotectPasswordEncryptionKeyAES(byte[
+[] UnprotectPasswordEncryptionKeyRC4(byte[
+[] UnprotectPasswordHash(byte[
+[] UnprotectPasswordHashAES(byte[
+[] UnprotectPasswordHashDES(byte[
+[] UnprotectPasswordHashRC4(byte[
+[] UnprotectRC4(byte[
+[] arr = new byte[hex.Length >> 1
+[] ciphertext = new byte[data.Length - 24
+[] ciphertext = new byte[encLen
+[] ciphertext = new byte[length
+[] data = (byte[
+[] data = new byte[len
+[] data16Bytes = new byte[16
+[] dest = new T[size
+[] hash = new byte[16
+[] hashData = new byte[hashLen
+[] indices = new int[
+[] iv = new byte[16
+[] kBytes = new byte[8
+[] key = new byte[8
+[] key1 = DeriveDESKey(new byte[
+[] key2 = DeriveDESKey(new byte[
+[] keyBytes = new byte[indices.Length
+[] lmHash = new byte[_Header.LMHashLength
+[] names = new string[
+[] ntHash = new byte[_Header.NTHashLength
+[] pek = new byte[16
+[] result = new byte[data.Length
+[_
+[_ % key.Length
+[assembly: ComVisible(false)
+[b & 0xF
+[bufferSize
+[charColumn
+[dataLength
+[hexColumn
+[hexColumn + 1
+[i
+[i + j
+[i << 1
+[index
+[indices[i
+[iteration
+[j
+[val & 0xF

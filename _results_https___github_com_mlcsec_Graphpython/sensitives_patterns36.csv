@@ -1,0 +1,5 @@
+        max_key_length = max(len(key) for result in results for key in result.keys())
+opessl genrsa -out private.key 2048
+opessl pkcs12 -export -out certificate.pfx -inkey private.key -in certificate.crt 
+opessl req -new -key private.key -out request.csr
+opessl x509 -req -days 365 -in request.csr -signkey private.key -out certificate.crt

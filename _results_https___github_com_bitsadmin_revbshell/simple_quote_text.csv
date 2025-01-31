@@ -1,0 +1,71 @@
+"'                       When entered without command, switches to SHELL context.\n"
+"'                       When entered without ms, shows the current interval.\n"
+"'                       When entered without parameters, it shows the currently set variables.\n"
+"', "
+"', result_filename), "
+"'- SET [name] [value] - Set a variable, for example SET LHOST 192.168.1.77.\n"
+' 
+'                       Note: Variable LHOST is required.\n
+' Remove trailing \r\n
+' and cmd != 
+' downloaded.
+'%s: %s
+'%s> 
+'%s\
+'- CD [directory]     - Change directory. Shows current directory when without parameter.\n
+'- DOWNLOAD [path]    - Download the file at [path] to the .\\Downloads folder.\n
+'- GETUID             - Get shell user id.\n
+'- GETWD              - Get working directory. Same as CD.\n
+'- HELP               - Show this help.\n
+'- IFCONFIG           - Show network configuration.\n
+'- KILL               - Stop script on the remote host.\n
+'- PS                 - Show process list.\n
+'- PWD                - Same as GETWD and CD.\n
+'- SHELL [command]    - Execute command in cmd.exe interpreter;\n
+'- SHUTDOWN           - Exit this commandline interface (does not shutdown the client).\n
+'- SLEEP [ms]         - Set client polling interval;\n
+'- SYSINFO            - Show sytem information.\n
+'- UNSET [name]       - Unset a variable\n
+'- UPLOAD [localpath] - Upload the file at [path] to the remote host.\n
+'- WGET [url]         - Download file from url.\n
+'./upload
+'./upload/%s
+'.join(
+'/f/
+'/upload
+': 
+'> 
+'CD
+'Downloads
+'EXIT
+'File \
+'File not found: %s
+'GET C:\\secret.bin
+'HELP
+'LHOST
+'NOOP
+'OK
+'POST
+'REQUEST_METHOD
+'SET
+'SHELL
+'SHELL dir C:\\
+'SHELL type client.vbs
+'SHUTDOWN
+'Shutting down %s
+'Supported commands:\n
+'UNSET
+'UPLOAD
+'Variable LHOST not set
+'WGET
+'\n
+'__main__
+'application/octet-stream
+'cmd
+'content-type
+'http://%s:%d/f/%s
+'rb
+'result
+'text/plain
+'upload
+'wb

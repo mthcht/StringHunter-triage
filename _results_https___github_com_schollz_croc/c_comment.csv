@@ -1,0 +1,325 @@
+// Wait for a termination signal
+"// 		fmt.Println(""wrote profile"")"
+"// ""github.com/pkg/profile"""
+// Exit the program gracefully
+// 		}
+// 	for {
+// 			panic(err)
+// go func() {
+// 		if err := pprof.WriteHeapProfile(f); err != nil {
+// 		f.Close()
+// 	}
+// }()
+// 		time.Sleep(3 * time.Second)
+// 		if err != nil {
+"// 		f, err := os.Create(""croc.pprof"")"
+// 		runtime.GC() // get up-to-date statistics
+// Create a channel to receive OS signals
+// indirect
+// Cloudflare
+// Google
+// Resolve a hostname to an IP address using DNS.
+// publicDNS are servers to be queried if a local lookup fails
+// Cisco OpenDNS
+// DEFAULT_RELAY is the default relay used (can be set using --relay)
+// Comodo
+// localLookupIP returns a host's IP address using the local DNS configuration.
+// Quad9
+// Use the context with timeout in the LookupHost function
+// remoteLookupIP returns a host's IP address based on a remote DNS server.
+// Create a context with a 500 millisecond timeout
+// save in config file
+// TCP_BUFFER_SIZE is the maximum packet size
+// try sending data
+// TODO: maybe export from logger library?
+// pipe creates a full-duplex pipe between the two sockets and
+// tell the client that they got the room
+// transfers data from one to the other.
+"// chanFromConn creates a channel from a Conn object, and sends everything it"
+// get PAKE connection with server to establish strong key to transfer info
+// delete room
+// create the room if it is new
+// have exceeded their allocated TTL.
+// RunWithOptionsAsync asynchronously starts a TCP listener.
+// start piping
+// Copy the buffer so it doesn't get changed while read by the recipient.
+// Mask our password in logs
+"// newDefaultServer initializes a new server, with some default configuration options"
+// check connection
+// deleteOldRooms checks for rooms at a regular interval and removes those that
+// ConnectToTCPServer will initiate a new connection
+"// to the specified address, room with optional time limit"
+// send salt
+// wait for client to tell me which room they want
+"// second connection is the sender, time to staple connections"
+// send ok to tell client they are connected
+// spawn a new goroutine whenever a client connects
+// tell the sender everything is ready
+"//
+//	Read()s from the socket to the channel."
+// receive salt
+"// Run starts a tcp listener, run async"
+// establish secure password with PAKE for communication with relay
+// are not open by another program so the remove actions
+// from the above tests will not always do a good clean up
+// clean up
+"// due to how files are ignored in this function, all we have to do to test is make sure LICENSE doesn't get included in FilesInfo."
+// windows allows files to be deleted only if they
+"// This ""test"" will make sure"
+// initialize pake for recipient
+// not really an error because it will try to connect over the actual relay
+// get list of local ips
+// send / receive information of all files
+// broadcast on ipv6
+// recipient sets the file
+// Send will send the specified file
+// setup the progressbar and takedown the progress bar for empty files
+// quit with c.quit <- true
+// Chunk contains information about the
+// prepend the port that is being listened to
+"// probably can't find, its okay"
+// update the pake
+// recipient will look for peers first
+// Skip applying ignore rules for root directory
+// New establishes a new connection for transferring files between two instances.
+// TODO: determine the missing chunks
+// ask the sender for their local ips and port
+// is weird
+// initialize throttler
+// get position
+"// Issues #593 - sanitize the sender paths and prevent "".."" from being used"
+// setup the relay locally
+"// the file exists, but is same size, so hash it"
+// start initiating the process to receive a new file
+// throttle the reading
+"// if no files are to be transferred, then we can end the file transfer process"
+// time.Sleep(100 * time.Millisecond)
+// close if not closed already
+// it can be preset by the local relay
+// listen for incoming messages and process them
+// c.spinner.Stop()
+// connect to the relay for messaging
+// create channel for quitting
+"// if we don't use an external relay, the broadcast messages need to be sent continuously"
+// Support wildcard
+// send / receive information of current file
+// Issue #595 - disallow filenames with invisible characters
+"// log.Debugf(""sending chunk %d"", pos)"
+// remove symlink if it exists
+// find the next file to transfer and send that number
+// Debug toggles debug mode
+// setup the progressbar
+// tcp connections
+// generate key
+// return if no error
+// only get local ips if the local is enabled
+"// log.Debug(len(c.CurrentFileChunks), c.TotalChunksTransferred, c.TotalSent, c.FilesToTransfer[c.FilesToTransferCurrentNum].Size)"
+// TransferOptions for sending
+"// only ""pake"" messages should be unencrypted"
+// connects to the other ports of the server for transfer
+// Create a hash of part of the shared secret to use as the room name
+// check to see if this is a chunk that the recipient wants
+// check ip version
+"// if recipient, initialize with sending pake information"
+// connect to the server
+// FileInfo registers the information about the file
+// }
+"// Name: info.Name(),"
+// Default port to :9009
+// default false
+// recipient wants to try to connect to local ips
+// Read file
+// reset to the local port
+// fnames: the relative/absolute paths of files/folders that will be transferred
+"// if a non-""pake"" message is received unencrypted something"
+// look for peers first
+// and try to connect to them
+// Issues #593 - disallow specific folders like .ssh
+"// recipient requests the file and chunks (if empty, then should receive all chunks)"
+// // check the totalSize does not exceed disk space
+// Receive will receive a file
+// Options specifies user specific options
+// c.spinner.Start()
+// needed bytes
+// generate salt and send it back to recipient
+// RemoteFileRequest requests specific bytes
+"// returns a hashmap Key: Absolute filepath, Value: boolean (true=ignore)"
+// for every file that will be transferred
+// add two things to the error channel
+// steps involved in forming relationship
+"// if kB not null, then use it to decrypt"
+"// usage := diskusage.NewDiskUsage(""."")"
+// broadcast on ipv4
+// and continue if it doesn't find any within 100 ms
+// SenderInfo lists the files to be transferred
+// secure ipRequest
+"// 	return true, fmt.Errorf(""not enough disk space"")"
+// if usage.Available() < uint64(totalSize) {
+// setup basic info
+// initialize curve based on the recipient's choice
+"// if the files are the same size, then look for missing chunks"
+// Client holds the state of the croc transfer
+"// description = """""
+// purge errors that come from successful transfer
+// helper function to walk each subfolder and parses against an ignore file.
+// copy dataDecrypt to data
+// This function retrieves the important file information
+"// // c.spinner.Suffix = "" waiting for recipient..."""
+"// if there are empty files, show them as already have been transferred now"
+// TODO: do the last finishing stuff
+// GetStringInBetween Returns empty string if no start string found
+// Type is a message type
+// Decode will convert from bytes
+// Encode will convert to bytes
+// Send will send out
+// Message is the possible payload for messaging
+// spawn a new goroutine whenever a client connects
+// Decrypt using the pre-generated key
+// http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf
+// Salt.
+// generate a random iv each time
+// Encrypt will encrypt using the pre-generated key
+// NewArgon2 generates a new key based on a passphrase and salt
+// http://www.ietf.org/rfc/rfc2898.txt
+// https://pkg.go.dev/golang.org/x/crypto/argon2
+// Split nonce and ciphertext.
+// Encrypt the message and append the ciphertext to the nonce.
+// Section 8.2
+// DecryptChaCha will encrypt ChaCha20-Poly1305 using the pre-generated key
+// https://pkg.go.dev/golang.org/x/crypto/chacha20poly1305
+// Decrypt the message and check it wasn't tampered with.
+// EncryptChaCha will encrypt ChaCha20-Poly1305 using the pre-generated key
+// using argon2
+// New generates a new key based on a passphrase and salt
+// error with small password
+// error with no password
+// check reusing the salt
+// 	fmt.Println(ChunkRangesToChunks((chunkRanges)))
+// contains invisible character
+// contains regular characters
+// func Test1(t *testing.T) {
+"// 	assert.Nil(t, nil)"
+// clean up
+// 	fmt.Println(chunkRanges)
+// }
+"// 	chunkRanges := MissingChunks(""../../m/bigfile.test"", int64(75000000), 1024*64/2)"
+// SHA256 returns sha256 sum
+// GetInput returns the input with a given prompt
+"// If the file size is not the same as requested, it returns an empty chunk list (all chunks)."
+"// HashFile returns the hash of a file or, in case of a symlink, the"
+// make sure the filename is not an absolute path
+// no compression because croc does its compression on the fly
+// GetLocalIPs returns all local ips
+// ChunkRangesToChunks converts chunk ranges to list
+// read the file and remove all the files
+// IPv6 loopback
+// MD5HashFile returns MD5 hash
+// IMOHashFile returns imohash
+// by making sure it has no invisible characters
+// ByteCountDecimal converts bytes to human readable byte string
+// https://stackoverflow.com/questions/41240761/check-if-ip-address-is-in-private-network-space
+"// If file doesn't exist, it returns an empty chunk list (all chunks)."
+// make sure it doesn't contain unicode or invisible characters
+// IPv6 unique local addr
+// PublicIP returns public ip address
+// check if file exists
+// and return the ip address
+// append the fname to the list of files to remove
+// IPv4 loopback
+// GetRandomName returns mnemonicoded random name
+// SHA256 hash of its target. Takes an argument to specify the algorithm to use.
+// IPv6 link-local
+// ask ipv4.icanhazip.com for the public ip
+// RFC1918
+// Get or create home directory
+// RFC3927 link-local
+// by making http request
+// IMOHashFileFull returns imohash of full file
+// XXHashFile returns the xxhash of a file
+// HighwayHashFile returns highwayhash of a file
+// local ip determination
+// LocalIP returns local ip address
+"// make sure the filepath does not have "".."""
+// MissingChunks returns the positions of missing chunks.
+// read the body of the response
+// ValidFileName checks if a filename is valid
+// Exists reports whether the named file or directory exists.
+"// if the request fails, return nothing"
+// Issue #593 conceal path traversal vulnerability
+"// make sure basename does not include "".."" or path separators"
+// check the address type and if it is not a loopback the display it
+// Used returns total bytes used in file system
+// NewDiskUsage returns an object holding the disk usage of volumePath
+// Size returns total size of the file system
+// Available return total available bytes on file system to an unprivileged user
+// DiskUsage contains usage data and provides user-friendly access methods
+// Free returns total free bytes on file system
+// +build !windows
+"// or nil in case of error (invalid path, etc)"
+// Usage returns percentage of use on the file system
+// Used returns total bytes used in file system
+// NewDiskUsage returns an object holding the disk usage of volumePath
+// Size returns total size of the file system
+// Free returns total free bytes on file system
+// Available returns total available bytes on file system to an unprivileged user
+"// or nil in case of error (invalid path, etc)"
+// Usage returns percentage of use on the file system
+// use all of the processors
+"// if operating system is UNIX, then use environmental variable to set the code"
+// Run will run the command line program
+// generate code phrase
+// update anything that isn't explicitly set
+// touch the file
+// print the public IP address
+// Check if word is indeed a number
+"// check if ""classic"" is set"
+// No completion
+"// if trying to send but forgot send, let the user know"
+// Version specifies the version
+"// if the code wasn't set, don't save it"
+// update anything that isn't explicitly Globally set
+// classic mode not enabled
+// save the config
+// enable classic mode
+// load options here
+// http://web.archive.org/web/20101031205747/http://www.tothink.com/mnemonic/
+"//
+// Every four bytes of input is encoded into three words. If there"
+// short words (only needed to encode the last 3 bits).
+// into three words with the last word being one of a small set of very
+// EncodeWordList encodes src into mnemomic words which are appended to dst.
+// From GitHub version/fork maintained by Stephen Paul Weber available at:
+// is an extra one or two bytes they get an extra one or two words
+"// respectively. If there is an extra three bytes, they will be encoded"
+// There will be WordsRequired(len(src)) words appeneded.
+// data of length bytes using mnomonic encoding.
+// https://github.com/singpolyma/mnemonicode
+"//
+// Originally from:"
+// The final wordlist is returned.
+// WordsRequired returns the number of words required to encode input
+// http://web.archive.org/web/20101031205747/http://www.tothink.com/mnemonic/
+// From GitHub version/fork maintained by Stephen Paul Weber available at:
+// WordListVersion is the version of compiled in word list.
+// https://github.com/singpolyma/mnemonicode
+"//
+// Originally from:"
+// Compress returns a compressed byte slice.
+// Decompress returns a decompressed byte slice.
+// CompressWithOption returns compressed data using the specified level
+// compress uses flate to decompress an io.Reader
+// compress uses flate to compress a byte slice to a corresponding level
+// Close closes the connection
+// shorten the reading deadline in case getting weird data
+// must clear the timeout setting
+// Receive a message
+// long read deadline in case waiting for file
+// Connection returns the net.Conn connection
+// Comm is some basic TCP communication
+// NewConnection gets a new comm to a tcp address
+// read until we get 4 bytes for the magic
+// New returns a new comm
+// read until we get 4 bytes for the header
+// Send a message
+// prepend schema if no schema is given
+// spawn a new goroutine whenever a client connects

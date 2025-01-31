@@ -1,0 +1,280 @@
+"(!PInvoke.AdjustTokenPrivileges(hToken, false, &tokenPrivileges, 0, null, null"
+"(!PInvoke.GetTokenInformation(hToken, TOKEN_INFORMATION_CLASS.TokenPrivileges, null, 0, out returnLength"
+"(!PInvoke.GetTokenInformation(hToken, TOKEN_INFORMATION_CLASS.TokenPrivileges, tokenInformation.ToPointer("
+"(!PInvoke.LookupPrivilegeValue(null, name, out luid"
+"(!PInvoke.OpenProcessToken(hProcess, accessMask, out hToken"
+"(!Util.ArrayEquals(hash, actualHash"
+"(""!@#$%^&*("
+"("""""
+"(""-"", string.Empty"
+"(""0123456789012345678901234567890123456789"""
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""31d6cfe0d16ae931b73c59d7e0c089c0"""
+"(""4feab888-f514-4f2e-a4f7-5989a86a69de"""
+"(""F"""
+"(""LMPASSWORDHISTORY\0"""
+"(""LMPASSWORD\0"""
+"(""MISCCREDDATA\0"""
+"(""NTPASSWORDHISTORY\0"""
+"(""NTPASSWORD\0"""
+"(""SharpSAMDump"""
+"(""The binary key cannot have an odd number of digits"""
+"(""V"""
+"(""aad3b435b51404eeaad3b435b51404ee"""
+"(""invalid AES password key"""
+"(""invalid RC4 password key"""
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"($""unknown encryption type {encryptionType}"""
+"($""unknown type {type}"""
+"($""{entry.AccountName}:{entry.Rid}:{Util.ToHexString(lmHash"
+"().TransformFinalBlock(ciphertext, 0, ciphertext.Length"
+"().TransformFinalBlock(ciphertext, offset, 8"
+"(*@&%"""
+"(RegistryKey key = Registry.LocalMachine.OpenSubKeyForBackup($""SYSTEM\\CurrentControlSet\\Control\\Lsa\\{name}"""
+"(RegistryKey userKey = Registry.LocalMachine.OpenSubKeyForBackup($""SAM\\SAM\\Domains\\Account"""
+"(RegistryKey userKey = Registry.LocalMachine.OpenSubKeyForBackup($""SAM\\SAM\\Domains\\Account\\Users\\{rid:X8}"""
+"(RegistryKey usersKey = Registry.LocalMachine.OpenSubKeyForBackup($""SAM\\SAM\\Domains\\Account\\Users"""
+"(T[] a1, T[] a2"
+"(_Data, _Header.AccountNameOffset, _Header.AccountNameLength"
+"(_Data, _Header.CommentOffset, _Header.CommentLength"
+"(_Data, _Header.CompleteAccountNameOffset, _Header.CompleteAccountNameLength"
+"(_Data, _Header.HomeDirOffset, _Header.HomeDirLength"
+"(_Data, _Header.LMHashOffset, lmHash, 0, _Header.LMHashLength"
+"(_Data, _Header.NTHashOffset, ntHash, 0, _Header.NTHashLength"
+"(_Data, _Header.ScriptPathOffset, _Header.ScriptPathLength"
+"(byte[] bytes, int bytesPerLine = 16"
+"(byte[] ciphertext, uint rid"
+"(byte[] data, bool upperCase = false"
+"(byte[] data, byte[] key"
+"(byte[] data, byte[] lsaKey"
+"(byte[] key, byte[] ciphertext, int offset"
+"(byte[] key, byte[] data"
+"(byte[] key, byte[] data, int offset, int length"
+"(byte[] key, byte[] data, uint rid, HashType type"
+"(byte[] key, byte[] encryptedHash, uint rid"
+"(byte[] key, byte[] iv, byte[] ciphertext"
+"(byte[] samKey, byte[] lsaKey"
+"(data, 0"
+"(data, 0, data16Bytes, 0, 16"
+"(data, 0x18 + ciphertext.Length, hashData, 0, hashData.Length"
+"(data, 0x18, ciphertext, 0, ciphertext.Length"
+"(data, 2"
+"(data, 4"
+"(data, 8 + iv.Length, ciphertext, 0, ciphertext.Length"
+"(data, 8, iv, 0, iv.Length"
+"(data, Header.DataOffset, _Data, 0, dataLength"
+"(data, key"
+"(data, lsaKey"
+"(data, offset, ciphertext, 0, ciphertext.Length"
+"(data16Bytes, qiv, lsaKey, niv"
+"(dec, rid"
+"(dest, offset"
+"(kBytes, 0"
+"(key, 0, T, 0, key.Length"
+"(key, BitConverter.GetBytes(rid"
+"(key, data"
+"(key, data, rid, type"
+"(key, encryptedHash, rid, HashType.LmPassword"
+"(key, encryptedHash, rid, HashType.NtPassword"
+"(key, iv, ciphertext"
+"(key.Handle, buffer, &bufferSize, null, null, null, null, null, null, null, null"
+"(key1, key2"
+"(keys.Item1, ciphertext, 0"
+"(keys.Item2, ciphertext, 8"
+"(lsaKey, iv, ciphertext"
+"(lsaKey, iv, hashData"
+"(new SAMEntry(rid, data"
+"(new byte[] { data[1], data[0], data[3], data[2], data[1], data[0], data[3] }"
+"(new byte[]{ data[2], data[1], data[0], data[3], data[2], data[1], data[0]}"
+"(new string(' ', lineLength - 2"
+"(null, luid, buffer, ref bufferSize"
+"(passwordEncryptionKey, entry.EncryptedLMHash, entry.Rid"
+"(passwordEncryptionKey, entry.EncryptedNTHash, entry.Rid"
+"(pek, niv, pek, qiv"
+"(plaintext, 0, pek, 0, pek.Length"
+"(plaintext, pek.Length, hash, 0, hash.Length"
+"(plaintext1, plaintext2"
+"(rc4Key, data, 0x10, 0x20"
+"(rc4Key, data, 4, 16"
+"(rid, data"
+"(samKey, 0x68"
+"(samKey, 0x6C"
+"(samKey, 0x70, data, 0, data.Length"
+"(samKey, lsaKey"
+"(string name, bool enabled = true"
+"(subkey == ""Names"""
+"(subkey, 16"
+"(this RegistryKey key, string name"
+"(tokenInformation, typeof(TOKEN_PRIVILEGES"
+"(uint rid, byte[] data"
+(!a1[i].Equals(a2[i]
+(%
+('$(MSBuildExtensionsPath
+('packages\Microsoft.Windows.CsWin32.0.3.106\build\net20\Microsoft.Windows.CsWin32.props'
+('packages\Microsoft.Windows.SDK.Win32Metadata.60.0.34-preview\build\net20\Microsoft.Windows.SDK.Win32Metadata.props'
+('packages\Microsoft.Windows.WDK.Win32Metadata.0.11.4-experimental\build\net20\Microsoft.Windows.WDK.Win32Metadata.props'
+((GetHexVal(hex[i << 1]
+((WIN32_ERROR
+((a1 != null
+((int
+() != WIN32_ERROR.ERROR_INSUFFICIENT_BUFFER
+() : hexString.ToLower(
+().ComputeHash(hashMaterial
+().ComputeHash(pek
+().ComputeHash(rc4KeyMaterial
+(0x0c
+(0x10
+(0x18
+(0x1c
+(0x24
+(0x28
+(0x48
+(0x4c
+(0x60
+(0x64
+(0x9c
+(0xa0
+(0xa8
+(0xac
+(0xc4
+(Aes aes = Aes.Create(
+(Configuration
+(DES des = DES.Create(
+(EncryptionType
+(Exception ex
+(ExtensibilityGlobals
+(GetHexVal(hex[(i << 1
+(LUID luid
+(LayoutKind.Explicit
+(MSBuildExtensionsPath
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(MonoDevelop/Xamarin Studio
+(PTVS
+(Platform
+(Privileges.SeBackupPrivilege
+(ProjectConfigurationPlatforms
+(REG_VALUE_TYPE*
+(RegistryKey userKey = usersKey.OpenSubKeyForBackup(subkey
+(SAMEntry entry in SAM.GetEntries(
+(S[i] + S[j]
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(Stream Generation
+(TOKEN_ACCESS_MASK accessMask
+(TOKEN_ACCESS_MASK.TOKEN_ADJUST_PRIVILEGES | TOKEN_ACCESS_MASK.TOKEN_QUERY
+(TOKEN_ACCESS_MASK.TOKEN_QUERY
+(TOKEN_PRIVILEGES
+(T[] array in arrays
+(VSHistory
+(Win32Exception
+(Xamarin productivity tool
+([0-9]
+([0-9][0-9]
+([System.String]::Format('$(ErrorText
+(^
+(a1 == a2
+(a1.Length != a2.Length
+(a2 != null
+(b
+(b & 1
+(b >> 4
+(buffer
+(byte
+(byte val
+(byte* pdata = &data[0]
+(byte.MinValue <= keyByte && keyByte <= byte.MaxValue
+(byte[]
+(byte[] data
+(bytes == null
+(bytesLength + bytesPerLine - 1
+(bytesPerLine - 1
+(char
+(char hex
+(char* buffer = new char[bufferSize]
+(contains which files were open etc.
+(cross platform F# VS Code tools
+(curr << 1
+(data
+(data == null
+(data.Length < 0x14
+(dataLength > 0
+(data[iteration] ^ K
+(dec == null
+(encryptionType
+(error != WIN32_ERROR.ERROR_SUCCESS
+(error != WIN32_ERROR.NO_ERROR
+(ex.StackTrace
+(ex.ToString(
+(expectedLines * lineLength
+(false
+(github.com/manbeardgames
+(hRegistry
+(hex.Length % 2 == 1
+(https://github.com/github/gitignore/pull/1529#issuecomment-104372622
+(https://github.com/github/gitignore/pull/2483#issue-259490424
+(https://github.com/tyranid/windows-security-internals/blob/main/chapter_10/listing_10_21_to_10_34.ps1
+(i + 1
+(i + j >= bytesLength
+(i = 0; i < 256; i++
+(i >> 0
+(i >> 12
+(i >> 16
+(i >> 20
+(i >> 24
+(i >> 28
+(i >> 4
+(i >> 8
+(int
+(int _ = 0; _ < 256; _++
+(int i = 0; i < 8; i++
+(int i = 0; i < a1.Length; i++
+(int i = 0; i < bytesLength; i += bytesPerLine
+(int i = 0; i < hex.Length >> 1; ++i
+(int i=0; i<indices.Length; i++
+(int index = 0; index < tokenPrivileges.PrivilegeCount; index++
+(int iteration = 0; iteration < data.Length; iteration++
+(int j = 0; j < bytesPerLine; j++
+(j + S[i]
+(j + S[i] + T[i]
+(j > 0 && (j & 7
+(k >> (7 * j
+(key.Length == 256
+(len > 0
+(length == 0
+(line
+(lmHash == null
+(name
+(new IntPtr(pdata
+(ntHash
+(ntHash == null
+(params T[][] arrays
+(privilege.Attributes & TOKEN_PRIVILEGES_ATTRIBUTES.SE_PRIVILEGE_ENABLED
+(privilege.Luid.Equals(luid
+(rid
+(s
+(sass
+(scrambledKeyString
+(should normally be 2
+(string hex
+(string name
+(string name in names
+(string subkey in subkeys
+(string[] args
+(this RegistryKey key
+(this is done with mod (%
+(tokenInformation
+(type
+(uint
+(uint rid
+(val < 0x90
+(val < 0xA0
+(val < 127
+(val < 32
+(val < 58 ? 48 : (val < 97 ? 55 : 87
+(val == 0xAD
+(val == 127
+(when decrypting
+(with potential passwords
+(working project files containing files to include in project

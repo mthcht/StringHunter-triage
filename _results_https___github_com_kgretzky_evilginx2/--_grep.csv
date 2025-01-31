@@ -1,0 +1,203 @@
+	-- importable package or main (command)
+	-- q's external test package
+	-- q's test executable
+	-- variant of p as built for q's test executable
+	--flag    // boolean flags only
+	--flag=x
+ --
+ -- -Wall -Werror -static -I/tmp/386/include -m32 _const.go
+ -- -Wall -Werror -static -I/tmp/386/include -m32 linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/amd64/include -m64 _const.go
+ -- -Wall -Werror -static -I/tmp/amd64/include -m64 linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/arm/include _const.go
+ -- -Wall -Werror -static -I/tmp/arm/include linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/arm64/include -fsigned-char _const.go
+ -- -Wall -Werror -static -I/tmp/arm64/include -fsigned-char linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/loong64/include _const.go
+ -- -Wall -Werror -static -I/tmp/loong64/include linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/mips/include _const.go
+ -- -Wall -Werror -static -I/tmp/mips/include linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/mips64/include _const.go
+ -- -Wall -Werror -static -I/tmp/mips64/include linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/mips64le/include _const.go
+ -- -Wall -Werror -static -I/tmp/mips64le/include linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/mipsle/include _const.go
+ -- -Wall -Werror -static -I/tmp/mipsle/include linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/ppc/include _const.go
+ -- -Wall -Werror -static -I/tmp/ppc/include linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/ppc64/include _const.go
+ -- -Wall -Werror -static -I/tmp/ppc64/include linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/ppc64le/include _const.go
+ -- -Wall -Werror -static -I/tmp/ppc64le/include linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/riscv64/include _const.go
+ -- -Wall -Werror -static -I/tmp/riscv64/include linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/s390x/include -fsigned-char _const.go
+ -- -Wall -Werror -static -I/tmp/s390x/include -fsigned-char linux/types.go | go run mkpost.go
+ -- -Wall -Werror -static -I/tmp/sparc64/include _const.go
+ -- -Wall -Werror -static -I/tmp/sparc64/include linux/types.go | go run mkpost.go
+ -- -b ./bin/ v${GOLANGCI_VERSION}
+ -- -fsigned-char types_freebsd.go | go run mkpost.go
+ -- -fsigned-char types_openbsd.go | go run mkpost.go
+ -- -m32 _const.go
+ -- -m64 _const.go
+ -- -maix32 _const.go
+ -- -maix64 _const.go
+ -- -marm _const.go
+ -- Following fields are only used for private keys --
+ -- PROV_RSA_*/
+ -- _const.go
+ -- and the
+ -- and which came after.
+ -- another goroutine is already obtaining the certificate.
+ -- another goroutine is already renewing the certificate
+ -- bool Value
+ -- boolSlice Value
+ -- but
+ -- computing all of them is slow.
+ -- count Value
+ -- depending on the record type -- delete records to
+ -- durationSlice Value
+ -- float32 Value
+ -- float32Slice Value
+ -- float64 Value
+ -- float64Slice Value
+ -- int Value
+ -- int16 Value
+ -- int32 Value
+ -- int32Slice Value
+ -- int64 Value
+ -- int64Slice Value
+ -- int8 Value
+ -- intSlice Value
+ -- ipSlice Value
+ -- let's try to decrypt.
+ -- might have been obtained during lock
+ -- minus
+ -- must take care not to mangle plaintext input.
+ -- net.IP value
+ -- net.IPMask value
+ -- no zos semantics
+ -- string Value
+ -- stringArray Value
+ -- stringSlice Value
+ -- stringToInt Value
+ -- stringToInt64 Value
+ -- stringToString Value
+ -- the only exception is
+ -- they are supposed
+ -- time.Duration Value
+ -- uint Value
+ -- uint16 value
+ -- uint32 value
+ -- uint64 Value
+ -- uint8 Value
+ -- uintSlice Value
+ -- was
+ -- zos golang only
+ ---
+ --- # Implicit empty plain scalars do not produce tokens.
+ --- 'a single-quoted scalar'
+ --- >-
+ --- ORIGINAL LICENSE ---
+ --- a plain scalar
+ --- | --- |
+ --- |-
+ ------                               ------
+ -------------    | -------------   |
+ --------------------+------------------------------------
+ --------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+ -------------------------------
+ --------------------------------------------------------------
+ ---------------------------------------------------------------
+ ----------------------------------------------------------------
+ -----------------------------------------------------------------
+ ------------------------------------------------------------------
+ --------------------------------------------------------------------
+ ----------------------------------------------------------------------
+ -----------------------------------------------------------------------
+ --------------------------------------------------------------------------
+ ----------------------------------------------------------------------------
+ -----------------------------------------------------------------------------
+ --------------->|
+ ----------->|
+ ---------->|      |
+ --bench=.
+ --check-level=3
+ --check-level=4
+ --exit-code -- go.mod go.sum) &&) true
+ --fix
+ --flagname       | ip=4321         |
+ --flagname=1357  | ip=1357         |
+ --flags.
+ --format=%aD | head -1)
+ --format=%aE | head -1)
+ --format=%aN | head -1)
+ --from=builder /go/bin/jsontoml /usr/bin/jsontoml
+ --from=builder /go/bin/tomljson /usr/bin/tomljson
+ --from=builder /go/bin/tomll /usr/bin/tomll
+ --global core.autocrlf false
+ --global core.excludesfile ~/.gitignore_global
+ --help
+ --illumos switch
+ --json
+ --my-flag == --my_flag == --my.flag
+ --next-flag ...
+ --next-flag ... (args will be --next-flag ...)
+ --old-flag-name == --new-flag-name
+ --path-prefix $(mod)) &&) true
+ --tag generate:$GOOS $GOOS
+ --tags
+ --tags` to update the tags. See [below](#updated-git-tags) why.
+ --tags` to update them.
+ --unknown=unknownval arg ...
+ --usefulflag int    sometimes it's very useful (default 777)
+ --user
+ --v to work
+ --verbose           verbose output
+"
+" --  Community Edition  -- -"")"
+" -- ""$@"" _const.go >_error.out"
+" -- -fsigned-char"""
+" -- it is considered a conflict, but 'y:1234' is not."
+" -- no rdata)"" RRs. RFC 2136 section 2.4.1."
+" -- the only exception is for explicitly defined ""build-only"" routes which never match."
+" -- whatever layer you need TLS for, CertMagic"
+" -- with rdata)"" RRs. RFC 2136 section 2.4.2."
+" --%s has been deprecated, %s\n"", flag.Name, flag.Deprecated)"
+" --%s"", flag.Name)"
+" --%s"", flag.Shorthand, flag.Name)"
+" --%s"", name)"
+" --- ""a double-quoted scalar"""
+" ----------------"")"
+" --> As 0b0001, plus SHA512H, SHA512H2, SHA512SU0, and SHA512SU1 instructions implemented."
+" --> As for 0b0000, and also includes support for half-precision floating-point arithmetic."
+" --> As for 0b0001, plus PMULL/PMULL2 instructions operating on 64-bit data quantities."
+" --badflag has been deprecated, please use --good-flag instead` when ""badflag"" is used."
+" --binary *.tar.xz | tee $(Build.ArtifactStagingDirectory)/sha256sums.txt"""
+" --coolflag string   it's really cool flag (default ""yeaah"")"
+" --good-flag instead"")"
+" --interactive --tty --volume $(cd -- ""$(dirname -- ""$0"")/.."" && pwd):/build generate:$GOOS"
+" --no-summary=skipped --junitfile ${BUILD_DIR}/coverage.xml --format ${TEST_FORMAT} -- -race -coverprofile=${BUILD_DIR}/coverage.txt -covermode=atomic $(filter-out -v,${GOARGS}) $(if ${TEST_PKGS},${TEST_PKGS},./...)"
+" --noshorthandflag only"")"
+" --noshorthandflag only` when the shorthand ""n"" is used."
+" --ss=""v1,v2"" --ss=""v3"""
+--- m dump:"
+--- m:"
+--- t dump:"
+--- t:"
+---"
+-------"
+------------"
+-------------"
+-----------------"
+--------------------"
+----------------------"
+-------------------------------------------------------------------------------"
+-----END CERTIFICATE-----"
+-----END CERTIFICATE-----`)"
+-----END RSA PRIVATE KEY-----"
+-----END RSA PRIVATE KEY-----`)"
+-->"
+--flag    // boolean flags, or flags with no option default values"
+--flag x  // only on flags without a default value"
+--flag=x"

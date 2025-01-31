@@ -1,0 +1,6 @@
+"Set-NoDllExportsForAnyCpu([String] $projectName, [System.Nullable[bool]] $value) "
+Assert-PlatformTargetOfProject([String] $fullName) 
+Get-AllDllExportMsBuildProjects 
+Get-DllExportMsBuildProjectsByFullName([String] $fullName) 
+Remove-OldDllExportFolder 
+Remove-OldDllExportFolders 

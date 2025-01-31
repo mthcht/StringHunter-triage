@@ -1,0 +1,156 @@
+{bin
+{{.Version
+{{.ProjectName
+{{.Date
+{{.Arch
+{{.Os
+{1
+"{""info"", ""error"", ""warn"", ""debug"", ""trace"""
+"{1, 2, 3"
+{1
+{}{
+"{first: nil, second: nil"
+"{""8181"", ""8182"""
+"{""8381"", ""8382"""
+"{""./testEmpty"", ""./link-in-folder"""
+{tmpfile.Name()
+"{""README.md"", ""./README.md"""
+"{""../../LICENSE"", "".gitignore"", ""croc.go"""
+"{""../../LICENSE"", ""touched"""
+{pathName
+"{""8281"""
+"{""../../README.md"""
+{strings.ToLower(path)
+"{c.Options.RelayAddress6, c.Options.RelayAddress"
+{}{
+"{200 * time.Millisecond, 5 * time.Second"
+{c.Options.RelayPorts[0]
+{1
+"{100 * time.Millisecond, 5 * time.Second"
+{ext
+{nc
+{croc_checksum_file
+{severity
+{croc_url
+{croc_base_url
+{help_header
+{message
+{file
+{tmpdir_rcode
+{create_prefix_rcode
+{OPTARG
+{1
+{OPTS
+{croc_version
+{2
+{help_message
+{tempdir
+{prefix
+{3
+{croc_file
+{PREFIX
+{croc_dl_ext
+{uname_out
+{zsh_autocomplete_prefix
+{optchar
+{print $1
+{shasum_1
+{filename
+{download_checksum_file_rcode
+{tmpdir
+{zsh_autocomplete_file
+{?
+{SHELL
+{croc_os
+{autocomplete_install_rcode
+{rcode
+{INSTALL_PREFIX
+{croc_bin_name
+{red
+{yellow
+{croc_arch
+{bash_autocomplete_prefix
+{template
+{shasum_c
+{url
+{extract_file_rcode
+{EUID
+{green
+{install_file_rcode
+{checksum_check_rcode
+{bash_autocomplete_file
+{ANDROID_ROOT:-
+{croc_os_rcode
+{download_file_rcode
+{croc_checksum_url
+{tempdir_rcode
+{dir
+{shasum_2
+{ANDROID_ROOT
+{PREFIX:-
+{checksum_file
+{croc_arch_rcode
+{opts[1]
+{words[-1]
+{cur
+{(@f)$(_CLI_ZSH_AUTOCOMPLETE_HACK=1 ${words[@]:0:#words[@]-1
+{cur
+{opts
+{COMP_WORDS[@]:0:$COMP_CWORD
+{COMP_WORDS[COMP_CWORD]
+{PROG:=$(basename ${BASH_SOURCE
+{COMP_WORDS[0]
+{VERSION
+"{ echo ""Error: Invalid repo, token or network issue!"";  exit 1; "
+{VERSION
+"{ echo ""Error: Failed to get release id for tag: $tag""; echo ""$response"" | awk 'length($0)<100' >&2; exit 1; "
+{VERSION
+"{Type: TypeMessage, Message: ""hello, world"""
+"{""t"":""message"",""m"":""hello, world"""
+{'\x00'
+"{9014, 9015, 9016, 9017"
+"{9009, 9010, 9011, 9012"
+"{10, 0, 1, 40, 2, 70, 3"
+"{0, 40, 50, 70, 80, 90"
+"{int64(chunkSize), chunks[0]"
+{&stat
+"{Name: ""throttleUpload"", Value: """", Usage: ""Throttle the upload speed e.g. 500k"""
+"{Name: ""port"", Value: 9009, Usage: ""base port for the relay"""
+"{Name: ""internal-dns"", Usage: ""use a built-in DNS stub resolver rather than the host operating system"""
+"{Name: ""out"", Value: ""."", Usage: ""specify an output folder to receive the file"""
+"{Name: ""zip"", Usage: ""zip folder before sending"""
+"{Name: ""host"", Usage: ""host of the relay"""
+"{Name: ""debug"", Usage: ""toggle debug mode"""
+"{Name: ""ignore-stdin"", Usage: ""ignore piped stdin"""
+"{Name: ""transfers"", Value: 4, Usage: ""number of ports to use for transfers"""
+"{Name: ""relay6"", Value: models.DEFAULT_RELAY6, Usage: ""ipv6 address of the relay"", EnvVars: []string{""CROC_RELAY6"""
+"{Name: ""pass"", Value: models.DEFAULT_PASSPHRASE, Usage: ""password for the relay"", EnvVars: []string{""CROC_PASS"""
+"{Name: ""exclude"", Value: """", Usage: ""exclude files if they contain any of the comma separated strings"""
+"{Name: ""text"", Aliases: []string{""t"""
+"{Name: ""yes"", Usage: ""automatically agree to all prompts"""
+"{Name: ""overwrite"", Usage: ""do not prompt to overwrite or resume"""
+"{Name: ""connect"", Value: """", Usage: ""add a http proxy"", EnvVars: []string{""HTTP_PROXY"""
+"{[]rune("""")"
+"{Name: ""multicast"", Value: ""239.255.255.250"", Usage: ""multicast address to use for local discovery"""
+"{Name: ""local"", Usage: ""force to use only local connections"""
+"{Name: ""hash"", Value: ""xxhash"", Usage: ""hash algorithm (xxhash, imohash, md5)"""
+"{Name: ""testing"", Usage: ""flag for testing purposes"""
+"{Name: ""ip"", Value: """", Usage: ""set sender ip if known e.g. 10.0.0.1:9009, [::1]:9009"""
+"{Name: ""stdout"", Usage: ""redirect file to stdout"""
+"{Name: ""code"", Aliases: []string{""c"""
+"{Name: ""curve"", Value: ""p256"", Usage: ""choose an encryption curve ("" + strings.Join(pake.AvailableCurves(), "", "") + "")"""
+"{Name: ""no-multi"", Usage: ""disable multiplexing"""
+"{Name: ""no-local"", Usage: ""disable local relay when sending"""
+"{Name: ""git"", Usage: ""enable .gitignore respect / don't send ignored files"""
+"{Name: ""classic"", Usage: ""toggle between the classic mode (insecure due to local attack vector) and new mode (secure)"""
+"{Name: ""socks5"", Value: """", Usage: ""add a socks5 proxy"", EnvVars: []string{""SOCKS5_PROXY"""
+"{[]rune(""-"")"
+"{Name: ""ask"", Usage: ""make sure sender and recipient are prompted"""
+{f.Name()
+"{Name: ""relay"", Value: models.DEFAULT_RELAY, Usage: ""address of the relay"", EnvVars: []string{""CROC_RELAY"""
+"{Name: ""transfers"", Value: 5, Usage: ""number of ports to use for relay"""
+"{Name: ""ports"", Value: ""9009,9010,9011,9012,9013"", Usage: ""ports of the relay"""
+"{Name: ""no-compress"", Usage: ""disable compression"""
+"{Name: ""remember"", Usage: ""save these settings to reuse next time"""
+"{Name: ""qrcode"", Aliases: []string{""qr"""
+{'\x00'

@@ -1,0 +1,70 @@
+            # Add `isCurrentUser: True` to the member if the member is the current user.
+            # Add `isFromMe: True` to the message if the message is from the current user.
+            # ErrorCode 28 indicates that a Captcha needs to be solved (happens after a couple of failed attempts in a short timeframe)
+            # Request throttled
+            # Save the new request template
+        # ========== Access Tokens =========="
+        # ========== Database =========="
+        # ========== Device Codes =========="
+        # ========== Entra ID =========="
+        # ========== Generic Requests =========="
+        # ========== MFA =========="
+        # ========== Refresh Tokens =========="
+        # ========== Settings =========="
+        # ========== Teams =========="
+        # Adding ourself first
+        # Convert unix timestamps to formated datetime strings before returning
+        # Empty body
+        # Json request
+    #   1 - AuthenticatorApp
+    #   11 - AltMobilePhone
+    #   12 - FIDO
+    #   2 - Microsoft Authenticator App
+    #   3 - OTP
+    #   6 - MobilePhone
+    #   7 - OfficePhone
+    #   8 - Email
+    # ========== API =========="
+    # ========== Other =========="
+    # ========== Pages =========="
+    # Argument Parser
+    # Banner
+    # Configure logging"
+    # Create database folder if it doesn't exist yet
+    # Create global Flask app variable"
+    # Database"
+    # Disable datatable error messages by default.
+    # First time Use"
+    # Format json if the Content-Type contains json"
+    # Initialize DB if it doesn't exist yet
+    # Normalize db path
+    # Run flask
+    # Safely join `directory` and `filename`.
+    # Types:
+    # Update the database to the latest schema version if required
+"
+"    
+"                    # If the idtype is app, use the app_displayname or appid"
+"                    # If the idtype is user, use the unique_name or upn"
+"                #print(f""[{current_time_seconds}] {row['user_code']} - {row['last_poll']} - {next_poll}"", flush=True)"
+"            # If a request template with the same name already exists, delete it first"
+"            # Remove the random garbage at the front of the response: )]}',\n"
+"        # If a message is specified, send an initial message to every created conversation"
+"        # If the idtype is app, use the app_displayname or appid"
+"        # If the idtype is user, use the unique_name or upn"
+"        # Remove the random garbage at the front of the response: )]}',\n"
+"        # Text, XML or urlencoded request"
+"        #settings_json = [{setting[""setting""] : setting[""value""]} for setting in settings_raw]"
+"    # Else, request a new skype token, store it in the DB, and return that"
+"    # If the idtype is app, use the app_displayname or appid"
+"    # If the idtype is user, use the unique_name or upn"
+"    # If there are skype settings in the DB already that matches the access_token_id, and it is not expired yet, return those"
+"    # Otherwise, use whatever we can get"
+"    # Used to convert potential boolean inputs to an integer, as the DB uses an integer to store this value"
+"    # Valid Settings: active_access_token_id, active_refresh_token_id, schema_version, user_agent"
+# ========== Database =========="
+# ========== Device Code Functions =========="
+# ========== Helper Functions =========="
+# ========== MFA Functions =========="
+# ========== Teams Functions =========="
+#!/usr/bin/env python3

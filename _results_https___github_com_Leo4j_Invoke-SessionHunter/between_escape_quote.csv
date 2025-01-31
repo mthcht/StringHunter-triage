@@ -1,0 +1,8 @@
+"`"" | Set-WmiInstance -Arguments "
+"`""$KeyID = '$GuidOutput'"
+"`$cred = New-Object System.Management.Automation.PSCredential('$UserName', (ConvertTo-SecureString -String '$Password' -AsPlainText -Force));Get-WmiObject -Class Win32_OperatingSystem -ComputerName '$Computer' -Credential "
+`$outputData = &$commandStr | Out-String; Get-WmiObject -Class $ClassID -Filter 
+`-CheckAdminAccess
+`@{OutputData = 
+``
+`show w' and 

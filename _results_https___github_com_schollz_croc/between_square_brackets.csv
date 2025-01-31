@@ -1,0 +1,227 @@
+"[""/croc-entrypoint.sh"""
+"[""relay"""
+[@lummie
+[my blog post
+[Scoop
+[`pixi`
+[`conda`
+[leaking the secret via the process name
+[available to download
+[code-phrase
+[@heymatthew
+[@warner
+[@anatolyyyyyy
+[@maximbaz
+[@goggle
+[@El-JojA
+[MacPorts
+[filename
+[@tscholl2
+[@afotescu
+[Chocolatey
+[@Lunsford94
+[@xenrox
+[idea
+[@threefjord
+[@Girbons
+[@hreese
+[Winget
+[encryption gists
+[Nix
+[@rkuprov
+[Ipar
+[Homebrew
+[@meyermarcel
+[conda-forge
+[install Go
+[folder
+[@jesuiscamille
+[@csleong98
+[@callmefever
+[the latest release for your system
+[recent interview I did
+[@skorokithakis
+[@smileboywtu
+[PAKE
+[@marcossegovia
+[code on proxying two connections
+[@techtide
+[@nicolashardy
+[Example
+[file(s)-or-folder
+[@fbartels
+"[ -n ""$CROC_PASS"" "
+[Unit
+[Install
+[Service
+[2620:119:53::53
+[2001:4860:4860::8888
+[2606:4700:4700::1111
+[0
+[2620:119:35::35
+[2606:4700:4700::1001
+[2620:fe::fe:9
+[2620:fe::fe
+[2001:4860:4860::8844
+[0
+[0
+[:n
+[len(s.password)-1
+[string
+[1
+[room
+"[]string{""../../LICENSE"", ""touched""}, false, false, ["
+"[]string{pathName}, false, false, ["
+"[]string{tmpfile.Name()}, false, false, ["
+"[]string{""../../LICENSE"", "".gitignore"", ""croc.go""}, false, true, ["
+"[]string{""../../README.md""}, false, false, ["
+[path
+[1:
+[c.FilesToTransferCurrentNum
+[len(fpath)-1:
+[:
+[:(width-3)
+[:n
+[string
+[i+1
+"[]FileInfo, emptyFolders ["
+[len(c.Options.ThrottleUpload)-1:
+[uint64
+[:8
+"[]string, zipfolder bool, ignoreGit bool, exclusions ["
+[pos
+"[]FileInfo, emptyFoldersToTransfer ["
+[j
+[i
+[int
+[abs
+[uint64(chunk)
+[]byte(c.Options.SharedSecret[:4
+[absPath
+[:len(c.Options.ThrottleUpload)-1
+[j+1
+"[]byte(""croc"" + c.Options.RelayPorts[0"
+[2
+[pathName
+[%s
+[%+v
+[]byte(c.Options.SharedSecret[5:
+[0
+[]string{c.Options.RelayPorts[0
+[8:
+[1
+"[[ ""${uname_out}"" == """" "
+"[[ ""${download_file_rcode}"" == ""1"" "
+"[[ ""${create_prefix_rcode}"" == ""20"" "
+"[ ! -d ""${bash_autocomplete_prefix}/croc"" "
+"[[ ""${download_checksum_file_rcode}"" == ""0"" "
+"[[ ""${checksum_check_rcode}"" == ""20"" "
+"[[ ""${tmpdir_rcode}"" == ""1"" "
+"[[ ""${install_file_rcode}"" == ""1"" "
+"[[ ""${create_prefix_rcode}"" == ""0"" "
+"[[ ""${croc_os_rcode}"" == ""1"" "
+"[[ ""${create_prefix_rcode}"" == ""21"" "
+"[[ ""${install_file_rcode}"" == ""21"" "
+"[[ ""${extract_file_rcode}"" == ""20"" "
+"[[ ""${autocomplete_install_rcode}"" == ""20"" "
+"[[ ""${extract_file_rcode}"" == ""1"" "
+"[[ ""${download_file_rcode}"" == ""20"" "
+"[[ ""${install_file_rcode}"" == ""20"" "
+"[[ ""${croc_arch_rcode}"" == ""1"" "
+"[[ -n ""${ANDROID_ROOT}"" && -n ""${PREFIX}"" "
+"[[ ""${autocomplete_install_rcode}"" == ""0"" "
+"[[ ""${extract_file_rcode}"" == ""31"" "
+"[[ ""${rcode}"" -gt ""0"" "
+"[[ ""${checksum_check_rcode}"" == ""1"" "
+"[[ ""${download_checksum_file_rcode}"" == ""1"" "
+"[[ ""${checksum_check_rcode}"" == ""30"" "
+"[[ ""${download_file_rcode}"" == ""0"" "
+"[[ ""${croc_os_rcode}"" == ""0"" "
+"[[ ""${croc_arch_rcode}"" == ""0"" "
+"[[ ! -d ""${prefix}"" "
+"[[ ""${install_file_rcode}"" == ""0"" "
+"[[ ""${checksum_check_rcode}"" == ""0"" "
+"[[ ""${download_checksum_file_rcode}"" == ""20"" "
+"[[ ""${tempdir_rcode}"" == ""0"" "
+"[[ ""${shasum_1}"" == ""${shasum_2}"" "
+"[[ ""${autocomplete_install_rcode}"" == ""21"" "
+"[[ ""${EUID}"" == ""0"" "
+"[[ ""${extract_file_rcode}"" == ""0"" "
+"[[ ""${ANDROID_ROOT}"" != """" "
+"[[ ""${extract_file_rcode}"" == ""30"" "
+"[[ ""${autocomplete_install_rcode}"" == ""1"" "
+"[[ ""${tmpdir_rcode}"" == ""0"" "
+[s:
+[1:
+[0
+[s:e
+[-1
+"[[ ""${opts[1"
+[@
+"[[ ""$cur"" == ""-""* "
+[@
+"[[ ""${COMP_WORDS[0"
+[COMP_CWORD
+"[[ ""$cur"" == ""-""* "
+[[:alnum:
+"[[ ""$tag"" == 'LATEST' "
+[^0-9.
+"[ ""$TRACE"" "
+"[ ""$id"" "
+[0-9.
+"[]byte, b ["
+"[]byte, m Message) (b ["
+[:12
+[:aead.NonceSize()
+"[]byte, aead cipher.AEAD) (encrypted ["
+[aead.NonceSize():
+"[]byte, key ["
+[12:
+"[]byte, usersalt ["
+"[]byte, salt ["
+[i
+[(something)
+[something
+"[]int{9009, 9010, 9011, 9012}) && !intSliceSame(openPorts, ["
+[exp
+[i-1
+[:bytesread
+[:
+[0
+[]int64) (chunks [
+[i
+"[]int64{int64(chunkSize), chunks[0"
+[:chunkNum
+[i+1
+[:20
+[chunkNum
+"[]rune, pos int) (["
+[1:
+[COMMAND OPTIONS
+[len(words)-1
+[::1
+[][
+[0
+[COMMAND
+[i
+[f.FolderRemote
+[nbCharacter:
+[string
+[filename(s) or folder
+[GLOBAL OPTIONS
+[i2
+[4:
+[i1
+[i0
+[2
+[0
+[i
+[3
+"[]string, src ["
+[1
+[w
+[string
+"[]byte, level int) ["
+[]byte) [
+"[]byte, numBytes int, bs ["
+[0

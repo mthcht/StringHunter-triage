@@ -1,0 +1,128 @@
+"Invoke-AppSecretToAccessToken command"")"
+"Invoke-AppSecretToAccessToken"")"
+"Invoke-AppSecretToAccessToken"", ""Convert Azure Application secretText credentials to access token (saved to appsecret_tokens.txt)""],"
+"Invoke-CertToAccessToken command"")"
+"Invoke-CertToAccessToken"")"
+"Invoke-CertToAccessToken"", ""Convert Azure Application certificate to JWT access token (saved to cert_tokens.txt)""],"
+"Invoke-CustomQuery"", ""Custom GET query to target Graph API endpoint""],"
+"Invoke-CutstomQuery command"")"
+"Invoke-CutstomQuery"")"
+"Invoke-ESTSCookieToAccessToken command"")"
+"Invoke-ESTSCookieToAccessToken"")"
+"Invoke-ESTSCookieToAccessToken"", ""Convert ESTS cookie to MS Graph access token (saved to estscookie_tokens.txt)""],"
+"Invoke-ReconAsOutsider command"")"
+"Invoke-ReconAsOutsider"")"
+"Invoke-ReconAsOutsider"", ""Perform outsider recon of the target domain""],"
+"Invoke-RefreshToAzureManagementToken command"")"
+"Invoke-RefreshToAzureManagementToken"")"
+"Invoke-RefreshToAzureManagementToken"", ""Convert refresh token to Azure Management token (saved to az_tokens.txt)""],"
+"Invoke-RefreshToIntuneEnrollment command"")"
+"Invoke-RefreshToIntuneEnrollment"")"
+"Invoke-RefreshToIntuneEnrollmentToken"", ""Convert refresh token to Intune Enrollment token (saved to intune_tokens.txt)""],"
+"Invoke-RefreshToMSGraphToken command"")"
+"Invoke-RefreshToMSGraphToken"")"
+"Invoke-RefreshToMSGraphToken"", ""Convert refresh token to Microsoft Graph token (saved to new_graph_tokens.txt)""],"
+"Invoke-RefreshToMSTeamsToken command"")"
+"Invoke-RefreshToMSTeamsToken"")"
+"Invoke-RefreshToMSTeamsToken"", ""Convert refresh token to MS Teams token (saved to teams_tokens.txt)""],"
+"Invoke-RefreshToOfficeAppsToken command"")"
+"Invoke-RefreshToOfficeAppsToken"")"
+"Invoke-RefreshToOfficeAppsToken"", ""Convert refresh token to Office Apps token (saved to officeapps_tokens.txt)""],"
+"Invoke-RefreshToOfficeManagementToken command"")"
+"Invoke-RefreshToOfficeManagementToken"")"
+"Invoke-RefreshToOfficeManagementToken"", ""Convert refresh token to Office Management token (saved to officemanagement_tokens.txt)""],"
+"Invoke-RefreshToOneDriveToken command"")"
+"Invoke-RefreshToOneDriveToken"")"
+"Invoke-RefreshToOneDriveToken"", ""Convert refresh token to OneDrive token (saved to onedrive_tokens.txt)""],"
+"Invoke-RefreshToOutlookToken command"")"
+"Invoke-RefreshToOutlookToken"")"
+"Invoke-RefreshToOutlookToken"", ""Convert refresh token to Outlook token (saved to outlook_tokens.txt)""],"
+"Invoke-RefreshToSharePointToken command"")"
+"Invoke-RefreshToSharePointToken"")"
+"Invoke-RefreshToSharePointToken"", ""Convert refresh token to SharePoint token (saved to sharepoint_tokens.txt)""],"
+"Invoke-RefreshToSubstrateToken command"")"
+"Invoke-RefreshToSubstrateToken"")"
+"Invoke-RefreshToSubstrateToken"", ""Convert refresh token to Substrate token (saved to substrate_tokens.txt)""],"
+"Invoke-RefreshToVaultToken"")"
+"Invoke-RefreshToVaultToken"", ""Convert refresh token to Azure Vault token (saved to vault_tokens.txt)""],"
+"Invoke-RefreshToYammerToken command"")"
+"Invoke-RefreshToYammerToken"")"
+"Invoke-RefreshToYammerToken"", ""Convert refresh token to Yammer token (saved to yammer_tokens.txt)""],"
+"Invoke-Search command"")"
+"Invoke-Search"")"
+"Invoke-Search"", ""Search for string within entity type (driveItem, message, chatMessage, site, event)""],"
+"Invoke-UserEnumerationAsOutsider command"")"
+"Invoke-UserEnumerationAsOutsider"")"
+"Invoke-UserEnumerationAsOutsider"", ""Checks whether the user exists within Azure AD""]"
+"invoke-appsecrettoaccesstoken"", ""new-signedjwt""]:"
+"invoke-appsecrettoaccesstoken)"")"
+"invoke-certtoaccesstoken"", ""invoke-estscookietoaccesstoken"","
+"invoke-customquery"", ""invoke-search"", ""find-privilegedroleusers"", ""display-firewallconfigpolicyrules"","
+"invoke-customquery"", ""invoke-search"", ""find-privilegedroleusers"", ""find-updatablegroups"", ""find-dynamicgroups"",""find-securitygroups"", "
+"invoke-customquery"",""invoke-search"", ""find-privilegedroleusers"", ""find-privilegedapplications"","
+"invoke-reconasoutsider"", ""invoke-userenumerationasoutsider""]:"
+"invoke-reconasoutsider"",""invoke-userenumerationasoutsider"",""get-graphtokens"", ""get-tenantid"", ""get-tokenscope"", ""decode-accesstoken"","
+"invoke-refreshtointuneenrollmenttoken"", ""invoke-refreshtoonedrivetoken"", ""invoke-refreshtosharepointtoken"","
+"invoke-refreshtomsgraphtoken"", ""invoke-refreshtoazuremanagementtoken"", ""invoke-refreshtovaulttoken"","
+"invoke-refreshtomsgraphtoken"", ""invoke-refreshtoazuremanagementtoken"","
+"invoke-refreshtomsteamstoken"", ""invoke-refreshtoofficeappstoken"", ""invoke-refreshtoofficemanagementtoken"","
+"invoke-refreshtoofficeappstoken"", ""invoke-refreshtoofficemanagementtoken"","
+"invoke-refreshtoonedrivetoken"", ""invoke-refreshtosharepointtoken"", ""invoke-certtoaccesstoken"", ""invoke-estscookietoaccesstoken"", ""invoke-appsecrettoaccesstoken"","
+"invoke-refreshtoonedrivetoken"", ""invoke-refreshtosharepointtoken"","
+"invoke-refreshtooutlooktoken"", ""invoke-refreshtosubstratetoken"", ""invoke-refreshtoyammertoken"", ""invoke-refreshtointuneenrollmenttoken"","
+"invoke-refreshtooutlooktoken"", ""invoke-refreshtosubstratetoken"","
+"invoke-refreshtooutlooktoken"",""invoke-refreshtosubstratetoken"", ""invoke-refreshtoyammertoken"", "
+"invoke-refreshtovaulttoken"", ""invoke-refreshtomsteamstoken"", "
+"invoke-refreshtovaulttoken"", ""invoke-refreshtomsteamstoken"","
+"invoke-refreshtoyammertoken"", ""invoke-refreshtointuneenrollmenttoken"","
+"invoke-search --search ""credentials"" --entity driveItem --token token"
+"invoke-userenumerationasoutsider)"")"
+Invoke-AADIntReconAsGuest` and `Invoke-AADIntUserEnumerationAsGuest` - port from AADInternals 
+Invoke-AppSecretToAccessToken
+Invoke-CertToAccessToken
+Invoke-CertToAccessToken](https://github.com/mlcsec/Graphpython/wiki/Demos#invoke-certtoaccesstoken)
+Invoke-CustomQuery
+Invoke-ESTSCookieToAccessToken
+Invoke-ESTSCookieToAccessToken](https://github.com/mlcsec/Graphpython/wiki/Demos#invoke-estscookietoaccesstoken)
+Invoke-MFASweep` - port mfa sweep and add to outsider commands
+Invoke-ReconAsOutsider
+Invoke-ReconAsOutsider](https://github.com/mlcsec/Graphpython/wiki/Demos#invoke-reconasoutsider)
+Invoke-RefreshToAzureManagementToken
+Invoke-RefreshToAzureManagementToken](https://github.com/mlcsec/Graphpython/wiki/Demos#invoke-refreshtoazuremanagementtoken)
+Invoke-RefreshToIntuneEnrollmentToken
+Invoke-RefreshToMSGraphToken
+Invoke-RefreshToMSGraphToken](https://github.com/mlcsec/Graphpython/wiki/Demos#invoke-refreshtomsgraphtoken)
+Invoke-RefreshToMSTeamsToken
+Invoke-RefreshToOfficeAppsToken
+Invoke-RefreshToOfficeManagementToken
+Invoke-RefreshToOneDriveToken
+Invoke-RefreshToOutlookToken
+Invoke-RefreshToSharePointToken
+Invoke-RefreshToSubstrateToken
+Invoke-RefreshToVaultToken
+Invoke-RefreshToYammerToken
+Invoke-Search
+Invoke-Search](https://github.com/mlcsec/Graphpython/wiki/Demos#invoke-search)
+Invoke-UserEnumerationAsOutsider
+Invoke-UserEnumerationAsOutsider](https://github.com/mlcsec/Graphpython/wiki/Demos#invoke-userenumerationasoutsider)
+invoke-appsecrettoaccesstoken
+invoke-certtoaccesstoken
+invoke-customquery
+invoke-customquery --query https://graph.microsoft.com/v1.0/sites/{siteId}/drives --token token
+invoke-estscookietoaccesstoken
+invoke-reconasoutsider --domain company.com
+invoke-refreshtoazuremanagementtoken
+invoke-refreshtoazuremanagementtoken --tenant <tenant-id> --token refresh-token
+invoke-refreshtointuneenrollmenttoken
+invoke-refreshtomsgraphtoken
+invoke-refreshtomsteamstoken
+invoke-refreshtoofficeappstoken
+invoke-refreshtoofficemanagementtoken
+invoke-refreshtoonedrivetoken
+invoke-refreshtooutlooktoken
+invoke-refreshtosharepointtoken
+invoke-refreshtosubstratetoken
+invoke-refreshtovaulttoken
+invoke-refreshtoyammertoken
+invoke-search
+invoke-userenumerationasoutsider --username <email@company.com/emails.txt>

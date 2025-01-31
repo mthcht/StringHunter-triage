@@ -1,0 +1,76 @@
+"//
+"//     Give data and an encryption key, apply RC4 cryptography.  RC4 is symmetric,"
+"//  KSA Phase Step 1: First, the entries of S are set equal to the values of 0 to 255 "
+"//  KSA Phase Step 2a: Next, a temporary vector T is created."
+"//  KSA Phase Step 2b: If the length of the key k is 256 bytes, then k is assigned to T.  "
+"//  Once the vector S is initialized from above in the Key Scheduling Algorithm Phase,"
+"//  Otherwise, for a key with a given length, copy the elements of"
+"//  PRGA Phase Step 1. Continously increment i from 0 to 255, starting it back "
+"//  PRGA Phase Step 2. Lookup the i'th element of S and add it to j, keeping the"
+"//  PRGA Phase Step 4. Use the result of the sum of S[i] and S[j], mod (%) by 256, "
+"//  increment j by the sum of S[i] and T[i], however keeping it within the "
+"//  the input key is no longer used.  In this phase, for the length of the data, we ..."
+"//  the key into vector T, repeating for as many times as neccessary to"
+"// <param name=""data"">"
+"// <param name=""key"">"
+"// COM, set the ComVisible attribute to true on that type."
+"// [assembly: AssemblyVersion(""1.0.*"")]"
+//                     at 0 once we go beyond 255 (this is done with mod (%) division
+//                     encrypting) or plaintext (when decrypting)
+//                     produce  the next byte of the resulting ciphertext (when 
+//                     result within the range of 0 to 255 using mod (%) division
+//                     to get the index of S that handls the value of the stream value K.
+//                    in ascending order.
+//      Build Number
+//      Major Version"
+//      Minor Version
+//      Revision
+//     Byte array representing the data to be encrypted/decrypted
+//     Byte array representing the encrypted/decrypted data.
+//     Byte array representing the key to use
+//     https://en.wikipedia.org/wiki/RC4
+//     which means this single method will work for encrypting and decrypting.
+//  KSA Phase Step 3: We use T to produce the initial permutation of S ...
+//  Key Scheduling Algorithm Phase:
+//  PRGA Phase Step 3. Swap the values of S[i] and S[j]
+//  PRGA Phase Step 5. Use bitwise exclusive OR (^) with the next byte in the data to
+//  Pseudo random generation algorithm (Stream Generation):
+//  Swap the values of S[i] and S[j]
+//  fill T
+//  range of 0 to 255 using mod (%) division.
+//  return the result
+// - 1 extra space every 8 characters from the 9th
+// - 2 digit for the hexadecimal value and 1 space
+// - characters to show the ascii value
+// 2 spaces 
+// 3 spaces
+// 8 characters for the address
+// </param>
+// </remarks>
+// </returns>
+// </summary>
+// <remarks>
+// <returns>
+// <summary>
+// Carriage return and line feed (should normally be 2)
+// General Information about an assembly is controlled through the following
+// Handle the hole in Latin-1
+// Non-printable ASCII
+// Normal ASCII
+// Normal Latin-1
+// Setting ComVisible to false makes the types in this assembly not visible
+// Soft hyphen: this symbol is zero-width even in monospace fonts
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// Version information for an assembly consists of the following four values:
+// You can specify all the values or you can default the Build and Revision Numbers"
+// associated with an assembly.
+// by using the '*' as shown below:
+// credits to: Christopher Whitley (github.com/manbeardgames)
+// from: https://github.com/manbeardgames/RC4
+// from: https://stackoverflow.com/a/26206519
+// from: https://stackoverflow.com/a/623184
+// from: https://stackoverflow.com/a/9995303
+// no wrapping in debug mode so that exceptions are caught by the debugger
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from
+// try-catch wrapped execution for invocations from C2

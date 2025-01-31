@@ -1,0 +1,15 @@
+    dest: C:\Netlogon\weaponised-rdp.exe
+    dest: C:\tmp\python-install.exe
+    dest: C:\tmp\shininglight.exe
+    dest: C:\tmp\vc_redist.exe
+    dest: C:\tmp\vs_BuildTools.exe
+    src: files/payload.exe
+    url: https://aka.ms/vs/17/release/vc_redist.x64.exe
+    url: https://aka.ms/vs/17/release/vs_BuildTools.exe
+    url: https://slproweb.com/download/Win64OpenSSL_Light-3_1_2.exe
+    url: https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe
+  #ansible.windows.win_shell: 'vs_BuildTools.exe
+  ansible.windows.win_shell: 'C:\tmp\python-install.exe
+  ansible.windows.win_shell: 'C:\tmp\vs_BuildTools.exe
+  ansible.windows.win_shell: C:\tmp\shininglight.exe
+  ansible.windows.win_shell: C:\tmp\vc_redist.exe

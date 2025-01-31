@@ -1,0 +1,13 @@
+"
+"# quick, repeated attempts to validate the same username over and over"
+# -f argument.
+# Created by Korey McKinley, Senior Security Consulant at LMG Security"
+# July 12, 2019"
+# Note: Microsoft has implemented some throttling on this service, so"
+# This tool will query the Microsoft Office 365 web server to determine"
+# as many email addresses as possible through OSINT in a list with the
+# https://lmgsecurity.com
+# if an email account is valid or not. It does not need a password and
+# may produce false positives. This tool is best ran after you've gathered
+# should not show up in the logs of a client's O365 tenant.
+#!/usr/bin/python

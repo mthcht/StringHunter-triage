@@ -1,0 +1,1457 @@
+(https://github.com/rkuprov
+(X MB
+(https://github.com/techtide
+(using PAKE
+(https://github.com/heymatthew
+(s
+(https://f-droid.org/en/packages/com.github.howeyc.crocgui/
+(https://chocolatey.org
+(requires Go 1.17+
+(see `--help`
+(https://github.com/tscholl2
+(recipient only
+(https://github.com/schollz/croc/releases/latest
+(https://github.com/warner/magic-wormhole
+(https://github.com/marcossegovia
+(src/install/customization.gif
+(https://pixi.sh/
+(the communication port
+(https://www.stavros.io/posts/proxying-two-connections-go/
+"(e.g. `croc relay --ports 1111,1112`"
+(https://schollz.com/software/croc6
+([PAKE](https://en.wikipedia.org/wiki/Password-authenticated_key_agreement
+(https://github.com/skorokithakis
+(https://github.com/El-JojA
+(https://scoop.sh/
+(https://github.com/warner
+(https://github.com/smileboywtu
+(must be more than 6 characters
+(https://nixos.org/nix
+"(Windows, Linux, Mac"
+(https://github.com/lpar
+(https://github.com/csleong98
+(https://github.com/Girbons
+(https://github.com/nicolashardy
+(https://docs.conda.io/projects/conda/
+(https://golang.org/dl/
+(https://console.substack.com/p/console-91
+(https://brew.sh/
+(https://github.com/jesuiscamille
+(https://github.com/Lunsford94
+(https://github.com/hreese
+(https://github.com/maximbaz
+(https://github.com/meyermarcel
+(https://learn.microsoft.com/en-us/windows/package-manager/
+(https://github.com/xenrox
+(https://macports.org/
+(https://nvd.nist.gov/vuln/detail/CVE-2023-43621
+(https://github.com/anatolyyyyyy
+(or folder
+(versus reading the whole file
+(using a relay
+(https://github.com/conda-forge/croc-feedstock/
+(https://github.com/afotescu
+(https://github.com/goggle
+(docker
+"(like custom relay, ports, and code phrase"
+(https://github.com/threefjord
+(https://github.com/callmefever
+(https://github.com/fbartels
+(https://gist.github.com/tscholl2/dc7dc15dc132ea70a98e8542fefffa28
+(https://github.com/lummie
+(c
+"(the ""Software"""
+"(sigs, syscall.SIGINT, syscall.SIGTERM"
+(1
+(f
+(err
+"(chan os.Signal, 1"
+"(""croc.pprof"""
+"(""wrote profile"""
+(0
+(3 * time.Second
+(requireValidPath
+(can be set using --relay
+(<-result
+"(""Resolved %s to %s using %s"", address, r.s, dns"
+(net.Dialer
+"(address, dns string"
+"(""Default ipv6 relay: %s"", addr"
+(requireValidPath bool
+"(ctx context.Context, network, _ string"
+"(""info"""
+"(address, dns"
+(DEFAULT_RELAY
+(address
+"(fname string, err error"
+"(""Resolved %s to %s"", address, ipaddress"
+(address string
+"(""failed to resolve %s: all DNS servers exhausted"", address"
+"(net.Conn, error"
+(dns string
+(dns
+(false
+"(""Using local DNS to resolve %s"", address"
+"(""Default ipv4 relay: %s"", addr"
+"(ctx, address"
+"(chan Result, len(publicDNS"
+(fname
+(context.Background(
+"(ctx, network, dns+"":53"""
+"(ipaddress string, err error"
+(true
+(os.Stderr
+"(configFile, ""internal-dns"""
+(DEFAULT_RELAY6
+"(""Using internal DNS: "", INTERNAL_DNS"
+(publicDNS
+"(addr, DEFAULT_PORT"
+"(""127.0.0.1:8381"", ""pass123"", ""testRoom"", 1*time.Minute"
+"(""error"""
+"(t, c1.Send([]byte(""hello, c2"""
+"(t, c2.Send([]byte(""hello, c1"""
+"(t, []byte(""hello, c2"""
+"(t, err"
+"(data, []byte{1}"
+(300 * time.Millisecond
+"(""trace"""
+"(t, banner, ""8382"""
+"(""127.0.0.1"", ""8381"", ""pass123"", WithBanner(""8382"""
+(b *testing.B
+"(""127.0.0.1:8333"""
+"(""debug"", ""127.0.0.1"", ""8283"", ""pass123"", ""8284"""
+(100 * time.Millisecond
+"(""127.0.0.1:8283"", ""pass123"", fmt.Sprintf(""testroom%d"", i"
+"(t, []byte(""hello, c1"""
+"(""debug"""
+(timeToRoomDeletion
+"(""127.0.0.1:8381"", ""pass123"", ""testRoom"""
+"(""127.0.0.1:8381"""
+(t *testing.T
+"(""127.0.0.1:8381"", ""pass123"", ""testRoom"", 1*time.Nanosecond"
+(interval time.Duration
+"(""invalid log level specified: %s"", level"
+(level string
+"(s []string, e string"
+(s *server
+(banner ...string
+(ttl time.Duration
+"(availableLogLevels, level"
+(banner
+(s.rooms.rooms[room].opened
+"(""exiting"""
+"(""checking connection of room %s for %+v"", room, c"
+"(""room is gone"""
+(s.host
+"(""starting pipes"""
+(time.Now(
+(map[string]roomInfo
+"(address, 300*time.Millisecond"
+(string(passwordBytes
+"(addr, ""127.0.0.1"", ""0.0.0.0"", 1"
+(A.Bytes(
+([]byte(err.Error(
+"(""sending back pong"""
+(errSend
+"(room string, err error"
+().String(
+"(""error listening on %s: %w"", addr, err"
+(salt
+"(""bad response: %s"", string(data"
+"(""problem accepting connection: %w"", err"
+"(""strong key: %x"", strongKey"
+([]byte(room
+"(""room: %+v"", s.rooms.rooms[room]"
+"([]byte(""ping"""
+"(""done piping"""
+"(port string, connection net.Conn"
+"(""pinging %s"", address"
+(s.debugLevel
+(room string
+(server
+(err error
+"(res, b[:n]"
+"(""room cleaned up: %s"", room"
+"(passwordBytesEnc, strongKeyForEncryption"
+"(strongKey, nil"
+(roomBytes
+"(""err: %+v"", errCommunication"
+"(b, []byte(""pong"""
+"(""sending '%s'"", banner"
+(B.Bytes(
+(room
+"(data, []byte(""ok"""
+"(""no pong"""
+"(""room %s has 1"", room"
+"(""starting TCP server on "" + addr"
+"(enc, strongKeyForEncryption"
+"(""waiting for answer"""
+(b2
+"(""ip"", s.host"
+(conn2
+([]byte(password
+"(""bad password"""
+(enc
+"(s.host, s.port"
+"(port string, c *comm.Comm"
+(s.password
+"(strongKey, salt"
+"(""client %s connected"", connection.RemoteAddr("
+"(network, addr"
+"(), errCommunication.Error("
+"(address, password, room string, timelimit ...time.Duration"
+"(""room %s has 2"", room"
+"(""waiting for first ok"""
+"(""sending password"""
+"(""room cleanup stopped"""
+"(s.rooms.rooms, room"
+"(""could not apply optional configurations: %w"", err"
+(s
+"([]byte(""pong"""
+([]byte{1}
+(com1.Connection(
+"(com1, com2 *comm.Comm, wg *sync.WaitGroup"
+"(""got ping"""
+"(""deleting room: %s"", room"
+"([]byte, n"
+"(""Abytes: %s"", Abytes"
+"([]byte, models.TCP_BUFFER_SIZE"
+(3 * time.Hour
+(s *server
+"(""can't set read deadline: %v"", err"
+(address
+"([]byte(""ok"""
+(string(data
+"(""sending room; %s"", room"
+"(conn1 net.Conn, conn2 net.Conn"
+"([]byte(banner+""|||""+c.Connection("
+(Bbytes
+"(address, timelimit[0]"
+"(otherConnection, c, &wg"
+(ip.String(
+(b
+(conn net.Conn
+"(Abytes, []byte(""ping"""
+(b1
+(connection
+"(host, port, password, WithBanner(banner..."
+(debugLevel
+(err
+"(""write error on channel 1: %v"", err"
+"(weakKey, 0, ""siec"""
+"(""waiting for room confirmation"""
+"(roomsToDelete, room"
+(conn1
+"(""stop room cleanup fired"""
+(Abytes
+(timelimit
+"(""got bad response: %s"", data"
+() (err error
+"(""send error: %w"", err"
+(bSend
+"(""waiting for password"""
+"(s.port, connection"
+(banner
+()
+"(""relay-%s: %s"", connection.RemoteAddr("
+"(""%c***%c"", s.password[0], s.password[len(s.password"
+"(""starting with password '%s'"", maskedPassword"
+"(chan []byte, 1"
+"(c *comm.Comm, banner string, ipaddr string, err error"
+(address string
+(s.roomCleanupInterval
+"(debugLevel, host, port, password string, banner ...string"
+(1
+(1 * time.Second
+"(host, port, password string, opts ...serverOptsFunc"
+"(""room: %+v"", room"
+"(""write error on channel 2: %v"", err"
+"(""rooms ready"""
+"(port, c"
+"([]byte(""room full"""
+"(weakKey, 1, ""siec"""
+"(""strongkey: %x"", strongKey"
+"(""all set"""
+(chan struct{}
+"(""warn"""
+"([]string{""../../README.md""}, false, false, []string{}"
+"(""send failed: %v"", err"
+"(""../../README.md"", filepath.Join(pathName, ""README.link"""
+(s
+(file
+(folder
+"(""setting up receiver"""
+"(""The operating system is %s"", operatingSystem"
+"("""", ""example"""
+"(""debug"", ""127.0.0.1"", ""8285"", ""pass123"""
+"(""debug"", ""127.0.0.1"", ""8283"", ""pass123"""
+"(t, err"
+(2
+"(path.Join(pathName, ""README.link"""
+"(""error writing to file"""
+"(""%s was already purged."", file"
+"(""setting up sender"""
+"(filesInfo, emptyFolders, totalNumberFolders"
+"(""receive failed: %v"", err"
+([]string{tmpfile.Name(
+(300 * time.Millisecond
+"([]string{""../../LICENSE"", ""touched""}, false, false, []string{}"
+"(""trace"""
+(tmpfile.Name(
+"(""failed to get minimal info: %v"", errGet"
+(content
+"(pathName, 0o755"
+"(""debug"", ""127.0.0.1"", ""8282"", ""pass123"""
+(false
+"(""debug"", ""127.0.0.1"", ""8284"", ""pass123"""
+(1 * time.Second
+"(""debug"", ""127.0.0.1"", ""8281"", ""pass123"", ""8282,8283,8284,8285"""
+"(""symlink transfer failed: %s"", err.Error("
+(100 * time.Millisecond
+"(file.Name, ""LICENSE"""
+"(""error creating file"""
+"([]string{pathName}, false, false, []string{}"
+"(""Successfully purged %s"", file"
+"(""symlink failed to transfer in folder"""
+"("".gitignore"""
+"(""LICENSE"""
+"(""temporary file's content"""
+(err
+"([]string{""../../LICENSE"", "".gitignore"", ""croc.go""}, false, true, []string{}"
+"(""Successfully purged %s"", folder"
+"(""README.md"""
+(pathName
+"(""touched"""
+"(""Full cleanup"""
+"(""%s was already purged."", folder"
+"(""./link-in-folder"""
+(t *testing.T
+"(""./testEmpty"""
+"(""test failed, should ignore LICENSE"""
+(len(c.CurrentFileChunks
+"(""data: %+v '%s'"", data, data"
+([]byte(c.Options.SharedSecret[:4] + hashExtra
+(time.Now(
+(fi.FolderRemote
+(Y/n
+"(dir, func(path string, info os.FileInfo, err error"
+"(os.Stderr, ""\rsecuring channel..."""
+"(c.FilesToTransfer[i].FolderRemote, ""..\\"""
+"(fileHash, fileInfo.Hash"
+"(""could not connect to 127.0.0.1:%s: %w"", c.Options.RelayPorts[0], err"
+"(""local connection established to %s"", serverTry"
+(info.Name(
+"(fileInfo.Symlink, pathToFile"
+(settings
+(j
+"(""sending close-sender"""
+(fname
+(path string
+(dest
+"(""banner: %s"", banner"
+"(20, width-60"
+(ipv4discoveries
+"(c.Options.IP, ""."""
+"(""error from errchan: %v"", err"
+"([]byte, 8"
+"(data[8:], positionInt64"
+"(current, path"
+"(""ready"""
+(totalFilesSize
+"(""error copying to clipboard: %v"", err"
+(uploadLimit
+"(""purging error: %s"", err"
+"(""could not truncate %s: %w"", pathToFile, err"
+(int(os.Stdout.Fd(
+"(c.EmptyFoldersToTransfer[i].FolderRemote, os.ModePerm"
+"(os.Stderr, ""%s\n"", c.EmptyFoldersToTransfer[i].FolderRemote"
+"(""hashes are equal %x == %x"", fileHash, fileInfo.Hash"
+(folderPath string
+(filepath.Dir(pathName
+"(chan error, 1"
+(discoveries
+"(fileInfo.FolderRemote, fileInfo.Name"
+"(""debug"""
+"(""--pass "" + c.Options.RelayPassword + "" """
+"(""dataMessage %s pake failed"", ipRequest"
+"(serverTry, c.Options.RelayPassword, c.Options.RoomName, 500*time.Millisecond"
+([]byte(str
+(bytesDone
+(c.Options.RelayPorts
+"(""%s is symlink"", fileInfo.Name"
+"(""error decrypting: %v: '%s'"", decryptErr, data"
+(true=ignore
+"(""all discoveries: %+v"", discoveries"
+"(""got ping"""
+"(""close-sender received..."""
+(absPath
+"(""%-*s"", c.longestFilename, c.FilesToTransfer[i].Name"
+"(""discoveries: %+v"", discoveries"
+"(""discovery %d has payload: %+v"", i, discoveries[i]"
+"(bytes.TrimPrefix(discoveries[i].Payload, []byte(""croc"""
+"(paths, strings.ToLower(path"
+(n
+"(paths, fname"
+(For Linux/OSX
+"(""Removing "" + file.Name"
+"(upload, 10, 64"
+"(""\nOverwrite '%s'? (y/N"
+(fileInfo.FolderRemote
+(fpath
+"(relPath, "".."""
+"(""error removing %s: %v"", pathToFile, err"
+"(""error marshalling ips: %v"", errIps"
+(os.Stderr
+(time.Second / time.Duration(uploadLimit
+"(pathToFile, c.FilesToTransfer[c.FilesToTransferCurrentNum].Mode.Perm("
+"(""warn"""
+(i int
+"(""TEST FLAG ENABLED, TESTING LOCAL IPS"""
+"(absPathWithSeparator, string(os.PathSeparator"
+"(chan error, 2"
+(totalSize
+(i
+(data[:8]
+"(""found no addresses to connect"""
+(utils.GetInput(prompt
+"(""checking %+v"", fileInfo"
+"(""waiting for bytes"""
+(width-3
+"(""kB: %x"", kB"
+"(""got error processing: %v"", err"
+"(""Removing %s\n"", file.Name"
+"(""pathToFile: %s"", pathToFile"
+"(fullPath, c.Options.HashAlgorithm, fileInfo.Size > 1e7"
+"(""pbcopy"""
+"(os.Stderr, ""\rSending %d files (%s"
+(str string
+"(""dataMessage kA: %x"", kA"
+"(""%s is not a local IP, skipping"", ip"
+"("".gitignore"""
+(ips
+(c.chunkMap
+"(banner, "","""
+"(""could not ping: %+v"", errPing"
+"(""sending recipient ready with %d chunks"", len(c.CurrentFileChunks"
+(os.PathSeparator
+"(discoveries, ipv6discoveries..."
+"(""invalid path detected: '%s'"", fi.FolderRemote"
+"(""ips send error: %v"", err"
+"(""clip"""
+"(data, []byte{1}"
+() < uint64(totalSize
+(description
+"(""not enough disk space"""
+"(address, c.Options.RelayPassword, c.Options.RoomName, durations[i]"
+"(""starting sending over comm %d"", i"
+(formatDescription(description
+"(posByte, data[:n]..."
+"(data, ipRequest"
+"(""touching file with folder / name"""
+(100 * time.Millisecond
+"(""xclip"", ""-selection"", ""clipboard"""
+(port
+(errHash
+(handshakeRequest
+(c.Options.Curve
+(c.Options.Debug
+"(os.Stderr, ""Code copied to clipboard\n"""
+"(command, qrcode.Medium"
+(command string
+"(fi.Name, ""croc-stdin-"""
+"(os.Stderr, ""\r                                 """
+"(""received external IP: %+v"", m"
+"(""bad relay address %s"", c.Options.RelayAddress"
+(20
+"(""Throttling Upload to %#v"", c.limiter.Limit("
+"(""got error from processing message: %v"", err"
+"(bool, error"
+"(""%d files"", len(c.FilesToTransfer"
+"(""receiver connection established: %+v"", c.conn[0]"
+"(c.FilesToTransfer[i].FolderRemote, ""\\.."""
+"(""room (secure channel"
+"(remoteFolder, string(os.PathSeparator"
+"(""sending external IP"""
+"(path, func(path string, info os.FileInfo, err error"
+"(""finished"""
+"(""connected as %s -> %s"", c.ExternalIP, c.ExternalIPConnected"
+"(fmt.Sprintf(""%s/24"", ip"
+"(""closing file"""
+"(data, &dataMessage"
+"(key, salt"
+"(dest, fpath"
+"(""data: %s"", data"
+"(""using curve %s"", string(m.Bytes2"
+"(pathName string, info os.FileInfo, err error"
+(dir
+(chan bool
+(c *Client
+"(""could not connect to "" + serverTry"
+"(""ok"""
+"(""%s %+x %+x %+v"", fileInfo.Name, fileHash, fileInfo.Hash, errHash"
+"(discoveries[i].Address, portToUse"
+"(""trying connection to %s"", address"
+"(""skipping discovery"""
+"(""received pake payload"""
+"(""attempt to discover peers"""
+"(os.Stderr, ""\rReceiving %s (%s"
+"(fileInfo.Name, ""croc-stdin-"""
+(2
+(finished
+"(""decrypted: %s"", data"
+"(""ipv4Add4: %+v, ipv4Net: %+v, err: %+v"", ipv4Addr, ipv4Net, errNet"
+"(""generating salt"""
+"(""XDG_SESSION_TYPE"""
+"(discoveries[i].Payload, []byte(""croc"""
+"(m.Bytes, &remoteFile"
+"(""hashed %s to %x using %s"", fullPath, c.FilesToTransfer[i].Hash, c.Options.HashAlgorithm"
+"(c.FilesToTransfer[i].FolderRemote, ""/.."""
+(portStr string
+(finished bool
+(c.Options.SharedSecret
+"(c *Client, err error"
+"(""got pake1"""
+"(""sending ips?"""
+(err
+"(data, &ips"
+"(""\nResume '%s' (%2.1f%%"
+"(""%s-%d"", c.Options.RoomName, j"
+(c.TotalChunksTransferred == len(c.CurrentFileChunks
+"(""sending chunk %d"", pos"
+(0
+"(""instead of handshake got: %s"", data"
+"(dir string, gitObj *ignore.GitIgnore, files map[string]bool"
+(y/N
+(file.Name
+"(""problem with decoding: %w"", err"
+(errRead
+(j int
+"(fname, ""'croc-stdin-"""
+"(filepath.Join(path, "".gitignore"""
+"(""could not establish '%s'"", address"
+(500 * time.Millisecond
+"(""got error from updating state: %v"", err"
+(1
+"(""assume ipv6"""
+"(""sender sending pake+salt"""
+"(""error closing %s: %v"", c.CurrentFile.Name("
+"(os.Stderr, ""\nReceiving (<-%s"
+"(os.Stderr, ""\rSending %s and %s (%s"
+"(""disabling compression"""
+"(os.Stderr, ""\r%s\n"", newFolder"
+"(os.Stderr, ""Send to machine '%s'? (Y/n"
+"(filesInfo []FileInfo, emptyFoldersToTransfer []FileInfo, totalNumberFolders int"
+"(paths []string, err error"
+(useipv6 bool
+"(""got ipRequest"""
+"(path.Join(c.FilesToTransfer[i].FolderRemote, fi.Name"
+"(""banner: %s"", banner2"
+(folderForFile
+"(""dataMessage send error: %v"", err"
+"(""%+v"", c.FilesToTransfer[i]"
+"(""[%+v] had error: %s"", conn, errConn.Error("
+(filesInfo
+(map[uint64]struct{}
+(salt
+"(""error encrypting ips: %v"", errIps"
+"(""."", file.Name"
+"(""got handshake"""
+(roomNameBytes[:]
+"(""ips data: %s"", data"
+"(""creating symlink"""
+"(""start sending data!"""
+(folderPath
+"(""exchanged header message"""
+"(a int, b int"
+(errOpen
+"(utils.GetInput("""""
+(m
+"(""[%+v] got weird bytes: %+v"", conn, data"
+"(""localIP: %+v, localIPparsed: %+v"", localIP, localIPparsed"
+(err error
+(errConn
+"(os.Stderr, ""\rYour machine ID is '%s'\n"", machid"
+(c.FilesToTransfer
+(ipv6discoveries
+"(""generated key = %+x with salt %x"", c.Key, salt"
+"(""gracefully refusing using the public relay"""
+"(""host: '%s', port: '%s'"", host, port"
+(errchan
+(m message.Message
+"(""pake error: %s"", err.Error("
+(m.Bytes2
+([]byte(c.Options.SharedSecret[5:]
+"(discoveries, ipv4discoveries..."
+"(""error: %s"", err.Error("
+"(fileInfo, i"
+"(folderForFile, os.ModePerm"
+(c.FilesToTransfer[c.FilesToTransferCurrentNum].Size
+"(""dataMessage kB: %x"", kB"
+"([]byte, models.TCP_BUFFER_SIZE/2"
+"(curi, float64(len(c.Options.RelayPorts"
+(Client
+"(done bool, err error"
+(r.Delay(
+(c.Options.ThrottleUpload[len(c.Options.ThrottleUpload
+(qrCode.ToSmallString(false
+(filesInfo []FileInfo
+"(""--relay "" + c.Options.RelayAddress + "" """
+"(""asking to overwrite"""
+"("" """
+(c.Options.RelayAddress
+"(""successfully pinged '%s'"", address"
+"(""finished receiving!"""
+"(""port: [%s]"", c.Options.RelayPorts[i]"
+"(""assume ipv4"""
+"(""could not create %s: %w"", pathToFile, errOpen"
+"(""error sending: %v"", err"
+"(data, readingPos"
+"(""could not connect to %s: %w"", c.Options.RelayAddress, err"
+(address
+(byteToDo
+"(""converting to chunk range"""
+(use --overwrite to omit
+"(os.Stderr, ""Skipping '%s'\n"", path.Join(fileInfo.FolderRemote, fileInfo.Name"
+"(""local connection established: %+v"", conn"
+"(""error getting local ips: %v"", err"
+(len(missingChunks
+"(parentPath, childPath string"
+"(c.Key, payload"
+"(c.Options.IP, "":"""
+(!c.Options.SendingText
+(c.CurrentFileChunkRanges
+(dataMessage.Bytes
+"(""croc"" + c.Options.RelayPorts[0]"
+"([]string{c.Options.RelayPorts[0]}, ips..."
+"(""connection established: %+v"", conn"
+([]byte(ipRequest
+(true
+(c.Options.RelayPorts[0]
+() && filepath.Base(path
+"(""longestFilename: %+v"", c.longestFilename"
+(payload []byte
+"(if empty, then should receive all chunks"
+(errChmod
+"(""beginning sending comms"""
+"(os.Stderr, ""\n"""
+"(""hashes are not equal %x != %x"", fileHash, fileInfo.Hash"
+() (err error
+(description string
+"(""handshake send error: %v"", err"
+(localIP
+(path
+"(os.Stderr, ""\r%s %s and %s (%s"
+"(""pake not successful: %w"", err"
+"(host, port"
+(c.EmptyFoldersToTransfer[i].FolderRemote
+(dataToSend
+"(filesInfo []FileInfo, emptyFolders []FileInfo, totalNumberFolders int, err error"
+"(""no multiplexing"""
+"(""wl-copy"""
+"(""127.0.0.1:""+c.Options.RelayPorts[0], c.Options.RelayPassword, c.Options.RoomName"
+"(""Successful closing %s"", c.CurrentFile.Name("
+"(""finished with %d"", i"
+"(""'%s'"", c.FilesToTransfer[0].Name"
+"(host, c.Options.RelayPorts[j]"
+(ops Options
+"(""Could not parse given Upload Limit"""
+"(fnames []string, zipfolder bool, ignoreGit bool, exclusions []string"
+(fileInfo.Name
+"(""dataMessage: %s"", dataMessage"
+"(""using hash algorithm: %s"", c.Options.HashAlgorithm"
+(len(c.Options.RelayPorts
+"(fileInfo FileInfo, i int"
+"(data, kB"
+"(""filepath error"""
+(pathName
+(openPorts
+"(""%d receiving data"", i"
+"(""ips unmarshal error: %v"", err"
+"(c.chunkMap, pos"
+"([]*comm.Comm, 16"
+"(os.Stderr, ""\r%s %s (%s"
+"(data, c.Key"
+"(""sending ips: %+v"", ips"
+(100*time.Millisecond
+"(fmt.Sprintf(""%[1]s"", c.Options.SharedSecret"
+"(abs, gitObj, ignoredPaths"
+"(""can't create %s: %v"", folderForFile, err"
+"(""could not secure channel"""
+"(""error closing file: %v"", err"
+"(fileInfo.FolderRemote, os.ModePerm"
+(map[int]struct{}
+"(posByte, pos"
+"(""%d folders"", c.TotalNumberFolders"
+"(""sending close-recipient"""
+(len(data[8:]
+(fullPath
+(data
+"(""establishing connection"""
+(bips
+"(""could not connect"""
+"(os.Stderr, ""\rNo files transferred.\n"""
+"(""handshake"""
+(debug bool
+"(""connected to %s"", server"
+"(""got error receiving: %v"", err"
+"(""file %d info: %+v"", i, c.FilesToTransfer[i]"
+"(""127.0.0.1"", firstPort, len(c.Options.RelayPorts"
+"(ip, port"
+"(""password mismatch"""
+"(path.Join(fileInfo.FolderRemote, fileInfo.Name"
+(dataMessage
+(For Windows
+(chunk
+(c.Options.ThrottleUpload
+"(""peer error: %s"", m.Message"
+(func(
+"(""error getting symlink: %s"", err.Error("
+"(c.Options.ThrottleUpload, 10, 64"
+(pathToFile
+"(rbuf, binary.LittleEndian, &position"
+(err.Error(
+(!usingLocal && !c.Options.DisableLocal && !isIPset
+"(debugString, ""127.0.0.1"", portStr, c.Options.RelayPassword, strings.Join(c.Options.RelayPorts[1:], "","""
+(string(b
+(fi.Name
+"(""working on file %d"", c.FilesToTransferCurrentNum"
+"(""refused files"""
+(fileInfo.Size
+"(m.Bytes, &senderInfo"
+(position
+"(os.Stderr, ""\rSending %s (%s"
+(map[string]bool
+"(""unencrypted communication rejected"""
+(errchan chan<- error
+"(os.Stderr, ""connecting..."""
+"(os.Stderr, ""\rYour machine id is '%s'.\n%s %s (%s"
+(false
+"(""can't generate random numbers: %v"", rerr"
+"(filesInfo, fInfo"
+"(""."""
+(errCreate
+"(fname, ""*"""
+"(""hashed %s to %x using %s"", fileInfo.Name, fileHash, c.Options.HashAlgorithm"
+"(c.FilesToTransfer[i].FolderRemote, "".ssh"""
+(wd.Name(
+(localIPparsed
+"(rt, minBurstSize"
+(c.EmptyFoldersToTransfer
+"(parentPath, childPath"
+"(""Limiting Upload for %d"", r.Delay("
+"(data, handshakeRequest"
+(c.FilesToTransfer[c.FilesToTransferCurrentNum].FolderRemote
+(m.Bytes
+"(""dataMessage error sending: %v"", err"
+()
+"(os.Stderr, "" %d/%d\n"", c.finishedNum, c.TotalNumberOfContents"
+"(bips, kB"
+"(""ips?"""
+(errExists
+"(""%-*s"", c.longestFilename, c.FilesToTransfer[c.FilesToTransferCurrentNum].Name"
+"(""connecting to %s"", server"
+"(""\r"""
+"(""current file chunks: %+v"", c.CurrentFileChunks"
+"(data, kA"
+"(""ip: %+v is a local IP"", ip"
+"(os.Stderr, ""\nSending (->%s"
+"(paths, matches..."
+"(""switching to local"""
+"(c.FilesToTransfer[i].FolderRemote, ""../"""
+"(""got host '%v' and port '%v'"", host, port"
+"(""code is too short"""
+"(""not enough open ports to run local relay"""
+(basename ${SHELL}
+('\${PREFIX}/bin' on Termux for Android
+(_
+"(make_tempdir ""${croc_bin_name}"""
+"(basename ""${SHELL}"""
+"(sha256sum -c ""filtered_checksum.txt"""
+(uname
+"(sha256 -q ""${file}"""
+(unless on android
+(determine_os
+(determine_arch
+"(shasum -a 256 -c ""filtered_checksum.txt"""
+(awk '{print $1}' filtered_checksum.txt
+(and any parent directories
+"(mktemp -d -t ""${template}"""
+(uname -m
+"(basename ""${file}"""
+"(""git"", ""rev-parse"", ""--short"", ""HEAD"""
+"(""updated default.txt to version %s\n"", strings.Split(versionNew, ""-"""
+(result string
+(versionHashNew
+() (err error
+(string(versionHash
+"(str[s:], end"
+"(""src/cli/cli.go"", `Version = ""`, `""`, versionNew+""-""+versionHashNew"
+"(""nothing"""
+"(fname, start, end, replacement string"
+"(str, start"
+"(""src/install/default.txt"", `croc_version=""`, `""`, strings.Split(versionNew, ""-"""
+"(""%s%s%s"", start, oldVersion, end"
+"(""updated cli.go to version %s\n"", versionNew"
+(versionNew
+"(""%s%s%s"", start, replacement, end"
+"(""updated README to version %s\n"", strings.Split(versionNew, ""-"""
+(b
+"(""VERSION"""
+(fname
+"(fname, []byte(newF"
+"(""README.md"", `version-`, `-b`, strings.Split(versionNew, ""-"""
+(err
+"(str string, start string, end string"
+(start
+(err error
+(string(b
+(_CLI_ZSH_AUTOCOMPLETE_HACK=1 ${words[@]:0:#words[@]-1} ${cur} --generate-bash-completion
+(_CLI_ZSH_AUTOCOMPLETE_HACK=1 ${words[@]:0:#words[@]-1} --generate-bash-completion
+"(""${(@f"
+"( $(compgen -W ""${opts}"" -- ${cur}"
+( ${COMP_WORDS[@]:0:$COMP_CWORD} ${cur} --generate-bash-completion 
+( ${COMP_WORDS[@]:0:$COMP_CWORD} --generate-bash-completion 
+(basename ${BASH_SOURCE}
+"(echo ""$response"" | grep -m 1 ""id.:"" | grep -w id | tr : = | tr -cd '[[:alnum:]]='"
+($0
+"(curl -sH ""$AUTH"" $GH_TAGS"
+"(cat ./src/cli/cli.go | grep 'Version = ""v' | sed 's/[^0-9.]*\([0-9.]*\"
+(which gxargs || which xargs
+(basename $filename
+(mktemp -d
+(cd $tmp/croc-${VERSION} && go mod tidy && go mod vendor
+(cd $tmp && tar -cvzf croc_${VERSION}_src.tar.gz croc-${VERSION}
+"(b []byte, err error"
+"(key []byte, b []byte"
+(m
+"(m Message, err error"
+"(b, key"
+"(key, m"
+"(key []byte, m Message"
+(m Message
+"(c *comm.Comm, key []byte, m Message"
+(b
+"(""writing %s message (unencrypted"
+(err error
+"(b, &m"
+"(""read %s message (encrypted"
+"(""read %s message (unencrypted"
+(mSend
+"(""writing %s message (encrypted"
+"(t, m, m2"
+"(e, m"
+"([]byte(""0"""
+"(""tcp"", ""0.0.0.0:""+port"
+"([]byte(""not pass"""
+"([]byte(""hello, world"""
+"(t, []byte(""hello, computer"""
+()
+"(t, err"
+"(""127.0.0.1:""+port, 10*time.Minute"
+"(e, b"
+"([]byte, 40000000"
+(string(salt
+"(nil, b"
+"(t, []byte{'\x00'}, data"
+"(port, connection"
+"(t, `{""t"":""message"",""m"":""hello, world""}`, m.String("
+"(t, token, data"
+(salt
+"(nil, m"
+"(t, Send(a, e, m"
+"([]byte(""pass"""
+"(""client %s connected"", connection.RemoteAddr("
+(connection
+"(""debug"""
+(800 * time.Millisecond
+(token
+(err
+"(""%x\n"", b"
+"(_ string, connection net.Conn"
+"(""starting TCP server on "" + port"
+(t *testing.T
+"(plaintext []byte, key []byte"
+"([]byte, 8"
+"(""ciphertext too short"""
+"(nil, encrypted[:12], encrypted[12:], nil"
+()
+"(passphrase, salt, 100, 32, sha256.New"
+"(nonce, nonce, plaintext, nil"
+"(ivBytes, encrypted..."
+(encrypted
+"(encrypted []byte, err error"
+"(""incorrect passphrase"""
+"(encryptedMsg []byte, aead cipher.AEAD"
+"([]byte, 12"
+(ivBytes
+(nonce
+"(encrypted []byte, key []byte"
+(salt
+"(""need more than that for passphrase"""
+"(plaintext []byte, err error"
+"(argon2.IDKey(passphrase, salt, 1, 64*1024, 4, 32"
+"(nil, ivBytes, plaintext, nil"
+"(""can't initialize crypto: %v"", err"
+(b
+"(""can't get random salt: %v"", err"
+"(passphrase []byte, usersalt []byte"
+()+len(plaintext
+"([]byte, aead.NonceSize("
+"(aead cipher.AEAD, salt []byte, err error"
+"(key []byte, salt []byte, err error"
+"(plaintext []byte, aead cipher.AEAD"
+(err
+(passphrase
+"()], encryptedMsg[aead.NonceSize("
+"(nil, nonce, ciphertext, nil"
+(key
+(encryptedMsg
+"(enc, key"
+"(t, err"
+(b *testing.B
+"(enc, key2"
+"([]byte(""wrong password"""
+"([]byte(""hello, world"""
+"(""key: %x\n"", key"
+(t *testing.T
+"([]byte("""""
+"(msg, key"
+"([]byte(""password"""
+"(""hello, world"""
+"(t, msg, dec"
+"(openPorts, []int{9009, 9010, 9011, 9012}"
+"(""missing.test"", bigBuff, 0o644"
+(len(content
+(GetLocalIPs(
+"(""hello,world"""
+"([]byte, chunkSize"
+(os.PathSeparator
+"(""D中文.cslouglas​"""
+"(t, Exists(""doesnotexist"""
+"(t, ValidFileName(""hi..txt"""
+"(t, ""10.0 kB"", ByteCountDecimal(10240"
+"("""", ""example"""
+"(t, ""c0d1e12301e6c635f6d4a8ea5c897437"", fmt.Sprintf(""%x"", b"
+"(ip, "":"""
+"(a, b []int"
+"(t, err"
+"(""missing.test"""
+"(""missing.test"", os.O_RDWR, 0o644"
+(ChunkRangesToChunks((chunkRanges
+"(t, ""8304ff018e02baad0e3555bade29a405"", fmt.Sprintf(""%x"", b"
+"(t, nil"
+"(t, IsLocalIP(""192.168.0.14:9009"""
+(tmpfile.Name(
+"(""openPorts: %v"", openPorts"
+(content
+"(t, ""50 B"", ByteCountDecimal(50"
+"(t, ValidFileName(""[(something"
+"(t, ""non-graphical unicode: e2808b U+8203 in '44e4b8ade696872e63736c6f75676c6173e2808b'"", err.Error("
+"(t, ""12.4 MB"", ByteCountDecimal(13002343"
+(chunkRanges
+(1
+"(t, ValidFileName(""中文.csl"""
+"(""bigfile.test"", bytes.Repeat([]byte(""z"""
+(b *testing.B
+"(t, []int64{10, 0, 1, 40, 2, 70, 3}, chunkRanges"
+"(""missing.test"", int64(fileSize"
+(name
+"(empty, int64(block*chunkSize"
+(bigBuff
+"(t, ""e66c561610ad51e2"", fmt.Sprintf(""%x"", hashed"
+"(""../../m/bigfile.test"", int64(75000000"
+(a
+(b
+"(""nofile"", false"
+"(t, []int64{0, 40, 50, 70, 80, 90}, chunks"
+"(t, chunks"
+"(openPorts, []int{9014, 9015, 9016, 9017}"
+"(""temporary file's content"""
+"(""bigfile.test.nofile"", false"
+"(""127.0.0.1"", 9009, 4"
+"(t, ""09ca7e4eaa6e8ae9c7d261167129184883644d07dfba7cbfbc4c8a2e08360d5b"", SHA256(""hello, world"""
+"([]byte, fileSize"
+(err
+"(""bigfile.test"", false"
+"(t, strings.Contains(ip, ""."""
+"(t, name"
+"(""bigfile.test"", int64(bigFileSize"
+"(t, Exists(""bigfile.test"""
+(ip
+"(""bigfile.test"""
+"(t, ValidFileName(""[something].csl"""
+"(t, ValidFileName(path.Join(string(os.PathSeparator"
+(t *testing.T
+"(t, ""4918740eb5ccb6f7"", fmt.Sprintf(""%x"", b"
+"(t, ""3c32999529323ed66a67aeac5720c7bf1301dcc5dca87d8d46595e85ff990329"", fmt.Sprintf(""%x"", b"
+"(t, chunkRanges"
+"(homedir string, err error"
+"(homedir, "".config"", ""croc"""
+('\n'
+"(""1553c5383fb0b86578c3310da665b4f6e0521acf22eb58a99532ffed02a6b115"""
+(b int64
+(requireValidPath bool
+().(*net.UDPAddr
+"(zip.Deflate, func(out io.Writer"
+"(io.MultiWriter(h, bar"
+(chunks []int64
+(host
+"(hash256 []byte, err error"
+"(os.Stderr, ""Skipping '%s'\n"", filePath"
+(bytes.Buffer
+"(fname, doShowProgress"
+(name
+"(""."", ""croc-stdin-"""
+"(h, f"
+(fname
+(openPorts []int
+(div
+"(""XDG_CONFIG_HOME"""
+(buf.String(
+(key
+(err error
+(stat.Size(
+(os.Stdin
+"(path, source, strings.TrimSuffix(destination, "".zip"""
+(unit
+"(""could not create highwayhash: %s"", err.Error("
+(destination
+"(""non-graphical unicode: %x U+%d in '%x'"", string(r"
+"(""http://ipv4.icanhazip.com"""
+"(fmt.Errorf(""parse error on %q: %v"", cidr, err"
+"(crocRemovalFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0o600"
+(resp.Body
+(buffer
+"(basename, "".."""
+"(filePath, os.ModePerm"
+"(ips, ipnet.IP.String("
+(chunkRanges []int64
+(chunkRanges
+"(""basename cannot contain '..': '%s'"", basename"
+(showProgress
+(s string
+(ipaddress string
+"(fname string, doShowProgress bool"
+"(16*16*8*1024, 128*1024"
+"(basename, string(os.PathSeparator"
+"(source, func(path string, info os.FileInfo, err error"
+"(os.Stderr, ""\r\033[2K"""
+(r
+(SHA256(target
+(*net.IPNet
+"(privateIPBlocks, block"
+"([]byte, NbBytesWords"
+(filepath.Dir(filePath
+"(out, flate.NoCompression"
+"(""%d B"", b"
+"(w1, f1"
+"(os.Stderr, ""\rAdding %s"", zipPath"
+"(""udp"", ""8.8.8.8:80"""
+"(buffer[:bytesread], emptyBuffer[:bytesread]"
+(all chunks
+(text
+"() (fname string, err error"
+"(""unspecified algorithm"""
+"(fname string, algorithm string, showProgress ...bool"
+"(result, bs"
+"(homedir, 0o700"
+(ipaddress
+() || ip.IsLinkLocalUnicast(
+"([]byte, chunkSize"
+"(os.Stderr, ""%s"", prompt"
+(name string
+(fname string
+"(""%.1f %cB"", float64(b"
+"(dstFile, fileInArchive"
+"(chunkRanges, chunk"
+"(os.Stderr, ""Zipping %s to %s\n"", source, destination"
+(crocRemovalFile
+"(""%s file already exists!\n"", destination"
+(filePath
+(nil
+(prompt string
+(big.Int
+(bytesread
+"(rand.Reader, max"
+"(ipaddress, ""127.0.0.1"""
+"(""%d"", v"
+"() + ""-"" + strings.Join(result, ""-"""
+"(chunks, chunkRanges[i]+j*chunkSize"
+"(""\nOverwrite '%s'? (y/N"
+"(fname + ""\n"""
+"(os.Stderr, ""\rUnzipping file %s"", filePath"
+"(0, 0"
+(chunkRanges[i+1]
+"(""basename cannot contain path separators: '%s'"", basename"
+"(""CROC_CONFIG_DIR"""
+"() (ip string, err error"
+(err
+(chunkSize
+(true
+(os.Stderr
+"(openPorts, port"
+(0
+"(host string, portNumStart, numPorts int"
+"(io.WriteCloser, error"
+"(hashHighway []byte, err error"
+(sha.Sum(nil
+(9
+"(fmt.Sprintf(""Hashing %s"", fnameShort"
+(file
+(zipPath
+"(hash []byte, err error"
+"(os.Stderr, ""\n"""
+() (err error
+"(""non-printable unicode: %x U+%d in '%x'"", string(r"
+"(""filename cannot be an absolute path: '%s'"", fname"
+"(fname string, fsize int64, chunkSize int"
+(path
+(cidr
+(f
+(bs
+"(""tcp"", net.JoinHostPort(host, fmt.Sprint(port"
+"() (ips []string, err error"
+"(filePath, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, f.Mode("
+(homedir
+([]byte(s
+"(chunkRanges, int64(curCount+1"
+"(""Invalid file path %s\n"", filePath"
+"(chunkRanges, int64(curCount"
+"(destination string, source string"
+(source
+"(""Removed %s"", fname"
+().IsDir(
+"([]int64, int64(math.Ceil(float64(fsize"
+"(filePath, "".."""
+().IsRegular(
+"(destination, f.Name"
+(openPorts
+(ip
+(fnameShort
+"(xdgConfigHome, ""croc"""
+(GetInput(prompt
+(du.stat.Bavail
+"(volumePath, &stat"
+(volumePath string
+(du *DiskUsage
+() - du.Free(
+(du.Used(
+(du.stat.Bsize
+(du.stat.Blocks
+(du.Size(
+(du.stat.Bfree
+"(invalid path, etc"
+"(""kernel32.dll"""
+(volumePath string
+(du *DiskUsage
+() - du.Free(
+(du.Used(
+(du.totalBytes
+(du.availBytes
+(du.Size(
+(unsafe.Pointer(&du.totalBytes
+(unsafe.Pointer(&du.freeBytes
+(du.freeBytes
+"(""GetDiskFreeSpaceExW"""
+(unsafe.Pointer(windows.StringToUTF16Ptr(volumePath
+(unsafe.Pointer(&du.availBytes
+"(invalid path, etc"
+"(""."""
+"(""Available:"", usage.Available("
+"(""Size:"", usage.Size("
+"(""Usage:"", usage.Usage("
+(KB*KB
+(1024
+"(""Used:"", usage.Used("
+(t *testing.T
+"(""Free:"", usage.Free("
+"(""code"""
+"(minimalFileInfos, emptyFoldersToTransfer, totalNumberFolders"
+"(line []rune, pos int"
+(requireValidPath
+"(""saving config file"""
+(crocOptions.SharedSecret
+(folderMap
+"(runtime.GOOS == ""windows"""
+"(fnames []string, err error"
+"(""curve"""
+"(""ports"""
+((stat.Mode(
+"(xxhash, imohash, md5"
+"(""socks5"""
+(requireValidPath bool
+"(""info"""
+"(b, &rememberedOptions"
+"(""\nClassic mode DISABLED.\n\n"""
+"(ports[1:], "","""
+(crocOptions.Exclude
+"(""no-local"""
+"([][]rune, int"
+"(""throttleUpload"""
+"("""""
+(os.Args
+"(""port"""
+(string(line
+"(""."", ""croc-stdin-"""
+(port
+"(utils.GetInput("""""
+"(""no-compress"""
+"(debugString, host, portStr, determinePass(c"
+"(""relay"""
+(err error
+(fnames
+"(""connect"""
+"(""zip"""
+(insecure due to local attack vector
+"(c.String(""out"""
+"(fnames, "", """
+(e
+(path.Join(strings.ToLower(f.FolderRemote
+"(c.String(""exclude"""
+"(phrase, ""-"""
+(lastPartialWord
+(utils.GetInput(promptMessage
+"(fnames, ""'""+basename+""'"""
+"(""stdout"""
+"(debugString, host, ports[0], determinePass(c"
+"(c.String(""ports"""
+"(""overwrite"""
+(c.Args(
+(s string
+(see options with croc send -h
+"(s, lastPartialWord"
+(utils.NbBytesWords
+"(""Did you mean to send %s? (Y/n"
+"(""out"""
+"(""-"""
+"(classicFile, []byte(""enabled"""
+"(""debug"""
+(secure
+(fnames[0]
+"(emptyFoldersToTransferInclude, f"
+"(c *cli.Context, crocOptions croc.Options"
+"(""must specify file: croc send [filename(s"
+"(""CROC_SECRET"""
+"(""classic"""
+"(""debug mode on"""
+"(""ask"""
+"(c, crocOptions"
+().First(
+(string(b
+(runtime.NumCPU(
+(optional
+"(""git"""
+"(excludeStrings, v"
+(s
+(str
+"(minimalFileInfosInclude, f"
+(strings.TrimSpace(v
+"(""qrcode"""
+"(""yes"""
+"(""\nClassic mode ENABLED.\n"""
+"(""text"""
+().Slice(
+"(crocOptions, """", ""    """
+"(""relay6"""
+(f.Name
+(map[string]bool
+"(""testing"""
+"(""transfers"""
+"([]string, transfersString"
+(rememberedOptions.RelayPorts
+(classicFile
+(portStr string
+(pass string
+"(""hash"""
+"(configFile, bConfig, 0o644"
+(strs []string
+"(""host"""
+(fpath
+"(""starting croc relay version %v"", Version"
+"(""pass"""
+(err
+"(""wrote %s"", configFile"
+"(!(runtime.GOOS == ""windows"""
+"([]string, transfersParam+1"
+(true
+"(""ip"""
+(portParam + i
+().Len(
+(pass
+(doRemember
+(0
+"(string, error"
+(words
+(y/N
+()...
+(c
+(crocOptions
+"(""\nClassic mode DISABLED.\n"""
+() (err error
+"(c.String(""text"""
+()
+"(configFile, ""send.json"""
+(c *cli.Context
+"(strArray, []rune(completionCandidate"
+"(""ignore-stdin"""
+().Present(
+"(""local"""
+"(configFile, ""receive.json"""
+(getSendConfigFile(false
+"(""\nClassic mode ENABLED.\n\n"""
+"(""public IP address: %s"", ip"
+"(configFile, ""classic_enabled"""
+(getClassicConfigFile(true
+"(""multicast"""
+(t TabComplete
+"(fnames, crocOptions.ZipFolder, crocOptions.GitIgnore, crocOptions.Exclude"
+"("" + strings.Join(pake.AvailableCurves("
+"(phrase, c.Args("
+(portString + i
+"() (fnames []string, err error"
+"(""no-multi"""
+"(""remember"""
+(configFile
+"(f, os.Stdin"
+(c
+(x/base
+(src[0]
+((length + 1
+(x % base
+"(result, WordList[i]"
+"(result, dst"
+(src[i]
+(x/base/base
+(src[1]
+(result []string
+"(dst []string, src []byte"
+(src[2]
+(src[3]
+"([]string, len(dst"
+"(the ""Software"""
+(dst
+(only needed to encode the last 3 bits
+(len(src
+"(result, WordList[i0], WordList[i1], WordList[i2]"
+(length int
+(src
+(c
+"(the ""Software"""
+"(map[string]int, len(WordList"
+(len(data
+"(""random, Level 9: %2.0f%% percent space savings\n"", dataRateSavings"
+"(""random, Level -2: %2.0f%% percent space savings\n"", dataRateSavings"
+"(""Level 9: %2.0f%% percent space savings\n"", dataRateSavings"
+"(t, len(compressedB"
+"(fable, -2"
+(len(fable
+"(""Level -2: %2.0f%% percent space savings\n"", dataRateSavings"
+(b *testing.B
+"([]byte, 1000000"
+(1.0 - float64(len(compressedB
+(fable
+(err
+"(t, fable, Decompress(compressedB"
+"(data, -2"
+(data
+(t *testing.T
+"([]byte, 4096"
+"(fable, 9"
+"(data, 9"
+"(compressedData, deCompressedData"
+(bytes.Buffer
+"(src io.Reader, dest io.Writer"
+"(src, compressedData, -2"
+"(""error level data: %v"", err"
+"(dest, decompressor"
+"(src []byte, level int"
+"(src, compressedData, level"
+"(dest, level"
+"(""error writing data: %v"", err"
+(src
+(src []byte
+"(""error copying data: %v"", err"
+"(src []byte, dest io.Writer, level int"
+"(HttpProxy, `://`"
+"(""connection.Write failed: %w"", err"
+"(socks5ProxyURL, proxy.Direct"
+"(""error setting read deadline: %v"", err"
+(10 * time.Second
+"(c.connection, buf"
+(timelimit
+(message []byte
+(time.Time{}
+(time.Now(
+"() (b []byte, err error"
+"(""comm.NewConnection failed: %w"", err"
+"(""tcp"", address"
+"(""initial read error: %v"", err"
+"(""binary.Write failed:"", err"
+"(""dialing to %s with timelimit %s"", address, tlimit"
+(3 * time.Hour
+"(""error setting write deadline: %v"", err"
+(address
+"() (buf []byte, numBytes int, bs []byte, err error"
+"(header, MAGIC_BYTES"
+"(MAGIC_BYTES, tmpCopy..."
+"(""croc"""
+(Socks5Proxy
+"(""unable to parse socks proxy url: %s"", urlParseError"
+(c *Comm
+"(""error closing connection: %v"", err"
+(message
+"(HttpProxyURL, proxy.Direct"
+(c net.Conn
+"(header, binary.LittleEndian, uint32(len(b"
+(tmpCopy
+(bytes.Buffer
+"([]byte, 4"
+"(""tcp"", address, tlimit"
+"(""connected to '%s'"", address"
+(HttpProxy
+"(c *Comm, err error"
+"(""initial bytes are not magic: %x"", header"
+(header
+"([]byte, numBytes"
+"(""consecutive read error: %v"", err"
+"(n int, err error"
+(connection
+"(""unable to parse http proxy url: %s"", urlParseError"
+"(c.connection, header"
+"(""binary.Read failed: %w"", err"
+"(""error setting overall deadline: %v"", err"
+"(rbuf, binary.LittleEndian, &numBytesUint32"
+(err
+"(""proxy failed: %w"", err"
+"(""dialing with dialer.Dial"""
+"(Socks5Proxy, `://`"
+(err.Error(
+(numBytesUint32
+"(address string, timelimit ...time.Duration"
+(b []byte
+(err error
+"(""wanted to write %d but wrote %d"", len(b"
+(header.Bytes(
+(Comm
+"(""tcp"", ""0.0.0.0:""+port"
+"([]byte(""hello, world"""
+"(t, []byte(""hello, computer"""
+()
+"(t, err"
+"(""127.0.0.1:""+port, 10*time.Minute"
+(300 * time.Millisecond
+"(t, []byte{'\x00'}, data"
+"(port, connection"
+"(t, token, data"
+"(t, []byte(""hello, world"""
+"(t, a.Send([]byte{'\x00'}"
+"([]byte, 3000"
+"(""client %s connected"", connection.RemoteAddr("
+"(t, a.Send([]byte(""hello, computer"""
+(connection
+(token
+(err
+"(_ string, connection net.Conn"
+"(t, a.Send(token"
+"(""starting TCP server on "" + port"
+(t *testing.T

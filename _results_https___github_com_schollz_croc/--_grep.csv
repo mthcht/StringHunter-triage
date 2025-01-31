@@ -1,0 +1,36 @@
+ --no-cache git gcc musl-dev
+ --from=builder /go/croc/croc /go/croc/croc-entrypoint.sh /
+ --yes --overwrite <code>
+ --classic
+ --hash imohash SOMEFILE
+" --relay ""myrelay.example.com:9009"" send [filename]"
+ --code [code-phrase] [file(s)-or-folder]
+ --curve p521 <codephrase>
+" --text ""hello world"""
+" --pass YOURPASSWORD --relay ""myreal.example.com:9009"" send [filename]"
+" --socks5 ""127.0.0.1:9050"" send SOMEFILE"
+ --channel conda-forge croc
+" --exclude ""node_modules,.venv"" [folder]"
+" --ports 1111,1112`), but you must have a minimum of **2** ports for the relay. The first port is for communication and the subsequent ports are used for the multiplexed data transfer."
+ --yes [code-phrase] > out
+" -- --pass ""$CROC_PASS"" ""$@"""
+" --version"""
+ --relay)
+" --overwrite to omit) "", path.Join(fileInfo.FolderRemote, fileInfo.Name))"
+" --overwrite to omit) "", path.Join(fileInfo.FolderRemote, fileInfo.Name), percentDone)"
+" --ignore-missing, so filter the checksum file"
+ ----------------------------------------------------------------
+" --quiet  ""${url}"" -O ""${dir}/${filename}"""
+" --prefix ""${INSTALL_PREFIX}"""
+" --generate-bash-completion)}"")"
+ -- ${cur}) )
+ --generate-bash-completion )
+ --skip-publish
+ --tags
+" --data-binary @""$filename"" -H ""Authorization: token $GITHUB_TOKEN"" -H ""Content-Type: application/octet-stream"" $GH_ASSET"
+" --auth-no-challenge --no-cookie"""
+ --depth 1 https://github.com/schollz/croc $tmp/croc-${VERSION}
+ --code *** file.txt
+ --classic
+ --code secret-code file.txt
+" -- and if he put his tail in the water, the snakes would eat the frog. They clumsily floated downstream for a ways, until the crocodile said, ""Hop onto my back so I can steer straight with my tail."" The frog moved, and the journey smoothed out."

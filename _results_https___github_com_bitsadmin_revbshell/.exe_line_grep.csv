@@ -1,0 +1,6 @@
+                      '- SHELL [command]    - Execute command in cmd.exe
+                strPath = objProcess.Exe
+            Dim arrNetworkAdapters: Set arrNetworkAdapters = wmi.Exe
+            Dim arrProcesses: Set arrProcesses = wmi.Exe
+            For Each objOS in wmi.Exe
+- SHELL [command]    - Execute command in cmd.exe

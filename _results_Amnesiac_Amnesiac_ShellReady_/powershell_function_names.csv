@@ -1,0 +1,31 @@
+"UpdateBookmark($identifier, $newIndex) "
+Amnesiac 
+CheckAdminAccess 
+CheckReachableHosts 
+Choose-And-Interact 
+Command ([string] $command) 
+Detached-Interaction 
+Display-SessionMenu 
+Download-File 
+Encode-Command 
+File-Server 
+Find-LocalAdminAccess 
+FindDomainTrusts 
+Get-ADComputers 
+Get-AvailableCommands  
+Get-Command 
+Get-FileNameFromUrl 
+InteractWithPipeSession
+Invoke-SMBRemoting 
+Invoke-WMIRemoting 
+PS1ToEXE 
+Print-MultiListener 
+PrintHelpImpersonation
+PrintHelpLocalAdminAccess
+PrintHelpRemoting
+PrintHelpSessionHunter
+Reverse ([array] $chunks) 
+Scan-WaitingTargets
+ShellGen 
+Start-Listener 
+WMIAdminAccess 

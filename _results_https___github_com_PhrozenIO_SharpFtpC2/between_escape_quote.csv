@@ -1,0 +1,22 @@
+"`), please be aware that the action you are about to perform has the potential to be dangerous and may have unintended consequences. This tool is intended for educational purposes and should be used responsibly. Are you sure you want to proceed? Understanding the implications, please type "
+"`docker run -d --name ftpd_server -p 21:21 -p 30000-30009:30000-30009 -e ""PUBLICHOST: 127.0.0.1"" -e ""ADDED_FLAGS=-E -A -X -x --tls=2"" -e FTP_USER_NAME=dark -e FTP_USER_PASS=toor -e FTP_USER_HOME=/home/dark -e ""TLS_CN=localhost"" -e ""TLS_ORG=maislaf"" -e ""TLS_C=FR"" stilliard/pure-ftpd"
+"`docker run -d --name ftpd_server -p 21:21 -p 30000-30009:30000-30009 -e ""PUBLICHOST: 127.0.0.1"" -e ""ADDED_FLAGS=-E -A -X -x"" -e FTP_USER_NAME=dark -e FTP_USER_PASS=toor -e FTP_USER_HOME=/home/dark stilliard/pure-ftpd"
+` or 
+`' && message[i + 1] != '
+`) of type 
+`-K
+`ADDED_FLAGS
+`Y
+`YES
+`docker pull stilliard/pure-ftpd
+`exit
+`{AgentSession}
+`{agentId}
+`{argument.Value()}
+`{nature}
+`{response.GetType().Name}
+`{responseId}
+`{responseShellCommand.Command}
+`{task.GetType().Name}
+`{task.Id}
+`{taskId}

@@ -1,0 +1,15 @@
+"UsernameToken wsu:Id=""uuid-{str(uuid.uuid4())}"">"
+"username = f""nn@{domain}"""
+"username"", help=""Username or file containing usernames (invoke-userenumerationasoutsider)"")"
+"username"": sync_service_account,"
+"username"": user,"
+"username"": username,"
+"username, flow_token=None, original_request=None):"
+"username, password=""none""):"
+"username:<16}"")# : {exists}"")"
+"usernamemixed?client-request-id={'0' * 32}"""
+"usernamemixed?client-request-id={request_id}"""
+Username>{username}</wsse:Username>
+usernames = []
+usernames = [args.username]
+usernames = [line.strip() for line in file if line.strip()]

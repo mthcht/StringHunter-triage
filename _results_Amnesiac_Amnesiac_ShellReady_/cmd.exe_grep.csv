@@ -1,0 +1,5 @@
+"cmd.exe /c powershell.exe -enc $B64ServerScript`"""""
+"cmd.exe /c powershell.exe -enc $b64ClientScript`"""""
+"cmd.exe /c powershell.exe -enc $b64ServerScript`"""""
+"cmd.exe /c powershell.exe -enc $b64ServerScript`""`"""""
+"cmd.exe /domain: /dc: /username: /password:fakepass /ptt /ticket:'"""

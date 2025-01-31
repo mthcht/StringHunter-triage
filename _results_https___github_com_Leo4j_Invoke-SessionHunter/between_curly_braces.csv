@@ -1,0 +1,38 @@
+"{ $_ -ne """" "
+"{ $_.Type -eq ""A"" "
+"{ $_.UserSession -like ""*$Hunt*"" "
+"{ $_.UserSession -like ""*$Hunt*"" -AND $_.AdmCount -eq $True -AND $_.Access -eq $True"
+"{$CheckSessionsAsAdmin = Invoke-WMIRemoting -ComputerName $Computer -Command ""klist sessions"""
+"{$CheckSessionsAsAdmin = Invoke-WMIRemoting -ComputerName $Computer -UserName $UserName -Password $Password -Command ""klist sessions"""
+"{$ErrorCheckpoint = ""ErrorCheckpoint"""
+"{$_ -ne ""$HostFQDN"""
+"{$_ -ne ""$env:computername"""
+"{$classExists = Get-WmiObject -Class $ClassID -ComputerName $ComputerName -List -Namespace ""root\cimv2"""
+"{$result.AdmCount = ""N/A"""
+"{$startProcess = Invoke-WmiMethod -ComputerName $ComputerName -Class Win32_Process -Name Create -ArgumentList (""powershell.exe -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -WindowStyle Hidden -EncodedCommand "" + $finalCommandBase64)"
+"{$startProcess = Invoke-WmiMethod -ComputerName $ComputerName -Class Win32_Process -Name Create -Credential $cred -ArgumentList (""powershell.exe -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -WindowStyle Hidden -EncodedCommand "" + $finalCommandBase64)"
+"{$wmiDataOutput = Get-WmiObject -Class $ClassID -ComputerName $ComputerName -Credential $cred -Filter ""$KeyID = '$GuidOutput'"""
+"{$wmiDataOutput = Get-WmiObject -Class $ClassID -ComputerName $ComputerName -Filter ""$KeyID = '$GuidOutput'"""
+"{([wmiclass]""\\$ComputerName\ROOT\CIMV2:$ClassID"").Delete()"
+"{-not ($_ -cmatch ""$env:computername"")"
+"{-not ($_ -match ""$env:computername"")"
+"{1,14"
+{ $_ -and $_.trim() 
+{ $_ -like '*svr hostname*' 
+{ Pipe = $runspace; Status = $runspace.BeginInvoke() 
+{$CheckAsAdmin = $True
+{$Domain = Get-WmiObject -Namespace root\cimv2 -Class Win32_ComputerSystem | Select Domain | Format-Table -HideTableHeaders | out-string | ForEach-Object { $_.Trim() 
+{$Domain = [System.Net.NetworkInformation.IPGlobalProperties]::GetIPGlobalProperties().DomainName.Trim()
+{$Process.Kill()
+{$Result = $Process.StandardOutput.ReadToEnd()
+{$_.AdmCount -eq $True -AND $_.Access -eq $True
+{$allresults = $allresults | Where-Object {$_.UserSession -ne $UserName
+{$matches = $null
+{$remoteRegistry = $Process.StandardOutput.ReadToEnd()
+{$result.AdmCount = AdminCount -UserName $tempusername -Domain $Domain
+{$wmiData = Set-WmiInstance -Class $ClassID -ComputerName $ComputerName
+{$wmiData = Set-WmiInstance -Class $ClassID -ComputerName $ComputerName -Credential $cred
+{OutputData = `$outputData; CommandStatus='Completed'
+{break
+{return $False
+{return $True

@@ -1,0 +1,643 @@
+"'    <xsl:copy><xsl:apply-templates select=""node()|@*""/></xsl:copy>"
+"'    <xsl:value-of select=""normalize-space(.)""/>"
+"'  <xsl:output indent=""yes""/>"
+"'  <xsl:strip-space elements=""*""/>"
+"'  <xsl:template match=""node()|@*"">"
+"'  <xsl:template match=""para[content-style][not(text())]"">"
+"' + document.getElementById(""search_form"").search_limit.value + "
+"' + document.getElementById(""search_form"").search_query.value + "
+"' + document.getElementById(""search_form"").search_type.value + "
+"' + document.getElementById(""sharepoint_form"").search_limit.value + "
+"' + document.getElementById(""sharepoint_form"").search_query.value + "
+"' })} ${new Date(messageJson.composetime).toLocaleTimeString([], { hour: "
+"'"" + row.data().name + """
+"'"" + row.data().template_name + """
+"'""], ""query"": {""queryString"": """
+"'""{}-[]\\/\"
+"'""}, ""from"": 0, ""size"": "
+"'#add_mfa_form #add_authenticator_app_container input[type=""radio""]"
+"'#add_mfa_form #add_security_key_container input[type=""radio""]"
+"'), "
+"').DataTable().column(""groups:name"").visible($("
+"').DataTable().column(""roles:name"").visible($("
+"').val(), $("
+"').val(),$("
+"');ee=e.TRUSTED_TYPES_POLICY,te=ee.createHTML("""")}else void 0===ee&&(ee=Z(G,c)),null!==ee&&""string""==typeof te&&(te=ee.createHTML(""""));i&&i(e),it=e}},ut=S({},[""mi"",""mo"",""mn"",""ms"",""mtext""]),mt=S({},[""foreignobject"",""desc"",""title"",""annotation-xml""]),pt=S({},[""title"",""style"",""font"",""a"",""script""]),ft=S({},[...L,...D,...O]),dt=S({},[...x,...k]),ht=function(e){let t=Q(e);t&&t.tagName||(t={namespaceURI:Ze,tagName:""template""});const n=f(e.tagName),o=f(t.tagName);return!!Qe[e.namespaceURI]&&(e.namespaceURI===Ke?t.namespaceURI===Ve?""svg""===n:t.namespaceURI===$e?""svg""===n&&(""annotation-xml""===o||ut[o]):Boolean(ft[n]):e.namespaceURI===$e?t.namespaceURI===Ve?""math""===n:t.namespaceURI===Ke?""math""===n&&mt[o]:Boolean(dt[n]):e.namespaceURI===Ve?!(t.namespaceURI===Ke&&!mt[o])&&(!(t.namespaceURI===$e&&!ut[o])&&(!dt[n]&&(pt[n]||!ft[n]))):!(""application/xhtml+xml""!==tt||!Qe[e.namespaceURI]))},gt=function(e){p(o.removed,{element:e});try{e.parentNode.removeChild(e)}catch(t){e.remove()}},Tt=function(e,t){try{p(o.removed,{attribute:t.getAttributeNode(e),from:t})}catch(e){p(o.removed,{attribute:null,from:t})}if(t.removeAttribute(e),""is""===e&&!ye[e])if(ke||Me)try{gt(t)}catch(e){}else try{t.setAttribute(e,"""")}catch(e){}},_t=function(e){let t=null,n=null;if(xe)e=""<remove></remove>""+e;else{const t=h(e,/^[\r\n\t ]+/);n=t&&t[0]}""application/xhtml+xml""===tt&&Ze===Ve&&(e="
+"');if(""function""!=typeof e.TRUSTED_TYPES_POLICY.createScriptURL)throw A("
+"', "
+"', ["
+"', encoding="
+"', filename="
+"', methods=["
+"', minute: "
+"',"
+"': ""Active"" if db_file.name.lower() == os.path.basename(app.config["
+"'<a class=""link-underline link-underline-opacity-0"" target=""_blank""></a>"
+"'<a href=""#"" class=""list-group-item list-group-item-action""></a>"
+"'<b class=""mb-1 text-truncate""></b>"
+"'<b class=""text-body-secondary""></b>"
+"'<b class=""text-danger-emphasis"">"
+"'<blockquote><strong>John Doe</strong> <small>01/01/2024, 12:00</small><p>Fake quote message here.</p>"
+"'<button class=""btn btn-outline-danger"" type=""button"" onclick=""return this.parentNode.parentNode.remove()"">Remove</button>"
+"'<button class=""btn btn-outline-danger"" type=""button"" onclick=""return this.parentNode.remove()"">Delete</button>"
+"'<button type=""button"" class=""btn-close"" data-bs-dismiss=""alert"" aria-label=""Close""></button>"
+"'<code class=""language-json"" style=""white-space: pre-wrap; word-break: break-all""></code>"
+"'<dd><pre style=""white-space: pre-wrap;"">"
+"'<div class=""card overflow-hidden"" style=""max-width: 75%""></div>"
+"'<div class=""card-body""></div>"
+"'<div class=""card-header text-body-secondary""></div>"
+"'<div class=""d-flex justify-content-between""></div>"
+"'<div class=""d-flex m-3""></div>"
+"'<div class=""d-flex""><i id=""members-icon"" class=""fi fi-rr-user icon-hover-change mx-1""></i> <i id=""info-icon"" class=""fi fi-rr-info icon-hover-change""></i></div>"
+"'<div class=""form-check""></div>"
+"'<div class=""input-group"">"
+"'<div class=""input-group""></div>"
+"'<div class=""p-2""></div>"
+"'<div class=""raw-conversation"" hidden></div>"
+"'<div class=""raw-message"" hidden></div>"
+"'<div class=""toast"" role=""alert"" aria-live=""assertive"" aria-atomic=""true""></div>"
+"'<div class=""toast-body""></div>"
+"'<div class=""toast-header""><small>Just now</small><button type=""button"" class=""btn-close"" data-bs-dismiss=""toast"" aria-label=""Close""></button></div>"
+"'<dl style=""word-wrap: break-word; word-break: break-all; max-width:100%"">"
+"'<html xmlns=""http://www.w3.org/1999/xhtml""><head></head><body>"
+"'<i class=""fi fi-br-check"" style=""cursor: pointer""></i>"
+"'<i class=""fi fi-br-download"" style=""cursor: pointer""></i>"
+"'<i class=""fi fi-br-link-alt"" style=""cursor: pointer""></i>"
+"'<i class=""fi fi-br-question"" style=""cursor: pointer""></i>"
+"'<i class=""fi fi-rr-add text-secondary""></i>"
+"'<i class=""fi fi-rr-add"" style=""cursor: pointer""></i>"
+"'<i class=""fi fi-rr-copy-alt float-end p-2 ms-n2"" style=""cursor: pointer""></i>"
+"'<i class=""fi fi-rr-copy-alt"" style=""cursor: pointer""></i>"
+"'<i class=""fi fi-rr-document""></i>"
+"'<i class=""fi fi-rr-duplicate"" style=""cursor: pointer""></i>"
+"'<i class=""fi fi-rr-member-search"" style=""cursor: pointer""></i>"
+"'<i class=""fi fi-rr-plus"" style=""cursor: pointer""></i>"
+"'<i class=""fi fi-rr-quote-right""/></i>"
+"'<i class=""fi fi-rr-replace"" style=""cursor: pointer""></i>"
+"'<i class=""fi fi-rr-trash text-secondary""></i>"
+"'<i class=""fi fi-rr-trash"" style=""cursor: pointer""></i>"
+"'<i class=""fi fi-sr-folder-open"" style=""cursor: pointer""></i>"
+"'<i id=""info-icon"" class=""fi fi-rr-info icon-hover-change ps-2"" style=""vertical-align: -0.15em; cursor: pointer""></i>"
+"'<input type=""text"" placeholder=""$$example_id$$"" class=""form-control variable_name"">"
+"'<input type=""text"" placeholder=""01234567-89ab-cdef-0123-456789abcdef"" class=""form-control variable_value"">"
+"'<input type=""text"" placeholder=""Custom"" class=""form-control header_value"">"
+"'<input type=""text"" placeholder=""X-Header"" class=""form-control header_name"">"
+"'<li class=""list-group-item""></li>"
+"'<pre style=""white-space: pre-wrap;""></pre>"
+"'<small class=""text-body-secondary text-truncate""></small>"
+"'<small class=""text-body-secondary""></small>"
+"'<span class=""input-group-text""></span>"
+"'<span class=""input-group-text"">Header</span>"
+"'<span class=""input-group-text"">Variable</span>"
+"'<span class=""text-light-emphasis""></span>"
+"'<strong class=""me-auto""></strong>"
+"'<xsl:stylesheet xmlns:xsl=""http://www.w3.org/1999/XSL/Transform"">"
+"'CREATE TABLE accesstokens (id INTEGER PRIMARY KEY AUTOINCREMENT, stored_at TEXT, issued_at TEXT, expires_at TEXT, description TEXT, user TEXT, resource TEXT, accesstoken TEXT)"
+"'CREATE TABLE devicecodes (id INTEGER PRIMARY KEY AUTOINCREMENT, generated_at INTEGER, expires_at INTEGER, user_code TEXT, device_code TEXT, interval INTEGER, client_id TEXT, status TEXT, last_poll INTEGER)"
+"'CREATE TABLE mfa_otp (id INTEGER PRIMARY KEY AUTOINCREMENT, stored_at TEXT, secret_key TEXT, account_name INTEGER, description TEXT)"
+"'CREATE TABLE refreshtokens (id INTEGER PRIMARY KEY AUTOINCREMENT, stored_at TEXT, description TEXT, user TEXT, tenant_id TEXT, resource TEXT, foci INTEGER, refreshtoken TEXT)"
+"'CREATE TABLE request_templates (id INTEGER PRIMARY KEY AUTOINCREMENT, template_name TEXT, uri TEXT, method TEXT, request_type TEXT, body TEXT, headers TEXT, variables TEXT)"
+"'CREATE TABLE settings (setting TEXT UNIQUE, value TEXT)"
+"'CREATE TABLE teams_settings (access_token_id INTEGER PRIMARY KEY, skypeToken TEXT, skype_id TEXT, issued_at INTEGER, expires_at INTEGER, teams_settings_raw TEXT)"
+"'TRUSTED_TYPES_POLICY configuration option must provide a ""createHTML"" hook."
+"'TRUSTED_TYPES_POLICY configuration option must provide a ""createScriptURL"" hook."
+"'] if ""accesstoken"" in request.form and request.form["
+"'] if ""client_id"" in request.form and request.form["
+"'] if ""description"" in request.form and request.form["
+"'] if ""resource"" in request.form and request.form["
+"'], [3, "
+"'{""requests"": [{""entityTypes"": ["""
+"'{""requests"": [{""entityTypes"": [""site""], ""query"": {""queryString"": """
+' 
+'  </xsl:template>
+' && storedTheme !== 
+' && window.matchMedia(
+' : 
+' WHERE setting = 
+' and 
+' at 
+' href=
+' in request_json else 
+' in response.headers else 
+' or 
+' to 
+'#
+'#access_token_info_clientid
+'#access_token_info_expires
+'#access_token_info_resource
+'#access_token_info_scope
+'#access_token_info_user
+'#access_token_modal
+'#access_token_modal_table
+'#access_tokens
+'#add_mfa_method_modal
+'#alert_placeholder
+'#api_version input:radio:checked
+'#available_auth_methods_table
+'#bd-theme
+'#client_id_input_side
+'#conversation_info_modal
+'#conversation_members_modal
+'#customize_properties
+'#databases
+'#delete_mfa_method_modal
+'#device_code_form #client_id
+'#device_code_form #resource
+'#device_codes
+'#dt-error-message-button-disabled
+'#dt-error-message-button-enabled
+'#entra_id_users_table
+'#entra_user_properties
+'#graphspy_otp_table
+'#header_fields
+'#membership_count
+'#message_form #message_text
+'#new_conversation_form #new_conversation_message_text
+'#new_conversation_modal
+'#new_conversation_modal #selected_users
+'#ngcmfa_checkbox
+'#refresh_token_info_description
+'#refresh_token_info_foci
+'#refresh_token_info_resource
+'#refresh_token_info_tenant_id
+'#refresh_token_info_user
+'#refresh_token_modal
+'#refresh_token_modal_table
+'#refresh_tokens
+'#request_template_modal
+'#request_templates
+'#resource_input_side
+'#response_header_table
+'#response_table
+'#send_message_switch
+'#teams_message_info_modal
+'#teams_users_table
+'#toast_placeholder
+'#user_details_api_permissions_table
+'#user_details_app_role_assignment_table
+'#user_details_full
+'#user_details_group_membership_table
+'#user_details_overview
+'#user_details_owned_devices_table
+'#user_details_role_membership_table
+'#variable_fields
+'${access_token_id}
+'${active_access_token}
+'${active_refresh_token}
+'${email}
+'${entraUserDetails.displayName}
+'${lastConversationId}
+'${messageTruncated}
+'${method}
+'${response.responseText}
+'${response_json.Type}
+'${row.data().name}
+'${userPrincipalName}
+'${verificationCode}
+'%0000000c-0000-0000-c000-000000000000%
+'%api.spaces.skype.com%
+'': [
+'(prefers-color-scheme: dark)
+') ? $(
+') if is_valid_uuid(tenant.strip(
+').addClass(
+').addEventListener(
+').append($(
+').css({ 
+').database.value);$(
+').is(
+').matches ? 
+').modal(
+').on(
+').prop(
+').summernote(
+').toggleClass(
+')[-1]}
+'. Received response status {batch_response[
+'. Received response status {response[
+'../
+'.db
+'.dropdown-menu
+'.modal-body
+'/
+'/access_tokens
+'/api/add_access_token
+'/api/add_refresh_token
+'/api/generate_device_code
+'/api/generic_graph
+'/api/generic_graph_post
+'/api/generic_graph_upload
+'/api/get_available_authentication_info
+'/api/list_access_tokens
+'/api/list_databases
+'/api/list_device_codes
+'/api/list_graphspy_otp
+'/api/list_refresh_tokens
+'/api/list_request_templates
+'/api/refresh_to_access_token
+'/refresh_tokens
+'0000000c-0000-0000-c000-000000000000
+'100px
+'10px
+'120px
+'145px
+'150px
+'170px
+'175px
+'2
+'2-digit
+'20px
+'3
+'320px
+'330px
+'370px
+'4
+'40px
+'450px
+'50px
+'60px
+'80px
+':
+': 
+': 150 + 
+':checked
+':visible
+';
+'</code></dd>
+'</div>
+'</dl>
+'</pre></dd>
+'</xsl:stylesheet>
+'<code></code>
+'<dd></dd>
+'<dd><code>
+'<div>
+'<div></div>
+'<dl>
+'<dt>Decoded Token:</dt>
+'<dt>Device Code:</dt>
+'<dt>Raw File Info:</dt>
+'<dt>Raw Token:</dt>
+'<dt>Request Template:</dt>
+'<dt>User Details:</dt>
+'<pre></pre>
+'<span hidden></span>
+'<span></span>
+'AMSImage
+'CREATED
+'CanAdd
+'Columns
+'Content-Type
+'Created
+'DOMContentLoaded
+'Display Name
+'Enabled
+'ErrorCode
+'Export
+'Fake quote
+'File Name
+'File Size
+'GET
+'GraphSpy
+'Groups
+'IsRegistered
+'Last Modified
+'Mail
+'MethodName
+'Mobile
+'OneDrive.html
+'POLLING
+'POST
+'RedByte1337
+'Roles
+'SharePoint.html
+'SharePointDrives.html
+'SharePointSites.html
+'Synced
+'TEXTAREA
+'Type
+'URL
+'User Principal Name
+'[data-bs-theme-value]
+'\n
+'] = json.loads( request_templates[i][
+'] = json.loads(request_template[
+'] = json.loads(request_templates[i][
+'] == 200 and batch_response[
+'] == 200 and response[
+'] if 
+'])[
+'][
+']}
+']} - {row[
+']} and response type {batch_response[
+']} and response type {response[
+']}. Response body: \n{response[
+']}] {response.json()[
+'__main__
+'_blank
+'_database
+'a.list-group-item
+'access_token_id
+'access_token_modal.html
+'access_tokens
+'access_tokens.html
+'accesstoken
+'accountEnabled
+'account_name
+'action-control
+'active
+'active-control
+'active_access_token_id
+'active_refresh_token_id
+'add-control
+'api.spaces.skype.com
+'api_version
+'application/xml
+'approximateLastSignInDateTime
+'aria-pressed
+'asc
+'authenticatiorAppOptions
+'auto
+'auto_reload_messages_tooltip
+'azure_region
+'bg-danger-subtle
+'bg-primary-subtle
+'bg-success-subtle
+'body
+'bold
+'buttons
+'captcha_solution
+'challenge_id
+'challenge_type
+'change
+'chatService
+'checked
+'clear
+'click
+'clientId
+'client_id
+'client_type
+'code
+'codeview
+'collection
+'color
+'colvis
+'conversation_id
+'conversation_link
+'copy
+'copy-control
+'country_code
+'createdDateTime
+'css/style.css
+'csv
+'custom_requests
+'custom_requests.html
+'customize_properties
+'customize_properties_tooltip
+'dark
+'data
+'data-bs-theme
+'data-bs-theme-value
+'database
+'default-hide
+'delete-control
+'delete_radio_options
+'desc
+'description
+'device_codes
+'device_codes.html
+'device_pin
+'direct_message
+'disabled
+'displayName
+'div#modal_container
+'div.modal-body
+'div.modal-dialog
+'div.note-editable
+'dropdown
+'dt-control
+'duplicate-control
+'editor.pasteHTML
+'email
+'empty
+'enabled
+'entra_users
+'entra_users.html
+'error
+'error.dt
+'error_description
+'excel
+'expires_at
+'false
+'fi-br-compress
+'fi-br-expand
+'file
+'foci
+'font
+'fontname
+'form
+'generated_at
+'generic_search
+'generic_search.html
+'graph_spy_db_folder
+'graph_spy_db_path
+'graph_spy_folder
+'graph_uri
+'group_chat
+'groups-control
+'h1.modal-title
+'header
+'headers
+'help
+'hide
+'https://cdn-uicons.flaticon.com/2.4.0/uicons-bold-rounded/css/uicons-bold-rounded.css
+'https://cdn-uicons.flaticon.com/2.4.0/uicons-regular-rounded/css/uicons-regular-rounded.css
+'https://cdn-uicons.flaticon.com/2.4.0/uicons-solid-rounded/css/uicons-solid-rounded.css
+'https://github.com/RedByte1337/GraphSpy
+'https:\/\/emea\.ng\.msg\.teams\.microsoft\.com\/v1\/threads\/(.*)$
+'i#copy-icon
+'i#expand-icon
+'i#info-icon
+'i#members-icon
+'id
+'image_uri
+'input
+'insert
+'issued_at
+'italic
+'itemtype
+'js/functions.js
+'js/purify.min.js
+'js/theme.js
+'lastModifiedDateTime
+'last_modified
+'last_poll
+'layout.html
+'light
+'link
+'mail
+'max-height
+'members
+'membership_count_tooltip
+'message_content
+'method
+'mfa
+'mfa.html
+'mobilePhone
+'modal-fullscreen
+'modal-lg
+'modal-md
+'modal-sm
+'modal-xl
+'mri
+'name
+'nav-azure-disabled
+'ngcmfa
+'ngcmfa_tooltip
+'none
+'ol
+'onPremisesSyncEnabled
+'onedrive
+'operatingSystem
+'outlook
+'outlook.html
+'para
+'paragraph
+'phone_number
+'phone_type
+'phone_verify_options
+'placeholder-control
+'profileType
+'px
+'quote
+'r
+'recent_files
+'recent_files.html
+'refresh_token_id
+'refresh_token_modal.html
+'refresh_tokens
+'refresh_tokens.html
+'refreshtoken
+'regionGtms
+'request_type
+'requirements.txt
+'resolve_conversation_names_tooltip
+'resource
+'resource.createdBy.user.displayName
+'resource.createdDateTime
+'resource.displayName
+'resource.lastModifiedDateTime
+'resource.name
+'resource.webUrl
+'resourceDisplayName
+'resourceId
+'response_status_code
+'response_text
+'response_type
+'schema_version
+'scope
+'secret_key
+'securityEnabled
+'securityKeyMethod
+'security_info_type
+'select-page
+'select.dt deselect.dt
+'settings.html
+'shared_with_me
+'shared_with_me.html
+'sharepoint
+'sharepoint_drives
+'sharepoint_sites
+'short
+'show
+'show.bs.dropdown
+'show_all_tooltip
+'shown.bs.modal
+'size
+'skypeToken
+'skype_id
+'span#button_text
+'span.spinner-border
+'src
+'state
+'static
+'static/**/*
+'status
+'stored_at
+'style
+'stylesheet
+'summary
+'table
+'table.dataTable
+'table_error_messages
+'td.action-control
+'td.active-control
+'td.add-control
+'td.copy-control
+'td.delete-control
+'td.dt-control
+'td.duplicate-control
+'td.groups-control
+'td:nth-child(2)
+'teams
+'teams.html
+'teamsAndChannelsService
+'teams_settings_raw
+'template_id
+'template_name
+'templates/*
+'tenant_domain
+'tenant_id
+'text
+'text-danger-emphasis
+'text-primary-emphasis
+'text-success-emphasis
+'text/html
+'th:nth-child(n+3)
+'theme
+'tr
+'true
+'type
+'ul
+'underline
+'upload_uri
+'uri
+'use strict
+'user
+'userPrincipalName
+'userType
+'user_agent
+'user_code
+'user_id
+'utf-8
+'value
+'variables
+'verification_context
+'verification_data
+'version.txt
+'view
+'webUrl
+'width
+'{add_graphspy_otp_response}
+'{conversation_id}
+'{database_name}
+'{database}
+'{db_path}
+'{existing_request_template[
+'{graph_spy_db_folder}
+'{graph_spy_db_path}
+'{graph_spy_folder}
+'{key_description}
+'{new_path.split(
+'{request_type}
+'{sessionCtx}
+'{state}
+'{template_id}
+'{template_name}
+'{type(headers)}
+'{type(variables)}
+'{user_agent}
+'{user_id}
+'{user_id} not found
+'}]}

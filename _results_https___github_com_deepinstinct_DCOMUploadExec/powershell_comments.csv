@@ -1,0 +1,6 @@
+	# remove imports of RGiesecke.DllExport.targets from this project "
+	# remove the old stuff in the DllExports folder from previous versions, (will check that only known files are in it)"
+	# remove the properties DllExportAttributeFullName and DllExportAttributeAssemblyName"
+"	
+"
+# change the reference to RGiesecke.DllExport.Metadata.dll to not be copied locally"

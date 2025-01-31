@@ -1,0 +1,11 @@
+"fprintf(stderr, ""Decryption failed\n"");"
+"fprintf(stderr, ""Failed to initialize libsodium\n"");"
+"printf(""1. Proceed with decryption\n"");"
+"printf(""2. Quit\n"");"
+"printf(""Enter your choice: "");"
+"printf(""Menu:\n"");"
+"printf(""\n\n"");"
+"printf(GREEN ""[+] "" RESET msg ""\n"", ##__VA_ARGS__)"
+"printf(PURPLE ""[-] "" RESET msg ""\n"", ##__VA_ARGS__)"
+"printf(YELLOW ""[i] "" RESET msg ""\n"", ##__VA_ARGS__)"
+printf(YELLOW  // Set text color to purple

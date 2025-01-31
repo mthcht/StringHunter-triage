@@ -1,0 +1,11 @@
+{azurerm_windows_virtual_machine.main.public_ip_address
+{local.public_ip
+{path.root
+{var.admin_pass
+{var.admin_user
+{var.base_name
+{var.host_name
+{var.victim_user
+{var.vm_size
+{{ host_name 
+{{ victim_user 

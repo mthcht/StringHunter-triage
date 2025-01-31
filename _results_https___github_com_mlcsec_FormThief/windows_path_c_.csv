@@ -1,0 +1,7 @@
+"C:\Tools\CiscoAnyConnect.exe --assemblyargs ""target.vpn.hostname"""
+"C:\Tools\KeePass.exe --assemblyargs ""C:\path\to\target\passwords.kdbx"""
+"C:\Tools\LastPass.exe --assemblyargs ""victim@domain.com"""
+"C:\Tools\OpenVPN.exe --assemblyargs ""target.vpn.profile"""
+"C:\Tools\wpfRunner.exe --assemblyargs ""victim@domain.com"""
+"C:\path\to\target\passwords.kdbx"""
+C:\ProgramData\Cisco\Cisco AnyConnect Secure Mobility Client\Profile\` should also contain available hostnames/gateways for the host | Identify the current connection gateway -> kill process -> pop new auth dialog with identified gateway |

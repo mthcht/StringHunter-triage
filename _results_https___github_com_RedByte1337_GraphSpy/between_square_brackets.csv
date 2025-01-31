@@ -1,0 +1,337 @@
+"[""!doctype"""
+"[""#text"""
+"[""@microsoft.graph.downloadUrl"""
+"[""@odata.nextLink"""
+"[""@odata.type"""
+"[""AccountName"""
+"[""Authorization"""
+"[""CaptchaSolved"""
+"[""Content-Type"""
+"[""Data"""
+"[""Deleted"""
+"[""ErrorCode"""
+"[""Location"""
+"[""MobilePhone"", ""AltMobilePhone"", ""OfficePhone"""
+"[""MobilePhone"", ""AltMobilePhone"", ""OfficePhone"", ""Email"""
+"[""MobilePhone_call"", ""MobilePhone_sms"", ""AltMobilePhone"", ""OfficePhone"""
+"[""MobilePhone_sms"", ""MobilePhone_call"", ""AltMobilePhone"", ""OfficePhone"""
+"[""OriginalArrivalTime"""
+"[""Retry-After"""
+"[""RichText/Html"", ""Text"""
+"[""SecretKey"""
+"[""User-Agent"""
+"[""VerificationContext"""
+"[""a"",""abbr"",""acronym"",""address"",""area"",""article"",""aside"",""audio"",""b"",""bdi"",""bdo"",""big"",""blink"",""blockquote"",""body"",""br"",""button"",""canvas"",""caption"",""center"",""cite"",""code"",""col"",""colgroup"",""content"",""data"",""datalist"",""dd"",""decorator"",""del"",""details"",""dfn"",""dialog"",""dir"",""div"",""dl"",""dt"",""element"",""em"",""fieldset"",""figcaption"",""figure"",""font"",""footer"",""form"",""h1"",""h2"",""h3"",""h4"",""h5"",""h6"",""head"",""header"",""hgroup"",""hr"",""html"",""i"",""img"",""input"",""ins"",""kbd"",""label"",""legend"",""li"",""main"",""map"",""mark"",""marquee"",""menu"",""menuitem"",""meter"",""nav"",""nobr"",""ol"",""optgroup"",""option"",""output"",""p"",""picture"",""pre"",""progress"",""q"",""rp"",""rt"",""ruby"",""s"",""samp"",""section"",""select"",""shadow"",""small"",""source"",""spacer"",""span"",""strike"",""strong"",""style"",""sub"",""summary"",""sup"",""table"",""tbody"",""td"",""template"",""textarea"",""tfoot"",""th"",""thead"",""time"",""tr"",""track"",""tt"",""u"",""ul"",""var"",""video"",""wbr"""
+"[""accent"",""accentunder"",""align"",""bevelled"",""close"",""columnsalign"",""columnlines"",""columnspan"",""denomalign"",""depth"",""dir"",""display"",""displaystyle"",""encoding"",""fence"",""frame"",""height"",""href"",""id"",""largeop"",""length"",""linethickness"",""lspace"",""lquote"",""mathbackground"",""mathcolor"",""mathsize"",""mathvariant"",""maxsize"",""minsize"",""movablelimits"",""notation"",""numalign"",""open"",""rowalign"",""rowlines"",""rowspacing"",""rowspan"",""rspace"",""rquote"",""scriptlevel"",""scriptminsize"",""scriptsizemultiplier"",""selection"",""separator"",""separators"",""stretchy"",""subscriptshift"",""supscriptshift"",""symmetric"",""voffset"",""width"",""xmlns"""
+"[""accent-height"",""accumulate"",""additive"",""alignment-baseline"",""ascent"",""attributename"",""attributetype"",""azimuth"",""basefrequency"",""baseline-shift"",""begin"",""bias"",""by"",""class"",""clip"",""clippathunits"",""clip-path"",""clip-rule"",""color"",""color-interpolation"",""color-interpolation-filters"",""color-profile"",""color-rendering"",""cx"",""cy"",""d"",""dx"",""dy"",""diffuseconstant"",""direction"",""display"",""divisor"",""dur"",""edgemode"",""elevation"",""end"",""fill"",""fill-opacity"",""fill-rule"",""filter"",""filterunits"",""flood-color"",""flood-opacity"",""font-family"",""font-size"",""font-size-adjust"",""font-stretch"",""font-style"",""font-variant"",""font-weight"",""fx"",""fy"",""g1"",""g2"",""glyph-name"",""glyphref"",""gradientunits"",""gradienttransform"",""height"",""href"",""id"",""image-rendering"",""in"",""in2"",""k"",""k1"",""k2"",""k3"",""k4"",""kerning"",""keypoints"",""keysplines"",""keytimes"",""lang"",""lengthadjust"",""letter-spacing"",""kernelmatrix"",""kernelunitlength"",""lighting-color"",""local"",""marker-end"",""marker-mid"",""marker-start"",""markerheight"",""markerunits"",""markerwidth"",""maskcontentunits"",""maskunits"",""max"",""mask"",""media"",""method"",""mode"",""min"",""name"",""numoctaves"",""offset"",""operator"",""opacity"",""order"",""orient"",""orientation"",""origin"",""overflow"",""paint-order"",""path"",""pathlength"",""patterncontentunits"",""patterntransform"",""patternunits"",""points"",""preservealpha"",""preserveaspectratio"",""primitiveunits"",""r"",""rx"",""ry"",""radius"",""refx"",""refy"",""repeatcount"",""repeatdur"",""restart"",""result"",""rotate"",""scale"",""seed"",""shape-rendering"",""specularconstant"",""specularexponent"",""spreadmethod"",""startoffset"",""stddeviation"",""stitchtiles"",""stop-color"",""stop-opacity"",""stroke-dasharray"",""stroke-dashoffset"",""stroke-linecap"",""stroke-linejoin"",""stroke-miterlimit"",""stroke-opacity"",""stroke"",""stroke-width"",""style"",""surfacescale"",""systemlanguage"",""tabindex"",""targetx"",""targety"",""transform"",""transform-origin"",""text-anchor"",""text-decoration"",""text-rendering"",""textlength"",""type"",""u1"",""u2"",""unicode"",""values"",""viewbox"",""visibility"",""version"",""vert-adv-y"",""vert-origin-x"",""vert-origin-y"",""width"",""word-spacing"",""wrap"",""writing-mode"",""xchannelselector"",""ychannelselector"",""x"",""x1"",""x2"",""xmlns"",""y"",""y1"",""y2"",""z"",""zoomandpan"""
+"[""accept"",""action"",""align"",""alt"",""autocapitalize"",""autocomplete"",""autopictureinpicture"",""autoplay"",""background"",""bgcolor"",""border"",""capture"",""cellpadding"",""cellspacing"",""checked"",""cite"",""class"",""clear"",""color"",""cols"",""colspan"",""controls"",""controlslist"",""coords"",""crossorigin"",""datetime"",""decoding"",""default"",""dir"",""disabled"",""disablepictureinpicture"",""disableremoteplayback"",""download"",""draggable"",""enctype"",""enterkeyhint"",""face"",""for"",""headers"",""height"",""hidden"",""high"",""href"",""hreflang"",""id"",""inputmode"",""integrity"",""ismap"",""kind"",""label"",""lang"",""list"",""loading"",""loop"",""low"",""max"",""maxlength"",""media"",""method"",""min"",""minlength"",""multiple"",""muted"",""name"",""nonce"",""noshade"",""novalidate"",""nowrap"",""open"",""optimum"",""pattern"",""placeholder"",""playsinline"",""poster"",""preload"",""pubdate"",""radiogroup"",""readonly"",""rel"",""required"",""rev"",""reversed"",""role"",""rows"",""rowspan"",""spellcheck"",""scope"",""selected"",""shape"",""size"",""sizes"",""span"",""srclang"",""start"",""src"",""srcset"",""step"",""style"",""summary"",""tabindex"",""title"",""translate"",""type"",""usemap"",""valign"",""value"",""width"",""wrap"",""xmlns"",""slot"""
+"[""access_token"""
+"[""add_security_key_status"""
+"[""alt"",""class"",""for"",""id"",""label"",""name"",""pattern"",""placeholder"",""role"",""summary"",""title"",""value"",""style"",""xmlns"""
+"[""amr_values"""
+"[""animate"",""color-profile"",""cursor"",""discard"",""font-face"",""font-face-format"",""font-face-name"",""font-face-src"",""font-face-uri"",""foreignobject"",""hatch"",""hatchpath"",""mesh"",""meshgradient"",""meshpatch"",""meshrow"",""missing-glyph"",""script"",""set"",""solidcolor"",""unknown"",""use"""
+"[""annotation-xml"",""audio"",""colgroup"",""desc"",""foreignobject"",""head"",""iframe"",""math"",""mi"",""mn"",""mo"",""ms"",""mtext"",""noembed"",""noframes"",""noscript"",""plaintext"",""script"",""style"",""svg"",""template"",""thead"",""title"",""video"",""xmp"""
+"[""anonymous"", ""anyone"""
+"[""app_displayname"""
+"[""appid"""
+"[""application/xhtml+xml"",""text/html"""
+"[""aud"""
+"[""audio"",""video"",""img"",""source"",""image"",""track"""
+"[""authenticator"""
+"[""authorization_endpoint"""
+"[""body"""
+"[""canary"""
+"[""captcha"""
+"[""client_id"""
+"[""customize_properties"""
+"[""data"""
+"[""device_code"""
+"[""device_code_thread"""
+"[""direct_message"", ""group_chat"""
+"[""enabled"", ""disabled"""
+"[""exp"""
+"[""expand_memberships"""
+"[""expires_at"""
+"[""expires_in"""
+"[""external"""
+"[""feBlend"",""feColorMatrix"",""feComponentTransfer"",""feComposite"",""feConvolveMatrix"",""feDiffuseLighting"",""feDisplacementMap"",""feDistantLight"",""feDropShadow"",""feFlood"",""feFuncA"",""feFuncB"",""feFuncG"",""feFuncR"",""feGaussianBlur"",""feImage"",""feMerge"",""feMergeNode"",""feMorphology"",""feOffset"",""fePointLight"",""feSpecularLighting"",""feSpotLight"",""feTile"",""feTurbulence"""
+"[""foci"""
+"[""foreignobject"",""desc"",""title"",""annotation-xml"""
+"[""graphspy=GraphSpy.GraphSpy:main"""
+"[""html"",""head"",""body"""
+"[""iat"""
+"[""id"""
+"[""idtyp"""
+"[""interval"""
+"[""last_poll"""
+"[""maction"",""maligngroup"",""malignmark"",""mlongdiv"",""mscarries"",""mscarry"",""msgroup"",""mstack"",""msline"",""msrow"",""semantics"",""annotation"",""annotation-xml"",""mprescripts"",""none"""
+"[""math"",""menclose"",""merror"",""mfenced"",""mfrac"",""mglyph"",""mi"",""mlabeledtr"",""mmultiscripts"",""mn"",""mo"",""mover"",""mpadded"",""mphantom"",""mroot"",""mrow"",""ms"",""mspace"",""msqrt"",""mstyle"",""msub"",""msup"",""msubsup"",""mtable"",""mtd"",""mtext"",""mtr"",""munder"",""munderover"",""mprescripts"""
+"[""memberName"""
+"[""members"""
+"[""message_content"""
+"[""messages"""
+"[""mi"",""mo"",""mn"",""ms"",""mtext"""
+"[""oid"""
+"[""otp_code_id"""
+"[""primary"", ""secondary"", ""success"", ""danger"", ""warning"", ""info"", ""light"", ""dark"""
+"[""refresh_token"""
+"[""requestData"""
+"[""resource"""
+"[""responses"""
+"[""scope"""
+"[""serverChallenge"""
+"[""sessionCtx"""
+"[""setting"""
+"[""skipToken"""
+"[""skypeToken"""
+"[""skype_id"""
+"[""skypeid"""
+"[""status"""
+"[""store_refresh_token"""
+"[""svg"",""a"",""altglyph"",""altglyphdef"",""altglyphitem"",""animatecolor"",""animatemotion"",""animatetransform"",""circle"",""clippath"",""defs"",""desc"",""ellipse"",""filter"",""font"",""g"",""glyph"",""glyphref"",""hkern"",""image"",""line"",""lineargradient"",""marker"",""mask"",""metadata"",""mpath"",""path"",""pattern"",""polygon"",""polyline"",""radialgradient"",""rect"",""stop"",""style"",""switch"",""symbol"",""text"",""textpath"",""title"",""tref"",""tspan"",""view"",""vkern"""
+"[""tbody"""
+"[""text"", ""json"", ""urlencoded"", ""xml"""
+"[""text"", ""urlencoded"", ""xml"""
+"[""tid"""
+"[""title"",""style"",""font"",""a"",""script"""
+"[""tokens"""
+"[""topic"""
+"[""unique_name"""
+"[""upn"""
+"[""userDisplayName"""
+"[""userId"""
+"[""user_code"""
+"[""users"""
+"[""value"""
+"[""xlink:href"",""xml:id"",""xlink:title"",""xml:space"",""xmlns:xlink"""
+"[$e,Ke,Ve"
+"['color', ['color'"
+"['font', ['bold', 'italic', 'underline', 'clear'"
+"['fontname', ['fontname'"
+"['insert', ['link', 'quote'"
+"['modal-sm', 'modal-md', 'modal-lg', 'modal-xl'"
+"['para', ['ul', 'ol', 'paragraph'"
+"['static/**/*','templates/*','version.txt'"
+"['style', ['style'"
+"['table', ['table'"
+"['view', ['codeview', 'help'"
+"[...$("".toast"")"
+"[...I,...U,...P,...F"
+"[...L,...D,...O"
+"[...x,...k"
+"[1,2"
+"[200, 201"
+"[200, 204"
+"[3, 'desc'"
+"[<span id=""response_status_code""></span>"
+"[[2, 'asc'"
+"[[2, 'desc'"
+"[[3, 'desc'"
+"[[4, 'desc'"
+"[[5, 'asc'"
+"[[5, 'desc'"
+"[], { dateStyle: 'short' })} ${new Date(messageJson.composetime).toLocaleTimeString(["
+"[],!0===Be.html&&(S(Te,v),S(ye,I)),!0===Be.svg&&(S(Te,L),S(ye,U),S(ye,F)),!0===Be.svgFilters&&(S(Te,D),S(ye,U),S(ye,F)),!0===Be.mathMl&&(S(Te,x),S(ye,P),S(ye,F))),e.ADD_TAGS&&(Te===_e&&(Te=w(Te)),S(Te,e.ADD_TAGS,rt)),e.ADD_ATTR&&(ye===Ee&&(ye=w(ye)),S(ye,e.ADD_ATTR,rt)),e.ADD_URI_SAFE_ATTR&&S(Xe,e.ADD_URI_SAFE_ATTR,rt),e.FORBID_CONTENTS&&(We===Ge&&(We=w(We)),S(We,e.FORBID_CONTENTS,rt)),He&&(Te[""#text"""
+"[],!n||!n.document||9!==n.document.nodeType)return o.isSupported=!1,o;let{document:r}=n;const a=r,c=a.currentScript,{DocumentFragment:s,HTMLTemplateElement:N,Node:b,Element:R,NodeFilter:H,NamedNodeMap:z=n.NamedNodeMap||n.MozNamedAttrMap,HTMLFormElement:B,DOMParser:W,trustedTypes:G}=n,j=R.prototype,X=C(j,""cloneNode""),$=C(j,""nextSibling""),J=C(j,""childNodes""),Q=C(j,""parentNode"");if(""function""==typeof N){const e=r.createElement(""template"");e.content&&e.content.ownerDocument&&(r=e.content.ownerDocument)}let ee,te="""";const{implementation:ne,createNodeIterator:oe,createDocumentFragment:re,getElementsByTagName:ie}=r,{importNode:ae}=a;let le={};o.isSupported=""function""==typeof e&&""function""==typeof Q&&ne&&void 0!==ne.createHTMLDocument;const{MUSTACHE_EXPR:ce,ERB_EXPR:se,TMPLIT_EXPR:ue,DATA_ATTR:me,ARIA_ATTR:pe,IS_SCRIPT_OR_DATA:fe,ATTR_WHITESPACE:de,CUSTOM_ELEMENT:he}=K;let{IS_ALLOWED_URI:ge}=K,Te=null;const _e=S({},[...v,...L,...D,...x,...M"
+"[],""string""==typeof e&&(ze=!1),ze){if(e.nodeName){const t=rt(e.nodeName);if(!Te[t"
+"[],p(le[e"
+"[]\\/\' ') if is_valid_uuid(tenant.strip('""{}-["
+"[ce,se,ue"
+"[data-bs-theme-value=""${theme}"""
+"[existing_request_template[""id"""
+"[header.getElementsByClassName(""header_name"")[0"
+"[o,r"
+"[os.path.sep, os.path.altsep"
+"[response[""body"""
+"[response[""id"""
+"[row.update(expires_at=f""{datetime.fromtimestamp(row['expires_at'"
+"[row.update(generated_at=f""{datetime.fromtimestamp(row['generated_at'"
+"[row.update(last_poll=f""{datetime.fromtimestamp(row['last_poll'"
+"[type=""radio"""
+"[variable.getElementsByClassName(""variable_name"")[0"
+"[{""entityTypes"": [""' + document.getElementById(""search_form"").search_type.value + '"""
+"[{""entityTypes"": [""site"""
+"[{**member, ""isCurrentUser"": member[""mri"""
+"[{**message, ""isFromMe"": message[""from"""
+"[{setting[""setting"""
+[![PyPi Version
+[![Twitter
+[${conversation.threadProperties.threadType}
+[${json.error.code}
+[%(funcName)s():%(lineno)s
+['Content-Type'
+['ErrorCode'
+['POST'
+['access_token_id'
+['accesstoken'
+['api_version'
+['azure_region'
+['body'
+['captcha_solution'
+['challenge_id'
+['challenge_type'
+['chatService'
+['client_id'
+['client_type'
+['conversation_id'
+['conversation_link'
+['country_code'
+['customize_properties'
+['data'
+['database'
+['description'
+['device_pin'
+['email'
+['error_description'
+['file'
+['graph_spy_db_folder'
+['graph_spy_db_path'
+['graph_spy_folder'
+['graph_uri'
+['headers'
+['image_uri'
+['itemtype'
+['last_poll'
+['members'
+['message_content'
+['method'
+['ngcmfa'
+['phone_number'
+['phone_type'
+['refresh_token_id'
+['refreshtoken'
+['regionGtms'
+['request_type'
+['resource'
+['response_status_code'
+['response_text'
+['response_type'
+['scope'
+['secret_key'
+['security_info_type'
+['skypeToken'
+['skype_id'
+['state'
+['table_error_messages'
+['teamsAndChannelsService'
+['teams_settings_raw'
+['template_id'
+['template_name'
+['tenant_domain'
+['type'
+['upload_uri'
+['uri'
+['user'
+['user_agent'
+['user_code'
+['user_id'
+['value'
+['variables'
+['verification_context'
+['verification_data'
+[*
+[-1
+[.\w
+[/\w
+[0
+[1
+[2
+[3
+[6:
+[:
+[AADInternals
+[ACTION REQUIRED
+[Access Tokens
+[Credits
+[Custom Request
+[Device Codes
+[Error
+[Execution
+[Execution page
+[Features
+[Flaticon
+[GitHub Wiki
+[Graph Request
+[Graph Search
+[GraphRunner
+[GraphSpy
+[Installation
+[Installation page
+[Introducing a new phishing technique for compromising Office 365 accounts
+[MFA Methods FIDO
+[MFA Methods Overview
+[MS Teams GraphSpy
+[OneDrive
+[Outlook
+[Outlook GraphSpy
+[Python Version
+[Quick Start
+[Recent Files
+[Refresh Tokens
+[Release Notes
+[Succes
+[Success
+[Table of Contents
+[The Art of the Device Code Phish
+[Token Side Bar
+[TokenTactics
+[TokenTacticsV2
+[Unrenderable_Content
+[Upcoming Features
+[Usage
+[\-\w
+[\-\w.\u00B7-\uFFFF
+[\r\n\t 
+[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000
+[\w\W
+[^a-z
+[^a-z+.\-:
+[a-z
+[a-z+.\-
+[access_token
+[access_token_id
+[class*=language-
+[content-style
+[conversationIds.length - 1
+[data-bs-theme-value
+[data-toggle='dropdown'
+[device_code
+[e
+[e.namespaceURI
+[error_id
+[fullname
+[header
+[header_name
+[i
+[id
+[idx
+[itemtype$='AMSImage'
+[n
+[name='authenticatiorAppOptions'
+[name='delete_radio_options'
+[name='phone_verify_options'
+[name='securityKeyMethod'
+[new_header_name
+[not(text())
+[o
+[official release blog post
+[otp_code_id
+[phone_type
+[r
+[r-1
+[refresh_token_id
+[t
+[template_id
+[template_name
+[toastList.length - 1
+[type=radio
+[type=text
+[type_id
+[variable_name
+[verification_state_id
+[x.strip() for x in f.readlines()
+[year
+[{**availableAuthenticationInfo[method
+[{current_time_seconds}
+[{response.json()['error'
+[{retry_count} attempts left

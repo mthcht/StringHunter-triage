@@ -1,0 +1,59 @@
+"Invoke-CertToAccessToken -tenant <tenant id> -cert <path_to_certificate> -id <appid>"");"
+"Invoke-CertToAccessToken"");"
+"Invoke-CertToAccessToken"", StringComparison.CurrentCultureIgnoreCase))"
+"Invoke-CustomQuery -Query """"https://graph.microsoft.com/v1.0/sites/{siteId}/drives"""" -token .\token.txt"
+"Invoke-CustomQuery -Query ""https://graph.microsoft.com/v1.0/sites/{siteId}/drives"" -token .\token.txt"
+"Invoke-CustomQuery"");"
+"Invoke-CustomQuery"", StringComparison.CurrentCultureIgnoreCase))"
+"Invoke-Query -Query \""https://graph.microsoft.com/v1.0/sites/{siteId}/drives\"" -token <access token>"");"
+"Invoke-RefreshToAzureManagementToken -tenant <tenant id> -token <refresh token>"");"
+"Invoke-RefreshToAzureManagementToken"");"
+"Invoke-RefreshToAzureManagementToken"", StringComparison.CurrentCultureIgnoreCase))"
+"Invoke-RefreshToMSGraphToken -tenant <tenant id> -token <refresh token>"");"
+"Invoke-RefreshToMSGraphToken"");"
+"Invoke-RefreshToMSGraphToken"", StringComparison.CurrentCultureIgnoreCase))"
+"Invoke-RefreshToVaultToken -token <refresh>"");"
+"Invoke-RefreshToVaultToken"");"
+"Invoke-RefreshToVaultToken"", StringComparison.CurrentCultureIgnoreCase))"
+"Invoke-Search                            - Search for string within entity type (driveItem, message, chatMessage, site, event) "
+"Invoke-Search                            - Search for string within entity type (driveItem, message, chatMessage, site, event)"
+"Invoke-Search -search """"password"""" -entity driveItem -token eyJ0eXAiOiJKV1QiLC..."
+"Invoke-Search -search ""password"" -entity driveItem -token eyJ0eXAiOiJKV1QiLC..."
+"Invoke-Search -search \""keyword\"" -entity \""entity\"" -token <access token>"");"
+"Invoke-Search"");"
+"Invoke-Search"", StringComparison.CurrentCultureIgnoreCase))"
+"Invoke-Search** -Search \<string\> -Entity \<entity\>                           | Search for string within entity type (driveItem, message, chatMessage, site, event)          |"
+"Invoke-WebRequest -Uri """"$($certUri.id)?api-version=7.3"""" -Headers @{{ 'Authorization' = """"Bearer $($AppKeyVaultToken)"""" }}"
+"Invoke-WebRequest -Uri $uri -Headers @{{ 'Authorization' = """"Bearer $($AppKeyVaultToken)"""" }}"
+"invoke-customquery -query https://graph.microsoft.com/v1.0/me -token .\token.txt -select displayname,userprincipalname"
+"invoke-search -search ""credentials"" -entity driveItem -token .\token.txt"
+"invoke-search -search ""password"" -entity message -token .\token.txt"
+Invoke-CertToAccessToken
+Invoke-CertToAccessToken                 - Convert Azure Application certificate to JWT access token (saved to cert_tokens.txt)
+Invoke-CertToAccessToken -tenant <tenant id> -cert .\cert.pfx -id <app id>
+Invoke-CertToAccessToken** -Cert \<path to pfx\> -ID \<app id\> -Tenant \<id\>| Convert Azure Application certificate to JWT access token|
+Invoke-CertToAccessToken](#Invoke-CertToAccessToeken)
+Invoke-CertToAccessToken`):
+Invoke-CustomQuery
+Invoke-CustomQuery                       - Custom GET query to target Graph API endpoint
+Invoke-CustomQuery** -Query \<graph endpoint URL\>                      | Custom GET query to target Graph API endpoint e.g. `https://graph.microsoft.com/v1.0/me`                                           |
+Invoke-Refresh*` methods)
+Invoke-RefreshTo...` methods can be ported from [TokenHandler.ps1](https://github.com/rvrsh3ll/TokenTactics/blob/main/modules/TokenHandler.ps1).
+Invoke-RefreshToAzureManagementToken
+Invoke-RefreshToAzureManagementToken     - Convert refresh token to Azure Management token (saved to az_tokens.txt)
+Invoke-RefreshToAzureManagementToken -tenant <tenant id> -token <refresh token>
+Invoke-RefreshToAzureManagementToken -token refreshtoken.txt -tenant fbf34b9d-6375-4137-ae1f-8cb12df29bb5
+Invoke-RefreshToAzureManagementToken** -Token \<refresh\> -Tenant \<id\>    | Convert refresh token to Azure Management token (saved to _az_tokens.txt_)|
+Invoke-RefreshToAzureManagementToken](#Invoke-RefreshToAzureManagementToken)
+Invoke-RefreshToMSGraphToken
+Invoke-RefreshToMSGraphToken             - Convert refresh token to Micrsoft Graph token (saved to new_graph_tokens.txt)
+Invoke-RefreshToMSGraphToken** -Token \<refresh\> -Tenant \<id\>            | Convert refresh token to Microsoft Graph token (saved to _new_graph_tokens.txt_)  |  
+Invoke-RefreshToMSGraphToken](#Invoke-RefreshToMSGraphToken)
+Invoke-RefreshToVaultToken
+Invoke-RefreshToVaultToken               - Convert refresh token to Azure Vault token (saved to vault_tokens.txt)
+Invoke-RefreshToVaultToken** -Token \<refresh\> | Convert refresh token to Azure Vault token (saved to _vault_tokens.txt_)|
+Invoke-RefreshToVaultToken](#Invoke-RefreshToVaultToken)
+Invoke-RefreshTokenToMSGraphToken -token .\refreshtoken.txt -tenant <tenant id>
+Invoke-RestMethod -Uri $new -UseBasicParsing -Method POST -Headers $headers -Body ([ordered]@{{
+Invoke-RestMethod -Uri $uri -UseBasicParsing -Method POST -Headers $headers -Body (([ordered] @{{
+invoke-refreshtovaulttoken -token <refresh>

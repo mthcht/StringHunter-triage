@@ -1,0 +1,24 @@
+"'""IfExistsResult"":0"
+"'""IfExistsResult"":0,"
+"'""IfExistsResult"":1"
+"'""IfExistsResult"":1,"
+"', "
+"', help="
+"'List of email addresses to validate, one per line."
+"'{""Username"":""%s""}"
+' 
+'%s - INVALID
+'%s - VALID
+'--email
+'--file
+'--output
+'-e
+'-f
+'-o
+'Enumerates valid email addresses from Office 365 without submitting login attempts.
+'Output valid email addresses to the specified file.
+'Single email address to validate.
+'\n
+'a+
+'https://login.microsoftonline.com/common/GetCredentialType
+'w

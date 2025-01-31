@@ -1,0 +1,83 @@
+"("":%d"", port"
+"(""ip"", string(buf[5:n-2]"
+"(""tcp"", config.ListenAddr"
+"(""tcp"", config.RemoteAddr"
+"(""tcp"", local.ListenAddr"
+"(""tcp"", lsServer.ListenAddr"
+"(""tcp"", nil, dstAddr"
+"(""tcp"", nil, secureSocket.RemoteAddr"
+"() (*net.TCPConn, error"
+"(*Password, error"
+"([]byte, 256"
+"([]byte, BufSize"
+"([]byte, MB"
+"([]byte, PasswordLength"
+"(config, """", ""	"""
+"(configPath, configJson, 0644"
+"(conn *net.TCPConn, bs []byte"
+"(dst *net.TCPConn, src *net.TCPConn"
+"(dst, buf[0:readCount]"
+"(dstServer, localConn"
+"(home, ConfigFileName"
+"(i, j int"
+"(int, error"
+"(localConn, []byte{0x05, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}"
+"(localConn, []byte{0x05, 0x00}"
+"(localConn, buf"
+"(localConn, dstServer"
+"(n int, err error"
+"(org, tmp"
+"(password *core.Password, listenAddr *net.TCPAddr"
+"(password *core.Password, listenAddr, remoteAddr *net.TCPAddr"
+"(password, decodePassword"
+"(password, listenAddr"
+"(password, listenAddr, remoteAddr"
+"(password[:], bs"
+"(proxyServer, userConn"
+"(src, buf"
+"(tmp, org"
+"(userConn, proxyServer"
+()
+().String(
+(0
+(PasswordLength
+(b *testing.B
+(binary.BigEndian.Uint16(dPort
+(bs
+(bs []byte
+(bs[:n]
+(buf
+(buf[0:readCount]
+(cipher *Cipher
+(config
+(config *Config
+(config.Password
+(configPath
+(didListen func(listenAddr net.Addr
+(encodePassword *Password
+(err
+(file
+(https://github.com/LemonSaaS/ghostsocks/blob/master/lemonsaas.png
+(https://github.com/gwuhaolin/lightsocks
+(i
+(listener.Addr(
+(local *LsLocal
+(localConn
+(localConn *net.TCPConn
+(log.Lshortfile
+(lsLocal.Listen(func(listenAddr net.Addr
+(lsServer *LsServer
+(lsServer.Listen(func(listenAddr net.Addr
+(password
+(password *Password
+(passwordStr
+(passwordString string
+(password[:]
+(secureSocket *SecureSocket
+(strings.TrimSpace(passwordString
+(t *testing.T
+(time.Now(
+(tmp
+(userConn
+(userConn *net.TCPConn
+(v

@@ -1,0 +1,45 @@
+"//  |_  ____ _____  |  |   ___________\n"""
+"// @return True if Chrome is installed, false otherwise."
+"// If the key exists, Chrome is installed."
+"// This function opens the Login Data SQLite database, executes a query to retrieve login"
+"// credentials, and decrypts the passwords using the provided decryption key."
+// @param ciphertext The encrypted password.
+// @param ciphertext_len The length of the encrypted password.
+// @param decrypted The buffer to store the decrypted password.
+// @param decryptionKey The key used to decrypt the login data.
+// @param encrypted_key The encrypted key as a Base64-encoded string.
+// @param encrypted_key The encrypted key as a string.
+// @param iv The initialization vector used for decryption.
+// @param key The key used for decryption.
+// @param localStatePath The path to the Local State file.
+// @param loginDataPath The path to the Login Data file.
+// @return An integer indicating success (0) or failure (non-zero).
+// @return The decrypted key as a DATA_BLOB structure.
+// @return The encrypted key as a string.
+// @return The path to the Local State file as a wide string.
+// @return The path to the Login Data file as a wide string.
+// ANSI escape codes for colors
+// Checks if Google Chrome is installed on the machine.
+// Decrypts a password using the provided key and initialization vector (IV).
+// Decrypts an encrypted key using the CryptUnprotectData function.
+// Decrypts an encrypted key.
+// Finds the path to the Local State file.
+// Finds the path to the Login Data file.
+// Link against the required libraries
+// Open the registry key for Chrome's installation path.
+// Parses the Login Data file to extract and decrypt login credentials.
+// Parses the Login Data file to extract login credentials.
+// Reset text color
+// Retrieves the encrypted key from the Local State file.
+// Set text color to purple
+// This function decodes a Base64-encoded string and decrypts it to retrieve
+// This function queries the Windows Registry to check if the registry key
+// This function reads the Local State file in JSON format and extracts the
+// This function retrieves the user's profile path and constructs the path to
+// This function uses the libsodium library to decrypt the ciphertext.
+// _WIN32
+// encrypted key used by Google Chrome.
+// for Chrome's installation path exists.
+// the Local State file used by Google Chrome.
+// the Login Data file used by Google Chrome.
+// the original key.

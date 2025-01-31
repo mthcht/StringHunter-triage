@@ -1,0 +1,8 @@
+"UserName -AND $Password){$CheckSessionsAsAdmin = Invoke-WMIRemoting -ComputerName $Computer -UserName $UserName -Password $Password -Command ""klist sessions""}"
+"username -like '*$'){$result.AdmCount = ""N/A""}"
+UserName -AND !$ShowAll){$allresults = $allresults | Where-Object {$_.UserSession -ne $UserName}}
+UserName -AND $Password){$CheckAsAdmin = $True}
+UserNameDomainSplit = $UserName -split '\\'
+UserNameSplit = $UserNameDomainSplit[1]
+Username = $UserName
+username = ($result.UserSession -split '\\')[1]

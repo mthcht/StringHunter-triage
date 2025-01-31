@@ -1,0 +1,362 @@
+"{	s"""
+"{ ""alg"", ""RS256"" "
+"{ ""aud"", audience "
+"{ ""client_assertion"", signedJWT "
+"{ ""client_assertion_type"", ""urn:ietf:params:oauth:client-assertion-type:jwt-bearer"" "
+"{ ""client_id"", ClientId "
+"{ ""client_id"", Config.id "
+"{ ""client_id"", clientId "
+"{ ""code"", deviceCode "
+"{ ""exp"", jwtExpiration "
+"{ ""grant_type"", ""client_credentials"" "
+"{ ""grant_type"", ""refresh_token"" "
+"{ ""grant_type"", ""urn:ietf:params:oauth:grant-type:device_code"" "
+"{ ""iss"", appId "
+"{ ""jti"", Guid.NewGuid() "
+"{ ""nbf"", notBefore "
+"{ ""refresh_token"", refreshToken "
+"{ ""resource"", Resource "
+"{ ""resource"", resource "
+"{ ""scope"", ""https://management.azure.com/.default"" "
+"{ ""scope"", ""openid"" "
+"{ ""scope"", scope "
+"{ ""sub"", appId "
+"{ ""typ"", ""JWT"" "
+"{ ""x5t"", x5t "
+"{ 'Claim.Type', 'Claim.Value' "
+"{ 'Claim.Type', List&lt;object&gt; "
+"{ 123, ""Four"" "
+"{ <see cref=""F:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames.Alg""/>, <see cref=""F:Microsoft.IdentityModel.Tokens.SecurityAlgorithms.None""/> "
+"{ Name, Value "
+"{ acr, 'value' "
+"{ actort, 'value' "
+"{ alg, EncryptingCredentials.Alg "
+"{ alg, EncryptingCredentials.Algorithm "
+"{ alg, SigningCredentials.Algorithm "
+"{ amr, 'value' "
+"{ aud, 'audience' "
+"{ aud, 'value' "
+"{ auth_time, 'value' "
+"{ azp, 'value' "
+"{ c_hash, 'value' "
+"{ displayName = ""Application Administrator"", roleTemplateId = ""9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"" "
+"{ displayName = ""Authentication Administrator"", roleTemplateId = ""c4e39bd9-1100-46d3-8c65-fb160da0071f"" "
+"{ displayName = ""Azure AD Joined Device Local Administrator"", roleTemplateId = ""9f06204d-73c1-4d4c-880a-6edb90606fd8"" "
+"{ displayName = ""Directory Readers"", roleTemplateId = ""88d8e3e3-8f55-4a1e-953a-9b9898b8876b"" "
+"{ displayName = ""Directory Synchronization Accounts"", roleTemplateId = ""d29b2b05-8046-44ba-8758-1e26182fcf32"" "
+"{ displayName = ""Global Administrator"", roleTemplateId = ""62e90394-69f5-4237-9190-012177145e10"" "
+"{ displayName = ""Global Reader"", roleTemplateId = ""f2ef992c-3afb-46b9-b7cf-a126ee74c451"" "
+"{ displayName = ""Groups Administrator"", roleTemplateId = ""fdd7a751-b60b-444a-984c-02652fe8fa1c"" "
+"{ displayName = ""Helpdesk Administrator"", roleTemplateId = ""729827e3-9c14-49f7-bb1b-9608f156bbb8"" "
+"{ displayName = ""Password Administrator"", roleTemplateId = ""966707d0-3269-4727-9be2-8c3a10f19b9d"" "
+"{ displayName = ""Privileged Authentication Administrator"", roleTemplateId = ""7be44c8a-adaf-4e2a-84d6-ab2649e08a13"" "
+"{ displayName = ""Security Reader"", roleTemplateId = ""5d6b6bb7-de71-4623-b4af-96380a352509"" "
+"{ displayName = ""User Administrator"", roleTemplateId = ""fe930be7-5e62-47db-91af-98c3a49a38b1"" "
+"{ enc, EncryptingCredentials.Enc "
+"{ exp, 'value' "
+"{ iat, 'value' "
+"{ iss, 'issuer' "
+"{ iss, 'value' "
+"{ jti, 'value' "
+"{ key, 'value' "
+"{ name, value "
+"{ nbf, 'value' "
+"{ nonce, 'value' "
+"{ sub, 'value' "
+"{ zip, 'value' "
+"{ { typ, JWT "
+"{""O"
+"{?I$"""
+"{@L-HO6"""
+"{G_"">{"
+"{Microsoft.Identity.Client.AssertionRequestOptions,System.Threading.Tasks.Task{System.String"
+"{Microsoft.Identity.Client.DeviceCodeResult,System.Threading.Tasks.Task"
+"{Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters,System.Threading.Tasks.Task{Microsoft.Identity.Client.Extensibility.AppTokenProviderResult"
+"{Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData,System.Threading.Tasks.Task"
+"{Microsoft.Identity.Client.TokenCacheNotificationArgs,System.Threading.Tasks.Task"
+"{Newtonsoft.Json.Linq.JObject,Newtonsoft.Json.Linq.JObject"
+"{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx"
+"{String, Null, True, False, Number"
+"{System.Byte[],System.Int32,``0"
+"{System.Byte[],System.Int32,``1,``0"
+"{System.Byte[],System.Int32,``1,``2,``3,``0"
+"{System.Collections.Generic.Dictionary{System.String,System.String"
+"{System.Collections.Generic.KeyValuePair{System.String,System.Object"
+"{System.Diagnostics.Activity,System.Object"
+"{System.Func{`0,System.Boolean"
+"{System.Func{``0,System.Boolean"
+"{System.Int32,System.Exception"
+"{System.Object,System.String"
+"{System.String,System.Boolean"
+"{System.String,System.Collections.Generic.IEnumerable{System.String"
+"{System.String,System.Collections.Generic.List{System.String"
+"{System.String,System.DateTime"
+"{System.String,System.Double"
+"{System.String,System.Guid"
+"{System.String,System.Int64"
+"{System.String,System.Object"
+"{System.String,System.Object,System.Object,System.Boolean"
+"{System.String,System.String"
+"{System.Threading.CancellationToken,System.Threading.Tasks.Task{System.String"
+"{System.Uri,Microsoft.Identity.Client.Platforms.Shared.Desktop.OsBrowser.MessageAndHttpCode"
+"{\""00000000480FA373\"":\""ob7b8h79td9gs6hfqoh2r37m\"",\""4b0db8c2-9f26-4417-8bde-3f0e3656f8e0\"":\""ob7b8h79td9gs6hfqoh2r37m\"""
+"{`0,System.Int32"
+"{`0,`0,System.Boolean"
+"{`0,`1"
+"{``0,``1"
+"{exp, iat, nbf"
+"{kid ?? ""N/A"""
+"{x5t ?? ""N/A"""
+"{{ 'Authorization' = """"Bearer $($AppKeyVaultToken)"""" "
+"{{$_.id -like """"*$($keyName)*"""""
+"{~yyT]RD+7fL30"""
+{	
+{ /
+{!
+{$.Gf =
+{$x
+{$x&^
+{'
+{(&Y
+{(int)responseJwt.StatusCode
+{)
+{*
+{*S;^2
+{+l_kq
+{-
+{-`
+{.
+{.V \
+{/
+{/`
+{/vZ.
+{0
+{0/UmKF?
+{1
+{173E7A61-1974-4097-AFD2-5588779BCA4F
+{2
+{3
+{3R
+{3T
+{3W
+{3_.rcg
+{3m*?45gj
+{4
+{4@
+{4O`:
+{4k<ZG6t_UB`
+{54ma;N6
+{6<]	
+{6= 
+{7l
+{7ny
+{7tj&n
+{8!=
+{825E2088-EC7C-4AB0-852A-4F1FEF178E37
+{95/
+{9C6.Js#!g38&<[5W+/s
+{9`
+{:)
+{:C1 9940	
+{;
+{<
+{<_
+{=ZM!qd;A
+{>'
+{?)W1_bi
+{?:
+{A
+{AccessToken
+{B
+{C
+{CandidateAssemblyFiles
+{ClientId
+{Config.accessToken
+{Config.domain
+{Config.id
+{Config.key
+{Config.query
+{Config.tenant
+{D tf^
+{DateTime.Now
+{DkIB(%y
+{E
+{Eo9f)
+{Es=jJ[RW( X1
+{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC
+{FM[zMap~C
+{HintPathFromItem
+{J
+{JWE
+{KG
+{Lg
+{M
+{Microsoft.Identity.Client.AuthorityType
+{Microsoft.Identity.Client.LogLevel
+{Microsoft.Identity.Client.TenantProfile
+{Microsoft.Identity.Json.Linq.JObject
+{Microsoft.Identity.Json.Linq.JToken
+{Microsoft.IdentityModel.Tokens.SecurityKey
+{Microsoft.Rest.TransientFaultHandling.RetryStrategy
+{MsalCacheHelper.UserRootDirectory
+{N
+{Newtonsoft.Json.Linq.JObject
+{Newtonsoft.Json.Linq.JToken
+{Newtonsoft.Json.Serialization.JsonProperty
+{O
+{O_Z
+{Osx=F
+{P)R@-U
+{Q//nk;
+{R;
+{RW
+{RawFileName
+{ResourceIdUri
+{ResourceIdUri/.default
+{S#
+{S+(r
+{SX
+{Sv#
+{System#Collections#Generic#KeyValuePair{System#String@System#Object
+{System#Security#Principal#IdentityReference
+{System#Text#Json#JsonElement
+{System#Text#Json#JsonProperty
+{System.Boolean
+{System.Byte
+{System.Char
+{System.Collections.Generic.IEnumerable{System.Diagnostics.Metrics.Measurement{``0
+{System.DateTime
+{System.DateTimeOffset
+{System.Decimal
+{System.Diagnostics.ActivityLink
+{System.Diagnostics.Metrics.Measurement{``0
+{System.Double
+{System.Guid
+{System.Int16
+{System.Int32
+{System.Int64
+{System.IntPtr
+{System.Linq.Expressions.Expression
+{System.Object
+{System.SByte
+{System.Security.Claims.Claim
+{System.Single
+{System.String
+{System.Threading.Tasks.Task
+{System.Threading.Tasks.Task{Microsoft.Identity.Client.AuthenticationResult
+{System.Threading.Tasks.Task{``0
+{System.TimeSpan
+{System.Type
+{System.UInt16
+{System.UInt32
+{System.UInt64
+{System.Windows.Forms.IWin32Window
+{T
+{TResult
+{TargetFrameworkDirectory
+{Tenant
+{UY
+{V
+{VW
+{Vlx.
+{WsKGW
+{Y Wue
+{[
+{[4]
+{[uW
+{\
+{\[
+{]
+{]G>
+{]rclFbgMGRa>$_
+{^G
+{^b2ui
+{_
+{`
+{`0
+{`9B(M\
+{``0
+{a
+{apr
+{authUrl
+{b7<
+{ba\
+{bkrFX
+{c-
+{certId
+{char
+{clientId
+{cm>;$
+{cqAx6
+{d
+{djgS)5EWL2G
+{drive-id
+{e
+{entity
+{errorContent
+{ex.Message
+{f;
+{fJ
+{fZ{|J
+{filePath
+{g
+{g.q
+{group-id
+{groupId
+{i
+{i8!{[
+{id
+{item-id
+{k(A
+{k/
+{kN
+{kid
+{km]
+{kvURI
+{kvp.Key
+{kvp.Value
+{l*+
+{l+_U/
+{message
+{nv6Qw
+{o
+{o`/6
+{policy
+{port
+{property
+{property.Key
+{property.Name
+{property.Value
+{q
+{q3
+{qW*
+{qZG[k'9R
+{q_f^
+{r]^
+{response.ReasonPhrase
+{response.StatusCode
+{responseJwt.StatusCode
+{role.displayName
+{role.roleTemplateId
+{rr
+{searchString
+{searchTerms
+{site-id
+{siteId
+{ss
+{t1v[m
+{tenant
+{tenantId
+{tenantName
+{u
+{user-id
+{userAgent
+{userId
+{v:jQj
+{wqxd
+{xL
+{y4@oKp0F)%0
+{zG'
+{{'Content-Type' = 'application/x-www-form-urlencoded'
+{|LJ7
+{~

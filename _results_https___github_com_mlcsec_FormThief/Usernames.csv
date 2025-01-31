@@ -1,0 +1,19 @@
+"Username = ""abcdefghijklmnopqrstuvwxyz123456789"";"
+"Username.Location = new System.Drawing.Point(10, 15);"
+"Username.Location = new System.Drawing.Point(96, 12);"
+"Username.Name = ""lblUsername"";"
+"Username.Name = ""txtUsername"";"
+"Username.Size = new System.Drawing.Size(141, 20);"
+"Username.Size = new System.Drawing.Size(58, 13);"
+"Username.Text = ""Username:"";"
+"Username: {email_field.Text} - Password: {password_field.Password}"");"
+"Username: {textBox1.Text} Password: {textBox2.Text}"");"
+"Username: {txtUsername.Text} - Password: {txtPassword.Text}"");"
+Username && textBox2.Text == correctPassword)
+Username = new System.Windows.Forms.Label();
+Username = new System.Windows.Forms.TextBox();
+Username.AutoSize = true;
+Username.TabIndex = 0;
+Username.TabIndex = 5;
+Username.Text == correctUsername && txtPassword.Text == correctPassword)
+Username.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);

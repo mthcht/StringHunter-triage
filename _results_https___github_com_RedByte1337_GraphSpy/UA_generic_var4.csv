@@ -1,0 +1,4 @@
+"user_agent = query_db(""SELECT value FROM settings where setting = 'user_agent'"",one=True)"
+"user_agent = request.form['user_agent'] if ""user_agent"" in request.form else """""
+"user_agent_field"" placeholder=""User Agent"" class=""form-control"">"
+user_agent() == user_agent:

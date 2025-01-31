@@ -1,0 +1,268 @@
+"{""@odata.type"":""#microsoft.graph.win32LobApp"",""applicableArchitectures"":""x64,x86"",""allowAvailableUninstall"":false,""categories"":[],""description"":""IntuneMessageBox"",""developer"":"""",""displayName"":""IntuneMessageBox"",""displayVersion"":"""",""fileName"":""IntuneMessageBox.intunewin"",""installCommandLine"":""IntuneMessageBox.exe"",""installExperience"":{""deviceRestartBehavior"":""suppress"",""maxRunTimeInMinutes"":30,""runAsAccount"":""system"""
+"{""@odata.type"":""#microsoft.graph.win32LobAppFileSystemRule"",""ruleType"":""detection"",""operator"":""notConfigured"",""check32BitOn64System"":false,""operationType"":""exists"",""comparisonValue"":null,""fileOrFolderName"":""IntuneMessageBox.exe"",""path"":""C:\\Program Files\\IntuneMessageBox.exe"""
+"{""Content-Type"": ""application/json; charset=UTF-8"""
+"{""Content-Type"": ""application/soap+xml; charset=UTF-8"""
+"{""Content-Type"": ""application/x-www-form-urlencoded"""
+"{""displayName"": ""Application Administrator"", ""roleTemplateId"": ""9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"", ""description"": ""Can create and manage all aspects of app registrations and enterprise apps."""
+"{""displayName"": ""Application Developer"", ""roleTemplateId"": ""cf1c38e5-3621-4004-a7cb-879624dced7c"", ""description"": ""Can create application registrations independent of the 'Users can register applications' setting."""
+"{""displayName"": ""Authentication Administrator"", ""roleTemplateId"": ""c4e39bd9-1100-46d3-8c65-fb160da0071f"", ""description"": ""Can access to view, set and reset authentication method information for any non-admin user."""
+"{""displayName"": ""Authentication Extensibility Administrator"", ""roleTemplateId"": ""25a516ed-2fa0-40ea-a2d0-12923a21473a"", ""description"": ""Customize sign in and sign up experiences for users by creating and managing custom authentication extensions."""
+"{""displayName"": ""Azure AD Joined Device Local Administrator"", ""roleTemplateId"": ""9f06204d-73c1-4d4c-880a-6edb90606fd8"", ""description"": ""Users with this role can locally administer Azure AD joined devices."""
+"{""displayName"": ""B2C IEF Keyset Administrator"", ""roleTemplateId"": ""aaf43236-0c0d-4d5f-883a-6955382ac081"", ""description"": ""Can manage secrets for federation and encryption in the Identity Experience Framework (IEF)."""
+"{""displayName"": ""Cloud Application Administrator"", ""roleTemplateId"": ""158c047a-c907-4556-b7ef-446551a6b5f7"", ""description"": ""Can create and manage all aspects of app registrations and enterprise apps except App Proxy."""
+"{""displayName"": ""Cloud Device Administrator"", ""roleTemplateId"": ""7698a772-787b-4ac8-901f-60d6b08affd2"", ""description"": ""Limited access to manage devices in Microsoft Entra ID."""
+"{""displayName"": ""Conditional Access Administrator"", ""roleTemplateId"": ""b1be1c3e-b65d-4f19-8427-f6fa0d97feb9"", ""description"": ""Can manage Conditional Access capabilities."""
+"{""displayName"": ""Directory Readers"", ""roleTemplateId"": ""88d8e3e3-8f55-4a1e-953a-9b9898b8876b"", ""description"": ""Can read basic directory information. Not intended for granting access to applications."""
+"{""displayName"": ""Directory Synchronization Accounts"", ""roleTemplateId"": ""d29b2b05-8046-44ba-8758-1e26182fcf32"", ""description"": ""Only used by Microsoft Entra Connect and Microsoft Entra Cloud Sync services."""
+"{""displayName"": ""Directory Writers"", ""roleTemplateId"": ""9360feb5-f418-4baa-8175-e2a00bac4301"", ""description"": ""Can read and write basic directory information. For granting access to applications, not intended for users."""
+"{""displayName"": ""Domain Name Administrator"", ""roleTemplateId"": ""8329153b-31d0-4727-b945-745eb3bc5f31"", ""description"": ""Can manage domain names in cloud and on-premises."""
+"{""displayName"": ""External Identity Provider Administrator"", ""roleTemplateId"": ""be2f45a1-457d-42af-a067-6ec1fa63bc45"", ""description"": ""Can configure identity providers for use in direct federation."""
+"{""displayName"": ""Global Administrator"", ""roleTemplateId"": ""62e90394-69f5-4237-9190-012177145e10"", ""description"": ""Can manage all aspects of Microsoft Entra ID and Microsoft services that use Microsoft Entra identities."""
+"{""displayName"": ""Global Reader"", ""roleTemplateId"": ""f2ef992c-3afb-46b9-b7cf-a126ee74c451"", ""description"": ""Can read everything that a Global Administrator can, but not update anything."""
+"{""displayName"": ""Groups Administrator"", ""roleTemplateId"": ""fdd7a751-b60b-444a-984c-02652fe8fa1c"", ""description"": ""Can manage all aspects of groups and group settings like naming and expiration policies."""
+"{""displayName"": ""Helpdesk Administrator"", ""roleTemplateId"": ""729827e3-9c14-49f7-bb1b-9608f156bbb8"", ""description"": ""Can reset passwords for non-administrators and Helpdesk Administrators."""
+"{""displayName"": ""Hybrid Identity Administrator"", ""roleTemplateId"": ""8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2"", ""description"": ""Manage Active Directory to Microsoft Entra cloud provisioning, Microsoft Entra Connect, pass-through authentication (PTA), password hash synchronization (PHS), seamless single sign-on (seamless SSO), and federation settings. Does not have access to manage Microsoft Entra Connect Health."""
+"{""displayName"": ""Intune Administrator"", ""roleTemplateId"": ""3a2c62db-5318-420d-8d74-23affee5d9d5"", ""description"": ""Can manage all aspects of the Intune product."""
+"{""displayName"": ""Lifecycle Workflows Administrator"", ""roleTemplateId"": ""59d46f88-662b-457b-bceb-5c3809e5908f"", ""description"": ""Create and manage all aspects of workflows and tasks associated with Lifecycle Workflows in Microsoft Entra ID."""
+"{""displayName"": ""Password Administrator"", ""roleTemplateId"": ""966707d0-3269-4727-9be2-8c3a10f19b9d"", ""description"": ""Can reset passwords for non-administrators and Password Administrators."""
+"{""displayName"": ""Privileged Authentication Administrator"", ""roleTemplateId"": ""7be44c8a-adaf-4e2a-84d6-ab2649e08a13"", ""description"": ""Can access to view, set and reset authentication method information for any user (admin or non-admin)."""
+"{""displayName"": ""Privileged Role Administrator"", ""roleTemplateId"": ""e8611ab8-c189-46e8-94e1-60213ab1f814"", ""description"": ""Can manage role assignments in Microsoft Entra ID, and all aspects of Privileged Identity Management."""
+"{""displayName"": ""Security Administrator"", ""roleTemplateId"": ""194ae4cb-b126-40b2-bd5b-6091b380977d"", ""description"": ""Can read security information and reports, and manage configuration in Microsoft Entra ID and Office 365."""
+"{""displayName"": ""Security Operator"", ""roleTemplateId"": ""5f2222b1-57c3-48ba-8ad5-d4759f1fde6f"", ""description"": ""Creates and manages security events."""
+"{""displayName"": ""Security Reader"", ""roleTemplateId"": ""5d6b6bb7-de71-4623-b4af-96380a352509"", ""description"": ""Can read security information and reports in Microsoft Entra ID and Office 365."""
+"{""displayName"": ""User Administrator"", ""roleTemplateId"": ""fe930be7-5e62-47db-91af-98c3a49a38b1"", ""description"": ""Can manage all aspects of users and groups, including resetting passwords for limited admins."""
+"{""displayName"": appname"
+"{""displayName"":""Added by Azure Service Bus - DO NOT DELETE"", ""endDateTime"": formatted_date"
+"{""emailAddress"": {""address"": email.strip()"
+"{""returnCode"": 0, ""type"": ""success"""
+"{""returnCode"": 1618, ""type"": ""retry"""
+"{""returnCode"": 1641, ""type"": ""hardReboot"""
+"{""returnCode"": 1707, ""type"": ""success"""
+"{""returnCode"": 3010, ""type"": ""softReboot"""
+"{""returnCode"":0,""type"":""success"""
+"{""returnCode"":1618,""type"":""retry"""
+"{""returnCode"":1641,""type"":""hardReboot"""
+"{""returnCode"":1707,""type"":""success"""
+"{""returnCode"":3010,""type"":""softReboot"""
+"{""verify_signature"": False"
+"{', '.join(invalid_permissions)"
+"{', '.join(local_groups)"
+"{', '.join(object_data.get('businessPhones', []))"
+"{', '.join(object_data.get('groupTypes', []))"
+"{', '.join(object_data.get('tags', []))"
+"{', '.join(object_data.get('web', {"
+"{', '.join(permission_names)"
+"{','.join(select_fields)"
+"{'kid': fingerprint.hex().upper(), 'x5t': x5t"
+"{assignment.get('resourceDisplayName', 'N/A')"
+"{highlight(values['Application'], app_highlight)"
+"{highlight(values['Delegated'], delegated_highlight)"
+"{json.dumps(value, indent=2)"
+"{key: value for key, value in response_body.items() if not key.startswith(""@odata"")"
+"{len(object_data.get('appRoles', []))"
+"{len(object_data.get('oauth2Permissions', []))"
+"{len(object_data.get('requiredResourceAccess', []))"
+"{object_data.get('accountEnabled', 'N/A')"
+"{object_data.get('appDisplayName', 'N/A')"
+"{object_data.get('appId', 'N/A')"
+"{object_data.get('approximateLastSignInDateTime', 'N/A')"
+"{object_data.get('complianceState', 'N/A')"
+"{object_data.get('createdDateTime', 'N/A')"
+"{object_data.get('department', 'N/A')"
+"{object_data.get('description', 'N/A')"
+"{object_data.get('deviceId', 'N/A')"
+"{object_data.get('displayName', 'N/A')"
+"{object_data.get('homepage', 'N/A')"
+"{object_data.get('id', 'N/A')"
+"{object_data.get('isAssignableToRole', 'N/A')"
+"{object_data.get('isCompliant', 'N/A')"
+"{object_data.get('isManaged', 'N/A')"
+"{object_data.get('jobTitle', 'N/A')"
+"{object_data.get('loginUrl', 'N/A')"
+"{object_data.get('mail', 'N/A')"
+"{object_data.get('mailEnabled', 'N/A')"
+"{object_data.get('membershipRule', 'N/A')"
+"{object_data.get('mobilePhone', 'N/A')"
+"{object_data.get('officeLocation', 'N/A')"
+"{object_data.get('operatingSystem', 'N/A')"
+"{object_data.get('operatingSystemVersion', 'N/A')"
+"{object_data.get('publisherDomain', 'N/A')"
+"{object_data.get('publisherName', 'N/A')"
+"{object_data.get('registeredOwners', [{"
+"{object_data.get('securityEnabled', 'N/A')"
+"{object_data.get('servicePrincipalType', 'N/A')"
+"{object_data.get('signInActivity', {"
+"{object_data.get('signInAudience', 'N/A')"
+"{object_data.get('trustType', 'N/A')"
+"{object_data.get('userPrincipalName', 'N/A')"
+"{object_data.get('verifiedPublisher', {"
+"{object_data.get('visibility', 'N/A')"
+"{response_json.get(p, 'N/A')"
+"{urlencode({'response_type': 'code', 'client_id': client_id, 'resource': resource, 'redirect_uri': redirect_uri, 'state': state"
+{'0' * 32
+{'Yes' if role['privileged'] else 'No'
+{'settingInstance': child
+{access_token
+{action
+{action.get('id')
+{action:<6
+{additional_domains_count
+{admin_consent_required
+{admin_suffix
+{app_id
+{app_role_id
+{app_role_response.status_code
+{appid
+{args.command
+{args.domain
+{args.id
+{args.mail_folder
+{args.select
+{args.tenant
+{args.top
+{assignment['id']
+{assignment['intent']
+{assignments_response.status_code
+{auth_url
+{autodiscover_url
+{bar:50
+{base_url
+{category
+{cert_id
+{cert_path
+{choice_value
+{client
+{config.get('actionType')
+{config.get('gracePeriodHours')
+{config.get('notificationTemplateType')
+{consent_required
+{created
+{data['appDisplayName']
+{datetime.now()
+{description
+{display_name
+{domain
+{domain_info['Name']:<42
+{domain_info['STS'] or ''
+{domain_info['Type']:<11
+{e
+{email_count
+{endpoint_address
+{ex
+{exists
+{expires
+{field
+{file_count
+{file_path
+{get_access_token(args.token)
+{grantreq.status_code
+{graph_api_url
+{group['GroupId']
+{group['GroupName']
+{group['displayName']
+{group['id']
+{group_id
+{header_encoded
+{highlighted_value
+{indent
+{k: group.get(k) for k in select_fields if k in group
+{key
+{key:<35
+{key:<{max_key_length
+{kid
+{kid or 'N/A'
+{kvURI.split('/certificates/')[0]
+{l_bar
+{len(groups_with_members)
+{list_item
+{location
+{mapped_value
+{mapped_value:<10
+{mdi_domain
+{member
+{member_id
+{message
+{object_type
+{odata_type
+{p
+{password
+{patch.status_code
+{payload_encoded
+{perm_type
+{permission
+{permission_name
+{permission_type
+{permissionid
+{policy['templateReference']['templateDisplayName']
+{policy_id
+{pretty_value
+{profile_type
+{r_bar
+{readable_rule
+{request.status_code
+{request_id
+{resource['resourceAppId']
+{response.reason
+{response.status_code
+{response.text
+{role['description']
+{role['displayName']
+{role['name']
+{role['roleTemplateId']
+{role['template_id']
+{role_id
+{role_name
+{role_type
+{rule_action
+{rule_description
+{rule_direction
+{rule_enabled
+{rule_interfaces
+{rule_local_ports
+{rule_name
+{rule_remote_ports
+{script_id
+{selector
+{setting_description
+{setting_id
+{setting_text
+{setting_type
+{setting_value
+{settings_map[setting_id]['options'][value]
+{sharepoint_tenant
+{signature
+{simple_value
+{siteId
+{sp['id']
+{sp_response.status_code
+{str(domain_info['DKIM']):<6
+{str(domain_info['DMARC']):<7
+{str(domain_info['DNS']):<5
+{str(domain_info['MTA-STS']):<8
+{str(domain_info['MX']):<5
+{str(domain_info['SPF']):<6
+{str(e)
+{str(uuid.uuid4())
+{str(value)
+{sub_key
+{sub_value
+{target
+{tenant
+{tenant_brand
+{tenant_id
+{tenant_mdi
+{tenant_name
+{tenant_region
+{tenant_sso
+{text
+{token_input
+{unsigned_jwt
+{url
+{username
+{username:<16
+{userproperty
+{uses_cloud_sync
+{value
+{value_field
+{version
+{x5t or 'N/A'

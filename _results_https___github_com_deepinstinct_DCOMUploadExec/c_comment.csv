@@ -1,0 +1,152 @@
+"//
+"// ""64"" for an x64 payload, ""32"" for x86 payload;"
+"// COM, set the ComVisible attribute to true on that type."
+"// DRIVE_CDROM,"
+"// DRIVE_FIXED,"
+"// DRIVE_RAMDISK,"
+"// DRIVE_REMOTE,"
+"// DRIVE_REMOVABLE,"
+"// IDABORT,  unrecoverable error occurred"
+"// IDCANCEL, user terminated prematurely,$resume with next action"
+"// IDIGNORE, skip remaining actions"
+"// IDOK,     completed actions successfully"
+"// IDRETRY,  sequence suspended, resume with same action"
+"// This file is a companion file, and an installed version exists."
+"// [assembly: AssemblyVersion(""1.0.*"")]"
+"// all preceeding messsages cached by the engine, following ones cached by message handler"
+"// calling sequence error, not in executable state"
+"// create a ""safe"" engine that is not subject to machine state and cannot modify machine state"
+"// engine timeout format string, CANNOT CONTAIN PARAMETERS"
+"// error message,   [1] is imsg/idbg code"
+"// ignore current execution platform and use AMD64, only valid w/iioCreateAdvertiseScript"
+"// ignore current execution platform and use IA64, only valid w/ iioCreatingAdvertiseScript"
+"// ignore current execution platform and use X86, only valid w/ iioCreatingAdvertiseScript"
+"// informative message for log, not to be displayed"
+"// internal flags, not sent to UI handlers"
+"// log header format string, not sent to Message"
+"// log trailer format string, not sent to Message"
+"// message box button styles - identical to Win32 definitions, default is imtOK"
+"// message box default button - identical to Win32 definitions, default is ficat"
+"// message box icon styles - identical to Win32 definitions, default is none"
+"// messages processed by message dispatcher, not sent to display or log"
+"// not sent to Message(), strings used for log and UI fields, MUST TRACK imsg values"
+"// out of memory format string, CANNOT CONTAIN PARAMETERS"
+"// premature termination format string, CANNOT CONTAIN PARAMETERS"
+"// progress gauge info, [1] units so far, [2] total"
+"// start of action, [1] action name, [2] description"
+"// user request,    [1] is imsg/idbg code"
+"// warning message, [1] is imsg/idbg code, not fatal"
+//      Build Number
+//      Major Version"
+//      Minor Version
+//      Revision
+//  determined by the state of it's companion parent.
+//  file should always be overwritten.
+// A checksum test on the currently installed file failed.
+// An InstallMode flag specified that the currently installed
+// Assign parsed values to the respective variables
+// General Information about an assembly is controlled through the following
+// IDABORT
+// IDB
+// IDCANCEL
+// IDIGNORE
+// IDNO
+// IDOK
+// IDRETRY
+// IDYES
+// IMsiConfigurationManager is the server side implementation of IMsiServer
+// IMsiMessage::Message return status codes
+// Info string displayed during script generation for uninstal during upgrade
+// Info string displayed while script is being built
+// Initialize COM
+// Input only!
+// Insist that we can access the installer key.
+// Installer has insufficient privileges to access file
+// MB_ABORTRETRYIGNORE
+// MB_DEFBUTTON1
+// MB_DEFBUTTON2
+// MB_DEFBUTTON3
+// MB_ICONERROR
+// MB_ICONINFORMATION
+// MB_ICONQUESTION
+// MB_ICONWARNING
+// MB_OK
+// MB_OKCANCEL
+// MB_RETRYCANCEL
+// MB_YESNO
+// MB_YESNOCANCEL
+// Regular expression to match the format [domain]\[user]:[password]@[address]
+// Setting ComVisible to false makes the types in this assembly not visible
+// Sharing violation prevent determination of version
+// The currently installed file has a higher version.
+// The currently installed file has a lower version.
+// The currently installed file has an equal version.
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+// There is no currently installed file.
+// This file is a companion file - the install state needs to
+// Time remaining string for basic UI progress dlg
+// Time remaining string for uninstall during upgrade
+// Used to indicate that we have a client engine.
+// Values are set to the default AssemblyPayload payload.dll
+// Version information for an assembly consists of the following four values:
+// You can specify all the values or you can default the Build and Revision Numbers"
+// [the value
+// action ended log message
+// action not invoked
+// action started log message
+// an int containing DosTime and DosDate
+// another install is in progress
+// associated with an assembly.
+// by using the '*' as shown below:
+// can be any GUIDs
+// can only send STREAM_FORMAT_COMPLIB_MODULE or STREAM_FORMAT_COMPLIB_MANIFEST.
+// changed uchar to bool
+// configure those according to your custom payloads
+// control message to handler [1] is control message type followed by params
+// data associated with individual action item
+// described in tongzx/nt5src/Source/XPSP1/NT/admin/darwin/src/engine/camgr.cpp line 352
+// enumeration for 1st arg of CreateAndRunEngine
+// enumeration for sourcelist type to work with
+// enumeration for types of custom action servers
+// force message in quiet or basic UI
+// free external UI handler
+// initialize security 
+// invalid Action table record data
+// list of files in use than need to be processed
+// load external UI handler
+// local path to your STRONG NAMED .NET assembly payload
+// local path to your created payload
+// mask for type code and flags
+// message type in high-order bits
+// messages processed by modal dialog and/or log
+// messages processed by modeless progress dialog
+// more methods exist
+// move past null 
+// no action taken
+// out of disk space for one or more volumes
+// parsed from array at rgCLSID
+// private use by MsiUIMessageContext
+// return status from IMsiEngine::Sequence and DoAction
+// scan for the end of the string
+// seems like any active pid would do lol
+// server context g_scServerContext
+// set of attributes. Change these attribute values to modify the information
+// set to 64 or 32 for x64 or x86
+// set to your assembly name
+// setup identity details if existing
+// setup network info if we are directed to a remote address
+// sigcheck.exe -n PAYLOAD_ASSEMBLY_PATH
+// sn.exe -T PAYLOAD_ASSEMBLY_PATH
+// string displayed in basic UI in the ActionStart field.
+// suppress message from log (LOGACTIONS property)
+// temporary until floppies and removables are distinguished
+// the MSI DCOM Upload & Exec logic 
+// the assembly name
+// the interface we aim to get
+// the value from `sigcheck.exe -n
+// thread terminated prematurely
+// to COM components.  If you need to access a type in this assembly from
+// unsuccessful
+// use handler to show dialog or run wizard
+// using same values as Win32 API
+// various options flags passed to IMsiEngine::Initialize

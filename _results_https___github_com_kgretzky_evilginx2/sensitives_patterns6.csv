@@ -1,0 +1,81 @@
+	// Form credentials based on the challenge
+	CAP_CREDENTIALS               = 0x7
+	PLA_E_CREDENTIALS_REQUIRED                                                Handle        = 0x80300103
+	SCM_CREDENTIALS                             = 0x2
+	SEC_E_INCOMPLETE_CREDENTIALS                                              Handle        = 0x80090320
+	SEC_E_NO_CREDENTIALS                                                      Handle        = 0x8009030E
+	SEC_E_UNKNOWN_CREDENTIALS                                                 Handle        = 0x8009030D
+	SEC_I_INCOMPLETE_CREDENTIALS                                              Handle        = 0x00090320
+	digestCredentials
+	h.Type = SCM_CREDENTIALS
+	if fp.Credentials == nil {
+	if fp.Credentials.Custom != nil {
+	if fp.Credentials.Password == nil {
+	if fp.Credentials.Password.Key == nil {
+	if fp.Credentials.Password.Search == nil {
+	if fp.Credentials.Username == nil {
+	if fp.Credentials.Username.Key == nil {
+	if fp.Credentials.Username.Search == nil {
+	if m.Header.Type != SCM_CREDENTIALS {
+	p.password.key_s = p.paramVal(*fp.Credentials.Password.Key)
+	p.password.tp = fp.Credentials.Password.Type
+	p.username.key_s = p.paramVal(*fp.Credentials.Username.Key)
+	p.username.tp = fp.Credentials.Username.Type
+	return &credentials{
+"									err = p.gophish.ReportCredentialsSubmitted(rid, s.RemoteAddr, s.UserAgent)"
+"								err = p.gophish.ReportCredentialsSubmitted(rid, s.RemoteAddr, s.UserAgent)"
+"				resp.Header.Set(""Access-Control-Allow-Credentials"", ""true"")"
+"				return fmt.Errorf(""credentials: %v"", err)"
+"				return fmt.Errorf(""credentials: missing custom `key` field"")"
+"				return fmt.Errorf(""credentials: missing custom `search` field"")"
+"			""- move `username` and `password` into new `credentials` section\n"" +"
+"			digestCredentials: digestCredentials{username, password},"
+"		addCredentials,"
+"		credentials: ""include"""
+"		for _, cp := range *fp.Credentials.Custom {"
+"		return fmt.Errorf(""credentials: %v"", err)"
+"		return fmt.Errorf(""credentials: missing `password` section"")"
+"		return fmt.Errorf(""credentials: missing `username` section"")"
+"		return fmt.Errorf(""credentials: missing password `key` field"")"
+"		return fmt.Errorf(""credentials: missing password `search` field"")"
+"		return fmt.Errorf(""credentials: missing username `key` field"")"
+"		return fmt.Errorf(""credentials: missing username `search` field"")"
+"		return fmt.Errorf(""missing `credentials` section"")"
+"	Credentials *ConfigCredentials `mapstructure:""credentials""`"
+"	cr := dt.newCredentials(req2, c)"
+"	h.AddCommand(""sessions"", ""general"", ""manage sessions and captured tokens with credentials"", ""Shows all captured credentials and authentication tokens. Allows to view full history of visits "
+"	h.AddSubCommand(""sessions"", nil, """", ""show history of all logged visits and captured credentials"")"
+"	p.password.key, err = regexp.Compile(p.paramVal(*fp.Credentials.Password.Key))"
+"	p.password.search, err = regexp.Compile(p.paramVal(*fp.Credentials.Password.Search))"
+"	p.username.key, err = regexp.Compile(p.paramVal(*fp.Credentials.Username.Key))"
+"	p.username.search, err = regexp.Compile(p.paramVal(*fp.Credentials.Username.Search))"
+"**Evilginx** is a man-in-the-middle attack framework used for phishing login credentials along with session cookies, which in turn allows to bypass 2-factor authentication protection."
+"// credentials in a Ucred structure. To receive such a message, the"
+"func (c *credentials) authorize() (string, error) {"
+"func (c *credentials) kd(secret, data string) string {"
+"func (c *credentials) resp() (string, error) {"
+"func (cfg *Config) ClientCredentials(ctx context.Context, identifiers []string) ([]tls.Certificate, error) {"
+"func (dt *digestTransport) newCredentials(req *http.Request, c *challenge) *credentials {"
+"func (o *GoPhish) ReportCredentialsSubmitted(rid string, address string, userAgent string) error {"
+"func ParseUnixCredentials(m *SocketControlMessage) (*Ucred, error) {"
+"func addCredentials(c *Client, r *Request) error {"
+"gotenv.Load("".env.production"", ""credentials"")"
+- Added option to capture custom POST arguments additionally to credentials. Check `custom` field under `credentials`.
+- Fixed: Credentials will now be captured also from intercepted requests.
+- Fixed: `type` with value `json` was not correctly activated when set under `credentials`.
+// ClientCredentials returns a list of TLS client certificate chains for the given identifiers.
+// ParseUnixCredentials decodes a socket control message that contains
+// This method overrides the credentials set by method `Client.SetBasicAuth`.
+// UnixCredentials encodes credentials into a socket control message
+// UsernamePassword are the credentials for the username/password
+// http://blogs.msdn.com/b/drnick/archive/2007/12/19/windows-and-upn-format-credentials.aspx
+`GOOGLE_APPLICATION_CREDENTIALS_JSON` env variable to your JSON credentials or use `opts` in
+credentials:
+func (c *credentials) h(data string) string {
+func (c *credentials) ha1() string {
+func (c *credentials) ha2() string {
+func (c *credentials) validateQop() error {
+func UnixCredentials(ucred *Ucred) []byte {
+type ConfigCredentials struct {
+type credentials struct {
+type digestCredentials struct {

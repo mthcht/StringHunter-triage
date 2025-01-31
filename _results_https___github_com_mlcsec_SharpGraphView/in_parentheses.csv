@@ -1,0 +1,2461 @@
+"( <see cref=""F:System.String.Empty""/> if null"
+"( <see cref=""T:System.IdentityModel.Tokens.Jwt.JwtSecurityToken""/>( actor.Claims "
+"(!property.Key.StartsWith(""@odata.context"""
+"(!tokenResponse.IsSuccessStatusCode || tokenResponseContent.Contains(""authorization_pending"""
+"("""
+"("""""
+"("".NETFramework,Version=v4.7.2"", FrameworkDisplayName = "".NET Framework 4.7.2"""
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""1970-01-01T00:00:00Z"""
+"(""825e2088-ec7c-4ab0-852a-4f1fef178e37"""
+"(""="", """""
+"(""Authorization"", result.CreateAuthorizationHeader("
+"(""Bearer"", Config.accessToken"
+"(""Bearer"", accessToken"
+"(""Black Forest"""
+"(""Certificate not found."""
+"(""Entity Types: driveItem, message, chatMessage, site, event"""
+"(""Errors:"""
+"(""GET"", ""POST"" etc."
+"(""Invalid access token format."""
+"(""No scopes found in the access token."""
+"(""SharpGraph.exe Add-ApplicationPassword -id <app id> -token <access token>"""
+"(""SharpGraph.exe Add-UserTAP -id <user id> -token <access token>"""
+"(""SharpGraph.exe Get-AdministrativeUnitMember -id <admin unit id> -token <access token>"""
+"(""SharpGraph.exe Get-UserChatMessages -id <user id or upn> -token <access token>"""
+"(""SharpGraph.exe Get-UserPermissionGrants -id <app id> -token <access token>"""
+"(""SharpGraph.exe Invoke-Query -Query \""https://graph.microsoft.com/v1.0/sites/{siteId}/drives\"" -token <access token>"""
+"(""SharpGraph.exe List-ChatMessages -id <chat id> -token <access token>"""
+"(""SharpGraph.exe Update-UserPassword -id <user id or upn> -token <access token>"""
+"(""SharpGraphView"""
+"(""SharpGraphView.exe Get-TenantID -domain <target.domain>"""
+"(""SharpGraphView.exe Get-TokenScope -token <access token>"""
+"(""SharpGraphView.exe Invoke-CertToAccessToken -tenant <tenant id> -cert <path_to_certificate> -id <appid>"""
+"(""SharpGraphView.exe Invoke-RefreshToAzureManagementToken -tenant <tenant id> -token <refresh token>"""
+"(""SharpGraphView.exe Invoke-RefreshToMSGraphToken -tenant <tenant id> -token <refresh token>"""
+"(""SharpGraphView.exe Invoke-RefreshToVaultToken -token <refresh>"""
+"(""SharpGraphView.exe New-SignedJWT -id <appid> -tenant <tenantid> -query <https://targetvault.vault.net> -token <vault token> -key <certificate name>"""
+"(""SharpMgGraph.exe Get-ConditionalAccessPolicy -id <policy id> -token <access token>"""
+"(""SharpMgGraph.exe Get-GroupMember -id <group id> -token <access token>"""
+"(""SharpMgGraph.exe Invoke-Search -search \""keyword\"" -entity \""entity\"" -token <access token>"""
+"(""User-Agent"", $""{userAgent}"""
+"(""[*] authorization_pending"""
+"(""[+] Password added to application successfully"""
+"(""[+] TAP added successfully"""
+"(""[+] User password profile updated successfully"""
+"(""[-] Polling expired. Token not obtained."""
+"(""\n[!] No ID supplied"""
+"(""\n[!] No domain supplied"""
+"(""\n[!] No tenant or certificate supplied"""
+"(""\n[!] No token or tenant supplied"""
+"(""\n[!] No token supplied"""
+"(""\n[!] Query API endpoint not supplied"""
+"(""\n[!] Search string or entity not supplied"""
+"(""\n[*] Add-ApplicationPassword"""
+"(""\n[*] Add-UserTAP"""
+"(""\n[*] Find-PrivilegedRoleUsers"""
+"(""\n[*] Get-AdministrativeUnitMember"""
+"(""\n[*] Get-AppRoleAssignments"""
+"(""\n[*] Get-ConditionalAccessPolicy"""
+"(""\n[*] Get-CrossTenantAccessPolicy"""
+"(""\n[*] Get-CurrentUser"""
+"(""\n[*] Get-CurrentUserActivity"""
+"(""\n[*] Get-Domains"""
+"(""\n[*] Get-GraphTokens"""
+"(""\n[*] Get-Group"""
+"(""\n[*] Get-GroupMember"""
+"(""\n[*] Get-Messages"""
+"(""\n[*] Get-OneDriveFiles"""
+"(""\n[*] Get-OrgInfo"""
+"(""\n[*] Get-PartnerCrossTenantAccessPolicy"""
+"(""\n[*] Get-Password"""
+"(""\n[*] Get-PersonalContacts"""
+"(""\n[*] Get-TemporaryAccessPassword"""
+"(""\n[*] Get-TenantID"""
+"(""\n[*] Get-TokenScope"""
+"(""\n[*] Get-User"""
+"(""\n[*] Get-UserChatMessages"""
+"(""\n[*] Get-UserGroupMembership"""
+"(""\n[*] Get-UserPermissionGrants"""
+"(""\n[*] Get-UserProperties"""
+"(""\n[*] Get-UserTransitiveGroupMembership"""
+"(""\n[*] Get-oauth2PermissionGrants"""
+"(""\n[*] Invoke-CertToAccessToken"""
+"(""\n[*] Invoke-CustomQuery"""
+"(""\n[*] Invoke-RefreshToAzureManagementToken"""
+"(""\n[*] Invoke-RefreshToMSGraphToken"""
+"(""\n[*] Invoke-RefreshToVaultToken"""
+"(""\n[*] Invoke-Search"""
+"(""\n[*] List-AdministrativeUnits"""
+"(""\n[*] List-Applications"""
+"(""\n[*] List-AuthMethods"""
+"(""\n[*] List-ChatMessages"""
+"(""\n[*] List-Chats"""
+"(""\n[*] List-ConditionalAccessPolicies"""
+"(""\n[*] List-ConditionalAuthenticationContexts"""
+"(""\n[*] List-ConditionalNamedLocations"""
+"(""\n[*] List-Devices"""
+"(""\n[*] List-DirectoryRoles"""
+"(""\n[*] List-ExternalConnections"""
+"(""\n[*] List-JoinedTeams"""
+"(""\n[*] List-Notebooks"""
+"(""\n[*] List-OneDrives"""
+"(""\n[*] List-RecentOneDriveFiles"""
+"(""\n[*] List-ServicePrincipals"""
+"(""\n[*] List-SharePointRoot"""
+"(""\n[*] List-SharePointSites"""
+"(""\n[*] List-SharedOneDriveFiles"""
+"(""\n[*] List-Tenants"""
+"(""\n[*] New-SignedJWT"""
+"(""\n[*] Update-UserPassword"""
+"(""\n[+] Azure Management Token Obtained!"""
+"(""\n[+] Certificate Details Obtained!"""
+"(""\n[+] Forged JWT:"""
+"(""\n[+] Token Obtained!"""
+"(""clientId"""
+"(""client_assertion"", jwtToken"
+"(""client_assertion_type"", ""urn:ietf:params:oauth:client-assertion-type:jwt-bearer"""
+"(""client_id"", clientId"
+"(""grant_type"", ""client_credentials"""
+"(""https://login.microsoftonline.com/Common/oauth2/token?api-version=1.0"", new FormUrlEncodedContent(tokenBody"
+"(""https://login.microsoftonline.com/common/oauth2/devicecode?api-version=1.0"", new FormUrlEncodedContent(body"
+"(""https://login.microsoftonline.com/common/oauth2/v2.0/token"", content"
+"(""https://login.windows-ppe.net/1234-567-890-12345678"
+"(""https://login.windows-ppe.net/common"
+"(""objectid"""
+"(""resourceId"""
+"(""scope"", ""https://graph.microsoft.com/.default"""
+"(""sub"", clientId"
+"(""yyyy-MM-ddTHH:mm:ssZ"""
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"($""[!] Error retrieving OpenID configuration: {ex.Message}"""
+"($""[!] HTTP Error: {ex.Message}"""
+"($""[*] Application ID: {Config.id}"""
+"($""[*] Scope: https://management.azure.com/.default"""
+"($""[*] Tenant ID: {Config.tenant}"""
+"($""[*] {kvp.Key}: {kvp.Value}"""
+"($""[*] {property.Name}: {property.Value}"""
+"($""[+] Role: {role.displayName}"""
+"($""[+] Token Obtained! ({DateTime.Now}"
+"($""[-] Error content: {errorContent}"""
+"($""[-] Error loading certificate from file: {ex.Message}"""
+"($""[-] Error reading token from file: {ex.Message}"""
+"($""[-] Error: {ex.Message}"""
+"($""[-] Error: {response.StatusCode} - {response.ReasonPhrase}"""
+"($""[-] Error: {responseJwt.StatusCode} ({(int"
+"($""[-] Failed to get Azure Management token: {response.ReasonPhrase}"""
+"($""[-] Failed to get Azure Vault token: {response.ReasonPhrase}"""
+"($""[-] Failed to get Microsoft Graph token: {response.ReasonPhrase}"""
+"($""[-] Failed to get certificate access token: {response.ReasonPhrase}"""
+"($""[-] Failed to parse device code response: {ex.Message}"""
+"($""\n[+] Token information written to '{filePath}'."""
+"($""https://login.microsoftonline.com/{Config.domain}/.well-known/openid-configuration"""
+"($""https://login.microsoftonline.com/{tenantId}/oauth2/v2.0/token"", content"
+"($""kid: {kid ?? ""N/A""}"""
+"($""x5t: {x5t ?? ""N/A""}"""
+"($""{authUrl}/oauth2/token?api-version=1.0"", content"
+"($""{message}\n"""
+"($""{property.Key}: {property.Value}"""
+"($JWTExpirationTimeSpan, 0"
+"($NotBeforeExpirationTimeSpan, 0"
+"($kvURI, $AppKeyVaultToken, $keyName"
+"(&lt;, &gt;, &amp;, &apos;, &quot;"
+"('+', '-'"
+"('/', '_'"
+"('app id', $password"
+"()	MI(C$OdEu"""
+"(0, 0, 0, 1"
+"(0,0,0,1"
+"(0,0,1"
+"(0,0,1,0"
+"(0,1"
+"(0,1,0"
+"(0,1,0,0"
+"(1,0"
+"(1,0,0"
+"(1,0,0,0"
+"(<c>client_id</c>, <c>wam_account_id</c>"
+"(<c>tenant_id</c>, <c>tenant_profile</c>"
+"(<paramref name=""arg""/>"
+"(<see cref=""F:Microsoft.Identity.Client.ApplicationBase.DefaultAuthority""/>"
+"(<see cref=""F:System.Numerics.Plane.D""></see>"
+"(<see cref=""M:Microsoft.Identity.Client.AbstractAcquireTokenParameterBuilder`1.WithAuthority(Microsoft.Identity.Client.AzureCloudInstance,System.Guid,System.Boolean"
+"(<see cref=""M:Microsoft.Identity.Client.AbstractApplicationBuilder`1.WithAuthority(Microsoft.Identity.Client.AzureCloudInstance,System.Guid,System.Boolean"
+"(<see cref=""M:System.Diagnostics.Activity.Stop"" /> or <see cref=""M:System.Diagnostics.Activity.SetEndTime(System.DateTime"
+"(<see cref=""P:Microsoft.Identity.Json.Schema.JsonSchema.Maximum""/>"
+"(<see cref=""P:Microsoft.Identity.Json.Schema.JsonSchema.Minimum""/>"
+"(<see cref=""P:Newtonsoft.Json.Schema.JsonSchema.Maximum""/>"
+"(<see cref=""P:Newtonsoft.Json.Schema.JsonSchema.Minimum""/>"
+"(<see cref=""T:Microsoft.Identity.Client.ConfidentialClientApplication""/>"
+"(<see cref=""T:System.Diagnostics.Activity"" />"
+"(<see cref=""T:System.String"" />"
+"(<see langword=""Nothing"" /> in Visual Basic"
+"(AAD, B2C, ADFS etc."
+"(AAD, B2C, ADFS, etc."
+"(ADAL V3 format, and unified cache format"
+"(Async-Operation, LocationHeader"
+"(AzureAsync, locaiton header"
+"(Certificate, Secret, Client Assertion"
+"(Config.accessToken, Config.id"
+"(Config.accessToken, Config.query"
+"(Config.accessToken, Config.searchString, Config.entity, apiUrl"
+"(Config.accessToken, apiUrl"
+"(Config.accessToken, requestUrl"
+"(Deprecated, please use GetLongRunningOperationResultAsync"
+"(ETRP_Q"""
+"(GET, POST, etc."
+"(HttpMethod.Post, requestUrl"
+"(IIdentityLogger, bool"
+"(JSON, Xml, etc"
+"(KHTML, like Gecko"
+"(KeyRing, KeyChain, DPAPI"
+"(Microsoft.Identity.Client.AadAuthorityAudience,System.Boolean"
+"(Microsoft.Identity.Client.AbstractAcquireTokenParameterBuilder{``0},System.Collections.Generic.IDictionary{System.String,System.String}"
+"(Microsoft.Identity.Client.AbstractAcquireTokenParameterBuilder{``0},System.Func{Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData,System.Threading.Tasks.Task}"
+"(Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder,System.String,System.String"
+"(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,Microsoft.Identity.Client.Extensibility.ICustomWebUi"
+"(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String"
+"(Microsoft.Identity.Client.AcquireTokenOnBehalfOfParameterBuilder,System.Boolean"
+"(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String"
+"(Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration,Microsoft.Identity.Client.Internal.IServiceBundle"
+"(Microsoft.Identity.Client.AzureCloudInstance,Microsoft.Identity.Client.AadAuthorityAudience,System.Boolean"
+"(Microsoft.Identity.Client.AzureCloudInstance,System.Guid,System.Boolean"
+"(Microsoft.Identity.Client.AzureCloudInstance,System.String,System.Boolean"
+"(Microsoft.Identity.Client.Cache.ITokenCacheAccessor,Microsoft.Identity.Client.Core.ILoggerAdapter"
+"(Microsoft.Identity.Client.Cache.Items.MsalAccessTokenCacheItem,System.Func{System.Threading.Tasks.Task{Microsoft.Identity.Client.AuthenticationResult}},Microsoft.Identity.Client.Core.ILoggerAdapter,Microsoft.Identity.Client.Internal.IServiceBundle,Microsoft.Identity.Client.TelemetryCore.Internal.Events.ApiEvent.ApiIds"
+"(Microsoft.Identity.Client.ConfidentialClientApplicationBuilder,System.Func{Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters,System.Threading.Tasks.Task{Microsoft.Identity.Client.Extensibility.AppTokenProviderResult}}"
+"(Microsoft.Identity.Client.Core.ILoggerAdapter,Microsoft.Identity.Client.Cache.ILegacyCachePersistence,System.String"
+"(Microsoft.Identity.Client.Core.ILoggerAdapter,Microsoft.Identity.Client.Cache.ILegacyCachePersistence,System.String,System.String,System.String"
+"(Microsoft.Identity.Client.Core.ILoggerAdapter,System.Func{System.String}"
+"(Microsoft.Identity.Client.Core.ILoggerAdapter,System.Func{System.String},System.Func{System.String}"
+"(Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties,Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger"
+"(Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties,System.Diagnostics.TraceSource"
+"(Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties,System.Diagnostics.TraceSource,System.Collections.Generic.HashSet{System.String},System.IO.FileSystemWatcher"
+"(Microsoft.Identity.Client.IAccount,System.Threading.CancellationToken"
+"(Microsoft.Identity.Client.ILongRunningWebApi,System.String,System.Threading.CancellationToken"
+"(Microsoft.Identity.Client.IMsalHttpClientFactory,System.Boolean"
+"(Microsoft.Identity.Client.ITokenCache,Microsoft.Identity.Client.CacheOptions"
+"(Microsoft.Identity.Client.ITokenCache,Microsoft.Identity.Client.Extensions.Msal.Storage,System.Diagnostics.TraceSource"
+"(Microsoft.Identity.Client.ITokenCacheSerializer,System.String,Microsoft.Identity.Client.IAccount,System.Boolean,System.Boolean,System.String,System.Boolean,System.Nullable{System.DateTimeOffset},System.Threading.CancellationToken"
+"(Microsoft.Identity.Client.ITokenCacheSerializer,System.String,Microsoft.Identity.Client.IAccount,System.Boolean,System.Boolean,System.String,System.Boolean,System.Nullable{System.DateTimeOffset},System.Threading.CancellationToken,System.Guid"
+"(Microsoft.Identity.Client.ITokenCacheSerializer,System.String,Microsoft.Identity.Client.IAccount,System.Boolean,System.Boolean,System.String,System.Boolean,System.Nullable{System.DateTimeOffset},System.Threading.CancellationToken,System.Guid,System.Collections.Generic.IEnumerable{System.String},System.String"
+"(Microsoft.Identity.Client.ITokenCacheSerializer,System.String,Microsoft.Identity.Client.IAccount,System.Boolean,System.Boolean,System.String,System.Boolean,System.Nullable{System.DateTimeOffset},System.Threading.CancellationToken,System.Guid,System.Collections.Generic.IEnumerable{System.String},System.String,Microsoft.IdentityModel.Abstractions.IIdentityLogger,System.Boolean,Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData"
+"(Microsoft.Identity.Client.Internal.IServiceBundle,Microsoft.Identity.Client.Cache.ILegacyCachePersistence,System.Boolean,Microsoft.Identity.Client.Cache.CacheImpl.ICacheSerializationProvider"
+"(Microsoft.Identity.Client.Internal.RequestContext,Microsoft.Identity.Client.AuthorityInfo,Microsoft.Identity.Client.IAccount"
+"(Microsoft.Identity.Client.Internal.Requests.AuthenticationRequestParameters,System.Collections.Generic.IEnumerable{System.String},System.String,System.Collections.Generic.HashSet{System.String},System.String,System.String"
+"(Microsoft.Identity.Client.Internal.Requests.AuthenticationRequestParameters,System.String"
+"(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket,System.Int64"
+"(Microsoft.Identity.Client.LogCallback,System.Nullable{Microsoft.Identity.Client.LogLevel},System.Nullable{System.Boolean},System.Nullable{System.Boolean}"
+"(Microsoft.Identity.Client.LogLevel,System.Boolean,System.Boolean"
+"(Microsoft.Identity.Client.Prompt,Microsoft.Identity.Client.Prompt"
+"(Microsoft.Identity.Client.Region.RegionOutcome,System.String,System.String"
+"(Microsoft.Identity.Client.WsTrust.WsTrustEndpoint,System.String,Microsoft.Identity.Client.Internal.RequestContext"
+"(Microsoft.Identity.Json.Formatting,Microsoft.Identity.Json.JsonConverter[]"
+"(Microsoft.Identity.Json.JsonReader,Microsoft.Identity.Json.Linq.JsonLoadSettings"
+"(Microsoft.Identity.Json.JsonReader,Microsoft.Identity.Json.Linq.JsonLoadSettings,System.Threading.CancellationToken"
+"(Microsoft.Identity.Json.JsonReader,Microsoft.Identity.Json.Schema.JsonSchemaResolver"
+"(Microsoft.Identity.Json.JsonReader,System.Boolean"
+"(Microsoft.Identity.Json.JsonReader,System.Boolean,System.Threading.CancellationToken"
+"(Microsoft.Identity.Json.JsonReader,System.Object"
+"(Microsoft.Identity.Json.JsonReader,System.Threading.CancellationToken"
+"(Microsoft.Identity.Json.JsonReader,System.Type"
+"(Microsoft.Identity.Json.JsonReader,System.Type,System.Object,Microsoft.Identity.Json.JsonSerializer"
+"(Microsoft.Identity.Json.JsonReader,System.Type,`0,System.Boolean,Microsoft.Identity.Json.JsonSerializer"
+"(Microsoft.Identity.Json.JsonToken,System.Object"
+"(Microsoft.Identity.Json.JsonToken,System.Object,System.Boolean"
+"(Microsoft.Identity.Json.JsonToken,System.Object,System.Threading.CancellationToken"
+"(Microsoft.Identity.Json.JsonToken,System.Threading.CancellationToken"
+"(Microsoft.Identity.Json.JsonWriter,Microsoft.Identity.Json.JsonConverter[]"
+"(Microsoft.Identity.Json.JsonWriter,Microsoft.Identity.Json.Schema.JsonSchemaResolver"
+"(Microsoft.Identity.Json.JsonWriter,System.Object"
+"(Microsoft.Identity.Json.JsonWriter,System.Object,Microsoft.Identity.Json.JsonSerializer"
+"(Microsoft.Identity.Json.JsonWriter,System.Object,System.Type"
+"(Microsoft.Identity.Json.JsonWriter,System.Threading.CancellationToken,Microsoft.Identity.Json.JsonConverter[]"
+"(Microsoft.Identity.Json.JsonWriter,`0,Microsoft.Identity.Json.JsonSerializer"
+"(Microsoft.Identity.Json.Linq.JToken,Microsoft.Identity.Json.Linq.JToken"
+"(Microsoft.Identity.Json.Linq.JToken,Microsoft.Identity.Json.Schema.JsonSchema"
+"(Microsoft.Identity.Json.Linq.JToken,Microsoft.Identity.Json.Schema.JsonSchema,Microsoft.Identity.Json.Schema.ValidationEventHandler"
+"(Microsoft.Identity.Json.Linq.JToken,Microsoft.Identity.Json.Schema.JsonSchema,System.Collections.Generic.IList{System.String}@"
+"(Microsoft.Identity.Json.Linq.JToken,System.String"
+"(Microsoft.Identity.Json.Linq.JToken[],System.Int32"
+"(Microsoft.Identity.Json.Serialization.JsonProperty,System.Reflection.ParameterInfo"
+"(Microsoft.Identity.Json.Serialization.NamingStrategy,System.Boolean"
+"(Microsoft.Identity.Model, Microsoft.Identity.Web"
+"(Microsoft.IdentityModel.Abstractions.EventLogLevel,System.Exception,System.String,System.Object[]"
+"(Microsoft.IdentityModel.Abstractions.IIdentityLogger,System.Boolean"
+"(Microsoft.IdentityModel.Abstractions.ITelemetryClient[],Microsoft.IdentityModel.Abstractions.TelemetryEventDetails"
+"(Microsoft.IdentityModel.Abstractions.ITelemetryClient[],System.String"
+"(Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters,Microsoft.IdentityModel.Tokens.BaseConfiguration"
+"(Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters,System.String"
+"(Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(Microsoft.IdentityModel.Tokens.CryptoProviderCacheOptions,System.Threading.Tasks.TaskCreationOptions,System.Int32"
+"(Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary{System.String,System.String}"
+"(Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary{System.String,System.String},System.String"
+"(Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Collections.Generic.IDictionary{System.String,System.Object}"
+"(Microsoft.IdentityModel.Tokens.JsonWebKey,System.Boolean"
+"(Microsoft.IdentityModel.Tokens.SecurityKey,Microsoft.IdentityModel.Tokens.SecurityKey,System.String,System.String"
+"(Microsoft.IdentityModel.Tokens.SecurityKey,Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(Microsoft.IdentityModel.Tokens.SecurityKey,Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters,Microsoft.IdentityModel.Tokens.BaseConfiguration"
+"(Microsoft.IdentityModel.Tokens.SecurityKey,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(Microsoft.IdentityModel.Tokens.SecurityKey,System.Byte[],System.Byte[],System.Byte[]"
+"(Microsoft.IdentityModel.Tokens.SecurityKey,System.IdentityModel.Tokens.Jwt.JwtSecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(Microsoft.IdentityModel.Tokens.SecurityKey,System.String"
+"(Microsoft.IdentityModel.Tokens.SecurityKey,System.String,System.Boolean"
+"(Microsoft.IdentityModel.Tokens.SecurityKey,System.String,System.String"
+"(Microsoft.IdentityModel.Tokens.SecurityKey,System.String,System.String,System.Boolean,Microsoft.IdentityModel.Tokens.SignatureProvider@"
+"(Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenHandler,Microsoft.IdentityModel.Tokens.TokenValidationParameters,System.String"
+"(Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters,Microsoft.IdentityModel.JsonWebTokens.JwtTokenDecryptionParameters"
+"(Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters,System.String"
+"(Microsoft.IdentityModel.Tokens.SecurityToken,System.Boolean"
+"(Microsoft.IdentityModel.Tokens.SecurityToken,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{System.String},Microsoft.IdentityModel.Tokens.TokenValidationParameters,Microsoft.IdentityModel.Tokens.BaseConfiguration"
+"(Microsoft.IdentityModel.Tokens.SecurityToken,System.String"
+"(Microsoft.IdentityModel.Tokens.SigningCredentials,System.Collections.Generic.IDictionary{System.String,System.String}"
+"(Microsoft.IdentityModel.Tokens.SigningCredentials,System.Collections.Generic.IDictionary{System.String,System.String},System.String"
+"(Microsoft.IdentityModel.Tokens.SigningCredentials,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Collections.Generic.IDictionary{System.String,System.Object}"
+"(Microsoft.IdentityModel.Tokens.SymmetricSecurityKey,System.String"
+"(Microsoft.IdentityModel.Tokens.ValidationFailure,System.String"
+"(Microsoft.IdentityModel.Tokens.X509SecurityKey,System.Boolean"
+"(Microsoft.Rest.Azure.AzureAsyncOperation,Microsoft.Rest.Azure.AzureOperationResponse{Newtonsoft.Json.Linq.JObject,Newtonsoft.Json.Linq.JObject},Microsoft.Rest.Azure.PollingState{``0,``1},System.String,System.Net.Http.HttpMethod"
+"(Microsoft.Rest.Azure.IAzureClient,Microsoft.Rest.Azure.AzureOperationHeaderResponse{``0},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken"
+"(Microsoft.Rest.Azure.IAzureClient,Microsoft.Rest.Azure.AzureOperationResponse,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken"
+"(Microsoft.Rest.Azure.IAzureClient,Microsoft.Rest.Azure.AzureOperationResponse{`0,`1},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken"
+"(Microsoft.Rest.Azure.IAzureClient,Microsoft.Rest.Azure.AzureOperationResponse{``0,``1},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken"
+"(Microsoft.Rest.Azure.IAzureClient,Microsoft.Rest.Azure.AzureOperationResponse{``0},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken"
+"(Microsoft.Rest.Azure.IAzureClient,Microsoft.Rest.Azure.PollingState{``0,``1},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken,System.Net.Http.HttpMethod"
+"(Microsoft.Rest.Azure.IAzureClient,Microsoft.Rest.Azure.PollingState{``0,``1},System.Uri,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken,System.Net.Http.HttpMethod"
+"(Microsoft.Rest.Azure.IAzureClient,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken"
+"(Microsoft.Rest.HttpOperationResponse{`0,`1},System.Nullable{System.Int32}"
+"(Microsoft.Rest.ITokenProvider,System.String,System.String"
+"(Microsoft.Rest.TransientFaultHandling.ITransientErrorDetectionStrategy,Microsoft.Rest.TransientFaultHandling.RetryStrategy"
+"(Microsoft.Rest.TransientFaultHandling.ITransientErrorDetectionStrategy,System.Int32"
+"(Microsoft.Rest.TransientFaultHandling.ITransientErrorDetectionStrategy,System.Int32,System.TimeSpan"
+"(Microsoft.Rest.TransientFaultHandling.ITransientErrorDetectionStrategy,System.Int32,System.TimeSpan,System.TimeSpan"
+"(Microsoft.Rest.TransientFaultHandling.ITransientErrorDetectionStrategy,System.Int32,System.TimeSpan,System.TimeSpan,System.TimeSpan"
+"(Microsoft.Rest.TransientFaultHandling.RetryManager,System.Boolean"
+"(Microsoft.Rest.TransientFaultHandling.RetryPolicy,System.Net.Http.DelegatingHandler"
+"(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Action"
+"(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Func{System.Threading.Tasks.Task{``0}}"
+"(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Func{System.Threading.Tasks.Task}"
+"(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Func{``0}"
+"(Newtonsoft.Json.Formatting,Newtonsoft.Json.JsonConverter[]"
+"(Newtonsoft.Json.JsonReader,Newtonsoft.Json.Linq.JsonLoadSettings"
+"(Newtonsoft.Json.JsonReader,Newtonsoft.Json.Linq.JsonLoadSettings,System.Threading.CancellationToken"
+"(Newtonsoft.Json.JsonReader,Newtonsoft.Json.Schema.JsonSchemaResolver"
+"(Newtonsoft.Json.JsonReader,System.Boolean"
+"(Newtonsoft.Json.JsonReader,System.Boolean,System.Threading.CancellationToken"
+"(Newtonsoft.Json.JsonReader,System.Object"
+"(Newtonsoft.Json.JsonReader,System.Threading.CancellationToken"
+"(Newtonsoft.Json.JsonReader,System.Type"
+"(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer"
+"(Newtonsoft.Json.JsonReader,System.Type,`0,System.Boolean,Newtonsoft.Json.JsonSerializer"
+"(Newtonsoft.Json.JsonSerializer,Newtonsoft.Json.JsonConverter"
+"(Newtonsoft.Json.JsonToken,System.Object"
+"(Newtonsoft.Json.JsonToken,System.Object,System.Boolean"
+"(Newtonsoft.Json.JsonToken,System.Object,System.Threading.CancellationToken"
+"(Newtonsoft.Json.JsonToken,System.Threading.CancellationToken"
+"(Newtonsoft.Json.JsonWriter,Newtonsoft.Json.JsonConverter[]"
+"(Newtonsoft.Json.JsonWriter,Newtonsoft.Json.Schema.JsonSchemaResolver"
+"(Newtonsoft.Json.JsonWriter,System.Object"
+"(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer"
+"(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer,System.Predicate{Newtonsoft.Json.Serialization.JsonProperty}"
+"(Newtonsoft.Json.JsonWriter,System.Object,System.Type"
+"(Newtonsoft.Json.JsonWriter,System.Threading.CancellationToken,Newtonsoft.Json.JsonConverter[]"
+"(Newtonsoft.Json.JsonWriter,`0,Newtonsoft.Json.JsonSerializer"
+"(Newtonsoft.Json.Linq.JObject,System.String"
+"(Newtonsoft.Json.Linq.JToken,Newtonsoft.Json.Linq.JToken"
+"(Newtonsoft.Json.Linq.JToken,Newtonsoft.Json.Schema.JsonSchema"
+"(Newtonsoft.Json.Linq.JToken,Newtonsoft.Json.Schema.JsonSchema,Newtonsoft.Json.Schema.ValidationEventHandler"
+"(Newtonsoft.Json.Linq.JToken,Newtonsoft.Json.Schema.JsonSchema,System.Collections.Generic.IList{System.String}@"
+"(Newtonsoft.Json.Linq.JToken,System.String"
+"(Newtonsoft.Json.Linq.JToken[],System.Int32"
+"(Newtonsoft.Json.Serialization.JsonProperty,System.Reflection.ParameterInfo"
+"(Newtonsoft.Json.Serialization.NamingStrategy,System.Boolean"
+"(Redis, Cosmos etc."
+"(System.Action{System.Object},System.Object,System.Int16,System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags"
+"(System.Array,System.Int32"
+"(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions"
+"(System.BinaryData,System.Type,System.ClientModel.Primitives.ModelReaderWriterOptions"
+"(System.Boolean,System.Boolean"
+"(System.Boolean,System.Boolean,System.Boolean"
+"(System.Boolean,System.Boolean,System.Byte,System.Int32"
+"(System.Boolean,System.Boolean,System.Byte[],System.Int32"
+"(System.Boolean,System.Boolean,System.Int32"
+"(System.Boolean,System.Boolean,System.Security.AccessControl.ControlFlags,System.Security.Principal.SecurityIdentifier,System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.SystemAcl,System.Security.AccessControl.DiscretionaryAcl"
+"(System.Boolean,System.Boolean,System.Security.AccessControl.RawAcl"
+"(System.Boolean,System.Boolean,System.Security.AccessControl.RawSecurityDescriptor"
+"(System.Boolean,System.Boolean,System.String"
+"(System.Boolean,System.Boolean,System.Type"
+"(System.Boolean,System.Security.AccessControl.ResourceType"
+"(System.Boolean,System.Security.AccessControl.ResourceType,System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections"
+"(System.Boolean,System.Security.AccessControl.ResourceType,System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections,System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode,System.Object"
+"(System.Boolean,System.Security.AccessControl.ResourceType,System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode,System.Object"
+"(System.Boolean,System.Security.AccessControl.ResourceType,System.String,System.Security.AccessControl.AccessControlSections"
+"(System.Boolean,System.Security.AccessControl.ResourceType,System.String,System.Security.AccessControl.AccessControlSections,System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode,System.Object"
+"(System.Boolean,System.String,System.Boolean"
+"(System.Boolean,System.String,System.Security.AccessControl.AccessControlSections"
+"(System.Boolean,System.Threading.CancellationToken"
+"(System.Boolean,System.TimeSpan"
+"(System.Buffers.IBufferWriter{System.Byte},System.Text.Json.JsonWriterOptions"
+"(System.Buffers.ReadOnlySequence{System.Byte},System.Boolean,System.Text.Json.JsonReaderState"
+"(System.Buffers.ReadOnlySequence{System.Byte},System.Text.Json.JsonDocumentOptions"
+"(System.Buffers.ReadOnlySequence{System.Byte},System.Text.Json.JsonReaderOptions"
+"(System.Byte,System.Int32"
+"(System.Byte,System.Threading.CancellationToken"
+"(System.Byte@,System.Byte,System.UInt32"
+"(System.Byte@,System.Byte@,System.UInt32"
+"(System.Byte@,``0"
+"(System.Byte[],System.Boolean"
+"(System.Byte[],System.Byte[]"
+"(System.Byte[],System.Byte[],Microsoft.IdentityModel.Tokens.SecurityKey,System.String,Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(System.Byte[],System.Byte[],System.Byte[]"
+"(System.Byte[],System.Byte[],System.Byte[],System.Byte[]"
+"(System.Byte[],System.Byte[],System.Int32"
+"(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope"
+"(System.Byte[],System.Int32"
+"(System.Byte[],System.Int32,System.Int32"
+"(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32"
+"(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32,System.String"
+"(System.Byte[],System.Int32,System.Int32,System.Object,System.Security.Cryptography.HashAlgorithmName,System.Byte[]"
+"(System.Byte[],System.Int64"
+"(System.Byte[],System.Object"
+"(System.Byte[],System.Object,System.Byte[]"
+"(System.Byte[],System.Security.AccessControl.AccessControlSections"
+"(System.Byte[],System.String"
+"(System.Byte[],System.String,System.Int32"
+"(System.Byte[],System.Threading.CancellationToken"
+"(System.Char*,System.Int32"
+"(System.Char,System.Char"
+"(System.Char,System.Threading.CancellationToken"
+"(System.Char[],System.Int32,System.Int32"
+"(System.ClientModel.Primitives.IJsonModel{`0},System.ClientModel.Primitives.ModelReaderWriterOptions"
+"(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken"
+"(System.Collections.Generic.Dictionary{System.String,System.String}"
+"(System.Collections.Generic.IAsyncEnumerable{``0},System.Boolean"
+"(System.Collections.Generic.IAsyncEnumerable{``0},System.Threading.CancellationToken"
+"(System.Collections.Generic.IDictionary{System.String,System.Collections.Generic.IEnumerable{System.String}}"
+"(System.Collections.Generic.IDictionary{System.String,System.Object}"
+"(System.Collections.Generic.IDictionary{System.String,System.String}"
+"(System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Uri,System.Threading.CancellationToken"
+"(System.Collections.Generic.IDictionary{``0,``1}"
+"(System.Collections.Generic.IEnumerable{Microsoft.Identity.Json.Linq.JToken},System.Object"
+"(System.Collections.Generic.IEnumerable{Microsoft.Rest.TransientFaultHandling.RetryStrategy},System.String"
+"(System.Collections.Generic.IEnumerable{Microsoft.Rest.TransientFaultHandling.RetryStrategy},System.String,System.Collections.Generic.IDictionary{System.String,System.String}"
+"(System.Collections.Generic.IEnumerable{Newtonsoft.Json.Linq.JToken},System.Object"
+"(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}}"
+"(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.Collections.Generic.IEnumerable{System.Security.Claims.Claim}"
+"(System.Collections.Generic.IEnumerable{System.String},Microsoft.Identity.Client.IAccount"
+"(System.Collections.Generic.IEnumerable{System.String},Microsoft.Identity.Client.IAccount,Microsoft.Identity.Client.Prompt,System.String"
+"(System.Collections.Generic.IEnumerable{System.String},Microsoft.Identity.Client.IAccount,Microsoft.Identity.Client.Prompt,System.String,Microsoft.Identity.Client.UIParent"
+"(System.Collections.Generic.IEnumerable{System.String},Microsoft.Identity.Client.IAccount,Microsoft.Identity.Client.Prompt,System.String,System.Collections.Generic.IEnumerable{System.String},System.String"
+"(System.Collections.Generic.IEnumerable{System.String},Microsoft.Identity.Client.IAccount,Microsoft.Identity.Client.Prompt,System.String,System.Collections.Generic.IEnumerable{System.String},System.String,Microsoft.Identity.Client.UIParent"
+"(System.Collections.Generic.IEnumerable{System.String},Microsoft.Identity.Client.IAccount,Microsoft.Identity.Client.UIParent"
+"(System.Collections.Generic.IEnumerable{System.String},Microsoft.Identity.Client.IAccount,System.String,System.Boolean"
+"(System.Collections.Generic.IEnumerable{System.String},Microsoft.Identity.Client.UIParent"
+"(System.Collections.Generic.IEnumerable{System.String},Microsoft.Identity.Client.UserAssertion"
+"(System.Collections.Generic.IEnumerable{System.String},Microsoft.Identity.Client.UserAssertion,System.String"
+"(System.Collections.Generic.IEnumerable{System.String},Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(System.Collections.Generic.IEnumerable{System.String},System.Boolean"
+"(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String}"
+"(System.Collections.Generic.IEnumerable{System.String},System.Func{Microsoft.Identity.Client.DeviceCodeResult,System.Threading.Tasks.Task}"
+"(System.Collections.Generic.IEnumerable{System.String},System.Func{Microsoft.Identity.Client.DeviceCodeResult,System.Threading.Tasks.Task},System.Threading.CancellationToken"
+"(System.Collections.Generic.IEnumerable{System.String},System.IdentityModel.Tokens.Jwt.JwtSecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(System.Collections.Generic.IEnumerable{System.String},System.String"
+"(System.Collections.Generic.IEnumerable{System.String},System.String,Microsoft.Identity.Client.Prompt,System.String"
+"(System.Collections.Generic.IEnumerable{System.String},System.String,Microsoft.Identity.Client.Prompt,System.String,Microsoft.Identity.Client.UIParent"
+"(System.Collections.Generic.IEnumerable{System.String},System.String,Microsoft.Identity.Client.Prompt,System.String,System.Collections.Generic.IEnumerable{System.String},System.String"
+"(System.Collections.Generic.IEnumerable{System.String},System.String,Microsoft.Identity.Client.Prompt,System.String,System.Collections.Generic.IEnumerable{System.String},System.String,Microsoft.Identity.Client.UIParent"
+"(System.Collections.Generic.IEnumerable{System.String},System.String,Microsoft.Identity.Client.UIParent"
+"(System.Collections.Generic.IEnumerable{System.String},System.String,System.Func{Microsoft.Identity.Client.DeviceCodeResult,System.Threading.Tasks.Task}"
+"(System.Collections.Generic.IEnumerable{System.String},System.String,System.Func{Microsoft.Identity.Client.DeviceCodeResult,System.Threading.Tasks.Task},System.Threading.CancellationToken"
+"(System.Collections.Generic.IEnumerable{System.String},System.String,System.Security.SecureString"
+"(System.Collections.Generic.IEnumerable{System.String},System.String,System.String"
+"(System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.String"
+"(System.Collections.Generic.IEnumerable{System.String},System.String,System.String@"
+"(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0}"
+"(System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0}"
+"(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.String,Microsoft.Identity.Client.PlatformsCommon.Interfaces.ICryptographyManager"
+"(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.String,System.String"
+"(System.Collections.Generic.KeyValuePair{System.String,System.Object}"
+"(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32"
+"(System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}}"
+"(System.DateTime,Microsoft.Identity.Json.DateFormatHandling,Microsoft.Identity.Json.DateTimeZoneHandling"
+"(System.DateTime,Newtonsoft.Json.DateFormatHandling,Newtonsoft.Json.DateTimeZoneHandling"
+"(System.DateTime,System.Threading.CancellationToken"
+"(System.DateTime,System.TimeSpan"
+"(System.DateTimeOffset,Microsoft.Identity.Json.DateFormatHandling"
+"(System.DateTimeOffset,Newtonsoft.Json.DateFormatHandling"
+"(System.DateTimeOffset,System.Threading.CancellationToken"
+"(System.Decimal,System.Threading.CancellationToken"
+"(System.Diagnostics.Activity,System.Object"
+"(System.Diagnostics.Activity,System.Object,System.Diagnostics.DistributedContextPropagator.PropagatorSetterCallback"
+"(System.Diagnostics.ActivityContext,System.Diagnostics.ActivityContext"
+"(System.Diagnostics.ActivityContext,System.Diagnostics.ActivityTagsCollection"
+"(System.Diagnostics.ActivityKind,System.Diagnostics.ActivityContext,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityLink},System.DateTimeOffset,System.String"
+"(System.Diagnostics.ActivityLink,System.Diagnostics.ActivityLink"
+"(System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivitySpanId"
+"(System.Diagnostics.ActivityStatusCode,System.String"
+"(System.Diagnostics.ActivityTraceId,System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivityTraceFlags"
+"(System.Diagnostics.ActivityTraceId,System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivityTraceFlags,System.String,System.Boolean"
+"(System.Diagnostics.ActivityTraceId,System.Diagnostics.ActivityTraceId"
+"(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes,System.String,System.String"
+"(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes,System.Type"
+"(System.Diagnostics.Metrics.Instrument,System.Object"
+"(System.Diagnostics.Metrics.Meter,System.String,System.String,System.String"
+"(System.Diagnostics.TraceLevel,System.String,System.Exception"
+"(System.Diagnostics.Tracing.EventLevel,System.Exception"
+"(System.Diagnostics.Tracing.EventLevel,System.Exception,System.String"
+"(System.Diagnostics.Tracing.EventLevel,System.Exception,System.String,System.Object[]"
+"(System.Diagnostics.Tracing.EventLevel,System.String"
+"(System.Diagnostics.Tracing.EventLevel,System.String,System.Exception,System.String"
+"(System.Diagnostics.Tracing.EventLevel,System.String,System.Exception,System.String,System.Object[]"
+"(System.Diagnostics.Tracing.EventLevel,System.String,System.Object[]"
+"(System.Diagnostics.Tracing.EventLevel,System.String,System.String"
+"(System.Diagnostics.Tracing.EventLevel,System.String,System.String,System.Object[]"
+"(System.Double,System.Double,System.String"
+"(System.Double,System.Threading.CancellationToken"
+"(System.Exception,System.String"
+"(System.Exception,System.String,System.Object[]"
+"(System.Func{Microsoft.Identity.Client.AssertionRequestOptions,System.Threading.Tasks.Task{System.String}}"
+"(System.Func{Microsoft.Identity.Client.DeviceCodeResult,System.Threading.Tasks.Task}"
+"(System.Func{Microsoft.Identity.Client.TokenCacheNotificationArgs,System.Threading.Tasks.Task}"
+"(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{System.String}}"
+"(System.Func{System.Threading.Tasks.Task{``0}},System.Int32,System.Nullable{System.TimeSpan},System.Action{System.Int32,System.Exception},System.Collections.Generic.ISet{System.Type}"
+"(System.Func{System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken"
+"(System.Func{System.Threading.Tasks.Task},System.Int32,System.Nullable{System.TimeSpan},System.Action{System.Int32,System.Exception},System.Collections.Generic.ISet{System.Type}"
+"(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken"
+"(System.Func{`0,`0,System.Boolean}"
+"(System.Func{`0,`0,System.Boolean},System.Func{`0,System.Int32}"
+"(System.Guid,System.Threading.CancellationToken"
+"(System.IAsyncDisposable,System.Boolean"
+"(System.IO.BinaryReader,System.Boolean,System.DateTimeKind"
+"(System.IO.DirectoryInfo,System.Security.AccessControl.AccessControlSections"
+"(System.IO.DirectoryInfo,System.Security.AccessControl.DirectorySecurity"
+"(System.IO.FileInfo,System.IO.FileMode,System.Security.AccessControl.FileSystemRights,System.IO.FileShare,System.Int32,System.IO.FileOptions,System.Security.AccessControl.FileSecurity"
+"(System.IO.FileInfo,System.Security.AccessControl.AccessControlSections"
+"(System.IO.FileInfo,System.Security.AccessControl.FileSecurity"
+"(System.IO.FileStream,System.Security.AccessControl.FileSecurity"
+"(System.IO.Stream,System.Boolean,System.DateTimeKind"
+"(System.IO.Stream,System.Object,System.Type,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken"
+"(System.IO.Stream,System.Text.Json.JsonDocumentOptions"
+"(System.IO.Stream,System.Text.Json.JsonDocumentOptions,System.Threading.CancellationToken"
+"(System.IO.Stream,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken"
+"(System.IO.Stream,System.Text.Json.JsonWriterOptions"
+"(System.IO.Stream,System.Threading.CancellationToken"
+"(System.IO.Stream,System.Type,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken"
+"(System.IO.Stream,``0,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken"
+"(System.IO.TextReader,System.Object"
+"(System.IO.TextReader,System.Type"
+"(System.IO.TextWriter,System.Char[],System.Int32,System.Int32"
+"(System.IO.TextWriter,System.Object"
+"(System.IO.TextWriter,System.Object,System.Type"
+"(System.IO.TextWriter,System.String"
+"(System.IO.TextWriter,System.String,System.Int32,System.Int32"
+"(System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}}"
+"(System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Func{System.String,System.Object,System.Object,System.Boolean}"
+"(System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Func{System.String,System.Object,System.Object,System.Boolean},System.Action{System.Diagnostics.Activity,System.Object},System.Action{System.Diagnostics.Activity,System.Object}"
+"(System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Predicate{System.String}"
+"(System.IdentityModel.Tokens.Jwt.JwtHeader,System.IdentityModel.Tokens.Jwt.JwtPayload"
+"(System.IdentityModel.Tokens.Jwt.JwtHeader,System.IdentityModel.Tokens.Jwt.JwtPayload,System.String,System.String,System.String"
+"(System.IdentityModel.Tokens.Jwt.JwtHeader,System.IdentityModel.Tokens.Jwt.JwtSecurityToken,System.String,System.String,System.String,System.String,System.String"
+"(System.IdentityModel.Tokens.Jwt.JwtSecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(System.IdentityModel.Tokens.Jwt.JwtSecurityToken,System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(System.Int16,System.Threading.CancellationToken"
+"(System.Int32,Microsoft.Identity.Json.Linq.JToken"
+"(System.Int32,Newtonsoft.Json.Linq.JToken"
+"(System.Int32,System.Char*,System.Int32,System.Int32@"
+"(System.Int32,System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0}"
+"(System.Int32,System.Collections.Generic.KeyValuePair{System.String,System.Object}"
+"(System.Int32,System.Exception,System.TimeSpan"
+"(System.Int32,System.Int32"
+"(System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0}"
+"(System.Int32,System.Security.AccessControl.GenericAce"
+"(System.Int32,System.String"
+"(System.Int32,System.String,System.Func{System.Uri,Microsoft.Identity.Client.Platforms.Shared.Desktop.OsBrowser.MessageAndHttpCode},System.Threading.CancellationToken"
+"(System.Int32,System.Threading.CancellationToken"
+"(System.Int32,System.Threading.Tasks.TaskCreationOptions,System.Collections.Generic.IEqualityComparer{`0},System.Boolean,System.Int32,System.Boolean"
+"(System.Int32,System.TimeSpan"
+"(System.Int32,System.TimeSpan,System.Exception"
+"(System.Int32,System.TimeSpan,System.TimeSpan"
+"(System.Int32,System.TimeSpan,System.TimeSpan,System.TimeSpan"
+"(System.Int64,System.String"
+"(System.Int64,System.Threading.CancellationToken"
+"(System.IntPtr,System.IntPtr,System.IntPtr@,System.String,System.String,System.String,System.String,System.IntPtr"
+"(System.IntPtr,System.String"
+"(System.IntPtr,System.String,System.Security.Principal.WindowsAccountType"
+"(System.IntPtr,System.String,System.Security.Principal.WindowsAccountType,System.Boolean"
+"(System.IntPtr,System.String,System.String,System.String,System.IntPtr,System.IntPtr@,System.String,System.String,System.String,System.String,System.IntPtr"
+"(System.Linq.Expressions.Expression,System.Boolean"
+"(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}"
+"(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}"
+"(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean"
+"(System.Net.Http.Headers.HttpResponseHeaders,System.String"
+"(System.Net.Http.HttpClient,System.Boolean"
+"(System.Net.Http.HttpClient,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[]"
+"(System.Net.Http.HttpClient,System.String,System.Threading.CancellationToken"
+"(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[]"
+"(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage"
+"(System.Net.Http.HttpRequestMessage,System.String"
+"(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken"
+"(System.Net.Http.HttpResponseMessage,System.String"
+"(System.Net.Http.HttpResponseMessage,System.Threading.CancellationToken"
+"(System.Nullable{System.Boolean},System.Threading.CancellationToken"
+"(System.Nullable{System.Byte},System.Threading.CancellationToken"
+"(System.Nullable{System.Char},System.Threading.CancellationToken"
+"(System.Nullable{System.DateTimeOffset},System.Threading.CancellationToken"
+"(System.Nullable{System.DateTime},System.Nullable{System.DateTime},Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.IdentityModel.Tokens.Jwt.JwtSecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(System.Nullable{System.DateTime},System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(System.Nullable{System.DateTime},System.Threading.CancellationToken"
+"(System.Nullable{System.Decimal},System.Threading.CancellationToken"
+"(System.Nullable{System.Double},System.Threading.CancellationToken"
+"(System.Nullable{System.Guid},System.Threading.CancellationToken"
+"(System.Nullable{System.Int16},System.Threading.CancellationToken"
+"(System.Nullable{System.Int32},System.Threading.CancellationToken"
+"(System.Nullable{System.Int64},System.Threading.CancellationToken"
+"(System.Nullable{System.SByte},System.Threading.CancellationToken"
+"(System.Nullable{System.Single},System.Threading.CancellationToken"
+"(System.Nullable{System.TimeSpan},System.Threading.CancellationToken"
+"(System.Nullable{System.UInt16},System.Threading.CancellationToken"
+"(System.Nullable{System.UInt32},System.Threading.CancellationToken"
+"(System.Nullable{System.UInt64},System.Threading.CancellationToken"
+"(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2"
+"(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2,System.Single"
+"(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2@"
+"(System.Numerics.Matrix3x2,System.Single"
+"(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4"
+"(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4,System.Single"
+"(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4@"
+"(System.Numerics.Matrix4x4,System.Numerics.Quaternion"
+"(System.Numerics.Matrix4x4,System.Numerics.Vector3@,System.Numerics.Quaternion@,System.Numerics.Vector3@"
+"(System.Numerics.Matrix4x4,System.Single"
+"(System.Numerics.Plane,System.Numerics.Matrix4x4"
+"(System.Numerics.Plane,System.Numerics.Plane"
+"(System.Numerics.Plane,System.Numerics.Quaternion"
+"(System.Numerics.Plane,System.Numerics.Vector3"
+"(System.Numerics.Plane,System.Numerics.Vector4"
+"(System.Numerics.Quaternion,System.Numerics.Quaternion"
+"(System.Numerics.Quaternion,System.Numerics.Quaternion,System.Single"
+"(System.Numerics.Quaternion,System.Single"
+"(System.Numerics.Vector2,System.Numerics.Matrix3x2"
+"(System.Numerics.Vector2,System.Numerics.Matrix4x4"
+"(System.Numerics.Vector2,System.Numerics.Quaternion"
+"(System.Numerics.Vector2,System.Numerics.Vector2"
+"(System.Numerics.Vector2,System.Numerics.Vector2,System.Numerics.Vector2"
+"(System.Numerics.Vector2,System.Numerics.Vector2,System.Single"
+"(System.Numerics.Vector2,System.Single"
+"(System.Numerics.Vector2,System.Single,System.Single"
+"(System.Numerics.Vector3,System.Numerics.Matrix4x4"
+"(System.Numerics.Vector3,System.Numerics.Plane"
+"(System.Numerics.Vector3,System.Numerics.Quaternion"
+"(System.Numerics.Vector3,System.Numerics.Vector3"
+"(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3"
+"(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3"
+"(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3"
+"(System.Numerics.Vector3,System.Numerics.Vector3,System.Single"
+"(System.Numerics.Vector3,System.Single"
+"(System.Numerics.Vector4,System.Numerics.Matrix4x4"
+"(System.Numerics.Vector4,System.Numerics.Quaternion"
+"(System.Numerics.Vector4,System.Numerics.Vector4"
+"(System.Numerics.Vector4,System.Numerics.Vector4,System.Numerics.Vector4"
+"(System.Numerics.Vector4,System.Numerics.Vector4,System.Single"
+"(System.Numerics.Vector4,System.Single"
+"(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.UInt16}@,System.Numerics.Vector{System.UInt16}@"
+"(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double}"
+"(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int16}"
+"(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int32}@,System.Numerics.Vector{System.Int32}@"
+"(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32}"
+"(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int64}@,System.Numerics.Vector{System.Int64}@"
+"(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single}"
+"(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double}"
+"(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64}"
+"(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.Int16}@,System.Numerics.Vector{System.Int16}@"
+"(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Double}@,System.Numerics.Vector{System.Double}@"
+"(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single}"
+"(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt16}"
+"(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt32}@,System.Numerics.Vector{System.UInt32}@"
+"(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32}"
+"(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt64}@,System.Numerics.Vector{System.UInt64}@"
+"(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt64}"
+"(System.Numerics.Vector{`0},System.Numerics.Vector{`0}"
+"(System.Numerics.Vector{`0},`0"
+"(System.Numerics.Vector{``0},System.Numerics.Vector{``0}"
+"(System.Numerics.Vector{``0},System.Numerics.Vector{``0},System.Numerics.Vector{``0}"
+"(System.Numerics.Vector{``0},``0"
+"(System.Object,Microsoft.Identity.Client.EmbeddedWebViewOptions"
+"(System.Object,Microsoft.Identity.Client.Platforms.Features.WinFormsLegacyWebUi.WebBrowserBeforeNavigateEventArgs"
+"(System.Object,Microsoft.Identity.Client.Platforms.Features.WinFormsLegacyWebUi.WebBrowserNavigateErrorEventArgs"
+"(System.Object,Microsoft.Identity.Json.Formatting"
+"(System.Object,Microsoft.Identity.Json.Formatting,Microsoft.Identity.Json.JsonConverter[]"
+"(System.Object,Microsoft.Identity.Json.Formatting,Microsoft.Identity.Json.JsonSerializerSettings"
+"(System.Object,Microsoft.Identity.Json.JsonConverter[]"
+"(System.Object,Microsoft.Identity.Json.JsonSerializer"
+"(System.Object,Microsoft.Identity.Json.JsonSerializerSettings"
+"(System.Object,Microsoft.Identity.Json.Linq.JsonMergeSettings"
+"(System.Object,Microsoft.Identity.Json.Serialization.ErrorContext"
+"(System.Object,Newtonsoft.Json.Formatting"
+"(System.Object,Newtonsoft.Json.Formatting,Newtonsoft.Json.JsonConverter[]"
+"(System.Object,Newtonsoft.Json.Formatting,Newtonsoft.Json.JsonSerializerSettings"
+"(System.Object,Newtonsoft.Json.JsonConverter[]"
+"(System.Object,Newtonsoft.Json.JsonSerializer"
+"(System.Object,Newtonsoft.Json.JsonSerializerSettings"
+"(System.Object,Newtonsoft.Json.Linq.JsonMergeSettings"
+"(System.Object,Newtonsoft.Json.Serialization.ErrorContext"
+"(System.Object,System.Boolean"
+"(System.Object,System.ClientModel.Primitives.ModelReaderWriterOptions"
+"(System.Object,System.Diagnostics.DistributedContextPropagator.PropagatorGetterCallback"
+"(System.Object,System.Diagnostics.DistributedContextPropagator.PropagatorGetterCallback,System.String@,System.String@"
+"(System.Object,System.EventArgs"
+"(System.Object,System.Func{System.Object,System.String}"
+"(System.Object,System.Func{System.Object,System.String},System.Func{System.Object,System.String}"
+"(System.Object,System.Globalization.CultureInfo,System.Type"
+"(System.Object,System.Object"
+"(System.Object,System.String"
+"(System.Object,System.String,System.Object"
+"(System.Object,System.Text.Json.JsonSerializerOptions,System.Type"
+"(System.Object,System.Threading.CancellationToken"
+"(System.Object,System.Type,Microsoft.Identity.Json.Formatting,Microsoft.Identity.Json.JsonSerializerSettings"
+"(System.Object,System.Type,Microsoft.Identity.Json.JsonSerializerSettings"
+"(System.Object,System.Type,Newtonsoft.Json.Formatting,Newtonsoft.Json.JsonSerializerSettings"
+"(System.Object,System.Type,Newtonsoft.Json.JsonSerializerSettings"
+"(System.Object,System.Type,System.Text.Json.JsonSerializerOptions"
+"(System.Object,`0@,System.Int32"
+"(System.ReadOnlyMemory{System.Byte},System.Text.Json.JsonDocumentOptions"
+"(System.ReadOnlyMemory{System.Char},System.Text.Json.JsonDocumentOptions"
+"(System.ReadOnlySpan{System.Byte},System.Boolean"
+"(System.ReadOnlySpan{System.Byte},System.Boolean,System.Text.Json.JsonReaderState"
+"(System.ReadOnlySpan{System.Byte},System.Byte"
+"(System.ReadOnlySpan{System.Byte},System.Byte,System.Byte"
+"(System.ReadOnlySpan{System.Byte},System.Byte,System.Byte,System.Byte"
+"(System.ReadOnlySpan{System.Byte},System.DateTime"
+"(System.ReadOnlySpan{System.Byte},System.DateTimeOffset"
+"(System.ReadOnlySpan{System.Byte},System.Decimal"
+"(System.ReadOnlySpan{System.Byte},System.Double"
+"(System.ReadOnlySpan{System.Byte},System.Guid"
+"(System.ReadOnlySpan{System.Byte},System.Int32"
+"(System.ReadOnlySpan{System.Byte},System.Int64"
+"(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte}"
+"(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.Int32"
+"(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Char}"
+"(System.ReadOnlySpan{System.Byte},System.Single"
+"(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean"
+"(System.ReadOnlySpan{System.Byte},System.Span{System.Char}"
+"(System.ReadOnlySpan{System.Byte},System.String"
+"(System.ReadOnlySpan{System.Byte},System.Text.Encodings.Web.JavaScriptEncoder"
+"(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonElement@"
+"(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonEncodedText"
+"(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonReaderOptions"
+"(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonSerializerOptions"
+"(System.ReadOnlySpan{System.Byte},System.Type,System.Text.Json.JsonSerializerOptions"
+"(System.ReadOnlySpan{System.Byte},System.UInt32"
+"(System.ReadOnlySpan{System.Byte},System.UInt64"
+"(System.ReadOnlySpan{System.Char},System.Boolean"
+"(System.ReadOnlySpan{System.Char},System.DateTime"
+"(System.ReadOnlySpan{System.Char},System.DateTimeOffset"
+"(System.ReadOnlySpan{System.Char},System.Decimal"
+"(System.ReadOnlySpan{System.Char},System.Double"
+"(System.ReadOnlySpan{System.Char},System.Guid"
+"(System.ReadOnlySpan{System.Char},System.Int32"
+"(System.ReadOnlySpan{System.Char},System.Int32,System.Int32"
+"(System.ReadOnlySpan{System.Char},System.Int32,System.Int32,System.Byte[]"
+"(System.ReadOnlySpan{System.Char},System.Int64"
+"(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Byte}"
+"(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char}"
+"(System.ReadOnlySpan{System.Char},System.Single"
+"(System.ReadOnlySpan{System.Char},System.Span{System.Char},System.Int32@,System.Int32@,System.Boolean"
+"(System.ReadOnlySpan{System.Char},System.String"
+"(System.ReadOnlySpan{System.Char},System.Text.Encodings.Web.JavaScriptEncoder"
+"(System.ReadOnlySpan{System.Char},System.Text.Json.JsonElement@"
+"(System.ReadOnlySpan{System.Char},System.Text.Json.JsonEncodedText"
+"(System.ReadOnlySpan{System.Char},System.UInt32"
+"(System.ReadOnlySpan{System.Char},System.UInt64"
+"(System.ReadOnlySpan{System.Collections.Generic.KeyValuePair{System.String,System.Object}}"
+"(System.ReadOnlySpan{`0},System.ReadOnlySpan{`0}"
+"(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0}"
+"(System.ReadOnlySpan{``0},``0"
+"(System.Reflection.ConstructorInfo,Microsoft.Identity.Json.Serialization.JsonPropertyCollection"
+"(System.Reflection.ConstructorInfo,Newtonsoft.Json.Serialization.JsonPropertyCollection"
+"(System.Reflection.MemberInfo,Microsoft.Identity.Json.MemberSerialization"
+"(System.Reflection.MemberInfo,Newtonsoft.Json.MemberSerialization"
+"(System.Reflection.MemberInfo,System.Boolean"
+"(System.Reflection.MemberInfo,System.Boolean,System.Boolean"
+"(System.Reflection.MemberInfo,System.Object"
+"(System.Reflection.MemberInfo,System.Object,System.Object"
+"(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections"
+"(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections,System.Object"
+"(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext"
+"(System.SByte,System.Threading.CancellationToken"
+"(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@"
+"(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@"
+"(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags"
+"(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.ObjectAceFlags,System.Guid,System.Guid"
+"(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.ObjectAccessRule"
+"(System.Security.AccessControl.AceFlags,System.Int32,System.Security.AccessControl.CompoundAceType,System.Security.Principal.SecurityIdentifier"
+"(System.Security.AccessControl.AceFlags,System.Security.AccessControl.AceQualifier,System.Int32,System.Security.Principal.SecurityIdentifier,System.Boolean,System.Byte[]"
+"(System.Security.AccessControl.AceFlags,System.Security.AccessControl.AceQualifier,System.Int32,System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.ObjectAceFlags,System.Guid,System.Guid,System.Boolean,System.Byte[]"
+"(System.Security.AccessControl.AceType,System.Security.AccessControl.AceFlags,System.Byte[]"
+"(System.Security.AccessControl.AuditFlags,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags"
+"(System.Security.AccessControl.AuditFlags,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.ObjectAceFlags,System.Guid,System.Guid"
+"(System.Security.AccessControl.AuthorizationRule[],System.Int32"
+"(System.Security.AccessControl.ControlFlags,System.Security.Principal.SecurityIdentifier,System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.RawAcl,System.Security.AccessControl.RawAcl"
+"(System.Security.AccessControl.DirectorySecurity,System.String"
+"(System.Security.AccessControl.GenericAce,System.Security.AccessControl.GenericAce"
+"(System.Security.AccessControl.GenericAce[],System.Int32"
+"(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean"
+"(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Collections.Generic.IDictionary{System.String,System.String},System.Boolean"
+"(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Collections.Generic.IDictionary{System.String,System.String},System.Boolean,System.Boolean"
+"(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String"
+"(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,System.String"
+"(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags"
+"(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Guid,System.Guid,System.Security.AccessControl.AccessControlType"
+"(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Guid,System.Guid,System.Security.AccessControl.AuditFlags"
+"(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType"
+"(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType,System.Guid,System.Guid"
+"(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags"
+"(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags,System.Guid,System.Guid"
+"(System.Security.Principal.IdentityReference,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.AccessControlType"
+"(System.Security.Principal.IdentityReference,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.AuditFlags"
+"(System.Security.Principal.IdentityReference,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType"
+"(System.Security.Principal.IdentityReference,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags"
+"(System.Security.Principal.IdentityReference,System.Security.Principal.IdentityReference"
+"(System.Security.Principal.IdentityReference,`0,System.Security.AccessControl.AccessControlType"
+"(System.Security.Principal.IdentityReference,`0,System.Security.AccessControl.AuditFlags"
+"(System.Security.Principal.IdentityReference,`0,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType"
+"(System.Security.Principal.IdentityReference,`0,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags"
+"(System.Security.Principal.IdentityReference[],System.Int32"
+"(System.Security.Principal.NTAccount,System.Security.Principal.NTAccount"
+"(System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.ObjectAuditRule"
+"(System.Security.Principal.SecurityIdentifier,System.Security.Principal.SecurityIdentifier"
+"(System.Security.Principal.WellKnownSidType,System.Security.Principal.SecurityIdentifier"
+"(System.Single,System.Numerics.Vector2"
+"(System.Single,System.Numerics.Vector3"
+"(System.Single,System.Numerics.Vector4"
+"(System.Single,System.Single"
+"(System.Single,System.Single,System.Numerics.Vector2"
+"(System.Single,System.Single,System.Single"
+"(System.Single,System.Single,System.Single,System.Numerics.Vector3"
+"(System.Single,System.Single,System.Single,System.Single"
+"(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single"
+"(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single"
+"(System.Single,System.Threading.CancellationToken"
+"(System.Single[],System.Int32"
+"(System.Span{System.Byte},System.Byte"
+"(System.Span{System.Byte},System.Byte,System.Byte"
+"(System.Span{System.Byte},System.Byte,System.Byte,System.Byte"
+"(System.Span{System.Byte},System.ReadOnlySpan{System.Byte}"
+"(System.Span{System.Collections.Generic.KeyValuePair{System.String,System.Object}}"
+"(System.Span{`0},System.Span{`0}"
+"(System.Span{``0},System.ReadOnlySpan{``0}"
+"(System.Span{``0},``0"
+"(System.String,Microsoft.Identity.Client.Core.ILoggerAdapter"
+"(System.String,Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger"
+"(System.String,Microsoft.Identity.Client.Internal.RequestContext"
+"(System.String,Microsoft.Identity.Client.Internal.RequestContext,System.String"
+"(System.String,Microsoft.Identity.Client.Kerberos.KerberosTicketContainer"
+"(System.String,Microsoft.Identity.Json.JsonConverter[]"
+"(System.String,Microsoft.Identity.Json.JsonSerializerSettings"
+"(System.String,Microsoft.Identity.Json.Linq.JToken"
+"(System.String,Microsoft.Identity.Json.Linq.JToken@"
+"(System.String,Microsoft.Identity.Json.Linq.JsonLoadSettings"
+"(System.String,Microsoft.Identity.Json.Linq.JsonSelectSettings"
+"(System.String,Microsoft.Identity.Json.Schema.JsonSchemaResolver"
+"(System.String,Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(System.String,Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens.BaseConfiguration,System.Exception"
+"(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials"
+"(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary{System.String,System.Object}"
+"(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String"
+"(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String,System.Collections.Generic.IDictionary{System.String,System.Object}"
+"(System.String,Microsoft.IdentityModel.Tokens.SecurityKey"
+"(System.String,Microsoft.IdentityModel.Tokens.SecurityKey,Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(System.String,Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(System.String,Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters,Microsoft.IdentityModel.Tokens.BaseConfiguration"
+"(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials"
+"(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials"
+"(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary{System.String,System.Object}"
+"(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String"
+"(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String,System.Collections.Generic.IDictionary{System.String,System.Object}"
+"(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.Object}"
+"(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,System.Boolean"
+"(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,System.Collections.Generic.IDictionary{System.String,System.Object}"
+"(System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters,Microsoft.IdentityModel.Tokens.SecurityToken@"
+"(System.String,Newtonsoft.Json.JsonConverter[]"
+"(System.String,Newtonsoft.Json.JsonSerializerSettings"
+"(System.String,Newtonsoft.Json.Linq.JToken"
+"(System.String,Newtonsoft.Json.Linq.JToken@"
+"(System.String,Newtonsoft.Json.Linq.JsonLoadSettings"
+"(System.String,Newtonsoft.Json.Linq.JsonSelectSettings"
+"(System.String,Newtonsoft.Json.Schema.JsonSchemaResolver"
+"(System.String,System.Boolean"
+"(System.String,System.Boolean,System.Boolean@"
+"(System.String,System.Boolean,System.String,System.DateTimeOffset,System.DateTimeOffset,System.String,Microsoft.Identity.Client.IAccount,System.String,System.Collections.Generic.IEnumerable{System.String},System.Guid,Microsoft.Identity.Client.AuthenticationResultMetadata,System.String"
+"(System.String,System.Boolean,System.String,System.DateTimeOffset,System.DateTimeOffset,System.String,Microsoft.Identity.Client.IAccount,System.String,System.Collections.Generic.IEnumerable{System.String},System.Guid,System.String,Microsoft.Identity.Client.AuthenticationResultMetadata,System.Security.Claims.ClaimsPrincipal,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}"
+"(System.String,System.Boolean,System.Threading.CancellationToken"
+"(System.String,System.Byte[]"
+"(System.String,System.Byte[],System.String,System.Int32,System.String,System.Object"
+"(System.String,System.Char"
+"(System.String,System.Char,Microsoft.Identity.Json.StringEscapeHandling"
+"(System.String,System.Char,Newtonsoft.Json.StringEscapeHandling"
+"(System.String,System.Collections.Generic.IDictionary{System.String,System.Object}"
+"(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Int64},System.Collections.Generic.IDictionary{System.String,System.Boolean},System.Collections.Generic.IDictionary{System.String,System.DateTime},System.Collections.Generic.IDictionary{System.String,System.Double},System.Collections.Generic.IDictionary{System.String,System.Guid}"
+"(System.String,System.Collections.Generic.IEnumerable{System.String}"
+"(System.String,System.DateTime"
+"(System.String,System.DateTimeOffset"
+"(System.String,System.DateTimeOffset,System.Diagnostics.ActivityTagsCollection"
+"(System.String,System.Decimal"
+"(System.String,System.Diagnostics.ActivityKind"
+"(System.String,System.Diagnostics.ActivityKind,System.Diagnostics.ActivityContext,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityLink},System.DateTimeOffset"
+"(System.String,System.Diagnostics.ActivityKind,System.Diagnostics.ActivityContext,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityLink},System.Diagnostics.ActivityIdFormat"
+"(System.String,System.Diagnostics.ActivityKind,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityLink},System.DateTimeOffset"
+"(System.String,System.Diagnostics.ActivityKind,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityLink},System.Diagnostics.ActivityIdFormat"
+"(System.String,System.Double"
+"(System.String,System.Dynamic.DynamicMetaObjectBinder,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression},Microsoft.Identity.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback"
+"(System.String,System.Dynamic.DynamicMetaObjectBinder,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression},Microsoft.Identity.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback,Microsoft.Identity.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback"
+"(System.String,System.Dynamic.DynamicMetaObjectBinder,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression},Newtonsoft.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback"
+"(System.String,System.Dynamic.DynamicMetaObjectBinder,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression},Newtonsoft.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback,Newtonsoft.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback"
+"(System.String,System.Dynamic.DynamicMetaObjectBinder,System.Linq.Expressions.Expression[],Microsoft.Identity.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback"
+"(System.String,System.Dynamic.DynamicMetaObjectBinder,System.Linq.Expressions.Expression[],Newtonsoft.Json.Utilities.DynamicProxyMetaObject{`0}.Fallback"
+"(System.String,System.Exception"
+"(System.String,System.Exception,System.String"
+"(System.String,System.Exception,System.String,System.Object[]"
+"(System.String,System.Func{System.Collections.Generic.IEnumerable{System.Diagnostics.Metrics.Measurement{``0}}},System.String,System.String"
+"(System.String,System.Func{System.Diagnostics.Metrics.Measurement{``0}},System.String,System.String"
+"(System.String,System.Func{``0},System.String,System.String"
+"(System.String,System.Guid"
+"(System.String,System.Guid,System.Boolean"
+"(System.String,System.IFormatProvider"
+"(System.String,System.IdentityModel.Tokens.Jwt.JwtSecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(System.String,System.IdentityModel.Tokens.Jwt.JwtSecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters,Microsoft.IdentityModel.Tokens.SecurityToken@"
+"(System.String,System.Int32"
+"(System.String,System.Int32,System.Int32"
+"(System.String,System.Int32,System.Int32,System.Byte[],System.Int32"
+"(System.String,System.Int32,System.Int32,System.Func{System.Byte[],System.Int32,``0}"
+"(System.String,System.Int32,System.Int32,System.Text.Encoding,System.Func{System.Byte[],System.Int32,``0}"
+"(System.String,System.Int32,System.Int32,System.Text.Encoding,``1,System.Func{System.Byte[],System.Int32,``1,``0}"
+"(System.String,System.Int32,System.Int32,System.Text.Encoding,``1,``2,``3,System.Func{System.Byte[],System.Int32,``1,``2,``3,``0}"
+"(System.String,System.Int32,System.Int32,``1,System.Func{System.Byte[],System.Int32,``1,``0}"
+"(System.String,System.Int32,System.Int32,``1,``2,``3,System.Func{System.Byte[],System.Int32,``1,``2,``3,``0}"
+"(System.String,System.Int32,System.String,System.Int32,System.String,System.Int32,System.IntPtr"
+"(System.String,System.Int32,System.TimeSpan"
+"(System.String,System.Int32,System.TimeSpan,System.Boolean"
+"(System.String,System.Int32,System.TimeSpan,System.TimeSpan"
+"(System.String,System.Int32,System.TimeSpan,System.TimeSpan,System.Boolean"
+"(System.String,System.Int32,System.TimeSpan,System.TimeSpan,System.TimeSpan"
+"(System.String,System.Int32,System.TimeSpan,System.TimeSpan,System.TimeSpan,System.Boolean"
+"(System.String,System.Int64"
+"(System.String,System.Int64,System.String"
+"(System.String,System.Net.Http.HttpClient,System.Threading.CancellationToken"
+"(System.String,System.Net.Http.HttpMethod,System.Uri"
+"(System.String,System.Net.Http.HttpRequestMessage"
+"(System.String,System.Net.Http.HttpResponseMessage"
+"(System.String,System.Nullable{Microsoft.Identity.Client.AuthorityType}"
+"(System.String,System.Nullable{System.DateTime},Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(System.String,System.Object"
+"(System.String,System.Object,Microsoft.Identity.Json.JsonSerializerSettings"
+"(System.String,System.Object,Newtonsoft.Json.JsonSerializerSettings"
+"(System.String,System.Object,System.Object"
+"(System.String,System.Object,System.String,System.Collections.Generic.IDictionary{System.String,System.Object}"
+"(System.String,System.Object@"
+"(System.String,System.Object[]"
+"(System.String,System.ReadOnlySpan{System.Byte}"
+"(System.String,System.ReadOnlySpan{System.Char}"
+"(System.String,System.Security.AccessControl.AccessControlSections"
+"(System.String,System.Security.AccessControl.AccessControlSections,System.Object"
+"(System.String,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.AccessControlType"
+"(System.String,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.AuditFlags"
+"(System.String,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType"
+"(System.String,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags"
+"(System.String,System.Security.Claims.Claim@"
+"(System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.RSASignaturePadding"
+"(System.String,System.Single"
+"(System.String,System.String"
+"(System.String,System.String,Microsoft.Identity.Client.ClientCredential,Microsoft.Identity.Client.TokenCache,Microsoft.Identity.Client.TokenCache"
+"(System.String,System.String,Microsoft.Identity.Client.Internal.RequestContext"
+"(System.String,System.String,Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource"
+"(System.String,System.String,Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource,System.Int32"
+"(System.String,System.String,Microsoft.Identity.Client.TokenCache"
+"(System.String,System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters,Microsoft.IdentityModel.Tokens.BaseConfiguration"
+"(System.String,System.String,System.Boolean"
+"(System.String,System.String,System.Boolean,System.Boolean"
+"(System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.IdentityModel.Tokens.SecurityKey}"
+"(System.String,System.String,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.Collections.Generic.IDictionary{System.String,System.Object},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime}"
+"(System.String,System.String,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.Nullable{System.DateTime},System.Nullable{System.DateTime}"
+"(System.String,System.String,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.Nullable{System.DateTime},System.Nullable{System.DateTime},Microsoft.IdentityModel.Tokens.SigningCredentials"
+"(System.String,System.String,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime}"
+"(System.String,System.String,System.Diagnostics.ActivityContext@"
+"(System.String,System.String,System.Exception"
+"(System.String,System.String,System.Exception,Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource"
+"(System.String,System.String,System.Exception,Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource,System.Int32"
+"(System.String,System.String,System.Exception,Microsoft.Identity.Client.UiRequiredExceptionClassification"
+"(System.String,System.String,System.Int32"
+"(System.String,System.String,System.Int32,System.Exception"
+"(System.String,System.String,System.Int32,System.Int32,System.Exception"
+"(System.String,System.String,System.Int32,System.Object"
+"(System.String,System.String,System.Int32,System.String,System.Exception"
+"(System.String,System.String,System.Net.Http.HttpClient,System.Threading.CancellationToken"
+"(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime}"
+"(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64}"
+"(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Exception"
+"(System.String,System.String,System.Object"
+"(System.String,System.String,System.Object[]"
+"(System.String,System.String,System.Security.Claims.ClaimsIdentity,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},Microsoft.IdentityModel.Tokens.SigningCredentials"
+"(System.String,System.String,System.Security.Claims.ClaimsIdentity,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials"
+"(System.String,System.String,System.Security.Claims.ClaimsIdentity,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary{System.String,System.Object}"
+"(System.String,System.String,System.String"
+"(System.String,System.String,System.String,Microsoft.Identity.Client.ClientCredential,Microsoft.Identity.Client.TokenCache,Microsoft.Identity.Client.TokenCache"
+"(System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IEnumerable{Microsoft.Identity.Client.TenantProfile}"
+"(System.String,System.String,System.String,System.Collections.Generic.KeyValuePair{System.String,System.String},System.Collections.Generic.KeyValuePair{System.String,System.String}"
+"(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.String,System.String,System.String,System.Collections.Generic.KeyValuePair{System.String,System.String},System.Collections.Generic.KeyValuePair{System.String,System.String},System.Int32,System.Int32,System.String,System.String"
+"(System.String,System.String,System.StringComparison"
+"(System.String,System.String,System.Threading.CancellationToken"
+"(System.String,System.String@"
+"(System.String,System.StringComparison"
+"(System.String,System.StringComparison,Microsoft.Identity.Json.Linq.JToken@"
+"(System.String,System.StringComparison,Newtonsoft.Json.Linq.JToken@"
+"(System.String,System.Text.Encoding,System.Func{System.Byte[],System.Int32,``0}"
+"(System.String,System.Text.Encoding,``1,System.Func{System.Byte[],System.Int32,``1,``0}"
+"(System.String,System.Text.Encodings.Web.JavaScriptEncoder"
+"(System.String,System.Text.Json.JsonDocumentOptions"
+"(System.String,System.Text.Json.JsonElement@"
+"(System.String,System.Text.Json.JsonEncodedText"
+"(System.String,System.Text.Json.JsonSerializerOptions"
+"(System.String,System.Threading.CancellationToken"
+"(System.String,System.Type"
+"(System.String,System.Type,Microsoft.Identity.Json.JsonConverter[]"
+"(System.String,System.Type,Microsoft.Identity.Json.JsonSerializerSettings"
+"(System.String,System.Type,Newtonsoft.Json.JsonConverter[]"
+"(System.String,System.Type,Newtonsoft.Json.JsonSerializerSettings"
+"(System.String,System.Type,System.Text.Json.JsonSerializerOptions"
+"(System.String,System.UInt32"
+"(System.String,System.UInt64"
+"(System.String,`0,System.Security.AccessControl.AccessControlType"
+"(System.String,`0,System.Security.AccessControl.AuditFlags"
+"(System.String,`0,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType"
+"(System.String,`0,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags"
+"(System.String,``0"
+"(System.String,``0,Microsoft.Identity.Json.JsonSerializerSettings"
+"(System.String,``0,Newtonsoft.Json.JsonSerializerSettings"
+"(System.String,``0@"
+"(System.String[],System.String"
+"(System.Text.Json.JsonEncodedText,System.Boolean"
+"(System.Text.Json.JsonEncodedText,System.DateTime"
+"(System.Text.Json.JsonEncodedText,System.DateTimeOffset"
+"(System.Text.Json.JsonEncodedText,System.Decimal"
+"(System.Text.Json.JsonEncodedText,System.Double"
+"(System.Text.Json.JsonEncodedText,System.Guid"
+"(System.Text.Json.JsonEncodedText,System.Int32"
+"(System.Text.Json.JsonEncodedText,System.Int64"
+"(System.Text.Json.JsonEncodedText,System.ReadOnlySpan{System.Byte}"
+"(System.Text.Json.JsonEncodedText,System.ReadOnlySpan{System.Char}"
+"(System.Text.Json.JsonEncodedText,System.Single"
+"(System.Text.Json.JsonEncodedText,System.String"
+"(System.Text.Json.JsonEncodedText,System.Text.Json.JsonEncodedText"
+"(System.Text.Json.JsonEncodedText,System.UInt32"
+"(System.Text.Json.JsonEncodedText,System.UInt64"
+"(System.Text.Json.JsonNamingPolicy,System.Boolean"
+"(System.Text.Json.Utf8JsonReader@,Microsoft.IdentityModel.Tokens.JsonWebKey"
+"(System.Text.Json.Utf8JsonReader@,Microsoft.IdentityModel.Tokens.JsonWebKeySet"
+"(System.Text.Json.Utf8JsonReader@,System.ClientModel.Primitives.ModelReaderWriterOptions"
+"(System.Text.Json.Utf8JsonReader@,System.String,System.String,System.Boolean"
+"(System.Text.Json.Utf8JsonReader@,System.String,System.String,System.String,System.Exception"
+"(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonDocument@"
+"(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonSerializerOptions"
+"(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions"
+"(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.IJsonModel{System.Object},System.Text.Json.JsonSerializerOptions"
+"(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions"
+"(System.Text.Json.Utf8JsonWriter,System.Object,System.Type,System.Text.Json.JsonSerializerOptions"
+"(System.Text.Json.Utf8JsonWriter,`0,System.Text.Json.JsonSerializerOptions"
+"(System.Text.Json.Utf8JsonWriter,``0,System.Text.Json.JsonSerializerOptions"
+"(System.Text.Json.Utf8JsonWriter@,Microsoft.IdentityModel.Tokens.JsonWebKeySet"
+"(System.Text.Json.Utf8JsonWriter@,Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor,System.Boolean,System.Int32"
+"(System.Text.Json.Utf8JsonWriter@,System.Object"
+"(System.Text.Json.Utf8JsonWriter@,System.String,System.Object"
+"(System.Threading.Tasks.Task,System.Boolean"
+"(System.Threading.Tasks.ValueTask{`0},System.Threading.Tasks.ValueTask{`0}"
+"(System.TimeSpan,System.Threading.CancellationToken"
+"(System.Type,Microsoft.Identity.Json.JsonSerializer"
+"(System.Type,Microsoft.Identity.Json.MemberSerialization"
+"(System.Type,Microsoft.Identity.Json.Schema.JsonSchemaResolver"
+"(System.Type,Microsoft.Identity.Json.Schema.JsonSchemaResolver,System.Boolean"
+"(System.Type,Newtonsoft.Json.JsonSerializer"
+"(System.Type,Newtonsoft.Json.MemberSerialization"
+"(System.Type,Newtonsoft.Json.Schema.JsonSchemaResolver"
+"(System.Type,Newtonsoft.Json.Schema.JsonSchemaResolver,System.Boolean"
+"(System.Type,System.Boolean"
+"(System.Type,System.Object[]"
+"(System.Type,System.Object[],System.Boolean"
+"(System.Type,System.String"
+"(System.Type,System.String@,System.String@"
+"(System.Type,System.Text.Json.JsonSerializerOptions"
+"(System.UInt16,System.Threading.CancellationToken"
+"(System.UInt32,System.Threading.CancellationToken"
+"(System.UInt64,System.Threading.CancellationToken"
+"(System.Uri,System.Boolean"
+"(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Identity.Client.Core.ILoggerAdapter,System.Boolean,System.Threading.CancellationToken"
+"(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Identity.Client.Core.ILoggerAdapter,System.Threading.CancellationToken"
+"(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Net.Http.HttpContent,Microsoft.Identity.Client.Core.ILoggerAdapter,System.Threading.CancellationToken"
+"(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Net.Http.StringContent,Microsoft.Identity.Client.Core.ILoggerAdapter,System.Threading.CancellationToken"
+"(System.Uri,System.Threading.CancellationToken"
+"(System.Uri,System.Uri,Microsoft.Identity.Client.Internal.RequestContext,System.Threading.CancellationToken"
+"(System.Uri,System.Uri,System.Threading.CancellationToken"
+"(System.Void*,System.Byte,System.UInt32"
+"(System.Void*,System.Int32"
+"(System.Void*,System.Void*,System.UInt32"
+"(System.Void*,``0"
+"(System.Void*,``0@"
+"(System.Xml.Linq.XObject,Microsoft.Identity.Json.Formatting"
+"(System.Xml.Linq.XObject,Microsoft.Identity.Json.Formatting,System.Boolean"
+"(System.Xml.Linq.XObject,Newtonsoft.Json.Formatting"
+"(System.Xml.Linq.XObject,Newtonsoft.Json.Formatting,System.Boolean"
+"(System.Xml.XmlNode,Microsoft.Identity.Json.Formatting"
+"(System.Xml.XmlNode,Microsoft.Identity.Json.Formatting,System.Boolean"
+"(System.Xml.XmlNode,Newtonsoft.Json.Formatting"
+"(System.Xml.XmlNode,Newtonsoft.Json.Formatting,System.Boolean"
+"(System.Xml.XmlReader,Microsoft.IdentityModel.Tokens.TokenValidationParameters"
+"(System.Xml.XmlReader,Microsoft.IdentityModel.Tokens.TokenValidationParameters,Microsoft.IdentityModel.Tokens.SecurityToken@"
+"(System.Xml.XmlWriter,Microsoft.IdentityModel.Tokens.SecurityToken"
+"(VMs, Azure functions"
+"(Windows 10, version 1703, build 15063.138"
+"(Xamarin.Forms.Forms.Context as Activity, !useSystemBrowser"
+"(Z@QlH,,Lr"
+"(`0,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}}"
+"(`0,System.Collections.Generic.KeyValuePair{System.String,System.Object}"
+"(`0,System.Collections.Generic.KeyValuePair{System.String,System.Object},System.Collections.Generic.KeyValuePair{System.String,System.Object}"
+"(`0,System.Collections.Generic.KeyValuePair{System.String,System.Object},System.Collections.Generic.KeyValuePair{System.String,System.Object},System.Collections.Generic.KeyValuePair{System.String,System.Object}"
+"(`0,System.Collections.Generic.KeyValuePair{System.String,System.Object}[]"
+"(`0,System.Diagnostics.TagList@"
+"(`0,System.Numerics.Vector{`0}"
+"(`0,System.ReadOnlySpan{System.Collections.Generic.KeyValuePair{System.String,System.Object}}"
+"(`0,`0"
+"(`0,`1@"
+"(`0[],System.Boolean"
+"(`0[],System.Int32"
+"(`0[],System.Int32,System.Int32"
+"(``0,System.ClientModel.Primitives.ModelReaderWriterOptions"
+"(``0,System.Numerics.Vector{``0}"
+"(``0,System.Text.Json.JsonSerializerOptions"
+"(``0@,System.Int32"
+"(``0@,System.IntPtr"
+"(``0@,System.UIntPtr"
+"(``0@,System.Void*"
+"(``0@,``0@"
+"(``0@,``1@"
+"(``0[],System.Span{``0}"
+"(access rules, audit rules, owner, primary group"
+"(access rules, audit rules, primary group, owner"
+"(also known as ""hot"" task"
+"(api used, force refresh flag"
+"(app, HTTP, cache"
+"(args.Contains(""-help"""
+"(as above, but also from cache items"
+"(as distinct from <see cref=""F:System.Text.Json.JsonTokenType.Null"" />"
+"(as distinct from <see cref=""F:System.Text.Json.JsonValueKind.Null"" />"
+"(c => c.Type == ""scp"""
+"(c => c[""id""].ToString("
+"(contains library version, date/time, and PII debugging information"
+"(don't use 'common' or 'consumers' with <see cref=""M:Microsoft.Identity.Client.IPublicClientApplication.AcquireTokenByUsernamePassword(System.Collections.Generic.IEnumerable{System.String},System.String,System.String"
+"(driveItem, message, chatMessage, site, event"
+"(e.g for a JSON Web Token, from the ""typ"" header"
+"(e.g. <c>""1.2.3.4""</c>"
+"(e.g. <c>""2008-04-12T12:53Z""</c>"
+"(e.g. ==, &amp;&amp;, >, etc"
+"(e.g. PolicyViolation, SecurityViolation"
+"(e.g. Redis, Cosmos, or a file on disk"
+"(e.g. get, set, remove"
+"(e.g. read all ATs, read all RTs"
+"(e.g., a SSH session"
+"(e.g., through the <see href=""https://aka.ms/msal-net-wam"">Web Account Manager</see>, the Authenticator app, web browser, etc."
+"(e.g., when SSH-d into a Linux machine"
+"(eA,B."
+"(either because you had it in another way, or the library added it"
+"(ex. ""{tenantName}.ciamlogin.com"""
+"(for different processes, threads, user mode or kernel mode"
+"(for example how to handle comments, or the maximum depth allowed when reading"
+"(for example, <see cref=""M:Microsoft.Identity.Json.JsonTextReader.HasLineInfo""/> returns <c>false</c>"
+"(for example, <see cref=""M:Newtonsoft.Json.JsonTextReader.HasLineInfo""/> returns <c>false</c>"
+"(for example, Office client apps"
+"(for example, because of incorrect configuration"
+"(for example, has spaces"
+"(for example, it contains a fractional value or is written in scientific notation"
+"(for example, it is on an unmapped drive"
+"(for example, when <see cref=""M:Microsoft.Identity.Json.IJsonLineInfo.HasLineInfo""/> returns <c>false</c>"
+"(for example, when <see cref=""M:Newtonsoft.Json.IJsonLineInfo.HasLineInfo""/> returns <c>false</c>"
+"(for example, when calling the base constructor"
+"(for instance a JSON file, as in an asp.net configuration scenario"
+"(for instance a token from the cache, or received from the STS"
+"(for instance, <c>baseUrl//signin-oidc</c> for ASP.NET Core web apps"
+"(for instance, ASP.NET and ASP.NET Core web apps"
+"(groups, admin units, etc."
+"(header.Key, header.Value"
+"(i,9"
+"(i.e., to a specific URL, with a code"
+"(interactive call, username password call, device code flow, etc."
+"(jsonBody, Encoding.UTF8, ""application/json"""
+"(jsonPayload, Encoding.UTF8, ""application/json"""
+"(key,value"
+"(key:<paramref name=""authScheme""/>, value:<paramref name=""paramValue""/>"
+"(kvURI, accessToken, keyName"
+"(new HttpMethod(""PATCH"""
+"(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue(""application/json"""
+"(newUri, content"
+"(on Azure resources like App Services, Virtual Machines, Azure Arc, Service Fabric and Cloud Shell"
+"(openid, profile etc."
+"(or not within the <see cref=""T:System.Text.Json.JsonCommentHandling"" /> enum range"
+"(other than the resource for which <paramref name=""scopes""/> are requested"
+"(path and query, but not query parameters"
+"(s,:kG{<+4l:fx"
+"(see <see cref=""P:Microsoft.Identity.Client.IConfidentialClientApplication.AppTokenCache""/>"
+"(see <see href=""https://learn.microsoft.com/previous-versions/bb268233(v=vs.85"
+"(services like Xbox, Teams for Life, or Outlook"
+"(string accessToken, string id"
+"(string accessToken, string searchString, string entity, string url"
+"(string accessToken, string url"
+"(string kvURI, string accessToken, string keyName"
+"(string, integer, date, etc"
+"(string, object, object"
+"(string.Equals(command, ""Add-ApplicationPassword"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Add-UserTAP"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Find-PrivilegedRoleUsers"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-AdministrativeUnitMember"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-AppRoleAssignments"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-ConditionalAccessPolicy"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-CrossTenantAccessPolicy"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-CurrentUser"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-CurrentUserActivity"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-Domains"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-GraphTokens"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-Group"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-GroupMember"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-Messages"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-OneDriveFiles"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-OrgInfo"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-PartnerCrossTenantAccessPolicy"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-Password"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-PersonalContacts"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-TemporaryAccessPassword"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-TenantID"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-TokenScope"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-User"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-UserChatMessages"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-UserGroupMembership"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-UserPermissionGrants"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-UserProperties"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-UserTransitiveGroupMembership"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Get-oauth2PermissionGrants"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Invoke-CertToAccessToken"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Invoke-CustomQuery"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Invoke-RefreshToAzureManagementToken"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Invoke-RefreshToMSGraphToken"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Invoke-RefreshToVaultToken"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Invoke-Search"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-AdministrativeUnits"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-Applications"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-AuthMethods"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-ChatMessages"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-Chats"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-ConditionalAccessPolicies"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-ConditionalAuthenticationContexts"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-ConditionalNamedLocations"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-Devices"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-DirectoryRoles"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-ExternalConnections"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-JoinedTeams"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-Notebooks"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-OneDrives"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-RecentOneDriveFiles"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-ServicePrincipals"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-SharePointRoot"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-SharePointSites"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-SharedOneDriveFiles"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""List-Tenants"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""New-SignedJWT"", StringComparison.CurrentCultureIgnoreCase"
+"(string.Equals(command, ""Update-UserPassword"", StringComparison.CurrentCultureIgnoreCase"
+"(system browser, embedded browses"
+"(that is owned by a federated IdP, as opposed to a managed user owned in an Azure AD tenant"
+"(that is, */"
+"(that is, 0"
+"(that is, <see cref=""F:System.Text.Json.JsonTokenType.True"" /> or <see cref=""F:System.Text.Json.JsonTokenType.False"" />"
+"(that is, <see cref=""P:System.Text.Json.Utf8JsonReader.IsFinalBlock"" /> is <see langword=""false"" />"
+"(that is, it is not <see cref=""F:System.Text.Json.JsonTokenType.String"" /> or <see cref=""F:System.Text.Json.JsonTokenType.PropertyName"" />"
+"(that is, it returns the vector (0,0"
+"(that is, it returns the vector (0,0,0"
+"(that is, it returns the vector (0,0,0,0"
+"(that is, it returns the vector (1,1"
+"(that is, it returns the vector (1,1,1"
+"(that is, not a <see cref=""F:System.Text.Json.JsonTokenType.String"" />, <see cref=""F:System.Text.Json.JsonTokenType.PropertyName"" />, or <see cref=""F:System.Text.Json.JsonTokenType.Null"" />"
+"(this applies in the case of key wrap only, not direct encryption"
+"(to a specific URL, with a code"
+"(url, content"
+"(used in client credential flows, in daemon applications"
+"(var requestMessage = new HttpRequestMessage(HttpMethod.Post, jwtLogin"
+"(version 1809, Build Number 17763"
+"(web apps, web API, or even service/daemon applications"
+"(which can be <see langword=""null"" />"
+"(which do not fall under valid failed status, so we fall back to OK"
+"(y,URcGBi(g3"
+(	V	(
+(	ZrbS/B
+( 
+( 'input' 
+( 8P
+( f
+(!
+(!responseJwt.IsSuccessStatusCode
+(!string.IsNullOrEmpty(Config.select
+(!string.IsNullOrEmpty(nextPageUrl
+(!string.IsNullOrEmpty(url
+(#Auth-methods
+(#Build
+(#Common-HTTP-Error-Codes
+(#Demo
+(#Flags
+(#Get-GraphTokens
+(#Get-TokenScope
+(#Invoke-CertToAccessToeken
+(#Invoke-RefreshToAzureManagementToken
+(#Invoke-RefreshToMSGraphToken
+(#Invoke-RefreshToVaultToken
+(#Methods
+(#New-SignedJWT
+(#Observations
+(#Updates
+(#Usage
+(#post-auth-methods
+($<'  >= 
+($@
+($AKVCertificate.kid
+($AppKeyVaultToken
+($PVg}
+($certUri.id
+($jwtHeaderBytes
+($jwtPayloadBytes
+($jwtSha256Hash
+($keyName
+($kvURI
+($response.access_token
+($unsignedJwt
+($unsignedJwtBytes
+(%
+(&lt; 0
+('
+(' '
+('$(MSBuildExtensionsPath
+('+' and '/'
+('-' and '_'
+('..\packages\Costura.Fody.5.7.0\build\Costura.Fody.props'
+('..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets'
+('..\packages\Fody.6.5.5\build\Fody.targets'
+('exp'
+('sha256'
+('typ' header claim
+('u
+('value'
+((
+(($jwtHeader | ConvertTo-Json
+(($jwtPayLoad | ConvertTo-Json
+((n[M
+()
+() 
+() and once using WithTenant(
+() or WithLoginHint(
+().AddMinutes(2
+().GetAwaiter(
+().Split('/'
+()b
+(**REQUIRED** for `Get-TenantID`
+(**REQUIRED** for `Invoke-CertToAccessToken`
+(**REQUIRED** for `Invoke-Refresh*` methods
+(**REQUIRED** for `New-SignedJWT` method
+(**REQUIRED** for all methods except `Get-GraphTokens`
+(*graph.microsoft.com*
+(+%
+(-
+(-CWu
+(-]
+(-id
+(...
+(.NET Framework and .NET Core
+(.^
+(0
+(0s
+(1
+(1198908717056
+(120
+(15
+(1:5F-
+(1CWu
+(1DI
+(1U
+(2
+(3000
+(3?V5P1
+(3^
+(4
+(4.x and 5.x
+(5 minutes
+(5.0.4689.0 or greater
+(501
+(505
+(5qL	
+(5y_C.fr\p^m
+(6
+(6.2001.0140 or greater
+(60
+(6>(l
+(7.0.0
+(8&P6!*2lhL.%1~	
+(8/G9
+(9xC/D>(?tdiRs
+(:
+(:#~j&
+(;
+(<X\
+(<{
+(=
+(=&
+(?|I
+(@Ct
+(A
+(AAD
+(ACE
+(ACEs
+(ACL
+(ACLs
+(ADAL
+(ADFS
+(AEAD
+(ARM
+(AS gwS4;
+(Az
+(Azure Key Vault access token required
+(BMP
+(BrokerOptions
+(C
+(CA
+(CAE
+(CEK
+(Calenders
+(CancellationToken
+(Chat.Read.All
+(Client and Server
+(Config.accessToken
+(Config.entity
+(Config.id
+(Config.tenant
+(Configuration
+(CredSSP
+(Cty
+(DACL
+(DS
+(DateTime.Now - lastAuthorizationPendingTime >= TimeSpan.FromMinutes(1
+(DateTime.Now - startTime < pollingDuration
+(DateTime.UtcNow - startDate
+(DateTime.UtcNow.AddMinutes(2
+(Dk(M]{
+(ECC - Curve
+(ECC - Private Key OR RSA - Private Exponent
+(ECC - X Coordinate
+(ECC - Y Coordinate
+(EXJ+U
+(Enc
+(Encoding.UTF8.GetBytes(jwtHeaderJson
+(Encoding.UTF8.GetBytes(jwtPayloadJson
+(Exception ex
+(ExtensibilityGlobals
+(FJ-]
+(File.Exists(arg
+(GET or POST
+(GET request endpoints only currently
+(GET request only
+(GNBY>f-
+(GUID
+(Get-Date '1970-01-01T00:00:00Z'
+(GrV2@
+(H
+(H0001
+(HHW
+(HU>	
+(HttpClient client = new HttpClient(
+(HttpRequestException ex
+(I
+(IRP
+(IWA
+(IY\V
+(Informational use only.
+(IntuneAppProtectionPoliciesRequired
+(ItemConverterType = typeof(MyContainerConverter
+(JCzd
+(JWE
+(JWS
+(JWT
+(Json Web Encryption
+(Json Web Signature
+(K
+(K!(E
+(K<n!Gp
+(Key ID
+(Key Operations
+(Key Type
+(KeyType
+(LSA
+(M>
+(MAM
+(MFA
+(MSBuildExtensionsPath
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(Mail
+(ManagedIdentityId.SystemAssigned
+(ManagedIdentityId.WithUserAssignedClientId(clientId
+(Microsoft Authenticator or Microsoft Company Portal
+(Microsoft personal
+(Microsoft.Identity.Client.ApiConfig.Executors.IClientApplicationBaseExecutor
+(Microsoft.Identity.Client.ApiConfig.Executors.IConfidentialClientApplicationExecutor
+(Microsoft.Identity.Client.ApiConfig.Executors.IManagedIdentityApplicationExecutor
+(Microsoft.Identity.Client.ApiConfig.Executors.IPublicClientApplicationExecutor
+(Microsoft.Identity.Client.AppConfig.ManagedIdentityId
+(Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration
+(Microsoft.Identity.Client.ApplicationConfiguration
+(Microsoft.Identity.Client.ApplicationOptions
+(Microsoft.Identity.Client.AuthorityInfo
+(Microsoft.Identity.Client.BaseApplicationOptions
+(Microsoft.Identity.Client.BrokerOptions.OperatingSystems
+(Microsoft.Identity.Client.Cache.AdalTokenCacheKey
+(Microsoft.Identity.Client.Cache.AdalUserInfo
+(Microsoft.Identity.Client.Cache.CacheData
+(Microsoft.Identity.Client.Cache.Items.MsalAccessTokenCacheItem
+(Microsoft.Identity.Client.Cache.Items.MsalAccountCacheItem
+(Microsoft.Identity.Client.Cache.Items.MsalIdTokenCacheItem
+(Microsoft.Identity.Client.Cache.Items.MsalRefreshTokenCacheItem
+(Microsoft.Identity.Client.CacheOptions
+(Microsoft.Identity.Client.ClientAssertionCertificate
+(Microsoft.Identity.Client.ConfidentialClientApplicationOptions
+(Microsoft.Identity.Client.Core.ILoggerAdapter
+(Microsoft.Identity.Client.EmbeddedWebViewOptions
+(Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties
+(Microsoft.Identity.Client.IAccount
+(Microsoft.Identity.Client.IConfidentialClientApplication
+(Microsoft.Identity.Client.IMsalHttpClientFactory
+(Microsoft.Identity.Client.IPublicClientApplication
+(Microsoft.Identity.Client.ITelemetryConfig
+(Microsoft.Identity.Client.ITokenCache
+(Microsoft.Identity.Client.IUser
+(Microsoft.Identity.Client.Internal.RequestContext
+(Microsoft.Identity.Client.Internal.Requests.AuthenticationRequestParameters
+(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket
+(Microsoft.Identity.Client.LogLevel
+(Microsoft.Identity.Client.MsalServiceException
+(Microsoft.Identity.Client.MsalUiRequiredException
+(Microsoft.Identity.Client.PlatformsCommon.Shared.Win32VersionApi.OSVERSIONINFOEXW@
+(Microsoft.Identity.Client.Prompt
+(Microsoft.Identity.Client.PublicClientApplicationOptions
+(Microsoft.Identity.Client.SystemWebViewOptions
+(Microsoft.Identity.Client.Telemetry.Receiver
+(Microsoft.Identity.Client.TelemetryCallback
+(Microsoft.Identity.Client.TelemetryCore.Internal.Events.ApiEvent
+(Microsoft.Identity.Client.TokenCacheCallback
+(Microsoft.Identity.Client.TokenCacheNotificationArgs
+(Microsoft.Identity.Client.TokenSource
+(Microsoft.Identity.Client.WindowsBrokerOptions
+(Microsoft.Identity.Json.JsonReader
+(Microsoft.Identity.Json.JsonSerializer
+(Microsoft.Identity.Json.JsonSerializerSettings
+(Microsoft.Identity.Json.JsonToken
+(Microsoft.Identity.Json.JsonWriter
+(Microsoft.Identity.Json.Linq.JArray
+(Microsoft.Identity.Json.Linq.JConstructor
+(Microsoft.Identity.Json.Linq.JContainer
+(Microsoft.Identity.Json.Linq.JEnumerable{`0}
+(Microsoft.Identity.Json.Linq.JObject
+(Microsoft.Identity.Json.Linq.JProperty
+(Microsoft.Identity.Json.Linq.JRaw
+(Microsoft.Identity.Json.Linq.JToken
+(Microsoft.Identity.Json.Linq.JValue
+(Microsoft.Identity.Json.MemberSerialization
+(Microsoft.Identity.Json.Serialization.JsonProperty
+(Microsoft.Identity.Json.Serialization.NamingStrategy
+(Microsoft.IdentityModel.Abstractions.EventLogLevel
+(Microsoft.IdentityModel.Abstractions.ITelemetryClient[]
+(Microsoft.IdentityModel.Abstractions.LogEntry
+(Microsoft.IdentityModel.Abstractions.TelemetryEventDetails
+(Microsoft.IdentityModel.JsonWebTokens.JsonWebToken
+(Microsoft.IdentityModel.Tokens.CompressionProviderFactory
+(Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions
+(Microsoft.IdentityModel.Tokens.CryptoProviderCache
+(Microsoft.IdentityModel.Tokens.CryptoProviderCacheOptions
+(Microsoft.IdentityModel.Tokens.CryptoProviderFactory
+(Microsoft.IdentityModel.Tokens.ECDsaSecurityKey
+(Microsoft.IdentityModel.Tokens.EncryptingCredentials
+(Microsoft.IdentityModel.Tokens.KeyWrapProvider
+(Microsoft.IdentityModel.Tokens.RsaKeyWrapProvider
+(Microsoft.IdentityModel.Tokens.RsaSecurityKey
+(Microsoft.IdentityModel.Tokens.SecurityKey
+(Microsoft.IdentityModel.Tokens.SecurityToken
+(Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor
+(Microsoft.IdentityModel.Tokens.SignatureProvider
+(Microsoft.IdentityModel.Tokens.SigningCredentials
+(Microsoft.IdentityModel.Tokens.SymmetricSecurityKey
+(Microsoft.IdentityModel.Tokens.TokenValidationParameters
+(Microsoft.IdentityModel.Tokens.X509SecurityKey
+(Microsoft.Rest.IServiceClientTracingInterceptor
+(Microsoft.Rest.ITokenProvider
+(Microsoft.Rest.ServiceClient{``0}
+(Microsoft.Rest.TransientFaultHandling.RetryManager
+(Microsoft.Rest.TransientFaultHandling.RetryPolicy
+(Microsoft.Rest.TransientFaultHandling.RetryStrategy
+(N-**
+(NOTE
+(NPk>
+(NamingStrategyType = typeof(MyNamingStrategy
+(New-SignedJWT
+(New-TimeSpan -Start $StartDate -End ((Get-Date
+(New-TimeSpan -Start $StartDate -End (Get-Date
+(NewUserS3cret@Pass!
+(Newtonsoft.Json.JsonReader
+(Newtonsoft.Json.JsonSerializer
+(Newtonsoft.Json.JsonSerializerSettings
+(Newtonsoft.Json.JsonToken
+(Newtonsoft.Json.JsonWriter
+(Newtonsoft.Json.Linq.JArray
+(Newtonsoft.Json.Linq.JConstructor
+(Newtonsoft.Json.Linq.JContainer
+(Newtonsoft.Json.Linq.JEnumerable{`0}
+(Newtonsoft.Json.Linq.JObject
+(Newtonsoft.Json.Linq.JProperty
+(Newtonsoft.Json.Linq.JRaw
+(Newtonsoft.Json.Linq.JToken
+(Newtonsoft.Json.Linq.JValue
+(Newtonsoft.Json.Linq.JsonCloneSettings
+(Newtonsoft.Json.MemberSerialization
+(Newtonsoft.Json.Serialization.JsonProperty
+(Newtonsoft.Json.Serialization.NamingStrategy
+(Not currently implemented
+(Nothing in Visual Basic
+(O
+(OBO flow
+(OII
+(OK
+(ObjectId
+(Oc
+(OneDrive
+(PEVerify
+(PII
+(PKCE
+(PSObject obj in output
+(PX<W
+(Platform
+(PoP
+(PowerShell ps = PowerShell.Create(
+(ProjectConfigurationPlatforms
+(Public Key Use
+(Q
+(QvJ
+(R
+(RID
+(ROPC
+(RP
+(RSA - Exponent
+(RSA - First CRT Coefficient
+(RSA - First Factor CRT Exponent
+(RSA - First Prime Factor
+(RSA - Modulus
+(RSA - Other Primes Info
+(RSA - Second  Prime Factor
+(RSA - Second Factor CRT Exponent
+(RT
+(R^T1g6<]X9c?Uy
+(Rh[PM]vt
+(SACL
+(SAML
+(SDDL
+(SHA256 hasher = SHA256.Create(
+(SID
+(SIDs
+(SPA using MSAL.js for instance
+(SPN
+(SSL/TLS
+(STS
+(See https://aka.ms/msal-net-authorization-code
+(See https://aka.ms/msal-net-client-credentials
+(See https://aka.ms/msal-net-device-code-flow
+(See https://aka.ms/msal-net-on-behalf-of
+(SharePoint
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(StreamWriter writer = File.AppendText(filePath
+(Subject
+(Symmetric - Key Value
+(System.Action
+(System.ArraySegment{T}
+(System.ArraySegment{``0}
+(System.BinaryData
+(System.Boolean
+(System.Buffers.IBufferWriter{System.Byte}
+(System.Byte
+(System.Byte@
+(System.Byte[]
+(System.Byte[]@
+(System.Char
+(System.Char[]
+(System.ClientModel.Primitives.ModelReaderWriterOptions
+(System.Collections.Generic.ICollection{``0}
+(System.Collections.Generic.IEnumerable{Microsoft.Identity.Json.Linq.JObject}
+(System.Collections.Generic.IEnumerable{Microsoft.Identity.Json.Linq.JToken}
+(System.Collections.Generic.IEnumerable{Microsoft.Rest.TransientFaultHandling.RetryStrategy}
+(System.Collections.Generic.IEnumerable{Newtonsoft.Json.Linq.JObject}
+(System.Collections.Generic.IEnumerable{Newtonsoft.Json.Linq.JToken}
+(System.Collections.Generic.IEnumerable{System.Int32}
+(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim}
+(System.Collections.Generic.IEnumerable{System.String}
+(System.Collections.Generic.IEnumerable{`0}
+(System.Collections.Generic.IEnumerable{``0}
+(System.Collections.Generic.IEqualityComparer{`0}
+(System.Collections.Generic.ISet{System.String}
+(System.Collections.Specialized.NotifyCollectionChangedEventArgs
+(System.ComponentModel.AddingNewEventArgs
+(System.ComponentModel.ListChangedEventArgs
+(System.DateTime
+(System.DateTime@
+(System.DateTimeKind
+(System.DateTimeOffset
+(System.DateTimeOffset@
+(System.Decimal
+(System.Decimal@
+(System.Diagnostics.ActivityContext
+(System.Diagnostics.ActivityEvent
+(System.Diagnostics.ActivityIdFormat
+(System.Diagnostics.ActivityLink
+(System.Diagnostics.ActivityListener
+(System.Diagnostics.ActivitySpanId
+(System.Diagnostics.ActivityTraceId
+(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes
+(System.Diagnostics.Metrics.Instrument
+(System.Diagnostics.Metrics.MeasurementCallback{``0}
+(System.Diagnostics.TraceSource
+(System.Diagnostics.Tracing.EventWrittenEventArgs
+(System.Double
+(System.Double@
+(System.Enum
+(System.Exception
+(System.Func{System.IntPtr}
+(System.Func{System.Object}
+(System.Func{System.String}
+(System.Func{System.Threading.Tasks.Task{``0}}
+(System.Func{System.Threading.Tasks.Task}
+(System.Func{System.Windows.Forms.IWin32Window}
+(System.Func{``0}
+(System.Guid
+(System.Guid@
+(System.IFormatProvider
+(System.IO.BinaryReader
+(System.IO.BinaryWriter
+(System.IO.Compression.CompressionLevel
+(System.IO.DirectoryInfo
+(System.IO.FileInfo
+(System.IO.FileStream
+(System.IO.Stream
+(System.IO.StreamWriter
+(System.IO.TextReader
+(System.IO.TextWriter
+(System.Int16
+(System.Int16@
+(System.Int32
+(System.Int32@
+(System.Int64
+(System.Int64@
+(System.IntPtr
+(System.Linq.Expressions.BinaryExpression
+(System.Linq.Expressions.ConditionalExpression
+(System.Linq.Expressions.ConstantExpression
+(System.Linq.Expressions.Expression
+(System.Linq.Expressions.ExpressionType
+(System.Linq.Expressions.MemberExpression
+(System.Linq.Expressions.MethodCallExpression
+(System.Linq.Expressions.NewExpression
+(System.Linq.Expressions.UnaryExpression
+(System.Net.Http.DelegatingHandler
+(System.Net.Http.DelegatingHandler[]
+(System.Net.Http.Headers.HttpHeaders
+(System.Net.Http.Headers.HttpResponseHeaders
+(System.Net.Http.HttpContent
+(System.Net.Http.HttpRequestMessage
+(System.Net.Http.HttpResponseMessage
+(System.Nullable{System.Boolean}
+(System.Nullable{System.Byte}
+(System.Nullable{System.Char}
+(System.Nullable{System.DateTimeOffset}
+(System.Nullable{System.DateTime}
+(System.Nullable{System.Decimal}
+(System.Nullable{System.Double}
+(System.Nullable{System.Guid}
+(System.Nullable{System.Int16}
+(System.Nullable{System.Int32}
+(System.Nullable{System.Int64}
+(System.Nullable{System.SByte}
+(System.Nullable{System.Single}
+(System.Nullable{System.TimeSpan}
+(System.Nullable{System.UInt16}
+(System.Nullable{System.UInt32}
+(System.Nullable{System.UInt64}
+(System.Numerics.Matrix3x2
+(System.Numerics.Matrix4x4
+(System.Numerics.Plane
+(System.Numerics.Quaternion
+(System.Numerics.Vector2
+(System.Numerics.Vector3
+(System.Numerics.Vector4
+(System.Numerics.Vector{System.Double}
+(System.Numerics.Vector{System.Int32}
+(System.Numerics.Vector{System.Int64}
+(System.Numerics.Vector{System.Single}
+(System.Numerics.Vector{System.UInt32}
+(System.Numerics.Vector{System.UInt64}
+(System.Numerics.Vector{T}
+(System.Numerics.Vector{`0}
+(System.Numerics.Vector{``0}
+(System.Object
+(System.Object[]
+(System.ReadOnlyMemory{System.Byte}
+(System.ReadOnlyMemory{System.Char}
+(System.ReadOnlySpan{System.Byte}
+(System.ReadOnlySpan{System.Char}
+(System.ReadOnlySpan{``0}
+(System.Reflection.MemberInfo
+(System.Reflection.PropertyInfo
+(System.Runtime.CompilerServices.IAsyncStateMachine
+(System.Runtime.InteropServices.SafeHandle
+(System.SByte
+(System.SByte@
+(System.Security.AccessControl.AccessControlSections
+(System.Security.AccessControl.AccessRule
+(System.Security.AccessControl.AccessRule{`0}
+(System.Security.AccessControl.AuditRule
+(System.Security.AccessControl.AuditRule{`0}
+(System.Security.AccessControl.AuthorizationRule
+(System.Security.AccessControl.CommonSecurityDescriptor
+(System.Security.AccessControl.ControlFlags
+(System.Security.AccessControl.FileSystemAccessRule
+(System.Security.AccessControl.FileSystemAuditRule
+(System.Security.AccessControl.ObjectAccessRule
+(System.Security.AccessControl.ObjectAuditRule
+(System.Security.Claims.Claim
+(System.Security.Claims.ClaimsIdentity
+(System.Security.Cryptography.ECDsa
+(System.Security.Cryptography.HashAlgorithm
+(System.Security.Cryptography.HashAlgorithmName
+(System.Security.Cryptography.KeyedHashAlgorithm
+(System.Security.Cryptography.RSA
+(System.Security.Cryptography.RSACryptoServiceProvider
+(System.Security.Cryptography.RSAParameters
+(System.Security.Cryptography.X509Certificates.X509Certificate2
+(System.Security.Principal.IdentityReference
+(System.Security.Principal.SecurityIdentifier
+(System.Security.Principal.TokenAccessLevels
+(System.Security.Principal.WellKnownSidType
+(System.Security.Principal.WindowsBuiltInRole
+(System.Security.Principal.WindowsIdentity
+(System.Single
+(System.Single@
+(System.Single[]
+(System.Span{System.Byte}
+(System.Span{T}
+(System.Span{`0}
+(System.Span{``0}
+(System.String
+(System.String@
+(System.String[]
+(System.Text.Encodings.Web.TextEncoderSettings
+(System.Text.Json.JsonEncodedText
+(System.Text.Json.JsonReaderOptions
+(System.Text.Json.JsonSerializerOptions
+(System.Text.Json.Utf8JsonReader@
+(System.Text.Json.Utf8JsonWriter
+(System.Text.Unicode.UnicodeRange
+(System.Text.Unicode.UnicodeRange[]
+(System.Threading.CancellationToken
+(System.Threading.Tasks.Task
+(System.Threading.Tasks.Task{`0}
+(System.Threading.Tasks.Task{``0}
+(System.Threading.Tasks.ValueTask{`0}
+(System.Threading.Thread
+(System.TimeSpan
+(System.Type
+(System.UInt16
+(System.UInt16@
+(System.UInt32
+(System.UInt32@
+(System.UInt64
+(System.UInt64@
+(System.Uri
+(System.Void*
+(System.Windows.Forms.IWin32Window
+(System.Xml.Linq.XObject
+(System.Xml.XmlNode
+(System.Xml.XmlReader
+(T4k
+(TAP
+(TB%T(TJhR
+(TOO MANY REQUESTS
+(T[]
+(Teams
+(TokenLifetimeInMinutes
+(Typ
+(U
+(U+0021-U+007F
+(U+00A1-U+00FF
+(U+0100-U+017F
+(U+0180-U+024F
+(U+0250-U+02AF
+(U+02B0-U+02FF
+(U+0300-U+036F
+(U+0370-U+03FF
+(U+0400-U+04FF
+(U+0500-U+052F
+(U+0530-U+058F
+(U+0590-U+05FF
+(U+0600-U+06FF
+(U+0700-U+074F
+(U+0750-U+077F
+(U+0780-U+07BF
+(U+07C0-U+07FF
+(U+0800-U+083F
+(U+0840-U+085F
+(U+0860..U+086F
+(U+08A0-U+08FF
+(U+0900-U+097F
+(U+0980-U+09FF
+(U+0A01-U+0A7F
+(U+0A81-U+0AFF
+(U+0B00-U+0B7F
+(U+0B80-U+0BFF
+(U+0B82-U+0BFA
+(U+0C00-U+0C7F
+(U+0C81-U+0CFF
+(U+0D00-U+0D7F
+(U+0D80-U+0DFF
+(U+0E00-U+0E7F
+(U+0E80-U+0EDF
+(U+0F00-U+0FFF
+(U+1000-U+109F
+(U+10A0-U+10FF
+(U+1100-U+11FF
+(U+1200-U+137C
+(U+1380-U+1399
+(U+13A0-U+13FF
+(U+1400-U+167F
+(U+1680-U+169F
+(U+16A0-U+16FF
+(U+1700-U+171F
+(U+1720-U+173F
+(U+1740-U+175F
+(U+1760-U+177F
+(U+1780-U+17FF
+(U+1800-U+18AF
+(U+18B0-U+18FF
+(U+1900-U+194F
+(U+1950-U+197F
+(U+1980-U+19DF
+(U+19E0-U+19FF
+(U+1A00-U+1A1F
+(U+1A20-U+1AAF
+(U+1AB0-U+1AFF
+(U+1B00-U+1B7F
+(U+1B80-U+1BBF
+(U+1BC0-U+1BFF
+(U+1C00-U+1C4F
+(U+1C50-U+1C7F
+(U+1C80..U+1C8F
+(U+1C90..U+1CBF
+(U+1CC0-U+1CCF
+(U+1CD0-U+1CFF
+(U+1D00-U+1D7F
+(U+1D80-U+1DBF
+(U+1DC0-U+1DFF
+(U+1E00-U+1EFF
+(U+1F00-U+1FFF
+(U+2000-U+206F
+(U+2070-U+209F
+(U+20A0-U+20CF
+(U+20D0-U+20FF
+(U+2100-U+214F
+(U+2150-U+218F
+(U+2190-U+21FF
+(U+2200-U+22FF
+(U+2300-U+23FF
+(U+2400-U+243F
+(U+2440-U+245F
+(U+2460-U+24FF
+(U+2500-U+257F
+(U+2580-U+259F
+(U+25A0-U+25FF
+(U+2600-U+26FF
+(U+2700-U+27BF
+(U+27C0-U+27EF
+(U+27F0-U+27FF
+(U+2800-U+28FF
+(U+2900-U+297F
+(U+2980-U+29FF
+(U+2A00-U+2AFF
+(U+2B00-U+2BFF
+(U+2C00-U+2C5F
+(U+2C60-U+2C7F
+(U+2C80-U+2CFF
+(U+2D00-U+2D2F
+(U+2D30-U+2D7F
+(U+2D80-U+2DDF
+(U+2DE0-U+2DFF
+(U+2E00-U+2E7F
+(U+2E80-U+2EFF
+(U+2F00-U+2FDF
+(U+2FF0-U+2FFF
+(U+3000-U+303F
+(U+3040-U+309F
+(U+30A0-U+30FF
+(U+3100-U+312F
+(U+3105-U+312F
+(U+3131-U+318F
+(U+3190-U+319F
+(U+31A0-U+31BF
+(U+31C0-U+31EF
+(U+31F0-U+31FF
+(U+3200-U+32FF
+(U+3300-U+33FF
+(U+3400-U+4DB5
+(U+4DC0-U+4DFF
+(U+4E00-U+9FCC
+(U+A000-U+A48F
+(U+A490-U+A4CF
+(U+A4D0-U+A4FF
+(U+A500-U+A63F
+(U+A640-U+A69F
+(U+A6A0-U+A6FF
+(U+A700-U+A71F
+(U+A720-U+A7FF
+(U+A800-U+A82F
+(U+A830-U+A83F
+(U+A840-U+A87F
+(U+A880-U+A8DF
+(U+A8E0-U+A8FF
+(U+A900-U+A92F
+(U+A930-U+A95F
+(U+A960-U+A97F
+(U+A960-U+A9F
+(U+A980-U+A9DF
+(U+A9E0-U+A9FF
+(U+AA00-U+AA5F
+(U+AA60-U+AA7F
+(U+AA80-U+AADF
+(U+AAE0-U+AAFF
+(U+AB00-U+AB2F
+(U+AB30-U+AB6F
+(U+AB70-U+ABBF
+(U+ABC0-U+ABFF
+(U+AC00-U+D7AF
+(U+D7B0-U+D7FF
+(U+F900-U+FAD9
+(U+FB00-U+FB4F
+(U+FB50-U+FDFF
+(U+FE00-U+FE0F
+(U+FE10-U+FE1F
+(U+FE20-U+FE2F
+(U+FE30-U+FE4F
+(U+FE50-U+FE6F
+(U+FE70-U+FEFF
+(U+FF00-U+FFEE
+(U+FFF0-U+FFFF
+(UPN
+(UTC
+(UTC 1970-01-01T0:0:0Z
+(UWP
+(UY5EH(
+(V!KOaBtm@
+(Vm
+(W
+(W+
+(WAM
+(WF7=
+(WMI
+(Web Account Manager
+(WebView1 / Vulcan and WebView2 browser
+(Windows Account Manager
+(Windows NT 10.0; Win64; x64
+(X.509 Certificate Chain
+(X.509 Certificate SHA-1 thumbprint
+(X.509 Certificate SHA-256 thumbprint
+(X.509 URL
+(X6(
+(XOr
+(Xamarin
+(Y
+(Yd
+(Z
+(ZVN6+Pyrn}T*g
+([
+([RFC3961] section 6.2.1
+([RFC3961] section 6.2.3
+([RFC3962] section 6
+([System.String]::Format('$(ErrorText
+([yW
+(\]pQ
+(]V
+(_eventQueueTaskState != EventQueueTaskRunning
+(_maintainLRU = false
+(`0
+(`0[]
+(`Invoke-Refresh*` methods
+(``0@
+(``0[]
+(`hu
+(a GUID
+(a configuration retrieved in the past that we were able to successfully validate a token against
+(a list of known B2C authorities cannot be maintained by MSAL.NET
+(a resource
+(a structure which is not thread-safe
+(a user has several accounts
+(a.k.a.digest
+(aJRW
+(algorithm
+(allow or deny
+(allows no code points through by default
+(along with MSAL cache
+(also known as &quot;hot&quot; task
+(also known as <i>Application ID</i>
+(also known as App ID
+(also known as Application ID
+(also known as Reply URI or Reply URL
+(also named Application ID
+(an application password
+(and also AAD accounts on UWP
+(and ignored
+(and its cookies
+(and nested values
+(and public client applications
+(and reduced version
+(application
+(application ID
+(application password
+(arg
+(args
+(args.Length < 1
+(args[iter + 1]
+(as a Base64 encoded JSON string
+(as a JSON literal true or false
+(as a JSON number
+(as a JSON string
+(as indicated by failing to process incoming tokens
+(as x5c parameter
+(at most
+(authority URL host
+(authority host
+(bXB
+(bd
+(body
+(browser
+(case sensitive
+(cert
+(certUri == null
+(certUriWithVersion
+(certificate.ToString(
+(client credential flow
+(client credentials
+(comments within the JSON are invalid
+(compression algorithm
+(corresponds to the token's exp claim
+(current user's login keychain
+(d-	&T1x.
+(d\75v
+(default
+(default behavior
+(defined by the W3C ID specification
+(descriptor
+(desktop/mobile app
+(device code phishing
+(deviceCodeResponseContent
+(dir
+(du(MpqQ
+(e.g from the 'typ' header for a JWT
+(e.g. !foo
+(e.g. 'a' or 123
+(e.g. <c>new Date(52231943
+(e.g. Azure Active Directory
+(e.g. Bearer and PoP
+(e.g. IDistributedCache
+(e.g. JSON contains a property that isn't a member on the object
+(e.g. PoP and Bearer
+(e.g. Production or Pre-Production
+(e.g. Xamarin.Mac
+(e.g. `https://login.microsoftonline.com/tenantId`
+(e.g. `{searchTerms} CreatedBy:` etc.
+(e.g. a class referencing itself
+(e.g. account
+(e.g. by comparing the host part of the resource against a list of known good hosts
+(e.g. consumers
+(e.g. foo == true ? bar : fee
+(e.g. http://localhost:1234
+(e.g. http://localhost:1234?code=auth_code_from_aad
+(e.g. https://login.microsfoftonline.com/common
+(e.g. interaction required
+(e.g. login.microsoftonline.com
+(e.g. mobile
+(e.g. net6-android or net6-ios
+(e.g. new DateTime(
+(e.g. newline
+(e.g. not include spaces
+(e.g. p.Foo or dateTime.Hour
+(e.g. rotate the key
+(e.g. when the log message evaluates a variable
+(either via portal or PowerShell/CLI operation
+(embedded web view and Windows broker
+(entity
+(env + tenant
+(environment
+(error.ToString(
+(especially minimum value for throttling at ARM level
+(even the semantics would be tenant
+(events
+(false
+(file delete
+(filePath
+(for consent
+(for ex. distributed cache like Redis
+(for ex. if the application was configured with an authority that does not allow tenants
+(for example how to handle comments or maximum depth allowed when reading
+(for example if the application was configured with an authority that does not allow tenants
+(for example if the application was configured with multiple different authority hosts
+(for example previously obtained from ADAL 2.x
+(for instance ADAL and MSAL for objective C in iOS
+(for instance ASP.NET / ASP.NET Core web apps
+(for instance domain takeover
+(for instance empty
+(for instance https://login.microsoftonline.com for the Azure public cloud
+(for instance if the password expired
+(forceRefresh=false
+(formerly named Azure AD v2.0
+(from request and responses
+(g6K'`
+(gR/	
+(globally unique across tenants
+(goto 2
+(head
+(homeAccountId
+(https://aka.ms/msal-httpclient-info
+(https://aka.ms/msal-net-register-app
+(https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/pull/2046/files
+(https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/releases/tag/4.19.0
+(https://github.com/dafthack/GraphRunner
+(https://github.com/mlcsec/Graphpython
+(https://github.com/mlcsec/SharpGraphView/assets/47215311/303148b7-bad8-4243-9deb-f8fe2cd44496
+(https://github.com/mlcsec/SharpGraphView/assets/47215311/46ca692d-d48c-4262-9f47-6ae0b6f004f0
+(https://github.com/mlcsec/SharpGraphView/assets/47215311/65de3da1-f40a-46c2-959c-f99885fd80cc
+(https://github.com/rvrsh3ll/TokenTactics
+(https://github.com/rvrsh3ll/TokenTactics/blob/main/modules/TokenHandler.ps1
+(https://learn.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-1.0
+(https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/connect-mggraph?view=graph-powershell-1.0
+(https://learn.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference
+(https://tools.ietf.org/html/rfc7517
+(https://tools.ietf.org/html/rfc7636
+(https://www.alteredsecurity.com/azureadvanced
+(i.e. AAD is down
+(i.e. multi-tenant
+(i.e. no authority override
+(i.e. read / write only by the owner
+(i.e. single tenant
+(i.e. the private key
+(i.e.authority validation failed
+(i.e.preferred cache = preferred network = aliases = configured_authority
+(iOS
+(ies
+(if available
+(if necessary
+(if present
+(if they exist
+(if using .Net Framework
+(if using Xamarin.Android
+(if using Xamarin.iOS
+(in addition to the cloud environment
+(in case of a JWE
+(in ms
+(in number of items
+(in the case of applications using the client credential flows
+(in the name of no user
+(in the secret section
+(including objects or arrays
+(it is a root activity
+(item
+(json web signature
+(jsonToken != null
+(jwk_thumbprint
+(jwtExpirationTimeSpan
+(jwtHeader
+(jwtPayload
+(jwtSha256Hash
+(keyName
+(kid
+(kilobytes
+(l
+(libraries/SDK
+(like a mail client with several mailboxes
+(live
+(login.microsoft.com
+(long
+(long-running OBO flow
+(m
+(managed identity
+(map
+(may need to add and use [nuget.org](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources
+(ms
+(nextPageUrl
+(nor will GetAccounts / RemoveAccount work
+(normal OBO flow
+(normal authorize_code grant
+(not an ID token
+(not for a user
+(not just a row
+(not recommended
+(not supported
+(not the same as public / private key pair used by SSH
+(notBeforeExpirationTimeSpan
+(o
+(obj
+(object
+(object id
+(of basic types
+(on UWP
+(on by default
+(only available on a computer running Microsoft Windows XP or later
+(optional
+(or a group of products
+(or an enumeration of strings
+(or more likely its parents
+(or one of its derived types
+(or the user
+(or vice versa
+(original input string or decoded from base64 encoded
+(outer handler is the first in the list
+(p
+(p:X
+(parameters
+(pmk~P
+(preferred
+(ps.Streams.Error.Count > 0
+(regardless of header and first response code
+(request
+(requestBody.ToString(
+(requestContext.Logger
+(requestMessage
+(requests/sec
+(response.IsSuccessStatusCode
+(responseBody
+(responseContent
+(responseContentJWT
+(roleTemplateId=\'{role.roleTemplateId}\'
+(r{\
+(s
+(s0QuL |2
+(saved to _az_tokens.txt_
+(saved to _graph_tokens.txt_
+(saved to _new_graph_tokens.txt_
+(saved to _vault_tokens.txt_
+(saved to az_tokens.txt
+(saved to cert_tokens.txt
+(saved to graph_tokens.txt
+(saved to new_graph_tokens.txt
+(saved to vault_tokens.txt
+(scope != null
+(script
+(sec 4.2
+(sec 6.1
+(see https://aka.ms/msal-net-migration-adal2-msal2
+(service to service communication
+(signedJWT
+(simpler
+(single tenant application
+(single-tenant application
+(so it can tell WebView2
+(spin waiting
+(starting at 0
+(starts/exits polling
+(step 1
+(string
+(string arg
+(string filePath
+(string item in args
+(string.IsNullOrEmpty(Config.accessToken
+(string.IsNullOrEmpty(Config.domain
+(string.IsNullOrEmpty(Config.id
+(string.IsNullOrEmpty(Config.query
+(string.IsNullOrEmpty(Config.searchString
+(string.IsNullOrEmpty(Config.tenant
+(string[] args
+(t
+(tF/jl	
+(tenant id
+(tenantId
+(test mode
+(that is <c>https://login.microsoftonline.com/common/</c>
+(that is client token
+(that is requests token in its own name and not in the name of users
+(that is very likely to be unique
+(that is when <code>args.HasStateChanged</code> is <code>true</code>
+(the client
+(the cloud being the Azure public cloud
+(the default
+(the machine is not domain or AAD joined
+(the payload
+(therefore doing the On-Behalf-Of flow
+(this is hard-coded into MSAL
+(this is populated from the network
+(this is usually after 15 mins
+(token
+(tokenResponse
+(tokenResponse.StatusCode == HttpStatusCode.BadRequest
+(tokenResponseContent
+(true
+(u
+(unsignedJwt
+(unsignedJwtBytes
+(uri
+(url
+(urlOfTheProtectedApi
+(us
+(use HttpRequestMessage.Headers instead
+(used to get token for managed identities
+(user can save and drive polling operation
+(usually a web API
+(vF
+(var error in ps.Streams.Error
+(var header in headers
+(var httpClient = new HttpClient(
+(var httpClientJWT = new HttpClient(
+(var kvp in responseDictionary
+(var property in Config.properties
+(var property in result
+(var property in tokenJson.Properties(
+(var role in roles
+(var s in scopeArray
+(ver 13.0+
+(w
+(web app / web API / daemon app
+(web browser
+(web views
+(webviews
+(when the message does not contain PII
+(with no Byte-Order-Mark (BOM
+(with no extra white space
+(within 5 minute window
+(within a 5 minute window
+(within the given UTF-8 encoded input text
+(wpfControl
+(wrappedkey
+(x86
+(xCHQcH
+(xkc	;34qc;J>Z?
+(z
+({
+({1}
+(|
+(}
+(}6>^}CWO/X
+(~!L&f

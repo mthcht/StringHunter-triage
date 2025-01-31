@@ -1,0 +1,137 @@
+"[""__CLASS"""
+"[""dNSHostName"""
+"[""trustPartner"""
+"[""trustattributes"""
+"[""trustdirection"""
+"[""trusttype"""
+"[""whenChanged"""
+"[""whenCreated"""
+[!\
+[$($ComputerName)
+[$($Target)
+[$($_.DisplayUserID)
+[$($runspace.Computer)
+[$($selectedMultiSession.ComputerName)
+[$($selectedSession.ComputerName)
+[$ComputerName
+[$KeyID
+[$PromptComputerName
+[$computerNameOnly
+[$i
+[$index
+[$index + 1
+[$j
+[$key
+[$newIndex
+[$selectedIndex
+[$sessionNumber
+[$sessionuser
+[)\d+(?=\
+[*
+[+
+[-
+[0
+[0-1
+[0-9
+[1
+[1080p
+[2
+[3
+[30 seconds timeout
+[4
+[4K
+[6-9
+[Byte[
+[Console
+[Convert
+[Environment
+[GLSet $OldGlobalPipeName
+[IO.Compression.CoMPressionMode
+[IO.File
+[IPAddress
+[In case the above fails
+[Math
+[New Session
+[PInject
+[PSCustomObject
+[PSRemoting
+[Parameter(Mandatory = $false)
+[Parameter(Mandatory = $true)
+[Parameter(Mandatory=$true)
+[PowerShell
+[RunspaceFactory
+[SMB
+[ScriptBlock
+[Stop-Process -Id $($processId.Trim())
+[Stop-Process -Id $processId
+[System.AppDomain
+[System.Collections.Generic.List[psobject
+[System.Console
+[System.Convert
+[System.DirectoryServices.ActiveDirectory.Domain
+[System.Drawing.Graphics
+[System.Drawing.Imaging.ImageFormat
+[System.Environment
+[System.IO.Compression.CompressionMode
+[System.IO.Compression.GzipStream
+[System.IO.File
+[System.IO.MemoryStream
+[System.IO.Path
+[System.IO.Pipes.NamedPipeClientStream
+[System.IO.Pipes.NamedPipeServerStream
+[System.IO.StreamReader
+[System.IO.StreamWriter
+[System.Management.CimType
+[System.Management.ManagementPath
+[System.Net.Dns
+[System.Net.NetworkInformation.IPGlobalProperties
+[System.Net.SecurityProtocolType
+[System.Net.ServicePointManager
+[System.Object
+[System.Security.Principal.WindowsBuiltInRole
+[System.Security.Principal.WindowsIdentity
+[System.Security.Principal.WindowsPrincipal
+[System.StringComparison
+[System.Text.Encoding
+[System.Threading.Mutex
+[System.Threading.Timeout
+[System.TimeoutException
+[System.Uri
+[Version: 1.0.4
+[WMI
+[\+
+[^A-Za-z0-9.-
+[array
+[char
+[default: cmd(b64)
+[file name
+[full path
+[int
+[powershell
+[psobject
+[r10+rcx*2
+[r11+rcx*4
+[r14+rcx*4
+[r15
+[r15+0x18
+[r15+0x1c
+[r15+0x20
+[r15+0x24
+[r9
+[r9+0x20
+[r9+0x3c
+[rax+0x18
+[rax+0x20
+[rdx+0x60
+[regex
+[rsi
+[rsp
+[runspacefactory
+[string
+[switch
+[uint32
+[void
+[wmiclass
+[x64
+[x86
+[{0}

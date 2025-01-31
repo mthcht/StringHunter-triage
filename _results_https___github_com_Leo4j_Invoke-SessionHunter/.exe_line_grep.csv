@@ -1,0 +1,5 @@
+"					$Process.StartInfo.FileName = ""powershell.exe"
+"				$Process.StartInfo.FileName = ""powershell.exe"
+"        $commandStr = ""powershell.exe"
+"e-WmiMethod -ComputerName $ComputerName -Class Win32_Process -Name Create -ArgumentList (""powershell.exe"
+"terName $ComputerName -Class Win32_Process -Name Create -Credential $cred -ArgumentList (""powershell.exe"

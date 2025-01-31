@@ -1,0 +1,409 @@
+          
+       - 386
+       - amd64
+       - arm
+       - darwin
+       - freebsd
+       - linux
+       - windows
+    1     
+    2     
+    goarch:
+    goos:
+    main: ./cmd/pproxy-local/main.go
+    main: ./cmd/pproxy-server/main.go
+   1    
+   NMETHODS field contains the number of method identifier octets that
+   The VER field is set to X'05' for this ver of the protocol.  The
+   appear in the METHODS field.
+   identifier/method selection message:
+   sends a METHOD selection message:
+  - binary: pproxy-local
+  - binary: pproxy-server
+  - linux
+  - osx
+  1  
+  1   
+  RSV  
+ ![lemonsaas](https://github.com/LemonSaaS/ghostsocks/blob/master/lemonsaas.png)
+ !os.IsNotExist(err) {
+ %s 
+ 0-255 
+ 1  
+ 1 to 255 
+ 1024
+ 256
+ 7448
+ ATYP 
+ ATYP=3 DST.ADDR
+ BND.ADDR 
+ BND.PORT 
+ CMD 
+ CONNECT
+ Cipher 
+ DST.ADDR 
+ DST.PORT 
+ JSON 
+ METHOD 
+ METHODS  
+ NMETHODS 
+ REP 
+ SOCKS5 
+ TCP Socket
+ Variable 
+ X'00' 
+ [ghostsocks](https://github.com/gwuhaolin/lightsocks)
+ assign 
+ buf[0] != 0x05 {
+ byte 
+ config
+ copy 
+ dstServer
+ dstServer 
+ error 
+ i < PasswordLength
+ len(bs) != PasswordLength {
+ listen
+ local 
+ localUser
+ localUser 
+ n < 7 {
+ password
+ proxyServer
+ proxyServer 
+ remote
+ return
+ server 
+ tmp
+"   The dstServer selects from one of the methods given in METHODS, and"
+"   The localConn connects to the dstServer, and sends a ver"
+""", fmt.Sprintf("
+"""../../cmd"""
+"""../../core"""
+"""../../local"""
+"""../../server"""
+"""../core"""
+"""crypto/rand"""
+"""encoding/base64"""
+"""encoding/binary"""
+"""encoding/json"""
+"""errors"""
+"""fmt"""
+"""github.com/mitchellh/go-homedir"""
+"""github.com/phayes/freeport"""
+"""io"""
+"""io/ioutil"""
+"""log"""
+"""math/rand"""
+"""net"""
+"""os"""
+"""path"""
+"""reflect"""
+"""sort"""
+"""strings"""
+"""testing"""
+"""time"""
+", listenAddr, password))"
+", listenAddr, remoteAddr, password))"
+": %s"", configPath, err)"
+":%s"", configPath, err)"
+":%s"", secureSocket.RemoteAddr, err))"
+"Cipher:     core.NewCipher(password),"
+"ConfigFileName = "".ghostsocks.json"""
+"DefaultListenAddr = "":7448"""
+"IP:   dIP,"
+"ListenAddr: DefaultListenAddr,"
+"ListenAddr: fmt.Sprintf("":%d"", port),"
+"ListenAddr: listenAddr,"
+"Password) Less(i, j int) bool {"
+"Password) Swap(i, j int) {"
+"Password, error) {"
+"Password: core.RandPassword().String(),"
+"Port: int(binary.BigEndian.Uint16(dPort)),"
+"RemoteAddr: remoteAddr,"
+"_, err := lsServer.DecodeRead(localConn, buf)"
+"bs := make([]byte, MB)"
+"bs, err := base64.StdEncoding.DecodeString(strings.TrimSpace(passwordString))"
+"buf := make([]byte, 256)"
+"buf := make([]byte, BufSize)"
+"configJson, _ := json.MarshalIndent(config, """", """
+"configPath = path.Join(home, ConfigFileName)"
+"copy(password[:], bs)"
+"copy(tmp, org)"
+"core.Password, listenAddr "
+"core.Password, listenAddr, remoteAddr "
+"decodePassword, err := ParsePassword(passwordStr)"
+"decodePassword: decodePassword,"
+"dstServer, err := net.DialTCP(""tcp"", nil, dstAddr)"
+"encodePassword: encodePassword,"
+"err := ioutil.WriteFile(configPath, configJson, 0644)"
+"err := local.DecodeCopy(userConn, proxyServer)"
+"err := lsServer.DecodeCopy(dstServer, localConn)"
+"file, err := os.Open(configPath)"
+"fmt.Errorf("""
+"for i, v := range bs {"
+"for i, v := range encodePassword {"
+"for i, v := range intArr {"
+"home, _ := homedir.Dir()"
+"if !reflect.DeepEqual(org, tmp) {"
+"if !reflect.DeepEqual(password, decodePassword) {"
+"if _, err := os.Stat(configPath)"
+"ipAddr, err := net.ResolveIPAddr(""ip"", string(buf[5:n-2]))"
+"json:""listen"""
+"json:""password"""
+"json:""remote"""
+"listenAddr, err := net.ResolveTCPAddr(""tcp"", config.ListenAddr)"
+"listener, err := net.ListenTCP(""tcp"", local.ListenAddr)"
+"listener, err := net.ListenTCP(""tcp"", lsServer.ListenAddr)"
+"local.EncodeCopy(proxyServer, userConn)"
+"localConn, err := listener.AcceptTCP()"
+"log.Fatalf("""
+"log.Printf("""
+"log.Printf(""pproxy-local:%s "
+"log.Printf(""pproxy-server:%s "
+"log.Println("""
+"lsLocal := local.New(password, listenAddr, remoteAddr)"
+"lsServer := server.New(password, listenAddr)"
+"lsServer.EncodeCopy(localConn, dstServer)"
+"lsServer.EncodeWrite(localConn, []byte{0x05, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00})"
+"lsServer.EncodeWrite(localConn, []byte{0x05, 0x00})"
+"n"", configPath)"
+"n"", version, listenAddr.String())"
+"n%s"", file)"
+"n, err := lsServer.DecodeRead(localConn, buf)"
+"n, err = conn.Read(bs)"
+"net.TCPConn, bs []byte) (int, error) {"
+"net.TCPConn, bs []byte) (n int, err error) {"
+"net.TCPConn, error) {"
+"net.TCPConn, src "
+"org := make([]byte, PasswordLength)"
+"password, err := core.ParsePassword(config.Password)"
+"password, nil"
+"password[i], password[j] = password[j], password[i]"
+"port, err := freeport.GetFreePort()"
+"proxyServer, err := local.DialRemote()"
+"readCount, errRead := secureSocket.DecodeRead(src, buf)"
+"readCount, errRead := src.Read(buf)"
+"remoteAddr, err := net.ResolveTCPAddr(""tcp"", config.RemoteAddr)"
+"remoteConn, err := net.DialTCP(""tcp"", nil, secureSocket.RemoteAddr)"
+"return nil, ErrInvalidPassword"
+"return nil, errors.New(fmt.Sprintf("""
+"return remoteConn, nil"
+"t.Error("""
+"tmp := make([]byte, PasswordLength)"
+"userConn, err := listener.AcceptTCP()"
+"var ErrInvalidPassword = errors.New("""
+"var version = ""master"""
+"writeCount, errWrite := dst.Write(buf[0:readCount])"
+"writeCount, errWrite := secureSocket.EncodeWrite(dst, buf[0:readCount])"
+----
+-----
+------
+-------
+--------
+----------
+.DS_Store
+.idea/
+// 1. 
+// 2. 
+// 3. 
+// 4. 
+// CMD
+// CONNECT X'01'
+// Conn
+// aType 
+// https://www.ietf.org/rfc/rfc1928.txt
+// localConn
+// n 
+// userConn
+0x05
+255 
+Base on [lightsocks](https://github.com/gwuhaolin/lightsocks)
+BufSize = 1024
+Cipher
+Cipher     
+Cipher {
+Cipher) decode(bs []byte) {
+Cipher) encode(bs []byte) {
+Cipher{
+Config) ReadConfig() {
+Config) SaveConfig() {
+DOMAINNAME: X'03'
+IP V4 address: X'01'
+IP V6 address: X'04'
+ListenAddr 
+ListenAddr string 
+LsLocal {
+LsLocal) Listen(didListen func(listenAddr net.Addr)) error {
+LsLocal) handleConn(userConn 
+LsLocal{
+LsServer {
+LsServer) Listen(didListen func(listenAddr net.Addr)) error {
+LsServer) handleConn(localConn 
+LsServer{
+MB = 1024 
+Password
+Password   string 
+Password {
+Password) 
+Password) Len() int {
+Password) String() string {
+Password{}
+RemoteAddr 
+RemoteAddr string 
+SecureSocket) DecodeCopy(dst 
+SecureSocket) DecodeRead(conn 
+SecureSocket) DialRemote() (
+SecureSocket) EncodeCopy(dst 
+SecureSocket) EncodeWrite(conn 
+SecureSocket: 
+Socks
+Socks5
+VER 
+b.ResetTimer()
+base64
+bs = nil
+bs[i] = cipher.decodePassword[v]
+bs[i] = cipher.encodePassword[v]
+builds:
+byte
+case 0x01:
+case 0x03:
+case 0x04:
+cipher := NewCipher(password)
+cipher.decode(bs)
+cipher.decode(tmp)
+cipher.encode(bs)
+cipher.encode(tmp)
+cmd.Config{
+config := 
+config.ReadConfig()
+config.SaveConfig()
+config.json
+const (
+const PasswordLength = 256
+continue
+core.SecureSocket
+core.SecureSocket{
+dIP = buf[4 : 4
+dIP = ipAddr.IP
+dPort := buf[n-2:]
+decodePassword 
+decodePassword := 
+decodePassword[v] = byte(i)
+default:
+defer dstServer.Close()
+defer file.Close()
+defer listener.Close()
+defer localConn.Close()
+defer proxyServer.Close()
+defer userConn.Close()
+didListen(listener.Addr())
+dist/
+dstAddr := 
+dstServer.Close()
+dstServer.SetLinger(0)
+encodePassword 
+encodePassword[i] = v
+err = json.NewDecoder(file).Decode(config)
+for i := 0
+for {
+func (cipher 
+func (config 
+func (local 
+func (lsServer 
+func (password 
+func (secureSocket 
+func BenchmarkDecode(b 
+func BenchmarkEncode(b 
+func New(password 
+func NewCipher(encodePassword 
+func ParsePassword(passwordString string) (
+func RandPassword() 
+func TestCipher(t 
+func TestPasswordString(t 
+func TestRandPassword(t 
+func init() {
+func main() {
+go func() {
+go local.handleConn(userConn)
+go lsServer.handleConn(localConn)
+if buf[1] != 0x01 {
+if didListen != nil {
+if err != nil 
+if err != nil {
+if errRead != io.EOF {
+if errRead != nil {
+if errWrite != nil {
+if i == v {
+if password[i] != byte(i) {
+if readCount != writeCount {
+if readCount > 0 {
+import (
+intArr := rand.Perm(PasswordLength)
+language: go
+localConn.Close()
+localConn.SetLinger(0)
+log.Fatalln(err)
+log.Fatalln(lsLocal.Listen(func(listenAddr net.Addr) {
+log.Fatalln(lsServer.Listen(func(listenAddr net.Addr) {
+log.Println(err)
+log.SetFlags(log.Lshortfile)
+net.IPv4len]
+net.IPv6len]
+net.TCPAddr
+net.TCPAddr) 
+net.TCPAddr{
+net.TCPConn) error {
+net.TCPConn) {
+org[i] = byte(i)
+package cmd
+package core
+package local
+package main
+package server
+password := 
+password := Password{}
+password := RandPassword()
+passwordStr := password.String()
+password[i] = byte(v)
+port = 7448
+proxyServer.Close()
+proxyServer.SetLinger(0)
+rand.Read(bs)
+rand.Seed(time.Now().Unix())
+return
+return 
+return PasswordLength
+return RandPassword()
+return base64.StdEncoding.EncodeToString(password[:])
+return conn.Write(bs)
+return err
+return errRead
+return errWrite
+return io.ErrShortWrite
+return nil
+return password
+return password[i] < password[j]
+script: go test -cover -bench=. -run=. ./...
+secureSocket.Cipher.decode(bs[:n])
+secureSocket.Cipher.encode(bs)
+socket
+sort.Sort(password)
+switch buf[3] {
+t.Error(err)
+t.Log(password)
+t.Log(tmp)
+testing.B) {
+testing.T) {
+type Cipher struct {
+type Config struct {
+type LsLocal struct {
+type LsServer struct {
+type Password [PasswordLength]byte
+type SecureSocket struct {
+userConn.Close()
+userConn.SetLinger(0)
+var configPath string
+var dIP []byte
+} else {

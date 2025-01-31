@@ -1,0 +1,2 @@
+"Username = shell.ExpandEnvironmentStrings(""%USERNAME%"")"
+"Username: "" & strUserDomain & ""\"" & strUserName"

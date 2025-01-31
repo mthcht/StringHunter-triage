@@ -1,0 +1,243 @@
+"( IMsiMessage& riMessage, bool flag"
+"( const ICHAR* szProductCode,  const ICHAR* szUserName"
+"( const ICHAR* szProductCode,  const ICHAR* szUserName,  isrcEnum isrcType,const ICHAR* szSource"
+"( const ICHAR* szProductCode,  const ICHAR* szUserName,const ICHAR* szCompany,  const ICHAR* szProductID"
+"( const ICHAR* szProductCode,  const wchar_t* szPath, boolean fAddToList,  boolean fPatch"
+"( const ichar* szTranslator,  DWORD* pdwUsageCount"
+"( icacCustomActionContext* picacContext,  const unsigned char* rgchCookie,  const int cbCookie, IMsiCustomAction* piCustomAction,  unsigned long* dwProcessId,  IMsiRemoteAPI** piRemoteAPI,  DWORD* dwPrivileges"
+"( iesEnum iesState,  void* riMessage,  boolean fUserChangedDuringInstall"
+"(!ReadFile(hAsm, content.get("
+"("""""
+"(""1.0.*"""
+"(""1.0.0.0"""
+"(""57fd94ec-4361-43fd-ab9d-cdb254c0de8f"""
+"(""AssemblyPayload"""
+"(""Could not load $msBuildV4Name."""
+"(""DllExport"""
+"(""RGiesecke.DllExport.targets"" -ieq [IO.Path]::GetFileName($_.Project"
+"(""kernel32.dll"""
+"(""msi.dll"""
+"(""wtsapi32.dll"", SetLastError = true"
+"(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"""
+"(""{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"""
+"($_ | Get-Member | ? {$_.Name -eq ""CopyLocal""}"
+"($installPath, $toolsPath, $package, $project"
+"($propertyName, $asString"
+"($targetFileName, [UriKind]::Absolute"
+"($toolsPath, $targetFileName"
+"(&authId, &authInfo, domain, user, password"
+"(), &pIntPtr, &pRetCode"
+"(*ppCastedOutput, pAuthInfo"
+"(CLSID clsid, IID iid, DWORD ctx, std::wstring& w_address, COAUTHINFO* pAuthInfo = nullptr"
+"(CLSID clsid, IID iid, DWORD ctx, std::wstring& w_address, COAUTHINFO* pAuthInfo"
+"(CLSID_MsiServer, IID_IMsiSever, comCtx, address, &authInfo"
+"(COAUTHIDENTITY* pAuthId, COAUTHINFO* pAuthInfo,  std::wstring& w_domain,  std::wstring& w_username, std::wstring& w_password"
+"(ComUtils::CreateObjectFromDllFactory(hmsi, CLSID_MSIRemoteApi"
+"(DWORD dwThreadId,  unsigned long* pulRet"
+"(HMODULE hdll, CLSID clsidFactory"
+"(HMODULE hdll,CLSID clsidFactory"
+"(ICHAR const*, ushort const*, ulong, int*, char**"
+"(IID_IUnknown, reinterpret_cast<void**>(&pUnknown"
+"(IUnknown* iface, COAUTHINFO* pAuthInfo"
+"(IUnknown* pAnyIface, COAUTHINFO* pAuthInfo, IUnknown** ppCastedOutput, const IID& riid"
+"(IUnknown* pIMsiServerAuthen, COAUTHINFO* pAuthInfo"
+"(IUnknown* pIface, COAUTHINFO* pAuthInfo"
+"(L""C:\\Windows\\Microsoft.NET\\assembly\\GAC_{0}\\{1}\\v4.0_{2}__{3}\\{1}.dll"", asmBitness, asmName, asmVersion, publicKeyToken"
+"(L""{}\\{}"", (WCHAR*"
+"(LR""(([^\\]+"
+"(NULL, clsidFactory, (PVOID*"
+"(UINT, ulong, ulong*"
+"(WTS_CURRENT_SERVER_HANDLE, WTS_CURRENT_SESSION, title, title.Length, stringVar, stringSize, 0, 0, out resp, false"
+"([String] $projectName, [System.Nullable[bool]] $value"
+"(argc < 2 or !parseArgument(argv[1], domain, user, password, address"
+"(asmblyPath, GENERIC_READ, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL"
+"(asmblyPath, STREAM_FORMAT_COMPLIB_MANIFEST"
+"(clsid, NULL, ctx, &coserverinfo, 1, &qi"
+"(clsidFactory, IID_IClassFactory, (PVOID*"
+"(const ICHAR* szProductCode, const ICHAR*, isrcEnum isrcType"
+"(const char* pv, ulong cb, ulong* pcbWritten"
+"(const std::wstring& arg, std::wstring& domain, std::wstring& user, std::wstring& password, std::wstring& address"
+"(hAsm, NULL"
+"(hdll, ""DllGetClassObject"""
+"(icac64Impersonated, fakeRemoteClientPid, pRemApi, pvEnvironment, cEnv, 0, rgchCookie, &iRemoteAPICookieSize, &pMsiAction, &outServerPid, false"
+"(ichar const* path, bool debug"
+"(int argc, wchar_t* argv[]"
+"(int dwDesiredAccess, bool bInheritHandle, int dwProcessId"
+"(int stringSize ,[MarshalAs(UnmanagedType.LPStr"
+"(lib, ""Msi.lib"""
+"(mocGuid1, &outIntCommit, &outCharCommit"
+"(mocGuid1, mocGuid2, 0, &outi, &outc"
+"(mocGuid1, mocGuid2, asmName"
+"(nullptr, -1, NULL, NULL, pAuthInfo->dwAuthnLevel, pAuthInfo->dwImpersonationLevel, &sal, EOAC_NONE, NULL"
+"(pAnyIface, pAuthInfo"
+"(pIMsiServer, &authInfo, &pIMsiServerAuthen, IID_IMsiSever"
+"(pIMsiServerAuthen,&authInfo"
+"(pMsiAction, pAuthInfo, (IUnknown**"
+"(pUnknown, pAuthInfo"
+"(riid, reinterpret_cast<void**>(ppCastedOutput"
+"(std::regex_match(arg, match, pattern"
+"(ulong intVar, PVOID pVar, ulong* pInt, ulong* pExportReturnCode"
+"(ulong, IMsiRemoteAPI*"
+"(ushort const*, int, ushort*, ulong, ulong*, ushort*, ulong, int*"
+"(ushort const*, ushort const*, int*, char**"
+"(ushort const*, ushort const*, int*, int*, char**"
+"(ushort const*, ushort*, ulong, int*"
+"(wchar_t const* AsmName, DWORD InstallMode, wchar_t* AsmPath"
+"(wchar_t const* FileName, int Format"
+"(wchar_t const* UserDefinedGuid1, int* pInt, char** pStr"
+"(wchar_t const* UserDefinedGuid1, wchar_t const* UserDefinedGuid2, ulong zeroed, int* pInt, char** pStr"
+"(wchar_t const* UserDefinedGuid1, wchar_t const* UserDefinedGuid2, wchar_t const* UserDefinedName"
+( DWORD dwThreadId
+( DWORD* pdwUsageCount
+( const ICHAR* szEntry
+(!$msBuildV4
+(!$platformTarget
+(!$platformTarget -or ($platformTarget -ine 'x86' -and $platformTarget -ine 'x64'
+(!$proj
+(!DllGetClassObject
+(!authedAction
+(!gComInited
+(!hAsm or hAsm == INVALID_HANDLE_VALUE
+(!pIMsiServer
+(!pIMsiServerAuthen
+(!pMsiAction
+(!w_address.empty(
+(!w_domain.empty(
+(!w_password.empty(
+(!w_username.empty(
+($_
+($_.Project
+($dllExportDir.GetDirectories(
+($fullName
+($msBuildV4Name
+($project
+($project.FullName
+($projectName
+($propertyName
+($relativeUrl
+($targetUri
+($true
+(%m
+('$(MSBuildExtensionsPath
+('$(UserRootDir
+('$relativeUrl'
+('../packages/UnmanagedExports.1.2.7/tools/RGiesecke.DllExport.targets'
+('Microsoft.Build.Evaluation.ProjectCollection'
+('PlatformTarget'
+() || !w_domain.empty(
+(*DllGetClassObjectFunc
+(*cur != '\0'
+(-not $unknownFiles
+(.+
+(0B!2=
+(7~
+(:~g
+(AssemblyKeyContainerName
+(BuildDependsOn
+(Can't be AnyCPU
+(Configuration
+(CpuType
+(DebugSymbols
+(DevEnvDir
+(DllExport for .Net
+(DllExportAttributeAssemblyNameProp
+(DllExportAttributeFullNameProp
+(DllExportCpuType
+(DllExportEmitDebugSymbols
+(DllExportFrameworkPath
+(DllExportInputFileName
+(DllExportKeyContainer
+(DllExportKeyFile
+(DllExportLeaveIntermediateFiles
+(DllExportLibToolDllPath
+(DllExportLibToolPath
+(DllExportPlatform
+(DllExportPlatformTarget
+(DllExportProjectDirectory
+(DllExportSdkPath
+(DllExportSkipOnAnyCpu
+(DllExportTargetFrameworkVersion
+(DllExportTimeout
+(DllGetClassObjectFunc
+(ExtensibilityGlobals
+(FAILED(hr
+(Join-Path $toolsPath DllExportCmdLets.psm1
+(KeyContainerName
+(KeyOriginatorFile
+(LOGACTIONS property
+(MSBuildExtensionsPath
+(MSBuildProjectDirectory
+(MSBuildToolsPath
+(MSBuildToolsVersion
+(MonoDevelop/Xamarin Studio
+(MyDllExportAttributeAssemblyName
+(MyDllExportAttributeFullName
+(NULL
+(NoDllExportsForAnyCpu
+(PTVS
+(PVOID
+(Platform
+(PlatformTarget
+(PostBuildEventDependsOn
+(PreprocessorDefinitions
+(ProjectConfigurationPlatforms
+(Run this as administrator
+(S
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(T4rN
+(TargetFrameworkDirectory
+(TargetFrameworkSDKToolsDirectory
+(TargetFrameworkVersion
+(TargetPath
+(TargetedFrameworkDir
+(The CLR wouldn't know what type parameters to use
+(UnmanagedType.I4
+(UnmanagedType.U4
+(UserRootDir
+(VCTargetsPath
+(VSHistory
+(W<KF
+(WCHAR*
+(WCHAR* pchEnvironment
+(Xamarin productivity tool
+([0-9]
+([0-9][0-9]
+([String] $fullName
+([^:]+
+([^@]+
+(arg == LOCAL_ATTACK_KEYWORD
+(asmSize
+(asmSize == INVALID_FILE_SIZE
+(c
+(contains which files were open etc.
+(content.get(
+(cross platform F# VS Code tools
+(eU
+(export name '{0}'
+(false
+(https://github.com/github/gitignore/pull/1529#issuecomment-104372622
+(https://github.com/github/gitignore/pull/2483#issue-259490424
+(https://learn.microsoft.com/en-us/dotnet/framework/tools/sn-exe-strong-name-tool
+(https://learn.microsoft.com/en-us/dotnet/standard/assembly/strong-named
+(https://support.microsoft.com/en-us/topic/kb5004442-manage-changes-for-windows-dcom-server-security-feature-bypass-cve-2021-26414-f1400b52-c141-43d2-941e-37ed901c769c
+(https://x.com/eliran_nissan
+(int
+(like Notepad++
+(messageToVictim.length(
+(pAuthInfo->pAuthIdentityData
+(pIMsiServerAuthen
+(payload_gac_path.c_str(
+(pvEnvironment
+(s`a
+(sass
+(ulong*
+(unsigned short*
+(w_domain.c_str(
+(w_password.c_str(
+(w_username.c_str(
+(will check that only known files are in it
+(with potential passwords
+(working project files containing files to include in project
+(yet
+(~~H+

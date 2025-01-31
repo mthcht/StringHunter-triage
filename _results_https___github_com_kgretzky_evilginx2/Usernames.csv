@@ -1,0 +1,50 @@
+"UserNameEx(nameFormat uint32, nameBuffre *uint16, nSize *uint32) (err error) [failretval&0xff==0] = secur32.GetUserNameExW"
+"UserNameExW                                       = modsecur32.NewProc(""GetUserNameExW"")"
+"Username     string                             `json:""username""`"
+"Username *ConfigPostField   `mapstructure:""username""`"
+"Username string `mapstructure:""user""`"
+"Username string `mapstructure:""username"" json:""username"" yaml:""username""`"
+"Username(ps.SessionId, um[1]); err != nil {"
+"Username), lblue.Sprint(s.Password), tcol, yellow.Sprint(s.LandingURL), dgray.Sprint(s.UserAgent), yellow.Sprint(s.RemoteAddr), dgray.Sprint(time.Unix(s.CreateTime, 0).Format(""2006-01-02 15:04"")), dgray.Sprint(time.Unix(s.UpdateTime, 0).Format(""2006-01-02 15:04""))}"
+"Username, 24)), lblue.Sprintf(truncateString(s.Password, 24)), tcol, yellow.Sprintf(s.RemoteAddr), time.Unix(s.UpdateTime, 0).Format(""2006-01-02 15:04"")}"
+"Username:       """","
+"Username:     """","
+"Username: ""jeeva@myjeeva.com"","
+"Username: ""testuser"", Password: ""testpass""})."
+"Username: [%s]"", ps.Index, um[1])"
+"Username: auth.User,"
+"Username: username, Password: password}"
+"userName *uint16, level uint32, buf **byte) (neterr error) = netapi32.NetUserGetInfo"
+"userName *uint16, maxUserNameSize uint32) (err error) = GetNamedPipeHandleStateW"
+"username != """" {"
+"username + "":"" + b.password"
+"username = c.h(fmt.Sprintf(""%s:%s"", c.username, c.realm))"
+"username set to: %s"", username)"
+"username"": ""jeeva"","
+"username"": ""jeeva@getrightcare.com"","
+"username"": ""jeeva@myjeeva.com"","
+"username"": ""testuser"", ""password"": ""testpass""})."
+"username"":""testuser"", ""password"":""testpass""}`))."
+"username"":""testuser"", ""password"":""testpass""}`)."
+"username.key, err = regexp.Compile(p.paramVal(*fp.Credentials.Username.Key))"
+"username.search, err = regexp.Compile(p.paramVal(*fp.Credentials.Username.Search))"
+"username.tp = ""post"""
+"username.tp == """" {"
+"username.tp == ""json"" {"
+"username:   dt.username,"
+"username: username, password: password}"
+"username=""%s""`, c.username))"
+USERNAME                                                        syscall.Errno = 2202
+USERNAME                          = 0xf9
+Username = username
+Username == nil {
+Username) == 0 || len(up.Username) > 255 || len(up.Password) > 255 {
+Username.Key == nil {
+Username.Search == nil {
+UsernamePassword    AuthMethod = 0x02 // use username/password
+UsernamePasswordVersion = 0x01
+username.key != nil && pl.username.search != nil && pl.username.key.MatchString(k) {
+username.key = nil
+username.key_s = p.paramVal(*fp.Credentials.Username.Key)
+username.search = nil
+username.tp = fp.Credentials.Username.Type

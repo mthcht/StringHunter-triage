@@ -1,0 +1,166 @@
+							# Check if this target is not already in sessions
+					# Calculate the desiredIndex for the removed session"
+					# Check network for admin access
+					# Failed to execute
+					# Handle or log errors
+					# Increment elapsed time"
+					# No Admin Access
+					# Send 'kill' command to the session
+					# Sleep for a short interval before the next iteration"
+					#$whoamiInfo = $whoamiInfo.Trim()
+					#Start-Sleep -Milliseconds 500
+					#if($PlaceHolder){$PlaceHolder = $False;$Host.UI.RawUI.FlushInputBuffer()}
+				# Check if the identifier exists in the listener sessions"
+				# Check if the identifier exists in the multi listener sessions"
+				# Convert the Base64 string back to bytes and write to a local file"
+				# Create a separate variable that will be captured by the script block
+				# Exit the loop properly by reading the key press"
+				# Extract the unique identifier"
+				# Failed to execute
+				# If choice is numeric and in the range of directAdminSessions indices
+				# If the file exists, keep incrementing the counter and updating the filename"
+				# No Admin Access
+				# Read the local file's content and convert it to Base64
+				# Remove the session from the global list"
+				# Remove the session from the single list"
+				# Save TGTs
+				# Update bookmark
+				# Use the function to kill this session"
+				# Use your function to kill this session"
+				#$null = [System.Console]::ReadKey($true)
+				#Write-Output "" [$index] $session"""
+				#Write-Output "" [$index] $sessionName"""
+				#Write-Output $bookmark.DisplayName"
+			# Add one empty line at the end"
+			# All Domains"
+			# Assign values based on their presence"
+			# Compute end indices for the various session categories"
+			# Convert the Base64 string back to bytes and write to a local file"
+			# Create the folder if it does not exist"
+			# Embedded monitoring script"
+			# Execute each predefined command"
+			# Execute the embedded monitoring script in a hidden window"
+			# Extract the desired index from the user input
+			# Fetch the actual remote prompt"
+			# Find the bookmark with the matching display index"
+			# Get User Input
+			# If the file exists, keep incrementing the counter and updating the filename"
+			# Initialize a mutex to synchronize access to sc.exe operations
+			# Initialize the variables to empty strings"
+			# Read the content of the file in Base64 format"
+			# Read the response from the StreamReader"
+			# Release the mutex
+			# Remove Outbound Trust from $AllDomains"
+			# Remove all bookmarks associated with single listener and multi listener sessions"
+			# Remove the associated bookmark, if it exists"
+			# Remove the bookmark if it exists"
+			# Save clipboard to file"
+			# Specify the folder where files will be downloaded"
+			# Trust Domains (save to variable)"
+			# Write the command to the StreamWriter"
+			### Remove Unreachable domains"
+			#$runspace.Close()
+			#Write-Output """""
+		# All Domains
+		# All Domains"
+		# Close and dispose of the runspace pool for good resource management"
+		# Close resources related to this pipe and return to the previous menu."
+		# Close the pipe"
+		# Collect the results"
+		# Create a CimSession with the provided credentials
+		# Create and open a runspace pool"
+		# Define the script block outside the loop for better efficiency"
+		# Display Direct Admin Access Sessions"
+		# Display Multiple Listener Sessions"
+		# Display Single Listener Sessions"
+		# Display the Session Menu"
+		# Ensure StreamReader is not closed and then close it"
+		# Ensure StreamWriter is not closed and then close it"
+		# Initialize the runspace pool
+		# Optionally, remove the session when done"
+		# Read response from the client"
+		# Read the command from the server's console"
+		# Remove Outbound Trust from $AllDomains"
+		# Trust Domains (save to variable)"
+		# Update the $Computers variable with the list of reachable hosts"
+		# Use a generic list for better performance when adding items"
+		# Use the CimSession to delete the class"
+		# Wait for all jobs to complete"
+		### Remove Unreachable domains"
+	
+	    # Clear error listing"
+	# Adding the session to the global list"
+	# Check if client is still connected. If not, break."
+	# Check if the primary script is still running using its Process ID"
+	# Close and dispose of the runspace pool for good resource management"
+	# Close and dispose of the runspace pool"
+	# Collect the results"
+	# Create and open a runspace pool"
+	# Create security descriptor to allow everyone full control over the pipe"
+	# Create the runspaces list"
+	# Define the script block outside the loop for better efficiency"
+	# Define the script block"
+	# Display Bookmarks"
+	# Embedded monitoring script"
+	# Execute the embedded monitoring script in a hidden window"
+	# Folder Structure Creation"
+	# Get the current process ID"
+	# Get the hostname and $pwd from the client"
+	# Global Variables Setup"
+	# Initialize the runspace pool"
+	# Load necessary .NET assemblies"
+	# Notify the user"
+	# Now create an instance of this server in PowerShell and start it"
+	# Starting index"
+	# Use a generic list for better performance when adding items"
+	# When the client connects, store its details in the $sessions array"
+	#$Computers = $Computers | Sort-Object -Unique"
+	#$global:MultipleSessions = [System.Collections.Generic.List[psobject]]$global:MultipleSessions"
+	#>
+	#>"
+	#for ($i=0; $i -lt $host.UI.RawUI.WindowSize.Height; $i++) {Write-Output """"}"
+ 	#$ComputerAccess = $ComputerAccess | Sort-Object -Unique"
+ 
+            # Create and output the custom object"
+            # Resolve the trust attributes"
+            # Resolve the trust direction
+            # Resolve the trust type"
+        # Construct the LDAP path and create the DirectorySearcher
+        # Dispose of the individual runspace when done
+        # Enumerate the results"
+        # Execute the search"
+        # Extract the hostname from the original display name
+        # Store handle and other info for later retrieval"
+    # Cleanup the runspace pool when all tasks are complete"
+    # Collect results and handle any output or errors"
+    # Construct distinguished name for the domain."
+    # Define the TrustAttributes mapping"
+    # Display Available Options"
+    # LDAP search request setup."
+    # Load necessary .NET assemblies"
+    # Perform the search"
+    # Process the results"
+    #Clear-Host
+ ###     ### ###       ### ###    #### ########## ######## ########### ###     ###  ########  ')
+ #+#     #+# #+#       #+# #+#   #+#+# #+#       #+#    #+#    #+#     #+#     #+# #+#    #+# 
+"					
+"					# Remove any extraneous whitespace, newlines etc."
+"				
+"			
+"			# Remove the last empty line, if it exists"
+"			#$global:MultipleSessions = [System.Collections.Generic.List[psobject]]($global:MultipleSessions | Sort-Object { $_.ComputerName.ToString(),$_.UserID.ToString(),$_.UniquePipeID.ToString() })"
+"			#$global:listenerSessions = [System.Collections.Generic.List[psobject]]($global:listenerSessions | Sort-Object { $_.ComputerName.ToString(),$_.UserID.ToString(),$_.PipeName.ToString() })"
+"			#$output += ""`n"""
+"		
+"		# If the process is not running, delete the service"
+"		# If the process is not running, kill the File Server"
+"		#Write-Output ""[-] No connection was established. Returning to previous menu..."""
+"	
+"	#Write-Output """""
+"	#Write-Output ""[+] New session established [$computerNameOnly]"""
+"
+" 
+"        
+# WinExec x64 PI Null Free 
+# Writes Out Hex for Shellcode Bytes"
+#>

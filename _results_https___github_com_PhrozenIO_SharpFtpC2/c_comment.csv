@@ -1,0 +1,127 @@
+                    Thread.Sleep(SynchronizeDelay);"
+                    Thread.Sleep(new Random().Next(BeaconDelayMin, BeaconDelayMax));"
+                    return 0;"
+                return 0;"
+            UX.DisplaySuccess($""Task(`{taskId}`)->\""{response.DisplayName()}\"" successfully processed."");"
+            return (cipherStream.ToArray(), cipherAesKey, aes.IV);"
+        RegisterNewTask(taskCommand, agentId);"
+        return items;"
+    }"
+"//
+"//  In the event of a malformed agent, it is crucial to remove it"
+"//  In the event of a malformed task response, it is crucial to remove it"
+"//  a constant loop with each iteration, which would lead to unwarranted"
+"// An ""enum"" would also do the job."
+"// Before registering the new task, it is mandatory to remove the existing"
+"// Encrypt plain-text using our setup, an authentication tag will get returned."
+"// Ensure that this contains the RSA Public / Private Key for C2, which is used to decrypt data received"
+"// Ensure that this contains the RSA Public / Private Key for the Agent, which is used to decrypt data received"
+"// However, it is strongly advised not to employ this approach in a production environment"
+"// If the protocol has evolved and is no longer backward compatible with previous versions,"
+"// If you require a unique identifier for each machine/user, it is advisable to replace this code"
+"// In this Proof of Concept (PoC), the ""AgentSession"" GUID changes with each process instance."
+"// Make sure this includes the RSA Public Key belonging to the C2, which is utilized for encrypting"
+"// Make sure this includes the RSA Public Key belonging to the remote agent, which is utilized for encrypting"
+"// Signal C2, we are still active."
+"// This is accomplished through abstraction and simplification of the built-in WebRequest class,"
+"// To achieve this, only the ""RegisterOrUpdateAgent"" method is invoked at regular intervals,"
+"// Typically, generating a random nonce is discouraged due to the risk of nonce collision (which is generally very unlikely)"
+"// When triggered, it will instruct any associated cancellation tokens to properly"
+"// possibly corrupted task file on the remote server, which could adversely affect"
+"// protocol and the Command and Control (C2) protocol don't align, the agent will be disregarded."
+"// random AES key and the probability of a key/nonce collision is negligibly low, this approach doesn't present any significant"
+"// when using the same AES key, as this can compromise security. However, in this scenario, because we are using a one-time"
+//     * Create Directory
+//     * Delete File
+//     * Enumerate Directory Files
+//     * File Upload
+//     * Stream Upload (Generic)
+//     * String Upload
+//  from the remote server. This preemptive action is necessary to prevent
+//  resource consumption.
+// (which are registered by the controller) as well as the processing and response
+// * 8 = 256 bits        
+// ...
+// 10 min threshold
+// </summary>
+// <summary>
+// Add your additional response classes here
+// Add your additional task classes here
+// Any potential exceptions are intentionally ignored to guarantee the deletion
+// Body
+// Body            
+// Borders between columns
+// Cancel default behaviour
+// ConcurrentBag is not suitable in my scenario so I'm using a classic List with locking mechanisms
+// Dirty method to force messages to process during an IDLE time.
+// Display Content
+// Download task content
+// EDIT HERE BEGIN ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// EDIT HERE END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// EDIT HERE END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+// Encrypt the AES Key with RSA Public Key.
+// Extra padding of two chars for each columns +
+// For debug purpose
+// For file randomness                
+// Gather C2 Tasks.
+// Generate a one-time secure random AES Key.
+// Generate a one-time secure random nonce (usually 12 byte / 96 bits)
+// Generate a random AES key using a cryptographic number generator.
+// Handle other tasks and response bellow:
+// Header
+// Header                       
+// Ignore
+// Ignore          
+// Ignore                       
+// Important Notice: The delegate below renders the current application susceptible to
+// It is crucial for this thread to maintain high availability in order to continuously
+// Keep process running until CTRL+C.
+// Man-in-the-Middle (MITM) attacks when utilizing SSL/TLS features.
+// More clean
+// Output Public and Private Keys Fingerprint
+// Output Public and Private Keys as Base64
+// Prepare Padding Information
+// Process Tasks:
+// Recover the one-time AES Encryption key using our RSA Private key.
+// Refresh Agents Informations
+// Register New Task Requests
+// Signal tokens that application needs to be closed.
+// Start daemons
+// Sum of column widths +
+// Supported operations:
+// Synchronize Task Responses
+// TODO write as an extension of DataTable
+// Test encryption with generated keys
+// The DangerousActionConfirmation delegate is intended to be placed at every location where potentially harmful
+// The FtpHelper class is a utility in C# designed to streamline the application of the FTP protocol.
+// The action to handle a CTRL+C signal on the console has been registered.
+// This Class allows easily to perform secure encryption using both RSA (Asymetric) and AES-GCM 256 (Symetric). 
+// This configuration was implemented to accommodate self-signed certificates.
+// This thread is specifically allocated for the enumeration of agent tasks
+// This thread is tasked with periodically gathering information about active and inactive agents.        
+// Wait for daemons to join main thread
+// code may be executed. The primary purpose is to prevent unintentional execution of malicious actions without
+// cryptographic risks.
+// data that is sent to the C2's destination.
+// data that is sent to the agent's destination.
+// ensures smooth creation and operation of the new task.
+// from the C2. Utilize the RSAKeyHelper Tool to generate a fresh pair of Private and Public keys.
+// from the agent. Utilize the RSAKeyHelper Tool to generate a fresh pair of Private and Public keys.
+// https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.aesgcm.decrypt?view=net-7.0?WT_mc_id=SEC-MVP-5005282
+// https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.aesgcm.encrypt?view=net-7.0
+// https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.aesgcm?view=net-7.0?WT_mc_id=SEC-MVP-5005282
+// https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.randomnumbergenerator?view=net-7.0?WT_mc_id=SEC-MVP-5005282
+// if SSL/TLS security is expected.
+// minimizing resource consumption and ensuring consistent communication with the C2.
+// of the task file. This precautionary measure prevents the persistence of a
+// of these tasks. This ensures a focused and efficient handling of agent-related
+// operations.                    
+// please consider updating the following variable to the new protocol version. If the agent's
+// providing users with a more intuitive and manageable interface for FTP operations.
+// sh / bash etc.. (TODO: Dynamic)
+// shut down their associated daemons.
+// signal to the Command and Control (C2) that our agent is operational.
+// task request file from the remote server. This prerequisite step 
+// tasks.
+// user consent during the Proof of Concept (PoC) phase.
+// with a custom logic tailored to your needs.

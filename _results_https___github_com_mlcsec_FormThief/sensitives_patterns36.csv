@@ -1,0 +1,2 @@
+            if (e.KeyChar == (char)Keys.Enter)
+            textBox1.KeyPress += textBox1_KeyPress;

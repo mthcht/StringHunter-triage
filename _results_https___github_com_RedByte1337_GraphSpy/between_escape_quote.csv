@@ -1,0 +1,69 @@
+"`#new_conversation_modal #selected_users span:hidden:contains(""${mri}"")"
+"`${conversation.lastMessage.imdisplayname}: ${new DOMParser().parseFromString(DOMPurify.sanitize(conversation.lastMessage.content), 'text/html').body.textContent.trim() || ""[Unrenderable_Content]""}"
+"`${expiry_date.toLocaleDateString()} ${expiry_date.toTimeString().split("" "")[0]}"
+"`${messageJson.imdisplayname} - ${new Date(messageJson.composetime).toLocaleDateString([], { dateStyle: 'short' })} ${new Date(messageJson.composetime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}"
+"`${otherMember.displayName}, "
+"`${text.substr(0, 100)}..."
+"`${window.location.origin}/api/get_teams_image?access_token_id=${$(""#ms_teams_form #access_token_id"").val()}&image_uri=${encodeURIComponent(image_element_jquery.attr(""src""))}"
+"`<div class=""border border-${fileColor}-subtle rounded p-2 bg-${fileColor}-subtle text-${fileColor}-emphasis""></div>"
+"`<input class=""form-check-input"" type=""radio"" name=""delete_radio_options"" id=""delete_method_${number}"">"
+"`<label class=""form-check-label"" for=""delete_method_${number}""></label>"
+"`[data-bs-theme-value=""${theme}""]"
+"`calc(100vh - ${document.getElementById(""conversation_list_group"").getBoundingClientRect().top}px - 10px)"
+"`calc(100vh - ${document.getElementById(""teams_message_container"").getBoundingClientRect().top}px - ${document.getElementById(""message_form_container"").getBoundingClientRect().height}px - 25px)"
+"`data:image/png;base64, ${initialize_mobile_app_registration_json.QrCode}"
+"`data:image/png;base64, ${response_json.captcha.ChallengeData}"
+` and 
+`#conversation_list_group a.list-group-item:has(div.raw-conversation:contains('${lastConversationId}'))
+`${base_url}/root:/${path}/${file.name}:/content
+`${key}: 
+`'${userPrincipalName}' is already selected.
+`).addClass(
+`-i
+`-p
+`/api/get_entra_user_details/${encodeURIComponent(user_id)}?access_token_id=${access_token_id}
+`/api/get_entra_users
+`/api/get_teams_user_details?access_token_id=${access_token_id}&user_id=${user_id}&external=${external.toString()}
+`/api/list_teams_users
+`; ${document.cookie}
+`; ${name}=
+`Adding method '${method}' is not implemented in GraphSpy yet. Feel free to create a PR!
+`An error occurred when trying to validate the provided info. Received Error Code ${response.ErrorCode}
+`Are you sure you want to delete the ${item_type} '${row.data().name}'?
+`Are you sure you want to delete the OTP method with ID ${otpId} from the GraphSpy database? \r\nNote: This will not remove the MFA method from the account it is linked to.
+`Copied to clipboard: '${messageTruncated}'
+`External user does have a userPrincipalName property.
+`External user does not seem to have an mri property.
+`MFA Method deleted and default method updated to method type ${response.UpdatedDefaultMethod}
+`MobilePhone_${selectedVerifyMethod}
+`No external user with email '${email}' found
+`Submit the code '${verificationCode}' in the notification on your Microsoft Authenticator App and click on Validate.
+`Successfully created ${response.responseJSON.length} conversation(s).
+`Teams message with ID ${response.responseText} created.
+`Unknown Verification Type '${response_json.Type}'
+`User details '${entraUserDetails.displayName}'
+`[${conversation.threadProperties.threadType}] ${conversationName}
+`[${json.error.code}] ${json.error.message}
+`[Succes] Activated access token with ID '${active_access_token}'
+`[Succes] Activated refresh token with ID '${active_refresh_token}'
+`[Succes] Obtained access token with ID '${access_token_id}'
+`[Succes] Obtained and activated access token with ID '${access_token_id}'
+`[Success] Deleted access token with ID ${token_id}.
+`[Success] Deleted refresh token with ID ${token_id}.
+`[Success] Generated Device Code with User Code '${response.responseText}'.
+``
+`alert-${type.toLowerCase()}
+`alert-${type}
+`bg-${type.toLowerCase()}-subtle
+`d
+`directory
+`div.modal#${modalID}
+`filename
+`graphspy
+`http://127.0.0.1:5000
+`https://graph.microsoft.com/v1.0/drives/${drive_id}
+`https://graph.microsoft.com/v1.0/drives/${drive_id}/items/${item_id}
+`isCurrentUser: True
+`isFromMe: True
+`text-${type.toLowerCase()}-emphasis
+`text-bg-${type.toLowerCase()}

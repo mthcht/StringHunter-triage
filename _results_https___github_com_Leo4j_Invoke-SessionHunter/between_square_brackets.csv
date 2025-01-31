@@ -1,0 +1,53 @@
+"[""__CLASS"""
+"[""adminCount"""
+"[""dNSHostName"""
+"[""operatingSystem"""
+"[Parameter (Mandatory=$False, Position = 0, ValueFromPipeline=$true)"
+"[Parameter (Mandatory=$False, Position = 1, ValueFromPipeline=$true)"
+"[Parameter (Mandatory=$False, Position = 10, ValueFromPipeline=$true)"
+"[Parameter (Mandatory=$False, Position = 11, ValueFromPipeline=$true)"
+"[Parameter (Mandatory=$False, Position = 12, ValueFromPipeline=$true)"
+"[Parameter (Mandatory=$False, Position = 13, ValueFromPipeline=$true)"
+"[Parameter (Mandatory=$False, Position = 14, ValueFromPipeline=$true)"
+"[Parameter (Mandatory=$False, Position = 2, ValueFromPipeline=$true)"
+"[Parameter (Mandatory=$False, Position = 3, ValueFromPipeline=$true)"
+"[Parameter (Mandatory=$False, Position = 4, ValueFromPipeline=$true)"
+"[Parameter (Mandatory=$False, Position = 5, ValueFromPipeline=$true)"
+"[Parameter (Mandatory=$False, Position = 6, ValueFromPipeline=$true)"
+"[Parameter (Mandatory=$False, Position = 7, ValueFromPipeline=$true)"
+"[Parameter (Mandatory=$False, Position = 8, ValueFromPipeline=$true)"
+"[Parameter (Mandatory=$False, Position = 9, ValueFromPipeline=$true)"
+[$ComputerName
+[$KeyID
+[+
+[-1
+[0
+[1
+[CmdletBinding()
+[Convert
+[Invoke-WMIRemoting
+[Microsoft.Win32.RegistryKey
+[PSCustomObject
+[Parameter(Mandatory = $true)
+[Ss
+[String
+[Switch
+[System.Diagnostics.Stopwatch
+[System.DirectoryServices.ActiveDirectory.Domain
+[System.Management.CimType
+[System.Management.ManagementPath
+[System.Net.Dns
+[System.Net.NetworkInformation.IPGlobalProperties
+[System.Object
+[System.Security.Principal.NTAccount
+[System.Text.Encoding
+[\w\s-
+[bool
+[image
+[int
+[powershell
+[runspacefactory
+[scriptblock
+[string
+[switch
+[wmiclass

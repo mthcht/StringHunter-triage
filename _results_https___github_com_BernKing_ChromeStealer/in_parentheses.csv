@@ -1,0 +1,150 @@
+"(!CryptUnprotectData(&DataInput, NULL, NULL, NULL, NULL, 0, &DataOutput"
+"(""%d"", &choice"
+"(""----------------------------------"""
+"(""1. Proceed with decryption\n"""
+"(""2. Quit\n"""
+"(""Can't open database: %s"", sqlite3_errmsg(loginDataBase"
+"(""Decoded binary data size is too small.\n"""
+"(""Decoded binary size is zero."""
+"(""Enter your choice: """
+"(""Error copying the file. Error: %ld"", GetLastError("
+"(""Error decoding Base64 string first step. Error: %ld\n"", GetLastError("
+"(""Error decoding Base64 string second step. Error: %ld\n"", GetLastError("
+"(""Error decrypting data. Error %ld"", GetLastError("
+"(""Error deleting the file. Error: %ld"", GetLastError("
+"(""Error getting user path. Error: %ld"", GetLastError("
+"(""Error opening the file. Error: %ld"", GetLastError("
+"(""Executed SQL Query."""
+"(""Exiting the program."""
+"(""Full path to Local State file: %ls"", localStatePath"
+"(""Full path to Login Data file: %ls"", loginDataPath"
+"(""Google Chrome is installed."""
+"(""Google Chrome is not installed. Shutting down."""
+"(""Input string is empty."""
+"(""Invalid choice. Exiting the program."""
+"(""Key encrypted_key found"""
+"(""Key encrypted_key not found or not an object"""
+"(""Key os_crypt found."""
+"(""Key os_crypt not found or not an object."""
+"(""Memory allocation failed"""
+"(""Menu:\n"""
+"(""Origin URL: %s"", originUrl"
+"(""Password size too small to generate IV"""
+"(""Password size too small"""
+"(""Password: %s"", decrypted"
+"(""SQL error or end of data: %s"", sqlite3_errmsg(loginDataBase"
+"(""SQL error: %s"", sqlite3_errmsg(loginDataBase"
+"(""The decrypted data is: %s"", DataOutput.pbData"
+"(""This program only runs on Windows systems.\n"""
+"(""Username Value: %s"", usernameValue"
+"(""Value at key encrypted_key: %s"", encryptedKey.c_str("
+"(""\n\n"""
+"(""os_crypt"""
+"(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"""
+"(), &decodedBinarySize, NULL, NULL"
+"(), FALSE"
+"().find(""encrypted_key"""
+"(GREEN ""[+] "" RESET msg ""\n"", ##__VA_ARGS__"
+"(L""a"""
+"(NULL, CSIDL_PROFILE, NULL, 0, userProfile"
+"(PURPLE ""[-] "" RESET msg ""\n"", ##__VA_ARGS__"
+"(Password, (unsigned char*"
+"(Password, passwordSize - (IV_SIZE + 3"
+"(YELLOW ""[i] "" RESET msg ""\n"", ##__VA_ARGS__"
+"(const std::wstring& loginDataPath, DATA_BLOB decryptionKey"
+"(iv, (unsigned char*"
+"(lib, ""Advapi32.lib"""
+"(lib, ""Crypt32.lib"""
+"(lib, ""Shell32.lib"""
+"(localStatePath, MAX_PATH, _TRUNCATE, L""%s\\AppData\\Local\\Google\\Chrome\\User Data\\Local State"", userProfile"
+"(loginDataBase, sql, -1, &stmt, nullptr"
+"(loginDataPath, MAX_PATH, L""%s\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Login Data"", userProfile"
+"(loginDataPath, decryptionKey"
+"(msg, ..."
+"(stderr, ""Decryption failed\n"""
+"(stderr, ""Failed to initialize libsodium\n"""
+"(stmt, 0"
+"(stmt, 1"
+"(stmt, 2"
+"(stmt, 3"
+"(the ""Software"""
+"(unsigned char* ciphertext, size_t ciphertext_len, unsigned char* key, unsigned char* iv, unsigned char* decrypted"
+(  <_> 
+(!CopyFileW(loginDataPath.c_str(
+(!CryptStringToBinaryA(encrypted_key.c_str(
+(!DeleteFileW(copyLoginDataPath.c_str(
+(!SUCCEEDED(result
+(!file.is_open(
+('$(UserRootDir
+((openingStatus = sqlite3_step(stmt
+()
+() + 5
+().is_object(
+(0
+(BYTE*
+(Configuration
+(DataOutput.pbData
+(ExtensibilityGlobals
+(IV
+(IV_SIZE + 3
+(IsChromeInstalled(
+(LICENSE
+(MonoDevelop/Xamarin Studio
+(PTVS
+(Password
+(Password == NULL
+(Platform
+(PreprocessorDefinitions
+(ProjectConfigurationPlatforms
+(SolutionConfigurationPlatforms
+(SolutionProperties
+(UserRootDir
+(VCTargetsPath
+(VSHistory
+(Xamarin productivity tool
+([0-9]
+([0-9][0-9]
+(c
+(choice
+(const std::string& encrypted_key
+(const std::wstring& localStatePath
+(contains which files were open etc.
+(copyLoginDataPath
+(cross platform F# VS Code tools
+(decodedBinaryData.begin(
+(decodedBinaryData.size(
+(decodedBinarySize
+(decodedBinarySize == 0
+(decryptionKey.pbData
+(encryptedKey
+(encrypted_key.empty(
+(file
+(hKey
+(https://bernking.github.io//2024/chrome-stealer/
+(https://github.com/github/gitignore/pull/1529#issuecomment-104372622
+(https://github.com/github/gitignore/pull/2483#issue-259490424
+(https://github.com/nlohmann/json
+(https://libsodium.gitbook.io/doc/
+(https://ohyicong.medium.com/how-to-hack-chrome-password-with-python-1bedc167be3d
+(https://vcpkg.io/
+(https://www.sqlite.org/index.html
+(itEncryptedKey == itOsEncrypt.value(
+(itOsEncrypt == localState.end(
+(lRes == ERROR_SUCCESS
+(localStatePath
+(loginDataBase
+(loginDataPath
+(non-zero
+(openingStatus
+(openingStatus != SQLITE_DONE
+(openingStatus != SQLITE_OK
+(passwordSize - (IV_SIZE + 3
+(passwordSize <= (IV_SIZE + 3
+(passwordSize >= (IV_SIZE + 3
+(result != 0
+(sass
+(sodium_init(
+(stmt
+(string_converted_path.c_str(
+(with potential passwords
+(working project files containing files to include in project

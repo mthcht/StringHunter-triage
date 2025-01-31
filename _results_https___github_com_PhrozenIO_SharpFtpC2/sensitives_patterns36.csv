@@ -1,0 +1,13 @@
+                        responses.Add(entry.Key);
+                    TaskResponses.Where(x => responses.Contains(x.Key)).OrderBy(x => x.Value.DateTime)
+                    row[0] = agentPair.Key;
+                    row[0] = entry.Key;
+            encryptedBundle.Key == null ||
+        aes.Key = aesKey;
+        aes.KeySize = 256;
+        byte[] aesKey = aes.Key;
+"            encryptedBundle.Key,"
+"        AESCallback?.Invoke(aes.KeySize, aes.Mode, aes.Key, cipherAesKey, aes.IV);"
+"        AESCallback?.Invoke(aes.KeySize, aes.Mode, aesKey, cipherAesKey, aes.IV);"
+"        ICryptoTransform decryptor = aes.CreateDecryptor(aes.Key, aes.IV);"
+"        ICryptoTransform encryptor = aes.CreateEncryptor(aes.Key, aes.IV);"

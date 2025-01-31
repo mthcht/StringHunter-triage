@@ -1,0 +1,104 @@
+    
+                        output_file.write(email
+                        print '%s - VALID' % email
+                    if valid:
+                    print '%s - INVALID' % email
+                    print '%s - VALID' % email
+                else:
+                email = ' '.join(line)
+                if invalid:
+                if valid and args.output is not None:
+                line = line.split()
+                output_file.write(email
+                print '%s - VALID' % email
+                response = request.text
+                s = req.session()
+            for line in file:
+            if valid:
+            print '%s - INVALID' % email
+            print '%s - VALID' % email
+        else:
+        email = args.email
+        if invalid:
+        if valid and args.output is not None:
+        response = request.text
+        with open(args.file) as file:
+    Examples:
+    This is a simple Python script used to validate email accounts that belong to Office 365 tenants. 
+    This tool is best used with a list of unique email addresses.
+    This tool is offered with no warranty and is to be used at your own risk and discretion.
+    elif args.email is not None:
+    if args.file is not None:
+    main()
+    o365creeper.py -e test@example.com
+    o365creeper.py -f emails.txt
+    o365creeper.py -f emails.txt -o validemails.txt
+    parameter to be set to 0 for a valid account. Invalid accounts will return a 1.
+    same email address which may generate false positives such as invalid email addresses showing as 
+   and/or other materials provided with the distribution.
+   list of conditions and the following disclaimer.
+   this list of conditions and the following disclaimer in the documentation
+ -f argument.
+ Description
+ NOTE
+ OR BUSINESS INTERRUPTION) HOWEVER
+ This tool will query the Microsoft Office 365 web server to determine
+ Usage
+ as many email addresses as possible through OSINT in a list with the
+ https://lmgsecurity.com
+ if an email account is valid or not. It does not need a password and
+ may produce false positives. This tool is best ran after you've gathered
+ should not show up in the logs of a client's O365 tenant.
+!/usr/bin/python
+"                    with open(args.output, 'a"
+"                body = '{""Username"":""%s""}' % email"
+"                invalid = re.search('""IfExistsResult"":1,', response)"
+"                request = req.post(url, data=body)"
+"                valid = re.search('""IfExistsResult"":0,', response)"
+"            with open(args.output, 'w') as output_file:"
+"        body = '{""Username"":""%s""}' % email"
+"        invalid = re.search('""IfExistsResult"":1', response)"
+"        request = req.post(url, data=body)"
+"        valid = re.search('""IfExistsResult"":0', response)"
+"    Additionally, the script can output valid email addressesto a file with the -o parameter."
+"    Office 365 will flag these requests randomly after repeated, successive attempts to validate the "
+"    This script depends on the Python ""Requests"" library. The script can take a single email address"
+"    This script takes either a single email address or a list of email addresses as input, "
+"    sends a request to Office 365 without a password, and looksfor the the ""IfExistsResult"""
+"    valid. This is denoted by the ""ThrottleStatus"" parameter being set to 1 in the server's response. "
+"    with the -e parameter or a list of email addresses, one per line, with the -f parameter. "
+" Created by Korey McKinley, Senior Security Consulant at LMG Security"
+" July 12, 2019"
+" LOSS OF USE, DATA, OR PROFITS"
+" Note: Microsoft has implemented some throttling on this service, so"
+" quick, repeated attempts to validate the same username over and over"
+"1. Redistributions of source code must retain the above copyright notice, this"
+"2. Redistributions in binary form must reproduce the above copyright notice,"
+"AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE"
+"CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,"
+"Copyright (c) 2019, LMG Security"
+"DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR"
+"FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL"
+"OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+"Redistribution and use in source and binary forms, with or without"
+"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"""
+"if __name__ == ""__main__"":"
+"modification, are permitted provided that the following conditions are met:"
+"parser.add_argument('-e', '--email', help='Single email address to validate.')"
+"parser.add_argument('-f', '--file', help='List of email addresses to validate, one per line.')"
+"parser.add_argument('-o', '--output', help='Output valid email addresses to the specified file.')"
+') as output_file: 
+All rights reserved.
+BSD 2-Clause License
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+SERVICES
+args = parser.parse_args()
+def main():
+import argparse
+import re
+import requests as req
+import time
+parser = argparse.ArgumentParser(description='Enumerates valid email addresses from Office 365 without submitting login attempts.')
+url = 'https://login.microsoftonline.com/common/GetCredentialType'

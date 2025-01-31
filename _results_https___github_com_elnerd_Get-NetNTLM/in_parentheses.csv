@@ -1,0 +1,50 @@
+"("" """
+"(""-"","""""
+"("":"""
+"($NTLM,12"
+"($NTLM,16"
+"($NTLM,20"
+"($NTLM,24"
+"($NTLM,28"
+"($NTLM,32"
+"($NTLM,36"
+"($NTLM,40"
+"($NTLM,44"
+"($NTLM,46"
+"($NTLM,48"
+"($auth[0] -eq ""NTLM"""
+"($headers.Contains(""authorization"""
+"($key,$val"
+"($line -eq """""
+"($response -like ""HTTP/1.1 200 OK*"""
+"(1025,65535"
+"([System.Net.IPAddress]::Loopback,$port"
+(!$foundPort
+(!$port
+($Domain
+($Domain_offset+$Domain_len-1
+($HostName
+($HostName_offset+$HostName_len-1
+($LMHash_offset+$LMHash_len-1
+($NTHash[0..15]
+($NTHash[16..$NTLM.Length]
+($NTHash_len -eq 24
+($NTHash_len -gt 24
+($NTHash_offset+$NTHash_len-1
+($NTLMHash
+($NTLMHash[8] -eq 3
+($User
+($User_offset+$User_len-1
+($auth[1]
+($doexit -eq 0
+($port
+($port -eq $takenPort.Localport
+($requestFinished -eq 0
+($response -join(''
+($state -eq 0
+($state -eq 1
+($takenPort in $takenPorts
+().ToLower(
+(INCLUDING NEGLIGENCE OR OTHERWISE
+(c
+(v2

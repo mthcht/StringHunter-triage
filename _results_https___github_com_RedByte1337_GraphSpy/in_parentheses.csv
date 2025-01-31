@@ -1,0 +1,1808 @@
+"(!$(""#delete_mfa_form input[name='delete_radio_options']:checked"""
+"(!Ce&&E(/\/>/i,p"
+"(!Pe||""id""!==s&&""name""!==s||(Tt(a,e"
+"(!confirm(""Are you sure you want to delete access token with ID "" + row.data("
+"(!confirm(""Are you sure you want to delete database '"" + row.data("
+"(!confirm(""Are you sure you want to delete device code with ID "" + row.data("
+"(!confirm(""Are you sure you want to delete refresh token with ID "" + row.data("
+"(!confirm(""Are you sure you want to delete request template '"" + row.data("
+"(!confirm(""Are you sure you want to delete this authentication method?"""
+"(!conversationName && !conversationName && $(""#ms_teams_form #resolve_conversation_names"""
+"(!external_user_details[0].hasOwnProperty(""mri"""
+"(!external_user_details[0].hasOwnProperty(""userPrincipalName"""
+"(!ke&&!ve&&!De&&-1===e.indexOf(""<"""
+"(!params.has(""driveId"""
+"(!params.has(""siteId"""
+"("" "" + file.fileName"
+"("" Uploading"""
+"("""""
+"(""#access_token_card"""
+"(""#access_token_modal .modal-dialog"""
+"(""#access_token_modal i#expand-icon"""
+"(""#access_token_modal"""
+"(""#add_mfa_form #add_authenticator_app_container #graphspyOtpDescription"""
+"(""#add_mfa_form #add_authenticator_app_container input[name='authenticatiorAppOptions']:checked"""
+"(""#add_mfa_form #add_authenticator_app_container"""
+"(""#add_mfa_form #add_email_container #email"""
+"(""#add_mfa_form #add_email_container #replace_email_warning"""
+"(""#add_mfa_form #add_email_container"""
+"(""#add_mfa_form #add_phone_container #phone_type"""
+"(""#add_mfa_form #add_phone_container #phone_verify_option_call"""
+"(""#add_mfa_form #add_phone_container #phone_verify_option_sms"""
+"(""#add_mfa_form #add_phone_container #replace_phone_warning"""
+"(""#add_mfa_form #add_phone_container"""
+"(""#add_mfa_form #add_security_key_container #securityKeyDescription"""
+"(""#add_mfa_form #add_security_key_container #securityKeyLoadingSpinner"""
+"(""#add_mfa_form #add_security_key_container #securityKeyPIN"""
+"(""#add_mfa_form #add_security_key_container #securityKeyStatusText"""
+"(""#add_mfa_form #add_security_key_container input[name='securityKeyMethod']:checked"""
+"(""#add_mfa_form #add_security_key_container"""
+"(""#add_mfa_form #azure_region"""
+"(""#add_mfa_form #captcha_container"""
+"(""#add_mfa_form #captcha_image"""
+"(""#add_mfa_form #captcha_solution"""
+"(""#add_mfa_form #challenge_id"""
+"(""#add_mfa_form #challenge_type"""
+"(""#add_mfa_form #country_code"""
+"(""#add_mfa_form #graphspyOtpDescription"""
+"(""#add_mfa_form #phone_number"""
+"(""#add_mfa_form #phone_type"""
+"(""#add_mfa_form #qr_code_container #qr_code_image"""
+"(""#add_mfa_form #qr_code_container #registration_type"""
+"(""#add_mfa_form #qr_code_container #secret_key"""
+"(""#add_mfa_form #qr_code_container"""
+"(""#add_mfa_form #security_info_type"""
+"(""#add_mfa_form #user_input"""
+"(""#add_mfa_form #verification_container #security_info_type"""
+"(""#add_mfa_form #verification_container #user_input"""
+"(""#add_mfa_form #verification_container #verification_context"""
+"(""#add_mfa_form #verification_container #verification_description"""
+"(""#add_mfa_form #verification_container"""
+"(""#add_mfa_form #verification_context"""
+"(""#add_mfa_form .default-disabled"""
+"(""#add_mfa_form input[name='phone_verify_options']:checked"""
+"(""#add_mfa_form input[type=radio]"""
+"(""#add_mfa_form input[type=text]"""
+"(""#add_selected_rows_button:disabled"""
+"(""#add_selected_rows_button:enabled"""
+"(""#body"""
+"(""#clear_recipients_button:disabled"""
+"(""#clear_recipients_button:enabled"""
+"(""#conversation_info_details"""
+"(""#conversation_list_group .list-group-item.active"""
+"(""#conversation_list_group"""
+"(""#conversation_members_details"""
+"(""#delete_mfa_form #delete_mfa_options"""
+"(""#delete_mfa_form #security_info_type"""
+"(""#entra_users_form #access_token_id"""
+"(""#external_user_details_card pre"""
+"(""#external_user_details_card"""
+"(""#external_users_searchbar"""
+"(""#header_fields"""
+"(""#method"""
+"(""#mfa_form #access_token_id"""
+"(""#ms_teams_form #access_token_id"""
+"(""#ms_teams_form #show_all"""
+"(""#new_conversation_form #conversation_topic"""
+"(""#new_conversation_form #conversation_type"""
+"(""#new_conversation_form #send_message_switch"""
+"(""#new_conversation_modal"""
+"(""#refresh_to_access_token_form #api_version"""
+"(""#refresh_token_modal .modal-dialog"""
+"(""#refresh_token_modal i#expand-icon"""
+"(""#refresh_token_modal"""
+"(""#request_template_modal .modal-dialog"""
+"(""#request_template_modal i#expand-icon"""
+"(""#request_template_modal"""
+"(""#request_template_name"""
+"(""#request_type"""
+"(""#request_uri"""
+"(""#resource_container"""
+"(""#response-card"""
+"(""#response_body"""
+"(""#response_card_body_button"""
+"(""#response_card_headers_button"""
+"(""#response_header_table"""
+"(""#response_headers"""
+"(""#response_status_code"""
+"(""#scope_container"""
+"(""#securityKeyLoadingSpinner"""
+"(""#selected_users"""
+"(""#settings_json"""
+"(""#teams_message_container"""
+"(""#teams_message_info_details"""
+"(""#upload_form #upload_button"""
+"(""#upload_form #upload_spinner"""
+"(""#upload_form #upload_text"""
+"(""#user_agent_field"""
+"(""#variable_fields"""
+"(""--debug"", action=""store_true"", help=""Enable flask debug mode. Will show detailed stack traces when an error occurs."""
+"(""-d"",""--database"", type=str, default=""database.db"", help=""Database file to utilize. (Default = database.db"
+"(""-i"",""--interface"", type=str, help=""The interface to bind to. Use 0.0.0.0 for all interfaces. (Default = 127.0.0.1"
+"(""-p"", ""--port"", type=int, help=""The port to bind to. (Default = 5000"
+"(""."""
+"("".db"""
+"("".list-group-item"""
+"("".modal"""
+"("".modal-body"""
+"("".modal-dialog"""
+"("".modal-title"""
+"("".note-toolbar button.dropdown-toggle"""
+"("".note-toolbar button[data-toggle='dropdown']"""
+"("".toast"""
+"(""/"""
+"(""/access_tokens"""
+"(""/api/activate_database"""
+"(""/api/active_access_token"""
+"(""/api/active_access_token/<id>"""
+"(""/api/active_refresh_token"""
+"(""/api/active_refresh_token/<id>"""
+"(""/api/add_email"""
+"(""/api/add_graphspy_otp"""
+"(""/api/add_mfa_app"""
+"(""/api/add_phone_number"""
+"(""/api/add_security_key"""
+"(""/api/create_database"""
+"(""/api/create_teams_conversation"""
+"(""/api/custom_api_request"""
+"(""/api/decode_token/<id>"""
+"(""/api/delete_access_token/<id>"""
+"(""/api/delete_database"""
+"(""/api/delete_device_code/<id>"""
+"(""/api/delete_graphspy_otp"""
+"(""/api/delete_refresh_token/<id>"""
+"(""/api/delete_request_template"""
+"(""/api/delete_security_info"""
+"(""/api/duplicate_database"""
+"(""/api/generate_otp_code"""
+"(""/api/generic_graph"""
+"(""/api/generic_graph_post"""
+"(""/api/get_access_token/<id>"""
+"(""/api/get_available_authentication_info"""
+"(""/api/get_entra_user_details/<user_id>"""
+"(""/api/get_entra_users"""
+"(""/api/get_refresh_token/<id>"""
+"(""/api/get_request_templates/<template_id>"""
+"(""/api/get_security_key_status"""
+"(""/api/get_settings"""
+"(""/api/get_teams_conversation_members"""
+"(""/api/get_teams_conversation_messages"""
+"(""/api/get_teams_conversations"""
+"(""/api/get_teams_image"""
+"(""/api/get_teams_user_details"""
+"(""/api/get_user_agent"""
+"(""/api/initialize_mobile_app_registration"""
+"(""/api/list_access_tokens"""
+"(""/api/list_databases"""
+"(""/api/list_device_codes"""
+"(""/api/list_graphspy_otp"""
+"(""/api/list_refresh_tokens"""
+"(""/api/list_request_templates"""
+"(""/api/list_teams_users"""
+"(""/api/restart_device_code_polling"""
+"(""/api/save_request_template"""
+"(""/api/send_teams_conversation_message"""
+"(""/api/set_table_error_messages"""
+"(""/api/set_user_agent"""
+"(""/api/validate_captcha"""
+"(""/api/verify_security_info"""
+"(""/custom_requests"""
+"(""/device_codes"""
+"(""/entra_users"""
+"(""/generic_search"""
+"(""/mfa"""
+"(""/onedrive"""
+"(""/outlook"""
+"(""/recent_files"""
+"(""/refresh_tokens"""
+"(""/shared_with_me"""
+"(""/sharepoint"""
+"(""/sharepoint_drives"""
+"(""/sharepoint_sites"""
+"(""/teams"""
+"(""</c0>"", ""</b>"""
+"(""<c0>"", '<b class=""text-danger-emphasis"">'"
+"(""Access Token Error"", response_a.responseText"
+"(""Acticate database"", response.responseText"
+"(""Activate Access Token"", `[Succes] Activated access token with ID '${active_access_token}'`, ""info"""
+"(""Activate Refresh Token"", `[Succes] Activated refresh token with ID '${active_refresh_token}'`, ""info"""
+"(""Add Authenticator App"", ""No Authenticator App method selected."", ""warning"""
+"(""Add Authenticator App"", xhr.responseText, ""danger"""
+"(""Add Email"", xhr.responseText, ""danger"""
+"(""Add External User"", `External user does have a userPrincipalName property.`, ""danger"""
+"(""Add External User"", `External user does not seem to have an mri property.`, ""danger"""
+"(""Add GraphSpy OTP"", response, ""success"""
+"(""Add GraphSpy OTP"", xhr.responseText, ""danger"""
+"(""Add MFA App"", ""A captcha is required!"", ""warning"""
+"(""Add MFA App"", ""Approve the notification send to your Microsoft Authenticator app."", ""primary"""
+"(""Add MFA App"", ""Fill in the code displayed on your app."", ""primary"""
+"(""Add MFA App"", ""Fill in the code in your Microsoft Authenticator app."", ""primary"""
+"(""Add MFA App"", `Unknown Verification Type '${response_json.Type}'`, ""error"""
+"(""Add MFA App"", xhr.responseText, ""danger"""
+"(""Add MFA Method"", ""Microsoft only allows 5 authenticator apps of any type to be enrolled on a single account. If you want to add an additional one, you'll first have to remove some!"", ""danger"""
+"(""Add MFA Method"", `Adding method '${method}' is not implemented in GraphSpy yet. Feel free to create a PR!`, ""warning"""
+"(""Add Phone Number"", ""A captcha is required!"", ""warning"""
+"(""Add Phone Number"", ""Approve the call using the '#' symbol."", ""primary"""
+"(""Add Phone Number"", ""Fill in the code received on your email address."", ""primary"""
+"(""Add Phone Number"", ""Fill in the code received on your phone."", ""primary"""
+"(""Add Phone Number"", xhr.responseText, ""danger"""
+"(""Add Security Key"", ""Manual option not yet implemented."", ""warning"""
+"(""Add Security Key"", ""No method selected."", ""warning"""
+"(""Add Security Key"", response.message, ""success"""
+"(""Add Security Key"", responseJSON.message, ""danger"""
+"(""Add user to conversation"", `'${userPrincipalName}' is already selected.`, ""warning"""
+"(""An error occurred when searching for an NFC channel"""
+"(""Approve the call to your provided phone number using the '#' symbol. Then, click the Validate button below."""
+"(""Approve the notification send to your Microsoft Authenticator app and click on Validate."""
+"(""Available Auth Methods Table"", xhr.responseText, ""danger"""
+"(""CREATE TABLE request_templates (id INTEGER PRIMARY KEY AUTOINCREMENT, template_name TEXT, uri TEXT, method TEXT, request_type TEXT, body TEXT, headers TEXT, variables TEXT"
+"(""Content-Type"" in response.headers and ""json"" in response.headers[""Content-Type""]"
+"(""Content-Type"" in response.headers and ""xml"" in response.headers[""Content-Type""]"
+"(""Copy to clipboard"", `Copied to clipboard: '${messageTruncated}'`"
+"(""Create Teams Conversation"", `Successfully created ${response.responseJSON.length} conversation(s"
+"(""Create Teams Conversation"", response.responseText, ""danger"""
+"(""Create database"", response.responseText"
+"(""Credential registration with the authenticator device failed."""
+"(""DELETE FROM accesstokens WHERE id = ?"",[id]"
+"(""DELETE FROM devicecodes where id = ?"",[id]"
+"(""DELETE FROM mfa_otp WHERE id = ?"",[otp_code_id]"
+"(""DELETE FROM refreshtokens where id = ?"",[id]"
+"(""DELETE FROM request_templates where id = ?"",[existing_request_template[""id""]]"
+"(""DELETE FROM request_templates where id = ?"",[template_id]"
+"(""DataTable Error Messages"", response.responseText"
+"(""DataTables Error"", message"
+"(""DefaultMethodUpdated"""
+"(""Delete Item"", ""Failed to delete item. Status code: "" + response.response_status_code + "", Response: "" + response.response_text, ""danger"""
+"(""Delete Item"", ""Failed to delete item. Status code: "" + xhr.status + "", Response: "" + xhr.responseText, ""danger"""
+"(""Delete Item"", ""Item deleted successfully."", ""success"""
+"(""Delete MFA Method"", ""No MFA method selected."", ""warning"""
+"(""Delete MFA Method"", successMessage, ""success"""
+"(""Delete MFA Method"", xhr.responseText, ""danger"""
+"(""Delete OTP Code"", response, ""success"""
+"(""Delete OTP Code"", xhr.responseText, ""danger"""
+"(""Delete Request Template"", response.responseText"
+"(""Delete access token"", `[Success] Deleted access token with ID ${token_id}.`"
+"(""Delete database"", response.responseText"
+"(""Delete refresh token"", `[Success] Deleted refresh token with ID ${token_id}.`"
+"(""Device Code"", `[Success] Generated Device Code with User Code '${response.responseText}'.`, ""primary"""
+"(""Duplicate database"", response.responseText"
+"(""Entra ID Users Table"", xhr.responseText, ""danger"""
+"(""ErrorCode"" in security_info_response and security_info_response[""ErrorCode""] != 0"
+"(""ErrorCode"" in verify_security_info_response and verify_security_info_response[""ErrorCode""]"
+"(""Fill in the code displayed in your app."""
+"(""Fill in the code received on your email address."""
+"(""Fill in the code received on your phone."""
+"(""Format JSON"", ""[Error] Request body is not valid JSON."""
+"(""Format XML"", ""[Error] Request body is not valid XML."""
+"(""Found teams settings in database. Using those."""
+"(""Generate OTP Code"", response.responseText, ""danger"""
+"(""Get Entra ID User Details"", response.responseText, ""danger"""
+"(""Get Teams User Details"", response.responseText, ""danger"""
+"(""GraphSpy OTP Table"", ""Unable to obtain stored OTP codes from database."", ""danger"""
+"(""GraphSpy/version.txt"", 'r', encoding='utf-8'"
+"(""INSERT INTO accesstokens (stored_at, issued_at, expires_at, description, user, resource, accesstoken"
+"(""INSERT INTO devicecodes (generated_at, expires_at, user_code, device_code, interval, client_id, status, last_poll"
+"(""INSERT INTO mfa_otp (stored_at, secret_key, account_name, description"
+"(""INSERT INTO refreshtokens (stored_at, description, user, tenant_id, resource, foci, refreshtoken"
+"(""INSERT INTO request_templates (template_name, uri, method, request_type, body, headers, variables"
+"(""INSERT INTO settings (setting, value"
+"(""INSERT OR REPLACE INTO settings (setting, value"
+"(""INSERT OR REPLACE INTO teams_settings (access_token_id, skypeToken, skype_id, issued_at, expires_at, teams_settings_raw"
+"(""List teams users"", xhr.responseText, ""danger"""
+"(""No USB FIDO authenticator device found! Trying to use NFC instead."""
+"(""No action defined for this type of entity."""
+"(""No valid FIDO authenticator device found. Admin/root privileges might be required to discover your Authenticator device when not using the Windows WebAuthn API."""
+"(""README.md"", 'r', encoding='utf-8'"
+"(""Refresh To Access Token"", `[Succes] Obtained access token with ID '${access_token_id}'`, ""success"""
+"(""Refresh To Access Token"", `[Succes] Obtained and activated access token with ID '${access_token_id}'`, ""success"""
+"(""Refresh To Access Token"", xhr.responseText, ""danger"""
+"(""Restart polling"", response.responseText"
+"(""SELECT * FROM devicecodes WHERE device_code = ?"",[device_code],one=True"
+"(""SELECT * FROM devicecodes WHERE status IN ('CREATED','POLLING'"
+"(""SELECT * FROM request_templates WHERE id = ?"",[template_id],one=True"
+"(""SELECT * FROM request_templates WHERE template_name = ?"",[template_name],one=True"
+"(""SELECT * FROM request_templates"""
+"(""SELECT * FROM settings"""
+"(""SELECT * FROM teams_settings WHERE access_token_id = ?"",[access_token_id],one=True"
+"(""SELECT accesstoken FROM accesstokens WHERE id = ? AND resource LIKE '%0000000c-0000-0000-c000-000000000000%'"",[access_token_id],one=True"
+"(""SELECT accesstoken FROM accesstokens WHERE id = ? AND resource LIKE '%api.spaces.skype.com%'"",[access_token_id],one=True"
+"(""SELECT accesstoken FROM accesstokens WHERE id = ?"", [access_token_id], one=True"
+"(""SELECT accesstoken FROM accesstokens WHERE id = ?"",[id],one=True"
+"(""SELECT accesstoken FROM accesstokens where id = ?"",[access_token_id],one=True"
+"(""SELECT id FROM accesstokens where accesstoken = ?"",[access_token],one=True"
+"(""SELECT refreshtoken FROM refreshtokens where id = ?"",[refresh_token_id],one=True"
+"(""SELECT resource FROM refreshtokens where id = ?"",[refresh_token_id],one=True"
+"(""SELECT tenant_id FROM refreshtokens where id = ?"",[refresh_token_id],one=True"
+"(""SELECT value FROM settings WHERE setting = 'active_access_token_id'"",one=True"
+"(""SELECT value FROM settings WHERE setting = 'active_refresh_token_id'"",one=True"
+"(""SELECT value FROM settings where setting = 'schema_version'"",one=True"
+"(""SELECT value FROM settings where setting = 'user_agent'"",one=True"
+"(""Save Request Template"", response.responseText"
+"(""Search External User"", `No external user with email '${email}' found`, ""danger"""
+"(""Send Teams Message"", ""No conversation selected. Please select a conversation first before trying to send a message."", ""warning"""
+"(""Send Teams Messages"", `Teams message with ID ${response.responseText} created.`, ""success"""
+"(""Send Teams Messages"", response.responseText, ""danger"""
+"(""Set User Agent"", response.responseText"
+"(""Teams Conversation Messages"", response.responseText, ""danger"""
+"(""Teams Conversations"", ""No Microsoft Teams conversations found for this user."", ""warning"""
+"(""Teams Conversations"", jqXHR.responseText, ""danger"""
+"(""Teams Members"", response.responseText, ""danger"""
+"(""Touch your authenticator device now."""
+"(""TrustedTypes policy ""+r+"" could not be created."""
+"(""UPDATE devicecodes SET last_poll = ? WHERE device_code = ?"",(int(datetime.now("
+"(""UPDATE devicecodes SET status = ? WHERE device_code = ?"",(""EXPIRED"",row[""device_code""]"
+"(""UPDATE devicecodes SET status = ? WHERE device_code = ?"",(""POLLING"",row[""device_code""]"
+"(""UPDATE devicecodes SET status = ? WHERE device_code = ?"",(""SUCCESS"",row[""device_code""]"
+"(""UPDATE settings SET value = '2' WHERE setting = 'schema_version'"""
+"(""UPDATE settings SET value = '3' WHERE setting = 'schema_version'"""
+"(""UPDATE settings SET value = '4' WHERE setting = 'schema_version'"""
+"(""UPDATE settings SET value = ? WHERE setting = 'active_access_token_id'"",(id,"
+"(""UPDATE settings SET value = ? WHERE setting = 'active_refresh_token_id'"",(id,"
+"(""Upload File"", ""Failed to upload file. Status code: "" + xhr.status + "", Response: "" + xhr.responseText, ""danger"""
+"(""Upload File"", ""File uploaded successfully."", ""success"""
+"(""Upload File"", ""No file selected to upload yet!"", ""warning"""
+"(""Upload"""
+"(""User Verification required."""
+"(""Using NFC channel."""
+"(""Validate Captcha"", ""Captcha solved! Try submitting the previous form again!"", ""success"""
+"(""Validate Captcha"", xhr.responseText, ""danger"""
+"(""Verify Security Info"", ""Info validated. Check if the MFA method was added correctly."", ""success"""
+"(""Verify Security Info"", `An error occurred when trying to validate the provided info. Received Error Code ${response.ErrorCode}`, ""danger"""
+"(""Verify Security Info"", xhr.responseText, ""danger"""
+"(""[*] Current database is schema version 1, updating to schema version 2"""
+"(""[*] Current database is schema version 2, updating to schema version 3"""
+"(""[*] Current database is schema version 3, updating to schema version 4"""
+"(""[*] First time use detected."""
+"(""[*] Updated database to schema version 2"""
+"(""[*] Updated database to schema version 3"""
+"(""[*] Updated database to schema version 4"""
+"(""\x3c!----\x3e"""
+"(""access_token_id"""
+"(""access_token_id"", access_token_id"
+"(""access_token_id"", active_access_token"
+"(""active"""
+"(""afterSanitizeAttributes"",e,null"
+"(""afterSanitizeElements"",e,null"
+"(""afterSanitizeShadowDOM"",t,null"
+"(""alert alert-dismissible"""
+"(""application/xhtml+xml""!==tt||!Qe[e.namespaceURI]"
+"(""beforeSanitizeAttributes"",e,null"
+"(""bg-primary-subtle"""
+"(""btn-primary"""
+"(""btn-secondary"""
+"(""checked"", true"
+"(""custom_request_form"""
+"(""d-inline-block text-truncate"""
+"(""data-bs-spy"", ""scroll"""
+"(""data-bs-target"", ""#entra_user_details_modal_navbar"""
+"(""data-bs-toggle"", ""dropdown"""
+"(""data-toggle"""
+"(""deletetime"""
+"(""destroy"""
+"(""dirty is not a string, aborting"""
+"(""disabled"""
+"(""disabled"", """""
+"(""disabled"", ""true"""
+"(""driveId"""
+"(""entra_user_details_modal"", `User details '${entraUserDetails.displayName}'`, modalBody, ""modal-xl"""
+"(""file"""
+"(""file"", file"
+"(""files"""
+"(""form"""
+"(""function""!=typeof e.TRUSTED_TYPES_POLICY.createHTML"
+"(""function""!=typeof e.TRUSTED_TYPES_POLICY.createScriptURL"
+"(""function""!=typeof e.toString"
+"(""function""==typeof N"
+"(""function""==typeof n.value"
+"(""header_name"""
+"(""header_value"""
+"(""hide"""
+"(""href"", file.fileInfo.shareUrl"
+"(""https://login.microsoft.com"""
+"(""label"""
+"(""max-height"", `calc(100vh - ${document.getElementById(""conversation_list_group"""
+"(""max-height"", `calc(100vh - ${document.getElementById(""teams_message_container"""
+"(""max-width"", ""350px"""
+"(""object""!=typeof e||""function""!=typeof e.createPolicy"
+"(""onedrive"", path, file, access_token_id, function ("
+"(""onedrive_form"""
+"(""outlook_form"""
+"(""pre"""
+"(""raw-conversation"""
+"(""raw-message"""
+"(""recent_file_form"""
+"(""refresh_token_id"""
+"(""refresh_token_id"", active_refresh_token"
+"(""reset"""
+"(""role"", ""alert"""
+"(""root node is forbidden and cannot be sanitized in-place"""
+"(""search_form"""
+"(""select * from accesstokens WHERE id = ?"",[id],one=True"
+"(""select * from accesstokens"""
+"(""select * from devicecodes"""
+"(""select * from mfa_otp"""
+"(""select * from refreshtokens WHERE id = ?"",[id],one=True"
+"(""select * from refreshtokens"""
+"(""shared_file_form"""
+"(""sharepoint_form"""
+"(""show"""
+"(""side_menu_access_token_form"""
+"(""side_menu_refresh_token_form"""
+"(""siteId"""
+"(""src""!==t&&""xlink:href""!==t&&""href""!==t||""script""===e||0!==T(n,""data:"""
+"(""src"", `${window.location.origin}/api/get_teams_image?access_token_id=${$(""#ms_teams_form #access_token_id"""
+"(""string""!=typeof(e=e.toString("
+"(""string""==typeof t"
+"(""summernote.change"", function ("
+"(""tabindex"", ""0"""
+"(""template"""
+"(""text-bg-danger"""
+"(""text-bg-secondary"""
+"(""text-bg-success"""
+"(""text-end"""
+"(""text-primary-emphasis"""
+"(""toString is not a function"""
+"(""upload_uri"", `${base_url}/root:/${path}/${file.name}:/content`"
+"(""utf-8"""
+"(""variable_name"""
+"(""variable_value"""
+"($(""#entra_users_form #access_token_id"""
+"($(""#ms_teams_form #auto_reload_messages"""
+"($(""#ms_teams_form #reload_button"""
+"($(""#request_button"""
+"($(""#response_body"""
+"($(""#selected_users"""
+"($(""#user_agent_field"""
+"($(""<dd></dd>"""
+"($('<b class=""text-body-secondary""></b>'"
+"($('<button class=""btn btn-outline-danger"" type=""button"" onclick=""return this.parentNode.parentNode.remove("
+"($('<button type=""button"" class=""btn-close"" data-bs-dismiss=""alert"" aria-label=""Close""></button>'"
+"($('<code class=""language-json"" style=""white-space: pre-wrap; word-break: break-all""></code>'"
+"($('<div class=""d-flex""><i id=""members-icon"" class=""fi fi-rr-user icon-hover-change mx-1""></i> <i id=""info-icon"" class=""fi fi-rr-info icon-hover-change""></i></div>'"
+"($('<i class=""fi fi-rr-document""></i>'"
+"($('<small class=""text-body-secondary text-truncate""></small>'"
+"($('<span class=""input-group-text""></span>'"
+"($('<span class=""text-light-emphasis""></span>'"
+"($(`#new_conversation_modal #selected_users span:hidden:contains(""${mri}"""
+"($(`<input class=""form-check-input"" type=""radio"" name=""delete_radio_options"" id=""delete_method_${number}"">`"
+"($(`<label class=""form-check-label"" for=""delete_method_${number}""></label>`"
+"($.fn.dataTable.isDataTable(""#available_auth_methods_table"""
+"($.fn.dataTable.isDataTable(""#entra_id_users_table"""
+"($.fn.dataTable.isDataTable(""#response_table"""
+"('""{}-[]\\/\' '"
+"('#add_mfa_form #add_authenticator_app_container input[type=""radio""]'"
+"('#add_mfa_form #add_security_key_container input[type=""radio""]'"
+"('/api/generic_graph_upload', methods=['POST']"
+"('<a class=""link-underline link-underline-opacity-0"" target=""_blank""></a>'"
+"('<a href=""#"" class=""list-group-item list-group-item-action""></a>'"
+"('<b class=""mb-1 text-truncate""></b>'"
+"('<button class=""btn btn-outline-danger"" type=""button"" onclick=""return this.parentNode.remove("
+"('<div class=""card overflow-hidden"" style=""max-width: 75%""></div>'"
+"('<div class=""card-body""></div>'"
+"('<div class=""card-header text-body-secondary""></div>'"
+"('<div class=""d-flex justify-content-between""></div>'"
+"('<div class=""d-flex m-3""></div>'"
+"('<div class=""form-check""></div>'"
+"('<div class=""input-group""></div>'"
+"('<div class=""p-2""></div>'"
+"('<div class=""raw-conversation"" hidden></div>'"
+"('<div class=""raw-message"" hidden></div>'"
+"('<div class=""toast"" role=""alert"" aria-live=""assertive"" aria-atomic=""true""></div>'"
+"('<div class=""toast-body""></div>'"
+"('<div class=""toast-header""><small>Just now</small><button type=""button"" class=""btn-close"" data-bs-dismiss=""toast"" aria-label=""Close""></button></div>'"
+"('<i class=""fi fi-rr-copy-alt float-end p-2 ms-n2"" style=""cursor: pointer""></i>'"
+"('<i id=""info-icon"" class=""fi fi-rr-info icon-hover-change ps-2"" style=""vertical-align: -0.15em; cursor: pointer""></i>'"
+"('<input type=""text"" placeholder=""$$example_id$$"" class=""form-control variable_name"">'"
+"('<input type=""text"" placeholder=""01234567-89ab-cdef-0123-456789abcdef"" class=""form-control variable_value"">'"
+"('<input type=""text"" placeholder=""Custom"" class=""form-control header_value"">'"
+"('<input type=""text"" placeholder=""X-Header"" class=""form-control header_name"">'"
+"('<li class=""list-group-item""></li>'"
+"('<pre style=""white-space: pre-wrap;""></pre>'"
+"('<small class=""text-body-secondary""></small>'"
+"('<strong class=""me-auto""></strong>'"
+"('CREATE TABLE accesstokens (id INTEGER PRIMARY KEY AUTOINCREMENT, stored_at TEXT, issued_at TEXT, expires_at TEXT, description TEXT, user TEXT, resource TEXT, accesstoken TEXT"
+"('CREATE TABLE devicecodes (id INTEGER PRIMARY KEY AUTOINCREMENT, generated_at INTEGER, expires_at INTEGER, user_code TEXT, device_code TEXT, interval INTEGER, client_id TEXT, status TEXT, last_poll INTEGER"
+"('CREATE TABLE mfa_otp (id INTEGER PRIMARY KEY AUTOINCREMENT, stored_at TEXT, secret_key TEXT, account_name INTEGER, description TEXT"
+"('CREATE TABLE refreshtokens (id INTEGER PRIMARY KEY AUTOINCREMENT, stored_at TEXT, description TEXT, user TEXT, tenant_id TEXT, resource TEXT, foci INTEGER, refreshtoken TEXT"
+"('CREATE TABLE request_templates (id INTEGER PRIMARY KEY AUTOINCREMENT, template_name TEXT, uri TEXT, method TEXT, request_type TEXT, body TEXT, headers TEXT, variables TEXT"
+"('CREATE TABLE settings (setting TEXT UNIQUE, value TEXT"
+"('CREATE TABLE teams_settings (access_token_id INTEGER PRIMARY KEY, skypeToken TEXT, skype_id TEXT, issued_at INTEGER, expires_at INTEGER, teams_settings_raw TEXT"
+"('DOMContentLoaded', ("
+"('OneDrive.html', title=""OneDrive"""
+"('SharePoint.html', title=""SharePoint"""
+"('SharePointDrives.html', title=""SharePoint Drives"""
+"('SharePointSites.html', title=""SharePoint Sites"""
+"('TRUSTED_TYPES_POLICY configuration option must provide a ""createHTML"" hook.'"
+"('TRUSTED_TYPES_POLICY configuration option must provide a ""createScriptURL"" hook.'"
+"('access_tokens.html', title=""Access Tokens"""
+"('active_access_token_id',?"
+"('active_refresh_token_id',?"
+"('aria-pressed', 'false'"
+"('aria-pressed', 'true'"
+"('change', ("
+"('change', function (e"
+"('checked', false"
+"('click', 'a.list-group-item', function (e"
+"('click', 'i#copy-icon', function (e"
+"('click', 'i#expand-icon', function (e"
+"('click', 'i#info-icon', function (e"
+"('click', 'i#members-icon', function (e"
+"('click', 'input', function (e"
+"('click', 'td.action-control', function (e"
+"('click', 'td.active-control', function (e"
+"('click', 'td.add-control', function (e"
+"('click', 'td.copy-control', function (e"
+"('click', 'td.delete-control', function (e"
+"('click', 'td.dt-control', function (e"
+"('click', 'td.duplicate-control', function (e"
+"('click', 'td.groups-control', function (e"
+"('click', ("
+"('click', function ("
+"('custom_requests.html', title=""Custom Requests"""
+"('data-bs-theme', 'dark'"
+"('data-bs-theme', theme"
+"('device_codes.html', title=""Device Codes"""
+"('disabled', false"
+"('disabled', true"
+"('editor.pasteHTML', '<blockquote><strong>John Doe</strong> <small>01/01/2024, 12:00</small><p>Fake quote message here.</p>'"
+"('entra_users.html', title=""Entra ID Users"""
+"('error.dt', function (e, settings, techNote, message"
+"('generic_search.html', title=""Generic MSGraph Search"""
+"('id', modalID"
+"('mfa.html', title=""MFA Methods"""
+"('outlook.html', title=""Outlook"""
+"('recent_files.html', title=""Recent Files"""
+"('refresh_tokens.html', title=""Refresh Tokens"""
+"('requirements.txt', 'r', encoding='utf-8'"
+"('schema_version', '4'"
+"('select.dt deselect.dt', function (e"
+"('settings.html', title=""Settings"""
+"('shared_with_me.html', title=""Files Shared With Me"""
+"('show.bs.dropdown', function (e"
+"('shown.bs.modal', function ("
+"('src', `data:image/png;base64, ${initialize_mobile_app_registration_json.QrCode}`"
+"('src', `data:image/png;base64, ${response_json.captcha.ChallengeData}`"
+"('static', filename='css/style.css'"
+"('static', filename='js/functions.js'"
+"('static', filename='js/purify.min.js'"
+"('static', filename='js/theme.js'"
+"('teams.html', title=""Microsoft Teams"""
+"('theme', theme"
+"('user_agent',?"
+"((!message || (message.hasOwnProperty(""properties"""
+"((!message.imdisplayname || message.imdisplayname.startsWith(""orgid:"""
+"(($(""#delete_mfa_form input[name='delete_radio_options']:checked"""
+"(([""RichText/Html"", ""Text""].includes(conversation.lastMessage.messagetype"
+"((cursor.description[idx][0], value"
+"((messageJson.isFromMe ? ""justify-content-end"" : ""justify-content-start"""
+"((not (""Deleted"" in security_info_response"
+"() == ""1"""
+"() == ""2"""
+"() and db_file.name.endswith("".db"""
+"() || ""[Unrenderable_Content]""}` : ""[Unrenderable_Content]"""
+"()"">Create Conversation(s"
+"(), $('#ngcmfa_checkbox'"
+"(),$('#device_code_form #client_id'"
+"(),row.data("
+"().ajax.reload(null, false"
+"().column(""groups:name"""
+"().column(""roles:name"""
+"().columns("".default-hide"""
+"().parseFromString(sourceXml, 'application/xml'"
+"().split("" """
+"().split("","""
+"().top}px - ${document.getElementById(""message_form_container"""
+"():""function""==typeof define&&define.amd?define(t"
+"()[""OriginalArrivalTime""] if ""OriginalArrivalTime"" in response.json("
+"()[""foci""] if ""foci"" in response.json("
+"()[""resource""]  if ""resource"" in response.json("
+"()[""resource""]if ""resource"" in response.json("
+"(){it=null,Oe=!1},o.isValidAttribute=function(e,t,n"
+"(){le={}},o}("
+"(){return null}}const v=i([""a"",""abbr"",""acronym"",""address"",""area"",""article"",""aside"",""audio"",""b"",""bdi"",""bdo"",""big"",""blink"",""blockquote"",""body"",""br"",""button"",""canvas"",""caption"",""center"",""cite"",""code"",""col"",""colgroup"",""content"",""data"",""datalist"",""dd"",""decorator"",""del"",""details"",""dfn"",""dialog"",""dir"",""div"",""dl"",""dt"",""element"",""em"",""fieldset"",""figcaption"",""figure"",""font"",""footer"",""form"",""h1"",""h2"",""h3"",""h4"",""h5"",""h6"",""head"",""header"",""hgroup"",""hr"",""html"",""i"",""img"",""input"",""ins"",""kbd"",""label"",""legend"",""li"",""main"",""map"",""mark"",""marquee"",""menu"",""menuitem"",""meter"",""nav"",""nobr"",""ol"",""optgroup"",""option"",""output"",""p"",""picture"",""pre"",""progress"",""q"",""rp"",""rt"",""ruby"",""s"",""samp"",""section"",""select"",""shadow"",""small"",""source"",""spacer"",""span"",""strike"",""strong"",""style"",""sub"",""summary"",""sup"",""table"",""tbody"",""td"",""template"",""textarea"",""tfoot"",""th"",""thead"",""time"",""tr"",""track"",""tt"",""u"",""ul"",""var"",""video"",""wbr""]"
+"(){return""undefined""==typeof window?null:window},Z=function(e,t"
+"()}"".split(""."""
+"()}&image_uri=${encodeURIComponent(image_element_jquery.attr(""src"""
+"()}(this,(function("
+"()}},Tt=function(e,t"
+"(/<[/\w]/g,e.innerHTML"
+"(/<[/\w]/g,e.textContent"
+"(0, -1"
+"(0, -2"
+"(0, 100"
+"(1,100"
+"(200, f""Successfully added new security key with description '{key_description}' to the account."""
+"(400, ""An unexpected error occurred when trying to add the security key."""
+"(400, ""Credential registration with the authenticator device failed."""
+"(400, ""No valid FIDO authenticator device found. Admin/root privileges might be required to discover your Authenticator device when not using the Windows WebAuthn API."""
+"(400, ""Windows client requested, but WindowsClient is not available! Are you sure the GraphSpy server is running on a compatible Windows device?"""
+"(400, f""Failed to add the security key. Microsoft error message: {error_message}"""
+"(400, f""No access token with ID {access_token_id} and resource containing '0000000c-0000-0000-c000-000000000000'!"""
+"(400, f""Something went wrong trying to add the security key. Microsoft Error Message: {error_message}"""
+"(?,?,?,?"
+"(?,?,?,?,?,?"
+"(?,?,?,?,?,?,?"
+"(?,?,?,?,?,?,?,?"
+"(Ae.attributeNameCheck instanceof RegExp&&E(Ae.attributeNameCheck,t"
+"(Ae.tagNameCheck instanceof RegExp&&E(Ae.tagNameCheck,e"
+"(Ae.tagNameCheck instanceof RegExp&&E(Ae.tagNameCheck,n"
+"(DOMPurify.sanitize(messageJson.content, { ADD_ATTR: ['itemtype'] }"
+"(E(ge,g(n,de,"""""
+"(G.getAttributeType(f,s"
+"(JSON.stringify(JSON.parse($(""#body"""
+"(JSON.stringify(d, undefined, 4"
+"(JSON.stringify(jsonInput, undefined, 4"
+"(Je=!e,Je&&(e=""\x3c!--\x3e"""
+"(KHTML, like Gecko"
+"(Le&&8===e.nodeType&&E(/<[/\w]/g,e.data"
+"(N,t"
+"(N=TypeError,function("
+"(Nt(""beforeSanitizeElements"",e,null"
+"(Nt(""beforeSanitizeShadowDOM"",t,null"
+"(Nt(""uponSanitizeElement"",e,{tagName:n,allowedTags:Te}"
+"(Nt(""uponSanitizeShadowNode"",n,null"
+"(Re&&!be[t]&&E(me,t"
+"(S(Te,D"
+"(S(Te,L"
+"(S(Te,[""tbody""]"
+"(S(Te,v"
+"(S(Te,x"
+"(Se&&E(pe,t"
+"(St(f,s,p"
+"(Te,[""html"",""head"",""body""]"
+"(Te,e.ADD_TAGS,rt"
+"(Te=S({},M"
+"(Te[""#text""]=!0"
+"(Tt(a,e"
+"(Ue&&(""id""===t||""name""===t"
+"(We,e.FORBID_CONTENTS,rt"
+"(Xe,e.ADD_URI_SAFE_ATTR,rt"
+"(Ze,""template"",null"
+"([""#text""]"
+"([""MobilePhone"", ""AltMobilePhone"", ""OfficePhone"", ""Email""].includes(r.MethodName"
+"([""MobilePhone"", ""AltMobilePhone"", ""OfficePhone""].includes(method"
+"([""accent"",""accentunder"",""align"",""bevelled"",""close"",""columnsalign"",""columnlines"",""columnspan"",""denomalign"",""depth"",""dir"",""display"",""displaystyle"",""encoding"",""fence"",""frame"",""height"",""href"",""id"",""largeop"",""length"",""linethickness"",""lspace"",""lquote"",""mathbackground"",""mathcolor"",""mathsize"",""mathvariant"",""maxsize"",""minsize"",""movablelimits"",""notation"",""numalign"",""open"",""rowalign"",""rowlines"",""rowspacing"",""rowspan"",""rspace"",""rquote"",""scriptlevel"",""scriptminsize"",""scriptsizemultiplier"",""selection"",""separator"",""separators"",""stretchy"",""subscriptshift"",""supscriptshift"",""symmetric"",""voffset"",""width"",""xmlns""]"
+"([""accent-height"",""accumulate"",""additive"",""alignment-baseline"",""ascent"",""attributename"",""attributetype"",""azimuth"",""basefrequency"",""baseline-shift"",""begin"",""bias"",""by"",""class"",""clip"",""clippathunits"",""clip-path"",""clip-rule"",""color"",""color-interpolation"",""color-interpolation-filters"",""color-profile"",""color-rendering"",""cx"",""cy"",""d"",""dx"",""dy"",""diffuseconstant"",""direction"",""display"",""divisor"",""dur"",""edgemode"",""elevation"",""end"",""fill"",""fill-opacity"",""fill-rule"",""filter"",""filterunits"",""flood-color"",""flood-opacity"",""font-family"",""font-size"",""font-size-adjust"",""font-stretch"",""font-style"",""font-variant"",""font-weight"",""fx"",""fy"",""g1"",""g2"",""glyph-name"",""glyphref"",""gradientunits"",""gradienttransform"",""height"",""href"",""id"",""image-rendering"",""in"",""in2"",""k"",""k1"",""k2"",""k3"",""k4"",""kerning"",""keypoints"",""keysplines"",""keytimes"",""lang"",""lengthadjust"",""letter-spacing"",""kernelmatrix"",""kernelunitlength"",""lighting-color"",""local"",""marker-end"",""marker-mid"",""marker-start"",""markerheight"",""markerunits"",""markerwidth"",""maskcontentunits"",""maskunits"",""max"",""mask"",""media"",""method"",""mode"",""min"",""name"",""numoctaves"",""offset"",""operator"",""opacity"",""order"",""orient"",""orientation"",""origin"",""overflow"",""paint-order"",""path"",""pathlength"",""patterncontentunits"",""patterntransform"",""patternunits"",""points"",""preservealpha"",""preserveaspectratio"",""primitiveunits"",""r"",""rx"",""ry"",""radius"",""refx"",""refy"",""repeatcount"",""repeatdur"",""restart"",""result"",""rotate"",""scale"",""seed"",""shape-rendering"",""specularconstant"",""specularexponent"",""spreadmethod"",""startoffset"",""stddeviation"",""stitchtiles"",""stop-color"",""stop-opacity"",""stroke-dasharray"",""stroke-dashoffset"",""stroke-linecap"",""stroke-linejoin"",""stroke-miterlimit"",""stroke-opacity"",""stroke"",""stroke-width"",""style"",""surfacescale"",""systemlanguage"",""tabindex"",""targetx"",""targety"",""transform"",""transform-origin"",""text-anchor"",""text-decoration"",""text-rendering"",""textlength"",""type"",""u1"",""u2"",""unicode"",""values"",""viewbox"",""visibility"",""version"",""vert-adv-y"",""vert-origin-x"",""vert-origin-y"",""width"",""word-spacing"",""wrap"",""writing-mode"",""xchannelselector"",""ychannelselector"",""x"",""x1"",""x2"",""xmlns"",""y"",""y1"",""y2"",""z"",""zoomandpan""]"
+"([""accept"",""action"",""align"",""alt"",""autocapitalize"",""autocomplete"",""autopictureinpicture"",""autoplay"",""background"",""bgcolor"",""border"",""capture"",""cellpadding"",""cellspacing"",""checked"",""cite"",""class"",""clear"",""color"",""cols"",""colspan"",""controls"",""controlslist"",""coords"",""crossorigin"",""datetime"",""decoding"",""default"",""dir"",""disabled"",""disablepictureinpicture"",""disableremoteplayback"",""download"",""draggable"",""enctype"",""enterkeyhint"",""face"",""for"",""headers"",""height"",""hidden"",""high"",""href"",""hreflang"",""id"",""inputmode"",""integrity"",""ismap"",""kind"",""label"",""lang"",""list"",""loading"",""loop"",""low"",""max"",""maxlength"",""media"",""method"",""min"",""minlength"",""multiple"",""muted"",""name"",""nonce"",""noshade"",""novalidate"",""nowrap"",""open"",""optimum"",""pattern"",""placeholder"",""playsinline"",""poster"",""preload"",""pubdate"",""radiogroup"",""readonly"",""rel"",""required"",""rev"",""reversed"",""role"",""rows"",""rowspan"",""spellcheck"",""scope"",""selected"",""shape"",""size"",""sizes"",""span"",""srclang"",""start"",""src"",""srcset"",""step"",""style"",""summary"",""tabindex"",""title"",""translate"",""type"",""usemap"",""valign"",""value"",""width"",""wrap"",""xmlns"",""slot""]"
+"([""animate"",""color-profile"",""cursor"",""discard"",""font-face"",""font-face-format"",""font-face-name"",""font-face-src"",""font-face-uri"",""foreignobject"",""hatch"",""hatchpath"",""mesh"",""meshgradient"",""meshpatch"",""meshrow"",""missing-glyph"",""script"",""set"",""solidcolor"",""unknown"",""use""]"
+"([""feBlend"",""feColorMatrix"",""feComponentTransfer"",""feComposite"",""feConvolveMatrix"",""feDiffuseLighting"",""feDisplacementMap"",""feDistantLight"",""feDropShadow"",""feFlood"",""feFuncA"",""feFuncB"",""feFuncG"",""feFuncR"",""feGaussianBlur"",""feImage"",""feMerge"",""feMergeNode"",""feMorphology"",""feOffset"",""fePointLight"",""feSpecularLighting"",""feSpotLight"",""feTile"",""feTurbulence""]"
+"([""maction"",""maligngroup"",""malignmark"",""mlongdiv"",""mscarries"",""mscarry"",""msgroup"",""mstack"",""msline"",""msrow"",""semantics"",""annotation"",""annotation-xml"",""mprescripts"",""none""]"
+"([""math"",""menclose"",""merror"",""mfenced"",""mfrac"",""mglyph"",""mi"",""mlabeledtr"",""mmultiscripts"",""mn"",""mo"",""mover"",""mpadded"",""mphantom"",""mroot"",""mrow"",""ms"",""mspace"",""msqrt"",""mstyle"",""msub"",""msup"",""msubsup"",""mtable"",""mtd"",""mtext"",""mtr"",""munder"",""munderover"",""mprescripts""]"
+"([""svg"",""a"",""altglyph"",""altglyphdef"",""altglyphitem"",""animatecolor"",""animatemotion"",""animatetransform"",""circle"",""clippath"",""defs"",""desc"",""ellipse"",""filter"",""font"",""g"",""glyph"",""glyphref"",""hkern"",""image"",""line"",""lineargradient"",""marker"",""mask"",""metadata"",""mpath"",""path"",""pattern"",""polygon"",""polyline"",""radialgradient"",""rect"",""stop"",""style"",""switch"",""symbol"",""text"",""textpath"",""title"",""tref"",""tspan"",""view"",""vkern""]"
+"([""xlink:href"",""xml:id"",""xlink:title"",""xml:space"",""xmlns:xlink""]"
+"([200, 204].includes(response.response_status_code"
+"([], { dateStyle: 'short' }"
+"([], { hour: '2-digit', minute: '2-digit' }"
+"([ce,se,ue],(e=>{m=g(m,e,"" """
+"([ce,se,ue],(e=>{p=g(p,e,"" """
+"(`<div class=""border border-${fileColor}-subtle rounded p-2 bg-${fileColor}-subtle text-${fileColor}-emphasis""></div>`"
+"(`[${json.error.code}] ${json.error.message}`, ""danger"""
+"(`[data-bs-theme-value=""${theme}""]`"
+"(a,e"
+"(a,p"
+"(access_token, f""Created using device code auth ({user_code}"
+"(access_token, f""Created using refresh token {refresh_token_id}"""
+"(access_token, options={""verify_signature"": False}"
+"(access_token_id, 12"
+"(access_token_id, 12, None, json.dumps(verification_data, separators=(',',':'"
+"(access_token_id, 3"
+"(access_token_id, 3, data"
+"(access_token_id, 3, security_info_response[""VerificationContext""], otp_code"
+"(access_token_id, 8, email"
+"(access_token_id, challenge_id, captcha_solution, azure_region, challenge_type = ""Visual"""
+"(access_token_id, challenge_id, captcha_solution, azure_region, challenge_type"
+"(access_token_id, conversation_id"
+"(access_token_id, conversation_link"
+"(access_token_id, conversation_link, message_content"
+"(access_token_id, country_code, phone_number, phone_type = ""MobilePhone_sms"""
+"(access_token_id, country_code, phone_number, phone_type"
+"(access_token_id, description = """""
+"(access_token_id, description"
+"(access_token_id, description, client_type, device_pin"
+"(access_token_id, key_description = ""GraphSpy Key"", client_type = ""Windows"", device_pin = None"
+"(access_token_id, members, type = ""group_chat"", topic = null, message_content = null"
+"(access_token_id, phone_type_dict[phone_type], data"
+"(access_token_id, security_info_type"
+"(access_token_id, security_info_type, data = None"
+"(access_token_id, security_info_type, data"
+"(access_token_id, security_info_type, method_to_delete"
+"(access_token_id, security_info_type, secret_key"
+"(access_token_id, security_info_type, verification_context, verification_data"
+"(access_token_id, silent = false"
+"(access_token_id, true"
+"(access_token_id, user_id"
+"(access_token_id, user_id, external=false"
+"(accesstoken, description"
+"(accesstoken, options={""verify_signature"": False}"
+"(app.config['graph_spy_db_folder'],database_name"
+"(batch_response['response_status_code'] == 200 and batch_response['response_type'] == ""json"""
+"(batch_uri, access_token_id, ""POST"", ""json"", batch_body"
+"(button, loadingText = ""Loading..."""
+"(button, originalText = ""Submit"""
+"(c=function(e,t,n"
+"(captcha_uri, headers=headers"
+"(const header of $(""#header_fields"""
+"(const image_element of teamsMessageCardBody.find(""img[itemtype$='AMSImage']"""
+"(const noteDropdown of $("".note-toolbar button.dropdown-toggle.show"""
+"(const variable of $(""#variable_fields"""
+"(const[o,r]of e(t"
+"(conversation.properties.isemptyconversation == ""False"" || $(""#ms_teams_form #show_all"""
+"(conversation.threadProperties.threadType == ""streamofnotifications"""
+"(conversation_link, headers=headers, json=body"
+"(createDetailItem(""Business Phones"", entraUserDetails.businessPhones"
+"(createDetailItem(""City"", entraUserDetails.city"
+"(createDetailItem(""Company"", entraUserDetails.companyName"
+"(createDetailItem(""Country"", entraUserDetails.country"
+"(createDetailItem(""Created"", entraUserDetails.createdDateTime"
+"(createDetailItem(""Department"", entraUserDetails.department"
+"(createDetailItem(""Enabled"", entraUserDetails.accountEnabled"
+"(createDetailItem(""ID"", entraUserDetails.id"
+"(createDetailItem(""Job Title"", entraUserDetails.jobTitle"
+"(createDetailItem(""Mail"", entraUserDetails.mail"
+"(createDetailItem(""Mobile"", entraUserDetails.mobilePhone"
+"(createDetailItem(""Name"", entraUserDetails.displayName"
+"(createDetailItem(""On-Prem DN"", entraUserDetails.onPremisesDistinguishedName"
+"(createDetailItem(""On-Prem Immutable ID"", entraUserDetails.onPremisesImmutableId"
+"(createDetailItem(""On-Prem Last Sync"", entraUserDetails.onPremisesLastSyncDateTime"
+"(createDetailItem(""On-Prem SID"", entraUserDetails.onPremisesSecurityIdentifier"
+"(createDetailItem(""On-Prem SamAccountName"", entraUserDetails.onPremisesSamAccountName"
+"(createDetailItem(""On-Prem Synced"", entraUserDetails.onPremisesSyncEnabled"
+"(createDetailItem(""On-Prem UPN"", entraUserDetails.onPremisesUserPrincipalName"
+"(createDetailItem(""Password Changed"", entraUserDetails.lastPasswordChangeDateTime"
+"(createDetailItem(""Refresh Tokens Valid From"", entraUserDetails.refreshTokensValidFromDateTime"
+"(createDetailItem(""Security ID"", entraUserDetails.securityIdentifier"
+"(createDetailItem(""Street Address"", entraUserDetails.streetAddress"
+"(createDetailItem(""Synced"", ""false"""
+"(createDetailItem(""Type"", entraUserDetails.userType"
+"(createDetailItem(""User Principal Name"", entraUserDetails.userPrincipalName"
+"(cursor, row"
+"(custom_property_clean == """""
+"(d, t, r"
+"(d, undefined, 4"
+"(db_path, new_path"
+"(debug=args.debug, host=args.interface, port=args.port"
+"(decoded_accesstoken[""exp""]"
+"(decoded_accesstoken[""iat""]"
+"(dev, ""https://login.microsoft.com"", user_interaction=CliInteraction("
+"(directory, filename"
+"(document.getElementById(""access_token_form"""
+"(document.getElementById(""access_token_id"""
+"(document.getElementById(""custom_request_form"""
+"(document.getElementById(""entra_users_form"""
+"(document.getElementById(""mfa_form"""
+"(document.getElementById(""ms_teams_form"""
+"(document.getElementById(""onedrive_form"""
+"(document.getElementById(""recent_file_form"""
+"(document.getElementById(""refresh_to_access_token_form"""
+"(document.getElementById(""refresh_token_form"""
+"(document.getElementById(""refresh_token_id"""
+"(document.getElementById(""search_form"""
+"(document.getElementById(""shared_file_form"""
+"(document.getElementById(""sharepoint_form"""
+"(document.getElementById(""side_menu_access_token_form"""
+"(document.getElementById(""side_menu_refresh_token_form"""
+"(drive_id, item_id, access_token_id"
+"(drive_id, item_id, access_token_id, callback"
+"(drive_id, item_id, access_token_id, function ("
+"(drive_id, path, file, access_token_id, callback"
+"(drive_id, path, file, access_token_id, function ("
+"(e&&""object""==typeof e||(e={}"
+"(e,!0"
+"(e,"""""
+"(e,""ADD_DATA_URI_TAGS"""
+"(e,""ADD_URI_SAFE_ATTR"""
+"(e,""ALLOWED_ATTR"""
+"(e,""ALLOWED_NAMESPACES"""
+"(e,""ALLOWED_TAGS"""
+"(e,""FORBID_ATTR"""
+"(e,""FORBID_CONTENTS"""
+"(e,""FORBID_TAGS"""
+"(e,""USE_PROFILES"""
+"(e,/^[\r\n\t ]+/"
+"(e,he"
+"(e,null"
+"(e,o"
+"(e,t"
+"(e,t,n"
+"(e,t,o"
+"(e.namespaceURI===Ke?t.namespaceURI===Ve?""svg""===n:t.namespaceURI===$e?""svg""===n&&(""annotation-xml""===o||ut[o]"
+"(e.ownerDocument||e,e,H.SHOW_ELEMENT|H.SHOW_COMMENT|H.SHOW_TEXT|H.SHOW_PROCESSING_INSTRUCTION|H.SHOW_CDATA_SECTION,null"
+"(e.target.closest("".list-group-item"""
+"(e.target.closest(""div.card"""
+"(e.target.value == ""auto_other"""
+"(e.target.value == ""graphspy_otp"""
+"(e=""undefined""!=typeof globalThis?globalThis:e||self"
+"(e='<html xmlns=""http://www.w3.org/1999/xhtml""><head></head><body>'+e+""</body></html>"""
+"(ee=Z(G,c"
+"(expires_at=f""{datetime.fromtimestamp(row['expires_at']"
+"(external_user_details[0].userPrincipalName, external_user_details[0].mri"
+"(f""A captcha was requested. Aborting."""
+"(f""AddSecurityInfo Raw Response:\n{response.text}"""
+"(f""AddSecurityInfo request failed. Received response: \n{security_info_response}"""
+"(f""AddSecurityInfo request failed. Received status code {response.status_code}"""
+"(f""AddSecurityInfo request failed."""
+"(f""Adding MFA app failed. Received response: \n{security_info_response}"""
+"(f""Adding MFA app failed."""
+"(f""Adding email address failed. Received response: \n{security_info_response}"""
+"(f""Adding phone number failed. Received response: \n{security_info_response}"""
+"(f""Adding phone number failed."""
+"(f""All users retrieved."""
+"(f""An error occurred when trying to add GraphSpy OTP."""
+"(f""An error occurred when trying to validate the provided info. Received Error Code {response.ErrorCode}"""
+"(f""An error occurred: {e}"""
+"(f""AvailableAuthenticationInfo Raw Response:\n{response.text}"""
+"(f""Captcha Raw Response:\n{captcha_response.text}"""
+"(f""Created conversation with member {member}. Conversation ID: {conversation_id}"""
+"(f""Created conversation with {len(members"
+"(f""Created {len(created_conversations"
+"(f""DeleteSecurityInfo Raw Response:\n{response.text}"""
+"(f""DeleteSecurityInfo request failed. Received response: \n{security_info_response}"""
+"(f""DeleteSecurityInfo request failed. Received status code {response.status_code}"""
+"(f""DeleteSecurityInfo request failed."""
+"(f""Failed adding email address."""
+"(f""Failed creating database file at '{graph_spy_db_path}'. Unable to proceed."""
+"(f""Failed creating direct message conversation with user {member}. Received response status {response.status_code}.\n{response.content}"""
+"(f""Failed creating directory '{graph_spy_db_folder}'. Unable to proceed."""
+"(f""Failed creating directory '{graph_spy_folder}'. Unable to proceed."""
+"(f""Failed creating group chat conversation. Received response status {response.status_code}.\n{response.content}"""
+"(f""Failed creating group chat conversation. Received response status {response.status_code}\n{response.content}."""
+"(f""Failed extracting teams settings from response."""
+"(f""Failed listing members in conversation '{conversation_id}'. Received response status {response['response_status_code']}. Response body: \n{response['response_text']}"""
+"(f""Failed obtaining teams settings. Received status code {response.status_code}"""
+"(f""Failed sending message to {conversation_id}. Received response status {response.status_code}.\n{response.content}"""
+"(f""Failed sending teams message. Received response status {response.status_code}. Response body:\n {response.content}"""
+"(f""Failed to add the security key. Microsoft error message: {error_message}"""
+"(f""Failed to initialize mobile app registration."""
+"(f""Failed to obtain AvailableAuthenticationInfo. Received status code {response.status_code}"""
+"(f""Failed to obtain AvailableAuthenticationInfo."""
+"(f""Failed to obtain SessionCtx value. Received status code {response.status_code}"""
+"(f""Failed to obtain SessionCtx value."""
+"(f""Failed to validate captcha. Received status code {response.status_code}"""
+"(f""Found {len(conversation_members"
+"(f""InitializeMobileAppRegistration Raw Response:\n{response.text}"""
+"(f""InitializeMobileAppRegistration request failed. Received status code {response.status_code}"""
+"(f""InitializeMobileAppRegistration request failed."""
+"(f""Invalid database name '{database}'."""
+"(f""Invalid phone type provided: {phone_type}."""
+"(f""No VerificationContext in the security info response. Received response: \n{security_info_response}"""
+"(f""No access token with ID {access_token_id} and resource containing '0000000c-0000-0000-c000-000000000000'!"""
+"(f""No access token with ID {access_token_id} and resource containing 'api.spaces.skype.com'!"""
+"(f""No teams settings found in database for access token with ID {access_token_id}. Requesting new teams settings."""
+"(f""No valid security info response received."""
+"(f""Received sessionCtx: '{sessionCtx}'"""
+"(f""Request throttled. Received status code 429. Retrying after {retry_delay} seconds [{retry_count} attempts left]"""
+"(f""Retrieved {len(response_json['value']"
+"(f""Sent message to conversation {conversation_id}. Message ID: {message_id}"""
+"(f""Something went wrong trying to add the security key. Microsoft Error Message: {error_message}"""
+"(f""Something went wrong trying to obtain user details of '{user_id}'."""
+"(f""ValidateCaptcha Raw Response:\n{response.text}"""
+"(f""ValidateCaptcha request failed."""
+"(f""VerifySecurityInfo Raw Response:\n{response.text}"""
+"(f""VerifySecurityInfo request failed. Received status code {response.status_code}"""
+"(f""VerifySecurityInfo request failed."""
+"(f""We need to solve a captcha..."""
+"(f""Windows client requested, but WindowsClient is not available! Are you sure the GraphSpy server is running on a compatible Windows device?"""
+"(f""[*] Creating directory '{graph_spy_db_folder}'."""
+"(f""[*] Creating directory '{graph_spy_folder}'."""
+"(f""[*] Database file '{graph_spy_db_path}' not found. Initializing new database."""
+"(f""[*] Starting GraphSpy. Open in your browser by going to the url displayed below.\n"""
+"(f""[*] Utilizing database '{graph_spy_db_path}'."""
+"(f""[{current_time_seconds}] {row['user_code']} - {row['last_poll']} - {next_poll}"", flush=True"
+"(f""https://login.microsoftonline.com/{tenant_domain}/.well-known/openid-configuration"", headers=headers"
+"(function (a, b"
+"(function (index, className"
+"(g, '_database', None"
+"(generated_at=f""{datetime.fromtimestamp(row['generated_at']"
+"(getCookie(""access_token_id"""
+"(graph_spy_db_folder,database"
+"(graph_uri, access_token_id"
+"(graph_uri, access_token_id, body"
+"(graph_uri, headers=headers"
+"(graph_uri, headers=headers, json=body"
+"(header.getElementsByClassName(""header_name"""
+"(headerName = """", headerValue = """""
+"(header_name, request_template_info.headers[header_name]"
+"(i.content.__depth=i.__depth,Ct(i.content"
+"(id,"
+"(image_uri, cookies=cookies, headers=headers"
+"(j,""childNodes"""
+"(j,""cloneNode"""
+"(j,""nextSibling"""
+"(j,""parentNode"""
+"(jqXHR, textStatus, errorThrown"
+"(jqXHR.responseText, ""danger"""
+"(json.dumps(client_data_json, separators=(',',':'"
+"(json.hasOwnProperty(""error"""
+"(key, value"
+"(l(null,{tagNameCheck:{writable:!0,configurable:!1,enumerable:!0,value:null},attributeNameCheck:{writable:!0,configurable:!1,enumerable:!0,value:null},allowCustomizedBuiltInElements:{writable:!0,configurable:!1,enumerable:!0,value:!1}}"
+"(l,a,p"
+"(l=ae.call(a,l,!0"
+"(last_poll=f""{datetime.fromtimestamp(row['last_poll']"
+"(le[e],(e=>{e.call(o,t,n,it"
+"(le[e]=le[e]||[],p(le[e],t"
+"(m=""<!DOCTYPE ""+n.ownerDocument.doctype.name+"">\n""+m"
+"(member of $(""#new_conversation_modal #selected_users span:hidden"""
+"(message, type"
+"(messageJson.hasOwnProperty(""properties"""
+"(method == ""AuthenticatorApp"""
+"(method == ""Email"""
+"(method == ""Fido"""
+"(method == ""MobilePhone"""
+"(method, uri, headers=headers"
+"(method, uri, headers=headers, data=body"
+"(method, uri, headers=headers, json=body"
+"(modalID, modalTitle, modalBody, modalSize = ""modal-xl"""
+"(n.attrName=s,n.attrValue=p,n.keepAttr=!0,n.forceKeepAttr=void 0,Nt(""uponSanitizeAttribute"",e,n"
+"(n.content.__depth=n.__depth,e(n.content"
+"(n?""#""+n:"""""
+"(n[o],!0"
+"(name, value"
+"(not ""VerificationContext"" in security_info_response"
+"(not (""VerificationContext"" in security_info_response"
+"(not (security_info_response[""Deleted""]"
+"(not (security_info_response[""VerificationContext""]"
+"(not security_info_response[""VerificationContext""]"
+"(o,r,n"
+"(o,tt"
+"(o.removed,{attribute:null,from:t}"
+"(o.removed,{attribute:t.getAttributeNode(e"
+"(o.removed,{element:e}"
+"(o.version=""3.1.1"",o.removed=[],!n||!n.document||9!==n.document.nodeType"
+"(object => object[""@odata.type""] == ""#microsoft.graph.directoryRole"""
+"(object => object[""@odata.type""] == ""#microsoft.graph.group"""
+"(os.path.expanduser(""~/.gspy/"""
+"(os.path.join(directory,filename"
+"(os.path.join(graph_spy_folder,""databases/"""
+"(p(o.removed,{element:e.cloneNode("
+"(phone_type == ""AltMobilePhone"""
+"(phone_type == ""MobilePhone"""
+"(phone_type == ""OfficePhone"" || phone_type == ""AltMobilePhone"" || phone_type == ""MobilePhone_call"""
+"(phone_type == ""OfficePhone"""
+"(prettifyXml($(""#body"""
+"(prog=""GraphSpy"", description=""Launches the GraphSpy Flask application"", epilog=""For more information, see https://github.com/RedByte1337/GraphSpy"""
+"(q,n.ownerDocument.doctype.name"
+"(query, args"
+"(query, args=("
+"(r => setTimeout(r, 1000"
+"(r,$(e"
+"(r,{createHTML:e=>e,createScriptURL:e=>e}"
+"(r.onPremisesSyncEnabled ? ""true"" : ""false"""
+"(r.resource.hasOwnProperty(""parentReference"""
+"(r.resource[""@odata.type""] == ""#microsoft.graph.drive"""
+"(r.resource[""@odata.type""] == ""#microsoft.graph.site"""
+"(refresh_token_id, client_id = ""d3590ed6-52b3-4102-aeff-aad2292ab01c"", resource = ""defined_in_token"", scope = """", store_refresh_token = True, api_version = 1"
+"(refresh_token_id, client_id, resource = """", scope = """", store_refresh_token = false, activate = false, api_version = 1"
+"(refresh_token_id, client_id, resource, scope, store_refresh_token, api_version"
+"(refresh_token_id.value, client_id_input.value, resource_input.value, scope_input.value, store_refresh_token.checked, activate_access_token.checked, parseInt($('#api_version input:radio:checked'"
+"(refresh_token_id_side.value, client_id_input_side.value, resource_input_side.value, '', false, true"
+"(refreshtoken, description, user, tenant, resource, foci"
+"(resource = ""https://graph.microsoft.com"", client_id = ""d3590ed6-52b3-4102-aeff-aad2292ab01c"", ngcmfa = False"
+"(resource, client_id, ngcmfa"
+"(response.content, mimetype=response.headers['Content-Type']"
+"(response.hasOwnProperty(""ErrorCode"""
+"(response.headers[""Retry-After""]"
+"(response.responseText, ""danger"""
+"(responseJSON.response_type == ""json"""
+"(responseJSON.response_type == ""xml"""
+"(response[""ErrorCode""]"
+"(response['response_status_code'] == 200 and response['response_type'] == ""json"""
+"(response_a.responseText.startsWith(""[Error]"""
+"(response_json.hasOwnProperty(""captcha"""
+"(result ,int"
+"(resultXml.includes(""parsererror"""
+"(row, data, dataIndex"
+"(rows, key=lambda x: x[""last_poll""]"
+"(rows[0], options={""verify_signature"": False}"
+"(s=function(e,t"
+"(securityKeyStatus == ""SUCCESS"" || securityKeyStatus == ""FAILED"""
+"(security_info_data[""requestData""][""userId""] + ""=="""
+"(security_info_response[""Data""]"
+"(security_info_response[""ErrorCode""]"
+"(selectedMethod != ""Windows"""
+"(selectedMethod == ""auto_windows"" || selectedMethod == ""auto_other"""
+"(selectedMethod == ""custom_otp"" ? 3 : 2"
+"(selectedMethod == ""graphspy_otp"""
+"(self, permissions, rd_id"
+"(sep for sep in [os.path.sep, os.path.altsep] if sep != None"
+"(skype_token, options={""verify_signature"": False}"
+"(specifically regarding Device Code Phishing, which lead to the initial requirement for such a tool in the first place"
+"(statement, args"
+"(statement, args=("
+"(status_code, message, data = None"
+"(such as Outlook, Microsoft Teams, OneDrive, SharePoint, ..."
+"(t,De?""html"":""body"""
+"(t,n"
+"(t,o"
+"(t={namespaceURI:Ze,tagName:""template""}"
+"(table_error_messages == ""disabled"""
+"(table_error_messages == ""enabled"""
+"(te=ee.createHTML("""""
+"(teams_access_token_id, conversation.id"
+"(teams_access_token_id, conversation_info.id"
+"(teams_access_token_id, email, true"
+"(teams_access_token_id, member_ids, conversation_type, conversation_topic, message_content"
+"(teams_access_token_id, messageURL"
+"(teams_access_token_id, user_mri, false"
+"(teams_access_token_id, window.currentConversation.messages, message_content"
+"(teams_settings[""skype_id""]"
+"(tenant.strip('""{}-[]\\/\' '"
+"(theme, focus = false"
+"(theme, true"
+"(title, message, type = null, alternative = false"
+"(toastEl => new bootstrap.Toast(toastEl, ""show"""
+"(upload_uri, access_token_id, file"
+"(upload_uri, headers=headers, data=file.read("
+"(uri, access_token_id, ""GET"", ""text"", """""
+"(uri, access_token_id, ""GET"", ""text"", """", headers"
+"(uri, access_token_id, ""GET"", ""text"", """", {}"
+"(uri, access_token_id, method, request_type, body, headers"
+"(uri, access_token_id, method, request_type, body, headers={}, cookies={}"
+"(uri, headers=headers"
+"(uri, headers=headers, json=body"
+"(uri, headers=headers, json={}"
+"(url, '_blank'"
+"(url, data=body, headers=headers"
+"(url, data=body,headers=headers"
+"(userPrincipalName, mri"
+"(user_agent,"
+"(var e=arguments.length,t=new Array(e"
+"(var n=arguments.length,o=new Array(n>1?n-1:0"
+"(variable.getElementsByClassName(""variable_name"""
+"(variableName = """", variableValue = """""
+"(variable_name, request_template_info.variables[variable_name]"
+"(variable_name, variable_value"
+"(ve&&3===e.nodeType&&(t=e.textContent,u([ce,se,ue],(e=>{t=g(t,e,"" """
+"(void 0!==e.__depth&&""number""!=typeof e.__depth||void 0!==e.__removalCount&&""number""!=typeof e.__removalCount||""string""!=typeof e.nodeName||""string""!=typeof e.textContent||""function""!=typeof e.removeChild||!(e.attributes instanceof z"
+"(we&&!E(fe,g(n,de,"""""
+"(xhr, status, error"
+"(xhr, textStatus, errorThrown"
+"(ye,F"
+"(ye,I"
+"(ye,P"
+"(ye,U"
+"(ye,e.ADD_ATTR,rt"
+"({ ""header"": header, ""value"": respHeaders[header] }"
+"({""error"": ""An internal server error occurred."", ""details"": str(e"
+"({""error"": ""Failed to upload file."", ""details"": response.text}"
+"({""error"": ""Invalid access token ID""}"
+"({""error"": ""Missing required parameters""}"
+"({""message"": ""File uploaded successfully.""}"
+"({__proto__:null,MUSTACHE_EXPR:H,ERB_EXPR:z,TMPLIT_EXPR:B,DATA_ATTR:W,ARIA_ATTR:G,IS_ALLOWED_URI:Y,IS_SCRIPT_OR_DATA:j,ATTR_WHITESPACE:X,DOCTYPE_NAME:q,CUSTOM_ELEMENT:$}"
+"({},[""alt"",""class"",""for"",""id"",""label"",""name"",""pattern"",""placeholder"",""role"",""summary"",""title"",""value"",""style"",""xmlns""]"
+"({},[""annotation-xml"",""audio"",""colgroup"",""desc"",""foreignobject"",""head"",""iframe"",""math"",""mi"",""mn"",""mo"",""ms"",""mtext"",""noembed"",""noframes"",""noscript"",""plaintext"",""script"",""style"",""svg"",""template"",""thead"",""title"",""video"",""xmp""]"
+"({},[""audio"",""video"",""img"",""source"",""image"",""track""]"
+"({},[""foreignobject"",""desc"",""title"",""annotation-xml""]"
+"({},[""mi"",""mo"",""mn"",""ms"",""mtext""]"
+"({},[""title"",""style"",""font"",""a"",""script""]"
+"({},[$e,Ke,Ve],d"
+"({},[...I,...U,...P,...F]"
+"({},[...L,...D,...O]"
+"({},[...v,...L,...D,...x,...M]"
+"({},[...x,...k]"
+"({},e.ALLOWED_ATTR,rt"
+"({},e.ALLOWED_NAMESPACES,d"
+"({},e.ALLOWED_TAGS,rt"
+"({},e.FORBID_ATTR,rt"
+"({},e.FORBID_CONTENTS,rt"
+"({},e.FORBID_TAGS,rt"
+( request_templates[i]['headers']
+(!$('#membership_count'
+(!(Rt(e
+(!(t.namespaceURI===$e&&!ut[o]
+(!Ne[n]&&Rt(n
+(!Te[n]||Ne[n]
+(!Te[t]||Ne[t]
+(!confirm(`Are you sure you want to delete the ${item_type} '${row.data(
+(!confirm(`Are you sure you want to delete the OTP method with ID ${otpId} from the GraphSpy database? \r\nNote: This will not remove the MFA method from the account it is linked to.`
+(!conversationName
+(!dt[n]&&(pt[n]||!ft[n]
+(!email
+(!external_user_details
+(!external_user_details || !external_user_details.length
+(!file
+(!messagesJson
+(!o.isSupported
+(!otp_code
+(!r.CanAdd
+(!responseReady
+(!row.data(
+(!selectedMethod
+(!silent
+(!t
+(!themeSwitcher
+(!t||!t.documentElement
+(!window.currentConversation
+(!ye[t]||be[t]
+(#credits
+(#execution
+(#features
+(#graphspy
+(#installation
+(#quick-start
+(#release-notes
+(#table-of-contents
+(#upcoming-features
+(#usage
+($('#customize_properties'
+($('#device_code_form #resource'
+($('#membership_count'
+($('<dd></dd>'
+($('<div></div>'
+($('<dt>Decoded Token:</dt>'
+($('<pre></pre>'
+($('<span hidden></span>'
+($('<span></span>'
+($(e.target
+($.fn.dataTable.isDataTable('#response_header_table'
+($.fn.dataTable.isDataTable('#teams_users_table'
+($.fn.dataTable.isDataTable('#user_details_api_permissions_table'
+($.fn.dataTable.isDataTable('#user_details_app_role_assignment_table'
+($.fn.dataTable.isDataTable('#user_details_group_membership_table'
+($.fn.dataTable.isDataTable('#user_details_owned_devices_table'
+($.fn.dataTable.isDataTable('#user_details_role_membership_table'
+(' '
+('#access_token_info_clientid'
+('#access_token_info_expires'
+('#access_token_info_resource'
+('#access_token_info_scope'
+('#access_token_info_user'
+('#access_token_modal'
+('#access_token_modal_table'
+('#access_tokens'
+('#add_mfa_method_modal'
+('#alert_placeholder'
+('#available_auth_methods_table'
+('#bd-theme'
+('#client_id_input_side'
+('#conversation_info_modal'
+('#conversation_members_modal'
+('#customize_properties'
+('#databases'
+('#delete_mfa_method_modal'
+('#device_codes'
+('#dt-error-message-button-disabled'
+('#dt-error-message-button-enabled'
+('#entra_id_users_table'
+('#entra_user_properties'
+('#graphspy_otp_table'
+('#header_fields'
+('#message_form #message_text'
+('#new_conversation_form #new_conversation_message_text'
+('#new_conversation_modal #selected_users'
+('#new_conversation_modal'
+('#refresh_token_info_description'
+('#refresh_token_info_foci'
+('#refresh_token_info_resource'
+('#refresh_token_info_tenant_id'
+('#refresh_token_info_user'
+('#refresh_token_modal'
+('#refresh_token_modal_table'
+('#refresh_tokens'
+('#request_template_modal'
+('#request_templates'
+('#resource_input_side'
+('#response_header_table'
+('#response_table'
+('#send_message_switch'
+('#teams_message_info_modal'
+('#teams_users_table'
+('#toast_placeholder'
+('#user_details_api_permissions_table'
+('#user_details_app_role_assignment_table'
+('#user_details_full'
+('#user_details_group_membership_table'
+('#user_details_overview'
+('#user_details_owned_devices_table'
+('#user_details_role_membership_table'
+('#variable_fields'
+('(prefers-color-scheme: dark
+('../'
+('.db'
+('.dropdown-menu'
+('/'
+('/access_tokens'
+('/api/add_access_token'
+('/api/add_refresh_token'
+('/api/generate_device_code'
+('/api/refresh_to_access_token'
+('/refresh_tokens'
+(':checked'
+('<code></code>'
+('<dd></dd>'
+('<div>'
+('<pre></pre>'
+('TEXTAREA'
+('[data-bs-theme-value]'
+('\n'
+('access_tokens'
+('active'
+('checked'
+('code'
+('copy'
+('custom_requests'
+('data-bs-theme-value'
+('device_codes'
+('disabled'
+('div#modal_container'
+('div.modal-body'
+('div.modal-dialog'
+('div.note-editable'
+('enabled'
+('entra_users'
+('fi-br-compress'
+('fi-br-expand'
+('generic_search'
+('h1.modal-title'
+('hide'
+('https:\/\/emea\.ng\.msg\.teams\.microsoft\.com\/v1\/threads\/(.*
+('mfa'
+('modal-fullscreen'
+('modal-xl'
+('onedrive'
+('outlook'
+('recent_files'
+('refresh_tokens'
+('shared_with_me'
+('sharepoint'
+('sharepoint_drives'
+('sharepoint_sites'
+('show'
+('span#button_text'
+('span.spinner-border'
+('table'
+('table.dataTable'
+('teams'
+('text-danger-emphasis'
+('text-primary-emphasis'
+('text-success-emphasis'
+('tr'
+((
+((conversation.lastMessage.originalarrivaltime || conversation.threadProperties.createdat
+((text.length > 100
+()
+() : lastMessageDate.toLocaleDateString(
+() == db_path.lower(
+() == lastMessageDate.toLocaleDateString(
+() == os.path.basename(app.config['graph_spy_db_path']
+() => localStorage.getItem('theme'
+() for x in f.readlines(
+() }
+()&&!At(e.firstElementChild
+().Data
+().addClass('bg-danger-subtle'
+().addClass('bg-primary-subtle'
+().addClass('bg-success-subtle'
+().clear(
+().columns.adjust(
+().deselect(
+().destroy(
+().draw(
+().height}px - 25px
+().hide(
+().length
+().parseFromString(DOMPurify.sanitize(conversation.lastMessage.content
+().row(tr
+().rows({ selected: true }
+().serializeToString(resultDoc
+().show(
+().split(';'
+().top}px - 10px
+():%(lineno
+();
+()['error']}] {response.json(
+(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(!it||it!==e
+(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};st(e
+(){let n=arguments.length>0&&void 0!==arguments[0]?arguments[0]:V(
+(--bs-body-color
+(--bs-border-color
+(--bs-border-radius-lg
+(--bs-border-radius-sm
+(--bs-border-style
+(--bs-border-width
+(--bs-primary-border-subtle
+(--bs-secondary-bg
+(--bs-secondary-border-subtle
+(-1
+(.
+(...t
+(/<%[\w\W]*|[\w\W]*%>/gm
+(/<\/no(script|embed|frames
+(/[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000]/g
+(/\${[\w\W]*}/gm
+(/\{\{[\w\W]*|[\w\W]*\}\}/gm
+(/^(?:(?:(?:f|ht
+(/^(?:\w+script|data
+(/^[a-z][.\w]*(-[.\w]+
+(/^aria-[\-\w]+$/
+(/^data-[\-\w.\u00B7-\uFFFF]/
+(/^html$/i
+(1
+(11
+(2
+(5
+(5000
+(6
+(7
+(7===e.nodeType
+(8
+(;i--;
+(;i=c.nextNode(
+(;null!==e;
+(;r--;
+(> i.fi
+(?:[^a-z+.\-:]|$
+(Ae.allowCustomizedBuiltInElements=e.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements
+(Ae.attributeNameCheck=e.CUSTOM_ELEMENT_HANDLING.attributeNameCheck
+(Ae.tagNameCheck instanceof Function&&Ae.tagNameCheck(n
+(Ae.tagNameCheck=e.CUSTOM_ELEMENT_HANDLING.tagNameCheck
+(Array.isArray(r
+(Array.prototype.forEach
+(Array.prototype.pop
+(Array.prototype.push
+(CtapHidDevice.list_devices(
+(CtapPcscDevice.list_devices(
+(FOCI
+(He&&!We[n]
+(INCLUDING NEGLIGENCE OR OTHERWISE
+(JSON.parse(response.responseText
+(JSON.stringify(conversation
+(JSON.stringify(messageJson
+(Me
+(Object.prototype.hasOwnProperty
+(Oe||st(t
+(Re=!1
+(RegExp.prototype.test
+(SMS or call
+(String.prototype.indexOf
+(String.prototype.match
+(String.prototype.replace
+(String.prototype.toLowerCase
+(String.prototype.toString
+(String.prototype.trim
+(Te===_e&&(Te=w(Te
+(UserInteraction
+(We===Ge&&(We=w(We
+(Windows NT 10.0; Win64; x64
+(Xe[t]
+(Ze===Ve
+(__name__
+(`#conversation_list_group a.list-group-item:has(div.raw-conversation:contains('${lastConversationId}'
+(`${expiry_date.toLocaleDateString(
+(`${key}: `
+(`${messageJson.imdisplayname} - ${new Date(messageJson.composetime
+(`; ${name}=`
+(`Submit the code '${verificationCode}' in the notification on your Microsoft Authenticator App and click on Validate.`
+(`[${conversation.threadProperties.threadType}] ${conversationName}`
+(`alert-${type.toLowerCase(
+(`bg-${type.toLowerCase(
+(`div.modal#${modalID}`
+(`text-${type.toLowerCase(
+(`text-bg-${type.toLowerCase(
+(a
+(a=function(e
+(access_token_field
+(access_token_field = null
+(access_token_id
+(access_token_id.value
+(access_token_info.appid
+(access_token_info.aud
+(access_token_info.exp * 1000
+(access_token_info.scp
+(access_token_info.unique_name
+(activate
+(alternative
+(app.config['graph_spy_db_folder']
+(app.config['graph_spy_db_path']
+(await getTeamsConversations(teams_access_token_id
+(batch_response
+(batch_response['response_text']
+(body
+(bt(i
+(c
+(callback
+(captcha_response.text[6:]
+(className.match(/(^|\s
+(const conversation of conversations_sorted
+(const custom_property of custom_properties
+(const file of JSON.parse(messageJson.properties.files
+(const header in respHeaders
+(const message of messagesArray
+(const otherMember of otherMembers
+(context
+(conversation
+(conversationItemDate
+(conversationItemHeader
+(conversationItemName
+(conversationItemPreview
+(conversationItemWrapper
+(conversationMembers
+(conversationName
+(conversationRawHidden
+(conversation_id
+(conversation_info.messages
+(conversations_sorted.length == 0
+(copyIcon
+(createTeamsMessageHtml(message
+(created_conversations
+(credential.attestation_object
+(credential.attestation_object.auth_data.credential_data.credential_id
+(credential.client_data
+(d
+(d.accesstoken
+(d.refreshtoken
+(dark
+(data
+(data.status
+(database_name
+(datetime.now(
+(db_file.stat(
+(db_path
+(descDetails
+(directory
+(document
+(document.getElementById('auto_reload_messages_tooltip'
+(document.getElementById('customize_properties_tooltip'
+(document.getElementById('membership_count_tooltip'
+(document.getElementById('nav-azure-disabled'
+(document.getElementById('ngcmfa_tooltip'
+(document.getElementById('resolve_conversation_names_tooltip'
+(document.getElementById('show_all_tooltip'
+(dom
+(dt[n]
+(e
+(e instanceof b
+(e&&e.__depth?i.__depth=(i.__removalCount||0
+(e.CUSTOM_ELEMENT_HANDLING.attributeNameCheck
+(e.CUSTOM_ELEMENT_HANDLING.tagNameCheck
+(e.PARSER_MEDIA_TYPE
+(e.__removalCount||0
+(e.nodeName
+(e.tagName
+(e.target
+(e[t]=null
+(entraUserDetails.businessPhones.length
+(entraUserDetails.city
+(entraUserDetails.companyName
+(entraUserDetails.country
+(entraUserDetails.department
+(entraUserDetails.jobTitle
+(entraUserDetails.mail
+(entraUserDetails.mobilePhone
+(entraUserDetails.onPremisesSyncEnabled
+(entraUserDetails.streetAddress
+(entraUsersColumns.every(column => column.data != custom_property_clean
+(error
+(error_id
+(exception
+(expiry_date > new Date(
+(false
+(file.permissionScope
+(fileBody
+(fileContainer
+(filename
+(focus
+(folder_name
+(form
+(format(row.data(
+(formatAccessToken(row.data(
+(formatCode
+(formatJsonCode(JSON.parse(DOMPurify.sanitize(JSON.stringify(row.data(
+(formatJsonCode(JSON.parse(conversation_info
+(formatJsonCode(JSON.parse(responseJSON.response_text
+(formatJsonCode(conversation_members
+(formatJsonCode(entraUserDetails
+(formatJsonCode(external_user_details
+(formatJsonCode(message_info
+(formatJsonCode(method
+(formatJsonCode(responseJSON
+(formatJsonCode(row.data(
+(formatJsonCode(userDetails
+(formatPre
+(formatRefreshToken(row.data(
+(formatRequestTemplate(row.data(
+(formatTeamsUserDetails(row.data(
+(ft[n]
+(funcName
+(function (
+(function (conversation
+(function (e
+(function (index
+(getPreferredTheme(
+(getUserAgent(
+(graph_spy_db_folder
+(graph_spy_folder
+(gt(e
+(happens after a couple of failed attempts in a short timeframe
+(headerButton
+(headerName
+(headerNameInput
+(headerValue
+(headerValueInput
+(headerWrapper
+(header_name
+(header_value
+(headers
+(https://0xboku.com/2021/07/12/ArtOfDeviceCodePhish.html
+(https://aadinternals.com/post/phishing/
+(https://api.spaces.skype.com/
+(https://getbootstrap.com/
+(https://github.com/Gerenios/AADInternals
+(https://github.com/RedByte1337/GraphSpy/wiki
+(https://github.com/RedByte1337/GraphSpy/wiki/Execution
+(https://github.com/RedByte1337/GraphSpy/wiki/Installation
+(https://github.com/RedByte1337/GraphSpy/wiki/Release-Notes
+(https://github.com/dafthack/GraphRunner
+(https://github.com/f-bader/TokenTacticsV2
+(https://github.com/rvrsh3ll/TokenTactics
+(https://img.shields.io/badge/python-3.8+-blue.svg
+(https://img.shields.io/pypi/v/GraphSpy.svg
+(https://img.shields.io/twitter/follow/RedByte1337?label=RedByte1337&style=social
+(https://insights.spotit.be/2024/04/05/graphspy-the-swiss-army-knife-for-attacking-m365-entra/
+(https://pypi.org/project/GraphSpy/
+(https://twitter.com/intent/follow?screen_name=RedByte1337
+(https://www.flaticon.com/uicons
+(i
+(i=function(e
+(id
+(image_element
+(images/access_tokens_1.png
+(images/custom_request_templates.png
+(images/custom_requests.png
+(images/device_codes.png
+(images/entra_users_details_1.png
+(images/entra_users_overview.png
+(images/graph_search_2.png
+(images/mfa_methods_fido.png
+(images/mfa_methods_overview.png
+(images/ms_teams.png
+(images/onedrive_2.png
+(images/outlook_1.png
+(images/outlook_2.png
+(images/recent_files.png
+(images/refresh_tokens.png
+(images/settings.png
+(images/token_side_bar_1.png
+(initialize_mobile_app_registration_json.RegistrationType
+(initialize_mobile_app_registration_json.RegistrationType == 2 ? initialize_mobile_app_registration_json.ActivationCode : initialize_mobile_app_registration_json.SecretKey
+(jqXHR.status >= 400
+(json
+(json.dumps(credential.extension_results
+(jsonInput
+(ke
+(ke=!0
+(ke||Me
+(l
+(l=re.call(n.ownerDocument
+(lastConversation.length
+(lastMessageDate
+(le[e]
+(le[e]=[]
+(len(request_templates
+(let i = 0; i < selected_rows.count(
+(let o=n.length-1;o>=0;--o
+(let t=0;t<e.length;t++
+(levelname
+(loadingText
+(log_handler
+(logging.DEBUG if args.debug else logging.ERROR
+(logging.Formatter(log_format
+(m
+(member => !member.isCurrentUser
+(member => message.from.endsWith(member.mri
+(member.textContent
+(message
+(messageJson
+(messageJson.composetime
+(messageJson.isFromMe
+(messageURL
+(message_content
+(method
+(methodRadio
+(modalBody
+(modalNav
+(modalSize
+(modalTitle
+(modalWrapper
+(mri
+(n
+(n in r||n in lt
+(n&&t
+(n(o
+(n+3
+(n.firstChild
+(n.get
+(n.value
+(n=_t(e
+(n=t.getAttribute(o
+(name
+(navigator.clipboard
+(new Date(
+(new Date(data.expires_at
+(new URL(document.location
+(new W
+(next_poll - current_time_seconds
+(ngcmfa
+(not os.path.exists(db_path
+(not os.path.exists(graph_spy_db_folder
+(not os.path.exists(graph_spy_db_path
+(not os.path.exists(graph_spy_folder
+(not os.path.exists(new_path
+(not security_info_response
+(noteDropdown
+(null
+(o
+(o.removed
+(o[i]=e
+(optional
+(originalText
+(os.path.exists(db_path
+(os.path.join(os.path.dirname(os.path.abspath(__file__
+(otpId
+(otp_code
+(otp_code_id
+(p
+(parts.length === 2
+(pre
+(preText
+(prettifyXml(responseJSON.response_text
+(previewContent
+(public_key_options
+(r
+(r.CanDelete && r.Data
+(r.createTextNode(n
+(r.file
+(r.folder
+(r.transitiveMemberOf && r.transitiveMemberOf instanceof Array
+(r=e.content.ownerDocument
+(refresh_token_field
+(refresh_token_id
+(refresh_token_id.value
+(refresh_token_info.description
+(refresh_token_info.foci
+(refresh_token_info.resource
+(refresh_token_info.tenant_id
+(refresh_token_info.user
+(registeredMethod
+(registeredMethod of registeredMethods
+(registeredMethods
+(registeredMethods instanceof Array
+(registeredMethods instanceof Array ? registeredMethods.length : 1
+(registeredMethodsCount >= 5
+(request.args['customize_properties']
+(request.form['api_version']
+(request.form['body']
+(request_template['headers']
+(request_template['variables']
+(request_template_info.body
+(request_template_info.headers.hasOwnProperty(header_name
+(request_template_info.method
+(request_template_info.request_type
+(request_template_info.template_name
+(request_template_info.uri
+(request_template_info.variables.hasOwnProperty(variable_name
+(request_templates[i]['variables']
+(respHeaders
+(resp_json
+(response
+(response.headers
+(response.json(
+(response.responseText
+(response.status != 200
+(response.status == 200
+(response.status >= 400
+(response.text[6:]
+(responseJSON.response_headers
+(responseJSON.response_status_code
+(responseJSON.response_text
+(response['response_text']
+(response_a.responseText
+(response_json.Type
+(response_json.Type == 1
+(response_json.Type == 2
+(response_json.Type == 3
+(response_json.VerificationContext
+(response_json.captcha.AzureRegion
+(response_json.captcha.ChallengeId
+(response_json.captcha.ChallengeType
+(response_r.responseText
+(retry_delay
+(row
+(row.child.isShown(
+(row.data(
+(rows
+(rowsSelectedCount
+(rv[0] if rv else None
+(s
+(secretKey
+(secret_key
+(securityKeyStatus
+(selectedUserInputGroup
+(selectedUserWrapper
+(self
+(skip this if you already have it
+(sourceXml
+(state
+(statusMessage
+(store_refresh_token
+(storedTheme
+(storedTheme !== 'light' && storedTheme !== 'dark'
+(str(val
+(such as the file explorer-like interface of OneDrive and SharePoint
+(t
+(t&&t.__depth?n.__depth=(n.__removalCount||0
+(t.namespaceURI===Ke&&!mt[o]
+(t.removeAttribute(e
+(t.tagName
+(target=poll_device_codes
+(teamsMessageCard
+(teamsMessageCardBody
+(teamsMessageCardHeader
+(teamsMessageRawHidden
+(teams_settings['teams_settings_raw']
+(teams_settings_json
+(temp_path == ''
+(temp_path.slice(-1
+(template_id
+(template_name and uri and method
+(tenant
+(tenant_domain
+(text
+(text(
+(theme
+(theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark
+(this
+(this.checked
+(this.closest('form'
+(this.querySelector('.modal-body'
+(timeToCheckB > timeToCheckA ? 1 : -1
+(title
+(tmp
+(toast_body
+(toast_header
+(toast_title
+(toast_wrapper
+(today.getTime(
+(token_id
+(topic
+(tr
+(type && validTypes.includes(type.toLowerCase(
+(type_id
+(uri and access_token_id and method
+(userAgent
+(userDetailsPre
+(userPrincipalName
+(user_agent
+(user_details
+(user_id
+(user_mri
+(users_list
+(val
+(value
+(var header_name in request_template_info.headers
+(var variable_name in request_template_info.variables
+(variableButton
+(variableName
+(variableNameInput
+(variableNameValue
+(variableValue
+(variableWrapper
+(variables
+(verification_state_id
+(w(je
+(w(qe
+(window.clickedOpen
+(window.currentConversation.messages
+(window.noteDropdownIsOpen
+(xe
+(xhr.responseText
+(xmlDoc
+(xsltDoc
+(ye.shadowroot||ye.shadowrootmode
+(ye===Ee&&(ye=w(ye
+(ze
+(ze=!1
+(ze?e:n
+({ 'max-height': 150 + 'px' }
+({ selected: true }
+({user_code}
+({}

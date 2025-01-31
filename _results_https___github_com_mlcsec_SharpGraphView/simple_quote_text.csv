@@ -1,0 +1,488 @@
+"' != null, return "
+"' a { iat, "
+"' claim if it exists in the <see cref=""T:System.IdentityModel.Tokens.Jwt.JwtSecurityToken""/>"
+"' claim { acr, "
+"' claim { actort, "
+"' claim { amr, "
+"' claim { aud, "
+"' claim { auth_time, "
+"' claim { azp, "
+"' claim { c_hash, "
+"' claim { exp, "
+"' claim { iat, "
+"' claim { iss, "
+"' claim { jti, "
+"' claim { nbf, "
+"' claim { nonce, "
+"' claim { sub, "
+"' claim { zip, "
+"' for the actor claim: { actort, "
+"' header parameter. In the case of a JWE, this will be added to both the inner (JWS) and the outer token (JWE) header. By default, the value used is "
+"' matches the signature. Using <see cref=""T:Microsoft.IdentityModel.Tokens.SecurityKey""/> and "
+"' matches the signature. Using <see cref=""T:Microsoft.IdentityModel.Tokens.SymmetricSecurityKey""/> and "
+"' take precedence over <see cref=""T:System.Security.Claims.Claim""/>(s) in "
+"' using the <see cref=""T:Microsoft.IdentityModel.Tokens.SymmetricSecurityKey""/> and "
+"' } claim is added, overwriting any "
+"' } claim will be added, appending to any "
+"' } claim will be added, overwriting any "
+"' } converted to a <see cref=""T:System.DateTime""/> assuming "
+"' } is added. If a JSON object is found with the name == <see cref=""P:System.Security.Claims.Claim.Type""/> then a { "
+"'""|0Nb7 "
+"')"" Text=""$([System.String]::Format("
+"', "
+"', InternalId: "
+"', Kid: "
+"', Kty: "
+"', and "
+"',"
+"',YF1"
+"',x"
+"'. Signature is optional, but "
+"'<paramref name=""jwtToken""/> .Enc"
+"'<paramref name=""jwtToken""/> .Kid"
+"'<see cref=""T:Microsoft.IdentityModel.Tokens.SecurityKey""/>.KeySize"
+"'BA"""
+"'E;""T"
+"'SXDI"""
+"'V""P|\	"
+"'X""N@{06"
+"'ZE,H6sa:X"""
+"'algorithm, key"
+"'i|_g<m,b"
+"'key, algorithm"
+"'s no need for a public API to remove app metadata, and it shouldn"
+"'s not provided by the web API, it"
+"'sW,c<~#"
+"'t formatted correctly, or hasn"
+"'y1\GtS[@"""
+"'|,"
+'	J8@
+' 
+'                 = 
+'            = 
+'   = 
+' &lt;= 
+' -AppKeyVaultToken {Config.accessToken} -keyName 
+' -replace 
+' = 
+' == 
+' and 
+' and assigned to 
+' as this requires a tenanted authority or 
+' claim if it exists in the 
+' claim in 
+' claim is &gt; 
+' claims in 
+' configuration
+' corresponding to key from the JWT header transformed as type 
+' corresponding to key from the JWT payload transformed as type 
+' doesn
+' if private key doesn
+' if private key exists for sure; 
+' in JSON property names aren
+' is 
+' is &gt; 
+' of the 
+' or 
+' parameter may be null if it couldn
+' } is added. If duplicate claims are found then a { 
+'!
+'!aFy.
+'#	
+'#
+'#%
+'#dzI
+'$
+'$(Configuration)
+'$(Configuration)|$(Platform)
+'$(ErrorText)
+'$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props
+'$(Platform)
+'$-D
+'%
+'%OV1V1
+'&	
+'&RO[\
+''
+''-
+''U}-
+'(#/
+'(G
+')	wh
+')
+') are replace with (
+')Ku$$
+'*
+'*D3*^Tm
+'*SYS]5c{_X7
+'+
+'+V6
+'-
+'.
+'..\packages\Costura.Fody.5.7.0\build\Costura.Fody.props
+'..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets
+'..\packages\Fody.6.5.5\build\Fody.targets
+'.TE~S-c
+'.k0c@4%Ui3
+'.w
+'/
+'/common
+'/consumers
+'/organizations
+'/trG
+'1
+'1970-01-01T00:00:00Z
+'1O
+'2:
+'3
+'3W:L_{)Nt
+'3c
+'3kKs$)}
+'4;/1%p
+'4@
+'4c
+'4x
+'5
+'5(pZ
+'554g4
+'6
+'6CN6:x
+'6d%zd
+'6x$
+'7O47m
+'7U
+'7\
+'8
+'9
+'9AY
+'9nY=qW#
+':
+':egV
+':ve9s
+';
+';r_!s
+';x
+'<Qy:/
+'=
+'=n!N;
+'>CR
+'>VoWs|g5
+'?
+'?/
+'?0K
+'@
+'@0rQ
+'@d
+'@t9>
+'Authorization
+'Ax
+'BQ
+'BU:a
+'Bearer
+'BootstrapContext
+'BootstrapContext.SecurityToken
+'BootstrapContext.Token
+'Claim.Type
+'Claim.Value
+'Compact Serialization Format
+'Content-Type
+'Cyrillic Extended-C
+'DR
+'Debug|AnyCPU
+'DoesNotExist
+'E
+'ECParameters
+'ET
+'Exists
+'F
+'Fa`QNDDNg(Xb
+'G	_
+'G
+'GJ
+'Georgian Extended
+'H#l>YC
+'HH
+'HI$Ji;
+'HP!)q
+'HV }
+'Hzd?Io%y
+'I3$d
+'I5fa3
+'I>dB
+'IF>9N
+'I`5|
+'Ib|$Oo$}Q
+'In
+'Issued At
+'ItuR:)]NJW
+'Iuo[
+'J
+'JSON Web Token
+'JWT
+'JWT ID
+'J\
+'JaHJ
+'JkOJ
+'JsonClaimValueType
+'JwtSecurityToken
+'JwtSecurityToken.RawData
+'K
+'K!a8Fse[0]C
+'K/N;x/
+'KH_
+'Kf
+'L
+'Lmfg&5fldz\LhEoh
+'LogCompleteSecurityArtifact
+'MM
+'N[
+'NameClaimType
+'Ns(c 
+'NurBT
+'O6@2
+'P
+'Q
+'R
+'RS256
+'RSA
+'RUb7q}T}7N%P
+'Release|AnyCPU
+'Restore
+'RoleClaimType
+'R|
+'S
+'ShowPII
+'Syriac Supplement
+'T
+'TD
+'Token
+'Tqi
+'True
+'UD
+'Unknown
+'V
+'WI
+'W^
+'Wle
+'X
+'X%!g0
+'X.EY
+'X1
+'X7F
+'Y\I
+'Z	<c!y
+'Z_CCZ dKJ
+'Zs%>q
+'[
+'[I
+'\5k
+'\WV:S7
+'\\+
+'\wl
+']\
+']\IT`i
+']l
+']sy
+'^
+'^(5
+'^e
+'^o
+'_
+'_GK%_
+'_IF|
+'`
+'`*POfd3e_
+'`.&5Xlbc=*9;
+'a
+'a$As{c~Y[O>	{d8
+'acr
+'actor
+'actort
+'alg
+'algorithm
+'amr
+'app id
+'app secret...
+'application/json
+'application/x-www-form-urlencoded
+'asuj
+'aud
+'audience
+'audiences
+'auth_time
+'azp
+'before
+'bmRT>k
+'bsOU
+'c
+'cM2_k<ZZfps
+'c_hash
+'cert_tokens.txt
+'certificate
+'claim
+'claimCollection
+'claimcollection
+'claims
+'client_assertion
+'client_assertion_type
+'client_credentials
+'client_id
+'common
+'consumers
+'crv
+'cty
+'d
+'d_
+'dataEncryptionAlgorithm
+'dd
+'digest
+'digest method
+'dp
+'dpbi
+'dq
+'e
+'e2EyY
+'eKISdMq
+'e\Izl	<I_.r
+'enc
+'encryptingCredentials
+'epoch time
+'eq true
+'eventual consistency
+'exp
+'expiration
+'expires
+'expires.HasValue
+'false
+'gk
+'grant_type
+'g{#NJ
+'h
+'header
+'header.payload.signature
+'hp
+'https://management.azure.com/.default
+'iE$}5\&%y
+'iZ
+'iat
+'inArray
+'innerJwt
+'innerToken
+'input
+'input.Length
+'iss
+'issued at
+'issuedat
+'issuer
+'j
+'json
+'jti
+'jwtEncodedString
+'jwtToken
+'jwtToken.Header.enc
+'jwtToken.Header.kid
+'k
+'k(f:
+'key
+'keyBytes
+'keyWrapAlgorithm
+'key_ops
+'kid
+'kty
+'length &lt; 1
+'lg
+'lifetime
+'lky`*
+'mm
+'mw0
+'n
+'nL##
+'name
+'nbf
+'nonce
+'notBefore
+'notbefore
+'notebefore
+'npXaqJ
+'nrk^
+'o
+'o%Irsz9|C~9
+'object
+'offset + length &gt; input.Length
+'oth
+'o~
+'p
+'p>eS
+'payload
+'plaintext
+'protectedheader.encryptedkey.iv.cyphertext.authenticationtag
+'q
+'qI
+'qi
+'qw{
+'rawAuthenticationTag
+'rawCiphertext
+'rawEncryptedKey
+'rawHeader
+'rawInitialVector
+'rawPayload
+'rawSignature
+'resources.dll
+'s
+'s 
+'s runtime doesn
+'s used in propagators
+'s=+wO
+'sPB/c
+'scope
+'securityKey
+'securityToken
+'sha256
+'shared
+'signature
+'signature.Length
+'signingCredentials
+'str1
+'str2
+'str3
+'string
+'sub
+'subject
+'t be resolved (e.g from the 
+'t exist for sure; 
+'t include the root serialized object by default. To include the root object
+'t use 
+'t yet been provided and the operation hasn
+'tazvS[B~
+'this
+'tnO
+'token
+'token.Length
+'tracestate
+'true
+'typ
+'type
+'urn:ietf:params:oauth:client-assertion-type:jwt-bearer
+'use
+'validationParameters
+'value
+'vault_tokens.txt
+'x
+'x5c
+'x5t
+'x5t#S256
+'x5u
+'xO
+'y
+'yr`l
+'z
+'zip
+'{
+'{Config.key}
+'{Config.query}
+'{filePath}
+'{r^
+'{role.roleTemplateId}\
+'|e&>c
+'~
+'~o$d

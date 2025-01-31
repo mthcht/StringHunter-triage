@@ -1,0 +1,392 @@
+"{ ""access_token_id"": access_token_id "
+"{ ""access_token_id"": access_token_id, ""conversation_id"": conversation_id "
+"{ ""access_token_id"": access_token_id, ""conversation_link"": conversation_link "
+"{ ""database"": database_name "
+"{ ""graph_uri"": ""https://graph.microsoft.com/v1.0/me/drive/recent"", ""access_token_id"": document.getElementById(""recent_file_form"").access_token_id.value "
+"{ ""graph_uri"": ""https://graph.microsoft.com/v1.0/me/drive/sharedWithMe"", ""access_token_id"": document.getElementById(""shared_file_form"").access_token_id.value "
+"{ ""graph_uri"": graph_uri, ""access_token_id"": access_token_id "
+"{ ""header"": header, ""value"": respHeaders[header] "
+"{ ""resource"": resource, ""client_id"": client_id, ""ngcmfa"": ngcmfa"
+"{ ""state"": state "
+"{ ""template_id"": id "
+"{ ""user_agent"": userAgent "
+"{ $(this).removeAttr(""data-toggle"").attr(""data-bs-toggle"", ""dropdown""); "
+"{ d.access_token_id = $(""#mfa_form #access_token_id"").val() "
+"{ data: 'approximateLastSignInDateTime', title: ""Last Signin"" "
+"{ data: 'clientId', title: ""Client ID"", width: ""320px"""
+"{ data: 'client_id', 'width': '330px' "
+"{ data: 'createdDateTime', title: ""Created"" "
+"{ data: 'description', title: ""Description"" "
+"{ data: 'displayName', title: ""Display Name"" "
+"{ data: 'expires_at', 'width': '170px' "
+"{ data: 'foci', 'width': '50px' "
+"{ data: 'generated_at', 'width': '170px' "
+"{ data: 'header', title: ""Response Header"" "
+"{ data: 'id', 'width': '60px' "
+"{ data: 'issued_at', 'width': '170px' "
+"{ data: 'last_modified', 'width': '170px' "
+"{ data: 'last_poll', 'width': '170px' "
+"{ data: 'method', 'width': '100px' "
+"{ data: 'mri', title: ""MRI"" "
+"{ data: 'operatingSystem', title: ""OS"" "
+"{ data: 'profileType', title: ""Type"" "
+"{ data: 'request_type', 'width': '150px' "
+"{ data: 'resource', 'width': '320px' "
+"{ data: 'resource', 'width': '370px' "
+"{ data: 'resourceDisplayName', title: ""Resource Name"" "
+"{ data: 'resourceId', title: ""App Object ID"", width: ""320px"" "
+"{ data: 'resourceId', title: ""Resource ID"", width: ""320px"" "
+"{ data: 'scope', title: ""Scope"" "
+"{ data: 'securityEnabled', title: ""Security Enabled"", width: ""10px"" "
+"{ data: 'size', 'width': '100px' "
+"{ data: 'state', 'width': '100px' "
+"{ data: 'stored_at', 'width': '170px' "
+"{ data: 'template_name', 'width': '170px' "
+"{ data: 'tenant_id', 'width': '320px' "
+"{ data: 'user', 'width': '320px' "
+"{ data: 'user', 'width': '370px' "
+"{ data: 'userPrincipalName', title: ""UPN"" "
+"{ data: 'user_code', 'width': '145px' "
+"{ data: 'value', title: ""Value"" "
+"{ return 'onPremisesSyncEnabled' in r ? (r.onPremisesSyncEnabled ? ""true"" : ""false""): ""unknown"" "
+"{ return (conversation.properties.isemptyconversation == ""False"" || $(""#ms_teams_form #show_all"").prop('checked')) "
+"{ return r.membershipRule ? ""true"" : ""false""; "
+"{ return r.onPremisesSyncEnabled ? ""true"" : ""false""; "
+"{ userDetailsOverview.append(createDetailItem(""Business Phones"", entraUserDetails.businessPhones))"
+"{ userDetailsOverview.append(createDetailItem(""City"", entraUserDetails.city))"
+"{ userDetailsOverview.append(createDetailItem(""Company"", entraUserDetails.companyName))"
+"{ userDetailsOverview.append(createDetailItem(""Country"", entraUserDetails.country))"
+"{ userDetailsOverview.append(createDetailItem(""Department"", entraUserDetails.department))"
+"{ userDetailsOverview.append(createDetailItem(""Job Title"", entraUserDetails.jobTitle))"
+"{ userDetailsOverview.append(createDetailItem(""Mail"", entraUserDetails.mail))"
+"{ userDetailsOverview.append(createDetailItem(""Mobile"", entraUserDetails.mobilePhone))"
+"{ userDetailsOverview.append(createDetailItem(""Street Address"", entraUserDetails.streetAddress))"
+"{""Authentication"":f""skypetoken={teams_settings['skypeToken']"
+"{""Authorization"": f""Bearer {access_token"
+"{""Authorization"":f""Bearer {access_token"
+"{""User-Agent"":get_user_agent()"
+"{""error"": ""An internal server error occurred."", ""details"": str(e)"
+"{""error"": ""Failed to upload file."", ""details"": response.text"
+"{""error"": ""Invalid access token ID"""
+"{""error"": ""Missing required parameters"""
+"{""function""==typeof t&&(le[e]=le[e]||[],p(le[e],t))"
+"{""message"": ""File uploaded successfully."""
+"{""object""==typeof exports&&""undefined""!=typeof module?module.exports=t():""function""==typeof define&&define.amd?define(t):(e=""undefined""!=typeof globalThis?globalThis:e||self).DOMPurify=t()"
+"{""requests"": [{""entityTypes"": [""' + document.getElementById(""search_form"").search_type.value + '""], ""query"": {""queryString"": ""' + document.getElementById(""search_form"").search_query.value + '"""
+"{""requests"": [{""entityTypes"": [""site""], ""query"": {""queryString"": ""' + document.getElementById(""sharepoint_form"").search_query.value + '"""
+"{""response_status_code"": response.status_code ,""response_type"": response_type ,""response_text"": response_text, ""response_headers"": dict(response.headers)"
+"{""skypetoken_asm"":teams_settings['skypeToken']"
+"{""use strict"";const{entries:e,setPrototypeOf:t,isFrozen:n,getPrototypeOf:o,getOwnPropertyDescriptor:r"
+"{""verify_signature"": False"
+"{""x-ms-client-version"":""27/1.0.0.2020101241"""
+"{$(""#ms_teams_form #access_token_id"").val()"
+"{'': ['static/**/*','templates/*','version.txt']"
+"{**availableAuthenticationInfo[method], ""MethodName"":method"
+"{**member, ""isCurrentUser"": member[""mri""].endswith(teams_settings[""skype_id""])"
+"{**message, ""isFromMe"": message[""from""].endswith(teams_settings[""skype_id""])"
+"{DocumentFragment:s,HTMLTemplateElement:N,Node:b,Element:R,NodeFilter:H,NamedNodeMap:z=n.NamedNodeMap||n.MozNamedAttrMap,HTMLFormElement:B,DOMParser:W,trustedTypes:G"
+"{Nt(""beforeSanitizeAttributes"",e,null);const{attributes:t"
+"{Tt(a,e);continue"
+"{__proto__:null,MUSTACHE_EXPR:H,ERB_EXPR:z,TMPLIT_EXPR:B,DATA_ATTR:W,ARIA_ATTR:G,IS_ALLOWED_URI:Y,IS_SCRIPT_OR_DATA:j,ATTR_WHITESPACE:X,DOCTYPE_NAME:q,CUSTOM_ELEMENT:$"
+"{apply:c,construct:s"
+"{attrName:"""",attrValue:"""",keepAttr:!0,allowedAttributes:ye"
+"{const e=r.createElement(""template"");e.content&&e.content.ownerDocument&&(r=e.content.ownerDocument)"
+"{const i=t[r],{name:a,namespaceURI:l,value:c"
+"{const n=l(null);for(const[o,r]of e(t)){y(t,o)&&(Array.isArray(r)?n[o]=R(r):r&&""object""==typeof r&&r.constructor===Object?n[o]=w(r):n[o]=r)"
+"{const t=Q(e)||e.parentNode,n=J(e)||e.childNodes;if(n&&t){for(let o=n.length-1;o>=0;--o){const r=X(n[o],!0);r.__removalCount=(e.__removalCount||0)+1,t.insertBefore(r,$(e))"
+"{document.getElementById(""conversation_list_group"").getBoundingClientRect().top"
+"{document.getElementById(""message_form_container"").getBoundingClientRect().height"
+"{document.getElementById(""teams_message_container"").getBoundingClientRect().top"
+"{encodeURIComponent(image_element_jquery.attr(""src""))"
+"{expiry_date.toTimeString().split("" "")[0]"
+"{for(;null!==e;){const n=r(e,t);if(n){if(n.get)return b(n.get);if(""function""==typeof n.value)return b(n.value)"
+"{for(let t=0;t<e.length;t++){y(e,t)||(e[t]=null)"
+"{for(var e=arguments.length,t=new Array(e),n=0;n<e;n++)t[n]=arguments[n];return s(N,t)"
+"{freeze:i,seal:a,create:l"
+"{if(!Ne[n]&&Rt(n)){if(Ae.tagNameCheck instanceof RegExp&&E(Ae.tagNameCheck,n))return!1;if(Ae.tagNameCheck instanceof Function&&Ae.tagNameCheck(n))return!1"
+"{if(!Pe||""id""!==s&&""name""!==s||(Tt(a,e),p=Fe+p),ee&&""object""==typeof G&&""function""==typeof G.getAttributeType)if(l);else switch(G.getAttributeType(f,s)){case""TrustedHTML"":p=ee.createHTML(p);break;case""TrustedScriptURL"":p=ee.createScriptURL(p)"
+"{if(!ke&&!ve&&!De&&-1===e.indexOf(""<""))return ee&&Ie?ee.createHTML(e):e;if(n=_t(e),!n)return ke?null:Ie?te:"""""
+"{if(""function""!=typeof e.TRUSTED_TYPES_POLICY.createHTML)throw A('TRUSTED_TYPES_POLICY configuration option must provide a ""createHTML"" hook.');if(""function""!=typeof e.TRUSTED_TYPES_POLICY.createScriptURL)throw A('TRUSTED_TYPES_POLICY configuration option must provide a ""createScriptURL"" hook.');ee=e.TRUSTED_TYPES_POLICY,te=ee.createHTML("""")"
+"{if(""function""!=typeof e.toString)throw A(""toString is not a function"");if(""string""!=typeof(e=e.toString()))throw A(""dirty is not a string, aborting"")"
+"{if(""object""!=typeof e||""function""!=typeof e.createPolicy)return null;let n=null;const o=""data-tt-policy-suffix"";t&&t.hasAttribute(o)&&(n=t.getAttribute(o));const r=""dompurify""+(n?""#""+n:"""");try{return e.createPolicy(r,{createHTML:e=>e,createScriptURL:e=>e"
+"{if(Me)for(l=re.call(n.ownerDocument);n.firstChild;)l.appendChild(n.firstChild);else l=n;return(ye.shadowroot||ye.shadowrootmode)&&(l=ae.call(a,l,!0)),l"
+"{if(Ue&&(""id""===t||""name""===t)&&(n in r||n in lt))return!1;if(Re&&!be[t]&&E(me,t));else if(Se&&E(pe,t));else if(!ye[t]||be[t]){if(!(Rt(e)&&(Ae.tagNameCheck instanceof RegExp&&E(Ae.tagNameCheck,e)||Ae.tagNameCheck instanceof Function&&Ae.tagNameCheck(e))&&(Ae.attributeNameCheck instanceof RegExp&&E(Ae.attributeNameCheck,t)||Ae.attributeNameCheck instanceof Function&&Ae.attributeNameCheck(t))||""is""===t&&Ae.allowCustomizedBuiltInElements&&(Ae.tagNameCheck instanceof RegExp&&E(Ae.tagNameCheck,n)||Ae.tagNameCheck instanceof Function&&Ae.tagNameCheck(n))))return!1"
+"{if(bt(i))continue;const e=Q(i);1===i.nodeType&&(e&&e.__depth?i.__depth=(i.__removalCount||0)+e.__depth+1:i.__depth=1),i.__depth>=at&&gt(i),i.content instanceof s&&(i.content.__depth=i.__depth,Ct(i.content)),wt(i)"
+"{if(e&&""object""==typeof e||(e={"
+"{if(e.nodeName){const t=rt(e.nodeName);if(!Te[t]||Ne[t])throw A(""root node is forbidden and cannot be sanitized in-place"")"
+"{if(we&&!E(fe,g(n,de,"""")));else if(n)return!1"
+"{implementation:ne,createNodeIterator:oe,createDocumentFragment:re,getElementsByTagName:ie"
+"{it=null,Oe=!1"
+"{l?e.setAttributeNS(l,a,p):e.setAttribute(a,p),m(o.removed)"
+"{le[e]&&u(le[e],(e=>{e.call(o,t,n,it)"
+"{let n=arguments.length>0&&void 0!==arguments[0]?arguments[0]:V();const o=e=>t(e);if(o.version=""3.1.1"",o.removed=[],!n||!n.document||9!==n.document.nodeType)return o.isSupported=!1,o;let{document:r"
+"{let n=null;const o=yt(t);for(Nt(""beforeSanitizeShadowDOM"",t,null);n=o.nextNode();){if(Nt(""uponSanitizeShadowNode"",n,null),bt(n))continue;const t=Q(n);1===n.nodeType&&(t&&t.__depth?n.__depth=(n.__removalCount||0)+t.__depth+1:n.__depth=1),n.__depth>=at&&gt(n),n.content instanceof s&&(n.content.__depth=n.__depth,e(n.content)),wt(n)"
+"{let r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:f;t&&t(e,null);let i=o.length;for(;i--;){let t=o[i];if(""string""==typeof t){const e=r(t);e!==t&&(n(o)||(o[i]=e),t=e)"
+"{let t=null,n=null;if(xe)e=""<remove></remove>""+e;else{const t=h(e,/^[\r\n\t ]+/);n=t&&t[0]"
+"{let t=null;if(Nt(""beforeSanitizeElements"",e,null),Et(e))return gt(e),!0;const n=rt(e.nodeName);if(Nt(""uponSanitizeElement"",e,{tagName:n,allowedTags:Te"
+"{m=g(m,e,"" "")"
+"{new DOMParser().parseFromString(DOMPurify.sanitize(conversation.lastMessage.content), 'text/html').body.textContent.trim() || ""[Unrenderable_Content]"""
+"{new Date(messageJson.composetime).toLocaleDateString([], { dateStyle: 'short' "
+"{new Date(messageJson.composetime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' "
+"{p(o.removed,{attribute:null,from:t"
+"{p(o.removed,{element:e"
+"{p=g(p,e,"" "")"
+"{return console.warn(""TrustedTypes policy ""+r+"" could not be created.""),null"
+"{return e instanceof B&&(void 0!==e.__depth&&""number""!=typeof e.__depth||void 0!==e.__removalCount&&""number""!=typeof e.__removalCount||""string""!=typeof e.nodeName||""string""!=typeof e.textContent||""function""!=typeof e.removeChild||!(e.attributes instanceof z)||""function""!=typeof e.removeAttribute||""function""!=typeof e.setAttribute||""string""!=typeof e.namespaceURI||""function""!=typeof e.insertBefore||""function""!=typeof e.hasChildNodes)"
+"{return e.apply(t,n)"
+"{return function(t){for(var n=arguments.length,o=new Array(n>1?n-1:0),r=1;r<n;r++)o[r-1]=arguments[r];return c(e,t,o)"
+"{return oe.call(e.ownerDocument||e,e,H.SHOW_ELEMENT|H.SHOW_COMMENT|H.SHOW_TEXT|H.SHOW_PROCESSING_INSTRUCTION|H.SHOW_CDATA_SECTION,null)"
+"{return""annotation-xml""!==e&&h(e,he)"
+"{return""function""==typeof b&&e instanceof b"
+"{return""undefined""==typeof window?null:window"
+"{setting[""setting""] : setting[""value""] for setting in settings_raw"
+"{setting[""setting""] : setting[""value""]"
+"{t=(new W).parseFromString(o,tt)"
+"{t=g(t,e,"" "")"
+"{tagNameCheck:{writable:!0,configurable:!1,enumerable:!0,value:null"
+"{text.substr(0, 100)"
+"{try{p(o.removed,{attribute:t.getAttributeNode(e),from:t"
+"{writable:!0,configurable:!1,enumerable:!0,value:!1"
+"{writable:!0,configurable:!1,enumerable:!0,value:null"
+"{{url_for('static', filename='css/style.css')"
+"{{url_for('static', filename='js/functions.js')"
+"{{url_for('static', filename='js/purify.min.js')"
+"{{url_for('static', filename='js/theme.js')"
+"{}, cookies={"
+"{},We=null;const Ge=S({"
+"{},[""audio"",""video"",""img"",""source"",""image"",""track""]);let Xe=null;const qe=S({"
+"{},[""mi"",""mo"",""mn"",""ms"",""mtext""]),mt=S({"
+"{},[""title"",""style"",""font"",""a"",""script""]),ft=S({"
+"{},[$e,Ke,Ve],d);let tt=null;const nt=[""application/xhtml+xml"",""text/html""],ot=""text/html"";let rt=null,it=null;const at=255,lt=r.createElement(""form""),ct=function(e){return e instanceof RegExp||e instanceof Function"
+"{},[...v,...L,...D,...x,...M]);let ye=null;const Ee=S({"
+"{},[...x,...k]),ht=function(e){let t=Q(e);t&&t.tagName||(t={namespaceURI:Ze,tagName:""template"""
+"{},e.ALLOWED_NAMESPACES,d):et,Xe=y(e,""ADD_URI_SAFE_ATTR"")?S(w(qe),e.ADD_URI_SAFE_ATTR,rt):qe,Ye=y(e,""ADD_DATA_URI_TAGS"")?S(w(je),e.ADD_DATA_URI_TAGS,rt):je,We=y(e,""FORBID_CONTENTS"")?S({"
+"{},e.ALLOWED_TAGS,rt):_e,ye=y(e,""ALLOWED_ATTR"")?S({"
+"{},e.CUSTOM_ELEMENT_HANDLING&&ct(e.CUSTOM_ELEMENT_HANDLING.tagNameCheck)&&(Ae.tagNameCheck=e.CUSTOM_ELEMENT_HANDLING.tagNameCheck),e.CUSTOM_ELEMENT_HANDLING&&ct(e.CUSTOM_ELEMENT_HANDLING.attributeNameCheck)&&(Ae.attributeNameCheck=e.CUSTOM_ELEMENT_HANDLING.attributeNameCheck),e.CUSTOM_ELEMENT_HANDLING&&""boolean""==typeof e.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements&&(Ae.allowCustomizedBuiltInElements=e.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements),ve&&(Re=!1),Me&&(ke=!0),Be&&(Te=S({"
+"{},e.FORBID_ATTR,rt):{"
+"{},e.FORBID_TAGS,rt):{"
+"{}-[]\\/\' ') if is_valid_uuid(tenant.strip('""{"
+"{};o.isSupported=""function""==typeof e&&""function""==typeof Q&&ne&&void 0!==ne.createHTMLDocument;const{MUSTACHE_EXPR:ce,ERB_EXPR:se,TMPLIT_EXPR:ue,DATA_ATTR:me,ARIA_ATTR:pe,IS_SCRIPT_OR_DATA:fe,ATTR_WHITESPACE:de,CUSTOM_ELEMENT:he"
+"{}else try{t.setAttribute(e,"""")"
+"{}if(!t||!t.documentElement){t=ne.createDocument(Ze,""template"",null);try{t.documentElement.innerHTML=Je?te:o"
+{ 'max-height': 150 + 'px' 
+{ ADD_ATTR: ['itemtype'] 
+{ data: 'description' 
+{ data: 'name' 
+{ data: 'resource.createdBy.user.displayName' 
+{ data: 'resource.displayName' 
+{ data: 'resource.name' 
+{ data: 'resource.webUrl' 
+{ data: 'status' 
+{ data: 'uri' 
+{ data: 'webUrl' 
+{ margin-bottom: -0.25rem; 
+{ margin-bottom: -0.5rem; 
+{ margin-bottom: -1.5rem; 
+{ margin-bottom: -1rem; 
+{ margin-bottom: -3rem; 
+{ margin-left: -0.25rem; 
+{ margin-left: -0.25rem; margin-right: -0.25rem; 
+{ margin-left: -0.5rem; 
+{ margin-left: -0.5rem; margin-right: -0.5rem; 
+{ margin-left: -1.5rem; 
+{ margin-left: -1.5rem; margin-right: -1.5rem; 
+{ margin-left: -1rem; 
+{ margin-left: -1rem; margin-right: -1rem; 
+{ margin-left: -3rem; 
+{ margin-left: -3rem; margin-right: -3rem; 
+{ margin-right: -0.25rem; 
+{ margin-right: -0.5rem; 
+{ margin-right: -1.5rem; 
+{ margin-right: -1rem; 
+{ margin-right: -3rem; 
+{ margin-top: -0.25rem; 
+{ margin-top: -0.25rem; margin-bottom: -0.25rem; 
+{ margin-top: -0.5rem; 
+{ margin-top: -0.5rem; margin-bottom: -0.5rem; 
+{ margin-top: -1.5rem; 
+{ margin-top: -1.5rem; margin-bottom: -1.5rem; 
+{ margin-top: -1rem; 
+{ margin-top: -1rem; margin-bottom: -1rem; 
+{ margin-top: -3rem; 
+{ margin-top: -3rem; margin-bottom: -3rem; 
+{ margin: -0.25rem; 
+{ margin: -0.5rem; 
+{ margin: -1.5rem; 
+{ margin: -1rem; 
+{ margin: -3rem; 
+{ return 
+{ return b.sequenceId - a.sequenceId 
+{ return; 
+{ selected: true 
+{ updateTeamsMessageContainerSize() 
+{ window.clickedOpen = true; 
+{% endblock content %
+{% extends 'layout.html'%
+{% include 'access_token_modal.html' %
+{% include 'refresh_token_modal.html' %
+{%block content%
+{%endblock content%
+{IS_ALLOWED_URI:ge
+{[\w\W]*
+{\{[\w\W]*|[\w\W]*\
+{__version__
+{access_token
+{access_token_id
+{active_access_token
+{active_access_token[0]
+{active_refresh_token
+{active_refresh_token[0]
+{add_graphspy_otp_response
+{base_uri
+{base_url
+{batch_response['response_status_code']
+{batch_response['response_type']
+{captcha_response.text
+{captcha_response['ErrorCode']
+{chat_service_uri
+{conversation.lastMessage.imdisplayname
+{conversation.threadProperties.threadType
+{conversationName
+{conversation_id
+{conversation_link
+{current_time_seconds
+{database
+{database_name
+{datetime.fromtimestamp(db_file.stat().st_mtime)
+{datetime.fromtimestamp(row['expires_at'])
+{datetime.fromtimestamp(row['generated_at'])
+{datetime.fromtimestamp(row['last_poll'])
+{datetime.now()
+{db_path
+{db_path.strip('.db')
+{document.cookie
+{drive_id
+{e
+{e.parentNode.removeChild(e)
+{e.remove()
+{element:e.cloneNode()
+{email
+{encodeURIComponent(user_id)
+{entraUserDetails.displayName
+{error_message
+{existing_request_template['template_name']
+{expiry_date.toLocaleDateString()
+{external.toString()
+{file.name
+{fileColor
+{graph_spy_db_folder
+{graph_spy_db_path
+{graph_spy_folder
+{gt(t)
+{i
+{id
+{if(le[e])return m(le[e])
+{importNode:ae
+{initialize_mobile_app_registration_json.QrCode
+{item_id
+{item_type
+{it||st({
+{json.error.code
+{json.error.message
+{key
+{key_description
+{lastConversationId
+{le={
+{le[e]&&(le[e]=[])
+{len(conversation_members)
+{len(created_conversations)
+{len(members)
+{len(response_json['value'])
+{len(users_list)
+{let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{
+{let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{
+{member
+{messageJson.imdisplayname
+{messageTruncated
+{message_id
+{method
+{modalID
+{mri
+{name
+{new_path.split('/')[-1]
+{next_poll
+{next_skiptoken
+{number
+{otherMember.displayName
+{otpId
+{otp_code_id
+{parsed_user_id
+{path
+{phone_type
+{refresh_token_id
+{repr(e)
+{request_type
+{response.ErrorCode
+{response.UpdatedDefaultMethod
+{response.content
+{response.headers['Content-Type'] if 'Content-Type' in response.headers else 'empty'
+{response.json()['error']
+{response.json()['error_description']
+{response.responseJSON.length
+{response.responseText
+{response.status_code
+{response.text
+{response['response_status_code']
+{response['response_text']
+{response['response_type']
+{response_json.Type
+{response_json.captcha.ChallengeData
+{result
+{retry_count
+{retry_delay
+{return e
+{return new e(...t)
+{return null
+{round(db_file.stat().st_size/1024)
+{row.data().name
+{row['last_poll']
+{row['user_code']
+{security_info_response
+{selectedVerifyMethod
+{sessionCtx
+{state
+{state.capitalize()
+{teams_and_channel_service_uri
+{teams_settings['skype_id']
+{template_id
+{template_name
+{tenant_domain
+{tenant_id
+{theme
+{token_id
+{type
+{type(headers)
+{type(variables)
+{type.toLowerCase()
+{urllib.parse.quote_plus(request.args['customize_properties'])
+{userPrincipalName
+{user_agent
+{user_code
+{user_id
+{verificationCode
+{window.location.origin
+{{ config['graph_spy_db_folder'] 
+{{ config['table_error_messages'] 
+{{title
+{{url_for('access_tokens')
+{{url_for('custom_requests')
+{{url_for('device_codes')
+{{url_for('entra_users')
+{{url_for('generic_search')
+{{url_for('mfa')
+{{url_for('onedrive')
+{{url_for('outlook')
+{{url_for('recent_files')
+{{url_for('refresh_tokens')
+{{url_for('shared_with_me')
+{{url_for('sharepoint')
+{{url_for('sharepoint_drives')
+{{url_for('sharepoint_sites')
+{{url_for('teams')
+{}

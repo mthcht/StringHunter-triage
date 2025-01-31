@@ -1,0 +1,246 @@
+
+                # Display assignments for each policy"
+                # Display scheduled actions for rule"
+            # continue polling
+            # display assignments for each policy"
+        # ..."
+        # Authentication commands"
+        # Base64 encode the binary data
+        # Cleanup commands"
+        # DNS checks
+        # Enumeration commands"
+        # Exploitation commands"
+        # Intune enum commands"
+        # Intune exploit commands"
+        # Locator commands"
+        # Outsider commands
+        # all required 
+        # calculate x5t (X.509 cert SHA-1 thumbprint)
+        # check MDI instance
+        # desktop sso
+        # federation info
+        # grant admin consent option"
+        # group setting collection values"
+    #    {
+    #    }
+    # - could add option to alter pre-existing settings
+    # 1. Find existing certs so we don't remove them in the patch req"
+    # 1. check existing permissions"
+    # 1. get current target script settings and encode new script content so we don't override anything"
+    # 2. patch app added our cert to the existing "
+    # 2. patch perms"
+    # 2. patch script with updated script content"
+    # Add attachment option - check what other files are supported..."
+    # ]
+    # add the option to be available in the company portal for download
+    # admin consent json
+    # any failures granting admin consent likely due to token scope/perms"
+    # assign perm json"
+    # cert details
+    # check cae for client_credential grants"
+    # check cloud sync"
+    # construct unsigned JWT"
+    # create JWT"
+    # encode header and payload"
+    # get tenant id
+    # get the current assignments so we don't mess up day-to-day ops"
+    # permission id validation"
+    # request azure management token"
+    # results"
+    # show progress bar
+    # sign JWT"
+    # tenant info
+"
+"    
+"        
+"            
+"                
+"                        #print(f""- Config ID: {action.get('id')}"")"
+"                    #print_green(f""[+] Admin Consent Required: {consent_required}"") # admin consent required for all app graph perms"
+"                    #print_green(f""[+] Found dynamic group: {group['displayName']}"")"
+"                    #print_green(f""[+] Role Type: {role_type}"") # can only be application for appRoleAssignments, delegated role types use oauth2PermissionGrants"
+"        #print_green(f""[*] Found {len(groups_with_members)} security groups\n"")"
+"    #        ""@odata.type"": ""#microsoft.graph.fileAttachment"","
+"    #        ""contentBytes"": ""SGVsbG8gV29ybGQh"""
+"    #        ""contentType"": ""text/plain"","
+"    #        ""name"": ""attachment.txt"","
+"    # ""attachments"": ["
+"    #api_url = f""https://graph.microsoft.com/v1.0/applications/{args.id}""  # object id"
+"    #api_url = f""https://graph.microsoft.com/v1.0/applications/{args.id}"" # object id"
+"    #api_url = f""https://graph.microsoft.com/v1.0/myorganization/applications/{args.id}""  # object id"
+"# {""@odata.type"":""#microsoft.graph.win32LobApp"",""applicableArchitectures"":""x64,x86"",""allowAvailableUninstall"":false,""categories"":[],""description"":""IntuneMessageBox"",""developer"":"""",""displayName"":""IntuneMessageBox"",""displayVersion"":"""",""fileName"":""IntuneMessageBox.intunewin"",""installCommandLine"":""IntuneMessageBox.exe"",""installExperience"":{""deviceRestartBehavior"":""suppress"",""maxRunTimeInMinutes"":30,""runAsAccount"":""system""},""informationUrl"":"""",""isFeatured"":false,""roleScopeTagIds"":[],""notes"":"""",""minimumSupportedWindowsRelease"":""1607"",""msiInformation"":null,""owner"":"""",""privacyInformationUrl"":"""",""publisher"":""ECorp"",""returnCodes"":[{""returnCode"":0,""type"":""success""},{""returnCode"":1707,""type"":""success""},{""returnCode"":3010,""type"":""softReboot""},{""returnCode"":1641,""type"":""hardReboot""},{""returnCode"":1618,""type"":""retry""}],""rules"":[{""@odata.type"":""#microsoft.graph.win32LobAppFileSystemRule"",""ruleType"":""detection"",""operator"":""notConfigured"",""check32BitOn64System"":false,""operationType"":""exists"",""comparisonValue"":null,""fileOrFolderName"":""IntuneMessageBox.exe"",""path"":""C:\\Program Files\\IntuneMessageBox.exe""}],""runAs32Bit"":false,""setupFilePath"":""IntuneMessageBox.exe"",""uninstallCommandLine"":""IntuneMessageBox.exe""}"
+# 
+# - add mfasweep functions
+# - check this is still valid 
+# - remove 
+# - todo
+# - user will have to packagae app prior
+# -> need to add install/uninstall instruction batch script
+# Authentication #
+# Cleanup #
+# Locators #
+# NOT IN USE #
+# Outsider #
+# POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/
+# Post-Auth Enuemeration #
+# Post-Auth Exploitation #
+# Post-Auth Intune Enumeration #
+# Post-Auth Intune Exploitation #
+# add more from"
+# add-applicationcertificate  "
+# add-applicationpassword"
+# add-applicationpermission"
+# add-exclusiongrouptopolicy"
+# add-groupmember"
+# add-userTAP"
+# assign-privilegedrole"
+# backdoor-script"
+# chama
+# create-application"
+# create-newuser"
+# decode-accesstoken"
+# def deploy_maliciouswin32msi(args):
+# delete-application"
+# delete-device"
+# delete-group"
+# delete-user"
+# deploy-maliciousscript"
+# deploy-maliciousweblink"
+# deploy-maliciouswin32app"
+# deploy-maliciouswin32msi"
+# display-asrpolicyrules"
+# display-avpolicyrules"
+# display-diskencryptionpolicyrules"
+# display-edrpolicyrules"
+# display-firewallconfigpolicyrules - firewall config policy"
+# display-firewallrulepolicyrules - actual firewall rules"
+# display-lapsaccountprotectionpolicyrules"
+# display-usergroupaccountprotectionpolicyrules"
+# dump-androidapps"
+# dump-devicemanagementscripts"
+# dump-iosapps"
+# dump-macosapps"
+# dump-owamailbox"
+# dump-windowsapps"
+# find-dynamicgroups"
+# find-privilegedapplications"
+# find-privilegedroleusers"
+# find-securitygroups"
+# find-updatablegroups"
+# get-administrativeunitmember"
+# get-application"
+# get-appserviceprincipal"
+# get-caps"
+# get-conditionalaccesspolicy"
+# get-crosstenantaccesspolicy"
+# get-currentuser"
+# get-currentuseractivities"
+# get-devicecategories"
+# get-devicecompliancepolicies"
+# get-devicecompliancesummary"
+# get-deviceconfigurationpolicies"
+# get-deviceconfigurationpolicysettings"
+# get-deviceconfigurations"
+# get-deviceenrollmentconfigurations"
+# get-devicegrouppolicyconfigurations"
+# get-devicegrouppolicydefinition"
+# get-domains"
+# get-graphtokens"
+# get-group"
+# get-groupmember"
+# get-manageddevices"
+# get-messages"
+# get-oauth2permissiongrants"
+# get-onedrivefiles"
+# get-orginfo"
+# get-partnercrosstenantaccesspolicy"
+# get-password"
+# get-personalcontacts"
+# get-roleassignments"
+# get-roledefinitions"
+# get-scriptcontent"
+# get-serviceprincipal"
+# get-serviceprincipalapproleassignments"
+# get-temporaryaccesspassword"
+# get-tenantid"
+# get-tokenscope"
+# get-user"
+# get-userapproleassignments"
+# get-userchatmessages"
+# get-userdevices"
+# get-userpermissiongrants"
+# get-userprivileges"
+# get-userproperties"
+# get-usertransitivegroupmembership"
+# grant-appadminconsent"
+# https://cloudinfra.net/how-to-deploy-exe-applications-using-intune/
+# https://learn.microsoft.com/en-us/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta
+# https://www.systemcenterdudes.com/deploy-microsoft-intune-win32-apps/
+# invite-guestuser"
+# invoke-appsecrettoaccesstoken"
+# invoke-certtoaccesstoken"
+# invoke-customquery"
+# invoke-estscookietoaccesstoken"
+# invoke-refreshtoazuremanagementtoken"
+# invoke-refreshtointuneenrollmenttoken"
+# invoke-refreshtomsgraphtoken"
+# invoke-refreshtomsteamstoken"
+# invoke-refreshtoofficeappstoken"
+# invoke-refreshtoofficemanagementtoken"
+# invoke-refreshtoonedrivetoken"
+# invoke-refreshtooutlooktoken"
+# invoke-refreshtosharepointtoken"
+# invoke-refreshtosubstratetoken"
+# invoke-refreshtovaulttoken"
+# invoke-refreshtoyammertoken"
+# invoke-search"
+# list-administrativeunits"
+# list-applications"
+# list-authmethods"
+# list-chatmessages"
+# list-chats"
+# list-conditionalaccesspolicies"
+# list-conditionalauthenticationcontexts"
+# list-conditionalnamedlocations"
+# list-devices"
+# list-directoryroles"
+# list-externalconnections"
+# list-joinedteams"
+# list-notebooks"
+# list-onedrives"
+# list-onedriveurls"
+# list-recentonedrivefiles"
+# list-serviceprincipals"
+# list-sharedonedrivefiles"
+# list-sharepointroot"
+# list-sharepointsites"
+# list-sharepointurls"
+# list-tenants"
+# lock-device"
+# new-signedjwt"
+# open-owamailboxinbrowser"
+# reboot-device "
+# remove-groupmember"
+# retire-device"
+# shutdown-device"
+# spoof-owaemailmessage"
+# todo:"
+# update-deviceconfig"
+# update-userpassword"
+# update-userproperties"
+# wipe-device "
+#!/usr/bin/env python3
+###########
+###########"
+############
+############"
+##############
+##############"
+##################
+##################"
+##########################
+##########################"
+################################
+################################"
+#################################
+#################################"

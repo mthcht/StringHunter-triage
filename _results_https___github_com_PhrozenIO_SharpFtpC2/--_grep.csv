@@ -1,0 +1,4 @@
+"
+" --name ftpd_server -p 21:21 -p 30000-30009:30000-30009 -e ""PUBLICHOST: 127.0.0.1"" -e ""ADDED_FLAGS=-E -A -X -x --tls=2"" -e FTP_USER_NAME=dark -e FTP_USER_PASS=toor -e FTP_USER_HOME=/home/dark -e ""TLS_CN=localhost"" -e ""TLS_ORG=maislaf"" -e ""TLS_C=FR"" stilliard/pure-ftpd`"
+" --name ftpd_server -p 21:21 -p 30000-30009:30000-30009 -e ""PUBLICHOST: 127.0.0.1"" -e ""ADDED_FLAGS=-E -A -X -x"" -e FTP_USER_NAME=dark -e FTP_USER_PASS=toor -e FTP_USER_HOME=/home/dark stilliard/pure-ftpd`"
+---"

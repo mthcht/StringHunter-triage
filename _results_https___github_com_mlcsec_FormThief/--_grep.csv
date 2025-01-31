@@ -1,0 +1,9 @@
+ -->
+ --cipher set to 'AES-256-CBC' but missing in --data-ciphers (AES-256-GCM:AES-128-GCM). OpenVPN ignores --cipher for cipher negotiations. 
+ --redirect-gateway (iservice is in use)
+"
+" --dotnetassembly C:\Tools\CiscoAnyConnect.exe --assemblyargs ""target.vpn.hostname"""
+" --dotnetassembly C:\Tools\KeePass.exe --assemblyargs ""C:\path\to\target\passwords.kdbx"""
+" --dotnetassembly C:\Tools\LastPass.exe --assemblyargs ""victim@domain.com"""
+" --dotnetassembly C:\Tools\OpenVPN.exe --assemblyargs ""target.vpn.profile"""
+" --dotnetassembly C:\Tools\wpfRunner.exe --assemblyargs ""victim@domain.com"""

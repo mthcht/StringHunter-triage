@@ -1,0 +1,27 @@
+"', "
+"', (ConvertTo-SecureString -String "
+"'^[Ss]-\d-\d+-(\d+-){1,14}\d+$"
+"'`"" | Set-WmiInstance -Arguments `@{OutputData = `$outputData; CommandStatus="
+' -AsPlainText -Force));Get-WmiObject -Class Win32_OperatingSystem -ComputerName 
+' and `show c
+' and authors
+' } | Select-Object -First 1).Split(
+'$Computer
+'$GuidOutput
+'$Password
+'$UserName
+'$target
+'*$
+'*svr hostname*
+'=
+'Completed
+'Domain
+'System.Collections.Generic.List[System.Object]
+'Users
+'\..*
+'\\
+'\s([\w\s-]+\\[\w\s-]+\$?)\s
+'dd/MM/yyyy HH:mm:ss
+'exit
+'https://raw.githubusercontent.com/Leo4j/Invoke-SessionHunter/main/Invoke-SessionHunter.ps1
+'klist sessions

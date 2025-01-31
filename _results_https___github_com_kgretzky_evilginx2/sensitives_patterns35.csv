@@ -1,0 +1,17 @@
+	if fp.Credentials == nil {
+	if fp.Credentials.Custom != nil {
+	if fp.Credentials.Password == nil {
+	if fp.Credentials.Password.Key == nil {
+	if fp.Credentials.Password.Search == nil {
+	if fp.Credentials.Username == nil {
+	if fp.Credentials.Username.Key == nil {
+	if fp.Credentials.Username.Search == nil {
+	p.password.key_s = p.paramVal(*fp.Credentials.Password.Key)
+	p.password.tp = fp.Credentials.Password.Type
+	p.username.key_s = p.paramVal(*fp.Credentials.Username.Key)
+	p.username.tp = fp.Credentials.Username.Type
+"		for _, cp := range *fp.Credentials.Custom {"
+"	p.password.key, err = regexp.Compile(p.paramVal(*fp.Credentials.Password.Key))"
+"	p.password.search, err = regexp.Compile(p.paramVal(*fp.Credentials.Password.Search))"
+"	p.username.key, err = regexp.Compile(p.paramVal(*fp.Credentials.Username.Key))"
+"	p.username.search, err = regexp.Compile(p.paramVal(*fp.Credentials.Username.Search))"
